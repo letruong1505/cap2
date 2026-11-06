@@ -1,0 +1,31 @@
+{
+  "name": "vung-bai",
+  "productName": "Vững Bài",
+  "version": "0.1.0-dev",
+  "description": "Phần mềm luyện tập offline cấp 2 (Toán 7 - KNTT, bản thử)",
+  "main": "main/main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "validate": "node tools/validate-content.js",
+    "dist:win": "electron-builder --win portable"
+  },
+  "build": {
+    "appId": "vn.namlinh.vungbai",
+    "productName": "Vững Bài",
+    "files": [
+      "main/**/*",
+      "renderer/**/*",
+      "content/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "portable",
+      "artifactName": "VungBai-${version}-test.exe"
+    }
+  },
+  "devDependencies": {
+    "electron": "31.7.7",
+    "electron-builder": "^24.13.3"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "id": "t7-so-huu-ti-cong-tru",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 1",
+  "chapter": "Chương I. Số hữu tỉ",
+  "lesson": "Bài 2. Cộng, trừ, nhân, chia số hữu tỉ",
+  "section": "Phần 1: Cộng và trừ",
+  "bookPage": 10,
+  "requirements": ["Mã YCCĐ: cần đối chiếu Thông tư 32/2018"],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Số hữu tỉ là số viết được dưới dạng a/b với a, b là số nguyên và b khác 0."
+    },
+    {
+      "type": "text",
+      "content": "Muốn cộng hoặc trừ hai số hữu tỉ, ta đưa về cùng mẫu dương, rồi cộng hoặc trừ các tử số."
+    },
+    {
+      "type": "formula",
+      "content": "a/b + c/d = (a·d + b·c) / (b·d)"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính 1/2 + 3/4",
+      "steps": [
+        "Mẫu chung nhỏ nhất của 2 và 4 là 4.",
+        "1/2 = 2/4, nên 1/2 + 3/4 = 2/4 + 3/4.",
+        "2/4 + 3/4 = (2 + 3)/4 = 5/4."
+      ],
+      "answer": "5/4"
+    },
+    {
+      "problem": "Tính -2/3 - 1/6",
+      "steps": [
+        "Mẫu chung là 6. Ta có -2/3 = -4/6.",
+        "-4/6 - 1/6 = (-4 - 1)/6 = -5/6."
+      ],
+      "answer": "-5/6"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kết quả của 1/3 + 1/3 là:",
+      "choices": ["1/6", "2/3", "2/6", "1/9"],
+      "answer": 1,
+      "explain": "Hai phân số cùng mẫu 3, cộng tử số: 1 + 1 = 2, nên kết quả là 2/3.",
+      "wrong_explain": {
+        "0": "Bạn đã cộng cả mẫu số. Khi cùng mẫu, mẫu giữ nguyên, chỉ cộng tử số.",
+        "2": "Kết quả 2/6 chưa rút gọn và không đúng mẫu. Khi cùng mẫu 3, mẫu vẫn là 3.",
+        "3": "Bạn đã nhân mẫu số. Khi cộng phân số cùng mẫu thì mẫu không đổi."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Giá trị của 1/2 - 1/5 là:",
+      "choices": ["3/10", "0", "2/5", "1/3"],
+      "answer": 0,
+      "explain": "Mẫu chung là 10: 1/2 = 5/10 và 1/5 = 2/10, nên 5/10 - 2/10 = 3/10.",
+      "wrong_explain": {
+        "1": "Bạn trừ hai số nhưng không quy đồng hai mẫu khác nhau. Hãy quy đồng về mẫu 10 trước.",
+        "2": "Đây là kết quả khi trừ tử số và mẫu số riêng lẻ, cách đó không đúng với phép trừ phân số.",
+        "3": "Kết quả này không khớp với phép trừ đã quy đồng về mẫu chung."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Kết quả của -3/4 + 5/6 là:",
+      "choices": ["1/12", "-1/12", "2/10", "7/12"],
+      "answer": 0,
+      "explain": "Mẫu chung là 12: -3/4 = -9/12 và 5/6 = 10/12, nên -9/12 + 10/12 = 1/12.",
+      "wrong_explain": {
+        "1": "Dấu có thể đã bị đảo. Kiểm tra lại: 10/12 lớn hơn 9/12 nên kết quả dương.",
+        "2": "Mẫu số 10 không phải mẫu chung của 4 và 6. Mẫu chung đúng là 12.",
+        "3": "Bạn đã bỏ dấu âm của -3/4. Khi đổi sang mẫu 12 vẫn phải giữ dấu âm."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Điền số thích hợp vào chỗ trống: 2/3 - 1/4 = ?/12",
+      "answer": "5",
+      "explain": "2/3 = 8/12 và 1/4 = 3/12, nên 8/12 - 3/12 = 5/12.",
+      "wrong_explain": {}
+    },
+    {
+      "id": "q05",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Một bể nước đầy 3/4 thể tích. Sau khi lấy ra 1/5 thể tích bể, bể còn lại bao nhiêu phần thể tích?",
+      "choices": ["11/20", "2/5", "7/20", "1/2"],
+      "answer": 0,
+      "explain": "3/4 - 1/5 = 15/20 - 4/20 = 11/20.",
+      "wrong_explain": {
+        "1": "Bạn đã lấy 3/4 trừ 1/5 nhưng quy đồng sai. Mẫu chung của 4 và 5 là 20.",
+        "2": "Đây là kết quả khi bỏ qua 3/4 ban đầu. Hãy bắt đầu từ thể tích bể đang có.",
+        "3": "Kết quả 1/2 không khớp với phép trừ đã quy đồng về mẫu chung 20."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Giá trị của 2/5 + (-7/10) - 1/2 là:",
+      "choices": ["-4/5", "-2/5", "-1", "-6/5"],
+      "answer": 0,
+      "explain": "Mẫu chung là 10: 2/5 = 4/10 và 1/2 = 5/10. Ta có 4/10 - 7/10 - 5/10 = -8/10 = -4/5.",
+      "wrong_explain": {
+        "1": "Bạn đã rút gọn sai. -8/10 bằng -4/5, không phải -2/5.",
+        "2": "Kết quả -1 làm tròn sai. Quy đồng về mẫu 10 sẽ cho -8/10 chính xác.",
+        "3": "Bạn có thể đã cộng mẫu số thay vì quy đồng. Mẫu chung vẫn là 10."
+      }
+    }
+  ]
+}

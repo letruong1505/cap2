@@ -1,0 +1,29 @@
+name: Build Windows test exe
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Validate content
+        run: npm run validate
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build portable exe
+        run: npm run dist:win
+
+      - name: Upload exe
+        uses: actions/upload-artifact@v4
+        with:
+          name: vung-bai-test-exe
+          path: dist/*.exe

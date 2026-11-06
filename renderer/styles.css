@@ -1,0 +1,78 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: #f5f7fa;
+  color: #1d2733;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: #1f4e79;
+  color: #fff;
+}
+.brand { font-weight: 700; font-size: 18px; }
+.brand .sub { font-weight: 400; opacity: 0.8; margin-left: 8px; font-size: 14px; }
+
+main { padding: 24px; max-width: 900px; margin: 0 auto; }
+
+.panel {
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px 28px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+h1 { font-size: 24px; margin: 0 0 4px; }
+h2 { font-size: 18px; margin: 24px 0 8px; color: #1f4e79; }
+.meta { color: #6b7785; margin: 0 0 8px; font-size: 14px; }
+
+.formula {
+  font-family: "Cambria Math", "Times New Roman", serif;
+  font-size: 18px;
+  background: #eef4fa;
+  padding: 10px 14px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.example { border-left: 3px solid #1f4e79; padding: 8px 14px; margin: 10px 0; background: #fafcfe; }
+.example ol { margin: 6px 0 0 18px; padding: 0; }
+
+.question { border-top: 1px solid #e3e8ef; padding: 14px 0; }
+.question .stem { font-weight: 600; margin-bottom: 8px; }
+.question .level {
+  display: inline-block; font-size: 12px; padding: 2px 8px; border-radius: 10px;
+  background: #e8f0f8; color: #1f4e79; margin-bottom: 6px;
+}
+.choice { display: block; margin: 4px 0; cursor: pointer; }
+.question input[type="text"] {
+  padding: 6px 10px; font-size: 16px; width: 160px; border: 1px solid #c9d3df; border-radius: 6px;
+}
+.feedback { margin-top: 8px; padding: 8px 12px; border-radius: 6px; font-size: 15px; }
+.feedback.ok { background: #e7f6ec; color: #17633a; }
+.feedback.bad { background: #fdecec; color: #8a1f1f; }
+
+.actions { margin-top: 16px; }
+button.primary {
+  background: #1f4e79; color: #fff; border: none; padding: 10px 18px;
+  border-radius: 6px; font-size: 16px; cursor: pointer;
+}
+button.primary:hover { background: #173a5a; }
+
+.score { margin-top: 16px; padding: 14px; background: #eef4fa; border-radius: 8px; }
+
+.chapter { margin-bottom: 16px; }
+.chapter h3 { font-size: 16px; margin: 12px 0 6px; color: #1d2733; }
+.lesson-list { margin: 0; padding-left: 20px; }
+.lesson-list li { margin: 4px 0; }
+button.link {
+  background: none; border: none; padding: 0; color: #1f4e79;
+  font-size: 16px; cursor: pointer; text-decoration: underline; margin-bottom: 8px;
+}
