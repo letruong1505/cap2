@@ -166,14 +166,18 @@ function showScore(lesson, progress) {
   const byLevel = {};
   let total = 0;
   let correct = 0;
+  let unchecked = 0;
   for (const item of lesson.items) {
     const level = item.level;
     byLevel[level] = byLevel[level] || { total: 0, correct: 0 };
     byLevel[level].total += 1;
     total += 1;
-    const saved = progress[item.id];
-    // Tính lại từ đáp án đã lưu, không dùng cờ đúng/sai lưu từ trước.
-    if (saved && isCorrect(item, saved.value)) {
+    // Đếm theo đúng những gì học sinh đang thấy: câu có phản hồi màu xanh là đúng.
+    const q = document.querySelector(`.question[data-id="${item.id}"]`);
+    const feedback = q && q.querySelector('.feedback');
+    if (!feedback || feedback.hidden) {
+      unchecked += 1;
+    } else if (feedback.classList.contains('ok')) {
       byLevel[level].correct += 1;
       correct += 1;
     }
@@ -181,6 +185,9 @@ function showScore(lesson, progress) {
   box.replaceChildren();
   box.hidden = false;
   box.append(el('strong', {}, `Đúng ${correct}/${total} câu`));
+  if (unchecked > 0) {
+    box.append(el('p', {}, `Còn ${unchecked} câu chưa bấm Kiểm tra.`));
+  }
   const list = el('ul');
   for (const [level, r] of Object.entries(byLevel)) {
     list.append(el('li', {}, `${level}: ${r.correct}/${r.total}`));
