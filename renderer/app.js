@@ -1,9 +1,7 @@
 // Engine giao diện bài học: lý thuyết, ví dụ, luyện tập và chấm toàn bài.
+// Mỗi lần mở bài là một lượt làm mới: thứ tự phương án được xáo trộn, không lưu kết quả cũ.
 // Mọi nội dung từ file JSON được gán bằng textContent để tránh chèn mã HTML ngoài ý muốn.
 
-// Khóa lưu tiến độ được đặt khi mở bài, theo đường dẫn bài học.
-// Tiền tố v3: dữ liệu của các bản trước không được đọc lại.
-let PROGRESS_KEY = null;
 const R = window.Rational;
 
 const el = (tag, attrs = {}, text) => {
@@ -16,22 +14,25 @@ const el = (tag, attrs = {}, text) => {
   return node;
 };
 
-// Trạng thái bài học: đáp án đã chọn (theo nội dung), và đã nộp bài chưa.
-function loadState() {
-  try {
-    const s = JSON.parse(localStorage.getItem(PROGRESS_KEY));
-    return { answers: (s && s.answers) || {}, submitted: !!(s && s.submitted) };
-  } catch {
-    return { answers: {}, submitted: false };
+// Xáo trộn Fisher–Yates, trả về mảng mới.
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
   }
+  return a;
 }
 
-function saveState(state) {
-  try {
-    localStorage.setItem(PROGRESS_KEY, JSON.stringify(state));
-  } catch {
-    // Bỏ qua nếu không ghi được; bản thử vẫn chạy được.
+// Một lượt làm bài: thứ tự phương án mới cho mỗi câu trắc nghiệm, đáp án đang chọn, và trạng thái đã nộp.
+function newAttempt(lesson) {
+  const order = {};
+  for (const item of lesson.items) {
+    if (item.type === 'mcq') {
+      order[item.id] = shuffle(item.choices.map((_, i) => i));
+    }
   }
+  return { order, answers: {}, submitted: false };
 }
 
 function renderTheory(lesson) {
@@ -60,7 +61,7 @@ function renderExamples(lesson) {
   });
 }
 
-function renderQuiz(lesson, state) {
+function renderQuiz(lesson, attempt) {
   const box = document.getElementById('quiz');
   box.replaceChildren();
 
@@ -69,14 +70,14 @@ function renderQuiz(lesson, state) {
     q.append(el('span', { class: 'level' }, item.level));
     q.append(el('div', { class: 'stem' }, `${idx + 1}. ${item.stem}`));
 
-    // Chỉ lưu lựa chọn, không hiện đúng sai khi chọn.
+    // Chỉ ghi nhận lựa chọn, không hiện đúng sai khi chọn.
     if (item.type === 'mcq') {
-      item.choices.forEach((choice, ci) => {
+      attempt.order[item.id].forEach((origIndex) => {
+        const choice = item.choices[origIndex];
         const label = el('label', { class: 'choice' });
-        const input = el('input', { type: 'radio', name: item.id, value: String(ci) });
+        const input = el('input', { type: 'radio', name: item.id });
         input.addEventListener('change', () => {
-          state.answers[item.id] = choice;
-          saveState(state);
+          attempt.answers[item.id] = choice;
         });
         label.append(input, ' ', choice);
         q.append(label);
@@ -84,33 +85,24 @@ function renderQuiz(lesson, state) {
     } else {
       const input = el('input', { type: 'text', 'aria-label': 'Đáp án' });
       input.addEventListener('input', () => {
-        state.answers[item.id] = input.value.trim() || null;
-        saveState(state);
+        attempt.answers[item.id] = input.value.trim() || null;
       });
       q.append(input);
     }
 
     q.append(el('div', { class: 'feedback', hidden: 'hidden' }));
     box.append(q);
-    restoreAnswer(item, q, state.answers[item.id]);
   });
-
-  if (state.submitted) applySubmitted(lesson, state);
 }
 
-function readAnswer(item, q) {
-  if (item.type === 'mcq') {
-    const picked = q.querySelector('input[type="radio"]:checked');
-    return picked ? item.choices[Number(picked.value)] : null;
-  }
-  const text = q.querySelector('input[type="text"]').value.trim();
-  return text === '' ? null : text;
+function isEmpty(value) {
+  return value === null || value === undefined || value === '';
 }
 
 // Đáp án được so theo giá trị (nội dung phương án hoặc số đã nhập), không theo vị trí.
 // Với câu điền, 2/4 và 1/2 là cùng một đáp án.
 function isCorrect(item, value) {
-  if (value === null || value === undefined || value === '') return false;
+  if (isEmpty(value)) return false;
   if (item.type === 'mcq') return value === item.choices[item.answer];
   try {
     return R.sameValue(value, item.answer);
@@ -123,29 +115,14 @@ function correctText(item) {
   return item.type === 'mcq' ? item.choices[item.answer] : item.answer;
 }
 
-function restoreAnswer(item, q, value) {
-  if (value === null || value === undefined || value === '') return;
-  if (item.type === 'mcq') {
-    const idx = item.choices.indexOf(value);
-    const input = q.querySelector(`input[type="radio"][value="${idx}"]`);
-    if (input) input.checked = true;
-  } else {
-    q.querySelector('input[type="text"]').value = value;
-  }
-}
-
-function lockQuestion(q) {
-  q.querySelectorAll('input').forEach((i) => { i.disabled = true; });
-}
-
 // Hiển thị kết quả của một câu sau khi nộp bài.
 function showResult(item, feedback, value) {
   feedback.hidden = false;
   const explain = item.explain;
 
-  if (value === null || value === undefined || value === '') {
+  if (isEmpty(value)) {
     feedback.className = 'feedback bad';
-    feedback.textContent = `Bạn chưa trả lời. Đáp án đúng: ${correctText(item)}. Lời giải: ${explain}`;
+    feedback.textContent = `Chưa trả lời, tính là sai. Đáp án đúng: ${correctText(item)}. Lời giải: ${explain}`;
     return;
   }
   if (item.type === 'fill') {
@@ -168,41 +145,29 @@ function showResult(item, feedback, value) {
   feedback.textContent = (note ? note + ' ' : '') + 'Lời giải: ' + explain;
 }
 
-// Hiển thị kết quả toàn bài và khóa mọi câu. Dùng cho cả lần nộp vừa xong và lần mở lại.
-function applySubmitted(lesson, state) {
+// Chấm toàn bài: hiện kết quả từng câu, khóa mọi ô nhập, cập nhật điểm.
+function submitAll(lesson, attempt) {
+  if (attempt.submitted) return;
+  attempt.submitted = true;
+
   lesson.items.forEach((item) => {
     const q = document.querySelector(`.question[data-id="${item.id}"]`);
     if (!q) return;
-    showResult(item, q.querySelector('.feedback'), state.answers[item.id]);
-    lockQuestion(q);
+    showResult(item, q.querySelector('.feedback'), attempt.answers[item.id]);
+    q.querySelectorAll('input').forEach((i) => { i.disabled = true; });
   });
   document.getElementById('btn-submit').disabled = true;
-  updateScore(lesson, state);
+  updateScore(lesson, attempt);
 }
 
-// Nộp bài: đọc đáp án hiện tại, lưu, rồi chấm toàn bộ.
-function submitAll(lesson, state) {
-  if (state.submitted) return;
-  lesson.items.forEach((item) => {
-    const q = document.querySelector(`.question[data-id="${item.id}"]`);
-    state.answers[item.id] = q ? readAnswer(item, q) : null;
-  });
-  state.submitted = true;
-  saveState(state);
-  applySubmitted(lesson, state);
-}
-
-function updateScore(lesson, state) {
+function updateScore(lesson, attempt) {
   const box = document.getElementById('score');
   box.replaceChildren();
 
-  if (!state.submitted) {
-    const unanswered = lesson.items.filter((i) => {
-      const v = state.answers[i.id];
-      return v === null || v === undefined || v === '';
-    }).length;
+  if (!attempt.submitted) {
+    const unanswered = lesson.items.filter((i) => isEmpty(attempt.answers[i.id])).length;
     box.append(el('span', { class: 'meta' },
-      `Còn ${unanswered} câu chưa trả lời. Bấm Kiểm tra toàn bài khi làm xong.`));
+      `Còn ${unanswered} câu chưa trả lời. Câu chưa làm sẽ tính là sai khi nộp bài.`));
     return;
   }
 
@@ -213,7 +178,7 @@ function updateScore(lesson, state) {
     byLevel[item.level] = byLevel[item.level] || { total: 0, correct: 0 };
     byLevel[item.level].total += 1;
     total += 1;
-    if (isCorrect(item, state.answers[item.id])) {
+    if (isCorrect(item, attempt.answers[item.id])) {
       byLevel[item.level].correct += 1;
       correct += 1;
     }
@@ -266,27 +231,25 @@ function renderHome(manifest) {
   showOnly('home');
 }
 
+// Mỗi lần mở bài là một lượt làm mới (không khôi phục kết quả cũ).
 async function openLesson(relPath) {
   try {
     const lesson = await window.vungBai.loadLesson(relPath);
-    PROGRESS_KEY = 'vungbai.v3.progress.' + relPath;
     document.getElementById('breadcrumb').textContent =
       `Lớp ${lesson.grade} › ${lesson.subject === 'toan' ? 'Toán' : lesson.subject} › ${lesson.chapter}`;
     document.getElementById('lesson-title').textContent = lesson.lesson;
     document.getElementById('lesson-meta').textContent =
       `Sách: ${lesson.bookSeries} · ${lesson.items.length} câu luyện tập`;
 
-    const state = loadState();
+    const attempt = newAttempt(lesson);
     renderTheory(lesson);
     renderExamples(lesson);
-    renderQuiz(lesson, state);
+    renderQuiz(lesson, attempt);
 
     const submit = document.getElementById('btn-submit');
-    submit.disabled = state.submitted;
-    submit.onclick = () => {
-      submitAll(lesson, state);
-    };
-    if (!state.submitted) updateScore(lesson, state);
+    submit.disabled = false;
+    submit.onclick = () => submitAll(lesson, attempt);
+    updateScore(lesson, attempt);
 
     showOnly('lesson');
   } catch (err) {
