@@ -1,0 +1,147 @@
+{
+  "id": "t7-so-huu-ti-luy-thua",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 1",
+  "chapter": "Chương I. Số hữu tỉ",
+  "lesson": "Bài 3. Luỹ thừa với số mũ tự nhiên của một số hữu tỉ",
+  "section": "Phần 1: Luỹ thừa với số mũ tự nhiên; Phần 2: Nhân và chia hai luỹ thừa cùng cơ số; Phần 3: Luỹ thừa của luỹ thừa",
+  "bookPage": 16,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Luỹ thừa bậc n của số hữu tỉ x là tích của n thừa số x: xⁿ = x · x · … · x (n thừa số), với n là số tự nhiên lớn hơn 1. Gọi x là cơ số, n là số mũ."
+    },
+    {
+      "type": "text",
+      "content": "Quy ước: x⁰ = 1 (x ≠ 0) và x¹ = x."
+    },
+    {
+      "type": "formula",
+      "content": "xᵐ · xⁿ = xᵐ⁺ⁿ;   xᵐ : xⁿ = xᵐ⁻ⁿ (x ≠ 0, m ≥ n)"
+    },
+    {
+      "type": "formula",
+      "content": "(xᵐ)ⁿ = xᵐ·ⁿ;   (x · y)ⁿ = xⁿ · yⁿ;   (x/y)ⁿ = xⁿ / yⁿ (y ≠ 0)"
+    },
+    {
+      "type": "text",
+      "content": "Khi tính luỹ thừa của một phân số, ta lũy thừa cả tử và mẫu. Khi nhân hai luỹ thừa cùng cơ số, giữ nguyên cơ số và cộng hai số mũ."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính (-3)³.",
+      "expr": "(-3)*(-3)*(-3)",
+      "steps": [
+        "(-3)³ = (-3) · (-3) · (-3).",
+        "(-3) · (-3) = 9; 9 · (-3) = -27."
+      ],
+      "answer": "-27"
+    },
+    {
+      "problem": "Tính (2/3)³.",
+      "expr": "(2/3)*(2/3)*(2/3)",
+      "steps": [
+        "(2/3)³ = 2³ / 3³ = 8/27."
+      ],
+      "answer": "8/27"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Giá trị của (-2)⁴ là:",
+      "expr": "(-2)*(-2)*(-2)*(-2)",
+      "choices": ["-16", "16", "-8", "8"],
+      "answer": 1,
+      "explain": "(-2)⁴ = (-2) · (-2) · (-2) · (-2) = 16, vì tích của bốn số âm là số dương.",
+      "wrong_explain": {
+        "0": "Bạn đã để kết quả âm. Số mũ chẵn cho kết quả dương.",
+        "2": "Bạn chỉ nhân ba thừa số. Luỹ thừa bậc 4 có bốn thừa số.",
+        "3": "Bạn chỉ nhân ba thừa số và để kết quả dương. Hãy đếm lại số thừa số."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Giá trị của (-3/5)² viết dưới dạng a/b là:",
+      "expr": "(-3/5)*(-3/5)",
+      "answer": "9/25",
+      "explain": "(-3/5)² = (-3/5) · (-3/5) = 9/25."
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Giá trị của (-7)⁰ là:",
+      "expr": "1",
+      "choices": ["0", "1", "-7", "-1"],
+      "answer": 1,
+      "explain": "Theo quy ước, mọi số khác 0 lũy thừa 0 đều bằng 1.",
+      "wrong_explain": {
+        "0": "Đây là quy ước sai. Mọi số khác 0 lũy thừa 0 đều bằng 1, không phải 0.",
+        "2": "Bạn lấy cơ số làm kết quả. Với số mũ 0, kết quả luôn là 1.",
+        "3": "Bạn đã nhầm dấu. Luỹ thừa bậc 0 luôn bằng 1, không âm."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Giá trị của (2/3)² · (2/3)³ là:",
+      "expr": "(2/3)*(2/3)*(2/3)*(2/3)*(2/3)",
+      "choices": ["32/243", "4/9", "8/27", "16/81"],
+      "answer": 0,
+      "explain": "(2/3)² · (2/3)³ = (2/3)⁵ = 32/243, vì cùng cơ số nên cộng số mũ: 2 + 3 = 5.",
+      "wrong_explain": {
+        "1": "4/9 là (2/3)². Bạn chưa nhân thêm luỹ thừa bậc 3.",
+        "2": "8/27 là (2/3)³. Khi nhân hai luỹ thừa cùng cơ số, phải cộng số mũ.",
+        "3": "16/81 là (2/3)⁴. Bạn đã cộng số mũ sai."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Giá trị của (1/2)⁴ : (1/2)² là:",
+      "expr": "((1/2)*(1/2)*(1/2)*(1/2))/((1/2)*(1/2))",
+      "choices": ["1/4", "1/8", "1/2", "1/16"],
+      "answer": 0,
+      "explain": "(1/2)⁴ : (1/2)² = (1/2)⁴⁻² = (1/2)² = 1/4.",
+      "wrong_explain": {
+        "1": "1/8 là kết quả của (1/2)³. Khi chia cùng cơ số, phải trừ số mũ: 4 - 2 = 2.",
+        "2": "1/2 là (1/2)¹. Bạn đã trừ số mũ sai.",
+        "3": "1/16 là (1/2)⁴. Bạn chưa thực hiện phép chia."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình lập phương cạnh 1/2 m có thể tích là bao nhiêu m³? Viết dưới dạng a/b.",
+      "expr": "(1/2)*(1/2)*(1/2)",
+      "answer": "1/8",
+      "explain": "Thể tích hình lập phương là a³, nên (1/2)³ = 1/8 m³."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Giá trị của (-2/3)³ · (3/2)³ là:",
+      "expr": "(-2/3)*(-2/3)*(-2/3)*(3/2)*(3/2)*(3/2)",
+      "choices": ["-1", "1", "-8/27", "27/8"],
+      "answer": 0,
+      "explain": "(-2/3)³ · (3/2)³ = [(-2/3) · (3/2)]³ = (-1)³ = -1.",
+      "wrong_explain": {
+        "1": "Kết quả phải âm vì cơ số thứ nhất âm và số mũ là 3 (lẻ).",
+        "2": "-8/27 chỉ là (-2/3)³. Bạn chưa nhân với (3/2)³.",
+        "3": "27/8 là (3/2)³. Bạn chưa nhân với (-2/3)³."
+      }
+    }
+  ]
+}

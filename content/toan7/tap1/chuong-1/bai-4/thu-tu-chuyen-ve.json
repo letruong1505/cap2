@@ -1,0 +1,143 @@
+{
+  "id": "t7-so-huu-ti-thu-tu-chuyen-ve",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 1",
+  "chapter": "Chương I. Số hữu tỉ",
+  "lesson": "Bài 4. Thứ tự thực hiện các phép tính. Quy tắc chuyển vế",
+  "section": "Phần 1: Thứ tự thực hiện các phép tính; Phần 2: Quy tắc chuyển vế",
+  "bookPage": 20,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Biểu thức có phép cộng và phép trừ, hoặc chỉ có phép nhân và phép chia: thực hiện từ trái sang phải."
+    },
+    {
+      "type": "text",
+      "content": "Biểu thức không có dấu ngoặc: thực hiện luỹ thừa, rồi nhân và chia, cuối cùng cộng và trừ."
+    },
+    {
+      "type": "text",
+      "content": "Biểu thức có dấu ngoặc: thực hiện trong ngoặc tròn ( ) trước, rồi đến ngoặc vuông [ ], rồi đến ngoặc nhọn { }."
+    },
+    {
+      "type": "formula",
+      "content": "Nếu a + b = c thì a = c - b.   Nếu a - b = c thì a = c + b."
+    },
+    {
+      "type": "text",
+      "content": "Quy tắc chuyển vế: khi chuyển một số hạng từ vế này sang vế kia của đẳng thức, ta đổi dấu số hạng đó (dấu + thành -, dấu - thành +)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính 1/2 + (1/3)² · 3/2.",
+      "expr": "1/2 + (1/3)*(1/3)*(3/2)",
+      "steps": [
+        "Thực hiện luỹ thừa trước: (1/3)² = 1/9.",
+        "Nhân: 1/9 · 3/2 = 1/6.",
+        "Cộng: 1/2 + 1/6 = 3/6 + 1/6 = 4/6 = 2/3."
+      ],
+      "answer": "2/3"
+    },
+    {
+      "problem": "Tìm x, biết x + 1/2 = -6/7.",
+      "expr": "-6/7 - 1/2",
+      "steps": [
+        "Chuyển 1/2 sang vế phải, đổi dấu: x = -6/7 - 1/2.",
+        "Quy đồng mẫu 14: x = -12/14 - 7/14 = -19/14."
+      ],
+      "answer": "-19/14"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Giá trị của 1/2 · 4 - 1/3 là:",
+      "expr": "1/2*4 - 1/3",
+      "choices": ["5/3", "1/3", "2", "11/6"],
+      "answer": 0,
+      "explain": "Nhân trước: 1/2 · 4 = 2. Sau đó trừ: 2 - 1/3 = 5/3.",
+      "wrong_explain": {
+        "1": "Bạn chưa nhân 1/2 với 4 trước khi trừ. Phép nhân được thực hiện trước phép trừ.",
+        "2": "Bạn đã trừ trước khi nhân, hoặc bỏ qua 1/3. Phép nhân được thực hiện trước phép trừ.",
+        "3": "Bạn đã quy đồng sai. 2 - 1/3 = 5/3, không phải 11/6."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính (1/2 + 1/4) · 2/3. Viết kết quả dưới dạng a/b.",
+      "expr": "(1/2 + 1/4)*(2/3)",
+      "answer": "1/2",
+      "explain": "Trong ngoặc: 1/2 + 1/4 = 3/4. Sau đó nhân: 3/4 · 2/3 = 1/2."
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Giá trị của 3/4 - 1/2 : 2/3 là:",
+      "expr": "3/4 - (1/2)/(2/3)",
+      "choices": ["0", "1/2", "-3/4", "3/4"],
+      "answer": 0,
+      "explain": "Chia trước: 1/2 : 2/3 = 1/2 · 3/2 = 3/4. Sau đó trừ: 3/4 - 3/4 = 0.",
+      "wrong_explain": {
+        "1": "Bạn đã trừ trước khi chia. Phép chia được thực hiện trước phép trừ.",
+        "2": "Bạn đã đổi dấu sai. Kết quả chia là 3/4, nên 3/4 - 3/4 = 0.",
+        "3": "Bạn chưa thực hiện phép trừ với kết quả của phép chia."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tìm x, biết x - 3/4 = 1/2.",
+      "expr": "1/2 + 3/4",
+      "choices": ["5/4", "1/4", "-1/4", "-5/4"],
+      "answer": 0,
+      "explain": "Chuyển -3/4 sang vế phải và đổi dấu: x = 1/2 + 3/4 = 5/4.",
+      "wrong_explain": {
+        "1": "Bạn trừ thay vì cộng: x = 1/2 - 3/4 = -1/4 không đúng. Khi chuyển vế, phải đổi dấu.",
+        "2": "Bạn đã tính sai dấu. Với x - 3/4 = 1/2, x = 1/2 + 3/4 là số dương.",
+        "3": "Bạn đổi dấu cả vế trái và vế phải. Chỉ đổi dấu số hạng được chuyển."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm x, biết 2/3 + x = -1/6. Viết kết quả dưới dạng a/b.",
+      "expr": "-1/6 - 2/3",
+      "answer": "-5/6",
+      "explain": "Chuyển 2/3 sang vế phải và đổi dấu: x = -1/6 - 2/3 = -1/6 - 4/6 = -5/6."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Giá trị của (-1/2) · 4/3 - (-1/6) : 1/3 là:",
+      "expr": "(-1/2)*(4/3) - (-1/6)/(1/3)",
+      "choices": ["-1/6", "1/6", "-7/6", "-1/2"],
+      "answer": 0,
+      "explain": "(-1/2) · 4/3 = -2/3; (-1/6) : 1/3 = -1/2. Vậy -2/3 - (-1/2) = -2/3 + 1/2 = -1/6.",
+      "wrong_explain": {
+        "1": "Bạn đã lấy dấu sai ở kết quả cuối. Hãy kiểm tra lại dấu của -2/3 + 1/2.",
+        "2": "Bạn đã trừ 1/2 thay vì cộng: -2/3 - 1/2 = -7/6. Trừ số âm bằng cộng số dương.",
+        "3": "Bạn đã bỏ qua phép chia trong ngoặc sau. Hãy thực hiện chia trước khi trừ."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một chiếc bánh chưng nặng 4/5 kg, gồm gạo 1/2 kg, đậu xanh 1/8 kg, lá dong 1/50 kg, còn lại là thịt. Khối lượng thịt (kg) viết dưới dạng a/b là:",
+      "expr": "4/5 - 1/2 - 1/8 - 1/50",
+      "answer": "31/200",
+      "explain": "Khối lượng thịt = 4/5 - 1/2 - 1/8 - 1/50 = 160/200 - 100/200 - 25/200 - 4/200 = 31/200 kg."
+    }
+  ]
+}
