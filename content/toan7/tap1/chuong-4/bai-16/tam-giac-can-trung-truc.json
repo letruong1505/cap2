@@ -1,0 +1,128 @@
+{
+  "id": "t7-tam-giac-can-duong-trung-truc",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 1",
+  "chapter": "Chương IV. Tam giác bằng nhau",
+  "lesson": "Bài 16. Tam giác cân. Đường trung trực của đoạn thẳng",
+  "section": "Phần 1: Tam giác cân và tam giác đều; Phần 2: Đường trung trực của đoạn thẳng",
+  "bookPage": 80,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tam giác cân có hai cạnh bằng nhau; hai cạnh này là cạnh bên, cạnh còn lại là cạnh đáy. Góc giữa hai cạnh bên là góc ở đỉnh; hai góc còn lại là góc ở đáy. Trong tam giác cân, hai góc ở đáy bằng nhau. Đảo lại, tam giác có hai góc bằng nhau là tam giác cân."
+    },
+    {
+      "type": "text",
+      "content": "Tam giác đều có ba cạnh bằng nhau và ba góc bằng nhau, mỗi góc bằng 60°."
+    },
+    {
+      "type": "text",
+      "content": "Đường trung trực của một đoạn thẳng là đường thẳng vuông góc với đoạn thẳng đó tại trung điểm của nó. Đường trung trực cũng là trục đối xứng của đoạn thẳng."
+    },
+    {
+      "type": "text",
+      "content": "Điểm nằm trên đường trung trực của một đoạn thẳng thì cách đều hai mút của đoạn thẳng. Ngược lại, điểm cách đều hai mút thì nằm trên đường trung trực."
+    },
+    {
+      "type": "text",
+      "content": "Lỗi thường gặp: quên rằng đường trung trực phải vừa vuông góc vừa đi qua trung điểm; nhầm tam giác cân với tam giác đều."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tam giác ABC cân tại A, góc A = 40°. Tính góc B.",
+      "expr": "(180 - 40)/2",
+      "steps": [
+        "Hai góc ở đáy bằng nhau và tổng ba góc bằng 180°: B = (180° − 40°) : 2 = 70°."
+      ],
+      "answer": "70"
+    },
+    {
+      "problem": "Tam giác cân có góc ở đỉnh bằng 100°. Mỗi góc ở đáy bằng bao nhiêu độ?",
+      "expr": "(180 - 100)/2",
+      "steps": [
+        "Mỗi góc ở đáy bằng (180° − 100°) : 2 = 40°."
+      ],
+      "answer": "40"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tam giác ABC cân tại A, góc A = 50°. Tính góc B (độ).",
+      "expr": "(180 - 50)/2",
+      "answer": "65",
+      "explain": "Hai góc ở đáy bằng nhau: B = (180° − 50°) : 2 = 65°."
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Mỗi góc của tam giác đều bằng bao nhiêu độ?",
+      "expr": "60",
+      "choices": ["60", "45", "90", "120"],
+      "answer": 0,
+      "explain": "Tam giác đều có ba góc bằng nhau và tổng bằng 180°, nên mỗi góc bằng 60°.",
+      "wrong_explain": {
+        "1": "45° là góc của tam giác vuông cân, không phải tam giác đều.",
+        "2": "90° là góc vuông; tam giác đều không có góc vuông.",
+        "3": "120° là góc tù; tam giác đều chỉ có ba góc nhọn bằng nhau."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tam giác cân có góc ở đáy bằng 72°. Góc ở đỉnh bằng bao nhiêu độ?",
+      "expr": "180 - 2*72",
+      "answer": "36",
+      "explain": "Góc ở đỉnh = 180° − 2 · 72° = 36°."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tam giác ABC cân tại A có góc B = 65°. Góc A bằng bao nhiêu độ?",
+      "expr": "50",
+      "choices": ["50", "65", "130", "25"],
+      "answer": 0,
+      "explain": "Góc B = C = 65° vì tam giác cân tại A, nên A = 180° − 2 · 65° = 50°.",
+      "wrong_explain": {
+        "1": "65° là góc ở đáy, không phải góc ở đỉnh A.",
+        "2": "130° là 180° − 50°, đây là tổng hai góc ở đáy, không phải góc A.",
+        "3": "25° là kết quả của phép chia sai, không đúng với công thức góc ở đỉnh."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC cân tại A, AB = 2x + 1 cm và AC = 3x − 4 cm. Tìm x.",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Tam giác cân tại A có AB = AC: 2x + 1 = 3x − 4, suy ra x = 5."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác ABC cân tại A, góc ngoài tại đỉnh B bằng 110°. Tính góc A (độ).",
+      "expr": "180 - 2*(180 - 110)",
+      "answer": "40",
+      "explain": "Góc ngoài tại B bằng 180° − B, nên B = 180° − 110° = 70°. Vì tam giác cân tại A nên C = B = 70°, suy ra A = 180° − 140° = 40°."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đoạn thẳng AB dài 12 cm. Điểm M nằm trên đường trung trực của AB và MA = 7,5 cm. Tính MB (cm).",
+      "expr": "7,5",
+      "answer": "7,5",
+      "explain": "Điểm nằm trên đường trung trực của đoạn thẳng thì cách đều hai mút, nên MB = MA = 7,5 cm."
+    }
+  ]
+}

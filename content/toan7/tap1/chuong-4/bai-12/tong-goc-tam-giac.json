@@ -1,0 +1,131 @@
+{
+  "id": "t7-tong-goc-tam-giac",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 1",
+  "chapter": "Chương IV. Tam giác bằng nhau",
+  "lesson": "Bài 12. Tổng các góc trong một tam giác",
+  "section": "Phần 1: Tổng ba góc trong tam giác; Phần 2: Góc ngoài của tam giác; Phần 3: Phân loại tam giác theo góc",
+  "bookPage": 60,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tổng ba góc trong một tam giác bằng 180°. Chứng minh: qua một đỉnh kẻ đường thẳng song song với cạnh đối diện, rồi dùng tính chất góc so le trong."
+    },
+    {
+      "type": "text",
+      "content": "Góc ngoài tại một đỉnh của tam giác bằng tổng hai góc trong không kề với đỉnh đó."
+    },
+    {
+      "type": "text",
+      "content": "Tam giác nhọn có ba góc nhọn. Tam giác vuông có một góc vuông; trong tam giác vuông, hai góc nhọn phụ nhau (tổng 90°), cạnh đối diện góc vuông là cạnh huyền. Tam giác tù có một góc tù."
+    },
+    {
+      "type": "text",
+      "content": "Lỗi thường gặp: quên rằng trong tam giác vuông hai góc nhọn có tổng 90°, không phải 180°; cộng nhầm góc ngoài với góc kề trong thay vì tổng hai góc trong không kề."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tam giác ABC có góc A = 50° và góc B = 60°. Tính góc C.",
+      "expr": "180 - 50 - 60",
+      "steps": [
+        "Tổng ba góc bằng 180°: C = 180° − 50° − 60° = 70°."
+      ],
+      "answer": "70"
+    },
+    {
+      "problem": "Góc ngoài tại đỉnh C của tam giác ABC bằng 120°, góc A = 55°. Tính góc B.",
+      "expr": "120 - 55",
+      "steps": [
+        "Góc ngoài tại C bằng tổng hai góc trong không kề với C, tức là A + B = 120°.",
+        "Suy ra B = 120° − 55° = 65°."
+      ],
+      "answer": "65"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tam giác ABC có góc A = 40° và góc B = 75°. Tính góc C (độ).",
+      "expr": "180 - 40 - 75",
+      "answer": "65",
+      "explain": "Tổng ba góc bằng 180° nên C = 180° − 40° − 75° = 65°."
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tam giác ABC vuông tại A, góc B = 35°. Góc C bằng bao nhiêu độ?",
+      "expr": "55",
+      "choices": ["55", "35", "145", "90"],
+      "answer": 0,
+      "explain": "Trong tam giác vuông, hai góc nhọn phụ nhau: C = 90° − 35° = 55°.",
+      "wrong_explain": {
+        "1": "35° là góc B, không phải góc C.",
+        "2": "145° là 180° − 35°, nhưng hai góc nhọn trong tam giác vuông có tổng 90°, không phải 180°.",
+        "3": "90° là góc vuông A, không phải góc C."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tam giác có ba góc tỉ lệ với 2 : 3 : 4. Tính góc lớn nhất (độ).",
+      "expr": "4*180/9",
+      "answer": "80",
+      "explain": "Tổng tỉ lệ là 2 + 3 + 4 = 9 phần, mỗi phần bằng 180° : 9 = 20°. Góc lớn nhất là 4 · 20° = 80°."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Góc ngoài tại đỉnh A của tam giác ABC bằng 130°, góc B = 50°. Góc C bằng bao nhiêu độ?",
+      "expr": "80",
+      "choices": ["80", "130", "50", "180"],
+      "answer": 0,
+      "explain": "Góc ngoài tại A bằng B + C, nên C = 130° − 50° = 80°.",
+      "wrong_explain": {
+        "1": "130° là góc ngoài tại A, không phải góc C.",
+        "2": "50° là góc B, không phải góc C.",
+        "3": "180° là tổng ba góc của tam giác, không phải góc C."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC có A = 2x, B = 3x, C = 4x (x tính bằng độ). Tìm x.",
+      "expr": "180/9",
+      "answer": "20",
+      "explain": "Tổng ba góc bằng 180°: 2x + 3x + 4x = 180, suy ra 9x = 180, x = 20."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Góc ngoài tại đỉnh B của tam giác ABC bằng 130°, góc A = 70°. Tính góc C (độ).",
+      "expr": "130 - 70",
+      "answer": "60",
+      "explain": "Góc ngoài tại B bằng A + C, nên C = 130° − 70° = 60°."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Tam giác ABC vuông tại A, góc B gấp đôi góc C. Góc B bằng bao nhiêu độ?",
+      "expr": "60",
+      "choices": ["60", "30", "120", "90"],
+      "answer": 0,
+      "explain": "B + C = 90° và B = 2C, nên 3C = 90°, C = 30°, B = 60°.",
+      "wrong_explain": {
+        "1": "30° là góc C, không phải góc B.",
+        "2": "120° không thể là góc nhọn của tam giác vuông, vì hai góc nhọn có tổng 90°.",
+        "3": "90° là tổng hai góc nhọn, không phải một góc của tam giác."
+      }
+    }
+  ]
+}

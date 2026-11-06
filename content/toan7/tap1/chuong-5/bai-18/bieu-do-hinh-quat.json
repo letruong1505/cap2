@@ -1,0 +1,125 @@
+{
+  "id": "t7-bieu-do-hinh-quat",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 1",
+  "chapter": "Chương V. Thu thập và biểu diễn dữ liệu",
+  "lesson": "Bài 18. Biểu đồ hình quạt tròn",
+  "section": "Phần 1: Đọc và mô tả biểu đồ; Phần 2: Biểu diễn dữ liệu vào biểu đồ; Phần 3: Phân tích",
+  "bookPage": 93,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Biểu đồ hình quạt tròn dùng để so sánh các phần trong toàn bộ dữ liệu. Hình tròn biểu diễn toàn bộ dữ liệu (100%), mỗi hình quạt biểu diễn tỉ lệ của một phần, tổng tỉ lệ các hình quạt bằng 100%."
+    },
+    {
+      "type": "formula",
+      "content": "Tỉ lệ (%) của một phần = (số liệu của phần : tổng số liệu) × 100%.   Góc ở tâm của hình quạt = tỉ lệ (%) × 3,6°. Ví dụ 1% ứng với 3,6°, 50% ứng với 180°."
+    },
+    {
+      "type": "text",
+      "content": "Từ tỉ lệ phần trăm có thể tính số lượng: ví dụ 60% của 200 học sinh là 0,6 × 200 = 120 học sinh."
+    },
+    {
+      "type": "text",
+      "content": "Lỗi thường gặp: nhầm tỉ lệ phần trăm của một hình quạt với số đo góc của nó (hai đại lượng khác nhau nhưng cùng biểu diễn một phần); tổng các tỉ lệ không bằng 100% khi dựng biểu đồ."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Lớp 7 có 40 học sinh, 15 học sinh thích bóng đá. Tính tỉ lệ phần trăm học sinh thích bóng đá.",
+      "expr": "15/40*100",
+      "steps": [
+        "Tỉ lệ = 15 : 40 × 100% = 37,5%.",
+        "Góc ở tâm của hình quạt tương ứng: 37,5 × 3,6° = 135°."
+      ],
+      "answer": "37,5"
+    },
+    {
+      "problem": "Một hình quạt trong biểu đồ chiếm 60% dữ liệu. Góc ở tâm của hình quạt đó bằng bao nhiêu độ?",
+      "expr": "60*3,6",
+      "steps": [
+        "Góc ở tâm = 60 × 3,6° = 216°."
+      ],
+      "answer": "216"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Một hình quạt có tỉ lệ 25%. Góc ở tâm của hình quạt đó bằng bao nhiêu độ?",
+      "expr": "25*3,6",
+      "answer": "90",
+      "explain": "Góc ở tâm = 25 × 3,6° = 90°."
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Một hình quạt có góc ở tâm 72°. Tỉ lệ phần trăm tương ứng là bao nhiêu?",
+      "expr": "720/36",
+      "answer": "20",
+      "explain": "Tỉ lệ = 72 : 3,6 = 20%."
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong biểu đồ hình quạt tròn, tổng tỉ lệ phần trăm của tất cả các hình quạt bằng bao nhiêu?",
+      "expr": "100",
+      "choices": ["100", "360", "180", "50"],
+      "answer": 0,
+      "explain": "Hình tròn biểu diễn toàn bộ dữ liệu, nên tổng tỉ lệ các hình quạt là 100%.",
+      "wrong_explain": {
+        "1": "360° là tổng số đo góc ở tâm của hình tròn, không phải tổng tỉ lệ phần trăm.",
+        "2": "180° là nửa hình tròn, tương ứng với 50%, không phải tổng.",
+        "3": "50% là nửa dữ liệu, không phải tổng toàn bộ."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lớp 7A có 40 học sinh, 10 em chọn môn Toán là môn yêu thích. Tỉ lệ phần trăm học sinh chọn môn Toán là bao nhiêu?",
+      "expr": "10/40*100",
+      "answer": "25",
+      "explain": "Tỉ lệ = 10 : 40 × 100% = 25%."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Một khảo sát có 200 học sinh. Trong biểu đồ, hình quạt môn Bơi lội có góc ở tâm 54°. Số học sinh chọn Bơi lội là bao nhiêu?",
+      "expr": "30",
+      "choices": ["30", "15", "54", "108"],
+      "answer": 0,
+      "explain": "Tỉ lệ = 54 : 3,6 = 15%. Số học sinh = 15% × 200 = 30 học sinh.",
+      "wrong_explain": {
+        "1": "15 là tỉ lệ phần trăm, chưa nhân với 200 để ra số học sinh.",
+        "2": "54 là số đo góc ở tâm, không phải số học sinh.",
+        "3": "108 là 2 · 54, không liên quan đến cách đổi góc sang tỉ lệ."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Biểu đồ hình quạt có ba phần A, B, C. Phần A chiếm 45%, phần B chiếm 35%. Góc ở tâm của phần C bằng bao nhiêu độ?",
+      "expr": "(100 - 45 - 35)*3,6",
+      "answer": "72",
+      "explain": "Phần C chiếm 100% − 45% − 35% = 20%. Góc ở tâm = 20 × 3,6° = 72°."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong biểu đồ hình quạt, một phần có 60 học sinh chiếm 30% toàn bộ dữ liệu. Tổng số học sinh được khảo sát là bao nhiêu?",
+      "expr": "60/30*100",
+      "answer": "200",
+      "explain": "Tổng số = 60 : 30% = 60 : 0,3 = 200 học sinh."
+    }
+  ]
+}

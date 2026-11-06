@@ -1,0 +1,95 @@
+{
+  "id": "t7-thu-thap-phan-loai-du-lieu",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 1",
+  "chapter": "Chương V. Thu thập và biểu diễn dữ liệu",
+  "lesson": "Bài 17. Thu thập và phân loại dữ liệu",
+  "section": "Phần 1: Thu thập dữ liệu và tính đại diện; Phần 2: Phân loại dữ liệu",
+  "bookPage": 88,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Thu thập dữ liệu là lập kế hoạch và tiến hành khảo sát để có số liệu về đối tượng quan tâm, bằng phỏng vấn hoặc bảng hỏi."
+    },
+    {
+      "type": "text",
+      "content": "Tính đại diện: dữ liệu thu được phải phản ánh đúng đối tượng khảo sát. Nếu kết luận áp dụng cho cả tập thể thì không thể chỉ hỏi một nhóm nhỏ hoặc một nhóm có đặc điểm riêng; cần chọn mẫu ngẫu nhiên đủ rộng."
+    },
+    {
+      "type": "text",
+      "content": "Dữ liệu là số (định lượng) như cân nặng, số giờ. Dữ liệu không là số (định tính) gồm loại không sắp thứ tự được (tên tỉnh) và loại sắp thứ tự được (mức đánh giá: Rất tốt, Tốt, Trung bình, Kém)."
+    },
+    {
+      "type": "text",
+      "content": "Lỗi thường gặp: cho rằng dữ liệu được mã số (ví dụ số hiệu tuyến xe buýt) luôn là dữ liệu số; mã số chỉ là nhãn. Kết luận cho cả trường khi chỉ khảo sát một nhóm nhỏ cũng là lỗi."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Lớp 7A có 40 học sinh. Một nhóm chỉ khảo sát 10 học sinh ngồi cùng bàn. Tỉ lệ học sinh được khảo sát là bao nhiêu phần trăm?",
+      "expr": "10/40*100",
+      "steps": [
+        "Tỉ lệ = 10 : 40 × 100% = 25%.",
+        "Chỉ 25% lớp được khảo sát, nên kết quả khó đại diện cho cả lớp."
+      ],
+      "answer": "25"
+    },
+    {
+      "problem": "Khảo sát 60 người, có 15 người chọn mức Rất tốt. Tỉ lệ người chọn Rất tốt là bao nhiêu phần trăm?",
+      "expr": "15/60*100",
+      "steps": [
+        "Tỉ lệ = 15 : 60 × 100% = 25%."
+      ],
+      "answer": "25"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Lớp 7A có 40 học sinh. Nhóm khảo sát chỉ lấy 10 học sinh ngồi cùng bàn để kết luận cho cả lớp. Tỉ lệ học sinh được khảo sát là bao nhiêu phần trăm?",
+      "expr": "10/40*100",
+      "answer": "25",
+      "explain": "Tỉ lệ = 10 : 40 × 100% = 25%. Mẫu chỉ là một nhóm nhỏ nên không đại diện đầy đủ cho cả lớp."
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Lớp 7A có 40 học sinh. Khảo sát gồm 12 học sinh nam và 8 học sinh nữ. Tổng số học sinh được khảo sát là bao nhiêu?",
+      "expr": "12 + 8",
+      "answer": "20",
+      "explain": "Tổng số học sinh được khảo sát là 12 + 8 = 20 học sinh."
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trường có 800 học sinh. Cô giáo chọn 50 học sinh lớp 7A để khảo sát về nhu cầu thư viện. Tỉ lệ số học sinh được khảo sát trên tổng số học sinh là bao nhiêu phần trăm?",
+      "expr": "50/800*100",
+      "answer": "6,25",
+      "explain": "Tỉ lệ = 50 : 800 × 100% = 6,25%. Lớp 7A chỉ là một nhóm có sẵn nên mẫu này có thể không đại diện cho cả trường."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khảo sát 60 người với bốn mức Rất tốt, Tốt, Trung bình, Kém. Có 15 người chọn Rất tốt. Tỉ lệ người chọn Rất tốt là bao nhiêu phần trăm?",
+      "expr": "15/60*100",
+      "answer": "25",
+      "explain": "Tỉ lệ = 15 : 60 × 100% = 25%."
+    },
+    {
+      "id": "q05",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lớp có 36 học sinh. Tỉ lệ học sinh chọn mức Rất tốt là 25%. Có bao nhiêu học sinh chọn mức Rất tốt?",
+      "expr": "25/100*36",
+      "answer": "9",
+      "explain": "Số học sinh = 25% × 36 = 0,25 × 36 = 9 học sinh."
+    }
+  ]
+}

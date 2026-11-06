@@ -1,0 +1,165 @@
+{
+  "id": "t7-so-thuc-thap-phan-lam-tron",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 1",
+  "chapter": "Chương II. Số thực",
+  "lesson": "Bài 5. Số thập phân hữu hạn. Số thập phân vô hạn tuần hoàn",
+  "section": "Phần 1: Số thập phân hữu hạn và vô hạn tuần hoàn; Phần 2: Làm tròn số",
+  "bookPage": 26,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Số thập phân hữu hạn là số có hữu hạn chữ số sau dấu phẩy, ví dụ 0,25 = 1/4."
+    },
+    {
+      "type": "text",
+      "content": "Số thập phân vô hạn tuần hoàn có phần thập phân lặp lại mãi một nhóm chữ số, gọi là chu kì. Chu kì được viết trong dấu ngoặc, ví dụ 0,(3) = 0,333…"
+    },
+    {
+      "type": "formula",
+      "content": "Phân số a/b tối giản (b > 0) viết được thành số thập phân hữu hạn khi và chỉ khi mẫu b không có ước nguyên tố nào khác 2 và 5."
+    },
+    {
+      "type": "text",
+      "content": "Làm tròn đến một hàng: giữ các chữ số đến hàng đó. Nếu chữ số ngay sau nhỏ hơn 5 thì giữ nguyên; nếu từ 5 trở lên thì cộng thêm 1 vào chữ số của hàng đó."
+    },
+    {
+      "type": "text",
+      "content": "Khi làm tròn, sai số không vượt quá nửa đơn vị của hàng làm tròn đến."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Viết 3/8 dưới dạng số thập phân.",
+      "expr": "3/8",
+      "steps": [
+        "Chia 3 cho 8: 3 : 8 = 0,375."
+      ],
+      "answer": "0,375"
+    },
+    {
+      "problem": "Viết 0,(3) dưới dạng phân số.",
+      "expr": "1/3",
+      "steps": [
+        "0,(3) = 0,333… là số thập phân vô hạn tuần hoàn với chu kì 3.",
+        "Vì 3 · 0,(3) = 0,(9) = 1 nên 0,(3) = 1/3."
+      ],
+      "answer": "1/3"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số thập phân nào bằng 3/4?",
+      "expr": "3/4",
+      "choices": ["0,34", "0,75", "0,8", "0,57"],
+      "answer": 1,
+      "explain": "Chia 3 cho 4: 3 : 4 = 0,75.",
+      "wrong_explain": {
+        "0": "0,34 không bằng 3/4. Muốn đổi 3/4 thành số thập phân, hãy chia 3 cho 4 để được 0,75.",
+        "2": "0,8 bằng 4/5, không phải 3/4.",
+        "3": "0,57 không bằng 3/4. Hãy chia 3 cho 4 để được 0,75."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Viết 5/8 dưới dạng số thập phân.",
+      "expr": "5/8",
+      "answer": "0,625",
+      "explain": "Chia 5 cho 8: 5 : 8 = 0,625."
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phân số nào viết được thành số thập phân hữu hạn?",
+      "expr": "7/40",
+      "choices": ["1/6", "7/40", "2/9", "5/12"],
+      "answer": 1,
+      "explain": "Mẫu 40 = 2³ · 5 chỉ có ước nguyên tố 2 và 5, nên 7/40 = 0,175 là số thập phân hữu hạn.",
+      "wrong_explain": {
+        "0": "6 = 2 · 3 có ước nguyên tố 3, nên 1/6 là số thập phân vô hạn tuần hoàn.",
+        "2": "9 = 3² có ước nguyên tố 3, nên 2/9 là số thập phân vô hạn tuần hoàn.",
+        "3": "12 = 2² · 3 có ước nguyên tố 3, nên 5/12 là số thập phân vô hạn tuần hoàn."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Viết 0,125 dưới dạng phân số tối giản.",
+      "expr": "0,125",
+      "answer": "1/8",
+      "explain": "0,125 = 125/1000. Chia cả tử và mẫu cho 125 được 1/8."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Làm tròn số 4,8273 đến hàng phần trăm được:",
+      "expr": "4,83",
+      "choices": ["4,82", "4,83", "4,8", "4,9"],
+      "answer": 1,
+      "explain": "Hàng phần trăm là chữ số 2. Chữ số ngay sau là 7 (≥ 5) nên 2 tăng thành 3: 4,83.",
+      "wrong_explain": {
+        "0": "Chữ số ngay sau là 7 (≥ 5) nên phải tăng hàng phần trăm, không giữ nguyên 2.",
+        "2": "4,8 là làm tròn đến hàng phần mười, không phải hàng phần trăm.",
+        "3": "4,9 sai. Chữ số ngay sau hàng phần mười của 4,8273 là 2 (< 5) nên làm tròn đến hàng phần mười được 4,8."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Làm tròn 17,36 đến hàng đơn vị được:",
+      "expr": "17",
+      "choices": ["17", "18", "17,4", "17,5"],
+      "answer": 0,
+      "explain": "Chữ số ngay sau hàng đơn vị là 3 (< 5) nên giữ nguyên phần nguyên: 17.",
+      "wrong_explain": {
+        "1": "18 sai vì chữ số ngay sau hàng đơn vị là 3 (< 5), không được tăng.",
+        "2": "17,4 là làm tròn đến hàng phần mười, không phải hàng đơn vị.",
+        "3": "17,5 không phải kết quả làm tròn đến hàng đơn vị của 17,36."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính 0,(3) + 0,(6). Viết kết quả dưới dạng phân số tối giản hoặc số nguyên.",
+      "expr": "1/3 + 2/3",
+      "answer": "1",
+      "explain": "0,(3) = 1/3 và 0,(6) = 2/3. Tổng là 1/3 + 2/3 = 1."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Trong các phân số sau, phân số nào sau khi rút gọn viết được thành số thập phân hữu hạn?",
+      "expr": "9/15",
+      "choices": ["9/15", "3/11", "7/12", "4/9"],
+      "answer": 0,
+      "explain": "9/15 = 3/5, mẫu 5 chỉ có ước 5 nên viết được thành số thập phân hữu hạn (0,6).",
+      "wrong_explain": {
+        "1": "11 là số nguyên tố khác 2 và 5 nên 3/11 là số thập phân vô hạn tuần hoàn.",
+        "2": "12 = 2² · 3 có ước 3 nên 7/12 là số thập phân vô hạn tuần hoàn.",
+        "3": "9 = 3² có ước 3 nên 4/9 là số thập phân vô hạn tuần hoàn."
+      }
+    },
+    {
+      "id": "q09",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Viết −0,6 dưới dạng phân số tối giản.",
+      "expr": "-0,6",
+      "answer": "-3/5",
+      "explain": "−0,6 = −6/10 = −3/5."
+    }
+  ]
+}

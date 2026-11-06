@@ -1,0 +1,109 @@
+{
+  "id": "t7-song-song-dau-hieu",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 1",
+  "chapter": "Chương III. Góc và đường thẳng song song",
+  "lesson": "Bài 9. Hai đường thẳng song song. Dấu hiệu nhận biết",
+  "section": "Phần 1: Các cặp góc tạo bởi cát tuyến; Phần 2: Dấu hiệu nhận biết hai đường thẳng song song",
+  "bookPage": 46,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khi đường thẳng c cắt hai đường thẳng a và b, ta có các cặp góc: góc so le trong, góc đồng vị và góc trong cùng phía."
+    },
+    {
+      "type": "text",
+      "content": "Dấu hiệu nhận biết: nếu có một cặp góc so le trong bằng nhau, hoặc một cặp góc đồng vị bằng nhau, hoặc một cặp góc trong cùng phía bù nhau thì a ∥ b."
+    },
+    {
+      "type": "text",
+      "content": "Hai đường thẳng cùng vuông góc với đường thẳng thứ ba thì song song với nhau."
+    },
+    {
+      "type": "text",
+      "content": "Lỗi thường gặp: nhầm góc so le trong với góc trong cùng phía khi đọc hình. Cần xác định đúng vị trí hai góc so với hai đường thẳng và cát tuyến trước khi áp dụng dấu hiệu."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hai đường thẳng a, b bị cắt bởi c. Góc trong cùng phía với một góc bằng 110°. Để a ∥ b thì góc trong cùng phía còn lại bằng bao nhiêu độ?",
+      "expr": "180 - 110",
+      "steps": [
+        "Để a ∥ b thì hai góc trong cùng phía bù nhau: 180° − 110° = 70°."
+      ],
+      "answer": "70"
+    },
+    {
+      "problem": "Cho a ∥ b. Góc đồng vị với góc 52° có số đo bằng bao nhiêu độ?",
+      "expr": "52",
+      "steps": [
+        "Khi a ∥ b, hai góc đồng vị bằng nhau nên góc đồng vị bằng 52°."
+      ],
+      "answer": "52"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Cho hai đường thẳng a, b bị cắt bởi c. Nếu a ∥ b thì góc so le trong với góc 65° bằng bao nhiêu độ?",
+      "expr": "65",
+      "choices": ["65", "115", "25", "75"],
+      "answer": 0,
+      "explain": "Khi a ∥ b, hai góc so le trong bằng nhau nên góc so le trong với góc 65° bằng 65°.",
+      "wrong_explain": {
+        "1": "115° là số đo góc bù với 65°. Góc so le trong thì bằng nhau, không bù nhau.",
+        "2": "25° là 90° − 65°, không liên quan đến cặp góc so le trong.",
+        "3": "75° không phải số đo góc so le trong với 65° khi a ∥ b."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cho a ∥ b. Một góc trong cùng phía với góc 118° có số đo bằng bao nhiêu độ?",
+      "expr": "180 - 118",
+      "answer": "62",
+      "explain": "Khi a ∥ b, hai góc trong cùng phía bù nhau nên góc còn lại bằng 180° − 118° = 62°."
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cho a ∥ b. Góc so le trong với góc 35° có số đo bằng bao nhiêu độ?",
+      "expr": "35",
+      "answer": "35",
+      "explain": "Khi a ∥ b, hai góc so le trong bằng nhau nên góc so le trong với góc 35° bằng 35°."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai góc trong cùng phía có số đo lần lượt là 4x và 2x + 30° (x tính bằng độ). Để a ∥ b thì x bằng bao nhiêu?",
+      "expr": "(180-30)/6",
+      "answer": "25",
+      "explain": "Để a ∥ b, hai góc này bù nhau: 4x + 2x + 30 = 180, suy ra 6x = 150, x = 25."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai góc trong cùng phía có số đo lần lượt là 3x + 10° và 2x − 10°. Để a ∥ b thì x bằng bao nhiêu?",
+      "expr": "180/5",
+      "answer": "36",
+      "explain": "Để a ∥ b, hai góc này bù nhau: 3x + 10 + 2x − 10 = 180, suy ra 5x = 180, x = 36."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai góc so le trong có số đo lần lượt là 5x − 30° và 2x + 60° (x tính bằng độ). Để a ∥ b thì x bằng bao nhiêu?",
+      "expr": "90/3",
+      "answer": "30",
+      "explain": "Để a ∥ b, hai góc so le trong bằng nhau: 5x − 30 = 2x + 60, suy ra 3x = 90, x = 30."
+    }
+  ]
+}

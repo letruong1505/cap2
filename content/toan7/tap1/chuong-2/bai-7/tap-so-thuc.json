@@ -1,0 +1,150 @@
+{
+  "id": "t7-so-thuc-tap-so-thuc-gia-tri-tuyet-doi",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 1",
+  "chapter": "Chương II. Số thực",
+  "lesson": "Bài 7. Tập hợp các số thực",
+  "section": "Phần 1: Tập số thực; Phần 2: So sánh số thực; Phần 3: Giá trị tuyệt đối",
+  "bookPage": 33,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tập số thực R gồm các số hữu tỉ và các số vô tỉ: R = Q ∪ I. Mỗi số thực được biểu diễn bởi đúng một điểm trên trục số thực."
+    },
+    {
+      "type": "text",
+      "content": "Mỗi số thực a có một số đối là −a. Số đối của số dương là số âm, số đối của số âm là số dương, số đối của 0 là 0."
+    },
+    {
+      "type": "text",
+      "content": "So sánh số thực: số âm nhỏ hơn 0, 0 nhỏ hơn số dương. Với hai số thực bất kì, có đúng một trong ba quan hệ: bằng, nhỏ hơn hoặc lớn hơn. Quan hệ có tính bắc cầu."
+    },
+    {
+      "type": "formula",
+      "content": "|a| = a nếu a ≥ 0;   |a| = −a nếu a < 0.   Luôn có |a| ≥ 0 và |−a| = |a|."
+    },
+    {
+      "type": "text",
+      "content": "Khi so sánh hai số âm, số có giá trị tuyệt đối lớn hơn thì nhỏ hơn. Ví dụ −5/4 > −2 vì |−5/4| < |−2|."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính |−3/4| + |2/3|.",
+      "expr": "3/4 + 2/3",
+      "steps": [
+        "|−3/4| = 3/4 vì −3/4 < 0; |2/3| = 2/3 vì 2/3 > 0.",
+        "Cộng: 3/4 + 2/3 = 9/12 + 8/12 = 17/12."
+      ],
+      "answer": "17/12"
+    },
+    {
+      "problem": "Tìm x ≥ 0 biết |x| = 5/2.",
+      "expr": "5/2",
+      "steps": [
+        "Vì x ≥ 0 nên |x| = x, suy ra x = 5/2."
+      ],
+      "answer": "5/2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số đối của −2,5 là:",
+      "expr": "2,5",
+      "choices": ["2,5", "-2,5", "1/2", "-1/2"],
+      "answer": 0,
+      "explain": "Số đối của −2,5 là −(−2,5) = 2,5.",
+      "wrong_explain": {
+        "1": "−2,5 chính là số đã cho, không phải số đối của nó.",
+        "2": "1/2 không liên quan đến −2,5.",
+        "3": "Số đối của −2,5 là 2,5, không phải −1/2."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính |−7/3| − |1/3|.",
+      "expr": "7/3 - 1/3",
+      "answer": "2",
+      "explain": "|−7/3| = 7/3 và |1/3| = 1/3. Hiệu là 7/3 − 1/3 = 6/3 = 2."
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số nào lớn nhất trong các số −1/2, −2/3, −2/5, −3/4?",
+      "expr": "-2/5",
+      "choices": ["-1/2", "-2/3", "-2/5", "-3/4"],
+      "answer": 2,
+      "explain": "Các số âm, số có giá trị tuyệt đối nhỏ hơn thì lớn hơn. Trong bốn số, |−2/5| = 2/5 là nhỏ nhất, nên −2/5 lớn nhất.",
+      "wrong_explain": {
+        "0": "−1/2 = −0,5 nhỏ hơn −2/5 = −0,4.",
+        "1": "−2/3 ≈ −0,67 có giá trị tuyệt đối lớn hơn −2/5 nên nhỏ hơn −2/5.",
+        "3": "−3/4 = −0,75 là số nhỏ nhất trong bốn số, không phải lớn nhất."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số nào nằm giữa −1 và 0 trên trục số?",
+      "expr": "-1/2",
+      "choices": ["-3/2", "-1/2", "1/2", "-2"],
+      "answer": 1,
+      "explain": "−1 < −1/2 < 0 nên −1/2 nằm giữa −1 và 0.",
+      "wrong_explain": {
+        "0": "−3/2 nhỏ hơn −1 nên nằm bên trái −1.",
+        "2": "1/2 là số dương nên nằm bên phải 0.",
+        "3": "−2 nhỏ hơn −1 nên nằm bên trái −1."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm số dương x biết |x − 1| = 3.",
+      "expr": "4",
+      "answer": "4",
+      "explain": "x − 1 = 3 hoặc x − 1 = −3, suy ra x = 4 hoặc x = −2. Chỉ x = 4 là số dương."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính |−2,5| + |1,5| − |−1|.",
+      "expr": "2,5 + 1,5 - 1",
+      "answer": "3",
+      "explain": "|−2,5| = 2,5; |1,5| = 1,5; |−1| = 1. Kết quả là 2,5 + 1,5 − 1 = 3."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Tổng tất cả các số nguyên x thỏa mãn |x| < 3 là:",
+      "expr": "0",
+      "choices": ["0", "-3", "3", "-2"],
+      "answer": 0,
+      "explain": "|x| < 3 khi x ∈ {−2; −1; 0; 1; 2}. Tổng là (−2) + (−1) + 0 + 1 + 2 = 0.",
+      "wrong_explain": {
+        "1": "−3 không thỏa mãn |x| < 3 vì |−3| = 3, không nhỏ hơn 3.",
+        "2": "3 không thỏa mãn |x| < 3 vì |3| = 3, không nhỏ hơn 3.",
+        "3": "−2 chỉ là một số trong tập nghiệm, không phải tổng của cả tập."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Số a thỏa mãn a < 0 và |a| = 3/4. Tìm a.",
+      "expr": "-3/4",
+      "answer": "-3/4",
+      "explain": "Vì a < 0 nên |a| = −a = 3/4, suy ra a = −3/4."
+    }
+  ]
+}

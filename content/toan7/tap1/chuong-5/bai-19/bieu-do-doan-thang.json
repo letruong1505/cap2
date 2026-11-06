@@ -1,0 +1,118 @@
+{
+  "id": "t7-bieu-do-doan-thang",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 1",
+  "chapter": "Chương V. Thu thập và biểu diễn dữ liệu",
+  "lesson": "Bài 19. Biểu đồ đoạn thẳng",
+  "section": "Phần 1: Cấu tạo và đọc biểu đồ; Phần 2: Vẽ biểu đồ đoạn thẳng",
+  "bookPage": 100,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Biểu đồ đoạn thẳng: trục ngang biểu diễn thời gian, trục đứng biểu diễn đại lượng đang quan tâm. Mỗi điểm biểu diễn giá trị của đại lượng tại một thời điểm; hai điểm liên tiếp được nối bằng một đoạn thẳng."
+    },
+    {
+      "type": "text",
+      "content": "Biểu đồ đoạn thẳng cho thấy xu thế tăng, giảm hoặc ổn định của đại lượng theo thời gian. Mức thay đổi giữa hai thời điểm bằng hiệu hai giá trị, ví dụ chiều cao cây đậu từ ngày 4 đến ngày 5 tăng 2,5 − 1,4 = 1,1 cm."
+    },
+    {
+      "type": "text",
+      "content": "Vẽ biểu đồ: (1) vẽ trục ngang và trục đứng, chọn đơn vị phù hợp với giá trị lớn nhất; (2) đánh dấu các điểm theo từng cặp giá trị; (3) nối các điểm liên tiếp; (4) ghi chú thích, giá trị tại các điểm và tên biểu đồ."
+    },
+    {
+      "type": "text",
+      "content": "Lưu ý về trục đứng: độ dốc phụ thuộc vào thang đo trên trục đứng. Khi đọc độ dốc cần xem thang đo trước khi kết luận về mức tăng hoặc giảm. Lỗi thường gặp: nối các điểm không theo thứ tự thời gian."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Chiều cao cây đậu ngày 4 là 1,4 cm và ngày 5 là 2,5 cm. Cây tăng bao nhiêu cm từ ngày 4 đến ngày 5?",
+      "expr": "2,5 - 1,4",
+      "steps": [
+        "Mức tăng = 2,5 − 1,4 = 1,1 cm."
+      ],
+      "answer": "1,1"
+    },
+    {
+      "problem": "Nhiệt độ lúc 6 giờ là 18°C, lúc 12 giờ là 30°C. Nhiệt độ tăng bao nhiêu độ trong khoảng thời gian này?",
+      "expr": "30 - 18",
+      "steps": [
+        "Mức tăng = 30 − 18 = 12 độ."
+      ],
+      "answer": "12"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Chiều cao cây đậu ngày 5 là 2,5 cm và ngày 6 là 4 cm. Cây tăng bao nhiêu cm trong ngày 6?",
+      "expr": "4 - 2,5",
+      "answer": "1,5",
+      "explain": "Mức tăng = 4 − 2,5 = 1,5 cm."
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Nhiệt độ lúc 7 giờ là 20°C, lúc 9 giờ là 25°C. Nhiệt độ tăng bao nhiêu độ từ 7 giờ đến 9 giờ?",
+      "expr": "25 - 20",
+      "answer": "5",
+      "explain": "Mức tăng = 25 − 20 = 5 độ."
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chiều cao cây đậu ngày 1 là 0,8 cm, ngày 2 là 1,3 cm, ngày 3 là 2,1 cm. Mức tăng từ ngày 2 đến ngày 3 là bao nhiêu cm?",
+      "expr": "2,1 - 1,3",
+      "answer": "0,8",
+      "explain": "Mức tăng từ ngày 2 đến ngày 3 = 2,1 − 1,3 = 0,8 cm. Đây là mức tăng lớn nhất trong ba ngày, vì mức tăng từ ngày 1 đến ngày 2 chỉ là 0,5 cm."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Một đại lượng giảm từ 60 xuống 42 trong 3 ngày, mức giảm đều mỗi ngày. Mỗi ngày giảm bao nhiêu?",
+      "expr": "6",
+      "choices": ["6", "18", "14", "3"],
+      "answer": 0,
+      "explain": "Tổng mức giảm là 60 − 42 = 18, chia đều cho 3 ngày được 6 mỗi ngày.",
+      "wrong_explain": {
+        "1": "18 là tổng mức giảm cả ba ngày, chưa chia cho 3.",
+        "2": "14 là 42 : 3, đây là phép tính sai, không phải mức giảm.",
+        "3": "3 là 18 : 6, không phải mức giảm mỗi ngày."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nhiệt độ lúc 6 giờ là 18°C, lúc 12 giờ là 30°C. Trong khoảng từ 6 giờ đến 12 giờ, nhiệt độ tăng bao nhiêu độ?",
+      "expr": "30 - 18",
+      "answer": "12",
+      "explain": "Mức tăng = 30 − 18 = 12 độ."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trên trục đứng, mỗi ô vuông ứng với 0,5 cm. Một điểm của biểu đồ nằm ở vị trí cách gốc 4 ô vuông. Giá trị của điểm đó là bao nhiêu cm?",
+      "expr": "4*0,5",
+      "answer": "2",
+      "explain": "Giá trị = 4 × 0,5 = 2 cm."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cây A cao 3,2 cm vào ngày 1 và cao 6,8 cm vào ngày 4. Trung bình mỗi ngày cây tăng bao nhiêu cm?",
+      "expr": "(6,8 - 3,2)/3",
+      "answer": "1,2",
+      "explain": "Từ ngày 1 đến ngày 4 có 3 khoảng thời gian. Cây tăng tổng cộng 6,8 − 3,2 = 3,6 cm, nên trung bình mỗi ngày tăng 3,6 : 3 = 1,2 cm."
+    }
+  ]
+}

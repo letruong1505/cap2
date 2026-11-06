@@ -1,0 +1,100 @@
+{
+  "id": "t7-hai-tam-giac-bang-nhau-cgc-gcg",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 1",
+  "chapter": "Chương IV. Tam giác bằng nhau",
+  "lesson": "Bài 14. Trường hợp bằng nhau thứ hai và thứ ba của tam giác",
+  "section": "Phần 1: Trường hợp c.g.c; Phần 2: Trường hợp g.c.g",
+  "bookPage": 70,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Góc xen giữa hai cạnh là góc nằm giữa hai cạnh đó. Ví dụ góc A là góc xen giữa AB và AC."
+    },
+    {
+      "type": "text",
+      "content": "Trường hợp c.g.c: nếu hai cạnh và góc xen giữa của tam giác này bằng hai cạnh và góc xen giữa của tam giác kia thì hai tam giác bằng nhau."
+    },
+    {
+      "type": "text",
+      "content": "Trường hợp g.c.g: nếu một cạnh và hai góc kề cạnh đó của tam giác này bằng một cạnh và hai góc kề cạnh đó của tam giác kia thì hai tam giác bằng nhau. Hai góc kề cạnh BC là góc tại B và góc tại C."
+    },
+    {
+      "type": "text",
+      "content": "Lỗi thường gặp: dùng góc không xen giữa hai cạnh đã cho để áp dụng c.g.c; dùng hai cạnh và một góc không xen giữa, đây không phải trường hợp bằng nhau."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "ΔABC = ΔDEF theo c.g.c với A ↔ D, B ↔ E, C ↔ F. Biết góc B = 60°. Tính góc E.",
+      "expr": "60",
+      "steps": [
+        "B và E là hai góc tương ứng nên bằng nhau: E = 60°."
+      ],
+      "answer": "60"
+    },
+    {
+      "problem": "ΔABC = ΔDEF theo g.c.g. Biết BC = 5 cm. Tính EF.",
+      "expr": "5",
+      "steps": [
+        "BC và EF là cạnh tương ứng (B ↔ E, C ↔ F) nên EF = BC = 5 cm."
+      ],
+      "answer": "5"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "ΔABC = ΔDEF theo c.g.c với A ↔ D, B ↔ E, C ↔ F. Biết BC = 5 cm. Tính EF (cm).",
+      "expr": "5",
+      "answer": "5",
+      "explain": "EF là cạnh tương ứng với BC nên EF = 5 cm."
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "ΔABC = ΔMNP theo c.g.c với A ↔ M, B ↔ N, C ↔ P. Biết góc B = 48°. Góc N bằng bao nhiêu độ?",
+      "expr": "48",
+      "answer": "48",
+      "explain": "Góc B và góc N là hai góc tương ứng nên bằng nhau: N = 48°."
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "ΔABC = ΔDEF theo g.c.g với B ↔ E, C ↔ F. Biết góc B = 40° và góc C = 70°. Góc F bằng bao nhiêu độ?",
+      "expr": "70",
+      "choices": ["70", "40", "110", "60"],
+      "answer": 0,
+      "explain": "Góc C và góc F là hai góc tương ứng nên bằng nhau: F = 70°.",
+      "wrong_explain": {
+        "1": "40° là góc B, không phải góc F.",
+        "2": "110° là 40° + 70°, không phải góc tương ứng với C.",
+        "3": "60° không liên quan đến dữ kiện đã cho."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "ΔABC = ΔDEF theo c.g.c với AB = DE. Biết AB = 3x − 1 cm và DE = 2x + 4 cm. Tìm x.",
+      "expr": "5",
+      "answer": "5",
+      "explain": "AB và DE là cạnh tương ứng nên bằng nhau: 3x − 1 = 2x + 4, suy ra x = 5."
+    },
+    {
+      "id": "q05",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "ΔABC = ΔDEF theo g.c.g với B ↔ E. Biết góc B = 3x + 5° và góc E = 2x + 25° (x tính bằng độ). Tìm x.",
+      "expr": "20",
+      "answer": "20",
+      "explain": "Góc B và góc E tương ứng nên bằng nhau: 3x + 5 = 2x + 25, suy ra x = 20."
+    }
+  ]
+}

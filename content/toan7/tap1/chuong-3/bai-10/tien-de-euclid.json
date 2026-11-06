@@ -1,0 +1,115 @@
+{
+  "id": "t7-tien-de-euclid-tinh-chat-song-song",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 1",
+  "chapter": "Chương III. Góc và đường thẳng song song",
+  "lesson": "Bài 10. Tiên đề Euclid. Tính chất của hai đường thẳng song song",
+  "section": "Phần 1: Tiên đề Euclid; Phần 2: Tính chất của hai đường thẳng song song",
+  "bookPage": 51,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tiên đề Euclid: qua một điểm nằm ngoài một đường thẳng, chỉ vẽ được đúng một đường thẳng song song với đường thẳng đó."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất: nếu a ∥ b thì hai góc so le trong bằng nhau, hai góc đồng vị bằng nhau, hai góc trong cùng phía bù nhau."
+    },
+    {
+      "type": "text",
+      "content": "Hệ quả: nếu một đường thẳng cắt một trong hai đường thẳng song song thì nó cũng cắt đường thẳng còn lại."
+    },
+    {
+      "type": "text",
+      "content": "Lỗi thường gặp: áp dụng tính chất của hai đường thẳng song song khi chưa biết chúng đã song song. Phải có giả thiết a ∥ b trước, rồi mới dùng tính chất."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho a ∥ b. Một góc so le trong bằng 62°. Tính góc đồng vị với góc đó.",
+      "expr": "62",
+      "steps": [
+        "Khi a ∥ b, góc so le trong bằng nhau nên 62°. Góc đồng vị với góc 62° cũng bằng 62°."
+      ],
+      "answer": "62"
+    },
+    {
+      "problem": "Cho a ∥ b. Một góc trong cùng phía bằng 102°. Tính góc trong cùng phía còn lại.",
+      "expr": "180 - 102",
+      "steps": [
+        "Hai góc trong cùng phía bù nhau: 180° − 102° = 78°."
+      ],
+      "answer": "78"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Qua điểm M nằm ngoài đường thẳng d, có bao nhiêu đường thẳng đi qua M và song song với d?",
+      "expr": "1",
+      "choices": ["0", "1", "2", "3"],
+      "answer": 1,
+      "explain": "Theo tiên đề Euclid, qua M chỉ vẽ được đúng một đường thẳng song song với d.",
+      "wrong_explain": {
+        "0": "Luôn vẽ được một đường thẳng song song với d qua M nằm ngoài d, không phải không có.",
+        "2": "Tiên đề Euclid khẳng định chỉ có đúng một đường thẳng, không phải hai.",
+        "3": "Không có ba đường thẳng nào như vậy; tiên đề Euclid chỉ cho phép một đường thẳng."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cho a ∥ b và một góc so le trong bằng 57°. Góc đồng vị với góc đó bằng bao nhiêu độ?",
+      "expr": "57",
+      "answer": "57",
+      "explain": "Khi a ∥ b, góc so le trong bằng góc đồng vị, nên góc đồng vị cũng là 57°."
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cho a ∥ b, một góc trong cùng phía bằng 124°. Góc trong cùng phía còn lại bằng bao nhiêu độ?",
+      "expr": "180 - 124",
+      "answer": "56",
+      "explain": "Hai góc trong cùng phía bù nhau nên góc còn lại là 180° − 124° = 56°."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho a ∥ b cắt đường thẳng c. Hai góc so le trong có số đo 5x và 2x + 42° (x tính bằng độ). Tìm x.",
+      "expr": "42/3",
+      "answer": "14",
+      "explain": "Hai góc so le trong bằng nhau: 5x = 2x + 42, suy ra 3x = 42, x = 14."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cho a ∥ b và đường thẳng c cắt a. Góc tạo bởi a và c bằng 110°. Góc đồng vị với góc này ở đường b bằng bao nhiêu độ?",
+      "expr": "110",
+      "choices": ["110", "70", "180", "55"],
+      "answer": 0,
+      "explain": "Khi a ∥ b, góc đồng vị bằng nhau nên góc tương ứng ở b cũng bằng 110°.",
+      "wrong_explain": {
+        "1": "70° là số đo góc bù với 110°. Góc đồng vị thì bằng nhau, không bù nhau.",
+        "2": "180° là tổng hai góc kề bù, không phải số đo góc đồng vị.",
+        "3": "55° là nửa của 110°, không có tính chất nào như vậy."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho a ∥ b. Hai góc trong cùng phía có số đo lần lượt là 4x − 10° và 2x + 10° (x tính bằng độ). Tìm x.",
+      "expr": "180/6",
+      "answer": "30",
+      "explain": "Hai góc trong cùng phía bù nhau: 4x − 10 + 2x + 10 = 180, suy ra 6x = 180, x = 30."
+    }
+  ]
+}

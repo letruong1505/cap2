@@ -1,0 +1,111 @@
+{
+  "id": "t7-tam-giac-vuong-bang-nhau",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 1",
+  "chapter": "Chương IV. Tam giác bằng nhau",
+  "lesson": "Bài 15. Các trường hợp bằng nhau của tam giác vuông",
+  "section": "Phần 1: Các trường hợp bằng nhau của tam giác vuông; Phần 2: Ứng dụng",
+  "bookPage": 75,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Ngoài ba trường hợp c.c.c, c.g.c, g.c.g, hai tam giác vuông còn bằng nhau trong các trường hợp riêng: hai cạnh góc vuông tương ứng bằng nhau; một cạnh góc vuông và góc nhọn kề cạnh đó bằng nhau; cạnh huyền và một góc nhọn bằng nhau; cạnh huyền và một cạnh góc vuông bằng nhau."
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: giải thích hai cột cao bằng nhau có bóng bằng nhau; chứng minh hai thang tựa vào tường bằng nhau."
+    },
+    {
+      "type": "text",
+      "content": "Lỗi thường gặp: dùng hai góc nhọn bằng nhau để kết luận hai tam giác vuông bằng nhau. Điều này chưa đủ, cần thêm ít nhất một cặp cạnh bằng nhau."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tam giác vuông ABC có góc A = 90°, góc B = 38°. Tính góc C.",
+      "expr": "90 - 38",
+      "steps": [
+        "Trong tam giác vuông, hai góc nhọn phụ nhau: C = 90° − 38° = 52°."
+      ],
+      "answer": "52"
+    },
+    {
+      "problem": "Hai tam giác vuông ABC và DEF (A = D = 90°) có AB = DE, góc B = 40° và ΔABC = ΔDEF. Tính góc E.",
+      "expr": "40",
+      "steps": [
+        "Hai tam giác bằng nhau nên góc E tương ứng với góc B: E = 40°."
+      ],
+      "answer": "40"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hai tam giác vuông có cạnh huyền bằng nhau và một góc nhọn của tam giác thứ nhất bằng 35°. Tính góc nhọn còn lại của tam giác này (độ).",
+      "expr": "90 - 35",
+      "answer": "55",
+      "explain": "Trong tam giác vuông, hai góc nhọn phụ nhau: 90° − 35° = 55°."
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tam giác vuông DEF có góc D = 90°, góc E = 30°. Góc F bằng bao nhiêu độ?",
+      "expr": "60",
+      "choices": ["60", "30", "120", "150"],
+      "answer": 0,
+      "explain": "Hai góc nhọn E và F phụ nhau nên F = 90° − 30° = 60°.",
+      "wrong_explain": {
+        "1": "30° là góc E, không phải góc F.",
+        "2": "120° là 90° + 30°, không thể là góc nhọn của tam giác vuông.",
+        "3": "150° lớn hơn 90°, không thể là góc nhọn còn lại."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác vuông DEF có góc D = 90° và góc E gấp đôi góc F. Tính góc E (độ).",
+      "expr": "2*90/3",
+      "answer": "60",
+      "explain": "E + F = 90° và E = 2F, nên 3F = 90°, F = 30°, E = 60°."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Một tam giác vuông cân có một góc nhọn bằng bao nhiêu độ?",
+      "expr": "45",
+      "choices": ["45", "90", "30", "60"],
+      "answer": 0,
+      "explain": "Tam giác vuông cân có hai góc nhọn bằng nhau và phụ nhau, nên mỗi góc nhọn bằng 45°.",
+      "wrong_explain": {
+        "1": "90° là góc vuông, không phải góc nhọn.",
+        "2": "30° không thỏa mãn: hai góc nhọn bằng nhau và có tổng 90°, nên mỗi góc là 45°.",
+        "3": "60° cũng không thỏa mãn vì hai góc nhọn bằng nhau nên mỗi góc là 45°."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai tam giác vuông ABC và DEF (A = D = 90°) có AB = DE, góc B = 40° và ΔABC = ΔDEF. Góc E bằng bao nhiêu độ?",
+      "expr": "40",
+      "answer": "40",
+      "explain": "Hai tam giác bằng nhau nên góc E tương ứng với góc B, do đó E = 40°."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai tam giác vuông ABC và DEF có góc A = D = 90°, cạnh huyền BC = EF, góc B = 65°. Góc E bằng bao nhiêu độ, nếu ΔABC = ΔDEF?",
+      "expr": "65",
+      "answer": "65",
+      "explain": "Hai tam giác bằng nhau nên góc E tương ứng với góc B, E = 65°."
+    }
+  ]
+}

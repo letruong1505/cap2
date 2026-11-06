@@ -1,0 +1,149 @@
+{
+  "id": "t7-so-thuc-vo-ti-can-bac-hai",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 1",
+  "chapter": "Chương II. Số thực",
+  "lesson": "Bài 6. Số vô tỉ. Căn bậc hai số học",
+  "section": "Phần 1: Số vô tỉ; Phần 2: Căn bậc hai số học",
+  "bookPage": 29,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Số vô tỉ là số không viết được dưới dạng a/b (a, b ∈ Z, b ≠ 0). Số vô tỉ là số thập phân vô hạn không tuần hoàn. Tập hợp các số vô tỉ kí hiệu là I."
+    },
+    {
+      "type": "text",
+      "content": "Căn bậc hai số học của số a không âm là số x không âm sao cho x² = a. Kí hiệu √a."
+    },
+    {
+      "type": "formula",
+      "content": "Với a ≥ 0: (√a)² = a và √(a²) = a."
+    },
+    {
+      "type": "text",
+      "content": "Nếu a là bình phương của một số hữu tỉ không âm thì √a là số hữu tỉ. Ví dụ √49 = 7, √(0,16) = 0,4. Nếu a không phải bình phương của số hữu tỉ nào thì √a là số vô tỉ, ví dụ √2, √3."
+    },
+    {
+      "type": "text",
+      "content": "Căn bậc hai số học không bao giờ âm. Căn bậc hai của số âm không tồn tại trong tập số thực."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính √49.",
+      "expr": "7",
+      "steps": [
+        "Vì 49 = 7² và 7 ≥ 0 nên √49 = 7."
+      ],
+      "answer": "7"
+    },
+    {
+      "problem": "Tính √(0,16).",
+      "expr": "0,4",
+      "steps": [
+        "Vì 0,4² = 0,16 và 0,4 ≥ 0 nên √(0,16) = 0,4."
+      ],
+      "answer": "0,4"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Căn bậc hai số học của 81 là:",
+      "expr": "9",
+      "choices": ["9", "-9", "81", "8,1"],
+      "answer": 0,
+      "explain": "Vì 9² = 81 và 9 ≥ 0 nên √81 = 9.",
+      "wrong_explain": {
+        "1": "−9 cũng là căn bậc hai của 81 nhưng không phải căn bậc hai số học, vì căn bậc hai số học luôn không âm.",
+        "2": "81 là bình phương của 9, không phải căn bậc hai của 81.",
+        "3": "8,1 sai vì (8,1)² = 65,61 khác 81."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính √144.",
+      "expr": "12",
+      "answer": "12",
+      "explain": "Vì 12² = 144 và 12 ≥ 0 nên √144 = 12."
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính √(0,25) + √(16/9). Viết kết quả dưới dạng phân số tối giản.",
+      "expr": "0,5 + 4/3",
+      "answer": "11/6",
+      "explain": "√(0,25) = 0,5 vì 0,5² = 0,25. √(16/9) = 4/3 vì (4/3)² = 16/9. Tổng là 1/2 + 4/3 = 3/6 + 8/6 = 11/6."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm x ≥ 0, biết x² = 2,25.",
+      "expr": "1,5",
+      "answer": "1,5",
+      "explain": "Vì 1,5² = 2,25 và x ≥ 0 nên x = √2,25 = 1,5."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Với a = −4, giá trị của √(a²) là:",
+      "expr": "4",
+      "choices": ["-4", "4", "16", "-16"],
+      "answer": 1,
+      "explain": "a² = (−4)² = 16 nên √(a²) = √16 = 4. Đây cũng chính là |a| = 4.",
+      "wrong_explain": {
+        "0": "Căn bậc hai số học không âm nên không thể bằng −4.",
+        "2": "16 là a², chưa phải căn bậc hai của a².",
+        "3": "−16 là số âm nên không thể là căn bậc hai số học."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Giá trị của √(9/25) là:",
+      "expr": "3/5",
+      "choices": ["3/5", "9/25", "3/25", "5/3"],
+      "answer": 0,
+      "explain": "Vì (3/5)² = 9/25 và 3/5 ≥ 0 nên √(9/25) = 3/5.",
+      "wrong_explain": {
+        "1": "9/25 là số nằm trong dấu căn, không phải căn bậc hai của nó.",
+        "2": "Căn của tử và căn của mẫu phải được lấy riêng: √9 = 3 và √25 = 5, nên kết quả là 3/5, không phải 3/25.",
+        "3": "5/3 là nghịch đảo của 3/5, không phải căn bậc hai của 9/25."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính √(0,36) · √(0,04).",
+      "expr": "0,6*0,2",
+      "answer": "0,12",
+      "explain": "√(0,36) = 0,6 và √(0,04) = 0,2. Tích là 0,6 · 0,2 = 0,12."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Một hình vuông có diện tích 2,25 m². Cạnh của hình vuông dài bao nhiêu mét?",
+      "expr": "1,5",
+      "choices": ["1,125", "1,5", "4,5", "0,5"],
+      "answer": 1,
+      "explain": "Cạnh a thỏa mãn a² = 2,25 với a > 0, nên a = √2,25 = 1,5 m.",
+      "wrong_explain": {
+        "0": "1,125 là một nửa của 2,25, nhưng cạnh hình vuông là căn bậc hai của diện tích, không phải một nửa.",
+        "2": "4,5 là 2 lần 2,25, không liên quan đến căn bậc hai.",
+        "3": "0,5 sai vì 0,5² = 0,25 khác 2,25."
+      }
+    }
+  ]
+}

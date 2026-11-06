@@ -1,0 +1,130 @@
+{
+  "id": "t7-goc-doi-dinh-ke-bu-phan-giac",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 1",
+  "chapter": "Chương III. Góc và đường thẳng song song",
+  "lesson": "Bài 8. Hai góc đối đỉnh. Hai góc kề bù. Tia phân giác",
+  "section": "Phần 1: Hai góc kề bù; Phần 2: Hai góc đối đỉnh; Phần 3: Tia phân giác",
+  "bookPage": 40,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hai góc kề bù có chung một cạnh, hai cạnh còn lại là hai tia đối nhau. Tổng số đo hai góc kề bù bằng 180°."
+    },
+    {
+      "type": "text",
+      "content": "Hai góc đối đỉnh: mỗi cạnh của góc này là tia đối của một cạnh của góc kia. Hai góc đối đỉnh thì bằng nhau."
+    },
+    {
+      "type": "text",
+      "content": "Tia phân giác của một góc là tia nằm giữa hai cạnh của góc và tạo với hai cạnh hai góc bằng nhau. Nếu Oz là tia phân giác của góc xOy thì góc xOz = góc zOy = ½ góc xOy."
+    },
+    {
+      "type": "text",
+      "content": "Lỗi thường gặp: nhầm hai góc kề bù với hai góc kề nhau (kề bù bắt buộc có tổng 180°); cho rằng hai góc bằng nhau thì là đối đỉnh. Đối đỉnh mới suy ra bằng nhau, còn hai góc bằng nhau chưa chắc đã đối đỉnh."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hai góc kề bù, một góc bằng 115°. Tính góc còn lại.",
+      "expr": "180 - 115",
+      "steps": [
+        "Hai góc kề bù có tổng 180°, nên góc còn lại bằng 180° − 115° = 65°."
+      ],
+      "answer": "65"
+    },
+    {
+      "problem": "Oz là tia phân giác của góc xOy, biết góc xOy = 76°. Tính góc xOz.",
+      "expr": "76/2",
+      "steps": [
+        "Oz là tia phân giác nên góc xOz = ½ góc xOy = 76° : 2 = 38°."
+      ],
+      "answer": "38"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hai góc kề bù, một góc bằng 70°. Góc còn lại bằng bao nhiêu độ?",
+      "expr": "110",
+      "choices": ["110", "70", "180", "20"],
+      "answer": 0,
+      "explain": "Hai góc kề bù có tổng 180°, nên góc còn lại là 180° − 70° = 110°.",
+      "wrong_explain": {
+        "1": "70° là số đo của góc đã cho. Hai góc kề bù phải có tổng 180°, nên 70° + 70° = 140° không đúng.",
+        "2": "180° là tổng của hai góc kề bù, không phải số đo của một góc.",
+        "3": "20° không thỏa mãn: 70° + 20° = 90°, không phải 180°."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hai góc đối đỉnh, một góc bằng 38°. Góc đối đỉnh với nó bằng bao nhiêu độ?",
+      "expr": "38",
+      "answer": "38",
+      "explain": "Hai góc đối đỉnh thì bằng nhau, nên góc còn lại cũng bằng 38°."
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hai góc kề bù có số đo tỉ lệ với 2 : 7. Tìm số đo góc nhỏ hơn (độ).",
+      "expr": "2*180/9",
+      "answer": "40",
+      "explain": "Tổng tỉ lệ là 2 + 7 = 9 phần, mỗi phần bằng 180° : 9 = 20°. Góc nhỏ là 2 · 20° = 40°."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Oz là tia phân giác của góc xOy, biết góc xOy = 84°. Số đo góc xOz là bao nhiêu độ?",
+      "expr": "42",
+      "choices": ["42", "84", "168", "21"],
+      "answer": 0,
+      "explain": "Oz là tia phân giác nên góc xOz = 84° : 2 = 42°.",
+      "wrong_explain": {
+        "1": "84° là số đo cả góc xOy, không phải góc xOz. Tia phân giác chia góc thành hai phần bằng nhau.",
+        "2": "168° là 2 · 84°, đây là phép nhân sai; tia phân giác phải chia đôi góc.",
+        "3": "21° là 84° chia 4, không phải chia 2."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Góc xOy bằng 126°. Tia Oz nằm giữa Ox và Oy sao cho góc xOz gấp đôi góc zOy. Tính số đo góc xOz (độ).",
+      "expr": "126*2/3",
+      "answer": "84",
+      "explain": "Đặt góc zOy = a thì góc xOz = 2a và 2a + a = 126°, suy ra a = 42°. Vậy góc xOz = 84°."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một góc có số đo bằng 3 lần số đo góc kề bù với nó. Tính số đo góc đó (độ).",
+      "expr": "3*180/4",
+      "answer": "135",
+      "explain": "Gọi góc kề bù là b, góc đó là 3b. Ta có 3b + b = 180°, suy ra b = 45° và góc đó bằng 135°."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Hai đường thẳng xx' và yy' cắt nhau tại O, góc xOy = 58°. Số đo góc x'Oy' là bao nhiêu độ?",
+      "expr": "58",
+      "choices": ["58", "122", "32", "180"],
+      "answer": 0,
+      "explain": "Góc x'Oy' và góc xOy là hai góc đối đỉnh nên bằng nhau: x'Oy' = 58°.",
+      "wrong_explain": {
+        "1": "122° là số đo góc kề bù với góc xOy, không phải góc đối đỉnh.",
+        "2": "32° là 90° − 58°, không liên quan đến góc đối đỉnh.",
+        "3": "180° là tổng của hai góc kề bù, không phải số đo góc x'Oy'."
+      }
+    }
+  ]
+}

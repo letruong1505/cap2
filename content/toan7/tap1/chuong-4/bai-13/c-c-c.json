@@ -1,0 +1,105 @@
+{
+  "id": "t7-hai-tam-giac-bang-nhau-ccc",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 1",
+  "chapter": "Chương IV. Tam giác bằng nhau",
+  "lesson": "Bài 13. Hai tam giác bằng nhau. Trường hợp bằng nhau thứ nhất: c.c.c",
+  "section": "Phần 1: Hai tam giác bằng nhau và kí hiệu; Phần 2: Trường hợp c.c.c",
+  "bookPage": 63,
+  "theory": [
+    {
+      "type": "text",
+      "content": "ΔABC = ΔA'B'C' khi ba cạnh và ba góc tương ứng bằng nhau. Kí hiệu đỉnh phải viết đúng thứ tự tương ứng: A với A', B với B', C với C'."
+    },
+    {
+      "type": "text",
+      "content": "Trường hợp c.c.c: nếu ba cạnh của tam giác này bằng ba cạnh của tam giác kia thì hai tam giác đó bằng nhau."
+    },
+    {
+      "type": "text",
+      "content": "Lỗi thường gặp: viết kí hiệu bằng nhau với các đỉnh không đúng thứ tự tương ứng, ví dụ viết ΔABC = ΔDFE khi A ↔ D, B ↔ E, C ↔ F."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "ΔABC = ΔDEF với A ↔ D, B ↔ E, C ↔ F. Biết EF = 8 cm. Tính BC.",
+      "expr": "8",
+      "steps": [
+        "BC tương ứng với EF (B ↔ E, C ↔ F) nên BC = EF = 8 cm."
+      ],
+      "answer": "8"
+    },
+    {
+      "problem": "ΔABC có AB = 4 cm, BC = 6 cm, CA = 5 cm. Tam giác DEF bằng ΔABC với D ↔ A, E ↔ B, F ↔ C. Tính chu vi ΔDEF.",
+      "expr": "4 + 6 + 5",
+      "steps": [
+        "Hai tam giác bằng nhau nên chu vi bằng nhau: 4 + 6 + 5 = 15 cm."
+      ],
+      "answer": "15"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "ΔABC = ΔDEF với A ↔ D, B ↔ E, C ↔ F. Biết AB = 4 cm, BC = 6 cm, CA = 5 cm. Chu vi ΔDEF bằng bao nhiêu cm?",
+      "expr": "4 + 6 + 5",
+      "answer": "15",
+      "explain": "Hai tam giác bằng nhau nên các cạnh tương ứng bằng nhau. Chu vi ΔDEF = DE + EF + FD = 4 + 6 + 5 = 15 cm."
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "ΔABC = ΔMNP với A ↔ M, B ↔ N, C ↔ P. Nếu góc A = 70° thì góc M bằng bao nhiêu độ?",
+      "expr": "70",
+      "choices": ["70", "110", "20", "35"],
+      "answer": 0,
+      "explain": "Góc A và góc M là hai góc tương ứng nên bằng nhau: M = 70°.",
+      "wrong_explain": {
+        "1": "110° là 180° − 70°, không phải góc tương ứng với A.",
+        "2": "20° là 90° − 70°, không liên quan đến góc tương ứng.",
+        "3": "35° là nửa của 70°, không phải góc tương ứng."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "ΔABC = ΔDEF với A ↔ D, B ↔ E, C ↔ F. Biết EF = 8 cm, AC = 5 cm, AB = 6 cm. Tính BC (cm).",
+      "expr": "8",
+      "answer": "8",
+      "explain": "BC và EF là hai cạnh tương ứng (B ↔ E, C ↔ F) nên BC = EF = 8 cm."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "ΔABC và ΔDEF có AB = DE, BC = EF, CA = FD. Biết AB = 5 cm, BC = 9 cm, CA = 7 cm. Tính chu vi ΔDEF (cm).",
+      "expr": "5 + 9 + 7",
+      "answer": "21",
+      "explain": "Theo trường hợp c.c.c, hai tam giác bằng nhau nên DE = 5, EF = 9, FD = 7. Chu vi ΔDEF = 5 + 9 + 7 = 21 cm."
+    },
+    {
+      "id": "q05",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "ΔABC = ΔDEF với A ↔ D. Biết góc A = 2x + 10° và góc D = 4x − 30° (x tính bằng độ). Tìm x.",
+      "expr": "40/2",
+      "answer": "20",
+      "explain": "Góc A và góc D tương ứng nên bằng nhau: 2x + 10 = 4x − 30, suy ra 2x = 40, x = 20."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "ΔABC = ΔDEF với A ↔ D, B ↔ E. Biết AB = 2x − 1 cm và DE = x + 5 cm. Tìm x.",
+      "expr": "6",
+      "answer": "6",
+      "explain": "AB và DE là hai cạnh tương ứng nên bằng nhau: 2x − 1 = x + 5, suy ra x = 6."
+    }
+  ]
+}

@@ -24,9 +24,22 @@ function shuffle(arr) {
   return a;
 }
 
+// Thứ tự hiển thị theo mức độ: Biết, Hiểu, Vận dụng; trong mỗi mức, thứ tự câu được xáo trộn.
+const LEVEL_ORDER = ['Biết', 'Hiểu', 'Vận dụng'];
+
+function orderedQuestionIndexes(lesson) {
+  const groups = {};
+  lesson.items.forEach((item, i) => {
+    (groups[item.level] = groups[item.level] || []).push(i);
+  });
+  const levels = [...LEVEL_ORDER.filter((l) => groups[l]),
+    ...Object.keys(groups).filter((l) => !LEVEL_ORDER.includes(l))];
+  return levels.flatMap((l) => shuffle(groups[l]));
+}
+
 // Một lượt làm bài: thứ tự câu hỏi và thứ tự phương án mới, đáp án đang chọn, và trạng thái đã nộp.
 function newAttempt(lesson) {
-  const questions = shuffle(lesson.items.map((_, i) => i));
+  const questions = orderedQuestionIndexes(lesson);
   const order = {};
   for (const item of lesson.items) {
     if (item.type === 'mcq') {
@@ -66,10 +79,14 @@ function renderQuiz(lesson, attempt) {
   const box = document.getElementById('quiz');
   box.replaceChildren();
 
+  let currentLevel = null;
   attempt.questions.forEach((itemIndex, idx) => {
     const item = lesson.items[itemIndex];
+    if (item.level !== currentLevel) {
+      currentLevel = item.level;
+      box.append(el('h3', { class: 'level-heading' }, `Mức ${currentLevel}`));
+    }
     const q = el('div', { class: 'question', 'data-id': item.id });
-    q.append(el('span', { class: 'level' }, item.level));
     q.append(el('div', { class: 'stem' }, `${idx + 1}. ${item.stem}`));
 
     // Chỉ ghi nhận lựa chọn, không hiện đúng sai khi chọn.
@@ -85,7 +102,12 @@ function renderQuiz(lesson, attempt) {
         q.append(label);
       });
     } else {
-      const input = el('input', { type: 'text', 'aria-label': 'Đáp án' });
+      const input = el('input', {
+        type: 'text',
+        'aria-label': 'Đáp án',
+        placeholder: 'Ví dụ: 3/4 hoặc 0,75',
+        autocomplete: 'off',
+      });
       input.addEventListener('input', () => {
         attempt.answers[item.id] = input.value.trim() || null;
       });
@@ -132,7 +154,7 @@ function showResult(item, feedback, value) {
       R.parse(value);
     } catch {
       feedback.className = 'feedback bad';
-      feedback.textContent = `Chưa đúng định dạng a/b. Đáp án đúng: ${item.answer}. Lời giải: ${explain}`;
+      feedback.textContent = `Chưa đúng định dạng (nhập số như 3/4 hoặc 0,75). Đáp án đúng: ${correctText(item)}. Lời giải: ${explain}`;
       return;
     }
   }
@@ -144,7 +166,8 @@ function showResult(item, feedback, value) {
   feedback.className = 'feedback bad';
   const idx = item.type === 'mcq' ? item.choices.indexOf(value) : -1;
   const note = idx >= 0 ? item.wrong_explain[String(idx)] : null;
-  feedback.textContent = (note ? note + ' ' : '') + 'Lời giải: ' + explain;
+  feedback.textContent = (note ? note + ' ' : '') +
+    `Đáp án đúng: ${correctText(item)}. Lời giải: ${explain}`;
 }
 
 // Chấm toàn bài: hiện kết quả từng câu, khóa mọi ô nhập, cập nhật điểm.
@@ -173,23 +196,26 @@ function updateScore(lesson, attempt) {
     return;
   }
 
-  const byLevel = {};
   let total = 0;
   let correct = 0;
-  for (const item of lesson.items) {
-    byLevel[item.level] = byLevel[item.level] || { total: 0, correct: 0 };
-    byLevel[item.level].total += 1;
+  const wrong = [];
+  attempt.questions.forEach((itemIndex, idx) => {
+    const item = lesson.items[itemIndex];
     total += 1;
     if (isCorrect(item, attempt.answers[item.id])) {
-      byLevel[item.level].correct += 1;
       correct += 1;
+    } else {
+      wrong.push({ no: idx + 1, answer: correctText(item) });
     }
-  }
+  });
   box.append(el('strong', {}, `Đúng ${correct}/${total} câu`));
-  const levels = Object.entries(byLevel)
-    .map(([level, r]) => `${level} ${r.correct}/${r.total}`)
-    .join('  ·  ');
-  box.append(el('div', { class: 'meta' }, levels));
+  if (wrong.length > 0) {
+    const list = el('ul', { class: 'wrong-list' });
+    for (const w of wrong) {
+      list.append(el('li', {}, `Câu ${w.no}: đáp án đúng là ${w.answer}`));
+    }
+    box.append(list);
+  }
 }
 
 function showOnly(id) {

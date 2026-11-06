@@ -34,20 +34,24 @@
 
     function peek() { return s[pos]; }
 
+    // Đọc số nguyên, số thập phân hữu hạn (dấu phẩy hoặc dấu chấm, ví dụ 2,46),
+    // hoặc phân số a/b với mẫu nguyên. Số thập phân được đổi thành phân số đúng, không làm tròn.
     function parseNumber() {
-      const m = /^\d+/.exec(s.slice(pos));
+      const m = /^\d+(?:[.,]\d+)?/.exec(s.slice(pos));
       if (!m) throw new Error('Không đọc được số tại vị trí ' + pos);
       pos += m[0].length;
-      let n = BigInt(m[0]);
-      let d = 1n;
+      const parts = m[0].split(/[.,]/);
+      const scale = parts.length === 2 ? 10n ** BigInt(parts[1].length) : 1n;
+      const digits = parts.length === 2 ? parts[0] + parts[1] : parts[0];
+      let v = make(BigInt(digits), scale);
       if (peek() === '/') {
         pos += 1;
         const m2 = /^\d+/.exec(s.slice(pos));
         if (!m2) throw new Error('Thiếu mẫu số');
         pos += m2[0].length;
-        d = BigInt(m2[0]);
+        v = div(v, make(BigInt(m2[0]), 1n));
       }
-      return make(n, d);
+      return v;
     }
 
     function parseFactor() {
