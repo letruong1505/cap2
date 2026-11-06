@@ -68,28 +68,30 @@ function renderQuiz(lesson, progress) {
     q.append(el('div', { class: 'stem' }, `${idx + 1}. ${item.stem}`));
 
     const feedback = el('div', { class: 'feedback', hidden: 'hidden' });
-    // Chấm ngay khi học sinh chọn hoặc nhập xong đáp án.
-    const onAnswer = () => checkItem(item, q, feedback, progress, lesson);
+    // Chỉ chấm khi học sinh bấm Kiểm tra (hoặc nhấn Enter ở ô nhập).
+    const onCheck = () => checkItem(item, q, feedback, progress, lesson);
 
     if (item.type === 'mcq') {
       item.choices.forEach((choice, ci) => {
         const label = el('label', { class: 'choice' });
         const input = el('input', { type: 'radio', name: item.id, value: String(ci) });
-        input.addEventListener('change', onAnswer);
         label.append(input, ' ', choice);
         q.append(label);
       });
     } else {
       const input = el('input', { type: 'text', 'aria-label': 'Đáp án' });
-      input.addEventListener('change', onAnswer);
-      q.append(input, el('span', { class: 'meta' }, '  nhập xong nhấn Enter'));
+      input.addEventListener('keydown', (e) => { if (e.key === 'Enter') onCheck(); });
+      q.append(input);
     }
-    q.append(feedback);
+    const check = el('button', { class: 'primary check-btn', type: 'button' }, 'Kiểm tra');
+    check.addEventListener('click', onCheck);
+    q.append(check, feedback);
 
     const saved = progress[item.id];
     if (saved) {
       restoreAnswer(item, q, saved.value);
       showFeedback(item, q, feedback, saved.value);
+      lockItem(q);
     }
 
     box.append(q);
@@ -124,21 +126,41 @@ function restoreAnswer(item, q, value) {
   }
 }
 
+// Khóa câu sau khi đã kiểm tra: mỗi câu chỉ có một lần trả lời.
+function lockItem(q) {
+  q.querySelectorAll('input').forEach((i) => { i.disabled = true; });
+  const btn = q.querySelector('.check-btn');
+  if (btn) btn.disabled = true;
+}
+
+function showHint(feedback, text) {
+  feedback.hidden = false;
+  feedback.className = 'feedback bad';
+  feedback.textContent = text;
+}
+
 function checkItem(item, q, feedback, progress, lesson) {
+  if (progress[item.id]) return; // đã kiểm tra rồi, không cho làm lại
   const raw = readAnswer(item, q);
   if (raw === null) {
-    // Ô nhập bị xóa trắng: ẩn phản hồi và xóa đáp án đã lưu.
-    feedback.hidden = true;
-    delete progress[item.id];
-    saveProgress(progress);
-    updateScore(lesson);
+    showHint(feedback, 'Hãy chọn hoặc nhập đáp án trước khi kiểm tra.');
     return;
+  }
+  if (item.type === 'fill') {
+    try {
+      R.parse(raw);
+    } catch {
+      // Nhập sai định dạng thì chưa tính là một lần làm bài.
+      showHint(feedback, 'Hãy nhập dạng a/b hoặc số nguyên, ví dụ 5/12.');
+      return;
+    }
   }
   // Lưu theo nội dung đáp án, không lưu vị trí phương án.
   const value = item.type === 'mcq' ? item.choices[raw] : raw;
   progress[item.id] = { value };
   saveProgress(progress);
   showFeedback(item, q, feedback, value);
+  lockItem(q);
   updateScore(lesson);
 }
 

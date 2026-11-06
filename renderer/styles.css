@@ -65,6 +65,8 @@ button.primary {
   border-radius: 6px; font-size: 16px; cursor: pointer;
 }
 button.primary:hover { background: #173a5a; }
+button.primary:disabled { background: #9aa8b8; cursor: default; }
+.check-btn { margin-top: 8px; }
 
 .score { margin-top: 16px; padding: 14px; background: #eef4fa; border-radius: 8px; }
 
