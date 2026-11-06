@@ -182,7 +182,8 @@ function renderHome(manifest) {
           const li = el('li');
           if (lesson.file) {
             const btn = el('button', { class: 'link', type: 'button' }, lesson.title);
-            btn.addEventListener('click', () => openLesson(lesson.file));
+            // Đường dẫn trong manifest tính từ thư mục sản phẩm, còn bộ nạp tính từ content/.
+            btn.addEventListener('click', () => openLesson('toan7/' + lesson.file));
             li.append(btn, el('span', { class: 'meta' }, ` · trang ${lesson.bookPage}`));
           } else {
             li.append(el('span', { class: 'meta' }, `${lesson.title} · đang biên soạn`));
