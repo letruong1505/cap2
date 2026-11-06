@@ -14,12 +14,27 @@
       "content": "Hai góc kề bù có chung một cạnh, hai cạnh còn lại là hai tia đối nhau. Tổng số đo hai góc kề bù bằng 180°."
     },
     {
+      "type": "figure",
+      "figure": "figures/lt-ke-bu.svg",
+      "caption": "Hai góc kề bù: α + β = 180°."
+    },
+    {
       "type": "text",
       "content": "Hai góc đối đỉnh: mỗi cạnh của góc này là tia đối của một cạnh của góc kia. Hai góc đối đỉnh thì bằng nhau."
     },
     {
+      "type": "figure",
+      "figure": "figures/lt-doi-dinh.svg",
+      "caption": "Hai góc đối đỉnh: hai góc đều bằng α."
+    },
+    {
       "type": "text",
       "content": "Tia phân giác của một góc là tia nằm giữa hai cạnh của góc và tạo với hai cạnh hai góc bằng nhau. Nếu Oz là tia phân giác của góc xOy thì góc xOz = góc zOy = ½ góc xOy."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-phan-giac.svg",
+      "caption": "Oz là tia phân giác của góc xOy: góc xOz = góc zOy = α."
     },
     {
       "type": "text",
@@ -33,7 +48,8 @@
       "steps": [
         "Hai góc kề bù có tổng 180°, nên góc còn lại bằng 180° − 115° = 65°."
       ],
-      "answer": "65"
+      "answer": "65",
+      "figure": "figures/vd-ke-bu-115.svg"
     },
     {
       "problem": "Oz là tia phân giác của góc xOy, biết góc xOy = 76°. Tính góc xOz.",
@@ -41,7 +57,8 @@
       "steps": [
         "Oz là tia phân giác nên góc xOz = ½ góc xOy = 76° : 2 = 38°."
       ],
-      "answer": "38"
+      "answer": "38",
+      "figure": "figures/vd-phan-giac-76.svg"
     }
   ],
   "items": [
@@ -81,6 +98,7 @@
       "level": "Biết",
       "type": "fill",
       "stem": "Hai góc kề bù có số đo tỉ lệ với 2 : 7. Tìm số đo góc nhỏ hơn (độ).",
+      "figure": "figures/ke-bu-2-7.svg",
       "expr": "2*180/9",
       "answer": "40",
       "explain": "Tổng tỉ lệ là 2 + 7 = 9 phần, mỗi phần bằng 180° : 9 = 20°. Góc nhỏ là 2 · 20° = 40°."
@@ -121,6 +139,7 @@
       "level": "Vận dụng",
       "type": "fill",
       "stem": "Một góc có số đo bằng 3 lần số đo góc kề bù với nó. Tính số đo góc đó (độ).",
+      "figure": "figures/ke-bu-3x-x.svg",
       "expr": "3*180/4",
       "answer": "135",
       "explain": "Gọi góc kề bù là b, góc đó là 3b. Ta có 3b + b = 180°, suy ra b = 45° và góc đó bằng 135°."

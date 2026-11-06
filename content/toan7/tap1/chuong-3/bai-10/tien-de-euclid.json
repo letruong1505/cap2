@@ -14,8 +14,18 @@
       "content": "Tiên đề Euclid: qua một điểm nằm ngoài một đường thẳng, chỉ vẽ được đúng một đường thẳng song song với đường thẳng đó."
     },
     {
+      "type": "figure",
+      "figure": "figures/lt-tien-de-euclid.svg",
+      "caption": "Qua điểm M nằm ngoài d, chỉ có một đường thẳng d′ đi qua M và song song với d."
+    },
+    {
       "type": "text",
       "content": "Tính chất: nếu a ∥ b thì hai góc so le trong bằng nhau, hai góc đồng vị bằng nhau, hai góc trong cùng phía bù nhau."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-tinh-chat-song-song.svg",
+      "caption": "Khi a ∥ b: các góc so le trong và đồng vị bằng nhau (cùng là α); hai góc trong cùng phía bù nhau (α + β = 180°)."
     },
     {
       "type": "text",
@@ -33,7 +43,8 @@
       "steps": [
         "Khi a ∥ b, góc so le trong bằng nhau nên 62°. Góc đồng vị với góc 62° cũng bằng 62°."
       ],
-      "answer": "62"
+      "answer": "62",
+      "figure": "figures/vd-so-le-62.svg"
     },
     {
       "problem": "Cho a ∥ b. Một góc trong cùng phía bằng 102°. Tính góc trong cùng phía còn lại.",
@@ -41,7 +52,8 @@
       "steps": [
         "Hai góc trong cùng phía bù nhau: 180° − 102° = 78°."
       ],
-      "answer": "78"
+      "answer": "78",
+      "figure": "figures/vd-trong-cung-phia-102.svg"
     }
   ],
   "items": [

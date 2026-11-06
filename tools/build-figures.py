@@ -144,19 +144,19 @@ def fig_phan_giac(total, labels):
     fig = Fig()
     O = (200, 170)
     z = total * labels.get('z_frac', 0.5)
-    rays(fig, O, [('x', 0), ('y', total), ('z', z)])
+    rays(fig, O, [('x', 0), ('y', total)])
+    rays(fig, O, [('z', z)], length=90)
     fig.dot(O)
     fig.label(add(O, (0, 1), 18), 'O')
-    arc(fig, O, 0, total, labels['total'], r=48, text_r=72)
+    arc(fig, O, 0, total, '', r=48, text_r=72)
+    # Nhãn số đo cả góc đặt ngoài cùng, theo hướng giữa góc, tách khỏi tia Oz.
+    fig.label(add(O, dirv(total / 2), 150), labels['total'])
     arc(fig, O, 0, z, labels['xz'], r=30, text_r=60)
     arc(fig, O, z, total, labels['zy'], r=30, text_r=60)
     return fig.svg()
 
 
 # ---------- Hai đường thẳng cắt cát tuyến (bài 9, 10, 11) ----------
-
-OFF = {'UL': (-44, -16), 'UR': (44, -16), 'LL': (-44, 26), 'LR': (44, 26)}
-
 
 def fig_transversal(labels, slant=True, right=False):
     # Hai đường a, b song song (nằm ngang), đường c cắt cả hai.
@@ -178,11 +178,19 @@ def fig_transversal(labels, slant=True, right=False):
     fig.label((24, 190), 'b', anchor='middle')
     fig.line(P0, P1)
     fig.label((P0[0] + 14, P0[1] + 2), 'c', anchor='start')
+    # Hướng đường c (theo toạ độ màn hình, y hướng xuống) và tâm của bốn miền quanh giao điểm.
+    phi = math.degrees(math.atan2(P1[1] - P0[1], P1[0] - P0[0]))
+    mids = {'LR': phi / 2, 'LL': (phi + 180) / 2, 'UL': (phi + 360) / 2, 'UR': (phi + 540) / 2}
     for key, txt in labels.items():
         side, pos = key.split('_')
         base = A if side == 'A' else B
-        dx, dy = OFF[pos]
-        fig.label((base[0] + dx, base[1] + dy), txt)
+        t = math.radians(mids[pos])
+        # Khoảng cách tối thiểu để nhãn không chạm đường c (theo bề rộng ước lượng) và đường nằm ngang.
+        half_w = (11 * len(txt) + 10) / 2
+        need_c = (half_w + 8) / max(abs(math.sin(t - math.radians(phi))), 1e-6)
+        need_h = 20 / max(abs(math.sin(t)), 1e-6)
+        R = min(max(40, need_c, need_h), 130)
+        fig.label((base[0] + R * math.cos(t), base[1] + R * math.sin(t)), txt)
     if right:
         rightmark(fig, A, (-1, 0), (0, 1))
         rightmark(fig, B, (-1, 0), (0, 1))
@@ -315,7 +323,7 @@ def fig_perp_bisector():
     A, B, H = (60, 160), (300, 160), (180, 160)
     M = (180, 70)
     fig.line(A, B)
-    fig.line((180, 30), (180, 260), dash=True)
+    fig.line((180, 30), (180, 196), dash=True)
     fig.line(A, M)
     fig.line(B, M)
     rightmark(fig, H, (-1, 0), (0, -1))
@@ -323,8 +331,12 @@ def fig_perp_bisector():
     fig.label((M[0] + 14, M[1] - 4), 'M', anchor='start')
     fig.label((A[0] - 14, A[1] + 22), 'A', anchor='end')
     fig.label((B[0] + 14, B[1] + 22), 'B', anchor='start')
-    fig.label((H[0] - 14, H[1] + 26), 'H', anchor='end')
-    fig.label(((A[0] + M[0]) / 2 - 40, (A[1] + M[1]) / 2 - 8), '7,5 cm')
+    fig.label((H[0] + 14, H[1] + 26), 'H', anchor='start')
+    # Pháp tuyến ra ngoài cạnh AM: đẩy nhãn 7,5 cm ra khỏi tam giác.
+    mx, my = (A[0] + M[0]) / 2, (A[1] + M[1]) / 2
+    nx, ny = -(M[1] - A[1]), (M[0] - A[0])
+    nl = math.hypot(nx, ny)
+    fig.label((mx + 32 * nx / nl * -1, my + 32 * ny / nl * -1), '7,5 cm')
     fig.label(((B[0] + M[0]) / 2 + 26, (B[1] + M[1]) / 2 - 6), '?')
     fig.label((H[0] - 60, H[1] + 56), '12 cm')
     return fig.svg()
@@ -349,8 +361,10 @@ def fig_pie(parts, inside):
         if name in inside:
             ip = add((cx, cy), dirv(mid), r * 0.6)
             fig.label(ip, inside[name], fill='#ffffff', weight='bold')
-        op = add((cx, cy), dirv(mid), r * 1.22)
-        fig.label(op, name)
+        op = add((cx, cy), dirv(mid), r * 1.12)
+        c = math.cos(math.radians(mid))
+        anchor = 'start' if c > 0.3 else ('end' if c < -0.3 else 'middle')
+        fig.label(op, name, anchor=anchor)
         a -= span
     return fig.svg()
 
@@ -573,21 +587,267 @@ def specs():
     return S
 
 
+
+def fig_number_line_range(points=(), spans=()):
+    # Trục số từ −3 đến 3; points: (giá trị, nhãn); spans: (v1, v2, nhãn khoảng cách).
+    fig = Fig()
+    y = 150
+
+    def X(v):
+        return 90 + (v + 3) * 60
+
+    fig.line((60, y), (X(3) + 30, y))
+    for v in range(-3, 4):
+        fig.line((X(v), y - 6), (X(v), y + 6))
+        fig.label((X(v), y + 30), str(v).replace('-', MINUS))
+    for v, lab in points:
+        fig.dot((X(v), y), '#1f4e79')
+        fig.label((X(v), y - 22), lab)
+    for v1, v2, lab in spans:
+        fig.line((X(v1), y - 50), (X(v2), y - 50))
+        fig.line((X(v1), y - 50), (X(v1), y - 40))
+        fig.line((X(v2), y - 50), (X(v2), y - 40))
+        fig.label(((X(v1) + X(v2)) / 2, y - 60), lab)
+    return fig.svg()
+
+
+def fig_square_plain(side, area):
+    fig = Fig()
+    x0, y0, s = 120, 60, 160
+    fig.line((x0, y0), (x0 + s, y0))
+    fig.line((x0 + s, y0), (x0 + s, y0 + s))
+    fig.line((x0 + s, y0 + s), (x0, y0 + s))
+    fig.line((x0, y0 + s), (x0, y0))
+    fig.label((x0 + s / 2, y0 + s + 24), side)
+    fig.label((x0 + s / 2, y0 + s / 2), area)
+    return fig.svg()
+
+
+def fig_bisector_plain():
+    fig = Fig()
+    A, B, H, M = (60, 160), (300, 160), (180, 160), (180, 70)
+    fig.line(A, B)
+    fig.line((180, 30), (180, 260), dash=True)
+    fig.label((200, 40), 'd', anchor='start')
+    fig.line(A, M)
+    fig.line(B, M)
+    rightmark(fig, H, (-1, 0), (0, -1))
+    fig.dot(M)
+    fig.label((M[0] + 14, M[1] - 4), 'M', anchor='start')
+    fig.label((A[0] - 14, A[1] + 22), 'A', anchor='end')
+    fig.label((B[0] + 14, B[1] + 22), 'B', anchor='start')
+    fig.label((H[0] - 14, H[1] + 26), 'H', anchor='end')
+    fig.label(((A[0] + M[0]) / 2 - 30, (A[1] + M[1]) / 2 - 8), 'MA')
+    fig.label(((B[0] + M[0]) / 2 + 30, (B[1] + M[1]) / 2 - 8), 'MB')
+    return fig.svg()
+
+
+def fig_euclid():
+    fig = Fig()
+    fig.line((40, 170), (320, 170))
+    fig.label((334, 175), 'd', anchor='start')
+    fig.line((40, 60), (320, 60))
+    fig.label((334, 65), 'd′', anchor='start')
+    fig.dot((180, 60), '#1f4e79')
+    fig.label((180, 40), 'M')
+    return fig.svg()
+
+
+def extra_specs():
+    # Hình cho các câu còn thiếu.
+    return [
+        ('tap1/chuong-3/bai-8/doi-dinh-ke-bu.json', 'q03', 'ke-bu-2-7', fig_ke_bu(40, '2k', '7k')),
+        ('tap1/chuong-3/bai-8/doi-dinh-ke-bu.json', 'q06', 'ke-bu-3x-x', fig_ke_bu(135, '3x', 'x')),
+        ('tap1/chuong-4/bai-12/tong-goc-tam-giac.json', 'q03', 'tam-giac-2-3-4',
+         fig_tri(shape_from_angles(40, 60), 'ABC', interior={'A': '2k', 'B': '3k', 'C': '4k'})),
+    ]
+
+
+def theory_specs():
+    # (file bài, sau khối lý thuyết số, tên hình, SVG, chú thích)
+    T = []
+    def t(lesson, after, name, svg, cap):
+        T.append((lesson, after, name, svg, cap))
+    L = 'tap1/chuong-2/bai-6/vo-ti-can-bac-hai.json'
+    t(L, 1, 'lt-hinh-vuong-can-a', fig_square_plain('a', 'S = a²'), 'Hình vuông cạnh a có diện tích a²; khi đó a = √S.')
+
+    L = 'tap1/chuong-2/bai-7/tap-so-thuc.json'
+    t(L, 3, 'lt-gia-tri-tuyet-doi', fig_number_line_range(
+        points=[(-2, '−2'), (0, '0'), (2, '2')], spans=[(-2, 0, '2'), (0, 2, '2')]),
+      '|−2| = 2 là khoảng cách từ −2 đến 0 trên trục số; |2| = 2 là khoảng cách từ 2 đến 0.')
+
+    L = 'tap1/chuong-3/bai-8/doi-dinh-ke-bu.json'
+    t(L, 0, 'lt-ke-bu', fig_ke_bu(70, 'α', 'β'), 'Hai góc kề bù: α + β = 180°.')
+    t(L, 1, 'lt-doi-dinh', fig_doi_dinh(38, 'α', 'α'), 'Hai góc đối đỉnh: hai góc đều bằng α.')
+    t(L, 2, 'lt-phan-giac', fig_phan_giac(80, {'total': '2α', 'xz': 'α', 'zy': 'α'}),
+      'Oz là tia phân giác của góc xOy: góc xOz = góc zOy = α.')
+
+    L = 'tap1/chuong-3/bai-9/song-song-dau-hieu.json'
+    t(L, 0, 'lt-cap-goc', fig_transversal({'A_LL': '1', 'A_LR': '2', 'A_UL': '3', 'A_UR': '4',
+                                          'B_LL': '5', 'B_LR': '6', 'B_UL': '7', 'B_UR': '8'}),
+      '∠1 và ∠8 là cặp góc so le trong; ∠1 và ∠5 là cặp góc đồng vị; ∠2 và ∠8 là cặp góc trong cùng phía.')
+
+    L = 'tap1/chuong-3/bai-10/tien-de-euclid.json'
+    t(L, 0, 'lt-tien-de-euclid', fig_euclid(),
+      'Qua điểm M nằm ngoài d, chỉ có một đường thẳng d′ đi qua M và song song với d.')
+    t(L, 1, 'lt-tinh-chat-song-song', fig_transversal({'A_LL': 'α', 'B_LL': 'α', 'B_UR': 'α',
+                                                     'A_LR': 'β'}),
+      'Khi a ∥ b: các góc so le trong và đồng vị bằng nhau (cùng là α); hai góc trong cùng phía bù nhau (α + β = 180°).')
+
+    L = 'tap1/chuong-3/bai-11/dinh-li.json'
+    t(L, 2, 'lt-vuong-goc', fig_transversal({'A_LL': '90°', 'B_LL': '90°'}, slant=False, right=True),
+      'Nếu a ∥ b và c ⊥ a thì c ⊥ b: cả hai góc tạo bởi c với a và b đều là góc vuông.')
+
+    L = 'tap1/chuong-4/bai-12/tong-goc-tam-giac.json'
+    t(L, 0, 'lt-tong-goc', fig_tri(shape_from_angles(50, 60), 'ABC',
+                                  interior={'A': 'α', 'B': 'β', 'C': 'γ'}),
+      'Tổng ba góc trong: α + β + γ = 180°.')
+    t(L, 1, 'lt-goc-ngoai', fig_tri(shape_from_angles(50, 65), 'ABC',
+                                   interior={'A': 'α', 'B': 'β'}, exterior={'C': ('γ′', 'B')}),
+      'Góc ngoài tại C (γ′) bằng tổng hai góc trong không kề với C: γ′ = α + β.')
+
+    L = 'tap1/chuong-4/bai-13/c-c-c.json'
+    t(L, 1, 'lt-ccc', fig_two_tri(
+        shape_from_sides(6, 5, 4, names=('A', 'B', 'C')), 'ABC',
+        shape_from_sides(6, 5, 4, names=('D', 'E', 'F'), ox=330), 'DEF',
+        dict(sides={('A', 'B'): 'c', ('B', 'C'): 'a', ('C', 'A'): 'b'}),
+        dict(sides={('D', 'E'): 'c', ('E', 'F'): 'a', ('F', 'D'): 'b'})),
+      'ΔABC và ΔDEF có ba cặp cạnh tương ứng bằng nhau: a = a′, b = b′, c = c′.')
+
+    L = 'tap1/chuong-4/bai-14/c-g-c-g-c.json'
+    t(L, 1, 'lt-cgc', fig_two_tri(
+        shape_from_angles(50, 60, names=('A', 'B', 'C')), 'ABC',
+        shape_from_angles(50, 60, names=('D', 'E', 'F'), ox=330), 'DEF',
+        dict(interior={'A': 'α'}, ticks=[('A', 'B'), ('A', 'C')]),
+        dict(interior={'D': 'α'}, ticks=[('D', 'E'), ('D', 'F')])),
+      'Hai cạnh và góc xen giữa (α) bằng nhau thì hai tam giác bằng nhau (c.g.c).')
+    t(L, 2, 'lt-gcg', fig_two_tri(
+        shape_from_angles(50, 65, names=('A', 'B', 'C')), 'ABC',
+        shape_from_angles(50, 65, names=('D', 'E', 'F'), ox=330), 'DEF',
+        dict(interior={'B': 'β', 'C': 'γ'}, ticks=[('B', 'C')]),
+        dict(interior={'E': 'β', 'F': 'γ'}, ticks=[('E', 'F')])),
+      'Một cạnh và hai góc kề cạnh đó bằng nhau thì hai tam giác bằng nhau (g.c.g).')
+
+    L = 'tap1/chuong-4/bai-15/tam-giac-vuong.json'
+    t(L, 0, 'lt-tam-giac-vuong', fig_tri(shape_from_angles(90, 35), 'ABC',
+                                        interior={'B': 'góc nhọn', 'C': 'góc nhọn'},
+                                        sides={('B', 'C'): 'cạnh huyền'}, right='A'),
+      'Tam giác vuông: hai góc nhọn phụ nhau; cạnh đối diện góc vuông là cạnh huyền.')
+
+    L = 'tap1/chuong-4/bai-16/tam-giac-can-trung-truc.json'
+    t(L, 0, 'lt-tam-giac-can', fig_tri(shape_from_angles(40, 70), 'ABC',
+                                     interior={'B': 'góc đáy', 'C': 'góc đáy'},
+                                     sides={('A', 'B'): 'cạnh bên', ('A', 'C'): 'cạnh bên', ('B', 'C'): 'cạnh đáy'},
+                                     ticks=[('A', 'B'), ('A', 'C')]),
+      'Tam giác cân tại A: hai cạnh bên bằng nhau và hai góc đáy bằng nhau.')
+    t(L, 1, 'lt-tam-giac-deu', fig_tri(shape_from_angles(60, 60), 'ABC',
+                                     interior={'A': '60°', 'B': '60°', 'C': '60°'},
+                                     ticks=[('A', 'B'), ('B', 'C'), ('C', 'A')]),
+      'Tam giác đều: ba cạnh bằng nhau và ba góc bằng 60°.')
+    t(L, 2, 'lt-trung-truc', fig_bisector_plain(),
+      'Đường trung trực d của AB đi qua trung điểm H và vuông góc với AB; mọi điểm M trên d đều cách đều A và B.')
+
+    L = 'tap1/chuong-5/bai-18/bieu-do-hinh-quat.json'
+    t(L, 1, 'lt-quat', fig_pie([('Môn A', 25), ('Môn B', 25), ('Môn C', 30), ('Môn D', 20)],
+                              {'Môn A': '25%', 'Môn B': '25%', 'Môn C': '30%', 'Môn D': '20%'}),
+      'Cả hình tròn ứng với 100%; tổng các phần trăm bằng 100%.')
+
+    L = 'tap1/chuong-5/bai-19/bieu-do-doan-thang.json'
+    t(L, 1, 'lt-doan-thang', fig_line_chart(['Ngày 1', 'Ngày 2', 'Ngày 3', 'Ngày 4'],
+                                           [1.0, 1.8, 2.2, 3.0], 3.5, 0.5, xlabel='Ngày'),
+      'Biểu đồ đoạn thẳng: đoạn nối các điểm cho thấy xu thế tăng của đại lượng theo thời gian.')
+    return T
+
+
+def example_specs():
+    # (file bài, chỉ số ví dụ, tên hình, SVG)
+    E = []
+    def e(lesson, idx, name, svg):
+        E.append((lesson, idx, name, svg))
+    L = 'tap1/chuong-3/bai-8/doi-dinh-ke-bu.json'
+    e(L, 0, 'vd-ke-bu-115', fig_ke_bu(65, '115°', '?'))
+    e(L, 1, 'vd-phan-giac-76', fig_phan_giac(76, {'total': '76°', 'xz': '?', 'zy': '?'}))
+    L = 'tap1/chuong-3/bai-9/song-song-dau-hieu.json'
+    e(L, 0, 'vd-trong-cung-phia-110', fig_transversal({'A_LR': '110°', 'B_UR': '?'}))
+    e(L, 1, 'vd-dong-vi-52', fig_transversal({'A_LL': '52°', 'B_LL': '?'}))
+    L = 'tap1/chuong-3/bai-10/tien-de-euclid.json'
+    e(L, 0, 'vd-so-le-62', fig_transversal({'A_LL': '62°', 'B_UR': '?'}))
+    e(L, 1, 'vd-trong-cung-phia-102', fig_transversal({'A_LR': '102°', 'B_UR': '?'}))
+    L = 'tap1/chuong-3/bai-11/dinh-li.json'
+    e(L, 0, 'ke-bu-135', fig_ke_bu(135, '135°', '?'))
+    e(L, 1, 'vuong-goc-song-song', fig_transversal({'A_LL': '90°', 'B_LL': '?'}, slant=False, right=True))
+    L = 'tap1/chuong-4/bai-12/tong-goc-tam-giac.json'
+    e(L, 0, 'vd-tam-giac-50-60', fig_tri(shape_from_angles(50, 60), 'ABC',
+                                         interior={'A': '50°', 'B': '60°', 'C': '?'}))
+    e(L, 1, 'vd-ngoai-120', fig_tri(shape_from_angles(55, 65), 'ABC',
+                                   interior={'A': '55°', 'B': '?'}, exterior={'C': ('120°', 'B')}))
+    L = 'tap1/chuong-4/bai-13/c-c-c.json'
+    e(L, 0, 'ccc-6-5-8', fig_two_tri(
+        shape_from_sides(8, 5, 6, names=('A', 'B', 'C')), 'ABC',
+        shape_from_sides(8, 5, 6, names=('D', 'E', 'F'), ox=330), 'DEF',
+        dict(sides={('A', 'B'): '6', ('C', 'A'): '5', ('B', 'C'): '?'}),
+        dict(sides={('E', 'F'): '8'})))
+    e(L, 1, 'ccc-4-6-5', fig_two_tri(
+        shape_from_sides(6, 5, 4, names=('A', 'B', 'C')), 'ABC',
+        shape_from_sides(6, 5, 4, names=('D', 'E', 'F'), ox=330), 'DEF',
+        dict(sides={('A', 'B'): '4', ('B', 'C'): '6', ('C', 'A'): '5'}),
+        dict(sides={('D', 'E'): '?', ('E', 'F'): '?', ('F', 'D'): '?'})))
+    L = 'tap1/chuong-4/bai-14/c-g-c-g-c.json'
+    e(L, 0, 'vd-cgc-b60', fig_two_tri(
+        shape_from_angles(60, 60, names=('A', 'B', 'C')), 'ABC',
+        shape_from_angles(60, 60, names=('D', 'E', 'F'), ox=330), 'DEF',
+        dict(interior={'B': '60°'}), dict(interior={'E': '?'})))
+    e(L, 1, 'cgc-bc-5', fig_two_tri(
+        shape_from_sides(5, 6, 4, names=('A', 'B', 'C')), 'ABC',
+        shape_from_sides(5, 6, 4, names=('D', 'E', 'F'), ox=330), 'DEF',
+        dict(sides={('B', 'C'): '5'}), dict(sides={('E', 'F'): '?'})))
+    L = 'tap1/chuong-4/bai-15/tam-giac-vuong.json'
+    e(L, 0, 'vd-vuong-38', fig_tri(shape_from_angles(90, 38), 'ABC',
+                                  interior={'B': '38°', 'C': '?'}, right='A'))
+    e(L, 1, 'hai-vuong-bang-nhau', fig_two_tri(
+        shape_from_angles(90, 40, names=('A', 'B', 'C')), 'ABC',
+        shape_from_angles(90, 40, names=('D', 'E', 'F'), ox=330), 'DEF',
+        dict(interior={'B': '40°', 'C': '?'}, right='A'), dict(interior={'E': '?'}, right='D')))
+    L = 'tap1/chuong-4/bai-16/tam-giac-can-trung-truc.json'
+    e(L, 0, 'vd-can-40', fig_tri(shape_from_angles(40, 70), 'ABC',
+                                interior={'A': '40°', 'B': '?', 'C': '?'},
+                                ticks=[('A', 'B'), ('A', 'C')]))
+    e(L, 1, 'vd-can-100', fig_tri(shape_from_angles(100, 40), 'ABC',
+                                 interior={'A': '100°', 'B': '?', 'C': '?'},
+                                 ticks=[('A', 'B'), ('A', 'C')]))
+    L = 'tap1/chuong-5/bai-19/bieu-do-doan-thang.json'
+    e(L, 1, 'doan-thang-6-12-gio', fig_line_chart(['6 giờ', '12 giờ'], [18, 30], 36, 6))
+    return E
+
+
 def main():
     os.makedirs(FIG_DIR, exist_ok=True)
-    touched = {}
-    for lesson, item_id, name, svg in specs():
-        fname = f'{name}.svg'
-        with open(os.path.join(FIG_DIR, fname), 'w', encoding='utf-8') as f:
-            f.write(svg)
-        rel = f'figures/{fname}'
-        touched.setdefault(lesson, []).append((item_id, rel))
+    svgs = {}
+    item_map = {}
+    for lesson, item_id, name, svg in specs() + extra_specs():
+        svgs[name] = svg
+        item_map.setdefault(lesson, {})[item_id] = f'figures/{name}.svg'
+    theory_map = {}
+    for lesson, after, name, svg, cap in theory_specs():
+        svgs[name] = svg
+        theory_map.setdefault(lesson, []).append((after, f'figures/{name}.svg', cap))
+    example_map = {}
+    for lesson, idx, name, svg in example_specs():
+        svgs[name] = svg
+        example_map.setdefault(lesson, {})[idx] = f'figures/{name}.svg'
 
-    for lesson, pairs in touched.items():
+    for name, svg in svgs.items():
+        with open(os.path.join(FIG_DIR, f'{name}.svg'), 'w', encoding='utf-8') as f:
+            f.write(svg)
+
+    lessons = set(item_map) | set(theory_map) | set(example_map)
+    for lesson in sorted(lessons):
         path = os.path.join(CONTENT, lesson)
         with open(path, encoding='utf-8') as f:
             data = json.load(f)
-        mapping = dict(pairs)
+
+        # 1) Câu hỏi: gắn trường figure ngay sau đề bài.
+        mapping = item_map.get(lesson, {})
         found = set()
         for item in data['items']:
             if item['id'] not in mapping:
@@ -607,11 +867,30 @@ def main():
         missing = set(mapping) - found
         if missing:
             raise SystemExit(f'{lesson}: không tìm thấy câu {sorted(missing)}')
+
+        # 2) Lý thuyết: bỏ khối hình cũ rồi chèn lại theo vị trí khai báo.
+        base = [b for b in data['theory'] if b.get('type') != 'figure']
+        inserts = {}
+        for after, rel, cap in theory_map.get(lesson, []):
+            inserts.setdefault(after, []).append({'type': 'figure', 'figure': rel, 'caption': cap})
+        theory = []
+        for i, b in enumerate(base):
+            theory.append(b)
+            theory.extend(inserts.get(i, []))
+        if max(inserts, default=-1) >= len(base):
+            raise SystemExit(f'{lesson}: chỉ số lý thuyết vượt quá số khối')
+        data['theory'] = theory
+
+        # 3) Ví dụ: gắn hoặc bỏ trường figure.
+        ex_map = example_map.get(lesson, {})
+        for i, ex in enumerate(data['examples']):
+            ex.pop('figure', None)
+            if i in ex_map:
+                ex['figure'] = ex_map[i]
         with open(path, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
             f.write('\n')
-    total = sum(len(p) for p in touched.values())
-    print(f'Đã tạo {total} hình trong {FIG_DIR}')
+    print(f'Đã tạo {len(svgs)} hình trong {FIG_DIR}')
 
 
 if __name__ == '__main__':

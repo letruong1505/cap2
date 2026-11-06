@@ -49,11 +49,24 @@ function newAttempt(lesson) {
   return { questions, order, answers: {}, submitted: false };
 }
 
+function figureSrc(svg) {
+  return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+}
+
+function figureBlock(svg, caption) {
+  const fig = el('figure', { class: 'theory-figure' });
+  fig.append(el('img', { class: 'figure', alt: caption || '', src: figureSrc(svg) }));
+  if (caption) fig.append(el('figcaption', {}, caption));
+  return fig;
+}
+
 function renderTheory(lesson) {
   const box = document.getElementById('theory');
   box.replaceChildren();
   for (const block of lesson.theory) {
-    if (block.type === 'formula') {
+    if (block.type === 'figure') {
+      box.append(figureBlock(block.figureSvg, block.caption));
+    } else if (block.type === 'formula') {
       box.append(el('p', { class: 'formula' }, block.content));
     } else {
       box.append(el('p', {}, block.content));
@@ -67,6 +80,9 @@ function renderExamples(lesson) {
   lesson.examples.forEach((ex, i) => {
     const wrap = el('div', { class: 'example' });
     wrap.append(el('strong', {}, `Ví dụ ${i + 1}: ${ex.problem}`));
+    if (ex.figureSvg) {
+      wrap.append(el('img', { class: 'figure', alt: `Hình minh họa ví dụ ${i + 1}`, src: figureSrc(ex.figureSvg) }));
+    }
     const steps = el('ol');
     ex.steps.forEach((s) => steps.append(el('li', {}, s)));
     wrap.append(steps);

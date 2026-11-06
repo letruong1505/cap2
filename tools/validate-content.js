@@ -23,6 +23,17 @@ function checkExpr(expr, answer, tag) {
   return [];
 }
 
+function checkFigurePath(figure, tag) {
+  const rel = String(figure);
+  if (rel.includes('..') || path.isAbsolute(rel)) {
+    return [`${tag}: đường dẫn hình không hợp lệ (${rel})`];
+  }
+  if (!fs.existsSync(path.join(CONTENT_DIR, 'toan7', rel))) {
+    return [`${tag}: không tìm thấy hình ${rel}`];
+  }
+  return [];
+}
+
 function validateLesson(lesson, relPath) {
   const errs = [];
   const where = relPath;
@@ -33,6 +44,12 @@ function validateLesson(lesson, relPath) {
 
   for (const ex of lesson.examples || []) {
     errs.push(...checkExpr(ex.expr, ex.answer, `ví dụ "${ex.problem}"`));
+    if (ex.figure) errs.push(...checkFigurePath(ex.figure, `ví dụ "${ex.problem}"`));
+  }
+  for (const block of lesson.theory || []) {
+    if (block.type !== 'figure') continue;
+    errs.push(...checkFigurePath(block.figure, 'lý thuyết'));
+    if (!block.caption) errs.push('lý thuyết: hình thiếu chú thích');
   }
 
   const ids = new Set();
@@ -42,14 +59,7 @@ function validateLesson(lesson, relPath) {
     ids.add(item.id);
     if (!LEVELS.includes(item.level)) errs.push(`${tag}: mức độ không hợp lệ (${item.level})`);
     if (!item.explain) errs.push(`${tag}: thiếu lời giải`);
-    if (item.figure) {
-      const rel = String(item.figure);
-      if (rel.includes('..') || path.isAbsolute(rel)) {
-        errs.push(`${tag}: đường dẫn hình không hợp lệ (${rel})`);
-      } else if (!fs.existsSync(path.join(CONTENT_DIR, 'toan7', rel))) {
-        errs.push(`${tag}: không tìm thấy hình ${rel}`);
-      }
-    }
+    if (item.figure) errs.push(...checkFigurePath(item.figure, tag));
 
     if (item.type === 'mcq') {
       if (!Array.isArray(item.choices) || item.choices.length < 2) {

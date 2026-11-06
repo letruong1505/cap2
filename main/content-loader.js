@@ -38,10 +38,19 @@ function loadManifest(product) {
 }
 
 // Đọc nội dung SVG của hình minh họa và gắn vào câu hỏi (figureSvg), để giao diện không cần quyền đọc file.
+function readFigure(rel) {
+  return fs.readFileSync(safeResolve(path.join('toan7', rel)), 'utf8');
+}
+
 function attachFigures(lesson) {
   for (const item of lesson.items) {
-    if (!item.figure) continue;
-    item.figureSvg = fs.readFileSync(safeResolve(path.join('toan7', item.figure)), 'utf8');
+    if (item.figure) item.figureSvg = readFigure(item.figure);
+  }
+  for (const block of lesson.theory || []) {
+    if (block.type === 'figure') block.figureSvg = readFigure(block.figure);
+  }
+  for (const ex of lesson.examples || []) {
+    if (ex.figure) ex.figureSvg = readFigure(ex.figure);
   }
   return lesson;
 }

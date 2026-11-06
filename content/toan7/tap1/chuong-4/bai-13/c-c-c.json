@@ -18,6 +18,11 @@
       "content": "Trường hợp c.c.c: nếu ba cạnh của tam giác này bằng ba cạnh của tam giác kia thì hai tam giác đó bằng nhau."
     },
     {
+      "type": "figure",
+      "figure": "figures/lt-ccc.svg",
+      "caption": "ΔABC và ΔDEF có ba cặp cạnh tương ứng bằng nhau: a = a′, b = b′, c = c′."
+    },
+    {
       "type": "text",
       "content": "Lỗi thường gặp: viết kí hiệu bằng nhau với các đỉnh không đúng thứ tự tương ứng, ví dụ viết ΔABC = ΔDFE khi A ↔ D, B ↔ E, C ↔ F."
     }
@@ -29,7 +34,8 @@
       "steps": [
         "BC tương ứng với EF (B ↔ E, C ↔ F) nên BC = EF = 8 cm."
       ],
-      "answer": "8"
+      "answer": "8",
+      "figure": "figures/ccc-6-5-8.svg"
     },
     {
       "problem": "ΔABC có AB = 4 cm, BC = 6 cm, CA = 5 cm. Tam giác DEF bằng ΔABC với D ↔ A, E ↔ B, F ↔ C. Tính chu vi ΔDEF.",
@@ -37,7 +43,8 @@
       "steps": [
         "Hai tam giác bằng nhau nên chu vi bằng nhau: 4 + 6 + 5 = 15 cm."
       ],
-      "answer": "15"
+      "answer": "15",
+      "figure": "figures/ccc-4-6-5.svg"
     }
   ],
   "items": [

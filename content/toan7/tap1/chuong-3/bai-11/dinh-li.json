@@ -22,6 +22,11 @@
       "content": "Ví dụ: nếu một đường thẳng vuông góc với một trong hai đường thẳng song song thì nó cũng vuông góc với đường thẳng còn lại."
     },
     {
+      "type": "figure",
+      "figure": "figures/lt-vuong-goc.svg",
+      "caption": "Nếu a ∥ b và c ⊥ a thì c ⊥ b: cả hai góc tạo bởi c với a và b đều là góc vuông."
+    },
+    {
       "type": "text",
       "content": "Các tính chất thường dùng trong chứng minh: góc so le trong, góc đồng vị, góc trong cùng phía và tiên đề Euclid."
     }
@@ -34,7 +39,8 @@
         "Giả thiết: hai góc kề bù. Kết luận: tổng số đo bằng 180°.",
         "Suy ra x = 180° − 135° = 45°."
       ],
-      "answer": "45"
+      "answer": "45",
+      "figure": "figures/ke-bu-135.svg"
     },
     {
       "problem": "Cho a ∥ b và c ⊥ a. Số đo góc giữa c và b là bao nhiêu độ?",
@@ -42,7 +48,8 @@
       "steps": [
         "Vì c ⊥ a và a ∥ b nên c ⊥ b, góc giữa c và b bằng 90°."
       ],
-      "answer": "90"
+      "answer": "90",
+      "figure": "figures/vuong-goc-song-song.svg"
     }
   ],
   "items": [

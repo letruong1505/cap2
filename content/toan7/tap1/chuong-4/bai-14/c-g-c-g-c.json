@@ -18,8 +18,18 @@
       "content": "Trường hợp c.g.c: nếu hai cạnh và góc xen giữa của tam giác này bằng hai cạnh và góc xen giữa của tam giác kia thì hai tam giác bằng nhau."
     },
     {
+      "type": "figure",
+      "figure": "figures/lt-cgc.svg",
+      "caption": "Hai cạnh và góc xen giữa (α) bằng nhau thì hai tam giác bằng nhau (c.g.c)."
+    },
+    {
       "type": "text",
       "content": "Trường hợp g.c.g: nếu một cạnh và hai góc kề cạnh đó của tam giác này bằng một cạnh và hai góc kề cạnh đó của tam giác kia thì hai tam giác bằng nhau. Hai góc kề cạnh BC là góc tại B và góc tại C."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-gcg.svg",
+      "caption": "Một cạnh và hai góc kề cạnh đó bằng nhau thì hai tam giác bằng nhau (g.c.g)."
     },
     {
       "type": "text",
@@ -33,7 +43,8 @@
       "steps": [
         "B và E là hai góc tương ứng nên bằng nhau: E = 60°."
       ],
-      "answer": "60"
+      "answer": "60",
+      "figure": "figures/vd-cgc-b60.svg"
     },
     {
       "problem": "ΔABC = ΔDEF theo g.c.g. Biết BC = 5 cm. Tính EF.",
@@ -41,7 +52,8 @@
       "steps": [
         "BC và EF là cạnh tương ứng (B ↔ E, C ↔ F) nên EF = BC = 5 cm."
       ],
-      "answer": "5"
+      "answer": "5",
+      "figure": "figures/cgc-bc-5.svg"
     }
   ],
   "items": [

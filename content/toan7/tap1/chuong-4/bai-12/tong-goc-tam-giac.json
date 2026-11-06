@@ -14,8 +14,18 @@
       "content": "Tổng ba góc trong một tam giác bằng 180°. Chứng minh: qua một đỉnh kẻ đường thẳng song song với cạnh đối diện, rồi dùng tính chất góc so le trong."
     },
     {
+      "type": "figure",
+      "figure": "figures/lt-tong-goc.svg",
+      "caption": "Tổng ba góc trong: α + β + γ = 180°."
+    },
+    {
       "type": "text",
       "content": "Góc ngoài tại một đỉnh của tam giác bằng tổng hai góc trong không kề với đỉnh đó."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-goc-ngoai.svg",
+      "caption": "Góc ngoài tại C (γ′) bằng tổng hai góc trong không kề với C: γ′ = α + β."
     },
     {
       "type": "text",
@@ -33,7 +43,8 @@
       "steps": [
         "Tổng ba góc bằng 180°: C = 180° − 50° − 60° = 70°."
       ],
-      "answer": "70"
+      "answer": "70",
+      "figure": "figures/vd-tam-giac-50-60.svg"
     },
     {
       "problem": "Góc ngoài tại đỉnh C của tam giác ABC bằng 120°, góc A = 55°. Tính góc B.",
@@ -42,7 +53,8 @@
         "Góc ngoài tại C bằng tổng hai góc trong không kề với C, tức là A + B = 120°.",
         "Suy ra B = 120° − 55° = 65°."
       ],
-      "answer": "65"
+      "answer": "65",
+      "figure": "figures/vd-ngoai-120.svg"
     }
   ],
   "items": [
@@ -82,6 +94,7 @@
       "level": "Biết",
       "type": "fill",
       "stem": "Tam giác có ba góc tỉ lệ với 2 : 3 : 4. Tính góc lớn nhất (độ).",
+      "figure": "figures/tam-giac-2-3-4.svg",
       "expr": "4*180/9",
       "answer": "80",
       "explain": "Tổng tỉ lệ là 2 + 3 + 4 = 9 phần, mỗi phần bằng 180° : 9 = 20°. Góc lớn nhất là 4 · 20° = 80°."
