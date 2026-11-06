@@ -262,6 +262,12 @@ async function openLesson(relPath) {
 
 async function init() {
   try {
+    const info = await window.vungBai.appInfo();
+    document.getElementById('build').textContent = `v${info.version} · ${info.commit}`;
+  } catch {
+    // Không hiện số phiên bản nếu không đọc được; không ảnh hưởng luồng chính.
+  }
+  try {
     const manifest = await window.vungBai.loadManifest();
     document.getElementById('breadcrumb').textContent = '';
     document.getElementById('btn-back').addEventListener('click', () => {
