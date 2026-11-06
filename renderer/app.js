@@ -1,8 +1,8 @@
-// Engine giao diện bài học: hiển thị lý thuyết, ví dụ, luyện tập và chấm điểm.
+// Engine giao diện bài học: lý thuyết, ví dụ, luyện tập và chấm toàn bài.
 // Mọi nội dung từ file JSON được gán bằng textContent để tránh chèn mã HTML ngoài ý muốn.
 
 // Khóa lưu tiến độ được đặt khi mở bài, theo đường dẫn bài học.
-// Tiền tố v2: dữ liệu lưu theo kiểu cũ (vị trí phương án) sẽ không được đọc lại.
+// Tiền tố v3: dữ liệu của các bản trước không được đọc lại.
 let PROGRESS_KEY = null;
 const R = window.Rational;
 
@@ -16,17 +16,19 @@ const el = (tag, attrs = {}, text) => {
   return node;
 };
 
-function loadProgress() {
+// Trạng thái bài học: đáp án đã chọn (theo nội dung), và đã nộp bài chưa.
+function loadState() {
   try {
-    return JSON.parse(localStorage.getItem(PROGRESS_KEY)) || {};
+    const s = JSON.parse(localStorage.getItem(PROGRESS_KEY));
+    return { answers: (s && s.answers) || {}, submitted: !!(s && s.submitted) };
   } catch {
-    return {};
+    return { answers: {}, submitted: false };
   }
 }
 
-function saveProgress(progress) {
+function saveState(state) {
   try {
-    localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress));
+    localStorage.setItem(PROGRESS_KEY, JSON.stringify(state));
   } catch {
     // Bỏ qua nếu không ghi được; bản thử vẫn chạy được.
   }
@@ -58,7 +60,7 @@ function renderExamples(lesson) {
   });
 }
 
-function renderQuiz(lesson, progress) {
+function renderQuiz(lesson, state) {
   const box = document.getElementById('quiz');
   box.replaceChildren();
 
@@ -67,41 +69,39 @@ function renderQuiz(lesson, progress) {
     q.append(el('span', { class: 'level' }, item.level));
     q.append(el('div', { class: 'stem' }, `${idx + 1}. ${item.stem}`));
 
-    const feedback = el('div', { class: 'feedback', hidden: 'hidden' });
-    // Chỉ chấm khi học sinh bấm Kiểm tra (hoặc nhấn Enter ở ô nhập).
-    const onCheck = () => checkItem(item, q, feedback, progress, lesson);
-
+    // Chỉ lưu lựa chọn, không hiện đúng sai khi chọn.
     if (item.type === 'mcq') {
       item.choices.forEach((choice, ci) => {
         const label = el('label', { class: 'choice' });
         const input = el('input', { type: 'radio', name: item.id, value: String(ci) });
+        input.addEventListener('change', () => {
+          state.answers[item.id] = choice;
+          saveState(state);
+        });
         label.append(input, ' ', choice);
         q.append(label);
       });
     } else {
       const input = el('input', { type: 'text', 'aria-label': 'Đáp án' });
-      input.addEventListener('keydown', (e) => { if (e.key === 'Enter') onCheck(); });
+      input.addEventListener('input', () => {
+        state.answers[item.id] = input.value.trim() || null;
+        saveState(state);
+      });
       q.append(input);
     }
-    const check = el('button', { class: 'primary check-btn', type: 'button' }, 'Kiểm tra');
-    check.addEventListener('click', onCheck);
-    q.append(check, feedback);
 
-    const saved = progress[item.id];
-    if (saved) {
-      restoreAnswer(item, q, saved.value);
-      showFeedback(item, q, feedback, saved.value);
-      lockItem(q);
-    }
-
+    q.append(el('div', { class: 'feedback', hidden: 'hidden' }));
     box.append(q);
+    restoreAnswer(item, q, state.answers[item.id]);
   });
+
+  if (state.submitted) applySubmitted(lesson, state);
 }
 
 function readAnswer(item, q) {
   if (item.type === 'mcq') {
     const picked = q.querySelector('input[type="radio"]:checked');
-    return picked ? Number(picked.value) : null;
+    return picked ? item.choices[Number(picked.value)] : null;
   }
   const text = q.querySelector('input[type="text"]').value.trim();
   return text === '' ? null : text;
@@ -110,13 +110,21 @@ function readAnswer(item, q) {
 // Đáp án được so theo giá trị (nội dung phương án hoặc số đã nhập), không theo vị trí.
 // Với câu điền, 2/4 và 1/2 là cùng một đáp án.
 function isCorrect(item, value) {
-  if (value === null || value === undefined) return false;
+  if (value === null || value === undefined || value === '') return false;
   if (item.type === 'mcq') return value === item.choices[item.answer];
-  return R.sameValue(value, item.answer);
+  try {
+    return R.sameValue(value, item.answer);
+  } catch {
+    return false;
+  }
+}
+
+function correctText(item) {
+  return item.type === 'mcq' ? item.choices[item.answer] : item.answer;
 }
 
 function restoreAnswer(item, q, value) {
-  if (value === null || value === undefined) return;
+  if (value === null || value === undefined || value === '') return;
   if (item.type === 'mcq') {
     const idx = item.choices.indexOf(value);
     const input = q.querySelector(`input[type="radio"][value="${idx}"]`);
@@ -126,93 +134,91 @@ function restoreAnswer(item, q, value) {
   }
 }
 
-// Khóa câu sau khi đã kiểm tra: mỗi câu chỉ có một lần trả lời.
-function lockItem(q) {
+function lockQuestion(q) {
   q.querySelectorAll('input').forEach((i) => { i.disabled = true; });
-  const btn = q.querySelector('.check-btn');
-  if (btn) btn.disabled = true;
 }
 
-function showHint(feedback, text) {
+// Hiển thị kết quả của một câu sau khi nộp bài.
+function showResult(item, feedback, value) {
   feedback.hidden = false;
-  feedback.className = 'feedback bad';
-  feedback.textContent = text;
-}
+  const explain = item.explain;
 
-function checkItem(item, q, feedback, progress, lesson) {
-  if (progress[item.id]) return; // đã kiểm tra rồi, không cho làm lại
-  const raw = readAnswer(item, q);
-  if (raw === null) {
-    showHint(feedback, 'Hãy chọn hoặc nhập đáp án trước khi kiểm tra.');
+  if (value === null || value === undefined || value === '') {
+    feedback.className = 'feedback bad';
+    feedback.textContent = `Bạn chưa trả lời. Đáp án đúng: ${correctText(item)}. Lời giải: ${explain}`;
     return;
   }
-  if (item.type === 'fill') {
-    try {
-      R.parse(raw);
-    } catch {
-      // Nhập sai định dạng thì chưa tính là một lần làm bài.
-      showHint(feedback, 'Hãy nhập dạng a/b hoặc số nguyên, ví dụ 5/12.');
-      return;
-    }
-  }
-  // Lưu theo nội dung đáp án, không lưu vị trí phương án.
-  const value = item.type === 'mcq' ? item.choices[raw] : raw;
-  progress[item.id] = { value };
-  saveProgress(progress);
-  showFeedback(item, q, feedback, value);
-  lockItem(q);
-  updateScore(lesson);
-}
-
-function showFeedback(item, q, feedback, value) {
-  feedback.hidden = false;
   if (item.type === 'fill') {
     try {
       R.parse(value);
     } catch {
       feedback.className = 'feedback bad';
-      feedback.textContent = 'Hãy nhập dạng a/b hoặc số nguyên, ví dụ 5/12.';
+      feedback.textContent = `Chưa đúng định dạng a/b. Đáp án đúng: ${item.answer}. Lời giải: ${explain}`;
       return;
     }
   }
-  const ok = isCorrect(item, value);
-  feedback.className = 'feedback ' + (ok ? 'ok' : 'bad');
-  if (ok) {
-    feedback.textContent = 'Đúng. ' + item.explain;
-  } else {
-    const idx = item.type === 'mcq' ? item.choices.indexOf(value) : -1;
-    const wrongNote = idx >= 0 ? item.wrong_explain[String(idx)] : null;
-    feedback.textContent = (wrongNote ? wrongNote + ' ' : '') + 'Lời giải: ' + item.explain;
+  if (isCorrect(item, value)) {
+    feedback.className = 'feedback ok';
+    feedback.textContent = 'Đúng. ' + explain;
+    return;
   }
+  feedback.className = 'feedback bad';
+  const idx = item.type === 'mcq' ? item.choices.indexOf(value) : -1;
+  const note = idx >= 0 ? item.wrong_explain[String(idx)] : null;
+  feedback.textContent = (note ? note + ' ' : '') + 'Lời giải: ' + explain;
 }
 
-// Cập nhật điểm ngay sau mỗi lần chấm. Đếm theo phản hồi đang hiển thị.
-function updateScore(lesson) {
+// Hiển thị kết quả toàn bài và khóa mọi câu. Dùng cho cả lần nộp vừa xong và lần mở lại.
+function applySubmitted(lesson, state) {
+  lesson.items.forEach((item) => {
+    const q = document.querySelector(`.question[data-id="${item.id}"]`);
+    if (!q) return;
+    showResult(item, q.querySelector('.feedback'), state.answers[item.id]);
+    lockQuestion(q);
+  });
+  document.getElementById('btn-submit').disabled = true;
+  updateScore(lesson, state);
+}
+
+// Nộp bài: đọc đáp án hiện tại, lưu, rồi chấm toàn bộ.
+function submitAll(lesson, state) {
+  if (state.submitted) return;
+  lesson.items.forEach((item) => {
+    const q = document.querySelector(`.question[data-id="${item.id}"]`);
+    state.answers[item.id] = q ? readAnswer(item, q) : null;
+  });
+  state.submitted = true;
+  saveState(state);
+  applySubmitted(lesson, state);
+}
+
+function updateScore(lesson, state) {
   const box = document.getElementById('score');
+  box.replaceChildren();
+
+  if (!state.submitted) {
+    const unanswered = lesson.items.filter((i) => {
+      const v = state.answers[i.id];
+      return v === null || v === undefined || v === '';
+    }).length;
+    box.append(el('span', { class: 'meta' },
+      `Còn ${unanswered} câu chưa trả lời. Bấm Kiểm tra toàn bài khi làm xong.`));
+    return;
+  }
+
   const byLevel = {};
   let total = 0;
   let correct = 0;
-  let unchecked = 0;
   for (const item of lesson.items) {
-    const level = item.level;
-    byLevel[level] = byLevel[level] || { total: 0, correct: 0 };
-    byLevel[level].total += 1;
+    byLevel[item.level] = byLevel[item.level] || { total: 0, correct: 0 };
+    byLevel[item.level].total += 1;
     total += 1;
-    // Đếm theo đúng những gì học sinh đang thấy: câu có phản hồi màu xanh là đúng.
-    const q = document.querySelector(`.question[data-id="${item.id}"]`);
-    const feedback = q && q.querySelector('.feedback');
-    if (!feedback || feedback.hidden) {
-      unchecked += 1;
-    } else if (feedback.classList.contains('ok')) {
-      byLevel[level].correct += 1;
+    if (isCorrect(item, state.answers[item.id])) {
+      byLevel[item.level].correct += 1;
       correct += 1;
     }
   }
-  box.replaceChildren();
   box.append(el('strong', {}, `Đúng ${correct}/${total} câu`));
-  if (unchecked > 0) {
-    box.append(el('span', { class: 'meta' }, `  · còn ${unchecked} câu chưa trả lời`));
-  }
   const levels = Object.entries(byLevel)
     .map(([level, r]) => `${level} ${r.correct}/${r.total}`)
     .join('  ·  ');
@@ -263,17 +269,24 @@ function renderHome(manifest) {
 async function openLesson(relPath) {
   try {
     const lesson = await window.vungBai.loadLesson(relPath);
-    PROGRESS_KEY = 'vungbai.v2.progress.' + relPath;
+    PROGRESS_KEY = 'vungbai.v3.progress.' + relPath;
     document.getElementById('breadcrumb').textContent =
       `Lớp ${lesson.grade} › ${lesson.subject === 'toan' ? 'Toán' : lesson.subject} › ${lesson.chapter}`;
     document.getElementById('lesson-title').textContent = lesson.lesson;
     document.getElementById('lesson-meta').textContent =
       `Sách: ${lesson.bookSeries} · ${lesson.items.length} câu luyện tập`;
-    const progress = loadProgress();
+
+    const state = loadState();
     renderTheory(lesson);
     renderExamples(lesson);
-    renderQuiz(lesson, progress);
-    updateScore(lesson);
+    renderQuiz(lesson, state);
+
+    const submit = document.getElementById('btn-submit');
+    submit.disabled = state.submitted;
+    submit.onclick = () => {
+      submitAll(lesson, state);
+    };
+    if (!state.submitted) updateScore(lesson, state);
 
     showOnly('lesson');
   } catch (err) {
