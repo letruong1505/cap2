@@ -68,23 +68,23 @@ function renderQuiz(lesson, progress) {
     q.append(el('div', { class: 'stem' }, `${idx + 1}. ${item.stem}`));
 
     const feedback = el('div', { class: 'feedback', hidden: 'hidden' });
+    // Chấm ngay khi học sinh chọn hoặc nhập xong đáp án.
+    const onAnswer = () => checkItem(item, q, feedback, progress, lesson);
 
     if (item.type === 'mcq') {
       item.choices.forEach((choice, ci) => {
         const label = el('label', { class: 'choice' });
         const input = el('input', { type: 'radio', name: item.id, value: String(ci) });
+        input.addEventListener('change', onAnswer);
         label.append(input, ' ', choice);
         q.append(label);
       });
     } else {
       const input = el('input', { type: 'text', 'aria-label': 'Đáp án' });
-      q.append(input);
+      input.addEventListener('change', onAnswer);
+      q.append(input, el('span', { class: 'meta' }, '  nhập xong nhấn Enter'));
     }
-
-    const check = el('button', { class: 'primary', type: 'button' }, 'Kiểm tra');
-    check.style.marginLeft = '8px';
-    check.addEventListener('click', () => checkItem(item, q, feedback, progress));
-    q.append(check, feedback);
+    q.append(feedback);
 
     const saved = progress[item.id];
     if (saved) {
@@ -124,12 +124,14 @@ function restoreAnswer(item, q, value) {
   }
 }
 
-function checkItem(item, q, feedback, progress) {
+function checkItem(item, q, feedback, progress, lesson) {
   const raw = readAnswer(item, q);
   if (raw === null) {
-    feedback.hidden = false;
-    feedback.className = 'feedback bad';
-    feedback.textContent = 'Bạn chưa chọn hoặc nhập đáp án.';
+    // Ô nhập bị xóa trắng: ẩn phản hồi và xóa đáp án đã lưu.
+    feedback.hidden = true;
+    delete progress[item.id];
+    saveProgress(progress);
+    updateScore(lesson);
     return;
   }
   // Lưu theo nội dung đáp án, không lưu vị trí phương án.
@@ -137,6 +139,7 @@ function checkItem(item, q, feedback, progress) {
   progress[item.id] = { value };
   saveProgress(progress);
   showFeedback(item, q, feedback, value);
+  updateScore(lesson);
 }
 
 function showFeedback(item, q, feedback, value) {
@@ -161,7 +164,8 @@ function showFeedback(item, q, feedback, value) {
   }
 }
 
-function showScore(lesson, progress) {
+// Cập nhật điểm ngay sau mỗi lần chấm. Đếm theo phản hồi đang hiển thị.
+function updateScore(lesson) {
   const box = document.getElementById('score');
   const byLevel = {};
   let total = 0;
@@ -183,16 +187,14 @@ function showScore(lesson, progress) {
     }
   }
   box.replaceChildren();
-  box.hidden = false;
   box.append(el('strong', {}, `Đúng ${correct}/${total} câu`));
   if (unchecked > 0) {
-    box.append(el('p', {}, `Còn ${unchecked} câu chưa bấm Kiểm tra.`));
+    box.append(el('span', { class: 'meta' }, `  · còn ${unchecked} câu chưa trả lời`));
   }
-  const list = el('ul');
-  for (const [level, r] of Object.entries(byLevel)) {
-    list.append(el('li', {}, `${level}: ${r.correct}/${r.total}`));
-  }
-  box.append(list);
+  const levels = Object.entries(byLevel)
+    .map(([level, r]) => `${level} ${r.correct}/${r.total}`)
+    .join('  ·  ');
+  box.append(el('div', { class: 'meta' }, levels));
 }
 
 function showOnly(id) {
@@ -222,7 +224,7 @@ function renderHome(manifest) {
             const btn = el('button', { class: 'link', type: 'button' }, lesson.title);
             // Đường dẫn trong manifest tính từ thư mục sản phẩm, còn bộ nạp tính từ content/.
             btn.addEventListener('click', () => openLesson('toan7/' + lesson.file));
-            li.append(btn, el('span', { class: 'meta' }, ` · trang ${lesson.bookPage}`));
+            li.append(btn);
           } else {
             li.append(el('span', { class: 'meta' }, `${lesson.title} · đang biên soạn`));
           }
@@ -245,16 +247,11 @@ async function openLesson(relPath) {
     document.getElementById('lesson-title').textContent = lesson.lesson;
     document.getElementById('lesson-meta').textContent =
       `Sách: ${lesson.bookSeries} · ${lesson.items.length} câu luyện tập`;
-    document.getElementById('score').hidden = true;
-
     const progress = loadProgress();
     renderTheory(lesson);
     renderExamples(lesson);
     renderQuiz(lesson, progress);
-
-    const btn = document.getElementById('btn-score');
-    btn.replaceWith(btn.cloneNode(true));
-    document.getElementById('btn-score').addEventListener('click', () => showScore(lesson, progress));
+    updateScore(lesson);
 
     showOnly('lesson');
   } catch (err) {
