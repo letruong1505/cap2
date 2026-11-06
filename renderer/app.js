@@ -2,7 +2,9 @@
 // Mọi nội dung từ file JSON được gán bằng textContent để tránh chèn mã HTML ngoài ý muốn.
 
 // Khóa lưu tiến độ được đặt khi mở bài, theo đường dẫn bài học.
+// Tiền tố v2: dữ liệu lưu theo kiểu cũ (vị trí phương án) sẽ không được đọc lại.
 let PROGRESS_KEY = null;
+const R = window.Rational;
 
 const el = (tag, attrs = {}, text) => {
   const node = document.createElement(tag);
@@ -85,7 +87,10 @@ function renderQuiz(lesson, progress) {
     q.append(check, feedback);
 
     const saved = progress[item.id];
-    if (saved) showFeedback(item, q, feedback, saved.chosen);
+    if (saved) {
+      restoreAnswer(item, q, saved.value);
+      showFeedback(item, q, feedback, saved.value);
+    }
 
     box.append(q);
   });
@@ -100,33 +105,58 @@ function readAnswer(item, q) {
   return text === '' ? null : text;
 }
 
-function isCorrect(item, chosen) {
-  if (chosen === null) return false;
-  if (item.type === 'mcq') return chosen === item.answer;
-  return String(chosen).replace(/\s+/g, '') === String(item.answer).replace(/\s+/g, '');
+// Đáp án được so theo giá trị (nội dung phương án hoặc số đã nhập), không theo vị trí.
+// Với câu điền, 2/4 và 1/2 là cùng một đáp án.
+function isCorrect(item, value) {
+  if (value === null || value === undefined) return false;
+  if (item.type === 'mcq') return value === item.choices[item.answer];
+  return R.sameValue(value, item.answer);
+}
+
+function restoreAnswer(item, q, value) {
+  if (value === null || value === undefined) return;
+  if (item.type === 'mcq') {
+    const idx = item.choices.indexOf(value);
+    const input = q.querySelector(`input[type="radio"][value="${idx}"]`);
+    if (input) input.checked = true;
+  } else {
+    q.querySelector('input[type="text"]').value = value;
+  }
 }
 
 function checkItem(item, q, feedback, progress) {
-  const chosen = readAnswer(item, q);
-  if (chosen === null) {
+  const raw = readAnswer(item, q);
+  if (raw === null) {
     feedback.hidden = false;
     feedback.className = 'feedback bad';
     feedback.textContent = 'Bạn chưa chọn hoặc nhập đáp án.';
     return;
   }
-  progress[item.id] = { chosen, correct: isCorrect(item, chosen) };
+  // Lưu theo nội dung đáp án, không lưu vị trí phương án.
+  const value = item.type === 'mcq' ? item.choices[raw] : raw;
+  progress[item.id] = { value };
   saveProgress(progress);
-  showFeedback(item, q, feedback, chosen);
+  showFeedback(item, q, feedback, value);
 }
 
-function showFeedback(item, q, feedback, chosen) {
-  const ok = isCorrect(item, chosen);
+function showFeedback(item, q, feedback, value) {
   feedback.hidden = false;
+  if (item.type === 'fill') {
+    try {
+      R.parse(value);
+    } catch {
+      feedback.className = 'feedback bad';
+      feedback.textContent = 'Hãy nhập dạng a/b hoặc số nguyên, ví dụ 5/12.';
+      return;
+    }
+  }
+  const ok = isCorrect(item, value);
   feedback.className = 'feedback ' + (ok ? 'ok' : 'bad');
   if (ok) {
     feedback.textContent = 'Đúng. ' + item.explain;
   } else {
-    const wrongNote = item.type === 'mcq' ? item.wrong_explain[String(chosen)] : null;
+    const idx = item.type === 'mcq' ? item.choices.indexOf(value) : -1;
+    const wrongNote = idx >= 0 ? item.wrong_explain[String(idx)] : null;
     feedback.textContent = (wrongNote ? wrongNote + ' ' : '') + 'Lời giải: ' + item.explain;
   }
 }
@@ -142,7 +172,8 @@ function showScore(lesson, progress) {
     byLevel[level].total += 1;
     total += 1;
     const saved = progress[item.id];
-    if (saved && saved.correct) {
+    // Tính lại từ đáp án đã lưu, không dùng cờ đúng/sai lưu từ trước.
+    if (saved && isCorrect(item, saved.value)) {
       byLevel[level].correct += 1;
       correct += 1;
     }
@@ -201,7 +232,7 @@ function renderHome(manifest) {
 async function openLesson(relPath) {
   try {
     const lesson = await window.vungBai.loadLesson(relPath);
-    PROGRESS_KEY = 'vungbai.progress.' + relPath;
+    PROGRESS_KEY = 'vungbai.v2.progress.' + relPath;
     document.getElementById('breadcrumb').textContent =
       `Lớp ${lesson.grade} › ${lesson.subject === 'toan' ? 'Toán' : lesson.subject} › ${lesson.chapter}`;
     document.getElementById('lesson-title').textContent = lesson.lesson;
