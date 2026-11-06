@@ -24,15 +24,16 @@ function shuffle(arr) {
   return a;
 }
 
-// Một lượt làm bài: thứ tự phương án mới cho mỗi câu trắc nghiệm, đáp án đang chọn, và trạng thái đã nộp.
+// Một lượt làm bài: thứ tự câu hỏi và thứ tự phương án mới, đáp án đang chọn, và trạng thái đã nộp.
 function newAttempt(lesson) {
+  const questions = shuffle(lesson.items.map((_, i) => i));
   const order = {};
   for (const item of lesson.items) {
     if (item.type === 'mcq') {
       order[item.id] = shuffle(item.choices.map((_, i) => i));
     }
   }
-  return { order, answers: {}, submitted: false };
+  return { questions, order, answers: {}, submitted: false };
 }
 
 function renderTheory(lesson) {
@@ -65,7 +66,8 @@ function renderQuiz(lesson, attempt) {
   const box = document.getElementById('quiz');
   box.replaceChildren();
 
-  lesson.items.forEach((item, idx) => {
+  attempt.questions.forEach((itemIndex, idx) => {
+    const item = lesson.items[itemIndex];
     const q = el('div', { class: 'question', 'data-id': item.id });
     q.append(el('span', { class: 'level' }, item.level));
     q.append(el('div', { class: 'stem' }, `${idx + 1}. ${item.stem}`));
