@@ -50,8 +50,14 @@
       "level": "Biết",
       "type": "mcq",
       "stem": "Cho hai đường thẳng a, b bị cắt bởi c. Nếu a ∥ b thì góc so le trong với góc 65° bằng bao nhiêu độ?",
+      "figure": "figures/so-le-65.svg",
       "expr": "65",
-      "choices": ["65", "115", "25", "75"],
+      "choices": [
+        "65",
+        "115",
+        "25",
+        "75"
+      ],
       "answer": 0,
       "explain": "Khi a ∥ b, hai góc so le trong bằng nhau nên góc so le trong với góc 65° bằng 65°.",
       "wrong_explain": {
@@ -65,6 +71,7 @@
       "level": "Biết",
       "type": "fill",
       "stem": "Cho a ∥ b. Một góc trong cùng phía với góc 118° có số đo bằng bao nhiêu độ?",
+      "figure": "figures/trong-cung-phia-118.svg",
       "expr": "180 - 118",
       "answer": "62",
       "explain": "Khi a ∥ b, hai góc trong cùng phía bù nhau nên góc còn lại bằng 180° − 118° = 62°."
@@ -74,6 +81,7 @@
       "level": "Biết",
       "type": "fill",
       "stem": "Cho a ∥ b. Góc so le trong với góc 35° có số đo bằng bao nhiêu độ?",
+      "figure": "figures/so-le-35.svg",
       "expr": "35",
       "answer": "35",
       "explain": "Khi a ∥ b, hai góc so le trong bằng nhau nên góc so le trong với góc 35° bằng 35°."
@@ -83,6 +91,7 @@
       "level": "Hiểu",
       "type": "fill",
       "stem": "Hai góc trong cùng phía có số đo lần lượt là 4x và 2x + 30° (x tính bằng độ). Để a ∥ b thì x bằng bao nhiêu?",
+      "figure": "figures/trong-cung-phia-4x.svg",
       "expr": "(180-30)/6",
       "answer": "25",
       "explain": "Để a ∥ b, hai góc này bù nhau: 4x + 2x + 30 = 180, suy ra 6x = 150, x = 25."
@@ -92,6 +101,7 @@
       "level": "Hiểu",
       "type": "fill",
       "stem": "Hai góc trong cùng phía có số đo lần lượt là 3x + 10° và 2x − 10°. Để a ∥ b thì x bằng bao nhiêu?",
+      "figure": "figures/trong-cung-phia-3x.svg",
       "expr": "180/5",
       "answer": "36",
       "explain": "Để a ∥ b, hai góc này bù nhau: 3x + 10 + 2x − 10 = 180, suy ra 5x = 180, x = 36."
@@ -101,6 +111,7 @@
       "level": "Vận dụng",
       "type": "fill",
       "stem": "Hai góc so le trong có số đo lần lượt là 5x − 30° và 2x + 60° (x tính bằng độ). Để a ∥ b thì x bằng bao nhiêu?",
+      "figure": "figures/so-le-5x.svg",
       "expr": "90/3",
       "answer": "30",
       "explain": "Để a ∥ b, hai góc so le trong bằng nhau: 5x − 30 = 2x + 60, suy ra 3x = 90, x = 30."

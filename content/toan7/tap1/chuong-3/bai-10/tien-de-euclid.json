@@ -50,8 +50,14 @@
       "level": "Biết",
       "type": "mcq",
       "stem": "Qua điểm M nằm ngoài đường thẳng d, có bao nhiêu đường thẳng đi qua M và song song với d?",
+      "figure": "figures/diem-ngoai-duong-thang.svg",
       "expr": "1",
-      "choices": ["0", "1", "2", "3"],
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
       "answer": 1,
       "explain": "Theo tiên đề Euclid, qua M chỉ vẽ được đúng một đường thẳng song song với d.",
       "wrong_explain": {
@@ -65,6 +71,7 @@
       "level": "Biết",
       "type": "fill",
       "stem": "Cho a ∥ b và một góc so le trong bằng 57°. Góc đồng vị với góc đó bằng bao nhiêu độ?",
+      "figure": "figures/so-le-57-dong-vi.svg",
       "expr": "57",
       "answer": "57",
       "explain": "Khi a ∥ b, góc so le trong bằng góc đồng vị, nên góc đồng vị cũng là 57°."
@@ -74,6 +81,7 @@
       "level": "Biết",
       "type": "fill",
       "stem": "Cho a ∥ b, một góc trong cùng phía bằng 124°. Góc trong cùng phía còn lại bằng bao nhiêu độ?",
+      "figure": "figures/trong-cung-phia-124.svg",
       "expr": "180 - 124",
       "answer": "56",
       "explain": "Hai góc trong cùng phía bù nhau nên góc còn lại là 180° − 124° = 56°."
@@ -83,6 +91,7 @@
       "level": "Hiểu",
       "type": "fill",
       "stem": "Cho a ∥ b cắt đường thẳng c. Hai góc so le trong có số đo 5x và 2x + 42° (x tính bằng độ). Tìm x.",
+      "figure": "figures/so-le-5x-2x42.svg",
       "expr": "42/3",
       "answer": "14",
       "explain": "Hai góc so le trong bằng nhau: 5x = 2x + 42, suy ra 3x = 42, x = 14."
@@ -92,8 +101,14 @@
       "level": "Hiểu",
       "type": "mcq",
       "stem": "Cho a ∥ b và đường thẳng c cắt a. Góc tạo bởi a và c bằng 110°. Góc đồng vị với góc này ở đường b bằng bao nhiêu độ?",
+      "figure": "figures/dong-vi-110.svg",
       "expr": "110",
-      "choices": ["110", "70", "180", "55"],
+      "choices": [
+        "110",
+        "70",
+        "180",
+        "55"
+      ],
       "answer": 0,
       "explain": "Khi a ∥ b, góc đồng vị bằng nhau nên góc tương ứng ở b cũng bằng 110°.",
       "wrong_explain": {
@@ -107,6 +122,7 @@
       "level": "Vận dụng",
       "type": "fill",
       "stem": "Cho a ∥ b. Hai góc trong cùng phía có số đo lần lượt là 4x − 10° và 2x + 10° (x tính bằng độ). Tìm x.",
+      "figure": "figures/trong-cung-phia-4x-10.svg",
       "expr": "180/6",
       "answer": "30",
       "explain": "Hai góc trong cùng phía bù nhau: 4x − 10 + 2x + 10 = 180, suy ra 6x = 180, x = 30."

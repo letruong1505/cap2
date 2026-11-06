@@ -70,7 +70,12 @@
       "type": "mcq",
       "stem": "Trong biểu đồ hình quạt tròn, tổng tỉ lệ phần trăm của tất cả các hình quạt bằng bao nhiêu?",
       "expr": "100",
-      "choices": ["100", "360", "180", "50"],
+      "choices": [
+        "100",
+        "360",
+        "180",
+        "50"
+      ],
       "answer": 0,
       "explain": "Hình tròn biểu diễn toàn bộ dữ liệu, nên tổng tỉ lệ các hình quạt là 100%.",
       "wrong_explain": {
@@ -93,8 +98,14 @@
       "level": "Hiểu",
       "type": "mcq",
       "stem": "Một khảo sát có 200 học sinh. Trong biểu đồ, hình quạt môn Bơi lội có góc ở tâm 54°. Số học sinh chọn Bơi lội là bao nhiêu?",
+      "figure": "figures/quat-boi-loi.svg",
       "expr": "30",
-      "choices": ["30", "15", "54", "108"],
+      "choices": [
+        "30",
+        "15",
+        "54",
+        "108"
+      ],
       "answer": 0,
       "explain": "Tỉ lệ = 54 : 3,6 = 15%. Số học sinh = 15% × 200 = 30 học sinh.",
       "wrong_explain": {
@@ -108,6 +119,7 @@
       "level": "Vận dụng",
       "type": "fill",
       "stem": "Biểu đồ hình quạt có ba phần A, B, C. Phần A chiếm 45%, phần B chiếm 35%. Góc ở tâm của phần C bằng bao nhiêu độ?",
+      "figure": "figures/quat-A-B-C.svg",
       "expr": "(100 - 45 - 35)*3,6",
       "answer": "72",
       "explain": "Phần C chiếm 100% − 45% − 35% = 20%. Góc ở tâm = 20 × 3,6° = 72°."

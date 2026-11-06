@@ -88,6 +88,13 @@ function renderQuiz(lesson, attempt) {
     }
     const q = el('div', { class: 'question', 'data-id': item.id });
     q.append(el('div', { class: 'stem' }, `${idx + 1}. ${item.stem}`));
+    if (item.figureSvg) {
+      q.append(el('img', {
+        class: 'figure',
+        alt: `Hình minh họa câu ${idx + 1}`,
+        src: 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(item.figureSvg),
+      }));
+    }
 
     // Chỉ ghi nhận lựa chọn, không hiện đúng sai khi chọn.
     if (item.type === 'mcq') {

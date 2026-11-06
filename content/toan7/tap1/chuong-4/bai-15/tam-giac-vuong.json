@@ -46,6 +46,7 @@
       "level": "Biết",
       "type": "fill",
       "stem": "Hai tam giác vuông có cạnh huyền bằng nhau và một góc nhọn của tam giác thứ nhất bằng 35°. Tính góc nhọn còn lại của tam giác này (độ).",
+      "figure": "figures/vuong-35.svg",
       "expr": "90 - 35",
       "answer": "55",
       "explain": "Trong tam giác vuông, hai góc nhọn phụ nhau: 90° − 35° = 55°."
@@ -55,8 +56,14 @@
       "level": "Biết",
       "type": "mcq",
       "stem": "Tam giác vuông DEF có góc D = 90°, góc E = 30°. Góc F bằng bao nhiêu độ?",
+      "figure": "figures/vuong-30-def.svg",
       "expr": "60",
-      "choices": ["60", "30", "120", "150"],
+      "choices": [
+        "60",
+        "30",
+        "120",
+        "150"
+      ],
       "answer": 0,
       "explain": "Hai góc nhọn E và F phụ nhau nên F = 90° − 30° = 60°.",
       "wrong_explain": {
@@ -70,6 +77,7 @@
       "level": "Hiểu",
       "type": "fill",
       "stem": "Tam giác vuông DEF có góc D = 90° và góc E gấp đôi góc F. Tính góc E (độ).",
+      "figure": "figures/vuong-E-gap-F.svg",
       "expr": "2*90/3",
       "answer": "60",
       "explain": "E + F = 90° và E = 2F, nên 3F = 90°, F = 30°, E = 60°."
@@ -79,8 +87,14 @@
       "level": "Hiểu",
       "type": "mcq",
       "stem": "Một tam giác vuông cân có một góc nhọn bằng bao nhiêu độ?",
+      "figure": "figures/vuong-can.svg",
       "expr": "45",
-      "choices": ["45", "90", "30", "60"],
+      "choices": [
+        "45",
+        "90",
+        "30",
+        "60"
+      ],
       "answer": 0,
       "explain": "Tam giác vuông cân có hai góc nhọn bằng nhau và phụ nhau, nên mỗi góc nhọn bằng 45°.",
       "wrong_explain": {
@@ -94,6 +108,7 @@
       "level": "Vận dụng",
       "type": "fill",
       "stem": "Hai tam giác vuông ABC và DEF (A = D = 90°) có AB = DE, góc B = 40° và ΔABC = ΔDEF. Góc E bằng bao nhiêu độ?",
+      "figure": "figures/hai-vuong-bang-nhau.svg",
       "expr": "40",
       "answer": "40",
       "explain": "Hai tam giác bằng nhau nên góc E tương ứng với góc B, do đó E = 40°."
@@ -103,6 +118,7 @@
       "level": "Vận dụng",
       "type": "fill",
       "stem": "Hai tam giác vuông ABC và DEF có góc A = D = 90°, cạnh huyền BC = EF, góc B = 65°. Góc E bằng bao nhiêu độ, nếu ΔABC = ΔDEF?",
+      "figure": "figures/hai-vuong-65.svg",
       "expr": "65",
       "answer": "65",
       "explain": "Hai tam giác bằng nhau nên góc E tương ứng với góc B, E = 65°."

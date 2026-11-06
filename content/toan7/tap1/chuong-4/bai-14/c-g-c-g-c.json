@@ -50,6 +50,7 @@
       "level": "Biết",
       "type": "fill",
       "stem": "ΔABC = ΔDEF theo c.g.c với A ↔ D, B ↔ E, C ↔ F. Biết BC = 5 cm. Tính EF (cm).",
+      "figure": "figures/cgc-bc-5.svg",
       "expr": "5",
       "answer": "5",
       "explain": "EF là cạnh tương ứng với BC nên EF = 5 cm."
@@ -59,6 +60,7 @@
       "level": "Biết",
       "type": "fill",
       "stem": "ΔABC = ΔMNP theo c.g.c với A ↔ M, B ↔ N, C ↔ P. Biết góc B = 48°. Góc N bằng bao nhiêu độ?",
+      "figure": "figures/goc-48.svg",
       "expr": "48",
       "answer": "48",
       "explain": "Góc B và góc N là hai góc tương ứng nên bằng nhau: N = 48°."
@@ -68,8 +70,14 @@
       "level": "Hiểu",
       "type": "mcq",
       "stem": "ΔABC = ΔDEF theo g.c.g với B ↔ E, C ↔ F. Biết góc B = 40° và góc C = 70°. Góc F bằng bao nhiêu độ?",
+      "figure": "figures/gcg-40-70.svg",
       "expr": "70",
-      "choices": ["70", "40", "110", "60"],
+      "choices": [
+        "70",
+        "40",
+        "110",
+        "60"
+      ],
       "answer": 0,
       "explain": "Góc C và góc F là hai góc tương ứng nên bằng nhau: F = 70°.",
       "wrong_explain": {
@@ -83,6 +91,7 @@
       "level": "Hiểu",
       "type": "fill",
       "stem": "ΔABC = ΔDEF theo c.g.c với AB = DE. Biết AB = 3x − 1 cm và DE = 2x + 4 cm. Tìm x.",
+      "figure": "figures/cgc-3x-1.svg",
       "expr": "5",
       "answer": "5",
       "explain": "AB và DE là cạnh tương ứng nên bằng nhau: 3x − 1 = 2x + 4, suy ra x = 5."
@@ -92,6 +101,7 @@
       "level": "Vận dụng",
       "type": "fill",
       "stem": "ΔABC = ΔDEF theo g.c.g với B ↔ E. Biết góc B = 3x + 5° và góc E = 2x + 25° (x tính bằng độ). Tìm x.",
+      "figure": "figures/gcg-3x5.svg",
       "expr": "20",
       "answer": "20",
       "explain": "Góc B và góc E tương ứng nên bằng nhau: 3x + 5 = 2x + 25, suy ra x = 20."

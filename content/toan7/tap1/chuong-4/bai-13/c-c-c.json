@@ -46,6 +46,7 @@
       "level": "Biết",
       "type": "fill",
       "stem": "ΔABC = ΔDEF với A ↔ D, B ↔ E, C ↔ F. Biết AB = 4 cm, BC = 6 cm, CA = 5 cm. Chu vi ΔDEF bằng bao nhiêu cm?",
+      "figure": "figures/ccc-4-6-5.svg",
       "expr": "4 + 6 + 5",
       "answer": "15",
       "explain": "Hai tam giác bằng nhau nên các cạnh tương ứng bằng nhau. Chu vi ΔDEF = DE + EF + FD = 4 + 6 + 5 = 15 cm."
@@ -55,8 +56,14 @@
       "level": "Biết",
       "type": "mcq",
       "stem": "ΔABC = ΔMNP với A ↔ M, B ↔ N, C ↔ P. Nếu góc A = 70° thì góc M bằng bao nhiêu độ?",
+      "figure": "figures/cc-goc-70.svg",
       "expr": "70",
-      "choices": ["70", "110", "20", "35"],
+      "choices": [
+        "70",
+        "110",
+        "20",
+        "35"
+      ],
       "answer": 0,
       "explain": "Góc A và góc M là hai góc tương ứng nên bằng nhau: M = 70°.",
       "wrong_explain": {
@@ -70,6 +77,7 @@
       "level": "Biết",
       "type": "fill",
       "stem": "ΔABC = ΔDEF với A ↔ D, B ↔ E, C ↔ F. Biết EF = 8 cm, AC = 5 cm, AB = 6 cm. Tính BC (cm).",
+      "figure": "figures/ccc-6-5-8.svg",
       "expr": "8",
       "answer": "8",
       "explain": "BC và EF là hai cạnh tương ứng (B ↔ E, C ↔ F) nên BC = EF = 8 cm."
@@ -79,6 +87,7 @@
       "level": "Hiểu",
       "type": "fill",
       "stem": "ΔABC và ΔDEF có AB = DE, BC = EF, CA = FD. Biết AB = 5 cm, BC = 9 cm, CA = 7 cm. Tính chu vi ΔDEF (cm).",
+      "figure": "figures/ccc-5-9-7.svg",
       "expr": "5 + 9 + 7",
       "answer": "21",
       "explain": "Theo trường hợp c.c.c, hai tam giác bằng nhau nên DE = 5, EF = 9, FD = 7. Chu vi ΔDEF = 5 + 9 + 7 = 21 cm."
@@ -88,6 +97,7 @@
       "level": "Vận dụng",
       "type": "fill",
       "stem": "ΔABC = ΔDEF với A ↔ D. Biết góc A = 2x + 10° và góc D = 4x − 30° (x tính bằng độ). Tìm x.",
+      "figure": "figures/goc-2x10-4x30.svg",
       "expr": "40/2",
       "answer": "20",
       "explain": "Góc A và góc D tương ứng nên bằng nhau: 2x + 10 = 4x − 30, suy ra 2x = 40, x = 20."
@@ -97,6 +107,7 @@
       "level": "Vận dụng",
       "type": "fill",
       "stem": "ΔABC = ΔDEF với A ↔ D, B ↔ E. Biết AB = 2x − 1 cm và DE = x + 5 cm. Tìm x.",
+      "figure": "figures/canh-2x1-x5.svg",
       "expr": "6",
       "answer": "6",
       "explain": "AB và DE là hai cạnh tương ứng nên bằng nhau: 2x − 1 = x + 5, suy ra x = 6."

@@ -51,6 +51,7 @@
       "level": "Biết",
       "type": "fill",
       "stem": "Định lí: nếu hai góc kề bù thì tổng số đo bằng 180°. Cho hai góc kề bù, một góc 135°. Góc còn lại bằng bao nhiêu độ?",
+      "figure": "figures/ke-bu-135.svg",
       "expr": "180 - 135",
       "answer": "45",
       "explain": "Theo định lí, góc còn lại là 180° − 135° = 45°."
@@ -60,8 +61,14 @@
       "level": "Biết",
       "type": "mcq",
       "stem": "Cho định lí: nếu a ∥ b và c ⊥ a thì c ⊥ b. Khi đó góc giữa c và b bằng bao nhiêu độ?",
+      "figure": "figures/vuong-goc-song-song.svg",
       "expr": "90",
-      "choices": ["90", "45", "180", "0"],
+      "choices": [
+        "90",
+        "45",
+        "180",
+        "0"
+      ],
       "answer": 0,
       "explain": "Giả thiết cho c ⊥ a và a ∥ b. Theo định lí, c ⊥ b nên góc giữa c và b bằng 90°.",
       "wrong_explain": {
@@ -75,6 +82,7 @@
       "level": "Hiểu",
       "type": "fill",
       "stem": "Định lí: nếu hai đường thẳng song song bị cắt bởi một đường thẳng thì hai góc so le trong bằng nhau. Cho a ∥ b, một góc so le trong bằng 64°. Góc so le trong còn lại bằng bao nhiêu độ?",
+      "figure": "figures/so-le-64.svg",
       "expr": "64",
       "answer": "64",
       "explain": "Theo định lí, hai góc so le trong bằng nhau nên góc còn lại cũng bằng 64°."
@@ -84,6 +92,7 @@
       "level": "Hiểu",
       "type": "fill",
       "stem": "Cho a ∥ b. Hai góc trong cùng phía có số đo 2x và x + 60° (x tính bằng độ). Tìm x.",
+      "figure": "figures/trong-cung-phia-2x.svg",
       "expr": "120/3",
       "answer": "40",
       "explain": "Hai góc trong cùng phía bù nhau: 2x + x + 60 = 180, suy ra 3x = 120, x = 40."
@@ -93,6 +102,7 @@
       "level": "Vận dụng",
       "type": "fill",
       "stem": "Cho định lí: nếu một đường thẳng cắt hai đường thẳng song song thì các góc đồng vị bằng nhau. Cho a ∥ b, góc đồng vị thứ nhất là 3x và góc đồng vị thứ hai là 6x − 60° (x tính bằng độ). Tìm x.",
+      "figure": "figures/dong-vi-3x.svg",
       "expr": "60/3",
       "answer": "20",
       "explain": "Theo định lí, hai góc đồng vị bằng nhau: 3x = 6x − 60, suy ra 3x = 60, x = 20."

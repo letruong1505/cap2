@@ -56,7 +56,12 @@
       "type": "mcq",
       "stem": "Số đối của −2,5 là:",
       "expr": "2,5",
-      "choices": ["2,5", "-2,5", "1/2", "-1/2"],
+      "choices": [
+        "2,5",
+        "-2,5",
+        "1/2",
+        "-1/2"
+      ],
       "answer": 0,
       "explain": "Số đối của −2,5 là −(−2,5) = 2,5.",
       "wrong_explain": {
@@ -80,7 +85,12 @@
       "type": "mcq",
       "stem": "Số nào lớn nhất trong các số −1/2, −2/3, −2/5, −3/4?",
       "expr": "-2/5",
-      "choices": ["-1/2", "-2/3", "-2/5", "-3/4"],
+      "choices": [
+        "-1/2",
+        "-2/3",
+        "-2/5",
+        "-3/4"
+      ],
       "answer": 2,
       "explain": "Các số âm, số có giá trị tuyệt đối nhỏ hơn thì lớn hơn. Trong bốn số, |−2/5| = 2/5 là nhỏ nhất, nên −2/5 lớn nhất.",
       "wrong_explain": {
@@ -94,8 +104,14 @@
       "level": "Biết",
       "type": "mcq",
       "stem": "Số nào nằm giữa −1 và 0 trên trục số?",
+      "figure": "figures/truc-so-giua-1-0.svg",
       "expr": "-1/2",
-      "choices": ["-3/2", "-1/2", "1/2", "-2"],
+      "choices": [
+        "-3/2",
+        "-1/2",
+        "1/2",
+        "-2"
+      ],
       "answer": 1,
       "explain": "−1 < −1/2 < 0 nên −1/2 nằm giữa −1 và 0.",
       "wrong_explain": {
@@ -128,7 +144,12 @@
       "type": "mcq",
       "stem": "Tổng tất cả các số nguyên x thỏa mãn |x| < 3 là:",
       "expr": "0",
-      "choices": ["0", "-3", "3", "-2"],
+      "choices": [
+        "0",
+        "-3",
+        "3",
+        "-2"
+      ],
       "answer": 0,
       "explain": "|x| < 3 khi x ∈ {−2; −1; 0; 1; 2}. Tổng là (−2) + (−1) + 0 + 1 + 2 = 0.",
       "wrong_explain": {

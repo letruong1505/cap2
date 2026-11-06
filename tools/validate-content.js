@@ -42,6 +42,14 @@ function validateLesson(lesson, relPath) {
     ids.add(item.id);
     if (!LEVELS.includes(item.level)) errs.push(`${tag}: mức độ không hợp lệ (${item.level})`);
     if (!item.explain) errs.push(`${tag}: thiếu lời giải`);
+    if (item.figure) {
+      const rel = String(item.figure);
+      if (rel.includes('..') || path.isAbsolute(rel)) {
+        errs.push(`${tag}: đường dẫn hình không hợp lệ (${rel})`);
+      } else if (!fs.existsSync(path.join(CONTENT_DIR, 'toan7', rel))) {
+        errs.push(`${tag}: không tìm thấy hình ${rel}`);
+      }
+    }
 
     if (item.type === 'mcq') {
       if (!Array.isArray(item.choices) || item.choices.length < 2) {

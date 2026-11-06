@@ -50,8 +50,14 @@
       "level": "Biết",
       "type": "mcq",
       "stem": "Hai góc kề bù, một góc bằng 70°. Góc còn lại bằng bao nhiêu độ?",
+      "figure": "figures/ke-bu-70.svg",
       "expr": "110",
-      "choices": ["110", "70", "180", "20"],
+      "choices": [
+        "110",
+        "70",
+        "180",
+        "20"
+      ],
       "answer": 0,
       "explain": "Hai góc kề bù có tổng 180°, nên góc còn lại là 180° − 70° = 110°.",
       "wrong_explain": {
@@ -65,6 +71,7 @@
       "level": "Biết",
       "type": "fill",
       "stem": "Hai góc đối đỉnh, một góc bằng 38°. Góc đối đỉnh với nó bằng bao nhiêu độ?",
+      "figure": "figures/doi-dinh-38.svg",
       "expr": "38",
       "answer": "38",
       "explain": "Hai góc đối đỉnh thì bằng nhau, nên góc còn lại cũng bằng 38°."
@@ -83,8 +90,14 @@
       "level": "Hiểu",
       "type": "mcq",
       "stem": "Oz là tia phân giác của góc xOy, biết góc xOy = 84°. Số đo góc xOz là bao nhiêu độ?",
+      "figure": "figures/phan-giac-84.svg",
       "expr": "42",
-      "choices": ["42", "84", "168", "21"],
+      "choices": [
+        "42",
+        "84",
+        "168",
+        "21"
+      ],
       "answer": 0,
       "explain": "Oz là tia phân giác nên góc xOz = 84° : 2 = 42°.",
       "wrong_explain": {
@@ -98,6 +111,7 @@
       "level": "Hiểu",
       "type": "fill",
       "stem": "Góc xOy bằng 126°. Tia Oz nằm giữa Ox và Oy sao cho góc xOz gấp đôi góc zOy. Tính số đo góc xOz (độ).",
+      "figure": "figures/phan-giac-126.svg",
       "expr": "126*2/3",
       "answer": "84",
       "explain": "Đặt góc zOy = a thì góc xOz = 2a và 2a + a = 126°, suy ra a = 42°. Vậy góc xOz = 84°."
@@ -116,8 +130,14 @@
       "level": "Vận dụng",
       "type": "mcq",
       "stem": "Hai đường thẳng xx' và yy' cắt nhau tại O, góc xOy = 58°. Số đo góc x'Oy' là bao nhiêu độ?",
+      "figure": "figures/doi-dinh-58.svg",
       "expr": "58",
-      "choices": ["58", "122", "32", "180"],
+      "choices": [
+        "58",
+        "122",
+        "32",
+        "180"
+      ],
       "answer": 0,
       "explain": "Góc x'Oy' và góc xOy là hai góc đối đỉnh nên bằng nhau: x'Oy' = 58°.",
       "wrong_explain": {

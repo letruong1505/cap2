@@ -51,6 +51,7 @@
       "level": "Biết",
       "type": "fill",
       "stem": "Tam giác ABC có góc A = 40° và góc B = 75°. Tính góc C (độ).",
+      "figure": "figures/tam-giac-40-75.svg",
       "expr": "180 - 40 - 75",
       "answer": "65",
       "explain": "Tổng ba góc bằng 180° nên C = 180° − 40° − 75° = 65°."
@@ -60,8 +61,14 @@
       "level": "Biết",
       "type": "mcq",
       "stem": "Tam giác ABC vuông tại A, góc B = 35°. Góc C bằng bao nhiêu độ?",
+      "figure": "figures/tam-giac-vuong-35.svg",
       "expr": "55",
-      "choices": ["55", "35", "145", "90"],
+      "choices": [
+        "55",
+        "35",
+        "145",
+        "90"
+      ],
       "answer": 0,
       "explain": "Trong tam giác vuông, hai góc nhọn phụ nhau: C = 90° − 35° = 55°.",
       "wrong_explain": {
@@ -84,8 +91,14 @@
       "level": "Hiểu",
       "type": "mcq",
       "stem": "Góc ngoài tại đỉnh A của tam giác ABC bằng 130°, góc B = 50°. Góc C bằng bao nhiêu độ?",
+      "figure": "figures/ngoai-130-tai-A.svg",
       "expr": "80",
-      "choices": ["80", "130", "50", "180"],
+      "choices": [
+        "80",
+        "130",
+        "50",
+        "180"
+      ],
       "answer": 0,
       "explain": "Góc ngoài tại A bằng B + C, nên C = 130° − 50° = 80°.",
       "wrong_explain": {
@@ -99,6 +112,7 @@
       "level": "Hiểu",
       "type": "fill",
       "stem": "Tam giác ABC có A = 2x, B = 3x, C = 4x (x tính bằng độ). Tìm x.",
+      "figure": "figures/ti-le-2x-3x-4x.svg",
       "expr": "180/9",
       "answer": "20",
       "explain": "Tổng ba góc bằng 180°: 2x + 3x + 4x = 180, suy ra 9x = 180, x = 20."
@@ -108,6 +122,7 @@
       "level": "Vận dụng",
       "type": "fill",
       "stem": "Góc ngoài tại đỉnh B của tam giác ABC bằng 130°, góc A = 70°. Tính góc C (độ).",
+      "figure": "figures/ngoai-130-tai-B.svg",
       "expr": "130 - 70",
       "answer": "60",
       "explain": "Góc ngoài tại B bằng A + C, nên C = 130° − 70° = 60°."
@@ -117,8 +132,14 @@
       "level": "Vận dụng",
       "type": "mcq",
       "stem": "Tam giác ABC vuông tại A, góc B gấp đôi góc C. Góc B bằng bao nhiêu độ?",
+      "figure": "figures/vuong-tai-A-B-2C.svg",
       "expr": "60",
-      "choices": ["60", "30", "120", "90"],
+      "choices": [
+        "60",
+        "30",
+        "120",
+        "90"
+      ],
       "answer": 0,
       "explain": "B + C = 90° và B = 2C, nên 3C = 90°, C = 30°, B = 60°.",
       "wrong_explain": {

@@ -55,7 +55,12 @@
       "type": "mcq",
       "stem": "Căn bậc hai số học của 81 là:",
       "expr": "9",
-      "choices": ["9", "-9", "81", "8,1"],
+      "choices": [
+        "9",
+        "-9",
+        "81",
+        "8,1"
+      ],
       "answer": 0,
       "explain": "Vì 9² = 81 và 9 ≥ 0 nên √81 = 9.",
       "wrong_explain": {
@@ -97,7 +102,12 @@
       "type": "mcq",
       "stem": "Với a = −4, giá trị của √(a²) là:",
       "expr": "4",
-      "choices": ["-4", "4", "16", "-16"],
+      "choices": [
+        "-4",
+        "4",
+        "16",
+        "-16"
+      ],
       "answer": 1,
       "explain": "a² = (−4)² = 16 nên √(a²) = √16 = 4. Đây cũng chính là |a| = 4.",
       "wrong_explain": {
@@ -112,7 +122,12 @@
       "type": "mcq",
       "stem": "Giá trị của √(9/25) là:",
       "expr": "3/5",
-      "choices": ["3/5", "9/25", "3/25", "5/3"],
+      "choices": [
+        "3/5",
+        "9/25",
+        "3/25",
+        "5/3"
+      ],
       "answer": 0,
       "explain": "Vì (3/5)² = 9/25 và 3/5 ≥ 0 nên √(9/25) = 3/5.",
       "wrong_explain": {
@@ -135,8 +150,14 @@
       "level": "Vận dụng",
       "type": "mcq",
       "stem": "Một hình vuông có diện tích 2,25 m². Cạnh của hình vuông dài bao nhiêu mét?",
+      "figure": "figures/hinh-vuong-2-25.svg",
       "expr": "1,5",
-      "choices": ["1,125", "1,5", "4,5", "0,5"],
+      "choices": [
+        "1,125",
+        "1,5",
+        "4,5",
+        "0,5"
+      ],
       "answer": 1,
       "explain": "Cạnh a thỏa mãn a² = 2,25 với a > 0, nên a = √2,25 = 1,5 m.",
       "wrong_explain": {

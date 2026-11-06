@@ -37,8 +37,17 @@ function loadManifest(product) {
   return readJson(path.join(product, 'manifest.json'));
 }
 
+// Đọc nội dung SVG của hình minh họa và gắn vào câu hỏi (figureSvg), để giao diện không cần quyền đọc file.
+function attachFigures(lesson) {
+  for (const item of lesson.items) {
+    if (!item.figure) continue;
+    item.figureSvg = fs.readFileSync(safeResolve(path.join('toan7', item.figure)), 'utf8');
+  }
+  return lesson;
+}
+
 function loadLesson(relPath) {
-  return checkLesson(readJson(relPath), relPath);
+  return attachFigures(checkLesson(readJson(relPath), relPath));
 }
 
 module.exports = { loadManifest, loadLesson, safeResolve };
