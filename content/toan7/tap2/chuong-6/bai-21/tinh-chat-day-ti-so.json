@@ -1,0 +1,115 @@
+{
+  "id": "t7-tap2-tinh-chat-day-ti-so",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 2",
+  "chapter": "Chương VI. Tỉ lệ thức và đại lượng tỉ lệ",
+  "lesson": "Bài 21. Tính chất của dãy tỉ số bằng nhau",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Từ dãy tỉ số bằng nhau a/b = c/d, ta có: a/b = c/d = (a + c)/(b + d) = (a − c)/(b − d) (với b + d và b − d khác 0)."
+    },
+    {
+      "type": "formula",
+      "content": "a/b = c/d = e/f = (a + c + e)/(b + d + f)"
+    },
+    {
+      "type": "text",
+      "content": "Khi giải bài toán chia tỉ lệ, đặt tỉ số chung bằng k rồi tính từng đại lượng theo k."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tìm x biết x/2 = y/3 và x + y = 10.",
+      "expr": "10*2/5",
+      "steps": [
+        "x/2 = y/3 = (x+y)/(2+3) = 10/5 = 2, suy ra x = 2 · 2 = 4."
+      ],
+      "answer": "4"
+    },
+    {
+      "problem": "Tìm ba số a, b, c tỉ lệ với 2, 3, 5 và a + b + c = 20.",
+      "expr": "20*3/10",
+      "steps": [
+        "a/2 = b/3 = c/5 = 20/10 = 2, suy ra b = 3 · 2 = 6."
+      ],
+      "answer": "6"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tìm x biết x/2 = y/3 và x + y = 10. Tính x.",
+      "expr": "10*2/5",
+      "answer": "4",
+      "explain": "x/2 = (x+y)/(2+3) = 2, suy ra x = 4."
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tìm x biết x/2 = y/3 và x + y = 10. Tính y.",
+      "expr": "10*3/5",
+      "answer": "6",
+      "explain": "y = 3 · 2 = 6."
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho a/2 = b/5 = c/7 và a + b + c = 28. Tìm b.",
+      "expr": "28*5/14",
+      "answer": "10",
+      "explain": "Tỉ số chung 28 : 14 = 2, b = 5 · 2 = 10."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho x/3 = y/4 và x − y = −5. Tìm x.",
+      "expr": "15",
+      "answer": "15",
+      "explain": "x = 3k, y = 4k nên x − y = −k = −5, suy ra k = 5, x = 15."
+    },
+    {
+      "id": "q05",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ba lớp 7A, 7B, 7C có tổng 40 học sinh, số học sinh tỉ lệ với 3, 4, 5. Tính số học sinh lớp 7A.",
+      "expr": "40*3/12",
+      "answer": "10",
+      "explain": "Tổng tỉ là 3 + 4 + 5 = 12; 7A có 40 · 3/12 = 10 học sinh."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Các số a, b, c tỉ lệ với 1, 2, 3 và a + b + c = 36. Tính c.",
+      "expr": "36*3/6",
+      "answer": "18",
+      "explain": "Tổng tỉ là 6; c = 3 · 36/6 = 18."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho a/b = c/d = 2/3 và b + d = 15. Tính a + c.",
+      "expr": "15*2/3",
+      "answer": "10",
+      "explain": "a + c = (a+c)/(b+d) · (b+d) = (2/3) · 15 = 10."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm hai số dương x, y biết x/2 = y/5 và x · y = 40. Tính x.",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Đặt x/2 = y/5 = k thì x = 2k, y = 5k. Khi đó x · y = 10k² = 40, nên k² = 4. Vì x, y dương nên k = 2, suy ra x = 4 (và y = 10)."
+    }
+  ]
+}

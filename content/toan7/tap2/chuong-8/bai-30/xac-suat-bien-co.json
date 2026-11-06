@@ -1,0 +1,137 @@
+{
+  "id": "t7-tap2-xac-suat-bien-co",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 2",
+  "chapter": "Chương VIII. Làm quen với biến cố và xác suất của biến cố",
+  "lesson": "Bài 30. Làm quen với xác suất của biến cố",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Xác suất của một biến cố là một số đo khả năng xảy ra của biến cố đó. Xác suất nhận giá trị từ 0 đến 1."
+    },
+    {
+      "type": "formula",
+      "content": "Biến cố chắc chắn có xác suất bằng 1. Biến cố không thể có xác suất bằng 0."
+    },
+    {
+      "type": "text",
+      "content": "Nếu có k biến cố đồng khả năng và luôn xảy ra một và chỉ một biến cố trong k biến cố đó thì xác suất của mỗi biến cố đều bằng 1/k."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t2-lt-vong-quay-4.svg",
+      "caption": "Vòng quay chia thành 4 phần bằng nhau tô 4 màu khác nhau. Bốn biến cố \"kim dừng ở màu đỏ\", \"…màu xanh\", \"…màu vàng\", \"…màu tím\" đồng khả năng và luôn xảy ra đúng một biến cố, nên mỗi biến cố có xác suất 1/4."
+    },
+    {
+      "type": "text",
+      "content": "Ví dụ: gieo một con xúc xắc cân đối, sáu biến cố \"xuất hiện mặt 1 chấm\", \"xuất hiện mặt 2 chấm\", …, \"xuất hiện mặt 6 chấm\" đồng khả năng và luôn xảy ra đúng một biến cố, nên mỗi biến cố có xác suất 1/6."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Gieo một con xúc xắc cân đối. Tính xác suất của biến cố \"xuất hiện mặt 6 chấm\".",
+      "expr": "1/6",
+      "steps": [
+        "Sáu biến cố \"xuất hiện mặt 1 chấm\", …, \"xuất hiện mặt 6 chấm\" đồng khả năng.",
+        "Mỗi lần gieo luôn xảy ra một và chỉ một trong sáu biến cố đó, nên mỗi biến cố có xác suất 1/6."
+      ],
+      "answer": "1/6"
+    },
+    {
+      "problem": "Bạn An chọn ngẫu nhiên một ngày trong tuần để đi bơi. Tính xác suất An chọn ngày Chủ nhật.",
+      "expr": "1/7",
+      "steps": [
+        "Bảy biến cố \"chọn thứ Hai\", …, \"chọn Chủ nhật\" đồng khả năng.",
+        "Luôn xảy ra một và chỉ một trong bảy biến cố đó, nên xác suất chọn Chủ nhật là 1/7."
+      ],
+      "answer": "1/7"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Gieo một con xúc xắc cân đối. Tính xác suất của biến cố \"xuất hiện mặt 3 chấm\".",
+      "expr": "1/6",
+      "answer": "1/6",
+      "explain": "Sáu mặt đồng khả năng và mỗi lần gieo xuất hiện đúng một mặt, nên xác suất là 1/6."
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Xác suất của biến cố chắc chắn bằng bao nhiêu?",
+      "expr": "1",
+      "answer": "1",
+      "explain": "Biến cố chắc chắn luôn xảy ra nên có xác suất bằng 1."
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Xác suất của biến cố không thể bằng bao nhiêu?",
+      "expr": "0",
+      "answer": "0",
+      "explain": "Biến cố không thể không bao giờ xảy ra nên có xác suất bằng 0."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tung một đồng xu cân đối. Tính xác suất của biến cố \"đồng xu xuất hiện mặt sấp\".",
+      "expr": "1/2",
+      "answer": "1/2",
+      "explain": "Hai biến cố \"mặt sấp\" và \"mặt ngửa\" đồng khả năng và luôn xảy ra đúng một biến cố, nên mỗi biến cố có xác suất 1/2."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một hộp có 5 quả bóng cùng kích thước, mỗi quả một màu: xanh, đỏ, tím, vàng, trắng. Lấy ngẫu nhiên một quả. Tính xác suất lấy được quả bóng đỏ.",
+      "expr": "1/5",
+      "answer": "1/5",
+      "explain": "Năm biến cố \"lấy được quả xanh\", \"lấy được quả đỏ\", … đồng khả năng và luôn xảy ra đúng một biến cố, nên xác suất lấy được quả đỏ là 1/5."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một lớp có số bạn nam bằng số bạn nữ. Cô giáo gọi ngẫu nhiên một bạn. Tính xác suất của biến cố \"bạn được gọi là nữ\".",
+      "expr": "1/2",
+      "answer": "1/2",
+      "explain": "Số nam bằng số nữ nên hai biến cố \"gọi được bạn nam\" và \"gọi được bạn nữ\" đồng khả năng; luôn xảy ra đúng một trong hai biến cố, nên xác suất là 1/2."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Gieo một con xúc xắc cân đối. Tính xác suất của biến cố \"số chấm xuất hiện là số chẵn\".",
+      "expr": "1/2",
+      "answer": "1/2",
+      "explain": "Có 3 mặt chẵn (2, 4, 6) và 3 mặt lẻ (1, 3, 5) nên hai biến cố \"số chấm chẵn\" và \"số chấm lẻ\" đồng khả năng; luôn xảy ra đúng một trong hai biến cố, nên xác suất là 1/2."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Số nào sau đây có thể là xác suất của một biến cố?",
+      "choices": [
+        "2/5",
+        "3/2",
+        "−1/4",
+        "5/4"
+      ],
+      "answer": 0,
+      "explain": "Xác suất nhận giá trị từ 0 đến 1, và 0 ≤ 2/5 ≤ 1.",
+      "wrong_explain": {
+        "1": "3/2 > 1 nên không thể là xác suất.",
+        "2": "−1/4 < 0 nên không thể là xác suất.",
+        "3": "5/4 > 1 nên không thể là xác suất."
+      }
+    }
+  ]
+}

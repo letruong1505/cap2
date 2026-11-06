@@ -1,0 +1,115 @@
+{
+  "id": "t7-tap2-nhan-da-thuc",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 2",
+  "chapter": "Chương VII. Biểu thức đại số và đa thức một biến",
+  "lesson": "Bài 27. Phép nhân đa thức một biến",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Để nhân hai đa thức một biến, ta nhân mỗi hạng tử của đa thức này với mỗi hạng tử của đa thức kia rồi thu gọn các hạng tử cùng bậc."
+    },
+    {
+      "type": "formula",
+      "content": "Ví dụ: (x + 2)(x − 1) = x² − x + 2x − 2 = x² + x − 2."
+    },
+    {
+      "type": "text",
+      "content": "Bậc của tích hai đa thức bằng tổng bậc của hai đa thức đó (khi các đa thức khác 0)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính giá trị của (x + 2)(x − 1) khi x = 3.",
+      "expr": "(3+2)*(3-1)",
+      "steps": [
+        "Thay x = 3: (3 + 2)(3 − 1) = 5 · 2 = 10."
+      ],
+      "answer": "10"
+    },
+    {
+      "problem": "Tính giá trị của (x − 1)(x² + x + 1) khi x = 3.",
+      "expr": "(3-1)*(3*3+3+1)",
+      "steps": [
+        "Thay x = 3: (2)(9 + 3 + 1) = 2 · 13 = 26."
+      ],
+      "answer": "26"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính (x + 3)(x + 1) tại x = 2.",
+      "expr": "(2+3)*(2+1)",
+      "answer": "15",
+      "explain": "(5)(3) = 15."
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Bậc của tích (x² + 1)(x + 2) là bao nhiêu?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Bậc 2 + bậc 1 = 3."
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính 3x · (2x − 1) tại x = 2.",
+      "expr": "3*2*(2*2-1)",
+      "answer": "18",
+      "explain": "6 · 3 = 18."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính hệ số của x² trong (2x − 1)(x + 3).",
+      "expr": "2",
+      "answer": "2",
+      "explain": "(2x − 1)(x + 3) = 2x² + 5x − 3, hệ số của x² là 2."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính hệ số tự do của (x − 4)(x + 2).",
+      "expr": "-4*2",
+      "answer": "-8",
+      "explain": "Hệ số tự do = (−4)(2) = −8."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính giá trị của (2x + 1)(x − 2) tại x = −1.",
+      "expr": "(2*(-1)+1)*((-1)-2)",
+      "answer": "3",
+      "explain": "(−1)(−3) = 3."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Diện tích hình chữ nhật có các kích thước (x + 2) và (x + 5). Tính diện tích khi x = 1.",
+      "expr": "(1+2)*(1+5)",
+      "answer": "18",
+      "explain": "3 · 6 = 18."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đa thức (x + 2)(x + 3) có hệ số của x là bao nhiêu?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "(x + 2)(x + 3) = x² + 5x + 6, hệ số của x là 5."
+    }
+  ]
+}

@@ -82,11 +82,11 @@
       "id": "q02",
       "level": "Biết",
       "type": "fill",
-      "stem": "Cho a ∥ b và một góc so le trong bằng 57°. Góc đồng vị với góc đó bằng bao nhiêu độ?",
+      "stem": "Cho a ∥ b. Đường thẳng c cắt a và b; góc tạo bởi c và a ở phía dưới a, bên trái c bằng 57°. Góc đồng vị với góc này (ở đường b) bằng bao nhiêu độ?",
       "figure": "figures/so-le-57-dong-vi.svg",
       "expr": "57",
       "answer": "57",
-      "explain": "Khi a ∥ b, góc so le trong bằng góc đồng vị, nên góc đồng vị cũng là 57°."
+      "explain": "Khi a ∥ b, hai góc đồng vị bằng nhau nên góc đồng vị với góc 57° cũng bằng 57°."
     },
     {
       "id": "q03",
@@ -138,6 +138,42 @@
       "expr": "180/6",
       "answer": "30",
       "explain": "Hai góc trong cùng phía bù nhau: 4x − 10 + 2x + 10 = 180, suy ra 6x = 180, x = 30."
+    },
+    {
+      "id": "q07",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Qua điểm M nằm ngoài đường thẳng d, có bao nhiêu đường thẳng song song với d?",
+      "expr": "1",
+      "answer": "1",
+      "explain": "Theo tiên đề Euclid, chỉ có duy nhất một đường thẳng."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho a ∥ b, một góc đồng vị bằng 115°. Góc trong cùng phía tương ứng bằng bao nhiêu độ?",
+      "expr": "180-115",
+      "answer": "65",
+      "explain": "Hai góc trong cùng phía bù nhau: 180° − 115° = 65°."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho a ∥ b, hai góc so le trong là 2x và 3x − 15 (độ). Tìm góc 2x.",
+      "expr": "2*15",
+      "answer": "30",
+      "explain": "2x = 3x − 15 nên x = 15; góc 2x = 30°."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho a ∥ b, hai góc trong cùng phía là 5x và 3x + 20 (độ). Tìm x.",
+      "expr": "160/8",
+      "answer": "20",
+      "explain": "5x + 3x + 20 = 180, 8x = 160, x = 20."
     }
   ]
 }

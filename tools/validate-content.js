@@ -34,7 +34,28 @@ function checkFigurePath(figure, tag) {
   return [];
 }
 
+function validateReview(lesson, relPath) {
+  const errs = [];
+  const where = relPath;
+  if (!lesson.id) errs.push('thiếu id');
+  if (!Array.isArray(lesson.questions) || lesson.questions.length !== 20) {
+    errs.push(`cần đúng 20 câu tự luận (hiện có ${(lesson.questions || []).length})`);
+  }
+  const ids = new Set();
+  for (const q of lesson.questions || []) {
+    const tag = `câu ${q.id}`;
+    if (ids.has(q.id)) errs.push(`${tag}: trùng mã câu`);
+    ids.add(q.id);
+    if (!q.stem) errs.push(`${tag}: thiếu đề bài`);
+    if (!Array.isArray(q.steps) || q.steps.length === 0) errs.push(`${tag}: thiếu hướng dẫn giải`);
+    if (!q.answer) errs.push(`${tag}: thiếu đáp số`);
+    if (q.figure) errs.push(...checkFigurePath(q.figure, tag));
+  }
+  return errs.map((e) => `${where}: ${e}`);
+}
+
 function validateLesson(lesson, relPath) {
+  if (lesson.kind === 'review') return validateReview(lesson, relPath);
   const errs = [];
   const where = relPath;
   if (!lesson.id) errs.push('thiếu id');
@@ -75,6 +96,13 @@ function validateLesson(lesson, relPath) {
         const note = item.wrong_explain && item.wrong_explain[String(ci)];
         if (!note) errs.push(`${tag}: thiếu giải thích cho phương án ${ci}`);
       });
+      // Câu khái niệm (phân loại biến cố, chọn cạnh lớn nhất…): không có giá trị số để tính lại.
+      // Bắt buộc có giải thích cho mọi phương án sai (đã kiểm ở trên) và các phương án không trùng nhau.
+      if (item.concept === true) {
+        if (item.expr) errs.push(`${tag}: câu khái niệm không được có expr`);
+        if (new Set(item.choices).size !== item.choices.length) errs.push(`${tag}: có phương án trùng nhau`);
+        continue;
+      }
       // Đáp án khóa phải đúng theo tính toán, và không phương án nhiễu nào trùng giá trị đúng.
       const before = errs.length;
       errs.push(...checkExpr(item.expr, item.choices[item.answer], tag));
@@ -104,6 +132,7 @@ function main() {
   const problems = [];
   let lessonCount = 0;
   let checkedCount = 0;
+  let conceptCount = 0;
 
   for (const book of manifest.books) {
     for (const chapter of book.chapters) {
@@ -117,6 +146,7 @@ function main() {
         }
         const data = JSON.parse(fs.readFileSync(full, 'utf8'));
         checkedCount += (data.items || []).filter((i) => i.expr).length;
+        conceptCount += (data.items || []).filter((i) => i.concept === true).length;
         problems.push(...validateLesson(data, lesson.file));
       }
     }
@@ -127,7 +157,8 @@ function main() {
     problems.forEach((p) => console.error('  - ' + p));
     process.exit(1);
   }
-  console.log(`Đạt: ${lessonCount} bài, ${checkedCount} câu có đáp án đã được tính lại và khớp.`);
+  console.log(`Đạt: ${lessonCount} bài, ${checkedCount} câu có đáp án đã được tính lại và khớp, `
+    + `${conceptCount} câu trắc nghiệm khái niệm có đủ giải thích cho phương án sai.`);
 }
 
 main();

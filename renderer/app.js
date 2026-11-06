@@ -267,7 +267,7 @@ function renderHome(manifest) {
           if (lesson.file) {
             const btn = el('button', { class: 'link', type: 'button' }, lesson.title);
             // Đường dẫn trong manifest tính từ thư mục sản phẩm, còn bộ nạp tính từ content/.
-            btn.addEventListener('click', () => openLesson('toan7/' + lesson.file));
+            btn.addEventListener('click', () => openLesson('toan7/' + lesson.file, lesson.mode || 'practice'));
             li.append(btn);
           } else {
             li.append(el('span', { class: 'meta' }, `${lesson.title} · đang biên soạn`));
@@ -282,16 +282,71 @@ function renderHome(manifest) {
   showOnly('home');
 }
 
+// Chế độ hiển thị: luyện tập (có lý thuyết và chấm điểm), ôn tập tự luận, hoặc hướng dẫn giải.
+function setSections(mode) {
+  const practice = mode === 'practice';
+  document.getElementById('sec-theory').hidden = !practice;
+  document.getElementById('sec-examples').hidden = !practice;
+  document.getElementById('score').hidden = !practice;
+  document.getElementById('sec-actions').hidden = !practice;
+  document.getElementById('quiz-heading').textContent = {
+    practice: 'Luyện tập',
+    review: 'Câu hỏi ôn tập tự luận',
+    solutions: 'Hướng dẫn giải',
+  }[mode];
+}
+
+// Ôn tập tự luận: chỉ hiện đề; ở chế độ hướng dẫn giải thì hiện thêm các bước và đáp số.
+function renderEssays(lesson, mode) {
+  const box = document.getElementById('quiz');
+  box.replaceChildren();
+  lesson.questions.forEach((q, idx) => {
+    const card = el('div', { class: 'question essay', 'data-id': q.id });
+    card.append(el('div', { class: 'stem' }, `${idx + 1}. ${q.stem}`));
+    if (q.figureSvg) {
+      card.append(el('img', {
+        class: 'figure',
+        alt: `Hình minh họa câu ${idx + 1}`,
+        src: figureSrc(q.figureSvg),
+      }));
+    }
+    if (mode === 'solutions') {
+      const steps = el('ol');
+      q.steps.forEach((s) => steps.append(el('li', {}, s)));
+      card.append(steps);
+      card.append(el('p', { class: 'answer' }, `Đáp số: ${q.answer}`));
+    }
+    box.append(card);
+  });
+}
+
 // Mỗi lần mở bài là một lượt làm mới (không khôi phục kết quả cũ).
-async function openLesson(relPath) {
+async function openLesson(relPath, mode = 'practice') {
   try {
     const lesson = await window.vungBai.loadLesson(relPath);
     document.getElementById('breadcrumb').textContent =
       `Lớp ${lesson.grade} › ${lesson.subject === 'toan' ? 'Toán' : lesson.subject} › ${lesson.chapter}`;
+
+    if (lesson.kind === 'review') {
+      const view = mode === 'solutions' ? 'solutions' : 'review';
+      document.getElementById('lesson-title').textContent = lesson.title;
+      document.getElementById('lesson-meta').textContent =
+        view === 'solutions'
+          ? `Hướng dẫn giải · ${lesson.questions.length} câu tự luận`
+          : `Sách: ${lesson.bookSeries} · ${lesson.questions.length} câu tự luận (không chấm điểm)`;
+      setSections(view);
+      document.getElementById('theory').replaceChildren();
+      document.getElementById('examples').replaceChildren();
+      renderEssays(lesson, view);
+      showOnly('lesson');
+      return;
+    }
+
     document.getElementById('lesson-title').textContent = lesson.lesson;
     document.getElementById('lesson-meta').textContent =
       `Sách: ${lesson.bookSeries} · ${lesson.items.length} câu luyện tập`;
 
+    setSections('practice');
     const attempt = newAttempt(lesson);
     renderTheory(lesson);
     renderExamples(lesson);

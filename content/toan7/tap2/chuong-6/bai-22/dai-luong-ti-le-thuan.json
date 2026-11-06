@@ -1,0 +1,115 @@
+{
+  "id": "t7-tap2-dai-luong-ti-le-thuan",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 2",
+  "chapter": "Chương VI. Tỉ lệ thức và đại lượng tỉ lệ",
+  "lesson": "Bài 22. Đại lượng tỉ lệ thuận",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hai đại lượng y và x tỉ lệ thuận với nhau nếu y = k · x với k là hằng số khác 0, gọi là hệ số tỉ lệ."
+    },
+    {
+      "type": "formula",
+      "content": "y = k · x  ⇔  y/x = k (x ≠ 0)"
+    },
+    {
+      "type": "text",
+      "content": "Nếu y tỉ lệ thuận với x thì tỉ số giữa hai giá trị bất kì của y bằng tỉ số giữa hai giá trị tương ứng của x: y1/y2 = x1/x2."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Biết y tỉ lệ thuận với x, khi x = 3 thì y = 12. Tìm y khi x = 5.",
+      "expr": "12*5/3",
+      "steps": [
+        "k = 12 : 3 = 4, y = 4 · 5 = 20."
+      ],
+      "answer": "20"
+    },
+    {
+      "problem": "Biết x tỉ lệ thuận với y theo hệ số 3/4. Khi y = 8 thì x bằng bao nhiêu?",
+      "expr": "3*8/4",
+      "steps": [
+        "x = (3/4) · 8 = 6."
+      ],
+      "answer": "6"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Đại lượng y tỉ lệ thuận với x; khi x = 2 thì y = 6. Hệ số tỉ lệ k bằng bao nhiêu?",
+      "expr": "6/2",
+      "answer": "3",
+      "explain": "k = y/x = 6/2 = 3."
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cho y = 5x. Khi x = 4 thì y bằng bao nhiêu?",
+      "expr": "5*4",
+      "answer": "20",
+      "explain": "y = 5 · 4 = 20."
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Đại lượng y tỉ lệ thuận với x, khi x = −2 thì y = 6. Khi x = 3 thì y bằng bao nhiêu?",
+      "expr": "-(6*3/2)",
+      "answer": "-9",
+      "explain": "k = 6 : (−2) = −3, y = −3 · 3 = −9."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "x tỉ lệ thuận với z; khi z = 3 thì x = 12. Khi z = 7 thì x bằng bao nhiêu?",
+      "expr": "12*7/3",
+      "answer": "28",
+      "explain": "k = 12 : 3 = 4, x = 4 · 7 = 28."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ô tô đi với vận tốc không đổi, quãng đường tỉ lệ thuận với thời gian. Sau 3 giờ đi được 150 km. Sau 5 giờ đi được bao nhiêu km?",
+      "expr": "150*5/3",
+      "answer": "250",
+      "explain": "Vận tốc 150 : 3 = 50 km/h; quãng đường 50 · 5 = 250 km."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mua 4 kg táo giá 120 000 đồng. Mua 7 kg táo cùng loại giá bao nhiêu đồng?",
+      "expr": "120000*7/4",
+      "answer": "210000",
+      "explain": "Số tiền tỉ lệ thuận với khối lượng: 120000 : 4 · 7 = 210000 đồng."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai đại lượng x, y tỉ lệ thuận; x1 = 2, y1 = 5 và x2 = 6. Tìm y2.",
+      "expr": "5*6/2",
+      "answer": "15",
+      "explain": "y2 = y1 · x2 / x1 = 5 · 6 / 2 = 15."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đại lượng y tỉ lệ thuận với x theo hệ số k = −4. Khi x = 2,5 thì y bằng bao nhiêu?",
+      "expr": "-4*2,5",
+      "answer": "-10",
+      "explain": "y = −4 · 2,5 = −10."
+    }
+  ]
+}

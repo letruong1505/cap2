@@ -7,6 +7,7 @@
 import json
 import math
 import os
+import re
 from collections import OrderedDict
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
@@ -57,7 +58,11 @@ class Fig:
         self.parts.append(s)
 
     def text(self, x, y, s, anchor="middle", size=20, weight='normal', fill='#1d2733'):
-        self.pt((x, y))
+        # Ghi nhận cả bề rộng ước lượng của chữ để khung hình không cắt mất chữ.
+        w = 0.58 * size * len(s)
+        left = {'start': x, 'end': x - w}.get(anchor, x - w / 2)
+        self.pt((left, y - 0.8 * size))
+        self.pt((left + w, y + 0.25 * size))
         self.add(f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{anchor}" font-size="{size}" '
                  f'font-weight="{weight}" fill="{fill}">{s}</text>')
 
@@ -141,41 +146,56 @@ def fig_doi_dinh(theta, label_xy, label_opp):
 
 def fig_phan_giac(total, labels):
     # Tia Ox ở 0°, Oy ở total°, Oz ở giữa (phân giác khi bằng nửa).
+    # Cung lớn (bán kính 118) đánh dấu cả góc xOy, nhãn đặt ngay ngoài cung; tia Oz ngắn hơn để không cắt cung lớn.
     fig = Fig()
-    O = (200, 170)
+    O = (200, 200)
     z = total * labels.get('z_frac', 0.5)
-    rays(fig, O, [('x', 0), ('y', total)])
-    rays(fig, O, [('z', z)], length=90)
+    rays(fig, O, [('x', 0), ('y', total)], length=150)
+    rays(fig, O, [('z', z)], length=80)
     fig.dot(O)
     fig.label(add(O, (0, 1), 18), 'O')
-    arc(fig, O, 0, total, '', r=48, text_r=72)
-    # Nhãn số đo cả góc đặt ngoài cùng, theo hướng giữa góc, tách khỏi tia Oz.
-    fig.label(add(O, dirv(total / 2), 150), labels['total'])
-    arc(fig, O, 0, z, labels['xz'], r=30, text_r=60)
-    arc(fig, O, z, total, labels['zy'], r=30, text_r=60)
+    arc(fig, O, 0, total, labels['total'], r=118, text_r=140)
+    arc(fig, O, 0, z, labels['xz'], r=34, text_r=58)
+    arc(fig, O, z, total, labels['zy'], r=40, text_r=62)
     return fig.svg()
 
 
 # ---------- Hai đường thẳng cắt cát tuyến (bài 9, 10, 11) ----------
 
-def fig_transversal(labels, slant=True, right=False):
+def fig_transversal(labels, slant=True, right=False, lr=None):
     # Hai đường a, b song song (nằm ngang), đường c cắt cả hai.
     # Góc ở giao điểm A (trên) và B (dưới): UL, UR (phía trên đường), LL, LR (phía dưới đường).
+    # lr là số đo góc LR (giữa tia sang phải và tia c đi xuống); khi đó UL = lr, LL = UR = 180° − lr.
+    # Nếu không truyền lr, lấy từ nhãn số đo đầu tiên để hình vẽ đúng độ lớn góc đã ghi.
     fig = Fig()
-    if slant:
-        P0, P1 = (150, 20), (260, 240)
-    else:
-        P0, P1 = (200, 20), (200, 240)
+    if not slant:
+        lr = 90
+    if lr is None:
+        for key, txt in labels.items():
+            m = re.fullmatch(r'(\d+)°', txt)
+            if m:
+                v = int(m.group(1))
+                lr = v if key.split('_')[1] in ('LR', 'UL') else 180 - v
+                break
+    if lr is None:
+        lr = 63
+    t0 = math.radians(lr)
+    d = (math.cos(t0), math.sin(t0))
+    M = (200.0, 130.0)
+    L = 110 / d[1]
+    P0, P1 = (M[0] - d[0] * L, M[1] - d[1] * L), (M[0] + d[0] * L, M[1] + d[1] * L)
 
     def xat(y):
         return P0[0] + (y - P0[1]) * (P1[0] - P0[0]) / (P1[1] - P0[1])
 
     A = (xat(70), 70)
     B = (xat(190), 190)
-    fig.line((40, 70), (330, 70))
-    fig.line((40, 190), (330, 190))
-    fig.label((24, 70), 'a', anchor='middle')
-    fig.label((24, 190), 'b', anchor='middle')
+    x_lo = min(40, A[0] - 110, B[0] - 110)
+    x_hi = max(330, A[0] + 110, B[0] + 110)
+    fig.line((x_lo, 70), (x_hi, 70))
+    fig.line((x_lo, 190), (x_hi, 190))
+    fig.label((x_lo - 16, 70), 'a', anchor='middle')
+    fig.label((x_lo - 16, 190), 'b', anchor='middle')
     fig.line(P0, P1)
     fig.label((P0[0] + 14, P0[1] + 2), 'c', anchor='start')
     # Hướng đường c (theo toạ độ màn hình, y hướng xuống) và tâm của bốn miền quanh giao điểm.
@@ -191,6 +211,12 @@ def fig_transversal(labels, slant=True, right=False):
         need_h = 20 / max(abs(math.sin(t)), 1e-6)
         R = min(max(40, need_c, need_h), 130)
         fig.label((base[0] + R * math.cos(t), base[1] + R * math.sin(t)), txt)
+        if not right and not txt.isdigit():
+            # Cung nhỏ đánh dấu đúng góc mang nhãn (góc toán học, ngược chiều kim đồng hồ).
+            span = {'LR': (-lr, 0), 'UR': (0, 180 - lr), 'UL': (180 - lr, 180), 'LL': (180, 360 - lr)}[pos]
+            pa = add(base, dirv(span[0]), 18)
+            pb = add(base, dirv(span[1]), 18)
+            fig.path(f'M{P(pa)} A18 18 0 0 0 {P(pb)}', stroke='#1f4e79', width=1.5)
     if right:
         rightmark(fig, A, (-1, 0), (0, 1))
         rightmark(fig, B, (-1, 0), (0, 1))
@@ -235,12 +261,22 @@ def draw_tri(fig, P_, names, interior=None, exterior=None, sides=None, ticks=(),
     edges = [(n[0], n[1]), (n[1], n[2]), (n[2], n[0])]
     for x, y in edges:
         fig.line(P_[x], P_[y])
+    ext_vertices = {v for v in (exterior or {})}
     for v in n:
         V = P_[v]
-        fig.label(add(V, unit(sub(V, cen)), 22), v)
+        # Đỉnh có góc ngoài: đẩy tên đỉnh xa hơn để không bị nét đứt đè lên.
+        d = 38 if v in ext_vertices else 22
+        fig.label(add(V, unit(sub(V, cen)), d), v)
     for v, txt in (interior or {}).items():
         V = P_[v]
-        fig.label(add(V, unit(sub(cen, V)), 46), txt)
+        o1, o2 = [P_[x] for x in n if x != v]
+        e1, e2 = unit(sub(o1, V)), unit(sub(o2, V))
+        bis = unit((e1[0] + e2[0], e1[1] + e2[1]))
+        half = math.acos(max(-1.0, min(1.0, e1[0] * e2[0] + e1[1] * e2[1]))) / 2
+        # Góc càng hẹp thì nhãn càng phải xa đỉnh để không chạm hai cạnh.
+        half_w = (11 * len(txt) + 10) / 2
+        dist = min(max(42, (half_w + 6) / max(math.sin(half), 0.05)), 120)
+        fig.label(add(V, bis, dist), txt)
     for v, (txt, other) in (exterior or {}).items():
         third = [x for x in n if x not in (v, other)][0]
         e = unit(sub(P_[v], P_[other]))
@@ -251,7 +287,8 @@ def draw_tri(fig, P_, names, interior=None, exterior=None, sides=None, ticks=(),
     for (x, y), txt in (sides or {}).items():
         mid = ((P_[x][0] + P_[y][0]) / 2, (P_[x][1] + P_[y][1]) / 2)
         out = unit(sub(mid, cen))
-        fig.label(add(mid, out, 20), txt)
+        # Khoảng cách nhãn cạnh tăng theo độ dài chữ để không chạm cạnh.
+        fig.label(add(mid, out, 24 + 3 * len(txt)), txt)
     for x, y in ticks:
         mid = ((P_[x][0] + P_[y][0]) / 2, (P_[x][1] + P_[y][1]) / 2)
         d = unit(sub(P_[y], P_[x]))
@@ -323,7 +360,7 @@ def fig_perp_bisector():
     A, B, H = (60, 160), (300, 160), (180, 160)
     M = (180, 70)
     fig.line(A, B)
-    fig.line((180, 30), (180, 196), dash=True)
+    fig.line((180, 30), (180, 200), dash=True)
     fig.line(A, M)
     fig.line(B, M)
     rightmark(fig, H, (-1, 0), (0, -1))
@@ -338,7 +375,11 @@ def fig_perp_bisector():
     nl = math.hypot(nx, ny)
     fig.label((mx + 32 * nx / nl * -1, my + 32 * ny / nl * -1), '7,5 cm')
     fig.label(((B[0] + M[0]) / 2 + 26, (B[1] + M[1]) / 2 - 6), '?')
-    fig.label((H[0] - 60, H[1] + 56), '12 cm')
+    # Đường kích thước bên dưới AB cho độ dài cả đoạn AB.
+    fig.line((A[0], 220), (B[0], 220), color='#4a5563', width=1.2)
+    fig.line((A[0], 212), (A[0], 228), color='#4a5563', width=1.2)
+    fig.line((B[0], 212), (B[0], 228), color='#4a5563', width=1.2)
+    fig.label((H[0], 246), 'AB = 12 cm')
     return fig.svg()
 
 
@@ -434,24 +475,24 @@ def specs():
     add_fig(L, 'q01', 'so-le-65', fig_transversal({'A_LL': '65°', 'B_UR': '?'}))
     add_fig(L, 'q02', 'trong-cung-phia-118', fig_transversal({'A_LR': '118°', 'B_UR': '?'}))
     add_fig(L, 'q03', 'so-le-35', fig_transversal({'A_LL': '35°', 'B_UR': '?'}))
-    add_fig(L, 'q04', 'trong-cung-phia-4x', fig_transversal({'A_LR': '4x', 'B_UR': '2x+30°'}))
-    add_fig(L, 'q05', 'trong-cung-phia-3x', fig_transversal({'A_LR': '3x+10°', 'B_UR': '2x−10°'}))
-    add_fig(L, 'q06', 'so-le-5x', fig_transversal({'A_LL': '5x−30°', 'B_UR': '2x+60°'}))
+    add_fig(L, 'q04', 'trong-cung-phia-4x', fig_transversal({'A_LR': '4x', 'B_UR': '2x+30°'}, lr=100))
+    add_fig(L, 'q05', 'trong-cung-phia-3x', fig_transversal({'A_LR': '3x+10°', 'B_UR': '2x−10°'}, lr=118))
+    add_fig(L, 'q06', 'so-le-5x', fig_transversal({'A_LL': '5x−30°', 'B_UR': '2x+60°'}, lr=60))
 
     L = 'tap1/chuong-3/bai-10/tien-de-euclid.json'
     add_fig(L, 'q01', 'diem-ngoai-duong-thang', fig_point_line())
     add_fig(L, 'q02', 'so-le-57-dong-vi', fig_transversal({'A_LL': '57°', 'B_LL': '?'}))
     add_fig(L, 'q03', 'trong-cung-phia-124', fig_transversal({'A_LR': '124°', 'B_UR': '?'}))
-    add_fig(L, 'q04', 'so-le-5x-2x42', fig_transversal({'A_LL': '5x', 'B_UR': '2x+42°'}))
+    add_fig(L, 'q04', 'so-le-5x-2x42', fig_transversal({'A_LL': '5x', 'B_UR': '2x+42°'}, lr=110))
     add_fig(L, 'q05', 'dong-vi-110', fig_transversal({'A_LL': '110°', 'B_LL': '?'}))
-    add_fig(L, 'q06', 'trong-cung-phia-4x-10', fig_transversal({'A_LR': '4x−10°', 'B_UR': '2x+10°'}))
+    add_fig(L, 'q06', 'trong-cung-phia-4x-10', fig_transversal({'A_LR': '4x−10°', 'B_UR': '2x+10°'}, lr=110))
 
     L = 'tap1/chuong-3/bai-11/dinh-li.json'
     add_fig(L, 'q01', 'ke-bu-135', fig_ke_bu(135, '135°', '?'))
     add_fig(L, 'q02', 'vuong-goc-song-song', fig_transversal({'A_LL': '90°', 'B_LL': '?'}, slant=False, right=True))
     add_fig(L, 'q03', 'so-le-64', fig_transversal({'A_LL': '64°', 'B_UR': '?'}))
-    add_fig(L, 'q04', 'trong-cung-phia-2x', fig_transversal({'A_LR': '2x', 'B_UR': 'x+60°'}))
-    add_fig(L, 'q05', 'dong-vi-3x', fig_transversal({'A_LL': '3x', 'B_LL': '6x−60°'}))
+    add_fig(L, 'q04', 'trong-cung-phia-2x', fig_transversal({'A_LR': '2x', 'B_UR': 'x+60°'}, lr=80))
+    add_fig(L, 'q05', 'dong-vi-3x', fig_transversal({'A_LL': '3x', 'B_LL': '6x−60°'}, lr=120))
 
     # Chương IV
     L = 'tap1/chuong-4/bai-12/tong-goc-tam-giac.json'
@@ -467,7 +508,7 @@ def specs():
     add_fig(L, 'q06', 'ngoai-130-tai-B', fig_tri(shape_from_angles(70, 50), 'ABC',
                                                  interior={'A': '70°', 'C': '?'},
                                                  exterior={'B': ('130°', 'A')}))
-    add_fig(L, 'q07', 'vuong-tai-A-B-2C', fig_tri(shape_from_angles(90, 60), 'ABC',
+    add_fig(L, 'q07', 'vuong-tai-A-B-2C', fig_tri(shape_from_angles(90, 30, names=('A', 'C', 'B')), 'ABC',
                                                   interior={'B': '?', 'C': '?'}, right='A'))
 
     L = 'tap1/chuong-4/bai-13/c-c-c.json'
@@ -531,7 +572,7 @@ def specs():
                                           interior={'B': '35°', 'C': '?'}, right='A'))
     add_fig(L, 'q02', 'vuong-30-def', fig_tri(shape_from_angles(90, 30, names=('D', 'E', 'F')), 'DEF',
                                                interior={'E': '30°', 'F': '?'}, right='D'))
-    add_fig(L, 'q03', 'vuong-E-gap-F', fig_tri(shape_from_angles(90, 60, names=('D', 'E', 'F')), 'DEF',
+    add_fig(L, 'q03', 'vuong-E-gap-F', fig_tri(shape_from_angles(90, 30, names=('D', 'F', 'E')), 'DEF',
                                                interior={'E': '?', 'F': '?'}, right='D'))
     add_fig(L, 'q04', 'vuong-can', fig_tri(shape_from_angles(90, 45), 'ABC',
                                            interior={'B': '?', 'C': '?'}, right='A',
@@ -541,27 +582,27 @@ def specs():
         shape_from_angles(90, 40, names=('D', 'E', 'F'), ox=330), 'DEF',
         dict(interior={'B': '40°', 'C': '?'}, right='A'), dict(interior={'E': '?'}, right='D')))
     add_fig(L, 'q06', 'hai-vuong-65', fig_two_tri(
-        shape_from_angles(90, 65, names=('A', 'B', 'C')), 'ABC',
-        shape_from_angles(90, 65, names=('D', 'E', 'F'), ox=330), 'DEF',
+        shape_from_angles(90, 25, names=('A', 'C', 'B')), 'ABC',
+        shape_from_angles(90, 25, names=('D', 'F', 'E'), ox=330), 'DEF',
         dict(interior={'B': '65°'}, right='A'), dict(interior={'E': '?'}, right='D')))
 
     L = 'tap1/chuong-4/bai-16/tam-giac-can-trung-truc.json'
-    add_fig(L, 'q01', 'can-50', fig_tri(shape_from_angles(50, 65), 'ABC',
+    add_fig(L, 'q01', 'can-50', fig_tri(shape_from_angles(65, 65, names=('B', 'C', 'A')), 'ABC',
                                         interior={'A': '50°', 'B': '?', 'C': '?'},
                                         ticks=[('A', 'B'), ('A', 'C')]))
     add_fig(L, 'q02', 'deu', fig_tri(shape_from_angles(60, 60), 'ABC',
                                      interior={'A': '?', 'B': '?', 'C': '?'},
                                      ticks=[('A', 'B'), ('B', 'C'), ('C', 'A')]))
-    add_fig(L, 'q03', 'can-72', fig_tri(shape_from_angles(36, 72), 'ABC',
+    add_fig(L, 'q03', 'can-72', fig_tri(shape_from_angles(72, 72, names=('B', 'C', 'A'), base=200.0), 'ABC',
                                         interior={'A': '?', 'B': '72°', 'C': '72°'},
                                         ticks=[('A', 'B'), ('A', 'C')]))
-    add_fig(L, 'q04', 'can-b65', fig_tri(shape_from_angles(50, 65), 'ABC',
+    add_fig(L, 'q04', 'can-b65', fig_tri(shape_from_angles(65, 65, names=('B', 'C', 'A')), 'ABC',
                                          interior={'A': '?', 'B': '65°', 'C': '?'},
                                          ticks=[('A', 'B'), ('A', 'C')]))
-    add_fig(L, 'q05', 'can-2x1-3x4', fig_tri(shape_from_sides(8, 11, 11), 'ABC',
+    add_fig(L, 'q05', 'can-2x1-3x4', fig_tri(shape_from_sides(11, 11, 8, names=('B', 'C', 'A')), 'ABC',
                                              sides={('A', 'B'): '2x+1 cm', ('A', 'C'): '3x−4 cm'},
                                              ticks=[('A', 'B'), ('A', 'C')]))
-    add_fig(L, 'q06', 'can-ngoai-110', fig_tri(shape_from_angles(40, 70), 'ABC',
+    add_fig(L, 'q06', 'can-ngoai-110', fig_tri(shape_from_angles(70, 70, names=('B', 'C', 'A')), 'ABC',
                                                interior={'A': '?', 'C': '?'},
                                                exterior={'B': ('110°', 'A')},
                                                ticks=[('A', 'B'), ('A', 'C')]))
@@ -712,7 +753,7 @@ def theory_specs():
         shape_from_sides(6, 5, 4, names=('D', 'E', 'F'), ox=330), 'DEF',
         dict(sides={('A', 'B'): 'c', ('B', 'C'): 'a', ('C', 'A'): 'b'}),
         dict(sides={('D', 'E'): 'c', ('E', 'F'): 'a', ('F', 'D'): 'b'})),
-      'ΔABC và ΔDEF có ba cặp cạnh tương ứng bằng nhau: a = a′, b = b′, c = c′.')
+      'ΔABC và ΔDEF có ba cặp cạnh tương ứng bằng nhau: AB = DE (cùng kí hiệu c), BC = EF (a), CA = FD (b).')
 
     L = 'tap1/chuong-4/bai-14/c-g-c-g-c.json'
     t(L, 1, 'lt-cgc', fig_two_tri(
@@ -735,7 +776,7 @@ def theory_specs():
       'Tam giác vuông: hai góc nhọn phụ nhau; cạnh đối diện góc vuông là cạnh huyền.')
 
     L = 'tap1/chuong-4/bai-16/tam-giac-can-trung-truc.json'
-    t(L, 0, 'lt-tam-giac-can', fig_tri(shape_from_angles(40, 70), 'ABC',
+    t(L, 0, 'lt-tam-giac-can', fig_tri(shape_from_angles(70, 70, names=('B', 'C', 'A')), 'ABC',
                                      interior={'B': 'góc đáy', 'C': 'góc đáy'},
                                      sides={('A', 'B'): 'cạnh bên', ('A', 'C'): 'cạnh bên', ('B', 'C'): 'cạnh đáy'},
                                      ticks=[('A', 'B'), ('A', 'C')]),
@@ -809,10 +850,10 @@ def example_specs():
         shape_from_angles(90, 40, names=('D', 'E', 'F'), ox=330), 'DEF',
         dict(interior={'B': '40°', 'C': '?'}, right='A'), dict(interior={'E': '?'}, right='D')))
     L = 'tap1/chuong-4/bai-16/tam-giac-can-trung-truc.json'
-    e(L, 0, 'vd-can-40', fig_tri(shape_from_angles(40, 70), 'ABC',
+    e(L, 0, 'vd-can-40', fig_tri(shape_from_angles(70, 70, names=('B', 'C', 'A')), 'ABC',
                                 interior={'A': '40°', 'B': '?', 'C': '?'},
                                 ticks=[('A', 'B'), ('A', 'C')]))
-    e(L, 1, 'vd-can-100', fig_tri(shape_from_angles(100, 40), 'ABC',
+    e(L, 1, 'vd-can-100', fig_tri(shape_from_angles(40, 40, names=('B', 'C', 'A')), 'ABC',
                                  interior={'A': '100°', 'B': '?', 'C': '?'},
                                  ticks=[('A', 'B'), ('A', 'C')]))
     L = 'tap1/chuong-5/bai-19/bieu-do-doan-thang.json'
@@ -820,19 +861,273 @@ def example_specs():
     return E
 
 
+def _mid(p, q):
+    return ((p[0] + q[0]) / 2, (p[1] + q[1]) / 2)
+
+
+def _centroid(pts):
+    return (sum(p[0] for p in pts) / len(pts), sum(p[1] for p in pts) / len(pts))
+
+
+def fig_perp_oblique():
+    # Đường thẳng d, đoạn vuông góc AH và hai đường xiên AB, AC (bài 32).
+    H, A, B, C = (0.0, 0.0), (0.0, -130.0), (150.0, 0.0), (-95.0, 0.0)
+    fig = Fig()
+    fig.line((-160.0, 0.0), (200.0, 0.0), color='#4a5563')
+    fig.text(206, 5, 'd', anchor='start')
+    fig.line(A, H)
+    fig.line(A, B)
+    fig.line(A, C)
+    rightmark(fig, H, unit(sub(A, H)), unit(sub(B, H)))
+    for name, P_, dx, dy in (('A', A, 0, -14), ('H', H, -14, 18), ('B', B, 0, 18), ('C', C, 0, 18)):
+        fig.dot(P_)
+        fig.label((P_[0] + dx, P_[1] + dy), name)
+    return fig.svg()
+
+
+def fig_median():
+    # Tam giác ABC, trung tuyến AM và trọng tâm G (bài 34).
+    P_ = shape_from_angles(50, 70, names=('A', 'B', 'C'), oy=300.0, base=240.0)
+    fig = Fig()
+    draw_tri(fig, P_, 'ABC')
+    M = _mid(P_['B'], P_['C'])
+    G = _centroid([P_['A'], P_['B'], P_['C']])
+    fig.line(P_['A'], M, dash=True)
+    fig.dot(M)
+    fig.label(add(M, unit(sub(M, G)), 20), 'M')
+    fig.dot(G)
+    fig.label((G[0] + 14, G[1] + 4), 'G', anchor='start')
+    return fig.svg()
+
+
+def fig_circumcircle():
+    # Tam giác nhọn ABC với đường tròn ngoại tiếp tâm O (bài 35).
+    P_ = shape_from_angles(60, 70, names=('A', 'B', 'C'), oy=300.0, base=220.0)
+    ax, ay = P_['A']
+    bx, by = P_['B']
+    cx, cy = P_['C']
+    d = 2 * (ax * (by - cy) + bx * (cy - ay) + cx * (ay - by))
+    ox = ((ax * ax + ay * ay) * (by - cy) + (bx * bx + by * by) * (cy - ay) + (cx * cx + cy * cy) * (ay - by)) / d
+    oy = ((ax * ax + ay * ay) * (cx - bx) + (bx * bx + by * by) * (ax - cx) + (cx * cx + cy * cy) * (bx - ax)) / d
+    O = (ox, oy)
+    R = math.dist(O, P_['A'])
+    fig = Fig()
+    fig.add(f'<circle cx="{ox:.1f}" cy="{oy:.1f}" r="{R:.1f}" fill="none" stroke="#9aa5b1" '
+            f'stroke-width="1.5" stroke-dasharray="4 4"/>')
+    fig.pt((ox - R, oy - R))
+    fig.pt((ox + R, oy + R))
+    draw_tri(fig, P_, 'ABC')
+    for v in 'ABC':
+        fig.line(O, P_[v], dash=True)
+        m = _mid(O, P_[v])
+        perp = unit((-(P_[v][1] - oy), P_[v][0] - ox))
+        fig.label(add(m, perp, 14), 'R')
+    fig.dot(O)
+    fig.label((O[0] + 14, O[1] - 8), 'O', anchor='start')
+    return fig.svg()
+
+
+K3D, TH3D = 0.5, math.radians(35)
+
+
+def _proj(p, s, k=K3D):
+    # Phép chiếu xiên: trục y (chiều sâu) vẽ chéo lên phải, rút ngắn theo hệ số k.
+    x, y, z = p
+    return (s * (x + k * math.cos(TH3D) * y), -s * (z + k * math.sin(TH3D) * y))
+
+
+def _solid(fig, V, faces, s, k=K3D):
+    # V: các đỉnh 3D; faces: chỉ số đỉnh theo thứ tự ngược chiều kim đồng hồ khi nhìn từ ngoài.
+    # Mặt nhìn thấy khi pháp tuyến ngoài hướng về người xem; cạnh khuất (không thuộc mặt nào nhìn thấy) vẽ nét đứt.
+    view = (k * math.cos(TH3D), -1.0, k * math.sin(TH3D))
+    edges = {}
+    for f in faces:
+        a, b, c = V[f[0]], V[f[1]], V[f[2]]
+        u = (b[0] - a[0], b[1] - a[1], b[2] - a[2])
+        w = (c[0] - a[0], c[1] - a[1], c[2] - a[2])
+        n = (u[1] * w[2] - u[2] * w[1], u[2] * w[0] - u[0] * w[2], u[0] * w[1] - u[1] * w[0])
+        visible = n[0] * view[0] + n[1] * view[1] + n[2] * view[2] > 1e-9
+        for i in range(len(f)):
+            e = tuple(sorted((f[i], f[(i + 1) % len(f)])))
+            edges[e] = edges.get(e, False) or visible
+    P2 = [_proj(v, s, k) for v in V]
+    for (i, j), vis in sorted(edges.items(), key=lambda kv: kv[1]):
+        fig.line(P2[i], P2[j], dash=not vis)
+    return P2
+
+
+def fig_box(a, b, c, labels=('a', 'b', 'c')):
+    # Hình hộp chữ nhật dài a, rộng b, cao c (bài 36). Nhãn: dài ở cạnh đáy trước, rộng ở cạnh xiên bên phải, cao ở cạnh trái.
+    fig = Fig()
+    m = max(a, b, c)
+    s = 200.0 / m
+    V = [(0, 0, 0), (a, 0, 0), (a, b, 0), (0, b, 0), (0, 0, c), (a, 0, c), (a, b, c), (0, b, c)]
+    faces = [(0, 3, 2, 1), (4, 5, 6, 7), (0, 1, 5, 4), (1, 2, 6, 5), (2, 3, 7, 6), (3, 0, 4, 7)]
+    P2 = _solid(fig, V, faces, s)
+    mid = _mid(P2[0], P2[1])
+    fig.label((mid[0], mid[1] + 24), labels[0])
+    mid = _mid(P2[1], P2[2])
+    fig.text(mid[0] + 12, mid[1] + 16, labels[1], anchor='start')
+    mid = _mid(P2[0], P2[4])
+    fig.text(mid[0] - 12, mid[1] + 6, labels[2], anchor='end')
+    return fig.svg()
+
+
+def fig_prism(a, b, c, height=None, side_labels=True):
+    # Lăng trụ đứng đáy tam giác ABC (BC = a, CA = b, AB = c), đáy nằm ngang, cạnh bên thẳng đứng (bài 37).
+    # Cạnh BC đặt phía trước, đỉnh A ở phía sau: mặt BCC′B′ và đáy trên nhìn thấy, các cạnh qua A bị khuất.
+    # Độ dài cạnh đáy ghi trên đáy trên A′B′C′ (luôn nhìn thấy; hai đáy bằng nhau).
+    k = 0.85
+    s = 150.0 / max(a, b, c)
+    cos_b = (a * a + c * c - b * b) / (2 * a * c)
+    ang = math.acos(max(-1.0, min(1.0, cos_b)))
+    base = [(0.0, 0.0), (float(a), 0.0), (c * math.cos(ang), c * math.sin(ang))]  # B, C, A
+    h = 0.9 * max(a, b, c)
+    V = [(x, y, 0.0) for x, y in base] + [(x, y, h) for x, y in base]
+    faces = [(0, 2, 1), (3, 4, 5), (0, 1, 4, 3), (1, 2, 5, 4), (2, 0, 3, 5)]
+    fig = Fig()
+    P2 = _solid(fig, V, faces, s, k)
+    names = ['B', 'C', 'A']
+    cb = _centroid(P2[:3])
+    ct = _centroid(P2[3:])
+    for i, n in enumerate(names):
+        if n == 'A':
+            # Đỉnh A ở phía sau: ghi nhãn lệch lên trên bên trái để không đè lên nét đứt.
+            fig.label((P2[i][0] - 16, P2[i][1] - 12), n)
+        else:
+            d = unit(sub(P2[i], cb))
+            fig.label(add(P2[i], unit((d[0], max(d[1], 0.6))), 20), n)
+        d = unit(sub(P2[i + 3], ct))
+        fig.label(add(P2[i + 3], unit((d[0], min(d[1], -0.6))), 20), n + '′')
+    if side_labels:
+        for (i, j), txt in (((3, 4), str(a)), ((4, 5), str(b)), ((5, 3), str(c))):
+            mid = _mid(P2[i], P2[j])
+            d = unit(sub(mid, ct))
+            fig.label(add(mid, d, 14 + 3 * len(txt)), txt)
+    if height:
+        mid = _mid(P2[0], P2[3])
+        fig.text(mid[0] - 12, mid[1] + 6, height, anchor='end')
+    return fig.svg()
+
+
+def tap2_item_specs():
+    S = []
+
+    def s(lesson, item, name, svg):
+        S.append((lesson, item, name, svg))
+
+    L = 'tap2/chuong-9/bai-31/goc-canh-doi-dien.json'
+    s(L, 'q01', 't2-canh-5-7-6', fig_tri(shape_from_sides(7, 6, 5), 'ABC',
+                                       sides={('A', 'B'): '5 cm', ('B', 'C'): '7 cm', ('C', 'A'): '6 cm'}))
+    s(L, 'q04', 't2-goc-tam-50-70', fig_tri(shape_from_angles(50, 70), 'ABC',
+                                           interior={'A': '50°', 'B': '70°', 'C': '?'}))
+    s(L, 'q05', 't2-goc-tam-50-70', fig_tri(shape_from_angles(50, 70), 'ABC',
+                                           interior={'A': '50°', 'B': '70°', 'C': '?'}))
+    s(L, 'q07', 't2-canh-4-6-5', fig_tri(shape_from_sides(6, 5, 4), 'ABC',
+                                       sides={('A', 'B'): '4 cm', ('B', 'C'): '6 cm', ('C', 'A'): '5 cm'}))
+    L = 'tap2/chuong-9/bai-32/duong-vuong-goc-duong-xien.json'
+    for item in ('q01', 'q02', 'q03'):
+        s(L, item, 't2-vuong-goc-duong-xien', fig_perp_oblique())
+    L = 'tap2/chuong-9/bai-33/ba-canh-tam-giac.json'
+    s(L, 'q04', 't2-hai-canh-5-9', fig_tri(shape_from_sides(7, 9, 5), 'ABC',
+                                         sides={('A', 'B'): '5', ('C', 'A'): '9', ('B', 'C'): '?'}))
+    L = 'tap2/chuong-9/bai-34/dong-quy-trung-tuyen-phan-giac.json'
+    for item in ('q01', 'q02', 'q05'):
+        s(L, item, 't2-trung-tuyen-trong-tam', fig_median())
+    L = 'tap2/chuong-9/bai-35/dong-quy-trung-truc-duong-cao.json'
+    for item in ('q01', 'q04', 'q07'):
+        s(L, item, 't2-duong-tron-ngoai-tiep', fig_circumcircle())
+    s(L, 'q08', 't2-vuong-tai-A', fig_tri(shape_from_angles(90, 35), 'ABC', right='A'))
+    L = 'tap2/chuong-10/bai-36/hinh-hop-chu-nhat.json'
+    s(L, 'q02', 't2-lap-phuong-a', fig_box(3, 3, 3, ('a', 'a', 'a')))
+    s(L, 'q03', 't2-hop-2-3-4', fig_box(2, 3, 4, ('2 cm', '3 cm', '4 cm')))
+    s(L, 'q04', 't2-lap-phuong-5', fig_box(5, 5, 5, ('5 cm', '5 cm', '5 cm')))
+    s(L, 'q06', 't2-hop-5-3-4', fig_box(5, 3, 4, ('5 cm', '3 cm', '4 cm')))
+    s(L, 'q07', 't2-be-nuoc', fig_box(2, 1.5, 1, ('2 m', '1,5 m', '1 m')))
+    L = 'tap2/chuong-10/bai-37/lang-tru-dung.json'
+    s(L, 'q01', 't2-lang-tru-tam-giac', fig_prism(5, 4, 3, side_labels=False))
+    s(L, 'q07', 't2-lang-tru-6-8-10', fig_prism(10, 8, 6, 'h = 10'))
+    return S
+
+
+def tap2_theory_specs():
+    T = []
+
+    def t(lesson, after, name, svg, cap):
+        T.append((lesson, after, name, svg, cap))
+
+    t('tap2/chuong-8/bai-30/xac-suat-bien-co.json', 2, 't2-lt-vong-quay-4',
+      fig_pie([('Đỏ', 25), ('Xanh', 25), ('Vàng', 25), ('Tím', 25)],
+              {'Đỏ': '1/4', 'Xanh': '1/4', 'Vàng': '1/4', 'Tím': '1/4'}),
+      'Vòng quay chia thành 4 phần bằng nhau tô 4 màu khác nhau. Bốn biến cố "kim dừng ở màu đỏ", "…màu xanh", '
+      '"…màu vàng", "…màu tím" đồng khả năng và luôn xảy ra đúng một biến cố, nên mỗi biến cố có xác suất 1/4.')
+    t('tap2/chuong-9/bai-31/goc-canh-doi-dien.json', 0, 't2-lt-goc-canh',
+      fig_tri(shape_from_angles(50, 70), 'ABC', interior={'A': '50°', 'B': '70°', 'C': '60°'}),
+      'Tam giác ABC có B̂ = 70° là góc lớn nhất, nên cạnh đối diện AC là cạnh lớn nhất; Â = 50° nhỏ nhất nên BC nhỏ nhất.')
+    t('tap2/chuong-9/bai-32/duong-vuong-goc-duong-xien.json', 0, 't2-lt-vuong-goc-xien',
+      fig_perp_oblique(),
+      'AH là đường vuông góc kẻ từ A đến d; AB và AC là các đường xiên. AH ngắn hơn AB và AC.')
+    t('tap2/chuong-9/bai-33/ba-canh-tam-giac.json', 0, 't2-lt-ba-canh',
+      fig_tri(shape_from_sides(5, 6, 7), 'ABC', sides={('B', 'C'): 'a', ('C', 'A'): 'b', ('A', 'B'): 'c'}),
+      'Tam giác có ba cạnh a, b, c: mỗi cạnh nhỏ hơn tổng hai cạnh còn lại, ví dụ a < b + c.')
+    t('tap2/chuong-9/bai-34/dong-quy-trung-tuyen-phan-giac.json', 0, 't2-lt-trong-tam',
+      fig_median(),
+      'AM là trung tuyến (M là trung điểm BC) và G là trọng tâm: AG = (2/3) · AM và GM = (1/3) · AM.')
+    t('tap2/chuong-9/bai-35/dong-quy-trung-truc-duong-cao.json', 0, 't2-lt-tam-duong-tron',
+      fig_circumcircle(),
+      'O là giao điểm ba đường trung trực nên O cách đều ba đỉnh: OA = OB = OC.')
+    t('tap2/chuong-10/bai-36/hinh-hop-chu-nhat.json', 0, 't2-lt-hinh-hop',
+      fig_box(5, 3, 4, ('a', 'b', 'c')),
+      'Hình hộp chữ nhật có chiều dài a, chiều rộng b, chiều cao c. Các cạnh khuất vẽ bằng nét đứt.')
+    t('tap2/chuong-10/bai-37/lang-tru-dung.json', 0, 't2-lt-lang-tru',
+      fig_prism(5, 4, 3, 'h', side_labels=False),
+      'Lăng trụ đứng tam giác ABC.A′B′C′: hai đáy ABC và A′B′C′ là hai tam giác bằng nhau; các cạnh bên AA′, BB′, CC′ bằng nhau và vuông góc với hai đáy; h là chiều cao.')
+    return T
+
+
+def tap2_example_specs():
+    E = []
+
+    def e(lesson, idx, name, svg):
+        E.append((lesson, idx, name, svg))
+
+    L = 'tap2/chuong-9/bai-31/goc-canh-doi-dien.json'
+    e(L, 0, 't2-vd-goc-tam-50-70', fig_tri(shape_from_angles(50, 70), 'ABC',
+                                          interior={'A': '50°', 'B': '70°', 'C': '?'}))
+    e(L, 1, 't2-vd-goc-100-45', fig_tri(shape_from_angles(100, 45), 'ABC',
+                                       interior={'A': '100°', 'B': '45°', 'C': '?'}))
+    L = 'tap2/chuong-9/bai-32/duong-vuong-goc-duong-xien.json'
+    e(L, 0, 't2-vd-vuong-goc-xien', fig_perp_oblique())
+    L = 'tap2/chuong-9/bai-33/ba-canh-tam-giac.json'
+    e(L, 0, 't2-vd-ba-canh-3-4', fig_tri(shape_from_sides(5, 4, 3), 'ABC',
+                                       sides={('A', 'B'): '3', ('C', 'A'): '4', ('B', 'C'): '?'}))
+    L = 'tap2/chuong-9/bai-34/dong-quy-trung-tuyen-phan-giac.json'
+    e(L, 0, 't2-vd-trung-tuyen', fig_median())
+    L = 'tap2/chuong-9/bai-35/dong-quy-trung-truc-duong-cao.json'
+    e(L, 0, 't2-vd-duong-tron', fig_circumcircle())
+    e(L, 1, 't2-vuong-tai-A', fig_tri(shape_from_angles(90, 35), 'ABC', right='A'))
+    L = 'tap2/chuong-10/bai-36/hinh-hop-chu-nhat.json'
+    e(L, 0, 't2-vd-hop-3-4-5', fig_box(3, 4, 5, ('3 cm', '4 cm', '5 cm')))
+    e(L, 1, 't2-vd-lap-phuong-2', fig_box(2, 2, 2, ('2 cm', '2 cm', '2 cm')))
+    L = 'tap2/chuong-10/bai-37/lang-tru-dung.json'
+    e(L, 0, 't2-vd-lang-tru-3-4', fig_prism(5, 4, 3, 'h = 10'))
+    e(L, 1, 't2-vd-lang-tru-3-4-5-h7', fig_prism(5, 4, 3, 'h = 7'))
+    return E
+
+
 def main():
     os.makedirs(FIG_DIR, exist_ok=True)
     svgs = {}
     item_map = {}
-    for lesson, item_id, name, svg in specs() + extra_specs():
+    for lesson, item_id, name, svg in specs() + extra_specs() + tap2_item_specs():
         svgs[name] = svg
         item_map.setdefault(lesson, {})[item_id] = f'figures/{name}.svg'
     theory_map = {}
-    for lesson, after, name, svg, cap in theory_specs():
+    for lesson, after, name, svg, cap in theory_specs() + tap2_theory_specs():
         svgs[name] = svg
         theory_map.setdefault(lesson, []).append((after, f'figures/{name}.svg', cap))
     example_map = {}
-    for lesson, idx, name, svg in example_specs():
+    for lesson, idx, name, svg in example_specs() + tap2_example_specs():
         svgs[name] = svg
         example_map.setdefault(lesson, {})[idx] = f'figures/{name}.svg'
 

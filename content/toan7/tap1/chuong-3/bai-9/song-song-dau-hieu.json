@@ -56,7 +56,7 @@
       "id": "q01",
       "level": "Biết",
       "type": "mcq",
-      "stem": "Cho hai đường thẳng a, b bị cắt bởi c. Nếu a ∥ b thì góc so le trong với góc 65° bằng bao nhiêu độ?",
+      "stem": "Đường thẳng c cắt hai đường thẳng a, b tạo thành một cặp góc so le trong, trong đó một góc bằng 65°. Góc còn lại phải bằng bao nhiêu độ thì a ∥ b?",
       "figure": "figures/so-le-65.svg",
       "expr": "65",
       "choices": [
@@ -66,7 +66,7 @@
         "75"
       ],
       "answer": 0,
-      "explain": "Khi a ∥ b, hai góc so le trong bằng nhau nên góc so le trong với góc 65° bằng 65°.",
+      "explain": "Theo dấu hiệu nhận biết, nếu hai góc so le trong bằng nhau thì a ∥ b. Vậy góc còn lại phải bằng 65°.",
       "wrong_explain": {
         "1": "115° là số đo góc bù với 65°. Góc so le trong thì bằng nhau, không bù nhau.",
         "2": "25° là 90° − 65°, không liên quan đến cặp góc so le trong.",
@@ -77,21 +77,21 @@
       "id": "q02",
       "level": "Biết",
       "type": "fill",
-      "stem": "Cho a ∥ b. Một góc trong cùng phía với góc 118° có số đo bằng bao nhiêu độ?",
+      "stem": "Đường thẳng c cắt hai đường thẳng a, b tạo thành một cặp góc trong cùng phía, trong đó một góc bằng 118°. Góc còn lại phải bằng bao nhiêu độ thì a ∥ b?",
       "figure": "figures/trong-cung-phia-118.svg",
       "expr": "180 - 118",
       "answer": "62",
-      "explain": "Khi a ∥ b, hai góc trong cùng phía bù nhau nên góc còn lại bằng 180° − 118° = 62°."
+      "explain": "Theo dấu hiệu nhận biết, nếu hai góc trong cùng phía bù nhau thì a ∥ b. Vậy góc còn lại phải bằng 180° − 118° = 62°."
     },
     {
       "id": "q03",
       "level": "Biết",
       "type": "fill",
-      "stem": "Cho a ∥ b. Góc so le trong với góc 35° có số đo bằng bao nhiêu độ?",
+      "stem": "Đường thẳng c cắt hai đường thẳng a, b tạo thành một cặp góc so le trong, trong đó một góc bằng 35°. Góc còn lại phải bằng bao nhiêu độ thì a ∥ b?",
       "figure": "figures/so-le-35.svg",
       "expr": "35",
       "answer": "35",
-      "explain": "Khi a ∥ b, hai góc so le trong bằng nhau nên góc so le trong với góc 35° bằng 35°."
+      "explain": "Nếu hai góc so le trong bằng nhau thì a ∥ b, nên góc còn lại phải bằng 35°."
     },
     {
       "id": "q04",
@@ -122,6 +122,42 @@
       "expr": "90/3",
       "answer": "30",
       "explain": "Để a ∥ b, hai góc so le trong bằng nhau: 5x − 30 = 2x + 60, suy ra 3x = 90, x = 30."
+    },
+    {
+      "id": "q07",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Đường thẳng c cắt hai đường thẳng a, b tạo thành một cặp góc đồng vị, trong đó một góc bằng 52°. Góc còn lại phải bằng bao nhiêu độ thì a ∥ b?",
+      "expr": "52",
+      "answer": "52",
+      "explain": "Nếu hai góc đồng vị bằng nhau thì a ∥ b, nên góc còn lại phải bằng 52°."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đường thẳng c cắt hai đường thẳng a, b tạo thành hai góc trong cùng phía có số đo 2x và 4x − 60 (độ). Tìm x để a ∥ b.",
+      "expr": "240/6",
+      "answer": "40",
+      "explain": "Để a ∥ b, hai góc trong cùng phía phải bù nhau: 2x + 4x − 60 = 180, 6x = 240, x = 40."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đường thẳng c cắt hai đường thẳng a, b tạo thành hai góc so le trong có số đo 3x + 10 và 4x − 30 (độ). Tìm x để a ∥ b.",
+      "expr": "40",
+      "answer": "40",
+      "explain": "Để a ∥ b, hai góc so le trong phải bằng nhau: 3x + 10 = 4x − 30, suy ra x = 40."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đường thẳng c cắt hai đường thẳng a, b tạo thành hai góc đồng vị có số đo 2x − 10 và x + 50 (độ). Tìm x để a ∥ b.",
+      "expr": "60",
+      "answer": "60",
+      "explain": "Để a ∥ b, hai góc đồng vị phải bằng nhau: 2x − 10 = x + 50, suy ra x = 60."
     }
   ]
 }

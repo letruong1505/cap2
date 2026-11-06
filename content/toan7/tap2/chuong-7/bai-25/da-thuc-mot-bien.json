@@ -1,0 +1,115 @@
+{
+  "id": "t7-tap2-da-thuc-mot-bien",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 2",
+  "chapter": "Chương VII. Biểu thức đại số và đa thức một biến",
+  "lesson": "Bài 25. Đa thức một biến",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đa thức một biến là tổng của các đơn thức của cùng một biến x, có dạng a_n x^n + ... + a_1 x + a_0."
+    },
+    {
+      "type": "text",
+      "content": "Bậc của đa thức một biến khác 0 là số mũ lớn nhất của biến có hệ số khác 0. Hệ số a_0 không chứa x gọi là hệ số tự do."
+    },
+    {
+      "type": "formula",
+      "content": "Ví dụ: P(x) = 3x³ − 2x + 5 có bậc 3, hệ số tự do là 5."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tìm bậc của P(x) = 3x³ − 2x + 5.",
+      "expr": "3",
+      "steps": [
+        "Số mũ lớn nhất của x có hệ số khác 0 là 3, nên bậc là 3."
+      ],
+      "answer": "3"
+    },
+    {
+      "problem": "Tính P(2) với P(x) = x² − x.",
+      "expr": "2*2-2",
+      "steps": [
+        "P(2) = 2² − 2 = 2."
+      ],
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Bậc của đa thức P(x) = 4x² − x³ + 7 là bao nhiêu?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Số mũ lớn nhất là 3 (ở x³)."
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hệ số tự do của đa thức 2x⁴ − 5x + 9 là bao nhiêu?",
+      "expr": "9",
+      "answer": "9",
+      "explain": "Hạng tử không chứa x là 9."
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hệ số của x² trong đa thức 5x² − 3x + 2 là bao nhiêu?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Hệ số đứng trước x² là 5."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính P(1) với P(x) = 2x² − 3x + 4.",
+      "expr": "2*1*1-3*1+4",
+      "answer": "3",
+      "explain": "P(1) = 2 − 3 + 4 = 3."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính P(−2) với P(x) = x³ − 2x + 1.",
+      "expr": "(-2)*(-2)*(-2)-2*(-2)+1",
+      "answer": "-3",
+      "explain": "P(−2) = −8 + 4 + 1 = −3."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính P(3) với P(x) = x² − x.",
+      "expr": "3*3-3",
+      "answer": "6",
+      "explain": "P(3) = 9 − 3 = 6."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đa thức Q(x) = x² + 3 có bậc là bao nhiêu?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Bậc của đa thức là số mũ lớn nhất, ở đây là 2."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính Q(0) với Q(x) = x² − 4x + 7.",
+      "expr": "7",
+      "answer": "7",
+      "explain": "Thay x = 0: Q(0) = 0 − 0 + 7 = 7."
+    }
+  ]
+}

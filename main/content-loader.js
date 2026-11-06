@@ -25,8 +25,12 @@ function readJson(relPath) {
 function checkLesson(lesson, relPath) {
   const problems = [];
   if (!lesson.id) problems.push('thiếu id');
-  if (!Array.isArray(lesson.items)) problems.push('thiếu danh sách câu hỏi');
-  if (!Array.isArray(lesson.theory)) problems.push('thiếu lý thuyết');
+  if (lesson.kind === 'review') {
+    if (!Array.isArray(lesson.questions)) problems.push('thiếu danh sách câu tự luận');
+  } else {
+    if (!Array.isArray(lesson.items)) problems.push('thiếu danh sách câu hỏi');
+    if (!Array.isArray(lesson.theory)) problems.push('thiếu lý thuyết');
+  }
   if (problems.length) {
     throw new Error(`Bài ${relPath} không hợp lệ: ${problems.join(', ')}`);
   }
@@ -43,8 +47,11 @@ function readFigure(rel) {
 }
 
 function attachFigures(lesson) {
-  for (const item of lesson.items) {
+  for (const item of lesson.items || []) {
     if (item.figure) item.figureSvg = readFigure(item.figure);
+  }
+  for (const q of lesson.questions || []) {
+    if (q.figure) q.figureSvg = readFigure(q.figure);
   }
   for (const block of lesson.theory || []) {
     if (block.type === 'figure') block.figureSvg = readFigure(block.figure);

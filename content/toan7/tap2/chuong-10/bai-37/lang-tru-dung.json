@@ -1,0 +1,124 @@
+{
+  "id": "t7-tap2-lang-tru-dung",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 2",
+  "chapter": "Chương X. Một số hình khối trong thực tiễn",
+  "lesson": "Bài 37. Hình lăng trụ đứng tam giác và hình lăng trụ đứng tứ giác",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hình lăng trụ đứng có hai đáy là hai đa giác bằng nhau và song song; các mặt bên là hình chữ nhật và vuông góc với hai đáy."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t2-lt-lang-tru.svg",
+      "caption": "Lăng trụ đứng tam giác ABC.A′B′C′: hai đáy ABC và A′B′C′ là hai tam giác bằng nhau; các cạnh bên AA′, BB′, CC′ bằng nhau và vuông góc với hai đáy; h là chiều cao."
+    },
+    {
+      "type": "formula",
+      "content": "Thể tích lăng trụ đứng: V = S_đáy · h (h là chiều cao)."
+    },
+    {
+      "type": "formula",
+      "content": "Diện tích xung quanh: S_xq = chu vi đáy · h."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Lăng trụ đứng có đáy là tam giác vuông với hai cạnh góc vuông 3 cm và 4 cm, chiều cao 10 cm. Tính thể tích.",
+      "expr": "3*4/2*10",
+      "steps": [
+        "S_đáy = (3 · 4)/2 = 6 cm², V = 6 · 10 = 60 cm³."
+      ],
+      "answer": "60",
+      "figure": "figures/t2-vd-lang-tru-3-4.svg"
+    },
+    {
+      "problem": "Lăng trụ đứng có đáy tam giác vuông cạnh 3 cm, 4 cm, 5 cm, chiều cao 7 cm. Tính diện tích xung quanh.",
+      "expr": "(3+4+5)*7",
+      "steps": [
+        "S_xq = chu vi đáy · h = 12 · 7 = 84 cm²."
+      ],
+      "answer": "84",
+      "figure": "figures/t2-vd-lang-tru-3-4-5-h7.svg"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hình lăng trụ đứng tam giác có bao nhiêu mặt bên?",
+      "figure": "figures/t2-lang-tru-tam-giac.svg",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Số mặt bên bằng số cạnh của đáy: 3."
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hình lăng trụ đứng tứ giác có bao nhiêu cạnh bên?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Số cạnh bên bằng số đỉnh của một đáy: 4."
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hình lăng trụ đứng tứ giác có bao nhiêu đỉnh?",
+      "expr": "8",
+      "answer": "8",
+      "explain": "Hai đáy, mỗi đáy 4 đỉnh: 8 đỉnh."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đáy của một lăng trụ đứng có diện tích 12 cm², chiều cao 5 cm. Tính thể tích (cm³).",
+      "expr": "12*5",
+      "answer": "60",
+      "explain": "V = 12 · 5 = 60 cm³."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lăng trụ đứng có đáy hình vuông cạnh 2 cm, chiều cao 6 cm. Tính thể tích (cm³).",
+      "expr": "2*2*6",
+      "answer": "24",
+      "explain": "S_đáy = 4 cm², V = 4 · 6 = 24 cm³."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lăng trụ đứng có đáy hình chữ nhật 4 cm × 5 cm, cao 3 cm. Tính thể tích (cm³).",
+      "expr": "4*5*3",
+      "answer": "60",
+      "explain": "V = 4 · 5 · 3 = 60 cm³."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lăng trụ đứng có đáy là tam giác vuông với hai cạnh góc vuông 6 cm và 8 cm, cao 10 cm. Tính thể tích (cm³).",
+      "figure": "figures/t2-lang-tru-6-8-10.svg",
+      "expr": "6*8/2*10",
+      "answer": "240",
+      "explain": "S_đáy = 24 cm², V = 24 · 10 = 240 cm³."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lăng trụ đứng có đáy là hình vuông cạnh 3 cm, chiều cao 5 cm. Tính diện tích xung quanh (cm²).",
+      "expr": "4*3*5",
+      "answer": "60",
+      "explain": "S_xq = chu vi đáy · h = 12 · 5 = 60 cm²."
+    }
+  ]
+}

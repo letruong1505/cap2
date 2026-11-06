@@ -1,0 +1,189 @@
+{
+  "id": "t7-tap2-bien-co",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 2",
+  "chapter": "Chương VIII. Làm quen với biến cố và xác suất của biến cố",
+  "lesson": "Bài 29. Làm quen với biến cố",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Biến cố là một sự việc, hiện tượng có thể xảy ra hoặc không xảy ra."
+    },
+    {
+      "type": "text",
+      "content": "Biến cố chắc chắn là biến cố biết trước được luôn xảy ra. Biến cố không thể là biến cố biết trước được không bao giờ xảy ra. Biến cố ngẫu nhiên là biến cố không thể biết trước được nó có xảy ra hay không."
+    },
+    {
+      "type": "formula",
+      "content": "Gieo một con xúc xắc: \"số chấm nhỏ hơn 7\" là biến cố chắc chắn; \"số chấm bằng 0\" là biến cố không thể; \"số chấm là số chẵn\" là biến cố ngẫu nhiên."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Gieo một con xúc xắc sáu mặt. Số chấm xuất hiện có thể là những số nào? Có bao nhiêu số như vậy?",
+      "expr": "6",
+      "steps": [
+        "Các mặt của xúc xắc có 1, 2, 3, 4, 5, 6 chấm.",
+        "Vậy số chấm xuất hiện có thể là một trong 6 số đó."
+      ],
+      "answer": "6"
+    },
+    {
+      "problem": "Một hộp có 4 tấm thẻ ghi các số 2, 4, 6, 8. Rút ngẫu nhiên một thẻ. Có bao nhiêu thẻ ghi số chẵn? Biến cố \"rút được thẻ ghi số chẵn\" là loại biến cố gì?",
+      "expr": "4",
+      "steps": [
+        "Cả 4 thẻ đều ghi số chẵn.",
+        "Rút thẻ nào cũng được số chẵn nên biến cố luôn xảy ra: đó là biến cố chắc chắn."
+      ],
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Gieo một con xúc xắc. Biến cố \"số chấm xuất hiện nhỏ hơn 7\" là:",
+      "choices": [
+        "Biến cố chắc chắn",
+        "Biến cố không thể",
+        "Biến cố ngẫu nhiên"
+      ],
+      "answer": 0,
+      "explain": "Mọi mặt đều có từ 1 đến 6 chấm, đều nhỏ hơn 7, nên biến cố luôn xảy ra.",
+      "wrong_explain": {
+        "1": "Biến cố không thể là biến cố không bao giờ xảy ra; ở đây nó luôn xảy ra.",
+        "2": "Ta biết trước biến cố này luôn xảy ra nên không phải biến cố ngẫu nhiên."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Gieo một con xúc xắc. Biến cố \"số chấm xuất hiện bằng 8\" là:",
+      "choices": [
+        "Biến cố chắc chắn",
+        "Biến cố không thể",
+        "Biến cố ngẫu nhiên"
+      ],
+      "answer": 1,
+      "explain": "Không có mặt nào có 8 chấm nên biến cố không bao giờ xảy ra.",
+      "wrong_explain": {
+        "0": "Biến cố chắc chắn phải luôn xảy ra; ở đây nó không bao giờ xảy ra.",
+        "2": "Ta biết trước biến cố này không xảy ra nên không phải biến cố ngẫu nhiên."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Gieo một con xúc xắc. Biến cố \"số chấm xuất hiện là số lẻ\" là:",
+      "choices": [
+        "Biến cố chắc chắn",
+        "Biến cố không thể",
+        "Biến cố ngẫu nhiên"
+      ],
+      "answer": 2,
+      "explain": "Nếu xuất hiện mặt 1, 3, 5 thì biến cố xảy ra; mặt 2, 4, 6 thì không. Không biết trước được.",
+      "wrong_explain": {
+        "0": "Biến cố không xảy ra khi gieo được mặt 2, 4 hoặc 6, nên không luôn xảy ra.",
+        "1": "Biến cố xảy ra khi gieo được mặt 1, 3 hoặc 5, nên không phải không bao giờ xảy ra."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Một hộp chỉ có 5 viên bi đỏ. Lấy ngẫu nhiên một viên. Biến cố \"lấy được viên bi xanh\" là:",
+      "choices": [
+        "Biến cố chắc chắn",
+        "Biến cố không thể",
+        "Biến cố ngẫu nhiên"
+      ],
+      "answer": 1,
+      "explain": "Trong hộp không có bi xanh nên biến cố không bao giờ xảy ra.",
+      "wrong_explain": {
+        "0": "Biến cố chắc chắn ở đây là \"lấy được viên bi đỏ\", không phải bi xanh.",
+        "2": "Ta biết trước không thể lấy được bi xanh nên không phải biến cố ngẫu nhiên."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Rút ngẫu nhiên một thẻ trong 10 thẻ ghi các số từ 1 đến 10. Biến cố \"rút được thẻ ghi số có hai chữ số\" là:",
+      "choices": [
+        "Biến cố chắc chắn",
+        "Biến cố không thể",
+        "Biến cố ngẫu nhiên"
+      ],
+      "answer": 2,
+      "explain": "Chỉ thẻ ghi số 10 có hai chữ số. Biến cố xảy ra khi rút được thẻ 10 và không xảy ra với các thẻ khác.",
+      "wrong_explain": {
+        "0": "Các thẻ 1 đến 9 chỉ có một chữ số nên biến cố không luôn xảy ra.",
+        "1": "Thẻ ghi số 10 có hai chữ số nên biến cố vẫn có thể xảy ra."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Rút ngẫu nhiên một thẻ trong 10 thẻ ghi các số từ 1 đến 10. Biến cố \"số ghi trên thẻ nhỏ hơn 11\" là:",
+      "choices": [
+        "Biến cố chắc chắn",
+        "Biến cố không thể",
+        "Biến cố ngẫu nhiên"
+      ],
+      "answer": 0,
+      "explain": "Mọi thẻ đều ghi số từ 1 đến 10, đều nhỏ hơn 11, nên biến cố luôn xảy ra.",
+      "wrong_explain": {
+        "1": "Biến cố luôn xảy ra nên không phải biến cố không thể.",
+        "2": "Ta biết trước biến cố này luôn xảy ra nên không phải biến cố ngẫu nhiên."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Gieo đồng thời hai con xúc xắc. Biến cố \"tổng số chấm xuất hiện bằng 13\" là:",
+      "choices": [
+        "Biến cố chắc chắn",
+        "Biến cố không thể",
+        "Biến cố ngẫu nhiên"
+      ],
+      "answer": 1,
+      "explain": "Tổng lớn nhất của hai con xúc xắc là 6 + 6 = 12, nên tổng không thể bằng 13.",
+      "wrong_explain": {
+        "0": "Biến cố này không bao giờ xảy ra nên không phải biến cố chắc chắn.",
+        "2": "Ta biết trước tổng không vượt quá 12 nên đây không phải biến cố ngẫu nhiên."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Gieo đồng thời hai con xúc xắc. Biến cố \"tổng số chấm xuất hiện lớn hơn 1\" là:",
+      "choices": [
+        "Biến cố chắc chắn",
+        "Biến cố không thể",
+        "Biến cố ngẫu nhiên"
+      ],
+      "answer": 0,
+      "explain": "Tổng nhỏ nhất của hai con xúc xắc là 1 + 1 = 2 > 1, nên biến cố luôn xảy ra.",
+      "wrong_explain": {
+        "1": "Biến cố luôn xảy ra nên không phải biến cố không thể.",
+        "2": "Ta biết trước tổng luôn ít nhất bằng 2 nên đây không phải biến cố ngẫu nhiên."
+      }
+    }
+  ]
+}

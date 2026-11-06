@@ -52,7 +52,7 @@
       "id": "q01",
       "level": "Biết",
       "type": "fill",
-      "stem": "Hai tam giác vuông có cạnh huyền bằng nhau và một góc nhọn của tam giác thứ nhất bằng 35°. Tính góc nhọn còn lại của tam giác này (độ).",
+      "stem": "Tam giác ABC vuông tại A có góc B = 35°. Góc C bằng bao nhiêu độ?",
       "figure": "figures/vuong-35.svg",
       "expr": "90 - 35",
       "answer": "55",
@@ -129,6 +129,42 @@
       "expr": "65",
       "answer": "65",
       "explain": "Hai tam giác bằng nhau nên góc E tương ứng với góc B, E = 65°."
+    },
+    {
+      "id": "q07",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tam giác vuông có một góc nhọn bằng 42°. Góc nhọn còn lại bằng bao nhiêu độ?",
+      "expr": "90-42",
+      "answer": "48",
+      "explain": "Hai góc nhọn phụ nhau: 90° − 42° = 48°."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác vuông có hai góc nhọn bằng nhau. Mỗi góc bằng bao nhiêu độ?",
+      "expr": "90/2",
+      "answer": "45",
+      "explain": "Hai góc nhọn bằng nhau và có tổng 90°, nên mỗi góc 45°."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác vuông ABC (Â = 90°) có B̂ = 3 · Ĉ. Tính B̂ (độ).",
+      "expr": "3*90/4",
+      "answer": "67,5",
+      "explain": "B̂ + Ĉ = 90°, B̂ = 3Ĉ nên 4Ĉ = 90°, Ĉ = 22,5°, B̂ = 67,5°."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác vuông có một góc nhọn bằng x, góc nhọn còn lại bằng x + 20° (độ). Tìm x.",
+      "expr": "70/2",
+      "answer": "35",
+      "explain": "x + (x + 20) = 90, 2x = 70, x = 35."
     }
   ]
 }

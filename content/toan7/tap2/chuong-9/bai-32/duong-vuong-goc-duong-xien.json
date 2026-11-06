@@ -1,0 +1,159 @@
+{
+  "id": "t7-tap2-duong-vuong-goc-duong-xien",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 2",
+  "chapter": "Chương IX. Quan hệ giữa các yếu tố trong một tam giác",
+  "lesson": "Bài 32. Quan hệ giữa đường vuông góc và đường xiên",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cho điểm A không nằm trên đường thẳng d. Kẻ AH vuông góc với d (H thuộc d): đoạn AH gọi là đường vuông góc kẻ từ A đến d, H là chân đường vuông góc. Lấy điểm B thuộc d, khác H: đoạn AB gọi là một đường xiên kẻ từ A đến d."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t2-lt-vuong-goc-xien.svg",
+      "caption": "AH là đường vuông góc kẻ từ A đến d; AB và AC là các đường xiên. AH ngắn hơn AB và AC."
+    },
+    {
+      "type": "text",
+      "content": "Định lí: Trong các đường xiên và đường vuông góc kẻ từ một điểm nằm ngoài một đường thẳng đến đường thẳng đó, đường vuông góc là đường ngắn nhất."
+    },
+    {
+      "type": "text",
+      "content": "Giải thích: tam giác AHB vuông tại H nên góc AHB = 90° là góc lớn nhất; cạnh đối diện AB vì thế lớn hơn AH."
+    },
+    {
+      "type": "formula",
+      "content": "Độ dài đường vuông góc AH gọi là khoảng cách từ điểm A đến đường thẳng d."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Từ điểm A kẻ AH vuông góc với đường thẳng d (H thuộc d). Biết AH = 3 cm. Khoảng cách từ A đến d bằng bao nhiêu cm?",
+      "expr": "3",
+      "steps": [
+        "Khoảng cách từ A đến d là độ dài đường vuông góc AH.",
+        "Vậy khoảng cách bằng 3 cm."
+      ],
+      "answer": "3",
+      "figure": "figures/t2-vd-vuong-goc-xien.svg"
+    },
+    {
+      "problem": "Hình chữ nhật ABCD có AB = 5 cm, BC = 3 cm. Tính khoảng cách từ C đến đường thẳng AB.",
+      "expr": "3",
+      "steps": [
+        "Vì ABCD là hình chữ nhật nên CB vuông góc với AB tại B.",
+        "Do đó khoảng cách từ C đến đường thẳng AB bằng CB = 3 cm."
+      ],
+      "answer": "3"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Từ A kẻ AH vuông góc với d tại H, AH = 4 cm. Khoảng cách từ A đến d bằng bao nhiêu cm?",
+      "figure": "figures/t2-vuong-goc-duong-xien.svg",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Khoảng cách từ A đến d là độ dài đường vuông góc AH = 4 cm."
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Từ điểm A nằm ngoài đường thẳng d kẻ đường vuông góc AH và các đường xiên AB, AC (hình vẽ). Đoạn thẳng ngắn nhất là:",
+      "figure": "figures/t2-vuong-goc-duong-xien.svg",
+      "choices": [
+        "AH",
+        "AB",
+        "AC"
+      ],
+      "answer": 0,
+      "explain": "Đường vuông góc ngắn hơn mọi đường xiên kẻ từ cùng một điểm, nên AH ngắn nhất.",
+      "wrong_explain": {
+        "1": "AB là đường xiên nên AB > AH.",
+        "2": "AC là đường xiên nên AC > AH."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "AH vuông góc với d tại H, B là một điểm thuộc d khác H. Góc AHB bằng bao nhiêu độ?",
+      "figure": "figures/t2-vuong-goc-duong-xien.svg",
+      "expr": "90",
+      "answer": "90",
+      "explain": "AH vuông góc với d nên góc AHB là góc vuông, bằng 90°."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Từ A kẻ AH vuông góc với d, AH = 5 cm. Đường xiên AB kẻ từ A đến d có thể có độ dài nào?",
+      "choices": [
+        "6 cm",
+        "5 cm",
+        "4 cm",
+        "3 cm"
+      ],
+      "answer": 0,
+      "explain": "Đường xiên luôn dài hơn đường vuông góc nên AB > 5 cm. Chỉ 6 cm thỏa mãn.",
+      "wrong_explain": {
+        "1": "AB = 5 cm = AH thì B trùng H, khi đó AB không còn là đường xiên.",
+        "2": "4 cm < 5 cm, đường xiên không thể ngắn hơn đường vuông góc.",
+        "3": "3 cm < 5 cm, đường xiên không thể ngắn hơn đường vuông góc."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình vuông ABCD có cạnh 6 cm. Tính khoảng cách từ D đến đường thẳng AB (cm).",
+      "expr": "6",
+      "answer": "6",
+      "explain": "DA vuông góc với AB tại A nên khoảng cách từ D đến AB bằng DA = 6 cm."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tam giác ABC vuông tại A. So sánh AB và BC.",
+      "choices": [
+        "AB < BC",
+        "AB > BC",
+        "AB = BC"
+      ],
+      "answer": 0,
+      "explain": "BA vuông góc với đường thẳng AC nên BA là đường vuông góc, BC là đường xiên kẻ từ B đến AC. Vậy AB < BC.",
+      "wrong_explain": {
+        "1": "Đường vuông góc AB không thể dài hơn đường xiên BC.",
+        "2": "AB = BC chỉ khi C trùng A, điều này không xảy ra."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình chữ nhật ABCD có AB = 8 cm, AD = 5 cm. Tính khoảng cách từ C đến đường thẳng AD (cm).",
+      "expr": "8",
+      "answer": "8",
+      "explain": "CD vuông góc với AD tại D nên khoảng cách từ C đến AD bằng CD. Trong hình chữ nhật CD = AB = 8 cm."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Điểm A cách đường thẳng d một khoảng 3 cm. Có bao nhiêu điểm B thuộc d sao cho AB = 2 cm?",
+      "expr": "0",
+      "answer": "0",
+      "explain": "Mọi đoạn nối A với một điểm của d đều dài ít nhất bằng khoảng cách 3 cm. Vì 2 cm < 3 cm nên không có điểm B nào."
+    }
+  ]
+}

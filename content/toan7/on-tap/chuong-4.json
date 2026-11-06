@@ -1,0 +1,195 @@
+{
+  "id": "on-tap-chuong-4",
+  "kind": "review",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 1",
+  "chapter": "Chương IV. Tam giác bằng nhau",
+  "title": "Ôn tập Chương IV (tự luận)",
+  "questions": [
+    {
+      "id": "q01",
+      "stem": "Tam giác ABC có Â = 55° và B̂ = 65°. Tính Ĉ.",
+      "steps": [
+        "Tổng ba góc trong tam giác bằng 180°.",
+        "Ĉ = 180° − 55° − 65° = 60°."
+      ],
+      "answer": "60°"
+    },
+    {
+      "id": "q02",
+      "stem": "Góc ngoài tại đỉnh C của tam giác ABC bằng 120°, Â = 50°. Tính B̂.",
+      "steps": [
+        "Góc ngoài tại một đỉnh bằng tổng hai góc trong không kề với nó: 120° = Â + B̂.",
+        "B̂ = 120° − 50° = 70°."
+      ],
+      "answer": "70°"
+    },
+    {
+      "id": "q03",
+      "stem": "Tam giác có ba góc tỉ lệ với 1 : 2 : 3. Tính số đo ba góc.",
+      "steps": [
+        "Gọi ba góc là k, 2k, 3k: k + 2k + 3k = 180°, suy ra k = 30°.",
+        "Ba góc: 30°, 60°, 90°."
+      ],
+      "answer": "30°, 60°, 90°"
+    },
+    {
+      "id": "q04",
+      "stem": "Tam giác vuông có một góc nhọn bằng 28°. Tính góc nhọn còn lại.",
+      "steps": [
+        "Trong tam giác vuông, hai góc nhọn phụ nhau: tổng bằng 90°.",
+        "Góc còn lại: 90° − 28° = 62°."
+      ],
+      "answer": "62°"
+    },
+    {
+      "id": "q05",
+      "stem": "Tam giác cân có góc ở đỉnh bằng 40°. Tính số đo mỗi góc ở đáy.",
+      "steps": [
+        "Tổng ba góc bằng 180°; hai góc đáy bằng nhau.",
+        "Mỗi góc đáy: (180° − 40°) : 2 = 70°."
+      ],
+      "answer": "70°"
+    },
+    {
+      "id": "q06",
+      "stem": "Giải thích vì sao mỗi góc của tam giác đều bằng 60°.",
+      "steps": [
+        "Tam giác đều có ba cạnh bằng nhau nên ba góc bằng nhau (tính chất tam giác cân).",
+        "Tổng ba góc bằng 180°, nên mỗi góc bằng 180° : 3 = 60°."
+      ],
+      "answer": "Mỗi góc bằng 60° vì ba góc bằng nhau và có tổng 180°"
+    },
+    {
+      "id": "q07",
+      "stem": "Cho ΔABC và ΔDEF có AB = DE, BC = EF, CA = FD. Chứng minh ΔABC = ΔDEF.",
+      "steps": [
+        "Xét hai tam giác có ba cặp cạnh tương ứng bằng nhau: AB = DE, BC = EF, CA = FD.",
+        "Theo trường hợp bằng nhau thứ nhất (c.c.c), ΔABC = ΔDEF."
+      ],
+      "answer": "ΔABC = ΔDEF (c.c.c)"
+    },
+    {
+      "id": "q08",
+      "stem": "Cho ΔABC = ΔDEF và AB = 5 cm, BC = 7 cm, CA = 6 cm. Tính chu vi ΔDEF.",
+      "steps": [
+        "Hai tam giác bằng nhau nên các cạnh tương ứng bằng nhau: DE = 5, EF = 7, FD = 6.",
+        "Chu vi ΔDEF: 5 + 7 + 6 = 18 cm."
+      ],
+      "answer": "18 cm"
+    },
+    {
+      "id": "q09",
+      "stem": "Cho AB = DE, B̂ = Ê và BC = EF. Chứng minh ΔABC = ΔDEF.",
+      "steps": [
+        "Xét hai tam giác có: AB = DE, B̂ = Ê, BC = EF.",
+        "Góc B̂ nằm giữa hai cạnh AB và BC; góc Ê nằm giữa hai cạnh DE và EF (hai cạnh tương ứng đã bằng nhau).",
+        "Theo trường hợp thứ hai (c.g.c), ΔABC = ΔDEF."
+      ],
+      "answer": "ΔABC = ΔDEF (c.g.c)"
+    },
+    {
+      "id": "q10",
+      "stem": "Cho B̂ = Ê = 50°, Ĉ = F̂ = 60° và BC = EF. Chứng minh ΔABC = ΔDEF.",
+      "steps": [
+        "Cạnh BC = EF và hai góc kề cạnh đó bằng nhau: B̂ = Ê, Ĉ = F̂.",
+        "Theo trường hợp thứ ba (g.c.g), ΔABC = ΔDEF. Suy ra AB = DE."
+      ],
+      "answer": "ΔABC = ΔDEF (g.c.g)"
+    },
+    {
+      "id": "q11",
+      "stem": "Hai tam giác vuông có cạnh huyền và một cạnh góc vuông tương ứng bằng nhau. Chúng có bằng nhau không?",
+      "steps": [
+        "Đây là trường hợp bằng nhau của tam giác vuông: cạnh huyền và một cạnh góc vuông.",
+        "Hai tam giác vuông này bằng nhau."
+      ],
+      "answer": "Có, theo trường hợp cạnh huyền – cạnh góc vuông"
+    },
+    {
+      "id": "q12",
+      "stem": "Tam giác ABC cân tại A, AM là trung tuyến (M là trung điểm BC). Chứng minh AM vuông góc với BC.",
+      "steps": [
+        "Xét ΔABM và ΔACM: AB = AC (cân tại A), BM = CM (M trung điểm), AM chung.",
+        "Theo c.c.c, ΔABM = ΔACM, suy ra góc AMB = góc AMC.",
+        "Hai góc này bù nhau (kề bù) và bằng nhau nên mỗi góc bằng 90°. Vậy AM ⊥ BC."
+      ],
+      "answer": "AM ⊥ BC"
+    },
+    {
+      "id": "q13",
+      "stem": "Tam giác cân có đáy 8 cm, cạnh bên 5 cm. Tính chu vi tam giác.",
+      "steps": [
+        "Tam giác cân có hai cạnh bên bằng nhau: 5 cm và 5 cm.",
+        "Chu vi: 8 + 5 + 5 = 18 cm."
+      ],
+      "answer": "18 cm"
+    },
+    {
+      "id": "q14",
+      "stem": "Điểm M nằm trên đường trung trực của đoạn AB, MA = 4 cm. Tính MB.",
+      "steps": [
+        "Điểm nằm trên đường trung trực của đoạn thẳng thì cách đều hai đầu đoạn thẳng.",
+        "Vậy MB = MA = 4 cm."
+      ],
+      "answer": "4 cm"
+    },
+    {
+      "id": "q15",
+      "stem": "Trong tam giác vuông, vì sao hai góc nhọn phụ nhau?",
+      "steps": [
+        "Tổng ba góc của tam giác bằng 180°.",
+        "Góc vuông bằng 90° nên hai góc nhọn có tổng 180° − 90° = 90°, tức là phụ nhau."
+      ],
+      "answer": "Tổng hai góc nhọn bằng 90° nên phụ nhau"
+    },
+    {
+      "id": "q16",
+      "stem": "Tam giác ABC cân tại A có góc A bằng 60°. Chứng minh ΔABC là tam giác đều.",
+      "steps": [
+        "Tam giác cân tại A nên B̂ = Ĉ.",
+        "Tổng ba góc: 60° + 2B̂ = 180°, suy ra B̂ = 60°, Ĉ = 60°.",
+        "Ba góc đều bằng 60° nên tam giác đều."
+      ],
+      "answer": "ΔABC đều (ba góc đều 60°)"
+    },
+    {
+      "id": "q17",
+      "stem": "Nêu tính chất của các điểm nằm trên đường trung trực của một đoạn thẳng.",
+      "steps": [
+        "Mỗi điểm nằm trên đường trung trực của đoạn thẳng AB thì cách đều A và B.",
+        "Ngược lại, điểm cách đều hai đầu đoạn thẳng thì nằm trên đường trung trực."
+      ],
+      "answer": "Cách đều hai đầu đoạn thẳng (và ngược lại)"
+    },
+    {
+      "id": "q18",
+      "stem": "Góc ngoài tại đỉnh A của tam giác ABC bằng 110°, B̂ = 50°. Tính Ĉ.",
+      "steps": [
+        "Góc ngoài tại A bằng tổng hai góc trong không kề với nó: 110° = B̂ + Ĉ.",
+        "Ĉ = 110° − 50° = 60°."
+      ],
+      "answer": "60°"
+    },
+    {
+      "id": "q19",
+      "stem": "Trong tam giác vuông cân, mỗi góc nhọn bằng bao nhiêu độ? Vì sao?",
+      "steps": [
+        "Tam giác vuông cân có một góc vuông 90° và hai góc đáy bằng nhau.",
+        "Hai góc nhọn bằng nhau và phụ nhau: mỗi góc bằng 90° : 2 = 45°."
+      ],
+      "answer": "45°"
+    },
+    {
+      "id": "q20",
+      "stem": "Tam giác cân ABC có góc ở đỉnh A bằng 100°. Tính góc đáy B̂.",
+      "steps": [
+        "Hai góc đáy bằng nhau: B̂ = Ĉ.",
+        "B̂ = (180° − 100°) : 2 = 40°."
+      ],
+      "answer": "40°"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "id": "t7-tap2-bieu-thuc-dai-so",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 2",
+  "chapter": "Chương VII. Biểu thức đại số và đa thức một biến",
+  "lesson": "Bài 24. Biểu thức đại số",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Biểu thức đại số là biểu thức gồm các số, các chữ đại diện cho số, và các phép toán cộng, trừ, nhân, chia, lũy thừa."
+    },
+    {
+      "type": "text",
+      "content": "Giá trị của biểu thức đại số tại những giá trị cụ thể của chữ là kết quả nhận được khi thay các giá trị đó vào biểu thức rồi thực hiện phép tính."
+    },
+    {
+      "type": "formula",
+      "content": "Ví dụ: với A = 2x² − 3x + 1, khi x = −1 thì A = 2 · 1 + 3 + 1 = 6."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính giá trị của A = 2x² − 3x + 1 khi x = −1.",
+      "expr": "2*(-1)*(-1)-3*(-1)+1",
+      "steps": [
+        "Thay x = −1: 2 · (−1)² − 3 · (−1) + 1 = 2 + 3 + 1 = 6."
+      ],
+      "answer": "6"
+    },
+    {
+      "problem": "Tính giá trị của xy − 2y khi x = 4, y = −3.",
+      "expr": "4*(-3)-2*(-3)",
+      "steps": [
+        "Thay x = 4, y = −3: 4 · (−3) − 2 · (−3) = −12 + 6 = −6."
+      ],
+      "answer": "-6"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính giá trị của 3x + 2 khi x = 4.",
+      "expr": "3*4+2",
+      "answer": "14",
+      "explain": "3 · 4 + 2 = 14."
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính giá trị của x² − 5 khi x = −3.",
+      "expr": "(-3)*(-3)-5",
+      "answer": "4",
+      "explain": "(−3)² − 5 = 9 − 5 = 4."
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Chu vi hình vuông cạnh a. Với a = 2,5 cm, chu vi bằng bao nhiêu cm?",
+      "expr": "4*2,5",
+      "answer": "10",
+      "explain": "Chu vi = 4a = 4 · 2,5 = 10 cm."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính giá trị của 5 − 2x khi x = 1/2.",
+      "expr": "5-2*(1/2)",
+      "answer": "4",
+      "explain": "5 − 2 · 1/2 = 5 − 1 = 4."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính giá trị của 2xy − y² khi x = 3, y = −2.",
+      "expr": "2*3*(-2)-(-2)*(-2)",
+      "answer": "-16",
+      "explain": "2 · 3 · (−2) − (−2)² = −12 − 4 = −16."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Diện tích hình chữ nhật có chiều dài a và chiều rộng b. Với a = 7, b = 4, tính diện tích.",
+      "expr": "7*4",
+      "answer": "28",
+      "explain": "S = a · b = 7 · 4 = 28."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính giá trị của (x + y)² khi x = 2, y = −5.",
+      "expr": "(2-5)*(2-5)",
+      "answer": "9",
+      "explain": "(2 − 5)² = (−3)² = 9."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính giá trị của x³ − 1 khi x = 2.",
+      "expr": "2*2*2-1",
+      "answer": "7",
+      "explain": "2³ − 1 = 8 − 1 = 7."
+    }
+  ]
+}

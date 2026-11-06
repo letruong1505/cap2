@@ -1,0 +1,115 @@
+{
+  "id": "t7-tap2-dai-luong-ti-le-nghich",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 2",
+  "chapter": "Chương VI. Tỉ lệ thức và đại lượng tỉ lệ",
+  "lesson": "Bài 23. Đại lượng tỉ lệ nghịch",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hai đại lượng x và y tỉ lệ nghịch với nhau nếu x · y = a với a là hằng số khác 0."
+    },
+    {
+      "type": "formula",
+      "content": "x · y = a  ⇔  x1 · y1 = x2 · y2"
+    },
+    {
+      "type": "text",
+      "content": "Với đại lượng tỉ lệ nghịch: nếu x tăng bao nhiêu lần thì y giảm bấy nhiêu lần."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Biết x tỉ lệ nghịch với y, khi x = 4 thì y = 6. Khi x = 8 thì y bằng bao nhiêu?",
+      "expr": "24/8",
+      "steps": [
+        "a = x · y = 4 · 6 = 24, suy ra y = 24 : 8 = 3."
+      ],
+      "answer": "3"
+    },
+    {
+      "problem": "5 công nhân xong việc trong 12 ngày. Với 8 công nhân (cùng năng suất), làm xong trong bao nhiêu ngày?",
+      "expr": "5*12/8",
+      "steps": [
+        "Số ngày tỉ lệ nghịch với số công nhân: 5 · 12 = 8 · x, x = 7,5."
+      ],
+      "answer": "7,5"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "x tỉ lệ nghịch với y, khi x = 3 thì y = 8. Tính a = x · y.",
+      "expr": "3*8",
+      "answer": "24",
+      "explain": "a = x · y = 3 · 8 = 24."
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "x tỉ lệ nghịch với y. Khi y = 4 thì x = 3. Tính a.",
+      "expr": "3*4",
+      "answer": "12",
+      "explain": "a = x · y = 3 · 4 = 12."
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Khi x = 6 thì y = 4 (x, y tỉ lệ nghịch). Tính y khi x = 12.",
+      "expr": "4*6/12",
+      "answer": "2",
+      "explain": "6 · 4 = 12 · y, suy ra y = 2."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "6 người làm xong một công việc trong 10 ngày. Nếu 4 người (cùng năng suất) làm công việc đó thì mất bao nhiêu ngày?",
+      "expr": "6*10/4",
+      "answer": "15",
+      "explain": "6 · 10 = 4 · x, suy ra x = 15."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đại lượng x và y tỉ lệ nghịch; x1 = 2, y1 = 9; x2 = 3. Tìm y2.",
+      "expr": "2*9/3",
+      "answer": "6",
+      "explain": "x1 · y1 = x2 · y2, suy ra y2 = 18 : 3 = 6."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Diện tích hình chữ nhật là 24 cm² không đổi. Khi chiều dài 6 cm thì chiều rộng bằng bao nhiêu cm?",
+      "expr": "24/6",
+      "answer": "4",
+      "explain": "Chiều rộng = 24 : 6 = 4 cm."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Xe đi từ A đến B với vận tốc 40 km/h hết 3 giờ. Với vận tốc 60 km/h thì hết bao nhiêu giờ?",
+      "expr": "40*3/60",
+      "answer": "2",
+      "explain": "Quãng đường 40 · 3 = 120 km; thời gian 120 : 60 = 2 giờ."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một đội 9 người làm xong công việc trong 20 ngày. Nếu đội có 12 người (cùng năng suất) thì mất bao nhiêu ngày?",
+      "expr": "9*20/12",
+      "answer": "15",
+      "explain": "9 · 20 = 12 · x, suy ra x = 15."
+    }
+  ]
+}

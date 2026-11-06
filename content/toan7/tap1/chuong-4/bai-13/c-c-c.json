@@ -20,7 +20,7 @@
     {
       "type": "figure",
       "figure": "figures/lt-ccc.svg",
-      "caption": "ΔABC và ΔDEF có ba cặp cạnh tương ứng bằng nhau: a = a′, b = b′, c = c′."
+      "caption": "ΔABC và ΔDEF có ba cặp cạnh tương ứng bằng nhau: AB = DE (cùng kí hiệu c), BC = EF (a), CA = FD (b)."
     },
     {
       "type": "text",
@@ -118,6 +118,42 @@
       "expr": "6",
       "answer": "6",
       "explain": "AB và DE là hai cạnh tương ứng nên bằng nhau: 2x − 1 = x + 5, suy ra x = 6."
+    },
+    {
+      "id": "q07",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "ΔABC = ΔDEF, AB = 4 cm, BC = 5 cm, CA = 6 cm. Chu vi ΔDEF bằng bao nhiêu cm?",
+      "expr": "4+5+6",
+      "answer": "15",
+      "explain": "Các cạnh tương ứng bằng nhau nên chu vi bằng 4 + 5 + 6 = 15 cm."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "ΔABC = ΔMNP, MN = 7 cm, NP = 9 cm, PM = 5 cm. Chu vi ΔABC bằng bao nhiêu cm?",
+      "expr": "7+9+5",
+      "answer": "21",
+      "explain": "Chu vi ΔABC bằng chu vi ΔMNP: 7 + 9 + 5 = 21 cm."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "ΔABC = ΔDEF, AB = 2x + 1 và DE = 9 (cm). Tìm x.",
+      "expr": "(9-1)/2",
+      "answer": "4",
+      "explain": "AB = DE: 2x + 1 = 9, 2x = 8, x = 4."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "ΔABC = ΔDEF, BC = x + 3 và EF = 2x − 1 (cm). Tìm x.",
+      "expr": "4",
+      "answer": "4",
+      "explain": "BC = EF: x + 3 = 2x − 1, suy ra x = 4."
     }
   ]
 }

@@ -1,0 +1,115 @@
+{
+  "id": "t7-tap2-cong-tru-da-thuc",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 2",
+  "chapter": "Chương VII. Biểu thức đại số và đa thức một biến",
+  "lesson": "Bài 26. Phép cộng và phép trừ đa thức một biến",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Để cộng (trừ) hai đa thức một biến, ta nhóm các hạng tử cùng bậc rồi cộng (trừ) các hệ số tương ứng."
+    },
+    {
+      "type": "formula",
+      "content": "Ví dụ: (x² + 2x) + (x² − 3x + 1) = 2x² − x + 1."
+    },
+    {
+      "type": "text",
+      "content": "Có thể tính giá trị của tổng (hiệu) bằng cách tính giá trị từng đa thức rồi cộng (trừ) các kết quả."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho M(x) = x² + 1 và N(x) = 2x − 3. Tính M(2) + N(2).",
+      "expr": "(2*2+1)+(2*2-3)",
+      "steps": [
+        "M(2) = 5, N(2) = 1, tổng 6."
+      ],
+      "answer": "6"
+    },
+    {
+      "problem": "Tìm hệ số của x trong tổng (2x² + 5x − 1) + (x² − 3x + 4).",
+      "expr": "5-3",
+      "steps": [
+        "Nhóm các hạng tử bậc 1: 5x − 3x = 2x, hệ số là 2."
+      ],
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính M(2) + N(2) với M(x) = x² + 1 và N(x) = 2x − 3.",
+      "expr": "(2*2+1)+(2*2-3)",
+      "answer": "6",
+      "explain": "M(2) = 5, N(2) = 1, tổng 6."
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Bậc của tổng M(x) + N(x) với M = x³ + x và N = −x³ + 2x² là bao nhiêu?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "x³ triệt tiêu, còn 2x² + x, bậc 2."
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hệ số tự do của hiệu (x³ − 2) − (x³ + 5) là bao nhiêu?",
+      "expr": "-2-5",
+      "answer": "-7",
+      "explain": "Hệ số tự do: −2 − 5 = −7."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính P(−1) − Q(−1) với P = 3x² + x và Q = x² − 2x.",
+      "expr": "(3*(-1)*(-1)+(-1))-((-1)*(-1)-2*(-1))",
+      "answer": "-1",
+      "explain": "P(−1) = 2, Q(−1) = 3, hiệu = −1."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho P(x) = 2x − 1 và Q(x) = x + 3. Tính P(4) + Q(4).",
+      "expr": "(2*4-1)+(4+3)",
+      "answer": "14",
+      "explain": "P(4) = 7, Q(4) = 7, tổng 14."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính P(0) + P(1) với P(x) = x² + 2x + 3.",
+      "expr": "3+(1+2+3)",
+      "answer": "9",
+      "explain": "P(0) = 3, P(1) = 6, tổng 9."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính giá trị của (3x² − 2x + 1) − (x² − x + 4) tại x = 2.",
+      "expr": "(3*2*2-2*2+1)-(2*2-2+4)",
+      "answer": "3",
+      "explain": "Hiệu là 2x² − x − 3, tại x = 2 bằng 8 − 2 − 3 = 3."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hệ số tự do của tổng (x² + 3x − 6) + (2x² − 4) là bao nhiêu?",
+      "expr": "-6-4",
+      "answer": "-10",
+      "explain": "Hệ số tự do: −6 + (−4) = −10."
+    }
+  ]
+}
