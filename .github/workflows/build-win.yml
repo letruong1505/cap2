@@ -32,6 +32,9 @@ jobs:
 
       - name: Build portable exe
         shell: bash
+        env:
+          ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/
+          ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/
         run: |
           for i in 1 2 3; do npm run dist:win && exit 0; echo "build lỗi, thử lại lần $i"; sleep 20; done; exit 1
 
