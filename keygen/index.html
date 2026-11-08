@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="UTF-8" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'unsafe-inline'; script-src 'self'" />
+<title>Cấp khoá bản quyền</title>
+<style>
+body{font-family:Segoe UI,Arial,sans-serif;margin:0;background:#f4f6f9;color:#1d2b3a}
+main{max-width:680px;margin:0 auto;padding:24px}
+h1{font-size:22px;margin:0 0 16px}
+.card{background:#fff;border:1px solid #dde4ec;border-radius:12px;padding:16px 18px;margin-bottom:14px}
+label{display:block;font-weight:600;margin:10px 0 4px}
+input[type=text],input[type=date]{width:100%;box-sizing:border-box;padding:8px 10px;border:1px solid #c9d3de;border-radius:8px;font:inherit}
+.row{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.row label{display:inline-flex;gap:6px;align-items:center;font-weight:400;margin:6px 0}
+button{background:#1f4e79;color:#fff;border:0;border-radius:8px;padding:9px 16px;font:inherit;cursor:pointer}
+button.alt{background:#5b6b7d}
+textarea{width:100%;box-sizing:border-box;height:120px;font-family:Consolas,monospace;font-size:12px;padding:8px;border:1px solid #c9d3de;border-radius:8px}
+.err{color:#b3261e;margin-top:8px}.ok{color:#1b7a3d;margin-top:8px}.muted{color:#5b6b7d;font-size:14px}
+</style></head>
+<body><main>
+<h1>Cấp khoá bản quyền (offline)</h1>
+<div class="card"><div class="muted" id="keystate">Đang kiểm tra khoá riêng…</div>
+<div style="margin-top:8px"><button class="alt" id="choose" type="button">Chọn file khoá riêng (private.pem)</button></div></div>
+<div class="card">
+<label for="owner">Khách hàng / đơn vị</label><input type="text" id="owner" placeholder="Ví dụ: Nguyễn Văn A" />
+<label>Lớp được mở</label>
+<div class="row" id="grades">
+<label><input type="checkbox" value="6" /> Lớp 6</label><label><input type="checkbox" value="7" checked /> Lớp 7</label>
+<label><input type="checkbox" value="8" /> Lớp 8</label><label><input type="checkbox" value="9" /> Lớp 9</label>
+<label><input type="checkbox" id="all" /> Tất cả các lớp</label></div>
+<label for="machine">Mã máy của khách (hiện trong app)</label><input type="text" id="machine" placeholder="XXXX-XXXX-XXXX" />
+<div class="row"><label><input type="checkbox" id="any" /> Không gắn máy (chạy mọi máy)</label></div>
+<label for="expires">Ngày hết hạn</label><input type="date" id="expires" />
+<div style="margin-top:14px"><button id="issue" type="button">Tạo khoá</button></div>
+<div id="msg"></div></div>
+<div class="card"><label for="out">Khoá kích hoạt (gửi cho khách)</label><textarea id="out" readonly></textarea>
+<div style="margin-top:8px"><button id="copy" type="button">Sao chép</button></div></div>
+<script src="app.js"></script>
+</main></body></html>

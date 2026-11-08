@@ -38,8 +38,22 @@ jobs:
         run: |
           for i in 1 2 3; do npm run dist:win && exit 0; echo "build lỗi, thử lại lần $i"; sleep 20; done; exit 1
 
+      - name: Build key issuing tool exe
+        shell: bash
+        env:
+          ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/
+          ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/
+        run: |
+          for i in 1 2 3; do npm run dist:keygen && exit 0; echo "build lỗi, thử lại lần $i"; sleep 20; done; exit 1
+
       - name: Upload exe
         uses: actions/upload-artifact@v4
         with:
           name: vung-bai-exe
           path: dist/*.exe
+
+      - name: Upload key issuing tool
+        uses: actions/upload-artifact@v4
+        with:
+          name: cap-khoa-exe
+          path: dist-keygen/*.exe

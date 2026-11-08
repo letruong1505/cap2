@@ -9,7 +9,8 @@
     "start": "electron .",
     "validate": "node tools/validate-content.js",
     "test": "node --test tests/",
-    "dist:win": "electron-builder --win portable"
+    "dist:win": "electron-builder --win portable",
+    "dist:keygen": "electron-builder --win portable --config keygen/builder.json"
   },
   "build": {
     "appId": "vn.namlinh.vungbai",
