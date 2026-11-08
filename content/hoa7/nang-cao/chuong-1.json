@@ -1,0 +1,122 @@
+{
+  "id": "hoa7-nang-cao-chuong-1",
+  "grade": 7,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Bài tập nâng cao",
+  "chapter": "Chương I. Nguyên tử. Sơ lược về bảng tuần hoàn các nguyên tố hoá học",
+  "lesson": "Bài tập nâng cao · Chương I. Nguyên tử. Sơ lược về bảng tuần hoàn các nguyên tố hoá học",
+  "section": "Bài tập nâng cao",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các câu nâng cao của chương, gộp từ các bài đã học. Tên bài hiển thị trong ngoặc ở đầu mỗi câu. Hãy ôn lại lý thuyết và ví dụ của bài đó trước khi làm."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "b2-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 2] Nguyên tử có 17 proton và 18 neutron. Tính tổng số hạt cơ bản (proton, neutron, electron) trong nguyên tử.",
+      "expr": "17+17+18",
+      "answer": "52",
+      "explain": "Nguyên tử trung hoà điện nên số electron = số proton = 17. Tổng = 17 + 17 + 18 = 52."
+    },
+    {
+      "id": "b2-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 2] Nguyên tử có tổng số hạt là 34, trong đó số hạt không mang điện là 12. Tính số proton.",
+      "expr": "(34-12)/2",
+      "answer": "11",
+      "explain": "Số hạt mang điện = 34 − 12 = 22 gồm proton và electron bằng nhau nên p = 22 : 2 = 11."
+    },
+    {
+      "id": "b2-n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 2] Nguyên tử có khối lượng gần đúng 23 amu và 11 proton. Tính số neutron.",
+      "expr": "23-11",
+      "answer": "12",
+      "explain": "Khối lượng gần đúng bằng tổng số proton và neutron: n = 23 − 11 = 12."
+    },
+    {
+      "id": "b3-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 3] Nguyên tử có 17 electron (lớp 1: 2, lớp 2: 8). Lớp ngoài cùng có bao nhiêu electron?",
+      "expr": "17-2-8",
+      "answer": "7",
+      "explain": "17 − 2 − 8 = 7 electron ở lớp thứ ba."
+    },
+    {
+      "id": "b3-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 3] Nguyên tử có 20 electron, sắp xếp 2, 8, 8, rồi lớp ngoài cùng. Lớp ngoài cùng có bao nhiêu electron?",
+      "expr": "20-2-8-8",
+      "answer": "2",
+      "explain": "20 − 2 − 8 − 8 = 2 electron ở lớp thứ tư."
+    },
+    {
+      "id": "b3-n03",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "[Bài 3] Số hiệu nguyên tử của một nguyên tố bằng:",
+      "choices": [
+        "Số proton trong hạt nhân",
+        "Số neutron trong hạt nhân",
+        "Tổng số proton và neutron",
+        "Số lớp electron"
+      ],
+      "answer": 0,
+      "explain": "Số hiệu nguyên tử (Z) bằng số proton và cũng bằng số electron của nguyên tử trung hoà.",
+      "wrong_explain": {
+        "1": "Số hiệu nguyên tử là số proton.",
+        "2": "Đó là số khối.",
+        "3": "Đó là số thứ tự chu kì."
+      },
+      "concept": true
+    },
+    {
+      "id": "b4-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 4] Nguyên tố ở chu kì 2, nhóm VA. Tính số electron của nguyên tử (lớp 1 có 2 electron).",
+      "expr": "2+5",
+      "answer": "7",
+      "explain": "Chu kì 2 có 2 lớp electron, nhóm VA có 5 electron lớp ngoài cùng: 2 + 5 = 7."
+    },
+    {
+      "id": "b4-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 4] Nguyên tố ở chu kì 3, nhóm IIA. Tính số electron của nguyên tử (lớp 1: 2 e, lớp 2: 8 e).",
+      "expr": "2+8+2",
+      "answer": "12",
+      "explain": "Chu kì 3 có 3 lớp, nhóm IIA có 2 electron lớp ngoài: 2 + 8 + 2 = 12."
+    },
+    {
+      "id": "b4-n03",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "[Bài 4] Trong bảng tuần hoàn, số thứ tự của chu kì bằng:",
+      "choices": [
+        "Số lớp electron của nguyên tử",
+        "Số electron lớp ngoài cùng",
+        "Số proton",
+        "Số neutron"
+      ],
+      "answer": 0,
+      "explain": "Các nguyên tố trong cùng chu kì có cùng số lớp electron.",
+      "wrong_explain": {
+        "1": "Đó là số thứ tự nhóm A.",
+        "2": "Đó là số hiệu nguyên tử.",
+        "3": "Không liên quan."
+      },
+      "concept": true
+    }
+  ]
+}

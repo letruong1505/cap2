@@ -1,0 +1,191 @@
+{
+  "id": "hoa8-nang-cao-chuong-1",
+  "grade": 8,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Bài tập nâng cao",
+  "chapter": "Chương I. Phản ứng hoá học",
+  "lesson": "Bài tập nâng cao · Chương I. Phản ứng hoá học",
+  "section": "Bài tập nâng cao",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các câu nâng cao của chương, gộp từ các bài đã học. Tên bài hiển thị trong ngoặc ở đầu mỗi câu. Hãy ôn lại lý thuyết và ví dụ của bài đó trước khi làm."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "b2-n01",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "[Bài 2] Chất nào sau đây là chất phản ứng trong quá trình quang hợp của cây xanh?",
+      "choices": [
+        "Glucose và oxygen",
+        "Chỉ oxygen",
+        "Carbon dioxide và nước",
+        "Chỉ glucose"
+      ],
+      "answer": 2,
+      "explain": "Quang hợp: carbon dioxide + nước → glucose + oxygen.",
+      "wrong_explain": {
+        "0": "Đây là sản phẩm của quang hợp.",
+        "1": "Oxygen là sản phẩm.",
+        "3": "Glucose là sản phẩm."
+      },
+      "concept": true
+    },
+    {
+      "id": "b2-n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "[Bài 2] Quá trình nào cần cung cấp nhiệt liên tục mới xảy ra tiếp và được xếp vào phản ứng thu nhiệt?",
+      "choices": [
+        "Đốt cháy xăng trong động cơ",
+        "Nung đá vôi",
+        "Đốt cháy khí gas",
+        "Hô hấp tế bào"
+      ],
+      "answer": 1,
+      "explain": "Nung đá vôi cần nhiệt liên tục; ngừng đun thì phản ứng dừng.",
+      "wrong_explain": {
+        "0": "Phản ứng toả nhiệt.",
+        "2": "Phản ứng toả nhiệt.",
+        "3": "Phản ứng toả nhiệt."
+      },
+      "concept": true
+    },
+    {
+      "id": "b3-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 3] Một hỗn hợp gồm 0,5 mol O₂ và 1,5 mol N₂ ở 25 °C, 1 bar. Tính thể tích hỗn hợp khí (lít).",
+      "expr": "24.79*(0.5+1.5)",
+      "answer": "49.58",
+      "explain": "Tổng số mol = 2 mol nên V = 24,79 × 2 = 49,58 L."
+    },
+    {
+      "id": "b3-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 3] Tính khối lượng mol trung bình (g/mol) của hỗn hợp gồm 20% O₂ (M = 32) và 80% N₂ (M = 28) theo số mol.",
+      "expr": "0.2*32+0.8*28",
+      "answer": "28.8",
+      "explain": "M = 0,2·32 + 0,8·28 = 6,4 + 22,4 = 28,8 ≈ 29 g/mol."
+    },
+    {
+      "id": "b3-n03",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "[Bài 3] Số mol nguyên tử trong 1 mol phân tử H₂O là:",
+      "choices": [
+        "2 mol H và 1 mol O",
+        "1 mol H và 2 mol O",
+        "2 mol H và 2 mol O",
+        "1 mol H và 1 mol O"
+      ],
+      "answer": 0,
+      "explain": "Một phân tử H₂O có 2 nguyên tử H và 1 nguyên tử O.",
+      "wrong_explain": {
+        "1": "Đảo chỉ số: H₂O có 2 H, 1 O.",
+        "2": "H₂O chỉ có 1 nguyên tử O.",
+        "3": "H₂O có 2 nguyên tử H."
+      },
+      "concept": true
+    },
+    {
+      "id": "b4-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 4] Tính khối lượng nước (g) cần thêm vào 50 g dung dịch NaCl 10% để thu được dung dịch NaCl 5%.",
+      "expr": "50*10/5-50",
+      "answer": "50",
+      "explain": "Khối lượng NaCl = 5 g. Dung dịch 5% có khối lượng 5/0,05 = 100 g. Cần thêm 100 − 50 = 50 g nước."
+    },
+    {
+      "id": "b4-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 4] Cần lấy bao nhiêu gam dung dịch HCl 36% để chứa 7,2 g HCl?",
+      "expr": "7.2*100/36",
+      "answer": "20",
+      "explain": "m dung dịch = 7,2 × 100 / 36 = 20 g."
+    },
+    {
+      "id": "b5-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 5] Phản ứng CaCO₃ → CaO + CO₂. Nung 100 g đá vôi (chứa 80% CaCO₃) thu được 35,2 g CO₂. Tính khối lượng chất rắn còn lại sau phản ứng (g).",
+      "expr": "100-35.2",
+      "answer": "64.8",
+      "explain": "Khối lượng chất rắn giảm bằng khối lượng CO₂ bay đi: 100 − 35,2 = 64,8 g."
+    },
+    {
+      "id": "b5-n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "[Bài 5] Để cân bằng Al₂(SO₄)₃ + NaOH → Al(OH)₃ + Na₂SO₄ ta có thể coi nhóm nào là một đơn vị chung?",
+      "choices": [
+        "Chỉ nguyên tử Al",
+        "Nhóm SO₄ và nhóm OH",
+        "Chỉ nguyên tử Na",
+        "Không thể cân bằng"
+      ],
+      "answer": 1,
+      "explain": "Nhóm SO₄ và OH không đổi trong phản ứng nên được coi như một \"nguyên tố\".",
+      "wrong_explain": {
+        "0": "Chưa đủ để cân bằng.",
+        "2": "Chưa đủ để cân bằng.",
+        "3": "Phương trình cân bằng được."
+      },
+      "concept": true
+    },
+    {
+      "id": "b6-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 6] Đốt cháy 3,6 g Mg (M = 24) trong oxygen: 2Mg + O₂ → 2MgO. Tính thể tích O₂ (lít) ở 25 °C, 1 bar cần dùng.",
+      "expr": "24.79*36/480",
+      "answer": "1.85925",
+      "explain": "n(Mg) = 0,15 mol; n(O₂) = 0,075 mol; V = 24,79 × 0,075 = 1,85925 L."
+    },
+    {
+      "id": "b6-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 6] Để thu 22,4 g Fe với hiệu suất 80%, cần lí thuyết bao nhiêu gam Fe (g)?",
+      "expr": "22.4*100/80",
+      "answer": "28",
+      "explain": "Lí thuyết = thực tế / H = 22,4 / 0,8 = 28 g."
+    },
+    {
+      "id": "b7-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 7] Ở nhiệt độ ban đầu một phản ứng mất 128 s. Cứ tăng 10 °C thì thời gian giảm một nửa. Nếu tăng 30 °C thì mất bao nhiêu giây?",
+      "expr": "128/8",
+      "answer": "16",
+      "explain": "Mỗi lần tăng 10 °C giảm một nửa: 128 → 64 → 32 → 16 s."
+    },
+    {
+      "id": "b7-n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "[Bài 7] Vì sao khi nung đá vôi trong lò, người ta thường đập nhỏ đá?",
+      "choices": [
+        "Giảm nhiệt độ cần dùng",
+        "Tăng diện tích tiếp xúc để phản ứng nhanh và đều hơn",
+        "Giảm lượng vôi sống",
+        "Để đá nặng hơn"
+      ],
+      "answer": 1,
+      "explain": "Đá nhỏ thì diện tích bề mặt lớn, nhiệt truyền vào nhanh.",
+      "wrong_explain": {
+        "0": "Không phải.",
+        "2": "Không phải.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    }
+  ]
+}
