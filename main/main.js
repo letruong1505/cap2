@@ -2,7 +2,7 @@ const { app, BrowserWindow, ipcMain } = require('electron');
 const fs = require('fs');
 const path = require('path');
 const { loadManifest, loadLesson } = require('./content-loader');
-const { loadLicense } = require('./license');
+const lic = require('./license');
 
 const APP_TITLE = 'Giáo trình THCS';
 
@@ -16,16 +16,24 @@ function readBuildInfo() {
   }
 }
 
-ipcMain.handle('manifest:load', (_event, subject) => loadManifest(subject));
-ipcMain.handle('lesson:load', (_event, relPath) => loadLesson(relPath));
+// Khoá bản quyền lưu trong thư mục dữ liệu của app (không nằm cạnh file exe).
+const licenseStoreDir = () => app.getPath('userData');
+const licenseNow = () => lic.currentLicense(licenseStoreDir());
+
+ipcMain.handle('manifest:load', (_event, subject) => lic.annotateManifest(licenseNow(), subject, loadManifest(subject)));
+ipcMain.handle('lesson:load', (_event, relPath) => {
+  // Chặn ở tiến trình chính: bài bị khoá thì không trả nội dung dù giao diện bị chỉnh sửa.
+  const [subject, ...parts] = String(relPath).split('/');
+  if (!lic.canOpen(licenseNow(), subject, loadManifest(subject), parts.join('/'))) {
+    throw new Error('LOCKED');
+  }
+  return loadLesson(relPath);
+});
 ipcMain.handle('app:info', () => readBuildInfo());
 
-// Thư mục đặt license.json: thư mục chứa file exe khi chạy bản portable, hoặc thư mục dự án khi chạy thử.
-function licenseDir() {
-  if (process.env.PORTABLE_EXECUTABLE_DIR) return process.env.PORTABLE_EXECUTABLE_DIR;
-  return app.isPackaged ? path.dirname(app.getPath('exe')) : path.join(__dirname, '..');
-}
-ipcMain.handle('license:load', () => loadLicense(licenseDir()));
+ipcMain.handle('license:load', () => licenseNow());
+ipcMain.handle('license:activate', (_event, key) => lic.activate(licenseStoreDir(), key));
+ipcMain.handle('license:remove', () => { lic.deactivate(licenseStoreDir()); return licenseNow(); });
 
 function createWindow() {
   const win = new BrowserWindow({

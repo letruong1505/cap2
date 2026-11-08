@@ -8,6 +8,7 @@
   "scripts": {
     "start": "electron .",
     "validate": "node tools/validate-content.js",
+    "test": "node --test tests/",
     "dist:win": "electron-builder --win portable"
   },
   "build": {

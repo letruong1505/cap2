@@ -277,9 +277,9 @@ function renderHome(manifest, subject) {
         for (const lesson of chapter.lessons) {
           const li = el('li');
           if (lesson.file) {
-            const btn = el('button', { class: 'link', type: 'button' }, lesson.title);
+            const btn = el('button', { class: 'link' + (lesson.locked ? ' locked' : ''), type: 'button' }, (lesson.locked ? '🔒 ' : '') + lesson.title);
             // Đường dẫn trong manifest tính từ thư mục sản phẩm, còn bộ nạp tính từ content/.
-            btn.addEventListener('click', () => openLesson(subject + '/' + lesson.file, lesson.mode || 'practice'));
+            btn.addEventListener('click', () => (lesson.locked ? showLockedNotice() : openLesson(subject + '/' + lesson.file, lesson.mode || 'practice')));
             li.append(btn);
           } else {
             li.append(el('span', { class: 'meta' }, `${lesson.title} · đang biên soạn`));
@@ -391,33 +391,74 @@ const GRADE_SUBJECTS = { 7: ['toan7', 'ly7', 'hoa7', 'sinh7', 'lichsu7', 'diali7
 const manifestCache = {};
 
 function licenseDaysLeft(expiresOn) {
-  // Hết hạn vào cuối ngày ghi trong file.
+  // Hết hạn vào cuối ngày ghi trong khoá.
   const [y, m, d] = expiresOn.split('-').map(Number);
   const end = new Date(y, m - 1, d, 23, 59, 59);
   return Math.ceil((end - new Date()) / 86400000);
 }
 
+const LICENSE_MESSAGES = {
+  invalid: 'Khoá không hợp lệ. Hãy kiểm tra lại và dán đủ toàn bộ khoá.',
+  'wrong-machine': 'Khoá này được cấp cho máy khác.',
+  expired: 'Khoá đã hết hạn. Liên hệ Nam Linh Educenter để gia hạn.',
+  clock: 'Đồng hồ máy bị chỉnh lùi. Hãy chỉnh lại đúng ngày giờ.',
+};
+
+let lastLicense = { status: 'missing' };
+
+function gradesText(grades) {
+  return grades === 'all' ? 'Tất cả các lớp' : 'Lớp ' + grades.join(', ');
+}
+
+function showLockedNotice() {
+  window.alert('Bài này cần bản quyền. Bản dùng thử chỉ mở 2 bài đầu của mỗi môn.\nVề màn hình chọn lớp để nhập khoá kích hoạt.');
+}
+
+async function refreshLicense() {
+  try {
+    lastLicense = await window.vungBai.loadLicense();
+  } catch {
+    lastLicense = { status: 'missing' };
+  }
+  renderLicense(lastLicense);
+  // Mục lục có thể đã đổi trạng thái khoá.
+  for (const subject of Object.keys(manifestCache)) manifestCache[subject] = await window.vungBai.loadManifest(subject);
+}
+
 function renderLicense(license) {
   const info = document.getElementById('license-info');
   const days = document.getElementById('license-days');
+  const children = [];
   if (license.status === 'ok') {
-    info.replaceChildren(
+    children.push(
       el('div', {}, `Đơn vị cấp: ${license.owner || '—'}`),
-      el('div', { class: 'muted' }, `Mã khóa: ${license.code || '—'} · Phạm vi: ${license.scope || '—'}`),
+      el('div', { class: 'muted' }, `Mã khoá: ${license.id || '—'} · Phạm vi: ${gradesText(license.grades)}`),
     );
     const left = licenseDaysLeft(license.expiresOn);
-    if (left >= 0) {
-      days.replaceChildren(
-        el('div', { class: 'days' }, `${left} ngày`),
-        el('div', { class: 'muted' }, `Hết hạn ngày ${license.expiresOn.split('-').reverse().join('/')}`),
-      );
-    } else {
-      days.replaceChildren(el('div', { class: 'days' }, 'Đã hết hạn'), el('div', { class: 'muted' }, 'Liên hệ Nam Linh Educenter để gia hạn.'));
-    }
+    days.replaceChildren(
+      el('div', { class: 'days' }, `${left} ngày`),
+      el('div', { class: 'muted' }, `Hết hạn ngày ${license.expiresOn.split('-').reverse().join('/')}`),
+    );
   } else {
-    info.replaceChildren(el('div', { class: 'muted' }, 'Chưa kích hoạt bản quyền.'));
+    children.push(el('div', { class: 'muted' }, LICENSE_MESSAGES[license.status] || 'Chưa kích hoạt bản quyền. Đang dùng thử: mở 2 bài đầu của mỗi môn.'));
     days.replaceChildren(el('div', { class: 'muted' }, '—'));
   }
+  if (license.machineId) children.push(el('div', { class: 'muted' }, `Mã máy: ${license.machineId} (gửi mã này khi mua khoá)`));
+
+  const input = el('input', { type: 'text', id: 'license-key', placeholder: 'Dán khoá kích hoạt (NL1-...)', autocomplete: 'off', spellcheck: 'false' });
+  const btn = el('button', { type: 'button', class: 'primary' }, license.status === 'ok' ? 'Đổi khoá' : 'Kích hoạt');
+  const msg = el('div', { class: 'muted', id: 'license-msg' });
+  btn.addEventListener('click', async () => {
+    const r = await window.vungBai.activateLicense(input.value);
+    if (r.status === 'ok') {
+      input.value = '';
+      await refreshLicense();
+    } else {
+      msg.textContent = LICENSE_MESSAGES[r.status] || 'Không kích hoạt được.';
+    }
+  });
+  children.push(el('div', { class: 'license-form' }, input, btn), msg);
+  info.replaceChildren(...children);
 }
 
 function renderGrades() {
@@ -475,13 +516,7 @@ async function init() {
     });
     document.getElementById('btn-grades').addEventListener('click', () => showLaunch());
     renderGrades();
-    let license;
-    try {
-      license = await window.vungBai.loadLicense();
-    } catch {
-      license = { status: 'missing' };
-    }
-    renderLicense(license);
+    await refreshLicense();
     showLaunch();
   } catch (err) {
     document.getElementById('empty').replaceChildren(el('p', {}, 'Không tải được gói nội dung: ' + err.message));
