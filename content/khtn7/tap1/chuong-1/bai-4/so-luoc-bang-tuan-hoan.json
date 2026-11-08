@@ -1,0 +1,196 @@
+{
+  "id": "bai-4",
+  "grade": 7,
+  "subject": "khtn",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Khoa học tự nhiên 7",
+  "chapter": "Chương I. Nguyên tử. Sơ lược về bảng tuần hoàn các nguyên tố hoá học",
+  "lesson": "Bài 4. Sơ lược về bảng tuần hoàn các nguyên tố hoá học",
+  "section": "",
+  "bookPage": 23,
+  "requirements": [
+    "Nêu được các nguyên tắc xây dựng bảng tuần hoàn các nguyên tố hoá học.",
+    "Mô tả được cấu tạo bảng tuần hoàn gồm ô, nhóm, chu kì.",
+    "Sử dụng được bảng tuần hoàn để chỉ ra các nhóm nguyên tố kim loại, phi kim, khí hiếm."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Bảng tuần hoàn các nguyên tố hoá học được xây dựng theo ba nguyên tắc: các nguyên tố được xếp theo chiều tăng dần của điện tích hạt nhân; các nguyên tố trong cùng một hàng có cùng số lớp electron; các nguyên tố trong cùng một cột có tính chất gần giống nhau."
+    },
+    {
+      "type": "text",
+      "content": "Mỗi ô nguyên tố cho biết kí hiệu hoá học, tên nguyên tố, số hiệu nguyên tử và khối lượng nguyên tử. Số hiệu nguyên tử bằng số đơn vị điện tích hạt nhân, bằng số electron trong nguyên tử, và bằng số thứ tự của nguyên tố trong bảng."
+    },
+    {
+      "type": "text",
+      "content": "Chu kì là dãy các nguyên tố có nguyên tử cùng số lớp electron, sắp xếp theo chiều điện tích hạt nhân tăng dần từ trái sang phải. Bảng có 7 chu kì. Số thứ tự của chu kì bằng số lớp electron của nguyên tử các nguyên tố trong chu kì đó."
+    },
+    {
+      "type": "text",
+      "content": "Chu kì 1, 2, 3 là chu kì nhỏ. Chu kì 4, 5, 6, 7 là chu kì lớn. Chu kì 1 có 2 nguyên tố, chu kì 2 và chu kì 3 mỗi chu kì có 8 nguyên tố."
+    },
+    {
+      "type": "text",
+      "content": "Nhóm là cột trong bảng. Có 8 nhóm A, đánh số từ IA đến VIIIA, và 8 nhóm B, đánh số từ IB đến VIIIB. Với nhóm A, số electron ở lớp ngoài cùng bằng số thứ tự của nhóm (trừ He)."
+    },
+    {
+      "type": "text",
+      "content": "Phần lớn nguyên tố là kim loại, nằm ở góc dưới bên trái bảng, được thể hiện bằng màu xanh. Phi kim nằm chủ yếu ở góc trên bên phải, màu hồng. Khí hiếm nằm ở nhóm VIIIA, màu vàng, có lớp electron ngoài cùng bền vững."
+    },
+    {
+      "type": "text",
+      "content": "Trong 118 nguyên tố đã biết có hơn 90 nguyên tố là kim loại, chưa đến 20 nguyên tố là phi kim, và 7 nguyên tố khí hiếm."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Nguyên tố magnesium có số hiệu nguyên tử Z = 12 và nằm ở chu kì 3. Số thứ tự chu kì của nó là bao nhiêu?",
+      "expr": "3",
+      "steps": [
+        "Số thứ tự chu kì bằng số lớp electron của nguyên tử.",
+        "Magnesium thuộc chu kì 3, nên số thứ tự chu kì là 3."
+      ],
+      "answer": "3"
+    },
+    {
+      "problem": "Chu kì 2 và chu kì 3 mỗi chu kì có 8 nguyên tố. Tổng số nguyên tố thuộc hai chu kì này là bao nhiêu?",
+      "expr": "8 + 8",
+      "steps": [
+        "Chu kì 2 có 8 nguyên tố.",
+        "Chu kì 3 có 8 nguyên tố.",
+        "Tổng là 8 + 8 = 16 nguyên tố."
+      ],
+      "answer": "16"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Các nguyên tố trong bảng tuần hoàn được xếp theo chiều tăng dần của đại lượng nào?",
+      "choices": [
+        "Số neutron trong hạt nhân",
+        "Khối lượng nguyên tử",
+        "Điện tích hạt nhân",
+        "Số nhóm"
+      ],
+      "answer": 2,
+      "explain": "Các nguyên tố được xếp theo chiều tăng dần của điện tích hạt nhân, tức là số hiệu nguyên tử.",
+      "wrong_explain": {
+        "0": "Số neutron có thể khác nhau giữa các nguyên tử cùng nguyên tố, nên không dùng để xếp.",
+        "1": "Khối lượng là đại lượng Mendeleev dùng ban đầu, nhưng bảng hiện nay xếp theo điện tích hạt nhân.",
+        "3": "Số nhóm là kết quả của việc xếp bảng, không phải nguyên tắc xếp."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Các nguyên tố khí hiếm nằm ở nhóm nào của bảng tuần hoàn?",
+      "choices": [
+        "IA",
+        "VIIA",
+        "VIIIA",
+        "IIA"
+      ],
+      "answer": 2,
+      "explain": "Các nguyên tố khí hiếm nằm ở nhóm VIIIA, được thể hiện bằng màu vàng.",
+      "wrong_explain": {
+        "0": "Nhóm IA chứa kim loại kiềm và hydrogen.",
+        "1": "Nhóm VIIA chứa halogen, không phải khí hiếm.",
+        "3": "Nhóm IIA chứa kim loại kiềm thổ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Bảng tuần hoàn hiện nay có bao nhiêu chu kì? (nhập số)",
+      "expr": "7",
+      "answer": "7",
+      "explain": "Bảng tuần hoàn có 7 chu kì, đánh số từ 1 đến 7."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Các nguyên tố cùng một chu kì có đặc điểm chung nào?",
+      "choices": [
+        "Cùng số electron ở lớp ngoài cùng",
+        "Cùng số lớp electron trong nguyên tử",
+        "Cùng số proton",
+        "Cùng khối lượng nguyên tử"
+      ],
+      "answer": 1,
+      "explain": "Các nguyên tố trong cùng một chu kì có cùng số lớp electron. Số lớp electron chính là số thứ tự chu kì.",
+      "wrong_explain": {
+        "0": "Electron lớp ngoài cùng khác nhau giữa các nguyên tố trong cùng chu kì.",
+        "2": "Số proton khác nhau giữa các nguyên tố khác nhau.",
+        "3": "Khối lượng nguyên tử khác nhau giữa các nguyên tố."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nguyên tố aluminium (Al, Z = 13) thuộc nhóm IIIA. Nguyên tử Al có bao nhiêu electron ở lớp ngoài cùng? (nhập số)",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Với nhóm A, số electron lớp ngoài cùng bằng số thứ tự nhóm, nên Al có 3 electron ở lớp ngoài cùng."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nguyên tố sulfur (S) thuộc nhóm VIA. Nguyên tử S có bao nhiêu electron ở lớp ngoài cùng? (nhập số)",
+      "expr": "6",
+      "answer": "6",
+      "explain": "Nhóm VIA có số thứ tự 6, nên nguyên tử S có 6 electron ở lớp ngoài cùng."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Nguyên tố nào thuộc chu kì nhỏ và cùng nhóm với beryllium (Be)?",
+      "choices": [
+        "Magnesium (Mg)",
+        "Calcium (Ca)",
+        "Sodium (Na)",
+        "Lithium (Li)"
+      ],
+      "answer": 0,
+      "explain": "Beryllium thuộc chu kì 2, nhóm IIA. Magnesium thuộc chu kì 3, nhóm IIA, nên là chu kì nhỏ và cùng nhóm.",
+      "wrong_explain": {
+        "1": "Calcium thuộc chu kì 4, là chu kì lớn, nên không đúng yêu cầu chu kì nhỏ.",
+        "2": "Sodium thuộc nhóm IA, không cùng nhóm với beryllium.",
+        "3": "Lithium thuộc nhóm IA, không cùng nhóm với beryllium."
+      },
+      "concept": true
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Các nguyên tố kim loại thường nằm ở vị trí nào trong bảng tuần hoàn?",
+      "choices": [
+        "Góc trên bên phải",
+        "Góc dưới bên trái",
+        "Cột VIIIA",
+        "Hàng đầu tiên"
+      ],
+      "answer": 1,
+      "explain": "Các nguyên tố kim loại tập trung ở góc dưới bên trái bảng, được thể hiện bằng màu xanh.",
+      "wrong_explain": {
+        "0": "Góc trên bên phải là vị trí chủ yếu của phi kim.",
+        "2": "Cột VIIIA là nhóm khí hiếm.",
+        "3": "Hàng đầu tiên chỉ có hydrogen và helium."
+      },
+      "concept": true
+    }
+  ]
+}

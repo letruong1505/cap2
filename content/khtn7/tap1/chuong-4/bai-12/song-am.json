@@ -1,0 +1,197 @@
+{
+  "id": "bai-12",
+  "grade": 7,
+  "subject": "khtn",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Khoa học tự nhiên 7",
+  "chapter": "Chương IV. Âm thanh",
+  "lesson": "Bài 12. Sóng âm",
+  "section": "",
+  "bookPage": 60,
+  "requirements": [
+    "Thực hiện thí nghiệm tạo sóng âm (như gảy đàn, gõ vào thanh kim loại,...) để chứng tỏ được sóng âm có thể truyền được trong chất rắn, lỏng, khí.",
+    "Giải thích được sự truyền sóng âm trong không khí."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Chuyển động qua lại quanh một vị trí cân bằng gọi là dao động. Ví dụ: thanh thép đàn hồi khi kéo xuống rồi thả ra dao động quanh vị trí cân bằng."
+    },
+    {
+      "type": "text",
+      "content": "Sóng là sự lan truyền dao động trong môi trường. Ví dụ: dao động của thanh thép làm mặt nước dao động, tạo thành sóng nước hình tròn."
+    },
+    {
+      "type": "text",
+      "content": "Nguồn âm là vật phát ra âm và luôn dao động. Ví dụ: mặt trống, dây đàn, cây sáo, âm thoa."
+    },
+    {
+      "type": "text",
+      "content": "Sóng âm là sự lan truyền dao động của nguồn âm trong môi trường. Âm truyền được trong chất rắn, chất lỏng và chất khí, nhưng không truyền được trong chân không."
+    },
+    {
+      "type": "text",
+      "content": "Ví dụ: khi áp tai xuống đất có thể nghe được tiếng vó ngựa từ xa, vì âm truyền trong chất rắn tốt hơn trong không khí."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một vật dao động 4 lần trong thời gian 2 s. Trong 1 s, vật dao động bao nhiêu lần?",
+      "expr": "4 / 2",
+      "steps": [
+        "Số dao động trong 1 s = số dao động / thời gian = 4 / 2.",
+        "4 / 2 = 2 dao động trong 1 s."
+      ],
+      "answer": "2"
+    },
+    {
+      "problem": "Một con muỗi vỗ cánh 600 lần trong 2 s. Số lần vỗ cánh trong 1 s là bao nhiêu?",
+      "expr": "600 / 2",
+      "steps": [
+        "Thời gian 2 s, số lần vỗ cánh 600.",
+        "600 / 2 = 300 lần trong 1 s."
+      ],
+      "answer": "300"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Chuyển động qua lại quanh một vị trí cân bằng gọi là:",
+      "choices": [
+        "Dao động",
+        "Sóng",
+        "Âm thanh",
+        "Vận tốc"
+      ],
+      "answer": 0,
+      "explain": "Chuyển động qua lại quanh vị trí cân bằng được gọi là dao động.",
+      "wrong_explain": {
+        "1": "Sóng là sự lan truyền dao động trong môi trường, không phải chính chuyển động qua lại.",
+        "2": "Âm thanh là kết quả khi sóng âm truyền đến tai.",
+        "3": "Vận tốc là đại lượng cho biết nhanh chậm của chuyển động."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Sóng âm là sự lan truyền:",
+      "choices": [
+        "Dao động của nguồn âm trong môi trường",
+        "Nước từ nơi này đến nơi khác",
+        "Ánh sáng trong chân không",
+        "Dòng điện trong dây dẫn"
+      ],
+      "answer": 0,
+      "explain": "Sóng âm là sự lan truyền dao động của nguồn âm trong môi trường.",
+      "wrong_explain": {
+        "1": "Nước không lan truyền như vậy khi có sóng âm.",
+        "2": "Ánh sáng không phải sóng âm.",
+        "3": "Dòng điện không phải sóng âm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Âm không truyền được trong môi trường nào?",
+      "choices": [
+        "Chân không",
+        "Không khí",
+        "Nước",
+        "Thép"
+      ],
+      "answer": 0,
+      "explain": "Âm không truyền được trong chân không; cần có môi trường vật chất.",
+      "wrong_explain": {
+        "1": "Âm truyền được trong không khí.",
+        "2": "Âm truyền được trong nước.",
+        "3": "Âm truyền được trong thép (chất rắn)."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nguồn âm luôn có đặc điểm gì?",
+      "choices": [
+        "Đều dao động",
+        "Đứng yên hoàn toàn",
+        "Chỉ phát ra ánh sáng",
+        "Không có chuyển động"
+      ],
+      "answer": 0,
+      "explain": "Mọi nguồn âm đều dao động; dao động ngừng thì âm ngừng.",
+      "wrong_explain": {
+        "1": "Nguồn âm đang phát âm phải dao động.",
+        "2": "Nguồn âm phát ra âm thanh, không phải ánh sáng.",
+        "3": "Nguồn âm có chuyển động dao động."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao có thể nghe được tiếng vó ngựa từ xa khi áp tai xuống đất?",
+      "choices": [
+        "Âm truyền trong chất rắn tốt hơn trong không khí",
+        "Đất tự phát ra âm thanh",
+        "Tai chỉ nghe được khi ở dưới đất",
+        "Không có lý do đặc biệt"
+      ],
+      "answer": 0,
+      "explain": "Âm truyền trong đất (chất rắn) tốt hơn trong không khí nên tai áp xuống đất nghe rõ hơn.",
+      "wrong_explain": {
+        "1": "Đất không tự phát ra tiếng vó ngựa, âm đến từ con ngựa.",
+        "2": "Tai không chỉ nghe được khi ở dưới đất.",
+        "3": "Có lý do vật lí: âm truyền trong chất rắn tốt hơn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một vật dao động 4 lần trong 2 s. Trong 1 s vật dao động bao nhiêu lần?",
+      "expr": "4 / 2",
+      "answer": "2",
+      "explain": "4 / 2 = 2 dao động trong 1 s."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một con muỗi vỗ cánh 600 lần trong 2 s. Trong 1 s nó vỗ cánh bao nhiêu lần?",
+      "expr": "600 / 2",
+      "answer": "300",
+      "explain": "600 / 2 = 300 lần."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Khi hút hết không khí ra khỏi bình chứa chuông đồng hồ, người ngoài bình có nghe được tiếng chuông không?",
+      "choices": [
+        "Không nghe thấy",
+        "Nghe rõ hơn",
+        "Nghe to hơn",
+        "Nghe cao hơn"
+      ],
+      "answer": 0,
+      "explain": "Trong chân không âm không truyền được nên không nghe thấy tiếng chuông.",
+      "wrong_explain": {
+        "1": "Âm không truyền được trong chân không nên không thể nghe rõ hơn.",
+        "2": "Không thể nghe to hơn khi không có môi trường truyền âm.",
+        "3": "Âm không truyền được nên không có việc cao hơn."
+      },
+      "concept": true
+    }
+  ]
+}

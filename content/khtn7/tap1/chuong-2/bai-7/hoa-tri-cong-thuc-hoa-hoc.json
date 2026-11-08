@@ -1,0 +1,178 @@
+{
+  "id": "bai-7",
+  "grade": 7,
+  "subject": "khtn",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Khoa học tự nhiên 7",
+  "chapter": "Chương II. Phân tử • Liên kết hoá học",
+  "lesson": "Bài 7. Hoá trị và công thức hoá học",
+  "section": "",
+  "bookPage": 40,
+  "requirements": [
+    "Trình bày được khái niệm về hoá trị (cho chất cộng hoá trị), cách viết công thức hoá học.",
+    "Viết được công thức hoá học của một số đơn chất và hợp chất đơn giản, thông dụng.",
+    "Nêu được mối liên hệ giữa hoá trị của nguyên tố với công thức hoá học của hợp chất.",
+    "Tính được phần trăm nguyên tố trong hợp chất khi biết công thức hoá học của nó.",
+    "Xác định được công thức hoá học của hợp chất dựa vào phần trăm nguyên tố và khối lượng phân tử."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Công thức hoá học của chất là cách biểu diễn chất bằng kí hiệu hoá học của nguyên tố kèm chỉ số ở chân bên phải. Chỉ số là số nguyên, cho biết số nguyên tử của mỗi nguyên tố; chỉ số 1 thì không ghi."
+    },
+    {
+      "type": "text",
+      "content": "Công thức hoá học của đơn chất kim loại, khí hiếm và một số phi kim (có 1 nguyên tử) là kí hiệu hoá học của nguyên tố. Ví dụ: Cu, Fe, He, C, S. Một số phi kim có phân tử gồm 2 hoặc 3 nguyên tử thì thêm chỉ số: H2, O2, O3."
+    },
+    {
+      "type": "text",
+      "content": "Ý nghĩa của công thức hoá học: cho biết các nguyên tố tạo nên chất, số nguyên tử (hoặc tỉ lệ số nguyên tử) của các nguyên tố trong phân tử và khối lượng phân tử của chất."
+    },
+    {
+      "type": "text",
+      "content": "Hoá trị là con số biểu thị khả năng liên kết của nguyên tử nguyên tố này với nguyên tử nguyên tố khác. Hoá trị của nguyên tố H là I, của O là II. Quy tắc: trong công thức hợp chất hai nguyên tố, tích chỉ số và hoá trị của nguyên tố này bằng tích chỉ số và hoá trị của nguyên tố kia."
+    },
+    {
+      "type": "formula",
+      "content": "% khối lượng nguyên tố = (khối lượng nguyên tử · số nguyên tử của nguyên tố · 100%) / khối lượng phân tử"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính khối lượng phân tử của calcium carbonate CaCO3 (Ca = 40, C = 12, O = 16).",
+      "expr": "40 + 12 + 3 * 16",
+      "steps": [
+        "Phân tử CaCO3 gồm 1 nguyên tử Ca, 1 nguyên tử C và 3 nguyên tử O.",
+        "40 + 12 + 3 · 16 = 100 amu."
+      ],
+      "answer": "100"
+    },
+    {
+      "problem": "Tính phần trăm khối lượng Mg trong hợp chất MgO (Mg = 24, O = 16; khối lượng phân tử MgO = 40).",
+      "expr": "24 * 100 / 40",
+      "steps": [
+        "Khối lượng phân tử MgO = 24 + 16 = 40 amu.",
+        "%Mg = 24 · 1 · 100% / 40 = 60%."
+      ],
+      "answer": "60"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Công thức hoá học của đơn chất đồng là:",
+      "choices": [
+        "Cu",
+        "CU",
+        "Co",
+        "C"
+      ],
+      "answer": 0,
+      "explain": "Đồng là kim loại, công thức hoá học là kí hiệu hoá học Cu.",
+      "wrong_explain": {
+        "1": "Kí hiệu hoá học chỉ viết chữ cái đầu in hoa, chữ sau viết thường.",
+        "2": "Co là kí hiệu của cobalt, không phải đồng.",
+        "3": "C là kí hiệu của carbon, không phải đồng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Chỉ số ở chân bên phải kí hiệu hoá học cho biết:",
+      "choices": [
+        "Số nguyên tử của nguyên tố trong phân tử",
+        "Hoá trị của nguyên tố",
+        "Khối lượng nguyên tử",
+        "Số electron lớp ngoài cùng"
+      ],
+      "answer": 0,
+      "explain": "Chỉ số cho biết số nguyên tử của nguyên tố đó trong một phân tử chất.",
+      "wrong_explain": {
+        "1": "Hoá trị được ghi bằng số La Mã phía trên kí hiệu, không phải chỉ số dưới.",
+        "2": "Khối lượng nguyên tử không được ghi trong công thức hoá học.",
+        "3": "Số electron lớp ngoài cùng không thể hiện trong công thức hoá học."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khối lượng phân tử của CaCO3 bằng bao nhiêu amu? (Ca = 40, C = 12, O = 16)",
+      "expr": "40 + 12 + 3 * 16",
+      "answer": "100",
+      "explain": "Khối lượng phân tử = 40 + 12 + 3 · 16 = 100 amu."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tổng số nguyên tử có trong một phân tử CaCO3 là bao nhiêu?",
+      "expr": "1 + 1 + 3",
+      "answer": "5",
+      "explain": "Phân tử CaCO3 có 1 Ca + 1 C + 3 O = 5 nguyên tử."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trong hợp chất H2O, hoá trị của oxygen là:",
+      "choices": [
+        "I",
+        "II",
+        "III",
+        "IV"
+      ],
+      "answer": 1,
+      "explain": "Nguyên tử H có hoá trị I, mỗi O liên kết với 2 H nên O có hoá trị II.",
+      "wrong_explain": {
+        "0": "Hoá trị I là của H, không phải của O.",
+        "2": "Hoá trị III không phù hợp với 2 nguyên tử H liên kết với 1 O.",
+        "3": "Hoá trị IV không phù hợp với 2 nguyên tử H liên kết với 1 O."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phần trăm khối lượng Mg trong hợp chất MgO là bao nhiêu phần trăm? (Mg = 24, O = 16)",
+      "expr": "24 * 100 / 40",
+      "answer": "60",
+      "explain": "%Mg = 24 · 100% / 40 = 60%."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Trong hợp chất Na2O, số nguyên tử Na có trong một phân tử là:",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "explain": "Chỉ số 2 ở Na cho biết mỗi phân tử Na2O có 2 nguyên tử Na.",
+      "wrong_explain": {
+        "0": "Chỉ số 1 không được ghi, nên phải có chỉ số lớn hơn 1.",
+        "2": "Chỉ số của Na trong Na2O là 2, không phải 3.",
+        "3": "Chỉ số của O là 1, không phải 4."
+      },
+      "expr": "2"
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hợp chất Al(x)O(y) có Al hoá trị III, O hoá trị II. Khi y = 3, giá trị x là bao nhiêu? (Quy tắc: x · III = y · II)",
+      "expr": "3 * 2 / 3",
+      "answer": "2",
+      "explain": "Áp dụng quy tắc hoá trị: x · 3 = 3 · 2, suy ra x = 2."
+    }
+  ]
+}

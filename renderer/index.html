@@ -3,16 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:" />
-  <title>Vững Bài</title>
+  <title>Giáo trình số - Cấp 2 (dành cho HS THCS)</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="topbar">
-    <div class="brand">Vững Bài <span class="sub">Toán 7 · Bản thử</span> <span class="sub" id="build"></span></div>
+    <div class="brand">Giáo trình số - Cấp 2 <span class="sub">(dành cho HS THCS)</span> <span class="sub" id="build"></span></div>
     <nav id="breadcrumb"></nav>
   </header>
 
   <main id="app">
+    <section id="launch" class="panel" hidden>
+      <p class="greeting">Chào bạn, Cảm ơn bạn đã cố gắng vì tương lai của chính bạn!</p>
+      <h1>Chọn lớp học</h1>
+      <div class="grades" id="grades"></div>
+
+      <div class="info-row">
+        <div class="info-card">
+          <div class="lbl">Bản quyền</div>
+          <div id="license-info"></div>
+        </div>
+        <div class="info-card">
+          <div class="lbl">Thời gian còn lại</div>
+          <div id="license-days"></div>
+        </div>
+      </div>
+
+      <div class="ads">
+        <div class="lbl">Khóa học của Nam Linh</div>
+        <div class="ad-placeholder">Khu vực quảng cáo khóa học — sẽ bổ sung sau.</div>
+      </div>
+    </section>
+
+    <section id="subjects" class="panel" hidden>
+      <button id="btn-grades" class="link" type="button">← Chọn lớp</button>
+      <h1>Chọn môn học · Lớp 7</h1>
+      <div class="grades" id="subject-list"></div>
+    </section>
+
     <section id="home" class="panel" hidden></section>
 
     <section id="lesson" class="panel" hidden>

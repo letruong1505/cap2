@@ -1,0 +1,195 @@
+{
+  "id": "bai-13",
+  "grade": 7,
+  "subject": "khtn",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Khoa học tự nhiên 7",
+  "chapter": "Chương IV. Âm thanh",
+  "lesson": "Bài 13. Độ to và độ cao của âm",
+  "section": "",
+  "bookPage": 64,
+  "requirements": [
+    "Từ hình ảnh hoặc đồ thị xác định được biên độ và tần số sóng âm.",
+    "Nêu được đơn vị của tần số là héc (kí hiệu là Hz).",
+    "Nêu được sự liên quan của độ to của âm với biên độ âm.",
+    "Sử dụng nhạc cụ (hoặc dao động kí) chứng tỏ được độ cao của âm liên hệ với tần số âm."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Biên độ dao động là khoảng cách từ vị trí cân bằng đến vị trí xa nhất của dao động. Biên độ của sóng âm có liên quan đến độ to của âm: biên độ lớn thì âm to, biên độ nhỏ thì âm nhỏ."
+    },
+    {
+      "type": "text",
+      "content": "Tần số là số dao động vật thực hiện được trong 1 giây. Đơn vị của tần số là héc, kí hiệu Hz. Ví dụ: nếu trong 1 giây vật thực hiện được 30 dao động thì tần số là 30 Hz."
+    },
+    {
+      "type": "text",
+      "content": "Tai người nghe được âm có tần số từ 20 Hz đến 20 000 Hz."
+    },
+    {
+      "type": "text",
+      "content": "Tần số của sóng âm càng lớn thì âm nghe càng cao (bổng); tần số càng nhỏ thì âm càng thấp (trầm). Ví dụ: các nốt nhạc si (494 Hz), đô (523 Hz), la (880 Hz) có độ cao tăng dần."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Mặt trống dao động với tần số 100 Hz. Trong 1 phút (60 s) mặt trống thực hiện bao nhiêu dao động?",
+      "expr": "100 * 60",
+      "steps": [
+        "Tần số 100 Hz nghĩa là 100 dao động trong 1 s.",
+        "Trong 60 s: 100 × 60 = 6000 dao động."
+      ],
+      "answer": "6000"
+    },
+    {
+      "problem": "Một con ong vỗ cánh 3300 lần trong 10 s. Tần số dao động của cánh ong là bao nhiêu Hz?",
+      "expr": "3300 / 10",
+      "steps": [
+        "Tần số = số dao động / thời gian = 3300 / 10.",
+        "3300 / 10 = 330 Hz."
+      ],
+      "answer": "330"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn vị của tần số là:",
+      "choices": [
+        "Héc (Hz)",
+        "Mét trên giây (m/s)",
+        "Đề-xi-ben (dB)",
+        "Niu-tơn (N)"
+      ],
+      "answer": 0,
+      "explain": "Đơn vị của tần số là héc, kí hiệu Hz.",
+      "wrong_explain": {
+        "1": "m/s là đơn vị của tốc độ.",
+        "2": "dB là đơn vị đo độ to của âm.",
+        "3": "N là đơn vị của lực."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tần số của dao động là:",
+      "choices": [
+        "Số dao động thực hiện trong 1 giây",
+        "Quãng đường đi được trong 1 giây",
+        "Khoảng cách từ vị trí cân bằng đến vị trí xa nhất",
+        "Độ to của âm"
+      ],
+      "answer": 0,
+      "explain": "Tần số là số dao động trong 1 giây.",
+      "wrong_explain": {
+        "1": "Quãng đường không phải tần số.",
+        "2": "Khoảng cách đó là biên độ dao động.",
+        "3": "Độ to của âm liên quan đến biên độ, không phải tần số."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tai người nghe được âm có tần số trong khoảng:",
+      "choices": [
+        "20 Hz đến 20 000 Hz",
+        "1 Hz đến 100 Hz",
+        "100 Hz đến 1 000 Hz",
+        "20 000 Hz đến 50 000 Hz"
+      ],
+      "answer": 0,
+      "explain": "Tai người nghe được tần số từ 20 Hz đến 20 000 Hz.",
+      "wrong_explain": {
+        "1": "Khoảng này quá hẹp, không phải dải nghe được của tai người.",
+        "2": "Khoảng này nằm trong dải nghe được nhưng không phải toàn bộ dải.",
+        "3": "Đây là dải siêu âm, tai người không nghe được."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi biên độ dao động của nguồn âm lớn hơn thì âm nghe được:",
+      "choices": [
+        "To hơn",
+        "Cao hơn",
+        "Nhỏ hơn",
+        "Không thay đổi"
+      ],
+      "answer": 0,
+      "explain": "Biên độ lớn thì âm to; biên độ nhỏ thì âm nhỏ.",
+      "wrong_explain": {
+        "1": "Độ cao phụ thuộc tần số, không phụ thuộc biên độ.",
+        "2": "Biên độ lớn làm âm to hơn, không nhỏ hơn.",
+        "3": "Biên độ thay đổi thì độ to của âm thay đổi."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi tần số sóng âm càng lớn thì âm nghe được:",
+      "choices": [
+        "Cao (bổng) hơn",
+        "Trầm hơn",
+        "To hơn",
+        "Không thay đổi"
+      ],
+      "answer": 0,
+      "explain": "Tần số càng lớn thì âm càng cao (bổng).",
+      "wrong_explain": {
+        "1": "Tần số nhỏ mới làm âm trầm.",
+        "2": "Độ to phụ thuộc biên độ, không phụ thuộc tần số.",
+        "3": "Tần số thay đổi thì độ cao thay đổi."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một con ong vỗ cánh 3300 lần trong 10 s. Tần số dao động của cánh ong là bao nhiêu Hz?",
+      "expr": "3300 / 10",
+      "answer": "330",
+      "explain": "Tần số = 3300 / 10 = 330 Hz."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mặt trống dao động với tần số 100 Hz. Trong 1 phút mặt trống thực hiện bao nhiêu dao động?",
+      "expr": "100 * 60",
+      "answer": "6000",
+      "explain": "100 × 60 = 6000 dao động."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Dây đàn dao động 880 lần trong 1 s. Tần số của dây đàn (Hz) là:",
+      "choices": [
+        "88",
+        "440",
+        "880",
+        "8800"
+      ],
+      "answer": 2,
+      "explain": "Trong 1 s dây đàn thực hiện 880 dao động nên tần số là 880 Hz.",
+      "wrong_explain": {
+        "0": "88 không đúng với số dao động trong 1 s.",
+        "1": "440 Hz là một nửa số dao động, không đúng.",
+        "3": "8800 Hz gấp 10 lần số dao động đã cho."
+      },
+      "expr": "880 / 1"
+    }
+  ]
+}

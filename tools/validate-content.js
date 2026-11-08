@@ -23,12 +23,15 @@ function checkExpr(expr, answer, tag) {
   return [];
 }
 
+// Môn đang kiểm tra (thư mục con của content/), đặt trước khi đọc từng môn.
+let currentSubject = 'toan7';
+
 function checkFigurePath(figure, tag) {
   const rel = String(figure);
   if (rel.includes('..') || path.isAbsolute(rel)) {
     return [`${tag}: đường dẫn hình không hợp lệ (${rel})`];
   }
-  if (!fs.existsSync(path.join(CONTENT_DIR, 'toan7', rel))) {
+  if (!fs.existsSync(path.join(CONTENT_DIR, currentSubject, rel))) {
     return [`${tag}: không tìm thấy hình ${rel}`];
   }
   return [];
@@ -64,6 +67,7 @@ function validateLesson(lesson, relPath) {
   if (!Array.isArray(lesson.items) || lesson.items.length === 0) errs.push('thiếu câu hỏi');
 
   for (const ex of lesson.examples || []) {
+    if (!Array.isArray(ex.steps)) errs.push(`ví dụ "${ex.problem}": các bước giải phải là danh sách`);
     errs.push(...checkExpr(ex.expr, ex.answer, `ví dụ "${ex.problem}"`));
     if (ex.figure) errs.push(...checkFigurePath(ex.figure, `ví dụ "${ex.problem}"`));
   }
@@ -127,29 +131,38 @@ function validateLesson(lesson, relPath) {
 }
 
 function main() {
-  const manifestPath = path.join(CONTENT_DIR, 'toan7', 'manifest.json');
-  const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+  // Kiểm tra mọi môn có manifest trong content/ (toan7, khtn7, ...).
+  const subjects = fs.readdirSync(CONTENT_DIR).filter((d) =>
+    fs.existsSync(path.join(CONTENT_DIR, d, 'manifest.json')));
   const problems = [];
-  let lessonCount = 0;
-  let checkedCount = 0;
-  let conceptCount = 0;
+  const report = [];
+  let lessonTotal = 0;
+  let checkedTotal = 0;
+  let conceptTotal = 0;
 
-  for (const book of manifest.books) {
-    for (const chapter of book.chapters) {
-      for (const lesson of chapter.lessons) {
-        if (!lesson.file) continue;
-        lessonCount += 1;
-        const full = path.join(CONTENT_DIR, 'toan7', lesson.file);
-        if (!fs.existsSync(full)) {
-          problems.push(`${lesson.file}: không tìm thấy file`);
-          continue;
+  for (const subject of subjects) {
+    currentSubject = subject;
+    const manifest = JSON.parse(fs.readFileSync(path.join(CONTENT_DIR, subject, 'manifest.json'), 'utf8'));
+    let lessonCount = 0;
+    for (const book of manifest.books) {
+      for (const chapter of book.chapters) {
+        for (const lesson of chapter.lessons) {
+          if (!lesson.file) continue;
+          lessonCount += 1;
+          const full = path.join(CONTENT_DIR, subject, lesson.file);
+          if (!fs.existsSync(full)) {
+            problems.push(`${subject}/${lesson.file}: không tìm thấy file`);
+            continue;
+          }
+          const data = JSON.parse(fs.readFileSync(full, 'utf8'));
+          checkedTotal += (data.items || []).filter((i) => i.expr).length;
+          conceptTotal += (data.items || []).filter((i) => i.concept === true).length;
+          problems.push(...validateLesson(data, `${subject}/${lesson.file}`));
         }
-        const data = JSON.parse(fs.readFileSync(full, 'utf8'));
-        checkedCount += (data.items || []).filter((i) => i.expr).length;
-        conceptCount += (data.items || []).filter((i) => i.concept === true).length;
-        problems.push(...validateLesson(data, lesson.file));
       }
     }
+    lessonTotal += lessonCount;
+    report.push(`${subject}: ${lessonCount} bài`);
   }
 
   if (problems.length) {
@@ -157,8 +170,8 @@ function main() {
     problems.forEach((p) => console.error('  - ' + p));
     process.exit(1);
   }
-  console.log(`Đạt: ${lessonCount} bài, ${checkedCount} câu có đáp án đã được tính lại và khớp, `
-    + `${conceptCount} câu trắc nghiệm khái niệm có đủ giải thích cho phương án sai.`);
+  console.log(`Đạt: ${lessonTotal} bài (${report.join(', ')}), ${checkedTotal} câu có đáp án đã được tính lại và khớp, `
+    + `${conceptTotal} câu trắc nghiệm khái niệm có đủ giải thích cho phương án sai.`);
 }
 
 main();

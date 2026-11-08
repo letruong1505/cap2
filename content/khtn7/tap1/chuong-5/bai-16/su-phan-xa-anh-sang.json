@@ -1,0 +1,198 @@
+{
+  "id": "bai-16",
+  "grade": 7,
+  "subject": "khtn",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Khoa học tự nhiên 7",
+  "chapter": "Chương V. Ánh sáng",
+  "lesson": "Bài 16. Sự phản xạ ánh sáng",
+  "section": "",
+  "bookPage": 78,
+  "requirements": [
+    "Vẽ được hình biểu diễn và nêu được các khái niệm: tia sáng tới, tia sáng phản xạ, pháp tuyến, góc tới, góc phản xạ, mặt phẳng tới.",
+    "Thực hiện được thí nghiệm rút ra định luật và phát biểu được nội dung của định luật phản xạ ánh sáng.",
+    "Phân biệt được phản xạ và phản xạ khuếch tán."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khi chiếu một chùm sáng vào gương, chùm sáng bị hắt trở lại theo hướng khác. Hiện tượng đó gọi là phản xạ ánh sáng. Hiện tượng này còn xảy ra với các bề mặt nhẵn bóng khác."
+    },
+    {
+      "type": "text",
+      "content": "Các khái niệm: gương phẳng là mặt phản xạ; tia sáng tới (SI) là tia chiếu vào gương; tia sáng phản xạ (IR) là tia bị gương hắt trở lại; điểm tới (I) là giao điểm của tia sáng tới và gương; pháp tuyến (IN) là đường thẳng vuông góc với gương tại điểm tới."
+    },
+    {
+      "type": "text",
+      "content": "Góc tới là góc tạo bởi tia sáng tới và pháp tuyến tại điểm tới; góc phản xạ là góc tạo bởi tia sáng phản xạ và pháp tuyến tại điểm tới."
+    },
+    {
+      "type": "text",
+      "content": "Định luật phản xạ ánh sáng: tia sáng phản xạ nằm trong mặt phẳng tới; góc phản xạ bằng góc tới (i' = i)."
+    },
+    {
+      "type": "text",
+      "content": "Phản xạ khuếch tán là hiện tượng các tia sáng song song truyền đến bề mặt không nhẵn, bị phản xạ theo mọi hướng. Khi có phản xạ ta nhìn thấy ảnh của vật; khi có phản xạ khuếch tán ta không nhìn thấy ảnh của vật."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tia sáng tới hợp với mặt gương một góc 30°. Tính góc tới (góc đo từ pháp tuyến), biết pháp tuyến vuông góc với gương.",
+      "expr": "90 - 30",
+      "steps": [
+        "Pháp tuyến vuông góc với gương nên góc giữa tia tới và pháp tuyến = 90° − 30°.",
+        "90 − 30 = 60°, đó là góc tới."
+      ],
+      "answer": "60"
+    },
+    {
+      "problem": "Một tia sáng tới có góc tới 30°. Tính góc hợp bởi tia tới và tia phản xạ.",
+      "expr": "2 * 30",
+      "steps": [
+        "Góc phản xạ bằng góc tới: i' = i = 30°.",
+        "Góc giữa tia tới và tia phản xạ = i + i' = 2 × 30 = 60°."
+      ],
+      "answer": "60"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hiện tượng chùm sáng bị hắt trở lại khi gặp gương gọi là:",
+      "choices": [
+        "Phản xạ ánh sáng",
+        "Khúc xạ ánh sáng",
+        "Khuếch tán ánh sáng",
+        "Tán sắc ánh sáng"
+      ],
+      "answer": 0,
+      "explain": "Chùm sáng bị hắt trở lại theo hướng khác khi gặp gương gọi là phản xạ ánh sáng.",
+      "wrong_explain": {
+        "1": "Khúc xạ là hiện tượng ánh sáng đổi phương khi đi qua hai môi trường khác nhau.",
+        "2": "Khuếch tán là phản xạ theo mọi hướng từ bề mặt không nhẵn.",
+        "3": "Tán sắc là tách ánh sáng thành các màu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đường pháp tuyến tại điểm tới là:",
+      "choices": [
+        "Đường thẳng vuông góc với gương tại điểm tới",
+        "Đường thẳng song song với gương",
+        "Tia sáng tới",
+        "Tia sáng phản xạ"
+      ],
+      "answer": 0,
+      "explain": "Pháp tuyến là đường thẳng vuông góc với gương tại điểm tới.",
+      "wrong_explain": {
+        "1": "Đường song song với gương không phải pháp tuyến.",
+        "2": "Tia sáng tới là tia chiếu vào gương, không phải pháp tuyến.",
+        "3": "Tia phản xạ là tia bị hắt trở lại, không phải pháp tuyến."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Theo định luật phản xạ ánh sáng, góc phản xạ bằng:",
+      "choices": [
+        "Góc tới",
+        "Hai lần góc tới",
+        "90°",
+        "0°"
+      ],
+      "answer": 0,
+      "explain": "Góc phản xạ bằng góc tới.",
+      "wrong_explain": {
+        "1": "Góc phản xạ không bằng hai lần góc tới.",
+        "2": "90° không phải quy luật của góc phản xạ.",
+        "3": "Góc phản xạ không bằng 0 nói chung."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Theo định luật phản xạ ánh sáng, tia sáng phản xạ nằm trong:",
+      "choices": [
+        "Mặt phẳng tới",
+        "Mặt gương",
+        "Mặt phẳng nằm ngang",
+        "Mặt phẳng bất kì"
+      ],
+      "answer": 0,
+      "explain": "Tia sáng phản xạ nằm trong mặt phẳng tới.",
+      "wrong_explain": {
+        "1": "Tia phản xạ không nằm trong mặt gương mà nằm trong mặt phẳng tới.",
+        "2": "Mặt phẳng nằm ngang không phải quy định của định luật.",
+        "3": "Không phải mặt phẳng bất kì mà là mặt phẳng tới."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hiện tượng phản xạ khuếch tán xảy ra khi bề mặt phản xạ:",
+      "choices": [
+        "Không nhẵn",
+        "Nhẵn bóng",
+        "Trong suốt",
+        "Là gương phẳng"
+      ],
+      "answer": 0,
+      "explain": "Khi mặt phản xạ không nhẵn, các tia sáng song song bị phản xạ theo mọi hướng.",
+      "wrong_explain": {
+        "1": "Bề mặt nhẵn bóng cho phản xạ thông thường, không phải khuếch tán.",
+        "2": "Vật trong suốt cho ánh sáng truyền qua, không phải phản xạ khuếch tán.",
+        "3": "Gương phẳng cho phản xạ thông thường."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Một tia sáng tới có góc tới 30°. Góc phản xạ là bao nhiêu độ?",
+      "choices": [
+        "30",
+        "60",
+        "90",
+        "0"
+      ],
+      "answer": 0,
+      "explain": "Theo định luật phản xạ, góc phản xạ bằng góc tới: 30°.",
+      "wrong_explain": {
+        "1": "60° là góc giữa tia tới và tia phản xạ (2 × 30°), không phải góc phản xạ.",
+        "2": "90° không đúng với định luật phản xạ.",
+        "3": "0° là trường hợp tia tới vuông góc với gương."
+      },
+      "expr": "30"
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tia sáng tới tạo góc 30° với mặt gương. Góc tới (đo từ pháp tuyến) là bao nhiêu độ?",
+      "expr": "90 - 30",
+      "answer": "60",
+      "explain": "Góc tới = 90° − 30° = 60°."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tia sáng tới có góc tới 30°. Góc hợp bởi tia tới và tia phản xạ là bao nhiêu độ?",
+      "expr": "2 * 30",
+      "answer": "60",
+      "explain": "Góc giữa tia tới và tia phản xạ = i + i' = 2 × 30° = 60°."
+    }
+  ]
+}

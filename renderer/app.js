@@ -242,15 +242,17 @@ function updateScore(lesson, attempt) {
 }
 
 function showOnly(id) {
-  for (const sec of ['home', 'lesson', 'empty']) {
+  for (const sec of ['launch', 'subjects', 'home', 'lesson', 'empty']) {
     document.getElementById(sec).hidden = sec !== id;
   }
 }
 
 // Màn hình chính: danh sách chương và bài theo manifest của gói nội dung.
-function renderHome(manifest) {
+function renderHome(manifest, subject) {
   const home = document.getElementById('home');
-  home.replaceChildren(el('h1', {}, 'Chọn bài học'));
+  const back = el('button', { class: 'link', type: 'button' }, '← Chọn môn');
+  back.addEventListener('click', () => showSubjects());
+  home.replaceChildren(back, el('h1', {}, 'Chọn bài học'));
   home.append(el('p', { class: 'meta' }, `Gói: ${manifest.bookSeries} · phiên bản ${manifest.version}`));
 
   for (const book of manifest.books) {
@@ -267,7 +269,7 @@ function renderHome(manifest) {
           if (lesson.file) {
             const btn = el('button', { class: 'link', type: 'button' }, lesson.title);
             // Đường dẫn trong manifest tính từ thư mục sản phẩm, còn bộ nạp tính từ content/.
-            btn.addEventListener('click', () => openLesson('toan7/' + lesson.file, lesson.mode || 'practice'));
+            btn.addEventListener('click', () => openLesson(subject + '/' + lesson.file, lesson.mode || 'practice'));
             li.append(btn);
           } else {
             li.append(el('span', { class: 'meta' }, `${lesson.title} · đang biên soạn`));
@@ -325,7 +327,7 @@ async function openLesson(relPath, mode = 'practice') {
   try {
     const lesson = await window.vungBai.loadLesson(relPath);
     document.getElementById('breadcrumb').textContent =
-      `Lớp ${lesson.grade} › ${lesson.subject === 'toan' ? 'Toán' : lesson.subject} › ${lesson.chapter}`;
+      `Lớp ${lesson.grade} › ${{ toan: 'Toán', khtn: 'Khoa học tự nhiên' }[lesson.subject] || lesson.subject} › ${lesson.chapter}`;
 
     if (lesson.kind === 'review') {
       const view = mode === 'solutions' ? 'solutions' : 'review';
@@ -364,6 +366,80 @@ async function openLesson(relPath, mode = 'practice') {
   }
 }
 
+// Màn hình khởi động: chọn lớp, thông tin bản quyền và khu vực quảng cáo.
+const GRADES = [
+  { grade: 6, available: false },
+  { grade: 7, available: true },
+  { grade: 8, available: false },
+  { grade: 9, available: false },
+];
+// Mục lục của từng môn, nạp một lần khi mở app.
+const SUBJECT_LABELS = { toan7: 'Toán 7', khtn7: 'Khoa học tự nhiên 7' };
+const manifestCache = {};
+
+function licenseDaysLeft(expiresOn) {
+  // Hết hạn vào cuối ngày ghi trong file.
+  const [y, m, d] = expiresOn.split('-').map(Number);
+  const end = new Date(y, m - 1, d, 23, 59, 59);
+  return Math.ceil((end - new Date()) / 86400000);
+}
+
+function renderLicense(license) {
+  const info = document.getElementById('license-info');
+  const days = document.getElementById('license-days');
+  if (license.status === 'ok') {
+    info.replaceChildren(
+      el('div', {}, `Đơn vị cấp: ${license.owner || '—'}`),
+      el('div', { class: 'muted' }, `Mã khóa: ${license.code || '—'} · Phạm vi: ${license.scope || '—'}`),
+    );
+    const left = licenseDaysLeft(license.expiresOn);
+    if (left >= 0) {
+      days.replaceChildren(
+        el('div', { class: 'days' }, `${left} ngày`),
+        el('div', { class: 'muted' }, `Hết hạn ngày ${license.expiresOn.split('-').reverse().join('/')}`),
+      );
+    } else {
+      days.replaceChildren(el('div', { class: 'days' }, 'Đã hết hạn'), el('div', { class: 'muted' }, 'Liên hệ Nam Linh Educenter để gia hạn.'));
+    }
+  } else {
+    info.replaceChildren(el('div', { class: 'muted' }, 'Chưa kích hoạt bản quyền.'));
+    days.replaceChildren(el('div', { class: 'muted' }, '—'));
+  }
+}
+
+function renderGrades() {
+  const box = document.getElementById('grades');
+  box.replaceChildren();
+  for (const g of GRADES) {
+    const btn = el('button', { class: 'grade', type: 'button' }, `Lớp ${g.grade}`);
+    if (g.available) {
+      btn.addEventListener('click', () => showSubjects());
+    } else {
+      btn.disabled = true;
+      btn.append(el('small', {}, 'Đang biên soạn'));
+    }
+    box.append(btn);
+  }
+}
+
+function showLaunch() {
+  document.getElementById('breadcrumb').textContent = '';
+  showOnly('launch');
+}
+
+// Chọn môn sau khi đã chọn lớp 7.
+function showSubjects() {
+  document.getElementById('breadcrumb').textContent = '';
+  const box = document.getElementById('subject-list');
+  box.replaceChildren();
+  for (const subject of Object.keys(SUBJECT_LABELS)) {
+    const btn = el('button', { class: 'grade', type: 'button' }, SUBJECT_LABELS[subject]);
+    btn.addEventListener('click', () => renderHome(manifestCache[subject], subject));
+    box.append(btn);
+  }
+  showOnly('subjects');
+}
+
 async function init() {
   try {
     const info = await window.vungBai.appInfo();
@@ -372,13 +448,23 @@ async function init() {
     // Không hiện số phiên bản nếu không đọc được; không ảnh hưởng luồng chính.
   }
   try {
-    const manifest = await window.vungBai.loadManifest();
-    document.getElementById('breadcrumb').textContent = '';
+    for (const subject of Object.keys(SUBJECT_LABELS)) {
+      manifestCache[subject] = await window.vungBai.loadManifest(subject);
+    }
     document.getElementById('btn-back').addEventListener('click', () => {
       document.getElementById('breadcrumb').textContent = '';
       showOnly('home');
     });
-    renderHome(manifest);
+    document.getElementById('btn-grades').addEventListener('click', () => showLaunch());
+    renderGrades();
+    let license;
+    try {
+      license = await window.vungBai.loadLicense();
+    } catch {
+      license = { status: 'missing' };
+    }
+    renderLicense(license);
+    showLaunch();
   } catch (err) {
     document.getElementById('empty').replaceChildren(el('p', {}, 'Không tải được gói nội dung: ' + err.message));
     showOnly('empty');

@@ -1,0 +1,197 @@
+{
+  "id": "bai-9",
+  "grade": 7,
+  "subject": "khtn",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Khoa học tự nhiên 7",
+  "chapter": "Chương III. Tốc độ",
+  "lesson": "Bài 9. Đo tốc độ",
+  "section": "",
+  "bookPage": 49,
+  "requirements": [
+    "Mô tả được sơ lược cách đo tốc độ bằng đồng hồ bấm giây và cổng quang điện trong dụng cụ thực hành ở nhà trường.",
+    "Mô tả được thiết bị \"bắn tốc độ\" trong kiểm tra tốc độ các phương tiện giao thông."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Để đo tốc độ chuyển động cần đo độ dài quãng đường s và thời gian t. Dụng cụ đo tốc độ của các phương tiện giao thông như ô tô, xe máy được gọi là tốc kế."
+    },
+    {
+      "type": "text",
+      "content": "Đo tốc độ bằng đồng hồ bấm giây: đánh dấu vạch xuất phát và vạch đích, đo quãng đường s, bấm giây đo thời gian t từ lúc vật bắt đầu chuyển động đến khi tới vạch đích. Thường thực hiện 3 lần đo, tính giá trị trung bình của s và t rồi tính tốc độ."
+    },
+    {
+      "type": "formula",
+      "content": "v = s / t"
+    },
+    {
+      "type": "text",
+      "content": "Đo tốc độ bằng đồng hồ đo thời gian hiện số và cổng quang điện: cách làm tương tự, nhưng thời gian được đo tự động khi vật đi qua cổng quang điện thứ nhất và thứ hai."
+    },
+    {
+      "type": "text",
+      "content": "Thiết bị bắn tốc độ đơn giản dùng một camera ghi lại thời điểm ô tô đi qua hai vạch mốc cách nhau vài mét. Máy tính tính tốc độ từ quãng đường giữa hai vạch và thời gian, sau đó so sánh với tốc độ giới hạn để phát hiện xe vượt quá tốc độ."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một xe chạy quãng đường 60 m trong thời gian 5 s. Tính tốc độ của xe.",
+      "expr": "60 / 5",
+      "steps": [
+        "Quãng đường s = 60 m, thời gian t = 5 s.",
+        "v = s / t = 60 / 5 = 12 m/s."
+      ],
+      "answer": "12"
+    },
+    {
+      "problem": "Một xe máy chạy 90 km trong thời gian 2 giờ. Tính tốc độ của xe (km/h).",
+      "expr": "90 / 2",
+      "steps": [
+        "Quãng đường s = 90 km, thời gian t = 2 h.",
+        "v = s / t = 90 / 2 = 45 km/h."
+      ],
+      "answer": "45"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Dụng cụ dùng để đo tốc độ của các phương tiện giao thông như ô tô, xe máy là:",
+      "choices": [
+        "Tốc kế",
+        "Nhiệt kế",
+        "Áp kế",
+        "Lực kế"
+      ],
+      "answer": 0,
+      "explain": "Tốc kế là dụng cụ đo tốc độ chuyển động của phương tiện giao thông.",
+      "wrong_explain": {
+        "1": "Nhiệt kế dùng để đo nhiệt độ.",
+        "2": "Áp kế dùng để đo áp suất.",
+        "3": "Lực kế dùng để đo lực."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong phòng thực hành, cách đo tốc độ thường chọn là:",
+      "choices": [
+        "Chọn quãng đường s trước, đo thời gian t sau",
+        "Chọn thời gian t trước, đo quãng đường s sau",
+        "Đo s và t cùng một lúc bằng một dụng cụ",
+        "Không cần đo quãng đường"
+      ],
+      "answer": 0,
+      "explain": "Cách 1 (chọn quãng đường trước, đo thời gian sau) thường được chọn trong phòng thực hành.",
+      "wrong_explain": {
+        "1": "Cách này ít dùng hơn trong phòng thực hành.",
+        "2": "Không có dụng cụ nào đo đồng thời s và t như vậy trong bài này.",
+        "3": "Tốc độ cần cả quãng đường lẫn thời gian nên không thể bỏ qua s."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi đo tốc độ bằng đồng hồ bấm giây, thường thực hiện số lần đo là:",
+      "choices": [
+        "1 lần",
+        "3 lần",
+        "5 lần",
+        "10 lần"
+      ],
+      "answer": 1,
+      "explain": "Thường đo 3 lần rồi lấy giá trị trung bình để giảm sai số.",
+      "wrong_explain": {
+        "0": "Chỉ đo 1 lần thì kết quả dễ sai số.",
+        "2": "5 lần không phải số lần thông thường trong bài thực hành này.",
+        "3": "10 lần là quá nhiều so với yêu cầu thực hành."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thiết bị bắn tốc độ đơn giản gồm thành phần chính nào để ghi và tính tốc độ?",
+      "choices": [
+        "Camera và máy tính nhỏ",
+        "Nhiệt kế và cân",
+        "Lực kế và ròng rọc",
+        "Thước đo góc và áp kế"
+      ],
+      "answer": 0,
+      "explain": "Camera ghi thời gian ô tô qua hai vạch mốc, máy tính tính tốc độ từ đó.",
+      "wrong_explain": {
+        "1": "Nhiệt kế và cân không tham gia đo tốc độ.",
+        "2": "Lực kế và ròng rọc dùng để đo lực, không phải tốc độ.",
+        "3": "Thước đo góc và áp kế không dùng để bắn tốc độ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đồng hồ đo thời gian hiện số kết hợp cổng quang điện được dùng để:",
+      "choices": [
+        "Đo thời gian vật đi từ cổng quang điện thứ nhất đến thứ hai",
+        "Đo khối lượng viên bi",
+        "Đo nhiệt độ của phòng",
+        "Đo lực hút của nam châm"
+      ],
+      "answer": 0,
+      "explain": "Đồng hồ tự động bắt đầu và ngừng đo khi vật đi qua hai cổng quang điện.",
+      "wrong_explain": {
+        "1": "Khối lượng không được đo bằng đồng hồ thời gian.",
+        "2": "Nhiệt độ không liên quan đến thí nghiệm đo tốc độ này.",
+        "3": "Lực hút của nam châm không được đo bằng đồng hồ thời gian."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một vật chuyển động quãng đường 60 m trong 5 s. Tốc độ của vật là bao nhiêu m/s?",
+      "expr": "60 / 5",
+      "answer": "12",
+      "explain": "v = s / t = 60 / 5 = 12 m/s."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một ô tô chạy 90 km trong 2 giờ. Tốc độ của ô tô là bao nhiêu km/h?",
+      "expr": "90 / 2",
+      "answer": "45",
+      "explain": "v = 90 / 2 = 45 km/h."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Một vật đi quãng đường s = 15 m trong thời gian t = 3 s. Tốc độ của vật (m/s) là:",
+      "choices": [
+        "3",
+        "5",
+        "15",
+        "45"
+      ],
+      "answer": 1,
+      "explain": "v = s / t = 15 / 3 = 5 m/s.",
+      "wrong_explain": {
+        "0": "3 là giá trị của thời gian, không phải tốc độ.",
+        "2": "15 là quãng đường, phải chia cho thời gian.",
+        "3": "45 là tích s · t, không phải thương s / t."
+      },
+      "expr": "15 / 3"
+    }
+  ]
+}

@@ -87,3 +87,26 @@ button.link {
 /* Ôn tập tự luận và hướng dẫn giải */
 .question.essay .stem { font-weight: 500; }
 .question .answer { font-weight: 600; color: #1f4e79; margin: 6px 0 14px; }
+
+/* Màn hình khởi động: chọn lớp, thông tin bản quyền, khu vực quảng cáo. */
+.greeting { margin: 0 0 8px; font-size: 17px; font-weight: 600; color: #1f4e79; }
+#launch h1 { margin: 0 0 16px; font-size: 24px; }
+.grades { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 22px; }
+.grade {
+  background: #fff;
+  border: 2px solid #b9cde0;
+  border-radius: 12px;
+  padding: 22px 12px;
+  font: 700 20px "Segoe UI", system-ui, sans-serif;
+  color: #1f4e79;
+  cursor: pointer;
+}
+.grade:hover:not(:disabled) { background: #1f4e79; color: #fff; }
+.grade:disabled { border-style: dashed; border-color: #cfd8e3; color: #8a97a8; cursor: default; }
+.grade small { display: block; font-size: 13px; font-weight: 400; margin-top: 4px; }
+.lbl { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #5b6b7d; margin-bottom: 6px; }
+.info-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 22px; }
+.info-card { border: 1px solid #dde4ec; border-radius: 12px; padding: 16px 18px; background: #fbfcfe; }
+.days { font-size: 28px; font-weight: 700; color: #1f4e79; }
+.muted { color: #5b6b7d; font-size: 14px; }
+.ad-placeholder { border: 1px dashed #b9c4d1; border-radius: 12px; padding: 18px; color: #7b8898; font-size: 14px; }

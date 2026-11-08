@@ -1,0 +1,197 @@
+{
+  "id": "bai-14",
+  "grade": 7,
+  "subject": "khtn",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Khoa học tự nhiên 7",
+  "chapter": "Chương IV. Âm thanh",
+  "lesson": "Bài 14. Phản xạ âm, chống ô nhiễm tiếng ồn",
+  "section": "",
+  "bookPage": 68,
+  "requirements": [
+    "Lấy được ví dụ về vật phản xạ âm tốt, vật phản xạ âm kém.",
+    "Giải thích được một số hiện tượng đơn giản thường gặp trong thực tế về sóng âm; đề xuất được phương án đơn giản để hạn chế tiếng ồn ảnh hưởng đến sức khoẻ."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Âm được dội lại khi gặp một mặt chắn gọi là âm phản xạ. Hiện tượng này gọi là phản xạ âm. Ví dụ: khi đứng trước vách hang động, nói to có thể nghe được tiếng nói của mình vọng lại."
+    },
+    {
+      "type": "text",
+      "content": "Khi âm phản xạ đến tai chậm hơn âm truyền trực tiếp một khoảng thời gian lớn hơn 1/15 giây thì âm phản xạ được gọi là tiếng vang."
+    },
+    {
+      "type": "text",
+      "content": "Vật liệu cứng, có bề mặt nhẵn thì phản xạ âm tốt. Vật liệu mềm, xốp hoặc có bề mặt sần sùi thì phản xạ âm kém. Ví dụ: rèm nhung, xốp phản xạ âm kém."
+    },
+    {
+      "type": "text",
+      "content": "Các biện pháp làm giảm tiếng ồn ảnh hưởng đến sức khoẻ: hạn chế nguồn gây ra tiếng ồn; phân tán tiếng ồn trên đường truyền; ngăn cản bớt sự lan truyền của tiếng ồn đến tai. Ví dụ: xây hàng rào chống ồn, trồng nhiều cây xanh, treo biển cấm sử dụng còi gần bệnh viện, trường học."
+    },
+    {
+      "type": "text",
+      "content": "Dơi phát ra sóng siêu âm có tần số từ 50 000 Hz đến 70 000 Hz; khi sóng gặp vật cản thì phản xạ trở lại, giúp dơi nhận ra vật cản."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dải tần số siêu âm của dơi từ 50 000 Hz đến 70 000 Hz. Độ rộng của dải tần số này là bao nhiêu Hz?",
+      "expr": "70000 - 50000",
+      "steps": [
+        "Độ rộng dải = tần số lớn nhất − tần số nhỏ nhất.",
+        "70 000 − 50 000 = 20 000 Hz."
+      ],
+      "answer": "20000"
+    },
+    {
+      "problem": "Một người nói to đứng cách vách 17 m. Âm đi từ người đến vách rồi phản xạ về tai, tổng quãng đường âm đi là bao nhiêu m?",
+      "expr": "2 * 17",
+      "steps": [
+        "Âm đi từ người đến vách rồi quay về, tức là đi 2 lần khoảng cách.",
+        "2 × 17 = 34 m."
+      ],
+      "answer": "34"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Âm được dội lại khi gặp một mặt chắn gọi là:",
+      "choices": [
+        "Âm phản xạ",
+        "Âm trực tiếp",
+        "Âm không truyền được",
+        "Ánh sáng phản chiếu"
+      ],
+      "answer": 0,
+      "explain": "Âm bị dội lại khi gặp mặt chắn được gọi là âm phản xạ.",
+      "wrong_explain": {
+        "1": "Âm trực tiếp là âm truyền thẳng từ nguồn đến tai, không bị dội lại.",
+        "2": "Âm vẫn truyền được; nó chỉ bị dội lại khi gặp mặt chắn.",
+        "3": "Ánh sáng không phải là âm phản xạ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tiếng vang là âm phản xạ đến tai chậm hơn âm truyền trực tiếp một khoảng thời gian ít nhất là:",
+      "choices": [
+        "1/15 giây",
+        "1 giây",
+        "1 phút",
+        "0 giây"
+      ],
+      "answer": 0,
+      "explain": "Khoảng thời gian lớn hơn 1/15 giây thì âm phản xạ được gọi là tiếng vang.",
+      "wrong_explain": {
+        "1": "1 giây là khoảng thời gian quá lớn so với điều kiện tiếng vang.",
+        "2": "1 phút là khoảng thời gian rất lớn, không phải điều kiện tiếng vang.",
+        "3": "Nếu chậm 0 giây thì âm không tách biệt, không tạo tiếng vang."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Vật liệu nào phản xạ âm tốt?",
+      "choices": [
+        "Vật liệu cứng, bề mặt nhẵn",
+        "Vật liệu mềm, xốp",
+        "Vật liệu có bề mặt sần sùi",
+        "Rèm nhung dày"
+      ],
+      "answer": 0,
+      "explain": "Vật liệu cứng, có bề mặt nhẵn phản xạ âm tốt.",
+      "wrong_explain": {
+        "1": "Vật liệu mềm, xốp phản xạ âm kém.",
+        "2": "Bề mặt sần sùi phản xạ âm kém.",
+        "3": "Rèm nhung là vật liệu mềm, phản xạ âm kém."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vật nào dưới đây phản xạ âm kém?",
+      "choices": [
+        "Rèm nhung",
+        "Mặt gương",
+        "Tấm kim loại",
+        "Mặt nước"
+      ],
+      "answer": 0,
+      "explain": "Rèm nhung là vật liệu mềm, xốp nên phản xạ âm kém.",
+      "wrong_explain": {
+        "1": "Mặt gương nhẵn, cứng nên phản xạ âm tốt.",
+        "2": "Tấm kim loại cứng nên phản xạ âm tốt.",
+        "3": "Mặt nước phẳng, cứng nên phản xạ âm tốt."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Biện pháp nào giúp chống ô nhiễm tiếng ồn ở khu dân cư gần đường cao tốc?",
+      "choices": [
+        "Xây hàng rào chống ồn và trồng nhiều cây xanh",
+        "Mở loa thật to",
+        "Đặt máy khoan gần nhà",
+        "Bật karaoke vào đêm khuya"
+      ],
+      "answer": 0,
+      "explain": "Hàng rào chống ồn và cây xanh giúp ngăn cản bớt sự lan truyền của tiếng ồn.",
+      "wrong_explain": {
+        "1": "Mở loa to làm tăng tiếng ồn.",
+        "2": "Máy khoan gây tiếng ồn lớn, không phải biện pháp giảm ồn.",
+        "3": "Karaoke đêm khuya gây ô nhiễm tiếng ồn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dơi định vị vật cản bằng loại sóng nào?",
+      "choices": [
+        "Sóng siêu âm",
+        "Ánh sáng",
+        "Sóng điện từ",
+        "Tia X"
+      ],
+      "answer": 0,
+      "explain": "Dơi phát sóng siêu âm và nhận sóng phản xạ từ vật cản.",
+      "wrong_explain": {
+        "1": "Dơi không dùng ánh sáng để định vị vật cản trong bài này.",
+        "2": "Sóng điện từ không phải cách định vị của dơi trong bài.",
+        "3": "Tia X không liên quan đến định vị của dơi."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dải siêu âm của dơi từ 50 000 Hz đến 70 000 Hz. Độ rộng của dải tần số này là bao nhiêu Hz?",
+      "expr": "70000 - 50000",
+      "answer": "20000",
+      "explain": "70 000 − 50 000 = 20 000 Hz."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một người nói to đứng cách vách 17 m. Tổng quãng đường âm đi từ người đến vách rồi phản xạ về tai là bao nhiêu m?",
+      "expr": "2 * 17",
+      "answer": "34",
+      "explain": "Âm đi 2 lần khoảng cách: 2 × 17 = 34 m."
+    }
+  ]
+}

@@ -4,7 +4,8 @@ const { contextBridge, ipcRenderer } = require('electron');
 
 contextBridge.exposeInMainWorld('vungBai', {
   version: '0.1.0-dev',
-  loadManifest: () => ipcRenderer.invoke('manifest:load'),
+  loadManifest: (subject) => ipcRenderer.invoke('manifest:load', subject),
   loadLesson: (relPath) => ipcRenderer.invoke('lesson:load', relPath),
   appInfo: () => ipcRenderer.invoke('app:info'),
+  loadLicense: () => ipcRenderer.invoke('license:load'),
 });

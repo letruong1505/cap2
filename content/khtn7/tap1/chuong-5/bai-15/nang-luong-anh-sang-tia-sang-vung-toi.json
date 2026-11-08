@@ -1,0 +1,198 @@
+{
+  "id": "bai-15",
+  "grade": 7,
+  "subject": "khtn",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Khoa học tự nhiên 7",
+  "chapter": "Chương V. Ánh sáng",
+  "lesson": "Bài 15. Năng lượng ánh sáng. Tia sáng, vùng tối",
+  "section": "",
+  "bookPage": 72,
+  "requirements": [
+    "Thực hiện thí nghiệm thu được năng lượng ánh sáng; từ đó, nêu được ánh sáng là một dạng của năng lượng.",
+    "Thực hiện được thí nghiệm tạo ra mô hình tia sáng bằng một chùm sáng hẹp song song.",
+    "Vẽ được hình biểu diễn vùng tối do nguồn sáng rộng và vùng tối do nguồn sáng hẹp."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Ánh sáng là một dạng của năng lượng. Ví dụ: pin quang điện nhận năng lượng ánh sáng của đèn và chuyển thành điện năng, làm lệch kim điện kế."
+    },
+    {
+      "type": "text",
+      "content": "Ánh sáng phát ra từ nguồn sáng và truyền trong không gian thành chùm sáng. Chùm sáng có thể là chùm song song, chùm hội tụ hoặc chùm phân kì."
+    },
+    {
+      "type": "text",
+      "content": "Ánh sáng truyền theo đường thẳng. Quy ước biểu diễn đường truyền của ánh sáng bằng một đường thẳng có mũi tên chỉ chiều truyền, gọi là tia sáng. Chùm sáng song song rất hẹp được coi là mô hình của một tia sáng."
+    },
+    {
+      "type": "text",
+      "content": "Vùng tối do nguồn sáng hẹp: phía sau vật cản có vùng hoàn toàn không nhận được ánh sáng, ranh giới với vùng sáng rõ rệt. Vùng tối do nguồn sáng rộng: có vùng tối hoàn toàn và vùng tối không hoàn toàn, ranh giới không rõ rệt."
+    },
+    {
+      "type": "text",
+      "content": "Nhật thực xảy ra khi Mặt Trăng nằm giữa Mặt Trời và Trái Đất, tạo vùng tối trên Trái Đất. Nơi nhìn thấy vùng tối và không thấy Mặt Trời là vùng nhật thực toàn phần."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đèn LED 20 W được bật liên tục trong 3 giờ. Điện năng đèn tiêu thụ là bao nhiêu Wh?",
+      "expr": "20 * 3",
+      "steps": [
+        "Điện năng = công suất × thời gian = 20 × 3.",
+        "20 × 3 = 60 Wh."
+      ],
+      "answer": "60"
+    },
+    {
+      "problem": "Có 3 tấm pin quang điện, mỗi tấm có công suất 5 W. Tổng công suất của cả 3 tấm là bao nhiêu W?",
+      "expr": "3 * 5",
+      "steps": [
+        "Tổng công suất = số tấm × công suất mỗi tấm.",
+        "3 × 5 = 15 W."
+      ],
+      "answer": "15"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Ánh sáng là một dạng của:",
+      "choices": [
+        "Năng lượng",
+        "Khối lượng",
+        "Điện tích",
+        "Nhiệt độ"
+      ],
+      "answer": 0,
+      "explain": "Ánh sáng là một dạng của năng lượng.",
+      "wrong_explain": {
+        "1": "Ánh sáng không phải là khối lượng.",
+        "2": "Ánh sáng không phải là điện tích.",
+        "3": "Nhiệt độ là đại lượng khác, không phải dạng của ánh sáng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tia sáng được biểu diễn bằng:",
+      "choices": [
+        "Đường thẳng có mũi tên chỉ chiều truyền của ánh sáng",
+        "Đường cong",
+        "Đường tròn",
+        "Đoạn thẳng không có mũi tên"
+      ],
+      "answer": 0,
+      "explain": "Tia sáng là đường thẳng có mũi tên chỉ chiều truyền của ánh sáng.",
+      "wrong_explain": {
+        "1": "Ánh sáng truyền theo đường thẳng nên không biểu diễn bằng đường cong.",
+        "2": "Đường tròn không biểu diễn đường truyền của ánh sáng.",
+        "3": "Phải có mũi tên để chỉ chiều truyền."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Chùm sáng song song rất hẹp được coi là mô hình của:",
+      "choices": [
+        "Tia sáng",
+        "Mặt phẳng",
+        "Vật cản sáng",
+        "Màn chắn"
+      ],
+      "answer": 0,
+      "explain": "Chùm sáng song song rất hẹp được coi là mô hình một tia sáng.",
+      "wrong_explain": {
+        "1": "Mặt phẳng không phải mô hình của chùm sáng hẹp.",
+        "2": "Vật cản sáng là vật chặn ánh sáng, không phải mô hình tia sáng.",
+        "3": "Màn chắn dùng để hứng bóng, không phải mô hình tia sáng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Vùng tối do nguồn sáng hẹp có ranh giới với vùng sáng:",
+      "choices": [
+        "Rõ rệt",
+        "Mờ dần",
+        "Không có ranh giới",
+        "Tròn đều"
+      ],
+      "answer": 0,
+      "explain": "Với nguồn sáng hẹp, ranh giới giữa vùng tối và vùng sáng rõ rệt.",
+      "wrong_explain": {
+        "1": "Mờ dần là đặc điểm của vùng tối do nguồn sáng rộng.",
+        "2": "Vùng tối luôn có ranh giới với vùng sáng.",
+        "3": "Hình dạng ranh giới không phải là đặc điểm của vùng tối."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Vùng tối do nguồn sáng rộng có ranh giới với vùng sáng:",
+      "choices": [
+        "Không rõ rệt",
+        "Rất rõ rệt",
+        "Trùng với nguồn sáng",
+        "Đen tuyền"
+      ],
+      "answer": 0,
+      "explain": "Với nguồn sáng rộng, có vùng tối không hoàn toàn nên ranh giới không rõ rệt.",
+      "wrong_explain": {
+        "1": "Rõ rệt là đặc điểm của vùng tối do nguồn sáng hẹp.",
+        "2": "Vùng tối không trùng với nguồn sáng.",
+        "3": "Vùng tối không hoàn toàn không đen tuyền."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ở chỗ nhìn thấy vùng tối và không nhìn thấy Mặt Trời trên Trái Đất, ta gặp hiện tượng gì?",
+      "choices": [
+        "Nhật thực toàn phần",
+        "Nhật thực một phần",
+        "Không có nhật thực",
+        "Nguyệt thực"
+      ],
+      "answer": 0,
+      "explain": "Vùng tối hoàn toàn trên Trái Đất cho nhật thực toàn phần.",
+      "wrong_explain": {
+        "1": "Nhật thực một phần ứng với vùng tối không hoàn toàn.",
+        "2": "Có nhật thực vì vùng tối đã xuất hiện.",
+        "3": "Nguyệt thực là hiện tượng khác, không phải nhật thực."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đèn LED 20 W bật liên tục trong 3 giờ. Điện năng đèn tiêu thụ là bao nhiêu Wh?",
+      "expr": "20 * 3",
+      "answer": "60",
+      "explain": "Điện năng = 20 × 3 = 60 Wh."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có 3 tấm pin quang điện, mỗi tấm công suất 5 W. Tổng công suất của cả 3 tấm là bao nhiêu W?",
+      "expr": "3 * 5",
+      "answer": "15",
+      "explain": "Tổng công suất = 3 × 5 = 15 W."
+    }
+  ]
+}
