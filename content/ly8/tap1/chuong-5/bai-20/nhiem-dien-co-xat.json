@@ -1,0 +1,308 @@
+{
+  "id": "bai-20",
+  "grade": 8,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 8",
+  "chapter": "Chương V. Điện",
+  "lesson": "Bài 20. Hiện tượng nhiễm điện do cọ xát",
+  "section": "",
+  "bookPage": 84,
+  "requirements": [
+    "Giải thích được sơ lược nguyên nhân một vật cách điện nhiễm điện do cọ xát.",
+    "Giải thích được một vài hiện tượng thực tế liên quan đến sự nhiễm điện do cọ xát."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nhiều vật sau khi cọ xát có khả năng hút các vật nhẹ như mẩu giấy vụn; người ta nói chúng bị nhiễm điện (mang điện tích). Ví dụ: đũa nhựa cọ vào vải len, đũa thuỷ tinh cọ vào lụa, lược nhựa chải tóc khô."
+    },
+    {
+      "type": "text",
+      "content": "Có hai loại điện tích: quy ước điện tích trên thanh thuỷ tinh cọ xát với lụa là điện tích dương (+); điện tích trên đũa nhựa cọ xát với vải len là điện tích âm (−). Hai vật nhiễm điện cùng dấu thì đẩy nhau, khác dấu thì hút nhau."
+    },
+    {
+      "type": "text",
+      "content": "Giải thích sơ lược: nguyên tử gồm hạt nhân mang điện dương và các electron mang điện âm chuyển động xung quanh. Khi hai vật cọ xát, electron có thể dịch chuyển từ vật này sang vật kia. Vật mất electron nhiễm điện dương, vật nhận thêm electron nhiễm điện âm."
+    },
+    {
+      "type": "text",
+      "content": "Đũa thuỷ tinh cọ xát vào lụa: electron từ thuỷ tinh sang lụa, thuỷ tinh nhiễm điện dương, lụa nhiễm điện âm. Đũa nhựa cọ vào len: electron từ len sang nhựa, nhựa nhiễm điện âm, len nhiễm điện dương."
+    },
+    {
+      "type": "text",
+      "content": "Sấm sét là hiện tượng phóng điện giữa các đám mây tích điện trái dấu hoặc giữa mây và mặt đất. Khi có dông, không trú dưới tán cây cao, tránh nơi cao, xa các vật kim loại; trong nhà tránh cửa sổ, đồ dùng điện."
+    },
+    {
+      "type": "text",
+      "content": "Điện nghiệm là dụng cụ phát hiện vật nhiễm điện: khi vật nhiễm điện chạm vào quả cầu kim loại, hai lá kim loại nhiễm điện cùng dấu nên đẩy nhau và xoè ra; góc xoè càng lớn thì vật nhiễm điện càng mạnh."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một đũa nhựa nhận thêm 5 electron khi cọ xát vào len; len mất 5 electron. Tổng số electron của hai vật thay đổi bao nhiêu?",
+      "steps": [
+        "Electron chỉ dịch chuyển từ vật này sang vật kia.",
+        "Tổng không đổi: +5 − 5 = 0."
+      ],
+      "expr": "5-5",
+      "answer": "0"
+    },
+    {
+      "problem": "Có 3 vật A, B, C. A hút B, B đẩy C. Biết C nhiễm điện âm. Hỏi A nhiễm điện dương hay âm (cho rằng cả ba đều nhiễm điện)? Trả lời bằng số: 1 nếu dương, 0 nếu âm.",
+      "steps": [
+        "B đẩy C nên B cùng dấu với C: B âm.",
+        "A hút B nên A khác dấu B: A dương → 1."
+      ],
+      "expr": "1",
+      "answer": "1"
+    },
+    {
+      "problem": "Dạng giải thích: thanh thuỷ tinh cọ xát vào lụa, thanh mất 10 electron. Lụa nhận được bao nhiêu electron (giả sử electron chỉ chuyển sang lụa)?",
+      "steps": [
+        "Electron mất ở thanh thuỷ tinh chuyển sang lụa.",
+        "Lụa nhận 10 electron."
+      ],
+      "expr": "10",
+      "answer": "10"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Vật bị nhiễm điện có khả năng:",
+      "choices": [
+        "Phát sáng",
+        "Hút các vật nhẹ như mẩu giấy vụn",
+        "Nóng chảy ngay",
+        "Hút mọi kim loại"
+      ],
+      "answer": 1,
+      "explain": "Đó là biểu hiện vật nhiễm điện.",
+      "wrong_explain": {
+        "0": "Không phải.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hai vật nhiễm điện cùng dấu thì:",
+      "choices": [
+        "Đẩy nhau",
+        "Hút nhau",
+        "Không tương tác",
+        "Triệt tiêu nhau"
+      ],
+      "answer": 0,
+      "explain": "Cùng dấu đẩy nhau, khác dấu hút nhau.",
+      "wrong_explain": {
+        "1": "Đó là hai vật khác dấu.",
+        "2": "Có lực tác dụng.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi cọ xát đũa thuỷ tinh vào lụa, đũa thuỷ tinh nhiễm điện dương vì:",
+      "choices": [
+        "Nhận thêm electron",
+        "Mất bớt proton",
+        "Nhận thêm neutron",
+        "Mất bớt electron"
+      ],
+      "answer": 3,
+      "explain": "Vật mất electron thì dư điện dương.",
+      "wrong_explain": {
+        "0": "Khi đó mang điện âm.",
+        "1": "Proton nằm trong hạt nhân, không dịch chuyển.",
+        "2": "Neutron không mang điện."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Đũa nhựa cọ xát với vải len nhiễm điện âm vì:",
+      "choices": [
+        "Electron từ nhựa chuyển sang len",
+        "Proton từ len chuyển sang nhựa",
+        "Electron từ len chuyển sang nhựa",
+        "Neutron chuyển sang nhựa"
+      ],
+      "answer": 2,
+      "explain": "Nhựa nhận electron nên mang điện âm.",
+      "wrong_explain": {
+        "0": "Khi đó nhựa mang điện dương.",
+        "1": "Proton không dịch chuyển.",
+        "3": "Neutron không mang điện."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Điện nghiệm dùng để:",
+      "choices": [
+        "Đo cường độ dòng điện",
+        "Phát hiện một vật có nhiễm điện hay không",
+        "Đo hiệu điện thế chính xác",
+        "Đo nhiệt độ"
+      ],
+      "answer": 1,
+      "explain": "Hai lá kim loại xoè ra khi vật nhiễm điện chạm vào.",
+      "wrong_explain": {
+        "0": "Đó là ampe kế.",
+        "2": "Đó là vôn kế.",
+        "3": "Đó là nhiệt kế."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi trời có dông, hành động an toàn là:",
+      "choices": [
+        "Vào trong nhà, tránh xa cửa sổ và đồ dùng điện",
+        "Trú dưới gốc cây cao",
+        "Cầm ô kim loại giữa đồng",
+        "Đi xe đạp ngoài trời"
+      ],
+      "answer": 0,
+      "explain": "Tránh nơi cao và vật kim loại ngoài trời.",
+      "wrong_explain": {
+        "1": "Rất nguy hiểm.",
+        "2": "Rất nguy hiểm.",
+        "3": "Nguy hiểm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao bụi bám nhiều ở cánh quạt điện sau một thời gian?",
+      "choices": [
+        "Bụi nặng nên rơi xuống cánh quạt",
+        "Cánh quạt phát nhiệt",
+        "Cánh quạt có từ tính",
+        "Cánh quạt quay cọ xát với không khí bị nhiễm điện và hút bụi"
+      ],
+      "answer": 3,
+      "explain": "Vật nhiễm điện hút các vật nhẹ như bụi.",
+      "wrong_explain": {
+        "0": "Không giải thích được.",
+        "1": "Không phải nguyên nhân chính.",
+        "2": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đũa nhựa nhận thêm 8 electron khi cọ vào len. Len mất bao nhiêu electron?",
+      "expr": "8*1",
+      "answer": "8",
+      "explain": "Số electron len mất bằng số nhựa nhận: 8."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai điện nghiệm nhiễm điện, mỗi điện nghiệm có 2 lá kim loại. Tổng số lá kim loại là bao nhiêu?",
+      "expr": "2*2",
+      "answer": "4",
+      "explain": "2 × 2 = 4 lá."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vật A đẩy vật B, vật B hút vật C. Biết A nhiễm điện dương. Kết luận đúng là:",
+      "choices": [
+        "B nhiễm điện dương, C nhiễm điện âm",
+        "B âm, C dương",
+        "B dương, C dương",
+        "B âm, C âm"
+      ],
+      "answer": 0,
+      "explain": "A đẩy B → B dương; B hút C → C âm.",
+      "wrong_explain": {
+        "1": "A đẩy B nên B cùng dấu với A là dương.",
+        "2": "B hút C nên C khác dấu B.",
+        "3": "A đẩy B nên B dương."
+      },
+      "concept": true
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thanh thuỷ tinh mất 6 electron, lụa nhận cả 6 electron đó. Tổng số electron của hệ gồm thanh và lụa thay đổi bao nhiêu?",
+      "expr": "6-6",
+      "answer": "0",
+      "explain": "Không thay đổi: 6 − 6 = 0."
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vì sao khi lau gương bằng khăn bông khô vẫn thấy bụi bông bám vào gương?",
+      "choices": [
+        "Gương có keo",
+        "Bông bị nóng chảy",
+        "Gương nhiễm điện do cọ xát nên hút các sợi bông nhẹ",
+        "Gương có từ tính"
+      ],
+      "answer": 2,
+      "explain": "Cọ xát làm gương nhiễm điện.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Hai quả cầu nhẹ treo gần nhau bị đẩy ra xa. Điều này chứng tỏ:",
+      "choices": [
+        "Một quả mang điện, một quả không mang điện",
+        "Hai quả nhiễm điện khác dấu",
+        "Hai quả cầu nhiễm điện cùng dấu",
+        "Hai quả đều không mang điện"
+      ],
+      "answer": 2,
+      "explain": "Chỉ khi cùng dấu mới đẩy nhau.",
+      "wrong_explain": {
+        "0": "Khi đó chỉ hút.",
+        "1": "Khi đó hút nhau.",
+        "3": "Không tương tác."
+      },
+      "concept": true
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Một đám mây tích điện sét phóng xuống đất; sau 3 giây mới nghe sấm. Biết âm truyền khoảng 340 m/s. Tính khoảng cách từ nơi sét đến người nghe (m).",
+      "expr": "340*3",
+      "answer": "1020",
+      "explain": "s = 340 × 3 = 1 020 m."
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "id": "bai-1",
+  "grade": 8,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 8",
+  "chapter": "Mở đầu",
+  "lesson": "Bài 1. Sử dụng một số hoá chất, thiết bị cơ bản trong phòng thí nghiệm",
+  "section": "",
+  "bookPage": 6,
+  "requirements": [
+    "Nhận biết được một số dụng cụ, hoá chất và nêu được quy tắc sử dụng hoá chất an toàn.",
+    "Nhận biết được các thiết bị điện trong môn KHTN 8 và trình bày được cách sử dụng điện an toàn."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hoá chất trong phòng thí nghiệm được đựng trong chai, lọ kín và có dán nhãn ghi tên, công thức hoá học, khối lượng hoặc thể tích, độ tinh khiết, kí hiệu cảnh báo, điều kiện bảo quản. Dung dịch pha sẵn phải có nhãn ghi nồng độ chất tan."
+    },
+    {
+      "type": "text",
+      "content": "Quy tắc an toàn: không dùng hoá chất đựng trong lọ không nhãn hoặc nhãn mờ; không dùng tay trực tiếp lấy hoá chất; hoá chất thừa không đổ trở lại bình chứa; khi hoá chất dính vào người hoặc bị đổ thì báo ngay giáo viên."
+    },
+    {
+      "type": "text",
+      "content": "Lấy hoá chất rắn dạng bột, hạt nhỏ bằng thìa kim loại hoặc thuỷ tinh; dạng hạt to, dây, thanh có thể dùng panh gắp. Lấy hoá chất lỏng lượng nhỏ bằng ống hút nhỏ giọt; rót từ lọ thì hướng nhãn lên trên để giọt chất lỏng không làm hỏng nhãn."
+    },
+    {
+      "type": "text",
+      "content": "Khi đun nóng hoá chất trong ống nghiệm, dùng kẹp gỗ kẹp ở khoảng 1/3 ống tính từ miệng, miệng ống nghiêng về phía không có người, hơ nóng đều rồi mới đun tại chỗ có hoá chất."
+    },
+    {
+      "type": "text",
+      "content": "Thiết bị điện trong KHTN 8 chỉ dùng điện một chiều: pin 1,5 V (hai pin cho 3 V, bốn pin cho 6 V), biến áp nguồn (đổi điện xoay chiều 220 V thành điện áp nhỏ), ampe kế đo cường độ dòng điện, vôn kế đo hiệu điện thế, joulemeter đo năng lượng, công suất, điện áp, dòng điện."
+    },
+    {
+      "type": "text",
+      "content": "Khi dùng ampe kế, vôn kế phải chọn thang đo lớn hơn giá trị cần đo, mắc đúng chốt dương (+) và chốt âm (−). Đèn LED phải mắc nối tiếp với điện trở thích hợp để không bị hỏng."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Mỗi pin có hiệu điện thế 1,5 V. Bộ nguồn gồm 4 pin mắc nối tiếp có hiệu điện thế bao nhiêu vôn?",
+      "steps": [
+        "Hiệu điện thế bộ nguồn bằng tổng hiệu điện thế các pin.",
+        "4 × 1,5 = 6 V."
+      ],
+      "expr": "4*1.5",
+      "answer": "6"
+    },
+    {
+      "problem": "Đo cường độ dòng điện ba lần được 0,30 A; 0,32 A; 0,31 A. Tính giá trị trung bình (A).",
+      "steps": [
+        "Cộng ba giá trị: 0,30 + 0,32 + 0,31 = 0,93 A.",
+        "Chia 3: 0,93 : 3 = 0,31 A."
+      ],
+      "expr": "(0.30+0.32+0.31)/3",
+      "answer": "0.31"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trước khi dùng một lọ hoá chất, việc cần làm đầu tiên là:",
+      "choices": [
+        "Ngửi trực tiếp để nhận biết",
+        "Đọc kĩ nhãn hoá chất và các cảnh báo",
+        "Nếm thử một ít",
+        "Đổ ra cốc để quan sát màu"
+      ],
+      "answer": 1,
+      "explain": "Đọc nhãn giúp biết tên, tính chất, cảnh báo của hoá chất để làm thí nghiệm an toàn.",
+      "wrong_explain": {
+        "0": "Không ngửi trực tiếp hoá chất vì có thể độc hoặc gây bỏng.",
+        "2": "Tuyệt đối không nếm hoá chất.",
+        "3": "Phải đọc nhãn và hiểu cảnh báo trước khi lấy hoá chất."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hoá chất lỏng lượng nhỏ nên được lấy bằng dụng cụ nào?",
+      "choices": [
+        "Ống hút nhỏ giọt",
+        "Panh gắp",
+        "Thìa kim loại",
+        "Tay đeo găng"
+      ],
+      "answer": 0,
+      "explain": "Ống hút nhỏ giọt lấy được lượng nhỏ chất lỏng chính xác và an toàn.",
+      "wrong_explain": {
+        "1": "Panh dùng gắp chất rắn dạng hạt to, dây, thanh.",
+        "2": "Thìa dùng xúc chất rắn dạng bột, hạt nhỏ.",
+        "3": "Không dùng tay trực tiếp lấy hoá chất."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hoá chất còn thừa sau thí nghiệm cần được xử lí như thế nào?",
+      "choices": [
+        "Đổ trở lại lọ ban đầu",
+        "Đổ thẳng xuống bồn rửa",
+        "Giữ lại trong cốc để dùng lần sau",
+        "Xử lí theo hướng dẫn của giáo viên"
+      ],
+      "answer": 3,
+      "explain": "Hoá chất thừa không được đổ trở lại bình chứa, cần xử lí theo hướng dẫn của giáo viên.",
+      "wrong_explain": {
+        "0": "Làm vậy sẽ làm bẩn, hỏng hoá chất trong lọ.",
+        "1": "Có thể gây nguy hiểm và ô nhiễm nếu chưa được hướng dẫn.",
+        "2": "Hoá chất không có nhãn là không an toàn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi đun ống nghiệm chứa hoá chất, miệng ống nghiệm nên:",
+      "choices": [
+        "Hướng thẳng vào mình để quan sát",
+        "Hướng về bạn cùng nhóm",
+        "Nghiêng về phía không có người",
+        "Đặt thẳng đứng"
+      ],
+      "answer": 2,
+      "explain": "Miệng ống nghiệm hướng về phía không có người để tránh bị bắn hoá chất.",
+      "wrong_explain": {
+        "0": "Rất nguy hiểm nếu hoá chất bắn ra.",
+        "1": "Có thể làm bạn bị thương.",
+        "3": "Dễ trào hoá chất; cần nghiêng ống và đun từ từ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ampe kế dùng để đo đại lượng nào?",
+      "choices": [
+        "Hiệu điện thế",
+        "Cường độ dòng điện",
+        "Nhiệt độ",
+        "Độ pH"
+      ],
+      "answer": 1,
+      "explain": "Ampe kế đo cường độ dòng điện, vôn kế đo hiệu điện thế.",
+      "wrong_explain": {
+        "0": "Hiệu điện thế được đo bằng vôn kế.",
+        "2": "Nhiệt độ được đo bằng nhiệt kế.",
+        "3": "Độ pH được đo bằng giấy pH hoặc máy đo pH."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao khi dùng đèn LED phải mắc nối tiếp với một điện trở thích hợp?",
+      "choices": [
+        "Để đèn không bị hỏng do dòng điện quá lớn",
+        "Để đèn sáng yếu đi",
+        "Để đổi màu ánh sáng",
+        "Để đèn dùng được điện xoay chiều"
+      ],
+      "answer": 0,
+      "explain": "Điện trở hạn chế dòng điện qua LED, tránh làm hỏng đèn.",
+      "wrong_explain": {
+        "1": "Mục đích chính là bảo vệ đèn.",
+        "2": "Điện trở không đổi màu đèn.",
+        "3": "Điện trở không đổi loại dòng điện."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Bộ nguồn gồm 4 pin 1,5 V mắc nối tiếp có hiệu điện thế (V) là:",
+      "choices": [
+        "3",
+        "1,5",
+        "9",
+        "6"
+      ],
+      "answer": 3,
+      "explain": "4 × 1,5 = 6 V.",
+      "wrong_explain": {
+        "0": "Đó là hiệu điện thế của hai pin.",
+        "1": "Đó chỉ là một pin.",
+        "2": "Ứng với 6 pin."
+      },
+      "expr": "4*1.5"
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đo thời gian ba lần được 2,0 s; 2,2 s; 2,1 s. Tính giá trị trung bình (s).",
+      "expr": "(2.0+2.2+2.1)/3",
+      "answer": "2.1",
+      "explain": "Trung bình = (2,0 + 2,2 + 2,1) : 3 = 2,1 s."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Dung dịch hoá chất pha sẵn phải có nhãn ghi thông tin nào để dùng đúng?",
+      "choices": [
+        "Chỉ ghi ngày sản xuất",
+        "Chỉ ghi tên người pha",
+        "Nồng độ của chất tan",
+        "Không cần ghi gì"
+      ],
+      "answer": 2,
+      "explain": "Dung dịch pha sẵn cần có nhãn ghi nồng độ chất tan.",
+      "wrong_explain": {
+        "0": "Cần biết nồng độ để dùng đúng.",
+        "1": "Thiếu thông tin về nồng độ chất tan.",
+        "3": "Không dùng hoá chất không nhãn."
+      },
+      "concept": true
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Một bộ nguồn gồm 2 pin 1,5 V mắc nối tiếp. Hiệu điện thế của bộ nguồn là bao nhiêu vôn?",
+      "expr": "2*1.5",
+      "answer": "3",
+      "explain": "Hiệu điện thế tổng bằng tổng các pin: 2 × 1,5 = 3 V."
+    }
+  ]
+}

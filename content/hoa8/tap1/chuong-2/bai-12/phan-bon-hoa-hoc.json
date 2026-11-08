@@ -1,0 +1,274 @@
+{
+  "id": "bai-12",
+  "grade": 8,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 8",
+  "chapter": "Chương II. Một số hợp chất thông dụng",
+  "lesson": "Bài 12. Phân bón hoá học",
+  "section": "",
+  "bookPage": 53,
+  "requirements": [
+    "Trình bày được vai trò của phân bón đối với cây trồng.",
+    "Nêu được thành phần và tác dụng cơ bản của một số loại phân bón hoá học.",
+    "Trình bày được ảnh hưởng của phân bón hoá học đến môi trường và đề xuất biện pháp giảm thiểu ô nhiễm."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cây trồng cần ba nhóm nguyên tố dinh dưỡng: đa lượng (N, P, K), trung lượng (Ca, Mg, S,...) và vi lượng (Zn, Mn, Fe, Cu,...). Chúng cấu tạo nên tế bào, điều chỉnh trao đổi chất và giúp cây chống chịu điều kiện bất lợi."
+    },
+    {
+      "type": "text",
+      "content": "Phân bón hoá học là những hoá chất chứa các nguyên tố dinh dưỡng, bón cho cây để nâng cao năng suất."
+    },
+    {
+      "type": "text",
+      "content": "Phân đạm cung cấp nitrogen (NH₄NO₃, (NH₄)₂SO₄, urea (NH₂)₂CO, NaNO₃,...), giúp cây phát triển thân, rễ, lá. Phân lân cung cấp phosphorus (phân lân nung chảy, superphosphate), giúp bộ rễ phát triển, cây nở hoa, đậu quả. Phân kali cung cấp potassium (KCl, K₂SO₄), tăng khả năng hút nước, chịu lạnh, chống đổ ngã. Phân NPK là phân hỗn hợp chứa cả N, P, K."
+    },
+    {
+      "type": "text",
+      "content": "Tác hại khi dùng sai: phân dư thừa rửa trôi gây ô nhiễm đất, nước ngầm, sông hồ; phân huỷ sinh khí NH₃, nitrogen oxide gây ô nhiễm không khí; tồn dư hoá chất trong thực phẩm gây hại sức khoẻ."
+    },
+    {
+      "type": "text",
+      "content": "Quy tắc bón phân “4 đúng”: đúng liều, đúng loại, đúng lúc, đúng nơi. Nên tăng cường dùng phân hữu cơ (ủ từ rác thải hữu cơ) để giảm phân hoá học. Khi bón phân cần đeo găng tay, khẩu trang và bảo quản đúng nơi, xa trẻ em."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Phân NH₄NO₃ (N = 14, H = 1, O = 16). Tính phần trăm khối lượng nitrogen trong phân.",
+      "steps": [
+        "M(NH₄NO₃) = 14·2 + 4 + 48 = 80 g/mol.",
+        "%N = 28 / 80 × 100 = 35%."
+      ],
+      "expr": "28*100/80",
+      "answer": "35"
+    },
+    {
+      "problem": "Một bao phân NH₄NO₃ nặng 50 kg. Tính khối lượng nitrogen có trong bao (kg).",
+      "steps": [
+        "%N = 35%.",
+        "m(N) = 50 × 35 / 100 = 17,5 kg."
+      ],
+      "expr": "50*35/100",
+      "answer": "17.5"
+    },
+    {
+      "problem": "Dạng tính lượng phân cần bón: ruộng cần 14 kg nitrogen; dùng phân NH₄NO₃ (35% N). Cần bao nhiêu kg phân?",
+      "steps": [
+        "Cách làm: m phân = m N / %N.",
+        "m = 14 × 100 / 35 = 40 kg."
+      ],
+      "expr": "14*100/35",
+      "answer": "40"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nhóm nguyên tố dinh dưỡng đa lượng của cây gồm:",
+      "choices": [
+        "Zn, Mn, Fe",
+        "N, P, K",
+        "Ca, Mg",
+        "C, H, O"
+      ],
+      "answer": 1,
+      "explain": "Đa lượng: nitrogen, phosphorus, potassium.",
+      "wrong_explain": {
+        "0": "Là nguyên tố vi lượng.",
+        "2": "Là nguyên tố trung lượng.",
+        "3": "Cây lấy từ nước và CO₂."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phân đạm cung cấp cho cây nguyên tố nào?",
+      "choices": [
+        "Nitrogen",
+        "Phosphorus",
+        "Potassium",
+        "Calcium"
+      ],
+      "answer": 0,
+      "explain": "Phân đạm: nguyên tố N.",
+      "wrong_explain": {
+        "1": "Phân lân.",
+        "2": "Phân kali.",
+        "3": "Trung lượng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phân lân giúp cây trồng chủ yếu ở điểm nào?",
+      "choices": [
+        "Tăng chiều cao thân tức thì",
+        "Chống sâu bệnh hoàn toàn",
+        "Làm lá có màu đỏ",
+        "Phát triển bộ rễ, nở hoa, đậu quả"
+      ],
+      "answer": 3,
+      "explain": "Phosphorus cần cho rễ, hoa, quả.",
+      "wrong_explain": {
+        "0": "Chủ yếu là vai trò của đạm.",
+        "1": "Không đúng.",
+        "2": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Phân NPK là phân bón:",
+      "choices": [
+        "Chỉ chứa nitrogen",
+        "Chỉ chứa phosphorus",
+        "Hỗn hợp chứa đạm, lân, kali",
+        "Phân hữu cơ"
+      ],
+      "answer": 2,
+      "explain": "NPK = nitrogen, phosphorus, potassium.",
+      "wrong_explain": {
+        "0": "Là phân đạm.",
+        "1": "Là phân lân.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Quy tắc bón phân “4 đúng” gồm:",
+      "choices": [
+        "Đúng giá, đúng màu, đúng loại, đúng nơi",
+        "Đúng liều, đúng loại, đúng lúc, đúng nơi",
+        "Đúng liều, đúng hãng, đúng giá, đúng mùa",
+        "Đúng người, đúng giờ, đúng liều, đúng nơi"
+      ],
+      "answer": 1,
+      "explain": "Bón phân đúng cách để tránh ô nhiễm.",
+      "wrong_explain": {
+        "0": "Không phải.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Lạm dụng phân bón hoá học có thể gây:",
+      "choices": [
+        "Ô nhiễm đất, nước và tồn dư hoá chất trong thực phẩm",
+        "Làm đất tơi xốp hơn",
+        "Tăng đa dạng sinh học",
+        "Không có tác hại"
+      ],
+      "answer": 0,
+      "explain": "Phân dư thừa bị rửa trôi gây ô nhiễm.",
+      "wrong_explain": {
+        "1": "Không phải hậu quả.",
+        "2": "Không đúng.",
+        "3": "Có tác hại."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Phần trăm khối lượng N trong NH₄NO₃ là:",
+      "choices": [
+        "14",
+        "50",
+        "20",
+        "35"
+      ],
+      "answer": 3,
+      "explain": "%N = 28/80 × 100 = 35%.",
+      "wrong_explain": {
+        "0": "Chỉ tính một nguyên tử N.",
+        "1": "Sai.",
+        "2": "Sai."
+      },
+      "expr": "28*100/80"
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một bao phân NH₄NO₃ nặng 40 kg có bao nhiêu kg nitrogen?",
+      "expr": "40*35/100",
+      "answer": "14",
+      "explain": "40 × 35% = 14 kg."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính khối lượng mol của (NH₄)₂SO₄ (N = 14, H = 1, S = 32, O = 16) (g/mol).",
+      "expr": "2*14+8+32+4*16",
+      "answer": "132",
+      "explain": "M = 28 + 8 + 32 + 64 = 132 g/mol."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong 66 kg (NH₄)₂SO₄ (M = 132) có bao nhiêu kg nitrogen (N = 14)?",
+      "expr": "66*28/132",
+      "answer": "14",
+      "explain": "m(N) = 66 × 28 / 132 = 14 kg."
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vì sao nên tăng cường dùng phân hữu cơ?",
+      "choices": [
+        "Rẻ hơn tuyệt đối",
+        "Làm cây lớn tức thì",
+        "Không cần ủ",
+        "Giàu chất dinh dưỡng, giúp đất tơi xốp, an toàn hơn"
+      ],
+      "answer": 3,
+      "explain": "Phân hữu cơ cải tạo đất và ít ô nhiễm hơn.",
+      "wrong_explain": {
+        "0": "Chưa chắc.",
+        "1": "Không đúng.",
+        "2": "Cần ủ từ rác thải hữu cơ."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cần bón 21 kg nitrogen bằng urea (NH₂)₂CO (M = 60, có 28 g N trong 60 g). Cần bao nhiêu kg urea?",
+      "expr": "21*60/28",
+      "answer": "45",
+      "explain": "m(urea) = 21 × 60 / 28 = 45 kg."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Phân NPK 16-16-8 chứa 16% N. Trong 25 kg phân có bao nhiêu kg N?",
+      "expr": "16*25/100",
+      "answer": "4",
+      "explain": "m(N) = 16 × 25 / 100 = 4 kg."
+    }
+  ]
+}

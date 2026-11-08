@@ -1,0 +1,288 @@
+{
+  "id": "bai-25",
+  "grade": 8,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 8",
+  "chapter": "Chương V. Điện",
+  "lesson": "Bài 25. Thực hành đo cường độ dòng điện và hiệu điện thế",
+  "section": "",
+  "bookPage": 102,
+  "requirements": [
+    "Đo được cường độ dòng điện và hiệu điện thế bằng dụng cụ thực hành.",
+    "Vẽ được sơ đồ mạch điện có ampe kế và vôn kế."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đo cường độ dòng điện: mắc ampe kế nối tiếp trong mạch sao cho dòng điện đi vào chốt (+) và ra chốt (−). Đo tại các vị trí khác nhau của mạch nối tiếp cho thấy cường độ dòng điện như nhau: bóng đèn không “tiêu thụ” dòng điện."
+    },
+    {
+      "type": "text",
+      "content": "Đo hiệu điện thế: nối hai chốt vôn kế vào hai đầu bóng đèn (mắc song song với bóng đèn); chốt (+) về phía dòng điện đi vào, chốt (−) về phía dòng điện đi ra."
+    },
+    {
+      "type": "text",
+      "content": "Khi dùng pin 3 V thay pin 1,5 V thì hiệu điện thế hai đầu bóng đèn tăng và cường độ dòng điện thường tăng, đèn sáng hơn."
+    },
+    {
+      "type": "text",
+      "content": "Mắc nối tiếp: các dụng cụ mắc liên tiếp nhau trong một nhánh. Mắc song song: các dụng cụ có hai đầu nối chung với nhau. Ampe kế mắc nối tiếp, vôn kế mắc song song."
+    },
+    {
+      "type": "text",
+      "content": "Trình tự thực hành: chuẩn bị dụng cụ (pin, đèn, công tắc, ampe kế, vôn kế, dây nối); vẽ sơ đồ; mắc mạch khi công tắc ngắt; kiểm tra rồi đóng công tắc; ghi số liệu; tính giá trị trung bình; nhận xét."
+    },
+    {
+      "type": "text",
+      "content": "Lưu ý an toàn: chọn thang đo phù hợp; mắc đúng chốt (+) và (−); không mắc ampe kế trực tiếp vào nguồn; ngắt công tắc khi thay đổi mạch."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đo cường độ dòng điện ở ba vị trí trong mạch nối tiếp được 0,30 A; 0,30 A; 0,30 A. Trung bình bằng bao nhiêu A?",
+      "steps": [
+        "Cộng ba giá trị 0,90 A.",
+        "Chia 3 được 0,30 A."
+      ],
+      "expr": "(0.30+0.30+0.30)/3",
+      "answer": "0.3"
+    },
+    {
+      "problem": "Hiệu điện thế hai đầu đèn đo ba lần: 2,9 V; 3,0 V; 3,1 V. Tính trung bình (V).",
+      "steps": [
+        "Tổng 9,0 V.",
+        "9,0 / 3 = 3,0 V."
+      ],
+      "expr": "(2.9+3.0+3.1)/3",
+      "answer": "3"
+    },
+    {
+      "problem": "Dạng đọc số: vôn kế thang đo 6 V chia 60 độ chia đều. Kim chỉ vạch thứ 45. Số chỉ là bao nhiêu V?",
+      "steps": [
+        "Cách làm: mỗi độ chia = 6 / 60 = 0,1 V.",
+        "45 × 0,1 = 4,5 V."
+      ],
+      "expr": "45*6/60",
+      "answer": "4.5"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Ampe kế được mắc trong mạch theo cách:",
+      "choices": [
+        "Song song",
+        "Nối tiếp",
+        "Chéo",
+        "Không cần mắc"
+      ],
+      "answer": 1,
+      "explain": "Ampe kế nối tiếp với dụng cụ.",
+      "wrong_explain": {
+        "0": "Cách mắc vôn kế.",
+        "2": "Không có.",
+        "3": "Phải mắc."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Vôn kế đo hiệu điện thế hai đầu bóng đèn phải được mắc:",
+      "choices": [
+        "Song song với bóng đèn",
+        "Nối tiếp với bóng đèn",
+        "Nối với một đầu đèn",
+        "Không cần mắc vào đèn"
+      ],
+      "answer": 0,
+      "explain": "Hai chốt vôn kế nối vào hai đầu bóng đèn.",
+      "wrong_explain": {
+        "1": "Cách mắc ampe kế.",
+        "2": "Không đủ.",
+        "3": "Phải mắc vào hai đầu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong mạch nối tiếp, cường độ dòng điện tại các vị trí:",
+      "choices": [
+        "Giảm dần sau mỗi đèn",
+        "Tăng dần",
+        "Bằng 0",
+        "Như nhau"
+      ],
+      "answer": 3,
+      "explain": "Bóng đèn không tiêu thụ dòng điện.",
+      "wrong_explain": {
+        "0": "Không đúng.",
+        "1": "Không đúng.",
+        "2": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trước khi đóng công tắc cần:",
+      "choices": [
+        "Đóng ngay",
+        "Tháo pin",
+        "Kiểm tra mạch, chốt (+)(−) và thang đo",
+        "Đổi thang đo nhỏ nhất"
+      ],
+      "answer": 2,
+      "explain": "Kiểm tra mạch để an toàn.",
+      "wrong_explain": {
+        "0": "Có thể hỏng dụng cụ.",
+        "1": "Không cần.",
+        "3": "Có thể hỏng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi thay pin 1,5 V bằng pin 3 V, đèn thường:",
+      "choices": [
+        "Tối hơn",
+        "Sáng hơn",
+        "Tắt hẳn",
+        "Không đổi"
+      ],
+      "answer": 1,
+      "explain": "Hiệu điện thế lớn hơn, dòng điện lớn hơn.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "2": "Không.",
+        "3": "Có thay đổi."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Đối với vôn kế, chốt (+) nối về phía:",
+      "choices": [
+        "Cực dương của nguồn (nơi dòng điện đi vào)",
+        "Cực âm",
+        "Công tắc",
+        "Không quy định"
+      ],
+      "answer": 0,
+      "explain": "Mắc đúng cực để vôn kế chỉ đúng.",
+      "wrong_explain": {
+        "1": "Ngược.",
+        "2": "Không phải.",
+        "3": "Có quy định."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ba lần đo cường độ dòng điện: 0,40 A; 0,42 A; 0,41 A. Trung bình bằng bao nhiêu A?",
+      "expr": "(0.40+0.42+0.41)/3",
+      "answer": "0.41",
+      "explain": "Tổng 1,23; trung bình 0,41 A."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vôn kế thang đo 3 V chia 30 độ chia đều. Kim chỉ vạch thứ 12. Số chỉ là bao nhiêu V?",
+      "expr": "12*3/30",
+      "answer": "1.2",
+      "explain": "Mỗi độ chia 0,1 V; 12 × 0,1 = 1,2 V."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Một học sinh cho rằng bóng đèn làm giảm cường độ dòng điện sau khi đi qua đèn. Kết quả thực hành cho thấy:",
+      "choices": [
+        "Sau đèn nhỏ hơn",
+        "Cường độ dòng điện trước và sau bóng đèn như nhau",
+        "Sau đèn lớn hơn",
+        "Sau đèn bằng 0"
+      ],
+      "answer": 1,
+      "explain": "Mạch nối tiếp có I như nhau tại mọi điểm.",
+      "wrong_explain": {
+        "0": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ampe kế thang đo 0,6 A chia 60 độ chia đều. Kim chỉ vạch 27. Số chỉ là bao nhiêu A?",
+      "expr": "27*6/600",
+      "answer": "0.27",
+      "explain": "Mỗi độ chia 0,01 A; 27 × 0,01 = 0,27 A."
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Cách xác định pin cũ bằng vôn kế là:",
+      "choices": [
+        "Đo bằng ampe kế trực tiếp",
+        "Cân khối lượng pin",
+        "Nhìn màu vỏ pin",
+        "Đo hiệu điện thế hai cực, nếu nhỏ hơn nhiều so với giá trị ghi trên pin thì pin cũ"
+      ],
+      "answer": 3,
+      "explain": "Pin cũ có hiệu điện thế giảm.",
+      "wrong_explain": {
+        "0": "Có thể hỏng.",
+        "1": "Không xác định được.",
+        "2": "Không xác định được."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Bốn lần đo hiệu điện thế: 1,4 V; 1,5 V; 1,5 V; 1,6 V. Trung bình là bao nhiêu V?",
+      "expr": "(1.4+1.5+1.5+1.6)/4",
+      "answer": "1.5",
+      "explain": "Tổng 6,0; trung bình 1,5 V."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Nếu thang đo ampe kế chọn nhỏ hơn dòng điện cần đo thì:",
+      "choices": [
+        "Ampe kế chỉ chính xác hơn",
+        "Ampe kế có thể bị hỏng",
+        "Dòng điện giảm",
+        "Không ảnh hưởng"
+      ],
+      "answer": 1,
+      "explain": "Phải chọn thang đo lớn hơn giá trị cần đo.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Có ảnh hưởng."
+      },
+      "concept": true
+    }
+  ]
+}

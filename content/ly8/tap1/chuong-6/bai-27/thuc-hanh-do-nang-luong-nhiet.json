@@ -1,0 +1,286 @@
+{
+  "id": "bai-27",
+  "grade": 8,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 8",
+  "chapter": "Chương VI. Nhiệt",
+  "lesson": "Bài 27. Thực hành đo năng lượng nhiệt bằng joulemeter",
+  "section": "",
+  "bookPage": 109,
+  "requirements": [
+    "Đo được năng lượng nhiệt mà vật nhận được khi bị đun nóng.",
+    "Tính được năng lượng nhiệt để đun sôi một lượng nước xác định."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dây đốt đặt trong bình nhiệt lượng kế biến năng lượng điện thành năng lượng nhiệt đun nóng nước. Joulemeter đo năng lượng điện do nguồn cung cấp, từ đó biết năng lượng nhiệt nước nhận được (bỏ qua hao phí)."
+    },
+    {
+      "type": "text",
+      "content": "Cách tiến hành: đổ nước ngập dây đốt và đầu đo nhiệt độ; mắc đúng joulemeter; chọn đại lượng đo là năng lượng; khuấy liên tục; đọc nhiệt độ đầu t₁; bật nguồn, đọc năng lượng khi nhiệt độ tăng thêm 3 °C, 6 °C, 9 °C; lặp lại với lượng nước nhiều hơn."
+    },
+    {
+      "type": "text",
+      "content": "Nhận xét: khi nhiệt độ tăng thêm càng nhiều thì năng lượng nhiệt cần cung cấp càng nhiều; với cùng độ tăng nhiệt độ, lượng nước càng nhiều thì cần năng lượng càng lớn."
+    },
+    {
+      "type": "text",
+      "content": "Nhiệt lượng là phần nhiệt năng mà vật nhận được hay mất đi trong quá trình truyền nhiệt. Nhiệt lượng cần cung cấp cho m (kg) nước tăng từ t₁ (°C) đến t₂ (°C):"
+    },
+    {
+      "type": "formula",
+      "content": "Q = m · c · (t₂ − t₁)   (c = 4 180 J/(kg·K) là nhiệt dung riêng của nước)"
+    },
+    {
+      "type": "text",
+      "content": "Nước sôi ở 100 °C (ở áp suất khí quyển thường). Muốn đun sôi nước từ t₁ thì Q = m·c·(100 − t₁). Có thể dùng kết quả này để ước lượng năng lượng điện cần cung cấp."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính nhiệt lượng cần để đun 2 kg nước từ 20 °C lên 100 °C (c = 4 180 J/(kg·K)).",
+      "steps": [
+        "Q = m·c·Δt với Δt = 100 − 20 = 80 °C.",
+        "Q = 2 × 4 180 × 80 = 668 800 J."
+      ],
+      "expr": "2*4180*80",
+      "answer": "668800"
+    },
+    {
+      "problem": "Joulemeter đọc được 12 540 J khi 1 kg nước tăng thêm 3 °C. Tính nhiệt dung riêng của nước theo kết quả này (J/(kg·K)).",
+      "steps": [
+        "c = Q / (m·Δt).",
+        "c = 12 540 / (1 × 3) = 4 180 J/(kg·K)."
+      ],
+      "expr": "12540/3",
+      "answer": "4180"
+    },
+    {
+      "problem": "Dạng tìm độ tăng nhiệt độ: cung cấp 41 800 J cho 0,5 kg nước. Nhiệt độ tăng thêm bao nhiêu °C? (c = 4 180)",
+      "steps": [
+        "Cách làm: Δt = Q / (m·c).",
+        "Δt = 41 800 / (0,5 × 4 180) = 20 °C."
+      ],
+      "expr": "41800*2/4180",
+      "answer": "20"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Dụng cụ đo năng lượng điện do nguồn cung cấp trong thí nghiệm là:",
+      "choices": [
+        "Ampe kế",
+        "Joulemeter",
+        "Vôn kế",
+        "Nhiệt kế"
+      ],
+      "answer": 1,
+      "explain": "Joulemeter đo năng lượng, công suất, điện áp, dòng điện.",
+      "wrong_explain": {
+        "0": "Đo dòng điện.",
+        "2": "Đo hiệu điện thế.",
+        "3": "Đo nhiệt độ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nhiệt dung riêng của nước có giá trị khoảng:",
+      "choices": [
+        "4 180 J/(kg·K)",
+        "418 J/(kg·K)",
+        "41 800 J/(kg·K)",
+        "1 J/(kg·K)"
+      ],
+      "answer": 0,
+      "explain": "c nước = 4 180 J/(kg·K).",
+      "wrong_explain": {
+        "1": "Sai bậc.",
+        "2": "Sai bậc.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Công thức tính nhiệt lượng cần cung cấp để đun nóng một vật là:",
+      "choices": [
+        "Q = m·(t₂ − t₁)/c",
+        "Q = c/(m·Δt)",
+        "Q = m + c + Δt",
+        "Q = m·c·(t₂ − t₁)"
+      ],
+      "answer": 3,
+      "explain": "Q tỉ lệ với khối lượng, nhiệt dung riêng và độ tăng nhiệt độ.",
+      "wrong_explain": {
+        "0": "Sai.",
+        "1": "Sai.",
+        "2": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Với cùng độ tăng nhiệt độ, lượng nước càng nhiều thì nhiệt lượng cần cung cấp:",
+      "choices": [
+        "Càng nhỏ",
+        "Không đổi",
+        "Càng lớn",
+        "Bằng 0"
+      ],
+      "answer": 2,
+      "explain": "Q tỉ lệ thuận với m.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "1": "Có thay đổi.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trong khi thí nghiệm cần khuấy nước liên tục để:",
+      "choices": [
+        "Làm nước lạnh",
+        "Nhiệt độ nước đồng đều và đọc chính xác",
+        "Giảm khối lượng nước",
+        "Tắt joulemeter"
+      ],
+      "answer": 1,
+      "explain": "Khuấy giúp nước nóng đều.",
+      "wrong_explain": {
+        "0": "Không phải.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nước sôi ở nhiệt độ bao nhiêu (áp suất khí quyển thường)?",
+      "choices": [
+        "100 °C",
+        "0 °C",
+        "37 °C",
+        "50 °C"
+      ],
+      "answer": 0,
+      "explain": "Nước sôi ở 100 °C.",
+      "wrong_explain": {
+        "1": "Đó là nhiệt độ đông đặc.",
+        "2": "Là nhiệt độ cơ thể người.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nhiệt lượng cần cung cấp cho 1 kg nước tăng 10 °C (c = 4 180) là (J):",
+      "choices": [
+        "418",
+        "4 180",
+        "418 000",
+        "41 800"
+      ],
+      "answer": 3,
+      "explain": "Q = 1 × 4 180 × 10 = 41 800 J.",
+      "wrong_explain": {
+        "0": "Sai bậc.",
+        "1": "Quên nhân với Δt.",
+        "2": "Sai bậc."
+      },
+      "expr": "1*4180*10"
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính nhiệt lượng (J) cần để 3 kg nước tăng thêm 5 °C (c = 4 180).",
+      "expr": "3*4180*5",
+      "answer": "62700",
+      "explain": "Q = 3 × 4 180 × 5 = 62 700 J."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đun 0,5 kg nước từ 30 °C đến 100 °C cần bao nhiêu J? (c = 4 180)",
+      "expr": "5*4180*70/10",
+      "answer": "146300",
+      "explain": "Q = 0,5 × 4 180 × 70 = 146 300 J."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cần cung cấp 83 600 J để 2 kg nước nóng lên thêm bao nhiêu °C? (c = 4 180)",
+      "expr": "83600/8360",
+      "answer": "10",
+      "explain": "Δt = 83 600 / (2 × 4 180) = 10 °C."
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một ấm điện cung cấp 4 180 J mỗi giây. Cần bao nhiêu giây để đun 2 kg nước từ 20 °C đến 100 °C (bỏ qua hao phí)?",
+      "expr": "2*80",
+      "answer": "160",
+      "explain": "Q = 668 800 J; t = 668 800 / 4 180 = 160 s."
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vì sao kết quả đo bằng joulemeter thường lớn hơn nhiệt lượng nước thực nhận?",
+      "choices": [
+        "Nước nhận nhiều hơn năng lượng điện",
+        "Joulemeter đo sai hoàn toàn",
+        "Một phần năng lượng bị hao phí ra bình và môi trường",
+        "Nhiệt dung riêng thay đổi liên tục"
+      ],
+      "answer": 2,
+      "explain": "Có hao phí nhiệt.",
+      "wrong_explain": {
+        "0": "Không thể.",
+        "1": "Không.",
+        "3": "Không phải nguyên nhân chính."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Nhiệt lượng 125 400 J đun 1 kg nước từ 20 °C lên đến bao nhiêu °C? (c = 4 180)",
+      "expr": "20+125400/4180",
+      "answer": "50",
+      "explain": "Δt = 125 400 / 4 180 = 30 °C; t₂ = 50 °C."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Đun 4 kg nước từ 25 °C đến 100 °C. Tính Q (J) với c = 4 180.",
+      "expr": "4*4180*75",
+      "answer": "1254000",
+      "explain": "Q = 4 × 4 180 × 75 = 1 254 000 J."
+    }
+  ]
+}

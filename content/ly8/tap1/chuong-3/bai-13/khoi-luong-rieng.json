@@ -1,0 +1,286 @@
+{
+  "id": "bai-13",
+  "grade": 8,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 8",
+  "chapter": "Chương III. Khối lượng riêng và áp suất",
+  "lesson": "Bài 13. Khối lượng riêng",
+  "section": "",
+  "bookPage": 56,
+  "requirements": [
+    "Nêu được định nghĩa khối lượng riêng; xác định được khối lượng riêng qua khối lượng và thể tích tương ứng.",
+    "Liệt kê được một số đơn vị đo khối lượng riêng thường dùng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khi đo khối lượng và thể tích của các vật làm từ cùng một chất, tỉ số khối lượng trên thể tích luôn như nhau; các chất khác nhau cho tỉ số khác nhau. Tỉ số đó đặc trưng cho chất và gọi là khối lượng riêng."
+    },
+    {
+      "type": "text",
+      "content": "Khối lượng riêng của một chất cho biết khối lượng của một đơn vị thể tích chất đó."
+    },
+    {
+      "type": "formula",
+      "content": "D = m / V   (D: khối lượng riêng; m: khối lượng; V: thể tích)"
+    },
+    {
+      "type": "text",
+      "content": "Đơn vị thường dùng: kg/m³ hoặc g/cm³ (g/mL). 1 g/cm³ = 1 000 kg/m³. Khối lượng riêng của nước khoảng 1 000 kg/m³, sắt khoảng 7 800 kg/m³, nhôm khoảng 2 700 kg/m³, đồng khoảng 8 960 kg/m³, dầu ăn khoảng 800 kg/m³."
+    },
+    {
+      "type": "text",
+      "content": "Biết khối lượng riêng và thể tích thì tính được khối lượng m = D · V. Đối chiếu khối lượng riêng đo được với bảng khối lượng riêng để biết vật đơn chất làm bằng chất gì."
+    },
+    {
+      "type": "text",
+      "content": "Trọng lượng riêng d của một chất là trọng lượng của một mét khối chất đó: d = P / V, đơn vị N/m³. Vì P = 10m nên d = 10D."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một khối gang hình hộp chữ nhật có các cạnh 2 cm, 3 cm, 5 cm và khối lượng 210 g. Tính khối lượng riêng của gang (g/cm³).",
+      "steps": [
+        "Thể tích V = 2 × 3 × 5 = 30 cm³.",
+        "D = m / V = 210 / 30 = 7 g/cm³."
+      ],
+      "expr": "210/30",
+      "answer": "7"
+    },
+    {
+      "problem": "Một khối nhôm có thể tích 0,002 m³, khối lượng riêng 2 700 kg/m³. Tính khối lượng khối nhôm (kg).",
+      "steps": [
+        "m = D × V.",
+        "m = 2 700 × 0,002 = 5,4 kg."
+      ],
+      "expr": "2700*0.002",
+      "answer": "5.4"
+    },
+    {
+      "problem": "Dạng đổi đơn vị: khối lượng riêng của đồng là 8,96 g/cm³. Đổi ra kg/m³.",
+      "steps": [
+        "Cách làm: 1 g/cm³ = 1 000 kg/m³.",
+        "8,96 × 1 000 = 8 960 kg/m³."
+      ],
+      "expr": "8.96*1000",
+      "answer": "8960"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khối lượng riêng của một chất cho biết:",
+      "choices": [
+        "Trọng lượng của một đơn vị thể tích",
+        "Khối lượng của một đơn vị thể tích chất đó",
+        "Thể tích của một đơn vị khối lượng",
+        "Khối lượng của cả vật"
+      ],
+      "answer": 1,
+      "explain": "D = m / V.",
+      "wrong_explain": {
+        "0": "Đó là trọng lượng riêng.",
+        "2": "Ngược lại với khối lượng riêng.",
+        "3": "Chưa nói đến thể tích."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn vị nào KHÔNG phải đơn vị khối lượng riêng?",
+      "choices": [
+        "N/m³",
+        "kg/m³",
+        "g/cm³",
+        "g/mL"
+      ],
+      "answer": 0,
+      "explain": "N/m³ là đơn vị trọng lượng riêng.",
+      "wrong_explain": {
+        "1": "Là đơn vị khối lượng riêng.",
+        "2": "Là đơn vị khối lượng riêng.",
+        "3": "Là đơn vị khối lượng riêng (1 g/mL = 1 g/cm³)."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Sắt nặng hơn nhôm nghĩa là:",
+      "choices": [
+        "Một vật sắt luôn nặng hơn mọi vật nhôm",
+        "Sắt có thể tích lớn hơn",
+        "Sắt có khối lượng riêng nhỏ hơn",
+        "Với cùng thể tích, sắt có khối lượng lớn hơn nhôm"
+      ],
+      "answer": 3,
+      "explain": "Sắt có D lớn hơn nhôm (7 800 so với 2 700 kg/m³).",
+      "wrong_explain": {
+        "0": "Còn phụ thuộc thể tích.",
+        "1": "Không liên quan.",
+        "2": "Sắt có khối lượng riêng lớn hơn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Công thức tính khối lượng khi biết khối lượng riêng và thể tích là:",
+      "choices": [
+        "m = D / V",
+        "m = V / D",
+        "m = D · V",
+        "m = D + V"
+      ],
+      "answer": 2,
+      "explain": "Từ D = m / V suy ra m = D·V.",
+      "wrong_explain": {
+        "0": "Sai.",
+        "1": "Sai.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "1 g/cm³ bằng bao nhiêu kg/m³?",
+      "choices": [
+        "100",
+        "1 000",
+        "10",
+        "1 000 000"
+      ],
+      "answer": 1,
+      "explain": "1 g/cm³ = 0,001 kg / 0,000001 m³ = 1 000 kg/m³.",
+      "wrong_explain": {
+        "0": "Sai hệ số.",
+        "2": "Sai hệ số.",
+        "3": "Sai hệ số."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Mối liên hệ giữa trọng lượng riêng d và khối lượng riêng D là:",
+      "choices": [
+        "d = 10D",
+        "d = D / 10",
+        "d = D",
+        "d = 100D"
+      ],
+      "answer": 0,
+      "explain": "P = 10m nên d = P/V = 10m/V = 10D.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Khác đơn vị.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khối gỗ có khối lượng 240 g, thể tích 300 cm³. Khối lượng riêng của gỗ (g/cm³) là:",
+      "choices": [
+        "1,25",
+        "0,08",
+        "2,4",
+        "0,8"
+      ],
+      "answer": 3,
+      "explain": "D = 240 / 300 = 0,8 g/cm³.",
+      "wrong_explain": {
+        "0": "Chia ngược (300/240).",
+        "1": "Sai bậc.",
+        "2": "Sai."
+      },
+      "expr": "240/300"
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một vật có khối lượng 900 g và thể tích 100 cm³. Tính khối lượng riêng (g/cm³).",
+      "expr": "900/100",
+      "answer": "9",
+      "explain": "D = 900 / 100 = 9 g/cm³."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính khối lượng (kg) của 0,5 m³ nước, biết khối lượng riêng của nước là 1 000 kg/m³.",
+      "expr": "1000*0.5",
+      "answer": "500",
+      "explain": "m = 1 000 × 0,5 = 500 kg."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một cốc chứa 250 cm³ dầu ăn có khối lượng 200 g. Tính khối lượng riêng của dầu ăn (g/cm³).",
+      "expr": "200/250",
+      "answer": "0.8",
+      "explain": "D = 200 / 250 = 0,8 g/cm³ = 800 kg/m³."
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một bể hình hộp chữ nhật dài 4 m, rộng 2 m chứa nước sâu 1,5 m. Tính khối lượng nước (kg), biết D = 1 000 kg/m³.",
+      "expr": "1000*4*2*1.5",
+      "answer": "12000",
+      "explain": "V = 4 × 2 × 1,5 = 12 m³; m = 12 000 kg."
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vật đặc có khối lượng riêng 2 700 kg/m³ rất có thể làm bằng:",
+      "choices": [
+        "Sắt (7 800)",
+        "Đồng (8 960)",
+        "Nhôm",
+        "Gỗ tốt (khoảng 800)"
+      ],
+      "answer": 2,
+      "explain": "Đối chiếu bảng khối lượng riêng.",
+      "wrong_explain": {
+        "0": "Khối lượng riêng khác.",
+        "1": "Khối lượng riêng khác.",
+        "3": "Khối lượng riêng khác."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Một vật hình hộp chữ nhật cạnh 4 cm, 5 cm, 10 cm có khối lượng 540 g. Tính khối lượng riêng (g/cm³).",
+      "expr": "540/200",
+      "answer": "2.7",
+      "explain": "V = 200 cm³; D = 540 / 200 = 2,7 g/cm³ (nhôm)."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Trọng lượng riêng của nước là bao nhiêu N/m³, biết D = 1 000 kg/m³ và P = 10m?",
+      "expr": "10*1000",
+      "answer": "10000",
+      "explain": "d = 10D = 10 000 N/m³."
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "id": "bai-32",
+  "grade": 8,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 8",
+  "chapter": "Chương VII. Sinh học cơ thể người",
+  "lesson": "Bài 32. Dinh dưỡng và tiêu hoá ở người",
+  "section": "",
+  "bookPage": 128,
+  "requirements": [
+    "Nêu khái niệm dinh dưỡng, chất dinh dưỡng; chức năng và các cơ quan hệ tiêu hoá.",
+    "Nêu được nguyên tắc lập khẩu phần ăn, một số bệnh tiêu hoá, an toàn thực phẩm."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Chất dinh dưỡng là các chất có trong thức ăn mà cơ thể dùng làm nguyên liệu cấu tạo cơ thể và cung cấp năng lượng. Các nhóm: carbohydrate, protein, chất béo (lipid), vitamin và chất khoáng. Dinh dưỡng là quá trình thu nhận, biến đổi và sử dụng chất dinh dưỡng để duy trì sự sống."
+    },
+    {
+      "type": "text",
+      "content": "Hệ tiêu hoá gồm ống tiêu hoá (miệng, hầu, thực quản, dạ dày, ruột non, ruột già, hậu môn) và các tuyến tiêu hoá (tuyến nước bọt, tuỵ, gan, mật). Chức năng: biến đổi thức ăn thành chất dinh dưỡng hấp thụ được và thải chất thải ra khỏi cơ thể."
+    },
+    {
+      "type": "text",
+      "content": "Ở miệng: tiêu hoá cơ học (nhai, nghiền, đảo trộn) và hoá học nhờ enzyme amylase biến đổi một phần tinh bột chín. Ở dạ dày: co bóp, dịch vị (hydrochloric acid, pepsin, lipase) biến đổi một phần protein. Ở ruột non: dịch tuỵ, dịch mật, dịch ruột biến đổi chất dinh dưỡng thành chất đơn giản; hấp thụ chủ yếu ở ruột non. Ruột già hấp thụ lại nước, tạo phân."
+    },
+    {
+      "type": "text",
+      "content": "Bệnh: sâu răng (do vi khuẩn gây tổn thương mô cứng của răng); viêm loét dạ dày – tá tràng (chủ yếu do vi khuẩn Helicobacter pylori). Phòng: vệ sinh răng miệng, ăn uống điều độ, hợp vệ sinh."
+    },
+    {
+      "type": "text",
+      "content": "Khẩu phần ăn là lượng thức ăn cung cấp cho cơ thể trong một ngày. Nguyên tắc: đủ lượng, cân đối thành phần chất dinh dưỡng, đủ năng lượng. Nhu cầu dinh dưỡng phụ thuộc tuổi, giới tính, lao động, tình trạng sức khoẻ."
+    },
+    {
+      "type": "text",
+      "content": "An toàn vệ sinh thực phẩm là giữ cho thực phẩm không bị nhiễm khuẩn, nhiễm độc và biến chất. Cần chọn thực phẩm rõ nguồn gốc, còn hạn sử dụng, nấu chín, bảo quản lạnh thực phẩm dễ hỏng, không để lẫn đồ sống với đồ chín."
+    },
+    {
+      "type": "text",
+      "content": "Lượng thực phẩm ăn được Z = X − Y với Y = X × tỉ lệ thải bỏ. Giá trị dinh dưỡng = (số liệu trên 100 g) × Z ÷ 100."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Mua 500 g khoai lang có tỉ lệ thải bỏ 17%. Lượng thải bỏ Y là bao nhiêu g?",
+      "steps": [
+        "Y = X × tỉ lệ thải bỏ.",
+        "500 × 17 / 100 = 85 g."
+      ],
+      "expr": "500*17/100",
+      "answer": "85"
+    },
+    {
+      "problem": "Lượng khoai lang ăn được Z khi mua X = 500 g, thải bỏ Y = 85 g là bao nhiêu g?",
+      "steps": [
+        "Z = X − Y.",
+        "500 − 85 = 415 g."
+      ],
+      "expr": "500-85",
+      "answer": "415"
+    },
+    {
+      "problem": "Dạng tính năng lượng: gạo tẻ có 344 kcal/100 g. Ăn 200 g gạo thì cung cấp bao nhiêu kcal?",
+      "steps": [
+        "Năng lượng = 344 × 200 / 100.",
+        "344 × 2 = 688 kcal."
+      ],
+      "expr": "344*200/100",
+      "answer": "688"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Chất dinh dưỡng là:",
+      "choices": [
+        "Chất thải của cơ thể",
+        "Chất trong thức ăn mà cơ thể dùng làm nguyên liệu và cung cấp năng lượng",
+        "Chỉ nước",
+        "Chỉ vitamin"
+      ],
+      "answer": 1,
+      "explain": "Gồm 5 nhóm chất.",
+      "wrong_explain": {
+        "0": "Không phải.",
+        "2": "Chưa đủ.",
+        "3": "Chưa đủ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nhóm nào là chất dinh dưỡng?",
+      "choices": [
+        "Protein",
+        "Khí CO₂",
+        "Phân",
+        "Bụi"
+      ],
+      "answer": 0,
+      "explain": "Protein là chất dinh dưỡng.",
+      "wrong_explain": {
+        "1": "Là chất thải.",
+        "2": "Là chất thải.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Enzyme amylase trong nước bọt biến đổi:",
+      "choices": [
+        "Protein",
+        "Chất béo",
+        "Nước",
+        "Một phần tinh bột chín"
+      ],
+      "answer": 3,
+      "explain": "Tiêu hoá hoá học ở miệng.",
+      "wrong_explain": {
+        "0": "Pepsin.",
+        "1": "Lipase.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Sự hấp thụ chất dinh dưỡng diễn ra chủ yếu ở:",
+      "choices": [
+        "Dạ dày",
+        "Thực quản",
+        "Ruột non",
+        "Hậu môn"
+      ],
+      "answer": 2,
+      "explain": "Ruột non có mạng mao mạch dày.",
+      "wrong_explain": {
+        "0": "Chủ yếu ở ruột non.",
+        "1": "Dẫn thức ăn.",
+        "3": "Thải phân."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ruột già chủ yếu:",
+      "choices": [
+        "Hấp thụ hầu hết chất dinh dưỡng",
+        "Hấp thụ lại nước, cô đặc chất bã",
+        "Tiết dịch mật",
+        "Nghiền thức ăn"
+      ],
+      "answer": 1,
+      "explain": "Tạo phân.",
+      "wrong_explain": {
+        "0": "Là ruột non.",
+        "2": "Là gan.",
+        "3": "Là răng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Bệnh nào do vi khuẩn gây tổn thương mô cứng của răng?",
+      "choices": [
+        "Sâu răng",
+        "Viêm phổi",
+        "Loãng xương",
+        "Bướu cổ"
+      ],
+      "answer": 0,
+      "explain": "Vệ sinh răng miệng.",
+      "wrong_explain": {
+        "1": "Hệ hô hấp.",
+        "2": "Hệ vận động.",
+        "3": "Nội tiết."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Thực phẩm không an toàn có thể gây:",
+      "choices": [
+        "Tăng chiều cao",
+        "Tăng thị lực",
+        "Khoẻ hơn",
+        "Ngộ độc thực phẩm, rối loạn tiêu hoá"
+      ],
+      "answer": 3,
+      "explain": "Cần chọn thực phẩm an toàn.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cần 300 g thịt, tỉ lệ thải bỏ 10%. Lượng thải bỏ bao nhiêu g?",
+      "expr": "300*10/100",
+      "answer": "30",
+      "explain": "30 g."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ăn 200 g bánh mì (249 kcal/100 g) cung cấp bao nhiêu kcal?",
+      "expr": "249*2",
+      "answer": "498",
+      "explain": "249 × 2 = 498 kcal."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Nguyên tắc lập khẩu phần ăn:",
+      "choices": [
+        "Đủ lượng, cân đối chất, đủ năng lượng",
+        "Chỉ ăn thịt",
+        "Ăn thật nhiều",
+        "Bỏ bữa sáng"
+      ],
+      "answer": 0,
+      "explain": "Phù hợp nhu cầu.",
+      "wrong_explain": {
+        "1": "Không cân đối.",
+        "2": "Thừa năng lượng.",
+        "3": "Không hợp lí."
+      },
+      "concept": true
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vì sao trẻ em có nhu cầu dinh dưỡng cao hơn người cao tuổi (theo cân nặng)?",
+      "choices": [
+        "Trẻ em ăn ít hơn",
+        "Trẻ em không hoạt động",
+        "Tiêu hoá không hoạt động",
+        "Cần thêm nguyên liệu xây dựng cơ thể để lớn lên"
+      ],
+      "answer": 3,
+      "explain": "Cơ thể đang phát triển.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mua 400 g rau dền đỏ thải bỏ 38%. Phần ăn được là bao nhiêu g?",
+      "expr": "400-400*38/100",
+      "answer": "248",
+      "explain": "248 g."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Vì sao không để lẫn thực phẩm ăn sống với thực phẩm cần nấu chín?",
+      "choices": [
+        "Để tiết kiệm",
+        "Để màu đẹp",
+        "Tránh vi sinh vật từ đồ sống nhiễm sang đồ chín",
+        "Không có lí do"
+      ],
+      "answer": 2,
+      "explain": "An toàn thực phẩm.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Có."
+      },
+      "concept": true
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Một bữa có gạo 200 g (344 kcal/100 g) và thịt gà 100 g (199 kcal/100 g). Tổng năng lượng (kcal) là bao nhiêu?",
+      "expr": "344*2+199",
+      "answer": "887",
+      "explain": "688 + 199 = 887 kcal."
+    }
+  ]
+}

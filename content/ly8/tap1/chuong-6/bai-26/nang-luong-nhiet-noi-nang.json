@@ -1,0 +1,308 @@
+{
+  "id": "bai-26",
+  "grade": 8,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 8",
+  "chapter": "Chương VI. Nhiệt",
+  "lesson": "Bài 26. Năng lượng nhiệt và nội năng",
+  "section": "",
+  "bookPage": 105,
+  "requirements": [
+    "Nêu được khái niệm năng lượng nhiệt; khái niệm nội năng.",
+    "Nêu được khi vật được làm nóng, các phân tử chuyển động nhanh lên và nội năng của vật tăng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Vật chất được cấu tạo từ các phân tử, nguyên tử; chúng chuyển động hỗn loạn không ngừng và giữa chúng có lực tương tác (và khoảng cách giữa chúng). Thí nghiệm Brown: hạt phấn hoa trong nước chuyển động không ngừng do bị các phân tử nước va chạm."
+    },
+    {
+      "type": "text",
+      "content": "Nhiệt độ của vật càng cao thì các phân tử, nguyên tử chuyển động hỗn loạn càng nhanh. Chuyển động này gọi là chuyển động nhiệt."
+    },
+    {
+      "type": "text",
+      "content": "Năng lượng mà vật có được nhờ chuyển động nhiệt của các phân tử, nguyên tử gọi là năng lượng nhiệt (nhiệt năng). Mọi vật đều có nhiệt năng; nhiệt độ của vật tăng thì nhiệt năng của vật tăng."
+    },
+    {
+      "type": "text",
+      "content": "Nội năng của một vật là tổng động năng và thế năng của các phân tử, nguyên tử cấu tạo nên vật."
+    },
+    {
+      "type": "text",
+      "content": "Khi một vật được làm nóng, các phân tử, nguyên tử chuyển động nhanh lên, nội năng của vật tăng. Vật nhận nhiệt năng thì nhiệt độ tăng; vật truyền bớt nhiệt năng thì nhiệt độ giảm. Khi đun sôi, nước tiếp tục nhận nhiệt nhưng nhiệt độ không tăng vì năng lượng được dùng để chuyển nước thành hơi."
+    },
+    {
+      "type": "text",
+      "content": "Xoa hai tay vào nhau thì tay nóng lên vì cọ xát làm các phân tử chuyển động nhanh hơn, nội năng tăng. Mở lọ nước hoa ở đầu lớp, người ở cuối lớp ngửi thấy mùi sau một lúc vì các phân tử nước hoa chuyển động hỗn loạn khuếch tán trong không khí."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Nước ở 20 °C được đun nóng đến 80 °C. Nhiệt độ tăng thêm bao nhiêu °C?",
+      "steps": [
+        "Độ tăng nhiệt độ = nhiệt độ cuối − nhiệt độ đầu.",
+        "80 − 20 = 60 °C."
+      ],
+      "expr": "80-20",
+      "answer": "60"
+    },
+    {
+      "problem": "Một cốc nước nóng 90 °C truyền nhiệt cho quả cầu đồng 30 °C. Sau cân bằng nhiệt cả hai đạt 60 °C. Nước giảm bao nhiêu °C?",
+      "steps": [
+        "Nước giảm: 90 − 60 = 30 °C.",
+        "Quả cầu tăng 60 − 30 = 30 °C."
+      ],
+      "expr": "90-60",
+      "answer": "30"
+    },
+    {
+      "problem": "Dạng đếm: có 5 hiện tượng: xoa tay thấy nóng, phơi nắng thấy nóng, đun nước, hạt phấn hoa chuyển động trong nước, ngửi mùi nước hoa ở xa. Có bao nhiêu hiện tượng minh hoạ chuyển động hỗn loạn của phân tử (hạt phấn hoa, ngửi nước hoa)?",
+      "steps": [
+        "Cách làm: chỉ những hiện tượng do phân tử chuyển động hỗn loạn.",
+        "Có 2 hiện tượng."
+      ],
+      "expr": "1+1",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Các phân tử, nguyên tử cấu tạo nên vật:",
+      "choices": [
+        "Đứng yên khi vật lạnh",
+        "Chuyển động hỗn loạn không ngừng",
+        "Chỉ chuyển động khi vật nóng chảy",
+        "Chuyển động theo một đường thẳng"
+      ],
+      "answer": 1,
+      "explain": "Mọi phân tử đều chuyển động.",
+      "wrong_explain": {
+        "0": "Luôn chuyển động.",
+        "2": "Luôn chuyển động.",
+        "3": "Hỗn loạn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Năng lượng nhiệt là:",
+      "choices": [
+        "Năng lượng vật có được nhờ chuyển động nhiệt của các phân tử, nguyên tử",
+        "Năng lượng của vật chuyển động",
+        "Năng lượng của dòng điện",
+        "Năng lượng ánh sáng"
+      ],
+      "answer": 0,
+      "explain": "Còn gọi là nhiệt năng.",
+      "wrong_explain": {
+        "1": "Đó là động năng của vật.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nội năng của vật là:",
+      "choices": [
+        "Chỉ tổng động năng",
+        "Chỉ thế năng của vật so với mặt đất",
+        "Khối lượng của vật",
+        "Tổng động năng và thế năng của các phân tử, nguyên tử cấu tạo nên vật"
+      ],
+      "answer": 3,
+      "explain": "Định nghĩa nội năng.",
+      "wrong_explain": {
+        "0": "Còn thế năng.",
+        "1": "Không phải.",
+        "2": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi nhiệt độ của vật tăng thì nội năng của vật:",
+      "choices": [
+        "Giảm",
+        "Không đổi",
+        "Tăng",
+        "Bằng 0"
+      ],
+      "answer": 2,
+      "explain": "Phân tử chuyển động nhanh hơn.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "1": "Có thay đổi.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Chuyển động của hạt phấn hoa trong nước (thí nghiệm Brown) chứng tỏ:",
+      "choices": [
+        "Hạt phấn tự chuyển động",
+        "Các phân tử nước chuyển động hỗn loạn và va chạm vào hạt phấn",
+        "Nước đứng yên",
+        "Hạt phấn nhiễm điện"
+      ],
+      "answer": 1,
+      "explain": "Nhiệt độ càng cao hạt phấn chuyển động càng nhanh.",
+      "wrong_explain": {
+        "0": "Không phải.",
+        "2": "Phân tử nước chuyển động.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao xoa hai tay vào nhau thấy nóng lên?",
+      "choices": [
+        "Cọ xát làm phân tử chuyển động nhanh hơn, nội năng tăng",
+        "Do máu dồn lên tay",
+        "Do nhiệt độ môi trường tăng",
+        "Do tay hút nhiệt từ gió"
+      ],
+      "answer": 0,
+      "explain": "Thực hiện công làm tăng nội năng.",
+      "wrong_explain": {
+        "1": "Không phải nguyên nhân chính.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao người ở cuối lớp ngửi thấy mùi nước hoa sau một lúc?",
+      "choices": [
+        "Mùi truyền tức thì",
+        "Nước hoa phát sáng",
+        "Không khí đứng yên đẩy mùi",
+        "Phân tử nước hoa chuyển động hỗn loạn lan ra trong không khí"
+      ],
+      "answer": 3,
+      "explain": "Khuếch tán do chuyển động nhiệt.",
+      "wrong_explain": {
+        "0": "Mất thời gian.",
+        "1": "Không phải.",
+        "2": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nước nóng từ 25 °C lên 100 °C. Nhiệt độ tăng thêm bao nhiêu °C?",
+      "expr": "100-25",
+      "answer": "75",
+      "explain": "Tăng 75 °C."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nước từ 95 °C giảm xuống 35 °C. Nhiệt độ giảm bao nhiêu °C?",
+      "expr": "95-35",
+      "answer": "60",
+      "explain": "Giảm 60 °C."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Khi đun sôi nước và tiếp tục đun, nhiệt độ nước không tăng thêm vì:",
+      "choices": [
+        "Năng lượng nhận vào dùng để chuyển nước thành hơi",
+        "Đèn cồn không còn nóng",
+        "Nước không nhận năng lượng",
+        "Nước biến mất ngay"
+      ],
+      "answer": 0,
+      "explain": "Trong lúc sôi, nhiệt độ giữ không đổi.",
+      "wrong_explain": {
+        "1": "Vẫn nóng.",
+        "2": "Vẫn nhận.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vật A nóng hơn vật B. Khi tiếp xúc, nhiệt năng truyền:",
+      "choices": [
+        "Từ B sang A",
+        "Không truyền",
+        "Truyền theo cả hai chiều như nhau",
+        "Từ vật A sang vật B"
+      ],
+      "answer": 3,
+      "explain": "Nhiệt truyền từ vật nóng sang vật lạnh.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "1": "Có truyền.",
+        "2": "Chiều từ nóng sang lạnh."
+      },
+      "concept": true
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một quả cầu 30 °C thả vào nước 80 °C, cuối cùng đạt 70 °C. Quả cầu tăng bao nhiêu °C?",
+      "expr": "70-30",
+      "answer": "40",
+      "explain": "Tăng 40 °C."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Nhiệt độ cơ thể 37 °C, nếu tăng 3 °C sau 1 giờ nếu không toả nhiệt thì nhiệt độ sẽ là bao nhiêu °C?",
+      "expr": "37+3",
+      "answer": "40",
+      "explain": "40 °C."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Hai cốc nước cùng khối lượng, cốc A 20 °C, cốc B 60 °C. Cốc nào có nội năng lớn hơn?",
+      "choices": [
+        "Cốc A",
+        "Cốc B",
+        "Bằng nhau",
+        "Không so sánh được"
+      ],
+      "answer": 1,
+      "explain": "Cùng khối lượng, nhiệt độ cao hơn thì nội năng lớn hơn.",
+      "wrong_explain": {
+        "0": "Nhiệt độ thấp hơn.",
+        "2": "Nhiệt độ khác nhau.",
+        "3": "So sánh được."
+      },
+      "concept": true
+    }
+  ]
+}

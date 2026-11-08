@@ -1,0 +1,261 @@
+{
+  "id": "bai-14",
+  "grade": 8,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 8",
+  "chapter": "Chương III. Khối lượng riêng và áp suất",
+  "lesson": "Bài 14. Thực hành xác định khối lượng riêng",
+  "section": "",
+  "bookPage": 59,
+  "requirements": [
+    "Thực hiện thí nghiệm xác định khối lượng riêng của khối hộp chữ nhật, của vật có hình dạng bất kì, của một lượng chất lỏng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Để xác định khối lượng riêng của một chất cần đo khối lượng m và thể tích V của vật làm từ chất đó, rồi tính D = m / V."
+    },
+    {
+      "type": "text",
+      "content": "Vật hình hộp chữ nhật: dùng thước đo ba cạnh a, b, c tính V = a·b·c; dùng cân đo khối lượng m. Đo mỗi đại lượng 3 lần rồi lấy giá trị trung bình."
+    },
+    {
+      "type": "text",
+      "content": "Lượng chất lỏng: đo khối lượng ống đong rỗng m₁, rót nước vào đo thể tích V trên ống đong, đo khối lượng ống đong có nước m₂; khối lượng nước là m₂ − m₁; D = (m₂ − m₁) / V."
+    },
+    {
+      "type": "text",
+      "content": "Vật rắn có hình dạng bất kì, không thấm nước (như hòn sỏi): đo khối lượng m bằng cân; thể tích V = V₂ − V₁ với V₁ là thể tích nước ban đầu trong ống đong và V₂ là thể tích khi nhúng chìm vật; D = m / V."
+    },
+    {
+      "type": "text",
+      "content": "Trong thực tế, người ta đo khối lượng riêng của chất lỏng bằng tỉ trọng kế (phù kế), hoạt động dựa trên định luật Archimedes."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đo ba lần chiều dài một cạnh khối gỗ được 5,0 cm; 5,1 cm; 4,9 cm. Tính giá trị trung bình (cm).",
+      "steps": [
+        "Tổng ba lần đo: 5,0 + 5,1 + 4,9 = 15,0 cm.",
+        "Trung bình = 15,0 : 3 = 5,0 cm."
+      ],
+      "expr": "(5.0+5.1+4.9)/3",
+      "answer": "5"
+    },
+    {
+      "problem": "Hòn sỏi khối lượng 52 g. Nước ban đầu trong ống đong 50 mL, sau khi nhúng chìm sỏi là 70 mL. Tính khối lượng riêng hòn sỏi (g/cm³).",
+      "steps": [
+        "Thể tích sỏi V = 70 − 50 = 20 cm³.",
+        "D = 52 / 20 = 2,6 g/cm³."
+      ],
+      "expr": "52/20",
+      "answer": "2.6"
+    },
+    {
+      "problem": "Dạng đo chất lỏng: ống đong rỗng nặng 80 g; khi chứa 50 mL chất lỏng nặng 120 g. Tính khối lượng riêng chất lỏng (g/mL).",
+      "steps": [
+        "Khối lượng chất lỏng = 120 − 80 = 40 g.",
+        "D = 40 / 50 = 0,8 g/mL."
+      ],
+      "expr": "(120-80)/50",
+      "answer": "0.8"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Để xác định khối lượng riêng của một chất cần đo những đại lượng nào?",
+      "choices": [
+        "Chỉ khối lượng",
+        "Khối lượng và thể tích",
+        "Chỉ chiều dài",
+        "Nhiệt độ và áp suất"
+      ],
+      "answer": 1,
+      "explain": "D = m / V.",
+      "wrong_explain": {
+        "0": "Cần cả thể tích.",
+        "2": "Cần cả khối lượng.",
+        "3": "Không phải đại lượng cần đo trực tiếp."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thể tích của khối hộp chữ nhật có ba cạnh a, b, c là:",
+      "choices": [
+        "V = a · b · c",
+        "V = a + b + c",
+        "V = a · b",
+        "V = 2(ab + bc + ca)"
+      ],
+      "answer": 0,
+      "explain": "V = abc.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Đó là diện tích.",
+        "3": "Đó là diện tích toàn phần."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Vì sao nên đo mỗi đại lượng nhiều lần rồi lấy giá trị trung bình?",
+      "choices": [
+        "Để thí nghiệm lâu hơn",
+        "Để kết quả luôn bằng 0",
+        "Vì dụng cụ chỉ đo được ba lần",
+        "Để giảm sai số của phép đo"
+      ],
+      "answer": 3,
+      "explain": "Lấy trung bình giúp kết quả đáng tin cậy hơn.",
+      "wrong_explain": {
+        "0": "Không phải mục đích.",
+        "1": "Không đúng.",
+        "2": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Thể tích hòn sỏi không thấm nước được xác định bằng:",
+      "choices": [
+        "Tổng hai thể tích",
+        "Chiều cao nước",
+        "Hiệu hai thể tích nước trong ống đong trước và sau khi nhúng sỏi",
+        "Khối lượng sỏi"
+      ],
+      "answer": 2,
+      "explain": "V = V₂ − V₁.",
+      "wrong_explain": {
+        "0": "Sai.",
+        "1": "Chưa đủ.",
+        "3": "Không cho thể tích."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dụng cụ dùng đo trực tiếp khối lượng riêng của chất lỏng trong thực tế là:",
+      "choices": [
+        "Nhiệt kế",
+        "Tỉ trọng kế (phù kế)",
+        "Lực kế",
+        "Ampe kế"
+      ],
+      "answer": 1,
+      "explain": "Tỉ trọng kế hoạt động dựa trên định luật Archimedes.",
+      "wrong_explain": {
+        "0": "Đo nhiệt độ.",
+        "2": "Đo lực.",
+        "3": "Đo dòng điện."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi đo thể tích chất lỏng bằng ống đong cần đặt mắt:",
+      "choices": [
+        "Ngang với mực chất lỏng",
+        "Cao hơn mực chất lỏng",
+        "Thấp hơn mực chất lỏng",
+        "Ở vị trí bất kì"
+      ],
+      "answer": 0,
+      "explain": "Nhìn ngang mực chất lỏng để đọc chính xác.",
+      "wrong_explain": {
+        "1": "Gây sai số.",
+        "2": "Gây sai số.",
+        "3": "Gây sai số."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ba lần đo khối lượng một vật: 100 g; 102 g; 98 g. Tính giá trị trung bình (g).",
+      "expr": "(100+102+98)/3",
+      "answer": "100",
+      "explain": "Trung bình = 300 / 3 = 100 g."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một khối hộp có các cạnh 2 cm, 4 cm, 5 cm. Tính thể tích (cm³).",
+      "expr": "2*4*5",
+      "answer": "40",
+      "explain": "V = 40 cm³."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khối gỗ hộp cạnh 5 cm, 4 cm, 10 cm có khối lượng 160 g. Tính khối lượng riêng (g/cm³).",
+      "expr": "160/200",
+      "answer": "0.8",
+      "explain": "V = 200 cm³; D = 160/200 = 0,8 g/cm³."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ống đong rỗng nặng 60 g; chứa 100 mL nước nặng 160 g. Tính khối lượng riêng nước (g/mL).",
+      "expr": "(160-60)/100",
+      "answer": "1",
+      "explain": "m nước = 100 g; D = 1 g/mL."
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Kết quả đo D của nước là 0,98 g/cm³ trong khi bảng cho 1 g/cm³. Nguyên nhân hợp lí là:",
+      "choices": [
+        "Nước đã biến thành chất khác",
+        "Bảng số liệu sai hoàn toàn",
+        "Do không cần cân",
+        "Sai số khi đọc thể tích và khi cân"
+      ],
+      "answer": 3,
+      "explain": "Sai số dụng cụ và thao tác là nguyên nhân thường gặp.",
+      "wrong_explain": {
+        "0": "Không đúng.",
+        "1": "Không có cơ sở.",
+        "2": "Phải cân."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hòn đá nặng 78 g nhúng chìm làm mực nước dâng từ 40 mL lên 70 mL. Tính khối lượng riêng (g/cm³).",
+      "expr": "78/30",
+      "answer": "2.6",
+      "explain": "V = 30 cm³; D = 78/30 = 2,6 g/cm³."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Ba lần đo thể tích: 20,2 mL; 19,8 mL; 20,0 mL. Giá trị trung bình là bao nhiêu mL?",
+      "expr": "(20.2+19.8+20.0)/3",
+      "answer": "20",
+      "explain": "Tổng 60,0; trung bình 20,0 mL."
+    }
+  ]
+}

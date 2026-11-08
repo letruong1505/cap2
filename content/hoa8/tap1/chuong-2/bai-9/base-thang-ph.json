@@ -1,0 +1,289 @@
+{
+  "id": "bai-9",
+  "grade": 8,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 8",
+  "chapter": "Chương II. Một số hợp chất thông dụng",
+  "lesson": "Bài 9. Base. Thang pH",
+  "section": "",
+  "bookPage": 39,
+  "requirements": [
+    "Nêu được khái niệm base (tạo ra ion OH⁻), kiềm là các hydroxide tan tốt trong nước.",
+    "Tiến hành được thí nghiệm base đổi màu chất chỉ thị, phản ứng với acid tạo muối.",
+    "Nêu được thang pH, dùng pH để đánh giá độ acid – base; đo pH bằng giấy pH."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Base là những hợp chất trong phân tử có nguyên tử kim loại liên kết với nhóm hydroxide (−OH). Khi tan trong nước, base tạo ra ion OH⁻. Số nhóm −OH bằng hoá trị của kim loại. Tên base: tên kim loại (kèm hoá trị nếu nhiều hoá trị) + hydroxide."
+    },
+    {
+      "type": "text",
+      "content": "Phần lớn base không tan trong nước. Một số ít base tan trong nước tạo dung dịch kiềm như NaOH, KOH, Ba(OH)₂, Ca(OH)₂ (ít tan)."
+    },
+    {
+      "type": "text",
+      "content": "Dung dịch kiềm làm giấy quỳ tím chuyển sang màu xanh, làm dung dịch phenolphthalein không màu chuyển sang màu hồng."
+    },
+    {
+      "type": "text",
+      "content": "Base phản ứng với acid tạo muối và nước; đó là phản ứng trung hoà. Ví dụ: NaOH + HCl → NaCl + H₂O; Ca(OH)₂ + H₂SO₄ → CaSO₄ + 2H₂O. Bôi vôi tôi vào vết ong, kiến đốt vì nọc chứa acid sẽ bị trung hoà."
+    },
+    {
+      "type": "text",
+      "content": "Thang pH có giá trị từ 1 đến 14: pH < 7 là môi trường acid; pH = 7 là trung tính; pH > 7 là môi trường base (kiềm). pH càng nhỏ acid càng mạnh, pH càng lớn base càng mạnh. Đo pH bằng giấy pH, chất chỉ thị màu vạn năng hoặc máy đo, bút đo pH."
+    },
+    {
+      "type": "text",
+      "content": "Ví dụ: HCl 0,1 M có pH = 1; CH₃COOH 0,1 M có pH ≈ 3 nên HCl mạnh hơn. pH trong máu người khoảng 7,35 – 7,45; pH dịch vị dạ dày khoảng 1,5 – 3,5."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Trung hoà 0,1 mol NaOH bằng dung dịch HCl 1 M (NaOH + HCl → NaCl + H₂O). Cần bao nhiêu lít dung dịch HCl?",
+      "steps": [
+        "n(HCl) = n(NaOH) = 0,1 mol.",
+        "V = n / C_M = 0,1 / 1 = 0,1 L."
+      ],
+      "expr": "0.1/1",
+      "answer": "0.1"
+    },
+    {
+      "problem": "Cho 100 mL dung dịch NaOH 0,5 M. Tính số mol NaOH.",
+      "steps": [
+        "Đổi 100 mL = 0,1 L.",
+        "n = C_M × V = 0,5 × 0,1 = 0,05 mol."
+      ],
+      "expr": "0.5*0.1",
+      "answer": "0.05"
+    },
+    {
+      "problem": "Dạng so sánh pH: dung dịch A có pH = 2, dung dịch B có pH = 12, dung dịch C có pH = 7. Có bao nhiêu dung dịch có môi trường acid hoặc trung tính?",
+      "steps": [
+        "Cách làm: pH < 7 acid; pH = 7 trung tính; pH > 7 base.",
+        "A (acid) và C (trung tính) → 2 dung dịch."
+      ],
+      "expr": "1+1",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Công thức nào sau đây là base?",
+      "choices": [
+        "HCl",
+        "Ca(OH)₂",
+        "CaCO₃",
+        "CO₂"
+      ],
+      "answer": 1,
+      "explain": "Ca(OH)₂ có kim loại liên kết với nhóm −OH.",
+      "wrong_explain": {
+        "0": "Là acid.",
+        "2": "Là muối.",
+        "3": "Là oxide."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Dung dịch NaOH làm quỳ tím chuyển sang màu:",
+      "choices": [
+        "Xanh",
+        "Đỏ",
+        "Vàng",
+        "Không đổi màu"
+      ],
+      "answer": 0,
+      "explain": "Dung dịch kiềm làm quỳ tím hoá xanh.",
+      "wrong_explain": {
+        "1": "Màu đỏ ứng với acid.",
+        "2": "Không đổi sang vàng.",
+        "3": "NaOH làm quỳ xanh."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phenolphthalein gặp dung dịch kiềm chuyển sang màu:",
+      "choices": [
+        "Đỏ",
+        "Xanh",
+        "Vàng",
+        "Hồng"
+      ],
+      "answer": 3,
+      "explain": "Phenolphthalein từ không màu chuyển hồng trong kiềm.",
+      "wrong_explain": {
+        "0": "Quỳ tím gặp acid mới đỏ.",
+        "1": "Quỳ tím gặp base mới xanh.",
+        "2": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dung dịch có pH = 3 có môi trường:",
+      "choices": [
+        "Base",
+        "Trung tính",
+        "Acid",
+        "Không xác định"
+      ],
+      "answer": 2,
+      "explain": "pH < 7 là acid.",
+      "wrong_explain": {
+        "0": "Base có pH > 7.",
+        "1": "Trung tính có pH = 7.",
+        "3": "Xác định được: pH < 7."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Phản ứng giữa acid và base tạo muối và nước gọi là:",
+      "choices": [
+        "Phản ứng phân huỷ",
+        "Phản ứng trung hoà",
+        "Phản ứng cháy",
+        "Phản ứng hoá hợp"
+      ],
+      "answer": 1,
+      "explain": "Acid + base → muối + nước.",
+      "wrong_explain": {
+        "0": "Một chất tạo nhiều chất.",
+        "2": "Có oxygen và toả nhiệt, phát sáng.",
+        "3": "Nhiều chất tạo một chất."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Bôi vôi vào vết kiến đốt giúp giảm đau vì:",
+      "choices": [
+        "Vôi (base) trung hoà acid trong nọc kiến",
+        "Vôi làm lạnh vết đốt",
+        "Vôi diệt kiến",
+        "Vôi biến thành nước"
+      ],
+      "answer": 0,
+      "explain": "Nọc kiến chứa acid; base trung hoà acid.",
+      "wrong_explain": {
+        "1": "Không phải.",
+        "2": "Không phải.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Số mol NaOH trong 200 mL dung dịch NaOH 0,5 M là:",
+      "choices": [
+        "2,5",
+        "0,25",
+        "100",
+        "0,1"
+      ],
+      "answer": 3,
+      "explain": "n = C_M × V = 0,5 × 0,2 = 0,1 mol.",
+      "wrong_explain": {
+        "0": "Chưa đổi mL ra lít.",
+        "1": "Sai bậc thập phân.",
+        "2": "Nhân nhầm 0,5 × 200 và bỏ chia."
+      },
+      "expr": "0.5*200/1000"
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính số mol HCl trong 50 mL dung dịch HCl 2 M.",
+      "expr": "2*50/1000",
+      "answer": "0.1",
+      "explain": "n = 2 × 0,05 = 0,1 mol."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cần bao nhiêu mL dung dịch HCl 1 M để trung hoà vừa đủ 20 mL dung dịch NaOH 0,5 M?",
+      "expr": "0.5*20/1",
+      "answer": "10",
+      "explain": "n(NaOH) = 0,5 × 0,02 = 0,01 mol = n(HCl); V = 0,01 / 1 L = 10 mL; tính nhanh V(HCl) = 0,5 × 20 / 1 = 10 mL."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Nước mưa bình thường có pH khoảng 5,6; nước mưa có pH = 4 gọi là mưa acid vì:",
+      "choices": [
+        "pH nhỏ hơn 7 và thấp hơn mức bình thường nhiều",
+        "pH lớn hơn 7",
+        "pH bằng 7",
+        "Không có acid"
+      ],
+      "answer": 0,
+      "explain": "Khí SO₂, NO₂ hoà tan làm nước mưa có tính acid.",
+      "wrong_explain": {
+        "1": "Khi đó là môi trường base.",
+        "2": "Khi đó trung tính.",
+        "3": "Có chứa acid như H₂SO₄, HNO₃ hoà tan."
+      },
+      "concept": true
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dung dịch NaOH có pH = 13 và dung dịch X có pH = 5. Hiệu số pH giữa hai dung dịch bằng bao nhiêu?",
+      "expr": "13-5",
+      "answer": "8",
+      "explain": "13 − 5 = 8."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Để trung hoà 100 g dung dịch HCl 3,65%, cần bao nhiêu gam NaOH (M = 40; HCl = 36,5)?",
+      "expr": "365*40/3650",
+      "answer": "4",
+      "explain": "m(HCl) = 3,65 g = 0,1 mol; n(NaOH) = 0,1 mol; m = 0,1 × 40 = 4 g."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Dung dịch nào có tính base mạnh nhất?",
+      "choices": [
+        "pH = 8",
+        "pH = 13",
+        "pH = 7",
+        "pH = 2"
+      ],
+      "answer": 1,
+      "explain": "pH càng lớn (trên 7) kiềm càng mạnh.",
+      "wrong_explain": {
+        "0": "Kiềm yếu.",
+        "2": "Trung tính.",
+        "3": "Acid mạnh."
+      },
+      "concept": true
+    }
+  ]
+}

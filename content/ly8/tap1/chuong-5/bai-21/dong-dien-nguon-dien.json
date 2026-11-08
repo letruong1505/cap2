@@ -1,0 +1,309 @@
+{
+  "id": "bai-21",
+  "grade": 8,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 8",
+  "chapter": "Chương V. Điện",
+  "lesson": "Bài 21. Dòng điện, nguồn điện",
+  "section": "",
+  "bookPage": 88,
+  "requirements": [
+    "Nêu được định nghĩa dòng điện là dòng chuyển dời có hướng của các hạt mang điện.",
+    "Phân loại được vật dẫn điện, vật không dẫn điện.",
+    "Nêu được nguồn điện cung cấp năng lượng điện và liệt kê một số nguồn điện."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dòng điện là dòng chuyển dời có hướng của các hạt mang điện. Ví dụ: nối hai điện nghiệm bằng thanh kim loại, các điện tích dịch chuyển từ điện nghiệm này sang điện nghiệm kia nên có dòng điện qua thanh."
+    },
+    {
+      "type": "text",
+      "content": "Để duy trì dòng điện trong các thiết bị tiêu thụ điện phải có nguồn điện. Nguồn điện cung cấp năng lượng điện để dụng cụ điện hoạt động. Nguồn điện thường dùng: pin, acquy,..."
+    },
+    {
+      "type": "text",
+      "content": "Pin, acquy có hai cực: cực dương (+) và cực âm (−)."
+    },
+    {
+      "type": "text",
+      "content": "Vật dẫn điện là vật cho dòng điện chạy qua, thường làm bằng kim loại (đồng, nhôm, sắt...). Vật không dẫn điện (vật cách điện) không cho dòng điện chạy qua, như nhựa, cao su, gỗ khô, thuỷ tinh, sứ."
+    },
+    {
+      "type": "text",
+      "content": "Pin Volta (1800) là pin điện đầu tiên: hai bản kim loại đồng và kẽm nhúng trong dung dịch acid loãng; bản đồng là cực dương, bản kẽm là cực âm. Có thể làm pin Volta đơn giản từ nửa quả chanh và hai điện cực khác kim loại."
+    },
+    {
+      "type": "text",
+      "content": "Vỏ dây điện làm bằng nhựa cách điện để người dùng an toàn; lõi dây làm bằng đồng, nhôm dẫn điện."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Có 8 vật: dây đồng, thanh gỗ khô, chiếc thìa nhôm, dây nhựa, thanh thuỷ tinh, ruột bút chì, đoạn dây sắt, sợi len. Biết ruột bút chì (than chì) dẫn điện. Có bao nhiêu vật dẫn điện?",
+      "steps": [
+        "Vật dẫn điện: dây đồng, thìa nhôm, ruột bút chì, dây sắt.",
+        "Có 4 vật dẫn điện."
+      ],
+      "expr": "4",
+      "answer": "4"
+    },
+    {
+      "problem": "Mỗi pin có hiệu điện thế 1,5 V. Mắc 3 pin nối tiếp thì hiệu điện thế bộ pin là bao nhiêu V?",
+      "steps": [
+        "Hiệu điện thế các pin nối tiếp cộng lại.",
+        "3 × 1,5 = 4,5 V."
+      ],
+      "expr": "3*1.5",
+      "answer": "4.5"
+    },
+    {
+      "problem": "Dạng phân loại: trong 10 vật có 6 vật dẫn điện. Hỏi có bao nhiêu vật cách điện?",
+      "steps": [
+        "Cách làm: số vật cách điện = tổng − số vật dẫn điện.",
+        "10 − 6 = 4 vật."
+      ],
+      "expr": "10-6",
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Dòng điện là:",
+      "choices": [
+        "Dòng chuyển động hỗn loạn của các phân tử",
+        "Dòng chuyển dời có hướng của các hạt mang điện",
+        "Dòng nước chảy trong ống",
+        "Ánh sáng truyền đi"
+      ],
+      "answer": 1,
+      "explain": "Định nghĩa dòng điện.",
+      "wrong_explain": {
+        "0": "Đó là chuyển động nhiệt.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nguồn điện có tác dụng:",
+      "choices": [
+        "Cung cấp năng lượng điện cho các dụng cụ điện hoạt động",
+        "Làm lạnh dụng cụ điện",
+        "Chỉ dẫn điện",
+        "Tạo ra hạt mang điện từ hư không"
+      ],
+      "answer": 0,
+      "explain": "Nguồn điện duy trì dòng điện.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Đó là dây dẫn.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Vật nào sau đây là vật cách điện?",
+      "choices": [
+        "Dây nhôm",
+        "Dây đồng",
+        "Thanh sắt",
+        "Chiếc thìa nhựa"
+      ],
+      "answer": 3,
+      "explain": "Nhựa không cho dòng điện chạy qua.",
+      "wrong_explain": {
+        "0": "Dẫn điện.",
+        "1": "Dẫn điện.",
+        "2": "Dẫn điện."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vật nào sau đây dẫn điện?",
+      "choices": [
+        "Thanh thuỷ tinh",
+        "Thanh gỗ khô",
+        "Thanh đồng",
+        "Thanh cao su"
+      ],
+      "answer": 2,
+      "explain": "Kim loại dẫn điện.",
+      "wrong_explain": {
+        "0": "Cách điện.",
+        "1": "Cách điện.",
+        "3": "Cách điện."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hai cực của pin là:",
+      "choices": [
+        "Cực bắc và cực nam",
+        "Cực dương (+) và cực âm (−)",
+        "Cực nóng và cực lạnh",
+        "Cực trên và cực dưới"
+      ],
+      "answer": 1,
+      "explain": "Pin, acquy có hai cực dương và âm.",
+      "wrong_explain": {
+        "0": "Đó là của nam châm.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Pin Volta đầu tiên gồm hai bản kim loại:",
+      "choices": [
+        "Đồng và kẽm trong dung dịch acid loãng",
+        "Sắt và nhôm trong nước cất",
+        "Vàng và bạc trong dầu",
+        "Chì và thiếc trong cồn"
+      ],
+      "answer": 0,
+      "explain": "Bản đồng là cực dương, bản kẽm là cực âm.",
+      "wrong_explain": {
+        "1": "Không đúng.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao vỏ dây điện làm bằng nhựa?",
+      "choices": [
+        "Để dẫn điện tốt hơn",
+        "Để dây nặng hơn",
+        "Để dây phát sáng",
+        "Để cách điện, đảm bảo an toàn cho người dùng"
+      ],
+      "answer": 3,
+      "explain": "Nhựa là vật cách điện.",
+      "wrong_explain": {
+        "0": "Nhựa không dẫn điện.",
+        "1": "Không phải mục đích.",
+        "2": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bộ nguồn gồm 2 pin 1,5 V mắc nối tiếp có hiệu điện thế bao nhiêu V?",
+      "expr": "2*1.5",
+      "answer": "3",
+      "explain": "2 × 1,5 = 3 V."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong 12 vật có 5 vật dẫn điện. Số vật cách điện là bao nhiêu?",
+      "expr": "12-5",
+      "answer": "7",
+      "explain": "12 − 5 = 7."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Có thể làm pin Volta đơn giản bằng:",
+      "choices": [
+        "Nửa quả chanh với hai điện cực kim loại khác nhau",
+        "Hai điện cực cùng loại và nước cất",
+        "Chỉ một mẩu gỗ",
+        "Hai tờ giấy"
+      ],
+      "answer": 0,
+      "explain": "Nước chanh chứa acid đóng vai trò dung dịch điện phân.",
+      "wrong_explain": {
+        "1": "Không tạo được hiệu điện thế rõ.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bộ nguồn 6 V gồm các pin 1,5 V mắc nối tiếp. Cần bao nhiêu pin?",
+      "expr": "6*10/15",
+      "answer": "4",
+      "explain": "6 / 1,5 = 4 pin."
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Dòng điện qua dung dịch muối thường do:",
+      "choices": [
+        "Các phân tử đứng yên",
+        "Chỉ các nguyên tử trung hoà",
+        "Các ion chuyển dời có hướng",
+        "Các neutron"
+      ],
+      "answer": 2,
+      "explain": "Hạt mang điện trong dung dịch là ion.",
+      "wrong_explain": {
+        "0": "Không có dòng điện.",
+        "1": "Không mang điện.",
+        "3": "Neutron không mang điện."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Một bộ nguồn gồm 5 pin giống nhau mắc nối tiếp có hiệu điện thế 7,5 V. Mỗi pin có hiệu điện thế bao nhiêu V?",
+      "expr": "75/50",
+      "answer": "1.5",
+      "explain": "7,5 / 5 = 1,5 V."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Vì sao pin cũ vẫn có hai cực nhưng không làm đèn sáng?",
+      "choices": [
+        "Cực dương đã biến thành cực âm",
+        "Hiệu điện thế giữa hai cực đã giảm gần bằng 0",
+        "Dây nối bị đứt",
+        "Đèn không cần điện"
+      ],
+      "answer": 1,
+      "explain": "Nguồn điện yếu không đủ cung cấp năng lượng.",
+      "wrong_explain": {
+        "0": "Không đúng.",
+        "2": "Không phải nguyên nhân chung.",
+        "3": "Sai."
+      },
+      "concept": true
+    }
+  ]
+}

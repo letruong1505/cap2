@@ -1,0 +1,309 @@
+{
+  "id": "bai-29",
+  "grade": 8,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 8",
+  "chapter": "Chương VI. Nhiệt",
+  "lesson": "Bài 29. Sự nở vì nhiệt",
+  "section": "",
+  "bookPage": 118,
+  "requirements": [
+    "Thực hiện thí nghiệm chứng tỏ các chất khác nhau nở vì nhiệt khác nhau.",
+    "Lấy được ví dụ về công dụng và tác hại của sự nở vì nhiệt.",
+    "Giải thích được một số hiện tượng đơn giản liên quan đến sự nở vì nhiệt."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các chất rắn nở ra khi nóng lên, co lại khi lạnh đi. Các chất rắn khác nhau nở vì nhiệt khác nhau; ví dụ khi cùng tăng nhiệt độ, nhôm nở nhiều nhất, rồi đồng, sắt nở ít hơn."
+    },
+    {
+      "type": "text",
+      "content": "Băng kép gồm hai thanh kim loại khác nhau ghép chặt; khi nóng, băng kép cong về phía thanh nở vì nhiệt ít hơn. Băng kép dùng đóng ngắt mạch điện tự động (bàn là, ấm điện)."
+    },
+    {
+      "type": "text",
+      "content": "Chất lỏng nở ra khi nóng lên, co lại khi lạnh đi; các chất lỏng khác nhau nở vì nhiệt khác nhau (nhiệt kế dùng sự nở vì nhiệt của thuỷ ngân, rượu)."
+    },
+    {
+      "type": "text",
+      "content": "Nước nở vì nhiệt đặc biệt: từ 0 °C đến 4 °C nước co lại khi nóng lên; từ 4 °C trở lên nước nở ra. Nước ở 4 °C có khối lượng riêng lớn nhất. Vì thế khi trời rét lớp nước ở đáy hồ có nhiệt độ 4 °C nên sinh vật vẫn sống được."
+    },
+    {
+      "type": "text",
+      "content": "Chất khí nở ra khi nóng lên, co lại khi lạnh đi; chất khí nở vì nhiệt nhiều hơn chất lỏng, chất lỏng nở nhiều hơn chất rắn; các chất khí khác nhau nở vì nhiệt giống nhau."
+    },
+    {
+      "type": "text",
+      "content": "Công dụng: khí cầu, nhiệt kế, băng kép, lắp vành thép vào bánh xe. Tác hại: đường ray, ống dẫn, cầu có thể bị cong, nứt nên phải để khe hở giãn nở; tháp Eiffel cao thêm vài cm vào mùa hè."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Thể tích 100 cm³ khí tăng thêm 3,5% khi nhiệt độ tăng. Thể tích tăng thêm là bao nhiêu cm³?",
+      "steps": [
+        "Thể tích tăng thêm = 100 × 3,5%.",
+        "100 × 3,5 / 100 = 3,5 cm³."
+      ],
+      "expr": "100*35/1000",
+      "answer": "3.5"
+    },
+    {
+      "problem": "Một thanh ray dài 12 m dãn thêm 0,5 cm khi nóng lên. Chiều dài sau khi nóng bằng bao nhiêu cm?",
+      "steps": [
+        "Đổi 12 m = 1 200 cm.",
+        "1 200 + 0,5 = 1 200,5 cm."
+      ],
+      "expr": "1200+0.5",
+      "answer": "1200.5"
+    },
+    {
+      "problem": "Dạng so sánh: thanh nhôm nở thêm 3,45 đơn vị, thanh đồng 2,55, thanh sắt 1,80 (cùng điều kiện). Thanh nhôm nở nhiều hơn thanh sắt bao nhiêu đơn vị?",
+      "steps": [
+        "Cách làm: lấy hiệu hai giá trị.",
+        "3,45 − 1,80 = 1,65 đơn vị."
+      ],
+      "expr": "3.45-1.80",
+      "answer": "1.65"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Các chất rắn khi nóng lên thì:",
+      "choices": [
+        "Co lại",
+        "Nở ra",
+        "Giữ nguyên thể tích",
+        "Biến thành chất lỏng ngay"
+      ],
+      "answer": 1,
+      "explain": "Chất rắn nở vì nhiệt.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "2": "Có thay đổi.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong ba thanh nhôm, đồng, sắt cùng nóng lên, thanh nở nhiều nhất là:",
+      "choices": [
+        "Nhôm",
+        "Đồng",
+        "Sắt",
+        "Cả ba như nhau"
+      ],
+      "answer": 0,
+      "explain": "Nhôm nở vì nhiệt nhiều hơn đồng, sắt.",
+      "wrong_explain": {
+        "1": "Nở ít hơn nhôm.",
+        "2": "Nở ít nhất.",
+        "3": "Khác nhau."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Chất nào nở vì nhiệt nhiều nhất?",
+      "choices": [
+        "Chất rắn",
+        "Chất lỏng",
+        "Như nhau",
+        "Chất khí"
+      ],
+      "answer": 3,
+      "explain": "Khí > lỏng > rắn.",
+      "wrong_explain": {
+        "0": "Nở ít nhất.",
+        "1": "Ít hơn chất khí.",
+        "2": "Khác nhau."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nước có khối lượng riêng lớn nhất ở:",
+      "choices": [
+        "0 °C",
+        "100 °C",
+        "4 °C",
+        "10 °C"
+      ],
+      "answer": 2,
+      "explain": "Nước ở 4 °C nặng nhất.",
+      "wrong_explain": {
+        "0": "Nước đá nhẹ hơn.",
+        "1": "Nước nóng nhẹ hơn.",
+        "3": "Nhỏ hơn giá trị lớn nhất."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Băng kép dùng để:",
+      "choices": [
+        "Đo hiệu điện thế",
+        "Đóng ngắt mạch điện tự động",
+        "Làm tăng áp suất",
+        "Phát sáng"
+      ],
+      "answer": 1,
+      "explain": "Khi nóng băng kép cong làm hở mạch.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao đường ray xe lửa phải để khe hở giữa các thanh?",
+      "choices": [
+        "Để các thanh nở ra khi nóng mà không bị cong",
+        "Để tàu chạy êm hơn",
+        "Để tiết kiệm sắt",
+        "Để nước thoát"
+      ],
+      "answer": 0,
+      "explain": "Tránh hư hỏng do nở vì nhiệt.",
+      "wrong_explain": {
+        "1": "Không phải nguyên nhân chính.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khí cầu bay lên được nhờ:",
+      "choices": [
+        "Không khí lạnh bên trong",
+        "Hút không khí vào",
+        "Nam châm",
+        "Không khí nóng nở ra nên nhẹ hơn không khí lạnh xung quanh"
+      ],
+      "answer": 3,
+      "explain": "Khí nóng có khối lượng riêng nhỏ.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "1": "Không phải.",
+        "2": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một thanh dài 200 cm dãn thêm 0,2 cm khi nóng. Chiều dài sau khi nóng (cm) là:",
+      "expr": "200+0.2",
+      "answer": "200.2",
+      "explain": "200,2 cm."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ống dẫn dài 50 m co lại 0,1 m khi lạnh. Chiều dài sau khi lạnh (m) là:",
+      "expr": "50-0.1",
+      "answer": "49.9",
+      "explain": "49,9 m."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Băng kép đồng–sắt được hơ nóng sẽ cong về phía thanh:",
+      "choices": [
+        "Sắt, vì sắt nở ít hơn đồng",
+        "Đồng, vì đồng nở ít hơn",
+        "Không cong",
+        "Cả hai nở như nhau"
+      ],
+      "answer": 0,
+      "explain": "Thanh nở nhiều ở phía ngoài vòng cong.",
+      "wrong_explain": {
+        "1": "Đồng nở nhiều hơn sắt.",
+        "2": "Có cong.",
+        "3": "Khác nhau."
+      },
+      "concept": true
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vì sao khi trời rét cá và sinh vật dưới hồ vẫn sống được?",
+      "choices": [
+        "Nước ở đáy hồ là băng",
+        "Nước trong hồ không bao giờ lạnh",
+        "Cá không cần oxygen",
+        "Lớp nước đáy hồ có nhiệt độ 4 °C"
+      ],
+      "answer": 3,
+      "explain": "Nước nặng nhất ở 4 °C nên chìm xuống đáy.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tháp cao 324 m, mùa hè cao thêm 10 cm = 0,1 m. Chiều cao mùa hè (m) là:",
+      "expr": "324+0.1",
+      "answer": "324.1",
+      "explain": "324,1 m."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Một thanh nhôm dài 2 m nở thêm 2 mm. Hỏi 10 thanh như vậy nối liền nở thêm tổng cộng bao nhiêu mm?",
+      "expr": "2*10",
+      "answer": "20",
+      "explain": "20 mm."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Vì sao phải để lại một khoảng trống nhỏ khi đổ nước đầy chai thuỷ tinh rồi đậy kín và đem phơi nắng?",
+      "choices": [
+        "Nước bay hơi hết",
+        "Nước nở ra khi nóng, nếu chật có thể làm nứt chai",
+        "Chai nhẹ hơn",
+        "Nước đổi màu"
+      ],
+      "answer": 1,
+      "explain": "Chất lỏng nở vì nhiệt.",
+      "wrong_explain": {
+        "0": "Không phải.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "concept": true
+    }
+  ]
+}

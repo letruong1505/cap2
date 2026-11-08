@@ -1,0 +1,278 @@
+{
+  "id": "bai-8",
+  "grade": 8,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 8",
+  "chapter": "Chương II. Một số hợp chất thông dụng",
+  "lesson": "Bài 8. Acid",
+  "section": "",
+  "bookPage": 35,
+  "requirements": [
+    "Nêu được khái niệm acid (tạo ra ion H⁺).",
+    "Tiến hành được thí nghiệm của hydrochloric acid (đổi màu chất chỉ thị, phản ứng với kim loại) và viết phương trình hoá học.",
+    "Trình bày được ứng dụng của một số acid thông dụng (HCl, H₂SO₄, CH₃COOH)."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Acid là những hợp chất trong phân tử có nguyên tử hydrogen liên kết với gốc acid. Khi tan trong nước, acid tạo ra ion H⁺. Ví dụ: HCl (gốc −Cl), H₂SO₄ (gốc =SO₄), HNO₃ (gốc −NO₃), CH₃COOH."
+    },
+    {
+      "type": "text",
+      "content": "Dung dịch acid làm giấy quỳ tím chuyển sang màu đỏ."
+    },
+    {
+      "type": "text",
+      "content": "Dung dịch acid phản ứng với một số kim loại (Mg, Zn, Fe,...) tạo muối và giải phóng khí hydrogen. Ví dụ: Mg + 2HCl → MgCl₂ + H₂; Zn + H₂SO₄ → ZnSO₄ + H₂."
+    },
+    {
+      "type": "text",
+      "content": "Sulfuric acid H₂SO₄ là chất lỏng sánh như dầu ăn, nặng gần gấp hai lần nước, tan vô hạn trong nước và toả rất nhiều nhiệt; tuyệt đối không tự ý pha loãng H₂SO₄ đặc. H₂SO₄ dùng sản xuất phân bón, chất tẩy rửa, sơn, chất dẻo, giấy, tơ sợi..."
+    },
+    {
+      "type": "text",
+      "content": "Hydrochloric acid HCl là chất lỏng không màu, dùng tẩy gỉ thép, tổng hợp chất hữu cơ, xử lí pH nước bể bơi. HCl trong dịch dạ dày giúp tiêu hoá thức ăn và diệt vi khuẩn."
+    },
+    {
+      "type": "text",
+      "content": "Acetic acid CH₃COOH là chất lỏng không màu, vị chua; giấm ăn chứa 2 – 5% acetic acid, dùng chế biến thực phẩm, sản xuất dược phẩm, sơn, sợi."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính khối lượng H₂SO₄ có trong 20 g dung dịch H₂SO₄ 98%.",
+      "steps": [
+        "m chất tan = C% × m dung dịch / 100.",
+        "m = 98 × 20 / 100 = 19,6 g."
+      ],
+      "expr": "98*20/100",
+      "answer": "19.6"
+    },
+    {
+      "problem": "Cho 2,4 g Mg (M = 24) tác dụng hết với dung dịch HCl: Mg + 2HCl → MgCl₂ + H₂. Tính thể tích H₂ (lít) ở 25 °C, 1 bar.",
+      "steps": [
+        "n(Mg) = 2,4 / 24 = 0,1 mol → n(H₂) = 0,1 mol.",
+        "V = 24,79 × 0,1 = 2,479 L."
+      ],
+      "expr": "24.79*2.4/24",
+      "answer": "2.479"
+    },
+    {
+      "problem": "Dạng viết và tính theo phương trình: hoà tan 5,6 g Fe (M = 56) trong dung dịch HCl dư, Fe + 2HCl → FeCl₂ + H₂. Tính số mol HCl đã phản ứng.",
+      "steps": [
+        "Cách làm: tìm n(Fe) rồi dùng tỉ lệ 1 : 2.",
+        "n(Fe) = 5,6 / 56 = 0,1 mol → n(HCl) = 0,2 mol."
+      ],
+      "expr": "5.6*2/56",
+      "answer": "0.2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi tan trong nước, acid tạo ra ion nào?",
+      "choices": [
+        "Ion OH⁻",
+        "Ion H⁺",
+        "Ion Na⁺",
+        "Ion Cl⁻"
+      ],
+      "answer": 1,
+      "explain": "Acid tạo ra ion H⁺ khi tan trong nước.",
+      "wrong_explain": {
+        "0": "Ion OH⁻ do base tạo ra.",
+        "2": "Không đặc trưng cho acid.",
+        "3": "Chỉ có ở acid HCl, không phải đặc trưng của mọi acid."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Dung dịch acid làm giấy quỳ tím chuyển sang màu:",
+      "choices": [
+        "Đỏ",
+        "Xanh",
+        "Vàng",
+        "Không đổi màu"
+      ],
+      "answer": 0,
+      "explain": "Quỳ tím gặp acid hoá đỏ.",
+      "wrong_explain": {
+        "1": "Quỳ tím chuyển xanh trong dung dịch base.",
+        "2": "Không đổi sang vàng.",
+        "3": "Acid làm quỳ chuyển đỏ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Chất nào sau đây là acid?",
+      "choices": [
+        "NaOH",
+        "NaCl",
+        "CaO",
+        "H₂SO₄"
+      ],
+      "answer": 3,
+      "explain": "H₂SO₄ có hydrogen liên kết với gốc sulfate.",
+      "wrong_explain": {
+        "0": "Là base.",
+        "1": "Là muối.",
+        "2": "Là oxide."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi cho kim loại Zn tác dụng với dung dịch HCl, hiện tượng quan sát được là:",
+      "choices": [
+        "Có kết tủa trắng",
+        "Dung dịch chuyển màu xanh",
+        "Có bọt khí thoát ra",
+        "Không có hiện tượng"
+      ],
+      "answer": 2,
+      "explain": "Zn + 2HCl → ZnCl₂ + H₂.",
+      "wrong_explain": {
+        "0": "Không tạo kết tủa.",
+        "1": "Không đúng.",
+        "3": "Zn phản ứng với HCl giải phóng H₂."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi pha loãng H₂SO₄ đặc cần chú ý điều gì?",
+      "choices": [
+        "Đổ nhanh nước vào acid đặc",
+        "Không tự ý pha vì toả rất nhiều nhiệt, phải theo hướng dẫn của giáo viên",
+        "Dùng tay khuấy",
+        "Không cần lưu ý"
+      ],
+      "answer": 1,
+      "explain": "H₂SO₄ đặc tan trong nước toả rất nhiều nhiệt.",
+      "wrong_explain": {
+        "0": "Rất nguy hiểm.",
+        "2": "Tuyệt đối không.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trong giấm ăn có chứa acid nào?",
+      "choices": [
+        "Acetic acid",
+        "Hydrochloric acid",
+        "Sulfuric acid",
+        "Nitric acid"
+      ],
+      "answer": 0,
+      "explain": "Giấm ăn chứa 2 – 5% acetic acid.",
+      "wrong_explain": {
+        "1": "Có trong dịch dạ dày.",
+        "2": "Không có trong giấm.",
+        "3": "Không có trong giấm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Số mol HCl cần để phản ứng hết 0,1 mol Mg (Mg + 2HCl → MgCl₂ + H₂) là:",
+      "choices": [
+        "0,1",
+        "0,05",
+        "0,4",
+        "0,2"
+      ],
+      "answer": 3,
+      "explain": "Tỉ lệ Mg : HCl = 1 : 2 nên n(HCl) = 0,2 mol.",
+      "wrong_explain": {
+        "0": "Quên hệ số 2.",
+        "1": "Chia đôi thay vì nhân đôi.",
+        "2": "Nhân 4."
+      },
+      "expr": "0.1*2"
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính khối lượng HCl (g) trong 50 g dung dịch HCl 10%.",
+      "expr": "10*50/100",
+      "answer": "5",
+      "explain": "m = 10 × 50 / 100 = 5 g."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho 6,5 g Zn (M = 65) tác dụng với dung dịch H₂SO₄ loãng dư. Tính thể tích H₂ (lít) ở 25 °C, 1 bar.",
+      "expr": "24.79*6.5/65",
+      "answer": "2.479",
+      "explain": "n(Zn) = 0,1 mol = n(H₂); V = 2,479 L."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Để hoà tan hết 0,3 mol Al theo 2Al + 6HCl → 2AlCl₃ + 3H₂ cần bao nhiêu mol HCl?",
+      "expr": "0.3*6/2",
+      "answer": "0.9",
+      "explain": "n(HCl) = 0,3 × 6 / 2 = 0,9 mol."
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vì sao không nên để dung dịch tẩy rửa chứa acid mạnh dính vào da, quần áo?",
+      "choices": [
+        "Làm da sạch hơn",
+        "Làm vải bền hơn",
+        "Không có ảnh hưởng",
+        "Acid có thể gây bỏng, làm hỏng da và vải"
+      ],
+      "answer": 3,
+      "explain": "Cần đeo găng tay khi dùng sản phẩm chứa acid mạnh.",
+      "wrong_explain": {
+        "0": "Gây tổn thương da.",
+        "1": "Làm hỏng vải.",
+        "2": "Có ảnh hưởng."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Trong 200 g giấm ăn nồng độ 5% acetic acid có bao nhiêu gam acetic acid?",
+      "expr": "5*200/100",
+      "answer": "10",
+      "explain": "m = 5 × 200 / 100 = 10 g."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hoà tan hoàn toàn 11,2 g Fe vào dung dịch H₂SO₄ loãng dư: Fe + H₂SO₄ → FeSO₄ + H₂. Tính thể tích H₂ (lít) ở 25 °C, 1 bar.",
+      "expr": "24.79*11.2/56",
+      "answer": "4.958",
+      "explain": "n(Fe) = 0,2 mol = n(H₂); V = 4,958 L."
+    }
+  ]
+}

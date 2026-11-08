@@ -1,0 +1,300 @@
+{
+  "id": "bai-47",
+  "grade": 8,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 8",
+  "chapter": "Chương VIII. Sinh vật và môi trường",
+  "lesson": "Bài 47. Bảo vệ môi trường",
+  "section": "",
+  "bookPage": 191,
+  "requirements": [
+    "Trình bày tác động của con người đến môi trường; ô nhiễm môi trường; biến đổi khí hậu; bảo vệ động vật hoang dã."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tác động qua các thời kì: nguyên thuỷ (hái lượm, săn bắn, dùng lửa); xã hội nông nghiệp (trồng trọt, chăn nuôi, định cư, thuần hoá, thuỷ lợi); công nghiệp và hậu công nghiệp (cơ giới hoá, khai thác khoáng sản, khí thải tăng; sau đó công nghệ thông tin giúp tiết kiệm tài nguyên)."
+    },
+    {
+      "type": "text",
+      "content": "Ô nhiễm môi trường là sự biến đổi tính chất vật lí, hoá học, sinh học của môi trường không phù hợp tiêu chuẩn, gây ảnh hưởng xấu đến sức khoẻ con người, sinh vật và tự nhiên."
+    },
+    {
+      "type": "text",
+      "content": "Nguyên nhân: chất thải công nghiệp và sinh hoạt (CO, SO₂, CO₂, NO₂,...), hoá chất bảo vệ thực vật, chất phóng xạ, vi sinh vật gây bệnh. Biện pháp: xử lí chất thải, giảm khí thải, dùng năng lượng sạch, trồng cây, dùng hoá chất đúng cách, tiết kiệm tài nguyên."
+    },
+    {
+      "type": "text",
+      "content": "Biến đổi khí hậu là sự thay đổi của khí hậu trong thời gian dài, chủ yếu do khí nhà kính tăng; biện pháp thích ứng: trồng rừng, tiết kiệm năng lượng, dùng năng lượng tái tạo, xây dựng công trình phòng chống thiên tai."
+    },
+    {
+      "type": "text",
+      "content": "Cần bảo vệ động vật hoang dã có nguy cơ tuyệt chủng để giữ đa dạng sinh học và cân bằng sinh thái: cấm săn bắt buôn bán trái phép, bảo vệ nơi sống, lập khu bảo tồn, nhân nuôi bảo tồn."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một nhà máy thải 500 kg khí độc mỗi ngày, sau khi xử lí giảm 60%. Lượng khí giảm là bao nhiêu kg?",
+      "steps": [
+        "500 × 60/100 = 300."
+      ],
+      "expr": "500*60/100",
+      "answer": "300"
+    },
+    {
+      "problem": "Mỗi gia đình thải 2 kg rác mỗi ngày. 30 gia đình thải bao nhiêu kg/ngày?",
+      "steps": [
+        "2 × 30 = 60."
+      ],
+      "expr": "2*30",
+      "answer": "60"
+    },
+    {
+      "problem": "Dạng đếm: có 4 nguyên nhân ô nhiễm trong sách (chất thải công nghiệp và sinh hoạt, hoá chất bảo vệ thực vật, chất phóng xạ, vi sinh vật). Bỏ 1 nguyên nhân còn mấy?",
+      "steps": [
+        "4 − 1 = 3."
+      ],
+      "expr": "4-1",
+      "answer": "3"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Ô nhiễm môi trường là:",
+      "choices": [
+        "Môi trường tự phục hồi",
+        "Sự biến đổi tính chất môi trường gây ảnh hưởng xấu đến sức khoẻ con người, sinh vật",
+        "Tăng cây xanh",
+        "Thay đổi không gây hại"
+      ],
+      "answer": 1,
+      "explain": "Không phù hợp tiêu chuẩn.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Chất nào là khí thải từ công nghiệp gây ô nhiễm?",
+      "choices": [
+        "SO₂",
+        "O₂",
+        "N₂",
+        "H₂O"
+      ],
+      "answer": 0,
+      "explain": "SO₂, CO, NO₂.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hoá chất bảo vệ thực vật dùng sai cách có thể:",
+      "choices": [
+        "Làm sạch đất",
+        "Tăng đa dạng",
+        "Không có hại",
+        "Gây hại sức khoẻ và hệ sinh thái"
+      ],
+      "answer": 3,
+      "explain": "Dùng đúng cách.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Có hại."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Chất phóng xạ có thể gây:",
+      "choices": [
+        "Làm cây xanh",
+        "Tăng cân",
+        "Biến đổi vật chất di truyền, bệnh tật di truyền",
+        "Không gây gì"
+      ],
+      "answer": 2,
+      "explain": "Nguồn từ thử vũ khí hạt nhân.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Có hại."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Thời kì nguyên thuỷ con người chủ yếu:",
+      "choices": [
+        "Cơ giới hoá",
+        "Hái lượm và săn bắn",
+        "Dùng máy tính",
+        "Xây nhà máy"
+      ],
+      "answer": 1,
+      "explain": "Dùng lửa.",
+      "wrong_explain": {
+        "0": "Công nghiệp.",
+        "2": "Hiện đại.",
+        "3": "Công nghiệp."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Biện pháp giảm ô nhiễm:",
+      "choices": [
+        "Xử lí chất thải, trồng cây, dùng năng lượng sạch",
+        "Đốt rác bừa bãi",
+        "Xả thải ra sông",
+        "Chặt rừng"
+      ],
+      "answer": 0,
+      "explain": "Bảo vệ môi trường.",
+      "wrong_explain": {
+        "1": "Hại.",
+        "2": "Hại.",
+        "3": "Hại."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao cần bảo vệ động vật hoang dã nguy cấp?",
+      "choices": [
+        "Để săn bắt",
+        "Để bán",
+        "Không cần",
+        "Giữ đa dạng sinh học và cân bằng sinh thái"
+      ],
+      "answer": 3,
+      "explain": "Nguy cơ tuyệt chủng.",
+      "wrong_explain": {
+        "0": "Sai.",
+        "1": "Sai.",
+        "2": "Cần."
+      },
+      "concept": true
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mỗi người thải 1 kg rác/ngày, 40 học sinh thải bao nhiêu kg?",
+      "expr": "1*40",
+      "answer": "40",
+      "explain": "40."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nhà máy thải 200 kg, xử lí giảm 50%. Lượng giảm (kg):",
+      "expr": "200*50/100",
+      "answer": "100",
+      "explain": "100."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Khí nào góp phần gây hiệu ứng nhà kính, biến đổi khí hậu?",
+      "choices": [
+        "CO₂",
+        "O₂",
+        "N₂",
+        "H₂"
+      ],
+      "answer": 0,
+      "explain": "Khí nhà kính.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Biện pháp thích ứng biến đổi khí hậu:",
+      "choices": [
+        "Đốt nhiều than",
+        "Phá rừng",
+        "Xả khí thải",
+        "Trồng rừng, tiết kiệm năng lượng"
+      ],
+      "answer": 3,
+      "explain": "Giảm khí nhà kính.",
+      "wrong_explain": {
+        "0": "Hại.",
+        "1": "Hại.",
+        "2": "Hại."
+      },
+      "concept": true
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trồng 120 cây mỗi lớp, 8 lớp trồng bao nhiêu cây?",
+      "expr": "120*8",
+      "answer": "960",
+      "explain": "960."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Vì sao dùng năng lượng sạch giúp bảo vệ môi trường?",
+      "choices": [
+        "Tăng khí thải",
+        "Làm bẩn nước",
+        "Giảm khí thải gây ô nhiễm",
+        "Tăng rác"
+      ],
+      "answer": 2,
+      "explain": "Gió, Mặt Trời ít thải.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Rác tái chế 35 kg trong tổng 100 kg. Rác còn lại (kg):",
+      "expr": "100-35",
+      "answer": "65",
+      "explain": "65."
+    }
+  ]
+}

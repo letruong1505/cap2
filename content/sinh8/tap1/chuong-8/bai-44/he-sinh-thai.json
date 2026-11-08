@@ -1,0 +1,300 @@
+{
+  "id": "bai-44",
+  "grade": 8,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 8",
+  "chapter": "Chương VIII. Sinh vật và môi trường",
+  "lesson": "Bài 44. Hệ sinh thái",
+  "section": "",
+  "bookPage": 180,
+  "requirements": [
+    "Nêu khái niệm hệ sinh thái, thành phần; chuỗi, lưới thức ăn; trao đổi chất, năng lượng; bảo vệ hệ sinh thái."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hệ sinh thái là hệ thống gồm quần xã sinh vật và môi trường sống của chúng. Thành phần: vô sinh và hữu sinh. Hữu sinh gồm sinh vật sản xuất (thực vật, tảo, quang hợp tổng hợp chất hữu cơ), sinh vật tiêu thụ (động vật) và sinh vật phân giải (nấm, vi khuẩn)."
+    },
+    {
+      "type": "text",
+      "content": "Hệ sinh thái chia thành tự nhiên (trên cạn: rừng mưa nhiệt đới, sa mạc; dưới nước: nước ngọt như hồ, sông; nước mặn như rừng ngập mặn, rạn san hô) và nhân tạo (đồng ruộng, rừng trồng, khu dân cư, khu đô thị, ao nuôi cá)."
+    },
+    {
+      "type": "text",
+      "content": "Chuỗi thức ăn gồm nhiều loài có quan hệ dinh dưỡng, ví dụ cỏ → châu chấu → ếch → rắn → đại bàng. Lưới thức ăn là tập hợp các chuỗi có nhiều mắt xích chung. Tháp sinh thái biểu diễn mối quan hệ giữa các bậc dinh dưỡng (tháp số lượng, sinh khối, năng lượng)."
+    },
+    {
+      "type": "text",
+      "content": "Năng lượng ánh sáng Mặt Trời được sinh vật sản xuất hấp thụ, truyền một chiều qua các bậc dinh dưỡng và giảm dần do sinh vật dùng và toả nhiệt ra môi trường. Chất vô cơ tuần hoàn từ môi trường qua sinh vật rồi trả lại môi trường."
+    },
+    {
+      "type": "text",
+      "content": "Bảo vệ hệ sinh thái: ngăn chặn phá rừng, khai thác hợp lí; quản lí chất thải, kiểm soát ô nhiễm biển; bảo vệ đất, chống xói mòn, khô hạn, mặn cho hệ sinh thái nông nghiệp."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Chuỗi cỏ → châu chấu → ếch → rắn → đại bàng có bao nhiêu mắt xích?",
+      "steps": [
+        "Đếm: 1+1+1+1+1 = 5."
+      ],
+      "expr": "1+1+1+1+1",
+      "answer": "5"
+    },
+    {
+      "problem": "Cỏ có 10 000 kcal; mỗi bậc dinh dưỡng chỉ chuyển 10% sang bậc sau. Bậc 2 nhận bao nhiêu kcal?",
+      "steps": [
+        "10 000 × 10/100 = 1 000."
+      ],
+      "expr": "10000*10/100",
+      "answer": "1000"
+    },
+    {
+      "problem": "Dạng số lượng: tháp có đại bàng 1 con/ha, rắn 12 con/ha. Rắn nhiều hơn đại bàng bao nhiêu con/ha?",
+      "steps": [
+        "12 − 1 = 11."
+      ],
+      "expr": "12-1",
+      "answer": "11"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hệ sinh thái gồm:",
+      "choices": [
+        "Chỉ động vật",
+        "Quần xã sinh vật và môi trường sống của chúng",
+        "Chỉ thực vật",
+        "Chỉ môi trường vô sinh"
+      ],
+      "answer": 1,
+      "explain": "Hai thành phần vô sinh và hữu sinh.",
+      "wrong_explain": {
+        "0": "Chưa đủ.",
+        "2": "Chưa đủ.",
+        "3": "Chưa đủ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Sinh vật sản xuất là:",
+      "choices": [
+        "Thực vật, tảo quang hợp tổng hợp chất hữu cơ",
+        "Động vật ăn thịt",
+        "Nấm",
+        "Vi khuẩn"
+      ],
+      "answer": 0,
+      "explain": "Tổng hợp chất hữu cơ.",
+      "wrong_explain": {
+        "1": "Tiêu thụ.",
+        "2": "Phân giải.",
+        "3": "Phân giải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nấm thuộc nhóm:",
+      "choices": [
+        "Sản xuất",
+        "Tiêu thụ",
+        "Vô sinh",
+        "Sinh vật phân giải"
+      ],
+      "answer": 3,
+      "explain": "Phân giải xác chết.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hệ sinh thái nào là hệ sinh thái nhân tạo?",
+      "choices": [
+        "Rừng mưa nhiệt đới",
+        "Sa mạc",
+        "Đồng ruộng",
+        "Rạn san hô"
+      ],
+      "answer": 2,
+      "explain": "Do con người hình thành.",
+      "wrong_explain": {
+        "0": "Tự nhiên.",
+        "1": "Tự nhiên.",
+        "3": "Tự nhiên."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Chuỗi thức ăn nào đúng?",
+      "choices": [
+        "Ếch → cỏ → châu chấu",
+        "Cỏ → châu chấu → ếch",
+        "Châu chấu → cỏ → ếch",
+        "Cỏ → ếch → châu chấu"
+      ],
+      "answer": 1,
+      "explain": "Mũi tên theo chiều chuyển năng lượng.",
+      "wrong_explain": {
+        "0": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Năng lượng trong hệ sinh thái chủ yếu lấy từ:",
+      "choices": [
+        "Ánh sáng Mặt Trời",
+        "Gió",
+        "Đất",
+        "Nước"
+      ],
+      "answer": 0,
+      "explain": "Qua quang hợp.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dòng năng lượng trong hệ sinh thái:",
+      "choices": [
+        "Truyền hai chiều",
+        "Tăng dần",
+        "Không đổi",
+        "Truyền một chiều và giảm dần"
+      ],
+      "answer": 3,
+      "explain": "Thất thoát dạng nhiệt.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chuỗi gồm cỏ, châu chấu, ếch, rắn. Có bao nhiêu mắt xích?",
+      "expr": "1+1+1+1",
+      "answer": "4",
+      "explain": "4."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cỏ 1 000 đơn vị năng lượng, bậc sau nhận 10%. Bậc 2 nhận bao nhiêu?",
+      "expr": "1000*10/100",
+      "answer": "100",
+      "explain": "100."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Lưới thức ăn là:",
+      "choices": [
+        "Tập hợp nhiều chuỗi thức ăn có mắt xích chung",
+        "Một chuỗi duy nhất",
+        "Chỉ thực vật",
+        "Chỉ vi khuẩn"
+      ],
+      "answer": 0,
+      "explain": "Nhiều chuỗi nối nhau.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vì sao năng lượng giảm dần qua các bậc dinh dưỡng?",
+      "choices": [
+        "Năng lượng tự biến mất",
+        "Mặt Trời tắt",
+        "Bị nước hút",
+        "Sinh vật dùng và toả nhiệt ra môi trường"
+      ],
+      "answer": 3,
+      "explain": "Hô hấp, toả nhiệt.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bậc 1 có 20 000 kcal; bậc 2 nhận 10% còn bậc 3 nhận 10% của bậc 2. Bậc 3 nhận bao nhiêu kcal?",
+      "expr": "20000*10/100*10/100",
+      "answer": "200",
+      "explain": "200."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Để bảo vệ hệ sinh thái rừng cần:",
+      "choices": [
+        "Đốt rừng",
+        "Săn bắt thú",
+        "Ngăn chặn phá rừng, khai thác hợp lí",
+        "Xả chất thải"
+      ],
+      "answer": 2,
+      "explain": "Bảo vệ cuộc sống con người.",
+      "wrong_explain": {
+        "0": "Hại.",
+        "1": "Hại.",
+        "3": "Hại."
+      },
+      "concept": true
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Rừng ngập mặn có 200 cây/ha, 5 ha có bao nhiêu cây?",
+      "expr": "200*5",
+      "answer": "1000",
+      "explain": "1 000."
+    }
+  ]
+}

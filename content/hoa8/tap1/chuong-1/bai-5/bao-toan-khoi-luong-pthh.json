@@ -1,0 +1,274 @@
+{
+  "id": "bai-5",
+  "grade": 8,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 8",
+  "chapter": "Chương I. Phản ứng hoá học",
+  "lesson": "Bài 5. Định luật bảo toàn khối lượng và phương trình hoá học",
+  "section": "",
+  "bookPage": 24,
+  "requirements": [
+    "Phát biểu được định luật bảo toàn khối lượng.",
+    "Nêu được khái niệm phương trình hoá học và các bước lập phương trình hoá học.",
+    "Trình bày được ý nghĩa của phương trình hoá học."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Định luật bảo toàn khối lượng: trong một phản ứng hoá học, tổng khối lượng của các chất sản phẩm bằng tổng khối lượng của các chất tham gia phản ứng. Lí do: chỉ có liên kết giữa các nguyên tử thay đổi, số nguyên tử mỗi nguyên tố giữ nguyên."
+    },
+    {
+      "type": "text",
+      "content": "Với phản ứng A + B → C + D: m_A + m_B = m_C + m_D. Biết khối lượng của (n − 1) chất trong n chất thì tính được khối lượng chất còn lại."
+    },
+    {
+      "type": "text",
+      "content": "Phương trình hoá học biểu diễn ngắn gọn phản ứng hoá học bằng công thức hoá học, với hệ số thích hợp để số nguyên tử mỗi nguyên tố ở hai vế bằng nhau."
+    },
+    {
+      "type": "text",
+      "content": "Ba bước lập phương trình hoá học: (1) viết sơ đồ phản ứng; (2) cân bằng số nguyên tử mỗi nguyên tố hai vế bằng cách đặt hệ số trước công thức; (3) viết phương trình hoá học. Không thay đổi chỉ số trong công thức đã đúng."
+    },
+    {
+      "type": "text",
+      "content": "Ví dụ: 4Al + 3O₂ → 2Al₂O₃. Hệ số cho biết tỉ lệ số nguyên tử, phân tử của các chất là 4 : 3 : 2; đó cũng là tỉ lệ số mol. Tỉ lệ khối lượng Al : O₂ : Al₂O₃ = (27·4) : (32·3) : (102·2) = 9 : 8 : 17."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho 20,8 g BaCl₂ phản ứng với 14,2 g Na₂SO₄ tạo 23,3 g BaSO₄ và NaCl. Tính khối lượng NaCl tạo thành.",
+      "steps": [
+        "Theo định luật bảo toàn khối lượng: m(NaCl) = 20,8 + 14,2 − 23,3.",
+        "m(NaCl) = 35 − 23,3 = 11,7 g."
+      ],
+      "expr": "20.8+14.2-23.3",
+      "answer": "11.7"
+    },
+    {
+      "problem": "Theo tỉ lệ khối lượng Al : O₂ : Al₂O₃ = 9 : 8 : 17, nếu có 18 g Al phản ứng hết thì tạo ra bao nhiêu gam Al₂O₃?",
+      "steps": [
+        "18 g Al gấp 18 : 9 = 2 lần.",
+        "m(Al₂O₃) = 17 × 2 = 34 g."
+      ],
+      "expr": "18/9*17",
+      "answer": "34"
+    },
+    {
+      "problem": "Dạng cân bằng phương trình: cân bằng Fe + O₂ → Fe₃O₄ và cho biết tổng các hệ số của phương trình.",
+      "steps": [
+        "Cách làm: cân bằng O trước: 2 O₂ cho 4 O, tạo 1 Fe₃O₄; rồi cân bằng Fe: 3 Fe.",
+        "3Fe + 2O₂ → Fe₃O₄. Tổng hệ số = 3 + 2 + 1 = 6."
+      ],
+      "expr": "3+2+1",
+      "answer": "6"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phát biểu nào đúng với định luật bảo toàn khối lượng?",
+      "choices": [
+        "Khối lượng sản phẩm luôn lớn hơn chất tham gia",
+        "Tổng khối lượng các chất tham gia bằng tổng khối lượng các sản phẩm",
+        "Khối lượng sản phẩm luôn nhỏ hơn",
+        "Chỉ đúng với phản ứng toả nhiệt"
+      ],
+      "answer": 1,
+      "explain": "Định luật nêu bởi Lomonosov và Lavoisier.",
+      "wrong_explain": {
+        "0": "Khối lượng được bảo toàn.",
+        "2": "Khối lượng được bảo toàn.",
+        "3": "Đúng với mọi phản ứng hoá học."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Vì sao khối lượng được bảo toàn trong phản ứng hoá học?",
+      "choices": [
+        "Số nguyên tử mỗi nguyên tố không đổi, chỉ liên kết thay đổi",
+        "Các nguyên tử bị phân chia nhỏ hơn",
+        "Các nguyên tử được tạo thêm",
+        "Các nguyên tử bị mất đi"
+      ],
+      "answer": 0,
+      "explain": "Chỉ sự sắp xếp lại của các nguyên tử.",
+      "wrong_explain": {
+        "1": "Nguyên tử không bị phân chia trong phản ứng hoá học.",
+        "2": "Không có nguyên tử mới sinh ra.",
+        "3": "Nguyên tử không mất đi."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Ở bước 2 khi lập phương trình hoá học, ta được phép:",
+      "choices": [
+        "Thay đổi chỉ số trong công thức",
+        "Xoá bớt chất sản phẩm",
+        "Thêm nguyên tố mới",
+        "Đặt hệ số trước công thức các chất"
+      ],
+      "answer": 3,
+      "explain": "Chỉ đổi hệ số, không đổi chỉ số trong công thức.",
+      "wrong_explain": {
+        "0": "Làm vậy sẽ thành chất khác.",
+        "1": "Không được bỏ sản phẩm.",
+        "2": "Không được thêm nguyên tố."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Phương trình 2H₂ + O₂ → 2H₂O cho biết tỉ lệ số phân tử H₂ : O₂ : H₂O là:",
+      "choices": [
+        "1 : 1 : 1",
+        "2 : 2 : 1",
+        "2 : 1 : 2",
+        "1 : 2 : 2"
+      ],
+      "answer": 2,
+      "explain": "Tỉ lệ bằng hệ số trong phương trình.",
+      "wrong_explain": {
+        "0": "Chưa theo hệ số.",
+        "1": "Sai tỉ lệ.",
+        "3": "Đảo thứ tự hệ số."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Đốt cháy than tổ ong, xỉ than nhẹ hơn than ban đầu vì:",
+      "choices": [
+        "Khối lượng bị mất đi",
+        "Một phần than biến thành khí CO₂ bay đi",
+        "Than hoá thành nước",
+        "Oxygen bị hoá lỏng"
+      ],
+      "answer": 1,
+      "explain": "Khí CO₂ thoát ra, tổng khối lượng vẫn bảo toàn.",
+      "wrong_explain": {
+        "0": "Khối lượng vẫn bảo toàn (tính cả khí).",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nung CaCO₃ thu được 28 g CaO và 22 g CO₂. Khối lượng CaCO₃ đã nung (g) là:",
+      "choices": [
+        "50",
+        "6",
+        "22",
+        "28"
+      ],
+      "answer": 0,
+      "explain": "m(CaCO₃) = 28 + 22 = 50 g.",
+      "wrong_explain": {
+        "1": "Lấy hiệu thay vì tổng.",
+        "2": "Đó chỉ là khối lượng CO₂.",
+        "3": "Đó chỉ là khối lượng CaO."
+      },
+      "expr": "28+22"
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho 4 g NaOH tác dụng vừa đủ với 3,65 g HCl tạo 1,8 g H₂O và NaCl. Tính khối lượng NaCl (g).",
+      "expr": "4+3.65-1.8",
+      "answer": "5.85",
+      "explain": "m(NaCl) = 4 + 3,65 − 1,8 = 5,85 g."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Từ tỉ lệ khối lượng Al : O₂ = 9 : 8, nếu có 24 g O₂ phản ứng hết thì cần bao nhiêu gam Al?",
+      "expr": "24/8*9",
+      "answer": "27",
+      "explain": "24 g O₂ gấp 3 lần phần 8 g, nên m(Al) = 3 × 9 = 27 g."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đốt cháy hoàn toàn 5,6 g Fe trong oxygen tạo 8 g Fe₂O₃ (gỉ sắt). Tính khối lượng oxygen (g) đã phản ứng.",
+      "expr": "8-5.6",
+      "answer": "2.4",
+      "explain": "m(O₂) = m(Fe₂O₃) − m(Fe) = 8 − 5,6 = 2,4 g."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong phương trình 2Al + 6HCl → 2AlCl₃ + 3H₂, tổng các hệ số bằng bao nhiêu?",
+      "expr": "2+6+2+3",
+      "answer": "13",
+      "explain": "2 + 6 + 2 + 3 = 13."
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Cân bằng đúng phương trình nào sau đây?",
+      "choices": [
+        "2P + O₂ → P₂O₅",
+        "P + O₂ → P₂O₅",
+        "4P + 2O₂ → 2P₂O₅",
+        "4P + 5O₂ → 2P₂O₅"
+      ],
+      "answer": 3,
+      "explain": "4 P và 10 O ở cả hai vế.",
+      "wrong_explain": {
+        "0": "Số nguyên tử O hai vế chưa bằng nhau.",
+        "1": "Chưa cân bằng.",
+        "2": "Vế phải có 10 O, vế trái chỉ có 4 O."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Phản ứng CaCO₃ → CaO + CO₂. Nung 100 g đá vôi (chứa 80% CaCO₃) thu được 35,2 g CO₂. Tính khối lượng chất rắn còn lại sau phản ứng (g).",
+      "expr": "100-35.2",
+      "answer": "64.8",
+      "explain": "Khối lượng chất rắn giảm bằng khối lượng CO₂ bay đi: 100 − 35,2 = 64,8 g."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Để cân bằng Al₂(SO₄)₃ + NaOH → Al(OH)₃ + Na₂SO₄ ta có thể coi nhóm nào là một đơn vị chung?",
+      "choices": [
+        "Chỉ nguyên tử Al",
+        "Nhóm SO₄ và nhóm OH",
+        "Chỉ nguyên tử Na",
+        "Không thể cân bằng"
+      ],
+      "answer": 1,
+      "explain": "Nhóm SO₄ và OH không đổi trong phản ứng nên được coi như một \"nguyên tố\".",
+      "wrong_explain": {
+        "0": "Chưa đủ để cân bằng.",
+        "2": "Chưa đủ để cân bằng.",
+        "3": "Phương trình cân bằng được."
+      },
+      "concept": true
+    }
+  ]
+}

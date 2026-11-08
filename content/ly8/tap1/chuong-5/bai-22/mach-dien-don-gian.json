@@ -1,0 +1,289 @@
+{
+  "id": "bai-22",
+  "grade": 8,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 8",
+  "chapter": "Chương V. Điện",
+  "lesson": "Bài 22. Mạch điện đơn giản",
+  "section": "",
+  "bookPage": 91,
+  "requirements": [
+    "Vẽ được sơ đồ mạch điện với các kí hiệu: điện trở, biến trở, chuông điện, ampe kế, vôn kế,...",
+    "Mắc được mạch điện đơn giản với pin, công tắc, dây nối, bóng đèn.",
+    "Mô tả sơ lược công dụng của cầu chì, rơle, cầu dao tự động, chuông điện."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Mạch điện đơn giản gồm nguồn điện, dây nối, công tắc và các thiết bị tiêu thụ điện (bóng đèn, động cơ, quạt,...). Mạch kín thì có dòng điện chạy qua và đèn sáng; mạch hở (công tắc mở, đứt dây) thì không có dòng điện."
+    },
+    {
+      "type": "text",
+      "content": "Để vẽ sơ đồ mạch điện, người ta dùng kí hiệu: nguồn điện (pin), bóng đèn, công tắc đóng/mở, dây dẫn, điện trở, biến trở, ampe kế (A), vôn kế (V), chuông điện,..."
+    },
+    {
+      "type": "text",
+      "content": "Dòng điện một chiều do pin, acquy cung cấp có chiều không đổi. Quy ước chiều dòng điện là chiều từ cực dương của nguồn qua dây nối và các dụng cụ điện tới cực âm của nguồn."
+    },
+    {
+      "type": "text",
+      "content": "Cầu chì: có đoạn dây chì nóng chảy ở nhiệt độ thấp, khi dòng điện tăng quá mức dây chì nóng chảy làm mạch hở, bảo vệ thiết bị. Cầu dao tự động: tự ngắt mạch khi dòng điện tăng quá mức, sau khi sửa chữa có thể đóng lại."
+    },
+    {
+      "type": "text",
+      "content": "Rơle: thiết bị đóng, ngắt mạch điện tự động, dùng trong các mạch điều khiển để đóng ngắt dòng điện lớn mà hệ thống điều khiển không trực tiếp can thiệp được. Chuông điện: dùng nam châm điện để phát âm thanh báo hiệu."
+    },
+    {
+      "type": "text",
+      "content": "Khi đèn không sáng, cần kiểm tra: công tắc có đóng không, các mối nối có chắc không, dây có đứt không, pin còn điện không, bóng đèn có hỏng không."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Mạch điện gồm 1 pin, 1 công tắc, 1 bóng đèn và các dây nối. Có bao nhiêu bộ phận chính (nguồn, công tắc, đèn) trong mạch?",
+      "steps": [
+        "Các bộ phận chính: pin, công tắc, bóng đèn.",
+        "Có 3 bộ phận (ngoài dây nối)."
+      ],
+      "expr": "1+1+1",
+      "answer": "3"
+    },
+    {
+      "problem": "Dòng điện qua đèn là 0,25 A. Đổi ra miliampe (mA).",
+      "steps": [
+        "1 A = 1 000 mA.",
+        "0,25 × 1 000 = 250 mA."
+      ],
+      "expr": "0.25*1000",
+      "answer": "250"
+    },
+    {
+      "problem": "Dạng kiểm tra mạch: trong mạch, đèn không sáng. Nếu có 4 nguyên nhân có thể (công tắc mở, dây đứt, pin hết, bóng hỏng) và đã loại trừ 3 nguyên nhân, còn bao nhiêu nguyên nhân có thể?",
+      "steps": [
+        "Cách làm: lấy tổng trừ đã loại trừ.",
+        "4 − 3 = 1 nguyên nhân."
+      ],
+      "expr": "4-3",
+      "answer": "1"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Mạch điện đơn giản gồm các bộ phận:",
+      "choices": [
+        "Chỉ pin và dây nối",
+        "Nguồn điện, dây nối, công tắc và thiết bị tiêu thụ điện",
+        "Chỉ bóng đèn",
+        "Chỉ công tắc"
+      ],
+      "answer": 1,
+      "explain": "Bốn bộ phận cơ bản.",
+      "wrong_explain": {
+        "0": "Thiếu thiết bị tiêu thụ.",
+        "2": "Thiếu nguồn.",
+        "3": "Thiếu nguồn và tải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi công tắc mở, mạch điện là:",
+      "choices": [
+        "Mạch hở, không có dòng điện",
+        "Mạch kín, đèn sáng",
+        "Mạch có dòng điện lớn",
+        "Mạch bị đoản mạch"
+      ],
+      "answer": 0,
+      "explain": "Mạch hở thì dòng điện không chạy qua.",
+      "wrong_explain": {
+        "1": "Khi công tắc đóng.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Chiều dòng điện quy ước là chiều đi từ:",
+      "choices": [
+        "Cực âm tới cực dương",
+        "Đèn đến công tắc",
+        "Tuỳ ý",
+        "Cực dương, qua dụng cụ điện, tới cực âm của nguồn"
+      ],
+      "answer": 3,
+      "explain": "Quy ước chiều dòng điện.",
+      "wrong_explain": {
+        "0": "Ngược quy ước.",
+        "1": "Không đúng.",
+        "2": "Có quy ước."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cầu chì bảo vệ mạch bằng cách:",
+      "choices": [
+        "Làm tăng dòng điện",
+        "Phát sáng báo hiệu",
+        "Dây chì nóng chảy khi dòng điện quá lớn, ngắt mạch",
+        "Làm lạnh mạch"
+      ],
+      "answer": 2,
+      "explain": "Dây chì nóng chảy ở nhiệt độ thấp.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "1": "Không phải.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Thiết bị nào tự đóng ngắt mạch điện trong mạch điều khiển tự động?",
+      "choices": [
+        "Cầu chì",
+        "Rơle",
+        "Pin",
+        "Bóng đèn"
+      ],
+      "answer": 1,
+      "explain": "Rơle dùng trong các mạch điều khiển tự động.",
+      "wrong_explain": {
+        "0": "Chỉ ngắt khi quá dòng.",
+        "2": "Là nguồn điện.",
+        "3": "Là thiết bị tiêu thụ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Chuông điện hoạt động dựa vào:",
+      "choices": [
+        "Nam châm điện",
+        "Sự nở vì nhiệt",
+        "Lực đẩy Archimedes",
+        "Ánh sáng"
+      ],
+      "answer": 0,
+      "explain": "Chuông điện ứng dụng nam châm điện.",
+      "wrong_explain": {
+        "1": "Không phải.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Dòng điện 0,5 A bằng bao nhiêu mA?",
+      "expr": "0.5*1000",
+      "answer": "500",
+      "explain": "0,5 × 1 000 = 500 mA."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một mạch có 3 đèn giống nhau và 1 pin. Có tất cả bao nhiêu thiết bị (đèn + pin)?",
+      "expr": "3+1",
+      "answer": "4",
+      "explain": "3 + 1 = 4."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Công tắc trong mạch điện thường được mắc:",
+      "choices": [
+        "Song song với nguồn",
+        "Nối tiếp với thiết bị cần điều khiển",
+        "Chỉ nối vào vỏ đèn",
+        "Ngoài mạch"
+      ],
+      "answer": 1,
+      "explain": "Công tắc đóng ngắt dòng điện qua thiết bị.",
+      "wrong_explain": {
+        "0": "Gây đoản mạch.",
+        "2": "Không.",
+        "3": "Không điều khiển được."
+      },
+      "concept": true
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cầu chì chịu được tối đa 10 A. Mạch gồm 3 thiết bị, mỗi thiết bị dùng 3 A. Dòng điện tối đa còn có thể tăng thêm bao nhiêu A trước khi cầu chì đứt?",
+      "expr": "10-3*3",
+      "answer": "1",
+      "explain": "Tổng dòng điện 9 A nên còn 10 − 9 = 1 A."
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Đèn không sáng dù đã đóng công tắc, nguyên nhân có thể là:",
+      "choices": [
+        "Đèn quá sáng",
+        "Có quá nhiều dòng điện",
+        "Pin còn nhiều điện nhất",
+        "Đứt dây hoặc pin hết hoặc bóng hỏng"
+      ],
+      "answer": 3,
+      "explain": "Cần kiểm tra các bộ phận của mạch.",
+      "wrong_explain": {
+        "0": "Vô lí.",
+        "1": "Đèn sẽ sáng mạnh.",
+        "2": "Không phải nguyên nhân."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Dòng điện 1 200 mA bằng bao nhiêu A?",
+      "expr": "12/10",
+      "answer": "1.2",
+      "explain": "1 200 mA = 1,2 A."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Vì sao không nên thay dây chì cầu chì bằng dây đồng thô?",
+      "choices": [
+        "Dây đồng dẫn điện kém hơn",
+        "Dây đồng không nóng chảy khi quá dòng nên không bảo vệ được mạch",
+        "Dây đồng nhẹ hơn",
+        "Dây đồng không cách điện"
+      ],
+      "answer": 1,
+      "explain": "Cầu chì phải nóng chảy ở nhiệt độ thấp.",
+      "wrong_explain": {
+        "0": "Dẫn điện rất tốt.",
+        "2": "Không phải lí do.",
+        "3": "Không phải lí do."
+      },
+      "concept": true
+    }
+  ]
+}

@@ -1,0 +1,289 @@
+{
+  "id": "bai-10",
+  "grade": 8,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 8",
+  "chapter": "Chương II. Một số hợp chất thông dụng",
+  "lesson": "Bài 10. Oxide",
+  "section": "",
+  "bookPage": 44,
+  "requirements": [
+    "Nêu được khái niệm oxide và phân loại oxide theo khả năng phản ứng với acid/base.",
+    "Viết được phương trình tạo oxide từ kim loại/phi kim với oxygen.",
+    "Nêu và giải thích được tính chất hoá học của oxide base, oxide acid."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Oxide là hợp chất của hai nguyên tố, trong đó có một nguyên tố là oxygen. Theo thành phần có oxide kim loại (CaO, Fe₂O₃,...) và oxide phi kim (CO₂, SO₂, P₂O₅,...)."
+    },
+    {
+      "type": "text",
+      "content": "Oxide tạo từ phản ứng của kim loại hoặc phi kim với oxygen: 2Mg + O₂ → 2MgO; S + O₂ → SO₂; 4P + 5O₂ → 2P₂O₅."
+    },
+    {
+      "type": "text",
+      "content": "Tên oxide: nguyên tố có một hoá trị: tên nguyên tố + oxide (Na₂O: sodium oxide); nhiều hoá trị: ghi hoá trị trong ngoặc (Fe₂O₃: iron(III) oxide); oxide phi kim có thể dùng tiền tố (CO₂: carbon dioxide)."
+    },
+    {
+      "type": "text",
+      "content": "Theo tính chất hoá học, oxide chia thành bốn loại: oxide base, oxide acid, oxide lưỡng tính, oxide trung tính."
+    },
+    {
+      "type": "text",
+      "content": "Oxide acid (CO₂, SO₂, SO₃, P₂O₅) tác dụng với dung dịch base tạo muối và nước: CO₂ + Ca(OH)₂ → CaCO₃ + H₂O (nước vôi trong vẩn đục). Oxide base (CuO, CaO, Fe₂O₃, Na₂O) tác dụng với dung dịch acid tạo muối và nước: CuO + H₂SO₄ → CuSO₄ + H₂O."
+    },
+    {
+      "type": "text",
+      "content": "Oxide lưỡng tính (Al₂O₃, ZnO) tác dụng được với cả acid và base. Oxide trung tính (CO, NO) không tác dụng với acid và base. Vôi sống CaO dùng khử chua đất vì tác dụng với nước tạo Ca(OH)₂ (base)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính phần trăm khối lượng của iron trong Fe₂O₃ (Fe = 56, O = 16).",
+      "steps": [
+        "M(Fe₂O₃) = 2·56 + 3·16 = 160 g/mol.",
+        "%Fe = 112 / 160 × 100 = 70%."
+      ],
+      "expr": "112*100/160",
+      "answer": "70"
+    },
+    {
+      "problem": "Cho 5,6 g CaO (M = 56) tác dụng với nước: CaO + H₂O → Ca(OH)₂. Tính khối lượng Ca(OH)₂ (M = 74) tạo thành.",
+      "steps": [
+        "n(CaO) = 5,6 / 56 = 0,1 mol → n(Ca(OH)₂) = 0,1 mol.",
+        "m = 0,1 × 74 = 7,4 g."
+      ],
+      "expr": "5.6*74/56",
+      "answer": "7.4"
+    },
+    {
+      "problem": "Dạng phân loại oxide: trong các oxide CO₂, CaO, Al₂O₃, CO, SO₂, có bao nhiêu oxide acid?",
+      "steps": [
+        "Cách làm: oxide acid là oxide của phi kim tác dụng với base: CO₂, SO₂.",
+        "Có 2 oxide acid."
+      ],
+      "expr": "1+1",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Oxide là hợp chất gồm:",
+      "choices": [
+        "Ba nguyên tố trở lên",
+        "Hai nguyên tố, trong đó có oxygen",
+        "Hai nguyên tố, không có oxygen",
+        "Một nguyên tố"
+      ],
+      "answer": 1,
+      "explain": "Ví dụ CO₂, CaO, Fe₂O₃.",
+      "wrong_explain": {
+        "0": "Oxide chỉ có hai nguyên tố.",
+        "2": "Phải có oxygen.",
+        "3": "Là đơn chất."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Chất nào sau đây là oxide acid?",
+      "choices": [
+        "SO₂",
+        "CaO",
+        "CO",
+        "Al₂O₃"
+      ],
+      "answer": 0,
+      "explain": "SO₂ tác dụng với dung dịch base tạo muối và nước.",
+      "wrong_explain": {
+        "1": "Oxide base.",
+        "2": "Oxide trung tính.",
+        "3": "Oxide lưỡng tính."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Chất nào sau đây là oxide base?",
+      "choices": [
+        "CO₂",
+        "NO",
+        "ZnO",
+        "CuO"
+      ],
+      "answer": 3,
+      "explain": "CuO + H₂SO₄ → CuSO₄ + H₂O.",
+      "wrong_explain": {
+        "0": "Oxide acid.",
+        "1": "Oxide trung tính.",
+        "2": "Oxide lưỡng tính."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi sục khí CO₂ vào nước vôi trong, hiện tượng quan sát được là:",
+      "choices": [
+        "Có khí bay ra",
+        "Dung dịch chuyển xanh",
+        "Nước vôi vẩn đục",
+        "Không hiện tượng"
+      ],
+      "answer": 2,
+      "explain": "CO₂ + Ca(OH)₂ → CaCO₃↓ + H₂O.",
+      "wrong_explain": {
+        "0": "Không đúng.",
+        "1": "Không đúng.",
+        "3": "Tạo CaCO₃ không tan."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Oxide nào không tác dụng với acid và cũng không tác dụng với base?",
+      "choices": [
+        "SO₃",
+        "CO",
+        "CaO",
+        "Al₂O₃"
+      ],
+      "answer": 1,
+      "explain": "CO là oxide trung tính.",
+      "wrong_explain": {
+        "0": "Oxide acid, tác dụng với base.",
+        "2": "Oxide base, tác dụng với acid.",
+        "3": "Lưỡng tính, tác dụng với cả hai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao dùng vôi bột (CaO) rắc ruộng để khử chua đất?",
+      "choices": [
+        "CaO tạo Ca(OH)₂ là base trung hoà acid trong đất",
+        "CaO làm đất cứng hơn",
+        "CaO biến thành phân đạm",
+        "CaO làm đất chua hơn"
+      ],
+      "answer": 0,
+      "explain": "CaO + H₂O → Ca(OH)₂; base trung hoà acid.",
+      "wrong_explain": {
+        "1": "Không phải mục đích.",
+        "2": "Không đúng.",
+        "3": "Ngược lại."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Phần trăm khối lượng oxygen trong CuO (Cu = 64, O = 16) là:",
+      "choices": [
+        "80",
+        "16",
+        "25",
+        "20"
+      ],
+      "answer": 3,
+      "explain": "M(CuO) = 80; %O = 16/80 × 100 = 20%.",
+      "wrong_explain": {
+        "0": "Đó là %Cu.",
+        "1": "Sai: đây là khối lượng O.",
+        "2": "Sai."
+      },
+      "expr": "16*100/80"
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính khối lượng mol của SO₂ (S = 32, O = 16) (g/mol).",
+      "expr": "32+2*16",
+      "answer": "64",
+      "explain": "M = 32 + 2 × 16 = 64 g/mol."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính khối lượng CO₂ (g) tạo ra khi đốt cháy hoàn toàn 6 g carbon (C + O₂ → CO₂; C = 12).",
+      "expr": "6*44/12",
+      "answer": "22",
+      "explain": "n(C) = 0,5 mol = n(CO₂); m = 0,5 × 44 = 22 g."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 8 g CuO (M = 80) tác dụng vừa đủ với H₂SO₄. Tính khối lượng CuSO₄ (M = 160) tạo thành (g).",
+      "expr": "8*160/80",
+      "answer": "16",
+      "explain": "n(CuO) = 0,1 mol = n(CuSO₄); m = 16 g."
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Chất nào có thể làm đục nước vôi trong?",
+      "choices": [
+        "Chỉ CaO",
+        "CO",
+        "N₂",
+        "CO₂ và SO₂ (oxide acid)"
+      ],
+      "answer": 3,
+      "explain": "Oxide acid tác dụng với Ca(OH)₂ tạo kết tủa muối không tan.",
+      "wrong_explain": {
+        "0": "CaO tạo dung dịch trong.",
+        "1": "Oxide trung tính không phản ứng.",
+        "2": "Không phản ứng."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Đốt cháy hoàn toàn 6,2 g phosphorus (P = 31) trong oxygen dư theo 4P + 5O₂ → 2P₂O₅. Tính khối lượng P₂O₅ (M = 142) tạo thành (g).",
+      "expr": "62*142/620",
+      "answer": "14.2",
+      "explain": "n(P) = 0,2 mol → n(P₂O₅) = 0,1 mol; m = 14,2 g."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Hố vôi tôi lâu ngày nổi váng trắng vì:",
+      "choices": [
+        "Ca(OH)₂ bay hơi",
+        "Ca(OH)₂ tác dụng với CO₂ trong không khí tạo CaCO₃",
+        "Ca(OH)₂ phân huỷ thành CaO",
+        "Nước biến thành váng"
+      ],
+      "answer": 1,
+      "explain": "Ca(OH)₂ + CO₂ → CaCO₃ + H₂O.",
+      "wrong_explain": {
+        "0": "Không đúng.",
+        "2": "Cần nhiệt độ cao.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    }
+  ]
+}

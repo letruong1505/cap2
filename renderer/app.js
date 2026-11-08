@@ -385,9 +385,9 @@ const GRADES = [
   { grade: 9, available: false },
 ];
 // Mục lục của từng môn, nạp một lần khi mở app.
-const SUBJECT_LABELS = { toan7: 'Toán', ly7: 'Vật lí', hoa7: 'Hoá học', sinh7: 'Sinh học', lichsu7: 'Lịch sử', diali7: 'Địa lí', toan8: 'Toán' };
+const SUBJECT_LABELS = { toan7: 'Toán', ly7: 'Vật lí', hoa7: 'Hoá học', sinh7: 'Sinh học', lichsu7: 'Lịch sử', diali7: 'Địa lí', toan8: 'Toán', ly8: 'Vật lí', hoa8: 'Hoá học', sinh8: 'Sinh học' };
 // Môn học đã có nội dung của từng lớp.
-const GRADE_SUBJECTS = { 7: ['toan7', 'ly7', 'hoa7', 'sinh7', 'lichsu7', 'diali7'], 8: ['toan8'] };
+const GRADE_SUBJECTS = { 7: ['toan7', 'ly7', 'hoa7', 'sinh7', 'lichsu7', 'diali7'], 8: ['toan8', 'ly8', 'hoa8', 'sinh8'] };
 const manifestCache = {};
 
 function licenseDaysLeft(expiresOn) {

@@ -1,0 +1,284 @@
+{
+  "id": "bai-4",
+  "grade": 8,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 8",
+  "chapter": "Chương I. Phản ứng hoá học",
+  "lesson": "Bài 4. Dung dịch và nồng độ",
+  "section": "",
+  "bookPage": 20,
+  "requirements": [
+    "Nêu được dung dịch là hỗn hợp lỏng đồng nhất của các chất đã tan trong nhau.",
+    "Nêu được định nghĩa và tính được độ tan, nồng độ phần trăm, nồng độ mol.",
+    "Pha được dung dịch theo một nồng độ cho trước."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dung dịch là hỗn hợp đồng nhất của chất tan và dung môi (thường là nước). Ở nhiệt độ, áp suất nhất định, dung dịch còn hoà tan thêm được chất tan là dung dịch chưa bão hoà; không hoà tan thêm được là dung dịch bão hoà."
+    },
+    {
+      "type": "text",
+      "content": "Độ tan của một chất trong nước là số gam chất đó hoà tan trong 100 g nước để tạo dung dịch bão hoà ở nhiệt độ, áp suất xác định."
+    },
+    {
+      "type": "formula",
+      "content": "S = (m chất tan / m nước) · 100   (g/100 g nước)"
+    },
+    {
+      "type": "text",
+      "content": "Độ tan của đa số chất rắn tăng khi nhiệt độ tăng; độ tan của chất khí thường giảm khi nhiệt độ tăng hoặc áp suất giảm."
+    },
+    {
+      "type": "text",
+      "content": "Nồng độ phần trăm C% cho biết số gam chất tan có trong 100 g dung dịch. Khối lượng dung dịch = khối lượng chất tan + khối lượng dung môi."
+    },
+    {
+      "type": "formula",
+      "content": "C% = (m chất tan / m dung dịch) · 100%"
+    },
+    {
+      "type": "text",
+      "content": "Nồng độ mol C_M cho biết số mol chất tan có trong 1 lít dung dịch."
+    },
+    {
+      "type": "formula",
+      "content": "C_M = n / V   (mol/L)"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính khối lượng H₂O₂ có trong 20 g dung dịch nước oxy già 3%.",
+      "steps": [
+        "m chất tan = C% × m dung dịch / 100.",
+        "m = 3 × 20 / 100 = 0,6 g."
+      ],
+      "expr": "3*20/100",
+      "answer": "0.6"
+    },
+    {
+      "problem": "Hoà tan 5,85 g NaCl vào nước được 500 mL dung dịch. Tính nồng độ mol (M(NaCl) = 58,5 g/mol).",
+      "steps": [
+        "n = 5,85 / 58,5 = 0,1 mol; V = 0,5 L.",
+        "C_M = 0,1 / 0,5 = 0,2 mol/L."
+      ],
+      "expr": "5.85*20/585",
+      "answer": "0.2"
+    },
+    {
+      "problem": "Dạng độ tan: ở 20 °C, hoà tan hết 36 g muối ăn trong 100 g nước thì được dung dịch bão hoà. Tính độ tan (g/100 g nước).",
+      "steps": [
+        "Cách làm: S = m chất tan / m nước × 100.",
+        "S = 36 / 100 × 100 = 36 g/100 g nước."
+      ],
+      "expr": "36/100*100",
+      "answer": "36"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Dung dịch là gì?",
+      "choices": [
+        "Hỗn hợp không đồng nhất, có thể phân lớp",
+        "Hỗn hợp đồng nhất của chất tan và dung môi",
+        "Chỉ là chất lỏng nguyên chất",
+        "Chất rắn không tan trong nước"
+      ],
+      "answer": 1,
+      "explain": "Dung dịch gồm chất tan hoà đều trong dung môi.",
+      "wrong_explain": {
+        "0": "Đó là huyền phù hoặc nhũ tương.",
+        "2": "Dung dịch là hỗn hợp.",
+        "3": "Dung dịch cần chất tan đã tan."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Dung dịch bão hoà là dung dịch:",
+      "choices": [
+        "Không thể hoà tan thêm chất tan đó ở nhiệt độ đã cho",
+        "Hoà tan thêm được chất tan",
+        "Chứa rất ít chất tan",
+        "Luôn có màu"
+      ],
+      "answer": 0,
+      "explain": "Dung dịch bão hoà đã hoà tan tối đa chất tan ở điều kiện đó.",
+      "wrong_explain": {
+        "1": "Đó là dung dịch chưa bão hoà.",
+        "2": "Bão hoà là đã hoà tan tối đa.",
+        "3": "Màu không liên quan."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Độ tan của một chất trong nước là số gam chất đó tan trong:",
+      "choices": [
+        "100 g dung dịch",
+        "1 lít dung dịch",
+        "1 g nước",
+        "100 g nước để tạo dung dịch bão hoà"
+      ],
+      "answer": 3,
+      "explain": "Độ tan tính theo g/100 g nước ở nhiệt độ xác định.",
+      "wrong_explain": {
+        "0": "Đó là cách tính nồng độ phần trăm.",
+        "1": "Đó là cách tính nồng độ mol.",
+        "2": "Độ tan tính trên 100 g nước."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nồng độ mol của dung dịch cho biết:",
+      "choices": [
+        "Số gam chất tan trong 100 g dung dịch",
+        "Số gam chất tan trong 100 g nước",
+        "Số mol chất tan trong 1 lít dung dịch",
+        "Số lít dung môi"
+      ],
+      "answer": 2,
+      "explain": "C_M = n / V (mol/L).",
+      "wrong_explain": {
+        "0": "Đó là nồng độ phần trăm.",
+        "1": "Đó là độ tan.",
+        "3": "Nồng độ mol không đo thế."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Độ tan của chất khí trong nước thay đổi thế nào khi nhiệt độ tăng?",
+      "choices": [
+        "Luôn tăng",
+        "Thường giảm",
+        "Không đổi",
+        "Tăng gấp đôi"
+      ],
+      "answer": 1,
+      "explain": "Vì thế cá ngoi lên mặt nước khi trời nóng vì oxygen tan ít hơn.",
+      "wrong_explain": {
+        "0": "Với chất khí thường giảm.",
+        "2": "Có thay đổi.",
+        "3": "Không có quy luật đó."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hoà tan 10 g đường vào 40 g nước. Nồng độ phần trăm của dung dịch là (%):",
+      "choices": [
+        "20",
+        "25",
+        "10",
+        "80"
+      ],
+      "answer": 0,
+      "explain": "m dung dịch = 50 g; C% = 10/50 × 100 = 20%.",
+      "wrong_explain": {
+        "1": "Tính theo khối lượng nước (10/40).",
+        "2": "Chưa chia cho khối lượng dung dịch.",
+        "3": "Nhầm thành 40/50."
+      },
+      "expr": "10*100/50"
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính nồng độ mol (mol/L) của dung dịch chứa 0,3 mol chất tan trong 600 mL dung dịch.",
+      "expr": "3/6",
+      "answer": "0.5",
+      "explain": "Đổi 600 mL = 0,6 L; C_M = 0,3 / 0,6 = 0,5 mol/L."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ở 18 °C, hoà tan hết 53 g Na₂CO₃ trong 250 g nước thì được dung dịch bão hoà. Tính độ tan (g/100 g nước).",
+      "expr": "53/250*100",
+      "answer": "21.2",
+      "explain": "S = 53/250 × 100 = 21,2 g/100 g nước."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cần bao nhiêu gam NaCl để pha 100 g dung dịch NaCl 0,9%?",
+      "expr": "0.9*100/100",
+      "answer": "0.9",
+      "explain": "m = 0,9 × 100 / 100 = 0,9 g."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trộn 2 lít dung dịch urea 0,02 M với 3 lít dung dịch urea 0,1 M. Tính nồng độ mol (mol/L) của dung dịch thu được.",
+      "expr": "(2*0.02+3*0.1)/5",
+      "answer": "0.068",
+      "explain": "n = 0,04 + 0,3 = 0,34 mol; V = 5 L; C_M = 0,34/5 = 0,068 mol/L."
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hoà tan 20 g chất X vào 80 g nước. Tính nồng độ phần trăm (%) của dung dịch.",
+      "expr": "20*100/100",
+      "answer": "20",
+      "explain": "m dung dịch = 100 g; C% = 20/100 × 100 = 20%."
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Muốn pha dung dịch nước muối có nồng độ chính xác, vì sao phải dùng muối ăn khan?",
+      "choices": [
+        "Vì muối khan tan nhanh hơn",
+        "Vì muối khan rẻ hơn",
+        "Muối khan không chứa nước nên khối lượng cân đúng là khối lượng chất tan",
+        "Vì muối khan đổi được màu nước"
+      ],
+      "answer": 2,
+      "explain": "Muối ẩm chứa nước nên khối lượng cân chứa cả nước, sai nồng độ.",
+      "wrong_explain": {
+        "0": "Không phải mục đích chính.",
+        "1": "Không liên quan đến độ chính xác.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tính khối lượng nước (g) cần thêm vào 50 g dung dịch NaCl 10% để thu được dung dịch NaCl 5%.",
+      "expr": "50*10/5-50",
+      "answer": "50",
+      "explain": "Khối lượng NaCl = 5 g. Dung dịch 5% có khối lượng 5/0,05 = 100 g. Cần thêm 100 − 50 = 50 g nước."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cần lấy bao nhiêu gam dung dịch HCl 36% để chứa 7,2 g HCl?",
+      "expr": "7.2*100/36",
+      "answer": "20",
+      "explain": "m dung dịch = 7,2 × 100 / 36 = 20 g."
+    }
+  ]
+}

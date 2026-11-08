@@ -1,0 +1,276 @@
+{
+  "id": "bai-42",
+  "grade": 8,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 8",
+  "chapter": "Chương VIII. Sinh vật và môi trường",
+  "lesson": "Bài 42. Quần thể sinh vật",
+  "section": "",
+  "bookPage": 174,
+  "requirements": [
+    "Nêu khái niệm quần thể sinh vật, các đặc trưng cơ bản và biện pháp bảo vệ quần thể."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Quần thể sinh vật là tập hợp các cá thể cùng loài, sinh sống trong một khoảng không gian xác định, ở một thời điểm nhất định và có khả năng sinh sản tạo thế hệ mới."
+    },
+    {
+      "type": "text",
+      "content": "Đặc trưng cơ bản: kích thước quần thể (số lượng cá thể), mật độ cá thể (số cá thể trên một đơn vị diện tích hay thể tích), tỉ lệ giới tính (tỉ lệ đực : cái), thành phần nhóm tuổi (trước sinh sản, sinh sản, sau sinh sản) và kiểu phân bố."
+    },
+    {
+      "type": "text",
+      "content": "Mật độ = số lượng cá thể : diện tích (hoặc thể tích). Ba kiểu phân bố cá thể: đều (điều kiện sống phân bố đều, cạnh tranh gay gắt), theo nhóm (điều kiện sống không đều, có tập tính sống bầy đàn), ngẫu nhiên (điều kiện tương đối đồng đều, không cạnh tranh gay gắt)."
+    },
+    {
+      "type": "text",
+      "content": "Biện pháp bảo vệ quần thể: bảo vệ môi trường sống, thành lập vườn quốc gia và khu bảo tồn, kiểm soát dịch bệnh, khai thác tài nguyên hợp lí; quần thể có nguy cơ tuyệt chủng thì đưa đến nơi sống mới như vườn thú, trang trại bảo tồn."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một ao có 600 con cá trong diện tích 300 m². Mật độ là bao nhiêu con/m²?",
+      "steps": [
+        "600 : 300 = 2."
+      ],
+      "expr": "600/300",
+      "answer": "2"
+    },
+    {
+      "problem": "Quần thể có 40 con đực và 60 con cái. Tổng số cá thể là bao nhiêu?",
+      "steps": [
+        "40 + 60 = 100."
+      ],
+      "expr": "40+60",
+      "answer": "100"
+    },
+    {
+      "problem": "Dạng tỉ lệ giới tính: quần thể có 80 con đực và 160 con cái. Số con cái gấp mấy lần số con đực?",
+      "steps": [
+        "160 : 80 = 2."
+      ],
+      "expr": "160/80",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Quần thể sinh vật là tập hợp cá thể:",
+      "choices": [
+        "Khác loài",
+        "Cùng loài, cùng sống trong một khoảng không gian, có khả năng sinh sản",
+        "Chỉ cùng kích thước",
+        "Chỉ cùng màu"
+      ],
+      "answer": 1,
+      "explain": "Cùng loài.",
+      "wrong_explain": {
+        "0": "Là quần xã.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Mật độ cá thể là:",
+      "choices": [
+        "Số cá thể trên một đơn vị diện tích hay thể tích",
+        "Tổng số cá thể",
+        "Tỉ lệ đực cái",
+        "Tuổi trung bình"
+      ],
+      "answer": 0,
+      "explain": "Ví dụ con/m².",
+      "wrong_explain": {
+        "1": "Là kích thước.",
+        "2": "Là tỉ lệ giới tính.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đặc trưng nào là đặc trưng cơ bản của quần thể?",
+      "choices": [
+        "Số loài",
+        "Loài ưu thế",
+        "Hệ sinh thái",
+        "Tỉ lệ giới tính"
+      ],
+      "answer": 3,
+      "explain": "Cùng với nhóm tuổi, mật độ.",
+      "wrong_explain": {
+        "0": "Quần xã.",
+        "1": "Quần xã.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Có mấy nhóm tuổi trong quần thể?",
+      "choices": [
+        "2",
+        "4",
+        "3",
+        "5"
+      ],
+      "answer": 2,
+      "explain": "Trước sinh sản, sinh sản, sau sinh sản.",
+      "wrong_explain": {
+        "0": "Thiếu.",
+        "1": "Thừa.",
+        "3": "Thừa."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cá thể sống thành bầy đàn thuộc kiểu phân bố:",
+      "choices": [
+        "Đều",
+        "Theo nhóm",
+        "Ngẫu nhiên",
+        "Thẳng hàng"
+      ],
+      "answer": 1,
+      "explain": "Do tập tính sống bầy đàn.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Biện pháp nào bảo vệ quần thể?",
+      "choices": [
+        "Thành lập vườn quốc gia, khu bảo tồn",
+        "Săn bắt tuỳ ý",
+        "Phá rừng",
+        "Xả thải"
+      ],
+      "answer": 0,
+      "explain": "Bảo vệ môi trường sống.",
+      "wrong_explain": {
+        "1": "Hại.",
+        "2": "Hại.",
+        "3": "Hại."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Quần thể 500 cá thể trong 250 ha. Mật độ (cá thể/ha) là:",
+      "expr": "500/250",
+      "answer": "2",
+      "explain": "2."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Quần thể có 45 con đực và 55 con cái. Tổng số cá thể:",
+      "expr": "45+55",
+      "answer": "100",
+      "explain": "100."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao bảo vệ môi trường sống là bảo vệ quần thể?",
+      "choices": [
+        "Quần thể không cần môi trường",
+        "Quần thể phụ thuộc vào điều kiện sống ở môi trường đó",
+        "Môi trường không liên quan",
+        "Chỉ cần thức ăn"
+      ],
+      "answer": 1,
+      "explain": "Mất nơi sống thì quần thể suy giảm.",
+      "wrong_explain": {
+        "0": "Cần.",
+        "2": "Có liên quan.",
+        "3": "Chưa đủ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Tháp tuổi có nhóm trước sinh sản lớn cho thấy quần thể:",
+      "choices": [
+        "Đang phát triển",
+        "Đang suy thoái",
+        "Đã tuyệt chủng",
+        "Ổn định tuyệt đối"
+      ],
+      "answer": 0,
+      "explain": "Nhiều cá thể trẻ.",
+      "wrong_explain": {
+        "1": "Ngược lại.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ao có 3 000 con cá trong 1 500 m². Mật độ (con/m²):",
+      "expr": "3000/1500",
+      "answer": "2",
+      "explain": "2."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Quần thể sắp tuyệt chủng ở tự nhiên nên:",
+      "choices": [
+        "Săn bắn thêm",
+        "Bỏ mặc",
+        "Đưa đến vườn thú, trang trại bảo tồn và bảo vệ nơi sống",
+        "Phá nơi sống"
+      ],
+      "answer": 2,
+      "explain": "Biện pháp bảo tồn.",
+      "wrong_explain": {
+        "0": "Hại.",
+        "1": "Không.",
+        "3": "Hại."
+      },
+      "concept": true
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Đàn có 30 con đực, tỉ lệ đực : cái là 1 : 2. Có bao nhiêu con cái?",
+      "expr": "30*2",
+      "answer": "60",
+      "explain": "60."
+    }
+  ]
+}

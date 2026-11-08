@@ -1,0 +1,276 @@
+{
+  "id": "bai-35",
+  "grade": 8,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 8",
+  "chapter": "Chương VII. Sinh học cơ thể người",
+  "lesson": "Bài 35. Hệ bài tiết ở người",
+  "section": "",
+  "bookPage": 146,
+  "requirements": [
+    "Nêu chức năng hệ bài tiết; các cơ quan của hệ bài tiết nước tiểu; bệnh hệ bài tiết; ghép thận, chạy thận."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hệ bài tiết có chức năng lọc và thải ra ngoài các chất cặn bã do tế bào tạo ra và các chất có thể gây độc. Các cơ quan chủ yếu: phổi (thải CO₂), da (thải mồ hôi), thận (lọc máu thải nước tiểu); thận thải tới 90% sản phẩm bài tiết."
+    },
+    {
+      "type": "text",
+      "content": "Hệ bài tiết nước tiểu gồm hai quả thận, ống dẫn nước tiểu, bóng đái, ống đái. Mỗi thận có khoảng 1 triệu đơn vị chức năng; mỗi đơn vị gồm ống thận và cầu thận (búi mao mạch, màng lọc có lỗ nhỏ 30–40 Å) cùng nang cầu thận."
+    },
+    {
+      "type": "text",
+      "content": "Bệnh: sỏi thận (muối calcium oxalate, phosphate, urate tích tụ); viêm cầu thận (liên cầu khuẩn); suy thận (do tiểu đường, huyết áp cao, mất máu,...). Phòng: uống đủ nước, ăn hợp lí, không nhịn tiểu, giữ vệ sinh."
+    },
+    {
+      "type": "text",
+      "content": "Ghép thận: ghép quả thận hoạt động bình thường vào người bệnh. Chạy thận nhân tạo: dùng máy lọc máu thải chất độc khi thận mất chức năng. Ghép thận đầu tiên ở Việt Nam: 4/6/1992 tại Bệnh viện Quân y 103."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Thận thải 90% sản phẩm bài tiết. Nếu cơ thể có 200 đơn vị sản phẩm, thận thải bao nhiêu đơn vị?",
+      "steps": [
+        "200 × 90/100 = 180."
+      ],
+      "expr": "200*90/100",
+      "answer": "180"
+    },
+    {
+      "problem": "Mỗi thận có khoảng 1 triệu đơn vị chức năng; hai thận có bao nhiêu triệu đơn vị?",
+      "steps": [
+        "1 × 2 = 2 triệu."
+      ],
+      "expr": "1*2",
+      "answer": "2"
+    },
+    {
+      "problem": "Dạng tính thể tích nước tiểu: mỗi ngày 1,5 lít, một tuần (7 ngày) bao nhiêu lít?",
+      "steps": [
+        "1,5 × 7 = 10,5 lít."
+      ],
+      "expr": "15*7/10",
+      "answer": "10.5"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Cơ quan quan trọng nhất của hệ bài tiết nước tiểu là:",
+      "choices": [
+        "Bóng đái",
+        "Thận",
+        "Ống đái",
+        "Da"
+      ],
+      "answer": 1,
+      "explain": "Thận lọc máu.",
+      "wrong_explain": {
+        "0": "Chứa nước tiểu.",
+        "2": "Dẫn nước tiểu ra.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn vị chức năng của thận gồm:",
+      "choices": [
+        "Cầu thận và ống thận",
+        "Phổi và tim",
+        "Gan và mật",
+        "Dạ dày và ruột"
+      ],
+      "answer": 0,
+      "explain": "Cầu thận là búi mao mạch.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Bệnh sỏi thận do:",
+      "choices": [
+        "Virus",
+        "Thiếu iodine",
+        "Thiếu sắt",
+        "Muối khoáng tích tụ ở nồng độ cao"
+      ],
+      "answer": 3,
+      "explain": "Cần uống đủ nước.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Bướu cổ.",
+        "2": "Thiếu máu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Viêm cầu thận do:",
+      "choices": [
+        "Virus HIV",
+        "Nấm",
+        "Liên cầu khuẩn",
+        "Tia UV"
+      ],
+      "answer": 2,
+      "explain": "Tránh nhiễm khuẩn mũi, họng.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Chạy thận nhân tạo dùng khi:",
+      "choices": [
+        "Thận quá khoẻ",
+        "Thận mất chức năng lọc",
+        "Mắt bị cận",
+        "Xương gãy"
+      ],
+      "answer": 1,
+      "explain": "Máy lọc máu.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Thói quen nào tốt cho hệ bài tiết?",
+      "choices": [
+        "Uống đủ nước",
+        "Nhịn tiểu",
+        "Ăn quá mặn",
+        "Ăn đồ ôi thiu"
+      ],
+      "answer": 0,
+      "explain": "Giúp thải chất thải.",
+      "wrong_explain": {
+        "1": "Tăng nguy cơ sỏi.",
+        "2": "Quá tải.",
+        "3": "Độc hại."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số thận của một người bình thường là:",
+      "expr": "1+1",
+      "answer": "2",
+      "explain": "2."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mỗi ngày uống 2 lít nước, một tuần uống bao nhiêu lít?",
+      "expr": "2*7",
+      "answer": "14",
+      "explain": "14."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao nhịn tiểu lâu không tốt?",
+      "choices": [
+        "Làm thận to ra",
+        "Tăng nguy cơ lắng sỏi và viêm nhiễm",
+        "Giảm lượng nước tiểu",
+        "Không ảnh hưởng"
+      ],
+      "answer": 1,
+      "explain": "Nước tiểu ứ đọng.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không đúng.",
+        "3": "Có ảnh hưởng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Ghép thận cần hiến thận từ:",
+      "choices": [
+        "Người cho có thận hoạt động bình thường",
+        "Bất kì ai",
+        "Động vật",
+        "Máy"
+      ],
+      "answer": 0,
+      "explain": "Cần phù hợp nhóm máu, mô.",
+      "wrong_explain": {
+        "1": "Cần phù hợp.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cầu thận có lỗ lọc đường kính 30–40 Å; hiệu của giá trị lớn và nhỏ là:",
+      "expr": "40-30",
+      "answer": "10",
+      "explain": "10 Å."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Người ăn mặn nhiều, ít uống nước dễ gặp nguy cơ gì với hệ bài tiết?",
+      "choices": [
+        "Tăng chiều cao",
+        "Tăng thị lực",
+        "Quá tải, nguy cơ sỏi",
+        "Tăng cơ"
+      ],
+      "answer": 2,
+      "explain": "Cần uống đủ nước, ăn hợp lí.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Một người uống 2 000 mL nước, thải 1 200 mL nước tiểu. Lượng nước còn lại (mL) là bao nhiêu?",
+      "expr": "2000-1200",
+      "answer": "800",
+      "explain": "800 mL."
+    }
+  ]
+}

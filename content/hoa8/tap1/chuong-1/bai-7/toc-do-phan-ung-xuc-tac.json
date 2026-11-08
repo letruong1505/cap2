@@ -1,0 +1,276 @@
+{
+  "id": "bai-7",
+  "grade": 8,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 8",
+  "chapter": "Chương I. Phản ứng hoá học",
+  "lesson": "Bài 7. Tốc độ phản ứng và chất xúc tác",
+  "section": "",
+  "bookPage": 31,
+  "requirements": [
+    "Nêu được khái niệm tốc độ phản ứng (mức độ nhanh hay chậm của phản ứng hoá học).",
+    "Trình bày được một số yếu tố ảnh hưởng đến tốc độ phản ứng và nêu được ứng dụng thực tế.",
+    "Nêu được khái niệm chất xúc tác."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tốc độ phản ứng là đại lượng đặc trưng cho sự nhanh, chậm của phản ứng hoá học. Phản ứng đốt cháy xảy ra rất nhanh, phản ứng sắt bị gỉ xảy ra chậm hơn nhiều."
+    },
+    {
+      "type": "text",
+      "content": "Để so sánh tốc độ phản ứng có thể đo sự thay đổi thể tích chất khí, khối lượng chất rắn hoặc nồng độ chất tan trong một khoảng thời gian; với phản ứng tạo khí hoặc kết tủa, dựa vào tốc độ thoát khí hoặc tốc độ xuất hiện kết tủa."
+    },
+    {
+      "type": "text",
+      "content": "Các yếu tố ảnh hưởng đến tốc độ phản ứng: nồng độ (nồng độ chất phản ứng càng lớn, phản ứng càng nhanh); nhiệt độ (nhiệt độ cao, phản ứng nhanh); diện tích bề mặt tiếp xúc (chất rắn nghiền nhỏ phản ứng nhanh hơn); chất xúc tác."
+    },
+    {
+      "type": "text",
+      "content": "Chất xúc tác là chất làm tăng tốc độ phản ứng nhưng sau phản ứng vẫn giữ nguyên khối lượng và tính chất hoá học. Ví dụ MnO₂ xúc tác phân huỷ H₂O₂; enzyme amylase giúp chuyển hoá tinh bột thành đường."
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: đập nhỏ đá vôi để nung nhanh hơn; bảo quản thực phẩm trong tủ lạnh để làm chậm phản ứng ôi thiu; dùng chất xúc tác trong sản xuất hoá chất và trong ống xả ô tô để giảm khí độc."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một phản ứng sinh 30 mL khí trong 60 giây. Tính tốc độ thoát khí trung bình (mL/giây).",
+      "steps": [
+        "Tốc độ trung bình = thể tích khí / thời gian.",
+        "30 / 60 = 0,5 mL/giây."
+      ],
+      "expr": "30/60",
+      "answer": "0.5"
+    },
+    {
+      "problem": "Cùng một phản ứng, ở nhiệt độ cao mất 20 s, ở nhiệt độ thấp mất 80 s để tạo cùng lượng khí. Phản ứng ở nhiệt độ cao nhanh gấp bao nhiêu lần?",
+      "steps": [
+        "Cùng lượng khí, thời gian ngắn hơn thì nhanh hơn.",
+        "80 / 20 = 4 lần."
+      ],
+      "expr": "80/20",
+      "answer": "4"
+    },
+    {
+      "problem": "Dạng chọn điều kiện làm phản ứng nhanh hơn: cho cùng khối lượng đá vôi vào HCl, dạng bột và dạng viên. Dạng nào phản ứng nhanh hơn, vì sao? Nếu bột phản ứng hết sau 40 s còn viên sau 160 s thì tỉ lệ thời gian viên : bột bằng bao nhiêu?",
+      "steps": [
+        "Cách làm: diện tích tiếp xúc lớn thì phản ứng nhanh; đá vôi bột nhanh hơn.",
+        "Tỉ lệ thời gian = 160 / 40 = 4."
+      ],
+      "expr": "160/40",
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tốc độ phản ứng là đại lượng đặc trưng cho:",
+      "choices": [
+        "Lượng sản phẩm thu được",
+        "Sự nhanh hay chậm của phản ứng hoá học",
+        "Màu sắc chất tạo thành",
+        "Khối lượng chất phản ứng"
+      ],
+      "answer": 1,
+      "explain": "Tốc độ phản ứng cho biết phản ứng nhanh hay chậm.",
+      "wrong_explain": {
+        "0": "Đó là hiệu suất.",
+        "2": "Không liên quan.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phản ứng nào xảy ra nhanh nhất?",
+      "choices": [
+        "Đốt cháy cồn",
+        "Sắt bị gỉ",
+        "Tinh bột lên men rượu",
+        "Rỉ sét của cửa sắt"
+      ],
+      "answer": 0,
+      "explain": "Phản ứng cháy xảy ra gần như tức thì.",
+      "wrong_explain": {
+        "1": "Chậm, cần nhiều ngày.",
+        "2": "Chậm.",
+        "3": "Chậm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Yếu tố nào KHÔNG làm tăng tốc độ phản ứng?",
+      "choices": [
+        "Tăng nhiệt độ",
+        "Tăng nồng độ chất phản ứng",
+        "Nghiền nhỏ chất rắn",
+        "Giảm nhiệt độ"
+      ],
+      "answer": 3,
+      "explain": "Giảm nhiệt độ làm phản ứng chậm đi.",
+      "wrong_explain": {
+        "0": "Làm tăng tốc độ.",
+        "1": "Làm tăng tốc độ.",
+        "2": "Tăng diện tích tiếp xúc nên tăng tốc độ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Chất xúc tác sau phản ứng có đặc điểm gì?",
+      "choices": [
+        "Bị tiêu hao hết",
+        "Biến thành sản phẩm",
+        "Giữ nguyên khối lượng và tính chất hoá học",
+        "Tăng khối lượng"
+      ],
+      "answer": 2,
+      "explain": "Chất xúc tác chỉ làm thay đổi tốc độ phản ứng.",
+      "wrong_explain": {
+        "0": "Chất xúc tác không bị tiêu hao.",
+        "1": "Không phải sản phẩm.",
+        "3": "Khối lượng không đổi."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Bảo quản thực phẩm trong tủ lạnh nhằm tác động vào yếu tố nào?",
+      "choices": [
+        "Nồng độ",
+        "Nhiệt độ",
+        "Diện tích bề mặt",
+        "Chất xúc tác"
+      ],
+      "answer": 1,
+      "explain": "Nhiệt độ thấp làm chậm phản ứng làm hỏng thức ăn.",
+      "wrong_explain": {
+        "0": "Không phải.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dùng quạt thổi vào bếp than hồng làm than cháy mạnh hơn vì:",
+      "choices": [
+        "Tăng nồng độ oxygen tiếp xúc với than",
+        "Giảm nhiệt độ",
+        "Làm than nặng hơn",
+        "Giảm diện tích tiếp xúc"
+      ],
+      "answer": 0,
+      "explain": "Nhiều oxygen hơn thì phản ứng cháy nhanh hơn.",
+      "wrong_explain": {
+        "1": "Than nóng lên.",
+        "2": "Không liên quan.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một phản ứng thu được 45 mL khí trong 90 giây. Tính tốc độ thoát khí trung bình (mL/giây).",
+      "expr": "45/90",
+      "answer": "0.5",
+      "explain": "45 / 90 = 0,5 mL/giây."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phản ứng A mất 15 phút, phản ứng B (cùng lượng sản phẩm) mất 5 phút. Phản ứng B nhanh gấp bao nhiêu lần phản ứng A?",
+      "expr": "15/5",
+      "answer": "3",
+      "explain": "15 / 5 = 3 lần."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Than cháy trong bình khí oxygen nhanh hơn trong không khí vì:",
+      "choices": [
+        "Nhiệt độ thấp hơn",
+        "Nồng độ oxygen cao hơn",
+        "Có chất xúc tác",
+        "Than có diện tích nhỏ hơn"
+      ],
+      "answer": 1,
+      "explain": "Không khí chỉ chứa khoảng 21% oxygen.",
+      "wrong_explain": {
+        "0": "Không phải.",
+        "2": "Không có.",
+        "3": "Không liên quan."
+      },
+      "concept": true
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Trong sản xuất sulfuric acid, V₂O₅ được dùng với vai trò:",
+      "choices": [
+        "Chất xúc tác, khối lượng không đổi sau phản ứng",
+        "Chất phản ứng, bị tiêu hao",
+        "Sản phẩm chính",
+        "Dung môi"
+      ],
+      "answer": 0,
+      "explain": "V₂O₅ làm phản ứng tạo SO₃ xảy ra nhanh hơn.",
+      "wrong_explain": {
+        "1": "V₂O₅ không bị tiêu hao.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Ở nhiệt độ ban đầu một phản ứng mất 128 s. Cứ tăng 10 °C thì thời gian giảm một nửa. Nếu tăng 30 °C thì mất bao nhiêu giây?",
+      "expr": "128/8",
+      "answer": "16",
+      "explain": "Mỗi lần tăng 10 °C giảm một nửa: 128 → 64 → 32 → 16 s."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Vì sao khi nung đá vôi trong lò, người ta thường đập nhỏ đá?",
+      "choices": [
+        "Giảm nhiệt độ cần dùng",
+        "Tăng diện tích tiếp xúc để phản ứng nhanh và đều hơn",
+        "Giảm lượng vôi sống",
+        "Để đá nặng hơn"
+      ],
+      "answer": 1,
+      "explain": "Đá nhỏ thì diện tích bề mặt lớn, nhiệt truyền vào nhanh.",
+      "wrong_explain": {
+        "0": "Không phải.",
+        "2": "Không phải.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    }
+  ]
+}

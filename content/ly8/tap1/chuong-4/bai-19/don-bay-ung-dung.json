@@ -1,0 +1,300 @@
+{
+  "id": "bai-19",
+  "grade": 8,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 8",
+  "chapter": "Chương IV. Tác dụng làm quay của lực",
+  "lesson": "Bài 19. Đòn bẩy và ứng dụng",
+  "section": "",
+  "bookPage": 79,
+  "requirements": [
+    "Minh hoạ được đòn bẩy làm thay đổi hướng tác dụng của lực.",
+    "Lấy được ví dụ về các loại đòn bẩy trong thực tiễn.",
+    "Giải quyết được một số vấn đề thực tiễn bằng kiến thức về đòn bẩy."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đòn bẩy là vật rắn quay quanh một điểm tựa O khi chịu tác dụng lực. Khoảng cách từ giá của lực tác dụng đến điểm tựa gọi là cánh tay đòn."
+    },
+    {
+      "type": "text",
+      "content": "Đòn bẩy có thể làm thay đổi hướng tác dụng của lực (ví dụ ấn xuống một đầu để nâng vật ở đầu kia lên)."
+    },
+    {
+      "type": "text",
+      "content": "Đòn bẩy loại 1: điểm tựa O nằm trong khoảng giữa điểm đặt của hai lực (bập bênh, kéo cắt, kìm, cân đòn). Nếu lực tác dụng F₁ có cánh tay đòn lớn hơn cánh tay đòn của lực F₂ thì cho lợi về lực."
+    },
+    {
+      "type": "text",
+      "content": "Đòn bẩy loại 2: điểm tựa O nằm ngoài khoảng giữa điểm đặt của hai lực. Nếu lực tác dụng nằm xa điểm tựa hơn thì cho lợi về lực (xe cút kít, kẹp hạt, bật nắp chai); nếu lực tác dụng nằm gần điểm tựa hơn thì không cho lợi về lực (cần câu cá, chèo thuyền, nhíp)."
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: máy bơm nước bằng tay, cơ thể người (đầu là đòn bẩy loại 1 với điểm tựa là đốt sống trên cùng; cánh tay là đòn bẩy loại 2 với khớp khuỷu), xe đạp (cần đạp, phanh,...)."
+    },
+    {
+      "type": "text",
+      "content": "Chọn đòn bẩy phù hợp: muốn lợi về lực thì tác dụng lực ở xa điểm tựa; muốn tăng tầm với hoặc thao tác khéo (cần câu, nhíp) thì chấp nhận không lợi về lực."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một đòn bẩy có cánh tay đòn của lực tác dụng dài 1,2 m, cánh tay đòn của lực cản dài 0,3 m. Cánh tay đòn của lực tác dụng gấp mấy lần?",
+      "steps": [
+        "Lợi về lực khi cánh tay đòn của lực tác dụng lớn hơn.",
+        "1,2 / 0,3 = 4 lần."
+      ],
+      "expr": "12/3",
+      "answer": "4"
+    },
+    {
+      "problem": "Trong 6 dụng cụ: kéo cắt, kìm, xe cút kít, cần câu cá, bập bênh, nhíp. Có bao nhiêu dụng cụ có điểm tựa nằm trong khoảng giữa hai lực (loại 1: kéo, kìm, bập bênh)?",
+      "steps": [
+        "Đòn bẩy loại 1: kéo cắt, kìm, bập bênh.",
+        "Có 3 dụng cụ."
+      ],
+      "expr": "1+1+1",
+      "answer": "3"
+    },
+    {
+      "problem": "Dạng lựa chọn: muốn nâng tảng đá nặng bằng đòn bẩy, người ta đặt điểm tựa gần tảng đá hay gần tay? Nếu cánh tay đòn phía tay là 1,5 m, phía đá là 0,5 m thì gấp mấy lần?",
+      "steps": [
+        "Điểm tựa gần tảng đá để cánh tay đòn phía tay dài, lợi về lực.",
+        "1,5 / 0,5 = 3 lần."
+      ],
+      "expr": "15/5",
+      "answer": "3"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khoảng cách từ giá của lực đến điểm tựa gọi là:",
+      "choices": [
+        "Trục quay",
+        "Cánh tay đòn",
+        "Moment",
+        "Áp lực"
+      ],
+      "answer": 1,
+      "explain": "Cánh tay đòn là khoảng cách đến điểm tựa.",
+      "wrong_explain": {
+        "0": "Là đường thẳng cố định.",
+        "2": "Là đại lượng đặc trưng tác dụng quay.",
+        "3": "Là lực ép."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đòn bẩy cho lợi về lực khi:",
+      "choices": [
+        "Cánh tay đòn của lực tác dụng lớn hơn cánh tay đòn của lực cần thắng",
+        "Cánh tay đòn của lực tác dụng nhỏ hơn",
+        "Hai cánh tay đòn không có",
+        "Điểm tựa trùng điểm đặt lực"
+      ],
+      "answer": 0,
+      "explain": "Lực tác dụng xa điểm tựa hơn thì lợi về lực.",
+      "wrong_explain": {
+        "1": "Thiệt về lực.",
+        "2": "Không có đòn bẩy.",
+        "3": "Không có tác dụng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Dụng cụ nào là đòn bẩy loại 1 (điểm tựa ở giữa)?",
+      "choices": [
+        "Xe cút kít",
+        "Cần câu cá",
+        "Bật nắp chai",
+        "Kéo cắt"
+      ],
+      "answer": 3,
+      "explain": "Kéo có trục ở giữa hai lực.",
+      "wrong_explain": {
+        "0": "Điểm tựa ở đầu (loại 2).",
+        "1": "Loại 2 không lợi về lực.",
+        "2": "Điểm tựa ở đầu (loại 2)."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dụng cụ nào là đòn bẩy không cho lợi về lực?",
+      "choices": [
+        "Xe cút kít",
+        "Bật nắp chai",
+        "Cần câu cá",
+        "Kìm"
+      ],
+      "answer": 2,
+      "explain": "Cần câu cá tiện thao tác, tầm với xa.",
+      "wrong_explain": {
+        "0": "Lợi về lực.",
+        "1": "Lợi về lực.",
+        "3": "Lợi về lực."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Đòn bẩy có thể:",
+      "choices": [
+        "Làm tăng khối lượng vật",
+        "Làm thay đổi hướng tác dụng của lực",
+        "Tạo ra năng lượng",
+        "Làm vật nhẹ đi mãi mãi"
+      ],
+      "answer": 1,
+      "explain": "Ví dụ ấn xuống để nâng vật lên.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trong cơ thể người, cánh tay giữ vật nặng là:",
+      "choices": [
+        "Đòn bẩy loại 2 với trục quay là khớp khuỷu",
+        "Đòn bẩy loại 1",
+        "Không phải đòn bẩy",
+        "Ròng rọc"
+      ],
+      "answer": 0,
+      "explain": "Theo sách giáo khoa KHTN 8.",
+      "wrong_explain": {
+        "1": "Theo sách, đầu mới là loại 1.",
+        "2": "Là đòn bẩy.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cánh tay đòn của lực tác dụng 0,9 m, của lực cản 0,3 m. Cánh tay đòn lực tác dụng gấp bao nhiêu lần?",
+      "expr": "9/3",
+      "answer": "3",
+      "explain": "0,9 / 0,3 = 3 lần."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nếu cánh tay đòn lực tác dụng gấp 5 lần lực cản thì tỉ số hai cánh tay đòn là:",
+      "choices": [
+        "1/5",
+        "10",
+        "5",
+        "25"
+      ],
+      "answer": 2,
+      "explain": "Tỉ số 5 : 1.",
+      "wrong_explain": {
+        "0": "Ngược.",
+        "1": "Sai.",
+        "3": "Sai."
+      },
+      "expr": "5/1"
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Muốn nâng một vật nặng bằng đòn bẩy cho đỡ tốn sức, ta nên:",
+      "choices": [
+        "Đặt điểm tựa gần tay",
+        "Đặt điểm tựa gần vật và tác dụng lực ở xa điểm tựa",
+        "Đặt điểm tựa trùng vị trí vật",
+        "Dùng đòn bẩy rất ngắn"
+      ],
+      "answer": 1,
+      "explain": "Cánh tay đòn lực tác dụng dài hơn thì lợi về lực.",
+      "wrong_explain": {
+        "0": "Thiệt về lực.",
+        "2": "Không nâng được.",
+        "3": "Khó lợi về lực."
+      },
+      "concept": true
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một đòn bẩy dài 2 m, điểm tựa cách đầu đặt vật 0,4 m. Cánh tay đòn phía tay bằng bao nhiêu m?",
+      "expr": "2-0.4",
+      "answer": "1.6",
+      "explain": "Phần còn lại: 2 − 0,4 = 1,6 m."
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Tư thế ngồi đúng để giảm lực cơ cổ gáy là giữ đầu thẳng vì:",
+      "choices": [
+        "Đầu nhẹ đi",
+        "Cơ cổ không hoạt động",
+        "Đốt sống biến mất",
+        "Trọng lượng đầu chia đều hai bên trục quay (đốt sống), đầu cân bằng"
+      ],
+      "answer": 3,
+      "explain": "Đầu là đòn bẩy loại 1.",
+      "wrong_explain": {
+        "0": "Không đổi.",
+        "1": "Có hoạt động ít hơn.",
+        "2": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Một đòn bẩy có hai cánh tay đòn lần lượt 90 cm và 30 cm. Cánh tay đòn dài gấp bao nhiêu lần cánh tay đòn ngắn?",
+      "expr": "90/30",
+      "answer": "3",
+      "explain": "90 / 30 = 3 lần; tác dụng lực ở đầu dài thì được lợi về lực."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Vì sao dùng kìm cắt dây thép dễ hơn dùng tay?",
+      "choices": [
+        "Kìm làm dây yếu đi",
+        "Kìm là đòn bẩy cho lợi về lực",
+        "Kìm tạo ra lực",
+        "Kìm không có điểm tựa"
+      ],
+      "answer": 1,
+      "explain": "Tay cầm dài hơn lưỡi cắt.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không tạo ra mà làm lực lớn hơn.",
+        "3": "Có điểm tựa."
+      },
+      "concept": true
+    }
+  ]
+}

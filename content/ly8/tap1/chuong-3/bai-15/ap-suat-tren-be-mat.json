@@ -1,0 +1,290 @@
+{
+  "id": "bai-15",
+  "grade": 8,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 8",
+  "chapter": "Chương III. Khối lượng riêng và áp suất",
+  "lesson": "Bài 15. Áp suất trên một bề mặt",
+  "section": "",
+  "bookPage": 64,
+  "requirements": [
+    "Khẳng định được: áp suất sinh ra khi có áp lực tác dụng lên một diện tích bề mặt; áp suất phụ thuộc áp lực và diện tích bị ép.",
+    "Liệt kê được một số đơn vị đo áp suất thông dụng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Áp lực là lực ép có phương vuông góc với mặt bị ép. Ví dụ: người đứng trên sàn, xe đỗ trên mặt đường tác dụng áp lực lên mặt sàn, mặt đường."
+    },
+    {
+      "type": "text",
+      "content": "Thí nghiệm khối sắt đặt lên bột mịn: áp lực càng lớn, diện tích bị ép càng nhỏ thì độ lún càng lớn."
+    },
+    {
+      "type": "text",
+      "content": "Áp suất được tính bằng độ lớn áp lực trên một đơn vị diện tích bị ép."
+    },
+    {
+      "type": "formula",
+      "content": "p = F / S   (p: áp suất; F: áp lực; S: diện tích bị ép)"
+    },
+    {
+      "type": "text",
+      "content": "Đơn vị áp suất: pascal (Pa), 1 Pa = 1 N/m². Ngoài ra dùng atm (1 atm = 1,013·10⁵ Pa) và mmHg (1 mmHg = 133,3 Pa)."
+    },
+    {
+      "type": "text",
+      "content": "Làm tăng áp suất: tăng áp lực hoặc giảm diện tích bị ép (mũi đinh nhọn, lưỡi dao sắc). Làm giảm áp suất: giảm áp lực hoặc tăng diện tích bị ép (xe tăng dùng bản xích rộng, chân cột móng nhà rộng)."
+    },
+    {
+      "type": "text",
+      "content": "Áp suất chất khí trong bình kín tăng khi tăng lượng khí trong bình có thể tích cố định, hoặc khi giảm thể tích bình chứa lượng khí nhất định."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một xe tăng nặng 350 000 N, diện tích tiếp xúc của các bản xích với mặt đường là 1,5 m². Tính áp suất xe tăng tác dụng lên mặt đường (Pa).",
+      "steps": [
+        "Áp lực bằng trọng lượng: F = 350 000 N.",
+        "p = F / S = 350 000 / 1,5 ≈ 233 333 Pa."
+      ],
+      "expr": "3500000/15",
+      "answer": "700000/3"
+    },
+    {
+      "problem": "Một ô tô nặng 25 000 N, diện tích các bánh tiếp xúc là 250 cm² = 0,025 m². Tính áp suất lên mặt đường (Pa).",
+      "steps": [
+        "p = F / S = 25 000 / 0,025.",
+        "p = 1 000 000 Pa."
+      ],
+      "expr": "25000*1000/25",
+      "answer": "1000000"
+    },
+    {
+      "problem": "Dạng tìm diện tích: áp lực 600 N tạo áp suất 30 000 Pa. Tính diện tích bị ép (m²).",
+      "steps": [
+        "Cách làm: từ p = F / S suy ra S = F / p.",
+        "S = 600 / 30 000 = 0,02 m²."
+      ],
+      "expr": "600/30000",
+      "answer": "0.02"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Áp lực là:",
+      "choices": [
+        "Lực ma sát giữa hai mặt tiếp xúc",
+        "Lực ép có phương vuông góc với mặt bị ép",
+        "Lực kéo theo phương ngang",
+        "Trọng lượng của mọi vật"
+      ],
+      "answer": 1,
+      "explain": "Áp lực vuông góc với mặt bị ép.",
+      "wrong_explain": {
+        "0": "Không phải.",
+        "2": "Không phải.",
+        "3": "Không phải lúc nào cũng vuông góc."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Công thức tính áp suất là:",
+      "choices": [
+        "p = F / S",
+        "p = F · S",
+        "p = S / F",
+        "p = F + S"
+      ],
+      "answer": 0,
+      "explain": "Áp suất bằng áp lực chia diện tích bị ép.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn vị áp suất trong hệ SI là:",
+      "choices": [
+        "Niutơn (N)",
+        "Mét vuông (m²)",
+        "Kilôgam (kg)",
+        "Pascal (Pa)"
+      ],
+      "answer": 3,
+      "explain": "1 Pa = 1 N/m².",
+      "wrong_explain": {
+        "0": "Đơn vị lực.",
+        "1": "Đơn vị diện tích.",
+        "2": "Đơn vị khối lượng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Muốn giảm áp suất lên mặt bị ép ta có thể:",
+      "choices": [
+        "Tăng áp lực",
+        "Giảm diện tích bị ép",
+        "Tăng diện tích bị ép",
+        "Dùng mũi nhọn"
+      ],
+      "answer": 2,
+      "explain": "p giảm khi S tăng.",
+      "wrong_explain": {
+        "0": "Làm tăng áp suất.",
+        "1": "Làm tăng áp suất.",
+        "3": "Làm tăng áp suất."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Lưỡi dao sắc cắt dễ hơn dao cùn vì:",
+      "choices": [
+        "Diện tích bị ép lớn",
+        "Diện tích bị ép nhỏ nên áp suất lớn",
+        "Áp lực nhỏ hơn",
+        "Dao sắc nặng hơn"
+      ],
+      "answer": 1,
+      "explain": "Cùng áp lực, diện tích nhỏ cho áp suất lớn.",
+      "wrong_explain": {
+        "0": "Dao sắc có diện tích nhỏ.",
+        "2": "Không phải.",
+        "3": "Không liên quan."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao xe tăng dùng bản xích rộng?",
+      "choices": [
+        "Giảm áp suất lên mặt đất để không bị lún",
+        "Tăng áp suất",
+        "Giảm trọng lượng xe",
+        "Tăng ma sát với không khí"
+      ],
+      "answer": 0,
+      "explain": "S lớn nên p nhỏ.",
+      "wrong_explain": {
+        "1": "Ngược lại.",
+        "2": "Không đổi trọng lượng.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Áp lực 500 N tác dụng lên diện tích 0,25 m². Áp suất (Pa) là:",
+      "choices": [
+        "125",
+        "2",
+        "1 000",
+        "2 000"
+      ],
+      "answer": 3,
+      "explain": "p = 500 / 0,25 = 2 000 Pa.",
+      "wrong_explain": {
+        "0": "Nhầm 500 × 0,25.",
+        "1": "Chia ngược.",
+        "2": "Sai."
+      },
+      "expr": "500*4"
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một người nặng 600 N đứng trên hai bàn chân có tổng diện tích 0,03 m². Tính áp suất lên mặt sàn (Pa).",
+      "expr": "600*100/3",
+      "answer": "20000",
+      "explain": "p = 600 / 0,03 = 20 000 Pa."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Áp lực 12 N tác dụng lên diện tích 3 cm² = 0,0003 m². Tính áp suất (Pa).",
+      "expr": "12*10000/3",
+      "answer": "40000",
+      "explain": "p = 12 / 0,0003 = 40 000 Pa."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cùng áp lực 90 N, diện tích bị ép lần lượt 0,03 m² và 0,09 m². Tính hiệu hai áp suất (Pa).",
+      "expr": "90*100/3-90*100/9",
+      "answer": "2000",
+      "explain": "p₁ = 3 000 Pa; p₂ = 1 000 Pa; hiệu 2 000 Pa."
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một tủ nặng 1 200 N có 4 chân, mỗi chân diện tích 25 cm² = 0,0025 m². Tính áp suất tủ lên sàn (Pa).",
+      "expr": "1200*10000/100",
+      "answer": "120000",
+      "explain": "Tổng S = 0,01 m²; p = 1 200 / 0,01 = 120 000 Pa."
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vì sao ống hút có đầu nhọn dễ cắm vào hộp sữa?",
+      "choices": [
+        "Ống hút nặng hơn",
+        "Ống hút làm bằng kim loại",
+        "Diện tích tiếp xúc nhỏ nên áp suất lớn",
+        "Hộp sữa mềm hơn"
+      ],
+      "answer": 2,
+      "explain": "Đầu nhọn tăng áp suất.",
+      "wrong_explain": {
+        "0": "Không phải.",
+        "1": "Không phải.",
+        "3": "Không liên quan."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Một người nặng 450 N đứng trên một chân có diện tích 150 cm² = 0,015 m². Tính áp suất lên mặt sàn (Pa).",
+      "expr": "450*1000/15",
+      "answer": "30000",
+      "explain": "p = 450 / 0,015 = 30 000 Pa."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Muốn có áp suất 2 000 Pa với áp lực 50 N thì diện tích bị ép phải bằng bao nhiêu m²?",
+      "expr": "50/2000",
+      "answer": "0.025",
+      "explain": "S = 50 / 2 000 = 0,025 m²."
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "id": "bai-6",
+  "grade": 8,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 8",
+  "chapter": "Chương I. Phản ứng hoá học",
+  "lesson": "Bài 6. Tính theo phương trình hoá học",
+  "section": "",
+  "bookPage": 28,
+  "requirements": [
+    "Tính được lượng chất trong phương trình hoá học theo số mol, khối lượng hoặc thể tích ở điều kiện 25 °C, 1 bar.",
+    "Nêu được khái niệm hiệu suất phản ứng và tính được hiệu suất."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tỉ lệ số mol các chất trong phản ứng bằng tỉ lệ hệ số trong phương trình hoá học. Ví dụ Fe + 2HCl → FeCl₂ + H₂: 1 mol Fe phản ứng tạo 1 mol H₂."
+    },
+    {
+      "type": "text",
+      "content": "Các bước tính theo phương trình hoá học: (1) viết và cân bằng phương trình; (2) đổi dữ kiện (khối lượng, thể tích khí) ra số mol; (3) dựa vào tỉ lệ hệ số tìm số mol chất cần tính; (4) đổi số mol ra khối lượng (m = n·M) hoặc thể tích khí (V = 24,79·n)."
+    },
+    {
+      "type": "text",
+      "content": "Ví dụ: Zn + 2HCl → ZnCl₂ + H₂. Từ 0,65 g Zn: n(Zn) = 0,65 / 65 = 0,01 mol, tạo 0,01 mol ZnCl₂, khối lượng ZnCl₂ = 0,01 × 136 = 1,36 g."
+    },
+    {
+      "type": "text",
+      "content": "Hiệu suất phản ứng cho biết mức độ phản ứng xảy ra: H = (lượng sản phẩm thực tế / lượng sản phẩm theo lí thuyết) · 100%. Có thể tính theo khối lượng hoặc số mol sản phẩm. Khi H < 100%, lượng sản phẩm thực tế nhỏ hơn lượng tính theo phương trình."
+    },
+    {
+      "type": "formula",
+      "content": "H = (m thực tế / m lí thuyết) · 100%"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cần bao nhiêu mol Fe để thu được 1,5 mol H₂ theo phản ứng Fe + 2HCl → FeCl₂ + H₂?",
+      "steps": [
+        "Tỉ lệ n(Fe) : n(H₂) = 1 : 1.",
+        "n(Fe) = 1,5 mol."
+      ],
+      "expr": "1.5*1",
+      "answer": "1.5"
+    },
+    {
+      "problem": "Cho 8 g Fe₂O₃ (M = 160) phản ứng với H₂ dư: Fe₂O₃ + 3H₂ → 2Fe + 3H₂O. Tính khối lượng Fe thu được theo lí thuyết (Fe = 56).",
+      "steps": [
+        "n(Fe₂O₃) = 8 / 160 = 0,05 mol → n(Fe) = 0,1 mol.",
+        "m(Fe) = 0,1 × 56 = 5,6 g."
+      ],
+      "expr": "8*2*56/160",
+      "answer": "5.6"
+    },
+    {
+      "problem": "Dạng tính hiệu suất: thực tế thu được 4,2 g Fe từ lượng lí thuyết 5,6 g. Tính hiệu suất phản ứng (%).",
+      "steps": [
+        "Cách làm: H = m thực tế / m lí thuyết × 100%.",
+        "H = 4,2 / 5,6 × 100 = 75%."
+      ],
+      "expr": "42*100/56",
+      "answer": "75"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tỉ lệ số mol các chất trong phản ứng hoá học bằng:",
+      "choices": [
+        "Tỉ lệ khối lượng mol",
+        "Tỉ lệ hệ số các chất trong phương trình",
+        "Tỉ lệ chỉ số trong công thức",
+        "Luôn bằng 1 : 1"
+      ],
+      "answer": 1,
+      "explain": "Hệ số trong phương trình hoá học cho tỉ lệ số mol.",
+      "wrong_explain": {
+        "0": "Không phải.",
+        "2": "Không phải hệ số.",
+        "3": "Chỉ đúng khi hệ số bằng nhau."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Bước đầu tiên khi giải bài tính theo phương trình hoá học là:",
+      "choices": [
+        "Viết và cân bằng phương trình hoá học",
+        "Tính khối lượng sản phẩm",
+        "Tính hiệu suất",
+        "Đổi ra mililit"
+      ],
+      "answer": 0,
+      "explain": "Phải có phương trình cân bằng thì mới có tỉ lệ mol đúng.",
+      "wrong_explain": {
+        "1": "Phải sau khi có phương trình.",
+        "2": "Chỉ khi đề yêu cầu.",
+        "3": "Không phải bước đầu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi hiệu suất phản ứng nhỏ hơn 100%, lượng sản phẩm thực tế so với lí thuyết:",
+      "choices": [
+        "Lớn hơn",
+        "Bằng nhau",
+        "Gấp đôi",
+        "Nhỏ hơn"
+      ],
+      "answer": 3,
+      "explain": "H = thực tế / lí thuyết × 100% < 100%.",
+      "wrong_explain": {
+        "0": "Không thể thu nhiều hơn lí thuyết.",
+        "1": "Chỉ khi H = 100%.",
+        "2": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Công thức tính thể tích khí ở 25 °C, 1 bar là:",
+      "choices": [
+        "V = 22,4 · n",
+        "V = n / 24,79",
+        "V = 24,79 · n",
+        "V = n + 24,79"
+      ],
+      "answer": 2,
+      "explain": "Theo sách KHTN 8, thể tích mol khí ở 25 °C, 1 bar là 24,79 L.",
+      "wrong_explain": {
+        "0": "Đó là ở điều kiện tiêu chuẩn (0 °C, 1 atm).",
+        "1": "Ngược lại.",
+        "3": "Là tích, không phải tổng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Số mol Zn trong 6,5 g Zn (M = 65 g/mol) là:",
+      "choices": [
+        "10",
+        "0,1",
+        "0,01",
+        "1"
+      ],
+      "answer": 1,
+      "explain": "n = 6,5 / 65 = 0,1 mol.",
+      "wrong_explain": {
+        "0": "Chia ngược 65/6,5.",
+        "2": "Sai bậc thập phân.",
+        "3": "Chưa chia 6,5/65."
+      },
+      "expr": "65/650"
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Theo Fe + 2HCl → FeCl₂ + H₂, có 0,2 mol Fe phản ứng hết. Tính thể tích H₂ (lít) ở 25 °C, 1 bar.",
+      "expr": "24.79*0.2",
+      "answer": "4.958",
+      "explain": "n(H₂) = 0,2 mol; V = 24,79 × 0,2 = 4,958 L."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho 0,65 g Zn tác dụng hết với HCl. Tính khối lượng ZnCl₂ (M = 136) thu được (g).",
+      "expr": "0.65*136/65",
+      "answer": "1.36",
+      "explain": "n(Zn) = 0,01 mol = n(ZnCl₂); m = 0,01 × 136 = 1,36 g."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Theo Mg + H₂SO₄ → MgSO₄ + H₂, có 0,02 mol MgSO₄ tạo thành. Tính thể tích H₂ (lít) ở 25 °C, 1 bar.",
+      "expr": "24.79*0.02",
+      "answer": "0.4958",
+      "explain": "n(H₂) = 0,02 mol; V = 24,79 × 0,02 = 0,4958 L."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lí thuyết thu 5,6 g Fe, thực tế thu 4,2 g. Tính hiệu suất phản ứng (%).",
+      "expr": "42*100/56",
+      "answer": "75",
+      "explain": "H = 4,2 / 5,6 × 100 = 75%."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nhiệt phân 0,2 mol KClO₃: 2KClO₃ → 2KCl + 3O₂. Tính số mol O₂ theo lí thuyết.",
+      "expr": "0.2*3/2",
+      "answer": "0.3",
+      "explain": "n(O₂) = 0,2 × 3 / 2 = 0,3 mol."
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nung 100 g CaCO₃ (M = 100) theo CaCO₃ → CaO + CO₂, hiệu suất 80%. Tính khối lượng CaO (M = 56) thực tế thu được (g).",
+      "expr": "100*56*80/10000",
+      "answer": "44.8",
+      "explain": "n(CaCO₃) = 1 mol → CaO lí thuyết 56 g; thực tế = 56 × 80% = 44,8 g."
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Muốn thu thực tế 10 g sản phẩm khi hiệu suất 50%, lượng sản phẩm tính theo lí thuyết là:",
+      "choices": [
+        "5 g",
+        "10 g",
+        "20 g",
+        "50 g"
+      ],
+      "answer": 2,
+      "explain": "Lí thuyết = thực tế / H = 10 / 0,5 = 20 g.",
+      "wrong_explain": {
+        "0": "Lấy nhầm nhân với hiệu suất.",
+        "1": "Chỉ đúng khi H = 100%.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Đốt cháy 3,6 g Mg (M = 24) trong oxygen: 2Mg + O₂ → 2MgO. Tính thể tích O₂ (lít) ở 25 °C, 1 bar cần dùng.",
+      "expr": "24.79*36/480",
+      "answer": "1.85925",
+      "explain": "n(Mg) = 0,15 mol; n(O₂) = 0,075 mol; V = 24,79 × 0,075 = 1,85925 L."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Để thu 22,4 g Fe với hiệu suất 80%, cần lí thuyết bao nhiêu gam Fe (g)?",
+      "expr": "22.4*100/80",
+      "answer": "28",
+      "explain": "Lí thuyết = thực tế / H = 22,4 / 0,8 = 28 g."
+    }
+  ]
+}

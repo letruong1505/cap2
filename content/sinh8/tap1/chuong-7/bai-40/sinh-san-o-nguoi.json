@@ -1,0 +1,300 @@
+{
+  "id": "bai-40",
+  "grade": 8,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 8",
+  "chapter": "Chương VII. Sinh học cơ thể người",
+  "lesson": "Bài 40. Sinh sản ở người",
+  "section": "",
+  "bookPage": 165,
+  "requirements": [
+    "Nêu cấu tạo và chức năng hệ sinh dục; thụ tinh, thụ thai; kinh nguyệt; biện pháp tránh thai; bệnh lây qua đường sinh dục; bảo vệ sức khoẻ sinh sản."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hệ sinh dục nam: hai tinh hoàn (sản sinh tinh trùng, nằm trong bìu), mào tinh, ống dẫn tinh, túi tinh, ống đái, dương vật. Hệ sinh dục nữ: hai buồng trứng (sản sinh trứng), ống dẫn trứng, tử cung (nuôi dưỡng thai), âm đạo."
+    },
+    {
+      "type": "text",
+      "content": "Thụ tinh: tinh trùng kết hợp với trứng tạo hợp tử, xảy ra ở ống dẫn trứng; chỉ một tinh trùng kết hợp với một trứng. Thụ thai: phôi di chuyển đến tử cung và làm tổ ở niêm mạc tử cung; nhau thai trao đổi chất giữa mẹ và thai."
+    },
+    {
+      "type": "text",
+      "content": "Kinh nguyệt: nếu trứng không được thụ tinh, thể vàng tiêu giảm, hormone progesterone giảm làm lớp niêm mạc tử cung bong ra, gây chảy máu. Chu kì kinh nguyệt diễn ra theo chu kì ở phụ nữ không mang thai."
+    },
+    {
+      "type": "text",
+      "content": "Nguyên tắc tránh thai: ngăn trứng chín và rụng, ngăn tinh trùng gặp trứng, hoặc chống trứng đã thụ tinh làm tổ. Biện pháp: bao cao su, thuốc tránh thai,... Mang thai ngoài ý muốn ở vị thành niên có nhiều nguy cơ (sinh non, sẩy thai, băng huyết, nhiễm khuẩn)."
+    },
+    {
+      "type": "text",
+      "content": "Bệnh lây qua đường sinh dục: giang mai (xoắn khuẩn Treponema pallidum), lậu (song cầu khuẩn Neisseria gonorrhoeae), AIDS (do HIV, tấn công tế bào lympho T; lây qua quan hệ tình dục không an toàn, đường máu, từ mẹ sang con). Bảo vệ sức khoẻ sinh sản vị thành niên: lối sống lành mạnh, vệ sinh cơ quan sinh dục, hiểu biết đúng."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Nhiệt độ thích hợp sản sinh tinh trùng khoảng 35 °C, thân nhiệt 37 °C. Thấp hơn thân nhiệt bao nhiêu °C?",
+      "steps": [
+        "37 − 35 = 2."
+      ],
+      "expr": "37-35",
+      "answer": "2"
+    },
+    {
+      "problem": "Trứng không được thụ tinh thì sau 14 ngày kể từ khi rụng xảy ra kinh nguyệt. Nếu trứng rụng ngày 14 của chu kì thì kinh nguyệt vào ngày bao nhiêu của chu kì?",
+      "steps": [
+        "14 + 14 = 28."
+      ],
+      "expr": "14+14",
+      "answer": "28"
+    },
+    {
+      "problem": "Dạng đếm: HIV lây qua 3 con đường (quan hệ không an toàn, đường máu, mẹ sang con). Nếu 4 người đều bị lây qua cùng 3 con đường trên thì có bao nhiêu lượt lây?",
+      "steps": [
+        "4 × 3 = 12."
+      ],
+      "expr": "4*3",
+      "answer": "12"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nơi sản sinh tinh trùng là:",
+      "choices": [
+        "Mào tinh",
+        "Tinh hoàn",
+        "Túi tinh",
+        "Dương vật"
+      ],
+      "answer": 1,
+      "explain": "Trong bìu.",
+      "wrong_explain": {
+        "0": "Hoàn thiện.",
+        "2": "Chứa.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nơi sản sinh trứng là:",
+      "choices": [
+        "Buồng trứng",
+        "Tử cung",
+        "Âm đạo",
+        "Ống dẫn trứng"
+      ],
+      "answer": 0,
+      "explain": "Hai buồng trứng.",
+      "wrong_explain": {
+        "1": "Nuôi thai.",
+        "2": "Tiếp nhận.",
+        "3": "Thụ tinh."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thụ tinh thường xảy ra ở:",
+      "choices": [
+        "Âm đạo",
+        "Tử cung",
+        "Buồng trứng",
+        "Ống dẫn trứng"
+      ],
+      "answer": 3,
+      "explain": "Hợp tử hình thành.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Làm tổ.",
+        "2": "Sinh trứng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Thụ thai là:",
+      "choices": [
+        "Tinh trùng gặp trứng",
+        "Trứng rụng",
+        "Phôi làm tổ ở niêm mạc tử cung",
+        "Kinh nguyệt"
+      ],
+      "answer": 2,
+      "explain": "Phân biệt với thụ tinh.",
+      "wrong_explain": {
+        "0": "Thụ tinh.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Kinh nguyệt xảy ra khi:",
+      "choices": [
+        "Trứng được thụ tinh",
+        "Trứng không được thụ tinh, niêm mạc tử cung bong ra",
+        "Mang thai",
+        "Tuổi già"
+      ],
+      "answer": 1,
+      "explain": "Chảy máu theo chu kì.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không có kinh.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "AIDS do tác nhân nào?",
+      "choices": [
+        "Virus HIV",
+        "Vi khuẩn lậu",
+        "Xoắn khuẩn",
+        "Nấm"
+      ],
+      "answer": 0,
+      "explain": "HIV tấn công lympho T.",
+      "wrong_explain": {
+        "1": "Bệnh lậu.",
+        "2": "Giang mai.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "HIV có thể lây qua:",
+      "choices": [
+        "Bắt tay",
+        "Ăn chung",
+        "Muỗi đốt",
+        "Quan hệ không an toàn, đường máu, từ mẹ sang con"
+      ],
+      "answer": 3,
+      "explain": "Cần phòng tránh.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trứng rụng ngày 14, kinh nguyệt sau 14 ngày nữa. Ngày bao nhiêu?",
+      "expr": "14+14",
+      "answer": "28",
+      "explain": "28."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nhiệt độ thích hợp tạo tinh trùng 35 °C, thân nhiệt 37 °C. Chênh lệch bao nhiêu °C?",
+      "expr": "37-35",
+      "answer": "2",
+      "explain": "2."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Tinh hoàn nằm trong bìu thuận lợi vì:",
+      "choices": [
+        "Nhiệt độ thấp hơn thân nhiệt, thích hợp sản sinh tinh trùng",
+        "Nhiệt độ cao hơn",
+        "Dễ bảo vệ hơn",
+        "Tránh gió"
+      ],
+      "answer": 0,
+      "explain": "Khoảng 35 °C.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không phải lí do.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vì sao mang thai ở tuổi vị thành niên nguy hiểm?",
+      "choices": [
+        "Cơ thể quá khoẻ",
+        "Không có nguy cơ",
+        "Có lợi cho học tập",
+        "Tử cung chưa hoàn thiện, nhiều nguy cơ cho mẹ và con"
+      ],
+      "answer": 3,
+      "explain": "Sinh non, nhẹ cân.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Có.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bao cao su dùng đúng giảm nguy cơ; mỗi lần dùng 1 cái, 6 lần cần bao nhiêu cái?",
+      "expr": "1*6",
+      "answer": "6",
+      "explain": "6."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Bao cao su có tác dụng:",
+      "choices": [
+        "Làm rụng trứng",
+        "Tăng thụ thai",
+        "Tránh tinh trùng gặp trứng và giảm nguy cơ lây bệnh",
+        "Chữa bệnh"
+      ],
+      "answer": 2,
+      "explain": "Biện pháp tránh thai.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Một chu kì kinh nguyệt dài 28 ngày. Bốn chu kì liên tiếp dài bao nhiêu ngày?",
+      "expr": "28*4",
+      "answer": "112",
+      "explain": "112 ngày."
+    }
+  ]
+}

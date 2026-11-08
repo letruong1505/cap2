@@ -1,0 +1,279 @@
+{
+  "id": "bai-11",
+  "grade": 8,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 8",
+  "chapter": "Chương II. Một số hợp chất thông dụng",
+  "lesson": "Bài 11. Muối",
+  "section": "",
+  "bookPage": 48,
+  "requirements": [
+    "Nêu được khái niệm muối, đọc được tên một số muối thông dụng.",
+    "Tra được bảng tính tan để biết muối tan và không tan.",
+    "Trình bày được tính chất hoá học của muối và phương pháp điều chế muối.",
+    "Trình bày được mối quan hệ giữa acid, base, oxide và muối."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Muối là hợp chất được tạo thành khi thay thế ion H⁺ của acid bằng ion kim loại hoặc ion ammonium (NH₄⁺). Ví dụ: Na₂SO₄ (sodium sulfate), NH₄Cl (ammonium chloride)."
+    },
+    {
+      "type": "text",
+      "content": "Tên muối = tên kim loại (kèm hoá trị nếu kim loại có nhiều hoá trị) + tên gốc acid. Ví dụ: FeSO₄ là iron(II) sulfate; Fe₂(SO₄)₃ là iron(III) sulfate; NaHCO₃ là sodium hydrogencarbonate."
+    },
+    {
+      "type": "text",
+      "content": "Đa số muối là chất rắn; có muối tan tốt, ít tan hoặc không tan trong nước. Dựa vào bảng tính tan để biết: muối nitrate đều tan; muối chloride phần lớn tan (trừ AgCl); muối sulfate phần lớn tan (trừ BaSO₄, ít tan CaSO₄); muối carbonate phần lớn không tan (trừ muối Na, K, NH₄)."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất hoá học của muối: (1) dung dịch muối tác dụng với kim loại tạo muối mới và kim loại mới (Zn + FeSO₄ → ZnSO₄ + Fe); (2) tác dụng với acid (CaCO₃ + 2HCl → CaCl₂ + CO₂ + H₂O); (3) tác dụng với dung dịch base (FeSO₄ + 2NaOH → Fe(OH)₂ + Na₂SO₄); (4) tác dụng với dung dịch muối (2AgNO₃ + BaCl₂ → 2AgCl + Ba(NO₃)₂)."
+    },
+    {
+      "type": "text",
+      "content": "Phản ứng của muối với acid, base, muối là phản ứng trao đổi; điều kiện xảy ra là sản phẩm có ít nhất một chất không tan (kết tủa), hoặc chất khí, hoặc chất ít phân li."
+    },
+    {
+      "type": "text",
+      "content": "Cách điều chế muối: acid + base; acid + oxide base; acid + muối; oxide acid + dung dịch base; muối + muối; kim loại + acid. Muối ăn được sản xuất từ nước biển (phơi nắng cho bay hơi nước) hoặc muối mỏ."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho 20,8 g BaCl₂ (M = 208) tác dụng với Na₂SO₄ dư: BaCl₂ + Na₂SO₄ → BaSO₄ + 2NaCl. Tính khối lượng BaSO₄ (M = 233) kết tủa (g).",
+      "steps": [
+        "n(BaCl₂) = 20,8 / 208 = 0,1 mol → n(BaSO₄) = 0,1 mol.",
+        "m = 0,1 × 233 = 23,3 g."
+      ],
+      "expr": "20.8*233/208",
+      "answer": "23.3"
+    },
+    {
+      "problem": "Hoà tan 10 g CaCO₃ (M = 100) trong dung dịch HCl dư, CaCO₃ + 2HCl → CaCl₂ + CO₂ + H₂O. Tính thể tích CO₂ (lít) ở 25 °C, 1 bar.",
+      "steps": [
+        "n(CaCO₃) = 10 / 100 = 0,1 mol = n(CO₂).",
+        "V = 24,79 × 0,1 = 2,479 L."
+      ],
+      "expr": "24.79*10/100",
+      "answer": "2.479"
+    },
+    {
+      "problem": "Dạng nhận biết phản ứng xảy ra: trong các cặp sau có bao nhiêu cặp phản ứng được trong dung dịch: NaCl + AgNO₃; K₂SO₄ + NaNO₃; BaCl₂ + H₂SO₄?",
+      "steps": [
+        "Cách làm: xét sản phẩm có chất kết tủa hay khí không.",
+        "NaCl + AgNO₃ tạo AgCl↓; BaCl₂ + H₂SO₄ tạo BaSO₄↓; K₂SO₄ + NaNO₃ không tạo chất không tan. → 2 cặp."
+      ],
+      "expr": "1+1",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Muối là hợp chất được tạo thành khi:",
+      "choices": [
+        "Thay ion OH⁻ của base bằng ion H⁺",
+        "Thay ion H⁺ của acid bằng ion kim loại hoặc NH₄⁺",
+        "Hoà tan oxide vào nước",
+        "Nung nóng kim loại"
+      ],
+      "answer": 1,
+      "explain": "Ví dụ HCl → NaCl.",
+      "wrong_explain": {
+        "0": "Không đúng.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tên của muối FeSO₄ là:",
+      "choices": [
+        "Iron(II) sulfate",
+        "Iron(III) sulfate",
+        "Iron sulfide",
+        "Iron(II) sulfite"
+      ],
+      "answer": 0,
+      "explain": "Fe hoá trị II, gốc sulfate.",
+      "wrong_explain": {
+        "1": "Là Fe₂(SO₄)₃.",
+        "2": "Gốc là sulfate, không phải sulfide.",
+        "3": "Gốc sulfite là SO₃."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Muối nào sau đây không tan trong nước?",
+      "choices": [
+        "NaCl",
+        "KNO₃",
+        "CuSO₄",
+        "BaSO₄"
+      ],
+      "answer": 3,
+      "explain": "BaSO₄ là kết tủa trắng không tan.",
+      "wrong_explain": {
+        "0": "Tan tốt.",
+        "1": "Tan tốt.",
+        "2": "Tan."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cặp chất nào phản ứng với nhau trong dung dịch tạo kết tủa?",
+      "choices": [
+        "NaCl và KNO₃",
+        "HCl và NaOH",
+        "BaCl₂ và Na₂SO₄",
+        "KCl và NaNO₃"
+      ],
+      "answer": 2,
+      "explain": "Tạo BaSO₄ không tan.",
+      "wrong_explain": {
+        "0": "Không tạo kết tủa.",
+        "1": "Tạo muối tan và nước.",
+        "3": "Không phản ứng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Điều kiện để phản ứng trao đổi trong dung dịch xảy ra là sản phẩm có:",
+      "choices": [
+        "Chất lỏng",
+        "Chất không tan hoặc chất khí",
+        "Màu xanh",
+        "Muối ăn"
+      ],
+      "answer": 1,
+      "explain": "Cần có kết tủa, khí,...",
+      "wrong_explain": {
+        "0": "Không phải điều kiện.",
+        "2": "Không liên quan.",
+        "3": "Không phải điều kiện."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Kim loại nào đẩy được đồng ra khỏi dung dịch CuSO₄?",
+      "choices": [
+        "Fe",
+        "Ag",
+        "Au",
+        "Hg"
+      ],
+      "answer": 0,
+      "explain": "Fe + CuSO₄ → FeSO₄ + Cu.",
+      "wrong_explain": {
+        "1": "Yếu hơn Cu, không đẩy được.",
+        "2": "Yếu hơn Cu.",
+        "3": "Yếu hơn Cu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính khối lượng mol của CuSO₄ (Cu = 64, S = 32, O = 16) (g/mol).",
+      "expr": "64+32+4*16",
+      "answer": "160",
+      "explain": "M = 64 + 32 + 64 = 160 g/mol."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho 0,1 mol BaCl₂ phản ứng hết với Na₂SO₄. Tính khối lượng BaSO₄ (M = 233) thu được (g).",
+      "expr": "0.1*233",
+      "answer": "23.3",
+      "explain": "m = 0,1 × 233 = 23,3 g."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho 5,6 g Fe (M = 56) vào dung dịch CuSO₄ dư. Tính khối lượng Cu (Cu = 64) thu được (g).",
+      "expr": "5.6*64/56",
+      "answer": "6.4",
+      "explain": "n(Fe) = 0,1 mol = n(Cu); m = 0,1 × 64 = 6,4 g."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 17 g AgNO₃ (M = 170) tác dụng đủ với NaCl: AgNO₃ + NaCl → AgCl + NaNO₃. Tính khối lượng AgCl (M = 143,5) (g).",
+      "expr": "17*143.5/170",
+      "answer": "14.35",
+      "explain": "n = 0,1 mol; m = 14,35 g."
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Muốn điều chế muối CuSO₄, phương pháp nào phù hợp?",
+      "choices": [
+        "Cu + H₂SO₄ loãng",
+        "Cu + HCl",
+        "CuCO₃ + NaOH",
+        "CuO + H₂SO₄ → CuSO₄ + H₂O"
+      ],
+      "answer": 3,
+      "explain": "Oxide base tác dụng với acid tạo muối và nước.",
+      "wrong_explain": {
+        "0": "Cu không phản ứng với acid loãng.",
+        "1": "Cu không phản ứng.",
+        "2": "Không tạo CuSO₄."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hoà tan 12,5 g CaCO₃ (M = 100) trong HCl dư thu được CO₂. Tính thể tích CO₂ (lít) ở 25 °C, 1 bar.",
+      "expr": "24.79*125/1000",
+      "answer": "3.09875",
+      "explain": "n = 0,125 mol; V = 24,79 × 0,125 = 3,09875 L."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Để phân biệt dung dịch NaCl và dung dịch Na₂SO₄ có thể dùng:",
+      "choices": [
+        "Quỳ tím",
+        "Dung dịch BaCl₂ (có kết tủa trắng với Na₂SO₄)",
+        "Dung dịch NaOH",
+        "Nước cất"
+      ],
+      "answer": 1,
+      "explain": "Na₂SO₄ + BaCl₂ → BaSO₄↓ + 2NaCl.",
+      "wrong_explain": {
+        "0": "Cả hai trung tính, không phân biệt được.",
+        "2": "Không có hiện tượng với cả hai.",
+        "3": "Cả hai đều tan."
+      },
+      "concept": true
+    }
+  ]
+}

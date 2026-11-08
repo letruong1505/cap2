@@ -1,0 +1,299 @@
+{
+  "id": "bai-16",
+  "grade": 8,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 8",
+  "chapter": "Chương III. Khối lượng riêng và áp suất",
+  "lesson": "Bài 16. Áp suất chất lỏng. Áp suất khí quyển",
+  "section": "",
+  "bookPage": 67,
+  "requirements": [
+    "Khảo sát tác dụng của chất lỏng lên vật đặt trong chất lỏng.",
+    "Nêu được áp suất tác dụng vào chất lỏng được chất lỏng truyền đi nguyên vẹn theo mọi hướng.",
+    "Chứng tỏ được sự tồn tại của áp suất khí quyển và áp suất này tác dụng theo mọi phương.",
+    "Giải thích được một số ứng dụng của áp suất không khí trong đời sống."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Chất lỏng gây áp suất theo mọi phương lên các vật ở trong lòng nó và lên đáy, thành bình. Vật càng ở sâu trong lòng chất lỏng thì chịu áp suất chất lỏng càng lớn."
+    },
+    {
+      "type": "text",
+      "content": "Định luật Pascal: áp suất tác dụng vào chất lỏng sẽ được chất lỏng truyền đi nguyên vẹn theo mọi hướng. Nhờ đó máy nén thuỷ lực nâng được ô tô chỉ bằng một lực nhỏ tác dụng lên pit-tông nhỏ."
+    },
+    {
+      "type": "text",
+      "content": "Lớp không khí bao quanh Trái Đất dày hàng nghìn kilômét gọi là khí quyển. Áp suất do lớp không khí này tác dụng lên mọi vật trên Trái Đất gọi là áp suất khí quyển; nó tác dụng theo mọi phương."
+    },
+    {
+      "type": "text",
+      "content": "Chứng minh tồn tại áp suất khí quyển: úp ngược cốc nước đầy được đậy kín bằng tấm nylon, nước không rơi vì áp suất khí quyển tác dụng lên tấm nylon; ống thuỷ tinh bịt đầu trên giữ được cột nước khi rút khỏi chậu."
+    },
+    {
+      "type": "text",
+      "content": "Khi thay đổi áp suất đột ngột (máy bay cất, hạ cánh; leo núi cao) màng nhĩ bị đẩy về phía nơi có áp suất nhỏ hơn gây ù tai. Nuốt nước bọt hoặc ngáp làm mở vòi tai, cân bằng lại áp suất hai bên màng nhĩ."
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng áp suất không khí: giác mút bám vào kính, tường; bình xịt nước; tàu đệm khí; muốn nước chảy ra khỏi bình khi mở vòi thì nắp bình cần có lỗ nhỏ cho không khí vào."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Máy nén thuỷ lực có pit-tông lớn có diện tích gấp 50 lần pit-tông nhỏ. Tác dụng lực 200 N lên pit-tông nhỏ thì lực tác dụng lên pit-tông lớn là bao nhiêu N?",
+      "steps": [
+        "Áp suất truyền nguyên vẹn nên p₁ = p₂, tức F₁/S₁ = F₂/S₂.",
+        "F₂ = F₁ × S₂/S₁ = 200 × 50 = 10 000 N."
+      ],
+      "expr": "200*50",
+      "answer": "10000"
+    },
+    {
+      "problem": "Hai pit-tông có tiết diện 4 cm² và 60 cm². Lực 80 N tác dụng lên pit-tông nhỏ. Lực lên pit-tông lớn là bao nhiêu N?",
+      "steps": [
+        "F₂/F₁ = S₂/S₁ = 60/4 = 15.",
+        "F₂ = 80 × 15 = 1 200 N."
+      ],
+      "expr": "80*60/4",
+      "answer": "1200"
+    },
+    {
+      "problem": "Dạng giải thích hiện tượng: vì sao tấm nylon không rơi khi úp ngược cốc nước đầy? Nếu áp suất khí quyển tác dụng lên tấm nylon là 100 000 Pa và diện tích tấm 0,002 m² thì áp lực của khí quyển lên tấm là bao nhiêu N?",
+      "steps": [
+        "Cách làm: F = p × S.",
+        "F = 100 000 × 0,002 = 200 N, lớn hơn trọng lượng nước nên nylon không rơi."
+      ],
+      "expr": "100000*0.002",
+      "answer": "200"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Chất lỏng gây ra áp suất lên:",
+      "choices": [
+        "Chỉ đáy bình",
+        "Đáy bình, thành bình và các vật trong lòng nó theo mọi phương",
+        "Chỉ mặt thoáng",
+        "Chỉ theo phương thẳng đứng"
+      ],
+      "answer": 1,
+      "explain": "Áp suất chất lỏng tác dụng theo mọi hướng.",
+      "wrong_explain": {
+        "0": "Còn thành bình và vật trong lòng.",
+        "2": "Không đúng.",
+        "3": "Theo mọi phương."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Càng xuống sâu trong lòng chất lỏng thì áp suất chất lỏng:",
+      "choices": [
+        "Càng lớn",
+        "Càng nhỏ",
+        "Không đổi",
+        "Bằng 0"
+      ],
+      "answer": 0,
+      "explain": "Độ sâu tăng thì áp suất tăng.",
+      "wrong_explain": {
+        "1": "Ngược lại.",
+        "2": "Có thay đổi.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nội dung đúng của định luật Pascal là:",
+      "choices": [
+        "Áp suất bị giảm dần theo hướng truyền",
+        "Chỉ truyền theo phương thẳng đứng",
+        "Chất lỏng không truyền áp suất",
+        "Áp suất tác dụng vào chất lỏng được truyền nguyên vẹn theo mọi hướng"
+      ],
+      "answer": 3,
+      "explain": "Đó là tính chất do Pascal tìm ra.",
+      "wrong_explain": {
+        "0": "Không đúng.",
+        "1": "Mọi hướng.",
+        "2": "Có truyền."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Máy nén thuỷ lực hoạt động dựa trên:",
+      "choices": [
+        "Lực ma sát",
+        "Lực đàn hồi của lò xo",
+        "Sự truyền nguyên vẹn áp suất của chất lỏng",
+        "Sự nở vì nhiệt"
+      ],
+      "answer": 2,
+      "explain": "Lực nhỏ lên pit-tông nhỏ tạo lực lớn lên pit-tông lớn.",
+      "wrong_explain": {
+        "0": "Không phải.",
+        "1": "Không phải.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Áp suất khí quyển là áp suất do:",
+      "choices": [
+        "Nước biển gây ra",
+        "Lớp không khí bao quanh Trái Đất tác dụng lên mọi vật",
+        "Gió thổi gây ra",
+        "Mặt Trời gây ra"
+      ],
+      "answer": 1,
+      "explain": "Khí quyển tác dụng áp suất theo mọi phương.",
+      "wrong_explain": {
+        "0": "Không phải.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Muốn nước trong bình chảy ra khi mở vòi, trên nắp bình phải có lỗ nhỏ vì:",
+      "choices": [
+        "Để không khí vào giữ áp suất trong bình bằng áp suất bên ngoài",
+        "Để nước bay hơi",
+        "Để giảm khối lượng bình",
+        "Để nước lạnh hơn"
+      ],
+      "answer": 0,
+      "explain": "Không có lỗ, áp suất khí quyển ngoài giữ nước lại.",
+      "wrong_explain": {
+        "1": "Không phải.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ù tai khi máy bay cất, hạ cánh là do:",
+      "choices": [
+        "Tiếng ồn quá lớn",
+        "Nhiệt độ tăng",
+        "Thiếu oxygen",
+        "Áp suất hai bên màng nhĩ mất cân bằng đột ngột"
+      ],
+      "answer": 3,
+      "explain": "Nuốt nước bọt giúp cân bằng áp suất.",
+      "wrong_explain": {
+        "0": "Không phải nguyên nhân chính.",
+        "1": "Không phải.",
+        "2": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Pit-tông lớn có diện tích gấp 20 lần pit-tông nhỏ. Lực 150 N lên pit-tông nhỏ thì lực lên pit-tông lớn là bao nhiêu N?",
+      "expr": "150*20",
+      "answer": "3000",
+      "explain": "F₂ = 150 × 20 = 3 000 N."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Áp suất khí quyển 100 000 Pa tác dụng lên diện tích 0,5 m². Tính áp lực (N).",
+      "expr": "100000*0.5",
+      "answer": "50000",
+      "explain": "F = p × S = 50 000 N."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Pit-tông nhỏ có diện tích 5 cm², pit-tông lớn 200 cm². Cần tác dụng lực bao nhiêu N lên pit-tông nhỏ để nâng vật nặng 4 000 N đặt trên pit-tông lớn?",
+      "expr": "4000*5/200",
+      "answer": "100",
+      "explain": "F₁ = 4 000 × 5 / 200 = 100 N."
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lực 30 N lên pit-tông nhỏ 2 cm² tạo áp suất bao nhiêu N/cm²?",
+      "expr": "30/2",
+      "answer": "15",
+      "explain": "p = 30/2 = 15 N/cm²."
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vì sao giác mút bám chắc vào kính?",
+      "choices": [
+        "Do keo dính",
+        "Do lực hút của nam châm",
+        "Áp suất không khí trong giác mút nhỏ hơn áp suất khí quyển bên ngoài",
+        "Do trọng lượng giác mút lớn"
+      ],
+      "answer": 2,
+      "explain": "Ấn giác mút rồi thả ra làm thể tích tăng, áp suất trong giảm.",
+      "wrong_explain": {
+        "0": "Không có keo.",
+        "1": "Không phải.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Pit-tông lớn có đường kính gấp 3 lần pit-tông nhỏ (diện tích tỉ lệ bình phương đường kính). Tác dụng 50 N lên pit-tông nhỏ thì lực lên pit-tông lớn là bao nhiêu N?",
+      "expr": "50*9",
+      "answer": "450",
+      "explain": "Diện tích gấp 3² = 9 lần nên F₂ = 50 × 9 = 450 N."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Lên núi cao, ta dễ ù tai vì:",
+      "choices": [
+        "Áp suất khí quyển tăng mạnh",
+        "Áp suất khí quyển giảm theo độ cao",
+        "Nhiệt độ giảm làm màng nhĩ nứt",
+        "Khí quyển không còn"
+      ],
+      "answer": 1,
+      "explain": "Độ cao tăng thì áp suất khí quyển giảm.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "2": "Không phải.",
+        "3": "Vẫn còn nhưng loãng hơn."
+      },
+      "concept": true
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "id": "bai-36",
+  "grade": 8,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 8",
+  "chapter": "Chương VII. Sinh học cơ thể người",
+  "lesson": "Bài 36. Điều hoà môi trường trong của cơ thể người",
+  "section": "",
+  "bookPage": 150,
+  "requirements": [
+    "Nêu khái niệm môi trường trong và cân bằng môi trường trong, vai trò của việc duy trì ổn định.",
+    "Đọc hiểu kết quả xét nghiệm glucose và uric acid."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Môi trường trong của cơ thể gồm máu, nước mô và bạch huyết. Môi trường trong thường xuyên liên hệ với môi trường ngoài qua các hệ cơ quan như tiêu hoá, tuần hoàn, hô hấp, bài tiết."
+    },
+    {
+      "type": "text",
+      "content": "Cân bằng môi trường trong là sự duy trì ổn định các điều kiện như nồng độ glucose, muối sodium chloride, urea, uric acid, pH trong máu. Nhờ đó tế bào hoạt động bình thường; nếu mất cân bằng, cơ thể có nguy cơ mắc bệnh."
+    },
+    {
+      "type": "text",
+      "content": "Glucose trong máu khi đói (không ăn 8 giờ) trên 7 mmol/L kéo dài là biểu hiện bệnh tiểu đường. Uric acid cao kéo dài có thể dẫn tới viêm khớp, gout, suy thận; quá thấp kéo dài có nguy cơ rối loạn chức năng gan, thận."
+    },
+    {
+      "type": "text",
+      "content": "Xét nghiệm máu hoặc nước tiểu giúp xác định nồng độ các yếu tố. Ví dụ glucose bình thường 3,9–6,4 mmol/L; uric acid bình thường ở nam 210–420 µmol/L."
+    },
+    {
+      "type": "text",
+      "content": "Sau khi ăn mặn, nồng độ muối trong máu tăng nên khát; uống nhiều nước giúp pha loãng, thận thải bớt muối để đưa nồng độ trở lại bình thường."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Kết quả glucose máu là 9,8 mmol/L, mức cao nhất bình thường là 6,4. Kết quả vượt quá bao nhiêu mmol/L?",
+      "steps": [
+        "9,8 − 6,4 = 3,4 mmol/L."
+      ],
+      "expr": "98/10-64/10",
+      "answer": "3.4"
+    },
+    {
+      "problem": "Uric acid bình thường ở nam từ 210 đến 420 µmol/L. Khoảng giá trị bình thường rộng bao nhiêu µmol/L?",
+      "steps": [
+        "420 − 210 = 210."
+      ],
+      "expr": "420-210",
+      "answer": "210"
+    },
+    {
+      "problem": "Dạng so sánh: kết quả uric acid 171 µmol/L, mức thấp nhất bình thường 210. Kết quả thấp hơn bao nhiêu µmol/L?",
+      "steps": [
+        "210 − 171 = 39."
+      ],
+      "expr": "210-171",
+      "answer": "39"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Môi trường trong của cơ thể gồm:",
+      "choices": [
+        "Không khí, nước, đất",
+        "Máu, nước mô và bạch huyết",
+        "Tim, phổi, thận",
+        "Da, tóc, móng"
+      ],
+      "answer": 1,
+      "explain": "Là môi trường bao quanh tế bào.",
+      "wrong_explain": {
+        "0": "Môi trường ngoài.",
+        "2": "Cơ quan.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Cân bằng môi trường trong là:",
+      "choices": [
+        "Duy trì ổn định nồng độ glucose, muối, pH,... trong máu",
+        "Thay đổi liên tục",
+        "Chỉ giữ nhiệt độ",
+        "Bỏ bớt máu"
+      ],
+      "answer": 0,
+      "explain": "Giúp tế bào hoạt động bình thường.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Chưa đủ.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Glucose máu lúc đói trên 7 mmol/L kéo dài là dấu hiệu của:",
+      "choices": [
+        "Bệnh gout",
+        "Bệnh bướu cổ",
+        "Loãng xương",
+        "Bệnh tiểu đường"
+      ],
+      "answer": 3,
+      "explain": "Cần xét nghiệm.",
+      "wrong_explain": {
+        "0": "Do uric acid.",
+        "1": "Thiếu iodine.",
+        "2": "Thiếu calcium."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Uric acid cao kéo dài có thể gây:",
+      "choices": [
+        "Cận thị",
+        "Thiếu máu",
+        "Gout, viêm khớp, suy thận",
+        "Sâu răng"
+      ],
+      "answer": 2,
+      "explain": "Rối loạn môi trường trong.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Xét nghiệm nào giúp xác định nồng độ glucose?",
+      "choices": [
+        "Chụp X-quang",
+        "Xét nghiệm máu",
+        "Đo thân nhiệt",
+        "Đo chiều cao"
+      ],
+      "answer": 1,
+      "explain": "Máu hoặc nước tiểu.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Sau khi ăn quá mặn thấy khát vì:",
+      "choices": [
+        "Nồng độ muối trong máu tăng",
+        "Máu loãng",
+        "Cơ thể thừa nước",
+        "Dạ dày trống"
+      ],
+      "answer": 0,
+      "explain": "Cần nước để pha loãng.",
+      "wrong_explain": {
+        "1": "Ngược lại.",
+        "2": "Ngược lại.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Glucose bình thường 3,9–6,4 mmol/L. Chênh lệch giữa giá trị cao và thấp (mmol/L) là:",
+      "expr": "64/10-39/10",
+      "answer": "2.5",
+      "explain": "2,5."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Kết quả glucose 9,8, giới hạn trên 6,4. Tính hiệu số (mmol/L):",
+      "expr": "98/10-64/10",
+      "answer": "3.4",
+      "explain": "3,4."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao cần duy trì ổn định môi trường trong?",
+      "choices": [
+        "Để cơ thể to hơn",
+        "Để tế bào và cơ thể hoạt động bình thường",
+        "Để tăng cân",
+        "Không cần thiết"
+      ],
+      "answer": 1,
+      "explain": "Mất cân bằng gây bệnh.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Cần thiết."
+      },
+      "concept": true
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Người có glucose 9,8 mmol/L (bình thường 3,9–6,4) có nguy cơ:",
+      "choices": [
+        "Mắc bệnh tiểu đường",
+        "Thiếu máu",
+        "Còi xương",
+        "Gout"
+      ],
+      "answer": 0,
+      "explain": "Glucose cao hơn bình thường.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Uric acid 450, giới hạn trên bình thường 420 µmol/L. Vượt quá bao nhiêu?",
+      "expr": "450-420",
+      "answer": "30",
+      "explain": "30."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Thói quen ăn uống nào giúp duy trì môi trường trong ổn định?",
+      "choices": [
+        "Ăn nhiều đường",
+        "Ăn quá mặn",
+        "Ăn uống cân đối, hạn chế đường và muối",
+        "Nhịn ăn kéo dài"
+      ],
+      "answer": 2,
+      "explain": "Chế độ ăn phù hợp.",
+      "wrong_explain": {
+        "0": "Tăng glucose.",
+        "1": "Mất cân bằng.",
+        "3": "Mất cân bằng."
+      },
+      "concept": true
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Uric acid 171 so với mức thấp nhất 210. Thiếu bao nhiêu µmol/L?",
+      "expr": "210-171",
+      "answer": "39",
+      "explain": "39."
+    }
+  ]
+}

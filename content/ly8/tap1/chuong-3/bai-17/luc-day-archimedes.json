@@ -1,0 +1,290 @@
+{
+  "id": "bai-17",
+  "grade": 8,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 8",
+  "chapter": "Chương III. Khối lượng riêng và áp suất",
+  "lesson": "Bài 17. Lực đẩy Archimedes",
+  "section": "",
+  "bookPage": 73,
+  "requirements": [
+    "Thực hiện thí nghiệm khảo sát tác dụng của chất lỏng lên vật đặt trong chất lỏng; rút ra điều kiện định tính về vật nổi, vật chìm.",
+    "Phát biểu và vận dụng được định luật Archimedes."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Chất lỏng tác dụng lên vật đặt trong nó một lực đẩy có phương thẳng đứng, chiều từ dưới lên, gọi là lực đẩy Archimedes."
+    },
+    {
+      "type": "text",
+      "content": "Điều kiện nổi, chìm của một vật đặc trong chất lỏng (so sánh trọng lượng P với lực đẩy Archimedes F_A): P > F_A thì vật chìm; P = F_A thì vật lơ lửng; P < F_A thì vật nổi lên."
+    },
+    {
+      "type": "text",
+      "content": "Định luật Archimedes: một vật nhúng trong chất lỏng chịu tác dụng một lực đẩy hướng thẳng đứng từ dưới lên, có độ lớn bằng trọng lượng của phần chất lỏng bị vật chiếm chỗ."
+    },
+    {
+      "type": "formula",
+      "content": "F_A = d · V   (d: trọng lượng riêng của chất lỏng, N/m³; V: thể tích phần chất lỏng bị vật chiếm chỗ, m³)"
+    },
+    {
+      "type": "text",
+      "content": "Thí nghiệm bình tràn: lực đẩy F_A = P − F (P là số chỉ lực kế khi vật ở ngoài không khí, F là số chỉ khi nhúng trong chất lỏng) bằng trọng lượng của nước tràn ra."
+    },
+    {
+      "type": "text",
+      "content": "Cá có bong bóng khí: bong bóng phồng lên thì thể tích tăng, lực đẩy tăng nên cá nổi; bong bóng xẹp thì cá chìm. Cùng một viên đất nặn, nặn thành hình thuyền thì thể tích chiếm chỗ lớn hơn, lực đẩy lớn hơn nên nổi được."
+    },
+    {
+      "type": "text",
+      "content": "Trọng lượng riêng của nước khoảng 10 000 N/m³."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một vật thể tích 0,002 m³ chìm hoàn toàn trong nước (d = 10 000 N/m³). Tính lực đẩy Archimedes (N).",
+      "steps": [
+        "F_A = d × V.",
+        "F_A = 10 000 × 0,002 = 20 N."
+      ],
+      "expr": "10000*0.002",
+      "answer": "20"
+    },
+    {
+      "problem": "Vật nặng 5 N khi treo ngoài không khí; khi nhúng chìm trong nước lực kế chỉ 3 N. Tính lực đẩy Archimedes (N).",
+      "steps": [
+        "F_A = P − F.",
+        "F_A = 5 − 3 = 2 N."
+      ],
+      "expr": "5-3",
+      "answer": "2"
+    },
+    {
+      "problem": "Dạng xác định thể tích vật: vật nhúng chìm hoàn toàn trong nước chịu lực đẩy 4 N (d = 10 000 N/m³). Tính thể tích vật (m³).",
+      "steps": [
+        "Cách làm: V = F_A / d.",
+        "V = 4 / 10 000 = 0,0004 m³."
+      ],
+      "expr": "4/10000",
+      "answer": "0.0004"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Lực đẩy Archimedes có phương và chiều:",
+      "choices": [
+        "Thẳng đứng, hướng từ trên xuống",
+        "Thẳng đứng, hướng từ dưới lên",
+        "Nằm ngang",
+        "Bất kì"
+      ],
+      "answer": 1,
+      "explain": "Lực đẩy Archimedes đẩy vật lên.",
+      "wrong_explain": {
+        "0": "Đó là hướng của trọng lực.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Vật sẽ nổi lên khi:",
+      "choices": [
+        "Trọng lượng nhỏ hơn lực đẩy Archimedes",
+        "Trọng lượng lớn hơn lực đẩy",
+        "Trọng lượng bằng lực đẩy",
+        "Lực đẩy bằng 0"
+      ],
+      "answer": 0,
+      "explain": "P < F_A thì vật nổi.",
+      "wrong_explain": {
+        "1": "Vật chìm.",
+        "2": "Vật lơ lửng.",
+        "3": "Vật chìm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Công thức tính lực đẩy Archimedes là:",
+      "choices": [
+        "F_A = d / V",
+        "F_A = V / d",
+        "F_A = d + V",
+        "F_A = d · V"
+      ],
+      "answer": 3,
+      "explain": "d là trọng lượng riêng chất lỏng, V là thể tích phần chất lỏng bị chiếm chỗ.",
+      "wrong_explain": {
+        "0": "Sai.",
+        "1": "Sai.",
+        "2": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Lực đẩy Archimedes phụ thuộc vào:",
+      "choices": [
+        "Trọng lượng của vật",
+        "Chất làm vật",
+        "Trọng lượng riêng của chất lỏng và thể tích phần chất lỏng bị vật chiếm chỗ",
+        "Độ sâu của vật (khi chìm hoàn toàn)"
+      ],
+      "answer": 2,
+      "explain": "F_A = d·V.",
+      "wrong_explain": {
+        "0": "Không phụ thuộc.",
+        "1": "Không phụ thuộc trực tiếp.",
+        "3": "Không phụ thuộc."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao viên bi sắt chìm còn nắp chai nhựa nổi?",
+      "choices": [
+        "Vì nắp chai nặng hơn viên bi",
+        "Viên bi có trọng lượng lớn hơn lực đẩy, nắp chai có lực đẩy lớn hơn trọng lượng",
+        "Vì nước chỉ đẩy nắp chai",
+        "Vì viên bi có nhiều khí"
+      ],
+      "answer": 1,
+      "explain": "So sánh P và F_A của từng vật.",
+      "wrong_explain": {
+        "0": "Không phải.",
+        "2": "Nước đẩy cả hai.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cùng một viên đất nặn nhưng hình thuyền thì nổi vì:",
+      "choices": [
+        "Thể tích chiếm chỗ lớn hơn nên lực đẩy lớn hơn",
+        "Viên đất nhẹ hơn",
+        "Nước ít đi",
+        "Đất mất bớt trọng lượng"
+      ],
+      "answer": 0,
+      "explain": "F_A tăng khi V tăng.",
+      "wrong_explain": {
+        "1": "Khối lượng không đổi.",
+        "2": "Không đúng.",
+        "3": "Không đổi."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vật thể tích 0,003 m³ chìm hoàn toàn trong nước (d = 10 000 N/m³). Lực đẩy Archimedes (N) là:",
+      "choices": [
+        "3",
+        "300",
+        "0,3",
+        "30"
+      ],
+      "answer": 3,
+      "explain": "F_A = 10 000 × 0,003 = 30 N.",
+      "wrong_explain": {
+        "0": "Quên nhân với 10 000.",
+        "1": "Sai bậc.",
+        "2": "Sai."
+      },
+      "expr": "10000*0.003"
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Quả cầu treo ngoài không khí lực kế chỉ 8 N, nhúng trong nước chỉ 6,5 N. Tính lực đẩy Archimedes (N).",
+      "expr": "8-6.5",
+      "answer": "1.5",
+      "explain": "F_A = 8 − 6,5 = 1,5 N."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khối gỗ thể tích 0,5 dm³ = 0,0005 m³ chìm hoàn toàn trong nước (d = 10 000 N/m³). Tính F_A (N).",
+      "expr": "10000*0.0005",
+      "answer": "5",
+      "explain": "F_A = 5 N."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật có trọng lượng 12 N, thể tích 0,0008 m³ thả vào nước (d = 10 000 N/m³). Lực đẩy khi chìm hoàn toàn là bao nhiêu N?",
+      "expr": "10000*0.0008",
+      "answer": "8",
+      "explain": "F_A = 8 N, nhỏ hơn P = 12 N nên vật chìm."
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một khối hộp 10 cm × 10 cm × 10 cm chìm trong dầu (d = 8 000 N/m³). Tính F_A (N).",
+      "expr": "8*1",
+      "answer": "8",
+      "explain": "V = 0,001 m³; F_A = 8 000 × 0,001 = 8 N."
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Một vật bằng sắt đặc thả vào thuỷ ngân (khối lượng riêng thuỷ ngân khoảng 13 600, sắt 7 800 kg/m³) sẽ:",
+      "choices": [
+        "Chìm xuống đáy",
+        "Lơ lửng",
+        "Nổi trên thuỷ ngân",
+        "Tan trong thuỷ ngân"
+      ],
+      "answer": 2,
+      "explain": "D vật < D chất lỏng thì vật nổi.",
+      "wrong_explain": {
+        "0": "Sắt nhẹ hơn thuỷ ngân.",
+        "1": "Chỉ khi hai khối lượng riêng bằng nhau.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Vật nhúng ngập trong nước chịu lực đẩy 15 N. Biết d = 10 000 N/m³. Thể tích vật bằng bao nhiêu cm³?",
+      "expr": "15*100",
+      "answer": "1500",
+      "explain": "V = 15/10 000 m³ = 0,0015 m³ = 1 500 cm³."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Vật nặng 20 N, nhúng chìm trong nước chịu lực đẩy 8 N. Số chỉ lực kế khi vật ở trong nước (N) là:",
+      "expr": "20-8",
+      "answer": "12",
+      "explain": "F = P − F_A = 12 N."
+    }
+  ]
+}

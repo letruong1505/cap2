@@ -1,0 +1,300 @@
+{
+  "id": "bai-41",
+  "grade": 8,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 8",
+  "chapter": "Chương VIII. Sinh vật và môi trường",
+  "lesson": "Bài 41. Môi trường và các nhân tố sinh thái",
+  "section": "",
+  "bookPage": 170,
+  "requirements": [
+    "Nêu khái niệm môi trường sống, các loại môi trường; nhân tố sinh thái; giới hạn sinh thái."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Môi trường sống là nơi sống của sinh vật, bao gồm các nhân tố xung quanh có ảnh hưởng trực tiếp hoặc gián tiếp đến sự tồn tại và phát triển của sinh vật."
+    },
+    {
+      "type": "text",
+      "content": "Các loại môi trường sống chủ yếu: môi trường trên cạn, môi trường dưới nước, môi trường trong đất và môi trường sinh vật (cơ thể động vật, thực vật, con người)."
+    },
+    {
+      "type": "text",
+      "content": "Nhân tố sinh thái là các nhân tố trong môi trường ảnh hưởng đến sinh vật. Có hai nhóm: nhân tố vô sinh (ánh sáng, nhiệt độ, độ ẩm, nước, đất,...) và nhân tố hữu sinh (các sinh vật khác và con người). Con người là nhân tố hữu sinh có ảnh hưởng lớn nhất."
+    },
+    {
+      "type": "text",
+      "content": "Thực vật gồm cây ưa sáng và cây ưa bóng. Nhiệt độ ảnh hưởng đến hình thái và hoạt động sinh lí. Các sinh vật có quan hệ hỗ trợ hoặc cạnh tranh."
+    },
+    {
+      "type": "text",
+      "content": "Giới hạn sinh thái là khoảng giá trị của một nhân tố sinh thái mà sinh vật có thể tồn tại và phát triển ổn định. Ví dụ: cá rô phi ở Việt Nam sống trong khoảng nhiệt độ 5,6 °C đến 42 °C, điểm cực thuận khoảng 30 °C."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cá rô phi có giới hạn nhiệt độ từ 5,6 °C đến 42 °C. Khoảng giới hạn rộng bao nhiêu °C?",
+      "steps": [
+        "42 − 5,6 = 36,4 °C."
+      ],
+      "expr": "42-5.6",
+      "answer": "36.4"
+    },
+    {
+      "problem": "Một loài cá sống ở 2 °C đến 44 °C, loài khác ở 10 °C đến 30 °C. Loài thứ nhất có khoảng giới hạn rộng hơn bao nhiêu °C?",
+      "steps": [
+        "(44 − 2) − (30 − 10) = 42 − 20 = 22."
+      ],
+      "expr": "(44-2)-(30-10)",
+      "answer": "22"
+    },
+    {
+      "problem": "Dạng đếm: có 4 loại môi trường sống (trên cạn, dưới nước, trong đất, sinh vật). Bỏ môi trường trong đất còn mấy loại?",
+      "steps": [
+        "4 − 1 = 3."
+      ],
+      "expr": "4-1",
+      "answer": "3"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Môi trường sống là:",
+      "choices": [
+        "Chỉ đất và nước",
+        "Nơi sống của sinh vật gồm các nhân tố xung quanh có ảnh hưởng đến chúng",
+        "Chỉ sinh vật khác",
+        "Chỉ nhiệt độ"
+      ],
+      "answer": 1,
+      "explain": "Gồm nhân tố vô sinh và hữu sinh.",
+      "wrong_explain": {
+        "0": "Chưa đủ.",
+        "2": "Chưa đủ.",
+        "3": "Chưa đủ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Có mấy loại môi trường sống chủ yếu?",
+      "choices": [
+        "4",
+        "2",
+        "3",
+        "6"
+      ],
+      "answer": 0,
+      "explain": "Cạn, nước, đất, sinh vật.",
+      "wrong_explain": {
+        "1": "Thiếu.",
+        "2": "Thiếu.",
+        "3": "Thừa."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nhân tố nào là nhân tố vô sinh?",
+      "choices": [
+        "Con người",
+        "Cây cỏ",
+        "Vi khuẩn",
+        "Ánh sáng"
+      ],
+      "answer": 3,
+      "explain": "Yếu tố không sống.",
+      "wrong_explain": {
+        "0": "Hữu sinh.",
+        "1": "Hữu sinh.",
+        "2": "Hữu sinh."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nhân tố hữu sinh bao gồm:",
+      "choices": [
+        "Nhiệt độ",
+        "Độ ẩm",
+        "Sinh vật khác và con người",
+        "Ánh sáng"
+      ],
+      "answer": 2,
+      "explain": "Yếu tố sống.",
+      "wrong_explain": {
+        "0": "Vô sinh.",
+        "1": "Vô sinh.",
+        "3": "Vô sinh."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Giới hạn sinh thái là:",
+      "choices": [
+        "Điểm gây chết",
+        "Khoảng giá trị nhân tố sinh thái mà sinh vật tồn tại và phát triển",
+        "Nhiệt độ cao nhất",
+        "Số lượng loài"
+      ],
+      "answer": 1,
+      "explain": "Có điểm cực thuận.",
+      "wrong_explain": {
+        "0": "Chưa đủ.",
+        "2": "Chưa đủ.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cây ưa sáng thường mọc ở:",
+      "choices": [
+        "Nơi có nhiều ánh sáng",
+        "Dưới tán rừng rậm",
+        "Trong hang tối",
+        "Dưới nước sâu"
+      ],
+      "answer": 0,
+      "explain": "Thích nghi với ánh sáng.",
+      "wrong_explain": {
+        "1": "Cây ưa bóng.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nhân tố hữu sinh có ảnh hưởng lớn nhất là:",
+      "choices": [
+        "Ánh sáng",
+        "Gió",
+        "Cỏ",
+        "Con người"
+      ],
+      "answer": 3,
+      "explain": "Con người tác động mạnh.",
+      "wrong_explain": {
+        "0": "Vô sinh.",
+        "1": "Vô sinh.",
+        "2": "Nhỏ hơn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cá rô phi sống từ 5,6 °C đến 42 °C. Hiệu giá trị (°C):",
+      "expr": "42-5.6",
+      "answer": "36.4",
+      "explain": "36,4."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có 4 loại môi trường sống. Ba loại là trên cạn, dưới nước và trong đất. Loại còn lại là môi trường sinh vật; số loại còn lại là bao nhiêu?",
+      "expr": "4-3",
+      "answer": "1",
+      "explain": "1."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Điểm cực thuận của cá rô phi khoảng:",
+      "choices": [
+        "30 °C",
+        "5,6 °C",
+        "42 °C",
+        "0 °C"
+      ],
+      "answer": 0,
+      "explain": "Sinh trưởng tốt nhất.",
+      "wrong_explain": {
+        "1": "Điểm gây chết dưới.",
+        "2": "Điểm gây chết trên.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vùng có nhiệt độ năm 15–30 °C nên nuôi loài cá nào?",
+      "choices": [
+        "Loài chỉ sống 35–40 °C",
+        "Loài chỉ sống 0–10 °C",
+        "Loài nào cũng sống",
+        "Loài có giới hạn chứa 15–30 °C"
+      ],
+      "answer": 3,
+      "explain": "Giới hạn phải bao trùm khoảng nhiệt độ.",
+      "wrong_explain": {
+        "0": "Không phù hợp.",
+        "1": "Không phù hợp.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giới hạn sống 10–35 °C, nhiệt độ môi trường 8 °C. Thiếu bao nhiêu °C?",
+      "expr": "10-8",
+      "answer": "2",
+      "explain": "2."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Vì sao trồng cây ưa bóng dưới tán rừng cho năng suất cao?",
+      "choices": [
+        "Cần nhiều ánh sáng",
+        "Không cần nước",
+        "Phù hợp với cường độ ánh sáng thấp",
+        "Không cần đất"
+      ],
+      "answer": 2,
+      "explain": "Thích nghi.",
+      "wrong_explain": {
+        "0": "Là cây ưa sáng.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hai loài cá: A 5–35 °C, B 12–28 °C. Khoảng của A rộng hơn B bao nhiêu °C?",
+      "expr": "(35-5)-(28-12)",
+      "answer": "14",
+      "explain": "14."
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+{
+  "id": "bai-23",
+  "grade": 8,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 8",
+  "chapter": "Chương V. Điện",
+  "lesson": "Bài 23. Tác dụng của dòng điện",
+  "section": "",
+  "bookPage": 95,
+  "requirements": [
+    "Minh hoạ được các tác dụng cơ bản của dòng điện: nhiệt, phát sáng, hoá học, sinh lí.",
+    "Giải thích được vì sao nên dùng đèn LED thay cho đèn sợi đốt."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tác dụng nhiệt: vật dẫn nóng lên khi có dòng điện chạy qua (bàn là, bếp điện, nồi cơm điện, dây tóc bóng đèn, cầu chì)."
+    },
+    {
+      "type": "text",
+      "content": "Tác dụng phát sáng: dòng điện làm đèn phát sáng. Đèn LED (điốt phát quang) chỉ sáng khi dòng điện chạy qua đúng chiều (cực dương của đèn nối cực dương của nguồn) và cần mắc nối tiếp điện trở bảo vệ."
+    },
+    {
+      "type": "text",
+      "content": "Đèn LED tiết kiệm điện hơn đèn sợi đốt vì nhiệt toả ra không đáng kể, tuổi thọ rất lớn (có thể đến 100 000 giờ); LED còn ứng dụng trong y học (trẻ hoá da, trị mụn, vàng da sơ sinh)."
+    },
+    {
+      "type": "text",
+      "content": "Tác dụng hoá học: dòng điện chạy qua dung dịch muối copper(II) sulfate làm kim loại đồng tách ra bám vào điện cực nối với cực âm. Ứng dụng: mạ điện (vật cần mạ nối cực âm, kim loại mạ nối cực dương, nhúng trong dung dịch điện phân)."
+    },
+    {
+      "type": "text",
+      "content": "Tác dụng sinh lí: dòng điện đi qua cơ thể có thể làm co giật cơ, ngừng tim, ngạt thở, tê liệt thần kinh; cần dùng điện an toàn. Trong y học, sốc điện ngoài lồng ngực (khoảng 0,03 – 0,1 s) khôi phục nhịp tim."
+    },
+    {
+      "type": "text",
+      "content": "Biện pháp an toàn: không chạm vào dây điện trần, ổ điện hở; tránh xa trạm biến thế có biển “Nguy hiểm chết người”; ngắt điện trước khi sửa chữa."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một đèn LED có tuổi thọ 100 000 giờ, đèn sợi đốt có tuổi thọ 1 000 giờ. Tuổi thọ đèn LED gấp bao nhiêu lần?",
+      "steps": [
+        "Lấy tỉ số tuổi thọ.",
+        "100 000 / 1 000 = 100 lần."
+      ],
+      "expr": "100000/1000",
+      "answer": "100"
+    },
+    {
+      "problem": "Bàn là dùng điện 1 000 W trong 0,5 giờ. Năng lượng điện tiêu thụ là bao nhiêu Wh?",
+      "steps": [
+        "Năng lượng = công suất × thời gian.",
+        "1 000 × 0,5 = 500 Wh."
+      ],
+      "expr": "1000*0.5",
+      "answer": "500"
+    },
+    {
+      "problem": "Dạng xác định tác dụng: trong các thiết bị sau có bao nhiêu thiết bị chủ yếu dùng tác dụng nhiệt: bàn là, bếp điện, đèn LED, nồi cơm điện, quạt điện?",
+      "steps": [
+        "Tác dụng nhiệt chính: bàn là, bếp điện, nồi cơm điện.",
+        "Có 3 thiết bị."
+      ],
+      "expr": "1+1+1",
+      "answer": "3"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tác dụng nhiệt của dòng điện là:",
+      "choices": [
+        "Vật dẫn phát sáng",
+        "Vật dẫn nóng lên khi có dòng điện chạy qua",
+        "Chất bị tách khỏi dung dịch",
+        "Cơ co giật"
+      ],
+      "answer": 1,
+      "explain": "Ví dụ bàn là, bếp điện.",
+      "wrong_explain": {
+        "0": "Đó là tác dụng phát sáng.",
+        "2": "Đó là tác dụng hoá học.",
+        "3": "Đó là tác dụng sinh lí."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thiết bị nào hoạt động chủ yếu dựa vào tác dụng nhiệt?",
+      "choices": [
+        "Bàn là điện",
+        "Đèn LED",
+        "Quạt điện",
+        "Chuông điện"
+      ],
+      "answer": 0,
+      "explain": "Bàn là toả nhiệt khi có dòng điện.",
+      "wrong_explain": {
+        "1": "Chủ yếu phát sáng.",
+        "2": "Chủ yếu tác dụng từ.",
+        "3": "Dựa vào nam châm điện."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đèn LED chỉ sáng khi:",
+      "choices": [
+        "Dòng điện đi vào chiều bất kì",
+        "Không cần nguồn điện",
+        "Cực âm nối cực dương",
+        "Dòng điện đi vào đúng chiều (cực dương nối cực dương)"
+      ],
+      "answer": 3,
+      "explain": "LED có hai cực xác định.",
+      "wrong_explain": {
+        "0": "Phải đúng chiều.",
+        "1": "Cần.",
+        "2": "Không sáng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao nên dùng đèn LED thay cho đèn sợi đốt?",
+      "choices": [
+        "Toả nhiều nhiệt hơn",
+        "Tuổi thọ ngắn hơn",
+        "Tiết kiệm điện, ít toả nhiệt, tuổi thọ lớn",
+        "Dùng nhiều điện hơn"
+      ],
+      "answer": 2,
+      "explain": "LED ít nhiệt, bền.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "1": "Ngược lại.",
+        "3": "Ngược lại."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hiện tượng đồng bám vào điện cực khi cho dòng điện qua dung dịch CuSO₄ là tác dụng:",
+      "choices": [
+        "Nhiệt",
+        "Hoá học",
+        "Phát sáng",
+        "Sinh lí"
+      ],
+      "answer": 1,
+      "explain": "Dòng điện làm tách đồng khỏi dung dịch.",
+      "wrong_explain": {
+        "0": "Không phải.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Mạ điện ứng dụng tác dụng nào?",
+      "choices": [
+        "Hoá học của dòng điện",
+        "Nhiệt",
+        "Sinh lí",
+        "Từ"
+      ],
+      "answer": 0,
+      "explain": "Kim loại mạ bám lên vật nối cực âm.",
+      "wrong_explain": {
+        "1": "Không phải.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dòng điện đi qua cơ thể người có thể gây:",
+      "choices": [
+        "Tăng chiều cao",
+        "Làm da sáng",
+        "Tăng thị lực",
+        "Co giật cơ, ngừng tim, ngạt thở"
+      ],
+      "answer": 3,
+      "explain": "Tác dụng sinh lí của dòng điện.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đèn LED sống 50 000 giờ, đèn sợi đốt 1 000 giờ. LED sống gấp bao nhiêu lần?",
+      "expr": "50000/1000",
+      "answer": "50",
+      "explain": "50 lần."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bếp điện 2 000 W dùng 1,5 giờ. Năng lượng tiêu thụ (Wh) là:",
+      "expr": "2000*1.5",
+      "answer": "3000",
+      "explain": "3 000 Wh."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Khi bị điện giật, việc đầu tiên nên làm là:",
+      "choices": [
+        "Ngắt nguồn điện rồi dùng vật cách điện tách người bị nạn ra",
+        "Dùng tay kéo người bị nạn",
+        "Tạt nước vào người",
+        "Bỏ chạy"
+      ],
+      "answer": 0,
+      "explain": "Cần an toàn cho người cứu.",
+      "wrong_explain": {
+        "1": "Có thể bị giật theo.",
+        "2": "Nguy hiểm hơn.",
+        "3": "Không giúp người bị nạn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một gia đình thay 5 bóng sợi đốt 60 W bằng 5 bóng LED 10 W. Công suất tiêu thụ giảm bao nhiêu W?",
+      "expr": "5*60-5*10",
+      "answer": "250",
+      "explain": "Giảm 300 − 50 = 250 W."
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Để mạ nickel cho vỏ đèn pin kim loại cần:",
+      "choices": [
+        "Nối vỏ đèn với cực dương",
+        "Nhúng vào nước cất",
+        "Nối vỏ đèn với cực âm, tấm nickel với cực dương, nhúng trong dung dịch muối nickel",
+        "Đun nóng vỏ đèn"
+      ],
+      "answer": 2,
+      "explain": "Lớp nickel bám vào vật nối cực âm.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "1": "Không dẫn điện đủ.",
+        "3": "Không phải mạ điện."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Một đèn sợi đốt 60 W và một đèn LED 10 W cùng sáng 5 giờ. Đèn sợi đốt tiêu thụ nhiều hơn đèn LED bao nhiêu Wh?",
+      "expr": "(60-10)*5",
+      "answer": "250",
+      "explain": "(60 − 10) × 5 = 250 Wh."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Trạm biến thế có biển “Nguy hiểm chết người” vì:",
+      "choices": [
+        "Có nhiều khí độc",
+        "Hiệu điện thế rất cao có thể gây tử vong",
+        "Có nhiều nước",
+        "Có nam châm mạnh"
+      ],
+      "answer": 1,
+      "explain": "Tuyệt đối không lại gần.",
+      "wrong_explain": {
+        "0": "Không phải.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "concept": true
+    }
+  ]
+}

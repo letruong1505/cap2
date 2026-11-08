@@ -1,0 +1,311 @@
+{
+  "id": "bai-33",
+  "grade": 8,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 8",
+  "chapter": "Chương VII. Sinh học cơ thể người",
+  "lesson": "Bài 33. Máu và hệ tuần hoàn của cơ thể người",
+  "section": "",
+  "bookPage": 135,
+  "requirements": [
+    "Nêu chức năng máu và các thành phần; nhóm máu và truyền máu; miễn dịch, vaccine.",
+    "Nêu cấu tạo, chức năng hệ tuần hoàn; một số bệnh tim mạch và cách phòng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Máu gồm huyết tương (khoảng 55% thể tích máu, chủ yếu là nước, giúp máu lỏng và vận chuyển chất) và các tế bào máu (khoảng 45%): hồng cầu vận chuyển O₂ và CO₂; bạch cầu bảo vệ cơ thể; tiểu cầu tham gia làm đông máu."
+    },
+    {
+      "type": "text",
+      "content": "Kháng nguyên là chất khi xâm nhập cơ thể kích thích tạo kháng thể tương ứng. Kháng thể là protein do tế bào lympho B tạo ra, tương tác với kháng nguyên theo cơ chế chìa khoá – ổ khoá. Tế bào lympho B nhớ giúp cơ thể đáp ứng nhanh khi vi sinh vật cùng loại xâm nhập lại, tạo miễn dịch."
+    },
+    {
+      "type": "text",
+      "content": "Vaccine chứa mầm bệnh chết hoặc suy yếu, kích thích tạo kháng thể mà không gây bệnh nặng; kháng thể tồn tại lâu giúp cơ thể miễn dịch với bệnh đó."
+    },
+    {
+      "type": "text",
+      "content": "Hệ nhóm máu ABO gồm bốn nhóm A, B, AB, O, xác định theo kháng nguyên A, B trên hồng cầu và kháng thể α, β trong huyết tương. Khi truyền máu cần tránh kết dính: nên truyền cùng nhóm; nếu khác nhóm thì kháng thể của người nhận không được gây kết dính kháng nguyên của máu người cho."
+    },
+    {
+      "type": "text",
+      "content": "Hệ tuần hoàn gồm tim và hệ mạch (động mạch, mao mạch, tĩnh mạch), tạo thành hệ kín. Tim như chiếc bơm hút và đẩy máu qua vòng tuần hoàn lớn và nhỏ, vận chuyển chất dinh dưỡng, khí đến tế bào."
+    },
+    {
+      "type": "text",
+      "content": "Bệnh: thiếu máu (giảm hồng cầu hoặc hemoglobin, thường do thiếu sắt hoặc mất máu); huyết áp cao; xơ vữa động mạch (cholesterol cao làm hẹp lòng mạch, có thể gây đau tim, đột quỵ). Huyết áp bình thường: tối thiểu 60 đến dưới 90 mmHg, tối đa 90 đến dưới 140 mmHg."
+    },
+    {
+      "type": "text",
+      "content": "Đột quỵ có thể có biểu hiện đột ngột méo miệng, tê tay chân, nói khó; cần gọi cấp cứu 115, đặt nạn nhân nằm nghiêng. Với chảy máu động mạch ở tay, chân: ấn vào động mạch, buộc dây garô cao hơn vết thương về phía tim rồi đưa đi cơ sở y tế."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Huyết tương chiếm khoảng 55% thể tích máu. Máu 5 lít thì huyết tương khoảng bao nhiêu lít?",
+      "steps": [
+        "5 × 55/100.",
+        "2,75 lít."
+      ],
+      "expr": "5*55/100",
+      "answer": "2.75"
+    },
+    {
+      "problem": "Huyết áp đo được: tối đa 120 mmHg, tối thiểu 80 mmHg. Hiệu số giữa chúng là bao nhiêu mmHg?",
+      "steps": [
+        "120 − 80 = 40."
+      ],
+      "expr": "120-80",
+      "answer": "40"
+    },
+    {
+      "problem": "Dạng đếm: có 4 nhóm máu trong hệ ABO. Người nhóm O nhận được máu của bao nhiêu nhóm (theo sơ đồ truyền máu cùng nhóm, chỉ nhận O)?",
+      "steps": [
+        "Người nhóm O chỉ nhận máu O.",
+        "1 nhóm."
+      ],
+      "expr": "1",
+      "answer": "1"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thành phần nào của máu vận chuyển O₂?",
+      "choices": [
+        "Bạch cầu",
+        "Hồng cầu",
+        "Tiểu cầu",
+        "Huyết tương"
+      ],
+      "answer": 1,
+      "explain": "Hồng cầu chứa hemoglobin.",
+      "wrong_explain": {
+        "0": "Bảo vệ.",
+        "2": "Đông máu.",
+        "3": "Vận chuyển chất chung."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tiểu cầu có chức năng:",
+      "choices": [
+        "Tham gia làm đông máu",
+        "Vận chuyển O₂",
+        "Tiêu diệt vi khuẩn",
+        "Tạo huyết tương"
+      ],
+      "answer": 0,
+      "explain": "Cầm máu.",
+      "wrong_explain": {
+        "1": "Hồng cầu.",
+        "2": "Bạch cầu.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kháng thể do tế bào nào tạo ra?",
+      "choices": [
+        "Hồng cầu",
+        "Tiểu cầu",
+        "Tế bào cơ",
+        "Tế bào lympho B"
+      ],
+      "answer": 3,
+      "explain": "Bạch cầu lympho B.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vaccine có tác dụng:",
+      "choices": [
+        "Làm bệnh nặng hơn",
+        "Thay thế máu",
+        "Kích thích cơ thể tạo kháng thể, tạo miễn dịch",
+        "Giảm thân nhiệt"
+      ],
+      "answer": 2,
+      "explain": "Phòng bệnh.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hệ nhóm máu phổ biến nhất là:",
+      "choices": [
+        "Hệ XYZ",
+        "Hệ ABO",
+        "Hệ DNA",
+        "Hệ MNP"
+      ],
+      "answer": 1,
+      "explain": "Gồm A, B, AB, O.",
+      "wrong_explain": {
+        "0": "Không có.",
+        "2": "Không phải.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hệ mạch gồm:",
+      "choices": [
+        "Động mạch, mao mạch, tĩnh mạch",
+        "Khí quản, phế quản",
+        "Thực quản, ruột",
+        "Thận, bóng đái"
+      ],
+      "answer": 0,
+      "explain": "Hệ kín.",
+      "wrong_explain": {
+        "1": "Hô hấp.",
+        "2": "Tiêu hoá.",
+        "3": "Bài tiết."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Thiếu máu dinh dưỡng thường do thiếu:",
+      "choices": [
+        "Calcium",
+        "Iodine",
+        "Vitamin D",
+        "Sắt"
+      ],
+      "answer": 3,
+      "explain": "Sắt tạo hemoglobin.",
+      "wrong_explain": {
+        "0": "Loãng xương.",
+        "1": "Bướu cổ.",
+        "2": "Còi xương."
+      },
+      "concept": true
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Huyết tương 55% thì tế bào máu chiếm bao nhiêu % thể tích máu?",
+      "expr": "100-55",
+      "answer": "45",
+      "explain": "45%."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Huyết áp tối đa 130, tối thiểu 85. Hiệu số (mmHg) là:",
+      "expr": "130-85",
+      "answer": "45",
+      "explain": "45."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Người có nhóm máu O nhận được máu cùng nhóm nào an toàn nhất?",
+      "choices": [
+        "Nhóm O",
+        "A",
+        "B",
+        "AB"
+      ],
+      "answer": 0,
+      "explain": "O không có kháng nguyên A, B trên hồng cầu nhưng có kháng thể α và β.",
+      "wrong_explain": {
+        "1": "Kháng thể α gây kết dính.",
+        "2": "Kháng thể β gây kết dính.",
+        "3": "Gây kết dính."
+      },
+      "concept": true
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vì sao truyền nhầm nhóm máu nguy hiểm?",
+      "choices": [
+        "Máu quá loãng",
+        "Tim ngừng ngay",
+        "Chỉ gây ngứa",
+        "Hồng cầu bị kết dính, tắc mạch"
+      ],
+      "answer": 3,
+      "explain": "Kháng thể gây kết dính.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không chính xác.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hiến máu 350 mL, người có 5 000 mL máu. Phần trăm máu đã hiến là bao nhiêu %?",
+      "expr": "350*100/5000",
+      "answer": "7",
+      "explain": "7%."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Khi sơ cứu người chảy máu động mạch tay, dây garô buộc ở đâu?",
+      "choices": [
+        "Thấp hơn vết thương",
+        "Ở cổ",
+        "Cao hơn vết thương về phía tim",
+        "Ở bụng"
+      ],
+      "answer": 2,
+      "explain": "Chặn máu từ tim chảy ra.",
+      "wrong_explain": {
+        "0": "Sai.",
+        "1": "Sai.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Nhịp tim 72 lần/phút. Trong 5 phút tim đập bao nhiêu lần?",
+      "expr": "72*5",
+      "answer": "360",
+      "explain": "360 lần."
+    }
+  ]
+}

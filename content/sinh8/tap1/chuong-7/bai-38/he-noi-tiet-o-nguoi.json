@@ -1,0 +1,292 @@
+{
+  "id": "bai-38",
+  "grade": 8,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 8",
+  "chapter": "Chương VII. Sinh học cơ thể người",
+  "lesson": "Bài 38. Hệ nội tiết ở người",
+  "section": "",
+  "bookPage": 157,
+  "requirements": [
+    "Kể tên và nêu chức năng các tuyến nội tiết; bệnh nội tiết và cách phòng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các tuyến nội tiết tiết hormone vận chuyển theo đường máu đến cơ quan đích, điều khiển và điều hoà hoạt động, duy trì ổn định môi trường trong. Hormone có hoạt tính sinh học cao nên chỉ một lượng nhỏ cũng có hiệu quả rõ rệt."
+    },
+    {
+      "type": "text",
+      "content": "Tuyến yên tiết hormone kích thích nhiều tuyến khác, ảnh hưởng tăng trưởng. Tuyến giáp tiết thyroxine (chứa iodine) điều hoà trao đổi chất. Tuyến tuỵ tiết insulin (giảm đường huyết) và glucagon (tăng đường huyết). Tuyến trên thận tiết adrenaline, noradrenaline. Tuyến sinh dục: tinh hoàn tiết testosterone, buồng trứng tiết estrogen."
+    },
+    {
+      "type": "text",
+      "content": "Bệnh đái tháo đường do thiếu insulin hoặc insulin giảm tác dụng, glucose máu tăng; triệu chứng ăn nhiều, uống nhiều, tiểu nhiều, sụt cân. Bệnh bướu cổ do thiếu iodine: tuyến giáp phì đại; phòng bằng muối iodine, thực phẩm giàu iodine."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Ăn uống tiết chế: lượng đường khuyến nghị 50 g/ngày. Trong 7 ngày tối đa là bao nhiêu g?",
+      "steps": [
+        "50 × 7 = 350 g."
+      ],
+      "expr": "50*7",
+      "answer": "350"
+    },
+    {
+      "problem": "Có 5 tuyến nội tiết kể trong sách (yên, giáp, tuỵ, trên thận, sinh dục). Bỏ tuyến tuỵ thì còn bao nhiêu tuyến?",
+      "steps": [
+        "5 − 1 = 4."
+      ],
+      "expr": "5-1",
+      "answer": "4"
+    },
+    {
+      "problem": "Dạng tính: glucose máu 8,4 mmol/L, giới hạn bình thường 6,4. Cao hơn bao nhiêu mmol/L?",
+      "steps": [
+        "8,4 − 6,4 = 2,0."
+      ],
+      "expr": "84/10-64/10",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tuyến nội tiết tiết ra:",
+      "choices": [
+        "Enzyme tiêu hoá",
+        "Hormone",
+        "Mồ hôi",
+        "Nước bọt"
+      ],
+      "answer": 1,
+      "explain": "Hormone theo máu đến cơ quan đích.",
+      "wrong_explain": {
+        "0": "Là tuyến tiêu hoá.",
+        "2": "Tuyến mồ hôi.",
+        "3": "Tuyến nước bọt."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Insulin do tuyến nào tiết ra?",
+      "choices": [
+        "Tuyến tuỵ",
+        "Tuyến giáp",
+        "Tuyến yên",
+        "Tuyến sinh dục"
+      ],
+      "answer": 0,
+      "explain": "Giảm đường huyết.",
+      "wrong_explain": {
+        "1": "Thyroxine.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hormone thyroxine chứa:",
+      "choices": [
+        "Sắt",
+        "Calcium",
+        "Kẽm",
+        "Iodine"
+      ],
+      "answer": 3,
+      "explain": "Thiếu iodine gây bướu cổ.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Bệnh bướu cổ do thiếu:",
+      "choices": [
+        "Sắt",
+        "Calcium",
+        "Iodine",
+        "Vitamin C"
+      ],
+      "answer": 2,
+      "explain": "Tuyến giáp phì đại.",
+      "wrong_explain": {
+        "0": "Thiếu máu.",
+        "1": "Loãng xương.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Triệu chứng điển hình của đái tháo đường:",
+      "choices": [
+        "Ho kéo dài",
+        "Ăn nhiều, uống nhiều, tiểu nhiều, sụt cân",
+        "Đau mắt",
+        "Cận thị"
+      ],
+      "answer": 1,
+      "explain": "Do đường huyết cao.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Testosterone do bộ phận nào tiết ra?",
+      "choices": [
+        "Tinh hoàn",
+        "Buồng trứng",
+        "Tuyến giáp",
+        "Gan"
+      ],
+      "answer": 0,
+      "explain": "Kích thích sinh tinh trùng.",
+      "wrong_explain": {
+        "1": "Estrogen.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hormone glucagon có tác dụng:",
+      "choices": [
+        "Giảm đường huyết",
+        "Tăng nhịp tim",
+        "Tiêu hoá tinh bột",
+        "Làm tăng đường huyết"
+      ],
+      "answer": 3,
+      "explain": "Cùng insulin điều hoà đường huyết.",
+      "wrong_explain": {
+        "0": "Là insulin.",
+        "1": "Adrenaline.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tuyến nội tiết kể trong sách: yên, giáp, tuỵ, trên thận, sinh dục. Có bao nhiêu tuyến?",
+      "expr": "1+1+1+1+1",
+      "answer": "5",
+      "explain": "5."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Glucose 8,4 và giới hạn 6,4. Hiệu (mmol/L):",
+      "expr": "84/10-64/10",
+      "answer": "2",
+      "explain": "2."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vì sao hormone tuyến tuỵ giúp ổn định đường huyết?",
+      "choices": [
+        "Insulin hạ, glucagon nâng đường huyết khi cần",
+        "Chỉ nâng đường",
+        "Chỉ hạ đường",
+        "Không liên quan"
+      ],
+      "answer": 0,
+      "explain": "Cơ chế điều hoà ngược.",
+      "wrong_explain": {
+        "1": "Còn hạ.",
+        "2": "Còn nâng.",
+        "3": "Có."
+      },
+      "concept": true
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Người lớn thiếu iodine kéo dài có thể gặp:",
+      "choices": [
+        "Tăng chiều cao",
+        "Cận thị",
+        "Sâu răng",
+        "Phì đại tuyến giáp, giảm trí nhớ"
+      ],
+      "answer": 3,
+      "explain": "Thiếu TH.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dùng muối iodine: mỗi người 5 g/ngày, gia đình 4 người dùng bao nhiêu g/ngày?",
+      "expr": "5*4",
+      "answer": "20",
+      "explain": "20 g."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Biện pháp bảo vệ hệ nội tiết:",
+      "choices": [
+        "Ăn nhiều đường",
+        "Thiếu iodine",
+        "Ăn uống cân đối, đủ iodine, hạn chế đường, vận động",
+        "Ít vận động"
+      ],
+      "answer": 2,
+      "explain": "Lối sống lành mạnh.",
+      "wrong_explain": {
+        "0": "Hại.",
+        "1": "Bướu cổ.",
+        "3": "Hại."
+      },
+      "concept": true
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Một người cao 2,51 m. Đổi ra cm là bao nhiêu?",
+      "expr": "251*100/100",
+      "answer": "251",
+      "explain": "251 cm."
+    }
+  ]
+}

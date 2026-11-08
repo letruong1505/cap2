@@ -1,0 +1,296 @@
+{
+  "id": "bai-18",
+  "grade": 8,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 8",
+  "chapter": "Chương IV. Tác dụng làm quay của lực",
+  "lesson": "Bài 18. Tác dụng làm quay của lực. Moment",
+  "section": "",
+  "bookPage": 76,
+  "requirements": [
+    "Thực hiện thí nghiệm mô tả tác dụng làm quay của lực.",
+    "Nêu được tác dụng làm quay của lực lên một vật quanh một điểm hoặc một trục được đặc trưng bằng moment lực.",
+    "Giải thích được cách dùng cờ lê vặn ốc, cách đạp pê-đan xe đạp."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Lực có thể làm một vật quay quanh trục cố định. Khi giá của lực cắt trục quay hoặc song song với trục quay thì lực không làm vật quay; khi giá của lực không song song và không cắt trục quay thì lực có thể làm vật quay."
+    },
+    {
+      "type": "text",
+      "content": "Tác dụng làm quay của lực lên một vật quanh một điểm hoặc một trục được đặc trưng bằng moment lực."
+    },
+    {
+      "type": "text",
+      "content": "Lực càng lớn thì moment lực càng lớn, tác dụng làm quay càng lớn."
+    },
+    {
+      "type": "text",
+      "content": "Giá của lực càng cách xa trục quay thì moment lực càng lớn, tác dụng làm quay càng lớn. Vì vậy đẩy cửa ở xa bản lề dễ hơn gần bản lề."
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: cờ lê tay dài vặn ốc dễ hơn; đặt chân lên pê-đan khi bắt đầu đạp xe theo phương vuông góc với cần đạp để moment lớn nhất; tay nắm cửa đặt xa bản lề."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hai lực cùng độ lớn 20 N, một lực cách trục quay 0,5 m, lực kia cách 0,25 m. Lực nào có tác dụng làm quay lớn hơn và khoảng cách của lực đó gấp mấy lần lực kia?",
+      "steps": [
+        "Cùng độ lớn thì lực có giá cách trục xa hơn có moment lớn hơn.",
+        "0,5 / 0,25 = 2 lần."
+      ],
+      "expr": "50/25",
+      "answer": "2"
+    },
+    {
+      "problem": "Khi vặn ốc bằng cờ lê dài 15 cm, nếu thay bằng cờ lê dài 30 cm thì khoảng cách từ tay đến trục quay gấp mấy lần?",
+      "steps": [
+        "Khoảng cách tỉ lệ với chiều dài cờ lê.",
+        "30 / 15 = 2 lần."
+      ],
+      "expr": "30/15",
+      "answer": "2"
+    },
+    {
+      "problem": "Dạng so sánh moment: lực F₁ = 10 N cách trục 0,4 m, lực F₂ = 10 N cách trục 0,2 m. Hỏi khoảng cách lực F₁ gấp mấy lần F₂ (và vì thế moment của F₁ lớn hơn)?",
+      "steps": [
+        "Cùng độ lớn thì khoảng cách xa hơn cho moment lớn hơn.",
+        "0,4 / 0,2 = 2 lần."
+      ],
+      "expr": "4/2",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tác dụng làm quay của lực được đặc trưng bằng đại lượng nào?",
+      "choices": [
+        "Áp suất",
+        "Moment lực",
+        "Khối lượng riêng",
+        "Cường độ dòng điện"
+      ],
+      "answer": 1,
+      "explain": "Moment lực đặc trưng tác dụng làm quay.",
+      "wrong_explain": {
+        "0": "Đặc trưng cho tác dụng ép.",
+        "2": "Đặc trưng cho chất.",
+        "3": "Đặc trưng cho dòng điện."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Lực KHÔNG làm quay vật quanh trục khi:",
+      "choices": [
+        "Giá của lực cắt trục quay",
+        "Giá của lực không cắt và không song song với trục",
+        "Lực tác dụng xa trục",
+        "Lực rất lớn"
+      ],
+      "answer": 0,
+      "explain": "Khi giá của lực cắt trục quay thì không làm vật quay.",
+      "wrong_explain": {
+        "1": "Có thể làm quay.",
+        "2": "Có thể làm quay.",
+        "3": "Còn phụ thuộc giá của lực."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Với cùng một lực, tác dụng làm quay lớn hơn khi:",
+      "choices": [
+        "Giá của lực gần trục hơn",
+        "Lực tác dụng vào đúng trục",
+        "Vật nhẹ hơn",
+        "Giá của lực cách trục quay xa hơn"
+      ],
+      "answer": 3,
+      "explain": "Giá của lực càng xa trục thì moment càng lớn.",
+      "wrong_explain": {
+        "0": "Moment nhỏ hơn.",
+        "1": "Không làm quay.",
+        "2": "Không liên quan."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao tay nắm cửa được đặt xa bản lề?",
+      "choices": [
+        "Để cửa nặng hơn",
+        "Để đẹp",
+        "Để moment lực lớn, mở cửa dễ hơn",
+        "Để cửa không đóng"
+      ],
+      "answer": 2,
+      "explain": "Cánh tay đòn lớn nên moment lớn.",
+      "wrong_explain": {
+        "0": "Không phải.",
+        "1": "Không phải mục đích vật lí.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dùng cờ lê có cán dài vặn ốc dễ hơn vì:",
+      "choices": [
+        "Giảm lực của tay",
+        "Tăng khoảng cách từ giá của lực đến trục quay",
+        "Giảm khối lượng ốc",
+        "Tăng ma sát"
+      ],
+      "answer": 1,
+      "explain": "Moment lực tăng khi khoảng cách tăng.",
+      "wrong_explain": {
+        "0": "Lực tay có thể không đổi.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi lực tăng gấp đôi và giá của lực không đổi thì moment lực:",
+      "choices": [
+        "Tăng",
+        "Giảm",
+        "Không đổi",
+        "Bằng 0"
+      ],
+      "answer": 0,
+      "explain": "Lực càng lớn moment lực càng lớn.",
+      "wrong_explain": {
+        "1": "Ngược lại.",
+        "2": "Có thay đổi.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cờ lê dài 20 cm được thay bằng cờ lê dài 40 cm. Khoảng cách từ tay đến trục gấp bao nhiêu lần?",
+      "expr": "40/20",
+      "answer": "2",
+      "explain": "40 / 20 = 2 lần."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lực đặt cách trục 0,1 m được dời ra cách 0,3 m. Khoảng cách tăng lên bao nhiêu lần?",
+      "expr": "3/1",
+      "answer": "3",
+      "explain": "0,3 / 0,1 = 3 lần."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi đạp xe, lực của chân tác dụng lên pê-đan cho tác dụng làm quay lớn nhất khi lực:",
+      "choices": [
+        "Song song với cần đạp",
+        "Vuông góc với cần đạp",
+        "Hướng thẳng vào trục",
+        "Rất nhỏ"
+      ],
+      "answer": 1,
+      "explain": "Lực vuông góc với cần đạp cho moment lớn nhất ở cùng độ lớn lực.",
+      "wrong_explain": {
+        "0": "Khi đó giá lực cắt trục, không làm quay.",
+        "2": "Không làm quay.",
+        "3": "Moment nhỏ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Muốn moment lực gấp 4 lần với cùng một lực, khoảng cách từ giá của lực đến trục phải gấp bao nhiêu lần?",
+      "expr": "4*1",
+      "answer": "4",
+      "explain": "Moment tỉ lệ thuận với khoảng cách nên phải gấp 4 lần."
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Người nhỏ nhẹ mở được cánh cửa nặng nhờ:",
+      "choices": [
+        "Đẩy gần bản lề",
+        "Đẩy vào đúng bản lề",
+        "Tăng ma sát bản lề",
+        "Đẩy ở xa bản lề để tăng moment lực"
+      ],
+      "answer": 3,
+      "explain": "Tay đặt xa bản lề.",
+      "wrong_explain": {
+        "0": "Moment nhỏ.",
+        "1": "Không làm quay.",
+        "2": "Khó mở hơn."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Hai người cùng đẩy một cánh cửa với lực như nhau, người A đẩy cách bản lề 0,8 m, người B đẩy cách 0,2 m. Ai làm cửa quay dễ hơn?",
+      "choices": [
+        "Người B, vì đứng gần bản lề hơn",
+        "Hai người như nhau",
+        "Người A, vì giá của lực xa trục quay hơn",
+        "Không ai làm quay được"
+      ],
+      "answer": 2,
+      "explain": "Cùng lực, giá của lực càng xa trục thì moment càng lớn.",
+      "wrong_explain": {
+        "0": "Gần trục thì moment nhỏ.",
+        "1": "Khoảng cách khác nhau.",
+        "3": "Cả hai đều có thể làm quay."
+      },
+      "concept": true
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Tại sao tay đẩy cửa sát bản lề khó làm cửa quay?",
+      "choices": [
+        "Cửa nặng hơn",
+        "Cánh tay đòn rất nhỏ nên moment lực nhỏ",
+        "Bản lề trơn hơn",
+        "Lực bị mất đi"
+      ],
+      "answer": 1,
+      "explain": "Giá của lực gần trục nên moment nhỏ.",
+      "wrong_explain": {
+        "0": "Không đổi.",
+        "2": "Không liên quan.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    }
+  ]
+}

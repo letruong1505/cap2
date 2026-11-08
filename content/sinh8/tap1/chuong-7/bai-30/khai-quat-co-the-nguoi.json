@@ -1,0 +1,283 @@
+{
+  "id": "bai-30",
+  "grade": 8,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 8",
+  "chapter": "Chương VII. Sinh học cơ thể người",
+  "lesson": "Bài 30. Khái quát về cơ thể người",
+  "section": "",
+  "bookPage": 123,
+  "requirements": [
+    "Nêu được tên và vai trò chính của các cơ quan, hệ cơ quan trong cơ thể người."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cơ thể người gồm các phần: đầu, cổ, thân, hai tay và hai chân. Toàn bộ cơ thể được bao bọc bên ngoài bởi lớp da, dưới da là lớp mỡ, dưới lớp mỡ là cơ và xương."
+    },
+    {
+      "type": "text",
+      "content": "Các hệ cơ quan trong cơ thể người gồm: hệ vận động, hệ tuần hoàn, hệ hô hấp, hệ tiêu hoá, hệ bài tiết, hệ thần kinh và các giác quan, hệ nội tiết, hệ sinh dục (tám hệ cơ quan)."
+    },
+    {
+      "type": "text",
+      "content": "Vai trò chính: hệ vận động định hình cơ thể, bảo vệ nội quan, giúp cơ thể cử động và di chuyển; hệ tuần hoàn vận chuyển chất dinh dưỡng, oxygen, hormone đến tế bào và vận chuyển chất thải đến cơ quan bài tiết; hệ hô hấp lấy O₂ và thải CO₂; hệ tiêu hoá biến đổi thức ăn thành chất dinh dưỡng và thải chất bã."
+    },
+    {
+      "type": "text",
+      "content": "Hệ bài tiết (phổi, thận, da) lọc chất thải có hại; hệ thần kinh và các giác quan thu nhận kích thích, điều khiển, điều hoà hoạt động; hệ nội tiết tiết hormone điều hoà hoạt động; hệ sinh dục giúp sinh sản, duy trì nòi giống."
+    },
+    {
+      "type": "text",
+      "content": "Mỗi cơ quan, hệ cơ quan có vai trò nhất định và có mối liên quan chặt chẽ với nhau, cùng hoạt động như một thể thống nhất."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cơ thể người có các hệ cơ quan: vận động, tuần hoàn, hô hấp, tiêu hoá, bài tiết, thần kinh và giác quan, nội tiết, sinh dục. Có bao nhiêu hệ cơ quan?",
+      "steps": [
+        "Đếm các hệ cơ quan đã liệt kê.",
+        "1+1+1+1+1+1+1+1 = 8 hệ."
+      ],
+      "expr": "1+1+1+1+1+1+1+1",
+      "answer": "8"
+    },
+    {
+      "problem": "Cơ thể người gồm đầu, cổ, thân, hai tay và hai chân. Có bao nhiêu phần (tính cả hai tay và hai chân riêng)?",
+      "steps": [
+        "Đầu 1, cổ 1, thân 1, tay 2, chân 2.",
+        "1+1+1+2+2 = 7."
+      ],
+      "expr": "1+1+1+2+2",
+      "answer": "7"
+    },
+    {
+      "problem": "Dạng đếm: trong 8 hệ cơ quan, các hệ gồm cơ quan tham gia bài tiết trong sách là phổi, thận, da (3 cơ quan). Nếu thêm gan thì có bao nhiêu cơ quan?",
+      "steps": [
+        "Cách làm: cộng thêm 1 vào 3.",
+        "3+1 = 4."
+      ],
+      "expr": "3+1",
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Cơ thể người gồm các phần:",
+      "choices": [
+        "Chỉ đầu và thân",
+        "Đầu, cổ, thân, hai tay và hai chân",
+        "Đầu, thân và đuôi",
+        "Chỉ tay và chân"
+      ],
+      "answer": 1,
+      "explain": "Cơ thể gồm đầu, cổ, thân, tay, chân.",
+      "wrong_explain": {
+        "0": "Còn cổ và tứ chi.",
+        "2": "Người không có đuôi.",
+        "3": "Thiếu các phần khác."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hệ nào dưới đây là một hệ cơ quan của cơ thể người?",
+      "choices": [
+        "Hệ nội tiết",
+        "Hệ quang hợp",
+        "Hệ rễ",
+        "Hệ thân"
+      ],
+      "answer": 0,
+      "explain": "Người có hệ nội tiết.",
+      "wrong_explain": {
+        "1": "Là của thực vật.",
+        "2": "Là của thực vật.",
+        "3": "Không phải hệ cơ quan người."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hệ vận động có vai trò:",
+      "choices": [
+        "Lọc máu",
+        "Tiết hormone",
+        "Thu nhận ánh sáng",
+        "Định hình cơ thể, bảo vệ nội quan, giúp cơ thể cử động"
+      ],
+      "answer": 3,
+      "explain": "Cơ, xương, khớp.",
+      "wrong_explain": {
+        "0": "Là hệ bài tiết.",
+        "1": "Là hệ nội tiết.",
+        "2": "Là thị giác."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hệ tuần hoàn gồm:",
+      "choices": [
+        "Phổi và khí quản",
+        "Dạ dày và ruột",
+        "Tim và mạch máu",
+        "Não và tuỷ sống"
+      ],
+      "answer": 2,
+      "explain": "Tim và hệ mạch.",
+      "wrong_explain": {
+        "0": "Hệ hô hấp.",
+        "1": "Hệ tiêu hoá.",
+        "3": "Hệ thần kinh."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cơ quan nào dưới đây thuộc hệ hô hấp?",
+      "choices": [
+        "Thận",
+        "Phổi",
+        "Dạ dày",
+        "Tim"
+      ],
+      "answer": 1,
+      "explain": "Phổi là cơ quan trao đổi khí.",
+      "wrong_explain": {
+        "0": "Hệ bài tiết.",
+        "2": "Hệ tiêu hoá.",
+        "3": "Hệ tuần hoàn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hệ thần kinh có vai trò:",
+      "choices": [
+        "Thu nhận kích thích, điều khiển và điều hoà hoạt động các cơ quan",
+        "Biến đổi thức ăn",
+        "Vận chuyển oxygen",
+        "Sản xuất tinh trùng"
+      ],
+      "answer": 0,
+      "explain": "Giúp cơ thể thích nghi với môi trường.",
+      "wrong_explain": {
+        "1": "Là hệ tiêu hoá.",
+        "2": "Là hệ tuần hoàn.",
+        "3": "Là hệ sinh dục."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cơ thể người có bao nhiêu hệ cơ quan (theo sách)?",
+      "expr": "4+4",
+      "answer": "8",
+      "explain": "Có 8 hệ cơ quan."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong hệ bài tiết có phổi, thận, da. Có bao nhiêu cơ quan được kể tên?",
+      "expr": "1+1+1",
+      "answer": "3",
+      "explain": "Có 3 cơ quan."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao nói cơ thể là một thể thống nhất?",
+      "choices": [
+        "Mỗi hệ hoạt động hoàn toàn độc lập",
+        "Các hệ cơ quan có mối liên quan chặt chẽ và phối hợp hoạt động",
+        "Chỉ não làm việc",
+        "Chúng có cấu tạo giống nhau"
+      ],
+      "answer": 1,
+      "explain": "Hệ thần kinh và nội tiết điều hoà các hệ khác.",
+      "wrong_explain": {
+        "0": "Chúng phối hợp.",
+        "2": "Mọi hệ đều hoạt động.",
+        "3": "Khác nhau."
+      },
+      "concept": true
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Hệ nào đảm nhận duy trì nòi giống?",
+      "choices": [
+        "Hệ sinh dục",
+        "Hệ tiêu hoá",
+        "Hệ hô hấp",
+        "Hệ vận động"
+      ],
+      "answer": 0,
+      "explain": "Sinh sản.",
+      "wrong_explain": {
+        "1": "Biến đổi thức ăn.",
+        "2": "Trao đổi khí.",
+        "3": "Cử động."
+      },
+      "concept": true
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có 8 hệ cơ quan, trong đó hệ vận động và hệ tuần hoàn là 2 hệ. Còn lại bao nhiêu hệ?",
+      "expr": "8-2",
+      "answer": "6",
+      "explain": "Còn 6 hệ."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Bạn A ăn uống thiếu khoa học khiến cơ thể mệt mỏi, hệ nào chịu ảnh hưởng trực tiếp đầu tiên?",
+      "choices": [
+        "Hệ sinh dục",
+        "Hệ thần kinh duy nhất",
+        "Hệ tiêu hoá",
+        "Hệ nội tiết duy nhất"
+      ],
+      "answer": 2,
+      "explain": "Ăn uống tác động đến tiêu hoá, rồi ảnh hưởng toàn cơ thể.",
+      "wrong_explain": {
+        "0": "Không trực tiếp.",
+        "1": "Không chỉ một hệ.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Thận thải tới 90% sản phẩm bài tiết. Các cơ quan khác thải bao nhiêu phần trăm?",
+      "expr": "100-90",
+      "answer": "10",
+      "explain": "10%."
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "id": "bai-39",
+  "grade": 8,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 8",
+  "chapter": "Chương VII. Sinh học cơ thể người",
+  "lesson": "Bài 39. Da và điều hoà thân nhiệt ở người",
+  "section": "",
+  "bookPage": 160,
+  "requirements": [
+    "Nêu cấu tạo và chức năng của da; bệnh da và bảo vệ da.",
+    "Nêu khái niệm thân nhiệt, cơ chế điều hoà thân nhiệt, phòng chống nóng lạnh."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Da gồm lớp biểu bì, lớp bì và lớp mỡ dưới da. Da bảo vệ cơ thể, chống thấm nước và mất nước, tham gia điều hoà thân nhiệt, nhận kích thích nhờ thụ quan và bài tiết mồ hôi."
+    },
+    {
+      "type": "text",
+      "content": "Thân nhiệt là nhiệt độ của cơ thể, bình thường khoảng 37 °C và dao động không quá 0,5 °C. Nhiệt độ dưới 35 °C hoặc trên 38 °C có thể làm rối loạn tim, thần kinh và các cơ quan."
+    },
+    {
+      "type": "text",
+      "content": "Khi nóng: mạch máu dưới da dãn, tăng tiết mồ hôi, tăng toả nhiệt. Khi lạnh: mạch co, giảm tiết mồ hôi, run, tăng phân giải chất để sinh nhiệt. Da có vai trò quan trọng nhất; hệ thần kinh giữ vai trò chủ đạo vì đó là phản xạ."
+    },
+    {
+      "type": "text",
+      "content": "Chống nóng: đội mũ nón, uống đủ nước, tránh nắng gắt, không tắm ngay khi ra nhiều mồ hôi. Chống lạnh: giữ ấm ngực, cổ, tay, chân, tập thể dục. Phòng cảm lạnh: vệ sinh mũi họng, súc họng nước muối sinh lí, uống nước ấm."
+    },
+    {
+      "type": "text",
+      "content": "Ghép da giúp cứu chữa người bỏng nặng, nhiễm trùng da. Bệnh về da như hắc lào, ghẻ; phòng bằng vệ sinh da sạch sẽ, không dùng chung đồ."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Thân nhiệt bình thường 37 °C, dao động tối đa 0,5 °C. Giá trị cao nhất bình thường là bao nhiêu °C?",
+      "steps": [
+        "37 + 0,5 = 37,5."
+      ],
+      "expr": "37+0.5",
+      "answer": "37.5"
+    },
+    {
+      "problem": "Thân nhiệt khi sốt 39 °C, mức bình thường 37 °C. Cao hơn bao nhiêu °C?",
+      "steps": [
+        "39 − 37 = 2."
+      ],
+      "expr": "39-37",
+      "answer": "2"
+    },
+    {
+      "problem": "Dạng khoảng an toàn: từ 35 °C đến 38 °C. Khoảng rộng bao nhiêu °C?",
+      "steps": [
+        "38 − 35 = 3."
+      ],
+      "expr": "38-35",
+      "answer": "3"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Da gồm các lớp:",
+      "choices": [
+        "Xương, cơ, khớp",
+        "Biểu bì, bì và mỡ dưới da",
+        "Não, tuỷ",
+        "Phổi, tim"
+      ],
+      "answer": 1,
+      "explain": "Cấu tạo da.",
+      "wrong_explain": {
+        "0": "Hệ vận động.",
+        "2": "Thần kinh.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thân nhiệt bình thường của người khoảng:",
+      "choices": [
+        "37 °C",
+        "30 °C",
+        "42 °C",
+        "25 °C"
+      ],
+      "answer": 0,
+      "explain": "Dao động không quá 0,5 °C.",
+      "wrong_explain": {
+        "1": "Quá thấp.",
+        "2": "Quá cao.",
+        "3": "Quá thấp."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi trời nóng, cơ thể toả nhiệt bằng cách:",
+      "choices": [
+        "Run",
+        "Co mạch",
+        "Ngừng tiết mồ hôi",
+        "Dãn mạch máu dưới da và tăng tiết mồ hôi"
+      ],
+      "answer": 3,
+      "explain": "Tăng toả nhiệt.",
+      "wrong_explain": {
+        "0": "Khi lạnh.",
+        "1": "Khi lạnh.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi trời lạnh, cơ thể có phản ứng:",
+      "choices": [
+        "Dãn mạch",
+        "Tiết nhiều mồ hôi",
+        "Run, co mạch, giảm toả nhiệt",
+        "Không thay đổi"
+      ],
+      "answer": 2,
+      "explain": "Giữ nhiệt.",
+      "wrong_explain": {
+        "0": "Khi nóng.",
+        "1": "Khi nóng.",
+        "3": "Có thay đổi."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Bộ phận giữ vai trò chủ đạo điều hoà thân nhiệt:",
+      "choices": [
+        "Hệ tiêu hoá",
+        "Hệ thần kinh",
+        "Hệ vận động",
+        "Hệ sinh dục"
+      ],
+      "answer": 1,
+      "explain": "Phản xạ điều hoà thân nhiệt.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi ra nhiều mồ hôi sau vận động, nên:",
+      "choices": [
+        "Lau khô, không tắm ngay hay ngồi trước quạt gió mạnh",
+        "Tắm nước lạnh ngay",
+        "Ngồi trước quạt mạnh",
+        "Uống nước đá nhiều"
+      ],
+      "answer": 0,
+      "explain": "Phòng cảm lạnh.",
+      "wrong_explain": {
+        "1": "Dễ cảm.",
+        "2": "Dễ cảm.",
+        "3": "Không nên."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Thân nhiệt trên 38 °C có thể:",
+      "choices": [
+        "Tốt cho sức khoẻ",
+        "Không ảnh hưởng",
+        "Tăng chiều cao",
+        "Gây rối loạn tim, thần kinh"
+      ],
+      "answer": 3,
+      "explain": "Cần hạ nhiệt.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Có.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Thân nhiệt 37 °C, tăng thêm 2 °C khi sốt. Thân nhiệt bao nhiêu?",
+      "expr": "37+2",
+      "answer": "39",
+      "explain": "39 °C."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Từ 40 °C hạ xuống 37 °C. Giảm bao nhiêu °C?",
+      "expr": "40-37",
+      "answer": "3",
+      "explain": "3."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vì sao da là cơ quan quan trọng nhất trong điều hoà thân nhiệt?",
+      "choices": [
+        "Có mạch máu, tuyến mồ hôi, chân lông điều tiết toả nhiệt",
+        "Da dày nhất",
+        "Da không có mạch",
+        "Da không tiết mồ hôi"
+      ],
+      "answer": 0,
+      "explain": "Cơ chế dãn, co mạch.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Có mạch.",
+        "3": "Có."
+      },
+      "concept": true
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Phản xạ run khi lạnh có tác dụng:",
+      "choices": [
+        "Tăng toả nhiệt",
+        "Làm lạnh thêm",
+        "Giảm trao đổi chất",
+        "Tăng sinh nhiệt"
+      ],
+      "answer": 3,
+      "explain": "Cơ co sinh nhiệt.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cảm lạnh sốt 38,5 °C so với 37 °C. Cao hơn bình thường bao nhiêu °C?",
+      "expr": "77/2-37",
+      "answer": "1.5",
+      "explain": "1,5."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Để phòng cảm nóng khi đi nắng nên:",
+      "choices": [
+        "Đi nắng không mũ",
+        "Uống ít nước",
+        "Che nắng, uống đủ nước, tránh nắng vào vùng gáy",
+        "Ở nắng lâu"
+      ],
+      "answer": 2,
+      "explain": "Trung tâm điều hoà thân nhiệt ở vùng gáy.",
+      "wrong_explain": {
+        "0": "Dễ cảm nóng.",
+        "1": "Không tốt.",
+        "3": "Hại."
+      },
+      "concept": true
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Súc họng nước muối 3 lần/ngày trong 7 ngày là bao nhiêu lần?",
+      "expr": "3*7",
+      "answer": "21",
+      "explain": "21."
+    }
+  ]
+}

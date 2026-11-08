@@ -1,0 +1,307 @@
+{
+  "id": "bai-3",
+  "grade": 8,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 8",
+  "chapter": "Chương I. Phản ứng hoá học",
+  "lesson": "Bài 3. Mol và tỉ khối chất khí",
+  "section": "",
+  "bookPage": 16,
+  "requirements": [
+    "Nêu được khái niệm mol, tính được khối lượng mol và chuyển đổi giữa số mol và khối lượng.",
+    "Nêu được khái niệm tỉ khối, so sánh chất khí này nặng hay nhẹ hơn chất khí khác.",
+    "Nêu được thể tích mol của chất khí ở điều kiện chuẩn (1 bar, 25 °C) và chuyển đổi giữa số mol và thể tích chất khí."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Mol là lượng chất có chứa N_A = 6,022·10²³ nguyên tử hoặc phân tử của chất đó. Số 6,022·10²³ gọi là số Avogadro."
+    },
+    {
+      "type": "text",
+      "content": "Khối lượng mol (M) của một chất là khối lượng của N_A nguyên tử hoặc phân tử chất đó tính theo gam; đơn vị g/mol. Khối lượng mol bằng khối lượng nguyên tử (hoặc phân tử) tính theo amu về trị số. Ví dụ: M(H₂O) = 2·1 + 16 = 18 g/mol."
+    },
+    {
+      "type": "formula",
+      "content": "n = m / M   (n: số mol; m: khối lượng, g; M: khối lượng mol, g/mol)"
+    },
+    {
+      "type": "text",
+      "content": "Thể tích mol của chất khí là thể tích chiếm bởi N_A phân tử khí. Ở cùng nhiệt độ và áp suất, mọi chất khí có thể tích mol bằng nhau. Ở điều kiện chuẩn (25 °C, 1 bar), 1 mol khí bất kì chiếm 24,79 lít."
+    },
+    {
+      "type": "formula",
+      "content": "V = 24,79 · n   (V: lít; n: mol, ở 25 °C và 1 bar)"
+    },
+    {
+      "type": "text",
+      "content": "Tỉ khối của khí A đối với khí B là tỉ lệ khối lượng mol: d(A/B) = M_A / M_B. Khối lượng mol trung bình của không khí là 29 g/mol (20% O₂ và 80% N₂ theo thể tích), nên d(A/không khí) = M_A / 29. Khí có tỉ khối lớn hơn 1 thì nặng hơn."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính số mol của 9 g nước (M = 18 g/mol).",
+      "steps": [
+        "n = m / M.",
+        "n = 9 / 18 = 0,5 mol."
+      ],
+      "expr": "9/18",
+      "answer": "0.5"
+    },
+    {
+      "problem": "Ở 25 °C và 1 bar, 0,2 mol khí chiếm thể tích bao nhiêu lít?",
+      "steps": [
+        "V = 24,79 × n.",
+        "V = 24,79 × 0,2 = 4,958 L."
+      ],
+      "expr": "24.79*0.2",
+      "answer": "4.958"
+    },
+    {
+      "problem": "Dạng tính khối lượng từ số mol: tính khối lượng của 0,25 mol CaCO₃ (Ca = 40, C = 12, O = 16).",
+      "steps": [
+        "Cách làm: M(CaCO₃) = 40 + 12 + 3·16 = 100 g/mol, rồi m = n × M.",
+        "m = 0,25 × 100 = 25 g."
+      ],
+      "expr": "0.25*(40+12+3*16)",
+      "answer": "25"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Mol là lượng chất chứa bao nhiêu hạt (nguyên tử hoặc phân tử)?",
+      "choices": [
+        "6,022·10²²",
+        "6,022·10²³",
+        "12",
+        "24,79"
+      ],
+      "answer": 1,
+      "explain": "Số Avogadro N_A = 6,022·10²³.",
+      "wrong_explain": {
+        "0": "Sai số mũ, số Avogadro là 6,022·10²³.",
+        "2": "Đó là khối lượng 1 nguyên tử carbon theo amu.",
+        "3": "Đó là thể tích mol khí ở điều kiện chuẩn (lít)."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khối lượng mol của nước H₂O (H = 1, O = 16) là:",
+      "choices": [
+        "18 g/mol",
+        "16 g/mol",
+        "17 g/mol",
+        "10 g/mol"
+      ],
+      "answer": 0,
+      "explain": "M(H₂O) = 2·1 + 16 = 18 g/mol.",
+      "wrong_explain": {
+        "1": "Đó chỉ là khối lượng mol của nguyên tử oxygen.",
+        "2": "Tính sai: H₂O có 2 nguyên tử H.",
+        "3": "Tính sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Ở điều kiện chuẩn (25 °C, 1 bar), thể tích của 1 mol khí bất kì là:",
+      "choices": [
+        "22,4 lít",
+        "1 lít",
+        "100 lít",
+        "24,79 lít"
+      ],
+      "answer": 3,
+      "explain": "Theo sách, 1 mol khí ở 25 °C, 1 bar chiếm 24,79 L.",
+      "wrong_explain": {
+        "0": "Đó là thể tích mol ở 0 °C, 1 atm, không phải điều kiện chuẩn ở đây.",
+        "1": "Thể tích 1 mol khí lớn hơn nhiều.",
+        "2": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Công thức tính tỉ khối của khí A đối với khí B là:",
+      "choices": [
+        "d = M_B / M_A",
+        "d = M_A · M_B",
+        "d = M_A / M_B",
+        "d = M_A − M_B"
+      ],
+      "answer": 2,
+      "explain": "d(A/B) = M_A / M_B.",
+      "wrong_explain": {
+        "0": "Ngược tử số và mẫu số.",
+        "1": "Tỉ khối là một tỉ số, không phải tích.",
+        "3": "Tỉ khối là phép chia, không phải hiệu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khí nào nhẹ hơn không khí?",
+      "choices": [
+        "Khí carbon dioxide (CO₂)",
+        "Khí hydrogen (H₂)",
+        "Khí chlorine (Cl₂)",
+        "Khí sulfur dioxide (SO₂)"
+      ],
+      "answer": 1,
+      "explain": "M(H₂) = 2 < 29 nên H₂ nhẹ hơn không khí.",
+      "wrong_explain": {
+        "0": "M = 44 > 29 nên nặng hơn không khí.",
+        "2": "M = 71 > 29 nên nặng hơn.",
+        "3": "M = 64 > 29 nên nặng hơn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Số mol có trong 36 g nước (M = 18 g/mol) là:",
+      "choices": [
+        "2",
+        "648",
+        "0,5",
+        "54"
+      ],
+      "answer": 0,
+      "explain": "n = 36 / 18 = 2 mol.",
+      "wrong_explain": {
+        "1": "Nhân thay vì chia (36 × 18).",
+        "2": "Chia ngược (18 / 36).",
+        "3": "Cộng thay vì chia."
+      },
+      "expr": "36/18"
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ở 25 °C và 1 bar, 2 mol khí chiếm thể tích bao nhiêu lít?",
+      "expr": "24.79*2",
+      "answer": "49.58",
+      "explain": "V = 24,79 × 2 = 49,58 L."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính tỉ khối của khí O₂ (M = 32) đối với khí H₂ (M = 2).",
+      "expr": "32/2",
+      "answer": "16",
+      "explain": "d = 32 / 2 = 16."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính khối lượng (g) của 0,5 mol NaCl (M = 58,5 g/mol).",
+      "expr": "0.5*58.5",
+      "answer": "29.25",
+      "explain": "m = n × M = 0,5 × 58,5 = 29,25 g."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Tính số mol khí chứa trong bình 4,958 lít ở 25 °C và 1 bar (V = 24,79 · n).",
+      "choices": [
+        "0,2",
+        "2",
+        "0,02",
+        "24,79"
+      ],
+      "answer": 0,
+      "explain": "n = V / 24,79 = 4,958 / 24,79 = 0,2 mol.",
+      "wrong_explain": {
+        "1": "Nhầm, 2 mol chiếm 49,58 L.",
+        "2": "Sai bậc thập phân.",
+        "3": "Đó là thể tích mol, không phải số mol."
+      },
+      "expr": "495.8/2479"
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khí A có tỉ khối đối với khí O₂ (M = 32) bằng 2. Tính khối lượng mol của A (g/mol).",
+      "expr": "2*32",
+      "answer": "64",
+      "explain": "M_A = d × M_B = 2 × 32 = 64 g/mol."
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Trong hang sâu, khí CO₂ (M = 44) thường tích tụ ở đâu? (không khí M = 29)",
+      "choices": [
+        "Ở trần hang, vì nhẹ hơn không khí",
+        "Phân bố đều vì có cùng khối lượng mol",
+        "Ở nền hang, vì nặng hơn không khí",
+        "Bay hết ra ngoài"
+      ],
+      "answer": 2,
+      "explain": "d(CO₂/kk) = 44/29 > 1 nên CO₂ nặng hơn không khí.",
+      "wrong_explain": {
+        "0": "CO₂ có M = 44 > 29 nên nặng hơn.",
+        "1": "Khối lượng mol khác nhau.",
+        "3": "CO₂ nặng hơn không khí nên lắng xuống."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Một hỗn hợp gồm 0,5 mol O₂ và 1,5 mol N₂ ở 25 °C, 1 bar. Tính thể tích hỗn hợp khí (lít).",
+      "expr": "24.79*(0.5+1.5)",
+      "answer": "49.58",
+      "explain": "Tổng số mol = 2 mol nên V = 24,79 × 2 = 49,58 L."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tính khối lượng mol trung bình (g/mol) của hỗn hợp gồm 20% O₂ (M = 32) và 80% N₂ (M = 28) theo số mol.",
+      "expr": "0.2*32+0.8*28",
+      "answer": "28.8",
+      "explain": "M = 0,2·32 + 0,8·28 = 6,4 + 22,4 = 28,8 ≈ 29 g/mol."
+    },
+    {
+      "id": "n03",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Số mol nguyên tử trong 1 mol phân tử H₂O là:",
+      "choices": [
+        "2 mol H và 1 mol O",
+        "1 mol H và 2 mol O",
+        "2 mol H và 2 mol O",
+        "1 mol H và 1 mol O"
+      ],
+      "answer": 0,
+      "explain": "Một phân tử H₂O có 2 nguyên tử H và 1 nguyên tử O.",
+      "wrong_explain": {
+        "1": "Đảo chỉ số: H₂O có 2 H, 1 O.",
+        "2": "H₂O chỉ có 1 nguyên tử O.",
+        "3": "H₂O có 2 nguyên tử H."
+      },
+      "concept": true
+    }
+  ]
+}

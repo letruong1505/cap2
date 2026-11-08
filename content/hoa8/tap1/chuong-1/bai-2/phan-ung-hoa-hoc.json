@@ -1,0 +1,283 @@
+{
+  "id": "bai-2",
+  "grade": 8,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 8",
+  "chapter": "Chương I. Phản ứng hoá học",
+  "lesson": "Bài 2. Phản ứng hoá học",
+  "section": "",
+  "bookPage": 11,
+  "requirements": [
+    "Nêu được khái niệm, ví dụ và phân biệt được biến đổi vật lí, biến đổi hoá học.",
+    "Nêu được khái niệm phản ứng hoá học, chất đầu và sản phẩm.",
+    "Chỉ ra được dấu hiệu chứng tỏ có phản ứng hoá học xảy ra.",
+    "Nêu được khái niệm, ví dụ về phản ứng toả nhiệt, thu nhiệt và ứng dụng của phản ứng toả nhiệt."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Biến đổi vật lí là biến đổi không tạo thành chất mới (hoà tan, nóng chảy, đông đặc, bay hơi, ngưng tụ,...). Biến đổi hoá học là biến đổi có tạo thành chất mới (đốt cháy nhiên liệu, phân huỷ, tổng hợp chất,...)."
+    },
+    {
+      "type": "text",
+      "content": "Quá trình biến đổi chất này thành chất khác gọi là phản ứng hoá học. Chất ban đầu bị biến đổi gọi là chất phản ứng (chất tham gia); chất mới sinh ra gọi là sản phẩm. Ví dụ: iron + sulfur → iron(II) sulfide."
+    },
+    {
+      "type": "text",
+      "content": "Trong phản ứng hoá học, liên kết giữa các nguyên tử trong phân tử chất đầu bị phá vỡ, các nguyên tử sắp xếp lại và hình thành liên kết mới tạo phân tử sản phẩm. Số nguyên tử của mỗi nguyên tố không đổi. Phản ứng chỉ xảy ra khi các chất tiếp xúc nhau, nhiều phản ứng cần thêm điều kiện như đun nóng hoặc chất xúc tác."
+    },
+    {
+      "type": "text",
+      "content": "Dấu hiệu nhận biết có chất mới tạo thành: thay đổi màu sắc, xuất hiện chất khí, xuất hiện chất kết tủa; toả nhiệt hoặc phát sáng cũng có thể là dấu hiệu có phản ứng."
+    },
+    {
+      "type": "text",
+      "content": "Phản ứng toả nhiệt giải phóng năng lượng (dạng nhiệt) ra môi trường (ví dụ đốt cháy cồn, than, xăng). Phản ứng thu nhiệt nhận năng lượng nhiệt từ môi trường trong suốt quá trình (ví dụ nung đá vôi, phân huỷ copper(II) hydroxide)."
+    },
+    {
+      "type": "text",
+      "content": "Than, xăng, dầu là nhiên liệu hoá thạch dùng cho sinh hoạt, giao thông, sản xuất; chúng không vô tận và khi cháy thải khí CO₂ gây hiệu ứng nhà kính. Khi thiếu không khí, than cháy sinh khí CO rất độc."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Trộn iron và sulfur theo tỉ lệ khối lượng 7 : 4. Để phản ứng vừa đủ với 28 g iron cần bao nhiêu gam sulfur?",
+      "steps": [
+        "Tỉ lệ khối lượng Fe : S = 7 : 4.",
+        "28 g Fe gấp 28 : 7 = 4 lần phần Fe, nên cần 4 × 4 = 16 g sulfur."
+      ],
+      "expr": "28*4/7",
+      "answer": "16"
+    },
+    {
+      "problem": "Một phản ứng đốt cháy cồn toả ra 30 kJ nhiệt cho mỗi gam cồn. Đốt hết 2,5 g cồn toả ra bao nhiêu kJ?",
+      "steps": [
+        "Nhiệt toả ra tỉ lệ với khối lượng cồn.",
+        "30 × 2,5 = 75 kJ."
+      ],
+      "expr": "30*2.5",
+      "answer": "75"
+    },
+    {
+      "problem": "Dạng nhận biết biến đổi: trong các quá trình sau có bao nhiêu quá trình là biến đổi hoá học: nước đá tan, đốt giấy, sắt gỉ, hoà tan đường, nung đá vôi?",
+      "steps": [
+        "Cách làm: biến đổi hoá học khi có chất mới tạo thành.",
+        "Đốt giấy, sắt gỉ, nung đá vôi tạo chất mới → 3 quá trình. Nước đá tan và hoà tan đường chỉ là biến đổi vật lí."
+      ],
+      "expr": "5-2",
+      "answer": "3"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Quá trình nào sau đây là biến đổi vật lí?",
+      "choices": [
+        "Đốt cháy cồn",
+        "Nước lỏng đông đặc thành nước đá",
+        "Sắt để lâu ngoài không khí ẩm bị gỉ",
+        "Nung đá vôi thành vôi sống"
+      ],
+      "answer": 1,
+      "explain": "Đông đặc chỉ đổi trạng thái, không tạo chất mới.",
+      "wrong_explain": {
+        "0": "Có chất mới (CO₂, hơi nước) tạo thành nên là biến đổi hoá học.",
+        "2": "Tạo gỉ sắt (chất mới) nên là biến đổi hoá học.",
+        "3": "Tạo chất mới nên là biến đổi hoá học."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Chất mới sinh ra trong phản ứng hoá học được gọi là:",
+      "choices": [
+        "Sản phẩm",
+        "Chất phản ứng",
+        "Chất xúc tác",
+        "Dung môi"
+      ],
+      "answer": 0,
+      "explain": "Chất mới sinh ra là sản phẩm.",
+      "wrong_explain": {
+        "1": "Chất phản ứng là chất ban đầu bị biến đổi.",
+        "2": "Chất xúc tác chỉ làm thay đổi tốc độ phản ứng.",
+        "3": "Dung môi là chất hoà tan chất tan."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dấu hiệu nào KHÔNG chắc chắn chứng tỏ có phản ứng hoá học xảy ra?",
+      "choices": [
+        "Xuất hiện chất khí",
+        "Xuất hiện chất kết tủa",
+        "Thay đổi màu sắc",
+        "Chất rắn tan vào nước tạo dung dịch"
+      ],
+      "answer": 3,
+      "explain": "Hoà tan thường chỉ là biến đổi vật lí.",
+      "wrong_explain": {
+        "0": "Là dấu hiệu có chất mới.",
+        "1": "Là dấu hiệu có chất mới.",
+        "2": "Thường là dấu hiệu có chất mới."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Phản ứng nào sau đây là phản ứng toả nhiệt?",
+      "choices": [
+        "Nung đá vôi",
+        "Phân huỷ copper(II) hydroxide khi đun nóng",
+        "Đốt cháy than",
+        "Nước đá tan"
+      ],
+      "answer": 2,
+      "explain": "Đốt cháy nhiên liệu giải phóng nhiệt.",
+      "wrong_explain": {
+        "0": "Cần cung cấp nhiệt liên tục nên là phản ứng thu nhiệt.",
+        "1": "Cần cung cấp nhiệt nên là phản ứng thu nhiệt.",
+        "3": "Đây không phải phản ứng hoá học."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trong phản ứng hoá học, điều nào sau đây đúng?",
+      "choices": [
+        "Số nguyên tử mỗi nguyên tố thay đổi",
+        "Liên kết giữa các nguyên tử thay đổi, số nguyên tử mỗi nguyên tố không đổi",
+        "Các nguyên tử bị mất đi",
+        "Các nguyên tử biến đổi thành nguyên tử nguyên tố khác"
+      ],
+      "answer": 1,
+      "explain": "Phản ứng hoá học chỉ làm thay đổi liên kết giữa các nguyên tử.",
+      "wrong_explain": {
+        "0": "Số nguyên tử của mỗi nguyên tố được giữ nguyên.",
+        "2": "Nguyên tử không mất đi, chỉ sắp xếp lại.",
+        "3": "Nguyên tố không biến đổi trong phản ứng hoá học."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khí nào rất độc, không màu, không mùi, có thể sinh ra khi than cháy thiếu không khí?",
+      "choices": [
+        "Carbon monoxide (CO)",
+        "Carbon dioxide (CO₂)",
+        "Oxygen (O₂)",
+        "Nitrogen (N₂)"
+      ],
+      "answer": 0,
+      "explain": "CO là khí độc, nguy hiểm vì không cảm nhận được.",
+      "wrong_explain": {
+        "1": "CO₂ không độc như CO, nó sinh ra khi than cháy đủ oxygen.",
+        "2": "O₂ cần cho sự cháy và hô hấp.",
+        "3": "N₂ chiếm phần lớn không khí và không độc."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trộn Fe và S theo tỉ lệ khối lượng 7 : 4. Để phản ứng vừa đủ với 21 g Fe cần bao nhiêu gam S?",
+      "choices": [
+        "9",
+        "4",
+        "28",
+        "12"
+      ],
+      "answer": 3,
+      "explain": "21 : 7 = 3 phần; S = 3 × 4 = 12 g.",
+      "wrong_explain": {
+        "0": "Nhầm tỉ lệ, chưa nhân đúng với 4/7.",
+        "1": "Đó chỉ là phần S ứng với 7 g Fe.",
+        "2": "Đó là khối lượng Fe ứng với 16 g S."
+      },
+      "expr": "21*4/7"
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phản ứng đốt cháy một nhiên liệu toả ra 45 kJ cho mỗi gam. Đốt hết 3 g nhiên liệu toả ra bao nhiêu kJ?",
+      "expr": "45*3",
+      "answer": "135",
+      "explain": "Nhiệt toả ra = 45 × 3 = 135 kJ."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vì sao nên bảo quản thức ăn trong tủ lạnh? (liên hệ phản ứng hoá học)",
+      "choices": [
+        "Làm thức ăn không chứa chất nào",
+        "Nhiệt độ thấp làm chậm các phản ứng làm hỏng thức ăn",
+        "Làm các phản ứng xảy ra nhanh hơn",
+        "Để thức ăn bay hơi"
+      ],
+      "answer": 1,
+      "explain": "Nhiệt độ thấp làm chậm các phản ứng gây ôi thiu.",
+      "wrong_explain": {
+        "0": "Thức ăn vẫn chứa các chất.",
+        "2": "Nhiệt độ thấp làm phản ứng chậm đi.",
+        "3": "Mục đích không phải để thức ăn bay hơi."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Chất nào sau đây là chất phản ứng trong quá trình quang hợp của cây xanh?",
+      "choices": [
+        "Glucose và oxygen",
+        "Chỉ oxygen",
+        "Carbon dioxide và nước",
+        "Chỉ glucose"
+      ],
+      "answer": 2,
+      "explain": "Quang hợp: carbon dioxide + nước → glucose + oxygen.",
+      "wrong_explain": {
+        "0": "Đây là sản phẩm của quang hợp.",
+        "1": "Oxygen là sản phẩm.",
+        "3": "Glucose là sản phẩm."
+      },
+      "concept": true
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Quá trình nào cần cung cấp nhiệt liên tục mới xảy ra tiếp và được xếp vào phản ứng thu nhiệt?",
+      "choices": [
+        "Đốt cháy xăng trong động cơ",
+        "Nung đá vôi",
+        "Đốt cháy khí gas",
+        "Hô hấp tế bào"
+      ],
+      "answer": 1,
+      "explain": "Nung đá vôi cần nhiệt liên tục; ngừng đun thì phản ứng dừng.",
+      "wrong_explain": {
+        "0": "Phản ứng toả nhiệt.",
+        "2": "Phản ứng toả nhiệt.",
+        "3": "Phản ứng toả nhiệt."
+      },
+      "concept": true
+    }
+  ]
+}

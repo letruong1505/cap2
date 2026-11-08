@@ -1,0 +1,307 @@
+{
+  "id": "bai-24",
+  "grade": 8,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 8",
+  "chapter": "Chương V. Điện",
+  "lesson": "Bài 24. Cường độ dòng điện và hiệu điện thế",
+  "section": "",
+  "bookPage": 99,
+  "requirements": [
+    "Nêu được số chỉ của ampe kế là giá trị cường độ dòng điện.",
+    "Nêu được khả năng sinh ra dòng điện của pin được đo bằng hiệu điện thế giữa hai cực.",
+    "Nêu được đơn vị cường độ dòng điện và hiệu điện thế."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cường độ dòng điện đặc trưng cho mức độ mạnh, yếu của dòng điện; kí hiệu I; đo bằng ampe kế; đơn vị ampe (A). 1 A = 1 000 mA."
+    },
+    {
+      "type": "text",
+      "content": "Số chỉ của ampe kế chính là giá trị cường độ dòng điện. Dòng điện có cường độ càng lớn thì đèn càng sáng."
+    },
+    {
+      "type": "text",
+      "content": "Ampe kế mắc nối tiếp với dụng cụ cần đo; dòng điện đi vào chốt dương (+) và ra từ chốt âm (−). Không được mắc hai chốt ampe kế trực tiếp vào hai cực nguồn điện."
+    },
+    {
+      "type": "text",
+      "content": "Khả năng sinh ra dòng điện của pin, acquy được đo bằng hiệu điện thế (điện áp) giữa hai cực; kí hiệu U; đo bằng vôn kế; đơn vị vôn (V). 1 V = 1 000 mV; 1 kV = 1 000 V."
+    },
+    {
+      "type": "text",
+      "content": "Pin thường có hiệu điện thế 1,5 V; 4,5 V; 9 V. Hiệu điện thế mạng điện gia đình là 220 V, rất nguy hiểm; các nguồn điện dùng trong thí nghiệm cần có hiệu điện thế nhỏ hơn 40 V."
+    },
+    {
+      "type": "text",
+      "content": "Vôn kế mắc song song với dụng cụ cần đo hiệu điện thế, chốt (+) nối về phía cực dương của nguồn. Cần chọn thang đo phù hợp (lớn hơn giá trị cần đo)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đổi 250 mA ra ampe (A).",
+      "steps": [
+        "1 mA = 0,001 A.",
+        "250 × 0,001 = 0,25 A."
+      ],
+      "expr": "250/1000",
+      "answer": "0.25"
+    },
+    {
+      "problem": "Đổi 6 kV ra vôn (V).",
+      "steps": [
+        "1 kV = 1 000 V.",
+        "6 × 1 000 = 6 000 V."
+      ],
+      "expr": "6*1000",
+      "answer": "6000"
+    },
+    {
+      "problem": "Dạng đọc số chỉ: ampe kế có giới hạn đo 0,5 A chia thành 50 độ chia đều. Kim chỉ ở vạch thứ 30. Cường độ dòng điện bằng bao nhiêu A?",
+      "steps": [
+        "Cách làm: mỗi độ chia = 0,5 / 50 = 0,01 A.",
+        "30 × 0,01 = 0,3 A."
+      ],
+      "expr": "30*5/500",
+      "answer": "0.3"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Cường độ dòng điện được kí hiệu là:",
+      "choices": [
+        "U",
+        "I",
+        "R",
+        "P"
+      ],
+      "answer": 1,
+      "explain": "I là cường độ dòng điện.",
+      "wrong_explain": {
+        "0": "Là hiệu điện thế.",
+        "2": "Là điện trở.",
+        "3": "Là công suất hoặc áp suất."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn vị đo cường độ dòng điện là:",
+      "choices": [
+        "Ampe (A)",
+        "Vôn (V)",
+        "Niutơn (N)",
+        "Pascal (Pa)"
+      ],
+      "answer": 0,
+      "explain": "Ampe là đơn vị cường độ dòng điện.",
+      "wrong_explain": {
+        "1": "Là đơn vị hiệu điện thế.",
+        "2": "Là đơn vị lực.",
+        "3": "Là đơn vị áp suất."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Dụng cụ đo hiệu điện thế là:",
+      "choices": [
+        "Ampe kế",
+        "Nhiệt kế",
+        "Lực kế",
+        "Vôn kế"
+      ],
+      "answer": 3,
+      "explain": "Vôn kế đo hiệu điện thế.",
+      "wrong_explain": {
+        "0": "Đo cường độ dòng điện.",
+        "1": "Đo nhiệt độ.",
+        "2": "Đo lực."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ampe kế phải được mắc:",
+      "choices": [
+        "Song song với dụng cụ",
+        "Trực tiếp vào hai cực nguồn",
+        "Nối tiếp với dụng cụ cần đo cường độ dòng điện",
+        "Ở ngoài mạch"
+      ],
+      "answer": 2,
+      "explain": "Ampe kế nối tiếp, vôn kế song song.",
+      "wrong_explain": {
+        "0": "Đó là cách mắc vôn kế.",
+        "1": "Có thể làm hỏng.",
+        "3": "Không đo được."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khả năng sinh ra dòng điện của pin được đo bằng:",
+      "choices": [
+        "Khối lượng pin",
+        "Hiệu điện thế giữa hai cực của pin",
+        "Kích thước pin",
+        "Màu vỏ pin"
+      ],
+      "answer": 1,
+      "explain": "Pin 3 V sinh ra dòng điện mạnh hơn pin 1,5 V.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nguồn điện dùng trong thí nghiệm cần có hiệu điện thế:",
+      "choices": [
+        "Nhỏ hơn 40 V",
+        "220 V",
+        "1 000 V",
+        "Càng cao càng tốt"
+      ],
+      "answer": 0,
+      "explain": "Hiệu điện thế trên 40 V có thể gây hại cơ thể.",
+      "wrong_explain": {
+        "1": "Rất nguy hiểm.",
+        "2": "Rất nguy hiểm.",
+        "3": "Nguy hiểm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Số chỉ của vôn kế khi mắc vào hai cực pin mới 1,5 V gần bằng:",
+      "choices": [
+        "0 V",
+        "220 V",
+        "15 V",
+        "1,5 V"
+      ],
+      "answer": 3,
+      "explain": "Vôn kế cho biết hiệu điện thế giữa hai cực.",
+      "wrong_explain": {
+        "0": "Pin còn điện.",
+        "1": "Sai.",
+        "2": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đổi 500 mA ra A.",
+      "expr": "500/1000",
+      "answer": "0.5",
+      "explain": "0,5 A."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đổi 2,2 kV ra V.",
+      "expr": "22*100",
+      "answer": "2200",
+      "explain": "2,2 × 1 000 = 2 200 V."
+    },
+    {
+      "id": "q10",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hiệu điện thế 3 000 mV bằng bao nhiêu V?",
+      "expr": "3000/1000",
+      "answer": "3",
+      "explain": "3 V."
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ampe kế giới hạn đo 1 A chia 100 độ chia đều. Kim chỉ vạch thứ 45. Cường độ dòng điện (A) là bao nhiêu?",
+      "expr": "45*1/100",
+      "answer": "0.45",
+      "explain": "Mỗi độ chia 0,01 A; 45 × 0,01 = 0,45 A."
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vì sao không được mắc hai chốt ampe kế trực tiếp vào hai cực pin?",
+      "choices": [
+        "Ampe kế sẽ không chỉ số",
+        "Pin sẽ nạp điện",
+        "Dòng điện quá lớn làm hỏng ampe kế và pin",
+        "Ampe kế đo hiệu điện thế"
+      ],
+      "answer": 2,
+      "explain": "Ampe kế có điện trở rất nhỏ.",
+      "wrong_explain": {
+        "0": "Vẫn chỉ nhưng quá lớn.",
+        "1": "Không.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q13",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Nên chọn thang đo của vôn kế như thế nào khi đo pin 1,5 V?",
+      "choices": [
+        "Thang 0 – 1 V",
+        "Thang đo lớn hơn nhưng gần giá trị cần đo, ví dụ 0 – 3 V",
+        "Thang 0 – 1 000 V",
+        "Không cần thang đo"
+      ],
+      "answer": 1,
+      "explain": "Chọn thang đo hợp lí để an toàn và chính xác.",
+      "wrong_explain": {
+        "0": "Nhỏ hơn giá trị cần đo, có thể hỏng.",
+        "2": "Quá lớn, đọc khó chính xác.",
+        "3": "Cần chọn thang."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Nối 3 pin 1,5 V nối tiếp rồi mắc vôn kế vào hai đầu bộ pin. Số chỉ vôn kế là bao nhiêu V?",
+      "expr": "3*1.5",
+      "answer": "4.5",
+      "explain": "4,5 V."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Ba lần đo cường độ dòng điện được 0,20 A; 0,22 A; 0,21 A. Giá trị trung bình là bao nhiêu A?",
+      "expr": "(0.20+0.22+0.21)/3",
+      "answer": "0.21",
+      "explain": "Tổng 0,63; trung bình 0,21 A."
+    }
+  ]
+}

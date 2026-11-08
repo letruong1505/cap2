@@ -1,0 +1,305 @@
+{
+  "id": "bai-34",
+  "grade": 8,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 8",
+  "chapter": "Chương VII. Sinh học cơ thể người",
+  "lesson": "Bài 34. Hệ hô hấp ở người",
+  "section": "",
+  "bookPage": 142,
+  "requirements": [
+    "Nêu cấu tạo và chức năng hệ hô hấp; một số bệnh hô hấp; tác hại của thuốc lá; hô hấp nhân tạo."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hệ hô hấp gồm đường dẫn khí (mũi, họng, thanh quản, khí quản, phế quản) và hai lá phổi. Phổi gồm nhiều phế nang là nơi trao đổi khí; phế nang được bao bọc bởi mạng mao mạch dày đặc."
+    },
+    {
+      "type": "text",
+      "content": "Đường dẫn khí dẫn khí ra, vào phổi, ngăn bụi, làm ẩm, làm ấm không khí. Phổi trao đổi khí giữa môi trường ngoài và máu. Thông khí ở phổi nhờ cử động hô hấp (hít vào, thở ra) do cơ và xương thay đổi thể tích lồng ngực."
+    },
+    {
+      "type": "text",
+      "content": "Trao đổi khí ở phổi và tế bào theo cơ chế khuếch tán: O₂ từ phế nang vào máu, CO₂ từ máu ra phế nang; ở tế bào, O₂ từ máu vào tế bào, CO₂ từ tế bào vào máu."
+    },
+    {
+      "type": "text",
+      "content": "Bệnh: viêm đường hô hấp (viêm mũi, họng, phế quản), viêm phổi (phế nang bị viêm, tiết dịch), lao phổi (do vi khuẩn Mycobacterium tuberculosis, dễ lây qua đường hô hấp)."
+    },
+    {
+      "type": "text",
+      "content": "Khói thuốc lá chứa CO (chiếm chỗ O₂ trong hồng cầu), NO₂ (gây viêm, sưng niêm mạc), nicotine (làm tê liệt lông rung trong phế quản, tăng nguy cơ ung thư). Không hút thuốc lá, giữ không khí trong lành."
+    },
+    {
+      "type": "text",
+      "content": "Hô hấp nhân tạo khi đuối nước: đưa nạn nhân lên chỗ khô ráo; hà hơi thổi ngạt (bịt mũi, thổi hơi vào miệng) hoặc ấn lồng ngực, khoảng 12–20 lần/phút đến khi hô hấp ổn định."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hà hơi thổi ngạt 15 lần/phút. Trong 4 phút thổi bao nhiêu lần?",
+      "steps": [
+        "15 × 4 = 60."
+      ],
+      "expr": "15*4",
+      "answer": "60"
+    },
+    {
+      "problem": "Trong 100 đơn vị khí hít vào, giả sử 21 đơn vị là O₂. Phần không phải O₂ là bao nhiêu đơn vị?",
+      "steps": [
+        "100 − 21 = 79."
+      ],
+      "expr": "100-21",
+      "answer": "79"
+    },
+    {
+      "problem": "Dạng nhịp thở: một người thở 16 lần/phút, 1 giờ thở bao nhiêu lần?",
+      "steps": [
+        "1 giờ = 60 phút.",
+        "16 × 60 = 960."
+      ],
+      "expr": "16*60",
+      "answer": "960"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Cơ quan trao đổi khí của hệ hô hấp là:",
+      "choices": [
+        "Khí quản",
+        "Hai lá phổi",
+        "Mũi",
+        "Thanh quản"
+      ],
+      "answer": 1,
+      "explain": "Phế nang trao đổi khí.",
+      "wrong_explain": {
+        "0": "Dẫn khí.",
+        "2": "Dẫn khí.",
+        "3": "Dẫn khí."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trao đổi khí ở phổi theo cơ chế:",
+      "choices": [
+        "Khuếch tán",
+        "Co bóp",
+        "Lọc",
+        "Bay hơi"
+      ],
+      "answer": 0,
+      "explain": "Từ nơi nồng độ cao đến thấp.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Mũi có lông và chất nhầy giúp:",
+      "choices": [
+        "Tăng bụi",
+        "Giảm O₂",
+        "Làm khô không khí",
+        "Ngăn bụi, làm ẩm, làm ấm không khí"
+      ],
+      "answer": 3,
+      "explain": "Bảo vệ phổi.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "1": "Không.",
+        "2": "Ngược lại."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Bệnh lao phổi do tác nhân nào?",
+      "choices": [
+        "Virus HIV",
+        "Nấm men",
+        "Vi khuẩn Mycobacterium tuberculosis",
+        "Vi khuẩn E. coli"
+      ],
+      "answer": 2,
+      "explain": "Lây qua đường hô hấp.",
+      "wrong_explain": {
+        "0": "AIDS.",
+        "1": "Không.",
+        "3": "Tiêu chảy."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Chất nào trong khói thuốc lá chiếm chỗ O₂ của hồng cầu?",
+      "choices": [
+        "N₂",
+        "CO",
+        "CO₂",
+        "H₂"
+      ],
+      "answer": 1,
+      "explain": "Gây thiếu O₂.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi hít vào, thể tích lồng ngực:",
+      "choices": [
+        "Tăng",
+        "Giảm",
+        "Không đổi",
+        "Bằng 0"
+      ],
+      "answer": 0,
+      "explain": "Cơ hoành co, xương sườn nâng.",
+      "wrong_explain": {
+        "1": "Khi thở ra.",
+        "2": "Có đổi.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Viêm phổi là bệnh viêm ở:",
+      "choices": [
+        "Thanh quản",
+        "Mũi",
+        "Họng",
+        "Phế nang"
+      ],
+      "answer": 3,
+      "explain": "Ảnh hưởng trao đổi khí.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hít vào 12 lần/phút, 5 phút hít bao nhiêu lần?",
+      "expr": "12*5",
+      "answer": "60",
+      "explain": "60."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Thổi ngạt 20 lần/phút trong 3 phút là bao nhiêu lần?",
+      "expr": "20*3",
+      "answer": "60",
+      "explain": "60."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vì sao cần bịt mũi nạn nhân khi hà hơi thổi ngạt?",
+      "choices": [
+        "Để hơi thổi vào đi vào phổi mà không thoát ra mũi",
+        "Để nạn nhân nín thở",
+        "Để tránh ngửi mùi",
+        "Để mũi nghỉ"
+      ],
+      "answer": 0,
+      "explain": "Giữ hơi.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Nicotine gây hại:",
+      "choices": [
+        "Tăng lông rung",
+        "Làm sạch phổi",
+        "Tăng thể tích phổi",
+        "Làm tê liệt lông rung trong phế quản"
+      ],
+      "answer": 3,
+      "explain": "Giảm khả năng lọc.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dung tích mỗi lần thở 500 mL; 16 lần/phút. Mỗi phút thở bao nhiêu mL không khí?",
+      "expr": "500*16",
+      "answer": "8000",
+      "explain": "8 000 mL."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Biện pháp nào giúp bảo vệ hệ hô hấp?",
+      "choices": [
+        "Hút thuốc",
+        "Ở nơi nhiều bụi",
+        "Không hút thuốc, giảm ô nhiễm không khí, tập thể dục",
+        "Nín thở lâu"
+      ],
+      "answer": 2,
+      "explain": "Giữ gìn vệ sinh hệ hô hấp.",
+      "wrong_explain": {
+        "0": "Có hại.",
+        "1": "Có hại.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Một người hít 8 000 mL mỗi phút. Một giờ hít bao nhiêu lít không khí?",
+      "expr": "8000*60/1000",
+      "answer": "480",
+      "explain": "480 lít."
+    }
+  ]
+}
