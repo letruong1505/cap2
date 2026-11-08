@@ -97,12 +97,20 @@ function renderQuiz(lesson, attempt) {
   const box = document.getElementById('quiz');
   box.replaceChildren();
 
+  const advBox = document.getElementById('quiz-adv');
+  advBox.replaceChildren();
+  const advCount = lesson.items.filter((it) => it.level === 'Nâng cao').length;
+  document.getElementById('sec-advanced').hidden = advCount === 0;
+
   let currentLevel = null;
   attempt.questions.forEach((itemIndex, idx) => {
     const item = lesson.items[itemIndex];
+    const target = item.level === 'Nâng cao' ? advBox : box;
     if (item.level !== currentLevel) {
       currentLevel = item.level;
-      box.append(el('h3', { class: 'level-heading' }, currentLevel === 'Nâng cao' ? 'Phần nâng cao' : `Mức ${currentLevel}`));
+      if (item.level !== 'Nâng cao') {
+        target.append(el('h3', { class: 'level-heading' }, `Mức ${currentLevel}`));
+      }
     }
     const q = el('div', { class: 'question', 'data-id': item.id });
     q.append(el('div', { class: 'stem' }, `${idx + 1}. ${item.stem}`));
@@ -140,7 +148,7 @@ function renderQuiz(lesson, attempt) {
     }
 
     q.append(el('div', { class: 'feedback', hidden: 'hidden' }));
-    box.append(q);
+    target.append(q);
   });
 }
 
@@ -290,6 +298,7 @@ function renderHome(manifest, subject) {
 function setSections(mode) {
   const practice = mode === 'practice';
   document.getElementById('sec-theory').hidden = !practice;
+  if (!practice) document.getElementById('sec-advanced').hidden = true;
   document.getElementById('sec-examples').hidden = !practice;
   document.getElementById('score').hidden = !practice;
   document.getElementById('sec-actions').hidden = !practice;
