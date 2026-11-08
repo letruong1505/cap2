@@ -19,8 +19,18 @@
       "content": "Đơn chất là chất được tạo nên từ một nguyên tố hoá học. Ví dụ: đồng, oxygen, helium là đơn chất."
     },
     {
+      "type": "figure",
+      "figure": "figures/khtn-phan-tu-don-chat.svg",
+      "caption": "Phân tử đơn chất: các nguyên tử cùng loại dùng chung electron."
+    },
+    {
       "type": "text",
       "content": "Hợp chất là chất được tạo nên từ hai nguyên tố hoá học trở lên. Ví dụ: carbon dioxide, muối ăn là hợp chất."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/khtn-phan-tu-hop-chat.svg",
+      "caption": "Phân tử hợp chất: các nguyên tử khác loại dùng chung electron."
     },
     {
       "type": "text",
@@ -41,7 +51,7 @@
   ],
   "examples": [
     {
-      "problem": "Phân tử nitrogen (N2) gồm 2 nguyên tử nitrogen, mỗi nguyên tử có khối lượng 14 amu. Tính khối lượng phân tử nitrogen.",
+      "problem": "Phân tử nitrogen (N₂) gồm 2 nguyên tử nitrogen, mỗi nguyên tử có khối lượng 14 amu. Tính khối lượng phân tử nitrogen.",
       "expr": "2 * 14",
       "steps": [
         "Khối lượng phân tử bằng tổng khối lượng các nguyên tử trong phân tử.",
@@ -144,7 +154,7 @@
       "id": "q05",
       "level": "Hiểu",
       "type": "fill",
-      "stem": "Khối lượng phân tử ammonia (NH3), gồm 1 nguyên tử nitrogen (14 amu) và 3 nguyên tử hydrogen (1 amu mỗi nguyên tử), là bao nhiêu amu? (nhập số)",
+      "stem": "Khối lượng phân tử ammonia (NH₃), gồm 1 nguyên tử nitrogen (14 amu) và 3 nguyên tử hydrogen (1 amu mỗi nguyên tử), là bao nhiêu amu? (nhập số)",
       "expr": "14 + 3 * 1",
       "answer": "17",
       "explain": "Khối lượng phân tử = 14 + 3 × 1 = 17 amu."
@@ -153,7 +163,7 @@
       "id": "q06",
       "level": "Hiểu",
       "type": "fill",
-      "stem": "Phân tử methane (CH4) gồm 1 nguyên tử carbon (12 amu) và 4 nguyên tử hydrogen (1 amu mỗi nguyên tử). Khối lượng phân tử methane là bao nhiêu amu? (nhập số)",
+      "stem": "Phân tử methane (CH₄) gồm 1 nguyên tử carbon (12 amu) và 4 nguyên tử hydrogen (1 amu mỗi nguyên tử). Khối lượng phân tử methane là bao nhiêu amu? (nhập số)",
       "expr": "12 + 4 * 1",
       "answer": "16",
       "explain": "Khối lượng phân tử = 12 + 4 × 1 = 16 amu."
@@ -162,7 +172,7 @@
       "id": "q07",
       "level": "Vận dụng",
       "type": "fill",
-      "stem": "Phân tử carbon dioxide (CO2) gồm 1 nguyên tử carbon (12 amu) và 2 nguyên tử oxygen (16 amu mỗi nguyên tử). Khối lượng phân tử là bao nhiêu amu? (nhập số)",
+      "stem": "Phân tử carbon dioxide (CO₂) gồm 1 nguyên tử carbon (12 amu) và 2 nguyên tử oxygen (16 amu mỗi nguyên tử). Khối lượng phân tử là bao nhiêu amu? (nhập số)",
       "expr": "12 + 2 * 16",
       "answer": "44",
       "explain": "Khối lượng phân tử = 12 + 2 × 16 = 44 amu."

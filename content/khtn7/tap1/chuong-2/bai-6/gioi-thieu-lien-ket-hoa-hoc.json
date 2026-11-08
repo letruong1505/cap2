@@ -28,8 +28,25 @@
       "content": "Liên kết ion được hình thành do lực hút tĩnh điện giữa các ion mang điện tích trái dấu. Nguyên tử kim loại nhường electron để tạo ion dương; nguyên tử phi kim nhận electron để tạo ion âm. Ví dụ: NaCl."
     },
     {
+      "type": "formula",
+      "content": "Na+ + Cl− → NaCl"
+    },
+    {
+      "type": "formula",
+      "content": "Cl + e− → Cl−"
+    },
+    {
+      "type": "formula",
+      "content": "Na → Na+ + e−"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/khtn-ion-nacl.svg",
+      "caption": "Na nhường electron cho Cl tạo ion Na⁺ và Cl⁻ (minh họa)."
+    },
+    {
       "type": "text",
-      "content": "Liên kết cộng hoá trị được hình thành do một hoặc nhiều cặp electron dùng chung giữa hai nguyên tử. Ví dụ: phân tử H2 có 1 cặp electron dùng chung; phân tử O2 có 2 cặp electron dùng chung."
+      "content": "Liên kết cộng hoá trị được hình thành do một hoặc nhiều cặp electron dùng chung giữa hai nguyên tử. Ví dụ: phân tử H₂ có 1 cặp electron dùng chung; phân tử O₂ có 2 cặp electron dùng chung."
     },
     {
       "type": "text",
@@ -42,7 +59,7 @@
   ],
   "examples": [
     {
-      "problem": "Phân tử O2 có bao nhiêu cặp electron dùng chung? (Mỗi nguyên tử O góp chung 2 electron.)",
+      "problem": "Phân tử O₂ có bao nhiêu cặp electron dùng chung? (Mỗi nguyên tử O góp chung 2 electron.)",
       "expr": "2",
       "steps": [
         "Mỗi nguyên tử O góp chung 2 electron, tạo thành 2 cặp electron dùng chung.",
@@ -126,7 +143,7 @@
       "id": "q04",
       "level": "Hiểu",
       "type": "fill",
-      "stem": "Số cặp electron dùng chung trong phân tử H2 là bao nhiêu? (Mỗi nguyên tử H góp 1 electron.)",
+      "stem": "Số cặp electron dùng chung trong phân tử H₂ là bao nhiêu? (Mỗi nguyên tử H góp 1 electron.)",
       "expr": "2 - 1",
       "answer": "1",
       "explain": "Mỗi nguyên tử H góp 1 electron, tạo thành 1 cặp electron dùng chung."
@@ -173,7 +190,7 @@
       "id": "q08",
       "level": "Vận dụng",
       "type": "fill",
-      "stem": "Phân tử N2 có 3 cặp electron dùng chung. Số electron dùng chung trong phân tử N2 là bao nhiêu?",
+      "stem": "Phân tử N₂ có 3 cặp electron dùng chung. Số electron dùng chung trong phân tử N₂ là bao nhiêu?",
       "expr": "3 * 2",
       "answer": "6",
       "explain": "Mỗi cặp electron dùng chung có 2 electron, nên 3 × 2 = 6 electron."

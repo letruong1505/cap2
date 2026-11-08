@@ -23,7 +23,7 @@
     },
     {
       "type": "text",
-      "content": "Thông thường, hiệu quả quang hợp tăng khi nồng độ khí carbon dioxide ngoài môi trường tăng. Nồng độ CO2 quá cao (khoảng 0,2%) có thể làm cây chết; nồng độ quá thấp thì quang hợp không xảy ra."
+      "content": "Thông thường, hiệu quả quang hợp tăng khi nồng độ khí carbon dioxide ngoài môi trường tăng. Nồng độ CO₂ quá cao (khoảng 0,2%) có thể làm cây chết; nồng độ quá thấp thì quang hợp không xảy ra."
     },
     {
       "type": "text",
@@ -32,11 +32,16 @@
     {
       "type": "text",
       "content": "Vận dụng: trồng cây đúng thời vụ và đảm bảo mật độ phù hợp để cây nhận đủ ánh sáng, nước và khí carbon dioxide; hạn chế nhiệt độ quá cao khi nắng nóng bằng cách che nắng."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/khtn-nhiet-do-quang-hop.svg",
+      "caption": "Nhiệt độ ảnh hưởng đến cường độ quang hợp (minh họa)."
     }
   ],
   "examples": [
     {
-      "problem": "Cường độ quang hợp của cây là 30 mg CO2/dm²/giờ. Trong 5 giờ cây quang hợp với cường độ không đổi, tổng cộng là bao nhiêu mg CO2/dm²?",
+      "problem": "Cường độ quang hợp của cây là 30 mg CO₂/dm²/giờ. Trong 5 giờ cây quang hợp với cường độ không đổi, tổng cộng là bao nhiêu mg CO₂/dm²?",
       "expr": "30 * 5",
       "steps": [
         "Cường độ không đổi là 30 mg CO2/dm²/giờ.",
@@ -107,7 +112,7 @@
         "Tăng khí oxygen"
       ],
       "answer": 0,
-      "explain": "Nồng độ CO2 quá cao có thể làm cây chết vì ngộ độc.",
+      "explain": "Nồng độ CO₂ quá cao có thể làm cây chết vì ngộ độc.",
       "wrong_explain": {
         "1": "Quá cao không làm quang hợp tốt hơn mà có hại.",
         "2": "Nồng độ quá cao có ảnh hưởng xấu đến cây.",
@@ -159,10 +164,10 @@
       "id": "q06",
       "level": "Hiểu",
       "type": "fill",
-      "stem": "Cường độ quang hợp không đổi là 30 mg CO2/dm²/giờ. Trong 5 giờ tổng cộng là bao nhiêu mg CO2/dm²?",
+      "stem": "Cường độ quang hợp không đổi là 30 mg CO₂/dm²/giờ. Trong 5 giờ tổng cộng là bao nhiêu mg CO₂/dm²?",
       "expr": "30 * 5",
       "answer": "150",
-      "explain": "30 × 5 = 150 mg CO2/dm²."
+      "explain": "30 × 5 = 150 mg CO₂/dm²."
     },
     {
       "id": "q07",
