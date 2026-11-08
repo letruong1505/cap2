@@ -6,7 +6,7 @@ const path = require('path');
 const R = require('../core/rational.js');
 
 const CONTENT_DIR = path.join(__dirname, '..', 'content');
-const LEVELS = ['Biết', 'Hiểu', 'Vận dụng'];
+const LEVELS = ['Biết', 'Hiểu', 'Vận dụng', 'Nâng cao'];
 
 function checkExpr(expr, answer, tag) {
   // Trả về danh sách lỗi cho một cặp biểu thức và đáp án.

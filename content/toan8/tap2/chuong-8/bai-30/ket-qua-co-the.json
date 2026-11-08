@@ -1,0 +1,186 @@
+{
+  "id": "t8-ket-qua-co-the",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 2",
+  "chapter": "Chương VIII. Mở đầu về tính xác suất của biến cố",
+  "lesson": "Bài 30. Kết quả có thể và kết quả thuận lợi",
+  "section": "Phần 1: Phép thử ngẫu nhiên và không gian mẫu; Phần 2: Kết quả thuận lợi cho một biến cố",
+  "bookPage": 64,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phép thử ngẫu nhiên là một thí nghiệm hay hành động mà ta không thể đoán trước kết quả của nó, nhưng biết được tập hợp tất cả các kết quả có thể xảy ra. Ví dụ: tung một đồng xu, gieo một con xúc xắc, quay một vòng quay số."
+    },
+    {
+      "type": "text",
+      "content": "Tập hợp tất cả các kết quả có thể xảy ra của phép thử gọi là không gian mẫu của phép thử. Một biến cố gắn với phép thử là một sự kiện có thể xảy ra hoặc không xảy ra tuỳ theo kết quả của phép thử."
+    },
+    {
+      "type": "text",
+      "content": "Kết quả của phép thử làm cho biến cố xảy ra gọi là kết quả thuận lợi cho biến cố đó."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-vong-quay.svg",
+      "caption": "Vòng quay có 8 ô bằng nhau đánh số từ 1 đến 8. Phép thử là quay vòng quay một lần và đọc số ở ô mũi tên chỉ vào."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Gieo một con xúc xắc cân đối. Biến cố A là \"Mặt xuất hiện có số chấm là số chẵn\". Có bao nhiêu kết quả thuận lợi cho A?",
+      "steps": [
+        "Các kết quả có thể: 1; 2; 3; 4; 5; 6 (6 kết quả).",
+        "Kết quả thuận lợi cho A: 2; 4; 6, tức là 3 kết quả."
+      ],
+      "expr": "3",
+      "answer": "3"
+    },
+    {
+      "problem": "Quay vòng quay (8 ô như hình). Biến cố B là \"Mũi tên chỉ vào ô ghi số lẻ\". Có bao nhiêu kết quả thuận lợi cho B?",
+      "steps": [
+        "Các số lẻ trong tập {1; 2; …; 8} là 1; 3; 5; 7.",
+        "Vậy có 4 kết quả thuận lợi cho B."
+      ],
+      "expr": "8/2",
+      "answer": "4",
+      "figure": "figures/lt-vong-quay.svg"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi tung một đồng xu một lần, các kết quả có thể xảy ra là:",
+      "choices": [
+        "Chỉ mặt sấp",
+        "Mặt sấp, mặt ngửa và cạnh đồng xu",
+        "Mặt sấp hoặc mặt ngửa",
+        "Ba kết quả"
+      ],
+      "answer": 2,
+      "explain": "Có hai kết quả có thể: S hoặc N.",
+      "wrong_explain": {
+        "0": "Mặt ngửa cũng có thể xảy ra.",
+        "1": "Ta coi đồng xu luôn rơi ở mặt sấp hoặc ngửa.",
+        "3": "Chỉ có hai kết quả."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kết quả thuận lợi cho một biến cố là:",
+      "choices": [
+        "Mọi kết quả có thể của phép thử",
+        "Kết quả của phép thử làm cho biến cố đó xảy ra",
+        "Kết quả làm biến cố không xảy ra",
+        "Số lần thực hiện phép thử"
+      ],
+      "answer": 1,
+      "explain": "Đây là định nghĩa kết quả thuận lợi.",
+      "wrong_explain": {
+        "0": "Chỉ những kết quả làm biến cố xảy ra mới thuận lợi.",
+        "2": "Ngược với định nghĩa.",
+        "3": "Không liên quan."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tung một đồng xu hai lần liên tiếp. Có bao nhiêu kết quả có thể xảy ra?",
+      "expr": "2*2",
+      "answer": "4",
+      "explain": "Các kết quả: SS, SN, NS, NN, tức 2·2 = 4 kết quả."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tung một đồng xu ba lần liên tiếp. Có bao nhiêu kết quả có thể xảy ra?",
+      "expr": "2*2*2",
+      "answer": "8",
+      "explain": "Mỗi lần có 2 kết quả nên có 2·2·2 = 8 kết quả."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Gieo một con xúc xắc. Có bao nhiêu kết quả thuận lợi cho biến cố \"Số chấm là số nguyên tố\"? (các số 2; 3; 5)",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Số nguyên tố trong {1;…;6} là 2; 3; 5 nên có 3 kết quả."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Gieo một con xúc xắc. Có bao nhiêu kết quả thuận lợi cho biến cố \"Số chấm lớn hơn 4\"?",
+      "expr": "6-4",
+      "answer": "2",
+      "explain": "Các kết quả 5; 6, tức 6 − 4 = 2 kết quả."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong hộp có 3 bi đỏ, 5 bi xanh, 2 bi vàng (cùng kích thước). Lấy ngẫu nhiên một bi. Có bao nhiêu kết quả có thể?",
+      "expr": "3+5+2",
+      "answer": "10",
+      "explain": "Tổng số bi là 10 nên có 10 kết quả có thể.",
+      "figure": "figures/lt-hop-bi.svg"
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong hộp trên, có bao nhiêu kết quả thuận lợi cho biến cố \"Lấy được bi xanh\"?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Có 5 bi xanh nên có 5 kết quả thuận lợi.",
+      "figure": "figures/lt-hop-bi.svg"
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong hộp trên, có bao nhiêu kết quả thuận lợi cho biến cố \"Bi lấy ra không phải bi đỏ\"?",
+      "expr": "10-3",
+      "answer": "7",
+      "explain": "Có 10 − 3 = 7 bi không phải bi đỏ.",
+      "figure": "figures/lt-hop-bi.svg"
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Rút ngẫu nhiên một thẻ trong 20 thẻ đánh số từ 1 đến 20. Có bao nhiêu kết quả thuận lợi cho biến cố \"Số trên thẻ chia hết cho 5\"?",
+      "expr": "20/5",
+      "answer": "4",
+      "explain": "Các số 5; 10; 15; 20, tức 20 : 5 = 4 kết quả."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Gieo cùng lúc hai con xúc xắc cân đối. Có bao nhiêu kết quả có thể xảy ra?",
+      "expr": "6*6",
+      "answer": "36",
+      "explain": "Mỗi con có 6 mặt nên có 6·6 = 36 kết quả có thể (quy tắc nhân)."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Gieo hai con xúc xắc. Có bao nhiêu kết quả thuận lợi cho biến cố \"Tổng số chấm bằng 8\"?",
+      "expr": "1+1+1+1+1",
+      "answer": "5",
+      "explain": "Các cặp (2; 6), (3; 5), (4; 4), (5; 3), (6; 2): có 5 kết quả."
+    }
+  ]
+}

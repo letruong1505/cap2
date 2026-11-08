@@ -1,0 +1,197 @@
+{
+  "id": "t8-ham-so-bac-nhat",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 2",
+  "chapter": "Chương VII. Phương trình bậc nhất và hàm số bậc nhất",
+  "lesson": "Bài 28. Hàm số bậc nhất và đồ thị của hàm số bậc nhất",
+  "section": "Phần 1: Hàm số bậc nhất; Phần 2: Đồ thị của hàm số bậc nhất",
+  "bookPage": 48,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hàm số bậc nhất là hàm số cho bởi công thức y = ax + b, trong đó a, b là các số cho trước và a ≠ 0."
+    },
+    {
+      "type": "text",
+      "content": "Hàm số y = ax + b xác định với mọi số thực x. Khi a > 0 hàm số đồng biến (x tăng thì y tăng); khi a < 0 hàm số nghịch biến (x tăng thì y giảm)."
+    },
+    {
+      "type": "text",
+      "content": "Đồ thị của hàm số bậc nhất y = ax + b (a ≠ 0) là một đường thẳng cắt trục tung tại điểm có tung độ bằng b và cắt trục hoành tại điểm có hoành độ bằng −b/a."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-do-thi-y-2x-1.svg",
+      "caption": "Đồ thị hàm số y = 2x + 1 là đường thẳng đi qua A(0; 1) và (−1/2; 0)."
+    },
+    {
+      "type": "text",
+      "content": "Cách vẽ đồ thị: xác định hai điểm phân biệt của đồ thị (thường là giao điểm với hai trục) rồi vẽ đường thẳng đi qua hai điểm đó."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tìm hoành độ giao điểm của đồ thị hàm số y = 2x − 6 với trục hoành.",
+      "steps": [
+        "Giao điểm với trục hoành có y = 0: 2x − 6 = 0.",
+        "Suy ra x = 6 : 2 = 3."
+      ],
+      "expr": "6/2",
+      "answer": "3"
+    },
+    {
+      "problem": "Điểm M(1; 1) có thuộc đồ thị hàm số y = 2x − 1 không? Tính giá trị y khi x = 1.",
+      "steps": [
+        "Thay x = 1: y = 2·1 − 1 = 1, đúng bằng tung độ của M nên M thuộc đồ thị."
+      ],
+      "expr": "2*1-1",
+      "answer": "1",
+      "figure": "figures/lt-do-thi-2-duong.svg"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hàm số nào sau đây là hàm số bậc nhất?",
+      "choices": [
+        "y = 5",
+        "y = x·x + 1",
+        "y = 3x − 2",
+        "y = 1/x"
+      ],
+      "answer": 2,
+      "explain": "Dạng y = ax + b với a = 3 ≠ 0.",
+      "wrong_explain": {
+        "0": "Hệ số a = 0 nên không phải hàm số bậc nhất.",
+        "1": "Đây không phải đa thức bậc nhất.",
+        "3": "Biến x nằm ở mẫu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hàm số y = −2x + 5 là hàm số:",
+      "choices": [
+        "Đồng biến",
+        "Nghịch biến",
+        "Hằng",
+        "Không xác định"
+      ],
+      "answer": 1,
+      "explain": "a < 0 nên hàm số nghịch biến.",
+      "wrong_explain": {
+        "0": "Hệ số a = −2 < 0.",
+        "2": "Hệ số a khác 0.",
+        "3": "Hàm xác định với mọi x."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đồ thị hàm số y = ax + b (a ≠ 0) cắt trục tung tại điểm có tung độ:",
+      "choices": [
+        "b",
+        "a",
+        "−b/a",
+        "0"
+      ],
+      "answer": 0,
+      "explain": "Khi x = 0 thì y = b.",
+      "wrong_explain": {
+        "1": "a là hệ số góc.",
+        "2": "Đây là hoành độ giao điểm với trục hoành.",
+        "3": "Đây là tung độ của giao điểm với trục hoành."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đồ thị hàm số y = −3x + 5 cắt trục tung tại điểm có tung độ bằng bao nhiêu?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Khi x = 0 thì y = 5."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đồ thị hàm số y = 3x + 6 cắt trục hoành tại điểm có hoành độ bằng bao nhiêu?",
+      "expr": "(0-6)/3",
+      "answer": "-2",
+      "explain": "Khi y = 0: 3x + 6 = 0 nên x = −2."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đồ thị hàm số y = −4x + 8 cắt trục hoành tại điểm có hoành độ bằng bao nhiêu?",
+      "expr": "8/4",
+      "answer": "2",
+      "explain": "Khi y = 0: −4x + 8 = 0 nên x = 2."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đồ thị hàm số y = ax + 3 đi qua điểm A(2; 7). Tìm a.",
+      "expr": "(7-3)/2",
+      "answer": "2",
+      "explain": "Thay x = 2, y = 7: 7 = 2a + 3 nên a = 2."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đồ thị hàm số y = 2x + b đi qua điểm (1; 5). Tìm b.",
+      "expr": "5-2*1",
+      "answer": "3",
+      "explain": "Thay x = 1, y = 5: 5 = 2 + b nên b = 3."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị y của hàm số y = 2x − 1 khi x = −1 là bao nhiêu?",
+      "expr": "2*(0-1)-1",
+      "answer": "-3",
+      "explain": "y = 2·(−1) − 1 = −3."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cước taxi gồm 10 000 đồng mở cửa và 12 000 đồng cho mỗi km. Đi 5 km phải trả bao nhiêu đồng?",
+      "expr": "10000+12000*5",
+      "answer": "70000",
+      "explain": "y = 12 000x + 10 000 với x = 5 cho 70 000 (đồng)."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Đồ thị hàm số y = (m − 1)x + 3 đi qua A(2; 7). Tìm m.",
+      "expr": "(7-3)/2+1",
+      "answer": "3",
+      "explain": "Thay x = 2, y = 7: 7 = 2(m − 1) + 3 ⇒ 2(m − 1) = 4 ⇒ m − 1 = 2 ⇒ m = 3."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Đồ thị hàm số y = 2x + 4 cùng hai trục toạ độ tạo thành một tam giác. Tính diện tích tam giác đó (đơn vị diện tích).",
+      "expr": "2*4/2",
+      "answer": "4",
+      "explain": "Giao với Oy: (0; 4); giao với Ox: x = −2. Tam giác vuông tại O có hai cạnh góc vuông 4 và 2: S = (1/2)·4·2 = 4."
+    }
+  ]
+}

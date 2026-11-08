@@ -1,6 +1,6 @@
 {
   "name": "vung-bai",
-  "productName": "Vững Bài",
+  "productName": "Giáo trình THCS",
   "version": "0.1.0-dev",
   "description": "Phần mềm luyện tập offline cấp 2 (Toán 7 - KNTT, bản thử)",
   "main": "main/main.js",
@@ -12,7 +12,7 @@
   },
   "build": {
     "appId": "vn.namlinh.vungbai",
-    "productName": "Vững Bài",
+    "productName": "Giáo trình THCS",
     "files": [
       "main/**/*",
       "renderer/**/*",
@@ -22,7 +22,7 @@
     ],
     "win": {
       "target": "portable",
-      "artifactName": "VungBai-${version}.exe"
+      "artifactName": "GiaoTrinhTHCS-${version}.exe"
     }
   },
   "devDependencies": {

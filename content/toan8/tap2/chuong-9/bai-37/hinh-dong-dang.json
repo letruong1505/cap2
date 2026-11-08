@@ -1,0 +1,199 @@
+{
+  "id": "t8-hinh-dong-dang",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 2",
+  "chapter": "Chương IX. Tam giác đồng dạng",
+  "lesson": "Bài 37. Hình đồng dạng",
+  "section": "Phần 1: Hình đồng dạng; Phần 2: Hình đồng dạng phối cảnh; Phần 3: Ứng dụng",
+  "bookPage": 106,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hai hình gọi là đồng dạng nếu hình này là hình phóng to hoặc thu nhỏ của hình kia (hình dạng giống nhau, kích thước có thể khác nhau). Hai hình bằng nhau là hai hình đồng dạng với tỉ số 1."
+    },
+    {
+      "type": "text",
+      "content": "Nếu hai hình đồng dạng theo tỉ số k thì các đoạn thẳng tương ứng tỉ lệ với nhau theo tỉ số k, các góc tương ứng bằng nhau, tỉ số chu vi bằng k và tỉ số diện tích bằng k²."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-phoi-canh.svg",
+      "caption": "Hai tam giác đồng dạng phối cảnh với tâm O: OA′/OA = OB′/OB = OC′/OC = 0,4."
+    },
+    {
+      "type": "text",
+      "content": "Hình đồng dạng phối cảnh: nếu với mỗi điểm M của hình thứ nhất, lấy điểm M′ trên đường thẳng OM sao cho OM′/OM = k (k > 0, không đổi) thì tập hợp các điểm M′ là một hình đồng dạng với hình thứ nhất, gọi là hình đồng dạng phối cảnh của nó."
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: đo gián tiếp chiều cao hoặc khoảng cách bằng cách tạo ra hai tam giác đồng dạng; đọc bản đồ theo tỉ lệ xích."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một cọc cao 1,5 m có bóng dài 2 m; cùng lúc đó một cái cây có bóng dài 12 m. Tính chiều cao của cây (m).",
+      "steps": [
+        "Tia nắng song song nên hai tam giác (cọc – bóng) và (cây – bóng) đồng dạng.",
+        "Chiều cao cây : 1,5 = 12 : 2 nên chiều cao cây = 1,5·12 : 2 = 9 (m)."
+      ],
+      "expr": "1.5*12/2",
+      "answer": "9",
+      "figure": "figures/vd-bong-cay.svg"
+    },
+    {
+      "problem": "Trên bản đồ tỉ lệ 1 : 50 000, hai địa điểm cách nhau 4 cm. Khoảng cách thực tế là bao nhiêu mét?",
+      "steps": [
+        "Khoảng cách thực tế = 4·50 000 = 200 000 (cm) = 2 000 (m)."
+      ],
+      "expr": "4*50000/100",
+      "answer": "2000"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hai hình đồng dạng khi:",
+      "choices": [
+        "Có cùng diện tích",
+        "Có cùng chu vi",
+        "Hình này là phóng to hoặc thu nhỏ của hình kia",
+        "Có cùng số cạnh"
+      ],
+      "answer": 2,
+      "explain": "Hình dạng giống nhau, kích thước có thể khác nhau.",
+      "wrong_explain": {
+        "0": "Đồng dạng không yêu cầu diện tích bằng nhau.",
+        "1": "Đồng dạng không yêu cầu chu vi bằng nhau.",
+        "3": "Chưa đủ để đồng dạng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hai hình bằng nhau là hai hình đồng dạng với tỉ số:",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "Không đồng dạng"
+      ],
+      "answer": 1,
+      "explain": "Phép đồng dạng tỉ số 1 giữ nguyên kích thước.",
+      "wrong_explain": {
+        "0": "Tỉ số phải dương.",
+        "2": "Hai hình bằng nhau không phóng to.",
+        "3": "Hai hình bằng nhau luôn đồng dạng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hai tam giác đồng dạng phối cảnh với tâm O theo tỉ số k thì:",
+      "choices": [
+        "OA′/OA = OB′/OB = OC′/OC = k",
+        "OA′ = OA",
+        "OA′·OA = k",
+        "AA′ = BB′"
+      ],
+      "answer": 0,
+      "explain": "Đây là định nghĩa hình đồng dạng phối cảnh.",
+      "wrong_explain": {
+        "1": "Chỉ đúng khi k = 1.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "concept": true,
+      "figure": "figures/lt-phoi-canh.svg"
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chữ nhật 3 cm × 5 cm và hình chữ nhật 6 cm × 10 cm đồng dạng theo tỉ số 2. Diện tích hình lớn là bao nhiêu (cm²)?",
+      "expr": "6*10",
+      "answer": "60",
+      "explain": "S = 6·10 = 60 (cm²) = 4·15 (k² = 4)."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai hình đồng dạng theo tỉ số 3, hình nhỏ có chu vi 12 cm. Tính chu vi hình lớn (cm).",
+      "expr": "12*3",
+      "answer": "36",
+      "explain": "Chu vi hình lớn = 3·12 = 36 (cm)."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai hình đồng dạng theo tỉ số 3, hình nhỏ có diện tích 12 cm². Tính diện tích hình lớn (cm²).",
+      "expr": "12*9",
+      "answer": "108",
+      "explain": "Diện tích nhân với k² = 9: 12·9 = 108 (cm²)."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai tam giác đồng dạng phối cảnh với tâm O, k = 0,4, OA = 10 cm. Tính OA′ (cm).",
+      "expr": "10*0.4",
+      "answer": "4",
+      "explain": "OA′ = 0,4·10 = 4 (cm).",
+      "figure": "figures/lt-phoi-canh.svg"
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một cọc cao 2 m có bóng dài 3 m. Cùng lúc đó toà nhà có bóng dài 45 m. Tính chiều cao toà nhà (m).",
+      "expr": "2*45/3",
+      "answer": "30",
+      "explain": "Chiều cao = 2·45 : 3 = 30 (m)."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bản đồ tỉ lệ 1 : 100 000, hai thị trấn cách nhau 3 cm trên bản đồ. Tính khoảng cách thực tế (km).",
+      "expr": "3*100000/100/1000",
+      "answer": "3",
+      "explain": "3·100 000 = 300 000 cm = 3 000 m = 3 km."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trên bản đồ tỉ lệ 1 : 50 000, hai địa điểm cách nhau 4 cm. Tính khoảng cách thực tế (m).",
+      "expr": "4*50000/100",
+      "answer": "2000",
+      "explain": "4·50 000 = 200 000 cm = 2 000 m."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Bản vẽ tỉ lệ 1 : 200 của một căn phòng hình chữ nhật có kích thước 4 cm × 3 cm. Tính diện tích thực tế của phòng (m²).",
+      "expr": "4*2*3*2",
+      "answer": "48",
+      "explain": "Thực tế: 4·200 = 800 cm = 8 m và 3·200 = 600 cm = 6 m. Diện tích = 8·6 = 48 (m²)."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cùng một lúc, thước dài 1,5 m có bóng 1 m, cột điện có bóng 8 m. Tính chiều cao cột điện (m).",
+      "expr": "1.5*8/1",
+      "answer": "12",
+      "explain": "Hai tam giác đồng dạng: cao/8 = 1,5/1 nên cột điện cao 12 m."
+    }
+  ]
+}

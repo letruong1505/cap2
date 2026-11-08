@@ -1,0 +1,169 @@
+{
+  "id": "t8-tinh-chat-phan-giac",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 1",
+  "chapter": "Chương IV. Định lí Thalès",
+  "lesson": "Bài 17. Tính chất đường phân giác của tam giác",
+  "section": "Phần 1: Tính chất đường phân giác của tam giác",
+  "bookPage": 89,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Định lí: trong tam giác, đường phân giác của một góc chia cạnh đối diện thành hai đoạn thẳng tỉ lệ với hai cạnh kề hai đoạn ấy."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-phan-giac.svg",
+      "caption": "AD là đường phân giác của tam giác ABC (D thuộc BC)."
+    },
+    {
+      "type": "formula",
+      "content": "AD là phân giác của góc A ⇒ DB/DC = AB/AC"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tam giác ABC có AB = 6 cm, AC = 9 cm, BC = 10 cm. AD là đường phân giác (D thuộc BC). Tính BD và DC.",
+      "steps": [
+        "Theo tính chất đường phân giác: BD/DC = AB/AC = 6/9 = 2/3.",
+        "BD + DC = 10 nên BD = 10 · 2/(2+3) = 4 (cm) và DC = 10 − 4 = 6 (cm)."
+      ],
+      "expr": "10*6/15",
+      "answer": "4",
+      "figure": "figures/lt-phan-giac.svg"
+    },
+    {
+      "problem": "Tam giác ABC có AB = 6 cm, BD = 3 cm, DC = 4 cm (AD là phân giác). Tính AC.",
+      "steps": [
+        "BD/DC = AB/AC nên AC = AB · DC : BD = 6·4 : 3 = 8 (cm)."
+      ],
+      "expr": "6*4/3",
+      "answer": "8"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "AD là đường phân giác của tam giác ABC (D thuộc BC). Khẳng định đúng là:",
+      "choices": [
+        "DB/DC = AC/AB",
+        "DB/DC = AB/AC",
+        "DB = DC",
+        "DB/AB = DC/AC"
+      ],
+      "answer": 1,
+      "explain": "Tính chất đường phân giác trong tam giác.",
+      "wrong_explain": {
+        "0": "Hai tỉ số này bị đảo.",
+        "2": "Điều này chỉ đúng khi AB = AC.",
+        "3": "Tỉ số này không đúng với tính chất đường phân giác."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đường phân giác trong của tam giác chia cạnh đối diện thành hai đoạn:",
+      "choices": [
+        "Tỉ lệ với hai cạnh kề",
+        "Bằng nhau",
+        "Tỉ lệ với hai cạnh không kề",
+        "Tỉ lệ với hai góc ở đáy"
+      ],
+      "answer": 0,
+      "explain": "Hai đoạn thẳng đó tỉ lệ với hai cạnh kề tương ứng.",
+      "wrong_explain": {
+        "1": "Chỉ đúng với tam giác cân tại đỉnh đó.",
+        "2": "Tỉ lệ với hai cạnh kề của hai đoạn đó.",
+        "3": "Không có tính chất này."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính tỉ số DB/DC biết AD là phân giác, AB = 12 cm, AC = 16 cm.",
+      "expr": "12/16",
+      "answer": "0.75",
+      "explain": "DB/DC = AB/AC = 12/16 = 0,75."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "AD là phân giác của tam giác ABC, AB = 6 cm, AC = 8 cm, DB = 3 cm. Tính DC (cm).",
+      "expr": "3*8/6",
+      "answer": "4",
+      "explain": "DC = DB · AC : AB = 3·8 : 6 = 4 (cm)."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "AD là phân giác của tam giác ABC, AB = 6 cm, DB = 3 cm, DC = 5 cm. Tính AC (cm).",
+      "expr": "6*5/3",
+      "answer": "10",
+      "explain": "AC = AB · DC : DB = 6·5 : 3 = 10 (cm)."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC có AB = 9 cm, AC = 12 cm, BC = 14 cm, AD là phân giác. Tính BD (cm).",
+      "expr": "14*9/21",
+      "answer": "6",
+      "explain": "BD/DC = 9/12 = 3/4 nên BD = 14 · 3/7 = 6 (cm)."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC có AB = 9 cm, AC = 12 cm, BC = 14 cm, AD là phân giác. Tính DC (cm).",
+      "expr": "14*12/21",
+      "answer": "8",
+      "explain": "DC = 14 · 4/7 = 8 (cm)."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác ABC có AB = 4 cm, AC = 6 cm, BC = 5 cm, AD là phân giác. Tính DC (cm).",
+      "expr": "5*6/10",
+      "answer": "3",
+      "explain": "DC = BC · AC : (AB + AC) = 5·6 : 10 = 3 (cm)."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác ABC có AB = 5 cm, AC = 10 cm, BC = 12 cm, AD là phân giác. Tính hiệu DC − DB (cm).",
+      "expr": "12*10/15-12*5/15",
+      "answer": "4",
+      "explain": "DC = 12·10 : 15 = 8 (cm), DB = 12·5 : 15 = 4 (cm); hiệu là 4 cm."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tam giác ABC có phân giác AD, BD = 4 cm, DC = 6 cm, chu vi tam giác bằng 25 cm. Tính AB (cm).",
+      "expr": "(25-10)*2/5",
+      "answer": "6",
+      "explain": "AB/AC = BD/DC = 2/3 và AB + AC = 25 − 10 = 15. Chia 15 theo tỉ lệ 2 : 3: AB = 15·2/5 = 6 (cm)."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tam giác ABC có phân giác AD, BD = 6 cm, DC = 9 cm, chu vi 40 cm. Tính AC − AB (cm).",
+      "expr": "(40-15)*3/5-(40-15)*2/5",
+      "answer": "5",
+      "explain": "AB + AC = 40 − 15 = 25 và AB/AC = 6/9 = 2/3 nên AB = 10, AC = 15. Hiệu là 5 cm."
+    }
+  ]
+}

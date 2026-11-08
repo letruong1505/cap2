@@ -1,4 +1,4 @@
-# Vững Bài — bản thử Toán 7 (Kết nối tri thức)
+# Giáo trình THCS — luyện tập offline cho học sinh cấp 2 (Kết nối tri thức)
 
 Phần mềm luyện tập offline cho học sinh cấp 2. Đây là khung ứng dụng và một bài thử: **Cộng và trừ số hữu tỉ**.
 

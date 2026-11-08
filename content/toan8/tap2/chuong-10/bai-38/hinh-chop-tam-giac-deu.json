@@ -1,0 +1,202 @@
+{
+  "id": "t8-hinh-chop-tam-giac-deu",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 2",
+  "chapter": "Chương X. Một số hình khối trong thực tiễn",
+  "lesson": "Bài 38. Hình chóp tam giác đều",
+  "section": "Phần 1: Hình chóp tam giác đều; Phần 2: Diện tích xung quanh và thể tích",
+  "bookPage": 113,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hình chóp tam giác đều S.ABC có đáy ABC là tam giác đều, ba mặt bên SAB, SBC, SCA là những tam giác cân bằng nhau có chung đỉnh S. Đỉnh S gọi là đỉnh của hình chóp; ba cạnh SA, SB, SC gọi là các cạnh bên; ba cạnh AB, BC, CA gọi là các cạnh đáy."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-hinh-chop-tam-giac-deu.svg",
+      "caption": "Hình chóp tam giác đều S.ABC: SH là đường cao (H là tâm của tam giác đều ABC); SM là trung đoạn (M là trung điểm của BC)."
+    },
+    {
+      "type": "text",
+      "content": "Chân đường cao H là tâm của đáy. Đường cao kẻ từ đỉnh S của một mặt bên gọi là trung đoạn của hình chóp. Hình chóp tam giác đều có 4 mặt, 4 đỉnh và 6 cạnh."
+    },
+    {
+      "type": "text",
+      "content": "Diện tích xung quanh của hình chóp đều bằng tích của nửa chu vi đáy với trung đoạn: Sxq = p·d (p là nửa chu vi đáy, d là trung đoạn). Diện tích toàn phần Stp = Sxq + S đáy."
+    },
+    {
+      "type": "text",
+      "content": "Thể tích hình chóp: V = (1/3)·S đáy·h, với h là chiều cao."
+    },
+    {
+      "type": "formula",
+      "content": "Sxq = p·d;  V = (1/3)·S·h"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hình chóp tam giác đều có cạnh đáy 6 cm và trung đoạn 5 cm. Tính diện tích xung quanh.",
+      "steps": [
+        "Nửa chu vi đáy: p = 6·3 : 2 = 9 (cm).",
+        "Sxq = p·d = 9·5 = 45 (cm²)."
+      ],
+      "expr": "6*3/2*5",
+      "answer": "45",
+      "figure": "figures/lt-hinh-chop-tam-giac-deu.svg"
+    },
+    {
+      "problem": "Hình chóp tam giác đều có diện tích đáy 15 cm² và chiều cao 6 cm. Tính thể tích.",
+      "steps": [
+        "V = (1/3)·S·h = (1/3)·15·6 = 30 (cm³)."
+      ],
+      "expr": "15*6/3",
+      "answer": "30"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đáy của hình chóp tam giác đều là:",
+      "choices": [
+        "Tam giác vuông",
+        "Tam giác cân bất kì",
+        "Tam giác đều",
+        "Hình vuông"
+      ],
+      "answer": 2,
+      "explain": "Theo định nghĩa hình chóp tam giác đều.",
+      "wrong_explain": {
+        "0": "Đáy là tam giác đều.",
+        "1": "Đáy phải là tam giác đều.",
+        "3": "Đáy hình vuông là của hình chóp tứ giác đều."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Các mặt bên của hình chóp tam giác đều là:",
+      "choices": [
+        "Các tam giác đều",
+        "Các tam giác cân bằng nhau",
+        "Các tam giác vuông",
+        "Các hình vuông"
+      ],
+      "answer": 1,
+      "explain": "Ba mặt bên là tam giác cân bằng nhau.",
+      "wrong_explain": {
+        "0": "Không nhất thiết là tam giác đều.",
+        "2": "Không nhất thiết vuông.",
+        "3": "Mặt bên là tam giác."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Chân đường cao của hình chóp tam giác đều là:",
+      "choices": [
+        "Tâm của tam giác đáy",
+        "Đỉnh của tam giác đáy",
+        "Trung điểm một cạnh bên",
+        "Trung điểm một cạnh đáy"
+      ],
+      "answer": 0,
+      "explain": "Chân đường cao là tâm của đáy.",
+      "wrong_explain": {
+        "1": "Đường cao không rơi vào đỉnh đáy.",
+        "2": "Không đúng.",
+        "3": "Đó là chân trung đoạn."
+      },
+      "concept": true,
+      "figure": "figures/lt-hinh-chop-tam-giac-deu.svg"
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chóp tam giác đều có bao nhiêu cạnh?",
+      "expr": "3+3",
+      "answer": "6",
+      "explain": "Có 3 cạnh bên và 3 cạnh đáy, tổng 6 cạnh."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chóp tam giác đều có cạnh đáy 8 cm, trung đoạn 7 cm. Tính diện tích xung quanh (cm²).",
+      "expr": "8*3/2*7",
+      "answer": "84",
+      "explain": "p = 12 cm nên Sxq = 12·7 = 84 (cm²)."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chóp tam giác đều có diện tích xung quanh 60 cm² và trung đoạn 5 cm. Tính cạnh đáy (cm).",
+      "expr": "60/5*2/3",
+      "answer": "8",
+      "explain": "p = 60 : 5 = 12 nên chu vi đáy 24 và cạnh đáy 24 : 3 = 8 (cm)."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chóp tam giác đều có Sxq = 45 cm² và diện tích đáy 15 cm². Tính diện tích toàn phần (cm²).",
+      "expr": "45+15",
+      "answer": "60",
+      "explain": "Stp = Sxq + S đáy = 45 + 15 = 60 (cm²)."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chóp tam giác đều có diện tích đáy 12 cm² và chiều cao 9 cm. Tính thể tích (cm³).",
+      "expr": "12*9/3",
+      "answer": "36",
+      "explain": "V = (1/3)·12·9 = 36 (cm³)."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình chóp tam giác đều có diện tích đáy 30 cm² và chiều cao 7 cm. Tính thể tích (cm³).",
+      "expr": "30*7/3",
+      "answer": "70",
+      "explain": "V = (1/3)·30·7 = 70 (cm³)."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình chóp tam giác đều có thể tích 36 cm³, diện tích đáy 9 cm². Tính chiều cao (cm).",
+      "expr": "36*3/9",
+      "answer": "12",
+      "explain": "V = (1/3)·S·h nên h = 3V : S = 3·36 : 9 = 12 (cm)."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hình chóp tam giác đều có diện tích xung quanh 90 cm² và trung đoạn 6 cm. Tính chu vi đáy (cm).",
+      "expr": "90/6*2",
+      "answer": "30",
+      "explain": "Sxq = p·d nên p = 90 : 6 = 15 (nửa chu vi). Chu vi đáy là 2·15 = 30 cm."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hình chóp tam giác đều có thể tích 40 cm³ và chiều cao 6 cm. Tính diện tích đáy (cm²).",
+      "expr": "40*3/6",
+      "answer": "20",
+      "explain": "V = (1/3)·S·h ⇒ S = 3V : h = 120 : 6 = 20 (cm²)."
+    }
+  ]
+}

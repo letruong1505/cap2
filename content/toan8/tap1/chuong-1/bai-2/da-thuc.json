@@ -1,0 +1,193 @@
+{
+  "id": "t8-da-thuc",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 1",
+  "chapter": "Chương I. Đa thức",
+  "lesson": "Bài 2. Đa thức",
+  "section": "Phần 1: Khái niệm đa thức; Phần 2: Đa thức thu gọn; Phần 3: Giá trị của đa thức",
+  "bookPage": 11,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đa thức là một tổng của những đơn thức. Mỗi đơn thức trong tổng gọi là một hạng tử của đa thức đó."
+    },
+    {
+      "type": "text",
+      "content": "Đa thức thu gọn là đa thức không có hai hạng tử nào đồng dạng. Muốn thu gọn đa thức, ta nhóm các hạng tử đồng dạng rồi cộng (trừ) chúng với nhau."
+    },
+    {
+      "type": "text",
+      "content": "Bậc của đa thức là bậc của hạng tử có bậc cao nhất trong dạng thu gọn của đa thức đó."
+    },
+    {
+      "type": "text",
+      "content": "Giá trị của đa thức tại những giá trị cho trước của các biến là kết quả nhận được khi thay các giá trị đó vào đa thức rồi thực hiện phép tính."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Thu gọn đa thức P = 3x²y − 2xy² + x²y + 5xy² rồi tìm bậc.",
+      "steps": [
+        "Nhóm các hạng tử đồng dạng: (3x²y + x²y) + (−2xy² + 5xy²).",
+        "Thu gọn: P = 4x²y + 3xy².",
+        "Mỗi hạng tử có bậc 3 nên đa thức có bậc 3."
+      ],
+      "expr": "2+1",
+      "answer": "3"
+    },
+    {
+      "problem": "Tính giá trị của đa thức Q = x² − 2xy + y² tại x = 3, y = 1.",
+      "steps": [
+        "Thay x = 3, y = 1: Q = 3² − 2·3·1 + 1².",
+        "Q = 9 − 6 + 1 = 4."
+      ],
+      "expr": "9-6+1",
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Biểu thức nào sau đây là đa thức?",
+      "choices": [
+        "1/x + y",
+        "x² − 3xy + 2",
+        "√x + y",
+        "x/y + 1"
+      ],
+      "answer": 1,
+      "explain": "Đa thức là tổng của các đơn thức; x², −3xy và 2 đều là đơn thức.",
+      "wrong_explain": {
+        "0": "Biểu thức có biến ở mẫu không phải là tổng của các đơn thức.",
+        "2": "Biểu thức có căn của biến không phải là đa thức.",
+        "3": "Biểu thức có biến ở mẫu không phải là tổng của các đơn thức."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đa thức 2x²y − 5xy + 3 có bao nhiêu hạng tử?",
+      "choices": [
+        "3",
+        "2",
+        "4",
+        "1"
+      ],
+      "answer": 0,
+      "explain": "Các hạng tử là 2x²y, −5xy và 3.",
+      "wrong_explain": {
+        "1": "Còn thiếu một hạng tử.",
+        "2": "Chỉ có ba hạng tử: 2x²y, −5xy và 3.",
+        "3": "Đây là tổng của ba đơn thức."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tìm bậc của đa thức x³y² − 2xy + 4.",
+      "expr": "3+2",
+      "answer": "5",
+      "explain": "Hạng tử x³y² có bậc 3 + 2 = 5, các hạng tử còn lại có bậc thấp hơn nên bậc của đa thức là 5."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Đa thức nào sau đây là đa thức thu gọn?",
+      "choices": [
+        "x²y + 2x²y − 1",
+        "xy + 5xy + y",
+        "x²y + xy² − 3",
+        "3x − 2x + 7"
+      ],
+      "answer": 2,
+      "explain": "Đa thức thu gọn không có hai hạng tử nào đồng dạng.",
+      "wrong_explain": {
+        "0": "Có hai hạng tử đồng dạng là x²y và 2x²y.",
+        "1": "Có hai hạng tử đồng dạng là xy và 5xy.",
+        "3": "Có hai hạng tử đồng dạng là 3x và −2x."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Thu gọn M = 3x²y + 2x²y − 4x²y = k·x²y. Tìm k.",
+      "expr": "3+2-4",
+      "answer": "1",
+      "explain": "k = 3 + 2 − 4 = 1."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính giá trị của đa thức A = x² + 2xy + y² tại x = 2, y = −5.",
+      "expr": "(2-5)*(2-5)",
+      "answer": "9",
+      "explain": "A = 2² + 2·2·(−5) + (−5)² = 4 − 20 + 25 = 9."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính giá trị của đa thức B = 2x²y − xy² tại x = −1, y = 3.",
+      "expr": "2*1*3-(-1)*9",
+      "answer": "15",
+      "explain": "B = 2·(−1)²·3 − (−1)·3² = 6 + 9 = 15."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho P = 5x³ − 2x²y + 7. Tính P tại x = 1, y = −2.",
+      "expr": "5-2*1*(-2)+7",
+      "answer": "16",
+      "explain": "P = 5·1 + 4 + 7 = 5 − 2·1²·(−2) + 7 = 5 + 4 + 7 = 16."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đa thức x²y³ + xy⁴ − 2 có bậc bằng bao nhiêu?",
+      "expr": "1+4",
+      "answer": "5",
+      "explain": "Hạng tử x²y³ có bậc 5, hạng tử xy⁴ có bậc 1 + 4 = 5, nên bậc của đa thức là 5."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một hình chữ nhật có chiều dài (x + 3) và chiều rộng x (cm). Diện tích là đa thức x² + 3x. Tính diện tích khi x = 4 cm (cm²).",
+      "expr": "4*4+3*4",
+      "answer": "28",
+      "explain": "S = x² + 3x = 4² + 3·4 = 16 + 12 = 28 (cm²)."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho x + y = 5 và xy = 6. Tính giá trị của đa thức x²y + xy².",
+      "expr": "6*5",
+      "answer": "30",
+      "explain": "Cách giải: đặt nhân tử chung. x²y + xy² = xy(x + y) = 6·5 = 30."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho x − y = 3. Tính giá trị của đa thức x(x − y) + y(y − x).",
+      "expr": "3*3",
+      "answer": "9",
+      "explain": "Cách giải: y(y − x) = −y(x − y). Do đó biểu thức = x(x − y) − y(x − y) = (x − y)(x − y) = 3·3 = 9."
+    }
+  ]
+}

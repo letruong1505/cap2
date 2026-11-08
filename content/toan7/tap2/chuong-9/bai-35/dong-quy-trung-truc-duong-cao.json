@@ -157,6 +157,35 @@
       "expr": "90",
       "answer": "90",
       "explain": "Trực tâm của tam giác vuông tại A là đỉnh A, nên góc BHC = góc BAC = 90°."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Giao điểm ba đường trung trực của một tam giác:",
+      "choices": [
+        "Cách đều ba cạnh",
+        "Luôn nằm trong tam giác",
+        "Cách đều ba đỉnh của tam giác",
+        "Là trọng tâm tam giác"
+      ],
+      "answer": 2,
+      "explain": "Mỗi điểm trên trung trực cách đều hai đầu đoạn thẳng nên giao điểm cách đều ba đỉnh.",
+      "wrong_explain": {
+        "0": "Đó là giao điểm ba đường phân giác.",
+        "1": "Với tam giác tù nó nằm ngoài.",
+        "3": "Chỉ trùng với trọng tâm khi tam giác đều."
+      },
+      "concept": true
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tam giác ABC có Â = 50°, hai đường cao BD và CE cắt nhau tại H. Tính góc BHC (độ).",
+      "expr": "180-50",
+      "answer": "130",
+      "explain": "Tứ giác ADHE có hai góc vuông tại D và E nên góc DHE = 180° − 50° = 130°; góc BHC đối đỉnh với góc DHE nên bằng 130°."
     }
   ]
 }

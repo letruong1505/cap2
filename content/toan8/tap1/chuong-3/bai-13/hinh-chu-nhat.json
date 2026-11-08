@@ -1,0 +1,176 @@
+{
+  "id": "t8-hinh-chu-nhat",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 1",
+  "chapter": "Chương III. Tứ giác",
+  "lesson": "Bài 13. Hình chữ nhật",
+  "section": "Phần 1: Hình chữ nhật; Phần 2: Dấu hiệu nhận biết hình chữ nhật",
+  "bookPage": 64,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hình chữ nhật là tứ giác có bốn góc vuông."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-hinh-chu-nhat.svg",
+      "caption": "Hình chữ nhật ABCD có hai đường chéo AC, BD bằng nhau và cắt nhau tại trung điểm O của mỗi đường."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất: hình chữ nhật là hình bình hành, nên có mọi tính chất của hình bình hành; ngoài ra hai đường chéo của hình chữ nhật bằng nhau."
+    },
+    {
+      "type": "text",
+      "content": "Dấu hiệu nhận biết: tứ giác có ba góc vuông; hình thang cân có một góc vuông; hình bình hành có một góc vuông; hình bình hành có hai đường chéo bằng nhau là hình chữ nhật."
+    },
+    {
+      "type": "text",
+      "content": "Trong tam giác vuông, đường trung tuyến ứng với cạnh huyền bằng nửa cạnh huyền."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hình chữ nhật ABCD có AC = 10 cm. Tính BD và OA (O là giao điểm hai đường chéo).",
+      "steps": [
+        "Hai đường chéo bằng nhau nên BD = 10 cm.",
+        "O là trung điểm của AC nên OA = 10 : 2 = 5 (cm)."
+      ],
+      "expr": "10/2",
+      "answer": "5"
+    },
+    {
+      "problem": "Tam giác ABC vuông tại A có đường trung tuyến AM = 6 cm. Tính cạnh huyền BC.",
+      "steps": [
+        "Trung tuyến ứng với cạnh huyền bằng nửa cạnh huyền nên BC = 2·6 = 12 (cm)."
+      ],
+      "expr": "2*6",
+      "answer": "12"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hình chữ nhật là tứ giác có:",
+      "choices": [
+        "Bốn cạnh bằng nhau",
+        "Bốn góc vuông",
+        "Hai cạnh đối song song",
+        "Hai đường chéo vuông góc"
+      ],
+      "answer": 1,
+      "explain": "Định nghĩa: hình chữ nhật là tứ giác có bốn góc vuông.",
+      "wrong_explain": {
+        "0": "Đây là điều kiện của hình thoi.",
+        "2": "Đây chỉ là điều kiện của hình thang.",
+        "3": "Đây là tính chất của hình thoi."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hình bình hành có hai đường chéo bằng nhau là:",
+      "choices": [
+        "Hình chữ nhật",
+        "Hình thoi",
+        "Hình vuông",
+        "Hình thang cân"
+      ],
+      "answer": 0,
+      "explain": "Đây là dấu hiệu nhận biết hình chữ nhật.",
+      "wrong_explain": {
+        "1": "Hình thoi có hai đường chéo vuông góc.",
+        "2": "Hình vuông cần thêm điều kiện bốn cạnh bằng nhau.",
+        "3": "Hình thang cân không phải hình bình hành."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tứ giác ABCD có ba góc vuông. Góc còn lại bằng bao nhiêu độ?",
+      "expr": "360-3*90",
+      "answer": "90",
+      "explain": "Tổng các góc bằng 360° nên góc còn lại là 360° − 270° = 90°."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chữ nhật ABCD có AC = 12 cm. Tính BD (cm).",
+      "expr": "12",
+      "answer": "12",
+      "explain": "Hai đường chéo của hình chữ nhật bằng nhau."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chữ nhật có hai đường chéo cắt nhau tại O và OA = 7 cm. Tính AC (cm).",
+      "expr": "2*7",
+      "answer": "14",
+      "explain": "O là trung điểm AC nên AC = 14 cm."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chữ nhật có chiều dài 9 cm, chiều rộng 4 cm. Tính chu vi (cm).",
+      "expr": "2*(9+4)",
+      "answer": "26",
+      "explain": "Chu vi = 2·(9 + 4) = 26 (cm)."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC vuông tại A có BC = 20 cm. Tính độ dài trung tuyến AM (cm).",
+      "expr": "20/2",
+      "answer": "10",
+      "explain": "AM bằng nửa cạnh huyền: 10 cm."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình chữ nhật có chiều dài gấp 3 lần chiều rộng và chu vi 48 cm. Tính chiều rộng (cm).",
+      "expr": "48/2/4",
+      "answer": "6",
+      "explain": "Nửa chu vi = 24 cm = chiều rộng + 3·chiều rộng = 4·chiều rộng, nên chiều rộng 6 cm."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình chữ nhật có chiều rộng 5 cm và diện tích 60 cm². Tính chiều dài (cm).",
+      "expr": "60/5",
+      "answer": "12",
+      "explain": "Chiều dài = 60 : 5 = 12 (cm)."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hình chữ nhật ABCD có AB = 6 cm, BC = 8 cm. Kẻ BH ⊥ AC. Tính BH (cm).",
+      "expr": "6*8/10",
+      "answer": "4.8",
+      "explain": "AC = 10 cm (Pythagore). Hai cách tính diện tích tam giác ABC: (1/2)·AB·BC = (1/2)·AC·BH nên BH = 6·8 : 10 = 4,8 (cm)."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tam giác ABC vuông tại A có trung tuyến AM = 6,5 cm và AB = 5 cm. Tính AC (cm).",
+      "expr": "(13*13-5*5)/12",
+      "answer": "12",
+      "explain": "BC = 2·AM = 13 cm. AC² = 13² − 5² = 144 nên AC = 12."
+    }
+  ]
+}

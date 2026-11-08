@@ -221,6 +221,44 @@
       "expr": "(0,4-1/2)*(0,4-1/2)*100",
       "answer": "1",
       "explain": "0,4 − 1/2 = −0,1; (−0,1)² = 0,01; 0,01 · 100 = 1."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Viết phân số 7/40 dưới dạng số thập phân.",
+      "expr": "7/40",
+      "answer": "0.175",
+      "explain": "Mẫu 40 = 2³·5 chỉ có ước nguyên tố 2 và 5 nên viết được dưới dạng thập phân hữu hạn: 7/40 = 0,175."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Trong các phân số 7/12, 9/40, 11/15, 5/18, phân số nào viết được dưới dạng số thập phân hữu hạn?",
+      "choices": [
+        "7/12",
+        "9/40",
+        "11/15",
+        "5/18"
+      ],
+      "answer": 1,
+      "explain": "Cách làm: rút gọn phân số rồi phân tích mẫu ra thừa số nguyên tố; nếu mẫu chỉ chứa 2 và 5 thì là số thập phân hữu hạn.",
+      "wrong_explain": {
+        "0": "Mẫu 12 = 2²·3 có ước nguyên tố 3.",
+        "2": "Mẫu 15 = 3·5 có ước nguyên tố 3.",
+        "3": "Mẫu 18 = 2·3² có ước nguyên tố 3."
+      },
+      "concept": true
+    },
+    {
+      "id": "n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tính 0,(3) + 0,(6).",
+      "expr": "3/9+6/9",
+      "answer": "1",
+      "explain": "0,(3) = 3/9 và 0,(6) = 6/9 nên tổng là 9/9 = 1."
     }
   ]
 }

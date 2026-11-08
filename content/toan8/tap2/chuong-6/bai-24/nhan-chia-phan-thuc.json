@@ -1,0 +1,187 @@
+{
+  "id": "t8-nhan-chia-phan-thuc",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 2",
+  "chapter": "Chương VI. Phân thức đại số",
+  "lesson": "Bài 24. Phép nhân và phép chia phân thức đại số",
+  "section": "Phần 1: Phép nhân phân thức; Phần 2: Phép chia phân thức",
+  "bookPage": 18,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Muốn nhân hai phân thức, ta nhân các tử thức với nhau và nhân các mẫu thức với nhau."
+    },
+    {
+      "type": "formula",
+      "content": "(A/B)·(C/D) = (A·C)/(B·D)"
+    },
+    {
+      "type": "text",
+      "content": "Muốn chia phân thức A/B cho phân thức C/D khác 0, ta nhân A/B với phân thức nghịch đảo của C/D."
+    },
+    {
+      "type": "formula",
+      "content": "(A/B) : (C/D) = (A/B)·(D/C)  (C/D ≠ 0)"
+    },
+    {
+      "type": "text",
+      "content": "Phép nhân phân thức có tính chất giao hoán, kết hợp và phân phối đối với phép cộng."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính giá trị của (x/(x + 1))·((x + 1)/3) tại x = 6.",
+      "steps": [
+        "Rút gọn nhân tử x + 1: (x/(x + 1))·((x + 1)/3) = x/3.",
+        "Với x = 6: 6/3 = 2."
+      ],
+      "expr": "2",
+      "answer": "2"
+    },
+    {
+      "problem": "Tính giá trị của (x/(x − 2)) : (x/(x + 1)) tại x = 4.",
+      "steps": [
+        "Nhân với nghịch đảo: (x/(x − 2))·((x + 1)/x) = (x + 1)/(x − 2).",
+        "Với x = 4: 5/2 = 2,5."
+      ],
+      "expr": "5/2",
+      "answer": "2.5"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kết quả của phép tính (2/x)·(x/5) là:",
+      "choices": [
+        "2x/5x",
+        "5/2",
+        "2/5",
+        "x/10"
+      ],
+      "answer": 2,
+      "explain": "Nhân tử với tử và mẫu với mẫu: (2·x)/(x·5) = 2/5.",
+      "wrong_explain": {
+        "0": "Chưa rút gọn nhân tử chung x.",
+        "1": "Đã đảo ngược kết quả.",
+        "3": "Nhân sai tử và mẫu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phân thức nghịch đảo của (x + 1)/(x − 2) là:",
+      "choices": [
+        "−(x + 1)/(x − 2)",
+        "(x − 2)/(x + 1)",
+        "(x + 1)/(2 − x)",
+        "(x − 1)/(x + 2)"
+      ],
+      "answer": 1,
+      "explain": "Hoán vị tử và mẫu.",
+      "wrong_explain": {
+        "0": "Đó là phân thức đối.",
+        "2": "Chỉ đổi dấu mẫu.",
+        "3": "Biến đổi sai dấu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Muốn chia phân thức A/B cho phân thức C/D khác 0 ta:",
+      "choices": [
+        "Nhân A/B với D/C",
+        "Nhân A/B với C/D",
+        "Cộng hai phân thức",
+        "Nhân A/B với −C/D"
+      ],
+      "answer": 0,
+      "explain": "Chia cho một phân thức bằng nhân với phân thức nghịch đảo.",
+      "wrong_explain": {
+        "1": "Đây là phép nhân.",
+        "2": "Đây là phép cộng.",
+        "3": "Đây là nhân với phân thức đối."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính giá trị của (x/3)·(6/x) tại x = 4.",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Rút gọn: (x·6)/(3·x) = 2. Giá trị là 2."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính giá trị của (x + 1)/(x − 1) · (x − 1)/(2) tại x = 5.",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Rút gọn nhân tử x − 1: (x + 1)/2. Với x = 5: 6/2 = 3."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính giá trị của (2x/(x + 3)) : (x/(x + 3)) tại x = 4.",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Nhân với nghịch đảo: (2x/(x + 3))·((x + 3)/x) = 2. Giá trị là 2."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính giá trị của (x·x − 1)/(x + 2) · (x + 2)/(x + 1) tại x = 5.",
+      "expr": "4",
+      "answer": "4",
+      "explain": "x·x − 1 = (x − 1)(x + 1); rút gọn ta được x − 1. Với x = 5: 4."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính giá trị của (x/2) : (3/x) tại x = 6.",
+      "expr": "6",
+      "answer": "6",
+      "explain": "(x/2) : (3/x) = (x/2)·(x/3) = x·x/6. Với x = 6: 36/6 = 6."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính giá trị của (4/(x − 1)) : (2/(x + 1)) tại x = 3.",
+      "expr": "4",
+      "answer": "4",
+      "explain": "(4/(x − 1))·((x + 1)/2) = 2(x + 1)/(x − 1). Với x = 3: 2·4/2 = 4."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tính giá trị của (x² − 4)/(x + 1) · (x + 1)/(x − 2) tại x = 5.",
+      "expr": "5+2",
+      "answer": "7",
+      "explain": "x² − 4 = (x − 2)(x + 2); rút gọn các nhân tử x + 1 và x − 2 còn x + 2. Với x = 5: 7."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tính giá trị của x/(x + 1) : (x + 1)/x tại x = 3.",
+      "expr": "9/16",
+      "answer": "0.5625",
+      "explain": "Chia = nhân với nghịch đảo: (x/(x + 1))·(x/(x + 1)) = x²/(x + 1)². Với x = 3: 9/16 = 0,5625."
+    }
+  ]
+}

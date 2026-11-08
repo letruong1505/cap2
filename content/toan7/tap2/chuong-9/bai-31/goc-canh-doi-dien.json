@@ -184,6 +184,35 @@
       "expr": "3*180/6",
       "answer": "90",
       "explain": "B̂ + 2B̂ + 3B̂ = 6B̂ = 180°, nên B̂ = 30°, Â = 60°, Ĉ = 90°. Góc lớn nhất là Ĉ = 90°, do đó cạnh lớn nhất là AB."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tam giác ABC có Â = 70°, B̂ = 50°. Tính Ĉ (độ).",
+      "expr": "180-70-50",
+      "answer": "60",
+      "explain": "Ĉ = 60°. Trong tam giác, cạnh đối diện góc lớn nhất là cạnh lớn nhất, ở đây là BC (đối diện Â = 70°)."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Tam giác ABC có Â = 70°, B̂ = 50°, Ĉ = 60°. Sắp xếp độ dài các cạnh theo thứ tự tăng dần:",
+      "choices": [
+        "BC < AB < AC",
+        "AC < AB < BC",
+        "AB < AC < BC",
+        "AB < BC < AC"
+      ],
+      "answer": 1,
+      "explain": "Cạnh càng đối diện góc lớn thì càng dài: AC (đối diện 50°) < AB (đối diện 60°) < BC (đối diện 70°).",
+      "wrong_explain": {
+        "0": "Cạnh đối diện góc lớn nhất (BC đối diện Â) phải dài nhất.",
+        "2": "AB đối diện Ĉ = 60° nên dài hơn AC (đối diện B̂ = 50°).",
+        "3": "BC đối diện góc lớn nhất nên phải dài nhất."
+      },
+      "concept": true
     }
   ]
 }

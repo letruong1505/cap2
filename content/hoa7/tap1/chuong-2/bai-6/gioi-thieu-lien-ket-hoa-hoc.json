@@ -76,6 +76,16 @@
         "2 + 6 = 8."
       ],
       "answer": "8"
+    },
+    {
+      "problem": "Dạng ion: nguyên tử sodium (Z = 11) nhường 1 electron để tạo ion Na⁺. Ion Na⁺ có bao nhiêu electron?",
+      "steps": [
+        "Cách làm: nhường electron → ion dương; nhận electron → ion âm; số electron thay đổi, số proton giữ nguyên.",
+        "Số electron của nguyên tử Na là 11; nhường 1 electron.",
+        "Số electron của Na⁺ là 11 − 1 = 10."
+      ],
+      "expr": "11-1",
+      "answer": "10"
     }
   ],
   "items": [
@@ -194,6 +204,44 @@
       "expr": "3 * 2",
       "answer": "6",
       "explain": "Mỗi cặp electron dùng chung có 2 electron, nên 3 × 2 = 6 electron."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Nguyên tử chlorine (Z = 17) nhận 1 electron tạo ion Cl⁻. Ion Cl⁻ có bao nhiêu electron?",
+      "expr": "17+1",
+      "answer": "18",
+      "explain": "Số electron tăng thêm 1: 17 + 1 = 18."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Nguyên tử magnesium (Z = 12) nhường 2 electron tạo ion Mg²⁺. Ion Mg²⁺ có bao nhiêu electron?",
+      "expr": "12-2",
+      "answer": "10",
+      "explain": "12 − 2 = 10 electron."
+    },
+    {
+      "id": "n03",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Trong phân tử HCl, liên kết giữa H và Cl là liên kết:",
+      "choices": [
+        "Cộng hoá trị (dùng chung electron)",
+        "Ion (cho – nhận electron)",
+        "Kim loại",
+        "Hydrogen"
+      ],
+      "answer": 0,
+      "explain": "Hai phi kim H và Cl dùng chung một cặp electron.",
+      "wrong_explain": {
+        "1": "Liên kết ion thường xảy ra giữa kim loại điển hình và phi kim điển hình.",
+        "2": "Không có liên kết kim loại giữa H và Cl.",
+        "3": "Đây không phải loại liên kết đang xét."
+      },
+      "concept": true
     }
   ]
 }

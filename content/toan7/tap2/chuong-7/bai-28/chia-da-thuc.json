@@ -117,6 +117,24 @@
       "expr": "2*2+2+1",
       "answer": "7",
       "explain": "Vì x³ − 1 = (x − 1)(x² + x + 1) nên thương là x² + x + 1. Tại x = 2: 4 + 2 + 1 = 7."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Thực hiện (x² − 5x + 6) : (x − 2) rồi tính giá trị thương tại x = 5.",
+      "expr": "5-3",
+      "answer": "2",
+      "explain": "x² − 5x + 6 = (x − 2)(x − 3) nên thương là x − 3; tại x = 5 bằng 2."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tìm a để x² + ax + 6 chia hết cho x − 2.",
+      "expr": "(0-10)/2",
+      "answer": "-5",
+      "explain": "Chia hết cho x − 2 khi x = 2 là nghiệm: 4 + 2a + 6 = 0 ⇒ a = −5."
     }
   ]
 }

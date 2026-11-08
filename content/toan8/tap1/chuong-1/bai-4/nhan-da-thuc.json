@@ -1,0 +1,192 @@
+{
+  "id": "t8-nhan-da-thuc",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 1",
+  "chapter": "Chương I. Đa thức",
+  "lesson": "Bài 4. Phép nhân đa thức",
+  "section": "Phần 1: Nhân đơn thức với đa thức; Phần 2: Nhân đa thức với đa thức",
+  "bookPage": 19,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Muốn nhân một đơn thức với một đa thức, ta nhân đơn thức với từng hạng tử của đa thức rồi cộng các tích với nhau."
+    },
+    {
+      "type": "formula",
+      "content": "A(B + C) = AB + AC"
+    },
+    {
+      "type": "text",
+      "content": "Muốn nhân một đa thức với một đa thức, ta nhân mỗi hạng tử của đa thức này với từng hạng tử của đa thức kia rồi cộng các tích với nhau."
+    },
+    {
+      "type": "formula",
+      "content": "(A + B)(C + D) = AC + AD + BC + BD"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính 2x(x² − 3x + 1). Tìm hệ số của x² trong kết quả.",
+      "steps": [
+        "2x(x² − 3x + 1) = 2x·x² + 2x·(−3x) + 2x·1.",
+        "= 2x³ − 6x² + 2x.",
+        "Hệ số của x² là −6."
+      ],
+      "expr": "2*(-3)",
+      "answer": "-6"
+    },
+    {
+      "problem": "Tính (x + 2)(x − 5). Tìm hệ số của x trong kết quả.",
+      "steps": [
+        "(x + 2)(x − 5) = x·x + x·(−5) + 2·x + 2·(−5).",
+        "= x² − 5x + 2x − 10 = x² − 3x − 10.",
+        "Hệ số của x là −3."
+      ],
+      "expr": "-5+2",
+      "answer": "-3"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kết quả của phép tính 3x(x − 2) là:",
+      "choices": [
+        "3x² − 2",
+        "3x² − 6x",
+        "3x − 6x",
+        "x² − 6x"
+      ],
+      "answer": 1,
+      "explain": "3x·x = 3x² và 3x·(−2) = −6x.",
+      "wrong_explain": {
+        "0": "Chưa nhân 3x với hạng tử −2.",
+        "2": "Phép nhân 3x·x bằng 3x², không phải 3x.",
+        "3": "Quên hệ số 3 ở hạng tử đầu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kết quả của (x + 1)(x + 2) là:",
+      "choices": [
+        "x² + 3x + 2",
+        "x² + 2",
+        "x² + 2x + 2",
+        "x² + 3x + 3"
+      ],
+      "answer": 0,
+      "explain": "x·x + x·2 + 1·x + 1·2 = x² + 3x + 2.",
+      "wrong_explain": {
+        "1": "Thiếu các tích chéo x·2 và 1·x.",
+        "2": "Thiếu hạng tử 1·x = x.",
+        "3": "Hạng tử tự do phải là 1·2 = 2."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tìm hệ số của x³ trong tích x(2x² + 3x − 1).",
+      "expr": "2",
+      "answer": "2",
+      "explain": "x(2x² + 3x − 1) = 2x³ + 3x² − x. Hệ số của x³ là 2."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm hệ số của x trong tích (x + 3)(x − 1).",
+      "expr": "-1+3",
+      "answer": "2",
+      "explain": "(x + 3)(x − 1) = x² + 2x − 3. Hệ số của x là 2."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính giá trị của biểu thức x(x + 2) tại x = 5.",
+      "expr": "5*(5+2)",
+      "answer": "35",
+      "explain": "5·7 = 35."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính giá trị của (x − 1)(x + 4) tại x = 3.",
+      "expr": "(3-1)*(3+4)",
+      "answer": "14",
+      "explain": "2·7 = 14."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm hệ số của x² trong kết quả của (2x − 1)(x + 3).",
+      "expr": "2*3-1",
+      "answer": "5",
+      "explain": "(2x − 1)(x + 3) = 2x² + 6x − x − 3 = 2x² + 5x − 3. Hệ số của x² là 2."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm hệ số của x trong kết quả của (2x − 1)(x + 3).",
+      "expr": "6-1",
+      "answer": "5",
+      "explain": "Hệ số của x là 6 − 1 = 5."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính (x + 2)(x² − 2x + 4) rồi tính giá trị kết quả tại x = 1.",
+      "expr": "1+8",
+      "answer": "9",
+      "explain": "Kết quả là x³ + 8 nên khi x = 1 bằng 9."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một hình chữ nhật có chiều dài (x + 4) m và chiều rộng (x + 2) m. Tính diện tích khi x = 3 (m²).",
+      "expr": "(3+4)*(3+2)",
+      "answer": "35",
+      "explain": "S = (x + 4)(x + 2) = 7·5 = 35 (m²)."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tìm hệ số của x³ trong tích (2x² + x − 1)(x² − 3x + 2).",
+      "expr": "2*(0-3)+1*1",
+      "answer": "-5",
+      "explain": "Chỉ cần các cặp hạng tử cho x³: 2x²·(−3x) = −6x³ và x·x² = x³. Hệ số: −6 + 1 = −5."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tìm x biết (x + 3)(x − 2) − x(x + 4) = 6.",
+      "expr": "(0-12)/3",
+      "answer": "-4",
+      "explain": "Khai triển: x² + x − 6 − x² − 4x = −3x − 6 = 6, suy ra −3x = 12 và x = −4."
+    },
+    {
+      "id": "n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tính giá trị của (x − 2)(x² + 2x + 4) tại x = −1.",
+      "expr": "(0-1)*(0-1)*(0-1)-8",
+      "answer": "-9",
+      "explain": "Nhận ra hằng đẳng thức: (x − 2)(x² + 2x + 4) = x³ − 8. Với x = −1: −1 − 8 = −9."
+    }
+  ]
+}

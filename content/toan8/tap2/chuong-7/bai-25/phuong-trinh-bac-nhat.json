@@ -1,0 +1,221 @@
+{
+  "id": "t8-phuong-trinh-bac-nhat",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 2",
+  "chapter": "Chương VII. Phương trình bậc nhất và hàm số bậc nhất",
+  "lesson": "Bài 25. Phương trình bậc nhất một ẩn",
+  "section": "Phần 1: Phương trình bậc nhất một ẩn; Phần 2: Cách giải phương trình bậc nhất một ẩn",
+  "bookPage": 29,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phương trình bậc nhất một ẩn x là phương trình có dạng ax + b = 0, trong đó a và b là hai số đã cho và a ≠ 0."
+    },
+    {
+      "type": "text",
+      "content": "Quy tắc chuyển vế: khi chuyển một hạng tử từ vế này sang vế kia của một phương trình, ta phải đổi dấu hạng tử đó. Quy tắc nhân (chia): có thể nhân (hoặc chia) cả hai vế của phương trình với cùng một số khác 0."
+    },
+    {
+      "type": "text",
+      "content": "Phương trình ax + b = 0 (a ≠ 0) luôn có một nghiệm duy nhất x = −b/a."
+    },
+    {
+      "type": "formula",
+      "content": "ax + b = 0 (a ≠ 0) ⇔ x = −b/a"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Giải phương trình 3x − 12 = 0.",
+      "steps": [
+        "Chuyển vế: 3x = 12.",
+        "Chia hai vế cho 3: x = 12 : 3 = 4."
+      ],
+      "expr": "12/3",
+      "answer": "4"
+    },
+    {
+      "problem": "Giải phương trình 2x + 7 = 3.",
+      "steps": [
+        "Chuyển vế: 2x = 3 − 7 = −4.",
+        "Chia hai vế cho 2: x = −4 : 2 = −2."
+      ],
+      "expr": "(3-7)/2",
+      "answer": "-2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phương trình nào sau đây là phương trình bậc nhất một ẩn?",
+      "choices": [
+        "0·x + 5 = 0",
+        "x·x − 4 = 0",
+        "2x − 3 = 0",
+        "1/x + 2 = 0"
+      ],
+      "answer": 2,
+      "explain": "Dạng ax + b = 0 với a = 2 ≠ 0.",
+      "wrong_explain": {
+        "0": "Hệ số của x bằng 0 nên không phải phương trình bậc nhất.",
+        "1": "Đây là phương trình bậc hai.",
+        "3": "Ẩn x ở mẫu nên không phải phương trình bậc nhất."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phương trình ax + b = 0 (a ≠ 0) có nghiệm là:",
+      "choices": [
+        "x = b/a",
+        "x = −b/a",
+        "x = −a/b",
+        "x = a/b"
+      ],
+      "answer": 1,
+      "explain": "ax = −b nên x = −b/a.",
+      "wrong_explain": {
+        "0": "Thiếu dấu trừ.",
+        "2": "Đảo ngược tử và mẫu.",
+        "3": "Sai cả dấu và vị trí."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi chuyển một hạng tử từ vế này sang vế kia của phương trình ta phải:",
+      "choices": [
+        "Đổi dấu hạng tử đó",
+        "Giữ nguyên dấu",
+        "Nhân hạng tử với 2",
+        "Bỏ hạng tử đó"
+      ],
+      "answer": 0,
+      "explain": "Đây là quy tắc chuyển vế.",
+      "wrong_explain": {
+        "1": "Sẽ làm sai phương trình.",
+        "2": "Quy tắc không yêu cầu điều này.",
+        "3": "Không được bỏ hạng tử."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải phương trình 5x − 20 = 0. Nghiệm x bằng bao nhiêu?",
+      "expr": "20/5",
+      "answer": "4",
+      "explain": "5x = 20 nên x = 4."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải phương trình 2x + 9 = 1. Nghiệm x bằng bao nhiêu?",
+      "expr": "(1-9)/2",
+      "answer": "-4",
+      "explain": "2x = 1 − 9 = −8 nên x = −4."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải phương trình 7 − 2x = 1. Nghiệm x bằng bao nhiêu?",
+      "expr": "(7-1)/2",
+      "answer": "3",
+      "explain": "−2x = 1 − 7 = −6 nên x = 3."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải phương trình 3x + 5 = 2x + 9. Nghiệm x bằng bao nhiêu?",
+      "expr": "(9-5)/1",
+      "answer": "4",
+      "explain": "Chuyển vế: 3x − 2x = 9 − 5, suy ra x = 4."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải phương trình 4(x − 1) = 2x + 6. Nghiệm x bằng bao nhiêu?",
+      "expr": "(6+4)/2",
+      "answer": "5",
+      "explain": "4x − 4 = 2x + 6 ⇒ 2x = 10 ⇒ x = 5."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải phương trình x/3 + 2 = 5. Nghiệm x bằng bao nhiêu?",
+      "expr": "(5-2)*3",
+      "answer": "9",
+      "explain": "x/3 = 3 nên x = 3·3 = 9."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giải phương trình 2(x + 3) = x + 10. Nghiệm x bằng bao nhiêu?",
+      "expr": "10-6",
+      "answer": "4",
+      "explain": "2x + 6 = x + 10 ⇒ x = 4."
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Nghiệm của phương trình 3x − 7 = 11 là:",
+      "choices": [
+        "6",
+        "5",
+        "4",
+        "−6"
+      ],
+      "answer": 0,
+      "explain": "3x = 11 + 7 = 18 nên x = 6.",
+      "wrong_explain": {
+        "1": "Chia sai: 3x = 18 chứ không phải 15.",
+        "2": "Nhầm 3x = 12.",
+        "3": "Sai dấu khi chuyển vế."
+      },
+      "expr": "(11+7)/3"
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Giải phương trình (x + 1)/2 − (x − 1)/3 = 1.",
+      "expr": "6-5",
+      "answer": "1",
+      "explain": "Quy đồng (nhân hai vế với 6): 3(x + 1) − 2(x − 1) = 6 ⇒ x + 5 = 6 ⇒ x = 1."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tìm m để phương trình 2x + m = 0 có nghiệm x = 3.",
+      "expr": "0-2*3",
+      "answer": "-6",
+      "explain": "Thay x = 3: 6 + m = 0 nên m = −6."
+    },
+    {
+      "id": "n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tìm m để phương trình mx − 6 = 0 có nghiệm x = 2.",
+      "expr": "6/2",
+      "answer": "3",
+      "explain": "Thay x = 2: 2m − 6 = 0 nên m = 3."
+    }
+  ]
+}

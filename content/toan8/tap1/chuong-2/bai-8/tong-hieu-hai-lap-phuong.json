@@ -1,0 +1,186 @@
+{
+  "id": "t8-tong-hieu-hai-lap-phuong",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 1",
+  "chapter": "Chương II. Hằng đẳng thức đáng nhớ và ứng dụng",
+  "lesson": "Bài 8. Tổng và hiệu hai lập phương",
+  "section": "Phần 1: Tổng hai lập phương; Phần 2: Hiệu hai lập phương",
+  "bookPage": 37,
+  "theory": [
+    {
+      "type": "formula",
+      "content": "A³ + B³ = (A + B)(A² − AB + B²)   (tổng hai lập phương)"
+    },
+    {
+      "type": "formula",
+      "content": "A³ − B³ = (A − B)(A² + AB + B²)   (hiệu hai lập phương)"
+    },
+    {
+      "type": "text",
+      "content": "Chú ý: A² − AB + B² gọi là bình phương thiếu của hiệu A − B, còn A² + AB + B² gọi là bình phương thiếu của tổng A + B. Hãy nhớ dấu: tổng hai lập phương có thừa số thứ nhất là A + B; hiệu hai lập phương có thừa số thứ nhất là A − B."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính 1³ + 9³ bằng hằng đẳng thức tổng hai lập phương.",
+      "steps": [
+        "1³ + 9³ = (1 + 9)(1² − 1·9 + 9²) = 10·(1 − 9 + 81) = 10·73 = 730."
+      ],
+      "expr": "10*(1-9+81)",
+      "answer": "730"
+    },
+    {
+      "problem": "Tính 5³ − 3³.",
+      "steps": [
+        "5³ − 3³ = (5 − 3)(5² + 5·3 + 3²) = 2·(25 + 15 + 9) = 2·49 = 98."
+      ],
+      "expr": "2*(25+15+9)",
+      "answer": "98"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Công thức tổng hai lập phương là:",
+      "choices": [
+        "A³ + B³ = (A + B)³",
+        "A³ + B³ = (A + B)(A² − AB + B²)",
+        "A³ + B³ = (A + B)(A² + AB + B²)",
+        "A³ + B³ = (A − B)(A² + AB + B²)"
+      ],
+      "answer": 1,
+      "explain": "Tổng hai lập phương bằng tổng hai số nhân bình phương thiếu của hiệu.",
+      "wrong_explain": {
+        "0": "(A + B)³ có thêm hai hạng tử 3A²B và 3AB².",
+        "2": "Thừa số thứ hai phải là A² − AB + B².",
+        "3": "Đây là công thức của hiệu hai lập phương."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phân tích x³ − 8 thành tích ta được:",
+      "choices": [
+        "(x − 2)(x² + 2x + 4)",
+        "(x − 2)(x² − 2x + 4)",
+        "(x + 2)(x² − 2x + 4)",
+        "(x − 2)³"
+      ],
+      "answer": 0,
+      "explain": "x³ − 2³ = (x − 2)(x² + 2x + 4).",
+      "wrong_explain": {
+        "1": "Dấu của 2x phải là \"+\" với hiệu hai lập phương.",
+        "2": "Đây là phân tích của x³ + 8.",
+        "3": "(x − 2)³ = x³ − 6x² + 12x − 8, khác x³ − 8."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 4³ + 6³ bằng tổng hai lập phương.",
+      "expr": "10*(16-24+36)",
+      "answer": "280",
+      "explain": "4³ + 6³ = (4 + 6)(16 − 24 + 36) = 10·28 = 280."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 7³ − 2³.",
+      "expr": "5*(49+14+4)",
+      "answer": "335",
+      "explain": "7³ − 2³ = (7 − 2)(49 + 14 + 4) = 5·67 = 335."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính giá trị của (x + 1)(x² − x + 1) tại x = 3.",
+      "expr": "27+1",
+      "answer": "28",
+      "explain": "(x + 1)(x² − x + 1) = x³ + 1 = 28."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính giá trị của (x − 2)(x² + 2x + 4) tại x = 4.",
+      "expr": "64-8",
+      "answer": "56",
+      "explain": "Biểu thức bằng x³ − 8 = 64 − 8 = 56."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho a − b = 2 và ab = 3. Tính a³ − b³.",
+      "expr": "2*(4+3*3)",
+      "answer": "26",
+      "explain": "a³ − b³ = (a − b)(a² + ab + b²) = (a − b)[(a − b)² + 3ab] = 2·(4 + 9) = 26."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho a + b = 5 và ab = 4. Tính a³ + b³.",
+      "expr": "5*(25-3*4)",
+      "answer": "65",
+      "explain": "a³ + b³ = (a + b)[(a + b)² − 3ab] = 5·(25 − 12) = 65."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính nhanh 100³ − 1 chia cho 99 (kết quả là 100² + 100 + 1).",
+      "expr": "10000+100+1",
+      "answer": "10101",
+      "explain": "100³ − 1 = (100 − 1)(100² + 100 + 1) nên thương là 10 101."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tính nhanh 99³ + 1.",
+      "expr": "(99+1)*(99*99-99+1)",
+      "answer": "970300",
+      "explain": "a³ + b³ = (a + b)(a² − ab + b²) với a = 99, b = 1: 100·(9801 − 99 + 1) = 100·9703 = 970 300."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho x + y = 5 và xy = 4. Tính x³ + y³.",
+      "expr": "5*5*5-3*4*5",
+      "answer": "65",
+      "explain": "x³ + y³ = (x + y)³ − 3xy(x + y) = 125 − 60 = 65."
+    },
+    {
+      "id": "n03",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Phân tích x³ − 8 thành nhân tử:",
+      "choices": [
+        "(x − 2)(x² + 2x + 4)",
+        "(x − 2)(x² − 2x + 4)",
+        "(x + 2)(x² − 2x + 4)",
+        "(x − 2)³"
+      ],
+      "answer": 0,
+      "explain": "Dùng a³ − b³ = (a − b)(a² + ab + b²) với a = x, b = 2.",
+      "wrong_explain": {
+        "1": "Dấu của hạng tử giữa phải là +2x với hiệu hai lập phương.",
+        "2": "Đây là phân tích của x³ + 8.",
+        "3": "(x − 2)³ = x³ − 6x² + 12x − 8, không phải x³ − 8."
+      },
+      "concept": true
+    }
+  ]
+}

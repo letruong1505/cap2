@@ -1,0 +1,206 @@
+{
+  "id": "t8-ba-truong-hop-dong-dang",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 2",
+  "chapter": "Chương IX. Tam giác đồng dạng",
+  "lesson": "Bài 34. Ba trường hợp đồng dạng của hai tam giác",
+  "section": "Phần 1: Trường hợp cạnh – cạnh – cạnh; Phần 2: Trường hợp cạnh – góc – cạnh; Phần 3: Trường hợp góc – góc",
+  "bookPage": 85,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Trường hợp đồng dạng thứ nhất (cạnh – cạnh – cạnh): nếu ba cạnh của tam giác này tỉ lệ với ba cạnh của tam giác kia thì hai tam giác đó đồng dạng."
+    },
+    {
+      "type": "formula",
+      "content": "A′B′/AB = B′C′/BC = C′A′/CA ⇒ ΔA′B′C′ ∽ ΔABC"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/vd-dd-ccc.svg",
+      "caption": "Hai tam giác có các cặp cạnh tỉ lệ 6/4 = 9/6 = 12/8 = 1,5."
+    },
+    {
+      "type": "text",
+      "content": "Trường hợp đồng dạng thứ hai (cạnh – góc – cạnh): nếu hai cạnh của tam giác này tỉ lệ với hai cạnh của tam giác kia và hai góc tạo bởi các cặp cạnh đó bằng nhau thì hai tam giác đồng dạng."
+    },
+    {
+      "type": "formula",
+      "content": "A′B′/AB = A′C′/AC và Â′ = Â ⇒ ΔA′B′C′ ∽ ΔABC"
+    },
+    {
+      "type": "text",
+      "content": "Trường hợp đồng dạng thứ ba (góc – góc): nếu hai góc của tam giác này lần lượt bằng hai góc của tam giác kia thì hai tam giác đó đồng dạng."
+    },
+    {
+      "type": "formula",
+      "content": "Â′ = Â và B̂′ = B̂ ⇒ ΔA′B′C′ ∽ ΔABC"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tam giác ABC có AB = 4 cm, AC = 6 cm, BC = 8 cm. Tam giác A′B′C′ có A′B′ = 6 cm, A′C′ = 9 cm, B′C′ = 12 cm. Hai tam giác có đồng dạng không? Tính tỉ số đồng dạng.",
+      "steps": [
+        "A′B′/AB = 6/4 = 1,5; A′C′/AC = 9/6 = 1,5; B′C′/BC = 12/8 = 1,5.",
+        "Ba cặp cạnh tỉ lệ nên ΔA′B′C′ ∽ ΔABC (c.c.c) với k = 1,5."
+      ],
+      "expr": "6/4",
+      "answer": "1.5",
+      "figure": "figures/vd-dd-ccc.svg"
+    },
+    {
+      "problem": "Cho ΔABC và ΔDEF có AB = 4 cm, AC = 6 cm, DE = 6 cm, DF = 9 cm và Â = D̂. Biết BC = 5 cm. Tính EF.",
+      "steps": [
+        "DE/AB = 6/4 = 1,5 và DF/AC = 9/6 = 1,5 nên hai cạnh tỉ lệ; Â = D̂ nên ΔDEF ∽ ΔABC (c.g.c).",
+        "EF = 1,5·BC = 1,5·5 = 7,5 (cm)."
+      ],
+      "expr": "6*5/4",
+      "answer": "7.5"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hai tam giác có hai cạnh tỉ lệ và góc xen giữa bằng nhau thì:",
+      "choices": [
+        "Bằng nhau",
+        "Không kết luận được",
+        "Đồng dạng (c.g.c)",
+        "Đồng dạng nếu thêm một góc nữa"
+      ],
+      "answer": 2,
+      "explain": "Đây là trường hợp đồng dạng cạnh – góc – cạnh.",
+      "wrong_explain": {
+        "0": "Chưa chắc các cạnh tương ứng bằng nhau.",
+        "1": "Đây là một trường hợp đồng dạng.",
+        "3": "Không cần thêm điều kiện."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hai tam giác có hai góc bằng nhau từng đôi một thì:",
+      "choices": [
+        "Bằng nhau",
+        "Đồng dạng (g.g)",
+        "Không đồng dạng",
+        "Có chu vi bằng nhau"
+      ],
+      "answer": 1,
+      "explain": "Hai góc bằng nhau thì góc thứ ba cũng bằng nhau.",
+      "wrong_explain": {
+        "0": "Chỉ đồng dạng, các cạnh chưa chắc bằng nhau.",
+        "2": "Đây là trường hợp đồng dạng góc – góc.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tam giác có các cạnh 3; 4; 5 đồng dạng với tam giác có các cạnh:",
+      "choices": [
+        "6; 8; 10",
+        "6; 8; 9",
+        "4; 5; 6",
+        "3; 5; 7"
+      ],
+      "answer": 0,
+      "explain": "6/3 = 8/4 = 10/5 = 2 (c.c.c).",
+      "wrong_explain": {
+        "1": "6/3 = 8/4 = 2 nhưng 9/5 ≠ 2.",
+        "2": "Các tỉ số không bằng nhau.",
+        "3": "Các tỉ số không bằng nhau."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "ΔABC có các cạnh 3; 4; 5 và ΔDEF có các cạnh 6; 8; 10. Tính tỉ số đồng dạng ΔDEF : ΔABC.",
+      "expr": "6/3",
+      "answer": "2",
+      "explain": "k = 6/3 = 2."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "ΔABC có Â = 50°, B̂ = 60°; ΔDEF có D̂ = 50°, Ê = 60°. Tính F̂ (độ).",
+      "expr": "180-50-60",
+      "answer": "70",
+      "explain": "Ĉ = 70° và ΔABC ∽ ΔDEF (g.g) nên F̂ = Ĉ = 70°."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "ΔABC có AB = 3, AC = 5, BC = 4; ΔDEF có DE = 6, DF = 10 và Â = D̂. Tính EF.",
+      "expr": "6*4/3",
+      "answer": "8",
+      "explain": "Tỉ số 6/3 = 10/5 = 2 nên ΔDEF ∽ ΔABC (c.g.c) và EF = 2·4 = 8."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai tam giác ABC và DEF đồng dạng (g.g). AB = 6 cm, DE = 9 cm; chu vi ΔABC bằng 20 cm. Tính chu vi ΔDEF (cm).",
+      "expr": "20*9/6",
+      "answer": "30",
+      "explain": "Tỉ số k = 9/6 = 1,5 nên chu vi ΔDEF = 20·1,5 = 30 (cm)."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "ΔABC có AB = 6, AC = 8, BC = 10; ΔDEF có DE = 3, DF = 4 và tỉ số các cạnh tương ứng bằng nhau (c.c.c). Tính EF.",
+      "expr": "10*3/6",
+      "answer": "5",
+      "explain": "k = 3/6 = 0,5 nên EF = 0,5·10 = 5."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "ΔABC ∽ ΔMNP theo tỉ số 2/3 (MN/AB = 2/3). Biết AB = 12 cm. Tính MN (cm).",
+      "expr": "12*2/3",
+      "answer": "8",
+      "explain": "MN = AB · 2/3 = 8 (cm)."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong ΔABC có Â = 90°, B̂ = 40°. Trong ΔDEF có D̂ = 90°, F̂ = 50°. Tính Ê (độ).",
+      "expr": "180-90-50",
+      "answer": "40",
+      "explain": "Ê = 180° − 90° − 50° = 40° = B̂ nên hai tam giác đồng dạng (g.g)."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tam giác ABC vuông tại A có AB = 9 cm, AC = 12 cm; tam giác DEF vuông tại D có DE = 6 cm, DF = 8 cm. Hai tam giác đồng dạng (c.g.c). Tính tỉ số diện tích SABC : SDEF.",
+      "expr": "54/24",
+      "answer": "2.25",
+      "explain": "Diện tích ABC = 9·12/2 = 54, diện tích DEF = 6·8/2 = 24. Tỉ số 54/24 = 2,25 = (3/2)² đúng bằng bình phương tỉ số đồng dạng."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tam giác ABC, điểm D thuộc cạnh AB sao cho góc ACD = góc ABC, AD = 4 cm, DB = 5 cm. Tính AC (cm).",
+      "expr": "(4*9)/6",
+      "answer": "6",
+      "explain": "ΔACD ∽ ΔABC (g.g) ⇒ AC/AB = AD/AC ⇒ AC² = AD·AB = 4·9 = 36 ⇒ AC = 6."
+    }
+  ]
+}

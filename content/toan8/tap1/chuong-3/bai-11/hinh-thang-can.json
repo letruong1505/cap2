@@ -1,0 +1,185 @@
+{
+  "id": "t8-hinh-thang-can",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 1",
+  "chapter": "Chương III. Tứ giác",
+  "lesson": "Bài 11. Hình thang cân",
+  "section": "Phần 1: Hình thang; Phần 2: Hình thang cân",
+  "bookPage": 52,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hình thang là tứ giác có hai cạnh đối song song. Hai cạnh song song gọi là hai đáy, hai cạnh còn lại gọi là hai cạnh bên."
+    },
+    {
+      "type": "text",
+      "content": "Hình thang cân là hình thang có hai góc kề một đáy bằng nhau."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-hinh-thang-can.svg",
+      "caption": "Hình thang cân ABCD (AB ∥ CD) có Â = B̂, Ĉ = D̂ và hai đường chéo AC = BD."
+    },
+    {
+      "type": "text",
+      "content": "Trong hình thang cân: hai cạnh bên bằng nhau; hai đường chéo bằng nhau."
+    },
+    {
+      "type": "text",
+      "content": "Dấu hiệu nhận biết: hình thang có hai đường chéo bằng nhau là hình thang cân."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hình thang cân ABCD (AB ∥ CD) có Ĉ = 65°. Tính D̂ và Â.",
+      "steps": [
+        "Hai góc kề đáy CD bằng nhau: D̂ = Ĉ = 65°.",
+        "AB ∥ CD nên Â + D̂ = 180°, suy ra Â = 180° − 65° = 115°."
+      ],
+      "expr": "180-65",
+      "answer": "115"
+    },
+    {
+      "problem": "Hình thang cân có hai đáy 6 cm và 10 cm, cạnh bên 5 cm. Tính chu vi.",
+      "steps": [
+        "Chu vi = 6 + 10 + 5 + 5 = 26 (cm)."
+      ],
+      "expr": "6+10+5+5",
+      "answer": "26"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hình thang là tứ giác có:",
+      "choices": [
+        "Hai cạnh kề vuông góc",
+        "Hai cạnh đối song song",
+        "Bốn cạnh bằng nhau",
+        "Hai đường chéo bằng nhau"
+      ],
+      "answer": 1,
+      "explain": "Hình thang có (ít nhất) một cặp cạnh đối song song.",
+      "wrong_explain": {
+        "0": "Đây là điều kiện của hình chữ nhật.",
+        "2": "Đây là hình thoi.",
+        "3": "Đây là dấu hiệu của hình thang cân."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong hình thang cân, hai đường chéo:",
+      "choices": [
+        "Bằng nhau",
+        "Vuông góc với nhau",
+        "Song song với nhau",
+        "Luôn cắt nhau tại trung điểm"
+      ],
+      "answer": 0,
+      "explain": "Hình thang cân có hai đường chéo bằng nhau.",
+      "wrong_explain": {
+        "1": "Điều này không đúng với mọi hình thang cân.",
+        "2": "Hai đường chéo cắt nhau.",
+        "3": "Điều này không đúng với hình thang cân tổng quát."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình thang cân ABCD có đáy AB, góc Â = 110°. Tính B̂ (độ).",
+      "expr": "110",
+      "answer": "110",
+      "explain": "Hai góc kề đáy AB bằng nhau nên B̂ = Â = 110°."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình thang cân ABCD (AB ∥ CD) có Â = 110°. Tính D̂ (độ).",
+      "expr": "180-110",
+      "answer": "70",
+      "explain": "Â + D̂ = 180° (hai góc trong cùng phía) nên D̂ = 70°."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình thang cân có hai đáy 7 cm, 11 cm và hai cạnh bên cùng 4 cm. Tính chu vi (cm).",
+      "expr": "7+11+4+4",
+      "answer": "26",
+      "explain": "Chu vi = 7 + 11 + 4 + 4 = 26 (cm)."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tổng hai góc kề một cạnh bên của hình thang bằng bao nhiêu độ?",
+      "expr": "180",
+      "answer": "180",
+      "explain": "Hai góc này là hai góc trong cùng phía của hai đường thẳng song song nên bù nhau: 180°."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình thang cân ABCD (AB ∥ CD) có Ĉ = D̂ và Â = B̂ = 3·Ĉ. Tính Ĉ (độ).",
+      "expr": "180/4",
+      "answer": "45",
+      "explain": "Â + D̂ = 180° nên 3Ĉ + Ĉ = 180°, Ĉ = 45°."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình thang cân ABCD có đường chéo AC = 9 cm. Tính đường chéo BD (cm).",
+      "expr": "9",
+      "answer": "9",
+      "explain": "Hai đường chéo của hình thang cân bằng nhau nên BD = 9 cm."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình thang cân có chu vi 40 cm, hai đáy 12 cm và 16 cm. Tính độ dài một cạnh bên (cm).",
+      "expr": "(40-12-16)/2",
+      "answer": "6",
+      "explain": "Hai cạnh bên bằng nhau: (40 − 28) : 2 = 6 (cm)."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hình thang cân ABCD (AB ∥ CD) có AB = 6 cm, CD = 14 cm, cạnh bên 5 cm. Tính đường cao (cm).",
+      "expr": "(5*5-4*4)/3",
+      "answer": "3",
+      "explain": "Hạ hai đường cao từ A, B xuống CD: mỗi phần nhô ra bằng (14 − 6) : 2 = 4 cm. Đường cao h có h² = 5² − 4² = 9 nên h = 3."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hình thang cân ABCD (AB ∥ CD) có hai đường chéo cắt nhau tại O, AC = 10 cm và OA = 3 cm. Tính OD (cm).",
+      "expr": "10-3",
+      "answer": "7",
+      "explain": "Hai đường chéo bằng nhau nên BD = AC = 10 cm; ΔOAB cân nên OB = OA = 3 cm. Do đó OD = BD − OB = 7 cm."
+    },
+    {
+      "id": "n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hình thang cân có hai đáy 6 cm và 14 cm, cạnh bên 5 cm (đường cao 3 cm). Tính diện tích (cm²).",
+      "expr": "(6+14)*3/2",
+      "answer": "30",
+      "explain": "S = (đáy lớn + đáy nhỏ)·chiều cao : 2 = 20·3 : 2 = 30 (cm²)."
+    }
+  ]
+}

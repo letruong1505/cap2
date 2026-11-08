@@ -192,6 +192,55 @@
       "expr": "2 * 1.5",
       "answer": "3",
       "explain": "2 × 1,5 = 3 V."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cuộn dây nam châm điện có 200 vòng. Nếu tăng số vòng lên gấp 3 lần thì cuộn dây có bao nhiêu vòng?",
+      "expr": "200*3",
+      "answer": "600",
+      "explain": "200·3 = 600 vòng (từ trường mạnh hơn khi số vòng dây tăng)."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Có thể làm tăng lực từ của nam châm điện bằng cách:",
+      "choices": [
+        "Giảm số vòng dây",
+        "Tăng cường độ dòng điện hoặc tăng số vòng dây",
+        "Rút lõi sắt non ra",
+        "Đổi chiều dòng điện"
+      ],
+      "answer": 1,
+      "explain": "Lực từ tăng khi dòng điện mạnh hơn, số vòng nhiều hơn hoặc có lõi sắt non.",
+      "wrong_explain": {
+        "0": "Giảm số vòng dây làm lực từ yếu đi.",
+        "2": "Lõi sắt non làm tăng lực từ.",
+        "3": "Chỉ đổi cực từ, không đổi độ mạnh."
+      },
+      "concept": true
+    },
+    {
+      "id": "n03",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Khi ngắt dòng điện qua nam châm điện:",
+      "choices": [
+        "Nam châm điện mất từ tính",
+        "Vẫn giữ từ tính mạnh như cũ",
+        "Từ tính tăng lên",
+        "Đổi cực từ"
+      ],
+      "answer": 0,
+      "explain": "Nam châm điện chỉ có từ tính khi có dòng điện chạy qua cuộn dây.",
+      "wrong_explain": {
+        "1": "Từ tính của nam châm điện chỉ có khi có dòng điện.",
+        "2": "Không đúng.",
+        "3": "Đổi cực từ khi đổi chiều dòng điện."
+      },
+      "concept": true
     }
   ]
 }

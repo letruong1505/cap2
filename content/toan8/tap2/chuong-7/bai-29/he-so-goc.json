@@ -1,0 +1,200 @@
+{
+  "id": "t8-he-so-goc",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 2",
+  "chapter": "Chương VII. Phương trình bậc nhất và hàm số bậc nhất",
+  "lesson": "Bài 29. Hệ số góc của đường thẳng",
+  "section": "Phần 1: Hệ số góc của đường thẳng; Phần 2: Vị trí tương đối của hai đường thẳng",
+  "bookPage": 54,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đường thẳng y = ax + b (a ≠ 0) có hệ số góc là a. Khi a > 0, góc tạo bởi đường thẳng và trục Ox là góc nhọn (hàm số đồng biến); khi a < 0, góc đó là góc tù (hàm số nghịch biến)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-he-so-goc.svg",
+      "caption": "Đường thẳng y = x có hệ số góc a = 1 > 0; đường thẳng y = −x có hệ số góc a = −1 < 0."
+    },
+    {
+      "type": "text",
+      "content": "Hệ số góc của đường thẳng đi qua hai điểm có hoành độ khác nhau A(x₁; y₁), B(x₂; y₂) là a = (y₂ − y₁)/(x₂ − x₁)."
+    },
+    {
+      "type": "text",
+      "content": "Hai đường thẳng y = ax + b và y = a′x + b′ (a ≠ 0, a′ ≠ 0): song song với nhau khi a = a′ và b ≠ b′; trùng nhau khi a = a′ và b = b′; cắt nhau khi a ≠ a′."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-do-thi-song-song.svg",
+      "caption": "Hai đường thẳng y = x + 1 và y = x − 2 có cùng hệ số góc 1 và tung độ gốc khác nhau nên song song."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tìm hệ số góc của đường thẳng đi qua A(0; 1) và B(1; 4).",
+      "steps": [
+        "a = (4 − 1)/(1 − 0) = 3."
+      ],
+      "expr": "(4-1)/1",
+      "answer": "3"
+    },
+    {
+      "problem": "Tìm m để đường thẳng d: y = (m − 1)x + 2 song song với d′: y = 3x − 1.",
+      "steps": [
+        "Hai đường thẳng song song khi hệ số góc bằng nhau và tung độ gốc khác nhau: m − 1 = 3 (2 ≠ −1 thoả mãn).",
+        "Suy ra m = 4."
+      ],
+      "expr": "3+1",
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hệ số góc của đường thẳng y = −4x + 1 là:",
+      "choices": [
+        "4",
+        "1",
+        "−4",
+        "−1/4"
+      ],
+      "answer": 2,
+      "explain": "Hệ số của x là hệ số góc.",
+      "wrong_explain": {
+        "0": "Sai dấu.",
+        "1": "Đây là tung độ gốc.",
+        "3": "Không phải hệ số của x."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hai đường thẳng y = 2x + 1 và y = 2x − 3:",
+      "choices": [
+        "Cắt nhau",
+        "Song song",
+        "Trùng nhau",
+        "Vuông góc với nhau"
+      ],
+      "answer": 1,
+      "explain": "Cùng hệ số góc và tung độ gốc khác nhau.",
+      "wrong_explain": {
+        "0": "Hai đường có hệ số góc bằng nhau nên không cắt nhau.",
+        "2": "Tung độ gốc khác nhau.",
+        "3": "Hệ số góc bằng nhau không cho điều này."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đường thẳng y = ax + b có a > 0 tạo với trục Ox một góc:",
+      "choices": [
+        "Nhọn",
+        "Tù",
+        "Vuông",
+        "Bẹt"
+      ],
+      "answer": 0,
+      "explain": "a > 0 thì góc nhọn.",
+      "wrong_explain": {
+        "1": "Góc tù ứng với a < 0.",
+        "2": "Đường thẳng vuông góc với Ox không phải đồ thị hàm số.",
+        "3": "Không đúng."
+      },
+      "concept": true,
+      "figure": "figures/lt-he-so-goc.svg"
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm hệ số góc của đường thẳng đi qua A(1; 2) và B(3; 8).",
+      "expr": "(8-2)/2",
+      "answer": "3",
+      "explain": "a = (8 − 2)/(3 − 1) = 3."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đường thẳng có hệ số góc 2 đi qua điểm (1; 5). Tìm tung độ gốc b.",
+      "expr": "5-2*1",
+      "answer": "3",
+      "explain": "5 = 2·1 + b nên b = 3."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm m để y = (2m + 1)x − 3 song song với y = 5x + 2.",
+      "expr": "(5-1)/2",
+      "answer": "2",
+      "explain": "2m + 1 = 5 nên m = 2."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai đường thẳng y = 2x − 1 và y = −x + 2 cắt nhau tại điểm có hoành độ bằng bao nhiêu?",
+      "expr": "(2+1)/3",
+      "answer": "1",
+      "explain": "2x − 1 = −x + 2 ⇒ 3x = 3 ⇒ x = 1.",
+      "figure": "figures/lt-do-thi-2-duong.svg"
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai đường thẳng y = 2x − 1 và y = −x + 2 cắt nhau tại điểm có hoành độ 1. Tung độ giao điểm bằng bao nhiêu?",
+      "expr": "2*1-1",
+      "answer": "1",
+      "explain": "y = 2·1 − 1 = 1, giao điểm M(1; 1).",
+      "figure": "figures/lt-do-thi-2-duong.svg"
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm m để đồ thị hàm số y = (m − 2)x + 3 có hệ số góc bằng 4.",
+      "expr": "4+2",
+      "answer": "6",
+      "explain": "m − 2 = 4 nên m = 6."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm m để y = (3 − m)x + 2m + 1 song song với y = 2x − 1 (hệ số góc bằng nhau: 3 − m = 2). Tìm m.",
+      "expr": "3-2",
+      "answer": "1",
+      "explain": "3 − m = 2 nên m = 1; khi đó tung độ gốc 2m + 1 = 3 ≠ −1 nên hai đường thẳng song song."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Đường thẳng đi qua A(1; 3) và song song với đường thẳng y = 2x − 5 có dạng y = 2x + b. Tìm b.",
+      "expr": "3-2*1",
+      "answer": "1",
+      "explain": "Song song nên cùng hệ số góc 2. Thay A(1; 3): 3 = 2 + b ⇒ b = 1."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Đường thẳng đi qua A(2; 1) và B(4; 5) có phương trình y = 2x − 3. Tìm hoành độ giao điểm với trục hoành.",
+      "expr": "3/2",
+      "answer": "1.5",
+      "explain": "Hệ số góc a = (5 − 1)/(4 − 2) = 2; b = 1 − 2·2 = −3. Giao với Ox: 2x − 3 = 0 ⇒ x = 1,5."
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "id": "t8-hinh-chop-tu-giac-deu",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 2",
+  "chapter": "Chương X. Một số hình khối trong thực tiễn",
+  "lesson": "Bài 39. Hình chóp tứ giác đều",
+  "section": "Phần 1: Hình chóp tứ giác đều; Phần 2: Diện tích xung quanh và thể tích",
+  "bookPage": 119,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hình chóp tứ giác đều S.ABCD có đáy ABCD là hình vuông, bốn mặt bên SAB, SBC, SCD, SDA là những tam giác cân bằng nhau có chung đỉnh S. Hình chóp tứ giác đều có 5 mặt, 5 đỉnh, 8 cạnh."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-hinh-chop-tu-giac-deu.svg",
+      "caption": "Hình chóp tứ giác đều S.ABCD: SO là đường cao (O là giao điểm của hai đường chéo của hình vuông ABCD); SM là trung đoạn (M là trung điểm của CD)."
+    },
+    {
+      "type": "text",
+      "content": "Chân đường cao O là tâm của đáy. Diện tích xung quanh: Sxq = p·d (p là nửa chu vi đáy, d là trung đoạn). Diện tích toàn phần Stp = Sxq + S đáy."
+    },
+    {
+      "type": "text",
+      "content": "Thể tích: V = (1/3)·S đáy·h. Với đáy là hình vuông cạnh a thì S đáy = a·a."
+    },
+    {
+      "type": "formula",
+      "content": "Sxq = p·d = 2a·d;  V = (1/3)·a²·h"
+    },
+    {
+      "type": "text",
+      "content": "Giữa chiều cao h, trung đoạn d và cạnh đáy a có hệ thức Pythagore: d² = h² + (a/2)²."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hình chóp tứ giác đều có cạnh đáy 6 cm và trung đoạn 5 cm. Tính diện tích xung quanh.",
+      "steps": [
+        "Nửa chu vi đáy: p = 6·4 : 2 = 12 (cm).",
+        "Sxq = p·d = 12·5 = 60 (cm²)."
+      ],
+      "expr": "6*4/2*5",
+      "answer": "60",
+      "figure": "figures/lt-hinh-chop-tu-giac-deu.svg"
+    },
+    {
+      "problem": "Hình chóp tứ giác đều có cạnh đáy 6 cm và chiều cao 4 cm. Tính thể tích.",
+      "steps": [
+        "Diện tích đáy: 6·6 = 36 (cm²).",
+        "V = (1/3)·36·4 = 48 (cm³)."
+      ],
+      "expr": "6*6*4/3",
+      "answer": "48"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đáy của hình chóp tứ giác đều là:",
+      "choices": [
+        "Hình chữ nhật bất kì",
+        "Hình thoi bất kì",
+        "Hình vuông",
+        "Tam giác đều"
+      ],
+      "answer": 2,
+      "explain": "Theo định nghĩa hình chóp tứ giác đều.",
+      "wrong_explain": {
+        "0": "Đáy phải là hình vuông.",
+        "1": "Đáy phải là hình vuông.",
+        "3": "Đây là đáy của hình chóp tam giác đều."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hình chóp tứ giác đều có tất cả bao nhiêu mặt?",
+      "choices": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "answer": 1,
+      "explain": "Bốn mặt bên và một mặt đáy.",
+      "wrong_explain": {
+        "0": "Đó là số mặt của hình chóp tam giác đều.",
+        "2": "Không đúng.",
+        "3": "Đây là số cạnh."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Công thức thể tích hình chóp tứ giác đều đáy là hình vuông cạnh a, chiều cao h là:",
+      "choices": [
+        "V = (1/3)·a·a·h",
+        "V = a·a·h",
+        "V = (1/2)·a·a·h",
+        "V = 4·a·h"
+      ],
+      "answer": 0,
+      "explain": "Thể tích bằng một phần ba tích diện tích đáy và chiều cao.",
+      "wrong_explain": {
+        "1": "Thiếu hệ số 1/3.",
+        "2": "Hệ số phải là 1/3.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chóp tứ giác đều có bao nhiêu cạnh?",
+      "expr": "4+4",
+      "answer": "8",
+      "explain": "Có 4 cạnh bên và 4 cạnh đáy, tổng 8 cạnh."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chóp tứ giác đều có cạnh đáy 10 cm, trung đoạn 13 cm. Tính diện tích xung quanh (cm²).",
+      "expr": "10*4/2*13",
+      "answer": "260",
+      "explain": "p = 20 cm nên Sxq = 20·13 = 260 (cm²)."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chóp tứ giác đều có cạnh đáy 3 cm, chiều cao 8 cm. Tính thể tích (cm³).",
+      "expr": "3*3*8/3",
+      "answer": "24",
+      "explain": "V = (1/3)·9·8 = 24 (cm³)."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chóp tứ giác đều có cạnh đáy 6 cm, chiều cao 5 cm. Tính thể tích (cm³).",
+      "expr": "6*6*5/3",
+      "answer": "60",
+      "explain": "V = (1/3)·36·5 = 60 (cm³)."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chóp tứ giác đều có cạnh đáy 4 cm và trung đoạn 5 cm. Tính diện tích toàn phần (cm²).",
+      "expr": "4*4/2*5+4*4",
+      "answer": "56",
+      "explain": "Sxq = 8·5 = 40; S đáy = 16; Stp = 40 + 16 = 56 (cm²)."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình chóp tứ giác đều có cạnh đáy 10 cm và trung đoạn 13 cm. Tính chiều cao (cm).",
+      "expr": "(13*13-5*5)/12",
+      "answer": "12",
+      "explain": "h² = d² − (a/2)² = 169 − 25 = 144 nên h = 12."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình chóp tứ giác đều có thể tích 48 cm³ và chiều cao 4 cm. Tính diện tích đáy (cm²).",
+      "expr": "48*3/4",
+      "answer": "36",
+      "explain": "V = (1/3)·S·h nên S = 3V : h = 3·48 : 4 = 36 (cm²)."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hình chóp tứ giác đều có Sxq = 240 cm², cạnh đáy 10 cm. Tính trung đoạn (cm).",
+      "expr": "240/20",
+      "answer": "12",
+      "explain": "Sxq = p·d với p = 2·10 = 20 nên d = 240 : 20 = 12 (cm)."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hình chóp tứ giác đều có cạnh đáy 10 cm, cạnh bên 13 cm. Tính diện tích xung quanh (cm²).",
+      "expr": "2*10*((13*13-5*5)/12)",
+      "answer": "240",
+      "explain": "Mặt bên là tam giác cân có cạnh bên 13, nửa đáy 5 nên trung đoạn d = √(13² − 5²) = 12. Sxq = p·d = 20·12 = 240 (cm²)."
+    }
+  ]
+}

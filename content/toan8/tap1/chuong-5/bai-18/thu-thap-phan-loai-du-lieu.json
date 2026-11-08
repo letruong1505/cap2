@@ -1,0 +1,194 @@
+{
+  "id": "t8-thu-thap-phan-loai-du-lieu",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 1",
+  "chapter": "Chương V. Dữ liệu và biểu đồ",
+  "lesson": "Bài 18. Thu thập và phân loại dữ liệu",
+  "section": "Phần 1: Thu thập dữ liệu; Phần 2: Phân loại dữ liệu; Phần 3: Tính hợp lí của dữ liệu",
+  "bookPage": 91,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dữ liệu là các số liệu hoặc thông tin thu được trong quá trình điều tra, khảo sát, đo đạc… Có thể thu thập dữ liệu trực tiếp (quan sát, phỏng vấn, lập phiếu hỏi, làm thí nghiệm) hoặc gián tiếp (từ sách, báo, tài liệu, internet)."
+    },
+    {
+      "type": "text",
+      "content": "Dữ liệu chia thành hai loại: dữ liệu định tính (không phải là số, ví dụ màu sắc, tên môn học yêu thích) và dữ liệu định lượng (là số, ví dụ chiều cao, số anh chị em)."
+    },
+    {
+      "type": "text",
+      "content": "Dữ liệu định lượng gồm: số liệu rời rạc (đếm được, ví dụ số học sinh, số bàn thắng) và số liệu liên tục (thu được từ đo lường, có thể nhận giá trị bất kì trong một khoảng, ví dụ chiều cao, cân nặng)."
+    },
+    {
+      "type": "text",
+      "content": "Tính hợp lí của dữ liệu: dữ liệu cần đúng với đối tượng khảo sát và nằm trong phạm vi hợp lí. Ví dụ: tuổi của một học sinh lớp 8 là 100 là dữ liệu không hợp lí; số học sinh nam của một lớp là 20,5 cũng không hợp lí vì số người phải là số tự nhiên."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Khảo sát 40 học sinh về môn học yêu thích: Toán 12 bạn, Ngữ văn 8 bạn, Tiếng Anh 10 bạn, Tin học 6 bạn, còn lại thích Thể dục. Có bao nhiêu bạn thích Thể dục?",
+      "steps": [
+        "Số bạn thích bốn môn đầu: 12 + 8 + 10 + 6 = 36.",
+        "Số bạn thích Thể dục: 40 − 36 = 4 (bạn)."
+      ],
+      "expr": "40-(12+8+10+6)",
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Dữ liệu nào sau đây là dữ liệu định tính?",
+      "choices": [
+        "Số bạn trong lớp",
+        "Màu sắc yêu thích của các bạn",
+        "Cân nặng của các bạn",
+        "Điểm kiểm tra của các bạn"
+      ],
+      "answer": 1,
+      "explain": "Màu sắc không phải là số nên là dữ liệu định tính.",
+      "wrong_explain": {
+        "0": "Đây là số đếm nên là dữ liệu định lượng.",
+        "2": "Cân nặng là số đo nên là dữ liệu định lượng.",
+        "3": "Điểm là số nên là dữ liệu định lượng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số bàn thắng của một đội bóng trong mỗi trận là dữ liệu:",
+      "choices": [
+        "Định lượng rời rạc",
+        "Định tính",
+        "Định lượng liên tục",
+        "Không phải dữ liệu"
+      ],
+      "answer": 0,
+      "explain": "Số bàn thắng đếm được nên là số liệu rời rạc.",
+      "wrong_explain": {
+        "1": "Số bàn thắng là số.",
+        "2": "Số bàn thắng là số đếm được (0; 1; 2; …), không nhận mọi giá trị trong một khoảng.",
+        "3": "Đây là dữ liệu thu được qua quan sát."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Chiều cao của các học sinh trong lớp là dữ liệu:",
+      "choices": [
+        "Định tính",
+        "Định lượng rời rạc",
+        "Không phân loại được",
+        "Định lượng liên tục"
+      ],
+      "answer": 3,
+      "explain": "Chiều cao là số đo nên là số liệu liên tục.",
+      "wrong_explain": {
+        "0": "Chiều cao được biểu diễn bằng số.",
+        "1": "Chiều cao do đo mà có, có thể nhận giá trị bất kì trong một khoảng.",
+        "2": "Dữ liệu này phân loại được."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dữ liệu nào sau đây KHÔNG hợp lí khi khảo sát học sinh lớp 8 của một trường?",
+      "choices": [
+        "Tuổi của một học sinh là 14",
+        "Chiều cao của một học sinh là 1,55 m",
+        "Tuổi của một học sinh là 40",
+        "Số anh chị em ruột là 2"
+      ],
+      "answer": 2,
+      "explain": "Học sinh lớp 8 thường 13–14 tuổi, nên 40 tuổi là không hợp lí.",
+      "wrong_explain": {
+        "0": "Đây là dữ liệu hợp lí.",
+        "1": "Đây là dữ liệu hợp lí.",
+        "3": "Đây là dữ liệu hợp lí."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khảo sát 40 học sinh: 12 bạn thích Toán, 8 bạn thích Ngữ văn, 10 bạn thích Tiếng Anh, 6 bạn thích Tin học, còn lại thích Thể dục. Có bao nhiêu bạn thích Thể dục?",
+      "expr": "40-(12+8+10+6)",
+      "answer": "4",
+      "explain": "12 + 8 + 10 + 6 = 36 nên số bạn thích Thể dục là 40 − 36 = 4."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong 40 học sinh khảo sát có 12 bạn thích Toán. Tỉ lệ phần trăm số bạn thích Toán là bao nhiêu (%)?",
+      "expr": "12/40*100",
+      "answer": "30",
+      "explain": "12/40 · 100% = 30%."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một cuộc khảo sát phát ra 30 phiếu và thu được 25 phiếu hợp lệ. Có bao nhiêu phiếu không hợp lệ?",
+      "expr": "30-25",
+      "answer": "5",
+      "explain": "Số phiếu không hợp lệ là 30 − 25 = 5."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số liệu về số anh chị em ruột của 20 bạn: 8 bạn có 1, 7 bạn có 2, 3 bạn có 3, còn lại có 0. Có bao nhiêu bạn có 0 anh chị em ruột?",
+      "expr": "20-(8+7+3)",
+      "answer": "2",
+      "explain": "8 + 7 + 3 = 18 nên số bạn không có anh chị em là 20 − 18 = 2."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tổng số học sinh của một lớp là 42. Trong đó có 24 bạn nữ. Tính số bạn nam.",
+      "expr": "42-24",
+      "answer": "18",
+      "explain": "Số bạn nam là 42 − 24 = 18."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khảo sát môn thể thao yêu thích của 50 học sinh: bóng đá 20 bạn, bóng chuyền 12 bạn, cầu lông 10 bạn, còn lại là bơi lội. Tính tỉ lệ phần trăm số bạn thích bơi lội (%).",
+      "expr": "(50-20-12-10)/50*100",
+      "answer": "16",
+      "explain": "Số bạn thích bơi lội: 50 − 42 = 8. Tỉ lệ: 8/50 · 100% = 16%."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Trong 120 phiếu khảo sát có 30 phiếu không hợp lệ. Tỉ lệ phần trăm phiếu hợp lệ là bao nhiêu?",
+      "expr": "(120-30)/120*100",
+      "answer": "75",
+      "explain": "Số phiếu hợp lệ: 90. Tỉ lệ: 90/120·100% = 75%."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Khảo sát 250 học sinh: 40% thích Toán, 30% thích Tiếng Anh, còn lại thích môn khác. Có bao nhiêu học sinh thích môn khác?",
+      "expr": "250*(100-40-30)/100",
+      "answer": "75",
+      "explain": "Tỉ lệ thích môn khác: 100% − 70% = 30%. Số học sinh: 250·30/100 = 75."
+    }
+  ]
+}

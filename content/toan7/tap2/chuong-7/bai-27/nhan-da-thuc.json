@@ -110,6 +110,24 @@
       "expr": "5",
       "answer": "5",
       "explain": "(x + 2)(x + 3) = x² + 5x + 6, hệ số của x là 5."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tính giá trị của (x + 2)(x² − 2x + 4) tại x = 3.",
+      "expr": "3*3*3+8",
+      "answer": "35",
+      "explain": "Nhận ra hằng đẳng thức tích: (x + 2)(x² − 2x + 4) = x³ + 8. Với x = 3: 27 + 8 = 35."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tìm hệ số của x² trong tích (x² − x + 2)(2x − 3).",
+      "expr": "(0-3)+(0-1)*2",
+      "answer": "-5",
+      "explain": "Các cặp cho x²: x²·(−3) = −3x² và (−x)·2x = −2x². Hệ số: −3 − 2 = −5."
     }
   ]
 }

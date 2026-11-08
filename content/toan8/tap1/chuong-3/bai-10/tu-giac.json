@@ -1,0 +1,186 @@
+{
+  "id": "t8-tu-giac",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 1",
+  "chapter": "Chương III. Tứ giác",
+  "lesson": "Bài 10. Tứ giác",
+  "section": "Phần 1: Tứ giác lồi và các yếu tố của nó; Phần 2: Tổng các góc của một tứ giác",
+  "bookPage": 49,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tứ giác ABCD là hình gồm bốn đoạn thẳng AB, BC, CD, DA, trong đó không có hai đoạn thẳng nào nằm trên cùng một đường thẳng. Các điểm A, B, C, D là các đỉnh; các đoạn thẳng AB, BC, CD, DA là các cạnh."
+    },
+    {
+      "type": "text",
+      "content": "Tứ giác lồi là tứ giác luôn nằm về một phía của đường thẳng chứa bất kì cạnh nào của nó. Đoạn thẳng nối hai đỉnh đối nhau gọi là đường chéo (AC và BD)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-tu-giac-loi.svg",
+      "caption": "Tứ giác lồi ABCD có hai đường chéo AC và BD."
+    },
+    {
+      "type": "text",
+      "content": "Định lí: tổng các góc của một tứ giác bằng 360°."
+    },
+    {
+      "type": "formula",
+      "content": "Â + B̂ + Ĉ + D̂ = 360°"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho tứ giác ABCD có Â = 90°, B̂ = 110°, Ĉ = 70°. Tính D̂.",
+      "steps": [
+        "Tổng bốn góc của tứ giác bằng 360°.",
+        "D̂ = 360° − (90° + 110° + 70°) = 360° − 270° = 90°."
+      ],
+      "expr": "360-(90+110+70)",
+      "answer": "90"
+    },
+    {
+      "problem": "Một tứ giác có bốn góc tỉ lệ với 1 : 2 : 3 : 4. Tính góc nhỏ nhất.",
+      "steps": [
+        "Tổng các tỉ số: 1 + 2 + 3 + 4 = 10, ứng với 360°.",
+        "Góc nhỏ nhất là 360° : 10 · 1 = 36°."
+      ],
+      "expr": "360/10",
+      "answer": "36"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tổng các góc của một tứ giác bằng:",
+      "choices": [
+        "180°",
+        "360°",
+        "270°",
+        "540°"
+      ],
+      "answer": 1,
+      "explain": "Chia tứ giác thành hai tam giác bằng một đường chéo: 2·180° = 360°.",
+      "wrong_explain": {
+        "0": "Đây là tổng ba góc của một tam giác.",
+        "2": "Đây không phải tổng các góc của tứ giác.",
+        "3": "Đây là tổng các góc của ngũ giác."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tứ giác ABCD có bao nhiêu đường chéo?",
+      "choices": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "answer": 0,
+      "explain": "Hai đường chéo là AC và BD.",
+      "wrong_explain": {
+        "1": "Còn có thêm đường chéo thứ hai.",
+        "2": "Chỉ có hai cặp đỉnh đối nhau.",
+        "3": "Chỉ có hai cặp đỉnh đối nhau."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tứ giác ABCD có Â = 80°, B̂ = 100°, Ĉ = 90°. Tính D̂ (độ).",
+      "expr": "360-(80+100+90)",
+      "answer": "90",
+      "explain": "D̂ = 360° − 270° = 90°."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tứ giác MNPQ có M̂ = 75°, N̂ = 105°, P̂ = 85°. Tính Q̂ (độ).",
+      "expr": "360-(75+105+85)",
+      "answer": "95",
+      "explain": "Q̂ = 360° − 265° = 95°."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho tứ giác ABCD có Â = B̂ = 70° và Ĉ = 120°. Tính D̂ (độ).",
+      "expr": "360-(70+70+120)",
+      "answer": "100",
+      "explain": "D̂ = 360° − 260° = 100°."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tứ giác có ba góc bằng nhau và bằng 80°. Tính góc còn lại (độ).",
+      "expr": "360-3*80",
+      "answer": "120",
+      "explain": "Góc còn lại là 360° − 240° = 120°."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bốn góc của một tứ giác tỉ lệ với 1 : 2 : 3 : 4. Tính góc lớn nhất (độ).",
+      "expr": "360/10*4",
+      "answer": "144",
+      "explain": "Góc lớn nhất là 360°/10 · 4 = 144°."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tứ giác ABCD có Â = 2·B̂, Ĉ = 90°, D̂ = 90°. Tính B̂ (độ).",
+      "expr": "(360-180)/3",
+      "answer": "60",
+      "explain": "Â + B̂ = 360° − 180° = 180°, mà Â = 2B̂ nên 3B̂ = 180°, B̂ = 60°."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tứ giác ABCD có Â − B̂ = 20°, Ĉ = D̂ = 90°. Tính Â (độ).",
+      "expr": "(180+20)/2",
+      "answer": "100",
+      "explain": "Â + B̂ = 180° và Â − B̂ = 20° nên Â = (180° + 20°)/2 = 100°."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tứ giác ABCD có Â + B̂ = 210° và Ĉ = 2·D̂. Tính D̂ (độ).",
+      "expr": "(360-210)/3",
+      "answer": "50",
+      "explain": "Ĉ + D̂ = 360° − 210° = 150°. Mà Ĉ = 2D̂ nên 3D̂ = 150° và D̂ = 50°."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tứ giác ABCD có Â = 100°, B̂ = 80°. Các tia phân giác của góc A và góc B cắt nhau tại I. Tính góc AIB (độ).",
+      "expr": "180-100/2-80/2",
+      "answer": "90",
+      "explain": "Trong tam giác AIB: góc IAB = 50°, góc IBA = 40° nên góc AIB = 180° − 50° − 40° = 90°."
+    },
+    {
+      "id": "n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tứ giác lồi ABCD có các góc ngoài tại A, B, C lần lượt là 80°, 100°, 90°. Tính D̂ (độ).",
+      "expr": "180-(360-80-100-90)",
+      "answer": "90",
+      "explain": "Tổng bốn góc ngoài của tứ giác lồi bằng 360° nên góc ngoài tại D là 360° − 270° = 90°, do đó D̂ = 180° − 90° = 90°."
+    }
+  ]
+}

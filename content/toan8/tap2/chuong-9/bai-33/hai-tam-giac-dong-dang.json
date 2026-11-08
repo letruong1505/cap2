@@ -1,0 +1,196 @@
+{
+  "id": "t8-hai-tam-giac-dong-dang",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 2",
+  "chapter": "Chương IX. Tam giác đồng dạng",
+  "lesson": "Bài 33. Hai tam giác đồng dạng",
+  "section": "Phần 1: Hai tam giác đồng dạng; Phần 2: Định lí về tam giác đồng dạng",
+  "bookPage": 79,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tam giác A′B′C′ gọi là đồng dạng với tam giác ABC nếu Â′ = Â, B̂′ = B̂, Ĉ′ = Ĉ và A′B′/AB = B′C′/BC = C′A′/CA. Kí hiệu: ΔA′B′C′ ∽ ΔABC. Tỉ số k = A′B′/AB gọi là tỉ số đồng dạng."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-dong-dang.svg",
+      "caption": "Hai tam giác đồng dạng: các góc tương ứng bằng nhau, các cạnh tương ứng tỉ lệ."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất: mỗi tam giác đồng dạng với chính nó (tỉ số 1); nếu ΔA′B′C′ ∽ ΔABC theo tỉ số k thì ΔABC ∽ ΔA′B′C′ theo tỉ số 1/k; nếu ΔA′B′C′ ∽ ΔABC và ΔABC ∽ ΔA″B″C″ thì ΔA′B′C′ ∽ ΔA″B″C″."
+    },
+    {
+      "type": "text",
+      "content": "Định lí: nếu một đường thẳng cắt hai cạnh của tam giác và song song với cạnh còn lại thì nó tạo thành một tam giác mới đồng dạng với tam giác đã cho."
+    },
+    {
+      "type": "text",
+      "content": "Hai tam giác đồng dạng theo tỉ số k thì tỉ số hai chu vi của chúng cũng bằng k."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "ΔA′B′C′ ∽ ΔABC với AB = 4 cm và A′B′ = 6 cm. Tính tỉ số đồng dạng k.",
+      "steps": [
+        "k = A′B′/AB = 6/4 = 1,5."
+      ],
+      "expr": "6/4",
+      "answer": "1.5"
+    },
+    {
+      "problem": "Cho tam giác ABC có M thuộc AB, N thuộc AC, MN ∥ BC, AM = 2 cm, AB = 6 cm, BC = 9 cm. Tính MN.",
+      "steps": [
+        "MN ∥ BC nên ΔAMN ∽ ΔABC với tỉ số AM/AB = 2/6.",
+        "MN = BC · AM : AB = 9·2 : 6 = 3 (cm)."
+      ],
+      "expr": "9*2/6",
+      "answer": "3"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "ΔA′B′C′ ∽ ΔABC theo tỉ số k. Khi đó ΔABC ∽ ΔA′B′C′ theo tỉ số:",
+      "choices": [
+        "k",
+        "k·k",
+        "1/k",
+        "−k"
+      ],
+      "answer": 2,
+      "explain": "Đổi vai trò hai tam giác thì tỉ số đảo ngược.",
+      "wrong_explain": {
+        "0": "Tỉ số bị đảo ngược.",
+        "1": "Không đúng.",
+        "3": "Tỉ số đồng dạng luôn dương."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hai tam giác bằng nhau thì đồng dạng với tỉ số:",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "Không đồng dạng"
+      ],
+      "answer": 1,
+      "explain": "Các cạnh tương ứng bằng nhau nên k = 1.",
+      "wrong_explain": {
+        "0": "Tỉ số đồng dạng dương.",
+        "2": "Các cạnh tương ứng bằng nhau nên tỉ số là 1.",
+        "3": "Hai tam giác bằng nhau luôn đồng dạng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nếu ΔA′B′C′ ∽ ΔABC thì:",
+      "choices": [
+        "Â′ = Â",
+        "Â′ = B̂",
+        "A′B′ = AB",
+        "A′B′ = B′C′"
+      ],
+      "answer": 0,
+      "explain": "Các góc tương ứng bằng nhau theo thứ tự đỉnh.",
+      "wrong_explain": {
+        "1": "Góc tương ứng với A′ là A.",
+        "2": "Các cạnh chỉ tỉ lệ, chưa chắc bằng nhau.",
+        "3": "Không có điều này."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "ΔA′B′C′ ∽ ΔABC theo tỉ số k = 2 và AB = 5 cm. Tính A′B′ (cm).",
+      "expr": "5*2",
+      "answer": "10",
+      "explain": "A′B′ = k·AB = 10 (cm)."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "ΔA′B′C′ ∽ ΔABC với AB = 8 cm, A′B′ = 12 cm. Tính tỉ số đồng dạng (số thập phân).",
+      "expr": "12/8",
+      "answer": "1.5",
+      "explain": "k = 12/8 = 1,5."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "ΔA′B′C′ ∽ ΔABC theo tỉ số 1,5 và BC = 10 cm. Tính B′C′ (cm).",
+      "expr": "10*1.5",
+      "answer": "15",
+      "explain": "B′C′ = 1,5·10 = 15 (cm)."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "ΔA′B′C′ ∽ ΔABC theo tỉ số 2,5, chu vi ΔABC bằng 24 cm. Tính chu vi ΔA′B′C′ (cm).",
+      "expr": "24*2.5",
+      "answer": "60",
+      "explain": "Chu vi nhân với tỉ số đồng dạng: 24·2,5 = 60 (cm)."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "ΔABC ∽ ΔA′B′C′, B̂ = 50°, Ĉ = 60°. Tính Â′ (độ).",
+      "expr": "180-50-60",
+      "answer": "70",
+      "explain": "Â = 180° − 50° − 60° = 70° nên Â′ = 70°."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "MN ∥ BC (M thuộc AB, N thuộc AC), AM = 3, AB = 9, AN = 4. Tính AC.",
+      "expr": "4*9/3",
+      "answer": "12",
+      "explain": "ΔAMN ∽ ΔABC nên AN/AC = AM/AB, AC = 4·9 : 3 = 12."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai tam giác đồng dạng có chu vi 30 cm và 45 cm. Tính tỉ số đồng dạng (từ tam giác chu vi nhỏ đến lớn).",
+      "expr": "45/30",
+      "answer": "1.5",
+      "explain": "k = 45/30 = 1,5."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "ΔA′B′C′ ∽ ΔABC theo tỉ số 3/2, diện tích ΔABC là 20 cm². Tính diện tích ΔA′B′C′ (cm²).",
+      "expr": "20*9/4",
+      "answer": "45",
+      "explain": "Diện tích gấp k² = 9/4 lần: 20·9/4 = 45 (cm²)."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hai tam giác đồng dạng có chu vi 24 cm và 36 cm. Cạnh AB của tam giác nhỏ dài 5 cm. Tính cạnh tương ứng của tam giác lớn (cm).",
+      "expr": "5*36/24",
+      "answer": "7.5",
+      "explain": "Tỉ số đồng dạng = 36/24 = 1,5 nên cạnh tương ứng là 5·1,5 = 7,5 (cm)."
+    }
+  ]
+}

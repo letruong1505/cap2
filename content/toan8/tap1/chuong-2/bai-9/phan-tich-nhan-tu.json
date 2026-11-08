@@ -1,0 +1,218 @@
+{
+  "id": "t8-phan-tich-nhan-tu",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 1",
+  "chapter": "Chương II. Hằng đẳng thức đáng nhớ và ứng dụng",
+  "lesson": "Bài 9. Phân tích đa thức thành nhân tử",
+  "section": "Phần 1: Đặt nhân tử chung; Phần 2: Dùng hằng đẳng thức; Phần 3: Nhóm hạng tử",
+  "bookPage": 41,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phân tích đa thức thành nhân tử (hay thừa số) là biến đổi đa thức đó thành một tích của những đa thức."
+    },
+    {
+      "type": "text",
+      "content": "Phương pháp đặt nhân tử chung: tìm nhân tử chung của các hạng tử, đặt ra ngoài dấu ngoặc."
+    },
+    {
+      "type": "formula",
+      "content": "AB + AC = A(B + C)"
+    },
+    {
+      "type": "text",
+      "content": "Phương pháp dùng hằng đẳng thức: nhận ra dạng A² − B², (A ± B)², A³ ± B³, (A ± B)³ rồi viết thành tích."
+    },
+    {
+      "type": "text",
+      "content": "Phương pháp nhóm hạng tử: nhóm các hạng tử thích hợp để xuất hiện nhân tử chung của cả đa thức."
+    },
+    {
+      "type": "formula",
+      "content": "ax + ay + bx + by = a(x + y) + b(x + y) = (a + b)(x + y)"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Phân tích 3x² − 6x thành nhân tử rồi tính giá trị tại x = 4.",
+      "steps": [
+        "3x² − 6x = 3x(x − 2).",
+        "Khi x = 4: 3·4·(4 − 2) = 24."
+      ],
+      "expr": "3*4*(4-2)",
+      "answer": "24"
+    },
+    {
+      "problem": "Phân tích x² − 9 thành nhân tử rồi tính giá trị tại x = 10.",
+      "steps": [
+        "x² − 9 = (x − 3)(x + 3).",
+        "Khi x = 10: 7·13 = 91."
+      ],
+      "expr": "(10-3)*(10+3)",
+      "answer": "91"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phân tích 2x² + 4x thành nhân tử ta được:",
+      "choices": [
+        "2(x² + 2x)",
+        "2x(x + 2)",
+        "x(2x + 4)",
+        "2x(x + 4)"
+      ],
+      "answer": 1,
+      "explain": "Nhân tử chung lớn nhất là 2x: 2x² + 4x = 2x(x + 2).",
+      "wrong_explain": {
+        "0": "Đúng một phần nhưng chưa đặt hết nhân tử chung (còn x).",
+        "2": "Chưa đặt hết nhân tử chung 2.",
+        "3": "Nhân lại 2x·4 = 8x, không bằng 4x."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phân tích x² − 25 thành nhân tử ta được:",
+      "choices": [
+        "(x − 5)(x + 5)",
+        "(x − 5)²",
+        "(x + 5)²",
+        "x(x − 25)"
+      ],
+      "answer": 0,
+      "explain": "x² − 5² = (x − 5)(x + 5).",
+      "wrong_explain": {
+        "1": "(x − 5)² = x² − 10x + 25.",
+        "2": "(x + 5)² = x² + 10x + 25.",
+        "3": "x không phải nhân tử chung của x² và 25."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phân tích x² + 4x + 4 thành nhân tử ta được:",
+      "choices": [
+        "(x + 4)²",
+        "(x − 2)²",
+        "(x + 2)(x − 2)",
+        "(x + 2)²"
+      ],
+      "answer": 3,
+      "explain": "x² + 2·x·2 + 2² = (x + 2)².",
+      "wrong_explain": {
+        "0": "(x + 4)² = x² + 8x + 16.",
+        "1": "(x − 2)² = x² − 4x + 4.",
+        "2": "Tích này bằng x² − 4."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính giá trị của 5x² − 10x tại x = 3 bằng cách phân tích thành 5x(x − 2).",
+      "expr": "5*3*(3-2)",
+      "answer": "15",
+      "explain": "5·3·(3 − 2) = 15."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính nhanh 85² − 15².",
+      "expr": "(85-15)*(85+15)",
+      "answer": "7000",
+      "explain": "85² − 15² = (85 − 15)(85 + 15) = 70·100 = 7 000."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính nhanh 37·18 + 37·82.",
+      "expr": "37*(18+82)",
+      "answer": "3700",
+      "explain": "Đặt nhân tử chung 37: 37·(18 + 82) = 37·100 = 3 700."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phân tích xy + 2y + 3x + 6 = (x + 2)(y + 3). Tính giá trị tại x = 1, y = 2.",
+      "expr": "(1+2)*(2+3)",
+      "answer": "15",
+      "explain": "(x + 2)(y + 3) = 3·5 = 15."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phân tích x² − 6x + 9 = (x − 3)². Tính giá trị tại x = 13.",
+      "expr": "10*10",
+      "answer": "100",
+      "explain": "(13 − 3)² = 100."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm x biết x² − 4x = 0 và x ≠ 0.",
+      "expr": "4",
+      "answer": "4",
+      "explain": "x(x − 4) = 0 và x ≠ 0 nên x − 4 = 0, suy ra x = 4."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phân tích x³ − x = x(x − 1)(x + 1). Tính giá trị tại x = 5.",
+      "expr": "5*4*6",
+      "answer": "120",
+      "explain": "5·4·6 = 120."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tính nhanh 85·15 + 15·15.",
+      "expr": "15*(85+15)",
+      "answer": "1500",
+      "explain": "Đặt nhân tử chung 15: 15·(85 + 15) = 15·100 = 1500."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tính nhanh 2024² − 2023².",
+      "expr": "2024+2023",
+      "answer": "4047",
+      "explain": "a² − b² = (a − b)(a + b) = 1·4047 = 4047."
+    },
+    {
+      "id": "n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tìm tổng các nghiệm của phương trình x² − 7x + 10 = 0.",
+      "expr": "2+5",
+      "answer": "7",
+      "explain": "Phân tích: x² − 7x + 10 = (x − 2)(x − 5) = 0 nên x = 2 hoặc x = 5. Tổng hai nghiệm là 7."
+    },
+    {
+      "id": "n04",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho 2x + y = 7 và 2x − y = 3. Tính 4x² − y².",
+      "expr": "7*3",
+      "answer": "21",
+      "explain": "4x² − y² = (2x − y)(2x + y) = 3·7 = 21."
+    }
+  ]
+}

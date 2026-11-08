@@ -4,7 +4,7 @@ const path = require('path');
 const { loadManifest, loadLesson } = require('./content-loader');
 const { loadLicense } = require('./license');
 
-const APP_TITLE = 'Giáo trình số - Cấp 2 (dành cho HS THCS)';
+const APP_TITLE = 'Giáo trình THCS';
 
 
 // build-info.json do workflow tạo khi build (số phiên bản và mã commit). Chạy dev thì không có file này.

@@ -67,6 +67,16 @@
         "Tổng là 8 + 8 = 16 nguyên tố."
       ],
       "answer": "16"
+    },
+    {
+      "problem": "Dạng xác định vị trí nguyên tố: nguyên tử có 3 lớp electron, lớp ngoài cùng có 7 electron (lớp 1: 2 e, lớp 2: 8 e). Tính tổng số electron của nguyên tử.",
+      "steps": [
+        "Cách làm: số lớp electron = số thứ tự chu kì (ở đây chu kì 3); số electron lớp ngoài cùng = số thứ tự nhóm A (nhóm VIIA).",
+        "Tổng số electron: 2 + 8 + 7 = 17.",
+        "Số hiệu nguyên tử là 17, ô số 17 (chlorine)."
+      ],
+      "expr": "2+8+7",
+      "answer": "17"
     }
   ],
   "items": [
@@ -194,6 +204,44 @@
         "0": "Góc trên bên phải là vị trí chủ yếu của phi kim.",
         "2": "Cột VIIIA là nhóm khí hiếm.",
         "3": "Hàng đầu tiên chỉ có hydrogen và helium."
+      },
+      "concept": true
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Nguyên tố ở chu kì 2, nhóm VA. Tính số electron của nguyên tử (lớp 1 có 2 electron).",
+      "expr": "2+5",
+      "answer": "7",
+      "explain": "Chu kì 2 có 2 lớp electron, nhóm VA có 5 electron lớp ngoài cùng: 2 + 5 = 7."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Nguyên tố ở chu kì 3, nhóm IIA. Tính số electron của nguyên tử (lớp 1: 2 e, lớp 2: 8 e).",
+      "expr": "2+8+2",
+      "answer": "12",
+      "explain": "Chu kì 3 có 3 lớp, nhóm IIA có 2 electron lớp ngoài: 2 + 8 + 2 = 12."
+    },
+    {
+      "id": "n03",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Trong bảng tuần hoàn, số thứ tự của chu kì bằng:",
+      "choices": [
+        "Số lớp electron của nguyên tử",
+        "Số electron lớp ngoài cùng",
+        "Số proton",
+        "Số neutron"
+      ],
+      "answer": 0,
+      "explain": "Các nguyên tố trong cùng chu kì có cùng số lớp electron.",
+      "wrong_explain": {
+        "1": "Đó là số thứ tự nhóm A.",
+        "2": "Đó là số hiệu nguyên tử.",
+        "3": "Không liên quan."
       },
       "concept": true
     }

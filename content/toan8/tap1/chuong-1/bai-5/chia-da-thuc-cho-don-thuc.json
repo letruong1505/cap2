@@ -1,0 +1,172 @@
+{
+  "id": "t8-chia-da-thuc-cho-don-thuc",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 1",
+  "chapter": "Chương I. Đa thức",
+  "lesson": "Bài 5. Phép chia đa thức cho đơn thức",
+  "section": "Phần 1: Chia đơn thức cho đơn thức; Phần 2: Chia đa thức cho đơn thức",
+  "bookPage": 22,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đơn thức A chia hết cho đơn thức B (B khác 0) khi mỗi biến của B đều là biến của A với số mũ không lớn hơn số mũ của nó trong A."
+    },
+    {
+      "type": "text",
+      "content": "Muốn chia đơn thức A cho đơn thức B (trường hợp chia hết), ta chia hệ số của A cho hệ số của B, chia luỹ thừa của từng biến trong A cho luỹ thừa của cùng biến đó trong B rồi nhân các kết quả với nhau."
+    },
+    {
+      "type": "text",
+      "content": "Đa thức A chia hết cho đơn thức B khi mọi hạng tử của A đều chia hết cho B. Muốn chia đa thức A cho đơn thức B, ta chia từng hạng tử của A cho B rồi cộng các kết quả với nhau."
+    },
+    {
+      "type": "formula",
+      "content": "(A + C) : B = A : B + C : B"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính 12x³y² : 4xy. Tìm hệ số của kết quả.",
+      "steps": [
+        "Chia hệ số: 12 : 4 = 3; chia x³ : x = x², y² : y = y.",
+        "Kết quả: 3x²y, hệ số là 3."
+      ],
+      "expr": "12/4",
+      "answer": "3"
+    },
+    {
+      "problem": "Tính (6x³ − 9x²) : 3x. Tìm hệ số của x trong kết quả.",
+      "steps": [
+        "Chia từng hạng tử: 6x³ : 3x = 2x²; −9x² : 3x = −3x.",
+        "Kết quả: 2x² − 3x. Hệ số của x là −3."
+      ],
+      "expr": "-9/3",
+      "answer": "-3"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn thức 6x³y² chia hết cho đơn thức nào sau đây?",
+      "choices": [
+        "4x⁴",
+        "2xy",
+        "3z",
+        "x²y³"
+      ],
+      "answer": 1,
+      "explain": "Các biến x, y của 2xy đều có trong 6x³y² với số mũ không nhỏ hơn.",
+      "wrong_explain": {
+        "0": "Số mũ của x trong 4x⁴ lớn hơn số mũ của x trong 6x³y².",
+        "2": "Biến z không có trong đơn thức bị chia.",
+        "3": "Số mũ của y trong x²y³ lớn hơn số mũ của y trong 6x³y²."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính 15x⁵ : 3x². Hệ số của kết quả là bao nhiêu?",
+      "expr": "15/3",
+      "answer": "5",
+      "explain": "15x⁵ : 3x² = 5x³. Hệ số là 5."
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 20x⁴y³ : 5x²y. Bậc của kết quả là bao nhiêu?",
+      "expr": "2+2",
+      "answer": "4",
+      "explain": "Kết quả là 4x²y². Bậc là 2 + 2 = 4."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Kết quả của (8x² − 4x) : 4x là:",
+      "choices": [
+        "2x − 4",
+        "2x² − 1",
+        "2x − 1",
+        "8x − 1"
+      ],
+      "answer": 2,
+      "explain": "8x² : 4x = 2x và −4x : 4x = −1.",
+      "wrong_explain": {
+        "0": "Hạng tử thứ hai: −4x : 4x = −1 chứ không phải −4.",
+        "1": "Hạng tử đầu: 8x² : 4x = 2x chứ không phải 2x².",
+        "3": "Hạng tử đầu: 8x² : 4x = 2x chứ không phải 8x."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (10x³ − 5x²) : 5x². Tìm hệ số của x trong kết quả.",
+      "expr": "10/5",
+      "answer": "2",
+      "explain": "(10x³ − 5x²) : 5x² = 2x − 1. Hệ số của x là 2."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (9x²y − 6xy²) : 3xy. Hệ số của y trong kết quả là bao nhiêu?",
+      "expr": "-6/3",
+      "answer": "-2",
+      "explain": "9x²y : 3xy = 3x; −6xy² : 3xy = −2y. Hệ số của y là −2."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính giá trị của 12x²y : 3xy tại x = 5.",
+      "expr": "4*5",
+      "answer": "20",
+      "explain": "12x²y : 3xy = 4x. Khi x = 5 giá trị là 20."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho (4x³ − 8x²) : 4x² = x − 2. Tính giá trị kết quả tại x = 7.",
+      "expr": "7-2",
+      "answer": "5",
+      "explain": "Giá trị là 7 − 2 = 5."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một hình chữ nhật có diện tích 6x² + 9x (cm²) và chiều rộng 3x (cm). Chiều dài là 2x + 3 (cm). Tính chiều dài khi x = 4 (cm).",
+      "expr": "2*4+3",
+      "answer": "11",
+      "explain": "Chiều dài = (6x² + 9x) : 3x = 2x + 3. Khi x = 4: 11 (cm)."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Thực hiện phép chia (6x³y² − 9x²y³ + 3x²y²) : (3x²y²) rồi tính giá trị của thương tại x = 2, y = 1.",
+      "expr": "2*2-3*1+1",
+      "answer": "2",
+      "explain": "Chia từng hạng tử: 2x − 3y + 1. Với x = 2, y = 1: 4 − 3 + 1 = 2."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tìm số tự nhiên n nhỏ nhất để đơn thức 5x⁴yⁿ chia hết cho đơn thức 2x²y³.",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Đơn thức A chia hết cho B khi mỗi biến của B có mặt trong A với số mũ không nhỏ hơn. Cần n ≥ 3 nên n nhỏ nhất là 3."
+    }
+  ]
+}

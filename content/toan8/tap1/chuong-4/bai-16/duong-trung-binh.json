@@ -1,0 +1,173 @@
+{
+  "id": "t8-duong-trung-binh",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 1",
+  "chapter": "Chương IV. Định lí Thalès",
+  "lesson": "Bài 16. Đường trung bình của tam giác",
+  "section": "Phần 1: Đường trung bình của tam giác; Phần 2: Tính chất đường trung bình",
+  "bookPage": 84,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đường trung bình của tam giác là đoạn thẳng nối trung điểm hai cạnh của tam giác. Mỗi tam giác có ba đường trung bình."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-duong-trung-binh.svg",
+      "caption": "MN là đường trung bình của tam giác ABC (M, N là trung điểm của AB, AC)."
+    },
+    {
+      "type": "text",
+      "content": "Định lí: đường trung bình của tam giác thì song song với cạnh thứ ba và bằng nửa cạnh ấy."
+    },
+    {
+      "type": "formula",
+      "content": "M, N lần lượt là trung điểm của AB, AC ⇒ MN ∥ BC và MN = BC/2"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho tam giác ABC, M và N lần lượt là trung điểm của AB và AC. Biết BC = 14 cm. Tính MN.",
+      "steps": [
+        "MN là đường trung bình của tam giác ABC nên MN = BC : 2 = 14 : 2 = 7 (cm)."
+      ],
+      "expr": "14/2",
+      "answer": "7",
+      "figure": "figures/lt-duong-trung-binh.svg"
+    },
+    {
+      "problem": "Để đo khoảng cách giữa hai điểm A và B ở hai bên một cái ao, người ta chọn điểm O rồi lấy M, N lần lượt là trung điểm của OA, OB. Đo được MN = 40 m. Tính AB.",
+      "steps": [
+        "MN là đường trung bình của tam giác OAB nên MN = AB : 2.",
+        "AB = 2·MN = 2·40 = 80 (m)."
+      ],
+      "expr": "2*40",
+      "answer": "80"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đường trung bình của tam giác là đoạn thẳng:",
+      "choices": [
+        "Nối một đỉnh với trung điểm cạnh đối diện",
+        "Nối trung điểm hai cạnh của tam giác",
+        "Vuông góc với một cạnh",
+        "Chia một góc thành hai góc bằng nhau"
+      ],
+      "answer": 1,
+      "explain": "Định nghĩa đường trung bình của tam giác.",
+      "wrong_explain": {
+        "0": "Đó là đường trung tuyến.",
+        "2": "Đó là đường cao.",
+        "3": "Đó là đường phân giác."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đường trung bình của tam giác:",
+      "choices": [
+        "Song song với cạnh thứ ba và bằng nửa cạnh ấy",
+        "Vuông góc với cạnh thứ ba",
+        "Song song với cạnh thứ ba và bằng cạnh ấy",
+        "Bằng tổng hai cạnh còn lại"
+      ],
+      "answer": 0,
+      "explain": "Đây là nội dung định lí về đường trung bình.",
+      "wrong_explain": {
+        "1": "Đường trung bình song song với cạnh thứ ba.",
+        "2": "Độ dài bằng nửa cạnh thứ ba.",
+        "3": "Không có tính chất này."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC có M, N là trung điểm của AB, AC. Biết BC = 18 cm. Tính MN (cm).",
+      "expr": "18/2",
+      "answer": "9",
+      "explain": "MN = BC : 2 = 9 (cm)."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC có M, N là trung điểm của AB, AC. Biết MN = 7,5 cm. Tính BC (cm).",
+      "expr": "2*7.5",
+      "answer": "15",
+      "explain": "BC = 2·MN = 15 (cm)."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC có M, N là trung điểm của AB, AC và góc ABC = 55°. Tính góc AMN (độ).",
+      "expr": "55",
+      "answer": "55",
+      "explain": "MN ∥ BC nên góc AMN = góc ABC = 55° (hai góc đồng vị)."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC có AB = 10 cm, BC = 12 cm, CA = 14 cm. D, E, F là trung điểm của BC, CA, AB. Tính chu vi tam giác DEF (cm).",
+      "expr": "(10+12+14)/2",
+      "answer": "18",
+      "explain": "Ba cạnh của tam giác DEF là ba đường trung bình nên có độ dài bằng nửa các cạnh tương ứng: chu vi DEF = (10 + 12 + 14) : 2 = 18 (cm)."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Các đường trung bình của một tam giác dài 3 cm, 4 cm và 5 cm. Tính chu vi của tam giác đó (cm).",
+      "expr": "2*(3+4+5)",
+      "answer": "24",
+      "explain": "Mỗi cạnh của tam giác gấp đôi đường trung bình tương ứng nên chu vi = 2·(3 + 4 + 5) = 24 (cm)."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đo khoảng cách hai điểm A, B ở hai bên một hồ nước: lấy O, M, N lần lượt là điểm bất kì, trung điểm của OA, trung điểm của OB và đo được MN = 25 m. Tính AB (m).",
+      "expr": "2*25",
+      "answer": "50",
+      "explain": "MN là đường trung bình của tam giác OAB nên AB = 2·MN = 50 (m)."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác ABC có M, N lần lượt là trung điểm của AB, AC; MN = 6 cm. Gọi P là trung điểm của BC. Tính độ dài đường trung bình nối trung điểm AB với trung điểm BC, biết AC = 16 cm (cm).",
+      "expr": "16/2",
+      "answer": "8",
+      "explain": "Đoạn thẳng nối trung điểm AB và BC là đường trung bình ứng với cạnh AC nên dài 16 : 2 = 8 (cm)."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tứ giác ABCD có AC = 10 cm, BD = 6 cm. E, F, G, H là trung điểm AB, BC, CD, DA. Tính chu vi tứ giác EFGH (cm).",
+      "expr": "2*(10/2+6/2)",
+      "answer": "16",
+      "explain": "EF và HG là đường trung bình của hai tam giác chứa AC nên EF = HG = AC : 2 = 5; tương tự FG = HE = BD : 2 = 3. Chu vi = 2·(5 + 3) = 16 (cm)."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tứ giác ABCD có AC = 8 cm, BD = 6 cm và AC ⊥ BD. E, F, G, H là trung điểm AB, BC, CD, DA. Tính diện tích tứ giác EFGH (cm²).",
+      "expr": "8/2*6/2",
+      "answer": "12",
+      "explain": "EFGH là hình bình hành có các cạnh song song với hai đường chéo nên có một góc vuông, là hình chữ nhật với hai cạnh 4 và 3. S = 4·3 = 12 (cm²)."
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "id": "t8-don-thuc",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 1",
+  "chapter": "Chương I. Đa thức",
+  "lesson": "Bài 1. Đơn thức",
+  "section": "Phần 1: Đơn thức và đơn thức thu gọn; Phần 2: Đơn thức đồng dạng",
+  "bookPage": 6,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đơn thức là biểu thức đại số chỉ gồm một số, hoặc một biến, hoặc có dạng tích của những số và biến."
+    },
+    {
+      "type": "text",
+      "content": "Đơn thức thu gọn là đơn thức chỉ gồm tích của một số với các biến, mà mỗi biến đã được nâng lên luỹ thừa với số mũ nguyên dương (mỗi biến chỉ xuất hiện một lần). Số nói trên gọi là hệ số, phần còn lại gọi là phần biến của đơn thức thu gọn."
+    },
+    {
+      "type": "text",
+      "content": "Bậc của đơn thức có hệ số khác 0 là tổng số mũ của tất cả các biến có trong đơn thức đó. Số khác 0 là đơn thức bậc không; số 0 được coi là đơn thức không có bậc."
+    },
+    {
+      "type": "text",
+      "content": "Hai đơn thức đồng dạng là hai đơn thức có hệ số khác 0 và có cùng phần biến. Các số khác 0 đều là những đơn thức đồng dạng với nhau."
+    },
+    {
+      "type": "text",
+      "content": "Để cộng (trừ) các đơn thức đồng dạng, ta cộng (trừ) các hệ số với nhau và giữ nguyên phần biến."
+    },
+    {
+      "type": "formula",
+      "content": "3x²y + 5x²y − x²y = (3 + 5 − 1)x²y = 7x²y"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Thu gọn đơn thức 4,5x²y·(−2)xyz rồi cho biết hệ số, phần biến và bậc của nó. Tính hệ số.",
+      "steps": [
+        "Nhóm các hệ số và các biến: 4,5·(−2)·(x²·x)·(y·y)·z.",
+        "Đơn thức thu gọn là −9x³y²z.",
+        "Hệ số là −9, phần biến là x³y²z, bậc là 3 + 2 + 1 = 6."
+      ],
+      "expr": "4.5*(-2)",
+      "answer": "-9"
+    },
+    {
+      "problem": "Cho đơn thức A = −3x²y³z. Tính giá trị của A tại x = 2, y = 1, z = −2.",
+      "steps": [
+        "Thay x = 2, y = 1, z = −2 vào A: A = −3·2²·1³·(−2).",
+        "A = −3·4·1·(−2) = 24."
+      ],
+      "expr": "-3*2*2*1*(-2)",
+      "answer": "24"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Biểu thức nào sau đây là đơn thức?",
+      "choices": [
+        "x + 2y",
+        "−5x²y",
+        "3x − y",
+        "2x + 7"
+      ],
+      "answer": 1,
+      "explain": "−5x²y chỉ gồm tích của số và các biến nên là đơn thức.",
+      "wrong_explain": {
+        "0": "Biểu thức này có phép cộng nên không phải đơn thức.",
+        "2": "Biểu thức này có phép trừ giữa các biến nên không phải đơn thức.",
+        "3": "Biểu thức này có phép cộng nên không phải đơn thức."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hệ số của đơn thức thu gọn −7x³y là:",
+      "choices": [
+        "−7",
+        "3",
+        "7",
+        "1"
+      ],
+      "answer": 0,
+      "explain": "Hệ số là số đứng trước phần biến: −7.",
+      "wrong_explain": {
+        "1": "3 là số mũ của x, không phải hệ số.",
+        "2": "Hệ số phải kèm dấu âm, nên là −7.",
+        "3": "Hệ số của đơn thức này là số đứng trước phần biến, tức −7."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tìm bậc của đơn thức 5x³y²z.",
+      "expr": "3+2+1",
+      "answer": "6",
+      "explain": "Bậc là tổng số mũ các biến: 3 + 2 + 1 = 6."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cặp đơn thức nào sau đây đồng dạng?",
+      "choices": [
+        "3x²y và 3xy²",
+        "2xy và 2x",
+        "3x²y và −5x²y",
+        "x²y và x²z"
+      ],
+      "answer": 2,
+      "explain": "Hai đơn thức đồng dạng khi có cùng phần biến; 3x²y và −5x²y có cùng phần biến x²y.",
+      "wrong_explain": {
+        "0": "Hai đơn thức có phần biến khác nhau (x²y và xy²).",
+        "1": "Hai đơn thức có phần biến khác nhau.",
+        "3": "Hai đơn thức có phần biến khác nhau."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Thu gọn đơn thức 2x·(−3)x²y. Hệ số của đơn thức thu gọn bằng bao nhiêu?",
+      "expr": "2*(-3)",
+      "answer": "-6",
+      "explain": "2x·(−3)x²y = −6x³y nên hệ số là −6."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Thu gọn đơn thức (2xy²)·(3x²y). Bậc của đơn thức thu gọn là bao nhiêu?",
+      "expr": "3+3",
+      "answer": "6",
+      "explain": "(2xy²)(3x²y) = 6x³y³ nên bậc là 3 + 3 = 6."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính giá trị của đơn thức 3x²y tại x = 2, y = −1.",
+      "expr": "3*2*2*(-1)",
+      "answer": "-12",
+      "explain": "Thay vào: 3·2²·(−1) = 3·4·(−1) = −12."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Thu gọn 5x²y + 3x²y − 2x²y = k·x²y. Tìm k.",
+      "expr": "5+3-2",
+      "answer": "6",
+      "explain": "k = 5 + 3 − 2 = 6."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thu gọn 4xy² − (−3xy²) = k·xy². Tìm k.",
+      "expr": "4+3",
+      "answer": "7",
+      "explain": "4xy² − (−3xy²) = 4xy² + 3xy² = 7xy² nên k = 7."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mỗi phần quà gồm x kg gạo (12 nghìn đồng/kg) và x gói mì (4,5 nghìn đồng/gói). Có y phần quà thì tổng giá trị là 16,5xy nghìn đồng. Tính giá trị khi x = 2, y = 10 (nghìn đồng).",
+      "expr": "16.5*2*10",
+      "answer": "330",
+      "explain": "Mỗi phần quà trị giá 12x + 4,5x = 16,5x; y phần là 16,5xy. Với x = 2, y = 10: 16,5·2·10 = 330 (nghìn đồng)."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho A = (−2x²y)·(3xy²). Tính giá trị của A tại x = 1, y = −1.",
+      "expr": "(0-6)*1*(0-1)*(0-1)*(0-1)",
+      "answer": "6",
+      "explain": "Cách giải: thu gọn trước rồi thay số. A = −6x³y³. Với x = 1, y = −1: A = −6·1³·(−1)³ = −6·(−1) = 6."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hai đơn thức 5x^(2m)·y³ và 7x⁶y³ đồng dạng. Tìm m.",
+      "expr": "6/2",
+      "answer": "3",
+      "explain": "Hai đơn thức đồng dạng khi có cùng phần biến, nên 2m = 6 và m = 3."
+    },
+    {
+      "id": "n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tìm bậc của đơn thức (3x²y)²·(−xy³) sau khi thu gọn.",
+      "expr": "(2*2+1)+(2*1+3)",
+      "answer": "10",
+      "explain": "(3x²y)² = 9x⁴y²; nhân với (−xy³) được −9x⁵y⁵. Bậc là 5 + 5 = 10."
+    }
+  ]
+}

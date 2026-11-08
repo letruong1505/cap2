@@ -1,0 +1,208 @@
+{
+  "id": "t8-tinh-xac-suat",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 2",
+  "chapter": "Chương VIII. Mở đầu về tính xác suất của biến cố",
+  "lesson": "Bài 31. Cách tính xác suất của biến cố bằng tỉ số",
+  "section": "Phần 1: Xác suất của biến cố; Phần 2: Tính chất của xác suất",
+  "bookPage": 69,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Trong một phép thử có n kết quả có thể xảy ra, đồng khả năng. Nếu biến cố A có k kết quả thuận lợi thì xác suất của biến cố A là P(A) = k/n."
+    },
+    {
+      "type": "formula",
+      "content": "P(A) = (số kết quả thuận lợi cho A) / (số kết quả có thể)"
+    },
+    {
+      "type": "text",
+      "content": "Xác suất của một biến cố luôn nằm từ 0 đến 1: 0 ≤ P(A) ≤ 1. Biến cố không thể có xác suất bằng 0; biến cố chắc chắn có xác suất bằng 1."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-hop-bi.svg",
+      "caption": "Hộp có 3 bi đỏ, 5 bi xanh, 2 bi vàng; lấy ngẫu nhiên một bi."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Gieo một con xúc xắc cân đối. Tính xác suất để mặt xuất hiện có số chấm là số chẵn (viết dưới dạng số thập phân).",
+      "steps": [
+        "Có 6 kết quả có thể, đồng khả năng; có 3 kết quả thuận lợi (2; 4; 6).",
+        "P = 3/6 = 0,5."
+      ],
+      "expr": "3/6",
+      "answer": "0.5"
+    },
+    {
+      "problem": "Lấy ngẫu nhiên một bi từ hộp có 3 bi đỏ, 5 bi xanh, 2 bi vàng. Tính xác suất lấy được bi đỏ.",
+      "steps": [
+        "Có 10 kết quả có thể, 3 kết quả thuận lợi.",
+        "P = 3/10 = 0,3."
+      ],
+      "expr": "3/10",
+      "answer": "0.3",
+      "figure": "figures/lt-hop-bi.svg"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Xác suất của một biến cố bất kì luôn thoả mãn:",
+      "choices": [
+        "P > 1",
+        "P < 0",
+        "0 ≤ P ≤ 1",
+        "P = 1"
+      ],
+      "answer": 2,
+      "explain": "Xác suất nằm trong đoạn từ 0 đến 1.",
+      "wrong_explain": {
+        "0": "Xác suất không vượt quá 1.",
+        "1": "Xác suất không âm.",
+        "3": "Chỉ biến cố chắc chắn có xác suất 1."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Xác suất của biến cố không thể bằng:",
+      "choices": [
+        "1",
+        "0",
+        "0,5",
+        "Không xác định"
+      ],
+      "answer": 1,
+      "explain": "Biến cố không thể không bao giờ xảy ra nên P = 0.",
+      "wrong_explain": {
+        "0": "Đây là xác suất của biến cố chắc chắn.",
+        "2": "Đây là xác suất của biến cố có khả năng xảy ra như không xảy ra.",
+        "3": "Luôn xác định bằng 0."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Gieo một con xúc xắc cân đối. Biến cố \"Số chấm nhỏ hơn 7\" là biến cố:",
+      "choices": [
+        "Chắc chắn",
+        "Không thể",
+        "Có xác suất 0,5",
+        "Có xác suất 0"
+      ],
+      "answer": 0,
+      "explain": "Cả 6 kết quả đều thuận lợi nên P = 6/6 = 1.",
+      "wrong_explain": {
+        "1": "Mọi mặt đều có số chấm không vượt quá 6.",
+        "2": "Có tất cả 6 kết quả thuận lợi.",
+        "3": "Biến cố này luôn xảy ra."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Quay vòng quay 8 ô đều nhau như hình. Tính xác suất để mũi tên chỉ vào ô ghi số lẻ (số thập phân).",
+      "expr": "4/8",
+      "answer": "0.5",
+      "explain": "Có 4 kết quả thuận lợi (1; 3; 5; 7) trên 8 kết quả: P = 4/8 = 0,5.",
+      "figure": "figures/lt-vong-quay.svg"
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Quay vòng quay 8 ô. Tính xác suất để mũi tên chỉ vào ô ghi số chia hết cho 4.",
+      "expr": "2/8",
+      "answer": "0.25",
+      "explain": "Các số 4 và 8: 2 kết quả thuận lợi nên P = 2/8 = 0,25.",
+      "figure": "figures/lt-vong-quay.svg"
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hộp có 3 bi đỏ, 5 bi xanh, 2 bi vàng. Tính xác suất lấy được bi xanh.",
+      "expr": "5/10",
+      "answer": "0.5",
+      "explain": "P = 5/10 = 0,5.",
+      "figure": "figures/lt-hop-bi.svg"
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hộp có 3 bi đỏ, 5 bi xanh, 2 bi vàng. Tính xác suất lấy được bi vàng.",
+      "expr": "2/10",
+      "answer": "0.2",
+      "explain": "P = 2/10 = 0,2.",
+      "figure": "figures/lt-hop-bi.svg"
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hộp có 3 bi đỏ, 5 bi xanh, 2 bi vàng. Tính xác suất để bi lấy ra không phải bi đỏ.",
+      "expr": "7/10",
+      "answer": "0.7",
+      "explain": "Có 10 − 3 = 7 kết quả thuận lợi: P = 7/10 = 0,7.",
+      "figure": "figures/lt-hop-bi.svg"
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Rút ngẫu nhiên một thẻ từ 20 thẻ đánh số 1 đến 20. Tính xác suất để số trên thẻ chia hết cho 4.",
+      "expr": "5/20",
+      "answer": "0.25",
+      "explain": "Các số 4; 8; 12; 16; 20: 5 kết quả thuận lợi nên P = 5/20 = 0,25."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Rút ngẫu nhiên một thẻ từ 20 thẻ đánh số 1 đến 20. Tính xác suất để số trên thẻ là số có hai chữ số.",
+      "expr": "11/20",
+      "answer": "0.55",
+      "explain": "Các số từ 10 đến 20: 11 số thuận lợi nên P = 11/20 = 0,55."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tung một đồng xu ba lần liên tiếp. Tính xác suất để có đúng hai lần mặt ngửa (số thập phân).",
+      "expr": "3/8",
+      "answer": "0.375",
+      "explain": "Có 8 kết quả có thể; thuận lợi: NNS, NSN, SNN (3 kết quả). P = 3/8 = 0,375."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tung một đồng xu ba lần liên tiếp. Tính xác suất để có ít nhất một lần mặt ngửa.",
+      "expr": "7/8",
+      "answer": "0.875",
+      "explain": "Biến cố đối \"không có lần nào ngửa\" chỉ có 1 kết quả (SSS). Vậy P = 1 − 1/8 = 7/8 = 0,875."
+    },
+    {
+      "id": "n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hộp có 5 bi đỏ và một số bi xanh. Xác suất lấy được bi đỏ là 0,25. Hộp có bao nhiêu bi xanh?",
+      "expr": "5*4-5",
+      "answer": "15",
+      "explain": "Tổng số bi: 5 : 0,25 = 20. Số bi xanh: 20 − 5 = 15."
+    }
+  ]
+}

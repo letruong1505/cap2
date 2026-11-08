@@ -1,0 +1,208 @@
+{
+  "id": "t8-dinh-li-pythagore",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 2",
+  "chapter": "Chương IX. Tam giác đồng dạng",
+  "lesson": "Bài 35. Định lí Pythagore và ứng dụng",
+  "section": "Phần 1: Định lí Pythagore; Phần 2: Định lí Pythagore đảo; Phần 3: Ứng dụng",
+  "bookPage": 93,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Định lí Pythagore: trong một tam giác vuông, bình phương độ dài cạnh huyền bằng tổng các bình phương độ dài hai cạnh góc vuông."
+    },
+    {
+      "type": "formula",
+      "content": "ΔABC vuông tại A ⇒ BC² = AB² + AC²"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-pythagore.svg",
+      "caption": "Tam giác vuông có hai cạnh góc vuông 3 và 4, cạnh huyền 5: 3² + 4² = 5², tức 9 + 16 = 25 (diện tích ba hình vuông dựng trên ba cạnh)."
+    },
+    {
+      "type": "text",
+      "content": "Định lí Pythagore đảo: nếu một tam giác có bình phương của một cạnh bằng tổng các bình phương của hai cạnh còn lại thì tam giác đó là tam giác vuông (vuông tại đỉnh đối diện với cạnh lớn nhất)."
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: tính độ dài một cạnh của tam giác vuông khi biết hai cạnh còn lại; kiểm tra một tam giác có phải tam giác vuông hay không; tính đường chéo hình chữ nhật, cạnh hình thoi, đường cao tam giác cân…"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tam giác ABC vuông tại A có AB = 6 cm, AC = 8 cm. Tính BC.",
+      "steps": [
+        "BC² = AB² + AC² = 36 + 64 = 100.",
+        "BC = 10 (cm)."
+      ],
+      "expr": "(6*6+8*8)/10",
+      "answer": "10"
+    },
+    {
+      "problem": "Một chiếc thang dài 5 m dựa vào tường, chân thang cách tường 3 m. Thang chạm tường ở độ cao bao nhiêu mét?",
+      "steps": [
+        "Thang, tường và mặt đất tạo thành tam giác vuông với cạnh huyền 5 m.",
+        "Độ cao² = 5² − 3² = 25 − 9 = 16.",
+        "Độ cao = 4 (m)."
+      ],
+      "expr": "(5*5-3*3)/4",
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Định lí Pythagore áp dụng cho:",
+      "choices": [
+        "Mọi tam giác",
+        "Mọi tam giác cân",
+        "Tam giác vuông",
+        "Hình thang"
+      ],
+      "answer": 2,
+      "explain": "Bình phương cạnh huyền bằng tổng bình phương hai cạnh góc vuông.",
+      "wrong_explain": {
+        "0": "Chỉ đúng với tam giác vuông.",
+        "1": "Không phải mọi tam giác cân đều có tính chất này.",
+        "3": "Định lí nói về tam giác vuông."
+      },
+      "concept": true,
+      "figure": "figures/lt-pythagore.svg"
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tam giác có ba cạnh 5 cm; 12 cm; 13 cm là tam giác:",
+      "choices": [
+        "Nhọn",
+        "Vuông",
+        "Tù",
+        "Đều"
+      ],
+      "answer": 1,
+      "explain": "25 + 144 = 169 = 13² nên tam giác vuông (Pythagore đảo).",
+      "wrong_explain": {
+        "0": "Vì 5² + 12² = 13² nên tam giác có một góc vuông.",
+        "2": "Vì 5² + 12² = 13² nên tam giác có một góc vuông.",
+        "3": "Ba cạnh không bằng nhau."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tam giác có ba cạnh 6 cm; 7 cm; 8 cm:",
+      "choices": [
+        "Không phải tam giác vuông",
+        "Vuông tại góc đối diện cạnh 8 cm",
+        "Vuông tại góc đối diện cạnh 6 cm",
+        "Vuông cân"
+      ],
+      "answer": 0,
+      "explain": "36 + 49 = 85 ≠ 64 nên không thoả mãn định lí Pythagore đảo.",
+      "wrong_explain": {
+        "1": "6² + 7² = 85 ≠ 64.",
+        "2": "7² + 8² = 113 ≠ 36.",
+        "3": "Ba cạnh khác nhau."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác vuông có hai cạnh góc vuông 3 và 4. Tính bình phương cạnh huyền.",
+      "expr": "3*3+4*4",
+      "answer": "25",
+      "explain": "BC² = 9 + 16 = 25."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC vuông tại A có AB = 9 cm, AC = 12 cm. Tính BC (cm).",
+      "expr": "(9*9+12*12)/15",
+      "answer": "15",
+      "explain": "BC² = 81 + 144 = 225 nên BC = 15."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC vuông tại A có BC = 13 cm, AB = 5 cm. Tính AC (cm).",
+      "expr": "(13*13-5*5)/12",
+      "answer": "12",
+      "explain": "AC² = 169 − 25 = 144 nên AC = 12."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC vuông tại A có BC = 17 cm, AB = 8 cm. Tính AC (cm).",
+      "expr": "(17*17-8*8)/15",
+      "answer": "15",
+      "explain": "AC² = 289 − 64 = 225 nên AC = 15."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chữ nhật có chiều dài 8 cm, chiều rộng 6 cm. Tính độ dài đường chéo (cm).",
+      "expr": "(8*8+6*6)/10",
+      "answer": "10",
+      "explain": "Đường chéo² = 64 + 36 = 100 nên đường chéo là 10."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình thoi có hai đường chéo 16 cm và 12 cm. Tính cạnh của hình thoi (cm).",
+      "expr": "(8*8+6*6)/10",
+      "answer": "10",
+      "explain": "Nửa hai đường chéo là 8 và 6 (vuông góc nhau): cạnh² = 64 + 36 = 100 nên cạnh = 10."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác ABC cân tại A có AB = AC = 13 cm, BC = 10 cm. Tính đường cao AH (cm).",
+      "expr": "(13*13-5*5)/12",
+      "answer": "12",
+      "explain": "H là trung điểm của BC nên BH = 5; AH² = 169 − 25 = 144 nên AH = 12."
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác vuông có hai cạnh góc vuông 6 cm và 8 cm. Tính diện tích (cm²).",
+      "expr": "6*8/2",
+      "answer": "24",
+      "explain": "S = (1/2)·6·8 = 24 (cm²)."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tam giác ABC vuông tại A có AB = 15 cm, AC = 20 cm. Tính đường cao AH (cm).",
+      "expr": "15*20/25",
+      "answer": "12",
+      "explain": "BC = 25 (Pythagore). Diện tích: AB·AC = BC·AH nên AH = 15·20 : 25 = 12 (cm)."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hình hộp chữ nhật có ba kích thước 3 cm, 4 cm, 12 cm. Tính độ dài đường chéo của hình hộp (cm).",
+      "expr": "(9+16+144)/13",
+      "answer": "13",
+      "explain": "Đường chéo² = 3² + 4² + 12² = 169 nên đường chéo là 13 cm (áp dụng Pythagore hai lần)."
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "id": "t8-hieu-hai-binh-phuong",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 1",
+  "chapter": "Chương II. Hằng đẳng thức đáng nhớ và ứng dụng",
+  "lesson": "Bài 6. Hiệu hai bình phương. Bình phương của một tổng hay một hiệu",
+  "section": "Phần 1: Hiệu hai bình phương; Phần 2: Bình phương của một tổng hay một hiệu",
+  "bookPage": 30,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hằng đẳng thức là đẳng thức đúng với mọi giá trị của các biến. Ta có ba hằng đẳng thức đầu tiên:"
+    },
+    {
+      "type": "formula",
+      "content": "A² − B² = (A − B)(A + B)   (hiệu hai bình phương)"
+    },
+    {
+      "type": "formula",
+      "content": "(A + B)² = A² + 2AB + B²   (bình phương của một tổng)"
+    },
+    {
+      "type": "formula",
+      "content": "(A − B)² = A² − 2AB + B²   (bình phương của một hiệu)"
+    },
+    {
+      "type": "text",
+      "content": "Bình phương của một tổng bằng bình phương số thứ nhất, cộng hai lần tích số thứ nhất với số thứ hai, cộng bình phương số thứ hai. Dùng các hằng đẳng thức này có thể tính nhẩm, ví dụ 51² = (50 + 1)² và 49² = (50 − 1)²."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính nhanh 51².",
+      "steps": [
+        "Viết 51 = 50 + 1.",
+        "51² = (50 + 1)² = 50² + 2·50·1 + 1² = 2 500 + 100 + 1 = 2 601."
+      ],
+      "expr": "50*50+2*50+1",
+      "answer": "2601"
+    },
+    {
+      "problem": "Tính nhanh 99·101.",
+      "steps": [
+        "Viết 99·101 = (100 − 1)(100 + 1) = 100² − 1² = 10 000 − 1 = 9 999."
+      ],
+      "expr": "100*100-1",
+      "answer": "9999"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hằng đẳng thức \"hiệu hai bình phương\" là:",
+      "choices": [
+        "A² − B² = (A − B)²",
+        "A² − B² = (A − B)(A + B)",
+        "A² − B² = (A + B)²",
+        "A² − B² = A − B"
+      ],
+      "answer": 1,
+      "explain": "Hiệu hai bình phương bằng tích của hiệu và tổng hai số.",
+      "wrong_explain": {
+        "0": "Vế phải (A − B)² = A² − 2AB + B² là hằng đẳng thức khác.",
+        "2": "(A + B)² = A² + 2AB + B², không phải hiệu hai bình phương.",
+        "3": "Không có hằng đẳng thức này."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khai triển (x + 3)² ta được:",
+      "choices": [
+        "x² + 6x + 9",
+        "x² + 9",
+        "x² + 3x + 9",
+        "x² + 6x + 3"
+      ],
+      "answer": 0,
+      "explain": "(x + 3)² = x² + 2·x·3 + 3² = x² + 6x + 9.",
+      "wrong_explain": {
+        "1": "Thiếu hạng tử 2·x·3 = 6x.",
+        "2": "Hạng tử ở giữa phải là 2·x·3 = 6x.",
+        "3": "Hạng tử cuối phải là 3² = 9."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khai triển (x − 4)² ta được:",
+      "choices": [
+        "x² − 16",
+        "x² − 4x + 16",
+        "x² + 8x + 16",
+        "x² − 8x + 16"
+      ],
+      "answer": 3,
+      "explain": "(x − 4)² = x² − 2·x·4 + 4² = x² − 8x + 16.",
+      "wrong_explain": {
+        "0": "Đây là kết quả của (x − 4)(x + 4).",
+        "1": "Hạng tử ở giữa phải là −2·x·4 = −8x.",
+        "2": "Hạng tử ở giữa phải mang dấu âm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính nhanh 101².",
+      "expr": "100*100+2*100+1",
+      "answer": "10201",
+      "explain": "101² = (100 + 1)² = 10 000 + 200 + 1 = 10 201."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính nhanh 99².",
+      "expr": "100*100-2*100+1",
+      "answer": "9801",
+      "explain": "99² = (100 − 1)² = 10 000 − 200 + 1 = 9 801."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính nhanh 52·48.",
+      "expr": "50*50-2*2",
+      "answer": "2496",
+      "explain": "52·48 = (50 + 2)(50 − 2) = 2 500 − 4 = 2 496."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính giá trị của x² + 6x + 9 tại x = 7.",
+      "expr": "(7+3)*(7+3)",
+      "answer": "100",
+      "explain": "x² + 6x + 9 = (x + 3)² = 10² = 100."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính giá trị của x² − 10x + 25 tại x = 8.",
+      "expr": "(8-5)*(8-5)",
+      "answer": "9",
+      "explain": "x² − 10x + 25 = (x − 5)² = 3² = 9."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho x + y = 7 và xy = 12. Tính x² + y².",
+      "expr": "7*7-2*12",
+      "answer": "25",
+      "explain": "x² + y² = (x + y)² − 2xy = 49 − 24 = 25."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho x − y = 3 và xy = 10. Tính x² + y².",
+      "expr": "3*3+2*10",
+      "answer": "29",
+      "explain": "x² + y² = (x − y)² + 2xy = 9 + 20 = 29."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tính nhanh 101² − 99².",
+      "expr": "(101-99)*(101+99)",
+      "answer": "400",
+      "explain": "Cách giải: dùng a² − b² = (a − b)(a + b) = 2·200 = 400."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tính nhanh 99² bằng hằng đẳng thức (100 − 1)².",
+      "expr": "100*100-2*100+1",
+      "answer": "9801",
+      "explain": "(100 − 1)² = 100² − 2·100·1 + 1² = 10 000 − 200 + 1 = 9 801."
+    },
+    {
+      "id": "n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho x + y = 7 và xy = 10. Tính x² + y².",
+      "expr": "7*7-2*10",
+      "answer": "29",
+      "explain": "Cách giải: x² + y² = (x + y)² − 2xy = 49 − 20 = 29."
+    }
+  ]
+}

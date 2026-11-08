@@ -1,0 +1,175 @@
+{
+  "id": "t8-lap-phuong-trinh",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 2",
+  "chapter": "Chương VII. Phương trình bậc nhất và hàm số bậc nhất",
+  "lesson": "Bài 26. Giải bài toán bằng cách lập phương trình",
+  "section": "Các bước giải bài toán bằng cách lập phương trình",
+  "bookPage": 36,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các bước giải bài toán bằng cách lập phương trình: Bước 1: lập phương trình (chọn ẩn số và đặt điều kiện thích hợp cho ẩn số; biểu diễn các đại lượng chưa biết theo ẩn và các đại lượng đã biết; lập phương trình biểu thị mối quan hệ giữa các đại lượng). Bước 2: giải phương trình. Bước 3: trả lời — kiểm tra nghiệm có thoả mãn điều kiện của ẩn và đề bài hay không, rồi kết luận."
+    },
+    {
+      "type": "text",
+      "content": "Công thức chuyển động: quãng đường = vận tốc × thời gian. Hai vật đi ngược chiều cùng lúc khởi hành từ hai nơi, tổng vận tốc là tốc độ lại gần nhau."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tổng của hai số là 50, số lớn gấp 4 lần số bé. Tìm số bé.",
+      "steps": [
+        "Gọi số bé là x thì số lớn là 4x.",
+        "Ta có x + 4x = 50 ⇒ 5x = 50 ⇒ x = 10.",
+        "Số bé là 10 (số lớn là 40)."
+      ],
+      "expr": "50/5",
+      "answer": "10"
+    },
+    {
+      "problem": "Một hình chữ nhật có chu vi 60 cm, chiều dài hơn chiều rộng 6 cm. Tìm chiều rộng.",
+      "steps": [
+        "Gọi chiều rộng là x (cm) thì chiều dài là x + 6.",
+        "Nửa chu vi: x + x + 6 = 30 ⇒ 2x = 24 ⇒ x = 12.",
+        "Chiều rộng là 12 cm."
+      ],
+      "expr": "(30-6)/2",
+      "answer": "12"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Bước đầu tiên khi giải bài toán bằng cách lập phương trình là:",
+      "choices": [
+        "Trả lời bài toán",
+        "Giải phương trình",
+        "Chọn ẩn và đặt điều kiện cho ẩn",
+        "Kiểm tra nghiệm"
+      ],
+      "answer": 2,
+      "explain": "Cần chọn ẩn rồi mới biểu diễn các đại lượng.",
+      "wrong_explain": {
+        "0": "Đây là bước cuối cùng.",
+        "1": "Cần lập phương trình trước.",
+        "3": "Việc kiểm tra thực hiện sau khi giải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Vì sao cần kiểm tra nghiệm của phương trình với điều kiện của đề bài?",
+      "choices": [
+        "Vì mọi phương trình đều vô nghiệm",
+        "Vì nghiệm của phương trình chưa chắc phù hợp với thực tế bài toán",
+        "Vì phương trình luôn có hai nghiệm",
+        "Không cần kiểm tra"
+      ],
+      "answer": 1,
+      "explain": "Ví dụ số người, số sản phẩm phải là số nguyên dương.",
+      "wrong_explain": {
+        "0": "Không đúng.",
+        "2": "Phương trình bậc nhất chỉ có một nghiệm.",
+        "3": "Cần kiểm tra để kết luận đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tổng hai số bằng 50, số lớn gấp 4 lần số bé. Tìm số lớn.",
+      "expr": "50/5*4",
+      "answer": "40",
+      "explain": "Số bé x = 10, số lớn 4x = 40."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chữ nhật có chu vi 60 cm, chiều dài hơn chiều rộng 6 cm. Tìm chiều dài (cm).",
+      "expr": "(30-6)/2+6",
+      "answer": "18",
+      "explain": "Chiều rộng 12 cm nên chiều dài 12 + 6 = 18 (cm)."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một số cộng với 18 thì bằng ba lần số đó. Tìm số đó.",
+      "expr": "18/2",
+      "answer": "9",
+      "explain": "x + 18 = 3x nên 2x = 18, x = 9."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mẹ hơn con 28 tuổi. 5 năm nữa tuổi mẹ gấp 3 lần tuổi con. Tính tuổi con hiện nay.",
+      "expr": "(33-15)/2",
+      "answer": "9",
+      "explain": "Gọi tuổi con là x thì tuổi mẹ x + 28. Sau 5 năm: x + 33 = 3(x + 5) ⇒ 2x = 18 ⇒ x = 9."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có 36 con vừa gà vừa chó, tổng cộng 100 chân. Hỏi có bao nhiêu con gà?",
+      "expr": "(144-100)/2",
+      "answer": "22",
+      "explain": "Gọi số gà là x: 2x + 4(36 − x) = 100 ⇒ 144 − 2x = 100 ⇒ x = 22."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ô tô đi từ A đến B với vận tốc 40 km/h rồi quay về với vận tốc 60 km/h. Tổng thời gian đi và về là 5 giờ. Tính quãng đường AB (km).",
+      "expr": "5*2400/100",
+      "answer": "120",
+      "explain": "x/40 + x/60 = 5 ⇒ (3x + 2x)/120 = 5 ⇒ x = 5·120/5 = 120 (km)."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai xe khởi hành cùng lúc từ A và B cách nhau 180 km, đi ngược chiều, vận tốc 50 km/h và 40 km/h. Sau bao nhiêu giờ hai xe gặp nhau?",
+      "expr": "180/90",
+      "answer": "2",
+      "explain": "Mỗi giờ hai xe lại gần nhau 50 + 40 = 90 km nên thời gian là 180 : 90 = 2 (giờ)."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một cửa hàng giảm giá 20%, giá sau giảm là 240 000 đồng. Tìm giá ban đầu (đồng).",
+      "expr": "240000*100/80",
+      "answer": "300000",
+      "explain": "Gọi giá ban đầu x: 0,8x = 240 000 ⇒ x = 300 000 (đồng)."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Xe máy đi trước với vận tốc 40 km/h. Sau 1 giờ, ô tô cùng xuất phát từ nơi đó đuổi theo với vận tốc 60 km/h. Sau bao nhiêu giờ (kể từ lúc ô tô xuất phát) ô tô đuổi kịp xe máy?",
+      "expr": "40*1/20",
+      "answer": "2",
+      "explain": "Gọi t là thời gian ô tô đi: 60t = 40(t + 1) ⇒ 20t = 40 ⇒ t = 2 (giờ)."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Người A làm xong công việc trong 12 giờ, người B làm xong trong 6 giờ. Nếu hai người cùng làm thì sau bao nhiêu giờ xong?",
+      "expr": "12*6/18",
+      "answer": "4",
+      "explain": "Mỗi giờ A làm 1/12, B làm 1/6 công việc. Gọi t là thời gian: t(1/12 + 1/6) = 1 ⇒ t·(3/12) = 1 ⇒ t = 4 (giờ)."
+    }
+  ]
+}

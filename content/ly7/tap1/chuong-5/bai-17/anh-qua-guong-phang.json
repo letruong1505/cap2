@@ -54,6 +54,16 @@
         "Để còn 2 m: khoảng cách từ A đến gương = 1 m, tức là đi 4 − 1 = 3 m."
       ],
       "answer": "3"
+    },
+    {
+      "problem": "Dạng khoảng cách vật – ảnh khi vật di chuyển: bạn đứng cách gương phẳng 2 m, tiến lại gần gương với tốc độ 0,5 m/s trong 2 s. Khi đó khoảng cách giữa bạn và ảnh là bao nhiêu mét?",
+      "steps": [
+        "Cách làm: ảnh đối xứng với vật qua gương nên khoảng cách vật – ảnh = 2 lần khoảng cách từ vật tới gương.",
+        "Sau 2 s bạn đi được 0,5·2 = 1 m nên cách gương 2 − 1 = 1 m.",
+        "Khoảng cách vật – ảnh: 2·1 = 2 m."
+      ],
+      "expr": "2*(2-0.5*2)",
+      "answer": "2"
     }
   ],
   "items": [
@@ -194,6 +204,44 @@
         "3": "Ảnh không nằm ngay trên gương."
       },
       "expr": "5"
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Khoảng cách giữa vật và ảnh của nó qua gương phẳng là 6 m. Vật cách gương bao nhiêu mét?",
+      "expr": "6/2",
+      "answer": "3",
+      "explain": "Ảnh cách gương bằng vật cách gương nên mỗi khoảng là 6 : 2 = 3 m."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Vật cách gương phẳng 3 m. Nếu vật lùi ra xa gương thêm 0,5 m thì khoảng cách giữa vật và ảnh tăng thêm bao nhiêu mét?",
+      "expr": "2*0.5",
+      "answer": "1",
+      "explain": "Khoảng cách vật – ảnh bằng 2 lần khoảng cách vật – gương nên tăng 2·0,5 = 1 m."
+    },
+    {
+      "id": "n03",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Ảnh của một vật tạo bởi gương phẳng là:",
+      "choices": [
+        "Ảnh ảo, cùng kích thước với vật",
+        "Ảnh thật, nhỏ hơn vật",
+        "Ảnh thật, cùng kích thước với vật",
+        "Ảnh ảo, lớn hơn vật"
+      ],
+      "answer": 0,
+      "explain": "Ảnh qua gương phẳng không hứng được trên màn, đối xứng với vật qua gương.",
+      "wrong_explain": {
+        "1": "Gương phẳng không tạo ảnh thật nhỏ hơn vật.",
+        "2": "Ảnh qua gương phẳng là ảnh ảo.",
+        "3": "Ảnh có kích thước bằng vật."
+      },
+      "concept": true
     }
   ]
 }

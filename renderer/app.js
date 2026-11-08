@@ -25,7 +25,7 @@ function shuffle(arr) {
 }
 
 // Thứ tự hiển thị theo mức độ: Biết, Hiểu, Vận dụng; trong mỗi mức, thứ tự câu được xáo trộn.
-const LEVEL_ORDER = ['Biết', 'Hiểu', 'Vận dụng'];
+const LEVEL_ORDER = ['Biết', 'Hiểu', 'Vận dụng', 'Nâng cao'];
 
 function orderedQuestionIndexes(lesson) {
   const groups = {};
@@ -102,7 +102,7 @@ function renderQuiz(lesson, attempt) {
     const item = lesson.items[itemIndex];
     if (item.level !== currentLevel) {
       currentLevel = item.level;
-      box.append(el('h3', { class: 'level-heading' }, `Mức ${currentLevel}`));
+      box.append(el('h3', { class: 'level-heading' }, currentLevel === 'Nâng cao' ? 'Phần nâng cao' : `Mức ${currentLevel}`));
     }
     const q = el('div', { class: 'question', 'data-id': item.id });
     q.append(el('div', { class: 'stem' }, `${idx + 1}. ${item.stem}`));
@@ -253,7 +253,7 @@ function showOnly(id) {
 function renderHome(manifest, subject) {
   const home = document.getElementById('home');
   const back = el('button', { class: 'link', type: 'button' }, '← Chọn môn');
-  back.addEventListener('click', () => showSubjects());
+  back.addEventListener('click', () => showSubjects(currentGrade));
   home.replaceChildren(back, el('h1', {}, 'Chọn bài học'));
   home.append(el('p', { class: 'meta' }, `Gói: ${manifest.bookSeries} · phiên bản ${manifest.version}`));
 
@@ -372,11 +372,13 @@ async function openLesson(relPath, mode = 'practice') {
 const GRADES = [
   { grade: 6, available: false },
   { grade: 7, available: true },
-  { grade: 8, available: false },
+  { grade: 8, available: true },
   { grade: 9, available: false },
 ];
 // Mục lục của từng môn, nạp một lần khi mở app.
-const SUBJECT_LABELS = { toan7: 'Toán', ly7: 'Vật lí', hoa7: 'Hoá học', sinh7: 'Sinh học', lichsu7: 'Lịch sử', diali7: 'Địa lí' };
+const SUBJECT_LABELS = { toan7: 'Toán', ly7: 'Vật lí', hoa7: 'Hoá học', sinh7: 'Sinh học', lichsu7: 'Lịch sử', diali7: 'Địa lí', toan8: 'Toán' };
+// Môn học đã có nội dung của từng lớp.
+const GRADE_SUBJECTS = { 7: ['toan7', 'ly7', 'hoa7', 'sinh7', 'lichsu7', 'diali7'], 8: ['toan8'] };
 const manifestCache = {};
 
 function licenseDaysLeft(expiresOn) {
@@ -415,7 +417,7 @@ function renderGrades() {
   for (const g of GRADES) {
     const btn = el('button', { class: 'grade', type: 'button' }, `Lớp ${g.grade}`);
     if (g.available) {
-      btn.addEventListener('click', () => showSubjects());
+      btn.addEventListener('click', () => showSubjects(g.grade));
     } else {
       btn.disabled = true;
       btn.append(el('small', {}, 'Đang biên soạn'));
@@ -429,12 +431,17 @@ function showLaunch() {
   showOnly('launch');
 }
 
-// Chọn môn sau khi đã chọn lớp 7.
-function showSubjects() {
+// Chọn môn sau khi đã chọn lớp.
+let currentGrade = 7;
+function showSubjects(grade) {
+  currentGrade = grade || currentGrade;
+  grade = currentGrade;
+  const title = document.querySelector('#subjects h1');
+  if (title) title.textContent = `Chọn môn học · Lớp ${grade}`;
   document.getElementById('breadcrumb').textContent = '';
   const box = document.getElementById('subject-list');
   box.replaceChildren();
-  for (const subject of Object.keys(SUBJECT_LABELS)) {
+  for (const subject of GRADE_SUBJECTS[grade] || []) {
     const btn = el('button', { class: 'grade subject-btn', type: 'button' }, SUBJECT_LABELS[subject]);
     btn.addEventListener('click', () => renderHome(manifestCache[subject], subject));
     box.append(btn);

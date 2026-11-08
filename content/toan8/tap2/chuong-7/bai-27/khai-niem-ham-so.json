@@ -1,0 +1,193 @@
+{
+  "id": "t8-khai-niem-ham-so",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 2",
+  "chapter": "Chương VII. Phương trình bậc nhất và hàm số bậc nhất",
+  "lesson": "Bài 27. Khái niệm hàm số và đồ thị của hàm số",
+  "section": "Phần 1: Khái niệm hàm số; Phần 2: Mặt phẳng toạ độ; Phần 3: Đồ thị của hàm số",
+  "bookPage": 41,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nếu đại lượng y phụ thuộc vào đại lượng thay đổi x sao cho với mỗi giá trị của x ta luôn xác định được chỉ một giá trị tương ứng của y thì y được gọi là hàm số của x và x được gọi là biến số. Kí hiệu y = f(x). Giá trị của hàm số tại x = a kí hiệu là f(a)."
+    },
+    {
+      "type": "text",
+      "content": "Hàm số có thể được cho bằng bảng, bằng công thức hoặc bằng biểu đồ."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-mat-phang-toa-do.svg",
+      "caption": "Mặt phẳng toạ độ Oxy: điểm M(x₀; y₀) có hoành độ x₀ và tung độ y₀. Trục Ox là trục hoành, trục Oy là trục tung."
+    },
+    {
+      "type": "text",
+      "content": "Đồ thị của hàm số y = f(x) là tập hợp tất cả các điểm biểu diễn các cặp giá trị tương ứng (x; f(x)) trên mặt phẳng toạ độ."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho hàm số y = f(x) = 2x + 1. Tính f(3).",
+      "steps": [
+        "Thay x = 3: f(3) = 2·3 + 1 = 7."
+      ],
+      "expr": "2*3+1",
+      "answer": "7"
+    },
+    {
+      "problem": "Cho hàm số y = f(x) = x·x. Tính f(−3).",
+      "steps": [
+        "Thay x = −3: f(−3) = (−3)·(−3) = 9."
+      ],
+      "expr": "(0-3)*(0-3)",
+      "answer": "9"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đại lượng y là hàm số của x khi:",
+      "choices": [
+        "Với mỗi giá trị của x có hai giá trị của y",
+        "Với mỗi giá trị của y có đúng một giá trị của x",
+        "Với mỗi giá trị của x có đúng một giá trị của y",
+        "x và y luôn bằng nhau"
+      ],
+      "answer": 2,
+      "explain": "Mỗi x tương ứng với một y duy nhất.",
+      "wrong_explain": {
+        "0": "Khi đó y không phải hàm số của x.",
+        "1": "Đây là điều kiện đảo, không phải định nghĩa.",
+        "3": "Hàm số không cần x = y."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong mặt phẳng toạ độ Oxy, điểm A(2; 3) có hoành độ là:",
+      "choices": [
+        "3",
+        "2",
+        "5",
+        "0"
+      ],
+      "answer": 1,
+      "explain": "Hoành độ là số đứng trước trong cặp (x; y).",
+      "wrong_explain": {
+        "0": "3 là tung độ.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "concept": true,
+      "figure": "figures/lt-mat-phang-toa-do.svg"
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Điểm nào nằm trên trục tung Oy?",
+      "choices": [
+        "(0; 4)",
+        "(4; 0)",
+        "(2; 2)",
+        "(−3; 0)"
+      ],
+      "answer": 0,
+      "explain": "Điểm trên trục tung có hoành độ bằng 0.",
+      "wrong_explain": {
+        "1": "Điểm này nằm trên trục hoành.",
+        "2": "Điểm này không nằm trên trục toạ độ nào.",
+        "3": "Điểm này nằm trên trục hoành."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho hàm số y = f(x) = 3x − 1. Tính f(2).",
+      "expr": "3*2-1",
+      "answer": "5",
+      "explain": "f(2) = 3·2 − 1 = 5."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho hàm số y = f(x) = x·x + 1. Tính f(−1).",
+      "expr": "(0-1)*(0-1)+1",
+      "answer": "2",
+      "explain": "f(−1) = (−1)·(−1) + 1 = 2."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho hàm số y = f(x) = 0,5x + 3. Tính f(−2).",
+      "expr": "0.5*(0-2)+3",
+      "answer": "2",
+      "explain": "f(−2) = 0,5·(−2) + 3 = 2."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Diện tích hình vuông cạnh x (cm) là hàm số S = x·x. Tính S khi x = 7.",
+      "expr": "7*7",
+      "answer": "49",
+      "explain": "S = 7·7 = 49 (cm²)."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Quãng đường đi được s (km) theo thời gian t (giờ) với vận tốc 40 km/h là s = 40t. Tính s khi t = 2,5.",
+      "expr": "40*2.5",
+      "answer": "100",
+      "explain": "s = 40·2,5 = 100 (km)."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Điểm M(2; y) thuộc đồ thị hàm số y = x (đường thẳng qua gốc O). Tìm y.",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Với x = 2 thì y = 2.",
+      "figure": "figures/lt-do-thi-y-x.svg"
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Điểm N(4; y) thuộc đồ thị hàm số y = 2x + 1. Tìm y.",
+      "expr": "2*4+1",
+      "answer": "9",
+      "explain": "y = 2·4 + 1 = 9."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho f(x) = 2x² − 3x + 1. Tính f(−2).",
+      "expr": "2*4-3*(0-2)+1",
+      "answer": "15",
+      "explain": "f(−2) = 2·4 − 3·(−2) + 1 = 8 + 6 + 1 = 15."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho hàm số f(x) = 3x − 2. Tìm x để f(x) = 10.",
+      "expr": "(10+2)/3",
+      "answer": "4",
+      "explain": "3x − 2 = 10 ⇒ 3x = 12 ⇒ x = 4."
+    }
+  ]
+}

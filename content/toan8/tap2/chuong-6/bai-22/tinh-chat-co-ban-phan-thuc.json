@@ -1,0 +1,183 @@
+{
+  "id": "t8-tinh-chat-co-ban-phan-thuc",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 2",
+  "chapter": "Chương VI. Phân thức đại số",
+  "lesson": "Bài 22. Tính chất cơ bản của phân thức đại số",
+  "section": "Phần 1: Tính chất cơ bản; Phần 2: Rút gọn phân thức; Phần 3: Quy đồng mẫu thức",
+  "bookPage": 10,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tính chất cơ bản của phân thức: nếu nhân cả tử và mẫu của một phân thức với cùng một đa thức khác 0 thì được một phân thức bằng phân thức đã cho; nếu chia cả tử và mẫu của một phân thức cho một nhân tử chung của chúng thì được một phân thức bằng phân thức đã cho."
+    },
+    {
+      "type": "formula",
+      "content": "A/B = (A·M)/(B·M) (M ≠ 0);  A/B = (A:N)/(B:N) (N là nhân tử chung)"
+    },
+    {
+      "type": "text",
+      "content": "Rút gọn phân thức là biến đổi phân thức đã cho thành một phân thức bằng nó nhưng đơn giản hơn: phân tích tử và mẫu thành nhân tử rồi chia cả tử và mẫu cho nhân tử chung."
+    },
+    {
+      "type": "text",
+      "content": "Quy đồng mẫu thức nhiều phân thức là biến đổi các phân thức đã cho thành những phân thức có cùng mẫu thức và lần lượt bằng các phân thức đã cho. Mẫu thức chung là tích của các nhân tử với số mũ lớn nhất."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Rút gọn phân thức (x·x − 4)/(x + 2) rồi tính giá trị tại x = 7.",
+      "steps": [
+        "Tử: x·x − 4 = (x − 2)(x + 2). Rút gọn nhân tử chung x + 2: (x − 2)(x + 2)/(x + 2) = x − 2.",
+        "Thay x = 7: 7 − 2 = 5."
+      ],
+      "expr": "5",
+      "answer": "5"
+    },
+    {
+      "problem": "Rút gọn phân thức (6x·x)/(9x) rồi tính giá trị tại x = 3.",
+      "steps": [
+        "Chia cả tử và mẫu cho 3x: 6x·x/(9x) = 2x/3.",
+        "Thay x = 3: 2·3/3 = 2."
+      ],
+      "expr": "2",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phân thức nào bằng phân thức 2x/(3y)?",
+      "choices": [
+        "(2x + 1)/(3y + 1)",
+        "(2x)/(3y + 3)",
+        "(4x)/(6y)",
+        "(3x)/(2y)"
+      ],
+      "answer": 2,
+      "explain": "Nhân cả tử và mẫu với 2: 2x/(3y) = 4x/(6y).",
+      "wrong_explain": {
+        "0": "Cộng thêm cùng một số vào tử và mẫu không giữ nguyên giá trị phân thức.",
+        "1": "Mẫu thay đổi nhưng tử không đổi.",
+        "3": "Tử và mẫu bị đổi chỗ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Rút gọn phân thức (5x·y)/(10x) ta được:",
+      "choices": [
+        "2y",
+        "y/2",
+        "5y/10",
+        "1/2"
+      ],
+      "answer": 1,
+      "explain": "Chia cả tử và mẫu cho 5x: y/2.",
+      "wrong_explain": {
+        "0": "Đã chia sai: 10 : 5 = 2 nên là y/2.",
+        "2": "Chưa rút gọn hoàn toàn.",
+        "3": "Chưa còn nhân tử y ở tử thức."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Mẫu thức chung của 1/(2x) và 1/(3y) có thể chọn là:",
+      "choices": [
+        "6xy",
+        "5xy",
+        "2xy",
+        "x + y"
+      ],
+      "answer": 0,
+      "explain": "6xy chia hết cho cả 2x và 3y.",
+      "wrong_explain": {
+        "1": "Không phải là bội chung của 2x và 3y theo cách quy đồng.",
+        "2": "Không chia hết cho 3.",
+        "3": "Không liên quan tới mẫu của hai phân thức."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Rút gọn rồi tính giá trị của (4x·x)/(8x) tại x = 6.",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Rút gọn: 4x·x/(8x) = x/2. Thay x = 6: 6/2 = 3."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Rút gọn rồi tính giá trị của (x·x − 9)/(x − 3) tại x = 8.",
+      "expr": "11",
+      "answer": "11",
+      "explain": "x·x − 9 = (x − 3)(x + 3) nên phân thức bằng x + 3. Thay x = 8: 8 + 3 = 11."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Rút gọn rồi tính giá trị của (2x + 4)/(x + 2) tại x = 5.",
+      "expr": "2",
+      "answer": "2",
+      "explain": "2x + 4 = 2(x + 2) nên phân thức bằng 2 với mọi x ≠ −2: giá trị là 2."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Rút gọn rồi tính giá trị của (x·x + 2x)/(x·x − 4) tại x = 4.",
+      "expr": "2",
+      "answer": "2",
+      "explain": "x·x + 2x = x(x + 2) và x·x − 4 = (x − 2)(x + 2) nên phân thức bằng x/(x − 2). Thay x = 4: 4/2 = 2."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho x/3 = M/6. Tính M khi x = 5.",
+      "expr": "2*5",
+      "answer": "10",
+      "explain": "Nhân cả tử và mẫu của x/3 với 2: x/3 = 2x/6 nên M = 2x. Với x = 5: M = 10."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phân thức (3x + 6)/(x + 2) bằng số nào với mọi x ≠ −2?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "3x + 6 = 3(x + 2) nên phân thức luôn bằng 3."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Rút gọn (x² − 4x + 4)/(x² − 4) rồi tính giá trị tại x = 6.",
+      "expr": "4/8",
+      "answer": "0.5",
+      "explain": "Tử = (x − 2)², mẫu = (x − 2)(x + 2). Rút gọn: (x − 2)/(x + 2). Với x = 6: 4/8 = 0,5."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Quy đồng mẫu thức hai phân thức 1/(x² − 1) và 1/(x + 1) với mẫu chung x² − 1. Tử thức của phân thức thứ hai sau khi quy đồng là x − 1; tính giá trị của nó tại x = 5.",
+      "expr": "5-1",
+      "answer": "4",
+      "explain": "x² − 1 = (x − 1)(x + 1) nên phải nhân cả tử và mẫu của 1/(x + 1) với x − 1. Tử mới là x − 1 = 4 khi x = 5."
+    }
+  ]
+}

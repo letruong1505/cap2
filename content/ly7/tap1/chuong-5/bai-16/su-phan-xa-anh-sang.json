@@ -58,6 +58,16 @@
         "Góc giữa tia tới và tia phản xạ = i + i' = 2 × 30 = 60°."
       ],
       "answer": "60"
+    },
+    {
+      "problem": "Dạng xác định góc phản xạ: tia sáng chiếu tới gương phẳng, tạo với mặt gương góc 40°. Tính góc phản xạ.",
+      "steps": [
+        "Cách làm: góc tới đo giữa tia tới và pháp tuyến (đường vuông góc với gương); góc phản xạ = góc tới.",
+        "Góc tới = 90° − 40° = 50°.",
+        "Góc phản xạ = 50°."
+      ],
+      "expr": "90-40",
+      "answer": "50"
     }
   ],
   "items": [
@@ -198,6 +208,44 @@
       "expr": "2 * 30",
       "answer": "60",
       "explain": "Góc giữa tia tới và tia phản xạ = i + i' = 2 × 30° = 60°."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tia tới hợp với pháp tuyến góc 30°. Tính góc giữa tia tới và tia phản xạ (độ).",
+      "expr": "30*2",
+      "answer": "60",
+      "explain": "Góc phản xạ = góc tới = 30° nên góc giữa tia tới và tia phản xạ là 60°."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tia tới hợp với mặt gương góc 25°. Tính góc giữa tia tới và tia phản xạ (độ).",
+      "expr": "(90-25)*2",
+      "answer": "130",
+      "explain": "Góc tới = 90° − 25° = 65°; góc phản xạ = 65°; góc giữa hai tia là 130°."
+    },
+    {
+      "id": "n03",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Góc phản xạ là góc giữa:",
+      "choices": [
+        "Tia phản xạ và pháp tuyến tại điểm tới",
+        "Tia phản xạ và mặt gương",
+        "Tia tới và tia phản xạ",
+        "Tia tới và mặt gương"
+      ],
+      "answer": 0,
+      "explain": "Góc tới và góc phản xạ đều đo từ pháp tuyến.",
+      "wrong_explain": {
+        "1": "Phải tính từ pháp tuyến.",
+        "2": "Đó là góc giữa hai tia, bằng hai lần góc tới.",
+        "3": "Đó không phải góc tới hay góc phản xạ."
+      },
+      "concept": true
     }
   ]
 }

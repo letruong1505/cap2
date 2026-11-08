@@ -1,0 +1,210 @@
+{
+  "id": "t8-bieu-dien-du-lieu",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 1",
+  "chapter": "Chương V. Dữ liệu và biểu đồ",
+  "lesson": "Bài 19. Biểu diễn dữ liệu bằng bảng, biểu đồ",
+  "section": "Phần 1: Lựa chọn biểu đồ biểu diễn dữ liệu; Phần 2: Chuyển dữ liệu từ dạng biểu diễn này sang dạng khác",
+  "bookPage": 96,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Có thể biểu diễn dữ liệu bằng bảng thống kê hoặc bằng biểu đồ. Tuỳ mục đích mà chọn loại biểu đồ phù hợp."
+    },
+    {
+      "type": "text",
+      "content": "Biểu đồ cột: so sánh các số liệu của một đại lượng. Biểu đồ cột kép: so sánh hai tập dữ liệu cùng loại. Biểu đồ đoạn thẳng: biểu diễn sự thay đổi của số liệu theo thời gian. Biểu đồ hình quạt tròn: biểu diễn tỉ lệ phần trăm của các phần so với toàn thể."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-bieu-do-cot-kep.svg",
+      "caption": "Biểu đồ cột kép biểu diễn số học sinh nam, nữ của bốn lớp 8."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-bieu-do-doan-thang.svg",
+      "caption": "Biểu đồ đoạn thẳng biểu diễn doanh thu của một cửa hàng qua các tháng."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-bieu-do-hinh-quat.svg",
+      "caption": "Biểu đồ hình quạt tròn biểu diễn tỉ lệ các phương tiện học sinh dùng để đến trường (tổng bằng 100%)."
+    },
+    {
+      "type": "text",
+      "content": "Trong biểu đồ hình quạt tròn, cả hình tròn ứng với 100% hay 360°. Số đo cung của một phần bằng tỉ lệ phần trăm của phần đó nhân với 360° rồi chia cho 100."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Theo biểu đồ hình quạt tròn về phương tiện đến trường (đi bộ 25%, xe đạp 40%, xe buýt 15%, bố mẹ đưa 20%), có 200 học sinh. Có bao nhiêu học sinh đi xe đạp?",
+      "steps": [
+        "Số học sinh đi xe đạp là 40% của 200: 200 · 40 : 100 = 80 (học sinh)."
+      ],
+      "expr": "200*40/100",
+      "answer": "80",
+      "figure": "figures/lt-bieu-do-hinh-quat.svg"
+    },
+    {
+      "problem": "Biểu đồ đoạn thẳng cho doanh thu các tháng 1–5 lần lượt là 40; 45; 38; 55; 60 (triệu đồng). Doanh thu tháng 4 tăng bao nhiêu so với tháng 3?",
+      "steps": [
+        "Tăng 55 − 38 = 17 (triệu đồng)."
+      ],
+      "expr": "55-38",
+      "answer": "17",
+      "figure": "figures/lt-bieu-do-doan-thang.svg"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Để biểu diễn sự thay đổi của nhiệt độ trong một tuần, nên dùng biểu đồ:",
+      "choices": [
+        "Hình quạt tròn",
+        "Đoạn thẳng",
+        "Cột kép",
+        "Bảng chữ cái"
+      ],
+      "answer": 1,
+      "explain": "Biểu đồ đoạn thẳng cho thấy xu hướng thay đổi theo thời gian.",
+      "wrong_explain": {
+        "0": "Biểu đồ này biểu diễn tỉ lệ các phần so với toàn thể, không dùng cho sự thay đổi theo thời gian.",
+        "2": "Biểu đồ này dùng để so sánh hai tập dữ liệu.",
+        "3": "Không phải là một loại biểu đồ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Để biểu diễn tỉ lệ phần trăm các phương tiện học sinh dùng đến trường, nên dùng biểu đồ:",
+      "choices": [
+        "Hình quạt tròn",
+        "Đoạn thẳng",
+        "Cột kép",
+        "Bảng tần số"
+      ],
+      "answer": 0,
+      "explain": "Biểu đồ hình quạt tròn thể hiện tỉ lệ phần trăm của các phần.",
+      "wrong_explain": {
+        "1": "Biểu đồ này dùng cho sự thay đổi theo thời gian.",
+        "2": "Biểu đồ này dùng để so sánh hai tập dữ liệu.",
+        "3": "Đây là bảng, không phải biểu đồ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong biểu đồ hình quạt tròn, tổng các tỉ lệ phần trăm luôn bằng:",
+      "choices": [
+        "50%",
+        "180%",
+        "360%",
+        "100%"
+      ],
+      "answer": 3,
+      "explain": "Toàn bộ hình tròn ứng với 100%.",
+      "wrong_explain": {
+        "0": "Cả hình tròn ứng với 100%.",
+        "1": "Không đúng.",
+        "2": "360 là số đo độ của cả hình tròn, không phải tỉ lệ phần trăm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Theo biểu đồ cột kép về số học sinh nam (18) và nữ (22) của lớp 8A, lớp 8A có bao nhiêu học sinh?",
+      "expr": "18+22",
+      "answer": "40",
+      "explain": "Tổng số học sinh là 18 + 22 = 40.",
+      "figure": "figures/lt-bieu-do-cot-kep.svg"
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Theo biểu đồ cột kép, lớp 8C có 15 nam và 25 nữ. Số nữ nhiều hơn số nam bao nhiêu bạn?",
+      "expr": "25-15",
+      "answer": "10",
+      "explain": "25 − 15 = 10 (bạn).",
+      "figure": "figures/lt-bieu-do-cot-kep.svg"
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Theo biểu đồ cột kép (nam: 18; 20; 15; 21 và nữ: 22; 20; 25; 19), tổng số học sinh nữ của bốn lớp là bao nhiêu?",
+      "expr": "22+20+25+19",
+      "answer": "86",
+      "explain": "22 + 20 + 25 + 19 = 86.",
+      "figure": "figures/lt-bieu-do-cot-kep.svg"
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Biểu đồ đoạn thẳng cho doanh thu 5 tháng: 40; 45; 38; 55; 60 (triệu đồng). Tính tổng doanh thu 5 tháng (triệu đồng).",
+      "expr": "40+45+38+55+60",
+      "answer": "238",
+      "explain": "40 + 45 + 38 + 55 + 60 = 238 (triệu đồng).",
+      "figure": "figures/lt-bieu-do-doan-thang.svg"
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Biểu đồ hình quạt tròn: xe đạp chiếm 40%. Tính số đo cung (độ) của hình quạt biểu diễn xe đạp.",
+      "expr": "40*360/100",
+      "answer": "144",
+      "explain": "40% của 360° là 40·360 : 100 = 144°.",
+      "figure": "figures/lt-bieu-do-hinh-quat.svg"
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Biểu đồ hình quạt tròn: xe buýt chiếm 15%, đi bộ 25%, bố mẹ đưa 20%. Hỏi xe đạp chiếm bao nhiêu phần trăm?",
+      "expr": "100-(15+25+20)",
+      "answer": "40",
+      "explain": "Xe đạp chiếm 100% − 60% = 40%.",
+      "figure": "figures/lt-bieu-do-hinh-quat.svg"
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khảo sát 200 học sinh, tỉ lệ đi xe buýt là 15%. Có bao nhiêu học sinh đi xe buýt?",
+      "expr": "200*15/100",
+      "answer": "30",
+      "explain": "200 · 15% = 30 (học sinh).",
+      "figure": "figures/lt-bieu-do-hinh-quat.svg"
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Trong một biểu đồ hình quạt tròn, hình quạt có góc 54° chiếm bao nhiêu phần trăm?",
+      "expr": "54/360*100",
+      "answer": "15",
+      "explain": "Cả hình tròn là 360° ứng với 100%: 54/360·100% = 15%."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Biểu đồ hình quạt tròn biểu diễn 240 học sinh. Hình quạt có góc 108° ứng với bao nhiêu học sinh?",
+      "expr": "240*108/360",
+      "answer": "72",
+      "explain": "108/360 = 0,3 nên số học sinh là 240·108 : 360 = 72."
+    }
+  ]
+}

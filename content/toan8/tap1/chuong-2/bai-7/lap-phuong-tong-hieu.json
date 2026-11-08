@@ -1,0 +1,168 @@
+{
+  "id": "t8-lap-phuong-tong-hieu",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 1",
+  "chapter": "Chương II. Hằng đẳng thức đáng nhớ và ứng dụng",
+  "lesson": "Bài 7. Lập phương của một tổng. Lập phương của một hiệu",
+  "section": "Phần 1: Lập phương của một tổng; Phần 2: Lập phương của một hiệu",
+  "bookPage": 34,
+  "theory": [
+    {
+      "type": "formula",
+      "content": "(A + B)³ = A³ + 3A²B + 3AB² + B³   (lập phương của một tổng)"
+    },
+    {
+      "type": "formula",
+      "content": "(A − B)³ = A³ − 3A²B + 3AB² − B³   (lập phương của một hiệu)"
+    },
+    {
+      "type": "text",
+      "content": "Lưu ý: trong khai triển (A + B)³ mọi hạng tử đều mang dấu \"+\"; trong khai triển (A − B)³ các dấu đan xen \"+\", \"−\". Các hệ số lần lượt là 1, 3, 3, 1."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính nhanh 11³.",
+      "steps": [
+        "Viết 11 = 10 + 1.",
+        "11³ = 10³ + 3·10²·1 + 3·10·1² + 1³ = 1 000 + 300 + 30 + 1 = 1 331."
+      ],
+      "expr": "1000+300+30+1",
+      "answer": "1331"
+    },
+    {
+      "problem": "Tính nhanh 19³.",
+      "steps": [
+        "Viết 19 = 20 − 1.",
+        "19³ = 20³ − 3·20²·1 + 3·20·1² − 1³ = 8 000 − 1 200 + 60 − 1 = 6 859."
+      ],
+      "expr": "8000-1200+60-1",
+      "answer": "6859"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khai triển (x + 2)³ ta được:",
+      "choices": [
+        "x³ + 8",
+        "x³ + 6x² + 12x + 8",
+        "x³ + 2x² + 4x + 8",
+        "x³ − 6x² + 12x − 8"
+      ],
+      "answer": 1,
+      "explain": "(x + 2)³ = x³ + 3x²·2 + 3x·2² + 2³ = x³ + 6x² + 12x + 8.",
+      "wrong_explain": {
+        "0": "Thiếu các hạng tử 3x²·2 và 3x·2².",
+        "2": "Các hệ số phải là 3·2 = 6 và 3·4 = 12.",
+        "3": "Đây là khai triển của (x − 2)³."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khai triển (x − 1)³ ta được:",
+      "choices": [
+        "x³ − 3x² + 3x − 1",
+        "x³ − 1",
+        "x³ + 3x² + 3x + 1",
+        "x³ − 3x² − 3x − 1"
+      ],
+      "answer": 0,
+      "explain": "(x − 1)³ = x³ − 3x² + 3x − 1.",
+      "wrong_explain": {
+        "1": "Thiếu các hạng tử −3x² và 3x.",
+        "2": "Đây là khai triển của (x + 1)³.",
+        "3": "Dấu của hạng tử 3x phải là \"+\"."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính nhanh 21³.",
+      "expr": "8000+3*400*1+3*20*1+1",
+      "answer": "9261",
+      "explain": "Viết 21 = 20 + 1 nên 21³ = 8 000 + 1 200 + 60 + 1 = 9 261."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính nhanh 9³ = (10 − 1)³.",
+      "expr": "1000-300+30-1",
+      "answer": "729",
+      "explain": "9³ = 1 000 − 300 + 30 − 1 = 729."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính giá trị của x³ + 3x² + 3x + 1 tại x = 4.",
+      "expr": "5*5*5",
+      "answer": "125",
+      "explain": "Biểu thức bằng (x + 1)³ = 5³ = 125."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính giá trị của x³ − 6x² + 12x − 8 tại x = 5.",
+      "expr": "3*3*3",
+      "answer": "27",
+      "explain": "Biểu thức bằng (x − 2)³ = 3³ = 27."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho a + b = 3 và ab = 2. Tính a³ + b³.",
+      "expr": "27-3*2*3",
+      "answer": "9",
+      "explain": "a³ + b³ = (a + b)³ − 3ab(a + b) = 27 − 18 = 9."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm hệ số của x² trong khai triển (x + 3)³.",
+      "expr": "3*3",
+      "answer": "9",
+      "explain": "(x + 3)³ = x³ + 9x² + 27x + 27. Hệ số của x² là 3·3 = 9."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm hệ số của x trong khai triển (2x − 1)³.",
+      "expr": "3*2",
+      "answer": "6",
+      "explain": "(2x − 1)³ = 8x³ − 12x² + 6x − 1. Hệ số của x là 6."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tính nhanh 11³ bằng hằng đẳng thức (10 + 1)³.",
+      "expr": "1000+3*100+3*10+1",
+      "answer": "1331",
+      "explain": "(10 + 1)³ = 10³ + 3·10²·1 + 3·10·1² + 1³ = 1000 + 300 + 30 + 1 = 1331."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho x − y = 2 và xy = 3. Tính x³ − y³.",
+      "expr": "2*2*2+3*3*2",
+      "answer": "26",
+      "explain": "Từ (x − y)³ = x³ − y³ − 3xy(x − y) suy ra x³ − y³ = (x − y)³ + 3xy(x − y) = 8 + 3·3·2 = 26."
+    }
+  ]
+}

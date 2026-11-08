@@ -1,0 +1,172 @@
+{
+  "id": "t8-hinh-binh-hanh",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 1",
+  "chapter": "Chương III. Tứ giác",
+  "lesson": "Bài 12. Hình bình hành",
+  "section": "Phần 1: Hình bình hành; Phần 2: Dấu hiệu nhận biết hình bình hành",
+  "bookPage": 57,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hình bình hành là tứ giác có các cặp cạnh đối song song."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-hinh-binh-hanh.svg",
+      "caption": "Hình bình hành ABCD: AB ∥ CD, AD ∥ BC; hai đường chéo cắt nhau tại trung điểm O của mỗi đường."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất: trong hình bình hành, các cạnh đối bằng nhau; các góc đối bằng nhau; hai đường chéo cắt nhau tại trung điểm của mỗi đường."
+    },
+    {
+      "type": "text",
+      "content": "Dấu hiệu nhận biết: tứ giác có các cạnh đối bằng nhau; hoặc có hai cạnh đối song song và bằng nhau; hoặc có các góc đối bằng nhau; hoặc có hai đường chéo cắt nhau tại trung điểm của mỗi đường thì là hình bình hành."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hình bình hành ABCD có Â = 70°. Tính B̂ và Ĉ.",
+      "steps": [
+        "Hai góc kề cạnh AB bù nhau: B̂ = 180° − 70° = 110°.",
+        "Góc đối bằng nhau: Ĉ = Â = 70°."
+      ],
+      "expr": "180-70",
+      "answer": "110"
+    },
+    {
+      "problem": "Hình bình hành có hai cạnh kề 5 cm và 8 cm. Tính chu vi.",
+      "steps": [
+        "Các cạnh đối bằng nhau nên chu vi = 2·(5 + 8) = 26 (cm)."
+      ],
+      "expr": "2*(5+8)",
+      "answer": "26"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hình bình hành có tính chất:",
+      "choices": [
+        "Hai đường chéo bằng nhau",
+        "Hai đường chéo cắt nhau tại trung điểm mỗi đường",
+        "Bốn cạnh bằng nhau",
+        "Một góc vuông"
+      ],
+      "answer": 1,
+      "explain": "Giao điểm hai đường chéo là trung điểm của mỗi đường.",
+      "wrong_explain": {
+        "0": "Tính chất này đúng với hình chữ nhật, không đúng với mọi hình bình hành.",
+        "2": "Đây là hình thoi.",
+        "3": "Đây là điều kiện của hình chữ nhật."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tứ giác có hai cặp cạnh đối bằng nhau là:",
+      "choices": [
+        "Hình bình hành",
+        "Hình thang",
+        "Hình thang cân",
+        "Hình thoi"
+      ],
+      "answer": 0,
+      "explain": "Đây là một dấu hiệu nhận biết hình bình hành.",
+      "wrong_explain": {
+        "1": "Hình thang chỉ cần một cặp cạnh song song.",
+        "2": "Đây không phải dấu hiệu nhận biết.",
+        "3": "Hình thoi có bốn cạnh bằng nhau."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình bình hành ABCD có Â = 65°. Tính Ĉ (độ).",
+      "expr": "65",
+      "answer": "65",
+      "explain": "Hai góc đối của hình bình hành bằng nhau."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình bình hành ABCD có Â = 65°. Tính B̂ (độ).",
+      "expr": "180-65",
+      "answer": "115",
+      "explain": "Â và B̂ là hai góc trong cùng phía nên bù nhau: B̂ = 115°."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình bình hành có hai cạnh kề 6 cm và 9 cm. Tính chu vi (cm).",
+      "expr": "2*(6+9)",
+      "answer": "30",
+      "explain": "Chu vi = 2·(6 + 9) = 30 (cm)."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình bình hành ABCD có AC = 14 cm, O là giao điểm hai đường chéo. Tính OA (cm).",
+      "expr": "14/2",
+      "answer": "7",
+      "explain": "O là trung điểm của AC nên OA = 7 cm."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình bình hành có chu vi 36 cm, một cạnh dài 10 cm. Tính cạnh kề với nó (cm).",
+      "expr": "36/2-10",
+      "answer": "8",
+      "explain": "Nửa chu vi là 18 cm nên cạnh kề dài 18 − 10 = 8 (cm)."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình bình hành ABCD có Â = B̂ + 40°. Tính Â (độ).",
+      "expr": "(180+40)/2",
+      "answer": "110",
+      "explain": "Â + B̂ = 180° và Â − B̂ = 40° nên Â = (180° + 40°)/2 = 110°."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình bình hành ABCD có BD = 12 cm và O là giao điểm hai đường chéo; OA = 5 cm. Tính AC (cm).",
+      "expr": "2*5",
+      "answer": "10",
+      "explain": "O là trung điểm của AC nên AC = 2·OA = 10 (cm)."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hình bình hành ABCD có AB = 8 cm, AD = 5 cm. Tia phân giác của góc A cắt CD tại E. Tính EC (cm).",
+      "expr": "8-5",
+      "answer": "3",
+      "explain": "AB ∥ CD nên góc DEA = góc EAB = góc DAE, do đó ΔADE cân tại D và DE = AD = 5. Vậy EC = CD − DE = 8 − 5 = 3 (cm)."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hình bình hành ABCD có AC = 10 cm, BD = 8 cm, AB = 6 cm; O là giao điểm hai đường chéo. Tính chu vi tam giác OAB (cm).",
+      "expr": "6+10/2+8/2",
+      "answer": "15",
+      "explain": "OA = AC : 2 = 5, OB = BD : 2 = 4. Chu vi = 6 + 5 + 4 = 15 (cm)."
+    }
+  ]
+}

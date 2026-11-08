@@ -110,6 +110,24 @@
       "expr": "-6-4",
       "answer": "-10",
       "explain": "Hệ số tự do: −6 + (−4) = −10."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "A(x) = x³ − 2x + 1, B(x) = −x³ + x² + x. Tính A(x) + B(x) tại x = 3.",
+      "expr": "3*3-3+1",
+      "answer": "7",
+      "explain": "A + B = x² − x + 1. Với x = 3: 9 − 3 + 1 = 7."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tìm đa thức P(x) sao cho P(x) + (x² − x) = 2x² + 3. Tính P(2).",
+      "expr": "2*2+2+3",
+      "answer": "9",
+      "explain": "P(x) = (2x² + 3) − (x² − x) = x² + x + 3. P(2) = 4 + 2 + 3 = 9."
     }
   ]
 }

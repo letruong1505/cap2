@@ -1,0 +1,168 @@
+{
+  "id": "t8-cong-tru-da-thuc",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 1",
+  "chapter": "Chương I. Đa thức",
+  "lesson": "Bài 3. Phép cộng và phép trừ đa thức",
+  "section": "Phần 1: Cộng hai đa thức; Phần 2: Trừ hai đa thức",
+  "bookPage": 14,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Muốn cộng hai đa thức, ta nối chúng bằng dấu \"+\" rồi bỏ ngoặc, nhóm các hạng tử đồng dạng và thu gọn."
+    },
+    {
+      "type": "text",
+      "content": "Muốn trừ đa thức A cho đa thức B, ta viết A − (B), bỏ ngoặc bằng quy tắc dấu (dấu \"−\" đứng trước ngoặc thì đổi dấu mọi hạng tử trong ngoặc), rồi thu gọn."
+    },
+    {
+      "type": "formula",
+      "content": "(A) − (B) = A − B, trong đó mọi hạng tử của B đổi dấu"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho A = 3x² + 2x − 1 và B = x² − 4x + 5. Tìm hệ số của x trong A + B.",
+      "steps": [
+        "A + B = (3x² + 2x − 1) + (x² − 4x + 5).",
+        "Nhóm: (3x² + x²) + (2x − 4x) + (−1 + 5) = 4x² − 2x + 4.",
+        "Hệ số của x là −2."
+      ],
+      "expr": "2-4",
+      "answer": "-2"
+    },
+    {
+      "problem": "Với A, B như trên, tìm hệ số của x² trong A − B.",
+      "steps": [
+        "A − B = (3x² + 2x − 1) − (x² − 4x + 5) = 3x² + 2x − 1 − x² + 4x − 5.",
+        "Thu gọn: 2x² + 6x − 6.",
+        "Hệ số của x² là 2."
+      ],
+      "expr": "3-1",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi bỏ ngoặc trong biểu thức A − (x² − 2x + 1), ta được:",
+      "choices": [
+        "A − x² − 2x + 1",
+        "A − x² + 2x − 1",
+        "A + x² − 2x + 1",
+        "A − x² + 2x + 1"
+      ],
+      "answer": 1,
+      "explain": "Dấu trừ đứng trước dấu ngoặc: đổi dấu tất cả các hạng tử trong ngoặc.",
+      "wrong_explain": {
+        "0": "Chưa đổi dấu hạng tử −2x và +1.",
+        "2": "Dấu \"−\" trước ngoặc phải đổi dấu mọi hạng tử.",
+        "3": "Hạng tử +1 phải đổi thành −1."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tìm hệ số của x² trong tổng (2x² + 3x) + (x² − 5x).",
+      "expr": "2+1",
+      "answer": "3",
+      "explain": "Cộng các hạng tử đồng dạng: (2 + 1)x² = 3x². Hệ số là 3."
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm hệ số của x trong tổng (2x² + 3x) + (x² − 5x).",
+      "expr": "3-5",
+      "answer": "-2",
+      "explain": "Hạng tử bậc nhất: (3 − 5)x = −2x. Hệ số là −2."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm hệ số của x² trong hiệu (5x² − 2x) − (3x² + x).",
+      "expr": "5-3",
+      "answer": "2",
+      "explain": "Hạng tử bậc hai: (5 − 3)x² = 2x². Hệ số là 2."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm hệ số của x trong hiệu (5x² − 2x) − (3x² + x).",
+      "expr": "-2-1",
+      "answer": "-3",
+      "explain": "Hạng tử bậc nhất: (−2 − 1)x = −3x. Hệ số là −3."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho A = x² + y² và B = x² − y². Tính giá trị của A + B tại x = 3.",
+      "expr": "2*3*3",
+      "answer": "18",
+      "explain": "A + B = 2x² nên khi x = 3 giá trị là 2·9 = 18."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho A = 2x + y và B = x − 3y. Tính giá trị của A − B tại x = 1, y = 2.",
+      "expr": "(2*1+2)-(1-3*2)",
+      "answer": "9",
+      "explain": "A − B = x + 4y. Khi x = 1, y = 2: 1 + 8 = 9."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho P = 2x² − 3x + 1 và Q = x² + x − 4. Tính giá trị của P − Q khi x = 2.",
+      "expr": "(2*4-6+1)-(4+2-4)",
+      "answer": "1",
+      "explain": "P − Q = x² − 4x + 5. Khi x = 2: 4 − 8 + 5 = 1."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một mảnh vườn gồm hai phần có diện tích 3x² + 2x và 2x² − x (m²). Tổng diện tích khi x = 3 là bao nhiêu mét vuông?",
+      "expr": "(3*9+6)+(2*9-3)",
+      "answer": "48",
+      "explain": "Tổng diện tích là 5x² + x. Khi x = 3: 5·9 + 3 = 48 (m²)."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tìm đa thức M sao cho M + (x² − 2x) = 3x² + x. Hệ số của x trong M bằng bao nhiêu?",
+      "expr": "1+2",
+      "answer": "3",
+      "explain": "M = (3x² + x) − (x² − 2x) = 2x² + 3x nên hệ số của x là 3 (tức 1 + 2)."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho A = x² − 2x + 3, B = 2x² + x − 1, C = −x² + 4x + 5. Tìm hệ số của x trong A − B + C.",
+      "expr": "(0-2)-1+4",
+      "answer": "1",
+      "explain": "Hệ số của x: −2 − 1 + 4 = 1."
+    },
+    {
+      "id": "n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho A + B = 5x² − 2 và A − B = x² + 4x − 6. Tìm hệ số của x² trong A.",
+      "expr": "(5+1)/2",
+      "answer": "3",
+      "explain": "Cộng hai đẳng thức: 2A = 6x² + 4x − 8 nên A = 3x² + 2x − 4. Hệ số của x² là 3."
+    }
+  ]
+}

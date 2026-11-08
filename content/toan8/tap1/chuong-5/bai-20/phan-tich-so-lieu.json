@@ -1,0 +1,179 @@
+{
+  "id": "t8-phan-tich-so-lieu",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 1",
+  "chapter": "Chương V. Dữ liệu và biểu đồ",
+  "lesson": "Bài 20. Phân tích số liệu thống kê dựa vào biểu đồ",
+  "section": "Phần 1: Phân tích số liệu từ biểu đồ; Phần 2: Rút ra kết luận",
+  "bookPage": 102,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Từ biểu đồ, ta có thể đọc số liệu, so sánh các giá trị, tính tổng, tính tỉ lệ phần trăm và rút ra nhận xét hay dự đoán xu hướng."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-bieu-do-doan-thang.svg",
+      "caption": "Doanh thu tăng ở các tháng 2, 4, 5 và giảm ở tháng 3."
+    },
+    {
+      "type": "text",
+      "content": "Tỉ lệ phần trăm của một phần so với tổng: (giá trị của phần : tổng) · 100%. Mức tăng (giảm) = giá trị sau − giá trị trước."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Theo biểu đồ đoạn thẳng doanh thu (40; 45; 38; 55; 60 triệu đồng), doanh thu tháng 5 gấp bao nhiêu lần tháng 1?",
+      "steps": [
+        "Tỉ số: 60 : 40 = 1,5. Vậy doanh thu tháng 5 gấp 1,5 lần tháng 1."
+      ],
+      "expr": "60/40",
+      "answer": "1.5",
+      "figure": "figures/lt-bieu-do-doan-thang.svg"
+    },
+    {
+      "problem": "Theo biểu đồ cột kép, lớp 8D có 21 nam và 19 nữ. Tỉ lệ phần trăm học sinh nam của lớp 8D là bao nhiêu?",
+      "steps": [
+        "Tổng số học sinh là 21 + 19 = 40.",
+        "Tỉ lệ nam là 21/40 · 100% = 52,5%."
+      ],
+      "expr": "21/40*100",
+      "answer": "52.5",
+      "figure": "figures/lt-bieu-do-cot-kep.svg"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Theo biểu đồ đoạn thẳng doanh thu (40; 45; 38; 55; 60), tháng nào có doanh thu cao nhất?",
+      "choices": [
+        "Tháng 1",
+        "Tháng 5",
+        "Tháng 3",
+        "Tháng 4"
+      ],
+      "answer": 1,
+      "explain": "Giá trị lớn nhất là 60 triệu đồng ở tháng 5.",
+      "wrong_explain": {
+        "0": "Tháng 1 là tháng thấp (40 triệu đồng).",
+        "2": "Doanh thu tháng 3 (38 triệu đồng) là thấp nhất.",
+        "3": "Doanh thu tháng 4 là 55, thấp hơn tháng 5 (60)."
+      },
+      "concept": true,
+      "figure": "figures/lt-bieu-do-doan-thang.svg"
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Theo biểu đồ đoạn thẳng doanh thu, doanh thu giảm vào tháng nào so với tháng trước?",
+      "choices": [
+        "Tháng 3",
+        "Tháng 2",
+        "Tháng 4",
+        "Tháng 5"
+      ],
+      "answer": 0,
+      "explain": "Doanh thu giảm từ 45 xuống 38 triệu đồng ở tháng 3.",
+      "wrong_explain": {
+        "1": "Tháng 2 tăng từ 40 lên 45.",
+        "2": "Tháng 4 tăng từ 38 lên 55.",
+        "3": "Tháng 5 tăng từ 55 lên 60."
+      },
+      "concept": true,
+      "figure": "figures/lt-bieu-do-doan-thang.svg"
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Doanh thu tháng 2 là 45 và tháng 3 là 38 (triệu đồng). Tháng 3 giảm bao nhiêu triệu đồng so với tháng 2?",
+      "expr": "45-38",
+      "answer": "7",
+      "explain": "45 − 38 = 7 (triệu đồng).",
+      "figure": "figures/lt-bieu-do-doan-thang.svg"
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Theo biểu đồ hình quạt tròn, xe đạp chiếm 40% trong 200 học sinh. Số học sinh không đi xe đạp là bao nhiêu?",
+      "expr": "200-200*40/100",
+      "answer": "120",
+      "explain": "Số học sinh đi xe đạp là 80; số học sinh còn lại là 200 − 80 = 120.",
+      "figure": "figures/lt-bieu-do-hinh-quat.svg"
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Doanh thu tháng 1 là 40 triệu đồng, tháng 5 là 60 triệu đồng. Tháng 5 tăng bao nhiêu phần trăm so với tháng 1 (%)?",
+      "expr": "(60-40)/40*100",
+      "answer": "50",
+      "explain": "(60 − 40) : 40 · 100% = 50%.",
+      "figure": "figures/lt-bieu-do-doan-thang.svg"
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Biểu đồ cột kép: lớp 8B có 20 nam và 20 nữ. Tỉ lệ phần trăm học sinh nữ của lớp 8B là bao nhiêu (%)?",
+      "expr": "20/40*100",
+      "answer": "50",
+      "explain": "Tổng 40 bạn, nữ chiếm 20/40 · 100% = 50%.",
+      "figure": "figures/lt-bieu-do-cot-kep.svg"
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Biểu đồ cột kép: tổng số học sinh nam của bốn lớp (18; 20; 15; 21) là bao nhiêu?",
+      "expr": "18+20+15+21",
+      "answer": "74",
+      "explain": "18 + 20 + 15 + 21 = 74.",
+      "figure": "figures/lt-bieu-do-cot-kep.svg"
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Từ biểu đồ cột kép, tổng số học sinh của bốn lớp 8 là bao nhiêu? (nam 74, nữ 86)",
+      "expr": "74+86",
+      "answer": "160",
+      "explain": "74 + 86 = 160 học sinh.",
+      "figure": "figures/lt-bieu-do-cot-kep.svg"
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Doanh thu trung bình mỗi tháng trong 5 tháng (40; 45; 38; 55; 60) bằng bao nhiêu triệu đồng? (tổng là 238, chia cho 5 và nhập số thập phân)",
+      "expr": "238/5",
+      "answer": "47.6",
+      "explain": "238 : 5 = 47,6 (triệu đồng).",
+      "figure": "figures/lt-bieu-do-doan-thang.svg"
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Doanh thu 5 tháng: 40; 45; 38; 55; 60 (triệu đồng). Tốc độ tăng trung bình mỗi tháng từ tháng 1 đến tháng 5 là bao nhiêu triệu đồng?",
+      "expr": "(60-40)/4",
+      "answer": "5",
+      "explain": "Từ tháng 1 đến tháng 5 có 4 khoảng thời gian: (60 − 40) : 4 = 5 (triệu đồng)."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Doanh thu tháng 5 là 60 triệu đồng. Nếu tháng 6 tăng 10% so với tháng 5 thì doanh thu tháng 6 là bao nhiêu triệu đồng?",
+      "expr": "60*110/100",
+      "answer": "66",
+      "explain": "Tháng 6 bằng 110% của tháng 5: 60·110 : 100 = 66 (triệu đồng)."
+    }
+  ]
+}

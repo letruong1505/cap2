@@ -1,0 +1,184 @@
+{
+  "id": "t8-xac-suat-thuc-nghiem",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 2",
+  "chapter": "Chương VIII. Mở đầu về tính xác suất của biến cố",
+  "lesson": "Bài 32. Mối liên hệ giữa xác suất thực nghiệm với xác suất và ứng dụng",
+  "section": "Phần 1: Xác suất thực nghiệm; Phần 2: Mối liên hệ với xác suất",
+  "bookPage": 74,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Xác suất thực nghiệm của một biến cố là tỉ số giữa số lần biến cố đó xảy ra và tổng số lần thực hiện phép thử."
+    },
+    {
+      "type": "formula",
+      "content": "Xác suất thực nghiệm = (số lần biến cố xảy ra) / (tổng số lần thử)"
+    },
+    {
+      "type": "text",
+      "content": "Khi số lần thực hiện phép thử càng lớn thì xác suất thực nghiệm của một biến cố càng gần với xác suất của biến cố đó. Vì vậy có thể dùng xác suất thực nghiệm để ước lượng xác suất, và dùng xác suất để dự đoán số lần xảy ra của biến cố."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-bang-xuc-xac.svg",
+      "caption": "Kết quả gieo một con xúc xắc 60 lần."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Gieo một con xúc xắc 60 lần, mặt 4 chấm xuất hiện 12 lần. Tính xác suất thực nghiệm của biến cố \"xuất hiện mặt 4 chấm\".",
+      "steps": [
+        "Xác suất thực nghiệm = 12/60 = 0,2."
+      ],
+      "expr": "12/60",
+      "answer": "0.2",
+      "figure": "figures/lt-bang-xuc-xac.svg"
+    },
+    {
+      "problem": "Xác suất để một sản phẩm là phế phẩm là 0,02. Kiểm tra 500 sản phẩm, dự đoán số phế phẩm.",
+      "steps": [
+        "Số phế phẩm dự đoán: 500 · 0,02 = 10 (sản phẩm)."
+      ],
+      "expr": "500*0.02",
+      "answer": "10"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Xác suất thực nghiệm của biến cố A là:",
+      "choices": [
+        "Số lần A xảy ra",
+        "Số kết quả có thể",
+        "Tỉ số giữa số lần A xảy ra và tổng số lần thử",
+        "Tổng số lần thử"
+      ],
+      "answer": 2,
+      "explain": "Đây là định nghĩa xác suất thực nghiệm.",
+      "wrong_explain": {
+        "0": "Chưa chia cho tổng số lần thử.",
+        "1": "Đây là mẫu số của xác suất lí thuyết.",
+        "3": "Chưa chia số lần xảy ra."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi số lần thử tăng lên rất lớn thì xác suất thực nghiệm:",
+      "choices": [
+        "Luôn bằng 0",
+        "Tiến gần tới xác suất của biến cố",
+        "Luôn bằng 1",
+        "Càng xa xác suất của biến cố"
+      ],
+      "answer": 1,
+      "explain": "Đây là mối liên hệ giữa xác suất thực nghiệm và xác suất.",
+      "wrong_explain": {
+        "0": "Không đúng.",
+        "2": "Không đúng.",
+        "3": "Ngược với thực tế."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tung một đồng xu 50 lần, được 28 lần mặt ngửa. Tính xác suất thực nghiệm của biến cố \"mặt ngửa\" (số thập phân).",
+      "expr": "28/50",
+      "answer": "0.56",
+      "explain": "28/50 = 0,56."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Theo bảng kết quả gieo xúc xắc 60 lần, mặt 4 chấm xuất hiện 12 lần. Tính xác suất thực nghiệm của biến cố \"mặt 4 chấm\".",
+      "expr": "12/60",
+      "answer": "0.2",
+      "explain": "12/60 = 0,2.",
+      "figure": "figures/lt-bang-xuc-xac.svg"
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Theo bảng kết quả gieo xúc xắc 60 lần (mặt 2: 11 lần; mặt 4: 12 lần; mặt 6: 10 lần), tính số lần xuất hiện mặt chẵn.",
+      "expr": "11+12+10",
+      "answer": "33",
+      "explain": "11 + 12 + 10 = 33 lần.",
+      "figure": "figures/lt-bang-xuc-xac.svg"
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Từ bảng trên, tính xác suất thực nghiệm của biến cố \"xuất hiện mặt chẵn\" (số thập phân).",
+      "expr": "33/60",
+      "answer": "0.55",
+      "explain": "33/60 = 0,55.",
+      "figure": "figures/lt-bang-xuc-xac.svg"
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Xác suất lí thuyết xuất hiện mặt chẵn là 0,5. Hiệu giữa xác suất thực nghiệm 0,55 và xác suất lí thuyết là bao nhiêu?",
+      "expr": "0.55-0.5",
+      "answer": "0.05",
+      "explain": "0,55 − 0,5 = 0,05."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Xác suất để một học sinh đi học muộn trong một ngày là 0,05. Dự đoán trong 200 lượt học sinh đến trường có bao nhiêu lượt muộn?",
+      "expr": "200*0.05",
+      "answer": "10",
+      "explain": "200 · 0,05 = 10 lượt."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một nhà máy kiểm tra 400 sản phẩm thấy 8 phế phẩm. Tính xác suất thực nghiệm sản phẩm là phế phẩm (số thập phân).",
+      "expr": "8/400",
+      "answer": "0.02",
+      "explain": "8/400 = 0,02."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với xác suất phế phẩm 0,02 (như trên), dự đoán trong 1 500 sản phẩm có bao nhiêu phế phẩm?",
+      "expr": "1500*0.02",
+      "answer": "30",
+      "explain": "1500 · 0,02 = 30 sản phẩm."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Một xạ thủ bắn 80 lần trúng đích 60 lần. Dự đoán trong 200 lần bắn người đó trúng khoảng bao nhiêu lần?",
+      "expr": "60/80*200",
+      "answer": "150",
+      "explain": "Xác suất thực nghiệm trúng: 60/80 = 0,75. Dự đoán: 0,75·200 = 150 lần."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tung xúc xắc 300 lần, mặt 6 chấm xuất hiện 45 lần. Tính xác suất thực nghiệm (số thập phân).",
+      "expr": "45/300",
+      "answer": "0.15",
+      "explain": "45/300 = 0,15."
+    }
+  ]
+}

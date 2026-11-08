@@ -50,6 +50,16 @@
         "3300 / 10 = 330 Hz."
       ],
       "answer": "330"
+    },
+    {
+      "problem": "Dạng so sánh âm theo tần số: dây A dao động 220 Hz, dây B dao động 440 Hz. Dây nào phát âm cao hơn và tần số hơn bao nhiêu Hz?",
+      "steps": [
+        "Cách làm: tần số càng lớn thì âm càng cao.",
+        "Dây B có tần số lớn hơn nên âm cao hơn.",
+        "Hiệu tần số: 440 − 220 = 220 Hz."
+      ],
+      "expr": "440-220",
+      "answer": "220"
     }
   ],
   "items": [
@@ -190,6 +200,44 @@
         "3": "8800 Hz gấp 10 lần số dao động đã cho."
       },
       "expr": "880 / 1"
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Một âm có tần số 110 Hz. Trong 1 phút vật phát âm dao động bao nhiêu lần?",
+      "expr": "110*60",
+      "answer": "6600",
+      "explain": "1 phút = 60 s nên số dao động = 110·60 = 6600."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Độ to của âm tăng từ 40 dB lên 70 dB. Độ to tăng thêm bao nhiêu dB?",
+      "expr": "70-40",
+      "answer": "30",
+      "explain": "70 − 40 = 30 dB."
+    },
+    {
+      "id": "n03",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Muốn âm phát ra to hơn, ta cần làm cho nguồn âm dao động với:",
+      "choices": [
+        "Biên độ lớn hơn",
+        "Tần số lớn hơn",
+        "Tần số nhỏ hơn",
+        "Biên độ nhỏ hơn"
+      ],
+      "answer": 0,
+      "explain": "Biên độ dao động càng lớn thì âm càng to.",
+      "wrong_explain": {
+        "1": "Tần số lớn hơn làm âm cao hơn, không làm âm to hơn.",
+        "2": "Tần số nhỏ hơn làm âm trầm hơn.",
+        "3": "Biên độ nhỏ làm âm nhỏ đi."
+      },
+      "concept": true
     }
   ]
 }

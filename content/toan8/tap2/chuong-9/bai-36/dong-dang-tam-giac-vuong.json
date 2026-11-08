@@ -1,0 +1,208 @@
+{
+  "id": "t8-dong-dang-tam-giac-vuong",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 2",
+  "chapter": "Chương IX. Tam giác đồng dạng",
+  "lesson": "Bài 36. Các trường hợp đồng dạng của hai tam giác vuông",
+  "section": "Phần 1: Dấu hiệu đồng dạng của hai tam giác vuông; Phần 2: Tỉ số hai đường cao, tỉ số diện tích của hai tam giác đồng dạng",
+  "bookPage": 99,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dấu hiệu đồng dạng của hai tam giác vuông: (1) nếu hai tam giác vuông có một cặp góc nhọn bằng nhau thì chúng đồng dạng; (2) nếu hai cạnh góc vuông của tam giác vuông này tỉ lệ với hai cạnh góc vuông của tam giác vuông kia thì hai tam giác đó đồng dạng; (3) nếu cạnh huyền và một cạnh góc vuông của tam giác vuông này tỉ lệ với cạnh huyền và một cạnh góc vuông của tam giác vuông kia thì hai tam giác đó đồng dạng."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-tam-giac-vuong-duong-cao.svg",
+      "caption": "Tam giác ABC vuông tại A, đường cao AH. ΔHBA ∽ ΔABC (chung góc B, cùng có một góc vuông)."
+    },
+    {
+      "type": "text",
+      "content": "Nếu hai tam giác đồng dạng theo tỉ số k thì tỉ số hai đường cao tương ứng bằng k và tỉ số diện tích bằng k²."
+    },
+    {
+      "type": "formula",
+      "content": "ΔA′B′C′ ∽ ΔABC (tỉ số k) ⇒ S′/S = k²"
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: trong tam giác ABC vuông tại A có đường cao AH thì AB² = BH·BC, AC² = CH·BC và AH·BC = AB·AC."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tam giác ABC vuông tại A có AB = 3 cm, AC = 4 cm, BC = 5 cm, đường cao AH. Tính BH (cm).",
+      "steps": [
+        "ΔHBA ∽ ΔABC nên BH/AB = AB/BC.",
+        "BH = AB²/BC = 9/5 = 1,8 (cm)."
+      ],
+      "expr": "3*3/5",
+      "answer": "1.8",
+      "figure": "figures/lt-tam-giac-vuong-duong-cao.svg"
+    },
+    {
+      "problem": "Với tam giác ABC trên, tính AH (cm).",
+      "steps": [
+        "ΔHBA ∽ ΔABC nên AH/AC = AB/BC.",
+        "AH = AB·AC/BC = 12/5 = 2,4 (cm)."
+      ],
+      "expr": "3*4/5",
+      "answer": "2.4",
+      "figure": "figures/lt-tam-giac-vuong-duong-cao.svg"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hai tam giác vuông có một cặp góc nhọn bằng nhau thì:",
+      "choices": [
+        "Bằng nhau",
+        "Không đồng dạng",
+        "Đồng dạng",
+        "Có cạnh huyền bằng nhau"
+      ],
+      "answer": 2,
+      "explain": "Có hai cặp góc bằng nhau nên đồng dạng g.g.",
+      "wrong_explain": {
+        "0": "Chỉ đồng dạng, chưa chắc bằng nhau.",
+        "1": "Hai góc bằng nhau (góc vuông và góc nhọn) nên đồng dạng g.g.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hai tam giác đồng dạng theo tỉ số k thì tỉ số diện tích bằng:",
+      "choices": [
+        "k",
+        "k²",
+        "2k",
+        "1/k"
+      ],
+      "answer": 1,
+      "explain": "Diện tích tỉ lệ với bình phương tỉ số đồng dạng.",
+      "wrong_explain": {
+        "0": "Đó là tỉ số chu vi.",
+        "2": "Không đúng.",
+        "3": "Đó là tỉ số theo thứ tự ngược."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hai tam giác đồng dạng theo tỉ số k thì tỉ số hai đường cao tương ứng bằng:",
+      "choices": [
+        "k",
+        "k²",
+        "1",
+        "k + 1"
+      ],
+      "answer": 0,
+      "explain": "Đường cao là đoạn thẳng tương ứng nên tỉ số bằng k.",
+      "wrong_explain": {
+        "1": "Đó là tỉ số diện tích.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai tam giác đồng dạng theo tỉ số 2, diện tích tam giác nhỏ là 15 cm². Tính diện tích tam giác lớn (cm²).",
+      "expr": "15*2*2",
+      "answer": "60",
+      "explain": "S′ = k²·S = 4·15 = 60 (cm²)."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai tam giác đồng dạng theo tỉ số 3, diện tích tam giác lớn là 108 cm². Tính diện tích tam giác nhỏ (cm²).",
+      "expr": "108/9",
+      "answer": "12",
+      "explain": "Tỉ số diện tích là 9 nên S = 108 : 9 = 12 (cm²)."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC vuông tại A có AB = 6 cm, AC = 8 cm, BC = 10 cm, AH ⊥ BC. Tính AH (cm).",
+      "expr": "6*8/10",
+      "answer": "4.8",
+      "explain": "AH = AB·AC/BC = 48/10 = 4,8 (cm)."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC vuông tại A có AB = 6 cm, BC = 10 cm, AH ⊥ BC. Tính BH (cm).",
+      "expr": "6*6/10",
+      "answer": "3.6",
+      "explain": "BH = AB²/BC = 36/10 = 3,6 (cm)."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cùng tam giác trên, tính CH (cm).",
+      "expr": "10-6*6/10",
+      "answer": "6.4",
+      "explain": "CH = BC − BH = 10 − 3,6 = 6,4 (cm)."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai tam giác đồng dạng có hai đường cao tương ứng là 3 cm và 4,5 cm. Tính tỉ số đồng dạng (từ tam giác nhỏ đến lớn).",
+      "expr": "4.5/3",
+      "answer": "1.5",
+      "explain": "k = 4,5/3 = 1,5."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "ΔA′B′C′ ∽ ΔABC theo tỉ số 2/3, diện tích ΔABC bằng 36 cm². Tính diện tích ΔA′B′C′ (cm²).",
+      "expr": "36*4/9",
+      "answer": "16",
+      "explain": "S′ = (2/3)²·36 = (4/9)·36 = 16 (cm²)."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tam giác ABC vuông tại A có AB = 6 cm, AC = 8 cm; AH ⊥ BC. Tỉ số diện tích SHBA : SABC bằng bao nhiêu?",
+      "expr": "6*6/100",
+      "answer": "0.36",
+      "explain": "ΔHBA ∽ ΔABC với tỉ số AB/BC = 6/10 nên tỉ số diện tích là (6/10)² = 0,36."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cùng tam giác trên, SABC = 24 cm². Tính diện tích ΔHBA (cm²).",
+      "expr": "24*36/100",
+      "answer": "8.64",
+      "explain": "S(HBA) = 0,36·24 = 8,64 (cm²)."
+    },
+    {
+      "id": "n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tam giác ABC vuông tại A có AB = 9 cm, AC = 12 cm; AH ⊥ BC. Tính CH (cm).",
+      "expr": "12*12/15",
+      "answer": "9.6",
+      "explain": "BC = 15. Hệ thức AC² = CH·BC nên CH = 144 : 15 = 9,6 (cm)."
+    }
+  ]
+}

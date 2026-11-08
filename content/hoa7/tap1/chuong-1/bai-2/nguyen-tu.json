@@ -61,6 +61,16 @@
         "Helium có 2 proton, nên Z = 2."
       ],
       "answer": "2"
+    },
+    {
+      "problem": "Dạng tìm số hạt: nguyên tử X có tổng số hạt (proton, neutron, electron) là 40, trong đó số hạt mang điện nhiều hơn số hạt không mang điện là 12. Tính số proton của X.",
+      "steps": [
+        "Cách làm: gọi số proton = số electron = p, số neutron = n; lập hệ hai phương trình.",
+        "Tổng số hạt: 2p + n = 40. Hạt mang điện nhiều hơn không mang điện: 2p − n = 12.",
+        "Cộng hai vế: 4p = 52 nên p = 13."
+      ],
+      "expr": "(40+12)/4",
+      "answer": "13"
     }
   ],
   "items": [
@@ -190,6 +200,33 @@
       "expr": "10 * 0.00055",
       "answer": "0.0055",
       "explain": "Khối lượng 10 electron là 10 × 0,00055 = 0,0055 amu."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Nguyên tử có 17 proton và 18 neutron. Tính tổng số hạt cơ bản (proton, neutron, electron) trong nguyên tử.",
+      "expr": "17+17+18",
+      "answer": "52",
+      "explain": "Nguyên tử trung hoà điện nên số electron = số proton = 17. Tổng = 17 + 17 + 18 = 52."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Nguyên tử có tổng số hạt là 34, trong đó số hạt không mang điện là 12. Tính số proton.",
+      "expr": "(34-12)/2",
+      "answer": "11",
+      "explain": "Số hạt mang điện = 34 − 12 = 22 gồm proton và electron bằng nhau nên p = 22 : 2 = 11."
+    },
+    {
+      "id": "n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Nguyên tử có khối lượng gần đúng 23 amu và 11 proton. Tính số neutron.",
+      "expr": "23-11",
+      "answer": "12",
+      "explain": "Khối lượng gần đúng bằng tổng số proton và neutron: n = 23 − 11 = 12."
     }
   ]
 }

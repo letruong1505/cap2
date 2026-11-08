@@ -1,0 +1,180 @@
+{
+  "id": "t8-hinh-thoi-hinh-vuong",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 8, tập 1",
+  "chapter": "Chương III. Tứ giác",
+  "lesson": "Bài 14. Hình thoi và hình vuông",
+  "section": "Phần 1: Hình thoi; Phần 2: Hình vuông",
+  "bookPage": 67,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hình thoi là tứ giác có bốn cạnh bằng nhau. Hình thoi là hình bình hành."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-hinh-thoi.svg",
+      "caption": "Hình thoi ABCD: bốn cạnh bằng nhau; hai đường chéo vuông góc với nhau, cắt nhau tại trung điểm O của mỗi đường và là các đường phân giác của các góc của hình thoi."
+    },
+    {
+      "type": "text",
+      "content": "Dấu hiệu nhận biết hình thoi: hình bình hành có hai cạnh kề bằng nhau; hình bình hành có hai đường chéo vuông góc; hình bình hành có một đường chéo là đường phân giác của một góc; tứ giác có bốn cạnh bằng nhau."
+    },
+    {
+      "type": "text",
+      "content": "Hình vuông là tứ giác có bốn góc vuông và bốn cạnh bằng nhau. Hình vuông vừa là hình chữ nhật vừa là hình thoi: có hai đường chéo bằng nhau, vuông góc và cắt nhau tại trung điểm mỗi đường."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hình thoi có cạnh 7 cm. Tính chu vi.",
+      "steps": [
+        "Chu vi = 4·7 = 28 (cm)."
+      ],
+      "expr": "4*7",
+      "answer": "28"
+    },
+    {
+      "problem": "Hình thoi ABCD có hai đường chéo AC = 16 cm, BD = 12 cm. Tính OA và OB.",
+      "steps": [
+        "Hai đường chéo cắt nhau tại trung điểm mỗi đường: OA = 16 : 2 = 8 (cm), OB = 12 : 2 = 6 (cm)."
+      ],
+      "expr": "16/2",
+      "answer": "8"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hình thoi là tứ giác có:",
+      "choices": [
+        "Bốn góc vuông",
+        "Bốn cạnh bằng nhau",
+        "Hai đường chéo bằng nhau",
+        "Hai cạnh đối song song"
+      ],
+      "answer": 1,
+      "explain": "Định nghĩa hình thoi.",
+      "wrong_explain": {
+        "0": "Đây là hình chữ nhật.",
+        "2": "Tính chất này không đúng với mọi hình thoi.",
+        "3": "Đây chỉ là điều kiện của hình thang."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong hình thoi, hai đường chéo:",
+      "choices": [
+        "Vuông góc với nhau",
+        "Bằng nhau",
+        "Song song với nhau",
+        "Chia hình thoi thành hai hình bình hành"
+      ],
+      "answer": 0,
+      "explain": "Hai đường chéo của hình thoi vuông góc với nhau.",
+      "wrong_explain": {
+        "1": "Hai đường chéo của hình thoi nói chung không bằng nhau.",
+        "2": "Hai đường chéo cắt nhau.",
+        "3": "Hai đường chéo chia hình thoi thành bốn tam giác vuông bằng nhau."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình thoi có cạnh 9 cm. Tính chu vi (cm).",
+      "expr": "4*9",
+      "answer": "36",
+      "explain": "Chu vi = 4·9 = 36 (cm)."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình thoi có chu vi 52 cm. Tính độ dài một cạnh (cm).",
+      "expr": "52/4",
+      "answer": "13",
+      "explain": "Cạnh = 52 : 4 = 13 (cm)."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình thoi ABCD có hai đường chéo cắt nhau tại O. Tính góc AOB (độ).",
+      "expr": "90",
+      "answer": "90",
+      "explain": "Hai đường chéo của hình thoi vuông góc nên góc AOB bằng 90°."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình thoi ABCD có Â = 60°. Tính B̂ (độ).",
+      "expr": "180-60",
+      "answer": "120",
+      "explain": "Hình thoi là hình bình hành nên Â + B̂ = 180°, B̂ = 120°."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình vuông có cạnh 8 cm. Tính chu vi (cm).",
+      "expr": "4*8",
+      "answer": "32",
+      "explain": "Chu vi = 4·8 = 32 (cm)."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình vuông ABCD có hai đường chéo cắt nhau tại O. Tính góc ABD (độ).",
+      "expr": "90/2",
+      "answer": "45",
+      "explain": "Đường chéo BD là phân giác của góc B nên góc ABD = 90° : 2 = 45°."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình thoi có hai đường chéo 10 cm và 24 cm. Tính diện tích (cm²) theo công thức S = (1/2)·d₁·d₂.",
+      "expr": "10*24/2",
+      "answer": "120",
+      "explain": "S = (1/2)·10·24 = 120 (cm²)."
+    },
+    {
+      "id": "n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hình thoi có cạnh 5 cm và một đường chéo dài 6 cm. Tính độ dài đường chéo còn lại (cm).",
+      "expr": "2*(25-9)/4",
+      "answer": "8",
+      "explain": "Nửa đường chéo biết là 3 cm; nửa đường chéo còn lại x có x² = 5² − 3² = 16 nên x = 4. Đường chéo còn lại dài 2·4 = 8 (cm)."
+    },
+    {
+      "id": "n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hình vuông có diện tích 50 cm². Tính độ dài đường chéo (cm).",
+      "expr": "2*50/10",
+      "answer": "10",
+      "explain": "Đường chéo d có d² = 2·diện tích = 100 nên d = 10 (cm)."
+    },
+    {
+      "id": "n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hình thoi có cạnh 13 cm và một đường chéo 10 cm. Tính diện tích hình thoi (cm²).",
+      "expr": "10*(2*(169-25)/12)/2",
+      "answer": "120",
+      "explain": "Nửa đường chéo kia: 13² − 5² = 144 nên bằng 12, đường chéo thứ hai 24. S = (1/2)·10·24 = 120 (cm²)."
+    }
+  ]
+}
