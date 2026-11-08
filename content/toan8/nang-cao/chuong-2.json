@@ -1,0 +1,138 @@
+{
+  "id": "toan8-nang-cao-2",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Bài tập nâng cao",
+  "chapter": "Chương II. Hằng đẳng thức đáng nhớ và ứng dụng",
+  "lesson": "Bài tập nâng cao · Chương II. Hằng đẳng thức đáng nhớ và ứng dụng",
+  "section": "Bài tập nâng cao",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các câu nâng cao của chương, gộp từ các bài đã học. Tên bài hiển thị trong ngoặc ở đầu mỗi câu. Hãy ôn lại lý thuyết và ví dụ của bài đó trước khi làm."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "b6-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 6] Tính nhanh 101² − 99².",
+      "expr": "(101-99)*(101+99)",
+      "answer": "400",
+      "explain": "Cách giải: dùng a² − b² = (a − b)(a + b) = 2·200 = 400."
+    },
+    {
+      "id": "b6-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 6] Tính nhanh 99² bằng hằng đẳng thức (100 − 1)².",
+      "expr": "100*100-2*100+1",
+      "answer": "9801",
+      "explain": "(100 − 1)² = 100² − 2·100·1 + 1² = 10 000 − 200 + 1 = 9 801."
+    },
+    {
+      "id": "b6-n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 6] Cho x + y = 7 và xy = 10. Tính x² + y².",
+      "expr": "7*7-2*10",
+      "answer": "29",
+      "explain": "Cách giải: x² + y² = (x + y)² − 2xy = 49 − 20 = 29."
+    },
+    {
+      "id": "b7-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 7] Tính nhanh 11³ bằng hằng đẳng thức (10 + 1)³.",
+      "expr": "1000+3*100+3*10+1",
+      "answer": "1331",
+      "explain": "(10 + 1)³ = 10³ + 3·10²·1 + 3·10·1² + 1³ = 1000 + 300 + 30 + 1 = 1331."
+    },
+    {
+      "id": "b7-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 7] Cho x − y = 2 và xy = 3. Tính x³ − y³.",
+      "expr": "2*2*2+3*3*2",
+      "answer": "26",
+      "explain": "Từ (x − y)³ = x³ − y³ − 3xy(x − y) suy ra x³ − y³ = (x − y)³ + 3xy(x − y) = 8 + 3·3·2 = 26."
+    },
+    {
+      "id": "b8-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 8] Tính nhanh 99³ + 1.",
+      "expr": "(99+1)*(99*99-99+1)",
+      "answer": "970300",
+      "explain": "a³ + b³ = (a + b)(a² − ab + b²) với a = 99, b = 1: 100·(9801 − 99 + 1) = 100·9703 = 970 300."
+    },
+    {
+      "id": "b8-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 8] Cho x + y = 5 và xy = 4. Tính x³ + y³.",
+      "expr": "5*5*5-3*4*5",
+      "answer": "65",
+      "explain": "x³ + y³ = (x + y)³ − 3xy(x + y) = 125 − 60 = 65."
+    },
+    {
+      "id": "b8-n03",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "[Bài 8] Phân tích x³ − 8 thành nhân tử:",
+      "choices": [
+        "(x − 2)(x² + 2x + 4)",
+        "(x − 2)(x² − 2x + 4)",
+        "(x + 2)(x² − 2x + 4)",
+        "(x − 2)³"
+      ],
+      "answer": 0,
+      "explain": "Dùng a³ − b³ = (a − b)(a² + ab + b²) với a = x, b = 2.",
+      "wrong_explain": {
+        "1": "Dấu của hạng tử giữa phải là +2x với hiệu hai lập phương.",
+        "2": "Đây là phân tích của x³ + 8.",
+        "3": "(x − 2)³ = x³ − 6x² + 12x − 8, không phải x³ − 8."
+      },
+      "concept": true
+    },
+    {
+      "id": "b9-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 9] Tính nhanh 85·15 + 15·15.",
+      "expr": "15*(85+15)",
+      "answer": "1500",
+      "explain": "Đặt nhân tử chung 15: 15·(85 + 15) = 15·100 = 1500."
+    },
+    {
+      "id": "b9-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 9] Tính nhanh 2024² − 2023².",
+      "expr": "2024+2023",
+      "answer": "4047",
+      "explain": "a² − b² = (a − b)(a + b) = 1·4047 = 4047."
+    },
+    {
+      "id": "b9-n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 9] Tìm tổng các nghiệm của phương trình x² − 7x + 10 = 0.",
+      "expr": "2+5",
+      "answer": "7",
+      "explain": "Phân tích: x² − 7x + 10 = (x − 2)(x − 5) = 0 nên x = 2 hoặc x = 5. Tổng hai nghiệm là 7."
+    },
+    {
+      "id": "b9-n04",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 9] Cho 2x + y = 7 và 2x − y = 3. Tính 4x² − y².",
+      "expr": "7*3",
+      "answer": "21",
+      "explain": "4x² − y² = (2x − y)(2x + y) = 3·7 = 21."
+    }
+  ]
+}

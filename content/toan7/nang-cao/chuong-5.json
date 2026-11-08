@@ -1,0 +1,64 @@
+{
+  "id": "toan7-nang-cao-5",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Bài tập nâng cao",
+  "chapter": "Chương V. Thu thập và biểu diễn dữ liệu",
+  "lesson": "Bài tập nâng cao · Chương V. Thu thập và biểu diễn dữ liệu",
+  "section": "Bài tập nâng cao",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các câu nâng cao của chương, gộp từ các bài đã học. Tên bài hiển thị trong ngoặc ở đầu mỗi câu. Hãy ôn lại lý thuyết và ví dụ của bài đó trước khi làm."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "b17-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 17] Khảo sát 80 người thấy 35% chọn phương án A. Có bao nhiêu người chọn A?",
+      "expr": "80*35/100",
+      "answer": "28",
+      "explain": "80·35 : 100 = 28 người."
+    },
+    {
+      "id": "b17-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 17] Một cuộc khảo sát có 150 phiếu, 12 phiếu không hợp lệ. Tỉ lệ phiếu hợp lệ là bao nhiêu phần trăm?",
+      "expr": "(150-12)/150*100",
+      "answer": "92",
+      "explain": "Số phiếu hợp lệ 138; tỉ lệ 138/150·100% = 92%."
+    },
+    {
+      "id": "b18-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 18] Trong biểu đồ hình quạt tròn, hình quạt chiếm 25% có góc ở tâm bao nhiêu độ?",
+      "expr": "25*360/100",
+      "answer": "90",
+      "explain": "Cả hình tròn 360° ứng 100% nên 25% ứng 25·360 : 100 = 90°."
+    },
+    {
+      "id": "b18-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 18] Biểu đồ hình quạt có ba phần 30%, 25%, 15% và phần còn lại. Phần còn lại chiếm bao nhiêu %?",
+      "expr": "100-30-25-15",
+      "answer": "30",
+      "explain": "Tổng các phần bằng 100% nên phần còn lại là 100 − 70 = 30%."
+    },
+    {
+      "id": "b19-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 19] Nhiệt độ lúc 6 h là 22 °C và lúc 10 h là 30 °C. Mỗi giờ nhiệt độ tăng trung bình bao nhiêu °C?",
+      "expr": "(30-22)/4",
+      "answer": "2",
+      "explain": "Từ 6 h đến 10 h là 4 giờ: (30 − 22) : 4 = 2 °C/giờ."
+    }
+  ]
+}

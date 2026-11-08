@@ -1,0 +1,75 @@
+{
+  "id": "toan7-nang-cao-8",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Bài tập nâng cao",
+  "chapter": "Chương VIII. Làm quen với biến cố và xác suất của biến cố",
+  "lesson": "Bài tập nâng cao · Chương VIII. Làm quen với biến cố và xác suất của biến cố",
+  "section": "Bài tập nâng cao",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các câu nâng cao của chương, gộp từ các bài đã học. Tên bài hiển thị trong ngoặc ở đầu mỗi câu. Hãy ôn lại lý thuyết và ví dụ của bài đó trước khi làm."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "b29-n01",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "[Bài 29] Khi gieo một con xúc xắc, biến cố \"số chấm lớn hơn 6\" là biến cố:",
+      "choices": [
+        "Chắc chắn",
+        "Ngẫu nhiên",
+        "Không thể",
+        "Luôn đúng"
+      ],
+      "answer": 2,
+      "explain": "Mặt xúc xắc có từ 1 đến 6 chấm nên biến cố này không thể xảy ra.",
+      "wrong_explain": {
+        "0": "Không có mặt nào có số chấm lớn hơn 6.",
+        "1": "Biến cố ngẫu nhiên là biến cố có thể xảy ra hoặc không.",
+        "3": "Biến cố này không bao giờ xảy ra."
+      },
+      "concept": true
+    },
+    {
+      "id": "b29-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 29] Chọn ngẫu nhiên một số từ 1 đến 30. Có bao nhiêu kết quả thuận lợi cho biến cố \"số được chọn là số nguyên tố\"?",
+      "expr": "10",
+      "answer": "10",
+      "explain": "Các số nguyên tố ≤ 30: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29 (10 số)."
+    },
+    {
+      "id": "b30-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 30] Hộp có 4 bi đỏ và 6 bi xanh. Lấy ngẫu nhiên một bi. Tính xác suất lấy được bi xanh.",
+      "expr": "6/10",
+      "answer": "0.6",
+      "explain": "P = 6/10 = 0,6."
+    },
+    {
+      "id": "b30-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 30] Rút ngẫu nhiên một thẻ trong 20 thẻ đánh số 1 đến 20. Tính xác suất số trên thẻ chia hết cho 3.",
+      "expr": "6/20",
+      "answer": "0.3",
+      "explain": "Các số 3, 6, 9, 12, 15, 18 (6 số) nên P = 6/20 = 0,3."
+    },
+    {
+      "id": "b30-n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 30] Hộp có 4 bi đỏ và 6 bi xanh. Cần thêm bao nhiêu bi đỏ để xác suất lấy được bi đỏ bằng 0,5?",
+      "expr": "10-8",
+      "answer": "2",
+      "explain": "Thêm x bi đỏ: (4 + x)/(10 + x) = 0,5 ⇒ 8 + 2x = 10 + x ⇒ x = 2."
+    }
+  ]
+}

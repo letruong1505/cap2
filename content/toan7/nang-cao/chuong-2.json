@@ -1,0 +1,111 @@
+{
+  "id": "toan7-nang-cao-2",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Bài tập nâng cao",
+  "chapter": "Chương II. Số thực",
+  "lesson": "Bài tập nâng cao · Chương II. Số thực",
+  "section": "Bài tập nâng cao",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các câu nâng cao của chương, gộp từ các bài đã học. Tên bài hiển thị trong ngoặc ở đầu mỗi câu. Hãy ôn lại lý thuyết và ví dụ của bài đó trước khi làm."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "b5-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 5] Viết phân số 7/40 dưới dạng số thập phân.",
+      "expr": "7/40",
+      "answer": "0.175",
+      "explain": "Mẫu 40 = 2³·5 chỉ có ước nguyên tố 2 và 5 nên viết được dưới dạng thập phân hữu hạn: 7/40 = 0,175."
+    },
+    {
+      "id": "b5-n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "[Bài 5] Trong các phân số 7/12, 9/40, 11/15, 5/18, phân số nào viết được dưới dạng số thập phân hữu hạn?",
+      "choices": [
+        "7/12",
+        "9/40",
+        "11/15",
+        "5/18"
+      ],
+      "answer": 1,
+      "explain": "Cách làm: rút gọn phân số rồi phân tích mẫu ra thừa số nguyên tố; nếu mẫu chỉ chứa 2 và 5 thì là số thập phân hữu hạn.",
+      "wrong_explain": {
+        "0": "Mẫu 12 = 2²·3 có ước nguyên tố 3.",
+        "2": "Mẫu 15 = 3·5 có ước nguyên tố 3.",
+        "3": "Mẫu 18 = 2·3² có ước nguyên tố 3."
+      },
+      "concept": true
+    },
+    {
+      "id": "b5-n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 5] Tính 0,(3) + 0,(6).",
+      "expr": "3/9+6/9",
+      "answer": "1",
+      "explain": "0,(3) = 3/9 và 0,(6) = 6/9 nên tổng là 9/9 = 1."
+    },
+    {
+      "id": "b6-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 6] Tính √169 − √81 + √(1/4).",
+      "expr": "13-9+1/2",
+      "answer": "4.5",
+      "explain": "√169 = 13, √81 = 9, √(1/4) = 1/2. Kết quả: 13 − 9 + 0,5 = 4,5."
+    },
+    {
+      "id": "b6-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 6] Tìm x > 0 biết x² = 2,25.",
+      "expr": "3/2",
+      "answer": "1.5",
+      "explain": "√2,25 = 1,5 nên x = 1,5."
+    },
+    {
+      "id": "b6-n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 6] Tìm x biết √x = 7.",
+      "expr": "7*7",
+      "answer": "49",
+      "explain": "Bình phương hai vế: x = 7² = 49."
+    },
+    {
+      "id": "b7-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 7] Tìm tổng các giá trị x thoả mãn |x − 2| = 3.",
+      "expr": "(2+3)+(2-3)",
+      "answer": "4",
+      "explain": "|x − 2| = 3 ⇒ x − 2 = 3 hoặc x − 2 = −3 ⇒ x = 5 hoặc x = −1. Tổng là 4."
+    },
+    {
+      "id": "b7-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 7] Tính |−5| + |3| − |−2|.",
+      "expr": "5+3-2",
+      "answer": "6",
+      "explain": "|−5| = 5, |3| = 3, |−2| = 2. Kết quả: 5 + 3 − 2 = 6."
+    },
+    {
+      "id": "b7-n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 7] Có bao nhiêu số nguyên x thoả mãn |x| < 3,5?",
+      "expr": "3*2+1",
+      "answer": "7",
+      "explain": "Các số nguyên từ −3 đến 3: 7 số."
+    }
+  ]
+}

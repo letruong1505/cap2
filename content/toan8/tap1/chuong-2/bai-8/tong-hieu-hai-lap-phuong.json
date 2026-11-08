@@ -143,44 +143,6 @@
       "expr": "10000+100+1",
       "answer": "10101",
       "explain": "100³ − 1 = (100 − 1)(100² + 100 + 1) nên thương là 10 101."
-    },
-    {
-      "id": "n01",
-      "level": "Nâng cao",
-      "type": "fill",
-      "stem": "Tính nhanh 99³ + 1.",
-      "expr": "(99+1)*(99*99-99+1)",
-      "answer": "970300",
-      "explain": "a³ + b³ = (a + b)(a² − ab + b²) với a = 99, b = 1: 100·(9801 − 99 + 1) = 100·9703 = 970 300."
-    },
-    {
-      "id": "n02",
-      "level": "Nâng cao",
-      "type": "fill",
-      "stem": "Cho x + y = 5 và xy = 4. Tính x³ + y³.",
-      "expr": "5*5*5-3*4*5",
-      "answer": "65",
-      "explain": "x³ + y³ = (x + y)³ − 3xy(x + y) = 125 − 60 = 65."
-    },
-    {
-      "id": "n03",
-      "level": "Nâng cao",
-      "type": "mcq",
-      "stem": "Phân tích x³ − 8 thành nhân tử:",
-      "choices": [
-        "(x − 2)(x² + 2x + 4)",
-        "(x − 2)(x² − 2x + 4)",
-        "(x + 2)(x² − 2x + 4)",
-        "(x − 2)³"
-      ],
-      "answer": 0,
-      "explain": "Dùng a³ − b³ = (a − b)(a² + ab + b²) với a = x, b = 2.",
-      "wrong_explain": {
-        "1": "Dấu của hạng tử giữa phải là +2x với hiệu hai lập phương.",
-        "2": "Đây là phân tích của x³ + 8.",
-        "3": "(x − 2)³ = x³ − 6x² + 12x − 8, không phải x³ − 8."
-      },
-      "concept": true
     }
   ]
 }

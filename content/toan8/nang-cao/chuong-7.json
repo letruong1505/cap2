@@ -1,0 +1,118 @@
+{
+  "id": "toan8-nang-cao-7",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Bài tập nâng cao",
+  "chapter": "Chương VII. Phương trình bậc nhất và hàm số bậc nhất",
+  "lesson": "Bài tập nâng cao · Chương VII. Phương trình bậc nhất và hàm số bậc nhất",
+  "section": "Bài tập nâng cao",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các câu nâng cao của chương, gộp từ các bài đã học. Tên bài hiển thị trong ngoặc ở đầu mỗi câu. Hãy ôn lại lý thuyết và ví dụ của bài đó trước khi làm."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "b25-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 25] Giải phương trình (x + 1)/2 − (x − 1)/3 = 1.",
+      "expr": "6-5",
+      "answer": "1",
+      "explain": "Quy đồng (nhân hai vế với 6): 3(x + 1) − 2(x − 1) = 6 ⇒ x + 5 = 6 ⇒ x = 1."
+    },
+    {
+      "id": "b25-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 25] Tìm m để phương trình 2x + m = 0 có nghiệm x = 3.",
+      "expr": "0-2*3",
+      "answer": "-6",
+      "explain": "Thay x = 3: 6 + m = 0 nên m = −6."
+    },
+    {
+      "id": "b25-n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 25] Tìm m để phương trình mx − 6 = 0 có nghiệm x = 2.",
+      "expr": "6/2",
+      "answer": "3",
+      "explain": "Thay x = 2: 2m − 6 = 0 nên m = 3."
+    },
+    {
+      "id": "b26-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 26] Xe máy đi trước với vận tốc 40 km/h. Sau 1 giờ, ô tô cùng xuất phát từ nơi đó đuổi theo với vận tốc 60 km/h. Sau bao nhiêu giờ (kể từ lúc ô tô xuất phát) ô tô đuổi kịp xe máy?",
+      "expr": "40*1/20",
+      "answer": "2",
+      "explain": "Gọi t là thời gian ô tô đi: 60t = 40(t + 1) ⇒ 20t = 40 ⇒ t = 2 (giờ)."
+    },
+    {
+      "id": "b26-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 26] Người A làm xong công việc trong 12 giờ, người B làm xong trong 6 giờ. Nếu hai người cùng làm thì sau bao nhiêu giờ xong?",
+      "expr": "12*6/18",
+      "answer": "4",
+      "explain": "Mỗi giờ A làm 1/12, B làm 1/6 công việc. Gọi t là thời gian: t(1/12 + 1/6) = 1 ⇒ t·(3/12) = 1 ⇒ t = 4 (giờ)."
+    },
+    {
+      "id": "b27-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 27] Cho f(x) = 2x² − 3x + 1. Tính f(−2).",
+      "expr": "2*4-3*(0-2)+1",
+      "answer": "15",
+      "explain": "f(−2) = 2·4 − 3·(−2) + 1 = 8 + 6 + 1 = 15."
+    },
+    {
+      "id": "b27-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 27] Cho hàm số f(x) = 3x − 2. Tìm x để f(x) = 10.",
+      "expr": "(10+2)/3",
+      "answer": "4",
+      "explain": "3x − 2 = 10 ⇒ 3x = 12 ⇒ x = 4."
+    },
+    {
+      "id": "b28-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 28] Đồ thị hàm số y = (m − 1)x + 3 đi qua A(2; 7). Tìm m.",
+      "expr": "(7-3)/2+1",
+      "answer": "3",
+      "explain": "Thay x = 2, y = 7: 7 = 2(m − 1) + 3 ⇒ 2(m − 1) = 4 ⇒ m − 1 = 2 ⇒ m = 3."
+    },
+    {
+      "id": "b28-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 28] Đồ thị hàm số y = 2x + 4 cùng hai trục toạ độ tạo thành một tam giác. Tính diện tích tam giác đó (đơn vị diện tích).",
+      "expr": "2*4/2",
+      "answer": "4",
+      "explain": "Giao với Oy: (0; 4); giao với Ox: x = −2. Tam giác vuông tại O có hai cạnh góc vuông 4 và 2: S = (1/2)·4·2 = 4."
+    },
+    {
+      "id": "b29-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 29] Đường thẳng đi qua A(1; 3) và song song với đường thẳng y = 2x − 5 có dạng y = 2x + b. Tìm b.",
+      "expr": "3-2*1",
+      "answer": "1",
+      "explain": "Song song nên cùng hệ số góc 2. Thay A(1; 3): 3 = 2 + b ⇒ b = 1."
+    },
+    {
+      "id": "b29-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 29] Đường thẳng đi qua A(2; 1) và B(4; 5) có phương trình y = 2x − 3. Tìm hoành độ giao điểm với trục hoành.",
+      "expr": "3/2",
+      "answer": "1.5",
+      "explain": "Hệ số góc a = (5 − 1)/(4 − 2) = 2; b = 1 − 2·2 = −3. Giao với Ox: 2x − 3 = 0 ⇒ x = 1,5."
+    }
+  ]
+}

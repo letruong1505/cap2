@@ -184,35 +184,6 @@
         "1": "Biến cố luôn xảy ra nên không phải biến cố không thể.",
         "2": "Ta biết trước tổng luôn ít nhất bằng 2 nên đây không phải biến cố ngẫu nhiên."
       }
-    },
-    {
-      "id": "n01",
-      "level": "Nâng cao",
-      "type": "mcq",
-      "stem": "Khi gieo một con xúc xắc, biến cố \"số chấm lớn hơn 6\" là biến cố:",
-      "choices": [
-        "Chắc chắn",
-        "Ngẫu nhiên",
-        "Không thể",
-        "Luôn đúng"
-      ],
-      "answer": 2,
-      "explain": "Mặt xúc xắc có từ 1 đến 6 chấm nên biến cố này không thể xảy ra.",
-      "wrong_explain": {
-        "0": "Không có mặt nào có số chấm lớn hơn 6.",
-        "1": "Biến cố ngẫu nhiên là biến cố có thể xảy ra hoặc không.",
-        "3": "Biến cố này không bao giờ xảy ra."
-      },
-      "concept": true
-    },
-    {
-      "id": "n02",
-      "level": "Nâng cao",
-      "type": "fill",
-      "stem": "Chọn ngẫu nhiên một số từ 1 đến 30. Có bao nhiêu kết quả thuận lợi cho biến cố \"số được chọn là số nguyên tố\"?",
-      "expr": "10",
-      "answer": "10",
-      "explain": "Các số nguyên tố ≤ 30: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29 (10 số)."
     }
   ]
 }

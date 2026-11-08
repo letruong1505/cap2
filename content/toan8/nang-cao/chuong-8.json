@@ -1,0 +1,82 @@
+{
+  "id": "toan8-nang-cao-8",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Bài tập nâng cao",
+  "chapter": "Chương VIII. Mở đầu về tính xác suất của biến cố",
+  "lesson": "Bài tập nâng cao · Chương VIII. Mở đầu về tính xác suất của biến cố",
+  "section": "Bài tập nâng cao",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các câu nâng cao của chương, gộp từ các bài đã học. Tên bài hiển thị trong ngoặc ở đầu mỗi câu. Hãy ôn lại lý thuyết và ví dụ của bài đó trước khi làm."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "b30-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 30] Gieo cùng lúc hai con xúc xắc cân đối. Có bao nhiêu kết quả có thể xảy ra?",
+      "expr": "6*6",
+      "answer": "36",
+      "explain": "Mỗi con có 6 mặt nên có 6·6 = 36 kết quả có thể (quy tắc nhân)."
+    },
+    {
+      "id": "b30-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 30] Gieo hai con xúc xắc. Có bao nhiêu kết quả thuận lợi cho biến cố \"Tổng số chấm bằng 8\"?",
+      "expr": "1+1+1+1+1",
+      "answer": "5",
+      "explain": "Các cặp (2; 6), (3; 5), (4; 4), (5; 3), (6; 2): có 5 kết quả."
+    },
+    {
+      "id": "b31-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 31] Tung một đồng xu ba lần liên tiếp. Tính xác suất để có đúng hai lần mặt ngửa (số thập phân).",
+      "expr": "3/8",
+      "answer": "0.375",
+      "explain": "Có 8 kết quả có thể; thuận lợi: NNS, NSN, SNN (3 kết quả). P = 3/8 = 0,375."
+    },
+    {
+      "id": "b31-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 31] Tung một đồng xu ba lần liên tiếp. Tính xác suất để có ít nhất một lần mặt ngửa.",
+      "expr": "7/8",
+      "answer": "0.875",
+      "explain": "Biến cố đối \"không có lần nào ngửa\" chỉ có 1 kết quả (SSS). Vậy P = 1 − 1/8 = 7/8 = 0,875."
+    },
+    {
+      "id": "b31-n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 31] Hộp có 5 bi đỏ và một số bi xanh. Xác suất lấy được bi đỏ là 0,25. Hộp có bao nhiêu bi xanh?",
+      "expr": "5*4-5",
+      "answer": "15",
+      "explain": "Tổng số bi: 5 : 0,25 = 20. Số bi xanh: 20 − 5 = 15."
+    },
+    {
+      "id": "b32-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 32] Một xạ thủ bắn 80 lần trúng đích 60 lần. Dự đoán trong 200 lần bắn người đó trúng khoảng bao nhiêu lần?",
+      "expr": "60/80*200",
+      "answer": "150",
+      "explain": "Xác suất thực nghiệm trúng: 60/80 = 0,75. Dự đoán: 0,75·200 = 150 lần."
+    },
+    {
+      "id": "b32-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 32] Tung xúc xắc 300 lần, mặt 6 chấm xuất hiện 45 lần. Tính xác suất thực nghiệm (số thập phân).",
+      "expr": "45/300",
+      "answer": "0.15",
+      "explain": "45/300 = 0,15."
+    }
+  ]
+}

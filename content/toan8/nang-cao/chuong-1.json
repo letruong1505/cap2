@@ -1,0 +1,136 @@
+{
+  "id": "toan8-nang-cao-1",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Bài tập nâng cao",
+  "chapter": "Chương I. Đa thức",
+  "lesson": "Bài tập nâng cao · Chương I. Đa thức",
+  "section": "Bài tập nâng cao",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các câu nâng cao của chương, gộp từ các bài đã học. Tên bài hiển thị trong ngoặc ở đầu mỗi câu. Hãy ôn lại lý thuyết và ví dụ của bài đó trước khi làm."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "b1-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 1] Cho A = (−2x²y)·(3xy²). Tính giá trị của A tại x = 1, y = −1.",
+      "expr": "(0-6)*1*(0-1)*(0-1)*(0-1)",
+      "answer": "6",
+      "explain": "Cách giải: thu gọn trước rồi thay số. A = −6x³y³. Với x = 1, y = −1: A = −6·1³·(−1)³ = −6·(−1) = 6."
+    },
+    {
+      "id": "b1-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 1] Hai đơn thức 5x^(2m)·y³ và 7x⁶y³ đồng dạng. Tìm m.",
+      "expr": "6/2",
+      "answer": "3",
+      "explain": "Hai đơn thức đồng dạng khi có cùng phần biến, nên 2m = 6 và m = 3."
+    },
+    {
+      "id": "b1-n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 1] Tìm bậc của đơn thức (3x²y)²·(−xy³) sau khi thu gọn.",
+      "expr": "(2*2+1)+(2*1+3)",
+      "answer": "10",
+      "explain": "(3x²y)² = 9x⁴y²; nhân với (−xy³) được −9x⁵y⁵. Bậc là 5 + 5 = 10."
+    },
+    {
+      "id": "b2-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 2] Cho x + y = 5 và xy = 6. Tính giá trị của đa thức x²y + xy².",
+      "expr": "6*5",
+      "answer": "30",
+      "explain": "Cách giải: đặt nhân tử chung. x²y + xy² = xy(x + y) = 6·5 = 30."
+    },
+    {
+      "id": "b2-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 2] Cho x − y = 3. Tính giá trị của đa thức x(x − y) + y(y − x).",
+      "expr": "3*3",
+      "answer": "9",
+      "explain": "Cách giải: y(y − x) = −y(x − y). Do đó biểu thức = x(x − y) − y(x − y) = (x − y)(x − y) = 3·3 = 9."
+    },
+    {
+      "id": "b3-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 3] Tìm đa thức M sao cho M + (x² − 2x) = 3x² + x. Hệ số của x trong M bằng bao nhiêu?",
+      "expr": "1+2",
+      "answer": "3",
+      "explain": "M = (3x² + x) − (x² − 2x) = 2x² + 3x nên hệ số của x là 3 (tức 1 + 2)."
+    },
+    {
+      "id": "b3-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 3] Cho A = x² − 2x + 3, B = 2x² + x − 1, C = −x² + 4x + 5. Tìm hệ số của x trong A − B + C.",
+      "expr": "(0-2)-1+4",
+      "answer": "1",
+      "explain": "Hệ số của x: −2 − 1 + 4 = 1."
+    },
+    {
+      "id": "b3-n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 3] Cho A + B = 5x² − 2 và A − B = x² + 4x − 6. Tìm hệ số của x² trong A.",
+      "expr": "(5+1)/2",
+      "answer": "3",
+      "explain": "Cộng hai đẳng thức: 2A = 6x² + 4x − 8 nên A = 3x² + 2x − 4. Hệ số của x² là 3."
+    },
+    {
+      "id": "b4-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 4] Tìm hệ số của x³ trong tích (2x² + x − 1)(x² − 3x + 2).",
+      "expr": "2*(0-3)+1*1",
+      "answer": "-5",
+      "explain": "Chỉ cần các cặp hạng tử cho x³: 2x²·(−3x) = −6x³ và x·x² = x³. Hệ số: −6 + 1 = −5."
+    },
+    {
+      "id": "b4-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 4] Tìm x biết (x + 3)(x − 2) − x(x + 4) = 6.",
+      "expr": "(0-12)/3",
+      "answer": "-4",
+      "explain": "Khai triển: x² + x − 6 − x² − 4x = −3x − 6 = 6, suy ra −3x = 12 và x = −4."
+    },
+    {
+      "id": "b4-n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 4] Tính giá trị của (x − 2)(x² + 2x + 4) tại x = −1.",
+      "expr": "(0-1)*(0-1)*(0-1)-8",
+      "answer": "-9",
+      "explain": "Nhận ra hằng đẳng thức: (x − 2)(x² + 2x + 4) = x³ − 8. Với x = −1: −1 − 8 = −9."
+    },
+    {
+      "id": "b5-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 5] Thực hiện phép chia (6x³y² − 9x²y³ + 3x²y²) : (3x²y²) rồi tính giá trị của thương tại x = 2, y = 1.",
+      "expr": "2*2-3*1+1",
+      "answer": "2",
+      "explain": "Chia từng hạng tử: 2x − 3y + 1. Với x = 2, y = 1: 4 − 3 + 1 = 2."
+    },
+    {
+      "id": "b5-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 5] Tìm số tự nhiên n nhỏ nhất để đơn thức 5x⁴yⁿ chia hết cho đơn thức 2x²y³.",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Đơn thức A chia hết cho B khi mỗi biến của B có mặt trong A với số mũ không nhỏ hơn. Cần n ≥ 3 nên n nhỏ nhất là 3."
+    }
+  ]
+}

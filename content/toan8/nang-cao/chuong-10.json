@@ -1,0 +1,55 @@
+{
+  "id": "toan8-nang-cao-10",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Bài tập nâng cao",
+  "chapter": "Chương X. Một số hình khối trong thực tiễn",
+  "lesson": "Bài tập nâng cao · Chương X. Một số hình khối trong thực tiễn",
+  "section": "Bài tập nâng cao",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các câu nâng cao của chương, gộp từ các bài đã học. Tên bài hiển thị trong ngoặc ở đầu mỗi câu. Hãy ôn lại lý thuyết và ví dụ của bài đó trước khi làm."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "b38-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 38] Hình chóp tam giác đều có diện tích xung quanh 90 cm² và trung đoạn 6 cm. Tính chu vi đáy (cm).",
+      "expr": "90/6*2",
+      "answer": "30",
+      "explain": "Sxq = p·d nên p = 90 : 6 = 15 (nửa chu vi). Chu vi đáy là 2·15 = 30 cm."
+    },
+    {
+      "id": "b38-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 38] Hình chóp tam giác đều có thể tích 40 cm³ và chiều cao 6 cm. Tính diện tích đáy (cm²).",
+      "expr": "40*3/6",
+      "answer": "20",
+      "explain": "V = (1/3)·S·h ⇒ S = 3V : h = 120 : 6 = 20 (cm²)."
+    },
+    {
+      "id": "b39-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 39] Hình chóp tứ giác đều có Sxq = 240 cm², cạnh đáy 10 cm. Tính trung đoạn (cm).",
+      "expr": "240/20",
+      "answer": "12",
+      "explain": "Sxq = p·d với p = 2·10 = 20 nên d = 240 : 20 = 12 (cm)."
+    },
+    {
+      "id": "b39-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 39] Hình chóp tứ giác đều có cạnh đáy 10 cm, cạnh bên 13 cm. Tính diện tích xung quanh (cm²).",
+      "expr": "2*10*((13*13-5*5)/12)",
+      "answer": "240",
+      "explain": "Mặt bên là tam giác cân có cạnh bên 13, nửa đáy 5 nên trung đoạn d = √(13² − 5²) = 12. Sxq = p·d = 20·12 = 240 (cm²)."
+    }
+  ]
+}

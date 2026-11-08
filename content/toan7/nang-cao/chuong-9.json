@@ -1,0 +1,153 @@
+{
+  "id": "toan7-nang-cao-9",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Bài tập nâng cao",
+  "chapter": "Chương IX. Quan hệ giữa các yếu tố trong một tam giác",
+  "lesson": "Bài tập nâng cao · Chương IX. Quan hệ giữa các yếu tố trong một tam giác",
+  "section": "Bài tập nâng cao",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các câu nâng cao của chương, gộp từ các bài đã học. Tên bài hiển thị trong ngoặc ở đầu mỗi câu. Hãy ôn lại lý thuyết và ví dụ của bài đó trước khi làm."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "b31-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 31] Tam giác ABC có Â = 70°, B̂ = 50°. Tính Ĉ (độ).",
+      "expr": "180-70-50",
+      "answer": "60",
+      "explain": "Ĉ = 60°. Trong tam giác, cạnh đối diện góc lớn nhất là cạnh lớn nhất, ở đây là BC (đối diện Â = 70°)."
+    },
+    {
+      "id": "b31-n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "[Bài 31] Tam giác ABC có Â = 70°, B̂ = 50°, Ĉ = 60°. Sắp xếp độ dài các cạnh theo thứ tự tăng dần:",
+      "choices": [
+        "BC < AB < AC",
+        "AC < AB < BC",
+        "AB < AC < BC",
+        "AB < BC < AC"
+      ],
+      "answer": 1,
+      "explain": "Cạnh càng đối diện góc lớn thì càng dài: AC (đối diện 50°) < AB (đối diện 60°) < BC (đối diện 70°).",
+      "wrong_explain": {
+        "0": "Cạnh đối diện góc lớn nhất (BC đối diện Â) phải dài nhất.",
+        "2": "AB đối diện Ĉ = 60° nên dài hơn AC (đối diện B̂ = 50°).",
+        "3": "BC đối diện góc lớn nhất nên phải dài nhất."
+      },
+      "concept": true
+    },
+    {
+      "id": "b32-n01",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "[Bài 32] Từ điểm A ngoài đường thẳng d, trong các đoạn nối A với các điểm của d, đoạn ngắn nhất là:",
+      "choices": [
+        "Đoạn nối A với trung điểm của d",
+        "Đoạn xiên tạo góc 45° với d",
+        "Đoạn vuông góc kẻ từ A đến d",
+        "Có nhiều đoạn bằng nhau và ngắn nhất"
+      ],
+      "answer": 2,
+      "explain": "Đường vuông góc ngắn hơn mọi đường xiên.",
+      "wrong_explain": {
+        "0": "d là đường thẳng, không có trung điểm.",
+        "1": "Đường xiên luôn dài hơn đường vuông góc.",
+        "3": "Chỉ có một đoạn vuông góc."
+      },
+      "concept": true
+    },
+    {
+      "id": "b32-n02",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "[Bài 32] Từ A kẻ AH ⊥ d, AB và AC là hai đường xiên với HB = 2, HC = 6. Khẳng định đúng là:",
+      "choices": [
+        "AB > AC",
+        "AB < AC",
+        "AB = AC",
+        "Không so sánh được"
+      ],
+      "answer": 1,
+      "explain": "Đường xiên có hình chiếu lớn hơn thì lớn hơn: HC > HB nên AC > AB.",
+      "wrong_explain": {
+        "0": "Hình chiếu càng dài thì đường xiên càng dài.",
+        "2": "Hai hình chiếu không bằng nhau.",
+        "3": "Có thể so sánh qua hình chiếu."
+      },
+      "concept": true
+    },
+    {
+      "id": "b33-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 33] Tam giác có hai cạnh 3 cm và 7 cm. Có bao nhiêu độ dài nguyên (cm) của cạnh thứ ba?",
+      "expr": "10-4-1",
+      "answer": "5",
+      "explain": "Bất đẳng thức tam giác: 7 − 3 < c < 7 + 3 hay 4 < c < 10. Các giá trị nguyên: 5, 6, 7, 8, 9 (5 giá trị)."
+    },
+    {
+      "id": "b33-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 33] Tam giác cân có hai cạnh 4 cm và 9 cm. Tính chu vi (cm).",
+      "expr": "4+9+9",
+      "answer": "22",
+      "explain": "Nếu cạnh thứ ba là 4 thì 4 + 4 < 9, không lập được tam giác. Vậy cạnh thứ ba là 9 và chu vi 4 + 9 + 9 = 22 (cm)."
+    },
+    {
+      "id": "b34-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 34] G là trọng tâm tam giác ABC, AM là trung tuyến, AM = 9 cm. Tính AG (cm).",
+      "expr": "9*2/3",
+      "answer": "6",
+      "explain": "Trọng tâm cách đỉnh bằng 2/3 độ dài đường trung tuyến: AG = 9·2/3 = 6."
+    },
+    {
+      "id": "b34-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 34] G là trọng tâm tam giác ABC, M là trung điểm BC và GM = 4 cm. Tính AM (cm).",
+      "expr": "4*3",
+      "answer": "12",
+      "explain": "GM = AM/3 nên AM = 3·GM = 12 (cm)."
+    },
+    {
+      "id": "b35-n01",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "[Bài 35] Giao điểm ba đường trung trực của một tam giác:",
+      "choices": [
+        "Cách đều ba cạnh",
+        "Luôn nằm trong tam giác",
+        "Cách đều ba đỉnh của tam giác",
+        "Là trọng tâm tam giác"
+      ],
+      "answer": 2,
+      "explain": "Mỗi điểm trên trung trực cách đều hai đầu đoạn thẳng nên giao điểm cách đều ba đỉnh.",
+      "wrong_explain": {
+        "0": "Đó là giao điểm ba đường phân giác.",
+        "1": "Với tam giác tù nó nằm ngoài.",
+        "3": "Chỉ trùng với trọng tâm khi tam giác đều."
+      },
+      "concept": true
+    },
+    {
+      "id": "b35-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 35] Tam giác ABC có Â = 50°, hai đường cao BD và CE cắt nhau tại H. Tính góc BHC (độ).",
+      "expr": "180-50",
+      "answer": "130",
+      "explain": "Tứ giác ADHE có hai góc vuông tại D và E nên góc DHE = 180° − 50° = 130°; góc BHC đối đỉnh với góc DHE nên bằng 130°."
+    }
+  ]
+}
