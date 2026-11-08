@@ -10,8 +10,6 @@ import re
 from xml.sax.saxutils import escape
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-CONTENT = os.path.join(ROOT, 'content', 'khtn7')
-FIG_DIR = os.path.join(CONTENT, 'figures')
 
 INK = '#1d2733'
 GREY = '#9aa5b1'
@@ -712,11 +710,16 @@ FIGURES = {
 
 
 def write_figures():
-    os.makedirs(FIG_DIR, exist_ok=True)
+    # KHTN đã tách thành ly7, hoa7, sinh7: mỗi hình được ghi vào thư mục figures của môn đang dùng nó.
+    dests = [os.path.join(ROOT, 'content', d, 'figures') for d in ('ly7', 'hoa7', 'sinh7')]
+    count = 0
     for name, fn in FIGURES.items():
-        with open(os.path.join(FIG_DIR, name), 'w', encoding='utf8') as f:
-            f.write(fn())
-    print('Đã ghi %d hình vào %s' % (len(FIGURES), os.path.relpath(FIG_DIR, ROOT)))
+        for d in dests:
+            if os.path.exists(os.path.join(d, name)):
+                with open(os.path.join(d, name), 'w', encoding='utf8') as f:
+                    f.write(fn())
+                count += 1
+    print('Đã ghi lại %d hình' % count)
 
 
 if __name__ == '__main__':

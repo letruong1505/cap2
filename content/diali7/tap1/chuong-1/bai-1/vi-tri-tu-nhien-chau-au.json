@@ -1,0 +1,150 @@
+{
+  "id": "bai-1",
+  "grade": 7,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 7",
+  "chapter": "Chương 1. Châu Âu",
+  "lesson": "Bài 1. Vị trí địa lí, đặc điểm tự nhiên châu Âu",
+  "section": "",
+  "bookPage": 197,
+  "requirements": [
+    "Trình bày được vị trí địa lí, hình dạng và kích thước châu Âu.",
+    "Phân tích được đặc điểm địa hình, khí hậu; xác định được các sông lớn (Rai-nơ, Đa-nuýp, Vôn-ga)."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Châu Âu nằm ở phía tây lục địa Á – Âu, ngăn cách với châu Á bởi dãy U-ran. Phần lớn lãnh thổ nằm giữa vĩ tuyến 36°B và 71°B, chủ yếu thuộc đới ôn hoà của bán cầu Bắc. Phía bắc giáp Bắc Băng Dương, phía tây giáp Đại Tây Dương, phía nam giáp Địa Trung Hải và Biển Đen."
+    },
+    {
+      "type": "text",
+      "content": "Hình dạng: đường bờ biển bị cắt xẻ mạnh, tạo nhiều bán đảo, biển, vũng vịnh. Kích thước: diện tích trên 10 triệu km², chỉ lớn hơn châu Đại Dương."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/dl-dien-tich-chau-luc.svg",
+      "caption": "Diện tích một số châu lục"
+    },
+    {
+      "type": "text",
+      "content": "Địa hình gồm đồng bằng (chiếm 2/3 diện tích) và miền núi. Núi già ở phía bắc và trung tâm (Xcan-đi-na-vi, U-ran); núi trẻ ở phía nam (An-pơ, Các-pát, Ban-căng). Đồng bằng lớn: Bắc Âu, Đông Âu, hạ lưu và trung lưu Đa-nuýp."
+    },
+    {
+      "type": "text",
+      "content": "Khí hậu phân hoá từ bắc xuống nam, từ tây sang đông: cực và cận cực (lạnh, mưa dưới 500 mm); ôn đới hải dương (ôn hoà, mưa quanh năm 800 – 1 000 mm trở lên); ôn đới lục địa (đông khô lạnh, hạ nóng ẩm); cận nhiệt địa trung hải (hạ khô nóng, đông ấm mưa nhiều)."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dãy núi nào ngăn cách châu Âu và châu Á?",
+      "choices": [
+        "An-pơ",
+        "U-ran",
+        "Các-pát",
+        "Xcan-đi-na-vi"
+      ],
+      "answer": 1,
+      "explain": "Dãy U-ran là ranh giới tự nhiên giữa châu Âu và châu Á.",
+      "wrong_explain": {
+        "0": "Dãy An-pơ ở nam châu Âu.",
+        "2": "Dãy này nằm trong châu Âu.",
+        "3": "Dãy này ở phía bắc châu Âu."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phần lớn lãnh thổ châu Âu nằm trong đới khí hậu nào?",
+      "choices": [
+        "Đới ôn hoà",
+        "Đới nóng",
+        "Đới lạnh",
+        "Đới xích đạo"
+      ],
+      "answer": 0,
+      "explain": "Từ 36°B đến 71°B, chủ yếu thuộc đới ôn hoà.",
+      "wrong_explain": {
+        "1": "Châu Âu nằm xa Xích đạo.",
+        "2": "Chỉ phần nhỏ phía bắc thuộc đới lạnh.",
+        "3": "Châu Âu không nằm ở đó."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đồng bằng chiếm 2/3 diện tích châu Âu. Phần diện tích còn lại (miền núi, cao nguyên...) chiếm bao nhiêu phần trăm gần đúng? Cho 2/3 ≈ 66,7%. (nhập số, làm tròn 1 chữ số thập phân)",
+      "expr": "100 - 66.7",
+      "answer": "33.3",
+      "explain": "100% − 66,7% = 33,3%."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khí hậu ôn đới hải dương ở châu Âu có đặc điểm:",
+      "choices": [
+        "Mùa đông khô lạnh, mùa hạ nóng ẩm",
+        "Hạ khô nóng, đông ấm mưa nhiều",
+        "Mùa đông ấm, mùa hạ mát, mưa quanh năm",
+        "Quanh năm giá lạnh"
+      ],
+      "answer": 2,
+      "explain": "Gió tây ôn đới từ Đại Tây Dương mang hơi ẩm vào.",
+      "wrong_explain": {
+        "0": "Đây là ôn đới lục địa.",
+        "1": "Đây là cận nhiệt địa trung hải.",
+        "3": "Đây là khí hậu cực và cận cực."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Kiểu khí hậu \"hạ khô nóng, đông ấm và mưa nhiều\" là:",
+      "choices": [
+        "Ôn đới hải dương",
+        "Cận nhiệt địa trung hải",
+        "Ôn đới lục địa",
+        "Cực và cận cực"
+      ],
+      "answer": 1,
+      "explain": "Kiểu khí hậu này có ở ven Địa Trung Hải.",
+      "wrong_explain": {
+        "0": "Mưa quanh năm, hạ mát.",
+        "2": "Đông khô lạnh.",
+        "3": "Quanh năm giá lạnh."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dãy núi trẻ ở phía nam châu Âu là:",
+      "choices": [
+        "An-pơ",
+        "U-ran",
+        "Xcan-đi-na-vi",
+        "Cô-ra"
+      ],
+      "answer": 0,
+      "explain": "An-pơ, Các-pát, Ban-căng là núi trẻ ở phía nam.",
+      "wrong_explain": {
+        "1": "Đây là núi già.",
+        "2": "Đây là núi già.",
+        "3": "Đây không phải núi châu Âu."
+      }
+    }
+  ]
+}

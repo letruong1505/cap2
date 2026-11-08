@@ -103,6 +103,16 @@ button.link {
 }
 .grade:hover:not(:disabled) { background: #1f4e79; color: #fff; }
 .grade:disabled { border-style: dashed; border-color: #cfd8e3; color: #8a97a8; cursor: default; }
+#subject-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.subject-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 96px;
+  padding: 18px 16px;
+  text-align: center;
+  line-height: 1.3;
+}
 .grade small { display: block; font-size: 13px; font-weight: 400; margin-top: 4px; }
 .lbl { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #5b6b7d; margin-bottom: 6px; }
 .info-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 22px; }

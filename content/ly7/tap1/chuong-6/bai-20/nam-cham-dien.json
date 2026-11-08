@@ -1,0 +1,197 @@
+{
+  "id": "bai-20",
+  "grade": 7,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 7",
+  "chapter": "Chương VI. Từ",
+  "lesson": "Bài 20. Chế tạo nam châm điện đơn giản",
+  "section": "",
+  "bookPage": 96,
+  "requirements": [
+    "Chế tạo được nam châm điện đơn giản và làm thay đổi được từ trường của nó bằng thay đổi dòng điện."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dòng điện chạy trong dây dẫn thẳng hoặc trong cuộn dây đều sinh ra từ trường. Người ta ứng dụng tính chất này để chế tạo nam châm điện."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/khtn-nam-cham-dien.svg",
+      "caption": "Cấu tạo nam châm điện: ống dây có lõi sắt non."
+    },
+    {
+      "type": "text",
+      "content": "Cấu tạo nam châm điện: một ống dây dẫn quấn quanh lõi là thỏi sắt non; hai đầu cuộn dây được nối với hai cực nguồn điện qua khoá K. Khi đóng khoá K, dòng điện chạy trong ống dây và ống dây trở thành nam châm điện."
+    },
+    {
+      "type": "text",
+      "content": "Có thể làm thay đổi từ trường của nam châm điện bằng cách thay đổi cường độ dòng điện (ví dụ tăng số pin) và đổi chiều dòng điện (đổi cực nguồn điện) để đổi chiều từ trường."
+    },
+    {
+      "type": "text",
+      "content": "Nam châm điện được dùng trong cần cẩu dọn rác kim loại, động cơ điện và máy phát điện."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một cuộn dây có 20 vòng, mỗi vòng dây dài 15 cm. Tổng chiều dài dây quấn cuộn là bao nhiêu cm?",
+      "expr": "20 * 15",
+      "steps": [
+        "Tổng chiều dài dây = số vòng × chiều dài mỗi vòng.",
+        "20 × 15 = 300 cm."
+      ],
+      "answer": "300"
+    },
+    {
+      "problem": "Hai pin 1,5 V mắc nối tiếp để cấp điện cho nam châm điện. Điện áp tổng của hai pin là bao nhiêu V?",
+      "expr": "2 * 1.5",
+      "steps": [
+        "Pin mắc nối tiếp thì điện áp cộng lại.",
+        "2 × 1,5 = 3 V."
+      ],
+      "answer": "3"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nam châm điện được tạo ra bằng cách:",
+      "choices": [
+        "Cho dòng điện chạy qua ống dây có lõi sắt",
+        "Cọ xát nam châm",
+        "Đun nóng nam châm",
+        "Nhúng nam châm vào nước"
+      ],
+      "answer": 0,
+      "explain": "Khi dòng điện chạy qua ống dây có lõi sắt, ống dây trở thành nam châm điện.",
+      "wrong_explain": {
+        "1": "Cọ xát không tạo ra nam châm điện.",
+        "2": "Đun nóng làm nam châm yếu đi, không tạo nam châm điện.",
+        "3": "Nhúng nước không tạo nam châm điện."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Lõi của nam châm điện trong bài thường là:",
+      "choices": [
+        "Thỏi sắt non",
+        "Nhựa",
+        "Gỗ",
+        "Đồng"
+      ],
+      "answer": 0,
+      "explain": "Lõi là thỏi sắt non được luồn vào trong lòng ống dây.",
+      "wrong_explain": {
+        "1": "Nhựa không có tính chất từ, không dùng làm lõi.",
+        "2": "Gỗ không có tính chất từ, không dùng làm lõi.",
+        "3": "Đồng không có tính chất từ như sắt non."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Cách đơn giản để thay đổi từ trường của nam châm điện là:",
+      "choices": [
+        "Thay đổi cường độ dòng điện",
+        "Sơn ống dây",
+        "Đốt ống dây",
+        "Cắt ống dây"
+      ],
+      "answer": 0,
+      "explain": "Thay đổi cường độ dòng điện (ví dụ tăng số pin) sẽ làm thay đổi từ trường.",
+      "wrong_explain": {
+        "1": "Sơn ống dây không làm thay đổi từ trường.",
+        "2": "Đốt ống dây làm hỏng nam châm điện, không phải cách điều chỉnh.",
+        "3": "Cắt ống dây làm mạch hở, không điều chỉnh được từ trường."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi ngắt công tắc (không còn dòng điện), nam châm điện:",
+      "choices": [
+        "Mất từ tính",
+        "Mạnh hơn",
+        "Đổi cực",
+        "Vẫn hút sắt mạnh như cũ"
+      ],
+      "answer": 0,
+      "explain": "Khi không có dòng điện, ống dây không còn là nam châm điện.",
+      "wrong_explain": {
+        "1": "Ngắt điện làm từ trường mất đi, không mạnh hơn.",
+        "2": "Ngắt điện không đổi cực.",
+        "3": "Khi ngắt điện từ trường mất, không hút sắt như cũ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi đổi cực của nguồn điện, chiều từ trường của nam châm điện:",
+      "choices": [
+        "Thay đổi",
+        "Không đổi",
+        "Mất đi",
+        "Tăng gấp đôi"
+      ],
+      "answer": 0,
+      "explain": "Đổi chiều dòng điện làm đổi chiều từ trường của nam châm điện.",
+      "wrong_explain": {
+        "1": "Đổi cực nguồn làm đổi chiều dòng điện nên từ trường cũng đổi.",
+        "2": "Từ trường không mất đi khi chỉ đổi cực nguồn.",
+        "3": "Đổi cực không làm tăng gấp đôi từ trường."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nam châm điện được ứng dụng trong:",
+      "choices": [
+        "Cần cẩu dọn rác kim loại",
+        "Bút chì",
+        "Ống kính",
+        "Bình hoa"
+      ],
+      "answer": 0,
+      "explain": "Cần cẩu dọn rác dùng nam châm điện có lực từ rất mạnh.",
+      "wrong_explain": {
+        "1": "Bút chì không dùng nam châm điện.",
+        "2": "Ống kính hoạt động dựa trên quang học.",
+        "3": "Bình hoa không có liên quan đến nam châm điện."
+      },
+      "concept": true
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một cuộn dây có 20 vòng, mỗi vòng dài 15 cm. Tổng chiều dài dây quấn là bao nhiêu cm?",
+      "expr": "20 * 15",
+      "answer": "300",
+      "explain": "20 × 15 = 300 cm."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai pin 1,5 V mắc nối tiếp cấp điện cho nam châm điện. Điện áp tổng là bao nhiêu V?",
+      "expr": "2 * 1.5",
+      "answer": "3",
+      "explain": "2 × 1,5 = 3 V."
+    }
+  ]
+}

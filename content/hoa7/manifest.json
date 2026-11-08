@@ -1,0 +1,76 @@
+{
+  "product": "vung-bai",
+  "grade": 7,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "publisher": "NXB Giáo dục Việt Nam",
+  "version": "0.1.0-dev",
+  "books": [
+    {
+      "id": "tap1",
+      "title": "Hoá học 7",
+      "chapters": [
+        {
+          "id": "mo-dau",
+          "title": "Mở đầu",
+          "lessons": [
+            {
+              "id": "bai-1",
+              "title": "Bài 1. Phương pháp và kĩ năng học tập môn Khoa học tự nhiên",
+              "bookPage": 6,
+              "file": "tap1/mo-dau/bai-1/phuong-phap-hoc-tap.json"
+            }
+          ]
+        },
+        {
+          "id": "chuong-1",
+          "title": "Chương I. Nguyên tử. Sơ lược về bảng tuần hoàn các nguyên tố hoá học",
+          "lessons": [
+            {
+              "id": "bai-2",
+              "title": "Bài 2. Nguyên tử",
+              "bookPage": 14,
+              "file": "tap1/chuong-1/bai-2/nguyen-tu.json"
+            },
+            {
+              "id": "bai-3",
+              "title": "Bài 3. Nguyên tố hoá học",
+              "bookPage": 19,
+              "file": "tap1/chuong-1/bai-3/nguyen-to-hoa-hoc.json"
+            },
+            {
+              "id": "bai-4",
+              "title": "Bài 4. Sơ lược về bảng tuần hoàn các nguyên tố hoá học",
+              "bookPage": 23,
+              "file": "tap1/chuong-1/bai-4/so-luoc-bang-tuan-hoan.json"
+            }
+          ]
+        },
+        {
+          "id": "chuong-2",
+          "title": "Chương II. Phân tử • Liên kết hoá học",
+          "lessons": [
+            {
+              "id": "bai-5",
+              "title": "Bài 5. Phân tử – Đơn chất – Hợp chất",
+              "bookPage": 32,
+              "file": "tap1/chuong-2/bai-5/phan-tu-don-chat-hop-chat.json"
+            },
+            {
+              "id": "bai-6",
+              "title": "Bài 6. Giới thiệu về liên kết hoá học",
+              "bookPage": 36,
+              "file": "tap1/chuong-2/bai-6/gioi-thieu-lien-ket-hoa-hoc.json"
+            },
+            {
+              "id": "bai-7",
+              "title": "Bài 7. Hoá trị và công thức hoá học",
+              "bookPage": 40,
+              "file": "tap1/chuong-2/bai-7/hoa-tri-cong-thuc-hoa-hoc.json"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

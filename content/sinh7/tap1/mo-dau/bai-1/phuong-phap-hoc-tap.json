@@ -1,0 +1,213 @@
+{
+  "id": "bai-1",
+  "grade": 7,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 7",
+  "chapter": "Mở đầu",
+  "lesson": "Bài 1. Phương pháp và kĩ năng học tập môn Khoa học tự nhiên",
+  "section": "",
+  "bookPage": 6,
+  "requirements": [
+    "Trình bày được phương pháp tìm hiểu tự nhiên.",
+    "Thực hiện được các kĩ năng tiến trình: quan sát, phân loại, liên kết, đo, dự báo.",
+    "Sử dụng được một số dụng cụ đo trong môn Khoa học tự nhiên 7.",
+    "Làm được báo cáo, thuyết trình."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phương pháp tìm hiểu tự nhiên là cách tìm hiểu sự vật, hiện tượng trong tự nhiên bằng các dẫn chứng khoa học. Phương pháp gồm 5 bước: đề xuất vấn đề, đưa ra dự đoán khoa học, lập kế hoạch kiểm tra dự đoán, thực hiện kế hoạch, và viết báo cáo, thảo luận, trình bày báo cáo."
+    },
+    {
+      "type": "text",
+      "content": "Nếu kết quả thí nghiệm không phù hợp với dự đoán, cần quay lại bước đưa ra dự đoán."
+    },
+    {
+      "type": "text",
+      "content": "Kĩ năng quan sát là dùng một hoặc nhiều giác quan để thu thập thông tin về đặc điểm, kích thước, hình dạng của sự vật. Có thể dùng thước đo, kính hiển vi để quan sát chính xác hơn."
+    },
+    {
+      "type": "text",
+      "content": "Kĩ năng phân loại là nhóm các đối tượng, khái niệm hoặc sự kiện thành các danh mục, theo đặc điểm được chọn."
+    },
+    {
+      "type": "text",
+      "content": "Kĩ năng liên kết là dùng số liệu quan sát, kết quả phân tích để xác định mối quan hệ giữa các sự vật và hiện tượng."
+    },
+    {
+      "type": "text",
+      "content": "Kĩ năng dự báo là đề xuất điều gì sẽ xảy ra, dựa trên quan sát, kiến thức và suy luận. Dự báo định tính dựa vào hiểu biết và đánh giá của chuyên gia. Dự báo định lượng dùng số liệu và mô hình tính toán."
+    },
+    {
+      "type": "text",
+      "content": "Cổng quang là thiết bị đóng hoặc mở đồng hồ đo thời gian hiện số. Đồng hồ này có thang đo 99,99 s với độ chia nhỏ nhất 0,01 s, phù hợp với môn Khoa học tự nhiên 7."
+    },
+    {
+      "type": "text",
+      "content": "Khi đo, cần chọn chế độ A ↔ B để đo khoảng thời gian giữa hai thời điểm. Nút RESET đưa đồng hồ về 0.000."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đo lực kéo của lực kế ba lần: 2,1 N; 2,0 N; 2,2 N. Tính giá trị trung bình của ba số đo.",
+      "expr": "(2.1 + 2.0 + 2.2) / 3",
+      "steps": [
+        "Tổng ba số đo là 2,1 + 2,0 + 2,2 = 6,3 N.",
+        "Giá trị trung bình là 6,3 / 3 = 2,1 N."
+      ],
+      "answer": "2.1"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Bước đầu tiên của phương pháp tìm hiểu tự nhiên là gì?",
+      "choices": [
+        "Lập kế hoạch kiểm tra dự đoán",
+        "Đề xuất vấn đề cần tìm hiểu",
+        "Viết báo cáo",
+        "Đưa ra dự đoán khoa học"
+      ],
+      "answer": 1,
+      "explain": "Bước 1 là đề xuất vấn đề cần tìm hiểu, bằng cách quan sát và đặt câu hỏi.",
+      "wrong_explain": {
+        "0": "Lập kế hoạch là bước 3, chỉ làm sau khi đã có dự đoán.",
+        "2": "Viết báo cáo là bước 5, làm sau khi đã thực hiện xong kế hoạch.",
+        "3": "Đưa ra dự đoán là bước 2, làm sau khi đã đề xuất vấn đề."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kĩ năng nào dùng các giác quan và dụng cụ như thước đo, kính hiển vi để thu thập thông tin về sự vật?",
+      "choices": [
+        "Quan sát",
+        "Dự báo",
+        "Liên kết",
+        "Phân loại"
+      ],
+      "answer": 0,
+      "explain": "Kĩ năng quan sát là dùng giác quan hoặc dụng cụ để thu thập thông tin về đặc điểm, kích thước, hình dạng của sự vật.",
+      "wrong_explain": {
+        "1": "Dự báo là đề xuất điều sẽ xảy ra dựa trên quan sát và suy luận, không phải thu thập thông tin trực tiếp.",
+        "2": "Liên kết là xác định mối quan hệ giữa các số liệu đã có.",
+        "3": "Phân loại là nhóm các đối tượng theo đặc điểm được chọn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kĩ năng phân loại được thực hiện khi nào?",
+      "choices": [
+        "Khi đo một đại lượng bằng dụng cụ",
+        "Khi nhóm các đối tượng thành danh mục theo đặc điểm được chọn",
+        "Khi viết báo cáo thí nghiệm",
+        "Khi đoán điều sẽ xảy ra"
+      ],
+      "answer": 1,
+      "explain": "Phân loại là nhóm các đối tượng, khái niệm hoặc sự kiện thành các danh mục theo tính năng hoặc đặc điểm được lựa chọn.",
+      "wrong_explain": {
+        "0": "Đo là kĩ năng riêng, không phải phân loại.",
+        "2": "Báo cáo là bước cuối của phương pháp, không phải kĩ năng phân loại.",
+        "3": "Đoán điều sẽ xảy ra là kĩ năng dự báo."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trong thí nghiệm đo lực ma sát trượt với các mặt tiếp xúc có diện tích khác nhau, kết quả cho thấy độ lớn lực ma sát thay đổi thế nào?",
+      "choices": [
+        "Tăng khi diện tích tăng",
+        "Giảm khi diện tích tăng",
+        "Không thay đổi",
+        "Thay đổi ngẫu nhiên"
+      ],
+      "answer": 2,
+      "explain": "Thí nghiệm cho thấy độ lớn lực ma sát trượt không phụ thuộc vào diện tích mặt tiếp xúc, nên không thay đổi.",
+      "wrong_explain": {
+        "0": "Kết quả thí nghiệm không cho thấy lực ma sát tăng theo diện tích.",
+        "1": "Kết quả thí nghiệm không cho thấy lực ma sát giảm theo diện tích.",
+        "3": "Kết quả các lần đo ổn định, không thay đổi ngẫu nhiên."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dự báo định tính dựa chủ yếu vào điều gì?",
+      "choices": [
+        "Số liệu đo chính xác đến nhiều chữ số",
+        "Hiểu biết, đánh giá và suy luận của con người, kể cả chuyên gia",
+        "Phép tính trên máy tính với mô hình",
+        "Một thí nghiệm đối chứng"
+      ],
+      "answer": 1,
+      "explain": "Dự báo định tính dựa vào các hiểu biết, đánh giá và suy luận của con người, thường là của chuyên gia. Dự báo định lượng mới dùng số liệu và mô hình tính toán.",
+      "wrong_explain": {
+        "0": "Số liệu chính xác là cơ sở của dự báo định lượng, không phải định tính.",
+        "2": "Mô hình tính toán là cơ sở của dự báo định lượng.",
+        "3": "Thí nghiệm đối chứng là một bước kiểm tra dự đoán, không phải cơ sở của dự báo định tính."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đồng hồ đo thời gian hiện số có thang đo 99,99 s. Độ chia nhỏ nhất (ĐCNN) của thang này là bao nhiêu giây? (nhập số)",
+      "expr": "0.01",
+      "answer": "0.01",
+      "explain": "Thang 99,99 s – 0,01 s có độ chia nhỏ nhất 0,01 s, là thang phù hợp với môn Khoa học tự nhiên 7."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Cần đo khoảng thời gian 30 s bằng đồng hồ đo thời gian hiện số. Thang đo nào phù hợp?",
+      "choices": [
+        "Thang 9,999 s – 0,001 s",
+        "Thang 99,99 s – 0,01 s",
+        "Cả hai thang đều phù hợp",
+        "Thang nào cũng không đo được"
+      ],
+      "answer": 1,
+      "explain": "Khoảng thời gian 30 s lớn hơn 9,999 s nên không đo được bằng thang 9,999 s. Thang 99,99 s có giới hạn đo lớn hơn, nên phù hợp.",
+      "wrong_explain": {
+        "0": "Thang 9,999 s có giới hạn đo nhỏ hơn 30 s, nên không đo được.",
+        "2": "Thang 9,999 s không đo được 30 s, nên không phải cả hai đều phù hợp.",
+        "3": "Thang 99,99 s đo được khoảng 30 s."
+      },
+      "concept": true
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Một báo cáo thí nghiệm đầy đủ thường gồm những nội dung nào?",
+      "choices": [
+        "Chỉ ghi kết luận",
+        "Mục tiêu, cách làm, kết quả, thảo luận và kết luận",
+        "Chỉ vẽ hình thí nghiệm",
+        "Chỉ ghi công thức tính toán"
+      ],
+      "answer": 1,
+      "explain": "Báo cáo thường có mục tiêu, cách tiến hành, kết quả, phần thảo luận và kết luận, để người đọc kiểm tra được quá trình thí nghiệm.",
+      "wrong_explain": {
+        "0": "Chỉ có kết luận thì người đọc không biết kết quả đến từ đâu.",
+        "2": "Hình vẽ chỉ là một phần, không đủ để làm báo cáo.",
+        "3": "Công thức chỉ là một phần của kết quả, không đủ để làm báo cáo."
+      },
+      "concept": true
+    }
+  ]
+}

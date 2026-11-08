@@ -1,0 +1,192 @@
+{
+  "id": "bai-24",
+  "grade": 7,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 7",
+  "chapter": "Chương VII. Trao đổi chất và chuyển hoá năng lượng ở sinh vật",
+  "lesson": "Bài 24. Thực hành: Chứng minh quang hợp ở cây xanh",
+  "section": "",
+  "bookPage": 108,
+  "requirements": [
+    "Tiến hành được thí nghiệm chứng minh quang hợp ở cây xanh."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Thí nghiệm 1 chứng minh tinh bột được tạo thành trong quang hợp: đặt cây trong bóng tối 2 ngày để tiêu hết tinh bột; che một phần lá bằng giấy đen rồi đưa ra ánh sáng 4–6 giờ; ngắt lá, đun trong cồn 90° để tẩy diệp lục, rửa sạch trong nước ấm rồi nhúng vào dung dịch iodine."
+    },
+    {
+      "type": "text",
+      "content": "Kết quả: phần lá không che bị nhuộm màu xanh tím, phần lá bị che không đổi màu. Kết luận: tinh bột được tạo thành trong quang hợp ở phần lá có ánh sáng."
+    },
+    {
+      "type": "text",
+      "content": "Thí nghiệm 2 chứng minh quang hợp giải phóng khí oxygen: cành rong đuôi chó đặt trong cốc có ánh sáng, khí oxygen thu được làm que đóm còn tàn đỏ bùng cháy."
+    },
+    {
+      "type": "text",
+      "content": "Lưu ý an toàn: cẩn thận khi làm thí nghiệm với dụng cụ thuỷ tinh và lửa; cồn 90° dễ cháy."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Trong thí nghiệm, cây được đặt trong bóng tối 2 ngày. Tổng số giờ bóng tối là bao nhiêu?",
+      "expr": "2 * 24",
+      "steps": [
+        "1 ngày có 24 giờ.",
+        "2 ngày × 24 giờ = 48 giờ."
+      ],
+      "answer": "48"
+    },
+    {
+      "problem": "Lá được đưa ra ánh sáng từ 4 giờ đến 6 giờ. Thời gian chiếu sáng là bao nhiêu giờ?",
+      "expr": "6 - 4",
+      "steps": [
+        "Thời gian = giờ kết thúc − giờ bắt đầu.",
+        "6 − 4 = 2 giờ."
+      ],
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trước khi làm thí nghiệm chứng minh tinh bột, cây được đặt trong bóng tối 2 ngày nhằm mục đích:",
+      "choices": [
+        "Làm tiêu hết tinh bột dự trữ trong lá",
+        "Làm tăng diệp lục",
+        "Làm tăng oxygen",
+        "Làm lá đổi màu"
+      ],
+      "answer": 0,
+      "explain": "Đặt trong bóng tối để lá tiêu hết tinh bột có sẵn trước thí nghiệm.",
+      "wrong_explain": {
+        "1": "Bóng tối không làm tăng diệp lục.",
+        "2": "Bóng tối không làm tăng oxygen.",
+        "3": "Bóng tối không làm lá đổi màu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Dung dịch dùng để thử tinh bột trong thí nghiệm là:",
+      "choices": [
+        "Iodine",
+        "Nước muối",
+        "Giấm",
+        "Cồn trắng"
+      ],
+      "answer": 0,
+      "explain": "Iodine là thuốc thử tinh bột, khi gặp tinh bột tạo màu xanh tím.",
+      "wrong_explain": {
+        "1": "Nước muối không dùng để thử tinh bột.",
+        "2": "Giấm không dùng để thử tinh bột.",
+        "3": "Cồn không phải thuốc thử tinh bột."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong thí nghiệm chứng minh tinh bột, phần lá không bị che sau khi thử có màu:",
+      "choices": [
+        "Xanh tím",
+        "Đỏ",
+        "Trắng",
+        "Đen"
+      ],
+      "answer": 0,
+      "explain": "Phần lá có quang hợp tạo tinh bột, khi nhỏ iodine chuyển màu xanh tím.",
+      "wrong_explain": {
+        "1": "Màu đỏ không phải kết quả của phép thử tinh bột.",
+        "2": "Màu trắng không xuất hiện do tinh bột.",
+        "3": "Màu đen không phải kết quả của phép thử này."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khí được giải phóng từ cành rong đuôi chó khi có ánh sáng là:",
+      "choices": [
+        "Oxygen",
+        "Carbon dioxide",
+        "Nitrogen",
+        "Hydrogen"
+      ],
+      "answer": 0,
+      "explain": "Quang hợp giải phóng oxygen; que đóm còn tàn đỏ bùng cháy khi gặp oxygen.",
+      "wrong_explain": {
+        "1": "Carbon dioxide được lấy vào, không giải phóng trong quang hợp.",
+        "2": "Nitrogen không được giải phóng trong thí nghiệm này.",
+        "3": "Hydrogen không được giải phóng trong quang hợp."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Phần lá nào trong thí nghiệm tinh bột không đổi màu sau khi thử iodine?",
+      "choices": [
+        "Phần được che bằng giấy đen",
+        "Phần không che",
+        "Phần lá non",
+        "Phần gân lá"
+      ],
+      "answer": 0,
+      "explain": "Phần bị che không được ánh sáng nên không quang hợp, không tạo tinh bột.",
+      "wrong_explain": {
+        "1": "Phần không che có quang hợp và tạo tinh bột, đổi màu xanh tím.",
+        "2": "Lá non không được nêu trong thí nghiệm này.",
+        "3": "Gân lá không phải phần được so sánh trong thí nghiệm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cây được đặt trong bóng tối 2 ngày. Tổng số giờ là bao nhiêu?",
+      "expr": "2 * 24",
+      "answer": "48",
+      "explain": "2 × 24 = 48 giờ."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lá được đưa ra ánh sáng từ 4 giờ đến 6 giờ. Thời gian chiếu sáng là bao nhiêu giờ?",
+      "expr": "6 - 4",
+      "answer": "2",
+      "explain": "6 − 4 = 2 giờ."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Khi nuôi cá cảnh, người ta thả cành rong và cây thuỷ sinh vào bể để:",
+      "choices": [
+        "Cung cấp oxygen cho cá qua quang hợp",
+        "Làm tăng nhiệt độ nước",
+        "Làm tăng carbon dioxide cho cá",
+        "Làm nước đục"
+      ],
+      "answer": 0,
+      "explain": "Cây thuỷ sinh quang hợp giải phóng oxygen, giúp cá có đủ khí để thở.",
+      "wrong_explain": {
+        "1": "Cây thuỷ sinh không làm tăng nhiệt độ nước đáng kể.",
+        "2": "Cây quang hợp lấy carbon dioxide, không làm tăng CO2 cho cá.",
+        "3": "Cây không làm nước đục."
+      },
+      "concept": true
+    }
+  ]
+}

@@ -42,7 +42,7 @@ function loadManifest(subject) {
 }
 
 // Các môn được phép đọc. Mỗi môn là một thư mục con của content/.
-const SUBJECTS = ['toan7', 'khtn7'];
+const SUBJECTS = ['toan7', 'ly7', 'hoa7', 'sinh7', 'lichsu7', 'diali7'];
 
 function assertSubject(subject) {
   if (!SUBJECTS.includes(subject)) throw new Error('Môn học không hợp lệ');

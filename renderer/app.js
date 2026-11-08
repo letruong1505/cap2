@@ -89,6 +89,8 @@ function renderExamples(lesson) {
     wrap.append(el('p', {}, `Đáp số: ${ex.answer}`));
     box.append(wrap);
   });
+  // Bài không có ví dụ tính toán (Lịch sử, Địa lí) thì ẩn cả mục "Ví dụ".
+  document.getElementById('sec-examples').hidden = lesson.examples.length === 0;
 }
 
 function renderQuiz(lesson, attempt) {
@@ -327,7 +329,7 @@ async function openLesson(relPath, mode = 'practice') {
   try {
     const lesson = await window.vungBai.loadLesson(relPath);
     document.getElementById('breadcrumb').textContent =
-      `Lớp ${lesson.grade} › ${{ toan: 'Toán', khtn: 'Khoa học tự nhiên' }[lesson.subject] || lesson.subject} › ${lesson.chapter}`;
+      `Lớp ${lesson.grade} › ${{ toan: 'Toán', ly: 'Vật lí', hoa: 'Hoá học', sinh: 'Sinh học', 'lich-su': 'Lịch sử', 'dia-li': 'Địa lí' }[lesson.subject] || lesson.subject} › ${lesson.chapter}`;
 
     if (lesson.kind === 'review') {
       const view = mode === 'solutions' ? 'solutions' : 'review';
@@ -374,7 +376,7 @@ const GRADES = [
   { grade: 9, available: false },
 ];
 // Mục lục của từng môn, nạp một lần khi mở app.
-const SUBJECT_LABELS = { toan7: 'Toán 7', khtn7: 'Khoa học tự nhiên 7' };
+const SUBJECT_LABELS = { toan7: 'Toán', ly7: 'Vật lí', hoa7: 'Hoá học', sinh7: 'Sinh học', lichsu7: 'Lịch sử', diali7: 'Địa lí' };
 const manifestCache = {};
 
 function licenseDaysLeft(expiresOn) {
@@ -433,7 +435,7 @@ function showSubjects() {
   const box = document.getElementById('subject-list');
   box.replaceChildren();
   for (const subject of Object.keys(SUBJECT_LABELS)) {
-    const btn = el('button', { class: 'grade', type: 'button' }, SUBJECT_LABELS[subject]);
+    const btn = el('button', { class: 'grade subject-btn', type: 'button' }, SUBJECT_LABELS[subject]);
     btn.addEventListener('click', () => renderHome(manifestCache[subject], subject));
     box.append(btn);
   }

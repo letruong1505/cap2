@@ -1,0 +1,205 @@
+{
+  "id": "bai-30",
+  "grade": 7,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 7",
+  "chapter": "Chương VII. Trao đổi chất và chuyển hoá năng lượng ở sinh vật",
+  "lesson": "Bài 30. Trao đổi nước và chất dinh dưỡng ở thực vật",
+  "section": "",
+  "bookPage": 127,
+  "requirements": [
+    "Dựa vào sơ đồ đơn giản mô tả được con đường hấp thụ, vận chuyển nước và chất khoáng từ môi trường ngoài vào miền lông hút, vào rễ, lên thân và lá cây.",
+    "Dựa vào sơ đồ, hình ảnh phân biệt được sự vận chuyển các chất trong mạch gỗ từ rễ lên lá cây và từ lá xuống các cơ quan trong mạch rây.",
+    "Nêu được vai trò của thoát hơi nước ở lá và hoạt động đóng, mở khí khổng.",
+    "Nêu được một số yếu tố ảnh hưởng đến sự trao đổi nước và chất dinh dưỡng ở thực vật.",
+    "Vận dụng được những hiểu biết về trao đổi chất và chuyển hoá năng lượng ở thực vật vào thực tiễn."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Ở đa số thực vật, nước và chất khoáng được hấp thụ qua tế bào lông hút ở rễ, sau đó vận chuyển theo mạch gỗ lên thân, lá."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/khtn-van-chuyen-nuoc.svg",
+      "caption": "Mạch gỗ vận chuyển nước và chất khoáng; mạch rây vận chuyển chất hữu cơ."
+    },
+    {
+      "type": "text",
+      "content": "Mạch gỗ vận chuyển nước và chất khoáng từ rễ lên các bộ phận khác của cây (dòng đi lên). Mạch rây vận chuyển chất hữu cơ tổng hợp ở lá đến nơi cần sử dụng hoặc nơi dự trữ (dòng đi xuống)."
+    },
+    {
+      "type": "text",
+      "content": "Thoát hơi nước diễn ra chủ yếu qua khí khổng ở lá. Khi cây đủ nước, tế bào khí khổng trương nước, khí khổng mở rộng nên hơi nước thoát ra nhiều; khi cây thiếu nước, khí khổng khép lại."
+    },
+    {
+      "type": "text",
+      "content": "Thoát hơi nước là động lực đầu trên của dòng đi lên, giúp vận chuyển nước và chất khoáng từ rễ lên lá; khí khổng mở tạo điều kiện cho CO₂ vào lá và O₂ ra ngoài; hơi nước mang theo nhiệt giúp hạ nhiệt độ lá."
+    },
+    {
+      "type": "text",
+      "content": "Các yếu tố ảnh hưởng đến trao đổi nước và chất dinh dưỡng ở thực vật: ánh sáng (gây mở khí khổng), nhiệt độ, độ ẩm không khí và độ tơi xốp, thoáng khí của đất."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một cây thoát hơi nước 120 mL trong 1 giờ. Trong 8 giờ ban ngày cây thoát được bao nhiêu mL nước?",
+      "expr": "120 * 8",
+      "steps": [
+        "Lượng nước thoát trong 1 giờ là 120 mL.",
+        "120 × 8 = 960 mL."
+      ],
+      "answer": "960"
+    },
+    {
+      "problem": "Đất đỏ bazan có độ tơi xốp tốt. Một lô đất có 60 m² đã được làm tơi, lô đất khác có 40 m². Tổng diện tích hai lô đất là bao nhiêu m²?",
+      "expr": "60 + 40",
+      "steps": [
+        "Tổng diện tích = 60 + 40.",
+        "60 + 40 = 100 m²."
+      ],
+      "answer": "100"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Ở đa số thực vật, nước và chất khoáng được hấp thụ chủ yếu qua:",
+      "choices": [
+        "Tế bào lông hút ở rễ",
+        "Lá",
+        "Hoa",
+        "Quả"
+      ],
+      "answer": 0,
+      "explain": "Nước và chất khoáng được hấp thụ qua tế bào lông hút ở rễ.",
+      "wrong_explain": {
+        "1": "Lá chủ yếu quang hợp và thoát hơi nước.",
+        "2": "Hoa không hấp thụ nước và chất khoáng chủ yếu.",
+        "3": "Quả không phải cơ quan hấp thụ nước chủ yếu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Mạch vận chuyển nước và chất khoáng từ rễ lên lá là:",
+      "choices": [
+        "Mạch gỗ",
+        "Mạch rây",
+        "Biểu bì",
+        "Tế bào lông hút"
+      ],
+      "answer": 0,
+      "explain": "Mạch gỗ vận chuyển nước và chất khoáng lên thân, lá.",
+      "wrong_explain": {
+        "1": "Mạch rây vận chuyển chất hữu cơ.",
+        "2": "Biểu bì bảo vệ, không vận chuyển.",
+        "3": "Tế bào lông hút hấp thụ, không vận chuyển."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Mạch rây vận chuyển:",
+      "choices": [
+        "Chất hữu cơ tổng hợp ở lá",
+        "Nước từ rễ lên",
+        "Chất khoáng từ đất",
+        "Oxygen từ khí khổng"
+      ],
+      "answer": 0,
+      "explain": "Mạch rây vận chuyển chất hữu cơ tổng hợp ở lá.",
+      "wrong_explain": {
+        "1": "Nước từ rễ lên được vận chuyển bằng mạch gỗ.",
+        "2": "Chất khoáng được vận chuyển bằng mạch gỗ.",
+        "3": "Oxygen không được vận chuyển qua mạch rây."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi cây đủ nước, khí khổng:",
+      "choices": [
+        "Mở rộng, thoát hơi nước nhiều",
+        "Khép lại",
+        "Không thay đổi",
+        "Biến mất"
+      ],
+      "answer": 0,
+      "explain": "Khi cây đủ nước, tế bào khí khổng trương nước làm khí khổng mở rộng.",
+      "wrong_explain": {
+        "1": "Khí khổng khép lại khi cây thiếu nước.",
+        "2": "Khí khổng thay đổi độ mở theo tình trạng nước.",
+        "3": "Khí khổng không biến mất."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ý nghĩa của thoát hơi nước ở lá là:",
+      "choices": [
+        "Giúp vận chuyển nước lên và hạ nhiệt độ lá",
+        "Làm tăng khối lượng lá",
+        "Làm lá đổi màu",
+        "Tạo ra nước mới"
+      ],
+      "answer": 0,
+      "explain": "Thoát hơi nước là động lực của dòng đi lên và giúp hạ nhiệt độ lá.",
+      "wrong_explain": {
+        "1": "Thoát hơi nước làm giảm lượng nước, không làm tăng khối lượng lá.",
+        "2": "Thoát hơi nước không làm lá đổi màu.",
+        "3": "Thoát hơi nước làm mất nước, không tạo nước mới."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cây thoát hơi nước 120 mL trong 1 giờ. Trong 8 giờ ban ngày cây thoát được bao nhiêu mL nước?",
+      "expr": "120 * 8",
+      "answer": "960",
+      "explain": "120 × 8 = 960 mL."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai lô đất có diện tích 60 m² và 40 m². Tổng diện tích là bao nhiêu m²?",
+      "expr": "60 + 40",
+      "answer": "100",
+      "explain": "60 + 40 = 100 m²."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vào những ngày khô hanh, người ta tưới nhiều nước cho cây vì:",
+      "choices": [
+        "Thoát hơi nước mạnh, cây dễ thiếu nước",
+        "Cây không cần nước",
+        "Đất đã quá ẩm",
+        "Cây không thoát hơi nước"
+      ],
+      "answer": 0,
+      "explain": "Ngày khô hanh, thoát hơi nước mạnh nên cây cần bổ sung nhiều nước.",
+      "wrong_explain": {
+        "1": "Cây vẫn cần nước để sinh trưởng và thoát hơi nước.",
+        "2": "Vào ngày khô hanh đất thường khô, không phải đã quá ẩm.",
+        "3": "Cây vẫn thoát hơi nước, nhất là khi trời nắng và khô."
+      },
+      "concept": true
+    }
+  ]
+}
