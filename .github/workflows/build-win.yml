@@ -18,6 +18,8 @@ jobs:
 
       - name: Install dependencies
         shell: bash
+        env:
+          ELECTRON_SKIP_BINARY_DOWNLOAD: '1'
         run: |
           for i in 1 2 3; do npm install && exit 0; echo "npm install lỗi, thử lại lần $i"; rm -rf node_modules/electron; sleep 20; done; exit 1
 
