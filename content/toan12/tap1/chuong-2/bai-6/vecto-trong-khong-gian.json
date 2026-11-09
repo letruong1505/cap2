@@ -1,0 +1,577 @@
+{
+  "id": "t12-chuong2-bai6-vecto-trong-khong-gian",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 12, tập 1",
+  "chapter": "Chương II. Vectơ và hệ trục toạ độ trong không gian",
+  "lesson": "Bài 6. Vectơ trong không gian",
+  "section": "Phần 1: Vectơ trong không gian; Phần 2: Tổng và hiệu; Phần 3: Tích với một số; Phần 4: Tích vô hướng",
+  "bookPage": 45,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Vectơ trong không gian là một đoạn thẳng có hướng. Độ dài của vectơ AB là khoảng cách giữa điểm đầu A và điểm cuối B, kí hiệu |AB|."
+    },
+    {
+      "type": "text",
+      "content": "Hai vectơ cùng phương nếu chúng có giá song song hoặc trùng nhau. Hai vectơ cùng phương thì cùng hướng hoặc ngược hướng. Hai vectơ bằng nhau khi chúng có cùng độ dài và cùng hướng."
+    },
+    {
+      "type": "text",
+      "content": "Vectơ có điểm đầu và điểm cuối trùng nhau gọi là vectơ-không, kí hiệu 0. Vectơ-không có độ dài 0, cùng hướng với mọi vectơ và bằng nhau."
+    },
+    {
+      "type": "text",
+      "content": "Quy tắc ba điểm: với ba điểm A, B, C bất kì, AB + BC = AC. Quy tắc hình bình hành: nếu ABCD là hình bình hành thì AB + AD = AC."
+    },
+    {
+      "type": "text",
+      "content": "Quy tắc hình hộp: với hình hộp ABCD.A'B'C'D', AB + AD + AA' = AC'. Với O và vectơ a cho trước luôn tồn tại duy nhất điểm M sao cho OM = a."
+    },
+    {
+      "type": "text",
+      "content": "Hiệu của hai vectơ: a − b = a + (−b), trong đó −b là vectơ đối của b (cùng độ dài, ngược hướng). Với ba điểm O, A, B bất kì: OB − OA = AB."
+    },
+    {
+      "type": "text",
+      "content": "Tích của số thực k ≠ 0 với vectơ a ≠ 0 là một vectơ, kí hiệu ka, cùng hướng với a nếu k > 0, ngược hướng nếu k < 0, và có độ dài |k|·|a|. Hai vectơ a, b (b ≠ 0) cùng phương khi và chỉ khi có số thực k để a = kb."
+    },
+    {
+      "type": "text",
+      "content": "Trọng tâm G của tam giác BCD thoả GB + GC + GD = 0. Với điểm O bất kì, OA + OB + OC = 3OG."
+    },
+    {
+      "type": "text",
+      "content": "Góc giữa hai vectơ a, b khác 0 là góc AOB (0° ≤ AOB ≤ 180°) với OA = a, OB = b, kí hiệu (a, b). Tích vô hướng a·b = |a|·|b|·cos(a, b). Quy ước nếu a = 0 hoặc b = 0 thì a·b = 0; a ⊥ b khi và chỉ khi a·b = 0."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho tứ diện ABCD có độ dài mỗi cạnh bằng 1. (a) Có bao nhiêu vectơ có điểm đầu là A và điểm cuối là một đỉnh còn lại? (b) Vectơ nào có giá nằm trong mặt phẳng (ABC)? (c) Tính độ dài các vectơ đó.",
+      "steps": [
+        "Có ba vectơ AB, AC, AD.",
+        "Trong ba vectơ này chỉ AB và AC có giá nằm trong mặt phẳng (ABC).",
+        "Vì mỗi cạnh bằng 1 nên |AB| = |AC| = |AD| = 1."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Cho hình lăng trụ ABC.A'B'C'. Hai vectơ AA' và BC có bằng nhau không? Vectơ nào bằng vectơ AA'? Trung điểm M của BC, xác định M' sao cho MM' = AA'.",
+      "steps": [
+        "AA' và BC không cùng phương nên không bằng nhau.",
+        "ACC'A' là hình bình hành nên AA' = CC'; hai vectơ AA' và CC' cùng hướng và bằng nhau.",
+        "BB' ngược hướng với AA' nên AA' ≠ B'B.",
+        "M' là trung điểm B'C' vì MM' = BB' = AA' (tứ giác BCC'B' là hình bình hành)."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Cho hình lập phương ABCD.A'B'C'D' có cạnh bằng 1. Tính độ dài của vectơ BC + DD'.",
+      "steps": [
+        "Tứ giác ABCD là hình vuông nên BC = AD.",
+        "BC + DD' = AD + DD' = AD'.",
+        "ADD'A' là hình vuông cạnh 1 nên AD' = √2. Vậy |BC + DD'| = √2."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Cho tứ diện ABCD. Chứng minh AC + BD = AD + BC.",
+      "steps": [
+        "AC = AD + DC.",
+        "AC + BD = AD + (DC + BD) = AD + (BD + DC) = AD + BC."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Cho tứ diện ABCD, G là trọng tâm tam giác BCD. Chứng minh AB + AC + AD = 3AG.",
+      "steps": [
+        "GB + GC + GD = 0 vì G là trọng tâm tam giác BCD.",
+        "AB + AC + AD = 3AG + (GB + GC + GD) = 3AG."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Cho hình lập phương ABCD.A'B'C'D'. Tính góc giữa hai vectơ AD và B'C' và góc giữa AC và A'D'.",
+      "steps": [
+        "AD và B'C' cùng hướng nên góc bằng 0°.",
+        "AD' = A'D' và tam giác ADC vuông cân tại D nên góc (AC, A'D') = góc CAD = 45°."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Cho hình chóp tứ giác đều S.ABCD có tất cả các cạnh bằng a. Tính AS·BC và AS·AC.",
+      "steps": [
+        "Tam giác SAD đều nên góc SAD = 60°; AD = BC nên (AS, BC) = 60°. Do đó AS·BC = a·a·cos60° = a²/2.",
+        "AC = √2·a và tam giác SAC vuông cân tại S nên góc SAC = 45°. Do đó AS·AC = a·√2a·(√2/2) = a²."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Cho tứ diện ABCD có AC và BD cùng vuông góc với AB. Gọi M, N lần lượt là trung điểm của AB, CD. Chứng minh MN = (1/2)(AC + BD) và MN·AB = 0.",
+      "steps": [
+        "Cộng hai biểu thị của MN qua MA, AC, CN và MB, BD, DN, ta được 2MN = AC + BD.",
+        "AC·AB = BD·AB = 0 nên MN·AB = (1/2)(AC + BD)·AB = 0."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho tứ diện ABCD có độ dài mỗi cạnh bằng 1. Trong ba vectơ AB, AC, AD, hai vectơ nào có giá nằm trong mặt phẳng (ABC)?",
+      "choices": [
+        "AB và AC",
+        "AB và AD",
+        "AC và AD",
+        "Không có cặp nào"
+      ],
+      "answer": 0,
+      "explain": "AB và AC đều nằm trong mặt phẳng (ABC); AD thì không.",
+      "wrong_explain": {
+        "1": "AD không nằm trong mặt phẳng (ABC).",
+        "2": "AD không nằm trong mặt phẳng (ABC).",
+        "3": "Có cặp AB, AC nằm trong mặt phẳng (ABC)."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho hình lập phương ABCD.A'B'C'D'. Trong các vectơ AC, AD, AD', hai vectơ nào có giá cùng nằm trong mặt phẳng (ABCD)?",
+      "choices": [
+        "AC và AD",
+        "AC và AD'",
+        "AD và AD'",
+        "Không cặp nào"
+      ],
+      "answer": 0,
+      "explain": "AC và AD đều nằm trong mặt phẳng đáy ABCD; AD' không nằm trong mặt phẳng này.",
+      "wrong_explain": {
+        "1": "AD' không nằm trong mặt đáy ABCD.",
+        "2": "AD' không nằm trong mặt đáy ABCD.",
+        "3": "AC và AD đều nằm trong (ABCD)."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho hình lập phương ABCD.A'B'C'D' cạnh 1. Trong các vectơ AC, AD, AD', hai vectơ nào có cùng độ dài?",
+      "choices": [
+        "AC và AD'",
+        "AC và AD",
+        "AD và AD'",
+        "AD và AC"
+      ],
+      "answer": 0,
+      "explain": "|AC| = |AD'| = √2 (đường chéo mặt), còn |AD| = 1.",
+      "wrong_explain": {
+        "1": "|AD| = 1 còn |AC| = √2.",
+        "2": "|AD| = 1 còn |AD'| = √2.",
+        "3": "AD và AC có độ dài khác nhau (1 và √2)."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho hình lăng trụ ABC.A'B'C'. Trong ba vectơ BC, CC', B'B, vectơ nào bằng vectơ AA'?",
+      "choices": [
+        "CC'",
+        "BC",
+        "B'B",
+        "Không vectơ nào"
+      ],
+      "answer": 0,
+      "explain": "ACC'A' là hình bình hành nên AA' = CC' (cùng hướng, cùng độ dài).",
+      "wrong_explain": {
+        "1": "BC không cùng phương với AA'.",
+        "2": "B'B ngược hướng với AA'.",
+        "3": "CC' bằng AA'."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho hình chóp S.ABCD có đáy ABCD là hình bình hành. Vectơ nào bằng vectơ AB?",
+      "choices": [
+        "DC",
+        "SC",
+        "AD",
+        "−DC"
+      ],
+      "answer": 0,
+      "explain": "Trong hình bình hành, AB và DC cùng hướng và bằng nhau.",
+      "wrong_explain": {
+        "1": "SC không liên quan đến cạnh đáy AB.",
+        "2": "AD là cạnh kề, không song song với AB.",
+        "3": "−DC ngược hướng với AB."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho hình hộp ABCD.A'B'C'D'. Vectơ AB + AD + AA' bằng?",
+      "choices": [
+        "AC'",
+        "AC",
+        "AA'",
+        "BD"
+      ],
+      "answer": 0,
+      "explain": "Theo quy tắc hình hộp, AB + AD + AA' = AC'.",
+      "wrong_explain": {
+        "1": "AC chỉ là đường chéo đáy, thiếu thành phần AA'.",
+        "2": "Đó chỉ là một cạnh bên.",
+        "3": "BD là đường chéo đáy, không phải tổng này."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho tứ diện ABCD, M và N lần lượt là trung điểm AB, CD. Hai vectơ AM và CN có quan hệ thế nào?",
+      "choices": [
+        "Đối nhau",
+        "Bằng nhau",
+        "Cùng phương nhưng không bằng nhau",
+        "Không cùng phương"
+      ],
+      "answer": 0,
+      "explain": "AM = (1/2)AB và CN = (1/2)CD = −(1/2)AB nên AM và CN có cùng độ dài, ngược hướng: là hai vectơ đối nhau.",
+      "wrong_explain": {
+        "1": "Hai vectơ ngược hướng nên không bằng nhau.",
+        "2": "Chúng cùng độ dài và ngược hướng, là hai vectơ đối nhau.",
+        "3": "Chúng cùng phương vì cùng song song với AB."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho ba điểm A, B, C bất kì. Vectơ BC − BA bằng?",
+      "choices": [
+        "AC",
+        "CA",
+        "AB",
+        "BA"
+      ],
+      "answer": 0,
+      "explain": "BC − BA = BC + AB = AC.",
+      "wrong_explain": {
+        "1": "CA ngược hướng với AC.",
+        "2": "AB không phải kết quả của BC − BA.",
+        "3": "BA không phải kết quả của BC − BA."
+      }
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong hình hộp chữ nhật ABCD.A'B'C'D', vectơ BB' + CD + AD bằng?",
+      "choices": [
+        "BD'",
+        "BD",
+        "AC'",
+        "B'D"
+      ],
+      "answer": 0,
+      "explain": "Theo bài tập Luyện tập 5, BB' + CD + AD = BD'.",
+      "wrong_explain": {
+        "1": "BD không chứa thành phần BB'.",
+        "2": "AC' là đường chéo của hình hộp từ A, không phải tổng này.",
+        "3": "B'D không phải kết quả."
+      }
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thang máy đi từ tầng 15 lên tầng 22 rồi từ tầng 22 lên tầng 29 (các tầng cao như nhau). Hai vectơ dịch chuyển có bằng nhau không?",
+      "choices": [
+        "Có, vì cùng hướng lên và cùng độ dài 7 tầng",
+        "Không, vì khác độ cao",
+        "Không, vì khác phương",
+        "Có, vì cùng độ dài nhưng ngược hướng"
+      ],
+      "answer": 0,
+      "explain": "Cả hai lần đều đi lên 7 tầng nên các vectơ dịch chuyển cùng hướng và cùng độ dài.",
+      "wrong_explain": {
+        "1": "Độ cao dịch chuyển đều là 7 tầng, không phải khác nhau.",
+        "2": "Cả hai đều theo phương thẳng đứng.",
+        "3": "Cả hai đều đi lên nên cùng hướng."
+      }
+    },
+    {
+      "id": "q11",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho tứ diện ABCD. Vectơ AB + CD bằng?",
+      "choices": [
+        "AD + CB",
+        "AC + DB",
+        "AD + BC",
+        "AC + BD"
+      ],
+      "answer": 0,
+      "explain": "Theo Ví dụ 4 và Luyện tập 4: AB + CD = AD + CB.",
+      "wrong_explain": {
+        "1": "AC + DB không bằng AB + CD trong trường hợp tổng quát.",
+        "2": "AD + BC khác AD + CB (BC = −CB).",
+        "3": "AC + BD không bằng AB + CD trong trường hợp tổng quát."
+      }
+    },
+    {
+      "id": "q12",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho tứ diện ABCD, G là trọng tâm tam giác BCD. Tổng AB + AC + AD bằng?",
+      "choices": [
+        "3AG",
+        "AG",
+        "4AG",
+        "2AG"
+      ],
+      "answer": 0,
+      "explain": "AB + AC + AD = 3AG + (GB + GC + GD) = 3AG vì GB + GC + GD = 0.",
+      "wrong_explain": {
+        "1": "Phải có hệ số 3 vì ba vectơ đều đi qua G.",
+        "2": "Tổng gồm ba vectơ nên hệ số là 3.",
+        "3": "Hệ số là 3, không phải 2."
+      }
+    },
+    {
+      "id": "q13",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho hình lập phương ABCD.A'B'C'D' cạnh 1. Độ dài của vectơ BC + DD' là?",
+      "choices": [
+        "√2",
+        "2",
+        "1",
+        "√3"
+      ],
+      "answer": 0,
+      "explain": "BC + DD' = AD + DD' = AD', với AD' = √2.",
+      "wrong_explain": {
+        "1": "2 là tổng hai cạnh, không phải độ dài của vectơ BC + DD'.",
+        "2": "Độ dài của vectơ này là √2, không phải 1.",
+        "3": "√3 là đường chéo khối lập phương, không phải kết quả."
+      }
+    },
+    {
+      "id": "q14",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một máy bay có lực cản tỉ lệ với bình phương vận tốc. Khi vận tốc là 900 km/h và 920 km/h, F₁ = k·F₂ với k = (900/920)². Giá trị k là?",
+      "expr": "(900/920)*(900/920)",
+      "answer": "2025/2116",
+      "explain": "Lực cản tỉ lệ với bình phương vận tốc nên k = (900/920)² = 2025/2116 ≈ 0,96 (làm tròn đến chữ số thập phân thứ hai)."
+    },
+    {
+      "id": "q15",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho tứ diện ABCD. Hai vectơ nào có tổng AB + CD bằng?",
+      "choices": [
+        "AD + CB",
+        "AC + DB",
+        "AD + BC",
+        "AC + BD"
+      ],
+      "answer": 0,
+      "explain": "AB + CD = AD + CB.",
+      "wrong_explain": {
+        "1": "Không đúng trong trường hợp tổng quát.",
+        "2": "BC = −CB nên không bằng.",
+        "3": "Không đúng trong trường hợp tổng quát."
+      }
+    },
+    {
+      "id": "q16",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khối tứ diện đều (rubik) có chiều cao 8 cm. Trọng tâm I thoả AI = 3IG (G là trọng tâm mặt BCD). Khoảng cách từ I đến mặt BCD là (cm)?",
+      "expr": "8/4",
+      "answer": "2",
+      "explain": "IG = AG/4 = 8/4 = 2 cm, vì AI = 3IG và AG = 8 cm."
+    },
+    {
+      "id": "q17",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.1: trong không gian cho ba vectơ a, b, c khác 0. Mệnh đề nào đúng?",
+      "choices": [
+        "Nếu a, b cùng hướng với c thì a, b cùng hướng",
+        "Nếu a, b cùng hướng với c thì a, b ngược hướng",
+        "Nếu a, b ngược hướng với c thì a, b ngược hướng",
+        "Nếu a, b đều ngược hướng với c thì a, b cùng hướng... nhưng có thể không đúng"
+      ],
+      "answer": 0,
+      "explain": "Hai vectơ cùng hướng với cùng một vectơ c thì cùng hướng với nhau.",
+      "wrong_explain": {
+        "1": "Hai vectơ cùng hướng với c thì phải cùng hướng với nhau.",
+        "2": "Hai vectơ cùng hướng với c nên không ngược nhau.",
+        "3": "Phương án này chưa được xác định rõ, không chọn."
+      }
+    },
+    {
+      "id": "q18",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.2: hình hộp chữ nhật ABCD.A'B'C'D' có AB = 2, AD = 3, AA' = 4. Độ dài vectơ BD' là?",
+      "choices": [
+        "√29",
+        "√13",
+        "5",
+        "√53"
+      ],
+      "answer": 0,
+      "explain": "BD' là đường chéo hình hộp: |BD'| = √(2² + 3² + 4²) = √29.",
+      "wrong_explain": {
+        "1": "√13 là độ dài đường chéo đáy BD, không phải BD'.",
+        "2": "5 không phải độ dài BD'.",
+        "3": "√53 không phải kết quả."
+      }
+    },
+    {
+      "id": "q19",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 2.10a: hình lăng trụ tứ giác đều, cạnh đáy 1, cạnh bên 2. Tích vô hướng AA'·C'C bằng?",
+      "expr": "-(2*2)",
+      "answer": "-4",
+      "explain": "AA' và C'C ngược hướng (góc 180°), |AA'| = |C'C| = 2 nên AA'·C'C = −4."
+    },
+    {
+      "id": "q20",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 2.10b: AA' và BC vuông góc, tích vô hướng AA'·BC bằng?",
+      "expr": "0*1",
+      "answer": "0",
+      "explain": "AA' vuông góc với mặt đáy nên AA' ⊥ BC, do đó AA'·BC = 0."
+    },
+    {
+      "id": "q21",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.11: hai vectơ a, b có |a| = |b| = 1 và góc (a, b) = 45°. Giá trị a·b là?",
+      "choices": [
+        "√2/2",
+        "1",
+        "√2",
+        "1/2"
+      ],
+      "answer": 0,
+      "explain": "a·b = |a|·|b|·cos45° = √2/2.",
+      "wrong_explain": {
+        "1": "Đó là tích khi góc 0°.",
+        "2": "√2 vượt quá giới hạn vì |a|·|b| = 1.",
+        "3": "cos 60° = 1/2, không phải cos 45°."
+      }
+    },
+    {
+      "id": "q22",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.5: cho lăng trụ ABC.A'B'C' có AA' = a, AB = b, AC = c. Vectơ AB' bằng?",
+      "choices": [
+        "a + b",
+        "b − c",
+        "a + c − b",
+        "a − b"
+      ],
+      "answer": 0,
+      "explain": "AB' = AB + BB' = b + AA' = a + b (vì BB' = AA').",
+      "wrong_explain": {
+        "1": "b − c là vectơ CB, không phải AB'.",
+        "2": "Phương án này không bằng AB' = a + b.",
+        "3": "Dấu sai: BB' = AA' = a nên tổng là a + b."
+      }
+    },
+    {
+      "id": "q23",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.6: tứ giác ABCD là hình bình hành khi và chỉ khi với S bất kì, ta có?",
+      "choices": [
+        "SA + SC = SB + SD",
+        "SA + SB = SC + SD",
+        "SA − SC = SB − SD",
+        "SA + SD = SB + SC"
+      ],
+      "answer": 0,
+      "explain": "Đây là đặc trưng vectơ của hình bình hành: SA + SC = SB + SD khi và chỉ khi ABCD là hình bình hành.",
+      "wrong_explain": {
+        "1": "Đó không phải điều kiện hình bình hành (các cặp đỉnh không đối nhau).",
+        "2": "Hiệu không cho điều kiện hình bình hành.",
+        "3": "Các cặp đỉnh không đối nhau, sai."
+      }
+    },
+    {
+      "id": "q24",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.9: ba sợi dây không giãn buộc chung một đầu, kéo căng ra ba hướng khác nhau và đứng yên. Vì sao ba sợi dây nằm trong cùng một mặt phẳng?",
+      "choices": [
+        "Vì ba lực cân bằng nên đồng phẳng",
+        "Vì ba dây có cùng độ dài",
+        "Vì ba dây song song với nhau",
+        "Vì khối lượng dây bằng 0"
+      ],
+      "answer": 0,
+      "explain": "Ba lực kéo cân bằng với nhau nên tổng bằng 0; khi đó ba vectơ lực đồng phẳng, nên các sợi dây cũng nằm trong cùng một mặt phẳng.",
+      "wrong_explain": {
+        "1": "Độ dài dây không quyết định sự đồng phẳng.",
+        "2": "Ba dây kéo về ba hướng khác nhau nên không song song.",
+        "3": "Khối lượng không ảnh hưởng đến điều này."
+      }
+    },
+    {
+      "id": "q25",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.8: khối rubik tứ diện đều, chiều cao 8 cm. Khoảng cách từ trọng tâm I đến một mặt là?",
+      "choices": [
+        "2 cm",
+        "4 cm",
+        "8 cm",
+        "1 cm"
+      ],
+      "answer": 0,
+      "explain": "AI = 3IG nên IG = AG/4 = 8/4 = 2 cm.",
+      "wrong_explain": {
+        "1": "4 cm không đúng: AI = 6 cm và IG = 2 cm.",
+        "2": "8 cm là chiều cao, không phải khoảng cách từ I đến mặt.",
+        "3": "1 cm không đúng vì IG = AG/4 = 2 cm."
+      }
+    }
+  ]
+}

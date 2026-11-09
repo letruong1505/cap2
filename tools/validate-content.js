@@ -68,7 +68,8 @@ function validateLesson(lesson, relPath) {
 
   for (const ex of lesson.examples || []) {
     if (!Array.isArray(ex.steps)) errs.push(`ví dụ "${ex.problem}": các bước giải phải là danh sách`);
-    errs.push(...checkExpr(ex.expr, ex.answer, `ví dụ "${ex.problem}"`));
+    // Ví dụ chứng minh (proof: true) không có đáp án số để kiểm tra.
+    if (!ex.proof) errs.push(...checkExpr(ex.expr, ex.answer, `ví dụ "${ex.problem}"`));
     if (ex.figure) errs.push(...checkFigurePath(ex.figure, `ví dụ "${ex.problem}"`));
   }
   for (const block of lesson.theory || []) {
