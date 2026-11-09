@@ -30,6 +30,21 @@ test('sửa nội dung khoá bị từ chối', () => {
 });
 test('sai máy', () => assert.equal(evaluateKey(issue({ machine: 'AAAA-AAAA-AAAA' }), 'BBBB-BBBB-BBBB', NOW, publicKey).status, 'wrong-machine'));
 test('hết hạn', () => assert.equal(evaluateKey(issue({ expires: '2026-11-08' }), 'X', NOW, publicKey).status, 'expired'));
+test('khoá vĩnh viễn không hết hạn', () => {
+  const k = issue({ expires: 'never' });
+  assert.equal(evaluateKey(k, 'X', new Date(2099, 0, 1), publicKey).status, 'ok');
+  assert.equal(evaluateKey(k, 'X', NOW, publicKey).expiresOn, 'never');
+});
+test('khoá vĩnh viễn vẫn mở khi đồng hồ máy bị lùi', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'lic-'));
+  const k = issue({ expires: 'never', machine: '*' });
+  assert.equal(lic.activate(dir, k, new Date(2027, 0, 1), publicKey).status, 'ok');
+  assert.equal(lic.currentLicense(dir, new Date(2026, 0, 1), publicKey).status, 'ok');
+  // Khoá có hạn thì vẫn chặn khi đồng hồ bị lùi.
+  const dir2 = fs.mkdtempSync(path.join(os.tmpdir(), 'lic-'));
+  assert.equal(lic.activate(dir2, issue({}), new Date(2027, 0, 1), publicKey).status, 'ok');
+  assert.equal(lic.currentLicense(dir2, new Date(2026, 0, 1), publicKey).status, 'clock');
+});
 test('rác', () => assert.equal(evaluateKey('abc', 'X', NOW, publicKey).status, 'invalid'));
 
 test('phân quyền bài theo lớp', () => {

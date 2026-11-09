@@ -3,6 +3,7 @@
 //   node tools/license-tool.js init
 //   node tools/license-tool.js issue --owner "Tên" --grades 7,8 --machine XXXX-XXXX-XXXX --expires 2027-06-30 [--id NL-0001]
 //   node tools/license-tool.js issue --owner "Tên" --grades all --any-machine --expires 2027-06-30
+//   node tools/license-tool.js issue --owner "Tên" --grades 6,7,8,9 --machine XXXX-XXXX-XXXX --permanent
 //   node tools/license-tool.js inspect <khoá>
 // Khoá riêng nằm ở ~/.vungbai-license/private.pem (hoặc biến VUNGBAI_PRIVATE_KEY). KHÔNG đưa vào git.
 const crypto = require('crypto');
@@ -38,7 +39,8 @@ if (cmd === 'init') {
   const a = args(rest);
   if (!fs.existsSync(PRIVATE)) die('Chưa có khoá riêng. Chạy: node tools/license-tool.js init');
   if (!a.owner || a.owner === true) die('Thiếu --owner');
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(a.expires || '')) die('Thiếu hoặc sai --expires (YYYY-MM-DD)');
+  if (!a.permanent && !/^\d{4}-\d{2}-\d{2}$/.test(a.expires || '')) die('Thiếu --permanent hoặc --expires (YYYY-MM-DD)');
+  const expires = a.permanent ? 'never' : a.expires;
   let grades;
   if (a.grades === 'all') grades = 'all';
   else {
@@ -50,7 +52,7 @@ if (cmd === 'init') {
   else if (/^[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}$/.test(String(a.machine || '').toUpperCase())) machine = a.machine.toUpperCase();
   else die('Cần --machine XXXX-XXXX-XXXX (mã máy hiện trong app) hoặc --any-machine');
   const id = a.id && a.id !== true ? a.id : 'NL-' + crypto.randomBytes(3).toString('hex').toUpperCase();
-  const payload = Buffer.from(JSON.stringify({ v: 1, id, owner: a.owner, grades, machine, issued: new Date().toISOString().slice(0, 10), expires: a.expires }));
+  const payload = Buffer.from(JSON.stringify({ v: 1, id, owner: a.owner, grades, machine, issued: new Date().toISOString().slice(0, 10), expires }));
   const sig = crypto.sign(null, payload, crypto.createPrivateKey(fs.readFileSync(PRIVATE, 'utf8')));
   console.log(PREFIX + b64u(payload) + '.' + b64u(sig));
 } else if (cmd === 'inspect') {

@@ -29,7 +29,9 @@ textarea{width:100%;box-sizing:border-box;height:120px;font-family:Consolas,mono
 <label><input type="checkbox" id="all" /> Tất cả các lớp</label></div>
 <label for="machine">Mã máy của khách (hiện trong app)</label><input type="text" id="machine" placeholder="XXXX-XXXX-XXXX" />
 <div class="row"><label><input type="checkbox" id="any" /> Không gắn máy (chạy mọi máy)</label></div>
-<label for="expires">Ngày hết hạn</label><input type="date" id="expires" />
+<label>Thời hạn</label>
+<div class="row"><label><input type="checkbox" id="permanent" checked /> Vĩnh viễn (không hết hạn)</label></div>
+<label for="expires">Ngày hết hạn (chỉ dùng khi bỏ chọn Vĩnh viễn)</label><input type="date" id="expires" />
 <div style="margin-top:14px"><button id="issue" type="button">Tạo khoá</button></div>
 <div id="msg"></div></div>
 <div class="card"><label for="out">Khoá kích hoạt (gửi cho khách)</label><textarea id="out" readonly></textarea>

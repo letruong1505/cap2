@@ -6,9 +6,12 @@ window.kg.status().then(setState);
 $('choose').addEventListener('click', async () => setState(await window.kg.choose()));
 const d = new Date(); d.setFullYear(d.getFullYear() + 1);
 $('expires').value = d.toISOString().slice(0, 10);
+const syncExpiry = () => { $('expires').disabled = $('permanent').checked; };
+$('permanent').addEventListener('change', syncExpiry);
+syncExpiry();
 $('issue').addEventListener('click', async () => {
   const grades = [...document.querySelectorAll('#grades input[type=checkbox][value]:checked')].map((c) => c.value);
-  const r = await window.kg.issue({ owner: $('owner').value, grades, allGrades: $('all').checked, machine: $('machine').value, anyMachine: $('any').checked, expires: $('expires').value });
+  const r = await window.kg.issue({ owner: $('owner').value, grades, allGrades: $('all').checked, machine: $('machine').value, anyMachine: $('any').checked, permanent: $('permanent').checked, expires: $('expires').value });
   const msg = $('msg');
   if (r.error) { msg.className = 'err'; msg.textContent = r.error; return; }
   $('out').value = r.key;

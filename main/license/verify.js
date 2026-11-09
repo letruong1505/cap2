@@ -6,6 +6,8 @@ const path = require('path');
 
 const PREFIX = 'NL1-';
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+// Khoá vĩnh viễn ghi expires = 'never'.
+const NEVER = 'never';
 const PUBLIC_KEY_FILE = path.join(__dirname, 'public-key.pem');
 
 const b64u = (buf) => Buffer.from(buf).toString('base64url');
@@ -28,7 +30,7 @@ function parseKey(key, pubKey = publicKey()) {
     return { ok: false, reason: 'format' };
   }
   const gradesOk = payload.grades === 'all' || (Array.isArray(payload.grades) && payload.grades.every((g) => Number.isInteger(g)));
-  if (payload.v !== 1 || !gradesOk || !DATE_RE.test(payload.expires || '')) return { ok: false, reason: 'format' };
+  if (payload.v !== 1 || !gradesOk || !(payload.expires === NEVER || DATE_RE.test(payload.expires || ''))) return { ok: false, reason: 'format' };
   return { ok: true, payload };
 }
 
@@ -45,8 +47,8 @@ function evaluateKey(key, machineId, now = new Date(), pubKey) {
   const p = r.payload;
   const info = { owner: p.owner || '', id: p.id || '', grades: p.grades, expiresOn: p.expires };
   if (p.machine !== '*' && p.machine !== machineId) return { status: 'wrong-machine', ...info };
-  if (today(now) > p.expires) return { status: 'expired', ...info };
+  if (p.expires !== NEVER && today(now) > p.expires) return { status: 'expired', ...info };
   return { status: 'ok', ...info };
 }
 
-module.exports = { PREFIX, b64u, parseKey, evaluateKey, today };
+module.exports = { NEVER, PREFIX, b64u, parseKey, evaluateKey, today };

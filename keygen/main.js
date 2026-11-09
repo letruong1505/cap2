@@ -32,7 +32,8 @@ ipcMain.handle('key:issue', (_e, f) => {
   if (!priv) return { error: 'Chưa chọn khoá riêng.' };
   const owner = String(f.owner || '').trim();
   if (!owner) return { error: 'Nhập tên khách hàng.' };
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(f.expires || '')) return { error: 'Nhập ngày hết hạn.' };
+  const expires = f.permanent ? 'never' : f.expires;
+  if (!f.permanent && !/^\d{4}-\d{2}-\d{2}$/.test(f.expires || '')) return { error: 'Nhập ngày hết hạn hoặc chọn Vĩnh viễn.' };
   let grades;
   if (f.allGrades) grades = 'all';
   else {
@@ -45,7 +46,7 @@ ipcMain.handle('key:issue', (_e, f) => {
     if (!/^[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}$/.test(machine)) return { error: 'Mã máy phải có dạng XXXX-XXXX-XXXX.' };
   }
   const id = 'NL-' + crypto.randomBytes(3).toString('hex').toUpperCase();
-  const payload = Buffer.from(JSON.stringify({ v: 1, id, owner, grades, machine, issued: new Date().toISOString().slice(0, 10), expires: f.expires }));
+  const payload = Buffer.from(JSON.stringify({ v: 1, id, owner, grades, machine, issued: new Date().toISOString().slice(0, 10), expires }));
   const sig = crypto.sign(null, payload, priv);
   const key = 'NL1-' + payload.toString('base64url') + '.' + Buffer.from(sig).toString('base64url');
   return { key, id };

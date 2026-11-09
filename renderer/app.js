@@ -501,14 +501,21 @@ function renderLicense(license) {
   const children = [];
   if (license.status === 'ok') {
     children.push(
-      el('div', {}, `Đơn vị cấp: ${license.owner || '—'}`),
+      el('div', {}, `Cấp cho: ${license.owner || '—'}`),
       el('div', { class: 'muted' }, `Mã khoá: ${license.id || '—'} · Phạm vi: ${gradesText(license.grades)}`),
     );
-    const left = licenseDaysLeft(license.expiresOn);
-    days.replaceChildren(
-      el('div', { class: 'days' }, `${left} ngày`),
-      el('div', { class: 'muted' }, `Hết hạn ngày ${license.expiresOn.split('-').reverse().join('/')}`),
-    );
+    if (license.expiresOn === 'never') {
+      days.replaceChildren(
+        el('div', { class: 'days' }, 'Vĩnh viễn'),
+        el('div', { class: 'muted' }, 'Không giới hạn thời gian trên máy này'),
+      );
+    } else {
+      const left = licenseDaysLeft(license.expiresOn);
+      days.replaceChildren(
+        el('div', { class: 'days' }, `${left} ngày`),
+        el('div', { class: 'muted' }, `Hết hạn ngày ${license.expiresOn.split('-').reverse().join('/')}`),
+      );
+    }
   } else {
     children.push(el('div', { class: 'muted' }, LICENSE_MESSAGES[license.status] || 'Chưa kích hoạt bản quyền. Đang dùng thử: mở 2 bài đầu của mỗi môn.'));
     days.replaceChildren(el('div', { class: 'muted' }, '—'));

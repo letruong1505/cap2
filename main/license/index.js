@@ -5,21 +5,21 @@ const { getMachineId } = require('./machine');
 const MAX_FREE_LESSONS = 2; // chưa mua: chỉ mở 2 bài đầu của mỗi môn
 
 // Trạng thái bản quyền hiện tại. Đồng hồ bị chỉnh lùi so với lần chạy trước thì coi như hết hạn.
-function currentLicense(dir, now = new Date()) {
+function currentLicense(dir, now = new Date(), pubKey) {
   const machineId = getMachineId();
   const store = readStore(dir);
   if (!store.key) return { status: 'missing', machineId };
-  let when = now;
   const t = today(now);
-  if (store.lastSeen && t < store.lastSeen) return { status: 'clock', machineId };
-  const r = evaluateKey(store.key, machineId, when);
+  const r = evaluateKey(store.key, machineId, now, pubKey);
+  // Khoá vĩnh viễn không phụ thuộc ngày nên không cần chặn khi đồng hồ bị lùi.
+  if (r.expiresOn !== 'never' && store.lastSeen && t < store.lastSeen) return { status: 'clock', machineId };
   if (r.status === 'ok' && t > store.lastSeen) writeStore(dir, { key: store.key, lastSeen: t });
   return { ...r, machineId };
 }
 
-function activate(dir, key, now = new Date()) {
+function activate(dir, key, now = new Date(), pubKey) {
   const machineId = getMachineId();
-  const r = evaluateKey(key, machineId, now);
+  const r = evaluateKey(key, machineId, now, pubKey);
   if (r.status !== 'ok') return { ...r, machineId };
   writeStore(dir, { key: String(key).replace(/\s+/g, ''), lastSeen: today(now) });
   return { ...r, machineId };
