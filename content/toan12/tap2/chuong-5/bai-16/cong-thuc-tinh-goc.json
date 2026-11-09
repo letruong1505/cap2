@@ -251,6 +251,27 @@
         "2": "tan = 1/3 cho 18,4°, không khớp: độ dốc là √(1/16 + 3/16) = 1/2.",
         "3": "tan = 2/3 cho 33,7°, không khớp: độ dốc là 1/2."
       }
+    },
+    {
+      "id": "q13",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 5.24b: bể hình lập phương cạnh 1 m, mặt nước là hình bình hành ABCD với độ cao A 40 cm, B 44 cm, C 48 cm (H.5.39). Đáy bể nghiêng so với mặt phẳng nằm ngang một góc xấp xỉ?",
+      "choices": [
+        "≈ 3,24°",
+        "≈ 2,29°",
+        "≈ 4,57°",
+        "≈ 45°"
+      ],
+      "answer": 0,
+      "explain": "Chọn hệ trục theo đáy bể, mặt nước là mặt z = 0,40 + 0,04x + 0,04y (m). Góc giữa mặt nước và đáy có tan = √(0,04² + 0,04²) = 0,04√2 ≈ 0,0566, nên góc ≈ 3,24°.",
+      "figure": "figures/c5-5-24b-be-nghieng.svg",
+      "wrong_explain": {
+        "1": "Chỉ tính độ dốc theo một hướng (tan = 0,04) cho 2,29°; phải tính cả hai hướng: √(0,04² + 0,04²).",
+        "2": "Cộng hai độ dốc (0,04 + 0,04 = 0,08) cho 4,57°; độ dốc tổng phải là căn bậc hai của tổng bình phương.",
+        "3": "Góc 45° là sai: độ dốc của mặt nước so với đáy chỉ khoảng 0,0566."
+      }
     }
   ]
 }

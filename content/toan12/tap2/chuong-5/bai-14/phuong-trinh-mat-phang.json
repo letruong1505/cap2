@@ -465,6 +465,27 @@
         "2": "M vuông góc với AB, không song song với AB.",
         "3": "M vuông góc với OP, không trùng phương OP."
       }
+    },
+    {
+      "id": "q25",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 5.8: bốn mái nhà là bốn mặt bên của một hình chóp đều (H.5.15), các mái kề nhau vuông góc với nhau. Ý tưởng trên có thực hiện được không?",
+      "choices": [
+        "Thực hiện được",
+        "Không thực hiện được",
+        "Chỉ thực hiện được khi chiều cao bằng nửa cạnh đáy",
+        "Thực hiện được nếu đáy là hình chữ nhật"
+      ],
+      "answer": 1,
+      "explain": "Chọn tâm O làm gốc, đáy ABCD là hình vuông với các đỉnh (a; 0; 0), (0; a; 0), (−a; 0; 0), (0; −a; 0), đỉnh S(0; 0; h) với h > 0. Hai mặt bên kề nhau có vectơ pháp tuyến (1/a; 1/a; 1/h) và (−1/a; 1/a; 1/h), tích vô hướng 1/h² > 0 với mọi h, nên hai mặt không bao giờ vuông góc. Ý tưởng không thực hiện được.",
+      "figure": "figures/c5-5-8-chop-deu.svg",
+      "wrong_explain": {
+        "0": "Hai mặt bên kề nhau có tích vô hướng của hai vectơ pháp tuyến bằng 1/h² > 0, nên không vuông góc.",
+        "2": "Tích vô hướng 1/h² luôn dương với mọi h > 0, nên không có chiều cao nào làm hai mặt vuông góc.",
+        "3": "Chóp đều cần đáy là đa giác đều (hình vuông ở đây); đáy hình chữ nhật không cho chóp đều và hai mặt bên kề nhau vẫn không vuông góc."
+      }
     }
   ]
 }
