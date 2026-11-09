@@ -263,6 +263,21 @@ button.link {
   border-radius: 16px;
 }
 .tutor-icon svg { width: 52px; height: 52px; display: block; }
+.price { margin: 12px 0 0; font-size: 14px; color: var(--mute); }
+.price b { font-size: 18px; font-weight: 800; color: var(--ink); margin-right: 2px; }
+.tutor .price { margin-top: 6px; color: #b9cde3; }
+.tutor .price b { color: #fff; }
+.combo {
+  display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
+  margin-top: 14px; padding: 18px 22px;
+  border: 2px solid var(--marker); border-radius: 16px; background: #fffaeb;
+}
+.combo h3 { margin: 0 0 2px; font-size: 19px; font-weight: 800; color: var(--ink); }
+.combo p { margin: 0; font-size: 14px; color: var(--mute); }
+.combo-price { display: grid; justify-items: end; line-height: 1.25; }
+.combo-price s { font-size: 14px; color: #8593a3; }
+.combo-price b { font-size: 28px; font-weight: 800; color: var(--ink); }
+.combo-price span { font-size: 13px; font-weight: 600; color: #a36a00; }
 .tutor h3 { margin: 0; font-size: 19px; font-weight: 800; }
 .tutor p { margin: 0; font-size: 13px; color: #b9cde3; }
 .tutor ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 20px; font-size: 14px; }
@@ -284,6 +299,7 @@ button.link {
   .path-icon { position: absolute; left: 0; top: 0; }
   .tutor { grid-template-columns: auto 1fr; }
   .tutor ul { grid-column: 1 / -1; }
+  .combo-price { justify-items: start; }
 }
 @media (prefers-reduced-motion: reduce) {
   .grade-tile, .grade-num, .grade { transition: none; }
