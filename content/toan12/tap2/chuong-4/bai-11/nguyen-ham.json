@@ -1,0 +1,606 @@
+{
+  "id": "t12-t2-chuong4-bai11-nguyen-ham",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 12, tập 2",
+  "chapter": "Chương IV. Nguyên hàm và tích phân",
+  "lesson": "Bài 11. Nguyên hàm",
+  "section": "1. Nguyên hàm của một hàm số; 2. Tính chất cơ bản; 3. Nguyên hàm của một số hàm số thường gặp; Bài tập",
+  "bookPage": 4,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cho hàm số f(x) xác định trên khoảng K (hoặc đoạn, hoặc nửa khoảng). Hàm số F(x) được gọi là một nguyên hàm của f(x) trên K nếu F'(x) = f(x) với mọi x thuộc K."
+    },
+    {
+      "type": "text",
+      "content": "Nếu F(x) là một nguyên hàm của f(x) trên K thì mọi nguyên hàm của f(x) trên K đều có dạng F(x) + C (C là hằng số). Họ các nguyên hàm này kí hiệu ∫f(x)dx = F(x) + C."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất: ∫kf(x)dx = k∫f(x)dx (k ≠ 0) và ∫[f(x) ± g(x)]dx = ∫f(x)dx ± ∫g(x)dx."
+    },
+    {
+      "type": "text",
+      "content": "Bảng nguyên hàm thường gặp: ∫x^α dx = x^(α+1)/(α+1) + C (α ≠ −1); ∫(1/x)dx = ln|x| + C; ∫e^x dx = e^x + C; ∫a^x dx = a^x/ln a + C (0 < a ≠ 1); ∫cos x dx = sin x + C; ∫sin x dx = −cos x + C; ∫(1/cos²x)dx = tan x + C; ∫(1/sin²x)dx = −cot x + C."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Ví dụ 1: Trong F(x) = x³/3 − x² và G(x) = x³/3 + x², hàm số nào là một nguyên hàm của f(x) = x² − 2x trên ℝ?",
+      "proof": true,
+      "steps": [
+        "F'(x) = x² − 2x = f(x) với mọi x, nên F là nguyên hàm của f.",
+        "G'(x) = x² + 2x ≠ f(x) (chẳng hạn G'(1) = 3 ≠ −1), nên G không là nguyên hàm."
+      ]
+    },
+    {
+      "problem": "Ví dụ 2: Tìm một nguyên hàm của f(x) = x² trên ℝ rồi suy ra ∫x²dx.",
+      "proof": true,
+      "steps": [
+        "(x³/3)' = x², nên F(x) = x³/3 là một nguyên hàm.",
+        "∫x²dx = x³/3 + C."
+      ]
+    },
+    {
+      "problem": "Ví dụ 3: Tính ∫3x²dx và ∫(−3/2)x²dx.",
+      "proof": true,
+      "steps": [
+        "∫3x²dx = 3·x³/3 + C = x³ + C.",
+        "∫(−3/2)x²dx = −(3/2)·x³/3 + C = −x³/2 + C."
+      ]
+    },
+    {
+      "problem": "Ví dụ 4: Tính ∫(x² + x)dx và ∫(4x³ − 3x²)dx.",
+      "proof": true,
+      "steps": [
+        "∫(x² + x)dx = x³/3 + x²/2 + C.",
+        "∫(4x³ − 3x²)dx = x⁴ − x³ + C."
+      ]
+    },
+    {
+      "problem": "Ví dụ 5: Máy bay có vận tốc v(t) = 5 + 3t (m/s) khi chạy đà, bắt đầu từ t = 0 và rời đường băng sau 30 giây. Tính quãng đường đã đi.",
+      "expr": "3/2*30*30+5*30",
+      "answer": "1500",
+      "steps": [
+        "S(t) = ∫(5 + 3t)dt = 5t + (3/2)t² + C.",
+        "Từ S(0) = 0 suy ra C = 0, nên S(t) = (3/2)t² + 5t.",
+        "S(30) = (3/2)·30² + 5·30 = 1500 (m)."
+      ]
+    },
+    {
+      "problem": "Ví dụ 6: Tìm ∫√x dx (x > 0), ∫(1/x³)dx và ∫(2x² + 3/√x)dx.",
+      "proof": true,
+      "steps": [
+        "∫√x dx = (2/3)x√x + C.",
+        "∫(1/x³)dx = ∫x^(−3)dx = −1/(2x²) + C.",
+        "∫(2x² + 3/√x)dx = (2/3)x³ + 6√x + C."
+      ]
+    },
+    {
+      "problem": "Ví dụ 7: Tìm ∫(cos x + sin x)dx và ∫(2cos x − 1/cos²x)dx.",
+      "proof": true,
+      "steps": [
+        "∫(cos x + sin x)dx = sin x − cos x + C.",
+        "∫(2cos x − 1/cos²x)dx = 2sin x − tan x + C."
+      ]
+    },
+    {
+      "problem": "Ví dụ 8: Tìm ∫2^x dx, ∫(1/3^x)dx và ∫(2e^x − 5^x)dx.",
+      "proof": true,
+      "steps": [
+        "∫2^x dx = 2^x/ln 2 + C.",
+        "∫(1/3^x)dx = −1/(3^x ln 3) + C.",
+        "∫(2e^x − 5^x)dx = 2e^x − 5^x/ln 5 + C."
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong F(x) = x³/3 − x² và G(x) = x³/3 + x², hàm số nào là một nguyên hàm của f(x) = x² − 2x trên ℝ?",
+      "choices": [
+        "Chỉ F(x)",
+        "Chỉ G(x)",
+        "Cả hai",
+        "Không hàm nào"
+      ],
+      "answer": 0,
+      "explain": "F'(x) = x² − 2x = f(x), còn G'(x) = x² + 2x ≠ f(x).",
+      "wrong_explain": {
+        "1": "G'(x) = x² + 2x khác f(x).",
+        "2": "G không phải nguyên hàm vì G'(x) ≠ f(x).",
+        "3": "F'(x) = f(x) nên F là nguyên hàm."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số nào là nguyên hàm của f(x) = x + 1/x trên khoảng (0; +∞)?",
+      "choices": [
+        "F(x) = x²/2 + ln x",
+        "G(x) = x²/2 − ln x",
+        "F(x) = x²/2 + 1/x²",
+        "G(x) = 1 + 1/x²"
+      ],
+      "answer": 0,
+      "explain": "F'(x) = x + 1/x = f(x) với x > 0.",
+      "wrong_explain": {
+        "1": "G'(x) = x − 1/x ≠ f(x).",
+        "2": "Đạo hàm của 1/x² là −2/x³, không phải 1/x.",
+        "3": "Đạo hàm của 1 + 1/x² là −2/x³ ≠ f(x)."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nếu F(x) là một nguyên hàm của f(x) trên K thì mọi nguyên hàm của f(x) trên K có dạng?",
+      "choices": [
+        "F(x) + C, với C là hằng số",
+        "F(x)·C",
+        "C·f(x)",
+        "F(x) + 1"
+      ],
+      "answer": 0,
+      "explain": "Hai nguyên hàm của cùng một hàm sai khác nhau một hằng số.",
+      "wrong_explain": {
+        "1": "Nhân với C không cho nguyên hàm tổng quát.",
+        "2": "C·f(x) là đạo hàm của C·F(x), không phải họ nguyên hàm.",
+        "3": "Chỉ cộng 1 là chưa đủ cho mọi hằng số C."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ví dụ 5: quãng đường máy bay đi được sau 30 giây với S(t) = (3/2)t² + 5t là?",
+      "expr": "3/2*30*30+5*30",
+      "answer": "1500",
+      "explain": "S(30) = 1500 (m)."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "∫x²dx bằng?",
+      "choices": [
+        "x³/3 + C",
+        "x³ + C",
+        "2x + C",
+        "x²/3 + C"
+      ],
+      "answer": 0,
+      "explain": "(x³/3)' = x² nên ∫x²dx = x³/3 + C.",
+      "wrong_explain": {
+        "1": "(x³)' = 3x² ≠ x².",
+        "2": "Đạo hàm của 2x là 2, không phải x².",
+        "3": "(x²/3)' = 2x/3 ≠ x²."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "∫3x²dx bằng?",
+      "choices": [
+        "x³ + C",
+        "3x³ + C",
+        "x³/3 + C",
+        "6x + C"
+      ],
+      "answer": 0,
+      "explain": "∫3x²dx = 3·x³/3 + C = x³ + C.",
+      "wrong_explain": {
+        "1": "Nguyên hàm của 3x² là x³, không phải 3x³.",
+        "2": "Đã quên nhân lại hệ số 3 khi lấy nguyên hàm.",
+        "3": "6x là đạo hàm của 3x², không phải nguyên hàm."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "∫(4x³ − 3x²)dx bằng?",
+      "choices": [
+        "x⁴ − x³ + C",
+        "x⁴ − x² + C",
+        "4x⁴ − 3x³ + C",
+        "12x² − 6x + C"
+      ],
+      "answer": 0,
+      "explain": "∫4x³dx = x⁴, ∫3x²dx = x³ nên kết quả là x⁴ − x³ + C.",
+      "wrong_explain": {
+        "1": "Nguyên hàm của −3x² là −x³, không phải −x².",
+        "2": "Nguyên hàm của 4x³ là x⁴, không phải 4x⁴.",
+        "3": "Đó là đạo hàm của 4x³ − 3x², không phải nguyên hàm."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "∫(3x² + 1)dx bằng?",
+      "choices": [
+        "x³ + x + C",
+        "6x + C",
+        "x³/3 + x + C",
+        "3x³ + x + C"
+      ],
+      "answer": 0,
+      "explain": "∫3x²dx = x³ và ∫1dx = x nên kết quả là x³ + x + C.",
+      "wrong_explain": {
+        "1": "6x là đạo hàm của 3x², không phải nguyên hàm.",
+        "2": "∫3x²dx = x³, không phải x³/3.",
+        "3": "∫3x²dx = x³, không phải 3x³."
+      }
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "∫(2x − 1)²dx bằng?",
+      "choices": [
+        "(2x − 1)³/6 + C",
+        "(2x − 1)³/3 + C",
+        "(2x − 1)²/2 + C",
+        "2x³ + C"
+      ],
+      "answer": 0,
+      "explain": "Đạo hàm của (2x − 1)³/6 là 3(2x − 1)²·2/6 = (2x − 1)².",
+      "wrong_explain": {
+        "1": "Đạo hàm của (2x − 1)³/3 là 2(2x − 1)², gấp đôi.",
+        "2": "Đạo hàm của (2x − 1)²/2 là 2(2x − 1), không phải (2x − 1)².",
+        "3": "Đạo hàm của 2x³ là 6x², không đúng."
+      }
+    },
+    {
+      "id": "q10",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Với α ≠ −1, ∫x^α dx bằng?",
+      "choices": [
+        "x^(α+1)/(α+1) + C",
+        "x^(α−1)/(α−1) + C",
+        "α·x^(α−1) + C",
+        "x^α/α + C"
+      ],
+      "answer": 0,
+      "explain": "Công thức nguyên hàm của lũy thừa: ∫x^α dx = x^(α+1)/(α+1) + C với α ≠ −1.",
+      "wrong_explain": {
+        "1": "Bậc phải tăng lên 1, không giảm.",
+        "2": "Đây là đạo hàm của x^α, không phải nguyên hàm.",
+        "3": "Mẫu phải là α + 1, không phải α."
+      }
+    },
+    {
+      "id": "q11",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "∫(1/x)dx bằng?",
+      "choices": [
+        "ln|x| + C",
+        "1/x² + C",
+        "−1/x² + C",
+        "e^x + C"
+      ],
+      "answer": 0,
+      "explain": "Theo bảng nguyên hàm, ∫(1/x)dx = ln|x| + C.",
+      "wrong_explain": {
+        "1": "1/x² không phải nguyên hàm của 1/x.",
+        "2": "−1/x² không phải nguyên hàm của 1/x.",
+        "3": "e^x không phải nguyên hàm của 1/x."
+      }
+    },
+    {
+      "id": "q12",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "∫√x dx (x > 0) bằng?",
+      "choices": [
+        "(2/3)x√x + C",
+        "2√x + C",
+        "x√x + C",
+        "(1/2)x√x + C"
+      ],
+      "answer": 0,
+      "explain": "∫x^(1/2)dx = x^(3/2)/(3/2) + C = (2/3)x√x + C.",
+      "wrong_explain": {
+        "1": "Đạo hàm của 2√x là 1/√x ≠ √x.",
+        "2": "Đạo hàm của x√x là (3/2)√x, không phải √x.",
+        "3": "Hệ số phải là 2/3."
+      }
+    },
+    {
+      "id": "q13",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "∫(1/x³)dx (x ≠ 0) bằng?",
+      "choices": [
+        "−1/(2x²) + C",
+        "−1/(3x⁴) + C",
+        "1/(2x²) + C",
+        "ln|x³| + C"
+      ],
+      "answer": 0,
+      "explain": "∫x^(−3)dx = x^(−2)/(−2) + C = −1/(2x²) + C.",
+      "wrong_explain": {
+        "1": "Đạo hàm của −1/(3x⁴) là 4/(3x⁵), không đúng.",
+        "2": "Dấu âm bị mất.",
+        "3": "∫x^α với α = −3 không cho logarit."
+      }
+    },
+    {
+      "id": "q14",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "∫(cos x + sin x)dx bằng?",
+      "choices": [
+        "sin x − cos x + C",
+        "−sin x + cos x + C",
+        "sin x + cos x + C",
+        "−sin x − cos x + C"
+      ],
+      "answer": 0,
+      "explain": "∫cos x dx = sin x + C và ∫sin x dx = −cos x + C.",
+      "wrong_explain": {
+        "1": "Dấu của hai số hạng bị đảo.",
+        "2": "∫sin x dx = −cos x, không phải cos x.",
+        "3": "∫cos x dx = sin x, không phải −sin x."
+      }
+    },
+    {
+      "id": "q15",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "∫(2cos x − 1/cos²x)dx bằng?",
+      "choices": [
+        "2sin x − tan x + C",
+        "2sin x + tan x + C",
+        "−2sin x − tan x + C",
+        "2cos x − tan x + C"
+      ],
+      "answer": 0,
+      "explain": "∫2cos x dx = 2sin x và ∫(1/cos²x)dx = tan x.",
+      "wrong_explain": {
+        "1": "Dấu của tan x bị sai.",
+        "2": "Dấu của sin x bị sai.",
+        "3": "∫cos x dx = sin x, không phải cos x."
+      }
+    },
+    {
+      "id": "q16",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "∫2^x dx bằng?",
+      "choices": [
+        "2^x/ln 2 + C",
+        "2^x ln 2 + C",
+        "x·2^(x−1) + C",
+        "2^x + C"
+      ],
+      "answer": 0,
+      "explain": "∫a^x dx = a^x/ln a + C với a = 2.",
+      "wrong_explain": {
+        "1": "Phải chia cho ln 2, không nhân.",
+        "2": "Nguyên hàm của a^x không phải x·a^(x−1).",
+        "3": "Đạo hàm của 2^x là 2^x ln 2, không phải 2^x."
+      }
+    },
+    {
+      "id": "q17",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "∫(2e^x − 5^x)dx bằng?",
+      "choices": [
+        "2e^x − 5^x/ln 5 + C",
+        "2e^x − 5^x ln 5 + C",
+        "2e^x − 5^x + C",
+        "e^x − 5^x/ln 5 + C"
+      ],
+      "answer": 0,
+      "explain": "∫2e^x dx = 2e^x và ∫5^x dx = 5^x/ln 5.",
+      "wrong_explain": {
+        "1": "Phải chia cho ln 5, không nhân.",
+        "2": "Nguyên hàm của 5^x phải chia cho ln 5.",
+        "3": "Hệ số của e^x phải là 2."
+      }
+    },
+    {
+      "id": "q18",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vận dụng: doanh thu R(x) có R'(x) = 300 − 0,1x, R(0) = 0. Doanh thu khi bán 1 000 chip (triệu đồng) là?",
+      "expr": "300*1000-0.05*1000*1000",
+      "answer": "250000",
+      "explain": "R(x) = 300x − 0,05x² + C, R(0) = 0 nên C = 0; R(1000) = 300000 − 50000 = 250000 (triệu đồng)."
+    },
+    {
+      "id": "q19",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "BT 4.1a: F(x) = x ln x có là nguyên hàm của f(x) = 1 + ln x trên (0; +∞)?",
+      "choices": [
+        "Có, vì F'(x) = ln x + 1 = f(x)",
+        "Không, vì F'(x) = x",
+        "Không, vì F không xác định",
+        "Có, vì F'(x) = x/ln x"
+      ],
+      "answer": 0,
+      "explain": "(x ln x)' = ln x + x·(1/x) = ln x + 1 = f(x).",
+      "wrong_explain": {
+        "1": "Đạo hàm của x ln x là ln x + 1, không phải x.",
+        "2": "F xác định trên (0; +∞).",
+        "3": "Đạo hàm đúng là ln x + 1, không phải x/ln x."
+      }
+    },
+    {
+      "id": "q20",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "BT 4.1b: F(x) = e^(sin x) có là nguyên hàm của f(x) = e^(cos x) trên ℝ?",
+      "choices": [
+        "Không, vì F'(x) = cos x·e^(sin x) ≠ f(x)",
+        "Có, vì F'(x) = e^(cos x)",
+        "Có, vì F(x) = f(x)",
+        "Không, vì f(x) không liên tục"
+      ],
+      "answer": 0,
+      "explain": "F'(x) = cos x·e^(sin x), khác e^(cos x) (chẳng hạn tại x = 0: F'(0) = 1 ≠ e).",
+      "wrong_explain": {
+        "1": "F'(x) = cos x·e^(sin x), không phải e^(cos x).",
+        "2": "Hai hàm F và f khác nhau nên F không thể là nguyên hàm của f.",
+        "3": "f(x) = e^(cos x) liên tục trên ℝ."
+      }
+    },
+    {
+      "id": "q21",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "BT 4.2a: ∫(3x² + 2x − 1)dx bằng?",
+      "choices": [
+        "x³ + x² − x + C",
+        "x³ + 2x² − x + C",
+        "3x³ + 2x² − x + C",
+        "6x + 2 + C"
+      ],
+      "answer": 0,
+      "explain": "∫3x²dx = x³, ∫2xdx = x², ∫(−1)dx = −x.",
+      "wrong_explain": {
+        "1": "Hệ số của x² phải là 1 vì ∫2x dx = x².",
+        "2": "Hệ số của x³ phải là 1 vì ∫3x² dx = x³.",
+        "3": "Phải lấy nguyên hàm, không nhân hệ số."
+      }
+    },
+    {
+      "id": "q22",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "BT 4.2c: ∫(2x + 1)²dx bằng?",
+      "choices": [
+        "(2x + 1)³/6 + C",
+        "(2x + 1)³/3 + C",
+        "(2x + 1)²/4 + C",
+        "2x³ + C"
+      ],
+      "answer": 0,
+      "explain": "Đạo hàm của (2x + 1)³/6 là (2x + 1)²·(3·2)/6 = (2x + 1)².",
+      "wrong_explain": {
+        "1": "Đạo hàm của (2x + 1)³/3 là 2(2x + 1)², gấp đôi.",
+        "2": "Đạo hàm của (2x + 1)²/4 là (2x + 1), không đúng.",
+        "3": "Đạo hàm của 2x³ là 6x², không đúng."
+      }
+    },
+    {
+      "id": "q23",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "BT 4.3c: ∫((2x + 1)²/x²)dx bằng?",
+      "choices": [
+        "4x + 4ln|x| − 1/x + C",
+        "4x + 4ln|x| + 1/x + C",
+        "2x + ln|x| − 1/x + C",
+        "4x + ln|x| − 1/x + C"
+      ],
+      "answer": 0,
+      "explain": "(2x + 1)²/x² = 4 + 4/x + 1/x², nên nguyên hàm là 4x + 4ln|x| − 1/x + C.",
+      "wrong_explain": {
+        "1": "Dấu của 1/x bị sai: ∫1/x² dx = −1/x.",
+        "2": "Hệ số của x và ln|x| bị sai.",
+        "3": "Hệ số của ln|x| phải là 4."
+      }
+    },
+    {
+      "id": "q24",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "BT 4.4a: ∫(2cos x − 3/sin²x)dx bằng?",
+      "choices": [
+        "2sin x + 3cot x + C",
+        "2sin x − 3cot x + C",
+        "2sin x − 3tan x + C",
+        "−2sin x + 3cot x + C"
+      ],
+      "answer": 0,
+      "explain": "∫(1/sin²x)dx = −cot x, nên ∫(−3/sin²x)dx = 3cot x.",
+      "wrong_explain": {
+        "1": "Dấu của cot x bị sai: ∫(1/sin²x)dx = −cot x.",
+        "2": "Không có tan x khi lấy nguyên hàm của 1/sin²x.",
+        "3": "Dấu của sin x bị sai."
+      }
+    },
+    {
+      "id": "q25",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "BT 4.5: f(x) có f'(x) = 2x + 1/x² và f(1) = 1. Giá trị f(4) là?",
+      "expr": "4*4-1/4+1",
+      "answer": "67/4",
+      "explain": "f(x) = x² − 1/x + C; f(1) = 1 suy ra C = 1; f(4) = 16 − 1/4 + 1 = 67/4."
+    },
+    {
+      "id": "q26",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "BT 4.6: hệ số góc tiếp tuyến tại M(x; f(x)) là k = (x − 1)², và M trùng gốc toạ độ khi nằm trên trục tung. Biểu thức f(x) là?",
+      "choices": [
+        "f(x) = (x − 1)³/3 + 1/3",
+        "f(x) = (x − 1)³/3 − 1/3",
+        "f(x) = (x − 1)²/2 + 1/2",
+        "f(x) = (x − 1)³"
+      ],
+      "answer": 0,
+      "explain": "f(x) = ∫(x − 1)²dx = (x − 1)³/3 + C; f(0) = 0 nên C = 1/3.",
+      "wrong_explain": {
+        "1": "Hằng số phải là +1/3 vì f(0) = 0.",
+        "2": "Nguyên hàm của (x − 1)² có bậc 3, không phải bậc 2.",
+        "3": "Đạo hàm của (x − 1)³ là 3(x − 1)², không phải (x − 1)²."
+      }
+    },
+    {
+      "id": "q27",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "BT 4.7a: viên đạn có v(t) = 160 − 9,8t (m/s). Độ cao sau t = 5 giây (tính từ mặt đất) là?",
+      "expr": "160*5-4.9*5*5",
+      "answer": "677.5",
+      "explain": "h(t) = 160t − 4,9t²; h(5) = 800 − 122,5 = 677,5 (m)."
+    },
+    {
+      "id": "q28",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "BT 4.7b: độ cao lớn nhất của viên đạn (đúng đến phân số) là?",
+      "expr": "256000/392",
+      "answer": "32000/49",
+      "explain": "h(t) đạt cực đại tại t = 160/9,8; h_max = 160²/(4·9,8) = 32000/49 ≈ 653,1 (m)."
+    }
+  ]
+}
