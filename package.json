@@ -9,7 +9,7 @@
     "start": "electron .",
     "validate": "node tools/validate-content.js",
     "test": "node --test tests/license.test.js",
-    "dist:win": "electron-builder --win portable",
+    "dist:win": "electron-builder --win nsis",
     "dist:keygen": "electron-builder --win portable --config keygen/builder.json"
   },
   "build": {
@@ -23,8 +23,18 @@
       "package.json"
     ],
     "win": {
-      "target": "portable",
-      "artifactName": "GiaoTrinhTHCS-${version}.exe"
+      "target": "nsis",
+      "artifactName": "GiaoTrinhTHCS-Setup-${version}.exe"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "perMachine": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Giáo trình THCS",
+      "uninstallDisplayName": "Giáo trình THCS",
+      "deleteAppDataOnUninstall": false
     }
   },
   "devDependencies": {
