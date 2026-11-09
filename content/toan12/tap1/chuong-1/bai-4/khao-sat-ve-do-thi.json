@@ -69,6 +69,17 @@
       ],
       "answer": "-1/2",
       "figure": "figures/b4-phan-thuc.svg"
+    },
+    {
+      "problem": "Khảo sát và vẽ đồ thị y = (x² − x − 1)/(x − 2). Tìm giá trị cực tiểu của hàm số.",
+      "expr": "3*3-3-1",
+      "steps": [
+        "Viết y = x + 1 + 1/(x − 2); y' = 1 − 1/(x − 2)² = 0 khi x = 1 hoặc x = 3.",
+        "Hàm số đạt cực đại tại x = 1, y_CĐ = 1; đạt cực tiểu tại x = 3, y_CT = (9 − 3 − 1)/(3 − 2) = 5.",
+        "Tiệm cận đứng x = 2, tiệm cận xiên y = x + 1."
+      ],
+      "answer": "5",
+      "figure": "figures/b4-phan-thuc-2.svg"
     }
   ],
   "items": [
@@ -166,6 +177,26 @@
         "1": "Gốc O chỉ là tâm đối xứng trong những trường hợp riêng, không phải với mọi hàm phân thức.",
         "2": "Giao điểm với trục tung không liên quan đến tính đối xứng của đồ thị.",
         "3": "Hoành độ 1 không cố định cho mọi hàm phân thức; tâm đối xứng phụ thuộc vào các tiệm cận."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 1: hàm số y = −2x³ + 3x² − 5x có cực trị không?",
+      "choices": [
+        "Không có cực trị, vì y' = −6x² + 6x − 5 < 0 với mọi x",
+        "Có một cực đại",
+        "Có một cực tiểu",
+        "Có cả cực đại và cực tiểu"
+      ],
+      "answer": 0,
+      "explain": "Biệt thức của y' là 36 − 120 < 0 nên y' < 0 với mọi x; hàm số nghịch biến trên ℝ và không có cực trị.",
+      "wrong_explain": {
+        "1": "Hàm số không có điểm nào mà y' đổi dấu, nên không có cực đại.",
+        "2": "Không có điểm nào mà y' đổi dấu từ âm sang dương, nên không có cực tiểu.",
+        "3": "Hàm số không có cực trị vì y' không đổi dấu."
       }
     }
   ]

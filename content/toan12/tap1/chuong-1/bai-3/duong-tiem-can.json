@@ -169,6 +169,44 @@
       "expr": "3",
       "answer": "3",
       "explain": "Ta có y = −x + 3 − 1/(1 − x). Vì 1/(1 − x) → 0 khi x → ±∞, nên b = 3."
+    },
+    {
+      "id": "q08",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Luyện tập 1: tiệm cận ngang của đồ thị y = (2x − 1)/(x − 1) là y = ?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "lim (2x − 1)/(x − 1) = 2 khi x → ±∞, nên tiệm cận ngang là y = 2."
+    },
+    {
+      "id": "q09",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Luyện tập 2: tiệm cận đứng của đồ thị y = (2x + 1)/(x − 4) là x = ?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Mẫu số x − 4 = 0 khi x = 4, tử số 2·4 + 1 = 9 khác 0 nên x = 4 là tiệm cận đứng."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tình huống mở đầu: khối lượng chất phóng xạ m(t) = 15e^(−0,012t) (gam). Khi t → +∞ thì m(t) tiến tới giá trị nào, và điều này nói lên điều gì?",
+      "choices": [
+        "0: khối lượng chất phóng xạ tiến dần về 0",
+        "15: khối lượng không đổi",
+        "+∞: khối lượng tăng không giới hạn",
+        "−15: khối lượng âm"
+      ],
+      "answer": 0,
+      "explain": "Vì e^(−0,012t) → 0 khi t → +∞ nên m(t) → 0. Đường thẳng y = 0 là tiệm cận ngang: chất phóng xạ phân rã dần hết.",
+      "wrong_explain": {
+        "1": "Đây là giá trị tại t = 0 (m(0) = 15), không phải giới hạn khi t → +∞.",
+        "2": "Đồ thị giảm dần, nên khối lượng không tăng không giới hạn.",
+        "3": "Khối lượng không thể âm; đường y = −15 không liên quan đến bài toán."
+      }
     }
   ]
 }

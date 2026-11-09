@@ -220,6 +220,26 @@ def figures():
     p.text(0.2, 2.6, "y = f'(x)", 13)
     write('bt-1-6.svg', p)
 
+    # Bài 2 — Hình 1.16: y = x³ − 2x² + 1 trên đoạn [−1; 2]
+    p = Plot((-1.5, 2.5), (-2.5, 2.5))
+    p.axes()
+    p.curve(lambda x: x ** 3 - 2 * x * x + 1, linspace(-1, 2))
+    p.point(-1, -2, '(−1; −2)', 8, 14)
+    p.point(0, 1, '(0; 1)', 8, -8)
+    p.point(2, 1, '(2; 1)', -40, -8)
+    write('b2-gtln-gtnn.svg', p)
+
+    # Bài 4 — Ví dụ 4: y = (x² − x − 1)/(x − 2), tiệm cận x = 2 và y = x + 1
+    p = Plot((-3, 6), (-4, 7))
+    p.axes()
+    p.vline(2, 'x = 2')
+    p.curve(lambda x: x + 1, [-3, 6], color=DASH)
+    p.text(4.2, 5.3, 'y = x + 1', 13)
+    p.curve(lambda x: (x * x - x - 1) / (x - 2), linspace(-3, 1.98) + linspace(2.02, 6))
+    p.point(1, 1, '(1; 1)', 8, -8)
+    p.point(3, 5, '(3; 5)', 8, -8)
+    write('b4-phan-thuc-2.svg', p)
+
 
 if __name__ == '__main__':
     figures()
