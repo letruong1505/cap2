@@ -1,0 +1,687 @@
+{
+  "id": "t12-t2-on-tap-cuoi-nam-bai-tap",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 12, tập 2",
+  "chapter": "Bài tập ôn tập cuối năm",
+  "lesson": "Bài tập ôn tập cuối năm",
+  "section": "A. Trắc nghiệm; B. Tự luận",
+  "bookPage": 90,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Ôn tập cuối năm tổng hợp: khảo sát hàm số và ứng dụng tìm giá trị lớn nhất, nhỏ nhất; nguyên hàm, tích phân, diện tích và thể tích; vectơ, phương trình mặt phẳng và đường thẳng trong không gian; thống kê và xác suất."
+    },
+    {
+      "type": "text",
+      "content": "Phương pháp: với hàm số, lập bảng biến thiên hoặc xét đạo hàm trên đoạn; với tích phân, tìm nguyên hàm rồi áp dụng công thức Newton–Leibniz; với hình học không gian, chuyển về tọa độ và kiểm tra vectơ pháp tuyến, vectơ chỉ phương."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "1: khoảng nghịch biến của hàm số y = x³ − 6x² + 9x + 1 là?",
+      "choices": [
+        "(−∞; 1)",
+        "(3; +∞)",
+        "(1; 3)",
+        "(−∞; +∞)"
+      ],
+      "answer": 2,
+      "explain": "y' = 3x² − 12x + 9 = 3(x − 1)(x − 3) < 0 khi 1 < x < 3, nên hàm nghịch biến trên (1; 3).",
+      "wrong_explain": {
+        "0": "Trên (−∞; 1) đạo hàm dương, hàm đồng biến.",
+        "1": "Trên (3; +∞) đạo hàm dương, hàm đồng biến.",
+        "3": "Đạo hàm đổi dấu nên hàm không nghịch biến trên toàn ℝ."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2: giá trị lớn nhất M của hàm số y = (x² + 3)/(x − 1) trên [2; 4] là?",
+      "choices": [
+        "M = 6",
+        "M = 7",
+        "M = 19/3",
+        "M = 20/3"
+      ],
+      "answer": 1,
+      "explain": "y' = (x − 3)(x + 1)/(x − 1)² và y(2) = 7, y(4) = 19/3, y(3) = 6 nên M = 7 tại x = 2.",
+      "wrong_explain": {
+        "0": "y(2) = 7 > 6, nên M không thể bằng 6.",
+        "2": "19/3 là y(4), nhưng y(2) = 7 lớn hơn.",
+        "3": "20/3 không phải giá trị của hàm số trên đoạn [2; 4]."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "3: tổng số đường tiệm cận của đồ thị y = √(x² − 1)/x là?",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "explain": "Tập xác định |x| ≥ 1, giới hạn khi x → +∞ là 1 và khi x → −∞ là −1, nên có hai tiệm cận ngang; không có tiệm cận đứng vì x = 0 không thuộc tập xác định.",
+      "wrong_explain": {
+        "0": "Hàm số có hai tiệm cận ngang y = 1 và y = −1.",
+        "1": "Chỉ đếm y = 1, bỏ sót y = −1 khi x → −∞.",
+        "3": "Không có tiệm cận đứng vì x = 0 không thuộc tập xác định."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "4: đồ thị trong hình là của hàm số nào?",
+      "choices": [
+        "y = −x³ + 3x² + 1",
+        "y = x³ − 3x² + 3",
+        "y = −x² + 2x + 1",
+        "y = (x + 1)/(x − 1)"
+      ],
+      "answer": 1,
+      "explain": "Đồ thị có dạng bậc ba với hệ số dương, cực đại gần trục tung và điểm cực tiểu bên phải; y = x³ − 3x² + 3 có y' = 3x(x − 2), cực đại tại x = 0 và cực tiểu tại x = 2.",
+      "wrong_explain": {
+        "0": "Hệ số của x³ âm nên đồ thị đi xuống bên phải, trái với hình.",
+        "2": "Đây là hàm bậc hai, đồ thị là parabol.",
+        "3": "Đây là hàm phân thức, đồ thị không có dạng đường cong bậc ba."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5: cho f(x) = x² + 3. Khẳng định đúng là?",
+      "choices": [
+        "∫f(x)dx = 2x + C",
+        "∫f(x)dx = x² + 3x + C",
+        "∫f(x)dx = x³ + 3x + C",
+        "∫f(x)dx = x³/3 + 3x + C"
+      ],
+      "answer": 3,
+      "explain": "∫(x² + 3)dx = x³/3 + 3x + C.",
+      "wrong_explain": {
+        "0": "Nguyên hàm của x² là x³/3, không phải 2x.",
+        "1": "Nguyên hàm của x² là x³/3, không phải x².",
+        "2": "Nguyên hàm của x² là x³/3, không phải x³; nguyên hàm của 3 là 3x."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "6: f(0) = 1, f'(x) = 2sin x + 1. Giá trị ∫_0^{π/2} f(x)dx là?",
+      "choices": [
+        "(π² + 12π − 16)/8",
+        "(π² − 4π + 16)/8",
+        "(π² + 6π − 8)/4",
+        "(π² − 2π + 8)/4"
+      ],
+      "answer": 0,
+      "explain": "f(x) = −2cos x + x + C, từ f(0) = 1 suy ra C = 3. Khi đó ∫_0^{π/2} f(x)dx = π²/8 + 3π/2 − 2 = (π² + 12π − 16)/8.",
+      "wrong_explain": {
+        "1": "Hằng số hoặc hệ số của π không khớp: tích phân đúng là (π² + 12π − 16)/8.",
+        "2": "Hệ số của π² phải là 1/8, không phải 1/4.",
+        "3": "Hệ số của π² phải là 1/8 và hằng số phải là −2 = −16/8."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "7: hình phẳng S giới hạn bởi y = f(x), y = 0, x = −1 và x = 4. Khẳng định đúng là?",
+      "choices": [
+        "S = ∫_{−1}^{1} f(x)dx + ∫_{1}^{4} f(x)dx",
+        "S = ∫_{−1}^{1} f(x)dx − ∫_{1}^{4} f(x)dx",
+        "S = −∫_{−1}^{1} f(x)dx + ∫_{1}^{4} f(x)dx",
+        "S = −∫_{−1}^{1} f(x)dx − ∫_{1}^{4} f(x)dx"
+      ],
+      "answer": 1,
+      "explain": "Trên [−1; 1] đồ thị nằm trên trục hoành nên lấy ∫ với dấu dương; trên [1; 4] đồ thị nằm dưới trục hoành nên lấy dấu trừ.",
+      "wrong_explain": {
+        "0": "Trên [1; 4] đồ thị nằm dưới trục hoành, phải lấy dấu trừ.",
+        "2": "Dấu của hai tích phân bị ngược so với vị trí đồ thị.",
+        "3": "Trên [−1; 1] đồ thị nằm trên trục hoành nên không được lấy dấu trừ."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "8: hình phẳng H giới hạn bởi y = 2√x, y = 0, x = 0, x = 4 quay quanh Ox. Thể tích V là?",
+      "choices": [
+        "V = 32",
+        "V = 32π",
+        "V = 32/3",
+        "V = 32π/3"
+      ],
+      "answer": 1,
+      "explain": "V = π∫_0^4 (2√x)² dx = π∫_0^4 4x dx = 32π.",
+      "wrong_explain": {
+        "0": "Quên nhân với π khi tính thể tích khối tròn xoay.",
+        "2": "32/3 là diện tích hình H, không phải thể tích.",
+        "3": "Hệ số sai: π∫_0^4 4x dx = 32π."
+      }
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "9: tứ diện ABCD, G là trọng tâm tam giác BCD, M là trung điểm AG. Khi đó MA + MB + MC + MD bằng?",
+      "choices": [
+        "MG",
+        "2MG",
+        "3MG",
+        "4MG"
+      ],
+      "answer": 1,
+      "explain": "Tổng bằng G − A, mà MG = (G − A)/2 nên tổng bằng 2MG.",
+      "wrong_explain": {
+        "0": "Tổng bằng 2MG, không phải MG.",
+        "2": "Hệ số đúng là 2, vì G − A = 2MG.",
+        "3": "Hệ số đúng là 2, không phải 4."
+      }
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "10: hình hộp ABCD.A'B'C'D' có tâm O, G là trọng tâm tam giác BDA'. Tỉ số AG/AO bằng?",
+      "choices": [
+        "1/3",
+        "1/2",
+        "2/3",
+        "3/4"
+      ],
+      "answer": 2,
+      "explain": "Đặt u = AB, v = AD, w = AA'. Khi đó AG = (u + v + w)/3 và AO = (u + v + w)/2, nên AG/AO = 2/3.",
+      "wrong_explain": {
+        "0": "1/3 không khớp: AG = (u + v + w)/3 còn AO = (u + v + w)/2.",
+        "1": "1/2 không khớp: AG = (u + v + w)/3 và AO = (u + v + w)/2.",
+        "3": "3/4 không khớp: tỉ số là 2/3."
+      }
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "11: đường thẳng d: x = 2 − t, y = 3, z = −1 + 2t và mặt phẳng (P): 2x − y − 2z + 1 = 0. Côsin của góc giữa d và (P) là?",
+      "choices": [
+        "2√5/5",
+        "√5/5",
+        "2√3/5",
+        "√3/5"
+      ],
+      "answer": 1,
+      "explain": "Vectơ chỉ phương u = (−1; 0; 2), vectơ pháp tuyến n = (2; −1; −2). sin φ = |u·n|/(|u||n|) = 6/(3√5) = 2√5/5, nên cos φ = √(1 − 4/5) = √5/5.",
+      "wrong_explain": {
+        "0": "2√5/5 là sin của góc giữa d và (P), không phải côsin.",
+        "2": "2√3/5 không khớp với |u·n|/(|u||n|).",
+        "3": "√3/5 không khớp với tính toán từ u = (−1; 0; 2) và n = (2; −1; −2)."
+      }
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "12: M(2; −1; 3). A, B, C lần lượt là hình chiếu vuông góc của M trên Ox, Oy, Oz. Phương trình mặt phẳng (ABC) là?",
+      "choices": [
+        "3x − 6y + 2z + 6 = 0",
+        "3x − 6y + 2z − 6 = 0",
+        "3x − 2y + 2z − 1 = 0",
+        "3x − 6y + 2z − 1 = 0"
+      ],
+      "answer": 1,
+      "explain": "A(2; 0; 0), B(0; −1; 0), C(0; 0; 3). Phương trình đoạn chắn x/2 + y/(−1) + z/3 = 1 ⇔ 3x − 6y + 2z − 6 = 0.",
+      "wrong_explain": {
+        "0": "Hằng số sai: A(2; 0; 0) không thuộc mặt phẳng 3x − 6y + 2z + 6 = 0.",
+        "2": "Hệ số của y sai: B(0; −1; 0) không thuộc mặt phẳng 3x − 2y + 2z − 1 = 0.",
+        "3": "Hằng số sai: C(0; 0; 3) không thuộc mặt phẳng 3x − 6y + 2z − 1 = 0."
+      }
+    },
+    {
+      "id": "q13",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "13a: mẫu số liệu ghép nhóm thời gian đọc sách có nhóm đầu [0; 2) và nhóm cuối [8; 10). Khoảng biến thiên là?",
+      "choices": [
+        "13",
+        "10",
+        "8",
+        "6"
+      ],
+      "answer": 1,
+      "explain": "Khoảng biến thiên = đầu mút phải của nhóm cuối − đầu mút trái của nhóm đầu = 10 − 0 = 10.",
+      "wrong_explain": {
+        "0": "13 không đúng: khoảng biến thiên là 10 − 0.",
+        "2": "8 không đúng: đây là độ dài của một nhóm, không phải khoảng biến thiên.",
+        "3": "6 không đúng: khoảng biến thiên là 10 − 0 = 10."
+      }
+    },
+    {
+      "id": "q14",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "13b: độ lệch chuẩn của mẫu số liệu ghép nhóm trên (làm tròn đến hàng phần trăm) là?",
+      "choices": [
+        "1,99",
+        "2,02",
+        "3,97",
+        "4,09"
+      ],
+      "answer": 0,
+      "explain": "Cỡ mẫu n = 35, giá trị đại diện 1; 3; 5; 7; 9. Số trung bình ≈ 4,83; phương sai ≈ 3,97; độ lệch chuẩn ≈ 1,99.",
+      "wrong_explain": {
+        "1": "2,02 không khớp: độ lệch chuẩn ≈ 1,99.",
+        "2": "3,97 là phương sai, chưa lấy căn bậc hai.",
+        "3": "4,09 không khớp với công thức độ lệch chuẩn ghép nhóm."
+      }
+    },
+    {
+      "id": "q15",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "14: nhóm 25 người, 15 thích trà, 17 thích cà phê, 9 thích cả hai. Biết người được chọn thích cà phê, xác suất người đó thích trà là?",
+      "choices": [
+        "9/17",
+        "8/17",
+        "9/19",
+        "10/19"
+      ],
+      "answer": 0,
+      "explain": "Trong 17 người thích cà phê có 9 người thích trà, nên xác suất là 9/17.",
+      "wrong_explain": {
+        "1": "8/17 không đúng: 8 là số người chỉ thích cà phê, còn câu hỏi hỏi người thích trà.",
+        "2": "Mẫu số phải là số người thích cà phê (17), không phải 19.",
+        "3": "10/19 không khớp: mẫu số phải là 17."
+      }
+    },
+    {
+      "id": "q16",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "15: lớp 12A có 40 học sinh, 22 em đăng ký Kinh tế, 25 em đăng ký Luật, 3 em không đăng ký cả hai. Biết em được chọn đăng ký Luật, xác suất em đó đăng ký Kinh tế là?",
+      "choices": [
+        "3/5",
+        "2/5",
+        "3/7",
+        "4/7"
+      ],
+      "answer": 1,
+      "explain": "Số em đăng ký cả hai ngành là 22 + 25 − (40 − 3) = 10. Xác suất cần tìm là 10/25 = 2/5.",
+      "wrong_explain": {
+        "0": "3/5 không đúng: mẫu số là 25 (số em đăng ký Luật), tử số là 10.",
+        "2": "3/7 không khớp: số em đăng ký cả hai là 10.",
+        "3": "4/7 không khớp với dữ kiện bài toán."
+      }
+    },
+    {
+      "id": "q17",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "17a: giá trị lớn nhất và nhỏ nhất của y = (x + 1)/√(x² + 1) trên [−1; 2] là?",
+      "choices": [
+        "max = √2, min = 0",
+        "max = 3/√5, min = 0",
+        "max = √2, min = −1",
+        "max = 2, min = 0"
+      ],
+      "answer": 0,
+      "explain": "y' = (1 − x)/(x² + 1)^{3/2}, hàm đạt cực đại tại x = 1 với y = √2; y(−1) = 0 và y(2) = 3/√5 ≈ 1,34 nên min = 0.",
+      "wrong_explain": {
+        "1": "Giá trị lớn nhất là √2 tại x = 1, lớn hơn 3/√5 ≈ 1,34.",
+        "2": "y(−1) = 0 nên giá trị nhỏ nhất là 0, không phải −1.",
+        "3": "y(1) = √2 nên giá trị lớn nhất là √2, không phải 2."
+      }
+    },
+    {
+      "id": "q18",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "17b: giá trị lớn nhất và nhỏ nhất của y = x + √(1 − x²) là?",
+      "choices": [
+        "max = √2, min = −1",
+        "max = √2, min = 0",
+        "max = 1, min = −1",
+        "max = 2, min = −1"
+      ],
+      "answer": 0,
+      "explain": "Với x = cos t, t ∈ [0; π], y = cos t + sin t = √2 sin(t + π/4), đạt max √2 tại x = √2/2 và min −1 tại x = −1.",
+      "wrong_explain": {
+        "1": "y(−1) = −1 + 0 = −1, nên min là −1, không phải 0.",
+        "2": "Giá trị lớn nhất là √2 tại x = √2/2, không phải 1.",
+        "3": "Giá trị lớn nhất là √2, không phải 2."
+      }
+    },
+    {
+      "id": "q19",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "18a: ô tô đang chạy 54 km/h = 15 m/s, phanh với gia tốc chậm dần đều có độ lớn 10 m/s². Thời gian từ khi đạp phanh đến khi dừng (giây) là?",
+      "expr": "15/10",
+      "answer": "1.5",
+      "explain": "t = v₀/a = 15/10 = 1,5 giây."
+    },
+    {
+      "id": "q20",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "18b: ô tô dừng lại trong vòng 20 m sau khi đạp phanh, gia tốc 10 m/s². Vận tốc lớn nhất ngay trước khi đạp phanh (km/h) là?",
+      "expr": "20*3.6",
+      "answer": "72",
+      "explain": "Quãng đường phanh s = v₀²/(2a) ≤ 20 nên v₀² ≤ 400, v₀ ≤ 20 m/s = 72 km/h."
+    },
+    {
+      "id": "q21",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "19: tìm f(x) biết f'(x) = x − 1/x² + 2 và f(1) = 2.",
+      "choices": [
+        "f(x) = x²/2 + 1/x + 2x − 3/2",
+        "f(x) = x²/2 + 1/x + 2x − 1/2",
+        "f(x) = x²/2 − 1/x + 2x − 3/2",
+        "f(x) = x²/2 + 1/x + 2x + 3/2"
+      ],
+      "answer": 0,
+      "explain": "f(x) = x²/2 + 1/x + 2x + C; từ f(1) = 2 suy ra C = −3/2.",
+      "wrong_explain": {
+        "1": "Hằng số sai: f(1) = 1/2 + 1 + 2 − 1/2 = 3 ≠ 2.",
+        "2": "Dấu của 1/x sai: đạo hàm của 1/x là −1/x² nên nguyên hàm có dấu +1/x.",
+        "3": "Hằng số sai: f(1) = 1/2 + 1 + 2 + 3/2 = 5 ≠ 2."
+      }
+    },
+    {
+      "id": "q22",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "20a: I = ∫_0^2 |x² − x| dx. Giá trị của I là?",
+      "expr": "1/6+5/6",
+      "answer": "1",
+      "explain": "Trên [0; 1] có x² − x ≤ 0 nên ∫_0^1 (x − x²)dx = 1/6; trên [1; 2] có x² − x ≥ 0 nên ∫_1^2 (x² − x)dx = 5/6. Tổng bằng 1."
+    },
+    {
+      "id": "q23",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "20b: I = ∫_0^1 (2x − 1)³ dx. Giá trị của I là?",
+      "expr": "0",
+      "answer": "0",
+      "explain": "Đặt u = 2x − 1, I = (1/2)∫_{−1}^{1} u³ du = 0 vì hàm lẻ trên đoạn đối xứng."
+    },
+    {
+      "id": "q24",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "20c: I = ∫_0^{π/4} (3sin x − 2/cos²x) dx bằng?",
+      "choices": [
+        "1 − 3√2/2",
+        "3√2/2 − 1",
+        "−3√2/2 − 1",
+        "3 − 3√2/2"
+      ],
+      "answer": 0,
+      "explain": "∫ 3sin x dx = −3cos x, ∫ 2/cos²x dx = 2tan x; I = (3 − 3√2/2) − 2 = 1 − 3√2/2.",
+      "wrong_explain": {
+        "1": "Dấu bị ngược: I = 1 − 3√2/2, không phải 3√2/2 − 1.",
+        "2": "Dấu của cả hai thành phần sai so với nguyên hàm đúng.",
+        "3": "Quên trừ 2tan(π/4) = 2, nên kết quả đúng là 1 − 3√2/2."
+      }
+    },
+    {
+      "id": "q25",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "20d: I = ∫_1^2 (2eˣ − 1/x) dx bằng?",
+      "choices": [
+        "2e² − 2e + ln 2",
+        "2e² − 2e − ln 2",
+        "e² − e − ln 2",
+        "2e² − 2e − 1/2"
+      ],
+      "answer": 1,
+      "explain": "∫(2eˣ − 1/x)dx = 2eˣ − ln|x|, nên I = (2e² − ln 2) − (2e − 0) = 2e² − 2e − ln 2.",
+      "wrong_explain": {
+        "0": "Dấu của ln 2 sai: nguyên hàm của −1/x là −ln|x|.",
+        "2": "Hệ số của e² và e phải là 2.",
+        "3": "Nguyên hàm của −1/x là −ln|x|, không phải −1/2."
+      }
+    },
+    {
+      "id": "q26",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "21: diện tích hình phẳng giới hạn bởi y = x² − 1, y = x + 5, x = −2, x = 3 là?",
+      "expr": "27/2+22/3",
+      "answer": "125/6",
+      "explain": "Hai đường giao nhau tại x = −2 và x = 3, trên [−2; 3] có x + 5 ≥ x² − 1. S = ∫_{−2}^{3}(−x² + x + 6)dx = 125/6."
+    },
+    {
+      "id": "q27",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "22: H giới hạn bởi y = −x² + 2x, y = 0, x = 0, x = 2 quay quanh Ox. Thể tích V là?",
+      "choices": [
+        "16π/15",
+        "16/15",
+        "32π/15",
+        "8π/15"
+      ],
+      "answer": 0,
+      "explain": "V = π∫_0^2 (2x − x²)² dx = π(32/3 − 16 + 32/5) = 16π/15.",
+      "wrong_explain": {
+        "1": "Quên nhân với π khi tính thể tích khối tròn xoay.",
+        "2": "32π/15 gấp đôi kết quả đúng.",
+        "3": "8π/15 không khớp với π∫_0^2 (2x − x²)² dx."
+      }
+    },
+    {
+      "id": "q28",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "24b: hình lập phương ABCD.A'B'C'D' cạnh a, G là trọng tâm tam giác BC'D'. Độ dài AG theo a là?",
+      "choices": [
+        "2√3a/3",
+        "√3a/3",
+        "2√2a/3",
+        "√6a/3"
+      ],
+      "answer": 0,
+      "explain": "AG = (2/3)(AB + AD + AA'), các vectơ đôi một vuông góc có độ dài a nên |AB + AD + AA'| = √3a, suy ra AG = 2√3a/3.",
+      "wrong_explain": {
+        "1": "Quên hệ số 2/3: |AG| = (2/3)·√3a.",
+        "2": "Ba vectơ AB, AD, AA' đôi một vuông góc, tổng có độ dài √3a, không phải √2a.",
+        "3": "Độ dài tổng là √3a, không phải √6a."
+      }
+    },
+    {
+      "id": "q29",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "25: đường thẳng d đi qua I(−1; 2; 1) và vuông góc với (P): 2x − 2y − z − 5 = 0. Phương trình d là?",
+      "choices": [
+        "(x + 1)/2 = (y − 2)/(−2) = (z − 1)/(−1)",
+        "(x − 1)/2 = (y + 2)/(−2) = (z + 1)/(−1)",
+        "(x + 1)/2 = (y − 2)/2 = (z − 1)/(−1)",
+        "(x + 1)/2 = (y − 2)/(−2) = (z − 1)/1"
+      ],
+      "answer": 0,
+      "explain": "Vectơ pháp tuyến của (P) là (2; −2; −1) và là vectơ chỉ phương của d; d đi qua I(−1; 2; 1).",
+      "wrong_explain": {
+        "1": "Điểm đi qua phải là I(−1; 2; 1), không phải (1; −2; −1).",
+        "2": "Thành phần y của vectơ chỉ phương phải là −2, không phải 2.",
+        "3": "Thành phần z của vectơ chỉ phương phải là −1, không phải 1."
+      }
+    },
+    {
+      "id": "q30",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "26a: đường thẳng d': đi qua A(−1; 1; 2) và song song với d: x = 2 + t, y = 3 − 2t, z = −1 + 2t. Phương trình d' là?",
+      "choices": [
+        "(x + 1)/1 = (y − 1)/(−2) = (z − 2)/2",
+        "(x − 1)/1 = (y + 1)/(−2) = (z + 2)/2",
+        "(x + 1)/2 = (y − 1)/(−2) = (z − 2)/1",
+        "(x + 1)/1 = (y − 1)/2 = (z − 2)/2"
+      ],
+      "answer": 0,
+      "explain": "d có vectơ chỉ phương (1; −2; 2), d' đi qua A(−1; 1; 2) nên (x + 1)/1 = (y − 1)/(−2) = (z − 2)/2.",
+      "wrong_explain": {
+        "1": "Điểm đi qua phải là A(−1; 1; 2), không phải (1; −1; −2).",
+        "2": "Vectơ chỉ phương phải là (1; −2; 2), không phải (2; −2; 1).",
+        "3": "Thành phần y của vectơ chỉ phương phải là −2, không phải 2."
+      }
+    },
+    {
+      "id": "q31",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "26b: mặt phẳng (P) chứa điểm A(−1; 1; 2) và đường thẳng d: x = 2 + t, y = 3 − 2t, z = −1 + 2t. Phương trình (P) là?",
+      "choices": [
+        "2x + 9y + 8z − 23 = 0",
+        "2x − 9y + 8z − 23 = 0",
+        "2x + 9y − 8z − 23 = 0",
+        "2x + 9y + 8z + 23 = 0"
+      ],
+      "answer": 0,
+      "explain": "Điểm (2; 3; −1) thuộc d; vectơ pháp tuyến n = (A − (2; 3; −1)) × (1; −2; 2) = (2; 9; 8). Phương trình 2x + 9y + 8z − 23 = 0.",
+      "wrong_explain": {
+        "1": "Điểm (2; 3; −1) không thuộc mặt phẳng này: 4 − 27 − 8 − 23 ≠ 0.",
+        "2": "Điểm (2; 3; −1) không thuộc mặt phẳng này: 4 + 27 + 8 − 23 ≠ 0.",
+        "3": "Điểm A(−1; 1; 2) không thuộc mặt phẳng này: −2 + 9 + 16 + 23 ≠ 0."
+      }
+    },
+    {
+      "id": "q32",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "27a: phương trình mặt phẳng (OAB) với A(1; −2; 3), B(3; 0; −1) là?",
+      "choices": [
+        "x + 5y + 3z = 0",
+        "x − 5y + 3z = 0",
+        "x + 5y − 3z = 0",
+        "x + 5y + 3z − 1 = 0"
+      ],
+      "answer": 0,
+      "explain": "Vectơ pháp tuyến OA × OB = (2; 10; 6) ~ (1; 5; 3), mặt phẳng đi qua O nên x + 5y + 3z = 0.",
+      "wrong_explain": {
+        "1": "A(1; −2; 3) không thuộc mặt phẳng: 1 + 10 + 9 ≠ 0.",
+        "2": "B(3; 0; −1) không thuộc mặt phẳng này: 3 + 0 + 3 = 6 ≠ 0.",
+        "3": "Mặt phẳng (OAB) đi qua gốc O nên hằng số phải bằng 0."
+      }
+    },
+    {
+      "id": "q33",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "27b: tọa độ trung điểm I của đoạn AB với A(1; −2; 3), B(3; 0; −1) là?",
+      "choices": [
+        "(2; −1; 1)",
+        "(2; 0; 1)",
+        "(1; −1; 1)",
+        "(2; −1; 2)"
+      ],
+      "answer": 0,
+      "explain": "I = ((1 + 3)/2; (−2 + 0)/2; (3 − 1)/2) = (2; −1; 1).",
+      "wrong_explain": {
+        "1": "Tung độ trung điểm là (−2 + 0)/2 = −1, không phải 0.",
+        "2": "Hoành độ trung điểm là (1 + 3)/2 = 2, không phải 1.",
+        "3": "Cao độ trung điểm là (3 − 1)/2 = 1, không phải 2."
+      }
+    },
+    {
+      "id": "q34",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "27c: M thuộc mặt phẳng (Oxy) sao cho |MA + MB| nhỏ nhất. Điểm M là?",
+      "choices": [
+        "(2; −1; 0)",
+        "(2; −1; 1)",
+        "(−2; 1; 0)",
+        "(1; −2; 0)"
+      ],
+      "answer": 0,
+      "explain": "MA + MB = 2(I − M) với I(2; −1; 1) là trung điểm AB, nên |MA + MB| nhỏ nhất khi M là hình chiếu của I lên (Oxy): M(2; −1; 0).",
+      "wrong_explain": {
+        "1": "(2; −1; 1) là điểm I, không thuộc (Oxy) vì cao độ khác 0.",
+        "2": "(−2; 1; 0) không phải hình chiếu của I lên (Oxy).",
+        "3": "(1; −2; 0) là hình chiếu của A, không phải của I."
+      }
+    },
+    {
+      "id": "q35",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "28: nguồn sáng tại S(2; 3; 5), đoạn thẳng AB với A(1; 2; 1), B(3; 1; 2). Bóng của đoạn thẳng trên (xOy) có độ dài là?",
+      "choices": [
+        "5√74/12",
+        "√74/12",
+        "5√74/6",
+        "5√2/12"
+      ],
+      "answer": 0,
+      "explain": "Bóng của A là (3/4; 7/4; 0), bóng của B là (11/3; −1/3; 0). Hiệu là (35/12; −25/12; 0) nên độ dài bằng 5√74/12.",
+      "wrong_explain": {
+        "1": "√74/12 không đúng: độ dài bằng 5√74/12.",
+        "2": "5√74/6 gấp đôi kết quả đúng.",
+        "3": "5√2/12 không khớp với hiệu tọa độ hai bóng."
+      }
+    },
+    {
+      "id": "q36",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "29: khoảng tứ phân vị của mẫu số liệu ghép nhóm thu nhập (triệu đồng) là?",
+      "expr": "14.01-11.625",
+      "answer": "2.385",
+      "explain": "n = 203. Q₁ ∈ [10; 12) nên Q₁ = 10 + (50,75 − 2)/60 · 2 = 11,625; Q₃ ∈ [14; 16) nên Q₃ = 14 + (152,25 − 152)/50 · 2 = 14,01. Khoảng tứ phân vị = 2,385."
+    },
+    {
+      "id": "q37",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "31: trong một tuần Sơn chọn ngẫu nhiên 3 ngày chạy bộ buổi sáng. Biết hôm đó Sơn có ăn thêm trứng, xác suất hôm đó Sơn chạy bộ là? (Xét một ngày ngẫu nhiên trong tuần, P(chạy) = 3/7.)",
+      "expr": "21/31",
+      "answer": "21/31",
+      "explain": "P(chạy | trứng) = (3/7 · 0,7)/(3/7 · 0,7 + 4/7 · 0,25) = 2,1/3,1 = 21/31."
+    }
+  ]
+}
