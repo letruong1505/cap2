@@ -1,0 +1,288 @@
+{
+  "id": "t12-chuong3-bai9-khoang-bien-thien-tu-phan-vi",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 12, tập 1",
+  "chapter": "Chương III. Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+  "lesson": "Bài 9. Khoảng biến thiên và khoảng tứ phân vị",
+  "section": "Phần 1: Khoảng biến thiên; Phần 2: Khoảng tứ phân vị",
+  "bookPage": 75,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khoảng biến thiên R của mẫu số liệu ghép nhóm là hiệu R = a_{k+1} − a_1, trong đó a_1 là đầu mút trái của nhóm đầu và a_{k+1} là đầu mút phải của nhóm cuối. Khoảng biến thiên đo mức độ phân tán: R càng lớn thì mẫu càng phân tán."
+    },
+    {
+      "type": "text",
+      "content": "Tứ phân vị thứ r (r = 1, 2, 3) của mẫu ghép nhóm được tính bằng công thức Q_r = a_p + ((r·n/4 − (m_1 + … + m_{p−1}))/m_p)·(a_{p+1} − a_p), với nhóm [a_p; a_{p+1}) chứa tứ phân vị thứ r."
+    },
+    {
+      "type": "text",
+      "content": "Khoảng tứ phân vị của mẫu ghép nhóm là Δ_Q = Q_3 − Q_1. Khoảng tứ phân vị chỉ phụ thuộc nửa giữa của mẫu số liệu nên không bị ảnh hưởng bởi giá trị bất thường; có thể dùng để đo mức độ phân tán."
+    },
+    {
+      "type": "text",
+      "content": "Giá trị của khoảng biến thiên và khoảng tứ phân vị tính từ mẫu số liệu ghép nhóm là giá trị xấp xỉ; giá trị tính trực tiếp từ mẫu số liệu gốc là giá trị chính xác."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Thời gian sử dụng mạng xã hội trong ngày của tổ 1 và tổ 2 lớp 12A, nhóm cuối là [60; 90) cho tổ 1. Tìm khoảng biến thiên của mỗi tổ và cho biết tổ nào phân tán hơn.",
+      "expr": "90-0",
+      "answer": "90",
+      "steps": [
+        "Tổ 1 có R₁ = 90 − 0 = 90 (phút).",
+        "Tổ 2 có R₂ = 60 − 0 = 60 (phút).",
+        "Vì R₁ > R₂ nên thời gian sử dụng mạng xã hội của tổ 1 phân tán hơn tổ 2."
+      ]
+    },
+    {
+      "problem": "Thời gian chờ khám bệnh (phút) ở phòng khám X là nhóm [0; 5), [5; 10), [10; 15), [15; 20) với tần số 3, 12, 15, 8. Tìm khoảng tứ phân vị.",
+      "expr": "(10+((3*38/4-15)/15)*5)-(5+((38/4-3)/12)*5)",
+      "answer": "163/24",
+      "steps": [
+        "Cỡ mẫu n = 38. Q₁ = 5 + ((38/4 − 3)/12)·5 ≈ 7,71 (nhóm [5; 10)).",
+        "Q₃ = 10 + ((3·38/4 − 15)/15)·5 = 14,5 (nhóm [10; 15)).",
+        "Δ_Q = Q₃ − Q₁ ≈ 14,5 − 7,71 = 6,79 (phút)."
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Luyện tập 1a: mẫu ghép nhóm có nhóm đầu [25; 30) và nhóm cuối [40; 45). Khoảng biến thiên R là?",
+      "expr": "45-25",
+      "answer": "20",
+      "explain": "R = a_{k+1} − a_1 = 45 − 25 = 20."
+    },
+    {
+      "id": "q02",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Luyện tập 1b: học sinh hoàn thành bài sớm nhất 27 phút, muộn nhất 43 phút. Khoảng biến thiên của mẫu số liệu gốc là?",
+      "expr": "43-27",
+      "answer": "16",
+      "explain": "R = 43 − 27 = 16 (phút)."
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 1: tổ 1 có R₁ = 90 và tổ 2 có R₂ = 60. Tổ nào có thời gian sử dụng mạng xã hội phân tán hơn?",
+      "choices": [
+        "Tổ 1",
+        "Tổ 2",
+        "Hai tổ bằng nhau",
+        "Không thể so sánh"
+      ],
+      "answer": 0,
+      "explain": "R₁ = 90 > R₂ = 60 nên tổ 1 phân tán hơn.",
+      "wrong_explain": {
+        "1": "Khoảng biến thiên của tổ 2 nhỏ hơn.",
+        "2": "R₁ ≠ R₂.",
+        "3": "Có thể so sánh vì cùng đơn vị phút."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ví dụ 2a: khoảng tứ phân vị của mẫu ghép nhóm phòng khám X (làm đúng công thức, giá trị chính xác là phân số) là?",
+      "expr": "(10+((3*38/4-15)/15)*5)-(5+((38/4-3)/12)*5)",
+      "answer": "163/24",
+      "explain": "Q₁ ≈ 7,71; Q₃ = 14,5; Δ_Q = 163/24 ≈ 6,79."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 2b: phòng khám Y có khoảng tứ phân vị 9,23 còn phòng khám X có khoảng tứ phân vị khoảng 6,79. Thời gian chờ ở phòng khám nào phân tán hơn?",
+      "choices": [
+        "Phòng khám Y",
+        "Phòng khám X",
+        "Hai phòng bằng nhau",
+        "Không so sánh được"
+      ],
+      "answer": 0,
+      "explain": "6,79 < 9,23 nên thời gian chờ ở phòng khám Y phân tán hơn.",
+      "wrong_explain": {
+        "1": "Phòng X có khoảng tứ phân vị nhỏ hơn nên ít phân tán hơn.",
+        "2": "Hai giá trị khác nhau.",
+        "3": "Có thể so sánh vì cùng đơn vị phút."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Luyện tập 2: khoảng tứ phân vị của mẫu ghép nhóm thời gian đàm thoại (Q₁ = 1 + 12/17, Q₃ = 3 + 10/20) là?",
+      "expr": "3+(60-50)/20-(1+(20-8)/17)",
+      "answer": "61/34",
+      "explain": "Q₁ = 29/17, Q₃ = 7/2, Δ_Q = 7/2 − 29/17 = 61/34 ≈ 1,79 phút."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 3.1a: nhóm đầu [40; 50), nhóm cuối [100; 110). Khoảng biến thiên của mẫu ghép nhóm là?",
+      "expr": "110-40",
+      "answer": "70",
+      "explain": "R = 110 − 40 = 70."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 3.1b: khoảng biến thiên của mẫu số liệu gốc (giá trị lớn nhất 101, nhỏ nhất 42) là?",
+      "expr": "101-42",
+      "answer": "59",
+      "explain": "R = 101 − 42 = 59 (giá trị chính xác)."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bài 3.1b: khoảng tứ phân vị của mẫu số liệu gốc (Q₁ = 56, Q₃ = 74) là?",
+      "expr": "74-56",
+      "answer": "18",
+      "explain": "Trung vị nửa dưới 56, trung vị nửa trên 74: Δ_Q = 18 (giá trị chính xác)."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bài 3.1b: khoảng tứ phân vị của mẫu ghép nhóm (Q₁ = 56, Q₃ = 72) là?",
+      "expr": "72-56",
+      "answer": "16",
+      "explain": "Δ_Q = 72 − 56 = 16 (giá trị xấp xỉ)."
+    },
+    {
+      "id": "q11",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 3.1b: giá trị nào là chính xác, giá trị nào là xấp xỉ?",
+      "choices": [
+        "Khoảng biến thiên 59 và khoảng tứ phân vị 18 của mẫu gốc là chính xác; 70 và 16 của mẫu ghép nhóm là xấp xỉ",
+        "Tất cả đều chính xác",
+        "Tất cả đều xấp xỉ",
+        "Khoảng biến thiên của mẫu ghép nhóm là chính xác"
+      ],
+      "answer": 0,
+      "explain": "Các giá trị tính trực tiếp từ mẫu gốc là chính xác, còn các giá trị từ mẫu ghép nhóm chỉ là xấp xỉ.",
+      "wrong_explain": {
+        "1": "Mẫu ghép nhóm không cho giá trị chính xác của khoảng biến thiên.",
+        "2": "Mẫu gốc cho giá trị chính xác.",
+        "3": "Khoảng biến thiên của mẫu ghép nhóm (70) là xấp xỉ."
+      }
+    },
+    {
+      "id": "q12",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 3.2: số người và trung bình của nhà máy A (tần số 20, 35, 45, 35, 20; giá trị đại diện 6,5; 9,5; 12,5; 15,5; 18,5). Trung bình là?",
+      "expr": "(6.5*20+9.5*35+12.5*45+15.5*35+18.5*20)/155",
+      "answer": "25/2",
+      "explain": "Trung bình = 1937,5/155 = 12,5 (triệu đồng)."
+    },
+    {
+      "id": "q13",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bài 3.2: khoảng tứ phân vị của nhà máy A (n = 155) là?",
+      "expr": "(14+((3*155/4-100)/35)*3)-(8+((155/4-20)/35)*3)",
+      "answer": "81/14",
+      "explain": "Q₁ ≈ 9,61 (nhóm [8; 11)), Q₃ ≈ 15,39 (nhóm [14; 17)); Δ_Q = 81/14 ≈ 5,79."
+    },
+    {
+      "id": "q14",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bài 3.2: khoảng tứ phân vị của nhà máy B (n = 110) là?",
+      "expr": "(14+((3*110/4-70)/23)*3)-(8+((110/4-17)/23)*3)",
+      "answer": "144/23",
+      "explain": "Q₁ ≈ 9,37, Q₃ ≈ 15,63; Δ_Q = 144/23 ≈ 6,26."
+    },
+    {
+      "id": "q15",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 3.2: thu nhập ở nhà máy nào biến động nhiều hơn (dựa vào khoảng tứ phân vị)?",
+      "choices": [
+        "Nhà máy B (6,26 > 5,79)",
+        "Nhà máy A",
+        "Hai nhà máy bằng nhau",
+        "Không so sánh được"
+      ],
+      "answer": 0,
+      "explain": "Khoảng tứ phân vị của B (≈ 6,26) lớn hơn của A (≈ 5,79) nên thu nhập ở nhà máy B biến động nhiều hơn.",
+      "wrong_explain": {
+        "1": "Khoảng tứ phân vị của A nhỏ hơn.",
+        "2": "Hai giá trị khác nhau.",
+        "3": "Có thể so sánh vì cùng đơn vị triệu đồng."
+      }
+    },
+    {
+      "id": "q16",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 3.3a: khoảng biến thiên của chiều cao học sinh lớp 12A (nhóm đầu [145; 150), nhóm cuối [170; 175)) là?",
+      "expr": "175-145",
+      "answer": "30",
+      "explain": "R_A = 175 − 145 = 30 (cm)."
+    },
+    {
+      "id": "q17",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 3.3a: khoảng biến thiên của chiều cao học sinh lớp 12B (nhóm đầu khác 0 là [155; 160)) là?",
+      "expr": "175-155",
+      "answer": "20",
+      "explain": "R_B = 175 − 155 = 20 (cm)."
+    },
+    {
+      "id": "q18",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bài 3.3a: khoảng tứ phân vị của lớp 12A (n = 43) là?",
+      "expr": "(165+((3*43/4-28)/10)*5)-(155+((43/4-1)/15)*5)",
+      "answer": "71/8",
+      "explain": "Q₁ ≈ 158,25, Q₃ ≈ 167,125; Δ_Q = 71/8 ≈ 8,875 (cm)."
+    },
+    {
+      "id": "q19",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bài 3.3a: khoảng tứ phân vị của lớp 12B (n = 42) là?",
+      "expr": "(165+((3*42/4-27)/9)*5)-(155+((42/4-0)/17)*5)",
+      "answer": "160/17",
+      "explain": "Q₁ ≈ 158,09, Q₃ = 167,5; Δ_Q = 160/17 ≈ 9,41 (cm)."
+    },
+    {
+      "id": "q20",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 3.3b: để so sánh độ phân tán về chiều cao của học sinh hai lớp nên dùng đại lượng nào?",
+      "choices": [
+        "Khoảng tứ phân vị, vì khoảng biến thiên chỉ phụ thuộc hai nhóm đầu mút và nhạy với giá trị bất thường",
+        "Khoảng biến thiên, vì nó luôn lớn hơn",
+        "Không cần đại lượng nào",
+        "Khoảng biến thiên, vì nó chính xác hơn trong mọi trường hợp"
+      ],
+      "answer": 0,
+      "explain": "Khoảng biến thiên của 12A (30 cm) lớn hơn của 12B (20 cm) nhưng chỉ dựa trên hai nhóm đầu mút có ít học sinh; khoảng tứ phân vị (8,875 so với 9,41) phản ánh đúng hơn mức độ phân tán của nửa giữa.",
+      "wrong_explain": {
+        "1": "Khoảng biến thiên không đánh giá đúng mức phân tán khi nhóm đầu mút có tần số nhỏ.",
+        "2": "Cần dùng một đại lượng đo phân tán.",
+        "3": "Khoảng biến thiên không luôn chính xác hơn."
+      }
+    }
+  ]
+}
