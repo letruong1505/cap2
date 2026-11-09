@@ -1,0 +1,341 @@
+{
+  "id": "t12-chuong3-on-tap",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 12, tập 1",
+  "chapter": "Chương III. Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+  "lesson": "Bài tập cuối chương III",
+  "section": "A - Trắc nghiệm; B - Tự luận",
+  "bookPage": 85,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Chương III tổng hợp các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm: khoảng biến thiên R, khoảng tứ phân vị Δ_Q, phương sai s² và độ lệch chuẩn s."
+    },
+    {
+      "type": "text",
+      "content": "Cỡ mẫu n; nhóm chứa tứ phân vị thứ r là nhóm đầu tiên có tần số tích luỹ lớn hơn hoặc bằng r·n/4. Khoảng biến thiên chỉ phụ thuộc hai nhóm đầu và cuối; phương sai phụ thuộc mọi nhóm."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "3.9: khoảng biến thiên của mẫu số liệu tuổi thọ của 20 con hổ (nhóm đầu [14; 15), nhóm cuối [18; 19)) là?",
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": 2,
+      "explain": "R = 19 − 14 = 5.",
+      "wrong_explain": {
+        "0": "Lấy 18 − 15, chưa đúng hai đầu mút.",
+        "1": "Hiệu 18 − 14 không phải đầu mút của nhóm cuối.",
+        "3": "Lấy 20 − 14, sai đầu mút."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "3.10: nhóm chứa tứ phân vị thứ nhất là?",
+      "choices": [
+        "[14; 15)",
+        "[15; 16)",
+        "[16; 17)",
+        "[17; 18)"
+      ],
+      "answer": 2,
+      "explain": "n/4 = 5; tần số tích luỹ là 1, 4, 12 nên tứ phân vị thứ nhất nằm trong nhóm [16; 17).",
+      "wrong_explain": {
+        "0": "Tần số tích luỹ của [14; 15) chỉ là 1 < 5.",
+        "1": "Tần số tích luỹ của [15; 16) là 4 < 5.",
+        "3": "Tứ phân vị thứ nhất không nằm ở nhóm có tần số tích luỹ 18."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "3.11: nhóm chứa tứ phân vị thứ ba là?",
+      "choices": [
+        "[15; 16)",
+        "[16; 17)",
+        "[17; 18)",
+        "[18; 19)"
+      ],
+      "answer": 2,
+      "explain": "3n/4 = 15; tần số tích luỹ là 12 ở [16; 17) và 18 ở [17; 18), nên nhóm chứa Q₃ là [17; 18).",
+      "wrong_explain": {
+        "0": "Tần số tích luỹ của [15; 16) chỉ là 4.",
+        "1": "Tần số tích luỹ của [16; 17) là 12 < 15.",
+        "3": "Tần số tích luỹ của [18; 19) là 20 nhưng nhóm đầu tiên đạt 15 là [17; 18)."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "3.12: số đặc trưng nào không sử dụng thông tin của nhóm đầu tiên và nhóm cuối cùng?",
+      "choices": [
+        "Khoảng biến thiên",
+        "Khoảng tứ phân vị",
+        "Phương sai",
+        "Độ lệch chuẩn"
+      ],
+      "answer": 2,
+      "explain": "Khoảng biến thiên dùng hai đầu mút; khoảng tứ phân vị dùng Q₁, Q₃; độ lệch chuẩn và phương sai dùng mọi nhóm.",
+      "wrong_explain": {
+        "0": "Khoảng biến thiên chỉ dùng nhóm đầu và nhóm cuối.",
+        "1": "Khoảng tứ phân vị dùng Q₁, Q₃ phụ thuộc nhóm đầu và nhóm cuối.",
+        "3": "Độ lệch chuẩn dùng mọi nhóm của mẫu."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "3.13: nếu thay tất cả các tần số bằng 4 thì số đặc trưng nào không thay đổi?",
+      "choices": [
+        "Khoảng biến thiên",
+        "Khoảng tứ phân vị",
+        "Phương sai",
+        "Độ lệch chuẩn"
+      ],
+      "answer": 0,
+      "explain": "Khoảng biến thiên chỉ phụ thuộc hai đầu mút của nhóm đầu và nhóm cuối, không phụ thuộc tần số.",
+      "wrong_explain": {
+        "1": "Khoảng tứ phân vị phụ thuộc tần số tích luỹ nên thay đổi.",
+        "2": "Phương sai phụ thuộc tần số nên thay đổi.",
+        "3": "Độ lệch chuẩn phụ thuộc tần số nên thay đổi."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "3.14: khoảng biến thiên của mẫu số liệu thời gian nghe nhạc (nhóm đầu [5; 5,5), nhóm cuối [7; 7,5)) là?",
+      "expr": "7.5-5",
+      "answer": "5/2",
+      "explain": "R = 7,5 − 5 = 2,5 (giờ)."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "3.14: tứ phân vị thứ nhất Q₁ (n = 40, nhóm [5,5; 6) có tần số 8, tần số tích luỹ trước là 2) là?",
+      "expr": "5.5+((10-2)/8)*0.5",
+      "answer": "6",
+      "explain": "Q₁ = 5,5 + ((10 − 2)/8)·0,5 = 6 (giờ)."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "3.14: tứ phân vị thứ ba Q₃ (nhóm [6,5; 7) có tần số 10, tần số tích luỹ trước là 25) là?",
+      "expr": "6.5+((30-25)/10)*0.5",
+      "answer": "27/4",
+      "explain": "Q₃ = 6,5 + ((30 − 25)/10)·0,5 = 6,75 (giờ)."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "3.14: khoảng tứ phân vị của mẫu số liệu là?",
+      "expr": "(6.5+((30-25)/10)*0.5)-(5.5+((10-2)/8)*0.5)",
+      "answer": "3/4",
+      "explain": "Δ_Q = 6,75 − 6 = 0,75 (giờ)."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "3.14: độ lệch chuẩn của mẫu số liệu thời gian nghe nhạc (làm tròn đến hàng phần trăm) là?",
+      "choices": [
+        "≈ 0,53 giờ",
+        "≈ 0,28 giờ",
+        "≈ 0,75 giờ",
+        "≈ 6,35 giờ"
+      ],
+      "answer": 0,
+      "explain": "x̄ = 6,35 và s² = 111/400 nên s = √(111/400) ≈ 0,53.",
+      "wrong_explain": {
+        "1": "Đây không phải độ lệch chuẩn; giá trị s² ≈ 0,28 chưa lấy căn.",
+        "2": "Đây là khoảng tứ phân vị làm tròn, không phải độ lệch chuẩn.",
+        "3": "Đây là số trung bình, không phải độ lệch chuẩn."
+      }
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "3.15a: về trung bình, đầu tư vào lĩnh vực nào đem lại tiền lãi cao hơn?",
+      "choices": [
+        "Lĩnh vực A (18,5 triệu đồng > 16,9 triệu đồng)",
+        "Lĩnh vực B (16,9 triệu đồng > 18,5 triệu đồng)",
+        "Hai lĩnh vực bằng nhau",
+        "Không so sánh được"
+      ],
+      "answer": 0,
+      "explain": "x̄_A = 37/2 = 18,5 và x̄_B = 169/10 = 16,9 (triệu đồng).",
+      "wrong_explain": {
+        "1": "Trung bình của B thấp hơn A.",
+        "2": "Hai trung bình khác nhau.",
+        "3": "Có thể so sánh vì cùng đơn vị triệu đồng."
+      }
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "3.15a: số trung bình tiền lãi của lĩnh vực A (25 nhà đầu tư, giá trị đại diện 7,5; 12,5; 17,5; 22,5; 27,5 với tần số 2, 5, 8, 6, 4) là?",
+      "expr": "(2*7.5+5*12.5+8*17.5+6*22.5+4*27.5)/25",
+      "answer": "37/2",
+      "explain": "x̄_A = 37/2 = 18,5 (triệu đồng)."
+    },
+    {
+      "id": "q13",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "3.15b: phương sai tiền lãi của lĩnh vực A là?",
+      "expr": "(2*7.5*7.5+5*12.5*12.5+8*17.5*17.5+6*22.5*22.5+4*27.5*27.5)/25-(37/2)*(37/2)",
+      "answer": "34",
+      "explain": "s_A² = 34, nên s_A ≈ 5,83."
+    },
+    {
+      "id": "q14",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "3.15b: phương sai tiền lãi của lĩnh vực B (tần số 8, 4, 2, 5, 6) là?",
+      "expr": "(8*7.5*7.5+4*12.5*12.5+2*17.5*17.5+5*22.5*22.5+6*27.5*27.5)/25-(169/10)*(169/10)",
+      "answer": "1616/25",
+      "explain": "x̄_B = 16,9; s_B² = 1616/25 ≈ 64,64, nên s_B ≈ 8,04."
+    },
+    {
+      "id": "q15",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "3.15b: tiền lãi của lĩnh vực nào biến động nhiều hơn, tức rủi ro cao hơn?",
+      "choices": [
+        "Lĩnh vực B (s ≈ 8,04 > 5,83)",
+        "Lĩnh vực A (s ≈ 5,83 > 8,04)",
+        "Hai lĩnh vực bằng nhau",
+        "Không đánh giá được"
+      ],
+      "answer": 0,
+      "explain": "Độ lệch chuẩn của B lớn hơn nên tiền lãi của B biến động nhiều hơn, dù trung bình B thấp hơn.",
+      "wrong_explain": {
+        "1": "s_A nhỏ hơn s_B.",
+        "2": "Độ lệch chuẩn khác nhau.",
+        "3": "Có đủ số liệu để so sánh: cùng đơn vị triệu đồng và trung bình gần nhau."
+      }
+    },
+    {
+      "id": "q16",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "3.16a: khoảng biến thiên của mức xà (nhóm đầu [170; 172), nhóm cuối [176; 178)) là?",
+      "expr": "178-170",
+      "answer": "8",
+      "explain": "R = 178 − 170 = 8 (cm)."
+    },
+    {
+      "id": "q17",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "3.16a: khoảng tứ phân vị của mẫu số liệu mức xà (Q₁ = 172 + ((5 − 3)/10)·2, Q₃ = 174 + ((15 − 13)/6)·2) là?",
+      "expr": "(174+((15-13)/6)*2)-(172+((5-3)/10)*2)",
+      "answer": "34/15",
+      "explain": "Q₁ = 172,4, Q₃ ≈ 174,67, Δ_Q = 34/15 ≈ 2,27 (cm)."
+    },
+    {
+      "id": "q18",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "3.16a: số trung bình của mức xà (giá trị đại diện 171; 173; 175; 177 với tần số 3, 10, 6, 1) là?",
+      "expr": "(3*171+10*173+6*175+1*177)/20",
+      "answer": "347/2",
+      "explain": "x̄ = 347/2 = 173,5 (cm)."
+    },
+    {
+      "id": "q19",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "3.16a: phương sai của mức xà là?",
+      "expr": "(3*171*171+10*173*173+6*175*175+177*177)/20-(347/2)*(347/2)",
+      "answer": "47/20",
+      "explain": "s² = 47/20 = 2,35, nên s ≈ 1,53 (cm)."
+    },
+    {
+      "id": "q20",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "3.16b: độ phân tán của mẫu số liệu mức xà cho biết điều gì?",
+      "choices": [
+        "Các mức xà phân tán bao nhiêu quanh số trung bình; độ phân tán nhỏ nghĩa là thành tích đồng đều",
+        "Mức xà trung bình của các vận động viên",
+        "Số vận động viên tham gia",
+        "Mức xà cao nhất"
+      ],
+      "answer": 0,
+      "explain": "Phương sai và độ lệch chuẩn đo mức độ phân tán quanh số trung bình.",
+      "wrong_explain": {
+        "1": "Đó là số trung bình, không phải độ phân tán.",
+        "2": "Số vận động viên là tổng tần số.",
+        "3": "Đó là giá trị lớn nhất, không liên quan đến độ phân tán."
+      }
+    },
+    {
+      "id": "q21",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "3.17: vôn kế của bạn nào cho kết quả đo ổn định hơn (An s ≈ 0,039; Bình s ≈ 0,045)?",
+      "choices": [
+        "Vôn kế của An, vì độ lệch chuẩn nhỏ hơn",
+        "Vôn kế của Bình, vì độ lệch chuẩn lớn hơn",
+        "Hai vôn kế bằng nhau",
+        "Không so sánh được"
+      ],
+      "answer": 0,
+      "explain": "Độ lệch chuẩn của An nhỏ hơn nên kết quả đo ổn định hơn.",
+      "wrong_explain": {
+        "1": "Độ lệch chuẩn lớn hơn nghĩa là kết quả kém ổn định hơn.",
+        "2": "Độ lệch chuẩn khác nhau.",
+        "3": "Có thể so sánh vì cùng đơn vị vôn và cùng 10 lần đo."
+      }
+    },
+    {
+      "id": "q22",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "3.17: phương sai của mẫu số liệu An đo (giá trị đại diện 3,875; 3,925; 3,975; 4,025 với tần số 1, 6, 2, 1) là?",
+      "expr": "(1*3.875*3.875+6*3.925*3.925+2*3.975*3.975+1*4.025*4.025)/10-(197/50)*(197/50)",
+      "answer": "61/40000",
+      "explain": "x̄ = 197/50 = 3,94; s² = 61/40000, nên s ≈ 0,039 (V)."
+    },
+    {
+      "id": "q23",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "3.17: phương sai của mẫu số liệu Bình đo (tần số 1, 3, 4, 2) là?",
+      "expr": "(1*3.875*3.875+3*3.925*3.925+4*3.975*3.975+2*4.025*4.025)/10-(99/25)*(99/25)",
+      "answer": "81/40000",
+      "explain": "x̄ = 99/25 = 3,96; s² = 81/40000, nên s ≈ 0,045 (V)."
+    }
+  ]
+}
