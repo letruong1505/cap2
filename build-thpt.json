@@ -1,0 +1,27 @@
+{
+  "appId": "vn.namlinh.giaotrinhthpt",
+  "productName": "Giáo trình THPT",
+  "directories": { "app": ".", "output": "dist-thpt" },
+  "files": [
+    "main/**/*",
+    "renderer/**/*",
+    "core/**/*",
+    "content/toan12/**/*",
+    "content/ly12/**/*",
+    "package.json"
+  ],
+  "win": {
+    "target": "nsis",
+    "artifactName": "GiaoTrinhTHPT-Setup-${version}.exe"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "perMachine": false,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "Giáo trình THPT",
+    "uninstallDisplayName": "Giáo trình THPT",
+    "deleteAppDataOnUninstall": false
+  }
+}

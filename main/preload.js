@@ -7,6 +7,7 @@ contextBridge.exposeInMainWorld('vungBai', {
   loadManifest: (subject) => ipcRenderer.invoke('manifest:load', subject),
   loadLesson: (relPath) => ipcRenderer.invoke('lesson:load', relPath),
   appInfo: () => ipcRenderer.invoke('app:info'),
+  productInfo: () => ipcRenderer.invoke('product:info'),
   loadLicense: () => ipcRenderer.invoke('license:load'),
   activateLicense: (key) => ipcRenderer.invoke('license:activate', key),
   removeLicense: () => ipcRenderer.invoke('license:remove'),

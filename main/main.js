@@ -1,10 +1,10 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const fs = require('fs');
 const path = require('path');
-const { loadManifest, loadLesson } = require('./content-loader');
+const { loadManifest, loadLesson, productInfo } = require('./content-loader');
 const lic = require('./license');
 
-const APP_TITLE = 'Giáo trình THCS';
+const APP_TITLE = productInfo().title;
 
 
 // build-info.json do workflow tạo khi build (số phiên bản và mã commit). Chạy dev thì không có file này.
@@ -30,6 +30,7 @@ ipcMain.handle('lesson:load', (_event, relPath) => {
   return loadLesson(relPath);
 });
 ipcMain.handle('app:info', () => readBuildInfo());
+ipcMain.handle('product:info', () => productInfo());
 
 ipcMain.handle('license:load', () => licenseNow());
 ipcMain.handle('license:activate', (_event, key) => lic.activate(licenseStoreDir(), key));

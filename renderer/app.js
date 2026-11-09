@@ -471,19 +471,20 @@ async function openLesson(relPath, mode = 'practice') {
 }
 
 // Màn hình khởi động: chọn lớp, thông tin bản quyền và khu vực quảng cáo.
-const GRADES = [
-  { grade: 6, available: true },
-  { grade: 7, available: true },
-  { grade: 8, available: true },
-  { grade: 9, available: true },
-];
-// Các môn của từng lớp.
+// Lớp và môn lấy từ cấu hình sản phẩm (THCS hoặc THPT), nạp khi mở app.
+let GRADES = [];
 const SUBJECT_BASE = { toan: 'Toán', ly: 'Vật lí', hoa: 'Hoá học', sinh: 'Sinh học', lichsu: 'Lịch sử', diali: 'Địa lí' };
 const GRADE_SUBJECTS = {};
 const SUBJECT_LABELS = {};
-for (const g of [6, 7, 8, 9]) {
-  GRADE_SUBJECTS[g] = Object.keys(SUBJECT_BASE).map((k) => k + g);
-  for (const k of Object.keys(SUBJECT_BASE)) SUBJECT_LABELS[k + g] = SUBJECT_BASE[k];
+function applyProduct(product) {
+  GRADES = product.grades.map((g) => ({ grade: g, available: true }));
+  for (const g of product.grades) GRADE_SUBJECTS[g] = [];
+  for (const subject of product.subjects) {
+    const grade = Number(subject.match(/(\d+)$/)[1]);
+    const base = subject.slice(0, -String(grade).length);
+    GRADE_SUBJECTS[grade].push(subject);
+    SUBJECT_LABELS[subject] = SUBJECT_BASE[base] || base;
+  }
 }
 // Mục lục của từng môn, nạp một lần khi mở app.
 const manifestCache = {};
@@ -622,6 +623,11 @@ async function init() {
     // Không hiện số phiên bản nếu không đọc được; không ảnh hưởng luồng chính.
   }
   try {
+    const product = await window.vungBai.productInfo();
+    applyProduct(product);
+    document.title = product.title;
+    document.getElementById('brand').textContent = product.title;
+    currentGrade = GRADES[0].grade;
     for (const subject of Object.keys(SUBJECT_LABELS)) {
       manifestCache[subject] = await window.vungBai.loadManifest(subject);
     }

@@ -36,13 +36,23 @@ jobs:
           RUN_NUMBER: ${{ github.run_number }}
         run: npm pkg set version="1.0.$RUN_NUMBER"
 
-      - name: Build installer exe
+      - name: Build installer exe (THCS)
         shell: bash
         env:
           ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/
           ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/
         run: |
+          node tools/select-product.js thcs
           for i in 1 2 3; do npm run dist:win && exit 0; echo "build lỗi, thử lại lần $i"; sleep 20; done; exit 1
+
+      - name: Build installer exe (THPT)
+        shell: bash
+        env:
+          ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/
+          ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/
+        run: |
+          node tools/select-product.js thpt
+          for i in 1 2 3; do npm run dist:win:thpt && exit 0; echo "build lỗi, thử lại lần $i"; sleep 20; done; exit 1
 
       - name: Build key issuing tool exe
         shell: bash
@@ -57,6 +67,12 @@ jobs:
         with:
           name: vung-bai-exe
           path: dist/*.exe
+
+      - name: Upload THPT exe
+        uses: actions/upload-artifact@v4
+        with:
+          name: thpt-exe
+          path: dist-thpt/*.exe
 
       - name: Upload key issuing tool
         uses: actions/upload-artifact@v4

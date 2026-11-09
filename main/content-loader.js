@@ -41,13 +41,13 @@ function loadManifest(subject) {
   return readJson(path.join(assertSubject(subject), 'manifest.json'));
 }
 
-// Các môn được phép đọc. Mỗi môn là một thư mục con của content/.
-const SUBJECTS = [
-  'toan6', 'ly6', 'hoa6', 'sinh6', 'lichsu6', 'diali6',
-  'toan7', 'ly7', 'hoa7', 'sinh7', 'lichsu7', 'diali7',
-  'toan8', 'ly8', 'hoa8', 'sinh8', 'lichsu8', 'diali8',
-  'toan9', 'ly9', 'hoa9', 'sinh9', 'lichsu9', 'diali9',
-];
+// Sản phẩm đang chạy (THCS hoặc THPT) quyết định các môn được phép đọc. Xem tools/select-product.js.
+const PRODUCT = require('./product.json');
+const SUBJECTS = PRODUCT.subjects;
+
+function productInfo() {
+  return { title: PRODUCT.title, grades: PRODUCT.grades, subjects: PRODUCT.subjects };
+}
 
 function assertSubject(subject) {
   if (!SUBJECTS.includes(subject)) throw new Error('Môn học không hợp lệ');
@@ -81,4 +81,4 @@ function loadLesson(relPath) {
   return attachFigures(checkLesson(readJson(relPath), relPath), base);
 }
 
-module.exports = { loadManifest, loadLesson, safeResolve, SUBJECTS };
+module.exports = { loadManifest, loadLesson, safeResolve, SUBJECTS, productInfo };

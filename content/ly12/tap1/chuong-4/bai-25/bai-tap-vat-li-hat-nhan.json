@@ -112,6 +112,35 @@
         "1": "Phóng xạ γ phát ra photon, không phải electron.",
         "3": "Phóng xạ γ không đổi thành hạt nhân khác."
       }
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Bảng 25.1 ghi độ phóng xạ H (Bq) của một đồng vị theo thời gian t (s): t = 0 → H = 151; t = 30 → 85; t = 60 → 55; t = 120 → 31; t = 180 → 22; t = 240 → 15; t = 300 → 11; t = 360 → 9. Trong khoảng thời gian nào độ phóng xạ giảm nhiều nhất?",
+      "choices": [
+        "60 đến 120 s",
+        "180 đến 240 s",
+        "300 đến 360 s",
+        "0 đến 30 s"
+      ],
+      "answer": 3,
+      "explain": "Từ 0 đến 30 s, H giảm từ 151 Bq xuống 85 Bq (giảm 66 Bq), lớn hơn mọi khoảng 30 s còn lại.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Từ 60 đến 120 s, H giảm từ 55 xuống 31 Bq (giảm 24 Bq).",
+        "1": "Từ 180 đến 240 s, H giảm từ 22 xuống 15 Bq (giảm 7 Bq).",
+        "2": "Từ 300 đến 360 s, H giảm từ 11 xuống 9 Bq (giảm 2 Bq)."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Theo Bảng 25.1 (H = 151 Bq tại t = 0), độ phóng xạ ban đầu H₀ (Bq) là:",
+      "expr": "151",
+      "answer": "151",
+      "explain": "Tại thời điểm ban đầu t = 0, H₀ = 151 Bq."
     }
   ]
 }
