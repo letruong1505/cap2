@@ -83,14 +83,14 @@ function renderExamples(lesson) {
   box.replaceChildren();
   lesson.examples.forEach((ex, i) => {
     const wrap = el('div', { class: 'example' });
-    wrap.append(el('strong', {}, `Ví dụ ${i + 1}: ${ex.problem}`));
+    wrap.append(el('p', { class: 'example-label' }, `Ví dụ ${i + 1}`), el('p', { class: 'example-problem' }, ex.problem));
     if (ex.figureSvg) {
       wrap.append(el('img', { class: 'figure', alt: `Hình minh họa ví dụ ${i + 1}`, src: figureSrc(ex.figureSvg) }));
     }
     const steps = el('ol');
     ex.steps.forEach((s) => steps.append(el('li', {}, s)));
     wrap.append(steps);
-    wrap.append(el('p', {}, `Đáp số: ${ex.answer}`));
+    wrap.append(el('p', { class: 'example-answer' }, 'Đáp số: ', el('b', {}, viNumber(ex.answer))));
     box.append(wrap);
   });
   // Bài không có ví dụ tính toán (Lịch sử, Địa lí) thì ẩn cả mục "Ví dụ".
@@ -105,6 +105,9 @@ function renderQuiz(lesson, attempt) {
   advBox.replaceChildren();
   const advCount = lesson.items.filter((it) => it.level === 'Nâng cao').length;
   document.getElementById('sec-advanced').hidden = advCount === 0;
+  // Bài chỉ gồm câu nâng cao: không cần tiêu đề phụ "Bài tập nâng cao" thứ hai.
+  document.getElementById('sec-advanced').classList.toggle('only', advCount === lesson.items.length);
+  document.getElementById('theory-heading').textContent = lesson.book === 'Bài tập nâng cao' ? 'Hướng dẫn' : 'Lý thuyết';
 
   let currentLevel = null;
   attempt.questions.forEach((itemIndex, idx) => {
@@ -135,7 +138,7 @@ function renderQuiz(lesson, attempt) {
         input.addEventListener('change', () => {
           attempt.answers[item.id] = choice;
         });
-        label.append(input, ' ', choice);
+        label.append(input, el('span', {}, choice));
         q.append(label);
       });
     } else {
@@ -172,8 +175,14 @@ function isCorrect(item, value) {
   }
 }
 
+// Số thập phân hiển thị theo kiểu Việt Nam: 4,5 thay cho 4.5.
+function viNumber(v) {
+  const t = String(v);
+  return /^-?\d+\.\d+$/.test(t) ? t.replace('.', ',') : t;
+}
+
 function correctText(item) {
-  return item.type === 'mcq' ? item.choices[item.answer] : item.answer;
+  return item.type === 'mcq' ? item.choices[item.answer] : viNumber(item.answer);
 }
 
 // Hiển thị kết quả của một câu sau khi nộp bài.
@@ -217,6 +226,14 @@ function submitAll(lesson, attempt) {
     if (!q) return;
     showResult(item, q.querySelector('.feedback'), attempt.answers[item.id]);
     q.querySelectorAll('input').forEach((i) => { i.disabled = true; });
+    // Tô phương án đúng và phương án đã chọn sai.
+    if (item.type === 'mcq') {
+      q.querySelectorAll('.choice').forEach((label) => {
+        const text = label.querySelector('span').textContent;
+        if (text === item.choices[item.answer]) label.classList.add('is-right');
+        else if (label.querySelector('input').checked) label.classList.add('is-wrong');
+      });
+    }
   });
   document.getElementById('btn-submit').disabled = true;
   updateScore(lesson, attempt);
@@ -245,7 +262,7 @@ function updateScore(lesson, attempt) {
       wrong.push({ no: idx + 1, answer: correctText(item) });
     }
   });
-  box.append(el('strong', {}, `Đúng ${correct}/${total} câu`));
+  box.append(el('p', { class: 'score-total' }, el('b', {}, `${correct}/${total}`), ' câu đúng'));
   if (wrong.length > 0) {
     const list = el('ul', { class: 'wrong-list' });
     for (const w of wrong) {
@@ -261,41 +278,81 @@ function showOnly(id) {
   }
 }
 
-// Màn hình chính: danh sách chương và bài theo manifest của gói nội dung.
+// Biểu tượng ổ khoá cho bài cần bản quyền.
+const LOCK_SVG = '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="7" width="10" height="7" rx="1.5" fill="currentColor"/><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>';
+
+// Tách "Bài 12. Tên bài" thành số bài và tên bài để hiển thị theo cột.
+function splitLessonTitle(title) {
+  const m = /^Bài (\d+)\.\s*(.*)$/.exec(title);
+  return m ? { no: `Bài ${m[1]}`, name: m[2] } : { no: '', name: title };
+}
+
+// Màn hình chính: danh sách chương và bài theo mục lục của môn.
 function renderHome(manifest, subject) {
   const home = document.getElementById('home');
-  const back = el('button', { class: 'link', type: 'button' }, '← Chọn môn');
+  const back = el('button', { class: 'back-link', type: 'button' }, '← Chọn môn');
   back.addEventListener('click', () => showSubjects(currentGrade));
-  home.replaceChildren(back, el('h1', {}, 'Chọn bài học'));
-  home.append(el('p', { class: 'meta' }, `Gói: ${manifest.bookSeries} · phiên bản ${manifest.version}`));
+
+  let total = 0;
+  let locked = 0;
+  for (const book of manifest.books) for (const c of book.chapters) for (const l of c.lessons) {
+    if (!l.file) continue;
+    total += 1;
+    if (l.locked) locked += 1;
+  }
+  const head = el('header', { class: 'screen-head' });
+  head.append(
+    el('p', { class: 'screen-kicker' }, `Lớp ${currentGrade}`),
+    el('h1', {}, SUBJECT_LABELS[subject] || 'Chọn bài học'),
+    el('p', { class: 'screen-sub' }, locked > 0
+      ? `${total} bài. Bạn đang dùng thử: 2 bài đầu mở sẵn, các bài có ổ khoá cần kích hoạt bản quyền.`
+      : `${total} bài. Chọn một bài để học lý thuyết và luyện tập.`),
+  );
+  home.replaceChildren(back, head);
 
   for (const book of manifest.books) {
-    home.append(el('h2', {}, book.title));
+    const advanced = book.title === 'Bài tập nâng cao';
+    const part = el('section', { class: 'book' + (advanced ? ' book-advanced' : '') });
+    part.append(el('h2', { class: 'book-title' }, book.title));
+    if (advanced) part.append(el('p', { class: 'screen-sub' }, 'Các câu khó gom theo chương, dành cho bạn muốn thử sức thêm.'));
     for (const chapter of book.chapters) {
       const block = el('div', { class: 'chapter' });
-      block.append(el('h3', {}, chapter.title));
+      if (!advanced) block.append(el('h3', {}, chapter.title));
       if (chapter.lessons.length === 0) {
         block.append(el('p', { class: 'meta' }, 'Đang biên soạn'));
-      } else {
-        const list = el('ul', { class: 'lesson-list' });
-        for (const lesson of chapter.lessons) {
-          const li = el('li');
-          if (lesson.file) {
-            const btn = el('button', { class: 'link' + (lesson.locked ? ' locked' : ''), type: 'button' }, (lesson.locked ? '🔒 ' : '') + lesson.title);
-            // Đường dẫn trong manifest tính từ thư mục sản phẩm, còn bộ nạp tính từ content/.
-            btn.addEventListener('click', () => (lesson.locked ? showLockedNotice() : openLesson(subject + '/' + lesson.file, lesson.mode || 'practice')));
-            li.append(btn);
-          } else {
-            li.append(el('span', { class: 'meta' }, `${lesson.title} · đang biên soạn`));
-          }
-          list.append(li);
-        }
-        block.append(list);
+        part.append(block);
+        continue;
       }
-      home.append(block);
+      const list = el('ul', { class: 'lesson-list' });
+      for (const lesson of chapter.lessons) {
+        const li = el('li');
+        const { no, name } = splitLessonTitle(lesson.title);
+        if (lesson.file) {
+          const btn = el('button', { class: 'lesson-row' + (lesson.locked ? ' locked' : ''), type: 'button' });
+          btn.append(el('span', { class: 'lesson-no' }, no), el('span', { class: 'lesson-name' }, name));
+          if (lesson.locked) {
+            const lock = el('span', { class: 'lesson-lock', title: 'Cần bản quyền' });
+            lock.innerHTML = LOCK_SVG;
+            btn.append(lock);
+            btn.setAttribute('aria-label', `${lesson.title} (cần bản quyền)`);
+          }
+          // Đường dẫn trong mục lục tính từ thư mục môn, còn bộ nạp tính từ content/.
+          btn.addEventListener('click', () => (lesson.locked ? showLockedNotice() : openLesson(subject + '/' + lesson.file, lesson.mode || 'practice')));
+          li.append(btn);
+        } else {
+          const row = el('span', { class: 'lesson-row pending' });
+          row.append(el('span', { class: 'lesson-no' }, no), el('span', { class: 'lesson-name' }, name), el('span', { class: 'lesson-tag' }, 'Đang biên soạn'));
+          li.append(row);
+        }
+        list.append(li);
+      }
+      block.append(list);
+      part.append(block);
     }
+    home.append(part);
   }
   showOnly('home');
+  window.scrollTo(0, 0);
 }
 
 // Chế độ hiển thị: luyện tập (có lý thuyết và chấm điểm), ôn tập tự luận, hoặc hướng dẫn giải.
@@ -346,6 +403,7 @@ async function openLesson(relPath, mode = 'practice') {
 
     if (lesson.kind === 'review') {
       const view = mode === 'solutions' ? 'solutions' : 'review';
+      document.getElementById('lesson-kicker').textContent = lesson.chapter || '';
       document.getElementById('lesson-title').textContent = lesson.title;
       document.getElementById('lesson-meta').textContent =
         view === 'solutions'
@@ -359,9 +417,10 @@ async function openLesson(relPath, mode = 'practice') {
       return;
     }
 
+    document.getElementById('lesson-kicker').textContent = lesson.book === 'Bài tập nâng cao' ? '' : (lesson.chapter || '');
     document.getElementById('lesson-title').textContent = lesson.lesson;
     document.getElementById('lesson-meta').textContent =
-      `Sách: ${lesson.bookSeries} · ${lesson.items.length} câu luyện tập`;
+      `Sách ${lesson.bookSeries}. ${lesson.items.length} câu luyện tập, làm xong bấm "Kiểm tra toàn bài" để xem kết quả.`;
 
     setSections('practice');
     const attempt = newAttempt(lesson);
@@ -375,8 +434,10 @@ async function openLesson(relPath, mode = 'practice') {
     updateScore(lesson, attempt);
 
     showOnly('lesson');
+    window.scrollTo(0, 0);
   } catch (err) {
-    document.getElementById('empty').replaceChildren(el('p', {}, 'Không tải được bài học: ' + err.message));
+    console.error(err);
+    document.getElementById('empty').replaceChildren(el('p', {}, 'Không mở được bài học này. Hãy quay lại và thử lại; nếu vẫn lỗi, hãy cài lại phần mềm.'));
     showOnly('empty');
   }
 }
@@ -497,7 +558,8 @@ function showSubjects(grade) {
   currentGrade = grade || currentGrade;
   grade = currentGrade;
   const title = document.querySelector('#subjects h1');
-  if (title) title.textContent = `Chọn môn học · Lớp ${grade}`;
+  if (title) title.textContent = 'Chọn môn học';
+  document.getElementById('subjects-kicker').textContent = `Lớp ${grade}`;
   document.getElementById('breadcrumb').textContent = '';
   const box = document.getElementById('subject-list');
   box.replaceChildren();
@@ -512,7 +574,7 @@ function showSubjects(grade) {
 async function init() {
   try {
     const info = await window.vungBai.appInfo();
-    document.getElementById('build').textContent = `Phiên bản ${info.version} (${info.commit})`;
+    document.getElementById('build').textContent = `Phiên bản ${info.version}`;
   } catch {
     // Không hiện số phiên bản nếu không đọc được; không ảnh hưởng luồng chính.
   }
@@ -529,7 +591,8 @@ async function init() {
     await refreshLicense();
     showLaunch();
   } catch (err) {
-    document.getElementById('empty').replaceChildren(el('p', {}, 'Không tải được gói nội dung: ' + err.message));
+    console.error(err);
+    document.getElementById('empty').replaceChildren(el('p', {}, 'Không tải được nội dung bài học. Hãy cài lại phần mềm hoặc liên hệ Nam Linh: 0968 646 853.'));
     showOnly('empty');
   }
 }

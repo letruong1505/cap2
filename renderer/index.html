@@ -16,6 +16,7 @@
   <main id="app">
     <section id="launch" class="panel" hidden>
       <header class="launch-head">
+        <p class="hello">Chào bạn, Vất vả hôm nay cho Ngày mai tươi sáng!</p>
         <p class="greeting">Mỗi ngày một bài, vững vàng cả năm.</p>
         <h1>Chọn lớp học</h1>
       </header>
@@ -84,20 +85,26 @@
     </section>
 
     <section id="subjects" class="panel" hidden>
-      <button id="btn-grades" class="link" type="button">← Chọn lớp</button>
-      <h1>Chọn môn học · Lớp 7</h1>
+      <button id="btn-grades" class="back-link" type="button">← Chọn lớp</button>
+      <header class="screen-head">
+        <p class="screen-kicker" id="subjects-kicker"></p>
+        <h1>Chọn môn học</h1>
+      </header>
       <div class="grades" id="subject-list"></div>
     </section>
 
     <section id="home" class="panel" hidden></section>
 
     <section id="lesson" class="panel" hidden>
-      <button id="btn-back" class="link" type="button">← Danh mục bài học</button>
-      <h1 id="lesson-title"></h1>
-      <p class="meta" id="lesson-meta"></p>
+      <button id="btn-back" class="back-link" type="button">← Danh mục bài học</button>
+      <header class="screen-head">
+        <p class="screen-kicker" id="lesson-kicker"></p>
+        <h1 id="lesson-title"></h1>
+        <p class="screen-sub" id="lesson-meta"></p>
+      </header>
 
       <div id="sec-theory">
-        <h2>Lý thuyết</h2>
+        <h2 id="theory-heading">Lý thuyết</h2>
         <div id="theory"></div>
       </div>
 
@@ -111,7 +118,7 @@
       <div id="quiz"></div>
       <div id="sec-advanced" hidden>
         <h2 class="advanced-title">Bài tập nâng cao</h2>
-        <p class="meta">Phần riêng dành cho học sinh muốn thử sức thêm; tính chung vào điểm toàn bài.</p>
+        <p class="screen-sub">Dành cho bạn muốn thử sức thêm. Các câu này được tính chung vào điểm toàn bài.</p>
         <div id="quiz-adv"></div>
       </div>
       <div class="actions" id="sec-actions">
