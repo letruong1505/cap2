@@ -183,6 +183,76 @@
         "1": "Không có điểm nào mà đạo hàm đổi dấu từ âm sang dương, nên không có cực tiểu.",
         "3": "Cả hai loại cực trị đều không xuất hiện vì đạo hàm luôn âm."
       }
+    },
+    {
+      "id": "q09",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "figure": "figures/bt-1-8b.svg",
+      "stem": "Hàm số y = |x| (Ví dụ 1, Hình 1.4) nghịch biến trên khoảng nào?",
+      "choices": [
+        "(−∞; 0)",
+        "(0; +∞)",
+        "ℝ",
+        "(−1; 1)"
+      ],
+      "answer": 0,
+      "explain": "Từ đồ thị: hàm số đi xuống khi x < 0 và đi lên khi x > 0, nên nghịch biến trên (−∞; 0) và đồng biến trên (0; +∞).",
+      "wrong_explain": {
+        "1": "Trên (0; +∞) hàm số đồng biến chứ không nghịch biến.",
+        "2": "Hàm số không đơn điệu trên toàn ℝ vì đổi chiều tại x = 0.",
+        "3": "Trên (−1; 1) hàm số vừa nghịch biến vừa đồng biến, nên không khoảng nào trong phương án này là khoảng nghịch biến."
+      }
+    },
+    {
+      "id": "q10",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Với hàm số y = x² − 4x + 2 (Ví dụ 2), giá trị đạo hàm y' tại x = 0 là?",
+      "expr": "2*0-4",
+      "answer": "-4",
+      "explain": "y' = 2x − 4, nên y'(0) = −4 < 0: tại x = 0 hàm số đang nghịch biến."
+    },
+    {
+      "id": "q11",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số y = (x² − 2x + 5)/(x − 1) (Ví dụ 3) đồng biến trên các khoảng nào?",
+      "choices": [
+        "(−∞; −1) và (3; +∞)",
+        "(−1; 1) và (1; 3)",
+        "(−∞; 1) và (1; +∞)",
+        "(−1; 3)"
+      ],
+      "answer": 0,
+      "explain": "y' = (x² − 2x − 3)/(x − 1)² = 0 khi x = −1 hoặc x = 3. Dấu của y' dương trên (−∞; −1) và (3; +∞).",
+      "wrong_explain": {
+        "1": "Trên (−1; 1) và (1; 3) đạo hàm âm nên hàm số nghịch biến.",
+        "2": "Hàm số không xác định tại x = 1 và đổi chiều tại đó, nên không đồng biến trên (−∞; 1) và (1; +∞).",
+        "3": "Trên (−1; 3) đạo hàm âm, hàm số nghịch biến."
+      }
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số y = (x − 2)/(x + 1) (Ví dụ 4) có tính đơn điệu nào?",
+      "choices": [
+        "Đồng biến trên (−∞; −1) và trên (−1; +∞)",
+        "Nghịch biến trên (−∞; −1) và trên (−1; +∞)",
+        "Không đơn điệu trên tập xác định",
+        "Đồng biến trên (−∞; −1), nghịch biến trên (−1; +∞)"
+      ],
+      "answer": 0,
+      "explain": "y' = 3/(x + 1)² > 0 với mọi x ≠ −1, nên hàm số đồng biến trên mỗi khoảng xác định.",
+      "wrong_explain": {
+        "1": "y' > 0 nên hàm số đồng biến, không nghịch biến.",
+        "2": "Đạo hàm không đổi dấu trên mỗi khoảng xác định, nên hàm số có tính đơn điệu rõ ràng.",
+        "3": "Hàm số có cùng dấu đạo hàm trên mỗi khoảng, không đổi chiều giữa hai khoảng này."
+      }
     }
   ]
 }

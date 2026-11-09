@@ -6,7 +6,7 @@
   "book": "Toán 12, tập 1",
   "chapter": "Chương I. Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
   "lesson": "Bài 5. Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
-  "section": "Phần 1: Tốc độ thay đổi của một đại lượng; Phần 2: Bài toán tối ưu hoá",
+  "section": "Phần 1: Tốc độ thay đổi của một đại lượng; Phần 2: Một vài bài toán tối ưu hoá đơn giản",
   "bookPage": 33,
   "theory": [
     {
@@ -24,6 +24,14 @@
     {
       "type": "text",
       "content": "Bài toán tối ưu hoá: thiết lập hàm số cần tối ưu từ dữ kiện đề bài, tìm tập xác định phù hợp với ý nghĩa thực tiễn, khảo sát để tìm giá trị lớn nhất hoặc nhỏ nhất, rồi kết luận theo ngữ cảnh."
+    },
+    {
+      "type": "text",
+      "content": "Hàm cầu p(x) là giá bán mỗi đơn vị khi bán x đơn vị (thường là hàm giảm). Hàm doanh thu R(x) = x·p(x), hàm lợi nhuận P(x) = R(x) − C(x). Đạo hàm R'(x) là doanh thu biên và P'(x) là lợi nhuận biên."
+    },
+    {
+      "type": "text",
+      "content": "Quy trình giải bài toán tối ưu hoá: Bước 1, xác định đại lượng Q cần làm lớn nhất hoặc nhỏ nhất và biểu diễn nó qua các đại lượng khác. Bước 2, chọn một đại lượng x thích hợp, biểu diễn Q theo x và tìm tập xác định của Q(x). Bước 3, tìm giá trị lớn nhất hoặc nhỏ nhất của Q(x) rồi kết luận."
     }
   ],
   "examples": [
@@ -54,6 +62,35 @@
         "Khi t → +∞, e^(−0,75t) → 0 nên P(t) → a/b = 100. Quần thể nấm men tiến dần tới 100 (đơn vị đã cho trong đề)."
       ],
       "answer": "20"
+    },
+    {
+      "problem": "Một công ty có chi phí C(x) = 30 000 + 300x − 2,5x² + 0,125x³ (nghìn đồng). Tính chi phí biên tại x = 200.",
+      "expr": "300-5*200+3/8*200*200",
+      "steps": [
+        "Hàm chi phí biên C'(x) = 300 − 5x + 0,375x².",
+        "C'(200) = 300 − 1000 + 15 000 = 14 300 (nghìn đồng).",
+        "Chi phí biên xấp xỉ chi phí của đơn vị hàng hoá thứ 201."
+      ],
+      "answer": "14300"
+    },
+    {
+      "problem": "Công ty có lợi nhuận hằng tháng P(x) = −0,3x³ + 36x² + 1 800x − 48 000 (nghìn đồng) khi bán x chiếc máy. Số máy ít nhất để hoà vốn (P(x) = 0) là bao nhiêu?",
+      "expr": "-0.3*20*20*20+36*20*20+1800*20-48000",
+      "steps": [
+        "Ta có P'(x) = −0,9x² + 72x + 1 800 = −0,9(x − 100)(x + 20), nên P đồng biến trên [0; 100] và nghịch biến trên (100; +∞).",
+        "P(100) = 192 000 là giá trị cực đại; P(0) = −48 000 < 0.",
+        "P(20) = 0 và P(x) < 0 khi x < 20, P(x) > 0 khi 20 < x < 152. Vậy cần ít nhất 20 chiếc để hoà vốn."
+      ],
+      "answer": "0"
+    },
+    {
+      "problem": "Với hàm lợi nhuận P(x) ở trên, lợi nhuận lớn nhất là bao nhiêu nghìn đồng? (x = 200 cho lợi nhuận âm.)",
+      "expr": "-0.3*100*100*100+36*100*100+1800*100-48000",
+      "steps": [
+        "Lợi nhuận đạt cực đại tại x = 100, P(100) = −300 000 + 360 000 + 180 000 − 48 000 = 192 000.",
+        "P(200) = −648 000 < 0, nên không nên sản xuất 200 chiếc mỗi tháng."
+      ],
+      "answer": "192000"
     }
   ],
   "items": [
@@ -141,6 +178,75 @@
       "expr": "25*4",
       "answer": "100",
       "explain": "Khi t → +∞, P(t) → a/b = 25/(1/4) = 100."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Luyện tập 1: Huyết áp tâm thu P(t) = (25t² + 125)/(t² + 1) (mmHg). Tốc độ thay đổi của huyết áp tại t = 5 giây là? (nhập dạng phân số tối giản, ví dụ −250/169)",
+      "expr": "-1000/676",
+      "answer": "-250/169",
+      "explain": "P'(t) = −200t/(t² + 1)². Tại t = 5: P'(5) = −1000/676 = −250/169 ≈ −1,48 mmHg/giây; huyết áp đang giảm."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 4 (chất gây ô nhiễm): chi phí C(x) = 300x/(100 − x) (triệu đồng), 0 ≤ x < 100. Khi x → 100⁻ thì C(x) tiến tới giá trị nào, và điều đó nói lên điều gì?",
+      "choices": [
+        "+∞; không thể loại bỏ 100% chất gây ô nhiễm",
+        "0; loại bỏ được 100% với chi phí nhỏ",
+        "300; chi phí không đổi",
+        "−∞; chi phí âm nên có lợi"
+      ],
+      "answer": 0,
+      "explain": "Mẫu 100 − x tiến về 0 còn tử 300x → 30 000 > 0, nên C(x) → +∞: loại bỏ gần hết chất gây ô nhiễm đòi hỏi chi phí tăng không giới hạn.",
+      "wrong_explain": {
+        "1": "Ở x = 0 chi phí bằng 0, nhưng khi x → 100⁻ chi phí tăng không giới hạn.",
+        "2": "C(x) không cố định; C(x) tăng khi x tăng vì C'(x) > 0.",
+        "3": "Chi phí không thể âm khi 0 ≤ x < 100, vì tử và mẫu đều dương."
+      }
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hộp đựng hình trụ có thể tích 1 lít (1000 cm³) làm bằng vật liệu sao cho diện tích toàn phần nhỏ nhất (Ví dụ 5). Khi đó chiều cao h và bán kính đáy r thoả mãn hệ thức nào?",
+      "choices": [
+        "h = 2r",
+        "h = r",
+        "r = 2h",
+        "h = r/2"
+      ],
+      "answer": 0,
+      "explain": "Từ S'(r) = 0 ta có πr³ = 500, và h = 1000/(πr²) = 2r. Chiều cao bằng đường kính đáy: r ≈ 5,42 cm, h ≈ 10,84 cm.",
+      "wrong_explain": {
+        "1": "Với h = r, thể tích và diện tích không đạt cực tiểu cùng lúc; điều kiện đúng là h = 2r.",
+        "2": "r = 2h cho thể tích 1000 cm³ khác với đề bài và không phải điểm cực tiểu của S(r).",
+        "3": "h = r/2 cho diện tích lớn hơn giá trị nhỏ nhất."
+      }
+    },
+    {
+      "id": "q11",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 2: Anh An chèo thuyền từ A (bờ này) qua sông rộng 3 km đến D cách C một đoạn x km, rồi chạy bộ đến B (cách C 8 km theo bờ). Vận tốc chèo 6 km/h, chạy bộ 8 km/h. Anh nên chèo đến điểm D cách C bao nhiêu để đến B sớm nhất?",
+      "choices": [
+        "CD = 9√7/7 km ≈ 3,4 km",
+        "CD = 0 (chèo thẳng đến C rồi chạy)",
+        "CD = 3 km",
+        "CD = 8 km (chèo thẳng đến B)"
+      ],
+      "answer": 0,
+      "explain": "Thời gian T(x) = √(9 + x²)/6 + (8 − x)/8. T'(x) = 0 khi x = 9√7/7 ≈ 3,40 km, đó là điểm cực tiểu và cho thời gian nhỏ nhất.",
+      "wrong_explain": {
+        "1": "T(0) ≈ 1,50 giờ lớn hơn T(9√7/7) ≈ 1,33 giờ, nên chèo đến C không phải tối ưu.",
+        "2": "T(3) ≈ 1,332 giờ, chỉ hơi lớn hơn giá trị nhỏ nhất ≈ 1,331 giờ tại CD ≈ 3,40 km.",
+        "3": "CD = 8 km nghĩa là chèo đến B, thời gian khoảng 1,42 giờ lớn hơn giá trị nhỏ nhất."
+      }
     }
   ]
 }
