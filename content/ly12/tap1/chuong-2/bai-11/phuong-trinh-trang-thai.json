@@ -1,0 +1,211 @@
+{
+  "id": "bai-11",
+  "grade": 12,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 12",
+  "chapter": "Chương II. Khí lí tưởng",
+  "lesson": "Bài 11. Phương trình trạng thái của khí lí tưởng",
+  "section": "",
+  "bookPage": 45,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các định luật Boyle và Charles chỉ cho mối liên hệ giữa hai thông số tại một thời điểm. Phương trình trạng thái liên hệ đồng thời cả ba thông số p, V, T của một khối lượng khí xác định."
+    },
+    {
+      "type": "formula",
+      "content": "p₁V₁/T₁ = p₂V₂/T₂  hay  pV/T = hằng số"
+    },
+    {
+      "type": "text",
+      "content": "Độ lớn của hằng số trong phương trình trạng thái phụ thuộc vào lượng khí đang xét. Quá trình chuyển trạng thái chỉ phụ thuộc vào trạng thái đầu và trạng thái cuối, không phụ thuộc cách chuyển."
+    },
+    {
+      "type": "text",
+      "content": "Với n mol khí lí tưởng, phương trình Clapeyron là pV = nRT, trong đó R = 8,31 J/(mol·K) là hằng số khí lí tưởng và n = m/M là số mol."
+    },
+    {
+      "type": "text",
+      "content": "Ở điều kiện tiêu chuẩn, một mol khí có thể tích 22,4·10⁻³ m³ (22,4 L), áp suất 1,013·10⁵ Pa và nhiệt độ 273 K."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Bình chứa 2 L khí ở áp suất 1,0·10⁵ Pa và nhiệt độ 300 K. Nén còn 1 L và nâng nhiệt độ lên 330 K. Tính áp suất mới.",
+      "steps": [
+        "p₂ = p₁V₁T₂/(V₂T₁) = 1,0·10⁵ · 2 · 330 / (1 · 300).",
+        "= 2,2·10⁵ Pa."
+      ],
+      "expr": "100000*2*330/300",
+      "answer": "220000"
+    },
+    {
+      "problem": "Tính áp suất của 2 mol khí lí tưởng trong bình 5 m³ ở nhiệt độ 300 K.",
+      "steps": [
+        "p = nRT/V = 2 · 8,31 · 300 / 5.",
+        "= 997,2 Pa."
+      ],
+      "expr": "2*8.31*300/5",
+      "answer": "997,2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phương trình trạng thái của một lượng khí lí tưởng xác định có dạng:",
+      "choices": [
+        "pV/T = hằng số",
+        "pT/V = hằng số",
+        "V/(pT) = hằng số",
+        "p + V = T"
+      ],
+      "answer": 0,
+      "explain": "Từ định luật Boyle và Charles ta được pV/T không đổi.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Đây không phải tổ hợp đúng của các thông số.",
+        "2": "Đây không phải tổ hợp đúng của các thông số.",
+        "3": "Phương trình không có dạng cộng."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Quá trình chuyển trạng thái của một lượng khí xác định phụ thuộc vào yếu tố nào?",
+      "choices": [
+        "Chỉ phụ thuộc trạng thái đầu và trạng thái cuối",
+        "Phụ thuộc cách chuyển trạng thái",
+        "Phụ thuộc màu sắc của bình",
+        "Phụ thuộc vị trí bình"
+      ],
+      "answer": 0,
+      "explain": "Phương trình trạng thái cho thấy hệ thức giữa trạng thái đầu và cuối không phụ thuộc đường đi.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Cùng một trạng thái đầu và cuối, cách chuyển khác nhau cho cùng kết quả.",
+        "2": "Màu sắc bình không ảnh hưởng.",
+        "3": "Vị trí bình không ảnh hưởng."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn vị của hằng số khí lí tưởng R là:",
+      "choices": [
+        "J/(mol·K)",
+        "J/mol",
+        "Pa·m³",
+        "K/mol"
+      ],
+      "answer": 0,
+      "explain": "R = 8,31 J/(mol·K).",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Thiếu nhiệt độ trong đơn vị.",
+        "2": "Pa·m³ là đơn vị của công, không phải R.",
+        "3": "Đơn vị không đúng."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phương trình Clapeyron cho n mol khí lí tưởng là:",
+      "choices": [
+        "pV = nRT",
+        "p/V = nRT",
+        "pT = nRV",
+        "V/T = nRp"
+      ],
+      "answer": 0,
+      "explain": "Phương trình trạng thái của n mol khí lí tưởng là pV = nRT.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Vế trái sai: p phải nhân với V.",
+        "2": "Vị trí của V và T sai.",
+        "3": "Vị trí của p và V sai."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bình chứa 2 L khí ở 1,0·10⁵ Pa và 300 K. Nén còn 1 L, nâng nhiệt độ lên 360 K. Áp suất mới (Pa):",
+      "expr": "100000*2*360/300",
+      "answer": "240000",
+      "explain": "p₂ = 1,0·10⁵ · 2 · 360 / 300 = 2,4·10⁵ Pa."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đẳng tích: áp suất 1,0·10⁵ Pa ở 300 K, nâng nhiệt độ lên 450 K. Áp suất mới (Pa):",
+      "expr": "100000*450/300",
+      "answer": "150000",
+      "explain": "p₂ = p₁·T₂/T₁ = 1,0·10⁵ · 450/300 = 1,5·10⁵ Pa."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Số mol của 12 g khí oxygen (M = 32 g/mol) là:",
+      "expr": "12/32",
+      "answer": "0,375",
+      "explain": "n = m/M = 12/32 = 0,375 mol."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bình chứa 3 mol khí có thể tích 10 m³ ở 200 K. Áp suất khí (Pa) là:",
+      "expr": "3*8.31*200/10",
+      "answer": "498,6",
+      "explain": "p = nRT/V = 3 · 8,31 · 200 / 10 = 498,6 Pa."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Với một lượng khí xác định, khi thể tích không đổi mà nhiệt độ tuyệt đối tăng gấp đôi, áp suất:",
+      "choices": [
+        "Tăng gấp đôi",
+        "Giảm một nửa",
+        "Không đổi",
+        "Tăng 4 lần"
+      ],
+      "answer": 0,
+      "explain": "Đẳng tích: p tỉ lệ thuận với T tuyệt đối nên T tăng gấp đôi thì p tăng gấp đôi.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Áp suất tăng khi nhiệt độ tăng ở thể tích không đổi.",
+        "2": "Áp suất thay đổi khi nhiệt độ thay đổi.",
+        "3": "Tỉ lệ là 2 lần, không phải 4 lần."
+      }
+    },
+    {
+      "id": "q10",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hằng số trong phương trình trạng thái pV/T = hằng số phụ thuộc vào yếu tố nào?",
+      "choices": [
+        "Lượng khí (số mol) đang xét",
+        "Vị trí đặt bình khí",
+        "Màu sắc của bình",
+        "Thời gian quan sát"
+      ],
+      "answer": 0,
+      "explain": "Độ lớn của hằng số tỉ lệ với lượng khí (số mol) của khối khí đang xét.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Vị trí bình không ảnh hưởng đến hằng số.",
+        "2": "Màu sắc bình không ảnh hưởng.",
+        "3": "Thời gian không ảnh hưởng."
+      }
+    }
+  ]
+}

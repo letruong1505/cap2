@@ -1,0 +1,211 @@
+{
+  "id": "bai-10",
+  "grade": 12,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 12",
+  "chapter": "Chương II. Khí lí tưởng",
+  "lesson": "Bài 10. Định luật Charles",
+  "section": "",
+  "bookPage": 41,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Quá trình đẳng áp là quá trình biến đổi trạng thái của một khối lượng khí xác định khi áp suất giữ không đổi."
+    },
+    {
+      "type": "text",
+      "content": "Charles nhận thấy, khi áp suất không đổi, thể tích của khí tăng thêm V₀/273 cho mỗi 1 °C tăng nhiệt độ. Vì vậy V = V₀(1 + t/273) với t là nhiệt độ Celsius."
+    },
+    {
+      "type": "text",
+      "content": "Định luật Charles: khi áp suất của một khối lượng khí xác định không đổi thì thể tích của khí tỉ lệ thuận với nhiệt độ tuyệt đối: V/T = hằng số, hay V₁/T₁ = V₂/T₂."
+    },
+    {
+      "type": "formula",
+      "content": "V₁/T₁ = V₂/T₂"
+    },
+    {
+      "type": "text",
+      "content": "Đồ thị V–T của quá trình đẳng áp là đường thẳng đi qua gốc tọa độ khi dùng nhiệt độ Kelvin. Kéo dài đường biểu diễn theo thang Celsius sẽ cắt trục nhiệt độ tại −273 °C, là độ không tuyệt đối; thể tích không thể bằng 0 nên không thể đạt tới nhiệt độ đó."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Khí có thể tích 2 L ở 300 K, được đun đẳng áp lên 450 K. Tính thể tích sau khi đun.",
+      "steps": [
+        "V₂ = V₁·T₂/T₁ = 2 · 450/300.",
+        "= 3 L."
+      ],
+      "expr": "2*450/300",
+      "answer": "3"
+    },
+    {
+      "problem": "Khi đun đẳng áp từ 27 °C lên 127 °C, thể tích khí tăng thêm 6 L. Tính thể tích ban đầu.",
+      "steps": [
+        "V₁/300 = (V₁ + 6)/400 ⇒ 400V₁ = 300V₁ + 1800 ⇒ 100V₁ = 1800.",
+        "V₁ = 18 L."
+      ],
+      "expr": "1800/100",
+      "answer": "18"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Quá trình đẳng áp là quá trình trong đó:",
+      "choices": [
+        "Áp suất của khí không đổi",
+        "Thể tích của khí không đổi",
+        "Nhiệt độ của khí không đổi",
+        "Khối lượng của khí không đổi"
+      ],
+      "answer": 0,
+      "explain": "Đẳng áp là quá trình giữ áp suất không đổi.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Đó là quá trình đẳng tích.",
+        "2": "Đó là quá trình đẳng nhiệt.",
+        "3": "Khối lượng không đổi không đặc trưng cho đẳng áp."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Theo định luật Charles, khi áp suất không đổi, thể tích của khí tỉ lệ thuận với:",
+      "choices": [
+        "Nhiệt độ tuyệt đối T",
+        "Nhiệt độ Celsius t",
+        "Áp suất p",
+        "Bình phương nhiệt độ"
+      ],
+      "answer": 0,
+      "explain": "Định luật Charles: V tỉ lệ thuận với nhiệt độ tuyệt đối T khi p không đổi.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "V không tỉ lệ thuận với t Celsius vì có điểm gốc khác.",
+        "2": "Áp suất không đổi nên không thể là đại lượng biến thiên.",
+        "3": "V không tỉ lệ thuận với bình phương T."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao đồ thị V–t (Celsius) của quá trình đẳng áp không đi qua gốc tọa độ?",
+      "choices": [
+        "Vì V không tỉ lệ thuận với t; kéo dài đường thẳng cắt trục t tại −273 °C",
+        "Vì áp suất luôn bằng 0",
+        "Vì khí không có thể tích",
+        "Vì nhiệt độ luôn không đổi"
+      ],
+      "answer": 0,
+      "explain": "Thang Celsius có gốc 0 °C không trùng với độ không tuyệt đối, nên đường biểu diễn không qua gốc.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Áp suất khác 0 trong quá trình đẳng áp.",
+        "2": "Khí có thể tích xác định.",
+        "3": "Nhiệt độ thay đổi trong quá trình."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Độ không tuyệt đối là nhiệt độ:",
+      "choices": [
+        "0 K, tương ứng −273,15 °C; ở đó thể tích khí lí tưởng bằng 0",
+        "100 K",
+        "273 K",
+        "−100 °C"
+      ],
+      "answer": 0,
+      "explain": "Theo định luật Charles, kéo dài đường biểu diễn sẽ cho thể tích bằng 0 tại −273,15 °C (0 K).",
+      "concept": true,
+      "wrong_explain": {
+        "1": "100 K không phải độ không tuyệt đối.",
+        "2": "273 K không phải độ không tuyệt đối.",
+        "3": "−100 °C không phải độ không tuyệt đối."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hai đường đẳng áp của cùng một lượng khí ứng với hai áp suất p₁ > p₂ trên đồ thị V–T khác nhau thế nào?",
+      "choices": [
+        "Đường ứng với p₁ có độ dốc nhỏ hơn, nằm phía dưới",
+        "Đường ứng với p₁ có độ dốc lớn hơn, nằm phía trên",
+        "Hai đường trùng nhau",
+        "Hai đường song song với trục V"
+      ],
+      "answer": 0,
+      "explain": "V = nRT/p, áp suất lớn hơn cho độ dốc nhỏ hơn nên nằm phía dưới.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Áp suất lớn hơn làm đường đi xuống.",
+        "2": "Áp suất khác nhau cho hai đường khác nhau.",
+        "3": "Đường đẳng áp không song song với trục V."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Khí 4 L ở 300 K được đun đẳng áp tới 600 K. Thể tích sau khi đun (L):",
+      "expr": "4*600/300",
+      "answer": "8",
+      "explain": "V₂ = 4 · 600/300 = 8 L."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khí đẳng áp được đun từ 7 °C lên 77 °C. Tỉ số V₂/V₁ là:",
+      "expr": "350/280",
+      "answer": "1,25",
+      "explain": "T₁ = 280 K, T₂ = 350 K; V₂/V₁ = 350/280 = 1,25."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thể tích một khối khí tăng 25% khi đun đẳng áp tới 77 °C. Nhiệt độ ban đầu (°C) là:",
+      "expr": "350*4/5-273",
+      "answer": "7",
+      "explain": "T₂/T₁ = 1,25 ⇒ T₁ = 350 · 4/5 = 280 K = 7 °C."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khí 4 L ở 27 °C, khối lượng 12 g. Sau khi đun đẳng áp, khối lượng riêng là 1,5 g/L. Nhiệt độ sau khi đun (K) là:",
+      "expr": "(27+273)*8/4",
+      "answer": "600",
+      "explain": "Thể tích sau đun V₂ = 12/1,5 = 8 L; T₂ = T₁·V₂/V₁ = 300 · 8/4 = 600 K."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Trong quá trình đẳng áp, khi nhiệt độ tuyệt đối tăng gấp đôi thì thể tích:",
+      "choices": [
+        "Tăng gấp đôi",
+        "Giảm một nửa",
+        "Không đổi",
+        "Tăng 1,5 lần"
+      ],
+      "answer": 0,
+      "explain": "V tỉ lệ thuận với T tuyệt đối nên T tăng gấp đôi thì V cũng tăng gấp đôi.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Thể tích tăng khi nhiệt độ tăng.",
+        "2": "Thể tích thay đổi khi nhiệt độ thay đổi.",
+        "3": "Tỉ lệ là 2 lần, không phải 1,5 lần."
+      }
+    }
+  ]
+}

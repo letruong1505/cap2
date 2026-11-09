@@ -1,0 +1,213 @@
+{
+  "id": "bai-9",
+  "grade": 12,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 12",
+  "chapter": "Chương II. Khí lí tưởng",
+  "lesson": "Bài 9. Định luật Boyle",
+  "section": "",
+  "bookPage": 37,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Một lượng khí xác định được đặc trưng bởi các thông số trạng thái: thể tích V, áp suất p và nhiệt độ T. Quá trình biến đổi trạng thái là sự chuyển từ trạng thái này sang trạng thái khác."
+    },
+    {
+      "type": "text",
+      "content": "Quá trình đẳng nhiệt là quá trình biến đổi trạng thái của một khối lượng khí xác định khi nhiệt độ giữ không đổi."
+    },
+    {
+      "type": "text",
+      "content": "Định luật Boyle: khi nhiệt độ của một khối lượng khí xác định không đổi thì áp suất tỉ lệ nghịch với thể tích: pV = hằng số, hay p₁V₁ = p₂V₂."
+    },
+    {
+      "type": "formula",
+      "content": "p₁V₁ = p₂V₂"
+    },
+    {
+      "type": "text",
+      "content": "Đồ thị biểu diễn định luật Boyle trong hệ tọa độ (p, V) là một nhánh của đường hypebol. Đường đẳng nhiệt ứng với nhiệt độ cao hơn nằm xa gốc tọa độ hơn."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một lượng khí có thể tích 12 L ở áp suất 1,0·10⁵ Pa. Tính thể tích khi áp suất là 1,5·10⁵ Pa, nhiệt độ không đổi.",
+      "steps": [
+        "V₂ = p₁V₁/p₂ = 1,0·10⁵ · 12 / 1,5·10⁵.",
+        "= 8 L."
+      ],
+      "expr": "12*100000/150000",
+      "answer": "8"
+    },
+    {
+      "problem": "Bọt khí 0,04 m³ ở áp suất 120 kPa được nén đẳng nhiệt còn 0,025 m³. Tính áp suất mới.",
+      "steps": [
+        "p₂ = p₁V₁/V₂ = 120 · 0,04 / 0,025.",
+        "= 192 kPa."
+      ],
+      "expr": "120*0.04*1000/25",
+      "answer": "192"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Các thông số trạng thái của một lượng khí xác định gồm:",
+      "choices": [
+        "Áp suất, thể tích và nhiệt độ",
+        "Khối lượng, áp suất và vận tốc",
+        "Thể tích và khối lượng riêng",
+        "Chỉ nhiệt độ"
+      ],
+      "answer": 0,
+      "explain": "Ba thông số trạng thái của một lượng khí xác định là p, V và T.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Vận tốc không phải thông số trạng thái của khí.",
+        "2": "Khối lượng riêng là hệ quả, không phải thông số trạng thái cơ bản đi kèm.",
+        "3": "Cần cả ba thông số, không chỉ nhiệt độ."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Quá trình đẳng nhiệt là quá trình trong đó:",
+      "choices": [
+        "Nhiệt độ của khí được giữ không đổi",
+        "Áp suất của khí được giữ không đổi",
+        "Thể tích của khí được giữ không đổi",
+        "Khí không trao đổi nhiệt với môi trường"
+      ],
+      "answer": 0,
+      "explain": "Đẳng nhiệt là quá trình có nhiệt độ không đổi.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Đó là quá trình đẳng áp.",
+        "2": "Đó là quá trình đẳng tích.",
+        "3": "Đó là quá trình đoạn nhiệt, không phải đẳng nhiệt."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Định luật Boyle phát biểu rằng, khi nhiệt độ không đổi:",
+      "choices": [
+        "Áp suất tỉ lệ nghịch với thể tích",
+        "Áp suất tỉ lệ thuận với thể tích",
+        "Thể tích tỉ lệ thuận với nhiệt độ",
+        "Áp suất không phụ thuộc thể tích"
+      ],
+      "answer": 0,
+      "explain": "Định luật Boyle: pV = hằng số khi nhiệt độ không đổi.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Nếu tỉ lệ thuận thì pV không phải hằng số.",
+        "2": "Đây là định luật Charles.",
+        "3": "Áp suất phụ thuộc thể tích theo định luật Boyle."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Đồ thị biểu diễn định luật Boyle trong hệ tọa độ (p, V) có dạng:",
+      "choices": [
+        "Một nhánh của đường hypebol",
+        "Một đường thẳng đi qua gốc tọa độ",
+        "Một đường parabol",
+        "Một đường nằm ngang"
+      ],
+      "answer": 0,
+      "explain": "Vì pV không đổi nên p và V là quan hệ nghịch, đồ thị là nhánh hypebol.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Đường thẳng qua gốc là đồ thị của đẳng áp trong hệ (V, T).",
+        "2": "Parabol không phù hợp với pV = hằng số.",
+        "3": "Đường nằm ngang biểu diễn áp suất không đổi, không phải dạng của định luật Boyle."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hai đường đẳng nhiệt của cùng một lượng khí ở hai nhiệt độ T₁ < T₂ nằm như thế nào trong hệ (p, V)?",
+      "choices": [
+        "Đường ứng với T₂ nằm xa gốc tọa độ hơn",
+        "Đường ứng với T₁ nằm xa gốc tọa độ hơn",
+        "Hai đường trùng nhau",
+        "Hai đường cắt nhau tại điểm p = 0"
+      ],
+      "answer": 0,
+      "explain": "Với cùng một lượng khí, nhiệt độ cao hơn làm tích pV lớn hơn, nên đường đẳng nhiệt nằm xa gốc hơn.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Nhiệt độ thấp hơn cho đường gần gốc hơn.",
+        "2": "Hai nhiệt độ khác nhau cho hai đường khác nhau.",
+        "3": "Đường đẳng nhiệt không cắt trục p tại điểm 0."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một lượng khí có thể tích 5 L ở áp suất 2·10⁵ Pa. Nén đẳng nhiệt tới áp suất 4·10⁵ Pa. Thể tích sau nén (L):",
+      "expr": "1000000/400000",
+      "answer": "2,5",
+      "explain": "p₁V₁ = 2·10⁵ · 5 = 10⁶; V₂ = 10⁶ / (4·10⁵) = 2,5 L."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Một lượng khí ở áp suất 2 atm có thể tích 30 cm³. Nén đẳng nhiệt còn 15 cm³. Áp suất mới (atm) là:",
+      "choices": [
+        "4",
+        "1",
+        "6",
+        "2"
+      ],
+      "answer": 0,
+      "explain": "p₂ = p₁V₁/V₂ = 2 · 30 / 15 = 4 atm.",
+      "expr": "2*30/15",
+      "wrong_explain": {
+        "1": "Đã lấy áp suất tỉ lệ thuận với thể tích, nhưng nén làm áp suất tăng.",
+        "2": "Đã nhân thay vì chia, cho kết quả sai.",
+        "3": "Đã giữ nguyên áp suất, không đúng với định luật Boyle."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khí có áp suất 3 atm, thể tích 8 L. Nén đẳng nhiệt tới thể tích 6 L. Áp suất mới (atm) là:",
+      "expr": "3*8/6",
+      "answer": "4",
+      "explain": "p₂ = 3 · 8 / 6 = 4 atm."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Khi bơm xe đạp (nén khí nhanh, coi là đẳng nhiệt), áp suất trong bơm tăng vì:",
+      "choices": [
+        "Thể tích giảm, các phân tử va chạm thành bình thường xuyên hơn trong cùng thời gian",
+        "Nhiệt độ khí giảm mạnh",
+        "Khối lượng khí tăng lên trong bơm",
+        "Các phân tử khí ngừng chuyển động"
+      ],
+      "answer": 0,
+      "explain": "Khi thể tích giảm, mật độ phân tử tăng nên số va chạm vào thành bình tăng, áp suất tăng.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Trong quá trình đẳng nhiệt nhiệt độ không đổi.",
+        "2": "Khối lượng khí không đổi khi bơm kín.",
+        "3": "Phân tử khí vẫn chuyển động không ngừng."
+      }
+    }
+  ]
+}

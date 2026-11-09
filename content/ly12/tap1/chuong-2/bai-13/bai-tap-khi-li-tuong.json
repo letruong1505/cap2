@@ -1,0 +1,156 @@
+{
+  "id": "bai-13",
+  "grade": 12,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 12",
+  "chapter": "Chương II. Khí lí tưởng",
+  "lesson": "Bài 13. Bài tập về khí lí tưởng",
+  "section": "",
+  "bookPage": 52,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khi giải bài tập về khí lí tưởng, cần xác định lượng khí có thay đổi hay không, xác định trạng thái đầu, trạng thái cuối và quá trình chuyển trạng thái, rồi xác định các thông số p, V, T, m, n của từng trạng thái."
+    },
+    {
+      "type": "formula",
+      "content": "pV = nRT;  p₁V₁/T₁ = p₂V₂/T₂;  p₁V₁ = p₂V₂ (đẳng nhiệt);  V₁/T₁ = V₂/T₂ (đẳng áp);  p₁/T₁ = p₂/T₂ (đẳng tích)"
+    },
+    {
+      "type": "text",
+      "content": "Khi lượng khí thay đổi trong quá trình (ví dụ lấy bớt khí khỏi bình), dùng phương trình Clapeyron với số mol n thay đổi, hoặc so sánh khối lượng khí còn lại với khối lượng ban đầu."
+    },
+    {
+      "type": "text",
+      "content": "Ở điều kiện tiêu chuẩn, một mol khí có thể tích 22,4 lít, nên số mol khí bằng thể tích chia cho 22,4 lít."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Khối khí có áp suất 1,0·10⁵ Pa ở 400 K, thể tích không đổi. Làm lạnh về 300 K. Tính áp suất mới.",
+      "steps": [
+        "Thể tích không đổi nên p₁/T₁ = p₂/T₂, p₂ = p₁·T₂/T₁ = 10⁵ · 300 / 400.",
+        "= 0,75·10⁵ Pa."
+      ],
+      "expr": "100000*300/400",
+      "answer": "75000"
+    },
+    {
+      "problem": "Bình kín chứa 2 kg khí ở áp suất 8·10⁵ Pa (nhiệt độ không đổi). Lấy bớt khí để áp suất còn 2·10⁵ Pa. Tính khối lượng khí đã lấy ra.",
+      "steps": [
+        "Khi V, T không đổi, khối lượng tỉ lệ với áp suất: m₂ = m₁·p₂/p₁ = 2 · 2/8 = 0,5 kg.",
+        "Khối lượng lấy ra: 2 − 0,5 = 1,5 kg."
+      ],
+      "expr": "2-2*2/8",
+      "answer": "1,5"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trong bình kín có thể tích không đổi, nếu nhiệt độ khí tăng thì áp suất khí:",
+      "choices": [
+        "Tăng",
+        "Giảm",
+        "Không đổi",
+        "Bằng 0"
+      ],
+      "answer": 0,
+      "explain": "Đẳng tích: p tỉ lệ thuận với T, nên nhiệt độ tăng thì áp suất tăng.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Áp suất giảm khi nhiệt độ giảm, không phải khi tăng.",
+        "2": "Áp suất thay đổi khi nhiệt độ thay đổi ở thể tích không đổi.",
+        "3": "Áp suất không bằng 0 khi khí còn trong bình."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Khối khí ở điều kiện tiêu chuẩn có thể tích 44,8 lít. Số mol khí là:",
+      "expr": "448/224",
+      "answer": "2",
+      "explain": "Mỗi mol chiếm 22,4 L; 44,8 / 22,4 = 2 mol."
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khí có áp suất 2·10⁵ Pa ở 300 K, thể tích không đổi. Nâng nhiệt độ lên 450 K. Áp suất mới (Pa):",
+      "expr": "200000*450/300",
+      "answer": "300000",
+      "explain": "p₂ = p₁·T₂/T₁ = 2·10⁵ · 450/300 = 3·10⁵ Pa."
+    },
+    {
+      "id": "q04",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nén đẳng nhiệt 2 m³ khí ở điều kiện có áp suất 1,0·10⁵ Pa tới áp suất 5,0·10⁵ Pa. Thể tích sau nén (m³):",
+      "expr": "2*100000/500000",
+      "answer": "0,4",
+      "explain": "p₁V₁ = p₂V₂ ⇒ V₂ = 2 · 1,0·10⁵ / 5,0·10⁵ = 0,4 m³."
+    },
+    {
+      "id": "q05",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bình chứa khí ở 27 °C và 40 atm. Giảm nhiệt độ xuống 12 °C đồng thời một nửa lượng khí thoát ra (thể tích không đổi). Áp suất còn lại (atm) là:",
+      "expr": "40*(1/2)*285/300",
+      "answer": "19",
+      "explain": "n₂ = n₁/2 và T₂ = 285 K: p₂ = p₁·(n₂/n₁)·(T₂/T₁) = 40 · 1/2 · 285/300 = 19 atm."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bình kín chứa 3 kg khí ở áp suất 6 atm. Lấy bớt khí cho đến khi áp suất còn 2 atm (nhiệt độ và thể tích không đổi). Khối lượng khí đã lấy ra (kg) là:",
+      "expr": "3-3*2/6",
+      "answer": "2",
+      "explain": "Khối lượng còn lại: 3 · 2/6 = 1 kg, lấy ra 3 − 1 = 2 kg."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Trong quá trình đẳng tích của một lượng khí, đồ thị p–T là:",
+      "choices": [
+        "Đường thẳng có đường kéo dài đi qua gốc tọa độ (T = 0 K)",
+        "Đường hypebol",
+        "Đường nằm ngang",
+        "Đường thẳng song song trục T"
+      ],
+      "answer": 0,
+      "explain": "Đẳng tích: p tỉ lệ thuận với T tuyệt đối nên đồ thị p–T là đường thẳng đi qua gốc khi dùng nhiệt độ Kelvin.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Hypebol là đồ thị của đẳng nhiệt trong hệ (p, V).",
+        "2": "Đường nằm ngang là đồ thị của đẳng áp trong hệ (V, T).",
+        "3": "Đường thẳng song song trục T là không đổi p, không đúng."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ở điều kiện tiêu chuẩn, một mol khí chiếm thể tích khoảng:",
+      "choices": [
+        "22,4 lít",
+        "1 lít",
+        "100 lít",
+        "2,24 lít"
+      ],
+      "answer": 0,
+      "explain": "Một mol khí ở điều kiện tiêu chuẩn có thể tích 22,4 lít.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Thể tích quá nhỏ so với 22,4 lít.",
+        "2": "Thể tích quá lớn so với 22,4 lít.",
+        "3": "Thiếu một chữ số so với 22,4 lít."
+      }
+    }
+  ]
+}

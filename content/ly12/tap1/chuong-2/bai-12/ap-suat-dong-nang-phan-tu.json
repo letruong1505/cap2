@@ -1,0 +1,208 @@
+{
+  "id": "bai-12",
+  "grade": 12,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 12",
+  "chapter": "Chương II. Khí lí tưởng",
+  "lesson": "Bài 12. Áp suất khí theo mô hình động học phân tử. Quan hệ giữa động năng phân tử và nhiệt độ",
+  "section": "",
+  "bookPage": 48,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Mỗi phân tử khí va chạm đàn hồi với thành bình và truyền cho thành bình một xung lượng 2mv. Áp suất của khí là tổng các lực do các phân tử tác dụng lên một đơn vị diện tích thành bình."
+    },
+    {
+      "type": "formula",
+      "content": "p = (1/3)·n·m·v̅² = (2/3)·n·E̅đ"
+    },
+    {
+      "type": "text",
+      "content": "Trong đó n là mật độ phân tử (số phân tử trong một đơn vị thể tích), v̅² là trung bình của bình phương tốc độ và E̅đ là động năng tịnh tiến trung bình của phân tử."
+    },
+    {
+      "type": "formula",
+      "content": "E̅đ = (3/2)·k·T,  với k = 1,38·10⁻²³ J/K"
+    },
+    {
+      "type": "text",
+      "content": "Động năng tịnh tiến trung bình của phân tử tỉ lệ thuận với nhiệt độ tuyệt đối. Vì vậy nhiệt độ tuyệt đối là số đo động năng trung bình của phân tử theo một đơn vị khác. Các khí khác bản chất nhưng cùng nhiệt độ có động năng tịnh tiến trung bình của phân tử bằng nhau."
+    },
+    {
+      "type": "text",
+      "content": "Căn bậc hai của trung bình bình phương tốc độ được gọi là tốc độ căn quân phương, không phải tốc độ trung bình của các phân tử."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Nhiệt độ tuyệt đối của một khối khí tăng từ 150 K lên 300 K. Động năng tịnh tiến trung bình của phân tử tăng bao nhiêu lần?",
+      "steps": [
+        "E̅đ tỉ lệ thuận với T nên E₂/E₁ = T₂/T₁ = 300/150.",
+        "= 2 lần."
+      ],
+      "expr": "300/150",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Áp suất của khí theo mô hình động học phân tử phụ thuộc vào:",
+      "choices": [
+        "Mật độ phân tử và động năng tịnh tiến trung bình của phân tử",
+        "Khối lượng của bình chứa",
+        "Màu sắc của khí",
+        "Vị trí đặt bình"
+      ],
+      "answer": 0,
+      "explain": "Công thức p = (2/3)nE̅đ cho thấy áp suất phụ thuộc mật độ và động năng trung bình của phân tử.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Khối lượng bình không đi vào công thức áp suất.",
+        "2": "Màu sắc không ảnh hưởng.",
+        "3": "Vị trí bình không ảnh hưởng."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Động năng tịnh tiến trung bình của phân tử khí tỉ lệ thuận với:",
+      "choices": [
+        "Nhiệt độ tuyệt đối T",
+        "Nhiệt độ Celsius t",
+        "Thể tích khí",
+        "Áp suất khí"
+      ],
+      "answer": 0,
+      "explain": "E̅đ = (3/2)kT, nên tỉ lệ thuận với nhiệt độ tuyệt đối.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Nhiệt độ Celsius không tỉ lệ thuận với động năng vì có điểm gốc khác.",
+        "2": "Thể tích không quyết định trực tiếp động năng.",
+        "3": "Áp suất không quyết định trực tiếp động năng."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hai khí khác bản chất, cùng nhiệt độ thì:",
+      "choices": [
+        "Động năng tịnh tiến trung bình của phân tử bằng nhau",
+        "Động năng luôn khác nhau",
+        "Phân tử có tốc độ bằng nhau",
+        "Động năng bằng 0"
+      ],
+      "answer": 0,
+      "explain": "Động năng trung bình chỉ phụ thuộc nhiệt độ, không phụ thuộc bản chất khí.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Động năng trung bình chỉ phụ thuộc nhiệt độ.",
+        "2": "Tốc độ có thể khác nhau do khối lượng phân tử khác.",
+        "3": "Phân tử vẫn có động năng khi nhiệt độ khác 0 K."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hằng số Boltzmann k liên hệ với hằng số khí R và số Avogadro N_A theo hệ thức:",
+      "choices": [
+        "k = R/N_A",
+        "k = R·N_A",
+        "k = N_A/R",
+        "k = R + N_A"
+      ],
+      "answer": 0,
+      "explain": "Từ R = k·N_A suy ra k = R/N_A.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Nhân thay vì chia.",
+        "2": "Đảo ngược tỉ số.",
+        "3": "Cộng thay vì chia."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nhiệt độ tuyệt đối tăng từ 100 K lên 150 K. Động năng tịnh tiến trung bình của phân tử tăng bao nhiêu lần?",
+      "expr": "150/100",
+      "answer": "1,5",
+      "explain": "E̅đ tỉ lệ thuận với T: tỉ số 150/100 = 1,5."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Thể tích không đổi, nhiệt độ tuyệt đối tăng từ 250 K lên 500 K. Áp suất lúc sau gấp bao nhiêu lần áp suất ban đầu?",
+      "expr": "500/250",
+      "answer": "2",
+      "explain": "Đẳng tích: p tỉ lệ thuận T nên p₂/p₁ = 500/250 = 2."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Nhiệt độ không đổi, mật độ phân tử tăng gấp đôi thì áp suất khí:",
+      "choices": [
+        "Tăng gấp đôi",
+        "Giảm một nửa",
+        "Không đổi",
+        "Tăng 4 lần"
+      ],
+      "answer": 0,
+      "explain": "Áp suất tỉ lệ thuận với mật độ phân tử khi động năng trung bình không đổi.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Mật độ tăng thì áp suất tăng.",
+        "2": "Áp suất phụ thuộc vào mật độ.",
+        "3": "Tỉ lệ là 2 lần, không phải 4 lần."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tốc độ căn quân phương khác tốc độ trung bình ở điểm nào?",
+      "choices": [
+        "Là căn bậc hai của trung bình các bình phương tốc độ, không phải trung bình cộng của tốc độ",
+        "Bằng trung bình cộng tốc độ",
+        "Luôn bằng 0",
+        "Không có ý nghĩa vật lí"
+      ],
+      "answer": 0,
+      "explain": "Tốc độ căn quân phương là căn bậc hai của trung bình bình phương tốc độ.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Nó khác với trung bình cộng của tốc độ.",
+        "2": "Tốc độ căn quân phương không bằng 0 khi có chuyển động.",
+        "3": "Nó có ý nghĩa trong công thức áp suất."
+      }
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao áp suất trong quá trình đẳng tích tỉ lệ thuận với nhiệt độ tuyệt đối?",
+      "choices": [
+        "Vì mật độ phân tử không đổi và động năng trung bình tỉ lệ thuận với T",
+        "Vì thể tích tỉ lệ nghịch với T",
+        "Vì khối lượng phân tử thay đổi",
+        "Vì số phân tử tăng khi nhiệt độ tăng"
+      ],
+      "answer": 0,
+      "explain": "Từ p = (2/3)nE̅đ với n không đổi và E̅đ ∝ T, p tỉ lệ thuận với T.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Thể tích không đổi trong đẳng tích.",
+        "2": "Khối lượng phân tử không thay đổi trong quá trình.",
+        "3": "Số phân tử không đổi trong quá trình."
+      }
+    }
+  ]
+}
