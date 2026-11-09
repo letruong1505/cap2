@@ -1,0 +1,196 @@
+{
+  "id": "t12-t2-chuong6-on-tap-bai-tap-cuoi-chuong-6",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 12, tập 2",
+  "chapter": "Chương VI. Xác suất có điều kiện",
+  "lesson": "Bài tập cuối chương VI",
+  "section": "A. Trắc nghiệm; B. Tự luận",
+  "bookPage": 79,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Chương VI tổng hợp: xác suất có điều kiện P(B | A) = P(AB)/P(A); công thức nhân P(AB) = P(A) · P(B | A); công thức xác suất toàn phần và công thức Bayes."
+    },
+    {
+      "type": "text",
+      "content": "Phương pháp: đặt các biến cố, xác định P(A), P(B | A), P(B | Ā), rồi áp dụng công thức nhân, công thức xác suất toàn phần hoặc công thức Bayes. Với bài toán lấy vật không hoàn lại, dùng xác suất có điều kiện theo số vật còn lại."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "6.12: cho P(A) = 2/5, P(B | A) = 1/3, P(B | Ā) = 1/4. Giá trị của P(AB) là?",
+      "choices": [
+        "2/15",
+        "3/16",
+        "1/5",
+        "4/15"
+      ],
+      "answer": 0,
+      "explain": "P(AB) = P(A) · P(B | A) = 2/5 · 1/3 = 2/15.",
+      "wrong_explain": {
+        "1": "3/16 không khớp: P(AB) = P(A) · P(B | A) = 2/15, không phải 3/16.",
+        "2": "1/5 không đúng: P(AB) = 2/5 · 1/3 = 2/15.",
+        "3": "4/15 là 2/5 · 2/3, nhưng P(B | A) = 1/3 nên P(AB) = 2/15."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "6.13: cho P(A) = 2/5, P(B | A) = 1/3, P(B | Ā) = 1/4. Giá trị của P(BĀ) là?",
+      "choices": [
+        "1/7",
+        "4/19",
+        "4/21",
+        "3/20"
+      ],
+      "answer": 3,
+      "explain": "P(BĀ) = P(Ā) · P(B | Ā) = 3/5 · 1/4 = 3/20.",
+      "wrong_explain": {
+        "0": "1/7 không khớp: P(Ā) = 3/5 và P(B | Ā) = 1/4, tích là 3/20.",
+        "1": "4/19 không đúng: P(BĀ) = 3/5 · 1/4 = 3/20.",
+        "2": "4/21 không đúng: P(BĀ) = P(Ā) · P(B | Ā) = 3/20."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "6.14: cho P(A) = 2/5, P(B | A) = 1/3, P(B | Ā) = 1/4. Giá trị của P(B) là?",
+      "choices": [
+        "19/60",
+        "17/60",
+        "9/20",
+        "7/30"
+      ],
+      "answer": 1,
+      "explain": "P(B) = P(A) · P(B | A) + P(Ā) · P(B | Ā) = 2/15 + 3/20 = 8/60 + 9/60 = 17/60.",
+      "wrong_explain": {
+        "0": "19/60 không khớp: P(B) = 2/15 + 3/20 = 17/60.",
+        "2": "9/20 không đúng: đây là 27/60, không phải P(B) = 17/60.",
+        "3": "7/30 không đúng: P(B) = 2/15 + 3/20 = 17/60."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "6.15: túi có 6 kẹo sô cô la đen và 4 kẹo trắng. An lấy 2 kẹo không hoàn lại và đưa cả hai cho Bình. Xác suất Bình nhận được 2 kẹo đen là?",
+      "choices": [
+        "1/3",
+        "1/4",
+        "2/5",
+        "3/7"
+      ],
+      "answer": 0,
+      "explain": "P = 6/10 · 5/9 = 1/3.",
+      "wrong_explain": {
+        "1": "1/4 không đúng: P(hai kẹo đen) = 6/10 · 5/9 = 1/3.",
+        "2": "2/5 không đúng: lần thứ hai chỉ còn 9 kẹo, nên P = 6/10 · 5/9 = 1/3.",
+        "3": "3/7 không đúng: P = 6/10 · 5/9 = 1/3."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "6.16: cùng đề 6.15. Xác suất Bình nhận được 2 kẹo sô cô la trắng là?",
+      "choices": [
+        "1/5",
+        "2/15",
+        "3/16",
+        "4/17"
+      ],
+      "answer": 1,
+      "explain": "P = 4/10 · 3/9 = 12/90 = 2/15.",
+      "wrong_explain": {
+        "0": "1/5 không đúng: P(hai kẹo trắng) = 4/10 · 3/9 = 2/15.",
+        "2": "3/16 không đúng: P = 4/10 · 3/9 = 2/15.",
+        "3": "4/17 không đúng: P = 4/10 · 3/9 = 2/15."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "6.17: cùng đề 6.15. Xác suất Bình nhận được kẹo sô cô la đen ở lần thứ nhất và kẹo trắng ở lần thứ hai là?",
+      "expr": "6/10*4/9",
+      "answer": "4/15",
+      "explain": "P = 6/10 · 4/9 = 24/90 = 4/15. Lưu ý: 4/15 không có trong các phương án in của sách (1/5, 3/16, 1/4, 4/17); cần đối chiếu lại đề bài trong sách."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "6.18a: bảng thống kê: dùng thuốc X khỏi bệnh 1600 người, không khỏi 800 người. Xác suất người đó khỏi bệnh nếu biết người đó uống thuốc X là?",
+      "expr": "1600/2400",
+      "answer": "2/3",
+      "explain": "P(khỏi | X) = 1600/(1600 + 800) = 2/3."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "6.18b: dùng thuốc Y khỏi bệnh 1200 người, không khỏi 400 người (tổng khỏi bệnh là 2800). Xác suất người bệnh uống thuốc Y, biết người đó khỏi bệnh, là?",
+      "expr": "1200/2800",
+      "answer": "3/7",
+      "explain": "P(Y | khỏi) = 1200/(1600 + 1200) = 1200/2800 = 3/7."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "6.19a: nhóm 25 học sinh, 14 học khá Toán, 16 học khá Vật lí, 1 em không khá cả hai môn. Xác suất chọn học sinh học khá Toán và khá Vật lí là?",
+      "expr": "6/25",
+      "answer": "6/25",
+      "explain": "Số học sinh học khá cả hai môn là 6, nên P = 6/25."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "6.19b: cùng nhóm 25 học sinh. Xác suất chọn học sinh học khá Toán nhưng không học khá Vật lí là?",
+      "expr": "8/25",
+      "answer": "8/25",
+      "explain": "Học khá Toán nhưng không học khá Vật lí: 14 − 6 = 8 em, nên P = 8/25."
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "6.19c: cùng nhóm 25 học sinh. Biết học sinh được chọn học khá Vật lí, xác suất học sinh đó học khá Toán là?",
+      "expr": "6/16",
+      "answer": "3/8",
+      "explain": "P(Toán | Vật lí) = 6/16 = 3/8."
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "6.20: chuồng I có 5 gà mái và 2 gà trống; chuồng II có 3 gà mái và 5 gà trống. Xúc xắc cân đối: số chấm chia hết cho 3 (3 hoặc 6) với xác suất 1/3 thì chọn chuồng I, còn lại 2/3 thì chọn chuồng II. Xác suất bắt được gà mái là?",
+      "expr": "1/3*5/7+2/3*3/8",
+      "answer": "41/84",
+      "explain": "P = 1/3 · 5/7 + 2/3 · 3/8 = 5/21 + 1/4 = 41/84."
+    },
+    {
+      "id": "q13",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "6.21: tỉ lệ người có bệnh nền ở địa phương X là 18%. Người có bệnh nền bị phản ứng phụ với xác suất 0,35, người không có bệnh nền với xác suất 0,16. Biết người được tiêm có phản ứng phụ, xác suất người đó có bệnh nền là?",
+      "expr": "630/1942",
+      "answer": "315/971",
+      "explain": "P = 0,18 · 0,35 / (0,18 · 0,35 + 0,82 · 0,16) = 0,063/0,1942 = 315/971 ≈ 0,3244."
+    }
+  ]
+}
