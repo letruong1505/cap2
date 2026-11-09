@@ -724,6 +724,773 @@
         "2": "Với r = 2 cm, C'(2) < 0: chi phí còn giảm khi tăng r.",
         "3": "1000/π là không đúng công thức; bán kính không được tính như vậy."
       }
+    },
+    {
+      "id": "q46",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.26: hạt chuyển động có toạ độ y = t³ − 12t + 3 (t ≥ 0). Hàm vận tốc và gia tốc là?",
+      "choices": [
+        "v = 3t² − 12, a = 6t",
+        "v = t³ − 12t, a = 3t²",
+        "v = 3t² − 12t, a = 6",
+        "v = 3t² + 12, a = 6t"
+      ],
+      "answer": 0,
+      "explain": "v(t) = y'(t) = 3t² − 12 và a(t) = v'(t) = 6t.",
+      "wrong_explain": {
+        "1": "Đó là chính y(t) và đạo hàm của y(t) theo t sai.",
+        "2": "Đạo hàm của 3t² − 12t là 6t − 12, không phải 6.",
+        "3": "Đạo hàm của −12 là 0, không phải 12."
+      }
+    },
+    {
+      "id": "q47",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.26b: khi nào hạt chuyển động lên trên?",
+      "choices": [
+        "Khi t > 2",
+        "Khi 0 ≤ t < 2",
+        "Khi t > 0",
+        "Khi t = 2"
+      ],
+      "answer": 0,
+      "explain": "Hạt đi lên khi v > 0, tức 3t² − 12 > 0 ⇔ t > 2 (vì t ≥ 0). Khi 0 ≤ t < 2 thì v < 0, hạt đi xuống.",
+      "wrong_explain": {
+        "1": "Trên khoảng (0; 2) vận tốc âm nên hạt đi xuống, không phải lên.",
+        "2": "Với 0 < t ≤ 2 vận tốc v ≤ 0, hạt chưa đi lên.",
+        "3": "Tại t = 2 vận tốc bằng 0: hạt đổi chiều, không chuyển động lên."
+      }
+    },
+    {
+      "id": "q48",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 1.26c: quãng đường hạt đi được trong 0 ≤ t ≤ 3 (mét) là?",
+      "expr": "(3-(-13))+(-6-(-13))",
+      "answer": "23",
+      "explain": "y(0) = 3, y(2) = −13, y(3) = −6. Quãng đường = |−13 − 3| + |−6 − (−13)| = 16 + 7 = 23 m."
+    },
+    {
+      "id": "q49",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.26d: khi nào hạt tăng tốc?",
+      "choices": [
+        "Khi t > 2",
+        "Khi 0 ≤ t < 2",
+        "Khi t ∈ (0; 2)",
+        "Hạt không bao giờ tăng tốc"
+      ],
+      "answer": 0,
+      "explain": "Hạt tăng tốc khi v và a cùng dấu. Với t > 2 thì v > 0 và a = 6t > 0 nên tăng tốc; với 0 ≤ t < 2 thì v < 0 còn a ≥ 0 nên giảm tốc.",
+      "wrong_explain": {
+        "1": "Trên (0; 2) vận tốc âm còn gia tốc dương: hạt giảm tốc.",
+        "2": "Trên (0; 2) vận tốc và gia tốc trái dấu, hạt giảm tốc.",
+        "3": "Hạt tăng tốc khi t > 2."
+      }
+    },
+    {
+      "id": "q50",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 1.27b: C'(100) với C(x) = 23 000 + 50x − 0,5x² + 0,00175x³ (đơn vị trăm nghìn đồng) bằng?",
+      "expr": "50-100+0.00525*100*100",
+      "answer": "2.5",
+      "explain": "C'(x) = 50 − x + 0,00525x², nên C'(100) = 50 − 100 + 52,5 = 2,5 (trăm nghìn đồng), tức khoảng 250 nghìn đồng."
+    },
+    {
+      "id": "q51",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.27b: ý nghĩa của C'(100) là?",
+      "choices": [
+        "Xấp xỉ chi phí tăng thêm khi sản xuất đơn vị thứ 101",
+        "Tổng chi phí khi sản xuất 100 đơn vị",
+        "Lợi nhuận khi sản xuất 100 đơn vị",
+        "Chi phí cố định của doanh nghiệp"
+      ],
+      "answer": 0,
+      "explain": "Chi phí biên C'(x) xấp xỉ chi phí để sản xuất thêm một đơn vị khi đã sản xuất x đơn vị.",
+      "wrong_explain": {
+        "1": "Tổng chi phí là C(100), không phải đạo hàm.",
+        "2": "Lợi nhuận không được tính bởi hàm chi phí C(x).",
+        "3": "Chi phí cố định là 23 000 (không đổi), không liên quan đến C'(100)."
+      }
+    },
+    {
+      "id": "q52",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.27c: so sánh C'(100) với chi phí sản xuất đơn vị hàng hoá thứ 101.",
+      "choices": [
+        "C'(100) = 2,5 gần bằng C(101) − C(100) ≈ 2,527 (trăm nghìn đồng)",
+        "C'(100) lớn hơn đáng kể so với chi phí đơn vị thứ 101",
+        "C'(100) bằng 0 nên không có chi phí",
+        "C'(100) gấp đôi chi phí đơn vị thứ 101"
+      ],
+      "answer": 0,
+      "explain": "C(101) − C(100) = 10 107/4000 ≈ 2,527, còn C'(100) = 2,5. Hai giá trị rất gần nhau.",
+      "wrong_explain": {
+        "1": "Chênh lệch chỉ khoảng 0,027 (trăm nghìn đồng), không đáng kể.",
+        "2": "C'(100) = 2,5 khác 0.",
+        "3": "2,5 không gấp đôi 2,527."
+      }
+    },
+    {
+      "id": "q53",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.28: người quản lí nên đặt giá thuê mỗi căn hộ là bao nhiêu để doanh thu lớn nhất?",
+      "choices": [
+        "8 triệu đồng/tháng",
+        "9 triệu đồng/tháng",
+        "10 triệu đồng/tháng",
+        "12 triệu đồng/tháng"
+      ],
+      "answer": 1,
+      "explain": "Gọi k là số lần tăng thêm 100 nghìn đồng. Giá là 8 + 0,1k (triệu), số căn cho thuê là 100 − k. Doanh thu R(k) = (8 + 0,1k)(100 − k), R'(k) = 2 − 0,2k = 0 khi k = 10: giá 9 triệu, doanh thu 810 triệu.",
+      "wrong_explain": {
+        "0": "Giá 8 triệu thì cho thuê hết 100 căn, doanh thu 800 triệu, chưa phải lớn nhất.",
+        "2": "Giá 10 triệu (k = 20) cho thuê 80 căn, doanh thu 800 triệu, thấp hơn 810 triệu.",
+        "3": "Giá 12 triệu (k = 40) cho thuê 60 căn, doanh thu 720 triệu."
+      }
+    },
+    {
+      "id": "q54",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 1.29a: với p = 240 (nghìn đồng), số đơn vị sản phẩm bán được x là?",
+      "expr": "100*(354-240)/240",
+      "answer": "47.5",
+      "explain": "Từ p = 354/(1 + 0,01x) suy ra x = 100(354 − p)/p. Thay p = 240: x = 100 · 114/240 = 47,5."
+    },
+    {
+      "id": "q55",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.29a: công thức x theo p và tập xác định của hàm số này là?",
+      "choices": [
+        "x = 100(354 − p)/p, tập xác định (0; 354]",
+        "x = 354/p − 1, tập xác định ℝ",
+        "x = (354 − p)/(100p), tập xác định (0; +∞)",
+        "x = 100p/(354 − p), tập xác định (0; 354)"
+      ],
+      "answer": 0,
+      "explain": "Từ 1 + 0,01x = 354/p suy ra x = 100(354 − p)/p. Điều kiện p > 0 và x ≥ 0 cho p ∈ (0; 354].",
+      "wrong_explain": {
+        "1": "Thiếu hệ số 0,01 và 100: 354/p − 1 không phải x của đề bài.",
+        "2": "Đặt sai vị trí hệ số, không khớp với phương trình p(1 + 0,01x) = 354.",
+        "3": "Nghịch đảo nhầm: x tỉ lệ với 354 − p, không phải với p."
+      }
+    },
+    {
+      "id": "q56",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.29b: khi giá bán p tăng thì số lượng bán được x thay đổi thế nào?",
+      "choices": [
+        "Giảm dần",
+        "Tăng dần",
+        "Không đổi",
+        "Tăng rồi giảm"
+      ],
+      "answer": 0,
+      "explain": "x(p) = 35 400/p − 100 là hàm nghịch biến trên (0; 354], nên p tăng thì x giảm.",
+      "wrong_explain": {
+        "1": "Đó là chiều ngược lại: hàm cầu có x giảm khi p tăng.",
+        "2": "x phụ thuộc vào p nên không đổi là sai.",
+        "3": "x(p) đơn điệu trên (0; 354], không có cực trị."
+      }
+    },
+    {
+      "id": "q57",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.29b: ý nghĩa thực tiễn của lim_{p→0⁺} x(p) = +∞ là?",
+      "choices": [
+        "Khi giá bán tiến gần 0, lượng cầu tăng không giới hạn",
+        "Khi giá bán tiến gần 0, lượng cầu tiến về 0",
+        "Giá bán không thể tiến về 0",
+        "Lượng bán cố định bằng 354"
+      ],
+      "answer": 0,
+      "explain": "Khi p → 0⁺, 35 400/p → +∞ nên x(p) → +∞: giá càng thấp, người mua càng nhiều.",
+      "wrong_explain": {
+        "1": "Điều này xảy ra khi p → +∞ chứ không phải p → 0⁺.",
+        "2": "Giới hạn cho thấy điều ngược lại.",
+        "3": "354 là giá trị không liên quan đến giới hạn này."
+      }
+    },
+    {
+      "id": "q58",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.30: phát biểu nào đúng?",
+      "choices": [
+        "Nếu f'(x) ≥ 0 với mọi x thuộc (a; b) thì f đồng biến trên (a; b)",
+        "Nếu f'(x) > 0 với mọi x thuộc (a; b) thì f đồng biến trên (a; b)",
+        "f đồng biến trên (a; b) khi và chỉ khi f'(x) ≥ 0 với mọi x thuộc (a; b)",
+        "f đồng biến trên (a; b) khi và chỉ khi f'(x) > 0 với mọi x thuộc (a; b)"
+      ],
+      "answer": 2,
+      "explain": "Điều kiện cần và đủ để f đồng biến trên khoảng là f'(x) ≥ 0 với mọi x, dấu bằng chỉ xảy ra tại các điểm rời rạc. Phát biểu với f'(x) > 0 chỉ là điều kiện đủ.",
+      "wrong_explain": {
+        "0": "Đúng về một chiều (điều kiện đủ) nhưng không phải phát biểu 'khi và chỉ khi' cần chọn.",
+        "1": "f'(x) > 0 là điều kiện đủ, không phải điều kiện cần: f(x) = x³ đồng biến nhưng f'(0) = 0.",
+        "3": "Sai vì f(x) = x³ đồng biến trên ℝ nhưng f'(0) = 0, không thoả f'(x) > 0 với mọi x."
+      }
+    },
+    {
+      "id": "q59",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.31: hàm số nào nghịch biến trên ℝ?",
+      "choices": [
+        "y = −x³ + 3x² − 9x",
+        "y = −x³ + x + 1",
+        "y = (x − 1)/(x − 2)",
+        "y = 2x² + 3x + 2"
+      ],
+      "answer": 0,
+      "explain": "y' = −3x² + 6x − 9 = −3[(x − 1)² + 2] < 0 với mọi x, nên hàm số nghịch biến trên ℝ.",
+      "wrong_explain": {
+        "1": "y' = −3x² + 1 đổi dấu, hàm số không nghịch biến trên ℝ.",
+        "2": "Hàm số không xác định tại x = 2, nên không xét trên ℝ.",
+        "3": "Là hàm bậc hai có hệ số a > 0 nên không đơn điệu trên ℝ."
+      }
+    },
+    {
+      "id": "q60",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.32: hàm số nào không có cực trị?",
+      "choices": [
+        "y = |x|",
+        "y = x⁴",
+        "y = −x³ + x",
+        "y = (2x − 1)/(x + 1)"
+      ],
+      "answer": 3,
+      "explain": "y' = 3/(x + 1)² > 0 với mọi x ≠ −1, nên hàm số không có cực trị.",
+      "wrong_explain": {
+        "0": "|x| có cực tiểu tại x = 0.",
+        "1": "x⁴ có cực tiểu tại x = 0.",
+        "2": "y' = −3x² + 1 có hai nghiệm đổi dấu nên có cực trị."
+      }
+    },
+    {
+      "id": "q61",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.33: giá trị cực tiểu của hàm số y = x² ln x là?",
+      "choices": [
+        "1/e",
+        "−1/e",
+        "−1/(2e)",
+        "1/(2e)"
+      ],
+      "answer": 2,
+      "explain": "y' = 2x ln x + x = x(2 ln x + 1) = 0 khi x = e^(−1/2). Khi đó y = e^(−1) · (−1/2) = −1/(2e).",
+      "wrong_explain": {
+        "0": "1/e không phải giá trị y tại điểm dừng.",
+        "1": "Tính sai hệ số: giá trị đúng là −1/(2e).",
+        "3": "Dấu sai: y(e^(−1/2)) âm."
+      }
+    },
+    {
+      "id": "q62",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.34: giá trị lớn nhất của y = (x − 2)² · eˣ trên đoạn [1; 3] là?",
+      "choices": [
+        "0",
+        "e³",
+        "e⁴",
+        "e"
+      ],
+      "answer": 1,
+      "explain": "y' = x(x − 2)eˣ. Trên [1; 3] chỉ có x = 2 (y = 0), nên so sánh y(1) = e, y(2) = 0, y(3) = e³. Max = e³.",
+      "wrong_explain": {
+        "0": "0 là giá trị tại x = 2, là giá trị nhỏ nhất trên đoạn.",
+        "2": "e⁴ không xuất hiện: y(3) = (3 − 2)² e³ = e³.",
+        "3": "e là y(1), không phải lớn nhất."
+      }
+    },
+    {
+      "id": "q63",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.35: khẳng định nào đúng?",
+      "choices": [
+        "Đường thẳng x = 2 là tiệm cận đứng",
+        "Đường thẳng y = 2 là tiệm cận ngang",
+        "Đường thẳng y = 1 là tiệm cận ngang",
+        "Đường thẳng x = 2 là tiệm cận ngang"
+      ],
+      "answer": 1,
+      "explain": "Giới hạn tại x = 2 hữu hạn (bằng 1) nên không có tiệm cận đứng; lim_{x→±∞} f(x) = 2 nên y = 2 là tiệm cận ngang.",
+      "wrong_explain": {
+        "0": "Giới hạn hai phía tại 2 đều hữu hạn bằng 1, không phải vô cực.",
+        "2": "Giới hạn ở vô cực bằng 2, không phải 1.",
+        "3": "x = 2 là đường thẳng đứng, không thể là tiệm cận ngang."
+      }
+    },
+    {
+      "id": "q64",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.36: tiệm cận xiên của đồ thị y = (x² + 2x − 2)/(x + 2) là?",
+      "choices": [
+        "y = −2",
+        "y = 1",
+        "y = x + 2",
+        "y = x"
+      ],
+      "answer": 3,
+      "explain": "x² + 2x − 2 = x(x + 2) − 2 nên y = x − 2/(x + 2). Khi x → ±∞ thì y − x → 0, tiệm cận xiên là y = x.",
+      "wrong_explain": {
+        "0": "Khi x → ∞ hàm số tiến đến vô cực, không tiến về −2 nên y = −2 không phải tiệm cận.",
+        "1": "Bậc của tử (2) lớn hơn bậc của mẫu (1) nên không có tiệm cận ngang.",
+        "2": "Hàm có tiệm cận xiên y = x; x = −2 là tiệm cận đứng, không phải y = x + 2."
+      }
+    },
+    {
+      "id": "q65",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.37: khẳng định nào sai?",
+      "choices": [
+        "Đường thẳng y = 1 là tiệm cận ngang",
+        "Đường thẳng y = −1 là tiệm cận ngang",
+        "Đường thẳng x = 3 là tiệm cận đứng",
+        "Đường thẳng x = 1 là tiệm cận đứng"
+      ],
+      "answer": 3,
+      "explain": "Bảng biến thiên cho f(x) → 1 khi x → −∞ và f(x) → −1 khi x → +∞. Khi x → 3⁻ thì f(x) → +∞ nên x = 3 là tiệm cận đứng. Tại x = 1 các giới hạn một phía đều hữu hạn (−1 và 7) nên x = 1 không phải tiệm cận đứng.",
+      "wrong_explain": {
+        "0": "Đúng: f(x) → 1 khi x → −∞.",
+        "1": "Đúng: f(x) → −1 khi x → +∞.",
+        "2": "Đúng: f(x) → +∞ khi x → 3⁻."
+      }
+    },
+    {
+      "id": "q66",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.38: đồ thị trong Hình 1.37 (tiệm cận đứng x = −1, tiệm cận ngang y = 2, đi qua (0; 1)) là của hàm số nào?",
+      "choices": [
+        "y = (x + 2)/(x + 1)",
+        "y = (2x + 1)/(x + 1)",
+        "y = (x − 1)/(x + 1)",
+        "y = (x + 3)/(1 − x)"
+      ],
+      "answer": 1,
+      "explain": "Hàm (2x + 1)/(x + 1) có tiệm cận đứng x = −1, tiệm cận ngang y = 2 và y(0) = 1, khớp đồ thị.",
+      "wrong_explain": {
+        "0": "Tiệm cận ngang là y = 1 và y(0) = 2, không khớp.",
+        "2": "Tiệm cận ngang y = 1 và y(0) = −1, không khớp.",
+        "3": "Tiệm cận đứng là x = 1, không phải x = −1."
+      }
+    },
+    {
+      "id": "q67",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.39: đồ thị trong Hình 1.38 (tiệm cận đứng x = −1, tiệm cận xiên y = x, cực tiểu tại (0; 1), cực đại tại (−2; −3)) là của hàm số nào?",
+      "choices": [
+        "y = x − 1/(x + 1)",
+        "y = (2x + 1)/(x + 1)",
+        "y = (x² − x + 1)/(x + 1)",
+        "y = (x² + x + 1)/(x + 1)"
+      ],
+      "answer": 3,
+      "explain": "y = (x² + x + 1)/(x + 1) = x + 1/(x + 1): tiệm cận đứng x = −1, xiên y = x, y' = 1 − 1/(x + 1)² có nghiệm x = 0 (CT, y = 1) và x = −2 (CĐ, y = −3).",
+      "wrong_explain": {
+        "0": "Hàm này có y(0) = −1 và không có cực đại tại (−2; −3).",
+        "1": "Hàm này có tiệm cận ngang y = 2, không khớp đồ thị.",
+        "2": "Tiệm cận xiên là y = x − 2, không phải y = x."
+      }
+    },
+    {
+      "id": "q68",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.40a: khảo sát y = x³ − 3x² + 3x − 1.",
+      "choices": [
+        "Đồng biến trên ℝ, không có cực trị",
+        "Nghịch biến trên ℝ",
+        "Có cực đại tại x = 1",
+        "Có cực tiểu tại x = 1 và cực đại tại x = 3"
+      ],
+      "answer": 0,
+      "explain": "y' = 3(x − 1)² ≥ 0 với mọi x và chỉ bằng 0 tại x = 1, nên hàm số đồng biến trên ℝ và không có cực trị.",
+      "wrong_explain": {
+        "1": "y' ≥ 0 nên không nghịch biến.",
+        "2": "y' không đổi dấu qua x = 1 nên không có cực đại.",
+        "3": "Hàm không có cực trị nào."
+      }
+    },
+    {
+      "id": "q69",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.40b: khảo sát y = x⁴ − 2x² − 1, các cực trị là?",
+      "choices": [
+        "y_CT = −2 tại x = ±1; y_CĐ = −1 tại x = 0",
+        "y_CT = −1 tại x = 0",
+        "y_CĐ = −2 tại x = ±1",
+        "Không có cực trị"
+      ],
+      "answer": 0,
+      "explain": "y' = 4x(x² − 1) đổi dấu tại x = −1, 0, 1: cực tiểu tại x = ±1 với y = −2; cực đại tại x = 0 với y = −1.",
+      "wrong_explain": {
+        "1": "Thiếu hai điểm cực tiểu x = ±1 và giá trị cực đại đúng là −1.",
+        "2": "Dấu của cực trị bị đảo: x = ±1 là cực tiểu.",
+        "3": "y' đổi dấu nên có cực trị."
+      }
+    },
+    {
+      "id": "q70",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.40c: khảo sát y = (2x − 1)/(3x + 1).",
+      "choices": [
+        "Đồng biến trên (−∞; −1/3) và (−1/3; +∞), không có cực trị",
+        "Nghịch biến trên ℝ \\ {−1/3}",
+        "Có một cực đại",
+        "Đồng biến trên ℝ"
+      ],
+      "answer": 0,
+      "explain": "y' = 5/(3x + 1)² > 0 với mọi x ≠ −1/3, nên hàm số đồng biến trên mỗi khoảng xác định và không có cực trị.",
+      "wrong_explain": {
+        "1": "y' > 0 nên hàm số đồng biến chứ không nghịch biến.",
+        "2": "Hàm số không có cực trị.",
+        "3": "Hàm số không xác định tại x = −1/3 nên không đồng biến trên toàn ℝ."
+      }
+    },
+    {
+      "id": "q71",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.40d: khảo sát y = (x² + 2x + 2)/(x + 1).",
+      "choices": [
+        "y_CĐ = −2 tại x = −2; y_CT = 2 tại x = 0",
+        "y_CT = −2 tại x = −2; y_CĐ = 2 tại x = 0",
+        "y_CĐ = 2 tại x = −2",
+        "Không có cực trị"
+      ],
+      "answer": 0,
+      "explain": "y' = x(x + 2)/(x + 1)². y' đổi dấu từ + sang − tại x = −2 (cực đại, y = −2) và từ − sang + tại x = 0 (cực tiểu, y = 2).",
+      "wrong_explain": {
+        "1": "Đảo ngược: x = −2 là cực đại, x = 0 là cực tiểu.",
+        "2": "Thiếu cực tiểu tại x = 0.",
+        "3": "y' đổi dấu nên có cực trị."
+      }
+    },
+    {
+      "id": "q72",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.41a: giá trị lớn nhất và nhỏ nhất của y = (2x + 1)/(3x − 2) trên [2; +∞) là?",
+      "choices": [
+        "Max = 5/4 tại x = 2; không có min",
+        "Min = 5/4 tại x = 2; không có max",
+        "Max = 2/3",
+        "Không có max, min = 2/3"
+      ],
+      "answer": 0,
+      "explain": "y' = −7/(3x − 2)² < 0, hàm số nghịch biến trên [2; +∞) nên max y = y(2) = 5/4. Khi x → +∞, y → 2/3 nhưng không đạt được, nên không có min.",
+      "wrong_explain": {
+        "1": "Hàm nghịch biến nên đạt max tại đầu mút trái x = 2.",
+        "2": "2/3 là giới hạn khi x → +∞, không phải giá trị đạt được.",
+        "3": "Đây là giới hạn, không phải giá trị lớn nhất hay nhỏ nhất đạt được."
+      }
+    },
+    {
+      "id": "q73",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.41b: giá trị lớn nhất và nhỏ nhất của y = √(2 − x²) là?",
+      "choices": [
+        "Max = √2 tại x = 0; min = 0 tại x = ±√2",
+        "Max = 2 tại x = 0",
+        "Min = √2 tại x = 0",
+        "Max = 0 tại x = ±√2"
+      ],
+      "answer": 0,
+      "explain": "Miền xác định là [−√2; √2]. Hàm số đạt lớn nhất √2 tại x = 0 và nhỏ nhất 0 tại x = ±√2.",
+      "wrong_explain": {
+        "1": "√(2 − 0) = √2, không phải 2.",
+        "2": "Tại x = 0 giá trị là √2 là lớn nhất, không phải nhỏ nhất.",
+        "3": "Tại x = ±√2 giá trị là 0 là nhỏ nhất, không phải lớn nhất."
+      }
+    },
+    {
+      "id": "q74",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.42a: tiệm cận của đồ thị y = (3x − 2)/(x + 1) là?",
+      "choices": [
+        "x = −1 và y = 3",
+        "x = 1 và y = 3",
+        "x = −1 và y = −2",
+        "x = 3 và y = −1"
+      ],
+      "answer": 0,
+      "explain": "Mẫu x + 1 = 0 khi x = −1 (tiệm cận đứng); lim y = 3 khi x → ∞ (tiệm cận ngang).",
+      "wrong_explain": {
+        "1": "Mẫu bằng 0 tại x = −1, không phải x = 1.",
+        "2": "Tiệm cận ngang là y = 3 (tỉ số hệ số x).",
+        "3": "Tiệm cận đứng là x = −1; x = 3 không phải tiệm cận."
+      }
+    },
+    {
+      "id": "q75",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.42b: tiệm cận của đồ thị y = (x² + 2x − 1)/(2x − 1) là?",
+      "choices": [
+        "x = 1/2 và y = x/2 + 5/4",
+        "x = 1/2 và y = 0",
+        "y = x và x = 1/2",
+        "y = 2x và x = 1/2"
+      ],
+      "answer": 0,
+      "explain": "Mẫu bằng 0 tại x = 1/2. Chia: y = x/2 + 5/4 + (1/4)/(2x − 1), nên tiệm cận xiên là y = x/2 + 5/4.",
+      "wrong_explain": {
+        "1": "Bậc tử lớn hơn bậc mẫu nên không có tiệm cận ngang y = 0.",
+        "2": "Hệ số góc của tiệm cận xiên là 1/2, không phải 1.",
+        "3": "Hệ số góc đúng là 1/2 và có hệ số tự do 5/4."
+      }
+    },
+    {
+      "id": "q76",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.43a: khảo sát y = −x³ + 6x² − 9x + 12.",
+      "choices": [
+        "CĐ: (3; 12), CT: (1; 8)",
+        "CĐ: (1; 8), CT: (3; 12)",
+        "CT: (2; 10)",
+        "Không có cực trị"
+      ],
+      "answer": 0,
+      "explain": "y' = −3(x − 1)(x − 3): y' đổi dấu từ − sang + tại x = 1 (cực tiểu, y = 8) và từ + sang − tại x = 3 (cực đại, y = 12). Điểm uốn tại x = 2, y = 10.",
+      "wrong_explain": {
+        "1": "Đảo ngược: x = 1 là cực tiểu, x = 3 là cực đại.",
+        "2": "(2; 10) là điểm uốn, không phải cực trị.",
+        "3": "y' đổi dấu hai lần nên có cực trị."
+      }
+    },
+    {
+      "id": "q77",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.43b: khảo sát y = (2x − 1)/(x + 1).",
+      "choices": [
+        "Đồng biến trên (−∞; −1) và (−1; +∞); TCĐ x = −1; TCN y = 2",
+        "Nghịch biến trên ℝ \\ {−1}; TCĐ x = 1; TCN y = −2",
+        "Đồng biến trên ℝ; TCĐ x = 2; TCN y = 1",
+        "Có cực đại tại x = −1"
+      ],
+      "answer": 0,
+      "explain": "y' = 3/(x + 1)² > 0; tiệm cận đứng x = −1 và tiệm cận ngang y = 2.",
+      "wrong_explain": {
+        "1": "y' > 0 nên hàm số đồng biến; tiệm cận đứng là x = −1, không phải x = 1.",
+        "2": "Mẫu bằng 0 tại x = −1 và tiệm cận ngang là y = 2.",
+        "3": "Hàm số không xác định tại x = −1 và không có cực trị."
+      }
+    },
+    {
+      "id": "q78",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.43c: khảo sát y = (x² − 2x)/(x − 1).",
+      "choices": [
+        "TCĐ x = 1, tiệm cận xiên y = x − 1; y' = 1 + 1/(x − 1)² > 0 nên đồng biến trên mỗi khoảng xác định",
+        "TCĐ x = 1, tiệm cận xiên y = x; có cực trị tại x = 0",
+        "TCĐ x = −1, tiệm cận xiên y = x + 1",
+        "Không có tiệm cận"
+      ],
+      "answer": 0,
+      "explain": "y = x − 1 − 1/(x − 1), tiệm cận đứng x = 1, tiệm cận xiên y = x − 1; y' = (x² − 2x + 2)/(x − 1)² > 0 nên không có cực trị.",
+      "wrong_explain": {
+        "1": "Tiệm cận xiên là y = x − 1, và hàm không có cực trị.",
+        "2": "Mẫu bằng 0 tại x = 1 chứ không phải x = −1, và có tiệm cận xiên.",
+        "3": "Hàm có tiệm cận đứng x = 1 và tiệm cận xiên y = x − 1."
+      }
+    },
+    {
+      "id": "q79",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.44a: công thức q = g(p) của ảnh theo khoảng cách vật p (p > f) là?",
+      "choices": [
+        "q = fp/(p − f)",
+        "q = f/(p − f)",
+        "q = p/(f − p)",
+        "q = (p − f)/(fp)"
+      ],
+      "answer": 0,
+      "explain": "Từ 1/p + 1/q = 1/f suy ra 1/q = (p − f)/(fp), tức q = fp/(p − f).",
+      "wrong_explain": {
+        "1": "Thiếu nhân tử p ở tử số.",
+        "2": "Dấu và vị trí f, p bị đảo.",
+        "3": "Đây là nghịch đảo của biểu thức đúng."
+      }
+    },
+    {
+      "id": "q80",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.44b: giới hạn lim_{p→+∞} g(p) và lim_{p→f⁺} g(p) là?",
+      "choices": [
+        "lim_{p→+∞} g(p) = f; lim_{p→f⁺} g(p) = +∞",
+        "lim_{p→+∞} g(p) = 0; lim_{p→f⁺} g(p) = 0",
+        "lim_{p→+∞} g(p) = +∞; lim_{p→f⁺} g(p) = f",
+        "lim_{p→+∞} g(p) = −∞; lim_{p→f⁺} g(p) = f"
+      ],
+      "answer": 0,
+      "explain": "Chia tử và mẫu cho p: g(p) = f/(1 − f/p) → f khi p → +∞. Khi p → f⁺, mẫu p − f → 0⁺ nên g(p) → +∞. Ý nghĩa: vật ở xa thì ảnh tiến về tiêu điểm; vật ở tiêu điểm thì ảnh ở vô cực.",
+      "wrong_explain": {
+        "1": "Khi p → +∞, q → f, không phải 0.",
+        "2": "Hai giới hạn bị đảo: khi vật ở xa ảnh tiến về f.",
+        "3": "Khi p → +∞, q → f hữu hạn, không phải +∞."
+      }
+    },
+    {
+      "id": "q81",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.44c: lập bảng biến thiên của q = g(p) trên (f; +∞): đơn điệu thế nào?",
+      "choices": [
+        "Nghịch biến trên (f; +∞)",
+        "Đồng biến trên (f; +∞)",
+        "Không đơn điệu",
+        "Có cực trị tại p = 2f"
+      ],
+      "answer": 0,
+      "explain": "g'(p) = −f²/(p − f)² < 0 với mọi p > f, nên hàm số nghịch biến và không có cực trị.",
+      "wrong_explain": {
+        "1": "g'(p) < 0 nên hàm nghịch biến.",
+        "2": "Đạo hàm không đổi dấu trên khoảng xác định.",
+        "3": "g' không bằng 0 tại điểm nào trên khoảng xác định nên không có cực trị."
+      }
+    },
+    {
+      "id": "q82",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.45a: ước tính dân số (triệu người) vào các năm 2030 và 2035 với N(t) = 100e^(0,012t).",
+      "choices": [
+        "N(7) ≈ 108,763; N(12) ≈ 115,488",
+        "N(7) ≈ 107,763; N(12) ≈ 114,488",
+        "N(7) ≈ 100; N(12) ≈ 112",
+        "N(7) ≈ 108,8; N(12) ≈ 115,5"
+      ],
+      "answer": 0,
+      "explain": "2030 ứng với t = 7: N(7) = 100e^0,084 ≈ 108,763. 2035 ứng với t = 12: N(12) = 100e^0,144 ≈ 115,488.",
+      "wrong_explain": {
+        "1": "Tính sai số mũ: giá trị đúng là e^0,084 ≈ 1,0876 và e^0,144 ≈ 1,1549.",
+        "2": "N(0) = 100 nên N(7) phải lớn hơn 100 rõ rệt; 100 là dân số năm 2023.",
+        "3": "Làm tròn không đúng yêu cầu (chữ số thập phân thứ ba)."
+      }
+    },
+    {
+      "id": "q83",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.45b: xét chiều biến thiên của N(t) trên [0; 50].",
+      "choices": [
+        "Đồng biến trên [0; 50] vì N'(t) = 1,2e^(0,012t) > 0",
+        "Nghịch biến trên [0; 50]",
+        "Không đơn điệu trên [0; 50]",
+        "Đạt cực đại tại t = 50"
+      ],
+      "answer": 0,
+      "explain": "N'(t) = 1,2e^(0,012t) > 0 với mọi t, nên N(t) đồng biến trên [0; 50].",
+      "wrong_explain": {
+        "1": "N'(t) > 0 nên hàm số tăng.",
+        "2": "Đạo hàm không đổi dấu trên đoạn này.",
+        "3": "Hàm tăng trên đoạn, cực đại (nếu xét trên đoạn) chỉ là giá trị tại biên, không phải cực đại của hàm."
+      }
+    },
+    {
+      "id": "q84",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.45c: vào năm nào tốc độ tăng dân số là 1,6 triệu người/năm?",
+      "choices": [
+        "Năm 2047 (t ≈ 24)",
+        "Năm 2045 (t ≈ 22)",
+        "Năm 2030",
+        "Không có năm nào"
+      ],
+      "answer": 0,
+      "explain": "N'(t) = 1,2e^(0,012t) = 1,6 khi e^(0,012t) = 4/3, t = ln(4/3)/0,012 ≈ 23,97, tức khoảng năm 2047.",
+      "wrong_explain": {
+        "1": "Với t = 22, N'(22) ≈ 1,53 < 1,6.",
+        "2": "N'(7) ≈ 1,31, chưa đạt 1,6.",
+        "3": "N'(t) tăng liên tục từ 1,2 nên có nghiệm trong [0; 50]."
+      }
+    },
+    {
+      "id": "q85",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 1.46: đặt BM = x (km), tổng chi phí nhỏ nhất khi x bằng?",
+      "choices": [
+        "3 km",
+        "4 km",
+        "10 km",
+        "0 km (M trùng B)"
+      ],
+      "answer": 0,
+      "explain": "Chi phí f(x) = 50√(16 + x²) + 30(10 − x), f'(x) = 50x/√(16 + x²) − 30 = 0 khi x = 3; f(3) = 460, f(0) = 500, f(10) ≈ 538,5. Chi phí nhỏ nhất tại BM = 3 km.",
+      "wrong_explain": {
+        "1": "f'(4) > 0 nên f tăng từ x = 3, không phải điểm cực tiểu.",
+        "2": "f(10) ≈ 538,5 là chi phí lớn nhất trong ba giá trị.",
+        "3": "f(0) = 500 > f(3) = 460."
+      }
     }
   ]
 }
