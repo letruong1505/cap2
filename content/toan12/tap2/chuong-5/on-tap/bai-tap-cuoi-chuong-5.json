@@ -1,0 +1,602 @@
+{
+  "id": "t12-t2-chuong5-on-tap",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 12, tập 2",
+  "chapter": "Chương V. Phương pháp toạ độ trong không gian",
+  "lesson": "Bài tập cuối chương V",
+  "section": "A. Trắc nghiệm; B. Tự luận",
+  "bookPage": 61,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Chương V tổng hợp các kiến thức: phương trình mặt phẳng (vectơ pháp tuyến, phương trình tổng quát), phương trình đường thẳng (tham số, chính tắc), vị trí tương đối, góc, khoảng cách, và phương trình mặt cầu."
+    },
+    {
+      "type": "text",
+      "content": "Phương pháp: chọn vectơ pháp tuyến bằng tích có hướng; chọn vectơ chỉ phương của đường thẳng; kiểm tra vị trí tương đối bằng tích có hướng và tích hỗn tạp; tính góc và khoảng cách bằng các công thức đã học trong chương."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.31: vectơ pháp tuyến của (P): x − 2y − 3z + 1 = 0 là?",
+      "choices": [
+        "(1; −2; −3)",
+        "(1; 2; 3)",
+        "(1; −2; 3)",
+        "(1; 2; −3)"
+      ],
+      "answer": 0,
+      "explain": "Vectơ pháp tuyến là các hệ số của x, y, z: (1; −2; −3).",
+      "wrong_explain": {
+        "1": "Hệ số của y là −2, không phải 2.",
+        "2": "Hệ số của y là −2 và của z là −3.",
+        "3": "Hệ số của z là −3, không phải 3."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.32: mặt phẳng đi qua I(1; −1; 2) và nhận n = (2; 1; −1) làm vectơ pháp tuyến là?",
+      "choices": [
+        "2x + y − z + 1 = 0",
+        "x − y + 2z + 1 = 0",
+        "x − y + 2z − 6 = 0",
+        "2x + y − z − 1 = 0"
+      ],
+      "answer": 0,
+      "explain": "2(x − 1) + (y + 1) − (z − 2) = 0 ⇔ 2x + y − z + 1 = 0.",
+      "wrong_explain": {
+        "1": "Vectơ pháp tuyến không phải (1; −1; 2).",
+        "2": "Vectơ pháp tuyến không phải (1; −1; 2).",
+        "3": "Hằng số sai: thay I được 2 − 1 − 2 − 1 ≠ 0."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.33: đường thẳng d: (x − 1)/2 = (y + 2)/1 = (z − 3)/(−2) có vectơ chỉ phương là?",
+      "choices": [
+        "(2; 1; −2)",
+        "(1; −2; 3)",
+        "(2; 1; 2)",
+        "(1; 2; 3)"
+      ],
+      "answer": 0,
+      "explain": "Vectơ chỉ phương là mẫu số: (2; 1; −2).",
+      "wrong_explain": {
+        "1": "Đây là điểm đi qua (1; −2; 3) chứ không phải vectơ chỉ phương.",
+        "2": "Thành phần z của vectơ chỉ phương là −2, không phải 2.",
+        "3": "Mẫu số là (2; 1; −2), không phải (1; 2; 3)."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.34: đường thẳng d: x = 1 + 2t, y = −2 + t, z = 3 − t có vectơ chỉ phương là?",
+      "choices": [
+        "(2; 1; −1)",
+        "(1; −2; 3)",
+        "(2; 0; 0)",
+        "(2; 1; 1)"
+      ],
+      "answer": 0,
+      "explain": "Hệ số của t: (2; 1; −1).",
+      "wrong_explain": {
+        "1": "Điểm đi qua là (1; −2; 3), không phải vectơ chỉ phương.",
+        "2": "Chỉ có thành phần x khác 0 là không đúng với hệ số của t.",
+        "3": "Thành phần z của vectơ chỉ phương là −1, không phải 1."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.35: đường thẳng d đi qua I(2; −1; 1) và nhận u = (1; 2; −3) làm vectơ chỉ phương là?",
+      "choices": [
+        "(x − 2)/1 = (y + 1)/2 = (z − 1)/(−3)",
+        "(x − 1)/2 = (y − 2)/(−1) = (z + 3)/1",
+        "(x − 2)/1 = (y + 1)/2 = (z − 1)/3",
+        "(x − 1)/2 = (y − 2)/1 = (z + 3)/(−3)"
+      ],
+      "answer": 0,
+      "explain": "Đường thẳng đi qua I(2; −1; 1) với vectơ chỉ phương (1; 2; −3).",
+      "wrong_explain": {
+        "1": "Điểm đi qua và vectơ chỉ phương không khớp với I và u.",
+        "2": "Thành phần z của vectơ chỉ phương phải là −3, không phải 3.",
+        "3": "Điểm đi qua và vectơ chỉ phương đều sai."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.36: phương trình đường thẳng AB với A(−1; 0; −1), B(2; 1; 1) là?",
+      "choices": [
+        "x = −1 + 3t, y = t, z = −1 + 2t",
+        "x = 1 + 3t, y = t, z = 1 + 2t",
+        "x = −1 + t, y = t, z = −1 + 2t",
+        "x = 2 + t, y = 1 + t, z = 1 + 2t"
+      ],
+      "answer": 0,
+      "explain": "AB = (3; 1; 2), đường thẳng đi qua A(−1; 0; −1).",
+      "wrong_explain": {
+        "1": "Điểm (1; 0; 1) không thuộc đường thẳng AB.",
+        "2": "Vectơ chỉ phương (1; 1; 2) không cùng phương với AB = (3; 1; 2).",
+        "3": "Vectơ chỉ phương (1; 1; 2) không cùng phương với AB = (3; 1; 2)."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.37: đường thẳng d đi qua I(2; 1; −3) và vuông góc với (P): x − 2y + z − 3 = 0 là?",
+      "choices": [
+        "(x − 2)/1 = (y − 1)/(−2) = (z + 3)/1",
+        "(x − 2)/1 = (y − 1)/2 = (z − 3)/1",
+        "(x − 2)/1 = (y − 1)/(−2) = (z − 3)/1",
+        "(x − 2)/1 = (y − 1)/2 = (z + 3)/1"
+      ],
+      "answer": 0,
+      "explain": "Vectơ pháp tuyến (1; −2; 1) của (P) là vectơ chỉ phương của d, đi qua I(2; 1; −3).",
+      "wrong_explain": {
+        "1": "Điểm đi qua phải là I(2; 1; −3): thành phần z là (z + 3), không phải (z − 3).",
+        "2": "Vectơ chỉ phương phải là (1; −2; 1), không phải (1; 2; 1).",
+        "3": "Điểm đi qua I có z = −3 nên (z + 3), và hệ số y phải là −2, không phải 2."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.38: mặt cầu (S): (x + 1)² + y² + (z − 3)² = 4 có tâm I và bán kính R là?",
+      "choices": [
+        "I(−1; 0; 3), R = 2",
+        "I(1; 0; 3), R = 4",
+        "I(1; 0; 3), R = 2",
+        "I(−1; 0; 3), R = 4"
+      ],
+      "answer": 0,
+      "explain": "Tâm I(−1; 0; 3), R² = 4 nên R = 2.",
+      "wrong_explain": {
+        "1": "Tâm sai dấu và R = 4 sai: R² = 4 nên R = 2.",
+        "2": "Tâm sai dấu: hoành độ phải là −1.",
+        "3": "R = 4 sai: R² = 4 nên R = 2."
+      }
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.39: mặt cầu x² + y² + z² − 2x + 4y + 2z − 3 = 0 có tâm và bán kính là?",
+      "choices": [
+        "I(1; −2; −1), R = 3",
+        "I(1; 2; 1), R = 9",
+        "I(1; 2; 1), R = 3",
+        "I(1; −2; −1), R = 9"
+      ],
+      "answer": 0,
+      "explain": "Tâm I(1; −2; −1), R² = 1 + 4 + 1 + 3 = 9, R = 3.",
+      "wrong_explain": {
+        "1": "Tâm sai dấu và R = 9 sai: R² = 9 nên R = 3.",
+        "2": "Tâm sai dấu: phải là (1; −2; −1).",
+        "3": "Tâm đúng nhưng R = 9 sai: R² = 9 nên R = 3."
+      }
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.40a: mặt phẳng (ABC) với A(1; 0; −1), B(0; 1; 2), C(−1; −2; 3) là?",
+      "choices": [
+        "5x − y + 2z − 3 = 0",
+        "5x + y + 2z − 3 = 0",
+        "5x − y − 2z − 3 = 0",
+        "5x − y + 2z + 3 = 0"
+      ],
+      "answer": 0,
+      "explain": "AB = (−1; 1; 3), AC = (−2; −2; 4), [AB, AC] ∝ (5; −1; 2); phương trình 5x − y + 2z − 3 = 0 (thỏa mãn A, B, C).",
+      "wrong_explain": {
+        "1": "Hệ số của y phải là −1 theo tích có hướng, không phải +1.",
+        "2": "Hệ số của z phải là +2.",
+        "3": "Hằng số sai dấu: thay A(1; 0; −1) được 5 − 2 − 3 ≠ 0 với +3."
+      }
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.40b: đường thẳng AC với A(1; 0; −1), C(−1; −2; 3) có phương trình chính tắc là?",
+      "choices": [
+        "(x − 1)/1 = y/1 = (z + 1)/(−2)",
+        "(x − 1)/1 = y/(−1) = (z + 1)/2",
+        "(x + 1)/1 = (y + 2)/1 = (z − 3)/2",
+        "(x − 1)/1 = y/1 = (z + 1)/2"
+      ],
+      "answer": 0,
+      "explain": "AC = (−2; −2; 4) ∝ (1; 1; −2), đường thẳng đi qua A(1; 0; −1) và cũng đi qua C.",
+      "wrong_explain": {
+        "1": "Vectơ chỉ phương (1; −1; 2) không cùng phương với AC.",
+        "2": "Vectơ chỉ phương (1; 1; 2) không cùng phương với AC ∝ (1; 1; −2).",
+        "3": "Thành phần z của vectơ chỉ phương phải là −2, không phải 2."
+      }
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.40c: mặt cầu đường kính AC với A(1; 0; −1), C(−1; −2; 3) có phương trình là?",
+      "choices": [
+        "x² + (y + 1)² + (z − 1)² = 6",
+        "x² + (y − 1)² + (z + 1)² = 6",
+        "x² + (y + 1)² + (z − 1)² = 24",
+        "(x − 1)² + y² + (z + 1)² = 6"
+      ],
+      "answer": 0,
+      "explain": "Tâm là trung điểm (0; −1; 1), R = AC/2 = √24/2 = √6, R² = 6.",
+      "wrong_explain": {
+        "1": "Tâm sai dấu: phải là (0; −1; 1).",
+        "2": "R² = 24 là bình phương của AC, chưa chia 4.",
+        "3": "Tâm là trung điểm (0; −1; 1), không phải A."
+      }
+    },
+    {
+      "id": "q13",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.40d: mặt cầu tâm A(1; 0; −1) đi qua B(0; 1; 2) có phương trình là?",
+      "choices": [
+        "(x − 1)² + y² + (z + 1)² = 11",
+        "(x − 1)² + y² + (z + 1)² = 6",
+        "(x + 1)² + y² + (z − 1)² = 11",
+        "(x − 1)² + (y − 1)² + (z − 2)² = 11"
+      ],
+      "answer": 0,
+      "explain": "R² = AB² = 1 + 1 + 9 = 11.",
+      "wrong_explain": {
+        "1": "R² = 6 là bình phương của hai đoạn khác, không phải AB².",
+        "2": "Tâm sai dấu: phải là (1; 0; −1).",
+        "3": "Tâm phải là A(1; 0; −1), không phải (1; 1; 2)."
+      }
+    },
+    {
+      "id": "q14",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.41: mặt phẳng (P) chứa đường thẳng d: x = 1 + t, y = −2 + t, z = 4 − 2t và gốc O là?",
+      "choices": [
+        "2y + z = 0",
+        "y + 2z = 0",
+        "2y − z = 0",
+        "2x + z = 0"
+      ],
+      "answer": 0,
+      "explain": "Vectơ pháp tuyến ∝ (0; 2; 1) (tích của OM₀ = (1; −2; 4) và u = (1; 1; −2)); mặt phẳng đi qua O nên 2y + z = 0.",
+      "wrong_explain": {
+        "1": "Hệ số không khớp với tích có hướng (0; 2; 1).",
+        "2": "Đổi dấu z: 2y − z = 0 không chứa M₀(1; −2; 4) vì −4 − 4 ≠ 0.",
+        "3": "2x + z = 0 không chứa d: thay M₀(1; −2; 4) được 2 + 4 ≠ 0."
+      }
+    },
+    {
+      "id": "q15",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "5.42a: khoảng cách từ A(1; −1; 2) đến (P): x − 2y + 2z − 1 = 0 bằng?",
+      "expr": "(1*1+(-2)*(-1)+2*2-1)/3",
+      "answer": "2",
+      "explain": "d = |1 + 2 + 4 − 1| / √9 = 6/3 = 2."
+    },
+    {
+      "id": "q16",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.42b: mặt phẳng (Q) đi qua A(1; −1; 2) và song song với (P): x − 2y + 2z − 1 = 0 là?",
+      "choices": [
+        "x − 2y + 2z − 7 = 0",
+        "x − 2y + 2z + 7 = 0",
+        "x − 2y + 2z − 1 = 0",
+        "2x − 4y + 4z − 1 = 0"
+      ],
+      "answer": 0,
+      "explain": "(Q): x − 2y + 2z + D = 0 với 1 + 2 + 4 + D = 0 nên D = −7.",
+      "wrong_explain": {
+        "1": "Hằng số phải là −7 khi thay A(1; −1; 2).",
+        "2": "Hằng số sai dấu: 1 + 2 + 4 + 7 ≠ 0.",
+        "3": "(P) có hằng số −1 nhưng (Q) đi qua A nên hằng số phải khác."
+      }
+    },
+    {
+      "id": "q17",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.42c: mặt phẳng (R) chứa A(1; −1; 2), B(−1; 1; 0) và vuông góc (P): x − 2y + 2z − 1 = 0 là?",
+      "choices": [
+        "y + z − 1 = 0",
+        "y − z + 1 = 0",
+        "y + z + 1 = 0",
+        "2y − z = 0"
+      ],
+      "answer": 0,
+      "explain": "AB ∝ (1; −1; 1), n_R = [AB, n_P] ∝ (0; 1; 1); phương trình (y + 1) + (z − 2) = 0 ⇔ y + z − 1 = 0.",
+      "wrong_explain": {
+        "1": "Hệ số z sai dấu: y − z + 1 = 0 không chứa A vì −1 − 2 + 1 ≠ 0.",
+        "2": "Hằng số sai: y + z + 1 = 0 không chứa A vì −1 + 2 + 1 ≠ 0.",
+        "3": "2y − z = 0 không chứa A vì −2 − 2 ≠ 0."
+      }
+    },
+    {
+      "id": "q18",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.43a: vị trí tương đối của d: x/1 = (y − 1)/2 = z/2 và d′: (x + 1)/2 = (y + 2)/2 = (z − 3)/(−1) là?",
+      "choices": [
+        "Chéo nhau",
+        "Song song",
+        "Cắt nhau",
+        "Trùng nhau"
+      ],
+      "answer": 0,
+      "explain": "u = (1; 2; 2), v = (2; 2; −1) không cùng phương; [u, v] = (−6; 5; −2), M₀M₀′ = (−1; −3; 3), tích hỗn tạp = −15 ≠ 0 nên chéo nhau.",
+      "wrong_explain": {
+        "1": "Hai vectơ chỉ phương (1; 2; 2) và (2; 2; −1) không cùng phương.",
+        "2": "Tích hỗn tạp khác 0 nên không cắt nhau.",
+        "3": "Hai đường không cùng phương nên không trùng nhau."
+      }
+    },
+    {
+      "id": "q19",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.43c: mặt phẳng (P) chứa A(1; 0; 2) và đường thẳng d: x = t, y = 1 + 2t, z = 2t là?",
+      "choices": [
+        "2x − z = 0",
+        "2x + z = 0",
+        "x − 2z + 3 = 0",
+        "2x − 2z = 0"
+      ],
+      "answer": 0,
+      "explain": "AM₀ = (−1; 1; −2) với M₀(0; 1; 0), u = (1; 2; 2), n = [AM₀, u] ∝ (2; 0; −1); phương trình 2(x − 1) − (z − 2) = 0 ⇔ 2x − z = 0.",
+      "wrong_explain": {
+        "1": "Hệ số của z phải là −1: thay A(1; 0; 2) được 2 + 2 ≠ 0.",
+        "2": "Mặt phẳng này không chứa A.",
+        "3": "Vectơ pháp tuyến (1; 0; −2) không vuông góc với u = (1; 2; 2)."
+      }
+    },
+    {
+      "id": "q20",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.43d: giao điểm của đường thẳng d: x = t, y = 1 + 2t, z = 2t với mặt phẳng (Oxz) là?",
+      "choices": [
+        "(−1/2; 0; −1)",
+        "(0; 0; 0)",
+        "(1; 0; 2)",
+        "(−1; 0; −2)"
+      ],
+      "answer": 0,
+      "explain": "Oxz có y = 0: 1 + 2t = 0 suy ra t = −1/2, khi đó (−1/2; 0; −1).",
+      "wrong_explain": {
+        "1": "(0; 0; 0) không thuộc d vì khi x = 0 thì y = 1 ≠ 0.",
+        "2": "(1; 0; 2) không thuộc d vì khi x = 1 thì y = 3 ≠ 0.",
+        "3": "(−1; 0; −2) không thuộc d vì khi x = −1 thì y = −1 ≠ 0."
+      }
+    },
+    {
+      "id": "q21",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.44: mặt phẳng (Q) chứa d: (x − 1)/2 = (y + 1)/1 = z/(−1) và vuông góc với (P): x − 2y − 2z − 3 = 0 là?",
+      "choices": [
+        "4x − 3y + 5z − 7 = 0",
+        "4x + 3y + 5z − 7 = 0",
+        "4x − 3y − 5z − 7 = 0",
+        "4x − 3y + 5z + 7 = 0"
+      ],
+      "answer": 0,
+      "explain": "n_Q = u_d × n_P = (2; 1; −1) × (1; −2; −2) = (−4; 3; −5) ∝ (4; −3; 5); đi qua (1; −1; 0): 4x − 3y + 5z − 7 = 0.",
+      "wrong_explain": {
+        "1": "Hệ số của y phải là −3 theo tích có hướng.",
+        "2": "Hệ số của z phải là +5.",
+        "3": "Hằng số sai dấu: thay (1; −1; 0) được 4 + 3 + 7 ≠ 0."
+      }
+    },
+    {
+      "id": "q22",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.45: mặt phẳng (P) chứa d: (x + 1)/1 = (y − 1)/2 = z/(−1) và song song với d′: (x − 1)/1 = (y − 2)/1 = (z + 1)/2 là?",
+      "choices": [
+        "5x − 3y − z + 8 = 0",
+        "5x + 3y − z + 8 = 0",
+        "5x − 3y + z + 8 = 0",
+        "5x − 3y − z − 8 = 0"
+      ],
+      "answer": 0,
+      "explain": "n = u_d × v = (1; 2; −1) × (1; 1; 2) = (5; −3; −1); (P) đi qua (−1; 1; 0): 5(x + 1) − 3(y − 1) − z = 0 ⇔ 5x − 3y − z + 8 = 0.",
+      "wrong_explain": {
+        "1": "Hệ số của y phải là −3 theo tích có hướng.",
+        "2": "Hệ số của z phải là −1, không phải +1.",
+        "3": "Hằng số sai dấu: thay (−1; 1; 0) được −5 − 3 − 8 ≠ 0; phải là +8."
+      }
+    },
+    {
+      "id": "q23",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.46: mặt phẳng (R) đi qua A(−1; 2; 0), vuông góc với (P): x − y − z − 1 = 0 và (Q): 2x + y − z − 2 = 0 là?",
+      "choices": [
+        "2x − y + 3z + 4 = 0",
+        "2x − y + 3z − 4 = 0",
+        "2x + y + 3z + 4 = 0",
+        "x − y − z + 4 = 0"
+      ],
+      "answer": 0,
+      "explain": "n_R = n_P × n_Q ∝ (2; −1; 3); đi qua A: 2(x + 1) − (y − 2) + 3z = 0 ⇔ 2x − y + 3z + 4 = 0.",
+      "wrong_explain": {
+        "1": "Hằng số sai dấu: thay A(−1; 2; 0) được −2 − 2 − 4 ≠ 0 với −4.",
+        "2": "Hệ số của y phải là −1 và của z là +3 theo tích có hướng; đáp án này sai dấu y.",
+        "3": "Mặt phẳng này không vuông góc với (Q)."
+      }
+    },
+    {
+      "id": "q24",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.47a: vị trí tương đối của d: (x + 2)/1 = (y + 3)/2 = (z − 3)/(−2) và d′: x = 1 − t, y = −2 + t, z = 2t là?",
+      "choices": [
+        "Chéo nhau",
+        "Song song",
+        "Cắt nhau",
+        "Trùng nhau"
+      ],
+      "answer": 0,
+      "explain": "u = (1; 2; −2), v = (−1; 1; 2), [u, v] = (6; 0; 3) ≠ 0; AB = (3; 1; −3) với A(−2; −3; 3), B(1; −2; 0); AB · [u, v] = 9 ≠ 0 nên chéo nhau.",
+      "wrong_explain": {
+        "1": "Hai vectơ chỉ phương không cùng phương.",
+        "2": "Tích hỗn tạp 9 ≠ 0 nên hai đường không cắt nhau.",
+        "3": "Hai đường không cùng phương nên không trùng nhau."
+      }
+    },
+    {
+      "id": "q25",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.47b: góc giữa d và d′ trong Bài 5.47 có côsin bằng?",
+      "choices": [
+        "1/√6",
+        "3/√6",
+        "1/3",
+        "1/√3"
+      ],
+      "answer": 0,
+      "explain": "cos = |u · v| / (|u| · |v|) = |−3| / (3 · √6) = 1/√6.",
+      "wrong_explain": {
+        "1": "Tử số là |u · v| = 3, mẫu là |u| · |v| = 3√6, nên không bằng 3/√6.",
+        "2": "Mẫu là 3√6, không phải 3.",
+        "3": "|v| = √6, không phải √3."
+      }
+    },
+    {
+      "id": "q26",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.48: góc tạo bởi đường thẳng d: (x + 3)/2 = (y − 2)/(−2) = (z + 1)/1 và mặt phẳng (P): x + y − 2z + 3 = 0 có sin bằng?",
+      "choices": [
+        "√6/9",
+        "2/9",
+        "√6/3",
+        "1/3"
+      ],
+      "answer": 0,
+      "explain": "u = (2; −2; 1), n = (1; 1; −2): sin = |2 − 2 − 2| / (3√6) = 2/(3√6) = √6/9.",
+      "wrong_explain": {
+        "1": "Quên căn trong mẫu: |u| · |n| = 3√6.",
+        "2": "Mẫu là 3√6, không phải 9.",
+        "3": "Tử số là |u · n| = 2, không phải 1."
+      }
+    },
+    {
+      "id": "q27",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.49: góc giữa mặt phẳng (P): x + y + z − 1 = 0 và (Oxy) có cos bằng?",
+      "choices": [
+        "1/√3",
+        "1/√2",
+        "1/2",
+        "√3/2"
+      ],
+      "answer": 0,
+      "explain": "cos = |1| / (√3 · 1) = 1/√3, góc ≈ 54,7°.",
+      "wrong_explain": {
+        "1": "|n_P| = √3, không phải √2.",
+        "2": "Thành phần z của n_P là 1 và |n_P| = √3, nên không phải 1/2.",
+        "3": "√3/2 là cos của góc 30°, không khớp với n_P."
+      }
+    },
+    {
+      "id": "q28",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.50: dây dọi tại ba điểm cách nhau 2 m có độ dài 4 m, 4,4 m, 4,8 m (đáy bể phẳng). Góc đáy bể nghiêng so với mặt nước xấp xỉ?",
+      "choices": [
+        "≈ 21,8°",
+        "≈ 45°",
+        "≈ 11,3°",
+        "≈ 30°"
+      ],
+      "answer": 0,
+      "explain": "Đặt A(0; 0; −4), B(2; 0; −4,4), C(1; √3; −4,8): mặt đáy z = −0,2x − 0,2√3 y − 4 có độ dốc √(0,04 + 0,12) = 0,4, nên góc ≈ arctan(0,4) ≈ 21,8°.",
+      "wrong_explain": {
+        "1": "Độ dốc 1 không đúng: độ dốc thực là 0,4.",
+        "2": "arctan(0,2) ≈ 11,3° không khớp độ dốc 0,4.",
+        "3": "Độ dốc 0,4 cho góc ≈ 21,8°, không phải 30°."
+      }
+    },
+    {
+      "id": "q29",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "5.51: đường ống thoát nước đi qua A(1; 2; −1) và B(5; 6; −2), sàn nhà là (Oxy). Góc tạo bởi ống và sàn xấp xỉ?",
+      "choices": [
+        "≈ 10,0°",
+        "≈ 80,0°",
+        "≈ 45°",
+        "≈ 35,3°"
+      ],
+      "answer": 0,
+      "explain": "AB = (4; 4; −1), sin(góc) = |−1| / √33 ≈ 0,174, nên góc ≈ 10,0°.",
+      "wrong_explain": {
+        "1": "80° là góc giữa ống và pháp tuyến của sàn, không phải góc với sàn.",
+        "2": "Tử số là |−1|, mẫu là √33; không phải 45°.",
+        "3": "Không khớp: sin ≈ 0,174 cho góc ≈ 10°."
+      }
+    },
+    {
+      "id": "q30",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "5.52: với B(1; 1; −1), các điểm A thuộc mặt cầu đơn vị sao cho BAO = 90° thỏa A·B = 1. Bình phương khoảng cách AB² bằng?",
+      "expr": "3-2*1+1",
+      "answer": "2",
+      "explain": "AB² = |B|² − 2A·B + |A|² = 3 − 2 + 1 = 2."
+    }
+  ]
+}
