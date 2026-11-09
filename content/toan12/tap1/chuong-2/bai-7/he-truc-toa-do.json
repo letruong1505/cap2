@@ -1,0 +1,610 @@
+{
+  "id": "t12-chuong2-bai7-he-truc-toa-do",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 12, tập 1",
+  "chapter": "Chương II. Vectơ và hệ trục toạ độ trong không gian",
+  "lesson": "Bài 7. Hệ trục toạ độ trong không gian",
+  "section": "Phần 1: Hệ trục toạ độ trong không gian; Phần 2: Toạ độ của điểm, toạ độ của vectơ trong không gian",
+  "bookPage": 60,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Trong không gian, ba trục Ox, Oy, Oz đôi một vuông góc tại gốc O; i, j, k là các vectơ đơn vị trên các trục. Hệ ba trục đó là hệ toạ độ Descartes vuông góc Oxyz; O là gốc toạ độ, các mặt phẳng (Oxy), (Oyz), (Ozx) là các mặt phẳng toạ độ."
+    },
+    {
+      "type": "text",
+      "content": "Với điểm M bất kì, bộ ba số (x; y; z) duy nhất sao cho OM = xi + yj + zk được gọi là toạ độ của M; viết M = (x; y; z). Với hình hộp chữ nhật OABC.O'A'B'C' với A, B, C thuộc các tia Ox, Oy, Oz, ta có OM = OA + OB + OC nên toạ độ là độ dài các cạnh tương ứng."
+    },
+    {
+      "type": "text",
+      "content": "Với vectơ a bất kì, bộ ba số (x; y; z) duy nhất sao cho a = xi + yj + zk được gọi là toạ độ của a, viết a = (x; y; z). Toạ độ của vectơ a cũng là toạ độ của điểm M sao cho OM = a. Hai vectơ bằng nhau khi và chỉ khi có toạ độ bằng nhau."
+    },
+    {
+      "type": "text",
+      "content": "Nếu M(x_M; y_M; z_M) và N(x_N; y_N; z_N) thì MN = (x_N − x_M; y_N − y_M; z_N − z_M). Toạ độ các vectơ đơn vị: i = (1; 0; 0), j = (0; 1; 0), k = (0; 0; 1)."
+    },
+    {
+      "type": "text",
+      "content": "Hình chiếu vuông góc của M(x; y; z) lên các trục Ox, Oy, Oz có toạ độ lần lượt là (x; 0; 0), (0; y; 0), (0; 0; z); lên các mặt phẳng (Oxy), (Oyz), (Ozx) có toạ độ lần lượt là (x; y; 0), (0; y; z), (x; 0; z)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho hình lập phương ABCD.A'B'C'D' cạnh 1. Có thể lập một hệ toạ độ Oxyz có gốc O trùng với đỉnh B' và các vectơ i, j, k lần lượt là B'A', B'C', B'B không?",
+      "proof": true,
+      "steps": [
+        "Các cạnh B'A', B'C', B'B đôi một vuông góc và cùng có độ dài 1, cùng xuất phát từ B'.",
+        "Vậy có thể lập hệ toạ độ như vậy."
+      ]
+    },
+    {
+      "problem": "Hình 2.38: ABCM.FODE là hình hộp chữ nhật (các cạnh trên các trục, độ dài 3, 4, 3). Tìm toạ độ điểm M.",
+      "proof": true,
+      "steps": [
+        "Áp dụng quy tắc hình hộp: OM = OF + OD + OB = 3i + 4j + 3k.",
+        "Vậy M = (3; 4; 3)."
+      ]
+    },
+    {
+      "problem": "Cho hình hộp chữ nhật ABCD.A'B'C'D' có đỉnh A' trùng gốc O và các đỉnh D', B', A thuộc các tia Ox, Oy, Oz. Biết C(2; 3; 5), tìm toạ độ các đỉnh D', B', A.",
+      "proof": true,
+      "steps": [
+        "OD' = 2i, OB' = 3j, OA = 5k vì C = D' + B' + A (theo quy tắc hình hộp).",
+        "Vậy D'(2; 0; 0), B'(0; 3; 0), A(0; 0; 5)."
+      ]
+    },
+    {
+      "problem": "Trong không gian Oxyz, cho A(1; 0; 2), B(3; 2; 5), C(7; −3; 9), A'(5; 0; 1) như Hình 2.42 (ABC.A'B'C' là hình lăng trụ). Tìm toạ độ AA', B', C'.",
+      "proof": true,
+      "steps": [
+        "AA' = (5 − 1; 0 − 0; 1 − 2) = (4; 0; −1).",
+        "BB' = AA' nên B' = B + (4; 0; −1) = (7; 2; 4).",
+        "CC' = AA' nên C' = C + (4; 0; −1) = (11; −3; 8)."
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong hệ toạ độ Oxyz, các mặt phẳng toạ độ (Oxy), (Oyz), (Ozx) có đôi một vuông góc với nhau không?",
+      "choices": [
+        "Có",
+        "Không, chỉ có hai mặt vuông góc",
+        "Không, chúng đều song song",
+        "Chỉ khi đơn vị đo bằng nhau"
+      ],
+      "answer": 0,
+      "explain": "Ba trục Ox, Oy, Oz đôi một vuông góc nên ba mặt phẳng toạ độ đôi một vuông góc.",
+      "wrong_explain": {
+        "1": "Cả ba cặp mặt đều vuông góc.",
+        "2": "Các mặt phẳng này cắt nhau theo các trục.",
+        "3": "Điều này không liên quan đến đơn vị đo."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 1: có thể lập hệ toạ độ Oxyz với gốc B' và i, j, k là B'A', B'C', B'B không?",
+      "choices": [
+        "Có, vì ba cạnh đó đôi một vuông góc và cùng độ dài 1",
+        "Không, vì các cạnh không vuông góc",
+        "Không, vì độ dài khác nhau",
+        "Có, nhưng chỉ khi đơn vị khác 1"
+      ],
+      "answer": 0,
+      "explain": "B'A', B'C', B'B đôi một vuông góc và có cùng độ dài 1 nên thoả điều kiện của hệ toạ độ.",
+      "wrong_explain": {
+        "1": "Trong hình lập phương ba cạnh đó vuông góc đôi một.",
+        "2": "Cả ba cạnh cùng độ dài 1.",
+        "3": "Đơn vị 1 là hợp lệ."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 1: hình hộp chữ nhật ABCD.A'B'C'D', có thể lập hệ Oxyz với gốc C và i, j, k cùng hướng CB, CD, CC' không?",
+      "choices": [
+        "Có, vì CB, CD, CC' đôi một vuông góc",
+        "Không, vì các cạnh không cùng độ dài",
+        "Không, vì CC' không vuông góc với CB",
+        "Chỉ khi là hình lập phương"
+      ],
+      "answer": 0,
+      "explain": "Trong hình hộp chữ nhật ba cạnh xuất phát từ một đỉnh đôi một vuông góc, nên có thể chọn làm ba trục toạ độ.",
+      "wrong_explain": {
+        "1": "Không cần các cạnh cùng độ dài, chỉ cần đôi một vuông góc.",
+        "2": "CC' vuông góc với đáy nên vuông góc với CB.",
+        "3": "Hình hộp chữ nhật là đủ."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 2: toạ độ điểm M (Hình 2.38) là?",
+      "choices": [
+        "(3; 4; 3)",
+        "(4; 3; 3)",
+        "(3; 3; 4)",
+        "(3; 4; 4)"
+      ],
+      "answer": 0,
+      "explain": "OM = OF + OD + OB = 3i + 4j + 3k nên M = (3; 4; 3).",
+      "wrong_explain": {
+        "1": "(4; 3; 3) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "2": "(3; 3; 4) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "3": "(3; 4; 4) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 3: đỉnh D' của hình hộp chữ nhật có toạ độ?",
+      "choices": [
+        "(2; 0; 0)",
+        "(0; 2; 0)",
+        "(0; 0; 2)",
+        "(2; 3; 0)"
+      ],
+      "answer": 0,
+      "explain": "D' thuộc tia Ox và OD' = 2i nên D'(2; 0; 0).",
+      "wrong_explain": {
+        "1": "(0; 2; 0) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "2": "(0; 0; 2) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "3": "(2; 3; 0) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 3: đỉnh B' có toạ độ?",
+      "choices": [
+        "(0; 3; 0)",
+        "(3; 0; 0)",
+        "(0; 0; 3)",
+        "(2; 3; 0)"
+      ],
+      "answer": 0,
+      "explain": "B' thuộc tia Oy và OB' = 3j nên B'(0; 3; 0).",
+      "wrong_explain": {
+        "1": "(3; 0; 0) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "2": "(0; 0; 3) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "3": "(2; 3; 0) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 3: đỉnh A có toạ độ?",
+      "choices": [
+        "(0; 0; 5)",
+        "(5; 0; 0)",
+        "(0; 5; 0)",
+        "(2; 3; 5)"
+      ],
+      "answer": 0,
+      "explain": "A thuộc tia Oz và OA = 5k nên A(0; 0; 5).",
+      "wrong_explain": {
+        "1": "(5; 0; 0) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "2": "(0; 5; 0) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "3": "(2; 3; 5) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 3: đỉnh B (hình hộp Ví dụ 3) có toạ độ?",
+      "choices": [
+        "(0; 3; 5)",
+        "(2; 3; 0)",
+        "(2; 0; 5)",
+        "(0; 3; 0)"
+      ],
+      "answer": 0,
+      "explain": "B = A + B' − A' = (0; 0; 5) + (0; 3; 0) − (0; 0; 0) = (0; 3; 5).",
+      "wrong_explain": {
+        "1": "(2; 3; 0) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "2": "(2; 0; 5) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "3": "(0; 3; 0) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục."
+      }
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 3: đỉnh D (hình hộp Ví dụ 3) có toạ độ?",
+      "choices": [
+        "(2; 0; 5)",
+        "(0; 2; 5)",
+        "(2; 0; 0)",
+        "(2; 3; 5)"
+      ],
+      "answer": 0,
+      "explain": "D = A + D' − A' = (0; 0; 5) + (2; 0; 0) = (2; 0; 5).",
+      "wrong_explain": {
+        "1": "(0; 2; 5) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "2": "(2; 0; 0) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "3": "(2; 3; 5) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục."
+      }
+    },
+    {
+      "id": "q10",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 3: đỉnh C' (hình hộp Ví dụ 3) có toạ độ?",
+      "choices": [
+        "(2; 3; 0)",
+        "(0; 0; 5)",
+        "(2; 3; 5)",
+        "(0; 3; 5)"
+      ],
+      "answer": 0,
+      "explain": "C' = B' + D' − A' = (0; 3; 0) + (2; 0; 0) = (2; 3; 0).",
+      "wrong_explain": {
+        "1": "(0; 0; 5) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "2": "(2; 3; 5) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "3": "(0; 3; 5) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục."
+      }
+    },
+    {
+      "id": "q11",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 4: toạ độ của vectơ i + 2j + 5k là?",
+      "choices": [
+        "(1; 2; 5)",
+        "(5; 2; 1)",
+        "(1; 5; 2)",
+        "(2; 1; 5)"
+      ],
+      "answer": 0,
+      "explain": "i + 2j + 5k = (1; 2; 5) theo định nghĩa toạ độ của vectơ.",
+      "wrong_explain": {
+        "1": "(5; 2; 1) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "2": "(1; 5; 2) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "3": "(2; 1; 5) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục."
+      }
+    },
+    {
+      "id": "q12",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 5: vectơ AA' với A(1; 0; 2), A'(5; 0; 1) có toạ độ?",
+      "choices": [
+        "(4; 0; −1)",
+        "(−4; 0; 1)",
+        "(4; 0; 1)",
+        "(5; 0; 1)"
+      ],
+      "answer": 0,
+      "explain": "AA' = (5 − 1; 0 − 0; 1 − 2) = (4; 0; −1).",
+      "wrong_explain": {
+        "1": "(−4; 0; 1) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "2": "(4; 0; 1) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "3": "(5; 0; 1) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục."
+      }
+    },
+    {
+      "id": "q13",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 5: điểm B' (trong hình lăng trụ tam giác) có toạ độ?",
+      "choices": [
+        "(7; 2; 4)",
+        "(3; 2; 5)",
+        "(4; 2; 7)",
+        "(7; 0; 4)"
+      ],
+      "answer": 0,
+      "explain": "BB' = AA' = (4; 0; −1) nên B' = B + (4; 0; −1) = (7; 2; 4).",
+      "wrong_explain": {
+        "1": "(3; 2; 5) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "2": "(4; 2; 7) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "3": "(7; 0; 4) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục."
+      }
+    },
+    {
+      "id": "q14",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 5: điểm C' có toạ độ?",
+      "choices": [
+        "(11; −3; 8)",
+        "(7; −3; 9)",
+        "(11; 3; 8)",
+        "(4; −3; 8)"
+      ],
+      "answer": 0,
+      "explain": "CC' = AA' nên C' = C + (4; 0; −1) = (11; −3; 8).",
+      "wrong_explain": {
+        "1": "(7; −3; 9) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "2": "(11; 3; 8) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "3": "(4; −3; 8) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục."
+      }
+    },
+    {
+      "id": "q15",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 5: để ABCD.A'B'C'D' là hình hộp, đỉnh D có toạ độ?",
+      "choices": [
+        "(5; −5; 6)",
+        "(5; 5; 6)",
+        "(−5; 5; 6)",
+        "(9; −5; 5)"
+      ],
+      "answer": 0,
+      "explain": "D = A + C − B = (1 + 7 − 3; 0 − 3 − 2; 2 + 9 − 5) = (5; −5; 6).",
+      "wrong_explain": {
+        "1": "(5; 5; 6) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "2": "(−5; 5; 6) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "3": "(9; −5; 5) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục."
+      }
+    },
+    {
+      "id": "q16",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 5: để ABCD.A'B'C'D' là hình hộp, đỉnh D' có toạ độ?",
+      "choices": [
+        "(9; −5; 5)",
+        "(5; −5; 6)",
+        "(9; 5; 5)",
+        "(4; −5; 5)"
+      ],
+      "answer": 0,
+      "explain": "D' = D + AA' = (5 + 4; −5 + 0; 6 − 1) = (9; −5; 5).",
+      "wrong_explain": {
+        "1": "(5; −5; 6) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "2": "(9; 5; 5) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "3": "(4; −5; 5) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục."
+      }
+    },
+    {
+      "id": "q17",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vận dụng 2: máy bay bay về phía nam trong nửa giờ với tốc độ 890 km/h (Oy hướng về phía nam, đơn vị km). Toạ độ vectơ dịch chuyển là?",
+      "choices": [
+        "(0; 445; 0)",
+        "(445; 0; 0)",
+        "(0; −445; 0)",
+        "(890; 0; 0)"
+      ],
+      "answer": 0,
+      "explain": "Quãng đường 890 · 0,5 = 445 km theo hướng +Oy (phía nam), không đổi trên Ox và Oz nên vectơ có toạ độ (0; 445; 0).",
+      "wrong_explain": {
+        "1": "(445; 0; 0) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "2": "(0; −445; 0) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "3": "(890; 0; 0) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục."
+      }
+    },
+    {
+      "id": "q18",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.13: ba vectơ a, b, c khác 0, đôi một vuông góc. Mệnh đề nào đúng?",
+      "choices": [
+        "a, b, d đúng; c sai",
+        "Chỉ c đúng",
+        "a và c đúng",
+        "Chỉ d đúng"
+      ],
+      "answer": 0,
+      "explain": "(a) và (b) đúng vì có thể chọn hệ trục song song hoặc trùng với giá. (d) đúng khi i, j, k cùng phương với a, b, c. (c) sai vì i, j, k có độ dài 1 còn a, b, c không nhất thiết.",
+      "wrong_explain": {
+        "1": "(c) không đúng vì cần độ dài bằng 1.",
+        "2": "(c) sai.",
+        "3": "(a), (b), (d) đều đúng."
+      }
+    },
+    {
+      "id": "q19",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.16a: điểm A trùng gốc toạ độ có toạ độ?",
+      "choices": [
+        "(0; 0; 0)",
+        "(1; 0; 0)",
+        "(0; 1; 0)",
+        "(0; 0; 1)"
+      ],
+      "answer": 0,
+      "explain": "A trùng O nên A = (0; 0; 0).",
+      "wrong_explain": {
+        "1": "(1; 0; 0) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "2": "(0; 1; 0) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "3": "(0; 0; 1) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục."
+      }
+    },
+    {
+      "id": "q20",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.16b: A nằm trên tia Ox và OA = 2 có toạ độ?",
+      "choices": [
+        "(2; 0; 0)",
+        "(0; 2; 0)",
+        "(0; 0; 2)",
+        "(−2; 0; 0)"
+      ],
+      "answer": 0,
+      "explain": "A thuộc tia Ox và OA = 2 nên A = (2; 0; 0).",
+      "wrong_explain": {
+        "1": "(0; 2; 0) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "2": "(0; 0; 2) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "3": "(−2; 0; 0) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục."
+      }
+    },
+    {
+      "id": "q21",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.16c: A nằm trên tia đối của tia Oy và OA = 3 có toạ độ?",
+      "choices": [
+        "(0; −3; 0)",
+        "(0; 3; 0)",
+        "(3; 0; 0)",
+        "(0; 0; −3)"
+      ],
+      "answer": 0,
+      "explain": "Tia đối của Oy có hướng âm nên A = (0; −3; 0).",
+      "wrong_explain": {
+        "1": "(0; 3; 0) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "2": "(3; 0; 0) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "3": "(0; 0; −3) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục."
+      }
+    },
+    {
+      "id": "q22",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.15a: vectơ AB với A(0; 0; 0), B(4; 2; −5) có toạ độ?",
+      "choices": [
+        "(4; 2; −5)",
+        "(−4; −2; 5)",
+        "(4; 2; 5)",
+        "(0; 0; −5)"
+      ],
+      "answer": 0,
+      "explain": "AB = (4 − 0; 2 − 0; −5 − 0) = (4; 2; −5).",
+      "wrong_explain": {
+        "1": "(−4; −2; 5) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "2": "(4; 2; 5) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "3": "(0; 0; −5) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục."
+      }
+    },
+    {
+      "id": "q23",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.15b: vectơ AB với A(1; −3; 7), B(1; −3; 7) có toạ độ?",
+      "choices": [
+        "(0; 0; 0)",
+        "(1; −3; 7)",
+        "(2; −6; 14)",
+        "(0; 0; 1)"
+      ],
+      "answer": 0,
+      "explain": "Hai điểm trùng nhau nên AB = 0 = (0; 0; 0).",
+      "wrong_explain": {
+        "1": "(1; −3; 7) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "2": "(2; −6; 14) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "3": "(0; 0; 1) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục."
+      }
+    },
+    {
+      "id": "q24",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.15c: vectơ AB với A(5; 4; 9), B(−5; 7; 2) có toạ độ?",
+      "choices": [
+        "(−10; 3; −7)",
+        "(10; −3; 7)",
+        "(−10; 11; 11)",
+        "(−10; 3; 7)"
+      ],
+      "answer": 0,
+      "explain": "AB = (−5 − 5; 7 − 4; 2 − 9) = (−10; 3; −7).",
+      "wrong_explain": {
+        "1": "(10; −3; 7) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "2": "(−10; 11; 11) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "3": "(−10; 3; 7) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục."
+      }
+    },
+    {
+      "id": "q25",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.17: hình hộp chữ nhật với A ≡ O, D(2; 0; 0), B(0; 4; 0), A'(0; 0; 3). Đỉnh C có toạ độ?",
+      "choices": [
+        "(2; 4; 0)",
+        "(4; 2; 0)",
+        "(2; 4; 3)",
+        "(0; 4; 2)"
+      ],
+      "answer": 0,
+      "explain": "C = D + B − A = (2; 4; 0).",
+      "wrong_explain": {
+        "1": "(4; 2; 0) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "2": "(2; 4; 3) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "3": "(0; 4; 2) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục."
+      }
+    },
+    {
+      "id": "q26",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.18a: hình hộp OABC.O'A'B'C' có A(1; 1; −1), B(0; 3; 0). Toạ độ đỉnh C là?",
+      "choices": [
+        "(−1; 2; 1)",
+        "(1; −1; 2)",
+        "(2; −1; 1)",
+        "(−1; 2; −1)"
+      ],
+      "answer": 0,
+      "explain": "Trong hình bình hành OABC, C = B − A = (−1; 2; 1).",
+      "wrong_explain": {
+        "1": "(1; −1; 2) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "2": "(2; −1; 1) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục.",
+        "3": "(−1; 2; −1) không đúng; xem lại cách xác định toạ độ từ các đoạn trên trục."
+      }
+    },
+    {
+      "id": "q27",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.19: vì sao máy bay khi chuyển động trên đường băng có toạ độ dạng (x; y; 0)?",
+      "choices": [
+        "Vì máy bay chạy trên mặt đất (mặt phẳng Oxy) nên z = 0",
+        "Vì mọi toạ độ đều bằng 0 khi máy bay ở độ cao 0",
+        "Vì trục Oz song song với đường băng",
+        "Không thể xác định"
+      ],
+      "answer": 0,
+      "explain": "Mặt đất là mặt phẳng (Oxy) nên cao độ z = 0.",
+      "wrong_explain": {
+        "1": "Chỉ cao độ z bằng 0, các toạ độ x, y có thể khác 0.",
+        "2": "Oz vuông góc với mặt đất, không song song với đường băng.",
+        "3": "Có thể xác định dựa vào hệ toạ độ chọn."
+      }
+    }
+  ]
+}
