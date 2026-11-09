@@ -1,0 +1,157 @@
+{
+  "id": "bai-25",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 2",
+  "chapter": "Chương VI. Phân số",
+  "lesson": "Bài 25. Phép cộng và phép trừ phân số",
+  "section": "",
+  "bookPage": 15,
+  "requirements": [
+    "Thực hiện cộng, trừ phân số; vận dụng tính chất để tính hợp lí; số đối của phân số."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cộng hai phân số cùng mẫu: cộng các tử, giữ nguyên mẫu. Khác mẫu: quy đồng mẫu rồi cộng."
+    },
+    {
+      "type": "formula",
+      "content": "a/m + b/m = (a + b)/m"
+    },
+    {
+      "type": "text",
+      "content": "Phép cộng phân số có tính chất giao hoán, kết hợp, cộng với 0. Hai phân số đối nhau có tổng bằng 0; số đối của a/b là −a/b."
+    },
+    {
+      "type": "formula",
+      "content": "a/b − c/d = a/b + (−c/d)"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính 1/4 + 5/6.",
+      "steps": [
+        "Quy đồng mẫu 12: 3/12 + 10/12.",
+        "= 13/12."
+      ],
+      "expr": "1/4+5/6",
+      "answer": "13/12"
+    },
+    {
+      "problem": "Dạng tính hợp lí: 2/7 + 3/5 + 5/7 − 3/5.",
+      "steps": [
+        "Nhóm (2/7 + 5/7) + (3/5 − 3/5).",
+        "= 1 + 0 = 1."
+      ],
+      "expr": "2/7+5/7",
+      "answer": "1"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số đối của −2/9 là:",
+      "choices": [
+        "−2/9",
+        "9/2",
+        "2/9",
+        "−9/2"
+      ],
+      "answer": 2,
+      "explain": "Tổng bằng 0.",
+      "wrong_explain": {
+        "0": "Đó là chính nó.",
+        "1": "Đó là số nghịch đảo của 2/9.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Muốn cộng hai phân số khác mẫu, trước hết ta:",
+      "choices": [
+        "Cộng tử với tử, mẫu với mẫu",
+        "Quy đồng mẫu",
+        "Nhân chéo",
+        "Rút gọn mẫu"
+      ],
+      "answer": 1,
+      "explain": "Quy đồng rồi cộng tử.",
+      "wrong_explain": {
+        "0": "Sai.",
+        "2": "Dùng để so sánh hoặc kiểm tra bằng nhau.",
+        "3": "Chưa đủ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 3/8 + 1/8.",
+      "expr": "3/8+1/8",
+      "answer": "0.5",
+      "explain": "= 4/8 = 1/2."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 2/3 − 1/6.",
+      "expr": "2/3-1/6",
+      "answer": "0.5",
+      "explain": "= 4/6 − 1/6 = 1/2."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính −3/4 + 1/2.",
+      "expr": "-3/4+1/2",
+      "answer": "-0.25",
+      "explain": "= −1/4."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 5/6 − 3/4.",
+      "expr": "5/6-3/4",
+      "answer": "1/12",
+      "explain": "= 10/12 − 9/12 = 1/12."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 1/2 + 1/3 + 1/6.",
+      "expr": "1/2+1/3+1/6",
+      "answer": "1",
+      "explain": "= 1."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm x biết x + 1/4 = 3/4.",
+      "expr": "3/4-1/4",
+      "answer": "0.5",
+      "explain": "x = 1/2."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vòi A chảy 1 giờ được 1/3 bể, vòi B được 1/4 bể. Cả hai vòi chảy 1 giờ được bao nhiêu phần bể?",
+      "expr": "1/3+1/4",
+      "answer": "7/12",
+      "explain": "= 7/12 bể."
+    }
+  ]
+}

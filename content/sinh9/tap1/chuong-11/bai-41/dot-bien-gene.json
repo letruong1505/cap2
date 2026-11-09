@@ -1,0 +1,157 @@
+{
+  "id": "bai-41",
+  "grade": 9,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 9",
+  "chapter": "Chương XI. Di truyền học Mendel. Cơ sở phân tử của hiện tượng di truyền",
+  "lesson": "Bài 41. Đột biến gene",
+  "section": "",
+  "bookPage": 178,
+  "requirements": [
+    "Nêu được khái niệm đột biến gene, các dạng; nguyên nhân; vai trò và tác hại."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đột biến gene là những biến đổi trong cấu trúc của gene, thường liên quan đến một hoặc một số cặp nucleotide. Các dạng: mất, thêm, thay thế một cặp nucleotide."
+    },
+    {
+      "type": "text",
+      "content": "Nguyên nhân: tác nhân vật lí (tia phóng xạ, tia UV), hoá học (chất độc hoá học), sinh học (virus) hoặc rối loạn trong quá trình tái bản DNA."
+    },
+    {
+      "type": "text",
+      "content": "Đột biến gene có thể có hại (gây bệnh hồng cầu hình liềm, bạch tạng), có lợi hoặc trung tính. Đột biến gene là nguồn nguyên liệu cho chọn giống và tiến hoá."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Gene có 3 000 nucleotide bị mất 1 cặp nucleotide. Số nucleotide sau đột biến?",
+      "steps": [
+        "3 000 − 2.",
+        "= 2 998."
+      ],
+      "expr": "3000-2",
+      "answer": "2998"
+    },
+    {
+      "problem": "Dạng tính liên kết hydrogen: thay một cặp A–T bằng G–C, số liên kết hydrogen tăng bao nhiêu?",
+      "steps": [
+        "A–T có 2, G–C có 3.",
+        "Tăng 1."
+      ],
+      "expr": "3-2",
+      "answer": "1"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đột biến gene là biến đổi:",
+      "choices": [
+        "Số lượng nhiễm sắc thể",
+        "Kiểu hình do môi trường",
+        "Trong cấu trúc của gene",
+        "Thức ăn"
+      ],
+      "answer": 2,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Đột biến NST.",
+        "1": "Thường biến.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Dạng nào là đột biến gene?",
+      "choices": [
+        "Mất một đoạn NST",
+        "Thay thế một cặp nucleotide",
+        "Thêm một NST",
+        "Đảo đoạn NST"
+      ],
+      "answer": 1,
+      "explain": "Các dạng.",
+      "wrong_explain": {
+        "0": "Đột biến NST.",
+        "2": "Đột biến số lượng.",
+        "3": "Đột biến NST."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tác nhân vật lí gây đột biến là:",
+      "choices": [
+        "Tia phóng xạ",
+        "Chất độc da cam",
+        "Virus",
+        "Thuốc trừ sâu"
+      ],
+      "answer": 0,
+      "explain": "Vật lí.",
+      "wrong_explain": {
+        "1": "Hoá học.",
+        "2": "Sinh học.",
+        "3": "Hoá học."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vai trò của đột biến gene trong tiến hoá là:",
+      "choices": [
+        "Luôn có hại",
+        "Không có vai trò",
+        "Làm mất loài",
+        "Nguồn nguyên liệu sơ cấp"
+      ],
+      "answer": 3,
+      "explain": "Nguồn biến dị.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Có.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Gene có 2 400 nucleotide được thêm 1 cặp nucleotide. Số nucleotide mới:",
+      "expr": "2402",
+      "answer": "2402",
+      "explain": "2 400 + 2."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thay một cặp G–C bằng A–T. Số liên kết hydrogen giảm:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "3 − 2."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Gene có 3 600 liên kết hydrogen, mất 1 cặp G–C. Số liên kết mới:",
+      "expr": "3597",
+      "answer": "3597",
+      "explain": "3 600 − 3."
+    }
+  ]
+}

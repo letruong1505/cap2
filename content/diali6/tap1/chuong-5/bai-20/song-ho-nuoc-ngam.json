@@ -1,0 +1,161 @@
+{
+  "id": "bai-20",
+  "grade": 6,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 6",
+  "chapter": "Chương 5. Nước trên Trái Đất",
+  "lesson": "Bài 20. Sông và hồ. Nước ngầm và băng hà",
+  "section": "",
+  "bookPage": 158,
+  "requirements": [
+    "Mô tả các bộ phận của dòng sông, lưu vực; mối quan hệ mùa lũ với nguồn cung cấp nước; vai trò của sông, hồ, nước ngầm, băng hà."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Sông là dòng chảy tự nhiên, thường xuyên, tương đối ổn định trên bề mặt lục địa. Hệ thống sông gồm sông chính, phụ lưu (đổ nước vào sông chính), chi lưu (thoát nước cho sông chính). Lưu vực sông là vùng đất cung cấp nước cho sông."
+    },
+    {
+      "type": "text",
+      "content": "Lưu lượng là lượng nước chảy qua mặt cắt ngang lòng sông trong 1 giây (m³/s). Chế độ nước (thuỷ chế) là nhịp điệu thay đổi lưu lượng trong năm; mùa lũ phụ thuộc nguồn cấp nước (mưa, băng tuyết tan)."
+    },
+    {
+      "type": "text",
+      "content": "Hồ là vùng trũng chứa nước trên bề mặt lục địa (hồ tự nhiên, hồ nhân tạo). Nước ngầm là nước nằm trong các lớp đất đá; băng hà chiếm phần lớn nước ngọt, tập trung ở vùng cực và núi cao."
+    },
+    {
+      "type": "text",
+      "content": "Sông, hồ cung cấp nước sinh hoạt, tưới tiêu, thuỷ điện, giao thông, du lịch, thuỷ sản."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Lưu lượng sông 5 000 m³/s. Trong 1 giờ chảy qua bao nhiêu m³?",
+      "steps": [
+        "5 000·3 600.",
+        "= 18 000 000 m³."
+      ],
+      "expr": "5000*3600",
+      "answer": "18000000"
+    },
+    {
+      "problem": "Dạng tính tỉ lệ mùa lũ: sông có tổng lượng nước năm 120 tỉ m³, mùa lũ chiếm 75%. Lượng nước mùa lũ?",
+      "steps": [
+        "120·75/100.",
+        "= 90 tỉ m³."
+      ],
+      "expr": "120*75/100",
+      "answer": "90"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phụ lưu là:",
+      "choices": [
+        "Sông thoát nước cho sông chính",
+        "Sông đổ nước vào sông chính",
+        "Hồ nhân tạo",
+        "Nước ngầm"
+      ],
+      "answer": 1,
+      "explain": "Phụ lưu.",
+      "wrong_explain": {
+        "0": "Chi lưu.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Lưu lượng nước sông là:",
+      "choices": [
+        "Lượng nước chảy qua mặt cắt ngang lòng sông trong 1 giây",
+        "Chiều dài sông",
+        "Độ sâu sông",
+        "Diện tích lưu vực"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hồ Hoà Bình là hồ:",
+      "choices": [
+        "Tự nhiên",
+        "Nước mặn",
+        "Băng hà",
+        "Nhân tạo"
+      ],
+      "answer": 3,
+      "explain": "Hồ thuỷ điện.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Mùa lũ của sông phụ thuộc chủ yếu vào:",
+      "choices": [
+        "Chiều dài sông",
+        "Màu nước",
+        "Nguồn cung cấp nước (mưa, băng tuyết tan)",
+        "Số cầu bắc qua"
+      ],
+      "answer": 2,
+      "explain": "Nguồn nước.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Sông có lưu lượng 2 000 m³/s. Trong 1 phút chảy qua bao nhiêu m³?",
+      "expr": "120000",
+      "answer": "120000",
+      "explain": "2 000·60."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Sông Hồng dài khoảng 1 149 km, phần chảy trên lãnh thổ Việt Nam khoảng 556 km. Phần chảy ngoài lãnh thổ (km):",
+      "expr": "593",
+      "answer": "593",
+      "explain": "1 149 − 556."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một hệ thống sông có 1 sông chính, 5 phụ lưu, 3 chi lưu. Tổng số sông:",
+      "expr": "9",
+      "answer": "9",
+      "explain": "9."
+    }
+  ]
+}

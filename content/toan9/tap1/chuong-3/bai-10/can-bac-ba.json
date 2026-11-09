@@ -1,0 +1,153 @@
+{
+  "id": "bai-10",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 1",
+  "chapter": "Chương III. Căn bậc hai và căn bậc ba",
+  "lesson": "Bài 10. Căn bậc ba và căn thức bậc ba",
+  "section": "",
+  "bookPage": 60,
+  "requirements": [
+    "Nhận biết căn bậc ba; tính căn bậc ba; nhận biết căn thức bậc ba."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Căn bậc ba của số thực a là số x sao cho x³ = a, kí hiệu ∛a. Mỗi số thực đều có duy nhất một căn bậc ba."
+    },
+    {
+      "type": "formula",
+      "content": "∛(a³) = a;   (∛a)³ = a"
+    },
+    {
+      "type": "text",
+      "content": "Căn bậc ba của số dương là số dương, của số âm là số âm, của 0 là 0. ∛A xác định với mọi giá trị của A."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính ∛27 + ∛(−8).",
+      "steps": [
+        "∛27 = 3; ∛(−8) = −2.",
+        "3 + (−2) = 1."
+      ],
+      "expr": "3-2",
+      "answer": "1"
+    },
+    {
+      "problem": "Dạng bài toán thực tế: một khối lập phương có thể tích 125 cm³. Cạnh dài bao nhiêu cm?",
+      "steps": [
+        "Cạnh = ∛125.",
+        "= 5 cm."
+      ],
+      "expr": "5",
+      "answer": "5"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "∛(−64) bằng:",
+      "choices": [
+        "4",
+        "−8",
+        "−4",
+        "Không xác định"
+      ],
+      "answer": 2,
+      "explain": "(−4)³ = −64.",
+      "wrong_explain": {
+        "0": "Căn bậc ba của số âm là số âm.",
+        "1": "(−8)³ = −512.",
+        "3": "Số âm có căn bậc ba."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Mỗi số thực có bao nhiêu căn bậc ba?",
+      "choices": [
+        "Hai",
+        "Đúng một",
+        "Không có nếu số âm",
+        "Vô số"
+      ],
+      "answer": 1,
+      "explain": "Duy nhất.",
+      "wrong_explain": {
+        "0": "Chỉ một.",
+        "2": "Vẫn có.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính ∛1000.",
+      "expr": "10",
+      "answer": "10",
+      "explain": "10."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính ∛(−125).",
+      "expr": "-5",
+      "answer": "-5",
+      "explain": "−5."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính ∛(0,008).",
+      "expr": "0.2",
+      "answer": "0.2",
+      "explain": "0,2."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính ∛(8/27). (nhập phân số)",
+      "expr": "2/3",
+      "answer": "2/3",
+      "explain": "2/3."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính ∛64 − ∛(−1).",
+      "expr": "4+1",
+      "answer": "5",
+      "explain": "5."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính (∛7)³.",
+      "expr": "7",
+      "answer": "7",
+      "explain": "7."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm x biết ∛x = −3.",
+      "expr": "-27",
+      "answer": "-27",
+      "explain": "x = −27."
+    }
+  ]
+}

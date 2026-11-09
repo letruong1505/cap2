@@ -1,0 +1,146 @@
+{
+  "id": "bai-26",
+  "grade": 6,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 6",
+  "chapter": "Chương VII. Đa dạng thế giới sống",
+  "lesson": "Bài 26. Khoá lưỡng phân",
+  "section": "",
+  "bookPage": 90,
+  "requirements": [
+    "Nhận biết khoá lưỡng phân; xây dựng được khoá lưỡng phân đơn giản."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khoá lưỡng phân là cách phân loại sinh vật dựa trên một đặc điểm đối lập để chia chúng thành hai nhóm. Tiếp tục làm như vậy cho đến khi mỗi nhóm chỉ còn một sinh vật."
+    },
+    {
+      "type": "text",
+      "content": "Cách xây dựng: liệt kê đặc điểm của từng sinh vật; chọn một đặc điểm để chia sinh vật thành hai nhóm (có – không có); tiếp tục chia mỗi nhóm cho đến khi xác định được từng sinh vật."
+    },
+    {
+      "type": "text",
+      "content": "Với n sinh vật, khoá lưỡng phân cần n − 1 bước phân chia (mỗi bước một cặp đặc điểm đối lập)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Xây dựng khoá lưỡng phân cho 4 sinh vật cần bao nhiêu cặp đặc điểm đối lập?",
+      "steps": [
+        "n − 1 với n = 4.",
+        "= 3."
+      ],
+      "expr": "4-1",
+      "answer": "3"
+    },
+    {
+      "problem": "Dạng đếm bước: khoá lưỡng phân có 7 cặp đặc điểm phân loại được bao nhiêu sinh vật?",
+      "steps": [
+        "n − 1 = 7.",
+        "n = 8."
+      ],
+      "expr": "7+1",
+      "answer": "8"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khoá lưỡng phân dựa trên:",
+      "choices": [
+        "Các cặp đặc điểm đối lập",
+        "Màu sắc duy nhất",
+        "Kích thước tuyệt đối",
+        "Tên địa phương"
+      ],
+      "answer": 0,
+      "explain": "Mỗi bước chia làm hai.",
+      "wrong_explain": {
+        "1": "Không đủ.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Cặp đặc điểm nào phù hợp dùng trong khoá lưỡng phân?",
+      "choices": [
+        "Màu đẹp – màu xấu",
+        "To – rất to",
+        "Đáng yêu – không đáng yêu",
+        "Có lông vũ – không có lông vũ"
+      ],
+      "answer": 3,
+      "explain": "Đối lập, rõ ràng.",
+      "wrong_explain": {
+        "0": "Chủ quan.",
+        "1": "Không rõ ràng.",
+        "2": "Chủ quan."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Kết thúc khoá lưỡng phân khi:",
+      "choices": [
+        "Còn hai nhóm",
+        "Hết thời gian",
+        "Mỗi nhóm chỉ còn một sinh vật",
+        "Có 3 nhóm"
+      ],
+      "answer": 2,
+      "explain": "Xác định được từng sinh vật.",
+      "wrong_explain": {
+        "0": "Chưa xong.",
+        "1": "Không.",
+        "3": "Chưa xong."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khoá lưỡng phân cho 6 sinh vật cần bao nhiêu bước?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "6 − 1."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khoá lưỡng phân 9 bước phân loại bao nhiêu sinh vật?",
+      "expr": "10",
+      "answer": "10",
+      "explain": "9 + 1."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bước 1 chia 8 sinh vật thành 2 nhóm bằng nhau. Mỗi nhóm có bao nhiêu sinh vật?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "8 : 2."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chim, cá, ếch, mèo: chia theo \"có lông vũ – không\"; nhóm không có lông vũ có bao nhiêu loài?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Cá, ếch, mèo."
+    }
+  ]
+}

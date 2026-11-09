@@ -1,0 +1,161 @@
+{
+  "id": "bai-36",
+  "grade": 6,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 6",
+  "chapter": "Chương VII. Đa dạng thế giới sống",
+  "lesson": "Bài 36. Động vật",
+  "section": "",
+  "bookPage": 125,
+  "requirements": [
+    "Phân biệt nhóm động vật không xương sống và có xương sống; đại diện các ngành, lớp; vai trò và tác hại của động vật."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Động vật là sinh vật nhân thực, đa bào, sống dị dưỡng, có khả năng di chuyển. Chia thành hai nhóm: không xương sống và có xương sống."
+    },
+    {
+      "type": "text",
+      "content": "Động vật không xương sống: ruột khoang (thuỷ tức, sứa, san hô), giun (giun đất, giun đũa, sán), thân mềm (ốc, trai, mực), chân khớp (tôm, cua, nhện, côn trùng)."
+    },
+    {
+      "type": "text",
+      "content": "Động vật có xương sống: cá, lưỡng cư (ếch, cóc), bò sát (rắn, thằn lằn, rùa), chim, thú (động vật có vú)."
+    },
+    {
+      "type": "text",
+      "content": "Vai trò: cung cấp thực phẩm, nguyên liệu, làm cảnh, thụ phấn, tiêu diệt sâu hại. Tác hại: truyền bệnh (muỗi, ruồi, chuột), phá hoại mùa màng, kí sinh (giun, sán)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dạng phân loại: trong \"tôm, cá chép, ốc sên, ếch, giun đất, chim sẻ\", có bao nhiêu động vật có xương sống?",
+      "steps": [
+        "Có xương sống: cá chép, ếch, chim sẻ.",
+        "Có 3."
+      ],
+      "expr": "3",
+      "answer": "3"
+    },
+    {
+      "problem": "Côn trùng có 6 chân. Có 5 con châu chấu, tổng số chân là bao nhiêu?",
+      "steps": [
+        "6·5.",
+        "= 30 chân."
+      ],
+      "expr": "6*5",
+      "answer": "30"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Động vật nào thuộc nhóm không xương sống?",
+      "choices": [
+        "Con cá",
+        "Con tôm",
+        "Con ếch",
+        "Con chim"
+      ],
+      "answer": 1,
+      "explain": "Chân khớp.",
+      "wrong_explain": {
+        "0": "Có xương sống.",
+        "2": "Có xương sống.",
+        "3": "Có xương sống."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Con ốc sên thuộc ngành:",
+      "choices": [
+        "Thân mềm",
+        "Chân khớp",
+        "Ruột khoang",
+        "Giun"
+      ],
+      "answer": 0,
+      "explain": "Thân mềm.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Con dơi thuộc lớp:",
+      "choices": [
+        "Chim",
+        "Bò sát",
+        "Lưỡng cư",
+        "Thú"
+      ],
+      "answer": 3,
+      "explain": "Có lông mao, nuôi con bằng sữa.",
+      "wrong_explain": {
+        "0": "Dơi không có lông vũ.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Động vật có hại vì truyền bệnh là:",
+      "choices": [
+        "Ong mật",
+        "Trâu",
+        "Muỗi",
+        "Mèo"
+      ],
+      "answer": 2,
+      "explain": "Truyền sốt rét, sốt xuất huyết.",
+      "wrong_explain": {
+        "0": "Có lợi.",
+        "1": "Có lợi.",
+        "3": "Có lợi."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lớp động vật có xương sống được học gồm cá, lưỡng cư, bò sát, chim, thú. Có bao nhiêu lớp?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "5."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nhện có 8 chân. 4 con nhện có bao nhiêu chân?",
+      "expr": "32",
+      "answer": "32",
+      "explain": "8·4."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong: sứa, giun đũa, mực, cua, cá heo – có bao nhiêu động vật không xương sống?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Trừ cá heo."
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "id": "bai-20",
+  "grade": 6,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 6",
+  "chapter": "Chương V. Tế bào",
+  "lesson": "Bài 20. Sự lớn lên và sinh sản của tế bào",
+  "section": "",
+  "bookPage": 70,
+  "requirements": [
+    "Mô tả sự lớn lên và sinh sản của tế bào; ý nghĩa của sự lớn lên và sinh sản."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tế bào lớn lên nhờ quá trình trao đổi chất, tăng dần kích thước. Khi đạt kích thước nhất định, tế bào thực hiện sinh sản (phân chia)."
+    },
+    {
+      "type": "text",
+      "content": "Quá trình phân chia: đầu tiên nhân phân chia, sau đó chất tế bào phân chia, hình thành hai tế bào con. Từ 1 tế bào sau một lần phân chia tạo 2 tế bào con."
+    },
+    {
+      "type": "formula",
+      "content": "Số tế bào sau n lần phân chia = 2ⁿ (từ 1 tế bào)"
+    },
+    {
+      "type": "text",
+      "content": "Ý nghĩa: sự lớn lên và sinh sản của tế bào giúp cơ thể lớn lên (tăng kích thước, khối lượng) và thay thế các tế bào già, chết, bị tổn thương."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một tế bào phân chia 3 lần liên tiếp tạo bao nhiêu tế bào con?",
+      "steps": [
+        "2³.",
+        "= 8 tế bào."
+      ],
+      "expr": "2*2*2",
+      "answer": "8"
+    },
+    {
+      "problem": "Dạng nhiều tế bào ban đầu: 5 tế bào cùng phân chia 4 lần tạo bao nhiêu tế bào?",
+      "steps": [
+        "5·2⁴.",
+        "= 80 tế bào."
+      ],
+      "expr": "5*16",
+      "answer": "80"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Một tế bào sau một lần phân chia tạo ra:",
+      "choices": [
+        "4 tế bào con",
+        "1 tế bào",
+        "2 tế bào con",
+        "3 tế bào"
+      ],
+      "answer": 2,
+      "explain": "Phân đôi.",
+      "wrong_explain": {
+        "0": "Sau 2 lần.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong quá trình phân chia tế bào, thành phần phân chia trước là:",
+      "choices": [
+        "Chất tế bào",
+        "Nhân",
+        "Màng tế bào",
+        "Thành tế bào"
+      ],
+      "answer": 1,
+      "explain": "Nhân phân chia trước.",
+      "wrong_explain": {
+        "0": "Phân chia sau.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Sự lớn lên và sinh sản của tế bào giúp:",
+      "choices": [
+        "Cơ thể lớn lên và thay thế tế bào già, chết",
+        "Cơ thể nhỏ lại",
+        "Ngừng trao đổi chất",
+        "Tế bào chết đi"
+      ],
+      "answer": 0,
+      "explain": "Ý nghĩa.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một tế bào phân chia 5 lần tạo bao nhiêu tế bào?",
+      "expr": "32",
+      "answer": "32",
+      "explain": "2⁵."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Từ 1 tế bào tạo 16 tế bào thì đã phân chia mấy lần?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "2⁴ = 16."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "3 tế bào phân chia 2 lần tạo bao nhiêu tế bào?",
+      "expr": "12",
+      "answer": "12",
+      "explain": "3·4."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vi khuẩn cứ 20 phút phân chia 1 lần. Sau 1 giờ từ 1 vi khuẩn có bao nhiêu vi khuẩn?",
+      "expr": "8",
+      "answer": "8",
+      "explain": "3 lần: 2³."
+    }
+  ]
+}

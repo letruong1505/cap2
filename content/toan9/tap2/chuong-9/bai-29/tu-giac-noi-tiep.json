@@ -1,0 +1,153 @@
+{
+  "id": "bai-29",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 2",
+  "chapter": "Chương IX. Đường tròn ngoại tiếp và đường tròn nội tiếp",
+  "lesson": "Bài 29. Tứ giác nội tiếp",
+  "section": "",
+  "bookPage": 80,
+  "requirements": [
+    "Nhận biết tứ giác nội tiếp; vận dụng tính chất tổng hai góc đối bằng 180°."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tứ giác nội tiếp là tứ giác có bốn đỉnh nằm trên một đường tròn."
+    },
+    {
+      "type": "formula",
+      "content": "Tứ giác nội tiếp ⇒ tổng hai góc đối bằng 180°"
+    },
+    {
+      "type": "text",
+      "content": "Ngược lại, tứ giác có tổng hai góc đối bằng 180° thì nội tiếp được đường tròn. Hình chữ nhật, hình vuông, hình thang cân đều là tứ giác nội tiếp; tâm đường tròn ngoại tiếp hình chữ nhật là giao điểm hai đường chéo."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tứ giác ABCD nội tiếp có góc A = 75°. Tính góc C.",
+      "steps": [
+        "A + C = 180°.",
+        "C = 105°."
+      ],
+      "expr": "180-75",
+      "answer": "105"
+    },
+    {
+      "problem": "Dạng hình chữ nhật nội tiếp: hình chữ nhật 6 × 8. Bán kính đường tròn ngoại tiếp?",
+      "steps": [
+        "Đường chéo = 10.",
+        "R = 5."
+      ],
+      "expr": "10/2",
+      "answer": "5"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tứ giác nội tiếp có tổng hai góc đối bằng:",
+      "choices": [
+        "90°",
+        "180°",
+        "360°",
+        "270°"
+      ],
+      "answer": 1,
+      "explain": "Tính chất.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Tổng bốn góc.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hình nào luôn nội tiếp được đường tròn?",
+      "choices": [
+        "Hình thang cân",
+        "Hình bình hành",
+        "Hình thoi",
+        "Tứ giác bất kì"
+      ],
+      "answer": 0,
+      "explain": "Hai góc kề đáy bằng nhau nên tổng góc đối 180°.",
+      "wrong_explain": {
+        "1": "Không luôn.",
+        "2": "Chỉ khi là hình vuông.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "ABCD nội tiếp, góc B = 110°. Góc D bằng:",
+      "expr": "70",
+      "answer": "70",
+      "explain": "70°."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "ABCD nội tiếp, góc A = 2·góc C. Góc A bằng:",
+      "expr": "120",
+      "answer": "120",
+      "explain": "3C = 180 ⇒ C = 60°, A = 120°."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình vuông cạnh 4 nội tiếp đường tròn bán kính R. Tính R².",
+      "expr": "8",
+      "answer": "8",
+      "explain": "Đường chéo 4√2, R = 2√2."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tứ giác có góc A = 85°, C = 95°. Tổng hai góc đối A + C là:",
+      "expr": "180",
+      "answer": "180",
+      "explain": "Nội tiếp được."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chữ nhật 5 × 12 nội tiếp đường tròn. R bằng:",
+      "expr": "6.5",
+      "answer": "6.5",
+      "explain": "Đường chéo 13."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "ABCD nội tiếp, góc ngoài tại C bằng 70°. Góc A bằng:",
+      "expr": "70",
+      "answer": "70",
+      "explain": "Góc ngoài tại C bằng góc A."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "ABCD nội tiếp, góc A = 3x, góc C = x. Tìm x.",
+      "expr": "45",
+      "answer": "45",
+      "explain": "4x = 180."
+    }
+  ]
+}

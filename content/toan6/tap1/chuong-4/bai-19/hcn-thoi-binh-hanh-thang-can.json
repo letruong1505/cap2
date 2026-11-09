@@ -1,0 +1,168 @@
+{
+  "id": "bai-19",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương IV. Một số hình phẳng trong thực tiễn",
+  "lesson": "Bài 19. Hình chữ nhật. Hình thoi. Hình bình hành. Hình thang cân",
+  "section": "",
+  "bookPage": 83,
+  "requirements": [
+    "Nhận dạng và mô tả các yếu tố cơ bản của hình chữ nhật, hình thoi, hình bình hành, hình thang cân."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hình chữ nhật: bốn góc vuông; các cạnh đối song song và bằng nhau; hai đường chéo bằng nhau."
+    },
+    {
+      "type": "text",
+      "content": "Hình thoi: bốn cạnh bằng nhau; các cạnh đối song song; hai đường chéo vuông góc với nhau; các góc đối bằng nhau."
+    },
+    {
+      "type": "text",
+      "content": "Hình bình hành: các cạnh đối song song và bằng nhau; các góc đối bằng nhau; hai đường chéo cắt nhau tại trung điểm mỗi đường."
+    },
+    {
+      "type": "text",
+      "content": "Hình thang cân: hai cạnh đáy song song; hai cạnh bên bằng nhau; hai đường chéo bằng nhau; hai góc kề một đáy bằng nhau."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hình thoi có cạnh 6 cm. Tính chu vi.",
+      "steps": [
+        "Chu vi = 4 × cạnh.",
+        "4·6 = 24 cm."
+      ],
+      "expr": "4*6",
+      "answer": "24"
+    },
+    {
+      "problem": "Dạng chu vi hình bình hành: hai cạnh kề là 8 cm và 5 cm.",
+      "steps": [
+        "Chu vi = 2 × (a + b).",
+        "2·(8 + 5) = 26 cm."
+      ],
+      "expr": "2*(8+5)",
+      "answer": "26"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hình có hai đường chéo vuông góc với nhau là:",
+      "choices": [
+        "Hình chữ nhật",
+        "Hình thoi",
+        "Hình bình hành",
+        "Hình thang cân"
+      ],
+      "answer": 1,
+      "explain": "Hình thoi có hai đường chéo vuông góc.",
+      "wrong_explain": {
+        "0": "Hai đường chéo bằng nhau nhưng không nhất thiết vuông góc.",
+        "2": "Không nhất thiết vuông góc.",
+        "3": "Không nhất thiết vuông góc."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hình thang cân có:",
+      "choices": [
+        "Hai cạnh bên bằng nhau, hai đường chéo bằng nhau",
+        "Bốn cạnh bằng nhau",
+        "Bốn góc vuông",
+        "Hai đường chéo vuông góc"
+      ],
+      "answer": 0,
+      "explain": "Đặc điểm của hình thang cân.",
+      "wrong_explain": {
+        "1": "Đó là hình thoi.",
+        "2": "Đó là hình chữ nhật.",
+        "3": "Không nhất thiết."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trong hình bình hành, hai đường chéo:",
+      "choices": [
+        "Luôn bằng nhau",
+        "Luôn vuông góc",
+        "Song song",
+        "Cắt nhau tại trung điểm của mỗi đường"
+      ],
+      "answer": 3,
+      "explain": "Tính chất hình bình hành.",
+      "wrong_explain": {
+        "0": "Chỉ hình chữ nhật.",
+        "1": "Chỉ hình thoi.",
+        "2": "Cắt nhau."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chữ nhật dài 12 cm, rộng 7 cm. Chu vi bằng bao nhiêu cm?",
+      "expr": "2*(12+7)",
+      "answer": "38",
+      "explain": "38 cm."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình thoi có chu vi 36 cm. Cạnh dài bao nhiêu cm?",
+      "expr": "36/4",
+      "answer": "9",
+      "explain": "9 cm."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chữ nhật có đường chéo AC = 10 cm. Đường chéo BD dài bao nhiêu cm?",
+      "expr": "10",
+      "answer": "10",
+      "explain": "Hai đường chéo bằng nhau."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình thang cân có đáy lớn 10 cm, đáy nhỏ 6 cm, cạnh bên 4 cm. Chu vi bằng:",
+      "expr": "10+6+4+4",
+      "answer": "24",
+      "explain": "24 cm."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình bình hành ABCD có AB = 7 cm, BC = 4 cm. Chu vi là:",
+      "expr": "2*(7+4)",
+      "answer": "22",
+      "explain": "22 cm."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình chữ nhật có chu vi 50 cm, chiều dài 15 cm. Chiều rộng là:",
+      "expr": "50/2-15",
+      "answer": "10",
+      "explain": "10 cm."
+    }
+  ]
+}

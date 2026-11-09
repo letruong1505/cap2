@@ -1,0 +1,157 @@
+{
+  "id": "bai-17",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 1",
+  "chapter": "Chương V. Đường tròn",
+  "lesson": "Bài 17. Vị trí tương đối của hai đường tròn",
+  "section": "",
+  "bookPage": 110,
+  "requirements": [
+    "Nhận biết vị trí tương đối của hai đường tròn qua đoạn nối tâm và bán kính."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cho (O; R) và (O′; r), R ≥ r, d = OO′. Hai đường tròn cắt nhau (2 điểm chung) khi R − r < d < R + r."
+    },
+    {
+      "type": "text",
+      "content": "Tiếp xúc ngoài khi d = R + r; tiếp xúc trong khi d = R − r > 0 (1 điểm chung)."
+    },
+    {
+      "type": "text",
+      "content": "Không giao nhau: ở ngoài nhau khi d > R + r; đựng nhau khi d < R − r; đồng tâm khi d = 0."
+    },
+    {
+      "type": "text",
+      "content": "Hai đường tròn cắt nhau thì đường nối tâm là đường trung trực của dây chung."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "(O; 5) và (O′; 3), OO′ = 8. Vị trí? Tính R + r.",
+      "steps": [
+        "R + r = 8 = d.",
+        "Tiếp xúc ngoài."
+      ],
+      "expr": "5+3",
+      "answer": "8"
+    },
+    {
+      "problem": "Dạng xác định vị trí: R = 7, r = 4, d = 5. Tính R − r để so sánh.",
+      "steps": [
+        "R − r = 3 < 5 < 11 = R + r.",
+        "Hai đường tròn cắt nhau."
+      ],
+      "expr": "7-4",
+      "answer": "3"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hai đường tròn tiếp xúc ngoài khi:",
+      "choices": [
+        "d = R + r",
+        "d = R − r",
+        "d > R + r",
+        "d < R − r"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Tiếp xúc trong.",
+        "2": "Ở ngoài nhau.",
+        "3": "Đựng nhau."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hai đường tròn cắt nhau có bao nhiêu điểm chung?",
+      "choices": [
+        "1",
+        "0",
+        "3",
+        "2"
+      ],
+      "answer": 3,
+      "explain": "Hai điểm chung.",
+      "wrong_explain": {
+        "0": "Đó là tiếp xúc.",
+        "1": "Không giao nhau.",
+        "2": "Không thể."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "R = 6, r = 2, d = 4. Số điểm chung là:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "d = R − r: tiếp xúc trong."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "R = 5, r = 3, d = 10. Số điểm chung là:",
+      "expr": "0",
+      "answer": "0",
+      "explain": "d > R + r."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "R = 9, r = 4, d = 7. Số điểm chung là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "5 < 7 < 13."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai đường tròn tiếp xúc ngoài, R = 7, r = 5. Khoảng cách hai tâm là:",
+      "expr": "12",
+      "answer": "12",
+      "explain": "12."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai đường tròn tiếp xúc trong, R = 10, r = 4. Khoảng cách hai tâm là:",
+      "expr": "6",
+      "answer": "6",
+      "explain": "6."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "R = 8, r = 3, d = 2. Số điểm chung là:",
+      "expr": "0",
+      "answer": "0",
+      "explain": "d < R − r: đựng nhau."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai đường tròn đồng tâm có khoảng cách hai tâm là:",
+      "expr": "0",
+      "answer": "0",
+      "explain": "0."
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "id": "bai-22",
+  "grade": 6,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 6",
+  "chapter": "Chương VI. Từ tế bào đến cơ thể",
+  "lesson": "Bài 22. Cơ thể sinh vật",
+  "section": "",
+  "bookPage": 76,
+  "requirements": [
+    "Phân biệt vật sống và vật không sống; nhận biết cơ thể đơn bào và cơ thể đa bào."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cơ thể sinh vật là một vật sống, có các quá trình sống cơ bản: cảm ứng và vận động, sinh trưởng, sinh sản, hô hấp, bài tiết, dinh dưỡng."
+    },
+    {
+      "type": "text",
+      "content": "Cơ thể đơn bào được cấu tạo từ một tế bào; tế bào đó thực hiện mọi chức năng sống (vi khuẩn, trùng roi, tảo lục đơn bào, nấm men)."
+    },
+    {
+      "type": "text",
+      "content": "Cơ thể đa bào được cấu tạo từ nhiều tế bào; mỗi loại tế bào thực hiện chức năng khác nhau (cây xoài, con chó, con người, nấm rơm)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dạng phân loại: trong \"vi khuẩn, cây lúa, trùng giày, con mèo, nấm men\", có bao nhiêu cơ thể đơn bào?",
+      "steps": [
+        "Đơn bào: vi khuẩn, trùng giày, nấm men.",
+        "Có 3."
+      ],
+      "expr": "3",
+      "answer": "3"
+    },
+    {
+      "problem": "Một cơ thể đa bào có 1 000 tế bào, 30% là tế bào biểu bì. Số tế bào biểu bì?",
+      "steps": [
+        "1 000·30/100.",
+        "= 300."
+      ],
+      "expr": "1000*30/100",
+      "answer": "300"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Cơ thể đơn bào là cơ thể:",
+      "choices": [
+        "Được cấu tạo từ một tế bào",
+        "Gồm nhiều tế bào",
+        "Không có tế bào",
+        "Chỉ là thực vật"
+      ],
+      "answer": 0,
+      "explain": "Một tế bào thực hiện mọi chức năng.",
+      "wrong_explain": {
+        "1": "Đa bào.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Sinh vật nào là cơ thể đa bào?",
+      "choices": [
+        "Trùng roi",
+        "Vi khuẩn lao",
+        "Nấm men",
+        "Cây hoa hồng"
+      ],
+      "answer": 3,
+      "explain": "Nhiều tế bào.",
+      "wrong_explain": {
+        "0": "Đơn bào.",
+        "1": "Đơn bào.",
+        "2": "Đơn bào."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Quá trình nào không phải quá trình sống của cơ thể?",
+      "choices": [
+        "Sinh sản",
+        "Hô hấp",
+        "Bị bào mòn bởi gió",
+        "Bài tiết"
+      ],
+      "answer": 2,
+      "explain": "Vật không sống cũng bị bào mòn.",
+      "wrong_explain": {
+        "0": "Có.",
+        "1": "Có.",
+        "3": "Có."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong: tảo lục đơn bào, cây rêu, con giun, trùng biến hình – có bao nhiêu cơ thể đa bào?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Cây rêu, con giun."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong: sinh sản, cảm ứng, hô hấp, dinh dưỡng, bài tiết, sinh trưởng – có bao nhiêu quá trình sống?",
+      "expr": "6",
+      "answer": "6",
+      "explain": "Cả 6."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trùng giày (đơn bào) có bao nhiêu tế bào?",
+      "expr": "1",
+      "answer": "1",
+      "explain": "1 tế bào."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một con thuỷ tức có khoảng 100 000 tế bào. Viết số tế bào theo nghìn (nhập 100).",
+      "expr": "100",
+      "answer": "100",
+      "explain": "100 nghìn."
+    }
+  ]
+}

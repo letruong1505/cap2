@@ -1,0 +1,150 @@
+{
+  "id": "bai-43",
+  "grade": 6,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 6",
+  "chapter": "Chương VIII. Lực trong đời sống",
+  "lesson": "Bài 43. Trọng lượng, lực hấp dẫn",
+  "section": "",
+  "bookPage": 154,
+  "requirements": [
+    "Nêu được khái niệm khối lượng, lực hấp dẫn, trọng lượng; đơn vị và cách tính trọng lượng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khối lượng là số đo lượng chất của vật. Lực hấp dẫn là lực hút giữa các vật có khối lượng."
+    },
+    {
+      "type": "text",
+      "content": "Trọng lượng của vật là độ lớn lực hút của Trái Đất tác dụng lên vật. Trọng lực có phương thẳng đứng, chiều từ trên xuống dưới."
+    },
+    {
+      "type": "formula",
+      "content": "P = 10·m   (P: trọng lượng tính bằng N, m: khối lượng tính bằng kg)"
+    },
+    {
+      "type": "text",
+      "content": "Trên Mặt Trăng, lực hút nhỏ hơn trên Trái Đất khoảng 6 lần nên trọng lượng của vật nhỏ hơn, còn khối lượng không đổi."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính trọng lượng của vật có khối lượng 5 kg.",
+      "steps": [
+        "P = 10·m.",
+        "= 50 N."
+      ],
+      "expr": "10*5",
+      "answer": "50"
+    },
+    {
+      "problem": "Dạng tìm khối lượng: vật có trọng lượng 3 N thì khối lượng bao nhiêu gam?",
+      "steps": [
+        "m = P : 10 = 0,3 kg.",
+        "= 300 g."
+      ],
+      "expr": "3*1000/10",
+      "answer": "300"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trọng lực có phương và chiều:",
+      "choices": [
+        "Nằm ngang, từ trái sang phải",
+        "Thẳng đứng, từ trên xuống dưới",
+        "Thẳng đứng, từ dưới lên",
+        "Bất kì"
+      ],
+      "answer": 1,
+      "explain": "Hướng về tâm Trái Đất.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Ngược lại.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Lực hấp dẫn là:",
+      "choices": [
+        "Lực hút giữa các vật có khối lượng",
+        "Lực đẩy giữa các vật",
+        "Lực từ",
+        "Lực ma sát"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi đưa một vật lên Mặt Trăng:",
+      "choices": [
+        "Khối lượng giảm",
+        "Trọng lượng tăng",
+        "Cả hai không đổi",
+        "Trọng lượng giảm, khối lượng không đổi"
+      ],
+      "answer": 3,
+      "explain": "Lực hút Mặt Trăng yếu hơn.",
+      "wrong_explain": {
+        "0": "Khối lượng không đổi.",
+        "1": "Giảm.",
+        "2": "Trọng lượng giảm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật có khối lượng 2,5 kg có trọng lượng (N):",
+      "expr": "25",
+      "answer": "25",
+      "explain": "25 N."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật có trọng lượng 80 N có khối lượng (kg):",
+      "expr": "8",
+      "answer": "8",
+      "explain": "8 kg."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Túi gạo 500 g có trọng lượng (N):",
+      "expr": "5",
+      "answer": "5",
+      "explain": "0,5 kg·10."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một người 60 kg có trọng lượng (N):",
+      "expr": "600",
+      "answer": "600",
+      "explain": "600 N."
+    }
+  ]
+}

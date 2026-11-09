@@ -379,15 +379,20 @@ async function openLesson(relPath, mode = 'practice') {
 
 // Màn hình khởi động: chọn lớp, thông tin bản quyền và khu vực quảng cáo.
 const GRADES = [
-  { grade: 6, available: false },
+  { grade: 6, available: true },
   { grade: 7, available: true },
   { grade: 8, available: true },
-  { grade: 9, available: false },
+  { grade: 9, available: true },
 ];
+// Các môn của từng lớp.
+const SUBJECT_BASE = { toan: 'Toán', ly: 'Vật lí', hoa: 'Hoá học', sinh: 'Sinh học', lichsu: 'Lịch sử', diali: 'Địa lí' };
+const GRADE_SUBJECTS = {};
+const SUBJECT_LABELS = {};
+for (const g of [6, 7, 8, 9]) {
+  GRADE_SUBJECTS[g] = Object.keys(SUBJECT_BASE).map((k) => k + g);
+  for (const k of Object.keys(SUBJECT_BASE)) SUBJECT_LABELS[k + g] = SUBJECT_BASE[k];
+}
 // Mục lục của từng môn, nạp một lần khi mở app.
-const SUBJECT_LABELS = { toan7: 'Toán', ly7: 'Vật lí', hoa7: 'Hoá học', sinh7: 'Sinh học', lichsu7: 'Lịch sử', diali7: 'Địa lí', toan8: 'Toán', ly8: 'Vật lí', hoa8: 'Hoá học', sinh8: 'Sinh học' };
-// Môn học đã có nội dung của từng lớp.
-const GRADE_SUBJECTS = { 7: ['toan7', 'ly7', 'hoa7', 'sinh7', 'lichsu7', 'diali7'], 8: ['toan8', 'ly8', 'hoa8', 'sinh8'] };
 const manifestCache = {};
 
 function licenseDaysLeft(expiresOn) {

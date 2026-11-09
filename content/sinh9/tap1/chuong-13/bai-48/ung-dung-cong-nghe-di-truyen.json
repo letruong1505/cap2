@@ -1,0 +1,161 @@
+{
+  "id": "bai-48",
+  "grade": 9,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 9",
+  "chapter": "Chương XIII. Di truyền học với con người và đời sống",
+  "lesson": "Bài 48. Ứng dụng công nghệ di truyền vào đời sống",
+  "section": "",
+  "bookPage": 207,
+  "requirements": [
+    "Nêu được khái niệm công nghệ di truyền; ứng dụng trong nông nghiệp, y học, pháp y, bảo vệ môi trường; vấn đề đạo đức sinh học."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Công nghệ di truyền là quy trình kĩ thuật dựa trên các nguyên lí di truyền để tạo ra sinh vật mang đặc điểm mới hoặc sản phẩm có giá trị. Kĩ thuật chuyển gene: chuyển gene từ tế bào này sang tế bào khác."
+    },
+    {
+      "type": "text",
+      "content": "Nông nghiệp: tạo giống cây trồng biến đổi gene (lúa vàng giàu tiền vitamin A, ngô kháng sâu), vật nuôi năng suất cao."
+    },
+    {
+      "type": "text",
+      "content": "Y học: sản xuất insulin, vaccine, hormone tăng trưởng nhờ vi khuẩn chuyển gene; liệu pháp gene. Pháp y: phân tích DNA xác định quan hệ huyết thống, nhận dạng tội phạm."
+    },
+    {
+      "type": "text",
+      "content": "Môi trường: tạo vi sinh vật phân huỷ chất thải, dầu loang. Đạo đức sinh học: cần đảm bảo an toàn sinh học, tôn trọng quyền con người khi ứng dụng công nghệ di truyền."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một vi khuẩn chuyển gene sản xuất insulin phân chia 20 phút/lần. Sau 2 giờ từ 1 vi khuẩn có bao nhiêu?",
+      "steps": [
+        "6 lần phân chia.",
+        "2⁶ = 64."
+      ],
+      "expr": "64",
+      "answer": "64"
+    },
+    {
+      "problem": "Dạng năng suất: giống lúa biến đổi gene tăng 20% so với 6 tấn/ha. Năng suất mới?",
+      "steps": [
+        "6·120/100.",
+        "= 7,2 tấn/ha."
+      ],
+      "expr": "6*120/100",
+      "answer": "7.2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kĩ thuật chuyển gene là:",
+      "choices": [
+        "Lai hai giống thuần chủng",
+        "Gây đột biến NST",
+        "Chuyển gene từ tế bào này sang tế bào khác",
+        "Nhân giống vô tính"
+      ],
+      "answer": 2,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Lai giống truyền thống.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Insulin chữa bệnh tiểu đường được sản xuất nhờ:",
+      "choices": [
+        "Chiết từ cây lúa",
+        "Vi khuẩn được chuyển gene insulin người",
+        "Tổng hợp hoá học từ dầu mỏ",
+        "Từ nấm men tự nhiên"
+      ],
+      "answer": 1,
+      "explain": "Ứng dụng y học.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không chủ yếu.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Phân tích DNA trong pháp y dùng để:",
+      "choices": [
+        "Xác định quan hệ huyết thống, nhận dạng cá nhân",
+        "Chữa bệnh",
+        "Tạo giống mới",
+        "Sản xuất vaccine"
+      ],
+      "answer": 0,
+      "explain": "Pháp y.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Một vấn đề đạo đức sinh học cần quan tâm là:",
+      "choices": [
+        "Tăng giá thực phẩm",
+        "Màu sắc cây trồng",
+        "Tên giống cây",
+        "An toàn của sinh vật biến đổi gene đối với con người, môi trường"
+      ],
+      "answer": 3,
+      "explain": "An toàn sinh học.",
+      "wrong_explain": {
+        "0": "Không phải đạo đức sinh học chính.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vi khuẩn chuyển gene phân chia 30 phút/lần. Sau 3 giờ từ 1 vi khuẩn có bao nhiêu?",
+      "expr": "64",
+      "answer": "64",
+      "explain": "2⁶."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giống ngô kháng sâu giảm 50% lượng thuốc trừ sâu so với 40 lít/ha. Lượng thuốc mới (lít/ha):",
+      "expr": "20",
+      "answer": "20",
+      "explain": "40·50%."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong: insulin, vaccine, lúa vàng, thuốc kháng sinh tự nhiên từ nấm – có bao nhiêu sản phẩm nhờ công nghệ di truyền?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Insulin, vaccine, lúa vàng."
+    }
+  ]
+}

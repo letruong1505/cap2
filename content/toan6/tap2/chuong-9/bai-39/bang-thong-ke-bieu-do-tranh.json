@@ -1,0 +1,153 @@
+{
+  "id": "bai-39",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 2",
+  "chapter": "Chương IX. Dữ liệu và xác suất thực nghiệm",
+  "lesson": "Bài 39. Bảng thống kê và biểu đồ tranh",
+  "section": "",
+  "bookPage": 72,
+  "requirements": [
+    "Đọc và lập bảng thống kê, biểu đồ tranh; rút ra thông tin từ bảng, biểu đồ."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Bảng thống kê gồm các hàng và cột, biểu diễn dữ liệu một cách ngắn gọn, dễ so sánh. Bảng thường có dòng tiêu đề và dòng số liệu tương ứng."
+    },
+    {
+      "type": "text",
+      "content": "Biểu đồ tranh dùng biểu tượng hoặc hình ảnh để biểu diễn dữ liệu. Mỗi biểu tượng ứng với một số lượng nhất định (ghi chú ở dưới biểu đồ). Nửa biểu tượng ứng với một nửa số lượng đó."
+    },
+    {
+      "type": "text",
+      "content": "Khi đọc biểu đồ tranh: đếm số biểu tượng ở mỗi dòng rồi nhân với giá trị của một biểu tượng."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Biểu đồ tranh: mỗi hình quyển sách ứng với 10 quyển. Lớp 6A có 4 hình rưỡi. Lớp 6A quyên góp bao nhiêu quyển?",
+      "steps": [
+        "4,5·10.",
+        "= 45 quyển."
+      ],
+      "expr": "4.5*10",
+      "answer": "45"
+    },
+    {
+      "problem": "Dạng so sánh từ biểu đồ tranh: mỗi biểu tượng 5 bạn; nhóm A 6 biểu tượng, nhóm B 4 biểu tượng. A nhiều hơn B bao nhiêu bạn?",
+      "steps": [
+        "(6 − 4)·5.",
+        "= 10 bạn."
+      ],
+      "expr": "(6-4)*5",
+      "answer": "10"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong biểu đồ tranh, mỗi biểu tượng ứng với:",
+      "choices": [
+        "Luôn 1 đơn vị",
+        "Luôn 10 đơn vị",
+        "Không có giá trị",
+        "Một số lượng được ghi chú"
+      ],
+      "answer": 3,
+      "explain": "Đọc chú thích.",
+      "wrong_explain": {
+        "0": "Phụ thuộc chú thích.",
+        "1": "Phụ thuộc chú thích.",
+        "2": "Có giá trị."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Ưu điểm của bảng thống kê là:",
+      "choices": [
+        "Có nhiều hình ảnh",
+        "Không cần số liệu",
+        "Trình bày dữ liệu ngắn gọn, dễ so sánh",
+        "Khó đọc"
+      ],
+      "answer": 2,
+      "explain": "Bảng giúp so sánh dễ.",
+      "wrong_explain": {
+        "0": "Đó là biểu đồ tranh.",
+        "1": "Cần số liệu.",
+        "3": "Ngược lại."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mỗi biểu tượng ứng với 4 học sinh. Có 7 biểu tượng. Số học sinh là:",
+      "expr": "28",
+      "answer": "28",
+      "explain": "28."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mỗi biểu tượng ứng với 20 kg, có 3 biểu tượng rưỡi. Khối lượng là:",
+      "expr": "70",
+      "answer": "70",
+      "explain": "70 kg."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bảng: Thứ Hai bán 25 chiếc, Thứ Ba 30, Thứ Tư 45. Tổng ba ngày bán:",
+      "expr": "100",
+      "answer": "100",
+      "explain": "100 chiếc."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Từ bảng trên, Thứ Tư bán nhiều hơn Thứ Hai bao nhiêu chiếc?",
+      "expr": "20",
+      "answer": "20",
+      "explain": "20 chiếc."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Biểu đồ tranh mỗi hình = 50 cây. Muốn biểu diễn 225 cây cần bao nhiêu hình?",
+      "expr": "4.5",
+      "answer": "4.5",
+      "explain": "4 hình rưỡi."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mỗi biểu tượng = 10 lít, lớp A 6 biểu tượng, lớp B 8 biểu tượng. Tổng là:",
+      "expr": "140",
+      "answer": "140",
+      "explain": "140 lít."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bảng điểm: 5 điểm có 2 bạn, 7 điểm 5 bạn, 9 điểm 3 bạn. Tổng số bạn là:",
+      "expr": "10",
+      "answer": "10",
+      "explain": "10 bạn."
+    }
+  ]
+}

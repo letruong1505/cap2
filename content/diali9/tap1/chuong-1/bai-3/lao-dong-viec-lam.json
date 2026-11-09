@@ -1,0 +1,156 @@
+{
+  "id": "bai-3",
+  "grade": 9,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 9",
+  "chapter": "Chương 1. Địa lí dân cư Việt Nam",
+  "lesson": "Bài 3. Lao động và việc làm",
+  "section": "",
+  "bookPage": 123,
+  "requirements": [
+    "Trình bày được đặc điểm nguồn lao động, sự chuyển dịch cơ cấu lao động; vấn đề việc làm ở nước ta."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nguồn lao động dồi dào (khoảng 52 triệu người năm 2023), mỗi năm tăng thêm khoảng 1 triệu. Người lao động cần cù, sáng tạo, có kinh nghiệm sản xuất; chất lượng lao động đang được nâng lên nhưng tỉ lệ lao động qua đào tạo còn thấp."
+    },
+    {
+      "type": "text",
+      "content": "Cơ cấu lao động chuyển dịch: giảm tỉ trọng nông, lâm, thuỷ sản; tăng tỉ trọng công nghiệp – xây dựng và dịch vụ."
+    },
+    {
+      "type": "text",
+      "content": "Việc làm là vấn đề kinh tế – xã hội lớn: thất nghiệp ở thành thị, thiếu việc làm ở nông thôn. Giải pháp: phân bố lại dân cư và lao động, đa dạng hoá hoạt động kinh tế, đẩy mạnh đào tạo nghề, xuất khẩu lao động."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Có 52 triệu lao động, khu vực nông – lâm – thuỷ sản chiếm 27%. Khu vực này có bao nhiêu triệu lao động (làm tròn 1 chữ số thập phân)?",
+      "steps": [
+        "52 · 27 : 100.",
+        "≈ 14,0 triệu."
+      ],
+      "expr": "52*27/100",
+      "answer": "14.04"
+    },
+    {
+      "problem": "Dạng tính chuyển dịch: tỉ trọng lao động nông nghiệp giảm từ 49% (2010) xuống 27% (2023). Giảm bao nhiêu điểm %?",
+      "steps": [
+        "49 − 27 = 22."
+      ],
+      "expr": "49-27",
+      "answer": "22"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thế mạnh của nguồn lao động nước ta là:",
+      "choices": [
+        "Dồi dào, cần cù, sáng tạo",
+        "Toàn bộ đã qua đào tạo",
+        "Rất ít",
+        "Không có kinh nghiệm"
+      ],
+      "answer": 0,
+      "explain": "Thế mạnh.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Cơ cấu lao động nước ta chuyển dịch theo hướng:",
+      "choices": [
+        "Tăng nông nghiệp",
+        "Không đổi",
+        "Giảm dịch vụ",
+        "Giảm nông nghiệp, tăng công nghiệp – xây dựng và dịch vụ"
+      ],
+      "answer": 3,
+      "explain": "Chuyển dịch.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "1": "Sai.",
+        "2": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vấn đề nổi bật ở nông thôn là:",
+      "choices": [
+        "Thất nghiệp cao nhất",
+        "Thiếu đất ở",
+        "Thiếu việc làm",
+        "Thừa nhà máy"
+      ],
+      "answer": 2,
+      "explain": "Nông thôn.",
+      "wrong_explain": {
+        "0": "Thành thị.",
+        "1": "Không phải chính.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Giải pháp giải quyết việc làm là:",
+      "choices": [
+        "Hạn chế mọi ngành",
+        "Đa dạng hoá hoạt động kinh tế, đào tạo nghề",
+        "Tăng dân số nhanh",
+        "Ngừng đào tạo"
+      ],
+      "answer": 1,
+      "explain": "Giải pháp.",
+      "wrong_explain": {
+        "0": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có 52 triệu lao động, tỉ lệ đã qua đào tạo có bằng cấp 25%. Số lao động qua đào tạo là bao nhiêu triệu?",
+      "expr": "52*25/100",
+      "answer": "13",
+      "explain": "13."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mỗi năm có thêm 1 triệu lao động. Sau 5 năm thêm bao nhiêu triệu?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "5."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tỉ trọng lao động dịch vụ 39%, công nghiệp – xây dựng 34%. Tỉ trọng nông – lâm – thuỷ sản là bao nhiêu %?",
+      "expr": "100-39-34",
+      "answer": "27",
+      "explain": "27."
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "id": "bai-16",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 1",
+  "chapter": "Chương V. Đường tròn",
+  "lesson": "Bài 16. Vị trí tương đối của đường thẳng và đường tròn",
+  "section": "",
+  "bookPage": 102,
+  "requirements": [
+    "Nhận biết ba vị trí tương đối của đường thẳng và đường tròn; tiếp tuyến và tính chất hai tiếp tuyến cắt nhau."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Gọi d là khoảng cách từ tâm O đến đường thẳng a. Nếu d < R thì a cắt đường tròn tại hai điểm; d = R thì a tiếp xúc đường tròn (a là tiếp tuyến); d > R thì a và đường tròn không giao nhau."
+    },
+    {
+      "type": "text",
+      "content": "Tiếp tuyến vuông góc với bán kính tại tiếp điểm. Ngược lại, đường thẳng đi qua một điểm của đường tròn và vuông góc với bán kính tại điểm đó là tiếp tuyến."
+    },
+    {
+      "type": "text",
+      "content": "Hai tiếp tuyến cắt nhau tại M (MA, MB là tiếp tuyến): MA = MB; MO là tia phân giác góc AMB; OM là tia phân giác góc AOB."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "(O; 5), khoảng cách từ O đến đường thẳng a là 3. Số giao điểm?",
+      "steps": [
+        "d = 3 < R = 5.",
+        "a cắt đường tròn tại 2 điểm."
+      ],
+      "expr": "2",
+      "answer": "2"
+    },
+    {
+      "problem": "Dạng tính tiếp tuyến: từ M cách O 13 kẻ tiếp tuyến MA đến (O; 5). Tính MA.",
+      "steps": [
+        "OA ⊥ MA nên MA² = MO² − OA².",
+        "MA = √(169 − 25) = 12."
+      ],
+      "expr": "12",
+      "answer": "12"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đường thẳng là tiếp tuyến của (O; R) khi:",
+      "choices": [
+        "d < R",
+        "d > R",
+        "d = 0",
+        "d = R"
+      ],
+      "answer": 3,
+      "explain": "Tiếp xúc.",
+      "wrong_explain": {
+        "0": "Cắt tại hai điểm.",
+        "1": "Không giao nhau.",
+        "2": "Đi qua tâm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tiếp tuyến tại A của (O):",
+      "choices": [
+        "Song song với OA",
+        "Đi qua O",
+        "Vuông góc với OA",
+        "Bằng OA"
+      ],
+      "answer": 2,
+      "explain": "Tính chất tiếp tuyến.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hai tiếp tuyến MA, MB của (O) cắt nhau tại M thì:",
+      "choices": [
+        "MA = 2MB",
+        "MA = MB",
+        "MA ⊥ MB luôn đúng",
+        "MA = OA"
+      ],
+      "answer": 1,
+      "explain": "Tính chất hai tiếp tuyến cắt nhau.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không nhất thiết.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "(O; 6), d = 6. Số điểm chung là:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "Tiếp xúc."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "(O; 4), d = 7. Số điểm chung là:",
+      "expr": "0",
+      "answer": "0",
+      "explain": "Không giao nhau."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Từ M cách O 10 kẻ tiếp tuyến MA đến (O; 6). MA bằng:",
+      "expr": "8",
+      "answer": "8",
+      "explain": "√(100 − 36) = 8."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "MA = 12 là tiếp tuyến của (O; 5). MO bằng:",
+      "expr": "13",
+      "answer": "13",
+      "explain": "√(144 + 25) = 13."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai tiếp tuyến MA, MB, MA = 7. MB bằng:",
+      "expr": "7",
+      "answer": "7",
+      "explain": "7."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai tiếp tuyến MA, MB, góc AMB = 60°. Góc AOB bằng:",
+      "expr": "120",
+      "answer": "120",
+      "explain": "Tứ giác MAOB có hai góc vuông: 360 − 180 − 60."
+    }
+  ]
+}

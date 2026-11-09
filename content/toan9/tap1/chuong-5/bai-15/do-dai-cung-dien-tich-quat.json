@@ -1,0 +1,153 @@
+{
+  "id": "bai-15",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 1",
+  "chapter": "Chương V. Đường tròn",
+  "lesson": "Bài 15. Độ dài của cung tròn. Diện tích hình quạt tròn và hình vành khuyên",
+  "section": "",
+  "bookPage": 97,
+  "requirements": [
+    "Tính độ dài cung tròn, diện tích hình quạt tròn, hình vành khuyên."
+  ],
+  "theory": [
+    {
+      "type": "formula",
+      "content": "Chu vi đường tròn C = 2πR;  độ dài cung n°: l = πRn/180"
+    },
+    {
+      "type": "formula",
+      "content": "Diện tích hình tròn S = πR²;  hình quạt n°: S = πR²n/360 = lR/2"
+    },
+    {
+      "type": "text",
+      "content": "Hình vành khuyên giới hạn bởi hai đường tròn đồng tâm bán kính R > r có diện tích S = π(R² − r²)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính độ dài cung 60° của đường tròn bán kính 6 cm (theo π): l = kπ. Tìm k.",
+      "steps": [
+        "l = π·6·60/180.",
+        "= 2π, k = 2."
+      ],
+      "expr": "6*60/180",
+      "answer": "2"
+    },
+    {
+      "problem": "Dạng hình vành khuyên: R = 5, r = 3. S = kπ. Tìm k.",
+      "steps": [
+        "S = π(25 − 9).",
+        "= 16π, k = 16."
+      ],
+      "expr": "25-9",
+      "answer": "16"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Độ dài cung n° của đường tròn bán kính R là:",
+      "choices": [
+        "πR²n/360",
+        "2πR",
+        "πRn/360",
+        "πRn/180"
+      ],
+      "answer": 3,
+      "explain": "Công thức.",
+      "wrong_explain": {
+        "0": "Đó là diện tích hình quạt.",
+        "1": "Đó là chu vi.",
+        "2": "Sai mẫu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Diện tích hình quạt n° bán kính R là:",
+      "choices": [
+        "πRn/180",
+        "πR²",
+        "πR²n/360",
+        "2πRn"
+      ],
+      "answer": 2,
+      "explain": "Công thức.",
+      "wrong_explain": {
+        "0": "Độ dài cung.",
+        "1": "Cả hình tròn.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chu vi đường tròn bán kính 5 là kπ. Tìm k.",
+      "expr": "10",
+      "answer": "10",
+      "explain": "2π·5 = 10π."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Diện tích hình tròn bán kính 4 là kπ. Tìm k.",
+      "expr": "16",
+      "answer": "16",
+      "explain": "16π."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Độ dài cung 90° bán kính 8 là kπ. Tìm k.",
+      "expr": "4",
+      "answer": "4",
+      "explain": "π·8·90/180 = 4π."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Diện tích hình quạt 120° bán kính 6 là kπ. Tìm k.",
+      "expr": "12",
+      "answer": "12",
+      "explain": "π·36·120/360 = 12π."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình vành khuyên R = 10, r = 6. S = kπ. Tìm k.",
+      "expr": "64",
+      "answer": "64",
+      "explain": "100 − 36 = 64."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bánh xe bán kính 0,35 m lăn 1 vòng đi được bao nhiêu mét (lấy π = 22/7)?",
+      "expr": "2*22/7*0.35",
+      "answer": "2.2",
+      "explain": "2,2 m."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình quạt có độ dài cung 6π, bán kính 4. Diện tích là kπ. Tìm k.",
+      "expr": "12",
+      "answer": "12",
+      "explain": "S = lR/2 = 12π."
+    }
+  ]
+}

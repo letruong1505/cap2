@@ -1,0 +1,157 @@
+{
+  "id": "bai-10",
+  "grade": 6,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 6",
+  "chapter": "Chương II. Chất quanh ta",
+  "lesson": "Bài 10. Các thể của chất và sự chuyển thể",
+  "section": "",
+  "bookPage": 30,
+  "requirements": [
+    "Nêu được các thể của chất và đặc điểm; trình bày được các quá trình chuyển thể: nóng chảy, đông đặc, bay hơi, ngưng tụ, sôi."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Chất tồn tại ở ba thể chính: rắn, lỏng, khí. Thể rắn: các hạt liên kết chặt, có hình dạng và thể tích xác định, rất khó nén. Thể lỏng: các hạt liên kết không chặt, có thể tích xác định, không có hình dạng xác định, khó nén. Thể khí: các hạt chuyển động tự do, không có hình dạng và thể tích xác định, dễ bị nén."
+    },
+    {
+      "type": "text",
+      "content": "Sự nóng chảy là sự chuyển từ thể rắn sang thể lỏng; sự đông đặc là chuyển từ lỏng sang rắn. Nước đá nóng chảy ở 0 °C và nước đông đặc ở 0 °C."
+    },
+    {
+      "type": "text",
+      "content": "Sự bay hơi là sự chuyển từ thể lỏng sang thể hơi (xảy ra ở bề mặt chất lỏng, ở mọi nhiệt độ); sự ngưng tụ là chuyển từ thể hơi sang thể lỏng. Sự sôi là sự bay hơi đặc biệt, xảy ra ở cả trong lòng và trên bề mặt chất lỏng tại nhiệt độ sôi; nước sôi ở 100 °C."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Nước đá ở −5 °C được đun đến khi nóng chảy hoàn toàn ở 0 °C. Nhiệt độ tăng bao nhiêu độ trước khi bắt đầu nóng chảy?",
+      "steps": [
+        "0 − (−5).",
+        "= 5 °C."
+      ],
+      "expr": "0+5",
+      "answer": "5"
+    },
+    {
+      "problem": "Dạng nhận biết chuyển thể: trong các hiện tượng \"sương đọng trên lá, nước đá tan, phơi quần áo khô, đúc chuông đồng\" có bao nhiêu hiện tượng là sự ngưng tụ hoặc đông đặc?",
+      "steps": [
+        "Ngưng tụ: sương đọng; đông đặc: đúc chuông (đồng lỏng → rắn).",
+        "Có 2."
+      ],
+      "expr": "2",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Chất ở thể nào có hình dạng và thể tích xác định?",
+      "choices": [
+        "Thể lỏng",
+        "Thể khí",
+        "Thể rắn",
+        "Cả ba thể"
+      ],
+      "answer": 2,
+      "explain": "Thể rắn.",
+      "wrong_explain": {
+        "0": "Không có hình dạng xác định.",
+        "1": "Không có hình dạng, thể tích xác định.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Sự chuyển từ thể lỏng sang thể rắn gọi là:",
+      "choices": [
+        "Sự nóng chảy",
+        "Sự đông đặc",
+        "Sự bay hơi",
+        "Sự ngưng tụ"
+      ],
+      "answer": 1,
+      "explain": "Đông đặc.",
+      "wrong_explain": {
+        "0": "Rắn sang lỏng.",
+        "2": "Lỏng sang hơi.",
+        "3": "Hơi sang lỏng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Sương đọng trên lá vào sáng sớm là hiện tượng:",
+      "choices": [
+        "Ngưng tụ",
+        "Bay hơi",
+        "Nóng chảy",
+        "Đông đặc"
+      ],
+      "answer": 0,
+      "explain": "Hơi nước ngưng tụ.",
+      "wrong_explain": {
+        "1": "Ngược lại.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Chất ở thể nào dễ bị nén nhất?",
+      "choices": [
+        "Thể rắn",
+        "Thể lỏng",
+        "Như nhau",
+        "Thể khí"
+      ],
+      "answer": 3,
+      "explain": "Khoảng cách giữa các hạt lớn.",
+      "wrong_explain": {
+        "0": "Rất khó nén.",
+        "1": "Khó nén.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nhiệt độ nóng chảy của nước đá là bao nhiêu °C?",
+      "expr": "0",
+      "answer": "0",
+      "explain": "0 °C."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nhiệt độ sôi của nước (ở áp suất thường) là bao nhiêu °C?",
+      "expr": "100",
+      "answer": "100",
+      "explain": "100 °C."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong các quá trình: nóng chảy, bay hơi, sôi, ngưng tụ, đông đặc – có bao nhiêu quá trình chuyển từ thể lỏng sang thể hơi?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Bay hơi, sôi."
+    }
+  ]
+}

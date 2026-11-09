@@ -1,0 +1,177 @@
+{
+  "id": "bai-1",
+  "grade": 6,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 6",
+  "chapter": "Chương I. Mở đầu về Khoa học tự nhiên",
+  "lesson": "Bài 1. Giới thiệu về Khoa học tự nhiên",
+  "section": "",
+  "bookPage": 7,
+  "requirements": [
+    "Nêu được khái niệm Khoa học tự nhiên; vai trò của KHTN trong cuộc sống.",
+    "Phân biệt các lĩnh vực chính của KHTN; phân biệt vật sống và vật không sống."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khoa học tự nhiên là một nhánh của khoa học, nghiên cứu các sự vật, hiện tượng, quy luật tự nhiên, những ảnh hưởng của chúng đến cuộc sống con người và môi trường."
+    },
+    {
+      "type": "text",
+      "content": "Hoạt động nghiên cứu khoa học: tìm hiểu, khám phá ra tri thức khoa học. Các hoạt động trong cuộc sống như trồng trọt, chăn nuôi không phải nghiên cứu khoa học nếu chỉ áp dụng kinh nghiệm."
+    },
+    {
+      "type": "text",
+      "content": "Vai trò của KHTN: nâng cao nhận thức về thế giới tự nhiên; ứng dụng công nghệ vào cuộc sống, sản xuất, kinh doanh; chăm sóc sức khoẻ; bảo vệ môi trường và phát triển bền vững."
+    },
+    {
+      "type": "text",
+      "content": "Các lĩnh vực chủ yếu: Vật lí (vật chất, năng lượng, sự vận động), Hoá học (chất và sự biến đổi của chất), Sinh học (vật sống), Khoa học Trái Đất và Thiên văn học."
+    },
+    {
+      "type": "text",
+      "content": "Vật sống có các biểu hiện sống: trao đổi chất, sinh trưởng, sinh sản, cảm ứng… Vật không sống không có các biểu hiện đó."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dạng phân loại vật: trong các vật con mèo, cây bàng, hòn đá, cái bàn, vi khuẩn, có bao nhiêu vật sống?",
+      "steps": [
+        "Vật sống có trao đổi chất, sinh sản: con mèo, cây bàng, vi khuẩn.",
+        "Có 3 vật sống."
+      ],
+      "expr": "3",
+      "answer": "3"
+    },
+    {
+      "problem": "KHTN có 5 lĩnh vực chủ yếu (Vật lí, Hoá học, Sinh học, Khoa học Trái Đất, Thiên văn học). Nếu tính riêng 3 lĩnh vực học trong môn KHTN 6 (Lý, Hoá, Sinh) thì còn bao nhiêu lĩnh vực?",
+      "steps": [
+        "5 − 3.",
+        "= 2 lĩnh vực."
+      ],
+      "expr": "5-3",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khoa học tự nhiên nghiên cứu:",
+      "choices": [
+        "Lịch sử loài người",
+        "Văn học, nghệ thuật",
+        "Chỉ các loài động vật",
+        "Các sự vật, hiện tượng, quy luật tự nhiên"
+      ],
+      "answer": 3,
+      "explain": "Định nghĩa KHTN.",
+      "wrong_explain": {
+        "0": "Đó là khoa học xã hội.",
+        "1": "Không phải KHTN.",
+        "2": "Chỉ là một phần của Sinh học."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Lĩnh vực nghiên cứu về chất và sự biến đổi của chất là:",
+      "choices": [
+        "Vật lí",
+        "Sinh học",
+        "Hoá học",
+        "Thiên văn học"
+      ],
+      "answer": 2,
+      "explain": "Hoá học.",
+      "wrong_explain": {
+        "0": "Nghiên cứu vật chất, năng lượng, chuyển động.",
+        "1": "Nghiên cứu vật sống.",
+        "3": "Nghiên cứu vũ trụ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vật nào là vật sống?",
+      "choices": [
+        "Hòn đá",
+        "Cây lúa",
+        "Cái bút",
+        "Chiếc xe đạp"
+      ],
+      "answer": 1,
+      "explain": "Cây lúa sinh trưởng, sinh sản.",
+      "wrong_explain": {
+        "0": "Không trao đổi chất.",
+        "2": "Vật không sống.",
+        "3": "Vật không sống."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hoạt động nào là nghiên cứu khoa học?",
+      "choices": [
+        "Nghiên cứu vaccine phòng bệnh",
+        "Tưới cây hằng ngày",
+        "Đi chợ",
+        "Nấu cơm"
+      ],
+      "answer": 0,
+      "explain": "Tìm ra tri thức mới.",
+      "wrong_explain": {
+        "1": "Hoạt động thường ngày.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ứng dụng nào của KHTN giúp chăm sóc sức khoẻ con người?",
+      "choices": [
+        "Xây nhà cao tầng",
+        "Sản xuất ô tô",
+        "Làm phim hoạt hình",
+        "Chế tạo thuốc kháng sinh"
+      ],
+      "answer": 3,
+      "explain": "Thuốc chữa bệnh.",
+      "wrong_explain": {
+        "0": "Ứng dụng kĩ thuật xây dựng.",
+        "1": "Sản xuất.",
+        "2": "Nghệ thuật."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong các biểu hiện: trao đổi chất, sinh trưởng, sinh sản, cảm ứng, màu sắc, có bao nhiêu biểu hiện của vật sống?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Màu sắc không phải biểu hiện sống."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong các vật: con gà, cây xoài, quyển sách, nấm rơm, viên gạch, có bao nhiêu vật không sống?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Quyển sách, viên gạch."
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "id": "bai-30",
+  "grade": 6,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 6",
+  "chapter": "Chương VII. Đa dạng thế giới sống",
+  "lesson": "Bài 30. Nguyên sinh vật",
+  "section": "",
+  "bookPage": 102,
+  "requirements": [
+    "Nhận biết nguyên sinh vật; vai trò và tác hại; một số bệnh do nguyên sinh vật và cách phòng tránh."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nguyên sinh vật là nhóm sinh vật có cấu tạo tế bào nhân thực, kích thước hiển vi; đa số là cơ thể đơn bào (trùng roi, trùng giày, trùng biến hình), một số đa bào (tảo)."
+    },
+    {
+      "type": "text",
+      "content": "Hình dạng đa dạng: hình cầu, hình thoi, hình giày, hoặc không có hình dạng cố định (trùng biến hình). Một số có lục lạp, tự dưỡng (tảo, trùng roi xanh); một số dị dưỡng."
+    },
+    {
+      "type": "text",
+      "content": "Vai trò: cung cấp oxygen, là thức ăn cho động vật thuỷ sinh; dùng làm thực phẩm (tảo xoắn). Tác hại: gây bệnh sốt rét (trùng sốt rét lây qua muỗi Anopheles), kiết lị (trùng kiết lị qua thức ăn, nước uống); gây hiện tượng thuỷ triều đỏ."
+    },
+    {
+      "type": "text",
+      "content": "Phòng bệnh sốt rét: diệt muỗi, ngủ màn, phát quang bụi rậm. Phòng kiết lị: ăn chín uống sôi, rửa tay, vệ sinh."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dạng phân loại: trong \"trùng roi, vi khuẩn, trùng giày, tảo lục, virus\", có bao nhiêu nguyên sinh vật?",
+      "steps": [
+        "Nguyên sinh vật: trùng roi, trùng giày, tảo lục.",
+        "Có 3."
+      ],
+      "expr": "3",
+      "answer": "3"
+    },
+    {
+      "problem": "Một hồ có 2 000 con trùng giày, mỗi con sinh sản tạo 2 con mới sau một lần phân đôi. Sau 2 lần có bao nhiêu con?",
+      "steps": [
+        "2 000·2·2.",
+        "= 8 000."
+      ],
+      "expr": "2000*4",
+      "answer": "8000"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nguyên sinh vật có cấu tạo tế bào:",
+      "choices": [
+        "Nhân thực",
+        "Nhân sơ",
+        "Không có tế bào",
+        "Không có nhân"
+      ],
+      "answer": 0,
+      "explain": "Nhân thực.",
+      "wrong_explain": {
+        "1": "Vi khuẩn.",
+        "2": "Virus.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Bệnh sốt rét do tác nhân nào gây ra?",
+      "choices": [
+        "Vi khuẩn",
+        "Virus",
+        "Nấm",
+        "Trùng sốt rét"
+      ],
+      "answer": 3,
+      "explain": "Lây qua muỗi Anopheles.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Bệnh kiết lị lây qua:",
+      "choices": [
+        "Muỗi đốt",
+        "Không khí",
+        "Thức ăn, nước uống nhiễm trùng kiết lị",
+        "Bắt tay"
+      ],
+      "answer": 2,
+      "explain": "Đường tiêu hoá.",
+      "wrong_explain": {
+        "0": "Đó là sốt rét.",
+        "1": "Không.",
+        "3": "Không chủ yếu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nguyên sinh vật có lục lạp có thể:",
+      "choices": [
+        "Chỉ sống kí sinh",
+        "Tự tổng hợp chất hữu cơ (quang hợp)",
+        "Không trao đổi chất",
+        "Gây bệnh sốt rét"
+      ],
+      "answer": 1,
+      "explain": "Tự dưỡng.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong: sốt rét, kiết lị, cúm, lao – có bao nhiêu bệnh do nguyên sinh vật?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Sốt rét, kiết lị."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trùng roi dài 50 µm. Đổi ra mm.",
+      "expr": "0.05",
+      "answer": "0.05",
+      "explain": "0,05 mm."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một giọt nước có 30 trùng giày, mỗi con phân đôi 3 lần. Tổng số con:",
+      "expr": "240",
+      "answer": "240",
+      "explain": "30·8."
+    }
+  ]
+}

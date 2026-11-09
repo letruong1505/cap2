@@ -1,0 +1,153 @@
+{
+  "id": "bai-18",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 2",
+  "chapter": "Chương VI. Hàm số y = ax² (a ≠ 0). Phương trình bậc hai một ẩn",
+  "lesson": "Bài 18. Hàm số y = ax² (a ≠ 0)",
+  "section": "",
+  "bookPage": 4,
+  "requirements": [
+    "Tính giá trị của hàm số y = ax²; nhận biết tính chất và vẽ đồ thị hàm số y = ax² (a ≠ 0)."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hàm số y = ax² (a ≠ 0) xác định với mọi x. Nếu a > 0: y ≥ 0 với mọi x, giá trị nhỏ nhất y = 0 tại x = 0. Nếu a < 0: y ≤ 0, giá trị lớn nhất y = 0 tại x = 0."
+    },
+    {
+      "type": "text",
+      "content": "Đồ thị hàm số y = ax² là một đường cong (parabol) đi qua gốc O, nhận Oy làm trục đối xứng; O là đỉnh. a > 0: đồ thị nằm phía trên trục hoành; a < 0: nằm phía dưới."
+    },
+    {
+      "type": "text",
+      "content": "Điểm M(x₀; y₀) thuộc đồ thị khi y₀ = a·x₀²."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho y = 2x². Tính y khi x = −3.",
+      "steps": [
+        "y = 2·(−3)².",
+        "= 18."
+      ],
+      "expr": "2*9",
+      "answer": "18"
+    },
+    {
+      "problem": "Dạng tìm a: đồ thị y = ax² đi qua A(2; 12). Tìm a.",
+      "steps": [
+        "12 = a·4.",
+        "a = 3."
+      ],
+      "expr": "12/4",
+      "answer": "3"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đồ thị hàm số y = ax² (a ≠ 0) nhận đường nào làm trục đối xứng?",
+      "choices": [
+        "Trục Ox",
+        "Đường y = x",
+        "Không có",
+        "Trục Oy"
+      ],
+      "answer": 3,
+      "explain": "Parabol đối xứng qua Oy.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Có."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Với a < 0, đồ thị y = ax² nằm:",
+      "choices": [
+        "Phía trên trục hoành",
+        "Bên phải trục tung",
+        "Phía dưới trục hoành",
+        "Cắt trục hoành tại hai điểm"
+      ],
+      "answer": 2,
+      "explain": "y ≤ 0.",
+      "wrong_explain": {
+        "0": "Khi a > 0.",
+        "1": "Không.",
+        "3": "Chỉ tại O."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho y = −x². Tính y khi x = 4.",
+      "expr": "-16",
+      "answer": "-16",
+      "explain": "−16."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho y = 0,5x². Tính y khi x = 6.",
+      "expr": "18",
+      "answer": "18",
+      "explain": "0,5·36 = 18."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đồ thị y = ax² đi qua (−1; 5). Tìm a.",
+      "expr": "5",
+      "answer": "5",
+      "explain": "5 = a·1."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Điểm M(3; m) thuộc đồ thị y = 2x². Tìm m.",
+      "expr": "18",
+      "answer": "18",
+      "explain": "m = 18."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đồ thị y = ax² đi qua (2; −2). Tìm a.",
+      "expr": "-1/2",
+      "answer": "-0.5",
+      "explain": "−2 = 4a ⇒ a = −1/2."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Quãng đường rơi tự do s = 5t² (m). Sau 3 giây vật rơi được bao nhiêu mét?",
+      "expr": "45",
+      "answer": "45",
+      "explain": "5·9 = 45 m."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với y = 3x², giá trị nhỏ nhất của y là:",
+      "expr": "0",
+      "answer": "0",
+      "explain": "Tại x = 0."
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "id": "bai-3",
+  "grade": 9,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 9",
+  "chapter": "Chương I. Năng lượng cơ học",
+  "lesson": "Bài 3. Cơ năng",
+  "section": "",
+  "bookPage": 18,
+  "requirements": [
+    "Nêu được cơ năng là tổng động năng và thế năng; vận dụng sự chuyển hoá và bảo toàn cơ năng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cơ năng của vật bằng tổng động năng và thế năng của nó."
+    },
+    {
+      "type": "formula",
+      "content": "W = Wđ + Wt"
+    },
+    {
+      "type": "text",
+      "content": "Trong quá trình chuyển động, động năng và thế năng có thể chuyển hoá qua lại. Khi bỏ qua ma sát và sức cản, cơ năng của vật được bảo toàn."
+    },
+    {
+      "type": "text",
+      "content": "Ví dụ: vật rơi, độ cao giảm (thế năng giảm), tốc độ tăng (động năng tăng); con lắc dao động."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Vật có động năng 30 J và thế năng 70 J. Cơ năng?",
+      "steps": [
+        "W = 30 + 70.",
+        "= 100 J."
+      ],
+      "expr": "30+70",
+      "answer": "100"
+    },
+    {
+      "problem": "Dạng bảo toàn cơ năng: vật 1 kg rơi từ độ cao 20 m. Động năng ngay trước khi chạm đất (bỏ qua sức cản)?",
+      "steps": [
+        "Wt ban đầu = 10·1·20 = 200 J.",
+        "Chuyển hết thành động năng: 200 J."
+      ],
+      "expr": "10*1*20",
+      "answer": "200"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Cơ năng của vật bằng:",
+      "choices": [
+        "Hiệu động năng và thế năng",
+        "Tích động năng và thế năng",
+        "Chỉ động năng",
+        "Tổng động năng và thế năng"
+      ],
+      "answer": 3,
+      "explain": "W = Wđ + Wt.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi vật được ném lên cao (bỏ qua sức cản):",
+      "choices": [
+        "Cả hai tăng",
+        "Động năng tăng, thế năng giảm",
+        "Động năng giảm, thế năng tăng",
+        "Cơ năng tăng"
+      ],
+      "answer": 2,
+      "explain": "Chuyển hoá.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Khi rơi xuống.",
+        "3": "Bảo toàn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cơ năng được bảo toàn khi:",
+      "choices": [
+        "Có ma sát lớn",
+        "Bỏ qua ma sát và sức cản",
+        "Vật nóng lên",
+        "Luôn luôn"
+      ],
+      "answer": 1,
+      "explain": "Điều kiện.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật có cơ năng 150 J, thế năng 60 J. Động năng (J):",
+      "expr": "90",
+      "answer": "90",
+      "explain": "150 − 60."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật 2 kg rơi từ 15 m. Động năng khi chạm đất (J):",
+      "expr": "300",
+      "answer": "300",
+      "explain": "10·2·15."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật 0,5 kg ném lên với động năng 50 J. Độ cao cực đại (m):",
+      "expr": "10",
+      "answer": "10",
+      "explain": "50 = 10·0,5·h."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật rơi từ độ cao có cơ năng 400 J. Tại vị trí thế năng 100 J, động năng (J):",
+      "expr": "300",
+      "answer": "300",
+      "explain": "400 − 100."
+    }
+  ]
+}

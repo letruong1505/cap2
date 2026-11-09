@@ -1,0 +1,157 @@
+{
+  "id": "bai-14",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương III. Số nguyên",
+  "lesson": "Bài 14. Phép cộng và phép trừ số nguyên",
+  "section": "",
+  "bookPage": 62,
+  "requirements": [
+    "Thực hiện cộng, trừ số nguyên; vận dụng tính chất của phép cộng để tính hợp lí."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cộng hai số nguyên dương: như cộng hai số tự nhiên. Cộng hai số nguyên âm: cộng hai số đối của chúng rồi thêm dấu \"−\" trước kết quả: (−a) + (−b) = −(a + b)."
+    },
+    {
+      "type": "text",
+      "content": "Cộng hai số nguyên khác dấu: hai số đối nhau thì tổng bằng 0; không đối nhau thì lấy số lớn trừ số nhỏ (trong hai phần số tự nhiên) và đặt trước kết quả dấu của số có phần số tự nhiên lớn hơn."
+    },
+    {
+      "type": "text",
+      "content": "Phép cộng số nguyên có tính chất giao hoán, kết hợp, cộng với 0, cộng với số đối: a + (−a) = 0."
+    },
+    {
+      "type": "formula",
+      "content": "a − b = a + (−b)"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính (−25) + (−17).",
+      "steps": [
+        "Cộng hai số nguyên âm: −(25 + 17).",
+        "= −42."
+      ],
+      "expr": "(-25)+(-17)",
+      "answer": "-42"
+    },
+    {
+      "problem": "Dạng tính hợp lí: (−37) + 54 + (−63) + 46.",
+      "steps": [
+        "Nhóm [(−37) + (−63)] + (54 + 46) = (−100) + 100.",
+        "= 0."
+      ],
+      "expr": "(-37)+54+(-63)+46",
+      "answer": "0"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tổng của hai số nguyên đối nhau bằng:",
+      "choices": [
+        "0",
+        "Gấp đôi số dương",
+        "Số âm",
+        "1"
+      ],
+      "answer": 0,
+      "explain": "a + (−a) = 0.",
+      "wrong_explain": {
+        "1": "Tổng hai số đối là 0.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Muốn trừ số nguyên a cho b ta:",
+      "choices": [
+        "Cộng a với b",
+        "Lấy b trừ a",
+        "Cộng số đối của a với b",
+        "Cộng a với số đối của b"
+      ],
+      "answer": 3,
+      "explain": "a − b = a + (−b).",
+      "wrong_explain": {
+        "0": "Phải cộng với số đối của b.",
+        "1": "Sai thứ tự.",
+        "2": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (−12) + 30.",
+      "expr": "-12+30",
+      "answer": "18",
+      "explain": "= 18."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 15 + (−40).",
+      "expr": "15-40",
+      "answer": "-25",
+      "explain": "= −25."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 7 − 19.",
+      "expr": "7-19",
+      "answer": "-12",
+      "explain": "= −12."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (−8) − (−20).",
+      "expr": "-8+20",
+      "answer": "12",
+      "explain": "= 12."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (−45) + (−55).",
+      "expr": "-100",
+      "answer": "-100",
+      "explain": "= −100."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính hợp lí 125 + (−37) + (−125).",
+      "expr": "-37",
+      "answer": "-37",
+      "explain": "125 + (−125) = 0, còn −37."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một tài khoản có 500 nghìn đồng, rút 800 nghìn đồng (được nợ). Số dư mới (nghìn đồng) là:",
+      "expr": "500-800",
+      "answer": "-300",
+      "explain": "= −300."
+    }
+  ]
+}

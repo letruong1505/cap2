@@ -1,0 +1,161 @@
+{
+  "id": "bai-31",
+  "grade": 9,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 9",
+  "chapter": "Chương IX. Lipid. Carbohydrate. Protein. Polymer",
+  "lesson": "Bài 31. Protein",
+  "section": "",
+  "bookPage": 138,
+  "requirements": [
+    "Nêu được khái niệm, cấu tạo, tính chất của protein; vai trò."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Protein là hợp chất hữu cơ phức tạp, phân tử khối lớn, được tạo thành từ nhiều amino acid liên kết với nhau. Ngoài C, H, O, protein luôn có N, có thể có S, P…"
+    },
+    {
+      "type": "text",
+      "content": "Protein có trong cơ thể người, động vật, thực vật (thịt, cá, trứng, sữa, đậu)."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất: thuỷ phân (acid, base hoặc enzyme) tạo các amino acid; bị đông tụ khi đun nóng hoặc gặp acid, base, muối kim loại nặng; khi cháy có mùi khét."
+    },
+    {
+      "type": "text",
+      "content": "Vai trò: thành phần cấu tạo tế bào; enzyme, hormone, kháng thể; nguồn dinh dưỡng thiết yếu."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Trứng gà chứa khoảng 13% protein. 60 g trứng chứa bao nhiêu gam protein?",
+      "steps": [
+        "60·13/100.",
+        "= 7,8 g."
+      ],
+      "expr": "60*13/100",
+      "answer": "7.8"
+    },
+    {
+      "problem": "Dạng nhu cầu protein: người 50 kg cần 1 g protein/kg/ngày. Cần bao nhiêu gam mỗi ngày?",
+      "steps": [
+        "1·50.",
+        "= 50 g."
+      ],
+      "expr": "1*50",
+      "answer": "50"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Protein được tạo thành từ:",
+      "choices": [
+        "Các amino acid",
+        "Glucose",
+        "Glycerol và acid béo",
+        "Ethanol"
+      ],
+      "answer": 0,
+      "explain": "Polymer amino acid.",
+      "wrong_explain": {
+        "1": "Tinh bột.",
+        "2": "Chất béo.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nguyên tố luôn có trong protein ngoài C, H, O là:",
+      "choices": [
+        "Sắt",
+        "Chlorine",
+        "Sodium",
+        "Nitrogen"
+      ],
+      "answer": 3,
+      "explain": "N.",
+      "wrong_explain": {
+        "0": "Không luôn.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi nấu canh cua, riêu cua nổi lên do:",
+      "choices": [
+        "Protein bị cháy",
+        "Protein tan",
+        "Protein bị đông tụ khi đun nóng",
+        "Chất béo đông lại"
+      ],
+      "answer": 2,
+      "explain": "Đông tụ.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không chủ yếu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Để phân biệt vải tơ tằm và vải sợi bông có thể:",
+      "choices": [
+        "Ngâm nước",
+        "Đốt, tơ tằm có mùi khét",
+        "Nhìn màu",
+        "Ngửi khi chưa đốt"
+      ],
+      "answer": 1,
+      "explain": "Protein cháy có mùi khét.",
+      "wrong_explain": {
+        "0": "Không rõ.",
+        "2": "Không chắc.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Thịt bò chứa 20% protein. 150 g thịt bò chứa bao nhiêu gam protein?",
+      "expr": "30",
+      "answer": "30",
+      "explain": "150·20%."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Người 40 kg cần 1,2 g protein/kg/ngày. Cần bao nhiêu gam?",
+      "expr": "48",
+      "answer": "48",
+      "explain": "40·1,2."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong: thịt, gạo, cá, dầu ăn, trứng – có bao nhiêu thực phẩm giàu protein?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Thịt, cá, trứng."
+    }
+  ]
+}

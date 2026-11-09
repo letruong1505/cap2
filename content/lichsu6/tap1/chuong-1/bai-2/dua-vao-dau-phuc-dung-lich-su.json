@@ -1,0 +1,161 @@
+{
+  "id": "bai-2",
+  "grade": 6,
+  "subject": "lich-su",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Lịch sử 6",
+  "chapter": "Chương 1. Vì sao phải học lịch sử?",
+  "lesson": "Bài 2. Dựa vào đâu để biết và phục dựng lại lịch sử?",
+  "section": "",
+  "bookPage": 12,
+  "requirements": [
+    "Phân biệt các nguồn sử liệu: truyền miệng, chữ viết, hiện vật, gốc và phái sinh."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tư liệu truyền miệng là những câu chuyện, lời kể truyền từ đời này sang đời khác (truyền thuyết, ca dao, tục ngữ)."
+    },
+    {
+      "type": "text",
+      "content": "Tư liệu hiện vật là những di tích, đồ vật của người xưa còn giữ lại trong lòng đất hay trên mặt đất (trống đồng, đồ gốm, công cụ đá)."
+    },
+    {
+      "type": "text",
+      "content": "Tư liệu chữ viết là những bản ghi, sách được in, khắc bằng chữ viết, vở chép tay… từ quá khứ còn được lưu lại (bia đá, sắc phong, sách sử)."
+    },
+    {
+      "type": "text",
+      "content": "Tư liệu gốc là tư liệu liên quan trực tiếp đến sự kiện lịch sử, ra đời vào thời điểm diễn ra sự kiện đó; là nguồn tư liệu đáng tin cậy nhất."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dạng phân loại tư liệu: trong \"trống đồng Đông Sơn, truyền thuyết Thánh Gióng, bia Tiến sĩ, rìu đá, ca dao\" có bao nhiêu tư liệu hiện vật?",
+      "steps": [
+        "Hiện vật: trống đồng, bia Tiến sĩ, rìu đá (bia đá vừa là hiện vật vừa chứa chữ viết; ở đây tính là hiện vật).",
+        "3."
+      ],
+      "expr": "3",
+      "answer": "3"
+    },
+    {
+      "problem": "Văn Miếu – Quốc Tử Giám có 82 bia Tiến sĩ ghi danh các khoa thi từ năm 1442 đến năm 1779. Khoảng thời gian đó là bao nhiêu năm?",
+      "steps": [
+        "1779 − 1442.",
+        "= 337 năm."
+      ],
+      "expr": "1779-1442",
+      "answer": "337"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Truyền thuyết \"Thánh Gióng\" thuộc loại tư liệu:",
+      "choices": [
+        "Chữ viết",
+        "Truyền miệng",
+        "Hiện vật",
+        "Gốc"
+      ],
+      "answer": 1,
+      "explain": "Lời kể truyền đời.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trống đồng Đông Sơn thuộc loại tư liệu:",
+      "choices": [
+        "Hiện vật",
+        "Truyền miệng",
+        "Chữ viết",
+        "Phái sinh"
+      ],
+      "answer": 0,
+      "explain": "Đồ vật người xưa.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không phải chủ yếu.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tư liệu gốc là:",
+      "choices": [
+        "Tư liệu được viết lại sau này",
+        "Lời kể truyền miệng",
+        "Tranh vẽ hiện đại",
+        "Tư liệu ra đời vào thời điểm diễn ra sự kiện, liên quan trực tiếp"
+      ],
+      "answer": 3,
+      "explain": "Đáng tin cậy nhất.",
+      "wrong_explain": {
+        "0": "Phái sinh.",
+        "1": "Không nhất thiết.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Bản \"Tuyên ngôn Độc lập\" năm 1945 là tư liệu:",
+      "choices": [
+        "Truyền miệng",
+        "Hiện vật thuần tuý",
+        "Chữ viết, tư liệu gốc",
+        "Phái sinh"
+      ],
+      "answer": 2,
+      "explain": "Văn bản gốc.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong: ca dao, tục ngữ, truyền thuyết, sắc phong – có bao nhiêu tư liệu truyền miệng?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Sắc phong là chữ viết."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có bao nhiêu loại tư liệu được nêu chính (truyền miệng, hiện vật, chữ viết)?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "3 loại."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bia Tiến sĩ đầu tiên dựng năm 1484. Đến năm 2024 là bao nhiêu năm?",
+      "expr": "540",
+      "answer": "540",
+      "explain": "2024 − 1484."
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "id": "bai-35",
+  "grade": 9,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 9",
+  "chapter": "Chương X. Khai thác tài nguyên từ vỏ Trái Đất",
+  "lesson": "Bài 35. Khai thác nhiên liệu hoá thạch. Nguồn carbon. Chu trình carbon và sự ấm lên toàn cầu",
+  "section": "",
+  "bookPage": 153,
+  "requirements": [
+    "Nêu được khai thác nhiên liệu hoá thạch; nguồn carbon; chu trình carbon; khí nhà kính và sự ấm lên toàn cầu."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nhiên liệu hoá thạch (than, dầu mỏ, khí thiên nhiên) được khai thác bằng khai mỏ (lộ thiên, hầm lò) hoặc khoan giếng. Việt Nam có mỏ than Quảng Ninh, mỏ dầu Bạch Hổ."
+    },
+    {
+      "type": "text",
+      "content": "Carbon có trong khí quyển (CO₂), sinh vật, đất, đại dương, đá vôi và nhiên liệu hoá thạch."
+    },
+    {
+      "type": "text",
+      "content": "Chu trình carbon: thực vật hấp thụ CO₂ qua quang hợp; sinh vật thải CO₂ qua hô hấp; phân giải xác sinh vật trả lại CO₂; đốt nhiên liệu thải CO₂ vào khí quyển."
+    },
+    {
+      "type": "text",
+      "content": "Khí nhà kính (CO₂, CH₄, hơi nước…) giữ nhiệt làm Trái Đất ấm lên. Tăng CO₂ do đốt nhiên liệu, phá rừng gây biến đổi khí hậu: băng tan, nước biển dâng, thời tiết cực đoan. Giải pháp: giảm phát thải, trồng rừng, dùng năng lượng tái tạo."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đốt 1 tấn than tạo khoảng 3 tấn CO₂. Một nhà máy đốt 500 tấn than/ngày tạo bao nhiêu tấn CO₂?",
+      "steps": [
+        "3·500.",
+        "= 1 500 tấn."
+      ],
+      "expr": "3*500",
+      "answer": "1500"
+    },
+    {
+      "problem": "Dạng tính hấp thụ: một cây hấp thụ 20 kg CO₂/năm. Cần bao nhiêu cây để hấp thụ 1 tấn CO₂/năm?",
+      "steps": [
+        "1 000 : 20.",
+        "= 50 cây."
+      ],
+      "expr": "1000/20",
+      "answer": "50"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Quá trình lấy CO₂ từ khí quyển trong chu trình carbon là:",
+      "choices": [
+        "Hô hấp",
+        "Quang hợp của thực vật",
+        "Đốt nhiên liệu",
+        "Phân giải xác"
+      ],
+      "answer": 1,
+      "explain": "Quang hợp.",
+      "wrong_explain": {
+        "0": "Thải CO₂.",
+        "2": "Thải CO₂.",
+        "3": "Thải CO₂."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khí nhà kính chủ yếu do con người thải ra là:",
+      "choices": [
+        "CO₂",
+        "O₂",
+        "N₂",
+        "Ar"
+      ],
+      "answer": 0,
+      "explain": "Đốt nhiên liệu.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hậu quả của sự ấm lên toàn cầu là:",
+      "choices": [
+        "Tăng diện tích băng",
+        "Giảm thiên tai",
+        "Không ảnh hưởng",
+        "Băng tan, nước biển dâng"
+      ],
+      "answer": 3,
+      "explain": "Biến đổi khí hậu.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "1": "Ngược lại.",
+        "2": "Có."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Giải pháp giảm khí nhà kính là:",
+      "choices": [
+        "Đốt nhiều than",
+        "Phá rừng",
+        "Trồng rừng, dùng năng lượng tái tạo",
+        "Tăng xe cá nhân"
+      ],
+      "answer": 2,
+      "explain": "Giảm phát thải.",
+      "wrong_explain": {
+        "0": "Tăng.",
+        "1": "Tăng.",
+        "3": "Tăng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một xe thải 0,2 kg CO₂/km. Đi 50 km thải bao nhiêu kg CO₂?",
+      "expr": "10",
+      "answer": "10",
+      "explain": "0,2·50."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một khu rừng 100 ha, mỗi ha hấp thụ 10 tấn CO₂/năm. Tổng hấp thụ (tấn/năm):",
+      "expr": "1000",
+      "answer": "1000",
+      "explain": "100·10."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong: CO₂, CH₄, O₂, hơi nước – có bao nhiêu khí nhà kính?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Trừ O₂."
+    }
+  ]
+}

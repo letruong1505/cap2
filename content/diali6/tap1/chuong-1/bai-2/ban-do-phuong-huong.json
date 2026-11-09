@@ -1,0 +1,161 @@
+{
+  "id": "bai-2",
+  "grade": 6,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 6",
+  "chapter": "Chương 1. Bản đồ – phương tiện thể hiện bề mặt Trái Đất",
+  "lesson": "Bài 2. Bản đồ. Một số lưới kinh, vĩ tuyến. Phương hướng trên bản đồ",
+  "section": "",
+  "bookPage": 104,
+  "requirements": [
+    "Nêu được khái niệm bản đồ; nhận biết một số lưới kinh, vĩ tuyến; xác định phương hướng trên bản đồ."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Bản đồ là hình ảnh thu nhỏ một phần hay toàn bộ bề mặt Trái Đất lên mặt phẳng, dựa trên một phép chiếu nhất định và được thể hiện bằng các kí hiệu bản đồ."
+    },
+    {
+      "type": "text",
+      "content": "Có nhiều lưới kinh, vĩ tuyến khác nhau tuỳ theo phép chiếu; bản đồ càng ở xa trung tâm chiếu thì càng biến dạng."
+    },
+    {
+      "type": "text",
+      "content": "Xác định phương hướng: dựa vào mạng lưới kinh, vĩ tuyến – đầu trên kinh tuyến chỉ hướng bắc, đầu dưới chỉ hướng nam, bên phải vĩ tuyến là hướng đông, bên trái là hướng tây. Nếu bản đồ không có lưới, dựa vào mũi tên chỉ hướng bắc."
+    },
+    {
+      "type": "text",
+      "content": "Có 8 hướng chính: Bắc, Nam, Đông, Tây, Đông Bắc, Tây Bắc, Đông Nam, Tây Nam."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Có bao nhiêu hướng chính trên bản đồ?",
+      "steps": [
+        "4 hướng cơ bản và 4 hướng phụ.",
+        "8 hướng."
+      ],
+      "expr": "4+4",
+      "answer": "8"
+    },
+    {
+      "problem": "Dạng xác định góc giữa hai hướng: hướng Bắc và hướng Đông lệch nhau bao nhiêu độ?",
+      "steps": [
+        "Một vòng 360° chia 4 hướng cơ bản.",
+        "360 : 4 = 90°."
+      ],
+      "expr": "360/4",
+      "answer": "90"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Bản đồ là:",
+      "choices": [
+        "Hình ảnh thu nhỏ bề mặt Trái Đất lên mặt phẳng",
+        "Ảnh chụp từ vệ tinh",
+        "Quả Địa Cầu",
+        "Tranh vẽ phong cảnh"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Không hẳn.",
+        "2": "Mô hình.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trên bản đồ có lưới kinh, vĩ tuyến, đầu trên của kinh tuyến chỉ hướng:",
+      "choices": [
+        "Nam",
+        "Đông",
+        "Tây",
+        "Bắc"
+      ],
+      "answer": 3,
+      "explain": "Hướng bắc.",
+      "wrong_explain": {
+        "0": "Đầu dưới.",
+        "1": "Bên phải vĩ tuyến.",
+        "2": "Bên trái vĩ tuyến."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hướng nằm giữa hướng Bắc và hướng Đông là:",
+      "choices": [
+        "Tây Bắc",
+        "Đông Nam",
+        "Đông Bắc",
+        "Tây Nam"
+      ],
+      "answer": 2,
+      "explain": "Đông Bắc.",
+      "wrong_explain": {
+        "0": "Giữa Bắc và Tây.",
+        "1": "Giữa Đông và Nam.",
+        "3": "Giữa Tây và Nam."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hướng ngược với hướng Tây Nam là:",
+      "choices": [
+        "Tây Bắc",
+        "Đông Bắc",
+        "Đông Nam",
+        "Bắc"
+      ],
+      "answer": 1,
+      "explain": "Đối diện.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hướng Bắc và hướng Nam lệch nhau bao nhiêu độ?",
+      "expr": "180",
+      "answer": "180",
+      "explain": "Ngược nhau."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hướng Bắc và hướng Đông Bắc lệch nhau bao nhiêu độ?",
+      "expr": "45",
+      "answer": "45",
+      "explain": "90 : 2."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có bao nhiêu hướng phụ (Đông Bắc, Tây Bắc, Đông Nam, Tây Nam)?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "4."
+    }
+  ]
+}

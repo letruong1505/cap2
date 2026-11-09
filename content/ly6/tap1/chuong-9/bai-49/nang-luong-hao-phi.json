@@ -1,0 +1,146 @@
+{
+  "id": "bai-49",
+  "grade": 6,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 6",
+  "chapter": "Chương IX. Năng lượng",
+  "lesson": "Bài 49. Năng lượng hao phí",
+  "section": "",
+  "bookPage": 171,
+  "requirements": [
+    "Nêu được năng lượng hao phí luôn xuất hiện khi năng lượng chuyển từ dạng này sang dạng khác."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khi năng lượng chuyển hoá hoặc truyền đi, luôn có một phần năng lượng chuyển thành dạng không mong muốn (thường là nhiệt), gọi là năng lượng hao phí."
+    },
+    {
+      "type": "formula",
+      "content": "Năng lượng toàn phần = năng lượng có ích + năng lượng hao phí"
+    },
+    {
+      "type": "text",
+      "content": "Ví dụ: bóng đèn sợi đốt phần lớn điện năng chuyển thành nhiệt (hao phí), chỉ một phần nhỏ thành ánh sáng; đèn LED hao phí ít hơn."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Bóng đèn sợi đốt nhận 100 J, có ích 5 J ánh sáng. Năng lượng hao phí?",
+      "steps": [
+        "100 − 5.",
+        "= 95 J."
+      ],
+      "expr": "100-5",
+      "answer": "95"
+    },
+    {
+      "problem": "Dạng tính tỉ lệ có ích: động cơ nhận 800 J, có ích 600 J. Tỉ lệ có ích (%)?",
+      "steps": [
+        "600/800·100%.",
+        "= 75%."
+      ],
+      "expr": "600*100/800",
+      "answer": "75"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Năng lượng hao phí thường ở dạng:",
+      "choices": [
+        "Điện năng",
+        "Hoá năng",
+        "Hạt nhân",
+        "Nhiệt năng"
+      ],
+      "answer": 3,
+      "explain": "Thường toả nhiệt.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đèn nào hao phí năng lượng ít hơn?",
+      "choices": [
+        "Đèn sợi đốt",
+        "Đèn dầu",
+        "Đèn LED",
+        "Nến"
+      ],
+      "answer": 2,
+      "explain": "Hiệu suất cao.",
+      "wrong_explain": {
+        "0": "Hao phí nhiều.",
+        "1": "Hao phí nhiều.",
+        "3": "Hao phí nhiều."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi xe máy chạy, năng lượng hao phí là:",
+      "choices": [
+        "Chuyển động của xe",
+        "Nhiệt toả ra ở động cơ và tiếng ồn",
+        "Xăng trong bình",
+        "Không có hao phí"
+      ],
+      "answer": 1,
+      "explain": "Nhiệt và âm thanh.",
+      "wrong_explain": {
+        "0": "Có ích.",
+        "2": "Chưa dùng.",
+        "3": "Luôn có."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Quạt nhận 60 J, cơ năng có ích 48 J. Hao phí (J):",
+      "expr": "12",
+      "answer": "12",
+      "explain": "60 − 48."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ấm điện nhận 2 000 J, nước nhận 1 600 J. Tỉ lệ có ích (%):",
+      "expr": "80",
+      "answer": "80",
+      "explain": "1 600/2 000."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đèn LED nhận 10 J, phát sáng 8 J. Hao phí (J):",
+      "expr": "2",
+      "answer": "2",
+      "explain": "2 J."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Động cơ có ích 450 J, hao phí 150 J. Năng lượng toàn phần (J):",
+      "expr": "600",
+      "answer": "600",
+      "explain": "600 J."
+    }
+  ]
+}

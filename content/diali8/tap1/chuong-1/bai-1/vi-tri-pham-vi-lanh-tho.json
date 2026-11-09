@@ -1,0 +1,161 @@
+{
+  "id": "bai-1",
+  "grade": 8,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 8",
+  "chapter": "Chương 1. Đặc điểm vị trí địa lí, phạm vi lãnh thổ, địa hình và khoáng sản Việt Nam",
+  "lesson": "Bài 1. Vị trí địa lí và phạm vi lãnh thổ Việt Nam",
+  "section": "",
+  "bookPage": 93,
+  "requirements": [
+    "Trình bày được đặc điểm vị trí địa lí, phạm vi lãnh thổ Việt Nam; phân tích ảnh hưởng của vị trí địa lí đến đặc điểm tự nhiên."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Việt Nam nằm ở rìa phía đông bán đảo Đông Dương, gần trung tâm khu vực Đông Nam Á; trong vùng nội chí tuyến bán cầu Bắc; tiếp giáp Trung Quốc, Lào, Cam-pu-chia và Biển Đông."
+    },
+    {
+      "type": "text",
+      "content": "Hệ toạ độ phần đất liền: cực Bắc 23°23′B (Lũng Cú, Hà Giang), cực Nam 8°34′B (Đất Mũi, Cà Mau), cực Tây 102°09′Đ (Sín Thầu, Điện Biên), cực Đông 109°28′Đ (Vạn Thạnh, Khánh Hoà)."
+    },
+    {
+      "type": "text",
+      "content": "Phạm vi lãnh thổ gồm vùng đất (diện tích khoảng 331 000 km², đường biên giới đất liền khoảng 4 600 km, đường bờ biển dài 3 260 km), vùng biển (khoảng 1 triệu km² ở Biển Đông, có hàng nghìn đảo, trong đó có quần đảo Hoàng Sa và quần đảo Trường Sa) và vùng trời."
+    },
+    {
+      "type": "text",
+      "content": "Ảnh hưởng: thiên nhiên mang tính chất nhiệt đới ẩm gió mùa; chịu ảnh hưởng sâu sắc của biển; sinh vật, khoáng sản phong phú; phân hoá đa dạng; chịu nhiều thiên tai (bão, lũ…)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Vĩ độ cực Bắc 23°23′B, cực Nam 8°34′B. Phần đất liền kéo dài khoảng bao nhiêu độ vĩ (làm tròn theo phần độ: 23 − 8)?",
+      "steps": [
+        "23 − 8.",
+        "≈ 15° vĩ."
+      ],
+      "expr": "23-8",
+      "answer": "15"
+    },
+    {
+      "problem": "Dạng tính chiều dài: phần đất liền kéo dài khoảng 15° vĩ, mỗi độ vĩ khoảng 111 km. Chiều dài khoảng bao nhiêu km?",
+      "steps": [
+        "15·111.",
+        "= 1 665 km (thực tế khoảng 1 650 km)."
+      ],
+      "expr": "15*111",
+      "answer": "1665"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Điểm cực Bắc phần đất liền nước ta thuộc tỉnh:",
+      "choices": [
+        "Cà Mau",
+        "Điện Biên",
+        "Hà Giang (Lũng Cú)",
+        "Khánh Hoà"
+      ],
+      "answer": 2,
+      "explain": "Lũng Cú.",
+      "wrong_explain": {
+        "0": "Cực Nam.",
+        "1": "Cực Tây.",
+        "3": "Cực Đông."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Việt Nam nằm trong vùng:",
+      "choices": [
+        "Ôn đới",
+        "Nội chí tuyến bán cầu Bắc",
+        "Nội chí tuyến bán cầu Nam",
+        "Cận cực"
+      ],
+      "answer": 1,
+      "explain": "Nhiệt đới.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Quần đảo Hoàng Sa và quần đảo Trường Sa là:",
+      "choices": [
+        "Bộ phận lãnh thổ thuộc chủ quyền của Việt Nam",
+        "Vùng biển quốc tế",
+        "Lãnh thổ chưa xác định",
+        "Thuộc nước khác"
+      ],
+      "answer": 0,
+      "explain": "Chủ quyền Việt Nam.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ảnh hưởng của vị trí địa lí làm thiên nhiên nước ta mang tính chất:",
+      "choices": [
+        "Ôn đới lục địa",
+        "Hoang mạc khô hạn",
+        "Hàn đới",
+        "Nhiệt đới ẩm gió mùa"
+      ],
+      "answer": 3,
+      "explain": "Ảnh hưởng.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đường bờ biển nước ta dài khoảng bao nhiêu km?",
+      "expr": "3260",
+      "answer": "3260",
+      "explain": "3 260 km."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Biên giới với Trung Quốc khoảng 1 400 km, Lào 2 100 km, Cam-pu-chia 1 100 km. Tổng chiều dài biên giới đất liền (km):",
+      "expr": "4600",
+      "answer": "4600",
+      "explain": "4 600 km."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Kinh độ cực Đông 109°28′Đ, cực Tây 102°09′Đ. Chênh lệch khoảng bao nhiêu độ (lấy phần độ: 109 − 102)?",
+      "expr": "7",
+      "answer": "7",
+      "explain": "≈ 7°."
+    }
+  ]
+}

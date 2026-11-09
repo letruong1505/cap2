@@ -1,0 +1,161 @@
+{
+  "id": "bai-37",
+  "grade": 9,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 9",
+  "chapter": "Chương XI. Di truyền học Mendel. Cơ sở phân tử của hiện tượng di truyền",
+  "lesson": "Bài 37. Các quy luật di truyền của Mendel",
+  "section": "",
+  "bookPage": 162,
+  "requirements": [
+    "Trình bày được thí nghiệm lai một cặp, hai cặp tính trạng của Mendel; quy luật phân li, phân li độc lập; phép lai phân tích."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Lai một cặp tính trạng: P thuần chủng hoa tím × hoa trắng → F₁ 100% hoa tím; F₁ tự thụ phấn → F₂ tỉ lệ 3 tím : 1 trắng. Tính trạng biểu hiện ở F₁ là tính trạng trội."
+    },
+    {
+      "type": "text",
+      "content": "Quy luật phân li: mỗi tính trạng do một cặp nhân tố di truyền quy định; trong quá trình phát sinh giao tử, mỗi nhân tố di truyền trong cặp phân li về một giao tử."
+    },
+    {
+      "type": "text",
+      "content": "Lai hai cặp tính trạng: P vàng, trơn × xanh, nhăn (thuần chủng) → F₁ 100% vàng, trơn; F₂ tỉ lệ 9 : 3 : 3 : 1. Quy luật phân li độc lập: các cặp nhân tố di truyền phân li độc lập trong quá trình phát sinh giao tử."
+    },
+    {
+      "type": "text",
+      "content": "Phép lai phân tích: lai cá thể mang tính trạng trội cần xác định kiểu gene với cá thể mang tính trạng lặn. Nếu con đồng tính thì cá thể trội đồng hợp; nếu con phân tính 1 : 1 thì cá thể trội dị hợp."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "F₁ Aa × Aa. Tỉ lệ kiểu hình lặn aa ở F₂ là bao nhiêu?",
+      "steps": [
+        "F₂: 1AA : 2Aa : 1aa.",
+        "aa chiếm 1/4."
+      ],
+      "expr": "1/4",
+      "answer": "0.25"
+    },
+    {
+      "problem": "Dạng phân li độc lập: AaBb × AaBb. Tỉ lệ kiểu hình mang hai tính trạng lặn aabb?",
+      "steps": [
+        "(1/4)·(1/4).",
+        "= 1/16."
+      ],
+      "expr": "1/16",
+      "answer": "0.0625"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tỉ lệ kiểu hình ở F₂ khi lai một cặp tính trạng (trội hoàn toàn) là:",
+      "choices": [
+        "1 : 1",
+        "9 : 3 : 3 : 1",
+        "3 trội : 1 lặn",
+        "1 : 2 : 1"
+      ],
+      "answer": 2,
+      "explain": "Quy luật phân li.",
+      "wrong_explain": {
+        "0": "Lai phân tích dị hợp.",
+        "1": "Hai cặp tính trạng.",
+        "3": "Tỉ lệ kiểu gene."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phép lai phân tích là lai cá thể trội với:",
+      "choices": [
+        "Cá thể trội đồng hợp",
+        "Cá thể mang tính trạng lặn",
+        "Cá thể dị hợp",
+        "Chính nó"
+      ],
+      "answer": 1,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Tự thụ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Lai hai cặp tính trạng, F₂ có tỉ lệ kiểu hình:",
+      "choices": [
+        "9 : 3 : 3 : 1",
+        "3 : 1",
+        "1 : 1",
+        "1 : 2 : 1"
+      ],
+      "answer": 0,
+      "explain": "Phân li độc lập.",
+      "wrong_explain": {
+        "1": "Một cặp.",
+        "2": "Lai phân tích.",
+        "3": "Kiểu gene."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nếu lai phân tích cho đời con 100% trội thì cá thể đem lai:",
+      "choices": [
+        "Dị hợp",
+        "Đồng hợp lặn",
+        "Không xác định",
+        "Đồng hợp trội"
+      ],
+      "answer": 3,
+      "explain": "AA × aa → 100% Aa.",
+      "wrong_explain": {
+        "0": "Cho 1 : 1.",
+        "1": "Không mang tính trội.",
+        "2": "Xác định được."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Aa × aa. Tỉ lệ kiểu hình trội ở đời con:",
+      "expr": "1/2",
+      "answer": "0.5",
+      "explain": "1Aa : 1aa."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Aa × Aa. Tỉ lệ kiểu gene dị hợp Aa:",
+      "expr": "1/2",
+      "answer": "0.5",
+      "explain": "2/4."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "F₂ có 400 cây, tỉ lệ 3 : 1. Số cây mang tính trạng lặn:",
+      "expr": "100",
+      "answer": "100",
+      "explain": "400/4."
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "id": "bai-32",
+  "grade": 6,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 6",
+  "chapter": "Chương VII. Đa dạng thế giới sống",
+  "lesson": "Bài 32. Nấm",
+  "section": "",
+  "bookPage": 108,
+  "requirements": [
+    "Nhận biết nấm qua hình ảnh; đặc điểm cấu tạo; vai trò và tác hại; một số bệnh do nấm."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nấm là sinh vật nhân thực, đơn bào (nấm men) hoặc đa bào (nấm rơm, nấm mốc). Tế bào nấm có thành tế bào nhưng không có lục lạp nên sống dị dưỡng (hoại sinh, kí sinh hoặc cộng sinh)."
+    },
+    {
+      "type": "text",
+      "content": "Nấm đa bào thường gồm hệ sợi nấm; nấm lớn có cơ quan sinh sản là mũ nấm, sinh sản bằng bào tử."
+    },
+    {
+      "type": "text",
+      "content": "Vai trò: làm thực phẩm (nấm rơm, nấm hương, mộc nhĩ); làm thuốc (linh chi, đông trùng hạ thảo, penicillin từ nấm Penicillium); chế biến thực phẩm (nấm men làm bánh mì, rượu); phân giải chất hữu cơ."
+    },
+    {
+      "type": "text",
+      "content": "Tác hại: gây bệnh ở người (hắc lào, lang ben, nấm da), thực vật (đạo ôn, gỉ sắt), làm hỏng thực phẩm; một số nấm độc (nấm độc đen, nấm tán bay)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dạng phân loại: trong \"nấm rơm, nấm men, mộc nhĩ, nấm mốc\", có bao nhiêu nấm đơn bào?",
+      "steps": [
+        "Chỉ nấm men là đơn bào.",
+        "1."
+      ],
+      "expr": "1",
+      "answer": "1"
+    },
+    {
+      "problem": "Trồng nấm rơm: 1 kg rơm thu được 0,2 kg nấm. Từ 50 kg rơm thu được bao nhiêu kg nấm?",
+      "steps": [
+        "50·0,2.",
+        "= 10 kg."
+      ],
+      "expr": "50*0.2",
+      "answer": "10"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nấm sống dị dưỡng vì:",
+      "choices": [
+        "Tế bào không có lục lạp",
+        "Không có thành tế bào",
+        "Là sinh vật nhân sơ",
+        "Có diệp lục"
+      ],
+      "answer": 0,
+      "explain": "Không quang hợp.",
+      "wrong_explain": {
+        "1": "Có.",
+        "2": "Nhân thực.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nấm men được dùng để:",
+      "choices": [
+        "Gây bệnh lao",
+        "Làm thuốc trừ sâu hoá học",
+        "Cố định đạm",
+        "Làm bánh mì, ủ rượu"
+      ],
+      "answer": 3,
+      "explain": "Lên men.",
+      "wrong_explain": {
+        "0": "Vi khuẩn.",
+        "1": "Không.",
+        "2": "Vi khuẩn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Bệnh nào do nấm gây ra?",
+      "choices": [
+        "Lao",
+        "Cúm",
+        "Hắc lào",
+        "Sốt rét"
+      ],
+      "answer": 2,
+      "explain": "Nấm da.",
+      "wrong_explain": {
+        "0": "Vi khuẩn.",
+        "1": "Virus.",
+        "3": "Nguyên sinh vật."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nấm sinh sản chủ yếu bằng:",
+      "choices": [
+        "Hạt",
+        "Bào tử",
+        "Trứng",
+        "Phân đôi như vi khuẩn"
+      ],
+      "answer": 1,
+      "explain": "Bào tử.",
+      "wrong_explain": {
+        "0": "Thực vật hạt kín.",
+        "2": "Động vật.",
+        "3": "Không chủ yếu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong: nấm hương, nấm độc đen, mộc nhĩ, nấm tán bay – có bao nhiêu loại ăn được?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Nấm hương, mộc nhĩ."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong: hắc lào, lang ben, sởi, đạo ôn lúa – có bao nhiêu bệnh do nấm?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Trừ sởi."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một bịch phôi nấm sò cho 0,5 kg nấm. 120 bịch cho bao nhiêu kg?",
+      "expr": "60",
+      "answer": "60",
+      "explain": "120·0,5."
+    }
+  ]
+}

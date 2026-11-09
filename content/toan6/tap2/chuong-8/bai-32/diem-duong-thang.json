@@ -1,0 +1,168 @@
+{
+  "id": "bai-32",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 2",
+  "chapter": "Chương VIII. Những hình hình học cơ bản",
+  "lesson": "Bài 32. Điểm và đường thẳng",
+  "section": "",
+  "bookPage": 43,
+  "requirements": [
+    "Nhận biết điểm, đường thẳng, điểm thuộc/không thuộc đường thẳng; ba điểm thẳng hàng; hai đường thẳng cắt nhau, song song."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Điểm được kí hiệu bằng chữ cái in hoa (A, B, C…); đường thẳng kí hiệu bằng chữ cái thường (a, b, d…). Điểm A thuộc đường thẳng d: A ∈ d; điểm B không thuộc d: B ∉ d."
+    },
+    {
+      "type": "text",
+      "content": "Có một và chỉ một đường thẳng đi qua hai điểm phân biệt A và B; đường thẳng AB."
+    },
+    {
+      "type": "text",
+      "content": "Ba điểm cùng thuộc một đường thẳng gọi là ba điểm thẳng hàng; ngược lại gọi là ba điểm không thẳng hàng."
+    },
+    {
+      "type": "text",
+      "content": "Hai đường thẳng phân biệt hoặc cắt nhau (có một điểm chung – giao điểm) hoặc song song (không có điểm chung). Hai đường thẳng trùng nhau có vô số điểm chung."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Có 4 điểm, không có ba điểm nào thẳng hàng. Vẽ được bao nhiêu đường thẳng đi qua hai trong bốn điểm?",
+      "steps": [
+        "Mỗi điểm nối với 3 điểm còn lại, mỗi đường được đếm 2 lần.",
+        "4·3 : 2 = 6."
+      ],
+      "expr": "4*3/2",
+      "answer": "6"
+    },
+    {
+      "problem": "Dạng tổng quát: có n điểm (không có ba điểm thẳng hàng) vẽ được n(n − 1)/2 đường thẳng. Với n = 10?",
+      "steps": [
+        "10·9 : 2.",
+        "= 45."
+      ],
+      "expr": "10*9/2",
+      "answer": "45"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Qua hai điểm phân biệt có bao nhiêu đường thẳng?",
+      "choices": [
+        "Một và chỉ một",
+        "Hai",
+        "Vô số",
+        "Không có"
+      ],
+      "answer": 0,
+      "explain": "Tính chất cơ bản.",
+      "wrong_explain": {
+        "1": "Chỉ có một.",
+        "2": "Đó là qua một điểm.",
+        "3": "Luôn có."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hai đường thẳng song song có:",
+      "choices": [
+        "Một điểm chung",
+        "Vô số điểm chung",
+        "Hai điểm chung",
+        "Không có điểm chung"
+      ],
+      "answer": 3,
+      "explain": "Song song không có điểm chung.",
+      "wrong_explain": {
+        "0": "Đó là cắt nhau.",
+        "1": "Đó là trùng nhau.",
+        "2": "Không thể."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ba điểm thẳng hàng là ba điểm:",
+      "choices": [
+        "Tạo thành tam giác",
+        "Cách đều nhau",
+        "Cùng thuộc một đường thẳng",
+        "Nằm trên hai đường thẳng"
+      ],
+      "answer": 2,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Đó là không thẳng hàng.",
+        "1": "Không nhất thiết.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có 5 điểm, không có ba điểm nào thẳng hàng. Số đường thẳng vẽ được là:",
+      "expr": "5*4/2",
+      "answer": "10",
+      "explain": "10."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có 6 điểm, không có ba điểm nào thẳng hàng. Số đường thẳng là:",
+      "expr": "6*5/2",
+      "answer": "15",
+      "explain": "15."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai đường thẳng cắt nhau có bao nhiêu giao điểm?",
+      "expr": "1",
+      "answer": "1",
+      "explain": "1 giao điểm."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ba đường thẳng phân biệt đôi một cắt nhau, không đồng quy. Có bao nhiêu giao điểm?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Mỗi cặp một giao điểm: 3."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có 4 điểm trong đó có đúng 3 điểm thẳng hàng. Vẽ được bao nhiêu đường thẳng?",
+      "expr": "6-3+1",
+      "answer": "4",
+      "explain": "6 đường nếu không thẳng hàng, nhưng 3 đường qua 3 điểm thẳng hàng trùng nhau: 4."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 20 điểm, không có ba điểm nào thẳng hàng. Số đường thẳng là:",
+      "expr": "20*19/2",
+      "answer": "190",
+      "explain": "190."
+    }
+  ]
+}

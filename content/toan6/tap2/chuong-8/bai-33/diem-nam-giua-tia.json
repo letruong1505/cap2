@@ -1,0 +1,164 @@
+{
+  "id": "bai-33",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 2",
+  "chapter": "Chương VIII. Những hình hình học cơ bản",
+  "lesson": "Bài 33. Điểm nằm giữa hai điểm. Tia",
+  "section": "",
+  "bookPage": 47,
+  "requirements": [
+    "Nhận biết điểm nằm giữa hai điểm; nhận biết tia, hai tia đối nhau, hai tia trùng nhau."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Trong ba điểm thẳng hàng có một và chỉ một điểm nằm giữa hai điểm còn lại. Điểm M nằm giữa A và B thì A, B nằm khác phía đối với M; A, M nằm cùng phía đối với B."
+    },
+    {
+      "type": "text",
+      "content": "Điểm O trên đường thẳng xy chia đường thẳng thành hai phần; mỗi phần cùng với điểm O là một tia gốc O (tia Ox, tia Oy)."
+    },
+    {
+      "type": "text",
+      "content": "Hai tia chung gốc tạo thành một đường thẳng gọi là hai tia đối nhau. Hai tia chung gốc, tia này nằm trên tia kia gọi là hai tia trùng nhau."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Trên đường thẳng xy lấy 3 điểm A, B, C. Có bao nhiêu tia gốc A, gốc B, gốc C?",
+      "steps": [
+        "Mỗi điểm trên đường thẳng là gốc của 2 tia đối nhau.",
+        "3·2 = 6 tia."
+      ],
+      "expr": "3*2",
+      "answer": "6"
+    },
+    {
+      "problem": "Dạng đếm tia: trên đường thẳng lấy 5 điểm. Có bao nhiêu tia có gốc là một trong các điểm đó?",
+      "steps": [
+        "Mỗi điểm cho 2 tia.",
+        "5·2 = 10."
+      ],
+      "expr": "5*2",
+      "answer": "10"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong ba điểm thẳng hàng có bao nhiêu điểm nằm giữa hai điểm còn lại?",
+      "choices": [
+        "Một và chỉ một",
+        "Hai",
+        "Không có",
+        "Ba"
+      ],
+      "answer": 0,
+      "explain": "Tính chất.",
+      "wrong_explain": {
+        "1": "Chỉ có một.",
+        "2": "Luôn có một.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hai tia đối nhau là hai tia:",
+      "choices": [
+        "Chung gốc và trùng nhau",
+        "Song song",
+        "Không chung gốc",
+        "Chung gốc và tạo thành một đường thẳng"
+      ],
+      "answer": 3,
+      "explain": "Ví dụ Ox và Oy trên đường xy.",
+      "wrong_explain": {
+        "0": "Đó là hai tia trùng nhau.",
+        "1": "Không.",
+        "2": "Phải chung gốc."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nếu M nằm giữa A và B thì:",
+      "choices": [
+        "A và B cùng phía đối với M",
+        "M và B khác phía đối với A",
+        "A và B nằm khác phía đối với M",
+        "A nằm giữa M và B"
+      ],
+      "answer": 2,
+      "explain": "M ở giữa.",
+      "wrong_explain": {
+        "0": "Khác phía.",
+        "1": "Cùng phía.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Điểm O trên đường thẳng tạo ra bao nhiêu tia gốc O?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "2 tia đối nhau."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trên đường thẳng lấy 4 điểm. Có bao nhiêu cặp tia đối nhau có gốc là các điểm đó?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Mỗi điểm có 1 cặp: 4."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trên đường thẳng lấy 6 điểm. Số tia gốc là các điểm đó là:",
+      "expr": "12",
+      "answer": "12",
+      "explain": "6·2 = 12."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ba điểm A, B, C thẳng hàng, B nằm giữa A và C. Có bao nhiêu điểm nằm giữa hai điểm còn lại?",
+      "expr": "1",
+      "answer": "1",
+      "explain": "Chỉ B."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai đường thẳng cắt nhau tại O. Có bao nhiêu tia gốc O?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Mỗi đường cho 2 tia: 4."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ba đường thẳng đồng quy tại O. Có bao nhiêu tia gốc O?",
+      "expr": "6",
+      "answer": "6",
+      "explain": "3·2 = 6."
+    }
+  ]
+}

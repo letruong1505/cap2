@@ -1,0 +1,164 @@
+{
+  "id": "bai-10",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương II. Tính chia hết trong tập hợp các số tự nhiên",
+  "lesson": "Bài 10. Số nguyên tố",
+  "section": "",
+  "bookPage": 38,
+  "requirements": [
+    "Nhận biết số nguyên tố, hợp số; phân tích một số ra thừa số nguyên tố."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Số nguyên tố là số tự nhiên lớn hơn 1, chỉ có hai ước là 1 và chính nó. Hợp số là số tự nhiên lớn hơn 1, có nhiều hơn hai ước. Số 0 và số 1 không là số nguyên tố, cũng không là hợp số."
+    },
+    {
+      "type": "text",
+      "content": "Các số nguyên tố nhỏ hơn 20: 2; 3; 5; 7; 11; 13; 17; 19. Số 2 là số nguyên tố chẵn duy nhất."
+    },
+    {
+      "type": "text",
+      "content": "Phân tích một số ra thừa số nguyên tố là viết số đó dưới dạng tích các thừa số nguyên tố (theo sơ đồ cây hoặc sơ đồ cột). Ví dụ 60 = 2²·3·5. Dù phân tích bằng cách nào ta cũng được cùng một kết quả."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Phân tích 120 ra thừa số nguyên tố và kiểm tra.",
+      "steps": [
+        "120 = 2³·3·5.",
+        "Kiểm tra: 8·3·5 = 120."
+      ],
+      "expr": "8*3*5",
+      "answer": "120"
+    },
+    {
+      "problem": "Dạng đếm ước từ dạng phân tích: 72 = 2³·3² có bao nhiêu ước?",
+      "steps": [
+        "Số ước = (3 + 1)·(2 + 1).",
+        "= 12 ước."
+      ],
+      "expr": "(3+1)*(2+1)",
+      "answer": "12"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số nào là số nguyên tố?",
+      "choices": [
+        "21",
+        "29",
+        "27",
+        "1"
+      ],
+      "answer": 1,
+      "explain": "29 chỉ có hai ước 1 và 29.",
+      "wrong_explain": {
+        "0": "21 = 3·7.",
+        "2": "27 = 3·9.",
+        "3": "1 không là số nguyên tố."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số nguyên tố chẵn duy nhất là:",
+      "choices": [
+        "2",
+        "0",
+        "4",
+        "Không có"
+      ],
+      "answer": 0,
+      "explain": "2 chỉ có ước 1 và 2.",
+      "wrong_explain": {
+        "1": "0 không là số nguyên tố.",
+        "2": "4 là hợp số.",
+        "3": "Số 2 là số nguyên tố chẵn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Phân tích 36 ra thừa số nguyên tố được:",
+      "choices": [
+        "4·9",
+        "6²",
+        "2·18",
+        "2²·3²"
+      ],
+      "answer": 3,
+      "explain": "36 = 2·2·3·3.",
+      "wrong_explain": {
+        "0": "4 và 9 không phải số nguyên tố.",
+        "1": "6 không là số nguyên tố.",
+        "2": "18 là hợp số."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có bao nhiêu số nguyên tố nhỏ hơn 20?",
+      "expr": "8",
+      "answer": "8",
+      "explain": "2; 3; 5; 7; 11; 13; 17; 19."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tổng các số nguyên tố nhỏ hơn 10 là:",
+      "expr": "2+3+5+7",
+      "answer": "17",
+      "explain": "= 17."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số 84 = 2²·3·7. Tính lại 84 từ dạng phân tích.",
+      "expr": "4*3*7",
+      "answer": "84",
+      "explain": "= 84."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số 2²·3²·5 bằng bao nhiêu?",
+      "expr": "4*9*5",
+      "answer": "180",
+      "explain": "= 180."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm số nguyên tố lớn nhất có hai chữ số.",
+      "expr": "97",
+      "answer": "97",
+      "explain": "97."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Số 48 = 2⁴·3 có bao nhiêu ước?",
+      "expr": "(4+1)*(1+1)",
+      "answer": "10",
+      "explain": "5·2 = 10 ước."
+    }
+  ]
+}

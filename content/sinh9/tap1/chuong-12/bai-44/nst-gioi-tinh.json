@@ -1,0 +1,157 @@
+{
+  "id": "bai-44",
+  "grade": 9,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 9",
+  "chapter": "Chương XII. Di truyền nhiễm sắc thể",
+  "lesson": "Bài 44. Nhiễm sắc thể giới tính và cơ chế xác định giới tính",
+  "section": "",
+  "bookPage": 191,
+  "requirements": [
+    "Phân biệt NST thường và NST giới tính; cơ chế xác định giới tính; các yếu tố ảnh hưởng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Trong tế bào lưỡng bội có các cặp NST thường và một cặp NST giới tính. Ở người: nữ XX, nam XY."
+    },
+    {
+      "type": "text",
+      "content": "Cơ chế xác định giới tính ở người: mẹ (XX) cho một loại trứng X; bố (XY) cho hai loại tinh trùng X và Y với tỉ lệ ngang nhau. Trứng X + tinh trùng X → XX (gái); trứng X + tinh trùng Y → XY (trai). Tỉ lệ trai : gái xấp xỉ 1 : 1."
+    },
+    {
+      "type": "text",
+      "content": "Giới tính còn chịu ảnh hưởng của môi trường trong và ngoài: hormone sinh dục, nhiệt độ (một số loài bò sát), ánh sáng… Ứng dụng: điều chỉnh tỉ lệ đực cái trong chăn nuôi."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tế bào người có 46 NST, trong đó bao nhiêu NST thường?",
+      "steps": [
+        "46 − 2 (cặp giới tính).",
+        "= 44."
+      ],
+      "expr": "46-2",
+      "answer": "44"
+    },
+    {
+      "problem": "Dạng xác suất: xác suất sinh con trai ở người?",
+      "steps": [
+        "Tinh trùng X : Y = 1 : 1.",
+        "1/2."
+      ],
+      "expr": "1/2",
+      "answer": "0.5"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Cặp NST giới tính ở nam giới là:",
+      "choices": [
+        "XX",
+        "XY",
+        "XO",
+        "YY"
+      ],
+      "answer": 1,
+      "explain": "Nam XY.",
+      "wrong_explain": {
+        "0": "Nữ.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Giới tính của con do yếu tố nào quyết định?",
+      "choices": [
+        "Tinh trùng mang X hay Y",
+        "Trứng",
+        "Chế độ ăn của mẹ",
+        "Thời tiết"
+      ],
+      "answer": 0,
+      "explain": "Bố cho X hoặc Y.",
+      "wrong_explain": {
+        "1": "Trứng chỉ mang X.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tỉ lệ trai : gái xấp xỉ:",
+      "choices": [
+        "3 : 1",
+        "2 : 1",
+        "1 : 2",
+        "1 : 1"
+      ],
+      "answer": 3,
+      "explain": "Hai loại tinh trùng tỉ lệ ngang nhau.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ở người, mẹ tạo ra bao nhiêu loại trứng về NST giới tính?",
+      "choices": [
+        "Hai loại",
+        "Ba loại",
+        "Một loại (X)",
+        "Không có"
+      ],
+      "answer": 2,
+      "explain": "XX.",
+      "wrong_explain": {
+        "0": "Bố.",
+        "1": "Không.",
+        "3": "Có."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tinh trùng người có bao nhiêu NST thường?",
+      "expr": "22",
+      "answer": "22",
+      "explain": "23 − 1."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Xác suất sinh hai con đều là gái:",
+      "expr": "1/4",
+      "answer": "0.25",
+      "explain": "1/2·1/2."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ruồi giấm 2n = 8 có bao nhiêu NST thường?",
+      "expr": "6",
+      "answer": "6",
+      "explain": "8 − 2."
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "id": "bai-25",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 2",
+  "chapter": "Chương VIII. Xác suất của biến cố trong một số mô hình xác suất đơn giản",
+  "lesson": "Bài 25. Phép thử ngẫu nhiên và không gian mẫu",
+  "section": "",
+  "bookPage": 56,
+  "requirements": [
+    "Nhận biết phép thử ngẫu nhiên, không gian mẫu; mô tả không gian mẫu bằng liệt kê, bảng, sơ đồ cây."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phép thử ngẫu nhiên là hoạt động mà ta không biết trước kết quả. Tập hợp tất cả các kết quả có thể xảy ra gọi là không gian mẫu, kí hiệu Ω."
+    },
+    {
+      "type": "text",
+      "content": "Mô tả không gian mẫu: liệt kê; lập bảng (khi phép thử gồm hai thành phần, ví dụ gieo hai xúc xắc); vẽ sơ đồ cây (khi phép thử gồm nhiều bước)."
+    },
+    {
+      "type": "text",
+      "content": "Ví dụ: tung hai đồng xu: Ω = {SS; SN; NS; NN}, có 4 phần tử. Gieo hai xúc xắc: Ω có 36 phần tử."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Gieo một xúc xắc rồi tung một đồng xu. Không gian mẫu có bao nhiêu phần tử?",
+      "steps": [
+        "Xúc xắc 6 kết quả, đồng xu 2 kết quả.",
+        "6·2 = 12."
+      ],
+      "expr": "6*2",
+      "answer": "12"
+    },
+    {
+      "problem": "Dạng sơ đồ cây: chọn 1 áo trong 3 áo và 1 quần trong 2 quần. Có bao nhiêu kết quả?",
+      "steps": [
+        "Mỗi áo kết hợp với 2 quần.",
+        "3·2 = 6."
+      ],
+      "expr": "3*2",
+      "answer": "6"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Không gian mẫu là:",
+      "choices": [
+        "Một kết quả bất kì",
+        "Kết quả thuận lợi",
+        "Tập hợp tất cả các kết quả có thể của phép thử",
+        "Số lần thực hiện"
+      ],
+      "answer": 2,
+      "explain": "Kí hiệu Ω.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tung hai đồng xu, không gian mẫu là:",
+      "choices": [
+        "{S; N}",
+        "{SS; SN; NS; NN}",
+        "{SS; NN}",
+        "{SN; NS}"
+      ],
+      "answer": 1,
+      "explain": "4 kết quả.",
+      "wrong_explain": {
+        "0": "Đó là một đồng xu.",
+        "2": "Thiếu SN, NS.",
+        "3": "Thiếu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Gieo hai xúc xắc, không gian mẫu có bao nhiêu phần tử?",
+      "expr": "36",
+      "answer": "36",
+      "explain": "36."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tung ba đồng xu, không gian mẫu có bao nhiêu phần tử?",
+      "expr": "8",
+      "answer": "8",
+      "explain": "8."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lấy 1 bi từ hộp có 4 bi (đánh số 1–4). Số phần tử của Ω là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "4."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lấy lần lượt 2 bi có hoàn lại từ hộp 3 bi. Số phần tử của Ω là:",
+      "expr": "9",
+      "answer": "9",
+      "explain": "3·3 = 9."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lấy lần lượt 2 bi không hoàn lại từ hộp 3 bi. Số phần tử của Ω là:",
+      "expr": "6",
+      "answer": "6",
+      "explain": "3·2 = 6."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chọn ngẫu nhiên 1 bạn trực nhật từ tổ 9 bạn. Số phần tử của Ω là:",
+      "expr": "9",
+      "answer": "9",
+      "explain": "9."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chọn một số từ 1 đến 20 rồi tung đồng xu. Số phần tử của Ω là:",
+      "expr": "40",
+      "answer": "40",
+      "explain": "20·2 = 40."
+    }
+  ]
+}

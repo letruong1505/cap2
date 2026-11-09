@@ -1,0 +1,153 @@
+{
+  "id": "bai-30",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 2",
+  "chapter": "Chương VII. Số thập phân",
+  "lesson": "Bài 30. Làm tròn và ước lượng",
+  "section": "",
+  "bookPage": 34,
+  "requirements": [
+    "Làm tròn số thập phân đến hàng cho trước; ước lượng kết quả phép tính."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Quy tắc làm tròn số thập phân dương: nếu chữ số đầu tiên bị bỏ đi nhỏ hơn 5 thì giữ nguyên bộ phận còn lại; nếu lớn hơn hoặc bằng 5 thì cộng thêm 1 vào chữ số cuối cùng của bộ phận còn lại. Phần bỏ đi ở phần thập phân thì bỏ hẳn, ở phần nguyên thì thay bằng chữ số 0."
+    },
+    {
+      "type": "text",
+      "content": "Làm tròn số thập phân âm: làm tròn số đối của nó rồi đặt dấu \"−\" trước kết quả."
+    },
+    {
+      "type": "text",
+      "content": "Ước lượng kết quả phép tính bằng cách làm tròn các số rồi tính, giúp kiểm tra nhanh kết quả."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Làm tròn 72,867 đến hàng phần trăm.",
+      "steps": [
+        "Chữ số bỏ đi đầu tiên là 7 ≥ 5.",
+        "72,86 + 0,01 = 72,87."
+      ],
+      "expr": "72.87",
+      "answer": "72.87"
+    },
+    {
+      "problem": "Dạng ước lượng: ước lượng 19,8·5,1 bằng cách làm tròn đến hàng đơn vị.",
+      "steps": [
+        "19,8 ≈ 20; 5,1 ≈ 5.",
+        "≈ 20·5 = 100."
+      ],
+      "expr": "20*5",
+      "answer": "100"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Làm tròn 3,1415 đến hàng phần mười được:",
+      "choices": [
+        "3,2",
+        "3,14",
+        "3,1",
+        "3"
+      ],
+      "answer": 2,
+      "explain": "Chữ số hàng phần trăm là 4 < 5.",
+      "wrong_explain": {
+        "0": "Chữ số bỏ đi là 4 < 5.",
+        "1": "Đó là hàng phần trăm.",
+        "3": "Đó là hàng đơn vị."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Làm tròn −4,58 đến hàng phần mười được:",
+      "choices": [
+        "−4,5",
+        "−4,6",
+        "4,6",
+        "−4,58"
+      ],
+      "answer": 1,
+      "explain": "Làm tròn số đối rồi thêm dấu.",
+      "wrong_explain": {
+        "0": "Làm tròn số đối 4,58 ≈ 4,6.",
+        "2": "Phải giữ dấu âm.",
+        "3": "Chưa làm tròn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Làm tròn 12,346 đến hàng phần trăm.",
+      "expr": "12.35",
+      "answer": "12.35",
+      "explain": "12,35."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Làm tròn 9,96 đến hàng phần mười.",
+      "expr": "10",
+      "answer": "10",
+      "explain": "10,0."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Làm tròn 1 234 567 đến hàng nghìn.",
+      "expr": "1235000",
+      "answer": "1235000",
+      "explain": "1 235 000."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Làm tròn 0,0456 đến hàng phần nghìn.",
+      "expr": "0.046",
+      "answer": "0.046",
+      "explain": "0,046."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Làm tròn 25,5 đến hàng đơn vị.",
+      "expr": "26",
+      "answer": "26",
+      "explain": "26."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ước lượng 49,7 + 30,2 bằng cách làm tròn đến hàng chục.",
+      "expr": "50+30",
+      "answer": "80",
+      "explain": "≈ 80."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dân số một xã là 12 476 người. Làm tròn đến hàng trăm.",
+      "expr": "12500",
+      "answer": "12500",
+      "explain": "12 500 người."
+    }
+  ]
+}

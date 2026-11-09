@@ -1,0 +1,161 @@
+{
+  "id": "bai-46",
+  "grade": 9,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 9",
+  "chapter": "Chương XII. Di truyền nhiễm sắc thể",
+  "lesson": "Bài 46. Đột biến nhiễm sắc thể",
+  "section": "",
+  "bookPage": 197,
+  "requirements": [
+    "Nêu được khái niệm, các dạng đột biến cấu trúc và số lượng NST; hậu quả, vai trò."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đột biến NST là những biến đổi về cấu trúc hoặc số lượng NST."
+    },
+    {
+      "type": "text",
+      "content": "Đột biến cấu trúc NST: mất đoạn, lặp đoạn, đảo đoạn, chuyển đoạn. Ví dụ mất đoạn NST số 21 gây ung thư máu."
+    },
+    {
+      "type": "text",
+      "content": "Đột biến số lượng NST: lệch bội (thêm hoặc mất một hay vài NST ở một cặp, ví dụ thể ba nhiễm 2n + 1, thể một nhiễm 2n − 1); đa bội (bộ NST tăng theo bội số của n lớn hơn 2n: 3n, 4n…)."
+    },
+    {
+      "type": "text",
+      "content": "Hội chứng Down: có 3 NST số 21 (2n + 1 = 47). Thể đa bội ở thực vật thường có cơ quan sinh dưỡng to, sinh trưởng mạnh, được ứng dụng trong chọn giống (dưa hấu tam bội không hạt)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Người bị hội chứng Down có bao nhiêu NST trong tế bào?",
+      "steps": [
+        "2n + 1 = 46 + 1.",
+        "= 47."
+      ],
+      "expr": "46+1",
+      "answer": "47"
+    },
+    {
+      "problem": "Dạng đa bội: loài có 2n = 24, thể tam bội có bao nhiêu NST?",
+      "steps": [
+        "3n = 3·12.",
+        "= 36."
+      ],
+      "expr": "3*12",
+      "answer": "36"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hội chứng Down do:",
+      "choices": [
+        "Thiếu một NST X",
+        "Mất đoạn NST 5",
+        "Đột biến gene",
+        "Thừa một NST số 21"
+      ],
+      "answer": 3,
+      "explain": "Thể ba nhiễm 21.",
+      "wrong_explain": {
+        "0": "Hội chứng Turner.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Dạng nào là đột biến cấu trúc NST?",
+      "choices": [
+        "Thể ba nhiễm",
+        "Tam bội",
+        "Đảo đoạn",
+        "Thể một nhiễm"
+      ],
+      "answer": 2,
+      "explain": "Cấu trúc.",
+      "wrong_explain": {
+        "0": "Số lượng.",
+        "1": "Số lượng.",
+        "3": "Số lượng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Thể đa bội là thể có bộ NST:",
+      "choices": [
+        "2n + 1",
+        "Tăng theo bội số của n, lớn hơn 2n",
+        "2n − 1",
+        "n"
+      ],
+      "answer": 1,
+      "explain": "3n, 4n.",
+      "wrong_explain": {
+        "0": "Lệch bội.",
+        "2": "Lệch bội.",
+        "3": "Đơn bội."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dưa hấu không hạt thường là thể:",
+      "choices": [
+        "Tam bội (3n)",
+        "Lưỡng bội",
+        "Tứ bội",
+        "Một nhiễm"
+      ],
+      "answer": 0,
+      "explain": "Tam bội bất thụ.",
+      "wrong_explain": {
+        "1": "Có hạt.",
+        "2": "Có hạt.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Loài 2n = 14. Thể ba nhiễm có bao nhiêu NST?",
+      "expr": "15",
+      "answer": "15",
+      "explain": "2n + 1."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Loài 2n = 20. Thể tứ bội có bao nhiêu NST?",
+      "expr": "40",
+      "answer": "40",
+      "explain": "4n = 40."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Loài 2n = 8. Thể một nhiễm có bao nhiêu NST?",
+      "expr": "7",
+      "answer": "7",
+      "explain": "2n − 1."
+    }
+  ]
+}

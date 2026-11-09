@@ -1,0 +1,153 @@
+{
+  "id": "bai-37",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 2",
+  "chapter": "Chương VIII. Những hình hình học cơ bản",
+  "lesson": "Bài 37. Số đo góc",
+  "section": "",
+  "bookPage": 61,
+  "requirements": [
+    "Đo góc bằng thước đo góc; nhận biết góc nhọn, góc vuông, góc tù, góc bẹt."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Mỗi góc có một số đo; số đo góc bẹt là 180°. Số đo của mỗi góc không vượt quá 180°. Hai góc bằng nhau nếu số đo bằng nhau."
+    },
+    {
+      "type": "text",
+      "content": "Góc vuông có số đo bằng 90°. Góc nhọn có số đo lớn hơn 0° và nhỏ hơn 90°. Góc tù có số đo lớn hơn 90° và nhỏ hơn 180°."
+    },
+    {
+      "type": "text",
+      "content": "Đo góc: đặt thước sao cho tâm thước trùng đỉnh góc, một cạnh đi qua vạch 0; cạnh kia đi qua vạch nào thì đó là số đo góc."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Kim giờ và kim phút lúc 2 giờ tạo góc bao nhiêu độ? (mỗi khoảng giờ 30°)",
+      "steps": [
+        "Từ 12 đến 2 có 2 khoảng giờ.",
+        "2·30° = 60°."
+      ],
+      "expr": "2*30",
+      "answer": "60"
+    },
+    {
+      "problem": "Dạng phân loại góc: trong các góc 45°, 90°, 120°, 180°, 30°, có bao nhiêu góc nhọn?",
+      "steps": [
+        "Góc nhọn < 90°: 45°, 30°.",
+        "Có 2 góc."
+      ],
+      "expr": "2",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Góc có số đo 120° là:",
+      "choices": [
+        "Góc nhọn",
+        "Góc vuông",
+        "Góc tù",
+        "Góc bẹt"
+      ],
+      "answer": 2,
+      "explain": "90° < 120° < 180°.",
+      "wrong_explain": {
+        "0": "Nhỏ hơn 90°.",
+        "1": "Bằng 90°.",
+        "3": "Bằng 180°."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Góc nhọn có số đo:",
+      "choices": [
+        "Bằng 90°",
+        "Lớn hơn 0° và nhỏ hơn 90°",
+        "Lớn hơn 90°",
+        "Bằng 180°"
+      ],
+      "answer": 1,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Góc vuông.",
+        "2": "Góc tù.",
+        "3": "Góc bẹt."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số đo góc bẹt là bao nhiêu độ?",
+      "expr": "180",
+      "answer": "180",
+      "explain": "180°."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lúc 4 giờ, góc giữa kim giờ và kim phút là:",
+      "expr": "4*30",
+      "answer": "120",
+      "explain": "120°."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lúc 9 giờ, góc giữa hai kim là:",
+      "expr": "90",
+      "answer": "90",
+      "explain": "90°."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lúc 1 giờ, góc giữa hai kim là:",
+      "expr": "30",
+      "answer": "30",
+      "explain": "30°."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong các góc 89°, 91°, 90°, 179°, 15°, có bao nhiêu góc tù?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "91° và 179°."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Góc vuông bằng mấy lần góc 30°?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "90 : 30 = 3."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lúc 5 giờ, góc giữa hai kim là:",
+      "expr": "150",
+      "answer": "150",
+      "explain": "5·30° = 150°."
+    }
+  ]
+}

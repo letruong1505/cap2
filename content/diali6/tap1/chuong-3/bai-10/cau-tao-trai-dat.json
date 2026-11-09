@@ -1,0 +1,157 @@
+{
+  "id": "bai-10",
+  "grade": 6,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 6",
+  "chapter": "Chương 3. Cấu tạo của Trái Đất. Vỏ Trái Đất",
+  "lesson": "Bài 10. Cấu tạo của Trái Đất. Các mảng kiến tạo",
+  "section": "",
+  "bookPage": 128,
+  "requirements": [
+    "Trình bày được cấu tạo của Trái Đất gồm ba lớp; xác định các mảng kiến tạo lớn và các đới tiếp giáp."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Trái Đất gồm ba lớp: vỏ Trái Đất (dày 5–70 km, rắn chắc, nhiệt độ tăng dần theo độ sâu), man-ti (dày khoảng 2 900 km, trạng thái quánh dẻo đến rắn), nhân (dày khoảng 3 400 km, nhân ngoài lỏng, nhân trong rắn, nhiệt độ khoảng 5 000 °C)."
+    },
+    {
+      "type": "text",
+      "content": "Vỏ Trái Đất gồm vỏ lục địa và vỏ đại dương. Thạch quyển gồm vỏ Trái Đất và phần trên của man-ti, bị nứt vỡ thành các mảng kiến tạo."
+    },
+    {
+      "type": "text",
+      "content": "Các mảng kiến tạo lớn: Âu – Á, Phi, Ấn Độ – Ô-xtrây-li-a, Bắc Mỹ, Nam Mỹ, Nam Cực, Thái Bình Dương. Các mảng di chuyển rất chậm (vài cm/năm), có thể tách xa hoặc xô vào nhau; nơi tiếp giáp thường xảy ra động đất, núi lửa, hình thành núi."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Vỏ Trái Đất dày tối đa 70 km, man-ti dày khoảng 2 900 km, nhân khoảng 3 400 km. Tổng độ dày (bán kính) khoảng bao nhiêu km?",
+      "steps": [
+        "70 + 2 900 + 3 400.",
+        "= 6 370 km."
+      ],
+      "expr": "70+2900+3400",
+      "answer": "6370"
+    },
+    {
+      "problem": "Dạng tính tốc độ mảng: mảng di chuyển 5 cm/năm. Sau 1 triệu năm di chuyển bao nhiêu km?",
+      "steps": [
+        "5·1 000 000 = 5 000 000 cm.",
+        "= 50 km."
+      ],
+      "expr": "5*1000000/100000",
+      "answer": "50"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Lớp ngoài cùng của Trái Đất là:",
+      "choices": [
+        "Vỏ Trái Đất",
+        "Man-ti",
+        "Nhân",
+        "Khí quyển"
+      ],
+      "answer": 0,
+      "explain": "Vỏ.",
+      "wrong_explain": {
+        "1": "Lớp giữa.",
+        "2": "Trong cùng.",
+        "3": "Không thuộc cấu tạo trong."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Lớp có nhiệt độ cao nhất là:",
+      "choices": [
+        "Vỏ Trái Đất",
+        "Man-ti",
+        "Thạch quyển",
+        "Nhân Trái Đất"
+      ],
+      "answer": 3,
+      "explain": "Khoảng 5 000 °C.",
+      "wrong_explain": {
+        "0": "Thấp nhất.",
+        "1": "Thấp hơn nhân.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nơi tiếp giáp các mảng kiến tạo thường xảy ra:",
+      "choices": [
+        "Mưa nhiều",
+        "Tuyết rơi",
+        "Động đất, núi lửa",
+        "Không có hiện tượng gì"
+      ],
+      "answer": 2,
+      "explain": "Vùng bất ổn.",
+      "wrong_explain": {
+        "0": "Không liên quan.",
+        "1": "Không.",
+        "3": "Có."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Việt Nam nằm trên mảng kiến tạo:",
+      "choices": [
+        "Thái Bình Dương",
+        "Âu – Á",
+        "Ấn Độ – Ô-xtrây-li-a",
+        "Phi"
+      ],
+      "answer": 1,
+      "explain": "Mảng Âu – Á.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trái Đất gồm bao nhiêu lớp?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Vỏ, man-ti, nhân."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Kể tên 7 mảng lớn đã nêu. Có bao nhiêu mảng?",
+      "expr": "7",
+      "answer": "7",
+      "explain": "7."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mảng di chuyển 3 cm/năm. Sau 100 năm di chuyển bao nhiêu mét?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "300 cm."
+    }
+  ]
+}

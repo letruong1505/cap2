@@ -1,0 +1,153 @@
+{
+  "id": "bai-27",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 2",
+  "chapter": "Chương IX. Đường tròn ngoại tiếp và đường tròn nội tiếp",
+  "lesson": "Bài 27. Góc nội tiếp",
+  "section": "",
+  "bookPage": 70,
+  "requirements": [
+    "Nhận biết góc nội tiếp; vận dụng liên hệ giữa góc nội tiếp và cung bị chắn."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Góc nội tiếp là góc có đỉnh nằm trên đường tròn và hai cạnh chứa hai dây cung của đường tròn đó."
+    },
+    {
+      "type": "formula",
+      "content": "Góc nội tiếp = 1/2 số đo cung bị chắn"
+    },
+    {
+      "type": "text",
+      "content": "Hệ quả: các góc nội tiếp cùng chắn một cung (hoặc chắn các cung bằng nhau) thì bằng nhau; góc nội tiếp chắn nửa đường tròn là góc vuông; góc nội tiếp (≤ 90°) bằng nửa góc ở tâm cùng chắn một cung."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Góc nội tiếp chắn cung 100°. Số đo góc?",
+      "steps": [
+        "Bằng nửa số đo cung.",
+        "= 50°."
+      ],
+      "expr": "100/2",
+      "answer": "50"
+    },
+    {
+      "problem": "Dạng so sánh góc ở tâm: góc ở tâm AOB = 80°, góc nội tiếp ACB chắn cung AB nhỏ bằng bao nhiêu?",
+      "steps": [
+        "Góc nội tiếp = nửa góc ở tâm.",
+        "= 40°."
+      ],
+      "expr": "80/2",
+      "answer": "40"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Góc nội tiếp chắn nửa đường tròn là:",
+      "choices": [
+        "Góc nhọn",
+        "Góc vuông",
+        "Góc tù",
+        "Góc bẹt"
+      ],
+      "answer": 1,
+      "explain": "Chắn cung 180°.",
+      "wrong_explain": {
+        "0": "Bằng 90°.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hai góc nội tiếp cùng chắn một cung thì:",
+      "choices": [
+        "Bằng nhau",
+        "Bù nhau",
+        "Phụ nhau",
+        "Gấp đôi nhau"
+      ],
+      "answer": 0,
+      "explain": "Hệ quả.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Góc nội tiếp chắn cung 140°. Số đo góc là:",
+      "expr": "70",
+      "answer": "70",
+      "explain": "70°."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Góc nội tiếp 35°. Số đo cung bị chắn là:",
+      "expr": "70",
+      "answer": "70",
+      "explain": "70°."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Góc ở tâm 120°. Góc nội tiếp cùng chắn cung đó là:",
+      "expr": "60",
+      "answer": "60",
+      "explain": "60°."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC nội tiếp đường tròn đường kính BC. Góc BAC bằng:",
+      "expr": "90",
+      "answer": "90",
+      "explain": "90°."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC nội tiếp (O), góc A = 50°. Góc BOC bằng:",
+      "expr": "100",
+      "answer": "100",
+      "explain": "100°."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "AB là đường kính, C trên đường tròn, góc ABC = 30°. Góc BAC bằng:",
+      "expr": "60",
+      "answer": "60",
+      "explain": "Góc C = 90°, A = 60°."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Góc nội tiếp chắn cung 2/9 đường tròn có số đo:",
+      "expr": "40",
+      "answer": "40",
+      "explain": "Cung 80°, góc 40°."
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "id": "bai-36",
+  "grade": 9,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 9",
+  "chapter": "Chương XI. Di truyền học Mendel. Cơ sở phân tử của hiện tượng di truyền",
+  "lesson": "Bài 36. Khái quát về di truyền học",
+  "section": "",
+  "bookPage": 159,
+  "requirements": [
+    "Nêu được khái niệm di truyền, biến dị; một số thuật ngữ, kí hiệu cơ bản của di truyền học."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Di truyền là hiện tượng truyền đạt các đặc điểm của bố mẹ, tổ tiên cho các thế hệ con cháu. Biến dị là hiện tượng con sinh ra khác bố mẹ và khác nhau ở nhiều chi tiết."
+    },
+    {
+      "type": "text",
+      "content": "Một số thuật ngữ: tính trạng (đặc điểm về hình thái, cấu tạo, sinh lí); cặp tính trạng tương phản (hai trạng thái biểu hiện trái ngược của cùng loại tính trạng); nhân tố di truyền (gene); giống (dòng) thuần chủng; kiểu hình; kiểu gene; allele; đồng hợp, dị hợp."
+    },
+    {
+      "type": "text",
+      "content": "Kí hiệu: P (bố mẹ), F₁, F₂ (thế hệ con), G (giao tử), × (phép lai), ♀ (cái), ♂ (đực)."
+    },
+    {
+      "type": "text",
+      "content": "Mendel dùng phương pháp phân tích các thế hệ lai: lai các cặp bố mẹ thuần chủng khác nhau về một hoặc vài cặp tính trạng tương phản, theo dõi sự di truyền ở con cháu, dùng toán thống kê phân tích."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Kiểu gene AaBb có bao nhiêu cặp gene dị hợp?",
+      "steps": [
+        "Aa và Bb đều dị hợp.",
+        "2 cặp."
+      ],
+      "expr": "2",
+      "answer": "2"
+    },
+    {
+      "problem": "Dạng đếm loại giao tử: cơ thể Aa tạo bao nhiêu loại giao tử?",
+      "steps": [
+        "A và a.",
+        "2 loại."
+      ],
+      "expr": "2",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Di truyền là hiện tượng:",
+      "choices": [
+        "Con khác bố mẹ",
+        "Cơ thể lớn lên",
+        "Tế bào phân chia",
+        "Truyền đạt đặc điểm của bố mẹ cho con cháu"
+      ],
+      "answer": 3,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Biến dị.",
+        "1": "Sinh trưởng.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kí hiệu P trong di truyền học là:",
+      "choices": [
+        "Thế hệ con",
+        "Giao tử",
+        "Cặp bố mẹ xuất phát",
+        "Phép lai"
+      ],
+      "answer": 2,
+      "explain": "Parentes.",
+      "wrong_explain": {
+        "0": "F.",
+        "1": "G.",
+        "3": "×."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Kiểu gene đồng hợp là:",
+      "choices": [
+        "Aa",
+        "AA",
+        "AaBb",
+        "Bb"
+      ],
+      "answer": 1,
+      "explain": "Hai allele giống nhau.",
+      "wrong_explain": {
+        "0": "Dị hợp.",
+        "2": "Dị hợp.",
+        "3": "Dị hợp."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cặp tính trạng tương phản là:",
+      "choices": [
+        "Hạt vàng và hạt xanh ở đậu Hà Lan",
+        "Hạt vàng và thân cao",
+        "Hoa đỏ và hạt trơn",
+        "Thân cao và quả lục"
+      ],
+      "answer": 0,
+      "explain": "Cùng loại, trái ngược.",
+      "wrong_explain": {
+        "1": "Khác loại tính trạng.",
+        "2": "Khác loại.",
+        "3": "Khác loại."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Kiểu gene AABbDd có bao nhiêu cặp gene dị hợp?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Bb, Dd."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cơ thể AA tạo bao nhiêu loại giao tử?",
+      "expr": "1",
+      "answer": "1",
+      "explain": "Chỉ A."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cơ thể AaBb tạo bao nhiêu loại giao tử?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "AB, Ab, aB, ab."
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "id": "bai-51",
+  "grade": 6,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 6",
+  "chapter": "Chương IX. Năng lượng",
+  "lesson": "Bài 51. Tiết kiệm năng lượng",
+  "section": "",
+  "bookPage": 176,
+  "requirements": [
+    "Nêu được các biện pháp tiết kiệm năng lượng; ý nghĩa của tiết kiệm năng lượng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tiết kiệm năng lượng là sử dụng năng lượng hợp lí, hiệu quả, giảm hao phí. Lợi ích: giảm chi phí, bảo vệ tài nguyên, giảm ô nhiễm môi trường."
+    },
+    {
+      "type": "text",
+      "content": "Biện pháp: tắt thiết bị điện khi không dùng; sử dụng thiết bị tiết kiệm năng lượng (đèn LED, máy có nhãn năng lượng); tận dụng ánh sáng, gió tự nhiên; đi bộ, đi xe đạp hoặc phương tiện công cộng."
+    },
+    {
+      "type": "text",
+      "content": "Điện năng tiêu thụ (kWh) = công suất (kW) × thời gian sử dụng (h)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Bóng đèn 40 W sáng 5 giờ/ngày tiêu thụ bao nhiêu kWh mỗi ngày?",
+      "steps": [
+        "40 W = 0,04 kW.",
+        "0,04·5 = 0,2 kWh."
+      ],
+      "expr": "0.04*5",
+      "answer": "0.2"
+    },
+    {
+      "problem": "Dạng so sánh tiết kiệm: thay đèn 60 W bằng đèn LED 9 W, mỗi ngày dùng 5 giờ. Tiết kiệm bao nhiêu Wh mỗi ngày?",
+      "steps": [
+        "(60 − 9)·5.",
+        "= 255 Wh."
+      ],
+      "expr": "(60-9)*5",
+      "answer": "255"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Biện pháp tiết kiệm điện:",
+      "choices": [
+        "Bật điều hoà 16 °C cả ngày",
+        "Tắt đèn khi ra khỏi phòng",
+        "Để tivi chế độ chờ suốt đêm",
+        "Mở tủ lạnh lâu"
+      ],
+      "answer": 1,
+      "explain": "Không dùng thì tắt.",
+      "wrong_explain": {
+        "0": "Lãng phí.",
+        "2": "Lãng phí.",
+        "3": "Lãng phí."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đi xe đạp đến trường giúp:",
+      "choices": [
+        "Tiết kiệm nhiên liệu, giảm ô nhiễm",
+        "Tốn xăng",
+        "Tăng khí thải",
+        "Tăng hao phí điện"
+      ],
+      "answer": 0,
+      "explain": "Không dùng nhiên liệu.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Thiết bị nào tiết kiệm điện hơn khi chiếu sáng?",
+      "choices": [
+        "Đèn sợi đốt",
+        "Đèn halogen",
+        "Đèn cao áp",
+        "Đèn LED"
+      ],
+      "answer": 3,
+      "explain": "Hiệu suất cao.",
+      "wrong_explain": {
+        "0": "Tốn điện.",
+        "1": "Tốn điện.",
+        "2": "Tốn điện."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Quạt 50 W chạy 8 giờ tiêu thụ bao nhiêu kWh?",
+      "expr": "0.4",
+      "answer": "0.4",
+      "explain": "0,05·8."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tivi 100 W xem 3 giờ/ngày trong 30 ngày tiêu thụ bao nhiêu kWh?",
+      "expr": "9",
+      "answer": "9",
+      "explain": "0,1·3·30."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá điện 2 000 đồng/kWh. Dùng 9 kWh hết bao nhiêu đồng?",
+      "expr": "18000",
+      "answer": "18000",
+      "explain": "18 000 đồng."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bình nóng lạnh 2 kW dùng 30 phút/ngày tiêu thụ (kWh):",
+      "expr": "1",
+      "answer": "1",
+      "explain": "2·0,5."
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "id": "bai-5",
+  "grade": 6,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 6",
+  "chapter": "Chương I. Mở đầu về Khoa học tự nhiên",
+  "lesson": "Bài 5. Đo chiều dài",
+  "section": "",
+  "bookPage": 17,
+  "requirements": [
+    "Nêu được đơn vị đo chiều dài; cách đo chiều dài bằng thước; ước lượng chiều dài."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đơn vị đo chiều dài trong hệ đơn vị đo lường chính thức của nước ta là mét (m). Các đơn vị thường dùng: kilômét (km), centimét (cm), milimét (mm). 1 km = 1 000 m; 1 m = 100 cm = 1 000 mm."
+    },
+    {
+      "type": "text",
+      "content": "Dụng cụ đo: thước kẻ, thước dây, thước cuộn, thước kẹp… Giới hạn đo (GHĐ) là độ dài lớn nhất ghi trên thước; độ chia nhỏ nhất (ĐCNN) là độ dài giữa hai vạch chia liên tiếp."
+    },
+    {
+      "type": "text",
+      "content": "Cách đo: ước lượng chiều dài để chọn thước có GHĐ và ĐCNN phù hợp; đặt thước dọc theo vật, một đầu vật ngang vạch số 0; đặt mắt nhìn vuông góc với thước; đọc và ghi kết quả theo vạch chia gần nhất với đầu kia của vật."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đổi 2,5 km ra mét.",
+      "steps": [
+        "1 km = 1 000 m.",
+        "2,5·1 000 = 2 500 m."
+      ],
+      "expr": "2.5*1000",
+      "answer": "2500"
+    },
+    {
+      "problem": "Dạng tìm ĐCNN: thước có GHĐ 30 cm, từ vạch 0 đến vạch 1 cm có 10 khoảng chia. ĐCNN là bao nhiêu mm?",
+      "steps": [
+        "1 cm = 10 mm chia 10 khoảng.",
+        "ĐCNN = 1 mm."
+      ],
+      "expr": "10/10",
+      "answer": "1"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn vị đo chiều dài chính thức của nước ta là:",
+      "choices": [
+        "Mét",
+        "Inch",
+        "Kilôgam",
+        "Giây"
+      ],
+      "answer": 0,
+      "explain": "Mét (m).",
+      "wrong_explain": {
+        "1": "Đơn vị của hệ Anh.",
+        "2": "Đơn vị khối lượng.",
+        "3": "Đơn vị thời gian."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Giới hạn đo của thước là:",
+      "choices": [
+        "Độ dài giữa hai vạch liên tiếp",
+        "Chiều rộng thước",
+        "Độ dài nhỏ nhất",
+        "Độ dài lớn nhất ghi trên thước"
+      ],
+      "answer": 3,
+      "explain": "GHĐ.",
+      "wrong_explain": {
+        "0": "Đó là ĐCNN.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi đọc kết quả đo, mắt phải nhìn:",
+      "choices": [
+        "Xiên về bên trái",
+        "Xiên về bên phải",
+        "Vuông góc với thước tại đầu vật",
+        "Từ xa"
+      ],
+      "answer": 2,
+      "explain": "Tránh sai số.",
+      "wrong_explain": {
+        "0": "Sai số.",
+        "1": "Sai số.",
+        "3": "Không chính xác."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Để đo chiều dài sân trường nên dùng:",
+      "choices": [
+        "Thước kẹp",
+        "Thước cuộn",
+        "Thước kẻ 20 cm",
+        "Thước đo góc"
+      ],
+      "answer": 1,
+      "explain": "GHĐ lớn.",
+      "wrong_explain": {
+        "0": "Đo vật nhỏ.",
+        "2": "GHĐ quá nhỏ.",
+        "3": "Không đo chiều dài."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đổi 3,2 m ra cm.",
+      "expr": "320",
+      "answer": "320",
+      "explain": "320 cm."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đổi 450 mm ra cm.",
+      "expr": "45",
+      "answer": "45",
+      "explain": "45 cm."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đo chiều dài bàn 3 lần được 120,1 cm; 120,3 cm; 120,2 cm. Giá trị trung bình (cm) là:",
+      "expr": "(120.1+120.3+120.2)/3",
+      "answer": "120.2",
+      "explain": "120,2 cm."
+    }
+  ]
+}

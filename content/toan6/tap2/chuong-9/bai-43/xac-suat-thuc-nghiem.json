@@ -1,0 +1,153 @@
+{
+  "id": "bai-43",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 2",
+  "chapter": "Chương IX. Dữ liệu và xác suất thực nghiệm",
+  "lesson": "Bài 43. Xác suất thực nghiệm",
+  "section": "",
+  "bookPage": 94,
+  "requirements": [
+    "Tính xác suất thực nghiệm của một sự kiện trong trò chơi, thí nghiệm đơn giản."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Xác suất thực nghiệm của sự kiện A khi thực hiện lặp lại trò chơi/thí nghiệm n lần:"
+    },
+    {
+      "type": "formula",
+      "content": "Xác suất thực nghiệm = (Số lần sự kiện A xảy ra) : (Tổng số lần thực hiện)"
+    },
+    {
+      "type": "text",
+      "content": "Xác suất thực nghiệm là một số từ 0 đến 1, thường được viết dưới dạng phân số, số thập phân hoặc phần trăm. Khi số lần thực hiện càng lớn thì xác suất thực nghiệm càng ổn định."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tung đồng xu 50 lần, mặt ngửa xuất hiện 22 lần. Xác suất thực nghiệm mặt ngửa?",
+      "steps": [
+        "22 : 50.",
+        "= 0,44."
+      ],
+      "expr": "22/50",
+      "answer": "0.44"
+    },
+    {
+      "problem": "Dạng tính mặt còn lại: theo thí nghiệm trên, xác suất thực nghiệm mặt sấp?",
+      "steps": [
+        "Số lần sấp: 50 − 22 = 28.",
+        "28 : 50 = 0,56."
+      ],
+      "expr": "28/50",
+      "answer": "0.56"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Xác suất thực nghiệm được tính bằng:",
+      "choices": [
+        "Tổng số lần : số lần xảy ra",
+        "Số lần sự kiện xảy ra : tổng số lần thực hiện",
+        "Số lần xảy ra · tổng số lần",
+        "Số lần không xảy ra : số lần xảy ra"
+      ],
+      "answer": 1,
+      "explain": "Công thức.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Xác suất thực nghiệm luôn nằm trong khoảng:",
+      "choices": [
+        "Từ 0 đến 1",
+        "Từ 1 đến 10",
+        "Lớn hơn 1",
+        "Âm"
+      ],
+      "answer": 0,
+      "explain": "Vì số lần xảy ra không vượt quá tổng số lần.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Gieo xúc xắc 60 lần, mặt 6 chấm xuất hiện 12 lần. Xác suất thực nghiệm là:",
+      "expr": "12/60",
+      "answer": "0.2",
+      "explain": "0,2."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lấy bóng 40 lần, bóng đỏ 10 lần. Xác suất thực nghiệm lấy bóng đỏ là:",
+      "expr": "10/40",
+      "answer": "0.25",
+      "explain": "0,25."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ném bóng vào rổ 25 lần, trúng 15 lần. Xác suất thực nghiệm ném trúng là:",
+      "expr": "15/25",
+      "answer": "0.6",
+      "explain": "0,6."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Theo dõi 30 ngày, có 9 ngày mưa. Xác suất thực nghiệm ngày có mưa là:",
+      "expr": "9/30",
+      "answer": "0.3",
+      "explain": "0,3."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tung đồng xu 100 lần, sấp 47 lần. Xác suất thực nghiệm mặt ngửa là:",
+      "expr": "53/100",
+      "answer": "0.53",
+      "explain": "0,53."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Kiểm tra 200 sản phẩm có 6 sản phẩm lỗi. Xác suất thực nghiệm sản phẩm lỗi (tính theo %) là:",
+      "expr": "6*100/200",
+      "answer": "3",
+      "explain": "3%."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lấy thẻ 20 lần, thẻ số chẵn xuất hiện 11 lần. Xác suất thực nghiệm thẻ số lẻ là:",
+      "expr": "9/20",
+      "answer": "0.45",
+      "explain": "0,45."
+    }
+  ]
+}

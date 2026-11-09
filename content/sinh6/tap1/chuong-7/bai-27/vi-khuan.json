@@ -1,0 +1,161 @@
+{
+  "id": "bai-27",
+  "grade": 6,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 6",
+  "chapter": "Chương VII. Đa dạng thế giới sống",
+  "lesson": "Bài 27. Vi khuẩn",
+  "section": "",
+  "bookPage": 92,
+  "requirements": [
+    "Mô tả hình dạng, cấu tạo vi khuẩn; vai trò, tác hại; một số bệnh do vi khuẩn và biện pháp phòng tránh."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Vi khuẩn là sinh vật đơn bào, nhân sơ, kích thước rất nhỏ (khoảng 0,5–10 µm). Hình dạng: hình cầu, hình que, hình xoắn, hình dấu phẩy. Cấu tạo gồm thành tế bào, màng tế bào, chất tế bào, vùng nhân; một số có lông, roi."
+    },
+    {
+      "type": "text",
+      "content": "Vai trò: phân giải xác sinh vật, làm sạch môi trường; cố định đạm; chế biến thực phẩm (sữa chua, dưa muối, nước mắm); sản xuất thuốc kháng sinh."
+    },
+    {
+      "type": "text",
+      "content": "Tác hại: gây bệnh cho người (lao, tả, thương hàn, uốn ván, tiêu chảy), động vật, thực vật; làm hỏng thức ăn."
+    },
+    {
+      "type": "text",
+      "content": "Phòng bệnh: ăn chín uống sôi, rửa tay, vệ sinh môi trường, tiêm vaccine, dùng kháng sinh đúng chỉ định."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Vi khuẩn dài 2 µm. Bao nhiêu vi khuẩn xếp liền dài 1 cm (1 cm = 10 000 µm)?",
+      "steps": [
+        "10 000 : 2.",
+        "= 5 000 vi khuẩn."
+      ],
+      "expr": "10000/2",
+      "answer": "5000"
+    },
+    {
+      "problem": "Dạng sinh sản phân đôi: vi khuẩn 30 phút phân đôi 1 lần. Sau 3 giờ từ 1 vi khuẩn có bao nhiêu vi khuẩn?",
+      "steps": [
+        "3 giờ = 6 lần phân đôi.",
+        "2⁶ = 64."
+      ],
+      "expr": "64",
+      "answer": "64"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Vi khuẩn có cấu tạo:",
+      "choices": [
+        "Đa bào, nhân thực",
+        "Đơn bào, nhân sơ",
+        "Đơn bào, nhân thực",
+        "Không có tế bào"
+      ],
+      "answer": 1,
+      "explain": "Vùng nhân.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Đó là virus."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Bệnh nào do vi khuẩn gây ra?",
+      "choices": [
+        "Bệnh lao",
+        "Bệnh cúm",
+        "Bệnh sốt xuất huyết",
+        "Bệnh thuỷ đậu"
+      ],
+      "answer": 0,
+      "explain": "Vi khuẩn lao.",
+      "wrong_explain": {
+        "1": "Virus.",
+        "2": "Virus.",
+        "3": "Virus."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vi khuẩn có lợi trong chế biến thực phẩm như:",
+      "choices": [
+        "Làm hỏng thức ăn",
+        "Gây ngộ độc",
+        "Gây bệnh tả",
+        "Làm sữa chua, muối dưa"
+      ],
+      "answer": 3,
+      "explain": "Vi khuẩn lactic.",
+      "wrong_explain": {
+        "0": "Có hại.",
+        "1": "Có hại.",
+        "2": "Có hại."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Biện pháp phòng bệnh do vi khuẩn là:",
+      "choices": [
+        "Dùng kháng sinh tuỳ tiện",
+        "Ăn đồ sống",
+        "Ăn chín uống sôi, rửa tay thường xuyên",
+        "Không vệ sinh"
+      ],
+      "answer": 2,
+      "explain": "Vệ sinh.",
+      "wrong_explain": {
+        "0": "Gây kháng thuốc.",
+        "1": "Nguy hiểm.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong: lao, tả, cúm, thương hàn, sởi – có bao nhiêu bệnh do vi khuẩn?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Lao, tả, thương hàn."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vi khuẩn 20 phút phân đôi một lần. Sau 1 giờ 20 phút từ 1 vi khuẩn có bao nhiêu?",
+      "expr": "16",
+      "answer": "16",
+      "explain": "4 lần: 2⁴."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vi khuẩn đường kính 1 µm. Đổi ra mm.",
+      "expr": "0.001",
+      "answer": "0.001",
+      "explain": "0,001 mm."
+    }
+  ]
+}

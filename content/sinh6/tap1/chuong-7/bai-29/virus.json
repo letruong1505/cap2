@@ -1,0 +1,161 @@
+{
+  "id": "bai-29",
+  "grade": 6,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 6",
+  "chapter": "Chương VII. Đa dạng thế giới sống",
+  "lesson": "Bài 29. Virus",
+  "section": "",
+  "bookPage": 98,
+  "requirements": [
+    "Mô tả hình dạng, cấu tạo đơn giản của virus; vai trò, tác hại; một số bệnh do virus và biện pháp phòng tránh."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Virus có kích thước rất nhỏ (khoảng 20–300 nm), chỉ quan sát được bằng kính hiển vi điện tử. Virus chưa có cấu tạo tế bào, gồm vỏ protein và lõi là vật chất di truyền; một số có thêm vỏ ngoài."
+    },
+    {
+      "type": "text",
+      "content": "Hình dạng: dạng xoắn (virus khảm thuốc lá), dạng khối (virus adeno), dạng hỗn hợp (thể thực khuẩn)."
+    },
+    {
+      "type": "text",
+      "content": "Virus sống kí sinh bắt buộc trong tế bào sống; ngoài tế bào chúng không biểu hiện sự sống."
+    },
+    {
+      "type": "text",
+      "content": "Bệnh do virus: cúm, sởi, thuỷ đậu, quai bị, COVID-19, viêm gan B, sốt xuất huyết, HIV/AIDS. Phòng: tiêm vaccine, đeo khẩu trang, rửa tay, diệt muỗi, ăn uống đủ chất. Vai trò có ích: sản xuất vaccine, thuốc trừ sâu sinh học."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một virus kích thước 100 nm. Đổi ra µm (1 µm = 1 000 nm).",
+      "steps": [
+        "100 : 1 000.",
+        "= 0,1 µm."
+      ],
+      "expr": "100/1000",
+      "answer": "0.1"
+    },
+    {
+      "problem": "Dạng so sánh kích thước: vi khuẩn dài 2 µm, virus dài 100 nm. Vi khuẩn dài gấp bao nhiêu lần?",
+      "steps": [
+        "2 µm = 2 000 nm.",
+        "2 000 : 100 = 20 lần."
+      ],
+      "expr": "2000/100",
+      "answer": "20"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Virus có cấu tạo:",
+      "choices": [
+        "Đơn bào nhân sơ",
+        "Đa bào",
+        "Vỏ protein và lõi vật chất di truyền, chưa có cấu tạo tế bào",
+        "Đơn bào nhân thực"
+      ],
+      "answer": 2,
+      "explain": "Chưa có tế bào.",
+      "wrong_explain": {
+        "0": "Vi khuẩn.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Virus sống:",
+      "choices": [
+        "Tự do trong đất",
+        "Kí sinh bắt buộc trong tế bào sống",
+        "Tự dưỡng",
+        "Hoại sinh"
+      ],
+      "answer": 1,
+      "explain": "Kí sinh bắt buộc.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Bệnh nào do virus gây ra?",
+      "choices": [
+        "Bệnh sởi",
+        "Bệnh lao",
+        "Bệnh tả",
+        "Bệnh uốn ván"
+      ],
+      "answer": 0,
+      "explain": "Virus sởi.",
+      "wrong_explain": {
+        "1": "Vi khuẩn.",
+        "2": "Vi khuẩn.",
+        "3": "Vi khuẩn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Để quan sát virus cần dùng:",
+      "choices": [
+        "Kính lúp",
+        "Mắt thường",
+        "Kính hiển vi quang học",
+        "Kính hiển vi điện tử"
+      ],
+      "answer": 3,
+      "explain": "Kích thước nm.",
+      "wrong_explain": {
+        "0": "Không đủ.",
+        "1": "Không.",
+        "2": "Thường không đủ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong: cúm, quai bị, lao, thuỷ đậu, tả – có bao nhiêu bệnh do virus?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Cúm, quai bị, thuỷ đậu."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Virus 50 nm. Bao nhiêu virus xếp liền dài 1 µm?",
+      "expr": "20",
+      "answer": "20",
+      "explain": "1 000 : 50."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đổi 0,25 µm ra nm.",
+      "expr": "250",
+      "answer": "250",
+      "explain": "250 nm."
+    }
+  ]
+}

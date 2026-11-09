@@ -1,0 +1,169 @@
+{
+  "id": "bai-3",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương I. Tập hợp các số tự nhiên",
+  "lesson": "Bài 3. Thứ tự trong tập hợp các số tự nhiên",
+  "section": "",
+  "bookPage": 13,
+  "requirements": [
+    "Biểu diễn số tự nhiên trên tia số; so sánh hai số tự nhiên.",
+    "Nhận biết số liền trước, liền sau; sử dụng kí hiệu ≤, ≥."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Mỗi số tự nhiên được biểu diễn bởi một điểm trên tia số. Trên tia số nằm ngang, điểm biểu diễn số nhỏ hơn nằm bên trái điểm biểu diễn số lớn hơn."
+    },
+    {
+      "type": "text",
+      "content": "Trong hai số tự nhiên khác nhau, có một số nhỏ hơn số kia. Nếu a < b và b < c thì a < c (tính chất bắc cầu)."
+    },
+    {
+      "type": "text",
+      "content": "Mỗi số tự nhiên có đúng một số liền sau; mỗi số tự nhiên khác 0 có đúng một số liền trước. Số 0 là số tự nhiên nhỏ nhất; không có số tự nhiên lớn nhất."
+    },
+    {
+      "type": "text",
+      "content": "a ≤ b nghĩa là a < b hoặc a = b; a ≥ b nghĩa là a > b hoặc a = b."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Có bao nhiêu số tự nhiên x thoả mãn 15 ≤ x < 22?",
+      "steps": [
+        "x ∈ {15; 16; …; 21}.",
+        "Số giá trị: 21 − 15 + 1 = 7."
+      ],
+      "expr": "21-15+1",
+      "answer": "7"
+    },
+    {
+      "problem": "Dạng tìm số liền trước, liền sau: tổng của số liền trước và số liền sau của 199 là bao nhiêu?",
+      "steps": [
+        "Liền trước 198, liền sau 200.",
+        "198 + 200 = 398."
+      ],
+      "expr": "198+200",
+      "answer": "398"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số liền sau của 999 là:",
+      "choices": [
+        "1 000",
+        "998",
+        "9 999",
+        "990"
+      ],
+      "answer": 0,
+      "explain": "Số liền sau của a là a + 1.",
+      "wrong_explain": {
+        "1": "Đó là số liền trước.",
+        "2": "Liền sau chỉ hơn 1 đơn vị.",
+        "3": "Không phải số liền sau."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số tự nhiên nhỏ nhất là:",
+      "choices": [
+        "1",
+        "Không có",
+        "10",
+        "0"
+      ],
+      "answer": 3,
+      "explain": "ℕ bắt đầu từ 0.",
+      "wrong_explain": {
+        "0": "0 nhỏ hơn 1 và là số tự nhiên.",
+        "1": "Số 0 là số tự nhiên nhỏ nhất.",
+        "2": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nếu a < b và b < 15 thì:",
+      "choices": [
+        "a > 15",
+        "a = 15",
+        "a < 15",
+        "a ≥ 15"
+      ],
+      "answer": 2,
+      "explain": "Tính chất bắc cầu.",
+      "wrong_explain": {
+        "0": "Tính chất bắc cầu cho a < 15.",
+        "1": "a nhỏ hơn b nên nhỏ hơn 15.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số liền trước của 5 000 là bao nhiêu?",
+      "expr": "5000-1",
+      "answer": "4999",
+      "explain": "4 999."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có bao nhiêu số tự nhiên x mà 8 < x ≤ 20?",
+      "expr": "20-8",
+      "answer": "12",
+      "explain": "x ∈ {9; …; 20}: 12 số."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm số tự nhiên lớn nhất nhỏ hơn 1 000 và chia hết cho 10.",
+      "expr": "990",
+      "answer": "990",
+      "explain": "Các số tròn chục nhỏ hơn 1 000, lớn nhất là 990."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm số tự nhiên x biết x là số liền sau của 47 và cũng là số liền trước của y. Tính y.",
+      "expr": "47+2",
+      "answer": "49",
+      "explain": "x = 48, y = 49."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có bao nhiêu số tự nhiên có hai chữ số lớn hơn 75?",
+      "expr": "99-75",
+      "answer": "24",
+      "explain": "Từ 76 đến 99: 24 số."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ba số tự nhiên liên tiếp tăng dần có số ở giữa là 120. Tổng ba số là:",
+      "expr": "119+120+121",
+      "answer": "360",
+      "explain": "119 + 120 + 121 = 360."
+    }
+  ]
+}

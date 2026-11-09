@@ -1,0 +1,160 @@
+{
+  "id": "bai-2",
+  "grade": 9,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 9",
+  "chapter": "Chương 1. Địa lí dân cư Việt Nam",
+  "lesson": "Bài 2. Phân bố dân cư và các loại hình quần cư",
+  "section": "",
+  "bookPage": 120,
+  "requirements": [
+    "Trình bày được sự phân bố dân cư; phân biệt được quần cư thành thị và quần cư nông thôn; nêu được đặc điểm đô thị hoá."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Mật độ dân số nước ta cao (khoảng 300 người/km²). Dân cư phân bố không đều: tập trung đông ở đồng bằng, ven biển và đô thị; thưa thớt ở miền núi. Đồng bằng sông Hồng có mật độ cao nhất cả nước."
+    },
+    {
+      "type": "text",
+      "content": "Khoảng 62% dân số sống ở nông thôn, 38% ở thành thị (năm 2023), tỉ lệ dân thành thị đang tăng."
+    },
+    {
+      "type": "text",
+      "content": "Quần cư nông thôn: mật độ thấp, hoạt động kinh tế chủ yếu là nông, lâm, ngư nghiệp, các điểm dân cư là làng, bản, thôn, ấp… Quần cư thành thị: mật độ cao, hoạt động chủ yếu là công nghiệp và dịch vụ, là trung tâm kinh tế, chính trị, văn hoá."
+    },
+    {
+      "type": "formula",
+      "content": "Mật độ dân số = Số dân : Diện tích (người/km²)"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Nước ta có khoảng 100 triệu dân, diện tích khoảng 331 nghìn km². Tính mật độ dân số (làm tròn đến hàng đơn vị).",
+      "steps": [
+        "100 000 000 : 331 000.",
+        "≈ 302 người/km²."
+      ],
+      "expr": "100000/331",
+      "answer": "100000/331"
+    },
+    {
+      "problem": "Dạng tính tỉ lệ dân thành thị: 100 triệu dân, 38 triệu ở thành thị. Tỉ lệ là bao nhiêu %?",
+      "steps": [
+        "38 : 100 · 100 = 38%."
+      ],
+      "expr": "38*100/100",
+      "answer": "38"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Vùng có mật độ dân số cao nhất nước ta là:",
+      "choices": [
+        "Tây Nguyên",
+        "Trung du và miền núi phía Bắc",
+        "Bắc Trung Bộ",
+        "Đồng bằng sông Hồng"
+      ],
+      "answer": 3,
+      "explain": "Cao nhất.",
+      "wrong_explain": {
+        "0": "Thấp.",
+        "1": "Thấp.",
+        "2": "Trung bình."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Dân cư nước ta tập trung đông ở:",
+      "choices": [
+        "Vùng núi cao",
+        "Cao nguyên",
+        "Đồng bằng, ven biển và đô thị",
+        "Hải đảo"
+      ],
+      "answer": 2,
+      "explain": "Phân bố.",
+      "wrong_explain": {
+        "0": "Thưa.",
+        "1": "Thưa.",
+        "3": "Thưa."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hoạt động kinh tế chủ yếu của quần cư thành thị là:",
+      "choices": [
+        "Nông nghiệp",
+        "Công nghiệp và dịch vụ",
+        "Lâm nghiệp",
+        "Đánh bắt cá"
+      ],
+      "answer": 1,
+      "explain": "Thành thị.",
+      "wrong_explain": {
+        "0": "Nông thôn.",
+        "2": "Nông thôn.",
+        "3": "Nông thôn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tên gọi điểm dân cư nông thôn là:",
+      "choices": [
+        "Làng, bản, thôn, ấp",
+        "Phường",
+        "Quận",
+        "Thành phố"
+      ],
+      "answer": 0,
+      "explain": "Nông thôn.",
+      "wrong_explain": {
+        "1": "Thành thị.",
+        "2": "Thành thị.",
+        "3": "Thành thị."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một tỉnh có 1 200 000 người, diện tích 4 000 km². Mật độ dân số là bao nhiêu người/km²?",
+      "expr": "1200000/4000",
+      "answer": "300",
+      "explain": "300."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giả sử một vùng đồng bằng có 22 050 000 dân trên 21 000 km². Mật độ là bao nhiêu người/km²?",
+      "expr": "22050000/21000",
+      "answer": "1050",
+      "explain": "1 050."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tỉ lệ dân thành thị 38%. Tỉ lệ dân nông thôn là bao nhiêu %?",
+      "expr": "100-38",
+      "answer": "62",
+      "explain": "62."
+    }
+  ]
+}

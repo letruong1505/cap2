@@ -1,0 +1,161 @@
+{
+  "id": "bai-47",
+  "grade": 9,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 9",
+  "chapter": "Chương XIII. Di truyền học với con người và đời sống",
+  "lesson": "Bài 47. Di truyền học với con người",
+  "section": "",
+  "bookPage": 201,
+  "requirements": [
+    "Nêu được một số bệnh, tật di truyền ở người; ý nghĩa của di truyền học trong hôn nhân và tư vấn di truyền."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Một số bệnh, tật di truyền: hội chứng Down (3 NST số 21), hội chứng Turner (XO, nữ có một NST X), bệnh bạch tạng (đột biến gene lặn), bệnh mù màu và máu khó đông (gene lặn trên NST X), tật hở khe môi – hàm, tật thừa ngón."
+    },
+    {
+      "type": "text",
+      "content": "Nguyên nhân: tác nhân vật lí, hoá học trong môi trường (phóng xạ, chất độc da cam, thuốc trừ sâu), rối loạn trao đổi chất nội bào, kết hôn gần."
+    },
+    {
+      "type": "text",
+      "content": "Luật Hôn nhân và Gia đình cấm kết hôn giữa những người có quan hệ huyết thống trong phạm vi ba đời vì làm tăng khả năng xuất hiện bệnh di truyền do gene lặn. Không nên sinh con khi tuổi mẹ quá cao (trên 35) để giảm nguy cơ sinh con mắc hội chứng Down."
+    },
+    {
+      "type": "text",
+      "content": "Tư vấn di truyền giúp dự đoán khả năng xuất hiện bệnh di truyền ở đời con, đưa ra lời khuyên trong hôn nhân, sinh đẻ."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Bố mẹ đều mang gene dị hợp Aa (a gây bạch tạng). Xác suất sinh con bạch tạng?",
+      "steps": [
+        "Aa × Aa → 1/4 aa.",
+        "1/4."
+      ],
+      "expr": "1/4",
+      "answer": "0.25"
+    },
+    {
+      "problem": "Dạng xác suất hai con: bố mẹ Aa × Aa, xác suất sinh hai con đều bình thường?",
+      "steps": [
+        "Mỗi con bình thường 3/4.",
+        "(3/4)² = 9/16."
+      ],
+      "expr": "9/16",
+      "answer": "0.5625"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hội chứng Down có bộ NST:",
+      "choices": [
+        "47 NST, thừa một NST số 21",
+        "45 NST, thiếu một NST X",
+        "46 NST bình thường",
+        "48 NST"
+      ],
+      "answer": 0,
+      "explain": "Thể ba nhiễm 21.",
+      "wrong_explain": {
+        "1": "Turner.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Bệnh nào do gene lặn trên NST X?",
+      "choices": [
+        "Hội chứng Down",
+        "Bạch tạng",
+        "Hội chứng Turner",
+        "Bệnh máu khó đông"
+      ],
+      "answer": 3,
+      "explain": "Liên kết X.",
+      "wrong_explain": {
+        "0": "Đột biến NST.",
+        "1": "Gene lặn trên NST thường.",
+        "2": "Đột biến NST."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao cấm kết hôn trong phạm vi ba đời?",
+      "choices": [
+        "Vì luật quy định không có lí do",
+        "Vì làm con thông minh hơn",
+        "Tăng khả năng biểu hiện bệnh do gene lặn",
+        "Vì tăng tuổi thọ"
+      ],
+      "answer": 2,
+      "explain": "Gene lặn đồng hợp.",
+      "wrong_explain": {
+        "0": "Có lí do khoa học.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tư vấn di truyền giúp:",
+      "choices": [
+        "Chữa khỏi mọi bệnh di truyền",
+        "Dự đoán khả năng mắc bệnh di truyền ở đời con",
+        "Thay đổi giới tính thai",
+        "Tăng chiều cao"
+      ],
+      "answer": 1,
+      "explain": "Ý nghĩa.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Người mắc hội chứng Turner có bao nhiêu NST?",
+      "expr": "45",
+      "answer": "45",
+      "explain": "2n − 1."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bố Aa × mẹ aa (a gây bệnh). Xác suất con mắc bệnh:",
+      "expr": "1/2",
+      "answer": "0.5",
+      "explain": "1/2 aa."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bố mẹ Aa × Aa. Xác suất con bình thường:",
+      "expr": "3/4",
+      "answer": "0.75",
+      "explain": "1 − 1/4."
+    }
+  ]
+}

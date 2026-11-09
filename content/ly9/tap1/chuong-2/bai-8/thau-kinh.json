@@ -1,0 +1,161 @@
+{
+  "id": "bai-8",
+  "grade": 9,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 9",
+  "chapter": "Chương II. Ánh sáng",
+  "lesson": "Bài 8. Thấu kính",
+  "section": "",
+  "bookPage": 40,
+  "requirements": [
+    "Phân biệt thấu kính hội tụ, phân kì; vẽ ảnh qua thấu kính; xác định tính chất ảnh."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Thấu kính hội tụ có phần rìa mỏng hơn phần giữa, chùm tia tới song song cho chùm ló hội tụ. Thấu kính phân kì có phần rìa dày hơn phần giữa, chùm tia tới song song cho chùm ló phân kì."
+    },
+    {
+      "type": "text",
+      "content": "Các yếu tố: trục chính, quang tâm O, tiêu điểm F, F′, tiêu cự f = OF."
+    },
+    {
+      "type": "text",
+      "content": "Ba tia đặc biệt qua thấu kính hội tụ: tia qua quang tâm truyền thẳng; tia song song trục chính cho tia ló qua tiêu điểm F′; tia qua tiêu điểm F cho tia ló song song trục chính."
+    },
+    {
+      "type": "text",
+      "content": "Ảnh qua thấu kính hội tụ: vật ngoài tiêu cự (d > f) cho ảnh thật, ngược chiều; vật trong tiêu cự (d < f) cho ảnh ảo, cùng chiều, lớn hơn vật. Thấu kính phân kì luôn cho ảnh ảo, cùng chiều, nhỏ hơn vật."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Thấu kính hội tụ tiêu cự 10 cm, vật cách thấu kính 30 cm. Vị trí ảnh d′ (1/f = 1/d + 1/d′)?",
+      "steps": [
+        "1/d′ = 1/10 − 1/30 = 2/30.",
+        "d′ = 15 cm (ảnh thật)."
+      ],
+      "expr": "30/2",
+      "answer": "15"
+    },
+    {
+      "problem": "Dạng tính chiều cao ảnh: theo ví dụ trên, vật cao 4 cm thì ảnh cao bao nhiêu? (h′/h = d′/d)",
+      "steps": [
+        "h′ = 4·15/30.",
+        "= 2 cm."
+      ],
+      "expr": "4*15/30",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thấu kính hội tụ có:",
+      "choices": [
+        "Phần rìa dày hơn",
+        "Phần rìa mỏng hơn phần giữa",
+        "Hai mặt phẳng",
+        "Không có tiêu điểm"
+      ],
+      "answer": 1,
+      "explain": "Hình dạng.",
+      "wrong_explain": {
+        "0": "Phân kì.",
+        "2": "Không phải thấu kính.",
+        "3": "Có."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tia sáng qua quang tâm của thấu kính:",
+      "choices": [
+        "Truyền thẳng",
+        "Đi qua tiêu điểm",
+        "Song song trục chính",
+        "Bị phản xạ"
+      ],
+      "answer": 0,
+      "explain": "Tia đặc biệt.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Thấu kính phân kì luôn cho ảnh:",
+      "choices": [
+        "Thật, ngược chiều",
+        "Ảo, lớn hơn vật",
+        "Thật, cùng chiều",
+        "Ảo, cùng chiều, nhỏ hơn vật"
+      ],
+      "answer": 3,
+      "explain": "Tính chất ảnh.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vật đặt trong khoảng tiêu cự của thấu kính hội tụ cho ảnh:",
+      "choices": [
+        "Thật, ngược chiều",
+        "Ảo, nhỏ hơn vật",
+        "Ảo, cùng chiều, lớn hơn vật",
+        "Không có ảnh"
+      ],
+      "answer": 2,
+      "explain": "Kính lúp.",
+      "wrong_explain": {
+        "0": "d > f.",
+        "1": "Thấu kính phân kì.",
+        "3": "Có."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Thấu kính hội tụ f = 20 cm, vật d = 60 cm. Tính d′ (cm).",
+      "expr": "30",
+      "answer": "30",
+      "explain": "1/d′ = 1/20 − 1/60 = 1/30."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thấu kính hội tụ f = 12 cm, vật d = 24 cm. Tính d′ (cm).",
+      "expr": "24",
+      "answer": "24",
+      "explain": "d = 2f ⇒ d′ = 2f."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật cao 3 cm, d = 24 cm, d′ = 24 cm. Chiều cao ảnh (cm):",
+      "expr": "3",
+      "answer": "3",
+      "explain": "h′ = h·d′/d."
+    }
+  ]
+}

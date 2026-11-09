@@ -1,0 +1,161 @@
+{
+  "id": "bai-7",
+  "grade": 6,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 6",
+  "chapter": "Chương 2. Trái Đất – hành tinh của hệ Mặt Trời",
+  "lesson": "Bài 7. Chuyển động tự quay quanh trục của Trái Đất và hệ quả",
+  "section": "",
+  "bookPage": 118,
+  "requirements": [
+    "Mô tả được chuyển động tự quay của Trái Đất; trình bày hệ quả: ngày đêm luân phiên, giờ trên Trái Đất, lệch hướng chuyển động."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Trái Đất tự quay quanh một trục tưởng tượng nối hai cực, nghiêng 66°33′ trên mặt phẳng quỹ đạo, theo hướng từ tây sang đông, một vòng hết 24 giờ."
+    },
+    {
+      "type": "text",
+      "content": "Hệ quả: ngày đêm luân phiên nhau khắp mọi nơi trên Trái Đất; giờ trên Trái Đất – bề mặt chia thành 24 khu vực giờ, mỗi khu vực rộng 15° kinh tuyến; khu vực giờ gốc (số 0) có kinh tuyến gốc đi qua. Việt Nam thuộc khu vực giờ số 7."
+    },
+    {
+      "type": "text",
+      "content": "Hệ quả khác: các vật chuyển động trên bề mặt Trái Đất bị lệch hướng – ở bán cầu Bắc lệch về bên phải, bán cầu Nam lệch về bên trái (theo hướng chuyển động)."
+    },
+    {
+      "type": "text",
+      "content": "Đường đổi ngày quốc tế là kinh tuyến 180°."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Khi ở Luân Đôn (giờ số 0) là 8 giờ thì ở Hà Nội (giờ số 7) là mấy giờ?",
+      "steps": [
+        "Hà Nội sớm hơn 7 giờ.",
+        "8 + 7 = 15 giờ."
+      ],
+      "expr": "8+7",
+      "answer": "15"
+    },
+    {
+      "problem": "Dạng tính giờ phía tây: khi Hà Nội 10 giờ thì Niu Oóc (giờ số −5) là mấy giờ ?",
+      "steps": [
+        "Chênh lệch 7 − (−5) = 12 giờ.",
+        "10 − 12 = −2, tức 22 giờ ngày hôm trước."
+      ],
+      "expr": "10-12+24",
+      "answer": "22"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trái Đất tự quay quanh trục theo hướng:",
+      "choices": [
+        "Từ đông sang tây",
+        "Từ tây sang đông",
+        "Từ bắc xuống nam",
+        "Từ nam lên bắc"
+      ],
+      "answer": 1,
+      "explain": "Hướng tự quay.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thời gian Trái Đất tự quay một vòng là:",
+      "choices": [
+        "24 giờ",
+        "365 ngày",
+        "12 giờ",
+        "30 ngày"
+      ],
+      "answer": 0,
+      "explain": "Một ngày đêm.",
+      "wrong_explain": {
+        "1": "Quanh Mặt Trời.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Việt Nam thuộc khu vực giờ số:",
+      "choices": [
+        "0",
+        "8",
+        "9",
+        "7"
+      ],
+      "answer": 3,
+      "explain": "Giờ số 7.",
+      "wrong_explain": {
+        "0": "Luân Đôn.",
+        "1": "Bắc Kinh.",
+        "2": "Tô-ki-ô."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ở bán cầu Bắc, vật chuyển động bị lệch về:",
+      "choices": [
+        "Bên trái",
+        "Không lệch",
+        "Bên phải",
+        "Phía trên"
+      ],
+      "answer": 2,
+      "explain": "Lực Cô-ri-ô-lít.",
+      "wrong_explain": {
+        "0": "Bán cầu Nam.",
+        "1": "Có lệch.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bề mặt Trái Đất được chia thành bao nhiêu khu vực giờ?",
+      "expr": "24",
+      "answer": "24",
+      "explain": "24."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mỗi khu vực giờ rộng bao nhiêu độ kinh tuyến?",
+      "expr": "15",
+      "answer": "15",
+      "explain": "360 : 24."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khi Hà Nội là 14 giờ thì Luân Đôn là mấy giờ?",
+      "expr": "7",
+      "answer": "7",
+      "explain": "14 − 7."
+    }
+  ]
+}

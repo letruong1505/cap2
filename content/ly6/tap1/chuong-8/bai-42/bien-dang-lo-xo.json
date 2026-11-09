@@ -1,0 +1,146 @@
+{
+  "id": "bai-42",
+  "grade": 6,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 6",
+  "chapter": "Chương VIII. Lực trong đời sống",
+  "lesson": "Bài 42. Biến dạng của lò xo",
+  "section": "",
+  "bookPage": 151,
+  "requirements": [
+    "Nêu được độ giãn của lò xo treo thẳng đứng tỉ lệ với khối lượng vật treo; tính độ giãn của lò xo."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khi treo vật vào lò xo, lò xo bị dãn ra; khi bỏ vật đi, lò xo trở lại chiều dài ban đầu: đó là biến dạng đàn hồi. Lò xo là vật có tính đàn hồi."
+    },
+    {
+      "type": "formula",
+      "content": "Độ giãn Δl = l − l₀ (l₀: chiều dài tự nhiên, l: chiều dài khi bị dãn)"
+    },
+    {
+      "type": "text",
+      "content": "Độ giãn của lò xo treo thẳng đứng tỉ lệ với khối lượng của vật treo (khi chưa vượt quá giới hạn đàn hồi). Nếu treo vật quá nặng, lò xo bị biến dạng không trở lại hình dạng ban đầu."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Lò xo dài tự nhiên 10 cm, treo vật dài 13 cm. Độ giãn?",
+      "steps": [
+        "Δl = 13 − 10.",
+        "= 3 cm."
+      ],
+      "expr": "13-10",
+      "answer": "3"
+    },
+    {
+      "problem": "Dạng tỉ lệ: treo vật 100 g lò xo giãn 2 cm. Treo vật 250 g giãn bao nhiêu?",
+      "steps": [
+        "Độ giãn tỉ lệ khối lượng: 2·250/100.",
+        "= 5 cm."
+      ],
+      "expr": "2*250/100",
+      "answer": "5"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Độ giãn của lò xo treo thẳng đứng tỉ lệ với:",
+      "choices": [
+        "Khối lượng vật treo",
+        "Màu sắc lò xo",
+        "Chiều dài tự nhiên",
+        "Nhiệt độ phòng"
+      ],
+      "answer": 0,
+      "explain": "Trong giới hạn đàn hồi.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Biến dạng đàn hồi là biến dạng mà:",
+      "choices": [
+        "Vật không trở lại hình dạng ban đầu",
+        "Vật bị gãy",
+        "Vật nóng lên",
+        "Vật trở lại hình dạng ban đầu khi thôi tác dụng lực"
+      ],
+      "answer": 3,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Biến dạng không đàn hồi.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vật nào có tính đàn hồi?",
+      "choices": [
+        "Cục đất sét",
+        "Viên phấn",
+        "Dây chun",
+        "Tờ giấy vò"
+      ],
+      "answer": 2,
+      "explain": "Dây chun co giãn.",
+      "wrong_explain": {
+        "0": "Biến dạng không đàn hồi.",
+        "1": "Giòn.",
+        "3": "Không đàn hồi."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lò xo dài 20 cm, khi treo vật dài 24,5 cm. Độ giãn (cm):",
+      "expr": "4.5",
+      "answer": "4.5",
+      "explain": "4,5 cm."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lò xo giãn 3 cm khi treo 150 g. Treo 300 g thì giãn (cm):",
+      "expr": "6",
+      "answer": "6",
+      "explain": "Tỉ lệ thuận."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lò xo dài tự nhiên 15 cm, mỗi 50 g làm giãn 1 cm. Treo 200 g thì chiều dài lò xo là (cm):",
+      "expr": "15+4",
+      "answer": "19",
+      "explain": "19 cm."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lò xo giãn 2 cm khi treo 1 quả nặng. Treo 4 quả giống hệt thì giãn (cm):",
+      "expr": "8",
+      "answer": "8",
+      "explain": "8 cm."
+    }
+  ]
+}

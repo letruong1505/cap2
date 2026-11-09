@@ -1,0 +1,161 @@
+{
+  "id": "bai-15",
+  "grade": 6,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 6",
+  "chapter": "Chương 4. Khí hậu và biến đổi khí hậu",
+  "lesson": "Bài 15. Lớp vỏ khí của Trái Đất. Khí áp và gió",
+  "section": "",
+  "bookPage": 142,
+  "requirements": [
+    "Mô tả các tầng khí quyển, thành phần không khí; các khối khí; khí áp, các đai khí áp và gió chính."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khí quyển gồm các tầng: đối lưu (0–16 km, tập trung khoảng 90% không khí, nơi sinh ra các hiện tượng thời tiết), bình lưu (16–80 km, có lớp ô-dôn), các tầng cao. Thành phần: nitơ 78%, oxy 21%, hơi nước và khí khác 1%."
+    },
+    {
+      "type": "text",
+      "content": "Các khối khí: nóng (vĩ độ thấp), lạnh (vĩ độ cao), đại dương (ẩm), lục địa (khô)."
+    },
+    {
+      "type": "text",
+      "content": "Khí áp là sức ép của khí quyển lên bề mặt Trái Đất, đo bằng khí áp kế; khí áp trung bình chuẩn 760 mm thuỷ ngân. Trên Trái Đất có các đai áp cao và áp thấp xen kẽ."
+    },
+    {
+      "type": "text",
+      "content": "Gió là sự chuyển động của không khí từ khu áp cao về khu áp thấp. Các loại gió chính: Tín phong, gió Tây ôn đới, gió Đông cực."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tầng đối lưu dày khoảng 16 km ở Xích đạo, 8 km ở cực. Chênh lệch bao nhiêu km?",
+      "steps": [
+        "16 − 8.",
+        "= 8 km."
+      ],
+      "expr": "16-8",
+      "answer": "8"
+    },
+    {
+      "problem": "Dạng tính theo độ cao: lên cao 1 000 m khí áp giảm khoảng 80 mm Hg. Từ 760 mm Hg ở mặt biển, ở độ cao 2 000 m khí áp còn?",
+      "steps": [
+        "760 − 80·2.",
+        "= 600 mm Hg."
+      ],
+      "expr": "760-160",
+      "answer": "600"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tầng khí quyển sinh ra các hiện tượng thời tiết là:",
+      "choices": [
+        "Tầng bình lưu",
+        "Các tầng cao",
+        "Tầng ô-dôn",
+        "Tầng đối lưu"
+      ],
+      "answer": 3,
+      "explain": "Đối lưu.",
+      "wrong_explain": {
+        "0": "Có ô-dôn.",
+        "1": "Không.",
+        "2": "Thuộc bình lưu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khí chiếm tỉ lệ lớn nhất trong không khí là:",
+      "choices": [
+        "Oxy",
+        "Hơi nước",
+        "Nitơ",
+        "Các-bô-níc"
+      ],
+      "answer": 2,
+      "explain": "78%.",
+      "wrong_explain": {
+        "0": "21%.",
+        "1": "Rất ít.",
+        "3": "Rất ít."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Gió là sự chuyển động của không khí từ:",
+      "choices": [
+        "Khu áp thấp về áp cao",
+        "Khu áp cao về khu áp thấp",
+        "Biển vào đất liền luôn luôn",
+        "Đông sang Tây luôn luôn"
+      ],
+      "answer": 1,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Lớp ô-dôn nằm ở tầng:",
+      "choices": [
+        "Bình lưu",
+        "Đối lưu",
+        "Mặt đất",
+        "Nhân Trái Đất"
+      ],
+      "answer": 0,
+      "explain": "Bình lưu.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Không khí: nitơ 78%, oxy 21%. Phần còn lại (%):",
+      "expr": "1",
+      "answer": "1",
+      "explain": "1%."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khí áp chuẩn ở mực nước biển là bao nhiêu mm Hg?",
+      "expr": "760",
+      "answer": "760",
+      "explain": "760."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lên cao 500 m khí áp giảm 40 mm Hg. Ở độ cao 1 500 m khí áp (từ 760) còn:",
+      "expr": "640",
+      "answer": "640",
+      "explain": "760 − 120."
+    }
+  ]
+}

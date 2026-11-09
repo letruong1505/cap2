@@ -1,0 +1,157 @@
+{
+  "id": "bai-6",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 1",
+  "chapter": "Chương II. Phương trình và bất phương trình bậc nhất một ẩn",
+  "lesson": "Bài 6. Bất phương trình bậc nhất một ẩn",
+  "section": "",
+  "bookPage": 37,
+  "requirements": [
+    "Nhận biết bất phương trình bậc nhất một ẩn; giải bất phương trình bậc nhất một ẩn."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Bất phương trình bậc nhất một ẩn x có dạng ax + b > 0 (hoặc <, ≥, ≤), a ≠ 0."
+    },
+    {
+      "type": "text",
+      "content": "Quy tắc chuyển vế: chuyển một hạng tử từ vế này sang vế kia và đổi dấu hạng tử đó."
+    },
+    {
+      "type": "text",
+      "content": "Quy tắc nhân: nhân hai vế với cùng một số khác 0; giữ nguyên chiều nếu số đó dương, đổi chiều nếu số đó âm."
+    },
+    {
+      "type": "text",
+      "content": "Giải ax + b > 0: nếu a > 0 thì x > −b/a; nếu a < 0 thì x < −b/a."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Giải 3x − 6 > 0. Tìm số nguyên nhỏ nhất thoả mãn.",
+      "steps": [
+        "3x > 6 ⇒ x > 2.",
+        "Số nguyên nhỏ nhất: 3."
+      ],
+      "expr": "3",
+      "answer": "3"
+    },
+    {
+      "problem": "Dạng nhân với số âm: giải −2x + 8 ≥ 0. Tìm số nguyên lớn nhất.",
+      "steps": [
+        "−2x ≥ −8 ⇒ x ≤ 4 (đổi chiều).",
+        "Số nguyên lớn nhất: 4."
+      ],
+      "expr": "4",
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Bất phương trình nào là bất phương trình bậc nhất một ẩn?",
+      "choices": [
+        "2x − 5 < 0",
+        "x² + 1 > 0",
+        "0x + 3 > 0",
+        "1/x > 2"
+      ],
+      "answer": 0,
+      "explain": "Dạng ax + b < 0.",
+      "wrong_explain": {
+        "1": "Có x².",
+        "2": "Phải có a ≠ 0.",
+        "3": "Ẩn ở mẫu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi nhân hai vế bất phương trình với số âm, ta phải:",
+      "choices": [
+        "Giữ nguyên chiều",
+        "Đổi dấu một vế",
+        "Bình phương hai vế",
+        "Đổi chiều bất phương trình"
+      ],
+      "answer": 3,
+      "explain": "Quy tắc nhân.",
+      "wrong_explain": {
+        "0": "Chỉ khi nhân với số dương.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải 2x + 4 > 10. Số nguyên nhỏ nhất thoả mãn là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "x > 3."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải 5 − x ≥ 2. Số nguyên lớn nhất thoả mãn là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "x ≤ 3."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải 4x − 1 ≤ 3x + 5. Số nguyên lớn nhất thoả mãn là:",
+      "expr": "6",
+      "answer": "6",
+      "explain": "x ≤ 6."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có bao nhiêu số tự nhiên x thoả mãn 3x < 15?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "x < 5: 0; 1; 2; 3; 4."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải −3x + 9 < 0. Số nguyên nhỏ nhất thoả mãn là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "x > 3."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giải (x − 1)/2 ≥ 3. Giá trị nhỏ nhất của x là:",
+      "expr": "7",
+      "answer": "7",
+      "explain": "x − 1 ≥ 6."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một người có 200 nghìn đồng, mua vé xem phim giá 45 nghìn/vé. Mua được nhiều nhất bao nhiêu vé?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "45x ≤ 200 ⇒ x ≤ 4,4."
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "id": "bai-35",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 2",
+  "chapter": "Chương VIII. Những hình hình học cơ bản",
+  "lesson": "Bài 35. Trung điểm của đoạn thẳng",
+  "section": "",
+  "bookPage": 55,
+  "requirements": [
+    "Nhận biết trung điểm của đoạn thẳng; tính độ dài liên quan đến trung điểm."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Trung điểm M của đoạn thẳng AB là điểm nằm giữa A, B và cách đều A, B (MA = MB). Trung điểm còn gọi là điểm chính giữa."
+    },
+    {
+      "type": "formula",
+      "content": "M là trung điểm AB ⇒ MA = MB = AB : 2"
+    },
+    {
+      "type": "text",
+      "content": "Có thể xác định trung điểm bằng thước có vạch chia hoặc gấp giấy, dùng sợi dây…"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "M là trung điểm của AB, AB = 14 cm. Tính MA.",
+      "steps": [
+        "MA = AB : 2.",
+        "= 7 cm."
+      ],
+      "expr": "14/2",
+      "answer": "7"
+    },
+    {
+      "problem": "Dạng tính độ dài từ trung điểm: I là trung điểm của CD, CI = 4,5 cm. Tính CD.",
+      "steps": [
+        "CD = 2·CI.",
+        "= 9 cm."
+      ],
+      "expr": "2*4.5",
+      "answer": "9"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "M là trung điểm của AB khi:",
+      "choices": [
+        "MA = MB",
+        "M nằm giữa A và B",
+        "M nằm giữa A, B và MA = MB",
+        "MA = AB"
+      ],
+      "answer": 2,
+      "explain": "Hai điều kiện.",
+      "wrong_explain": {
+        "0": "Cần thêm M nằm giữa A và B.",
+        "1": "Cần thêm MA = MB.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Mỗi đoạn thẳng có bao nhiêu trung điểm?",
+      "choices": [
+        "Hai",
+        "Một",
+        "Vô số",
+        "Không có"
+      ],
+      "answer": 1,
+      "explain": "Duy nhất.",
+      "wrong_explain": {
+        "0": "Chỉ một.",
+        "2": "Không.",
+        "3": "Có một."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "M là trung điểm AB, AB = 9 cm. MB bằng:",
+      "expr": "4.5",
+      "answer": "4.5",
+      "explain": "4,5 cm."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "I là trung điểm EF, EI = 6 cm. EF bằng:",
+      "expr": "12",
+      "answer": "12",
+      "explain": "12 cm."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trên tia Ox lấy A, B với OA = 4 cm, OB = 10 cm. M là trung điểm AB. Tính OM.",
+      "expr": "4+3",
+      "answer": "7",
+      "explain": "AB = 6, AM = 3; OM = 7 cm."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "M là trung điểm AB, N là trung điểm AM, AB = 16 cm. AN bằng:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "AM = 8, AN = 4 cm."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một thanh gỗ dài 1,2 m cưa ở chính giữa. Mỗi đoạn dài bao nhiêu cm?",
+      "expr": "60",
+      "answer": "60",
+      "explain": "60 cm."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "O là trung điểm AB và CD với AB = 8, CD = 6 (cm). Tính OA + OC.",
+      "expr": "4+3",
+      "answer": "7",
+      "explain": "7 cm."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "M là trung điểm AB, MA = 2x, AB = 20. Tìm x.",
+      "expr": "5",
+      "answer": "5",
+      "explain": "2x = 10, x = 5."
+    }
+  ]
+}

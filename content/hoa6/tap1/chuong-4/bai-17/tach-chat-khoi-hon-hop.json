@@ -1,0 +1,157 @@
+{
+  "id": "bai-17",
+  "grade": 6,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 6",
+  "chapter": "Chương IV. Hỗn hợp. Tách chất ra khỏi hỗn hợp",
+  "lesson": "Bài 17. Tách chất khỏi hỗn hợp",
+  "section": "",
+  "bookPage": 60,
+  "requirements": [
+    "Trình bày được một số cách tách chất ra khỏi hỗn hợp: lọc, cô cạn, chiết; ứng dụng trong thực tế."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tách chất dựa vào sự khác nhau về tính chất vật lí của các chất trong hỗn hợp (kích thước hạt, tính tan, nhiệt độ sôi, khối lượng riêng…)."
+    },
+    {
+      "type": "text",
+      "content": "Lọc: tách chất rắn không tan ra khỏi chất lỏng (tách cát khỏi nước). Cô cạn: đun cho chất lỏng bay hơi để thu chất rắn tan trong đó (thu muối từ nước muối). Chiết: tách hai chất lỏng không hoà tan vào nhau (tách dầu ăn khỏi nước) bằng phễu chiết."
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: lọc nước sinh hoạt, làm muối từ nước biển, tách dầu mỏ, chưng cất rượu."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cô cạn 500 g nước biển chứa 3,5% muối. Khối lượng muối thu được?",
+      "steps": [
+        "500·3,5/100.",
+        "= 17,5 g."
+      ],
+      "expr": "500*3.5/100",
+      "answer": "17.5"
+    },
+    {
+      "problem": "Dạng tính lượng nước biển cần: muốn thu 70 g muối từ nước biển 3,5% cần bao nhiêu gam nước biển?",
+      "steps": [
+        "70 : 3,5%.",
+        "= 2 000 g."
+      ],
+      "expr": "70*100*10/35",
+      "answer": "2000"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Để tách cát ra khỏi nước, dùng phương pháp:",
+      "choices": [
+        "Cô cạn",
+        "Chiết",
+        "Chưng cất",
+        "Lọc"
+      ],
+      "answer": 3,
+      "explain": "Cát không tan.",
+      "wrong_explain": {
+        "0": "Thu chất tan.",
+        "1": "Hai chất lỏng.",
+        "2": "Không cần thiết."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Để thu muối ăn từ nước muối, dùng phương pháp:",
+      "choices": [
+        "Lọc",
+        "Chiết",
+        "Cô cạn",
+        "Dùng nam châm"
+      ],
+      "answer": 2,
+      "explain": "Làm bay hơi nước.",
+      "wrong_explain": {
+        "0": "Muối tan, lọt qua giấy lọc.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Để tách dầu ăn khỏi nước, dùng:",
+      "choices": [
+        "Giấy lọc",
+        "Phễu chiết",
+        "Đun cô cạn",
+        "Nam châm"
+      ],
+      "answer": 1,
+      "explain": "Hai chất lỏng không tan vào nhau.",
+      "wrong_explain": {
+        "0": "Không tách được.",
+        "2": "Không phù hợp.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Để tách bột sắt khỏi bột lưu huỳnh có thể dùng:",
+      "choices": [
+        "Nam châm",
+        "Lọc",
+        "Cô cạn",
+        "Chiết"
+      ],
+      "answer": 0,
+      "explain": "Sắt bị nam châm hút.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cô cạn 200 g dung dịch muối 5% thu được bao nhiêu gam muối?",
+      "expr": "10",
+      "answer": "10",
+      "explain": "200·5%."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nước biển chứa 3% muối. 1 tấn nước biển (1 000 kg) cho bao nhiêu kg muối?",
+      "expr": "30",
+      "answer": "30",
+      "explain": "1 000·3%."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong các phương pháp: lọc, cô cạn, chiết, chưng cất – có bao nhiêu phương pháp được học trong bài?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Lọc, cô cạn, chiết."
+    }
+  ]
+}

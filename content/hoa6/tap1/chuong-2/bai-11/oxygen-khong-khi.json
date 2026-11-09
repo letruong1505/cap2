@@ -1,0 +1,161 @@
+{
+  "id": "bai-11",
+  "grade": 6,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 6",
+  "chapter": "Chương II. Chất quanh ta",
+  "lesson": "Bài 11. Oxygen. Không khí",
+  "section": "",
+  "bookPage": 36,
+  "requirements": [
+    "Nêu được tính chất vật lí, tầm quan trọng của oxygen; thành phần không khí; vai trò của không khí; nguyên nhân và biện pháp chống ô nhiễm không khí."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Oxygen là chất khí không màu, không mùi, không vị, ít tan trong nước, nặng hơn không khí. Ở −183 °C oxygen hoá lỏng có màu xanh nhạt."
+    },
+    {
+      "type": "text",
+      "content": "Oxygen duy trì sự sống (hô hấp) và sự cháy; dùng trong y tế, hàn cắt kim loại, du hành vũ trụ."
+    },
+    {
+      "type": "text",
+      "content": "Không khí là hỗn hợp khí: nitrogen khoảng 78%, oxygen khoảng 21%, còn lại khoảng 1% là carbon dioxide, hơi nước, khí hiếm…"
+    },
+    {
+      "type": "text",
+      "content": "Ô nhiễm không khí do khói xe, khí thải nhà máy, đốt rác, cháy rừng… gây bệnh hô hấp, mưa acid, hiệu ứng nhà kính. Biện pháp: trồng cây xanh, dùng năng lượng sạch, xử lí khí thải, hạn chế phương tiện cá nhân."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một phòng chứa 100 m³ không khí. Thể tích oxygen khoảng bao nhiêu m³?",
+      "steps": [
+        "Oxygen chiếm khoảng 21%.",
+        "100·21/100 = 21 m³."
+      ],
+      "expr": "100*21/100",
+      "answer": "21"
+    },
+    {
+      "problem": "Dạng tính theo phần trăm: trong 500 L không khí có bao nhiêu lít nitrogen?",
+      "steps": [
+        "Nitrogen khoảng 78%.",
+        "500·78/100 = 390 L."
+      ],
+      "expr": "500*78/100",
+      "answer": "390"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khí chiếm tỉ lệ thể tích lớn nhất trong không khí là:",
+      "choices": [
+        "Oxygen",
+        "Carbon dioxide",
+        "Nitrogen",
+        "Hơi nước"
+      ],
+      "answer": 2,
+      "explain": "Khoảng 78%.",
+      "wrong_explain": {
+        "0": "Khoảng 21%.",
+        "1": "Rất ít.",
+        "3": "Rất ít."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Oxygen có tính chất vật lí nào?",
+      "choices": [
+        "Màu vàng, mùi hắc",
+        "Không màu, không mùi, ít tan trong nước",
+        "Tan nhiều trong nước",
+        "Nhẹ hơn không khí"
+      ],
+      "answer": 1,
+      "explain": "Tính chất vật lí của oxygen.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Ít tan.",
+        "3": "Nặng hơn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Oxygen có vai trò:",
+      "choices": [
+        "Duy trì sự sống và sự cháy",
+        "Dập tắt lửa",
+        "Gây ngạt",
+        "Làm lạnh"
+      ],
+      "answer": 0,
+      "explain": "Hô hấp và cháy.",
+      "wrong_explain": {
+        "1": "Ngược lại.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Biện pháp giảm ô nhiễm không khí là:",
+      "choices": [
+        "Đốt rác thải",
+        "Tăng xe cá nhân",
+        "Chặt phá rừng",
+        "Trồng nhiều cây xanh"
+      ],
+      "answer": 3,
+      "explain": "Cây xanh hấp thụ CO₂.",
+      "wrong_explain": {
+        "0": "Gây ô nhiễm.",
+        "1": "Gây ô nhiễm.",
+        "2": "Gây hại."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Không khí: nitrogen 78%, oxygen 21%. Các khí còn lại chiếm bao nhiêu %?",
+      "expr": "100-78-21",
+      "answer": "1",
+      "explain": "1%."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một người hít 500 mL không khí mỗi lần. Thể tích oxygen hít vào mỗi lần (mL):",
+      "expr": "105",
+      "answer": "105",
+      "explain": "500·21%."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Oxygen hoá lỏng ở −183 °C. Nhiệt độ này thấp hơn 0 °C bao nhiêu độ?",
+      "expr": "183",
+      "answer": "183",
+      "explain": "183 °C."
+    }
+  ]
+}

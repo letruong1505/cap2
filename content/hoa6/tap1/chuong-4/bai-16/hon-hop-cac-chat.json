@@ -1,0 +1,161 @@
+{
+  "id": "bai-16",
+  "grade": 6,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 6",
+  "chapter": "Chương IV. Hỗn hợp. Tách chất ra khỏi hỗn hợp",
+  "lesson": "Bài 16. Hỗn hợp các chất",
+  "section": "",
+  "bookPage": 56,
+  "requirements": [
+    "Phân biệt chất tinh khiết, hỗn hợp; hỗn hợp đồng nhất, không đồng nhất; dung dịch, huyền phù, nhũ tương; chất tan và yếu tố ảnh hưởng đến lượng chất tan."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Chất tinh khiết (chất nguyên chất) được tạo ra từ một chất duy nhất, có tính chất xác định (nước cất). Hỗn hợp được tạo ra khi hai hay nhiều chất trộn lẫn với nhau (nước muối, không khí)."
+    },
+    {
+      "type": "text",
+      "content": "Hỗn hợp đồng nhất có thành phần giống nhau ở mọi vị trí (nước đường). Hỗn hợp không đồng nhất có thành phần không giống nhau trong toàn bộ hỗn hợp (nước phù sa)."
+    },
+    {
+      "type": "text",
+      "content": "Dung dịch là hỗn hợp đồng nhất của dung môi và chất tan. Huyền phù là hỗn hợp chất rắn lơ lửng trong chất lỏng; nhũ tương là hỗn hợp chất lỏng phân tán trong chất lỏng khác (dầu trộn nước)."
+    },
+    {
+      "type": "text",
+      "content": "Lượng chất tan tan được trong nước phụ thuộc vào loại chất và nhiệt độ; khuấy, đun nóng giúp chất rắn tan nhanh hơn."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hoà tan 20 g muối vào 180 g nước. Khối lượng dung dịch thu được?",
+      "steps": [
+        "20 + 180.",
+        "= 200 g."
+      ],
+      "expr": "20+180",
+      "answer": "200"
+    },
+    {
+      "problem": "Dạng tính phần trăm chất tan: theo ví dụ trên, muối chiếm bao nhiêu % khối lượng dung dịch?",
+      "steps": [
+        "20/200·100%.",
+        "= 10%."
+      ],
+      "expr": "20*100/200",
+      "answer": "10"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Chất nào là chất tinh khiết?",
+      "choices": [
+        "Nước muối",
+        "Nước cất",
+        "Không khí",
+        "Nước biển"
+      ],
+      "answer": 1,
+      "explain": "Một chất duy nhất.",
+      "wrong_explain": {
+        "0": "Hỗn hợp.",
+        "2": "Hỗn hợp.",
+        "3": "Hỗn hợp."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hỗn hợp nào là dung dịch?",
+      "choices": [
+        "Nước đường",
+        "Nước phù sa",
+        "Dầu ăn trộn nước",
+        "Cát trộn nước"
+      ],
+      "answer": 0,
+      "explain": "Hỗn hợp đồng nhất.",
+      "wrong_explain": {
+        "1": "Huyền phù.",
+        "2": "Nhũ tương.",
+        "3": "Không đồng nhất."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hỗn hợp dầu ăn và nước sau khi lắc mạnh là:",
+      "choices": [
+        "Dung dịch",
+        "Huyền phù",
+        "Chất tinh khiết",
+        "Nhũ tương"
+      ],
+      "answer": 3,
+      "explain": "Chất lỏng phân tán trong chất lỏng.",
+      "wrong_explain": {
+        "0": "Không đồng nhất.",
+        "1": "Chất rắn lơ lửng.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Yếu tố giúp đường tan nhanh hơn trong nước là:",
+      "choices": [
+        "Dùng nước đá",
+        "Để yên",
+        "Khuấy và dùng nước nóng",
+        "Cho thêm muối"
+      ],
+      "answer": 2,
+      "explain": "Khuấy, đun nóng.",
+      "wrong_explain": {
+        "0": "Tan chậm.",
+        "1": "Tan chậm.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hoà tan 15 g đường vào 135 g nước. Khối lượng dung dịch (g):",
+      "expr": "150",
+      "answer": "150",
+      "explain": "15 + 135."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dung dịch 200 g chứa 10% muối. Khối lượng muối (g):",
+      "expr": "20",
+      "answer": "20",
+      "explain": "200·10%."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong: nước cất, sữa, không khí, muối tinh, nước chanh – có bao nhiêu hỗn hợp?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Sữa, không khí, nước chanh."
+    }
+  ]
+}

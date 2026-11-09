@@ -1,0 +1,153 @@
+{
+  "id": "bai-5",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương I. Tập hợp các số tự nhiên",
+  "lesson": "Bài 5. Phép nhân và phép chia số tự nhiên",
+  "section": "",
+  "bookPage": 17,
+  "requirements": [
+    "Thực hiện phép nhân, phép chia (hết và có dư) số tự nhiên; vận dụng tính chất của phép nhân để tính nhẩm, tính hợp lí."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phép nhân: a × b = c (a, b là thừa số, c là tích). Tính chất: giao hoán a·b = b·a; kết hợp (a·b)·c = a·(b·c); nhân với 1: a·1 = a; phân phối đối với phép cộng và phép trừ."
+    },
+    {
+      "type": "formula",
+      "content": "a·(b + c) = a·b + a·c;   a·(b − c) = a·b − a·c"
+    },
+    {
+      "type": "text",
+      "content": "Phép chia hết: a = b·q (b ≠ 0), q là thương. Phép chia có dư: a = b·q + r với 0 < r < b; r là số dư, luôn nhỏ hơn số chia."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính hợp lí 25·37·4.",
+      "steps": [
+        "Đổi chỗ: (25·4)·37 = 100·37.",
+        "= 3 700."
+      ],
+      "expr": "25*4*37",
+      "answer": "3700"
+    },
+    {
+      "problem": "Dạng bài toán thực tế có dư: cần ít nhất bao nhiêu xe 45 chỗ để chở 487 người?",
+      "steps": [
+        "487 = 45·10 + 37, còn 37 người phải thêm 1 xe.",
+        "Cần 10 + 1 = 11 xe."
+      ],
+      "expr": "10+1",
+      "answer": "11"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong phép chia có dư a = b·q + r, số dư r thoả mãn:",
+      "choices": [
+        "r > b",
+        "r = b",
+        "0 < r < b",
+        "r = 0"
+      ],
+      "answer": 2,
+      "explain": "Số dư luôn nhỏ hơn số chia.",
+      "wrong_explain": {
+        "0": "Số dư luôn nhỏ hơn số chia.",
+        "1": "Khi đó còn chia tiếp được.",
+        "3": "Khi r = 0 là phép chia hết."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đẳng thức a·(b + c) = a·b + a·c thể hiện tính chất:",
+      "choices": [
+        "Giao hoán",
+        "Phân phối của phép nhân đối với phép cộng",
+        "Kết hợp",
+        "Nhân với 1"
+      ],
+      "answer": 1,
+      "explain": "Tính chất phân phối.",
+      "wrong_explain": {
+        "0": "Giao hoán là a·b = b·a.",
+        "2": "Kết hợp là (a·b)·c = a·(b·c).",
+        "3": "Là a·1 = a."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 125·8·37.",
+      "expr": "125*8*37",
+      "answer": "37000",
+      "explain": "(125·8)·37 = 1 000·37 = 37 000."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính hợp lí 47·36 + 47·64.",
+      "expr": "47*100",
+      "answer": "4700",
+      "explain": "47·(36 + 64) = 4 700."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 4 847 : 131.",
+      "expr": "4847/131",
+      "answer": "37",
+      "explain": "= 37."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm số dư khi chia 5 580 cho 157.",
+      "expr": "5580-157*35",
+      "answer": "85",
+      "explain": "5 580 = 157·35 + 85, dư 85."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính nhẩm 45·11.",
+      "expr": "45*10+45",
+      "answer": "495",
+      "explain": "45·11 = 450 + 45 = 495."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm x biết 12·x = 1 008.",
+      "expr": "1008/12",
+      "answer": "84",
+      "explain": "x = 84."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mỗi hộp có 24 bút. 15 hộp có bao nhiêu bút?",
+      "expr": "24*15",
+      "answer": "360",
+      "explain": "360 bút."
+    }
+  ]
+}

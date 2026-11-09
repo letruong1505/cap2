@@ -1,0 +1,150 @@
+{
+  "id": "bai-3",
+  "grade": 6,
+  "subject": "lich-su",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Lịch sử 6",
+  "chapter": "Chương 1. Vì sao phải học lịch sử?",
+  "lesson": "Bài 3. Thời gian trong lịch sử",
+  "section": "",
+  "bookPage": 14,
+  "requirements": [
+    "Nêu được một số khái niệm thời gian: thập kỉ, thế kỉ, thiên niên kỉ, trước Công nguyên, Công nguyên, âm lịch, dương lịch; tính được thời gian các sự kiện."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Âm lịch là cách tính thời gian theo chu kì Mặt Trăng quay quanh Trái Đất; dương lịch tính theo chu kì Trái Đất quay quanh Mặt Trời. Công lịch là lịch chung của thế giới dựa trên dương lịch."
+    },
+    {
+      "type": "text",
+      "content": "Công lịch lấy năm tương truyền Chúa Giê-su ra đời làm năm 1 Công nguyên (CN); trước đó là trước Công nguyên (TCN). Không có năm 0."
+    },
+    {
+      "type": "text",
+      "content": "Một thập kỉ là 10 năm; một thế kỉ là 100 năm; một thiên niên kỉ là 1 000 năm. Thế kỉ I tính từ năm 1 đến năm 100; thế kỉ XXI từ năm 2001 đến năm 2100."
+    },
+    {
+      "type": "text",
+      "content": "Tính khoảng cách: hai năm cùng CN thì lấy năm sau trừ năm trước; một năm TCN và một năm CN thì cộng hai số năm rồi trừ 1 (vì không có năm 0)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Năm 179 TCN đến năm 2024 cách nhau bao nhiêu năm?",
+      "steps": [
+        "Cộng hai số năm rồi trừ 1 (không có năm 0).",
+        "179 + 2024 − 1 = 2 202 năm."
+      ],
+      "expr": "179+2024-1",
+      "answer": "2202"
+    },
+    {
+      "problem": "Dạng xác định thế kỉ: năm 938 thuộc thế kỉ thứ mấy?",
+      "steps": [
+        "Thế kỉ X gồm các năm 901–1000.",
+        "938 thuộc thế kỉ X (10)."
+      ],
+      "expr": "10",
+      "answer": "10"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Một thế kỉ là:",
+      "choices": [
+        "10 năm",
+        "1 000 năm",
+        "50 năm",
+        "100 năm"
+      ],
+      "answer": 3,
+      "explain": "Thế kỉ.",
+      "wrong_explain": {
+        "0": "Thập kỉ.",
+        "1": "Thiên niên kỉ.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Âm lịch được tính theo:",
+      "choices": [
+        "Trái Đất quay quanh Mặt Trời",
+        "Trái Đất tự quay",
+        "Chu kì Mặt Trăng quay quanh Trái Đất",
+        "Mặt Trời quay quanh Ngân Hà"
+      ],
+      "answer": 2,
+      "explain": "Âm lịch.",
+      "wrong_explain": {
+        "0": "Dương lịch.",
+        "1": "Một ngày.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Năm 2024 thuộc thế kỉ:",
+      "choices": [
+        "XX",
+        "XXI",
+        "XXII",
+        "XIX"
+      ],
+      "answer": 1,
+      "explain": "2001–2100.",
+      "wrong_explain": {
+        "0": "1901–2000.",
+        "2": "2101–2200.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Năm 40 thuộc thế kỉ thứ mấy?",
+      "expr": "1",
+      "answer": "1",
+      "explain": "Thế kỉ I."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Năm 1288 thuộc thế kỉ thứ mấy?",
+      "expr": "13",
+      "answer": "13",
+      "explain": "Thế kỉ XIII."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Từ năm 111 TCN đến năm 40 cách nhau bao nhiêu năm?",
+      "expr": "111+40-1",
+      "answer": "150",
+      "explain": "150 năm."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một thiên niên kỉ có bao nhiêu thế kỉ?",
+      "expr": "10",
+      "answer": "10",
+      "explain": "1 000 : 100."
+    }
+  ]
+}

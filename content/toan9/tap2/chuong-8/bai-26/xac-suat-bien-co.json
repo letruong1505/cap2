@@ -1,0 +1,153 @@
+{
+  "id": "bai-26",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 2",
+  "chapter": "Chương VIII. Xác suất của biến cố trong một số mô hình xác suất đơn giản",
+  "lesson": "Bài 26. Xác suất của biến cố liên quan tới phép thử",
+  "section": "",
+  "bookPage": 61,
+  "requirements": [
+    "Tính xác suất của biến cố bằng cách đếm số kết quả thuận lợi khi các kết quả đồng khả năng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Biến cố liên quan tới phép thử là tập con của không gian mẫu. Mỗi kết quả làm cho biến cố xảy ra gọi là kết quả thuận lợi."
+    },
+    {
+      "type": "formula",
+      "content": "P(A) = (Số kết quả thuận lợi cho A) / (Số phần tử của Ω)"
+    },
+    {
+      "type": "text",
+      "content": "Công thức trên dùng khi các kết quả có thể là đồng khả năng. 0 ≤ P(A) ≤ 1; biến cố chắc chắn có xác suất 1; biến cố không thể có xác suất 0."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Gieo xúc xắc. Xác suất ra mặt chẵn?",
+      "steps": [
+        "Thuận lợi: 2, 4, 6 (3 kết quả).",
+        "P = 3/6 = 1/2."
+      ],
+      "expr": "3/6",
+      "answer": "0.5"
+    },
+    {
+      "problem": "Dạng hai xúc xắc: xác suất tổng số chấm bằng 7?",
+      "steps": [
+        "Có 6 kết quả thuận lợi trong 36.",
+        "P = 6/36 = 1/6."
+      ],
+      "expr": "6/36",
+      "answer": "1/6"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Xác suất của biến cố chắc chắn là:",
+      "choices": [
+        "1",
+        "0",
+        "1/2",
+        "100"
+      ],
+      "answer": 0,
+      "explain": "P = 1.",
+      "wrong_explain": {
+        "1": "Đó là biến cố không thể.",
+        "2": "Không.",
+        "3": "Phải là 1 (hay 100%)."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Công thức P(A) = số kết quả thuận lợi / |Ω| áp dụng khi:",
+      "choices": [
+        "Bất kì phép thử nào",
+        "Chỉ khi tung đồng xu",
+        "Khi |Ω| = 1",
+        "Các kết quả đồng khả năng"
+      ],
+      "answer": 3,
+      "explain": "Điều kiện.",
+      "wrong_explain": {
+        "0": "Cần đồng khả năng.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Gieo xúc xắc. Xác suất ra mặt 6 là:",
+      "expr": "1/6",
+      "answer": "1/6",
+      "explain": "1/6."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hộp có 3 bi đỏ, 5 bi xanh. Lấy 1 bi, xác suất bi đỏ là:",
+      "expr": "3/8",
+      "answer": "0.375",
+      "explain": "3/8."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tung hai đồng xu. Xác suất cả hai ngửa là:",
+      "expr": "1/4",
+      "answer": "0.25",
+      "explain": "1/4."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Gieo xúc xắc. Xác suất số chấm là số nguyên tố là:",
+      "expr": "1/2",
+      "answer": "0.5",
+      "explain": "2, 3, 5: 3/6."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chọn ngẫu nhiên số từ 1 đến 20. Xác suất số chia hết cho 5 là:",
+      "expr": "4/20",
+      "answer": "0.2",
+      "explain": "1/5."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Gieo hai xúc xắc. Xác suất hai mặt giống nhau là:",
+      "expr": "6/36",
+      "answer": "1/6",
+      "explain": "1/6."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tung ba đồng xu. Xác suất có đúng một mặt ngửa là:",
+      "expr": "3/8",
+      "answer": "0.375",
+      "explain": "SNN... 3 kết quả trong 8."
+    }
+  ]
+}

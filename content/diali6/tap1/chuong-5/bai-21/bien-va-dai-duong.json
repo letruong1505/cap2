@@ -1,0 +1,161 @@
+{
+  "id": "bai-21",
+  "grade": 6,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 6",
+  "chapter": "Chương 5. Nước trên Trái Đất",
+  "lesson": "Bài 21. Biển và đại dương",
+  "section": "",
+  "bookPage": 163,
+  "requirements": [
+    "Xác định được các đại dương; nêu được độ muối, nhiệt độ nước biển; các vận động của nước biển: sóng, thuỷ triều, dòng biển."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Có bốn đại dương: Thái Bình Dương (lớn nhất), Đại Tây Dương, Ấn Độ Dương, Bắc Băng Dương."
+    },
+    {
+      "type": "text",
+      "content": "Nước biển có độ muối trung bình khoảng 35‰; nhiệt độ bề mặt giảm dần từ Xích đạo về hai cực."
+    },
+    {
+      "type": "text",
+      "content": "Sóng biển là sự dao động tại chỗ của nước biển, chủ yếu do gió; sóng thần do động đất, núi lửa dưới đáy biển. Thuỷ triều là hiện tượng nước biển dâng lên, hạ xuống theo chu kì do lực hút của Mặt Trăng và Mặt Trời."
+    },
+    {
+      "type": "text",
+      "content": "Dòng biển là dòng chảy trong biển và đại dương, gồm dòng biển nóng và dòng biển lạnh, ảnh hưởng đến khí hậu vùng ven biển."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Độ muối trung bình 35‰. Trong 1 000 g nước biển có bao nhiêu gam muối?",
+      "steps": [
+        "1 000·35/1 000.",
+        "= 35 g."
+      ],
+      "expr": "35",
+      "answer": "35"
+    },
+    {
+      "problem": "Dạng tính lượng muối: làm bay hơi 20 kg nước biển (35‰) thu bao nhiêu gam muối?",
+      "steps": [
+        "20 000·35/1 000.",
+        "= 700 g."
+      ],
+      "expr": "20000*35/1000",
+      "answer": "700"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đại dương lớn nhất thế giới là:",
+      "choices": [
+        "Đại Tây Dương",
+        "Ấn Độ Dương",
+        "Thái Bình Dương",
+        "Bắc Băng Dương"
+      ],
+      "answer": 2,
+      "explain": "Thái Bình Dương.",
+      "wrong_explain": {
+        "0": "Thứ hai.",
+        "1": "Thứ ba.",
+        "3": "Nhỏ nhất."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nguyên nhân chủ yếu sinh ra sóng biển là:",
+      "choices": [
+        "Thuỷ triều",
+        "Gió",
+        "Mặt Trăng",
+        "Dòng biển"
+      ],
+      "answer": 1,
+      "explain": "Sóng do gió.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Thuỷ triều.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Thuỷ triều được sinh ra chủ yếu do:",
+      "choices": [
+        "Lực hút của Mặt Trăng và Mặt Trời",
+        "Gió mùa",
+        "Động đất",
+        "Mưa lớn"
+      ],
+      "answer": 0,
+      "explain": "Lực hút.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Sóng thần.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Độ muối trung bình của nước biển là:",
+      "choices": [
+        "3,5‰",
+        "350‰",
+        "0‰",
+        "35‰"
+      ],
+      "answer": 3,
+      "explain": "35 phần nghìn.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Nước ngọt."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có bao nhiêu đại dương?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "4."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Biển có độ muối 33‰. Trong 2 kg nước biển có bao nhiêu gam muối?",
+      "expr": "66",
+      "answer": "66",
+      "explain": "2 000·33/1 000."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thuỷ triều lên cao 4 m, xuống thấp 0,5 m. Biên độ triều (m):",
+      "expr": "3.5",
+      "answer": "3.5",
+      "explain": "4 − 0,5."
+    }
+  ]
+}

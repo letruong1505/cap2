@@ -1,0 +1,153 @@
+{
+  "id": "bai-4",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương I. Tập hợp các số tự nhiên",
+  "lesson": "Bài 4. Phép cộng và phép trừ số tự nhiên",
+  "section": "",
+  "bookPage": 15,
+  "requirements": [
+    "Thực hiện phép cộng, phép trừ số tự nhiên; vận dụng tính chất giao hoán, kết hợp để tính nhẩm, tính hợp lí."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phép cộng: a + b = c (a, b là số hạng, c là tổng). Phép cộng có tính chất giao hoán a + b = b + a và kết hợp (a + b) + c = a + (b + c); a + 0 = a."
+    },
+    {
+      "type": "text",
+      "content": "Phép trừ: a − b = c (a là số bị trừ, b là số trừ, c là hiệu), chỉ thực hiện được trong ℕ khi a ≥ b. Nếu a − b = c thì a = b + c và b = a − c."
+    },
+    {
+      "type": "text",
+      "content": "Mẹo tính nhanh: nhóm các số hạng có tổng tròn chục, tròn trăm; thêm vào số hạng này và bớt đi ở số hạng kia cùng một số."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính hợp lí 117 + 68 + 23.",
+      "steps": [
+        "Nhóm (117 + 23) + 68 = 140 + 68.",
+        "= 208."
+      ],
+      "expr": "117+68+23",
+      "answer": "208"
+    },
+    {
+      "problem": "Dạng tìm x: x − 345 = 1 000. Tìm x.",
+      "steps": [
+        "Số bị trừ = hiệu + số trừ.",
+        "x = 1 000 + 345 = 1 345."
+      ],
+      "expr": "1000+345",
+      "answer": "1345"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tính chất a + b = b + a gọi là:",
+      "choices": [
+        "Tính chất kết hợp",
+        "Tính chất giao hoán",
+        "Tính chất phân phối",
+        "Tính chất bắc cầu"
+      ],
+      "answer": 1,
+      "explain": "Đổi chỗ các số hạng tổng không đổi.",
+      "wrong_explain": {
+        "0": "Kết hợp là (a + b) + c = a + (b + c).",
+        "2": "Liên quan phép nhân và phép cộng.",
+        "3": "Dùng trong so sánh."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phép trừ a − b thực hiện được trong ℕ khi:",
+      "choices": [
+        "a ≥ b",
+        "a < b",
+        "a = 0",
+        "b > a"
+      ],
+      "answer": 0,
+      "explain": "Số bị trừ không nhỏ hơn số trừ.",
+      "wrong_explain": {
+        "1": "Hiệu sẽ không là số tự nhiên.",
+        "2": "Chỉ đúng nếu b = 0.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 1 364 + 4 578.",
+      "expr": "1364+4578",
+      "answer": "5942",
+      "explain": "= 5 942."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính hợp lí 46 + 17 + 54.",
+      "expr": "46+54+17",
+      "answer": "117",
+      "explain": "(46 + 54) + 17 = 117."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 6 315 − 2 879.",
+      "expr": "6315-2879",
+      "answer": "3436",
+      "explain": "= 3 436."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm x biết x + 127 = 500.",
+      "expr": "500-127",
+      "answer": "373",
+      "explain": "x = 373."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm x biết 750 − x = 268.",
+      "expr": "750-268",
+      "answer": "482",
+      "explain": "x = 482."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính nhẩm 997 + 58 bằng cách thêm 3 vào 997 và bớt 3 ở 58.",
+      "expr": "1000+55",
+      "answer": "1055",
+      "explain": "= 1 055."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một cửa hàng buổi sáng bán 1 250 kg gạo, buổi chiều bán ít hơn buổi sáng 375 kg. Cả ngày bán bao nhiêu kg?",
+      "expr": "1250+1250-375",
+      "answer": "2125",
+      "explain": "1 250 + 875 = 2 125 kg."
+    }
+  ]
+}

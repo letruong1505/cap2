@@ -1,0 +1,157 @@
+{
+  "id": "bai-28",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 2",
+  "chapter": "Chương IX. Đường tròn ngoại tiếp và đường tròn nội tiếp",
+  "lesson": "Bài 28. Đường tròn ngoại tiếp và đường tròn nội tiếp của một tam giác",
+  "section": "",
+  "bookPage": 75,
+  "requirements": [
+    "Xác định tâm và bán kính đường tròn ngoại tiếp, nội tiếp tam giác; tính bán kính với tam giác vuông, tam giác đều."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đường tròn ngoại tiếp tam giác đi qua ba đỉnh; tâm là giao điểm ba đường trung trực. Tam giác vuông có tâm đường tròn ngoại tiếp là trung điểm cạnh huyền, R bằng nửa cạnh huyền."
+    },
+    {
+      "type": "text",
+      "content": "Đường tròn nội tiếp tam giác tiếp xúc với ba cạnh; tâm là giao điểm ba đường phân giác trong."
+    },
+    {
+      "type": "formula",
+      "content": "Tam giác đều cạnh a: R = a√3/3;  r = a√3/6"
+    },
+    {
+      "type": "text",
+      "content": "Với tam giác đều, tâm đường tròn ngoại tiếp và nội tiếp trùng nhau (trọng tâm), R = 2r."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tam giác vuông có cạnh huyền 10 cm. Bán kính đường tròn ngoại tiếp?",
+      "steps": [
+        "R = cạnh huyền : 2.",
+        "= 5 cm."
+      ],
+      "expr": "10/2",
+      "answer": "5"
+    },
+    {
+      "problem": "Dạng tam giác đều: R = 6 cm, tính r.",
+      "steps": [
+        "r = R : 2.",
+        "= 3 cm."
+      ],
+      "expr": "6/2",
+      "answer": "3"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tâm đường tròn ngoại tiếp tam giác là giao điểm của:",
+      "choices": [
+        "Ba đường phân giác",
+        "Ba đường trung tuyến",
+        "Ba đường trung trực",
+        "Ba đường cao"
+      ],
+      "answer": 2,
+      "explain": "Cách đều ba đỉnh.",
+      "wrong_explain": {
+        "0": "Đó là tâm nội tiếp.",
+        "1": "Trọng tâm.",
+        "3": "Trực tâm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tâm đường tròn nội tiếp tam giác là giao điểm của:",
+      "choices": [
+        "Ba đường trung trực",
+        "Ba đường phân giác trong",
+        "Ba đường cao",
+        "Ba đường trung tuyến"
+      ],
+      "answer": 1,
+      "explain": "Cách đều ba cạnh.",
+      "wrong_explain": {
+        "0": "Tâm ngoại tiếp.",
+        "2": "Trực tâm.",
+        "3": "Trọng tâm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác vuông có hai cạnh góc vuông 6 và 8. R ngoại tiếp là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Cạnh huyền 10, R = 5."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác vuông có hai cạnh góc vuông 5 và 12. R là:",
+      "expr": "6.5",
+      "answer": "6.5",
+      "explain": "Cạnh huyền 13."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác đều có R = 8. Tính r.",
+      "expr": "4",
+      "answer": "4",
+      "explain": "r = R/2."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác đều có r = 3. Tính R.",
+      "expr": "6",
+      "answer": "6",
+      "explain": "R = 2r."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác đều cạnh a có R = a√3/3. Với a = √3 thì R bằng:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "√3·√3/3 = 1."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác vuông có R = 7,5. Cạnh huyền là:",
+      "expr": "15",
+      "answer": "15",
+      "explain": "15."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác đều cạnh 2√3 có r bằng:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "2√3·√3/6 = 1."
+    }
+  ]
+}

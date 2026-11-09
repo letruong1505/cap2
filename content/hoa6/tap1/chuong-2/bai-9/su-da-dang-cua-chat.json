@@ -1,0 +1,157 @@
+{
+  "id": "bai-9",
+  "grade": 6,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 6",
+  "chapter": "Chương II. Chất quanh ta",
+  "lesson": "Bài 9. Sự đa dạng của chất",
+  "section": "",
+  "bookPage": 28,
+  "requirements": [
+    "Nêu được sự đa dạng của chất; phân biệt vật thể tự nhiên, vật thể nhân tạo, vật sống, vật không sống; nêu được tính chất vật lí, tính chất hoá học của chất."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Chất có ở xung quanh ta, ở đâu có vật thể ở đó có chất. Vật thể tự nhiên có sẵn trong tự nhiên (cây, đá, nước biển); vật thể nhân tạo do con người tạo ra (bàn, ghế, xe đạp). Vật thể có thể do một chất hoặc nhiều chất tạo nên."
+    },
+    {
+      "type": "text",
+      "content": "Mỗi chất có những tính chất nhất định. Tính chất vật lí: thể (rắn, lỏng, khí), màu sắc, mùi vị, tính tan, tính dẫn điện, dẫn nhiệt, nhiệt độ sôi, nhiệt độ nóng chảy, khối lượng riêng."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất hoá học là khả năng chất bị biến đổi thành chất khác, ví dụ: bị phân huỷ, tác dụng với chất khác, khả năng cháy."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dạng phân loại vật thể: trong các vật \"cây xanh, cái cốc, hòn đá, quyển vở, con cá\", có bao nhiêu vật thể tự nhiên?",
+      "steps": [
+        "Vật thể tự nhiên: cây xanh, hòn đá, con cá.",
+        "Có 3."
+      ],
+      "expr": "3",
+      "answer": "3"
+    },
+    {
+      "problem": "Nước sôi ở 100 °C, rượu (ethanol) sôi ở khoảng 78 °C. Nhiệt độ sôi của nước cao hơn bao nhiêu độ?",
+      "steps": [
+        "100 − 78.",
+        "= 22 °C."
+      ],
+      "expr": "100-78",
+      "answer": "22"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Vật thể nào là vật thể nhân tạo?",
+      "choices": [
+        "Cây bàng",
+        "Nước biển",
+        "Không khí",
+        "Cái bàn"
+      ],
+      "answer": 3,
+      "explain": "Do con người làm ra.",
+      "wrong_explain": {
+        "0": "Tự nhiên.",
+        "1": "Tự nhiên.",
+        "2": "Tự nhiên."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tính chất nào là tính chất hoá học?",
+      "choices": [
+        "Màu trắng của muối",
+        "Nhiệt độ sôi của nước",
+        "Khả năng cháy của cồn",
+        "Tính tan của đường"
+      ],
+      "answer": 2,
+      "explain": "Biến đổi thành chất khác.",
+      "wrong_explain": {
+        "0": "Tính chất vật lí.",
+        "1": "Vật lí.",
+        "3": "Vật lí."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tính chất nào là tính chất vật lí?",
+      "choices": [
+        "Sắt bị gỉ trong không khí ẩm",
+        "Sắt dẫn điện tốt",
+        "Gỗ cháy thành than",
+        "Đường bị nhiệt phân thành than"
+      ],
+      "answer": 1,
+      "explain": "Không tạo chất mới.",
+      "wrong_explain": {
+        "0": "Hoá học.",
+        "2": "Hoá học.",
+        "3": "Hoá học."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ở đâu có vật thể, ở đó có:",
+      "choices": [
+        "Chất",
+        "Năng lượng hạt nhân",
+        "Sự sống",
+        "Ánh sáng"
+      ],
+      "answer": 0,
+      "explain": "Vật thể được tạo từ chất.",
+      "wrong_explain": {
+        "1": "Không nhất thiết.",
+        "2": "Không nhất thiết.",
+        "3": "Không nhất thiết."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong các tính chất: màu sắc, khả năng cháy, tính tan, bị phân huỷ khi đun nóng, nhiệt độ sôi – có bao nhiêu tính chất hoá học?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Khả năng cháy, bị phân huỷ."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong các vật: con mèo, cái ghế, cây lúa, chiếc xe đạp – có bao nhiêu vật sống?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Con mèo, cây lúa."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Muối ăn nóng chảy ở 801 °C, đường nóng chảy ở khoảng 186 °C. Chênh lệch là bao nhiêu độ?",
+      "expr": "801-186",
+      "answer": "615",
+      "explain": "615 °C."
+    }
+  ]
+}

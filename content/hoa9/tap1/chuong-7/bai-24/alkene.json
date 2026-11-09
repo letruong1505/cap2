@@ -1,0 +1,161 @@
+{
+  "id": "bai-24",
+  "grade": 9,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 9",
+  "chapter": "Chương VII. Giới thiệu về chất hữu cơ",
+  "lesson": "Bài 24. Alkene",
+  "section": "",
+  "bookPage": 111,
+  "requirements": [
+    "Nêu được khái niệm alkene; cấu tạo, tính chất của ethylene; ứng dụng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Alkene là hydrocarbon mạch hở có một liên kết đôi C=C. Công thức chung CₙH₂ₙ (n ≥ 2). Chất đơn giản nhất là ethylene C₂H₄ (CH₂=CH₂)."
+    },
+    {
+      "type": "text",
+      "content": "Ethylene là chất khí không màu, không mùi, ít tan trong nước."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất hoá học: phản ứng cháy (C₂H₄ + 3O₂ → 2CO₂ + 2H₂O); phản ứng cộng làm mất màu nước bromine (C₂H₄ + Br₂ → C₂H₄Br₂); phản ứng trùng hợp tạo polyethylene (PE)."
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: sản xuất PE, ethylic alcohol, kích thích quả mau chín."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Phân tử khối của ethylene C₂H₄?",
+      "steps": [
+        "2·12 + 4.",
+        "= 28."
+      ],
+      "expr": "28",
+      "answer": "28"
+    },
+    {
+      "problem": "Dạng phản ứng cộng: 0,1 mol C₂H₄ làm mất màu tối đa bao nhiêu mol Br₂?",
+      "steps": [
+        "C₂H₄ + Br₂ → C₂H₄Br₂ (tỉ lệ 1 : 1).",
+        "0,1 mol."
+      ],
+      "expr": "0.1",
+      "answer": "0.1"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Alkene có đặc điểm cấu tạo:",
+      "choices": [
+        "Chỉ có liên kết đơn",
+        "Có liên kết ba",
+        "Mạch vòng",
+        "Có một liên kết đôi C=C, mạch hở"
+      ],
+      "answer": 3,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Alkane.",
+        "1": "Alkyne.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Ethylene làm mất màu dung dịch:",
+      "choices": [
+        "Nước vôi trong",
+        "Nước muối",
+        "Nước bromine",
+        "Dung dịch NaOH"
+      ],
+      "answer": 2,
+      "explain": "Phản ứng cộng.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trùng hợp ethylene tạo ra:",
+      "choices": [
+        "PVC",
+        "Polyethylene (PE)",
+        "Tinh bột",
+        "Protein"
+      ],
+      "answer": 1,
+      "explain": "PE.",
+      "wrong_explain": {
+        "0": "Từ vinyl chloride.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ethylene được dùng để:",
+      "choices": [
+        "Kích thích quả mau chín",
+        "Làm nhiên liệu chính cho xe",
+        "Làm thuốc chữa bệnh",
+        "Làm muối ăn"
+      ],
+      "answer": 0,
+      "explain": "Ứng dụng.",
+      "wrong_explain": {
+        "1": "Không chủ yếu.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Alkene có 3 nguyên tử C có bao nhiêu nguyên tử H?",
+      "expr": "6",
+      "answer": "6",
+      "explain": "CₙH₂ₙ."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đốt 0,1 mol C₂H₄ cần bao nhiêu mol O₂?",
+      "expr": "0.3",
+      "answer": "0.3",
+      "explain": "×3."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "2,8 g C₂H₄ (M = 28) có bao nhiêu mol?",
+      "expr": "0.1",
+      "answer": "0.1",
+      "explain": "2,8 : 28."
+    }
+  ]
+}

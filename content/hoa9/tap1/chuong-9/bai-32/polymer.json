@@ -1,0 +1,161 @@
+{
+  "id": "bai-32",
+  "grade": 9,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 9",
+  "chapter": "Chương IX. Lipid. Carbohydrate. Protein. Polymer",
+  "lesson": "Bài 32. Polymer",
+  "section": "",
+  "bookPage": 141,
+  "requirements": [
+    "Nêu được khái niệm polymer, phân loại; ứng dụng (chất dẻo, tơ, cao su); sử dụng an toàn, bảo vệ môi trường."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Polymer là những chất có phân tử khối rất lớn, do nhiều mắt xích liên kết với nhau. Ví dụ polyethylene (–CH₂–CH₂–)ₙ."
+    },
+    {
+      "type": "text",
+      "content": "Phân loại: polymer thiên nhiên (tinh bột, cellulose, protein, cao su thiên nhiên) và polymer tổng hợp (PE, PVC, nylon, cao su buna)."
+    },
+    {
+      "type": "text",
+      "content": "Polymer thường là chất rắn, không bay hơi, không tan trong nước. Ứng dụng: chất dẻo (PE, PVC làm túi, ống nước), tơ (tơ tằm, nylon), cao su (lốp xe, găng tay)."
+    },
+    {
+      "type": "text",
+      "content": "Rác thải polymer khó phân huỷ gây ô nhiễm; cần giảm dùng đồ nhựa một lần, tái chế, phân loại rác."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Polyethylene có n = 1 000 mắt xích C₂H₄ (M = 28). Phân tử khối?",
+      "steps": [
+        "28·1 000.",
+        "= 28 000."
+      ],
+      "expr": "28*1000",
+      "answer": "28000"
+    },
+    {
+      "problem": "Dạng tính số mắt xích: PE có phân tử khối 56 000. Số mắt xích?",
+      "steps": [
+        "56 000 : 28.",
+        "= 2 000."
+      ],
+      "expr": "56000/28",
+      "answer": "2000"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Polymer là chất có:",
+      "choices": [
+        "Phân tử khối rất lớn, gồm nhiều mắt xích",
+        "Phân tử khối nhỏ",
+        "Một nguyên tử",
+        "Thể khí"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Polymer thiên nhiên là:",
+      "choices": [
+        "PE",
+        "PVC",
+        "Nylon",
+        "Tinh bột"
+      ],
+      "answer": 3,
+      "explain": "Có sẵn trong tự nhiên.",
+      "wrong_explain": {
+        "0": "Tổng hợp.",
+        "1": "Tổng hợp.",
+        "2": "Tổng hợp."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "PVC thường dùng làm:",
+      "choices": [
+        "Thực phẩm",
+        "Nhiên liệu",
+        "Ống dẫn nước, vỏ dây điện",
+        "Thuốc"
+      ],
+      "answer": 2,
+      "explain": "Chất dẻo.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Biện pháp giảm ô nhiễm rác thải nhựa:",
+      "choices": [
+        "Đốt rác ngoài trời",
+        "Hạn chế đồ nhựa dùng một lần, tái chế",
+        "Chôn lấp tuỳ ý",
+        "Thải ra sông"
+      ],
+      "answer": 1,
+      "explain": "Bảo vệ môi trường.",
+      "wrong_explain": {
+        "0": "Ô nhiễm.",
+        "2": "Ô nhiễm.",
+        "3": "Ô nhiễm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "PVC có mắt xích M = 62,5. 1 000 mắt xích có phân tử khối:",
+      "expr": "62500",
+      "answer": "62500",
+      "explain": "62,5·1 000."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong: tinh bột, nylon, cellulose, PE, protein – có bao nhiêu polymer thiên nhiên?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Tinh bột, cellulose, protein."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một gia đình dùng 4 túi nilon/ngày. Một năm (365 ngày) dùng bao nhiêu túi?",
+      "expr": "1460",
+      "answer": "1460",
+      "explain": "4·365."
+    }
+  ]
+}

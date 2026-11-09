@@ -1,0 +1,155 @@
+{
+  "id": "bai-8",
+  "grade": 9,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 9",
+  "chapter": "Chương 2. Địa lí các ngành kinh tế",
+  "lesson": "Bài 8. Công nghiệp",
+  "section": "",
+  "bookPage": 142,
+  "requirements": [
+    "Phân tích được các nhân tố ảnh hưởng đến phát triển và phân bố công nghiệp; trình bày được sự phát triển và phân bố của một số ngành công nghiệp chủ yếu."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nhân tố: tài nguyên khoáng sản (than ở Quảng Ninh; dầu khí ở thềm lục địa phía nam; bô-xít ở Tây Nguyên), nguồn thuỷ năng; lao động, thị trường, chính sách, vốn và công nghệ, cơ sở hạ tầng."
+    },
+    {
+      "type": "text",
+      "content": "Ngành khai thác nhiên liệu: than (Quảng Ninh), dầu khí (Bà Rịa – Vũng Tàu). Điện: thuỷ điện (Hoà Bình, Sơn La, Lai Châu…), nhiệt điện (Phả Lại, Phú Mỹ…), điện gió, điện mặt trời phát triển nhanh."
+    },
+    {
+      "type": "text",
+      "content": "Công nghiệp chế biến lương thực – thực phẩm, dệt may, sản xuất sản phẩm điện tử, máy vi tính là các ngành chủ lực, có giá trị xuất khẩu lớn. Các trung tâm công nghiệp lớn: Hà Nội, Thành phố Hồ Chí Minh, Hải Phòng, Đà Nẵng…"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Năm 2023 sản lượng điện khoảng 280 tỉ kWh, thuỷ điện 84 tỉ kWh. Thuỷ điện chiếm bao nhiêu %?",
+      "steps": [
+        "84 : 280 · 100 = 30%."
+      ],
+      "expr": "84*100/280",
+      "answer": "30"
+    },
+    {
+      "problem": "Dạng tính tăng trưởng: sản lượng điện 90 tỉ kWh (2010) và 280 tỉ kWh (2023). Tăng gấp bao nhiêu lần (làm tròn 1 chữ số thập phân)?",
+      "steps": [
+        "280 : 90 ≈ 3,1 lần."
+      ],
+      "expr": "280/90",
+      "answer": "28/9"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Than đá được khai thác nhiều nhất ở:",
+      "choices": [
+        "Bà Rịa – Vũng Tàu",
+        "Tây Nguyên",
+        "Đồng bằng sông Cửu Long",
+        "Quảng Ninh"
+      ],
+      "answer": 3,
+      "explain": "Than.",
+      "wrong_explain": {
+        "0": "Dầu khí.",
+        "1": "Bô-xít.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nhà máy thuỷ điện có công suất lớn nhất nước ta là:",
+      "choices": [
+        "Phả Lại",
+        "Phú Mỹ",
+        "Sơn La",
+        "Trị An"
+      ],
+      "answer": 2,
+      "explain": "Sơn La.",
+      "wrong_explain": {
+        "0": "Nhiệt điện.",
+        "1": "Nhiệt điện khí.",
+        "3": "Nhỏ hơn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dầu khí được khai thác chủ yếu ở:",
+      "choices": [
+        "Quảng Ninh",
+        "Thềm lục địa phía nam",
+        "Tây Bắc",
+        "Đồng bằng sông Hồng"
+      ],
+      "answer": 1,
+      "explain": "Dầu khí.",
+      "wrong_explain": {
+        "0": "Than.",
+        "2": "Thuỷ điện.",
+        "3": "Không chủ yếu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hai trung tâm công nghiệp lớn nhất nước ta là:",
+      "choices": [
+        "Hà Nội và Thành phố Hồ Chí Minh",
+        "Huế và Đà Lạt",
+        "Cần Thơ và Vinh",
+        "Sa Pa và Hạ Long"
+      ],
+      "answer": 0,
+      "explain": "Lớn nhất.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Nhỏ hơn.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Sản lượng điện 280 tỉ kWh, nhiệt điện chiếm 50%. Nhiệt điện bao nhiêu tỉ kWh?",
+      "expr": "280*50/100",
+      "answer": "140",
+      "explain": "140."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Kim ngạch xuất khẩu điện tử, máy tính 57 tỉ USD, dệt may 33 tỉ USD. Hơn kém nhau bao nhiêu tỉ USD?",
+      "expr": "57-33",
+      "answer": "24",
+      "explain": "24."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một nhà máy sản xuất 1 200 tấn sản phẩm trong 12 tháng. Trung bình mỗi tháng bao nhiêu tấn?",
+      "expr": "1200/12",
+      "answer": "100",
+      "explain": "100."
+    }
+  ]
+}

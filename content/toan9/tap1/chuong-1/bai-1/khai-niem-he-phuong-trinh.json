@@ -1,0 +1,168 @@
+{
+  "id": "bai-1",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 1",
+  "chapter": "Chương I. Phương trình và hệ hai phương trình bậc nhất hai ẩn",
+  "lesson": "Bài 1. Khái niệm phương trình và hệ hai phương trình bậc nhất hai ẩn",
+  "section": "",
+  "bookPage": 5,
+  "requirements": [
+    "Nhận biết phương trình bậc nhất hai ẩn, hệ hai phương trình bậc nhất hai ẩn và nghiệm của chúng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phương trình bậc nhất hai ẩn x, y có dạng ax + by = c, trong đó a, b, c là các số đã biết, a ≠ 0 hoặc b ≠ 0. Cặp số (x₀; y₀) là nghiệm nếu ax₀ + by₀ = c."
+    },
+    {
+      "type": "text",
+      "content": "Phương trình bậc nhất hai ẩn luôn có vô số nghiệm. Trên mặt phẳng toạ độ, tập nghiệm được biểu diễn bởi một đường thẳng ax + by = c."
+    },
+    {
+      "type": "formula",
+      "content": "Hệ hai phương trình bậc nhất hai ẩn: { ax + by = c ; a′x + b′y = c′ }"
+    },
+    {
+      "type": "text",
+      "content": "Cặp số (x₀; y₀) là nghiệm của hệ nếu nó là nghiệm của cả hai phương trình. Giải hệ là tìm tất cả các nghiệm của hệ."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Kiểm tra cặp (2; 1) có là nghiệm của 3x − 2y = 4 không: tính 3·2 − 2·1.",
+      "steps": [
+        "3·2 − 2·1 = 6 − 2 = 4.",
+        "Bằng vế phải nên (2; 1) là nghiệm."
+      ],
+      "expr": "3*2-2*1",
+      "answer": "4"
+    },
+    {
+      "problem": "Dạng tìm hệ số: tìm m để (1; −2) là nghiệm của mx + 3y = 4.",
+      "steps": [
+        "Thay x = 1, y = −2: m − 6 = 4.",
+        "m = 10."
+      ],
+      "expr": "4+6",
+      "answer": "10"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phương trình nào là phương trình bậc nhất hai ẩn?",
+      "choices": [
+        "x² + y = 1",
+        "2x − 3y = 5",
+        "xy = 3",
+        "0x + 0y = 2"
+      ],
+      "answer": 1,
+      "explain": "Dạng ax + by = c.",
+      "wrong_explain": {
+        "0": "Có x² nên không bậc nhất.",
+        "2": "Có tích xy.",
+        "3": "Phải có a ≠ 0 hoặc b ≠ 0."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số nghiệm của một phương trình bậc nhất hai ẩn là:",
+      "choices": [
+        "Vô số nghiệm",
+        "Đúng một nghiệm",
+        "Hai nghiệm",
+        "Vô nghiệm"
+      ],
+      "answer": 0,
+      "explain": "Tập nghiệm là một đường thẳng.",
+      "wrong_explain": {
+        "1": "Có vô số.",
+        "2": "Có vô số.",
+        "3": "Luôn có nghiệm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cặp số nào là nghiệm của hệ { x + y = 3 ; x − y = 1 }?",
+      "choices": [
+        "(1; 2)",
+        "(3; 0)",
+        "(0; 3)",
+        "(2; 1)"
+      ],
+      "answer": 3,
+      "explain": "2 + 1 = 3, 2 − 1 = 1.",
+      "wrong_explain": {
+        "0": "1 − 2 = −1 ≠ 1.",
+        "1": "3 − 0 = 3 ≠ 1.",
+        "2": "0 − 3 ≠ 1."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho phương trình 2x + y = 7. Với x = 2 thì y bằng:",
+      "expr": "7-4",
+      "answer": "3",
+      "explain": "y = 3."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho phương trình x − 3y = 6. Với y = −1 thì x bằng:",
+      "expr": "6-3",
+      "answer": "3",
+      "explain": "x = 3."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm a để (3; 1) là nghiệm của ax − 2y = 7.",
+      "expr": "(7+2)/3",
+      "answer": "3",
+      "explain": "3a − 2 = 7, a = 3."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đường thẳng 2x + 3y = 12 cắt trục Oy tại điểm có tung độ:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "x = 0 ⇒ y = 4."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đường thẳng 2x + 3y = 12 cắt trục Ox tại điểm có hoành độ:",
+      "expr": "6",
+      "answer": "6",
+      "explain": "y = 0 ⇒ x = 6."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có bao nhiêu cặp số tự nhiên (x; y) thoả mãn x + y = 4?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "(0;4),(1;3),(2;2),(3;1),(4;0)."
+    }
+  ]
+}

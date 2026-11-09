@@ -1,0 +1,153 @@
+{
+  "id": "bai-16",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương III. Số nguyên",
+  "lesson": "Bài 16. Phép nhân số nguyên",
+  "section": "",
+  "bookPage": 70,
+  "requirements": [
+    "Thực hiện phép nhân số nguyên; vận dụng quy tắc dấu và tính chất phép nhân."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nhân hai số nguyên khác dấu: nhân hai phần số tự nhiên rồi đặt dấu \"−\" trước kết quả. Nhân hai số nguyên cùng dấu: tích là số dương. Mọi số nhân với 0 đều bằng 0."
+    },
+    {
+      "type": "formula",
+      "content": "(+)·(+) = (+);  (−)·(−) = (+);  (+)·(−) = (−)"
+    },
+    {
+      "type": "text",
+      "content": "Phép nhân số nguyên có tính chất giao hoán, kết hợp, nhân với 1, phân phối đối với phép cộng và phép trừ. Tích có chẵn thừa số âm thì mang dấu \"+\", lẻ thừa số âm thì mang dấu \"−\"."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính (−15)·(−4).",
+      "steps": [
+        "Cùng dấu nên tích dương.",
+        "15·4 = 60."
+      ],
+      "expr": "(-15)*(-4)",
+      "answer": "60"
+    },
+    {
+      "problem": "Dạng tính hợp lí: (−25)·37·4.",
+      "steps": [
+        "(−25·4)·37 = (−100)·37.",
+        "= −3 700."
+      ],
+      "expr": "(-25)*4*37",
+      "answer": "-3700"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tích của hai số nguyên âm là:",
+      "choices": [
+        "Số nguyên dương",
+        "Số nguyên âm",
+        "Số 0",
+        "Không xác định"
+      ],
+      "answer": 0,
+      "explain": "Cùng dấu thì tích dương.",
+      "wrong_explain": {
+        "1": "(−)·(−) = (+).",
+        "2": "Chỉ khi có thừa số 0.",
+        "3": "Luôn dương."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tích (−1)·(−2)·(−3)·(−4)·(−5) mang dấu:",
+      "choices": [
+        "Dương",
+        "Bằng 0",
+        "Không xác định",
+        "Âm"
+      ],
+      "answer": 3,
+      "explain": "Lẻ thừa số âm thì tích âm.",
+      "wrong_explain": {
+        "0": "Có 5 thừa số âm (lẻ).",
+        "1": "Không có thừa số 0.",
+        "2": "Dấu âm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (−8)·7.",
+      "expr": "-56",
+      "answer": "-56",
+      "explain": "= −56."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (−12)·(−5).",
+      "expr": "60",
+      "answer": "60",
+      "explain": "= 60."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (−3)³.",
+      "expr": "(-3)*(-3)*(-3)",
+      "answer": "-27",
+      "explain": "= −27."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 23·(−17) + 23·(−83).",
+      "expr": "23*(-100)",
+      "answer": "-2300",
+      "explain": "23·(−17 − 83) = −2 300."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (−4)·(−5)·(−25).",
+      "expr": "-500",
+      "answer": "-500",
+      "explain": "= −500."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính (−2)⁴.",
+      "expr": "16",
+      "answer": "16",
+      "explain": "= 16."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mỗi ngày nhiệt độ giảm 2 °C. Sau 6 ngày nhiệt độ thay đổi bao nhiêu độ (biểu thị bằng số nguyên)?",
+      "expr": "6*(-2)",
+      "answer": "-12",
+      "explain": "= −12 °C."
+    }
+  ]
+}

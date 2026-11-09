@@ -1,0 +1,161 @@
+{
+  "id": "bai-23",
+  "grade": 9,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 9",
+  "chapter": "Chương VII. Giới thiệu về chất hữu cơ",
+  "lesson": "Bài 23. Alkane",
+  "section": "",
+  "bookPage": 107,
+  "requirements": [
+    "Nêu được khái niệm alkane, công thức chung; tính chất vật lí, hoá học (phản ứng cháy); ứng dụng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Alkane là hydrocarbon mạch hở chỉ chứa liên kết đơn. Công thức chung CₙH₂ₙ₊₂ (n ≥ 1). Một số alkane: methane CH₄, ethane C₂H₆, propane C₃H₈, butane C₄H₁₀."
+    },
+    {
+      "type": "text",
+      "content": "Ở điều kiện thường, alkane từ C₁ đến C₄ ở thể khí; không tan trong nước, nhẹ hơn nước."
+    },
+    {
+      "type": "text",
+      "content": "Phản ứng cháy toả nhiều nhiệt: CH₄ + 2O₂ → CO₂ + 2H₂O. Alkane dùng làm nhiên liệu (khí thiên nhiên, khí gas chứa propane, butane), nguyên liệu sản xuất hoá chất."
+    },
+    {
+      "type": "text",
+      "content": "Khi đốt cháy thiếu oxygen sinh ra CO độc; cần sử dụng gas an toàn, thông gió."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Phân tử khối của propane C₃H₈?",
+      "steps": [
+        "3·12 + 8.",
+        "= 44."
+      ],
+      "expr": "3*12+8",
+      "answer": "44"
+    },
+    {
+      "problem": "Dạng tính theo phương trình cháy: đốt 0,5 mol CH₄ cần bao nhiêu mol O₂?",
+      "steps": [
+        "CH₄ + 2O₂ → CO₂ + 2H₂O.",
+        "0,5·2 = 1 mol."
+      ],
+      "expr": "0.5*2",
+      "answer": "1"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Công thức chung của alkane là:",
+      "choices": [
+        "CₙH₂ₙ",
+        "CₙH₂ₙ₋₂",
+        "CₙHₙ",
+        "CₙH₂ₙ₊₂"
+      ],
+      "answer": 3,
+      "explain": "Alkane.",
+      "wrong_explain": {
+        "0": "Alkene.",
+        "1": "Alkyne.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thành phần chính của khí thiên nhiên là:",
+      "choices": [
+        "Ethylene",
+        "Propane",
+        "Methane",
+        "Hydrogen"
+      ],
+      "answer": 2,
+      "explain": "CH₄.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Khí gas.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Alkane chỉ chứa:",
+      "choices": [
+        "Liên kết đôi",
+        "Liên kết đơn",
+        "Liên kết ba",
+        "Liên kết ion"
+      ],
+      "answer": 1,
+      "explain": "No.",
+      "wrong_explain": {
+        "0": "Alkene.",
+        "2": "Alkyne.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Sản phẩm cháy hoàn toàn của alkane là:",
+      "choices": [
+        "CO₂ và H₂O",
+        "CO và H₂",
+        "C và H₂O",
+        "CH₄ và O₂"
+      ],
+      "answer": 0,
+      "explain": "Cháy hoàn toàn.",
+      "wrong_explain": {
+        "1": "Không hoàn toàn.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Alkane có 4 nguyên tử C có bao nhiêu nguyên tử H?",
+      "expr": "10",
+      "answer": "10",
+      "explain": "2·4 + 2."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phân tử khối của butane C₄H₁₀:",
+      "expr": "58",
+      "answer": "58",
+      "explain": "48 + 10."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đốt 0,2 mol C₂H₆ thu bao nhiêu mol CO₂?",
+      "expr": "0.4",
+      "answer": "0.4",
+      "explain": "×2."
+    }
+  ]
+}

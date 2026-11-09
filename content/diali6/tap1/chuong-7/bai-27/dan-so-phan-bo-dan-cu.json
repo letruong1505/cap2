@@ -1,0 +1,161 @@
+{
+  "id": "bai-27",
+  "grade": 6,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 6",
+  "chapter": "Chương 7. Con người và thiên nhiên",
+  "lesson": "Bài 27. Dân số và sự phân bố dân cư trên thế giới",
+  "section": "",
+  "bookPage": 179,
+  "requirements": [
+    "Đọc được biểu đồ quy mô dân số thế giới; trình bày và giải thích sự phân bố dân cư; nêu được một số thành phố đông dân."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dân số thế giới tăng nhanh, đặc biệt từ thế kỉ XIX; năm 2022 vượt 8 tỉ người."
+    },
+    {
+      "type": "text",
+      "content": "Dân cư phân bố không đều: tập trung đông ở đồng bằng, ven biển, nơi có khí hậu ấm áp, giao thông thuận lợi (Đông Á, Nam Á, Tây Âu); thưa thớt ở vùng núi cao, hoang mạc, vùng cực."
+    },
+    {
+      "type": "formula",
+      "content": "Mật độ dân số = Số dân : Diện tích (người/km²)"
+    },
+    {
+      "type": "text",
+      "content": "Một số thành phố đông dân nhất thế giới: Tô-ki-ô, Niu Đê-li, Thượng Hải, Xao Pao-lô, Mê-hi-cô Xi-ti…"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một vùng có 2 400 000 người, diện tích 4 000 km². Mật độ dân số?",
+      "steps": [
+        "2 400 000 : 4 000.",
+        "= 600 người/km²."
+      ],
+      "expr": "2400000/4000",
+      "answer": "600"
+    },
+    {
+      "problem": "Dạng tính tăng dân số: dân số thế giới năm 1999 là 6 tỉ, năm 2022 là 8 tỉ. Tăng bao nhiêu tỉ?",
+      "steps": [
+        "8 − 6.",
+        "= 2 tỉ người."
+      ],
+      "expr": "8-6",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Dân cư thế giới tập trung đông ở:",
+      "choices": [
+        "Hoang mạc",
+        "Vùng cực",
+        "Đồng bằng, ven biển",
+        "Núi cao"
+      ],
+      "answer": 2,
+      "explain": "Điều kiện thuận lợi.",
+      "wrong_explain": {
+        "0": "Thưa.",
+        "1": "Thưa.",
+        "3": "Thưa."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Mật độ dân số được tính bằng:",
+      "choices": [
+        "Diện tích chia số dân",
+        "Số dân chia diện tích",
+        "Số dân nhân diện tích",
+        "Số dân trừ diện tích"
+      ],
+      "answer": 1,
+      "explain": "Công thức.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Năm 2022, dân số thế giới đạt khoảng:",
+      "choices": [
+        "8 tỉ người",
+        "6 tỉ",
+        "10 tỉ",
+        "1 tỉ"
+      ],
+      "answer": 0,
+      "explain": "8 tỉ.",
+      "wrong_explain": {
+        "1": "Năm 1999.",
+        "2": "Chưa.",
+        "3": "Năm 1804."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khu vực nào dân cư thưa thớt?",
+      "choices": [
+        "Đồng bằng sông Hằng",
+        "Đông Á ven biển",
+        "Tây Âu",
+        "Hoang mạc Xa-ha-ra"
+      ],
+      "answer": 3,
+      "explain": "Khí hậu khắc nghiệt.",
+      "wrong_explain": {
+        "0": "Đông.",
+        "1": "Đông.",
+        "2": "Đông."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một tỉnh có 1 200 000 người, diện tích 3 000 km². Mật độ (người/km²):",
+      "expr": "400",
+      "answer": "400",
+      "explain": "1 200 000 : 3 000."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một tỉnh có 1 500 000 người, diện tích 5 000 km². Mật độ dân số (người/km²) là:",
+      "expr": "300",
+      "answer": "300",
+      "explain": "1 500 000 : 5 000."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thành phố có mật độ 5 000 người/km², diện tích 200 km². Số dân:",
+      "expr": "1000000",
+      "answer": "1000000",
+      "explain": "5 000·200."
+    }
+  ]
+}

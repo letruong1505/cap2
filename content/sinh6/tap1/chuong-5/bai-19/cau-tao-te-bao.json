@@ -1,0 +1,157 @@
+{
+  "id": "bai-19",
+  "grade": 6,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 6",
+  "chapter": "Chương V. Tế bào",
+  "lesson": "Bài 19. Cấu tạo và chức năng các thành phần của tế bào",
+  "section": "",
+  "bookPage": 67,
+  "requirements": [
+    "Trình bày được cấu tạo và chức năng các thành phần chính của tế bào; phân biệt tế bào nhân sơ – nhân thực, tế bào động vật – thực vật."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tế bào có ba thành phần chính: màng tế bào (bao bọc, kiểm soát sự vận chuyển chất ra vào), chất tế bào (nơi diễn ra phần lớn hoạt động sống), nhân hoặc vùng nhân (chứa vật chất di truyền, điều khiển hoạt động của tế bào)."
+    },
+    {
+      "type": "text",
+      "content": "Tế bào nhân sơ chưa có màng nhân, vật chất di truyền nằm ở vùng nhân (vi khuẩn). Tế bào nhân thực có nhân hoàn chỉnh với màng nhân (động vật, thực vật, nấm)."
+    },
+    {
+      "type": "text",
+      "content": "Tế bào thực vật có thành tế bào (bảo vệ, tạo hình dạng) và lục lạp (quang hợp); tế bào động vật không có thành tế bào và lục lạp."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dạng đếm thành phần: tế bào thực vật có màng, chất tế bào, nhân, thành tế bào, lục lạp. Tế bào động vật thiếu bao nhiêu thành phần trong số đó?",
+      "steps": [
+        "Thiếu thành tế bào và lục lạp.",
+        "2 thành phần."
+      ],
+      "expr": "2",
+      "answer": "2"
+    },
+    {
+      "problem": "Một tế bào lá có 50 lục lạp. 1 000 tế bào như vậy có bao nhiêu lục lạp?",
+      "steps": [
+        "50·1 000.",
+        "= 50 000."
+      ],
+      "expr": "50*1000",
+      "answer": "50000"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thành phần điều khiển mọi hoạt động sống của tế bào là:",
+      "choices": [
+        "Màng tế bào",
+        "Chất tế bào",
+        "Thành tế bào",
+        "Nhân tế bào"
+      ],
+      "answer": 3,
+      "explain": "Nhân chứa vật chất di truyền.",
+      "wrong_explain": {
+        "0": "Kiểm soát chất ra vào.",
+        "1": "Nơi diễn ra hoạt động sống.",
+        "2": "Bảo vệ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tế bào nhân sơ khác tế bào nhân thực ở chỗ:",
+      "choices": [
+        "Không có màng tế bào",
+        "Không có chất tế bào",
+        "Chưa có màng nhân",
+        "Có lục lạp"
+      ],
+      "answer": 2,
+      "explain": "Vùng nhân.",
+      "wrong_explain": {
+        "0": "Có.",
+        "1": "Có.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Bào quan thực hiện quang hợp ở tế bào thực vật là:",
+      "choices": [
+        "Nhân",
+        "Lục lạp",
+        "Màng tế bào",
+        "Không bào"
+      ],
+      "answer": 1,
+      "explain": "Chứa diệp lục.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tế bào nào là tế bào nhân sơ?",
+      "choices": [
+        "Vi khuẩn",
+        "Tế bào lá cây",
+        "Tế bào cơ người",
+        "Tế bào nấm men"
+      ],
+      "answer": 0,
+      "explain": "Vi khuẩn.",
+      "wrong_explain": {
+        "1": "Nhân thực.",
+        "2": "Nhân thực.",
+        "3": "Nhân thực."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tế bào có mấy thành phần chính?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Màng, chất tế bào, nhân/vùng nhân."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong: vi khuẩn E. coli, tế bào hành, tế bào gan, nấm men – có bao nhiêu tế bào nhân thực?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Trừ vi khuẩn."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tế bào thực vật có bao nhiêu thành phần mà tế bào động vật không có (thành tế bào, lục lạp)?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "2."
+    }
+  ]
+}

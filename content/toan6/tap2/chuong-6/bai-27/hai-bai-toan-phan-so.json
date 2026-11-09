@@ -1,0 +1,161 @@
+{
+  "id": "bai-27",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 2",
+  "chapter": "Chương VI. Phân số",
+  "lesson": "Bài 27. Hai bài toán về phân số",
+  "section": "",
+  "bookPage": 22,
+  "requirements": [
+    "Tìm giá trị phân số của một số cho trước; tìm một số biết giá trị phân số của nó."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Muốn tìm m/n của số a, ta tính a · m/n."
+    },
+    {
+      "type": "formula",
+      "content": "Giá trị m/n của a là a·m/n"
+    },
+    {
+      "type": "text",
+      "content": "Muốn tìm một số biết m/n của nó bằng b, ta tính b : m/n."
+    },
+    {
+      "type": "formula",
+      "content": "Số cần tìm = b : m/n"
+    },
+    {
+      "type": "text",
+      "content": "Hai bài toán này thường gặp khi tính phần trăm, tính số học sinh, số tiền, quãng đường…"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tìm 3/5 của 40.",
+      "steps": [
+        "40 · 3/5 = 120/5.",
+        "= 24."
+      ],
+      "expr": "40*3/5",
+      "answer": "24"
+    },
+    {
+      "problem": "Dạng tìm một số biết phân số của nó: 2/3 số học sinh của lớp là 24 em. Lớp có bao nhiêu học sinh?",
+      "steps": [
+        "Số học sinh = 24 : 2/3 = 24 · 3/2.",
+        "= 36."
+      ],
+      "expr": "24*3/2",
+      "answer": "36"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Muốn tìm 2/7 của 35 ta làm phép tính:",
+      "choices": [
+        "35 · 2/7",
+        "35 : 2/7",
+        "35 + 2/7",
+        "35 − 2/7"
+      ],
+      "answer": 0,
+      "explain": "Lấy số đó nhân với phân số.",
+      "wrong_explain": {
+        "1": "Đó là bài toán ngược.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Biết 3/4 của x bằng 12. Để tìm x ta tính:",
+      "choices": [
+        "12 · 3/4",
+        "12 − 3/4",
+        "3/4 : 12",
+        "12 : 3/4"
+      ],
+      "answer": 3,
+      "explain": "x = 12 : 3/4 = 16.",
+      "wrong_explain": {
+        "0": "Đó là tìm 3/4 của 12.",
+        "1": "Không.",
+        "2": "Sai thứ tự."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm 3/4 của 60.",
+      "expr": "60*3/4",
+      "answer": "45",
+      "explain": "45."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm 25% của 80.",
+      "expr": "80*25/100",
+      "answer": "20",
+      "explain": "20."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm một số biết 2/5 của nó bằng 18.",
+      "expr": "18*5/2",
+      "answer": "45",
+      "explain": "45."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm một số biết 30% của nó bằng 27.",
+      "expr": "27*100/30",
+      "answer": "90",
+      "explain": "90."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lớp 6A có 40 học sinh, 3/8 là học sinh nam. Số học sinh nữ là:",
+      "expr": "40-40*3/8",
+      "answer": "25",
+      "explain": "40 − 15 = 25."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một quyển sách bạn An đã đọc 120 trang, bằng 3/5 quyển sách. Quyển sách có bao nhiêu trang?",
+      "expr": "120*5/3",
+      "answer": "200",
+      "explain": "200 trang."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một chiếc áo giá 250 000 đồng được giảm 20%. Giá sau khi giảm là:",
+      "expr": "250000*80/100",
+      "answer": "200000",
+      "explain": "200 000 đồng."
+    }
+  ]
+}

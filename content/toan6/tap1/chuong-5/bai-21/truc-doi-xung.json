@@ -1,0 +1,164 @@
+{
+  "id": "bai-21",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương V. Tính đối xứng của hình phẳng trong tự nhiên",
+  "lesson": "Bài 21. Hình có trục đối xứng",
+  "section": "",
+  "bookPage": 98,
+  "requirements": [
+    "Nhận biết trục đối xứng của một hình phẳng; nhận biết hình có trục đối xứng trong tự nhiên, nghệ thuật, kiến trúc."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Một hình có trục đối xứng d nếu khi gấp hình theo đường thẳng d thì hai phần của hình chồng khít lên nhau. Đường thẳng d gọi là trục đối xứng của hình."
+    },
+    {
+      "type": "text",
+      "content": "Số trục đối xứng: tam giác đều có 3; hình vuông có 4; hình chữ nhật có 2 (đường nối trung điểm hai cạnh đối); hình thoi có 2 (hai đường chéo); hình thang cân có 1; lục giác đều có 6; đường tròn có vô số."
+    },
+    {
+      "type": "text",
+      "content": "Hình bình hành (không phải hình chữ nhật, hình thoi) không có trục đối xứng."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tổng số trục đối xứng của tam giác đều và hình vuông là bao nhiêu?",
+      "steps": [
+        "Tam giác đều có 3 trục, hình vuông có 4 trục.",
+        "3 + 4 = 7."
+      ],
+      "expr": "3+4",
+      "answer": "7"
+    },
+    {
+      "problem": "Dạng đếm trục đối xứng: lục giác đều có bao nhiêu trục đối xứng?",
+      "steps": [
+        "3 trục đi qua hai đỉnh đối diện và 3 trục đi qua trung điểm hai cạnh đối diện.",
+        "3 + 3 = 6."
+      ],
+      "expr": "3+3",
+      "answer": "6"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hình nào có đúng một trục đối xứng?",
+      "choices": [
+        "Hình vuông",
+        "Hình chữ nhật",
+        "Hình thang cân",
+        "Đường tròn"
+      ],
+      "answer": 2,
+      "explain": "Trục là đường nối trung điểm hai đáy.",
+      "wrong_explain": {
+        "0": "Có 4 trục.",
+        "1": "Có 2 trục.",
+        "3": "Có vô số trục."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hình nào không có trục đối xứng?",
+      "choices": [
+        "Hình thoi",
+        "Hình bình hành (không phải hình thoi, hình chữ nhật)",
+        "Tam giác đều",
+        "Hình vuông"
+      ],
+      "answer": 1,
+      "explain": "Gấp theo đường nào cũng không chồng khít.",
+      "wrong_explain": {
+        "0": "Có 2 trục.",
+        "2": "Có 3 trục.",
+        "3": "Có 4 trục."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trục đối xứng của hình thoi là:",
+      "choices": [
+        "Hai đường chéo",
+        "Hai đường nối trung điểm cạnh đối",
+        "Một cạnh",
+        "Không có"
+      ],
+      "answer": 0,
+      "explain": "Hình thoi có 2 trục là hai đường chéo.",
+      "wrong_explain": {
+        "1": "Đó là của hình chữ nhật.",
+        "2": "Không.",
+        "3": "Có 2 trục."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chữ nhật có bao nhiêu trục đối xứng?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "2 trục."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình vuông có bao nhiêu trục đối xứng?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "2 đường chéo và 2 đường nối trung điểm cạnh đối."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tổng số trục đối xứng của hình thoi và hình thang cân là:",
+      "expr": "2+1",
+      "answer": "3",
+      "explain": "3."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong các chữ cái in hoa A, B, H, N, Z, có bao nhiêu chữ có trục đối xứng?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "A, B, H có trục đối xứng; N, Z không có."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lục giác đều có bao nhiêu trục đối xứng?",
+      "expr": "6",
+      "answer": "6",
+      "explain": "6 trục."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác đều có bao nhiêu trục đối xứng?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "3 trục."
+    }
+  ]
+}

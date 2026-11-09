@@ -1,0 +1,157 @@
+{
+  "id": "bai-52",
+  "grade": 6,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 6",
+  "chapter": "Chương X. Trái Đất và bầu trời",
+  "lesson": "Bài 52. Chuyển động nhìn thấy của Mặt Trời. Thiên thể",
+  "section": "",
+  "bookPage": 179,
+  "requirements": [
+    "Giải thích được hiện tượng Mặt Trời mọc, lặn; nêu được khái niệm thiên thể."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Thiên thể là các vật thể tự nhiên tồn tại trong không gian vũ trụ như các ngôi sao, hành tinh, vệ tinh, sao chổi…"
+    },
+    {
+      "type": "text",
+      "content": "Hằng ngày ta thấy Mặt Trời mọc ở phía đông, lặn ở phía tây. Đó là chuyển động nhìn thấy (chuyển động biểu kiến), không phải chuyển động thật của Mặt Trời."
+    },
+    {
+      "type": "text",
+      "content": "Nguyên nhân: Trái Đất tự quay quanh trục theo hướng từ tây sang đông, một vòng hết khoảng 24 giờ, nên người trên Trái Đất thấy Mặt Trời chuyển động ngược lại từ đông sang tây."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Trái Đất quay một vòng 360° trong 24 giờ. Mỗi giờ quay bao nhiêu độ?",
+      "steps": [
+        "360 : 24.",
+        "= 15°."
+      ],
+      "expr": "360/24",
+      "answer": "15"
+    },
+    {
+      "problem": "Dạng tính thời gian: Mặt Trời mọc lúc 5 giờ 30 phút, lặn lúc 18 giờ. Thời gian ban ngày (tính bằng phút)?",
+      "steps": [
+        "18 giờ − 5 giờ 30 phút = 12 giờ 30 phút.",
+        "= 750 phút."
+      ],
+      "expr": "12*60+30",
+      "answer": "750"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Mặt Trời mọc ở hướng:",
+      "choices": [
+        "Tây",
+        "Nam",
+        "Đông",
+        "Bắc"
+      ],
+      "answer": 2,
+      "explain": "Chuyển động nhìn thấy.",
+      "wrong_explain": {
+        "0": "Lặn ở phía tây.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nguyên nhân ta thấy Mặt Trời mọc và lặn là do:",
+      "choices": [
+        "Mặt Trời quay quanh Trái Đất",
+        "Trái Đất tự quay quanh trục từ tây sang đông",
+        "Mặt Trăng che Mặt Trời",
+        "Trái Đất đứng yên"
+      ],
+      "answer": 1,
+      "explain": "Chuyển động biểu kiến.",
+      "wrong_explain": {
+        "0": "Không đúng.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vật nào là thiên thể?",
+      "choices": [
+        "Mặt Trăng",
+        "Máy bay",
+        "Đám mây",
+        "Diều"
+      ],
+      "answer": 0,
+      "explain": "Vệ tinh tự nhiên.",
+      "wrong_explain": {
+        "1": "Nhân tạo.",
+        "2": "Trong khí quyển.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trái Đất tự quay một vòng quanh trục hết khoảng:",
+      "choices": [
+        "365 ngày",
+        "12 giờ",
+        "30 ngày",
+        "24 giờ"
+      ],
+      "answer": 3,
+      "explain": "Một ngày đêm.",
+      "wrong_explain": {
+        "0": "Đó là quanh Mặt Trời.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong 6 giờ Trái Đất tự quay được bao nhiêu độ?",
+      "expr": "90",
+      "answer": "90",
+      "explain": "6·15°."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong các vật: Mặt Trời, sao Hoả, vệ tinh nhân tạo, sao chổi – có bao nhiêu thiên thể tự nhiên?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Vệ tinh nhân tạo không phải thiên thể tự nhiên."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mặt Trời mọc 6 giờ, lặn 17 giờ 45 phút. Thời gian ban ngày (phút):",
+      "expr": "11*60+45",
+      "answer": "705",
+      "explain": "705 phút."
+    }
+  ]
+}

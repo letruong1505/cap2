@@ -1,0 +1,153 @@
+{
+  "id": "bai-17",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương III. Số nguyên",
+  "lesson": "Bài 17. Phép chia hết. Ước và bội của một số nguyên",
+  "section": "",
+  "bookPage": 73,
+  "requirements": [
+    "Thực hiện phép chia hết hai số nguyên; tìm ước và bội của một số nguyên."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cho a, b ∈ ℤ, b ≠ 0. Nếu có q ∈ ℤ sao cho a = b·q thì a chia hết cho b; q là thương. Chia hai số nguyên khác dấu: thương mang dấu \"−\"; cùng dấu: thương mang dấu \"+\"."
+    },
+    {
+      "type": "text",
+      "content": "Nếu a ⋮ b thì a là bội của b, b là ước của a. Nếu a là bội của b thì −a cũng là bội của b; nếu b là ước của a thì −b cũng là ước của a."
+    },
+    {
+      "type": "text",
+      "content": "Ví dụ: các ước của 6 là ±1; ±2; ±3; ±6 (tám ước)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính (−84) : 7.",
+      "steps": [
+        "Khác dấu nên thương âm.",
+        "84 : 7 = 12 ⇒ −12."
+      ],
+      "expr": "(-84)/7",
+      "answer": "-12"
+    },
+    {
+      "problem": "Dạng đếm ước nguyên: số 12 có bao nhiêu ước nguyên?",
+      "steps": [
+        "12 có 6 ước tự nhiên 1, 2, 3, 4, 6, 12.",
+        "Mỗi ước có thêm số đối: 6·2 = 12 ước nguyên."
+      ],
+      "expr": "6*2",
+      "answer": "12"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thương của hai số nguyên cùng dấu là:",
+      "choices": [
+        "Số dương",
+        "Số âm",
+        "Bằng 0",
+        "Không xác định"
+      ],
+      "answer": 0,
+      "explain": "Quy tắc dấu như phép nhân.",
+      "wrong_explain": {
+        "1": "Cùng dấu thì thương dương.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nếu b là ước của a thì:",
+      "choices": [
+        "−b không là ước của a",
+        "b là bội của a",
+        "a là ước của b",
+        "−b cũng là ước của a"
+      ],
+      "answer": 3,
+      "explain": "Ước có thể âm.",
+      "wrong_explain": {
+        "0": "−b cũng là ước.",
+        "1": "Ngược lại.",
+        "2": "Ngược lại."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (−63) : (−9).",
+      "expr": "7",
+      "answer": "7",
+      "explain": "= 7."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 125 : (−25).",
+      "expr": "-5",
+      "answer": "-5",
+      "explain": "= −5."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số 8 có bao nhiêu ước nguyên?",
+      "expr": "8",
+      "answer": "8",
+      "explain": "±1; ±2; ±4; ±8."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm x biết (−6)·x = 54.",
+      "expr": "-54/6",
+      "answer": "-9",
+      "explain": "x = −9."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có bao nhiêu bội của 5 trong khoảng −20 < x < 20?",
+      "expr": "7",
+      "answer": "7",
+      "explain": "−15; −10; −5; 0; 5; 10; 15."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tổng các ước nguyên của 10 là:",
+      "expr": "0",
+      "answer": "0",
+      "explain": "Các ước đối nhau, tổng bằng 0."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nhiệt độ giảm đều trong 4 giờ, tổng cộng giảm 12 °C. Mỗi giờ nhiệt độ thay đổi (số nguyên):",
+      "expr": "-12/4",
+      "answer": "-3",
+      "explain": "= −3 °C."
+    }
+  ]
+}

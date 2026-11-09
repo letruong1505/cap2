@@ -1,0 +1,157 @@
+{
+  "id": "bai-6",
+  "grade": 6,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 6",
+  "chapter": "Chương I. Mở đầu về Khoa học tự nhiên",
+  "lesson": "Bài 6. Đo khối lượng",
+  "section": "",
+  "bookPage": 20,
+  "requirements": [
+    "Nêu được đơn vị đo khối lượng; cách đo khối lượng bằng cân."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Mọi vật đều có khối lượng; khối lượng chỉ lượng chất tạo thành vật. Đơn vị đo khối lượng chính thức là kilôgam (kg). Các đơn vị khác: tấn (1 tấn = 1 000 kg), tạ (100 kg), yến (10 kg), gam (1 kg = 1 000 g), miligam."
+    },
+    {
+      "type": "text",
+      "content": "Dụng cụ đo: cân đồng hồ, cân điện tử, cân đòn, cân Robecvan, cân y tế…"
+    },
+    {
+      "type": "text",
+      "content": "Cách đo: ước lượng khối lượng để chọn cân phù hợp; hiệu chỉnh cân về số 0; đặt vật lên cân; mắt nhìn vuông góc với vạch chia; đọc và ghi kết quả theo vạch gần nhất."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đổi 2,5 tấn ra kilôgam.",
+      "steps": [
+        "1 tấn = 1 000 kg.",
+        "2,5·1 000 = 2 500 kg."
+      ],
+      "expr": "2.5*1000",
+      "answer": "2500"
+    },
+    {
+      "problem": "Dạng trừ bì: cân một túi gạo cả túi được 5,2 kg, túi rỗng nặng 0,2 kg. Khối lượng gạo?",
+      "steps": [
+        "Khối lượng gạo = 5,2 − 0,2.",
+        "= 5 kg."
+      ],
+      "expr": "5.2-0.2",
+      "answer": "5"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn vị đo khối lượng chính thức là:",
+      "choices": [
+        "Lít",
+        "Kilôgam",
+        "Mét",
+        "Niutơn"
+      ],
+      "answer": 1,
+      "explain": "kg.",
+      "wrong_explain": {
+        "0": "Đơn vị thể tích.",
+        "2": "Đơn vị chiều dài.",
+        "3": "Đơn vị lực."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trước khi cân, cần:",
+      "choices": [
+        "Hiệu chỉnh kim (hoặc số) về vạch 0",
+        "Đặt vật lên cân ngay",
+        "Lắc cân",
+        "Đặt hai vật"
+      ],
+      "answer": 0,
+      "explain": "Hiệu chỉnh cân.",
+      "wrong_explain": {
+        "1": "Có thể sai số.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Số ghi trên túi đường \"1 kg\" chỉ:",
+      "choices": [
+        "Thể tích túi",
+        "Trọng lượng túi rỗng",
+        "Chiều dài túi",
+        "Lượng đường trong túi"
+      ],
+      "answer": 3,
+      "explain": "Khối lượng tịnh.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Để cân khối lượng của một chiếc nhẫn vàng nên dùng:",
+      "choices": [
+        "Cân đòn",
+        "Cân xe tải",
+        "Cân điện tử có độ chính xác cao",
+        "Cân y tế"
+      ],
+      "answer": 2,
+      "explain": "Vật nhỏ, cần chính xác.",
+      "wrong_explain": {
+        "0": "Không đủ chính xác.",
+        "1": "Quá lớn.",
+        "3": "Không phù hợp."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đổi 350 g ra kg.",
+      "expr": "0.35",
+      "answer": "0.35",
+      "explain": "0,35 kg."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đổi 3 tạ ra kg.",
+      "expr": "300",
+      "answer": "300",
+      "explain": "300 kg."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một xe chở 2 tấn hàng, mỗi bao 50 kg. Xe chở bao nhiêu bao?",
+      "expr": "2000/50",
+      "answer": "40",
+      "explain": "40 bao."
+    }
+  ]
+}

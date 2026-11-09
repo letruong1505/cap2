@@ -1,0 +1,137 @@
+{
+  "id": "bai-33",
+  "grade": 9,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 9",
+  "chapter": "Chương X. Khai thác tài nguyên từ vỏ Trái Đất",
+  "lesson": "Bài 33. Sơ lược về hoá học vỏ Trái Đất và khai thác tài nguyên từ vỏ Trái Đất",
+  "section": "",
+  "bookPage": 146,
+  "requirements": [
+    "Nêu được thành phần hoá học của vỏ Trái Đất; tài nguyên và khai thác hợp lí."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Vỏ Trái Đất chứa nhiều nguyên tố, phổ biến nhất là oxygen (khoảng 46%), silicon (khoảng 28%), sau đó nhôm, sắt, calcium, sodium, potassium, magnesium. Chúng tồn tại chủ yếu ở dạng hợp chất (oxide, silicate, carbonate…)."
+    },
+    {
+      "type": "text",
+      "content": "Tài nguyên từ vỏ Trái Đất: khoáng sản kim loại (sắt, nhôm, đồng), phi kim (đá vôi, cát, đất sét), nhiên liệu hoá thạch (than, dầu mỏ, khí thiên nhiên)."
+    },
+    {
+      "type": "text",
+      "content": "Khai thác tài nguyên cần hợp lí, tiết kiệm, kết hợp tái chế; hạn chế ô nhiễm, suy thoái môi trường; tuân thủ luật khoáng sản."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Vỏ Trái Đất chứa khoảng 46% oxygen và 28% silicon. Hai nguyên tố chiếm bao nhiêu %?",
+      "steps": [
+        "46 + 28.",
+        "= 74%."
+      ],
+      "expr": "46+28",
+      "answer": "74"
+    },
+    {
+      "problem": "Dạng tính trữ lượng: mỏ bauxite 500 triệu tấn, mỗi năm khai thác 25 triệu tấn. Đủ bao nhiêu năm?",
+      "steps": [
+        "500 : 25.",
+        "= 20 năm."
+      ],
+      "expr": "500/25",
+      "answer": "20"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nguyên tố phổ biến nhất trong vỏ Trái Đất là:",
+      "choices": [
+        "Silicon",
+        "Sắt",
+        "Oxygen",
+        "Nhôm"
+      ],
+      "answer": 2,
+      "explain": "Khoảng 46%.",
+      "wrong_explain": {
+        "0": "Thứ hai.",
+        "1": "Ít hơn.",
+        "3": "Thứ ba."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong vỏ Trái Đất, các nguyên tố tồn tại chủ yếu ở dạng:",
+      "choices": [
+        "Đơn chất",
+        "Hợp chất",
+        "Ion tự do",
+        "Khí"
+      ],
+      "answer": 1,
+      "explain": "Oxide, silicate, carbonate.",
+      "wrong_explain": {
+        "0": "Ít.",
+        "2": "Không chủ yếu.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khai thác tài nguyên bền vững là:",
+      "choices": [
+        "Khai thác hợp lí, tiết kiệm và tái chế",
+        "Khai thác tối đa",
+        "Khai thác trái phép",
+        "Bỏ qua môi trường"
+      ],
+      "answer": 0,
+      "explain": "Phát triển bền vững.",
+      "wrong_explain": {
+        "1": "Cạn kiệt.",
+        "2": "Vi phạm luật.",
+        "3": "Không bền vững."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nhôm chiếm khoảng 8% vỏ Trái Đất. Trong 1 000 tấn đất đá có khoảng bao nhiêu tấn nhôm?",
+      "expr": "80",
+      "answer": "80",
+      "explain": "1 000·8%."
+    },
+    {
+      "id": "q05",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Oxygen 46%, silicon 28%, nhôm 8%. Các nguyên tố còn lại chiếm bao nhiêu %?",
+      "expr": "18",
+      "answer": "18",
+      "explain": "100 − 82."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tái chế 1 tấn nhôm tiết kiệm 4 tấn bauxite. Tái chế 3 tấn nhôm tiết kiệm bao nhiêu tấn bauxite?",
+      "expr": "12",
+      "answer": "12",
+      "explain": "3·4."
+    }
+  ]
+}

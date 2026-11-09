@@ -1,0 +1,161 @@
+{
+  "id": "bai-38",
+  "grade": 6,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 6",
+  "chapter": "Chương VII. Đa dạng thế giới sống",
+  "lesson": "Bài 38. Đa dạng sinh học",
+  "section": "",
+  "bookPage": 135,
+  "requirements": [
+    "Nêu được vai trò của đa dạng sinh học; các nguyên nhân suy giảm và biện pháp bảo vệ đa dạng sinh học."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đa dạng sinh học là sự phong phú về số lượng loài, số cá thể trong loài và môi trường sống. Đa dạng sinh học ở các môi trường: hoang mạc (thấp), rừng mưa nhiệt đới (cao nhất), biển, đồng ruộng…"
+    },
+    {
+      "type": "text",
+      "content": "Vai trò: đối với tự nhiên – duy trì cân bằng hệ sinh thái, điều hoà khí hậu; đối với con người – cung cấp lương thực, thực phẩm, thuốc, nguyên liệu, du lịch."
+    },
+    {
+      "type": "text",
+      "content": "Nguyên nhân suy giảm: phá rừng, săn bắt buôn bán động vật hoang dã, ô nhiễm môi trường, biến đổi khí hậu, du nhập loài ngoại lai."
+    },
+    {
+      "type": "text",
+      "content": "Biện pháp bảo vệ: thành lập vườn quốc gia, khu bảo tồn; cấm săn bắt, buôn bán động vật hoang dã; trồng rừng; tuyên truyền nâng cao ý thức; xây dựng Sách Đỏ."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một khu rừng có 1 200 loài thực vật, mất 15% số loài do phá rừng. Số loài bị mất?",
+      "steps": [
+        "1 200·15/100.",
+        "= 180 loài."
+      ],
+      "expr": "1200*15/100",
+      "answer": "180"
+    },
+    {
+      "problem": "Dạng tính còn lại: theo ví dụ trên, còn lại bao nhiêu loài?",
+      "steps": [
+        "1 200 − 180.",
+        "= 1 020."
+      ],
+      "expr": "1200-180",
+      "answer": "1020"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Môi trường có đa dạng sinh học cao nhất là:",
+      "choices": [
+        "Hoang mạc",
+        "Rừng mưa nhiệt đới",
+        "Đài nguyên",
+        "Băng Nam Cực"
+      ],
+      "answer": 1,
+      "explain": "Khí hậu thuận lợi.",
+      "wrong_explain": {
+        "0": "Thấp.",
+        "2": "Thấp.",
+        "3": "Thấp."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nguyên nhân chính gây suy giảm đa dạng sinh học là:",
+      "choices": [
+        "Con người phá rừng, săn bắt, gây ô nhiễm",
+        "Trồng rừng",
+        "Lập vườn quốc gia",
+        "Tuyên truyền"
+      ],
+      "answer": 0,
+      "explain": "Hoạt động của con người.",
+      "wrong_explain": {
+        "1": "Có lợi.",
+        "2": "Bảo vệ.",
+        "3": "Bảo vệ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Biện pháp bảo vệ đa dạng sinh học là:",
+      "choices": [
+        "Săn bắt động vật quý hiếm",
+        "Đốt rừng làm rẫy",
+        "Xả rác ra biển",
+        "Thành lập khu bảo tồn thiên nhiên"
+      ],
+      "answer": 3,
+      "explain": "Bảo tồn.",
+      "wrong_explain": {
+        "0": "Gây hại.",
+        "1": "Gây hại.",
+        "2": "Gây hại."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Đa dạng sinh học giúp:",
+      "choices": [
+        "Gây ô nhiễm",
+        "Giảm thực phẩm",
+        "Duy trì cân bằng hệ sinh thái",
+        "Tăng thiên tai"
+      ],
+      "answer": 2,
+      "explain": "Vai trò.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Việt Nam có 34 vườn quốc gia, đã học 4 vườn. Còn bao nhiêu vườn chưa học?",
+      "expr": "30",
+      "answer": "30",
+      "explain": "34 − 4."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một loài có 2 000 cá thể, mỗi năm giảm 10%. Sau 1 năm còn bao nhiêu cá thể?",
+      "expr": "1800",
+      "answer": "1800",
+      "explain": "2 000·90%."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong các việc: trồng rừng, săn bắt, lập khu bảo tồn, phá rừng, tuyên truyền – có bao nhiêu việc bảo vệ đa dạng sinh học?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Trồng rừng, lập khu bảo tồn, tuyên truyền."
+    }
+  ]
+}

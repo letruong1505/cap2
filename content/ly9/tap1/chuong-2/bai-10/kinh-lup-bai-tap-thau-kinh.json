@@ -1,0 +1,150 @@
+{
+  "id": "bai-10",
+  "grade": 9,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 9",
+  "chapter": "Chương II. Ánh sáng",
+  "lesson": "Bài 10. Kính lúp. Bài tập thấu kính",
+  "section": "",
+  "bookPage": 50,
+  "requirements": [
+    "Nêu được cấu tạo, công dụng của kính lúp; số bội giác; giải bài tập về thấu kính."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Kính lúp là thấu kính hội tụ có tiêu cự ngắn, dùng để quan sát vật nhỏ. Vật đặt trong khoảng tiêu cự cho ảnh ảo, cùng chiều, lớn hơn vật."
+    },
+    {
+      "type": "formula",
+      "content": "G = 25/f   (f tính bằng cm)"
+    },
+    {
+      "type": "text",
+      "content": "Số bội giác G ghi trên kính (2x, 3x, 5x…). Kính có tiêu cự càng ngắn thì số bội giác càng lớn."
+    },
+    {
+      "type": "text",
+      "content": "Giải bài tập thấu kính: vẽ ảnh bằng hai trong ba tia đặc biệt; dùng tam giác đồng dạng hoặc công thức 1/f = 1/d + 1/d′ (ảnh thật) để tìm vị trí, độ lớn ảnh."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Kính lúp có tiêu cự 5 cm. Số bội giác?",
+      "steps": [
+        "G = 25 : 5.",
+        "= 5x."
+      ],
+      "expr": "25/5",
+      "answer": "5"
+    },
+    {
+      "problem": "Dạng tìm tiêu cự: kính lúp ghi 2,5x. Tiêu cự bằng bao nhiêu cm?",
+      "steps": [
+        "f = 25 : 2,5.",
+        "= 10 cm."
+      ],
+      "expr": "25*10/25",
+      "answer": "10"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kính lúp là:",
+      "choices": [
+        "Thấu kính hội tụ có tiêu cự ngắn",
+        "Thấu kính phân kì",
+        "Gương cầu lồi",
+        "Lăng kính"
+      ],
+      "answer": 0,
+      "explain": "Cấu tạo.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Để quan sát qua kính lúp, vật phải đặt:",
+      "choices": [
+        "Ngoài khoảng 2f",
+        "Tại tiêu điểm",
+        "Sau kính",
+        "Trong khoảng tiêu cự"
+      ],
+      "answer": 3,
+      "explain": "Cho ảnh ảo lớn hơn vật.",
+      "wrong_explain": {
+        "0": "Ảnh thật nhỏ hơn.",
+        "1": "Ảnh ở vô cực.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Kính lúp có số bội giác càng lớn khi:",
+      "choices": [
+        "Tiêu cự càng dài",
+        "Kính càng to",
+        "Tiêu cự càng ngắn",
+        "Kính càng nặng"
+      ],
+      "answer": 2,
+      "explain": "G = 25/f.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Kính lúp tiêu cự 12,5 cm có số bội giác:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "25 : 12,5."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Kính lúp ghi 5x có tiêu cự (cm):",
+      "expr": "5",
+      "answer": "5",
+      "explain": "25 : 5."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Kính lúp 10x có tiêu cự (cm):",
+      "expr": "2.5",
+      "answer": "2.5",
+      "explain": "25 : 10."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thấu kính hội tụ f = 15 cm, vật d = 30 cm. Tính d′ (cm).",
+      "expr": "30",
+      "answer": "30",
+      "explain": "d = 2f."
+    }
+  ]
+}

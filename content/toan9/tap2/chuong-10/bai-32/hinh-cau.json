@@ -1,0 +1,153 @@
+{
+  "id": "bai-32",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 2",
+  "chapter": "Chương X. Một số hình khối trong thực tiễn",
+  "lesson": "Bài 32. Hình cầu",
+  "section": "",
+  "bookPage": 103,
+  "requirements": [
+    "Nhận biết hình cầu, mặt cầu; tính diện tích mặt cầu và thể tích hình cầu."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khi quay nửa hình tròn tâm O bán kính R một vòng quanh đường kính, ta được hình cầu tâm O bán kính R; nửa đường tròn tạo nên mặt cầu."
+    },
+    {
+      "type": "formula",
+      "content": "S = 4πR²;   V = (4/3)πR³"
+    },
+    {
+      "type": "text",
+      "content": "Cắt hình cầu bởi mặt phẳng được hình tròn; mặt phẳng qua tâm cắt theo hình tròn lớn có bán kính R."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Mặt cầu bán kính 3. S = kπ. Tìm k.",
+      "steps": [
+        "S = 4π·9.",
+        "= 36π."
+      ],
+      "expr": "4*9",
+      "answer": "36"
+    },
+    {
+      "problem": "Dạng thể tích: hình cầu R = 3, V = kπ.",
+      "steps": [
+        "V = 4/3·π·27.",
+        "= 36π."
+      ],
+      "expr": "4*27/3",
+      "answer": "36"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Diện tích mặt cầu bán kính R là:",
+      "choices": [
+        "πR²",
+        "4πR²",
+        "(4/3)πR³",
+        "2πR"
+      ],
+      "answer": 1,
+      "explain": "Công thức.",
+      "wrong_explain": {
+        "0": "Hình tròn.",
+        "2": "Thể tích.",
+        "3": "Chu vi."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Mặt phẳng đi qua tâm cắt hình cầu theo:",
+      "choices": [
+        "Hình tròn lớn bán kính R",
+        "Hình tròn bán kính R/2",
+        "Một điểm",
+        "Hình vuông"
+      ],
+      "answer": 0,
+      "explain": "Hình tròn lớn.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mặt cầu R = 5. S = kπ. Tìm k.",
+      "expr": "100",
+      "answer": "100",
+      "explain": "4·25."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình cầu R = 6. V = kπ. Tìm k.",
+      "expr": "288",
+      "answer": "288",
+      "explain": "4·216/3."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Quả bóng đường kính 20 cm. S = kπ (cm²). Tìm k.",
+      "expr": "400",
+      "answer": "400",
+      "explain": "R = 10: 400π."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mặt cầu có S = 64π. Bán kính là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "4R² = 64."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình cầu R = 3/2. V = kπ. Tìm k.",
+      "expr": "4/3*27/8",
+      "answer": "4.5",
+      "explain": "9/2."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bán kính tăng gấp 2 thì thể tích hình cầu tăng gấp:",
+      "expr": "8",
+      "answer": "8",
+      "explain": "R³."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bán kính tăng gấp 3 thì diện tích mặt cầu tăng gấp:",
+      "expr": "9",
+      "answer": "9",
+      "explain": "R²."
+    }
+  ]
+}

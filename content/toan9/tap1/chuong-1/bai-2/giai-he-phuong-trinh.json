@@ -1,0 +1,157 @@
+{
+  "id": "bai-2",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 1",
+  "chapter": "Chương I. Phương trình và hệ hai phương trình bậc nhất hai ẩn",
+  "lesson": "Bài 2. Giải hệ hai phương trình bậc nhất hai ẩn",
+  "section": "",
+  "bookPage": 11,
+  "requirements": [
+    "Giải hệ hai phương trình bậc nhất hai ẩn bằng phương pháp thế, phương pháp cộng đại số; dùng máy tính cầm tay."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phương pháp thế: từ một phương trình biểu diễn một ẩn theo ẩn kia, thế vào phương trình còn lại để được phương trình một ẩn; giải rồi suy ra ẩn còn lại."
+    },
+    {
+      "type": "text",
+      "content": "Phương pháp cộng đại số: nhân hai vế mỗi phương trình với số thích hợp để hệ số của một ẩn bằng nhau hoặc đối nhau; cộng hoặc trừ từng vế để khử ẩn đó."
+    },
+    {
+      "type": "text",
+      "content": "Hệ hai phương trình bậc nhất hai ẩn có thể có một nghiệm duy nhất, vô nghiệm hoặc vô số nghiệm."
+    },
+    {
+      "type": "text",
+      "content": "Có thể dùng máy tính cầm tay (chế độ giải hệ phương trình) để tìm nghiệm."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Giải hệ { x + y = 10 ; x − y = 4 }. Tìm x.",
+      "steps": [
+        "Cộng từng vế: 2x = 14.",
+        "x = 7, y = 3."
+      ],
+      "expr": "14/2",
+      "answer": "7"
+    },
+    {
+      "problem": "Dạng phương pháp thế: { y = 2x − 1 ; 3x + y = 9 }. Tìm x.",
+      "steps": [
+        "Thế: 3x + 2x − 1 = 9 ⇒ 5x = 10.",
+        "x = 2, y = 3."
+      ],
+      "expr": "10/5",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Để khử ẩn y trong hệ { 2x + 3y = 7 ; x − 3y = 2 } ta:",
+      "choices": [
+        "Cộng từng vế hai phương trình",
+        "Trừ từng vế",
+        "Nhân phương trình đầu với 2",
+        "Thế y = 7"
+      ],
+      "answer": 0,
+      "explain": "3y + (−3y) = 0.",
+      "wrong_explain": {
+        "1": "Hệ số y đối nhau nên cộng.",
+        "2": "Không cần.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hệ { x + y = 2 ; x + y = 5 } có:",
+      "choices": [
+        "Một nghiệm",
+        "Vô số nghiệm",
+        "Hai nghiệm",
+        "Vô nghiệm"
+      ],
+      "answer": 3,
+      "explain": "x + y không thể vừa bằng 2 vừa bằng 5.",
+      "wrong_explain": {
+        "0": "Hai đường thẳng song song.",
+        "1": "Vế phải khác nhau.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải hệ { x + y = 8 ; x − y = 2 }. Tìm y.",
+      "expr": "3",
+      "answer": "3",
+      "explain": "x = 5, y = 3."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải hệ { 2x + y = 7 ; x − y = 2 }. Tìm x.",
+      "expr": "3",
+      "answer": "3",
+      "explain": "3x = 9, x = 3."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải hệ { 3x + 2y = 12 ; x + 2y = 8 }. Tìm x.",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Trừ: 2x = 4, x = 2."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải hệ { x = 3y ; x + y = 12 }. Tìm y.",
+      "expr": "3",
+      "answer": "3",
+      "explain": "4y = 12, y = 3."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải hệ { 2x − 3y = 1 ; x + y = 3 }. Tìm x.",
+      "expr": "2",
+      "answer": "2",
+      "explain": "x = 3 − y ⇒ 6 − 2y − 3y = 1, y = 1, x = 2."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giải hệ { 4x + 5y = 3 ; x − 3y = 5 }. Tìm y.",
+      "expr": "-1",
+      "answer": "-1",
+      "explain": "x = 5 + 3y ⇒ 20 + 12y + 5y = 3 ⇒ y = −1."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giải hệ { 0,5x + y = 4 ; x − y = 2 }. Tìm x.",
+      "expr": "4",
+      "answer": "4",
+      "explain": "1,5x = 6, x = 4."
+    }
+  ]
+}

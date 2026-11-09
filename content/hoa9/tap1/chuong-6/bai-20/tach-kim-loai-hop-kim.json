@@ -1,0 +1,161 @@
+{
+  "id": "bai-20",
+  "grade": 9,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 9",
+  "chapter": "Chương VI. Kim loại. Sự khác nhau cơ bản giữa phi kim và kim loại",
+  "lesson": "Bài 20. Tách kim loại và việc sử dụng hợp kim",
+  "section": "",
+  "bookPage": 95,
+  "requirements": [
+    "Nêu được phương pháp tách kim loại; quá trình sản xuất gang, thép, nhôm; khái niệm, ứng dụng hợp kim."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phương pháp tách kim loại phụ thuộc mức độ hoạt động: điện phân nóng chảy với kim loại mạnh (Na, Mg, Al); dùng chất khử (C, CO, H₂) ở nhiệt độ cao với kim loại trung bình (Zn, Fe, Pb, Cu); kim loại yếu (Ag, Au) có thể tồn tại tự do."
+    },
+    {
+      "type": "text",
+      "content": "Sản xuất gang: khử oxide sắt bằng CO trong lò cao: Fe₂O₃ + 3CO → 2Fe + 3CO₂. Sản xuất nhôm: điện phân nóng chảy Al₂O₃."
+    },
+    {
+      "type": "text",
+      "content": "Hợp kim là vật liệu kim loại có chứa một kim loại cơ bản và một số kim loại hoặc phi kim khác. Gang (Fe, 2–5% C), thép (Fe, dưới 2% C), inox (thép không gỉ có Cr, Ni), duralumin (Al, Cu, Mn, Mg) nhẹ, bền."
+    },
+    {
+      "type": "text",
+      "content": "Hợp kim thường cứng hơn, bền hơn kim loại thành phần, ít bị ăn mòn hơn."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Khử hoàn toàn 16 g Fe₂O₃ (M = 160). Số mol Fe thu được?",
+      "steps": [
+        "n(Fe₂O₃) = 0,1 mol.",
+        "Fe₂O₃ → 2Fe: 0,2 mol."
+      ],
+      "expr": "16/160*2",
+      "answer": "0.2"
+    },
+    {
+      "problem": "Dạng tính theo phần trăm: gang chứa 95% Fe. 200 kg gang chứa bao nhiêu kg Fe?",
+      "steps": [
+        "200·95/100.",
+        "= 190 kg."
+      ],
+      "expr": "200*95/100",
+      "answer": "190"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phương pháp sản xuất nhôm trong công nghiệp là:",
+      "choices": [
+        "Dùng CO khử Al₂O₃",
+        "Nhiệt phân",
+        "Điện phân nóng chảy Al₂O₃",
+        "Đãi cát"
+      ],
+      "answer": 2,
+      "explain": "Điện phân.",
+      "wrong_explain": {
+        "0": "Nhôm hoạt động mạnh.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hợp kim là:",
+      "choices": [
+        "Hợp chất của kim loại với oxygen",
+        "Vật liệu kim loại chứa kim loại cơ bản và một số nguyên tố khác",
+        "Một kim loại nguyên chất",
+        "Muối kim loại"
+      ],
+      "answer": 1,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Oxide.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Thép không gỉ (inox) có thêm:",
+      "choices": [
+        "Chromium, nickel",
+        "Đồng, kẽm",
+        "Carbon nhiều",
+        "Chì"
+      ],
+      "answer": 0,
+      "explain": "Cr, Ni chống gỉ.",
+      "wrong_explain": {
+        "1": "Đồng thau.",
+        "2": "Gang.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Gang khác thép ở chỗ:",
+      "choices": [
+        "Gang không có sắt",
+        "Thép chứa nhiều carbon hơn",
+        "Gang là kim loại nguyên chất",
+        "Gang chứa nhiều carbon hơn (2–5%)"
+      ],
+      "answer": 3,
+      "explain": "Hàm lượng carbon.",
+      "wrong_explain": {
+        "0": "Sai.",
+        "1": "Ngược lại.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Thép chứa 98% Fe. 50 tấn thép chứa bao nhiêu tấn Fe?",
+      "expr": "49",
+      "answer": "49",
+      "explain": "50·98%."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khử 0,2 mol Fe₂O₃ bằng CO. Số mol Fe:",
+      "expr": "0.4",
+      "answer": "0.4",
+      "explain": "×2."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khử 0,1 mol CuO bằng H₂. Khối lượng Cu (M = 64) (g):",
+      "expr": "6.4",
+      "answer": "6.4",
+      "explain": "0,1·64."
+    }
+  ]
+}

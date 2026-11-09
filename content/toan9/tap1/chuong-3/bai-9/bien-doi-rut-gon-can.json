@@ -1,0 +1,157 @@
+{
+  "id": "bai-9",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 1",
+  "chapter": "Chương III. Căn bậc hai và căn bậc ba",
+  "lesson": "Bài 9. Biến đổi đơn giản và rút gọn biểu thức chứa căn thức bậc hai",
+  "section": "",
+  "bookPage": 55,
+  "requirements": [
+    "Đưa thừa số ra ngoài, vào trong dấu căn; trục căn thức ở mẫu; rút gọn biểu thức chứa căn."
+  ],
+  "theory": [
+    {
+      "type": "formula",
+      "content": "√(a²b) = |a|·√b   (b ≥ 0)"
+    },
+    {
+      "type": "text",
+      "content": "Đưa thừa số vào trong dấu căn: a√b = √(a²b) với a ≥ 0; a√b = −√(a²b) với a < 0."
+    },
+    {
+      "type": "text",
+      "content": "Trục căn thức ở mẫu: A/√B = A√B/B (B > 0); A/(√a + √b) = A(√a − √b)/(a − b)."
+    },
+    {
+      "type": "text",
+      "content": "Rút gọn: đưa về các căn đồng dạng rồi cộng, trừ; ví dụ √12 + √27 = 2√3 + 3√3 = 5√3."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Rút gọn √8 + √18 = k√2. Tìm k.",
+      "steps": [
+        "√8 = 2√2; √18 = 3√2.",
+        "k = 2 + 3 = 5."
+      ],
+      "expr": "2+3",
+      "answer": "5"
+    },
+    {
+      "problem": "Dạng trục căn thức: 6/√3 = k√3. Tìm k.",
+      "steps": [
+        "6/√3 = 6√3/3.",
+        "= 2√3, k = 2."
+      ],
+      "expr": "6/3",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "√(50) bằng:",
+      "choices": [
+        "5√2",
+        "2√5",
+        "25√2",
+        "10√5"
+      ],
+      "answer": 0,
+      "explain": "√(25·2) = 5√2.",
+      "wrong_explain": {
+        "1": "2√5 = √20.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trục căn thức ở mẫu 1/√2 được:",
+      "choices": [
+        "√2",
+        "2/√2",
+        "1/2",
+        "√2/2"
+      ],
+      "answer": 3,
+      "explain": "Nhân tử và mẫu với √2.",
+      "wrong_explain": {
+        "0": "Thiếu chia 2.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "√75 = k√3. Tìm k.",
+      "expr": "5",
+      "answer": "5",
+      "explain": "√(25·3) = 5√3."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "√12 + √27 − √48 = k√3. Tìm k.",
+      "expr": "2+3-4",
+      "answer": "1",
+      "explain": "2√3 + 3√3 − 4√3 = √3."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Rút gọn (√5 + 1)(√5 − 1).",
+      "expr": "5-1",
+      "answer": "4",
+      "explain": "= 4."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Rút gọn (√7 − √3)(√7 + √3).",
+      "expr": "4",
+      "answer": "4",
+      "explain": "7 − 3 = 4."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đưa 3√2 vào trong dấu căn: √a. Tìm a.",
+      "expr": "18",
+      "answer": "18",
+      "explain": "√(9·2) = √18."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "10/√5 = k√5. Tìm k.",
+      "expr": "2",
+      "answer": "2",
+      "explain": "10√5/5 = 2√5."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Rút gọn (√3 + 1)² − 2√3.",
+      "expr": "3+1",
+      "answer": "4",
+      "explain": "3 + 2√3 + 1 − 2√3 = 4."
+    }
+  ]
+}

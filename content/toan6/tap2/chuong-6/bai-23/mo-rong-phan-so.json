@@ -1,0 +1,168 @@
+{
+  "id": "bai-23",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 2",
+  "chapter": "Chương VI. Phân số",
+  "lesson": "Bài 23. Mở rộng khái niệm phân số. Phân số bằng nhau",
+  "section": "",
+  "bookPage": 4,
+  "requirements": [
+    "Nhận biết phân số với tử và mẫu là số nguyên; hai phân số bằng nhau; áp dụng tính chất cơ bản của phân số, rút gọn phân số."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phân số có dạng a/b với a, b ∈ ℤ, b ≠ 0; a là tử số, b là mẫu số. Phân số a/b là kết quả của phép chia a cho b. Mọi số nguyên a đều viết được dưới dạng a/1."
+    },
+    {
+      "type": "text",
+      "content": "Hai phân số a/b và c/d bằng nhau nếu a·d = b·c."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất cơ bản: nhân (hoặc chia) cả tử và mẫu với cùng một số nguyên khác 0 (là ước chung của tử và mẫu khi chia) thì được phân số bằng phân số đã cho. Mọi phân số đều viết được dưới dạng có mẫu dương."
+    },
+    {
+      "type": "text",
+      "content": "Rút gọn phân số: chia cả tử và mẫu cho một ước chung khác 1 và −1. Phân số tối giản là phân số mà tử và mẫu chỉ có ước chung là 1 và −1."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tìm x biết x/6 = 10/15.",
+      "steps": [
+        "x·15 = 6·10.",
+        "x = 60 : 15 = 4."
+      ],
+      "expr": "6*10/15",
+      "answer": "4"
+    },
+    {
+      "problem": "Dạng rút gọn phân số: rút gọn −36/48 về tối giản, cho biết mẫu số dương.",
+      "steps": [
+        "ƯCLN(36, 48) = 12.",
+        "−36/48 = −3/4, mẫu số 4."
+      ],
+      "expr": "48/12",
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Cặp phân số nào bằng nhau?",
+      "choices": [
+        "2/3 và 3/2",
+        "2/3 và 8/12",
+        "1/2 và 2/3",
+        "3/4 và 4/5"
+      ],
+      "answer": 1,
+      "explain": "2·12 = 3·8 = 24.",
+      "wrong_explain": {
+        "0": "2·2 ≠ 3·3.",
+        "2": "1·3 ≠ 2·2.",
+        "3": "3·5 ≠ 4·4."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phân số nào là phân số tối giản?",
+      "choices": [
+        "7/9",
+        "6/9",
+        "4/10",
+        "12/18"
+      ],
+      "answer": 0,
+      "explain": "ƯCLN(7, 9) = 1.",
+      "wrong_explain": {
+        "1": "Rút gọn được thành 2/3.",
+        "2": "Rút gọn được thành 2/5.",
+        "3": "Rút gọn được thành 2/3."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Viết −3/−5 dưới dạng mẫu dương:",
+      "choices": [
+        "−3/5",
+        "3/−5",
+        "5/3",
+        "3/5"
+      ],
+      "answer": 3,
+      "explain": "Nhân tử và mẫu với −1.",
+      "wrong_explain": {
+        "0": "Nhân cả tử và mẫu với −1 được 3/5.",
+        "1": "Mẫu vẫn âm.",
+        "2": "Đổi chỗ tử, mẫu là sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm x biết 3/x = 12/20.",
+      "expr": "3*20/12",
+      "answer": "5",
+      "explain": "x = 60 : 12 = 5."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Rút gọn 45/60 về tối giản. Tử số là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "45/60 = 3/4."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm x biết −2/5 = x/35.",
+      "expr": "-2*7",
+      "answer": "-14",
+      "explain": "x = −14."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phân số 18/24 rút gọn tối giản có mẫu số là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "18/24 = 3/4."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có bao nhiêu phân số bằng 1/2 có mẫu dương và mẫu nhỏ hơn 20?",
+      "expr": "9",
+      "answer": "9",
+      "explain": "1/2, 2/4, …, 9/18: mẫu 2, 4, …, 18 có 9 phân số."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một lớp có 40 học sinh, 15 bạn đạt loại giỏi. Phân số chỉ số học sinh giỏi (tối giản) có tử số là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "15/40 = 3/8."
+    }
+  ]
+}

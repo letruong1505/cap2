@@ -1,0 +1,161 @@
+{
+  "id": "bai-34",
+  "grade": 6,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 6",
+  "chapter": "Chương VII. Đa dạng thế giới sống",
+  "lesson": "Bài 34. Thực vật",
+  "section": "",
+  "bookPage": 115,
+  "requirements": [
+    "Phân biệt các nhóm thực vật: rêu, dương xỉ, hạt trần, hạt kín; vai trò của thực vật."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Thực vật là sinh vật nhân thực, đa bào, có lục lạp, tự tổng hợp chất hữu cơ nhờ quang hợp. Đa dạng về số lượng loài và môi trường sống."
+    },
+    {
+      "type": "text",
+      "content": "Rêu: chưa có mạch dẫn, chưa có rễ thật, sống nơi ẩm ướt, sinh sản bằng bào tử. Dương xỉ: có mạch dẫn, có rễ thật, sinh sản bằng bào tử (ở mặt dưới lá)."
+    },
+    {
+      "type": "text",
+      "content": "Hạt trần: có mạch dẫn, có hạt nhưng hạt không được bao bọc trong quả (thông, vạn tuế). Hạt kín: có mạch dẫn, có hoa, quả, hạt được bảo vệ trong quả (lúa, xoài, cam) – đa dạng nhất."
+    },
+    {
+      "type": "text",
+      "content": "Vai trò: cung cấp oxygen, thức ăn, gỗ, thuốc; điều hoà khí hậu, chống xói mòn, giữ nước; là nơi ở của nhiều động vật. Một số thực vật có hại (cây thuốc phiện, cây cần sa)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dạng phân loại: trong \"rêu, dương xỉ, thông, lúa, xoài\", có bao nhiêu cây có mạch dẫn?",
+      "steps": [
+        "Có mạch dẫn: dương xỉ, thông, lúa, xoài.",
+        "Có 4."
+      ],
+      "expr": "4",
+      "answer": "4"
+    },
+    {
+      "problem": "Một cây xanh hấp thụ khoảng 22 kg CO₂ mỗi năm. 50 cây hấp thụ bao nhiêu kg mỗi năm?",
+      "steps": [
+        "22·50.",
+        "= 1 100 kg."
+      ],
+      "expr": "22*50",
+      "answer": "1100"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nhóm thực vật chưa có mạch dẫn là:",
+      "choices": [
+        "Dương xỉ",
+        "Rêu",
+        "Hạt trần",
+        "Hạt kín"
+      ],
+      "answer": 1,
+      "explain": "Rêu.",
+      "wrong_explain": {
+        "0": "Có mạch dẫn.",
+        "2": "Có mạch dẫn.",
+        "3": "Có mạch dẫn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Cây thông thuộc nhóm:",
+      "choices": [
+        "Hạt trần",
+        "Hạt kín",
+        "Rêu",
+        "Dương xỉ"
+      ],
+      "answer": 0,
+      "explain": "Hạt nằm lộ trên lá noãn.",
+      "wrong_explain": {
+        "1": "Thông không có quả thật.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Đặc điểm chỉ có ở thực vật hạt kín là:",
+      "choices": [
+        "Có mạch dẫn",
+        "Có rễ",
+        "Sinh sản bằng bào tử",
+        "Có hoa và quả, hạt nằm trong quả"
+      ],
+      "answer": 3,
+      "explain": "Hạt kín.",
+      "wrong_explain": {
+        "0": "Dương xỉ, hạt trần cũng có.",
+        "1": "Nhiều nhóm có.",
+        "2": "Rêu, dương xỉ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dương xỉ sinh sản bằng:",
+      "choices": [
+        "Hạt",
+        "Hoa",
+        "Bào tử",
+        "Quả"
+      ],
+      "answer": 2,
+      "explain": "Túi bào tử mặt dưới lá.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có bao nhiêu nhóm thực vật chính được học (rêu, dương xỉ, hạt trần, hạt kín)?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "4."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong: lúa, ngô, thông, vạn tuế, cam – có bao nhiêu cây hạt kín?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Lúa, ngô, cam."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Rừng 1 ha cung cấp oxygen cho khoảng 45 người/năm. 4 ha cung cấp cho bao nhiêu người?",
+      "expr": "180",
+      "answer": "180",
+      "explain": "45·4."
+    }
+  ]
+}

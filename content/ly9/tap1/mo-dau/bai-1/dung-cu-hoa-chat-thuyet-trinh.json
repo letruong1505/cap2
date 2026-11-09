@@ -1,0 +1,157 @@
+{
+  "id": "bai-1",
+  "grade": 9,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 9",
+  "chapter": "Mở đầu",
+  "lesson": "Bài 1. Nhận biết một số dụng cụ, hoá chất. Thuyết trình một vấn đề khoa học",
+  "section": "",
+  "bookPage": 6,
+  "requirements": [
+    "Nhận biết được một số dụng cụ và hoá chất sử dụng trong môn KHTN 9; trình bày được các bước viết và thuyết trình một vấn đề khoa học."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dụng cụ thường dùng: biến áp nguồn, ampe kế, vôn kế, joulemeter, điện trở, biến trở, nam châm, cuộn dây, lăng kính, thấu kính, đèn laser; các dụng cụ thuỷ tinh (ống nghiệm, cốc, bình tam giác, đèn cồn)."
+    },
+    {
+      "type": "text",
+      "content": "Hoá chất: kim loại (Na, Fe, Al, Cu), dung dịch acid, base, muối; hợp chất hữu cơ (ethanol, acetic acid, glucose, saccharose). Cần đọc nhãn, kí hiệu cảnh báo và bảo quản đúng cách; Na phải ngâm trong dầu hoả."
+    },
+    {
+      "type": "text",
+      "content": "Viết và thuyết trình một vấn đề khoa học gồm: xác định vấn đề; thu thập thông tin; xử lí thông tin; viết báo cáo (mở đầu, nội dung, kết luận, tài liệu tham khảo); chuẩn bị bài trình chiếu và thuyết trình."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dạng tính điện áp bộ nguồn: 3 pin 1,5 V mắc nối tiếp tạo hiệu điện thế bao nhiêu vôn?",
+      "steps": [
+        "3·1,5.",
+        "= 4,5 V."
+      ],
+      "expr": "3*1.5",
+      "answer": "4.5"
+    },
+    {
+      "problem": "Một bài thuyết trình 12 phút chia đều cho 4 bạn. Mỗi bạn trình bày bao nhiêu phút?",
+      "steps": [
+        "12 : 4.",
+        "= 3 phút."
+      ],
+      "expr": "12/4",
+      "answer": "3"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kim loại sodium được bảo quản bằng cách:",
+      "choices": [
+        "Ngâm trong dầu hoả",
+        "Ngâm trong nước",
+        "Để ngoài không khí",
+        "Ngâm trong cồn"
+      ],
+      "answer": 0,
+      "explain": "Tránh tiếp xúc nước, không khí.",
+      "wrong_explain": {
+        "1": "Sodium phản ứng mạnh với nước.",
+        "2": "Bị oxi hoá.",
+        "3": "Không phù hợp."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Dụng cụ đo hiệu điện thế là:",
+      "choices": [
+        "Ampe kế",
+        "Joulemeter",
+        "Nhiệt kế",
+        "Vôn kế"
+      ],
+      "answer": 3,
+      "explain": "Vôn kế.",
+      "wrong_explain": {
+        "0": "Đo cường độ dòng điện.",
+        "1": "Đo năng lượng.",
+        "2": "Đo nhiệt độ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Bước đầu tiên khi viết báo cáo khoa học là:",
+      "choices": [
+        "Thuyết trình",
+        "Viết kết luận",
+        "Xác định vấn đề cần nghiên cứu",
+        "Làm slide"
+      ],
+      "answer": 2,
+      "explain": "Xác định vấn đề.",
+      "wrong_explain": {
+        "0": "Bước cuối.",
+        "1": "Sau.",
+        "3": "Sau."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Biến áp nguồn dùng để:",
+      "choices": [
+        "Đo dòng điện",
+        "Chuyển điện áp xoay chiều 220 V thành điện áp phù hợp",
+        "Tạo ánh sáng",
+        "Đo nhiệt"
+      ],
+      "answer": 1,
+      "explain": "Cung cấp nguồn điện thí nghiệm.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "4 pin 1,5 V mắc nối tiếp tạo hiệu điện thế (V):",
+      "expr": "6",
+      "answer": "6",
+      "explain": "4·1,5."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong: ống nghiệm, ampe kế, cốc thuỷ tinh, lăng kính, đèn cồn – có bao nhiêu dụng cụ thuỷ tinh dùng trong hoá học?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Ống nghiệm, cốc, đèn cồn."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Báo cáo khoa học gồm mở đầu, nội dung, kết luận, tài liệu tham khảo. Có bao nhiêu phần?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "4 phần."
+    }
+  ]
+}

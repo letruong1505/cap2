@@ -1,0 +1,150 @@
+{
+  "id": "bai-5",
+  "grade": 9,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 9",
+  "chapter": "Chương II. Ánh sáng",
+  "lesson": "Bài 5. Khúc xạ ánh sáng",
+  "section": "",
+  "bookPage": 25,
+  "requirements": [
+    "Nêu được hiện tượng khúc xạ ánh sáng; chiết suất; định luật khúc xạ ánh sáng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hiện tượng khúc xạ ánh sáng là hiện tượng tia sáng bị gãy khúc (đổi hướng) khi truyền qua mặt phân cách giữa hai môi trường trong suốt khác nhau."
+    },
+    {
+      "type": "text",
+      "content": "Chiết suất của môi trường n = c/v, trong đó c ≈ 3·10⁸ m/s là tốc độ ánh sáng trong chân không, v là tốc độ ánh sáng trong môi trường. Chiết suất của nước ≈ 1,33; thuỷ tinh ≈ 1,5."
+    },
+    {
+      "type": "text",
+      "content": "Định luật khúc xạ: tia khúc xạ nằm trong mặt phẳng tới, ở bên kia pháp tuyến so với tia tới; với hai môi trường xác định, tỉ số giữa sin góc tới và sin góc khúc xạ là hằng số."
+    },
+    {
+      "type": "formula",
+      "content": "n₁·sin i = n₂·sin r"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Ánh sáng truyền trong thuỷ tinh với tốc độ 200 000 km/s. Chiết suất thuỷ tinh (c = 300 000 km/s)?",
+      "steps": [
+        "n = c/v = 300 000 : 200 000.",
+        "= 1,5."
+      ],
+      "expr": "300000/200000",
+      "answer": "1.5"
+    },
+    {
+      "problem": "Dạng định luật khúc xạ: ánh sáng từ không khí (n = 1) vào môi trường có n = 2 với góc tới có sin i = 0,8. Tính sin r.",
+      "steps": [
+        "1·0,8 = 2·sin r.",
+        "sin r = 0,4."
+      ],
+      "expr": "0.8/2",
+      "answer": "0.4"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hiện tượng khúc xạ ánh sáng xảy ra khi ánh sáng:",
+      "choices": [
+        "Truyền qua mặt phân cách giữa hai môi trường trong suốt khác nhau",
+        "Truyền trong một môi trường đồng tính",
+        "Gặp gương phẳng",
+        "Bị vật cản hoàn toàn"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Truyền thẳng.",
+        "2": "Phản xạ.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Chiết suất n của môi trường được tính bằng:",
+      "choices": [
+        "n = v/c",
+        "n = c·v",
+        "n = c − v",
+        "n = c/v"
+      ],
+      "answer": 3,
+      "explain": "c là tốc độ trong chân không.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi ánh sáng đi từ không khí vào nước, góc khúc xạ:",
+      "choices": [
+        "Lớn hơn góc tới",
+        "Bằng góc tới",
+        "Nhỏ hơn góc tới",
+        "Bằng 90°"
+      ],
+      "answer": 2,
+      "explain": "Vào môi trường chiết quang hơn.",
+      "wrong_explain": {
+        "0": "Khi đi từ nước ra không khí.",
+        "1": "Chỉ khi i = 0.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tốc độ ánh sáng trong nước là 225 000 km/s. Chiết suất nước (c = 300 000 km/s):",
+      "expr": "300000/225000",
+      "answer": "4/3",
+      "explain": "≈ 1,33 (4/3)."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Môi trường có n = 1,5. Tốc độ ánh sáng trong đó (km/s), c = 300 000 km/s:",
+      "expr": "200000",
+      "answer": "200000",
+      "explain": "300 000 : 1,5."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tia sáng chiếu vuông góc mặt phân cách (i = 0°). Góc khúc xạ (độ):",
+      "expr": "0",
+      "answer": "0",
+      "explain": "Truyền thẳng."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ánh sáng từ không khí (n = 1) vào thuỷ tinh (n = 1,5) với sin i = 0,6. Tính sin r.",
+      "expr": "0.4",
+      "answer": "0.4",
+      "explain": "0,6 = 1,5·sin r."
+    }
+  ]
+}

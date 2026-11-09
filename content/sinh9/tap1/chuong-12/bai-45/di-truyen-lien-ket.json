@@ -1,0 +1,157 @@
+{
+  "id": "bai-45",
+  "grade": 9,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 9",
+  "chapter": "Chương XII. Di truyền nhiễm sắc thể",
+  "lesson": "Bài 45. Di truyền liên kết",
+  "section": "",
+  "bookPage": 194,
+  "requirements": [
+    "Nêu được thí nghiệm của Morgan; khái niệm di truyền liên kết; ý nghĩa."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Morgan lai ruồi giấm thân xám, cánh dài thuần chủng với thân đen, cánh cụt → F₁ 100% thân xám, cánh dài. Lai phân tích ruồi đực F₁ → con lai tỉ lệ 1 thân xám, cánh dài : 1 thân đen, cánh cụt."
+    },
+    {
+      "type": "text",
+      "content": "Di truyền liên kết là hiện tượng một nhóm tính trạng được di truyền cùng nhau, do các gene quy định chúng cùng nằm trên một NST, cùng phân li trong quá trình phân bào."
+    },
+    {
+      "type": "text",
+      "content": "Số nhóm gene liên kết bằng số NST trong bộ đơn bội (n). Ý nghĩa: hạn chế biến dị tổ hợp, đảm bảo sự di truyền bền vững của từng nhóm tính trạng; trong chọn giống có thể chọn được nhóm tính trạng tốt đi kèm nhau."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Ruồi giấm 2n = 8 có bao nhiêu nhóm gene liên kết?",
+      "steps": [
+        "Bằng n = 4.",
+        "4 nhóm."
+      ],
+      "expr": "8/2",
+      "answer": "4"
+    },
+    {
+      "problem": "Dạng lai phân tích liên kết hoàn toàn: F₁ dị hợp hai cặp gene liên kết lai phân tích cho bao nhiêu loại kiểu hình?",
+      "steps": [
+        "Chỉ hai loại giao tử: tỉ lệ 1 : 1.",
+        "2 loại kiểu hình."
+      ],
+      "expr": "2",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Di truyền liên kết là hiện tượng:",
+      "choices": [
+        "Các gene phân li độc lập",
+        "Tính trạng do môi trường",
+        "Đột biến gene",
+        "Nhóm tính trạng di truyền cùng nhau do gene nằm trên cùng một NST"
+      ],
+      "answer": 3,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Mendel.",
+        "1": "Thường biến.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đối tượng nghiên cứu của Morgan là:",
+      "choices": [
+        "Đậu Hà Lan",
+        "Chuột",
+        "Ruồi giấm",
+        "Ngô"
+      ],
+      "answer": 2,
+      "explain": "Ruồi giấm.",
+      "wrong_explain": {
+        "0": "Mendel.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Số nhóm gene liên kết của loài bằng:",
+      "choices": [
+        "Số NST lưỡng bội",
+        "Số NST trong bộ đơn bội",
+        "Số gene",
+        "Số tính trạng"
+      ],
+      "answer": 1,
+      "explain": "n.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ý nghĩa của di truyền liên kết là:",
+      "choices": [
+        "Đảm bảo di truyền bền vững của nhóm tính trạng",
+        "Tăng biến dị tổ hợp",
+        "Gây bệnh",
+        "Tạo loài mới ngay"
+      ],
+      "answer": 0,
+      "explain": "Hạn chế biến dị tổ hợp.",
+      "wrong_explain": {
+        "1": "Ngược lại.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Người 2n = 46 có bao nhiêu nhóm gene liên kết (không xét riêng X, Y)?",
+      "expr": "23",
+      "answer": "23",
+      "explain": "n."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lúa 2n = 24 có bao nhiêu nhóm gene liên kết?",
+      "expr": "12",
+      "answer": "12",
+      "explain": "n."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lai phân tích ruồi đực F₁ của Morgan cho tỉ lệ kiểu hình 1 : 1. Có bao nhiêu loại kiểu hình?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "2."
+    }
+  ]
+}

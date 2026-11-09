@@ -1,0 +1,169 @@
+{
+  "id": "bai-2",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương I. Tập hợp các số tự nhiên",
+  "lesson": "Bài 2. Cách ghi số tự nhiên",
+  "section": "",
+  "bookPage": 9,
+  "requirements": [
+    "Đọc, viết số tự nhiên trong hệ thập phân; phân biệt số và chữ số, giá trị của chữ số theo vị trí.",
+    "Đọc và viết các số La Mã không quá 30."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hệ thập phân dùng mười chữ số 0; 1; 2; …; 9. Cứ 10 đơn vị ở một hàng thì làm thành 1 đơn vị ở hàng liền trước. Giá trị của mỗi chữ số phụ thuộc vào vị trí của nó trong số."
+    },
+    {
+      "type": "formula",
+      "content": "abc‾ = a × 100 + b × 10 + c   (a ≠ 0)"
+    },
+    {
+      "type": "text",
+      "content": "Khi viết số có nhiều chữ số, ta tách thành từng lớp ba chữ số từ phải sang trái: lớp đơn vị, lớp nghìn, lớp triệu, lớp tỉ."
+    },
+    {
+      "type": "text",
+      "content": "Số La Mã dùng các chữ I (1), V (5), X (10). Các số đặc biệt IV = 4, IX = 9. Chữ I đứng trước V hoặc X thì làm giảm 1 đơn vị; đứng sau thì làm tăng. Ví dụ XIV = 14, XXIX = 29."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Viết số 3 507 thành tổng giá trị các chữ số và kiểm tra lại.",
+      "steps": [
+        "3 507 = 3 × 1 000 + 5 × 100 + 0 × 10 + 7.",
+        "= 3 000 + 500 + 0 + 7 = 3 507."
+      ],
+      "expr": "3*1000+5*100+0*10+7",
+      "answer": "3507"
+    },
+    {
+      "problem": "Dạng đổi số La Mã: XXVI bằng bao nhiêu?",
+      "steps": [
+        "XX = 20, V = 5, I = 1.",
+        "XXVI = 20 + 5 + 1 = 26."
+      ],
+      "expr": "20+5+1",
+      "answer": "26"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong số 4 528, chữ số 5 có giá trị là:",
+      "choices": [
+        "500",
+        "5",
+        "50",
+        "5 000"
+      ],
+      "answer": 0,
+      "explain": "Chữ số 5 đứng ở hàng trăm.",
+      "wrong_explain": {
+        "1": "Chữ số 5 ở hàng trăm nên có giá trị 500.",
+        "2": "Hàng chục là chữ số 2.",
+        "3": "Hàng nghìn là chữ số 4."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số La Mã IX biểu diễn số:",
+      "choices": [
+        "11",
+        "4",
+        "14",
+        "9"
+      ],
+      "answer": 3,
+      "explain": "I đứng trước X làm giảm 1: IX = 10 − 1 = 9.",
+      "wrong_explain": {
+        "0": "11 viết là XI.",
+        "1": "4 viết là IV.",
+        "2": "14 viết là XIV."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Số 19 viết bằng số La Mã là:",
+      "choices": [
+        "XVIIII",
+        "IXX",
+        "XIX",
+        "XXI"
+      ],
+      "answer": 2,
+      "explain": "19 = 10 + 9 = X + IX.",
+      "wrong_explain": {
+        "0": "Không viết bốn chữ I liền nhau.",
+        "1": "Viết sai thứ tự.",
+        "3": "XXI = 21."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số La Mã XXIV bằng bao nhiêu?",
+      "expr": "20+4",
+      "answer": "24",
+      "explain": "XX = 20, IV = 4 nên XXIV = 24."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số La Mã XVII bằng bao nhiêu?",
+      "expr": "10+5+2",
+      "answer": "17",
+      "explain": "X + V + II = 17."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho số 7 309. Giá trị của chữ số 7 là bao nhiêu?",
+      "expr": "7*1000",
+      "answer": "7000",
+      "explain": "Chữ số 7 ở hàng nghìn: 7 000."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số lớn nhất có ba chữ số khác nhau là bao nhiêu?",
+      "expr": "987",
+      "answer": "987",
+      "explain": "Chọn các chữ số lớn nhất khác nhau: 987."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Số nhỏ nhất có bốn chữ số khác nhau là bao nhiêu?",
+      "expr": "1023",
+      "answer": "1023",
+      "explain": "Chữ số đầu khác 0 nhỏ nhất là 1, sau đó 0, 2, 3: 1 023."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Số 2 045 có bao nhiêu chục?",
+      "expr": "204",
+      "answer": "204",
+      "explain": "Bỏ chữ số hàng đơn vị: 204 chục."
+    }
+  ]
+}

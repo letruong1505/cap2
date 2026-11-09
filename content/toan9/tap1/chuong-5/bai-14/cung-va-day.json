@@ -1,0 +1,153 @@
+{
+  "id": "bai-14",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 1",
+  "chapter": "Chương V. Đường tròn",
+  "lesson": "Bài 14. Cung và dây của một đường tròn",
+  "section": "",
+  "bookPage": 91,
+  "requirements": [
+    "Nhận biết góc ở tâm, cung, số đo cung; liên hệ giữa dây và khoảng cách đến tâm."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Góc ở tâm là góc có đỉnh trùng tâm đường tròn. Cung bị chắn bởi góc ở tâm; cung nhỏ có số đo bằng số đo góc ở tâm chắn cung đó; cung lớn có số đo bằng 360° trừ số đo cung nhỏ; nửa đường tròn có số đo 180°."
+    },
+    {
+      "type": "text",
+      "content": "Trong một đường tròn, đường kính vuông góc với một dây thì đi qua trung điểm dây đó; đường kính đi qua trung điểm một dây (không qua tâm) thì vuông góc với dây đó."
+    },
+    {
+      "type": "text",
+      "content": "Hai dây bằng nhau thì cách đều tâm; dây lớn hơn thì gần tâm hơn."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Góc ở tâm AOB = 70°. Số đo cung lớn AB là bao nhiêu?",
+      "steps": [
+        "Cung nhỏ AB = 70°.",
+        "Cung lớn = 360° − 70° = 290°."
+      ],
+      "expr": "360-70",
+      "answer": "290"
+    },
+    {
+      "problem": "Dạng chia đường tròn: kim phút quay từ số 12 đến số 4 thì chắn cung bao nhiêu độ?",
+      "steps": [
+        "Mỗi khoảng 5 phút ứng với 30°.",
+        "4·30° = 120°."
+      ],
+      "expr": "4*30",
+      "answer": "120"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số đo cung nhỏ bằng:",
+      "choices": [
+        "Nửa số đo góc ở tâm",
+        "360°",
+        "180°",
+        "Số đo góc ở tâm chắn cung đó"
+      ],
+      "answer": 3,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Đó là góc nội tiếp.",
+        "1": "Không.",
+        "2": "Chỉ nửa đường tròn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đường kính vuông góc với một dây thì:",
+      "choices": [
+        "Song song với dây",
+        "Bằng dây",
+        "Đi qua trung điểm dây đó",
+        "Không cắt dây"
+      ],
+      "answer": 2,
+      "explain": "Định lí.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Góc ở tâm 110°. Số đo cung lớn là:",
+      "expr": "250",
+      "answer": "250",
+      "explain": "360 − 110 = 250°."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cung lớn 240°. Góc ở tâm chắn cung nhỏ là:",
+      "expr": "120",
+      "answer": "120",
+      "explain": "360 − 240 = 120°."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lục giác đều chia đường tròn thành 6 cung bằng nhau. Mỗi cung bao nhiêu độ?",
+      "expr": "60",
+      "answer": "60",
+      "explain": "360 : 6 = 60°."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Kim phút quay 15 phút chắn cung bao nhiêu độ?",
+      "expr": "90",
+      "answer": "90",
+      "explain": "90°."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai dây AB, CD của (O) cách tâm lần lượt 3 cm và 5 cm. Dây nào dài hơn? Nhập khoảng cách từ tâm đến dây dài hơn.",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Dây gần tâm hơn thì dài hơn."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho (O; 10), dây AB = 16. Khoảng cách từ O đến AB là:",
+      "expr": "6",
+      "answer": "6",
+      "explain": "√(100 − 64) = 6."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác đều nội tiếp đường tròn chia đường tròn thành 3 cung bằng nhau, mỗi cung:",
+      "expr": "120",
+      "answer": "120",
+      "explain": "120°."
+    }
+  ]
+}

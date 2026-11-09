@@ -1,0 +1,153 @@
+{
+  "id": "bai-29",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 2",
+  "chapter": "Chương VII. Số thập phân",
+  "lesson": "Bài 29. Tính toán với số thập phân",
+  "section": "",
+  "bookPage": 31,
+  "requirements": [
+    "Thực hiện cộng, trừ, nhân, chia số thập phân; vận dụng tính chất các phép tính để tính hợp lí."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cộng, trừ, nhân, chia số thập phân âm tương tự như số nguyên: dùng quy tắc dấu, rồi thực hiện với hai số thập phân dương."
+    },
+    {
+      "type": "text",
+      "content": "Nhân một số thập phân với 10, 100, 1 000… ta dịch dấu phẩy sang phải 1, 2, 3… chữ số; nhân với 0,1; 0,01… ta dịch dấu phẩy sang trái."
+    },
+    {
+      "type": "text",
+      "content": "Thứ tự thực hiện phép tính và các tính chất giao hoán, kết hợp, phân phối áp dụng như với số nguyên."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính (−2,5)·4,2.",
+      "steps": [
+        "Khác dấu nên tích âm.",
+        "2,5·4,2 = 10,5 ⇒ −10,5."
+      ],
+      "expr": "-2.5*4.2",
+      "answer": "-10.5"
+    },
+    {
+      "problem": "Dạng tính hợp lí: 2,5·7,3·4.",
+      "steps": [
+        "(2,5·4)·7,3 = 10·7,3.",
+        "= 73."
+      ],
+      "expr": "2.5*4*7.3",
+      "answer": "73"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nhân một số thập phân với 100 ta:",
+      "choices": [
+        "Dịch sang trái hai chữ số",
+        "Thêm hai chữ số 0 vào bên trái",
+        "Dịch sang phải một chữ số",
+        "Dịch dấu phẩy sang phải hai chữ số"
+      ],
+      "answer": 3,
+      "explain": "Ví dụ 3,45·100 = 345.",
+      "wrong_explain": {
+        "0": "Đó là nhân với 0,01.",
+        "1": "Không đúng.",
+        "2": "Đó là nhân với 10."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kết quả của (−1,2) + (−0,8) là:",
+      "choices": [
+        "2",
+        "−0,4",
+        "−2",
+        "0,4"
+      ],
+      "answer": 2,
+      "explain": "−(1,2 + 0,8) = −2.",
+      "wrong_explain": {
+        "0": "Cộng hai số âm được số âm.",
+        "1": "Đó là −1,2 + 0,8.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 12,5 − 20,75.",
+      "expr": "12.5-20.75",
+      "answer": "-8.25",
+      "explain": "= −8,25."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (−3,6) : 1,2.",
+      "expr": "-3",
+      "answer": "-3",
+      "explain": "= −3."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 0,25·(−16).",
+      "expr": "-4",
+      "answer": "-4",
+      "explain": "= −4."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 4,5·1,2 + 4,5·8,8.",
+      "expr": "4.5*10",
+      "answer": "45",
+      "explain": "4,5·(1,2 + 8,8) = 45."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 7,2 : 0,9.",
+      "expr": "8",
+      "answer": "8",
+      "explain": "= 8."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính (−0,5)² .",
+      "expr": "0.25",
+      "answer": "0.25",
+      "explain": "= 0,25."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mua 2,5 kg táo giá 48 000 đồng/kg. Số tiền phải trả là:",
+      "expr": "2.5*48000",
+      "answer": "120000",
+      "explain": "120 000 đồng."
+    }
+  ]
+}

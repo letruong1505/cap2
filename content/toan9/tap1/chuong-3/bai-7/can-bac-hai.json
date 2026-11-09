@@ -1,0 +1,168 @@
+{
+  "id": "bai-7",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 1",
+  "chapter": "Chương III. Căn bậc hai và căn bậc ba",
+  "lesson": "Bài 7. Căn bậc hai và căn thức bậc hai",
+  "section": "",
+  "bookPage": 44,
+  "requirements": [
+    "Nhận biết căn bậc hai, căn bậc hai số học; tính căn bậc hai; nhận biết căn thức bậc hai và điều kiện xác định."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Căn bậc hai của số thực a không âm là số x sao cho x² = a. Số dương a có đúng hai căn bậc hai là √a và −√a; số 0 có một căn bậc hai là 0; số âm không có căn bậc hai."
+    },
+    {
+      "type": "text",
+      "content": "√a (a ≥ 0) gọi là căn bậc hai số học của a."
+    },
+    {
+      "type": "formula",
+      "content": "√(A²) = |A|"
+    },
+    {
+      "type": "text",
+      "content": "Với A là biểu thức đại số, √A gọi là căn thức bậc hai; √A xác định khi A ≥ 0."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính √49 + √(0,25)·10.",
+      "steps": [
+        "√49 = 7; √0,25 = 0,5.",
+        "7 + 0,5·10 = 12."
+      ],
+      "expr": "7+0.5*10",
+      "answer": "12"
+    },
+    {
+      "problem": "Dạng điều kiện xác định: √(2x − 6) xác định khi x ≥ ? Tìm giá trị nhỏ nhất của x.",
+      "steps": [
+        "2x − 6 ≥ 0 ⇒ x ≥ 3.",
+        "Giá trị nhỏ nhất: 3."
+      ],
+      "expr": "3",
+      "answer": "3"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Căn bậc hai số học của 81 là:",
+      "choices": [
+        "−9",
+        "±9",
+        "81",
+        "9"
+      ],
+      "answer": 3,
+      "explain": "√81 = 9.",
+      "wrong_explain": {
+        "0": "Căn bậc hai số học không âm.",
+        "1": "Đó là hai căn bậc hai của 81.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số âm có bao nhiêu căn bậc hai?",
+      "choices": [
+        "Một",
+        "Hai",
+        "Không có",
+        "Vô số"
+      ],
+      "answer": 2,
+      "explain": "Bình phương mọi số đều không âm.",
+      "wrong_explain": {
+        "0": "Số âm không có căn bậc hai.",
+        "1": "Chỉ số dương.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "√((−5)²) bằng:",
+      "choices": [
+        "−5",
+        "5",
+        "25",
+        "±5"
+      ],
+      "answer": 1,
+      "explain": "|−5| = 5.",
+      "wrong_explain": {
+        "0": "√(A²) = |A|.",
+        "2": "Không.",
+        "3": "Căn bậc hai số học không âm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính √144.",
+      "expr": "12",
+      "answer": "12",
+      "explain": "12."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính √(9/16). (nhập phân số)",
+      "expr": "3/4",
+      "answer": "0.75",
+      "explain": "3/4."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính √(1,21).",
+      "expr": "1.1",
+      "answer": "1.1",
+      "explain": "1,1."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính √((3 − 7)²).",
+      "expr": "4",
+      "answer": "4",
+      "explain": "|−4| = 4."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "√(5 − x) xác định khi x ≤ ? Nhập giá trị lớn nhất của x.",
+      "expr": "5",
+      "answer": "5",
+      "explain": "5 − x ≥ 0."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính √16 − √25 + √36.",
+      "expr": "4-5+6",
+      "answer": "5",
+      "explain": "= 5."
+    }
+  ]
+}

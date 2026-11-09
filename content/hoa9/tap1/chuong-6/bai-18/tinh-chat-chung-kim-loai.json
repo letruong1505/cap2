@@ -1,0 +1,161 @@
+{
+  "id": "bai-18",
+  "grade": 9,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 9",
+  "chapter": "Chương VI. Kim loại. Sự khác nhau cơ bản giữa phi kim và kim loại",
+  "lesson": "Bài 18. Tính chất chung của kim loại",
+  "section": "",
+  "bookPage": 87,
+  "requirements": [
+    "Nêu được tính chất vật lí, tính chất hoá học chung của kim loại; viết phương trình hoá học minh hoạ."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tính chất vật lí: kim loại có tính dẻo, tính dẫn điện, dẫn nhiệt, có ánh kim. Dẫn điện tốt nhất là Ag, sau đó Cu, Au, Al, Fe. Kim loại có khối lượng riêng, nhiệt độ nóng chảy khác nhau (Hg là chất lỏng ở nhiệt độ thường; W nóng chảy ở 3 410 °C)."
+    },
+    {
+      "type": "text",
+      "content": "Tác dụng với phi kim: với oxygen tạo oxide (3Fe + 2O₂ → Fe₃O₄); với chlorine tạo muối chloride (2Na + Cl₂ → 2NaCl); với sulfur tạo muối sulfide (Fe + S → FeS)."
+    },
+    {
+      "type": "text",
+      "content": "Tác dụng với nước: kim loại mạnh như Na, K, Ca phản ứng ở nhiệt độ thường tạo base và khí hydrogen: 2Na + 2H₂O → 2NaOH + H₂."
+    },
+    {
+      "type": "text",
+      "content": "Tác dụng với dung dịch acid (HCl, H₂SO₄ loãng): nhiều kim loại tạo muối và giải phóng H₂: Fe + 2HCl → FeCl₂ + H₂. Tác dụng với dung dịch muối: kim loại mạnh hơn đẩy kim loại yếu hơn ra khỏi muối: Fe + CuSO₄ → FeSO₄ + Cu."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho 5,6 g Fe (M = 56) tác dụng hết với HCl. Số mol H₂ sinh ra?",
+      "steps": [
+        "n(Fe) = 5,6 : 56 = 0,1 mol.",
+        "Fe + 2HCl → FeCl₂ + H₂: n(H₂) = 0,1 mol."
+      ],
+      "expr": "5.6/56",
+      "answer": "0.1"
+    },
+    {
+      "problem": "Dạng tính thể tích khí (đkc 24,79 L/mol): 0,1 mol H₂ chiếm bao nhiêu lít?",
+      "steps": [
+        "V = 0,1·24,79.",
+        "= 2,479 L."
+      ],
+      "expr": "0.1*24.79",
+      "answer": "2.479"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kim loại dẫn điện tốt nhất là:",
+      "choices": [
+        "Đồng (Cu)",
+        "Bạc (Ag)",
+        "Nhôm (Al)",
+        "Sắt (Fe)"
+      ],
+      "answer": 1,
+      "explain": "Ag.",
+      "wrong_explain": {
+        "0": "Thứ hai.",
+        "2": "Kém hơn.",
+        "3": "Kém hơn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kim loại ở thể lỏng ở nhiệt độ thường là:",
+      "choices": [
+        "Thuỷ ngân (Hg)",
+        "Sắt",
+        "Đồng",
+        "Nhôm"
+      ],
+      "answer": 0,
+      "explain": "Hg.",
+      "wrong_explain": {
+        "1": "Rắn.",
+        "2": "Rắn.",
+        "3": "Rắn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Sản phẩm của sodium tác dụng với nước là:",
+      "choices": [
+        "Na₂O và H₂",
+        "NaCl và H₂O",
+        "NaOH và O₂",
+        "NaOH và H₂"
+      ],
+      "answer": 3,
+      "explain": "2Na + 2H₂O → 2NaOH + H₂.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Phản ứng nào xảy ra được?",
+      "choices": [
+        "Cu + FeSO₄ → …",
+        "Ag + HCl → …",
+        "Fe + CuSO₄ → FeSO₄ + Cu",
+        "Cu + HCl → …"
+      ],
+      "answer": 2,
+      "explain": "Kim loại mạnh đẩy kim loại yếu.",
+      "wrong_explain": {
+        "0": "Cu yếu hơn Fe.",
+        "1": "Ag không phản ứng với HCl.",
+        "3": "Cu không phản ứng với HCl."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số mol của 2,7 g Al (M = 27) là:",
+      "expr": "0.1",
+      "answer": "0.1",
+      "explain": "2,7 : 27."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 0,2 mol Zn tác dụng hết HCl. Số mol H₂:",
+      "expr": "0.2",
+      "answer": "0.2",
+      "explain": "Zn + 2HCl → ZnCl₂ + H₂."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 6,5 g Zn (M = 65) tác dụng hết HCl. Số mol H₂:",
+      "expr": "0.1",
+      "answer": "0.1",
+      "explain": "6,5 : 65."
+    }
+  ]
+}

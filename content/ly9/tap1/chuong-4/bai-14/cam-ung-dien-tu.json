@@ -1,0 +1,150 @@
+{
+  "id": "bai-14",
+  "grade": 9,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 9",
+  "chapter": "Chương IV. Điện từ",
+  "lesson": "Bài 14. Cảm ứng điện từ. Nguyên tắc tạo ra dòng điện xoay chiều",
+  "section": "",
+  "bookPage": 67,
+  "requirements": [
+    "Nêu được hiện tượng cảm ứng điện từ; điều kiện xuất hiện dòng điện cảm ứng; nguyên tắc tạo dòng điện xoay chiều."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khi số đường sức từ xuyên qua tiết diện cuộn dây dẫn kín biến thiên thì trong cuộn dây xuất hiện dòng điện cảm ứng. Hiện tượng này gọi là cảm ứng điện từ."
+    },
+    {
+      "type": "text",
+      "content": "Có thể tạo dòng điện cảm ứng bằng cách đưa nam châm lại gần hoặc ra xa cuộn dây, quay nam châm trước cuộn dây, hoặc quay cuộn dây trong từ trường."
+    },
+    {
+      "type": "text",
+      "content": "Dòng điện xoay chiều là dòng điện luân phiên đổi chiều. Khi cho cuộn dây quay trong từ trường (hoặc nam châm quay trước cuộn dây), số đường sức từ qua cuộn dây luân phiên tăng, giảm nên tạo ra dòng điện xoay chiều. Đây là nguyên tắc của máy phát điện xoay chiều."
+    },
+    {
+      "type": "text",
+      "content": "Dòng điện xoay chiều ở Việt Nam có tần số 50 Hz (đổi chiều 100 lần mỗi giây)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dòng điện xoay chiều 50 Hz đổi chiều bao nhiêu lần trong 1 giây?",
+      "steps": [
+        "Mỗi chu kì đổi chiều 2 lần.",
+        "50·2 = 100 lần."
+      ],
+      "expr": "50*2",
+      "answer": "100"
+    },
+    {
+      "problem": "Dạng tính số vòng quay: máy phát có 1 cặp cực quay 3 000 vòng/phút tạo dòng điện tần số bao nhiêu Hz?",
+      "steps": [
+        "3 000 vòng/phút = 50 vòng/s.",
+        "Tần số 50 Hz."
+      ],
+      "expr": "3000/60",
+      "answer": "50"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Điều kiện xuất hiện dòng điện cảm ứng là:",
+      "choices": [
+        "Số đường sức từ qua cuộn dây kín biến thiên",
+        "Nam châm đứng yên cạnh cuộn dây",
+        "Cuộn dây hở",
+        "Có pin trong mạch"
+      ],
+      "answer": 0,
+      "explain": "Biến thiên từ thông.",
+      "wrong_explain": {
+        "1": "Không biến thiên.",
+        "2": "Không có dòng.",
+        "3": "Không phải cảm ứng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Dòng điện xoay chiều là dòng điện:",
+      "choices": [
+        "Có chiều không đổi",
+        "Không có cường độ",
+        "Chỉ có trong pin",
+        "Luân phiên đổi chiều"
+      ],
+      "answer": 3,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Dòng một chiều.",
+        "1": "Không.",
+        "2": "Pin tạo dòng một chiều."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Máy phát điện xoay chiều hoạt động dựa trên:",
+      "choices": [
+        "Tác dụng nhiệt",
+        "Tác dụng hoá học",
+        "Hiện tượng cảm ứng điện từ",
+        "Hiện tượng khúc xạ"
+      ],
+      "answer": 2,
+      "explain": "Nguyên tắc.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tần số dòng điện ở Việt Nam (Hz):",
+      "expr": "50",
+      "answer": "50",
+      "explain": "50 Hz."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Dòng điện 60 Hz đổi chiều bao nhiêu lần trong 1 giây?",
+      "expr": "120",
+      "answer": "120",
+      "explain": "60·2."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong 10 giây, dòng điện 50 Hz thực hiện bao nhiêu chu kì?",
+      "expr": "500",
+      "answer": "500",
+      "explain": "50·10."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong các cách: đưa nam châm lại gần, để nam châm đứng yên, quay nam châm, rút nam châm ra – có bao nhiêu cách tạo dòng cảm ứng?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Trừ để đứng yên."
+    }
+  ]
+}

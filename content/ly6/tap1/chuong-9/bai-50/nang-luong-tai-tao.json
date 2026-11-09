@@ -1,0 +1,146 @@
+{
+  "id": "bai-50",
+  "grade": 6,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 6",
+  "chapter": "Chương IX. Năng lượng",
+  "lesson": "Bài 50. Năng lượng tái tạo",
+  "section": "",
+  "bookPage": 173,
+  "requirements": [
+    "Nêu được một số nguồn năng lượng tái tạo, ưu điểm và hạn chế."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Năng lượng tái tạo là năng lượng từ những nguồn liên tục được bổ sung theo các quá trình tự nhiên: năng lượng Mặt Trời, gió, nước (thuỷ điện, thuỷ triều), địa nhiệt, sinh khối."
+    },
+    {
+      "type": "text",
+      "content": "Năng lượng không tái tạo (than đá, dầu mỏ, khí đốt) có hạn, sử dụng gây ô nhiễm môi trường và phát thải khí nhà kính."
+    },
+    {
+      "type": "text",
+      "content": "Ưu điểm của năng lượng tái tạo: gần như vô tận, ít gây ô nhiễm. Hạn chế: phụ thuộc thời tiết, chi phí đầu tư ban đầu cao."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dạng phân loại: trong 6 nguồn (Mặt Trời, gió, than, dầu, địa nhiệt, khí đốt) có bao nhiêu nguồn tái tạo?",
+      "steps": [
+        "Tái tạo: Mặt Trời, gió, địa nhiệt.",
+        "Có 3 nguồn."
+      ],
+      "expr": "3",
+      "answer": "3"
+    },
+    {
+      "problem": "Một tấm pin mặt trời tạo 0,5 kWh mỗi ngày. 20 tấm tạo bao nhiêu kWh/ngày?",
+      "steps": [
+        "0,5·20.",
+        "= 10 kWh."
+      ],
+      "expr": "0.5*20",
+      "answer": "10"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nguồn năng lượng nào là năng lượng tái tạo?",
+      "choices": [
+        "Than đá",
+        "Dầu mỏ",
+        "Khí đốt",
+        "Năng lượng Mặt Trời"
+      ],
+      "answer": 3,
+      "explain": "Được bổ sung liên tục.",
+      "wrong_explain": {
+        "0": "Không tái tạo.",
+        "1": "Không tái tạo.",
+        "2": "Không tái tạo."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hạn chế của năng lượng gió là:",
+      "choices": [
+        "Gây ô nhiễm nặng",
+        "Sắp cạn kiệt",
+        "Phụ thuộc vào thời tiết",
+        "Thải nhiều CO₂"
+      ],
+      "answer": 2,
+      "explain": "Gió không ổn định.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao cần tăng sử dụng năng lượng tái tạo?",
+      "choices": [
+        "Để tăng khí thải",
+        "Giảm ô nhiễm và tránh cạn kiệt tài nguyên",
+        "Vì rẻ trong mọi trường hợp",
+        "Không cần thiết"
+      ],
+      "answer": 1,
+      "explain": "Phát triển bền vững.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không chắc.",
+        "3": "Có cần."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong các nguồn: thuỷ triều, sinh khối, than, gió, dầu – có bao nhiêu nguồn không tái tạo?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Than, dầu."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hệ thống điện mặt trời 5 kW hoạt động 4 giờ/ngày tạo ra bao nhiêu kWh?",
+      "expr": "20",
+      "answer": "20",
+      "explain": "5·4."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một hộ dùng 300 kWh/tháng, điện mặt trời cung cấp 120 kWh. Tỉ lệ (%) do điện mặt trời là:",
+      "expr": "40",
+      "answer": "40",
+      "explain": "120/300."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một tuabin gió phát 2 MW trong 6 giờ tạo bao nhiêu MWh?",
+      "expr": "12",
+      "answer": "12",
+      "explain": "2·6."
+    }
+  ]
+}

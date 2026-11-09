@@ -1,0 +1,161 @@
+{
+  "id": "bai-29",
+  "grade": 9,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 9",
+  "chapter": "Chương IX. Lipid. Carbohydrate. Protein. Polymer",
+  "lesson": "Bài 29. Carbohydrate. Glucose và saccharose",
+  "section": "",
+  "bookPage": 131,
+  "requirements": [
+    "Nêu được khái niệm carbohydrate; công thức, tính chất, ứng dụng của glucose và saccharose."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Carbohydrate là hợp chất hữu cơ tạp chức, thường có công thức chung Cₙ(H₂O)ₘ. Gồm glucose, saccharose, tinh bột, cellulose…"
+    },
+    {
+      "type": "text",
+      "content": "Glucose C₆H₁₂O₆: chất rắn kết tinh, không màu, vị ngọt, dễ tan trong nước; có nhiều trong quả chín (đặc biệt nho). Lên men rượu: C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂ (enzyme). Phản ứng tráng bạc với AgNO₃/NH₃."
+    },
+    {
+      "type": "text",
+      "content": "Saccharose C₁₂H₂₂O₁₁: có trong mía, củ cải đường, thốt nốt; thuỷ phân (acid hoặc enzyme) tạo glucose và fructose."
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: glucose làm thuốc tăng lực, truyền dịch, tráng gương; saccharose làm thực phẩm, bánh kẹo, pha chế thuốc."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Phân tử khối glucose C₆H₁₂O₆?",
+      "steps": [
+        "6·12 + 12 + 6·16.",
+        "= 180."
+      ],
+      "expr": "72+12+96",
+      "answer": "180"
+    },
+    {
+      "problem": "Dạng lên men: lên men 0,5 mol glucose (H = 100%) thu bao nhiêu mol ethanol?",
+      "steps": [
+        "C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂.",
+        "0,5·2 = 1 mol."
+      ],
+      "expr": "0.5*2",
+      "answer": "1"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Công thức phân tử của glucose là:",
+      "choices": [
+        "C₆H₁₂O₆",
+        "C₁₂H₂₂O₁₁",
+        "C₂H₅OH",
+        "(C₆H₁₀O₅)ₙ"
+      ],
+      "answer": 0,
+      "explain": "Glucose.",
+      "wrong_explain": {
+        "1": "Saccharose.",
+        "2": "Ethanol.",
+        "3": "Tinh bột."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Saccharose có nhiều trong:",
+      "choices": [
+        "Quả nho",
+        "Gạo",
+        "Bông",
+        "Cây mía"
+      ],
+      "answer": 3,
+      "explain": "Đường mía.",
+      "wrong_explain": {
+        "0": "Glucose.",
+        "1": "Tinh bột.",
+        "2": "Cellulose."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Lên men glucose tạo ra:",
+      "choices": [
+        "Acetic acid",
+        "Tinh bột",
+        "Ethylic alcohol và CO₂",
+        "Protein"
+      ],
+      "answer": 2,
+      "explain": "Lên men rượu.",
+      "wrong_explain": {
+        "0": "Lên men giấm.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Thuỷ phân saccharose tạo ra:",
+      "choices": [
+        "Chỉ glucose",
+        "Glucose và fructose",
+        "Ethanol",
+        "Tinh bột"
+      ],
+      "answer": 1,
+      "explain": "Thuỷ phân.",
+      "wrong_explain": {
+        "0": "Còn fructose.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phân tử khối saccharose C₁₂H₂₂O₁₁:",
+      "expr": "342",
+      "answer": "342",
+      "explain": "144 + 22 + 176."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "18 g glucose (M = 180) có bao nhiêu mol?",
+      "expr": "0.1",
+      "answer": "0.1",
+      "explain": "18 : 180."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lên men 0,2 mol glucose thu bao nhiêu mol CO₂?",
+      "expr": "0.4",
+      "answer": "0.4",
+      "explain": "×2."
+    }
+  ]
+}

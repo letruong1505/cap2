@@ -1,0 +1,153 @@
+{
+  "id": "bai-11",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương II. Tính chia hết trong tập hợp các số tự nhiên",
+  "lesson": "Bài 11. Ước chung. Ước chung lớn nhất",
+  "section": "",
+  "bookPage": 44,
+  "requirements": [
+    "Tìm ước chung, ƯCLN của hai hay nhiều số; nhận biết hai số nguyên tố cùng nhau; rút gọn phân số về tối giản."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Ước chung của hai hay nhiều số là ước của tất cả các số đó; ƯC(a, b). Ước chung lớn nhất là số lớn nhất trong tập ước chung; ƯCLN(a, b). Tất cả ước chung đều là ước của ƯCLN."
+    },
+    {
+      "type": "text",
+      "content": "Tìm ƯCLN bằng phân tích ra thừa số nguyên tố: phân tích các số; chọn các thừa số nguyên tố chung; lập tích các thừa số đã chọn, mỗi thừa số lấy với số mũ nhỏ nhất."
+    },
+    {
+      "type": "text",
+      "content": "Hai số có ƯCLN bằng 1 gọi là hai số nguyên tố cùng nhau. Phân số a/b tối giản khi ƯCLN(a, b) = 1; rút gọn bằng cách chia tử và mẫu cho ƯCLN."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tìm ƯCLN(36, 84).",
+      "steps": [
+        "36 = 2²·3²; 84 = 2²·3·7.",
+        "ƯCLN = 2²·3 = 12."
+      ],
+      "expr": "4*3",
+      "answer": "12"
+    },
+    {
+      "problem": "Dạng bài toán chia đều nhiều nhất: có 24 quyển vở và 36 bút chia đều vào các phần quà. Nhiều nhất bao nhiêu phần?",
+      "steps": [
+        "Số phần là ƯCLN(24, 36).",
+        "= 12 phần."
+      ],
+      "expr": "12",
+      "answer": "12"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "ƯCLN(a, b) = 1 thì a và b gọi là:",
+      "choices": [
+        "Hai số nguyên tố",
+        "Hai số bằng nhau",
+        "Hai số nguyên tố cùng nhau",
+        "Hai hợp số"
+      ],
+      "answer": 2,
+      "explain": "Ví dụ 8 và 9 nguyên tố cùng nhau.",
+      "wrong_explain": {
+        "0": "Hai số không nhất thiết là số nguyên tố, ví dụ 8 và 9.",
+        "1": "Không đúng.",
+        "3": "Không nhất thiết."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi tìm ƯCLN bằng phân tích ra thừa số nguyên tố, mỗi thừa số chung lấy với số mũ:",
+      "choices": [
+        "Lớn nhất",
+        "Nhỏ nhất",
+        "Bất kì",
+        "Bằng 1"
+      ],
+      "answer": 1,
+      "explain": "ƯCLN: thừa số chung, số mũ nhỏ nhất.",
+      "wrong_explain": {
+        "0": "Đó là cách tìm BCNN.",
+        "2": "Phải lấy số mũ nhỏ nhất.",
+        "3": "Không nhất thiết."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm ƯCLN(18, 30).",
+      "expr": "6",
+      "answer": "6",
+      "explain": "18 = 2·3², 30 = 2·3·5; ƯCLN = 6."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm ƯCLN(56, 140).",
+      "expr": "28",
+      "answer": "28",
+      "explain": "56 = 2³·7, 140 = 2²·5·7; ƯCLN = 2²·7 = 28."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm ƯCLN(24, 36, 60).",
+      "expr": "12",
+      "answer": "12",
+      "explain": "ƯCLN = 2²·3 = 12."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "ƯC(12, 18) có bao nhiêu phần tử?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "ƯCLN = 6, ước của 6: 1; 2; 3; 6."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Rút gọn 90/120 về tối giản rồi cho biết tử số.",
+      "expr": "90/30",
+      "answer": "3",
+      "explain": "ƯCLN(90, 120) = 30; 90/120 = 3/4, tử số là 3."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm ƯCLN(15, 16).",
+      "expr": "1",
+      "answer": "1",
+      "explain": "15 và 16 nguyên tố cùng nhau."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mảnh đất 60 m × 96 m chia thành các ô vuông bằng nhau lớn nhất. Cạnh ô vuông dài bao nhiêu mét?",
+      "expr": "12",
+      "answer": "12",
+      "explain": "Cạnh = ƯCLN(60, 96) = 12 m."
+    }
+  ]
+}

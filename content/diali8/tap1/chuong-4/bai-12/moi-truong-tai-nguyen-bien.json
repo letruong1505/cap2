@@ -1,0 +1,157 @@
+{
+  "id": "bai-12",
+  "grade": 8,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 8",
+  "chapter": "Chương 4. Biển đảo Việt Nam",
+  "lesson": "Bài 12. Môi trường và tài nguyên biển đảo Việt Nam",
+  "section": "",
+  "bookPage": 152,
+  "requirements": [
+    "Nêu được đặc điểm môi trường biển đảo và vấn đề bảo vệ môi trường biển; các tài nguyên biển đảo và vấn đề khai thác."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Môi trường biển đảo nước ta còn khá trong lành, nhưng ở một số nơi bị ô nhiễm do chất thải sinh hoạt, công nghiệp, khai thác dầu khí, rác thải nhựa; suy giảm hệ sinh thái rạn san hô, rừng ngập mặn."
+    },
+    {
+      "type": "text",
+      "content": "Tài nguyên biển: sinh vật biển (hơn 2 000 loài cá, nhiều tôm, mực, hải sâm, rong biển…); khoáng sản (dầu mỏ, khí tự nhiên, titan, cát thuỷ tinh, muối); du lịch (nhiều bãi biển đẹp: Hạ Long, Nha Trang, Phú Quốc); giao thông vận tải biển; năng lượng (gió, thuỷ triều)."
+    },
+    {
+      "type": "text",
+      "content": "Cần khai thác hợp lí, gắn với bảo vệ môi trường biển, bảo vệ chủ quyền biển đảo; phát triển kinh tế biển bền vững."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Biển Việt Nam có khoảng 2 000 loài cá, trong đó 110 loài có giá trị kinh tế cao. Tỉ lệ (%)?",
+      "steps": [
+        "110/2 000·100%.",
+        "= 5,5%."
+      ],
+      "expr": "110*100/2000",
+      "answer": "5.5"
+    },
+    {
+      "problem": "Dạng tính sản lượng: sản lượng khai thác hải sản 3,9 triệu tấn, cá chiếm 70%. Sản lượng cá?",
+      "steps": [
+        "3,9·70/100.",
+        "= 2,73 triệu tấn."
+      ],
+      "expr": "3.9*70/100",
+      "answer": "2.73"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nguyên nhân gây ô nhiễm môi trường biển là:",
+      "choices": [
+        "Rừng ngập mặn",
+        "Rạn san hô",
+        "Thuỷ triều",
+        "Chất thải sinh hoạt, công nghiệp, rác thải nhựa, sự cố dầu"
+      ],
+      "answer": 3,
+      "explain": "Ô nhiễm.",
+      "wrong_explain": {
+        "0": "Bảo vệ.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khoáng sản có giá trị nhất ở vùng biển nước ta là:",
+      "choices": [
+        "Than đá",
+        "Bô-xít",
+        "Dầu mỏ và khí tự nhiên",
+        "A-pa-tít"
+      ],
+      "answer": 2,
+      "explain": "Dầu khí.",
+      "wrong_explain": {
+        "0": "Trên đất liền chủ yếu.",
+        "1": "Tây Nguyên.",
+        "3": "Lào Cai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vịnh Hạ Long là tài nguyên biển có giá trị về:",
+      "choices": [
+        "Khai thác dầu",
+        "Du lịch",
+        "Sản xuất muối",
+        "Khai thác titan"
+      ],
+      "answer": 1,
+      "explain": "Di sản thiên nhiên thế giới.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khai thác tài nguyên biển cần:",
+      "choices": [
+        "Gắn với bảo vệ môi trường và chủ quyền biển đảo",
+        "Khai thác tối đa bằng mọi cách",
+        "Dùng chất nổ đánh bắt cá",
+        "Phá rạn san hô"
+      ],
+      "answer": 0,
+      "explain": "Bền vững.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Cấm.",
+        "3": "Hại."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Sản lượng hải sản 4 triệu tấn, xuất khẩu 25%. Lượng xuất khẩu (triệu tấn):",
+      "expr": "1",
+      "answer": "1",
+      "explain": "4·25%."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một bãi biển dài 6 km, mỗi km có 2 tấn rác/tuần. Tổng rác/tuần (tấn):",
+      "expr": "12",
+      "answer": "12",
+      "explain": "6·2."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong: dầu khí, titan, muối, cát thuỷ tinh, than – có bao nhiêu khoáng sản biển được nêu?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Trừ than."
+    }
+  ]
+}

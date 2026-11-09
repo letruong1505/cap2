@@ -1,0 +1,146 @@
+{
+  "id": "bai-13",
+  "grade": 9,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 9",
+  "chapter": "Chương III. Điện",
+  "lesson": "Bài 13. Năng lượng của dòng điện và công suất điện",
+  "section": "",
+  "bookPage": 64,
+  "requirements": [
+    "Nêu được năng lượng của dòng điện, công suất điện; tính được điện năng tiêu thụ, công suất."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dòng điện có năng lượng vì có thể thực hiện công và cung cấp nhiệt lượng. Năng lượng dòng điện chuyển hoá thành các dạng khác (nhiệt, ánh sáng, cơ năng…)."
+    },
+    {
+      "type": "formula",
+      "content": "W = U·I·t   (W: J);  P = U·I = I²R = U²/R   (P: W)"
+    },
+    {
+      "type": "text",
+      "content": "Số oát ghi trên dụng cụ điện cho biết công suất định mức khi dùng đúng hiệu điện thế định mức. Điện năng tiêu thụ thường đo bằng kWh (số điện); 1 kWh = 3 600 000 J."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Bóng đèn 220 V – 100 W dùng đúng định mức trong 5 giờ tiêu thụ bao nhiêu kWh?",
+      "steps": [
+        "W = 0,1 kW·5 h.",
+        "= 0,5 kWh."
+      ],
+      "expr": "0.1*5",
+      "answer": "0.5"
+    },
+    {
+      "problem": "Dạng tính cường độ định mức: đèn 220 V – 110 W, cường độ dòng điện định mức?",
+      "steps": [
+        "I = P/U = 110 : 220.",
+        "= 0,5 A."
+      ],
+      "expr": "110/220",
+      "answer": "0.5"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Công suất điện được tính bằng:",
+      "choices": [
+        "P = U/I",
+        "P = I/U",
+        "P = U + I",
+        "P = U·I"
+      ],
+      "answer": 3,
+      "explain": "Công thức.",
+      "wrong_explain": {
+        "0": "Đó là R.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "1 kWh bằng:",
+      "choices": [
+        "1 000 J",
+        "3 600 J",
+        "3 600 000 J",
+        "100 J"
+      ],
+      "answer": 2,
+      "explain": "1 000 W·3 600 s.",
+      "wrong_explain": {
+        "0": "Đó là 1 kJ.",
+        "1": "1 Wh.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Số oát ghi trên bóng đèn cho biết:",
+      "choices": [
+        "Hiệu điện thế định mức",
+        "Công suất định mức của đèn",
+        "Điện trở",
+        "Thời gian dùng"
+      ],
+      "answer": 1,
+      "explain": "Công suất.",
+      "wrong_explain": {
+        "0": "Số vôn.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "U = 12 V, I = 2 A. Công suất (W):",
+      "expr": "24",
+      "answer": "24",
+      "explain": "12·2."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bàn là 1 000 W dùng 30 phút tiêu thụ (kWh):",
+      "expr": "0.5",
+      "answer": "0.5",
+      "explain": "1·0,5."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "R = 10 Ω, I = 3 A. Công suất (W):",
+      "expr": "90",
+      "answer": "90",
+      "explain": "I²R = 9·10."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ấm 220 V – 1 100 W, cường độ định mức (A):",
+      "expr": "5",
+      "answer": "5",
+      "explain": "1 100 : 220."
+    }
+  ]
+}

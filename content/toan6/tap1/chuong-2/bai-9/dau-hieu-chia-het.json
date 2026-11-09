@@ -1,0 +1,164 @@
+{
+  "id": "bai-9",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương II. Tính chia hết trong tập hợp các số tự nhiên",
+  "lesson": "Bài 9. Dấu hiệu chia hết",
+  "section": "",
+  "bookPage": 34,
+  "requirements": [
+    "Nhận biết và vận dụng dấu hiệu chia hết cho 2, 5, 3, 9."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dấu hiệu chia hết cho 2: các số có chữ số tận cùng là chữ số chẵn (0; 2; 4; 6; 8). Dấu hiệu chia hết cho 5: các số có chữ số tận cùng là 0 hoặc 5."
+    },
+    {
+      "type": "text",
+      "content": "Dấu hiệu chia hết cho 9: các số có tổng các chữ số chia hết cho 9. Dấu hiệu chia hết cho 3: các số có tổng các chữ số chia hết cho 3."
+    },
+    {
+      "type": "text",
+      "content": "Số chia hết cho 9 thì chia hết cho 3 (điều ngược lại không đúng). Số chia hết cho cả 2 và 5 thì có tận cùng là 0."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tổng các chữ số của 5 427 là bao nhiêu? Số này có chia hết cho 9 không?",
+      "steps": [
+        "5 + 4 + 2 + 7 = 18.",
+        "18 ⋮ 9 nên 5 427 ⋮ 9."
+      ],
+      "expr": "5+4+2+7",
+      "answer": "18"
+    },
+    {
+      "problem": "Dạng điền chữ số: tìm chữ số * lớn nhất để 3*5‾ chia hết cho 3.",
+      "steps": [
+        "Tổng 3 + * + 5 = 8 + * phải chia hết cho 3.",
+        "* ∈ {1; 4; 7}, lớn nhất là 7."
+      ],
+      "expr": "7",
+      "answer": "7"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số nào chia hết cho 5?",
+      "choices": [
+        "1 234",
+        "1 235",
+        "1 237",
+        "1 238"
+      ],
+      "answer": 1,
+      "explain": "Tận cùng là 0 hoặc 5.",
+      "wrong_explain": {
+        "0": "Tận cùng là 4.",
+        "2": "Tận cùng là 7.",
+        "3": "Tận cùng là 8."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số nào chia hết cho 9?",
+      "choices": [
+        "4 518",
+        "4 517",
+        "4 515",
+        "4 513"
+      ],
+      "answer": 0,
+      "explain": "4 + 5 + 1 + 8 = 18 ⋮ 9.",
+      "wrong_explain": {
+        "1": "Tổng chữ số 17 không chia hết cho 9.",
+        "2": "Tổng chữ số 15.",
+        "3": "Tổng chữ số 13."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Số chia hết cho cả 2 và 5 có chữ số tận cùng là:",
+      "choices": [
+        "5",
+        "2",
+        "Bất kì chữ số chẵn nào",
+        "0"
+      ],
+      "answer": 3,
+      "explain": "Tận cùng 0.",
+      "wrong_explain": {
+        "0": "Số tận cùng 5 không chia hết cho 2.",
+        "1": "Không chia hết cho 5.",
+        "2": "Chỉ có 0."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tổng các chữ số của 2 019 là bao nhiêu?",
+      "expr": "2+0+1+9",
+      "answer": "12",
+      "explain": "= 12, nên 2 019 ⋮ 3 nhưng không chia hết cho 9."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có bao nhiêu số chia hết cho 5 trong khoảng từ 1 đến 100?",
+      "expr": "20",
+      "answer": "20",
+      "explain": "5; 10; …; 100: 20 số."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm chữ số x để 72x‾ chia hết cho cả 2 và 5.",
+      "expr": "0",
+      "answer": "0",
+      "explain": "Tận cùng phải là 0."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm chữ số a để 4a7‾ chia hết cho 9.",
+      "expr": "7",
+      "answer": "7",
+      "explain": "4 + a + 7 = 11 + a ⋮ 9 nên a = 7."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có bao nhiêu số có hai chữ số chia hết cho 2?",
+      "expr": "(98-10)/2+1",
+      "answer": "45",
+      "explain": "10; 12; …; 98: 45 số."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Số dư khi chia 1 246 cho 9 là:",
+      "expr": "13-9",
+      "answer": "4",
+      "explain": "Tổng chữ số 13, chia 9 dư 4."
+    }
+  ]
+}

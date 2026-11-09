@@ -1,0 +1,153 @@
+{
+  "id": "bai-31",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 2",
+  "chapter": "Chương X. Một số hình khối trong thực tiễn",
+  "lesson": "Bài 31. Hình trụ và hình nón",
+  "section": "",
+  "bookPage": 96,
+  "requirements": [
+    "Nhận biết hình trụ, hình nón; tính diện tích xung quanh, thể tích hình trụ và hình nón."
+  ],
+  "theory": [
+    {
+      "type": "formula",
+      "content": "Hình trụ: Sxq = 2πrh;  V = πr²h"
+    },
+    {
+      "type": "formula",
+      "content": "Hình nón: Sxq = πrl (l là đường sinh);  V = (1/3)πr²h"
+    },
+    {
+      "type": "text",
+      "content": "Hình trụ tạo thành khi quay hình chữ nhật một vòng quanh một cạnh; hình nón tạo thành khi quay tam giác vuông một vòng quanh một cạnh góc vuông. Với hình nón: l² = r² + h²."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hình trụ r = 3, h = 5. V = kπ. Tìm k.",
+      "steps": [
+        "V = π·9·5.",
+        "= 45π."
+      ],
+      "expr": "9*5",
+      "answer": "45"
+    },
+    {
+      "problem": "Dạng hình nón: r = 3, h = 4, tính l rồi Sxq = kπ.",
+      "steps": [
+        "l = √(9 + 16) = 5.",
+        "Sxq = π·3·5 = 15π."
+      ],
+      "expr": "3*5",
+      "answer": "15"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thể tích hình nón là:",
+      "choices": [
+        "πr²h",
+        "(1/3)πr²h",
+        "πrl",
+        "2πrh"
+      ],
+      "answer": 1,
+      "explain": "Bằng 1/3 hình trụ cùng đáy, cùng chiều cao.",
+      "wrong_explain": {
+        "0": "Đó là hình trụ.",
+        "2": "Diện tích xung quanh hình nón.",
+        "3": "Diện tích xung quanh hình trụ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Quay hình chữ nhật quanh một cạnh ta được:",
+      "choices": [
+        "Hình trụ",
+        "Hình nón",
+        "Hình cầu",
+        "Hình chóp"
+      ],
+      "answer": 0,
+      "explain": "Hình trụ.",
+      "wrong_explain": {
+        "1": "Quay tam giác vuông.",
+        "2": "Quay nửa hình tròn.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình trụ r = 2, h = 7. Sxq = kπ. Tìm k.",
+      "expr": "28",
+      "answer": "28",
+      "explain": "2·2·7 = 28."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình trụ r = 4, h = 10. V = kπ. Tìm k.",
+      "expr": "160",
+      "answer": "160",
+      "explain": "16·10."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình nón r = 6, h = 8. Đường sinh l là:",
+      "expr": "10",
+      "answer": "10",
+      "explain": "√(36 + 64)."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình nón r = 6, h = 8. V = kπ. Tìm k.",
+      "expr": "96",
+      "answer": "96",
+      "explain": "36·8/3 = 96."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình nón r = 5, l = 13. Sxq = kπ. Tìm k.",
+      "expr": "65",
+      "answer": "65",
+      "explain": "5·13."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lon nước hình trụ đường kính 6 cm, cao 12 cm. V = kπ (cm³). Tìm k.",
+      "expr": "108",
+      "answer": "108",
+      "explain": "r = 3: 9·12."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình trụ có V = 72π, r = 3. Chiều cao h là:",
+      "expr": "8",
+      "answer": "8",
+      "explain": "9h = 72."
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "id": "bai-20",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 2",
+  "chapter": "Chương VI. Hàm số y = ax² (a ≠ 0). Phương trình bậc hai một ẩn",
+  "lesson": "Bài 20. Định lí Viète và ứng dụng",
+  "section": "",
+  "bookPage": 21,
+  "requirements": [
+    "Vận dụng định lí Viète để tính tổng, tích nghiệm; nhẩm nghiệm; tìm hai số biết tổng và tích."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nếu x₁, x₂ là hai nghiệm của ax² + bx + c = 0 (a ≠ 0) thì:"
+    },
+    {
+      "type": "formula",
+      "content": "x₁ + x₂ = −b/a;   x₁·x₂ = c/a"
+    },
+    {
+      "type": "text",
+      "content": "Nhẩm nghiệm: nếu a + b + c = 0 thì x₁ = 1, x₂ = c/a; nếu a − b + c = 0 thì x₁ = −1, x₂ = −c/a."
+    },
+    {
+      "type": "text",
+      "content": "Hai số có tổng S và tích P là nghiệm của phương trình x² − Sx + P = 0 (điều kiện S² − 4P ≥ 0)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho x² − 7x + 12 = 0. Tính x₁ + x₂ và x₁x₂. Nhập tổng.",
+      "steps": [
+        "x₁ + x₂ = 7; x₁x₂ = 12.",
+        "Tổng bằng 7."
+      ],
+      "expr": "7",
+      "answer": "7"
+    },
+    {
+      "problem": "Dạng tìm hai số: tổng 10, tích 21. Tìm số lớn.",
+      "steps": [
+        "Hai số là nghiệm x² − 10x + 21 = 0.",
+        "x = 7 hoặc x = 3; số lớn 7."
+      ],
+      "expr": "7",
+      "answer": "7"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tích hai nghiệm của ax² + bx + c = 0 là:",
+      "choices": [
+        "−b/a",
+        "b/a",
+        "c/a",
+        "−c/a"
+      ],
+      "answer": 2,
+      "explain": "Định lí Viète.",
+      "wrong_explain": {
+        "0": "Đó là tổng.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phương trình có a + b + c = 0 thì có một nghiệm là:",
+      "choices": [
+        "−1",
+        "1",
+        "0",
+        "c"
+      ],
+      "answer": 1,
+      "explain": "Thay x = 1.",
+      "wrong_explain": {
+        "0": "Khi a − b + c = 0.",
+        "2": "Khi c = 0.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho 2x² − 6x + 1 = 0. Tính x₁ + x₂.",
+      "expr": "3",
+      "answer": "3",
+      "explain": "6/2 = 3."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho 3x² + 5x − 9 = 0. Tính x₁x₂.",
+      "expr": "-3",
+      "answer": "-3",
+      "explain": "−9/3 = −3."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nhẩm nghiệm 5x² − 7x + 2 = 0. Nghiệm khác 1 là:",
+      "expr": "2/5",
+      "answer": "0.4",
+      "explain": "a + b + c = 0 ⇒ x₂ = c/a = 2/5."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nhẩm nghiệm x² + 6x + 5 = 0. Nghiệm khác −1 là:",
+      "expr": "-5",
+      "answer": "-5",
+      "explain": "a − b + c = 0 ⇒ x₂ = −5."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai số có tổng 12, tích 35. Số nhỏ là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "x² − 12x + 35 = 0."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho x² − 5x + 3 = 0. Tính x₁² + x₂².",
+      "expr": "25-6",
+      "answer": "19",
+      "explain": "(x₁ + x₂)² − 2x₁x₂ = 19."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phương trình x² − 9x + m = 0 có một nghiệm là 4. Nghiệm kia là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "x₂ = 9 − 4 = 5."
+    }
+  ]
+}

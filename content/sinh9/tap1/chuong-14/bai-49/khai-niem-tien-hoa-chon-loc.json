@@ -1,0 +1,161 @@
+{
+  "id": "bai-49",
+  "grade": 9,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 9",
+  "chapter": "Chương XIV. Tiến hoá",
+  "lesson": "Bài 49. Khái niệm tiến hoá và các hình thức chọn lọc",
+  "section": "",
+  "bookPage": 211,
+  "requirements": [
+    "Nêu được khái niệm tiến hoá; chọn lọc nhân tạo và chọn lọc tự nhiên."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tiến hoá là sự thay đổi đặc tính di truyền của quần thể sinh vật qua các thế hệ, dẫn đến hình thành các đặc điểm thích nghi, loài mới."
+    },
+    {
+      "type": "text",
+      "content": "Chọn lọc nhân tạo: con người giữ lại những biến dị có lợi cho con người, loại bỏ biến dị không mong muốn, tạo ra các giống vật nuôi, cây trồng đa dạng (các giống gà, giống cải từ cải dại)."
+    },
+    {
+      "type": "text",
+      "content": "Chọn lọc tự nhiên (theo Darwin): những cá thể mang biến dị có lợi cho sinh vật trong môi trường sống sẽ sống sót và sinh sản nhiều hơn; các biến dị có hại bị đào thải. Kết quả là hình thành đặc điểm thích nghi và loài mới."
+    },
+    {
+      "type": "text",
+      "content": "Ví dụ: bướm sâu đo bạch dương ở vùng công nghiệp có tỉ lệ dạng đen tăng do thân cây bị ám khói đen."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Quần thể bướm có 1 000 con, dạng đen chiếm 10%. Sau nhiều thế hệ tăng lên 80%. Số bướm đen tăng thêm (nếu quần thể vẫn 1 000 con)?",
+      "steps": [
+        "1 000·80% − 1 000·10%.",
+        "= 800 − 100 = 700."
+      ],
+      "expr": "800-100",
+      "answer": "700"
+    },
+    {
+      "problem": "Dạng tỉ lệ sống sót: 500 con, 20% bị bắt vì màu không phù hợp. Số sống sót?",
+      "steps": [
+        "500·80/100.",
+        "= 400."
+      ],
+      "expr": "500*80/100",
+      "answer": "400"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tiến hoá là:",
+      "choices": [
+        "Sự lớn lên của cá thể",
+        "Sự thay đổi đặc tính di truyền của quần thể qua các thế hệ",
+        "Sự thay đổi trong một đời cá thể",
+        "Sự sinh sản"
+      ],
+      "answer": 1,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Sinh trưởng.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Chọn lọc nhân tạo do:",
+      "choices": [
+        "Con người tiến hành",
+        "Môi trường tự nhiên",
+        "Thiên tai",
+        "Virus"
+      ],
+      "answer": 0,
+      "explain": "Theo nhu cầu con người.",
+      "wrong_explain": {
+        "1": "Chọn lọc tự nhiên.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Kết quả của chọn lọc tự nhiên là:",
+      "choices": [
+        "Tạo giống vật nuôi theo ý muốn",
+        "Làm mọi sinh vật giống nhau",
+        "Không có kết quả",
+        "Hình thành đặc điểm thích nghi và loài mới"
+      ],
+      "answer": 3,
+      "explain": "Darwin.",
+      "wrong_explain": {
+        "0": "Chọn lọc nhân tạo.",
+        "1": "Không.",
+        "2": "Có."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Người đưa ra học thuyết chọn lọc tự nhiên là:",
+      "choices": [
+        "Mendel",
+        "Morgan",
+        "Darwin",
+        "Newton"
+      ],
+      "answer": 2,
+      "explain": "Charles Darwin.",
+      "wrong_explain": {
+        "0": "Di truyền.",
+        "1": "Liên kết gene.",
+        "3": "Vật lí."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Quần thể 2 000 cá thể, 15% mang đột biến có lợi. Số cá thể mang đột biến:",
+      "expr": "300",
+      "answer": "300",
+      "explain": "2 000·15%."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Từ cải dại tạo ra bắp cải, súp lơ, su hào, cải xoăn. Có bao nhiêu giống được kể?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "4."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "500 con chuột, 30% bị cú bắt. Số sống sót:",
+      "expr": "350",
+      "answer": "350",
+      "explain": "500·70%."
+    }
+  ]
+}

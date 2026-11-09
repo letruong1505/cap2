@@ -1,0 +1,154 @@
+{
+  "id": "bai-11",
+  "grade": 9,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 9",
+  "chapter": "Chương III. Điện",
+  "lesson": "Bài 11. Điện trở. Định luật Ohm",
+  "section": "",
+  "bookPage": 53,
+  "requirements": [
+    "Nêu được điện trở; định luật Ohm; công thức tính điện trở của dây dẫn."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Điện trở đặc trưng cho mức độ cản trở dòng điện của dây dẫn. Đơn vị điện trở là ôm (Ω); 1 kΩ = 1 000 Ω."
+    },
+    {
+      "type": "formula",
+      "content": "Định luật Ohm: I = U/R   (I: A; U: V; R: Ω)"
+    },
+    {
+      "type": "text",
+      "content": "Cường độ dòng điện chạy qua dây dẫn tỉ lệ thuận với hiệu điện thế đặt vào hai đầu dây và tỉ lệ nghịch với điện trở của dây."
+    },
+    {
+      "type": "formula",
+      "content": "R = ρ·l/S   (ρ: điện trở suất, Ω·m; l: chiều dài, m; S: tiết diện, m²)"
+    },
+    {
+      "type": "text",
+      "content": "Điện trở dây dẫn tỉ lệ thuận với chiều dài, tỉ lệ nghịch với tiết diện và phụ thuộc vật liệu làm dây."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Điện trở 20 Ω, hiệu điện thế 12 V. Cường độ dòng điện?",
+      "steps": [
+        "I = 12 : 20.",
+        "= 0,6 A."
+      ],
+      "expr": "12/20",
+      "answer": "0.6"
+    },
+    {
+      "problem": "Dạng tính điện trở dây: dây nichrome dài 2 m, tiết diện 0,5 mm² (0,5·10⁻⁶ m²), ρ = 1,1·10⁻⁶ Ω·m. Tính R.",
+      "steps": [
+        "R = 1,1·10⁻⁶·2 : (0,5·10⁻⁶).",
+        "= 4,4 Ω."
+      ],
+      "expr": "11*2/5",
+      "answer": "4.4"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Định luật Ohm được biểu diễn:",
+      "choices": [
+        "I = U/R",
+        "I = R/U",
+        "I = U·R",
+        "U = I/R"
+      ],
+      "answer": 0,
+      "explain": "Định luật Ohm.",
+      "wrong_explain": {
+        "1": "Ngược lại.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn vị điện trở là:",
+      "choices": [
+        "Vôn (V)",
+        "Ampe (A)",
+        "Oát (W)",
+        "Ôm (Ω)"
+      ],
+      "answer": 3,
+      "explain": "Ω.",
+      "wrong_explain": {
+        "0": "Hiệu điện thế.",
+        "1": "Cường độ.",
+        "2": "Công suất."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi tăng chiều dài dây dẫn lên 2 lần (cùng vật liệu, tiết diện), điện trở:",
+      "choices": [
+        "Giảm 2 lần",
+        "Tăng 4 lần",
+        "Tăng 2 lần",
+        "Không đổi"
+      ],
+      "answer": 2,
+      "explain": "R tỉ lệ với l.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "U = 6 V, R = 12 Ω. Cường độ dòng điện (A):",
+      "expr": "0.5",
+      "answer": "0.5",
+      "explain": "6 : 12."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "I = 0,2 A, R = 50 Ω. Hiệu điện thế (V):",
+      "expr": "10",
+      "answer": "10",
+      "explain": "0,2·50."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "U = 9 V, I = 0,3 A. Điện trở (Ω):",
+      "expr": "30",
+      "answer": "30",
+      "explain": "9 : 0,3."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dây dẫn 10 Ω, nếu gấp đôi tiết diện (cùng chiều dài, vật liệu) thì điện trở (Ω):",
+      "expr": "5",
+      "answer": "5",
+      "explain": "R tỉ lệ nghịch với S."
+    }
+  ]
+}

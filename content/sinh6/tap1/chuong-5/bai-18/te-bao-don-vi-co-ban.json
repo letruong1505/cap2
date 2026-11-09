@@ -1,0 +1,157 @@
+{
+  "id": "bai-18",
+  "grade": 6,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 6",
+  "chapter": "Chương V. Tế bào",
+  "lesson": "Bài 18. Tế bào – Đơn vị cơ bản của sự sống",
+  "section": "",
+  "bookPage": 64,
+  "requirements": [
+    "Nêu được khái niệm tế bào, chức năng của tế bào; hình dạng và kích thước một số loại tế bào."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tế bào là đơn vị cấu trúc và chức năng của cơ thể sống. Mọi cơ thể sống đều được cấu tạo từ một hoặc nhiều tế bào; tế bào thực hiện các quá trình sống cơ bản (trao đổi chất, sinh trưởng, sinh sản, cảm ứng)."
+    },
+    {
+      "type": "text",
+      "content": "Tế bào có nhiều hình dạng (hình cầu, hình đĩa, hình sợi, hình sao, hình trụ…) và kích thước khác nhau. Phần lớn tế bào rất nhỏ, chỉ quan sát được bằng kính hiển vi; một số tế bào có thể nhìn bằng mắt thường (tế bào trứng cá, tép bưởi)."
+    },
+    {
+      "type": "text",
+      "content": "Đơn vị đo kích thước tế bào thường dùng: micrômét (µm); 1 mm = 1 000 µm."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tế bào hồng cầu người có đường kính khoảng 7 µm. Đổi ra mm.",
+      "steps": [
+        "7 : 1 000.",
+        "= 0,007 mm."
+      ],
+      "expr": "7/1000",
+      "answer": "0.007"
+    },
+    {
+      "problem": "Dạng xếp hàng tế bào: xếp liền các tế bào đường kính 10 µm trên đoạn 1 mm được bao nhiêu tế bào?",
+      "steps": [
+        "1 mm = 1 000 µm.",
+        "1 000 : 10 = 100 tế bào."
+      ],
+      "expr": "1000/10",
+      "answer": "100"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tế bào là:",
+      "choices": [
+        "Một bộ phận của cơ quan",
+        "Một loại mô",
+        "Chỉ có ở động vật",
+        "Đơn vị cấu trúc và chức năng của cơ thể sống"
+      ],
+      "answer": 3,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Chưa đủ.",
+        "1": "Không.",
+        "2": "Mọi sinh vật."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tế bào nào có thể quan sát bằng mắt thường?",
+      "choices": [
+        "Tế bào vi khuẩn",
+        "Tế bào hồng cầu",
+        "Tế bào trứng cá",
+        "Tế bào biểu bì hành"
+      ],
+      "answer": 2,
+      "explain": "Kích thước lớn.",
+      "wrong_explain": {
+        "0": "Rất nhỏ.",
+        "1": "Rất nhỏ.",
+        "3": "Cần kính hiển vi."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Đơn vị thường dùng đo kích thước tế bào là:",
+      "choices": [
+        "Mét",
+        "Micrômét (µm)",
+        "Kilômét",
+        "Centimét"
+      ],
+      "answer": 1,
+      "explain": "µm.",
+      "wrong_explain": {
+        "0": "Quá lớn.",
+        "2": "Quá lớn.",
+        "3": "Thường quá lớn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tế bào thần kinh có hình dạng:",
+      "choices": [
+        "Hình sao, có nhiều nhánh dài",
+        "Hình cầu",
+        "Hình đĩa",
+        "Hình hạt đậu"
+      ],
+      "answer": 0,
+      "explain": "Phù hợp chức năng dẫn truyền.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Hồng cầu.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đổi 0,05 mm ra µm.",
+      "expr": "50",
+      "answer": "50",
+      "explain": "50 µm."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tế bào vi khuẩn dài 2 µm. Bao nhiêu tế bào xếp liền dài 1 mm?",
+      "expr": "500",
+      "answer": "500",
+      "explain": "1 000 : 2."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong các quá trình: trao đổi chất, sinh trưởng, sinh sản, cảm ứng, quang hợp – có bao nhiêu quá trình sống cơ bản chung cho mọi tế bào?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Quang hợp chỉ có ở tế bào có lục lạp."
+    }
+  ]
+}

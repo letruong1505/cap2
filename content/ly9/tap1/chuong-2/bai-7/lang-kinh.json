@@ -1,0 +1,157 @@
+{
+  "id": "bai-7",
+  "grade": 9,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 9",
+  "chapter": "Chương II. Ánh sáng",
+  "lesson": "Bài 7. Lăng kính",
+  "section": "",
+  "bookPage": 34,
+  "requirements": [
+    "Mô tả đường truyền tia sáng qua lăng kính; hiện tượng tán sắc ánh sáng; màu sắc của vật."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Lăng kính là khối chất trong suốt, đồng chất, thường có dạng lăng trụ tam giác. Tia sáng đơn sắc đi qua lăng kính bị lệch về phía đáy lăng kính."
+    },
+    {
+      "type": "text",
+      "content": "Ánh sáng trắng (ánh sáng Mặt Trời) là hỗn hợp của nhiều ánh sáng màu. Khi đi qua lăng kính, ánh sáng trắng bị phân tách thành dải màu: đỏ, da cam, vàng, lục, lam, chàm, tím – hiện tượng tán sắc ánh sáng. Tia tím lệch nhiều nhất, tia đỏ lệch ít nhất."
+    },
+    {
+      "type": "text",
+      "content": "Màu sắc của vật: vật màu nào thì tán xạ (hắt lại) mạnh ánh sáng màu đó; vật màu trắng tán xạ tốt mọi ánh sáng; vật màu đen không tán xạ ánh sáng."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dải màu khi tán sắc ánh sáng trắng gồm bao nhiêu màu chính?",
+      "steps": [
+        "Đỏ, da cam, vàng, lục, lam, chàm, tím.",
+        "7 màu."
+      ],
+      "expr": "7",
+      "answer": "7"
+    },
+    {
+      "problem": "Dạng tính góc lệch: tia sáng tới lăng kính bị lệch tổng cộng 30° qua hai mặt, mỗi mặt lệch như nhau. Mỗi mặt lệch bao nhiêu độ?",
+      "steps": [
+        "30 : 2.",
+        "= 15°."
+      ],
+      "expr": "30/2",
+      "answer": "15"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tia sáng đơn sắc qua lăng kính bị lệch về phía:",
+      "choices": [
+        "Đỉnh lăng kính",
+        "Đáy lăng kính",
+        "Không lệch",
+        "Ngẫu nhiên"
+      ],
+      "answer": 1,
+      "explain": "Lệch về đáy.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "2": "Có lệch.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong dải màu tán sắc, tia lệch nhiều nhất là:",
+      "choices": [
+        "Tia tím",
+        "Tia đỏ",
+        "Tia vàng",
+        "Tia lục"
+      ],
+      "answer": 0,
+      "explain": "Chiết suất với tia tím lớn nhất.",
+      "wrong_explain": {
+        "1": "Lệch ít nhất.",
+        "2": "Ở giữa.",
+        "3": "Ở giữa."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vật màu đỏ dưới ánh sáng trắng có màu đỏ vì:",
+      "choices": [
+        "Hấp thụ ánh sáng đỏ",
+        "Phát ra ánh sáng đỏ",
+        "Phản xạ mọi màu",
+        "Tán xạ mạnh ánh sáng đỏ"
+      ],
+      "answer": 3,
+      "explain": "Màu sắc của vật.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "1": "Không tự phát sáng.",
+        "2": "Đó là vật trắng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cầu vồng là hiện tượng:",
+      "choices": [
+        "Phản xạ toàn phần",
+        "Nhiễu xạ âm",
+        "Tán sắc ánh sáng Mặt Trời qua các giọt nước",
+        "Khúc xạ của âm"
+      ],
+      "answer": 2,
+      "explain": "Tán sắc.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong dải 7 màu, màu đứng thứ tư là lục. Từ đỏ đến lục có bao nhiêu màu (kể cả hai đầu)?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Đỏ, da cam, vàng, lục."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật màu trắng chiếu ánh sáng đỏ sẽ thấy màu đỏ. Vật màu đen chiếu ánh sáng đỏ thấy màu đen. Có bao nhiêu vật thấy màu đỏ trong hai vật trên?",
+      "expr": "1",
+      "answer": "1",
+      "explain": "Chỉ vật trắng."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lăng kính tam giác có bao nhiêu mặt bên?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "3 mặt bên."
+    }
+  ]
+}

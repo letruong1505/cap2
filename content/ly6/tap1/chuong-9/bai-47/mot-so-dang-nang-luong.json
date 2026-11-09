@@ -1,0 +1,157 @@
+{
+  "id": "bai-47",
+  "grade": 6,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 6",
+  "chapter": "Chương IX. Năng lượng",
+  "lesson": "Bài 47. Một số dạng năng lượng",
+  "section": "",
+  "bookPage": 165,
+  "requirements": [
+    "Phân loại được năng lượng theo tiêu chí; nêu được động năng, thế năng hấp dẫn, các dạng năng lượng khác."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Năng lượng có thể tồn tại ở nhiều dạng: động năng (vật chuyển động), thế năng hấp dẫn (vật ở trên cao), thế năng đàn hồi (vật bị biến dạng), năng lượng nhiệt, năng lượng ánh sáng, năng lượng âm thanh, năng lượng điện, năng lượng hoá học, năng lượng hạt nhân."
+    },
+    {
+      "type": "text",
+      "content": "Động năng của vật càng lớn khi vật có khối lượng càng lớn và chuyển động càng nhanh. Thế năng hấp dẫn càng lớn khi vật có khối lượng càng lớn và ở càng cao."
+    },
+    {
+      "type": "text",
+      "content": "Năng lượng có thể phân loại thành năng lượng tái tạo (Mặt Trời, gió, nước) và năng lượng không tái tạo (than, dầu, khí đốt)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dạng đếm: trong các vật \"xe đang chạy, quả bóng đặt trên bàn, lò xo bị nén, mũi tên đang bay\", có bao nhiêu vật có động năng?",
+      "steps": [
+        "Vật chuyển động có động năng: xe đang chạy, mũi tên đang bay.",
+        "Có 2 vật."
+      ],
+      "expr": "2",
+      "answer": "2"
+    },
+    {
+      "problem": "Một vật có 30 J động năng và 50 J thế năng. Tổng năng lượng cơ của vật là bao nhiêu J?",
+      "steps": [
+        "30 + 50.",
+        "= 80 J."
+      ],
+      "expr": "30+50",
+      "answer": "80"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Vật có động năng là vật:",
+      "choices": [
+        "Đứng yên trên mặt đất",
+        "Bị nén",
+        "Ở trên cao",
+        "Đang chuyển động"
+      ],
+      "answer": 3,
+      "explain": "Chuyển động.",
+      "wrong_explain": {
+        "0": "Không có động năng.",
+        "1": "Có thế năng đàn hồi.",
+        "2": "Có thế năng hấp dẫn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Quả táo trên cành cây có:",
+      "choices": [
+        "Động năng",
+        "Năng lượng âm thanh",
+        "Thế năng hấp dẫn",
+        "Năng lượng điện"
+      ],
+      "answer": 2,
+      "explain": "Ở độ cao so với mặt đất.",
+      "wrong_explain": {
+        "0": "Đang đứng yên.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Thức ăn chứa năng lượng dạng:",
+      "choices": [
+        "Năng lượng điện",
+        "Năng lượng hoá học",
+        "Năng lượng âm thanh",
+        "Động năng"
+      ],
+      "answer": 1,
+      "explain": "Năng lượng hoá học.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dạng năng lượng nào là năng lượng tái tạo?",
+      "choices": [
+        "Năng lượng gió",
+        "Than đá",
+        "Dầu mỏ",
+        "Khí đốt"
+      ],
+      "answer": 0,
+      "explain": "Tự nhiên bổ sung.",
+      "wrong_explain": {
+        "1": "Không tái tạo.",
+        "2": "Không tái tạo.",
+        "3": "Không tái tạo."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong các dạng: gió, than, Mặt Trời, dầu, nước chảy – có bao nhiêu dạng tái tạo?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Gió, Mặt Trời, nước chảy."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cung tên bị kéo căng có 40 J thế năng đàn hồi. Khi bắn, 75% chuyển thành động năng của mũi tên. Động năng (J):",
+      "expr": "30",
+      "answer": "30",
+      "explain": "40·75%."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai xe cùng tốc độ, xe A khối lượng gấp 3 xe B. Động năng xe A gấp mấy lần xe B?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Động năng tỉ lệ với khối lượng khi cùng tốc độ."
+    }
+  ]
+}

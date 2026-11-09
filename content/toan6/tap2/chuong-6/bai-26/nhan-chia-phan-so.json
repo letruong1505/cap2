@@ -1,0 +1,157 @@
+{
+  "id": "bai-26",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 2",
+  "chapter": "Chương VI. Phân số",
+  "lesson": "Bài 26. Phép nhân và phép chia phân số",
+  "section": "",
+  "bookPage": 19,
+  "requirements": [
+    "Thực hiện nhân, chia phân số; vận dụng tính chất của phép nhân phân số; số nghịch đảo."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Muốn nhân hai phân số, ta nhân các tử với nhau và nhân các mẫu với nhau."
+    },
+    {
+      "type": "formula",
+      "content": "a/b · c/d = (a·c)/(b·d)"
+    },
+    {
+      "type": "text",
+      "content": "Phép nhân phân số có tính chất giao hoán, kết hợp, nhân với 1, phân phối đối với phép cộng. Hai số gọi là nghịch đảo của nhau nếu tích của chúng bằng 1; nghịch đảo của a/b (a ≠ 0) là b/a."
+    },
+    {
+      "type": "formula",
+      "content": "a/b : c/d = a/b · d/c   (c ≠ 0)"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính 2/3 · 9/4.",
+      "steps": [
+        "= (2·9)/(3·4) = 18/12.",
+        "= 3/2."
+      ],
+      "expr": "2/3*9/4",
+      "answer": "1.5"
+    },
+    {
+      "problem": "Dạng chia phân số: 4/5 : 2/15.",
+      "steps": [
+        "Nhân với số nghịch đảo: 4/5 · 15/2.",
+        "= 60/10 = 6."
+      ],
+      "expr": "4/5*15/2",
+      "answer": "6"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số nghịch đảo của −3/7 là:",
+      "choices": [
+        "7/3",
+        "3/7",
+        "−3/7",
+        "−7/3"
+      ],
+      "answer": 3,
+      "explain": "(−3/7)·(−7/3) = 1.",
+      "wrong_explain": {
+        "0": "Tích −3/7 · 7/3 = −1, không bằng 1.",
+        "1": "Đó là số đối.",
+        "2": "Đó là chính nó."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Muốn chia a/b cho c/d (c ≠ 0) ta:",
+      "choices": [
+        "Nhân a/b với c/d",
+        "Chia tử cho tử, mẫu cho mẫu",
+        "Nhân a/b với d/c",
+        "Cộng với số nghịch đảo"
+      ],
+      "answer": 2,
+      "explain": "Nhân với số nghịch đảo của số chia.",
+      "wrong_explain": {
+        "0": "Phải nhân với số nghịch đảo.",
+        "1": "Không phải quy tắc.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 3/4 · 8/9.",
+      "expr": "3/4*8/9",
+      "answer": "2/3",
+      "explain": "= 24/36 = 2/3."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (−5/6)·(12/25).",
+      "expr": "-5/6*12/25",
+      "answer": "-0.4",
+      "explain": "= −2/5."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 7/8 : 7/4.",
+      "expr": "1/2",
+      "answer": "0.5",
+      "explain": "= 7/8 · 4/7 = 1/2."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 6 : 3/5.",
+      "expr": "6*5/3",
+      "answer": "10",
+      "explain": "= 10."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 2/5·3/7 + 2/5·4/7.",
+      "expr": "2/5",
+      "answer": "0.4",
+      "explain": "2/5·(3/7 + 4/7) = 2/5."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm x biết 3/4·x = 9/16.",
+      "expr": "9/16*4/3",
+      "answer": "0.75",
+      "explain": "x = 3/4."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một tấm vải dài 15 m, cắt thành các đoạn dài 3/4 m. Được bao nhiêu đoạn?",
+      "expr": "15*4/3",
+      "answer": "20",
+      "explain": "15 : 3/4 = 20 đoạn."
+    }
+  ]
+}

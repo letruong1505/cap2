@@ -1,0 +1,157 @@
+{
+  "id": "bai-8",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương II. Tính chia hết trong tập hợp các số tự nhiên",
+  "lesson": "Bài 8. Quan hệ chia hết và tính chất",
+  "section": "",
+  "bookPage": 29,
+  "requirements": [
+    "Nhận biết quan hệ chia hết, ước và bội; vận dụng tính chất chia hết của một tổng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cho a, b ∈ ℕ, b ≠ 0. Nếu có q ∈ ℕ sao cho a = b·q thì a chia hết cho b, kí hiệu a ⋮ b; khi đó a là bội của b, b là ước của a. Kí hiệu Ư(a) là tập ước của a, B(b) là tập bội của b."
+    },
+    {
+      "type": "text",
+      "content": "Tìm ước của a: chia a lần lượt cho 1, 2, …, a. Tìm bội của b: nhân b lần lượt với 0, 1, 2, 3, …"
+    },
+    {
+      "type": "text",
+      "content": "Tính chất 1: nếu tất cả các số hạng của tổng đều chia hết cho cùng một số thì tổng chia hết cho số đó: a ⋮ m, b ⋮ m ⇒ (a + b) ⋮ m."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất 2: nếu chỉ có một số hạng của tổng không chia hết cho một số, các số hạng còn lại đều chia hết cho số đó, thì tổng không chia hết cho số đó."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Số 18 có bao nhiêu ước?",
+      "steps": [
+        "Ư(18) = {1; 2; 3; 6; 9; 18}.",
+        "Có 6 ước."
+      ],
+      "expr": "6",
+      "answer": "6"
+    },
+    {
+      "problem": "Dạng xét tính chia hết của tổng: tổng 15 + 40 + 7 chia cho 5 dư bao nhiêu?",
+      "steps": [
+        "15 và 40 chia hết cho 5, 7 chia 5 dư 2.",
+        "Tổng chia 5 dư 2 (62 = 5·12 + 2)."
+      ],
+      "expr": "62-5*12",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nếu a = b·q (b ≠ 0, q ∈ ℕ) thì:",
+      "choices": [
+        "a là ước của b",
+        "a là bội của b",
+        "b là bội của a",
+        "a không chia hết cho b"
+      ],
+      "answer": 1,
+      "explain": "a ⋮ b, a là bội của b, b là ước của a.",
+      "wrong_explain": {
+        "0": "b mới là ước của a.",
+        "2": "Ngược lại.",
+        "3": "a ⋮ b."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tổng nào chia hết cho 6?",
+      "choices": [
+        "24 + 36",
+        "24 + 13",
+        "12 + 25",
+        "30 + 7"
+      ],
+      "answer": 0,
+      "explain": "24 ⋮ 6 và 36 ⋮ 6 nên tổng chia hết cho 6.",
+      "wrong_explain": {
+        "1": "13 không chia hết cho 6 nên tổng không chia hết.",
+        "2": "25 không chia hết cho 6.",
+        "3": "7 không chia hết cho 6."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số 24 có bao nhiêu ước?",
+      "expr": "8",
+      "answer": "8",
+      "explain": "Ư(24) = {1; 2; 3; 4; 6; 8; 12; 24}."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có bao nhiêu bội của 7 nhỏ hơn 50?",
+      "expr": "8",
+      "answer": "8",
+      "explain": "0; 7; 14; …; 49: 8 số."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm bội lớn nhất có hai chữ số của 13.",
+      "expr": "13*7",
+      "answer": "91",
+      "explain": "13·7 = 91."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm số dư khi chia tổng 42 + 63 + 10 cho 7.",
+      "expr": "10-7",
+      "answer": "3",
+      "explain": "42, 63 chia hết cho 7; 10 chia 7 dư 3."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số 36 có bao nhiêu ước?",
+      "expr": "9",
+      "answer": "9",
+      "explain": "1; 2; 3; 4; 6; 9; 12; 18; 36."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tổng các ước của 12 là:",
+      "expr": "1+2+3+4+6+12",
+      "answer": "28",
+      "explain": "= 28."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có 30 học sinh chia đều vào các nhóm, mỗi nhóm nhiều hơn 1 bạn và ít hơn 30 bạn. Có bao nhiêu cách chia?",
+      "expr": "6",
+      "answer": "6",
+      "explain": "Số bạn mỗi nhóm là ước của 30 khác 1 và 30: 2, 3, 5, 6, 10, 15 – có 6 cách."
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "id": "bai-50",
+  "grade": 9,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 9",
+  "chapter": "Chương XIV. Tiến hoá",
+  "lesson": "Bài 50. Cơ chế tiến hoá",
+  "section": "",
+  "bookPage": 214,
+  "requirements": [
+    "Trình bày được quan điểm của Lamarck, Darwin, thuyết tiến hoá hiện đại về cơ chế tiến hoá."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Lamarck cho rằng ngoại cảnh thay đổi chậm chạp, sinh vật chủ động thích nghi; cơ quan dùng nhiều thì phát triển, không dùng thì tiêu biến và những đặc điểm đó được di truyền (quan điểm chưa chính xác)."
+    },
+    {
+      "type": "text",
+      "content": "Darwin: biến dị cá thể xuất hiện trong sinh sản là nguyên liệu; chọn lọc tự nhiên giữ lại biến dị có lợi, đào thải biến dị có hại; các loài sinh vật có chung nguồn gốc."
+    },
+    {
+      "type": "text",
+      "content": "Thuyết tiến hoá hiện đại: nguyên liệu tiến hoá là đột biến và biến dị tổ hợp; các nhân tố tiến hoá gồm đột biến, di – nhập gene, chọn lọc tự nhiên, phiêu bạt di truyền, giao phối không ngẫu nhiên. Đơn vị tiến hoá là quần thể."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dạng đếm nhân tố: thuyết hiện đại nêu 5 nhân tố tiến hoá; nếu bỏ chọn lọc tự nhiên thì còn bao nhiêu nhân tố?",
+      "steps": [
+        "5 − 1.",
+        "= 4."
+      ],
+      "expr": "5-1",
+      "answer": "4"
+    },
+    {
+      "problem": "Dạng di – nhập gene: quần thể có 1 000 con, thêm 50 con từ quần thể khác di cư vào mang theo gene mới. Quần thể sau nhập cư có bao nhiêu con?",
+      "steps": [
+        "1 000 + 50.",
+        "= 1 050."
+      ],
+      "expr": "1000+50",
+      "answer": "1050"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Theo thuyết tiến hoá hiện đại, đơn vị tiến hoá là:",
+      "choices": [
+        "Quần thể",
+        "Cá thể",
+        "Loài",
+        "Tế bào"
+      ],
+      "answer": 0,
+      "explain": "Quần thể.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nguyên liệu của tiến hoá theo thuyết hiện đại là:",
+      "choices": [
+        "Thường biến",
+        "Tập quán",
+        "Ý muốn của sinh vật",
+        "Đột biến và biến dị tổ hợp"
+      ],
+      "answer": 3,
+      "explain": "Biến dị di truyền.",
+      "wrong_explain": {
+        "0": "Không di truyền.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Quan điểm \"cơ quan dùng nhiều thì phát triển và được di truyền\" là của:",
+      "choices": [
+        "Darwin",
+        "Mendel",
+        "Lamarck",
+        "Thuyết hiện đại"
+      ],
+      "answer": 2,
+      "explain": "Lamarck.",
+      "wrong_explain": {
+        "0": "Chọn lọc tự nhiên.",
+        "1": "Di truyền.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nhân tố nào là nhân tố tiến hoá?",
+      "choices": [
+        "Thường biến",
+        "Di – nhập gene",
+        "Ăn uống",
+        "Tập thể dục"
+      ],
+      "answer": 1,
+      "explain": "Thuyết hiện đại.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Thuyết tiến hoá hiện đại nêu bao nhiêu nhân tố tiến hoá?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Đột biến, di – nhập gene, CLTN, phiêu bạt di truyền, giao phối không ngẫu nhiên."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Quần thể 800 con, 5% mang allele đột biến mới. Số con mang allele đột biến:",
+      "expr": "40",
+      "answer": "40",
+      "explain": "800·5%."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một trận lũ làm chết ngẫu nhiên 60% trong 500 con. Số sống sót:",
+      "expr": "200",
+      "answer": "200",
+      "explain": "500·40%."
+    }
+  ]
+}

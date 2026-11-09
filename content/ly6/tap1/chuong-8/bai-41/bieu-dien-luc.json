@@ -1,0 +1,142 @@
+{
+  "id": "bai-41",
+  "grade": 6,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 6",
+  "chapter": "Chương VIII. Lực trong đời sống",
+  "lesson": "Bài 41. Biểu diễn lực",
+  "section": "",
+  "bookPage": 147,
+  "requirements": [
+    "Biểu diễn được một lực bằng một mũi tên có điểm đặt, phương, chiều, độ lớn."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Lực có độ lớn, phương và chiều xác định. Lực được biểu diễn bằng một mũi tên: gốc mũi tên là điểm đặt của lực; phương và chiều của mũi tên là phương và chiều của lực; độ dài mũi tên biểu thị độ lớn của lực theo tỉ xích cho trước."
+    },
+    {
+      "type": "text",
+      "content": "Ví dụ: lực 30 N, phương ngang, chiều từ trái sang phải, tỉ xích 1 cm ứng với 10 N thì mũi tên dài 3 cm."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tỉ xích 1 cm ứng với 5 N. Lực 20 N được biểu diễn bằng mũi tên dài bao nhiêu cm?",
+      "steps": [
+        "20 : 5.",
+        "= 4 cm."
+      ],
+      "expr": "20/5",
+      "answer": "4"
+    },
+    {
+      "problem": "Dạng đọc lực từ hình: mũi tên dài 2,5 cm, tỉ xích 1 cm ứng với 20 N. Độ lớn lực?",
+      "steps": [
+        "2,5·20.",
+        "= 50 N."
+      ],
+      "expr": "2.5*20",
+      "answer": "50"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Gốc của mũi tên biểu diễn lực là:",
+      "choices": [
+        "Độ lớn của lực",
+        "Phương của lực",
+        "Điểm đặt của lực",
+        "Chiều của lực"
+      ],
+      "answer": 2,
+      "explain": "Điểm đặt.",
+      "wrong_explain": {
+        "0": "Biểu thị bằng độ dài.",
+        "1": "Không.",
+        "3": "Mũi tên chỉ chiều."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Độ dài mũi tên biểu diễn lực cho biết:",
+      "choices": [
+        "Điểm đặt",
+        "Độ lớn của lực theo tỉ xích",
+        "Chiều của lực",
+        "Thời gian tác dụng"
+      ],
+      "answer": 1,
+      "explain": "Theo tỉ xích.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Lực kéo vật lên theo phương thẳng đứng có chiều:",
+      "choices": [
+        "Từ dưới lên trên",
+        "Từ trên xuống",
+        "Từ trái sang phải",
+        "Không có chiều"
+      ],
+      "answer": 0,
+      "explain": "Kéo lên.",
+      "wrong_explain": {
+        "1": "Đó là trọng lực.",
+        "2": "Phương ngang.",
+        "3": "Có chiều."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tỉ xích 1 cm ứng với 10 N. Lực 45 N biểu diễn bằng mũi tên dài (cm):",
+      "expr": "4.5",
+      "answer": "4.5",
+      "explain": "4,5 cm."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mũi tên dài 3 cm, tỉ xích 1 cm ứng với 25 N. Lực bằng (N):",
+      "expr": "75",
+      "answer": "75",
+      "explain": "75 N."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mũi tên dài 6 cm biểu diễn lực 120 N. Tỉ xích 1 cm ứng với bao nhiêu N?",
+      "expr": "20",
+      "answer": "20",
+      "explain": "120 : 6."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai lực cùng tỉ xích 1 cm ứng với 10 N, mũi tên dài 2 cm và 5 cm. Lực lớn hơn lực nhỏ bao nhiêu N?",
+      "expr": "30",
+      "answer": "30",
+      "explain": "50 − 20."
+    }
+  ]
+}

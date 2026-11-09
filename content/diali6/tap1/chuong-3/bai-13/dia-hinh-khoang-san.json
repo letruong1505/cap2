@@ -1,0 +1,161 @@
+{
+  "id": "bai-13",
+  "grade": 6,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 6",
+  "chapter": "Chương 3. Cấu tạo của Trái Đất. Vỏ Trái Đất",
+  "lesson": "Bài 13. Các dạng địa hình chính trên Trái Đất. Khoáng sản",
+  "section": "",
+  "bookPage": 135,
+  "requirements": [
+    "Phân biệt các dạng địa hình chính: núi, đồi, cao nguyên, đồng bằng; nêu khái niệm khoáng sản, phân loại."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Núi là dạng địa hình nhô cao rõ rệt, độ cao tuyệt đối trên 500 m; có đỉnh, sườn, chân. Đồi có độ cao tương đối dưới 200 m, đỉnh tròn, sườn thoải."
+    },
+    {
+      "type": "text",
+      "content": "Cao nguyên có bề mặt tương đối bằng phẳng hoặc gợn sóng, độ cao tuyệt đối trên 500 m, sườn dốc. Đồng bằng có độ cao tuyệt đối thường dưới 200 m, bề mặt bằng phẳng hoặc hơi gợn sóng."
+    },
+    {
+      "type": "text",
+      "content": "Độ cao tuyệt đối tính từ mực nước biển; độ cao tương đối tính từ chân lên đỉnh."
+    },
+    {
+      "type": "text",
+      "content": "Khoáng sản là những khoáng vật và đá có ích được con người khai thác, sử dụng. Phân loại: năng lượng (than, dầu mỏ, khí đốt), kim loại (sắt, đồng, vàng), phi kim loại (đá vôi, apatit, cát)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đỉnh núi cao 1 500 m so với mực nước biển, chân núi cao 300 m. Độ cao tương đối?",
+      "steps": [
+        "1 500 − 300.",
+        "= 1 200 m."
+      ],
+      "expr": "1500-300",
+      "answer": "1200"
+    },
+    {
+      "problem": "Dạng nhiệt độ theo độ cao: lên cao 100 m nhiệt độ giảm 0,6 °C. Chân núi 25 °C, đỉnh cao hơn chân 1 500 m. Nhiệt độ ở đỉnh?",
+      "steps": [
+        "Giảm 0,6·15 = 9 °C.",
+        "25 − 9 = 16 °C."
+      ],
+      "expr": "25-0.6*15",
+      "answer": "16"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Núi có độ cao tuyệt đối:",
+      "choices": [
+        "Dưới 200 m",
+        "Dưới 100 m",
+        "Trên 500 m",
+        "Bằng 0 m"
+      ],
+      "answer": 2,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Đồng bằng.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Dạng địa hình có bề mặt bằng phẳng, cao trên 500 m, sườn dốc là:",
+      "choices": [
+        "Đồng bằng",
+        "Cao nguyên",
+        "Đồi",
+        "Núi"
+      ],
+      "answer": 1,
+      "explain": "Cao nguyên.",
+      "wrong_explain": {
+        "0": "Thấp.",
+        "2": "Đỉnh tròn.",
+        "3": "Có đỉnh nhọn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Than đá thuộc nhóm khoáng sản:",
+      "choices": [
+        "Năng lượng",
+        "Kim loại",
+        "Phi kim loại",
+        "Đá quý"
+      ],
+      "answer": 0,
+      "explain": "Nhiên liệu.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Độ cao tuyệt đối được tính từ:",
+      "choices": [
+        "Chân núi",
+        "Tâm Trái Đất",
+        "Đỉnh núi",
+        "Mực nước biển"
+      ],
+      "answer": 3,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Độ cao tương đối.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đỉnh Phan-xi-păng cao 3 143 m. Một điểm trên sườn cao 1 600 m. Chênh lệch (m):",
+      "expr": "1543",
+      "answer": "1543",
+      "explain": "3 143 − 1 600."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chân núi 30 °C, lên cao 2 000 m (giảm 0,6 °C/100 m). Nhiệt độ ở độ cao đó:",
+      "expr": "30-0.6*20",
+      "answer": "18",
+      "explain": "18 °C."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong: sắt, than, đá vôi, đồng, dầu mỏ – có bao nhiêu khoáng sản kim loại?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Sắt, đồng."
+    }
+  ]
+}

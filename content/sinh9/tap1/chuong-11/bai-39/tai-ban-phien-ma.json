@@ -1,0 +1,161 @@
+{
+  "id": "bai-39",
+  "grade": 9,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 9",
+  "chapter": "Chương XI. Di truyền học Mendel. Cơ sở phân tử của hiện tượng di truyền",
+  "lesson": "Bài 39. Tái bản DNA và phiên mã tạo RNA",
+  "section": "",
+  "bookPage": 169,
+  "requirements": [
+    "Mô tả quá trình tái bản DNA, phiên mã; ý nghĩa của nguyên tắc bổ sung."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tái bản DNA là quá trình tạo ra phân tử DNA mới từ DNA ban đầu, diễn ra trong nhân tế bào. Hai mạch DNA tách nhau, mỗi mạch làm khuôn tổng hợp mạch mới theo nguyên tắc bổ sung (A–T, G–C) và nguyên tắc bán bảo toàn."
+    },
+    {
+      "type": "formula",
+      "content": "Sau k lần tái bản, từ 1 DNA tạo 2ᵏ DNA con"
+    },
+    {
+      "type": "text",
+      "content": "Phiên mã là quá trình tổng hợp RNA từ mạch khuôn của gene theo nguyên tắc bổ sung: A–U, T–A, G–C, C–G."
+    },
+    {
+      "type": "text",
+      "content": "Nguyên tắc bổ sung giúp thông tin di truyền được truyền đạt chính xác qua các thế hệ tế bào và cơ thể."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "1 phân tử DNA tái bản 3 lần tạo bao nhiêu DNA con?",
+      "steps": [
+        "2³.",
+        "= 8."
+      ],
+      "expr": "8",
+      "answer": "8"
+    },
+    {
+      "problem": "Dạng phiên mã: mạch khuôn 3′-TAC-5′ phiên mã tạo mRNA 5′-AUG-3′. Đoạn mạch khuôn có 300 nucleotide thì mRNA có bao nhiêu nucleotide?",
+      "steps": [
+        "mRNA bổ sung với mạch khuôn, cùng số nucleotide.",
+        "300."
+      ],
+      "expr": "300",
+      "answer": "300"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tái bản DNA diễn ra theo nguyên tắc:",
+      "choices": [
+        "Bổ sung và bán bảo toàn",
+        "Chỉ bảo toàn",
+        "Ngẫu nhiên",
+        "Không có nguyên tắc"
+      ],
+      "answer": 0,
+      "explain": "Mỗi DNA con có một mạch cũ.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Có."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong phiên mã, A trên mạch khuôn liên kết với:",
+      "choices": [
+        "T",
+        "G",
+        "C",
+        "U"
+      ],
+      "answer": 3,
+      "explain": "A – U.",
+      "wrong_explain": {
+        "0": "Trong tái bản.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Sản phẩm của phiên mã là:",
+      "choices": [
+        "DNA",
+        "Protein",
+        "RNA",
+        "Nhiễm sắc thể"
+      ],
+      "answer": 2,
+      "explain": "RNA.",
+      "wrong_explain": {
+        "0": "Tái bản.",
+        "1": "Dịch mã.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ý nghĩa của tái bản DNA là:",
+      "choices": [
+        "Tạo protein",
+        "Truyền đạt thông tin di truyền qua các thế hệ tế bào",
+        "Tạo năng lượng",
+        "Tiêu hoá thức ăn"
+      ],
+      "answer": 1,
+      "explain": "Ý nghĩa.",
+      "wrong_explain": {
+        "0": "Dịch mã.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "1 DNA tái bản 5 lần tạo bao nhiêu DNA con?",
+      "expr": "32",
+      "answer": "32",
+      "explain": "2⁵."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "3 DNA cùng tái bản 2 lần tạo bao nhiêu DNA con?",
+      "expr": "12",
+      "answer": "12",
+      "explain": "3·4."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mạch khuôn có 150 A. mRNA tạo ra có bao nhiêu U?",
+      "expr": "150",
+      "answer": "150",
+      "explain": "A khuôn – U mRNA."
+    }
+  ]
+}

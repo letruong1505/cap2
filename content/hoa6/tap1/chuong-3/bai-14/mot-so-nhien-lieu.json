@@ -1,0 +1,157 @@
+{
+  "id": "bai-14",
+  "grade": 6,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 6",
+  "chapter": "Chương III. Một số vật liệu, nguyên liệu, nhiên liệu, lương thực – thực phẩm thông dụng",
+  "lesson": "Bài 14. Một số nhiên liệu",
+  "section": "",
+  "bookPage": 50,
+  "requirements": [
+    "Trình bày được tính chất và ứng dụng của một số nhiên liệu; sử dụng nhiên liệu an toàn, hiệu quả, bền vững."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nhiên liệu là những chất cháy được, khi cháy toả nhiệt và phát sáng. Phân loại: nhiên liệu rắn (than, củi), lỏng (xăng, dầu, cồn), khí (khí thiên nhiên, khí gas, biogas)."
+    },
+    {
+      "type": "text",
+      "content": "Sử dụng nhiên liệu hiệu quả: cung cấp đủ oxygen (không khí) cho sự cháy; tăng diện tích tiếp xúc của nhiên liệu với không khí (chẻ nhỏ củi, đập nhỏ than); điều chỉnh lượng nhiên liệu phù hợp."
+    },
+    {
+      "type": "text",
+      "content": "Nhiên liệu hoá thạch (than, dầu, khí) có hạn và gây ô nhiễm; cần tiết kiệm và phát triển nhiên liệu thay thế như xăng sinh học E5, biogas, năng lượng tái tạo."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đốt 1 kg than toả khoảng 27 000 kJ. Đốt 5 kg than toả bao nhiêu kJ?",
+      "steps": [
+        "27 000·5.",
+        "= 135 000 kJ."
+      ],
+      "expr": "27000*5",
+      "answer": "135000"
+    },
+    {
+      "problem": "Dạng tính thành phần xăng E5: xăng E5 chứa 5% ethanol. Trong 40 L xăng E5 có bao nhiêu lít ethanol?",
+      "steps": [
+        "40·5/100.",
+        "= 2 L."
+      ],
+      "expr": "40*5/100",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nhiên liệu nào ở thể khí?",
+      "choices": [
+        "Than đá",
+        "Xăng",
+        "Khí gas",
+        "Củi"
+      ],
+      "answer": 2,
+      "explain": "Khí gas.",
+      "wrong_explain": {
+        "0": "Thể rắn.",
+        "1": "Thể lỏng.",
+        "3": "Thể rắn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Để củi cháy mạnh hơn, ta nên:",
+      "choices": [
+        "Chất đống kín",
+        "Chẻ nhỏ củi và xếp thưa cho thoáng",
+        "Ngâm nước",
+        "Phủ đất lên"
+      ],
+      "answer": 1,
+      "explain": "Tăng tiếp xúc với không khí.",
+      "wrong_explain": {
+        "0": "Thiếu không khí.",
+        "2": "Khó cháy.",
+        "3": "Dập lửa."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nhiên liệu hoá thạch gồm:",
+      "choices": [
+        "Than đá, dầu mỏ, khí thiên nhiên",
+        "Củi, rơm",
+        "Cồn, biogas",
+        "Gió, nắng"
+      ],
+      "answer": 0,
+      "explain": "Hình thành từ xác sinh vật hàng triệu năm.",
+      "wrong_explain": {
+        "1": "Sinh khối.",
+        "2": "Không phải hoá thạch.",
+        "3": "Năng lượng tái tạo."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Xăng sinh học E5 có ưu điểm:",
+      "choices": [
+        "Gây ô nhiễm hơn",
+        "Không cháy được",
+        "Đắt hơn mọi loại",
+        "Giảm phát thải khí độc so với xăng thường"
+      ],
+      "answer": 3,
+      "explain": "Pha ethanol.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không phải ưu điểm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bình gas 12 kg, mỗi ngày dùng 0,4 kg. Dùng được bao nhiêu ngày?",
+      "expr": "30",
+      "answer": "30",
+      "explain": "12 : 0,4."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Xe máy đi 50 km hết 1 lít xăng. Đi 150 km hết bao nhiêu lít?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "3 lít."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong các chất: than, cồn, nước, củi, khí biogas – có bao nhiêu nhiên liệu?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Trừ nước."
+    }
+  ]
+}

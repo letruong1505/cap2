@@ -1,0 +1,161 @@
+{
+  "id": "bai-40",
+  "grade": 9,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 9",
+  "chapter": "Chương XI. Di truyền học Mendel. Cơ sở phân tử của hiện tượng di truyền",
+  "lesson": "Bài 40. Dịch mã và mối quan hệ từ gene đến tính trạng",
+  "section": "",
+  "bookPage": 173,
+  "requirements": [
+    "Mô tả quá trình dịch mã; mã di truyền; mối quan hệ gene – mRNA – protein – tính trạng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dịch mã là quá trình tổng hợp chuỗi polypeptide (protein) từ mRNA, diễn ra ở ribosome trong tế bào chất. tRNA vận chuyển amino acid, đối mã (anticodon) khớp với mã bộ ba (codon) trên mRNA theo nguyên tắc bổ sung."
+    },
+    {
+      "type": "text",
+      "content": "Mã di truyền là mã bộ ba: ba nucleotide liên tiếp trên mRNA mã hoá một amino acid. Có 64 bộ ba, trong đó AUG là bộ ba mở đầu, UAA, UAG, UGA là bộ ba kết thúc (không mã hoá amino acid)."
+    },
+    {
+      "type": "formula",
+      "content": "Gene (DNA) → mRNA → protein → tính trạng"
+    },
+    {
+      "type": "text",
+      "content": "Số amino acid trong chuỗi polypeptide hoàn chỉnh = (số nucleotide mRNA : 3) − 2 (bỏ bộ ba kết thúc và amino acid mở đầu)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "mRNA có 900 nucleotide. Có bao nhiêu bộ ba?",
+      "steps": [
+        "900 : 3.",
+        "= 300 bộ ba."
+      ],
+      "expr": "900/3",
+      "answer": "300"
+    },
+    {
+      "problem": "Dạng tính amino acid: mRNA 900 nucleotide tạo chuỗi polypeptide hoàn chỉnh có bao nhiêu amino acid?",
+      "steps": [
+        "300 − 2.",
+        "= 298."
+      ],
+      "expr": "300-2",
+      "answer": "298"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Dịch mã diễn ra ở:",
+      "choices": [
+        "Nhân tế bào",
+        "Ti thể",
+        "Ribosome",
+        "Màng tế bào"
+      ],
+      "answer": 2,
+      "explain": "Ribosome.",
+      "wrong_explain": {
+        "0": "Phiên mã.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Mã di truyền là mã:",
+      "choices": [
+        "Bộ đôi",
+        "Bộ ba",
+        "Bộ bốn",
+        "Đơn"
+      ],
+      "answer": 1,
+      "explain": "Ba nucleotide.",
+      "wrong_explain": {
+        "0": "Không đủ.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Bộ ba mở đầu là:",
+      "choices": [
+        "AUG",
+        "UAA",
+        "UAG",
+        "UGA"
+      ],
+      "answer": 0,
+      "explain": "Mã hoá methionine.",
+      "wrong_explain": {
+        "1": "Kết thúc.",
+        "2": "Kết thúc.",
+        "3": "Kết thúc."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Phân tử vận chuyển amino acid đến ribosome là:",
+      "choices": [
+        "mRNA",
+        "rRNA",
+        "DNA",
+        "tRNA"
+      ],
+      "answer": 3,
+      "explain": "tRNA.",
+      "wrong_explain": {
+        "0": "Mang mã.",
+        "1": "Cấu tạo ribosome.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có bao nhiêu bộ ba mã di truyền?",
+      "expr": "64",
+      "answer": "64",
+      "explain": "4³."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "mRNA có 1 500 nucleotide. Số bộ ba:",
+      "expr": "500",
+      "answer": "500",
+      "explain": "1 500 : 3."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có bao nhiêu bộ ba kết thúc?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "UAA, UAG, UGA."
+    }
+  ]
+}

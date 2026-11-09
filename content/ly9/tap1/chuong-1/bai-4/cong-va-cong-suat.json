@@ -1,0 +1,150 @@
+{
+  "id": "bai-4",
+  "grade": 9,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 9",
+  "chapter": "Chương I. Năng lượng cơ học",
+  "lesson": "Bài 4. Công và công suất",
+  "section": "",
+  "bookPage": 21,
+  "requirements": [
+    "Nêu được công cơ học, công suất; tính được công, công suất trong trường hợp đơn giản."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Công cơ học được thực hiện khi có lực tác dụng vào vật và làm vật dịch chuyển theo phương của lực."
+    },
+    {
+      "type": "formula",
+      "content": "A = F·s   (F: N; s: m; A: J)"
+    },
+    {
+      "type": "text",
+      "content": "Công suất là công thực hiện được trong một đơn vị thời gian, đặc trưng cho tốc độ thực hiện công."
+    },
+    {
+      "type": "formula",
+      "content": "P = A/t   (A: J; t: s; P: W);  1 kW = 1 000 W"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Kéo vật với lực 50 N đi được 10 m theo phương của lực. Công?",
+      "steps": [
+        "A = 50·10.",
+        "= 500 J."
+      ],
+      "expr": "50*10",
+      "answer": "500"
+    },
+    {
+      "problem": "Dạng công suất: thực hiện công 3 000 J trong 1 phút. Công suất?",
+      "steps": [
+        "P = 3 000 : 60.",
+        "= 50 W."
+      ],
+      "expr": "3000/60",
+      "answer": "50"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn vị của công suất là:",
+      "choices": [
+        "Jun (J)",
+        "Oát (W)",
+        "Niutơn (N)",
+        "Mét (m)"
+      ],
+      "answer": 1,
+      "explain": "W.",
+      "wrong_explain": {
+        "0": "Đơn vị công.",
+        "2": "Lực.",
+        "3": "Chiều dài."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trường hợp nào có công cơ học?",
+      "choices": [
+        "Người kéo xe chuyển động trên đường",
+        "Người giữ tạ đứng yên",
+        "Học sinh ngồi đọc sách",
+        "Quyển sách nằm trên bàn"
+      ],
+      "answer": 0,
+      "explain": "Lực làm vật dịch chuyển.",
+      "wrong_explain": {
+        "1": "Không dịch chuyển.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Công suất đặc trưng cho:",
+      "choices": [
+        "Độ lớn lực",
+        "Quãng đường",
+        "Khối lượng",
+        "Tốc độ thực hiện công"
+      ],
+      "answer": 3,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lực 200 N kéo vật đi 15 m. Công (J):",
+      "expr": "3000",
+      "answer": "3000",
+      "explain": "200·15."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nâng vật 10 kg lên cao 2 m. Công tối thiểu (J):",
+      "expr": "200",
+      "answer": "200",
+      "explain": "10·10·2."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Máy thực hiện công 12 000 J trong 40 s. Công suất (W):",
+      "expr": "300",
+      "answer": "300",
+      "explain": "12 000 : 40."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Động cơ 2 kW hoạt động 10 s thực hiện công (J):",
+      "expr": "20000",
+      "answer": "20000",
+      "explain": "2 000·10."
+    }
+  ]
+}

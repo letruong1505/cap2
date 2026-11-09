@@ -1,0 +1,169 @@
+{
+  "id": "bai-1",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương I. Tập hợp các số tự nhiên",
+  "lesson": "Bài 1. Tập hợp",
+  "section": "",
+  "bookPage": 5,
+  "requirements": [
+    "Nhận biết tập hợp và các phần tử của nó; sử dụng kí hiệu ∈, ∉.",
+    "Mô tả tập hợp bằng cách liệt kê phần tử hoặc chỉ ra tính chất đặc trưng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tập hợp là một khái niệm cơ bản; người ta thường đặt tên tập hợp bằng chữ cái in hoa A, B, C,… Các phần tử của tập hợp được viết trong dấu { }, cách nhau bởi dấu \";\". Mỗi phần tử được liệt kê một lần, thứ tự liệt kê tuỳ ý."
+    },
+    {
+      "type": "formula",
+      "content": "x ∈ A (x thuộc A);   y ∉ A (y không thuộc A)"
+    },
+    {
+      "type": "text",
+      "content": "Có hai cách mô tả một tập hợp: liệt kê các phần tử, ví dụ A = {0; 1; 2; 3}; hoặc nêu tính chất đặc trưng, ví dụ A = {x | x là số tự nhiên, x < 4}."
+    },
+    {
+      "type": "text",
+      "content": "Tập hợp các số tự nhiên kí hiệu là ℕ = {0; 1; 2; 3; …}; tập hợp các số tự nhiên khác 0 kí hiệu là ℕ* = {1; 2; 3; …}."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho A = {x ∈ ℕ | 3 < x ≤ 9}. Tập A có bao nhiêu phần tử?",
+      "steps": [
+        "Liệt kê: A = {4; 5; 6; 7; 8; 9}.",
+        "A có 6 phần tử."
+      ],
+      "expr": "9-3",
+      "answer": "6"
+    },
+    {
+      "problem": "Dạng đếm số phần tử của dãy số cách đều: tập B = {10; 12; 14; …; 50} có bao nhiêu phần tử?",
+      "steps": [
+        "Số phần tử = (số cuối − số đầu) : khoảng cách + 1.",
+        "(50 − 10) : 2 + 1 = 21."
+      ],
+      "expr": "(50-10)/2+1",
+      "answer": "21"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Cho A = {2; 4; 6; 8}. Khẳng định nào đúng?",
+      "choices": [
+        "5 ∈ A",
+        "8 ∉ A",
+        "4 ∉ A",
+        "6 ∈ A"
+      ],
+      "answer": 3,
+      "explain": "A gồm các phần tử 2, 4, 6, 8 nên 6 ∈ A.",
+      "wrong_explain": {
+        "0": "5 không có trong danh sách phần tử của A.",
+        "1": "8 là phần tử của A.",
+        "2": "4 là phần tử của A."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tập hợp các số tự nhiên khác 0 được kí hiệu là:",
+      "choices": [
+        "ℕ",
+        "ℤ",
+        "ℕ*",
+        "{0}"
+      ],
+      "answer": 2,
+      "explain": "ℕ* = {1; 2; 3; …}.",
+      "wrong_explain": {
+        "0": "ℕ có chứa cả số 0.",
+        "1": "ℤ là tập hợp số nguyên.",
+        "3": "Đây là tập chỉ gồm số 0."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cách viết nào đúng để mô tả tập M các chữ cái trong từ \"TOÁN\"?",
+      "choices": [
+        "M = (T; O; A; N)",
+        "M = {T; O; A; N}",
+        "M = {T, O, A, N, T}",
+        "M = [T; O; A; N]"
+      ],
+      "answer": 1,
+      "explain": "Phần tử viết trong { }, cách nhau bởi dấu \";\", mỗi phần tử một lần.",
+      "wrong_explain": {
+        "0": "Phải dùng dấu ngoặc nhọn { }.",
+        "2": "Mỗi phần tử chỉ liệt kê một lần.",
+        "3": "Phải dùng dấu ngoặc nhọn { }."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tập hợp các số tự nhiên nhỏ hơn 7 có bao nhiêu phần tử?",
+      "expr": "7",
+      "answer": "7",
+      "explain": "{0; 1; 2; 3; 4; 5; 6} có 7 phần tử."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho B = {x ∈ ℕ* | x ≤ 12}. B có bao nhiêu phần tử?",
+      "expr": "12",
+      "answer": "12",
+      "explain": "B = {1; 2; …; 12} có 12 phần tử."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tập hợp các số tự nhiên chẵn từ 0 đến 20 có bao nhiêu phần tử?",
+      "expr": "20/2+1",
+      "answer": "11",
+      "explain": "{0; 2; …; 20}: 20 : 2 + 1 = 11 phần tử."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tập hợp các số tự nhiên lẻ có hai chữ số có bao nhiêu phần tử?",
+      "expr": "(99-11)/2+1",
+      "answer": "45",
+      "explain": "{11; 13; …; 99}: (99 − 11) : 2 + 1 = 45."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính tổng các phần tử của tập C = {x ∈ ℕ | 5 ≤ x ≤ 9}.",
+      "expr": "5+6+7+8+9",
+      "answer": "35",
+      "explain": "5 + 6 + 7 + 8 + 9 = 35."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tập D = {5; 10; 15; …; 100} có bao nhiêu phần tử?",
+      "expr": "(100-5)/5+1",
+      "answer": "20",
+      "explain": "(100 − 5) : 5 + 1 = 20."
+    }
+  ]
+}

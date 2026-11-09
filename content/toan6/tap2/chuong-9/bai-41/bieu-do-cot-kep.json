@@ -1,0 +1,153 @@
+{
+  "id": "bai-41",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 2",
+  "chapter": "Chương IX. Dữ liệu và xác suất thực nghiệm",
+  "lesson": "Bài 41. Biểu đồ cột kép",
+  "section": "",
+  "bookPage": 82,
+  "requirements": [
+    "Đọc và vẽ biểu đồ cột kép; so sánh hai bộ dữ liệu."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Biểu đồ cột kép dùng để so sánh hai bộ dữ liệu cùng loại. Mỗi đối tượng trên trục ngang có hai cột đặt sát nhau, phân biệt bằng màu sắc theo chú thích."
+    },
+    {
+      "type": "text",
+      "content": "Vẽ biểu đồ cột kép tương tự biểu đồ cột, thêm chú thích màu cho hai bộ dữ liệu."
+    },
+    {
+      "type": "text",
+      "content": "Đọc biểu đồ cột kép: so sánh hai cột của cùng một đối tượng, hoặc so sánh các cột cùng màu."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Số học sinh giỏi lớp 6A: kì I 12, kì II 15. Lớp 6B: kì I 10, kì II 14. Tổng học sinh giỏi kì II hai lớp?",
+      "steps": [
+        "15 + 14.",
+        "= 29."
+      ],
+      "expr": "15+14",
+      "answer": "29"
+    },
+    {
+      "problem": "Dạng so sánh mức tăng: lớp nào tăng nhiều hơn và tăng bao nhiêu? Tính mức tăng của 6B.",
+      "steps": [
+        "6A tăng 3, 6B tăng 14 − 10 = 4.",
+        "6B tăng nhiều hơn: 4 bạn."
+      ],
+      "expr": "14-10",
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Biểu đồ cột kép dùng để:",
+      "choices": [
+        "So sánh hai bộ dữ liệu cùng loại",
+        "Biểu diễn một số duy nhất",
+        "Thay bảng chữ",
+        "Biểu diễn hình ảnh"
+      ],
+      "answer": 0,
+      "explain": "Hai cột cạnh nhau.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Đó là biểu đồ tranh."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong biểu đồ cột kép, để phân biệt hai bộ dữ liệu ta dùng:",
+      "choices": [
+        "Độ rộng khác nhau",
+        "Tên trục",
+        "Số thứ tự",
+        "Màu sắc và chú thích"
+      ],
+      "answer": 3,
+      "explain": "Chú thích màu.",
+      "wrong_explain": {
+        "0": "Cột cùng rộng.",
+        "1": "Không đủ.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nam: Toán 8, Văn 7; Nữ: Toán 9, Văn 8. Tổng điểm Toán của nam và nữ là:",
+      "expr": "17",
+      "answer": "17",
+      "explain": "17."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số cây trồng năm 2022: lớp A 30, lớp B 25; năm 2023: A 35, B 40. Tổng năm 2023:",
+      "expr": "75",
+      "answer": "75",
+      "explain": "75."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Theo số liệu trên, lớp B tăng bao nhiêu cây?",
+      "expr": "15",
+      "answer": "15",
+      "explain": "15."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tổng số cây cả hai năm của lớp A là:",
+      "expr": "65",
+      "answer": "65",
+      "explain": "65."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Sản lượng (tấn) xã X: lúa 120, ngô 60; xã Y: lúa 100, ngô 90. Tổng sản lượng ngô hai xã là:",
+      "expr": "150",
+      "answer": "150",
+      "explain": "150 tấn."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Xã nào có tổng sản lượng lớn hơn và lớn hơn bao nhiêu tấn? Nhập số tấn chênh lệch.",
+      "expr": "10",
+      "answer": "10",
+      "explain": "X: 180, Y: 190; Y hơn 10 tấn."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Số bạn đi xe đạp: nam 15, nữ 12; đi bộ: nam 5, nữ 8. Tổng số bạn đi bộ là:",
+      "expr": "13",
+      "answer": "13",
+      "explain": "13."
+    }
+  ]
+}

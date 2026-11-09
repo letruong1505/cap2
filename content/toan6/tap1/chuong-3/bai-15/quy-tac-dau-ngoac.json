@@ -1,0 +1,153 @@
+{
+  "id": "bai-15",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương III. Số nguyên",
+  "lesson": "Bài 15. Quy tắc dấu ngoặc",
+  "section": "",
+  "bookPage": 67,
+  "requirements": [
+    "Vận dụng quy tắc bỏ dấu ngoặc để tính hợp lí."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khi bỏ dấu ngoặc có dấu \"+\" đứng trước, giữ nguyên dấu các số hạng trong ngoặc: a + (b − c) = a + b − c."
+    },
+    {
+      "type": "text",
+      "content": "Khi bỏ dấu ngoặc có dấu \"−\" đứng trước, phải đổi dấu tất cả các số hạng trong ngoặc: dấu \"+\" thành \"−\", dấu \"−\" thành \"+\": a − (b − c) = a − b + c."
+    },
+    {
+      "type": "text",
+      "content": "Trong một tổng đại số, có thể đổi chỗ các số hạng kèm theo dấu của chúng và nhóm các số hạng tuỳ ý."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính (56 − 27) − (11 − 27).",
+      "steps": [
+        "Bỏ ngoặc: 56 − 27 − 11 + 27.",
+        "= 56 − 11 = 45."
+      ],
+      "expr": "56-27-11+27",
+      "answer": "45"
+    },
+    {
+      "problem": "Dạng tính nhanh: 768 − 39 − (68 − 39).",
+      "steps": [
+        "Bỏ ngoặc: 768 − 39 − 68 + 39.",
+        "= 768 − 68 = 700."
+      ],
+      "expr": "768-68",
+      "answer": "700"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Bỏ dấu ngoặc trong a − (b + c) được:",
+      "choices": [
+        "a − b + c",
+        "a + b − c",
+        "a − b − c",
+        "a + b + c"
+      ],
+      "answer": 2,
+      "explain": "Dấu \"−\" đứng trước: đổi dấu mọi số hạng.",
+      "wrong_explain": {
+        "0": "Phải đổi dấu cả c.",
+        "1": "Phải đổi dấu cả b.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Bỏ dấu ngoặc trong a + (b − c) được:",
+      "choices": [
+        "a − b + c",
+        "a + b − c",
+        "a − b − c",
+        "a + b + c"
+      ],
+      "answer": 1,
+      "explain": "Giữ nguyên dấu.",
+      "wrong_explain": {
+        "0": "Dấu \"+\" đứng trước thì giữ nguyên.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 35 − (15 + 20).",
+      "expr": "0",
+      "answer": "0",
+      "explain": "35 − 15 − 20 = 0."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (−24) − (16 − 40).",
+      "expr": "-24-16+40",
+      "answer": "0",
+      "explain": "= 0."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 125 − (25 − 70).",
+      "expr": "125-25+70",
+      "answer": "170",
+      "explain": "= 170."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (27 + 65) + (346 − 27 − 65).",
+      "expr": "346",
+      "answer": "346",
+      "explain": "= 346."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (42 − 69 + 17) − (42 + 17).",
+      "expr": "-69",
+      "answer": "-69",
+      "explain": "42 − 69 + 17 − 42 − 17 = −69."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính −(−12 + 30) + 18.",
+      "expr": "12-30+18",
+      "answer": "0",
+      "explain": "= 0."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm x biết 25 − (x + 5) = −15.",
+      "expr": "25-5+15",
+      "answer": "35",
+      "explain": "20 − x = −15, x = 35."
+    }
+  ]
+}

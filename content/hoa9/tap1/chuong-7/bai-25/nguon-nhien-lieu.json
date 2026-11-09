@@ -1,0 +1,157 @@
+{
+  "id": "bai-25",
+  "grade": 9,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 9",
+  "chapter": "Chương VII. Giới thiệu về chất hữu cơ",
+  "lesson": "Bài 25. Nguồn nhiên liệu",
+  "section": "",
+  "bookPage": 114,
+  "requirements": [
+    "Nêu được khái niệm nhiên liệu, phân loại; dầu mỏ, khí thiên nhiên; sử dụng nhiên liệu hiệu quả, an toàn."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nhiên liệu là chất cháy được, khi cháy toả nhiệt và phát sáng, dùng làm nguồn năng lượng. Phân loại: rắn (than, gỗ), lỏng (xăng, dầu), khí (khí thiên nhiên, khí mỏ dầu, biogas)."
+    },
+    {
+      "type": "text",
+      "content": "Dầu mỏ là hỗn hợp nhiều hydrocarbon; qua chưng cất tách được khí, xăng, dầu hoả, dầu diesel, dầu mazut, nhựa đường. Khí thiên nhiên và khí mỏ dầu chứa chủ yếu methane."
+    },
+    {
+      "type": "text",
+      "content": "Sử dụng nhiên liệu hiệu quả: cung cấp đủ không khí, tăng diện tích tiếp xúc, điều chỉnh lượng nhiên liệu; nhiên liệu hoá thạch gây ô nhiễm cần sử dụng tiết kiệm, phát triển nhiên liệu sạch (xăng sinh học, hydrogen)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đốt 1 m³ khí thiên nhiên toả 36 000 kJ. Đốt 5 m³ toả bao nhiêu kJ?",
+      "steps": [
+        "36 000·5.",
+        "= 180 000 kJ."
+      ],
+      "expr": "36000*5",
+      "answer": "180000"
+    },
+    {
+      "problem": "Dạng tỉ lệ thành phần: khí thiên nhiên chứa 95% methane. 200 m³ chứa bao nhiêu m³ methane?",
+      "steps": [
+        "200·95/100.",
+        "= 190 m³."
+      ],
+      "expr": "200*95/100",
+      "answer": "190"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thành phần chính của khí thiên nhiên là:",
+      "choices": [
+        "Ethylene",
+        "Methane",
+        "Oxygen",
+        "Nitrogen"
+      ],
+      "answer": 1,
+      "explain": "CH₄.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phương pháp tách các sản phẩm từ dầu mỏ là:",
+      "choices": [
+        "Chưng cất phân đoạn",
+        "Lọc",
+        "Cô cạn",
+        "Điện phân"
+      ],
+      "answer": 0,
+      "explain": "Dựa vào nhiệt độ sôi.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nhiên liệu nào thân thiện môi trường hơn?",
+      "choices": [
+        "Than đá",
+        "Dầu mazut",
+        "Xăng thường",
+        "Xăng sinh học E5"
+      ],
+      "answer": 3,
+      "explain": "Giảm phát thải.",
+      "wrong_explain": {
+        "0": "Ô nhiễm.",
+        "1": "Ô nhiễm.",
+        "2": "Hơn E5."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Để nhiên liệu cháy hoàn toàn cần:",
+      "choices": [
+        "Đậy kín",
+        "Đổ thêm nước",
+        "Cung cấp đủ không khí (oxygen)",
+        "Giảm diện tích tiếp xúc"
+      ],
+      "answer": 2,
+      "explain": "Đủ oxygen.",
+      "wrong_explain": {
+        "0": "Thiếu oxygen.",
+        "1": "Không.",
+        "3": "Ngược lại."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bình gas 12 kg, mỗi ngày dùng 0,3 kg. Dùng được bao nhiêu ngày?",
+      "expr": "40",
+      "answer": "40",
+      "explain": "12 : 0,3."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong: than, xăng, biogas, dầu hoả, khí thiên nhiên – có bao nhiêu nhiên liệu khí?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Biogas, khí thiên nhiên."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Từ 100 tấn dầu mỏ thu 20% xăng. Khối lượng xăng (tấn):",
+      "expr": "20",
+      "answer": "20",
+      "explain": "100·20%."
+    }
+  ]
+}

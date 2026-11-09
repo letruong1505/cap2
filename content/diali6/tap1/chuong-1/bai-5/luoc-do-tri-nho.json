@@ -1,0 +1,146 @@
+{
+  "id": "bai-5",
+  "grade": 6,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 6",
+  "chapter": "Chương 1. Bản đồ – phương tiện thể hiện bề mặt Trái Đất",
+  "lesson": "Bài 5. Lược đồ trí nhớ",
+  "section": "",
+  "bookPage": 112,
+  "requirements": [
+    "Nêu được khái niệm lược đồ trí nhớ; vẽ được lược đồ trí nhớ thể hiện đường đi."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Lược đồ trí nhớ là thông tin không gian về thế giới được giữ lại trong trí óc con người. Mỗi người có lược đồ trí nhớ riêng về những nơi quen thuộc."
+    },
+    {
+      "type": "text",
+      "content": "Vẽ lược đồ trí nhớ đường đi: xác định điểm xuất phát và điểm đến; vẽ các đối tượng chính trên đường (ngã ba, ngã tư, công trình, cây cối…); ghi hướng, khoảng cách ước lượng."
+    },
+    {
+      "type": "text",
+      "content": "Lược đồ trí nhớ giúp định hướng, tìm đường, mô tả một khu vực cho người khác."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Từ nhà đến trường đi 300 m đến ngã tư, rẽ trái đi thêm 450 m. Tổng quãng đường?",
+      "steps": [
+        "300 + 450.",
+        "= 750 m."
+      ],
+      "expr": "300+450",
+      "answer": "750"
+    },
+    {
+      "problem": "Dạng ước lượng thời gian: đi bộ 750 m với tốc độ 75 m/phút mất bao nhiêu phút?",
+      "steps": [
+        "750 : 75.",
+        "= 10 phút."
+      ],
+      "expr": "750/75",
+      "answer": "10"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Lược đồ trí nhớ là:",
+      "choices": [
+        "Bản đồ in sẵn",
+        "Ảnh vệ tinh",
+        "Quả Địa Cầu",
+        "Thông tin không gian được giữ lại trong trí óc con người"
+      ],
+      "answer": 3,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi vẽ lược đồ trí nhớ đường đi, cần thể hiện:",
+      "choices": [
+        "Toàn bộ thế giới",
+        "Chỉ màu sắc",
+        "Điểm xuất phát, điểm đến và các đối tượng chính trên đường",
+        "Tên các nước"
+      ],
+      "answer": 2,
+      "explain": "Các yếu tố chính.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Lược đồ trí nhớ của mỗi người:",
+      "choices": [
+        "Giống hệt nhau",
+        "Khác nhau, tuỳ trải nghiệm",
+        "Không thay đổi",
+        "Luôn chính xác tuyệt đối"
+      ],
+      "answer": 1,
+      "explain": "Cá nhân.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Có thể thay đổi.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đi từ nhà 200 m, rẽ phải 350 m, rẽ trái 150 m. Tổng quãng đường (m):",
+      "expr": "700",
+      "answer": "700",
+      "explain": "200 + 350 + 150."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Quãng đường 1,2 km đi xe đạp 200 m/phút mất bao nhiêu phút?",
+      "expr": "6",
+      "answer": "6",
+      "explain": "1 200 : 200."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trên đường đến trường có 3 ngã tư và 2 ngã ba. Tổng số nút giao:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "5."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đi 400 m mất 5 phút. Tốc độ (m/phút):",
+      "expr": "80",
+      "answer": "80",
+      "explain": "400 : 5."
+    }
+  ]
+}

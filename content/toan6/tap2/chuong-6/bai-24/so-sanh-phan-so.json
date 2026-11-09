@@ -1,0 +1,168 @@
+{
+  "id": "bai-24",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 2",
+  "chapter": "Chương VI. Phân số",
+  "lesson": "Bài 24. So sánh phân số. Hỗn số dương",
+  "section": "",
+  "bookPage": 9,
+  "requirements": [
+    "Quy đồng mẫu nhiều phân số; so sánh hai phân số; nhận biết hỗn số dương."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Quy đồng mẫu: tìm mẫu chung (thường là BCNN của các mẫu dương), tìm thừa số phụ của mỗi mẫu, nhân tử và mẫu với thừa số phụ tương ứng."
+    },
+    {
+      "type": "text",
+      "content": "So sánh hai phân số cùng mẫu dương: phân số nào có tử lớn hơn thì lớn hơn. Khác mẫu: viết chúng dưới dạng cùng mẫu dương rồi so sánh tử."
+    },
+    {
+      "type": "text",
+      "content": "Phân số lớn hơn 0 gọi là phân số dương; nhỏ hơn 0 gọi là phân số âm. Phân số âm luôn nhỏ hơn phân số dương."
+    },
+    {
+      "type": "text",
+      "content": "Hỗn số dương: phân số dương lớn hơn 1 có thể viết dưới dạng a b/c (phần nguyên a và phần phân số b/c < 1). Ví dụ 7/3 = 2 1/3."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Viết hỗn số 3 2/5 dưới dạng phân số. Tử số là bao nhiêu?",
+      "steps": [
+        "3 2/5 = (3·5 + 2)/5.",
+        "= 17/5."
+      ],
+      "expr": "3*5+2",
+      "answer": "17"
+    },
+    {
+      "problem": "Dạng so sánh bằng quy đồng: 5/6 và 7/9, quy đồng mẫu 18 thì tử của 5/6 là bao nhiêu?",
+      "steps": [
+        "5/6 = 15/18; 7/9 = 14/18.",
+        "15 > 14 nên 5/6 > 7/9."
+      ],
+      "expr": "5*3",
+      "answer": "15"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "So sánh 3/7 và 5/7:",
+      "choices": [
+        "3/7 > 5/7",
+        "3/7 = 5/7",
+        "3/7 < 5/7",
+        "Không so sánh được"
+      ],
+      "answer": 2,
+      "explain": "Cùng mẫu dương, so sánh tử.",
+      "wrong_explain": {
+        "0": "Cùng mẫu, tử nhỏ hơn thì nhỏ hơn.",
+        "1": "Tử khác nhau.",
+        "3": "So sánh được."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phân số nào lớn nhất?",
+      "choices": [
+        "2/3",
+        "3/4",
+        "5/12",
+        "1/2"
+      ],
+      "answer": 1,
+      "explain": "Quy đồng mẫu 12: 9/12 lớn nhất.",
+      "wrong_explain": {
+        "0": "2/3 = 8/12 < 9/12.",
+        "2": "Nhỏ hơn.",
+        "3": "6/12 < 9/12."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Viết 11/4 dưới dạng hỗn số:",
+      "choices": [
+        "2 3/4",
+        "3 2/4",
+        "2 1/4",
+        "1 3/4"
+      ],
+      "answer": 0,
+      "explain": "11 = 2·4 + 3.",
+      "wrong_explain": {
+        "1": "3·4 = 12 > 11.",
+        "2": "2·4 + 1 = 9.",
+        "3": "1·4 + 3 = 7."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mẫu chung nhỏ nhất của 1/4, 5/6, 3/8 là:",
+      "expr": "24",
+      "answer": "24",
+      "explain": "BCNN(4, 6, 8) = 24."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Quy đồng 2/3 với mẫu 15 thì tử là:",
+      "expr": "2*5",
+      "answer": "10",
+      "explain": "2/3 = 10/15."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Viết 4 1/3 dưới dạng phân số. Tử số là:",
+      "expr": "4*3+1",
+      "answer": "13",
+      "explain": "13/3."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phần nguyên của hỗn số khi viết 23/5 là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "23 = 4·5 + 3."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có bao nhiêu phân số dạng x/9 với 1/3 < x/9 < 2/3 (x ∈ ℕ)?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "3/9 < x/9 < 6/9 ⇒ x ∈ {4; 5}."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm số nguyên x lớn nhất để x/5 < 3/2.",
+      "expr": "7",
+      "answer": "7",
+      "explain": "x/5 < 15/10 ⇔ 2x < 15 ⇒ x ≤ 7."
+    }
+  ]
+}

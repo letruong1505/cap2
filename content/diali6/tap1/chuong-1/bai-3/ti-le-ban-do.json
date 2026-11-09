@@ -1,0 +1,150 @@
+{
+  "id": "bai-3",
+  "grade": 6,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 6",
+  "chapter": "Chương 1. Bản đồ – phương tiện thể hiện bề mặt Trái Đất",
+  "lesson": "Bài 3. Tỉ lệ bản đồ. Tính khoảng cách thực tế dựa vào tỉ lệ bản đồ",
+  "section": "",
+  "bookPage": 106,
+  "requirements": [
+    "Nêu được ý nghĩa của tỉ lệ bản đồ; tính được khoảng cách thực tế dựa vào tỉ lệ số và tỉ lệ thước."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tỉ lệ bản đồ cho biết mức độ thu nhỏ khoảng cách được vẽ trên bản đồ so với thực tế. Có hai dạng: tỉ lệ số (ví dụ 1 : 100 000) và tỉ lệ thước."
+    },
+    {
+      "type": "text",
+      "content": "Tỉ lệ 1 : 100 000 nghĩa là 1 cm trên bản đồ ứng với 100 000 cm (1 km) ngoài thực tế. Mẫu số càng nhỏ thì tỉ lệ càng lớn, bản đồ càng chi tiết."
+    },
+    {
+      "type": "formula",
+      "content": "Khoảng cách thực tế = khoảng cách trên bản đồ × mẫu số tỉ lệ"
+    },
+    {
+      "type": "text",
+      "content": "Phân loại: bản đồ tỉ lệ lớn (trên 1 : 200 000), trung bình (1 : 200 000 đến 1 : 1 000 000), nhỏ (dưới 1 : 1 000 000)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Bản đồ tỉ lệ 1 : 200 000, hai điểm cách nhau 5 cm. Khoảng cách thực tế bao nhiêu km?",
+      "steps": [
+        "5·200 000 = 1 000 000 cm.",
+        "= 10 km."
+      ],
+      "expr": "5*200000/100000",
+      "answer": "10"
+    },
+    {
+      "problem": "Dạng tìm khoảng cách trên bản đồ: thực tế 30 km, bản đồ tỉ lệ 1 : 500 000. Trên bản đồ bao nhiêu cm?",
+      "steps": [
+        "30 km = 3 000 000 cm.",
+        "3 000 000 : 500 000 = 6 cm."
+      ],
+      "expr": "3000000/500000",
+      "answer": "6"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tỉ lệ 1 : 50 000 cho biết 1 cm trên bản đồ ứng với:",
+      "choices": [
+        "50 km",
+        "5 km",
+        "50 m",
+        "500 m ngoài thực tế"
+      ],
+      "answer": 3,
+      "explain": "50 000 cm = 500 m.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Bản đồ nào có tỉ lệ lớn nhất?",
+      "choices": [
+        "1 : 100 000",
+        "1 : 1 000 000",
+        "1 : 10 000",
+        "1 : 5 000 000"
+      ],
+      "answer": 2,
+      "explain": "Mẫu số nhỏ nhất.",
+      "wrong_explain": {
+        "0": "Nhỏ hơn.",
+        "1": "Nhỏ hơn.",
+        "3": "Nhỏ nhất."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Bản đồ tỉ lệ lớn thể hiện:",
+      "choices": [
+        "Ít chi tiết hơn",
+        "Chi tiết hơn",
+        "Diện tích lớn hơn",
+        "Không có kí hiệu"
+      ],
+      "answer": 1,
+      "explain": "Mức độ chi tiết.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "2": "Không nhất thiết.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tỉ lệ 1 : 100 000, đo được 7 cm. Thực tế (km):",
+      "expr": "7",
+      "answer": "7",
+      "explain": "7·1 km."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tỉ lệ 1 : 1 000 000, đo được 3,5 cm. Thực tế (km):",
+      "expr": "35",
+      "answer": "35",
+      "explain": "3,5·10 km."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tỉ lệ 1 : 25 000, đo được 8 cm. Thực tế (m):",
+      "expr": "2000",
+      "answer": "2000",
+      "explain": "8·250 m."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thực tế 12 km, bản đồ 1 : 300 000. Trên bản đồ (cm):",
+      "expr": "4",
+      "answer": "4",
+      "explain": "1 200 000 : 300 000."
+    }
+  ]
+}

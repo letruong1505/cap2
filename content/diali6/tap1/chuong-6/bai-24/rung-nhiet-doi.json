@@ -1,0 +1,161 @@
+{
+  "id": "bai-24",
+  "grade": 6,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 6",
+  "chapter": "Chương 6. Đất và sinh vật trên Trái Đất",
+  "lesson": "Bài 24. Rừng nhiệt đới",
+  "section": "",
+  "bookPage": 173,
+  "requirements": [
+    "Trình bày được đặc điểm của rừng nhiệt đới; sự cần thiết phải bảo vệ rừng nhiệt đới."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Rừng nhiệt đới phân bố ở vùng nội chí tuyến (giữa hai chí tuyến), nơi có khí hậu nóng, ẩm, mưa nhiều."
+    },
+    {
+      "type": "text",
+      "content": "Đặc điểm: rừng có nhiều tầng (thường 4–5 tầng), thực vật rất phong phú (cây gỗ lớn, dây leo, phong lan, tầm gửi); động vật đa dạng, nhiều loài sống trên cây, leo trèo giỏi."
+    },
+    {
+      "type": "text",
+      "content": "Có hai kiểu chính: rừng mưa nhiệt đới (mưa quanh năm, ví dụ A-ma-dôn) và rừng nhiệt đới gió mùa (có mùa khô, cây rụng lá vào mùa khô)."
+    },
+    {
+      "type": "text",
+      "content": "Rừng nhiệt đới đang bị suy giảm nhanh do khai thác gỗ, đốt rừng làm rẫy, mở rộng đất nông nghiệp. Cần bảo vệ rừng: trồng rừng, khai thác hợp lí, xử phạt vi phạm."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Rừng A-ma-dôn rộng khoảng 5,5 triệu km², mỗi năm mất khoảng 0,2%. Mỗi năm mất bao nhiêu km²?",
+      "steps": [
+        "5 500 000·0,2/100.",
+        "= 11 000 km²."
+      ],
+      "expr": "5500000*0.2/100",
+      "answer": "11000"
+    },
+    {
+      "problem": "Dạng đếm tầng: rừng mưa nhiệt đới có 5 tầng, rừng ôn đới có 2 tầng. Rừng nhiệt đới nhiều hơn bao nhiêu tầng?",
+      "steps": [
+        "5 − 2.",
+        "= 3."
+      ],
+      "expr": "5-2",
+      "answer": "3"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Rừng nhiệt đới phân bố ở:",
+      "choices": [
+        "Vùng cực",
+        "Vùng ôn đới",
+        "Sa mạc",
+        "Vùng giữa hai chí tuyến"
+      ],
+      "answer": 3,
+      "explain": "Nội chí tuyến.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đặc điểm của rừng mưa nhiệt đới là:",
+      "choices": [
+        "Chỉ có một tầng cây thấp",
+        "Ít loài",
+        "Nhiều tầng, thực vật và động vật phong phú",
+        "Cây lá kim"
+      ],
+      "answer": 2,
+      "explain": "Đặc điểm.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Ôn đới lạnh."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Rừng nhiệt đới gió mùa khác rừng mưa nhiệt đới ở chỗ:",
+      "choices": [
+        "Mưa quanh năm",
+        "Có mùa khô, cây rụng lá vào mùa khô",
+        "Có tuyết",
+        "Không có cây"
+      ],
+      "answer": 1,
+      "explain": "Gió mùa.",
+      "wrong_explain": {
+        "0": "Rừng mưa.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nguyên nhân làm suy giảm rừng nhiệt đới là:",
+      "choices": [
+        "Khai thác gỗ, đốt rừng làm rẫy",
+        "Trồng rừng",
+        "Bảo tồn",
+        "Mưa nhiều"
+      ],
+      "answer": 0,
+      "explain": "Con người.",
+      "wrong_explain": {
+        "1": "Ngược lại.",
+        "2": "Ngược lại.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Rừng mưa nhiệt đới thường có bao nhiêu tầng (theo sách, tối đa)?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "4–5 tầng."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một xã trồng 25 ha rừng mỗi năm. Sau 8 năm trồng được bao nhiêu ha?",
+      "expr": "200",
+      "answer": "200",
+      "explain": "25·8."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Rừng 1 200 ha bị cháy mất 15%. Diện tích bị cháy (ha):",
+      "expr": "180",
+      "answer": "180",
+      "explain": "1 200·15%."
+    }
+  ]
+}

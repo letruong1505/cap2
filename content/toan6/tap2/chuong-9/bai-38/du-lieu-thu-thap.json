@@ -1,0 +1,164 @@
+{
+  "id": "bai-38",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 2",
+  "chapter": "Chương IX. Dữ liệu và xác suất thực nghiệm",
+  "lesson": "Bài 38. Dữ liệu và thu thập dữ liệu",
+  "section": "",
+  "bookPage": 68,
+  "requirements": [
+    "Nhận biết dữ liệu là số và không phải là số; nhận biết tính hợp lí của dữ liệu; các cách thu thập dữ liệu."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dữ liệu là những thông tin thu thập được như số, chữ, hình ảnh… Dữ liệu là số (số liệu) như chiều cao, điểm số; dữ liệu không phải là số như tên, màu sắc, môn thể thao yêu thích."
+    },
+    {
+      "type": "text",
+      "content": "Dữ liệu cần hợp lí: phù hợp với tiêu chí đặt ra, không có giá trị vô lí (ví dụ chiều cao học sinh lớp 6 là 3 m)."
+    },
+    {
+      "type": "text",
+      "content": "Cách thu thập dữ liệu: quan sát, làm thí nghiệm, lập phiếu hỏi (điều tra), phỏng vấn, thu thập từ nguồn có sẵn (sách báo, Internet)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Điểm kiểm tra của 5 bạn: 7; 8; 9; 6; 10. Tổng điểm là bao nhiêu?",
+      "steps": [
+        "7 + 8 + 9 + 6 + 10.",
+        "= 40."
+      ],
+      "expr": "7+8+9+6+10",
+      "answer": "40"
+    },
+    {
+      "problem": "Dạng tìm dữ liệu không hợp lí: chiều cao (cm) 145; 150; 320; 148. Loại giá trị vô lí rồi tính tổng các giá trị còn lại.",
+      "steps": [
+        "320 cm không hợp lí với học sinh lớp 6.",
+        "145 + 150 + 148 = 443."
+      ],
+      "expr": "145+150+148",
+      "answer": "443"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Dữ liệu nào là số liệu?",
+      "choices": [
+        "Cân nặng của các bạn trong lớp",
+        "Màu sắc yêu thích",
+        "Tên các bạn",
+        "Môn thể thao yêu thích"
+      ],
+      "answer": 0,
+      "explain": "Cân nặng là số.",
+      "wrong_explain": {
+        "1": "Không phải số.",
+        "2": "Không phải số.",
+        "3": "Không phải số."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Cách thu thập dữ liệu về số lần tung đồng xu ra mặt sấp là:",
+      "choices": [
+        "Phỏng vấn chuyên gia",
+        "Đọc báo",
+        "Đoán",
+        "Làm thí nghiệm"
+      ],
+      "answer": 3,
+      "explain": "Tung đồng xu và ghi lại.",
+      "wrong_explain": {
+        "0": "Không phù hợp.",
+        "1": "Không phù hợp.",
+        "2": "Không phải thu thập."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dữ liệu nào không hợp lí khi ghi tuổi học sinh lớp 6?",
+      "choices": [
+        "11 tuổi",
+        "12 tuổi",
+        "25 tuổi",
+        "11 tuổi rưỡi"
+      ],
+      "answer": 2,
+      "explain": "Học sinh lớp 6 thường 11–12 tuổi.",
+      "wrong_explain": {
+        "0": "Hợp lí.",
+        "1": "Hợp lí.",
+        "3": "Hợp lí."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Danh sách điểm: 8; 9; 7; 8; 10; 8. Có bao nhiêu bạn được điểm 8?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Có 3 bạn."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tổng số học sinh trả lời phiếu: thích bóng đá 12, bơi 8, cầu lông 10. Có bao nhiêu học sinh?",
+      "expr": "12+8+10",
+      "answer": "30",
+      "explain": "30."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong dãy dữ liệu: Hà, 7, xanh, 150, Lan, 12, đỏ, có bao nhiêu dữ liệu là số?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "7, 150, 12."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nhiệt độ (°C) 5 ngày: 28; 30; 31; 29; 32. Nhiệt độ cao nhất hơn thấp nhất bao nhiêu độ?",
+      "expr": "32-28",
+      "answer": "4",
+      "explain": "4 °C."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Số cây trồng của 4 tổ: 15; 18; 20; 17. Tổng số cây là:",
+      "expr": "70",
+      "answer": "70",
+      "explain": "70 cây."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cân nặng (kg) 4 bạn: 35; 38; 40; 37. Trung bình mỗi bạn nặng:",
+      "expr": "150/4",
+      "answer": "37.5",
+      "explain": "37,5 kg."
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "id": "bai-40",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 2",
+  "chapter": "Chương IX. Dữ liệu và xác suất thực nghiệm",
+  "lesson": "Bài 40. Biểu đồ cột",
+  "section": "",
+  "bookPage": 77,
+  "requirements": [
+    "Đọc và vẽ biểu đồ cột; phân tích số liệu từ biểu đồ cột."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Biểu đồ cột gồm trục ngang ghi các đối tượng, trục đứng ghi số lượng; mỗi đối tượng được biểu diễn bởi một cột, chiều cao cột ứng với số liệu."
+    },
+    {
+      "type": "text",
+      "content": "Vẽ biểu đồ cột: vẽ hai trục; chọn khoảng chia thích hợp trên trục đứng; vẽ các cột cách đều, cùng độ rộng; ghi tên biểu đồ, chú thích."
+    },
+    {
+      "type": "text",
+      "content": "Từ biểu đồ cột có thể so sánh, tìm giá trị lớn nhất, nhỏ nhất, tính tổng, tính trung bình."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Biểu đồ cột số học sinh thích các môn: Toán 12, Văn 8, Anh 10. Tổng số học sinh?",
+      "steps": [
+        "12 + 8 + 10.",
+        "= 30."
+      ],
+      "expr": "12+8+10",
+      "answer": "30"
+    },
+    {
+      "problem": "Dạng tính tỉ lệ từ biểu đồ: theo số liệu trên, số bạn thích Toán chiếm bao nhiêu phần trăm?",
+      "steps": [
+        "12/30·100%.",
+        "= 40%."
+      ],
+      "expr": "12*100/30",
+      "answer": "40"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong biểu đồ cột, chiều cao của mỗi cột biểu thị:",
+      "choices": [
+        "Số liệu của đối tượng đó",
+        "Tên đối tượng",
+        "Màu sắc",
+        "Thứ tự"
+      ],
+      "answer": 0,
+      "explain": "Cột cao ứng với số lớn.",
+      "wrong_explain": {
+        "1": "Ghi ở trục ngang.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi vẽ biểu đồ cột, các cột cần:",
+      "choices": [
+        "Rộng hẹp tuỳ ý",
+        "Chồng lên nhau",
+        "Không cần trục",
+        "Có độ rộng bằng nhau và cách đều"
+      ],
+      "answer": 3,
+      "explain": "Quy tắc vẽ.",
+      "wrong_explain": {
+        "0": "Phải bằng nhau.",
+        "1": "Không.",
+        "2": "Cần trục."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Biểu đồ: tháng 1 mưa 20 ngày, tháng 2 15 ngày, tháng 3 10 ngày. Tổng số ngày mưa:",
+      "expr": "45",
+      "answer": "45",
+      "explain": "45 ngày."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Từ biểu đồ trên, trung bình mỗi tháng có bao nhiêu ngày mưa?",
+      "expr": "15",
+      "answer": "15",
+      "explain": "45 : 3 = 15."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tháng nhiều ngày mưa nhất hơn tháng ít nhất bao nhiêu ngày?",
+      "expr": "10",
+      "answer": "10",
+      "explain": "20 − 10 = 10."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Biểu đồ số sách: lớp A 45, lớp B 60, lớp C 55. Lớp B nhiều hơn lớp A bao nhiêu quyển?",
+      "expr": "15",
+      "answer": "15",
+      "explain": "15."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tổng số sách ba lớp trên là:",
+      "expr": "160",
+      "answer": "160",
+      "explain": "160."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lớp C chiếm bao nhiêu phần trăm tổng số sách (làm tròn đến hàng đơn vị: 55/160 ≈ 34%)? Nhập 34.",
+      "expr": "34",
+      "answer": "34",
+      "explain": "55 : 160 ≈ 0,34 = 34%."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trục đứng chia mỗi vạch 5 đơn vị, cột cao 7 vạch. Giá trị là:",
+      "expr": "35",
+      "answer": "35",
+      "explain": "35."
+    }
+  ]
+}

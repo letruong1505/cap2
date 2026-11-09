@@ -1,0 +1,161 @@
+{
+  "id": "bai-1",
+  "grade": 9,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 9",
+  "chapter": "Chương 1. Địa lí dân cư Việt Nam",
+  "lesson": "Bài 1. Dân tộc và dân số",
+  "section": "",
+  "bookPage": 117,
+  "requirements": [
+    "Trình bày được đặc điểm phân bố các dân tộc Việt Nam; phân tích được sự thay đổi cơ cấu tuổi và giới tính của dân cư."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Việt Nam có 54 dân tộc; dân tộc Kinh chiếm khoảng 85% dân số, phân bố chủ yếu ở đồng bằng, trung du và ven biển; các dân tộc thiểu số phân bố chủ yếu ở miền núi và cao nguyên. Các dân tộc đoàn kết, cùng xây dựng và bảo vệ Tổ quốc."
+    },
+    {
+      "type": "text",
+      "content": "Việt Nam là nước đông dân (khoảng 100 triệu người năm 2023, đứng thứ 3 Đông Nam Á). Tỉ lệ gia tăng dân số tự nhiên đã giảm, còn khoảng 1%/năm."
+    },
+    {
+      "type": "text",
+      "content": "Cơ cấu dân số theo tuổi đang già hoá: tỉ lệ nhóm 0–14 tuổi giảm, nhóm từ 65 tuổi trở lên tăng; nước ta đang trong thời kì \"cơ cấu dân số vàng\" (nhóm 15–64 tuổi chiếm khoảng 2/3 dân số)."
+    },
+    {
+      "type": "formula",
+      "content": "Tỉ lệ gia tăng tự nhiên (%) = Tỉ suất sinh (‰) − Tỉ suất tử (‰), chia 10"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Năm 2023, tỉ suất sinh khoảng 15‰, tỉ suất tử khoảng 6‰. Tính tỉ lệ gia tăng dân số tự nhiên (%).",
+      "steps": [
+        "(15 − 6) : 10.",
+        "= 0,9%."
+      ],
+      "expr": "(15-6)/10",
+      "answer": "0.9"
+    },
+    {
+      "problem": "Dạng tính tỉ lệ: dân số 100 triệu, nhóm 15–64 tuổi có 68 triệu người. Chiếm bao nhiêu %?",
+      "steps": [
+        "68 : 100 · 100.",
+        "= 68%."
+      ],
+      "expr": "68*100/100",
+      "answer": "68"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Việt Nam có bao nhiêu dân tộc?",
+      "choices": [
+        "45",
+        "54",
+        "64",
+        "50"
+      ],
+      "answer": 1,
+      "explain": "54 dân tộc.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Dân tộc Kinh phân bố chủ yếu ở:",
+      "choices": [
+        "Đồng bằng, trung du và ven biển",
+        "Vùng núi cao",
+        "Hải đảo xa",
+        "Chỉ ở Tây Nguyên"
+      ],
+      "answer": 0,
+      "explain": "Phân bố.",
+      "wrong_explain": {
+        "1": "Dân tộc thiểu số.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cơ cấu dân số nước ta đang:",
+      "choices": [
+        "Trẻ hoá",
+        "Không thay đổi",
+        "Chỉ có người già",
+        "Già hoá"
+      ],
+      "answer": 3,
+      "explain": "Xu hướng.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "1": "Sai.",
+        "2": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "\"Cơ cấu dân số vàng\" là khi:",
+      "choices": [
+        "Trẻ em chiếm đa số",
+        "Người già chiếm đa số",
+        "Nhóm tuổi lao động chiếm tỉ lệ cao",
+        "Dân số giảm mạnh"
+      ],
+      "answer": 2,
+      "explain": "Khái niệm.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tỉ suất sinh 16‰, tỉ suất tử 6‰. Tỉ lệ gia tăng tự nhiên là bao nhiêu %?",
+      "expr": "(16-6)/10",
+      "answer": "1",
+      "explain": "1%."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dân số 100 triệu, dân tộc Kinh chiếm 85%. Dân tộc Kinh có bao nhiêu triệu người?",
+      "expr": "100*85/100",
+      "answer": "85",
+      "explain": "85."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dân số 100 triệu, tăng 1%/năm. Sau 1 năm tăng thêm bao nhiêu triệu người?",
+      "expr": "100*1/100",
+      "answer": "1",
+      "explain": "1."
+    }
+  ]
+}

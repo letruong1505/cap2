@@ -1,0 +1,161 @@
+{
+  "id": "bai-34",
+  "grade": 9,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 9",
+  "chapter": "Chương X. Khai thác tài nguyên từ vỏ Trái Đất",
+  "lesson": "Bài 34. Khai thác đá vôi. Công nghiệp silicate",
+  "section": "",
+  "bookPage": 149,
+  "requirements": [
+    "Nêu được thành phần, ứng dụng của đá vôi; quá trình sản xuất vôi, xi măng, gốm sứ, thuỷ tinh."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đá vôi có thành phần chính là CaCO₃. Nung đá vôi ở nhiệt độ cao: CaCO₃ → CaO + CO₂ (vôi sống). Vôi sống tác dụng với nước tạo vôi tôi: CaO + H₂O → Ca(OH)₂."
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng đá vôi: sản xuất vôi, xi măng, làm vật liệu xây dựng, chất phụ gia, khử chua đất."
+    },
+    {
+      "type": "text",
+      "content": "Công nghiệp silicate sản xuất đồ gốm, sứ, xi măng, thuỷ tinh từ các hợp chất tự nhiên của silicon. Thuỷ tinh: nấu chảy hỗn hợp cát (SiO₂), đá vôi, soda (Na₂CO₃). Xi măng: nung đá vôi và đất sét, nghiền với thạch cao."
+    },
+    {
+      "type": "text",
+      "content": "Khai thác đá vôi cần bảo vệ cảnh quan, hạn chế bụi và khí thải CO₂."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Nung 100 kg CaCO₃ (M = 100) thu được bao nhiêu kg CaO (M = 56)?",
+      "steps": [
+        "1 kmol CaCO₃ → 1 kmol CaO.",
+        "56 kg."
+      ],
+      "expr": "56",
+      "answer": "56"
+    },
+    {
+      "problem": "Dạng hiệu suất: nung 200 kg đá vôi (90% CaCO₃), hiệu suất 100%. Khối lượng CaO?",
+      "steps": [
+        "CaCO₃ = 180 kg = 1,8 kmol.",
+        "CaO = 1,8·56 = 100,8 kg."
+      ],
+      "expr": "1.8*56",
+      "answer": "100.8"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thành phần chính của đá vôi là:",
+      "choices": [
+        "CaO",
+        "Ca(OH)₂",
+        "SiO₂",
+        "CaCO₃"
+      ],
+      "answer": 3,
+      "explain": "Calcium carbonate.",
+      "wrong_explain": {
+        "0": "Vôi sống.",
+        "1": "Vôi tôi.",
+        "2": "Cát."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nung đá vôi thu được:",
+      "choices": [
+        "Vôi tôi",
+        "Xi măng",
+        "Vôi sống và khí CO₂",
+        "Thuỷ tinh"
+      ],
+      "answer": 2,
+      "explain": "CaCO₃ → CaO + CO₂.",
+      "wrong_explain": {
+        "0": "Khi CaO gặp nước.",
+        "1": "Cần thêm đất sét.",
+        "3": "Cần cát."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nguyên liệu sản xuất thuỷ tinh là:",
+      "choices": [
+        "Đất sét và thạch cao",
+        "Cát, đá vôi, soda",
+        "Quặng sắt",
+        "Bauxite"
+      ],
+      "answer": 1,
+      "explain": "Thuỷ tinh.",
+      "wrong_explain": {
+        "0": "Xi măng.",
+        "2": "Gang.",
+        "3": "Nhôm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Sản phẩm nào thuộc công nghiệp silicate?",
+      "choices": [
+        "Xi măng",
+        "Thép",
+        "Nhựa PE",
+        "Xăng"
+      ],
+      "answer": 0,
+      "explain": "Silicate.",
+      "wrong_explain": {
+        "1": "Luyện kim.",
+        "2": "Hoá dầu.",
+        "3": "Hoá dầu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nung 0,5 mol CaCO₃ thu bao nhiêu mol CO₂?",
+      "expr": "0.5",
+      "answer": "0.5",
+      "explain": "1 : 1."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nung 50 kg CaCO₃ thu bao nhiêu kg CaO?",
+      "expr": "28",
+      "answer": "28",
+      "explain": "0,5 kmol·56."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "5,6 g CaO (M = 56) tác dụng nước tạo bao nhiêu mol Ca(OH)₂?",
+      "expr": "0.1",
+      "answer": "0.1",
+      "explain": "0,1 mol."
+    }
+  ]
+}

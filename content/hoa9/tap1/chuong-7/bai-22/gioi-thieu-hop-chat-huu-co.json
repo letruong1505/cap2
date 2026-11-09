@@ -1,0 +1,161 @@
+{
+  "id": "bai-22",
+  "grade": 9,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 9",
+  "chapter": "Chương VII. Giới thiệu về chất hữu cơ",
+  "lesson": "Bài 22. Giới thiệu về hợp chất hữu cơ",
+  "section": "",
+  "bookPage": 103,
+  "requirements": [
+    "Nêu được khái niệm hợp chất hữu cơ, hoá học hữu cơ; công thức phân tử, công thức cấu tạo; phân loại hydrocarbon và dẫn xuất."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hợp chất hữu cơ là hợp chất của carbon (trừ CO, CO₂, H₂CO₃, muối carbonate, carbide…). Hoá học hữu cơ là ngành hoá học nghiên cứu các hợp chất hữu cơ."
+    },
+    {
+      "type": "text",
+      "content": "Đặc điểm: thường có liên kết cộng hoá trị; dễ cháy; kém bền nhiệt; thường khó tan trong nước."
+    },
+    {
+      "type": "text",
+      "content": "Phân loại: hydrocarbon (chỉ chứa C và H: CH₄, C₂H₄) và dẫn xuất của hydrocarbon (ngoài C, H còn có O, N, Cl…: C₂H₅OH, CH₃COOH)."
+    },
+    {
+      "type": "text",
+      "content": "Trong hợp chất hữu cơ, C có hoá trị IV, H hoá trị I, O hoá trị II. Công thức cấu tạo cho biết thứ tự liên kết giữa các nguyên tử; mạch carbon có thể thẳng, nhánh hoặc vòng."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính phân tử khối của C₂H₆O (C = 12, H = 1, O = 16).",
+      "steps": [
+        "2·12 + 6·1 + 16.",
+        "= 46."
+      ],
+      "expr": "2*12+6+16",
+      "answer": "46"
+    },
+    {
+      "problem": "Dạng tính phần trăm nguyên tố: %C trong CH₄?",
+      "steps": [
+        "M = 16; %C = 12/16·100%.",
+        "= 75%."
+      ],
+      "expr": "12*100/16",
+      "answer": "75"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hợp chất nào là hợp chất hữu cơ?",
+      "choices": [
+        "CO₂",
+        "CaCO₃",
+        "CH₄",
+        "NaCl"
+      ],
+      "answer": 2,
+      "explain": "Methane.",
+      "wrong_explain": {
+        "0": "Ngoại lệ, vô cơ.",
+        "1": "Muối carbonate.",
+        "3": "Không chứa C."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hydrocarbon là hợp chất chỉ chứa:",
+      "choices": [
+        "Carbon và oxygen",
+        "Carbon và hydrogen",
+        "Hydrogen và oxygen",
+        "Carbon, hydrogen và oxygen"
+      ],
+      "answer": 1,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Nước.",
+        "3": "Dẫn xuất."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trong hợp chất hữu cơ, carbon có hoá trị:",
+      "choices": [
+        "IV",
+        "II",
+        "I",
+        "III"
+      ],
+      "answer": 0,
+      "explain": "Hoá trị IV.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Chất nào là dẫn xuất của hydrocarbon?",
+      "choices": [
+        "CH₄",
+        "C₂H₄",
+        "C₆H₆",
+        "C₂H₅OH"
+      ],
+      "answer": 3,
+      "explain": "Có thêm O.",
+      "wrong_explain": {
+        "0": "Hydrocarbon.",
+        "1": "Hydrocarbon.",
+        "2": "Hydrocarbon."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phân tử khối của C₂H₄:",
+      "expr": "28",
+      "answer": "28",
+      "explain": "2·12 + 4."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "%C trong C₂H₆ (M = 30):",
+      "expr": "24*100/30",
+      "answer": "80",
+      "explain": "80%."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong CH₄, CO, C₂H₂, Na₂CO₃, C₆H₁₂O₆ – có bao nhiêu hợp chất hữu cơ?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "CH₄, C₂H₂, C₆H₁₂O₆."
+    }
+  ]
+}

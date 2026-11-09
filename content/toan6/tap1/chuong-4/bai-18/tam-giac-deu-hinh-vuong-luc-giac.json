@@ -1,0 +1,168 @@
+{
+  "id": "bai-18",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương IV. Một số hình phẳng trong thực tiễn",
+  "lesson": "Bài 18. Hình tam giác đều. Hình vuông. Hình lục giác đều",
+  "section": "",
+  "bookPage": 77,
+  "requirements": [
+    "Nhận dạng và mô tả tam giác đều, hình vuông, lục giác đều; vẽ tam giác đều, hình vuông bằng thước và compa."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tam giác đều có ba cạnh bằng nhau, ba góc bằng nhau (mỗi góc 60°)."
+    },
+    {
+      "type": "text",
+      "content": "Hình vuông có bốn cạnh bằng nhau, bốn góc vuông, hai đường chéo bằng nhau; hai cạnh đối song song."
+    },
+    {
+      "type": "text",
+      "content": "Lục giác đều có sáu cạnh bằng nhau, sáu góc bằng nhau (mỗi góc 120°), ba đường chéo chính bằng nhau. Lục giác đều ghép được từ 6 tam giác đều chung một đỉnh."
+    },
+    {
+      "type": "text",
+      "content": "Hình ảnh trong thực tế: tổ ong (lục giác đều), gạch lát nền (hình vuông), biển báo nguy hiểm (tam giác đều)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một tam giác đều có cạnh 7 cm. Tính chu vi.",
+      "steps": [
+        "Chu vi = 3 × cạnh.",
+        "3·7 = 21 cm."
+      ],
+      "expr": "3*7",
+      "answer": "21"
+    },
+    {
+      "problem": "Dạng lục giác đều ghép từ tam giác đều: lục giác đều cạnh 4 cm, chu vi bằng bao nhiêu?",
+      "steps": [
+        "Chu vi lục giác đều = 6 × cạnh.",
+        "6·4 = 24 cm."
+      ],
+      "expr": "6*4",
+      "answer": "24"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tam giác đều có các góc bằng:",
+      "choices": [
+        "90°",
+        "60°",
+        "120°",
+        "45°"
+      ],
+      "answer": 1,
+      "explain": "Ba góc bằng nhau và bằng 60°.",
+      "wrong_explain": {
+        "0": "Đó là góc vuông.",
+        "2": "Đó là góc lục giác đều.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hình nào có sáu cạnh bằng nhau và sáu góc bằng nhau?",
+      "choices": [
+        "Lục giác đều",
+        "Hình vuông",
+        "Tam giác đều",
+        "Hình chữ nhật"
+      ],
+      "answer": 0,
+      "explain": "Lục giác đều.",
+      "wrong_explain": {
+        "1": "Có 4 cạnh.",
+        "2": "Có 3 cạnh.",
+        "3": "Có 4 cạnh."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hai đường chéo của hình vuông:",
+      "choices": [
+        "Không bằng nhau",
+        "Song song",
+        "Gấp đôi cạnh",
+        "Bằng nhau"
+      ],
+      "answer": 3,
+      "explain": "Hình vuông có hai đường chéo bằng nhau.",
+      "wrong_explain": {
+        "0": "Bằng nhau.",
+        "1": "Cắt nhau.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình vuông cạnh 9 cm có chu vi là bao nhiêu cm?",
+      "expr": "4*9",
+      "answer": "36",
+      "explain": "36 cm."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lục giác đều được ghép từ bao nhiêu tam giác đều?",
+      "expr": "6",
+      "answer": "6",
+      "explain": "6 tam giác đều."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một tam giác đều có chu vi 45 cm. Cạnh dài bao nhiêu cm?",
+      "expr": "45/3",
+      "answer": "15",
+      "explain": "15 cm."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lục giác đều có chu vi 48 cm. Cạnh dài bao nhiêu cm?",
+      "expr": "48/6",
+      "answer": "8",
+      "explain": "8 cm."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một hình vuông có chu vi 28 m. Cạnh dài bao nhiêu mét?",
+      "expr": "28/4",
+      "answer": "7",
+      "explain": "7 m."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lục giác đều cạnh 5 cm, đường chéo chính dài bao nhiêu cm (gấp đôi cạnh)?",
+      "expr": "2*5",
+      "answer": "10",
+      "explain": "10 cm."
+    }
+  ]
+}

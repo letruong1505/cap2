@@ -1,0 +1,157 @@
+{
+  "id": "bai-19",
+  "grade": 9,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 9",
+  "chapter": "Chương VI. Kim loại. Sự khác nhau cơ bản giữa phi kim và kim loại",
+  "lesson": "Bài 19. Dãy hoạt động hoá học",
+  "section": "",
+  "bookPage": 92,
+  "requirements": [
+    "Nêu được dãy hoạt động hoá học của một số kim loại và ý nghĩa."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dãy hoạt động hoá học của một số kim loại: K, Na, Ca, Mg, Al, Zn, Fe, Pb, (H), Cu, Ag, Au. Mức độ hoạt động giảm dần từ trái sang phải."
+    },
+    {
+      "type": "text",
+      "content": "Ý nghĩa: (1) K, Na, Ca phản ứng với nước ở nhiệt độ thường tạo base và H₂. (2) Kim loại đứng trước H phản ứng với dung dịch acid (HCl, H₂SO₄ loãng) giải phóng H₂. (3) Kim loại đứng trước (trừ K, Na, Ca) đẩy được kim loại đứng sau ra khỏi dung dịch muối."
+    },
+    {
+      "type": "text",
+      "content": "Kim loại đứng sau H (Cu, Ag, Au) không phản ứng với HCl, H₂SO₄ loãng."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dạng xét phản ứng: trong các kim loại Mg, Cu, Zn, Ag, Fe, có bao nhiêu kim loại phản ứng với dung dịch HCl?",
+      "steps": [
+        "Kim loại đứng trước H: Mg, Zn, Fe.",
+        "Có 3."
+      ],
+      "expr": "3",
+      "answer": "3"
+    },
+    {
+      "problem": "Cho 2,4 g Mg (M = 24) tác dụng hết với HCl. Số mol H₂?",
+      "steps": [
+        "n(Mg) = 0,1 mol.",
+        "Mg + 2HCl → MgCl₂ + H₂: 0,1 mol."
+      ],
+      "expr": "2.4/24",
+      "answer": "0.1"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kim loại hoạt động mạnh nhất trong dãy là:",
+      "choices": [
+        "Au",
+        "Fe",
+        "K",
+        "Cu"
+      ],
+      "answer": 2,
+      "explain": "Đầu dãy.",
+      "wrong_explain": {
+        "0": "Yếu nhất.",
+        "1": "Trung bình.",
+        "3": "Yếu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kim loại nào không phản ứng với dung dịch HCl?",
+      "choices": [
+        "Zn",
+        "Cu",
+        "Fe",
+        "Mg"
+      ],
+      "answer": 1,
+      "explain": "Cu đứng sau H.",
+      "wrong_explain": {
+        "0": "Đứng trước H.",
+        "2": "Đứng trước H.",
+        "3": "Đứng trước H."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Kim loại nào đẩy được Cu ra khỏi dung dịch CuSO₄?",
+      "choices": [
+        "Fe",
+        "Ag",
+        "Au",
+        "Cu"
+      ],
+      "answer": 0,
+      "explain": "Fe đứng trước Cu.",
+      "wrong_explain": {
+        "1": "Đứng sau Cu.",
+        "2": "Đứng sau Cu.",
+        "3": "Chính nó."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Kim loại nào phản ứng mạnh với nước ở nhiệt độ thường?",
+      "choices": [
+        "Fe",
+        "Cu",
+        "Ag",
+        "Na"
+      ],
+      "answer": 3,
+      "explain": "K, Na, Ca.",
+      "wrong_explain": {
+        "0": "Không ở nhiệt độ thường.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong K, Na, Ca, Mg, Fe – có bao nhiêu kim loại phản ứng với nước ở nhiệt độ thường?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "K, Na, Ca."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong Cu, Ag, Au, Zn – có bao nhiêu kim loại đứng sau H?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Cu, Ag, Au."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 1,3 g Zn (M = 65) vào HCl dư. Số mol H₂:",
+      "expr": "0.02",
+      "answer": "0.02",
+      "explain": "1,3 : 65."
+    }
+  ]
+}

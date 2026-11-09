@@ -1,0 +1,157 @@
+{
+  "id": "bai-9",
+  "grade": 6,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 6",
+  "chapter": "Chương 2. Trái Đất – hành tinh của hệ Mặt Trời",
+  "lesson": "Bài 9. Xác định phương hướng ngoài thực tế",
+  "section": "",
+  "bookPage": 125,
+  "requirements": [
+    "Xác định được phương hướng ngoài thực tế dựa vào Mặt Trời, sao, la bàn."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dựa vào Mặt Trời: buổi sáng Mặt Trời mọc ở phía đông, buổi chiều lặn ở phía tây. Đứng giang tay phải chỉ hướng Mặt Trời mọc thì trước mặt là hướng bắc, sau lưng là hướng nam."
+    },
+    {
+      "type": "text",
+      "content": "Dựa vào sao: ở bán cầu Bắc, sao Bắc Cực chỉ hướng bắc; ở bán cầu Nam dùng chòm Thập Tự Phương Nam."
+    },
+    {
+      "type": "text",
+      "content": "Dùng la bàn: kim nam châm luôn chỉ hướng bắc – nam; đặt la bàn nằm ngang, xoay vỏ cho chữ N trùng đầu kim chỉ bắc rồi đọc các hướng khác. Ngày nay còn dùng điện thoại thông minh có ứng dụng la bàn, GPS."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dạng xác định hướng bằng góc: từ hướng Bắc quay theo chiều kim đồng hồ đến hướng Đông thì quay được bao nhiêu độ?",
+      "steps": [
+        "Bắc 0°, Đông 90°.",
+        "Hướng Đông = 90°."
+      ],
+      "expr": "90",
+      "answer": "90"
+    },
+    {
+      "problem": "Dạng tính góc: từ hướng Đông quay sang hướng Tây theo chiều kim đồng hồ quay bao nhiêu độ?",
+      "steps": [
+        "Đông 90°, Tây 270°.",
+        "270 − 90 = 180°."
+      ],
+      "expr": "270-90",
+      "answer": "180"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Buổi sáng, Mặt Trời mọc ở hướng:",
+      "choices": [
+        "Tây",
+        "Nam",
+        "Bắc",
+        "Đông"
+      ],
+      "answer": 3,
+      "explain": "Hướng đông.",
+      "wrong_explain": {
+        "0": "Lặn.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Ở bán cầu Bắc, ban đêm có thể dựa vào sao nào để xác định hướng bắc?",
+      "choices": [
+        "Sao Hôm",
+        "Chòm Thập Tự Phương Nam",
+        "Sao Bắc Cực",
+        "Mặt Trăng"
+      ],
+      "answer": 2,
+      "explain": "Sao Bắc Cực.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Bán cầu Nam.",
+        "3": "Không chính xác."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Kim nam châm của la bàn luôn chỉ hướng:",
+      "choices": [
+        "Đông – Tây",
+        "Bắc – Nam",
+        "Tây Bắc",
+        "Ngẫu nhiên"
+      ],
+      "answer": 1,
+      "explain": "Từ trường Trái Đất.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Đứng giang tay phải chỉ hướng Mặt Trời mọc thì trước mặt là hướng:",
+      "choices": [
+        "Bắc",
+        "Nam",
+        "Tây",
+        "Đông"
+      ],
+      "answer": 0,
+      "explain": "Cách xác định.",
+      "wrong_explain": {
+        "1": "Sau lưng.",
+        "2": "Tay trái.",
+        "3": "Tay phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Từ hướng Bắc quay theo chiều kim đồng hồ đến hướng Tây là bao nhiêu độ?",
+      "expr": "270",
+      "answer": "270",
+      "explain": "270°."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giữa hướng Nam và hướng Tây Nam là bao nhiêu độ?",
+      "expr": "45",
+      "answer": "45",
+      "explain": "45°."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có bao nhiêu cách xác định phương hướng được nêu (Mặt Trời, sao, la bàn)?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "3."
+    }
+  ]
+}

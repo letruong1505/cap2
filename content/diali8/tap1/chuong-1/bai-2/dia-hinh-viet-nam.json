@@ -1,0 +1,161 @@
+{
+  "id": "bai-2",
+  "grade": 8,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 8",
+  "chapter": "Chương 1. Đặc điểm vị trí địa lí, phạm vi lãnh thổ, địa hình và khoáng sản Việt Nam",
+  "lesson": "Bài 2. Địa hình Việt Nam",
+  "section": "",
+  "bookPage": 97,
+  "requirements": [
+    "Trình bày được đặc điểm chủ yếu của địa hình Việt Nam; đặc điểm các khu vực địa hình; ảnh hưởng của địa hình đối với sự phân hoá tự nhiên và khai thác kinh tế."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đồi núi chiếm 3/4 diện tích lãnh thổ, chủ yếu là đồi núi thấp (địa hình dưới 1 000 m chiếm khoảng 85%, núi cao trên 2 000 m chỉ khoảng 1%). Đồng bằng chiếm 1/4 diện tích."
+    },
+    {
+      "type": "text",
+      "content": "Địa hình được nâng lên trong giai đoạn Tân kiến tạo, phân thành nhiều bậc; hướng chính là tây bắc – đông nam và vòng cung. Địa hình nhiệt đới ẩm gió mùa (bị xâm thực mạnh, bồi tụ nhanh) và chịu tác động mạnh của con người."
+    },
+    {
+      "type": "text",
+      "content": "Các khu vực: Đông Bắc (vòng cung), Tây Bắc (cao nhất, hướng tây bắc – đông nam, có Phan-xi-păng 3 143 m), Trường Sơn Bắc, Trường Sơn Nam (cao nguyên ba-dan); đồng bằng sông Hồng, sông Cửu Long, đồng bằng ven biển miền Trung."
+    },
+    {
+      "type": "text",
+      "content": "Địa hình ảnh hưởng đến khí hậu, sông ngòi, sinh vật; đồng bằng thuận lợi nông nghiệp, dân cư; miền núi giàu tài nguyên nhưng giao thông khó khăn, nhiều thiên tai."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đồi núi chiếm 3/4 diện tích 331 000 km². Diện tích đồi núi (km²)?",
+      "steps": [
+        "331 000·3/4.",
+        "= 248 250 km²."
+      ],
+      "expr": "331000*3/4",
+      "answer": "248250"
+    },
+    {
+      "problem": "Dạng nhiệt độ theo độ cao: chân núi 25 °C, đỉnh Phan-xi-păng cao hơn chân khoảng 3 000 m. Nhiệt độ đỉnh (giảm 0,6 °C/100 m)?",
+      "steps": [
+        "Giảm 0,6·30 = 18 °C.",
+        "25 − 18 = 7 °C."
+      ],
+      "expr": "25-0.6*30",
+      "answer": "7"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đồi núi chiếm khoảng bao nhiêu diện tích lãnh thổ nước ta?",
+      "choices": [
+        "1/4",
+        "3/4",
+        "1/2",
+        "1/3"
+      ],
+      "answer": 1,
+      "explain": "3/4.",
+      "wrong_explain": {
+        "0": "Đồng bằng.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đỉnh núi cao nhất Việt Nam là:",
+      "choices": [
+        "Phan-xi-păng",
+        "Tây Côn Lĩnh",
+        "Ngọc Linh",
+        "Bà Đen"
+      ],
+      "answer": 0,
+      "explain": "3 143 m.",
+      "wrong_explain": {
+        "1": "Không cao nhất.",
+        "2": "Không cao nhất.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hướng chính của địa hình nước ta là:",
+      "choices": [
+        "Bắc – nam",
+        "Đông – tây",
+        "Tây nam – đông bắc",
+        "Tây bắc – đông nam và vòng cung"
+      ],
+      "answer": 3,
+      "explain": "Hai hướng.",
+      "wrong_explain": {
+        "0": "Không chủ yếu.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khu vực có địa hình cao nhất nước ta là:",
+      "choices": [
+        "Đông Bắc",
+        "Trường Sơn Nam",
+        "Tây Bắc",
+        "Đồng bằng sông Hồng"
+      ],
+      "answer": 2,
+      "explain": "Tây Bắc.",
+      "wrong_explain": {
+        "0": "Thấp hơn.",
+        "1": "Không.",
+        "3": "Thấp."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đỉnh Phan-xi-păng cao bao nhiêu mét?",
+      "expr": "3143",
+      "answer": "3143",
+      "explain": "3 143 m."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Địa hình dưới 1 000 m chiếm 85%, trên 2 000 m chiếm 1%. Địa hình từ 1 000 đến 2 000 m chiếm (%):",
+      "expr": "14",
+      "answer": "14",
+      "explain": "100 − 85 − 1."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đồng bằng chiếm 1/4 diện tích 331 000 km². Diện tích đồng bằng (km²):",
+      "expr": "82750",
+      "answer": "82750",
+      "explain": "331 000 : 4."
+    }
+  ]
+}

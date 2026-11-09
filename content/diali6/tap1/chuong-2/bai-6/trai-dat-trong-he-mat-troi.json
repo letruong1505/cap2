@@ -1,0 +1,157 @@
+{
+  "id": "bai-6",
+  "grade": 6,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 6",
+  "chapter": "Chương 2. Trái Đất – hành tinh của hệ Mặt Trời",
+  "lesson": "Bài 6. Trái Đất trong hệ Mặt Trời",
+  "section": "",
+  "bookPage": 115,
+  "requirements": [
+    "Xác định được vị trí của Trái Đất trong hệ Mặt Trời; mô tả hình dạng, kích thước Trái Đất."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hệ Mặt Trời gồm Mặt Trời và 8 hành tinh quay quanh. Trái Đất là hành tinh thứ ba theo thứ tự xa dần Mặt Trời, khoảng cách trung bình khoảng 150 triệu km. Vị trí này giúp Trái Đất nhận được lượng nhiệt, ánh sáng phù hợp cho sự sống."
+    },
+    {
+      "type": "text",
+      "content": "Trái Đất có dạng hình cầu. Bán kính Xích đạo khoảng 6 378 km; chu vi Xích đạo khoảng 40 076 km; diện tích bề mặt khoảng 510 triệu km²."
+    },
+    {
+      "type": "text",
+      "content": "Nhờ dạng hình cầu, mọi nơi trên Trái Đất đều có ngày và đêm."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Bán kính Trái Đất khoảng 6 370 km. Đường kính khoảng bao nhiêu km?",
+      "steps": [
+        "2·6 370.",
+        "= 12 740 km."
+      ],
+      "expr": "2*6370",
+      "answer": "12740"
+    },
+    {
+      "problem": "Dạng so sánh: diện tích bề mặt Trái Đất 510 triệu km², đại dương chiếm khoảng 71%. Diện tích đại dương (triệu km²)?",
+      "steps": [
+        "510·71/100.",
+        "= 362,1 triệu km²."
+      ],
+      "expr": "510*71/100",
+      "answer": "362.1"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trái Đất là hành tinh thứ mấy tính từ Mặt Trời?",
+      "choices": [
+        "Thứ nhất",
+        "Thứ hai",
+        "Thứ ba",
+        "Thứ tư"
+      ],
+      "answer": 2,
+      "explain": "Thứ ba.",
+      "wrong_explain": {
+        "0": "Thuỷ tinh.",
+        "1": "Kim tinh.",
+        "3": "Hoả tinh."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trái Đất có dạng:",
+      "choices": [
+        "Hình vuông",
+        "Hình cầu",
+        "Hình đĩa phẳng",
+        "Hình trụ"
+      ],
+      "answer": 1,
+      "explain": "Hình cầu.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khoảng cách trung bình từ Trái Đất đến Mặt Trời là:",
+      "choices": [
+        "150 triệu km",
+        "15 triệu km",
+        "1,5 tỉ km",
+        "384 000 km"
+      ],
+      "answer": 0,
+      "explain": "150 triệu km.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Đến Mặt Trăng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nhờ vị trí thứ ba trong hệ Mặt Trời, Trái Đất:",
+      "choices": [
+        "Quá nóng",
+        "Quá lạnh",
+        "Không có ánh sáng",
+        "Nhận lượng nhiệt, ánh sáng phù hợp cho sự sống"
+      ],
+      "answer": 3,
+      "explain": "Điều kiện sống.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hệ Mặt Trời có bao nhiêu hành tinh?",
+      "expr": "8",
+      "answer": "8",
+      "explain": "8."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chu vi Xích đạo khoảng 40 000 km. Đi 1 000 km mỗi ngày thì cần bao nhiêu ngày để đi hết một vòng?",
+      "expr": "40",
+      "answer": "40",
+      "explain": "≈ 40 ngày."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Diện tích bề mặt Trái Đất 510 triệu km², lục địa chiếm 29%. Diện tích lục địa (triệu km²):",
+      "expr": "147.9",
+      "answer": "147.9",
+      "explain": "510·29%."
+    }
+  ]
+}

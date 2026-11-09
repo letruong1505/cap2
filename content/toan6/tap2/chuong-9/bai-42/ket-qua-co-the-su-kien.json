@@ -1,0 +1,164 @@
+{
+  "id": "bai-42",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 2",
+  "chapter": "Chương IX. Dữ liệu và xác suất thực nghiệm",
+  "lesson": "Bài 42. Kết quả có thể và sự kiện trong trò chơi, thí nghiệm",
+  "section": "",
+  "bookPage": 89,
+  "requirements": [
+    "Liệt kê các kết quả có thể của trò chơi, thí nghiệm; nhận biết sự kiện chắc chắn, không thể, có thể xảy ra."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khi thực hiện trò chơi hay thí nghiệm, ta có thể liệt kê tất cả các kết quả có thể xảy ra. Ví dụ tung đồng xu có 2 kết quả: sấp (S), ngửa (N); gieo xúc xắc có 6 kết quả: 1; 2; 3; 4; 5; 6 chấm."
+    },
+    {
+      "type": "text",
+      "content": "Sự kiện chắc chắn xảy ra: luôn xảy ra. Sự kiện không thể xảy ra: không bao giờ xảy ra. Sự kiện có thể xảy ra: có thể xảy ra hoặc không."
+    },
+    {
+      "type": "text",
+      "content": "Khi lấy bóng từ hộp, kết quả có thể là màu của quả bóng được lấy ra."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Gieo một con xúc xắc. Có bao nhiêu kết quả có thể?",
+      "steps": [
+        "Các mặt 1, 2, 3, 4, 5, 6 chấm.",
+        "Có 6 kết quả."
+      ],
+      "expr": "6",
+      "answer": "6"
+    },
+    {
+      "problem": "Dạng đếm kết quả: tung hai đồng xu cùng lúc có bao nhiêu kết quả có thể?",
+      "steps": [
+        "SS, SN, NS, NN.",
+        "Có 2·2 = 4 kết quả."
+      ],
+      "expr": "2*2",
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Gieo xúc xắc, sự kiện \"số chấm nhỏ hơn 7\" là:",
+      "choices": [
+        "Không thể xảy ra",
+        "Chắc chắn xảy ra",
+        "Có thể xảy ra",
+        "Hiếm khi xảy ra"
+      ],
+      "answer": 1,
+      "explain": "Mặt lớn nhất là 6.",
+      "wrong_explain": {
+        "0": "Mọi mặt đều nhỏ hơn 7.",
+        "2": "Luôn xảy ra.",
+        "3": "Luôn xảy ra."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Gieo xúc xắc, sự kiện \"số chấm bằng 8\" là:",
+      "choices": [
+        "Không thể xảy ra",
+        "Chắc chắn",
+        "Có thể",
+        "Thường xuyên"
+      ],
+      "answer": 0,
+      "explain": "Không có mặt 8 chấm.",
+      "wrong_explain": {
+        "1": "Không có mặt 8.",
+        "2": "Không thể.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Gieo xúc xắc, sự kiện \"số chấm là số chẵn\" là:",
+      "choices": [
+        "Chắc chắn",
+        "Không thể",
+        "Luôn không xảy ra",
+        "Có thể xảy ra"
+      ],
+      "answer": 3,
+      "explain": "Có thể xảy ra.",
+      "wrong_explain": {
+        "0": "Có thể ra mặt lẻ.",
+        "1": "Có thể ra 2, 4, 6.",
+        "2": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tung một đồng xu có bao nhiêu kết quả có thể?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Sấp, ngửa."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hộp có 3 bóng: xanh, đỏ, vàng. Lấy 1 bóng có bao nhiêu kết quả có thể?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "3."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Gieo xúc xắc, có bao nhiêu kết quả làm sự kiện \"số chấm là số nguyên tố\" xảy ra?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "2, 3, 5."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Gieo xúc xắc, có bao nhiêu kết quả làm sự kiện \"số chấm chia hết cho 3\" xảy ra?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "3, 6."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Quay vòng quay chia 8 ô đánh số 1 đến 8. Có bao nhiêu kết quả có thể?",
+      "expr": "8",
+      "answer": "8",
+      "explain": "8."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Gieo hai con xúc xắc có bao nhiêu kết quả có thể?",
+      "expr": "36",
+      "answer": "36",
+      "explain": "6·6 = 36."
+    }
+  ]
+}

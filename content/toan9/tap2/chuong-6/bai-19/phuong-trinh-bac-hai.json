@@ -1,0 +1,157 @@
+{
+  "id": "bai-19",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 2",
+  "chapter": "Chương VI. Hàm số y = ax² (a ≠ 0). Phương trình bậc hai một ẩn",
+  "lesson": "Bài 19. Phương trình bậc hai một ẩn",
+  "section": "",
+  "bookPage": 10,
+  "requirements": [
+    "Nhận biết phương trình bậc hai một ẩn; giải bằng công thức nghiệm, công thức nghiệm thu gọn; dùng máy tính cầm tay."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phương trình bậc hai một ẩn có dạng ax² + bx + c = 0 (a ≠ 0)."
+    },
+    {
+      "type": "formula",
+      "content": "Δ = b² − 4ac;  Δ > 0: x₁,₂ = (−b ± √Δ)/(2a);  Δ = 0: x₁ = x₂ = −b/(2a);  Δ < 0: vô nghiệm"
+    },
+    {
+      "type": "text",
+      "content": "Công thức nghiệm thu gọn khi b = 2b′: Δ′ = b′² − ac; Δ′ > 0: x₁,₂ = (−b′ ± √Δ′)/a."
+    },
+    {
+      "type": "text",
+      "content": "Trường hợp đặc biệt: c = 0 thì đưa về x(ax + b) = 0; b = 0 thì x² = −c/a."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính Δ của x² − 5x + 6 = 0.",
+      "steps": [
+        "Δ = 25 − 24.",
+        "= 1 > 0: hai nghiệm x = 3, x = 2."
+      ],
+      "expr": "25-24",
+      "answer": "1"
+    },
+    {
+      "problem": "Dạng công thức nghiệm thu gọn: x² − 6x + 5 = 0, tính Δ′ và nghiệm lớn.",
+      "steps": [
+        "b′ = −3, Δ′ = 9 − 5 = 4.",
+        "x = 3 + 2 = 5."
+      ],
+      "expr": "3+2",
+      "answer": "5"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phương trình nào là phương trình bậc hai một ẩn?",
+      "choices": [
+        "2x² − 3x + 1 = 0",
+        "0x² + 2x − 1 = 0",
+        "x³ − x = 0",
+        "1/x² = 2"
+      ],
+      "answer": 0,
+      "explain": "Dạng ax² + bx + c = 0, a ≠ 0.",
+      "wrong_explain": {
+        "1": "a = 0.",
+        "2": "Bậc ba.",
+        "3": "Ẩn ở mẫu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi Δ < 0, phương trình bậc hai:",
+      "choices": [
+        "Có nghiệm kép",
+        "Có hai nghiệm phân biệt",
+        "Có vô số nghiệm",
+        "Vô nghiệm"
+      ],
+      "answer": 3,
+      "explain": "Không có nghiệm thực.",
+      "wrong_explain": {
+        "0": "Khi Δ = 0.",
+        "1": "Khi Δ > 0.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính Δ của 2x² + 3x − 2 = 0.",
+      "expr": "9+16",
+      "answer": "25",
+      "explain": "= 25."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải x² − 7x + 10 = 0. Nghiệm lớn là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "x = 5, x = 2."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải x² + 2x − 15 = 0. Nghiệm dương là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "x = 3, x = −5."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải 3x² − 12 = 0. Nghiệm dương là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "x² = 4."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải 2x² − 8x = 0. Nghiệm khác 0 là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "2x(x − 4) = 0."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phương trình x² − 4x + 4 = 0 có nghiệm kép bằng:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "(x − 2)² = 0."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính Δ′ của x² − 8x + 12 = 0.",
+      "expr": "16-12",
+      "answer": "4",
+      "explain": "= 4."
+    }
+  ]
+}

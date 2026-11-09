@@ -1,0 +1,157 @@
+{
+  "id": "bai-9",
+  "grade": 8,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 8",
+  "chapter": "Chương 3. Đặc điểm thổ nhưỡng và sinh vật Việt Nam",
+  "lesson": "Bài 9. Thổ nhưỡng Việt Nam",
+  "section": "",
+  "bookPage": 134,
+  "requirements": [
+    "Chứng minh được tính chất nhiệt đới gió mùa của lớp phủ thổ nhưỡng; trình bày đặc điểm và sự phân bố các nhóm đất chính; vấn đề thoái hoá đất."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Lớp phủ thổ nhưỡng mang tính chất nhiệt đới gió mùa: quá trình feralit diễn ra mạnh, tạo đất có màu đỏ vàng, lớp vỏ phong hoá dày; đất dễ bị xói mòn, rửa trôi."
+    },
+    {
+      "type": "text",
+      "content": "Ba nhóm đất chính: đất feralit (khoảng 65% diện tích, ở vùng đồi núi thấp, chua, nghèo mùn; đất feralit trên đá ba-dan màu mỡ ở Tây Nguyên, Đông Nam Bộ – trồng cây công nghiệp); đất phù sa (khoảng 24%, ở đồng bằng, màu mỡ – trồng lúa, hoa màu); đất mùn núi cao (khoảng 11%, trên 1 600–1 700 m – rừng đầu nguồn)."
+    },
+    {
+      "type": "text",
+      "content": "Thoái hoá đất (xói mòn, bạc màu, nhiễm mặn, nhiễm phèn, hoang mạc hoá) do tự nhiên và con người. Cần bảo vệ: trồng rừng, canh tác hợp lí (ruộng bậc thang), bón phân cân đối, cải tạo đất."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đất feralit chiếm 65%, phù sa 24%. Đất mùn núi cao chiếm bao nhiêu %?",
+      "steps": [
+        "100 − 65 − 24.",
+        "= 11%."
+      ],
+      "expr": "100-65-24",
+      "answer": "11"
+    },
+    {
+      "problem": "Dạng tính diện tích: diện tích đất liền 331 000 km², đất phù sa chiếm 24%. Diện tích đất phù sa?",
+      "steps": [
+        "331 000·24/100.",
+        "= 79 440 km²."
+      ],
+      "expr": "331000*24/100",
+      "answer": "79440"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nhóm đất chiếm diện tích lớn nhất nước ta là:",
+      "choices": [
+        "Đất phù sa",
+        "Đất mùn núi cao",
+        "Đất cát biển",
+        "Đất feralit"
+      ],
+      "answer": 3,
+      "explain": "Khoảng 65%.",
+      "wrong_explain": {
+        "0": "24%.",
+        "1": "11%.",
+        "2": "Ít."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đất feralit trên đá ba-dan tập trung ở:",
+      "choices": [
+        "Đồng bằng sông Hồng",
+        "Tây Bắc vùng núi cao",
+        "Tây Nguyên và Đông Nam Bộ",
+        "Ven biển miền Trung"
+      ],
+      "answer": 2,
+      "explain": "Ba-dan.",
+      "wrong_explain": {
+        "0": "Phù sa.",
+        "1": "Mùn núi cao.",
+        "3": "Cát."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Đất phù sa thích hợp nhất để:",
+      "choices": [
+        "Trồng rừng đầu nguồn",
+        "Trồng lúa, hoa màu",
+        "Trồng cà phê",
+        "Xây nhà cao tầng"
+      ],
+      "answer": 1,
+      "explain": "Phù sa.",
+      "wrong_explain": {
+        "0": "Đất mùn núi cao.",
+        "2": "Đất ba-dan.",
+        "3": "Không phải đặc trưng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Biện pháp chống xói mòn đất ở vùng đồi núi là:",
+      "choices": [
+        "Làm ruộng bậc thang, trồng rừng",
+        "Đốt rừng làm rẫy",
+        "Cày xới theo sườn dốc",
+        "Để đất trống"
+      ],
+      "answer": 0,
+      "explain": "Bảo vệ đất.",
+      "wrong_explain": {
+        "1": "Hại.",
+        "2": "Hại.",
+        "3": "Hại."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có bao nhiêu nhóm đất chính?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "3."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Diện tích 331 000 km², đất feralit 65%. Diện tích feralit (km²):",
+      "expr": "215150",
+      "answer": "215150",
+      "explain": "331 000·65%."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đất mùn núi cao xuất hiện ở độ cao trên khoảng bao nhiêu mét (theo sách: 1 600 m)?",
+      "expr": "1600",
+      "answer": "1600",
+      "explain": "1 600 m."
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "id": "bai-34",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 2",
+  "chapter": "Chương VIII. Những hình hình học cơ bản",
+  "lesson": "Bài 34. Đoạn thẳng. Độ dài đoạn thẳng",
+  "section": "",
+  "bookPage": 51,
+  "requirements": [
+    "Nhận biết đoạn thẳng, độ dài đoạn thẳng; so sánh hai đoạn thẳng; khi M nằm giữa A và B thì AM + MB = AB."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đoạn thẳng AB là hình gồm điểm A, điểm B và tất cả các điểm nằm giữa A và B. A, B là hai đầu mút."
+    },
+    {
+      "type": "text",
+      "content": "Mỗi đoạn thẳng có một độ dài, là một số dương. So sánh hai đoạn thẳng bằng cách so sánh độ dài."
+    },
+    {
+      "type": "formula",
+      "content": "M nằm giữa A và B ⇒ AM + MB = AB"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "M nằm giữa A và B, AM = 3 cm, MB = 5 cm. Tính AB.",
+      "steps": [
+        "AB = AM + MB.",
+        "= 3 + 5 = 8 cm."
+      ],
+      "expr": "3+5",
+      "answer": "8"
+    },
+    {
+      "problem": "Dạng tính đoạn còn lại: AB = 10 cm, C nằm giữa A và B, AC = 4 cm. Tính CB.",
+      "steps": [
+        "CB = AB − AC.",
+        "= 10 − 4 = 6 cm."
+      ],
+      "expr": "10-4",
+      "answer": "6"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đoạn thẳng AB gồm:",
+      "choices": [
+        "Chỉ hai điểm A và B",
+        "Đường thẳng qua A và B",
+        "Điểm A, điểm B và tất cả các điểm nằm giữa A và B",
+        "Tia AB"
+      ],
+      "answer": 2,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Còn các điểm nằm giữa.",
+        "1": "Đó là đường thẳng.",
+        "3": "Tia kéo dài về một phía."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Độ dài đoạn thẳng là:",
+      "choices": [
+        "Một số âm",
+        "Một số dương",
+        "Bằng 0",
+        "Không xác định"
+      ],
+      "answer": 1,
+      "explain": "Luôn dương.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Hai mút khác nhau.",
+        "3": "Có độ dài."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "M nằm giữa A và B, AM = 2,5 cm, MB = 4 cm. AB bằng:",
+      "expr": "2.5+4",
+      "answer": "6.5",
+      "explain": "6,5 cm."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "AB = 12 cm, M nằm giữa A và B, MB = 7 cm. AM bằng:",
+      "expr": "12-7",
+      "answer": "5",
+      "explain": "5 cm."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trên tia Ox lấy A, B với OA = 3 cm, OB = 8 cm. AB bằng:",
+      "expr": "8-3",
+      "answer": "5",
+      "explain": "A nằm giữa O và B: AB = 5 cm."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho 4 điểm A, B, C, D thẳng hàng theo thứ tự, AB = 2, BC = 3, CD = 4 (cm). AD bằng:",
+      "expr": "2+3+4",
+      "answer": "9",
+      "explain": "9 cm."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có 5 điểm trên một đường thẳng. Có bao nhiêu đoạn thẳng có hai đầu mút là hai trong các điểm đó?",
+      "expr": "5*4/2",
+      "answer": "10",
+      "explain": "10 đoạn."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đổi 3,5 dm sang cm.",
+      "expr": "35",
+      "answer": "35",
+      "explain": "35 cm."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có 6 điểm, không có ba điểm thẳng hàng. Số đoạn thẳng nối hai điểm là:",
+      "expr": "15",
+      "answer": "15",
+      "explain": "6·5 : 2 = 15."
+    }
+  ]
+}

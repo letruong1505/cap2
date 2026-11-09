@@ -1,0 +1,153 @@
+{
+  "id": "bai-30",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 2",
+  "chapter": "Chương IX. Đường tròn ngoại tiếp và đường tròn nội tiếp",
+  "lesson": "Bài 30. Đa giác đều",
+  "section": "",
+  "bookPage": 84,
+  "requirements": [
+    "Nhận biết đa giác đều; phép quay giữ nguyên đa giác đều."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đa giác đều là đa giác có tất cả các cạnh bằng nhau và tất cả các góc bằng nhau. Mỗi đa giác đều có đường tròn ngoại tiếp và nội tiếp cùng tâm."
+    },
+    {
+      "type": "formula",
+      "content": "Mỗi góc của n-giác đều = (n − 2)·180°/n"
+    },
+    {
+      "type": "text",
+      "content": "Phép quay tâm O góc α biến điểm M thành M′ với OM′ = OM và góc MOM′ = α. Phép quay tâm O góc 360°/n (và các bội của nó) giữ nguyên n-giác đều tâm O."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính mỗi góc của ngũ giác đều.",
+      "steps": [
+        "(5 − 2)·180°/5.",
+        "= 108°."
+      ],
+      "expr": "3*180/5",
+      "answer": "108"
+    },
+    {
+      "problem": "Dạng phép quay: có bao nhiêu phép quay (góc từ 0° đến dưới 360°) giữ nguyên lục giác đều?",
+      "steps": [
+        "Góc 0°, 60°, 120°, 180°, 240°, 300°.",
+        "Có 6 phép quay."
+      ],
+      "expr": "6",
+      "answer": "6"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đa giác đều là đa giác có:",
+      "choices": [
+        "Các cạnh bằng nhau và các góc bằng nhau",
+        "Chỉ các cạnh bằng nhau",
+        "Chỉ các góc bằng nhau",
+        "Các đường chéo bằng nhau"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Hình thoi không đều.",
+        "2": "Hình chữ nhật không đều.",
+        "3": "Không đủ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phép quay nào giữ nguyên tam giác đều tâm O?",
+      "choices": [
+        "90°",
+        "60°",
+        "45°",
+        "Phép quay 120°"
+      ],
+      "answer": 3,
+      "explain": "360/3 = 120.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mỗi góc của lục giác đều bằng:",
+      "expr": "120",
+      "answer": "120",
+      "explain": "4·180/6."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mỗi góc của bát giác đều bằng:",
+      "expr": "135",
+      "answer": "135",
+      "explain": "6·180/8."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tổng các góc của ngũ giác là:",
+      "expr": "540",
+      "answer": "540",
+      "explain": "3·180."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phép quay nhỏ nhất (khác 0°) giữ nguyên hình vuông có góc:",
+      "expr": "90",
+      "answer": "90",
+      "explain": "360/4."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đa giác đều có mỗi góc 140° có bao nhiêu cạnh?",
+      "expr": "9",
+      "answer": "9",
+      "explain": "(n − 2)180/n = 140 ⇒ n = 9."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lục giác đều cạnh 5 nội tiếp đường tròn bán kính:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "R bằng cạnh."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phép quay nhỏ nhất (khác 0°) giữ nguyên ngũ giác đều có góc:",
+      "expr": "72",
+      "answer": "72",
+      "explain": "360/5."
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "id": "bai-24",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 2",
+  "chapter": "Chương VII. Tần số và tần số tương đối",
+  "lesson": "Bài 24. Bảng tần số, tần số tương đối ghép nhóm và biểu đồ",
+  "section": "",
+  "bookPage": 44,
+  "requirements": [
+    "Lập bảng tần số, tần số tương đối ghép nhóm; vẽ biểu đồ tần số dạng cột, đoạn thẳng cho số liệu ghép nhóm."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khi dữ liệu có nhiều giá trị, ta ghép thành các nhóm dạng nửa khoảng [a; b), b − a là độ dài nhóm. Tần số của nhóm là số giá trị thuộc nhóm đó."
+    },
+    {
+      "type": "text",
+      "content": "Giá trị đại diện của nhóm [a; b) là trung điểm (a + b)/2."
+    },
+    {
+      "type": "text",
+      "content": "Bảng tần số tương đối ghép nhóm có thêm dòng tần số tương đối của từng nhóm; biểu đồ tần số ghép nhóm dạng cột vẽ các cột liền nhau."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Nhóm [150; 155) có giá trị đại diện bằng bao nhiêu?",
+      "steps": [
+        "(150 + 155)/2.",
+        "= 152,5."
+      ],
+      "expr": "(150+155)/2",
+      "answer": "152.5"
+    },
+    {
+      "problem": "Dạng tính trung bình số liệu ghép nhóm: [0; 10) tần số 3, [10; 20) tần số 7. Tính trung bình gần đúng.",
+      "steps": [
+        "Giá trị đại diện 5 và 15.",
+        "(5·3 + 15·7)/10 = 12."
+      ],
+      "expr": "(5*3+15*7)/10",
+      "answer": "12"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Giá trị đại diện của nhóm [a; b) là:",
+      "choices": [
+        "a",
+        "b",
+        "b − a",
+        "(a + b)/2"
+      ],
+      "answer": 3,
+      "explain": "Trung điểm.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Đó là độ dài nhóm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nhóm [20; 30) chứa giá trị nào?",
+      "choices": [
+        "30",
+        "19",
+        "20",
+        "31"
+      ],
+      "answer": 2,
+      "explain": "[20; 30) gồm 20 ≤ x < 30.",
+      "wrong_explain": {
+        "0": "Nửa khoảng không chứa 30.",
+        "1": "Nhỏ hơn 20.",
+        "3": "Lớn hơn 30."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Độ dài nhóm [40; 45) là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "5."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giá trị đại diện của [60; 70) là:",
+      "expr": "65",
+      "answer": "65",
+      "explain": "65."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bảng ghép nhóm có tần số 4, 9, 12, 5. Cỡ mẫu là:",
+      "expr": "30",
+      "answer": "30",
+      "explain": "30."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Với bảng trên, tần số tương đối của nhóm có tần số 12 là (%):",
+      "expr": "40",
+      "answer": "40",
+      "explain": "12/30 = 40%."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Dữ liệu 12, 15, 18, 21, 25, 27, 29. Có bao nhiêu giá trị thuộc [20; 30)?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "21, 25, 27, 29."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chiều cao (cm): [150; 160) 8 bạn, [160; 170) 12 bạn. Chiều cao trung bình gần đúng:",
+      "expr": "(155*8+165*12)/20",
+      "answer": "161",
+      "explain": "161 cm."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nhóm [5; 10) có tần số tương đối 15%, cỡ mẫu 40. Tần số nhóm là:",
+      "expr": "6",
+      "answer": "6",
+      "explain": "6."
+    }
+  ]
+}

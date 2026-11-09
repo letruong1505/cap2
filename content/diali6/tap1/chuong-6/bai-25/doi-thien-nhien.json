@@ -1,0 +1,157 @@
+{
+  "id": "bai-25",
+  "grade": 6,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 6",
+  "chapter": "Chương 6. Đất và sinh vật trên Trái Đất",
+  "lesson": "Bài 25. Sự phân bố các đới thiên nhiên trên Trái Đất",
+  "section": "",
+  "bookPage": 175,
+  "requirements": [
+    "Xác định được các đới thiên nhiên trên Trái Đất và đặc điểm chính."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đới nóng: nằm giữa hai chí tuyến, nhiệt độ cao quanh năm, lượng mưa lớn; thực vật xanh tốt (rừng nhiệt đới, xa-van), động vật phong phú."
+    },
+    {
+      "type": "text",
+      "content": "Đới ôn hoà: nằm từ chí tuyến đến vòng cực ở hai bán cầu; khí hậu có bốn mùa rõ rệt; thảm thực vật thay đổi theo mùa (rừng lá rộng, rừng lá kim, thảo nguyên)."
+    },
+    {
+      "type": "text",
+      "content": "Đới lạnh: từ vòng cực đến cực; khí hậu giá lạnh, băng tuyết phủ phần lớn thời gian; thực vật nghèo nàn (rêu, địa y), động vật có lớp mỡ dày, lông dày (gấu trắng, chim cánh cụt)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Có bao nhiêu đới thiên nhiên chính (nóng, ôn hoà, lạnh)?",
+      "steps": [
+        "Đếm.",
+        "3."
+      ],
+      "expr": "3",
+      "answer": "3"
+    },
+    {
+      "problem": "Dạng so sánh nhiệt độ: nhiệt độ trung bình năm ở đới nóng khoảng 27 °C, đới lạnh khoảng −10 °C. Chênh lệch?",
+      "steps": [
+        "27 − (−10).",
+        "= 37 °C."
+      ],
+      "expr": "27+10",
+      "answer": "37"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đới nóng nằm:",
+      "choices": [
+        "Từ vòng cực đến cực",
+        "Giữa hai chí tuyến",
+        "Từ chí tuyến đến vòng cực",
+        "Chỉ ở bán cầu Bắc"
+      ],
+      "answer": 1,
+      "explain": "Đới nóng.",
+      "wrong_explain": {
+        "0": "Đới lạnh.",
+        "2": "Ôn hoà.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đới có khí hậu bốn mùa rõ rệt là:",
+      "choices": [
+        "Đới ôn hoà",
+        "Đới nóng",
+        "Đới lạnh",
+        "Không có đới nào"
+      ],
+      "answer": 0,
+      "explain": "Ôn hoà.",
+      "wrong_explain": {
+        "1": "Nóng quanh năm.",
+        "2": "Lạnh quanh năm.",
+        "3": "Có."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Thực vật chủ yếu ở đới lạnh là:",
+      "choices": [
+        "Rừng mưa nhiệt đới",
+        "Thảo nguyên",
+        "Cây lá rộng",
+        "Rêu, địa y"
+      ],
+      "answer": 3,
+      "explain": "Đài nguyên.",
+      "wrong_explain": {
+        "0": "Đới nóng.",
+        "1": "Ôn hoà.",
+        "2": "Ôn hoà."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Động vật tiêu biểu ở đới lạnh là:",
+      "choices": [
+        "Voi",
+        "Hươu cao cổ",
+        "Gấu trắng",
+        "Hổ"
+      ],
+      "answer": 2,
+      "explain": "Thích nghi giá lạnh.",
+      "wrong_explain": {
+        "0": "Đới nóng.",
+        "1": "Xa-van.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có bao nhiêu đới ôn hoà (hai bán cầu)?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "2."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tổng số đới khí hậu (1 nóng, 2 ôn hoà, 2 lạnh):",
+      "expr": "5",
+      "answer": "5",
+      "explain": "5."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nhiệt độ mùa đông ở đới lạnh −40 °C, mùa hè 10 °C. Biên độ nhiệt:",
+      "expr": "50",
+      "answer": "50",
+      "explain": "10 − (−40)."
+    }
+  ]
+}

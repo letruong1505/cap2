@@ -1,0 +1,150 @@
+{
+  "id": "bai-16",
+  "grade": 9,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 9",
+  "chapter": "Chương V. Năng lượng với cuộc sống",
+  "lesson": "Bài 16. Vòng năng lượng trên Trái Đất. Năng lượng hoá thạch",
+  "section": "",
+  "bookPage": 75,
+  "requirements": [
+    "Mô tả sơ lược vòng năng lượng trên Trái Đất; nêu được năng lượng hoá thạch và tác hại khi sử dụng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hầu hết năng lượng trên Trái Đất có nguồn gốc từ Mặt Trời. Năng lượng Mặt Trời được thực vật hấp thụ qua quang hợp, chuyển cho động vật qua chuỗi thức ăn; tạo ra gió, mưa, dòng chảy; xác sinh vật qua hàng triệu năm tạo thành nhiên liệu hoá thạch."
+    },
+    {
+      "type": "text",
+      "content": "Nhiên liệu hoá thạch gồm than đá, dầu mỏ, khí tự nhiên – nguồn năng lượng không tái tạo, đang cạn kiệt."
+    },
+    {
+      "type": "text",
+      "content": "Đốt nhiên liệu hoá thạch thải ra khí CO₂ (gây hiệu ứng nhà kính, biến đổi khí hậu), SO₂, NO₂ (gây mưa acid), bụi mịn (gây bệnh hô hấp)."
+    },
+    {
+      "type": "text",
+      "content": "Giải pháp: tiết kiệm năng lượng, sử dụng năng lượng tái tạo, nâng cao hiệu suất thiết bị."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đốt 1 kg than tạo khoảng 3 kg CO₂. Đốt 200 kg than tạo bao nhiêu kg CO₂?",
+      "steps": [
+        "3·200.",
+        "= 600 kg."
+      ],
+      "expr": "3*200",
+      "answer": "600"
+    },
+    {
+      "problem": "Dạng tính phần trăm: điện từ than chiếm 45% trong 260 tỉ kWh. Điện từ than (tỉ kWh)?",
+      "steps": [
+        "260·45/100.",
+        "= 117 tỉ kWh."
+      ],
+      "expr": "260*45/100",
+      "answer": "117"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nguồn gốc chủ yếu của năng lượng trên Trái Đất là:",
+      "choices": [
+        "Mặt Trời",
+        "Mặt Trăng",
+        "Lòng đất",
+        "Gió"
+      ],
+      "answer": 0,
+      "explain": "Năng lượng Mặt Trời.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Một phần nhỏ (địa nhiệt).",
+        "3": "Gió có nguồn gốc từ Mặt Trời."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nhiên liệu hoá thạch gồm:",
+      "choices": [
+        "Gió, nước",
+        "Củi, rơm",
+        "Uranium",
+        "Than đá, dầu mỏ, khí tự nhiên"
+      ],
+      "answer": 3,
+      "explain": "Hoá thạch.",
+      "wrong_explain": {
+        "0": "Tái tạo.",
+        "1": "Sinh khối.",
+        "2": "Hạt nhân."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khí thải nào gây hiệu ứng nhà kính khi đốt nhiên liệu hoá thạch?",
+      "choices": [
+        "O₂",
+        "N₂",
+        "CO₂",
+        "H₂"
+      ],
+      "answer": 2,
+      "explain": "Carbon dioxide.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đốt 1 lít xăng tạo 2,3 kg CO₂. Đốt 40 lít tạo bao nhiêu kg?",
+      "expr": "92",
+      "answer": "92",
+      "explain": "2,3·40."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trữ lượng mỏ 600 triệu tấn, khai thác 30 triệu tấn/năm. Đủ bao nhiêu năm?",
+      "expr": "20",
+      "answer": "20",
+      "explain": "600 : 30."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong: than, gió, dầu, Mặt Trời, khí tự nhiên – có bao nhiêu nhiên liệu hoá thạch?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Than, dầu, khí."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một nhà máy nhiệt điện có hiệu suất 35%. Từ 1 000 MJ nhiệt năng tạo bao nhiêu MJ điện?",
+      "expr": "350",
+      "answer": "350",
+      "explain": "1 000·35%."
+    }
+  ]
+}

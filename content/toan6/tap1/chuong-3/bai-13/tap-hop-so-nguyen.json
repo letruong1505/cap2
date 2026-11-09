@@ -1,0 +1,168 @@
+{
+  "id": "bai-13",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương III. Số nguyên",
+  "lesson": "Bài 13. Tập hợp các số nguyên",
+  "section": "",
+  "bookPage": 57,
+  "requirements": [
+    "Nhận biết số nguyên âm, tập hợp số nguyên; biểu diễn trên trục số; so sánh hai số nguyên; số đối."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các số −1; −2; −3; … là số nguyên âm. Tập hợp số nguyên ℤ = {…; −3; −2; −1; 0; 1; 2; 3; …} gồm số nguyên âm, số 0 và số nguyên dương. Số 0 không là số nguyên âm, cũng không là số nguyên dương."
+    },
+    {
+      "type": "text",
+      "content": "Trên trục số nằm ngang, điểm biểu diễn số nguyên a nằm bên trái điểm biểu diễn số nguyên b thì a < b. Mọi số nguyên dương đều lớn hơn 0, mọi số nguyên âm đều nhỏ hơn 0 và nhỏ hơn mọi số nguyên dương."
+    },
+    {
+      "type": "text",
+      "content": "Hai số nguyên trên trục số nằm ở hai phía của điểm 0 và cách đều điểm 0 gọi là hai số đối nhau. Số đối của a là −a; số đối của 0 là 0."
+    },
+    {
+      "type": "text",
+      "content": "Số nguyên âm dùng để biểu thị nhiệt độ dưới 0 °C, độ cao dưới mực nước biển, số tiền nợ, năm trước Công nguyên…"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Nhiệt độ buổi trưa là 5 °C, đến đêm giảm 8 °C. Nhiệt độ ban đêm là bao nhiêu?",
+      "steps": [
+        "Nhiệt độ ban đêm = 5 − 8.",
+        "= −3 °C."
+      ],
+      "expr": "5-8",
+      "answer": "-3"
+    },
+    {
+      "problem": "Dạng đếm số nguyên trong khoảng: có bao nhiêu số nguyên x với −4 < x ≤ 3?",
+      "steps": [
+        "x ∈ {−3; −2; −1; 0; 1; 2; 3}.",
+        "Có 7 số."
+      ],
+      "expr": "3-(-4)",
+      "answer": "7"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số đối của −7 là:",
+      "choices": [
+        "−7",
+        "0",
+        "7",
+        "1/7"
+      ],
+      "answer": 2,
+      "explain": "Hai số đối nhau cách đều 0.",
+      "wrong_explain": {
+        "0": "Số đối của −7 là 7.",
+        "1": "Số đối của 0 mới là 0.",
+        "3": "Không phải số đối."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khẳng định nào đúng?",
+      "choices": [
+        "−5 > −2",
+        "−5 < −2",
+        "−5 > 0",
+        "−2 < −5"
+      ],
+      "answer": 1,
+      "explain": "Trên trục số −5 nằm bên trái −2.",
+      "wrong_explain": {
+        "0": "−5 nằm bên trái −2 trên trục số.",
+        "2": "Số nguyên âm nhỏ hơn 0.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Số 0 là:",
+      "choices": [
+        "Không phải số nguyên âm, cũng không phải số nguyên dương",
+        "Số nguyên âm",
+        "Số nguyên dương",
+        "Không phải số nguyên"
+      ],
+      "answer": 0,
+      "explain": "0 ∈ ℤ.",
+      "wrong_explain": {
+        "1": "Không đúng.",
+        "2": "Không đúng.",
+        "3": "0 ∈ ℤ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có bao nhiêu số nguyên x thoả mãn −3 ≤ x ≤ 3?",
+      "expr": "7",
+      "answer": "7",
+      "explain": "−3; −2; −1; 0; 1; 2; 3."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số nguyên lớn nhất nhỏ hơn −10 là:",
+      "expr": "-11",
+      "answer": "-11",
+      "explain": "−11."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số nguyên âm lớn nhất là:",
+      "expr": "-1",
+      "answer": "-1",
+      "explain": "−1."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một thợ lặn ở độ sâu 25 m dưới mực nước biển. Viết độ cao đó bằng số nguyên (m).",
+      "expr": "-25",
+      "answer": "-25",
+      "explain": "−25 m."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm số đối của số đối của −9.",
+      "expr": "-9",
+      "answer": "-9",
+      "explain": "Số đối của −9 là 9, số đối của 9 là −9."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tổng của số nguyên âm lớn nhất có một chữ số và số nguyên dương nhỏ nhất là:",
+      "expr": "-1+1",
+      "answer": "0",
+      "explain": "−1 + 1 = 0."
+    }
+  ]
+}

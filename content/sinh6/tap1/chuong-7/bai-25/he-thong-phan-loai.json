@@ -1,0 +1,161 @@
+{
+  "id": "bai-25",
+  "grade": 6,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 6",
+  "chapter": "Chương VII. Đa dạng thế giới sống",
+  "lesson": "Bài 25. Hệ thống phân loại sinh vật",
+  "section": "",
+  "bookPage": 86,
+  "requirements": [
+    "Nêu được sự cần thiết của phân loại thế giới sống; các bậc phân loại; năm giới sinh vật; cách gọi tên sinh vật."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phân loại thế giới sống giúp gọi đúng tên sinh vật, đưa sinh vật vào đúng nhóm phân loại, thấy được sự đa dạng và mối quan hệ giữa các sinh vật."
+    },
+    {
+      "type": "text",
+      "content": "Các bậc phân loại từ thấp đến cao: Loài → Chi (giống) → Họ → Bộ → Lớp → Ngành → Giới."
+    },
+    {
+      "type": "text",
+      "content": "Hệ thống năm giới: Khởi sinh (vi khuẩn – nhân sơ), Nguyên sinh, Nấm, Thực vật, Động vật."
+    },
+    {
+      "type": "text",
+      "content": "Mỗi sinh vật có tên khoa học gồm tên chi (viết hoa chữ cái đầu) và tên loài, viết in nghiêng, ví dụ Homo sapiens (người). Ngoài ra có tên địa phương (tên thường gọi)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Có bao nhiêu bậc phân loại từ Loài đến Giới?",
+      "steps": [
+        "Loài, Chi, Họ, Bộ, Lớp, Ngành, Giới.",
+        "7 bậc."
+      ],
+      "expr": "7",
+      "answer": "7"
+    },
+    {
+      "problem": "Dạng đếm giới: trong năm giới, bỏ giới Khởi sinh (nhân sơ) thì còn bao nhiêu giới gồm sinh vật nhân thực?",
+      "steps": [
+        "5 − 1.",
+        "= 4 giới."
+      ],
+      "expr": "5-1",
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Bậc phân loại thấp nhất là:",
+      "choices": [
+        "Loài",
+        "Giới",
+        "Ngành",
+        "Họ"
+      ],
+      "answer": 0,
+      "explain": "Loài.",
+      "wrong_explain": {
+        "1": "Cao nhất.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Vi khuẩn thuộc giới:",
+      "choices": [
+        "Nấm",
+        "Nguyên sinh",
+        "Thực vật",
+        "Khởi sinh"
+      ],
+      "answer": 3,
+      "explain": "Nhân sơ.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tên khoa học của sinh vật gồm:",
+      "choices": [
+        "Tên họ và tên bộ",
+        "Tên địa phương",
+        "Tên chi và tên loài",
+        "Tên ngành"
+      ],
+      "answer": 2,
+      "explain": "Cách đặt tên hai phần.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không phải tên khoa học.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nấm men thuộc giới:",
+      "choices": [
+        "Thực vật",
+        "Nấm",
+        "Động vật",
+        "Khởi sinh"
+      ],
+      "answer": 1,
+      "explain": "Giới Nấm.",
+      "wrong_explain": {
+        "0": "Không có lục lạp.",
+        "2": "Không.",
+        "3": "Nhân thực."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hệ thống phân loại có bao nhiêu giới?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "5 giới."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Từ bậc Họ đến bậc Giới có bao nhiêu bậc (kể cả Họ và Giới)?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Họ, Bộ, Lớp, Ngành, Giới."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong: vi khuẩn lao, trùng roi, nấm rơm, cây lúa, con hổ – có bao nhiêu sinh vật nhân thực?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Trừ vi khuẩn."
+    }
+  ]
+}

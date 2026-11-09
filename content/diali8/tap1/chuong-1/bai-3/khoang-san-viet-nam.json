@@ -1,0 +1,157 @@
+{
+  "id": "bai-3",
+  "grade": 8,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 8",
+  "chapter": "Chương 1. Đặc điểm vị trí địa lí, phạm vi lãnh thổ, địa hình và khoáng sản Việt Nam",
+  "lesson": "Bài 3. Khoáng sản Việt Nam",
+  "section": "",
+  "bookPage": 109,
+  "requirements": [
+    "Trình bày được đặc điểm chung của tài nguyên khoáng sản Việt Nam; sự phân bố các loại khoáng sản chủ yếu; vấn đề sử dụng hợp lí."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Việt Nam có nguồn khoáng sản phong phú, đa dạng (khoảng 60 loại khoáng sản khác nhau, hơn 5 000 điểm mỏ), phần lớn có trữ lượng vừa và nhỏ; một số có trữ lượng lớn: than, dầu khí, bô-xít, sắt, đá vôi, a-pa-tít, titan."
+    },
+    {
+      "type": "text",
+      "content": "Phân bố: than đá (Quảng Ninh), dầu mỏ, khí tự nhiên (thềm lục địa phía nam – bể Cửu Long, Nam Côn Sơn), bô-xít (Tây Nguyên), sắt (Thái Nguyên, Hà Tĩnh), a-pa-tít (Lào Cai), đá vôi (miền Bắc, Bắc Trung Bộ), titan (ven biển miền Trung)."
+    },
+    {
+      "type": "text",
+      "content": "Sử dụng hợp lí: khai thác tiết kiệm, hiệu quả, áp dụng công nghệ hiện đại; bảo vệ môi trường; thực hiện nghiêm Luật Khoáng sản."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Than Quảng Ninh trữ lượng khoảng 3 tỉ tấn, mỗi năm khai thác khoảng 40 triệu tấn. Đủ khai thác khoảng bao nhiêu năm?",
+      "steps": [
+        "3 000 : 40.",
+        "= 75 năm."
+      ],
+      "expr": "3000/40",
+      "answer": "75"
+    },
+    {
+      "problem": "Dạng đếm: Việt Nam có khoảng 60 loại khoáng sản, trong đó có 7 loại trữ lượng lớn được nêu. Số loại còn lại?",
+      "steps": [
+        "60 − 7.",
+        "= 53."
+      ],
+      "expr": "60-7",
+      "answer": "53"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đặc điểm chung của khoáng sản Việt Nam là:",
+      "choices": [
+        "Nghèo nàn, ít loại",
+        "Toàn bộ trữ lượng lớn",
+        "Chỉ có than",
+        "Phong phú, đa dạng, phần lớn trữ lượng vừa và nhỏ"
+      ],
+      "answer": 3,
+      "explain": "Đặc điểm.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Than đá tập trung chủ yếu ở:",
+      "choices": [
+        "Tây Nguyên",
+        "Lào Cai",
+        "Quảng Ninh",
+        "Thềm lục địa phía nam"
+      ],
+      "answer": 2,
+      "explain": "Quảng Ninh.",
+      "wrong_explain": {
+        "0": "Bô-xít.",
+        "1": "A-pa-tít.",
+        "3": "Dầu khí."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Bô-xít phân bố chủ yếu ở:",
+      "choices": [
+        "Quảng Ninh",
+        "Tây Nguyên",
+        "Thái Nguyên",
+        "Hà Tĩnh"
+      ],
+      "answer": 1,
+      "explain": "Tây Nguyên.",
+      "wrong_explain": {
+        "0": "Than.",
+        "2": "Sắt.",
+        "3": "Sắt."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dầu mỏ, khí tự nhiên tập trung ở:",
+      "choices": [
+        "Thềm lục địa phía nam",
+        "Vùng núi Tây Bắc",
+        "Đồng bằng sông Hồng nội địa",
+        "Tây Nguyên"
+      ],
+      "answer": 0,
+      "explain": "Bể Cửu Long, Nam Côn Sơn.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không chủ yếu.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Việt Nam có khoảng 60 loại khoáng sản. Nếu 1/4 số loại có trữ lượng lớn thì có bao nhiêu loại?",
+      "expr": "60/4",
+      "answer": "15",
+      "explain": "15 loại."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mỏ sắt có 500 triệu tấn quặng, hàm lượng sắt 60%. Lượng sắt (triệu tấn):",
+      "expr": "300",
+      "answer": "300",
+      "explain": "500·60%."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong: than, bô-xít, a-pa-tít, đá vôi, titan – có bao nhiêu khoáng sản phi kim loại (a-pa-tít, đá vôi)?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "2."
+    }
+  ]
+}

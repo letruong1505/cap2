@@ -1,0 +1,172 @@
+{
+  "id": "bai-2",
+  "grade": 6,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 6",
+  "chapter": "Chương I. Mở đầu về Khoa học tự nhiên",
+  "lesson": "Bài 2. An toàn trong phòng thực hành",
+  "section": "",
+  "bookPage": 11,
+  "requirements": [
+    "Nêu được các quy định an toàn khi học trong phòng thực hành; nhận biết các kí hiệu cảnh báo."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Quy định an toàn: chỉ vào phòng thực hành khi có sự đồng ý của giáo viên; mặc trang phục gọn gàng, đeo găng tay, kính bảo vệ mắt khi cần; không ăn uống, đùa nghịch; đọc kĩ hướng dẫn trên nhãn hoá chất, dụng cụ."
+    },
+    {
+      "type": "text",
+      "content": "Thực hiện đúng hướng dẫn của giáo viên; báo ngay khi gặp sự cố (vỡ dụng cụ, đổ hoá chất, cháy…). Sau khi làm xong phải thu gom chất thải, rửa sạch dụng cụ và tay."
+    },
+    {
+      "type": "text",
+      "content": "Kí hiệu cảnh báo: hình tam giác viền đen nền vàng là cảnh báo nguy hiểm; hình tròn viền đỏ là cấm; hình vuông viền đỏ nền trắng (hình thoi) là cảnh báo hoá chất (độc, ăn mòn, dễ cháy…); hình chữ nhật nền xanh là chỉ dẫn thực hiện."
+    },
+    {
+      "type": "text",
+      "content": "Một số kí hiệu: chất dễ cháy, chất độc, chất ăn mòn, điện cao thế, cấm lửa, lối thoát hiểm."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dạng đếm quy tắc: trong các việc \"đeo kính bảo hộ, ăn bánh trong phòng, đọc nhãn hoá chất, nếm thử hoá chất, rửa tay sau thí nghiệm\", có bao nhiêu việc đúng quy định?",
+      "steps": [
+        "Việc đúng: đeo kính, đọc nhãn, rửa tay.",
+        "Có 3 việc."
+      ],
+      "expr": "3",
+      "answer": "3"
+    },
+    {
+      "problem": "Một phòng thực hành có 4 loại kí hiệu cảnh báo, mỗi loại dán 3 tấm. Tổng số tấm kí hiệu là bao nhiêu?",
+      "steps": [
+        "4·3.",
+        "= 12 tấm."
+      ],
+      "expr": "4*3",
+      "answer": "12"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kí hiệu hình tròn viền đỏ có ý nghĩa:",
+      "choices": [
+        "Chỉ dẫn",
+        "Cấm thực hiện",
+        "Cảnh báo nguy hiểm",
+        "Không có ý nghĩa"
+      ],
+      "answer": 1,
+      "explain": "Biển cấm.",
+      "wrong_explain": {
+        "0": "Hình chữ nhật nền xanh.",
+        "2": "Hình tam giác nền vàng.",
+        "3": "Có."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi làm đổ hoá chất, em cần:",
+      "choices": [
+        "Báo ngay cho giáo viên",
+        "Tự lau bằng tay",
+        "Bỏ đi không báo",
+        "Ngửi để nhận biết"
+      ],
+      "answer": 0,
+      "explain": "Báo giáo viên để xử lí.",
+      "wrong_explain": {
+        "1": "Nguy hiểm.",
+        "2": "Sai.",
+        "3": "Nguy hiểm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Việc nào không được làm trong phòng thực hành?",
+      "choices": [
+        "Đọc kĩ hướng dẫn",
+        "Đeo găng tay",
+        "Rửa tay sau khi làm",
+        "Ăn uống, đùa nghịch"
+      ],
+      "answer": 3,
+      "explain": "Gây mất an toàn.",
+      "wrong_explain": {
+        "0": "Cần làm.",
+        "1": "Cần làm.",
+        "2": "Cần làm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Kí hiệu hình tam giác viền đen nền vàng là:",
+      "choices": [
+        "Biển cấm",
+        "Chỉ dẫn",
+        "Cảnh báo nguy hiểm",
+        "Lối thoát hiểm"
+      ],
+      "answer": 2,
+      "explain": "Cảnh báo.",
+      "wrong_explain": {
+        "0": "Hình tròn viền đỏ.",
+        "1": "Nền xanh.",
+        "3": "Nền xanh lá."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Sau khi kết thúc thí nghiệm, em cần:",
+      "choices": [
+        "Để nguyên dụng cụ",
+        "Thu dọn, rửa sạch dụng cụ và rửa tay",
+        "Đổ hoá chất thừa vào lọ",
+        "Mang hoá chất về nhà"
+      ],
+      "answer": 1,
+      "explain": "Giữ an toàn.",
+      "wrong_explain": {
+        "0": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong các kí hiệu: cấm lửa, chất độc, lối thoát hiểm, chất ăn mòn, có bao nhiêu kí hiệu cảnh báo hoá chất?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Chất độc, chất ăn mòn."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một nhóm 6 bạn, mỗi bạn cần 1 đôi găng tay và 1 kính bảo hộ. Tổng số đồ bảo hộ (đôi găng + kính) là:",
+      "expr": "6+6",
+      "answer": "12",
+      "explain": "12."
+    }
+  ]
+}

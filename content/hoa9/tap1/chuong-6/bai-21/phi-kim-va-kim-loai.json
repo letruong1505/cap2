@@ -1,0 +1,157 @@
+{
+  "id": "bai-21",
+  "grade": 9,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 9",
+  "chapter": "Chương VI. Kim loại. Sự khác nhau cơ bản giữa phi kim và kim loại",
+  "lesson": "Bài 21. Sự khác nhau cơ bản giữa phi kim và kim loại",
+  "section": "",
+  "bookPage": 100,
+  "requirements": [
+    "Nêu được sự khác nhau cơ bản về tính chất vật lí và hoá học giữa phi kim và kim loại."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tính chất vật lí: kim loại thường ở thể rắn (trừ Hg), có ánh kim, dẫn điện, dẫn nhiệt tốt, dẻo. Phi kim tồn tại ở cả ba thể (rắn: C, S, P; lỏng: Br₂; khí: O₂, N₂, Cl₂), thường không có ánh kim, dẫn điện, dẫn nhiệt kém (trừ than chì dẫn điện)."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất hoá học: kim loại dễ nhường electron tạo ion dương; oxide của kim loại thường là oxide base (CaO, Na₂O). Phi kim dễ nhận electron tạo ion âm; oxide của phi kim thường là oxide acid (CO₂, SO₂, P₂O₅)."
+    },
+    {
+      "type": "text",
+      "content": "Kim loại phản ứng với phi kim tạo muối hoặc oxide; phi kim phản ứng với hydrogen tạo hợp chất khí (HCl, H₂S)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dạng phân loại: trong Fe, S, Cu, O₂, Al, C – có bao nhiêu phi kim?",
+      "steps": [
+        "Phi kim: S, O₂, C.",
+        "3."
+      ],
+      "expr": "3",
+      "answer": "3"
+    },
+    {
+      "problem": "Đốt 3,2 g S (M = 32) trong oxygen dư. Số mol SO₂?",
+      "steps": [
+        "n(S) = 0,1 mol.",
+        "S + O₂ → SO₂: 0,1 mol."
+      ],
+      "expr": "3.2/32",
+      "answer": "0.1"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phi kim tồn tại ở thể lỏng ở nhiệt độ thường là:",
+      "choices": [
+        "Chlorine",
+        "Bromine (Br₂)",
+        "Sulfur",
+        "Carbon"
+      ],
+      "answer": 1,
+      "explain": "Br₂ lỏng.",
+      "wrong_explain": {
+        "0": "Khí.",
+        "2": "Rắn.",
+        "3": "Rắn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Oxide của phi kim thường là:",
+      "choices": [
+        "Oxide acid",
+        "Oxide base",
+        "Muối",
+        "Base"
+      ],
+      "answer": 0,
+      "explain": "CO₂, SO₂.",
+      "wrong_explain": {
+        "1": "Của kim loại.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Phi kim dẫn điện được là:",
+      "choices": [
+        "Sulfur",
+        "Phosphorus",
+        "Iodine",
+        "Than chì (graphite)"
+      ],
+      "answer": 3,
+      "explain": "Ngoại lệ.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Kim loại khi tham gia phản ứng thường:",
+      "choices": [
+        "Nhận electron",
+        "Không thay đổi",
+        "Nhường electron",
+        "Tạo ion âm"
+      ],
+      "answer": 2,
+      "explain": "Tạo ion dương.",
+      "wrong_explain": {
+        "0": "Phi kim.",
+        "1": "Không.",
+        "3": "Phi kim."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong CO₂, CaO, SO₂, Na₂O, P₂O₅ – có bao nhiêu oxide acid?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "CO₂, SO₂, P₂O₅."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đốt 1,2 g C (M = 12) trong oxygen dư. Số mol CO₂:",
+      "expr": "0.1",
+      "answer": "0.1",
+      "explain": "1,2 : 12."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong Hg, Br₂, Cl₂, N₂ – có bao nhiêu chất ở thể khí (điều kiện thường)?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Cl₂, N₂."
+    }
+  ]
+}

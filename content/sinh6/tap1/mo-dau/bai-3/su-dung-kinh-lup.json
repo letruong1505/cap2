@@ -1,0 +1,137 @@
+{
+  "id": "bai-3",
+  "grade": 6,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 6",
+  "chapter": "Mở đầu",
+  "lesson": "Bài 3. Sử dụng kính lúp",
+  "section": "",
+  "bookPage": 13,
+  "requirements": [
+    "Trình bày được cấu tạo và cách sử dụng kính lúp."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Kính lúp là dụng cụ quan sát vật nhỏ, có độ phóng đại từ 3 đến 20 lần. Cấu tạo gồm tấm kính lồi (mặt kính) và tay cầm (khung)."
+    },
+    {
+      "type": "text",
+      "content": "Cách sử dụng: tay trái cầm kính, để mặt kính sát vật mẫu, mắt nhìn vào mặt kính; từ từ điều chỉnh khoảng cách giữa kính và vật cho đến khi nhìn rõ vật."
+    },
+    {
+      "type": "text",
+      "content": "Bảo quản: không để mặt kính tiếp xúc vật cứng, ráp; lau kính bằng khăn mềm; cất nơi khô ráo."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Kính lúp phóng đại 5 lần. Một con kiến dài 4 mm nhìn qua kính thấy dài bao nhiêu mm?",
+      "steps": [
+        "4·5.",
+        "= 20 mm."
+      ],
+      "expr": "4*5",
+      "answer": "20"
+    },
+    {
+      "problem": "Dạng tìm độ phóng đại: vật thật dài 2 mm, ảnh qua kính dài 16 mm. Độ phóng đại?",
+      "steps": [
+        "16 : 2.",
+        "= 8 lần."
+      ],
+      "expr": "16/2",
+      "answer": "8"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kính lúp có độ phóng đại khoảng:",
+      "choices": [
+        "Từ 3 đến 20 lần",
+        "Từ 40 đến 3 000 lần",
+        "Từ 1 đến 2 lần",
+        "Trên 10 000 lần"
+      ],
+      "answer": 0,
+      "explain": "Kính lúp.",
+      "wrong_explain": {
+        "1": "Đó là kính hiển vi.",
+        "2": "Quá nhỏ.",
+        "3": "Kính hiển vi điện tử."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kính lúp có cấu tạo gồm:",
+      "choices": [
+        "Thị kính và vật kính",
+        "Gương phẳng",
+        "Ống kính và đèn",
+        "Tấm kính lồi và tay cầm"
+      ],
+      "answer": 3,
+      "explain": "Hai bộ phận.",
+      "wrong_explain": {
+        "0": "Kính hiển vi.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Kính lúp thích hợp để quan sát:",
+      "choices": [
+        "Tế bào vi khuẩn",
+        "Virus",
+        "Gân lá, con kiến",
+        "Ngôi sao"
+      ],
+      "answer": 2,
+      "explain": "Vật nhỏ nhìn được bằng mắt.",
+      "wrong_explain": {
+        "0": "Cần kính hiển vi.",
+        "1": "Kính hiển vi điện tử.",
+        "3": "Kính thiên văn."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Kính lúp phóng đại 10 lần. Vật dài 1,5 mm có ảnh dài (mm):",
+      "expr": "15",
+      "answer": "15",
+      "explain": "15 mm."
+    },
+    {
+      "id": "q05",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ảnh dài 30 mm, kính phóng đại 6 lần. Vật thật dài (mm):",
+      "expr": "5",
+      "answer": "5",
+      "explain": "30 : 6."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong các vật: gân lá, tế bào hành, con ve, vi khuẩn – có bao nhiêu vật quan sát được bằng kính lúp?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Gân lá, con ve."
+    }
+  ]
+}

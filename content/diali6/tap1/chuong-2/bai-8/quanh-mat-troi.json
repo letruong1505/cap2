@@ -1,0 +1,157 @@
+{
+  "id": "bai-8",
+  "grade": 6,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 6",
+  "chapter": "Chương 2. Trái Đất – hành tinh của hệ Mặt Trời",
+  "lesson": "Bài 8. Chuyển động của Trái Đất quanh Mặt Trời và hệ quả",
+  "section": "",
+  "bookPage": 122,
+  "requirements": [
+    "Mô tả được chuyển động của Trái Đất quanh Mặt Trời; trình bày hệ quả: các mùa, hiện tượng ngày đêm dài ngắn theo mùa."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Trái Đất chuyển động quanh Mặt Trời theo quỹ đạo hình elip gần tròn, hướng từ tây sang đông; một vòng hết 365 ngày 6 giờ. Trong khi chuyển động, trục Trái Đất luôn nghiêng 66°33′ và không đổi hướng."
+    },
+    {
+      "type": "text",
+      "content": "Hệ quả: sinh ra các mùa. Bán cầu nào ngả về phía Mặt Trời thì nhận nhiều nhiệt, ánh sáng – là mùa nóng; bán cầu kia là mùa lạnh. Ngày 21/3 và 23/9 là xuân phân, thu phân; 22/6 là hạ chí; 22/12 là đông chí."
+    },
+    {
+      "type": "text",
+      "content": "Hiện tượng ngày đêm dài ngắn theo mùa: mùa hạ ngày dài đêm ngắn, mùa đông ngày ngắn đêm dài (bán cầu Bắc). Ở Xích đạo ngày đêm luôn bằng nhau; ở cực có hiện tượng 6 tháng ngày, 6 tháng đêm."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Trái Đất quay quanh Mặt Trời một vòng hết 365 ngày 6 giờ. Sau 4 năm số giờ lẻ cộng lại thành bao nhiêu giờ?",
+      "steps": [
+        "6·4.",
+        "= 24 giờ (1 ngày – năm nhuận)."
+      ],
+      "expr": "6*4",
+      "answer": "24"
+    },
+    {
+      "problem": "Dạng đếm ngày: từ 21/3 đến 22/6 là bao nhiêu ngày? (tháng 3: 10 ngày còn lại, tháng 4: 30, tháng 5: 31, tháng 6: 22)",
+      "steps": [
+        "10 + 30 + 31 + 22.",
+        "= 93 ngày."
+      ],
+      "expr": "10+30+31+22",
+      "answer": "93"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thời gian Trái Đất chuyển động một vòng quanh Mặt Trời là:",
+      "choices": [
+        "24 giờ",
+        "365 ngày 6 giờ",
+        "30 ngày",
+        "366 ngày"
+      ],
+      "answer": 1,
+      "explain": "Một năm.",
+      "wrong_explain": {
+        "0": "Tự quay.",
+        "2": "Không.",
+        "3": "Năm nhuận."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nguyên nhân sinh ra các mùa là:",
+      "choices": [
+        "Trục Trái Đất nghiêng và không đổi hướng khi quay quanh Mặt Trời",
+        "Trái Đất tự quay",
+        "Mặt Trăng quay quanh Trái Đất",
+        "Khoảng cách đến Mặt Trời thay đổi nhiều"
+      ],
+      "answer": 0,
+      "explain": "Các mùa.",
+      "wrong_explain": {
+        "1": "Sinh ngày đêm.",
+        "2": "Không.",
+        "3": "Không phải chính."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ngày hạ chí ở bán cầu Bắc là:",
+      "choices": [
+        "22/12",
+        "21/3",
+        "23/9",
+        "22/6"
+      ],
+      "answer": 3,
+      "explain": "Ngày dài nhất.",
+      "wrong_explain": {
+        "0": "Đông chí.",
+        "1": "Xuân phân.",
+        "2": "Thu phân."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ở Xích đạo, thời gian ngày và đêm:",
+      "choices": [
+        "Ngày luôn dài hơn",
+        "Đêm luôn dài hơn",
+        "Luôn bằng nhau",
+        "6 tháng ngày 6 tháng đêm"
+      ],
+      "answer": 2,
+      "explain": "Xích đạo.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Ở cực."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Năm nhuận có bao nhiêu ngày?",
+      "expr": "366",
+      "answer": "366",
+      "explain": "365 + 1."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Từ 23/9 đến 22/12 là bao nhiêu ngày? (tháng 9: 7 ngày còn lại, tháng 10: 31, tháng 11: 30, tháng 12: 22)",
+      "expr": "90",
+      "answer": "90",
+      "explain": "7 + 31 + 30 + 22."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một năm có 4 mùa, mỗi mùa khoảng 3 tháng. Một năm có bao nhiêu tháng?",
+      "expr": "4*3",
+      "answer": "12",
+      "explain": "12 tháng."
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "id": "bai-5",
+  "grade": 9,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 9",
+  "chapter": "Chương 2. Địa lí các ngành kinh tế",
+  "lesson": "Bài 5. Nông nghiệp",
+  "section": "",
+  "bookPage": 129,
+  "requirements": [
+    "Phân tích được các nhân tố ảnh hưởng đến sự phát triển và phân bố nông nghiệp; trình bày được sự phát triển và phân bố trồng trọt, chăn nuôi."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nhân tố tự nhiên: đất (phù sa ở đồng bằng – cây lúa; feralit, badan ở miền núi, cao nguyên – cây công nghiệp), khí hậu nhiệt đới ẩm gió mùa, nguồn nước dồi dào, sinh vật phong phú. Nhân tố kinh tế – xã hội: lao động, chính sách, thị trường, khoa học – công nghệ."
+    },
+    {
+      "type": "text",
+      "content": "Trồng trọt: cây lúa là cây lương thực chính, tập trung ở Đồng bằng sông Cửu Long (hơn 50% sản lượng lúa cả nước) và Đồng bằng sông Hồng. Cây công nghiệp: cà phê (Tây Nguyên), cao su (Đông Nam Bộ), chè (Trung du và miền núi phía Bắc), hồ tiêu, điều…"
+    },
+    {
+      "type": "text",
+      "content": "Chăn nuôi: lợn (ở đồng bằng), trâu, bò (ở miền núi, trung du, duyên hải), gia cầm; đang phát triển theo hướng trang trại, công nghiệp."
+    },
+    {
+      "type": "formula",
+      "content": "Năng suất (tạ/ha) = Sản lượng (tạ) : Diện tích (ha)"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Năm 2023 sản lượng lúa khoảng 43 triệu tấn, diện tích khoảng 7,1 triệu ha. Năng suất khoảng bao nhiêu tạ/ha (làm tròn hàng đơn vị)?",
+      "steps": [
+        "43 triệu tấn = 430 triệu tạ.",
+        "430 : 7,1 ≈ 61 tạ/ha."
+      ],
+      "expr": "430*10/71",
+      "answer": "4300/71"
+    },
+    {
+      "problem": "Dạng tính tỉ trọng: ĐBSCL 24 triệu tấn trên 43 triệu tấn cả nước. Chiếm bao nhiêu % (làm tròn hàng đơn vị)?",
+      "steps": [
+        "24 : 43 · 100 ≈ 56%."
+      ],
+      "expr": "24*100/43",
+      "answer": "2400/43"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Vùng trọng điểm lúa lớn nhất nước ta là:",
+      "choices": [
+        "Đồng bằng sông Hồng",
+        "Tây Nguyên",
+        "Bắc Trung Bộ",
+        "Đồng bằng sông Cửu Long"
+      ],
+      "answer": 3,
+      "explain": "Lớn nhất.",
+      "wrong_explain": {
+        "0": "Thứ hai.",
+        "1": "Cà phê.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Cây cà phê được trồng nhiều nhất ở:",
+      "choices": [
+        "Đồng bằng sông Hồng",
+        "Đồng bằng sông Cửu Long",
+        "Tây Nguyên",
+        "Trung du miền núi Bắc Bộ"
+      ],
+      "answer": 2,
+      "explain": "Đất badan.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Chè."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cây chè trồng nhiều nhất ở:",
+      "choices": [
+        "Đông Nam Bộ",
+        "Trung du và miền núi phía Bắc",
+        "Tây Nguyên",
+        "Đồng bằng sông Cửu Long"
+      ],
+      "answer": 1,
+      "explain": "Chè.",
+      "wrong_explain": {
+        "0": "Cao su.",
+        "2": "Cà phê.",
+        "3": "Lúa."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Loại đất thích hợp nhất với cây lúa nước là:",
+      "choices": [
+        "Đất phù sa",
+        "Đất feralit",
+        "Đất cát",
+        "Đất badan"
+      ],
+      "answer": 0,
+      "explain": "Phù sa.",
+      "wrong_explain": {
+        "1": "Cây công nghiệp.",
+        "2": "Không.",
+        "3": "Cà phê."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ruộng 2 ha thu được 120 tạ lúa. Năng suất là bao nhiêu tạ/ha?",
+      "expr": "120/2",
+      "answer": "60",
+      "explain": "60."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một tỉnh có 50 000 ha lúa, năng suất 60 tạ/ha. Sản lượng là bao nhiêu tấn?",
+      "expr": "50000*60/10",
+      "answer": "300000",
+      "explain": "300 000 tấn."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Sản lượng cà phê 1,8 triệu tấn, Tây Nguyên 1,6 triệu tấn. Các vùng khác bao nhiêu triệu tấn?",
+      "expr": "1.8-1.6",
+      "answer": "0.2",
+      "explain": "0,2."
+    }
+  ]
+}

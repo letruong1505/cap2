@@ -1,0 +1,146 @@
+{
+  "id": "bai-12",
+  "grade": 9,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 9",
+  "chapter": "Chương III. Điện",
+  "lesson": "Bài 12. Đoạn mạch nối tiếp, song song",
+  "section": "",
+  "bookPage": 60,
+  "requirements": [
+    "Tính được cường độ dòng điện, hiệu điện thế, điện trở tương đương trong đoạn mạch nối tiếp, song song."
+  ],
+  "theory": [
+    {
+      "type": "formula",
+      "content": "Nối tiếp: I = I₁ = I₂;  U = U₁ + U₂;  R_tđ = R₁ + R₂"
+    },
+    {
+      "type": "formula",
+      "content": "Song song: U = U₁ = U₂;  I = I₁ + I₂;  1/R_tđ = 1/R₁ + 1/R₂"
+    },
+    {
+      "type": "text",
+      "content": "Trong mạch nối tiếp, hiệu điện thế trên mỗi điện trở tỉ lệ thuận với điện trở. Trong mạch song song, cường độ dòng điện qua mỗi nhánh tỉ lệ nghịch với điện trở. Hai điện trở R giống nhau mắc song song có R_tđ = R/2."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "R₁ = 10 Ω nối tiếp R₂ = 20 Ω. Điện trở tương đương?",
+      "steps": [
+        "R = 10 + 20.",
+        "= 30 Ω."
+      ],
+      "expr": "10+20",
+      "answer": "30"
+    },
+    {
+      "problem": "Dạng song song: R₁ = 6 Ω song song R₂ = 12 Ω. Điện trở tương đương?",
+      "steps": [
+        "R = 6·12/(6 + 12) = 72/18.",
+        "= 4 Ω."
+      ],
+      "expr": "72/18",
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong đoạn mạch nối tiếp, đại lượng như nhau ở mọi điện trở là:",
+      "choices": [
+        "Hiệu điện thế",
+        "Điện trở",
+        "Cường độ dòng điện",
+        "Công suất"
+      ],
+      "answer": 2,
+      "explain": "I = I₁ = I₂.",
+      "wrong_explain": {
+        "0": "Mạch song song.",
+        "1": "Không nhất thiết.",
+        "3": "Không nhất thiết."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong đoạn mạch song song:",
+      "choices": [
+        "Cường độ qua các nhánh bằng nhau",
+        "Hiệu điện thế hai đầu các nhánh bằng nhau",
+        "R_tđ = R₁ + R₂",
+        "U = U₁ + U₂"
+      ],
+      "answer": 1,
+      "explain": "U = U₁ = U₂.",
+      "wrong_explain": {
+        "0": "Không nhất thiết.",
+        "2": "Mạch nối tiếp.",
+        "3": "Nối tiếp."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Điện trở tương đương của mạch song song:",
+      "choices": [
+        "Nhỏ hơn mỗi điện trở thành phần",
+        "Lớn hơn mỗi điện trở",
+        "Bằng tổng",
+        "Bằng 0"
+      ],
+      "answer": 0,
+      "explain": "1/R_tđ = 1/R₁ + 1/R₂.",
+      "wrong_explain": {
+        "1": "Mạch nối tiếp.",
+        "2": "Nối tiếp.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "R₁ = 15 Ω, R₂ = 25 Ω nối tiếp, U = 20 V. Cường độ dòng điện (A):",
+      "expr": "0.5",
+      "answer": "0.5",
+      "explain": "20 : 40."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai điện trở 20 Ω mắc song song. Điện trở tương đương (Ω):",
+      "expr": "10",
+      "answer": "10",
+      "explain": "20/2."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "R₁ = 4 Ω, R₂ = 6 Ω nối tiếp, I = 2 A. Hiệu điện thế hai đầu R₂ (V):",
+      "expr": "12",
+      "answer": "12",
+      "explain": "2·6."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "R₁ = 10 Ω song song R₂ = 15 Ω, U = 6 V. Cường độ mạch chính (A):",
+      "expr": "6/10+6/15",
+      "answer": "1",
+      "explain": "0,6 + 0,4 = 1 A."
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "id": "bai-6",
+  "grade": 9,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 9",
+  "chapter": "Chương II. Ánh sáng",
+  "lesson": "Bài 6. Phản xạ toàn phần",
+  "section": "",
+  "bookPage": 30,
+  "requirements": [
+    "Nêu được hiện tượng phản xạ toàn phần, điều kiện xảy ra; ứng dụng (sợi quang)."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phản xạ toàn phần là hiện tượng toàn bộ tia sáng bị phản xạ trở lại môi trường cũ khi chiếu tới mặt phân cách giữa hai môi trường trong suốt."
+    },
+    {
+      "type": "text",
+      "content": "Điều kiện: ánh sáng truyền từ môi trường có chiết suất lớn sang môi trường có chiết suất nhỏ hơn (n₁ > n₂) và góc tới lớn hơn hoặc bằng góc tới hạn."
+    },
+    {
+      "type": "formula",
+      "content": "sin i_th = n₂/n₁"
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: cáp quang (sợi quang) truyền tín hiệu thông tin, nội soi trong y học; lăng kính phản xạ toàn phần trong ống nhòm."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Ánh sáng từ thuỷ tinh (n = 1,5) ra không khí (n = 1). Tính sin của góc tới hạn.",
+      "steps": [
+        "sin i_th = 1 : 1,5.",
+        "= 2/3."
+      ],
+      "expr": "2/3",
+      "answer": "2/3"
+    },
+    {
+      "problem": "Dạng góc tới hạn: từ môi trường n = 2 ra không khí, sin i_th = 1/2 nên góc tới hạn bằng bao nhiêu độ?",
+      "steps": [
+        "sin i_th = 1/2.",
+        "i_th = 30°."
+      ],
+      "expr": "30",
+      "answer": "30"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Điều kiện để có phản xạ toàn phần là:",
+      "choices": [
+        "Ánh sáng đi từ môi trường chiết suất nhỏ sang lớn",
+        "Ánh sáng đi từ môi trường chiết suất lớn sang nhỏ và góc tới ≥ góc tới hạn",
+        "Góc tới bằng 0",
+        "Có gương phẳng"
+      ],
+      "answer": 1,
+      "explain": "Hai điều kiện.",
+      "wrong_explain": {
+        "0": "Không xảy ra.",
+        "2": "Không.",
+        "3": "Đó là phản xạ thường."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Ứng dụng của phản xạ toàn phần là:",
+      "choices": [
+        "Cáp quang truyền tín hiệu",
+        "Kính lúp",
+        "Gương chiếu hậu",
+        "Kính râm"
+      ],
+      "answer": 0,
+      "explain": "Sợi quang.",
+      "wrong_explain": {
+        "1": "Thấu kính.",
+        "2": "Phản xạ thường.",
+        "3": "Hấp thụ ánh sáng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi xảy ra phản xạ toàn phần thì:",
+      "choices": [
+        "Tia khúc xạ rất sáng",
+        "Không có tia phản xạ",
+        "Ánh sáng bị hấp thụ hết",
+        "Không có tia khúc xạ"
+      ],
+      "answer": 3,
+      "explain": "Toàn bộ phản xạ.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Ngược lại.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Từ nước (n = 4/3) ra không khí, sin i_th bằng (nhập phân số):",
+      "expr": "3/4",
+      "answer": "0.75",
+      "explain": "1 : 4/3."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Từ môi trường n = 2 ra không khí, góc tới hạn (độ):",
+      "expr": "30",
+      "answer": "30",
+      "explain": "sin i_th = 1/2."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Từ thuỷ tinh n = √2 ra không khí, góc tới hạn là 45°. Nếu góc tới là 50° thì có phản xạ toàn phần không? Nhập 1 nếu có.",
+      "expr": "1",
+      "answer": "1",
+      "explain": "50° > 45°."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Sợi quang có lõi n₁ = 1,5, vỏ n₂ = 1,2. Tính sin i_th.",
+      "expr": "12/15",
+      "answer": "0.8",
+      "explain": "= 0,8."
+    }
+  ]
+}

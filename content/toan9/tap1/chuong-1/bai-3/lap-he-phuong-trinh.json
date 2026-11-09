@@ -1,0 +1,149 @@
+{
+  "id": "bai-3",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 1",
+  "chapter": "Chương I. Phương trình và hệ hai phương trình bậc nhất hai ẩn",
+  "lesson": "Bài 3. Giải bài toán bằng cách lập hệ phương trình",
+  "section": "",
+  "bookPage": 20,
+  "requirements": [
+    "Giải bài toán thực tế bằng cách lập hệ hai phương trình bậc nhất hai ẩn."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các bước: (1) Lập hệ phương trình: chọn hai ẩn và đặt điều kiện thích hợp; biểu diễn các đại lượng chưa biết theo ẩn; lập hai phương trình. (2) Giải hệ. (3) Kiểm tra điều kiện và trả lời."
+    },
+    {
+      "type": "text",
+      "content": "Các dạng thường gặp: toán tìm hai số; chuyển động; năng suất, công việc; mua bán; phần trăm; hình học; hoá học (pha trộn, phản ứng)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tổng hai số là 45, hiệu là 9. Tìm số lớn.",
+      "steps": [
+        "x + y = 45, x − y = 9.",
+        "2x = 54, x = 27."
+      ],
+      "expr": "54/2",
+      "answer": "27"
+    },
+    {
+      "problem": "Dạng mua bán: mua 3 bút và 2 vở hết 26 000 đồng; 1 bút và 3 vở hết 25 000 đồng. Giá một bút (nghìn đồng)?",
+      "steps": [
+        "3x + 2y = 26; x + 3y = 25.",
+        "x = 25 − 3y ⇒ 75 − 9y + 2y = 26 ⇒ y = 7, x = 4."
+      ],
+      "expr": "25-21",
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Bước đầu tiên khi giải bài toán bằng cách lập hệ phương trình là:",
+      "choices": [
+        "Giải hệ",
+        "Trả lời",
+        "Vẽ đồ thị",
+        "Chọn ẩn và đặt điều kiện cho ẩn"
+      ],
+      "answer": 3,
+      "explain": "Lập hệ: chọn ẩn, điều kiện.",
+      "wrong_explain": {
+        "0": "Đó là bước 2.",
+        "1": "Bước cuối.",
+        "2": "Không bắt buộc."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi chọn ẩn là số học sinh, điều kiện thích hợp là:",
+      "choices": [
+        "Số thực bất kì",
+        "Số âm",
+        "Số nguyên dương",
+        "Phân số"
+      ],
+      "answer": 2,
+      "explain": "Số người phải nguyên dương.",
+      "wrong_explain": {
+        "0": "Phải là số nguyên dương.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tổng hai số là 100, số này gấp 3 lần số kia. Số lớn là:",
+      "expr": "75",
+      "answer": "75",
+      "explain": "x + y = 100, x = 3y ⇒ y = 25, x = 75."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một lớp có 40 học sinh, số nữ nhiều hơn số nam 4 bạn. Số nam là:",
+      "expr": "18",
+      "answer": "18",
+      "explain": "x + y = 40, y − x = 4 ⇒ x = 18."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chuồng có gà và chó, tổng 36 con, 100 chân. Số chó là:",
+      "expr": "14",
+      "answer": "14",
+      "explain": "x + y = 36, 2x + 4y = 100 ⇒ y = 14."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai người cùng làm một công việc trong 4 giờ thì xong. Người thứ nhất làm một mình mất 6 giờ. Người thứ hai làm một mình mất bao nhiêu giờ?",
+      "expr": "12",
+      "answer": "12",
+      "explain": "1/4 − 1/6 = 1/12 ⇒ 12 giờ."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ca nô đi xuôi 40 km/h, ngược 30 km/h. Vận tốc dòng nước là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "(40 − 30) : 2 = 5 km/h."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mảnh vườn hình chữ nhật có chu vi 34 m, chiều dài hơn chiều rộng 7 m. Chiều rộng là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "x + y = 17, x − y = 7 ⇒ y = 5."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mua 2 kg táo và 3 kg cam hết 210 nghìn; 1 kg táo và 1 kg cam hết 85 nghìn. Giá 1 kg cam (nghìn đồng):",
+      "expr": "40",
+      "answer": "40",
+      "explain": "2x + 3y = 210, x + y = 85 ⇒ y = 40."
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "id": "bai-15",
+  "grade": 9,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 9",
+  "chapter": "Chương IV. Điện từ",
+  "lesson": "Bài 15. Tác dụng của dòng điện xoay chiều",
+  "section": "",
+  "bookPage": 72,
+  "requirements": [
+    "Nêu được các tác dụng của dòng điện xoay chiều; an toàn khi sử dụng điện."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dòng điện xoay chiều có các tác dụng: tác dụng nhiệt (bàn là, nồi cơm điện), tác dụng phát sáng (bóng đèn), tác dụng từ (nam châm điện, động cơ điện), tác dụng sinh lí (gây điện giật, ứng dụng trong y học)."
+    },
+    {
+      "type": "text",
+      "content": "Tác dụng từ của dòng điện xoay chiều: lực từ đổi chiều khi dòng điện đổi chiều."
+    },
+    {
+      "type": "text",
+      "content": "Ampe kế, vôn kế xoay chiều (kí hiệu AC hoặc ~) đo giá trị hiệu dụng của cường độ dòng điện, hiệu điện thế xoay chiều."
+    },
+    {
+      "type": "text",
+      "content": "An toàn điện: không chạm vào dây điện trần, ổ cắm; dùng thiết bị có vỏ cách điện; lắp cầu chì, aptomat; nối đất cho vỏ kim loại thiết bị."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dạng phân loại tác dụng: trong \"bàn là, bóng đèn LED, quạt điện, nồi cơm điện\", có bao nhiêu thiết bị chủ yếu dùng tác dụng nhiệt?",
+      "steps": [
+        "Tác dụng nhiệt: bàn là, nồi cơm điện.",
+        "Có 2."
+      ],
+      "expr": "2",
+      "answer": "2"
+    },
+    {
+      "problem": "Một bóng đèn dùng điện xoay chiều 220 V có cường độ hiệu dụng 0,5 A. Công suất?",
+      "steps": [
+        "P = 220·0,5.",
+        "= 110 W."
+      ],
+      "expr": "220*0.5",
+      "answer": "110"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Bàn là hoạt động chủ yếu nhờ tác dụng nào của dòng điện?",
+      "choices": [
+        "Tác dụng từ",
+        "Tác dụng sinh lí",
+        "Tác dụng nhiệt",
+        "Tác dụng hoá học"
+      ],
+      "answer": 2,
+      "explain": "Biến điện năng thành nhiệt.",
+      "wrong_explain": {
+        "0": "Không chủ yếu.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Quạt điện hoạt động chủ yếu nhờ tác dụng:",
+      "choices": [
+        "Tác dụng nhiệt",
+        "Tác dụng từ",
+        "Tác dụng phát sáng",
+        "Tác dụng sinh lí"
+      ],
+      "answer": 1,
+      "explain": "Động cơ điện.",
+      "wrong_explain": {
+        "0": "Không chủ yếu.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vôn kế xoay chiều đo:",
+      "choices": [
+        "Giá trị hiệu dụng của hiệu điện thế xoay chiều",
+        "Giá trị cực đại",
+        "Cường độ dòng điện",
+        "Điện trở"
+      ],
+      "answer": 0,
+      "explain": "Giá trị hiệu dụng.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Ampe kế.",
+        "3": "Ôm kế."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Biện pháp an toàn điện là:",
+      "choices": [
+        "Dùng tay ướt cắm điện",
+        "Chạm vào dây trần",
+        "Thay cầu chì bằng dây đồng to",
+        "Nối đất vỏ kim loại của thiết bị"
+      ],
+      "answer": 3,
+      "explain": "Phòng điện giật.",
+      "wrong_explain": {
+        "0": "Nguy hiểm.",
+        "1": "Nguy hiểm.",
+        "2": "Nguy hiểm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đèn 220 V có cường độ hiệu dụng 0,2 A. Công suất (W):",
+      "expr": "44",
+      "answer": "44",
+      "explain": "220·0,2."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong các tác dụng: nhiệt, phát sáng, từ, sinh lí – dòng điện xoay chiều có bao nhiêu tác dụng?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Cả bốn."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nồi cơm 220 V – 660 W có cường độ hiệu dụng (A):",
+      "expr": "3",
+      "answer": "3",
+      "explain": "660 : 220."
+    }
+  ]
+}

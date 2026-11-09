@@ -1,0 +1,153 @@
+{
+  "id": "bai-28",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 2",
+  "chapter": "Chương VII. Số thập phân",
+  "lesson": "Bài 28. Số thập phân",
+  "section": "",
+  "bookPage": 28,
+  "requirements": [
+    "Nhận biết số thập phân âm, số đối của số thập phân; so sánh hai số thập phân."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phân số thập phân là phân số có mẫu là luỹ thừa của 10. Phân số thập phân có thể viết dưới dạng số thập phân, ví dụ −13/10 = −1,3; 7/100 = 0,07."
+    },
+    {
+      "type": "text",
+      "content": "Số thập phân gồm phần nguyên (bên trái dấu phẩy) và phần thập phân (bên phải dấu phẩy). Số đối của 1,5 là −1,5."
+    },
+    {
+      "type": "text",
+      "content": "So sánh: số thập phân âm nhỏ hơn 0, nhỏ hơn số thập phân dương. Hai số thập phân dương: so sánh phần nguyên, rồi lần lượt từng hàng phần thập phân. Hai số âm: số nào có số đối lớn hơn thì nhỏ hơn."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Viết −357/100 dưới dạng số thập phân.",
+      "steps": [
+        "Mẫu 100: có hai chữ số ở phần thập phân.",
+        "−357/100 = −3,57."
+      ],
+      "expr": "-357/100",
+      "answer": "-3.57"
+    },
+    {
+      "problem": "Dạng so sánh số âm: trong −2,5 và −2,49, số nào nhỏ hơn? Tính hiệu của số lớn trừ số nhỏ.",
+      "steps": [
+        "2,5 > 2,49 nên −2,5 < −2,49.",
+        "−2,49 − (−2,5) = 0,01."
+      ],
+      "expr": "-2.49+2.5",
+      "answer": "0.01"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số đối của −0,75 là:",
+      "choices": [
+        "−0,75",
+        "0,75",
+        "4/3",
+        "7,5"
+      ],
+      "answer": 1,
+      "explain": "Số đối khác dấu.",
+      "wrong_explain": {
+        "0": "Đó là chính nó.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khẳng định nào đúng?",
+      "choices": [
+        "−3,2 < −3,1",
+        "−3,2 > −3,1",
+        "−3,1 < −3,2",
+        "−3,2 = −3,1"
+      ],
+      "answer": 0,
+      "explain": "Số âm có số đối lớn hơn thì nhỏ hơn.",
+      "wrong_explain": {
+        "1": "3,2 > 3,1 nên −3,2 < −3,1.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Viết 3/4 dưới dạng số thập phân.",
+      "expr": "3/4",
+      "answer": "0.75",
+      "explain": "= 0,75."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Viết −12/5 dưới dạng số thập phân.",
+      "expr": "-12/5",
+      "answer": "-2.4",
+      "explain": "= −2,4."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Viết 0,125 dưới dạng phân số tối giản. Mẫu số là:",
+      "expr": "8",
+      "answer": "8",
+      "explain": "0,125 = 125/1 000 = 1/8."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số thập phân lớn nhất trong 0,5; −1,2; 0,49; 0,099 là:",
+      "expr": "0.5",
+      "answer": "0.5",
+      "explain": "0,5."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Viết −0,04 dưới dạng phân số có mẫu 100. Tử số là:",
+      "expr": "-4",
+      "answer": "-4",
+      "explain": "−4/100."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Số nguyên nhỏ nhất lớn hơn −2,7 là:",
+      "expr": "-2",
+      "answer": "-2",
+      "explain": "−2."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có bao nhiêu số nguyên x với −3,5 < x < 2,1?",
+      "expr": "6",
+      "answer": "6",
+      "explain": "−3; −2; −1; 0; 1; 2."
+    }
+  ]
+}

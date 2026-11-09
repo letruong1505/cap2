@@ -1,0 +1,161 @@
+{
+  "id": "bai-4",
+  "grade": 6,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 6",
+  "chapter": "Mở đầu",
+  "lesson": "Bài 4. Sử dụng kính hiển vi quang học",
+  "section": "",
+  "bookPage": 16,
+  "requirements": [
+    "Trình bày được cấu tạo và cách sử dụng kính hiển vi quang học."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Kính hiển vi quang học có độ phóng đại từ 40 đến 3 000 lần, dùng quan sát những vật rất nhỏ như tế bào, vi khuẩn."
+    },
+    {
+      "type": "text",
+      "content": "Cấu tạo gồm: hệ thống giá đỡ (chân kính, thân kính, bàn kính, kẹp giữ mẫu), hệ thống phóng đại (thị kính, vật kính), hệ thống chiếu sáng (nguồn sáng, gương, màn chắn), hệ thống điều chỉnh (ốc to, ốc nhỏ)."
+    },
+    {
+      "type": "formula",
+      "content": "Độ phóng đại = độ phóng đại thị kính × độ phóng đại vật kính"
+    },
+    {
+      "type": "text",
+      "content": "Cách sử dụng: chuẩn bị kính; điều chỉnh ánh sáng; đặt tiêu bản lên bàn kính, kẹp giữ; vặn ốc to hạ vật kính sát tiêu bản (nhìn từ ngoài), sau đó nhìn vào thị kính, vặn ốc to nâng vật kính lên đến khi thấy vật, rồi vặn ốc nhỏ để nhìn rõ."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Thị kính 10x, vật kính 40x. Độ phóng đại của kính?",
+      "steps": [
+        "10·40.",
+        "= 400 lần."
+      ],
+      "expr": "10*40",
+      "answer": "400"
+    },
+    {
+      "problem": "Dạng tìm kích thước thật: tế bào nhìn qua kính 400 lần thấy dài 8 mm. Kích thước thật là bao nhiêu µm? (1 mm = 1 000 µm)",
+      "steps": [
+        "8 : 400 = 0,02 mm.",
+        "= 20 µm."
+      ],
+      "expr": "8*1000/400",
+      "answer": "20"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Bộ phận trực tiếp phóng to ảnh của vật là:",
+      "choices": [
+        "Bàn kính",
+        "Chân kính",
+        "Thị kính và vật kính",
+        "Ốc to"
+      ],
+      "answer": 2,
+      "explain": "Hệ thống phóng đại.",
+      "wrong_explain": {
+        "0": "Đặt tiêu bản.",
+        "1": "Giá đỡ.",
+        "3": "Điều chỉnh."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kính hiển vi quang học phóng đại khoảng:",
+      "choices": [
+        "3 đến 20 lần",
+        "40 đến 3 000 lần",
+        "1 đến 2 lần",
+        "Hàng triệu lần"
+      ],
+      "answer": 1,
+      "explain": "Kính hiển vi quang học.",
+      "wrong_explain": {
+        "0": "Kính lúp.",
+        "2": "Không.",
+        "3": "Kính hiển vi điện tử."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ốc nhỏ (ốc vi cấp) dùng để:",
+      "choices": [
+        "Điều chỉnh rõ nét ảnh",
+        "Đặt tiêu bản",
+        "Chiếu sáng",
+        "Thay thị kính"
+      ],
+      "answer": 0,
+      "explain": "Điều chỉnh tinh.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Kính hiển vi dùng để quan sát:",
+      "choices": [
+        "Ngôi sao",
+        "Cây bàng",
+        "Con mèo",
+        "Tế bào"
+      ],
+      "answer": 3,
+      "explain": "Vật rất nhỏ.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Mắt thường.",
+        "2": "Mắt thường."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Thị kính 15x, vật kính 10x. Độ phóng đại là:",
+      "expr": "150",
+      "answer": "150",
+      "explain": "150 lần."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Độ phóng đại 1 000 lần, thị kính 10x. Vật kính có độ phóng đại:",
+      "expr": "100",
+      "answer": "100",
+      "explain": "1 000 : 10."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Kính phóng đại 100 lần, ảnh tế bào dài 5 mm. Kích thước thật (µm):",
+      "expr": "50",
+      "answer": "50",
+      "explain": "5 : 100 = 0,05 mm = 50 µm."
+    }
+  ]
+}

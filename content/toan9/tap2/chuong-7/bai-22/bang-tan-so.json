@@ -1,0 +1,153 @@
+{
+  "id": "bai-22",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 2",
+  "chapter": "Chương VII. Tần số và tần số tương đối",
+  "lesson": "Bài 22. Bảng tần số và biểu đồ tần số",
+  "section": "",
+  "bookPage": 32,
+  "requirements": [
+    "Lập bảng tần số; biểu diễn bằng biểu đồ tần số dạng cột hoặc đoạn thẳng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tần số của một giá trị là số lần giá trị đó xuất hiện trong mẫu dữ liệu. Bảng tần số gồm hai dòng (hoặc hai cột): giá trị và tần số tương ứng; tổng các tần số bằng cỡ mẫu n."
+    },
+    {
+      "type": "text",
+      "content": "Biểu đồ tần số dạng cột: mỗi giá trị ứng với một cột có chiều cao bằng tần số. Biểu đồ dạng đoạn thẳng: nối các điểm (giá trị; tần số)."
+    },
+    {
+      "type": "text",
+      "content": "Từ bảng tần số có thể tính số trung bình: x̄ = (x₁n₁ + x₂n₂ + … + xₖnₖ)/n."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Điểm: 7, 8, 7, 9, 8, 7, 10. Tần số của điểm 7?",
+      "steps": [
+        "Điểm 7 xuất hiện 3 lần.",
+        "Tần số là 3."
+      ],
+      "expr": "3",
+      "answer": "3"
+    },
+    {
+      "problem": "Dạng tính trung bình từ bảng tần số: giá trị 5, 6, 7 có tần số 2, 5, 3. Tính x̄.",
+      "steps": [
+        "(5·2 + 6·5 + 7·3)/10.",
+        "= 61/10 = 6,1."
+      ],
+      "expr": "(5*2+6*5+7*3)/10",
+      "answer": "6.1"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tần số của một giá trị là:",
+      "choices": [
+        "Giá trị lớn nhất",
+        "Tổng các giá trị",
+        "Số lần giá trị đó xuất hiện",
+        "Số các giá trị khác nhau"
+      ],
+      "answer": 2,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tổng các tần số bằng:",
+      "choices": [
+        "Giá trị lớn nhất",
+        "Cỡ mẫu",
+        "Số giá trị khác nhau",
+        "100"
+      ],
+      "answer": 1,
+      "explain": "n.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Đó là tổng tần số tương đối (%)."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Dãy 2, 3, 3, 4, 4, 4, 5. Tần số của 4 là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "3."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bảng tần số: giá trị 1, 2, 3 có tần số 4, 6, 10. Cỡ mẫu là:",
+      "expr": "20",
+      "answer": "20",
+      "explain": "20."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Với bảng trên, số trung bình là:",
+      "expr": "(4+12+30)/20",
+      "answer": "2.3",
+      "explain": "46/20 = 2,3."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số con mỗi gia đình: 0 con 2 hộ, 1 con 5, 2 con 10, 3 con 3. Có bao nhiêu hộ?",
+      "expr": "20",
+      "answer": "20",
+      "explain": "20."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Từ bảng trên, tổng số con là:",
+      "expr": "5+20+9",
+      "answer": "34",
+      "explain": "34."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị có tần số lớn nhất (mốt) trong bảng trên là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "2 con (10 hộ)."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dãy 6, 7, 7, 8, 8, 8, 9, 9. Có bao nhiêu giá trị khác nhau?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "6, 7, 8, 9."
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "id": "bai-12",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương II. Tính chia hết trong tập hợp các số tự nhiên",
+  "lesson": "Bài 12. Bội chung. Bội chung nhỏ nhất",
+  "section": "",
+  "bookPage": 49,
+  "requirements": [
+    "Tìm bội chung, BCNN của hai hay nhiều số; vận dụng BCNN để quy đồng mẫu và giải bài toán thực tế."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Bội chung của hai hay nhiều số là bội của tất cả các số đó; BC(a, b). Bội chung nhỏ nhất là số nhỏ nhất khác 0 trong tập bội chung; BCNN(a, b). Tất cả bội chung đều là bội của BCNN."
+    },
+    {
+      "type": "text",
+      "content": "Tìm BCNN: phân tích các số ra thừa số nguyên tố; chọn các thừa số nguyên tố chung và riêng; lập tích, mỗi thừa số lấy với số mũ lớn nhất."
+    },
+    {
+      "type": "text",
+      "content": "Nếu a ⋮ b thì BCNN(a, b) = a. Nếu a và b nguyên tố cùng nhau thì BCNN(a, b) = a·b. Quy đồng mẫu các phân số: lấy mẫu chung là BCNN của các mẫu."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tìm BCNN(12, 18).",
+      "steps": [
+        "12 = 2²·3, 18 = 2·3².",
+        "BCNN = 2²·3² = 36."
+      ],
+      "expr": "4*9",
+      "answer": "36"
+    },
+    {
+      "problem": "Dạng bài toán gặp lại nhau: hai xe buýt cùng xuất phát, xe A 10 phút một chuyến, xe B 12 phút một chuyến. Sau ít nhất bao nhiêu phút hai xe lại cùng xuất phát?",
+      "steps": [
+        "Thời gian là BCNN(10, 12).",
+        "= 60 phút."
+      ],
+      "expr": "60",
+      "answer": "60"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "BCNN của hai số nguyên tố cùng nhau a và b bằng:",
+      "choices": [
+        "a + b",
+        "1",
+        "a·b",
+        "Số lớn hơn"
+      ],
+      "answer": 2,
+      "explain": "Ví dụ BCNN(4, 9) = 36.",
+      "wrong_explain": {
+        "0": "Phải là tích.",
+        "1": "1 là ƯCLN.",
+        "3": "Chỉ đúng khi số này chia hết cho số kia."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi tìm BCNN, mỗi thừa số lấy với số mũ:",
+      "choices": [
+        "Nhỏ nhất",
+        "Lớn nhất",
+        "Bằng 1",
+        "Bất kì"
+      ],
+      "answer": 1,
+      "explain": "BCNN: thừa số chung và riêng, số mũ lớn nhất.",
+      "wrong_explain": {
+        "0": "Đó là cách tìm ƯCLN.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm BCNN(6, 8).",
+      "expr": "24",
+      "answer": "24",
+      "explain": "6 = 2·3, 8 = 2³; BCNN = 2³·3 = 24."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm BCNN(15, 20).",
+      "expr": "60",
+      "answer": "60",
+      "explain": "2²·3·5 = 60."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm BCNN(4, 6, 10).",
+      "expr": "60",
+      "answer": "60",
+      "explain": "2²·3·5 = 60."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm BCNN(7, 9).",
+      "expr": "63",
+      "answer": "63",
+      "explain": "7 và 9 nguyên tố cùng nhau: 63."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm BCNN(16, 48).",
+      "expr": "48",
+      "answer": "48",
+      "explain": "48 ⋮ 16 nên BCNN = 48."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mẫu chung nhỏ nhất khi quy đồng 5/12 và 7/30 là:",
+      "expr": "60",
+      "answer": "60",
+      "explain": "BCNN(12, 30) = 60."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Số học sinh một lớp xếp hàng 3, hàng 4, hàng 9 đều vừa đủ, số học sinh trong khoảng 30 đến 40. Lớp có bao nhiêu học sinh?",
+      "expr": "36",
+      "answer": "36",
+      "explain": "Số học sinh là bội chung của 3, 4, 9; BCNN = 36."
+    }
+  ]
+}

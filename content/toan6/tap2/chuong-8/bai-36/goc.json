@@ -1,0 +1,153 @@
+{
+  "id": "bai-36",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 2",
+  "chapter": "Chương VIII. Những hình hình học cơ bản",
+  "lesson": "Bài 36. Góc",
+  "section": "",
+  "bookPage": 58,
+  "requirements": [
+    "Nhận biết góc, đỉnh, cạnh của góc; điểm nằm trong góc; góc bẹt."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Góc là hình gồm hai tia chung gốc. Gốc chung gọi là đỉnh, hai tia gọi là cạnh của góc. Góc xOy kí hiệu ∠xOy (hoặc ∠O khi không gây nhầm lẫn)."
+    },
+    {
+      "type": "text",
+      "content": "Góc bẹt là góc có hai cạnh là hai tia đối nhau."
+    },
+    {
+      "type": "text",
+      "content": "Điểm M nằm trong góc xOy (không phải góc bẹt) nếu M không nằm trên cạnh và nằm giữa hai điểm A ∈ Ox, B ∈ Oy nào đó."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Có 3 tia chung gốc Ox, Oy, Oz (không có hai tia nào đối nhau). Có bao nhiêu góc?",
+      "steps": [
+        "Mỗi cặp tia tạo một góc.",
+        "3·2 : 2 = 3 góc."
+      ],
+      "expr": "3*2/2",
+      "answer": "3"
+    },
+    {
+      "problem": "Dạng đếm góc: có 5 tia chung gốc thì có bao nhiêu góc?",
+      "steps": [
+        "n(n − 1)/2 với n = 5.",
+        "= 10."
+      ],
+      "expr": "5*4/2",
+      "answer": "10"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Góc là hình gồm:",
+      "choices": [
+        "Hai tia chung gốc",
+        "Hai đường thẳng cắt nhau",
+        "Hai đoạn thẳng",
+        "Ba điểm"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Tạo ra nhiều góc.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Góc bẹt có hai cạnh là:",
+      "choices": [
+        "Hai tia trùng nhau",
+        "Hai tia vuông góc",
+        "Hai đường thẳng",
+        "Hai tia đối nhau"
+      ],
+      "answer": 3,
+      "explain": "Góc bẹt 180°.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Đó là góc vuông.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có 4 tia chung gốc. Số góc là:",
+      "expr": "4*3/2",
+      "answer": "6",
+      "explain": "6."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có 6 tia chung gốc. Số góc là:",
+      "expr": "15",
+      "answer": "15",
+      "explain": "15."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai đường thẳng cắt nhau tại O tạo thành bao nhiêu góc (không kể góc bẹt)?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "4 góc."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai đường thẳng cắt nhau tại O có bao nhiêu góc bẹt?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "2 góc bẹt."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Góc xOy có đỉnh O. Có bao nhiêu cạnh?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "2 cạnh."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đồng hồ chỉ 3 giờ đúng. Kim giờ và kim phút tạo thành góc bao nhiêu độ?",
+      "expr": "90",
+      "answer": "90",
+      "explain": "90°."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có 10 tia chung gốc. Số góc là:",
+      "expr": "45",
+      "answer": "45",
+      "explain": "10·9 : 2 = 45."
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "id": "bai-26",
+  "grade": 9,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 9",
+  "chapter": "Chương VIII. Ethylic alcohol và acetic acid",
+  "lesson": "Bài 26. Ethylic alcohol",
+  "section": "",
+  "bookPage": 118,
+  "requirements": [
+    "Nêu được công thức, tính chất vật lí, hoá học của ethylic alcohol; độ cồn; ứng dụng và tác hại của rượu bia."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Ethylic alcohol (ethanol) có công thức C₂H₅OH (CH₃–CH₂–OH), là chất lỏng không màu, sôi ở 78,3 °C, nhẹ hơn nước, tan vô hạn trong nước, hoà tan được nhiều chất."
+    },
+    {
+      "type": "text",
+      "content": "Độ cồn là số mL ethylic alcohol nguyên chất có trong 100 mL hỗn hợp với nước. Ví dụ rượu 40° có 40 mL ethanol trong 100 mL."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất hoá học: cháy với ngọn lửa xanh (C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O); tác dụng với sodium giải phóng H₂ (2C₂H₅OH + 2Na → 2C₂H₅ONa + H₂)."
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: nhiên liệu, dung môi, sát trùng (cồn 70°), sản xuất acetic acid. Lạm dụng rượu bia gây hại sức khoẻ, tai nạn giao thông; không lái xe sau khi uống rượu bia."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Trong 500 mL rượu 40° có bao nhiêu mL ethylic alcohol nguyên chất?",
+      "steps": [
+        "500·40/100.",
+        "= 200 mL."
+      ],
+      "expr": "500*40/100",
+      "answer": "200"
+    },
+    {
+      "problem": "Dạng tính độ cồn: hoà 30 mL ethanol vào nước được 200 mL dung dịch. Độ cồn?",
+      "steps": [
+        "30/200·100.",
+        "= 15°."
+      ],
+      "expr": "30*100/200",
+      "answer": "15"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Công thức của ethylic alcohol là:",
+      "choices": [
+        "C₂H₅OH",
+        "CH₃COOH",
+        "CH₄",
+        "C₂H₄"
+      ],
+      "answer": 0,
+      "explain": "Ethanol.",
+      "wrong_explain": {
+        "1": "Acetic acid.",
+        "2": "Methane.",
+        "3": "Ethylene."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Rượu 45° nghĩa là:",
+      "choices": [
+        "Rượu ở 45 °C",
+        "Có 45 g ethanol",
+        "45% là nước",
+        "Trong 100 mL rượu có 45 mL ethanol nguyên chất"
+      ],
+      "answer": 3,
+      "explain": "Độ cồn.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Theo thể tích.",
+        "2": "Ngược lại."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ethylic alcohol tác dụng với sodium sinh ra khí:",
+      "choices": [
+        "O₂",
+        "CO₂",
+        "H₂",
+        "Cl₂"
+      ],
+      "answer": 2,
+      "explain": "Do nhóm OH.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cồn 70° thường dùng để:",
+      "choices": [
+        "Uống",
+        "Sát trùng",
+        "Nấu ăn",
+        "Tưới cây"
+      ],
+      "answer": 1,
+      "explain": "Diệt khuẩn.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phân tử khối của C₂H₅OH:",
+      "expr": "46",
+      "answer": "46",
+      "explain": "24 + 6 + 16."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "750 mL rượu 12° chứa bao nhiêu mL ethanol?",
+      "expr": "90",
+      "answer": "90",
+      "explain": "750·12%."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đốt 0,1 mol C₂H₅OH thu bao nhiêu mol CO₂?",
+      "expr": "0.2",
+      "answer": "0.2",
+      "explain": "×2."
+    }
+  ]
+}

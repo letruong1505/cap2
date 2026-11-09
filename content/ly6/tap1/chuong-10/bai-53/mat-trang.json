@@ -1,0 +1,157 @@
+{
+  "id": "bai-53",
+  "grade": 6,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 6",
+  "chapter": "Chương X. Trái Đất và bầu trời",
+  "lesson": "Bài 53. Mặt Trăng",
+  "section": "",
+  "bookPage": 183,
+  "requirements": [
+    "Giải thích được các pha nhìn thấy của Mặt Trăng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Mặt Trăng là vệ tinh tự nhiên của Trái Đất; Mặt Trăng không tự phát sáng mà phản chiếu ánh sáng Mặt Trời. Mặt Trăng quay quanh Trái Đất một vòng mất khoảng 29,5 ngày (theo chu kì tuần trăng)."
+    },
+    {
+      "type": "text",
+      "content": "Vì Mặt Trăng chuyển động quanh Trái Đất, phần được Mặt Trời chiếu sáng mà ta nhìn thấy thay đổi theo ngày, tạo nên các pha: trăng mới (không trăng), trăng lưỡi liềm đầu tháng, trăng thượng huyền (bán nguyệt đầu tháng), trăng khuyết, trăng tròn, trăng khuyết, trăng hạ huyền, trăng lưỡi liềm cuối tháng."
+    },
+    {
+      "type": "text",
+      "content": "Ngày rằm (15 âm lịch) thường thấy trăng tròn; ngày mùng 1 không thấy trăng."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Từ trăng mới đến trăng tròn khoảng nửa chu kì 29,5 ngày. Khoảng bao nhiêu ngày?",
+      "steps": [
+        "29,5 : 2.",
+        "= 14,75 ngày."
+      ],
+      "expr": "29.5/2",
+      "answer": "14.75"
+    },
+    {
+      "problem": "Dạng đếm chu kì: trong 59 ngày có khoảng bao nhiêu chu kì tuần trăng?",
+      "steps": [
+        "59 : 29,5.",
+        "= 2 chu kì."
+      ],
+      "expr": "59*10/295",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Mặt Trăng sáng là do:",
+      "choices": [
+        "Tự phát sáng",
+        "Có lửa trên bề mặt",
+        "Phản chiếu ánh sáng Mặt Trời",
+        "Phản chiếu ánh sáng Trái Đất"
+      ],
+      "answer": 2,
+      "explain": "Không tự phát sáng.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Chủ yếu là ánh sáng Mặt Trời."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Ngày rằm âm lịch ta thường thấy:",
+      "choices": [
+        "Không trăng",
+        "Trăng tròn",
+        "Trăng lưỡi liềm",
+        "Trăng hạ huyền"
+      ],
+      "answer": 1,
+      "explain": "Trăng tròn.",
+      "wrong_explain": {
+        "0": "Ngày mùng 1.",
+        "2": "Đầu hoặc cuối tháng.",
+        "3": "Khoảng ngày 22–23."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nguyên nhân có các pha Mặt Trăng là:",
+      "choices": [
+        "Mặt Trăng chuyển động quanh Trái Đất nên phần được chiếu sáng ta thấy thay đổi",
+        "Mặt Trăng tự thay đổi hình dạng",
+        "Mây che",
+        "Trái Đất che Mặt Trăng hằng ngày"
+      ],
+      "answer": 0,
+      "explain": "Vị trí tương đối thay đổi.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Đó là nguyệt thực, hiếm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Mặt Trăng là:",
+      "choices": [
+        "Một ngôi sao",
+        "Một hành tinh",
+        "Sao chổi",
+        "Vệ tinh tự nhiên của Trái Đất"
+      ],
+      "answer": 3,
+      "explain": "Vệ tinh.",
+      "wrong_explain": {
+        "0": "Không tự phát sáng.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chu kì tuần trăng khoảng 29,5 ngày. 4 chu kì khoảng bao nhiêu ngày?",
+      "expr": "118",
+      "answer": "118",
+      "explain": "29,5·4."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mỗi pha chính kéo dài khoảng 7,4 ngày. Từ trăng mới đến trăng thượng huyền khoảng bao nhiêu ngày (làm tròn 7)?",
+      "expr": "7",
+      "answer": "7",
+      "explain": "Khoảng 1/4 chu kì."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có bao nhiêu pha trong danh sách: trăng mới, lưỡi liềm đầu tháng, thượng huyền, khuyết đầu tháng, trăng tròn, khuyết cuối tháng, hạ huyền, lưỡi liềm cuối tháng?",
+      "expr": "8",
+      "answer": "8",
+      "explain": "8 pha."
+    }
+  ]
+}

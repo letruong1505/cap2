@@ -1,0 +1,168 @@
+{
+  "id": "bai-6",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương I. Tập hợp các số tự nhiên",
+  "lesson": "Bài 6. Luỹ thừa với số mũ tự nhiên",
+  "section": "",
+  "bookPage": 22,
+  "requirements": [
+    "Thực hiện phép tính luỹ thừa với số mũ tự nhiên; nhân, chia hai luỹ thừa cùng cơ số."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Luỹ thừa bậc n của a là tích của n thừa số bằng nhau, mỗi thừa số bằng a (n ∈ ℕ*). a là cơ số, n là số mũ. a² đọc là a bình phương, a³ đọc là a lập phương. Quy ước a¹ = a, a⁰ = 1 (a ≠ 0)."
+    },
+    {
+      "type": "formula",
+      "content": "aⁿ = a·a·…·a (n thừa số a)"
+    },
+    {
+      "type": "formula",
+      "content": "aᵐ·aⁿ = aᵐ⁺ⁿ;   aᵐ : aⁿ = aᵐ⁻ⁿ (a ≠ 0, m ≥ n)"
+    },
+    {
+      "type": "text",
+      "content": "Mọi số tự nhiên đều viết được dưới dạng tổng giá trị các chữ số nhân với luỹ thừa của 10, ví dụ 2 345 = 2·10³ + 3·10² + 4·10 + 5."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính 2⁵.",
+      "steps": [
+        "2⁵ = 2·2·2·2·2.",
+        "= 32."
+      ],
+      "expr": "2*2*2*2*2",
+      "answer": "32"
+    },
+    {
+      "problem": "Dạng nhân, chia luỹ thừa cùng cơ số: tính 3⁷ : 3⁴.",
+      "steps": [
+        "3⁷ : 3⁴ = 3⁷⁻⁴ = 3³.",
+        "= 27."
+      ],
+      "expr": "3*3*3",
+      "answer": "27"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Viết gọn 5·5·5·5 dưới dạng luỹ thừa:",
+      "choices": [
+        "4⁵",
+        "5·4",
+        "20",
+        "5⁴"
+      ],
+      "answer": 3,
+      "explain": "Bốn thừa số 5.",
+      "wrong_explain": {
+        "0": "Cơ số là 5, số mũ là 4.",
+        "1": "Đó là phép nhân, không phải luỹ thừa.",
+        "2": "Đó là 5·4."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kết quả của aᵐ·aⁿ là:",
+      "choices": [
+        "aᵐ·ⁿ",
+        "aᵐ⁻ⁿ",
+        "aᵐ⁺ⁿ",
+        "(2a)ᵐ⁺ⁿ"
+      ],
+      "answer": 2,
+      "explain": "Nhân hai luỹ thừa cùng cơ số: giữ cơ số, cộng số mũ.",
+      "wrong_explain": {
+        "0": "Phải cộng số mũ.",
+        "1": "Đó là phép chia.",
+        "3": "Cơ số giữ nguyên."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Giá trị của 2023⁰ là:",
+      "choices": [
+        "0",
+        "1",
+        "2023",
+        "Không xác định"
+      ],
+      "answer": 1,
+      "explain": "Quy ước a⁰ = 1.",
+      "wrong_explain": {
+        "0": "a⁰ = 1 với a ≠ 0.",
+        "2": "Đó là 2023¹.",
+        "3": "a⁰ = 1."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 10⁴.",
+      "expr": "10*10*10*10",
+      "answer": "10000",
+      "explain": "10 000."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 3⁴.",
+      "expr": "3*3*3*3",
+      "answer": "81",
+      "explain": "81."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 2³·2² (ra số).",
+      "expr": "2*2*2*2*2",
+      "answer": "32",
+      "explain": "2⁵ = 32."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 5⁶ : 5⁴.",
+      "expr": "5*5",
+      "answer": "25",
+      "explain": "5² = 25."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính 4² + 3³.",
+      "expr": "16+27",
+      "answer": "43",
+      "explain": "16 + 27 = 43."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm x biết 2ˣ = 64.",
+      "expr": "6",
+      "answer": "6",
+      "explain": "64 = 2⁶ nên x = 6."
+    }
+  ]
+}

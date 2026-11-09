@@ -1,0 +1,161 @@
+{
+  "id": "bai-38",
+  "grade": 9,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 9",
+  "chapter": "Chương XI. Di truyền học Mendel. Cơ sở phân tử của hiện tượng di truyền",
+  "lesson": "Bài 38. Nucleic acid và gene",
+  "section": "",
+  "bookPage": 166,
+  "requirements": [
+    "Nêu được thành phần hoá học, cấu trúc DNA, RNA; khái niệm gene."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nucleic acid gồm DNA và RNA, là đại phân tử được cấu tạo theo nguyên tắc đa phân, đơn phân là nucleotide."
+    },
+    {
+      "type": "text",
+      "content": "DNA gồm hai mạch polynucleotide xoắn kép; bốn loại nucleotide A, T, G, C. Các nucleotide trên hai mạch liên kết theo nguyên tắc bổ sung: A liên kết với T (2 liên kết hydrogen), G liên kết với C (3 liên kết hydrogen). Mỗi chu kì xoắn dài 3,4 nm gồm 10 cặp nucleotide."
+    },
+    {
+      "type": "formula",
+      "content": "A = T; G = C; N = 2A + 2G; chiều dài L = N/2 · 0,34 nm"
+    },
+    {
+      "type": "text",
+      "content": "RNA gồm một mạch, đơn phân A, U, G, C; có mRNA, tRNA, rRNA. Gene là một đoạn DNA mang thông tin quy định một sản phẩm nhất định (RNA hoặc protein)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một gene có A = 600, G = 900. Tổng số nucleotide N?",
+      "steps": [
+        "N = 2A + 2G = 1 200 + 1 800.",
+        "= 3 000."
+      ],
+      "expr": "2*600+2*900",
+      "answer": "3000"
+    },
+    {
+      "problem": "Dạng tính chiều dài: gene có 3 000 nucleotide dài bao nhiêu nm?",
+      "steps": [
+        "L = 3 000/2·0,34.",
+        "= 510 nm."
+      ],
+      "expr": "3000/2*0.34",
+      "answer": "510"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Theo nguyên tắc bổ sung trong DNA, A liên kết với:",
+      "choices": [
+        "G",
+        "T",
+        "C",
+        "U"
+      ],
+      "answer": 1,
+      "explain": "A – T.",
+      "wrong_explain": {
+        "0": "G liên kết với C.",
+        "2": "Không.",
+        "3": "Trong RNA."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn phân của nucleic acid là:",
+      "choices": [
+        "Nucleotide",
+        "Amino acid",
+        "Glucose",
+        "Acid béo"
+      ],
+      "answer": 0,
+      "explain": "Nucleotide.",
+      "wrong_explain": {
+        "1": "Của protein.",
+        "2": "Của tinh bột.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "RNA khác DNA ở chỗ:",
+      "choices": [
+        "Có hai mạch",
+        "Chứa T",
+        "Không có G",
+        "Có một mạch và chứa U thay T"
+      ],
+      "answer": 3,
+      "explain": "Cấu trúc RNA.",
+      "wrong_explain": {
+        "0": "DNA.",
+        "1": "DNA.",
+        "2": "Có."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Gene là:",
+      "choices": [
+        "Một phân tử protein",
+        "Một nhiễm sắc thể",
+        "Đoạn DNA mang thông tin quy định một sản phẩm",
+        "Một loại đường"
+      ],
+      "answer": 2,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Lớn hơn.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Gene có A = 300, G = 200. Số T:",
+      "expr": "300",
+      "answer": "300",
+      "explain": "A = T."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Gene có A = 400, G = 600. Tổng nucleotide:",
+      "expr": "2000",
+      "answer": "2000",
+      "explain": "2·400 + 2·600."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Gene có 120 chu kì xoắn. Tổng số nucleotide:",
+      "expr": "2400",
+      "answer": "2400",
+      "explain": "120·20."
+    }
+  ]
+}

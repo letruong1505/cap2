@@ -1,0 +1,161 @@
+{
+  "id": "bai-16",
+  "grade": 6,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 6",
+  "chapter": "Chương 4. Khí hậu và biến đổi khí hậu",
+  "lesson": "Bài 16. Nhiệt độ không khí. Mây và mưa",
+  "section": "",
+  "bookPage": 146,
+  "requirements": [
+    "Trình bày được sự thay đổi nhiệt độ không khí theo vĩ độ, độ cao; mây và mưa; đo nhiệt độ, lượng mưa."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nhiệt độ không khí do mặt đất hấp thụ năng lượng Mặt Trời rồi bức xạ lại. Đo bằng nhiệt kế đặt trong lều khí tượng cách mặt đất 1,5 m. Nhiệt độ trung bình ngày = tổng nhiệt độ các lần đo : số lần đo."
+    },
+    {
+      "type": "text",
+      "content": "Nhiệt độ thay đổi theo vĩ độ (giảm dần từ Xích đạo về cực), theo độ cao (lên cao 100 m giảm 0,6 °C), theo vị trí gần hay xa biển."
+    },
+    {
+      "type": "text",
+      "content": "Độ ẩm không khí: không khí chứa hơi nước. Khi không khí bão hoà, hơi nước ngưng tụ thành mây, gặp điều kiện thuận lợi thì gây mưa."
+    },
+    {
+      "type": "text",
+      "content": "Lượng mưa đo bằng vũ kế (thùng đo mưa). Lượng mưa phân bố không đều: nhiều nhất ở vùng Xích đạo, ít ở vùng cực và hoang mạc."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đo nhiệt độ 3 lần trong ngày: 24 °C, 30 °C, 27 °C. Nhiệt độ trung bình ngày?",
+      "steps": [
+        "(24 + 30 + 27) : 3.",
+        "= 27 °C."
+      ],
+      "expr": "(24+30+27)/3",
+      "answer": "27"
+    },
+    {
+      "problem": "Dạng lượng mưa năm: lượng mưa 12 tháng có tổng 1 680 mm. Trung bình tháng?",
+      "steps": [
+        "1 680 : 12.",
+        "= 140 mm."
+      ],
+      "expr": "1680/12",
+      "answer": "140"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nhiệt kế đo nhiệt độ không khí được đặt cách mặt đất:",
+      "choices": [
+        "10 m",
+        "0 m",
+        "5 m",
+        "1,5 m"
+      ],
+      "answer": 3,
+      "explain": "Trong lều khí tượng.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nhiệt độ không khí thay đổi theo vĩ độ:",
+      "choices": [
+        "Tăng dần từ Xích đạo về cực",
+        "Không thay đổi",
+        "Giảm dần từ Xích đạo về cực",
+        "Cao nhất ở cực"
+      ],
+      "answer": 2,
+      "explain": "Góc chiếu sáng.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "1": "Có thay đổi.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dụng cụ đo lượng mưa là:",
+      "choices": [
+        "Nhiệt kế",
+        "Vũ kế",
+        "Khí áp kế",
+        "Ẩm kế"
+      ],
+      "answer": 1,
+      "explain": "Thùng đo mưa.",
+      "wrong_explain": {
+        "0": "Đo nhiệt.",
+        "2": "Đo khí áp.",
+        "3": "Đo độ ẩm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Mây được hình thành khi:",
+      "choices": [
+        "Hơi nước trong không khí bão hoà ngưng tụ",
+        "Không khí rất khô",
+        "Gió ngừng thổi",
+        "Nhiệt độ tăng cao mãi"
+      ],
+      "answer": 0,
+      "explain": "Ngưng tụ.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đo nhiệt độ 4 lần: 20, 25, 31, 24 °C. Trung bình ngày:",
+      "expr": "25",
+      "answer": "25",
+      "explain": "100 : 4."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lên cao 2 500 m nhiệt độ giảm bao nhiêu độ (0,6 °C/100 m)?",
+      "expr": "15",
+      "answer": "15",
+      "explain": "0,6·25."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tháng 8 mưa 320 mm, tháng 1 mưa 20 mm. Chênh lệch (mm):",
+      "expr": "300",
+      "answer": "300",
+      "explain": "300."
+    }
+  ]
+}

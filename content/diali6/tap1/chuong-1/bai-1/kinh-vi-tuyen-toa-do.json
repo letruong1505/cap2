@@ -1,0 +1,161 @@
+{
+  "id": "bai-1",
+  "grade": 6,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 6",
+  "chapter": "Chương 1. Bản đồ – phương tiện thể hiện bề mặt Trái Đất",
+  "lesson": "Bài 1. Hệ thống kinh, vĩ tuyến. Toạ độ địa lí",
+  "section": "",
+  "bookPage": 102,
+  "requirements": [
+    "Xác định được kinh tuyến gốc, xích đạo, các bán cầu; ghi được toạ độ địa lí của một địa điểm."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Kinh tuyến là những nửa đường tròn nối hai cực trên bề mặt quả Địa Cầu; vĩ tuyến là những vòng tròn bao quanh quả Địa Cầu, vuông góc với kinh tuyến."
+    },
+    {
+      "type": "text",
+      "content": "Kinh tuyến gốc (0°) đi qua đài thiên văn Grin-uých (Anh). Vĩ tuyến gốc (0°) là Xích đạo, chia Trái Đất thành bán cầu Bắc và bán cầu Nam. Kinh tuyến 0° và 180° chia Trái Đất thành bán cầu Đông và bán cầu Tây."
+    },
+    {
+      "type": "text",
+      "content": "Kinh độ của một điểm là số độ chỉ khoảng cách từ kinh tuyến đi qua điểm đó đến kinh tuyến gốc; vĩ độ là số độ chỉ khoảng cách từ vĩ tuyến đi qua điểm đó đến Xích đạo. Kinh độ và vĩ độ hợp thành toạ độ địa lí."
+    },
+    {
+      "type": "text",
+      "content": "Nếu cứ 1° vẽ một kinh tuyến thì có 360 kinh tuyến; cứ 1° vẽ một vĩ tuyến thì có 181 vĩ tuyến (90 bắc, 90 nam và Xích đạo)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Nếu cứ 10° vẽ một kinh tuyến thì có bao nhiêu kinh tuyến?",
+      "steps": [
+        "360 : 10.",
+        "= 36 kinh tuyến."
+      ],
+      "expr": "360/10",
+      "answer": "36"
+    },
+    {
+      "problem": "Dạng tính khoảng cách vĩ độ: Hà Nội ở vĩ độ khoảng 21°B, TP Hồ Chí Minh khoảng 11°B. Chênh lệch bao nhiêu độ vĩ?",
+      "steps": [
+        "21 − 11.",
+        "= 10°."
+      ],
+      "expr": "21-11",
+      "answer": "10"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kinh tuyến gốc đi qua:",
+      "choices": [
+        "Hà Nội",
+        "Xích đạo",
+        "Đài thiên văn Grin-uých (Anh)",
+        "Cực Nam"
+      ],
+      "answer": 2,
+      "explain": "Kinh tuyến 0°.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Vĩ tuyến gốc là:",
+      "choices": [
+        "Chí tuyến Bắc",
+        "Xích đạo",
+        "Vòng cực Bắc",
+        "Kinh tuyến 180°"
+      ],
+      "answer": 1,
+      "explain": "Vĩ tuyến 0°.",
+      "wrong_explain": {
+        "0": "23°27′B.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Xích đạo chia Trái Đất thành:",
+      "choices": [
+        "Bán cầu Bắc và bán cầu Nam",
+        "Bán cầu Đông và Tây",
+        "Bốn bán cầu",
+        "Không chia"
+      ],
+      "answer": 0,
+      "explain": "Xích đạo.",
+      "wrong_explain": {
+        "1": "Kinh tuyến 0° và 180°.",
+        "2": "Không.",
+        "3": "Có."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Toạ độ địa lí của một điểm gồm:",
+      "choices": [
+        "Độ cao và độ sâu",
+        "Chiều dài và chiều rộng",
+        "Nhiệt độ và lượng mưa",
+        "Kinh độ và vĩ độ"
+      ],
+      "answer": 3,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cứ 1° vẽ một vĩ tuyến thì có tất cả bao nhiêu vĩ tuyến (kể cả Xích đạo)?",
+      "expr": "181",
+      "answer": "181",
+      "explain": "90 + 90 + 1."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cứ 15° vẽ một kinh tuyến thì có bao nhiêu kinh tuyến?",
+      "expr": "24",
+      "answer": "24",
+      "explain": "360 : 15."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Điểm A ở 30°B, điểm B ở 20°N. Hai điểm cách nhau bao nhiêu độ vĩ?",
+      "expr": "50",
+      "answer": "50",
+      "explain": "Khác bán cầu: 30 + 20."
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "id": "bai-8",
+  "grade": 6,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 6",
+  "chapter": "Chương I. Mở đầu về Khoa học tự nhiên",
+  "lesson": "Bài 8. Đo nhiệt độ",
+  "section": "",
+  "bookPage": 24,
+  "requirements": [
+    "Nêu được khái niệm nhiệt độ, các thang nhiệt độ; cách đo nhiệt độ bằng nhiệt kế."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nhiệt độ là số đo độ \"nóng\", \"lạnh\" của vật. Không thể dùng cảm giác để xác định chính xác nhiệt độ."
+    },
+    {
+      "type": "text",
+      "content": "Thang nhiệt độ Celsius (°C): nhiệt độ nước đá đang tan là 0 °C, nước đang sôi là 100 °C. Thang Kelvin (K) là thang nhiệt độ trong hệ SI; nhiệt độ 0 °C ứng với 273 K."
+    },
+    {
+      "type": "formula",
+      "content": "T(K) = t(°C) + 273;   t(°F) = 1,8·t(°C) + 32"
+    },
+    {
+      "type": "text",
+      "content": "Nhiệt kế hoạt động dựa trên sự dãn nở vì nhiệt của chất lỏng (thuỷ ngân, rượu) hoặc cảm biến. Các loại: nhiệt kế y tế, nhiệt kế rượu, nhiệt kế điện tử, nhiệt kế hồng ngoại."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đổi 37 °C sang độ F.",
+      "steps": [
+        "t(°F) = 1,8·37 + 32.",
+        "= 98,6 °F."
+      ],
+      "expr": "1.8*37+32",
+      "answer": "98.6"
+    },
+    {
+      "problem": "Dạng đổi sang Kelvin: 25 °C bằng bao nhiêu K?",
+      "steps": [
+        "T = 25 + 273.",
+        "= 298 K."
+      ],
+      "expr": "25+273",
+      "answer": "298"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nhiệt độ nước đá đang tan trong thang Celsius là:",
+      "choices": [
+        "100 °C",
+        "32 °C",
+        "273 °C",
+        "0 °C"
+      ],
+      "answer": 3,
+      "explain": "Mốc 0 °C.",
+      "wrong_explain": {
+        "0": "Nhiệt độ nước sôi.",
+        "1": "32 °F.",
+        "2": "273 K."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nhiệt kế y tế thuỷ ngân hoạt động dựa trên:",
+      "choices": [
+        "Sự bay hơi",
+        "Sự nóng chảy",
+        "Sự dãn nở vì nhiệt của thuỷ ngân",
+        "Từ trường"
+      ],
+      "answer": 2,
+      "explain": "Dãn nở vì nhiệt.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao không dùng tay để xác định chính xác nhiệt độ?",
+      "choices": [
+        "Tay quá lạnh",
+        "Cảm giác của tay không chính xác",
+        "Tay quá nóng",
+        "Tay không cảm nhận"
+      ],
+      "answer": 1,
+      "explain": "Cảm giác chủ quan.",
+      "wrong_explain": {
+        "0": "Không phải lí do chung.",
+        "2": "Không.",
+        "3": "Tay vẫn cảm nhận."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đổi 100 °C sang K.",
+      "expr": "373",
+      "answer": "373",
+      "explain": "373 K."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đổi 300 K sang °C.",
+      "expr": "27",
+      "answer": "27",
+      "explain": "27 °C."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đổi 20 °C sang °F.",
+      "expr": "1.8*20+32",
+      "answer": "68",
+      "explain": "68 °F."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nhiệt độ buổi sáng 22 °C, buổi trưa 31 °C. Nhiệt độ tăng bao nhiêu độ?",
+      "expr": "9",
+      "answer": "9",
+      "explain": "9 °C."
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "id": "bai-22",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương V. Tính đối xứng của hình phẳng trong tự nhiên",
+  "lesson": "Bài 22. Hình có tâm đối xứng",
+  "section": "",
+  "bookPage": 103,
+  "requirements": [
+    "Nhận biết tâm đối xứng của một hình phẳng; nhận biết hình có tâm đối xứng trong thực tế."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Một hình có tâm đối xứng O nếu khi quay hình nửa vòng (180°) quanh điểm O thì hình thu được chồng khít với hình ban đầu. Điểm O gọi là tâm đối xứng."
+    },
+    {
+      "type": "text",
+      "content": "Hình chữ nhật, hình thoi, hình vuông, hình bình hành có tâm đối xứng là giao điểm hai đường chéo; lục giác đều có tâm đối xứng là giao điểm ba đường chéo chính; đường tròn có tâm đối xứng là tâm."
+    },
+    {
+      "type": "text",
+      "content": "Tam giác đều, hình thang cân không có tâm đối xứng."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Có bao nhiêu hình có tâm đối xứng trong: hình vuông, tam giác đều, hình bình hành, hình thang cân?",
+      "steps": [
+        "Hình vuông và hình bình hành có tâm đối xứng.",
+        "Có 2 hình."
+      ],
+      "expr": "2",
+      "answer": "2"
+    },
+    {
+      "problem": "Dạng xét chữ số: trong 0, 1, 6, 8, 9, chữ số nào có tâm đối xứng khi viết kiểu số điện tử? (0, 1, 8 có)",
+      "steps": [
+        "0, 1, 8 quay 180° vẫn như cũ.",
+        "Có 3 chữ số."
+      ],
+      "expr": "3",
+      "answer": "3"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hình nào không có tâm đối xứng?",
+      "choices": [
+        "Hình bình hành",
+        "Tam giác đều",
+        "Hình vuông",
+        "Hình thoi"
+      ],
+      "answer": 1,
+      "explain": "Quay 180° tam giác đều không chồng khít.",
+      "wrong_explain": {
+        "0": "Có tâm đối xứng.",
+        "2": "Có tâm đối xứng.",
+        "3": "Có tâm đối xứng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tâm đối xứng của hình bình hành là:",
+      "choices": [
+        "Giao điểm hai đường chéo",
+        "Một đỉnh",
+        "Trung điểm một cạnh",
+        "Không có"
+      ],
+      "answer": 0,
+      "explain": "Giao điểm hai đường chéo.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Có."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hình có tâm đối xứng khi quay quanh tâm một góc:",
+      "choices": [
+        "90°",
+        "360°",
+        "60°",
+        "180°"
+      ],
+      "answer": 3,
+      "explain": "Quay nửa vòng.",
+      "wrong_explain": {
+        "0": "Quay nửa vòng tức 180°.",
+        "1": "Quay một vòng thì hình nào cũng trùng.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong các hình: hình chữ nhật, hình thoi, lục giác đều, hình thang cân, có bao nhiêu hình có tâm đối xứng?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Hình chữ nhật, hình thoi, lục giác đều."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong các chữ cái H, N, S, Z, A, có bao nhiêu chữ có tâm đối xứng?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "H, N, S, Z."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình vuông có bao nhiêu tâm đối xứng?",
+      "expr": "1",
+      "answer": "1",
+      "explain": "1 tâm."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình có cả trục đối xứng và tâm đối xứng trong: hình vuông, hình bình hành, tam giác đều, hình thang cân. Số hình là:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "Chỉ hình vuông."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Số trục đối xứng của hình vừa có tâm đối xứng vừa có đúng 2 trục đối xứng là hình chữ nhật: bao nhiêu trục?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "2."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lục giác đều có bao nhiêu tâm đối xứng?",
+      "expr": "1",
+      "answer": "1",
+      "explain": "1."
+    }
+  ]
+}

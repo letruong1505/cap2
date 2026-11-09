@@ -1,0 +1,157 @@
+{
+  "id": "bai-48",
+  "grade": 6,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 6",
+  "chapter": "Chương IX. Năng lượng",
+  "lesson": "Bài 48. Sự chuyển hoá năng lượng",
+  "section": "",
+  "bookPage": 168,
+  "requirements": [
+    "Nêu được sự chuyển hoá năng lượng; định luật bảo toàn năng lượng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Năng lượng có thể chuyển hoá từ dạng này sang dạng khác. Ví dụ: quạt điện chuyển hoá điện năng thành động năng (cánh quạt), năng lượng âm thanh và nhiệt; pin mặt trời chuyển quang năng thành điện năng."
+    },
+    {
+      "type": "text",
+      "content": "Định luật bảo toàn năng lượng: năng lượng không tự sinh ra hoặc tự mất đi mà chỉ chuyển từ dạng này sang dạng khác hoặc truyền từ vật này sang vật khác."
+    },
+    {
+      "type": "text",
+      "content": "Khi quả bóng rơi, thế năng chuyển dần thành động năng; khi nảy lên, động năng chuyển thành thế năng."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một bóng đèn nhận 100 J điện năng, phát ra 10 J quang năng. Theo bảo toàn năng lượng, nhiệt năng toả ra là bao nhiêu?",
+      "steps": [
+        "100 − 10.",
+        "= 90 J."
+      ],
+      "expr": "100-10",
+      "answer": "90"
+    },
+    {
+      "problem": "Dạng chuyển hoá cơ năng: vật có thế năng 50 J rơi xuống, ngay trước khi chạm đất (bỏ qua sức cản) động năng bằng bao nhiêu?",
+      "steps": [
+        "Thế năng chuyển hoá hết thành động năng.",
+        "= 50 J."
+      ],
+      "expr": "50",
+      "answer": "50"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Định luật bảo toàn năng lượng phát biểu rằng năng lượng:",
+      "choices": [
+        "Tự sinh ra",
+        "Không tự sinh ra hay mất đi, chỉ chuyển hoá hoặc truyền đi",
+        "Tự mất đi",
+        "Luôn tăng"
+      ],
+      "answer": 1,
+      "explain": "Bảo toàn.",
+      "wrong_explain": {
+        "0": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Pin mặt trời chuyển hoá:",
+      "choices": [
+        "Quang năng thành điện năng",
+        "Điện năng thành quang năng",
+        "Nhiệt năng thành cơ năng",
+        "Hoá năng thành điện năng"
+      ],
+      "answer": 0,
+      "explain": "Ánh sáng thành điện.",
+      "wrong_explain": {
+        "1": "Đó là bóng đèn.",
+        "2": "Không.",
+        "3": "Pin hoá học."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi quả bóng rơi xuống:",
+      "choices": [
+        "Động năng chuyển thành thế năng",
+        "Năng lượng mất đi",
+        "Không có chuyển hoá",
+        "Thế năng chuyển thành động năng"
+      ],
+      "answer": 3,
+      "explain": "Độ cao giảm, tốc độ tăng.",
+      "wrong_explain": {
+        "0": "Khi đi lên.",
+        "1": "Không.",
+        "2": "Có."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trong ấm điện, điện năng chủ yếu chuyển hoá thành:",
+      "choices": [
+        "Quang năng",
+        "Động năng",
+        "Nhiệt năng",
+        "Âm thanh"
+      ],
+      "answer": 2,
+      "explain": "Đun nóng nước.",
+      "wrong_explain": {
+        "0": "Không chủ yếu.",
+        "1": "Không.",
+        "3": "Không chủ yếu."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Động cơ nhận 500 J, sinh ra 400 J cơ năng. Phần năng lượng còn lại (J):",
+      "expr": "100",
+      "answer": "100",
+      "explain": "500 − 400."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bóng rơi từ 2 m, thế năng ban đầu 10 J, khi chạm đất động năng 9 J. Phần năng lượng chuyển thành nhiệt do sức cản không khí (J):",
+      "expr": "1",
+      "answer": "1",
+      "explain": "10 − 9."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Pin mặt trời nhận 1 000 J quang năng, tạo ra 200 J điện năng. Tỉ lệ chuyển hoá (%) là:",
+      "expr": "20",
+      "answer": "20",
+      "explain": "200/1 000."
+    }
+  ]
+}

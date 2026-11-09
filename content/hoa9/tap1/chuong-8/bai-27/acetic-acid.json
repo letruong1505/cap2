@@ -1,0 +1,161 @@
+{
+  "id": "bai-27",
+  "grade": 9,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 9",
+  "chapter": "Chương VIII. Ethylic alcohol và acetic acid",
+  "lesson": "Bài 27. Acetic acid",
+  "section": "",
+  "bookPage": 123,
+  "requirements": [
+    "Nêu được công thức, tính chất vật lí, hoá học của acetic acid; ứng dụng; phản ứng ester hoá."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Acetic acid có công thức CH₃COOH, là chất lỏng không màu, vị chua, tan vô hạn trong nước. Giấm ăn là dung dịch acetic acid 2–5%."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất hoá học: là acid yếu, làm quỳ tím hoá đỏ; tác dụng với kim loại (đứng trước H) giải phóng H₂; tác dụng với base, oxide base, muối carbonate: CH₃COOH + NaOH → CH₃COONa + H₂O; 2CH₃COOH + CaCO₃ → (CH₃COO)₂Ca + CO₂ + H₂O."
+    },
+    {
+      "type": "text",
+      "content": "Phản ứng ester hoá với ethylic alcohol (xúc tác H₂SO₄ đặc, đun nóng): CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O (ethyl acetate)."
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: làm giấm ăn, sản xuất tơ nhân tạo, dược phẩm, chất dẻo, thuốc diệt cỏ."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Giấm ăn 5%: 200 g giấm chứa bao nhiêu gam acetic acid?",
+      "steps": [
+        "200·5/100.",
+        "= 10 g."
+      ],
+      "expr": "200*5/100",
+      "answer": "10"
+    },
+    {
+      "problem": "Dạng trung hoà: 0,1 mol CH₃COOH phản ứng vừa đủ với bao nhiêu mol NaOH?",
+      "steps": [
+        "CH₃COOH + NaOH (tỉ lệ 1 : 1).",
+        "0,1 mol."
+      ],
+      "expr": "0.1",
+      "answer": "0.1"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Công thức của acetic acid là:",
+      "choices": [
+        "CH₃COOH",
+        "C₂H₅OH",
+        "HCOOH",
+        "CH₃OH"
+      ],
+      "answer": 0,
+      "explain": "Acetic acid.",
+      "wrong_explain": {
+        "1": "Ethanol.",
+        "2": "Formic acid.",
+        "3": "Methanol."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Dung dịch acetic acid làm quỳ tím:",
+      "choices": [
+        "Hoá xanh",
+        "Không đổi màu",
+        "Mất màu",
+        "Hoá đỏ"
+      ],
+      "answer": 3,
+      "explain": "Tính acid.",
+      "wrong_explain": {
+        "0": "Base.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Sản phẩm của phản ứng ester hoá giữa acetic acid và ethylic alcohol là:",
+      "choices": [
+        "Ethylene và nước",
+        "CO₂ và nước",
+        "Ethyl acetate và nước",
+        "Sodium acetate"
+      ],
+      "answer": 2,
+      "explain": "Ester.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Giấm ăn là dung dịch acetic acid nồng độ khoảng:",
+      "choices": [
+        "50%",
+        "2–5%",
+        "90%",
+        "0,01%"
+      ],
+      "answer": 1,
+      "explain": "Giấm.",
+      "wrong_explain": {
+        "0": "Quá đặc.",
+        "2": "Không.",
+        "3": "Quá loãng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phân tử khối của CH₃COOH:",
+      "expr": "60",
+      "answer": "60",
+      "explain": "24 + 4 + 32."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 0,2 mol CH₃COOH tác dụng với Zn dư. Số mol H₂:",
+      "expr": "0.1",
+      "answer": "0.1",
+      "explain": "2CH₃COOH → H₂."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "6 g CH₃COOH (M = 60) có bao nhiêu mol?",
+      "expr": "0.1",
+      "answer": "0.1",
+      "explain": "6 : 60."
+    }
+  ]
+}

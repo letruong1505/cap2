@@ -1,0 +1,168 @@
+{
+  "id": "bai-13",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 1",
+  "chapter": "Chương V. Đường tròn",
+  "lesson": "Bài 13. Mở đầu về đường tròn",
+  "section": "",
+  "bookPage": 84,
+  "requirements": [
+    "Nhận biết đường tròn, vị trí tương đối của điểm với đường tròn; tâm và trục đối xứng của đường tròn."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đường tròn tâm O bán kính R (R > 0), kí hiệu (O; R), là hình gồm tất cả các điểm cách O một khoảng bằng R."
+    },
+    {
+      "type": "text",
+      "content": "Điểm M nằm trên đường tròn khi OM = R; nằm trong khi OM < R; nằm ngoài khi OM > R."
+    },
+    {
+      "type": "text",
+      "content": "Đường tròn có tâm đối xứng là tâm của nó và có vô số trục đối xứng là các đường thẳng đi qua tâm."
+    },
+    {
+      "type": "text",
+      "content": "Dây cung là đoạn thẳng nối hai điểm của đường tròn; đường kính là dây đi qua tâm, dài bằng 2R và là dây lớn nhất."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đường tròn (O; 5 cm), điểm M có OM = 3 cm. M nằm ở đâu? Tính R − OM.",
+      "steps": [
+        "OM < R nên M nằm trong đường tròn.",
+        "5 − 3 = 2 cm."
+      ],
+      "expr": "5-3",
+      "answer": "2"
+    },
+    {
+      "problem": "Dạng tính đường kính: đường tròn có bán kính 6,5 cm thì đường kính dài bao nhiêu?",
+      "steps": [
+        "d = 2R.",
+        "= 13 cm."
+      ],
+      "expr": "2*6.5",
+      "answer": "13"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Điểm M nằm ngoài (O; R) khi:",
+      "choices": [
+        "OM = R",
+        "OM > R",
+        "OM < R",
+        "OM = 0"
+      ],
+      "answer": 1,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Nằm trên.",
+        "2": "Nằm trong.",
+        "3": "Trùng tâm."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đường tròn có bao nhiêu trục đối xứng?",
+      "choices": [
+        "Vô số",
+        "Một",
+        "Hai",
+        "Không có"
+      ],
+      "answer": 0,
+      "explain": "Mọi đường thẳng qua tâm.",
+      "wrong_explain": {
+        "1": "Mọi đường kính đều là trục.",
+        "2": "Không.",
+        "3": "Có."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dây lớn nhất của đường tròn là:",
+      "choices": [
+        "Bán kính",
+        "Dây bất kì",
+        "Tiếp tuyến",
+        "Đường kính"
+      ],
+      "answer": 3,
+      "explain": "Đường kính dài 2R.",
+      "wrong_explain": {
+        "0": "Không phải dây.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đường tròn bán kính 4 cm có đường kính là:",
+      "expr": "8",
+      "answer": "8",
+      "explain": "8 cm."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đường tròn có đường kính 15 cm. Bán kính là:",
+      "expr": "7.5",
+      "answer": "7.5",
+      "explain": "7,5 cm."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho (O; 10). Điểm A cách O 12. A cách đường tròn (điểm gần nhất) bao nhiêu?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "12 − 10 = 2."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC vuông tại A, BC = 10. Bán kính đường tròn đi qua A, B, C là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Tâm là trung điểm BC: R = 5."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình chữ nhật 6 × 8 nội tiếp đường tròn. Bán kính là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Đường chéo 10, R = 5."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho (O; 7) và điểm M nằm trên đường tròn. Độ dài OM là:",
+      "expr": "7",
+      "answer": "7",
+      "explain": "M nằm trên đường tròn thì OM = R = 7."
+    }
+  ]
+}

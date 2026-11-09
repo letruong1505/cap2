@@ -1,0 +1,149 @@
+{
+  "id": "bai-21",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 2",
+  "chapter": "Chương VI. Hàm số y = ax² (a ≠ 0). Phương trình bậc hai một ẩn",
+  "lesson": "Bài 21. Giải bài toán bằng cách lập phương trình",
+  "section": "",
+  "bookPage": 25,
+  "requirements": [
+    "Giải bài toán thực tế bằng cách lập phương trình bậc hai một ẩn."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các bước: chọn ẩn, đặt điều kiện; biểu diễn các đại lượng theo ẩn; lập phương trình; giải phương trình; đối chiếu điều kiện và trả lời."
+    },
+    {
+      "type": "text",
+      "content": "Các dạng thường gặp: diện tích hình học; chuyển động; năng suất; số học (tích hai số liên tiếp); tăng trưởng phần trăm."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tích hai số tự nhiên liên tiếp là 132. Tìm số nhỏ.",
+      "steps": [
+        "x(x + 1) = 132 ⇒ x² + x − 132 = 0.",
+        "x = 11 (loại −12)."
+      ],
+      "expr": "11",
+      "answer": "11"
+    },
+    {
+      "problem": "Dạng tăng trưởng: dân số 10 000 người, sau 2 năm là 12 100 với tỉ lệ tăng đều x%/năm. Tìm x.",
+      "steps": [
+        "10 000(1 + x/100)² = 12 100 ⇒ 1 + x/100 = 1,1.",
+        "x = 10."
+      ],
+      "expr": "10",
+      "answer": "10"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Sau khi giải phương trình, ta cần:",
+      "choices": [
+        "Trả lời ngay mọi nghiệm",
+        "Đối chiếu điều kiện của ẩn rồi trả lời",
+        "Bỏ qua điều kiện",
+        "Vẽ đồ thị"
+      ],
+      "answer": 1,
+      "explain": "Kiểm tra điều kiện.",
+      "wrong_explain": {
+        "0": "Có thể có nghiệm loại.",
+        "2": "Không.",
+        "3": "Không cần."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi ẩn là chiều dài, điều kiện thích hợp là:",
+      "choices": [
+        "Ẩn dương",
+        "Ẩn âm",
+        "Ẩn nguyên âm",
+        "Tuỳ ý"
+      ],
+      "answer": 0,
+      "explain": "Độ dài dương.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mảnh đất hình chữ nhật có chiều dài hơn chiều rộng 3 m, diện tích 70 m². Chiều dài là:",
+      "expr": "10",
+      "answer": "10",
+      "explain": "x(x − 3) = 70 ⇒ x = 10."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tích hai số chẵn liên tiếp là 168. Số lớn là:",
+      "expr": "14",
+      "answer": "14",
+      "explain": "x(x − 2) = 168 ⇒ x = 14."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một số dương có bình phương bằng 5 lần nó cộng 14. Tìm số đó.",
+      "expr": "7",
+      "answer": "7",
+      "explain": "x² − 5x − 14 = 0 ⇒ x = 7."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác vuông có cạnh huyền 13 cm, hai cạnh góc vuông hơn kém nhau 7 cm. Cạnh nhỏ là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "x² + (x + 7)² = 169 ⇒ x = 5."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một ô tô đi 150 km; nếu vận tốc tăng 5 km/h thì đến sớm hơn 1 giờ. Vận tốc ban đầu là:",
+      "expr": "25",
+      "answer": "25",
+      "explain": "150/x − 150/(x + 5) = 1 ⇒ x = 25."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá sản phẩm 1 000 nghìn, sau hai lần giảm cùng tỉ lệ x% còn 810 nghìn. Tìm x.",
+      "expr": "10",
+      "answer": "10",
+      "explain": "(1 − x/100)² = 0,81."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đội được giao 120 sản phẩm. Mỗi ngày làm thêm 2 sản phẩm thì xong sớm 2 ngày. Số sản phẩm mỗi ngày dự định:",
+      "expr": "10",
+      "answer": "10",
+      "explain": "120/x − 120/(x + 2) = 2 ⇒ x = 10."
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "id": "bai-20",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương IV. Một số hình phẳng trong thực tiễn",
+  "lesson": "Bài 20. Chu vi và diện tích của một số tứ giác đã học",
+  "section": "",
+  "bookPage": 90,
+  "requirements": [
+    "Tính chu vi, diện tích hình vuông, hình chữ nhật, hình thang, hình bình hành, hình thoi; giải bài toán thực tế."
+  ],
+  "theory": [
+    {
+      "type": "formula",
+      "content": "Hình vuông cạnh a: C = 4a;  S = a²"
+    },
+    {
+      "type": "formula",
+      "content": "Hình chữ nhật dài a, rộng b: C = 2(a + b);  S = a·b"
+    },
+    {
+      "type": "formula",
+      "content": "Hình thang đáy a, b, chiều cao h: S = (a + b)·h : 2"
+    },
+    {
+      "type": "formula",
+      "content": "Hình bình hành đáy a, chiều cao h: S = a·h"
+    },
+    {
+      "type": "formula",
+      "content": "Hình thoi hai đường chéo m, n: S = m·n : 2"
+    },
+    {
+      "type": "text",
+      "content": "Chu vi hình bình hành, hình thang, hình thoi bằng tổng độ dài các cạnh."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính diện tích hình thang có hai đáy 8 m và 12 m, chiều cao 5 m.",
+      "steps": [
+        "S = (8 + 12)·5 : 2.",
+        "= 50 m²."
+      ],
+      "expr": "(8+12)*5/2",
+      "answer": "50"
+    },
+    {
+      "problem": "Dạng bài toán thực tế: sân hình chữ nhật 10 m × 8 m lát gạch vuông cạnh 40 cm. Cần bao nhiêu viên?",
+      "steps": [
+        "Diện tích sân 1 000 dm²·8 = 80 m² = 800 000 cm²; diện tích viên gạch 1 600 cm².",
+        "800 000 : 1 600 = 500 viên."
+      ],
+      "expr": "1000*800/1600",
+      "answer": "500"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Diện tích hình thoi có hai đường chéo m và n là:",
+      "choices": [
+        "m·n",
+        "2(m + n)",
+        "m·n : 2",
+        "m + n"
+      ],
+      "answer": 2,
+      "explain": "S = m·n : 2.",
+      "wrong_explain": {
+        "0": "Phải chia 2.",
+        "1": "Đó là dạng chu vi.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Diện tích hình bình hành đáy a, chiều cao h là:",
+      "choices": [
+        "a·h : 2",
+        "a·h",
+        "2(a + h)",
+        "a + h"
+      ],
+      "answer": 1,
+      "explain": "S = a·h.",
+      "wrong_explain": {
+        "0": "Đó là tam giác.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình vuông cạnh 12 cm có diện tích là bao nhiêu cm²?",
+      "expr": "12*12",
+      "answer": "144",
+      "explain": "144 cm²."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chữ nhật 25 m × 16 m có diện tích là:",
+      "expr": "25*16",
+      "answer": "400",
+      "explain": "400 m²."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình bình hành đáy 15 cm, chiều cao 8 cm có diện tích là:",
+      "expr": "15*8",
+      "answer": "120",
+      "explain": "120 cm²."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình thoi có hai đường chéo 10 cm và 16 cm. Diện tích là:",
+      "expr": "10*16/2",
+      "answer": "80",
+      "explain": "80 cm²."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình thang có hai đáy 6 cm, 14 cm, chiều cao 7 cm. Diện tích là:",
+      "expr": "(6+14)*7/2",
+      "answer": "70",
+      "explain": "70 cm²."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một hình vuông có chu vi 40 cm. Diện tích là bao nhiêu cm²?",
+      "expr": "10*10",
+      "answer": "100",
+      "explain": "Cạnh 10 cm, S = 100 cm²."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mảnh vườn hình chữ nhật 20 m × 15 m, trồng rau, mỗi m² thu 3 kg. Thu được bao nhiêu kg rau?",
+      "expr": "20*15*3",
+      "answer": "900",
+      "explain": "300 m² × 3 = 900 kg."
+    }
+  ]
+}

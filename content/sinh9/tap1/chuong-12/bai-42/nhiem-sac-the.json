@@ -1,0 +1,157 @@
+{
+  "id": "bai-42",
+  "grade": 9,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 9",
+  "chapter": "Chương XII. Di truyền nhiễm sắc thể",
+  "lesson": "Bài 42. Nhiễm sắc thể và bộ nhiễm sắc thể",
+  "section": "",
+  "bookPage": 181,
+  "requirements": [
+    "Nêu được khái niệm, cấu trúc nhiễm sắc thể; bộ nhiễm sắc thể lưỡng bội, đơn bội; tính đặc trưng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nhiễm sắc thể (NST) là cấu trúc mang gene, nằm trong nhân tế bào, gồm DNA và protein histone. Ở kì giữa phân bào, mỗi NST gồm hai chromatid chị em đính nhau ở tâm động."
+    },
+    {
+      "type": "text",
+      "content": "Trong tế bào sinh dưỡng, NST tồn tại thành từng cặp tương đồng (giống nhau về hình thái, kích thước): bộ NST lưỡng bội 2n. Trong giao tử chỉ chứa một NST của mỗi cặp: bộ đơn bội n."
+    },
+    {
+      "type": "text",
+      "content": "Mỗi loài có bộ NST đặc trưng về số lượng, hình dạng, cấu trúc. Người 2n = 46; ruồi giấm 2n = 8; đậu Hà Lan 2n = 14; lúa 2n = 24."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Người có 2n = 46. Số NST trong giao tử?",
+      "steps": [
+        "n = 46 : 2.",
+        "= 23."
+      ],
+      "expr": "46/2",
+      "answer": "23"
+    },
+    {
+      "problem": "Dạng tính chromatid: tế bào ruồi giấm 2n = 8 ở kì giữa có bao nhiêu chromatid?",
+      "steps": [
+        "Mỗi NST kép có 2 chromatid.",
+        "8·2 = 16."
+      ],
+      "expr": "8*2",
+      "answer": "16"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "NST được cấu tạo từ:",
+      "choices": [
+        "RNA và lipid",
+        "Glucose",
+        "DNA và protein histone",
+        "Protein và tinh bột"
+      ],
+      "answer": 2,
+      "explain": "Cấu trúc.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Bộ NST trong giao tử là:",
+      "choices": [
+        "Lưỡng bội (2n)",
+        "Đơn bội (n)",
+        "Tam bội",
+        "Tứ bội"
+      ],
+      "answer": 1,
+      "explain": "Giao tử.",
+      "wrong_explain": {
+        "0": "Tế bào sinh dưỡng.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cặp NST tương đồng là hai NST:",
+      "choices": [
+        "Giống nhau về hình thái, kích thước, một từ bố một từ mẹ",
+        "Hoàn toàn khác nhau",
+        "Cùng từ bố",
+        "Là hai chromatid"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Bộ NST của người là:",
+      "choices": [
+        "2n = 48",
+        "2n = 8",
+        "2n = 24",
+        "2n = 46"
+      ],
+      "answer": 3,
+      "explain": "Người.",
+      "wrong_explain": {
+        "0": "Tinh tinh.",
+        "1": "Ruồi giấm.",
+        "2": "Lúa."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lúa 2n = 24. Số NST trong giao tử:",
+      "expr": "12",
+      "answer": "12",
+      "explain": "24 : 2."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đậu Hà Lan 2n = 14. Số cặp NST tương đồng:",
+      "expr": "7",
+      "answer": "7",
+      "explain": "14 : 2."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Người 2n = 46, kì giữa có bao nhiêu chromatid?",
+      "expr": "92",
+      "answer": "92",
+      "explain": "46·2."
+    }
+  ]
+}
