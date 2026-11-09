@@ -682,6 +682,15 @@
       "expr": "21/31",
       "answer": "21/31",
       "explain": "P(chạy | trứng) = (3/7 · 0,7)/(3/7 · 0,7 + 4/7 · 0,25) = 2,1/3,1 = 21/31."
+    },
+    {
+      "id": "q38",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "30: chuồng I có 8 gà trống, 13 gà mái; chuồng II có 10 gà trống, 6 gà mái. An bắt ngẫu nhiên một con gà từ chuồng II thả vào chuồng I; sau đó Bình bắt ngẫu nhiên một con gà từ chuồng I. Biết Bình bắt được gà mái, xác suất con gà mái đó là con An đã chuyển vào là?",
+      "expr": "42/107",
+      "answer": "42/107",
+      "explain": "P(An chuyển gà mái) = 6/16 = 3/8; khi đó chuồng I có 14 mái trong 22 con. P(An chuyển trống) = 5/8; khi đó chuồng I có 13 mái trong 22 con. P(Bình bắt mái) = 3/8 · 14/22 + 5/8 · 13/22 = 107/176. Theo Bayes, xác suất cần tìm = (3/8 · 14/22)/(107/176) = 42/107 ≈ 0,3925."
     }
   ]
 }

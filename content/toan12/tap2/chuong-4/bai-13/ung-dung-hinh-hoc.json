@@ -459,6 +459,46 @@
         "2": "π/3 nằm ngoài khoảng (0; π/4].",
         "3": "α = 0 không thuộc khoảng (0; π/4]."
       }
+    },
+    {
+      "id": "q25",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "4.16: đường cong Lorenz y = (0,00061x² + 0,0218x + 1,723)², 0 ≤ x ≤ 100. Diện tích giữa đường y = x và đường cong Lorenz (sự bất bình đẳng về thu nhập của Hoa Kỳ năm 2005) xấp xỉ bằng?",
+      "choices": [
+        "≈ 2059,3",
+        "≈ 2940,7",
+        "≈ 5000",
+        "≈ 4118,6"
+      ],
+      "answer": 0,
+      "explain": "S = ∫_0^100 [x − f(x)]dx = 5000 − ∫_0^100 f(x)dx ≈ 5000 − 2940,69 ≈ 2059,3. Lưu ý: hằng số trong hàm số là 1,723 (dấu cách trong sách là dấu phẩy thập phân), vì khi đó f(100) ≈ 100,06 khớp với điểm cuối (100; 100).",
+      "wrong_explain": {
+        "1": "2940,7 là ∫_0^100 f(x)dx, phần diện tích dưới đường Lorenz, không phải diện tích giữa hai đường.",
+        "2": "5000 là diện tích tam giác dưới đường y = x, không trừ phần dưới đường cong Lorenz.",
+        "3": "4118,6 không khớp với tích phân: diện tích đúng là 5000 − 2940,69 ≈ 2059,3."
+      }
+    },
+    {
+      "id": "q26",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "4.35: mặt trong bình gốm là mặt tròn xoay sinh ra khi quay đồ thị y = x²/175 + 3x/35 + 5 (0 ≤ x ≤ 30, đơn vị cm) quanh Ox. Độ dày không đổi 1 cm. Thể tích đất sét cần dùng là?",
+      "choices": [
+        "510π ≈ 1602,1 cm³",
+        "255π ≈ 801,1 cm³",
+        "240π ≈ 754,0 cm³",
+        "30π ≈ 94,2 cm³"
+      ],
+      "answer": 0,
+      "explain": "Mặt ngoài có bán kính f(x) + 1, nên thể tích đất sét V = π∫_0^30 [(f + 1)² − f²]dx = π∫_0^30 (2f + 1)dx. Với ∫_0^30 f dx = 240 và ∫_0^30 dx = 30: V = π(480 + 30) = 510π ≈ 1602,1 cm³.",
+      "wrong_explain": {
+        "1": "Quên hệ số 2 trong (f + 1)² − f² = 2f + 1, nên kết quả bị chia đôi phần chính.",
+        "2": "240π là π∫f dx, chỉ tính phần tích phân của f, thiếu phần độ dày π∫dx = 30π.",
+        "3": "30π chỉ là π∫dx, bỏ qua phần do hàm f(x) gây ra."
+      }
     }
   ]
 }

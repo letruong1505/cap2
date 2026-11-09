@@ -39,6 +39,14 @@
       ]
     },
     {
+      "problem": "Ví dụ 3: Tỉ lệ dân số mắc bệnh hiểm nghèo X là p. Ông M xét nghiệm dương tính với xác suất 0,95 nếu mắc và 0,01 nếu không mắc. Tính P(mắc | dương tính) theo p.",
+      "proof": true,
+      "steps": [
+        "P(A) = p, P(Ā) = 1 − p, P(B | A) = 0,95, P(B | Ā) = 0,01.",
+        "P(A | B) = p · 0,95 / (p · 0,95 + (1 − p) · 0,01)."
+      ]
+    },
+    {
       "problem": "Ví dụ 4: Tỉ lệ dân số mắc bệnh Y là 0,5%. Xét nghiệm dương tính với xác suất 0,94 nếu mắc bệnh và âm tính với xác suất 0,97 nếu không mắc. Tính P(không mắc | âm tính).",
       "proof": true,
       "steps": [
