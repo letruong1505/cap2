@@ -1,0 +1,318 @@
+{
+  "id": "t12-t2-chuong6-bai18-xac-suat-co-dieu-kien",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 12, tập 2",
+  "chapter": "Chương VI. Xác suất có điều kiện",
+  "lesson": "Bài 18. Xác suất có điều kiện",
+  "section": "1. Xác suất có điều kiện; 2. Công thức nhân xác suất; Bài tập",
+  "bookPage": 64,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Xác suất của biến cố A với điều kiện biến cố B (P(B) > 0) là P(A | B) = P(AB)/P(B)."
+    },
+    {
+      "type": "text",
+      "content": "Công thức nhân xác suất: với hai biến cố A và B bất kì, P(AB) = P(B) · P(A | B) = P(A) · P(B | A)."
+    },
+    {
+      "type": "text",
+      "content": "Hai biến cố A và B độc lập khi P(AB) = P(A) · P(B); khi đó P(A | B) = P(A) và P(B | A) = P(B)."
+    },
+    {
+      "type": "text",
+      "content": "Bảng dữ liệu thống kê 2 × 2 gồm hai dòng và hai cột; có thể dùng số liệu trong bảng để tính xác suất có điều kiện bằng cách lấy số liệu tương ứng trên tổng."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Ví dụ 1: Hộp có 20 viên bi trắng và 10 viên bi đen. Bình lấy một viên, không trả lại, rồi An lấy một viên. Tính P(A | B) với A: An lấy được bi trắng, B: Bình lấy được bi trắng.",
+      "proof": true,
+      "steps": [
+        "Nếu B xảy ra thì còn 29 viên, trong đó 19 trắng: P(A | B) = 19/29."
+      ]
+    },
+    {
+      "problem": "Ví dụ 4: Hộp có 7 bi xanh và 5 bi đen. Sơn lấy một viên (không trả lại), rồi Tùng lấy một viên trong 11 viên còn lại. Tính xác suất Sơn lấy bi đen và Tùng lấy bi xanh.",
+      "proof": true,
+      "steps": [
+        "P(A) = 5/12, P(B | A) = 7/11, P(AB) = 5/12 · 7/11 = 35/132."
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 1: Bình lấy được bi trắng (biến cố B), An lấy được bi trắng (biến cố A). Hộp có 20 trắng, 10 đen. P(A | B) bằng?",
+      "choices": [
+        "19/29",
+        "20/29",
+        "19/30",
+        "10/29"
+      ],
+      "answer": 0,
+      "explain": "Khi B xảy ra còn 29 viên với 19 viên trắng, nên P(A | B) = 19/29.",
+      "wrong_explain": {
+        "1": "20/29 là xác suất An lấy trắng khi không biết gì về Bình, sai vì Bình đã lấy một viên trắng.",
+        "2": "Mẫu phải là 29 viên còn lại, không phải 30.",
+        "3": "10/29 là xác suất An lấy được bi đen."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ví dụ 4: xác suất Sơn lấy được bi đen và Tùng lấy được bi xanh là 5/12 · 7/11 = ?",
+      "expr": "5/12*7/11",
+      "answer": "35/132",
+      "explain": "Theo công thức nhân xác suất P(AB) = P(A) · P(B | A) = 35/132."
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Luyện tập 4a: xác suất Sơn lấy được bi xanh và Tùng lấy được bi đen là ?",
+      "expr": "7/12*5/11",
+      "answer": "35/132",
+      "explain": "P = 7/12 · 5/11 = 35/132."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Luyện tập 4b: xác suất hai chiếc bút lấy ra cùng màu là ?",
+      "expr": "7/12*6/11+5/12*4/11",
+      "answer": "31/66",
+      "explain": "Cùng xanh: 7/12 · 6/11 = 7/22; cùng đen: 5/12 · 4/11 = 5/33; tổng 7/22 + 5/33 = 31/66."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ví dụ 3a: xác suất người lái xe không thắt dây an toàn bị tử vong khi tai nạn: P(A | B) = 1601/164128 (lấy 1601 người tử vong và 164128 người không thắt dây). Giá trị của 1601/164128 là?",
+      "expr": "1601/164128",
+      "answer": "1601/164128",
+      "explain": "P(A | B) = 1601/164128 ≈ 0,009755."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ví dụ 3b: P(A | B̄) với 510 người tử vong trong 412 878 người thắt dây an toàn là 510/412878. Giá trị của 510/412878 là?",
+      "expr": "510/412878",
+      "answer": "255/206439",
+      "explain": "P(A | B̄) = 510/412878 = 255/206439 ≈ 0,001235."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Luyện tập 3a: trong bảng thử nghiệm, có 2400 bệnh nhân dùng thuốc M, 1600 bệnh nhân khỏi bệnh với M. Xác suất P(M | khỏi bệnh) = 1600/2800 bằng?",
+      "expr": "1600/2800",
+      "answer": "4/7",
+      "explain": "Tổng số bệnh nhân khỏi bệnh là 1600 + 1200 = 2800, nên P = 1600/2800 = 4/7."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Luyện tập 3b: xác suất bệnh nhân dùng thuốc N, biết rằng không khỏi bệnh: P(N | không khỏi) = 400/1200 = ?",
+      "expr": "400/1200",
+      "answer": "1/3",
+      "explain": "Không khỏi bệnh có 800 + 400 = 1200 bệnh nhân, trong đó 400 dùng thuốc N."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 6.1: hộp 20 thẻ đánh số 1 đến 20. Biết thẻ rút ra mang số chẵn, xác suất thẻ đó là số 10 là?",
+      "choices": [
+        "1/10",
+        "1/20",
+        "1/2",
+        "10/20"
+      ],
+      "answer": 0,
+      "explain": "Có 10 thẻ chẵn, trong đó có một thẻ số 10 nên P = 1/10.",
+      "wrong_explain": {
+        "1": "1/20 là xác suất rút được thẻ số 10 khi không biết thông tin số chẵn.",
+        "2": "1/2 là xác suất rút được số chẵn, không phải xác suất thẻ số 10.",
+        "3": "10/20 là xác suất rút được số chẵn, không phải thẻ số 10."
+      }
+    },
+    {
+      "id": "q10",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 6.2: P(A) = 0,2; P(B) = 0,51; P(B | A) = 0,8. Giá trị P(A | B) = P(B | A) · P(A) / P(B) là?",
+      "expr": "0.8*0.2*100/51",
+      "answer": "16/51",
+      "explain": "Vì P(A | B) = P(A) · P(B | A) / P(B) = 0,16/0,51 = 16/51."
+    },
+    {
+      "id": "q11",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 6.3a: gieo hai con xúc xắc; biết có ít nhất một con xuất hiện mặt 5 chấm, xác suất để tổng số chấm là 7 bằng?",
+      "expr": "2/11",
+      "answer": "2/11",
+      "explain": "Có 11 kết quả có ít nhất một mặt 5; trong đó tổng bằng 7 chỉ có (5; 2) và (2; 5): P = 2/11."
+    },
+    {
+      "id": "q12",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 6.3b: gieo hai con xúc xắc; biết tổng số chấm là 7, xác suất có ít nhất một con xuất hiện mặt 5 chấm bằng?",
+      "expr": "2/6",
+      "answer": "1/3",
+      "explain": "Có 6 kết quả có tổng bằng 7, trong đó 2 kết quả có mặt 5: P = 2/6 = 1/3."
+    },
+    {
+      "id": "q13",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bài 6.4: gieo hai con xúc xắc; biết có ít nhất một con xuất hiện mặt 5 chấm, xác suất tổng số chấm không nhỏ hơn 10 bằng?",
+      "expr": "3/11",
+      "answer": "3/11",
+      "explain": "Trong 11 kết quả có ít nhất một mặt 5, các kết quả có tổng ≥ 10 là (5; 5), (5; 6), (6; 5): P = 3/11."
+    },
+    {
+      "id": "q14",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 6.5a: P(A) = 0,7 (thí nghiệm 1 thành công), P(B | A) = 0,9. Xác suất cả hai thí nghiệm đều thành công là?",
+      "expr": "0.7*0.9",
+      "answer": "0.63",
+      "explain": "P = 0,7 · 0,9 = 0,63."
+    },
+    {
+      "id": "q15",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 6.5b: xác suất cả hai thí nghiệm đều không thành công, biết P(B | Ā) = 0,4 (thí nghiệm 2 thành công khi thí nghiệm 1 không thành công): P(Ā) · P(B̄ | Ā) = ?",
+      "expr": "0.3*0.6",
+      "answer": "0.18",
+      "explain": "P(Ā) = 0,3 và P(B̄ | Ā) = 1 − 0,4 = 0,6, nên P = 0,18."
+    },
+    {
+      "id": "q16",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 6.5c: xác suất thí nghiệm 1 thành công và thí nghiệm 2 không thành công: P(A) · P(B̄ | A) = ?",
+      "expr": "0.7*0.1",
+      "answer": "0.07",
+      "explain": "P = 0,7 · (1 − 0,9) = 0,07."
+    },
+    {
+      "id": "q17",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 6.6: túi có một số kẹo cùng loại, 6 cái cam, còn lại vàng. Hà lấy hai cái liên tiếp không trả lại, xác suất cả hai đều cam là 1/3. Ban đầu có bao nhiêu cái kẹo?",
+      "choices": [
+        "10",
+        "9",
+        "12",
+        "15"
+      ],
+      "answer": 0,
+      "explain": "6/n · 5/(n − 1) = 1/3 suy ra n(n − 1) = 90, nên n = 10.",
+      "wrong_explain": {
+        "1": "Với n = 9: 6/9 · 5/8 = 5/12 ≠ 1/3.",
+        "2": "Với n = 12: 6/12 · 5/11 = 5/22 ≠ 1/3.",
+        "3": "Với n = 15: 6/15 · 5/14 = 1/7 ≠ 1/3."
+      }
+    },
+    {
+      "id": "q18",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bài 6.7: máy bay xuất hiện ở X với xác suất 0,55, ở Y với xác suất 0,45. Bắn hai quả tên lửa tại X hoặc một quả tại Y; xác suất bắn trúng mỗi quả là 0,8. Xác suất bắn hạ máy bay: 0,55 · (1 − 0,2²) + 0,45 · 0,8 = ?",
+      "expr": "0.55*0.96+0.45*0.8",
+      "answer": "0.888",
+      "explain": "P(bắn trúng ít nhất 1 quả tại X) = 1 − 0,2² = 0,96; tại Y là 0,8, nên tổng 0,528 + 0,36 = 0,888."
+    },
+    {
+      "id": "q19",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bài 6.8: chuồng II lấy 1 con thỏ, cho vào chuồng I, rồi lấy 1 con từ chuồng I. Xác suất con lấy ra là con trắng bằng 3/10 · 11/16 + 7/10 · 10/16 = ?",
+      "expr": "3/10*11/16+7/10*10/16",
+      "answer": "103/160",
+      "explain": "Nếu chuyển con trắng (3/10) thì chuồng I có 16 con, 11 trắng; nếu chuyển con đen (7/10) thì có 10 trắng trong 16 con: tổng 103/160."
+    },
+    {
+      "id": "q20",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 6.9a: linh kiện đạt tiêu chuẩn với xác suất 0,8; đạt thì đóng dấu OTK với xác suất 0,99; không đạt thì không được đóng dấu với xác suất 0,95. Xác suất linh kiện được đóng dấu OTK là?",
+      "expr": "0.8*0.99+0.2*0.05",
+      "answer": "0.802",
+      "explain": "P = 0,8 · 0,99 + 0,2 · 0,05 = 0,792 + 0,01 = 0,802."
+    },
+    {
+      "id": "q21",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 6.9b: xác suất linh kiện được chọn không được đóng dấu OTK là 1 − 0,802 = ?",
+      "expr": "1-(0.8*0.99+0.2*0.05)",
+      "answer": "0.198",
+      "explain": "Đây là biến cố đối của biến cố được đóng dấu OTK."
+    },
+    {
+      "id": "q22",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 6.10a–b: đội I có 5 vận động viên với xác suất đạt huy chương vàng 0,65; đội II có 7 vận động viên với xác suất 0,55. Biết vận động viên được chọn đạt huy chương vàng, xác suất người đó thuộc đội I xấp xỉ?",
+      "choices": [
+        "≈ 0,458 (= 65/142)",
+        "5/12",
+        "0,65",
+        "7/12"
+      ],
+      "answer": 0,
+      "explain": "P(vàng) = 5/12 · 0,65 + 7/12 · 0,55 = 71/120; P(I | vàng) = (5/12 · 0,65)/(71/120) = 65/142 ≈ 0,458.",
+      "wrong_explain": {
+        "1": "5/12 là xác suất vận động viên thuộc đội I trước khi biết kết quả.",
+        "2": "0,65 là xác suất đạt vàng của đội I, không phải xác suất thuộc đội I khi biết đạt vàng.",
+        "3": "7/12 là xác suất thuộc đội II trước khi biết kết quả."
+      }
+    },
+    {
+      "id": "q23",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 6.11a: bộ lọc chặn thư rác với xác suất 0,95, chặn thư đúng với xác suất 0,01; tỉ lệ thư rác là 3%. Chọn ngẫu nhiên một thư bị chặn, xác suất đó là thư rác là?",
+      "choices": [
+        "≈ 74,6% (= 285/382)",
+        "≈ 3%",
+        "≈ 95%",
+        "≈ 1%"
+      ],
+      "answer": 0,
+      "explain": "P(rác) · 0,95 = 0,0285; P(chặn) = 0,0285 + 0,97 · 0,01 = 0,0382; xác suất = 0,0285/0,0382 = 285/382 ≈ 74,6%.",
+      "wrong_explain": {
+        "1": "3% là tỉ lệ thư rác chung, không phải xác suất có điều kiện khi biết bị chặn.",
+        "2": "0,95 là xác suất chặn thư rác, không phải xác suất thư rác khi bị chặn.",
+        "3": "1% là xác suất chặn thư đúng."
+      }
+    },
+    {
+      "id": "q24",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bài 6.11: tỉ lệ thư rác 3%, xác suất chặn thư rác 0,95. Xác suất một thư là thư rác và bị chặn là 0,03 · 0,95 = ?",
+      "expr": "0.03*0.95",
+      "answer": "0.0285",
+      "explain": "Xác suất hai biến cố cùng xảy ra: P(rác) · P(chặn | rác) = 0,0285."
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "id": "t12-t2-chuong6-bai19-cong-thuc-xac-suat-toan-phan-bayes",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 12, tập 2",
+  "chapter": "Chương VI. Xác suất có điều kiện",
+  "lesson": "Bài 19. Công thức xác suất toàn phần và công thức Bayes",
+  "section": "1. Công thức xác suất toàn phần; 2. Công thức Bayes; Bài tập",
+  "bookPage": 72,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Công thức xác suất toàn phần: với các biến cố A và Ā, P(B) = P(A) · P(B | A) + P(Ā) · P(B | Ā)."
+    },
+    {
+      "type": "text",
+      "content": "Sơ đồ hình cây mô tả trực quan các nhánh xác suất: nhân xác suất dọc theo mỗi đường đi, và cộng các đường đi đến cùng một kết quả."
+    },
+    {
+      "type": "text",
+      "content": "Công thức Bayes: P(A | B) = P(A) · P(B | A) / P(B) = P(A) · P(B | A) / [P(A) · P(B | A) + P(Ā) · P(B | Ā)]."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Ví dụ 1: Ông An đi làm bằng xe máy hoặc xe buýt. Biết P(xe máy hôm sau | xe buýt hôm nay) = 0,4 và P(xe buýt hôm sau | xe máy hôm nay) = 0,7. Thứ Hai đi xe buýt. Tính P(thứ Tư đi xe máy).",
+      "proof": true,
+      "steps": [
+        "P(A) = 0,4 (thứ Ba đi xe máy), P(Ā) = 0,6, P(B | A) = 0,3, P(B | Ā) = 0,4.",
+        "P(B) = 0,4 · 0,3 + 0,6 · 0,4 = 0,36."
+      ]
+    },
+    {
+      "problem": "Ví dụ 2: Tỉnh X có 80% học sinh chọn tổ hợp A00; tỉ lệ đỗ đại học là 0,6 khi chọn A00 và 0,7 khi không chọn. Tính P(chọn A00 | đỗ đại học).",
+      "proof": true,
+      "steps": [
+        "P(A | B) = 0,8 · 0,6 / (0,8 · 0,6 + 0,2 · 0,7) = 24/31 ≈ 0,7742."
+      ]
+    },
+    {
+      "problem": "Ví dụ 4: Tỉ lệ dân số mắc bệnh Y là 0,5%. Xét nghiệm dương tính với xác suất 0,94 nếu mắc bệnh và âm tính với xác suất 0,97 nếu không mắc. Tính P(không mắc | âm tính).",
+      "proof": true,
+      "steps": [
+        "P(Ā | B̄) = 0,995 · 0,97 / (0,995 · 0,97 + 0,005 · 0,06) ≈ 0,9997."
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "q25",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 2 (Bayes): tỉ lệ học sinh chọn A00 khi biết đã đỗ đại học, với P(A) = 0,8, P(B | A) = 0,6, P(B | Ā) = 0,7, là?",
+      "choices": [
+        "24/31 ≈ 0,7742",
+        "0,6",
+        "0,8",
+        "0,95"
+      ],
+      "answer": 0,
+      "explain": "P(A | B) = 0,8 · 0,6 / (0,8 · 0,6 + 0,2 · 0,7) = 0,48/0,62 = 24/31 ≈ 0,7742.",
+      "wrong_explain": {
+        "1": "0,6 là P(B | A), xác suất đỗ khi đã chọn A00, không phải xác suất chọn A00 khi biết đã đỗ.",
+        "2": "0,8 là P(A), xác suất chọn A00 trước khi biết kết quả.",
+        "3": "0,95 không liên quan đến bài toán này."
+      }
+    },
+    {
+      "id": "q26",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 4: kho có 30% rượu loại I; xét nghiệm nếm cho kết quả \"loại I\" với xác suất 0,9 nếu đúng loại I và đúng \"không phải loại I\" với xác suất 0,95 nếu không phải loại I. Biết ông Tùng xác nhận là loại I, xác suất chai đúng là loại I là?",
+      "choices": [
+        "54/61 ≈ 0,885",
+        "0,9",
+        "0,3",
+        "0,95"
+      ],
+      "answer": 0,
+      "explain": "P(I | xác nhận) = 0,3 · 0,9 / (0,3 · 0,9 + 0,7 · 0,05) = 0,27/0,305 = 54/61 ≈ 0,885.",
+      "wrong_explain": {
+        "1": "0,9 là P(xác nhận | loại I), không phải xác suất chai là loại I khi đã được xác nhận.",
+        "2": "0,3 là tỉ lệ rượu loại I trước khi nếm.",
+        "3": "0,95 là xác suất xác nhận đúng chai không phải loại I."
+      }
+    },
+    {
+      "id": "q27",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 5b: tỉ lệ dân số mắc bệnh hiểm nghèo X là 0,2%; ông M xét nghiệm dương tính, biết xét nghiệm dương tính với xác suất 0,95 nếu mắc và 0,01 nếu không mắc. Xác suất ông M mắc bệnh là?",
+      "choices": [
+        "≈ 16%",
+        "≈ 95%",
+        "≈ 0,2%",
+        "≈ 1%"
+      ],
+      "answer": 0,
+      "explain": "P = 0,95 · 0,002 / (0,95 · 0,002 + 0,01 · 0,998) = 0,0019/0,01188 ≈ 0,160, tức khoảng 16%.",
+      "wrong_explain": {
+        "1": "95% là độ nhạy của xét nghiệm, không phải xác suất mắc bệnh sau khi xét nghiệm.",
+        "2": "0,2% là tỉ lệ mắc bệnh trước khi xét nghiệm.",
+        "3": "1% là xác suất dương tính khi không mắc bệnh."
+      }
+    },
+    {
+      "id": "q28",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Luyện tập 5a: trước khi xét nghiệm, xác suất ông M mắc bệnh hiểm nghèo X là P(A) = 0,2% = ?",
+      "expr": "0.2/100",
+      "answer": "0.002",
+      "explain": "Tỉ lệ dân số mắc bệnh là 0,2%, nên P(A) = 0,002."
+    },
+    {
+      "id": "q29",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ví dụ 4a: trước khi xét nghiệm, xác suất bà N không mắc bệnh Y là 1 − 0,005 = ?",
+      "expr": "1-0.005",
+      "answer": "0.995",
+      "explain": "P(Ā) = 1 − P(A) = 0,995."
+    },
+    {
+      "id": "q30",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 4b: sau khi xét nghiệm cho kết quả âm tính, xác suất bà N không mắc bệnh Y là?",
+      "choices": [
+        "≈ 0,9997",
+        "0,995",
+        "0,97",
+        "0,9"
+      ],
+      "answer": 0,
+      "explain": "P(Ā | B̄) = 0,995 · 0,97 / (0,995 · 0,97 + 0,005 · 0,06) ≈ 0,9997, tức 99,97%.",
+      "wrong_explain": {
+        "1": "0,995 là xác suất không mắc bệnh trước khi xét nghiệm.",
+        "2": "0,97 là P(âm tính | không mắc), không phải xác suất không mắc sau khi âm tính.",
+        "3": "0,9 không khớp với kết quả tính toán."
+      }
+    },
+    {
+      "id": "q31",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vận dụng (đậu Hà Lan): trong quần thể, tỉ lệ cây bố mẹ có kiểu gene bb là 40% và Bb là 60%. Khi lai, cây con lấy ngẫu nhiên độc lập một gene từ mỗi cây bố mẹ. Xác suất cây con có kiểu gene bb là?",
+      "expr": "(0.4*1+0.6*0.5)*(0.4*1+0.6*0.5)",
+      "answer": "0.49",
+      "explain": "P(M) = 0,4 · 1 + 0,6 · 0,5 = 0,7 và P(E) = 0,7 · 0,7 = 0,49."
+    }
+  ]
+}
