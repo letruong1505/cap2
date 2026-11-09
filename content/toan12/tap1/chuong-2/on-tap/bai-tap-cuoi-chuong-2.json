@@ -1,0 +1,509 @@
+{
+  "id": "t12-chuong2-on-tap",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 12, tập 1",
+  "chapter": "Chương II. Vectơ và hệ trục toạ độ trong không gian",
+  "lesson": "Bài tập cuối chương II",
+  "section": "Trắc nghiệm và tự luận",
+  "bookPage": 73,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Bài tập cuối chương II: tổng hợp các phép toán vectơ, tích vô hướng, hệ toạ độ Oxyz và biểu thức toạ độ."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.25: cho tứ diện ABCD, G là trọng tâm tam giác BCD. Khẳng định nào sai?",
+      "choices": [
+        "BG + CG + DG = 0",
+        "AB + AC + AD = 3AG",
+        "BC + BD = 3BG",
+        "GA + GB + GC + GD = 0"
+      ],
+      "answer": 3,
+      "explain": "GA + GB + GC + GD = GA (vì GB + GC + GD = 0) ≠ 0 nên khẳng định D sai.",
+      "wrong_explain": {
+        "0": "Đúng: BG + CG + DG = 0 vì G là trọng tâm BCD.",
+        "1": "Đúng: AB + AC + AD = 3AG.",
+        "2": "Đúng: BG = (BC + BD)/3."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.26: hình hộp ABCD.A'B'C'D', M là trung điểm CC'. Vectơ AM bằng?",
+      "choices": [
+        "AB + AD + AA'",
+        "AB + AD + ½AA'",
+        "AB + ½AD + ½AA'",
+        "½AB + AD + AA'"
+      ],
+      "answer": 1,
+      "explain": "AM = AC + ½CC' = AB + AD + ½AA'.",
+      "wrong_explain": {
+        "0": "Thiếu hệ số ½ trước AA'.",
+        "2": "Hệ số của AD phải là 1.",
+        "3": "Hệ số của AB phải là 1."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.27: hình hộp ABCD.A'B'C'D'. Khẳng định nào sai?",
+      "choices": [
+        "AB + CC' = AB'",
+        "AB + AD + AA' = AC'",
+        "AD + BB' = AD'",
+        "AB + CC' = AC'"
+      ],
+      "answer": 3,
+      "explain": "CC' = AA' nên AB + CC' = AB + AA' = AB', không phải AC'.",
+      "wrong_explain": {
+        "0": "Đúng: CC' = AA' nên AB + CC' = AB'.",
+        "1": "Đúng: quy tắc hình hộp.",
+        "2": "Đúng: BB' = AA' nên AD + BB' = AD'."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.28: tứ diện đều ABCD cạnh a, M là trung điểm CD. Tích AB·AM bằng?",
+      "choices": [
+        "a²/4",
+        "a²/2",
+        "a²/3",
+        "a²"
+      ],
+      "answer": 1,
+      "explain": "AM = (AC + AD)/2 nên AB·AM = (a²/2 + a²/2)/2 = a²/2.",
+      "wrong_explain": {
+        "0": "a²/4 không khớp với AB·AM = a²/2.",
+        "2": "a²/3 không khớp với kết quả tính bằng vectơ trung bình.",
+        "3": "a² là kết quả khi nhân với AC, không phải AM."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.29: a = (1; −2; 2), b = (−2; 0; 3). Khẳng định nào sai?",
+      "choices": [
+        "a + b = (−1; −2; 5)",
+        "a − b = (3; −2; −1)",
+        "3a = (3; −2; 2)",
+        "2a + b = (0; −4; 7)"
+      ],
+      "answer": 2,
+      "explain": "3a = (3; −6; 6), không phải (3; −2; 2).",
+      "wrong_explain": {
+        "0": "Đúng: (1 − 2; −2 + 0; 2 + 3).",
+        "1": "Đúng: (1 + 2; −2 − 0; 2 − 3).",
+        "3": "Đúng: (2 − 2; −4 + 0; 4 + 3)."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.30: hình bình hành ABCD với A(−1; 0; 3), B(2; 1; −1), C(3; 2; 2). Toạ độ D là?",
+      "choices": [
+        "(2; −1; 0)",
+        "(0; −1; −6)",
+        "(0; 1; 6)",
+        "(−2; 1; 0)"
+      ],
+      "answer": 2,
+      "explain": "D = A + C − B = (−1 + 3 − 2; 0 + 2 − 1; 3 + 2 + 1) = (0; 1; 6).",
+      "wrong_explain": {
+        "0": "Đó là toạ độ không đúng với công thức D = A + C − B.",
+        "1": "Dấu thành phần y và z sai.",
+        "3": "Thành phần x và y sai."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.31: A(1; 0; −1), B(0; −1; 2), G(2; 1; 0) là trọng tâm tam giác ABC. Toạ độ C là?",
+      "choices": [
+        "(5; 4; −1)",
+        "(−5; −4; 1)",
+        "(1; 2; −1)",
+        "(−1; −2; 1)"
+      ],
+      "answer": 0,
+      "explain": "C = 3G − A − B = (6 − 1 − 0; 3 − 0 + 1; 0 + 1 − 2) = (5; 4; −1).",
+      "wrong_explain": {
+        "1": "Dấu của C bị đảo.",
+        "2": "Thành phần x phải là 6 − 1 − 0 = 5.",
+        "3": "Dấu của C bị đảo."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.32: a = (2; 1; −3), b = (−2; −1; 2). Tích vô hướng a·b bằng?",
+      "choices": [
+        "−2",
+        "−11",
+        "11",
+        "2"
+      ],
+      "answer": 1,
+      "explain": "a·b = −4 − 1 − 6 = −11.",
+      "wrong_explain": {
+        "0": "Tính sai thành phần.",
+        "2": "Dấu của tích bị sai.",
+        "3": "Tính sai các thành phần."
+      }
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.33: a = (2; 1; −2), b = (0; −1; 1). Góc giữa a và b bằng?",
+      "choices": [
+        "60°",
+        "135°",
+        "120°",
+        "45°"
+      ],
+      "answer": 1,
+      "explain": "a·b = −3, |a| = 3, |b| = √2 nên cos = −1/√2, góc = 135°.",
+      "wrong_explain": {
+        "0": "cos 60° = ½ khác −√2/2.",
+        "2": "cos 120° = −½ khác −√2/2.",
+        "3": "cos 45° > 0 nhưng a·b < 0."
+      }
+    },
+    {
+      "id": "q10",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.34: a = (−2; 2; 2), b = (1; −1; −2). Côsin của góc giữa a và b bằng?",
+      "choices": [
+        "−2√2/3",
+        "2√2/3",
+        "√2/3",
+        "−√2/3"
+      ],
+      "answer": 0,
+      "explain": "a·b = −8, |a| = 2√3, |b| = √6 nên cos = −8/(2√18) = −2√2/3.",
+      "wrong_explain": {
+        "1": "Dấu của tích vô hướng là âm.",
+        "2": "Giá trị sai, cần chia cho |a||b| = 6√2.",
+        "3": "Giá trị sai."
+      }
+    },
+    {
+      "id": "q11",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.35: hình chữ nhật ABCD, S là đỉnh. Chứng minh SA + SC = SB + SD đúng hay sai?",
+      "choices": [
+        "Đúng: ABCD là hình bình hành nên SA + SC = SB + SD",
+        "Sai, vì không có đỉnh S",
+        "Chỉ đúng khi S là trung điểm",
+        "Sai, vì SA + SC = 2SO"
+      ],
+      "answer": 0,
+      "explain": "Với hình bình hành ABCD, SA + SC = SB + SD (đặc trưng vectơ của hình bình hành, xem bài 2.6).",
+      "wrong_explain": {
+        "1": "S là đỉnh của hình chóp, không ảnh hưởng đến đẳng thức.",
+        "2": "Đẳng thức đúng với mọi S.",
+        "3": "Đẳng thức đúng; SA + SC = 2SO là đúng nhưng không cần thiết."
+      }
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.36: tứ diện ABCD, MB + 2MA = 0 và NC = 2DN. Biểu diễn MN theo AD và BC?",
+      "choices": [
+        "MN = (BC + 2AD)/3",
+        "MN = (2BC + AD)/3",
+        "MN = (BC − 2AD)/3",
+        "MN = (AD + BC)/2"
+      ],
+      "answer": 0,
+      "explain": "MB + 2MA = 0 cho M = (B + 2A)/3; NC = 2DN cho N = (C + 2D)/3. Suy ra MN = (BC + 2AD)/3.",
+      "wrong_explain": {
+        "1": "Hệ số 2 đặt sai vị trí.",
+        "2": "Dấu của 2AD sai.",
+        "3": "Hệ số không đúng."
+      }
+    },
+    {
+      "id": "q13",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.37: hình hộp ABCD.A'B'C'D', G là trọng tâm tam giác BDA'. AG bằng?",
+      "choices": [
+        "(AB + AD + AA')/3",
+        "AB + AD + AA'",
+        "(AB + AD)/3",
+        "AA'/3"
+      ],
+      "answer": 0,
+      "explain": "G = (B + D + A')/3 nên AG = (AB + AD + AA')/3 = AC'/3, do đó A, G, C' thẳng hàng.",
+      "wrong_explain": {
+        "1": "Phải chia 3 vì G là trọng tâm.",
+        "2": "Thiếu thành phần AA'.",
+        "3": "Thiếu thành phần AB và AD."
+      }
+    },
+    {
+      "id": "q14",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.38a: A(2; −1; 3), B(1; 1; −1), C(−1; 0; 2). Trọng tâm G của tam giác ABC là?",
+      "choices": [
+        "(2/3; 0; 4/3)",
+        "(2; 0; 4)",
+        "(2/3; 0; 2)",
+        "(1; 0; 2)"
+      ],
+      "answer": 0,
+      "explain": "G = ((2 + 1 − 1)/3; (−1 + 1 + 0)/3; (3 − 1 + 2)/3) = (2/3; 0; 4/3).",
+      "wrong_explain": {
+        "1": "Chưa chia cho 3.",
+        "2": "Thành phần z sai.",
+        "3": "Thành phần x sai."
+      }
+    },
+    {
+      "id": "q15",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.38b: M thuộc trục Oz sao cho BM ⊥ AC. Toạ độ M là?",
+      "choices": [
+        "(0; 0; 1)",
+        "(0; 0; −1)",
+        "(0; 0; 2)",
+        "(0; 0; 3)"
+      ],
+      "answer": 0,
+      "explain": "M = (0; 0; m): BM = (−1; −1; m + 1), AC = (−3; 1; −1), BM·AC = 3 − 1 − (m + 1) = 1 − m = 0 nên m = 1.",
+      "wrong_explain": {
+        "1": "Dấu của m bị đảo.",
+        "2": "Giá trị m sai, tích vô hướng bằng 1 − m.",
+        "3": "Giá trị m sai."
+      }
+    },
+    {
+      "id": "q16",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.39: hình hộp OABC.O'A'B'C' với A(2; 3; 1), C(−1; 2; 3), O'(1; −2; 2). Đỉnh B có toạ độ?",
+      "choices": [
+        "(1; 5; 4)",
+        "(1; 5; −4)",
+        "(3; 5; 4)",
+        "(1; −5; 4)"
+      ],
+      "answer": 0,
+      "explain": "Đáy OABC là hình bình hành nên B = A + C = (1; 5; 4).",
+      "wrong_explain": {
+        "1": "Dấu của z sai.",
+        "2": "Thành phần x sai: 2 + (−1) = 1.",
+        "3": "Dấu của y sai."
+      }
+    },
+    {
+      "id": "q17",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.39: đỉnh C' của hình hộp có toạ độ?",
+      "choices": [
+        "(0; 0; 5)",
+        "(0; 0; 1)",
+        "(1; 5; 4)",
+        "(−1; 2; 5)"
+      ],
+      "answer": 0,
+      "explain": "C' = C + OO' = (−1 + 1; 2 − 2; 3 + 2) = (0; 0; 5).",
+      "wrong_explain": {
+        "1": "Thành phần z phải là 3 + 2 = 5.",
+        "2": "Đó là toạ độ B, không phải C'.",
+        "3": "Đó là toạ độ C, chưa cộng OO'."
+      }
+    },
+    {
+      "id": "q18",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.40a: u = a − 2b với a = (−2; 1; 2), b = (1; 1; −1). Toạ độ u là?",
+      "choices": [
+        "(−4; −1; 4)",
+        "(−4; 1; 4)",
+        "(0; −1; 4)",
+        "(−4; −1; 0)"
+      ],
+      "answer": 0,
+      "explain": "u = (−2 − 2; 1 − 2; 2 + 2) = (−4; −1; 4).",
+      "wrong_explain": {
+        "1": "Thành phần y sai: 1 − 2 = −1.",
+        "2": "Thành phần x sai: −2 − 2 = −4.",
+        "3": "Thành phần z sai: 2 + 2 = 4."
+      }
+    },
+    {
+      "id": "q19",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "2.40b: |u|² với u = (−4; −1; 4) bằng?",
+      "expr": "(-4)*(-4)+(-1)*(-1)+4*4",
+      "answer": "33",
+      "explain": "|u|² = 16 + 1 + 16 = 33, nên |u| = √33."
+    },
+    {
+      "id": "q20",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.40c: cos(a, b) với a = (−2; 1; 2), b = (1; 1; −1) là?",
+      "choices": [
+        "−√3/3",
+        "√3/3",
+        "−1/3",
+        "−√2/2"
+      ],
+      "answer": 0,
+      "explain": "a·b = −3, |a| = 3, |b| = √3 nên cos = −3/(3√3) = −√3/3.",
+      "wrong_explain": {
+        "1": "Dấu sai.",
+        "2": "Đã bỏ mất căn ở mẫu: |b| = √3.",
+        "3": "Không đúng với |a||b| = 3√3."
+      }
+    },
+    {
+      "id": "q21",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.41a: A(4; 2; −1), B(1; −1; 2). Toạ độ AB và độ dài AB là?",
+      "choices": [
+        "(−3; −3; 3) và 3√3",
+        "(3; 3; −3) và 3√3",
+        "(−3; −3; 3) và 27",
+        "(−3; −3; 3) và √3"
+      ],
+      "answer": 0,
+      "explain": "AB = (1 − 4; −1 − 2; 2 + 1) = (−3; −3; 3), |AB| = √27 = 3√3.",
+      "wrong_explain": {
+        "1": "Dấu của AB bị đảo.",
+        "2": "Độ dài là √27 = 3√3, không phải 27.",
+        "3": "Độ dài là √27."
+      }
+    },
+    {
+      "id": "q22",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.41b: C(0; −2; 3). Điểm M sao cho AB + CM = 0 có toạ độ?",
+      "choices": [
+        "(3; 1; 0)",
+        "(−3; −3; 3)",
+        "(0; −2; 3)",
+        "(3; −1; 0)"
+      ],
+      "answer": 0,
+      "explain": "CM = −AB = (3; 3; −3), M = C + (3; 3; −3) = (3; 1; 0).",
+      "wrong_explain": {
+        "1": "Đó là toạ độ AB, không phải M.",
+        "2": "Đó là toạ độ C.",
+        "3": "Thành phần y sai: −2 + 3 = 1."
+      }
+    },
+    {
+      "id": "q23",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.41c: N thuộc mặt phẳng (Oxy) sao cho A, B, N thẳng hàng. Toạ độ N là?",
+      "choices": [
+        "(3; 1; 0)",
+        "(4; 2; 0)",
+        "(1; −1; 0)",
+        "(0; −2; 0)"
+      ],
+      "answer": 0,
+      "explain": "Đường thẳng AB: (4 − 3t; 2 − 3t; −1 + 3t). Với z = 0 thì t = 1/3, N = (3; 1; 0) (trùng với M ở câu b).",
+      "wrong_explain": {
+        "1": "(4; 2; 0) không nằm trên đường thẳng AB.",
+        "2": "(1; −1; 0) không thoả phương trình tham số của AB.",
+        "3": "(0; −2; 0) không nằm trên đường thẳng AB."
+      }
+    },
+    {
+      "id": "q24",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.42a: chọn O là góc trần nhà (giao hai tường và trần) với mặt (Oxy) là trần, trục Ox, Oy dọc theo hai tường, Oz hướng xuống. Toạ độ đèn lúc đầu là?",
+      "choices": [
+        "(1,6; 1,2; 0,5)",
+        "(1,2; 1,6; 0,5)",
+        "(1,6; 1,2; 0,4)",
+        "(1,5; 1,5; 0,5)"
+      ],
+      "answer": 0,
+      "explain": "Đèn cách tường 1,6 m và 1,2 m, cách trần 0,5 m nên toạ độ là (1,6; 1,2; 0,5). Sau khi di chuyển: (1,5; 1,5; 0,4).",
+      "wrong_explain": {
+        "1": "Hoán đổi vị trí x, y không khớp với đề bài.",
+        "2": "Thành phần z phải là 0,5 (đèn cách trần 0,5 m).",
+        "3": "Đây là vị trí sau khi di chuyển, không phải vị trí lúc đầu."
+      }
+    },
+    {
+      "id": "q25",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "2.42b: khoảng cách giữa vị trí mới và vị trí ban đầu (làm tròn đến chữ số thập phân thứ nhất) là?",
+      "choices": [
+        "0,3 m",
+        "0,1 m",
+        "0,4 m",
+        "1,0 m"
+      ],
+      "answer": 0,
+      "explain": "d = √((1,5 − 1,6)² + (1,5 − 1,2)² + (0,4 − 0,5)²) = √(0,01 + 0,09 + 0,01) = √0,11 ≈ 0,3 m.",
+      "wrong_explain": {
+        "1": "Chỉ tính một thành phần.",
+        "2": "Không khớp với √0,11.",
+        "3": "Quá lớn so với độ lớn của các thành phần."
+      }
+    }
+  ]
+}
