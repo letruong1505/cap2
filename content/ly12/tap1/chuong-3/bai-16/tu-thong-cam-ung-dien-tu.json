@@ -82,18 +82,18 @@
       "type": "mcq",
       "stem": "Hiện tượng cảm ứng điện từ xuất hiện trong mạch kín khi:",
       "choices": [
+        "Không có nguồn điện",
         "Từ thông qua mạch kín biến thiên",
         "Từ thông qua mạch không đổi",
-        "Mạch kín đứng yên trong từ trường đều không đổi",
-        "Không có nguồn điện"
+        "Mạch kín đứng yên trong từ trường đều không đổi"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "Dòng điện cảm ứng xuất hiện khi từ thông qua mạch kín biến thiên.",
       "concept": true,
       "wrong_explain": {
-        "1": "Từ thông không đổi thì không có dòng điện cảm ứng.",
-        "2": "Mạch đứng yên trong từ trường không đổi không có dòng cảm ứng.",
-        "3": "Dòng cảm ứng không cần nguồn điện riêng."
+        "0": "Dòng cảm ứng không cần nguồn điện riêng.",
+        "2": "Từ thông không đổi thì không có dòng điện cảm ứng.",
+        "3": "Mạch đứng yên trong từ trường không đổi không có dòng cảm ứng."
       }
     },
     {
@@ -122,18 +122,18 @@
       "type": "mcq",
       "stem": "Theo định luật Faraday, độ lớn suất điện động cảm ứng tỉ lệ với:",
       "choices": [
-        "Tốc độ biến thiên của từ thông",
         "Từ thông tại thời điểm đó",
         "Cường độ dòng điện",
-        "Điện trở của mạch"
+        "Điện trở của mạch",
+        "Tốc độ biến thiên của từ thông"
       ],
-      "answer": 0,
+      "answer": 3,
       "explain": "Suất điện động cảm ứng tỉ lệ với tốc độ biến thiên của từ thông, không phải giá trị từ thông.",
       "concept": true,
       "wrong_explain": {
-        "1": "Từ thông lớn không đồng nghĩa suất điện động lớn nếu không biến thiên.",
-        "2": "Cường độ dòng là hệ quả, không phải nguyên nhân.",
-        "3": "Điện trở không nằm trong định luật Faraday."
+        "0": "Từ thông lớn không đồng nghĩa suất điện động lớn nếu không biến thiên.",
+        "1": "Cường độ dòng là hệ quả, không phải nguyên nhân.",
+        "2": "Điện trở không nằm trong định luật Faraday."
       }
     },
     {
@@ -160,18 +160,18 @@
       "type": "mcq",
       "stem": "Trong thí nghiệm với nam châm và cuộn dây, kim điện kế lệch khỏi vạch 0 chứng tỏ:",
       "choices": [
-        "Có dòng điện cảm ứng trong cuộn dây",
         "Không có từ trường",
         "Từ thông không đổi",
-        "Cuộn dây bị đứt"
+        "Cuộn dây bị đứt",
+        "Có dòng điện cảm ứng trong cuộn dây"
       ],
-      "answer": 0,
+      "answer": 3,
       "explain": "Kim điện kế lệch khi có dòng điện cảm ứng, do từ thông qua cuộn dây biến thiên.",
       "concept": true,
       "wrong_explain": {
-        "1": "Từ trường vẫn có khi nam châm di chuyển.",
-        "2": "Khi từ thông không đổi kim không lệch.",
-        "3": "Nếu đứt dây kim không lệch."
+        "0": "Từ trường vẫn có khi nam châm di chuyển.",
+        "1": "Khi từ thông không đổi kim không lệch.",
+        "2": "Nếu đứt dây kim không lệch."
       }
     }
   ]

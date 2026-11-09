@@ -1,0 +1,117 @@
+{
+  "id": "bai-25",
+  "grade": 12,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 12",
+  "chapter": "Chương IV. Vật lí hạt nhân",
+  "lesson": "Bài 25. Bài tập về vật lí hạt nhân",
+  "section": "",
+  "bookPage": 119,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phần vật lí hạt nhân gồm bốn nội dung: cấu trúc hạt nhân, phản ứng hạt nhân, phóng xạ và ứng dụng công nghiệp hạt nhân. Khi giải bài tập định lượng, cần chọn đúng công thức theo từng nội dung: số khối và điện tích khi bảo toàn trong phản ứng, N = N₀·2^(−t/T) và H = λN khi xét phóng xạ."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Viết phương trình phân hạch của ²³⁵₉₂U khi hấp thụ 1 neutron, sản phẩm gồm ¹⁴⁰₅₈Ce, ⁹⁴₄₀Zr, x neutron và y electron. Tìm x.",
+      "steps": [
+        "Bảo toàn số khối: 235 + 1 = 140 + 94 + x.",
+        "Suy ra x = 2 (y = 6, từ bảo toàn điện tích)."
+      ],
+      "expr": "235+1-140-94",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Lực làm thay đổi phương chuyển động của hạt alpha khi bắn vào lá vàng mỏng là:",
+      "choices": [
+        "Lực hấp dẫn giữa hạt nhân vàng và hạt alpha",
+        "Lực đẩy tĩnh điện giữa hạt nhân vàng và hạt alpha",
+        "Lực hạt nhân đẩy hạt alpha ra xa",
+        "Lực hút tĩnh điện giữa electron và hạt alpha"
+      ],
+      "answer": 1,
+      "explain": "Hạt alpha và hạt nhân vàng đều mang điện dương nên đẩy nhau.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Lực hấp dẫn không đáng kể giữa các hạt vi mô.",
+        "2": "Lực hạt nhân chỉ có tác dụng ở khoảng cách rất ngắn, không đẩy hạt alpha ra xa.",
+        "3": "Electron mang điện âm nên không hút hạt alpha; đây không phải lực chính."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong phản ứng ²³⁵₉₂U + ¹₀n → ¹⁴⁰₅₈Ce + ⁹⁴₄₀Zr + x ¹₀n + y ⁰₋₁e. Số neutron x là:",
+      "expr": "235+1-140-94",
+      "answer": "2",
+      "explain": "Bảo toàn số khối: 235 + 1 = 140 + 94 + x, suy ra x = 2."
+    },
+    {
+      "id": "q03",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong phản ứng ²³⁵₉₂U + ¹₀n → ¹⁴⁰₅₈Ce + ⁹⁴₄₀Zr + x ¹₀n + y ⁰₋₁e. Số electron y là:",
+      "expr": "58+40-92",
+      "answer": "6",
+      "explain": "Bảo toàn điện tích: 92 + 0 = 58 + 40 + x·0 − y, suy ra y = 58 + 40 − 92 = 6."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Máy xạ trị dùng nguồn ⁶⁰Co có chu kì bán rã 5,3 năm. Nguồn phải thay khi độ phóng xạ giảm còn 50%. Thời gian thay nguồn là:",
+      "choices": [
+        "2,65 năm",
+        "5,3 năm",
+        "6 tháng",
+        "10,6 năm"
+      ],
+      "answer": 1,
+      "explain": "Khi độ phóng xạ giảm còn 50%, khoảng thời gian đúng bằng một chu kì bán rã: 5,3 năm.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "2,65 năm là nửa chu kì bán rã.",
+        "2": "6 tháng là chu kì bảo dưỡng khi độ phóng xạ giảm 7%.",
+        "3": "10,6 năm là hai chu kì bán rã."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nguồn ⁶⁰Co có chu kì bán rã 5,3 năm. Thời gian (năm) để độ phóng xạ giảm còn 50%:",
+      "expr": "5.3*1",
+      "answer": "5,3",
+      "explain": "Độ phóng xạ còn 50% sau đúng một chu kì bán rã: t = T = 5,3 năm."
+    },
+    {
+      "id": "q06",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi phân rã gamma, hạt nhân:",
+      "choices": [
+        "Tăng số khối",
+        "Phát ra electron",
+        "Chỉ đổi mức năng lượng, số khối và số hiệu nguyên tử không đổi",
+        "Đổi thành hạt nhân khác"
+      ],
+      "answer": 2,
+      "explain": "Phóng xạ γ là hạt nhân chuyển từ trạng thái kích thích về trạng thái năng lượng thấp hơn, Z và A không đổi.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Phóng xạ γ không làm tăng số khối.",
+        "1": "Phóng xạ γ phát ra photon, không phải electron.",
+        "3": "Phóng xạ γ không đổi thành hạt nhân khác."
+      }
+    }
+  ]
+}

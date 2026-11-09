@@ -38,18 +38,18 @@
       "type": "mcq",
       "stem": "Nguyên tắc tạo ra suất điện động xoay chiều dựa trên:",
       "choices": [
-        "Hiện tượng cảm ứng điện từ",
-        "Hiện tượng quang điện",
         "Hiện tượng nhiệt điện",
-        "Hiện tượng phóng xạ"
+        "Hiện tượng phóng xạ",
+        "Hiện tượng cảm ứng điện từ",
+        "Hiện tượng quang điện"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "Khi từ thông qua khung dây biến thiên điều hoà, khung xuất hiện suất điện động cảm ứng xoay chiều.",
       "concept": true,
       "wrong_explain": {
-        "1": "Hiện tượng quang điện không tạo suất điện động xoay chiều trong khung.",
-        "2": "Hiện tượng nhiệt điện không liên quan.",
-        "3": "Hiện tượng phóng xạ không tạo dòng điện xoay chiều."
+        "0": "Hiện tượng nhiệt điện không liên quan.",
+        "1": "Hiện tượng phóng xạ không tạo dòng điện xoay chiều.",
+        "3": "Hiện tượng quang điện không tạo suất điện động xoay chiều trong khung."
       }
     },
     {
@@ -58,18 +58,18 @@
       "type": "mcq",
       "stem": "Suất điện động cực đại E₀ của khung dây có N vòng, diện tích S, cảm ứng từ B, quay với tốc độ góc ω là:",
       "choices": [
-        "E₀ = NBSω",
         "E₀ = NBS/ω",
         "E₀ = N/(BSω)",
-        "E₀ = NBω/S"
+        "E₀ = NBω/S",
+        "E₀ = NBSω"
       ],
-      "answer": 0,
+      "answer": 3,
       "explain": "Từ thông cực đại N·B·S, suất điện động cực đại E₀ = N·B·S·ω.",
       "concept": true,
       "wrong_explain": {
-        "1": "Chia cho ω làm sai thứ nguyên.",
-        "2": "Vị trí các đại lượng sai.",
-        "3": "Chia cho S không đúng."
+        "0": "Chia cho ω làm sai thứ nguyên.",
+        "1": "Vị trí các đại lượng sai.",
+        "2": "Chia cho S không đúng."
       }
     },
     {
@@ -96,18 +96,18 @@
       "type": "mcq",
       "stem": "Máy phát điện xoay chiều lớn thường đặt phần ứng là stato (cuộn dây cố định) vì:",
       "choices": [
-        "Tránh mòn vành khuyên và chổi quét khi rôto quay nhanh",
         "Để tăng từ trường",
         "Để giảm trọng lượng máy",
-        "Không có lý do"
+        "Không có lý do",
+        "Tránh mòn vành khuyên và chổi quét khi rôto quay nhanh"
       ],
-      "answer": 0,
+      "answer": 3,
       "explain": "Khi rôto quay nhanh, vành khuyên và chổi quét nhanh mòn, nên đưa cuộn dây lên stato.",
       "concept": true,
       "wrong_explain": {
-        "1": "Vị trí phần ứng không làm từ trường mạnh hơn.",
-        "2": "Trọng lượng không phải lý do chính.",
-        "3": "Có lý do rõ ràng là giảm mòn."
+        "0": "Vị trí phần ứng không làm từ trường mạnh hơn.",
+        "1": "Trọng lượng không phải lý do chính.",
+        "2": "Có lý do rõ ràng là giảm mòn."
       }
     },
     {
@@ -116,18 +116,18 @@
       "type": "mcq",
       "stem": "Phần cảm của máy phát điện xoay chiều là bộ phận:",
       "choices": [
+        "Là chổi quét",
         "Tạo ra từ trường (nam châm)",
         "Gồm các cuộn dây xuất hiện suất điện động",
-        "Là vành khuyên",
-        "Là chổi quét"
+        "Là vành khuyên"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "Phần cảm tạo từ trường; phần ứng là các cuộn dây xuất hiện suất điện động cảm ứng.",
       "concept": true,
       "wrong_explain": {
-        "1": "Đây là phần ứng.",
-        "2": "Vành khuyên là bộ phận dẫn điện, không phải phần cảm.",
-        "3": "Chổi quét là bộ phận dẫn điện."
+        "0": "Chổi quét là bộ phận dẫn điện.",
+        "2": "Đây là phần ứng.",
+        "3": "Vành khuyên là bộ phận dẫn điện, không phải phần cảm."
       }
     },
     {
@@ -136,18 +136,18 @@
       "type": "mcq",
       "stem": "Dòng điện xoay chiều có:",
       "choices": [
+        "Cường độ tăng đều theo thời gian",
         "Cường độ biến thiên điều hoà theo thời gian theo quy luật sin hoặc cosin",
         "Cường độ không đổi",
-        "Chỉ có chiều dương",
-        "Cường độ tăng đều theo thời gian"
+        "Chỉ có chiều dương"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "Dòng điện xoay chiều biến thiên điều hoà theo thời gian, có chiều thay đổi tuần hoàn.",
       "concept": true,
       "wrong_explain": {
-        "1": "Dòng không đổi là dòng một chiều.",
-        "2": "Dòng xoay chiều đổi chiều tuần hoàn.",
-        "3": "Dòng xoay chiều không tăng đều theo thời gian."
+        "0": "Dòng xoay chiều không tăng đều theo thời gian.",
+        "2": "Dòng không đổi là dòng một chiều.",
+        "3": "Dòng xoay chiều đổi chiều tuần hoàn."
       }
     },
     {
@@ -156,18 +156,18 @@
       "type": "mcq",
       "stem": "Quan hệ giữa giá trị hiệu dụng I và giá trị cực đại I₀ của dòng điện xoay chiều là:",
       "choices": [
+        "I = I₀",
         "I = I₀/√2",
         "I = I₀√2",
-        "I = 2I₀",
-        "I = I₀"
+        "I = 2I₀"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "Giá trị hiệu dụng bằng giá trị cực đại chia căn bậc hai của 2.",
       "concept": true,
       "wrong_explain": {
-        "1": "Hiệu dụng nhỏ hơn cực đại, không phải nhân √2.",
-        "2": "Hiệu dụng nhỏ hơn cực đại.",
-        "3": "Hiệu dụng khác cực đại."
+        "0": "Hiệu dụng khác cực đại.",
+        "2": "Hiệu dụng nhỏ hơn cực đại, không phải nhân √2.",
+        "3": "Hiệu dụng nhỏ hơn cực đại."
       }
     },
     {
@@ -176,18 +176,18 @@
       "type": "mcq",
       "stem": "Trong máy phát điện xoay chiều ba pha, các cuộn dây trên stato lệch nhau một góc:",
       "choices": [
-        "120°",
-        "90°",
         "60°",
-        "180°"
+        "180°",
+        "120°",
+        "90°"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "Ba cuộn dây đặt trên vòng tròn lệch nhau 120° để tạo ba suất điện động lệch pha nhau.",
       "concept": true,
       "wrong_explain": {
-        "1": "Góc 90° không dùng cho máy ba pha.",
-        "2": "Góc 60° không đúng cấu tạo.",
-        "3": "Góc 180° không tạo ba pha."
+        "0": "Góc 60° không đúng cấu tạo.",
+        "1": "Góc 180° không tạo ba pha.",
+        "3": "Góc 90° không dùng cho máy ba pha."
       }
     }
   ]

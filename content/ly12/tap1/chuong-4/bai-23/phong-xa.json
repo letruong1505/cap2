@@ -1,0 +1,299 @@
+{
+  "id": "bai-23",
+  "grade": 12,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 12",
+  "chapter": "Chương IV. Vật lí hạt nhân",
+  "lesson": "Bài 23. Phóng xạ",
+  "section": "",
+  "bookPage": 104,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hiện tượng một hạt nhân không bền vững tự phát biến đổi thành hạt nhân khác và đồng thời phát ra tia phóng xạ gọi là hiện tượng phóng xạ. Hạt nhân ban đầu gọi là hạt nhân mẹ, hạt nhân được tạo thành gọi là hạt nhân con."
+    },
+    {
+      "type": "text",
+      "content": "Quá trình phóng xạ có tính ngẫu nhiên: với một hạt nhân phóng xạ cho trước, không thể xác định thời điểm nó phân rã, nhưng với một mẫu chứa rất nhiều hạt nhân thì số hạt phân rã tuân theo quy luật xác định."
+    },
+    {
+      "type": "text",
+      "content": "Có ba loại tia phóng xạ chính: tia α là dòng hạt nhân ⁴₂He, tốc độ khoảng 2·10⁷ m/s, ion hoá mạnh nhưng bị một tờ giấy chặn lại; tia β⁻ là dòng electron, tia β⁺ là dòng positron, có khả năng đâm xuyên trung bình; tia γ là sóng điện từ có bước sóng rất ngắn (nhỏ hơn 10⁻¹¹ m), đâm xuyên mạnh nhất."
+    },
+    {
+      "type": "formula",
+      "content": "α: ᴬ_Z X → ᴬ⁻⁴_Z₋₂ Y + ⁴₂He;   β⁻: ᴬ_Z X → ᴬ_Z₊₁ Y + ⁰₋₁e + ν̄;   γ: hạt nhân kích thích → hạt nhân + γ"
+    },
+    {
+      "type": "text",
+      "content": "Định luật phóng xạ: số hạt nhân chưa phân rã giảm theo quy luật hàm số mũ. Sau mỗi chu kì bán rã T, một nửa số hạt nhân đã phân rã."
+    },
+    {
+      "type": "formula",
+      "content": "N = N₀·2^(−t/T) = N₀·e^(−λt),  với λ = ln2/T"
+    },
+    {
+      "type": "text",
+      "content": "Độ phóng xạ H là số phân rã trong một giây; đơn vị là becquerel (Bq), 1 Bq = 1 phân rã/s. H = λN và H = H₀·e^(−λt). Đơn vị cũ curie: 1 Ci = 3,7·10¹⁰ Bq."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đồng vị ¹⁵O có chu kì bán rã 122 s. Sau 244 s, số chu kì bán rã đã trôi qua là bao nhiêu?",
+      "steps": [
+        "Số chu kì: t/T = 244/122.",
+        "Vậy đã trôi qua 2 chu kì, lượng còn lại là 1/2² = 25%."
+      ],
+      "expr": "244/122",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hiện tượng phóng xạ là hiện tượng:",
+      "choices": [
+        "Phân tử thay đổi liên kết hoá học",
+        "Hạt nhân không bền tự phát biến đổi thành hạt nhân khác và phát ra tia phóng xạ",
+        "Hạt nhân bị kích thích bởi ánh sáng và phát electron",
+        "Nguyên tử nhận thêm electron từ môi trường"
+      ],
+      "answer": 1,
+      "explain": "Phóng xạ là quá trình tự phát của hạt nhân không bền, đi kèm phát tia phóng xạ.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đây là phản ứng hoá học.",
+        "2": "Đây là hiện tượng quang điện, không phải phóng xạ.",
+        "3": "Đây không phải phóng xạ."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Quá trình phóng xạ có tính ngẫu nhiên, nghĩa là:",
+      "choices": [
+        "Mọi hạt nhân đều phân rã ngay lập tức",
+        "Có thể điều khiển thời điểm phân rã bằng áp suất",
+        "Không xác định được thời điểm phân rã của một hạt nhân cụ thể",
+        "Phân rã phụ thuộc hoàn toàn vào nhiệt độ"
+      ],
+      "answer": 2,
+      "explain": "Với một hạt nhân cho trước, thời điểm phân rã không xác định; chỉ với mẫu lớn mới có quy luật thống kê.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Không phải mọi hạt nhân đều phân rã ngay lập tức.",
+        "1": "Thời điểm phân rã không điều khiển được bằng áp suất.",
+        "3": "Phóng xạ không phụ thuộc vào nhiệt độ hay áp suất."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tia phóng xạ alpha là dòng:",
+      "choices": [
+        "Positron",
+        "Sóng điện từ",
+        "Hạt nhân ⁴₂He",
+        "Electron"
+      ],
+      "answer": 2,
+      "explain": "Tia α là dòng hạt nhân helium ⁴₂He.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Positron là tia β⁺.",
+        "1": "Sóng điện từ là tia γ.",
+        "3": "Electron là tia β⁻."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tia phóng xạ nào có khả năng đâm xuyên mạnh nhất?",
+      "choices": [
+        "Tia α",
+        "Tia β⁻",
+        "Tia β⁺",
+        "Tia γ"
+      ],
+      "answer": 3,
+      "explain": "Tia γ có năng lượng cao, xuyên qua được cả lớp bê tông dày; cần tấm chì dày để chắn.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Tia α bị một tờ giấy chặn lại.",
+        "1": "Tia β chỉ xuyên được khoảng vài mm nhôm.",
+        "2": "Tia β⁺ có đâm xuyên trung bình, yếu hơn tia γ."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tia β⁻ bản chất là dòng:",
+      "choices": [
+        "Hạt nhân helium",
+        "Proton",
+        "Neutron",
+        "Electron"
+      ],
+      "answer": 3,
+      "explain": "Tia β⁻ là dòng electron phóng ra từ hạt nhân.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Hạt nhân helium là tia α.",
+        "1": "Proton không phải tia phóng xạ β⁻.",
+        "2": "Neutron không mang điện, không phải tia β⁻."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tia phóng xạ α có khả năng ion hoá môi trường:",
+      "choices": [
+        "Mạnh, nhưng đâm xuyên kém",
+        "Yếu, nhưng đâm xuyên mạnh",
+        "Yếu và đâm xuyên kém",
+        "Mạnh và đâm xuyên mạnh"
+      ],
+      "answer": 0,
+      "explain": "Tia α ion hoá mạnh nên nhanh mất năng lượng, chỉ đi được vài cm trong không khí.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Tia α ion hoá mạnh, không yếu.",
+        "2": "Tia α đâm xuyên kém, không mạnh.",
+        "3": "Tia α đâm xuyên kém."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hạt nhân mẹ ²³⁸₉₂U phân rã α. Số khối A của hạt nhân con là:",
+      "expr": "238-4",
+      "answer": "234",
+      "explain": "Phân rã α làm số khối giảm 4: A_con = 238 − 4 = 234."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hạt nhân ¹⁴₆C phân rã β⁻. Số hiệu nguyên tử Z của hạt nhân con là:",
+      "expr": "6+1",
+      "answer": "7",
+      "explain": "Phân rã β⁻ tăng Z thêm 1: Z_con = 6 + 1 = 7."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đồng vị ¹⁵O có chu kì bán rã T. Sau 244 s, 75% số hạt nhân ban đầu đã phân rã. Chu kì bán rã T (s):",
+      "expr": "244/2",
+      "answer": "122",
+      "explain": "Còn 25% = (1/2)² nên t = 2T, T = 244/2 = 122 s."
+    },
+    {
+      "id": "q10",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Sau 3 chu kì bán rã, số hạt nhân phóng xạ còn lại bằng:",
+      "choices": [
+        "1/2 số hạt nhân ban đầu",
+        "1/4 số hạt nhân ban đầu",
+        "1/3 số hạt nhân ban đầu",
+        "1/8 số hạt nhân ban đầu"
+      ],
+      "answer": 3,
+      "explain": "Sau mỗi chu kì số hạt giảm một nửa, sau 3 chu kì còn (1/2)³ = 1/8.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Sau 1 chu kì mới còn 1/2.",
+        "1": "Sau 2 chu kì mới còn 1/4.",
+        "2": "Số hạt giảm theo luỹ thừa của 1/2, không phải 1/3."
+      }
+    },
+    {
+      "id": "q11",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn vị của độ phóng xạ trong hệ SI là:",
+      "choices": [
+        "Gray (Gy)",
+        "Sievert (Sv)",
+        "Curie (Ci)",
+        "Becquerel (Bq)"
+      ],
+      "answer": 3,
+      "explain": "Đơn vị SI của độ phóng xạ là becquerel, 1 Bq = 1 phân rã/s.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Gray là đơn vị liều hấp thụ.",
+        "1": "Sievert là đơn vị liều hiệu dụng.",
+        "2": "Curie là đơn vị ngoài SI, 1 Ci = 3,7·10¹⁰ Bq."
+      }
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chất phóng xạ có chu kì bán rã 110 phút. Sau bao nhiêu phút lượng chất còn 25%? (phút)",
+      "expr": "2*110",
+      "answer": "220",
+      "explain": "Còn 25% = (1/2)² nên t = 2T = 2 · 110 = 220 phút."
+    },
+    {
+      "id": "q13",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Biết 1 Ci = 3,7·10¹⁰ Bq. Độ phóng xạ 2 Ci tương ứng bao nhiêu đơn vị 10¹⁰ Bq?",
+      "expr": "2*3.7",
+      "answer": "7,4",
+      "explain": "H = 2 · 3,7·10¹⁰ Bq = 7,4·10¹⁰ Bq."
+    },
+    {
+      "id": "q14",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tia phóng xạ có tốc độ khoảng 2·10⁷ m/s và bị một tờ giấy chặn lại là tia:",
+      "choices": [
+        "α",
+        "β⁻",
+        "β⁺",
+        "γ"
+      ],
+      "answer": 0,
+      "explain": "Tia α có tốc độ khoảng 2·10⁷ m/s và bị một tờ giấy chặn lại.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Tia β có tốc độ gần bằng tốc độ ánh sáng.",
+        "2": "Tia β⁺ có tốc độ gần bằng tốc độ ánh sáng.",
+        "3": "Tia γ là sóng điện từ, không bị tờ giấy chặn."
+      }
+    },
+    {
+      "id": "q15",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phương pháp xác định niên đại cổ vật hữu cơ bằng đồng vị phóng xạ dựa trên:",
+      "choices": [
+        "Khối lượng riêng của mẫu vật",
+        "Màu sắc của mẫu vật",
+        "Tỉ lệ đồng vị ¹⁴C còn lại so với trong không khí",
+        "Nhiệt độ của mẫu vật"
+      ],
+      "answer": 2,
+      "explain": "Sau khi sinh vật chết, tỉ lệ ¹⁴C giảm do phân rã; so sánh với tỉ lệ trong khí quyển cho phép tính tuổi.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Khối lượng riêng không phải căn cứ của phương pháp này.",
+        "1": "Màu sắc không phải căn cứ của phương pháp này.",
+        "3": "Nhiệt độ không phải căn cứ của phương pháp này."
+      }
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "id": "bai-21",
+  "grade": 12,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 12",
+  "chapter": "Chương IV. Vật lí hạt nhân",
+  "lesson": "Bài 21. Cấu trúc hạt nhân",
+  "section": "",
+  "bookPage": 91,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Thí nghiệm tán xạ hạt alpha của Rutherford (1911): chùm hạt alpha bắn vào lá vàng rất mỏng. Phần lớn hạt đi thẳng, một số ít bị lệch hướng và rất ít hạt bật ngược lại. Kết quả này cho thấy nguyên tử có phần lớn là khoảng trống và có một hạt nhân rất nhỏ, mang điện tích dương, chiếm gần như toàn bộ khối lượng nguyên tử."
+    },
+    {
+      "type": "text",
+      "content": "Từ đó Rutherford đề xuất mô hình hành tinh nguyên tử: các electron chuyển động quanh hạt nhân như các hành tinh quanh Mặt Trời."
+    },
+    {
+      "type": "text",
+      "content": "Hạt nhân được cấu tạo từ hai loại hạt gọi chung là nucleon: proton (mang điện tích +e, kí hiệu p) và neutron (không mang điện, kí hiệu n). Khối lượng proton và neutron xấp xỉ bằng nhau: m_p ≈ 1,00728 amu, m_n ≈ 1,00866 amu, với 1 amu ≈ 1,66054·10⁻²⁷ kg."
+    },
+    {
+      "type": "formula",
+      "content": "Kí hiệu hạt nhân: ᴬ_Z X"
+    },
+    {
+      "type": "text",
+      "content": "Trong đó X là kí hiệu hoá học, A là số khối (tổng số nucleon), Z là số proton (số hiệu nguyên tử). Số neutron là N = A − Z."
+    },
+    {
+      "type": "text",
+      "content": "Bán kính hạt nhân gần đúng: R = 1,2·10⁻¹⁵·A^(1/3) m. Hạt nhân có kích thước rất nhỏ so với nguyên tử."
+    },
+    {
+      "type": "text",
+      "content": "Đồng vị là các hạt nhân có cùng số proton Z nhưng khác số neutron N (khác số khối A). Đồng vị có thể bền hoặc phóng xạ."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hạt nhân ¹⁴₆C có bao nhiêu neutron?",
+      "steps": [
+        "A = 14, Z = 6.",
+        "N = A − Z = 14 − 6 = 8."
+      ],
+      "expr": "14-6",
+      "answer": "8"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kết quả thí nghiệm tán xạ hạt alpha của Rutherford cho thấy điều gì về nguyên tử?",
+      "choices": [
+        "Electron nằm rải đều trong nguyên tử",
+        "Hạt nhân có kích thước bằng nguyên tử",
+        "Nguyên tử có phần lớn là khoảng trống và hạt nhân rất nhỏ mang điện dương",
+        "Nguyên tử là khối đặc đồng nhất"
+      ],
+      "answer": 2,
+      "explain": "Phần lớn hạt alpha đi thẳng, rất ít hạt bị lệch mạnh, nên hạt nhân rất nhỏ và mang điện dương.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Electron không rải đều như vậy trong mô hình Rutherford.",
+        "1": "Hạt nhân nhỏ hơn rất nhiều so với nguyên tử.",
+        "3": "Nếu nguyên tử đặc đồng nhất thì hạt alpha đã bị lệch nhiều hơn."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Theo mô hình hành tinh nguyên tử của Rutherford, electron chuyển động:",
+      "choices": [
+        "Quanh hạt nhân như các hành tinh quanh Mặt Trời",
+        "Đứng yên trong hạt nhân",
+        "Trong lòng proton",
+        "Thẳng đều ra khỏi nguyên tử"
+      ],
+      "answer": 0,
+      "explain": "Mô hình hành tinh nguyên tử mô tả electron chuyển động quanh hạt nhân.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Electron không đứng yên trong hạt nhân.",
+        "2": "Electron không nằm trong proton.",
+        "3": "Electron không chuyển động thẳng đều ra khỏi nguyên tử."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao một số hạt alpha bị lệch hướng mạnh khi đi gần hạt nhân vàng?",
+      "choices": [
+        "Vì lá vàng có từ trường mạnh",
+        "Vì hạt alpha và hạt nhân cùng mang điện dương nên đẩy nhau mạnh",
+        "Vì hạt alpha mang điện âm",
+        "Vì electron hút hạt alpha"
+      ],
+      "answer": 1,
+      "explain": "Lực đẩy tĩnh điện giữa hai điện tích dương làm hạt alpha bị lệch khi lại gần hạt nhân.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Lực từ không phải nguyên nhân chính.",
+        "2": "Hạt alpha mang điện dương, không phải điện âm.",
+        "3": "Electron không hút hạt alpha đáng kể trong trường hợp này."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hạt nhân nguyên tử được cấu tạo từ:",
+      "choices": [
+        "Chỉ có electron",
+        "Proton và neutron",
+        "Electron và proton",
+        "Electron và neutron"
+      ],
+      "answer": 1,
+      "explain": "Hai loại nucleon là proton và neutron tạo thành hạt nhân.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Hạt nhân không chỉ gồm electron.",
+        "2": "Electron nằm ngoài hạt nhân.",
+        "3": "Electron nằm ngoài hạt nhân, không tạo thành hạt nhân."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Neutron có đặc điểm:",
+      "choices": [
+        "Mang điện tích +e",
+        "Mang điện tích −e",
+        "Có khối lượng bằng 0",
+        "Không mang điện tích"
+      ],
+      "answer": 3,
+      "explain": "Neutron trung hoà về điện, khối lượng xấp xỉ 1 amu.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Mang điện +e là đặc điểm của proton.",
+        "1": "Mang điện −e là đặc điểm của electron.",
+        "2": "Neutron có khối lượng xấp xỉ 1 amu, không bằng 0."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn vị khối lượng nguyên tử amu có giá trị bằng:",
+      "choices": [
+        "Khối lượng của một electron",
+        "Khối lượng của 1 mol nước",
+        "1/12 khối lượng nguyên tử đồng vị ¹²C",
+        "Khối lượng của một proton"
+      ],
+      "answer": 2,
+      "explain": "amu bằng 1/12 khối lượng của nguyên tử carbon-12.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Khối lượng electron rất nhỏ, không phải định nghĩa của amu.",
+        "1": "Không liên quan đến định nghĩa amu.",
+        "3": "Khối lượng proton xấp xỉ 1,00728 amu, không phải định nghĩa của amu."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hạt nhân ²³⁵₉₂U có số neutron N bằng:",
+      "expr": "235-92",
+      "answer": "143",
+      "explain": "N = A − Z = 235 − 92 = 143."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hạt nhân ²³⁸₉₂U có số neutron N bằng:",
+      "expr": "238-92",
+      "answer": "146",
+      "explain": "N = A − Z = 238 − 92 = 146."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hạt nhân có A = 27 (nhôm). Với R = 1,2·10⁻¹⁵·A^(1/3) m, bán kính hạt nhân là:",
+      "choices": [
+        "9·10⁻¹⁵ m",
+        "27·10⁻¹⁵ m",
+        "3,6·10⁻¹⁵ m",
+        "1,2·10⁻¹⁵ m"
+      ],
+      "answer": 2,
+      "explain": "A^(1/3) = 27^(1/3) = 3, nên R = 1,2·10⁻¹⁵ · 3 = 3,6·10⁻¹⁵ m.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đã tính A^(2/3) = 9 thay vì A^(1/3).",
+        "1": "Đã lấy A = 27 thay vì A^(1/3).",
+        "3": "Đã quên nhân với A^(1/3) = 3."
+      }
+    },
+    {
+      "id": "q10",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Các đồng vị của cùng một nguyên tố có đặc điểm chung là:",
+      "choices": [
+        "Cùng số neutron, khác số proton",
+        "Khác cả Z và A",
+        "Cùng số proton Z, khác số neutron N",
+        "Cùng số khối A, khác số proton"
+      ],
+      "answer": 2,
+      "explain": "Đồng vị có cùng Z (cùng nguyên tố) nhưng khác A, tức khác số neutron.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Cùng N khác Z là không phải đồng vị.",
+        "1": "Khác Z thì là nguyên tố khác.",
+        "3": "Cùng A khác Z là không phải đồng vị."
+      }
+    },
+    {
+      "id": "q11",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hydrogen có ba đồng vị: hydrogen thường, deuterium và tritium. Deuterium là đồng vị có:",
+      "choices": [
+        "2 proton và 1 neutron",
+        "1 electron và 2 neutron",
+        "1 proton và 1 neutron",
+        "1 proton, không có neutron"
+      ],
+      "answer": 2,
+      "explain": "Deuterium ²₁H có Z = 1 và A = 2, nên N = 1.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Có 2 proton là helium, không phải hydrogen.",
+        "1": "Không đúng cấu tạo hạt nhân.",
+        "3": "Hydrogen thường có 1 proton, không neutron."
+      }
+    }
+  ]
+}

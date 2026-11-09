@@ -1,0 +1,300 @@
+{
+  "id": "bai-22",
+  "grade": 12,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 12",
+  "chapter": "Chương IV. Vật lí hạt nhân",
+  "lesson": "Bài 22. Phản ứng hạt nhân và năng lượng liên kết",
+  "section": "",
+  "bookPage": 96,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phản ứng hạt nhân là quá trình biến đổi hạt nhân này thành hạt nhân khác. Trong phản ứng hạt nhân, số khối A và điện tích được bảo toàn: tổng số khối và tổng điện tích trước phản ứng bằng sau phản ứng."
+    },
+    {
+      "type": "formula",
+      "content": "Bảo toàn số khối: ΣA trước = ΣA sau;  Bảo toàn điện tích: ΣZ trước = ΣZ sau"
+    },
+    {
+      "type": "text",
+      "content": "Phản ứng hạt nhân tự phát là sự phân rã của một hạt nhân không bền thành các hạt nhân mới, ví dụ phân rã alpha của ²³⁸₉₂U: ²³⁸₉₂U → ²³⁴₉₀Th + ⁴₂He."
+    },
+    {
+      "type": "text",
+      "content": "Phản ứng hạt nhân kích thích là quá trình các hạt nhân tương tác với hạt khác (hạt alpha, neutron,…) tạo ra hạt nhân mới, ví dụ phản ứng phân hạch và tổng hợp hạt nhân."
+    },
+    {
+      "type": "text",
+      "content": "Năng lượng liên kết E_lk của hạt nhân là năng lượng tối thiểu để tách toàn bộ nucleon ra khỏi hạt nhân. Độ hụt khối Δm = [Z·m_p + (A − Z)·m_n − m_hn]. E_lk = Δm·c². Năng lượng liên kết riêng E_lk/A càng lớn thì hạt nhân càng bền vững."
+    },
+    {
+      "type": "text",
+      "content": "Phản ứng phân hạch là phản ứng trong đó một hạt nhân nặng (như ²³⁵U) hấp thụ neutron và vỡ thành hai hạt nhân nhẹ hơn, đồng thời giải phóng vài neutron và toả ra năng lượng khoảng 200 MeV cho mỗi phân hạch."
+    },
+    {
+      "type": "text",
+      "content": "Phản ứng tổng hợp hạt nhân là phản ứng trong đó hai hay nhiều hạt nhân nhẹ hợp lại thành hạt nhân nặng hơn. Phản ứng này cần nhiệt độ rất cao (khoảng 10⁷ K trở lên) để thắng lực đẩy tĩnh điện, nên còn gọi là phản ứng nhiệt hạch."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính độ hụt khối của hạt nhân ¹⁶₈O, biết khối lượng hạt nhân là 15,99492 amu, m_p = 1,00728 amu, m_n = 1,00866 amu.",
+      "steps": [
+        "Z = 8, N = 8.",
+        "Tổng khối lượng nucleon: 8·1,00728 + 8·1,00866 = 16,12752 amu.",
+        "Δm = 16,12752 − 15,99492 = 0,13260 amu."
+      ],
+      "expr": "8*1.00728+8*1.00866-15.99492",
+      "answer": "0,13260"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phản ứng hạt nhân là quá trình:",
+      "choices": [
+        "Biến đổi hạt nhân này thành hạt nhân khác",
+        "Thay đổi electron trong nguyên tử",
+        "Thay đổi trạng thái của phân tử",
+        "Trao đổi electron giữa các nguyên tử"
+      ],
+      "answer": 0,
+      "explain": "Phản ứng hạt nhân làm thay đổi hạt nhân, khác với phản ứng hoá học chỉ thay đổi electron ngoài cùng.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Thay đổi electron là phản ứng hoá học.",
+        "2": "Thay đổi trạng thái phân tử không phải phản ứng hạt nhân.",
+        "3": "Trao đổi electron là phản ứng hoá học."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trong phản ứng hạt nhân, định luật bảo toàn nào được nghiệm đúng?",
+      "choices": [
+        "Bảo toàn số neutron",
+        "Bảo toàn số khối A và bảo toàn điện tích",
+        "Bảo toàn khối lượng nghỉ của các hạt",
+        "Bảo toàn số hạt"
+      ],
+      "answer": 1,
+      "explain": "Số khối A và điện tích được bảo toàn trong phản ứng hạt nhân.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Số neutron có thể thay đổi trong phản ứng.",
+        "2": "Khối lượng nghỉ không bảo toàn tuyệt đối vì có sự chuyển hoá năng lượng.",
+        "3": "Số hạt có thể thay đổi trong phản ứng."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong phản ứng ⁴₂He + ¹⁴₇N → ¹⁷₈O + X, số khối A của hạt X là:",
+      "expr": "4+14-17",
+      "answer": "1",
+      "explain": "Bảo toàn số khối: 4 + 14 = 17 + A_X, nên A_X = 1."
+    },
+    {
+      "id": "q04",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong phản ứng ⁴₂He + ¹⁴₇N → ¹⁷₈O + X, điện tích Z của hạt X là:",
+      "expr": "2+7-8",
+      "answer": "1",
+      "explain": "Bảo toàn điện tích: 2 + 7 = 8 + Z_X, nên Z_X = 1. Hạt X là proton ¹₁H."
+    },
+    {
+      "id": "q05",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phân rã ²³⁸₉₂U → ²³⁴₉₀Th + ⁴₂He là phản ứng hạt nhân:",
+      "choices": [
+        "Phân hạch",
+        "Tổng hợp hạt nhân",
+        "Tự phát, phát ra hạt alpha",
+        "Kích thích, do neutron bắn phá"
+      ],
+      "answer": 2,
+      "explain": "Hạt nhân U không bền tự phân rã thành Th và hạt alpha, nên là phân rã tự phát.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đây không phải phân hạch: không vỡ thành hai mảnh có khối lượng trung bình.",
+        "1": "Đây không phải tổng hợp hạt nhân.",
+        "3": "Ở đây không có neutron bắn phá."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Lực hạt nhân có đặc điểm nào sau đây?",
+      "choices": [
+        "Là lực hấp dẫn giữa các nucleon ở khoảng cách lớn",
+        "Là lực hút giữa các nucleon, không phụ thuộc điện tích và chỉ có tác dụng ở khoảng cách rất ngắn",
+        "Là lực đẩy giữa các proton ở khoảng cách lớn",
+        "Là lực tĩnh điện giữa các neutron"
+      ],
+      "answer": 1,
+      "explain": "Lực hạt nhân là lực hút mạnh, chỉ đáng kể trong khoảng cách cỡ 10⁻¹⁵ m.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Lực hạt nhân chỉ có tác dụng ở khoảng cách rất ngắn, không phải lực hấp dẫn ở khoảng cách lớn.",
+        "2": "Lực hạt nhân là lực hút chứ không phải lực đẩy.",
+        "3": "Neutron không mang điện, không có lực tĩnh điện giữa chúng."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Độ hụt khối của hạt nhân ¹⁶₈O (amu), biết m_O = 15,99492 amu, m_p = 1,00728 amu, m_n = 1,00866 amu:",
+      "expr": "8*1.00728+8*1.00866-15.99492",
+      "answer": "0,1326",
+      "explain": "Δm = 8·1,00728 + 8·1,00866 − 15,99492 = 0,13260 amu."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hạt nhân ⁴₂He có khối lượng 4,0015 amu. Độ hụt khối (amu), biết m_p = 1,00728 amu và m_n = 1,00866 amu:",
+      "expr": "2*1.00728+2*1.00866-4.0015",
+      "answer": "0,03038",
+      "explain": "Δm = 2·1,00728 + 2·1,00866 − 4,0015 = 0,03038 amu."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Độ hụt khối của một hạt nhân là 0,03 amu. Năng lượng liên kết tương ứng (MeV), biết 1 amu tương đương 931,5 MeV/c²:",
+      "expr": "0.03*931.5",
+      "answer": "27,945",
+      "explain": "E_lk = Δm·c² = 0,03 · 931,5 = 27,945 MeV."
+    },
+    {
+      "id": "q10",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hạt nhân có năng lượng liên kết riêng càng lớn thì:",
+      "choices": [
+        "Càng kém bền",
+        "Càng nhẹ",
+        "Càng dễ phân rã",
+        "Càng bền vững"
+      ],
+      "answer": 3,
+      "explain": "Năng lượng liên kết riêng đặc trưng cho mức độ bền vững của hạt nhân.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Năng lượng liên kết riêng lớn nghĩa là hạt nhân bền hơn.",
+        "1": "Năng lượng liên kết riêng không quyết định khối lượng hạt nhân.",
+        "2": "Hạt nhân có năng lượng liên kết riêng lớn ít dễ phân rã hơn."
+      }
+    },
+    {
+      "id": "q11",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phản ứng phân hạch là phản ứng trong đó:",
+      "choices": [
+        "Electron bị bứt khỏi nguyên tử",
+        "Một hạt nhân nặng vỡ thành hai hạt nhân nhẹ hơn",
+        "Hai hạt nhân nhẹ hợp lại thành hạt nhân nặng hơn",
+        "Hạt nhân tự phát phát ra tia phóng xạ"
+      ],
+      "answer": 1,
+      "explain": "Phân hạch là sự vỡ của hạt nhân nặng thành các hạt nhân nhẹ hơn, có số khối trung bình.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đây là hiện tượng quang điện hoặc ion hoá, không phải phân hạch.",
+        "2": "Đây là định nghĩa của phản ứng tổng hợp hạt nhân.",
+        "3": "Đây là phóng xạ, không phải phân hạch."
+      }
+    },
+    {
+      "id": "q12",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Phản ứng phân hạch dây chuyền tự duy trì xảy ra khi hệ số nhân neutron k:",
+      "choices": [
+        "k < 1",
+        "k = 0",
+        "k bất kì",
+        "k > 1"
+      ],
+      "answer": 3,
+      "explain": "Khi k > 1, số phân hạch tăng lên theo thời gian nên phản ứng tự duy trì.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Khi k < 1, phản ứng dây chuyền tắt dần.",
+        "1": "Khi k = 0, không có phản ứng dây chuyền.",
+        "2": "k phải lớn hơn 1 để tự duy trì."
+      }
+    },
+    {
+      "id": "q13",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phản ứng tổng hợp hạt nhân là phản ứng trong đó:",
+      "choices": [
+        "Một hạt nhân nặng vỡ thành hai hạt nhẹ",
+        "Hạt nhân phát ra tia gamma",
+        "Electron nhảy quỹ đạo",
+        "Hai hay nhiều hạt nhân nhẹ hợp lại thành hạt nhân nặng hơn"
+      ],
+      "answer": 3,
+      "explain": "Tổng hợp hạt nhân là hợp hai hạt nhân nhẹ thành hạt nhân nặng hơn và bền hơn.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đây là phân hạch.",
+        "1": "Đây là phóng xạ gamma.",
+        "2": "Đây là chuyển mức năng lượng của electron."
+      }
+    },
+    {
+      "id": "q14",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao phản ứng tổng hợp hạt nhân cần nhiệt độ rất cao?",
+      "choices": [
+        "Để electron bị bứt hết khỏi nguyên tử",
+        "Để tăng khối lượng của hạt nhân",
+        "Để làm tăng số neutron trong hạt nhân",
+        "Để các hạt nhân có đủ động năng thắng lực đẩy tĩnh điện Coulomb"
+      ],
+      "answer": 3,
+      "explain": "Các hạt nhân đều mang điện dương nên đẩy nhau; cần động năng lớn để tiến lại gần đến mức lực hạt nhân phát huy tác dụng.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Electron bị bứt không phải lý do chính.",
+        "1": "Khối lượng hạt nhân không tăng vì nhiệt độ cao.",
+        "2": "Số neutron không tăng vì nhiệt độ cao."
+      }
+    },
+    {
+      "id": "q15",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Phản ứng tổng hợp ²₁H + ²₁H → ³₂He + ¹₀n toả ra năng lượng khoảng 4 MeV. Phản ứng này là:",
+      "choices": [
+        "Phản ứng tổng hợp hạt nhân",
+        "Phản ứng phân hạch",
+        "Phóng xạ alpha",
+        "Phóng xạ beta"
+      ],
+      "answer": 0,
+      "explain": "Hai hạt nhân nhẹ ²H hợp lại thành hạt nhân nặng hơn ³He nên là tổng hợp hạt nhân.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Không có hạt nhân nặng vỡ thành hai mảnh.",
+        "2": "Không có hạt alpha được phát ra.",
+        "3": "Không có electron hoặc positron được phát ra."
+      }
+    }
+  ]
+}

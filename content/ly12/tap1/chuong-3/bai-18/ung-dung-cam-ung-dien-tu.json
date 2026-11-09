@@ -38,18 +38,18 @@
       "type": "mcq",
       "stem": "Máy biến áp hoạt động dựa trên hiện tượng:",
       "choices": [
+        "Phóng xạ",
         "Cảm ứng điện từ",
         "Quang điện",
-        "Nhiệt điện",
-        "Phóng xạ"
+        "Nhiệt điện"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "Từ thông biến thiên trong cuộn sơ cấp gây suất điện động cảm ứng trong cuộn thứ cấp.",
       "concept": true,
       "wrong_explain": {
-        "1": "Hiện tượng quang điện không dùng trong máy biến áp.",
-        "2": "Hiện tượng nhiệt điện không dùng trong máy biến áp.",
-        "3": "Phóng xạ không liên quan."
+        "0": "Phóng xạ không liên quan.",
+        "2": "Hiện tượng quang điện không dùng trong máy biến áp.",
+        "3": "Hiện tượng nhiệt điện không dùng trong máy biến áp."
       }
     },
     {
@@ -58,18 +58,18 @@
       "type": "mcq",
       "stem": "Cuộn sơ cấp của máy biến áp là cuộn:",
       "choices": [
-        "Nối với nguồn điện xoay chiều",
-        "Nối với tải tiêu thụ điện",
         "Có ít vòng hơn",
-        "Không có lõi thép"
+        "Không có lõi thép",
+        "Nối với nguồn điện xoay chiều",
+        "Nối với tải tiêu thụ điện"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "Cuộn sơ cấp được nối với nguồn xoay chiều; cuộn thứ cấp nối với tải tiêu thụ.",
       "concept": true,
       "wrong_explain": {
-        "1": "Đây là cuộn thứ cấp.",
-        "2": "Số vòng không quyết định tên gọi sơ cấp.",
-        "3": "Lõi thép là đặc điểm chung, không phải định nghĩa."
+        "0": "Số vòng không quyết định tên gọi sơ cấp.",
+        "1": "Lõi thép là đặc điểm chung, không phải định nghĩa.",
+        "3": "Đây là cuộn thứ cấp."
       }
     },
     {
@@ -96,18 +96,18 @@
       "type": "mcq",
       "stem": "Lõi biến áp được ghép từ các lá thép mỏng cách điện nhằm mục đích:",
       "choices": [
+        "Tăng điện trở cuộn dây",
         "Giảm hao phí do dòng điện Foucault",
         "Tăng từ thông qua lõi",
-        "Giảm khối lượng máy",
-        "Tăng điện trở cuộn dây"
+        "Giảm khối lượng máy"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "Lá mỏng cách điện làm tăng điện trở đối với dòng Foucault, giảm tác dụng toả nhiệt.",
       "concept": true,
       "wrong_explain": {
-        "1": "Lõi lá mỏng không nhằm tăng từ thông.",
-        "2": "Giảm khối lượng không phải mục đích chính.",
-        "3": "Điện trở cuộn dây không được tăng bằng cách này."
+        "0": "Điện trở cuộn dây không được tăng bằng cách này.",
+        "2": "Lõi lá mỏng không nhằm tăng từ thông.",
+        "3": "Giảm khối lượng không phải mục đích chính."
       }
     },
     {
@@ -116,18 +116,18 @@
       "type": "mcq",
       "stem": "Đàn ghi ta điện hoạt động dựa trên:",
       "choices": [
-        "Cảm ứng điện từ do dây thép dao động trong từ trường của nam châm",
         "Hiệu ứng quang điện",
         "Hiệu ứng nhiệt điện",
-        "Phóng xạ"
+        "Phóng xạ",
+        "Cảm ứng điện từ do dây thép dao động trong từ trường của nam châm"
       ],
-      "answer": 0,
+      "answer": 3,
       "explain": "Dao động của dây thép làm từ thông qua cuộn dây cảm ứng biến thiên, sinh ra dòng điện cảm ứng.",
       "concept": true,
       "wrong_explain": {
-        "1": "Không có hiệu ứng quang điện trong đàn.",
-        "2": "Không có hiệu ứng nhiệt điện trong đàn.",
-        "3": "Không có phóng xạ trong đàn."
+        "0": "Không có hiệu ứng quang điện trong đàn.",
+        "1": "Không có hiệu ứng nhiệt điện trong đàn.",
+        "2": "Không có phóng xạ trong đàn."
       }
     },
     {
@@ -136,18 +136,18 @@
       "type": "mcq",
       "stem": "Dòng điện Foucault là dòng điện cảm ứng:",
       "choices": [
+        "Chỉ xuất hiện khi có nguồn một chiều",
         "Xuất hiện trong khối vật dẫn chuyển động trong từ trường hoặc đặt trong từ trường biến thiên",
         "Chỉ xuất hiện trong dây dẫn có vỏ cách điện",
-        "Xuất hiện trong chân không",
-        "Chỉ xuất hiện khi có nguồn một chiều"
+        "Xuất hiện trong chân không"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "Dòng Foucault là các dòng cảm ứng xoáy trong khối vật dẫn.",
       "concept": true,
       "wrong_explain": {
-        "1": "Dây có vỏ cách điện không phải điều kiện của dòng Foucault.",
-        "2": "Dòng Foucault không xuất hiện trong chân không.",
-        "3": "Dòng Foucault là dòng cảm ứng, không cần nguồn một chiều."
+        "0": "Dòng Foucault là dòng cảm ứng, không cần nguồn một chiều.",
+        "2": "Dây có vỏ cách điện không phải điều kiện của dòng Foucault.",
+        "3": "Dòng Foucault không xuất hiện trong chân không."
       }
     },
     {
@@ -156,18 +156,18 @@
       "type": "mcq",
       "stem": "Bếp từ hoạt động dựa trên:",
       "choices": [
-        "Dòng điện Foucault làm nóng nồi kim loại",
-        "Điện trở thuần của dây đốt",
         "Tia hồng ngoại",
-        "Phản ứng hoá học"
+        "Phản ứng hoá học",
+        "Dòng điện Foucault làm nóng nồi kim loại",
+        "Điện trở thuần của dây đốt"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "Từ trường biến thiên trong bếp sinh dòng Foucault trong đáy nồi, làm nồi nóng lên.",
       "concept": true,
       "wrong_explain": {
-        "1": "Bếp từ không dùng dây đốt điện trở.",
-        "2": "Bếp từ không dùng tia hồng ngoại làm nguồn nhiệt chính.",
-        "3": "Bếp từ không dựa trên phản ứng hoá học."
+        "0": "Bếp từ không dùng tia hồng ngoại làm nguồn nhiệt chính.",
+        "1": "Bếp từ không dựa trên phản ứng hoá học.",
+        "3": "Bếp từ không dùng dây đốt điện trở."
       }
     },
     {
@@ -176,18 +176,18 @@
       "type": "mcq",
       "stem": "Theo quy tắc an toàn điện, vì sao không nên sử dụng thiết bị điện trong quá trình sạc pin?",
       "choices": [
+        "Vì dòng sạc làm thay đổi tần số lưới điện",
         "Vì quá trình sạc có thể làm pin và thiết bị nóng, tiềm ẩn rủi ro",
         "Vì sạc pin làm tăng điện áp lưới",
-        "Vì thiết bị không có tác dụng khi đang sạc",
-        "Vì dòng sạc làm thay đổi tần số lưới điện"
+        "Vì thiết bị không có tác dụng khi đang sạc"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "Trong khi sạc, pin và thiết bị có thể nóng lên; không sử dụng thiết bị để tránh rủi ro cháy nổ và chập điện.",
       "concept": true,
       "wrong_explain": {
-        "1": "Sạc pin không làm tăng điện áp lưới điện.",
-        "2": "Thiết bị vẫn hoạt động khi đang sạc; vấn đề là an toàn.",
-        "3": "Sạc pin không làm thay đổi tần số lưới điện."
+        "0": "Sạc pin không làm thay đổi tần số lưới điện.",
+        "2": "Sạc pin không làm tăng điện áp lưới điện.",
+        "3": "Thiết bị vẫn hoạt động khi đang sạc; vấn đề là an toàn."
       }
     },
     {
@@ -196,18 +196,18 @@
       "type": "mcq",
       "stem": "Vì sao dòng điện xoay chiều được dùng để truyền tải điện năng đi xa?",
       "choices": [
-        "Dễ biến đổi điện áp bằng máy biến áp, giảm hao phí trên đường dây",
-        "Vì dòng xoay chiều không sinh nhiệt",
         "Vì dòng xoay chiều không có từ trường",
-        "Vì dòng xoay chiều có cường độ không đổi"
+        "Vì dòng xoay chiều có cường độ không đổi",
+        "Dễ biến đổi điện áp bằng máy biến áp, giảm hao phí trên đường dây",
+        "Vì dòng xoay chiều không sinh nhiệt"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "Tăng điện áp bằng máy biến áp làm giảm dòng trên đường dây, nên giảm hao phí.",
       "concept": true,
       "wrong_explain": {
-        "1": "Mọi dòng điện đều có tỏa nhiệt trên dây.",
-        "2": "Dòng xoay chiều vẫn có từ trường.",
-        "3": "Dòng xoay chiều có cường độ biến thiên."
+        "0": "Dòng xoay chiều vẫn có từ trường.",
+        "1": "Dòng xoay chiều có cường độ biến thiên.",
+        "3": "Mọi dòng điện đều có tỏa nhiệt trên dây."
       }
     }
   ]
