@@ -1,0 +1,194 @@
+{
+  "id": "bai-17",
+  "grade": 12,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 12",
+  "chapter": "Chương III. Từ trường",
+  "lesson": "Bài 17. Máy phát điện xoay chiều",
+  "section": "",
+  "bookPage": 72,
+  "theory": [
+    {
+      "type": "formula",
+      "content": "e = E₀·cos(ωt + φ₀);  E₀ = N·B·S·ω"
+    },
+    {
+      "type": "text",
+      "content": "Khi khung dây dẫn quay đều với tốc độ góc ω trong từ trường đều B, từ thông qua khung biến thiên điều hoà và trong khung xuất hiện suất điện động xoay chiều theo quy luật cosin (hoặc sin)."
+    },
+    {
+      "type": "formula",
+      "content": "T = 2π/ω,  f = ω/(2π)"
+    },
+    {
+      "type": "text",
+      "content": "Dòng điện xoay chiều có cường độ biến thiên điều hoà theo thời gian: i = I₀cos(ωt + φ). Giá trị hiệu dụng liên hệ với giá trị cực đại qua I = I₀/√2 và U = U₀/√2."
+    },
+    {
+      "type": "text",
+      "content": "Máy phát điện xoay chiều gồm phần cảm (tạo từ trường) và phần ứng (các cuộn dây xuất hiện suất điện động cảm ứng). Phần ứng thường đặt ở stato để tránh mòn vành khuyên và chổi quét khi quay nhanh."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nguyên tắc tạo ra suất điện động xoay chiều dựa trên:",
+      "choices": [
+        "Hiện tượng cảm ứng điện từ",
+        "Hiện tượng quang điện",
+        "Hiện tượng nhiệt điện",
+        "Hiện tượng phóng xạ"
+      ],
+      "answer": 0,
+      "explain": "Khi từ thông qua khung dây biến thiên điều hoà, khung xuất hiện suất điện động cảm ứng xoay chiều.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Hiện tượng quang điện không tạo suất điện động xoay chiều trong khung.",
+        "2": "Hiện tượng nhiệt điện không liên quan.",
+        "3": "Hiện tượng phóng xạ không tạo dòng điện xoay chiều."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Suất điện động cực đại E₀ của khung dây có N vòng, diện tích S, cảm ứng từ B, quay với tốc độ góc ω là:",
+      "choices": [
+        "E₀ = NBSω",
+        "E₀ = NBS/ω",
+        "E₀ = N/(BSω)",
+        "E₀ = NBω/S"
+      ],
+      "answer": 0,
+      "explain": "Từ thông cực đại N·B·S, suất điện động cực đại E₀ = N·B·S·ω.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chia cho ω làm sai thứ nguyên.",
+        "2": "Vị trí các đại lượng sai.",
+        "3": "Chia cho S không đúng."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khung dây N = 100 vòng, B = 0,1 T, S = 0,02 m², ω = 100 rad/s. Suất điện động cực đại E₀ (V):",
+      "expr": "100*0.1*0.02*100",
+      "answer": "20",
+      "explain": "E₀ = NBSω = 100 · 0,1 · 0,02 · 100 = 20 V."
+    },
+    {
+      "id": "q04",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Dòng điện xoay chiều có tần số 50 Hz. Chu kì T (s) là:",
+      "expr": "1/50",
+      "answer": "0,02",
+      "explain": "T = 1/f = 1/50 = 0,02 s."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Máy phát điện xoay chiều lớn thường đặt phần ứng là stato (cuộn dây cố định) vì:",
+      "choices": [
+        "Tránh mòn vành khuyên và chổi quét khi rôto quay nhanh",
+        "Để tăng từ trường",
+        "Để giảm trọng lượng máy",
+        "Không có lý do"
+      ],
+      "answer": 0,
+      "explain": "Khi rôto quay nhanh, vành khuyên và chổi quét nhanh mòn, nên đưa cuộn dây lên stato.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Vị trí phần ứng không làm từ trường mạnh hơn.",
+        "2": "Trọng lượng không phải lý do chính.",
+        "3": "Có lý do rõ ràng là giảm mòn."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phần cảm của máy phát điện xoay chiều là bộ phận:",
+      "choices": [
+        "Tạo ra từ trường (nam châm)",
+        "Gồm các cuộn dây xuất hiện suất điện động",
+        "Là vành khuyên",
+        "Là chổi quét"
+      ],
+      "answer": 0,
+      "explain": "Phần cảm tạo từ trường; phần ứng là các cuộn dây xuất hiện suất điện động cảm ứng.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Đây là phần ứng.",
+        "2": "Vành khuyên là bộ phận dẫn điện, không phải phần cảm.",
+        "3": "Chổi quét là bộ phận dẫn điện."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dòng điện xoay chiều có:",
+      "choices": [
+        "Cường độ biến thiên điều hoà theo thời gian theo quy luật sin hoặc cosin",
+        "Cường độ không đổi",
+        "Chỉ có chiều dương",
+        "Cường độ tăng đều theo thời gian"
+      ],
+      "answer": 0,
+      "explain": "Dòng điện xoay chiều biến thiên điều hoà theo thời gian, có chiều thay đổi tuần hoàn.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Dòng không đổi là dòng một chiều.",
+        "2": "Dòng xoay chiều đổi chiều tuần hoàn.",
+        "3": "Dòng xoay chiều không tăng đều theo thời gian."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Quan hệ giữa giá trị hiệu dụng I và giá trị cực đại I₀ của dòng điện xoay chiều là:",
+      "choices": [
+        "I = I₀/√2",
+        "I = I₀√2",
+        "I = 2I₀",
+        "I = I₀"
+      ],
+      "answer": 0,
+      "explain": "Giá trị hiệu dụng bằng giá trị cực đại chia căn bậc hai của 2.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Hiệu dụng nhỏ hơn cực đại, không phải nhân √2.",
+        "2": "Hiệu dụng nhỏ hơn cực đại.",
+        "3": "Hiệu dụng khác cực đại."
+      }
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Trong máy phát điện xoay chiều ba pha, các cuộn dây trên stato lệch nhau một góc:",
+      "choices": [
+        "120°",
+        "90°",
+        "60°",
+        "180°"
+      ],
+      "answer": 0,
+      "explain": "Ba cuộn dây đặt trên vòng tròn lệch nhau 120° để tạo ba suất điện động lệch pha nhau.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Góc 90° không dùng cho máy ba pha.",
+        "2": "Góc 60° không đúng cấu tạo.",
+        "3": "Góc 180° không tạo ba pha."
+      }
+    }
+  ]
+}

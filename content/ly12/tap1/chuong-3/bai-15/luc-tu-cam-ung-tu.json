@@ -1,0 +1,244 @@
+{
+  "id": "bai-15",
+  "grade": 12,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 12",
+  "chapter": "Chương III. Từ trường",
+  "lesson": "Bài 15. Lực từ tác dụng lên dây dẫn mang dòng điện. Cảm ứng từ",
+  "section": "",
+  "bookPage": 61,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khi đoạn dây dẫn mang dòng điện I đặt trong từ trường, có lực từ F tác dụng lên đoạn dây. Lực F có phương vuông góc với đoạn dây và với vectơ B, có chiều xác định theo quy tắc bàn tay trái."
+    },
+    {
+      "type": "text",
+      "content": "Quy tắc bàn tay trái: đặt bàn tay trái sao cho vectơ B hướng vào lòng bàn tay, chiều từ cổ tay đến các ngón tay trùng chiều dòng điện; khi đó ngón cái choãi ra 90° chỉ chiều của lực từ F."
+    },
+    {
+      "type": "formula",
+      "content": "F = B·I·L·sinα"
+    },
+    {
+      "type": "text",
+      "content": "Trong đó B là cảm ứng từ, I là cường độ dòng điện, L là chiều dài đoạn dây và α là góc giữa dây dẫn và vectơ B. Công thức này là công thức của định luật Ampe."
+    },
+    {
+      "type": "text",
+      "content": "Đơn vị cảm ứng từ là tesla (T). Một tesla là cảm ứng từ của từ trường đều mà dòng điện 1 A vuông góc với đường sức chịu lực 1 N trên mỗi mét dây: 1 T = 1 N/(A·m)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đoạn dây dẫn dài 0,2 m, mang dòng điện 4 A, đặt vuông góc trong từ trường đều B = 0,5 T. Tính lực từ.",
+      "steps": [
+        "α = 90°, sinα = 1.",
+        "F = B·I·L = 0,5 · 4 · 0,2 = 0,4 N."
+      ],
+      "expr": "0.5*4*0.2",
+      "answer": "0,4"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Lực từ tác dụng lên đoạn dây dẫn mang dòng điện đặt trong từ trường có phương:",
+      "choices": [
+        "Vuông góc với đoạn dây và vuông góc với vectơ B",
+        "Song song với đoạn dây",
+        "Song song với vectơ B",
+        "Trùng với chiều dòng điện"
+      ],
+      "answer": 0,
+      "explain": "Lực từ vuông góc với cả đoạn dây dẫn và vectơ cảm ứng từ B.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Lực từ không song song với đoạn dây.",
+        "2": "Lực từ không song song với B.",
+        "3": "Lực từ không trùng với chiều dòng điện."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Theo quy tắc bàn tay trái, khi đặt tay đúng hướng, ngón cái choãi ra 90° chỉ:",
+      "choices": [
+        "Chiều của lực từ",
+        "Chiều của cảm ứng từ",
+        "Chiều của dòng điện",
+        "Chiều đường sức từ"
+      ],
+      "answer": 0,
+      "explain": "Ngón cái choãi ra chỉ chiều của lực từ F.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chiều B là hướng vào lòng bàn tay.",
+        "2": "Chiều dòng điện là chiều từ cổ tay đến các ngón tay.",
+        "3": "Đường sức từ không được chỉ bởi ngón cái."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trong công thức F = BILsinα, α là góc:",
+      "choices": [
+        "Giữa dây dẫn và vectơ cảm ứng từ B",
+        "Giữa dây dẫn và mặt phẳng ngang",
+        "Giữa lực từ và dòng điện",
+        "Giữa B và mặt đất"
+      ],
+      "answer": 0,
+      "explain": "α là góc hợp bởi đoạn dây mang dòng điện và vectơ cảm ứng từ B.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Mặt phẳng ngang không liên quan đến công thức.",
+        "2": "Lực từ luôn vuông góc với dòng điện, không đặt góc này.",
+        "3": "Mặt đất không liên quan đến công thức."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Lực từ tác dụng lên đoạn dây dẫn đạt giá trị lớn nhất khi:",
+      "choices": [
+        "α = 90°",
+        "α = 0°",
+        "α = 180°",
+        "α bất kì"
+      ],
+      "answer": 0,
+      "explain": "Khi α = 90°, sinα = 1 nên lực từ đạt giá trị lớn nhất.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Khi α = 0°, sinα = 0 nên lực từ bằng 0.",
+        "2": "Khi α = 180°, sinα = 0 nên lực từ bằng 0.",
+        "3": "Lực từ phụ thuộc vào α nên không phải bất kì."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn vị của cảm ứng từ trong hệ SI là:",
+      "choices": [
+        "Tesla (T)",
+        "Vêbe (Wb)",
+        "Ampe (A)",
+        "Niutơn (N)"
+      ],
+      "answer": 0,
+      "explain": "Cảm ứng từ có đơn vị tesla (T).",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Vêbe là đơn vị của từ thông.",
+        "2": "Ampe là đơn vị của cường độ dòng điện.",
+        "3": "Niutơn là đơn vị của lực."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "1 tesla bằng:",
+      "choices": [
+        "1 N/(A·m)",
+        "1 N·A/m",
+        "1 A/m",
+        "1 kg·m"
+      ],
+      "answer": 0,
+      "explain": "Từ F = BIL, B = F/(IL), nên 1 T = 1 N/(A·m).",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Đảo ngược tỉ số A và m.",
+        "2": "Thiếu đơn vị lực.",
+        "3": "Không đúng thứ nguyên của cảm ứng từ."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Dây dẫn dài 0,2 m, mang dòng điện 4 A, đặt vuông góc trong từ trường đều B = 0,5 T. Lực từ (N):",
+      "expr": "0.5*4*0.2",
+      "answer": "0,4",
+      "explain": "α = 90°: F = B·I·L = 0,5 · 4 · 0,2 = 0,4 N."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dây dẫn dài 2 m, dòng điện 3 A, B = 0,2 T, góc giữa dây và B là 30°. Lực từ (N):",
+      "expr": "0.2*3*2*0.5",
+      "answer": "0,6",
+      "explain": "F = BIL·sin30° = 0,2 · 3 · 2 · 0,5 = 0,6 N."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Đoạn dây dài 0,1 m, dòng điện 10 A, B = 0,05 T, đặt vuông góc. Lực từ (N) là:",
+      "choices": [
+        "0,05",
+        "0,5",
+        "0,005",
+        "5"
+      ],
+      "answer": 0,
+      "explain": "F = BIL = 0,05 · 10 · 0,1 = 0,05 N.",
+      "expr": "0.05*10*0.1",
+      "wrong_explain": {
+        "1": "Đã nhân nhầm chiều dài thành 1 m.",
+        "2": "Đã chia nhầm chiều dài cho 10.",
+        "3": "Đã bỏ chiều dài L trong công thức."
+      }
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Khi đoạn dây dẫn song song với đường sức từ (α = 0°), lực từ tác dụng lên dây:",
+      "choices": [
+        "Bằng 0",
+        "Đạt cực đại",
+        "Vuông góc với dây",
+        "Bằng BIL"
+      ],
+      "answer": 0,
+      "explain": "Khi α = 0°, sinα = 0 nên F = 0.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Lực cực đại ứng với α = 90°.",
+        "2": "Lực từ không vuông góc với dây trong trường hợp này.",
+        "3": "Khi α = 0°, F = BIL·0 = 0, không phải BIL."
+      }
+    },
+    {
+      "id": "q11",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi đổi chiều dòng điện chạy qua dây dẫn (B không đổi), chiều lực từ:",
+      "choices": [
+        "Đổi chiều",
+        "Không đổi",
+        "Bằng 0",
+        "Tăng gấp đôi"
+      ],
+      "answer": 0,
+      "explain": "Theo quy tắc bàn tay trái, đổi chiều dòng điện thì lực từ đổi chiều.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Lực từ phụ thuộc chiều dòng điện.",
+        "2": "Lực không bằng 0 khi đổi chiều dòng điện.",
+        "3": "Đổi chiều dòng điện không làm tăng độ lớn lực."
+      }
+    }
+  ]
+}

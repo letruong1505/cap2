@@ -1,0 +1,133 @@
+{
+  "id": "bai-20",
+  "grade": 12,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 12",
+  "chapter": "Chương III. Từ trường",
+  "lesson": "Bài 20. Bài tập về từ trường",
+  "section": "",
+  "bookPage": 86,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phần từ trường gồm: mô tả từ trường; lực từ tác dụng lên đoạn dây dẫn thẳng mang dòng điện; cảm ứng điện từ; dòng điện xoay chiều; sóng điện từ."
+    },
+    {
+      "type": "formula",
+      "content": "F = B·I·L·sinα;  Φ = B·S·cosα;  E₀ = N·B·S·ω;  U₁/U₂ = N₁/N₂"
+    },
+    {
+      "type": "text",
+      "content": "Khi giải bài tập định tính, cần xác định phương chiều của B, lực từ và dòng điện cảm ứng; khi giải bài tập định lượng, cần chọn đúng công thức theo từng hiện tượng."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dây dẫn dài 0,1 m, dòng điện 10 A, B = 0,05 T, đặt vuông góc với B. Lực từ (N):",
+      "expr": "0.05*10*0.1",
+      "answer": "0,05",
+      "explain": "F = BIL·sin90° = 0,05 · 10 · 0,1 = 0,05 N."
+    },
+    {
+      "id": "q02",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vòng dây có diện tích 40 cm² (0,004 m²) trong từ trường đều B = 0,1 T, pháp tuyến của vòng dây hợp với B góc 60°. Từ thông (Wb):",
+      "expr": "0.1*0.004*1/2",
+      "answer": "0,0002",
+      "explain": "Φ = BScos60° = 0,1 · 0,004 · 0,5 = 0,0002 Wb."
+    },
+    {
+      "id": "q03",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khung N = 200 vòng, B = 0,05 T, S = 0,01 m², ω = 50 rad/s. Suất điện động cực đại E₀ (V):",
+      "expr": "200*0.05*0.01*50",
+      "answer": "5",
+      "explain": "E₀ = NBSω = 200 · 0,05 · 0,01 · 50 = 5 V."
+    },
+    {
+      "id": "q04",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Máy biến áp có N₁ = 500 vòng, N₂ = 50 vòng, U₁ = 220 V. Điện áp thứ cấp U₂ (V):",
+      "expr": "220*50/500",
+      "answer": "22",
+      "explain": "U₂ = U₁·N₂/N₁ = 220 · 50/500 = 22 V."
+    },
+    {
+      "id": "q05",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lực từ F = 0,043 N tác dụng lên đoạn dây dài 0,1 m, dòng 10 A, cảm ứng từ B = 0,05 T. Giá trị sinα là:",
+      "expr": "43/50",
+      "answer": "0,86",
+      "explain": "sinα = F/(BIL) = 0,043/(0,05 · 10 · 0,1) = 0,043/0,05 = 0,86."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi từ thông qua vòng dây tăng, dòng điện cảm ứng có tác dụng:",
+      "choices": [
+        "Chống lại sự tăng của từ thông, làm vòng dây đẩy ra xa nam châm khi nam châm lại gần",
+        "Làm tăng thêm từ thông",
+        "Làm từ thông bằng 0 ngay lập tức",
+        "Không có tác dụng gì"
+      ],
+      "answer": 0,
+      "explain": "Theo định luật Lenz, dòng cảm ứng chống lại sự biến thiên của từ thông.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Dòng cảm ứng không làm tăng biến thiên từ thông.",
+        "2": "Từ thông không bằng 0 ngay lập tức.",
+        "3": "Dòng cảm ứng luôn có tác dụng theo định luật Lenz."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Trong thí nghiệm đo lực từ bằng cân điện tử, lực từ được xác định dựa trên:",
+      "choices": [
+        "Sự thay đổi số chỉ của cân do lực từ tác dụng lên khung dây",
+        "Điện áp trên nguồn",
+        "Nhiệt độ của nam châm",
+        "Thời gian đo"
+      ],
+      "answer": 0,
+      "explain": "Lực từ tác dụng lên đoạn dây làm số chỉ cân thay đổi; từ số chỉ suy ra lực từ.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Điện áp nguồn không quyết định trực tiếp lực từ đo được.",
+        "2": "Nhiệt độ không phải đại lượng đo trực tiếp.",
+        "3": "Thời gian đo không liên quan."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Theo quy tắc bàn tay trái, lực từ tác dụng lên đoạn dây dẫn vuông góc với B có chiều phụ thuộc vào:",
+      "choices": [
+        "Chiều dòng điện và chiều của B",
+        "Chỉ chiều của B",
+        "Chỉ chiều dòng điện",
+        "Khối lượng dây"
+      ],
+      "answer": 0,
+      "explain": "Chiều lực từ phụ thuộc cả chiều dòng điện và chiều của B, xác định theo quy tắc bàn tay trái.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chiều lực còn phụ thuộc chiều dòng điện.",
+        "2": "Chiều lực còn phụ thuộc chiều B.",
+        "3": "Khối lượng dây không ảnh hưởng đến chiều lực từ."
+      }
+    }
+  ]
+}

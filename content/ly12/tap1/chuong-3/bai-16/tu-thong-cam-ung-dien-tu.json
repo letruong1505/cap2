@@ -1,0 +1,178 @@
+{
+  "id": "bai-16",
+  "grade": 12,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 12",
+  "chapter": "Chương III. Từ trường",
+  "lesson": "Bài 16. Từ thông. Hiện tượng cảm ứng điện từ",
+  "section": "",
+  "bookPage": 66,
+  "theory": [
+    {
+      "type": "formula",
+      "content": "Φ = B·S·cosα"
+    },
+    {
+      "type": "text",
+      "content": "Từ thông Φ qua diện tích S đặt trong từ trường đều B, với α là góc giữa vectơ pháp tuyến của S và B. Đơn vị từ thông là vêbe (Wb); 1 Wb = 1 T·m². Từ thông biểu diễn số đường sức từ xuyên qua diện tích S."
+    },
+    {
+      "type": "text",
+      "content": "Khi từ thông qua cuộn dây dẫn kín biến thiên thì trong cuộn dây xuất hiện dòng điện cảm ứng. Hiện tượng này gọi là hiện tượng cảm ứng điện từ, chỉ tồn tại trong khoảng thời gian từ thông biến thiên."
+    },
+    {
+      "type": "text",
+      "content": "Định luật Lenz: dòng điện cảm ứng có chiều sao cho từ trường do nó sinh ra chống lại sự biến thiên của từ thông ban đầu qua mạch kín."
+    },
+    {
+      "type": "formula",
+      "content": "|e| = N·|ΔΦ/Δt|"
+    },
+    {
+      "type": "text",
+      "content": "Định luật Faraday: độ lớn suất điện động cảm ứng trong mạch kín tỉ lệ với tốc độ biến thiên của từ thông qua mạch. Với cuộn dây có N vòng, e = −N·ΔΦ/Δt."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn vị của từ thông trong hệ SI là:",
+      "choices": [
+        "Vêbe (Wb)",
+        "Tesla (T)",
+        "Ampe (A)",
+        "Niutơn (N)"
+      ],
+      "answer": 0,
+      "explain": "Từ thông có đơn vị vêbe (Wb), với 1 Wb = 1 T·m².",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Tesla là đơn vị cảm ứng từ.",
+        "2": "Ampe là đơn vị cường độ dòng điện.",
+        "3": "Niutơn là đơn vị lực."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Từ thông qua khung dây bằng 0 khi:",
+      "choices": [
+        "α = 90°, tức B song song với mặt phẳng khung",
+        "α = 0°",
+        "Khung dây quay quanh trục bất kì",
+        "B luôn bằng 0"
+      ],
+      "answer": 0,
+      "explain": "Khi α = 90°, cosα = 0 nên Φ = 0.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Khi α = 0°, cosα = 1 nên Φ = BS > 0.",
+        "2": "Từ thông phụ thuộc vào góc α, không phải chuyển động bất kì.",
+        "3": "B khác 0 thì Φ có thể khác 0."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hiện tượng cảm ứng điện từ xuất hiện trong mạch kín khi:",
+      "choices": [
+        "Từ thông qua mạch kín biến thiên",
+        "Từ thông qua mạch không đổi",
+        "Mạch kín đứng yên trong từ trường đều không đổi",
+        "Không có nguồn điện"
+      ],
+      "answer": 0,
+      "explain": "Dòng điện cảm ứng xuất hiện khi từ thông qua mạch kín biến thiên.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Từ thông không đổi thì không có dòng điện cảm ứng.",
+        "2": "Mạch đứng yên trong từ trường không đổi không có dòng cảm ứng.",
+        "3": "Dòng cảm ứng không cần nguồn điện riêng."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Theo định luật Lenz, dòng điện cảm ứng có chiều sao cho:",
+      "choices": [
+        "Từ trường do nó sinh ra chống lại sự biến thiên của từ thông ban đầu",
+        "Từ trường do nó sinh ra làm tăng biến thiên từ thông",
+        "Từ trường do nó sinh ra song song với dòng điện",
+        "Từ trường do nó sinh ra luôn bằng không"
+      ],
+      "answer": 0,
+      "explain": "Đây là nội dung định luật Lenz về chiều dòng điện cảm ứng.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Nếu làm tăng biến thiên thì vi phạm định luật bảo toàn năng lượng.",
+        "2": "Từ trường cảm ứng không cần song song với dòng điện.",
+        "3": "Dòng cảm ứng có từ trường khác không."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Theo định luật Faraday, độ lớn suất điện động cảm ứng tỉ lệ với:",
+      "choices": [
+        "Tốc độ biến thiên của từ thông",
+        "Từ thông tại thời điểm đó",
+        "Cường độ dòng điện",
+        "Điện trở của mạch"
+      ],
+      "answer": 0,
+      "explain": "Suất điện động cảm ứng tỉ lệ với tốc độ biến thiên của từ thông, không phải giá trị từ thông.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Từ thông lớn không đồng nghĩa suất điện động lớn nếu không biến thiên.",
+        "2": "Cường độ dòng là hệ quả, không phải nguyên nhân.",
+        "3": "Điện trở không nằm trong định luật Faraday."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cuộn dây 100 vòng, từ thông biến thiên 2 Wb trong 4 s. Độ lớn suất điện động cảm ứng (V):",
+      "expr": "100*2/4",
+      "answer": "50",
+      "explain": "|e| = N·ΔΦ/Δt = 100 · 2/4 = 50 V."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khung dây có diện tích 50 cm² (0,005 m²) đặt trong từ trường đều B = 0,1 T, α = 60°. Từ thông qua khung (Wb):",
+      "expr": "0.1*0.005*1/2",
+      "answer": "0,00025",
+      "explain": "Φ = BScos60° = 0,1 · 0,005 · 0,5 = 0,00025 Wb."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trong thí nghiệm với nam châm và cuộn dây, kim điện kế lệch khỏi vạch 0 chứng tỏ:",
+      "choices": [
+        "Có dòng điện cảm ứng trong cuộn dây",
+        "Không có từ trường",
+        "Từ thông không đổi",
+        "Cuộn dây bị đứt"
+      ],
+      "answer": 0,
+      "explain": "Kim điện kế lệch khi có dòng điện cảm ứng, do từ thông qua cuộn dây biến thiên.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Từ trường vẫn có khi nam châm di chuyển.",
+        "2": "Khi từ thông không đổi kim không lệch.",
+        "3": "Nếu đứt dây kim không lệch."
+      }
+    }
+  ]
+}
