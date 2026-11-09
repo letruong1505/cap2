@@ -310,3 +310,97 @@ button.link {
 .license-form input { flex: 1; min-width: 0; padding: 8px 10px; border: 1px solid #c9d3de; border-radius: 8px; font: inherit; }
 
 #sec-advanced.only > .advanced-title, #sec-advanced.only > .screen-sub { display: none; }
+
+/* Trò chơi: nút vào menu, thẻ trò chơi, đồng hồ, lựa chọn, ghép cặp, chuỗi ngày học. */
+.games-entry {
+  margin-top: 14px;
+  background: var(--paper); color: var(--ink); border: 1px solid var(--rule);
+  padding: 9px 16px; border-radius: 10px; font-size: 15px; font-weight: 600; cursor: pointer;
+}
+.games-entry:hover { background: #fff; border-color: var(--sky); }
+.games-entry:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; }
+
+.game-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 18px; }
+.game-card {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 6px;
+  padding: 18px 20px; background: var(--paper); border: 1px solid transparent; border-radius: 14px;
+  font-family: inherit; color: var(--ink); text-align: left; cursor: pointer;
+  transition: background-color .15s ease, border-color .15s ease;
+}
+.game-card:hover:not(:disabled) { background: #fff; border-color: var(--sky); }
+.game-card:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; }
+.game-card h3 { margin: 0; font-size: 19px; font-weight: 800; color: var(--ink); }
+.game-card .game-desc { margin: 0; font-size: 14.5px; color: #34465a; }
+.game-card .game-status-line { margin: auto 0 0; font-size: 13.5px; font-weight: 600; color: var(--sky); }
+.game-card.unavailable { cursor: default; color: #7b8a9c; }
+.game-card.unavailable .game-status-line { color: #9aa7b6; font-weight: 500; }
+
+.streak-card { display: flex; align-items: center; gap: 18px; margin-top: 18px; padding: 16px 20px; background: #fffaeb; border: 1px solid var(--marker); border-radius: 14px; }
+.streak-num { font-size: 48px; font-weight: 800; line-height: 1; color: var(--ink); min-width: 1.6ch; text-align: center; }
+.streak-label { margin: 0; font-size: 16px; font-weight: 600; color: var(--ink); }
+.streak-card .meta { margin: 2px 0 0; }
+
+.badge-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 8px; }
+.badge { display: flex; flex-direction: column; gap: 2px; padding: 12px 16px; border: 1px solid var(--rule); border-radius: 12px; color: #9aa7b6; }
+.badge b { font-size: 15px; }
+.badge span { font-size: 14px; }
+.badge.earned { background: #fffaeb; border-color: var(--marker); color: var(--ink); }
+
+.game-body { margin-top: 8px; }
+.game-hud { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 10px; }
+.timer { font-size: 28px; font-weight: 800; color: var(--ink); font-variant-numeric: tabular-nums; }
+.game-score { font-size: 17px; font-weight: 700; color: #16603a; }
+.game-stage { margin-top: 6px; }
+.game-stage > p { max-width: 68ch; color: #34465a; }
+.game-question { padding: 6px 0 4px; }
+.game-question .stem { font-weight: 600; margin-bottom: 10px; color: var(--ink); max-width: 72ch; }
+.game-question .feedback { margin-top: 12px; }
+.game-next { margin-top: 14px; }
+.game-hint { margin: 8px 0 0; font-size: 14px; color: #8a1f1f; min-height: 1em; }
+.game-input-row { display: flex; gap: 8px; align-items: center; }
+.game-input-row input { padding: 9px 12px; font-size: 16px; width: 260px; border: 1px solid #c9d3df; border-radius: 10px; }
+.game-input-row input:focus { outline: 3px solid #bcd6f2; border-color: var(--sky); }
+.game-input-row input:disabled { background: var(--paper); color: var(--mute); }
+
+.quiz-choices { display: grid; gap: 8px; max-width: 640px; }
+.quiz-choice {
+  text-align: left; padding: 10px 14px; background: #fff; color: #1d2733;
+  border: 1px solid var(--rule); border-radius: 10px; font-family: inherit; font-size: 16px; cursor: pointer;
+}
+.quiz-choice:hover:not(:disabled) { background: var(--paper); border-color: var(--sky); }
+.quiz-choice:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; }
+.quiz-choice:disabled { cursor: default; }
+.quiz-choice.is-right { border-color: #3c9a64; background: #e6f5ec; color: #16603a; font-weight: 600; }
+.quiz-choice.is-wrong { border-color: #d27a7a; background: #fdeeee; color: #8a1f1f; }
+
+.game-result { font-size: 18px; color: var(--ink); margin: 6px 0 12px; }
+.game-result b { font-size: 26px; font-weight: 800; }
+.game-actions { display: flex; gap: 14px; align-items: center; margin-top: 18px; flex-wrap: wrap; }
+.game-body .wrong-list { margin: 6px 0 0 18px; padding: 0; font-size: 15px; }
+.game-body .wrong-list li { margin-bottom: 6px; }
+
+.game-status { margin: 16px 0 0; min-height: 1.5em; font-size: 15px; color: var(--ink); }
+.pair-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.pair-head { margin: 0 0 8px; font-size: 13px; font-weight: 700; color: var(--mute); text-transform: uppercase; letter-spacing: .04em; }
+.pair-col { display: grid; gap: 8px; align-content: start; }
+.pair-btn {
+  padding: 11px 14px; background: #fff; color: var(--ink); border: 1px solid var(--rule); border-radius: 10px;
+  font-family: inherit; font-size: 17px; font-weight: 600; text-align: center; cursor: pointer;
+}
+.pair-btn:hover:not(:disabled) { background: var(--paper); border-color: var(--sky); }
+.pair-btn:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; }
+.pair-btn.selected { border-color: var(--sky); background: #eaf2fb; box-shadow: inset 0 0 0 1px var(--sky); }
+.pair-btn.matched { border-color: #3c9a64; background: #e6f5ec; color: #16603a; cursor: default; }
+.pair-btn.miss { border-color: #d27a7a; background: #fdeeee; color: #8a1f1f; }
+.pair-btn:disabled { cursor: default; }
+
+@media (max-width: 860px) {
+  .game-cards { grid-template-columns: 1fr; }
+  .badge-list { grid-template-columns: 1fr; }
+  .pair-grid { grid-template-columns: 1fr; }
+  .game-input-row input { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .game-card { transition: none; }
+}
+.badge-list + .meta { margin-top: 16px; }

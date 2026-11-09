@@ -8,7 +8,7 @@
   "scripts": {
     "start": "electron .",
     "validate": "node tools/validate-content.js",
-    "test": "node --test tests/license.test.js",
+    "test": "node --test tests/license.test.js tests/games.test.js",
     "dist:win": "electron-builder --win nsis --publish never",
     "dist:keygen": "electron-builder --win portable --config keygen/builder.json"
   },

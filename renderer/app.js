@@ -237,6 +237,8 @@ function submitAll(lesson, attempt) {
   });
   document.getElementById('btn-submit').disabled = true;
   updateScore(lesson, attempt);
+  // Nộp bài luyện tập được tính là một ngày học (chuỗi ngày học).
+  if (window.VungGames) window.VungGames.recordStudy();
 }
 
 function updateScore(lesson, attempt) {
@@ -273,7 +275,7 @@ function updateScore(lesson, attempt) {
 }
 
 function showOnly(id) {
-  for (const sec of ['launch', 'subjects', 'home', 'lesson', 'empty']) {
+  for (const sec of ['launch', 'subjects', 'home', 'lesson', 'games', 'game', 'empty']) {
     document.getElementById(sec).hidden = sec !== id;
   }
 }
@@ -308,6 +310,15 @@ function renderHome(manifest, subject) {
       ? `${total} bài. Bạn đang dùng thử: 2 bài đầu mở sẵn, các bài có ổ khoá cần kích hoạt bản quyền.`
       : `${total} bài. Chọn một bài để học lý thuyết và luyện tập.`),
   );
+  const gamesBtn = el('button', { class: 'games-entry', type: 'button' }, 'Trò chơi');
+  gamesBtn.addEventListener('click', () => window.VungGames.open({
+    subject,
+    label: SUBJECT_LABELS[subject] || '',
+    kicker: `Lớp ${currentGrade}`,
+    manifest: manifestCache[subject],
+    onBack: () => renderHome(manifestCache[subject], subject),
+  }));
+  head.append(gamesBtn);
   home.replaceChildren(back, head);
 
   for (const book of manifest.books) {
