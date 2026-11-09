@@ -1,9 +1,19 @@
 * { box-sizing: border-box; }
+button, input, select, textarea { font-family: inherit; }
+
+:root {
+  --ink: #15324e;
+  --sky: #2a6db5;
+  --paper: #f1f5fa;
+  --rule: #dbe3ec;
+  --mute: #5d6d80;
+  --marker: #ffcf3f;
+}
 
 body {
   margin: 0;
-  font-family: "Segoe UI", system-ui, sans-serif;
-  background: #f5f7fa;
+  font-family: "Be Vietnam Pro", "Segoe UI", system-ui, sans-serif;
+  background: #eef2f7;
   color: #1d2733;
   font-size: 16px;
   line-height: 1.55;
@@ -14,18 +24,19 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 12px 24px;
-  background: #1f4e79;
+  background: var(--ink);
   color: #fff;
 }
 .brand { font-weight: 700; font-size: 18px; }
-.brand .sub { font-weight: 400; opacity: 0.8; margin-left: 8px; font-size: 14px; }
+.app-version { position: fixed; right: 10px; bottom: 8px; padding: 2px 8px; border-radius: 6px; background: rgba(238, 242, 247, 0.92); font-size: 11.5px; color: #7b8a9c; pointer-events: none; user-select: none; }
+.app-version:empty { display: none; }
 
 main { padding: 24px; max-width: 900px; margin: 0 auto; }
 
 .panel {
   background: #fff;
-  border-radius: 10px;
-  padding: 24px 28px;
+  border-radius: 18px;
+  padding: 28px 32px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
@@ -88,38 +99,138 @@ button.link {
 .question.essay .stem { font-weight: 500; }
 .question .answer { font-weight: 600; color: #1f4e79; margin: 6px 0 14px; }
 
-/* Màn hình khởi động: chọn lớp, thông tin bản quyền, khu vực quảng cáo. */
-.greeting { margin: 0 0 8px; font-size: 17px; font-weight: 600; color: #1f4e79; }
-#launch h1 { margin: 0 0 16px; font-size: 24px; }
+/* Màn hình khởi động: chọn lớp, bản quyền, khóa học của Nam Linh. */
+.launch-head { margin-bottom: 20px; }
+.greeting { margin: 0 0 6px; font-size: 17px; font-weight: 600; color: var(--sky); }
+#launch h1 { margin: 0; font-size: 30px; font-weight: 800; letter-spacing: -0.01em; color: var(--ink); }
+
+/* Ô chọn lớp: con số lớn là điểm nhấn duy nhất của màn hình. */
+.grade-tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-bottom: 26px; }
+.grade-tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 18px 14px;
+  background: var(--paper);
+  border: 1px solid transparent;
+  border-radius: 16px;
+  font-family: inherit;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+  transition: background-color .15s ease, border-color .15s ease, transform .15s ease;
+}
+.grade-word { font-size: 14px; font-weight: 500; color: var(--mute); }
+.grade-num {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1;
+  margin: 2px 0 10px;
+  letter-spacing: -0.03em;
+  background: linear-gradient(transparent 62%, var(--marker) 62%) no-repeat 0 0 / 0 100%;
+  transition: background-size .2s ease;
+}
+.grade-note { font-size: 13px; color: var(--mute); }
+.grade-tile:hover:not(:disabled), .grade-tile:focus-visible {
+  background: #fff;
+  border-color: var(--rule);
+  transform: translateY(-2px);
+}
+.grade-tile:hover:not(:disabled) .grade-num, .grade-tile:focus-visible .grade-num {
+  background-size: 100% 100%;
+}
+.grade-tile:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; }
+.grade-tile:disabled { cursor: default; color: #9aa7b6; }
+
+/* Nút môn học ở màn hình chọn môn. */
 .grades { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 22px; }
 .grade {
-  background: #fff;
-  border: 2px solid #b9cde0;
-  border-radius: 12px;
+  background: var(--paper);
+  border: 1px solid transparent;
+  border-radius: 14px;
   padding: 22px 12px;
-  font: 700 20px "Segoe UI", system-ui, sans-serif;
-  color: #1f4e79;
+  font-family: inherit;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--ink);
   cursor: pointer;
+  transition: background-color .15s ease, border-color .15s ease;
 }
-.grade:hover:not(:disabled) { background: #1f4e79; color: #fff; }
-.grade:disabled { border-style: dashed; border-color: #cfd8e3; color: #8a97a8; cursor: default; }
+.grade:hover:not(:disabled) { background: #fff; border-color: var(--sky); }
+.grade:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; }
+.grade:disabled { color: #9aa7b6; cursor: default; }
+#subjects h1 { margin: 6px 0 18px; }
 #subject-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.subject-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 96px;
-  padding: 18px 16px;
-  text-align: center;
-  line-height: 1.3;
-}
+.subject-btn { display: flex; align-items: center; justify-content: center; min-height: 96px; padding: 18px 16px; text-align: center; line-height: 1.3; }
 .grade small { display: block; font-size: 13px; font-weight: 400; margin-top: 4px; }
-.lbl { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #5b6b7d; margin-bottom: 6px; }
-.info-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 22px; }
-.info-card { border: 1px solid #dde4ec; border-radius: 12px; padding: 16px 18px; background: #fbfcfe; }
-.days { font-size: 28px; font-weight: 700; color: #1f4e79; }
-.muted { color: #5b6b7d; font-size: 14px; }
-.ad-placeholder { border: 1px dashed #b9c4d1; border-radius: 12px; padding: 18px; color: #7b8898; font-size: 14px; }
+
+/* Bản quyền: một dải, không chia hai thẻ. */
+.license-bar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 200px;
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+  margin-bottom: 34px;
+}
+.license-bar > div { padding: 14px 18px; }
+.license-days { border-left: 1px solid var(--rule); }
+.license-bar h2 { margin: 0 0 4px; font-size: 13px; font-weight: 600; color: var(--mute); }
+.days { font-size: 26px; font-weight: 700; color: var(--ink); line-height: 1.2; }
+.muted { color: var(--mute); font-size: 14px; }
+
+/* Khóa học: lộ trình theo độ tuổi. */
+.ads-head { margin-bottom: 18px; }
+.ads-head h2 { margin: 0 0 2px; font-size: 21px; font-weight: 700; color: var(--ink); }
+.ads-head p { margin: 0; font-size: 14px; color: var(--mute); }
+.path { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; position: relative; }
+.path::before { content: ''; position: absolute; left: 22px; right: calc((100% - 56px) / 3 - 22px); top: 22px; height: 2px; background: var(--rule); }
+.path-step { position: relative; }
+.path-icon { width: 44px; height: 44px; display: grid; place-items: center; background: #fff; border: 2px solid var(--rule); border-radius: 50%; margin-bottom: 12px; }
+.path-icon svg { width: 26px; height: 26px; }
+.path-age { margin: 0; font-size: 13px; font-weight: 600; color: var(--sky); }
+.path-step h3 { margin: 0 0 8px; font-size: 17px; font-weight: 700; color: var(--ink); }
+.path-step ul { margin: 0; padding: 0; list-style: none; font-size: 14px; line-height: 1.75; color: #34465a; }
+.path-step li::before { content: ''; display: inline-block; width: 6px; height: 6px; border-radius: 2px; background: var(--marker); margin: 0 10px 2px 0; }
+
+.tutor {
+  display: grid;
+  grid-template-columns: auto minmax(180px, 240px) 1fr;
+  gap: 6px 18px;
+  align-items: center;
+  margin-top: 28px;
+  padding: 16px 20px;
+  background: var(--ink);
+  color: #fff;
+  border-radius: 16px;
+}
+.tutor-icon svg { width: 52px; height: 52px; display: block; }
+.tutor h3 { margin: 0; font-size: 19px; font-weight: 800; }
+.tutor p { margin: 0; font-size: 13px; color: #b9cde3; }
+.tutor ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 20px; font-size: 14px; }
+.tutor li::before { content: ''; display: inline-block; width: 6px; height: 6px; border-radius: 2px; background: var(--marker); margin: 0 10px 2px 0; }
+
+.copyright { margin-top: 34px; padding-top: 16px; border-top: 1px solid var(--rule); text-align: center; font-size: 12.5px; color: var(--mute); }
+.copyright p { margin: 0; }
+.copyright b { color: var(--ink); font-weight: 600; }
+.copyright-info { display: flex; flex-wrap: wrap; justify-content: center; gap: 2px 22px; margin-top: 6px !important; }
+
+@media (max-width: 860px) {
+  .grade-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .license-bar { grid-template-columns: 1fr; }
+  .license-days { border-left: 0; border-top: 1px solid var(--rule); }
+  .path { grid-template-columns: 1fr; gap: 22px; }
+  .path::before { content: none; }
+  .path-step:not(:last-child)::after { content: ''; position: absolute; left: 21px; top: 44px; bottom: -22px; width: 2px; background: var(--rule); }
+  .path-step { padding-left: 62px; }
+  .path-icon { position: absolute; left: 0; top: 0; }
+  .tutor { grid-template-columns: auto 1fr; }
+  .tutor ul { grid-column: 1 / -1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .grade-tile, .grade-num, .grade { transition: none; }
+  .grade-tile:hover:not(:disabled) { transform: none; }
+}
 
 .advanced-note { background: #fff4d6; border: 1px solid #f0c24b; border-radius: 6px; padding: 8px 12px; margin: 0 0 12px; }
 .level-heading.advanced { color: #b45309; border-top: 2px dashed #f0c24b; padding-top: 12px; }
@@ -127,5 +238,5 @@ button.link {
 .advanced-title { color: #b45309; border-top: 3px solid #f0c24b; padding-top: 16px; margin-top: 28px; }
 
 button.link.locked { color: #7a8796; }
-.license-form { display: flex; gap: 8px; margin-top: 10px; }
+.license-form { display: flex; gap: 8px; margin-top: 12px; }
 .license-form input { flex: 1; min-width: 0; padding: 8px 10px; border: 1px solid #c9d3de; border-radius: 8px; font: inherit; }

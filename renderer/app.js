@@ -4,13 +4,17 @@
 
 const R = window.Rational;
 
-const el = (tag, attrs = {}, text) => {
+// Tạo phần tử; các tham số sau attrs có thể là chữ hoặc phần tử con.
+const el = (tag, attrs = {}, ...children) => {
   const node = document.createElement(tag);
   for (const [k, v] of Object.entries(attrs)) {
     if (k === 'class') node.className = v;
     else node.setAttribute(k, v);
   }
-  if (text !== undefined) node.textContent = text;
+  for (const c of children) {
+    if (c === undefined || c === null) continue;
+    node.append(c instanceof Node ? c : String(c));
+  }
   return node;
 };
 
@@ -470,13 +474,14 @@ function renderGrades() {
   const box = document.getElementById('grades');
   box.replaceChildren();
   for (const g of GRADES) {
-    const btn = el('button', { class: 'grade', type: 'button' }, `Lớp ${g.grade}`);
-    if (g.available) {
-      btn.addEventListener('click', () => showSubjects(g.grade));
-    } else {
-      btn.disabled = true;
-      btn.append(el('small', {}, 'Đang biên soạn'));
-    }
+    const btn = el('button', { class: 'grade-tile', type: 'button', 'aria-label': `Lớp ${g.grade}` });
+    btn.append(
+      el('span', { class: 'grade-word' }, 'Lớp'),
+      el('span', { class: 'grade-num' }, String(g.grade)),
+      el('span', { class: 'grade-note' }, g.available ? `${(GRADE_SUBJECTS[g.grade] || []).length} môn học` : 'Đang biên soạn'),
+    );
+    if (g.available) btn.addEventListener('click', () => showSubjects(g.grade));
+    else btn.disabled = true;
     box.append(btn);
   }
 }
@@ -507,7 +512,7 @@ function showSubjects(grade) {
 async function init() {
   try {
     const info = await window.vungBai.appInfo();
-    document.getElementById('build').textContent = `v${info.version} · ${info.commit}`;
+    document.getElementById('build').textContent = `Phiên bản ${info.version} (${info.commit})`;
   } catch {
     // Không hiện số phiên bản nếu không đọc được; không ảnh hưởng luồng chính.
   }
