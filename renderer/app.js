@@ -312,7 +312,8 @@ function renderHome(manifest, subject) {
   );
   // Trò chơi chỉ dành cho bản đã kích hoạt; bản dùng thử thì hiện ổ khoá.
   const gamesBtn = el('button', { class: 'games-entry', type: 'button' }, 'Trò chơi');
-  if (lastLicense.status !== 'ok') {
+  const gamesOpen = subjectLicensed(lastLicense, subject);
+  if (!gamesOpen) {
     gamesBtn.classList.add('locked');
     const lock = el('span', { class: 'games-lock', 'aria-hidden': 'true' });
     lock.innerHTML = LOCK_SVG;
@@ -320,8 +321,10 @@ function renderHome(manifest, subject) {
     gamesBtn.setAttribute('aria-label', 'Trò chơi (cần bản quyền)');
   }
   gamesBtn.addEventListener('click', () => {
-    if (lastLicense.status !== 'ok') {
-      window.alert('Trò chơi cần kích hoạt bản quyền. Bản dùng thử chỉ có bài học.\nVề màn hình chọn lớp để nhập khoá kích hoạt.');
+    if (!subjectLicensed(lastLicense, subject)) {
+      window.alert(lastLicense.status === 'ok'
+        ? 'Khoá hiện tại không bao gồm môn/lớp này. Trò chơi của môn này cần khoá riêng.'
+        : 'Trò chơi cần kích hoạt bản quyền. Bản dùng thử chỉ có bài học.\nVề màn hình chọn lớp để nhập khoá kích hoạt.');
       return;
     }
     window.VungGames.open({
@@ -500,6 +503,14 @@ const LICENSE_MESSAGES = {
 };
 
 let lastLicense = { status: 'missing' };
+
+// Khoá chỉ mở môn của đúng các lớp trong khoá (grades = 'all' hoặc danh sách lớp), giống main/license/index.js.
+function subjectLicensed(license, subject) {
+  if (!license || license.status !== 'ok') return false;
+  if (license.grades === 'all') return true;
+  const grade = Number(String(subject).match(/(\d+)$/)?.[1]);
+  return Array.isArray(license.grades) && license.grades.includes(grade);
+}
 
 function gradesText(grades) {
   return grades === 'all' ? 'Tất cả các lớp' : 'Lớp ' + grades.join(', ');
