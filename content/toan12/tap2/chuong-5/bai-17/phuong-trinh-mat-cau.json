@@ -1,0 +1,383 @@
+{
+  "id": "t12-t2-chuong5-bai17-phuong-trinh-mat-cau",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 12, tập 2",
+  "chapter": "Chương V. Phương pháp toạ độ trong không gian",
+  "lesson": "Bài 17. Phương trình mặt cầu",
+  "section": "1. Phương trình mặt cầu; 2. Một số ứng dụng trong thực tiễn; Bài tập",
+  "bookPage": 54,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Mặt cầu (S) tâm I(a; b; c) bán kính R > 0 có phương trình (x − a)² + (y − b)² + (z − c)² = R²."
+    },
+    {
+      "type": "text",
+      "content": "Phương trình x² + y² + z² − 2ax − 2by − 2cz + d = 0 là phương trình mặt cầu khi và chỉ khi a² + b² + c² − d > 0. Khi đó mặt cầu có tâm I(a; b; c) và bán kính R = √(a² + b² + c² − d)."
+    },
+    {
+      "type": "text",
+      "content": "Điểm M nằm trong mặt cầu khi IM < R, nằm ngoài mặt cầu khi IM > R, thuộc mặt cầu khi IM = R."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Ví dụ 1: Mặt cầu (S): (x − 1)² + (y + 3)² + z² = 5 có tâm và bán kính là?",
+      "proof": true,
+      "steps": [
+        "Tâm I(1; −3; 0), bán kính R = √5.",
+        "OI² = 1 + 9 = 10 > 5 nên O nằm ngoài mặt cầu."
+      ]
+    },
+    {
+      "problem": "Ví dụ 2b: Mặt cầu đường kính AB với A(1; 2; 1), B(3; 1; 5).",
+      "proof": true,
+      "steps": [
+        "Tâm là trung điểm J(2; 3/2; 3), R = AB/2 = √21/2.",
+        "(S): (x − 2)² + (y − 3/2)² + (z − 3)² = 21/4."
+      ]
+    },
+    {
+      "problem": "Ví dụ 3: Chứng minh x² + y² + z² − 2x + 4y − 6z − 2 = 0 là mặt cầu, xác định tâm và bán kính.",
+      "proof": true,
+      "steps": [
+        "Viết lại: (x − 1)² + (y + 2)² + (z − 3)² = 16.",
+        "Tâm I(1; −2; 3), bán kính R = 4."
+      ]
+    },
+    {
+      "problem": "Ví dụ 4: Trong các phương trình sau, phương trình nào là phương trình mặt cầu?",
+      "proof": true,
+      "steps": [
+        "a) a = 1, b = −3/2, c = 4, d = 100: a² + b² + c² − d < 0, không phải mặt cầu.",
+        "b) a = 2, b = −5/2, c = 1, d = −3/4: a² + b² + c² − d = 12 > 0, là mặt cầu tâm (2; −5/2; 1), R = 2√3.",
+        "c) Có số hạng −2xy nên không phải mặt cầu."
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 1: mặt cầu (x − 1)² + (y + 3)² + z² = 5 có tâm và bán kính là?",
+      "choices": [
+        "I(1; −3; 0), R = √5",
+        "I(−1; 3; 0), R = √5",
+        "I(1; −3; 0), R = 5",
+        "I(1; 3; 0), R = √5"
+      ],
+      "answer": 0,
+      "explain": "Viết dạng (x − a)² + (y − b)² + (z − c)² = R² với a = 1, b = −3, c = 0 và R² = 5.",
+      "wrong_explain": {
+        "1": "Tâm có tọa độ đối dấu: phải là (1; −3; 0).",
+        "2": "R² = 5 nên R = √5, không phải 5.",
+        "3": "Tọa độ y của tâm là −3, không phải 3."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ví dụ 1b: bình phương khoảng cách OI² từ O(0; 0; 0) đến tâm I(1; −3; 0) bằng?",
+      "expr": "(0-1)*(0-1)+(0+3)*(0+3)+0",
+      "answer": "10",
+      "explain": "OI² = 1 + 9 = 10 > 5 = R² nên O nằm ngoài mặt cầu."
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Luyện tập 1b: bình phương khoảng cách từ M(2; 0; 1) đến tâm I(−2; 0; −1/2) bằng?",
+      "expr": "(2+2)*(2+2)+(1+1/2)*(1+1/2)",
+      "answer": "73/4",
+      "explain": "MI² = 16 + 9/4 = 73/4 > 9/4 = R² nên M nằm ngoài mặt cầu."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 2a: mặt cầu tâm I(3/2; 0; −3), bán kính R = 9/4 có phương trình là?",
+      "choices": [
+        "(x − 3/2)² + y² + (z + 3)² = 81/16",
+        "(x + 3/2)² + y² + (z − 3)² = 81/16",
+        "(x − 3/2)² + y² + (z + 3)² = 9/4",
+        "(x − 3/2)² + y² + (z − 3)² = 81/16"
+      ],
+      "answer": 0,
+      "explain": "(x − 3/2)² + (y − 0)² + (z + 3)² = (9/4)² = 81/16.",
+      "wrong_explain": {
+        "1": "Tâm có dấu sai: phải là (3/2; 0; −3).",
+        "2": "Vế phải phải là R² = 81/16, không phải 9/4.",
+        "3": "Tọa độ z của tâm là −3 nên thành phần là (z + 3)²."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 2b: mặt cầu đường kính AB với A(1; 2; 1), B(3; 1; 5) có phương trình là?",
+      "choices": [
+        "(x − 2)² + (y − 3/2)² + (z − 3)² = 21/4",
+        "(x − 2)² + (y − 3/2)² + (z − 3)² = 21",
+        "(x − 2)² + (y − 3/2)² + (z − 3)² = 7/2",
+        "(x − 2)² + (y − 3/2)² + (z − 3)² = √21/2"
+      ],
+      "answer": 0,
+      "explain": "Tâm là trung điểm J(2; 3/2; 3), R = AB/2 = √21/2, R² = 21/4.",
+      "wrong_explain": {
+        "1": "Quên chia đôi: R² phải là 21/4, không phải 21.",
+        "2": "Tính sai bình phương bán kính: AB² = 21 nên R² = 21/4.",
+        "3": "Bán kính R = √21/2 nên R² = 21/4; đây là bán kính, không phải bình phương."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 2a: mặt cầu tâm là gốc tọa độ, bán kính R = 1 có phương trình là?",
+      "choices": [
+        "x² + y² + z² = 1",
+        "x² + y² + z² = 2",
+        "(x − 1)² + y² + z² = 1",
+        "x + y + z = 1"
+      ],
+      "answer": 0,
+      "explain": "Tâm O(0; 0; 0), R = 1 nên x² + y² + z² = 1.",
+      "wrong_explain": {
+        "1": "Vế phải phải là R² = 1, không phải 2.",
+        "2": "Tâm là O nên không có (x − 1)².",
+        "3": "Đây là phương trình mặt phẳng, không phải mặt cầu."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Luyện tập 2b: bình phương bán kính của mặt cầu đường kính AB với A(1; −1; 2), B(2; −3; −1) là R² = AB²/4. Giá trị R² bằng?",
+      "expr": "((2-1)*(2-1)+(-3+1)*(-3+1)+(-1-2)*(-1-2))/4",
+      "answer": "7/2",
+      "explain": "AB² = 1 + 4 + 9 = 14 nên R² = 14/4 = 7/2; phương trình (x − 3/2)² + (y + 2)² + (z − 1/2)² = 7/2."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ví dụ 3: với x² + y² + z² − 2x + 4y − 6z − 2 = 0, bình phương bán kính R² = a² + b² + c² − d (a = 1, b = −2, c = 3, d = −2) bằng?",
+      "expr": "1*1+(-2)*(-2)+3*3-(-2)",
+      "answer": "16",
+      "explain": "R² = 1 + 4 + 9 + 2 = 16 nên R = 4."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Luyện tập 3: với x² + y² + z² − 4x + 6y − 12 = 0, bình phương bán kính R² bằng?",
+      "expr": "2*2+(-3)*(-3)+0*0-(-12)",
+      "answer": "25",
+      "explain": "Tâm I(2; −3; 0), R² = 4 + 9 + 0 + 12 = 25, nên R = 5."
+    },
+    {
+      "id": "q10",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 4: trong các phương trình sau, phương trình nào là phương trình mặt cầu?",
+      "choices": [
+        "x² + y² + z² − 4x + 5y − 2z − 3/4 = 0",
+        "x² + y² + z² − 2x + 3y − 8z + 100 = 0",
+        "x² + y² + z² − 2xy + 6y − 9z + 10 = 0",
+        "Cả ba đều là mặt cầu"
+      ],
+      "answer": 0,
+      "explain": "Với a = 2, b = −5/2, c = 1, d = −3/4 ta có a² + b² + c² − d = 12 > 0 nên là mặt cầu tâm (2; −5/2; 1), R = 2√3.",
+      "wrong_explain": {
+        "1": "Với d = 100: a² + b² + c² − d = 1 + 9/4 + 16 − 100 < 0, không phải mặt cầu.",
+        "2": "Có số hạng −2xy nên không phải phương trình mặt cầu.",
+        "3": "Phương trình thứ hai và thứ ba không phải mặt cầu."
+      }
+    },
+    {
+      "id": "q11",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Luyện tập 4: mặt cầu x² + y² + z² + 4x − 5y + 6z + 25/4 = 0 có bình phương bán kính R² bằng?",
+      "expr": "(-2)*(-2)+(5/2)*(5/2)+(-3)*(-3)-25/4",
+      "answer": "13",
+      "explain": "Tâm I(−2; 5/2; −3), R² = 4 + 25/4 + 9 − 25/4 = 13."
+    },
+    {
+      "id": "q12",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ví dụ 4b: bình phương bán kính của mặt cầu ở câu b bằng?",
+      "expr": "2*2+(5/2)*(5/2)+1*1+3/4",
+      "answer": "12",
+      "explain": "a² + b² + c² − d = 4 + 25/4 + 1 + 3/4 = 12, R = 2√3."
+    },
+    {
+      "id": "q13",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 5: khoảng cách trên mặt đất từ P(10°N, 15°E) đến Q(80°N, 70°E) xấp xỉ bao nhiêu? (bán kính Trái Đất 6371 km)",
+      "choices": [
+        "khoảng 8 271 km",
+        "khoảng 5 800 km",
+        "khoảng 6 371 km",
+        "khoảng 4 500 km"
+      ],
+      "answer": 0,
+      "explain": "cos(POQ) ≈ 0,2691 nên góc POQ ≈ 74,39°; cung nhỏ PQ có độ dài ≈ 1,2983 đơn vị, nhân 6371 km được ≈ 8 271 km.",
+      "wrong_explain": {
+        "1": "5 800 km không khớp góc POQ ≈ 74,39°.",
+        "2": "6 371 km là bán kính Trái Đất, không phải khoảng cách giữa hai vị trí.",
+        "3": "4 500 km không khớp góc POQ ≈ 74,39°."
+      }
+    },
+    {
+      "id": "q14",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 5: khoảng cách trên mặt đất từ A (giao kinh tuyến gốc với xích đạo) đến B(45°N, 30°E) xấp xỉ?",
+      "choices": [
+        "khoảng 5 800 km",
+        "khoảng 6 371 km",
+        "khoảng 8 271 km",
+        "khoảng 4 500 km"
+      ],
+      "answer": 0,
+      "explain": "A(1; 0; 0), B(√6/4; √2/4; √2/2), cos(AOB) = √6/4 ≈ 0,6124, góc ≈ 52,2°; nhân với 6371 km ta được khoảng 5 800 km.",
+      "wrong_explain": {
+        "1": "Bán kính Trái Đất không phải khoảng cách giữa A và B.",
+        "2": "8 271 km ứng với hai vị trí khác (P, Q ở Ví dụ 5).",
+        "3": "4 500 km không khớp góc ≈ 52,2°."
+      }
+    },
+    {
+      "id": "q15",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 6 (GPS): vị trí P(0; 3/4; √7/4) trên mặt đất có vĩ độ α và kinh độ β là?",
+      "choices": [
+        "≈ 41,4°N, 90°E",
+        "≈ 48,6°N, 90°E",
+        "≈ 41,4°N, 0°E",
+        "≈ 90°N, 41,4°E"
+      ],
+      "answer": 0,
+      "explain": "x = cos α cos β = 0 nên cos β = 0, β = 90° (E); z = sin α = √7/4 nên α ≈ 41,4°N.",
+      "wrong_explain": {
+        "1": "48,6° = 90° − 41,4° là sai: sin α = √7/4 cho α ≈ 41,4°.",
+        "2": "Nếu β = 0 thì x = cos α ≠ 0, không khớp tọa độ P.",
+        "3": "Hai thành phần vĩ độ và kinh độ bị đổi chỗ."
+      }
+    },
+    {
+      "id": "q16",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 5.25: mặt cầu (x − 1/2)² + (y + 1)² + z² = 9 có tâm và bán kính là?",
+      "choices": [
+        "I(1/2; −1; 0), R = 3",
+        "I(−1/2; 1; 0), R = 3",
+        "I(1/2; −1; 0), R = 9",
+        "I(1/2; 1; 0), R = 3"
+      ],
+      "answer": 0,
+      "explain": "Tâm I(1/2; −1; 0), R² = 9 nên R = 3.",
+      "wrong_explain": {
+        "1": "Tâm đổi dấu cả hoành độ và tung độ: phải là (1/2; −1; 0).",
+        "2": "R² = 9 nên R = 3, không phải 9.",
+        "3": "Tung độ của tâm là −1 vì (y + 1)² có dạng (y − (−1))²."
+      }
+    },
+    {
+      "id": "q17",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 5.26: mặt cầu có tâm I(−2; 0; 5), bán kính R = 2 có phương trình là?",
+      "choices": [
+        "(x + 2)² + y² + (z − 5)² = 4",
+        "(x − 2)² + y² + (z + 5)² = 4",
+        "(x + 2)² + y² + (z − 5)² = 2",
+        "(x + 2)² + y² + (z − 5)² = 16"
+      ],
+      "answer": 0,
+      "explain": "Thay tâm (−2; 0; 5) và R² = 4.",
+      "wrong_explain": {
+        "1": "Tâm có dấu sai: phải là (−2; 0; 5).",
+        "2": "Vế phải là R² = 4, không phải 2.",
+        "3": "Vế phải là R² = 4, không phải 16."
+      }
+    },
+    {
+      "id": "q18",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bài 5.27: mặt cầu có tâm I(0; 3; −1), bán kính bằng khoảng cách từ I đến (P): 3x + 2y − z = 0. Bình phương bán kính R² bằng?",
+      "expr": "7*7/14",
+      "answer": "7/2",
+      "explain": "d(I, (P)) = |0 + 6 + 1| / √14 = 7/√14, R² = 49/14 = 7/2."
+    },
+    {
+      "id": "q19",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 5.28: mặt cầu x² + y² + z² + 2x − 2y + 8z − 18 = 0 có bình phương bán kính R² bằng?",
+      "expr": "(-1)*(-1)+1*1+(-4)*(-4)+18",
+      "answer": "36",
+      "explain": "Tâm I(−1; 1; −4), R² = 1 + 1 + 16 + 18 = 36, R = 6."
+    },
+    {
+      "id": "q20",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 5.29: trong các phương trình sau, phương trình nào là phương trình mặt cầu?",
+      "choices": [
+        "x² + y² + z² − 4x + 2y − 2z = 0",
+        "x² + y² + z² − 2x − 5z + 30 = 0",
+        "x³ + y³ + z³ − 2x + 6y − 9z − 10 = 0",
+        "x² + y² + z² + 5 = 0"
+      ],
+      "answer": 0,
+      "explain": "a = 2, b = −1, c = 1, d = 0: a² + b² + c² − d = 6 > 0, là mặt cầu tâm (2; −1; 1), R = √6.",
+      "wrong_explain": {
+        "1": "Với d = 30: a² + b² + c² − d = 1 + 25/4 − 30 < 0, không phải mặt cầu.",
+        "2": "Phương trình bậc ba không phải phương trình mặt cầu.",
+        "3": "a² + b² + c² − d = −5 < 0, không có điểm nào thỏa mãn nên không phải mặt cầu."
+      }
+    },
+    {
+      "id": "q21",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 5.30: thiết bị phát sóng tại A(2; 0; 0), bán kính phủ sóng 1. Điểm M(2; 1; 1) có thuộc vùng phủ sóng không?",
+      "choices": [
+        "Không, vì AM² = 2 > 1",
+        "Có, vì AM = 1",
+        "Có, vì M thuộc mặt cầu",
+        "Không, vì M nằm trên trục Oz"
+      ],
+      "answer": 0,
+      "explain": "AM² = 0 + 1 + 1 = 2 > 1 = R² nên M nằm ngoài vùng phủ sóng.",
+      "wrong_explain": {
+        "1": "AM = √2 ≠ 1 nên M không nằm trên mặt cầu.",
+        "2": "AM² = 2 ≠ 1 nên không thuộc mặt cầu.",
+        "3": "M không nằm trên trục Oz; lý do này không đúng."
+      }
+    }
+  ]
+}
