@@ -31,6 +31,7 @@ jobs:
           node -e "const fs=require('fs'); const info={version:'1.0.'+process.env.RUN_NUMBER, commit:process.env.COMMIT_SHA.slice(0,7)}; fs.writeFileSync('main/build-info.json', JSON.stringify(info)); console.log(JSON.stringify(info))"
 
       - name: Set package version from run number
+        shell: bash
         env:
           RUN_NUMBER: ${{ github.run_number }}
         run: npm pkg set version="1.0.$RUN_NUMBER"
