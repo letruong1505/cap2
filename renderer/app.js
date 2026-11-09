@@ -310,14 +310,28 @@ function renderHome(manifest, subject) {
       ? `${total} bài. Bạn đang dùng thử: 2 bài đầu mở sẵn, các bài có ổ khoá cần kích hoạt bản quyền.`
       : `${total} bài. Chọn một bài để học lý thuyết và luyện tập.`),
   );
+  // Trò chơi chỉ dành cho bản đã kích hoạt; bản dùng thử thì hiện ổ khoá.
   const gamesBtn = el('button', { class: 'games-entry', type: 'button' }, 'Trò chơi');
-  gamesBtn.addEventListener('click', () => window.VungGames.open({
-    subject,
-    label: SUBJECT_LABELS[subject] || '',
-    kicker: `Lớp ${currentGrade}`,
-    manifest: manifestCache[subject],
-    onBack: () => renderHome(manifestCache[subject], subject),
-  }));
+  if (lastLicense.status !== 'ok') {
+    gamesBtn.classList.add('locked');
+    const lock = el('span', { class: 'games-lock', 'aria-hidden': 'true' });
+    lock.innerHTML = LOCK_SVG;
+    gamesBtn.append(lock);
+    gamesBtn.setAttribute('aria-label', 'Trò chơi (cần bản quyền)');
+  }
+  gamesBtn.addEventListener('click', () => {
+    if (lastLicense.status !== 'ok') {
+      window.alert('Trò chơi cần kích hoạt bản quyền. Bản dùng thử chỉ có bài học.\nVề màn hình chọn lớp để nhập khoá kích hoạt.');
+      return;
+    }
+    window.VungGames.open({
+      subject,
+      label: SUBJECT_LABELS[subject] || '',
+      kicker: `Lớp ${currentGrade}`,
+      manifest: manifestCache[subject],
+      onBack: () => renderHome(manifestCache[subject], subject),
+    });
+  });
   head.append(gamesBtn);
   home.replaceChildren(back, head);
 

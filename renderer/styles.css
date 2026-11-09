@@ -404,3 +404,6 @@ button.link {
   .game-card { transition: none; }
 }
 .badge-list + .meta { margin-top: 16px; }
+.games-entry.locked { color: #6b7a8c; }
+.games-lock { display: inline-flex; margin-left: 6px; vertical-align: -2px; }
+.games-lock svg { width: 13px; height: 13px; }
