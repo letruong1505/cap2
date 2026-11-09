@@ -1,0 +1,497 @@
+{
+  "id": "t12-chuong2-bai8-bieu-thuc-toa-do",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 12, tập 1",
+  "chapter": "Chương II. Vectơ và hệ trục toạ độ trong không gian",
+  "lesson": "Bài 8. Biểu thức toạ độ của các phép toán vectơ",
+  "section": "Phần 1: Biểu thức toạ độ của phép cộng, trừ, nhân với một số; Phần 2: Biểu thức toạ độ của tích vô hướng; Phần 3: Vận dụng toạ độ vectơ trong bài toán thực tiễn",
+  "bookPage": 67,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Trong không gian Oxyz, cho a = (x; y; z) và b = (x'; y'; z'): a + b = (x + x'; y + y'; z + z'), a − b = (x − x'; y − y'; z − z'), ka = (kx; ky; kz) với k là số thực. Vectơ a cùng phương với b ≠ 0 khi và chỉ khi tồn tại số thực k sao cho x = kx', y = ky', z = kz'."
+    },
+    {
+      "type": "text",
+      "content": "Nếu M(x_M; y_M; z_M) là trung điểm của AB thì M = ((x_A + x_B)/2; (y_A + y_B)/2; (z_A + z_B)/2). Trọng tâm G của tam giác ABC có G = ((x_A + x_B + x_C)/3; (y_A + y_B + y_C)/3; (z_A + z_B + z_C)/3)."
+    },
+    {
+      "type": "text",
+      "content": "Tích vô hướng: nếu a = (x; y; z) và b = (x'; y'; z') thì a·b = xx' + yy' + zz'. Hai vectơ khác 0 vuông góc khi và chỉ khi a·b = 0."
+    },
+    {
+      "type": "text",
+      "content": "Độ dài vectơ: |a| = √(x² + y² + z²). Khoảng cách giữa A(x_A; y_A; z_A) và B(x_B; y_B; z_B): AB = √((x_B − x_A)² + (y_B − y_A)² + (z_B − z_A)²). Góc giữa hai vectơ khác 0: cos(a, b) = (xx' + yy' + zz')/(√(x² + y² + z²)·√(x'² + y'² + z'²))."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho a = (2; 1; 5) và b = (2; 2; 1). Tìm toạ độ của a − b và 3a + 2b.",
+      "steps": [
+        "a − b = (2 − 2; 1 − 2; 5 − 1) = (0; −1; 4).",
+        "3a = (6; 3; 15), 2b = (4; 4; 2), 3a + 2b = (10; 7; 17)."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Cho A(1; 2; 3), B(3; 2; 1), C(2; −1; 5). Tìm toạ độ trung điểm M của AB và trọng tâm G của tam giác ABC.",
+      "proof": true,
+      "steps": [
+        "M = ((1 + 3)/2; (2 + 2)/2; (3 + 1)/2) = (2; 2; 2).",
+        "G = ((1 + 3 + 2)/3; (2 + 2 − 1)/3; (3 + 1 + 5)/3) = (2; 1; 3)."
+      ]
+    },
+    {
+      "problem": "Cho a = (1; 4; 2) và b = (−4; 1; 0). Chứng minh a và b vuông góc và tính |a|.",
+      "expr": "1*(-4)+4*1+2*0",
+      "answer": "0",
+      "steps": [
+        "a·b = 1·(−4) + 4·1 + 2·0 = 0 nên a ⊥ b.",
+        "|a| = √(1² + 4² + 2²) = √21."
+      ]
+    },
+    {
+      "problem": "Hình chóp S.ABCD có đáy là hình chữ nhật, SA ⊥ (ABCD), SA = 2, AB = 3, AD = 4. Chọn A làm gốc, các tia AB, AD, AS làm các tia Ox, Oy, Oz. Tìm toạ độ các điểm S, A, B, C, D và tính BD, SC, (BD, SC).",
+      "proof": true,
+      "steps": [
+        "A(0; 0; 0), B(3; 0; 0), D(0; 4; 0), S(0; 0; 2), C(3; 4; 0).",
+        "BD = (−3; 4; 0), |BD| = 5; SC = (3; 4; −2), |SC| = √29.",
+        "cos(BD, SC) = (−9 + 16 + 0)/(5√29) = 7/(5√29) nên góc ≈ 74,9°."
+      ]
+    },
+    {
+      "problem": "Máy bay đi từ A(800; 500; 7) đến B(940; 550; 8) trong 10 phút, giữ nguyên vận tốc và hướng bay. Toạ độ máy bay sau 5 phút tiếp theo là?",
+      "proof": true,
+      "steps": [
+        "AB = (140; 50; 1), BC = (1/2)AB = (70; 25; 0,5) vì thời gian từ B đến C bằng một nửa thời gian từ A đến B.",
+        "C = B + BC = (1010; 575; 8,5)."
+      ]
+    },
+    {
+      "problem": "Hai khinh khí cầu có toạ độ (2; 1; 0,5) và (−1; −1,5; 0,8) (đơn vị km). Khoảng cách giữa chúng (làm tròn đến chữ số thập phân thứ hai) là bao nhiêu?",
+      "proof": true,
+      "steps": [
+        "AB = (−3; −2,5; 0,3), |AB|² = 9 + 6,25 + 0,09 = 15,34.",
+        "|AB| = √15,34 ≈ 3,92 km."
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 1: u = (1; 8; 6), v = (−1; 3; −2), w = (0; 5; 4). Toạ độ của u − 2v + w là?",
+      "choices": [
+        "(3; 7; 14)",
+        "(−1; 2; 8)",
+        "(3; 7; 6)",
+        "(3; 14; 7)"
+      ],
+      "answer": 0,
+      "explain": "u − 2v + w = (1 + 2 + 0; 8 − 6 + 5; 6 + 4 + 4) = (3; 7; 14).",
+      "wrong_explain": {
+        "1": "Dấu của −2v bị tính sai.",
+        "2": "Thành phần thứ ba phải là 6 + 4 + 4 = 14.",
+        "3": "Thứ tự toạ độ bị đổi."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 2: A(2; 9; −1), B(9; 4; 5), G(3; 0; 4) là trọng tâm tam giác ABC. Toạ độ C là?",
+      "choices": [
+        "(−2; −13; 8)",
+        "(4; 13; −8)",
+        "(−2; 13; 8)",
+        "(2; −13; 8)"
+      ],
+      "answer": 0,
+      "explain": "C = 3G − A − B = (9 − 2 − 9; 0 − 9 − 4; 12 + 1 − 5) = (−2; −13; 8).",
+      "wrong_explain": {
+        "1": "Dấu của toạ độ C bị đảo.",
+        "2": "Thành phần thứ hai phải âm: 0 − 9 − 4 = −13.",
+        "3": "Thành phần thứ nhất phải là −2."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 3: vectơ a = (1; 4; 2), b = (−4; 1; 0). Quan hệ của a và b là?",
+      "choices": [
+        "Vuông góc với nhau",
+        "Cùng phương",
+        "Bằng nhau",
+        "Tạo góc 60°"
+      ],
+      "answer": 0,
+      "explain": "a·b = 1·(−4) + 4·1 + 2·0 = 0 nên a ⊥ b.",
+      "wrong_explain": {
+        "1": "Hai vectơ không cùng phương (a không tỉ lệ với b).",
+        "2": "Hai vectơ không bằng nhau.",
+        "3": "Tích vô hướng bằng 0 nên góc là 90°."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ví dụ 3: độ dài của vectơ a = (1; 4; 2) bình phương bằng?",
+      "expr": "1*1+4*4+2*2",
+      "answer": "21",
+      "explain": "|a|² = 1 + 16 + 4 = 21, nên |a| = √21."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Luyện tập 3: (a + b)² với a = (1; 4; 2), b = (−4; 1; 0) bằng?",
+      "expr": "(-3)*(-3)+5*5+2*2",
+      "answer": "38",
+      "explain": "a + b = (−3; 5; 2), |a + b|² = 9 + 25 + 4 = 38."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ví dụ 4: tích vô hướng BD·SC với BD = (−3; 4; 0), SC = (3; 4; −2) bằng?",
+      "expr": "(-3)*3+4*4+0*(-2)",
+      "answer": "7",
+      "explain": "BD·SC = −9 + 16 + 0 = 7."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 4: độ dài SC với S(0; 0; 2), C(3; 4; 0) là?",
+      "choices": [
+        "√29",
+        "5",
+        "√21",
+        "√13"
+      ],
+      "answer": 0,
+      "explain": "SC = (3; 4; −2), |SC| = √(9 + 16 + 4) = √29.",
+      "wrong_explain": {
+        "1": "5 là độ dài BD, không phải SC.",
+        "2": "√21 không phải độ dài SC.",
+        "3": "√13 không phải kết quả."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 4: tam giác ABC với A(0; 2; 1), B(3; −2; 1), C(−2; 5; 7). Chu vi tam giác là?",
+      "choices": [
+        "12 + √110",
+        "12 + √114",
+        "5 + 7 + √110 − 1",
+        "√22 + 12"
+      ],
+      "answer": 0,
+      "explain": "AB = 5, CA = 7, BC = √110. Chu vi = 12 + √110 ≈ 22,49.",
+      "wrong_explain": {
+        "1": "BC = √(25 + 49 + 36) = √110, không phải √114.",
+        "2": "Tổng sai: AB + CA = 12 và BC = √110.",
+        "3": "Không đúng với các độ dài đã tính."
+      }
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 4 (b): góc BAC của tam giác A(0; 2; 1), B(3; −2; 1), C(−2; 5; 7) (làm tròn đến độ) là?",
+      "choices": [
+        "≈ 121°",
+        "≈ 60°",
+        "≈ 90°",
+        "≈ 54°"
+      ],
+      "answer": 0,
+      "explain": "AB = (3; −4; 0), AC = (−2; 3; 6), AB·AC = −18, cos BAC = −18/35 nên BAC ≈ 120,9°.",
+      "wrong_explain": {
+        "1": "cos BAC khác 0 nên không vuông.",
+        "2": "Góc BAC không phải 90°.",
+        "3": "Đây là góc ABC khác, không phải BAC."
+      }
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 4 (c): góc giữa hai vectơ BD và SC (làm tròn đến 0,1°) là?",
+      "choices": [
+        "≈ 74,9°",
+        "≈ 45°",
+        "≈ 60°",
+        "≈ 15,1°"
+      ],
+      "answer": 0,
+      "explain": "cos(BD, SC) = 7/(5√29) ≈ 0,260, nên góc ≈ 74,9°.",
+      "wrong_explain": {
+        "1": "Góc 45° không khớp cos = 0,260.",
+        "2": "cos 60° = 0,5 khác 0,260.",
+        "3": "Góc này không phải góc giữa BD và SC."
+      }
+    },
+    {
+      "id": "q11",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 6 (Luyện tập 6): góc α giữa mặt bên và mặt đất của căn nhà gỗ (A'B' = (−120; 0; 300), A'O' = (−240; 0; 0)) là?",
+      "choices": [
+        "≈ 68,2°",
+        "≈ 21,8°",
+        "≈ 45°",
+        "≈ 74,9°"
+      ],
+      "answer": 0,
+      "explain": "cos α = 120/√104400 nên α ≈ 68,2°.",
+      "wrong_explain": {
+        "1": "21,8° là góc phụ của góc đúng.",
+        "2": "Tam giác không cân ở góc này.",
+        "3": "Không khớp với tỉ số 300/120."
+      }
+    },
+    {
+      "id": "q12",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 7: khinh khí cầu thứ nhất (2; 1; 0,5) hay thứ hai (−1; −1,5; 0,8), chiếc nào ở xa điểm xuất phát O hơn?",
+      "choices": [
+        "Chiếc thứ nhất (≈ 2,29 km so với ≈ 1,97 km)",
+        "Chiếc thứ hai",
+        "Hai chiếc cách O bằng nhau",
+        "Không thể xác định"
+      ],
+      "answer": 0,
+      "explain": "|OM₁| = √(4 + 1 + 0,25) ≈ 2,29 km; |OM₂| = √(1 + 2,25 + 0,64) ≈ 1,97 km.",
+      "wrong_explain": {
+        "1": "Với 1,97 < 2,29, chiếc thứ hai gần O hơn.",
+        "2": "Hai khoảng cách khác nhau.",
+        "3": "Có thể tính trực tiếp bằng công thức độ dài."
+      }
+    },
+    {
+      "id": "q13",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 5 (Luyện tập 5): máy bay ở B(940; 550; 8) đi thêm 10 phút nữa (với cùng vận tốc và hướng). Toạ độ là?",
+      "choices": [
+        "(1080; 600; 9)",
+        "(1010; 575; 8,5)",
+        "(1080; 600; 8)",
+        "(1150; 650; 9)"
+      ],
+      "answer": 0,
+      "explain": "Trong 10 phút, vectơ dịch chuyển = 2·BC = (140; 50; 1), nên toạ độ là (940 + 140; 550 + 50; 8 + 1) = (1080; 600; 9).",
+      "wrong_explain": {
+        "1": "Đây là toạ độ sau 5 phút tiếp theo, không phải 10 phút.",
+        "2": "Thành phần z phải cộng thêm 1.",
+        "3": "Dịch chuyển trong 10 phút là (140; 50; 1), không phải (210; 100; 2)."
+      }
+    },
+    {
+      "id": "q14",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 2.20a: a + b + c với a = (3; 1; 2), b = (−3; 0; 4), c = (6; −1; 0) có thành phần thứ nhất bằng?",
+      "expr": "3-3+6",
+      "answer": "6",
+      "explain": "a + b + c = (3 − 3 + 6; 1 + 0 − 1; 2 + 4 + 0) = (6; 0; 6)."
+    },
+    {
+      "id": "q15",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 2.20b: a·(−b) với a = (3; 1; 2), b = (−3; 0; 4) bằng?",
+      "expr": "-(3*(-3)+1*0+2*4)",
+      "answer": "1",
+      "explain": "a·(−b) = −(−9 + 0 + 8) = 1."
+    },
+    {
+      "id": "q16",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 2.20b: (2a)·c với a = (3; 1; 2), c = (6; −1; 0) bằng?",
+      "expr": "2*(3*6+1*(-1)+2*0)",
+      "answer": "34",
+      "explain": "(2a)·c = 2(18 − 1 + 0) = 34."
+    },
+    {
+      "id": "q17",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.21a: M(−4; 3; 3), N(4; −4; 2), P(3; 6; −1). Ba điểm M, N, P có thẳng hàng không?",
+      "choices": [
+        "Không, vì MN = (8; −7; −1) và MP = (7; 3; −4) không cùng phương",
+        "Có, vì M, N, P nằm trên một đường thẳng",
+        "Có, vì MN = MP",
+        "Không, vì MN = −MP"
+      ],
+      "answer": 0,
+      "explain": "MN = (8; −7; −1) và MP = (7; 3; −4) không tỉ lệ nên không cùng phương, do đó M, N, P không thẳng hàng.",
+      "wrong_explain": {
+        "1": "Hai vectơ không tỉ lệ nên không cùng phương.",
+        "2": "MN ≠ MP vì toạ độ khác nhau.",
+        "3": "MN và MP không đối nhau."
+      }
+    },
+    {
+      "id": "q18",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.21b: điểm Q để MNPQ là hình bình hành có toạ độ là?",
+      "choices": [
+        "(−5; 13; 0)",
+        "(5; −13; 0)",
+        "(−5; −13; 0)",
+        "(5; 13; 0)"
+      ],
+      "answer": 0,
+      "explain": "Q = M + P − N = (−4 + 3 − 4; 3 + 6 + 4; 3 − 1 − 2) = (−5; 13; 0).",
+      "wrong_explain": {
+        "1": "Dấu của Q bị đảo.",
+        "2": "Thành phần thứ hai phải dương: 3 + 6 + 4 = 13.",
+        "3": "Thành phần thứ nhất phải âm: −4 + 3 − 4 = −5."
+      }
+    },
+    {
+      "id": "q19",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.21c: chu vi hình bình hành MNPQ (làm tròn đến 0,01) là?",
+      "choices": [
+        "≈ 42,33",
+        "≈ 22,49",
+        "≈ 21,16",
+        "≈ 10,68"
+      ],
+      "answer": 0,
+      "explain": "Chu vi = 2(MN + NP) = 2(√114 + √110) ≈ 42,33.",
+      "wrong_explain": {
+        "1": "Đây là độ dài một cặp cạnh, chưa nhân 2.",
+        "2": "Đó là chu vi tam giác khác.",
+        "3": "Chỉ là một cạnh, không phải chu vi."
+      }
+    },
+    {
+      "id": "q20",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.22a: trọng tâm G của tam giác ABC với A(1; 0; 1), B(0; −3; 1), C(4; −1; 4) là?",
+      "choices": [
+        "(5/3; −4/3; 2)",
+        "(5; −4; 6)",
+        "(5/3; −4/3; 6/3)",
+        "(1; −1; 2)"
+      ],
+      "answer": 0,
+      "explain": "G = ((1 + 0 + 4)/3; (0 − 3 − 1)/3; (1 + 1 + 4)/3) = (5/3; −4/3; 2).",
+      "wrong_explain": {
+        "1": "Chưa chia cho 3 nên không phải trọng tâm.",
+        "2": "Thành phần thứ ba phải là (1 + 1 + 4)/3 = 2.",
+        "3": "Toạ độ G không phải (1; −1; 2)."
+      }
+    },
+    {
+      "id": "q21",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.22b: chứng minh góc BAC = 90°: AB = (−1; −3; 0), AC = (3; −1; 3). Tích vô hướng AB·AC là?",
+      "choices": [
+        "0",
+        "−3",
+        "10",
+        "6"
+      ],
+      "answer": 0,
+      "explain": "AB·AC = −3 + 3 + 0 = 0 nên BAC = 90°.",
+      "wrong_explain": {
+        "1": "Tích không bằng −3.",
+        "2": "Tích không bằng 10.",
+        "3": "Tích không bằng 6."
+      }
+    },
+    {
+      "id": "q22",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.22c: góc ABC của tam giác với A(1; 0; 1), B(0; −3; 1), C(4; −1; 4) là?",
+      "choices": [
+        "≈ 54,0°",
+        "≈ 90°",
+        "≈ 36,9°",
+        "≈ 120°"
+      ],
+      "answer": 0,
+      "explain": "BA = (1; 3; 0), BC = (4; 2; 3); cos ABC = 10/(√10·√29) ≈ 0,587 nên ABC ≈ 54,0°.",
+      "wrong_explain": {
+        "1": "Góc ABC không vuông (tích vô hướng khác 0).",
+        "2": "36,9° không khớp với cos = 0,587.",
+        "3": "120° không phải góc ABC."
+      }
+    },
+    {
+      "id": "q23",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.23: phòng học 8 m × 6 m × 3 m, O ở một góc, trục Ox dọc 8 m, Oy dọc 6 m, Oz thẳng đứng. Đèn treo chính giữa trần nhà, toạ độ đèn là?",
+      "choices": [
+        "(4; 3; 3)",
+        "(4; 3; 0)",
+        "(8; 6; 3)",
+        "(2; 3; 3)"
+      ],
+      "answer": 0,
+      "explain": "Chính giữa trần nhà là (8/2; 6/2; 3) = (4; 3; 3).",
+      "wrong_explain": {
+        "1": "Đèn treo ở trần (z = 3), không phải sàn.",
+        "2": "Đây là đỉnh đối diện, không phải chính giữa.",
+        "3": "Toạ độ x phải là 4 (giữa 8 m), không phải 2."
+      }
+    },
+    {
+      "id": "q24",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 2.24: radar tại gốc O có phạm vi 30 km. Tàu thám hiểm ở (25; 15; −10). Radar có phát hiện được không?",
+      "choices": [
+        "Không, vì khoảng cách ≈ 30,82 km > 30 km",
+        "Có, vì khoảng cách ≈ 28 km",
+        "Có, vì khoảng cách đúng bằng 30 km",
+        "Không, vì toạ độ z âm"
+      ],
+      "answer": 0,
+      "explain": "OM = √(625 + 225 + 100) = √950 ≈ 30,82 km > 30 km nên radar không phát hiện được.",
+      "wrong_explain": {
+        "1": "Khoảng cách không phải 28 km.",
+        "2": "√950 không bằng 30.",
+        "3": "Toạ độ z âm không làm radar mất tín hiệu theo đề bài; lý do là khoảng cách lớn hơn 30 km."
+      }
+    }
+  ]
+}
