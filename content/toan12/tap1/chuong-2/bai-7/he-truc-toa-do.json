@@ -15,7 +15,12 @@
     },
     {
       "type": "text",
-      "content": "Với điểm M bất kì, bộ ba số (x; y; z) duy nhất sao cho OM = xi + yj + zk được gọi là toạ độ của M; viết M = (x; y; z). Với hình hộp chữ nhật OABC.O'A'B'C' với A, B, C thuộc các tia Ox, Oy, Oz, ta có OM = OA + OB + OC nên toạ độ là độ dài các cạnh tương ứng."
+      "content": "Với điểm M bất kì, bộ ba số (x; y; z) duy nhất sao cho OM = xi + yj + zk được gọi là toạ độ của M; viết M = (x; y; z). Nếu M là đỉnh đối diện O của hình hộp chữ nhật OABC.O'A'B'C' với A, B, C thuộc các tia Ox, Oy, Oz thì OM = OA + OB + OC, nên toạ độ của M là độ dài các cạnh tương ứng."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/c2-7-he-truc-oxyz.svg",
+      "caption": "Hệ toạ độ Oxyz: điểm M có toạ độ (x; y; z) khi OM = xi + yj + zk."
     },
     {
       "type": "text",
@@ -37,7 +42,8 @@
       "steps": [
         "Các cạnh B'A', B'C', B'B đôi một vuông góc và cùng có độ dài 1, cùng xuất phát từ B'.",
         "Vậy có thể lập hệ toạ độ như vậy."
-      ]
+      ],
+      "figure": "figures/c2-6-hinh-lap-phuong.svg"
     },
     {
       "problem": "Hình 2.38: ABCM.FODE là hình hộp chữ nhật (các cạnh trên các trục, độ dài 3, 4, 3). Tìm toạ độ điểm M.",
@@ -45,7 +51,8 @@
       "steps": [
         "Áp dụng quy tắc hình hộp: OM = OF + OD + OB = 3i + 4j + 3k.",
         "Vậy M = (3; 4; 3)."
-      ]
+      ],
+      "figure": "figures/c2-7-hinh-2-38.svg"
     },
     {
       "problem": "Cho hình hộp chữ nhật ABCD.A'B'C'D' có đỉnh A' trùng gốc O và các đỉnh D', B', A thuộc các tia Ox, Oy, Oz. Biết C(2; 3; 5), tìm toạ độ các đỉnh D', B', A.",
@@ -53,7 +60,8 @@
       "steps": [
         "OD' = 2i, OB' = 3j, OA = 5k vì C = D' + B' + A (theo quy tắc hình hộp).",
         "Vậy D'(2; 0; 0), B'(0; 3; 0), A(0; 0; 5)."
-      ]
+      ],
+      "figure": "figures/c2-7-hinh-2-40.svg"
     },
     {
       "problem": "Trong không gian Oxyz, cho A(1; 0; 2), B(3; 2; 5), C(7; −3; 9), A'(5; 0; 1) như Hình 2.42 (ABC.A'B'C' là hình lăng trụ). Tìm toạ độ AA', B', C'.",
@@ -62,7 +70,8 @@
         "AA' = (5 − 1; 0 − 0; 1 − 2) = (4; 0; −1).",
         "BB' = AA' nên B' = B + (4; 0; −1) = (7; 2; 4).",
         "CC' = AA' nên C' = C + (4; 0; −1) = (11; −3; 8)."
-      ]
+      ],
+      "figure": "figures/c2-7-hinh-2-42.svg"
     }
   ],
   "items": [
@@ -359,7 +368,7 @@
       "level": "Hiểu",
       "type": "mcq",
       "concept": true,
-      "stem": "Luyện tập 5: để ABCD.A'B'C'D' là hình hộp, đỉnh D có toạ độ?",
+      "stem": "Cho A(1; 0; 2), B(3; 2; 5), C(7; −3; 9) là ba đỉnh của hình bình hành ABCD. Toạ độ đỉnh D là?",
       "choices": [
         "(5; −5; 6)",
         "(5; 5; 6)",
@@ -379,7 +388,7 @@
       "level": "Hiểu",
       "type": "mcq",
       "concept": true,
-      "stem": "Luyện tập 5: để ABCD.A'B'C'D' là hình hộp, đỉnh D' có toạ độ?",
+      "stem": "Cho A(1; 0; 2), B(3; 2; 5), C(7; −3; 9), A'(5; 0; 1) và ABCD.A'B'C'D' là hình hộp. Toạ độ đỉnh D' là?",
       "choices": [
         "(9; −5; 5)",
         "(5; −5; 6)",
@@ -419,19 +428,19 @@
       "level": "Hiểu",
       "type": "mcq",
       "concept": true,
-      "stem": "Bài 2.13: ba vectơ a, b, c khác 0, đôi một vuông góc. Mệnh đề nào đúng?",
+      "stem": "Ba vectơ a, b, c khác 0 đôi một vuông góc. Khẳng định nào đúng?",
       "choices": [
-        "a, b, d đúng; c sai",
-        "Chỉ c đúng",
-        "a và c đúng",
-        "Chỉ d đúng"
+        "Có thể chọn hệ trục Oxyz sao cho i, j, k cùng phương với a, b, c tương ứng",
+        "Với mọi hệ trục Oxyz, i, j, k đều cùng phương với a, b, c",
+        "Luôn có |a| = |b| = |c| = 1",
+        "Ba vectơ đôi một vuông góc không thể tồn tại"
       ],
       "answer": 0,
-      "explain": "(a) và (b) đúng vì có thể chọn hệ trục song song hoặc trùng với giá. (d) đúng khi i, j, k cùng phương với a, b, c. (c) sai vì i, j, k có độ dài 1 còn a, b, c không nhất thiết.",
+      "explain": "Vì a, b, c đôi một vuông góc nên có thể chọn hệ trục Oxyz có các trục trùng giá của a, b, c (sau khi chuẩn hoá để i, j, k có độ dài 1). Độ dài của a, b, c không nhất thiết bằng 1.",
       "wrong_explain": {
-        "1": "(c) không đúng vì cần độ dài bằng 1.",
-        "2": "(c) sai.",
-        "3": "(a), (b), (d) đều đúng."
+        "1": "Hệ trục đã chọn có i, j, k cố định; không phải mọi hệ trục đều có i, j, k cùng phương với a, b, c.",
+        "2": "Độ dài của a, b, c không nhất thiết bằng 1.",
+        "3": "Ba vectơ đôi một vuông góc hoàn toàn tồn tại, chẳng hạn ba cạnh xuất phát từ một đỉnh của hình hộp chữ nhật."
       }
     },
     {
@@ -623,7 +632,7 @@
       "level": "Vận dụng",
       "type": "mcq",
       "concept": true,
-      "stem": "Vận dụng 1 (tình huống mở đầu, Hình 2.34): chọn gốc O tại chân hai bức tường trên sàn, Ox dọc theo bức tường cách bóng đèn 1,5 m, Oy dọc theo bức tường cách bóng đèn 1 m, Oz thẳng đứng. Toạ độ bóng đèn là?",
+      "stem": "Bóng đèn treo cách mặt phẳng (Oyz) 1,5 m, cách mặt phẳng (Oxz) 1 m và cách sàn (Oxy) 2 m. Toạ độ bóng đèn là? (đơn vị m)",
       "choices": [
         "(1,5; 1; 2)",
         "(1; 1,5; 2)",
@@ -631,9 +640,9 @@
         "(1; 2; 1,5)"
       ],
       "answer": 0,
-      "explain": "Khoảng cách từ bóng đèn đến mặt phẳng (Oyz) là 1,5 m nên x = 1,5; đến mặt phẳng (Oxz) là 1 m nên y = 1; độ cao so với sàn (Oxy) là 2 m nên z = 2. Toạ độ là (1,5; 1; 2). Đổi vai trò Ox, Oy sẽ cho đáp số khác, nên đề cần nêu rõ quy ước.",
+      "explain": "Khoảng cách đến (Oyz) là 1,5 m nên x = 1,5; đến (Oxz) là 1 m nên y = 1; độ cao so với sàn (Oxy) là 2 m nên z = 2. Toạ độ là (1,5; 1; 2).",
       "wrong_explain": {
-        "1": "Đổi vai trò x và y: đề quy ước x = 1,5 m, y = 1 m nên (1; 1,5; 2) không đúng theo quy ước.",
+        "1": "Đổi vai trò x và y: x là khoảng cách đến (Oyz) nên x = 1,5, không phải 1.",
         "2": "Độ cao là z = 2, không phải x = 2; và y = 1 chứ không phải 1,5 hay 2.",
         "3": "Độ cao 2 m phải là toạ độ z; (1; 2; 1,5) đặt sai cả độ cao lẫn khoảng cách."
       },

@@ -49,7 +49,8 @@
       "steps": [
         "Thiết diện song song với đáy có diện tích không đổi S(x) = S.",
         "V = ∫_0^h S dx = Sh."
-      ]
+      ],
+      "answer": "V = Sh"
     },
     {
       "problem": "Ví dụ 6: Tính thể tích khối chóp đều có đáy là hình vuông cạnh L và chiều cao h.",
@@ -57,14 +58,16 @@
       "steps": [
         "Thiết diện tại x có diện tích S(x) = (L²/h²)x².",
         "V = ∫_0^h (L²/h²)x²dx = L²h/3."
-      ]
+      ],
+      "answer": "V = L²h/3"
     },
     {
       "problem": "Ví dụ 7: Tính thể tích khối tròn xoay sinh ra khi quay quanh Ox hình phẳng giới hạn bởi y = √x, trục hoành, x = 0, x = 1.",
       "proof": true,
       "steps": [
         "V = π∫_0^1 (√x)²dx = π∫_0^1 x dx = π/2."
-      ]
+      ],
+      "answer": "V = π/2"
     }
   ],
   "items": [
@@ -425,7 +428,7 @@
       "level": "Hiểu",
       "type": "mcq",
       "concept": true,
-      "stem": "Bài 4.19a: thể tích khối tròn xoay B sinh ra khi quay tam giác OAB (OA = a trên Ox, góc AOB = α) quanh Ox là?",
+      "stem": "Bài 4.19a: thể tích khối tròn xoay B sinh ra khi quay tam giác OAB vuông tại A (OA = a trên Ox, góc AOB = α) quanh Ox là?",
       "choices": [
         "πa³tan²α/3",
         "πa³tan α/3",
@@ -473,7 +476,7 @@
         "≈ 4118,6"
       ],
       "answer": 0,
-      "explain": "S = ∫_0^100 [x − f(x)]dx = 5000 − ∫_0^100 f(x)dx ≈ 5000 − 2940,69 ≈ 2059,3. Lưu ý: hằng số trong hàm số là 1,723 (dấu cách trong sách là dấu phẩy thập phân), vì khi đó f(100) ≈ 100,06 khớp với điểm cuối (100; 100).",
+      "explain": "S = ∫_0^100 [x − f(x)]dx = 5000 − ∫_0^100 f(x)dx ≈ 5000 − 2940,69 ≈ 2059,3. Kiểm tra: f(100) ≈ 100,06, khớp với điểm cuối (100; 100) của đường Lorenz.",
       "wrong_explain": {
         "1": "2940,7 là ∫_0^100 f(x)dx, phần diện tích dưới đường Lorenz, không phải diện tích giữa hai đường.",
         "2": "5000 là diện tích tam giác dưới đường y = x, không trừ phần dưới đường cong Lorenz.",
@@ -487,13 +490,13 @@
       "concept": true,
       "stem": "4.35: mặt trong bình gốm là mặt tròn xoay sinh ra khi quay đồ thị y = x²/175 + 3x/35 + 5 (0 ≤ x ≤ 30, đơn vị cm) quanh Ox. Độ dày không đổi 1 cm. Thể tích đất sét cần dùng là?",
       "choices": [
-        "510π ≈ 1602,1 cm³",
+        "510π ≈ 1602,2 cm³",
         "255π ≈ 801,1 cm³",
         "240π ≈ 754,0 cm³",
         "30π ≈ 94,2 cm³"
       ],
       "answer": 0,
-      "explain": "Mặt ngoài có bán kính f(x) + 1, nên thể tích đất sét V = π∫_0^30 [(f + 1)² − f²]dx = π∫_0^30 (2f + 1)dx. Với ∫_0^30 f dx = 240 và ∫_0^30 dx = 30: V = π(480 + 30) = 510π ≈ 1602,1 cm³.",
+      "explain": "Mặt ngoài có bán kính f(x) + 1, nên thể tích đất sét V = π∫_0^30 [(f + 1)² − f²]dx = π∫_0^30 (2f + 1)dx. Với ∫_0^30 f dx = 240 và ∫_0^30 dx = 30: V = π(480 + 30) = 510π ≈ 1602,2 cm³.",
       "wrong_explain": {
         "1": "Quên hệ số 2 trong (f + 1)² − f² = 2f + 1, nên kết quả bị chia đôi phần chính.",
         "2": "240π là π∫f dx, chỉ tính phần tích phân của f, thiếu phần độ dày π∫dx = 30π.",

@@ -18,12 +18,22 @@
       "content": "Từ thông Φ qua diện tích S đặt trong từ trường đều B, với α là góc giữa vectơ pháp tuyến của S và B. Đơn vị từ thông là vêbe (Wb); 1 Wb = 1 T·m². Từ thông biểu diễn số đường sức từ xuyên qua diện tích S."
     },
     {
+      "type": "figure",
+      "figure": "figures/c-ly12-b16-tu-thong.svg",
+      "caption": "Từ thông phụ thuộc góc α giữa pháp tuyến n và B."
+    },
+    {
       "type": "text",
       "content": "Khi từ thông qua cuộn dây dẫn kín biến thiên thì trong cuộn dây xuất hiện dòng điện cảm ứng. Hiện tượng này gọi là hiện tượng cảm ứng điện từ, chỉ tồn tại trong khoảng thời gian từ thông biến thiên."
     },
     {
       "type": "text",
       "content": "Định luật Lenz: dòng điện cảm ứng có chiều sao cho từ trường do nó sinh ra chống lại sự biến thiên của từ thông ban đầu qua mạch kín."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/c-ly12-b16-cam-ung.svg",
+      "caption": "Nam châm đưa lại gần cuộn dây kín, điện kế G chỉ dòng cảm ứng."
     },
     {
       "type": "formula",
@@ -140,7 +150,7 @@
       "id": "q06",
       "level": "Biết",
       "type": "fill",
-      "stem": "Cuộn dây 100 vòng, từ thông biến thiên 2 Wb trong 4 s. Độ lớn suất điện động cảm ứng (V):",
+      "stem": "Cuộn dây 100 vòng, từ thông qua cuộn biến thiên một lượng 2 Wb trong thời gian 4 s. Độ lớn suất điện động cảm ứng (V):",
       "expr": "100*2/4",
       "answer": "50",
       "explain": "|e| = N·ΔΦ/Δt = 100 · 2/4 = 50 V."
@@ -149,7 +159,7 @@
       "id": "q07",
       "level": "Vận dụng",
       "type": "fill",
-      "stem": "Khung dây có diện tích 50 cm² (0,005 m²) đặt trong từ trường đều B = 0,1 T, α = 60°. Từ thông qua khung (Wb):",
+      "stem": "Khung dây có diện tích 50 cm² (0,005 m²) đặt trong từ trường đều B = 0,1 T. Góc α giữa vectơ pháp tuyến của khung và B là 60°. Từ thông qua khung (Wb):",
       "expr": "0.1*0.005*1/2",
       "answer": "0,00025",
       "explain": "Φ = BScos60° = 0,1 · 0,005 · 0,5 = 0,00025 Wb."

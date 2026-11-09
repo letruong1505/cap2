@@ -62,7 +62,8 @@
       "steps": [
         "∫_0^{π/6} cos t dt = sin(π/6) − sin 0 = 1/2.",
         "∫_1^2 2^x dx = 2²/ln 2 − 2/ln 2 = 2/ln 2."
-      ]
+      ],
+      "answer": "1/2; 2/ln 2"
     },
     {
       "problem": "Ví dụ 4a: Dùng ý nghĩa hình học, tính ∫_0^1 (x + 1)dx.",
@@ -450,7 +451,7 @@
       "id": "q29",
       "level": "Vận dụng",
       "type": "fill",
-      "stem": "Bài 4.12a: lợi nhuận tăng khi doanh số từ 100 lên 101 là ∫_100^101 P'(x)dx (triệu đồng) bằng?",
+      "stem": "Bài 4.12a: lợi nhuận tăng khi doanh số từ 100 lên 101 là ∫_100^101 P'(x)dx (triệu đồng), với P'(x) = −0,0005x + 12,2 bằng?",
       "expr": "(-0.00025*101*101+12.2*101)-(-0.00025*100*100+12.2*100)",
       "answer": "48599/4000",
       "explain": "P(x) = −0,00025x² + 12,2x + C; ΔP = 12,14975 ≈ 12,15 triệu đồng."
@@ -459,7 +460,7 @@
       "id": "q30",
       "level": "Vận dụng",
       "type": "fill",
-      "stem": "Bài 4.12b: lợi nhuận tăng khi doanh số từ 100 lên 110 là ∫_100^110 P'(x)dx (triệu đồng) bằng?",
+      "stem": "Bài 4.12b: lợi nhuận tăng khi doanh số từ 100 lên 110 là ∫_100^110 P'(x)dx (triệu đồng), với P'(x) = −0,0005x + 12,2 bằng?",
       "expr": "(-0.00025*110*110+12.2*110)-(-0.00025*100*100+12.2*100)",
       "answer": "4859/40",
       "explain": "ΔP = 121,475 triệu đồng."
@@ -488,7 +489,7 @@
       "id": "q32",
       "level": "Vận dụng",
       "type": "fill",
-      "stem": "Tình huống mở đầu: quãng đường ô tô đi được từ lúc đạp phanh đến khi dừng hẳn với v(t) = −40t + 20 (m) là?",
+      "stem": "Tình huống mở đầu: quãng đường ô tô đi được từ lúc đạp phanh đến khi dừng hẳn với v(t) = −40t + 20 (m/s), t tính từ lúc đạp phanh. Quãng đường đi được là?",
       "expr": "-20*0.5*0.5+20*0.5",
       "answer": "5",
       "explain": "Ô tô dừng khi t = 0,5 s; quãng đường = ∫_0^{0,5}(−40t + 20)dt = 5 (m)."

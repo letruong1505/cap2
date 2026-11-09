@@ -138,7 +138,7 @@
       "id": "q08",
       "level": "Hiểu",
       "type": "fill",
-      "stem": "Số lượng sản phẩm của một sản phẩm mới theo mô hình logistic f(t) = 5000/(1 + 5e^(−t)) (t là năm). Đạo hàm f'(t) lớn nhất khi t = ? (năm, làm tròn đến hai chữ số, ghi số nguyên gần nhất)",
+      "stem": "Số lượng sản phẩm của một sản phẩm mới theo mô hình logistic f(t) = 5000/(1 + 5e^(−t)) (t là năm). Đạo hàm f'(t) lớn nhất khi t = ? (năm, làm tròn đến số nguyên gần nhất)",
       "expr": "2",
       "answer": "2",
       "explain": "f'(t) đạt lớn nhất khi f''(t) = 0, tức e^(−t) = 1/5, t = ln 5 ≈ 1,61 năm. Số nguyên gần nhất là 2 năm."
@@ -718,7 +718,7 @@
         "r = 1000/π cm"
       ],
       "answer": 0,
-      "explain": "C'(r) = 4,8πr − 1500/r² = 0 khi r³ = 625/(2π), tức r ≈ 4,63 cm. Chiều cao h = 1000/(πr²) ≈ 14,82 cm.",
+      "explain": "C'(r) = 4,8πr − 1500/r² = 0 khi r³ = 625/(2π), tức r ≈ 4,63 cm. Chiều cao h = 1000/(πr²) ≈ 14,83 cm.",
       "wrong_explain": {
         "1": "Với r = 5 cm, chi phí C'(5) ≠ 0 nên đó không phải điểm cực tiểu.",
         "2": "Với r = 2 cm, C'(2) < 0: chi phí còn giảm khi tăng r.",
@@ -848,7 +848,7 @@
       "level": "Vận dụng",
       "type": "mcq",
       "concept": true,
-      "stem": "Bài 1.28: người quản lí nên đặt giá thuê mỗi căn hộ là bao nhiêu để doanh thu lớn nhất?",
+      "stem": "Bài 1.28: một tòa nhà có 100 căn hộ cho thuê. Giá thuê 8 triệu đồng/tháng thì cho thuê hết 100 căn; cứ tăng giá thêm 0,1 triệu đồng/tháng thì số căn cho thuê giảm 1 căn. Người quản lí nên đặt giá thuê mỗi căn hộ là bao nhiêu để doanh thu lớn nhất?",
       "choices": [
         "8 triệu đồng/tháng",
         "9 triệu đồng/tháng",
@@ -867,7 +867,7 @@
       "id": "q54",
       "level": "Hiểu",
       "type": "fill",
-      "stem": "Bài 1.29a: với p = 240 (nghìn đồng), số đơn vị sản phẩm bán được x là?",
+      "stem": "Bài 1.29a: giá bán p (nghìn đồng) và số đơn vị sản phẩm bán được x thỏa mãn p(1 + 0,01x) = 354. Với p = 240, x bằng bao nhiêu?",
       "expr": "100*(354-240)/240",
       "answer": "47.5",
       "explain": "Từ p = 354/(1 + 0,01x) suy ra x = 100(354 − p)/p. Thay p = 240: x = 100 · 114/240 = 47,5."
@@ -877,7 +877,7 @@
       "level": "Hiểu",
       "type": "mcq",
       "concept": true,
-      "stem": "Bài 1.29a: công thức x theo p và tập xác định của hàm số này là?",
+      "stem": "Bài 1.29a: với p(1 + 0,01x) = 354 (p là giá bán nghìn đồng, x là số đơn vị bán được), công thức x theo p và tập xác định của hàm số này là?",
       "choices": [
         "x = 100(354 − p)/p, tập xác định (0; 354]",
         "x = 354/p − 1, tập xác định ℝ",
@@ -897,7 +897,7 @@
       "level": "Hiểu",
       "type": "mcq",
       "concept": true,
-      "stem": "Bài 1.29b: khi giá bán p tăng thì số lượng bán được x thay đổi thế nào?",
+      "stem": "Bài 1.29b: với p(1 + 0,01x) = 354 (p là giá bán, x là số đơn vị bán được), khi giá bán p tăng thì x thay đổi thế nào?",
       "choices": [
         "Giảm dần",
         "Tăng dần",
@@ -1037,7 +1037,7 @@
       "level": "Hiểu",
       "type": "mcq",
       "concept": true,
-      "stem": "Bài 1.35: khẳng định nào đúng?",
+      "stem": "Bài 1.35: cho hàm số f(x) = (2x² − 2x − 4)/(x² + x − 6). Khẳng định nào đúng?",
       "choices": [
         "Đường thẳng x = 2 là tiệm cận đứng",
         "Đường thẳng y = 2 là tiệm cận ngang",
@@ -1045,9 +1045,9 @@
         "Đường thẳng x = 2 là tiệm cận ngang"
       ],
       "answer": 1,
-      "explain": "Giới hạn tại x = 2 hữu hạn (bằng 1) nên không có tiệm cận đứng; lim_{x→±∞} f(x) = 2 nên y = 2 là tiệm cận ngang.",
+      "explain": "Phân tích tử và mẫu: f(x) = 2(x − 2)(x + 1)/((x − 2)(x + 3)) = 2(x + 1)/(x + 3) với x ≠ 2. Giới hạn tại x = 2 hữu hạn (bằng 6/5) nên x = 2 không phải tiệm cận đứng; lim_{x→±∞} f(x) = 2 nên y = 2 là tiệm cận ngang.",
       "wrong_explain": {
-        "0": "Giới hạn hai phía tại 2 đều hữu hạn bằng 1, không phải vô cực.",
+        "0": "Thừa số x − 2 rút gọn được, giới hạn tại 2 hữu hạn (bằng 6/5), nên x = 2 không phải tiệm cận đứng.",
         "2": "Giới hạn ở vô cực bằng 2, không phải 1.",
         "3": "x = 2 là đường thẳng đứng, không thể là tiệm cận ngang."
       }
@@ -1077,7 +1077,7 @@
       "level": "Hiểu",
       "type": "mcq",
       "concept": true,
-      "stem": "Bài 1.37: khẳng định nào sai?",
+      "stem": "Bài 1.37: hàm số y = f(x) có lim_{x→−∞} f(x) = 1, lim_{x→+∞} f(x) = −1, lim_{x→3⁻} f(x) = +∞, lim_{x→1⁻} f(x) = −1 và lim_{x→1⁺} f(x) = 7. Khẳng định nào sai?",
       "choices": [
         "Đường thẳng y = 1 là tiệm cận ngang",
         "Đường thẳng y = −1 là tiệm cận ngang",
@@ -1085,7 +1085,7 @@
         "Đường thẳng x = 1 là tiệm cận đứng"
       ],
       "answer": 3,
-      "explain": "Bảng biến thiên cho f(x) → 1 khi x → −∞ và f(x) → −1 khi x → +∞. Khi x → 3⁻ thì f(x) → +∞ nên x = 3 là tiệm cận đứng. Tại x = 1 các giới hạn một phía đều hữu hạn (−1 và 7) nên x = 1 không phải tiệm cận đứng.",
+      "explain": "f(x) → 1 khi x → −∞ và f(x) → −1 khi x → +∞ nên y = 1 và y = −1 là tiệm cận ngang. Khi x → 3⁻ thì f(x) → +∞ nên x = 3 là tiệm cận đứng. Tại x = 1 các giới hạn một phía đều hữu hạn (−1 và 7) nên x = 1 không phải tiệm cận đứng.",
       "wrong_explain": {
         "0": "Đúng: f(x) → 1 khi x → −∞.",
         "1": "Đúng: f(x) → −1 khi x → +∞.",
@@ -1421,7 +1421,7 @@
       "level": "Hiểu",
       "type": "mcq",
       "concept": true,
-      "stem": "Bài 1.45a: ước tính dân số (triệu người) vào các năm 2030 và 2035 với N(t) = 100e^(0,012t).",
+      "stem": "Bài 1.45a: dân số (triệu người) được mô hình bởi N(t) = 100e^(0,012t), với t là số năm kể từ năm 2023 (t = 0 ứng với năm 2023). Ước tính dân số vào các năm 2030 và 2035.",
       "choices": [
         "N(7) ≈ 108,763; N(12) ≈ 115,488",
         "N(7) ≈ 107,763; N(12) ≈ 114,488",
@@ -1461,7 +1461,7 @@
       "level": "Vận dụng",
       "type": "mcq",
       "concept": true,
-      "stem": "Bài 1.45c: vào năm nào tốc độ tăng dân số là 1,6 triệu người/năm?",
+      "stem": "Bài 1.45c: với N(t) = 100e^(0,012t) (triệu người, t là số năm kể từ năm 2023), vào năm nào tốc độ tăng dân số là 1,6 triệu người/năm?",
       "choices": [
         "Năm 2047 (t ≈ 24)",
         "Năm 2045 (t ≈ 22)",
@@ -1471,7 +1471,7 @@
       "answer": 0,
       "explain": "N'(t) = 1,2e^(0,012t) = 1,6 khi e^(0,012t) = 4/3, t = ln(4/3)/0,012 ≈ 23,97, tức khoảng năm 2047.",
       "wrong_explain": {
-        "1": "Với t = 22, N'(22) ≈ 1,53 < 1,6.",
+        "1": "Với t = 22, N'(22) ≈ 1,56 < 1,6.",
         "2": "N'(7) ≈ 1,31, chưa đạt 1,6.",
         "3": "N'(t) tăng liên tục từ 1,2 nên có nghiệm trong [0; 50]."
       }
@@ -1481,7 +1481,7 @@
       "level": "Vận dụng",
       "type": "mcq",
       "concept": true,
-      "stem": "Bài 1.46: đặt BM = x (km), tổng chi phí nhỏ nhất khi x bằng?",
+      "stem": "Bài 1.46: đặt BM = x (km), 0 ≤ x ≤ 10, tổng chi phí là f(x) = 50√(16 + x²) + 30(10 − x). Tổng chi phí nhỏ nhất khi x bằng?",
       "choices": [
         "3 km",
         "4 km",

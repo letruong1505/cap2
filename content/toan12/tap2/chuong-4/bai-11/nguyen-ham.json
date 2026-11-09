@@ -41,7 +41,8 @@
       "steps": [
         "(x³/3)' = x², nên F(x) = x³/3 là một nguyên hàm.",
         "∫x²dx = x³/3 + C."
-      ]
+      ],
+      "answer": "x³/3 + C"
     },
     {
       "problem": "Ví dụ 3: Tính ∫3x²dx và ∫(−3/2)x²dx.",
@@ -49,7 +50,8 @@
       "steps": [
         "∫3x²dx = 3·x³/3 + C = x³ + C.",
         "∫(−3/2)x²dx = −(3/2)·x³/3 + C = −x³/2 + C."
-      ]
+      ],
+      "answer": "x³ + C; −x³/2 + C"
     },
     {
       "problem": "Ví dụ 4: Tính ∫(x² + x)dx và ∫(4x³ − 3x²)dx.",
@@ -57,7 +59,8 @@
       "steps": [
         "∫(x² + x)dx = x³/3 + x²/2 + C.",
         "∫(4x³ − 3x²)dx = x⁴ − x³ + C."
-      ]
+      ],
+      "answer": "x³/3 + x²/2 + C; x⁴ − x³ + C"
     },
     {
       "problem": "Ví dụ 5: Máy bay có vận tốc v(t) = 5 + 3t (m/s) khi chạy đà, bắt đầu từ t = 0 và rời đường băng sau 30 giây. Tính quãng đường đã đi.",
@@ -76,7 +79,8 @@
         "∫√x dx = (2/3)x√x + C.",
         "∫(1/x³)dx = ∫x^(−3)dx = −1/(2x²) + C.",
         "∫(2x² + 3/√x)dx = (2/3)x³ + 6√x + C."
-      ]
+      ],
+      "answer": "(2/3)x√x + C; −1/(2x²) + C; (2/3)x³ + 6√x + C"
     },
     {
       "problem": "Ví dụ 7: Tìm ∫(cos x + sin x)dx và ∫(2cos x − 1/cos²x)dx.",
@@ -84,7 +88,8 @@
       "steps": [
         "∫(cos x + sin x)dx = sin x − cos x + C.",
         "∫(2cos x − 1/cos²x)dx = 2sin x − tan x + C."
-      ]
+      ],
+      "answer": "sin x − cos x + C; 2sin x − tan x + C"
     },
     {
       "problem": "Ví dụ 8: Tìm ∫2^x dx, ∫(1/3^x)dx và ∫(2e^x − 5^x)dx.",
@@ -93,7 +98,8 @@
         "∫2^x dx = 2^x/ln 2 + C.",
         "∫(1/3^x)dx = −1/(3^x ln 3) + C.",
         "∫(2e^x − 5^x)dx = 2e^x − 5^x/ln 5 + C."
-      ]
+      ],
+      "answer": "2^x/ln 2 + C; −1/(3^x ln 3) + C; 2e^x − 5^x/ln 5 + C"
     }
   ],
   "items": [
@@ -430,7 +436,7 @@
       "id": "q18",
       "level": "Vận dụng",
       "type": "fill",
-      "stem": "Vận dụng: doanh thu R(x) có R'(x) = 300 − 0,1x, R(0) = 0. Doanh thu khi bán 1 000 chip (triệu đồng) là?",
+      "stem": "Vận dụng: doanh thu R(x) (triệu đồng), với x là số chip bán ra, có R'(x) = 300 − 0,1x và R(0) = 0. Doanh thu khi bán 1 000 chip là?",
       "expr": "300*1000-0.05*1000*1000",
       "answer": "250000",
       "explain": "R(x) = 300x − 0,05x² + C, R(0) = 0 nên C = 0; R(1000) = 300000 − 50000 = 250000 (triệu đồng)."
@@ -569,7 +575,7 @@
       "level": "Vận dụng",
       "type": "mcq",
       "concept": true,
-      "stem": "BT 4.6: hệ số góc tiếp tuyến tại M(x; f(x)) là k = (x − 1)², và M trùng gốc toạ độ khi nằm trên trục tung. Biểu thức f(x) là?",
+      "stem": "BT 4.6: hệ số góc tiếp tuyến tại M(x; f(x)) là k = (x − 1)². Tại x = 0 điểm M trùng gốc toạ độ O, tức f(0) = 0. Biểu thức f(x) là?",
       "choices": [
         "f(x) = (x − 1)³/3 + 1/3",
         "f(x) = (x − 1)³/3 − 1/3",
@@ -598,9 +604,9 @@
       "level": "Vận dụng",
       "type": "fill",
       "stem": "BT 4.7b: độ cao lớn nhất của viên đạn (đúng đến phân số) là?",
-      "expr": "256000/392",
-      "answer": "32000/49",
-      "explain": "h(t) đạt cực đại tại t = 160/9,8; h_max = 160²/(4·9,8) = 32000/49 ≈ 653,1 (m)."
+      "expr": "(160*160)/(4*49/10)",
+      "answer": "64000/49",
+      "explain": "h(t) = 160t − 4,9t² đạt cực đại tại t = 160/9,8 ≈ 16,3 s; h_max = 160²/(4·4,9) = 64000/49 ≈ 1306,1 (m)."
     }
   ]
 }

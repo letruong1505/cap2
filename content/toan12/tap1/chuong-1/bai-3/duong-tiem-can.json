@@ -201,7 +201,7 @@
         "−15: khối lượng âm"
       ],
       "answer": 0,
-      "explain": "Sách in m(t) = 15e^{0,012t} thiếu dấu trừ trong số mũ; đồ thị Hình 1.18 giảm dần nên hiểu là 15e^{−0,012t}. Vì e^(−0,012t) → 0 khi t → +∞ nên m(t) → 0. Đường thẳng y = 0 là tiệm cận ngang: chất phóng xạ phân rã dần hết.",
+      "explain": "Khi t → +∞, e^(−0,012t) → 0 nên m(t) → 0: chất phóng xạ phân rã dần hết. Đường thẳng y = 0 là tiệm cận ngang của đồ thị, đúng với hình dáng đồ thị giảm dần về 0.",
       "wrong_explain": {
         "1": "Đây là giá trị tại t = 0 (m(0) = 15), không phải giới hạn khi t → +∞.",
         "2": "Đồ thị giảm dần, nên khối lượng không tăng không giới hạn.",

@@ -18,6 +18,11 @@
       "content": "Công thức nhân xác suất: với hai biến cố A và B bất kì, P(AB) = P(B) · P(A | B) = P(A) · P(B | A)."
     },
     {
+      "type": "figure",
+      "figure": "figures/c6-18-cay-nhan.svg",
+      "caption": "Sơ đồ cây cho Ví dụ 4: các nhánh là xác suất có điều kiện, xác suất mỗi đường đi là tích các nhánh trên đường đó."
+    },
+    {
       "type": "text",
       "content": "Hai biến cố A và B độc lập khi P(AB) = P(A) · P(B); khi đó P(A | B) = P(A) và P(B | A) = P(B)."
     },
@@ -85,7 +90,7 @@
       "id": "q04",
       "level": "Hiểu",
       "type": "fill",
-      "stem": "Luyện tập 4b: xác suất hai chiếc bút lấy ra cùng màu là ?",
+      "stem": "Luyện tập 4b: hộp có 7 chiếc bút xanh và 5 chiếc bút đen. Lấy liên tiếp hai chiếc bút không trả lại. Xác suất hai chiếc bút lấy ra cùng màu là?",
       "expr": "7/12*6/11+5/12*4/11",
       "answer": "31/66",
       "explain": "Cùng xanh: 7/12 · 6/11 = 7/22; cùng đen: 5/12 · 4/11 = 5/33; tổng 7/22 + 5/33 = 31/66."
@@ -112,7 +117,7 @@
       "id": "q07",
       "level": "Hiểu",
       "type": "fill",
-      "stem": "Luyện tập 3a: trong bảng thử nghiệm, có 2400 bệnh nhân dùng thuốc M, 1600 bệnh nhân khỏi bệnh với M. Xác suất P(M | khỏi bệnh) = 1600/2800 bằng?",
+      "stem": "Luyện tập 3a: thử nghiệm thuốc trên 4000 bệnh nhân: 2400 bệnh nhân dùng thuốc M, trong đó 1600 khỏi bệnh; 1600 bệnh nhân dùng thuốc N, trong đó 1200 khỏi bệnh. Xác suất P(M | khỏi bệnh) bằng?",
       "expr": "1600/2800",
       "answer": "4/7",
       "explain": "Tổng số bệnh nhân khỏi bệnh là 1600 + 1200 = 2800, nên P = 1600/2800 = 4/7."
@@ -121,7 +126,7 @@
       "id": "q08",
       "level": "Hiểu",
       "type": "fill",
-      "stem": "Luyện tập 3b: xác suất bệnh nhân dùng thuốc N, biết rằng không khỏi bệnh: P(N | không khỏi) = 400/1200 = ?",
+      "stem": "Luyện tập 3b: với số liệu thử nghiệm ở Luyện tập 3a (2400 dùng M, 1600 dùng N; khỏi bệnh: 1600 với M, 1200 với N), xác suất bệnh nhân dùng thuốc N biết rằng không khỏi bệnh là?",
       "expr": "400/1200",
       "answer": "1/3",
       "explain": "Không khỏi bệnh có 800 + 400 = 1200 bệnh nhân, trong đó 400 dùng thuốc N."
@@ -195,7 +200,7 @@
       "id": "q15",
       "level": "Hiểu",
       "type": "fill",
-      "stem": "Bài 6.5b: xác suất cả hai thí nghiệm đều không thành công, biết P(B | Ā) = 0,4 (thí nghiệm 2 thành công khi thí nghiệm 1 không thành công): P(Ā) · P(B̄ | Ā) = ?",
+      "stem": "Bài 6.5b: P(A) = 0,7 (thí nghiệm 1 thành công), P(B | A) = 0,9 và P(B | Ā) = 0,4. Xác suất cả hai thí nghiệm đều không thành công là P(Ā) · P(B̄ | Ā) = ?",
       "expr": "0.3*0.6",
       "answer": "0.18",
       "explain": "P(Ā) = 0,3 và P(B̄ | Ā) = 1 − 0,4 = 0,6, nên P = 0,18."
@@ -204,7 +209,7 @@
       "id": "q16",
       "level": "Hiểu",
       "type": "fill",
-      "stem": "Bài 6.5c: xác suất thí nghiệm 1 thành công và thí nghiệm 2 không thành công: P(A) · P(B̄ | A) = ?",
+      "stem": "Bài 6.5c: P(A) = 0,7 và P(B | A) = 0,9. Xác suất thí nghiệm 1 thành công và thí nghiệm 2 không thành công là P(A) · P(B̄ | A) = ?",
       "expr": "0.7*0.1",
       "answer": "0.07",
       "explain": "P = 0,7 · (1 − 0,9) = 0,07."
@@ -242,7 +247,7 @@
       "id": "q19",
       "level": "Vận dụng",
       "type": "fill",
-      "stem": "Bài 6.8: chuồng II lấy 1 con thỏ, cho vào chuồng I, rồi lấy 1 con từ chuồng I. Xác suất con lấy ra là con trắng bằng 3/10 · 11/16 + 7/10 · 10/16 = ?",
+      "stem": "Bài 6.8: chuồng I có 15 con thỏ, trong đó 10 con trắng; chuồng II có 10 con thỏ, trong đó 3 con trắng và 7 con đen. Lấy ngẫu nhiên 1 con từ chuồng II cho vào chuồng I, rồi lấy ngẫu nhiên 1 con từ chuồng I. Xác suất con lấy ra là con trắng bằng 3/10 · 11/16 + 7/10 · 10/16 = ?",
       "expr": "3/10*11/16+7/10*10/16",
       "answer": "103/160",
       "explain": "Nếu chuyển con trắng (3/10) thì chuồng I có 16 con, 11 trắng; nếu chuyển con đen (7/10) thì có 10 trắng trong 16 con: tổng 103/160."
@@ -270,7 +275,7 @@
       "level": "Vận dụng",
       "type": "mcq",
       "concept": true,
-      "stem": "Bài 6.10a–b: đội I có 5 vận động viên với xác suất đạt huy chương vàng 0,65; đội II có 7 vận động viên với xác suất 0,55. Biết vận động viên được chọn đạt huy chương vàng, xác suất người đó thuộc đội I xấp xỉ?",
+      "stem": "Bài 6.10a–b: đội I có 5 vận động viên, mỗi người đạt huy chương vàng với xác suất 0,65; đội II có 7 vận động viên, mỗi người đạt vàng với xác suất 0,55. Chọn ngẫu nhiên một trong 12 vận động viên và biết người đó đạt huy chương vàng; xác suất người đó thuộc đội I xấp xỉ?",
       "choices": [
         "≈ 0,458 (= 65/142)",
         "5/12",

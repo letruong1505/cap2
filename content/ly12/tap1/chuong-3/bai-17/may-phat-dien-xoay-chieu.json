@@ -18,6 +18,11 @@
       "content": "Khi khung dây dẫn quay đều với tốc độ góc ω trong từ trường đều B, từ thông qua khung biến thiên điều hoà và trong khung xuất hiện suất điện động xoay chiều theo quy luật cosin (hoặc sin)."
     },
     {
+      "type": "figure",
+      "figure": "figures/c-ly12-b17-dao-dong-dien.svg",
+      "caption": "Suất điện động e = E₀cos(ωt) biến thiên điều hoà; T là khoảng thời gian giữa hai đỉnh liên tiếp."
+    },
+    {
       "type": "formula",
       "content": "T = 2π/ω,  f = ω/(2π)"
     },
@@ -28,6 +33,11 @@
     {
       "type": "text",
       "content": "Máy phát điện xoay chiều gồm phần cảm (tạo từ trường) và phần ứng (các cuộn dây xuất hiện suất điện động cảm ứng). Phần ứng thường đặt ở stato để tránh mòn vành khuyên và chổi quét khi quay nhanh."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/c-ly12-b17-may-phat.svg",
+      "caption": "Khung dây quay trong từ trường đều: phần ứng sinh suất điện động xoay chiều."
     }
   ],
   "examples": [],
@@ -68,7 +78,7 @@
       "concept": true,
       "wrong_explain": {
         "0": "Chia cho ω làm sai thứ nguyên.",
-        "1": "Vị trí các đại lượng sai.",
+        "1": "E₀ tỉ lệ thuận với N, B, S và ω, không tỉ lệ nghịch.",
         "2": "Chia cho S không đúng."
       }
     },

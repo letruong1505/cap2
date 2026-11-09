@@ -14,6 +14,11 @@
       "content": "Mặt cầu (S) tâm I(a; b; c) bán kính R > 0 có phương trình (x − a)² + (y − b)² + (z − c)² = R²."
     },
     {
+      "type": "figure",
+      "figure": "figures/c5-17-mat-cau.svg",
+      "caption": "Mặt cầu tâm I bán kính R là tập hợp các điểm N thỏa IN = R."
+    },
+    {
       "type": "text",
       "content": "Phương trình x² + y² + z² − 2ax − 2by − 2cz + d = 0 là phương trình mặt cầu khi và chỉ khi a² + b² + c² − d > 0. Khi đó mặt cầu có tâm I(a; b; c) và bán kính R = √(a² + b² + c² − d)."
     },
@@ -91,7 +96,7 @@
       "id": "q03",
       "level": "Hiểu",
       "type": "fill",
-      "stem": "Luyện tập 1b: bình phương khoảng cách từ M(2; 0; 1) đến tâm I(−2; 0; −1/2) bằng?",
+      "stem": "Luyện tập 1b: mặt cầu tâm I(−2; 0; −1/2) bán kính R = 3/2. Bình phương khoảng cách từ M(2; 0; 1) đến tâm I bằng?",
       "expr": "(2+2)*(2+2)+(1+1/2)*(1+1/2)",
       "answer": "73/4",
       "explain": "MI² = 16 + 9/4 = 73/4 > 9/4 = R² nên M nằm ngoài mặt cầu."
@@ -228,13 +233,13 @@
       "concept": true,
       "stem": "Ví dụ 5: khoảng cách trên mặt đất từ P(10°N, 15°E) đến Q(80°N, 70°E) xấp xỉ bao nhiêu? (bán kính Trái Đất 6371 km)",
       "choices": [
-        "khoảng 8 271 km",
+        "khoảng 8 272 km",
         "khoảng 5 800 km",
         "khoảng 6 371 km",
         "khoảng 4 500 km"
       ],
       "answer": 0,
-      "explain": "cos(POQ) ≈ 0,2691 nên góc POQ ≈ 74,39°; cung nhỏ PQ có độ dài ≈ 1,2983 đơn vị, nhân 6371 km được ≈ 8 271 km.",
+      "explain": "cos(POQ) ≈ 0,2691 nên góc POQ ≈ 74,39°; cung nhỏ PQ có độ dài ≈ 1,2983 rad, nhân 6371 km được ≈ 8 272 km.",
       "wrong_explain": {
         "1": "5 800 km không khớp góc POQ ≈ 74,39°.",
         "2": "6 371 km là bán kính Trái Đất, không phải khoảng cách giữa hai vị trí.",
@@ -250,14 +255,14 @@
       "choices": [
         "khoảng 5 800 km",
         "khoảng 6 371 km",
-        "khoảng 8 271 km",
+        "khoảng 8 272 km",
         "khoảng 4 500 km"
       ],
       "answer": 0,
       "explain": "A(1; 0; 0), B(√6/4; √2/4; √2/2), cos(AOB) = √6/4 ≈ 0,6124, góc ≈ 52,2°; nhân với 6371 km ta được khoảng 5 800 km.",
       "wrong_explain": {
         "1": "Bán kính Trái Đất không phải khoảng cách giữa A và B.",
-        "2": "8 271 km ứng với hai vị trí khác (P, Q ở Ví dụ 5).",
+        "2": "8 272 km ứng với hai vị trí khác (P, Q ở Ví dụ 5).",
         "3": "4 500 km không khớp góc ≈ 52,2°."
       }
     },

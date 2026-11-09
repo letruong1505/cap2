@@ -18,6 +18,11 @@
       "content": "U₁/U₂ = N₁/N₂"
     },
     {
+      "type": "figure",
+      "figure": "figures/c-ly12-b18-may-bien-ap.svg",
+      "caption": "Cuộn sơ cấp nối nguồn xoay chiều, cuộn thứ cấp nối tải; hai cuộn quấn trên cùng lõi thép."
+    },
+    {
       "type": "text",
       "content": "Lõi biến áp được ghép từ các lá thép silicon mỏng, cách điện với nhau để giảm hao phí do dòng điện Foucault."
     },
@@ -172,22 +177,22 @@
     },
     {
       "id": "q09",
-      "level": "Biết",
+      "level": "Hiểu",
       "type": "mcq",
-      "stem": "Theo quy tắc an toàn điện, vì sao không nên sử dụng thiết bị điện trong quá trình sạc pin?",
+      "stem": "Máy biến áp lí tưởng có N₂ > N₁. Quan hệ đúng giữa điện áp hai đầu cuộn sơ cấp U₁ và thứ cấp U₂ là:",
       "choices": [
-        "Vì dòng sạc làm thay đổi tần số lưới điện",
-        "Vì quá trình sạc có thể làm pin và thiết bị nóng, tiềm ẩn rủi ro",
-        "Vì sạc pin làm tăng điện áp lưới",
-        "Vì thiết bị không có tác dụng khi đang sạc"
+        "U₂ > U₁ (máy tăng áp)",
+        "U₂ < U₁ (máy hạ áp)",
+        "U₂ = U₁ luôn luôn",
+        "U₂ = 0"
       ],
-      "answer": 1,
-      "explain": "Trong khi sạc, pin và thiết bị có thể nóng lên; không sử dụng thiết bị để tránh rủi ro cháy nổ và chập điện.",
+      "answer": 0,
+      "explain": "Từ U₁/U₂ = N₁/N₂ suy ra U₂ = U₁·N₂/N₁. Với N₂ > N₁ thì U₂ > U₁: đây là máy tăng áp.",
       "concept": true,
       "wrong_explain": {
-        "0": "Sạc pin không làm thay đổi tần số lưới điện.",
-        "2": "Sạc pin không làm tăng điện áp lưới điện.",
-        "3": "Thiết bị vẫn hoạt động khi đang sạc; vấn đề là an toàn."
+        "1": "Với N₂ > N₁ thì U₂ lớn hơn U₁, không nhỏ hơn.",
+        "2": "Chỉ khi N₁ = N₂ mới có U₁ = U₂.",
+        "3": "Máy biến áp tạo ra điện áp thứ cấp khác 0 khi có từ thông biến thiên."
       }
     },
     {

@@ -18,6 +18,11 @@
       "content": "Sơ đồ hình cây mô tả trực quan các nhánh xác suất: nhân xác suất dọc theo mỗi đường đi, và cộng các đường đi đến cùng một kết quả."
     },
     {
+      "type": "figure",
+      "figure": "figures/c6-19-cay-toan-phan.svg",
+      "caption": "Sơ đồ cây Ví dụ 2: cộng các đường đi đến “Đỗ” rồi chia cho tổng đó để có xác suất Bayes."
+    },
+    {
       "type": "text",
       "content": "Công thức Bayes: P(A | B) = P(A) · P(B | A) / P(B) = P(A) · P(B | A) / [P(A) · P(B | A) + P(Ā) · P(B | Ā)]."
     }
@@ -138,7 +143,7 @@
       "level": "Vận dụng",
       "type": "mcq",
       "concept": true,
-      "stem": "Ví dụ 4b: sau khi xét nghiệm cho kết quả âm tính, xác suất bà N không mắc bệnh Y là?",
+      "stem": "Ví dụ 4b: tỉ lệ mắc bệnh Y là 0,5%; xét nghiệm dương tính với xác suất 0,94 nếu mắc và âm tính với xác suất 0,97 nếu không mắc. Sau khi xét nghiệm cho kết quả âm tính, xác suất bà N không mắc bệnh Y là?",
       "choices": [
         "≈ 0,9997",
         "0,995",

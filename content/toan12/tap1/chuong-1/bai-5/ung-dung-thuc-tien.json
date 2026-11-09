@@ -55,13 +55,13 @@
     },
     {
       "problem": "Số lượng P(t) của một quần thể nấm men được mô hình hoá bởi P(t) = a/(b + e^(−0,75t)). Biết P(0) = 20 và P'(0) = 12. Tìm a, b và giá trị giới hạn của P(t) khi t → +∞.",
-      "expr": "25*4/5",
+      "expr": "25*4",
       "steps": [
         "Từ P(0) = a/(b + 1) = 20 và P'(0) = 0,75a/(b + 1)² = 12, suy ra a = 25 và b = 1/4.",
         "Kiểm tra: P(0) = 25/(5/4) = 20.",
-        "Khi t → +∞, e^(−0,75t) → 0 nên P(t) → a/b = 100. Quần thể nấm men tiến dần tới 100 (đơn vị đã cho trong đề)."
+        "Khi t → +∞, e^(−0,75t) → 0 nên P(t) → a/b = 100. Vậy quần thể nấm men tiến dần tới 100 (đơn vị của P)."
       ],
-      "answer": "20"
+      "answer": "100"
     },
     {
       "problem": "Một công ty có chi phí C(x) = 30 000 + 300x − 2,5x² + 0,125x³ (nghìn đồng). Tính chi phí biên tại x = 200.",
@@ -75,13 +75,13 @@
     },
     {
       "problem": "Công ty có lợi nhuận hằng tháng P(x) = −0,3x³ + 36x² + 1 800x − 48 000 (nghìn đồng) khi bán x chiếc máy. Số máy ít nhất để hoà vốn (P(x) = 0) là bao nhiêu?",
-      "expr": "-0.3*20*20*20+36*20*20+1800*20-48000",
+      "expr": "20",
       "steps": [
         "Ta có P'(x) = −0,9x² + 72x + 1 800 = −0,9(x − 100)(x + 20), nên P đồng biến trên [0; 100] và nghịch biến trên (100; +∞).",
         "P(100) = 192 000 là giá trị cực đại; P(0) = −48 000 < 0.",
         "P(20) = 0 và P(x) < 0 khi x < 20, P(x) > 0 khi 20 < x < 152. Vậy cần ít nhất 20 chiếc để hoà vốn."
       ],
-      "answer": "0"
+      "answer": "20"
     },
     {
       "problem": "Với hàm lợi nhuận P(x) ở trên, lợi nhuận lớn nhất là bao nhiêu nghìn đồng? (x = 200 cho lợi nhuận âm.)",
