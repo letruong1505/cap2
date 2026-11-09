@@ -1,0 +1,172 @@
+{
+  "id": "t12-chuong1-bai4-khao-sat-do-thi",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 12, tập 1",
+  "chapter": "Chương I. Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+  "lesson": "Bài 4. Khảo sát sự biến thiên và vẽ đồ thị của hàm số",
+  "section": "Phần 1: Sơ đồ khảo sát hàm số; Phần 2: Hàm số bậc ba; Phần 3: Hàm phân thức hữu tỉ",
+  "bookPage": 27,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Sơ đồ khảo sát hàm số y = f(x): (1) tìm tập xác định; (2) khảo sát sự biến thiên: tính y', xét dấu y', tìm khoảng đơn điệu và cực trị, tìm giới hạn tại vô cực và các tiệm cận, lập bảng biến thiên; (3) vẽ đồ thị dựa vào bảng biến thiên."
+    },
+    {
+      "type": "text",
+      "content": "Khi vẽ đồ thị nên xác định thêm một số điểm đặc biệt, chẳng hạn giao điểm với các trục toạ độ (khi việc tìm không quá phức tạp), và lưu ý tính đối xứng của đồ thị."
+    },
+    {
+      "type": "text",
+      "content": "Đồ thị hàm số bậc ba y = ax³ + bx² + cx + d (a ≠ 0) có tâm đối xứng là điểm có hoành độ x = −b/(3a) (điểm uốn của đồ thị). Hàm số bậc ba không có tiệm cận."
+    },
+    {
+      "type": "text",
+      "content": "Đồ thị hàm phân thức y = (ax + b)/(cx + d) (c ≠ 0, ad − bc ≠ 0) có tiệm cận đứng x = −d/c và tiệm cận ngang y = a/c. Đồ thị nhận giao điểm của hai tiệm cận làm tâm đối xứng."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/b4-phan-thuc.svg",
+      "caption": "Đồ thị y = (x + 1)/(x − 2) nhận giao điểm (2; 1) của hai tiệm cận làm tâm đối xứng."
+    },
+    {
+      "type": "text",
+      "content": "Với hàm bậc ba y = x³ − 2x² + 2x − 1: y' = 3x² − 4x + 2 có biệt thức âm nên y' > 0 với mọi x; hàm số đồng biến trên ℝ, không có cực trị, và đồ thị có tâm đối xứng là điểm (2/3; −7/27)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Khảo sát và vẽ đồ thị y = −x³ + 3x² − 4. Tìm giá trị y tại điểm uốn (tâm đối xứng) của đồ thị.",
+      "expr": "-(1*1*1)+3*1*1-4",
+      "steps": [
+        "Tập xác định ℝ. y' = −3x² + 6x = 0 khi x = 0 hoặc x = 2.",
+        "Hàm số đồng biến trên (0; 2), nghịch biến trên (−∞; 0) và (2; +∞).",
+        "Hàm số đạt cực tiểu tại x = 0, y_CT = −4; đạt cực đại tại x = 2, y_CĐ = 0.",
+        "Tâm đối xứng có hoành độ x = −b/(3a) = 1, tung độ y(1) = −2. Đồ thị cắt trục tung tại (0; −4) và trục hoành tại (−1; 0), (2; 0)."
+      ],
+      "answer": "-2",
+      "figure": "figures/b4-bac-ba-1.svg"
+    },
+    {
+      "problem": "Khảo sát và vẽ đồ thị y = x³ − 2x² + 2x − 1. Tìm tung độ tâm đối xứng của đồ thị.",
+      "expr": "(2/3)*(2/3)*(2/3)-2*(2/3)*(2/3)+2*(2/3)-1",
+      "steps": [
+        "Tập xác định ℝ. y' = 3x² − 4x + 2 > 0 với mọi x, nên hàm số đồng biến trên ℝ và không có cực trị.",
+        "Đồ thị cắt trục hoành tại (1; 0) và trục tung tại (0; −1).",
+        "Tâm đối xứng là điểm (2/3; −7/27)."
+      ],
+      "answer": "-7/27",
+      "figure": "figures/b4-bac-ba-2.svg"
+    },
+    {
+      "problem": "Khảo sát và vẽ đồ thị y = (x + 1)/(x − 2). Tìm tung độ giao điểm của đồ thị với trục tung.",
+      "expr": "-1/2",
+      "steps": [
+        "Tập xác định ℝ \\ {2}. y' = −3/(x − 2)² < 0, hàm số nghịch biến trên từng khoảng (−∞; 2) và (2; +∞).",
+        "Tiệm cận đứng x = 2, tiệm cận ngang y = 1.",
+        "Đồ thị cắt trục tung tại (0; −1/2) và trục hoành tại (−1; 0). Tâm đối xứng là giao điểm (2; 1) của hai tiệm cận."
+      ],
+      "answer": "-1/2",
+      "figure": "figures/b4-phan-thuc.svg"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bước đầu tiên trong sơ đồ khảo sát hàm số y = f(x) là gì?",
+      "choices": [
+        "Tìm tập xác định của hàm số",
+        "Vẽ đồ thị",
+        "Lập bảng biến thiên",
+        "Tính giới hạn tại vô cực"
+      ],
+      "answer": 0,
+      "explain": "Trước khi xét sự biến thiên hay vẽ đồ thị, cần xác định hàm số có nghĩa trên tập nào.",
+      "wrong_explain": {
+        "1": "Vẽ đồ thị là bước cuối cùng, dựa trên bảng biến thiên đã lập.",
+        "2": "Bảng biến thiên cần có đạo hàm và tập xác định, nên phải làm sau bước tìm tập xác định.",
+        "3": "Giới hạn tại vô cực là một phần của bước khảo sát sự biến thiên, không phải bước đầu."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Đồ thị hàm số y = x³ − 3x cắt trục tung tại điểm có tung độ bằng?",
+      "expr": "0*0*0-3*0",
+      "answer": "0",
+      "explain": "Thay x = 0 vào y, ta được y = 0. Đồ thị đi qua gốc toạ độ O(0; 0)."
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đồ thị hàm số y = −x³ + 3x² − 4 có tâm đối xứng là điểm có hoành độ x = 1. Tung độ của tâm đối xứng là?",
+      "expr": "-(1*1*1)+3*1*1-4",
+      "answer": "-2",
+      "explain": "Tâm đối xứng có tung độ y(1) = −1 + 3 − 4 = −2."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số y = x³ − 2x² + 2x − 1 có bao nhiêu điểm cực trị?",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 0,
+      "explain": "y' = 3x² − 4x + 2 có biệt thức Δ' = 4 − 6 < 0, nên y' > 0 với mọi x và hàm số không có cực trị.",
+      "wrong_explain": {
+        "1": "Hàm số bậc ba có tối đa hai điểm cực trị, và ở đây y' không đổi dấu nên không có điểm nào.",
+        "2": "Muốn có hai cực trị, y' phải có hai nghiệm đổi dấu; ở đây y' không có nghiệm.",
+        "3": "Hàm số bậc ba không thể có ba điểm cực trị."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đồ thị hàm số y = (x + 1)/(x − 2) cắt trục tung tại điểm có tung độ bằng? (nhập dạng phân số, ví dụ −1/2)",
+      "expr": "-1/2",
+      "answer": "-1/2",
+      "explain": "Thay x = 0: y = (0 + 1)/(0 − 2) = −1/2."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đồ thị hàm số y = (x + 1)/(x − 2) cắt trục hoành tại điểm có hoành độ bằng?",
+      "expr": "-1",
+      "answer": "-1",
+      "explain": "Đặt y = 0 ta được x + 1 = 0, suy ra x = −1. Đồ thị cắt trục hoành tại (−1; 0)."
+    },
+    {
+      "id": "q07",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đồ thị hàm phân thức y = (ax + b)/(cx + d) có tâm đối xứng là điểm nào?",
+      "choices": [
+        "Giao điểm của tiệm cận đứng và tiệm cận ngang",
+        "Gốc toạ độ O(0; 0)",
+        "Giao điểm của đồ thị với trục tung",
+        "Điểm có hoành độ bằng 1"
+      ],
+      "answer": 0,
+      "explain": "Đồ thị hàm phân thức nhận giao điểm của hai đường tiệm cận làm tâm đối xứng.",
+      "wrong_explain": {
+        "1": "Gốc O chỉ là tâm đối xứng trong những trường hợp riêng, không phải với mọi hàm phân thức.",
+        "2": "Giao điểm với trục tung không liên quan đến tính đối xứng của đồ thị.",
+        "3": "Hoành độ 1 không cố định cho mọi hàm phân thức; tâm đối xứng phụ thuộc vào các tiệm cận."
+      }
+    }
+  ]
+}

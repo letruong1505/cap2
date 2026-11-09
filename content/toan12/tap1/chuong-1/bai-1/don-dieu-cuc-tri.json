@@ -1,0 +1,188 @@
+{
+  "id": "t12-chuong1-bai1-don-dieu-cuc-tri",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 12, tập 1",
+  "chapter": "Chương I. Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+  "lesson": "Bài 1. Tính đơn điệu và cực trị của hàm số",
+  "section": "Phần 1: Tính đơn điệu, cực trị và cách tìm cực trị",
+  "bookPage": 6,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cho hàm số y = f(x) có đạo hàm trên khoảng (a; b). Nếu f'(x) > 0 với mọi x thuộc (a; b) thì hàm số đồng biến trên (a; b). Nếu f'(x) < 0 với mọi x thuộc (a; b) thì hàm số nghịch biến trên (a; b)."
+    },
+    {
+      "type": "text",
+      "content": "Muốn xét chiều biến thiên, ta tính f'(x), tìm các điểm làm f'(x) bằng 0 hoặc không tồn tại, rồi xét dấu f'(x) trên từng khoảng. Kết quả thường được ghi vào bảng biến thiên."
+    },
+    {
+      "type": "text",
+      "content": "Giả sử hàm số y = f(x) liên tục trên khoảng (a; b) chứa điểm x₀ và có đạo hàm trên các khoảng (a; x₀), (x₀; b). Nếu f'(x) đổi dấu từ âm sang dương khi x qua x₀ thì x₀ là điểm cực tiểu; nếu f'(x) đổi dấu từ dương sang âm thì x₀ là điểm cực đại."
+    },
+    {
+      "type": "text",
+      "content": "Điểm cực đại, cực tiểu gọi chung là điểm cực trị. Giá trị f(x₀) tương ứng gọi là giá trị cực đại (y_CĐ) hoặc giá trị cực tiểu (y_CT). Lưu ý: điểm cực trị là hoành độ x₀, còn cực trị là giá trị f(x₀); trong bài thường viết kết luận dạng 'hàm số đạt cực đại tại x₀ và y_CĐ = f(x₀)'."
+    },
+    {
+      "type": "text",
+      "content": "Nếu f'(x₀) = 0 nhưng f'(x) không đổi dấu khi x qua x₀ thì x₀ không phải là điểm cực trị. Ví dụ y = x³ có f'(0) = 0 nhưng x = 0 không phải điểm cực trị."
+    },
+    {
+      "type": "text",
+      "content": "Các bước tìm cực trị: (1) tìm tập xác định; (2) tính f'(x), tìm các điểm mà tại đó f'(x) bằng 0 hoặc không tồn tại; (3) lập bảng biến thiên; (4) từ bảng biến thiên suy ra các cực trị."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tìm cực trị của hàm số y = x³ − 6x² + 9x + 30.",
+      "expr": "1*1*1-6*1*1+9*1+30",
+      "steps": [
+        "Tập xác định là ℝ. Ta có y' = 3x² − 12x + 9; y' = 0 khi x = 1 hoặc x = 3.",
+        "Bảng biến thiên: y' dương trên (−∞; 1), âm trên (1; 3), dương trên (3; +∞).",
+        "Hàm số đạt cực đại tại x = 1, y_CĐ = y(1) = 34.",
+        "Hàm số đạt cực tiểu tại x = 3, y_CT = y(3) = 30."
+      ],
+      "answer": "34"
+    },
+    {
+      "problem": "Tìm cực trị của hàm số y = (x² − 2x + 9)/(x − 2).",
+      "expr": "((-1)*(-1)+2+9)/((-1)-2)",
+      "steps": [
+        "Tập xác định là ℝ \\ {2}. Ta có y' = (x² − 4x − 5)/(x − 2)²; y' = 0 khi x = −1 hoặc x = 5.",
+        "Hàm số đạt cực đại tại x = −1, y_CĐ = y(−1) = −4.",
+        "Hàm số đạt cực tiểu tại x = 5, y_CT = y(5) = 8."
+      ],
+      "answer": "-4"
+    },
+    {
+      "problem": "Tính y' tại x = 2 của hàm số y = (x + 1)/(x − 1). Từ đó nêu nhận xét về cực trị của hàm số.",
+      "expr": "-2",
+      "steps": [
+        "Tập xác định là ℝ \\ {1}. Ta có y' = −2/(x − 1)² < 0 với mọi x ≠ 1.",
+        "Tại x = 2: y' = −2/(2 − 1)² = −2.",
+        "Vì y' luôn âm nên không có điểm nào mà y' = 0 hoặc đổi dấu, hàm số không có cực trị."
+      ],
+      "answer": "-2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số y = f(x) đồng biến trên khoảng (a; b) khi nào?",
+      "choices": [
+        "f'(x) > 0 với mọi x thuộc (a; b)",
+        "f'(x) < 0 với mọi x thuộc (a; b)",
+        "f'(x) = 0 với mọi x thuộc (a; b)",
+        "f(x) > 0 với mọi x thuộc (a; b)"
+      ],
+      "answer": 0,
+      "explain": "Hàm số đồng biến khi đạo hàm dương trên cả khoảng: đồ thị đi lên từ trái sang phải.",
+      "wrong_explain": {
+        "1": "Đây là điều kiện nghịch biến, không phải đồng biến.",
+        "2": "Đạo hàm bằng 0 trên cả khoảng nghĩa là hàm số không đổi, không phải đồng biến.",
+        "3": "Dấu của f(x) không quyết định chiều biến thiên; chiều biến thiên do dấu của f'(x) quyết định."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cho y = x³ − 3x. Giá trị của y' tại x = 2 là:",
+      "expr": "3*2*2-3",
+      "answer": "9",
+      "explain": "y' = 3x² − 3, nên y'(2) = 3·4 − 3 = 9."
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nhận xét nào đúng về hàm số y = x³ − 3x?",
+      "choices": [
+        "Đồng biến trên ℝ",
+        "Nghịch biến trên ℝ",
+        "Đồng biến trên (−∞; −1) và (1; +∞), nghịch biến trên (−1; 1)",
+        "Đồng biến trên (0; +∞) và không có cực trị"
+      ],
+      "answer": 2,
+      "explain": "y' = 3(x − 1)(x + 1): y' > 0 khi x < −1 hoặc x > 1, y' < 0 khi −1 < x < 1.",
+      "wrong_explain": {
+        "0": "Đạo hàm đổi dấu tại x = ±1 nên hàm số không đồng biến trên toàn ℝ.",
+        "1": "Đạo hàm đổi dấu nên hàm số không nghịch biến trên toàn ℝ.",
+        "3": "Trên (0; 1) đạo hàm âm, nên hàm số không đồng biến trên (0; +∞); hàm số cũng có cực trị tại x = ±1."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Giá trị cực đại của hàm số y = x³ − 6x² + 9x + 30 là:",
+      "expr": "1*1*1-6*1*1+9*1+30",
+      "choices": [
+        "30",
+        "34",
+        "1",
+        "3"
+      ],
+      "answer": 1,
+      "explain": "Hàm số đạt cực đại tại x = 1 và y_CĐ = y(1) = 1 − 6 + 9 + 30 = 34.",
+      "wrong_explain": {
+        "0": "30 là giá trị cực tiểu y(3), không phải cực đại.",
+        "2": "1 là hoành độ điểm cực đại, không phải giá trị cực đại. Giá trị cần tính là y(1).",
+        "3": "3 là hoành độ điểm cực tiểu. Giá trị cực tiểu là y(3) = 30."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giá trị cực tiểu của hàm số y = x³ − 6x² + 9x + 30 là:",
+      "expr": "3*3*3-6*3*3+9*3+30",
+      "answer": "30",
+      "explain": "Hàm số đạt cực tiểu tại x = 3, y_CT = y(3) = 27 − 54 + 27 + 30 = 30."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị cực đại của hàm số y = (x² − 2x + 9)/(x − 2) là:",
+      "expr": "((-1)*(-1)+2+9)/((-1)-2)",
+      "answer": "-4",
+      "explain": "y' = 0 khi x = −1 và x = 5. Cực đại tại x = −1, y(−1) = (1 + 2 + 9)/(−3) = −4."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một vật được phóng thẳng đứng lên cao có độ cao h(t) = 2 + 24,5t − 4,9t² (mét), t tính bằng giây. Vật đạt độ cao lớn nhất tại thời điểm t = ? giây (nhập dạng phân số tối giản, ví dụ 5/2).",
+      "expr": "(49/2)/(2*49/10)",
+      "answer": "5/2",
+      "explain": "h'(t) = 24,5 − 9,8t = 0 khi t = 2,5 giây. Vì h''(t) = −9,8 < 0 nên đây là điểm cực đại, cũng là độ cao lớn nhất."
+    },
+    {
+      "id": "q08",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số y = (x + 1)/(x − 1) có cực trị không?",
+      "choices": [
+        "Có một cực đại",
+        "Có một cực tiểu",
+        "Không có cực trị",
+        "Có cả cực đại và cực tiểu"
+      ],
+      "answer": 2,
+      "explain": "y' = −2/(x − 1)² < 0 với mọi x ≠ 1, nên y' không bao giờ bằng 0 và không đổi dấu qua một điểm thuộc tập xác định.",
+      "wrong_explain": {
+        "0": "Hàm số nghịch biến trên từng khoảng xác định và không có điểm nào đổi dấu đạo hàm, nên không có cực đại.",
+        "1": "Không có điểm nào mà đạo hàm đổi dấu từ âm sang dương, nên không có cực tiểu.",
+        "3": "Cả hai loại cực trị đều không xuất hiện vì đạo hàm luôn âm."
+      }
+    }
+  ]
+}

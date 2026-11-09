@@ -1,0 +1,546 @@
+{
+  "id": "t12-chuong1-baitap-cuoi-chuong",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 12, tập 1",
+  "chapter": "Chương I. Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+  "lesson": "Bài tập cuối chương I",
+  "section": "Bài tập cơ bản và nâng cao (một phần: các bài không cần đọc đồ thị)",
+  "bookPage": 13,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các bài tập dưới đây dùng lại kiến thức của Bài 1 đến Bài 5: xét tính đơn điệu, tìm cực trị, tìm giá trị lớn nhất và nhỏ nhất, tìm tiệm cận, và bài toán thực tiễn. Các bài cần đọc đồ thị (1.1, 1.6, 1.16) sẽ được bổ sung khi có hình vẽ."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số y = −x³ + 2x² − 5x + 3 có đặc điểm đơn điệu nào? (Bài 1.2b)",
+      "choices": [
+        "Nghịch biến trên ℝ",
+        "Đồng biến trên ℝ",
+        "Có cực đại và cực tiểu",
+        "Nghịch biến trên (0; +∞) và đồng biến trên (−∞; 0)"
+      ],
+      "answer": 0,
+      "explain": "y' = −3x² + 4x − 5 có Δ' = 4 − 15 < 0 nên y' < 0 với mọi x: hàm số nghịch biến trên ℝ.",
+      "wrong_explain": {
+        "1": "Hệ số của x³ âm và y' < 0 với mọi x, nên hàm số nghịch biến chứ không đồng biến.",
+        "2": "y' không đổi dấu nên không có cực trị.",
+        "3": "Hàm số nghịch biến trên toàn ℝ, không đổi chiều tại x = 0."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số y = x/(x² + 1) đồng biến trên khoảng nào? (Bài 1.4b)",
+      "choices": [
+        "(−1; 1)",
+        "(−∞; −1) và (1; +∞)",
+        "(−∞; 0)",
+        "(0; +∞)"
+      ],
+      "answer": 0,
+      "explain": "y' = (1 − x²)/(x² + 1)² > 0 khi −1 < x < 1.",
+      "wrong_explain": {
+        "1": "Trên hai khoảng này y' < 0, hàm số nghịch biến.",
+        "2": "Hàm số không đơn điệu trên cả (−∞; 0), vì y' đổi dấu tại x = −1.",
+        "3": "Trên (0; +∞) hàm số đổi chiều tại x = 1 nên không đồng biến trên cả khoảng."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hàm số y = 2x³ − 9x² + 12x − 5 có giá trị cực tiểu là? (Bài 1.7a)",
+      "expr": "2*2*2*2-9*2*2+12*2-5",
+      "answer": "-1",
+      "explain": "y' = 6(x − 1)(x − 2). Cực đại tại x = 1 (y = 0), cực tiểu tại x = 2, y_CT = 16 − 36 + 24 − 5 = −1."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hàm số y = x⁴ − 4x² + 2 có giá trị cực tiểu là? (Bài 1.7b)",
+      "expr": "2*2-4*2+2",
+      "answer": "-2",
+      "explain": "y' = 4x³ − 8x = 0 khi x = 0 hoặc x = ±√2. Cực tiểu tại x = ±√2 với y = 4 − 8 + 2 = −2."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho y = (x² − 2x + 3)/(x − 1). Các cực trị của hàm số là? (Bài 1.7c)",
+      "choices": [
+        "y_CĐ = 2√2 tại x = 1 + √2; y_CT = −2√2 tại x = 1 − √2",
+        "y_CĐ = −2√2 tại x = 1 − √2; y_CT = 2√2 tại x = 1 + √2",
+        "y_CĐ = 2 tại x = 0; y_CT = 4 tại x = 2",
+        "Hàm số không có cực trị"
+      ],
+      "answer": 1,
+      "explain": "y = x − 1 + 2/(x − 1), y' = (x² − 2x − 1)/(x − 1)² = 0 khi x = 1 ± √2. Tại x = 1 − √2 (cực đại) y = −2√2; tại x = 1 + √2 (cực tiểu) y = 2√2.",
+      "wrong_explain": {
+        "0": "Hai giá trị bị đảo dấu: tại x = 1 + √2 hàm số đạt cực tiểu, không phải cực đại.",
+        "2": "Giá trị y(0) = −3 và y(2) = 3 không phải điểm cực trị của hàm số.",
+        "3": "y' đổi dấu tại x = 1 ± √2, nên hàm số có hai cực trị."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số y = √(4x − 2x²) trên tập xác định có giá trị lớn nhất và nhỏ nhất là? (Bài 1.7d)",
+      "choices": [
+        "max = √2 tại x = 1; min = 0 tại x = 0 và x = 2",
+        "max = 2 tại x = 1; min = 0 tại x = 0",
+        "max = 0; min = −√2 tại x = 2",
+        "max = √2 tại x = 0; min = 0 tại x = 1"
+      ],
+      "answer": 0,
+      "explain": "Tập xác định [0; 2]. Biểu thức 4x − 2x² lớn nhất bằng 2 tại x = 1, nên y lớn nhất là √2; y = 0 tại x = 0 và x = 2.",
+      "wrong_explain": {
+        "1": "Giá trị lớn nhất là √2, không phải 2. Căn bậc hai của biểu thức lớn nhất bằng 2 là √2.",
+        "2": "Hàm số không nhận giá trị âm trong căn, nên min không thể là −√2.",
+        "3": "y(0) = 0 và y(1) = √2 nên đảo vai trò hai điểm."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số y = |x| có đạo hàm tại x = 0 hay không? (Bài 1.8a)",
+      "choices": [
+        "Không, vì giới hạn phải bằng 1 và giới hạn trái bằng −1",
+        "Có, vì giới hạn hai phía đều bằng 0",
+        "Có, vì giới hạn hai phía đều bằng 1",
+        "Không tồn tại giới hạn nào khi x → 0"
+      ],
+      "answer": 0,
+      "explain": "(f(x) − f(0))/(x − 0) = |x|/x bằng 1 khi x > 0 và bằng −1 khi x < 0, nên không có đạo hàm tại 0.",
+      "wrong_explain": {
+        "1": "Tỉ số |x|/x không tiến về 0 ở hai phía.",
+        "2": "Tỉ số |x|/x không tiến về 1 khi x < 0.",
+        "3": "Giới hạn hai phía đều tồn tại, nhưng khác nhau."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số lượng sản phẩm của một sản phẩm mới theo mô hình logistic f(t) = 5000/(1 + 5e^(−t)) (t là năm). Đạo hàm f'(t) lớn nhất khi t = ? (năm, làm tròn đến hai chữ số, ghi số nguyên gần nhất)",
+      "expr": "2",
+      "answer": "2",
+      "explain": "f'(t) đạt lớn nhất khi f''(t) = 0, tức e^(−t) = 1/5, t = ln 5 ≈ 1,61 năm. Số nguyên gần nhất là 2 năm."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Số dân của thị trấn (nghìn người) sau t năm kể từ năm 2000 là N(t) = (25t + 10)/(t + 5). Số dân vào năm 2015 là bao nhiêu nghìn người? (nhập dạng phân số, ví dụ 77/4)",
+      "expr": "(25*15+10)/20",
+      "answer": "77/4",
+      "explain": "N(15) = (375 + 10)/20 = 385/20 = 77/4 = 19,25 nghìn người."
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với N(t) = (25t + 10)/(t + 5) ở trên, giới hạn lim N(t) khi t → +∞ (nghìn người) là?",
+      "expr": "25",
+      "answer": "25",
+      "explain": "Chia tử và mẫu cho t: N(t) → 25. Vì N'(t) = 115/(t + 5)² > 0 nên số dân luôn tăng nhưng không vượt quá 25 nghìn người."
+    },
+    {
+      "id": "q11",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị lớn nhất của y = −x² + 4x + 3 là? (Bài 1.10a)",
+      "expr": "-(2*2)+4*2+3",
+      "answer": "7",
+      "explain": "Đỉnh parabol tại x = 2, y(2) = −4 + 8 + 3 = 7. Hệ số của x² âm nên đây là giá trị lớn nhất."
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị lớn nhất của y = 2x² − 6x + 3 trên đoạn [−1; 2] là? (Bài 1.12a)",
+      "expr": "2*(-1)*(-1)-6*(-1)+3",
+      "answer": "11",
+      "explain": "Đỉnh parabol x = 1,5 cho giá trị nhỏ nhất −3/2. Trên [−1; 2], y(−1) = 11 và y(2) = −1, nên giá trị lớn nhất là 11."
+    },
+    {
+      "id": "q13",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị nhỏ nhất của y = x³ − 3x² + 2 trên đoạn [0; 3] là? (Bài 1.12b)",
+      "expr": "2*2*2-3*2*2+2",
+      "answer": "-2",
+      "explain": "y' = 3x² − 6x = 0 khi x = 0 hoặc x = 2. y(0) = 2, y(2) = −2, y(3) = 2. Giá trị nhỏ nhất là −2."
+    },
+    {
+      "id": "q14",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong các hình chữ nhật có chu vi 24 cm, diện tích lớn nhất là bao nhiêu cm²? (Bài 1.13)",
+      "expr": "6*6",
+      "answer": "36",
+      "explain": "Với hai cạnh a, b có a + b = 12, diện tích ab ≤ 36, dấu bằng khi a = b = 6: hình vuông cạnh 6 cm."
+    },
+    {
+      "id": "q15",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hộp không nắp đáy vuông có diện tích bề mặt 108 cm² (Bài 1.14). Thể tích lớn nhất của hộp là bao nhiêu cm³?",
+      "expr": "6*6*3",
+      "answer": "108",
+      "explain": "Đáy cạnh x, chiều cao h: x² + 4xh = 108 nên h = (108 − x²)/(4x). V = x(108 − x²)/4, V' = 0 khi x = 6, h = 3. V(6) = 36·3 = 108 cm³."
+    },
+    {
+      "id": "q16",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bình trụ dung tích 1 000 cm³ có chi phí C(r) = 2,4πr² + 1500/r (nghìn đồng), với r là bán kính đáy. Chi phí nhỏ nhất khi nào? (Bài 1.15)",
+      "choices": [
+        "C'(r) = 0, tức 4,8πr = 1500/r²",
+        "C'(r) = 2,4πr",
+        "r = h",
+        "C(r) = 0"
+      ],
+      "answer": 0,
+      "explain": "Điểm tới hạn là nghiệm của C'(r) = 4,8πr − 1500/r² = 0; khảo sát dấu C' để kết luận đó là điểm cực tiểu, cũng là chi phí nhỏ nhất.",
+      "wrong_explain": {
+        "1": "2,4πr không phải đạo hàm của C(r) vì số hạng 1500/r có đạo hàm khác.",
+        "2": "Điều kiện r = h không liên quan trực tiếp đến cực tiểu của C(r).",
+        "3": "C(r) luôn dương nên không thể bằng 0."
+      }
+    },
+    {
+      "id": "q17",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đồ thị hàm số y = 2x²/(x² − 1) có các đường tiệm cận nào? (Bài 1.16b)",
+      "choices": [
+        "y = 2; x = 1 và x = −1",
+        "y = 0; x = 1 và x = −1",
+        "y = 2x; x = 0",
+        "y = 2; x = 0"
+      ],
+      "answer": 0,
+      "explain": "lim y = 2 khi x → ±∞, và mẫu x² − 1 = 0 tại x = ±1 với tử 2x² khác 0.",
+      "wrong_explain": {
+        "1": "Tiệm cận ngang là y = 2, không phải y = 0.",
+        "2": "Đồ thị không có tiệm cận xiên và đường x = 0 không phải tiệm cận.",
+        "3": "Có hai tiệm cận đứng x = ±1, không chỉ x = 0."
+      },
+      "figure": "figures/bt-1-16.svg"
+    },
+    {
+      "id": "q18",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đường thẳng x = 1 có phải là tiệm cận đứng của đồ thị hàm số y = (x² + 2x − 3)/(x − 1) không? (Bài 1.17)",
+      "choices": [
+        "Không, vì y = x + 3 với mọi x ≠ 1 nên không có giới hạn vô cực tại x = 1",
+        "Có, vì mẫu số bằng 0 tại x = 1",
+        "Có, vì tử số bằng 0 tại x = 1",
+        "Có, vì đồ thị không xác định tại x = 1"
+      ],
+      "answer": 0,
+      "explain": "Tử số x² + 2x − 3 = (x − 1)(x + 3) nên y = x + 3 khi x ≠ 1; x = 1 là điểm bị khử, giới hạn hữu hạn, không phải tiệm cận đứng.",
+      "wrong_explain": {
+        "1": "Mẫu bằng 0 là điều kiện cần nhưng chưa đủ; cần giới hạn vô cực thực sự.",
+        "2": "Tử số bằng 0 tại x = 1 chính là lý do x = 1 bị khử, không tạo tiệm cận.",
+        "3": "Đồ thị không xác định tại một điểm không đủ để có tiệm cận đứng."
+      }
+    },
+    {
+      "id": "q19",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đồ thị hàm số y = (3 − x)/(2x + 1) có các đường tiệm cận nào? (Bài 1.18a)",
+      "choices": [
+        "x = −1/2 và y = −1/2",
+        "x = 1/2 và y = −1",
+        "x = −1/2 và y = 3",
+        "Chỉ có x = −1/2"
+      ],
+      "answer": 0,
+      "explain": "Mẫu 2x + 1 = 0 tại x = −1/2; lim y = −1/2 khi x → ±∞.",
+      "wrong_explain": {
+        "1": "Tiệm cận đứng là x = −1/2, không phải x = 1/2.",
+        "2": "Tiệm cận ngang là y = −1/2, không phải y = 3.",
+        "3": "Đồ thị còn có tiệm cận ngang y = −1/2."
+      }
+    },
+    {
+      "id": "q20",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đồ thị hàm số y = (2x² + x − 1)/(x + 2) có tiệm cận xiên là? (Bài 1.18b)",
+      "choices": [
+        "y = 2x − 3",
+        "y = 2x + 1",
+        "y = x − 2",
+        "Không có tiệm cận xiên"
+      ],
+      "answer": 0,
+      "explain": "Chia: 2x² + x − 1 = (x + 2)(2x − 3) + 5, nên y = 2x − 3 + 5/(x + 2) và 5/(x + 2) → 0.",
+      "wrong_explain": {
+        "1": "Phép chia cho thấy phần dư bằng 5 nên hệ số b là −3, không phải +1.",
+        "2": "Hệ số a của tiệm cận xiên là 2, không phải 1.",
+        "3": "Hàm phân thức có bậc tử lớn hơn bậc mẫu đúng một, nên luôn có tiệm cận xiên."
+      }
+    },
+    {
+      "id": "q21",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số f(x) = (2x + 50)/x là chi phí trung bình (triệu đồng/sản phẩm). Nhận xét nào đúng? (Bài 1.19)",
+      "choices": [
+        "f(x) giảm trên (0; +∞) và lim f(x) = 2 khi x → +∞: chi phí trung bình giảm dần và tiến tới 2 triệu đồng khi sản xuất nhiều",
+        "f(x) tăng không giới hạn khi x tăng",
+        "Chi phí cố định bằng 2 triệu đồng và không đổi",
+        "f(x) không có ý nghĩa thực tiễn"
+      ],
+      "answer": 0,
+      "explain": "f(x) = 2 + 50/x, f'(x) = −50/x² < 0 nên f giảm; khi x lớn, 50/x → 0 nên f → 2 (chi phí biến đổi cho mỗi sản phẩm).",
+      "wrong_explain": {
+        "1": "Ngược lại, f giảm khi x tăng vì f'(x) < 0.",
+        "2": "Hằng số 2 là chi phí biến đổi cho mỗi sản phẩm, không phải chi phí cố định.",
+        "3": "Hàm f có ý nghĩa rõ ràng: đó là chi phí trung bình, và đồ thị thể hiện điều này."
+      }
+    },
+    {
+      "id": "q22",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Mảnh vườn hình chữ nhật có diện tích 144 m², một cạnh x (m). Chu vi P(x) = 2x + 288/x. Đồ thị của y = P(x) có tiệm cận đứng và tiệm cận xiên là? (Bài 1.20b)",
+      "choices": [
+        "x = 0 và y = 2x",
+        "y = 0 và x = 144",
+        "y = 2 và x = 0",
+        "Không có tiệm cận"
+      ],
+      "answer": 0,
+      "explain": "Chu vi P(x) = 2x + 288/x: tiệm cận đứng x = 0 và vì 288/x → 0 nên tiệm cận xiên y = 2x. Trong thực tế x > 0 nên đường x = 0 chỉ là giới hạn của bài toán.",
+      "wrong_explain": {
+        "1": "Mẫu số là x, nên tiệm cận đứng là x = 0; không có tiệm cận ngang y = 0.",
+        "2": "Không có tiệm cận ngang y = 2 vì P(x) → ∞ khi x → ∞.",
+        "3": "Hàm có tiệm cận, vì có cả tiệm cận đứng x = 0 và tiệm cận xiên y = 2x."
+      }
+    },
+    {
+      "id": "q23",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số y = (1/3)x³ − 2x² + 3x + 1 đồng biến trên khoảng nào? (Bài 1.2a)",
+      "choices": [
+        "(−∞; 1) và (3; +∞)",
+        "(1; 3)",
+        "(−∞; 3)",
+        "(−∞; +∞)"
+      ],
+      "answer": 0,
+      "explain": "y' = x² − 4x + 3 = (x − 1)(x − 3) > 0 khi x < 1 hoặc x > 3.",
+      "wrong_explain": {
+        "1": "Trên (1; 3) đạo hàm âm nên hàm số nghịch biến.",
+        "2": "Hàm số nghịch biến trên (1; 3) nên không đồng biến trên cả (−∞; 3).",
+        "3": "y' đổi dấu tại x = 1 và x = 3 nên hàm số không đồng biến trên toàn ℝ."
+      }
+    },
+    {
+      "id": "q24",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số y = (2x − 1)/(x + 2) có khoảng đơn điệu nào? (Bài 1.3a)",
+      "choices": [
+        "Đồng biến trên (−∞; −2) và (−2; +∞)",
+        "Nghịch biến trên (−∞; −2) và (−2; +∞)",
+        "Đồng biến trên ℝ",
+        "Có cực trị tại x = −2"
+      ],
+      "answer": 0,
+      "explain": "y' = 5/(x + 2)² > 0 với mọi x ≠ −2, nên hàm số đồng biến trên mỗi khoảng xác định.",
+      "wrong_explain": {
+        "1": "y' > 0 nên hàm số đồng biến, không nghịch biến.",
+        "2": "Hàm số không xác định tại x = −2 nên không đồng biến trên toàn ℝ.",
+        "3": "x = −2 không thuộc tập xác định nên không thể là điểm cực trị."
+      }
+    },
+    {
+      "id": "q25",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số y = (x² + x + 4)/(x − 3) đồng biến trên khoảng nào? (Bài 1.3b)",
+      "choices": [
+        "(−∞; −1) và (7; +∞)",
+        "(−1; 7)",
+        "(−∞; 3) và (3; +∞)",
+        "(−∞; +∞)"
+      ],
+      "answer": 0,
+      "explain": "y' = (x² − 6x − 7)/(x − 3)² = (x − 7)(x + 1)/(x − 3)² > 0 khi x < −1 hoặc x > 7.",
+      "wrong_explain": {
+        "1": "Trên (−1; 7) đạo hàm âm nên hàm số nghịch biến.",
+        "2": "Hàm số đổi chiều tại x = −1 và x = 7, nên không đồng biến trên cả hai khoảng này.",
+        "3": "y' đổi dấu tại x = −1 và x = 7, nên hàm số không đồng biến trên toàn ℝ."
+      }
+    },
+    {
+      "id": "q26",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số y = √(4 − x²) đồng biến trên khoảng nào? (Bài 1.4a)",
+      "choices": [
+        "(−2; 0)",
+        "(0; 2)",
+        "(−2; 2)",
+        "(−∞; 0)"
+      ],
+      "answer": 0,
+      "explain": "Tập xác định [−2; 2]; y' = −x/√(4 − x²) > 0 khi x < 0, nên hàm số đồng biến trên (−2; 0).",
+      "wrong_explain": {
+        "1": "Trên (0; 2) y' < 0 nên hàm số nghịch biến.",
+        "2": "Hàm số đổi chiều tại x = 0 nên không đơn điệu trên cả (−2; 2).",
+        "3": "Hàm số không xác định với x < −2 nên không thể đồng biến trên (−∞; 0)."
+      }
+    },
+    {
+      "id": "q27",
+      "level": "Hiểu",
+      "type": "fill",
+      "figure": "figures/bt-1-1a.svg",
+      "stem": "Hàm số y = x³ − (3/2)x² (Hình 1.11) có giá trị cực tiểu là? (Bài 1.1a)",
+      "expr": "1*1*1-3/2*1*1",
+      "answer": "-1/2",
+      "explain": "y' = 3x² − 3x = 3x(x − 1) = 0 khi x = 0 hoặc x = 1. Cực đại tại x = 0 (y = 0), cực tiểu tại x = 1, y_CT = 1 − 3/2 = −1/2."
+    },
+    {
+      "id": "q28",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "figure": "figures/bt-1-1b.svg",
+      "stem": "Hàm số y = ∛((x² − 4)²) (Hình 1.12) đồng biến trên khoảng nào? (Bài 1.1b)",
+      "choices": [
+        "(−2; 0) và (2; +∞)",
+        "(−∞; −2) và (0; 2)",
+        "(0; 2)",
+        "(−∞; +∞)"
+      ],
+      "answer": 0,
+      "explain": "y' = 4x/(3∛(x² − 4)). Với |x| > 2 thì y' cùng dấu với x; với |x| < 2 thì y' cùng dấu với −x. Do đó hàm số đồng biến trên (−2; 0) và (2; +∞).",
+      "wrong_explain": {
+        "1": "Đây là các khoảng nghịch biến của hàm số.",
+        "2": "Trên (0; 2) hàm số nghịch biến, không đồng biến.",
+        "3": "Hàm số đổi chiều tại x = 0 và không xác định đạo hàm tại x = ±2 nên không đơn điệu trên toàn ℝ."
+      }
+    },
+    {
+      "id": "q29",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "figure": "figures/bt-1-6.svg",
+      "stem": "Cho đồ thị đạo hàm y = f'(x) (Hình 1.13). Hàm số f(x) đồng biến trên khoảng nào? (Bài 1.6a)",
+      "choices": [
+        "(2; 4) và (6; +∞)",
+        "(0; 2) và (4; 6)",
+        "(1; 3) và (5; 7)",
+        "(0; 1) và (3; 5)"
+      ],
+      "answer": 0,
+      "explain": "f đồng biến khi f'(x) > 0, tức đồ thị y = f'(x) nằm phía trên trục hoành: trên (2; 4) và (6; +∞).",
+      "wrong_explain": {
+        "1": "Trên (0; 2) và (4; 6) đồ thị y = f'(x) nằm dưới trục hoành, nên f nghịch biến.",
+        "2": "Trên (1; 3) và (5; 7) đạo hàm đổi dấu, nên hàm số không đơn điệu trên các khoảng này.",
+        "3": "Trên (0; 1) đạo hàm âm, và trên (3; 5) đạo hàm đổi dấu; không khoảng nào trong phương án là khoảng đồng biến."
+      }
+    },
+    {
+      "id": "q30",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "figure": "figures/bt-1-6.svg",
+      "stem": "Dựa vào đồ thị y = f'(x) (Hình 1.13), hàm số f(x) đạt cực đại tại điểm nào? (Bài 1.6b)",
+      "choices": [
+        "x = 4",
+        "x = 2",
+        "x = 5",
+        "x = 6"
+      ],
+      "answer": 0,
+      "explain": "Tại x = 4, f'(x) đổi dấu từ dương sang âm nên f đạt cực đại tại x = 4.",
+      "wrong_explain": {
+        "1": "Tại x = 2, f' đổi dấu từ âm sang dương: đó là điểm cực tiểu.",
+        "2": "Tại x = 5, f' đạt cực tiểu nhưng vẫn âm ở hai phía, không đổi dấu, nên f không có cực trị tại đó.",
+        "3": "Tại x = 6, f' đổi dấu từ âm sang dương: đó là điểm cực tiểu của f."
+      }
+    },
+    {
+      "id": "q31",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "figure": "figures/bt-1-8b.svg",
+      "stem": "Hàm số y = |x| (Hình 1.4) có cực trị tại x = 0 không? (Bài 1.8b)",
+      "choices": [
+        "Có, x = 0 là điểm cực tiểu vì |x| > 0 = f(0) với mọi x ≠ 0",
+        "Có, x = 0 là điểm cực đại vì |x| < f(0) với mọi x ≠ 0",
+        "Không, vì hàm số không có đạo hàm tại x = 0",
+        "Có, x = 0 vừa là cực đại vừa là cực tiểu"
+      ],
+      "answer": 0,
+      "explain": "f(x) = |x| ≥ 0 = f(0) với mọi x nên x = 0 là điểm cực tiểu, theo định nghĩa bằng bất đẳng thức. Cực trị không cần đạo hàm tồn tại.",
+      "wrong_explain": {
+        "1": "Ngược lại: f(x) ≥ f(0) với mọi x, nên đây là cực tiểu chứ không phải cực đại.",
+        "2": "Hàm số không có đạo hàm tại 0 nhưng vẫn có thể có cực trị; ở đây đó chính là cực tiểu.",
+        "3": "Một điểm không thể vừa là cực đại vừa là cực tiểu của cùng một hàm số tại cùng một điểm."
+      }
+    },
+    {
+      "id": "q32",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "figure": "figures/bt-1-16.svg",
+      "stem": "Theo đồ thị y = 2x²/(x² − 1) (Hình 1.26), giới hạn lim f(x) khi x → 1⁺ bằng? (Bài 1.16a)",
+      "choices": [
+        "+∞",
+        "−∞",
+        "2",
+        "0"
+      ],
+      "answer": 0,
+      "explain": "Khi x → 1⁺ thì x² − 1 → 0⁺ còn tử 2x² → 2 > 0, nên f(x) → +∞.",
+      "wrong_explain": {
+        "1": "Giới hạn −∞ xảy ra khi x → 1⁻ (mẫu tiến về 0 từ phía âm).",
+        "2": "Giá trị 2 là giới hạn khi x → ±∞, không phải khi x → 1⁺.",
+        "3": "Mẫu tiến về 0 còn tử không, nên giới hạn không thể là 0."
+      }
+    }
+  ]
+}

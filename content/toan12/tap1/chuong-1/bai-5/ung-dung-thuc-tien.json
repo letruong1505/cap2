@@ -1,0 +1,146 @@
+{
+  "id": "t12-chuong1-bai5-ung-dung-thuc-tien",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 12, tập 1",
+  "chapter": "Chương I. Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+  "lesson": "Bài 5. Ứng dụng đạo hàm để giải quyết một số vấn đề liên quan đến thực tiễn",
+  "section": "Phần 1: Tốc độ thay đổi của một đại lượng; Phần 2: Bài toán tối ưu hoá",
+  "bookPage": 33,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nếu y = f(x), tốc độ thay đổi trung bình của y đối với x trên đoạn [x₁; x₂] là (f(x₂) − f(x₁))/(x₂ − x₁). Giới hạn của tỉ số này khi x₂ → x₁ là tốc độ thay đổi tức thời của y tại x₁, bằng f'(x₁)."
+    },
+    {
+      "type": "text",
+      "content": "Nếu s = s(t) là hàm vị trí của vật chuyển động thẳng thì vận tốc tức thời là v(t) = s'(t), và gia tốc tức thời là a(t) = v'(t) = s''(t)."
+    },
+    {
+      "type": "text",
+      "content": "Nếu C = C(x) là hàm chi phí khi sản xuất x đơn vị hàng hoá thì C'(x) gọi là chi phí biên, xấp xỉ chi phí để sản xuất thêm một đơn vị hàng hoá tiếp theo."
+    },
+    {
+      "type": "text",
+      "content": "Bài toán tối ưu hoá: thiết lập hàm số cần tối ưu từ dữ kiện đề bài, tìm tập xác định phù hợp với ý nghĩa thực tiễn, khảo sát để tìm giá trị lớn nhất hoặc nhỏ nhất, rồi kết luận theo ngữ cảnh."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Vật được phóng thẳng đứng lên từ độ cao 2 m với vận tốc ban đầu 24,5 m/s, có độ cao h(t) = 2 + 24,5t − 4,9t² (mét). Tính vận tốc của vật sau 2 giây.",
+      "expr": "49/2-49/5*2",
+      "steps": [
+        "Vận tốc là v(t) = h'(t) = 24,5 − 9,8t.",
+        "v(2) = 24,5 − 9,8·2 = 4,9 m/s."
+      ],
+      "answer": "49/10"
+    },
+    {
+      "problem": "Với h(t) như trên, vật đạt độ cao lớn nhất khi nào và độ cao lớn nhất đó là bao nhiêu?",
+      "expr": "2+(49/2)*(5/2)-(49/10)*(5/2)*(5/2)",
+      "steps": [
+        "h là hàm bậc hai có hệ số a = −4,9 < 0 nên đạt giá trị lớn nhất tại t = −b/(2a) = 24,5/(2·4,9) = 2,5 giây.",
+        "Độ cao lớn nhất là h(2,5) = 2 + 24,5·2,5 − 4,9·2,5² = 32,625 mét."
+      ],
+      "answer": "261/8"
+    },
+    {
+      "problem": "Số lượng P(t) của một quần thể nấm men được mô hình hoá bởi P(t) = a/(b + e^(−0,75t)). Biết P(0) = 20 và P'(0) = 12. Tìm a, b và giá trị giới hạn của P(t) khi t → +∞.",
+      "expr": "25*4/5",
+      "steps": [
+        "Từ P(0) = a/(b + 1) = 20 và P'(0) = 0,75a/(b + 1)² = 12, suy ra a = 25 và b = 1/4.",
+        "Kiểm tra: P(0) = 25/(5/4) = 20.",
+        "Khi t → +∞, e^(−0,75t) → 0 nên P(t) → a/b = 100. Quần thể nấm men tiến dần tới 100 (đơn vị đã cho trong đề)."
+      ],
+      "answer": "20"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nếu s(t) là hàm vị trí của vật chuyển động thẳng, vận tốc tức thời v(t) được tính bằng công thức nào?",
+      "choices": [
+        "v(t) = s'(t)",
+        "v(t) = s(t)",
+        "v(t) = s''(t)",
+        "v(t) = s(t)/t"
+      ],
+      "answer": 0,
+      "explain": "Vận tốc tức thời là đạo hàm của hàm vị trí theo thời gian.",
+      "wrong_explain": {
+        "1": "s(t) là vị trí, không phải vận tốc.",
+        "2": "s''(t) là gia tốc, không phải vận tốc.",
+        "3": "s(t)/t là vận tốc trung bình trên khoảng từ 0 đến t, không phải vận tốc tức thời."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật chuyển động với phương trình s(t) = t³ − 6t (mét, giây). Vận tốc tức thời tại t = 2 là? (đơn vị m/s)",
+      "expr": "3*2*2-6",
+      "answer": "6",
+      "explain": "v(t) = s'(t) = 3t² − 6, nên v(2) = 12 − 6 = 6 m/s."
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Với s(t) = t³ − 6t, gia tốc tức thời tại t = 2 là? (đơn vị m/s²)",
+      "expr": "6*2",
+      "answer": "12",
+      "explain": "a(t) = s''(t) = 6t, nên a(2) = 12 m/s²."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Sân vận động có 55 000 chỗ. Giá vé hiện tại là 100 nghìn đồng, trung bình có 27 000 khán giả; mỗi lần giảm giá vé 10 nghìn đồng thì thêm khoảng 3 000 khán giả. Giá vé (nghìn đồng) để doanh thu lớn nhất là?",
+      "expr": "95",
+      "answer": "95",
+      "explain": "Gọi p là giá vé (nghìn đồng), số khán giả là 27 000 + 300(100 − p). Doanh thu R(p) = p(57 000 − 300p), R'(p) = 57 000 − 600p = 0 khi p = 95. Số khán giả khi đó 28 500 không vượt quá 55 000."
+    },
+    {
+      "id": "q05",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với bài toán giá vé ở trên, doanh thu lớn nhất (nghìn đồng) là?",
+      "expr": "95*(57000-300*95)",
+      "answer": "2707500",
+      "explain": "R(95) = 95 × 28 500 = 2 707 500 (nghìn đồng), tức khoảng 2,7 tỉ đồng."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chi phí biên C'(x) có ý nghĩa thực tiễn là gì?",
+      "choices": [
+        "Xấp xỉ chi phí để sản xuất thêm một đơn vị hàng hoá tiếp theo",
+        "Tổng chi phí khi sản xuất x đơn vị",
+        "Chi phí cố định khi không sản xuất gì",
+        "Số đơn vị hàng hoá sản xuất tối đa"
+      ],
+      "answer": 0,
+      "explain": "C'(x) là tốc độ thay đổi của chi phí theo số lượng, nên xấp xỉ chi phí của đơn vị thứ x + 1.",
+      "wrong_explain": {
+        "1": "Tổng chi phí là C(x), không phải đạo hàm của nó.",
+        "2": "Chi phí cố định là giá trị C(0), không phải C'(x).",
+        "3": "Số đơn vị tối đa không được xác định bởi đạo hàm chi phí biên."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Trong mô hình P(t) = a/(b + e^(−0,75t)) với a = 25, b = 1/4 (bài ví dụ), giới hạn của P(t) khi t → +∞ là?",
+      "expr": "25*4",
+      "answer": "100",
+      "explain": "Khi t → +∞, P(t) → a/b = 25/(1/4) = 100."
+    }
+  ]
+}

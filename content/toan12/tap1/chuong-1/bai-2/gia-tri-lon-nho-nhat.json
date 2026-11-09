@@ -1,0 +1,194 @@
+{
+  "id": "t12-chuong1-bai2-gtln-gtnn",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 12, tập 1",
+  "chapter": "Chương I. Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+  "lesson": "Bài 2. Giá trị lớn nhất và giá trị nhỏ nhất của hàm số",
+  "section": "Phần 1: Định nghĩa và cách tìm giá trị lớn nhất, nhỏ nhất",
+  "bookPage": 15,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cho hàm số y = f(x) xác định trên tập D. Số M được gọi là giá trị lớn nhất của f(x) trên D nếu f(x) ≤ M với mọi x thuộc D và tồn tại x₀ thuộc D sao cho f(x₀) = M. Kí hiệu M = max f(x)."
+    },
+    {
+      "type": "text",
+      "content": "Số m được gọi là giá trị nhỏ nhất của f(x) trên D nếu f(x) ≥ m với mọi x thuộc D và tồn tại x₀ thuộc D sao cho f(x₀) = m. Kí hiệu m = min f(x)."
+    },
+    {
+      "type": "text",
+      "content": "Khi nói giá trị lớn nhất, nhỏ nhất của hàm số mà không nói 'trên tập D' thì hiểu là trên toàn bộ tập xác định của hàm số."
+    },
+    {
+      "type": "text",
+      "content": "Để tìm giá trị lớn nhất và nhỏ nhất trên một tập D, ta thường lập bảng biến thiên của hàm số trên D rồi kết luận. Khi D là đoạn [a; b], ta so sánh giá trị f(a), f(b) với các giá trị f(x₀) tại các điểm cực trị x₀ thuộc (a; b)."
+    },
+    {
+      "type": "text",
+      "content": "Nếu hàm số liên tục trên đoạn [a; b] thì luôn có giá trị lớn nhất và giá trị nhỏ nhất trên đoạn đó. Nếu khoảng hoặc nửa khoảng có đầu mút không thuộc tập xác định hoặc tiến ra vô cực, giá trị lớn nhất hoặc nhỏ nhất có thể không tồn tại."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tìm giá trị lớn nhất của hàm số y = √(1 − x²) trên tập xác định [−1; 1].",
+      "expr": "1",
+      "steps": [
+        "Với mọi x thuộc [−1; 1], 0 ≤ 1 − x² ≤ 1 nên y ≤ 1; dấu bằng xảy ra khi x = 0.",
+        "Vậy max y = y(0) = 1, và min y = y(−1) = y(1) = 0."
+      ],
+      "answer": "1"
+    },
+    {
+      "problem": "Tìm giá trị nhỏ nhất của hàm số y = x − 2 + 1/x trên khoảng (0; +∞).",
+      "expr": "1-2+1",
+      "steps": [
+        "Ta có y' = 1 − 1/x²; y' = 0 khi x = 1 (vì x > 0).",
+        "Khi x → 0⁺ hoặc x → +∞ thì y → +∞, nên hàm số giảm trên (0; 1) và tăng trên (1; +∞).",
+        "Vậy min y = y(1) = 0. Hàm số không có giá trị lớn nhất."
+      ],
+      "answer": "0"
+    },
+    {
+      "problem": "Từ một tấm bìa hình vuông cạnh 60 cm, cắt bốn hình vuông bằng nhau ở bốn góc (cạnh x cm) rồi gập thành hộp chữ nhật không nắp. Tìm x để thể tích hộp lớn nhất, tính thể tích lớn nhất đó.",
+      "expr": "10*(60-2*10)*(60-2*10)",
+      "steps": [
+        "Đáy hộp là hình vuông cạnh 60 − 2x, chiều cao x, nên V(x) = x(60 − 2x)² = 4x³ − 240x² + 3600x với 0 < x < 30.",
+        "V'(x) = 12x² − 480x + 3600 = 0 khi x = 10 hoặc x = 30; chỉ x = 10 thuộc (0; 30).",
+        "Lập bảng biến thiên: V đạt cực đại tại x = 10, V(10) = 16000.",
+        "Vậy cắt hình vuông cạnh 10 cm, thể tích lớn nhất là 16000 cm³."
+      ],
+      "answer": "16000"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Số M là giá trị lớn nhất của hàm số y = f(x) trên tập D khi nào?",
+      "choices": [
+        "f(x) ≤ M với mọi x thuộc D và tồn tại x₀ thuộc D sao cho f(x₀) = M",
+        "f(x) ≥ M với mọi x thuộc D",
+        "f(x) = M với mọi x thuộc D",
+        "Tồn tại x₀ thuộc D sao cho f(x₀) ≤ M"
+      ],
+      "answer": 0,
+      "explain": "Giá trị lớn nhất phải là cận trên của mọi giá trị f(x) và được đạt tại ít nhất một điểm của D.",
+      "wrong_explain": {
+        "1": "Đây là định nghĩa của giá trị nhỏ nhất, không phải giá trị lớn nhất.",
+        "2": "Hàm số không cần có cùng giá trị M tại mọi x; điều kiện là f(x) không vượt quá M và M được đạt tại một điểm.",
+        "3": "Chỉ có f(x₀) ≤ M thì chưa đủ; M phải là giá trị lớn nhất và được đạt đúng bằng f(x₀)."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cho f(x) = x² − 2x trên đoạn [0; 3]. Giá trị lớn nhất của f(x) trên đoạn này là:",
+      "expr": "3*3-2*3",
+      "answer": "3",
+      "explain": "f(0) = 0, f(1) = −1, f(3) = 9 − 6 = 3. Giá trị lớn nhất là 3, đạt tại x = 3."
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Giá trị nhỏ nhất của f(x) = x² − 2x trên đoạn [0; 3] là:",
+      "expr": "1*1-2*1",
+      "choices": [
+        "0",
+        "-1",
+        "3",
+        "1"
+      ],
+      "answer": 1,
+      "explain": "f'(x) = 2x − 2 = 0 khi x = 1, f(1) = −1 là giá trị nhỏ nhất trên [0; 3].",
+      "wrong_explain": {
+        "0": "0 là f(0), giá trị tại đầu mút, không phải giá trị nhỏ nhất vì f(1) = −1 nhỏ hơn.",
+        "2": "3 là giá trị lớn nhất f(3), không phải giá trị nhỏ nhất.",
+        "3": "1 là hoành độ điểm cực tiểu, không phải giá trị nhỏ nhất. Giá trị cần tìm là f(1)."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giá trị nhỏ nhất của hàm số y = x − 2 + 1/x trên khoảng (0; +∞) là:",
+      "expr": "1-2+1",
+      "answer": "0",
+      "explain": "y' = 1 − 1/x² = 0 khi x = 1. Hàm số giảm trước x = 1 và tăng sau đó, nên min y = y(1) = 0."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số y = x − 2 + 1/x trên khoảng (0; +∞) có giá trị lớn nhất hay không?",
+      "choices": [
+        "Có, bằng 0",
+        "Không, vì y → +∞ khi x → 0⁺ và khi x → +∞",
+        "Có, bằng 1",
+        "Không, vì y' luôn dương"
+      ],
+      "answer": 1,
+      "explain": "Hàm số không bị chặn trên khi x tiến về 0⁺ hoặc +∞ nên không có giá trị lớn nhất.",
+      "wrong_explain": {
+        "0": "0 là giá trị nhỏ nhất, không phải giá trị lớn nhất, vì hàm số có thể lấy giá trị lớn tùy ý.",
+        "2": "Không có số nào là giá trị lớn nhất; hàm số lấy giá trị lớn tùy ý khi x gần 0 hoặc x rất lớn.",
+        "3": "y' = 1 − 1/x² đổi dấu tại x = 1 nên không luôn dương."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với hộp không nắp ở Ví dụ 3 (tấm bìa 60 cm, cắt cạnh x), thể tích lớn nhất của hộp (cm³) là:",
+      "expr": "10*(60-2*10)*(60-2*10)",
+      "answer": "16000",
+      "explain": "Thể tích lớn nhất đạt khi x = 10 cm: V = 10·40·40 = 16000 cm³."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Giá trị lớn nhất của y = x⁴ − 4x² + 3 trên đoạn [0; 4] là:",
+      "expr": "4*4*4*4-4*4*4+3",
+      "choices": [
+        "3",
+        "195",
+        "-1",
+        "256"
+      ],
+      "answer": 1,
+      "explain": "y' = 4x³ − 8x = 0 khi x = 0 hoặc x = ±√2. Ta có f(0) = 3, f(√2) = −1, f(4) = 256 − 64 + 3 = 195. Giá trị lớn nhất là 195.",
+      "wrong_explain": {
+        "0": "3 là f(0), chỉ là giá trị cực đại địa phương; f(4) = 195 lớn hơn.",
+        "2": "−1 là giá trị nhỏ nhất f(√2), không phải lớn nhất.",
+        "3": "256 là 4⁴, chưa trừ 4·4² và cộng 3. Phải tính đủ f(4) = 256 − 64 + 3."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Giá trị nhỏ nhất của y = sin x + cos x trên đoạn [0; 2π] là:",
+      "choices": [
+        "-1",
+        "-√2",
+        "0",
+        "-2"
+      ],
+      "answer": 1,
+      "explain": "Ta có y = √2·sin(x + π/4), có giá trị nhỏ nhất −√2 khi x + π/4 = 3π/2, tức x = 5π/4 thuộc [0; 2π].",
+      "wrong_explain": {
+        "0": "Hàm số nhận giá trị âm trên [0; 2π], nên giá trị nhỏ nhất khác 0.",
+        "2": "−1 không phải giá trị nhỏ nhất vì biên độ dao động của y là √2, lớn hơn 1.",
+        "3": "Biên độ của y là √2 nên giá trị nhỏ nhất là −√2, không phải −2."
+      }
+    }
+  ]
+}
