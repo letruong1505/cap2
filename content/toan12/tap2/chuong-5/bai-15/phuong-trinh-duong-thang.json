@@ -1,0 +1,546 @@
+{
+  "id": "t12-t2-chuong5-bai15-phuong-trinh-duong-thang",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 12, tập 2",
+  "chapter": "Chương V. Phương pháp toạ độ trong không gian",
+  "lesson": "Bài 15. Phương trình đường thẳng trong không gian",
+  "section": "1. Phương trình đường thẳng; 2. Hai đường thẳng vuông góc; 3. Vị trí tương đối giữa hai đường thẳng; Bài tập",
+  "bookPage": 41,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Vectơ u ≠ 0 được gọi là vectơ chỉ phương của đường thẳng Δ nếu giá của u song song hoặc trùng với Δ. Đường thẳng được xác định khi biết một điểm mà nó đi qua và một vectơ chỉ phương."
+    },
+    {
+      "type": "text",
+      "content": "Đường thẳng Δ đi qua M₀(x₀; y₀; z₀) và có vectơ chỉ phương u = (a; b; c) có phương trình tham số x = x₀ + at, y = y₀ + bt, z = z₀ + ct (t ∈ ℝ). Nếu a, b, c đều khác 0 thì Δ có phương trình chính tắc (x − x₀)/a = (y − y₀)/b = (z − z₀)/c."
+    },
+    {
+      "type": "text",
+      "content": "Hai đường thẳng vuông góc với nhau khi và chỉ khi u₁ · u₂ = 0, với u₁, u₂ là các vectơ chỉ phương của chúng."
+    },
+    {
+      "type": "text",
+      "content": "Vị trí tương đối của hai đường thẳng Δ₁ (đi qua A₁, vectơ chỉ phương u₁) và Δ₂ (đi qua A₂, vectơ chỉ phương u₂): Δ₁ ∥ Δ₂ khi u₁ cùng phương u₂ và A₁ ∉ Δ₂; Δ₁ ≡ Δ₂ khi u₁ cùng phương u₂ và A₁ ∈ Δ₂; Δ₁ cắt Δ₂ khi [u₁, u₂] ≠ 0 và A₁A₂ · [u₁, u₂] = 0; Δ₁ chéo Δ₂ khi A₁A₂ · [u₁, u₂] ≠ 0."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Ví dụ 4: Viết phương trình tham số và chính tắc của đường thẳng đi qua M(1; −2; 4) và có vectơ chỉ phương u = (3; −5; 1).",
+      "proof": true,
+      "steps": [
+        "Phương trình tham số: x = 1 + 3t, y = −2 − 5t, z = 4 + t.",
+        "Phương trình chính tắc: (x − 1)/3 = (y + 2)/(−5) = (z − 4)/1."
+      ]
+    },
+    {
+      "problem": "Ví dụ 5: Viết phương trình tham số của đường thẳng đi qua M(−1; 4; 5) và vuông góc với mặt phẳng (α): 3x + 2y = 0.",
+      "proof": true,
+      "steps": [
+        "(α) có vectơ pháp tuyến n = (3; 2; 0), đường thẳng nhận n làm vectơ chỉ phương.",
+        "Phương trình: x = −1 + 3t, y = 4 + 2t, z = 5."
+      ]
+    },
+    {
+      "problem": "Ví dụ 6: Viết phương trình tham số và chính tắc của đường thẳng đi qua hai điểm A(1; 2; −1) và B(2; 4; 0).",
+      "proof": true,
+      "steps": [
+        "AB = (1; 2; 1) là vectơ chỉ phương.",
+        "Phương trình tham số: x = 1 + t, y = 2 + 2t, z = −1 + t; chính tắc: (x − 1)/1 = (y − 2)/2 = (z + 1)/1."
+      ]
+    },
+    {
+      "problem": "Ví dụ 7: Chứng minh hai đường thẳng Δ₁: (x = 1 + 2t, y = −1 − 3t, z = 2 − t) và Δ₂: (x = 2 + s, y = 1 − 2s, z = 3 + 8s) vuông góc với nhau.",
+      "proof": true,
+      "steps": [
+        "u₁ = (2; −3; −1), u₂ = (1; −2; 8), u₁ · u₂ = 2 + 6 − 8 = 0 nên Δ₁ ⊥ Δ₂."
+      ]
+    },
+    {
+      "problem": "Ví dụ 8: Chứng minh hai đường thẳng Δ₁: (x = 1 + t, y = 2 − t, z = −1 + 2t) và Δ₂: (x − 4)/3 = (y + 1)/1 = z/(−1) vuông góc và chéo nhau.",
+      "proof": true,
+      "steps": [
+        "u₁ = (1; −1; 2), u₂ = (3; 1; −1), u₁ · u₂ = 0 nên Δ₁ ⊥ Δ₂.",
+        "A₁(1; 2; −1), A₂(4; −1; 0), A₁A₂ = (3; −3; 1), [u₁, u₂] = (−1; 7; 4), A₁A₂ · [u₁, u₂] = −20 ≠ 0 nên Δ₁ chéo Δ₂."
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 2a: đường thẳng Δ: x = 2 + t, y = 3t, z = 1 + t. Điểm thuộc Δ và vectơ chỉ phương là?",
+      "choices": [
+        "A(2; 0; 1) thuộc Δ, u = (1; 3; 1)",
+        "A(2; 3; 1) thuộc Δ, u = (1; 3; 1)",
+        "A(2; 0; 1) thuộc Δ, u = (2; 3; 1)",
+        "O(0; 0; 0) thuộc Δ, u = (1; 3; 1)"
+      ],
+      "answer": 0,
+      "explain": "Với t = 0 ta có (2; 0; 1) ∈ Δ; các hệ số của t cho vectơ chỉ phương (1; 3; 1).",
+      "wrong_explain": {
+        "1": "Với x = 2 thì t = 0, khi đó y = 0 ≠ 3, nên (2; 3; 1) không thuộc Δ.",
+        "2": "Vectơ chỉ phương là các hệ số của t, tức (1; 3; 1), không phải (2; 3; 1).",
+        "3": "Với x = 0 thì t = −2, khi đó y = −6 ≠ 0, nên O không thuộc Δ."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 4: phương trình chính tắc của đường thẳng đi qua M(1; −2; 4) với u = (3; −5; 1) là?",
+      "choices": [
+        "(x − 1)/3 = (y + 2)/(−5) = (z − 4)/1",
+        "(x + 1)/3 = (y − 2)/(−5) = (z + 4)/1",
+        "(x − 1)/3 = (y + 2)/5 = (z − 4)/1",
+        "(x − 1)/3 = (y + 2)/(−5) = (z + 4)/1"
+      ],
+      "answer": 0,
+      "explain": "Thay điểm M và vectơ chỉ phương vào dạng (x − x₀)/a = (y − y₀)/b = (z − z₀)/c.",
+      "wrong_explain": {
+        "1": "Điểm đi qua bị đổi dấu: phải là (1; −2; 4), không phải (−1; 2; −4).",
+        "2": "Thành phần thứ hai của vectơ chỉ phương là −5, không phải 5.",
+        "3": "Điểm đi qua có z₀ = 4, không phải −4."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 5: đường thẳng đi qua M(−1; 4; 5) và vuông góc với (α): 3x + 2y = 0 có phương trình tham số là?",
+      "choices": [
+        "x = −1 + 3t, y = 4 + 2t, z = 5",
+        "x = −1 + 3t, y = 4 + 2t, z = 5 + t",
+        "x = −1 + 2t, y = 4 + 3t, z = 5",
+        "x = 1 + 3t, y = −4 + 2t, z = 5"
+      ],
+      "answer": 0,
+      "explain": "Vectơ pháp tuyến n = (3; 2; 0) của (α) là vectơ chỉ phương của đường thẳng cần tìm.",
+      "wrong_explain": {
+        "1": "Vectơ chỉ phương (3; 2; 1) không cùng phương với n = (3; 2; 0).",
+        "2": "Đã đổi chỗ hai thành phần của vectơ chỉ phương (3; 2; 0).",
+        "3": "Điểm đi qua phải là M(−1; 4; 5), không phải (1; −4; 5)."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ví dụ 7: tích vô hướng u₁ · u₂ với u₁ = (2; −3; −1), u₂ = (1; −2; 8) bằng?",
+      "expr": "2*1+(-3)*(-2)+(-1)*8",
+      "answer": "0",
+      "explain": "2 + 6 − 8 = 0 nên hai đường thẳng vuông góc."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 6: phương trình chính tắc của đường thẳng đi qua A(1; 2; −1) và B(2; 4; 0) là?",
+      "choices": [
+        "(x − 1)/1 = (y − 2)/2 = (z + 1)/1",
+        "(x − 1)/1 = (y − 2)/2 = (z − 1)/1",
+        "(x − 1)/2 = (y − 2)/4 = (z + 1)/1",
+        "(x − 1)/1 = (y − 2)/2 = (z + 1)/(−1)"
+      ],
+      "answer": 0,
+      "explain": "AB = (1; 2; 1) là vectơ chỉ phương, đường thẳng đi qua A(1; 2; −1).",
+      "wrong_explain": {
+        "1": "Điểm (1; 2; 1) không thuộc đường thẳng: khi x = 1 thì z phải bằng −1.",
+        "2": "Vectơ chỉ phương là (1; 2; 1), không phải (2; 4; 1).",
+        "3": "Thành phần thứ ba của AB là 0 − (−1) = 1, không phải −1."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Luyện tập 7: đường thẳng Δ: (x − 1)/2 = y/1 = (z − 1)/(−1) có vectơ chỉ phương u = (2; 1; −1). Tích vô hướng u với vectơ chỉ phương (0; 0; 1) của Oz là?",
+      "expr": "2*0+1*0+(-1)*1",
+      "answer": "-1",
+      "explain": "−1 ≠ 0 nên Δ không vuông góc với Oz."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ví dụ 9: [u₁, u₂] với u₁ = (−1; 1; 2), u₂ = (1; 1; 2) có thành phần thứ hai bằng?",
+      "expr": "2*1-(-1)*2",
+      "answer": "4",
+      "explain": "Thành phần thứ hai là 2·1 − (−1)·2 = 4 nên [u₁, u₂] = (0; 4; −2)."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ví dụ 9: tích vô hướng A₁A₂ · [u₁, u₂] với A₁A₂ = (−7; 3; 6), [u₁, u₂] = (0; 4; −2) bằng?",
+      "expr": "(-7)*0+3*4+6*(-2)",
+      "answer": "0",
+      "explain": "0 + 12 − 12 = 0 nên hai đường thẳng cắt nhau (vì [u₁, u₂] ≠ 0)."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 8: vị trí tương đối của Δ₁: (x − 3)/1 = y/(−2) = (z − 1)/3 và Δ₂: (x − 1)/1 = (y − 2)/(−2) = z/3 là?",
+      "choices": [
+        "Song song",
+        "Trùng nhau",
+        "Cắt nhau",
+        "Chéo nhau"
+      ],
+      "answer": 0,
+      "explain": "Hai đường có cùng vectơ chỉ phương (1; −2; 3); điểm (3; 0; 1) không thuộc Δ₂ nên Δ₁ ∥ Δ₂.",
+      "wrong_explain": {
+        "1": "Điểm (3; 0; 1) không thuộc Δ₂ vì (3 − 1)/1 = 2 ≠ 1 = (0 − 2)/(−2), nên không trùng.",
+        "2": "Hai đường cùng phương nên không cắt nhau.",
+        "3": "Hai đường cùng phương nên không chéo nhau."
+      }
+    },
+    {
+      "id": "q10",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 10: vị trí tương đối của Δ₁: (x, y, z) = (1 + 2t, 3 + t, 1 − t) và Δ₂: (x, y, z) = (s, 1 + 2s, 3s) là?",
+      "choices": [
+        "Chéo nhau",
+        "Song song",
+        "Cắt nhau",
+        "Trùng nhau"
+      ],
+      "answer": 0,
+      "explain": "u₁ = (2; 1; −1), u₂ = (1; 2; 3) không cùng phương; [u₁, u₂] = (5; −7; 3), A₁A₂ = (−1; −2; −1), A₁A₂ · [u₁, u₂] = 6 ≠ 0 nên chéo nhau.",
+      "wrong_explain": {
+        "1": "Hai vectơ chỉ phương (2; 1; −1) và (1; 2; 3) không cùng phương.",
+        "2": "Tích hỗn tạp A₁A₂ · [u₁, u₂] = 6 ≠ 0 nên hai đường không cắt nhau.",
+        "3": "Hai đường không cùng phương nên không trùng nhau."
+      }
+    },
+    {
+      "id": "q11",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Luyện tập 9b: đường thẳng Δ₁ đi qua A(1; −2; 3), u₁ = (1; 1; 4); trục Ox có vectơ chỉ phương e = (1; 0; 0). Tích vô hướng OA · [u₁, e] với O là gốc tọa độ bằng?",
+      "expr": "0*1+4*(-2)+(-1)*3",
+      "answer": "-11",
+      "explain": "[u₁, e] = (0; 4; −1), OA · [u₁, e] = −8 − 3 = −11 ≠ 0 nên Δ₁ và Ox chéo nhau."
+    },
+    {
+      "id": "q12",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 9c: đường thẳng Δ₂: (x + 1)/1 = (y + 1)/1 = z/4 và Δ₃: (x + 2)/1 = (y + 2)/1 = (z + 4)/4 là?",
+      "choices": [
+        "Trùng nhau",
+        "Song song",
+        "Cắt nhau",
+        "Chéo nhau"
+      ],
+      "answer": 0,
+      "explain": "Cùng vectơ chỉ phương (1; 1; 4) và điểm (−2; −2; −4) ∈ Δ₂ cũng thuộc Δ₃ nên hai đường trùng nhau.",
+      "wrong_explain": {
+        "1": "Hai đường có cùng phương và chung điểm (−2; −2; −4), nên không chỉ song song.",
+        "2": "Hai đường có chung điểm nên không cắt nhau theo nghĩa giao điểm duy nhất.",
+        "3": "Hai đường cùng phương nên không chéo nhau."
+      }
+    },
+    {
+      "id": "q13",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vận dụng 1 (tình huống mở đầu): đường thẳng MN với M(2; 3; −4), N(−1; 0; 8) cắt mặt phẳng (Oxy) tại điểm D có tọa độ là?",
+      "choices": [
+        "(1; 2; 0)",
+        "(2; 3; 0)",
+        "(−1; 0; 0)",
+        "(0; 0; 0)"
+      ],
+      "answer": 0,
+      "explain": "Phương trình MN: x = 2 − 3t, y = 3 − 3t, z = −4 + 12t; z = 0 khi t = 1/3, khi đó D(1; 2; 0).",
+      "wrong_explain": {
+        "1": "Điểm (2; 3; 0) không nằm trên đường thẳng MN vì z = 0 không tương ứng với M.",
+        "2": "Điểm (−1; 0; 0) là hình chiếu của N lên Ox, không thuộc MN.",
+        "3": "O không nằm trên MN: khi x = 0 thì t = 2/3, khi đó z = 4 ≠ 0."
+      }
+    },
+    {
+      "id": "q14",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vận dụng 1c: tấm bìa là đĩa tâm O bán kính 3 trong mặt phẳng (Oxy), D(1; 2; 0) nằm giữa M và N. Tấm bìa có che khuất tầm nhìn không?",
+      "choices": [
+        "Có, vì |OD| = √5 < 3 và t = 1/3 ∈ (0; 1)",
+        "Không, vì D nằm ngoài tấm bìa",
+        "Có, vì D trùng O",
+        "Không, vì D không nằm giữa M và N"
+      ],
+      "answer": 0,
+      "explain": "|OD| = √(1 + 4) = √5 < 3 nên D nằm trong đĩa; t = 1/3 ∈ (0; 1) nên D nằm giữa M và N. Vậy tấm bìa che khuất.",
+      "wrong_explain": {
+        "1": "|OD| = √5 < 3 nên D nằm trong đĩa, không ngoài.",
+        "2": "D(1; 2; 0) không trùng O.",
+        "3": "t = 1/3 thuộc (0; 1) nên D nằm giữa M và N."
+      }
+    },
+    {
+      "id": "q15",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 5.11: đường thẳng Δ đi qua A(1; 1; 2) và song song với d: (x − 3)/2 = (y − 1)/1 = (z + 5)/3 có phương trình tham số là?",
+      "choices": [
+        "x = 1 + 2t, y = 1 + t, z = 2 + 3t",
+        "x = 1 + 3t, y = 1 + 2t, z = 2 + t",
+        "x = 3 + 2t, y = 1 + t, z = −5 + 3t",
+        "x = 1 + 2t, y = 1 + t, z = 2 − 3t"
+      ],
+      "answer": 0,
+      "explain": "Δ ∥ d nên nhận u = (2; 1; 3) làm vectơ chỉ phương và đi qua A(1; 1; 2).",
+      "wrong_explain": {
+        "1": "Vectơ chỉ phương (3; 2; 1) không phải (2; 1; 3) của d.",
+        "2": "Đường thẳng đi qua điểm (3; 1; −5) của d, không đi qua A(1; 1; 2).",
+        "3": "Thành phần thứ ba của vectơ chỉ phương phải là +3 để cùng phương với d."
+      }
+    },
+    {
+      "id": "q16",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 5.12: đường thẳng Δ đi qua A(2; −1; 4) và vuông góc với (P): x + 3y − z − 1 = 0 có phương trình tham số là?",
+      "choices": [
+        "x = 2 + t, y = −1 + 3t, z = 4 − t",
+        "x = 2 + t, y = −1 + 3t, z = 4 + t",
+        "x = 2 + 3t, y = −1 + t, z = 4 − t",
+        "x = 1 + t, y = 3t, z = 4 − t"
+      ],
+      "answer": 0,
+      "explain": "Δ nhận n = (1; 3; −1) làm vectơ chỉ phương và đi qua A(2; −1; 4).",
+      "wrong_explain": {
+        "1": "Vectơ chỉ phương (1; 3; 1) không cùng phương với n = (1; 3; −1).",
+        "2": "Hoán đổi hệ số: (3; 1; −1) không phải vectơ pháp tuyến của (P).",
+        "3": "Đường thẳng đi qua (1; 0; 4), không phải A(2; −1; 4)."
+      }
+    },
+    {
+      "id": "q17",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 5.13: đường thẳng Δ đi qua A(2; 3; −1) và B(1; −2; 4) có phương trình chính tắc là?",
+      "choices": [
+        "(x − 2)/1 = (y − 3)/5 = (z + 1)/(−5)",
+        "(x − 2)/1 = (y − 3)/(−5) = (z + 1)/5",
+        "(x − 2)/1 = (y − 3)/5 = (z + 1)/5",
+        "(x − 1)/1 = (y + 3)/5 = (z − 1)/(−5)"
+      ],
+      "answer": 0,
+      "explain": "AB = (−1; −5; 5) ∥ (1; 5; −5), đường thẳng đi qua A(2; 3; −1).",
+      "wrong_explain": {
+        "1": "Hai thành phần y và z của vectơ chỉ phương bị đổi dấu: (1; −5; 5) không cùng phương với AB.",
+        "2": "Thành phần z của vectơ chỉ phương phải là −5 (ngược dấu với thành phần y là 5), không phải 5.",
+        "3": "Điểm (1; −3; 1) không thuộc đường thẳng AB."
+      }
+    },
+    {
+      "id": "q18",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 5.14a: vị trí tương đối của Δ₁: (x, y, z) = (1 + 2t, 3 − t, 2 + 3t) và Δ₂: (x − 8)/(−1) = (y + 2)/1 = (z − 2)/2 là?",
+      "choices": [
+        "Cắt nhau",
+        "Song song",
+        "Chéo nhau",
+        "Trùng nhau"
+      ],
+      "answer": 0,
+      "explain": "u₁ = (2; −1; 3), u₂ = (−1; 1; 2), [u₁, u₂] = (−5; −7; 1) ≠ 0; A₁A₂ = (7; −5; 0), A₁A₂ · [u₁, u₂] = 0 nên cắt nhau.",
+      "wrong_explain": {
+        "1": "Hai vectơ chỉ phương (2; −1; 3) và (−1; 1; 2) không cùng phương.",
+        "2": "Tích hỗn tạp A₁A₂ · [u₁, u₂] = 0 nên hai đường không chéo nhau.",
+        "3": "Hai đường không cùng phương nên không trùng nhau."
+      }
+    },
+    {
+      "id": "q19",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bài 5.14b: thành phần thứ nhất của vectơ pháp tuyến [u₁, u₂] của mặt phẳng (P) chứa Δ₁ và Δ₂ (u₁ = (2; −1; 3), u₂ = (−1; 1; 2)) là?",
+      "expr": "(-1)*2-3*1",
+      "answer": "-5",
+      "explain": "Thành phần đầu là (−1)·2 − 3·1 = −5."
+    },
+    {
+      "id": "q20",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 5.14b: mặt phẳng (P) chứa Δ₁ và Δ₂ có phương trình là?",
+      "choices": [
+        "5x + 7y − z − 24 = 0",
+        "5x + 7y − z + 24 = 0",
+        "5x − 7y + z − 24 = 0",
+        "5x + 7y + z − 24 = 0"
+      ],
+      "answer": 0,
+      "explain": "Vectơ pháp tuyến (−5; −7; 1) và đi qua A₁(1; 3; 2): −5(x − 1) − 7(y − 3) + (z − 2) = 0 ⇔ 5x + 7y − z − 24 = 0.",
+      "wrong_explain": {
+        "1": "Hằng số sai dấu: thay A₁ được 5 + 21 − 2 + 24 ≠ 0.",
+        "2": "Hệ số của y sai dấu so với vectơ pháp tuyến.",
+        "3": "Hệ số của z phải là −1, không phải +1."
+      }
+    },
+    {
+      "id": "q21",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 5.15b: mặt phẳng (P) chứa hai đường song song Δ₁: (x − 1)/3 = (y − 3)/1 = (z − 2)/2 và Δ₂: (x − 1)/3 = (y + 1)/1 = z/2 có phương trình là?",
+      "choices": [
+        "x + y − 2z = 0",
+        "x + y − 2z + 1 = 0",
+        "x + y + 2z = 0",
+        "x − y − 2z = 0"
+      ],
+      "answer": 0,
+      "explain": "Hai đường có chung vectơ chỉ phương u = (3; 1; 2). Với A(1; 3; 2) ∈ Δ₁ và B(1; −1; 0) ∈ Δ₂, AB = (0; −4; −2) ∥ (0; 4; 2); [u, AB] ∝ (1; 1; −2), phương trình đi qua A là x + y − 2z = 0 (thỏa mãn B: 1 − 1 − 0 = 0).",
+      "wrong_explain": {
+        "1": "Thay A(1; 3; 2): 1 + 3 − 4 + 1 ≠ 0 nên hằng số sai.",
+        "2": "Hệ số của z sai dấu: thay A được 1 + 3 + 4 ≠ 0.",
+        "3": "Vectơ pháp tuyến (1; −1; −2) không vuông góc với (3; 1; 2)."
+      }
+    },
+    {
+      "id": "q22",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 5.16: vị trí tương đối của Δ₁: (x, y, z) = (−1 + t, 1, 3 + 2t) và Δ₂: (x, y, z) = (−1 + 2s, 2 + s, 1 + 3s) là?",
+      "choices": [
+        "Chéo nhau",
+        "Song song",
+        "Cắt nhau",
+        "Trùng nhau"
+      ],
+      "answer": 0,
+      "explain": "u₁ = (1; 0; 2), u₂ = (2; 1; 3), [u₁, u₂] = (−2; 1; 1), AB = (0; 1; −2) với A(−1; 1; 3), B(−1; 2; 1); AB · [u₁, u₂] = −1 ≠ 0 nên chéo nhau.",
+      "wrong_explain": {
+        "1": "Hai vectơ chỉ phương (1; 0; 2) và (2; 1; 3) không cùng phương.",
+        "2": "Hai đường không cắt nhau vì tích hỗn tạp khác 0.",
+        "3": "Hai đường không cùng phương nên không trùng nhau."
+      }
+    },
+    {
+      "id": "q23",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 5.17a: hai con đường có phương trình Δ₁: (x − 1)/2 = y/(−1) = (z + 1)/3 và Δ₂: (x − 3)/(−1) = (y + 1)/1 = z/1 có vuông góc với nhau không?",
+      "choices": [
+        "Có, vì u₁ · u₂ = 0",
+        "Không, vì u₁ · u₂ = 1",
+        "Có, vì u₁ và u₂ cùng phương",
+        "Không, vì hai đường song song"
+      ],
+      "answer": 0,
+      "explain": "u₁ = (2; −1; 3), u₂ = (−1; 1; 1), u₁ · u₂ = −2 − 1 + 3 = 0 nên vuông góc.",
+      "wrong_explain": {
+        "1": "Tính sai: 2·(−1) + (−1)·1 + 3·1 = 0, không phải 1.",
+        "2": "Hai vectơ chỉ phương không cùng phương.",
+        "3": "Hai đường không song song vì u₁ và u₂ không cùng phương."
+      }
+    },
+    {
+      "id": "q24",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 5.17b: nút giao thông có phải là nút giao thông khác mức (hai con đường không cắt nhau) không?",
+      "choices": [
+        "Có, vì hai đường thẳng chéo nhau",
+        "Không, vì hai đường vuông góc nên cắt nhau",
+        "Có, vì hai đường song song",
+        "Không, vì hai đường trùng nhau"
+      ],
+      "answer": 0,
+      "explain": "A₁A₂ = (2; −1; 1), [u₁, u₂] = (−4; −5; 1), A₁A₂ · [u₁, u₂] = −8 + 5 + 1 = −2 ≠ 0 nên hai đường chéo nhau, tức là nút khác mức.",
+      "wrong_explain": {
+        "1": "Vuông góc không suy ra cắt nhau; cần kiểm tra tích hỗn tạp.",
+        "2": "Hai đường không cùng phương nên không song song.",
+        "3": "Hai đường không cùng phương nên không trùng nhau."
+      }
+    },
+    {
+      "id": "q25",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 5.18a: viên đạn bắn từ A(1; 3; 4) với vận tốc v = (2; 1; 6). Có trúng mục tiêu M(7; 7/2; 21) không?",
+      "choices": [
+        "Không; khi x = 7 thì y = 6 và z = 22",
+        "Có; M nằm trên tia xuất phát từ A",
+        "Có; khi t = 3 viên đạn đến M",
+        "Có; M cùng phương với v"
+      ],
+      "answer": 0,
+      "explain": "Vị trí viên đạn là (1 + 2t; 3 + t; 4 + 6t). Khi x = 7 thì t = 3, khi đó (7; 6; 22) ≠ M nên không trúng.",
+      "wrong_explain": {
+        "1": "M không nằm trên tia: z = 21 cho t = 17/6, nhưng khi đó x = 1 + 17/3 ≠ 7.",
+        "2": "Khi t = 3 viên đạn đến (7; 6; 22), không phải M.",
+        "3": "AM = (6; 1/2; 17) không cùng phương với v = (2; 1; 6)."
+      }
+    },
+    {
+      "id": "q26",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 5.18b: mục tiêu đặt tại N(−3; 1; −8), viên đạn có trúng không?",
+      "choices": [
+        "Không; N ứng với t = −2 < 0 nên nằm phía sau điểm bắn",
+        "Có; khi t = −2 viên đạn đến N",
+        "Có; AN cùng phương với v",
+        "Không; tọa độ âm nên nằm ngoài không gian"
+      ],
+      "answer": 0,
+      "explain": "Với x = −3 thì t = −2; đây là thời điểm trước khi bắn nên viên đạn không đi tới N.",
+      "wrong_explain": {
+        "1": "t = −2 là thời điểm trước khi bắn, không phải thời điểm đạn đến N.",
+        "2": "AN = (−4; −2; −12) = −2v cùng phương nhưng ngược chiều, nên N nằm phía sau A.",
+        "3": "Tọa độ âm không làm điểm nằm ngoài không gian Oxyz."
+      }
+    },
+    {
+      "id": "q27",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hình 5.32: trên mặt đất, cây cột cao 6 m có chân tại O, đỉnh A(0; 0; 6); bóng đỉnh cột cách chân 3 m về hướng S60°E tại A'(3cos60°; 3cos30°; 0). Phương trình đường thẳng chứa tia nắng qua A là?",
+      "choices": [
+        "x = t, y = √3t, z = 6 − 4t",
+        "x = t, y = √3t, z = 6 + 4t",
+        "x = t, y = 2t, z = 6 − 4t",
+        "x = t, y = √3t, z = −4t"
+      ],
+      "answer": 0,
+      "explain": "AA' = (1,5; 3√3/2; −6) ∥ (1; √3; −4), đi qua A(0; 0; 6).",
+      "wrong_explain": {
+        "1": "Đổi dấu thành phần z: tia nắng đi xuống từ A nên z giảm, vectơ chỉ phương có thành phần z là −4.",
+        "2": "Thành phần y phải là √3t (cùng tỉ lệ với hướng S60°E), không phải 2t.",
+        "3": "Đường thẳng này đi qua O, không qua đỉnh cột A(0; 0; 6)."
+      }
+    }
+  ]
+}
