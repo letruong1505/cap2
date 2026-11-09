@@ -1,0 +1,256 @@
+{
+  "id": "t12-t2-chuong5-bai16-cong-thuc-tinh-goc",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 12, tập 2",
+  "chapter": "Chương V. Phương pháp toạ độ trong không gian",
+  "lesson": "Bài 16. Công thức tính góc trong không gian",
+  "section": "1. Góc giữa hai đường thẳng; 2. Góc giữa đường thẳng và mặt phẳng; 3. Góc giữa hai mặt phẳng; Bài tập",
+  "bookPage": 50,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Góc giữa hai đường thẳng Δ, Δ′ có vectơ chỉ phương u = (a; b; c), u′ = (a′; b′; c′) được tính bởi cos(Δ, Δ′) = |cos(u, u′)| = |aa′ + bb′ + cc′| / (√(a² + b² + c²) · √(a′² + b′² + c′²))."
+    },
+    {
+      "type": "text",
+      "content": "Góc giữa đường thẳng Δ có vectơ chỉ phương u = (a; b; c) và mặt phẳng (P) có vectơ pháp tuyến n = (A; B; C) được tính bởi sin(Δ, (P)) = |cos(u, n)| = |aA + bB + cC| / (√(a² + b² + c²) · √(A² + B² + C²))."
+    },
+    {
+      "type": "text",
+      "content": "Góc giữa hai mặt phẳng (P), (Q) có vectơ pháp tuyến n, m được tính bởi cos φ = |cos(n, m)| = |n · m| / (|n| · |m|)."
+    },
+    {
+      "type": "text",
+      "content": "Trong bài này, nếu không nói gì thêm, góc được tính theo đơn vị độ và làm tròn đến chữ số thập phân thứ nhất."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Ví dụ 1: Tính góc giữa hai đường thẳng Δ: (x = 1 + t, y = −1 + t, z = 3) và Δ′: (x = 1 + 2s, y = −2 + 2s, z = 4 + s).",
+      "proof": true,
+      "steps": [
+        "u = (1; 1; 0), u′ = (2; 2; 1); cos(Δ, Δ′) = |1·2 + 1·2 + 0·1| / (√2 · 3) = 4/(3√2) = 2√2/3.",
+        "Vậy (Δ, Δ′) ≈ 19,5°."
+      ]
+    },
+    {
+      "problem": "Ví dụ 2: Tính góc tạo bởi trục Ox và mặt phẳng (P): √2x − y + z + 2 = 0.",
+      "proof": true,
+      "steps": [
+        "Ox có vectơ chỉ phương i = (1; 0; 0); (P) có vectơ pháp tuyến n = (√2; −1; 1).",
+        "sin(Ox, (P)) = |√2| / (1 · 2) = √2/2, suy ra góc 45°."
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 1: góc giữa hai đường thẳng có vectơ chỉ phương (1; 1; 0) và (2; 2; 1) có cos bằng?",
+      "choices": [
+        "2√2/3",
+        "4/3",
+        "√2/3",
+        "2/3"
+      ],
+      "answer": 0,
+      "explain": "cos = |1·2 + 1·2 + 0·1| / (√2 · 3) = 4/(3√2) = 2√2/3, góc ≈ 19,5°.",
+      "wrong_explain": {
+        "1": "Mẫu là √2 · 3 = 3√2, không phải 3.",
+        "2": "Tử số là |u · u′| = 4, không phải 1.",
+        "3": "Rút gọn sai: 4/(3√2) = 2√2/3, không phải 2/3."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ví dụ 1: giá trị của biểu thức 1·2 + 1·2 + 0·1 (tử số của công thức cos) là?",
+      "expr": "1*2+1*2+0*1",
+      "answer": "4",
+      "explain": "Tích vô hướng của u = (1; 1; 0) và u′ = (2; 2; 1) bằng 4."
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 1: góc giữa trục Oz và đường thẳng Δ: (x − 3)/1 = (y + 1)/2 = (z − 1)/(−2) có cos bằng?",
+      "choices": [
+        "2/3",
+        "1/3",
+        "2/√5",
+        "−2/3"
+      ],
+      "answer": 0,
+      "explain": "Oz có vectơ chỉ phương (0; 0; 1), u = (1; 2; −2), |u| = 3: cos = |−2| / 3 = 2/3.",
+      "wrong_explain": {
+        "1": "Thành phần z của u là −2, nên tử số là 2, không phải 1.",
+        "2": "|u| = √(1 + 4 + 4) = 3, không phải √5.",
+        "3": "Góc không âm nên ta lấy giá trị tuyệt đối, cos dương."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 2: góc tạo bởi trục Ox và mặt phẳng (P): √2x − y + z + 2 = 0 là?",
+      "choices": [
+        "45°",
+        "30°",
+        "60°",
+        "90°"
+      ],
+      "answer": 0,
+      "explain": "sin = |√2| / (1 · 2) = √2/2, suy ra góc 45°.",
+      "wrong_explain": {
+        "1": "sin 30° = 1/2, không khớp với √2/2.",
+        "2": "sin 60° = √3/2, không khớp với √2/2.",
+        "3": "Góc 90° ứng với sin = 1, không phải √2/2."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Luyện tập 2: góc giữa đường thẳng Δ: (x + 2)/(−1) = (y − 4)/2 = (z + 1)/1 và mặt phẳng (P): x − y + z − 1 = 0 là?",
+      "choices": [
+        "≈ 28,1°",
+        "≈ 61,9°",
+        "≈ 19,5°",
+        "45°"
+      ],
+      "answer": 0,
+      "explain": "u = (−1; 2; 1), n = (1; −1; 1): sin = |−1 − 2 + 1| / (√6 · √3) = √2/3 ≈ 0,471, suy ra góc ≈ 28,1°.",
+      "wrong_explain": {
+        "1": "61,9° là góc giữa Δ và vectơ pháp tuyến, không phải góc với mặt phẳng.",
+        "2": "19,5° là góc giữa hai đường thẳng ở Ví dụ 1, không liên quan.",
+        "3": "Tử số là |−2| = 2 và mẫu là √18 = 3√2, nên sin không bằng √2/2."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ví dụ 3: giá trị của biểu thức −4·4 + 4·4 + (−3)·3 (tử số của công thức cos φ với hai pháp tuyến (−4; 4; −3), (4; 4; 3)) là?",
+      "expr": "-4*4+4*4+(-3)*3",
+      "answer": "-9",
+      "explain": "Tích vô hướng bằng −16 + 16 − 9 = −9, trị tuyệt đối 9 nên cos φ = 9/41 và φ ≈ 77,3°."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 5.20: góc giữa Δ₁: (x, y, z) = (1 + 2t, 1 − t, 2 + 3t) và Δ₂: (x − 2)/(−1) = (y + 1)/1 = (z − 2)/2 có cos bằng?",
+      "choices": [
+        "√21/14",
+        "3/14",
+        "√84",
+        "2/√14"
+      ],
+      "answer": 0,
+      "explain": "u₁ = (2; −1; 3), u₂ = (−1; 1; 2): |u₁ · u₂| = 3, |u₁| · |u₂| = √14 · √6 = √84 = 2√21, nên cos = 3/(2√21) = √21/14.",
+      "wrong_explain": {
+        "1": "Mẫu là |u₁| · |u₂| = √84, không phải 14.",
+        "2": "Côsin của góc không thể lớn hơn 1.",
+        "3": "Không đúng: tích |u₁| · |u₂| = √84 chứ không phải √14."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 5.21: góc giữa trục Oz và mặt phẳng (P): x + 2y − z − 1 = 0 có sin bằng?",
+      "choices": [
+        "1/√6",
+        "2/√6",
+        "1/√5",
+        "1/6"
+      ],
+      "answer": 0,
+      "explain": "Oz có u = (0; 0; 1), n = (1; 2; −1): sin = |−1| / (1 · √6) = 1/√6, góc ≈ 24,1°.",
+      "wrong_explain": {
+        "1": "Tử số là |thành phần z của n| = 1, không phải 2 (hệ số của y).",
+        "2": "|n| = √6, không phải √5.",
+        "3": "Quên căn ở mẫu: |n| = √6."
+      }
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 5.22: góc giữa đường thẳng Δ: (x + 1)/(−1) = (y − 3)/2 = (z + 2)/3 và mặt phẳng (P): x + y + z + 3 = 0 có sin bằng?",
+      "choices": [
+        "4/√42",
+        "2/√42",
+        "4/√14",
+        "0"
+      ],
+      "answer": 0,
+      "explain": "u = (−1; 2; 3), n = (1; 1; 1): |u · n| = |−1 + 2 + 3| = 4, |u| · |n| = √14 · √3 = √42, nên sin = 4/√42 ≈ 0,617, góc ≈ 38,1°.",
+      "wrong_explain": {
+        "1": "Tổng −1 + 2 + 3 = 4, không phải 2.",
+        "2": "Quên |n| = √3 trong mẫu.",
+        "3": "u không vuông góc với n: tích vô hướng bằng 4 ≠ 0."
+      }
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 5.23: góc giữa hai mặt phẳng (SAB) và (SBC) của kim tự tháp Kheops (đáy vuông cạnh 230 m, cạnh bên 219 m) xấp xỉ?",
+      "choices": [
+        "≈ 112,4°",
+        "≈ 67,6°",
+        "≈ 51,9°",
+        "90°"
+      ],
+      "answer": 0,
+      "explain": "Lấy tâm đáy làm gốc, nửa đường chéo đáy là 115√2, chiều cao h = √(219² − 2·115²) ≈ 146,7 m. Côsin của góc giữa hai pháp tuyến ngoài là 26450/(2h² + 26450) ≈ 0,381, nên góc nhị diện ≈ 180° − 67,6° ≈ 112,4°.",
+      "wrong_explain": {
+        "1": "67,6° là góc giữa hai vectơ pháp tuyến ngoài; góc nhị diện là góc bù với góc này.",
+        "2": "51,9° là góc giữa mặt bên và mặt đáy, không phải góc giữa hai mặt bên.",
+        "3": "Góc nhị diện không vuông trong trường hợp này vì h ≈ 146,7 m."
+      }
+    },
+    {
+      "id": "q11",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 5.24a: bể có mặt nước là hình bình hành ABCD, khoảng cách từ A, B, C đến đáy lần lượt là 40, 44, 48 cm. Khoảng cách từ D đến đáy (cm) bằng?",
+      "expr": "40+48-44",
+      "answer": "44",
+      "explain": "D = A + C − B nên d(D) = d(A) + d(C) − d(B) = 40 + 48 − 44 = 44 cm."
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hình 5.33: mái nhà tròn đặt trên ba cột cao 7 m, 6 m, 5 m tại ba đỉnh của tam giác đều cạnh 4 m. Mái nghiêng so với mặt sàn một góc xấp xỉ?",
+      "choices": [
+        "≈ 26,6°",
+        "≈ 45°",
+        "≈ 18,4°",
+        "≈ 33,7°"
+      ],
+      "answer": 0,
+      "explain": "Đặt A(0; 0), B(4; 0), C(2; 2√3) với độ cao 7, 6, 5: độ dốc hướng x là −1/4, hướng y là −√3/4, độ dốc tổng √(1/16 + 3/16) = 1/2, nên góc = arctan(1/2) ≈ 26,6°.",
+      "wrong_explain": {
+        "1": "Độ dốc 1 (góc 45°) không đúng: độ dốc thực là 1/2.",
+        "2": "tan = 1/3 cho 18,4°, không khớp: độ dốc là √(1/16 + 3/16) = 1/2.",
+        "3": "tan = 2/3 cho 33,7°, không khớp: độ dốc là 1/2."
+      }
+    }
+  ]
+}
