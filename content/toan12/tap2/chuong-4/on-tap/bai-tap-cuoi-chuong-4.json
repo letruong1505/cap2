@@ -1,0 +1,343 @@
+{
+  "id": "t12-t2-chuong4-on-tap",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 12, tập 2",
+  "chapter": "Chương IV. Nguyên hàm và tích phân",
+  "lesson": "Bài tập cuối chương IV",
+  "section": "A - Trắc nghiệm; B - Tự luận",
+  "bookPage": 27,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Chương IV: nguyên hàm (họ các nguyên hàm, bảng nguyên hàm), tích phân (công thức Newton–Leibniz, tính chất), ứng dụng tích phân để tính diện tích hình phẳng và thể tích vật thể, khối tròn xoay."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "4.20: một nguyên hàm của f(x) = sin 2x là?",
+      "choices": [
+        "F(x) = 2cos 2x",
+        "F(x) = −cos 2x",
+        "F(x) = (1/2)cos 2x",
+        "F(x) = (−1/2)cos 2x"
+      ],
+      "answer": 3,
+      "explain": "(−1/2)cos 2x có đạo hàm (−1/2)(−2 sin 2x) = sin 2x.",
+      "wrong_explain": {
+        "0": "Đạo hàm của 2cos 2x là −4sin 2x.",
+        "1": "Đạo hàm của −cos 2x là 2sin 2x, không phải sin 2x.",
+        "2": "Đạo hàm của (1/2)cos 2x là −sin 2x, sai dấu."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "4.21: họ các nguyên hàm của 2eˣ là?",
+      "choices": [
+        "2xeˣ + C",
+        "−2eˣ + C",
+        "2eˣ",
+        "2eˣ + C"
+      ],
+      "answer": 3,
+      "explain": "∫2eˣdx = 2eˣ + C.",
+      "wrong_explain": {
+        "0": "Nguyên hàm của eˣ là eˣ, không phải xeˣ.",
+        "1": "Dấu sai.",
+        "2": "Thiếu hằng số C."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "4.22: nguyên hàm F(x) của f(x) = eˣ − 3e^(−x) thoả mãn F(0) = 4 là?",
+      "choices": [
+        "F(x) = eˣ − 3e^(−x)",
+        "F(x) = eˣ + 3e^(2x)",
+        "F(x) = eˣ + 3e^(−x)",
+        "F(x) = eˣ + 3e^(−x) + 4"
+      ],
+      "answer": 2,
+      "explain": "F(x) = eˣ + 3e^(−x) + C; F(0) = 4 + C = 4 nên C = 0.",
+      "wrong_explain": {
+        "0": "Đây là f(x), không phải nguyên hàm (F(0) = 1 − 3 = −2).",
+        "1": "Không đúng: nguyên hàm của e^(−x) là −e^(−x).",
+        "3": "Với C = 4 thì F(0) = 8 ≠ 4."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "4.23: cho f'(x) liên tục trên ℝ, f(1) = 16 và ∫_1^3 f'(x)dx = 4. Giá trị f(3) là?",
+      "choices": [
+        "20",
+        "16",
+        "12",
+        "10"
+      ],
+      "answer": 0,
+      "explain": "∫_1^3 f'(x)dx = f(3) − f(1) nên f(3) = 4 + 16 = 20.",
+      "wrong_explain": {
+        "1": "Quên cộng 4 từ tích phân.",
+        "2": "Đã lấy f(3) = f(1) − 4.",
+        "3": "Đã lấy f(3) = 16 − 4 − 2."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "4.24: diện tích hình phẳng giới hạn bởi y = x² − 2x, y = −x² + 4x, x = 0, x = 3 là?",
+      "choices": [
+        "−9",
+        "9",
+        "16/3",
+        "20/3"
+      ],
+      "answer": 1,
+      "explain": "Hiệu (−x² + 4x) − (x² − 2x) = 2x(3 − x) ≥ 0 trên [0; 3], nên S = ∫_0^3 (−2x² + 6x)dx = 9.",
+      "wrong_explain": {
+        "0": "Diện tích không âm.",
+        "2": "Đã lấy sai cận hoặc quên một hạng tử.",
+        "3": "Đã tính sai tích phân của −2x² + 6x."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "4.25: đồ thị y = f(x) trên [−2; 2] có ∫_{−2}^{−1} f = ∫_1^2 f = −22/15 và ∫_{−1}^{1} f = 76/15. Diện tích hình tô màu là?",
+      "choices": [
+        "8",
+        "22/15",
+        "32/15",
+        "76/15"
+      ],
+      "answer": 0,
+      "explain": "Diện tích = 22/15 + 76/15 + 22/15 = 120/15 = 8 (phần dưới trục hoành lấy trị tuyệt đối).",
+      "wrong_explain": {
+        "1": "Chỉ tính một phần.",
+        "2": "Thiếu một phần.",
+        "3": "Chỉ tính phần trên trục hoành."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "4.26: thể tích khối tròn xoay khi quay hình phẳng giới hạn bởi y = √(1 − x²), trục hoành, x = −1, x = 1 quanh Ox là?",
+      "choices": [
+        "3π/4",
+        "3π/2",
+        "2π/3",
+        "4π/3"
+      ],
+      "answer": 3,
+      "explain": "V = π∫_{−1}^{1}(1 − x²)dx = π(2 − 2/3) = 4π/3.",
+      "wrong_explain": {
+        "0": "Tính sai tích phân.",
+        "1": "Quên nhân 2 phần hai bên.",
+        "2": "Đã lấy sai cận hoặc hàm."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "4.27: gia tốc a(t) = 3t² + t (m/s²), vận tốc ban đầu 2 m/s. Vận tốc sau 2 giây là?",
+      "choices": [
+        "8 m/s",
+        "10 m/s",
+        "12 m/s",
+        "16 m/s"
+      ],
+      "answer": 2,
+      "explain": "v(t) = t³ + t²/2 + C; v(0) = 2 nên C = 2; v(2) = 8 + 2 + 2 = 12 m/s.",
+      "wrong_explain": {
+        "0": "Quên hằng số C = 2.",
+        "1": "Tính sai số hạng t²/2.",
+        "3": "Đã tính sai v(2)."
+      }
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "4.28a: họ nguyên hàm của y = 2ˣ − 1/x là?",
+      "choices": [
+        "2ˣ/ln 2 − ln|x| + C",
+        "2ˣ ln 2 − ln|x| + C",
+        "2ˣ/ln 2 + ln|x| + C",
+        "2ˣ − ln|x| + C"
+      ],
+      "answer": 0,
+      "explain": "∫2ˣdx = 2ˣ/ln 2 và ∫(1/x)dx = ln|x|.",
+      "wrong_explain": {
+        "1": "Phải chia cho ln 2.",
+        "2": "Dấu của ln|x| sai.",
+        "3": "Nguyên hàm của 2ˣ có mẫu ln 2."
+      }
+    },
+    {
+      "id": "q10",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "4.28b: họ nguyên hàm của y = x√x + 3cos x − 2/sin²x là?",
+      "choices": [
+        "(2/5)x^(5/2) + 3sin x + 2cot x + C",
+        "(2/5)x^(5/2) + 3sin x − 2cot x + C",
+        "(2/5)x^(5/2) − 3sin x + 2cot x + C",
+        "x^(5/2) + 3sin x + 2cot x + C"
+      ],
+      "answer": 0,
+      "explain": "∫x^(3/2)dx = (2/5)x^(5/2); ∫3cos x = 3sin x; ∫(−2/sin²x) = 2cot x.",
+      "wrong_explain": {
+        "1": "Dấu của cot x sai.",
+        "2": "Dấu của sin x sai.",
+        "3": "Hệ số của x^(5/2) phải là 2/5."
+      }
+    },
+    {
+      "id": "q11",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "4.29: nguyên hàm F(x) của f(x) = 2cos x + 1/sin²x thoả mãn F(π/4) = −1 là?",
+      "choices": [
+        "F(x) = 2sin x − cot x − √2",
+        "F(x) = 2sin x + cot x − 1",
+        "F(x) = 2sin x − cot x − 1",
+        "F(x) = 2sin x − cot x + √2"
+      ],
+      "answer": 0,
+      "explain": "F(x) = 2sin x − cot x + C; F(π/4) = √2 − 1 + C = −1 nên C = −√2.",
+      "wrong_explain": {
+        "1": "Dấu của cot x sai.",
+        "2": "Hằng số C sai: F(π/4) = √2 − 1 + C.",
+        "3": "Dấu của C sai."
+      }
+    },
+    {
+      "id": "q12",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "4.30: vận tốc viên đạn sau 2 giây là v(t) = 30 − 9,8t (m/s), giá trị là?",
+      "expr": "30-9.8*2",
+      "answer": "52/5",
+      "explain": "v(2) = 30 − 19,6 = 10,4 (m/s)."
+    },
+    {
+      "id": "q13",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "4.31: khoảng cách xa nhất cá bơi được (km) với v(t) = −2t/5 + 4 là?",
+      "expr": "40-(1/5)*100",
+      "answer": "20",
+      "explain": "v(t) = 0 tại t = 10; khoảng cách = ∫_0^{10}(4 − 2t/5)dt = 40 − 20 = 20 (km)."
+    },
+    {
+      "id": "q14",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "4.32a: ∫_1^4 (x³ − 2√x)dx là?",
+      "expr": "(4*4*4*4/4-4/3*8)-(1/4-4/3)",
+      "answer": "653/12",
+      "explain": "[x⁴/4 − (4/3)x^(3/2)]_1^4 = (64 − 32/3) − (1/4 − 4/3) = 653/12."
+    },
+    {
+      "id": "q15",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "4.32b: ∫_0^{π/2}(cos x − sin x)dx là?",
+      "expr": "1+0-(0+1)",
+      "answer": "0",
+      "explain": "[sin x + cos x]_0^{π/2} = 0."
+    },
+    {
+      "id": "q16",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "4.32c: ∫_{π/6}^{π/4} dx/sin²x bằng?",
+      "choices": [
+        "√3 − 1",
+        "1 − √3",
+        "√3 + 1",
+        "2√3 − 2"
+      ],
+      "answer": 0,
+      "explain": "∫dx/sin²x = −cot x; giá trị = −cot(π/4) + cot(π/6) = −1 + √3.",
+      "wrong_explain": {
+        "1": "Dấu bị đảo.",
+        "2": "Dấu của 1 bị sai.",
+        "3": "Hệ số không đúng."
+      }
+    },
+    {
+      "id": "q17",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "4.32d: ∫_1^{16} (x − 1)/√x dx là?",
+      "expr": "(2/3*16*4-2*4)-(2/3*1-2*1)",
+      "answer": "36",
+      "explain": "∫(√x − 1/√x)dx = (2/3)x^(3/2) − 2√x; giá trị = 36."
+    },
+    {
+      "id": "q18",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "4.33: diện tích hình phẳng giới hạn bởi y = eˣ, y = x, x = 0, x = 1 là?",
+      "choices": [
+        "e − 3/2",
+        "e − 1/2",
+        "e + 1/2",
+        "e − 2"
+      ],
+      "answer": 0,
+      "explain": "S = ∫_0^1 (eˣ − x)dx = (e − 1) − 1/2 = e − 3/2.",
+      "wrong_explain": {
+        "1": "Đã quên trừ 1 ở cận dưới của eˣ.",
+        "2": "Dấu của 1/2 sai.",
+        "3": "Hệ số của x bị sai."
+      }
+    },
+    {
+      "id": "q19",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "4.34a: thể tích khối tròn xoay quay y = 1 − x², y = 0, x = −1, x = 1 quanh Ox chia cho π là?",
+      "expr": "16/15",
+      "answer": "16/15",
+      "explain": "V = π∫_{−1}^{1}(1 − x²)²dx = 16π/15."
+    },
+    {
+      "id": "q20",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "4.34b: thể tích khối tròn xoay quay y = √(25 − x²), y = 0, x = 2, x = 4 quanh Ox chia cho π là?",
+      "expr": "94/3",
+      "answer": "94/3",
+      "explain": "V = π∫_2^4 (25 − x²)dx = 94π/3."
+    }
+  ]
+}

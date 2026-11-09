@@ -1,0 +1,464 @@
+{
+  "id": "t12-t2-chuong4-bai13-ung-dung-hinh-hoc",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 12, tập 2",
+  "chapter": "Chương IV. Nguyên hàm và tích phân",
+  "lesson": "Bài 13. Ứng dụng hình học của tích phân",
+  "section": "1. Diện tích hình phẳng; 2. Thể tích vật thể và khối tròn xoay; Bài tập",
+  "bookPage": 19,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Diện tích hình phẳng giới hạn bởi đồ thị hàm số y = f(x) liên tục, trục hoành và hai đường thẳng x = a, x = b (a < b) là S = ∫_a^b |f(x)|dx."
+    },
+    {
+      "type": "text",
+      "content": "Diện tích hình phẳng giới hạn bởi đồ thị hai hàm số y = f(x), y = g(x) liên tục trên [a; b] và hai đường thẳng x = a, x = b là S = ∫_a^b |f(x) − g(x)|dx. Nếu f(x) − g(x) không đổi dấu trên [a; b] thì S = |∫_a^b [f(x) − g(x)]dx|."
+    },
+    {
+      "type": "text",
+      "content": "Thể tích vật thể B giới hạn bởi hai mặt phẳng vuông góc với Ox tại x = a và x = b, có diện tích thiết diện S(x) liên tục trên [a; b], là V = ∫_a^b S(x)dx."
+    },
+    {
+      "type": "text",
+      "content": "Thể tích khối tròn xoay sinh ra khi quay hình phẳng giới hạn bởi y = f(x) ≥ 0, trục hoành, x = a, x = b quanh trục Ox là V = π∫_a^b f²(x)dx."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Ví dụ 1: Tính diện tích hình phẳng giới hạn bởi y = x³, trục hoành và hai đường thẳng x = 0, x = 2.",
+      "expr": "2*2*2*2/4",
+      "answer": "4",
+      "steps": [
+        "S = ∫_0^2 |x³|dx = ∫_0^2 x³dx = x⁴/4 |_0^2 = 4."
+      ]
+    },
+    {
+      "problem": "Ví dụ 3: Tính diện tích hình phẳng giới hạn bởi hai parabol y = 4 − x² và y = x², hai đường thẳng x = −1, x = 1.",
+      "expr": "(4-2/3)-(-4+2/3)",
+      "answer": "20/3",
+      "steps": [
+        "S = ∫_{−1}^{1} |4 − 2x²|dx = ∫_{−1}^{1} (4 − 2x²)dx = (4x − 2x³/3)|_{−1}^{1} = 20/3."
+      ]
+    },
+    {
+      "problem": "Ví dụ 5: Tính thể tích khối lăng trụ có diện tích đáy S và chiều cao h.",
+      "proof": true,
+      "steps": [
+        "Thiết diện song song với đáy có diện tích không đổi S(x) = S.",
+        "V = ∫_0^h S dx = Sh."
+      ]
+    },
+    {
+      "problem": "Ví dụ 6: Tính thể tích khối chóp đều có đáy là hình vuông cạnh L và chiều cao h.",
+      "proof": true,
+      "steps": [
+        "Thiết diện tại x có diện tích S(x) = (L²/h²)x².",
+        "V = ∫_0^h (L²/h²)x²dx = L²h/3."
+      ]
+    },
+    {
+      "problem": "Ví dụ 7: Tính thể tích khối tròn xoay sinh ra khi quay quanh Ox hình phẳng giới hạn bởi y = √x, trục hoành, x = 0, x = 1.",
+      "proof": true,
+      "steps": [
+        "V = π∫_0^1 (√x)²dx = π∫_0^1 x dx = π/2."
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ví dụ 1: diện tích hình phẳng giới hạn bởi y = x³, trục hoành, x = 0, x = 2 là?",
+      "expr": "2*2*2*2/4",
+      "answer": "4",
+      "explain": "S = 2⁴/4 = 4."
+    },
+    {
+      "id": "q02",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 2: diện tích hình phẳng giới hạn bởi y = sin x, trục hoành, x = 0, x = 2π là?",
+      "choices": [
+        "4",
+        "0",
+        "2π",
+        "2"
+      ],
+      "answer": 0,
+      "explain": "S = ∫_0^π sin x dx + ∫_π^{2π}(−sin x)dx = 2 + 2 = 4.",
+      "wrong_explain": {
+        "1": "Hai phần có diện tích dương, không triệt tiêu nhau khi lấy trị tuyệt đối.",
+        "2": "2π là độ dài đường tròn đơn vị, không phải diện tích này.",
+        "3": "Chỉ tính một nửa, bỏ qua phần dưới trục hoành."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Luyện tập 1: diện tích hình phẳng giới hạn bởi y = x² − 4, trục hoành, x = 0, x = 3 là?",
+      "expr": "(4*2-2*2*2/3)+((3*3*3/3-4*3)-(2*2*2/3-4*2))",
+      "answer": "23/3",
+      "explain": "∫_0^2 (4 − x²)dx = 16/3 và ∫_2^3 (x² − 4)dx = 7/3; tổng 23/3."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ví dụ 3: diện tích hình phẳng giới hạn bởi hai parabol y = 4 − x², y = x², x = −1, x = 1 là?",
+      "expr": "(4-2/3)-(-4+2/3)",
+      "answer": "20/3",
+      "explain": "S = 20/3."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 4: diện tích hình phẳng giới hạn bởi y = sin x, y = cos x, x = 0, x = π/4 là?",
+      "choices": [
+        "√2 − 1",
+        "√2",
+        "1 − √2",
+        "√2/2"
+      ],
+      "answer": 0,
+      "explain": "S = ∫_0^{π/4}(cos x − sin x)dx = (sin x + cos x)|_0^{π/4} = √2 − 1.",
+      "wrong_explain": {
+        "1": "Đã quên trừ giá trị tại cận dưới (giá trị bằng 1).",
+        "2": "1 − √2 có dấu sai: cos x − sin x ≥ 0 trên [0; π/4].",
+        "3": "√2/2 là giá trị của sin(π/4), không phải diện tích."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Luyện tập 2: diện tích hình phẳng giới hạn bởi y = √x, y = x − 2, x = 1, x = 4 là?",
+      "expr": "(2/3*4*2-4*4/2+2*4)-(2/3-1/2+2*1)",
+      "answer": "19/6",
+      "explain": "Trên [1; 4], √x ≥ x − 2 nên S = ∫_1^4 (√x − x + 2)dx = 19/6."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 5: thể tích khối lăng trụ có diện tích đáy S và chiều cao h là?",
+      "choices": [
+        "Sh",
+        "S h/3",
+        "S²h",
+        "2Sh"
+      ],
+      "answer": 0,
+      "explain": "Thiết diện không đổi S(x) = S nên V = ∫_0^h S dx = Sh.",
+      "wrong_explain": {
+        "1": "Đây là công thức khối chóp, không phải lăng trụ.",
+        "2": "Diện tích đáy không bình phương.",
+        "3": "Không có hệ số 2 trong công thức."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 6: thể tích khối chóp đều có đáy hình vuông cạnh L và chiều cao h là?",
+      "choices": [
+        "L²h/3",
+        "L²h",
+        "L²h/2",
+        "(Lh)²/3"
+      ],
+      "answer": 0,
+      "explain": "V = ∫_0^h (L²/h²)x²dx = L²h/3, đúng bằng 1/3 diện tích đáy nhân chiều cao.",
+      "wrong_explain": {
+        "1": "Đây là công thức của lăng trụ.",
+        "2": "Hệ số 1/2 không phù hợp với khối chóp.",
+        "3": "Biểu thức không đúng thứ nguyên."
+      }
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vận dụng 2: thể tích khối chóp cụt đều có diện tích hai đáy S₀, S₁ và chiều cao h là?",
+      "choices": [
+        "V = h(S₀ + S₁ + √(S₀S₁))/3",
+        "V = h(S₀ + S₁)/2",
+        "V = h(S₀ + S₁ + S₀S₁)/3",
+        "V = h√(S₀S₁)"
+      ],
+      "answer": 0,
+      "explain": "Tích phân thiết diện cho công thức V = h(S₀ + S₁ + √(S₀S₁))/3; khi S₀ = S₁ = S thì V = Sh (khối lăng trụ).",
+      "wrong_explain": {
+        "1": "Đây là công thức hình thang, không phải khối chóp cụt.",
+        "2": "Phải có số hạng √(S₀S₁) và hệ số 1/3.",
+        "3": "Không đúng thứ nguyên diện tích."
+      }
+    },
+    {
+      "id": "q10",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 7: thể tích khối tròn xoay sinh ra khi quay quanh Ox hình phẳng giới hạn bởi y = √x, x = 0, x = 1 là?",
+      "choices": [
+        "π/2",
+        "π",
+        "1/2",
+        "π/4"
+      ],
+      "answer": 0,
+      "explain": "V = π∫_0^1 x dx = π/2.",
+      "wrong_explain": {
+        "1": "Thiếu nửa: ∫_0^1 x dx = 1/2, không phải 1.",
+        "2": "Thiếu hệ số π trong công thức thể tích khối tròn xoay.",
+        "3": "Đã tính sai ∫x dx: đúng là x²/2."
+      }
+    },
+    {
+      "id": "q11",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ví dụ 8: thể tích khối cầu bán kính R là?",
+      "choices": [
+        "4πR³/3",
+        "4πR²",
+        "πR³/3",
+        "2πR³"
+      ],
+      "answer": 0,
+      "explain": "V = π∫_{−R}^{R}(R² − x²)dx = 4πR³/3.",
+      "wrong_explain": {
+        "1": "4πR² là diện tích mặt cầu.",
+        "2": "Thiếu hệ số 4 của khối cầu.",
+        "3": "Sai hệ số: 2πR³ không bằng 4πR³/3."
+      }
+    },
+    {
+      "id": "q12",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hoạt động 4: thể tích khối nón sinh ra khi quay y = x/2 (0 ≤ x ≤ 4) quanh Ox là?",
+      "choices": [
+        "16π/3",
+        "16π",
+        "8π/3",
+        "4π"
+      ],
+      "answer": 0,
+      "explain": "V = π∫_0^4 (x/2)²dx = π·64/12 = 16π/3, trùng với công thức khối nón (1/3)π·2²·4.",
+      "wrong_explain": {
+        "1": "16π là gấp 3 lần thể tích đúng.",
+        "2": "8π/3 không khớp với π·64/12.",
+        "3": "4π không khớp với π·64/12."
+      }
+    },
+    {
+      "id": "q13",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vận dụng 3a: thể tích khối tròn xoay sinh ra khi quay hình thang vuông OABC (OA = h, AB = R, OC = r) quanh Ox là?",
+      "choices": [
+        "πh(R² + Rr + r²)/3",
+        "πh(R² + r²)/2",
+        "πh(R + r)²/3",
+        "πhR²/3"
+      ],
+      "answer": 0,
+      "explain": "Thiết diện là hình tròn có bán kính y(x) = r + (R − r)x/h, nên V = π∫_0^h y² dx = πh(R² + Rr + r²)/3.",
+      "wrong_explain": {
+        "1": "Phải có số hạng Rr và hệ số 1/3.",
+        "2": "Khai triển (R + r)² không đúng với tích phân bình phương.",
+        "3": "Đó là trường hợp r = 0 (khối nón), không phải tổng quát."
+      }
+    },
+    {
+      "id": "q14",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vận dụng 3b: khối nón có bán kính đáy R và chiều cao h có thể tích là?",
+      "choices": [
+        "πR²h/3",
+        "πR²h",
+        "πRh²/3",
+        "2πR²h/3"
+      ],
+      "answer": 0,
+      "explain": "Đặt r = 0 trong kết quả câu a: V = πhR²/3.",
+      "wrong_explain": {
+        "1": "Không có hệ số 1/3 thì không phải thể tích khối nón.",
+        "2": "R và h bị đổi chỗ.",
+        "3": "Hệ số 2/3 sai; phải là 1/3."
+      }
+    },
+    {
+      "id": "q15",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vận dụng 1: thặng dư tiêu dùng với hàm cầu p = −0,36x + 9 và hàm cung p = 0,14x + 2 (x = số đơn vị sản phẩm) là?",
+      "expr": "5.04*14-0.18*14*14",
+      "answer": "882/25",
+      "explain": "Điểm cân bằng x₀ = 14, p₀ = 3,96; thặng dư tiêu dùng = ∫_0^{14}(5,04 − 0,36x)dx = 882/25 ≈ 35,28."
+    },
+    {
+      "id": "q16",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vận dụng 1: thặng dư sản xuất với các hàm trên là?",
+      "expr": "1.96*14-0.07*14*14",
+      "answer": "343/25",
+      "explain": "Thặng dư sản xuất = ∫_0^{14}(1,96 − 0,14x)dx = 343/25 ≈ 13,72."
+    },
+    {
+      "id": "q17",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 4.14: diện tích hình phẳng được tô màu giới hạn bởi y = 5x − x² và y = x (0 ≤ x ≤ 4) là?",
+      "expr": "2*4*4-4*4*4/3",
+      "answer": "32/3",
+      "explain": "Hoành độ giao điểm x = 0 và x = 4; S = ∫_0^4 (4x − x²)dx = 32/3."
+    },
+    {
+      "id": "q18",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 4.15a: diện tích hình phẳng giới hạn bởi y = eˣ, y = x² − 1, x = −1, x = 1 là?",
+      "choices": [
+        "e − 1/e + 4/3",
+        "e + 1/e − 4/3",
+        "e − 1/e − 4/3",
+        "e − 1/e + 2/3"
+      ],
+      "answer": 0,
+      "explain": "Trên [−1; 1], eˣ ≥ x² − 1; S = ∫_{−1}^{1}(eˣ − x² + 1)dx = e − 1/e + 4/3.",
+      "wrong_explain": {
+        "1": "Dấu của 1/e và 4/3 bị sai.",
+        "2": "Dấu của 4/3 bị sai.",
+        "3": "Quên hằng số: ∫_{−1}^{1} 1 dx = 2 nên kết quả có 4/3, không phải 2/3."
+      }
+    },
+    {
+      "id": "q19",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bài 4.15d: diện tích hình phẳng giới hạn bởi y = √x, y = x², x = 0, x = 1 là?",
+      "expr": "2/3-1/3",
+      "answer": "1/3",
+      "explain": "S = ∫_0^1 (√x − x²)dx = 2/3 − 1/3 = 1/3."
+    },
+    {
+      "id": "q20",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 4.15c: diện tích hình phẳng giới hạn bởi y = 9 − x², y = 2x², x = −√3, x = √3 là?",
+      "choices": [
+        "12√3",
+        "6√3",
+        "9√3",
+        "24√3"
+      ],
+      "answer": 0,
+      "explain": "9 − x² − 2x² = 9 − 3x² ≥ 0 trên [−√3; √3], S = ∫(9 − 3x²)dx = 12√3.",
+      "wrong_explain": {
+        "1": "Đã lấy nửa khoảng.",
+        "2": "Quên nhân đôi khi lấy trên đoạn đối xứng.",
+        "3": "Tính sai hệ số nhân."
+      }
+    },
+    {
+      "id": "q21",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 4.17: thể tích khối tròn xoay khi quay y = 2x − x², y = 0, x = 0, x = 2 quanh Ox là?",
+      "choices": [
+        "16π/15",
+        "8π/15",
+        "32π/15",
+        "4π/3"
+      ],
+      "answer": 0,
+      "explain": "V = π∫_0^2 (2x − x²)²dx = π(32/3 − 16 + 32/5) = 16π/15.",
+      "wrong_explain": {
+        "1": "Hệ số bị chia đôi.",
+        "2": "Hệ số gấp đôi.",
+        "3": "Thiếu bình phương của hàm số."
+      }
+    },
+    {
+      "id": "q22",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 4.18: thể tích khối chỏm cầu có bán kính R và chiều cao h (0 < h ≤ R) là?",
+      "choices": [
+        "πh²(3R − h)/3",
+        "πh²(3R + h)/3",
+        "πh(3R − h)/3",
+        "4πR³/3 − πh²"
+      ],
+      "answer": 0,
+      "explain": "V = π∫_{R−h}^{R}(R² − x²)dx = πh²(3R − h)/3.",
+      "wrong_explain": {
+        "1": "Dấu của h bị đổi.",
+        "2": "Bậc của h sai; phải là h².",
+        "3": "Không đúng với mọi h: công thức chỏm cầu phụ thuộc h."
+      }
+    },
+    {
+      "id": "q23",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 4.19a: thể tích khối tròn xoay B sinh ra khi quay tam giác OAB (OA = a trên Ox, góc AOB = α) quanh Ox là?",
+      "choices": [
+        "πa³tan²α/3",
+        "πa³tan α/3",
+        "πa²tan²α/3",
+        "πa³/3"
+      ],
+      "answer": 0,
+      "explain": "AB = a·tan α, V = π∫_0^a (x tan α)²dx = πa³tan²α/3.",
+      "wrong_explain": {
+        "1": "Bậc của tan α phải là 2.",
+        "2": "Bậc của a phải là 3.",
+        "3": "Không có tan²α nên không đúng với α."
+      }
+    },
+    {
+      "id": "q24",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bài 4.19b: với 0 < α ≤ π/4, thể tích V lớn nhất khi α bằng?",
+      "choices": [
+        "π/4",
+        "π/6",
+        "π/3",
+        "0"
+      ],
+      "answer": 0,
+      "explain": "tan²α tăng trên (0; π/4], nên V lớn nhất khi α = π/4.",
+      "wrong_explain": {
+        "1": "tan²(π/6) < tan²(π/4), nên π/6 cho V nhỏ hơn.",
+        "2": "π/3 nằm ngoài khoảng (0; π/4].",
+        "3": "α = 0 không thuộc khoảng (0; π/4]."
+      }
+    }
+  ]
+}
