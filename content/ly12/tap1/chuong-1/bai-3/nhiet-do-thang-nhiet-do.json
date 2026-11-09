@@ -1,0 +1,255 @@
+{
+  "id": "bai-3",
+  "grade": 12,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 12",
+  "chapter": "Chương I. Vật lí nhiệt",
+  "lesson": "Bài 3. Nhiệt độ. Thang nhiệt độ - nhiệt kế",
+  "section": "",
+  "bookPage": 15,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nhiệt độ cho biết trạng thái cân bằng nhiệt của các vật tiếp xúc nhau và chiều truyền nhiệt năng. Khi hai vật có nhiệt độ khác nhau tiếp xúc, nhiệt năng truyền từ vật có nhiệt độ cao sang vật có nhiệt độ thấp. Khi nhiệt độ bằng nhau, hai vật ở trạng thái cân bằng nhiệt."
+    },
+    {
+      "type": "text",
+      "content": "Thang Celsius có hai mốc: 0 °C là nhiệt độ đóng băng của nước tinh khiết và 100 °C là nhiệt độ sôi của nước tinh khiết, ở áp suất tiêu chuẩn."
+    },
+    {
+      "type": "text",
+      "content": "Thang Kelvin có mốc 0 K là độ không tuyệt đối, tương ứng −273,15 °C; mốc còn lại là nhiệt độ điểm ba của nước, 273,16 K. Mỗi độ chia trong thang Kelvin có độ lớn bằng một độ chia trong thang Celsius."
+    },
+    {
+      "type": "formula",
+      "content": "T(K) = t(°C) + 273,15  (làm tròn: T = t + 273)"
+    },
+    {
+      "type": "text",
+      "content": "Nhiệt độ đặc trưng cho động năng trung bình của chuyển động nhiệt của các phân tử: vật có nhiệt độ càng cao thì động năng trung bình của các phân tử càng lớn."
+    },
+    {
+      "type": "text",
+      "content": "Nhiệt kế được chế tạo dựa trên tính chất vật lí phụ thuộc nhiệt độ, như sự nở vì nhiệt của chất lỏng hoặc kim loại. Thang Fahrenheit dùng công thức t(°F) = 32 + 1,8·t(°C)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đổi 27 °C sang nhiệt độ Kelvin.",
+      "steps": [
+        "T = t + 273 = 27 + 273.",
+        "= 300 K."
+      ],
+      "expr": "27+273",
+      "answer": "300"
+    },
+    {
+      "problem": "Đổi 373 K sang thang Celsius.",
+      "steps": [
+        "t = T − 273 = 373 − 273.",
+        "= 100 °C."
+      ],
+      "expr": "373-273",
+      "answer": "100"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi hai vật có nhiệt độ khác nhau tiếp xúc nhau, nhiệt năng truyền theo chiều nào?",
+      "choices": [
+        "Từ vật có nhiệt độ cao hơn sang vật có nhiệt độ thấp hơn",
+        "Từ vật có nhiệt độ thấp hơn sang vật có nhiệt độ cao hơn",
+        "Từ vật có khối lượng lớn sang vật có khối lượng nhỏ",
+        "Không có chiều xác định"
+      ],
+      "answer": 0,
+      "explain": "Nhiệt năng luôn truyền từ vật có nhiệt độ cao sang vật có nhiệt độ thấp cho đến khi cân bằng nhiệt.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chiều này ngược lại với quy luật truyền nhiệt.",
+        "2": "Khối lượng không quyết định chiều truyền nhiệt.",
+        "3": "Chiều truyền nhiệt luôn xác định được theo nhiệt độ."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hai vật có nhiệt độ bằng nhau tiếp xúc nhau thì:",
+      "choices": [
+        "Không có sự truyền nhiệt, hai vật ở trạng thái cân bằng nhiệt.",
+        "Vật có nội năng lớn hơn truyền nhiệt cho vật kia.",
+        "Vật có khối lượng lớn hơn truyền nhiệt cho vật kia.",
+        "Nhiệt năng luôn truyền từ vật này sang vật kia."
+      ],
+      "answer": 0,
+      "explain": "Khi nhiệt độ bằng nhau, không có chênh lệch nhiệt độ nên không có truyền nhiệt.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Nội năng không quyết định chiều truyền nhiệt.",
+        "2": "Khối lượng cũng không quyết định chiều truyền nhiệt.",
+        "3": "Khi nhiệt độ bằng nhau, nhiệt năng không truyền."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vật có nội năng lớn hơn có luôn truyền nhiệt cho vật có nội năng nhỏ hơn không?",
+      "choices": [
+        "Không, chiều truyền nhiệt phụ thuộc nhiệt độ, không phụ thuộc trực tiếp nội năng.",
+        "Có, vì nội năng là yếu tố quyết định.",
+        "Có, nếu hai vật có cùng khối lượng.",
+        "Không, vì nhiệt năng không truyền được giữa các vật."
+      ],
+      "answer": 0,
+      "explain": "Vật có nội năng lớn có thể có nhiệt độ thấp hơn, ví dụ do khối lượng lớn hơn. Nhiệt năng truyền theo chênh lệch nhiệt độ.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Nội năng lớn hơn không đồng nghĩa nhiệt độ cao hơn.",
+        "2": "Cùng khối lượng thì nhiệt độ mới quyết định chiều truyền nhiệt.",
+        "3": "Nhiệt năng hoàn toàn truyền được giữa các vật."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Mốc 0 °C trong thang Celsius tương ứng với:",
+      "choices": [
+        "Nhiệt độ đóng băng của nước tinh khiết ở áp suất tiêu chuẩn",
+        "Nhiệt độ thấp nhất mà vật có thể có",
+        "Nhiệt độ điểm ba của nước",
+        "Nhiệt độ của nước đang sôi"
+      ],
+      "answer": 0,
+      "explain": "Thang Celsius lấy nhiệt độ đóng băng của nước tinh khiết ở áp suất tiêu chuẩn làm 0 °C.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Nhiệt độ thấp nhất có thể là độ không tuyệt đối, tức −273,15 °C.",
+        "2": "Điểm ba của nước là 0,01 °C, không phải 0 °C đúng.",
+        "3": "Nước sôi ở 100 °C."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nhiệt độ không tuyệt đối trong thang Celsius bằng bao nhiêu?",
+      "choices": [
+        "−273,15 °C",
+        "0 °C",
+        "−100 °C",
+        "273,15 °C"
+      ],
+      "answer": 0,
+      "explain": "Độ không tuyệt đối là 0 K, tương ứng −273,15 °C.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "0 °C là nhiệt độ đóng băng của nước.",
+        "2": "−100 °C không phải độ không tuyệt đối.",
+        "3": "273,15 °C tương ứng với 546,15 K, không phải độ không tuyệt đối."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nhiệt độ điểm ba của nước được chọn làm mốc trong thang Kelvin, có giá trị là:",
+      "choices": [
+        "273,16 K",
+        "0 K",
+        "100 K",
+        "373 K"
+      ],
+      "answer": 0,
+      "explain": "Nước tinh khiết tồn tại đồng thời ở ba thể rắn, lỏng, hơi ở nhiệt độ điểm ba 273,16 K.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "0 K là độ không tuyệt đối.",
+        "2": "100 K là giá trị không phải mốc của thang Kelvin.",
+        "3": "373 K tương ứng 100 °C, không phải điểm ba."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ưu điểm của thang Kelvin so với thang Celsius là:",
+      "choices": [
+        "Mọi nhiệt độ đều có giá trị dương, mốc thấp nhất là độ không tuyệt đối.",
+        "Một độ chia lớn hơn một độ chia Celsius.",
+        "Có thể đo nhiệt độ âm ở mọi chất.",
+        "Không cần mốc nhiệt độ."
+      ],
+      "answer": 0,
+      "explain": "Thang Kelvin là thang nhiệt độ tuyệt đối: không có nhiệt độ nào thấp hơn 0 K nên các giá trị đều dương.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Mỗi độ chia Kelvin bằng một độ chia Celsius.",
+        "2": "Thang Kelvin không có nhiệt độ âm.",
+        "3": "Mọi thang nhiệt độ đều cần mốc."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Đổi 300 K sang thang Celsius (làm tròn theo công thức t = T − 273), kết quả (°C):",
+      "expr": "300-273",
+      "answer": "27",
+      "explain": "t = 300 − 273 = 27 °C."
+    },
+    {
+      "id": "q09",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Đổi 25 °C sang thang Kelvin (làm tròn theo công thức T = t + 273), kết quả (K):",
+      "expr": "25+273",
+      "answer": "298",
+      "explain": "T = 25 + 273 = 298 K."
+    },
+    {
+      "id": "q10",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một vật có nhiệt độ 20 °C được làm lạnh xuống 5 °C. Độ giảm nhiệt độ theo thang Kelvin là (K):",
+      "expr": "20-5",
+      "answer": "15",
+      "explain": "Độ chia Celsius và Kelvin bằng nhau nên độ giảm là 20 − 5 = 15 K."
+    },
+    {
+      "id": "q11",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nhiệt độ 50 °C ứng với bao nhiêu °F theo công thức t(°F) = 32 + 1,8·t(°C)?",
+      "expr": "32+1,8*50",
+      "answer": "122",
+      "explain": "t(°F) = 32 + 1,8 × 50 = 32 + 90 = 122 °F."
+    },
+    {
+      "id": "q12",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Nhiệt độ của một vật tăng lên. Điều này cho biết điều gì về các phân tử cấu tạo nên vật?",
+      "choices": [
+        "Động năng trung bình của các phân tử tăng",
+        "Các phân tử ngừng chuyển động",
+        "Thế năng phân tử tăng nhưng động năng giảm",
+        "Số phân tử của vật tăng"
+      ],
+      "answer": 0,
+      "explain": "Nhiệt độ đặc trưng cho động năng trung bình của chuyển động nhiệt của các phân tử.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Phân tử không ngừng chuyển động, kể cả khi nhiệt độ thay đổi.",
+        "2": "Nhiệt độ không cho biết trực tiếp thế năng phân tử.",
+        "3": "Nhiệt độ tăng không làm thay đổi số phân tử."
+      }
+    }
+  ]
+}

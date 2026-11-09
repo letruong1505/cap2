@@ -1,0 +1,253 @@
+{
+  "id": "bai-2",
+  "grade": 12,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 12",
+  "chapter": "Chương I. Vật lí nhiệt",
+  "lesson": "Bài 2. Nội năng. Định luật I của nhiệt động lực học",
+  "section": "",
+  "bookPage": 10,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nội năng U của một vật là tổng động năng và thế năng của các phân tử cấu tạo nên vật. Nội năng được đo bằng jun (J) và phụ thuộc vào nhiệt độ và thể tích của vật."
+    },
+    {
+      "type": "text",
+      "content": "Có hai cách làm thay đổi nội năng: thực hiện công và truyền nhiệt. Trong vật lí người ta thường quan tâm đến độ biến thiên nội năng ΔU hơn là giá trị tuyệt đối của U."
+    },
+    {
+      "type": "formula",
+      "content": "ΔU = A + Q"
+    },
+    {
+      "type": "text",
+      "content": "Quy ước dấu: Q > 0 khi vật nhận nhiệt lượng từ vật khác, Q < 0 khi vật truyền nhiệt lượng cho vật khác. A > 0 khi vật nhận công từ vật khác, A < 0 khi vật thực hiện công lên vật khác."
+    },
+    {
+      "type": "text",
+      "content": "Định luật I của nhiệt động lực học là sự vận dụng định luật bảo toàn năng lượng vào các quá trình thay đổi nội năng. Nhiệt lượng là số đo phần năng lượng được truyền từ vật này sang vật khác trong quá trình truyền nhiệt."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Vật nhận nhiệt lượng 300 J và nhận công 120 J từ vật khác. Tính độ biến thiên nội năng của vật.",
+      "steps": [
+        "Q = +300 J (nhận nhiệt), A = +120 J (nhận công).",
+        "ΔU = A + Q = 120 + 300 = 420 J."
+      ],
+      "expr": "120+300",
+      "answer": "420"
+    },
+    {
+      "problem": "Khí thực hiện công 50 J lên pit-tông và đồng thời truyền nhiệt lượng 80 J ra môi trường. Tính ΔU của khí.",
+      "steps": [
+        "Khí thực hiện công nên A = −50 J; truyền nhiệt nên Q = −80 J.",
+        "ΔU = −50 + (−80) = −130 J: nội năng của khí giảm 130 J."
+      ],
+      "expr": "-50-80",
+      "answer": "-130"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nội năng của một vật là tổng gì?",
+      "choices": [
+        "Động năng và thế năng của các phân tử cấu tạo nên vật",
+        "Động năng của vật chuyển động và thế năng trọng trường của vật",
+        "Nhiệt lượng mà vật nhận được",
+        "Công mà vật thực hiện"
+      ],
+      "answer": 0,
+      "explain": "Nội năng gồm động năng phân tử và thế năng tương tác phân tử của mọi phân tử trong vật.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Đây là cơ năng của vật, không phải nội năng.",
+        "2": "Nhiệt lượng là phần năng lượng được truyền đi, không phải nội năng.",
+        "3": "Công là số đo quá trình truyền năng lượng, không phải dạng năng lượng dự trữ."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn vị của nội năng là:",
+      "choices": [
+        "J",
+        "J/kg",
+        "J/(kg·K)",
+        "W"
+      ],
+      "answer": 0,
+      "explain": "Nội năng đo bằng jun (J), cùng đơn vị với công và nhiệt lượng.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "J/kg là đơn vị của nhiệt hoá hơi, nóng chảy riêng.",
+        "2": "J/(kg·K) là đơn vị của nhiệt dung riêng.",
+        "3": "W là đơn vị của công suất."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nội năng của một vật phụ thuộc vào yếu tố nào?",
+      "choices": [
+        "Nhiệt độ và thể tích của vật",
+        "Khối lượng và vận tốc của vật",
+        "Chỉ nhiệt độ của vật",
+        "Vị trí của vật so với mặt đất"
+      ],
+      "answer": 0,
+      "explain": "Nhiệt độ quyết định động năng trung bình của các phân tử, thể tích quyết định khoảng cách, tức thế năng phân tử.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Vận tốc của vật (chuyển động cả khối) không quyết định nội năng.",
+        "2": "Thể tích cũng ảnh hưởng đến thế năng phân tử.",
+        "3": "Vị trí của vật không ảnh hưởng đến nội năng."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hai cách làm thay đổi nội năng của vật là:",
+      "choices": [
+        "Thực hiện công và truyền nhiệt",
+        "Thay đổi thể tích và áp suất",
+        "Thực hiện công và thay đổi khối lượng",
+        "Truyền nhiệt và tăng vận tốc"
+      ],
+      "answer": 0,
+      "explain": "Nội năng thay đổi khi có công thực hiện lên vật hoặc khi vật nhận/truyền nhiệt lượng.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Thể tích và áp suất là các thông số trạng thái, không phải cách làm thay đổi nội năng.",
+        "2": "Khối lượng không thay đổi trong các quá trình này.",
+        "3": "Vận tốc của cả vật không làm thay đổi nội năng."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Quy ước dấu nào sau đây đúng?",
+      "choices": [
+        "Q > 0 khi vật nhận nhiệt lượng; A < 0 khi vật thực hiện công lên vật khác.",
+        "Q > 0 khi vật truyền nhiệt; A > 0 khi vật thực hiện công.",
+        "Q < 0 khi vật nhận nhiệt; A > 0 khi vật nhận công.",
+        "Q > 0 khi vật thực hiện công; A < 0 khi vật nhận nhiệt."
+      ],
+      "answer": 0,
+      "explain": "Theo quy ước của sách, nhận nhiệt và nhận công đều dương; truyền nhiệt và thực hiện công đều âm.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Đảo ngược dấu của cả Q và A so với quy ước.",
+        "2": "Q < 0 là khi vật truyền nhiệt, không phải nhận.",
+        "3": "Q và A bị gán sai ý nghĩa."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật nhận nhiệt lượng 150 J và nhận công 40 J từ vật khác. Độ biến thiên nội năng ΔU (J) là:",
+      "expr": "150+40",
+      "answer": "190",
+      "explain": "Cả hai đều dương nên ΔU = 150 + 40 = 190 J."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vật thực hiện công 200 J và nhận nhiệt lượng 500 J. Độ biến thiên nội năng ΔU (J) là:",
+      "choices": [
+        "700",
+        "300",
+        "-300",
+        "-700"
+      ],
+      "answer": 1,
+      "explain": "Vật thực hiện công nên A = −200 J; nhận nhiệt nên Q = +500 J. ΔU = −200 + 500 = 300 J.",
+      "expr": "-200+500",
+      "wrong_explain": {
+        "0": "Đã bỏ dấu âm của công khi vật thực hiện công.",
+        "2": "Đã lấy A = +200 (nhận công) và Q = −500 (truyền nhiệt), ngược đề bài.",
+        "3": "Đã coi vật truyền nhiệt 500 J, ngược với đề bài."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khí nhận công 60 J và đồng thời truyền nhiệt lượng 100 J ra môi trường. Độ biến thiên nội năng ΔU (J) là:",
+      "expr": "60-100",
+      "answer": "-40",
+      "explain": "A = +60 J (nhận công), Q = −100 J (truyền nhiệt). ΔU = 60 − 100 = −40 J."
+    },
+    {
+      "id": "q09",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi vật nhận công từ vật khác, giá trị của A là:",
+      "choices": [
+        "A > 0",
+        "A < 0",
+        "A = 0",
+        "A luôn bằng Q"
+      ],
+      "answer": 0,
+      "explain": "Theo quy ước, công mà vật nhận được từ vật khác có giá trị dương.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "A < 0 là khi vật thực hiện công lên vật khác.",
+        "2": "Công nhận được khác 0.",
+        "3": "A và Q là hai đại lượng khác nhau."
+      }
+    },
+    {
+      "id": "q10",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hơi nước ngưng tụ ở nhiệt độ không đổi. Nội năng của lượng hơi nước này thay đổi thế nào?",
+      "choices": [
+        "Giảm, vì hơi nước toả nhiệt ra môi trường",
+        "Tăng, vì hơi nước nhận nhiệt",
+        "Không đổi, vì nhiệt độ không đổi",
+        "Tăng, vì thế năng phân tử tăng"
+      ],
+      "answer": 0,
+      "explain": "Ngưng tụ là quá trình toả nhiệt (Q < 0) và khoảng cách phân tử giảm, nên nội năng giảm.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Nhiệt độ không đổi không có nghĩa là nội năng không đổi; quá trình này toả nhiệt.",
+        "2": "Nội năng vẫn thay đổi vì có truyền nhiệt.",
+        "3": "Khi ngưng tụ, thế năng phân tử giảm."
+      }
+    },
+    {
+      "id": "q11",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vật rắn kết tinh đang nóng chảy (nhận nhiệt liên tục ở nhiệt độ không đổi). Nội năng của vật:",
+      "choices": [
+        "Tăng",
+        "Giảm",
+        "Không đổi",
+        "Bằng 0"
+      ],
+      "answer": 0,
+      "explain": "Vật nhận nhiệt nên Q > 0, không thực hiện công nên ΔU > 0. Nhiệt được dùng để tăng thế năng phân tử.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Vật nhận nhiệt nên nội năng không giảm.",
+        "2": "Nhiệt độ không đổi nhưng nội năng vẫn tăng.",
+        "3": "Nội năng không bằng 0."
+      }
+    }
+  ]
+}

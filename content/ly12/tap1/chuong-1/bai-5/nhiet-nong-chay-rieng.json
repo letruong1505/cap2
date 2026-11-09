@@ -1,0 +1,191 @@
+{
+  "id": "bai-5",
+  "grade": 12,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 12",
+  "chapter": "Chương I. Vật lí nhiệt",
+  "lesson": "Bài 5. Nhiệt nóng chảy riêng",
+  "section": "",
+  "bookPage": 24,
+  "theory": [
+    {
+      "type": "formula",
+      "content": "Q = λ·m"
+    },
+    {
+      "type": "text",
+      "content": "Nhiệt lượng cần truyền cho vật khi vật bắt đầu nóng chảy đến khi nóng chảy hoàn toàn tỉ lệ thuận với khối lượng vật. Hằng số tỉ lệ λ phụ thuộc vào chất làm vật, gọi là nhiệt nóng chảy riêng, đơn vị J/kg."
+    },
+    {
+      "type": "text",
+      "content": "Nhiệt nóng chảy riêng của một chất là nhiệt lượng cần để làm cho 1 kg chất đó nóng chảy hoàn toàn ở nhiệt độ nóng chảy. Một số giá trị: nước đá (0 °C) 3,34·10⁵ J/kg; sắt (1535 °C) 2,77·10⁵ J/kg; đồng (1084 °C) 1,80·10⁵ J/kg; chì (327 °C) 0,25·10⁵ J/kg."
+    },
+    {
+      "type": "text",
+      "content": "Trong quá trình nóng chảy, nhiệt độ không đổi nhưng vật vẫn nhận nhiệt. Phần nhiệt này dùng để phá vỡ liên kết giữa các phân tử, làm tăng thế năng phân tử chứ không làm tăng động năng trung bình."
+    },
+    {
+      "type": "text",
+      "content": "Nhiệt nóng chảy riêng được dùng trong đúc kim loại, tách kim loại bằng nấu chảy và hàn bằng thiếc."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Làm nóng chảy hoàn toàn 3 kg nước đá ở 0 °C. Biết λ = 3,34·10⁵ J/kg. Tính nhiệt lượng cần cung cấp.",
+      "steps": [
+        "Q = λ·m = 3,34·10⁵ · 3.",
+        "= 1 002 000 J."
+      ],
+      "expr": "334000*3",
+      "answer": "1002000"
+    },
+    {
+      "problem": "Nhiệt lượng 1 002 000 J làm nóng chảy hoàn toàn bao nhiêu kg nước đá ở 0 °C? Biết λ = 3,34·10⁵ J/kg.",
+      "steps": [
+        "m = Q/λ = 1 002 000 / 334 000.",
+        "= 3 kg."
+      ],
+      "expr": "1002000/334000",
+      "answer": "3"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nhiệt nóng chảy riêng của một chất là:",
+      "choices": [
+        "Nhiệt lượng cần để làm 1 kg chất đó nóng chảy hoàn toàn ở nhiệt độ nóng chảy",
+        "Nhiệt lượng cần để làm 1 kg chất đó tăng 1 °C",
+        "Nhiệt lượng toả ra khi 1 kg chất đó hoá hơi",
+        "Nhiệt độ nóng chảy của chất đó"
+      ],
+      "answer": 0,
+      "explain": "Đây là định nghĩa nhiệt nóng chảy riêng theo sách giáo khoa.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Đây là định nghĩa nhiệt dung riêng.",
+        "2": "Đây là định nghĩa nhiệt hoá hơi riêng, khác về quá trình.",
+        "3": "Nhiệt độ nóng chảy là một nhiệt độ, không phải nhiệt lượng."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn vị của nhiệt nóng chảy riêng là:",
+      "choices": [
+        "J/kg",
+        "J/(kg·K)",
+        "J·kg",
+        "J/m³"
+      ],
+      "answer": 0,
+      "explain": "Từ Q = λ·m, λ có đơn vị J/kg.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "J/(kg·K) là đơn vị của nhiệt dung riêng.",
+        "2": "J·kg không đúng đơn vị.",
+        "3": "J/m³ là đơn vị khác."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trong quá trình nóng chảy của chất rắn kết tinh, nhiệt độ không đổi nhưng vật vẫn nhận nhiệt. Nhiệt đó dùng để:",
+      "choices": [
+        "Phá vỡ liên kết giữa các phân tử, làm tăng thế năng phân tử",
+        "Làm tăng động năng trung bình của các phân tử",
+        "Làm tăng khối lượng của vật",
+        "Làm giảm nội năng của vật"
+      ],
+      "answer": 0,
+      "explain": "Nhiệt độ không đổi nghĩa là động năng trung bình không đổi; nhiệt được dùng để tăng thế năng phân tử.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Nếu động năng tăng thì nhiệt độ sẽ tăng.",
+        "2": "Khối lượng không đổi trong quá trình nóng chảy.",
+        "3": "Nội năng tăng, không giảm."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Làm nóng chảy hoàn toàn 2 kg nước đá ở 0 °C cần nhiệt lượng (J), biết λ = 3,34·10⁵ J/kg:",
+      "expr": "334000*2",
+      "answer": "668000",
+      "explain": "Q = λ·m = 3,34·10⁵ · 2 = 668 000 J."
+    },
+    {
+      "id": "q05",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nhiệt lượng cần để làm nóng chảy hoàn toàn 0,5 kg sắt ở nhiệt độ nóng chảy (J), biết λ = 2,77·10⁵ J/kg:",
+      "expr": "277000*0.5",
+      "answer": "138500",
+      "explain": "Q = 2,77·10⁵ · 0,5 = 138 500 J."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lò điện công suất 20 000 W, chỉ 50% năng lượng dùng để làm đồng. Thời gian (s) để 2 kg đồng ở 30 °C hoàn toàn nóng chảy? Biết c đồng = 380 J/(kg·K), nhiệt độ nóng chảy 1084 °C, λ = 1,80·10⁵ J/kg.",
+      "expr": "1161040/10000",
+      "answer": "116,104",
+      "explain": "Nhiệt làm nóng đồng: 2 · 380 · (1084 − 30) = 801 040 J. Nhiệt nóng chảy: 1,80·10⁵ · 2 = 360 000 J. Tổng 1 161 040 J. Công suất hữu ích 0,5 · 20 000 = 10 000 W nên t = 116,104 s."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao đồng và chì thường được đúc bằng cách nấu chảy rồi đổ vào khuôn?",
+      "choices": [
+        "Vì chúng dễ nóng chảy ở nhiệt độ có thể đạt được trong lò, rồi đổ vào khuôn để tạo hình",
+        "Vì chúng không dẫn nhiệt",
+        "Vì chúng không có nhiệt nóng chảy riêng",
+        "Vì chúng có khối lượng riêng bằng 0"
+      ],
+      "answer": 0,
+      "explain": "Kim loại nóng chảy ở nhiệt độ đạt được trong lò nên có thể đổ vào khuôn và đông đặc thành sản phẩm.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Khả năng dẫn nhiệt không phải lý do đúc.",
+        "2": "Mọi chất đều có nhiệt nóng chảy riêng.",
+        "3": "Khối lượng riêng không bằng 0."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi một chất đông đặc ở nhiệt độ đông đặc, độ lớn nhiệt lượng toả ra so với nhiệt lượng cần để nóng chảy hoàn toàn cùng khối lượng chất đó:",
+      "choices": [
+        "Bằng nhau",
+        "Lớn hơn gấp đôi",
+        "Bằng 0",
+        "Không liên quan"
+      ],
+      "answer": 0,
+      "explain": "Nhiệt lượng toả ra khi đông đặc có cùng độ lớn với nhiệt lượng thu vào khi nóng chảy, chỉ khác về chiều.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Hai nhiệt lượng này có cùng độ lớn.",
+        "2": "Quá trình đông đặc vẫn toả nhiệt.",
+        "3": "Hai quá trình này có liên quan trực tiếp."
+      }
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cần cung cấp bao nhiêu J để nóng chảy hoàn toàn 0,25 kg nước đá ở 0 °C? Biết λ = 3,34·10⁵ J/kg.",
+      "expr": "334000*0.25",
+      "answer": "83500",
+      "explain": "Q = 3,34·10⁵ · 0,25 = 83 500 J."
+    }
+  ]
+}

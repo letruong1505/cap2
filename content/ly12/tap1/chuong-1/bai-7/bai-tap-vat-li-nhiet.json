@@ -1,0 +1,176 @@
+{
+  "id": "bai-7",
+  "grade": 12,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 12",
+  "chapter": "Chương I. Vật lí nhiệt",
+  "lesson": "Bài 7. Bài tập về vật lí nhiệt",
+  "section": "",
+  "bookPage": 30,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các bài tập vật lí nhiệt dùng ba nội dung chính: cấu trúc chất và sự chuyển thể; định luật I của nhiệt động lực học; nhiệt dung riêng, nhiệt nóng chảy riêng và nhiệt hoá hơi riêng."
+    },
+    {
+      "type": "formula",
+      "content": "ΔU = A + Q;  Q = m·c·ΔT;  Q = λ·m;  Q = L·m"
+    },
+    {
+      "type": "text",
+      "content": "Khi các vật chỉ truyền nhiệt cho nhau, không truyền nhiệt ra ngoài, thì nhiệt lượng toả ra bằng nhiệt lượng thu vào: Q_toả = Q_thu."
+    },
+    {
+      "type": "text",
+      "content": "Khi nội năng thay đổi đồng thời do thực hiện công và truyền nhiệt, cần dùng công thức ΔU = A + Q cùng các công thức công cơ học đã học."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một lượng khí nhận nhiệt 30 J và đồng thời bị nén bởi công 50 J. Tính độ biến thiên nội năng.",
+      "steps": [
+        "Q = +30 J, A = +50 J.",
+        "ΔU = A + Q = 50 + 30 = 80 J."
+      ],
+      "expr": "50+30",
+      "answer": "80"
+    },
+    {
+      "problem": "Đổ m₁ kg nước ở 100 °C vào m₂ kg nước ở 20 °C, sau khi cân bằng nhiệt có nhiệt độ 40 °C. Biết m₁ + m₂ = 4 kg, tìm m₁ (kg).",
+      "steps": [
+        "Nhiệt toả bằng nhiệt thu: m₁·c·(100 − 40) = m₂·c·(40 − 20), tức 60m₁ = 20m₂, suy ra m₂ = 3m₁.",
+        "Từ m₁ + m₂ = 4 ⇒ 4m₁ = 4 ⇒ m₁ = 1 kg."
+      ],
+      "expr": "4/4",
+      "answer": "1"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phát biểu nào đúng với công thức ΔU = A + Q?",
+      "choices": [
+        "A > 0 khi vật nhận công; Q > 0 khi vật nhận nhiệt",
+        "A > 0 khi vật thực hiện công; Q > 0 khi vật truyền nhiệt",
+        "A < 0 khi vật nhận công; Q < 0 khi vật nhận nhiệt",
+        "A và Q luôn dương"
+      ],
+      "answer": 0,
+      "explain": "Theo quy ước, nhận công và nhận nhiệt đều mang dấu dương.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Đây là quy ước ngược lại với sách giáo khoa.",
+        "2": "Đây là quy ước sai ở cả hai đại lượng.",
+        "3": "A và Q có thể âm khi vật thực hiện công hoặc truyền nhiệt."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Một vật nhận nhiệt lượng 800 J và thực hiện công 300 J lên vật khác. Độ biến thiên nội năng ΔU (J) là:",
+      "choices": [
+        "500",
+        "1100",
+        "-500",
+        "-1100"
+      ],
+      "answer": 0,
+      "explain": "A = −300 J (thực hiện công), Q = +800 J (nhận nhiệt). ΔU = −300 + 800 = 500 J.",
+      "expr": "-300+800",
+      "wrong_explain": {
+        "1": "Đã bỏ dấu âm của công khi vật thực hiện công.",
+        "2": "Đã đảo dấu, coi vật nhận công 300 J và truyền nhiệt 800 J.",
+        "3": "Đã coi vật thực hiện công 300 J và truyền nhiệt 800 J, ngược với đề bài."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chất lỏng 0,5 kg nhận nhiệt lượng 210 000 J làm nhiệt độ tăng thêm 100 K. Nhiệt dung riêng (J/(kg·K)) là:",
+      "expr": "210000/50",
+      "answer": "4200",
+      "explain": "c = Q/(m·ΔT) = 210 000 / (0,5 · 100) = 4200 J/(kg·K)."
+    },
+    {
+      "id": "q04",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đun 0,5 kg nước từ 20 °C đến 100 °C bằng ấm 1000 W, hiệu suất 100%, c = 4200 J/(kg·K). Thời gian đun (s) là:",
+      "expr": "0.5*4200*80/1000",
+      "answer": "168",
+      "explain": "Q = 0,5 · 4200 · 80 = 168 000 J; t = Q/P = 168 000 / 1000 = 168 s."
+    },
+    {
+      "id": "q05",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Quy ước dấu nào phù hợp với định luật I của nhiệt động lực học?",
+      "choices": [
+        "Vật nhận công: A < 0; vật nhận nhiệt: Q < 0.",
+        "Vật nhận công: A > 0; vật nhận nhiệt: Q > 0.",
+        "Vật thực hiện công: A > 0; vật truyền nhiệt: Q > 0.",
+        "Vật thực hiện công: A > 0; vật truyền nhiệt: Q < 0."
+      ],
+      "answer": 1,
+      "explain": "Nhận công và nhận nhiệt đều dương; thực hiện công và truyền nhiệt đều âm.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Dấu của A và Q bị đảo ngược so với quy ước.",
+        "2": "Vật thực hiện công thì A < 0 chứ không phải A > 0 như phương án này ghi.",
+        "3": "Vật truyền nhiệt thì Q < 0 chứ không phải Q > 0 như phương án này ghi."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một ấm nhôm khối lượng 0,6 kg đựng 1,5 kg nước ở 20 °C. Nhiệt lượng cần để đun ấm nước từ 20 °C lên 100 °C (J), biết c nhôm = 880 J/(kg·K), c nước = 4200 J/(kg·K):",
+      "expr": "0.6*880*80+1.5*4200*80",
+      "answer": "546240",
+      "explain": "Nhôm: 0,6 · 880 · 80 = 42 240 J. Nước: 1,5 · 4200 · 80 = 504 000 J. Tổng 546 240 J."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Sau đó, 20% lượng nước trong ấm (1,5 kg) hoá hơi ở 100 °C, L = 2,26·10⁶ J/kg. Nhiệt lượng cần cho việc hoá hơi (J):",
+      "expr": "0.2*1.5*2260000",
+      "answer": "678000",
+      "explain": "Khối lượng nước hoá hơi: 0,2 · 1,5 = 0,3 kg. Q = 0,3 · 2 260 000 = 678 000 J."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ở câu trên, chỉ 75% nhiệt lượng bếp toả ra được dùng để đun ấm nước. Nhiệt lượng bếp toả ra (J) trong quá trình này là:",
+      "expr": "(0.6*880*80+1.5*4200*80+0.2*1.5*2260000)/0.75",
+      "answer": "1632320",
+      "explain": "Tổng nhiệt có ích: 546 240 + 678 000 = 1 224 240 J. Nhiệt bếp toả ra: 1 224 240 / 0,75 = 1 632 320 J."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi hai vật chỉ truyền nhiệt cho nhau mà không truyền nhiệt ra ngoài, tổng đại số nhiệt lượng của hệ:",
+      "choices": [
+        "Bằng 0 (nhiệt toả ra bằng nhiệt thu vào)",
+        "Luôn dương",
+        "Luôn âm",
+        "Bằng công thực hiện"
+      ],
+      "answer": 0,
+      "explain": "Nhiệt lượng toả ra của vật này bằng nhiệt lượng thu vào của vật kia, nên tổng đại số bằng 0.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Nhiệt lượng toả ra làm tổng âm cho một vật, nên tổng không luôn dương.",
+        "2": "Tổng không luôn âm vì có vật thu nhiệt.",
+        "3": "Nhiệt lượng không bằng công thực hiện."
+      }
+    }
+  ]
+}

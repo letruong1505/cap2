@@ -1,0 +1,211 @@
+{
+  "id": "bai-4",
+  "grade": 12,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 12",
+  "chapter": "Chương I. Vật lí nhiệt",
+  "lesson": "Bài 4. Nhiệt dung riêng",
+  "section": "",
+  "bookPage": 20,
+  "theory": [
+    {
+      "type": "formula",
+      "content": "Q = m·c·ΔT"
+    },
+    {
+      "type": "text",
+      "content": "Nhiệt lượng cần cung cấp cho vật để làm nóng vật tỉ lệ thuận với khối lượng m và độ tăng nhiệt độ ΔT. Hằng số tỉ lệ c phụ thuộc vào chất làm vật, gọi là nhiệt dung riêng, có đơn vị J/(kg·K)."
+    },
+    {
+      "type": "text",
+      "content": "Nhiệt dung riêng của một chất là nhiệt lượng cần truyền cho 1 kg chất đó để nhiệt độ của nó tăng thêm 1 °C (hoặc 1 K). Một số giá trị gần đúng: nước 4200, nước đá 2100, đất 800, sắt 440, đồng 380, thuỷ ngân 140, chì 130 (đơn vị J/(kg·K))."
+    },
+    {
+      "type": "text",
+      "content": "Nước có nhiệt dung riêng lớn nên hấp thụ nhiều nhiệt mà nhiệt độ tăng ít, nên thường được dùng làm chất tải nhiệt trong hệ thống làm mát. Ban ngày đất nóng nhanh hơn nước biển, không khí trên đất bốc lên và gió thổi từ biển vào đất liền."
+    },
+    {
+      "type": "text",
+      "content": "Để đo nhiệt dung riêng của nước, cần đo khối lượng nước m, độ tăng nhiệt độ Δt và nhiệt lượng Q do dòng điện qua điện trở toả ra trong thời gian đun, Q = P·τ; từ đó c = Q/(m·Δt)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đun 2 kg nước từ 20 °C lên 50 °C. Tính nhiệt lượng cần cung cấp, biết c = 4200 J/(kg·K).",
+      "steps": [
+        "ΔT = 50 − 20 = 30 K.",
+        "Q = m·c·ΔT = 2 · 4200 · 30 = 252 000 J."
+      ],
+      "expr": "2*4200*30",
+      "answer": "252000"
+    },
+    {
+      "problem": "Một miếng đồng 0,5 kg thu nhiệt lượng 7600 J thì nhiệt độ tăng 40 K. Tính nhiệt dung riêng của đồng.",
+      "steps": [
+        "c = Q/(m·ΔT) = 7600/(0,5 · 40).",
+        "= 7600/20 = 380 J/(kg·K)."
+      ],
+      "expr": "7600/20",
+      "answer": "380"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nhiệt dung riêng của một chất là:",
+      "choices": [
+        "Nhiệt lượng cần truyền cho 1 kg chất đó để nhiệt độ tăng thêm 1 °C",
+        "Nhiệt lượng cần truyền cho 1 kg chất để nóng chảy",
+        "Nhiệt lượng toả ra khi 1 kg chất đông đặc",
+        "Nhiệt lượng cần để tăng nhiệt độ 1 kg chất lên 100 °C"
+      ],
+      "answer": 0,
+      "explain": "Đây là định nghĩa nhiệt dung riêng theo sách giáo khoa.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Đây là định nghĩa nhiệt nóng chảy riêng.",
+        "2": "Đây là định nghĩa nhiệt đông đặc, không phải nhiệt dung riêng.",
+        "3": "Nhiệt dung riêng không gắn với mốc 100 °C."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn vị của nhiệt dung riêng là:",
+      "choices": [
+        "J/(kg·K)",
+        "J/kg",
+        "J/K",
+        "J·kg/K"
+      ],
+      "answer": 0,
+      "explain": "Từ Q = m·c·ΔT, c có đơn vị J/(kg·K).",
+      "concept": true,
+      "wrong_explain": {
+        "1": "J/kg là đơn vị của nhiệt hoá hơi và nóng chảy riêng.",
+        "2": "J/K thiếu khối lượng.",
+        "3": "Đơn vị này không đúng."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao nước thường được dùng làm chất tải nhiệt trong hệ thống làm mát động cơ?",
+      "choices": [
+        "Vì nước có nhiệt dung riêng lớn, hấp thụ nhiều nhiệt mà nhiệt độ tăng ít",
+        "Vì nước không dẫn nhiệt",
+        "Vì nước có khối lượng riêng nhỏ nhất",
+        "Vì nước có nhiệt độ sôi thấp nhất"
+      ],
+      "answer": 0,
+      "explain": "Nhiệt dung riêng lớn nghĩa là một lượng nước hấp thụ được nhiều nhiệt với độ tăng nhiệt độ nhỏ.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Nước dẫn nhiệt tốt hơn nhiều chất lỏng khác.",
+        "2": "Khối lượng riêng không liên quan đến khả năng làm mát.",
+        "3": "Nhiệt độ sôi cao thuận lợi hơn cho làm mát."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ban ngày gió thường thổi từ biển vào đất liền vì:",
+      "choices": [
+        "Nước biển có nhiệt dung riêng lớn hơn đất nên nóng lên chậm hơn",
+        "Đất có nhiệt dung riêng lớn hơn nước",
+        "Không khí trên biển luôn lạnh hơn",
+        "Nước biển không hấp thụ nhiệt"
+      ],
+      "answer": 0,
+      "explain": "Đất có nhiệt dung riêng nhỏ nên nóng nhanh; không khí trên đất bốc lên và không khí mát từ biển tràn vào.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Nhiệt dung riêng của đất nhỏ hơn nước.",
+        "2": "Nhiệt độ không khí trên biển không cố định là lạnh hơn ban ngày.",
+        "3": "Nước biển vẫn hấp thụ nhiệt."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cần cung cấp bao nhiêu J để 1 kg nước tăng thêm 10 °C? Biết c = 4200 J/(kg·K).",
+      "expr": "1*4200*10",
+      "answer": "42000",
+      "explain": "Q = m·c·ΔT = 1 · 4200 · 10 = 42 000 J."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cùng khối lượng và nhận nhiệt lượng như nhau, chất nào tăng nhiệt độ nhiều nhất trong các chất: nước, đồng, thuỷ ngân?",
+      "choices": [
+        "Nước",
+        "Đồng",
+        "Thuỷ ngân",
+        "Không chất nào"
+      ],
+      "answer": 2,
+      "explain": "Từ ΔT = Q/(m·c), chất có c nhỏ nhất sẽ tăng nhiệt độ nhiều nhất; thuỷ ngân có c = 140 J/(kg·K) là nhỏ nhất trong ba chất.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Nước có c lớn nhất nên tăng nhiệt độ ít nhất.",
+        "1": "Đồng có c = 380, lớn hơn thuỷ ngân.",
+        "3": "Không đúng: thuỷ ngân có c nhỏ nhất nên tăng nhiệt độ nhiều nhất."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thùng chứa 20 lít nước (khối lượng riêng 1 kg/lít) ở 20 °C được đun đến 70 °C. Nhiệt lượng cần cung cấp (J), biết c = 4200 J/(kg·K):",
+      "expr": "20*4200*50",
+      "answer": "4200000",
+      "explain": "m = 20 kg, ΔT = 50 K. Q = 20 · 4200 · 50 = 4 200 000 J."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thiết bị điện công suất 2500 W, chỉ 80% điện năng dùng để làm nóng nước. Để cung cấp 4 200 000 J cho nước, thời gian đun (s) là:",
+      "expr": "4200000/2000",
+      "answer": "2100",
+      "explain": "Công suất hữu ích là 0,8 · 2500 = 2000 W; t = 4 200 000 / 2000 = 2100 s."
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trong thí nghiệm đo nhiệt dung riêng của nước, cần đo những đại lượng nào để tính c?",
+      "choices": [
+        "Khối lượng nước, độ tăng nhiệt độ và nhiệt lượng do điện trở toả ra",
+        "Chỉ cần đo nhiệt độ ban đầu",
+        "Chỉ cần đo khối lượng nước",
+        "Đường kính của bình nhiệt lượng kế"
+      ],
+      "answer": 0,
+      "explain": "Từ c = Q/(m·Δt), cần đo m, Δt và Q (Q tính từ công suất và thời gian).",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chỉ nhiệt độ ban đầu không đủ để tính c.",
+        "2": "Chỉ khối lượng cũng không đủ để tính c.",
+        "3": "Đường kính bình không liên quan đến công thức."
+      }
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cần 84 000 J để làm nóng một khối nước tăng thêm 20 K (c = 4200 J/(kg·K)). Khối lượng nước (kg) là:",
+      "expr": "84000/84000",
+      "answer": "1",
+      "explain": "m = Q/(c·ΔT) = 84 000 / (4200 · 20) = 1 kg."
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "bai-6",
+  "grade": 12,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 12",
+  "chapter": "Chương I. Vật lí nhiệt",
+  "lesson": "Bài 6. Nhiệt hoá hơi riêng",
+  "section": "",
+  "bookPage": 27,
+  "theory": [
+    {
+      "type": "formula",
+      "content": "Q = L·m"
+    },
+    {
+      "type": "text",
+      "content": "Nhiệt lượng cần cung cấp cho một lượng chất lỏng hoá hơi ở nhiệt độ không đổi tỉ lệ thuận với khối lượng. Hằng số tỉ lệ L, gọi là nhiệt hoá hơi riêng của chất lỏng, có đơn vị J/kg."
+    },
+    {
+      "type": "text",
+      "content": "Nhiệt hoá hơi riêng của một chất lỏng ở một nhiệt độ xác định là nhiệt lượng cần để làm cho 1 kg chất lỏng đó hoá hơi hoàn toàn ở nhiệt độ ấy. Bảng giá trị ở nhiệt độ sôi dưới áp suất tiêu chuẩn: nước (100 °C) 2,26·10⁶ J/kg; rượu (78 °C) 8,57·10⁵ J/kg; thuỷ ngân (357 °C) 2,85·10⁵ J/kg; ether (34,5 °C) 0,40·10⁶ J/kg."
+    },
+    {
+      "type": "text",
+      "content": "Nhiệt hoá hơi riêng được ứng dụng trong các thiết bị làm lạnh như máy điều hoà, và trong nồi hấp tiệt trùng y học."
+    },
+    {
+      "type": "text",
+      "content": "Nhiệt nóng chảy riêng và nhiệt hoá hơi riêng còn được gọi là ẩn nhiệt riêng, vì trong các quá trình này nhiệt độ không thay đổi dù vẫn truyền nhiệt."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính nhiệt lượng để 10 kg nước ở 25 °C chuyển hoàn toàn thành hơi ở 100 °C. Biết c = 4200 J/(kg·K) và L = 2,26·10⁶ J/kg.",
+      "steps": [
+        "Nước nóng từ 25 °C lên 100 °C: Q₁ = m·c·ΔT = 10 · 4200 · 75 = 3 150 000 J.",
+        "Hoá hơi ở 100 °C: Q₂ = L·m = 2,26·10⁶ · 10 = 22 600 000 J.",
+        "Tổng: Q = Q₁ + Q₂ = 25 750 000 J."
+      ],
+      "expr": "10*4200*75+2260000*10",
+      "answer": "25750000"
+    },
+    {
+      "problem": "Nhiệt lượng 1 130 000 J làm hoá hơi hoàn toàn bao nhiêu kg nước ở 100 °C? Biết L = 2,26·10⁶ J/kg.",
+      "steps": [
+        "m = Q/L = 1 130 000 / 2 260 000.",
+        "= 0,5 kg."
+      ],
+      "expr": "1130000/2260000",
+      "answer": "0,5"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nhiệt hoá hơi riêng của một chất lỏng là:",
+      "choices": [
+        "Nhiệt lượng cần để làm 1 kg chất lỏng đó hoá hơi hoàn toàn ở nhiệt độ xác định",
+        "Nhiệt lượng cần để làm 1 kg chất lỏng tăng 1 °C",
+        "Nhiệt lượng cần để làm 1 kg chất lỏng đông đặc",
+        "Nhiệt độ sôi của chất lỏng"
+      ],
+      "answer": 0,
+      "explain": "Đây là định nghĩa nhiệt hoá hơi riêng theo sách giáo khoa.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Đây là định nghĩa nhiệt dung riêng.",
+        "2": "Đây là định nghĩa nhiệt đông đặc, ngược chiều với hoá hơi.",
+        "3": "Nhiệt độ sôi là một nhiệt độ, không phải nhiệt lượng."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn vị của nhiệt hoá hơi riêng là:",
+      "choices": [
+        "J/kg",
+        "J/(kg·K)",
+        "J/m",
+        "W"
+      ],
+      "answer": 0,
+      "explain": "Từ Q = L·m, L có đơn vị J/kg.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "J/(kg·K) là đơn vị nhiệt dung riêng.",
+        "2": "J/m không đúng đơn vị.",
+        "3": "W là đơn vị công suất."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nhiệt hoá hơi riêng của nước ở 100 °C là 2,26·10⁶ J/kg. Điều này có nghĩa là:",
+      "choices": [
+        "Cần 2,26·10⁶ J để làm 1 kg nước ở 100 °C hoá hơi hoàn toàn",
+        "Nước toả ra 2,26·10⁶ J khi sôi",
+        "Cần 2,26·10⁶ J để đun 1 kg nước tăng 1 °C",
+        "Cần 2,26 J để làm 10⁶ kg nước hoá hơi"
+      ],
+      "answer": 0,
+      "explain": "Nhiệt hoá hơi riêng là nhiệt lượng cần thu vào để 1 kg chất lỏng hoá hơi hoàn toàn ở nhiệt độ đó.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Khi sôi, nước thu nhiệt chứ không toả nhiệt.",
+        "2": "Đây là nhiệt dung riêng, không phải nhiệt hoá hơi riêng.",
+        "3": "Phép so sánh về khối lượng và nhiệt lượng bị đảo ngược."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Nhiệt lượng cần để 1 kg nước ở 100 °C hoá hơi hoàn toàn (J), biết L = 2,26·10⁶ J/kg:",
+      "expr": "2260000*1",
+      "answer": "2260000",
+      "explain": "Q = L·m = 2,26·10⁶ · 1 = 2 260 000 J."
+    },
+    {
+      "id": "q05",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nhiệt lượng 1 130 000 J làm hoá hơi hoàn toàn bao nhiêu kg nước ở 100 °C? Biết L = 2,26·10⁶ J/kg.",
+      "expr": "1130000/2260000",
+      "answer": "0,5",
+      "explain": "m = Q/L = 1 130 000 / 2 260 000 = 0,5 kg."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cần nhiệt lượng bao nhiêu (J) để 0,2 kg nước ở 100 °C hoá hơi hoàn toàn? Biết L = 2,26·10⁶ J/kg.",
+      "expr": "0.2*2260000",
+      "answer": "452000",
+      "explain": "Q = 0,2 · 2 260 000 = 452 000 J."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Trong các chất nước, rượu, thuỷ ngân và ether, chất nào có nhiệt hoá hơi riêng lớn nhất ở nhiệt độ sôi? Giá trị lớn nhất (J/kg) là:",
+      "choices": [
+        "2260000",
+        "857000",
+        "285000",
+        "400000"
+      ],
+      "answer": 0,
+      "explain": "Nước có L = 2,26·10⁶ J/kg, lớn hơn các chất còn lại trong bảng.",
+      "expr": "2260000",
+      "wrong_explain": {
+        "1": "Đây là giá trị của rượu, nhỏ hơn nước.",
+        "2": "Đây là giá trị của thuỷ ngân, nhỏ hơn nước.",
+        "3": "Đây là giá trị của ether, nhỏ hơn nước."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao nhiệt nóng chảy riêng và nhiệt hoá hơi riêng được gọi là ẩn nhiệt?",
+      "choices": [
+        "Vì trong các quá trình này, nhiệt độ không thay đổi dù vẫn truyền nhiệt",
+        "Vì chất không nhận nhiệt",
+        "Vì nhiệt lượng không đo được",
+        "Vì chất luôn ở thể rắn"
+      ],
+      "answer": 0,
+      "explain": "Nhiệt được truyền vào nhưng nhiệt độ không đổi nên gọi là ẩn nhiệt.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chất vẫn nhận nhiệt trong các quá trình này.",
+        "2": "Nhiệt lượng vẫn đo được bằng công thức Q = λm hoặc Q = Lm.",
+        "3": "Chất có thể ở thể lỏng hoặc hơi trong các quá trình này."
+      }
+    }
+  ]
+}
