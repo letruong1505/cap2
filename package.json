@@ -11,7 +11,8 @@
     "test": "node --test tests/license.test.js tests/games.test.js",
     "dist:win": "electron-builder --win nsis --publish never",
     "dist:win:thpt": "electron-builder --win nsis --publish never --config build-thpt.json",
-    "dist:keygen": "electron-builder --win portable --config keygen/builder.json"
+    "dist:keygen": "electron-builder --win portable --config keygen/builder.json",
+    "dist:win:nam-linh": "electron-builder --win nsis --publish never --config build-nam-linh.json"
   },
   "build": {
     "appId": "vn.namlinh.vungbai",

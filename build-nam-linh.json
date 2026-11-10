@@ -1,0 +1,29 @@
+{
+  "appId": "vn.namlinh.educenter",
+  "productName": "Nam Linh Educenter",
+  "directories": {
+    "app": ".",
+    "output": "dist-thpt"
+  },
+  "files": [
+    "main/**/*",
+    "renderer/**/*",
+    "core/**/*",
+    "content/**/*",
+    "package.json"
+  ],
+  "win": {
+    "target": "nsis",
+    "artifactName": "Nam Linh Educenter.exe"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "perMachine": false,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "Nam Linh Educenter",
+    "uninstallDisplayName": "Nam Linh Educenter",
+    "deleteAppDataOnUninstall": false
+  }
+}
