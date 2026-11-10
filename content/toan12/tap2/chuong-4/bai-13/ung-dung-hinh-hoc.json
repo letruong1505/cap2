@@ -24,6 +24,11 @@
     {
       "type": "text",
       "content": "Thể tích khối tròn xoay sinh ra khi quay hình phẳng giới hạn bởi y = f(x) ≥ 0, trục hoành, x = a, x = b quanh trục Ox là V = π∫_a^b f²(x)dx."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/tn-toan12-b13-ung-dung.svg",
+      "caption": "Diện tích hình phẳng và thể tích khối tròn xoay"
     }
   ],
   "examples": [
@@ -78,7 +83,8 @@
       "stem": "Ví dụ 1: diện tích hình phẳng giới hạn bởi y = x³, trục hoành, x = 0, x = 2 là?",
       "expr": "2*2*2*2/4",
       "answer": "4",
-      "explain": "S = 2⁴/4 = 4."
+      "explain": "S = 2⁴/4 = 4.",
+      "figure": "figures/bt12-b13-q01.svg"
     },
     {
       "id": "q02",
@@ -98,7 +104,8 @@
         "1": "Hai phần có diện tích dương, không triệt tiêu nhau khi lấy trị tuyệt đối.",
         "2": "2π là độ dài đường tròn đơn vị, không phải diện tích này.",
         "3": "Chỉ tính một nửa, bỏ qua phần dưới trục hoành."
-      }
+      },
+      "figure": "figures/bt12-b13-q02.svg"
     },
     {
       "id": "q03",
@@ -107,7 +114,8 @@
       "stem": "Luyện tập 1: diện tích hình phẳng giới hạn bởi y = x² − 4, trục hoành, x = 0, x = 3 là?",
       "expr": "(4*2-2*2*2/3)+((3*3*3/3-4*3)-(2*2*2/3-4*2))",
       "answer": "23/3",
-      "explain": "∫_0^2 (4 − x²)dx = 16/3 và ∫_2^3 (x² − 4)dx = 7/3; tổng 23/3."
+      "explain": "∫_0^2 (4 − x²)dx = 16/3 và ∫_2^3 (x² − 4)dx = 7/3; tổng 23/3.",
+      "figure": "figures/bt12-b13-q03.svg"
     },
     {
       "id": "q04",
@@ -116,7 +124,8 @@
       "stem": "Ví dụ 3: diện tích hình phẳng giới hạn bởi hai parabol y = 4 − x², y = x², x = −1, x = 1 là?",
       "expr": "(4-2/3)-(-4+2/3)",
       "answer": "20/3",
-      "explain": "S = 20/3."
+      "explain": "S = 20/3.",
+      "figure": "figures/bt12-b13-q04.svg"
     },
     {
       "id": "q05",
@@ -136,7 +145,8 @@
         "1": "Đã quên trừ giá trị tại cận dưới (giá trị bằng 1).",
         "2": "1 − √2 có dấu sai: cos x − sin x ≥ 0 trên [0; π/4].",
         "3": "√2/2 là giá trị của sin(π/4), không phải diện tích."
-      }
+      },
+      "figure": "figures/bt12-b13-q05.svg"
     },
     {
       "id": "q06",
@@ -145,7 +155,8 @@
       "stem": "Luyện tập 2: diện tích hình phẳng giới hạn bởi y = √x, y = x − 2, x = 1, x = 4 là?",
       "expr": "(2/3*4*2-4*4/2+2*4)-(2/3-1/2+2*1)",
       "answer": "19/6",
-      "explain": "Trên [1; 4], √x ≥ x − 2 nên S = ∫_1^4 (√x − x + 2)dx = 19/6."
+      "explain": "Trên [1; 4], √x ≥ x − 2 nên S = ∫_1^4 (√x − x + 2)dx = 19/6.",
+      "figure": "figures/bt12-b13-q06.svg"
     },
     {
       "id": "q07",
@@ -225,7 +236,8 @@
         "1": "Thiếu nửa: ∫_0^1 x dx = 1/2, không phải 1.",
         "2": "Thiếu hệ số π trong công thức thể tích khối tròn xoay.",
         "3": "Đã tính sai ∫x dx: đúng là x²/2."
-      }
+      },
+      "figure": "figures/bt12-b13-q10.svg"
     },
     {
       "id": "q11",
@@ -265,7 +277,8 @@
         "1": "16π là gấp 3 lần thể tích đúng.",
         "2": "8π/3 không khớp với π·64/12.",
         "3": "4π không khớp với π·64/12."
-      }
+      },
+      "figure": "figures/bt12-b13-q12.svg"
     },
     {
       "id": "q13",
@@ -285,7 +298,8 @@
         "1": "Phải có số hạng Rr và hệ số 1/3.",
         "2": "Khai triển (R + r)² không đúng với tích phân bình phương.",
         "3": "Đó là trường hợp r = 0 (khối nón), không phải tổng quát."
-      }
+      },
+      "figure": "figures/bt12-b13-q13.svg"
     },
     {
       "id": "q14",
@@ -332,7 +346,8 @@
       "stem": "Bài 4.14: diện tích hình phẳng được tô màu giới hạn bởi y = 5x − x² và y = x (0 ≤ x ≤ 4) là?",
       "expr": "2*4*4-4*4*4/3",
       "answer": "32/3",
-      "explain": "Hoành độ giao điểm x = 0 và x = 4; S = ∫_0^4 (4x − x²)dx = 32/3."
+      "explain": "Hoành độ giao điểm x = 0 và x = 4; S = ∫_0^4 (4x − x²)dx = 32/3.",
+      "figure": "figures/bt12-b13-q17.svg"
     },
     {
       "id": "q18",
@@ -352,7 +367,8 @@
         "1": "Dấu của 1/e và 4/3 bị sai.",
         "2": "Dấu của 4/3 bị sai.",
         "3": "Quên hằng số: ∫_{−1}^{1} 1 dx = 2 nên kết quả có 4/3, không phải 2/3."
-      }
+      },
+      "figure": "figures/bt12-b13-q18.svg"
     },
     {
       "id": "q19",
@@ -361,7 +377,8 @@
       "stem": "Bài 4.15d: diện tích hình phẳng giới hạn bởi y = √x, y = x², x = 0, x = 1 là?",
       "expr": "2/3-1/3",
       "answer": "1/3",
-      "explain": "S = ∫_0^1 (√x − x²)dx = 2/3 − 1/3 = 1/3."
+      "explain": "S = ∫_0^1 (√x − x²)dx = 2/3 − 1/3 = 1/3.",
+      "figure": "figures/bt12-b13-q19.svg"
     },
     {
       "id": "q20",
@@ -381,7 +398,8 @@
         "1": "Đã lấy nửa khoảng.",
         "2": "Quên nhân đôi khi lấy trên đoạn đối xứng.",
         "3": "Tính sai hệ số nhân."
-      }
+      },
+      "figure": "figures/bt12-b13-q20.svg"
     },
     {
       "id": "q21",
@@ -401,7 +419,8 @@
         "1": "Hệ số bị chia đôi.",
         "2": "Hệ số gấp đôi.",
         "3": "Thiếu bình phương của hàm số."
-      }
+      },
+      "figure": "figures/bt12-b13-q21.svg"
     },
     {
       "id": "q22",
@@ -441,7 +460,8 @@
         "1": "Bậc của tan α phải là 2.",
         "2": "Bậc của a phải là 3.",
         "3": "Không có tan²α nên không đúng với α."
-      }
+      },
+      "figure": "figures/bt12-b13-q23.svg"
     },
     {
       "id": "q24",
@@ -501,7 +521,8 @@
         "1": "Quên hệ số 2 trong (f + 1)² − f² = 2f + 1, nên kết quả bị chia đôi phần chính.",
         "2": "240π là π∫f dx, chỉ tính phần tích phân của f, thiếu phần độ dày π∫dx = 30π.",
         "3": "30π chỉ là π∫dx, bỏ qua phần do hàm f(x) gây ra."
-      }
+      },
+      "figure": "figures/bt12-b13-q26.svg"
     }
   ]
 }
