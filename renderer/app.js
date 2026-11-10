@@ -90,7 +90,10 @@ function renderExamples(lesson) {
     const steps = el('ol');
     ex.steps.forEach((s) => steps.append(el('li', {}, s)));
     wrap.append(steps);
-    wrap.append(el('p', { class: 'example-answer' }, 'Đáp số: ', el('b', {}, viNumber(ex.answer))));
+    // Ví dụ chứng minh hoặc lập luận không có đáp số riêng: các bước đã kết thúc bằng kết luận.
+    if (ex.answer !== undefined) {
+      wrap.append(el('p', { class: 'example-answer' }, 'Đáp số: ', el('b', {}, viNumber(ex.answer))));
+    }
     box.append(wrap);
   });
   // Bài không có ví dụ tính toán (Lịch sử, Địa lí) thì ẩn cả mục "Ví dụ".
@@ -475,9 +478,10 @@ async function openLesson(relPath, mode = 'practice') {
 let GRADES = [];
 const SUBJECT_BASE = { toan: 'Toán', ly: 'Vật lí', hoa: 'Hoá học', sinh: 'Sinh học', lichsu: 'Lịch sử', diali: 'Địa lí' };
 const GRADE_SUBJECTS = {};
+// Giá bản quyền theo lớp, hiển thị dưới mỗi ô lớp.
+const GRADE_PRICE = { 6: '399.000 đ', 7: '399.000 đ', 8: '399.000 đ', 9: '399.000 đ', 10: '449.000 đ', 11: '449.000 đ', 12: '499.000 đ' };
 const SUBJECT_LABELS = {};
 function applyProduct(product) {
-  GRADES = product.grades.map((g) => ({ grade: g, available: true }));
   for (const g of product.grades) GRADE_SUBJECTS[g] = [];
   for (const subject of product.subjects) {
     const grade = Number(subject.match(/(\d+)$/)[1]);
@@ -485,6 +489,8 @@ function applyProduct(product) {
     GRADE_SUBJECTS[grade].push(subject);
     SUBJECT_LABELS[subject] = SUBJECT_BASE[base] || base;
   }
+  // Lớp chưa có môn nào hiển thị trước nhưng đánh dấu "Đang biên soạn".
+  GRADES = product.grades.map((g) => ({ grade: g, available: GRADE_SUBJECTS[g].length > 0 }));
 }
 // Mục lục của từng môn, nạp một lần khi mở app.
 const manifestCache = {};
@@ -583,12 +589,20 @@ function renderGrades() {
     btn.append(
       el('span', { class: 'grade-word' }, 'Lớp'),
       el('span', { class: 'grade-num' }, String(g.grade)),
-      el('span', { class: 'grade-note' }, g.available ? `${(GRADE_SUBJECTS[g.grade] || []).length} môn học` : 'Đang biên soạn'),
+      el('span', { class: 'grade-note' }, `${g.available ? `${(GRADE_SUBJECTS[g.grade] || []).length} môn học` : 'Đang biên soạn'} · ${GRADE_PRICE[g.grade] || ''}`),
     );
     if (g.available) btn.addEventListener('click', () => showSubjects(g.grade));
     else btn.disabled = true;
     box.append(btn);
   }
+  // Ôn thi THPT: content not yet ready, shown beside Lớp 12 as a placeholder tile.
+  const thpt = el('button', { class: 'grade-tile', type: 'button', disabled: true, 'aria-label': 'Ôn thi THPT' });
+  thpt.append(
+    el('span', { class: 'grade-word' }, 'Ôn thi'),
+    el('span', { class: 'grade-num long' }, 'THPT'),
+    el('span', { class: 'grade-note' }, 'Đang biên soạn · 555.000 đ'),
+  );
+  box.append(thpt);
 }
 
 function showLaunch() {
