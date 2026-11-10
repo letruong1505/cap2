@@ -71,7 +71,7 @@ jobs:
       - name: Upload THPT exe
         uses: actions/upload-artifact@v4
         with:
-          name: thpt-exe
+          name: nam-linh-educenter-exe
           path: dist-thpt/*.exe
 
       - name: Upload key issuing tool
