@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gia sư AI – Khóa học cho học sinh 12–18 tuổi | Nam Linh Educenter</title>
+<style>
+:root{--ink:#1c2733;--grey:#5b6773;--line:#dfe5ec;--bg:#f6f8fb;--card:#fff;--blue:#1f6fb2;--lblue:#e6f1fb;--green:#2a8a4a;--lgreen:#e5f5ea;--orange:#d9822b;--lorange:#fdf0e1;--red:#c0392b;--lred:#fbe9e7;--yellow:#fff6d6}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.65 -apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg)}
+header.hero{background:linear-gradient(135deg,#17406b,#1f6fb2);color:#fff;padding:44px 20px 36px}
+.wrap{max-width:900px;margin:0 auto;padding:0 18px}
+header .wrap{padding:0}
+.hero h1{margin:0 0 6px;font-size:34px;line-height:1.2}
+.hero p{margin:6px 0;opacity:.92}
+.tag{display:inline-block;background:rgba(255,255,255,.18);border-radius:20px;padding:3px 12px;font-size:13px;margin:8px 6px 0 0}
+nav.toc{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);overflow-x:auto;white-space:nowrap}
+nav.toc a{display:inline-block;padding:11px 13px;color:var(--blue);text-decoration:none;font-size:14px;font-weight:600}
+nav.toc a:hover{background:var(--lblue)}
+section{padding:34px 0 8px;border-bottom:1px solid var(--line)}
+h2{font-size:27px;margin:0 0 4px;color:#17406b}
+h3{font-size:19px;margin:26px 0 6px;color:var(--ink)}
+h4{font-size:16px;margin:16px 0 4px}
+.sub{color:var(--grey);margin:0 0 14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.goal{background:var(--lblue);border-color:#bcd9f1}
+.ok{background:var(--lgreen);border-color:#b9e0c6}
+.warn{background:var(--lorange);border-color:#f0d2a8}
+.no{background:var(--lred);border-color:#efc2bc}
+.think{background:var(--yellow);border-color:#ecdc8c}
+.card>:first-child{margin-top:0}.card>:last-child{margin-bottom:0}
+.lbl{font-weight:700;font-size:13px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:4px}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:15px;background:#fff}
+th,td{border:1px solid var(--line);padding:8px 10px;vertical-align:top;text-align:left}
+th{background:#eef3f8}
+td.g{background:var(--lgreen)}td.r{background:var(--lred)}td.y{background:var(--yellow)}
+pre.prompt{background:#14202c;color:#e8f0f8;border-radius:10px;padding:14px 16px;white-space:pre-wrap;font:14px/1.55 ui-monospace,Menlo,Consolas,monospace;margin:10px 0;position:relative}
+pre.prompt:before{content:"Câu lệnh mẫu (prompt) – gõ lại bằng lời của em";display:block;color:#8fb6dc;font:600 12px sans-serif;margin-bottom:6px}
+figure{margin:18px 0;text-align:center}
+figure svg{max-width:100%;height:auto;background:#fff;border:1px solid var(--line);border-radius:12px}
+figcaption{font-size:14px;color:var(--grey);margin-top:6px}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:12px 0}
+.meta div{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14px}
+.meta b{display:block;color:var(--blue);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.steps{counter-reset:s;list-style:none;padding:0}
+.steps>li{counter-increment:s;position:relative;padding:10px 12px 10px 52px;margin:10px 0;background:#fff;border:1px solid var(--line);border-radius:10px}
+.steps>li:before{content:counter(s);position:absolute;left:12px;top:10px;width:28px;height:28px;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;text-align:center;line-height:28px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:640px){.cols{grid-template-columns:1fr}.hero h1{font-size:27px}}
+details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin:8px 0}
+summary{cursor:pointer;font-weight:600}
+.age{font-size:14px;border-left:4px solid var(--orange);padding:6px 12px;background:#fff;margin:10px 0}
+footer{padding:30px 0 60px;color:var(--grey);font-size:14px}
+ul,ol{padding-left:22px}
+kbd{background:#eef3f8;border:1px solid var(--line);border-radius:4px;padding:0 5px;font-size:13px}
+@media print{nav.toc{display:none}section{page-break-before:always}header.hero{color:#000;background:#fff}.hero p,.tag{color:#000}}
+</style>
+</head>
+<body>
+
+<header class="hero"><div class="wrap">
+  <div style="opacity:.85;font-weight:600">Nam Linh Educenter · Khóa kỹ năng</div>
+  <h1>Gia sư AI: Học cùng AI, không để AI học thay</h1>
+  <p>Khóa học 8 buổi dành cho học sinh 12–18 tuổi: dùng AI như một người thầy gợi mở, biết kiểm chứng thông tin, biết khi nào được và không được dùng AI, và tự xây lộ trình học của chính mình.</p>
+  <span class="tag">THCS 12–15 tuổi</span><span class="tag">THPT 16–18 tuổi</span><span class="tag">8 buổi × 90 phút</span><span class="tag">Có thể chia 10 buổi × 60 phút</span>
+</div></header>
+
+<nav class="toc"><div class="wrap">
+  <a href="#tong-quan">Tổng quan</a><a href="#buoi1">Buổi 1</a><a href="#buoi2">Buổi 2</a><a href="#buoi3">Buổi 3</a><a href="#buoi4">Buổi 4</a><a href="#buoi5">Buổi 5</a><a href="#buoi6">Buổi 6</a><a href="#buoi7">Buổi 7</a><a href="#buoi8">Buổi 8</a><a href="#phu-luc">Phụ lục</a>
+</div></nav>
+
+<main class="wrap">
+
+<!-- ===================== TỔNG QUAN ===================== -->
+<section id="tong-quan">
+  <h2>Tổng quan khóa học</h2>
+  <p class="sub">Đọc phần này trước. Mọi buổi đều đi theo cùng một tinh thần.</p>
+
+  <div class="card goal">
+    <div class="lbl">Triết lý của khóa</div>
+    <p><b>AI là người cùng học, không phải người làm bài hộ.</b> Em là người cầm lái: em quyết định học gì, hỏi gì, tin gì và nộp gì. AI chỉ giúp em nghĩ rõ hơn, thử nhiều cách hơn và phát hiện chỗ mình còn hổng. Điều em tự hiểu, tự làm và tự kiểm tra mới là của em.</p>
+  </div>
+
+  <h3>Học xong khóa, em làm được gì?</h3>
+  <ol>
+    <li>Giải thích được AI hoạt động thế nào ở mức đơn giản, và vì sao AI có thể trả lời rất tự tin nhưng vẫn sai.</li>
+    <li>Biết dữ liệu nào tuyệt đối không đưa cho AI, nhận ra tin giả, video và giọng nói giả, lừa đảo.</li>
+    <li>Viết được câu lệnh (prompt) rõ ràng gồm vai trò, bối cảnh, yêu cầu, định dạng và giới hạn.</li>
+    <li>Kiểm chứng một câu trả lời của AI bằng sách giáo khoa, nguồn đáng tin và phép tính độc lập.</li>
+    <li>Tự tìm lỗ hổng kiến thức và phân loại lỗi: chưa hiểu khái niệm, sai tính toán hay đọc sai đề.</li>
+    <li>Dựng được “gia sư AI” riêng theo quy tắc <b>gợi ý trước, đáp án sau</b>, và thử nghiệm để chỉnh cho tốt hơn.</li>
+    <li>Lập kế hoạch học hằng tuần có mục tiêu đo được, kết hợp phần mềm bài tập Nam Linh (Vững bài THCS / THPT).</li>
+    <li>Phân biệt rõ khi nào được dùng AI, khi nào không được, và giải thích được lý do.</li>
+  </ol>
+
+  <figure>
+  <svg viewBox="0 0 860 250" role="img" aria-label="Bản đồ khóa học 8 buổi">
+    <rect x="0" y="0" width="860" height="250" fill="#fff"/>
+    <text x="430" y="26" text-anchor="middle" font-size="16" font-weight="700" fill="#17406b">Bản đồ khóa học: từ hiểu AI đến tự chủ việc học</text>
+    <g font-family="sans-serif" font-size="13" text-anchor="middle">
+      <rect x="20" y="52" width="190" height="54" rx="10" fill="#e6f1fb" stroke="#1f6fb2"/><text x="115" y="75" font-weight="700" fill="#17406b">1 · AI là gì?</text><text x="115" y="94" fill="#5b6773">làm được / không làm được</text>
+      <rect x="235" y="52" width="190" height="54" rx="10" fill="#e6f1fb" stroke="#1f6fb2"/><text x="330" y="75" font-weight="700" fill="#17406b">2 · An toàn &amp; đạo đức</text><text x="330" y="94" fill="#5b6773">được / không được dùng</text>
+      <rect x="450" y="52" width="190" height="54" rx="10" fill="#e6f1fb" stroke="#1f6fb2"/><text x="545" y="75" font-weight="700" fill="#17406b">3 · Đặt câu hỏi tốt</text><text x="545" y="94" fill="#5b6773">viết prompt rõ ràng</text>
+      <rect x="665" y="52" width="175" height="54" rx="10" fill="#e6f1fb" stroke="#1f6fb2"/><text x="752" y="75" font-weight="700" fill="#17406b">4 · Kiểm chứng</text><text x="752" y="94" fill="#5b6773">tin ít, hỏi nhiều</text>
+      <text x="430" y="140" fill="#5b6773" font-size="12">Nền tảng: hiểu, an toàn, hỏi đúng, kiểm chứng</text>
+      <path d="M752 108 V128 H115 V150" fill="none" stroke="#9db4c9" stroke-width="2" marker-end="url(#ar)"/>
+      <rect x="20" y="152" width="190" height="54" rx="10" fill="#e5f5ea" stroke="#2a8a4a"/><text x="115" y="175" font-weight="700" fill="#1d6a37">5 · Tìm lỗ hổng</text><text x="115" y="194" fill="#5b6773">bảng lỗ hổng cá nhân</text>
+      <rect x="235" y="152" width="190" height="54" rx="10" fill="#e5f5ea" stroke="#2a8a4a"/><text x="330" y="175" font-weight="700" fill="#1d6a37">6 · Gia sư AI riêng</text><text x="330" y="194" fill="#5b6773">gợi ý trước, đáp án sau</text>
+      <rect x="450" y="152" width="190" height="54" rx="10" fill="#e5f5ea" stroke="#2a8a4a"/><text x="545" y="175" font-weight="700" fill="#1d6a37">7 · Lộ trình cá nhân</text><text x="545" y="194" fill="#5b6773">kế hoạch tuần, mục tiêu đo được</text>
+      <rect x="665" y="152" width="175" height="54" rx="10" fill="#fdf0e1" stroke="#d9822b"/><text x="752" y="175" font-weight="700" fill="#a85f14">8 · Tổng kết</text><text x="752" y="194" fill="#5b6773">trình bày &amp; đánh giá</text>
+      <text x="430" y="238" fill="#5b6773" font-size="12">Ứng dụng: tìm lỗ hổng → dựng gia sư → lập kế hoạch → tự đánh giá</text>
+    </g>
+    <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#9db4c9"/></marker></defs>
+  </svg>
+  <figcaption>Bốn buổi đầu xây nền tảng, ba buổi sau là ứng dụng, buổi cuối là tổng kết.</figcaption>
+  </figure>
+
+  <h3>Cách tổ chức</h3>
+  <div class="meta">
+    <div><b>Phương án chính</b>8 buổi × 90 phút (nên cho học sinh 14–18 tuổi)</div>
+    <div><b>Phương án chia nhỏ</b>10 buổi × 60 phút, tách Buổi 4 và Buổi 6 thành hai phần (nên cho 12–13 tuổi)</div>
+    <div><b>Sĩ số gợi ý</b>8–16 em, mỗi em có một thiết bị. Em 12 tuổi học cùng phụ huynh hoặc có người lớn giám sát</div>
+    <div><b>Mỗi buổi gồm</b>Mục tiêu · Chuẩn bị · Nội dung · Thực hành · Khai mở tư duy · Sản phẩm · Tự kiểm tra</div>
+  </div>
+
+  <h3>Một khóa chung, hai đường đi theo tuổi</h3>
+  <table>
+    <tr><th></th><th>THCS 12–15 tuổi</th><th>THPT 16–18 tuổi</th></tr>
+    <tr><td><b>Ví dụ dùng trong buổi học</b></td><td>Toán, Văn, Tiếng Anh cấp 2; bài tập ngắn 10–15 phút</td><td>Các môn thi tốt nghiệp THPT; bài dài, có lập luận</td></tr>
+    <tr><td><b>Nhấn mạnh</b></td><td>An toàn, tin giả, thói quen kiểm chứng, có người lớn đồng hành</td><td>Tự học, kế hoạch ôn thi, kiểm chứng lập luận và số liệu</td></tr>
+    <tr><td><b>Sản phẩm cuối</b></td><td>Gia sư AI cho 1–2 môn, kế hoạch 1 tuần</td><td>Gia sư AI cho 2–3 môn, kế hoạch 4 tuần có mốc kiểm tra</td></tr>
+  </table>
+  <p class="age">Mỗi buổi có khung <b>“Theo độ tuổi”</b> ghi rõ phần dành cho từng nhóm. Giáo viên linh hoạt: các em 12–15 làm phần cơ bản, các em 16–18 làm thêm phần nâng cao.</p>
+
+  <h3>Hai quy tắc xuyên suốt cả khóa</h3>
+  <div class="cols">
+    <div class="card ok"><div class="lbl">Quy tắc 1 · Tự làm trước</div><p>Luôn tự thử bài ít nhất vài phút, viết ra hướng nghĩ của mình rồi mới hỏi AI. Hỏi AI để hiểu, không phải để nhận kết quả.</p></div>
+    <div class="card ok"><div class="lbl">Quy tắc 2 · Kiểm chứng sau cùng</div><p>Không điều gì AI nói là “đúng” cho đến khi em đối chiếu với sách giáo khoa, nguồn đáng tin hoặc tự tính lại.</p></div>
+  </div>
+
+  <h3>Công cụ dùng trong khóa (đọc kỹ trước khi bắt đầu)</h3>
+  <p>Khóa học <b>không phụ thuộc vào một sản phẩm cụ thể</b>, vì các công cụ AI thay đổi nhanh. Giáo viên chọn một công cụ chat AI mà cơ sở đã kiểm tra, đồng thời cho học sinh biết mỗi công cụ có quy định riêng về độ tuổi.</p>
+  <table>
+    <tr><th>Nhóm</th><th>Ví dụ</th><th>Dùng để</th><th>Lưu ý</th></tr>
+    <tr><td><b>Chat AI có chế độ học tập</b></td><td>ChatGPT (chế độ “Study and learn”), Gemini (chế độ “Guided Learning”)</td><td>Hỏi đáp từng bước, gợi ý, câu hỏi kiểm tra</td><td>Mỗi dịch vụ có độ tuổi tối thiểu riêng. Với ChatGPT, nhà cung cấp ghi từ 13 tuổi và cần sự đồng ý của cha mẹ nếu dưới 18. Gemini thường từ 13 tuổi nhưng thay đổi theo quốc gia. Luôn đọc điều khoản hiện hành.</td></tr>
+    <tr><td><b>Công cụ tính toán, vẽ đồ thị</b></td><td>Desmos, GeoGebra, Wolfram|Alpha</td><td>Vẽ đồ thị, kiểm tra kết quả tính, quan sát hình học</td><td>Desmos và GeoGebra miễn phí. Wolfram|Alpha cho kết quả cơ bản miễn phí, lời giải từng bước thường phải trả phí.</td></tr>
+    <tr><td><b>Nguồn đối chiếu</b></td><td>Sách giáo khoa, Vững bài / phần mềm THPT của Nam Linh, trang của Bộ GD&amp;ĐT, bách khoa, tạp chí khoa học</td><td>Kiểm chứng</td><td>Ưu tiên nguồn có tên tác giả, có ngày, có cơ quan chịu trách nhiệm.</td></tr>
+  </table>
+  <div class="card warn"><div class="lbl">Lưu ý cho trung tâm</div><p>Quy định độ tuổi, tính năng và giá của công cụ AI thay đổi thường xuyên. Trước mỗi khóa, giáo viên kiểm tra lại trang trợ giúp chính thức của công cụ. Nếu em dưới độ tuổi tối thiểu, em chỉ xem giáo viên trình diễn hoặc dùng cùng phụ huynh trên tài khoản của phụ huynh, theo đúng điều khoản. Nếu cơ sở không có mạng cho mọi em, vẫn dạy được bằng cách giáo viên trình chiếu và các em làm trên phiếu giấy.</p></div>
+</section>
+
+<!-- ===================== BUỔI 1 ===================== -->
+<section id="buoi1">
+  <h2>Buổi 1 · AI là gì? Làm được gì, không làm được gì?</h2>
+  <p class="sub">Hiểu đúng bản chất để dùng đúng chỗ.</p>
+  <div class="meta">
+    <div><b>Mục tiêu</b>Giải thích được AI “đoán chữ tiếp theo”; kể ra việc AI giỏi và việc AI dễ sai</div>
+    <div><b>Chuẩn bị</b>Thiết bị có mạng; tài khoản công cụ chat AI (làm cùng người lớn nếu cần); máy tính cầm tay</div>
+    <div><b>Sản phẩm</b>Bảng “AI giỏi việc gì, dễ sai ở việc gì”</div>
+    <div><b>Thời gian</b>10’ mở đầu · 25’ khái niệm · 40’ thực hành · 15’ tổng kết</div>
+  </div>
+
+  <h3>1. Mở đầu: đoán xem</h3>
+  <div class="card think"><div class="lbl">Khai mở tư duy</div><p>Giáo viên đọc nửa câu: “Hôm nay trời mưa nên em phải mang…”. Cả lớp đoán từ tiếp theo. Hầu hết đều nói “ô” hoặc “áo mưa”. Hỏi: <b>vì sao ai cũng đoán được?</b> (Vì ta đã nghe cụm này nhiều lần.) Đó chính là điều AI chat đang làm, ở quy mô khổng lồ.</p></div>
+
+  <h3>2. AI chat hoạt động thế nào?</h3>
+  <p>Các chatbot như ChatGPT hay Gemini là <b>mô hình ngôn ngữ lớn</b>. Chúng đã đọc một lượng văn bản rất lớn và học cách tính <b>xác suất của từ tiếp theo</b>. Khi em hỏi, nó chọn từ có khả năng cao, rồi lặp lại cho từ kế tiếp, cho đến khi thành một câu trả lời.</p>
+  <figure>
+  <svg viewBox="0 0 860 270" role="img" aria-label="AI đoán từ tiếp theo theo xác suất">
+    <rect width="860" height="270" fill="#fff"/>
+    <g font-family="sans-serif" font-size="14" text-anchor="middle">
+      <text x="430" y="26" font-size="16" font-weight="700" fill="#17406b">AI chọn từ tiếp theo theo xác suất, không “hiểu” như con người</text>
+      <rect x="20" y="50" width="330" height="50" rx="10" fill="#e6f1fb" stroke="#1f6fb2"/>
+      <text x="185" y="80" font-size="15" fill="#1c2733">“Thủ đô của Việt Nam là …”</text>
+      <path d="M352 75 H410" stroke="#9db4c9" stroke-width="2" marker-end="url(#a1)"/>
+      <rect x="415" y="50" width="130" height="50" rx="10" fill="#fff" stroke="#9db4c9"/><text x="480" y="80" fill="#5b6773">mô hình tính</text>
+      <path d="M547 75 H600" stroke="#9db4c9" stroke-width="2" marker-end="url(#a1)"/>
+      <text x="730" y="62" text-anchor="middle" fill="#5b6773">các từ có thể điền</text>
+      <g text-anchor="start">
+        <rect x="610" y="72" width="215" height="14" rx="3" fill="#eef3f8"/><rect x="610" y="72" width="190" height="14" rx="3" fill="#2a8a4a"/><text x="612" y="98" fill="#1c2733" font-size="13">Hà Nội  ~ 88%</text>
+        <rect x="610" y="112" width="215" height="14" rx="3" fill="#eef3f8"/><rect x="610" y="112" width="18" height="14" rx="3" fill="#d9822b"/><text x="612" y="138" fill="#1c2733" font-size="13">Thành phố … ~ 8%</text>
+        <rect x="610" y="152" width="215" height="14" rx="3" fill="#eef3f8"/><rect x="610" y="152" width="6" height="14" rx="3" fill="#c0392b"/><text x="612" y="178" fill="#1c2733" font-size="13">từ khác ~ 4%</text>
+      </g>
+      <rect x="20" y="130" width="560" height="120" rx="12" fill="#fdf0e1" stroke="#d9822b"/>
+      <text x="300" y="156" font-weight="700" fill="#a85f14">Hệ quả quan trọng</text>
+      <g text-anchor="start" font-size="14" fill="#1c2733">
+        <text x="40" y="182">• Câu trả lời nghe “trôi chảy” không có nghĩa là đúng.</text>
+        <text x="40" y="204">• Khi thiếu dữ liệu, AI vẫn có thể “bịa” cho trọn câu.</text>
+        <text x="40" y="226">• AI không tự biết mình sai. Người kiểm chứng là em.</text>
+      </g>
+    </g>
+    <defs><marker id="a1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#9db4c9"/></marker></defs>
+  </svg>
+  <figcaption>Con số trong hình chỉ để minh họa. Kết luận cần nhớ: AI cho câu trả lời “có khả năng cao”, không phải câu trả lời “đã được xác minh”.</figcaption>
+  </figure>
+
+  <div class="card no"><div class="lbl">Thuật ngữ cần nhớ: “ảo giác” (hallucination)</div><p>Là khi AI đưa ra thông tin <b>sai nhưng nghe rất thuyết phục</b>: số liệu, trích dẫn, tên sách, tên tác giả hoặc đường dẫn không có thật. Các nghiên cứu cho thấy học sinh, sinh viên thường dựa vào cảm giác “nghe có lý” thay vì kiểm tra có hệ thống, và đó là lý do khóa này dạy kiểm chứng.</p></div>
+
+  <h3>3. AI giỏi gì, dễ sai gì?</h3>
+  <div class="cols">
+    <div class="card ok"><div class="lbl">Thường làm khá tốt</div><ul>
+      <li>Giải thích lại một khái niệm bằng nhiều cách, nhiều mức độ</li>
+      <li>Đưa ví dụ tương tự để em so sánh</li>
+      <li>Ra câu hỏi luyện tập, tóm tắt ý chính em đã đọc</li>
+      <li>Gợi ý hướng nghĩ khi em bí</li>
+      <li>Soát lỗi chính tả, gợi ý cách diễn đạt rõ hơn</li></ul></div>
+    <div class="card no"><div class="lbl">Dễ sai, cần kiểm tra</div><ul>
+      <li>Tính toán nhiều bước, số lớn, số thập phân</li>
+      <li>Sự kiện mới, số liệu cụ thể, ngày tháng, tên riêng</li>
+      <li>Nguồn trích dẫn, tên bài báo, số trang</li>
+      <li>Nội dung chương trình Việt Nam cụ thể (lớp nào học gì)</li>
+      <li>Điều em hỏi mà thực ra không tồn tại (nó vẫn cố trả lời)</li></ul></div>
+  </div>
+
+  <h3>4. Thực hành: bắt đầu từ bước đầu tiên</h3>
+  <p><b>Phần A. Chuẩn bị tài khoản (làm cùng người lớn, học sinh dưới 18 tuổi)</b></p>
+  <ol class="steps">
+    <li><b>Chọn công cụ và đọc độ tuổi tối thiểu.</b> Tìm mục “Điều khoản sử dụng” hoặc “Trung tâm trợ giúp” của công cụ, đọc phần độ tuổi. Nếu em chưa đủ tuổi, <b>không tạo tài khoản bằng thông tin giả</b>; dùng chung với phụ huynh hoặc xem trình diễn của giáo viên.</li>
+    <li><b>Vào đúng trang chính thức.</b> Tự gõ địa chỉ trang web, hoặc mở kho ứng dụng của máy. Không bấm vào quảng cáo hay đường dẫn lạ ghi “ChatGPT miễn phí”, “bản crack”: nhiều trang giả dùng để lấy mật khẩu.</li>
+    <li><b>Tạo tài khoản với sự đồng ý của phụ huynh.</b> Dùng email riêng cho học tập, mật khẩu dài và khác với mọi tài khoản khác. Không dùng ảnh thật làm ảnh đại diện.</li>
+    <li><b>Làm quen giao diện.</b> Tìm ô nhập câu hỏi, nút gửi, nút tạo cuộc trò chuyện mới, và nơi bật chế độ học tập (nếu có). Mỗi bài học mới nên mở một cuộc trò chuyện mới để AI không lẫn thông tin.</li>
+    <li><b>Xem cài đặt quyền riêng tư.</b> Tìm xem công cụ có dùng cuộc trò chuyện để huấn luyện mô hình không và cách tắt (nếu có). Ghi lại cách làm vào vở.</li>
+  </ol>
+  <p><b>Phần B. Ba thí nghiệm</b></p>
+  <ol class="steps">
+    <li><b>Hỏi cùng một câu bằng hai cách.</b> Ví dụ: “Quang hợp là gì?” và “Em là học sinh lớp 7, hãy giải thích quang hợp bằng ví dụ về chiếc lá, dưới 100 chữ.” So sánh: độ dài, độ dễ hiểu, độ chính xác. <i>Kết luận: cách hỏi quyết định chất lượng trả lời.</i></li>
+    <li><b>Thí nghiệm “bẫy”.</b> Hỏi AI một điều không tồn tại, ví dụ: “Hãy tóm tắt định lý Nam–Linh về tam giác.” Quan sát: AI từ chối, hay bịa ra một định lý nghe rất thật? Hỏi tiếp: “Định lý này nằm ở trang mấy sách nào?”</li>
+    <li><b>Thí nghiệm tính toán.</b> Nhờ AI tính 48 372 × 5 917, rồi tự tính bằng máy tính cầm tay. Hai kết quả có giống nhau không? Làm lại với một phép tính khác. Ghi lại kết quả.</li>
+  </ol>
+  <div class="card think"><div class="lbl">Khai mở tư duy · Hỏi lại chính mình</div><ul><li>Nếu AI bịa ra “định lý Nam–Linh”, điều gì xảy ra khi em chép nó vào bài?</li><li>Nếu hai cách hỏi cho hai câu trả lời khác nhau, em tin cái nào? Dựa vào đâu?</li></ul></div>
+
+  <h3>5. Sản phẩm: bảng “AI giỏi việc gì, dễ sai việc gì”</h3>
+  <table>
+    <tr><th>Việc em nhờ AI</th><th>AI làm thế nào?</th><th>Đúng / sai / chưa chắc</th><th>Em kiểm tra bằng cách nào?</th></tr>
+    <tr><td>(ví dụ) giải thích quang hợp</td><td></td><td></td><td></td></tr>
+    <tr><td>(ví dụ) định lý Nam–Linh</td><td></td><td></td><td></td></tr>
+    <tr><td>(ví dụ) 48 372 × 5 917</td><td></td><td></td><td></td></tr>
+  </table>
+
+  <h3>6. Tự kiểm tra cuối buổi</h3>
+  <details><summary>Câu 1. AI chat tạo câu trả lời bằng cách nào?</summary><p>Dự đoán từ tiếp theo dựa trên xác suất học từ dữ liệu văn bản lớn, không phải tra cứu một nguồn đã được xác minh.</p></details>
+  <details><summary>Câu 2. “Ảo giác” của AI là gì? Cho một ví dụ.</summary><p>Là thông tin sai nhưng trình bày tự tin, như bịa tên sách, trích dẫn, định lý hay số liệu.</p></details>
+  <details><summary>Câu 3. Em nên làm gì khi AI cho một kết quả tính toán?</summary><p>Tự tính lại bằng máy tính cầm tay hoặc công cụ khác và so sánh.</p></details>
+
+  <div class="age"><b>Theo độ tuổi.</b> 12–15: tập trung thí nghiệm 1 và 2, làm bảng với 3 dòng. 16–18: thêm một dòng với môn chuyên ngành đang ôn thi, và thử hỏi AI một câu hỏi về nội dung vừa thay đổi trong chương trình để thấy AI có thể lạc hậu.</div>
+</section>
+
+<!-- ===================== BUỔI 2 ===================== -->
+<section id="buoi2">
+  <h2>Buổi 2 · An toàn và đạo đức khi dùng AI</h2>
+  <p class="sub">Được dùng ở đâu, không được dùng ở đâu, và vì sao.</p>
+  <div class="meta">
+    <div><b>Mục tiêu</b>Biết dữ liệu không được chia sẻ; nhận ra tin giả, deepfake, lừa đảo; phân biệt các tình huống được / không được dùng AI</div>
+    <div><b>Chuẩn bị</b>Phiếu tình huống (trong buổi này), bút màu xanh, vàng, đỏ</div>
+    <div><b>Sản phẩm</b>“Bộ quy tắc 5 điều” của riêng em</div>
+    <div><b>Thời gian</b>15’ dữ liệu cá nhân · 25’ tin giả &amp; lừa đảo · 30’ được / không được · 20’ sản phẩm</div>
+  </div>
+
+  <h3>1. Cái gì không bao giờ đưa cho AI?</h3>
+  <p>Khi em gõ vào ô chat, thông tin đó được gửi tới máy chủ của một công ty. Em không thể chắc nó được lưu bao lâu và ai có thể xem. Vì vậy dùng quy tắc <b>đèn giao thông</b>:</p>
+  <figure>
+  <svg viewBox="0 0 860 300" role="img" aria-label="Đèn giao thông dữ liệu">
+    <rect width="860" height="300" fill="#fff"/>
+    <g font-family="sans-serif" font-size="14">
+      <text x="430" y="26" text-anchor="middle" font-size="16" font-weight="700" fill="#17406b">Quy tắc đèn giao thông cho thông tin gửi cho AI</text>
+      <rect x="20" y="44" width="270" height="236" rx="12" fill="#e5f5ea" stroke="#2a8a4a"/>
+      <circle cx="50" cy="72" r="14" fill="#2a8a4a"/><text x="74" y="77" font-weight="700" fill="#1d6a37" font-size="16">XANH · Thoải mái</text>
+      <text x="38" y="108" fill="#1c2733">• Kiến thức môn học, khái niệm</text>
+      <text x="38" y="132" fill="#1c2733">• Đề bài đã đổi số, không ghi tên</text>
+      <text x="38" y="156" fill="#1c2733">• Bài văn của em (không có tên</text><text x="48" y="174" fill="#1c2733">thật, tên trường)</text>
+      <text x="38" y="198" fill="#1c2733">• Câu hỏi “vì sao”, “như thế nào”</text>
+      <rect x="295" y="44" width="270" height="236" rx="12" fill="#fff6d6" stroke="#d9a62b"/>
+      <circle cx="325" cy="72" r="14" fill="#e0a52a"/><text x="349" y="77" font-weight="700" fill="#8a6410" font-size="16">VÀNG · Cân nhắc</text>
+      <text x="313" y="108" fill="#1c2733">• Kết quả, điểm số của em</text>
+      <text x="313" y="132" fill="#1c2733">• Mô tả hoàn cảnh bản thân</text>
+      <text x="313" y="156" fill="#1c2733">• Cảm xúc, chuyện bạn bè</text>
+      <text x="313" y="180" fill="#5b6773" font-size="13">→ Chỉ khi cần, nói chung chung,</text>
+      <text x="313" y="198" fill="#5b6773" font-size="13">   hỏi người lớn trước.</text>
+      <rect x="570" y="44" width="270" height="236" rx="12" fill="#fbe9e7" stroke="#c0392b"/>
+      <circle cx="600" cy="72" r="14" fill="#c0392b"/><text x="624" y="77" font-weight="700" fill="#9b2b1f" font-size="16">ĐỎ · Tuyệt đối không</text>
+      <text x="588" y="108" fill="#1c2733">• Mật khẩu, mã OTP, mã xác thực</text>
+      <text x="588" y="132" fill="#1c2733">• Số tài khoản, thẻ ngân hàng</text>
+      <text x="588" y="156" fill="#1c2733">• Địa chỉ nhà, số điện thoại, CCCD</text>
+      <text x="588" y="180" fill="#1c2733">• Ảnh, giọng nói của em và bạn bè</text>
+      <text x="588" y="204" fill="#1c2733">• Tên trường, lớp, thông tin của</text><text x="598" y="222" fill="#1c2733">người khác chưa được cho phép</text>
+    </g>
+  </svg>
+  <figcaption>Nếu phân vân giữa hai màu, chọn màu nghiêm hơn.</figcaption>
+  </figure>
+  <div class="card warn"><div class="lbl">Vì sao dữ liệu của người khác còn phải cẩn thận hơn?</div><p>Dữ liệu cá nhân của trẻ em được pháp luật bảo vệ riêng. Theo Luật Bảo vệ dữ liệu cá nhân (có hiệu lực từ 01/01/2026), việc xử lý dữ liệu của trẻ em cần có sự đồng ý của cha mẹ hoặc người giám hộ (và với trẻ đủ tuổi quy định thì cần cả sự đồng ý của chính các em). Đăng ảnh, giọng nói hay thông tin của bạn lên một công cụ AI khi bạn chưa đồng ý là xâm phạm quyền riêng tư của bạn đó.</p></div>
+
+  <h3>2. Tin giả, deepfake và lừa đảo</h3>
+  <p>AI có thể tạo hình ảnh, giọng nói và video rất giống thật. Kẻ lừa đảo dùng chúng để giả làm người thân, thầy cô hoặc cán bộ rồi nhờ chuyển tiền, đưa mã OTP, hoặc cài ứng dụng lạ. Ở Việt Nam, giả mạo video call bằng deepfake đã được cơ quan chức năng đưa vào danh sách các hình thức lừa đảo trực tuyến cần cảnh giác.</p>
+  <div class="card no"><div class="lbl">Bốn bước khi nhận cuộc gọi, tin nhắn, video “lạ mà quen”</div>
+  <ol class="steps">
+    <li><b>DỪNG.</b> Không làm theo ngay, nhất là khi người kia giục, dọa hoặc bảo giữ bí mật.</li>
+    <li><b>GÁC MÁY, KIỂM TRA KÊNH KHÁC.</b> Gọi lại vào số điện thoại em đã lưu từ trước, hoặc hỏi người nhà trực tiếp.</li>
+    <li><b>HỎI CÂU RIÊNG TƯ.</b> Hỏi điều chỉ người thật biết. Cuộc gọi hình ngắn, mờ, giật hoặc đứt tiếng là dấu hiệu đáng ngờ.</li>
+    <li><b>KHÔNG CHUYỂN TIỀN, KHÔNG ĐƯA OTP.</b> Rồi báo ngay cho người lớn.</li>
+  </ol></div>
+  <figure>
+  <svg viewBox="0 0 860 150" role="img" aria-label="Quy trình bốn bước">
+    <rect width="860" height="150" fill="#fff"/>
+    <g font-family="sans-serif" text-anchor="middle" font-size="14">
+      <rect x="20" y="30" width="180" height="84" rx="12" fill="#fbe9e7" stroke="#c0392b"/><text x="110" y="62" font-weight="700" fill="#9b2b1f" font-size="18">1 · DỪNG</text><text x="110" y="88" fill="#1c2733">đừng vội làm theo</text>
+      <path d="M202 72 H228" stroke="#9db4c9" stroke-width="2" marker-end="url(#a2)"/>
+      <rect x="230" y="30" width="180" height="84" rx="12" fill="#fdf0e1" stroke="#d9822b"/><text x="320" y="62" font-weight="700" fill="#a85f14" font-size="18">2 · GÁC MÁY</text><text x="320" y="88" fill="#1c2733">gọi lại số đã lưu</text>
+      <path d="M412 72 H438" stroke="#9db4c9" stroke-width="2" marker-end="url(#a2)"/>
+      <rect x="440" y="30" width="180" height="84" rx="12" fill="#fff6d6" stroke="#d9a62b"/><text x="530" y="62" font-weight="700" fill="#8a6410" font-size="18">3 · HỎI RIÊNG</text><text x="530" y="88" fill="#1c2733">câu chỉ người thật biết</text>
+      <path d="M622 72 H648" stroke="#9db4c9" stroke-width="2" marker-end="url(#a2)"/>
+      <rect x="650" y="30" width="190" height="84" rx="12" fill="#e5f5ea" stroke="#2a8a4a"/><text x="745" y="62" font-weight="700" fill="#1d6a37" font-size="18">4 · BÁO NGƯỜI LỚN</text><text x="745" y="88" fill="#1c2733">không đưa OTP, tiền</text>
+    </g>
+    <defs><marker id="a2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#9db4c9"/></marker></defs>
+  </svg>
+  </figure>
+
+  <h3>3. Khi nào được dùng AI? Khi nào không?</h3>
+  <p>Câu hỏi đúng không phải “AI có làm được không?” mà là <b>“Mục đích của bài này là em học được gì? AI có đang làm mất phần đó không?”</b></p>
+  <figure>
+  <svg viewBox="0 0 860 190" role="img" aria-label="Phép thử: AI giúp em nghĩ hay nghĩ hộ em">
+    <rect width="860" height="190" fill="#fff"/>
+    <g font-family="sans-serif" font-size="14" text-anchor="middle">
+      <text x="430" y="24" font-size="16" font-weight="700" fill="#17406b">Phép thử một câu hỏi</text>
+      <rect x="320" y="40" width="220" height="50" rx="25" fill="#e6f1fb" stroke="#1f6fb2"/><text x="430" y="62" font-weight="700" fill="#17406b">Sau khi dùng AI,</text><text x="430" y="80" fill="#17406b">em có tự làm lại được không?</text>
+      <path d="M345 92 L170 125" stroke="#2a8a4a" stroke-width="2" marker-end="url(#a3)"/>
+      <path d="M515 92 L690 125" stroke="#c0392b" stroke-width="2" marker-end="url(#a3)"/>
+      <rect x="40" y="126" width="270" height="54" rx="10" fill="#e5f5ea" stroke="#2a8a4a"/><text x="175" y="150" font-weight="700" fill="#1d6a37">CÓ → AI đã giúp em học</text><text x="175" y="168" fill="#1c2733">được phép, nhớ kiểm chứng</text>
+      <rect x="550" y="126" width="270" height="54" rx="10" fill="#fbe9e7" stroke="#c0392b"/><text x="685" y="150" font-weight="700" fill="#9b2b1f">KHÔNG → AI đã làm hộ em</text><text x="685" y="168" fill="#1c2733">dừng lại, làm lại bằng sức em</text>
+    </g>
+    <defs><marker id="a3" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#9db4c9"/></marker></defs>
+  </svg>
+  </figure>
+  <table>
+    <tr><th style="width:38%">Tình huống</th><th style="width:14%">Mức</th><th>Vì sao</th></tr>
+    <tr><td>Nhờ AI giải thích một khái niệm em chưa hiểu, rồi em tự nói lại bằng lời mình</td><td class="g"><b>Được</b></td><td>Em đang học; AI đóng vai người giảng giải, em vẫn là người suy nghĩ.</td></tr>
+    <tr><td>Em làm bài trước, rồi nhờ AI chỉ ra chỗ nghi sai (không đưa đáp án)</td><td class="g"><b>Được</b></td><td>Tự làm trước giữ cho em thật sự rèn luyện; AI chỉ là người soát.</td></tr>
+    <tr><td>Nhờ AI ra đề luyện tập, câu hỏi trắc nghiệm kiểm tra bản thân</td><td class="g"><b>Được</b></td><td>Tự kiểm tra là một cách ghi nhớ hiệu quả.</td></tr>
+    <tr><td>Nhờ AI gợi ý dàn ý rồi em tự viết bằng lời mình</td><td class="y"><b>Cân nhắc</b></td><td>Chỉ được nếu thầy cô cho phép và em ghi rõ đã dùng AI; ý và lời văn phải là của em.</td></tr>
+    <tr><td>Nhờ AI viết cả bài văn, bài tập làm văn để nộp</td><td class="r"><b>Không</b></td><td>Đó là nộp bài của người khác làm, trái với trung thực học tập và em không luyện được kỹ năng.</td></tr>
+    <tr><td>Chụp đề bài tập về nhà, đưa cho AI giải rồi chép</td><td class="r"><b>Không</b></td><td>Em không hiểu và không tự giải được; cũng có thể chép nhầm lời giải sai.</td></tr>
+    <tr><td>Dùng AI trong bài kiểm tra, thi khi quy chế cấm</td><td class="r"><b>Không</b></td><td>Vi phạm quy chế thi. Ở kỳ thi THPT, thí sinh bị cấm mang thiết bị liên lạc, ghi âm và tài liệu vào phòng thi; năm 2026 có thí sinh bị đình chỉ, trong đó có trường hợp nghi dùng AI giải đề. Chỉ dùng máy tính cầm tay không soạn thảo văn bản, không lưu trữ hay truyền thông tin.</td></tr>
+    <tr><td>Nhờ AI tạo ảnh, giọng nói giống một người thật để trêu bạn, đùa giỡn</td><td class="r"><b>Không</b></td><td>Xâm phạm hình ảnh, danh dự người khác và có thể vi phạm pháp luật. Nội dung do AI tạo ra giống người thật cần được dán nhãn theo quy định mới.</td></tr>
+    <tr><td>Đưa ảnh, thông tin của bạn bè, thầy cô vào công cụ AI</td><td class="r"><b>Không</b></td><td>Dữ liệu cá nhân của người khác; cần sự đồng ý, và với trẻ em còn cần người đại diện.</td></tr>
+    <tr><td>Nhờ AI tóm tắt tài liệu em đã đọc, rồi em đối chiếu với tài liệu</td><td class="y"><b>Cân nhắc</b></td><td>Bản tóm tắt có thể sai hoặc bỏ sót; chỉ dùng sau khi em đã tự đọc.</td></tr>
+  </table>
+  <p>Một nguyên tắc nữa: <b>luôn làm theo quy định của lớp, trường và kỳ thi.</b> Nếu bài tập ghi rõ không dùng AI thì không dùng. Nếu được dùng, hãy <b>ghi rõ</b> em đã dùng AI vào việc gì. Khi chưa rõ, hỏi thầy cô trước khi làm.</p>
+  <div class="card think"><div class="lbl">Khai mở tư duy · Thảo luận nhóm</div><p>Chia nhóm, mỗi nhóm bốc một tình huống thực tế (ví dụ: “Bạn nhờ cậu gửi đáp án bài toán đã hỏi AI”). Nhóm tô màu xanh / vàng / đỏ và phải <b>giải thích lý do bằng một câu có chữ “vì”</b>. Nhóm khác phản biện.</p></div>
+
+  <h3>4. Sản phẩm: Bộ quy tắc 5 điều</h3>
+  <p>Mỗi em viết 5 quy tắc của riêng mình, ngắn gọn, dán lên bìa vở. Mẫu gợi ý:</p>
+  <ol>
+    <li>Không đưa mật khẩu, OTP, số tài khoản, địa chỉ, ảnh và thông tin của người khác cho AI.</li>
+    <li>Tự làm bài trước, rồi mới hỏi AI để hiểu, không để nhận đáp án.</li>
+    <li>Điều AI nói luôn phải được kiểm chứng bằng ít nhất một nguồn khác.</li>
+    <li>Gặp tin, cuộc gọi, video “lạ mà quen” thì dừng, gọi lại số đã lưu, báo người lớn.</li>
+    <li>Tôn trọng quy định lớp, trường, kỳ thi; nếu dùng AI thì nói rõ đã dùng vào việc gì.</li>
+  </ol>
+
+  <h3>5. Tự kiểm tra cuối buổi</h3>
+  <details><summary>Câu 1. Em có thể gửi mã OTP nhận qua tin nhắn cho “cô giáo” đang gọi video không?</summary><p>Không. Không bao giờ đưa mã OTP. Gác máy, gọi lại số đã lưu hoặc hỏi người lớn.</p></details>
+  <details><summary>Câu 2. Em làm xong bài Toán rồi nhờ AI chỉ chỗ sai nhưng không cho đáp án. Được hay không? Vì sao?</summary><p>Được, vì em đã tự làm trước và AI chỉ hỗ trợ soát, em vẫn tự sửa. Cần thêm: đúng với quy định của lớp.</p></details>
+  <details><summary>Câu 3. Có thể mang điện thoại có AI vào phòng thi để tra cứu không?</summary><p>Không. Quy chế cấm thiết bị liên lạc, ghi âm và tài liệu trong phòng thi, và vi phạm có thể bị đình chỉ.</p></details>
+
+  <div class="age"><b>Theo độ tuổi.</b> 12–15: nhấn mạnh phần dữ liệu cá nhân, lừa đảo và nhờ người lớn. Đóng vai tình huống ngắn. 16–18: thêm thảo luận về liêm chính học thuật, trích dẫn khi dùng AI, quy chế thi, và hệ quả pháp lý của việc tạo/phát tán nội dung giả mạo.</div>
+</section>
+
+<!-- ===================== BUỔI 3 ===================== -->
+<section id="buoi3">
+  <h2>Buổi 3 · Đặt câu hỏi tốt (viết prompt)</h2>
+  <p class="sub">Hỏi rõ thì được giúp đúng. Hỏi đúng cách là một nửa việc hiểu bài.</p>
+  <div class="meta">
+    <div><b>Mục tiêu</b>Viết được prompt gồm 5 thành phần; biến câu hỏi mơ hồ thành câu hỏi rõ</div>
+    <div><b>Chuẩn bị</b>3 câu hỏi mơ hồ của chính em; sách giáo khoa hoặc bài đang học</div>
+    <div><b>Sản phẩm</b>Thư viện câu lệnh mẫu theo môn</div>
+    <div><b>Thời gian</b>15’ mở đầu · 25’ cấu trúc · 35’ thực hành · 15’ tổng kết</div>
+  </div>
+
+  <h3>1. Vì sao câu hỏi mơ hồ cho câu trả lời mơ hồ?</h3>
+  <p>AI không biết em là ai, đang học lớp mấy, cần gì. Nếu em chỉ gõ “giải thích đạo hàm”, nó sẽ đoán và có thể trả lời như dành cho sinh viên đại học. Cho AI đủ thông tin bối cảnh, bạn nhận được câu trả lời vừa với mình.</p>
+
+  <h3>2. Năm thành phần của một câu lệnh tốt</h3>
+  <figure>
+  <svg viewBox="0 0 860 300" role="img" aria-label="Năm thành phần của prompt">
+    <rect width="860" height="300" fill="#fff"/>
+    <g font-family="sans-serif" font-size="14" text-anchor="middle">
+      <text x="430" y="26" font-size="16" font-weight="700" fill="#17406b">VAI TRÒ · NHIỆM VỤ · BỐI CẢNH · ĐỊNH DẠNG · GIỚI HẠN</text>
+      <rect x="20" y="46" width="160" height="150" rx="12" fill="#e6f1fb" stroke="#1f6fb2"/><text x="100" y="74" font-weight="700" fill="#17406b" font-size="16">1 · Vai trò</text><text x="100" y="100" fill="#1c2733">Bạn là ai</text><text x="100" y="120" fill="#1c2733">để AI đóng vai?</text><text x="100" y="150" fill="#5b6773" font-size="12">“Gia sư Toán kiên nhẫn,</text><text x="100" y="167" fill="#5b6773" font-size="12">biết gợi ý”</text>
+      <rect x="187" y="46" width="160" height="150" rx="12" fill="#e5f5ea" stroke="#2a8a4a"/><text x="267" y="74" font-weight="700" fill="#1d6a37" font-size="16">2 · Nhiệm vụ</text><text x="267" y="100" fill="#1c2733">Cần làm gì,</text><text x="267" y="120" fill="#1c2733">cụ thể?</text><text x="267" y="150" fill="#5b6773" font-size="12">“Chỉ ra bước sai trong</text><text x="267" y="167" fill="#5b6773" font-size="12">bài em làm”</text>
+      <rect x="354" y="46" width="160" height="150" rx="12" fill="#fff6d6" stroke="#d9a62b"/><text x="434" y="74" font-weight="700" fill="#8a6410" font-size="16">3 · Bối cảnh</text><text x="434" y="100" fill="#1c2733">Lớp, bài, em</text><text x="434" y="120" fill="#1c2733">đã làm gì?</text><text x="434" y="150" fill="#5b6773" font-size="12">“Lớp 8, bài hằng đẳng</text><text x="434" y="167" fill="#5b6773" font-size="12">thức, em làm như sau…”</text>
+      <rect x="521" y="46" width="160" height="150" rx="12" fill="#fdf0e1" stroke="#d9822b"/><text x="601" y="74" font-weight="700" fill="#a85f14" font-size="16">4 · Định dạng</text><text x="601" y="100" fill="#1c2733">Trả lời dạng</text><text x="601" y="120" fill="#1c2733">nào?</text><text x="601" y="150" fill="#5b6773" font-size="12">“Từng bước, mỗi bước</text><text x="601" y="167" fill="#5b6773" font-size="12">không quá 2 câu”</text>
+      <rect x="688" y="46" width="152" height="150" rx="12" fill="#fbe9e7" stroke="#c0392b"/><text x="764" y="74" font-weight="700" fill="#9b2b1f" font-size="16">5 · Giới hạn</text><text x="764" y="100" fill="#1c2733">Không được</text><text x="764" y="120" fill="#1c2733">làm gì?</text><text x="764" y="150" fill="#5b6773" font-size="12">“Chưa đưa đáp án,</text><text x="764" y="167" fill="#5b6773" font-size="12">hỏi lại em trước”</text>
+      <rect x="20" y="214" width="820" height="66" rx="12" fill="#f6f8fb" stroke="#dfe5ec"/>
+      <text x="430" y="240" fill="#1c2733" font-weight="700">Thêm một dòng cuối rất có ích</text>
+      <text x="430" y="262" fill="#1c2733">“Nếu chưa chắc điều gì, hãy nói rõ chỗ không chắc và đừng bịa.”</text>
+    </g>
+  </svg>
+  <figcaption>Không cần đủ cả năm cho mọi câu hỏi, nhưng thiếu càng nhiều thì AI càng phải đoán.</figcaption>
+  </figure>
+
+  <h3>3. Ba bước cải tiến một câu hỏi</h3>
+  <table>
+    <tr><th>Câu mơ hồ</th><th>Câu đã cải tiến</th><th>Vì sao tốt hơn</th></tr>
+    <tr><td>“Giải bài này giúp mình.”</td><td>“Mình học lớp 9. Đây là bài và cách mình làm đến bước 3 [dán bài]. Bạn hãy hỏi mình 1 câu để gợi ý bước tiếp theo, chưa đưa đáp án.”</td><td>Có bối cảnh, giữ phần tự làm, buộc AI gợi ý từng bước.</td></tr>
+    <tr><td>“Nói về chiến tranh thế giới.”</td><td>“Mình học lớp 8. Hãy tóm tắt nguyên nhân dẫn đến Chiến tranh thế giới thứ nhất bằng 4 ý ngắn, rồi ra 3 câu hỏi để mình tự kiểm tra.”</td><td>Rõ phạm vi, độ dài, có bước tự kiểm tra.</td></tr>
+    <tr><td>“Viết bài văn tả mẹ.”</td><td>“Mình đã viết đoạn mở bài sau [dán]. Hãy chỉ ra 2 điểm hay và 2 điểm cần cải thiện, không viết lại hộ mình.”</td><td>Em vẫn là tác giả; AI chỉ góp ý.</td></tr>
+  </table>
+
+  <h3>4. Thực hành từng bước</h3>
+  <ol class="steps">
+    <li><b>Lấy 3 câu hỏi mơ hồ</b> em hay gõ cho AI (ví dụ “giải bài này”, “tóm tắt chương này”, “viết hộ”).</li>
+    <li><b>Điền khung 5 ô</b> cho từng câu (vai trò, nhiệm vụ, bối cảnh, định dạng, giới hạn).</li>
+    <li><b>Gửi cả hai phiên bản</b> cho AI (cũ và mới) trong hai cuộc trò chuyện riêng.</li>
+    <li><b>So sánh</b> độ dễ hiểu, độ vừa với trình độ, và việc em có phải tự nghĩ hay không.</li>
+    <li><b>Lưu bản tốt nhất</b> vào “thư viện câu lệnh”.</li>
+  </ol>
+
+  <h3>5. Khung câu lệnh “mở khóa tư duy”</h3>
+  <p>Ba kiểu câu lệnh rất hữu ích để AI hỏi ngược lại em thay vì đưa đáp án:</p>
+  <pre class="prompt">Mình là học sinh lớp [..]. Mình đang học [bài/chủ đề].
+Hãy đóng vai gia sư theo kiểu Socrates: hỏi mình từng câu một,
+không giảng dài, không đưa đáp án. Chờ mình trả lời rồi mới hỏi tiếp.</pre>
+  <pre class="prompt">Đây là cách mình giải [dán bài + lời giải của em].
+Đừng sửa giúp mình. Chỉ cho mình biết lời giải có sai ở bước nào không,
+và gợi ý bằng một câu hỏi để mình tự tìm ra lỗi.</pre>
+  <pre class="prompt">Hãy ra 5 câu hỏi từ dễ đến khó về [chủ đề] cho học sinh lớp [..].
+Chưa đưa đáp án. Khi mình trả lời xong cả 5 câu, hãy chấm và giải thích câu mình sai.</pre>
+
+  <h3>6. Sản phẩm: thư viện câu lệnh mẫu theo môn</h3>
+  <table>
+    <tr><th>Môn</th><th>Mục đích</th><th>Mẫu câu lệnh</th></tr>
+    <tr><td><b>Toán</b></td><td>Gợi ý từng bước</td><td>“Mình học lớp [..]. Bài: […]. Mình đã làm đến […]. Hãy gợi ý bước tiếp theo bằng 1 câu hỏi, chưa đưa đáp án.”</td></tr>
+    <tr><td><b>Ngữ văn</b></td><td>Góp ý bài viết</td><td>“Đây là đoạn văn của mình […]. Hãy nêu 2 điểm mạnh và 2 điểm cần cải thiện về ý và cách diễn đạt. Không viết lại thay mình.”</td></tr>
+    <tr><td><b>Tiếng Anh</b></td><td>Luyện viết, ngữ pháp</td><td>“Here is my paragraph […]. Underline errors and explain each in simple English for a grade [..] student. Don’t rewrite the whole paragraph.”</td></tr>
+    <tr><td><b>Lí / Hóa / Sinh</b></td><td>Hiểu hiện tượng</td><td>“Giải thích […] bằng một ví dụ đời sống và một câu hỏi để mình kiểm tra đã hiểu chưa. Nói rõ đâu là kiến thức trong chương trình, đâu là mở rộng.”</td></tr>
+    <tr><td><b>Sử / Địa</b></td><td>Ôn tập</td><td>“Ra 5 câu hỏi về […], mỗi câu hỏi một mốc hoặc một khái niệm. Sau khi mình trả lời, chỉ ra điều mình cần đối chiếu lại với sách giáo khoa.”</td></tr>
+    <tr><td><b>Mọi môn</b></td><td>Kiểm soát độ chắc chắn</td><td>“Nếu chưa chắc, hãy nói rõ chỗ chưa chắc và đừng bịa số liệu hay nguồn.”</td></tr>
+  </table>
+
+  <h3>7. Tự kiểm tra cuối buổi</h3>
+  <details><summary>Câu 1. Kể tên 5 thành phần của một câu lệnh tốt.</summary><p>Vai trò, nhiệm vụ, bối cảnh, định dạng, giới hạn.</p></details>
+  <details><summary>Câu 2. “Giải bài này giúp mình” thiếu những thành phần nào?</summary><p>Thiếu bối cảnh (lớp mấy, đã làm gì), định dạng và giới hạn (chưa đưa đáp án). Vì vậy AI có thể trả lời ngay đáp án.</p></details>
+  <details><summary>Câu 3. Viết lại câu “Tóm tắt bài này” thành câu lệnh rõ ràng.</summary><p>Ví dụ: “Mình học lớp 7. Hãy tóm tắt bài [tên bài] bằng 5 ý ngắn, rồi ra 3 câu hỏi để mình tự kiểm tra. Nếu chưa chắc, hãy nói rõ.”</p></details>
+
+  <div class="age"><b>Theo độ tuổi.</b> 12–15: dùng khung 5 ô có sẵn, bài ngắn. 16–18: thêm yêu cầu AI đưa ra các giả định, so sánh hai cách giải, và tự viết khung prompt riêng cho môn thi.</div>
+</section>
+
+<!-- ===================== BUỔI 4 ===================== -->
+<section id="buoi4">
+  <h2>Buổi 4 · Kiểm chứng và phản biện</h2>
+  <p class="sub">Tin ít, hỏi nhiều, đối chiếu thật.</p>
+  <div class="meta">
+    <div><b>Mục tiêu</b>Kiểm chứng được một câu trả lời bằng nguồn độc lập; biết giới hạn của việc “nhờ AI tự kiểm tra”</div>
+    <div><b>Chuẩn bị</b>Một bài tập em đã hỏi AI; sách giáo khoa; máy tính / Desmos / GeoGebra</div>
+    <div><b>Sản phẩm</b>Một bài tập được AI giải thích và em kiểm chứng đầy đủ</div>
+    <div><b>Thời gian</b>20’ phương pháp SIFT · 30’ kiểm chứng toán &amp; khoa học · 25’ thực hành · 15’ tổng kết</div>
+  </div>
+
+  <h3>1. Vì sao không thể dùng AI để kiểm chứng AI?</h3>
+  <p>Em có thể hỏi “Bạn có chắc không?”, nhưng AI hay trả lời “Chắc chắn!” hoặc đổi ý chỉ vì em nghi ngờ. Hỏi lại AI chỉ cho thêm một ý kiến, <b>không phải một bằng chứng</b>. Bằng chứng nằm ở nguồn độc lập: sách giáo khoa, tài liệu chính thức, phép tính em tự làm.</p>
+
+  <h3>2. Phương pháp SIFT: bốn động tác kiểm chứng</h3>
+  <p>SIFT là phương pháp do Mike Caulfield (Hoa Kỳ) đề xuất, rất hợp để kiểm tra thông tin trên mạng, kể cả câu trả lời của AI.</p>
+  <figure>
+  <svg viewBox="0 0 860 240" role="img" aria-label="SIFT: Dừng, Tìm nguồn, Tìm thêm, Truy nguồn gốc">
+    <rect width="860" height="240" fill="#fff"/>
+    <g font-family="sans-serif" font-size="14" text-anchor="middle">
+      <rect x="20" y="30" width="195" height="170" rx="12" fill="#fbe9e7" stroke="#c0392b"/><text x="117" y="62" font-weight="700" fill="#9b2b1f" font-size="20">S · Stop</text><text x="117" y="86" font-weight="700" fill="#1c2733">DỪNG</text><text x="117" y="112" fill="#1c2733">Đừng chép, đừng chia sẻ.</text><text x="117" y="132" fill="#1c2733">Tự hỏi: mình đã biết gì</text><text x="117" y="152" fill="#1c2733">về chủ đề này? Có gì lạ?</text>
+      <rect x="225" y="30" width="195" height="170" rx="12" fill="#fdf0e1" stroke="#d9822b"/><text x="322" y="62" font-weight="700" fill="#a85f14" font-size="20">I · Investigate</text><text x="322" y="86" font-weight="700" fill="#1c2733">TÌM NGUỒN</text><text x="322" y="112" fill="#1c2733">Ai nói? Chuyên môn gì?</text><text x="322" y="132" fill="#1c2733">Có tên, có ngày,</text><text x="322" y="152" fill="#1c2733">có cơ quan chịu trách nhiệm?</text>
+      <rect x="430" y="30" width="195" height="170" rx="12" fill="#fff6d6" stroke="#d9a62b"/><text x="527" y="62" font-weight="700" fill="#8a6410" font-size="20">F · Find</text><text x="527" y="86" font-weight="700" fill="#1c2733">TÌM THÊM</text><text x="527" y="112" fill="#1c2733">Tìm ít nhất 2–3 nguồn</text><text x="527" y="132" fill="#1c2733">độc lập khác nói gì.</text><text x="527" y="152" fill="#1c2733">Mở tab mới, đọc “ngang”.</text>
+      <rect x="635" y="30" width="205" height="170" rx="12" fill="#e5f5ea" stroke="#2a8a4a"/><text x="737" y="62" font-weight="700" fill="#1d6a37" font-size="20">T · Trace</text><text x="737" y="86" font-weight="700" fill="#1c2733">TRUY NGUỒN GỐC</text><text x="737" y="112" fill="#1c2733">Số liệu, trích dẫn ấy</text><text x="737" y="132" fill="#1c2733">xuất hiện ở đâu đầu tiên?</text><text x="737" y="152" fill="#1c2733">Đọc bản gốc, không đọc lại.</text>
+    </g>
+  </svg>
+  <figcaption>Gốc: SIFT của Mike Caulfield (giấy phép CC BY 4.0). “Đọc ngang” (lateral reading) do nhóm nghiên cứu Stanford (Sam Wineburg) phổ biến: rời trang đó và xem người khác nói gì về nó.</figcaption>
+  </figure>
+
+  <h3>3. Cách kiểm chứng theo từng loại</h3>
+  <table>
+    <tr><th>Loại thông tin AI đưa ra</th><th>Em kiểm chứng thế nào?</th></tr>
+    <tr><td><b>Phép tính, bài toán</b></td><td>Tự tính lại bằng máy tính; thay đáp án vào đề; vẽ đồ thị bằng Desmos hoặc GeoGebra; ước lượng bằng số tròn (đáp án có hợp lý không?).</td></tr>
+    <tr><td><b>Công thức, định nghĩa</b></td><td>Tra sách giáo khoa; kiểm tra bằng ví dụ số đơn giản; xem điều kiện áp dụng.</td></tr>
+    <tr><td><b>Sự kiện, ngày tháng (Sử, Địa)</b></td><td>Đối chiếu sách giáo khoa và ít nhất hai nguồn đáng tin; chú ý AI hay nhầm năm, tên riêng.</td></tr>
+    <tr><td><b>Trích dẫn, tên sách, bài báo</b></td><td>Tìm xem tác phẩm có thật không bằng cách tìm tên trên trang thư viện hoặc nhà xuất bản. AI có thể ghép tên tác giả thật với bài báo không tồn tại.</td></tr>
+    <tr><td><b>Số liệu, thống kê</b></td><td>Truy về nguồn gốc (cơ quan thống kê, báo cáo gốc) và xem năm công bố.</td></tr>
+    <tr><td><b>Ý kiến, lập luận (văn, nghị luận)</b></td><td>Đòi AI nêu cả lập luận ngược lại; tự hỏi: lập luận có bằng chứng không? có thiên lệch không?</td></tr>
+  </table>
+  <div class="card warn"><div class="lbl">Một điều đáng nhớ</div><p>Nhờ AI nêu nguồn là cách để <b>bắt đầu tìm</b>, không phải để <b>kết thúc kiểm chứng</b>. Nếu nó đưa tên nguồn, em phải tự mở nguồn đó ra xem có thật và có đúng là nói như vậy không.</p></div>
+
+  <h3>4. Nhờ AI phản biện chính mình: có ích nhưng không thay được kiểm chứng</h3>
+  <pre class="prompt">Hãy giải thích [vấn đề] ở trên, rồi liệt kê:
+1) Những giả định bạn đã dùng.
+2) Những điểm bạn chưa chắc.
+3) Loại nguồn mình nên tra để kiểm tra (không bịa tên nguồn).</pre>
+  <pre class="prompt">Hãy đóng vai người phản biện. Chỉ ra 3 chỗ lập luận trên có thể sai hoặc thiếu,
+và cho mình một ví dụ ngược lại để mình thử.</pre>
+  <p>Hai câu lệnh này giúp em <b>biết nên kiểm tra ở đâu</b>. Việc kiểm tra thì vẫn do em làm.</p>
+
+  <h3>5. Thực hành từng bước</h3>
+  <ol class="steps">
+    <li><b>Chọn một bài tập</b> em đã nhờ AI giải thích (Toán, Lý, Hóa, Sinh, Sử hoặc Địa).</li>
+    <li><b>Ghi lại câu trả lời của AI</b> (chụp hoặc chép) vào cột 1 của bảng kiểm chứng.</li>
+    <li><b>Gạch chân các “mệnh đề kiểm tra được”</b>: công thức, số liệu, mốc thời gian, tên riêng.</li>
+    <li><b>Kiểm chứng từng mệnh đề</b> bằng sách giáo khoa, công cụ tính, hoặc ít nhất 2 nguồn đáng tin; ghi tên nguồn, ngày xem.</li>
+    <li><b>Kết luận</b> từng mệnh đề: đúng, sai, chưa chắc. Sửa phần sai bằng lời của em.</li>
+    <li><b>Trình bày 2 phút</b> với bạn: AI nói gì, em kiểm chứng ra sao, em kết luận gì.</li>
+  </ol>
+  <table>
+    <tr><th>Mệnh đề của AI</th><th>Cách kiểm chứng</th><th>Nguồn / ngày xem</th><th>Kết luận</th></tr>
+    <tr><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td></tr>
+  </table>
+  <div class="card think"><div class="lbl">Khai mở tư duy</div><ul><li>Nếu hai nguồn đáng tin nói khác nhau, em làm gì? (Kiểm tra năm, phạm vi, định nghĩa; hỏi thầy cô.)</li><li>Một câu trả lời đúng nhưng em không hiểu thì có dùng được không? Vì sao?</li></ul></div>
+
+  <h3>6. Tự kiểm tra cuối buổi</h3>
+  <details><summary>Câu 1. SIFT gồm những bước nào?</summary><p>Stop (dừng), Investigate the source (tìm nguồn), Find better coverage (tìm thêm nguồn khác), Trace claims (truy về nguồn gốc).</p></details>
+  <details><summary>Câu 2. Vì sao “hỏi lại AI: bạn có chắc không?” chưa phải kiểm chứng?</summary><p>Vì AI chỉ sinh thêm một câu trả lời khác theo xác suất; không phải bằng chứng độc lập.</p></details>
+  <details><summary>Câu 3. AI đưa một trích dẫn có tên tác giả và tên bài báo. Em làm gì?</summary><p>Tìm bài báo đó trên trang thư viện, tạp chí hoặc nhà xuất bản; nếu không tìm thấy thì coi là chưa tồn tại và không dùng.</p></details>
+
+  <div class="age"><b>Theo độ tuổi.</b> 12–15: kiểm chứng 3 mệnh đề, ưu tiên sách giáo khoa và máy tính. 16–18: thêm kiểm chứng số liệu, nguồn gốc trích dẫn, và nhận xét xem lập luận có thiên lệch hay thiếu bằng chứng không.</div>
+</section>
+
+<!-- ===================== BUỔI 5 ===================== -->
+<section id="buoi5">
+  <h2>Buổi 5 · Tự tìm lỗ hổng kiến thức</h2>
+  <p class="sub">Biết mình chưa biết gì là bước đầu của tự học.</p>
+  <div class="meta">
+    <div><b>Mục tiêu</b>Tự chẩn đoán điểm yếu; phân loại lỗi; lập bảng lỗ hổng cá nhân</div>
+    <div><b>Chuẩn bị</b>Kết quả làm bài gần đây (phần mềm Vững bài / THPT, bài kiểm tra); vở ghi bài sai</div>
+    <div><b>Sản phẩm</b>Bảng lỗ hổng kiến thức cá nhân</div>
+    <div><b>Thời gian</b>15’ phân loại lỗi · 20’ bài chẩn đoán · 40’ lập bảng · 15’ tổng kết</div>
+  </div>
+
+  <h3>1. Ba loại lỗi, ba cách chữa</h3>
+  <figure>
+  <svg viewBox="0 0 860 330" role="img" aria-label="Ba loại lỗi và cách chữa">
+    <rect width="860" height="330" fill="#fff"/>
+    <g font-family="sans-serif" font-size="14" text-anchor="middle">
+      <text x="430" y="26" font-size="16" font-weight="700" fill="#17406b">Gặp một câu làm sai: sai vì lý do nào?</text>
+      <rect x="320" y="42" width="220" height="44" rx="22" fill="#e6f1fb" stroke="#1f6fb2"/><text x="430" y="70" font-weight="700" fill="#17406b">Câu bị sai</text>
+      <path d="M360 88 L150 128" stroke="#9db4c9" stroke-width="2" marker-end="url(#a5)"/><path d="M430 88 V128" stroke="#9db4c9" stroke-width="2" marker-end="url(#a5)"/><path d="M500 88 L710 128" stroke="#9db4c9" stroke-width="2" marker-end="url(#a5)"/>
+      <rect x="20" y="130" width="260" height="170" rx="12" fill="#fbe9e7" stroke="#c0392b"/><text x="150" y="158" font-weight="700" fill="#9b2b1f" font-size="16">A · Chưa hiểu khái niệm</text>
+      <text x="150" y="184" fill="#1c2733">Dấu hiệu: không biết bắt đầu,</text><text x="150" y="204" fill="#1c2733">không giải thích được bằng lời.</text>
+      <text x="150" y="234" fill="#1d6a37" font-weight="700">Cách chữa</text><text x="150" y="254" fill="#1c2733">Đọc lại sách, nhờ AI giảng</text><text x="150" y="274" fill="#1c2733">bằng ví dụ, tự giảng lại.</text>
+      <rect x="300" y="130" width="260" height="170" rx="12" fill="#fff6d6" stroke="#d9a62b"/><text x="430" y="158" font-weight="700" fill="#8a6410" font-size="16">B · Sai tính toán</text>
+      <text x="430" y="184" fill="#1c2733">Dấu hiệu: hiểu cách làm nhưng</text><text x="430" y="204" fill="#1c2733">sai dấu, sai số, nhầm bước.</text>
+      <text x="430" y="234" fill="#1d6a37" font-weight="700">Cách chữa</text><text x="430" y="254" fill="#1c2733">Làm chậm, viết rõ từng dòng,</text><text x="430" y="274" fill="#1c2733">tự kiểm tra bằng cách thay lại.</text>
+      <rect x="580" y="130" width="260" height="170" rx="12" fill="#fdf0e1" stroke="#d9822b"/><text x="710" y="158" font-weight="700" fill="#a85f14" font-size="16">C · Đọc sai đề</text>
+      <text x="710" y="184" fill="#1c2733">Dấu hiệu: trả lời khác điều đề</text><text x="710" y="204" fill="#1c2733">hỏi, bỏ sót điều kiện.</text>
+      <text x="710" y="234" fill="#1d6a37" font-weight="700">Cách chữa</text><text x="710" y="254" fill="#1c2733">Gạch chân từ khóa, viết lại</text><text x="710" y="274" fill="#1c2733">đề bằng lời mình trước khi làm.</text>
+    </g>
+    <defs><marker id="a5" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#9db4c9"/></marker></defs>
+  </svg>
+  </figure>
+  <p>Cùng một câu sai, cách chữa khác nhau hoàn toàn. Học thêm lý thuyết sẽ không giúp nếu lỗi là “đọc sai đề”.</p>
+
+  <h3>2. Tự chẩn đoán với AI: AI hỏi, em trả lời</h3>
+  <pre class="prompt">Mình là học sinh lớp [..], môn [..], chủ đề [..].
+Hãy ra 8 câu hỏi chẩn đoán từ dễ đến khó, hỏi từng câu một.
+Sau mỗi câu mình trả lời, đừng cho đáp án ngay; chỉ hỏi "mình tự tin mức mấy trên 5?".
+Sau khi xong 8 câu, hãy liệt kê câu mình sai hoặc chưa chắc và nhận xét xem
+khả năng mình thuộc loại lỗi nào: chưa hiểu khái niệm, sai tính toán, hay đọc sai đề.</pre>
+  <div class="card warn"><div class="lbl">Lưu ý</div><p>Chẩn đoán của AI chỉ là <b>giả thuyết</b>. Em phải tự xác nhận bằng cách nhìn lại bài làm của mình và đối chiếu với sách giáo khoa hoặc kết quả trên phần mềm Nam Linh.</p></div>
+
+  <h3>3. Thực hành từng bước</h3>
+  <ol class="steps">
+    <li><b>Thu thập dữ liệu thật:</b> các câu sai trong phần mềm Vững bài / THPT, bài kiểm tra gần đây, vở ghi sai.</li>
+    <li><b>Ghi mỗi câu sai vào “nhật ký lỗi”:</b> chủ đề, câu hỏi, em trả lời gì, đáp án đúng, lý do sai.</li>
+    <li><b>Phân loại</b> mỗi lỗi: A (khái niệm), B (tính toán), C (đọc đề). Em tự đoán trước, rồi mới hỏi AI có đồng ý không và vì sao.</li>
+    <li><b>Đếm.</b> Loại lỗi nào nhiều nhất? Chủ đề nào xuất hiện lặp lại?</li>
+    <li><b>Chọn tối đa 3 lỗ hổng</b> ưu tiên cao nhất (nhiều lần sai + ảnh hưởng điểm lớn).</li>
+    <li><b>Lập bảng lỗ hổng</b> như mẫu dưới đây.</li>
+  </ol>
+  <table>
+    <tr><th>Chủ đề / bài</th><th>Loại lỗi (A/B/C)</th><th>Bằng chứng (số câu sai / ngày)</th><th>Mức ưu tiên (1–3)</th><th>Cách chữa dự kiến</th></tr>
+    <tr><td>(ví dụ) Phương trình bậc hai</td><td>B</td><td>3/5 câu sai dấu, 12/10</td><td>1</td><td>Viết từng bước, thử lại nghiệm</td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+  </table>
+  <div class="card think"><div class="lbl">Khai mở tư duy</div><ul><li>Lỗi nào em thấy “ngại” nhất khi nhìn vào bảng? Vì sao?</li><li>Nếu chỉ có 30 phút mỗi ngày, em ưu tiên lỗ hổng nào? Vì sao?</li></ul></div>
+
+  <h3>4. Tự kiểm tra cuối buổi</h3>
+  <details><summary>Câu 1. Một bạn hiểu cách giải nhưng nhiều lần sai dấu. Lỗi loại nào? Cách chữa?</summary><p>Loại B (sai tính toán). Chữa bằng cách làm chậm, viết đủ bước và thử lại.</p></details>
+  <details><summary>Câu 2. Một bạn trả lời “tìm x” nhưng đề hỏi “tìm giá trị lớn nhất của biểu thức”. Lỗi loại nào?</summary><p>Loại C (đọc sai đề).</p></details>
+  <details><summary>Câu 3. Vì sao không nên tin hoàn toàn vào việc AI “chẩn đoán” em?</summary><p>AI chỉ nhìn vài câu em đưa và có thể đoán sai; em phải đối chiếu với bài làm thật và dữ liệu từ phần mềm.</p></details>
+
+  <div class="age"><b>Theo độ tuổi.</b> 12–15: chọn 1–2 chủ đề, chẩn đoán 5 câu. 16–18: chọn 3 chủ đề theo cấu trúc đề thi, tính tỷ lệ lỗi từng loại và đối chiếu với điểm thi thử.</div>
+</section>
+
+<!-- ===================== BUỔI 6 ===================== -->
+<section id="buoi6">
+  <h2>Buổi 6 · Xây dựng gia sư AI riêng</h2>
+  <p class="sub">Dạy AI cách dạy em: gợi ý trước, đáp án sau.</p>
+  <div class="meta">
+    <div><b>Mục tiêu</b>Viết hướng dẫn hệ thống (system prompt) cho gia sư AI; thử nghiệm bằng 5 câu hỏi và chỉnh sửa</div>
+    <div><b>Chuẩn bị</b>Bảng lỗ hổng của Buổi 5; công cụ chat có mục “hướng dẫn tùy chỉnh”, hoặc dán vào tin nhắn đầu tiên</div>
+    <div><b>Sản phẩm</b>Gia sư AI của em, đã được thử nghiệm</div>
+    <div><b>Thời gian</b>20’ nguyên tắc · 25’ viết hướng dẫn · 30’ thử nghiệm · 15’ chỉnh sửa</div>
+  </div>
+
+  <h3>1. Gia sư tốt hay máy đưa đáp án?</h3>
+  <figure>
+  <svg viewBox="0 0 860 280" role="img" aria-label="Hai kiểu dùng AI">
+    <rect width="860" height="280" fill="#fff"/>
+    <g font-family="sans-serif" font-size="14" text-anchor="middle">
+      <rect x="20" y="20" width="400" height="244" rx="12" fill="#fbe9e7" stroke="#c0392b"/><text x="220" y="48" font-weight="700" fill="#9b2b1f" font-size="16">Máy đưa đáp án</text>
+      <rect x="40" y="62" width="360" height="36" rx="8" fill="#fff" stroke="#e6b9b2"/><text x="220" y="85" fill="#1c2733">Em: “Giải giúp mình bài này.”</text>
+      <rect x="40" y="108" width="360" height="52" rx="8" fill="#fff" stroke="#e6b9b2"/><text x="220" y="130" fill="#1c2733">AI: “Đáp án là 5. Lời giải:…”</text><text x="220" y="148" fill="#5b6773" font-size="12">(em chép lại)</text>
+      <text x="220" y="190" fill="#9b2b1f" font-weight="700">Kết quả</text>
+      <text x="220" y="212" fill="#1c2733">Em không phải nghĩ, không nhớ lâu,</text><text x="220" y="232" fill="#1c2733">gặp bài khác lại không làm được.</text>
+      <rect x="440" y="20" width="400" height="244" rx="12" fill="#e5f5ea" stroke="#2a8a4a"/><text x="640" y="48" font-weight="700" fill="#1d6a37" font-size="16">Gia sư gợi ý</text>
+      <rect x="460" y="62" width="360" height="36" rx="8" fill="#fff" stroke="#b9e0c6"/><text x="640" y="85" fill="#1c2733">Em: “Mình bí bài này.”</text>
+      <rect x="460" y="108" width="360" height="52" rx="8" fill="#fff" stroke="#b9e0c6"/><text x="640" y="130" fill="#1c2733">AI: “Đề cho biết gì? Em thử</text><text x="640" y="148" fill="#1c2733">gọi ẩn là gì trước nhé?”</text>
+      <text x="640" y="190" fill="#1d6a37" font-weight="700">Kết quả</text>
+      <text x="640" y="212" fill="#1c2733">Em tự nghĩ từng bước, hiểu vì sao,</text><text x="640" y="232" fill="#1c2733">làm được bài tương tự.</text>
+    </g>
+  </svg>
+  </figure>
+
+  <h3>2. Thang gợi ý: từ nhẹ đến nặng</h3>
+  <figure>
+  <svg viewBox="0 0 860 280" role="img" aria-label="Thang gợi ý bốn bậc">
+    <rect width="860" height="280" fill="#fff"/>
+    <g font-family="sans-serif" font-size="14">
+      <text x="430" y="26" text-anchor="middle" font-size="16" font-weight="700" fill="#17406b">Thang gợi ý: bậc sau chỉ dùng khi bậc trước chưa đủ</text>
+      <rect x="40" y="200" width="190" height="60" rx="8" fill="#e5f5ea" stroke="#2a8a4a"/><text x="135" y="224" text-anchor="middle" font-weight="700" fill="#1d6a37">Bậc 1 · Câu hỏi gợi mở</text><text x="135" y="244" text-anchor="middle" fill="#1c2733" font-size="13">“Đề cho em biết gì?”</text>
+      <rect x="250" y="150" width="190" height="110" rx="8" fill="#fff6d6" stroke="#d9a62b"/><text x="345" y="174" text-anchor="middle" font-weight="700" fill="#8a6410">Bậc 2 · Gợi ý hướng</text><text x="345" y="196" text-anchor="middle" fill="#1c2733" font-size="13">“Em nghĩ tới hằng đẳng</text><text x="345" y="214" text-anchor="middle" fill="#1c2733" font-size="13">thức nào?”</text>
+      <rect x="460" y="100" width="190" height="160" rx="8" fill="#fdf0e1" stroke="#d9822b"/><text x="555" y="124" text-anchor="middle" font-weight="700" fill="#a85f14">Bậc 3 · Ví dụ tương tự</text><text x="555" y="146" text-anchor="middle" fill="#1c2733" font-size="13">AI giải một bài khác,</text><text x="555" y="164" text-anchor="middle" fill="#1c2733" font-size="13">em áp dụng vào bài mình</text>
+      <rect x="670" y="50" width="170" height="210" rx="8" fill="#fbe9e7" stroke="#c0392b"/><text x="755" y="74" text-anchor="middle" font-weight="700" fill="#9b2b1f">Bậc 4 · Lời giải</text><text x="755" y="98" text-anchor="middle" fill="#1c2733" font-size="13">chỉ sau khi em đã thử</text><text x="755" y="116" text-anchor="middle" fill="#1c2733" font-size="13">và em tự giải thích</text><text x="755" y="134" text-anchor="middle" fill="#1c2733" font-size="13">lại bằng lời mình</text>
+    </g>
+  </svg>
+  </figure>
+
+  <h3>3. Viết hướng dẫn hệ thống (system prompt) cho gia sư</h3>
+  <p>Hướng dẫn hệ thống là đoạn văn bản em dán một lần để AI nhớ vai và quy tắc trong cả cuộc trò chuyện. Mỗi công cụ gọi tên khác nhau (“hướng dẫn tùy chỉnh”, “dự án”, “gem”, “GPT tùy chỉnh”…). Nếu công cụ không có mục này, em dán nó vào <b>tin nhắn đầu tiên</b> của cuộc trò chuyện.</p>
+  <div class="card goal"><div class="lbl">Cấu trúc 6 phần</div><ol><li>Vai trò và đối tượng (lớp, môn).</li><li>Quy tắc chính: gợi ý trước, đáp án sau.</li><li>Cách chuyển bậc gợi ý.</li><li>Cách khen và sửa lỗi.</li><li>Quy tắc trung thực: nói rõ chỗ không chắc, không bịa nguồn.</li><li>Quy tắc an toàn: nhắc em không nhập thông tin cá nhân.</li></ol></div>
+  <pre class="prompt">VAI TRÒ
+Bạn là gia sư [môn] kiên nhẫn cho học sinh lớp [..] ở Việt Nam.
+Em học theo chương trình phổ thông Việt Nam.
+
+QUY TẮC CHÍNH: GỢI Ý TRƯỚC, ĐÁP ÁN SAU
+1. Khi em hỏi bài, trước hết hỏi lại: em đã thử gì, đang bí ở bước nào.
+2. Gợi ý theo 4 bậc: (1) câu hỏi gợi mở, (2) gợi ý hướng làm, (3) ví dụ tương tự
+   bằng bài khác, (4) lời giải đầy đủ. Chỉ sang bậc sau khi em đã thử ở bậc trước.
+3. Mỗi lần chỉ hỏi một câu và chờ em trả lời.
+4. Chỉ đưa lời giải đầy đủ khi em đã thử ít nhất 2 lần, và sau đó
+   yêu cầu em tự giải thích lại bằng lời của mình.
+5. Nếu em chỉ nói "cho đáp án đi", hãy lịch sự nhắc lại quy tắc và đưa ra gợi ý bậc 1.
+
+KHEN VÀ SỬA LỖI
+- Khen cụ thể điều em làm đúng (không khen chung chung).
+- Khi em sai, đừng nói "sai rồi"; hãy hỏi một câu để em tự thấy chỗ sai.
+
+TRUNG THỰC
+- Nếu chưa chắc, nói rõ chỗ chưa chắc. Không bịa số liệu, trích dẫn, tên nguồn.
+- Cuối mỗi giải thích, nhắc em kiểm tra lại bằng sách giáo khoa hoặc phép tính.
+
+AN TOÀN
+- Nhắc em không nhập mật khẩu, địa chỉ, số điện thoại, ảnh hay thông tin của người khác.
+- Không viết bài nộp thay em (bài văn, bài kiểm tra); chỉ góp ý bài em đã viết.</pre>
+
+  <h3>4. Thực hành từng bước</h3>
+  <ol class="steps">
+    <li><b>Chọn môn và chủ đề</b> từ bảng lỗ hổng của Buổi 5.</li>
+    <li><b>Điền khung mẫu</b> ở trên, đổi [môn], [lớp], và thêm 2–3 quy tắc riêng của em (ví dụ “hãy hỏi em bằng tiếng Anh đơn giản” hoặc “mỗi lần không quá 3 câu”).</li>
+    <li><b>Dán vào công cụ</b> (hướng dẫn tùy chỉnh hoặc tin nhắn đầu tiên).</li>
+    <li><b>Thử 5 câu</b> theo bảng thử nghiệm dưới đây.</li>
+    <li><b>Chấm từng câu</b>: gia sư có làm đúng quy tắc không?</li>
+    <li><b>Chỉnh sửa</b> hướng dẫn ở chỗ nó làm sai, rồi thử lại.</li>
+  </ol>
+  <table>
+    <tr><th>#</th><th>Em thử nói</th><th>Gia sư tốt phải làm</th></tr>
+    <tr><td>1</td><td>“Cho mình đáp án bài [..] đi.”</td><td>Từ chối nhẹ nhàng, hỏi em đã thử gì.</td></tr>
+    <tr><td>2</td><td>“Mình không biết bắt đầu từ đâu.”</td><td>Đặt một câu hỏi gợi mở bậc 1.</td></tr>
+    <tr><td>3</td><td>Em đưa lời giải sai một bước.</td><td>Không nói thẳng đáp án; hỏi để em tự thấy bước sai.</td></tr>
+    <tr><td>4</td><td>“Viết giúp mình bài văn nộp cho cô.”</td><td>Từ chối viết hộ, đề nghị góp ý bài em tự viết.</td></tr>
+    <tr><td>5</td><td>Hỏi một điều không có thật.</td><td>Nói rõ không chắc / không có, không bịa.</td></tr>
+  </table>
+  <div class="card warn"><div class="lbl">Lưu ý thật thà</div><p>Gia sư AI không phải lúc nào cũng làm đúng theo hướng dẫn. Công cụ có thể thỉnh thoảng đưa đáp án trực tiếp, nhất là khi em hỏi nhiều lần. Nếu vậy hãy nhắc lại quy tắc hoặc mở cuộc trò chuyện mới. Em là người giữ kỷ luật chính: nếu em muốn học thật sự, đừng ép AI cho đáp án.</p></div>
+  <div class="card ok"><div class="lbl">Chế độ học tập có sẵn</div><p>Một số công cụ có sẵn chế độ học theo kiểu hỏi–gợi ý (ví dụ chế độ “Study and learn” của ChatGPT, “Guided Learning” của Gemini). Em có thể dùng chúng làm điểm xuất phát, rồi thêm quy tắc riêng của mình vào. Phần giới hạn tuổi và tính năng có thể thay đổi, luôn kiểm tra trang trợ giúp của công cụ.</p></div>
+  <div class="card think"><div class="lbl">Khai mở tư duy</div><ul><li>Quy tắc nào em thấy “khó chịu” nhất khi gia sư áp dụng? Có phải chính điều đó đang giúp em học không?</li><li>Em có muốn tắt quy tắc “gợi ý trước” khi sắp thi không? Vì sao tốt hơn là giữ nó?</li></ul></div>
+
+  <h3>5. Tự kiểm tra cuối buổi</h3>
+  <details><summary>Câu 1. Nêu 4 bậc của thang gợi ý.</summary><p>Câu hỏi gợi mở, gợi ý hướng làm, ví dụ tương tự, lời giải đầy đủ.</p></details>
+  <details><summary>Câu 2. Vì sao phải kiểm thử gia sư bằng 5 câu hỏi?</summary><p>Vì AI không luôn làm đúng hướng dẫn; kiểm thử giúp phát hiện chỗ cần sửa.</p></details>
+  <details><summary>Câu 3. Khi gia sư vẫn đưa đáp án, em nên làm gì?</summary><p>Nhắc lại quy tắc, sửa hướng dẫn cho rõ hơn, hoặc mở cuộc trò chuyện mới; và tự giữ kỷ luật học.</p></details>
+
+  <div class="age"><b>Theo độ tuổi.</b> 12–15: một môn, dùng khung mẫu, thử 5 câu. 16–18: hai đến ba môn, bổ sung quy tắc về lập luận (“hỏi em vì sao ở mỗi bước”), cách chấm theo thang điểm thi, và hạn chế tuyệt đối việc dùng AI trong khi làm bài tính điểm.</div>
+</section>
+
+<!-- ===================== BUỔI 7 ===================== -->
+<section id="buoi7">
+  <h2>Buổi 7 · Lộ trình học cá nhân</h2>
+  <p class="sub">Từ bảng lỗ hổng đến kế hoạch tuần có thể làm được.</p>
+  <div class="meta">
+    <div><b>Mục tiêu</b>Lập kế hoạch tuần có mục tiêu đo được; kết hợp học tự lực, luyện bài trên phần mềm, và gia sư AI</div>
+    <div><b>Chuẩn bị</b>Bảng lỗ hổng (Buổi 5), gia sư AI (Buổi 6), lịch học và lịch thi</div>
+    <div><b>Sản phẩm</b>Kế hoạch tuần (THCS) hoặc 4 tuần (THPT)</div>
+    <div><b>Thời gian</b>20’ chu trình · 30’ lập kế hoạch · 25’ phản biện · 15’ tổng kết</div>
+  </div>
+
+  <h3>1. Chu trình học bốn bước: Học – Hỏi – Kiểm – Ghi</h3>
+  <figure>
+  <svg viewBox="0 0 860 300" role="img" aria-label="Chu trình học Học Hỏi Kiểm Ghi">
+    <rect width="860" height="300" fill="#fff"/>
+    <g font-family="sans-serif" font-size="14" text-anchor="middle">
+      <text x="430" y="26" font-size="16" font-weight="700" fill="#17406b">Mỗi buổi học 45 phút: bốn việc, theo vòng tròn</text>
+      <rect x="40" y="50" width="180" height="110" rx="12" fill="#e6f1fb" stroke="#1f6fb2"/><text x="130" y="80" font-weight="700" fill="#17406b" font-size="18">1 · HỌC</text><text x="130" y="104" fill="#1c2733">Đọc sách, xem bài</text><text x="130" y="124" fill="#1c2733">tự làm thử bài</text><text x="130" y="146" fill="#5b6773" font-size="12">~ 15 phút, chưa dùng AI</text>
+      <path d="M222 105 H258" stroke="#9db4c9" stroke-width="2" marker-end="url(#a7)"/>
+      <rect x="260" y="50" width="180" height="110" rx="12" fill="#fff6d6" stroke="#d9a62b"/><text x="350" y="80" font-weight="700" fill="#8a6410" font-size="18">2 · HỎI</text><text x="350" y="104" fill="#1c2733">Hỏi gia sư AI về</text><text x="350" y="124" fill="#1c2733">phần còn bí</text><text x="350" y="146" fill="#5b6773" font-size="12">~ 10 phút, gợi ý trước</text>
+      <path d="M442 105 H478" stroke="#9db4c9" stroke-width="2" marker-end="url(#a7)"/>
+      <rect x="480" y="50" width="180" height="110" rx="12" fill="#e5f5ea" stroke="#2a8a4a"/><text x="570" y="80" font-weight="700" fill="#1d6a37" font-size="18">3 · KIỂM</text><text x="570" y="104" fill="#1c2733">Kiểm chứng bằng sách,</text><text x="570" y="124" fill="#1c2733">tính lại; làm bài trên</text><text x="570" y="144" fill="#1c2733">phần mềm Nam Linh</text><text x="570" y="162" fill="#5b6773" font-size="12">~ 15 phút</text>
+      <path d="M662 105 H698" stroke="#9db4c9" stroke-width="2" marker-end="url(#a7)"/>
+      <rect x="700" y="50" width="140" height="110" rx="12" fill="#fdf0e1" stroke="#d9822b"/><text x="770" y="80" font-weight="700" fill="#a85f14" font-size="18">4 · GHI</text><text x="770" y="104" fill="#1c2733">Ghi nhật ký lỗi,</text><text x="770" y="124" fill="#1c2733">tự tóm tắt bằng lời</text><text x="770" y="146" fill="#5b6773" font-size="12">~ 5 phút</text>
+      <path d="M770 162 V210 H130 V164" fill="none" stroke="#9db4c9" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#a7)"/>
+      <text x="430" y="236" fill="#5b6773">Nhật ký lỗi ghi hôm nay là đầu vào của buổi học ngày mai</text>
+      <rect x="150" y="252" width="560" height="34" rx="8" fill="#fbe9e7" stroke="#c0392b"/><text x="430" y="274" fill="#9b2b1f" font-weight="700">AI chỉ xuất hiện ở bước 2. Bước 1 và bước 3 em làm bằng sức mình.</text>
+    </g>
+    <defs><marker id="a7" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#9db4c9"/></marker></defs>
+  </svg>
+  </figure>
+
+  <h3>2. Mục tiêu đo được (viết thế nào?)</h3>
+  <table>
+    <tr><th>Mục tiêu mơ hồ</th><th>Mục tiêu đo được</th></tr>
+    <tr><td>“Học Toán chăm hơn.”</td><td>“Mỗi ngày làm 5 câu Phương trình bậc hai trên phần mềm, trong tuần này đạt từ 4/5 đúng ở ít nhất 4 ngày.”</td></tr>
+    <tr><td>“Cải thiện Tiếng Anh.”</td><td>“Viết 1 đoạn 80 từ mỗi 2 ngày, nhờ AI chỉ lỗi (không viết lại hộ), và giảm lỗi chia thì từ 6 xuống 3.”</td></tr>
+    <tr><td>“Ôn tập Hóa.”</td><td>“Làm 20 câu về chuyên đề Este, sai không quá 4 câu; mỗi câu sai ghi vào nhật ký lỗi.”</td></tr>
+  </table>
+  <p>Mục tiêu tốt có <b>con số</b>, <b>thời hạn</b> và <b>cách em biết mình đã đạt</b> (ví dụ điểm trên phần mềm, số lỗi trong nhật ký).</p>
+
+  <h3>3. Lập kế hoạch tuần: từng bước</h3>
+  <ol class="steps">
+    <li><b>Mở bảng lỗ hổng.</b> Chọn tối đa 3 lỗ hổng ưu tiên cho tuần này.</li>
+    <li><b>Đếm thời gian rảnh thật.</b> Ghi ra giờ học, việc nhà, nghỉ ngơi. Đừng xếp kín; để trống ít nhất một buổi.</li>
+    <li><b>Xếp mỗi lỗ hổng vào 2–3 buổi ngắn</b> (25–45 phút) theo chu trình Học – Hỏi – Kiểm – Ghi.</li>
+    <li><b>Viết mục tiêu đo được</b> cho từng lỗ hổng.</li>
+    <li><b>Chọn bài luyện trên phần mềm Nam Linh</b> (Vững bài THCS hoặc phần mềm THPT) đúng chủ đề, làm trước khi hỏi AI và làm lại sau khi học.</li>
+    <li><b>Đặt “ngày kiểm tra”</b> cuối tuần: làm một đề nhỏ không có AI, so sánh kết quả với đầu tuần.</li>
+    <li><b>Chọn ngày “không AI”</b> ít nhất một ngày mỗi tuần để rèn khả năng tự lực.</li>
+  </ol>
+  <table>
+    <tr><th>Thứ</th><th>Thời gian</th><th>Lỗ hổng / chủ đề</th><th>Việc làm (Học–Hỏi–Kiểm–Ghi)</th><th>Mục tiêu đo được</th><th>Đạt? ✓/✗</th></tr>
+    <tr><td>2</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>3</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>4</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>5</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>6</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>7</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td>CN</td><td colspan="5">Ngày kiểm tra, không dùng AI. Ghi kết quả và điều chỉnh tuần sau.</td></tr>
+  </table>
+
+  <h3>4. Nhờ AI góp ý kế hoạch (nhưng em quyết định)</h3>
+  <pre class="prompt">Mình là học sinh lớp [..]. Đây là kế hoạch tuần của mình: [dán kế hoạch].
+Hãy hỏi mình 3 câu để kiểm tra xem kế hoạch có thực tế không
+(thời gian, mục tiêu, nghỉ ngơi). Chưa viết lại kế hoạch hộ mình.
+Sau khi mình trả lời, hãy chỉ ra tối đa 2 điểm nên điều chỉnh.</pre>
+  <div class="card think"><div class="lbl">Khai mở tư duy</div><ul><li>Nếu tuần này em không đạt mục tiêu, nguyên nhân là mục tiêu quá cao, thời gian không đủ hay em chưa tập trung? Làm sao biết?</li><li>Lịch học nào khiến em muốn bỏ cuộc nhất? Sửa thế nào?</li></ul></div>
+
+  <h3>5. Tự kiểm tra cuối buổi</h3>
+  <details><summary>Câu 1. Vì sao “học chăm hơn” chưa phải mục tiêu tốt?</summary><p>Vì không đo được; không biết khi nào đạt.</p></details>
+  <details><summary>Câu 2. Trong chu trình bốn bước, bước nào dùng AI?</summary><p>Chủ yếu bước 2 (Hỏi). Các bước còn lại em tự làm.</p></details>
+  <details><summary>Câu 3. Vì sao cần “ngày kiểm tra” không có AI?</summary><p>Để biết em đã học được gì thật sự khi không có hỗ trợ.</p></details>
+
+  <div class="age"><b>Theo độ tuổi.</b> 12–15: kế hoạch 1 tuần, 2 lỗ hổng, buổi học 25–30 phút, có người lớn xem lại. 16–18: kế hoạch 4 tuần, đặt mốc thi thử, chia theo cấu trúc đề thi tốt nghiệp THPT, dành tuần cuối cho tổng ôn không AI.</div>
+</section>
+
+<!-- ===================== BUỔI 8 ===================== -->
+<section id="buoi8">
+  <h2>Buổi 8 · Tổng kết và đánh giá</h2>
+  <p class="sub">Trình bày, đối chiếu, và cam kết tiếp tục.</p>
+  <div class="meta">
+    <div><b>Mục tiêu</b>Trình bày gia sư AI của em; kể một trường hợp AI sai; làm bài kiểm tra ngắn; so sánh trước và sau</div>
+    <div><b>Chuẩn bị</b>Gia sư AI, bảng lỗ hổng Buổi 5, kế hoạch tuần, bảng kiểm chứng Buổi 4</div>
+    <div><b>Sản phẩm</b>Bài trình bày 3 phút và bài kiểm tra</div>
+    <div><b>Thời gian</b>45’ trình bày · 20’ kiểm tra · 15’ đối chiếu · 10’ cam kết</div>
+  </div>
+
+  <h3>1. Bài trình bày 3 phút của mỗi học sinh</h3>
+  <ol class="steps">
+    <li><b>Giới thiệu gia sư AI</b> của mình: dạy môn nào, quy tắc chính, một điểm em tự hào.</li>
+    <li><b>Trình diễn nhanh</b> một cuộc trò chuyện ngắn: em hỏi, gia sư gợi ý, em trả lời.</li>
+    <li><b>Kể một trường hợp AI đã sai</b> hoặc bịa: em phát hiện thế nào, kiểm chứng bằng nguồn nào.</li>
+    <li><b>Nêu một quy tắc an toàn</b> từ Bộ quy tắc 5 điều mà em thấy quan trọng nhất.</li>
+    <li><b>Nêu mục tiêu tuần tới</b> và cách em đo kết quả.</li>
+  </ol>
+  <table>
+    <tr><th>Tiêu chí</th><th>Cần cải thiện (1)</th><th>Đạt (2)</th><th>Tốt (3)</th></tr>
+    <tr><td><b>Gia sư tuân theo “gợi ý trước, đáp án sau”</b></td><td>Thường đưa đáp án</td><td>Gợi ý trong phần lớn trường hợp</td><td>Gợi ý ổn định, qua đủ 5 câu thử</td></tr>
+    <tr><td><b>Kiểm chứng</b></td><td>Chưa nêu nguồn kiểm tra</td><td>Có 1 nguồn độc lập</td><td>≥ 2 nguồn, ghi rõ ngày xem</td></tr>
+    <tr><td><b>An toàn &amp; đạo đức</b></td><td>Chưa nêu được lý do</td><td>Nêu được 3 quy tắc</td><td>Nêu cả quy tắc lẫn lý do và tình huống</td></tr>
+    <tr><td><b>Tự chủ</b></td><td>Chủ yếu nhờ AI làm</td><td>Tự làm trước vài lần</td><td>Có quy trình rõ và ngày không AI</td></tr>
+    <tr><td><b>Kế hoạch</b></td><td>Mục tiêu mơ hồ</td><td>Có mục tiêu đo được</td><td>Có đo được và điều chỉnh theo kết quả</td></tr>
+  </table>
+
+  <h3>2. Bài kiểm tra ngắn (15 phút, không dùng AI)</h3>
+  <details><summary>Câu 1. Kể 3 loại thông tin tuyệt đối không đưa cho AI.</summary><p>Mật khẩu / OTP, số tài khoản / thẻ, địa chỉ nhà / số điện thoại / CCCD, ảnh và giọng nói của em và người khác, thông tin của người khác khi chưa được phép.</p></details>
+  <details><summary>Câu 2. Hiện tượng “ảo giác” của AI là gì? Hậu quả khi chép nguyên?</summary><p>Thông tin sai nhưng nghe thuyết phục. Chép nguyên sẽ làm bài sai, mất uy tín, và em không hiểu bài.</p></details>
+  <details><summary>Câu 3. Viết lại câu “Giải bài này đi” thành một câu lệnh tốt (có vai trò, bối cảnh, giới hạn).</summary><p>Ví dụ: “Mình học lớp 9, đây là bài và cách làm đến bước 3 [..]. Hãy đóng vai gia sư, hỏi mình 1 câu để gợi ý bước tiếp theo, chưa đưa đáp án.”</p></details>
+  <details><summary>Câu 4. Em có thể dùng AI làm bài kiểm tra ở lớp khi thầy cô cấm không? Vì sao?</summary><p>Không. Vi phạm quy chế và trung thực học tập; em không biết mình thật sự biết gì.</p></details>
+  <details><summary>Câu 5. Nêu 4 bước SIFT.</summary><p>Dừng, Tìm nguồn, Tìm thêm nguồn khác, Truy nguồn gốc.</p></details>
+  <details><summary>Câu 6. Em nhận video call “mẹ nhờ chuyển tiền gấp”. Em làm gì?</summary><p>Dừng, gác máy, gọi lại số đã lưu hoặc hỏi người nhà, hỏi câu riêng tư, không chuyển tiền / đưa OTP, báo người lớn.</p></details>
+  <details><summary>Câu 7. Phân biệt ba loại lỗi: chưa hiểu khái niệm, sai tính toán, đọc sai đề.</summary><p>A: không hiểu bản chất; B: hiểu nhưng sai ở bước tính; C: trả lời không đúng điều đề hỏi.</p></details>
+  <details><summary>Câu 8. Nêu 4 bậc của thang gợi ý.</summary><p>Câu hỏi gợi mở, gợi ý hướng, ví dụ tương tự, lời giải đầy đủ.</p></details>
+  <details><summary>Câu 9. Viết một mục tiêu đo được cho tuần sau.</summary><p>Phải có con số, thời hạn và cách đo. Ví dụ: “Làm 5 câu mỗi ngày trong 5 ngày, đạt từ 4/5 đúng.”</p></details>
+  <details><summary>Câu 10. Trong chu trình Học–Hỏi–Kiểm–Ghi, vì sao em phải tự làm trước khi hỏi AI?</summary><p>Vì tự suy nghĩ mới tạo ra hiểu và nhớ; AI chỉ nên giúp ở chỗ em thật sự bí.</p></details>
+
+  <h3>3. Đối chiếu: em đã thay đổi thế nào?</h3>
+  <p>Mở bảng lỗ hổng ở Buổi 5 và so với tình hình hôm nay. Dùng bảng này để thấy sự tiến bộ:</p>
+  <table>
+    <tr><th>Lỗ hổng ở Buổi 5</th><th>Tình trạng ở Buổi 8 (đã chữa / đang chữa / còn)</th><th>Bằng chứng (kết quả bài, số lỗi)</th><th>Điều đã giúp em</th></tr>
+    <tr><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td></tr>
+  </table>
+  <div class="card think"><div class="lbl">Khai mở tư duy · Câu hỏi để mang về</div><ul><li>Sau khóa này, thói quen nào của em thay đổi nhiều nhất?</li><li>Một năm nữa, em muốn tự mình làm được điều gì mà bây giờ vẫn cần AI?</li></ul></div>
+
+  <h3>4. Cam kết và bước tiếp theo</h3>
+  <div class="card ok"><div class="lbl">Cam kết của em (viết tay)</div><p>Em cam kết: (1) tự làm trước khi hỏi AI; (2) kiểm chứng điều AI nói; (3) không đưa dữ liệu cá nhân cho AI; (4) tôn trọng quy định lớp, trường và kỳ thi; (5) tiếp tục dùng phần mềm Nam Linh để luyện tập và đo tiến bộ.</p><p>Họ tên: ____________________ Ngày: ____________</p></div>
+  <p>Điều kiện hoàn thành khóa gợi ý: tham dự ít nhất 7/8 buổi, nộp đủ sản phẩm 8 buổi, bài trình bày đạt từ “Đạt” trở lên ở mọi tiêu chí, và bài kiểm tra đúng từ 7/10 câu.</p>
+
+  <div class="age"><b>Theo độ tuổi.</b> 12–15: trình bày bằng bảng đã điền, có phụ huynh xem. 16–18: thêm phản tư 1 trang về liêm chính học thuật và kế hoạch ôn thi 4 tuần.</div>
+</section>
+
+<!-- ===================== PHỤ LỤC ===================== -->
+<section id="phu-luc">
+  <h2>Phụ lục</h2>
+
+  <h3>A. Bảng “Được / Cân nhắc / Không được” tóm tắt</h3>
+  <div class="cols">
+    <div class="card ok"><div class="lbl">Được, vì em vẫn là người suy nghĩ</div><ul><li>Nhờ giải thích khái niệm bằng nhiều cách</li><li>Nhờ gợi ý khi đã tự thử</li><li>Nhờ ra câu hỏi tự kiểm tra</li><li>Nhờ chỉ lỗi trong bài em đã làm</li><li>Nhờ góp ý cách diễn đạt (em tự sửa)</li></ul></div>
+    <div class="card no"><div class="lbl">Không được, vì mất mục đích học hoặc vi phạm quy định</div><ul><li>Nhờ AI làm bài nộp thay em</li><li>Dùng AI khi quy chế cấm (kiểm tra, thi)</li><li>Đưa dữ liệu cá nhân của em hoặc người khác</li><li>Tạo nội dung giả mạo người thật</li><li>Tin vô điều kiện mà không kiểm chứng</li></ul></div>
+  </div>
+
+  <h3>B. Mẫu câu lệnh tổng hợp</h3>
+  <pre class="prompt">1. Hỏi gợi mở: "Hãy hỏi mình từng câu một để mình tự tìm ra cách làm, không đưa đáp án."
+2. Chỉ lỗi: "Chỉ ra bước sai (nếu có), gợi ý bằng một câu hỏi, chưa sửa hộ."
+3. Tự kiểm tra: "Ra 5 câu từ dễ đến khó về [..], chưa đưa đáp án."
+4. Kiểm soát: "Nếu chưa chắc, hãy nói rõ. Đừng bịa số liệu, trích dẫn, nguồn."
+5. Phản biện: "Nêu 3 điểm lập luận trên có thể sai và ví dụ ngược lại."
+6. Tóm tắt: "Mình đã đọc [..]. Hãy tóm tắt 5 ý chính để mình đối chiếu."</pre>
+
+  <h3>C. Gợi ý dành cho giáo viên / trung tâm</h3>
+  <ul>
+    <li><b>Mở đầu mỗi buổi 5 phút</b> bằng một câu hỏi tư duy, kết thúc bằng một việc em sẽ làm trong tuần.</li>
+    <li><b>Ưu tiên thực hành</b>: giảng không quá 1/3 thời lượng; các em làm ít nhất một sản phẩm mỗi buổi.</li>
+    <li><b>Tránh bài tập chấm điểm bằng AI</b>; dùng bảng tiêu chí ở Buổi 8 để đánh giá.</li>
+    <li><b>Không thu thập thông tin cá nhân</b> của học sinh qua công cụ AI; sản phẩm lưu trên giấy hoặc hệ thống của trung tâm.</li>
+    <li><b>Phối hợp phụ huynh</b>: gửi tóm tắt Bộ quy tắc 5 điều; với học sinh dưới 18 tuổi, cần sự đồng ý của phụ huynh khi tạo tài khoản công cụ AI.</li>
+    <li><b>Kết nối phần mềm Nam Linh</b>: dùng kết quả bài làm trên Vững bài và phần mềm THPT làm dữ liệu cho bảng lỗ hổng (Buổi 5) và kế hoạch (Buổi 7).</li>
+    <li><b>Xử lý khi không có mạng:</b> giáo viên trình chiếu, các em làm phiếu giấy; các câu lệnh mẫu in sẵn.</li>
+  </ul>
+
+  <h3>D. Nguồn tham khảo (đọc lại, kiểm tra ngày cập nhật)</h3>
+  <ul>
+    <li>OpenAI Help Center: “Age requirements for ChatGPT” và giới thiệu chế độ “Study and learn” (độ tuổi tối thiểu, đồng ý của phụ huynh, tính năng học tập).</li>
+    <li>Google / Gemini Help: “Guided Learning” và quy định độ tuổi tối thiểu theo quốc gia.</li>
+    <li>Mike Caulfield, “SIFT (The Four Moves)”, giấy phép CC BY 4.0; Stanford History Education Group, “Civic Online Reasoning” (đọc ngang).</li>
+    <li>Bộ Giáo dục và Đào tạo: Quyết định 2422/QĐ-BGDĐT (Khung nội dung giáo dục trí tuệ nhân tạo) và Công văn 5588/BGDĐT-GDPT, năm 2026.</li>
+    <li>Luật Trí tuệ nhân tạo số 134/2025/QH15 (hiệu lực 01/03/2026) và Nghị định 142/2026/NĐ-CP về dán nhãn nội dung do AI tạo.</li>
+    <li>Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15 (hiệu lực 01/01/2026).</li>
+    <li>Quy chế thi tốt nghiệp THPT 2026 và Chỉ thị 20/CT-TTg (18/5/2026) về phòng chống gian lận thi cử có sử dụng công nghệ cao.</li>
+    <li>Cục An toàn thông tin (Bộ Khoa học và Công nghệ): cảnh báo các hình thức lừa đảo trực tuyến, trong đó có giả mạo video call bằng deepfake.</li>
+    <li>Các nghiên cứu về “ảo giác” của mô hình ngôn ngữ và hành vi kiểm chứng của người học (ví dụ arXiv 2602.17671).</li>
+  </ul>
+  <div class="card warn"><div class="lbl">Cần xác minh trước khi dạy</div><p>Các quy định pháp luật, độ tuổi và tính năng công cụ trong tài liệu này được tổng hợp tại thời điểm biên soạn (tháng 11/2026) và có thể đã thay đổi. Trung tâm nên đối chiếu văn bản gốc, nhất là các điều khoản về trẻ em và dữ liệu cá nhân, trước khi đưa vào giảng dạy chính thức.</p></div>
+</section>
+
+<footer>
+  Nam Linh Educenter · Khóa “Gia sư AI” cho học sinh 12–18 tuổi · Bản biên soạn đầu tiên, cần giáo viên rà soát và chạy thử trước khi triển khai.
+</footer>
+</main>
+</body>
+</html>
