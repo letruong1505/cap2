@@ -10,5 +10,7 @@ contextBridge.exposeInMainWorld('vungBai', {
   productInfo: () => ipcRenderer.invoke('product:info'),
   loadLicense: () => ipcRenderer.invoke('license:load'),
   activateLicense: (key) => ipcRenderer.invoke('license:activate', key),
+  createOrder: (order) => ipcRenderer.invoke('order:create', order),
+  orderStatus: (code) => ipcRenderer.invoke('order:status', code),
   removeLicense: () => ipcRenderer.invoke('license:remove'),
 });

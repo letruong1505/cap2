@@ -45,7 +45,7 @@ function evaluateKey(key, machineId, now = new Date(), pubKey) {
   const r = parseKey(key, pubKey);
   if (!r.ok) return { status: 'invalid', reason: r.reason };
   const p = r.payload;
-  const info = { owner: p.owner || '', id: p.id || '', grades: p.grades, expiresOn: p.expires };
+  const info = { owner: p.owner || '', id: p.id || '', grades: p.grades, courses: Array.isArray(p.courses) ? p.courses.filter((c) => typeof c === 'string') : [], expiresOn: p.expires };
   if (p.machine !== '*' && p.machine !== machineId) return { status: 'wrong-machine', ...info };
   if (p.expires !== NEVER && today(now) > p.expires) return { status: 'expired', ...info };
   return { status: 'ok', ...info };

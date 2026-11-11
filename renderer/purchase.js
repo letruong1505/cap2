@@ -1,17 +1,7 @@
 // Màn hình "Mua khóa học": phụ huynh nhập thông tin, chọn khóa, đồng ý điều khoản, nhận mã QR chuyển khoản.
 (function () {
   'use strict';
-  const CATALOG = [
-    { group: 'Khóa Kỹ năng', items: [
-      { id: 'gia-su-ai', name: 'Gia sư AI', note: 'Học sinh từ 12 tuổi trở lên', price: 999000, was: 1600000 },
-      { id: 'he-mien-dich-so', name: 'Hệ miễn dịch số', note: 'Học sinh 8 - 11 tuổi', price: 2090000 },
-      { id: 'lam-chu-the-gioi-so', name: 'Làm chủ thế giới số', note: 'Học sinh 12 - 15 tuổi', price: 2590000 },
-      { id: 'cong-dan-so', name: 'Công dân số', note: 'Học sinh 16 - 18 tuổi', price: 2990000 },
-      { id: 'ranh-gioi-so', name: 'Ranh giới số', note: 'Học sinh THPT & tân sinh viên', price: 1590000 },
-    ] },
-    { group: 'Giáo trình Văn hóa', items: [6, 7, 8, 9, 12].map((g) => ({
-      id: 'van-hoa-' + g, name: 'Giáo trình Văn hóa lớp ' + g, note: g === 12 ? '2 môn học' : '6 môn học', price: g === 12 ? 499000 : 399000 })) },
-  ];
+  const CATALOG = window.NL_CATALOG.GROUPS;
   const ALL = CATALOG.flatMap((c) => c.items);
   const money = (n) => n.toLocaleString('vi-VN') + ' đ';
 
@@ -101,6 +91,44 @@
     hint.textContent = miss.length ? 'Còn thiếu: ' + miss.join(', ') + '.' : '';
   }
 
+  let timer = null;
+  let polling = 0;
+  const PENDING_KEY = 'nl-pending-order';
+  const savePending = (o) => { try { o ? localStorage.setItem(PENDING_KEY, JSON.stringify({ code: o.code })) : localStorage.removeItem(PENDING_KEY); } catch { /* bỏ qua */ } };
+  const loadPending = () => { try { return JSON.parse(localStorage.getItem(PENDING_KEY) || 'null'); } catch { return null; } };
+  function stopPoll() { if (timer) clearInterval(timer); timer = null; }
+
+  function showDone(o) {
+    const P = window.NL_PAYMENT;
+    const names = ALL.filter((x) => o.ids.includes(x.id)).map((x) => x.name);
+    payEl.replaceChildren(
+      h('h2', {}, 'Thanh toán thành công'),
+      h('p', { class: 'buy-ok' }, 'Khóa học đã được kích hoạt trên máy này.'),
+      h('ul', { class: 'buy-lines' }, names.map((n) => h('li', {}, h('span', {}, n)))),
+      h('p', { class: 'muted' }, 'Cần hỗ trợ: Zalo ' + P.zalo + '.'),
+      h('div', { class: 'buy-actions' }, h('button', { type: 'button', class: 'primary', onclick: () => document.getElementById('btn-purchase-back').click() }, 'Về màn hình chính')));
+    payEl.hidden = false; summaryEl.hidden = true; createBtn.hidden = true; hint.hidden = true;
+  }
+
+  // Hỏi máy chủ xem đơn đã được thanh toán chưa; có tiền thì nhận key và tự kích hoạt.
+  async function check(o, statusEl) {
+    const r = await window.vungBai.orderStatus(o.code);
+    if (!r.ok) { statusEl.textContent = r.offline ? 'Chưa kết nối được máy chủ. Em kiểm tra mạng rồi bấm "Kiểm tra thanh toán".' : (r.error || 'Không kiểm tra được đơn.'); return; }
+    const d = r.data;
+    if (d.status === 'paid' && d.key) {
+      stopPoll();
+      const a = await window.vungBai.activateLicense(d.key);
+      if (a.status === 'ok') {
+        savePending(null);
+        if (ctx.onActivated) ctx.onActivated();
+        showDone(o);
+      } else statusEl.textContent = 'Đã nhận tiền nhưng chưa kích hoạt được khóa. Em liên hệ Zalo ' + window.NL_PAYMENT.zalo + ' kèm mã đơn NL-' + o.code + '.';
+    } else if (d.status === 'paid') statusEl.textContent = 'Đã nhận tiền, đang cấp khóa...';
+    else if (d.status === 'underpaid') statusEl.textContent = 'Đã nhận ' + money(d.paidAmount) + ', còn thiếu ' + money(d.amount - d.paidAmount) + '. Em chuyển thêm đúng nội dung NL ' + o.code + '.';
+    else if (d.status === 'cancelled') { stopPoll(); savePending(null); statusEl.textContent = 'Đơn này đã được hủy. Em tạo đơn mới.'; }
+    else statusEl.textContent = 'Đang chờ thanh toán. Phần mềm sẽ tự kích hoạt khi nhận được tiền.';
+  }
+
   function showPay(o) {
     const P = window.NL_PAYMENT;
     let qr;
@@ -110,6 +138,13 @@
     } else qr = h('p', { class: 'buy-warn' }, 'Chưa cài đặt tài khoản nhận tiền. Em liên hệ Zalo ' + P.zalo + ' để được hướng dẫn chuyển khoản.');
     const row = (k, v, strong) => h('div', { class: 'buy-row' }, h('span', {}, k), strong ? h('b', {}, v) : h('span', {}, v));
     const copyMsg = h('span', { class: 'muted', 'aria-live': 'polite' }, '');
+    const statusEl = h('p', { class: 'buy-status', 'aria-live': 'polite' }, o.online ? 'Đang chờ thanh toán. Phần mềm sẽ tự kích hoạt khi nhận được tiền.' : '');
+    const actions = o.online
+      ? [h('button', { type: 'button', class: 'primary', onclick: () => { statusEl.textContent = 'Đang kiểm tra...'; check(o, statusEl); } }, 'Kiểm tra thanh toán')]
+      : [h('button', { type: 'button', class: 'primary', onclick: async () => {
+          try { await navigator.clipboard.writeText(orderText(o)); copyMsg.textContent = 'Đã sao chép thông tin đơn.'; }
+          catch { copyMsg.textContent = 'Không sao chép được. Em chụp màn hình để gửi.'; }
+        } }, 'Sao chép thông tin đơn')];
     payEl.replaceChildren(
       h('h2', {}, 'Quét mã để thanh toán'),
       qr,
@@ -120,15 +155,23 @@
         row('Số tiền', money(o.amount), true),
         row('Nội dung', 'NL ' + o.code, true),
         row('Mã đơn', 'NL-' + o.code)),
-      h('p', { class: 'buy-after' }, 'Sau khi chuyển khoản, em gửi ảnh biên lai kèm mã đơn NL-' + o.code + ' qua Zalo ' + P.zalo + '. Nam Linh sẽ gửi khóa kích hoạt sau khi xác nhận thanh toán.'),
-      h('div', { class: 'buy-actions' },
-        h('button', { type: 'button', class: 'primary', onclick: async () => {
-          try { await navigator.clipboard.writeText(orderText(o)); copyMsg.textContent = 'Đã sao chép thông tin đơn.'; }
-          catch { copyMsg.textContent = 'Không sao chép được. Em chụp màn hình để gửi.'; }
-        } }, 'Sao chép thông tin đơn'),
-        h('button', { type: 'button', class: 'ghost', onclick: () => { st.order = null; payEl.hidden = true; summaryEl.hidden = false; createBtn.hidden = false; hint.hidden = false; } }, 'Sửa đơn'),
+      o.online ? statusEl
+        : h('p', { class: 'buy-after' }, 'Chưa kết nối được máy chủ nên chưa tự kích hoạt được. Sau khi chuyển khoản, em gửi ảnh biên lai kèm mã đơn NL-' + o.code + ' qua Zalo ' + P.zalo + '. Nam Linh sẽ gửi khóa kích hoạt sau khi xác nhận thanh toán.'),
+      h('div', { class: 'buy-actions' }, actions,
+        h('button', { type: 'button', class: 'ghost', onclick: () => { stopPoll(); savePending(null); st.order = null; payEl.hidden = true; summaryEl.hidden = false; createBtn.hidden = false; hint.hidden = false; renderSummary(); } }, o.online ? 'Tạo đơn khác' : 'Sửa đơn'),
         copyMsg));
     payEl.hidden = false; summaryEl.hidden = true; createBtn.hidden = true; hint.hidden = true;
+    stopPoll();
+    if (o.online) {
+      polling = Date.now();
+      check(o, statusEl);
+      timer = setInterval(() => {
+        const panel = document.getElementById('purchase');
+        if (!panel || panel.hidden) { stopPoll(); return; }
+        if (Date.now() - polling > 30 * 60 * 1000) { stopPoll(); statusEl.textContent = 'Đã dừng tự kiểm tra. Em bấm "Kiểm tra thanh toán" sau khi chuyển khoản.'; return; }
+        check(o, statusEl);
+      }, 5000);
+    }
   }
 
   function build() {
@@ -157,12 +200,19 @@
     summaryEl = h('section', { class: 'buy-card buy-summary' });
     payEl = h('section', { class: 'buy-card buy-pay', hidden: true });
     hint = h('p', { class: 'muted buy-hint', 'aria-live': 'polite' });
-    createBtn = h('button', { type: 'button', class: 'primary buy-create', onclick: () => {
+    createBtn = h('button', { type: 'button', class: 'primary buy-create', onclick: async () => {
       if (!formOk()) return;
-      const now = new Date();
-      const o = { code: newCode(), name: st.name.trim(), phone: normPhone(st.phone), ids: ALL.filter((x) => st.picks.has(x.id)).map((x) => x.id), amount: total(),
-        at: now.toLocaleString('vi-VN') };
-      st.order = o; showPay(o);
+      createBtn.disabled = true; hint.textContent = 'Đang tạo đơn...';
+      const at = new Date().toLocaleString('vi-VN');
+      const base = { name: st.name.trim(), phone: normPhone(st.phone), ids: ALL.filter((x) => st.picks.has(x.id)).map((x) => x.id), at };
+      const r = await window.vungBai.createOrder({ name: base.name, phone: base.phone, ids: base.ids, terms: { version: window.NL_TERMS.version, at } });
+      let o;
+      if (r.ok) o = { ...base, code: r.data.code, amount: r.data.amount, online: true };
+      else if (r.offline) o = { ...base, code: newCode(), amount: total(), online: false };
+      else { hint.textContent = r.error; createBtn.disabled = false; return; }
+      st.order = o;
+      if (o.online) savePending(o);
+      showPay(o);
     } }, 'Tạo mã QR thanh toán');
 
     root.replaceChildren(
@@ -184,13 +234,27 @@
     if (st.order) showPay(st.order);
   }
 
+  // Mở lại phần mềm khi còn đơn đang chờ: hỏi máy chủ rồi hiện lại mã QR hoặc tự kích hoạt nếu đã trả tiền.
+  async function resume(code) {
+    const r = await window.vungBai.orderStatus(code);
+    if (!r.ok || !r.data) return;
+    const d = r.data;
+    if (d.status === 'pending' || d.status === 'underpaid' || (d.status === 'paid' && d.key)) {
+      const o = { code, amount: d.amount, ids: d.items || [], name: '', phone: '', online: true };
+      st.order = o; showPay(o);
+    } else savePending(null);
+  }
+
   window.Purchase = {
     open(c) {
       ctx = c || ctx;
       root = document.getElementById('purchase-body');
+      stopPoll();
       build();
+      const pending = !st.order && loadPending();
+      if (pending && pending.code) resume(pending.code);
       const first = document.getElementById('buy-name');
-      if (first) first.focus();
+      if (first && !st.order) first.focus();
     },
   };
 })();

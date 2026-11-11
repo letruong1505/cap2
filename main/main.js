@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const { loadManifest, loadLesson, productInfo } = require('./content-loader');
 const lic = require('./license');
+const orders = require('./orders');
 
 const APP_TITLE = productInfo().title;
 
@@ -34,6 +35,8 @@ ipcMain.handle('product:info', () => productInfo());
 
 ipcMain.handle('license:load', () => licenseNow());
 ipcMain.handle('license:activate', (_event, key) => lic.activate(licenseStoreDir(), key));
+ipcMain.handle('order:create', (_event, order) => orders.createOrder(order));
+ipcMain.handle('order:status', (_event, code) => orders.orderStatus(code));
 ipcMain.handle('license:remove', () => { lic.deactivate(licenseStoreDir()); return licenseNow(); });
 
 function createWindow() {

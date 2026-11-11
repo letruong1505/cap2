@@ -14,7 +14,7 @@ window.NL_TERMS = {
       'Giá trong phần mềm tính bằng đồng Việt Nam. Người mua chuyển khoản theo mã QR, đúng số tiền và đúng nội dung chuyển khoản trên đơn hàng.',
       'Đơn hàng chỉ được xử lý khi Nam Linh Technology nhận đủ số tiền. Nếu chuyển thiếu, thừa hoặc sai nội dung, người mua liên hệ Nam Linh Technology để được xử lý.']],
     ['5. Kích hoạt khóa học', [
-      'Sau khi xác nhận thanh toán, Nam Linh Technology gửi khóa kích hoạt qua số điện thoại hoặc Zalo người mua đã cung cấp. Người mua dán khóa vào ô "Đổi khóa" trong phần mềm để kích hoạt.',
+      'Sau khi xác nhận thanh toán, Nam Linh Technology gửi khóa kích hoạt qua số điện thoại hoặc Zalo người mua đã cung cấp. Phần mềm tự kích hoạt khi có kết nối mạng; nếu không, người mua dán khóa vào ô "Đổi khóa" trong phần mềm để kích hoạt.',
       'Khóa kích hoạt gắn với mã máy. Khi cần chuyển sang máy khác, người mua liên hệ Nam Linh Technology để được hỗ trợ.']],
     ['6. Hủy đơn và hoàn tiền', [
       'Trước khi Nam Linh Technology gửi khóa kích hoạt, người mua có thể hủy đơn và được hoàn lại toàn bộ số tiền đã chuyển.',
@@ -23,7 +23,7 @@ window.NL_TERMS = {
       'Không sao chép, chia sẻ khóa kích hoạt, bán lại, cho thuê, dịch ngược hoặc chỉnh sửa phần mềm và nội dung khóa học.',
       'Trường hợp vi phạm, Nam Linh Technology có quyền thu hồi khóa kích hoạt mà không hoàn tiền.']],
     ['8. Dữ liệu cá nhân', [
-      'Nam Linh Technology thu thập họ tên và số điện thoại của người mua để xử lý đơn hàng, gửi khóa kích hoạt và hỗ trợ sau bán hàng. Thông tin được tạo ngay trên máy của người mua và chỉ được gửi đến Nam Linh Technology khi người mua chủ động gửi qua Zalo hoặc email.',
+      'Nam Linh Technology thu thập họ tên, số điện thoại và mã máy của người mua để xử lý đơn hàng, cấp khóa kích hoạt và hỗ trợ sau bán hàng. Khi người mua bấm tạo mã thanh toán, các thông tin này được gửi đến máy chủ của Nam Linh Technology cùng thông tin các khóa học đã chọn và thời điểm đồng ý điều khoản. Nếu không có kết nối mạng, người mua có thể gửi thông tin đơn hàng qua Zalo.',
       'Nam Linh Technology không bán hoặc chia sẻ thông tin này cho bên thứ ba, trừ khi pháp luật yêu cầu. Người mua có quyền yêu cầu xem, sửa hoặc xóa thông tin của mình bằng cách liên hệ Nam Linh Technology.',
       'Việc xử lý dữ liệu cá nhân tuân thủ quy định pháp luật Việt Nam về bảo vệ dữ liệu cá nhân.']],
     ['9. Về nội dung khóa học', [

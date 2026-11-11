@@ -550,7 +550,8 @@ function renderLicense(license) {
       el('div', {}, `Cấp cho: ${license.owner || '—'}`),
       el('div', { class: 'muted' }, `Mã khoá: ${license.id || '—'}`),
     );
-    courses.push(`Giáo trình Văn hóa · ${gradesText(license.grades)}`);
+    if (license.grades === 'all' || (license.grades || []).length) courses.push(`Giáo trình Văn hóa · ${gradesText(license.grades)}`);
+    for (const id of license.courses || []) courses.push(window.NL_CATALOG.byId[id]?.name || id);
     if (license.expiresOn === 'never') {
       termBig = 'Vĩnh viễn';
       termSmall = 'Không giới hạn thời gian trên máy này';
@@ -616,7 +617,7 @@ function renderGrades() {
 
 function showPurchase() {
   document.getElementById('breadcrumb').textContent = '';
-  window.Purchase.open({ machineId: (lastLicense && lastLicense.machineId) || '' });
+  window.Purchase.open({ machineId: (lastLicense && lastLicense.machineId) || '', onActivated: () => refreshLicense() });
   showOnly('purchase');
 }
 
