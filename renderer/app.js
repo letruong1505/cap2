@@ -278,7 +278,7 @@ function updateScore(lesson, attempt) {
 }
 
 function showOnly(id) {
-  for (const sec of ['launch', 'subjects', 'home', 'lesson', 'games', 'game', 'empty']) {
+  for (const sec of ['launch', 'subjects', 'home', 'lesson', 'games', 'game', 'national', 'empty']) {
     document.getElementById(sec).hidden = sec !== id;
   }
 }
@@ -540,30 +540,39 @@ async function refreshLicense() {
 
 function renderLicense(license) {
   const info = document.getElementById('license-info');
-  const days = document.getElementById('license-days');
+  const status = document.getElementById('license-status');
   const children = [];
+  const courses = [];
+  let termBig;
+  let termSmall;
   if (license.status === 'ok') {
     children.push(
       el('div', {}, `Cấp cho: ${license.owner || '—'}`),
-      el('div', { class: 'muted' }, `Mã khoá: ${license.id || '—'} · Phạm vi: ${gradesText(license.grades)}`),
+      el('div', { class: 'muted' }, `Mã khoá: ${license.id || '—'}`),
     );
+    courses.push(`Giáo trình Văn hóa · ${gradesText(license.grades)}`);
     if (license.expiresOn === 'never') {
-      days.replaceChildren(
-        el('div', { class: 'days' }, 'Vĩnh viễn'),
-        el('div', { class: 'muted' }, 'Không giới hạn thời gian trên máy này'),
-      );
+      termBig = 'Vĩnh viễn';
+      termSmall = 'Không giới hạn thời gian trên máy này';
     } else {
       const left = licenseDaysLeft(license.expiresOn);
-      days.replaceChildren(
-        el('div', { class: 'days' }, `${left} ngày`),
-        el('div', { class: 'muted' }, `Hết hạn ngày ${license.expiresOn.split('-').reverse().join('/')}`),
-      );
+      termBig = `${left} ngày`;
+      termSmall = `Hết hạn ngày ${license.expiresOn.split('-').reverse().join('/')}`;
     }
   } else {
     children.push(el('div', { class: 'muted' }, LICENSE_MESSAGES[license.status] || 'Chưa kích hoạt bản quyền. Đang dùng thử: mở 2 bài đầu của mỗi môn.'));
-    days.replaceChildren(el('div', { class: 'muted' }, '—'));
+    termBig = '—';
+    termSmall = 'Chưa có bản quyền trả phí';
   }
+  courses.push('Định hướng công nghệ quốc gia · Miễn phí');
   if (license.machineId) children.push(el('div', { class: 'muted' }, `Mã máy: ${license.machineId} (gửi mã này khi mua khoá)`));
+  status.replaceChildren(
+    el('h2', {}, 'Thời hạn bản quyền & khóa học đã đăng ký'),
+    el('div', { class: 'days' }, termBig),
+    el('div', { class: 'muted' }, termSmall),
+    el('div', { class: 'license-courses-label' }, 'Khóa học đã đăng ký'),
+    el('ul', { class: 'license-courses' }, ...courses.map((c) => el('li', {}, c))),
+  );
 
   const input = el('input', { type: 'text', id: 'license-key', placeholder: 'Dán khoá kích hoạt (NL1-...)', autocomplete: 'off', spellcheck: 'false' });
   const btn = el('button', { type: 'button', class: 'primary' }, license.status === 'ok' ? 'Đổi khoá' : 'Kích hoạt');
@@ -603,6 +612,13 @@ function renderGrades() {
     el('span', { class: 'grade-note' }, 'Đang biên soạn · 555.000 đ'),
   );
   box.append(thpt);
+}
+
+function showNational() {
+  document.getElementById('breadcrumb').textContent = '';
+  window.National.open();
+  showOnly('national');
+  window.scrollTo(0, 0);
 }
 
 function showLaunch() {
@@ -650,6 +666,8 @@ async function init() {
       showOnly('home');
     });
     document.getElementById('btn-grades').addEventListener('click', () => showLaunch());
+    document.getElementById('btn-national-back').addEventListener('click', () => showLaunch());
+    document.getElementById('open-national').addEventListener('click', () => showNational());
     renderGrades();
     await refreshLicense();
     showLaunch();

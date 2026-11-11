@@ -26,39 +26,36 @@
         <div class="license-main">
           <h2>Bản quyền</h2>
           <div id="license-info"></div>
-        </div>
-        <div class="license-days">
-          <h2>Thời hạn</h2>
-          <div id="license-days"></div>
+          <div class="license-status" id="license-status"></div>
         </div>
         <div class="pricing">
           <h2>Giá bản quyền</h2>
           <p class="pricing-terms">Mua một lần, dùng <b>vĩnh viễn</b> trên <b>1 máy</b>.</p>
           <div class="pricing-options">
             <div class="price-option best">
-              <span class="price-name">Gia sư AI</span>
+              <span class="price-name">Gia sư AI <span class="price-detail">(Học sinh từ 12 tuổi trở lên)</span></span>
               <span class="price-value">999.000 đ <s>1.600.000 đ</s></span>
             </div>
             <div class="price-option">
-              <span class="price-name">Hệ miễn dịch số</span>
+              <span class="price-name">Hệ miễn dịch số <span class="price-detail">(Học sinh 8 - 11 tuổi)</span></span>
               <span class="price-value">2.090.000 đ</span>
             </div>
             <div class="price-option">
-              <span class="price-name">Làm chủ thế giới số</span>
+              <span class="price-name">Làm chủ thế giới số <span class="price-detail">(Học sinh 12 - 15 tuổi)</span></span>
               <span class="price-value">2.590.000 đ</span>
             </div>
             <div class="price-option">
-              <span class="price-name">Công dân số</span>
+              <span class="price-name">Công dân số <span class="price-detail">(Học sinh 16 - 18 tuổi)</span></span>
               <span class="price-value">2.990.000 đ</span>
             </div>
             <div class="price-option">
-              <span class="price-name">Ranh giới số</span>
+              <span class="price-name">Ranh giới số <span class="price-detail">(Học sinh THPT &amp; tân sinh viên)</span></span>
               <span class="price-value">1.590.000 đ</span>
             </div>
-            <div class="price-option free">
-              <span class="price-name">Định hướng công nghệ quốc gia</span>
+            <button type="button" class="price-option free" id="open-national">
+              <span class="price-name">Định hướng công nghệ quốc gia <span class="price-detail">(Bấm để xem)</span></span>
               <span class="price-value"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#2e7d4f"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Miễn phí</span>
-            </div>
+            </button>
             <div class="price-option">
               <span class="price-name">Chọn ngành – Hướng nghiệp</span>
               <span class="price-value">Liên hệ</span>
@@ -88,6 +85,11 @@
         <h1>Chọn môn học</h1>
       </header>
       <div class="grades" id="subject-list"></div>
+    </section>
+
+    <section id="national" class="panel" hidden>
+      <button id="btn-national-back" class="back-link nat-noprint" type="button">← Chọn lớp</button>
+      <div id="national-body"></div>
     </section>
 
     <section id="home" class="panel" hidden></section>
@@ -137,6 +139,8 @@
   <script src="../core/rational.js"></script>
   <script src="games-logic.js"></script>
   <script src="games.js"></script>
+  <script src="national-data.js"></script>
+  <script src="national.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
