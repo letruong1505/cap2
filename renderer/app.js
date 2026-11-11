@@ -278,7 +278,7 @@ function updateScore(lesson, attempt) {
 }
 
 function showOnly(id) {
-  for (const sec of ['launch', 'subjects', 'home', 'lesson', 'games', 'game', 'national', 'empty']) {
+  for (const sec of ['launch', 'subjects', 'home', 'lesson', 'games', 'game', 'national', 'purchase', 'empty']) {
     document.getElementById(sec).hidden = sec !== id;
   }
 }
@@ -614,6 +614,12 @@ function renderGrades() {
   box.append(thpt);
 }
 
+function showPurchase() {
+  document.getElementById('breadcrumb').textContent = '';
+  window.Purchase.open({ machineId: (lastLicense && lastLicense.machineId) || '' });
+  showOnly('purchase');
+}
+
 function showNational() {
   document.getElementById('breadcrumb').textContent = '';
   window.National.open();
@@ -668,6 +674,8 @@ async function init() {
     document.getElementById('btn-grades').addEventListener('click', () => showLaunch());
     document.getElementById('btn-national-back').addEventListener('click', () => showLaunch());
     document.getElementById('open-national').addEventListener('click', () => showNational());
+    document.getElementById('open-purchase').addEventListener('click', () => showPurchase());
+    document.getElementById('btn-purchase-back').addEventListener('click', () => showLaunch());
     renderGrades();
     await refreshLicense();
     showLaunch();

@@ -61,7 +61,10 @@
               <span class="price-value">Liên hệ</span>
             </div>
           </div>
-          <p class="pricing-note">Mua bản quyền: Liên hệ SĐT/Zalo 0968.646.853.</p>
+          <div class="pricing-buy">
+            <button type="button" class="primary buy-open" id="open-purchase">Mua khóa học</button>
+            <p class="pricing-note">Cần hỗ trợ: SĐT/Zalo 0968.646.853.</p>
+          </div>
         </div>
       </div>
 
@@ -85,6 +88,11 @@
         <h1>Chọn môn học</h1>
       </header>
       <div class="grades" id="subject-list"></div>
+    </section>
+
+    <section id="purchase" class="panel" hidden>
+      <button id="btn-purchase-back" class="back-link" type="button">← Chọn lớp</button>
+      <div id="purchase-body"></div>
     </section>
 
     <section id="national" class="panel" hidden>
@@ -139,6 +147,11 @@
   <script src="../core/rational.js"></script>
   <script src="games-logic.js"></script>
   <script src="games.js"></script>
+  <script src="vendor/qrcode.js"></script>
+  <script src="vietqr.js"></script>
+  <script src="payment-config.js"></script>
+  <script src="terms.js"></script>
+  <script src="purchase.js"></script>
   <script src="national-data.js"></script>
   <script src="national.js"></script>
   <script src="app.js"></script>

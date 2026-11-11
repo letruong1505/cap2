@@ -552,3 +552,49 @@ button.price-option.free:focus-visible { outline: 3px solid var(--sky); outline-
   main { max-width: none !important; padding: 0 !important; }
   .panel { box-shadow: none !important; padding: 0 !important; }
 }
+
+/* ----- Mua khóa học ----- */
+.pricing-buy { display: flex; align-items: center; gap: 16px; margin-top: 12px; flex-wrap: wrap; }
+.pricing-buy .pricing-note { margin: 0; }
+.buy-open { font-size: 17px; padding: 12px 28px; }
+.buy-layout { display: grid; grid-template-columns: minmax(0, 1fr) 420px; gap: 24px; align-items: start; margin-top: 12px; }
+.buy-main { display: grid; gap: 16px; }
+.buy-card { background: #fff; border: 1px solid var(--rule); border-radius: 16px; padding: 18px 22px; }
+.buy-card h2 { margin: 0 0 10px; font-size: 19px; display: flex; align-items: center; gap: 10px; }
+.buy-n { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--ink); color: #fff; font-size: 15px; }
+.buy-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.buy-fields label { display: grid; gap: 6px; font-weight: 600; font-size: 14.5px; }
+.buy-fields input { font: inherit; padding: 11px 14px; border: 1px solid var(--rule); border-radius: 10px; background: #fff; }
+.buy-fields input:focus-visible { outline: 3px solid var(--sky); outline-offset: 1px; }
+.buy-group { border: 0; padding: 0; margin: 10px 0 0; display: grid; gap: 8px; }
+.buy-group legend { font-weight: 700; font-size: 14.5px; color: var(--ink); padding: 0; margin-bottom: 6px; }
+.buy-item { display: grid; grid-template-columns: 22px 1fr auto; gap: 12px; align-items: center; padding: 10px 14px; background: var(--paper); border-radius: 12px; cursor: pointer; border: 1px solid transparent; }
+.buy-item:has(input:checked) { background: #fffaeb; border-color: var(--marker); }
+.buy-item input { width: 20px; height: 20px; }
+.buy-iname { font-weight: 700; display: grid; }
+.buy-iname small { font-weight: 400; color: var(--mute); font-size: 13px; }
+.buy-iprice { font-weight: 800; display: grid; justify-items: end; }
+.buy-iprice s { font-weight: 400; color: var(--mute); font-size: 12.5px; }
+.buy-terms { max-height: 260px; overflow: auto; border: 1px solid var(--rule); border-radius: 12px; padding: 4px 16px 10px; background: #fcfdff; font-size: 14px; line-height: 1.55; }
+.buy-terms h4 { margin: 14px 0 4px; font-size: 14.5px; color: var(--ink); }
+.buy-terms p { margin: 0 0 6px; }
+.buy-agree { display: grid; grid-template-columns: 22px 1fr; gap: 12px; margin-top: 12px; font-weight: 600; cursor: pointer; align-items: start; }
+.buy-agree input { width: 20px; height: 20px; margin-top: 2px; }
+.buy-side { position: sticky; top: 12px; display: grid; gap: 12px; }
+.buy-lines { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.buy-lines li { display: flex; justify-content: space-between; gap: 12px; font-size: 14.5px; }
+.buy-total { display: flex; justify-content: space-between; align-items: baseline; margin-top: 14px; padding-top: 12px; border-top: 2px solid var(--ink); font-size: 18px; }
+.buy-total b { font-size: 26px; }
+.buy-hint { margin: 0; font-size: 13.5px; }
+.buy-create { width: 100%; font-size: 17px; padding: 14px; }
+.buy-create:disabled { opacity: .45; cursor: not-allowed; }
+.buy-qr { display: block; width: 280px; height: 280px; margin: 6px auto 14px; border: 1px solid var(--rule); border-radius: 12px; }
+.buy-bank { display: grid; gap: 6px; }
+.buy-row { display: flex; justify-content: space-between; gap: 12px; font-size: 14.5px; padding: 6px 0; border-bottom: 1px solid var(--rule); }
+.buy-warn { padding: 12px 14px; background: #fff4e5; border: 1px solid #f3c27a; border-radius: 10px; font-size: 14px; }
+.buy-after { font-size: 14px; margin: 12px 0; }
+.buy-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+@media (min-width: 1400px) { main:has(#purchase:not([hidden])) { max-width: 1840px; padding: 24px 40px; } }
+@media (max-width: 1100px) { .buy-layout { grid-template-columns: 1fr; } .buy-side { position: static; } }
+button.ghost { font: inherit; font-weight: 600; padding: 10px 18px; border-radius: 10px; border: 1px solid var(--rule); background: #fff; color: var(--ink); cursor: pointer; }
+button.ghost:hover { background: var(--paper); }
