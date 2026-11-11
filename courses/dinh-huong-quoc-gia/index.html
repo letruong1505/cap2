@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Định hướng chiến lược công nghệ quốc gia | Nam Linh Educenter</title><style>
+:root{--ink:#1c2733;--grey:#5b6773;--line:#dfe5ec;--bg:#f6f8fb;--card:#fff;--blue:#1f6fb2;--lblue:#e6f1fb;--green:#2a8a4a;--lgreen:#e5f5ea;--orange:#d9822b;--lorange:#fdf0e1;--red:#c0392b;--lred:#fbe9e7;--yellow:#fff6d6}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.65 -apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg)}
+header.hero{background:linear-gradient(135deg,#17406b,#1f6fb2);color:#fff;padding:44px 20px 36px}
+.wrap{max-width:900px;margin:0 auto;padding:0 18px}
+header .wrap{padding:0}
+.hero h1{margin:0 0 6px;font-size:34px;line-height:1.2}
+.hero p{margin:6px 0;opacity:.92}
+.tag{display:inline-block;background:rgba(255,255,255,.18);border-radius:20px;padding:3px 12px;font-size:13px;margin:8px 6px 0 0}
+nav.toc{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);overflow-x:auto;white-space:nowrap}
+nav.toc a{display:inline-block;padding:11px 13px;color:var(--blue);text-decoration:none;font-size:14px;font-weight:600}
+nav.toc a:hover{background:var(--lblue)}
+section{padding:34px 0 8px;border-bottom:1px solid var(--line)}
+h2{font-size:27px;margin:0 0 4px;color:#17406b}
+h3{font-size:19px;margin:26px 0 6px;color:var(--ink)}
+h4{font-size:16px;margin:16px 0 4px}
+.sub{color:var(--grey);margin:0 0 14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:14px 0}
+.goal{background:var(--lblue);border-color:#bcd9f1}
+.ok{background:var(--lgreen);border-color:#b9e0c6}
+.warn{background:var(--lorange);border-color:#f0d2a8}
+.no{background:var(--lred);border-color:#efc2bc}
+.think{background:var(--yellow);border-color:#ecdc8c}
+.card>:first-child{margin-top:0}.card>:last-child{margin-bottom:0}
+.lbl{font-weight:700;font-size:13px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:4px}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:15px;background:#fff}
+th,td{border:1px solid var(--line);padding:8px 10px;vertical-align:top;text-align:left}
+th{background:#eef3f8}
+td.g{background:var(--lgreen)}td.r{background:var(--lred)}td.y{background:var(--yellow)}
+pre.prompt{background:#14202c;color:#e8f0f8;border-radius:10px;padding:14px 16px;white-space:pre-wrap;font:14px/1.55 ui-monospace,Menlo,Consolas,monospace;margin:10px 0;position:relative}
+pre.prompt:before{content:"Câu lệnh mẫu (prompt) – gõ lại bằng lời của em";display:block;color:#8fb6dc;font:600 12px sans-serif;margin-bottom:6px}
+figure{margin:18px 0;text-align:center}
+figure svg{max-width:100%;height:auto;background:#fff;border:1px solid var(--line);border-radius:12px}
+figcaption{font-size:14px;color:var(--grey);margin-top:6px}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:12px 0}
+.meta div{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14px}
+.meta b{display:block;color:var(--blue);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.steps{counter-reset:s;list-style:none;padding:0}
+.steps>li{counter-increment:s;position:relative;padding:10px 12px 10px 52px;margin:10px 0;background:#fff;border:1px solid var(--line);border-radius:10px}
+.steps>li:before{content:counter(s);position:absolute;left:12px;top:10px;width:28px;height:28px;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;text-align:center;line-height:28px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:640px){.cols{grid-template-columns:1fr}.hero h1{font-size:27px}}
+details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin:8px 0}
+summary{cursor:pointer;font-weight:600}
+.age{font-size:14px;border-left:4px solid var(--orange);padding:6px 12px;background:#fff;margin:10px 0}
+footer{padding:30px 0 60px;color:var(--grey);font-size:14px}
+ul,ol{padding-left:22px}
+kbd{background:#eef3f8;border:1px solid var(--line);border-radius:4px;padding:0 5px;font-size:13px}
+@media print{nav.toc{display:none}section{page-break-before:always}header.hero{color:#000;background:#fff}.hero p,.tag{color:#000}}
+
+.pick{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px;margin:12px 0}
+.opt{display:block;background:#fff;border:2px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer}
+.opt:hover{border-color:var(--blue)}
+.opt.on{border-color:var(--blue);background:var(--lblue)}
+.opt input{margin-right:8px}
+.opt b{font-size:16px}.opt small{display:block;color:var(--grey);margin-top:2px}
+.plan{margin:14px 0}
+.chips span{display:inline-block;background:#eef3f8;border-radius:14px;padding:2px 10px;margin:2px 4px 2px 0;font-size:13px}
+.new{background:var(--lgreen);border-radius:6px;padding:0 6px;font-size:12px;font-weight:700;color:var(--green)}
+.old{background:var(--lorange);border-radius:6px;padding:0 6px;font-size:12px;font-weight:700;color:#a85f14}
+button.btn{background:var(--blue);color:#fff;border:0;border-radius:8px;padding:9px 16px;font-size:15px;cursor:pointer}
+button.btn.alt{background:#fff;color:var(--blue);border:1px solid var(--blue)}
+</style></head><body>
+<header class="hero"><div class="wrap">
+  <div style="opacity:.85;font-weight:600">Nam Linh Educenter · Định hướng công nghệ quốc gia · Miễn phí</div>
+  <h1>Định hướng chiến lược công nghệ quốc gia</h1>
+  <p>Nghị quyết 57-NQ/TW, danh mục công nghệ chiến lược và sản phẩm chiến lược. Từ đó em chọn hướng đi, lập kế hoạch học tập và đi theo.</p>
+  <span class="tag">Dành cho học sinh 12–18 tuổi và phụ huynh</span><span class="tag">Cập nhật 11/2026</span>
+</div></header>
+<nav class="toc"><div class="wrap"><a href="#tong-quan">Chiến lược một trang</a><a href="#van-ban">Văn bản &amp; hiệu lực</a><a href="#danh-muc">Danh mục công nghệ</a><a href="#doi-chieu">1131 → 21/2026</a><a href="#chon">Em chọn hướng nào?</a><a href="#ke-hoach">Kế hoạch của em</a><a href="#nguon">Nguồn</a></div></nav>
+<main class="wrap">
+
+<section id="tong-quan">
+  <h2>Chiến lược quốc gia trong một trang</h2>
+  <p class="sub">Nghị quyết 57-NQ/TW ngày 22/12/2024 của Bộ Chính trị: đột phá phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia.</p>
+  <div class="card goal"><div class="lbl">Mục tiêu lớn</div><p>Đến 2030: Việt Nam là nước đang phát triển, có công nghiệp hiện đại, thu nhập trung bình cao. Đến 2045: nước phát triển, thu nhập cao. Khoa học công nghệ là nền tảng, đổi mới sáng tạo là động lực, chuyển đổi số là kết nối, con người là trung tâm và chủ thể.</p></div>
+  <figure>
+  <svg viewBox="0 0 860 280" role="img" aria-label="Quy mô kinh tế số trong GDP">
+    <rect width="860" height="280" fill="#fff"/>
+    <g font-family="sans-serif" font-size="14" text-anchor="middle">
+      <text x="430" y="26" font-size="16" font-weight="700" fill="#17406b">Quy mô kinh tế số trong GDP (%)</text>
+      <line x1="90" y1="230" x2="780" y2="230" stroke="#9db4c9"/>
+      <rect x="150" y="180" width="130" height="50" rx="6" fill="#9db4c9"/><text x="215" y="172" fill="#1c2733" font-weight="700">≈ 14%</text><text x="215" y="252" fill="#1c2733">2025 (ước tính)</text><text x="215" y="270" fill="#5b6773" font-size="12">Cục Thống kê</text>
+      <rect x="365" y="122" width="130" height="108" rx="6" fill="#1f6fb2"/><text x="430" y="114" fill="#1c2733" font-weight="700">tối thiểu 30%</text><text x="430" y="252" fill="#1c2733">mục tiêu 2030</text>
+      <rect x="580" y="50" width="130" height="180" rx="6" fill="#2a8a4a"/><text x="645" y="42" fill="#1c2733" font-weight="700">tối thiểu 50%</text><text x="645" y="252" fill="#1c2733">tầm nhìn 2045</text>
+    </g>
+  </svg>
+  <figcaption>Cột 2025: ước tính của Cục Thống kê (Bộ Tài chính), khoảng 14,02% GDP. Hai cột sau là mục tiêu trong nghị quyết.</figcaption>
+  </figure>
+  <h3>Con số đến năm 2030</h3>
+  <table>
+    <tr><th style="width:22%">Lĩnh vực</th><th>Mục tiêu</th></tr>
+    <tr><td><b>Kinh tế</b></td><td>TFP đóng góp trên 55% tăng trưởng; kinh tế số tối thiểu 30% GDP; sản phẩm công nghệ cao tối thiểu 50% giá trị xuất khẩu hàng hóa.</td></tr>
+    <tr><td><b>Dịch vụ số</b></td><td>Dịch vụ công trực tuyến trên 80%; giao dịch không dùng tiền mặt 80%; trên 40% doanh nghiệp có đổi mới sáng tạo.</td></tr>
+    <tr><td><b>Đầu tư</b></td><td>Chi R&amp;D đạt 2% GDP (trên 60% từ xã hội); ít nhất 3% tổng chi ngân sách hằng năm cho khoa học, công nghệ và chuyển đổi số.</td></tr>
+    <tr><td><b>Nhân lực</b></td><td>12 nhân lực R&amp;D trên một vạn dân; công bố quốc tế tăng bình quân 10%/năm; sáng chế tăng 16–18%/năm.</td></tr>
+    <tr><td><b>Hạ tầng</b></td><td>Phủ sóng 5G toàn quốc; hoàn thành cơ sở dữ liệu quốc gia, hình thành sàn giao dịch dữ liệu.</td></tr>
+    <tr><td><b>Xếp hạng</b></td><td>Nhóm 3 dẫn đầu Đông Nam Á, nhóm 50 đầu thế giới về năng lực cạnh tranh số và Chính phủ điện tử; ít nhất 5 doanh nghiệp công nghệ số ngang tầm các nước tiên tiến.</td></tr>
+  </table>
+  <p><b>Tầm nhìn 2045:</b> kinh tế số tối thiểu 50% GDP; thuộc nhóm 30 nước dẫn đầu thế giới về đổi mới sáng tạo và chuyển đổi số; ít nhất 10 doanh nghiệp công nghệ số ngang tầm tiên tiến.</p>
+  <h3>Năm quan điểm và bảy nhóm giải pháp</h3>
+  <div class="cols">
+    <div class="card"><div class="lbl">5 quan điểm</div><ol><li>Đột phá hàng đầu, động lực chính</li><li>Cả hệ thống cùng làm; người dân và doanh nghiệp là chủ thể</li><li>Thể chế đi trước một bước</li><li>Từng bước tự chủ công nghệ, nhất là công nghệ chiến lược</li><li>An ninh mạng, an ninh dữ liệu xuyên suốt</li></ol></div>
+    <div class="card"><div class="lbl">7 nhóm giải pháp</div><ol><li>Nhận thức, quyết tâm; “học tập số”</li><li>Hoàn thiện thể chế, cho phép thử nghiệm</li><li>Hạ tầng và dữ liệu</li><li>Nhân lực và nhân tài</li><li>Chuyển đổi số, công dân số, an ninh mạng</li><li>Doanh nghiệp công nghệ, khởi nghiệp</li><li>Hợp tác quốc tế (AI, sinh học, lượng tử, bán dẫn)</li></ol></div>
+  </div>
+</section>
+
+<section id="van-ban">
+  <h2>Các văn bản liên quan và văn bản nào đang có hiệu lực</h2>
+  <p class="sub">Danh mục công nghệ chiến lược đã được thay đổi: đọc kỹ để dùng đúng bản.</p>
+  <figure>
+  <svg viewBox="0 0 860 200" role="img" aria-label="Dòng thời gian văn bản">
+    <rect width="860" height="200" fill="#fff"/>
+    <g font-family="sans-serif" font-size="13" text-anchor="middle">
+      <line x1="40" y1="90" x2="820" y2="90" stroke="#9db4c9" stroke-width="3"/>
+      <circle cx="80" cy="90" r="9" fill="#1f6fb2"/><text x="80" y="62" font-weight="700" fill="#17406b">22/12/2024</text><text x="80" y="122" fill="#1c2733">Nghị quyết 57-NQ/TW</text>
+      <circle cx="240" cy="90" r="9" fill="#1f6fb2"/><text x="240" y="62" font-weight="700" fill="#17406b">09/01/2025</text><text x="240" y="122" fill="#1c2733">NQ 03/NQ-CP</text><text x="240" y="140" fill="#5b6773" font-size="12">Chương trình hành động</text>
+      <circle cx="400" cy="90" r="9" fill="#d9822b"/><text x="400" y="62" font-weight="700" fill="#a85f14">12/06/2025</text><text x="400" y="122" fill="#1c2733">QĐ 1131/QĐ-TTg</text><text x="400" y="140" fill="#9b2b1f" font-size="12" font-weight="700">đã bị thay thế</text>
+      <circle cx="560" cy="90" r="9" fill="#1f6fb2"/><text x="560" y="62" font-weight="700" fill="#17406b">22/08/2025</text><text x="560" y="122" fill="#1c2733">Nghị quyết 71-NQ/TW</text><text x="560" y="140" fill="#5b6773" font-size="12">Giáo dục và đào tạo</text>
+      <circle cx="720" cy="90" r="9" fill="#2a8a4a"/><text x="720" y="62" font-weight="700" fill="#1d6a37">30/04/2026</text><text x="720" y="122" fill="#1c2733">QĐ 21/2026/QĐ-TTg</text><text x="720" y="140" fill="#1d6a37" font-size="12" font-weight="700">hiệu lực từ 01/07/2026</text>
+    </g>
+  </svg>
+  </figure>
+  <div class="card warn"><div class="lbl">Lưu ý quan trọng</div><p>Quyết định 1131/QĐ-TTg (12/6/2025) <b>đã được thay bằng Quyết định 21/2026/QĐ-TTg, có hiệu lực từ 01/07/2026</b>. Trang này trình bày cả hai: 1131 để hiểu bước đầu của chiến lược, 21/2026 là danh mục hiện hành. Danh mục có thể còn được điều chỉnh; Thủ tướng giao Bộ Khoa học và Công nghệ rà soát, đề xuất bổ sung theo nhu cầu phát triển.</p></div>
+</section>
+
+<section id="danh-muc">
+  <h2>Danh mục hiện hành: 10 nhóm công nghệ chiến lược</h2>
+  <p class="sub">Quyết định 21/2026/QĐ-TTg: 10 nhóm công nghệ và 30 sản phẩm công nghệ chiến lược. Bấm từng nhóm để xem sản phẩm, so sánh với 1131, môn nền tảng và ngành học gợi ý.</p>
+  <details class="grp" id="g-so"><summary><b>Công nghệ số</b> <span style="color:var(--grey)">· AI · dữ liệu lớn · bản sao số · đám mây · điện toán biên · IoT · blockchain</span></summary>
+<div class="cols"><div><h4>Sản phẩm chiến lược liên quan <span class="new">QĐ 21/2026</span></h4><ul><li>Mô hình ngôn ngữ lớn tiếng Việt, trợ lý ảo, AI chuyên ngành</li><li>AI camera xử lý tại biên</li><li>Nền tảng bản sao số (digital twin)</li><li>Nền tảng điện toán đám mây</li><li>Hạ tầng chuỗi khối và hệ thống truy xuất nguồn gốc</li></ul></div>
+<div><h4>So với QĐ 1131 <span class="old">đã thay thế</span></h4><p>1131: nhóm 1 (AI, bản sao số, VR/AR), nhóm 2 (đám mây, dữ liệu lớn), nhóm 3 (blockchain, tiền số); có thêm AI phân tích, metaverse, trung tâm dữ liệu quy mô lớn.</p>
+<h4>Môn nền tảng</h4><div class="chips"><span>Toán</span><span>Tin học</span><span>Tiếng Anh</span></div>
+<h4>Nhóm ngành đại học gợi ý</h4><div class="chips"><span>Khoa học máy tính</span><span>Khoa học dữ liệu</span><span>Công nghệ thông tin</span><span>Trí tuệ nhân tạo</span></div></div></div></details><details class="grp" id="g-mang"><summary><b>Công nghệ mạng di động thế hệ sau</b> <span style="color:var(--grey)">· 5G, 5G-Advanced, 6G</span></summary>
+<div class="cols"><div><h4>Sản phẩm chiến lược liên quan <span class="new">QĐ 21/2026</span></h4><ul><li>Thiết bị và hệ thống mạng di động 5G/5G-Advanced</li></ul></div>
+<div><h4>So với QĐ 1131 <span class="old">đã thay thế</span></h4><p>1131: nhóm 4 (5G/6G): mạng truy cập ORAN, mạng lõi, truyền dẫn IP tốc độ cao.</p>
+<h4>Môn nền tảng</h4><div class="chips"><span>Toán</span><span>Vật lí</span><span>Tin học</span></div>
+<h4>Nhóm ngành đại học gợi ý</h4><div class="chips"><span>Điện tử – Viễn thông</span><span>Kỹ thuật mạng</span><span>Công nghệ thông tin</span></div></div></div></details><details class="grp" id="g-robot"><summary><b>Robot và tự động hóa</b> <span style="color:var(--grey)">· Robot, sản xuất thông minh, điều khiển</span></summary>
+<div class="cols"><div><h4>Sản phẩm chiến lược liên quan <span class="new">QĐ 21/2026</span></h4><ul><li>Robot di động tự hành và robot công nghiệp</li><li>Nền tảng, giải pháp, mô hình sản xuất thông minh</li></ul></div>
+<div><h4>So với QĐ 1131 <span class="old">đã thay thế</span></h4><p>1131: nhóm 5: robot di động, robot công nghiệp, dây chuyền chế biến thực phẩm, hệ thống bảo quản và giám sát chất lượng sau thu hoạch.</p>
+<h4>Môn nền tảng</h4><div class="chips"><span>Toán</span><span>Vật lí</span><span>Tin học</span></div>
+<h4>Nhóm ngành đại học gợi ý</h4><div class="chips"><span>Cơ điện tử</span><span>Tự động hóa</span><span>Kỹ thuật robot</span><span>Cơ khí</span></div></div></div></details><details class="grp" id="g-sinh"><summary><b>Công nghệ sinh học và y sinh tiên tiến</b> <span style="color:var(--grey)">· Vắc xin, liệu pháp tế bào, gen, giống mới, cảm biến sinh học</span></summary>
+<div class="cols"><div><h4>Sản phẩm chiến lược liên quan <span class="new">QĐ 21/2026</span></h4><ul><li>Vắc xin thế hệ mới cho người</li><li>Liệu pháp tế bào (tế bào gốc, tế bào miễn dịch)</li><li>Hệ thống sản xuất thiết bị y tế cá thể hóa in 3D</li><li>Hệ thống cảm biến sinh học thông minh</li><li>Vắc xin và sản phẩm sinh học thế hệ mới cho vật nuôi, thủy sản, cây trồng</li><li>Giống cây, con, thủy sản thế hệ mới (tế bào, chỉnh sửa gen)</li><li>Hệ thống sản xuất, thu hoạch, chế biến sâu nông sản, phụ phẩm, sinh khối</li></ul></div>
+<div><h4>So với QĐ 1131 <span class="old">đã thay thế</span></h4><p>1131: nhóm 7 (y – sinh học tiên tiến): vắc xin, liệu pháp gen, liệu pháp tế bào; chế biến thực phẩm nằm ở nhóm robot.</p>
+<h4>Môn nền tảng</h4><div class="chips"><span>Sinh học</span><span>Hóa học</span><span>Toán</span></div>
+<h4>Nhóm ngành đại học gợi ý</h4><div class="chips"><span>Công nghệ sinh học</span><span>Y – Dược</span><span>Kỹ thuật y sinh</span><span>Nông nghiệp công nghệ cao</span></div></div></div></details><details class="grp" id="g-nl"><summary><b>Công nghệ năng lượng và vật liệu tiên tiến</b> <span style="color:var(--grey)">· Pin, lưu trữ, hydro xanh, điện áp cao, thu giữ carbon, vật liệu</span></summary>
+<div class="cols"><div><h4>Sản phẩm chiến lược liên quan <span class="new">QĐ 21/2026</span></h4><ul><li>Vật liệu chức năng tiên tiến, hiệu suất cao</li><li>Pin tiên tiến và hệ thống lưu trữ năng lượng (BESS)</li><li>Hydro xanh và nhiên liệu sinh học</li><li>Thiết bị điện cao áp, máy điện, hệ thống truyền tải hiệu suất cao</li><li>Hệ thống thu giữ, tận dụng và lưu trữ carbon</li><li>Lò phản ứng hạt nhân mô-đun nhỏ (SMR)</li></ul></div>
+<div><h4>So với QĐ 1131 <span class="old">đã thay thế</span></h4><p>1131: nhóm 8: lò phản ứng nhỏ, pin lithium-ion/thể rắn/nhiên liệu/điện phân, vật liệu tiên tiến.</p>
+<h4>Môn nền tảng</h4><div class="chips"><span>Vật lí</span><span>Hóa học</span><span>Toán</span></div>
+<h4>Nhóm ngành đại học gợi ý</h4><div class="chips"><span>Kỹ thuật điện</span><span>Năng lượng tái tạo</span><span>Khoa học vật liệu</span><span>Kỹ thuật hóa học</span></div></div></div></details><details class="grp" id="g-chip"><summary><b>Công nghệ chip bán dẫn</b> <span style="color:var(--grey)">· Chip chuyên dụng, chip AI, chip IoT</span></summary>
+<div class="cols"><div><h4>Sản phẩm chiến lược liên quan <span class="new">QĐ 21/2026</span></h4><ul><li>Chip chuyên dụng</li></ul></div>
+<div><h4>So với QĐ 1131 <span class="old">đã thay thế</span></h4><p>1131: nhóm 6: chip chuyên dụng, chip AI, chip IoT.</p>
+<h4>Môn nền tảng</h4><div class="chips"><span>Toán</span><span>Vật lí</span><span>Hóa học</span></div>
+<h4>Nhóm ngành đại học gợi ý</h4><div class="chips"><span>Vi mạch bán dẫn</span><span>Kỹ thuật điện tử</span><span>Vật lí kỹ thuật</span><span>Khoa học vật liệu</span></div></div></div></details><details class="grp" id="g-an"><summary><b>Công nghệ an ninh mạng và lượng tử</b> <span style="color:var(--grey)">· Bảo mật, an toàn dữ liệu, truyền thông và tính toán lượng tử</span></summary>
+<div class="cols"><div><h4>Sản phẩm chiến lược liên quan <span class="new">QĐ 21/2026</span></h4><ul><li>Giải pháp bảo mật, an ninh mạng cho hạ tầng quan trọng và cơ sở dữ liệu quốc gia</li><li>Truyền thông lượng tử, máy tính lượng tử, cảm biến lượng tử</li></ul></div>
+<div><h4>So với QĐ 1131 <span class="old">đã thay thế</span></h4><p>1131: nhóm 10 (an ninh mạng: tường lửa, phát hiện xâm nhập, an ninh hạ tầng quan trọng) và nhóm 2 (điện toán lượng tử, truyền thông lượng tử).</p>
+<h4>Môn nền tảng</h4><div class="chips"><span>Toán</span><span>Tin học</span><span>Vật lí</span></div>
+<h4>Nhóm ngành đại học gợi ý</h4><div class="chips"><span>An toàn thông tin</span><span>An ninh mạng</span><span>Vật lí (hướng lượng tử)</span></div></div></div></details><details class="grp" id="g-bien"><summary><b>Công nghệ biển, đại dương và lòng đất</b> <span style="color:var(--grey)">· Khoáng sản, đất hiếm, dầu khí, biển sâu, ngoài khơi</span></summary>
+<div class="cols"><div><h4>Sản phẩm chiến lược liên quan <span class="new">QĐ 21/2026</span></h4><ul><li>Khai thác, chế biến sâu khoáng sản, dầu khí, đất hiếm</li><li>Công nghệ, thiết bị, dịch vụ cho lòng đất, biển sâu, công trình và năng lượng ngoài khơi</li></ul></div>
+<div><h4>So với QĐ 1131 <span class="old">đã thay thế</span></h4><p>1131: nhóm 9: đánh giá trữ lượng và tinh chế đất hiếm, thăm dò địa chất thông minh, thăm dò khai thác biển sâu, năng lượng ngoài khơi.</p>
+<h4>Môn nền tảng</h4><div class="chips"><span>Địa lí</span><span>Vật lí</span><span>Hóa học</span></div>
+<h4>Nhóm ngành đại học gợi ý</h4><div class="chips"><span>Địa chất</span><span>Kỹ thuật dầu khí</span><span>Kỹ thuật biển</span><span>Khoa học Trái Đất</span></div></div></div></details><details class="grp" id="g-hk"><summary><b>Công nghệ hàng không và vũ trụ</b> <span style="color:var(--grey)">· UAV, vệ tinh, quan sát Trái Đất</span></summary>
+<div class="cols"><div><h4>Sản phẩm chiến lược liên quan <span class="new">QĐ 21/2026</span></h4><ul><li>Thiết bị bay không người lái (UAV) và hệ thống quản lý, phát hiện, chống UAV</li><li>Vệ tinh và chòm vệ tinh quan sát Trái Đất quỹ đạo thấp</li></ul></div>
+<div><h4>So với QĐ 1131 <span class="old">đã thay thế</span></h4><p>1131: nhóm 11: vệ tinh viễn thám và viễn thông tầm thấp, trạm mặt đất và điều khiển vệ tinh, thiết bị bay không người lái.</p>
+<h4>Môn nền tảng</h4><div class="chips"><span>Toán</span><span>Vật lí</span><span>Tin học</span></div>
+<h4>Nhóm ngành đại học gợi ý</h4><div class="chips"><span>Kỹ thuật hàng không – vũ trụ</span><span>Điều khiển và tự động hóa</span><span>Viễn thám, GIS</span></div></div></div></details><details class="grp" id="g-rail"><summary><b>Công nghệ đường sắt tốc độ cao và đường sắt đô thị</b> <span style="color:var(--grey)">· Xây dựng, phương tiện, thiết bị, hệ thống</span></summary>
+<div class="cols"><div><h4>Sản phẩm chiến lược liên quan <span class="new">QĐ 21/2026</span></h4><ul><li>Công trình đường sắt tốc độ cao</li><li>Nền tảng công nghiệp, phương tiện, thiết bị, hệ thống đường sắt tốc độ cao và đô thị</li></ul></div>
+<div><h4>So với QĐ 1131 <span class="old">đã thay thế</span></h4><p>Nhóm mới trong QĐ 21/2026; chưa có trong QĐ 1131.</p>
+<h4>Môn nền tảng</h4><div class="chips"><span>Toán</span><span>Vật lí</span></div>
+<h4>Nhóm ngành đại học gợi ý</h4><div class="chips"><span>Xây dựng cầu đường</span><span>Cơ khí</span><span>Điện – Điều khiển</span><span>Kỹ thuật đường sắt</span></div></div></div></details>
+  <div class="card"><div class="lbl">Hai nhóm sản phẩm theo QĐ 21/2026</div><p><b>Nhóm 1 (22 sản phẩm):</b> sản phẩm đã có thị trường, tạo tác động lớn và trực tiếp đến phát triển kinh tế. <b>Nhóm 2 (8 sản phẩm):</b> sản phẩm tạo động lực tăng trưởng mới, công nghệ nền tảng cho tương lai và bảo đảm tự chủ trong quốc phòng, an ninh.</p></div>
+  <p style="font-size:14px;color:var(--grey)">Cột “môn nền tảng” và “ngành đại học gợi ý” là gợi ý của Nam Linh để em định hướng, không phải quy định của văn bản. Việc ghép sản phẩm vào từng nhóm ở đây theo tên gọi; văn bản gốc chia sản phẩm theo hai nhóm thị trường nêu trên.</p>
+</section>
+
+<section id="doi-chieu">
+  <h2>Đối chiếu: Quyết định 1131 (6/2025) và Quyết định 21/2026</h2>
+  <p class="sub">Bản đầu tiên có 11 nhóm; bản hiện hành gộp lại còn 10 nhóm.</p>
+  <table>
+    <tr><th>#</th><th>Nhóm trong 1131</th><th>Sản phẩm trong 1131</th><th>Tương ứng trong 21/2026 (đối chiếu theo tên)</th></tr>
+    <tr><td>1</td><td><b>Trí tuệ nhân tạo, bản sao số, thực tế ảo/thực tế tăng cường</b></td><td>Mô hình ngôn ngữ lớn tiếng Việt; trợ lý ảo; AI chuyên ngành; AI phân tích; bản sao số; vũ trụ ảo (metaverse)</td><td>Công nghệ số</td></tr><tr><td>2</td><td><b>Điện toán đám mây, lượng tử, dữ liệu lớn</b></td><td>Dịch vụ điện toán đám mây; điện toán lượng tử, truyền thông lượng tử; trung tâm dữ liệu quy mô lớn</td><td>Công nghệ số; An ninh mạng và lượng tử</td></tr><tr><td>3</td><td><b>Blockchain</b></td><td>Tài sản số, tiền số, tiền mã hóa; hạ tầng mạng blockchain; hệ thống truy xuất nguồn gốc</td><td>Công nghệ số</td></tr><tr><td>4</td><td><b>Mạng di động thế hệ sau (5G/6G)</b></td><td>Mạng truy cập vô tuyến 5G/6G chuẩn ORAN; mạng lõi 5G/6G; truyền dẫn IP tốc độ cao</td><td>Mạng di động thế hệ sau</td></tr><tr><td>5</td><td><b>Robot và tự động hóa</b></td><td>Robot di động tự hành; robot công nghiệp; dây chuyền chế biến thực phẩm tiên tiến; hệ thống bảo quản, giám sát chất lượng sau thu hoạch</td><td>Robot và tự động hóa</td></tr><tr><td>6</td><td><b>Chip bán dẫn</b></td><td>Chip chuyên dụng, chip AI, chip IoT</td><td>Chip bán dẫn</td></tr><tr><td>7</td><td><b>Y – sinh học tiên tiến</b></td><td>Vắc xin thế hệ mới; liệu pháp gen (chỉnh sửa gen); liệu pháp tế bào</td><td>Sinh học và y sinh tiên tiến</td></tr><tr><td>8</td><td><b>Năng lượng, vật liệu tiên tiến</b></td><td>Lò phản ứng hạt nhân nhỏ, an toàn; pin lithium-ion, thể rắn, nhiên liệu, điện phân; vật liệu tiên tiến</td><td>Năng lượng và vật liệu tiên tiến</td></tr><tr><td>9</td><td><b>Đất hiếm, đại dương, lòng đất</b></td><td>Công nghệ đánh giá trữ lượng, khai thác, tuyển, tách chiết, tinh chế đất hiếm; thăm dò địa chất thông minh; thăm dò, khai thác biển sâu; năng lượng ngoài khơi</td><td>Biển, đại dương và lòng đất</td></tr><tr><td>10</td><td><b>An ninh mạng</b></td><td>Tường lửa, phát hiện và ngăn chặn xâm nhập; an ninh cho hạ tầng quan trọng và cơ sở dữ liệu quốc gia</td><td>An ninh mạng và lượng tử</td></tr><tr><td>11</td><td><b>Hàng không, vũ trụ</b></td><td>Vệ tinh viễn thám và viễn thông tầm thấp; trạm mặt đất, điều khiển vệ tinh; thiết bị bay không người lái</td><td>Hàng không và vũ trụ</td></tr>
+    <tr><td></td><td colspan="2"><b>Nhóm mới trong 21/2026</b></td><td>Công nghệ đường sắt tốc độ cao và đường sắt đô thị</td></tr>
+  </table>
+  <div class="card"><div class="lbl">Những thay đổi nổi bật</div><ul>
+    <li>Công nghệ số được gộp thành một nhóm trung tâm: AI, dữ liệu lớn, bản sao số, điện toán đám mây, điện toán biên, IoT, blockchain.</li>
+    <li>An ninh mạng đi cùng công nghệ lượng tử trong một nhóm.</li>
+    <li>Thêm nhóm đường sắt tốc độ cao và đường sắt đô thị. Bản mới thêm các sản phẩm như AI camera xử lý tại biên, hydro xanh, thu giữ carbon, cảm biến sinh học.</li>
+    <li>Metaverse và tiền số, tiền mã hóa có trong 1131 nhưng không còn tên trong danh sách sản phẩm của 21/2026 mà mình đọc được.</li>
+  </ul></div>
+  <div class="card warn"><div class="lbl">Số liệu giữa các nguồn không thống nhất</div><p>Văn bản 1131 có 11 nhóm; một số báo ghi “10 nhóm” và “32 nhóm sản phẩm”, các báo khác ghi “11 nhóm, 32–35 sản phẩm” tùy cách gộp dòng sản phẩm (ví dụ dòng chip gồm 3 loại). Bảng trên liệt kê theo văn bản gốc. Nếu cần trích dẫn chính thức, dùng bản gốc trên Công báo hoặc Cơ sở dữ liệu quốc gia về văn bản pháp luật.</p></div>
+</section>
+
+<section id="chon">
+  <h2>Em chọn hướng nào?</h2>
+  <p class="sub">Chọn từ 1 đến 3 nhóm em thấy hứng thú. Không cần chắc chắn ngay; mỗi năm em có thể chọn lại.</p>
+  <div class="pick" id="pick"><label class="opt" data-id="so"><input type="checkbox" value="so"><b>Công nghệ số</b><small>AI · dữ liệu lớn · bản sao số · đám mây · điện toán biên · IoT · blockchain</small></label><label class="opt" data-id="mang"><input type="checkbox" value="mang"><b>Công nghệ mạng di động thế hệ sau</b><small>5G, 5G-Advanced, 6G</small></label><label class="opt" data-id="robot"><input type="checkbox" value="robot"><b>Robot và tự động hóa</b><small>Robot, sản xuất thông minh, điều khiển</small></label><label class="opt" data-id="sinh"><input type="checkbox" value="sinh"><b>Công nghệ sinh học và y sinh tiên tiến</b><small>Vắc xin, liệu pháp tế bào, gen, giống mới, cảm biến sinh học</small></label><label class="opt" data-id="nl"><input type="checkbox" value="nl"><b>Công nghệ năng lượng và vật liệu tiên tiến</b><small>Pin, lưu trữ, hydro xanh, điện áp cao, thu giữ carbon, vật liệu</small></label><label class="opt" data-id="chip"><input type="checkbox" value="chip"><b>Công nghệ chip bán dẫn</b><small>Chip chuyên dụng, chip AI, chip IoT</small></label><label class="opt" data-id="an"><input type="checkbox" value="an"><b>Công nghệ an ninh mạng và lượng tử</b><small>Bảo mật, an toàn dữ liệu, truyền thông và tính toán lượng tử</small></label><label class="opt" data-id="bien"><input type="checkbox" value="bien"><b>Công nghệ biển, đại dương và lòng đất</b><small>Khoáng sản, đất hiếm, dầu khí, biển sâu, ngoài khơi</small></label><label class="opt" data-id="hk"><input type="checkbox" value="hk"><b>Công nghệ hàng không và vũ trụ</b><small>UAV, vệ tinh, quan sát Trái Đất</small></label><label class="opt" data-id="rail"><input type="checkbox" value="rail"><b>Công nghệ đường sắt tốc độ cao và đường sắt đô thị</b><small>Xây dựng, phương tiện, thiết bị, hệ thống</small></label></div>
+  <p><button class="btn" id="mk">Tạo kế hoạch của em</button> <button class="btn alt" id="rs">Chọn lại</button> <span id="msg" style="color:var(--grey);font-size:14px"></span></p>
+  <div class="card think"><div class="lbl">Cách chọn</div><ul><li>Bắt đầu từ môn em thích và học tốt, rồi xem nó nằm ở nhóm nào.</li><li>Đừng chọn chỉ vì “hot”. Nhóm nào em sẵn sàng học nhiều năm?</li><li>Hỏi thầy cô, người làm trong ngành, đọc nguồn chính thức; kiểm chứng như đã học ở khóa Gia sư AI.</li></ul></div>
+</section>
+
+<section id="ke-hoach">
+  <h2>Kế hoạch học tập của em</h2>
+  <p class="sub">Kế hoạch tự tạo theo lựa chọn ở trên. Dùng Ctrl+P để in hoặc lưu thành PDF.</p>
+  <div id="plan"><div class="card"><p>Chọn ít nhất một nhóm ở phần trên rồi bấm “Tạo kế hoạch của em”.</p></div></div>
+  <h3>Khung chung cho mọi hướng</h3>
+  <table>
+    <tr><th>Giai đoạn</th><th>Việc nên làm</th></tr>
+    <tr><td><b>THCS (lớp 6–9)</b></td><td>Học chắc Toán, Khoa học tự nhiên, Tin học, Tiếng Anh; khám phá nhiều hướng; học an toàn số và dùng AI đúng cách; làm dự án nhỏ.</td></tr>
+    <tr><td><b>THPT (lớp 10–12)</b></td><td>Chọn tổ hợp môn phù hợp hướng đã chọn; luyện thi và dự án thực tế; tìm hiểu ngành đại học, nghề nghiệp; tham gia cuộc thi, câu lạc bộ.</td></tr>
+    <tr><td><b>Sau THPT</b></td><td>Chọn ngành, trường; học thêm kỹ năng mềm, ngoại ngữ; thực tập, tham gia nghiên cứu hoặc doanh nghiệp công nghệ.</td></tr>
+  </table>
+  <div class="card ok"><div class="lbl">Nam Linh đồng hành</div><p>Dùng phần mềm Vững bài (THCS) và phần mềm THPT để luyện bài mỗi ngày, khóa Gia sư AI để học cách dùng AI và kiểm chứng thông tin, rồi xem lại kế hoạch này mỗi học kỳ.</p></div>
+</section>
+
+<section id="nguon">
+  <h2>Nguồn tham khảo</h2>
+  <ul>
+    <li>Nghị quyết 57-NQ/TW ngày 22/12/2024 của Bộ Chính trị: toàn văn trên Cổng thông tin điện tử tỉnh Hà Tĩnh; báo Nhân Dân; VnExpress; Đại biểu Nhân dân.</li>
+    <li>Quyết định 1131/QĐ-TTg ngày 12/6/2025 (Phụ lục I và II): hethongphapluat.com; Tạp chí Công Thương; VCCI; SGGP.</li>
+    <li>Quyết định 21/2026/QĐ-TTg ngày 30/4/2026 (hiệu lực 01/07/2026): Tạp chí Công Thương; Thị trường Tài chính Tiền tệ; Báo Đấu thầu; Mekong ASEAN.</li>
+    <li>Nghị quyết 71-NQ/TW ngày 22/8/2025 về đột phá phát triển giáo dục và đào tạo.</li>
+    <li>Số liệu kinh tế số 2025 (≈14,02% GDP): Cục Thống kê, Bộ Tài chính, theo báo Đại biểu Nhân dân.</li>
+  </ul>
+  <div class="card warn"><div class="lbl">Cần xác minh trước khi dùng chính thức</div><p>Nội dung tổng hợp ở tháng 11/2026 từ các nguồn trên, chưa đối chiếu toàn văn bản gốc trên Công báo. Phần ngành học và môn nền tảng là gợi ý của Nam Linh. Nên kiểm tra lại văn bản mới nhất trước khi quyết định chọn ngành.</p></div>
+</section>
+</main>
+<footer class="wrap">Nam Linh Educenter · Định hướng chiến lược công nghệ quốc gia · Bản biên soạn đầu tiên.</footer>
+<script>
+var D={"so": {"n": "Công nghệ số", "s": ["Toán", "Tin học", "Tiếng Anh"], "m": ["Khoa học máy tính", "Khoa học dữ liệu", "Công nghệ thông tin", "Trí tuệ nhân tạo"], "k": ["Lập trình (Python)", "Tư duy thuật toán", "Thống kê, xác suất", "Đọc tài liệu tiếng Anh"], "a": ["Làm quen Scratch hoặc Python; học Toán chắc; học khóa Gia sư AI", "Tự làm một dự án nhỏ: chatbot học tập, trang web, phân tích dữ liệu điểm lớp"], "b": ["Chọn khối có Toán, Tin; thi học sinh giỏi Tin hoặc cuộc thi lập trình nếu có", "Học thêm thống kê, cấu trúc dữ liệu; làm 1–2 dự án đưa lên GitHub"]}, "mang": {"n": "Công nghệ mạng di động thế hệ sau", "s": ["Toán", "Vật lí", "Tin học"], "m": ["Điện tử – Viễn thông", "Kỹ thuật mạng", "Công nghệ thông tin"], "k": ["Mạng máy tính", "Điện tử cơ bản", "Sóng và truyền tín hiệu"], "a": ["Học Vật lí phần sóng, điện; tìm hiểu mạng gia đình (Wi-Fi, địa chỉ IP)", "Lắp thử mạch điện tử đơn giản"], "b": ["Chọn khối có Toán, Lí; học thêm cơ sở mạng máy tính", "Tìm hiểu chứng chỉ mạng nhập môn; thực hành với phần mềm mô phỏng mạng"]}, "robot": {"n": "Robot và tự động hóa", "s": ["Toán", "Vật lí", "Tin học"], "m": ["Cơ điện tử", "Tự động hóa", "Kỹ thuật robot", "Cơ khí"], "k": ["Lập trình vi điều khiển", "Cảm biến, động cơ", "Vẽ kỹ thuật"], "a": ["Làm mô hình robot đơn giản (bộ kit), học Toán và Vật lí cơ học, điện", "Tham gia câu lạc bộ khoa học kỹ thuật"], "b": ["Chọn khối có Toán, Lí; thực hành Arduino, mô phỏng", "Dự án: xe tự hành nhỏ, hệ thống tưới thông minh"]}, "sinh": {"n": "Công nghệ sinh học và y sinh tiên tiến", "s": ["Sinh học", "Hóa học", "Toán"], "m": ["Công nghệ sinh học", "Y – Dược", "Kỹ thuật y sinh", "Nông nghiệp công nghệ cao"], "k": ["Làm thí nghiệm, ghi chép chính xác", "Phân tích dữ liệu sinh học", "Đạo đức nghiên cứu"], "a": ["Học chắc Sinh, Hóa; làm thí nghiệm an toàn ở trường; đọc bài khoa học phổ thông có nguồn", "Tìm hiểu về giống cây trồng, vi sinh vật quanh nhà"], "b": ["Chọn khối có Sinh, Hóa; ôn thi học sinh giỏi nếu có", "Tìm hiểu ngành Y, Dược, Công nghệ sinh học; học thêm Tin sinh học cơ bản"]}, "nl": {"n": "Công nghệ năng lượng và vật liệu tiên tiến", "s": ["Vật lí", "Hóa học", "Toán"], "m": ["Kỹ thuật điện", "Năng lượng tái tạo", "Khoa học vật liệu", "Kỹ thuật hóa học"], "k": ["Tính toán công suất, hiệu suất", "An toàn điện", "Phân tích dữ liệu thí nghiệm"], "a": ["Học Vật lí phần điện, năng lượng; tìm hiểu điện mặt trời, pin ở nhà", "Làm dự án tiết kiệm điện cho trường hoặc gia đình"], "b": ["Chọn khối có Toán, Lí, Hóa; học thêm về điện, điện hóa", "Tìm hiểu ngành Kỹ thuật điện, Năng lượng, Vật liệu"]}, "chip": {"n": "Công nghệ chip bán dẫn", "s": ["Toán", "Vật lí", "Hóa học"], "m": ["Vi mạch bán dẫn", "Kỹ thuật điện tử", "Vật lí kỹ thuật", "Khoa học vật liệu"], "k": ["Điện tử số, tương tự", "Thiết kế mạch", "Tiếng Anh kỹ thuật"], "a": ["Học vững Toán, Lí (điện, hạt, vật chất); lắp mạch LED, cảm biến đơn giản", "Tìm hiểu chip làm từ gì, dùng ở đâu"], "b": ["Chọn khối A (Toán, Lí, Hóa) hoặc có Toán, Lí", "Học thêm điện tử số; tham gia cuộc thi điện tử nếu có"]}, "an": {"n": "Công nghệ an ninh mạng và lượng tử", "s": ["Toán", "Tin học", "Vật lí"], "m": ["An toàn thông tin", "An ninh mạng", "Vật lí (hướng lượng tử)"], "k": ["Mật mã cơ bản", "Hệ điều hành, mạng", "Thói quen an toàn số"], "a": ["Học khóa Gia sư AI: bảo vệ dữ liệu, nhận lừa đảo; học Toán (số học, xác suất)", "Tập thói quen: mật khẩu mạnh, xác thực hai lớp, báo người lớn"], "b": ["Chọn khối có Toán, Tin; học nền tảng mạng và hệ điều hành", "Tìm hiểu cuộc thi an toàn thông tin dành cho học sinh; thực hành trong môi trường được phép"]}, "bien": {"n": "Công nghệ biển, đại dương và lòng đất", "s": ["Địa lí", "Vật lí", "Hóa học"], "m": ["Địa chất", "Kỹ thuật dầu khí", "Kỹ thuật biển", "Khoa học Trái Đất"], "k": ["Đọc bản đồ, GIS", "Phân tích mẫu", "Làm việc ngoài hiện trường"], "a": ["Học Địa lí tự nhiên; tập đọc bản đồ địa chất, địa hình", "Quan sát và ghi chép về biển, núi, đất đá ở địa phương"], "b": ["Chọn khối có Toán, Lí, Hóa hoặc Địa; học thêm GIS cơ bản", "Tìm hiểu ngành Địa chất, Hải dương học, Dầu khí"]}, "hk": {"n": "Công nghệ hàng không và vũ trụ", "s": ["Toán", "Vật lí", "Tin học"], "m": ["Kỹ thuật hàng không – vũ trụ", "Điều khiển và tự động hóa", "Viễn thám, GIS"], "k": ["Cơ học, khí động học cơ bản", "Lập trình điều khiển", "Xử lý ảnh"], "a": ["Học Vật lí cơ học; làm máy bay giấy hoặc mô hình tên lửa nước an toàn", "Tìm hiểu cách vệ tinh chụp ảnh Trái Đất"], "b": ["Chọn khối có Toán, Lí; thực hành lập trình điều khiển, xử lý ảnh", "Tham gia câu lạc bộ mô hình bay hoặc cuộc thi công nghệ nếu có"]}, "rail": {"n": "Công nghệ đường sắt tốc độ cao và đường sắt đô thị", "s": ["Toán", "Vật lí"], "m": ["Xây dựng cầu đường", "Cơ khí", "Điện – Điều khiển", "Kỹ thuật đường sắt"], "k": ["Cơ học kết cấu", "Bản vẽ kỹ thuật", "Quản lý dự án"], "a": ["Học Toán, Vật lí (lực, chuyển động); quan sát cầu, đường, ga ở địa phương", "Làm mô hình cầu bằng que, giấy"], "b": ["Chọn khối có Toán, Lí; làm quen phần mềm vẽ kỹ thuật", "Tìm hiểu ngành Xây dựng, Cơ khí, Điện"]}};
+var KEY='nl-dhqg';
+function sel(){return Array.prototype.map.call(document.querySelectorAll('#pick input:checked'),function(i){return i.value})}
+function paint(){document.querySelectorAll('#pick .opt').forEach(function(o){o.classList.toggle('on',o.querySelector('input').checked)})}
+document.querySelectorAll('#pick input').forEach(function(i){i.addEventListener('change',function(){
+  if(sel().length>3){i.checked=false;document.getElementById('msg').textContent='Chọn tối đa 3 hướng.';}else{document.getElementById('msg').textContent='';}
+  paint();})});
+function esc(s){return String(s).replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
+function ul(a){return '<ul>'+a.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul>'}
+function chips(a){return '<div class="chips">'+a.map(function(x){return '<span>'+esc(x)+'</span>'}).join('')+'</div>'}
+function build(){
+  var ids=sel(),box=document.getElementById('plan');
+  if(!ids.length){document.getElementById('msg').textContent='Hãy chọn ít nhất 1 hướng.';return}
+  try{localStorage.setItem(KEY,JSON.stringify(ids))}catch(e){}
+  var h='';
+  ids.forEach(function(id){var g=D[id];
+    h+='<div class="card plan"><h3 style="margin-top:0">'+esc(g.n)+'</h3>'
+     +'<p><b>Môn nền tảng:</b></p>'+chips(g.s)+'<p><b>Nhóm ngành gợi ý:</b></p>'+chips(g.m)+'<p><b>Kỹ năng cần rèn:</b></p>'+chips(g.k)
+     +'<table><tr><th style="width:22%">Giai đoạn</th><th>Việc làm cụ thể</th><th style="width:16%">Xong?</th></tr>'
+     +'<tr><td><b>THCS (lớp 6–9)</b></td><td>'+ul(g.a)+'</td><td>☐</td></tr>'
+     +'<tr><td><b>THPT (lớp 10–12)</b></td><td>'+ul(g.b)+'</td><td>☐</td></tr>'
+     +'<tr><td><b>Mục tiêu đo được cho 3 tháng tới</b></td><td>(em tự viết, ví dụ: hoàn thành 1 dự án nhỏ, đạt 8 điểm trở lên ở môn nền tảng, đọc 3 nguồn chính thức về nhóm này)</td><td>☐</td></tr></table></div>';
+  });
+  box.innerHTML=h;box.scrollIntoView({behavior:'smooth'});
+}
+document.getElementById('mk').addEventListener('click',build);
+document.getElementById('rs').addEventListener('click',function(){document.querySelectorAll('#pick input').forEach(function(i){i.checked=false});paint();document.getElementById('plan').innerHTML='<div class="card"><p>Chọn ít nhất một nhóm ở phần trên rồi bấm “Tạo kế hoạch của em”.</p></div>';try{localStorage.removeItem(KEY)}catch(e){}});
+try{var s=JSON.parse(localStorage.getItem(KEY)||'[]');s.forEach(function(id){var c=document.querySelector('#pick input[value="'+id+'"]');if(c)c.checked=true});paint();if(s.length)build();}catch(e){}
+</script>
+</body></html>

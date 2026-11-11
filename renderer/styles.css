@@ -411,3 +411,28 @@ button.link {
 .games-lock svg { width: 13px; height: 13px; }
 
 .grade-tile .grade-num.long { font-size: 40px; }
+
+/* Màn hình rộng (Full HD 1920×1080): trang chủ dàn ngang, không phải cuộn nhiều. */
+@media (min-width: 1400px) {
+  main:has(#launch:not([hidden])) { max-width: 1840px; padding: 24px 40px; }
+  #launch { padding: 22px 40px; }
+  #launch .launch-head { display: grid; grid-template-columns: 1fr auto; align-items: end; column-gap: 24px; }
+  #launch .launch-head .hello { grid-column: 1; }
+  #launch .launch-head .greeting { grid-column: 1; margin-bottom: 6px; }
+  #launch .launch-head h1 { grid-column: 1; font-size: 36px; }
+  .grade-tiles { grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 16px; margin-bottom: 24px; }
+  .grade-tile { padding: 18px 20px 16px; }
+  .grade-num { font-size: 76px; }
+  .grade-note { font-size: 13px; }
+  .license-bar { grid-template-columns: minmax(0, 1fr) 230px minmax(0, 1.5fr); margin-bottom: 24px; }
+  .license-bar > div { padding: 18px 22px; }
+  .license-bar .pricing { grid-column: 3; grid-row: 1; border-top: 0; border-left: 1px solid var(--rule); }
+  .pricing-options { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .license-bar #license-info { font-size: 16px; }
+}
+/* Ô quá thấp (màn 1366×768 trở xuống) giữ bố cục cũ. */
+@media (min-width: 1400px) and (min-height: 1000px) {
+  .grade-num { font-size: 84px; }
+  .pricing-options { gap: 14px; }
+  .price-option { padding: 14px 18px; }
+}
