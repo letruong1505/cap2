@@ -42,7 +42,7 @@ window.NATIONAL_DATA = {
   {
    "id": "mang",
    "n": "Công nghệ mạng di động thế hệ sau",
-   "e": "5G, 5G-Advanced, 6G",
+   "e": "5G, 5G-Advanced",
    "p": [
     "Thiết bị và hệ thống mạng di động 5G/5G-Advanced"
    ],
@@ -181,7 +181,7 @@ window.NATIONAL_DATA = {
   {
    "id": "chip",
    "n": "Công nghệ chip bán dẫn",
-   "e": "Chip chuyên dụng, chip AI, chip IoT",
+   "e": "Chip chuyên dụng",
    "p": [
     "Chip chuyên dụng"
    ],
