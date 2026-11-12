@@ -51,8 +51,8 @@ function load(){
     return api('GET','/api/admin/transactions');
   }).then(function(d){
     var box=document.getElementById('tx');box.replaceChildren();if(!d)return;
-    var tb=el('table',{},el('tr',{},el('th',{},'Thời gian'),el('th',{},'Số tiền'),el('th',{},'Nội dung chuyển khoản'),el('th',{},'Kết quả')));
-    d.transactions.forEach(function(t){tb.append(el('tr',{},el('td',{},new Date(t.created_at).toLocaleString('vi-VN')),el('td',{},money(t.amount)),el('td',{},t.content||''),el('td',{},t.result+(t.order_code?' (NL-'+t.order_code+')':''))))});
+    var tb=el('table',{},el('tr',{},el('th',{},'Thời gian'),el('th',{},'Số tiền'),el('th',{},'Nội dung chuyển khoản'),el('th',{},'Kết quả'),el('th',{},'')));
+    d.transactions.forEach(function(t){tb.append(el('tr',{},el('td',{},new Date(t.created_at).toLocaleString('vi-VN')),el('td',{},money(t.amount)),el('td',{},t.content||''),el('td',{},t.result+(t.order_code?' (NL-'+t.order_code+')':'')),el('td',{},t.order_code?'':el('button',{class:'p',onclick:function(){var c=prompt('Gắn giao dịch '+money(t.amount)+' vào đơn có mã (6 ký tự sau NL):');if(!c)return;api('POST','/api/admin/transactions/'+t.id+'/attach',{code:c.trim()}).then(function(r){if(r&&r.key)showKey(r.key);else if(r)alert('Đã gắn: '+r.status);load()}).catch(function(e){alert(e.message)})}},'Gắn vào đơn'))))});
     box.append(d.transactions.length?tb:el('p',{},'Không có.'));
   }).catch(function(e){msg.textContent=e.message});
 }

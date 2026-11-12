@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { createRequire } from 'node:module';
 import catalog from '../../renderer/catalog.js';
 import { fakeD1, testEnv } from './helpers.js';
-import { createOrder, applyPayment, orderStatus, findCode, approveOrder, cancelOrder, reissueOrder, HttpError } from '../src/orders.js';
+import { createOrder, applyPayment, orderStatus, findCode, approveOrder, cancelOrder, reissueOrder, attachTransaction, HttpError } from '../src/orders.js';
 import { handle } from '../src/index.js';
 
 const require = createRequire(import.meta.url);
@@ -154,4 +154,15 @@ test('ký bằng WebCrypto khớp chữ ký của công cụ keygen (Node crypto
   const body = Buffer.from(JSON.stringify(payload));
   const theirs = 'NL1-' + body.toString('base64url') + '.' + Buffer.from(crypto.sign(null, body, privateKey)).toString('base64url');
   assert.equal(mine, theirs);
+});
+
+test('gắn giao dịch lạc vào đơn rồi cấp key', async () => {
+  const db = fakeD1(); const { env, publicKey } = testEnv();
+  assert.equal(await applyPayment(db, env, catalog, { id: 7, amount: 1398000, content: 'NL ZZZZZZ' }), 'unmatched');
+  await createOrder(db, catalog, input(), new Date(), fixedRand);
+  const r = await attachTransaction(db, env, catalog, 7, 'abcdef');
+  assert.equal(r.status, 'paid');
+  assert.ok(parseKey(r.key, publicKey).ok);
+  assert.equal((await orderStatus(db, env, catalog, 'ABCDEF', MACHINE)).status, 'paid');
+  await assert.rejects(attachTransaction(db, env, catalog, 7, 'ABCDEF'), (e) => e.status === 409);
 });

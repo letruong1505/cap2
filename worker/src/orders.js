@@ -147,3 +147,21 @@ export async function reissueOrder(db, env, catalog, code, machine, now = new Da
   await db.prepare('UPDATE orders SET reissues = reissues + 1 WHERE code = ?1').bind(o.code).run();
   return key;
 }
+
+// Gắn giao dịch tiền vào (đã lưu nhưng chưa khớp đơn) vào một đơn có thật, rồi cấp key nếu đủ tiền.
+export async function attachTransaction(db, env, catalog, txId, code, now = new Date()) {
+  const tx = await db.prepare('SELECT id, amount, result, order_code FROM transactions WHERE id = ?1').bind(txId).first();
+  if (!tx) throw new HttpError(404, 'Không tìm thấy giao dịch.');
+  if (tx.order_code) throw new HttpError(409, 'Giao dịch này đã gắn vào đơn ' + tx.order_code + '.');
+  const order = await getOrder(db, String(code || '').toUpperCase());
+  if (!order) throw new HttpError(404, 'Không tìm thấy đơn.');
+  if (order.status === 'cancelled') throw new HttpError(409, 'Đơn đã hủy.');
+  const paid = (order.paid_amount || 0) + tx.amount;
+  const full = paid >= order.amount;
+  await db.prepare('UPDATE orders SET status = ?1, paid_amount = ?2, paid_at = CASE WHEN ?1 = \'paid\' THEN COALESCE(paid_at, ?3) ELSE paid_at END, tx_id = ?4, note = ?5 WHERE code = ?6')
+    .bind(full ? 'paid' : 'underpaid', paid, nowIso(now), tx.id, 'Gắn giao dịch ' + tx.id, order.code).run();
+  let key = null;
+  if (full) key = await issueKey(db, env, catalog, { ...order }, now).catch(() => null);
+  await db.prepare('UPDATE transactions SET result = ?1, order_code = ?2 WHERE id = ?3').bind(full ? 'paid-manual' : 'underpaid', order.code, tx.id).run();
+  return { key, status: full ? 'paid' : 'underpaid' };
+}
