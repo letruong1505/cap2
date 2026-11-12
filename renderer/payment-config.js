@@ -2,10 +2,10 @@
 // Điền đủ 4 trường bank*/account* trước khi phát hành; để trống thì phần mềm không tạo mã QR.
 // bankBin: mã BIN 6 số của ngân hàng theo danh mục VietQR (ví dụ Vietcombank 970436, MB 970422, Techcombank 970407).
 window.NL_PAYMENT = {
-  bankBin: '',
-  bankName: '',
-  accountNo: '',
-  accountName: '',
+  bankBin: '970422',
+  bankName: 'Ngân hàng TMCP Quân đội (MB Bank)',
+  accountNo: '0906027657',
+  accountName: 'LE VAN TRUONG',
   zalo: '0968 646 853',
   email: 'namlinh.educenter@gmail.com',
 };

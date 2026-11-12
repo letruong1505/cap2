@@ -11,7 +11,8 @@ $('permanent').addEventListener('change', syncExpiry);
 syncExpiry();
 $('issue').addEventListener('click', async () => {
   const grades = [...document.querySelectorAll('#grades input[type=checkbox][value]:checked')].map((c) => c.value);
-  const r = await window.kg.issue({ owner: $('owner').value, grades, allGrades: $('all').checked, machine: $('machine').value, anyMachine: $('any').checked, permanent: $('permanent').checked, expires: $('expires').value });
+  const courses = [...document.querySelectorAll('#courses input[type=checkbox]:checked')].map((c) => c.value);
+  const r = await window.kg.issue({ courses, owner: $('owner').value, grades, allGrades: $('all').checked, machine: $('machine').value, anyMachine: $('any').checked, permanent: $('permanent').checked, expires: $('expires').value });
   const msg = $('msg');
   if (r.error) { msg.className = 'err'; msg.textContent = r.error; return; }
   $('out').value = r.key;
