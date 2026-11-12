@@ -46,7 +46,7 @@ const PRODUCT = require('./product.json');
 const SUBJECTS = PRODUCT.subjects;
 
 function productInfo() {
-  return { title: PRODUCT.title, grades: PRODUCT.grades, subjects: PRODUCT.subjects };
+  return { id: PRODUCT.id, title: PRODUCT.title, grades: PRODUCT.grades, subjects: PRODUCT.subjects };
 }
 
 function assertSubject(subject) {

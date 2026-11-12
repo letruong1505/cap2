@@ -4,6 +4,7 @@
 const fs = require('fs');
 const path = require('path');
 const R = require('../core/rational.js');
+const EN = require('../renderer/english.js');
 
 const CONTENT_DIR = path.join(__dirname, '..', 'content');
 const LEVELS = ['Biết', 'Hiểu', 'Vận dụng', 'Nâng cao'];
@@ -77,6 +78,12 @@ function validateLesson(lesson, relPath) {
     errs.push(...checkFigurePath(block.figure, 'lý thuyết'));
     if (!block.caption) errs.push('lý thuyết: hình thiếu chú thích');
   }
+
+  if (lesson.crossword) errs.push(...EN.validate(lesson.crossword));
+  for (const v of lesson.vocab || []) if (!v.w || !v.pos || !v.vi) errs.push(`từ vựng "${v.w}": thiếu từ, loại từ hoặc nghĩa`);
+  if (lesson.reading && (!lesson.reading.title || !Array.isArray(lesson.reading.paragraphs) || !lesson.reading.paragraphs.length)) errs.push('đọc hiểu: thiếu tiêu đề hoặc đoạn văn');
+  const wr = lesson.writing;
+  if (wr && (!wr.prompt || !Array.isArray(wr.keywords) || !Array.isArray(wr.checklist) || !wr.checklist.length || !Array.isArray(wr.sample) || !Number.isInteger(wr.minWords))) errs.push('phần viết: thiếu đề, từ khóa, bảng kiểm, bài mẫu hoặc số từ tối thiểu');
 
   const ids = new Set();
   for (const item of lesson.items || []) {

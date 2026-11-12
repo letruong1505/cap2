@@ -288,8 +288,8 @@ const LOCK_SVG = '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="7" 
 
 // Tách "Bài 12. Tên bài" thành số bài và tên bài để hiển thị theo cột.
 function splitLessonTitle(title) {
-  const m = /^Bài (\d+)\.\s*(.*)$/.exec(title);
-  return m ? { no: `Bài ${m[1]}`, name: m[2] } : { no: '', name: title };
+  const m = /^(Bài|Unit) (\d+)\.\s*(.*)$/.exec(title);
+  return m ? { no: `${m[1]} ${m[2]}`, name: m[3] } : { no: '', name: title };
 }
 
 // Màn hình chính: danh sách chương và bài theo mục lục của môn.
@@ -392,6 +392,7 @@ function setSections(mode) {
   document.getElementById('sec-theory').hidden = !practice;
   if (!practice) document.getElementById('sec-advanced').hidden = true;
   document.getElementById('sec-examples').hidden = !practice;
+  if (!practice) { document.getElementById('sec-english-top').hidden = true; document.getElementById('sec-english-bottom').hidden = true; }
   document.getElementById('score').hidden = !practice;
   document.getElementById('sec-actions').hidden = !practice;
   document.getElementById('quiz-heading').textContent = {
@@ -430,7 +431,7 @@ async function openLesson(relPath, mode = 'practice') {
   try {
     const lesson = await window.vungBai.loadLesson(relPath);
     document.getElementById('breadcrumb').textContent =
-      `Lớp ${lesson.grade} › ${{ toan: 'Toán', ly: 'Vật lí', hoa: 'Hoá học', sinh: 'Sinh học', 'lich-su': 'Lịch sử', 'dia-li': 'Địa lí' }[lesson.subject] || lesson.subject} › ${lesson.chapter}`;
+      `Lớp ${lesson.grade} › ${{ anh: 'Tiếng Anh', toan: 'Toán', ly: 'Vật lí', hoa: 'Hoá học', sinh: 'Sinh học', 'lich-su': 'Lịch sử', 'dia-li': 'Địa lí' }[lesson.subject] || lesson.subject} › ${lesson.chapter}`;
 
     if (lesson.kind === 'review') {
       const view = mode === 'solutions' ? 'solutions' : 'review';
@@ -456,6 +457,9 @@ async function openLesson(relPath, mode = 'practice') {
     setSections('practice');
     const attempt = newAttempt(lesson);
     renderTheory(lesson);
+    if (window.NL_ENGLISH && window.NL_ENGLISH.render) {
+      window.NL_ENGLISH.render(lesson, { top: document.getElementById('sec-english-top'), bottom: document.getElementById('sec-english-bottom') });
+    }
     renderExamples(lesson);
     renderQuiz(lesson, attempt);
 
@@ -476,7 +480,7 @@ async function openLesson(relPath, mode = 'practice') {
 // Màn hình khởi động: chọn lớp, thông tin bản quyền và khu vực quảng cáo.
 // Lớp và môn lấy từ cấu hình sản phẩm (THCS hoặc THPT), nạp khi mở app.
 let GRADES = [];
-const SUBJECT_BASE = { toan: 'Toán', ly: 'Vật lí', hoa: 'Hoá học', sinh: 'Sinh học', lichsu: 'Lịch sử', diali: 'Địa lí' };
+const SUBJECT_BASE = { anh: 'Tiếng Anh', toan: 'Toán', ly: 'Vật lí', hoa: 'Hoá học', sinh: 'Sinh học', lichsu: 'Lịch sử', diali: 'Địa lí' };
 const GRADE_SUBJECTS = {};
 // Giá bản quyền theo lớp, hiển thị dưới mỗi ô lớp.
 const GRADE_PRICE = { 6: '399.000 đ', 7: '399.000 đ', 8: '399.000 đ', 9: '399.000 đ', 10: '449.000 đ', 11: '449.000 đ', 12: '499.000 đ' };

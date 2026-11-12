@@ -36,6 +36,44 @@ body {
 .update-bar button { border: 0; border-radius: 8px; padding: 6px 12px; font: inherit; font-weight: 600; background: #ffcf3f; color: #15324e; cursor: pointer; }
 .update-bar button.ghost { background: transparent; color: #cfe0f2; font-weight: 400; }
 
+/* Tiếng Anh: từ vựng, ô chữ, đọc hiểu, viết */
+.en-sec { margin: 22px 0; }
+.vocab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 10px; }
+.vocab-card { border: 1px solid var(--rule); border-radius: 12px; padding: 10px 12px; background: #fff; }
+.vocab-top { display: flex; align-items: baseline; gap: 6px; }
+.vocab-top b { font-size: 16px; color: var(--ink); }
+.vocab-pos { color: var(--mute); font-size: 12.5px; }
+.vocab-speak { margin-left: auto; border: 0; background: transparent; cursor: pointer; font-size: 16px; }
+.vocab-vi { color: var(--mute); margin-top: 3px; font-size: 14px; }
+.reading-title { margin: 6px 0; }
+.reading-text { max-width: 72ch; line-height: 1.8; }
+.cw-bar { display: flex; gap: 18px; font-weight: 600; margin: 8px 0 12px; }
+.cw-grid { display: grid; gap: 4px; overflow-x: auto; padding-bottom: 6px; }
+.cw-line { display: flex; gap: 4px; align-items: center; padding: 3px; border-radius: 10px; }
+.cw-line.active { background: #fff3c4; }
+.cw-no { width: 28px; height: 28px; border-radius: 50%; border: 0; background: var(--ink); color: #fff; font-weight: 700; cursor: pointer; flex: none; }
+.cw-no:disabled { background: #9db0c4; cursor: default; }
+.cw-cell, .cw-gap { width: 32px; height: 32px; flex: none; }
+.cw-cell { display: grid; place-items: center; border-radius: 6px; background: #1f4d85; color: #fff; font-weight: 700; border: 1px solid #14355c; }
+.cw-cell.cw-key { background: #c0392b; border-color: #8f2a1f; }
+.cw-cell.on { background: #fff; color: var(--ink); border-color: var(--sky); }
+.cw-cell.cw-key.on { background: #ffe0dc; color: #8f2a1f; }
+.cw-panel, .cw-keyword { margin-top: 12px; padding: 12px 14px; border: 1px solid var(--rule); border-radius: 12px; background: #fff; }
+.cw-clue { margin: 0 0 6px; font-weight: 600; }
+.cw-hint { margin: 0 0 8px; color: var(--sky); }
+.cw-btns, .cw-answer { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.cw-answer input { flex: 1; min-width: 160px; }
+.cw-msg { margin: 10px 0 0; font-weight: 600; color: var(--sky); }
+.cw-final { font-size: 18px; font-weight: 700; }
+.writing-prompt { font-weight: 600; }
+.writing-area { width: 100%; box-sizing: border-box; padding: 10px; border: 1px solid var(--rule); border-radius: 10px; font: inherit; line-height: 1.6; }
+.writing-stat { margin: 6px 0; color: var(--mute); }
+.writing-stat.ok { color: #1c7c4a; font-weight: 600; }
+.writing-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.chip { padding: 2px 10px; border-radius: 999px; background: #e7edf4; color: var(--mute); font-size: 13px; }
+.chip.ok { background: #d8f1e3; color: #1c7c4a; font-weight: 600; }
+.writing-sample { margin-top: 8px; padding: 10px 14px; background: #f6f9fc; border-radius: 10px; }
+
 main { padding: 24px; max-width: 900px; margin: 0 auto; }
 
 .panel {
