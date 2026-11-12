@@ -12,5 +12,10 @@ contextBridge.exposeInMainWorld('vungBai', {
   activateLicense: (key) => ipcRenderer.invoke('license:activate', key),
   createOrder: (order) => ipcRenderer.invoke('order:create', order),
   orderStatus: (code) => ipcRenderer.invoke('order:status', code),
+  updateStatus: () => ipcRenderer.invoke('update:status'),
+  checkUpdate: () => ipcRenderer.invoke('update:check'),
+  downloadUpdate: () => ipcRenderer.invoke('update:download'),
+  installUpdate: () => ipcRenderer.invoke('update:install'),
+  onUpdate: (cb) => ipcRenderer.on('update:status', (_e, st) => cb(st)),
   removeLicense: () => ipcRenderer.invoke('license:remove'),
 });

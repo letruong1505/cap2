@@ -652,7 +652,38 @@ function showSubjects(grade) {
   showOnly('subjects');
 }
 
+// Thanh thông báo cập nhật: luôn hỏi trước khi tải và trước khi cài.
+function setupUpdateBar() {
+  const bar = document.getElementById('update-bar');
+  if (!bar || !window.vungBai.onUpdate) return;
+  let dismissed = '';
+  const btn = (label, fn, cls) => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.textContent = label; if (cls) b.className = cls; b.addEventListener('click', fn);
+    return b;
+  };
+  const render = (st) => {
+    bar.replaceChildren();
+    const msg = document.createElement('span');
+    let acts = [];
+    if (st.state === 'available' && dismissed !== st.version) {
+      msg.textContent = `Có phiên bản mới ${st.version}.`;
+      acts = [btn('Tải về', () => window.vungBai.downloadUpdate()), btn('Để sau', () => { dismissed = st.version; render({ state: 'none' }); }, 'ghost')];
+    } else if (st.state === 'downloading') {
+      msg.textContent = `Đang tải bản mới… ${st.percent || 0}%`;
+    } else if (st.state === 'ready') {
+      msg.textContent = `Đã tải xong phiên bản ${st.version}.`;
+      acts = [btn('Khởi động lại để cài', () => window.vungBai.installUpdate()), btn('Để sau', () => { bar.hidden = true; }, 'ghost')];
+    } else { bar.hidden = true; return; }
+    bar.append(msg, ...acts);
+    bar.hidden = false;
+  };
+  window.vungBai.onUpdate(render);
+  window.vungBai.updateStatus().then(render).catch(() => {});
+}
+
 async function init() {
+  try { setupUpdateBar(); } catch { /* cập nhật là phụ, không chặn app */ }
   try {
     const info = await window.vungBai.appInfo();
     document.getElementById('build').textContent = `Phiên bản ${info.version}`;

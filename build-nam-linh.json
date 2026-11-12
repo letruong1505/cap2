@@ -14,7 +14,7 @@
   ],
   "win": {
     "target": "nsis",
-    "artifactName": "Nam Linh Educenter.exe"
+    "artifactName": "Nam-Linh-Educenter-Setup-${version}.exe"
   },
   "nsis": {
     "oneClick": false,
@@ -25,5 +25,11 @@
     "shortcutName": "Nam Linh Educenter",
     "uninstallDisplayName": "Nam Linh Educenter",
     "deleteAppDataOnUninstall": false
-  }
+  },
+  "publish": [
+    {
+      "provider": "generic",
+      "url": "https://updates.invalid/educenter"
+    }
+  ]
 }

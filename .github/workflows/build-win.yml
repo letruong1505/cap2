@@ -54,6 +54,23 @@ jobs:
           node tools/select-product.js nam-linh-educenter
           for i in 1 2 3; do npm run dist:win:nam-linh && exit 0; echo "build lỗi, thử lại lần $i"; sleep 20; done; exit 1
 
+      - name: Publish update to Cloudflare R2
+        shell: bash
+        env:
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+        run: |
+          if [ -z "$R2_BUCKET" ] || [ -z "$R2_ACCOUNT_ID" ]; then echo "Chưa cấu hình R2, bỏ qua bước đẩy bản cập nhật."; exit 0; fi
+          EP="https://$R2_ACCOUNT_ID.r2.cloudflarestorage.com"
+          cd dist-thpt
+          ls
+          # Đẩy file cài đặt và blockmap trước, latest.yml sau cùng để máy khách không thấy bản mới khi file chưa lên đủ.
+          for f in *.exe *.exe.blockmap; do aws s3 cp "$f" "s3://$R2_BUCKET/educenter/$f" --endpoint-url "$EP"; done
+          aws s3 cp latest.yml "s3://$R2_BUCKET/educenter/latest.yml" --endpoint-url "$EP" --cache-control "no-cache"
+
       - name: Build key issuing tool exe
         shell: bash
         env:

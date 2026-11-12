@@ -4,6 +4,7 @@ const path = require('path');
 const { loadManifest, loadLesson, productInfo } = require('./content-loader');
 const lic = require('./license');
 const orders = require('./orders');
+const { createUpdater } = require('./updater');
 
 const APP_TITLE = productInfo().title;
 
@@ -39,6 +40,27 @@ ipcMain.handle('order:create', (_event, order) => orders.createOrder(order));
 ipcMain.handle('order:status', (_event, code) => orders.orderStatus(code));
 ipcMain.handle('license:remove', () => { lic.deactivate(licenseStoreDir()); return licenseNow(); });
 
+let updater = null;
+function setupUpdater(win) {
+  let url = '';
+  try { url = JSON.parse(fs.readFileSync(path.join(__dirname, 'update-config.json'), 'utf8')).url; } catch { /* không có cấu hình thì tắt cập nhật */ }
+  let autoUpdater = null;
+  if (app.isPackaged && productInfo().id === 'nam-linh-educenter') {
+    try { ({ autoUpdater } = require('electron-updater')); } catch { autoUpdater = null; }
+  }
+  updater = createUpdater({
+    autoUpdater,
+    enabled: !!autoUpdater,
+    url,
+    send: (st) => { if (!win.isDestroyed()) win.webContents.send('update:status', st); },
+  });
+  if (updater.active) setTimeout(() => updater.check(), 8000);
+}
+ipcMain.handle('update:status', () => (updater ? updater.status() : { state: 'off' }));
+ipcMain.handle('update:check', () => (updater ? updater.check() : { state: 'off' }));
+ipcMain.handle('update:download', () => (updater ? updater.download() : { state: 'off' }));
+ipcMain.handle('update:install', () => (updater ? updater.install() : false));
+
 function createWindow() {
   const win = new BrowserWindow({
     width: 1200,
@@ -54,6 +76,7 @@ function createWindow() {
   });
   win.setMenuBarVisibility(false);
   win.loadFile(path.join(__dirname, '..', 'renderer', 'index.html'));
+  setupUpdater(win);
 }
 
 app.whenReady().then(() => {
