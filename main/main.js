@@ -54,7 +54,11 @@ function setupUpdater(win) {
     url,
     send: (st) => { if (!win.isDestroyed()) win.webContents.send('update:status', st); },
   });
-  if (updater.active) setTimeout(() => updater.check(), 8000);
+  // Kiểm tra sau khi mở 8 giây, rồi lặp lại mỗi 2 giờ khi phần mềm vẫn đang mở.
+  if (updater.active) {
+    setTimeout(() => updater.check(), 8000);
+    setInterval(() => updater.check(), 2 * 60 * 60 * 1000);
+  }
 }
 ipcMain.handle('update:status', () => (updater ? updater.status() : { state: 'off' }));
 ipcMain.handle('update:check', () => (updater ? updater.check() : { state: 'off' }));

@@ -661,6 +661,7 @@ function setupUpdateBar() {
   const bar = document.getElementById('update-bar');
   if (!bar || !window.vungBai.onUpdate) return;
   let dismissed = '';
+  let manual = false;
   const btn = (label, fn, cls) => {
     const b = document.createElement('button');
     b.type = 'button'; b.textContent = label; if (cls) b.className = cls; b.addEventListener('click', fn);
@@ -673,6 +674,12 @@ function setupUpdateBar() {
     if (st.state === 'available' && dismissed !== st.version) {
       msg.textContent = `Có phiên bản mới ${st.version}.`;
       acts = [btn('Tải về', () => window.vungBai.downloadUpdate()), btn('Để sau', () => { dismissed = st.version; render({ state: 'none' }); }, 'ghost')];
+    } else if (st.state === 'checking' && manual) {
+      msg.textContent = 'Đang kiểm tra bản mới…';
+    } else if ((st.state === 'none' || st.state === 'error') && manual) {
+      manual = false;
+      msg.textContent = st.state === 'none' ? 'Bạn đang dùng phiên bản mới nhất.' : 'Chưa kiểm tra được (không có mạng?).';
+      acts = [btn('Đóng', () => { bar.hidden = true; }, 'ghost')];
     } else if (st.state === 'downloading') {
       msg.textContent = `Đang tải bản mới… ${st.percent || 0}%`;
     } else if (st.state === 'ready') {
@@ -684,6 +691,12 @@ function setupUpdateBar() {
   };
   window.vungBai.onUpdate(render);
   window.vungBai.updateStatus().then(render).catch(() => {});
+  // Bấm vào dòng phiên bản ở góc màn hình để kiểm tra ngay.
+  const ver = document.getElementById('build');
+  if (ver) {
+    ver.title = 'Bấm để kiểm tra bản mới';
+    ver.addEventListener('click', () => { manual = true; dismissed = ''; render({ state: 'checking' }); window.vungBai.checkUpdate().then(render).catch(() => {}); });
+  }
 }
 
 async function init() {
