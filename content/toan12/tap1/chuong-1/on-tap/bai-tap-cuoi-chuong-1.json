@@ -141,7 +141,8 @@
       "stem": "Số lượng sản phẩm của một sản phẩm mới theo mô hình logistic f(t) = 5000/(1 + 5e^(−t)) (t là năm). Đạo hàm f'(t) lớn nhất khi t = ? (năm, làm tròn đến số nguyên gần nhất)",
       "expr": "2",
       "answer": "2",
-      "explain": "f'(t) đạt lớn nhất khi f''(t) = 0, tức e^(−t) = 1/5, t = ln 5 ≈ 1,61 năm. Số nguyên gần nhất là 2 năm."
+      "explain": "f'(t) đạt lớn nhất khi f''(t) = 0, tức e^(−t) = 1/5, t = ln 5 ≈ 1,61 năm. Số nguyên gần nhất là 2 năm.",
+      "figure": "figures/t12-c1-q08.svg"
     },
     {
       "id": "q09",
@@ -265,7 +266,8 @@
         "1": "Mẫu bằng 0 là điều kiện cần nhưng chưa đủ; cần giới hạn vô cực thực sự.",
         "2": "Tử số bằng 0 tại x = 1 chính là lý do x = 1 bị khử, không tạo tiệm cận.",
         "3": "Đồ thị không xác định tại một điểm không đủ để có tiệm cận đứng."
-      }
+      },
+      "figure": "figures/t12-c1-q18.svg"
     },
     {
       "id": "q19",
@@ -285,7 +287,8 @@
         "1": "Tiệm cận đứng là x = −1/2, không phải x = 1/2.",
         "2": "Tiệm cận ngang là y = −1/2, không phải y = 3.",
         "3": "Đồ thị còn có tiệm cận ngang y = −1/2."
-      }
+      },
+      "figure": "figures/t12-c1-q19.svg"
     },
     {
       "id": "q20",
@@ -305,7 +308,8 @@
         "1": "Phép chia cho thấy phần dư bằng 5 nên hệ số b là −3, không phải +1.",
         "2": "Hệ số a của tiệm cận xiên là 2, không phải 1.",
         "3": "Hàm phân thức có bậc tử lớn hơn bậc mẫu đúng một, nên luôn có tiệm cận xiên."
-      }
+      },
+      "figure": "figures/t12-c1-q20.svg"
     },
     {
       "id": "q21",
@@ -345,7 +349,8 @@
         "1": "Mẫu số là x, nên tiệm cận đứng là x = 0; không có tiệm cận ngang y = 0.",
         "2": "Không có tiệm cận ngang y = 2 vì P(x) → ∞ khi x → ∞.",
         "3": "Hàm có tiệm cận, vì có cả tiệm cận đứng x = 0 và tiệm cận xiên y = 2x."
-      }
+      },
+      "figure": "figures/t12-c1-q22.svg"
     },
     {
       "id": "q23",
@@ -1070,7 +1075,8 @@
         "0": "Khi x → ∞ hàm số tiến đến vô cực, không tiến về −2 nên y = −2 không phải tiệm cận.",
         "1": "Bậc của tử (2) lớn hơn bậc của mẫu (1) nên không có tiệm cận ngang.",
         "2": "Hàm có tiệm cận xiên y = x; x = −2 là tiệm cận đứng, không phải y = x + 2."
-      }
+      },
+      "figure": "figures/t12-c1-q64.svg"
     },
     {
       "id": "q65",
@@ -1274,7 +1280,8 @@
         "1": "Mẫu bằng 0 tại x = −1, không phải x = 1.",
         "2": "Tiệm cận ngang là y = 3 (tỉ số hệ số x).",
         "3": "Tiệm cận đứng là x = −1; x = 3 không phải tiệm cận."
-      }
+      },
+      "figure": "figures/t12-b3-ex1b.svg"
     },
     {
       "id": "q75",
@@ -1294,7 +1301,8 @@
         "1": "Bậc tử lớn hơn bậc mẫu nên không có tiệm cận ngang y = 0.",
         "2": "Hệ số góc của tiệm cận xiên là 1/2, không phải 1.",
         "3": "Hệ số góc đúng là 1/2 và có hệ số tự do 5/4."
-      }
+      },
+      "figure": "figures/t12-c1-q75.svg"
     },
     {
       "id": "q76",
@@ -1546,7 +1554,8 @@
       "answer": "2",
       "explain": "lim (2x+1)/(x+1) = 2 khi x → ±∞ nên tiệm cận ngang là y = 2. Tiệm cận đứng là x = −1.",
       "bookPage": 31,
-      "id": "q88"
+      "id": "q88",
+      "figure": "figures/t12-c1-q88.svg"
     },
     {
       "level": "Hiểu",
@@ -1556,7 +1565,8 @@
       "answer": "1",
       "explain": "Mẫu 1 − x = 0 ⇔ x = 1 và tử x + 3 = 4 ≠ 0 tại x = 1, nên x = 1 là tiệm cận đứng. Tiệm cận ngang là y = −1.",
       "bookPage": 31,
-      "id": "q89"
+      "id": "q89",
+      "figure": "figures/t12-c1-q89.svg"
     },
     {
       "level": "Hiểu",
@@ -1577,7 +1587,8 @@
         "3": "Hệ số góc đúng là 2 nhưng hằng số phải là 1 (từ thương 2x + 1)."
       },
       "bookPage": 31,
-      "id": "q90"
+      "id": "q90",
+      "figure": "figures/t12-c1-q90.svg"
     },
     {
       "level": "Hiểu",
@@ -1598,7 +1609,8 @@
         "3": "Phần dư 4/(x + 3) → 0 nhưng hằng số trong thương là −1, không phải 0."
       },
       "bookPage": 31,
-      "id": "q91"
+      "id": "q91",
+      "figure": "figures/t12-c1-q91.svg"
     },
     {
       "level": "Hiểu",

@@ -38,7 +38,8 @@
       "answer": "4",
       "steps": [
         "S = ∫_0^2 |x³|dx = ∫_0^2 x³dx = x⁴/4 |_0^2 = 4."
-      ]
+      ],
+      "figure": "figures/t12-c4-b13-x3.svg"
     },
     {
       "problem": "Ví dụ 3: Tính diện tích hình phẳng giới hạn bởi hai parabol y = 4 − x² và y = x², hai đường thẳng x = −1, x = 1.",
@@ -46,7 +47,8 @@
       "answer": "20/3",
       "steps": [
         "S = ∫_{−1}^{1} |4 − 2x²|dx = ∫_{−1}^{1} (4 − 2x²)dx = (4x − 2x³/3)|_{−1}^{1} = 20/3."
-      ]
+      ],
+      "figure": "figures/t12-c4-b13-par.svg"
     },
     {
       "problem": "Ví dụ 5: Tính thể tích khối lăng trụ có diện tích đáy S và chiều cao h.",
@@ -55,7 +57,8 @@
         "Thiết diện song song với đáy có diện tích không đổi S(x) = S.",
         "V = ∫_0^h S dx = Sh."
       ],
-      "answer": "V = Sh"
+      "answer": "V = Sh",
+      "figure": "figures/t12-c4-lang-tru.svg"
     },
     {
       "problem": "Ví dụ 6: Tính thể tích khối chóp đều có đáy là hình vuông cạnh L và chiều cao h.",
@@ -64,7 +67,8 @@
         "Thiết diện tại x có diện tích S(x) = (L²/h²)x².",
         "V = ∫_0^h (L²/h²)x²dx = L²h/3."
       ],
-      "answer": "V = L²h/3"
+      "answer": "V = L²h/3",
+      "figure": "figures/t12-c4-chop-deu.svg"
     },
     {
       "problem": "Ví dụ 7: Tính thể tích khối tròn xoay sinh ra khi quay quanh Ox hình phẳng giới hạn bởi y = √x, trục hoành, x = 0, x = 1.",
@@ -72,7 +76,8 @@
       "steps": [
         "V = π∫_0^1 (√x)²dx = π∫_0^1 x dx = π/2."
       ],
-      "answer": "V = π/2"
+      "answer": "V = π/2",
+      "figure": "figures/t12-c4-b13-xoay.svg"
     }
   ],
   "items": [
@@ -176,7 +181,8 @@
         "1": "Đây là công thức khối chóp, không phải lăng trụ.",
         "2": "Diện tích đáy không bình phương.",
         "3": "Không có hệ số 2 trong công thức."
-      }
+      },
+      "figure": "figures/t12-c4-lang-tru.svg"
     },
     {
       "id": "q08",
@@ -196,7 +202,8 @@
         "1": "Đây là công thức của lăng trụ.",
         "2": "Hệ số 1/2 không phù hợp với khối chóp.",
         "3": "Biểu thức không đúng thứ nguyên."
-      }
+      },
+      "figure": "figures/t12-c4-chop-deu.svg"
     },
     {
       "id": "q09",
