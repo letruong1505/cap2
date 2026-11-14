@@ -645,3 +645,9 @@ button.ghost:hover { background: var(--paper); }
 
 .buy-status { margin: 12px 0 4px; font-size: 14.5px; font-weight: 600; color: var(--ink); }
 .buy-ok { font-size: 17px; font-weight: 700; color: #1d6a37; }
+
+.launch-tools { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0; }
+.launch-tools button { padding: 10px 16px; border-radius: 10px; border: 1px solid #b8c7d1; background: #f4f9fc; cursor: pointer; font-size: 15px; }
+.launch-tools button:hover { background: #e3f0f7; }
+.report-list { line-height: 1.8; margin: 12px 0 18px 20px; }
+#report-body input[type="text"] { display: block; margin: 10px 0; padding: 8px; width: 280px; max-width: 100%; }

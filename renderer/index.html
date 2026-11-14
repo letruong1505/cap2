@@ -21,6 +21,10 @@
         <h1>Chọn lớp học</h1>
       </header>
       <div class="grade-tiles" id="grades"></div>
+      <div class="launch-tools">
+        <button type="button" id="open-review">Sổ câu sai</button>
+        <button type="button" id="open-report">Báo cáo tuần cho phụ huynh</button>
+      </div>
 
       <div class="license-bar">
         <div class="license-main">
@@ -90,6 +94,16 @@
       <div class="grades" id="subject-list"></div>
     </section>
 
+    <section id="review" class="panel" hidden>
+      <button id="btn-review-back" class="back-link" type="button">← Chọn lớp</button>
+      <div id="review-body"></div>
+    </section>
+
+    <section id="report" class="panel" hidden>
+      <button id="btn-report-back" class="back-link" type="button">← Chọn lớp</button>
+      <div id="report-body"></div>
+    </section>
+
     <section id="purchase" class="panel" hidden>
       <button id="btn-purchase-back" class="back-link" type="button">← Chọn lớp</button>
       <div id="purchase-body"></div>
@@ -153,6 +167,8 @@
   <script src="english.js"></script>
   <script src="games-logic.js"></script>
   <script src="games.js"></script>
+  <script src="progress.js"></script>
+  <script src="progress-ui.js"></script>
   <script src="vendor/qrcode.js"></script>
   <script src="vietqr.js"></script>
   <script src="payment-config.js"></script>

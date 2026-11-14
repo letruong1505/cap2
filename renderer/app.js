@@ -50,7 +50,7 @@ function newAttempt(lesson) {
       order[item.id] = shuffle(item.choices.map((_, i) => i));
     }
   }
-  return { questions, order, answers: {}, submitted: false };
+  return { questions, order, answers: {}, submitted: false, started: Date.now(), meta: null };
 }
 
 function figureSrc(svg) {
@@ -242,6 +242,7 @@ function submitAll(lesson, attempt) {
   updateScore(lesson, attempt);
   // Nộp bài luyện tập được tính là một ngày học (chuỗi ngày học).
   if (window.VungGames) window.VungGames.recordStudy();
+  if (window.VungProgressUI) { window.VungProgressUI.record(lesson, attempt, attempt.meta); window.VungProgressUI.refreshBadge(); }
 }
 
 function updateScore(lesson, attempt) {
@@ -278,7 +279,7 @@ function updateScore(lesson, attempt) {
 }
 
 function showOnly(id) {
-  for (const sec of ['launch', 'subjects', 'home', 'lesson', 'games', 'game', 'national', 'purchase', 'empty']) {
+  for (const sec of ['launch', 'subjects', 'home', 'lesson', 'games', 'game', 'national', 'purchase', 'review', 'report', 'empty']) {
     document.getElementById(sec).hidden = sec !== id;
   }
 }
@@ -456,6 +457,7 @@ async function openLesson(relPath, mode = 'practice') {
 
     setSections('practice');
     const attempt = newAttempt(lesson);
+    attempt.meta = { subject: lesson.subject, grade: lesson.grade, lessonId: relPath, lesson: lesson.lesson, chapter: lesson.chapter };
     renderTheory(lesson);
     if (window.NL_ENGLISH && window.NL_ENGLISH.render) {
       window.NL_ENGLISH.render(lesson, { top: document.getElementById('sec-english-top'), bottom: document.getElementById('sec-english-bottom') });
@@ -723,9 +725,14 @@ async function init() {
     document.getElementById('btn-grades').addEventListener('click', () => showLaunch());
     document.getElementById('btn-national-back').addEventListener('click', () => showLaunch());
     document.getElementById('open-national').addEventListener('click', () => showNational());
+    document.getElementById('open-review').addEventListener('click', () => { window.VungProgressUI.renderReview(document.getElementById('review-body')); showOnly('review'); });
+    document.getElementById('open-report').addEventListener('click', () => { window.VungProgressUI.renderReport(document.getElementById('report-body')); showOnly('report'); });
+    document.getElementById('btn-review-back').addEventListener('click', () => showLaunch());
+    document.getElementById('btn-report-back').addEventListener('click', () => showLaunch());
     document.getElementById('open-purchase').addEventListener('click', () => showPurchase());
     document.getElementById('btn-purchase-back').addEventListener('click', () => showLaunch());
     renderGrades();
+    if (window.VungProgressUI) window.VungProgressUI.refreshBadge();
     await refreshLicense();
     showLaunch();
   } catch (err) {
