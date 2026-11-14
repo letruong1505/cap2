@@ -45,6 +45,30 @@
     {
       "type": "text",
       "content": "Trong thực tế, tốc độ của một vật thường thay đổi. Khi đó v = s / t là tốc độ trung bình trên quãng đường s."
+    },
+    {
+      "type": "method",
+      "title": "Bài toán tốc độ, quãng đường, thời gian",
+      "when": "Đề cho hai trong ba đại lượng v, s, t và hỏi đại lượng còn lại; hoặc đổi đơn vị tốc độ; hoặc tốc độ trung bình.",
+      "steps": [
+        "Liệt kê dữ kiện và đại lượng cần tìm, đổi về đơn vị thống nhất (km, h hoặc m, s).",
+        "Chọn công thức: v = s/t; s = v·t; t = s/v.",
+        "Tốc độ trung bình = tổng quãng đường : tổng thời gian.",
+        "Thay số, tính, ghi đơn vị; đổi km/h ↔ m/s bằng 1 m/s = 3,6 km/h."
+      ],
+      "notes": [
+        "Tốc độ trung bình không phải trung bình cộng của các tốc độ.",
+        "Đổi phút ra giờ: 30 phút = 0,5 h.",
+        "Từ m/s sang km/h nhân 3,6; từ km/h sang m/s chia 3,6.",
+        "Nếu thời gian gồm nhiều đoạn, cộng cả thời gian nghỉ khi đề tính toàn bộ hành trình."
+      ],
+      "sample": {
+        "problem": "Ô tô đi 150 km trong 3 giờ. Tính tốc độ.",
+        "steps": [
+          "v = s/t = 150/3 = 50 (km/h)."
+        ],
+        "answer": "50 km/h"
+      }
     }
   ],
   "examples": [
@@ -139,6 +163,16 @@
       }
     },
     {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Ô tô đi 150 km trong 3 giờ. Tốc độ là bao nhiêu km/h?",
+      "expr": "150/3",
+      "answer": "50",
+      "explain": "v = s/t = 50 km/h.",
+      "dang": "Bài toán tốc độ, quãng đường, thời gian",
+      "id": "q09"
+    },
+    {
       "id": "q04",
       "level": "Hiểu",
       "type": "fill",
@@ -177,6 +211,16 @@
       }
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đổi 72 km/h sang m/s. Kết quả là bao nhiêu m/s?",
+      "expr": "720/36",
+      "answer": "20",
+      "explain": "72 : 3,6 = 20 m/s.",
+      "dang": "Bài toán tốc độ, quãng đường, thời gian",
+      "id": "q10"
+    },
+    {
       "id": "q07",
       "level": "Vận dụng",
       "type": "fill",
@@ -193,6 +237,26 @@
       "expr": "100 / 10",
       "answer": "10",
       "explain": "v = s / t = 100 / 10 = 10 m/s."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Xe đi 60 km trong 1,5 giờ rồi đi tiếp 90 km trong 2,5 giờ. Tốc độ trung bình trên cả quãng đường là bao nhiêu km/h?",
+      "expr": "(60+90)/(1.5+2.5)",
+      "answer": "37,5",
+      "explain": "Tổng 150 km trong 4 giờ: 150/4 = 37,5 km/h.",
+      "dang": "Bài toán tốc độ, quãng đường, thời gian",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bạn An đi xe đạp với tốc độ 12 km/h. Thời gian đi hết quãng đường 18 km là bao nhiêu giờ?",
+      "expr": "18/12",
+      "answer": "1,5",
+      "explain": "t = s/v = 18/12 = 1,5 h.",
+      "dang": "Bài toán tốc độ, quãng đường, thời gian",
+      "id": "q12"
     }
   ]
 }

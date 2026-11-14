@@ -23,6 +23,31 @@
       "type": "figure",
       "figure": "figures/tn-toan7-b22-ti-le-thuan.svg",
       "caption": "Đại lượng tỉ lệ thuận: bảng và đồ thị"
+    },
+    {
+      "type": "method",
+      "title": "Bài toán về đại lượng tỉ lệ thuận",
+      "when": "Đề cho hai đại lượng cùng tăng hoặc cùng giảm theo tỉ lệ (quãng đường – thời gian, tiền – số lượng) hoặc chia một số theo tỉ lệ.",
+      "steps": [
+        "Xác định hai đại lượng có tỉ lệ thuận không và viết y = k·x.",
+        "Tìm hệ số tỉ lệ k = y/x từ một cặp giá trị đã biết.",
+        "Tính đại lượng còn lại: y = k·x, hoặc dùng y₁/x₁ = y₂/x₂.",
+        "Bài chia theo tỉ lệ: dùng dãy tỉ số bằng nhau với tổng đã cho; kiểm tra rồi trả lời."
+      ],
+      "notes": [
+        "Tỉ lệ thuận: đại lượng này tăng bao nhiêu lần thì đại lượng kia tăng bấy nhiêu lần.",
+        "Hệ số k phải tính từ đúng cặp giá trị tương ứng.",
+        "Đơn giá, vận tốc cho trước chính là hệ số tỉ lệ.",
+        "Ghi đúng đơn vị của đại lượng cần tìm."
+      ],
+      "sample": {
+        "problem": "5 m vải giá 150 000 đồng. Hỏi 8 m vải cùng loại giá bao nhiêu?",
+        "steps": [
+          "Giá tiền tỉ lệ thuận với số mét vải, k = 150 000/5 = 30 000 (đồng/m).",
+          "Giá 8 m: 30 000·8 = 240 000 (đồng)."
+        ],
+        "answer": "240 000 đồng"
+      }
     }
   ],
   "examples": [
@@ -72,6 +97,16 @@
       "explain": "k = 6 : (−2) = −3, y = −3 · 3 = −9."
     },
     {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "y tỉ lệ thuận với x, khi x = 4 thì y = 12. Khi x = 7 thì y bằng?",
+      "expr": "12/4*7",
+      "answer": "21",
+      "explain": "k = 12/4 = 3, nên y = 3·7 = 21.",
+      "dang": "Bài toán về đại lượng tỉ lệ thuận",
+      "id": "q09"
+    },
+    {
       "id": "q04",
       "level": "Hiểu",
       "type": "fill",
@@ -99,6 +134,16 @@
       "explain": "Số tiền tỉ lệ thuận với khối lượng: 120000 : 4 · 7 = 210000 đồng."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "5 m vải giá 150 000 đồng. 8 m vải cùng loại giá bao nhiêu đồng?",
+      "expr": "150000/5*8",
+      "answer": "240000",
+      "explain": "Giá mỗi mét 30 000 đồng, 8 m giá 240 000 đồng.",
+      "dang": "Bài toán về đại lượng tỉ lệ thuận",
+      "id": "q10"
+    },
+    {
       "id": "q07",
       "level": "Vận dụng",
       "type": "fill",
@@ -115,6 +160,26 @@
       "expr": "-4*2,5",
       "answer": "-10",
       "explain": "y = −4 · 2,5 = −10."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chia 90 viên kẹo cho ba bạn theo tỉ lệ thuận với 2, 3, 4. Bạn được nhiều nhất có bao nhiêu viên?",
+      "expr": "90/9*4",
+      "answer": "40",
+      "explain": "a/2 = b/3 = c/4 = 90/9 = 10. Bạn nhiều nhất: 10·4 = 40 viên.",
+      "dang": "Bài toán về đại lượng tỉ lệ thuận",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đi 3 giờ được 120 km. Với cùng vận tốc, đi 5 giờ được bao nhiêu km?",
+      "expr": "120/3*5",
+      "answer": "200",
+      "explain": "Vận tốc 40 km/h, 5 giờ đi 40·5 = 200 km.",
+      "dang": "Bài toán về đại lượng tỉ lệ thuận",
+      "id": "q12"
     }
   ]
 }

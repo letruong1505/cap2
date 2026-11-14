@@ -18,6 +18,31 @@
     {
       "type": "text",
       "content": "Từ một tỉ lệ thức có thể suy ra các tỉ lệ thức khác bằng cách đổi chỗ các số hạng (tương tự với tích trong và tích ngoài)."
+    },
+    {
+      "type": "method",
+      "title": "Tìm số hạng chưa biết của tỉ lệ thức",
+      "when": "Đề cho tỉ lệ thức a/b = c/d có một số hạng là x và yêu cầu tìm x.",
+      "steps": [
+        "Viết tỉ lệ thức dưới dạng a/b = c/d (hoặc a : b = c : d).",
+        "Áp dụng tính chất của tỉ lệ thức: a·d = b·c.",
+        "Suy ra số hạng cần tìm bằng tích hai số nằm trên đường chéo đã biết chia cho số còn lại.",
+        "Thử lại bằng cách tính a·d và b·c."
+      ],
+      "notes": [
+        "Hai số ở cùng một đường chéo là hai số nhân với nhau (ngoại tỉ và trung tỉ).",
+        "Nếu x nằm trong biểu thức như x + 1, tìm cả biểu thức rồi mới tìm x.",
+        "Tỉ lệ thức a : b = c : d và a/b = c/d là một.",
+        "Không rút gọn nhầm: chỉ rút gọn trong cùng một phân số."
+      ],
+      "sample": {
+        "problem": "Tìm x biết x/4 = 9/6.",
+        "steps": [
+          "Nhân chéo: x·6 = 4·9.",
+          "x = 36/6 = 6."
+        ],
+        "answer": "x = 6"
+      }
     }
   ],
   "examples": [
@@ -94,6 +119,26 @@
       "explain": "(x+1) · 6 = 3 · 4 = 12, suy ra x + 1 = 2, x = 1."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm x biết x/4 = 9/6.",
+      "expr": "4*9/6",
+      "answer": "6",
+      "explain": "x·6 = 4·9 = 36 ⇒ x = 6.",
+      "dang": "Tìm số hạng chưa biết của tỉ lệ thức",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm x biết 3/x = 12/20.",
+      "expr": "3*20/12",
+      "answer": "5",
+      "explain": "12·x = 3·20 = 60 ⇒ x = 5.",
+      "dang": "Tìm số hạng chưa biết của tỉ lệ thức",
+      "id": "q10"
+    },
+    {
       "id": "q07",
       "level": "Vận dụng",
       "type": "fill",
@@ -110,6 +155,26 @@
       "expr": "8*9/12",
       "answer": "6",
       "explain": "12 · d = 8 · 9 = 72, suy ra d = 6."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm x biết (x + 1)/5 = 6/10.",
+      "expr": "2",
+      "answer": "2",
+      "explain": "(x + 1)·10 = 5·6 = 30 ⇒ x + 1 = 3 ⇒ x = 2.",
+      "dang": "Tìm số hạng chưa biết của tỉ lệ thức",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Biết x : 7 = 12 : 21. Tìm x.",
+      "expr": "7*12/21",
+      "answer": "4",
+      "explain": "x·21 = 7·12 = 84 ⇒ x = 4.",
+      "dang": "Tìm số hạng chưa biết của tỉ lệ thức",
+      "id": "q12"
     }
   ]
 }

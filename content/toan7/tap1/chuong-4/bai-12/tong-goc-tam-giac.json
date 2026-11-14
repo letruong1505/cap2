@@ -34,6 +34,31 @@
     {
       "type": "text",
       "content": "Lỗi thường gặp: quên rằng trong tam giác vuông hai góc nhọn có tổng 90°, không phải 180°; cộng nhầm góc ngoài với góc kề trong thay vì tổng hai góc trong không kề."
+    },
+    {
+      "type": "method",
+      "title": "Tính số đo góc trong tam giác",
+      "when": "Đề cho hai góc của tam giác (hoặc tam giác cân, vuông, góc ngoài) và yêu cầu tính góc còn lại.",
+      "steps": [
+        "Xác định các góc đã biết và góc cần tìm; chú ý tam giác vuông (một góc 90°) hoặc cân (hai góc đáy bằng nhau).",
+        "Áp dụng tổng ba góc của một tam giác bằng 180°.",
+        "Với góc ngoài: góc ngoài bằng tổng hai góc trong không kề với nó.",
+        "Tính, kiểm tra tổng ba góc và ghi kết quả có đơn vị độ."
+      ],
+      "notes": [
+        "Tam giác vuông: hai góc nhọn phụ nhau (tổng 90°).",
+        "Tam giác cân: góc ở đỉnh + 2·góc đáy = 180°.",
+        "Góc ngoài lớn hơn mỗi góc trong không kề với nó.",
+        "Ghi đúng đơn vị độ, không nhầm với độ dài."
+      ],
+      "sample": {
+        "problem": "Tam giác ABC có góc A = 50° và góc B = 60°. Tính góc C.",
+        "steps": [
+          "Tổng ba góc trong tam giác bằng 180°.",
+          "C = 180° − 50° − 60° = 70°."
+        ],
+        "answer": "70°"
+      }
     }
   ],
   "examples": [
@@ -171,6 +196,16 @@
       "explain": "Tổng ba góc bằng 180°: Ĉ = 180° − 30° − 70° = 80°."
     },
     {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tam giác ABC có A = 50°, B = 60°. Góc C bằng bao nhiêu độ?",
+      "expr": "180-50-60",
+      "answer": "70",
+      "explain": "C = 180° − 50° − 60° = 70°.",
+      "dang": "Tính số đo góc trong tam giác",
+      "id": "q12"
+    },
+    {
       "id": "q09",
       "level": "Hiểu",
       "type": "fill",
@@ -190,6 +225,16 @@
       "figure": "figures/bt-toan7-b12-q10.svg"
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC vuông tại A có B = 35°. Góc C bằng bao nhiêu độ?",
+      "expr": "90-35",
+      "answer": "55",
+      "explain": "Hai góc nhọn phụ nhau: C = 90° − 35° = 55°.",
+      "dang": "Tính số đo góc trong tam giác",
+      "id": "q13"
+    },
+    {
       "id": "q11",
       "level": "Vận dụng",
       "type": "fill",
@@ -197,6 +242,26 @@
       "expr": "180/12",
       "answer": "15",
       "explain": "3x + 4x + 5x = 180, 12x = 180, x = 15."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Góc ngoài tại đỉnh C của tam giác ABC bằng 120°, góc A = 45°. Góc B bằng bao nhiêu độ?",
+      "expr": "120-45",
+      "answer": "75",
+      "explain": "Góc ngoài tại C bằng tổng hai góc trong không kề: A + B = 120° ⇒ B = 120° − 45° = 75°.",
+      "dang": "Tính số đo góc trong tam giác",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác ABC cân tại A có góc A = 40°. Góc B bằng bao nhiêu độ?",
+      "expr": "(180-40)/2",
+      "answer": "70",
+      "explain": "Hai góc đáy bằng nhau: B = (180° − 40°)/2 = 70°.",
+      "dang": "Tính số đo góc trong tam giác",
+      "id": "q15"
     }
   ]
 }

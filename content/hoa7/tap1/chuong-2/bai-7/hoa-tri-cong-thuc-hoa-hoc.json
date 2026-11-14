@@ -35,6 +35,31 @@
     {
       "type": "formula",
       "content": "% khối lượng nguyên tố = (khối lượng nguyên tử · số nguyên tử của nguyên tố · 100%) / khối lượng phân tử"
+    },
+    {
+      "type": "method",
+      "title": "Lập công thức hóa học và tính phần trăm khối lượng",
+      "when": "Đề cho hóa trị của hai nguyên tố hoặc nhóm, yêu cầu lập công thức; hoặc cho công thức, yêu cầu tính phân tử khối, % nguyên tố.",
+      "steps": [
+        "Viết công thức dạng chung AₓBᵧ.",
+        "Quy tắc hóa trị: x·(hóa trị A) = y·(hóa trị B).",
+        "Lập tỉ lệ x/y tối giản, chọn x, y nguyên nhỏ nhất rồi viết công thức.",
+        "Tính phân tử khối; % A = (khối lượng A trong phân tử/phân tử khối)·100%."
+      ],
+      "notes": [
+        "Hóa trị của H là I, O là II; kim loại như Na (I), Mg (II), Al (III).",
+        "Rút gọn tỉ lệ x/y về số nguyên tối giản.",
+        "Chỉ số 1 không ghi.",
+        "Kiểm tra bằng cách tính lại tích hóa trị × chỉ số hai vế."
+      ],
+      "sample": {
+        "problem": "Lập công thức của hợp chất gồm Al (III) và O (II).",
+        "steps": [
+          "x·3 = y·2 ⇒ x/y = 2/3.",
+          "x = 2, y = 3: Al₂O₃."
+        ],
+        "answer": "Al₂O₃"
+      }
     }
   ],
   "examples": [
@@ -166,6 +191,26 @@
       "explain": "%Mg = 24 · 100% / 40 = 60%."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phân tử khối của CaCO₃ (Ca = 40, C = 12, O = 16) là?",
+      "expr": "40+12+3*16",
+      "answer": "100",
+      "explain": "40 + 12 + 48 = 100 amu.",
+      "dang": "Lập công thức hóa học và tính phần trăm khối lượng",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hợp chất Al₂O₃ có chỉ số của oxygen bằng?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "x·III = y·II ⇒ x : y = 2 : 3 nên công thức Al₂O₃, chỉ số của O là 3.",
+      "dang": "Lập công thức hóa học và tính phần trăm khối lượng",
+      "id": "q10"
+    },
+    {
       "id": "q07",
       "level": "Vận dụng",
       "type": "mcq",
@@ -193,6 +238,26 @@
       "expr": "3 * 2 / 3",
       "answer": "2",
       "explain": "Áp dụng quy tắc hoá trị: x · 3 = 3 · 2, suy ra x = 2."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính % khối lượng Fe trong Fe₂O₃ (Fe = 56, O = 16). Nhập phần trăm làm tròn đến số nguyên.",
+      "expr": "70",
+      "answer": "70",
+      "explain": "M = 160; %Fe = 112/160·100% = 70%.",
+      "dang": "Lập công thức hóa học và tính phần trăm khối lượng",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hợp chất X gồm nguyên tố N hóa trị V và O hóa trị II. Chỉ số của O trong công thức là?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "x·5 = y·2 ⇒ x : y = 2 : 5; công thức N₂O₅, chỉ số của O là 5.",
+      "dang": "Lập công thức hóa học và tính phần trăm khối lượng",
+      "id": "q12"
     }
   ]
 }

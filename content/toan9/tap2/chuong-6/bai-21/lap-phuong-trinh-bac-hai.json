@@ -19,6 +19,32 @@
     {
       "type": "text",
       "content": "Các dạng thường gặp: diện tích hình học; chuyển động; năng suất; số học (tích hai số liên tiếp); tăng trưởng phần trăm."
+    },
+    {
+      "type": "method",
+      "title": "Giải bài toán bằng cách lập phương trình bậc hai",
+      "when": "Bài toán có lời văn dẫn đến phương trình bậc hai (tích hai số, diện tích hình chữ nhật, tổng bình phương...).",
+      "steps": [
+        "Chọn ẩn x (kèm đơn vị) và đặt điều kiện cho x.",
+        "Biểu diễn các đại lượng khác theo x, tìm quan hệ bằng nhau để lập phương trình bậc hai.",
+        "Giải phương trình (công thức nghiệm hoặc nhẩm nghiệm).",
+        "Đối chiếu từng nghiệm với điều kiện của x, loại nghiệm không phù hợp rồi trả lời."
+      ],
+      "notes": [
+        "Điều kiện của ẩn thường là số tự nhiên, số dương; nghiệm âm bị loại.",
+        "Hai nghiệm đều có thể thỏa: khi đó trả lời cả hai trường hợp nếu đề cho phép.",
+        "Diện tích hình chữ nhật = dài × rộng; chu vi cho biết tổng hai kích thước.",
+        "Kiểm tra lại bằng cách thay đáp số vào đề."
+      ],
+      "sample": {
+        "problem": "Mảnh đất hình chữ nhật có chiều dài hơn chiều rộng 5 m và diện tích 84 m². Tìm chiều rộng.",
+        "steps": [
+          "Gọi chiều rộng là x (m), x > 0, chiều dài x + 5.",
+          "x(x + 5) = 84 ⇒ x² + 5x − 84 = 0, Δ = 25 + 336 = 361, √Δ = 19.",
+          "x = (−5 + 19)/2 = 7 (nhận); x = −12 (loại). Chiều rộng 7 m."
+        ],
+        "answer": "7 m"
+      }
     }
   ],
   "examples": [
@@ -146,6 +172,46 @@
       "expr": "10",
       "answer": "10",
       "explain": "120/x − 120/(x + 2) = 2 ⇒ x = 10."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tích hai số tự nhiên liên tiếp bằng 156. Số nhỏ hơn là?",
+      "expr": "12",
+      "answer": "12",
+      "explain": "x(x + 1) = 156 ⇒ x² + x − 156 = 0 ⇒ x = 12 (nhận) hoặc x = −13 (loại). Số nhỏ hơn là 12.",
+      "dang": "Giải bài toán bằng cách lập phương trình bậc hai",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình chữ nhật có chu vi 30 cm và diện tích 50 cm². Chiều dài là bao nhiêu cm?",
+      "expr": "10",
+      "answer": "10",
+      "explain": "Hai kích thước có tổng 15 và tích 50, là nghiệm của x² − 15x + 50 = 0 ⇒ x = 10 hoặc x = 5. Chiều dài là 10 cm.",
+      "dang": "Giải bài toán bằng cách lập phương trình bậc hai",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mảnh đất hình chữ nhật có chiều dài hơn chiều rộng 5 m, diện tích 84 m². Chiều rộng là bao nhiêu m?",
+      "expr": "7",
+      "answer": "7",
+      "explain": "x(x + 5) = 84 ⇒ x² + 5x − 84 = 0 ⇒ x = 7 (nhận), x = −12 (loại).",
+      "dang": "Giải bài toán bằng cách lập phương trình bậc hai",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tổng bình phương hai số lẻ dương liên tiếp bằng 74. Số nhỏ hơn là?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Gọi hai số lẻ x và x + 2: x² + (x + 2)² = 74 ⇒ x² + 2x − 35 = 0 ⇒ x = 5 (nhận) hoặc x = −7 (loại vì không dương). Hai số là 5 và 7, số nhỏ là 5.",
+      "dang": "Giải bài toán bằng cách lập phương trình bậc hai",
+      "id": "q13"
     }
   ]
 }

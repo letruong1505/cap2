@@ -37,6 +37,30 @@
     {
       "type": "formula",
       "content": "v = s / t  (độ dốc của đồ thị s – t)"
+    },
+    {
+      "type": "method",
+      "title": "Đọc đồ thị quãng đường – thời gian",
+      "when": "Đề cho đồ thị s–t và yêu cầu tính tốc độ, so sánh chuyển động, xác định thời điểm gặp nhau.",
+      "steps": [
+        "Đọc trục: trục ngang là thời gian t, trục dọc là quãng đường s; chú ý đơn vị và tỉ lệ chia.",
+        "Chọn hai điểm rõ ràng trên đồ thị, đọc (t₁, s₁) và (t₂, s₂).",
+        "Tốc độ v = (s₂ − s₁)/(t₂ − t₁).",
+        "Đường dốc hơn thì tốc độ lớn hơn; đoạn nằm ngang là vật đứng yên."
+      ],
+      "notes": [
+        "Đoạn đồ thị nằm ngang ứng với vật đứng yên (s không đổi).",
+        "Hai đồ thị cắt nhau tại thời điểm hai vật gặp nhau.",
+        "Đọc đúng giá trị mỗi ô lưới trước khi tính.",
+        "Quãng đường đi được trong một khoảng thời gian là hiệu hai giá trị s."
+      ],
+      "sample": {
+        "problem": "Đồ thị đi qua điểm (2 h; 40 km) và gốc tọa độ. Tính tốc độ.",
+        "steps": [
+          "v = 40/2 = 20 km/h."
+        ],
+        "answer": "20 km/h"
+      }
     }
   ],
   "examples": [
@@ -182,6 +206,37 @@
       "figure": "figures/bt-ly7-b10-q06.svg"
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đồ thị s–t của một vật là đường thẳng đi từ gốc đến điểm (t = 2 h; s = 40 km). Tốc độ là bao nhiêu km/h?",
+      "expr": "40/2",
+      "answer": "20",
+      "explain": "v = s/t = 40/2 = 20 km/h.",
+      "dang": "Đọc đồ thị quãng đường – thời gian",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trên đồ thị s–t, đoạn thẳng nằm ngang cho biết điều gì?",
+      "choices": [
+        "Vật chuyển động nhanh dần",
+        "Vật chuyển động đều",
+        "Vật đứng yên",
+        "Vật quay lại điểm xuất phát"
+      ],
+      "answer": 2,
+      "explain": "Đoạn nằm ngang: thời gian tăng nhưng quãng đường không đổi, nghĩa là vật đứng yên.",
+      "wrong_explain": {
+        "0": "Chuyển động nhanh dần thì đồ thị là đường cong đi lên.",
+        "1": "Chuyển động đều có đồ thị là đường thẳng dốc.",
+        "3": "Quay lại thì s giảm dần."
+      },
+      "concept": true,
+      "dang": "Đọc đồ thị quãng đường – thời gian",
+      "id": "q12"
+    },
+    {
       "id": "q07",
       "level": "Vận dụng",
       "type": "fill",
@@ -199,6 +254,26 @@
       "expr": "60 * 1.5",
       "answer": "90",
       "explain": "1 h 30 min = 1,5 h, s = v · t = 60 · 1,5 = 90 km."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đồ thị đi qua (1 h; 15 km) và (3 h; 45 km). Tốc độ là bao nhiêu km/h?",
+      "expr": "(45-15)/(3-1)",
+      "answer": "15",
+      "explain": "v = (45 − 15)/(3 − 1) = 15 km/h.",
+      "dang": "Đọc đồ thị quãng đường – thời gian",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật chuyển động 2 giờ đầu đi được 30 km, rồi đứng yên 1 giờ. Tại thời điểm 3 giờ vật cách điểm xuất phát bao nhiêu km?",
+      "expr": "30",
+      "answer": "30",
+      "explain": "Trong khoảng đứng yên quãng đường không đổi nên vẫn là 30 km.",
+      "dang": "Đọc đồ thị quãng đường – thời gian",
+      "id": "q11"
     }
   ]
 }

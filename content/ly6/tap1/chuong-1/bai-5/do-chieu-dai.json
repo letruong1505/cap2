@@ -28,6 +28,31 @@
       "type": "figure",
       "figure": "figures/c-l6-b5-do-chieu-dai.svg",
       "caption": "Cách đặt thước, đặt mắt và đọc kết quả đo chiều dài."
+    },
+    {
+      "type": "method",
+      "title": "Đổi đơn vị chiều dài và chọn dụng cụ đo",
+      "when": "Đề cho số đo ở đơn vị này, yêu cầu đổi sang đơn vị khác, hoặc hỏi GHĐ, ĐCNN và cách chọn thước.",
+      "steps": [
+        "Xác định đơn vị đang có và đơn vị cần đổi.",
+        "Dùng các quan hệ: 1 km = 1 000 m; 1 m = 100 cm = 1 000 mm.",
+        "Đổi sang đơn vị nhỏ hơn thì nhân, sang đơn vị lớn hơn thì chia.",
+        "Với chọn thước: GHĐ phải lớn hơn hoặc bằng độ dài cần đo, ĐCNN phù hợp độ chính xác yêu cầu."
+      ],
+      "notes": [
+        "Đổi sang đơn vị nhỏ hơn thì số đo tăng, đổi sang đơn vị lớn hơn thì số đo giảm.",
+        "Viết kèm đơn vị ở mỗi bước để tránh nhầm.",
+        "Kết quả đo ghi theo ĐCNN của thước.",
+        "Đặt mắt nhìn vuông góc với vạch chia để tránh sai số."
+      ],
+      "sample": {
+        "problem": "Đổi 2,5 m sang cm.",
+        "steps": [
+          "1 m = 100 cm.",
+          "2,5 m = 2,5·100 = 250 cm."
+        ],
+        "answer": "250 cm"
+      }
     }
   ],
   "examples": [
@@ -92,6 +117,16 @@
       "concept": true
     },
     {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Đổi 3 km sang mét. Kết quả là bao nhiêu mét?",
+      "expr": "3*1000",
+      "answer": "3000",
+      "explain": "1 km = 1 000 m nên 3 km = 3 000 m.",
+      "dang": "Đổi đơn vị chiều dài và chọn dụng cụ đo",
+      "id": "q08"
+    },
+    {
       "id": "q03",
       "level": "Hiểu",
       "type": "mcq",
@@ -141,6 +176,26 @@
       "explain": "320 cm."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đổi 2,5 m sang xentimét. Kết quả là bao nhiêu cm?",
+      "expr": "2.5*100",
+      "answer": "250",
+      "explain": "1 m = 100 cm nên 2,5 m = 250 cm.",
+      "dang": "Đổi đơn vị chiều dài và chọn dụng cụ đo",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đổi 450 mm sang xentimét. Kết quả là bao nhiêu cm?",
+      "expr": "450/10",
+      "answer": "45",
+      "explain": "10 mm = 1 cm nên 450 mm = 45 cm.",
+      "dang": "Đổi đơn vị chiều dài và chọn dụng cụ đo",
+      "id": "q10"
+    },
+    {
       "id": "q06",
       "level": "Vận dụng",
       "type": "fill",
@@ -157,6 +212,16 @@
       "expr": "(120.1+120.3+120.2)/3",
       "answer": "120.2",
       "explain": "120,2 cm."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một sợi dây dài 1,2 m cắt thành các đoạn bằng nhau, mỗi đoạn 15 cm. Được bao nhiêu đoạn?",
+      "expr": "120/15",
+      "answer": "8",
+      "explain": "1,2 m = 120 cm; 120 : 15 = 8 đoạn.",
+      "dang": "Đổi đơn vị chiều dài và chọn dụng cụ đo",
+      "id": "q11"
     }
   ]
 }

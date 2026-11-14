@@ -32,6 +32,32 @@
     {
       "type": "text",
       "content": "Có thể dùng máy tính cầm tay (chế độ giải hệ phương trình) để tìm nghiệm."
+    },
+    {
+      "type": "method",
+      "title": "Giải hệ hai phương trình bậc nhất hai ẩn",
+      "when": "Đề cho hệ hai phương trình bậc nhất hai ẩn x, y và yêu cầu tìm nghiệm hoặc biểu thức theo nghiệm.",
+      "steps": [
+        "Chọn phương pháp: thế (khi một ẩn có hệ số 1 hoặc −1) hoặc cộng đại số (khi hệ số của một ẩn bằng nhau hoặc đối nhau, hoặc nhân để được như vậy).",
+        "Biến đổi để được một phương trình chỉ chứa một ẩn.",
+        "Giải phương trình đó, thế ngược vào một phương trình của hệ để tìm ẩn còn lại.",
+        "Kiểm tra nghiệm trong cả hai phương trình và kết luận nghiệm (x; y)."
+      ],
+      "notes": [
+        "Khi cộng đại số, nhân cả hai vế của phương trình, không chỉ một vế.",
+        "Cùng dấu thì trừ vế với vế, đối dấu thì cộng vế với vế để mất một ẩn.",
+        "Nghiệm phải thỏa mãn cả hai phương trình; hãy thử lại.",
+        "Hệ có thể vô nghiệm hoặc vô số nghiệm khi các hệ số tỉ lệ nhau."
+      ],
+      "sample": {
+        "problem": "Giải hệ x + y = 5; x − y = 1.",
+        "steps": [
+          "Cộng hai phương trình vế với vế: 2x = 6 ⇒ x = 3.",
+          "Thế vào x + y = 5: y = 2.",
+          "Nghiệm của hệ là (3; 2)."
+        ],
+        "answer": "(3; 2)"
+      }
     }
   ],
   "examples": [
@@ -96,6 +122,16 @@
       "concept": true
     },
     {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hệ x + y = 5; x − y = 1 có nghiệm (x; y). Giá trị của x là?",
+      "expr": "(5+1)/2",
+      "answer": "3",
+      "explain": "Cộng hai phương trình: 2x = 6 ⇒ x = 3.",
+      "dang": "Giải hệ hai phương trình bậc nhất hai ẩn",
+      "id": "q10"
+    },
+    {
       "id": "q03",
       "level": "Hiểu",
       "type": "fill",
@@ -141,6 +177,16 @@
       "explain": "x = 3 − y ⇒ 6 − 2y − 3y = 1, y = 1, x = 2."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hệ 2x + y = 7; x − y = 2 có nghiệm (x; y). Giá trị của y là?",
+      "expr": "1",
+      "answer": "1",
+      "explain": "Cộng hai phương trình: 3x = 9 ⇒ x = 3. Thế: 3 − y = 2 ⇒ y = 1.",
+      "dang": "Giải hệ hai phương trình bậc nhất hai ẩn",
+      "id": "q11"
+    },
+    {
       "id": "q08",
       "level": "Vận dụng",
       "type": "fill",
@@ -157,6 +203,26 @@
       "expr": "4",
       "answer": "4",
       "explain": "1,5x = 6, x = 4."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hệ 3x + 2y = 13; x − y = 1 có nghiệm (x; y). Giá trị của y là?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Từ x = y + 1 thế vào phương trình đầu: 3(y + 1) + 2y = 13 ⇒ 5y = 10 ⇒ y = 2.",
+      "dang": "Giải hệ hai phương trình bậc nhất hai ẩn",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hệ 2x + 3y = 1; 4x − 3y = 11 có nghiệm (x; y). Giá trị của x + y là?",
+      "expr": "2+(-1)",
+      "answer": "1",
+      "explain": "Cộng hai phương trình: 6x = 12 ⇒ x = 2. Thế: 4 + 3y = 1 ⇒ y = −1. Vậy x + y = 1.",
+      "dang": "Giải hệ hai phương trình bậc nhất hai ẩn",
+      "id": "q13"
     }
   ]
 }

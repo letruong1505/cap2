@@ -32,6 +32,31 @@
     {
       "type": "formula",
       "content": "P = A/t   (A: J; t: s; P: W);  1 kW = 1 000 W"
+    },
+    {
+      "type": "method",
+      "title": "Tính công và công suất",
+      "when": "Đề cho lực, quãng đường, thời gian và hỏi công, công suất, hoặc thời gian thực hiện.",
+      "steps": [
+        "Đổi đơn vị: F (N), s (m), t (s).",
+        "Công A = F·s (lực cùng phương chuyển dời).",
+        "Công suất P = A/t.",
+        "Bài nâng vật: lực nâng bằng trọng lượng P = 10·m; ghi đơn vị J, W."
+      ],
+      "notes": [
+        "Công chỉ có khi vật dịch chuyển theo phương của lực.",
+        "Nâng vật lên cao h: A = P·h.",
+        "1 kW = 1 000 W; 1 phút = 60 s.",
+        "Công suất lớn nghĩa là thực hiện công nhanh hơn, không phải nhiều công hơn."
+      ],
+      "sample": {
+        "problem": "Nâng vật 20 kg lên cao 3 m trong 6 s. Tính công và công suất.",
+        "steps": [
+          "P = 10·20 = 200 N; A = 200·3 = 600 J.",
+          "Công suất = 600/6 = 100 W."
+        ],
+        "answer": "A = 600 J; P = 100 W"
+      }
     }
   ],
   "examples": [
@@ -96,6 +121,16 @@
       "concept": true
     },
     {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Lực 50 N làm vật dịch chuyển 4 m theo phương lực. Công là bao nhiêu J?",
+      "expr": "50*4",
+      "answer": "200",
+      "explain": "A = F·s = 200 J.",
+      "dang": "Tính công và công suất",
+      "id": "q08"
+    },
+    {
       "id": "q03",
       "level": "Hiểu",
       "type": "mcq",
@@ -134,6 +169,16 @@
       "explain": "10·10·2."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nâng vật 20 kg lên cao 3 m. Công thực hiện là bao nhiêu J?",
+      "expr": "10*20*3",
+      "answer": "600",
+      "explain": "Lực nâng = 200 N; A = 200·3 = 600 J.",
+      "dang": "Tính công và công suất",
+      "id": "q09"
+    },
+    {
       "id": "q06",
       "level": "Vận dụng",
       "type": "fill",
@@ -150,6 +195,26 @@
       "expr": "20000",
       "answer": "20000",
       "explain": "2 000·10."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một máy thực hiện công 3 000 J trong 20 s. Công suất là bao nhiêu W?",
+      "expr": "3000/20",
+      "answer": "150",
+      "explain": "P = A/t = 150 W.",
+      "dang": "Tính công và công suất",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cần cẩu có công suất 2 kW nâng vật nặng 500 kg lên cao 10 m. Thời gian nâng ít nhất là bao nhiêu giây?",
+      "expr": "10*500*10/2000",
+      "answer": "25",
+      "explain": "A = 10·500·10 = 50 000 J; t = A/P = 50 000/2 000 = 25 s.",
+      "dang": "Tính công và công suất",
+      "id": "q11"
     }
   ]
 }

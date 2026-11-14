@@ -27,6 +27,30 @@
     {
       "type": "formula",
       "content": "Wt = P·h = 10·m·h   (P: N; h: m; Wt: J)"
+    },
+    {
+      "type": "method",
+      "title": "Tính động năng, thế năng",
+      "when": "Đề cho khối lượng, vận tốc, độ cao và hỏi động năng, thế năng hoặc so sánh.",
+      "steps": [
+        "Đổi đơn vị: m (kg), v (m/s), h (m).",
+        "Động năng Wđ = ½·m·v²; thế năng Wt = 10·m·h.",
+        "Thay số, tính bình phương vận tốc trước khi nhân.",
+        "Ghi kết quả với đơn vị jun (J)."
+      ],
+      "notes": [
+        "Bình phương chỉ áp dụng cho v, không áp dụng cho cả ½mv.",
+        "Đổi tốc độ km/h sang m/s trước khi tính.",
+        "Vận tốc tăng gấp đôi thì động năng tăng gấp bốn.",
+        "Độ cao tính từ mốc thế năng được chọn."
+      ],
+      "sample": {
+        "problem": "Vật 2 kg chuyển động với v = 3 m/s. Tính động năng.",
+        "steps": [
+          "Wđ = ½·2·3² = 9 J."
+        ],
+        "answer": "9 J"
+      }
     }
   ],
   "examples": [
@@ -91,6 +115,26 @@
       "concept": true
     },
     {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật 2 kg chuyển động với tốc độ 3 m/s. Động năng là bao nhiêu J?",
+      "expr": "0.5*2*3*3",
+      "answer": "9",
+      "explain": "Wđ = ½·2·3² = 9 J.",
+      "dang": "Tính động năng, thế năng",
+      "id": "q08"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật 5 kg ở độ cao 4 m. Thế năng trọng trường là bao nhiêu J? (lấy g = 10 m/s²)",
+      "expr": "10*5*4",
+      "answer": "200",
+      "explain": "Wt = 10·m·h = 200 J.",
+      "dang": "Tính động năng, thế năng",
+      "id": "q09"
+    },
+    {
       "id": "q03",
       "level": "Hiểu",
       "type": "mcq",
@@ -145,6 +189,26 @@
       "expr": "50",
       "answer": "50",
       "explain": "20·2,5."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ô tô 1 000 kg chạy 72 km/h. Động năng là bao nhiêu kJ?",
+      "expr": "0.5*1000*20*20/1000",
+      "answer": "200",
+      "explain": "v = 20 m/s; Wđ = ½·1000·20² = 200 000 J = 200 kJ.",
+      "dang": "Tính động năng, thế năng",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật 4 kg có động năng 50 J. Tốc độ của vật là bao nhiêu m/s?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "50 = ½·4·v² ⇒ v² = 25 ⇒ v = 5 m/s.",
+      "dang": "Tính động năng, thế năng",
+      "id": "q11"
     }
   ]
 }

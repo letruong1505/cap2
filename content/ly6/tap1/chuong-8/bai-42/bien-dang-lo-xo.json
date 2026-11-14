@@ -28,6 +28,32 @@
     {
       "type": "text",
       "content": "Độ giãn của lò xo treo thẳng đứng tỉ lệ với khối lượng của vật treo (khi chưa vượt quá giới hạn đàn hồi). Nếu treo vật quá nặng, lò xo bị biến dạng không trở lại hình dạng ban đầu."
+    },
+    {
+      "type": "method",
+      "title": "Bài toán độ dãn của lò xo",
+      "when": "Đề cho chiều dài lò xo khi treo các vật khác nhau và hỏi độ dãn, chiều dài khi treo thêm.",
+      "steps": [
+        "Xác định chiều dài tự nhiên l₀ (khi chưa treo vật).",
+        "Tính độ dãn Δl = l − l₀.",
+        "Trong giới hạn đàn hồi, độ dãn tỉ lệ thuận với trọng lượng vật treo: Δl₁/P₁ = Δl₂/P₂.",
+        "Tính đại lượng cần tìm, đổi về cùng đơn vị và kiểm tra giới hạn đàn hồi."
+      ],
+      "notes": [
+        "Độ dãn là hiệu giữa chiều dài lúc có vật và chiều dài tự nhiên, không phải chiều dài lúc có vật.",
+        "Treo gấp đôi vật thì độ dãn gấp đôi (trong giới hạn đàn hồi).",
+        "Trọng lượng P = 10·m.",
+        "Quá giới hạn đàn hồi, lò xo không trở lại chiều dài cũ."
+      ],
+      "sample": {
+        "problem": "Lò xo dài 10 cm, treo vật 100 g thì dài 12 cm. Treo vật 300 g thì dài bao nhiêu?",
+        "steps": [
+          "Treo 100 g: độ dãn 12 − 10 = 2 cm.",
+          "Treo 300 g (gấp 3): độ dãn 6 cm.",
+          "Chiều dài: 10 + 6 = 16 cm."
+        ],
+        "answer": "16 cm"
+      }
     }
   ],
   "examples": [
@@ -92,6 +118,16 @@
       "concept": true
     },
     {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Lò xo có chiều dài tự nhiên 10 cm, khi treo vật dài 13 cm. Độ dãn là bao nhiêu cm?",
+      "expr": "13-10",
+      "answer": "3",
+      "explain": "Độ dãn = 13 − 10 = 3 cm.",
+      "dang": "Bài toán độ dãn của lò xo",
+      "id": "q08"
+    },
+    {
       "id": "q03",
       "level": "Hiểu",
       "type": "mcq",
@@ -130,6 +166,16 @@
       "explain": "Tỉ lệ thuận."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lò xo dài 10 cm, treo vật 100 g thì dài 12 cm. Treo vật 200 g thì dài bao nhiêu cm?",
+      "expr": "10+2*2",
+      "answer": "14",
+      "explain": "Độ dãn tỉ lệ thuận: 2 cm ứng với 100 g, 200 g thì dãn 4 cm; dài 14 cm.",
+      "dang": "Bài toán độ dãn của lò xo",
+      "id": "q09"
+    },
+    {
       "id": "q06",
       "level": "Vận dụng",
       "type": "fill",
@@ -146,6 +192,26 @@
       "expr": "8",
       "answer": "8",
       "explain": "8 cm."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lò xo dài 10 cm, treo vật 100 g thì dài 12 cm. Treo vật 300 g thì dài bao nhiêu cm?",
+      "expr": "10+2*3",
+      "answer": "16",
+      "explain": "300 g gấp 3 lần nên dãn 6 cm; chiều dài 16 cm.",
+      "dang": "Bài toán độ dãn của lò xo",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lò xo dài 20 cm, khi treo vật 0,2 kg thì dài 24 cm. Khi treo vật nào làm lò xo dài 30 cm thì khối lượng vật là bao nhiêu kg? (nhập số thập phân)",
+      "expr": "0.2*10/4",
+      "answer": "0,5",
+      "explain": "Độ dãn lúc đầu: 4 cm ứng 0,2 kg. Độ dãn 10 cm ứng 0,2·10/4 = 0,5 kg.",
+      "dang": "Bài toán độ dãn của lò xo",
+      "id": "q11"
     }
   ]
 }

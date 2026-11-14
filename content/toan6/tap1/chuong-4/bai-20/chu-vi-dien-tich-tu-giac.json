@@ -40,6 +40,31 @@
     {
       "type": "text",
       "content": "Chu vi hình bình hành, hình thang, hình thoi bằng tổng độ dài các cạnh."
+    },
+    {
+      "type": "method",
+      "title": "Tính chu vi, diện tích các tứ giác đặc biệt",
+      "when": "Đề cho các kích thước của hình chữ nhật, hình vuông, hình thoi, hình bình hành và hỏi chu vi hoặc diện tích.",
+      "steps": [
+        "Xác định đúng hình và ghi công thức: hình chữ nhật S = a·b, P = 2(a + b); hình vuông S = a², P = 4a; hình thoi S = d₁·d₂/2; hình bình hành S = a·h.",
+        "Đổi các độ dài về cùng đơn vị.",
+        "Thay số vào công thức, tính từng bước.",
+        "Ghi kết quả với đơn vị đúng: độ dài (cm, m), diện tích (cm², m²)."
+      ],
+      "notes": [
+        "Chiều cao của hình bình hành là đoạn vuông góc với đáy, không phải cạnh bên.",
+        "Diện tích hình thoi dùng hai đường chéo, không phải hai cạnh.",
+        "Biết diện tích và một cạnh của hình chữ nhật thì cạnh còn lại bằng diện tích chia cạnh đó.",
+        "Không lẫn lộn chu vi (đơn vị độ dài) với diện tích (đơn vị bình phương)."
+      ],
+      "sample": {
+        "problem": "Hình thoi có hai đường chéo 10 cm và 16 cm. Tính diện tích.",
+        "steps": [
+          "Công thức: S = d₁·d₂/2.",
+          "S = 10·16/2 = 80 (cm²)."
+        ],
+        "answer": "80 cm²"
+      }
     }
   ],
   "examples": [
@@ -106,6 +131,16 @@
       "concept": true
     },
     {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hình chữ nhật có chiều dài 12 cm, chiều rộng 5 cm. Diện tích là bao nhiêu cm²?",
+      "expr": "12*5",
+      "answer": "60",
+      "explain": "S = 12·5 = 60 cm².",
+      "dang": "Tính chu vi, diện tích các tứ giác đặc biệt",
+      "id": "q10"
+    },
+    {
       "id": "q03",
       "level": "Hiểu",
       "type": "fill",
@@ -156,6 +191,26 @@
       "figure": "figures/bt-toan6-b20-q07.svg"
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chữ nhật có diện tích 48 cm² và chiều dài 8 cm. Chu vi là bao nhiêu cm?",
+      "expr": "2*(8+48/8)",
+      "answer": "28",
+      "explain": "Chiều rộng 48 : 8 = 6 cm; chu vi 2·(8 + 6) = 28 cm.",
+      "dang": "Tính chu vi, diện tích các tứ giác đặc biệt",
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình thoi có hai đường chéo 10 cm và 16 cm. Diện tích là bao nhiêu cm²?",
+      "expr": "10*16/2",
+      "answer": "80",
+      "explain": "S = 10·16/2 = 80 cm².",
+      "dang": "Tính chu vi, diện tích các tứ giác đặc biệt",
+      "id": "q12"
+    },
+    {
       "id": "q08",
       "level": "Vận dụng",
       "type": "fill",
@@ -174,6 +229,16 @@
       "answer": "900",
       "explain": "300 m² × 3 = 900 kg.",
       "figure": "figures/bt-toan6-b20-q09.svg"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình bình hành có cạnh đáy 14 cm và chiều cao tương ứng 9 cm. Diện tích là bao nhiêu cm²?",
+      "expr": "14*9",
+      "answer": "126",
+      "explain": "S = a·h = 14·9 = 126 cm².",
+      "dang": "Tính chu vi, diện tích các tứ giác đặc biệt",
+      "id": "q13"
     }
   ]
 }

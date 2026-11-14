@@ -28,6 +28,32 @@
     {
       "type": "text",
       "content": "Khi tính luỹ thừa của một phân số, ta lũy thừa cả tử và mẫu. Khi nhân hai luỹ thừa cùng cơ số, giữ nguyên cơ số và cộng hai số mũ."
+    },
+    {
+      "type": "method",
+      "title": "Tính lũy thừa của số hữu tỉ",
+      "when": "Đề yêu cầu tính, rút gọn hoặc so sánh các lũy thừa của số hữu tỉ.",
+      "steps": [
+        "Nhận dạng các công thức: xᵐ·xⁿ = xᵐ⁺ⁿ; xᵐ : xⁿ = xᵐ⁻ⁿ; (xᵐ)ⁿ = xᵐⁿ; (x·y)ⁿ = xⁿ·yⁿ; (x/y)ⁿ = xⁿ/yⁿ.",
+        "Đưa các lũy thừa về cùng cơ số hoặc cùng số mũ nếu được.",
+        "Áp dụng công thức, tính số mũ rồi tính giá trị.",
+        "Kiểm tra dấu: lũy thừa mũ chẵn của số âm là số dương, mũ lẻ là số âm."
+      ],
+      "notes": [
+        "Chỉ cộng trừ số mũ khi các lũy thừa có cùng cơ số.",
+        "(−x)² = x² nhưng −x² là số âm: cẩn thận với dấu ngoặc.",
+        "Lũy thừa của phân số: nâng cả tử và mẫu lên lũy thừa đó.",
+        "Có thể nhóm các thừa số để cùng số mũ: 0,25³·4³ = (0,25·4)³ = 1."
+      ],
+      "sample": {
+        "problem": "Tính (2/3)³.",
+        "steps": [
+          "(2/3)³ = 2³/3³.",
+          "2³ = 8 và 3³ = 27.",
+          "(2/3)³ = 8/27."
+        ],
+        "answer": "8/27"
+      }
     }
   ],
   "examples": [
@@ -187,6 +213,16 @@
       "explain": "(1/2)³ = 1/2 · 1/2 · 1/2 = 1/8."
     },
     {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính (2/3)³.",
+      "expr": "8/27",
+      "answer": "8/27",
+      "explain": "(2/3)³ = 2³/3³ = 8/27.",
+      "dang": "Tính lũy thừa của số hữu tỉ",
+      "id": "q12"
+    },
+    {
       "id": "q10",
       "level": "Hiểu",
       "type": "fill",
@@ -196,6 +232,16 @@
       "explain": "(2/3)² = 4/9; 4/9 · 3/2 = 12/18 = 2/3."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (−1/2)⁴.",
+      "expr": "1/16",
+      "answer": "1/16",
+      "explain": "Số mũ chẵn nên kết quả dương: 1⁴/2⁴ = 1/16.",
+      "dang": "Tính lũy thừa của số hữu tỉ",
+      "id": "q13"
+    },
+    {
       "id": "q11",
       "level": "Vận dụng",
       "type": "fill",
@@ -203,6 +249,26 @@
       "expr": "(-2)*(-2)*(-2)+(-2)*(-2)",
       "answer": "-4",
       "explain": "(−2)³ = −8; (−2)² = 4; −8 + 4 = −4."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính 2⁵·2³ : 2⁶.",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Cùng cơ số 2: 2⁵⁺³⁻⁶ = 2² = 4.",
+      "dang": "Tính lũy thừa của số hữu tỉ",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính (0,25)³·4³.",
+      "expr": "1",
+      "answer": "1",
+      "explain": "Nhóm cùng số mũ: (0,25·4)³ = 1³ = 1.",
+      "dang": "Tính lũy thừa của số hữu tỉ",
+      "id": "q15"
     }
   ]
 }

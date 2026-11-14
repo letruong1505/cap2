@@ -37,6 +37,32 @@
       "type": "figure",
       "figure": "figures/c-s9-b38-dna-rna.svg",
       "caption": "So sánh cấu trúc DNA và RNA"
+    },
+    {
+      "type": "method",
+      "title": "Tính toán số nucleotide, chiều dài và liên kết hydrogen của DNA",
+      "when": "Đề cho số nucleotide từng loại hoặc phần trăm, hỏi số nucleotide còn lại, chiều dài, số liên kết H.",
+      "steps": [
+        "Dùng nguyên tắc bổ sung: A = T, G = C.",
+        "Tổng số nucleotide N = 2A + 2G (hay A + G = N/2).",
+        "Chiều dài L = (N/2)·0,34 nm.",
+        "Số liên kết hydrogen H = 2A + 3G."
+      ],
+      "notes": [
+        "Số nucleotide tính cho cả hai mạch.",
+        "A + G luôn bằng N/2.",
+        "%A + %G = 50%.",
+        "Đơn vị chiều dài thường là nm (1 nm = 10 Å)."
+      ],
+      "sample": {
+        "problem": "Gene có A = 600 và G = 400. Tính N, L và H.",
+        "steps": [
+          "N = 2(600 + 400) = 2000.",
+          "L = 1000·0,34 = 340 nm.",
+          "H = 2·600 + 3·400 = 2400."
+        ],
+        "answer": "N = 2000; L = 340 nm; H = 2400"
+      }
     }
   ],
   "examples": [
@@ -150,6 +176,26 @@
       "explain": "A = T."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một gene có A = 600, G = 400. Tổng số nucleotide N là?",
+      "expr": "2*(600+400)",
+      "answer": "2000",
+      "explain": "N = 2A + 2G = 2000.",
+      "dang": "Tính toán số nucleotide, chiều dài và liên kết hydrogen của DNA",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Gene có 3 000 nucleotide. Chiều dài là bao nhiêu nm?",
+      "expr": "3000/2*0.34",
+      "answer": "510",
+      "explain": "L = (3 000/2)·0,34 = 510 nm.",
+      "dang": "Tính toán số nucleotide, chiều dài và liên kết hydrogen của DNA",
+      "id": "q09"
+    },
+    {
       "id": "q06",
       "level": "Vận dụng",
       "type": "fill",
@@ -166,6 +212,26 @@
       "expr": "2400",
       "answer": "2400",
       "explain": "120·20."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Gene có A = 600, G = 400. Số liên kết hydrogen là?",
+      "expr": "2*600+3*400",
+      "answer": "2400",
+      "explain": "H = 2A + 3G = 1 200 + 1 200 = 2 400.",
+      "dang": "Tính toán số nucleotide, chiều dài và liên kết hydrogen của DNA",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "DNA có tổng 2 400 nucleotide, A chiếm 20%. Số nucleotide loại G là?",
+      "expr": "2400*30/100",
+      "answer": "720",
+      "explain": "G = 50% − 20% = 30% nên 2 400·30% = 720.",
+      "dang": "Tính toán số nucleotide, chiều dài và liên kết hydrogen của DNA",
+      "id": "q11"
     }
   ]
 }

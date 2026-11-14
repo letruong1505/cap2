@@ -32,6 +32,31 @@
       "type": "figure",
       "figure": "figures/c-t9-b6-bpt-truc-so.svg",
       "caption": "Tập nghiệm của bất phương trình biểu diễn trên trục số."
+    },
+    {
+      "type": "method",
+      "title": "Giải bất phương trình bậc nhất một ẩn",
+      "when": "Đề cho bất phương trình dạng ax + b < 0 (hoặc >, ≤, ≥) và hỏi nghiệm, nghiệm nguyên lớn nhất, nhỏ nhất, số nghiệm nguyên.",
+      "steps": [
+        "Bỏ ngoặc, quy đồng khử mẫu (mẫu dương) nếu có.",
+        "Chuyển các hạng tử chứa x về một vế, hằng số về vế kia (chuyển vế đổi dấu).",
+        "Thu gọn về dạng ax > b (hoặc <, ≥, ≤) rồi chia hai vế cho a: nếu a < 0 thì đổi chiều bất đẳng thức.",
+        "Viết nghiệm dạng x > m (hoặc ...) và chọn các số nguyên thỏa mãn theo yêu cầu."
+      ],
+      "notes": [
+        "Nhân hoặc chia hai vế cho số âm phải đổi chiều bất đẳng thức.",
+        "Dấu \"<\", \">\" không lấy giá trị biên; \"≤\", \"≥\" lấy giá trị biên.",
+        "Đọc kĩ yêu cầu: nguyên lớn nhất, nguyên nhỏ nhất, nguyên dương.",
+        "Thử một số trong tập nghiệm để kiểm tra."
+      ],
+      "sample": {
+        "problem": "Giải bất phương trình 3x − 5 < 10 và cho biết số nguyên lớn nhất thỏa mãn.",
+        "steps": [
+          "3x < 15 ⇒ x < 5.",
+          "Số nguyên lớn nhất nhỏ hơn 5 là 4."
+        ],
+        "answer": "x < 5; số nguyên lớn nhất là 4"
+      }
     }
   ],
   "examples": [
@@ -141,6 +166,26 @@
       "explain": "x > 3."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số nguyên lớn nhất thỏa mãn 3x − 5 < 10 là?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "3x < 15 ⇒ x < 5, nên số nguyên lớn nhất là 4.",
+      "dang": "Giải bất phương trình bậc nhất một ẩn",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số nguyên lớn nhất thỏa mãn −2x + 6 ≥ 0 là?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "−2x ≥ −6 ⇒ x ≤ 3 (đổi chiều vì chia cho −2), số nguyên lớn nhất là 3.",
+      "dang": "Giải bất phương trình bậc nhất một ẩn",
+      "id": "q11"
+    },
+    {
       "id": "q08",
       "level": "Vận dụng",
       "type": "fill",
@@ -157,6 +202,26 @@
       "expr": "4",
       "answer": "4",
       "explain": "45x ≤ 200 ⇒ x ≤ 4,4."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Số nguyên nhỏ nhất thỏa mãn 2(x − 1) > x + 3 là?",
+      "expr": "6",
+      "answer": "6",
+      "explain": "2x − 2 > x + 3 ⇒ x > 5, số nguyên nhỏ nhất là 6.",
+      "dang": "Giải bất phương trình bậc nhất một ẩn",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bất phương trình 5 − 2x > −3 có bao nhiêu nghiệm nguyên dương?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "−2x > −8 ⇒ x < 4, nghiệm nguyên dương: 1, 2, 3 (3 nghiệm).",
+      "dang": "Giải bất phương trình bậc nhất một ẩn",
+      "id": "q13"
     }
   ]
 }

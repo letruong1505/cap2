@@ -19,6 +19,31 @@
     {
       "type": "text",
       "content": "Các dạng thường gặp: toán tìm hai số; chuyển động; năng suất, công việc; mua bán; phần trăm; hình học; hoá học (pha trộn, phản ứng)."
+    },
+    {
+      "type": "method",
+      "title": "Giải bài toán bằng cách lập hệ phương trình",
+      "when": "Bài toán có lời văn có hai đại lượng chưa biết (hai số, giá tiền, chuyển động xuôi ngược dòng, hình chữ nhật...).",
+      "steps": [
+        "Chọn hai ẩn x, y (kèm đơn vị) và đặt điều kiện thích hợp.",
+        "Biểu diễn các đại lượng theo x, y; dựa vào hai mối quan hệ trong đề để lập hai phương trình.",
+        "Giải hệ phương trình vừa lập.",
+        "Đối chiếu nghiệm với điều kiện, trả lời đúng câu hỏi của đề."
+      ],
+      "notes": [
+        "Mỗi ẩn cần một phương trình riêng, đề thường cho đúng hai dữ kiện.",
+        "Xuôi dòng: vận tốc = vận tốc riêng + vận tốc dòng nước; ngược dòng: vận tốc = vận tốc riêng − vận tốc dòng nước.",
+        "Đơn vị phải thống nhất (nghìn đồng, giờ, km).",
+        "Nghiệm của hệ chưa chắc là đáp số: phải kiểm tra điều kiện và trả lời đúng đại lượng được hỏi."
+      ],
+      "sample": {
+        "problem": "Tổng hai số bằng 45, hiệu hai số bằng 9. Tìm hai số.",
+        "steps": [
+          "Gọi hai số là x và y (x > y): x + y = 45 và x − y = 9.",
+          "Cộng vế với vế: 2x = 54 ⇒ x = 27; y = 18."
+        ],
+        "answer": "27 và 18"
+      }
     }
   ],
   "examples": [
@@ -128,6 +153,16 @@
       "explain": "(40 − 30) : 2 = 5 km/h."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tổng hai số bằng 45, hiệu bằng 9. Số lớn là?",
+      "expr": "(45+9)/2",
+      "answer": "27",
+      "explain": "Số lớn = (45 + 9)/2 = 27.",
+      "dang": "Giải bài toán bằng cách lập hệ phương trình",
+      "id": "q10"
+    },
+    {
       "id": "q08",
       "level": "Vận dụng",
       "type": "fill",
@@ -145,6 +180,36 @@
       "expr": "40",
       "answer": "40",
       "explain": "2x + 3y = 210, x + y = 85 ⇒ y = 40."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mua 2 bút và 3 vở hết 29 000 đồng; mua 3 bút và 2 vở hết 26 000 đồng. Giá một quyển vở là bao nhiêu đồng?",
+      "expr": "7000",
+      "answer": "7000",
+      "explain": "Gọi giá bút x, vở y (nghìn đồng): 2x + 3y = 29; 3x + 2y = 26. Nhân 3 và 2: 6x + 9y = 87, 6x + 4y = 52. Trừ vế: 5y = 35 ⇒ y = 7 (7 000 đồng).",
+      "dang": "Giải bài toán bằng cách lập hệ phương trình",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình chữ nhật có chu vi 28 cm, chiều dài hơn chiều rộng 4 cm. Diện tích là bao nhiêu cm²?",
+      "expr": "9*5",
+      "answer": "45",
+      "explain": "x + y = 14 và x − y = 4 ⇒ x = 9, y = 5. Diện tích 9·5 = 45 cm².",
+      "dang": "Giải bài toán bằng cách lập hệ phương trình",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ca nô xuôi dòng 3 giờ được 45 km, ngược dòng 3 giờ được 33 km. Vận tốc dòng nước là bao nhiêu km/h?",
+      "expr": "(15-11)/2",
+      "answer": "2",
+      "explain": "Vận tốc xuôi: 45/3 = 15, ngược: 33/3 = 11. Vận tốc dòng nước = (15 − 11)/2 = 2 km/h.",
+      "dang": "Giải bài toán bằng cách lập hệ phương trình",
+      "id": "q13"
     }
   ]
 }

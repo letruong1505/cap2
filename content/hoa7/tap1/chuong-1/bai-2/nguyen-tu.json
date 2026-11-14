@@ -41,6 +41,31 @@
     {
       "type": "text",
       "content": "Khối lượng nguyên tử tập trung ở hạt nhân. Đơn vị khối lượng nguyên tử là amu. Một proton hoặc một neutron có khối lượng xấp xỉ 1 amu, còn một electron có khối lượng xấp xỉ 0,00055 amu."
+    },
+    {
+      "type": "method",
+      "title": "Xác định số hạt trong nguyên tử",
+      "when": "Đề cho số hạt p, n, e (hoặc tổng số hạt, hiệu số) và hỏi số mỗi loại, điện tích hạt nhân, số lớp electron.",
+      "steps": [
+        "Nhớ: nguyên tử trung hòa nên số p = số e = Z.",
+        "Gọi số p = số e = Z, số n = N; lập phương trình từ dữ kiện đề (tổng số hạt = 2Z + N).",
+        "Giải hệ để tìm Z và N.",
+        "Xác định điện tích hạt nhân, số khối (Z + N), sắp xếp electron vào các lớp (2, 8, ...)."
+      ],
+      "notes": [
+        "Số khối A = p + n, không tính electron (khối lượng electron rất nhỏ).",
+        "Hạt không mang điện là neutron.",
+        "Lớp 1 chứa tối đa 2 electron; lớp 2 tối đa 8.",
+        "Electron lớp ngoài cùng quyết định tính chất hóa học."
+      ],
+      "sample": {
+        "problem": "Nguyên tử X có tổng số hạt 34, trong đó số hạt mang điện nhiều hơn số hạt không mang điện là 10. Tìm số p.",
+        "steps": [
+          "2Z + N = 34 và 2Z − N = 10.",
+          "Cộng: 4Z = 44 ⇒ Z = 11; N = 12."
+        ],
+        "answer": "11 proton"
+      }
     }
   ],
   "examples": [
@@ -184,6 +209,26 @@
       "concept": true
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nguyên tử có 11 proton. Số electron của nguyên tử là?",
+      "expr": "11",
+      "answer": "11",
+      "explain": "Nguyên tử trung hòa nên số e = số p = 11.",
+      "dang": "Xác định số hạt trong nguyên tử",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nguyên tử có 6 proton và 6 neutron. Số khối của nguyên tử là?",
+      "expr": "6+6",
+      "answer": "12",
+      "explain": "A = p + n = 12.",
+      "dang": "Xác định số hạt trong nguyên tử",
+      "id": "q10"
+    },
+    {
       "id": "q07",
       "level": "Vận dụng",
       "type": "fill",
@@ -200,6 +245,26 @@
       "expr": "10 * 0.00055",
       "answer": "0.0055",
       "explain": "Khối lượng 10 electron là 10 × 0,00055 = 0,0055 amu."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nguyên tử X có tổng số hạt 34, số hạt mang điện nhiều hơn số hạt không mang điện là 10. Số proton là?",
+      "expr": "11",
+      "answer": "11",
+      "explain": "2Z + N = 34 và 2Z − N = 10 ⇒ 4Z = 44 ⇒ Z = 11.",
+      "dang": "Xác định số hạt trong nguyên tử",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nguyên tử có 17 electron. Số electron ở lớp ngoài cùng (xếp 2, 8, ...) là?",
+      "expr": "17-2-8",
+      "answer": "7",
+      "explain": "Lớp 1: 2, lớp 2: 8, còn lại 17 − 10 = 7 electron ở lớp 3.",
+      "dang": "Xác định số hạt trong nguyên tử",
+      "id": "q12"
     }
   ]
 }

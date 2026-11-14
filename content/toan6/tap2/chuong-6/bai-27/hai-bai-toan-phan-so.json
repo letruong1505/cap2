@@ -36,6 +36,31 @@
     {
       "type": "text",
       "content": "Hai bài toán này thường gặp khi tính phần trăm, tính số học sinh, số tiền, quãng đường…"
+    },
+    {
+      "type": "method",
+      "title": "Hai bài toán cơ bản về phân số",
+      "when": "Bài toán có lời văn: \"tìm m/n của một số\" hoặc \"biết m/n của một số là a, tìm số đó\".",
+      "steps": [
+        "Đọc đề, phân biệt hai trường hợp: biết cả số và tìm một phần (nhân), hoặc biết một phần và tìm cả số (chia).",
+        "Trường hợp nhân: giá trị m/n của số b bằng b·m/n.",
+        "Trường hợp chia: số biết m/n của nó bằng a là a : m/n = a·n/m.",
+        "Tính, kiểm tra lại bằng cách thử ngược, rồi trả lời kèm đơn vị."
+      ],
+      "notes": [
+        "Chữ \"của\" thường báo hiệu phép nhân với phân số.",
+        "Phần còn lại cũng là một phân số: còn lại sau khi bán 3/7 là 4/7.",
+        "Nhân với phân số rồi thử ngược bằng cách chia để kiểm tra.",
+        "Chú ý đơn vị của đáp số (kg, lít, học sinh)."
+      ],
+      "sample": {
+        "problem": "Một cửa hàng đã bán 3/7 số gạo, còn lại 80 kg. Lúc đầu có bao nhiêu kg gạo?",
+        "steps": [
+          "Số gạo còn lại chiếm 1 − 3/7 = 4/7 số gạo ban đầu.",
+          "Số gạo ban đầu: 80 : 4/7 = 80·7/4 = 140 (kg)."
+        ],
+        "answer": "140 kg"
+      }
     }
   ],
   "examples": [
@@ -145,6 +170,26 @@
       "explain": "40 − 15 = 25."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm 3/5 của 40.",
+      "expr": "3*40/5",
+      "answer": "24",
+      "explain": "3/5 của 40 là 40·3/5 = 24.",
+      "dang": "Hai bài toán cơ bản về phân số",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm số biết 2/3 của nó bằng 18.",
+      "expr": "18*3/2",
+      "answer": "27",
+      "explain": "Số cần tìm: 18 : 2/3 = 18·3/2 = 27.",
+      "dang": "Hai bài toán cơ bản về phân số",
+      "id": "q11"
+    },
+    {
       "id": "q08",
       "level": "Vận dụng",
       "type": "fill",
@@ -161,6 +206,26 @@
       "expr": "250000*80/100",
       "answer": "200000",
       "explain": "200 000 đồng."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lớp 6A có 40 học sinh, 3/8 số học sinh đạt loại giỏi. Số học sinh giỏi là bao nhiêu?",
+      "expr": "40*3/8",
+      "answer": "15",
+      "explain": "40·3/8 = 15 học sinh.",
+      "dang": "Hai bài toán cơ bản về phân số",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một cửa hàng đã bán 3/7 số gạo thì còn lại 80 kg. Lúc đầu cửa hàng có bao nhiêu kg gạo?",
+      "expr": "80/4*7",
+      "answer": "140",
+      "explain": "Còn lại 4/7 số gạo nên 80 : 4/7 = 80·7/4 = 140 kg.",
+      "dang": "Hai bài toán cơ bản về phân số",
+      "id": "q13"
     }
   ]
 }

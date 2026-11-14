@@ -28,6 +28,31 @@
     {
       "type": "text",
       "content": "Trong mạch nối tiếp, hiệu điện thế trên mỗi điện trở tỉ lệ thuận với điện trở. Trong mạch song song, cường độ dòng điện qua mỗi nhánh tỉ lệ nghịch với điện trở. Hai điện trở R giống nhau mắc song song có R_tđ = R/2."
+    },
+    {
+      "type": "method",
+      "title": "Tính điện trở và dòng điện trong đoạn mạch",
+      "when": "Đề cho các điện trở nối tiếp hoặc song song với hiệu điện thế hay cường độ dòng điện và hỏi điện trở tương đương, I, U.",
+      "steps": [
+        "Xác định cách mắc: nối tiếp (một đường đi) hay song song (rẽ nhánh).",
+        "Nối tiếp: R = R₁ + R₂, I giống nhau, U = U₁ + U₂. Song song: 1/R = 1/R₁ + 1/R₂, U giống nhau, I = I₁ + I₂.",
+        "Tính R tương đương, rồi I = U/R.",
+        "Tính từng điện trở: U₁ = I·R₁ hoặc I₁ = U/R₁; kiểm tra tổng."
+      ],
+      "notes": [
+        "Song song: R tương đương nhỏ hơn mỗi điện trở thành phần.",
+        "Hai điện trở bằng nhau mắc song song: R = R₁/2.",
+        "Nối tiếp: hiệu điện thế chia theo tỉ lệ điện trở.",
+        "Đổi mA sang A trước khi tính."
+      ],
+      "sample": {
+        "problem": "R₁ = 4 Ω nối tiếp R₂ = 6 Ω, U = 20 V. Tính I.",
+        "steps": [
+          "R = 4 + 6 = 10 Ω.",
+          "I = U/R = 20/10 = 2 A."
+        ],
+        "answer": "2 A"
+      }
     }
   ],
   "examples": [
@@ -130,6 +155,26 @@
       "explain": "20/2."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "R₁ = 4 Ω nối tiếp R₂ = 6 Ω. Điện trở tương đương là bao nhiêu Ω?",
+      "expr": "4+6",
+      "answer": "10",
+      "explain": "R = R₁ + R₂ = 10 Ω.",
+      "dang": "Tính điện trở và dòng điện trong đoạn mạch",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "R₁ = 4 Ω nối tiếp R₂ = 6 Ω vào hiệu điện thế 20 V. Cường độ dòng điện là bao nhiêu A?",
+      "expr": "20/10",
+      "answer": "2",
+      "explain": "I = U/R = 20/10 = 2 A.",
+      "dang": "Tính điện trở và dòng điện trong đoạn mạch",
+      "id": "q09"
+    },
+    {
       "id": "q06",
       "level": "Vận dụng",
       "type": "fill",
@@ -146,6 +191,26 @@
       "expr": "6/10+6/15",
       "answer": "1",
       "explain": "0,6 + 0,4 = 1 A."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai điện trở 12 Ω và 6 Ω mắc song song. Điện trở tương đương là bao nhiêu Ω?",
+      "expr": "12*6/18",
+      "answer": "4",
+      "explain": "R = R₁R₂/(R₁ + R₂) = 72/18 = 4 Ω.",
+      "dang": "Tính điện trở và dòng điện trong đoạn mạch",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai điện trở 12 Ω và 6 Ω mắc song song vào nguồn 12 V. Cường độ dòng điện trong mạch chính là bao nhiêu A?",
+      "expr": "12/12+12/6",
+      "answer": "3",
+      "explain": "I₁ = 12/12 = 1 A, I₂ = 12/6 = 2 A; I = 3 A.",
+      "dang": "Tính điện trở và dòng điện trong đoạn mạch",
+      "id": "q11"
     }
   ]
 }

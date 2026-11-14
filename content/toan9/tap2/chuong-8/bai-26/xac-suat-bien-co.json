@@ -28,6 +28,32 @@
       "type": "figure",
       "figure": "figures/c-t9-b26-bang-xuc-xac.svg",
       "caption": "Bảng kết quả khi gieo hai xúc xắc và biến cố “tổng bằng 7”."
+    },
+    {
+      "type": "method",
+      "title": "Tính xác suất của biến cố trong phép thử ngẫu nhiên",
+      "when": "Đề cho phép thử (gieo xúc xắc, đồng xu, chọn số) và hỏi xác suất của một biến cố.",
+      "steps": [
+        "Xác định phép thử và liệt kê không gian mẫu Ω (tất cả kết quả có thể, đồng khả năng); với hai lần thử dùng bảng hoặc cặp.",
+        "Gọi biến cố E và liệt kê các kết quả thuận lợi cho E.",
+        "P(E) = số kết quả thuận lợi / số phần tử của không gian mẫu.",
+        "Rút gọn phân số và kiểm tra 0 ≤ P(E) ≤ 1."
+      ],
+      "notes": [
+        "Gieo hai xúc xắc có 36 kết quả; (2; 5) và (5; 2) là hai kết quả khác nhau.",
+        "Đếm đủ, đếm đúng không trùng các kết quả thuận lợi.",
+        "P(không E) = 1 − P(E).",
+        "Số nguyên tố nhỏ nhất là 2; 1 không phải số nguyên tố."
+      ],
+      "sample": {
+        "problem": "Gieo một xúc xắc cân đối hai lần. Tính xác suất để tổng số chấm bằng 7.",
+        "steps": [
+          "Không gian mẫu có 6·6 = 36 kết quả.",
+          "Kết quả thuận lợi: (1;6), (2;5), (3;4), (4;3), (5;2), (6;1): 6 kết quả.",
+          "P = 6/36 = 1/6."
+        ],
+        "answer": "1/6"
+      }
     }
   ],
   "examples": [
@@ -137,6 +163,16 @@
       "explain": "1/5."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Gieo đồng thời hai đồng xu cân đối. Xác suất để hai đồng xu xuất hiện cùng mặt là?",
+      "expr": "2/4",
+      "answer": "1/2",
+      "explain": "Không gian mẫu có 4 kết quả (SS, SN, NS, NN); thuận lợi là SS và NN: 2/4 = 1/2.",
+      "dang": "Tính xác suất của biến cố trong phép thử ngẫu nhiên",
+      "id": "q10"
+    },
+    {
       "id": "q08",
       "level": "Vận dụng",
       "type": "fill",
@@ -153,6 +189,36 @@
       "expr": "3/8",
       "answer": "0.375",
       "explain": "SNN... 3 kết quả trong 8."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Gieo một xúc xắc cân đối hai lần. Xác suất để tổng số chấm bằng 7 là?",
+      "expr": "6/36",
+      "answer": "1/6",
+      "explain": "Có 6 kết quả thuận lợi trong 36 kết quả: 6/36 = 1/6.",
+      "dang": "Tính xác suất của biến cố trong phép thử ngẫu nhiên",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chọn ngẫu nhiên một số trong các số 1, 2, ..., 30. Xác suất để số được chọn là số nguyên tố là?",
+      "expr": "10/30",
+      "answer": "1/3",
+      "explain": "Số nguyên tố ≤ 30: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29 (10 số). P = 10/30 = 1/3.",
+      "dang": "Tính xác suất của biến cố trong phép thử ngẫu nhiên",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Gieo một xúc xắc cân đối hai lần. Xác suất để tổng số chấm không nhỏ hơn 11 là?",
+      "expr": "3/36",
+      "answer": "1/12",
+      "explain": "Tổng ≥ 11: (5;6), (6;5), (6;6) gồm 3 kết quả. P = 3/36 = 1/12.",
+      "dang": "Tính xác suất của biến cố trong phép thử ngẫu nhiên",
+      "id": "q13"
     }
   ]
 }

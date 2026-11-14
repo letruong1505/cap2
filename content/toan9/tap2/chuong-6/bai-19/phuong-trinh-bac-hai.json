@@ -32,6 +32,31 @@
     {
       "type": "text",
       "content": "Trường hợp đặc biệt: c = 0 thì đưa về x(ax + b) = 0; b = 0 thì x² = −c/a."
+    },
+    {
+      "type": "method",
+      "title": "Giải phương trình bậc hai ax² + bx + c = 0",
+      "when": "Đề cho phương trình bậc hai và yêu cầu giải, xét số nghiệm hoặc tìm điều kiện của tham số để có nghiệm kép, hai nghiệm phân biệt.",
+      "steps": [
+        "Xác định các hệ số a, b, c (a khác 0), đưa phương trình về dạng chuẩn.",
+        "Tính biệt thức Δ = b² − 4ac (hoặc Δ′ = b′² − ac với b = 2b′).",
+        "Xét dấu: Δ < 0 vô nghiệm; Δ = 0 nghiệm kép x = −b/(2a); Δ > 0 hai nghiệm x = (−b ± √Δ)/(2a).",
+        "Với bài tìm tham số: lập điều kiện về Δ rồi giải."
+      ],
+      "notes": [
+        "Phải đưa phương trình về một vế bằng 0 trước khi xác định a, b, c.",
+        "Giữ dấu của b và c khi thay vào Δ; b² luôn không âm.",
+        "Nghiệm kép là hai nghiệm bằng nhau, chỉ ghi một giá trị.",
+        "Có thể nhẩm nghiệm: a + b + c = 0 thì x = 1; a − b + c = 0 thì x = −1."
+      ],
+      "sample": {
+        "problem": "Giải phương trình x² − 5x + 6 = 0.",
+        "steps": [
+          "a = 1, b = −5, c = 6: Δ = 25 − 24 = 1 > 0.",
+          "x = (5 ± 1)/2 nên x = 3 hoặc x = 2."
+        ],
+        "answer": "x = 3 hoặc x = 2"
+      }
     }
   ],
   "examples": [
@@ -96,6 +121,26 @@
       "concept": true
     },
     {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Biệt thức Δ của phương trình x² − 5x + 6 = 0 bằng?",
+      "expr": "25-24",
+      "answer": "1",
+      "explain": "Δ = (−5)² − 4·1·6 = 25 − 24 = 1.",
+      "dang": "Giải phương trình bậc hai ax² + bx + c = 0",
+      "id": "q10"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Biệt thức Δ của phương trình 2x² − 3x + 5 = 0 bằng?",
+      "expr": "9-40",
+      "answer": "-31",
+      "explain": "Δ = (−3)² − 4·2·5 = 9 − 40 = −31 (phương trình vô nghiệm).",
+      "dang": "Giải phương trình bậc hai ax² + bx + c = 0",
+      "id": "q11"
+    },
+    {
       "id": "q03",
       "level": "Hiểu",
       "type": "fill",
@@ -141,6 +186,16 @@
       "explain": "2x(x − 4) = 0."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nghiệm lớn hơn của phương trình x² − 5x + 6 = 0 là?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Δ = 1, x = (5 ± 1)/2, nghiệm lớn hơn là 3.",
+      "dang": "Giải phương trình bậc hai ax² + bx + c = 0",
+      "id": "q12"
+    },
+    {
       "id": "q08",
       "level": "Vận dụng",
       "type": "fill",
@@ -157,6 +212,16 @@
       "expr": "16-12",
       "answer": "4",
       "explain": "= 4."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị của m để phương trình x² − 4x + m = 0 có nghiệm kép là?",
+      "expr": "16/4",
+      "answer": "4",
+      "explain": "Δ = 16 − 4m = 0 ⇒ m = 4.",
+      "dang": "Giải phương trình bậc hai ax² + bx + c = 0",
+      "id": "q13"
     }
   ]
 }

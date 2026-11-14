@@ -23,6 +23,31 @@
     {
       "type": "text",
       "content": "Để kiểm tra ba độ dài có phải ba cạnh của một tam giác không, chỉ cần kiểm tra độ dài lớn nhất có nhỏ hơn tổng hai độ dài còn lại không."
+    },
+    {
+      "type": "method",
+      "title": "Tìm độ dài cạnh thứ ba của tam giác",
+      "when": "Đề cho độ dài hai cạnh và hỏi cạnh thứ ba (có thể nguyên, lớn nhất, nhỏ nhất, tam giác cân).",
+      "steps": [
+        "Viết bất đẳng thức tam giác: hiệu hai cạnh < cạnh thứ ba < tổng hai cạnh.",
+        "Tính khoảng giá trị của cạnh thứ ba từ hai cạnh đã cho.",
+        "Chọn giá trị thỏa điều kiện thêm của đề (số nguyên, tam giác cân, lớn nhất, nhỏ nhất).",
+        "Kiểm tra lại bằng bất đẳng thức tam giác cho cả ba cạnh."
+      ],
+      "notes": [
+        "Cạnh thứ ba phải lớn hơn hiệu và nhỏ hơn tổng hai cạnh, không được bằng.",
+        "Tam giác cân có hai cạnh bằng nhau: thử từng trường hợp rồi loại trường hợp vi phạm bất đẳng thức.",
+        "Ba độ dài tạo thành tam giác khi tổng hai cạnh nhỏ bất kì lớn hơn cạnh lớn nhất.",
+        "Cạnh nguyên lớn nhất là tổng trừ 1; cạnh nguyên nhỏ nhất là hiệu cộng 1."
+      ],
+      "sample": {
+        "problem": "Tam giác có hai cạnh 3 cm và 7 cm. Cạnh thứ ba nguyên có thể có bao nhiêu giá trị?",
+        "steps": [
+          "7 − 3 < c < 7 + 3 hay 4 < c < 10.",
+          "Các giá trị nguyên: 5, 6, 7, 8, 9, vậy có 5 giá trị."
+        ],
+        "answer": "5 giá trị"
+      }
     }
   ],
   "examples": [
@@ -128,6 +153,47 @@
       "figure": "figures/bt-t7-b33-q06.svg"
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác có hai cạnh 3 cm và 7 cm. Độ dài cạnh thứ ba (số nguyên) lớn nhất có thể là bao nhiêu cm?",
+      "expr": "3+7-1",
+      "answer": "9",
+      "explain": "4 < c < 10 nên cạnh nguyên lớn nhất là 9.",
+      "dang": "Tìm độ dài cạnh thứ ba của tam giác",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác có hai cạnh 4 cm và 9 cm. Cạnh thứ ba có thể nhận bao nhiêu giá trị nguyên (cm)?",
+      "expr": "12-6+1",
+      "answer": "7",
+      "explain": "5 < c < 13 nên c ∈ {6, 7, ..., 12}: có 7 giá trị.",
+      "dang": "Tìm độ dài cạnh thứ ba của tam giác",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Bộ ba độ dài nào sau đây là ba cạnh của một tam giác?",
+      "choices": [
+        "2 cm; 3 cm; 6 cm",
+        "3 cm; 4 cm; 5 cm",
+        "1 cm; 2 cm; 3 cm",
+        "4 cm; 4 cm; 9 cm"
+      ],
+      "answer": 1,
+      "explain": "3 + 4 = 7 > 5 và các bất đẳng thức còn lại đều đúng.",
+      "wrong_explain": {
+        "0": "2 + 3 = 5 < 6 nên không tạo thành tam giác.",
+        "2": "1 + 2 = 3 không lớn hơn 3 nên không tạo thành tam giác.",
+        "3": "4 + 4 = 8 < 9 nên không tạo thành tam giác."
+      },
+      "concept": true,
+      "dang": "Tìm độ dài cạnh thứ ba của tam giác",
+      "id": "q12"
+    },
+    {
       "id": "q07",
       "level": "Vận dụng",
       "type": "fill",
@@ -146,6 +212,16 @@
       "answer": "8",
       "explain": "Hai cạnh bên bằng nhau: (26 − 10) : 2 = 8 cm.",
       "figure": "figures/bt-t7-b33-q08.svg"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác cân có hai cạnh 3 cm và 7 cm. Chu vi của tam giác là bao nhiêu cm?",
+      "expr": "7+7+3",
+      "answer": "17",
+      "explain": "Nếu cạnh bằng nhau là 3 thì 3 + 3 = 6 < 7 (loại). Vậy các cạnh là 7, 7, 3 và chu vi bằng 17 cm.",
+      "dang": "Tìm độ dài cạnh thứ ba của tam giác",
+      "id": "q11"
     }
   ]
 }

@@ -29,6 +29,31 @@
     {
       "type": "text",
       "content": "Lỗi thường gặp: nhầm góc so le trong với góc trong cùng phía khi đọc hình. Cần xác định đúng vị trí hai góc so với hai đường thẳng và cát tuyến trước khi áp dụng dấu hiệu."
+    },
+    {
+      "type": "method",
+      "title": "Tính số đo góc khi có hai đường thẳng song song",
+      "when": "Đề cho hai đường thẳng song song a // b bị cắt bởi đường thẳng c và cho một số đo góc, hỏi góc khác.",
+      "steps": [
+        "Nhận dạng các cặp góc tạo bởi đường cắt c: so le trong, đồng vị, trong cùng phía.",
+        "Dùng tính chất khi a // b: so le trong bằng nhau, đồng vị bằng nhau, trong cùng phía bù nhau (tổng 180°).",
+        "Kết hợp thêm hai góc kề bù (tổng 180°) hoặc đối đỉnh (bằng nhau) để chuyển sang góc cần tìm.",
+        "Tính, kiểm tra lại bằng một cặp góc khác."
+      ],
+      "notes": [
+        "Chỉ dùng các tính chất trên khi đã biết a // b.",
+        "Trong cùng phía thì bù nhau chứ không bằng nhau.",
+        "Hai góc kề bù có tổng 180°, hai góc đối đỉnh thì bằng nhau.",
+        "Gọi ẩn x cho góc chưa biết rồi lập phương trình nếu đề cho quan hệ giữa các góc."
+      ],
+      "sample": {
+        "problem": "a // b, c cắt a và b. Hai góc trong cùng phía có tổng bằng bao nhiêu và nếu một góc là 110° thì góc kia bằng bao nhiêu?",
+        "steps": [
+          "Hai góc trong cùng phía bù nhau: tổng bằng 180°.",
+          "Góc kia = 180° − 110° = 70°."
+        ],
+        "answer": "70°"
+      }
     }
   ],
   "examples": [
@@ -151,6 +176,26 @@
       "explain": "Để a ∥ b, hai góc so le trong phải bằng nhau: 3x + 10 = 4x − 30, suy ra x = 40."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "a // b, đường thẳng c cắt a và b. Một góc so le trong có số đo 70°. Góc so le trong còn lại bằng bao nhiêu độ?",
+      "expr": "70",
+      "answer": "70",
+      "explain": "Hai góc so le trong bằng nhau nên góc kia cũng bằng 70°.",
+      "dang": "Tính số đo góc khi có hai đường thẳng song song",
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "a // b, c cắt a và b. Một góc trong cùng phía có số đo 110°. Góc trong cùng phía còn lại bằng bao nhiêu độ?",
+      "expr": "180-110",
+      "answer": "70",
+      "explain": "Hai góc trong cùng phía bù nhau: 180° − 110° = 70°.",
+      "dang": "Tính số đo góc khi có hai đường thẳng song song",
+      "id": "q12"
+    },
+    {
       "id": "q10",
       "level": "Vận dụng",
       "type": "fill",
@@ -158,6 +203,26 @@
       "expr": "60",
       "answer": "60",
       "explain": "Để a ∥ b, hai góc đồng vị phải bằng nhau: 2x − 10 = x + 50, suy ra x = 60."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai góc trong cùng phía (a // b) hơn kém nhau 20°. Góc lớn bằng bao nhiêu độ?",
+      "expr": "(180-20)/2+20",
+      "answer": "100",
+      "explain": "Gọi hai góc là x và x + 20: 2x + 20 = 180 ⇒ x = 80. Góc lớn là 100°.",
+      "dang": "Tính số đo góc khi có hai đường thẳng song song",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "a // b, c cắt a và b. Hai góc đồng vị có số đo 2x và x + 30 (độ). Số đo mỗi góc đó là bao nhiêu độ?",
+      "expr": "2*30",
+      "answer": "60",
+      "explain": "Hai góc đồng vị bằng nhau: 2x = x + 30 ⇒ x = 30. Mỗi góc bằng 2·30 = 60°.",
+      "dang": "Tính số đo góc khi có hai đường thẳng song song",
+      "id": "q14"
     }
   ]
 }

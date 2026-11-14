@@ -19,6 +19,32 @@
     {
       "type": "text",
       "content": "Phương trình chứa ẩn ở mẫu: (1) tìm điều kiện xác định (mọi mẫu khác 0); (2) quy đồng mẫu rồi khử mẫu; (3) giải phương trình nhận được; (4) đối chiếu điều kiện để kết luận."
+    },
+    {
+      "type": "method",
+      "title": "Giải phương trình tích và phương trình chứa ẩn ở mẫu",
+      "when": "Đề cho phương trình dạng (ax + b)(cx + d) = 0 hoặc phương trình có ẩn x ở mẫu.",
+      "steps": [
+        "Phương trình tích: đưa về dạng A(x)·B(x) = 0 (chuyển vế, phân tích thành nhân tử).",
+        "Phương trình tích: giải A(x) = 0 và B(x) = 0, mọi nghiệm đều là nghiệm.",
+        "Phương trình chứa ẩn ở mẫu: tìm điều kiện xác định (mẫu khác 0), quy đồng, khử mẫu rồi giải phương trình nhận được.",
+        "Đối chiếu từng nghiệm với điều kiện xác định, loại nghiệm làm mẫu bằng 0, kết luận."
+      ],
+      "notes": [
+        "Không chia hai vế cho biểu thức chứa x vì sẽ mất nghiệm.",
+        "Luôn đối chiếu nghiệm với điều kiện xác định sau khi khử mẫu.",
+        "Khử mẫu chỉ được khi nhân hai vế với biểu thức khác 0 (đã có điều kiện).",
+        "Phương trình tích có thể có nhiều nghiệm; liệt kê đầy đủ."
+      ],
+      "sample": {
+        "problem": "Giải phương trình (x − 2)(2x + 6) = 0.",
+        "steps": [
+          "x − 2 = 0 ⇒ x = 2.",
+          "2x + 6 = 0 ⇒ x = −3.",
+          "Phương trình có hai nghiệm x = 2 và x = −3."
+        ],
+        "answer": "x = 2 hoặc x = −3"
+      }
     }
   ],
   "examples": [
@@ -128,6 +154,26 @@
       "explain": "x + 3 = 2x − 4, x = 7."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải (x − 2)(2x + 6) = 0. Nghiệm lớn hơn là?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "x − 2 = 0 ⇒ x = 2; 2x + 6 = 0 ⇒ x = −3. Nghiệm lớn hơn là 2.",
+      "dang": "Giải phương trình tích và phương trình chứa ẩn ở mẫu",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải x² − 5x = 0. Tổng các nghiệm là?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "x(x − 5) = 0 ⇒ x = 0 hoặc x = 5. Tổng bằng 5.",
+      "dang": "Giải phương trình tích và phương trình chứa ẩn ở mẫu",
+      "id": "q11"
+    },
+    {
       "id": "q08",
       "level": "Vận dụng",
       "type": "fill",
@@ -144,6 +190,26 @@
       "expr": "1/3*(-4)",
       "answer": "-4/3",
       "explain": "x = 1/3, x = −4; tích −4/3."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giải 1/(x − 1) = 2/(x + 1) (x ≠ ±1). Nghiệm là x = ?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Quy đồng: x + 1 = 2(x − 1) ⇒ x + 1 = 2x − 2 ⇒ x = 3 (thỏa điều kiện).",
+      "dang": "Giải phương trình tích và phương trình chứa ẩn ở mẫu",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giải (x² − 4)/(x − 2) = 0. Nghiệm của phương trình là x = ?",
+      "expr": "-2",
+      "answer": "-2",
+      "explain": "Điều kiện x ≠ 2. Tử bằng 0: x² − 4 = 0 ⇒ x = 2 hoặc x = −2. Loại x = 2 (làm mẫu bằng 0), nhận x = −2.",
+      "dang": "Giải phương trình tích và phương trình chứa ẩn ở mẫu",
+      "id": "q13"
     }
   ]
 }

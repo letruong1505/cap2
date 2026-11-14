@@ -28,6 +28,32 @@
     {
       "type": "text",
       "content": "Hai số có ƯCLN bằng 1 gọi là hai số nguyên tố cùng nhau. Phân số a/b tối giản khi ƯCLN(a, b) = 1; rút gọn bằng cách chia tử và mẫu cho ƯCLN."
+    },
+    {
+      "type": "method",
+      "title": "Tìm ƯCLN và bài toán thực tế dùng ƯCLN",
+      "when": "Đề cho hai số (hoặc nhiều số) và hỏi ước chung lớn nhất, hoặc bài \"chia đều\", \"cắt nhỏ\", \"nhiều nhất\", \"lớn nhất\".",
+      "steps": [
+        "Phân tích mỗi số ra thừa số nguyên tố.",
+        "Chọn các thừa số nguyên tố chung của tất cả các số.",
+        "Với mỗi thừa số chung lấy số mũ nhỏ nhất.",
+        "Nhân các thừa số vừa chọn được ƯCLN; với bài toán thực tế, đối chiếu ý nghĩa và trả lời."
+      ],
+      "notes": [
+        "Nếu số này chia hết cho số kia thì ƯCLN là số nhỏ hơn.",
+        "Hai số chỉ có ước chung là 1 gọi là nguyên tố cùng nhau (ƯCLN = 1).",
+        "Mọi ước chung của các số đều là ước của ƯCLN.",
+        "Chữ \"nhiều nhất\", \"lớn nhất\", \"dài nhất\" khi chia đều thường báo hiệu dùng ƯCLN."
+      ],
+      "sample": {
+        "problem": "Tìm ƯCLN(36, 60).",
+        "steps": [
+          "36 = 2²·3² và 60 = 2²·3·5.",
+          "Thừa số chung: 2 (số mũ nhỏ nhất 2) và 3 (số mũ nhỏ nhất 1).",
+          "ƯCLN(36, 60) = 2²·3 = 12."
+        ],
+        "answer": "12"
+      }
     }
   ],
   "examples": [
@@ -137,6 +163,26 @@
       "explain": "ƯCLN(90, 120) = 30; 90/120 = 3/4, tử số là 3."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm ƯCLN(24, 36).",
+      "expr": "12",
+      "answer": "12",
+      "explain": "24 = 2³·3, 36 = 2²·3². Chung: 2² và 3, ƯCLN = 4·3 = 12.",
+      "dang": "Tìm ƯCLN và bài toán thực tế dùng ƯCLN",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm ƯCLN(48, 72).",
+      "expr": "24",
+      "answer": "24",
+      "explain": "48 = 2⁴·3, 72 = 2³·3². Chung: 2³ và 3, ƯCLN = 8·3 = 24.",
+      "dang": "Tìm ƯCLN và bài toán thực tế dùng ƯCLN",
+      "id": "q11"
+    },
+    {
       "id": "q08",
       "level": "Vận dụng",
       "type": "fill",
@@ -153,6 +199,26 @@
       "expr": "12",
       "answer": "12",
       "explain": "Cạnh = ƯCLN(60, 96) = 12 m."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có 24 bút bi và 36 bút chì được chia đều thành các phần quà sao cho mỗi phần đều có cả hai loại và số phần quà nhiều nhất. Có thể chia được nhiều nhất bao nhiêu phần quà?",
+      "expr": "12",
+      "answer": "12",
+      "explain": "Số phần quà là ước chung của 24 và 36, nhiều nhất nên là ƯCLN(24, 36) = 12.",
+      "dang": "Tìm ƯCLN và bài toán thực tế dùng ƯCLN",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cắt tấm vải hình chữ nhật 90 cm × 150 cm thành các mảnh hình vuông bằng nhau, không thừa, cạnh lớn nhất. Cạnh mỗi mảnh dài bao nhiêu cm?",
+      "expr": "30",
+      "answer": "30",
+      "explain": "Cạnh hình vuông là ước chung của 90 và 150, lớn nhất nên là ƯCLN(90, 150) = 30 cm.",
+      "dang": "Tìm ƯCLN và bài toán thực tế dùng ƯCLN",
+      "id": "q13"
     }
   ]
 }

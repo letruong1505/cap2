@@ -18,6 +18,30 @@
     {
       "type": "formula",
       "content": "Ví dụ: P(x) = 3x³ − 2x + 5 có bậc 3, hệ số tự do là 5."
+    },
+    {
+      "type": "method",
+      "title": "Tính giá trị và tìm nghiệm của đa thức một biến",
+      "when": "Đề hỏi giá trị của đa thức tại một số, xem một số có phải nghiệm không, hoặc tìm nghiệm.",
+      "steps": [
+        "Sắp xếp đa thức theo lũy thừa giảm dần và thu gọn.",
+        "Tính giá trị tại x = a: thay a vào mọi vị trí của biến (số âm đặt trong ngoặc) rồi tính.",
+        "a là nghiệm của P(x) khi P(a) = 0.",
+        "Tìm nghiệm: giải P(x) = 0 (đặt nhân tử chung hoặc phân tích thành tích) rồi liệt kê mọi nghiệm."
+      ],
+      "notes": [
+        "Nghiệm của đa thức là giá trị của biến làm đa thức bằng 0.",
+        "Một đa thức có thể có nhiều nghiệm hoặc không có nghiệm.",
+        "Tính lũy thừa trước khi nhân, cộng.",
+        "Khi tích bằng 0 thì ít nhất một thừa số bằng 0."
+      ],
+      "sample": {
+        "problem": "Cho P(x) = x² − 4x + 3. Chứng tỏ x = 1 là nghiệm của P(x).",
+        "steps": [
+          "P(1) = 1² − 4·1 + 3.",
+          "P(1) = 1 − 4 + 3 = 0, nên x = 1 là nghiệm của P(x)."
+        ]
+      }
     }
   ],
   "examples": [
@@ -94,6 +118,26 @@
       "explain": "P(3) = 9 − 3 = 6."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho P(x) = x² − 4x + 3. Giá trị của P(1) là?",
+      "expr": "1-4+3",
+      "answer": "0",
+      "explain": "P(1) = 1 − 4 + 3 = 0, nên 1 là nghiệm.",
+      "dang": "Tính giá trị và tìm nghiệm của đa thức một biến",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nghiệm của đa thức 2x − 6 là?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "2x − 6 = 0 ⇒ 2x = 6 ⇒ x = 3.",
+      "dang": "Tính giá trị và tìm nghiệm của đa thức một biến",
+      "id": "q10"
+    },
+    {
       "id": "q07",
       "level": "Vận dụng",
       "type": "fill",
@@ -110,6 +154,26 @@
       "expr": "7",
       "answer": "7",
       "explain": "Thay x = 0: Q(0) = 0 − 0 + 7 = 7."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đa thức x² − 5x + 6 có hai nghiệm. Nghiệm lớn hơn là?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "x² − 5x + 6 = (x − 2)(x − 3) = 0 ⇒ x = 2 hoặc x = 3. Nghiệm lớn hơn là 3.",
+      "dang": "Tính giá trị và tìm nghiệm của đa thức một biến",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho P(x) = x³ − x. Giá trị của P(2) là?",
+      "expr": "8-2",
+      "answer": "6",
+      "explain": "P(2) = 2³ − 2 = 8 − 2 = 6.",
+      "dang": "Tính giá trị và tìm nghiệm của đa thức một biến",
+      "id": "q12"
     }
   ]
 }

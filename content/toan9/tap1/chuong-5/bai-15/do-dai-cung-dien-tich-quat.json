@@ -28,6 +28,31 @@
       "type": "figure",
       "figure": "figures/c-t9-b15-quat-vanh-khuyen.svg",
       "caption": "Hình quạt tròn và hình vành khuyên."
+    },
+    {
+      "type": "method",
+      "title": "Tính độ dài cung, diện tích hình quạt tròn, số đo góc nội tiếp",
+      "when": "Đề cho bán kính R và số đo cung (hoặc góc ở tâm) và hỏi độ dài cung, diện tích hình quạt; hoặc hỏi góc nội tiếp chắn một cung.",
+      "steps": [
+        "Xác định bán kính R và số đo n° của cung (số đo cung bằng số đo góc ở tâm chắn cung đó).",
+        "Độ dài cung: l = π·R·n/180. Diện tích hình quạt: S = π·R²·n/360 (hoặc S = l·R/2).",
+        "Góc nội tiếp bằng một nửa số đo cung bị chắn; góc nội tiếp chắn nửa đường tròn bằng 90°.",
+        "Thay số, giữ π trong kết quả (hoặc lấy gần đúng nếu đề yêu cầu), ghi đơn vị."
+      ],
+      "notes": [
+        "Số đo cung tính bằng độ; đừng nhầm với độ dài cung.",
+        "Hình quạt 90° bằng một phần tư hình tròn, 180° bằng nửa hình tròn.",
+        "Góc nội tiếp có số đo bằng nửa số đo góc ở tâm cùng chắn một cung.",
+        "Đơn vị diện tích là bình phương của đơn vị độ dài."
+      ],
+      "sample": {
+        "problem": "Tính độ dài cung 90° của đường tròn bán kính 4 cm.",
+        "steps": [
+          "l = π·R·n/180 = π·4·90/180.",
+          "l = 2π (cm)."
+        ],
+        "answer": "2π cm"
+      }
     }
   ],
   "examples": [
@@ -144,6 +169,26 @@
       "figure": "figures/bt-t9-b15-q07.svg"
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Độ dài cung 90° của đường tròn bán kính 4 cm bằng bao nhiêu π cm? (nhập hệ số của π)",
+      "expr": "4*90/180",
+      "answer": "2",
+      "explain": "l = π·4·90/180 = 2π cm.",
+      "dang": "Tính độ dài cung, diện tích hình quạt tròn, số đo góc nội tiếp",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Diện tích hình quạt tròn bán kính 6 cm, số đo cung 60° bằng bao nhiêu π cm²? (nhập hệ số của π)",
+      "expr": "36*60/360",
+      "answer": "6",
+      "explain": "S = π·6²·60/360 = 6π cm².",
+      "dang": "Tính độ dài cung, diện tích hình quạt tròn, số đo góc nội tiếp",
+      "id": "q11"
+    },
+    {
       "id": "q08",
       "level": "Vận dụng",
       "type": "fill",
@@ -162,6 +207,26 @@
       "answer": "12",
       "explain": "S = lR/2 = 12π.",
       "figure": "figures/bt-t9-b15-q09.svg"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cung tròn bán kính 6 cm có độ dài 3π cm. Số đo cung đó là bao nhiêu độ?",
+      "expr": "3*180/6",
+      "answer": "90",
+      "explain": "l = π·R·n/180 ⇒ 3π = π·6·n/180 ⇒ n = 90.",
+      "dang": "Tính độ dài cung, diện tích hình quạt tròn, số đo góc nội tiếp",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một góc nội tiếp chắn cung có số đo 80°. Số đo góc nội tiếp là bao nhiêu độ?",
+      "expr": "80/2",
+      "answer": "40",
+      "explain": "Góc nội tiếp bằng nửa số đo cung bị chắn: 80°/2 = 40°.",
+      "dang": "Tính độ dài cung, diện tích hình quạt tròn, số đo góc nội tiếp",
+      "id": "q13"
     }
   ]
 }

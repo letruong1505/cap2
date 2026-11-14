@@ -28,6 +28,32 @@
       "type": "figure",
       "figure": "figures/t6-b5-nhan-chia.svg",
       "caption": "Phép nhân và phép chia có dư"
+    },
+    {
+      "type": "method",
+      "title": "Tìm số chưa biết x trong phép tính",
+      "when": "Đề cho \"tìm x biết...\" với số tự nhiên, x là một thành phần của phép cộng, trừ, nhân, chia.",
+      "steps": [
+        "Xác định x đóng vai trò gì: số hạng, số bị trừ, số trừ, thừa số, số bị chia hay số chia.",
+        "Dùng quy tắc ngược: số hạng = tổng − số hạng kia; số bị trừ = hiệu + số trừ; số trừ = số bị trừ − hiệu; thừa số = tích : thừa số kia; số bị chia = thương × số chia; số chia = số bị chia : thương.",
+        "Nếu x nằm trong biểu thức, coi cả biểu thức đó là một thành phần, tìm nó trước rồi mới tìm x.",
+        "Thử lại bằng cách thay x vào đề."
+      ],
+      "notes": [
+        "Tính biểu thức không chứa x ở vế phải trước.",
+        "Một ngoặc chứa x được xem là một thành phần: ví dụ 125 : (x + 2) = 25 thì x + 2 là số chia.",
+        "Không đổi chỗ số bị trừ và số trừ; không đổi chỗ số bị chia và số chia.",
+        "Phép chia ở bậc này là chia hết; x phải là số tự nhiên."
+      ],
+      "sample": {
+        "problem": "Tìm x biết 3·x − 7 = 20.",
+        "steps": [
+          "Coi 3·x là số bị trừ: 3·x = 20 + 7 = 27.",
+          "x là thừa số: x = 27 : 3 = 9.",
+          "Thử lại: 3·9 − 7 = 20 (đúng)."
+        ],
+        "answer": "x = 9"
+      }
     }
   ],
   "examples": [
@@ -92,6 +118,16 @@
       "concept": true
     },
     {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tìm x biết x + 15 = 42.",
+      "expr": "42-15",
+      "answer": "27",
+      "explain": "x là số hạng: x = 42 − 15 = 27.",
+      "dang": "Tìm số chưa biết x trong phép tính",
+      "id": "q10"
+    },
+    {
       "id": "q03",
       "level": "Hiểu",
       "type": "fill",
@@ -137,6 +173,26 @@
       "explain": "45·11 = 450 + 45 = 495."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm x biết 48 − x = 19.",
+      "expr": "48-19",
+      "answer": "29",
+      "explain": "x là số trừ: x = 48 − 19 = 29.",
+      "dang": "Tìm số chưa biết x trong phép tính",
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm x biết 3·x − 7 = 20.",
+      "expr": "9",
+      "answer": "9",
+      "explain": "3·x = 20 + 7 = 27, nên x = 27 : 3 = 9.",
+      "dang": "Tìm số chưa biết x trong phép tính",
+      "id": "q12"
+    },
+    {
       "id": "q08",
       "level": "Vận dụng",
       "type": "fill",
@@ -153,6 +209,26 @@
       "expr": "24*15",
       "answer": "360",
       "explain": "360 bút."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm x biết 125 : (x + 2) = 25.",
+      "expr": "125/25-2",
+      "answer": "3",
+      "explain": "x + 2 là số chia: x + 2 = 125 : 25 = 5, nên x = 5 − 2 = 3.",
+      "dang": "Tìm số chưa biết x trong phép tính",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm x biết 2·(x − 4) + 5 = 21.",
+      "expr": "(21-5)/2+4",
+      "answer": "12",
+      "explain": "2·(x − 4) = 21 − 5 = 16 ⇒ x − 4 = 8 ⇒ x = 12.",
+      "dang": "Tìm số chưa biết x trong phép tính",
+      "id": "q14"
     }
   ]
 }

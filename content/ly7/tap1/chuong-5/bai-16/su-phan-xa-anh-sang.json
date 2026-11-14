@@ -38,6 +38,31 @@
     {
       "type": "text",
       "content": "Phản xạ khuếch tán là hiện tượng các tia sáng song song truyền đến bề mặt không nhẵn, bị phản xạ theo mọi hướng. Khi có phản xạ ta nhìn thấy ảnh của vật; khi có phản xạ khuếch tán ta không nhìn thấy ảnh của vật."
+    },
+    {
+      "type": "method",
+      "title": "Vẽ tia phản xạ và tính góc phản xạ",
+      "when": "Đề cho tia tới và gương, yêu cầu vẽ tia phản xạ hoặc tính góc tới, góc phản xạ.",
+      "steps": [
+        "Vẽ pháp tuyến tại điểm tới (đường vuông góc với mặt gương).",
+        "Xác định góc tới i: góc giữa tia tới và pháp tuyến (không phải với mặt gương).",
+        "Áp dụng định luật: góc phản xạ i′ = góc tới i, tia phản xạ và tia tới nằm hai bên pháp tuyến cùng một mặt phẳng.",
+        "Nếu đề cho góc giữa tia tới và mặt gương thì góc tới = 90° − góc đó."
+      ],
+      "notes": [
+        "Góc tới và góc phản xạ đều tính từ pháp tuyến.",
+        "Tia tới vuông góc mặt gương thì góc tới 0°, tia phản xạ trùng tia tới.",
+        "Góc tạo bởi tia tới và tia phản xạ bằng 2i.",
+        "Pháp tuyến vẽ nét đứt."
+      ],
+      "sample": {
+        "problem": "Tia tới hợp mặt gương góc 30°. Tính góc phản xạ.",
+        "steps": [
+          "Góc tới i = 90° − 30° = 60°.",
+          "Góc phản xạ i′ = i = 60°."
+        ],
+        "answer": "60°"
+      }
     }
   ],
   "examples": [
@@ -152,6 +177,16 @@
       "concept": true
     },
     {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Góc tới bằng 40°. Góc phản xạ bằng bao nhiêu độ?",
+      "expr": "40",
+      "answer": "40",
+      "explain": "Định luật phản xạ: i′ = i = 40°.",
+      "dang": "Vẽ tia phản xạ và tính góc phản xạ",
+      "id": "q09"
+    },
+    {
       "id": "q05",
       "level": "Hiểu",
       "type": "mcq",
@@ -193,6 +228,16 @@
       "figure": "figures/bt-ly7-b16-q06.svg"
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tia tới hợp với mặt gương một góc 30°. Góc tới là bao nhiêu độ?",
+      "expr": "90-30",
+      "answer": "60",
+      "explain": "Góc tới = 90° − 30° = 60°.",
+      "dang": "Vẽ tia phản xạ và tính góc phản xạ",
+      "id": "q10"
+    },
+    {
       "id": "q07",
       "level": "Vận dụng",
       "type": "fill",
@@ -211,6 +256,26 @@
       "answer": "60",
       "explain": "Góc giữa tia tới và tia phản xạ = i + i' = 2 × 30° = 60°.",
       "figure": "figures/bt-ly7-b16-q08.svg"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Góc giữa tia tới và tia phản xạ bằng 80°. Góc tới bằng bao nhiêu độ?",
+      "expr": "80/2",
+      "answer": "40",
+      "explain": "i + i′ = 80° và i = i′ nên i = 40°.",
+      "dang": "Vẽ tia phản xạ và tính góc phản xạ",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tia tới hợp mặt gương góc 30°. Góc giữa tia tới và tia phản xạ bằng bao nhiêu độ?",
+      "expr": "2*60",
+      "answer": "120",
+      "explain": "i = 60° nên góc giữa tia tới và tia phản xạ là 2·60° = 120°.",
+      "dang": "Vẽ tia phản xạ và tính góc phản xạ",
+      "id": "q12"
     }
   ]
 }

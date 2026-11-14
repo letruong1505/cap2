@@ -24,6 +24,30 @@
       "type": "figure",
       "figure": "figures/c-l6-b41-bieu-dien-luc.svg",
       "caption": "Biểu diễn lực 30 N với tỉ xích 1 cm ứng với 10 N."
+    },
+    {
+      "type": "method",
+      "title": "Biểu diễn lực bằng mũi tên",
+      "when": "Đề yêu cầu vẽ hoặc đọc hình biểu diễn lực với tỉ xích cho trước.",
+      "steps": [
+        "Xác định lực: điểm đặt, phương, chiều, độ lớn.",
+        "Chọn tỉ xích (ví dụ 1 cm ứng với 10 N).",
+        "Tính độ dài mũi tên = độ lớn lực : giá trị một đơn vị tỉ xích.",
+        "Vẽ mũi tên: gốc tại điểm đặt, hướng theo chiều lực, dài theo tỉ xích."
+      ],
+      "notes": [
+        "Phương, chiều của trọng lực: thẳng đứng, hướng xuống.",
+        "Điểm đặt là gốc mũi tên, đặt trên vật.",
+        "Đổi độ lớn lực về cùng đơn vị với tỉ xích.",
+        "Ghi rõ tên lực (P, F, Fms...) bên cạnh mũi tên."
+      ],
+      "sample": {
+        "problem": "Biểu diễn lực 30 N với tỉ xích 1 cm ứng với 10 N. Mũi tên dài bao nhiêu?",
+        "steps": [
+          "Độ dài mũi tên = 30 : 10 = 3 (cm)."
+        ],
+        "answer": "3 cm"
+      }
     }
   ],
   "examples": [
@@ -126,6 +150,47 @@
       "explain": "75 N."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Biểu diễn lực 30 N theo tỉ xích 1 cm ứng với 10 N. Mũi tên dài bao nhiêu cm?",
+      "expr": "30/10",
+      "answer": "3",
+      "explain": "Độ dài = 30 : 10 = 3 cm.",
+      "dang": "Biểu diễn lực bằng mũi tên",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một lực dài 4 cm trên hình với tỉ xích 1 cm ứng với 5 N. Độ lớn lực là bao nhiêu N?",
+      "expr": "4*5",
+      "answer": "20",
+      "explain": "Độ lớn = 4·5 = 20 N.",
+      "dang": "Biểu diễn lực bằng mũi tên",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trọng lực tác dụng lên vật có phương và chiều như thế nào?",
+      "choices": [
+        "Nằm ngang, hướng sang phải",
+        "Thẳng đứng, hướng xuống dưới",
+        "Thẳng đứng, hướng lên trên",
+        "Nằm ngang, hướng sang trái"
+      ],
+      "answer": 1,
+      "explain": "Trọng lực là lực hút của Trái Đất nên có phương thẳng đứng và chiều từ trên xuống.",
+      "wrong_explain": {
+        "0": "Trọng lực không nằm ngang.",
+        "2": "Hướng lên là chiều ngược với trọng lực.",
+        "3": "Trọng lực không nằm ngang."
+      },
+      "concept": true,
+      "dang": "Biểu diễn lực bằng mũi tên",
+      "id": "q11"
+    },
+    {
       "id": "q06",
       "level": "Vận dụng",
       "type": "fill",
@@ -142,6 +207,16 @@
       "expr": "30",
       "answer": "30",
       "explain": "50 − 20."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một vật có khối lượng 2 kg. Biểu diễn trọng lực của vật với tỉ xích 1 cm ứng với 5 N thì mũi tên dài bao nhiêu cm?",
+      "expr": "2*10/5",
+      "answer": "4",
+      "explain": "Trọng lực P = 10·m = 20 N; độ dài 20 : 5 = 4 cm.",
+      "dang": "Biểu diễn lực bằng mũi tên",
+      "id": "q10"
     }
   ]
 }

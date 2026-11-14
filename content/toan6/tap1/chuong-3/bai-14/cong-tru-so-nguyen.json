@@ -32,6 +32,32 @@
     {
       "type": "formula",
       "content": "a − b = a + (−b)"
+    },
+    {
+      "type": "method",
+      "title": "Cộng, trừ số nguyên",
+      "when": "Đề cho các phép tính cộng, trừ với số nguyên âm và dương.",
+      "steps": [
+        "Đưa phép trừ về phép cộng: a − b = a + (−b).",
+        "Hai số cùng dấu: cộng hai giá trị tuyệt đối rồi giữ dấu chung.",
+        "Hai số khác dấu: lấy giá trị tuyệt đối lớn trừ giá trị tuyệt đối nhỏ, kết quả mang dấu của số có giá trị tuyệt đối lớn hơn.",
+        "Kiểm tra bằng trục số hoặc ước lượng dấu của kết quả."
+      ],
+      "notes": [
+        "Trừ đi một số âm bằng cộng số dương: a − (−b) = a + b.",
+        "Hai số đối nhau có tổng bằng 0.",
+        "Số âm phải đặt trong ngoặc khi đứng sau dấu phép tính: 5 + (−3).",
+        "Dấu của kết quả luôn là dấu của số có giá trị tuyệt đối lớn hơn."
+      ],
+      "sample": {
+        "problem": "Tính (−15) + 8.",
+        "steps": [
+          "Hai số khác dấu: |−15| = 15, |8| = 8.",
+          "Lấy 15 − 8 = 7, kết quả mang dấu âm vì 15 lớn hơn.",
+          "(−15) + 8 = −7."
+        ],
+        "answer": "−7"
+      }
     }
   ],
   "examples": [
@@ -96,6 +122,16 @@
       "concept": true
     },
     {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính (−12) + (−7).",
+      "expr": "-12-7",
+      "answer": "-19",
+      "explain": "Hai số cùng dấu âm: 12 + 7 = 19, giữ dấu âm: −19.",
+      "dang": "Cộng, trừ số nguyên",
+      "id": "q10"
+    },
+    {
       "id": "q03",
       "level": "Hiểu",
       "type": "fill",
@@ -141,6 +177,26 @@
       "explain": "= −100."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 15 + (−23).",
+      "expr": "15-23",
+      "answer": "-8",
+      "explain": "Khác dấu: 23 − 15 = 8, mang dấu của 23 (âm): −8.",
+      "dang": "Cộng, trừ số nguyên",
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (−9) − (−14).",
+      "expr": "-9+14",
+      "answer": "5",
+      "explain": "(−9) − (−14) = (−9) + 14 = 14 − 9 = 5.",
+      "dang": "Cộng, trừ số nguyên",
+      "id": "q12"
+    },
+    {
       "id": "q08",
       "level": "Vận dụng",
       "type": "fill",
@@ -157,6 +213,16 @@
       "expr": "500-800",
       "answer": "-300",
       "explain": "= −300."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính 8 − 17 + (−5).",
+      "expr": "8-17-5",
+      "answer": "-14",
+      "explain": "8 − 17 = −9; (−9) + (−5) = −14.",
+      "dang": "Cộng, trừ số nguyên",
+      "id": "q13"
     }
   ]
 }

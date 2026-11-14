@@ -28,6 +28,32 @@
     {
       "type": "text",
       "content": "Quy tắc chuyển vế: khi chuyển một số hạng từ vế này sang vế kia của đẳng thức, ta đổi dấu số hạng đó (dấu + thành -, dấu - thành +)."
+    },
+    {
+      "type": "method",
+      "title": "Tìm x trong tập số hữu tỉ",
+      "when": "Đề cho phương trình dạng x + a = b, a − x = b, k·x + a = b với số hữu tỉ.",
+      "steps": [
+        "Thu gọn từng vế bằng cách thực hiện các phép tính và bỏ ngoặc.",
+        "Chuyển vế: chuyển số hạng sang vế kia thì đổi dấu, đưa các số hạng chứa x về một vế.",
+        "Thu gọn về dạng k·x = c rồi x = c : k.",
+        "Thử lại và viết kết quả dạng phân số tối giản."
+      ],
+      "notes": [
+        "Chuyển vế phải đổi dấu số hạng; nhân hoặc chia hai vế cho cùng một số khác 0 thì giữ nguyên đẳng thức.",
+        "Với a − x = b thì x = a − b, đừng viết x = b − a.",
+        "Quy đồng mẫu trước khi cộng trừ các phân số.",
+        "Luôn rút gọn kết quả về phân số tối giản."
+      ],
+      "sample": {
+        "problem": "Tìm x biết x + 1/2 = 3/4.",
+        "steps": [
+          "Chuyển vế: x = 3/4 − 1/2.",
+          "Quy đồng: 3/4 − 2/4 = 1/4.",
+          "Vậy x = 1/4."
+        ],
+        "answer": "x = 1/4"
+      }
     }
   ],
   "examples": [
@@ -187,6 +213,26 @@
       "explain": "Trong ngoặc: −4 + 6 = 2; nhân: 3 · 2 = 6; cuối cùng 2 − 6 = −4."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm x biết x + 1/2 = 3/4.",
+      "expr": "1/4",
+      "answer": "1/4",
+      "explain": "x = 3/4 − 1/2 = 3/4 − 2/4 = 1/4.",
+      "dang": "Tìm x trong tập số hữu tỉ",
+      "id": "q12"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm x biết x − 2/3 = 1/6.",
+      "expr": "5/6",
+      "answer": "5/6",
+      "explain": "x = 1/6 + 2/3 = 1/6 + 4/6 = 5/6.",
+      "dang": "Tìm x trong tập số hữu tỉ",
+      "id": "q13"
+    },
+    {
       "id": "q11",
       "level": "Vận dụng",
       "type": "fill",
@@ -194,6 +240,26 @@
       "expr": "(5-(2-7))/2",
       "answer": "5",
       "explain": "2 − 7 = −5; 5 − (−5) = 10; 10 : 2 = 5."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm x biết 3/5 − x = 1/10.",
+      "expr": "1/2",
+      "answer": "1/2",
+      "explain": "x = 3/5 − 1/10 = 6/10 − 1/10 = 5/10 = 1/2.",
+      "dang": "Tìm x trong tập số hữu tỉ",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm x biết 2x − 1/3 = 1/6.",
+      "expr": "1/4",
+      "answer": "1/4",
+      "explain": "2x = 1/6 + 1/3 = 1/2, nên x = 1/2 : 2 = 1/4.",
+      "dang": "Tìm x trong tập số hữu tỉ",
+      "id": "q15"
     }
   ]
 }

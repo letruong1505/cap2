@@ -28,6 +28,32 @@
       "type": "figure",
       "figure": "figures/t6-b7-thu-tu.svg",
       "caption": "Thứ tự thực hiện phép tính"
+    },
+    {
+      "type": "method",
+      "title": "Tính giá trị biểu thức có nhiều phép tính",
+      "when": "Đề cho biểu thức có cộng, trừ, nhân, chia, lũy thừa và dấu ngoặc, yêu cầu \"tính giá trị\" hoặc \"thực hiện phép tính\".",
+      "steps": [
+        "Quan sát biểu thức: có ngoặc không, có lũy thừa không, có nhân chia không.",
+        "Xác định thứ tự: không có ngoặc thì lũy thừa → nhân, chia → cộng, trừ; có ngoặc thì ( ) trước, rồi [ ], rồi { }.",
+        "Làm từng bước nhỏ, mỗi bước chỉ tính một nhóm phép tính và viết lại biểu thức sau bước đó; các phép tính cùng cấp làm từ trái sang phải.",
+        "Kiểm tra lại bằng cách ước lượng hoặc tính lại bước dễ sai (dấu trừ, lũy thừa)."
+      ],
+      "notes": [
+        "Cộng trừ cùng cấp thì làm từ trái sang phải; nhân chia cũng vậy. Ví dụ 12 − 5 + 3 = 10 chứ không phải 4.",
+        "Lũy thừa có số mũ chỉ áp dụng cho số đứng ngay trước nó: 2·3² = 2·9, không phải 6².",
+        "Với nhiều lớp ngoặc, làm từ ngoặc trong cùng ra ngoài.",
+        "Nhân chia trước, cộng trừ sau; không \"gom\" nhầm hai nhóm phép tính trong một bước."
+      ],
+      "sample": {
+        "problem": "Tính 3 + 2·(8 − 5)².",
+        "steps": [
+          "Trong ngoặc trước: 8 − 5 = 3, được 3 + 2·3².",
+          "Lũy thừa: 3² = 9, được 3 + 2·9.",
+          "Nhân: 2·9 = 18; cộng: 3 + 18 = 21."
+        ],
+        "answer": "21"
+      }
     }
   ],
   "examples": [
@@ -137,6 +163,26 @@
       "explain": "18 − 16 = 2; 25·2 = 50; 150 : 50 = 3."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 12 + 3·4 − 5.",
+      "expr": "12+3*4-5",
+      "answer": "19",
+      "explain": "Nhân trước: 3·4 = 12. Rồi 12 + 12 − 5 = 19.",
+      "dang": "Tính giá trị biểu thức có nhiều phép tính",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (25 − 7) : 3 + 2²·5.",
+      "expr": "(25-7)/3+4*5",
+      "answer": "26",
+      "explain": "Ngoặc: 25 − 7 = 18; 18 : 3 = 6. Lũy thừa: 2² = 4; 4·5 = 20. Cộng: 6 + 20 = 26.",
+      "dang": "Tính giá trị biểu thức có nhiều phép tính",
+      "id": "q11"
+    },
+    {
       "id": "q08",
       "level": "Vận dụng",
       "type": "fill",
@@ -153,6 +199,26 @@
       "expr": "100000-(5*8000+3*6000)",
       "answer": "42000",
       "explain": "100 000 − 58 000 = 42 000 đồng."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính 5·3² − 2·(7 − 1)·2.",
+      "expr": "5*9-2*(7-1)*2",
+      "answer": "21",
+      "explain": "5·3² = 5·9 = 45. Ngoặc: 7 − 1 = 6; 2·6·2 = 24. Trừ: 45 − 24 = 21.",
+      "dang": "Tính giá trị biểu thức có nhiều phép tính",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính 100 : {2·[(18 − 3·4) + 4]}.",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Trong ngoặc tròn: 3·4 = 12; 18 − 12 = 6. Ngoặc vuông: 6 + 4 = 10. Ngoặc nhọn: 2·10 = 20. Cuối cùng 100 : 20 = 5.",
+      "dang": "Tính giá trị biểu thức có nhiều phép tính",
+      "id": "q13"
     }
   ]
 }

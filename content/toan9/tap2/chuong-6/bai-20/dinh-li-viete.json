@@ -32,6 +32,31 @@
     {
       "type": "text",
       "content": "Hai số có tổng S và tích P là nghiệm của phương trình x² − Sx + P = 0 (điều kiện S² − 4P ≥ 0)."
+    },
+    {
+      "type": "method",
+      "title": "Định lí Viète và tính biểu thức đối xứng của hai nghiệm",
+      "when": "Đề cho phương trình bậc hai có hai nghiệm x₁, x₂ và hỏi tổng, tích hoặc giá trị biểu thức như x₁² + x₂².",
+      "steps": [
+        "Kiểm tra phương trình có nghiệm: Δ ≥ 0 (hoặc a, c trái dấu).",
+        "Tính tổng S = x₁ + x₂ = −b/a và tích P = x₁·x₂ = c/a.",
+        "Biến đổi biểu thức cần tính theo S và P: x₁² + x₂² = S² − 2P; (x₁ − x₂)² = S² − 4P; 1/x₁ + 1/x₂ = S/P.",
+        "Thay S, P và tính; kiểm tra điều kiện của đề."
+      ],
+      "notes": [
+        "Phải có Δ ≥ 0 trước khi dùng Viète với nghiệm thực.",
+        "Dấu của S là −b/a: cẩn thận với dấu của b.",
+        "|x₁ − x₂| = √(S² − 4P), nhớ lấy căn dương.",
+        "Biết S và P có thể tìm hai số bằng cách giải x² − Sx + P = 0."
+      ],
+      "sample": {
+        "problem": "Cho phương trình x² − 5x + 3 = 0 có hai nghiệm x₁, x₂. Tính x₁² + x₂².",
+        "steps": [
+          "Theo Viète: S = 5, P = 3.",
+          "x₁² + x₂² = S² − 2P = 25 − 6 = 19."
+        ],
+        "answer": "19"
+      }
     }
   ],
   "examples": [
@@ -96,6 +121,26 @@
       "concept": true
     },
     {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Phương trình x² − 7x + 10 = 0 có hai nghiệm x₁, x₂. Tổng x₁ + x₂ bằng?",
+      "expr": "7",
+      "answer": "7",
+      "explain": "Theo Viète: x₁ + x₂ = −b/a = 7.",
+      "dang": "Định lí Viète và tính biểu thức đối xứng của hai nghiệm",
+      "id": "q10"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Phương trình x² − 7x + 10 = 0 có hai nghiệm x₁, x₂. Tích x₁·x₂ bằng?",
+      "expr": "10",
+      "answer": "10",
+      "explain": "Theo Viète: x₁·x₂ = c/a = 10.",
+      "dang": "Định lí Viète và tính biểu thức đối xứng của hai nghiệm",
+      "id": "q11"
+    },
+    {
       "id": "q03",
       "level": "Hiểu",
       "type": "fill",
@@ -157,6 +202,26 @@
       "expr": "5",
       "answer": "5",
       "explain": "x₂ = 9 − 4 = 5."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phương trình x² − 5x + 3 = 0 có hai nghiệm x₁, x₂. Giá trị của x₁² + x₂² là?",
+      "expr": "25-2*3",
+      "answer": "19",
+      "explain": "S = 5, P = 3 nên x₁² + x₂² = S² − 2P = 25 − 6 = 19.",
+      "dang": "Định lí Viète và tính biểu thức đối xứng của hai nghiệm",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai số x₁, x₂ có tổng bằng 6 và tích bằng 8. Giá trị của |x₁ − x₂| là?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "(x₁ − x₂)² = S² − 4P = 36 − 32 = 4 nên |x₁ − x₂| = 2.",
+      "dang": "Định lí Viète và tính biểu thức đối xứng của hai nghiệm",
+      "id": "q13"
     }
   ]
 }

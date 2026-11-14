@@ -32,6 +32,31 @@
     {
       "type": "text",
       "content": "Ứng dụng: đo chiều cao cây, toà nhà; khoảng cách không đến được; độ dốc…"
+    },
+    {
+      "type": "method",
+      "title": "Giải tam giác vuông",
+      "when": "Đề cho một số cạnh hoặc góc của tam giác vuông và yêu cầu tính cạnh, góc hoặc tỉ số lượng giác.",
+      "steps": [
+        "Vẽ hình, đánh dấu góc vuông, góc nhọn đã cho; xác định cạnh huyền, cạnh đối, cạnh kề với góc đang xét.",
+        "Chọn hệ thức: sin = đối/huyền, cos = kề/huyền, tan = đối/kề, cot = kề/đối; hoặc Pythagore BC² = AB² + AC².",
+        "Viết hệ thức chứa đại lượng cần tìm rồi tính.",
+        "Kiểm tra lại bằng Pythagore hoặc tổng hai góc nhọn bằng 90°."
+      ],
+      "notes": [
+        "Cạnh đối và cạnh kề thay đổi theo góc đang xét; luôn chỉ rõ góc.",
+        "Cạnh huyền là cạnh đối diện góc vuông và là cạnh lớn nhất.",
+        "sin của góc này bằng cos của góc phụ với nó.",
+        "Làm tròn theo yêu cầu của đề, đổi chế độ máy tính sang độ."
+      ],
+      "sample": {
+        "problem": "Tam giác ABC vuông tại A, BC = 10 cm, góc B = 30°. Tính AC.",
+        "steps": [
+          "AC là cạnh đối của góc B, BC là cạnh huyền.",
+          "AC = BC·sin B = 10·sin 30° = 10·1/2 = 5 (cm)."
+        ],
+        "answer": "5 cm"
+      }
     }
   ],
   "examples": [
@@ -148,6 +173,26 @@
       "figure": "figures/bt-t9-b12-q07.svg"
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC vuông tại A có AB = 3 cm, AC = 4 cm. Độ dài BC là bao nhiêu cm?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "BC² = 3² + 4² = 25 nên BC = 5 cm.",
+      "dang": "Giải tam giác vuông",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC vuông tại A có AC = 4, BC = 5. sin B bằng (nhập phân số)?",
+      "expr": "4/5",
+      "answer": "4/5",
+      "explain": "sin B = cạnh đối/cạnh huyền = AC/BC = 4/5.",
+      "dang": "Giải tam giác vuông",
+      "id": "q11"
+    },
+    {
       "id": "q08",
       "level": "Vận dụng",
       "type": "fill",
@@ -166,6 +211,26 @@
       "answer": "5",
       "explain": "10·sin 30° = 5 m.",
       "figure": "figures/bt-t9-b12-q09.svg"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác ABC vuông tại A, BC = 10 cm, góc B = 30°. Độ dài AC là bao nhiêu cm?",
+      "expr": "10/2",
+      "answer": "5",
+      "explain": "AC = BC·sin 30° = 10·1/2 = 5 cm.",
+      "dang": "Giải tam giác vuông",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác ABC vuông tại A có AB = 6, BC = 10. cos B bằng (nhập phân số)?",
+      "expr": "6/10",
+      "answer": "3/5",
+      "explain": "cos B = cạnh kề/cạnh huyền = AB/BC = 6/10 = 3/5.",
+      "dang": "Giải tam giác vuông",
+      "id": "q13"
     }
   ]
 }

@@ -18,6 +18,31 @@
     {
       "type": "text",
       "content": "Khi giải bài toán chia tỉ lệ, đặt tỉ số chung bằng k rồi tính từng đại lượng theo k."
+    },
+    {
+      "type": "method",
+      "title": "Tìm các số khi biết tổng (hiệu) và tỉ số",
+      "when": "Đề cho hai (hoặc ba) số tỉ lệ với các số cho trước và biết tổng, hiệu hoặc chu vi.",
+      "steps": [
+        "Viết dãy tỉ số bằng nhau: x/a = y/b (hoặc x : y : z = a : b : c).",
+        "Áp dụng tính chất: x/a = y/b = (x + y)/(a + b) = (x − y)/(a − b).",
+        "Tính giá trị chung k của dãy tỉ số, rồi x = k·a, y = k·b.",
+        "Kiểm tra lại tổng hoặc hiệu và trả lời."
+      ],
+      "notes": [
+        "Chỉ dùng (x − y)/(a − b) khi a khác b.",
+        "Bài hình học: dùng chu vi hoặc nửa chu vi để lập tổng.",
+        "Dãy ba tỉ số vẫn dùng tổng ba tử chia tổng ba mẫu.",
+        "Hãy thử lại: các số tìm được có đúng tỉ lệ và đúng tổng không?"
+      ],
+      "sample": {
+        "problem": "Tìm x, y biết x/3 = y/5 và x + y = 40.",
+        "steps": [
+          "x/3 = y/5 = (x + y)/(3 + 5) = 40/8 = 5.",
+          "x = 5·3 = 15; y = 5·5 = 25."
+        ],
+        "answer": "x = 15, y = 25"
+      }
     }
   ],
   "examples": [
@@ -94,6 +119,26 @@
       "explain": "Tổng tỉ là 6; c = 3 · 36/6 = 18."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Biết x/3 = y/5 và x + y = 40. Giá trị của x là?",
+      "expr": "40/8*3",
+      "answer": "15",
+      "explain": "x/3 = y/5 = 40/8 = 5 nên x = 5·3 = 15.",
+      "dang": "Tìm các số khi biết tổng (hiệu) và tỉ số",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Biết x/2 = y/7 và y − x = 25. Giá trị của y là?",
+      "expr": "25/5*7",
+      "answer": "35",
+      "explain": "x/2 = y/7 = (y − x)/(7 − 2) = 25/5 = 5 nên y = 5·7 = 35.",
+      "dang": "Tìm các số khi biết tổng (hiệu) và tỉ số",
+      "id": "q10"
+    },
+    {
       "id": "q07",
       "level": "Vận dụng",
       "type": "fill",
@@ -110,6 +155,26 @@
       "expr": "4",
       "answer": "4",
       "explain": "Đặt x/2 = y/5 = k thì x = 2k, y = 5k. Khi đó x · y = 10k² = 40, nên k² = 4. Vì x, y dương nên k = 2, suy ra x = 4 (và y = 10)."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Biết x : y : z = 2 : 3 : 4 và x + y + z = 45. Giá trị của y là?",
+      "expr": "45/9*3",
+      "answer": "15",
+      "explain": "x/2 = y/3 = z/4 = 45/9 = 5 nên y = 5·3 = 15.",
+      "dang": "Tìm các số khi biết tổng (hiệu) và tỉ số",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình chữ nhật có chu vi 60 cm, hai cạnh tỉ lệ với 2 và 3. Cạnh dài là bao nhiêu cm?",
+      "expr": "30/5*3",
+      "answer": "18",
+      "explain": "Nửa chu vi 30. a/2 = b/3 = 30/5 = 6 nên cạnh dài b = 6·3 = 18 cm.",
+      "dang": "Tìm các số khi biết tổng (hiệu) và tỉ số",
+      "id": "q12"
     }
   ]
 }

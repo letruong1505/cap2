@@ -28,6 +28,31 @@
     {
       "type": "text",
       "content": "Có thể xác định trung điểm bằng thước có vạch chia hoặc gấp giấy, dùng sợi dây…"
+    },
+    {
+      "type": "method",
+      "title": "Tính độ dài đoạn thẳng (điểm nằm giữa, trung điểm)",
+      "when": "Đề cho độ dài một vài đoạn thẳng, điểm nằm giữa hoặc trung điểm và hỏi độ dài đoạn còn lại.",
+      "steps": [
+        "Xác định điểm nào nằm giữa hai điểm nào (từ đề hoặc hình vẽ).",
+        "Viết đẳng thức cộng đoạn thẳng: M nằm giữa A và B thì AM + MB = AB.",
+        "Nếu có trung điểm: M là trung điểm của AB thì AM = MB = AB/2.",
+        "Thay số, tính độ dài cần tìm và ghi đơn vị."
+      ],
+      "notes": [
+        "Chỉ được viết AM + MB = AB khi chắc chắn M nằm giữa A và B.",
+        "Trung điểm vừa nằm giữa hai đầu mút, vừa cách đều hai đầu mút.",
+        "Có nhiều trung điểm lồng nhau thì tính lần lượt từ đoạn lớn đến đoạn nhỏ.",
+        "Vẽ hình nháp trước khi tính để tránh nhầm điểm nằm giữa."
+      ],
+      "sample": {
+        "problem": "M nằm giữa A và B, AM = 3 cm, MB = 5 cm. Tính AB.",
+        "steps": [
+          "M nằm giữa A và B nên AM + MB = AB.",
+          "AB = 3 + 5 = 8 (cm)."
+        ],
+        "answer": "8 cm"
+      }
     }
   ],
   "examples": [
@@ -94,6 +119,16 @@
       "concept": true
     },
     {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "M nằm giữa A và B, AM = 3 cm, MB = 5 cm. Độ dài AB là bao nhiêu cm?",
+      "expr": "3+5",
+      "answer": "8",
+      "explain": "M nằm giữa nên AB = AM + MB = 8 cm.",
+      "dang": "Tính độ dài đoạn thẳng (điểm nằm giữa, trung điểm)",
+      "id": "q10"
+    },
+    {
       "id": "q03",
       "level": "Hiểu",
       "type": "fill",
@@ -144,6 +179,26 @@
       "figure": "figures/bt-t6-b35-q07.svg"
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "M nằm giữa A và B, AB = 12 cm, AM = 4 cm. Độ dài MB là bao nhiêu cm?",
+      "expr": "12-4",
+      "answer": "8",
+      "explain": "MB = AB − AM = 12 − 4 = 8 cm.",
+      "dang": "Tính độ dài đoạn thẳng (điểm nằm giữa, trung điểm)",
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "I là trung điểm của AB, AB = 14 cm. Độ dài AI là bao nhiêu cm?",
+      "expr": "14/2",
+      "answer": "7",
+      "explain": "AI = AB/2 = 7 cm.",
+      "dang": "Tính độ dài đoạn thẳng (điểm nằm giữa, trung điểm)",
+      "id": "q12"
+    },
+    {
       "id": "q08",
       "level": "Vận dụng",
       "type": "fill",
@@ -162,6 +217,16 @@
       "answer": "5",
       "explain": "2x = 10, x = 5.",
       "figure": "figures/bt-toan6-b35-q09.svg"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "M là trung điểm của AB, N là trung điểm của AM, AB = 16 cm. Độ dài AN là bao nhiêu cm?",
+      "expr": "16/2/2",
+      "answer": "4",
+      "explain": "AM = 16/2 = 8 cm; AN = AM/2 = 4 cm.",
+      "dang": "Tính độ dài đoạn thẳng (điểm nằm giữa, trung điểm)",
+      "id": "q13"
     }
   ]
 }

@@ -23,6 +23,31 @@
       "type": "figure",
       "figure": "figures/tn-toan7-b23-ti-le-nghich.svg",
       "caption": "Đại lượng tỉ lệ nghịch: bảng và đồ thị"
+    },
+    {
+      "type": "method",
+      "title": "Bài toán về đại lượng tỉ lệ nghịch",
+      "when": "Đề cho hai đại lượng mà đại lượng này tăng thì đại lượng kia giảm theo tỉ lệ (số người – thời gian, vận tốc – thời gian).",
+      "steps": [
+        "Xác định hai đại lượng tỉ lệ nghịch: x·y = a (a là hằng số).",
+        "Tìm hệ số tỉ lệ a = x₁·y₁ từ cặp giá trị đã biết.",
+        "Tính đại lượng cần tìm: y₂ = a / x₂ (hoặc x₁·y₁ = x₂·y₂).",
+        "Kiểm tra chiều biến đổi (x tăng thì y phải giảm) và trả lời."
+      ],
+      "notes": [
+        "Tỉ lệ nghịch: tích hai đại lượng không đổi, khác với tỉ lệ thuận (thương không đổi).",
+        "Công việc không đổi, năng suất mỗi người như nhau thì số người và thời gian tỉ lệ nghịch.",
+        "Quãng đường không đổi thì vận tốc và thời gian tỉ lệ nghịch.",
+        "Nếu kết quả không đổi chiều như dự đoán thì kiểm tra lại phép tính."
+      ],
+      "sample": {
+        "problem": "6 người làm xong một việc trong 10 ngày. Hỏi 5 người (cùng năng suất) làm xong trong bao nhiêu ngày?",
+        "steps": [
+          "Số người và số ngày tỉ lệ nghịch, a = 6·10 = 60.",
+          "Số ngày khi có 5 người: 60 : 5 = 12 (ngày)."
+        ],
+        "answer": "12 ngày"
+      }
     }
   ],
   "examples": [
@@ -72,6 +97,16 @@
       "explain": "6 · 4 = 12 · y, suy ra y = 2."
     },
     {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hai đại lượng x, y tỉ lệ nghịch. Khi x = 6 thì y = 4. Khi x = 8 thì y bằng?",
+      "expr": "6*4/8",
+      "answer": "3",
+      "explain": "a = 6·4 = 24, nên y = 24/8 = 3.",
+      "dang": "Bài toán về đại lượng tỉ lệ nghịch",
+      "id": "q09"
+    },
+    {
       "id": "q04",
       "level": "Hiểu",
       "type": "fill",
@@ -100,6 +135,16 @@
       "figure": "figures/bt-toan7-b23-q06.svg"
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "6 người làm xong một việc trong 10 ngày. 5 người (cùng năng suất) làm xong trong bao nhiêu ngày?",
+      "expr": "6*10/5",
+      "answer": "12",
+      "explain": "a = 60, số ngày: 60/5 = 12.",
+      "dang": "Bài toán về đại lượng tỉ lệ nghịch",
+      "id": "q10"
+    },
+    {
       "id": "q07",
       "level": "Vận dụng",
       "type": "fill",
@@ -116,6 +161,26 @@
       "expr": "9*20/12",
       "answer": "15",
       "explain": "9 · 20 = 12 · x, suy ra x = 15."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một ô tô đi với vận tốc 40 km/h hết 3 giờ. Nếu đi với vận tốc 60 km/h thì hết bao nhiêu giờ?",
+      "expr": "40*3/60",
+      "answer": "2",
+      "explain": "Quãng đường 40·3 = 120 km, thời gian 120/60 = 2 giờ.",
+      "dang": "Bài toán về đại lượng tỉ lệ nghịch",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "8 công nhân sửa xong một đoạn đường trong 15 ngày. Nếu có 12 công nhân (cùng năng suất) thì sửa xong trong bao nhiêu ngày?",
+      "expr": "8*15/12",
+      "answer": "10",
+      "explain": "Công việc không đổi: 8·15 = 12·x ⇒ x = 10 ngày.",
+      "dang": "Bài toán về đại lượng tỉ lệ nghịch",
+      "id": "q12"
     }
   ]
 }

@@ -23,6 +23,31 @@
     {
       "type": "text",
       "content": "Số oát ghi trên dụng cụ điện cho biết công suất định mức khi dùng đúng hiệu điện thế định mức. Điện năng tiêu thụ thường đo bằng kWh (số điện); 1 kWh = 3 600 000 J."
+    },
+    {
+      "type": "method",
+      "title": "Tính điện năng tiêu thụ và tiền điện",
+      "when": "Đề cho công suất, thời gian dùng của các dụng cụ điện và giá điện, hỏi điện năng (kWh) hoặc tiền điện.",
+      "steps": [
+        "Đổi công suất sang kW và thời gian sang giờ.",
+        "Điện năng A = P·t (kWh).",
+        "Cộng điện năng của nhiều dụng cụ và nhân số ngày.",
+        "Tiền điện = số kWh × giá điện."
+      ],
+      "notes": [
+        "1 kWh = 3 600 000 J.",
+        "Đổi W sang kW bằng cách chia cho 1 000.",
+        "Dụng cụ khác nhau thì tính riêng rồi cộng.",
+        "Đọc kĩ số ngày (30 ngày/tháng) và giá 1 kWh."
+      ],
+      "sample": {
+        "problem": "Bóng đèn 100 W thắp 5 giờ mỗi ngày trong 30 ngày. Tính điện năng.",
+        "steps": [
+          "P = 0,1 kW, t = 5·30 = 150 h.",
+          "A = 0,1·150 = 15 kWh."
+        ],
+        "answer": "15 kWh"
+      }
     }
   ],
   "examples": [
@@ -87,6 +112,16 @@
       "concept": true
     },
     {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Bóng đèn 100 W dùng 5 giờ. Điện năng tiêu thụ là bao nhiêu kWh? (nhập số thập phân)",
+      "expr": "0.1*5",
+      "answer": "0,5",
+      "explain": "A = 0,1 kW·5 h = 0,5 kWh.",
+      "dang": "Tính điện năng tiêu thụ và tiền điện",
+      "id": "q08"
+    },
+    {
       "id": "q03",
       "level": "Hiểu",
       "type": "mcq",
@@ -125,6 +160,16 @@
       "explain": "1·0,5."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bóng đèn 100 W thắp 5 giờ mỗi ngày trong 30 ngày. Điện năng là bao nhiêu kWh?",
+      "expr": "0.1*5*30",
+      "answer": "15",
+      "explain": "A = 0,1·150 = 15 kWh.",
+      "dang": "Tính điện năng tiêu thụ và tiền điện",
+      "id": "q09"
+    },
+    {
       "id": "q06",
       "level": "Vận dụng",
       "type": "fill",
@@ -141,6 +186,26 @@
       "expr": "5",
       "answer": "5",
       "explain": "1 100 : 220."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một nồi cơm điện 800 W dùng 1,5 giờ mỗi ngày. Trong 30 ngày với giá 2 000 đồng/kWh thì tiền điện là bao nhiêu đồng?",
+      "expr": "0.8*1.5*30*2000",
+      "answer": "72000",
+      "explain": "A = 0,8·1,5·30 = 36 kWh; tiền = 36·2 000 = 72 000 đồng.",
+      "dang": "Tính điện năng tiêu thụ và tiền điện",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hiệu điện thế 220 V, dòng điện 0,5 A chạy qua dụng cụ trong 10 giây. Điện năng là bao nhiêu J?",
+      "expr": "220*0.5*10",
+      "answer": "1100",
+      "explain": "A = U·I·t = 220·0,5·10 = 1 100 J.",
+      "dang": "Tính điện năng tiêu thụ và tiền điện",
+      "id": "q11"
     }
   ]
 }

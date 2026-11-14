@@ -28,6 +28,32 @@
     {
       "type": "text",
       "content": "Nếu a ⋮ b thì BCNN(a, b) = a. Nếu a và b nguyên tố cùng nhau thì BCNN(a, b) = a·b. Quy đồng mẫu các phân số: lấy mẫu chung là BCNN của các mẫu."
+    },
+    {
+      "type": "method",
+      "title": "Tìm BCNN và bài toán thực tế dùng BCNN",
+      "when": "Đề cho hai số và hỏi bội chung nhỏ nhất, hoặc bài \"sau bao lâu lại cùng\", \"ít nhất\", \"nhỏ nhất\".",
+      "steps": [
+        "Phân tích mỗi số ra thừa số nguyên tố.",
+        "Chọn tất cả các thừa số nguyên tố, chung và riêng.",
+        "Với mỗi thừa số lấy số mũ lớn nhất.",
+        "Nhân các thừa số vừa chọn được BCNN; với bài toán thực tế, tìm bội của BCNN thỏa điều kiện đề."
+      ],
+      "notes": [
+        "Nếu số này chia hết cho số kia thì BCNN là số lớn hơn.",
+        "Với hai số: ƯCLN × BCNN = tích hai số, dùng để kiểm tra nhanh.",
+        "Mọi bội chung đều là bội của BCNN; khi đề có điều kiện khoảng (ví dụ lớn hơn 100) thì liệt kê các bội của BCNN.",
+        "Các cụm \"sau bao nhiêu ngày lại cùng\", \"ít nhất\", \"nhỏ nhất\" thường báo hiệu dùng BCNN."
+      ],
+      "sample": {
+        "problem": "Tìm BCNN(12, 18).",
+        "steps": [
+          "12 = 2²·3 và 18 = 2·3².",
+          "Lấy mọi thừa số với số mũ lớn nhất: 2² và 3².",
+          "BCNN(12, 18) = 2²·3² = 36."
+        ],
+        "answer": "36"
+      }
     }
   ],
   "examples": [
@@ -137,6 +163,26 @@
       "explain": "48 ⋮ 16 nên BCNN = 48."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm BCNN(6, 8).",
+      "expr": "24",
+      "answer": "24",
+      "explain": "6 = 2·3, 8 = 2³. BCNN = 2³·3 = 24.",
+      "dang": "Tìm BCNN và bài toán thực tế dùng BCNN",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm BCNN(12, 15).",
+      "expr": "60",
+      "answer": "60",
+      "explain": "12 = 2²·3, 15 = 3·5. BCNN = 2²·3·5 = 60.",
+      "dang": "Tìm BCNN và bài toán thực tế dùng BCNN",
+      "id": "q11"
+    },
+    {
       "id": "q08",
       "level": "Vận dụng",
       "type": "fill",
@@ -153,6 +199,26 @@
       "expr": "36",
       "answer": "36",
       "explain": "Số học sinh là bội chung của 3, 4, 9; BCNN = 36."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "An trực nhật 4 ngày một lần, Bình trực nhật 6 ngày một lần. Hôm nay cả hai cùng trực. Sau ít nhất bao nhiêu ngày nữa hai bạn lại cùng trực?",
+      "expr": "12",
+      "answer": "12",
+      "explain": "Số ngày là bội chung nhỏ nhất của 4 và 6: BCNN(4, 6) = 12.",
+      "dang": "Tìm BCNN và bài toán thực tế dùng BCNN",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Số học sinh nhỏ nhất lớn hơn 100 mà xếp hàng 8 hay hàng 12 đều vừa đủ là bao nhiêu?",
+      "expr": "120",
+      "answer": "120",
+      "explain": "BCNN(8, 12) = 24, bội của 24: 24, 48, 72, 96, 120. Số nhỏ nhất lớn hơn 100 là 120.",
+      "dang": "Tìm BCNN và bài toán thực tế dùng BCNN",
+      "id": "q13"
     }
   ]
 }

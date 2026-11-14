@@ -27,6 +27,32 @@
     {
       "type": "text",
       "content": "Ví dụ: gieo một con xúc xắc cân đối, sáu biến cố \"xuất hiện mặt 1 chấm\", \"xuất hiện mặt 2 chấm\", …, \"xuất hiện mặt 6 chấm\" đồng khả năng và luôn xảy ra đúng một biến cố, nên mỗi biến cố có xác suất 1/6."
+    },
+    {
+      "type": "method",
+      "title": "Tính xác suất của biến cố",
+      "when": "Đề cho một phép thử (gieo xúc xắc, rút thẻ, lấy bóng) và hỏi xác suất của một biến cố.",
+      "steps": [
+        "Liệt kê (hoặc đếm) tất cả kết quả có thể của phép thử; các kết quả này đồng khả năng.",
+        "Đếm số kết quả thuận lợi cho biến cố cần tính.",
+        "Xác suất = số kết quả thuận lợi / tổng số kết quả có thể.",
+        "Rút gọn phân số; xác suất luôn nằm giữa 0 và 1."
+      ],
+      "notes": [
+        "Chỉ dùng công thức khi các kết quả đồng khả năng.",
+        "Biến cố chắc chắn có xác suất 1, biến cố không thể có xác suất 0.",
+        "Đếm đủ kết quả thuận lợi, đừng bỏ sót hoặc đếm hai lần.",
+        "Xác suất của biến cố \"không xảy ra\" bằng 1 trừ xác suất biến cố xảy ra."
+      ],
+      "sample": {
+        "problem": "Gieo một xúc xắc. Tính xác suất mặt xuất hiện có số chấm chẵn.",
+        "steps": [
+          "Có 6 kết quả có thể: 1, 2, 3, 4, 5, 6.",
+          "Kết quả thuận lợi: 2, 4, 6 (3 kết quả).",
+          "Xác suất = 3/6 = 1/2."
+        ],
+        "answer": "1/2"
+      }
     }
   ],
   "examples": [
@@ -105,6 +131,26 @@
       "explain": "Số nam bằng số nữ nên hai biến cố \"gọi được bạn nam\" và \"gọi được bạn nữ\" đồng khả năng; luôn xảy ra đúng một trong hai biến cố, nên xác suất là 1/2."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Gieo một xúc xắc. Xác suất để mặt xuất hiện có số chấm chẵn là?",
+      "expr": "3/6",
+      "answer": "1/2",
+      "explain": "Có 3 kết quả thuận lợi trong 6 kết quả: 3/6 = 1/2.",
+      "dang": "Tính xác suất của biến cố",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hộp có 3 quả bóng đỏ và 5 quả bóng xanh. Lấy ngẫu nhiên một quả. Xác suất lấy được bóng xanh là?",
+      "expr": "5/8",
+      "answer": "5/8",
+      "explain": "Có 5 quả xanh trong 8 quả: 5/8.",
+      "dang": "Tính xác suất của biến cố",
+      "id": "q10"
+    },
+    {
       "id": "q07",
       "level": "Vận dụng",
       "type": "fill",
@@ -132,6 +178,26 @@
         "2": "−1/4 < 0 nên không thể là xác suất.",
         "3": "5/4 > 1 nên không thể là xác suất."
       }
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Rút ngẫu nhiên một thẻ từ 20 thẻ đánh số từ 1 đến 20. Xác suất để số trên thẻ chia hết cho 5 là?",
+      "expr": "4/20",
+      "answer": "1/5",
+      "explain": "Các số chia hết cho 5: 5, 10, 15, 20 (4 số). Xác suất 4/20 = 1/5.",
+      "dang": "Tính xác suất của biến cố",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chọn ngẫu nhiên một số từ 1 đến 12. Xác suất để số đó KHÔNG là bội của 3 là?",
+      "expr": "8/12",
+      "answer": "2/3",
+      "explain": "Bội của 3: 3, 6, 9, 12 (4 số) nên có 12 − 4 = 8 số không là bội. Xác suất 8/12 = 2/3.",
+      "dang": "Tính xác suất của biến cố",
+      "id": "q12"
     }
   ]
 }
