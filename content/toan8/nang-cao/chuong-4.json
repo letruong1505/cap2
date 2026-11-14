@@ -22,7 +22,8 @@
       "stem": "[Bài 15] Tam giác ABC có MN ∥ BC (M thuộc AB, N thuộc AC), MN = 6 cm, BC = 10 cm, AM = 9 cm. Tính MB (cm).",
       "expr": "9*10/6-9",
       "answer": "6",
-      "explain": "AM/AB = MN/BC nên AB = 9·10 : 6 = 15. Do đó MB = AB − AM = 6 (cm)."
+      "explain": "AM/AB = MN/BC nên AB = 9·10 : 6 = 15. Do đó MB = AB − AM = 6 (cm).",
+      "figure": "figures/nc-toan8-b15-n01.svg"
     },
     {
       "id": "b15-n02",
@@ -31,7 +32,8 @@
       "stem": "[Bài 15] Hình thang ABCD (AB ∥ CD), AC cắt BD tại O, AB = 4, CD = 10, OA = 6. Tính OC.",
       "expr": "6*10/4",
       "answer": "15",
-      "explain": "AB ∥ CD nên OA/OC = AB/CD. Suy ra OC = OA·CD : AB = 6·10 : 4 = 15."
+      "explain": "AB ∥ CD nên OA/OC = AB/CD. Suy ra OC = OA·CD : AB = 6·10 : 4 = 15.",
+      "figure": "figures/nc-toan8-b15-n02.svg"
     },
     {
       "id": "b16-n01",
@@ -40,7 +42,8 @@
       "stem": "[Bài 16] Tứ giác ABCD có AC = 10 cm, BD = 6 cm. E, F, G, H là trung điểm AB, BC, CD, DA. Tính chu vi tứ giác EFGH (cm).",
       "expr": "2*(10/2+6/2)",
       "answer": "16",
-      "explain": "EF và HG là đường trung bình của hai tam giác chứa AC nên EF = HG = AC : 2 = 5; tương tự FG = HE = BD : 2 = 3. Chu vi = 2·(5 + 3) = 16 (cm)."
+      "explain": "EF và HG là đường trung bình của hai tam giác chứa AC nên EF = HG = AC : 2 = 5; tương tự FG = HE = BD : 2 = 3. Chu vi = 2·(5 + 3) = 16 (cm).",
+      "figure": "figures/nc-toan8-b16-n01.svg"
     },
     {
       "id": "b16-n02",
@@ -49,7 +52,8 @@
       "stem": "[Bài 16] Tứ giác ABCD có AC = 8 cm, BD = 6 cm và AC ⊥ BD. E, F, G, H là trung điểm AB, BC, CD, DA. Tính diện tích tứ giác EFGH (cm²).",
       "expr": "8/2*6/2",
       "answer": "12",
-      "explain": "EFGH là hình bình hành có các cạnh song song với hai đường chéo nên có một góc vuông, là hình chữ nhật với hai cạnh 4 và 3. S = 4·3 = 12 (cm²)."
+      "explain": "EFGH là hình bình hành có các cạnh song song với hai đường chéo nên có một góc vuông, là hình chữ nhật với hai cạnh 4 và 3. S = 4·3 = 12 (cm²).",
+      "figure": "figures/nc-toan8-b16-n02.svg"
     },
     {
       "id": "b17-n01",
@@ -58,7 +62,8 @@
       "stem": "[Bài 17] Tam giác ABC có phân giác AD, BD = 4 cm, DC = 6 cm, chu vi tam giác bằng 25 cm. Tính AB (cm).",
       "expr": "(25-10)*2/5",
       "answer": "6",
-      "explain": "AB/AC = BD/DC = 2/3 và AB + AC = 25 − 10 = 15. Chia 15 theo tỉ lệ 2 : 3: AB = 15·2/5 = 6 (cm)."
+      "explain": "AB/AC = BD/DC = 2/3 và AB + AC = 25 − 10 = 15. Chia 15 theo tỉ lệ 2 : 3: AB = 15·2/5 = 6 (cm).",
+      "figure": "figures/nc-toan8-b17-n01.svg"
     },
     {
       "id": "b17-n02",
@@ -67,7 +72,8 @@
       "stem": "[Bài 17] Tam giác ABC có phân giác AD, BD = 6 cm, DC = 9 cm, chu vi 40 cm. Tính AC − AB (cm).",
       "expr": "(40-15)*3/5-(40-15)*2/5",
       "answer": "5",
-      "explain": "AB + AC = 40 − 15 = 25 và AB/AC = 6/9 = 2/3 nên AB = 10, AC = 15. Hiệu là 5 cm."
+      "explain": "AB + AC = 40 − 15 = 25 và AB/AC = 6/9 = 2/3 nên AB = 10, AC = 15. Hiệu là 5 cm.",
+      "figure": "figures/nc-toan8-b17-n02.svg"
     }
   ]
 }
