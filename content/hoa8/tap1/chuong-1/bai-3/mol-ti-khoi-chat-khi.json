@@ -42,6 +42,32 @@
     {
       "type": "text",
       "content": "Tỉ khối của khí A đối với khí B là tỉ lệ khối lượng mol: d(A/B) = M_A / M_B. Khối lượng mol trung bình của không khí là 29 g/mol (20% O₂ và 80% N₂ theo thể tích), nên d(A/không khí) = M_A / 29. Khí có tỉ khối lớn hơn 1 thì nặng hơn."
+    },
+    {
+      "type": "method",
+      "title": "Bài toán tỉ khối chất khí",
+      "when": "Đề hỏi khí A nặng hay nhẹ hơn khí B bao nhiêu lần, hoặc cho tỉ khối để tìm khối lượng mol.",
+      "steps": [
+        "Xác định khối lượng mol M của các khí từ công thức (hoặc từ đề bài).",
+        "Dùng d(A/B) = M(A)/M(B); với không khí dùng d(A/kk) = M(A)/29.",
+        "Thay số và tính; d > 1 thì A nặng hơn B, d < 1 thì A nhẹ hơn B.",
+        "Tìm ngược: M(A) = d(A/B) × M(B)."
+      ],
+      "notes": [
+        "Tỉ khối không có đơn vị.",
+        "Khí được so sánh (đứng trước chữ \"đối với/so với\") nằm ở tử số; khí làm chuẩn nằm ở mẫu số.",
+        "Khối lượng mol trung bình của không khí lấy là 29 g/mol.",
+        "Khí nhẹ hơn không khí khi M < 29 (H₂, CH₄, NH₃); nặng hơn khi M > 29 (CO₂, SO₂, Cl₂)."
+      ],
+      "sample": {
+        "problem": "Khí CO₂ nặng hơn khí H₂ bao nhiêu lần?",
+        "steps": [
+          "M(CO₂) = 12 + 2·16 = 44; M(H₂) = 2.",
+          "d(CO₂/H₂) = 44/2 = 22.",
+          "CO₂ nặng hơn H₂ 22 lần."
+        ],
+        "answer": "22 lần"
+      }
     }
   ],
   "examples": [
@@ -222,6 +248,26 @@
       "explain": "m = n × M = 0,5 × 58,5 = 29,25 g."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khí SO₂ (M = 64) nặng hơn khí O₂ (M = 32) bao nhiêu lần?",
+      "expr": "64/32",
+      "answer": "2",
+      "explain": "d(SO₂/O₂) = 64/32 = 2 lần.",
+      "dang": "Bài toán tỉ khối chất khí",
+      "id": "q13"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khí X có tỉ khối đối với H₂ bằng 22. Khối lượng mol của X là bao nhiêu g/mol? (M H₂ = 2)",
+      "expr": "22*2",
+      "answer": "44",
+      "explain": "M(X) = d × M(H₂) = 22 × 2 = 44 g/mol.",
+      "dang": "Bài toán tỉ khối chất khí",
+      "id": "q14"
+    },
+    {
       "id": "q10",
       "level": "Vận dụng",
       "type": "mcq",
@@ -269,6 +315,26 @@
         "3": "CO₂ nặng hơn không khí nên lắng xuống."
       },
       "concept": true
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khí Y có tỉ khối đối với CH₄ bằng 2,75 (M CH₄ = 16). Khối lượng mol của Y là bao nhiêu g/mol?",
+      "expr": "2.75*16",
+      "answer": "44",
+      "explain": "M(Y) = 2,75 × 16 = 44 g/mol.",
+      "dang": "Bài toán tỉ khối chất khí",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tỉ khối của khí Z (M = 58) đối với không khí (M = 29) bằng bao nhiêu?",
+      "expr": "58/29",
+      "answer": "2",
+      "explain": "d(Z/kk) = 58/29 = 2, tức Z nặng gấp 2 lần không khí.",
+      "dang": "Bài toán tỉ khối chất khí",
+      "id": "q16"
     }
   ]
 }

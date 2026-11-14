@@ -138,6 +138,20 @@ h2 { font-size: 20px; font-weight: 700; margin: 32px 0 12px; color: var(--ink); 
   display: inline-block;
   margin: 2px 0 14px;
 }
+.method { border: 2px solid var(--sky); border-radius: 14px; padding: 16px 20px; margin: 14px 0 18px; background: #fff; max-width: 760px; }
+.method p { margin: 0; }
+#sec-theory .method p:not(.formula) { max-width: none; margin: 0; }
+.method-title { font-size: 17px; font-weight: 800; color: var(--sky); margin-bottom: 6px !important; }
+.method-when { line-height: 1.6; margin-bottom: 6px !important; }
+.method-steps { margin: 6px 0 10px 4px; padding: 0 0 0 18px; line-height: 1.75; }
+.method-steps li { margin-bottom: 4px; }
+.method-notes { background: #fff4d9; border-radius: 10px; padding: 10px 14px; margin: 8px 0; }
+.method-notes-title { font-weight: 800; color: #7a4b00; margin-bottom: 2px !important; }
+.method-notes ul { margin: 2px 0 0 18px; padding: 0; line-height: 1.65; }
+.method-sample { background: var(--paper); border-radius: 10px; padding: 10px 14px; margin-top: 10px; }
+.method-sample-label { font-size: 13px; font-weight: 700; color: var(--sky); }
+.method-sample-problem { font-weight: 600; }
+.method-sample ol { margin: 6px 0 6px 20px; padding: 0; line-height: 1.7; }
 .example { background: var(--paper); border-radius: 14px; padding: 16px 20px; margin: 0 0 12px; }
 .example p { margin: 0; }
 .example-label { font-size: 13px; font-weight: 700; color: var(--sky); margin-bottom: 2px !important; }

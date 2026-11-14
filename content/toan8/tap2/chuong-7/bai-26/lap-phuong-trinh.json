@@ -16,6 +16,32 @@
     {
       "type": "text",
       "content": "Công thức chuyển động: quãng đường = vận tốc × thời gian. Hai vật đi ngược chiều cùng lúc khởi hành từ hai nơi, tổng vận tốc là tốc độ lại gần nhau."
+    },
+    {
+      "type": "method",
+      "title": "Giải bài toán bằng cách lập phương trình",
+      "when": "Bài toán có lời văn: tìm số, chuyển động, tuổi, công việc, ... với một đại lượng chưa biết.",
+      "steps": [
+        "Chọn ẩn x (kèm đơn vị) và đặt điều kiện thích hợp cho ẩn.",
+        "Biểu diễn các đại lượng còn lại theo x, tìm mối quan hệ \"bằng nhau\" trong đề để lập phương trình.",
+        "Giải phương trình vừa lập.",
+        "Đối chiếu nghiệm với điều kiện của ẩn rồi trả lời đúng câu hỏi của đề (có đơn vị)."
+      ],
+      "notes": [
+        "Đồng nhất đơn vị trước khi lập phương trình (km với giờ, phút đổi ra giờ).",
+        "Chuyển động: quãng đường = vận tốc × thời gian. Hai xe đi ngược chiều gặp nhau: tổng quãng đường hai xe bằng khoảng cách ban đầu.",
+        "Nghiệm của phương trình chưa chắc là đáp số: phải kiểm tra điều kiện (số tự nhiên, thời gian dương, tuổi dương, ...).",
+        "Đề hỏi đại lượng khác với ẩn thì phải tính thêm sau khi tìm được x."
+      ],
+      "sample": {
+        "problem": "Tổng hai số bằng 50, số lớn gấp 4 lần số bé. Tìm hai số.",
+        "steps": [
+          "Gọi số bé là x (0 < x < 50), số lớn là 4x.",
+          "Ta có phương trình: x + 4x = 50 ⇔ 5x = 50 ⇔ x = 10 (thỏa điều kiện).",
+          "Số bé là 10, số lớn là 4·10 = 40."
+        ],
+        "answer": "10 và 40"
+      }
     }
   ],
   "examples": [
@@ -137,6 +163,16 @@
       "explain": "x/40 + x/60 = 5 ⇒ (3x + 2x)/120 = 5 ⇒ x = 5·120/5 = 120 (km)."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tổng hai số bằng 50, số lớn gấp 4 lần số bé. Số lớn là?",
+      "expr": "4*50/5",
+      "answer": "40",
+      "explain": "Gọi số bé là x, số lớn là 4x: x + 4x = 50 ⇒ x = 10. Số lớn: 4·10 = 40.",
+      "dang": "Giải bài toán bằng cách lập phương trình",
+      "id": "q11"
+    },
+    {
       "id": "q09",
       "level": "Vận dụng",
       "type": "fill",
@@ -153,6 +189,36 @@
       "expr": "240000*100/80",
       "answer": "300000",
       "explain": "Gọi giá ban đầu x: 0,8x = 240 000 ⇒ x = 300 000 (đồng)."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai xe xuất phát cùng lúc từ A và B cách nhau 200 km, đi ngược chiều. Xe từ A đi 40 km/h, xe từ B đi 60 km/h. Sau bao nhiêu giờ hai xe gặp nhau?",
+      "expr": "200/100",
+      "answer": "2",
+      "explain": "Gọi x là thời gian (giờ): 40x + 60x = 200 ⇒ 100x = 200 ⇒ x = 2.",
+      "dang": "Giải bài toán bằng cách lập phương trình",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Năm nay mẹ 36 tuổi, con 8 tuổi. Sau bao nhiêu năm nữa tuổi mẹ gấp 3 lần tuổi con?",
+      "expr": "(36-3*8)/(3-1)",
+      "answer": "6",
+      "explain": "Gọi x là số năm: 36 + x = 3(8 + x) ⇔ 36 + x = 24 + 3x ⇔ 2x = 12 ⇔ x = 6.",
+      "dang": "Giải bài toán bằng cách lập phương trình",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ô tô đi từ A đến B với vận tốc 50 km/h, lúc về đi với vận tốc 40 km/h nên thời gian về nhiều hơn thời gian đi 30 phút. Quãng đường AB dài bao nhiêu km?",
+      "expr": "100",
+      "answer": "100",
+      "explain": "Gọi x (km) là quãng đường AB: x/40 − x/50 = 1/2 (30 phút = 1/2 giờ). Nhân hai vế với 200: 5x − 4x = 100 ⇒ x = 100.",
+      "dang": "Giải bài toán bằng cách lập phương trình",
+      "id": "q14"
     }
   ]
 }

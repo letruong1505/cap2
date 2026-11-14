@@ -24,6 +24,32 @@
     {
       "type": "text",
       "content": "Quy đồng mẫu thức nhiều phân thức là biến đổi các phân thức đã cho thành những phân thức có cùng mẫu thức và lần lượt bằng các phân thức đã cho. Mẫu thức chung là tích của các nhân tử với số mũ lớn nhất."
+    },
+    {
+      "type": "method",
+      "title": "Rút gọn phân thức",
+      "when": "Đề cho phân thức có tử và mẫu là đa thức và yêu cầu \"rút gọn\", hoặc \"rút gọn rồi tính giá trị\".",
+      "steps": [
+        "Phân tích tử và mẫu thành nhân tử (đặt nhân tử chung, dùng hằng đẳng thức, nhóm hạng tử).",
+        "Tìm nhân tử chung của tử và mẫu; chú ý hai nhân tử đối nhau: A − B = −(B − A).",
+        "Chia cả tử và mẫu cho nhân tử chung (ước chung lớn nhất của các hệ số và các nhân tử giống nhau).",
+        "Viết kết quả gọn nhất. Nếu đề bảo tính giá trị thì thay giá trị của biến vào phân thức đã rút gọn."
+      ],
+      "notes": [
+        "Chỉ được triệt tiêu nhân tử (có dạng tích), không được gạch từng số hạng trong một tổng. Ví dụ (x + 2)/(x + 3) không bằng 2/3.",
+        "Nhân tử bị triệt tiêu phải khác 0, nên giá trị của biến không được làm nhân tử đó bằng 0.",
+        "Gặp (x − 3) và (3 − x) thì đổi dấu: 3 − x = −(x − 3) rồi mới triệt tiêu.",
+        "Sau khi rút gọn, kiểm tra lại: nhân kết quả với mẫu ban đầu phải ra tử ban đầu."
+      ],
+      "sample": {
+        "problem": "Rút gọn phân thức (x² − 9)/(x² − 6x + 9) rồi tính giá trị tại x = 5.",
+        "steps": [
+          "Tử: x² − 9 = (x − 3)(x + 3). Mẫu: x² − 6x + 9 = (x − 3)².",
+          "Chia cả tử và mẫu cho x − 3 (với x ≠ 3): (x + 3)/(x − 3).",
+          "Thay x = 5: (5 + 3)/(5 − 3) = 8/2 = 4."
+        ],
+        "answer": "4"
+      }
     }
   ],
   "examples": [
@@ -144,6 +170,26 @@
       "explain": "x·x + 2x = x(x + 2) và x·x − 4 = (x − 2)(x + 2) nên phân thức bằng x/(x − 2). Thay x = 4: 4/2 = 2."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Rút gọn rồi tính giá trị của (x² − 9)/(x − 3) tại x = 5.",
+      "expr": "8",
+      "answer": "8",
+      "explain": "Tử: x² − 9 = (x − 3)(x + 3). Rút gọn nhân tử x − 3 được x + 3. Thay x = 5: 5 + 3 = 8.",
+      "dang": "Rút gọn phân thức",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Rút gọn rồi tính giá trị của (3x² − 3)/(6x − 6) tại x = 7.",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Tử: 3(x − 1)(x + 1); mẫu: 6(x − 1). Rút gọn 3(x − 1): (x + 1)/2. Thay x = 7: 8/2 = 4.",
+      "dang": "Rút gọn phân thức",
+      "id": "q11"
+    },
+    {
       "id": "q08",
       "level": "Vận dụng",
       "type": "fill",
@@ -160,6 +206,26 @@
       "expr": "3",
       "answer": "3",
       "explain": "3x + 6 = 3(x + 2) nên phân thức luôn bằng 3."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Rút gọn rồi tính giá trị của (x³ − 8)/(x² − 4) tại x = 4.",
+      "expr": "28/6",
+      "answer": "14/3",
+      "explain": "Tử: x³ − 8 = (x − 2)(x² + 2x + 4); mẫu: (x − 2)(x + 2). Rút gọn: (x² + 2x + 4)/(x + 2). Thay x = 4: (16 + 8 + 4)/6 = 28/6 = 14/3.",
+      "dang": "Rút gọn phân thức",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Rút gọn rồi tính giá trị của (x² − 6x + 9)/(9 − x²) tại x = 1.",
+      "expr": "2/4",
+      "answer": "1/2",
+      "explain": "Tử: (x − 3)². Mẫu: 9 − x² = (3 − x)(3 + x). Vì (x − 3)² = (3 − x)², rút gọn 3 − x được (3 − x)/(3 + x). Thay x = 1: 2/4 = 1/2.",
+      "dang": "Rút gọn phân thức",
+      "id": "q13"
     }
   ]
 }

@@ -60,6 +60,32 @@
     {
       "type": "text",
       "content": "Đột quỵ có thể có biểu hiện đột ngột méo miệng, tê tay chân, nói khó; cần gọi cấp cứu 115, đặt nạn nhân nằm nghiêng. Với chảy máu động mạch ở tay, chân: ấn vào động mạch, buộc dây garô cao hơn vết thương về phía tim rồi đưa đi cơ sở y tế."
+    },
+    {
+      "type": "method",
+      "title": "Xác định nhóm máu có thể cho và nhận",
+      "when": "Đề hỏi người nhóm máu X nhận được máu của nhóm nào, hoặc nhóm nào cho được nhóm nào.",
+      "steps": [
+        "Ghi kháng nguyên trên hồng cầu và kháng thể trong huyết tương của người cho và người nhận: A (kháng nguyên A, kháng thể β), B (kháng nguyên B, kháng thể α), AB (có hai kháng nguyên, không có kháng thể), O (không có kháng nguyên, có cả α và β).",
+        "Kiểm tra người nhận: kháng thể α chống kháng nguyên A, kháng thể β chống kháng nguyên B. Hồng cầu người cho có kháng nguyên mà người nhận có kháng thể tương ứng thì bị kết dính.",
+        "Loại các nhóm gây kết dính; các nhóm còn lại là nhóm truyền được.",
+        "Đối chiếu với sơ đồ: O → A, B, AB; A → A và AB; B → B và AB; AB → AB. Trong thực tế ưu tiên truyền máu cùng nhóm."
+      ],
+      "notes": [
+        "Chỉ xét kháng nguyên của người cho với kháng thể của người nhận, không xét ngược lại.",
+        "Nhóm O cho được nhiều nhóm nhưng chỉ nhận được máu nhóm O; nhóm AB nhận được từ mọi nhóm nhưng chỉ cho nhóm AB.",
+        "Khi truyền máu còn phải xét thêm nhóm Rh và thử phản ứng hòa hợp trước khi truyền.",
+        "Mẹo nhớ: người cho phải \"không có kháng nguyên lạ\" đối với người nhận."
+      ],
+      "sample": {
+        "problem": "Người nhóm máu B có thể nhận máu của những nhóm nào?",
+        "steps": [
+          "Nhóm B có kháng thể α (chống kháng nguyên A).",
+          "Loại nhóm A và AB vì hồng cầu của chúng có kháng nguyên A.",
+          "Nhận được máu của nhóm B (cùng nhóm) và nhóm O (không có kháng nguyên)."
+        ],
+        "answer": "Nhóm B và nhóm O"
+      }
     }
   ],
   "examples": [
@@ -250,6 +276,48 @@
       "explain": "45."
     },
     {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Người có nhóm máu O có thể nhận máu từ nhóm nào?",
+      "choices": [
+        "Chỉ nhóm O",
+        "Nhóm A",
+        "Nhóm B",
+        "Nhóm AB"
+      ],
+      "answer": 0,
+      "explain": "Người nhóm O có cả kháng thể α và β nên máu nhóm A, B, AB (có kháng nguyên) sẽ bị kết dính; chỉ nhận được nhóm O.",
+      "wrong_explain": {
+        "1": "Hồng cầu nhóm A có kháng nguyên A, bị kháng thể α trong máu người nhóm O làm kết dính.",
+        "2": "Hồng cầu nhóm B có kháng nguyên B, bị kháng thể β trong máu người nhóm O làm kết dính.",
+        "3": "Hồng cầu nhóm AB có cả hai kháng nguyên nên bị cả hai kháng thể làm kết dính."
+      },
+      "concept": true,
+      "dang": "Xác định nhóm máu có thể cho và nhận",
+      "id": "q13"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Người thuộc nhóm máu nào có thể nhận máu từ cả bốn nhóm A, B, AB, O?",
+      "choices": [
+        "Nhóm O",
+        "Nhóm A",
+        "Nhóm B",
+        "Nhóm AB"
+      ],
+      "answer": 3,
+      "explain": "Nhóm AB không có kháng thể α và β trong huyết tương nên không làm kết dính hồng cầu của bất kì nhóm nào.",
+      "wrong_explain": {
+        "0": "Nhóm O có cả hai kháng thể nên chỉ nhận được nhóm O.",
+        "1": "Nhóm A có kháng thể β nên không nhận được nhóm B và AB.",
+        "2": "Nhóm B có kháng thể α nên không nhận được nhóm A và AB."
+      },
+      "concept": true,
+      "dang": "Xác định nhóm máu có thể cho và nhận",
+      "id": "q14"
+    },
+    {
       "id": "q10",
       "level": "Vận dụng",
       "type": "mcq",
@@ -297,6 +365,48 @@
       "expr": "350*100/5000",
       "answer": "7",
       "explain": "7%."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Người nhóm máu A cần truyền máu. Trong các lựa chọn sau, nhóm nào truyền được cho người này?",
+      "choices": [
+        "Nhóm B",
+        "Nhóm AB",
+        "Nhóm O",
+        "Cả nhóm B và nhóm AB"
+      ],
+      "answer": 2,
+      "explain": "Nhóm O không có kháng nguyên nên không bị kháng thể β của người nhóm A làm kết dính.",
+      "wrong_explain": {
+        "0": "Hồng cầu nhóm B có kháng nguyên B, bị kháng thể β của người nhóm A làm kết dính.",
+        "1": "Hồng cầu nhóm AB có kháng nguyên B nên bị kháng thể β làm kết dính.",
+        "3": "Cả hai nhóm đều có kháng nguyên B nên đều bị kết dính."
+      },
+      "concept": true,
+      "dang": "Xác định nhóm máu có thể cho và nhận",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Người nhóm máu O được gọi là \"người cho chung\" vì hồng cầu của họ:",
+      "choices": [
+        "Không có kháng nguyên A và B",
+        "Có cả kháng nguyên A và B",
+        "Không có kháng thể trong huyết tương",
+        "Có nhiều hồng cầu hơn các nhóm khác"
+      ],
+      "answer": 0,
+      "explain": "Hồng cầu nhóm O không có kháng nguyên A và B nên không bị kháng thể của người nhận làm kết dính.",
+      "wrong_explain": {
+        "1": "Có cả hai kháng nguyên là đặc điểm của nhóm AB.",
+        "2": "Nhóm O có cả kháng thể α và β trong huyết tương.",
+        "3": "Số lượng hồng cầu không liên quan đến khả năng cho máu."
+      },
+      "concept": true,
+      "dang": "Xác định nhóm máu có thể cho và nhận",
+      "id": "q16"
     }
   ]
 }

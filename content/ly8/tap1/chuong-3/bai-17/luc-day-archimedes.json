@@ -50,6 +50,32 @@
     {
       "type": "text",
       "content": "Trọng lượng riêng của nước khoảng 10 000 N/m³."
+    },
+    {
+      "type": "method",
+      "title": "Bài toán vật nhúng trong chất lỏng (lực đẩy Archimedes)",
+      "when": "Đề cho thể tích, khối lượng hoặc số chỉ lực kế của vật nhúng trong nước (hoặc chất lỏng khác) và hỏi lực đẩy, thể tích, số chỉ lực kế.",
+      "steps": [
+        "Đổi về đơn vị chuẩn: thể tích ra m³ (1 cm³ = 0,000001 m³), trọng lượng P = 10·m (m tính bằng kg). Trọng lượng riêng của nước là 10 000 N/m³.",
+        "Liệt kê các lực tác dụng lên vật: trọng lượng P (hướng xuống), lực đẩy F_A (hướng lên) và lực kéo của lực kế nếu có.",
+        "Xác định trạng thái của vật: lơ lửng hoặc nổi cân bằng thì F_A = P; chìm hoàn toàn thì thể tích chìm bằng thể tích vật.",
+        "Áp dụng F_A = d·V (V là phần chìm); khi treo lực kế thì số chỉ F = P − F_A. Đổi kết quả về đơn vị đề hỏi."
+      ],
+      "notes": [
+        "V trong F_A = d·V là thể tích phần vật chìm trong chất lỏng, không phải thể tích cả vật khi vật nổi.",
+        "d là trọng lượng riêng của chất lỏng, không phải của vật.",
+        "Vật nổi cân bằng thì lực đẩy bằng đúng trọng lượng, dù thể tích vật có lớn hơn.",
+        "1 lít = 1 dm³ = 0,001 m³; 1 m³ = 1 000 000 cm³."
+      ],
+      "sample": {
+        "problem": "Vật có P = 5 N, V = 400 cm³, treo vào lực kế và nhúng chìm hoàn toàn trong nước. Tìm số chỉ của lực kế.",
+        "steps": [
+          "Đổi V = 400 cm³ = 0,0004 m³.",
+          "Lực đẩy: F_A = d·V = 10 000 × 0,0004 = 4 N.",
+          "Số chỉ lực kế: F = P − F_A = 5 − 4 = 1 N."
+        ],
+        "answer": "1 N"
+      }
     }
   ],
   "examples": [
@@ -278,6 +304,46 @@
         "3": "Không đúng."
       },
       "concept": true
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật có trọng lượng 5 N, thể tích 400 cm³ được treo vào lực kế rồi nhúng chìm hoàn toàn trong nước (d = 10 000 N/m³). Số chỉ của lực kế là bao nhiêu N?",
+      "expr": "5-10000*0.0004",
+      "answer": "1",
+      "explain": "V = 0,0004 m³ nên F_A = 10 000 × 0,0004 = 4 N. Số chỉ lực kế: P − F_A = 5 − 4 = 1 N.",
+      "dang": "Bài toán vật nhúng trong chất lỏng (lực đẩy Archimedes)",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khối gỗ nổi trên mặt nước có trọng lượng 6 N. Thể tích phần gỗ chìm trong nước là bao nhiêu cm³? (d nước = 10 000 N/m³)",
+      "expr": "6/10000*1000000",
+      "answer": "600",
+      "explain": "Vật nổi cân bằng: F_A = P = 6 N. V chìm = F_A/d = 6/10 000 = 0,0006 m³ = 600 cm³.",
+      "dang": "Bài toán vật nhúng trong chất lỏng (lực đẩy Archimedes)",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật nhúng chìm hoàn toàn trong rượu (d = 8 000 N/m³) chịu lực đẩy 2,4 N. Thể tích của vật là bao nhiêu cm³?",
+      "expr": "2.4/8000*1000000",
+      "answer": "300",
+      "explain": "V = F_A/d = 2,4/8 000 = 0,0003 m³ = 300 cm³.",
+      "dang": "Bài toán vật nhúng trong chất lỏng (lực đẩy Archimedes)",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật có khối lượng 0,6 kg, thể tích 800 cm³ được thả vào nước (d = 10 000 N/m³) và nằm cân bằng. Lực đẩy Archimedes tác dụng lên vật là bao nhiêu N?",
+      "expr": "10*0.6",
+      "answer": "6",
+      "explain": "P = 10·0,6 = 6 N. Nếu chìm hoàn toàn thì F_A = 10 000 × 0,0008 = 8 N > P nên vật nổi. Nằm cân bằng thì F_A = P = 6 N.",
+      "dang": "Bài toán vật nhúng trong chất lỏng (lực đẩy Archimedes)",
+      "id": "q16"
     }
   ]
 }

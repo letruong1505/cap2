@@ -47,6 +47,31 @@
     {
       "type": "text",
       "content": "Ví dụ: HCl 0,1 M có pH = 1; CH₃COOH 0,1 M có pH ≈ 3 nên HCl mạnh hơn. pH trong máu người khoảng 7,35 – 7,45; pH dịch vị dạ dày khoảng 1,5 – 3,5."
+    },
+    {
+      "type": "method",
+      "title": "Nhận biết các chất",
+      "when": "Đề cho vài lọ mất nhãn (dung dịch hoặc khí) và hỏi dùng thuốc thử nào, hiện tượng gì để phân biệt.",
+      "steps": [
+        "Nêu tính chất đặc trưng của từng chất cần nhận biết (acid làm quỳ tím hóa đỏ, base làm quỳ tím hóa xanh và phenolphthalein hóa hồng, muối trung tính không đổi màu).",
+        "Chọn thuốc thử đơn giản gây hiện tượng khác nhau với các chất (quỳ tím, phenolphthalein, nước vôi trong, dung dịch muối...).",
+        "Lấy mỗi lọ một ít làm mẫu thử, đánh số; nhỏ thuốc thử lần lượt vào từng mẫu và quan sát hiện tượng.",
+        "Dựa vào hiện tượng để kết luận chất nào ở mẫu nào; viết phương trình hóa học nếu có phản ứng."
+      ],
+      "notes": [
+        "Chỉ lấy một phần mẫu thử ra để thử, không đổ thuốc thử trực tiếp vào lọ gốc.",
+        "Chọn thuốc thử dùng được cho nhiều chất cùng lúc để làm ít bước nhất.",
+        "Hiện tượng phải rõ ràng và khác nhau: đổi màu, có kết tủa, có khí thoát ra, tan hoặc không tan.",
+        "Muối trung tính (NaCl, KNO₃) không làm quỳ tím đổi màu nên thường được nhận biết sau cùng, bằng cách loại trừ."
+      ],
+      "sample": {
+        "problem": "Nhận biết ba dung dịch không màu HCl, NaOH, NaCl bằng một thuốc thử.",
+        "steps": [
+          "Dùng quỳ tím, nhỏ vào mẫu thử của từng dung dịch.",
+          "Quỳ tím hóa đỏ: HCl (acid). Quỳ tím hóa xanh: NaOH (base). Quỳ tím không đổi màu: NaCl (muối trung tính)."
+        ],
+        "answer": "Quỳ tím phân biệt được cả ba chất"
+      }
     }
   ],
   "examples": [
@@ -238,6 +263,27 @@
       "explain": "n(NaOH) = 0,5 × 0,02 = 0,01 mol = n(HCl); V = 0,01 / 1 L = 10 mL; tính nhanh V(HCl) = 0,5 × 20 / 1 = 10 mL."
     },
     {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dùng quỳ tím phân biệt ba dung dịch HCl, NaOH và NaCl. Dung dịch làm quỳ tím không đổi màu là?",
+      "choices": [
+        "HCl",
+        "NaOH",
+        "NaCl",
+        "Cả ba dung dịch"
+      ],
+      "answer": 2,
+      "explain": "NaCl là muối trung tính nên không làm đổi màu quỳ tím; HCl làm quỳ tím hóa đỏ, NaOH làm quỳ tím hóa xanh.",
+      "wrong_explain": {
+        "0": "HCl là acid nên làm quỳ tím hóa đỏ.",
+        "1": "NaOH là base nên làm quỳ tím hóa xanh.",
+        "3": "Chỉ có NaCl không làm đổi màu quỳ tím; hai dung dịch còn lại làm đổi màu."
+      },
+      "concept": true,
+      "dang": "Nhận biết các chất",
+      "id": "q12"
+    },
+    {
       "id": "q10",
       "level": "Vận dụng",
       "type": "mcq",
@@ -265,6 +311,48 @@
       "expr": "13-5",
       "answer": "8",
       "explain": "13 − 5 = 8."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Nhỏ vài giọt phenolphthalein vào ba ống nghiệm chứa NaOH, HCl và NaCl. Ống nghiệm nào chuyển sang màu hồng?",
+      "choices": [
+        "Ống chứa NaOH",
+        "Ống chứa HCl",
+        "Ống chứa NaCl",
+        "Cả ba ống"
+      ],
+      "answer": 0,
+      "explain": "Dung dịch kiềm (base tan) làm phenolphthalein không màu chuyển sang màu hồng; acid và muối trung tính không làm đổi màu.",
+      "wrong_explain": {
+        "1": "Dung dịch acid không làm phenolphthalein đổi màu.",
+        "2": "Muối trung tính không làm phenolphthalein đổi màu.",
+        "3": "Chỉ dung dịch base mới làm phenolphthalein hóa hồng."
+      },
+      "concept": true,
+      "dang": "Nhận biết các chất",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Hai lọ mất nhãn đựng dung dịch H₂SO₄ loãng và dung dịch Ca(OH)₂. Thuốc thử nào phân biệt được hai lọ?",
+      "choices": [
+        "Giấy quỳ tím",
+        "Khí oxygen",
+        "Nước cất",
+        "Cát khô"
+      ],
+      "answer": 0,
+      "explain": "Quỳ tím hóa đỏ với H₂SO₄ (acid) và hóa xanh với Ca(OH)₂ (base), nên phân biệt được ngay.",
+      "wrong_explain": {
+        "1": "Khí oxygen không gây hiện tượng khác nhau với hai dung dịch.",
+        "2": "Nước cất không làm đổi màu, không phân biệt được acid hay base.",
+        "3": "Cát khô không phản ứng và không tạo hiện tượng khác nhau."
+      },
+      "concept": true,
+      "dang": "Nhận biết các chất",
+      "id": "q14"
     }
   ]
 }

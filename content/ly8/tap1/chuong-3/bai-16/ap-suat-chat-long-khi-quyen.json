@@ -48,6 +48,31 @@
     {
       "type": "text",
       "content": "Ứng dụng áp suất không khí: giác mút bám vào kính, tường; bình xịt nước; tàu đệm khí; muốn nước chảy ra khỏi bình khi mở vòi thì nắp bình cần có lỗ nhỏ cho không khí vào."
+    },
+    {
+      "type": "method",
+      "title": "Bài toán áp suất chất lỏng",
+      "when": "Đề cho độ sâu hoặc chiều cao cột chất lỏng, loại chất lỏng và hỏi áp suất hoặc độ sâu.",
+      "steps": [
+        "Xác định độ sâu h: khoảng cách thẳng đứng từ mặt thoáng đến điểm cần tính, đổi ra mét.",
+        "Xác định trọng lượng riêng d của chất lỏng (nước 10 000 N/m³); nếu cho khối lượng riêng D thì d = 10·D.",
+        "Áp dụng p = d·h cho áp suất do chất lỏng gây ra; hỏi độ sâu thì h = p/d.",
+        "Hỏi áp suất tổng cộng thì cộng thêm áp suất khí quyển ở mặt thoáng; ghi đơn vị Pa."
+      ],
+      "notes": [
+        "h là độ sâu tính từ mặt thoáng đến điểm xét, không phải chiều cao của bình hay khoảng cách đến đáy.",
+        "Áp suất chất lỏng chỉ phụ thuộc d và h, không phụ thuộc hình dạng hay dung tích bình.",
+        "Hai điểm cùng độ sâu trong cùng một chất lỏng có áp suất bằng nhau.",
+        "Cùng độ sâu, chất lỏng có d lớn hơn gây áp suất lớn hơn."
+      ],
+      "sample": {
+        "problem": "Tính áp suất do nước gây ra ở đáy bể sâu 1,5 m (d = 10 000 N/m³).",
+        "steps": [
+          "Độ sâu h = 1,5 m, d = 10 000 N/m³.",
+          "p = d·h = 10 000 × 1,5 = 15 000 Pa."
+        ],
+        "answer": "15 000 Pa"
+      }
     }
   ],
   "examples": [
@@ -239,6 +264,26 @@
       "explain": "F = p × S = 50 000 N."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Áp suất do nước gây ra ở đáy bể sâu 1,5 m là bao nhiêu Pa? (d = 10 000 N/m³)",
+      "expr": "10000*1.5",
+      "answer": "15000",
+      "explain": "p = d·h = 10 000 × 1,5 = 15 000 Pa.",
+      "dang": "Bài toán áp suất chất lỏng",
+      "id": "q13"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một thợ lặn chịu áp suất do nước gây ra là 30 000 Pa. Người đó đang ở độ sâu bao nhiêu mét? (d = 10 000 N/m³)",
+      "expr": "30000/10000",
+      "answer": "3",
+      "explain": "h = p/d = 30 000/10 000 = 3 m.",
+      "dang": "Bài toán áp suất chất lỏng",
+      "id": "q14"
+    },
+    {
       "id": "q10",
       "level": "Vận dụng",
       "type": "fill",
@@ -275,6 +320,26 @@
         "3": "Không phải."
       },
       "concept": true
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bình đựng dầu (d = 8 000 N/m³) có cột dầu cao 0,5 m. Áp suất do dầu gây ra tại điểm cách đáy bình 0,2 m là bao nhiêu Pa?",
+      "expr": "8000*(0.5-0.2)",
+      "answer": "2400",
+      "explain": "Độ sâu của điểm tính từ mặt thoáng: h = 0,5 − 0,2 = 0,3 m. p = 8 000 × 0,3 = 2 400 Pa.",
+      "dang": "Bài toán áp suất chất lỏng",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Điểm trong nước ở độ sâu 2 m chịu áp suất tổng cộng là bao nhiêu Pa? Biết áp suất khí quyển là 100 000 Pa và d = 10 000 N/m³.",
+      "expr": "100000+10000*2",
+      "answer": "120000",
+      "explain": "Áp suất nước: 10 000 × 2 = 20 000 Pa. Áp suất tổng cộng = 100 000 + 20 000 = 120 000 Pa.",
+      "dang": "Bài toán áp suất chất lỏng",
+      "id": "q16"
     }
   ]
 }

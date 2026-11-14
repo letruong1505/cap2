@@ -46,6 +46,30 @@
     {
       "type": "text",
       "content": "Bảo vệ hệ sinh thái: ngăn chặn phá rừng, khai thác hợp lí; quản lí chất thải, kiểm soát ô nhiễm biển; bảo vệ đất, chống xói mòn, khô hạn, mặn cho hệ sinh thái nông nghiệp."
+    },
+    {
+      "type": "method",
+      "title": "Bài tập chuỗi thức ăn và lưới thức ăn",
+      "when": "Đề cho danh sách loài và quan hệ ăn nhau, hỏi sắp xếp thành chuỗi, xác định bậc dinh dưỡng, đếm chuỗi hoặc dự đoán khi một loài thay đổi.",
+      "steps": [
+        "Tìm sinh vật sản xuất (thực vật, tảo): luôn là mắt xích đầu tiên của chuỗi.",
+        "Sắp xếp các loài theo quan hệ ăn và bị ăn; vẽ mũi tên từ loài bị ăn sang loài ăn (chiều đi của năng lượng).",
+        "Xác định bậc: sinh vật sản xuất, rồi sinh vật tiêu thụ bậc 1 (ăn sinh vật sản xuất), bậc 2, bậc 3 ... theo thứ tự trong chuỗi.",
+        "Với lưới thức ăn: liệt kê từng chuỗi bắt đầu từ sinh vật sản xuất; xét ảnh hưởng khi một loài tăng hoặc giảm theo các mũi tên."
+      ],
+      "notes": [
+        "Mũi tên đi từ loài bị ăn đến loài ăn, không viết ngược.",
+        "Trong lưới thức ăn một loài có thể ở nhiều chuỗi và nhiều bậc dinh dưỡng khác nhau.",
+        "Năng lượng giảm dần qua mỗi bậc (khoảng 10% được chuyển sang bậc sau), nên chuỗi thường ngắn.",
+        "Bỏ một loài sản xuất hoặc loài ở giữa thì các loài sau nó thiếu thức ăn và số lượng giảm."
+      ],
+      "sample": {
+        "problem": "Cho chuỗi: cỏ → sâu → chim sâu → diều hâu. Xác định sinh vật sản xuất và bậc dinh dưỡng của từng loài.",
+        "steps": [
+          "Cỏ là sinh vật sản xuất (đầu chuỗi).",
+          "Sâu ăn cỏ nên là sinh vật tiêu thụ bậc 1; chim sâu ăn sâu là bậc 2; diều hâu ăn chim sâu là bậc 3."
+        ]
+      }
     }
   ],
   "examples": [
@@ -234,6 +258,37 @@
       "explain": "100."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong chuỗi thức ăn cỏ → sâu → chim sâu → diều hâu, diều hâu là sinh vật tiêu thụ bậc mấy?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Sâu là bậc 1, chim sâu là bậc 2, diều hâu là bậc 3.",
+      "dang": "Bài tập chuỗi thức ăn và lưới thức ăn",
+      "id": "q13"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Chuỗi thức ăn nào sau đây viết đúng?",
+      "choices": [
+        "Cỏ → châu chấu → ếch → rắn",
+        "Rắn → ếch → châu chấu → cỏ",
+        "Châu chấu → cỏ → ếch → rắn",
+        "Cỏ → ếch → châu chấu → rắn"
+      ],
+      "answer": 0,
+      "explain": "Cỏ (sản xuất) → châu chấu (ăn cỏ) → ếch (ăn châu chấu) → rắn (ăn ếch): mũi tên đi từ loài bị ăn sang loài ăn.",
+      "wrong_explain": {
+        "1": "Mũi tên viết ngược chiều dòng năng lượng.",
+        "2": "Chuỗi phải bắt đầu bằng sinh vật sản xuất (cỏ), không phải châu chấu.",
+        "3": "Ếch không ăn cỏ, châu chấu mới ăn cỏ rồi bị ếch ăn."
+      },
+      "concept": true,
+      "dang": "Bài tập chuỗi thức ăn và lưới thức ăn",
+      "id": "q14"
+    },
+    {
       "id": "q10",
       "level": "Vận dụng",
       "type": "mcq",
@@ -281,6 +336,47 @@
       "expr": "20000*10/100*10/100",
       "answer": "200",
       "explain": "200."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Sinh vật sản xuất tích lũy 10 000 kcal. Hiệu suất chuyển năng lượng giữa hai bậc dinh dưỡng liên tiếp là 10%. Sinh vật tiêu thụ bậc 2 nhận được bao nhiêu kcal?",
+      "expr": "10000*0.1*0.1",
+      "answer": "100",
+      "explain": "Bậc tiêu thụ 1: 10 000 × 10% = 1 000 kcal. Bậc tiêu thụ 2: 1 000 × 10% = 100 kcal.",
+      "dang": "Bài tập chuỗi thức ăn và lưới thức ăn",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Trong chuỗi cỏ → thỏ → cáo, nếu cỏ biến mất do hạn hán kéo dài thì điều dễ xảy ra nhất là?",
+      "choices": [
+        "Số lượng thỏ và cáo giảm",
+        "Số lượng thỏ tăng mãi",
+        "Cáo chuyển sang quang hợp",
+        "Không có ảnh hưởng gì"
+      ],
+      "answer": 0,
+      "explain": "Cỏ mất thì thỏ thiếu thức ăn và giảm; cáo ăn thỏ nên cũng thiếu thức ăn và giảm theo.",
+      "wrong_explain": {
+        "1": "Thiếu thức ăn thì thỏ không thể tăng mãi.",
+        "2": "Động vật không tự tổng hợp được chất hữu cơ như thực vật.",
+        "3": "Các loài trong chuỗi phụ thuộc nhau nên sự biến mất của cỏ ảnh hưởng đến cả chuỗi."
+      },
+      "concept": true,
+      "dang": "Bài tập chuỗi thức ăn và lưới thức ăn",
+      "id": "q16"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một lưới thức ăn có hai chuỗi: cỏ → thỏ → cáo và cỏ → châu chấu → ếch → rắn. Tổng số mắt xích (tính cả mắt xích lặp lại) của hai chuỗi là?",
+      "expr": "3+4",
+      "answer": "7",
+      "explain": "Chuỗi thứ nhất có 3 mắt xích, chuỗi thứ hai có 4 mắt xích. Tổng: 3 + 4 = 7.",
+      "dang": "Bài tập chuỗi thức ăn và lưới thức ăn",
+      "id": "q17"
     }
   ]
 }

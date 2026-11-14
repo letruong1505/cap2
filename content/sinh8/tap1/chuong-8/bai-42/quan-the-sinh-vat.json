@@ -32,6 +32,31 @@
     {
       "type": "text",
       "content": "Biện pháp bảo vệ quần thể: bảo vệ môi trường sống, thành lập vườn quốc gia và khu bảo tồn, kiểm soát dịch bệnh, khai thác tài nguyên hợp lí; quần thể có nguy cơ tuyệt chủng thì đưa đến nơi sống mới như vườn thú, trang trại bảo tồn."
+    },
+    {
+      "type": "method",
+      "title": "Tính mật độ, kích thước quần thể",
+      "when": "Đề cho số cá thể, diện tích (thể tích) và hỏi mật độ, kích thước hoặc sự thay đổi số lượng cá thể.",
+      "steps": [
+        "Xác định số cá thể N và diện tích (hoặc thể tích) S của nơi sinh sống, đổi về cùng đơn vị.",
+        "Mật độ = số cá thể : diện tích, đơn vị là cá thể/ha, cá thể/m²,...; hỏi ngược thì kích thước = mật độ × diện tích.",
+        "Nếu có sinh, tử, nhập cư, xuất cư thì kích thước mới = kích thước ban đầu + sinh + nhập cư − tử − xuất cư.",
+        "Tỉ lệ giới tính là tỉ lệ số đực : số cái; kết luận và ghi đúng đơn vị."
+      ],
+      "notes": [
+        "Mật độ là số cá thể trên một đơn vị diện tích, không phải tổng số cá thể.",
+        "Phải đổi cùng đơn vị diện tích (ha, m², km²) trước khi chia.",
+        "Quần thể chỉ gồm các cá thể cùng loài trong cùng một vùng; không tính loài khác.",
+        "Kích thước quần thể có thể tăng hoặc giảm tùy sinh, tử, nhập cư và xuất cư."
+      ],
+      "sample": {
+        "problem": "Rừng 20 ha có 300 con khỉ. Tính mật độ quần thể khỉ.",
+        "steps": [
+          "Mật độ = số cá thể : diện tích = 300 : 20.",
+          "Mật độ = 15 cá thể/ha."
+        ],
+        "answer": "15 cá thể/ha"
+      }
     }
   ],
   "examples": [
@@ -220,6 +245,26 @@
       "concept": true
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một khu rừng 20 ha có 300 con khỉ. Mật độ quần thể khỉ là bao nhiêu cá thể/ha?",
+      "expr": "300/20",
+      "answer": "15",
+      "explain": "Mật độ = 300/20 = 15 cá thể/ha.",
+      "dang": "Tính mật độ, kích thước quần thể",
+      "id": "q12"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mật độ cây thông trong rừng là 25 cây/ha; rừng rộng 40 ha. Kích thước quần thể thông là bao nhiêu cây?",
+      "expr": "25*40",
+      "answer": "1000",
+      "explain": "Kích thước = mật độ × diện tích = 25 × 40 = 1 000 cây.",
+      "dang": "Tính mật độ, kích thước quần thể",
+      "id": "q13"
+    },
+    {
       "id": "q10",
       "level": "Vận dụng",
       "type": "mcq",
@@ -247,6 +292,26 @@
       "expr": "3000/1500",
       "answer": "2",
       "explain": "2."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đầu năm quần thể có 500 cá thể. Trong năm có 60 cá thể sinh ra, 20 cá thể chết, 10 cá thể nhập cư và 30 cá thể xuất cư. Số cá thể cuối năm là?",
+      "expr": "500+60-20+10-30",
+      "answer": "520",
+      "explain": "Cuối năm = 500 + 60 (sinh) − 20 (tử) + 10 (nhập cư) − 30 (xuất cư) = 520.",
+      "dang": "Tính mật độ, kích thước quần thể",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Quần thể có 60 cá thể đực và 90 cá thể cái. Số cái bằng bao nhiêu lần số đực?",
+      "expr": "90/60",
+      "answer": "1,5",
+      "explain": "Số cái : số đực = 90 : 60 = 1,5.",
+      "dang": "Tính mật độ, kích thước quần thể",
+      "id": "q15"
     }
   ]
 }

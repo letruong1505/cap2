@@ -33,6 +33,32 @@
       "type": "figure",
       "figure": "figures/tn-toan8-b6-hang-dang-thuc.svg",
       "caption": "Hằng đẳng thức bằng hình diện tích"
+    },
+    {
+      "type": "method",
+      "title": "Tìm giá trị nhỏ nhất, lớn nhất của biểu thức bậc hai",
+      "when": "Đề hỏi \"giá trị nhỏ nhất\", \"giá trị lớn nhất\" của biểu thức dạng ax² + bx + c, hoặc \"x bằng bao nhiêu thì biểu thức đạt nhỏ nhất\".",
+      "steps": [
+        "Xem hệ số của x²: dương thì tìm giá trị nhỏ nhất; âm thì đặt dấu trừ ra ngoài để tìm giá trị lớn nhất.",
+        "Biến đổi thành dạng (x ± a)² + m bằng hằng đẳng thức (thêm bớt một số cho đủ bình phương).",
+        "Dùng (x ± a)² ≥ 0 với mọi x để suy ra biểu thức ≥ m (hoặc ≤ m).",
+        "Tìm x để dấu \"=\" xảy ra: x ± a = 0, rồi kết luận giá trị nhỏ nhất (lớn nhất) bằng m tại x đó."
+      ],
+      "notes": [
+        "Luôn nêu rõ dấu \"=\" xảy ra khi nào; không nêu thì chưa kết luận được giá trị nhỏ nhất.",
+        "Hệ số của x² khác 1 thì đặt ra ngoài trước: 2x² + 4x = 2(x² + 2x).",
+        "(A)² ≥ 0 nên −(A)² ≤ 0; vì vậy biểu thức có dấu trừ trước bình phương chỉ có giá trị lớn nhất.",
+        "Giá trị nhỏ nhất (lớn nhất) là số m, còn x là giá trị tại đó biểu thức đạt m."
+      ],
+      "sample": {
+        "problem": "Tìm giá trị nhỏ nhất của A = x² − 6x + 11.",
+        "steps": [
+          "A = (x² − 6x + 9) + 2 = (x − 3)² + 2.",
+          "Vì (x − 3)² ≥ 0 nên A ≥ 2.",
+          "Dấu \"=\" xảy ra khi x − 3 = 0, tức x = 3. Vậy giá trị nhỏ nhất của A là 2 tại x = 3."
+        ],
+        "answer": "2"
+      }
     }
   ],
   "examples": [
@@ -161,6 +187,26 @@
       "explain": "x² − 10x + 25 = (x − 5)² = 3² = 9."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giá trị nhỏ nhất của biểu thức x² − 6x + 11 là?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "x² − 6x + 11 = (x − 3)² + 2 ≥ 2, dấu \"=\" khi x = 3. Giá trị nhỏ nhất là 2.",
+      "dang": "Tìm giá trị nhỏ nhất, lớn nhất của biểu thức bậc hai",
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giá trị của x để biểu thức x² − 4x + 7 đạt giá trị nhỏ nhất là?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "x² − 4x + 7 = (x − 2)² + 3 ≥ 3, dấu \"=\" khi x − 2 = 0, tức x = 2.",
+      "dang": "Tìm giá trị nhỏ nhất, lớn nhất của biểu thức bậc hai",
+      "id": "q12"
+    },
+    {
       "id": "q09",
       "level": "Vận dụng",
       "type": "fill",
@@ -177,6 +223,26 @@
       "expr": "3*3+2*10",
       "answer": "29",
       "explain": "x² + y² = (x − y)² + 2xy = 9 + 20 = 29."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị lớn nhất của biểu thức −x² + 4x + 1 là?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "−x² + 4x + 1 = −(x² − 4x + 4) + 5 = −(x − 2)² + 5 ≤ 5, dấu \"=\" khi x = 2. Giá trị lớn nhất là 5.",
+      "dang": "Tìm giá trị nhỏ nhất, lớn nhất của biểu thức bậc hai",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị nhỏ nhất của biểu thức (x − 1)² + (x + 3)² là?",
+      "expr": "8",
+      "answer": "8",
+      "explain": "Khai triển: 2x² + 4x + 10 = 2(x + 1)² + 8 ≥ 8, dấu \"=\" khi x = −1. Giá trị nhỏ nhất là 8.",
+      "dang": "Tìm giá trị nhỏ nhất, lớn nhất của biểu thức bậc hai",
+      "id": "q14"
     }
   ]
 }

@@ -32,6 +32,58 @@
     {
       "type": "formula",
       "content": "ax + ay + bx + by = a(x + y) + b(x + y) = (a + b)(x + y)"
+    },
+    {
+      "type": "method",
+      "title": "Phân tích đa thức thành nhân tử",
+      "when": "Đề yêu cầu \"phân tích thành nhân tử\", \"viết dưới dạng tích\", hoặc là bước đầu của bài rút gọn, tìm x.",
+      "steps": [
+        "Đặt nhân tử chung (cả hệ số và biến) nếu các hạng tử có nhân tử chung.",
+        "Nhìn số hạng tử: hai hạng tử → hiệu hai bình phương hoặc tổng, hiệu hai lập phương; ba hạng tử → bình phương của một tổng hoặc một hiệu.",
+        "Từ bốn hạng tử trở lên: nhóm các hạng tử để xuất hiện nhân tử chung hoặc hằng đẳng thức.",
+        "Kiểm tra bằng cách nhân lại các nhân tử, và dừng khi mỗi nhân tử không phân tích được nữa."
+      ],
+      "notes": [
+        "Luôn đặt nhân tử chung trước rồi mới nghĩ đến hằng đẳng thức.",
+        "Khi nhóm, chú ý đổi dấu: −(a − b) = b − a. Hai nhóm phải có nhân tử chung giống hệt nhau.",
+        "Kết quả phải là tích; ví dụ x(x − 1) + 2 chưa phải là đã phân tích xong.",
+        "Có thể thử một giá trị của biến vào hai vế để kiểm tra nhanh."
+      ],
+      "sample": {
+        "problem": "Phân tích 2x² − 8 thành nhân tử.",
+        "steps": [
+          "Đặt nhân tử chung 2: 2x² − 8 = 2(x² − 4).",
+          "Dùng hiệu hai bình phương: x² − 4 = (x − 2)(x + 2).",
+          "Kết quả: 2(x − 2)(x + 2)."
+        ],
+        "answer": "2(x − 2)(x + 2)"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tìm x bằng cách phân tích thành nhân tử",
+      "when": "Đề cho phương trình có dạng đa thức bậc hai, bậc ba bằng 0 hoặc \"tìm x biết A·B = 0\".",
+      "steps": [
+        "Chuyển tất cả hạng tử về một vế, vế còn lại bằng 0.",
+        "Phân tích vế trái thành tích các nhân tử.",
+        "Dùng tính chất: A·B = 0 khi A = 0 hoặc B = 0; giải từng phương trình nhỏ.",
+        "Kết luận tất cả giá trị của x, có thể thử lại bằng cách thay vào phương trình ban đầu."
+      ],
+      "notes": [
+        "Không chia hai vế cho một biểu thức chứa x, vì sẽ làm mất nghiệm (ví dụ x² = 4x không được chia cho x).",
+        "Một tích bằng 0 khi có ít nhất một thừa số bằng 0, nên mỗi thừa số cho một nghiệm.",
+        "Nhân tử lặp lại (như (x − 3)²) chỉ cho một giá trị của x.",
+        "Cần liệt kê đủ nghiệm; kết quả thường có nhiều hơn một giá trị."
+      ],
+      "sample": {
+        "problem": "Tìm x biết x² − 4x = 0.",
+        "steps": [
+          "Phân tích: x(x − 4) = 0.",
+          "Suy ra x = 0 hoặc x − 4 = 0, tức x = 4.",
+          "Vậy x = 0 hoặc x = 4."
+        ],
+        "answer": "x = 0 hoặc x = 4"
+      }
     }
   ],
   "examples": [
@@ -161,6 +213,36 @@
       "explain": "(13 − 3)² = 100."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phân tích 2x² − 8 thành nhân tử rồi tính giá trị tại x = 3.",
+      "expr": "2*(3-2)*(3+2)",
+      "answer": "10",
+      "explain": "2x² − 8 = 2(x − 2)(x + 2). Thay x = 3: 2·1·5 = 10.",
+      "dang": "Phân tích đa thức thành nhân tử",
+      "id": "q25"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm x biết (x − 3)(x + 5) = 0. Tổng các giá trị của x là?",
+      "expr": "3-5",
+      "answer": "-2",
+      "explain": "x − 3 = 0 ⇒ x = 3; x + 5 = 0 ⇒ x = −5. Tổng: 3 + (−5) = −2.",
+      "dang": "Tìm x bằng cách phân tích thành nhân tử",
+      "id": "q28"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm x biết x² − 4x = 0. Giá trị của x khác 0 là?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "x(x − 4) = 0 ⇒ x = 0 hoặc x = 4. Giá trị khác 0 là 4.",
+      "dang": "Tìm x bằng cách phân tích thành nhân tử",
+      "id": "q29"
+    },
+    {
       "id": "q09",
       "level": "Vận dụng",
       "type": "fill",
@@ -177,6 +259,46 @@
       "expr": "5*4*6",
       "answer": "120",
       "explain": "5·4·6 = 120."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phân tích x³ − x² − 4x + 4 thành nhân tử (nhóm hạng tử) rồi tính giá trị tại x = 4.",
+      "expr": "(4-1)*(4-2)*(4+2)",
+      "answer": "36",
+      "explain": "Nhóm: x²(x − 1) − 4(x − 1) = (x − 1)(x² − 4) = (x − 1)(x − 2)(x + 2). Thay x = 4: 3·2·6 = 36.",
+      "dang": "Phân tích đa thức thành nhân tử",
+      "id": "q26"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phân tích x² − 2xy + y² − 9 thành nhân tử rồi tính giá trị tại x = 7, y = 2.",
+      "expr": "(7-2-3)*(7-2+3)",
+      "answer": "16",
+      "explain": "Nhóm ba hạng tử đầu: (x − y)² − 9 = (x − y − 3)(x − y + 3). Thay x = 7, y = 2: (2)(8) = 16.",
+      "dang": "Phân tích đa thức thành nhân tử",
+      "id": "q27"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm x biết x³ − x = 0. Tổng bình phương các giá trị của x là?",
+      "expr": "0*0+1*1+(-1)*(-1)",
+      "answer": "2",
+      "explain": "x(x² − 1) = x(x − 1)(x + 1) = 0 ⇒ x = 0, 1 hoặc −1. Tổng bình phương: 0 + 1 + 1 = 2.",
+      "dang": "Tìm x bằng cách phân tích thành nhân tử",
+      "id": "q30"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm x biết x² − 6x + 9 = 0. Giá trị của x là?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "(x − 3)² = 0 ⇒ x − 3 = 0 ⇒ x = 3 (chỉ một giá trị).",
+      "dang": "Tìm x bằng cách phân tích thành nhân tử",
+      "id": "q31"
     }
   ]
 }

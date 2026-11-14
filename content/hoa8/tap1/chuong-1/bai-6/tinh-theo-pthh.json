@@ -37,6 +37,32 @@
     {
       "type": "formula",
       "content": "H = (m thực tế / m lí thuyết) · 100%"
+    },
+    {
+      "type": "method",
+      "title": "Bài toán hiệu suất phản ứng",
+      "when": "Đề cho khối lượng chất ban đầu và lượng sản phẩm thực tế, hoặc cho hiệu suất để tính lượng sản phẩm hay lượng chất cần dùng.",
+      "steps": [
+        "Viết phương trình hóa học và cân bằng.",
+        "Tính lượng sản phẩm (hoặc chất cần dùng) theo lí thuyết, coi phản ứng xảy ra hoàn toàn: đổi ra mol rồi suy theo tỉ lệ hệ số.",
+        "Dùng H = (lượng thực tế / lượng lí thuyết) · 100%.",
+        "Biến đổi theo yêu cầu: lượng sản phẩm thực tế = lí thuyết × H/100; lượng chất cần dùng = lí thuyết × 100/H."
+      ],
+      "notes": [
+        "Hiệu suất H luôn nhỏ hơn hoặc bằng 100%.",
+        "Lượng thực tế và lượng lí thuyết phải cùng loại và cùng đơn vị (cùng khối lượng hoặc cùng số mol).",
+        "Muốn thu đủ lượng sản phẩm với H < 100% thì phải lấy nhiều chất ban đầu hơn so với lí thuyết.",
+        "Tính hiệu suất theo sản phẩm hay theo chất tham gia đều được, nhưng phải thống nhất một chất."
+      ],
+      "sample": {
+        "problem": "Nung 100 g CaCO₃ thu được 44,8 g CaO. Tính hiệu suất phản ứng (M CaCO₃ = 100, CaO = 56).",
+        "steps": [
+          "PTHH: CaCO₃ → CaO + CO₂ (nhiệt độ).",
+          "n(CaCO₃) = 100/100 = 1 mol ⇒ lí thuyết thu 1 mol CaO = 56 g.",
+          "H = 44,8/56 × 100% = 80%."
+        ],
+        "answer": "80%"
+      }
     }
   ],
   "examples": [
@@ -206,6 +232,26 @@
       "explain": "H = 4,2 / 5,6 × 100 = 75%."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lí thuyết thu được 20 g sản phẩm, thực tế thu được 16 g. Hiệu suất phản ứng là bao nhiêu %?",
+      "expr": "16/20*100",
+      "answer": "80",
+      "explain": "H = 16/20 × 100% = 80%.",
+      "dang": "Bài toán hiệu suất phản ứng",
+      "id": "q13"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lí thuyết thu được 24 g sản phẩm, hiệu suất phản ứng là 75%. Khối lượng sản phẩm thực tế thu được là bao nhiêu gam?",
+      "expr": "24*75/100",
+      "answer": "18",
+      "explain": "Thực tế = 24 × 75/100 = 18 g.",
+      "dang": "Bài toán hiệu suất phản ứng",
+      "id": "q14"
+    },
+    {
       "id": "q10",
       "level": "Vận dụng",
       "type": "fill",
@@ -242,6 +288,26 @@
         "3": "Không đúng."
       },
       "concept": true
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nung 100 g CaCO₃ (CaCO₃ → CaO + CO₂), thu được 44,8 g CaO. Hiệu suất phản ứng là bao nhiêu %? (M CaCO₃ = 100, M CaO = 56)",
+      "expr": "44.8/56*100",
+      "answer": "80",
+      "explain": "n(CaCO₃) = 1 mol ⇒ lí thuyết 56 g CaO. H = 44,8/56 × 100% = 80%.",
+      "dang": "Bài toán hiệu suất phản ứng",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Để điều chế 5,6 g CaO với hiệu suất 80% cần nung bao nhiêu gam CaCO₃? (M CaCO₃ = 100, M CaO = 56)",
+      "expr": "5.6/56*100*100/80",
+      "answer": "12,5",
+      "explain": "n(CaO) = 5,6/56 = 0,1 mol ⇒ theo lí thuyết cần 0,1 mol CaCO₃ = 10 g. Vì H = 80% nên cần 10 × 100/80 = 12,5 g.",
+      "dang": "Bài toán hiệu suất phản ứng",
+      "id": "q16"
     }
   ]
 }

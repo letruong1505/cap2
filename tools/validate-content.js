@@ -74,6 +74,14 @@ function validateLesson(lesson, relPath) {
     if (ex.figure) errs.push(...checkFigurePath(ex.figure, `ví dụ "${ex.problem}"`));
   }
   for (const block of lesson.theory || []) {
+    if (block.type === 'method') {
+      const t = `cách giải "${block.title}"`;
+      if (!block.title) errs.push('cách giải: thiếu tên dạng bài');
+      if (!Array.isArray(block.steps) || block.steps.length < 3) errs.push(`${t}: cần ít nhất 3 bước`);
+      if (!Array.isArray(block.notes) || block.notes.length < 2) errs.push(`${t}: cần ít nhất 2 lưu ý`);
+      if (!block.sample || !block.sample.problem || !Array.isArray(block.sample.steps) || !block.sample.steps.length) errs.push(`${t}: thiếu ví dụ mẫu`);
+      continue;
+    }
     if (block.type !== 'figure') continue;
     errs.push(...checkFigurePath(block.figure, 'lý thuyết'));
     if (!block.caption) errs.push('lý thuyết: hình thiếu chú thích');

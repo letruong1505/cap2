@@ -45,6 +45,32 @@
     {
       "type": "text",
       "content": "Áp suất chất khí trong bình kín tăng khi tăng lượng khí trong bình có thể tích cố định, hoặc khi giảm thể tích bình chứa lượng khí nhất định."
+    },
+    {
+      "type": "method",
+      "title": "Bài toán áp suất trên một bề mặt",
+      "when": "Đề cho khối lượng (hoặc trọng lượng), diện tích tiếp xúc và hỏi áp suất, diện tích hoặc áp lực.",
+      "steps": [
+        "Xác định áp lực F: lực ép vuông góc với mặt bị ép. Vật đặt trên mặt ngang thì F = P = 10·m.",
+        "Xác định diện tích bị ép S (cộng diện tích tất cả các chỗ tiếp xúc) và đổi về m² (1 m² = 10 000 cm²).",
+        "Áp dụng p = F/S; hỏi F hay S thì dùng F = p·S hoặc S = F/p.",
+        "Ghi kết quả có đơn vị: p tính bằng Pa (N/m²), rồi so sánh hoặc kết luận theo yêu cầu."
+      ],
+      "notes": [
+        "S là diện tích tiếp xúc thực, không phải diện tích cả vật; đứng hai chân thì S là tổng hai chân.",
+        "Cùng áp lực, diện tích bị ép càng nhỏ thì áp suất càng lớn (dao sắc dễ cắt, đinh nhọn dễ đóng).",
+        "Phải đổi cm² sang m² trước khi tính, nếu không kết quả sai 10 000 lần.",
+        "Đứng co một chân: S giảm một nửa nên áp suất tăng gấp đôi."
+      ],
+      "sample": {
+        "problem": "Người nặng 60 kg đứng hai chân, mỗi chân tiếp xúc 150 cm². Tính áp suất lên mặt đất.",
+        "steps": [
+          "Áp lực: F = P = 10·60 = 600 N.",
+          "Diện tích: S = 2 × 150 = 300 cm² = 0,03 m².",
+          "Áp suất: p = F/S = 600/0,03 = 20 000 Pa."
+        ],
+        "answer": "20 000 Pa"
+      }
     }
   ],
   "examples": [
@@ -236,6 +262,16 @@
       "explain": "p = 12 / 0,0003 = 40 000 Pa."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Người có khối lượng 60 kg đứng hai chân, diện tích tiếp xúc mỗi chân là 150 cm². Áp suất tác dụng lên mặt đất là bao nhiêu Pa?",
+      "expr": "600*10000/300",
+      "answer": "20000",
+      "explain": "F = 600 N; S = 300 cm² = 0,03 m²; p = 600/0,03 = 20 000 Pa.",
+      "dang": "Bài toán áp suất trên một bề mặt",
+      "id": "q13"
+    },
+    {
       "id": "q10",
       "level": "Vận dụng",
       "type": "fill",
@@ -272,6 +308,36 @@
         "3": "Không liên quan."
       },
       "concept": true
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khi người đó (60 kg) đứng co một chân thì áp suất lên mặt đất tăng bao nhiêu lần so với khi đứng hai chân?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Áp lực không đổi, diện tích tiếp xúc giảm còn một nửa nên áp suất tăng gấp 2 lần.",
+      "dang": "Bài toán áp suất trên một bề mặt",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Áp lực 800 N gây ra áp suất 40 000 Pa lên mặt bị ép. Diện tích bị ép là bao nhiêu cm²?",
+      "expr": "800/40000*10000",
+      "answer": "200",
+      "explain": "S = F/p = 800/40 000 = 0,02 m² = 200 cm².",
+      "dang": "Bài toán áp suất trên một bề mặt",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thùng nặng 120 kg đặt trên sàn, đáy hình vuông cạnh 40 cm. Áp suất thùng tác dụng lên sàn là bao nhiêu Pa?",
+      "expr": "1200*10000/1600",
+      "answer": "7500",
+      "explain": "F = P = 1 200 N; S = 0,4 × 0,4 = 0,16 m²; p = 1 200/0,16 = 7 500 Pa.",
+      "dang": "Bài toán áp suất trên một bề mặt",
+      "id": "q16"
     }
   ]
 }

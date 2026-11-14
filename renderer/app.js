@@ -64,6 +64,32 @@ function figureBlock(svg, caption) {
   return fig;
 }
 
+function methodBlock(m) {
+  // Khung "Cách giải" cho một dạng bài: nhận dạng, các bước, lưu ý và ví dụ mẫu.
+  const wrap = el('div', { class: 'method' });
+  wrap.append(el('p', { class: 'method-title' }, 'Cách giải: ', m.title));
+  if (m.when) wrap.append(el('p', { class: 'method-when' }, el('b', {}, 'Nhận dạng: '), m.when));
+  const steps = el('ol', { class: 'method-steps' });
+  m.steps.forEach((t, i) => steps.append(el('li', {}, el('b', {}, `Bước ${i + 1}. `), t)));
+  wrap.append(steps);
+  if (Array.isArray(m.notes) && m.notes.length) {
+    const notes = el('div', { class: 'method-notes' }, el('p', { class: 'method-notes-title' }, 'Lưu ý'));
+    const ul = el('ul');
+    m.notes.forEach((t) => ul.append(el('li', {}, t)));
+    notes.append(ul);
+    wrap.append(notes);
+  }
+  if (m.sample) {
+    const sm = el('div', { class: 'method-sample' }, el('p', { class: 'method-sample-label' }, 'Ví dụ mẫu'), el('p', { class: 'method-sample-problem' }, m.sample.problem));
+    const ol = el('ol');
+    m.sample.steps.forEach((t) => ol.append(el('li', {}, t)));
+    sm.append(ol);
+    if (m.sample.answer) sm.append(el('p', { class: 'example-answer' }, 'Kết quả: ', el('b', {}, m.sample.answer)));
+    wrap.append(sm);
+  }
+  return wrap;
+}
+
 function renderTheory(lesson) {
   const box = document.getElementById('theory');
   box.replaceChildren();
@@ -72,6 +98,8 @@ function renderTheory(lesson) {
       box.append(figureBlock(block.figureSvg, block.caption));
     } else if (block.type === 'formula') {
       box.append(el('p', { class: 'formula' }, block.content));
+    } else if (block.type === 'method') {
+      box.append(methodBlock(block));
     } else {
       box.append(el('p', {}, block.content));
     }

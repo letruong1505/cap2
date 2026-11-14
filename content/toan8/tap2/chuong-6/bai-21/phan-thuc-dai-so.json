@@ -28,6 +28,31 @@
     {
       "type": "formula",
       "content": "A/B = C/D ⇔ A·D = B·C (B ≠ 0, D ≠ 0)"
+    },
+    {
+      "type": "method",
+      "title": "Tìm điều kiện xác định của phân thức",
+      "when": "Đề hỏi \"phân thức xác định khi nào\", \"tìm điều kiện của x\", hoặc \"x không được nhận giá trị nào\".",
+      "steps": [
+        "Điều kiện xác định là mẫu thức khác 0: B ≠ 0.",
+        "Phân tích mẫu thành nhân tử (đặt nhân tử chung, hằng đẳng thức, tam thức bậc hai đơn giản).",
+        "Cho từng nhân tử khác 0 và giải: mỗi nhân tử cho một giá trị bị loại.",
+        "Kết luận: x khác tất cả các giá trị vừa tìm được."
+      ],
+      "notes": [
+        "Điều kiện xác định luôn tìm trên phân thức ban đầu, trước khi rút gọn.",
+        "Mẫu là tích bằng 0 khi có ít nhất một nhân tử bằng 0, nên phải loại hết các giá trị đó.",
+        "Tử bằng 0 không làm phân thức không xác định; chỉ mẫu bằng 0 mới gây ra điều đó.",
+        "Khi tìm x để phân thức bằng 0: cho tử bằng 0 rồi loại những giá trị làm mẫu bằng 0."
+      ],
+      "sample": {
+        "problem": "Tìm điều kiện xác định của (x + 1)/(x² − 4).",
+        "steps": [
+          "Mẫu: x² − 4 = (x − 2)(x + 2).",
+          "Phân thức xác định khi (x − 2)(x + 2) ≠ 0, tức x ≠ 2 và x ≠ −2."
+        ],
+        "answer": "x ≠ 2 và x ≠ −2"
+      }
     }
   ],
   "examples": [
@@ -147,6 +172,26 @@
       "explain": "Mẫu x − 5 = 0 khi x = 5."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phân thức 5/(2x − 6) xác định khi x ≠ ? (nhập giá trị)",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Mẫu khác 0: 2x − 6 ≠ 0 ⇔ 2x ≠ 6 ⇔ x ≠ 3.",
+      "dang": "Tìm điều kiện xác định của phân thức",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phân thức (x + 1)/(x² − 9) không xác định tại hai giá trị của x. Giá trị dương trong hai giá trị đó là?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "x² − 9 = (x − 3)(x + 3) = 0 khi x = 3 hoặc x = −3. Giá trị dương là 3.",
+      "dang": "Tìm điều kiện xác định của phân thức",
+      "id": "q11"
+    },
+    {
       "id": "q08",
       "level": "Vận dụng",
       "type": "fill",
@@ -163,6 +208,26 @@
       "expr": "7/2",
       "answer": "3.5",
       "explain": "Thay x = 4: (3·4 + 2)/(2·4 − 4) = 14/4 = 3,5."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phân thức 1/(x² − 5x + 6) không xác định tại hai giá trị của x. Tổng hai giá trị đó bằng?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "x² − 5x + 6 = (x − 2)(x − 3) = 0 khi x = 2 hoặc x = 3. Tổng: 2 + 3 = 5.",
+      "dang": "Tìm điều kiện xác định của phân thức",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị của x để phân thức (x² − 4)/(x + 2) bằng 0 là?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Cho tử bằng 0: x² − 4 = 0 ⇒ x = 2 hoặc x = −2. Với x = −2 mẫu bằng 0 nên bị loại. Vậy x = 2.",
+      "dang": "Tìm điều kiện xác định của phân thức",
+      "id": "q13"
     }
   ]
 }
