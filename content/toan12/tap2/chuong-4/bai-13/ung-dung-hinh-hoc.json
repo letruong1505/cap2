@@ -29,6 +29,31 @@
       "type": "figure",
       "figure": "figures/tn-toan12-b13-ung-dung.svg",
       "caption": "Diện tích hình phẳng và thể tích khối tròn xoay"
+    },
+    {
+      "type": "method",
+      "title": "Tính diện tích hình phẳng và thể tích khối tròn xoay",
+      "when": "Đề cho các đường y = f(x), y = g(x), x = a, x = b và hỏi diện tích hình phẳng hoặc thể tích khối tròn xoay quanh Ox.",
+      "steps": [
+        "Tìm các cận bằng cách giải f(x) = g(x) (nếu đề chưa cho đủ cận).",
+        "Xét dấu f(x) − g(x) trên đoạn để bỏ dấu giá trị tuyệt đối: S = ∫ₐᵇ |f(x) − g(x)| dx.",
+        "Thể tích quay quanh Ox: V = π∫ₐᵇ [f(x)]² dx.",
+        "Tính tích phân, ghi đơn vị."
+      ],
+      "notes": [
+        "Diện tích luôn dương; nếu hiệu âm phải đổi dấu hoặc lấy giá trị tuyệt đối.",
+        "Nếu hiệu đổi dấu trên đoạn thì chia đoạn tại nghiệm.",
+        "Công thức thể tích có π và bình phương của hàm.",
+        "Vẽ phác đồ thị để xác định hàm nào ở trên."
+      ],
+      "sample": {
+        "problem": "Tính diện tích hình phẳng giới hạn bởi y = x và y = x².",
+        "steps": [
+          "x = x² ⇔ x = 0 hoặc x = 1; trên [0; 1], x ≥ x².",
+          "S = ∫₀¹ (x − x²) dx = [x²/2 − x³/3]₀¹ = 1/2 − 1/3 = 1/6."
+        ],
+        "answer": "1/6"
+      }
     }
   ],
   "examples": [
@@ -471,6 +496,26 @@
       "figure": "figures/bt12-b13-q23.svg"
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Diện tích hình phẳng giới hạn bởi y = x và y = x² là?",
+      "expr": "1/2-1/3",
+      "answer": "1/6",
+      "explain": "S = ∫₀¹ (x − x²)dx = 1/2 − 1/3 = 1/6.",
+      "dang": "Tính diện tích hình phẳng và thể tích khối tròn xoay",
+      "id": "q27"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Diện tích hình phẳng giới hạn bởi y = x², trục Ox, x = 0, x = 3 là?",
+      "expr": "9",
+      "answer": "9",
+      "explain": "S = ∫₀³ x²dx = 27/3 = 9.",
+      "dang": "Tính diện tích hình phẳng và thể tích khối tròn xoay",
+      "id": "q28"
+    },
+    {
       "id": "q24",
       "level": "Vận dụng",
       "type": "mcq",
@@ -530,6 +575,26 @@
         "3": "30π chỉ là π∫dx, bỏ qua phần do hàm f(x) gây ra."
       },
       "figure": "figures/bt12-b13-q26.svg"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thể tích khối tròn xoay khi quay hình giới hạn bởi y = x, trục Ox, x = 0, x = 2 quanh Ox là Vπ. Giá trị V là?",
+      "expr": "8/3",
+      "answer": "8/3",
+      "explain": "V = π∫₀² x²dx = π·8/3.",
+      "dang": "Tính diện tích hình phẳng và thể tích khối tròn xoay",
+      "id": "q29"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Diện tích hình phẳng giới hạn bởi y = x² và y = 4 là?",
+      "expr": "32/3",
+      "answer": "32/3",
+      "explain": "x² = 4 ⇒ x = ±2. S = ∫₋₂² (4 − x²)dx = [4x − x³/3]₋₂² = 2(8 − 8/3) = 32/3.",
+      "dang": "Tính diện tích hình phẳng và thể tích khối tròn xoay",
+      "id": "q30"
     }
   ]
 }

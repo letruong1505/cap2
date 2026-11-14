@@ -24,6 +24,31 @@
     {
       "type": "text",
       "content": "Độ dài vectơ: |a| = √(x² + y² + z²). Khoảng cách giữa A(x_A; y_A; z_A) và B(x_B; y_B; z_B): AB = √((x_B − x_A)² + (y_B − y_A)² + (z_B − z_A)²). Góc giữa hai vectơ khác 0: cos(a, b) = (xx' + yy' + zz')/(√(x² + y² + z²)·√(x'² + y'² + z'²))."
+    },
+    {
+      "type": "method",
+      "title": "Tính toán với tọa độ vectơ trong không gian",
+      "when": "Đề cho tọa độ các điểm hoặc vectơ và hỏi độ dài, tích vô hướng, góc, trung điểm, trọng tâm.",
+      "steps": [
+        "Tìm tọa độ vectơ: AB = (x_B − x_A; y_B − y_A; z_B − z_A).",
+        "Độ dài: |a| = √(x² + y² + z²); khoảng cách AB = |AB|.",
+        "Tích vô hướng a·b = x₁x₂ + y₁y₂ + z₁z₂; cos(a, b) = a·b/(|a||b|); a ⊥ b ⇔ a·b = 0.",
+        "Trung điểm M của AB có tọa độ nửa tổng; trọng tâm tam giác là trung bình cộng của ba đỉnh."
+      ],
+      "notes": [
+        "Vectơ AB là (điểm cuối) trừ (điểm đầu), không đảo ngược.",
+        "Cos góc giữa hai vectơ có thể âm; góc giữa hai đường thẳng thì lấy giá trị tuyệt đối.",
+        "Rút gọn số trước khi lấy căn.",
+        "Kiểm tra bằng bộ ba số Pythagore quen thuộc như (3; 4; 12) → 13."
+      ],
+      "sample": {
+        "problem": "Cho A(1; 2; 3), B(4; 6; 15). Tính độ dài AB.",
+        "steps": [
+          "AB = (3; 4; 12).",
+          "|AB| = √(9 + 16 + 144) = √169 = 13."
+        ],
+        "answer": "13"
+      }
     }
   ],
   "examples": [
@@ -442,6 +467,26 @@
       }
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho A(1; 2; 3) và B(4; 6; 15). Độ dài AB là?",
+      "expr": "13",
+      "answer": "13",
+      "explain": "AB = (3; 4; 12); |AB| = √(9 + 16 + 144) = 13.",
+      "dang": "Tính toán với tọa độ vectơ trong không gian",
+      "id": "q25"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho a = (1; 2; 2) và b = (2; −1; 3). Tích vô hướng a·b bằng?",
+      "expr": "2-2+6",
+      "answer": "6",
+      "explain": "a·b = 1·2 + 2·(−1) + 2·3 = 6.",
+      "dang": "Tính toán với tọa độ vectơ trong không gian",
+      "id": "q26"
+    },
+    {
       "id": "q22",
       "level": "Vận dụng",
       "type": "mcq",
@@ -502,6 +547,26 @@
         "2": "√950 không bằng 30.",
         "3": "Toạ độ z âm không làm radar mất tín hiệu theo đề bài; lý do là khoảng cách lớn hơn 30 km."
       }
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho A(2; 4; 6), B(4; 0; 2). Trung điểm M có tổng ba tọa độ bằng?",
+      "expr": "3+2+4",
+      "answer": "9",
+      "explain": "M(3; 2; 4), tổng 9.",
+      "dang": "Tính toán với tọa độ vectơ trong không gian",
+      "id": "q27"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho a = (1; 2; 2) và b = (m; 1; −1). Giá trị m để a ⊥ b là?",
+      "expr": "0",
+      "answer": "0",
+      "explain": "a·b = m + 2 − 2 = m = 0.",
+      "dang": "Tính toán với tọa độ vectơ trong không gian",
+      "id": "q28"
     }
   ]
 }

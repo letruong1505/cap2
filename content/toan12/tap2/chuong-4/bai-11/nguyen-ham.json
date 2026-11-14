@@ -29,6 +29,32 @@
       "type": "figure",
       "figure": "figures/tn-toan12-b11-ho-nguyen-ham.svg",
       "caption": "Họ nguyên hàm F(x) + C"
+    },
+    {
+      "type": "method",
+      "title": "Tìm nguyên hàm thỏa điều kiện cho trước",
+      "when": "Đề cho f(x) và điều kiện F(x₀) = y₀, yêu cầu tìm F(x) hoặc giá trị F tại điểm khác.",
+      "steps": [
+        "Tìm một nguyên hàm tổng quát: F(x) = ∫f(x)dx + C, dùng bảng nguyên hàm từng hạng tử.",
+        "Thay điều kiện F(x₀) = y₀ để tìm C.",
+        "Viết F(x) cụ thể.",
+        "Thay x vào F(x) để tính giá trị cần tìm."
+      ],
+      "notes": [
+        "Nhớ cộng hằng số C; mỗi nguyên hàm sai khác một hằng số.",
+        "∫xⁿdx = xⁿ⁺¹/(n + 1) + C với n ≠ −1.",
+        "Kiểm tra bằng cách lấy đạo hàm F(x) có ra f(x) không.",
+        "Hệ số đứng trước x giữ nguyên khi lấy nguyên hàm."
+      ],
+      "sample": {
+        "problem": "Biết F(x) là nguyên hàm của f(x) = 3x² + 2x và F(1) = 3. Tính F(2).",
+        "steps": [
+          "F(x) = x³ + x² + C.",
+          "F(1) = 1 + 1 + C = 3 ⇒ C = 1.",
+          "F(2) = 8 + 4 + 1 = 13."
+        ],
+        "answer": "13"
+      }
     }
   ],
   "examples": [
@@ -567,6 +593,26 @@
       }
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "F(x) là nguyên hàm của f(x) = 2x + 1 và F(0) = 5. Giá trị F(2) là?",
+      "expr": "4+2+5",
+      "answer": "11",
+      "explain": "F(x) = x² + x + C, C = 5. F(2) = 4 + 2 + 5 = 11.",
+      "dang": "Tìm nguyên hàm thỏa điều kiện cho trước",
+      "id": "q29"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "F(x) là nguyên hàm của f(x) = 3x² và F(1) = 4. Giá trị F(2) là?",
+      "expr": "8+3",
+      "answer": "11",
+      "explain": "F(x) = x³ + C; 1 + C = 4 ⇒ C = 3. F(2) = 8 + 3 = 11.",
+      "dang": "Tìm nguyên hàm thỏa điều kiện cho trước",
+      "id": "q30"
+    },
+    {
       "id": "q25",
       "level": "Vận dụng",
       "type": "fill",
@@ -612,6 +658,26 @@
       "expr": "(160*160)/(4*49/10)",
       "answer": "64000/49",
       "explain": "h(t) = 160t − 4,9t² đạt cực đại tại t = 160/9,8 ≈ 16,3 s; h_max = 160²/(4·4,9) = 64000/49 ≈ 1306,1 (m)."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "F(x) là nguyên hàm của f(x) = 3x² + 2x và F(1) = 3. Giá trị F(2) là?",
+      "expr": "8+4+1",
+      "answer": "13",
+      "explain": "F(x) = x³ + x² + C; C = 1. F(2) = 8 + 4 + 1 = 13.",
+      "dang": "Tìm nguyên hàm thỏa điều kiện cho trước",
+      "id": "q31"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật chuyển động có vận tốc v(t) = 6t + 2 (m/s), tại t = 0 vật ở vị trí s = 0. Vị trí của vật tại t = 2 (m) là?",
+      "expr": "3*4+2*2",
+      "answer": "16",
+      "explain": "s(t) = 3t² + 2t + C, C = 0. s(2) = 12 + 4 = 16.",
+      "dang": "Tìm nguyên hàm thỏa điều kiện cho trước",
+      "id": "q32"
     }
   ]
 }

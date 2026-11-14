@@ -33,6 +33,32 @@
     {
       "type": "text",
       "content": "Với hàm bậc ba y = x³ − 2x² + 2x − 1: y' = 3x² − 4x + 2 có biệt thức âm nên y' > 0 với mọi x; hàm số đồng biến trên ℝ, không có cực trị, và đồ thị có tâm đối xứng là điểm (2/3; −7/27)."
+    },
+    {
+      "type": "method",
+      "title": "Khảo sát hàm số và các bài toán liên quan đồ thị",
+      "when": "Đề yêu cầu khảo sát và vẽ đồ thị, hoặc tìm điểm uốn, tâm đối xứng, số giao điểm với trục hoành.",
+      "steps": [
+        "Tập xác định, tính đạo hàm, tìm cực trị và lập bảng biến thiên.",
+        "Tìm giới hạn ở vô cực và tiệm cận (nếu có).",
+        "Tìm điểm đặc biệt: giao với trục tung, trục hoành, điểm uốn (y″ = 0).",
+        "Vẽ đồ thị; số giao điểm với y = k chính là số nghiệm của f(x) = k."
+      ],
+      "notes": [
+        "Hàm bậc ba có tâm đối xứng là điểm uốn.",
+        "Số nghiệm của f(x) = k bằng số giao điểm của đồ thị với đường y = k.",
+        "Hàm bậc ba y = ax³ + bx² + cx + d có thể có 0 hoặc 2 cực trị.",
+        "Đọc đồ thị kĩ: cực đại nằm cao hơn cực tiểu ở lân cận."
+      ],
+      "sample": {
+        "problem": "Tìm tọa độ tâm đối xứng của đồ thị y = x³ − 3x² + 1.",
+        "steps": [
+          "y′ = 3x² − 6x, y″ = 6x − 6.",
+          "y″ = 0 ⇔ x = 1; y(1) = 1 − 3 + 1 = −1.",
+          "Tâm đối xứng là điểm uốn I(1; −1)."
+        ],
+        "answer": "I(1; −1)"
+      }
     }
   ],
   "examples": [
@@ -200,6 +226,26 @@
       }
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tâm đối xứng của đồ thị y = x³ − 3x² + 1 là điểm I(1; b). Giá trị b là?",
+      "expr": "1-3+1",
+      "answer": "-1",
+      "explain": "y(1) = 1 − 3 + 1 = −1.",
+      "dang": "Khảo sát hàm số và các bài toán liên quan đồ thị",
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đồ thị y = x³ − 3x + 2 cắt trục tung tại điểm có tung độ là?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Cho x = 0 được y = 2.",
+      "dang": "Khảo sát hàm số và các bài toán liên quan đồ thị",
+      "id": "q12"
+    },
+    {
       "id": "q09",
       "level": "Vận dụng",
       "type": "mcq",
@@ -231,6 +277,26 @@
       "explain": "Khi x → +∞ thì 45/x → 0 nên f(x) → 2. Chi phí trung bình luôn lớn hơn 2 triệu đồng vì 45/x > 0 với mọi x > 0.",
       "figure": "figures/c1-4-hinh-1-27.svg",
       "bookPage": 29
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phương trình x³ − 3x = k có ba nghiệm phân biệt khi −2 < k < 2. Có bao nhiêu số nguyên k thỏa mãn?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "k ∈ {−1, 0, 1}: có 3 giá trị nguyên. (Đồ thị y = x³ − 3x có cực đại 2 và cực tiểu −2.)",
+      "dang": "Khảo sát hàm số và các bài toán liên quan đồ thị",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đồ thị y = x⁴ − 2x² − 3 có bao nhiêu điểm cực trị?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "y′ = 4x(x² − 1) = 0 ⇔ x = 0, ±1 và đổi dấu tại cả ba điểm: 3 điểm cực trị.",
+      "dang": "Khảo sát hàm số và các bài toán liên quan đồ thị",
+      "id": "q14"
     }
   ]
 }

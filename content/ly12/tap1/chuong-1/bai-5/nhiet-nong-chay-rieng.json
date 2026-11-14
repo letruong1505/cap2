@@ -33,6 +33,31 @@
     {
       "type": "text",
       "content": "Nhiệt nóng chảy riêng được dùng trong đúc kim loại, tách kim loại bằng nấu chảy và hàn bằng thiếc."
+    },
+    {
+      "type": "method",
+      "title": "Tính nhiệt lượng làm nóng chảy và quá trình nhiều giai đoạn",
+      "when": "Đề cho khối lượng vật và nhiệt nóng chảy riêng, hỏi nhiệt lượng để vật nóng chảy hoàn toàn; hoặc đun từ nhiệt độ thấp đến khi chảy hết.",
+      "steps": [
+        "Chia quá trình thành các giai đoạn: nóng lên đến nhiệt độ nóng chảy (Q₁ = mcΔT), nóng chảy ở nhiệt độ không đổi (Q₂ = λm).",
+        "Tính từng nhiệt lượng với đơn vị J.",
+        "Cộng các nhiệt lượng: Q = Q₁ + Q₂ (+ ...).",
+        "Kiểm tra: nếu chỉ cung cấp một nhiệt lượng cho trước thì so sánh với từng giai đoạn."
+      ],
+      "notes": [
+        "Trong lúc nóng chảy nhiệt độ không đổi, không dùng mcΔT.",
+        "Đá ở 0 °C chỉ cần Q = λm; đá dưới 0 °C cần nâng lên 0 °C trước.",
+        "Nhớ λ của nước đá là 3,34·10⁵ J/kg.",
+        "Tính đúng khối lượng bằng kg."
+      ],
+      "sample": {
+        "problem": "Tính nhiệt lượng cần để làm tan hoàn toàn 0,5 kg nước đá ở 0 °C (λ = 3,34·10⁵ J/kg).",
+        "steps": [
+          "Q = λm = 3,34·10⁵·0,5.",
+          "Q = 1,67·10⁵ J."
+        ],
+        "answer": "167 000 J"
+      }
     }
   ],
   "examples": [
@@ -126,6 +151,16 @@
       "explain": "Q = λ·m = 3,34·10⁵ · 2 = 668 000 J."
     },
     {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Nhiệt lượng làm tan hoàn toàn 0,5 kg nước đá ở 0 °C là bao nhiêu J? (λ = 334 000 J/kg)",
+      "expr": "334000*0.5",
+      "answer": "167000",
+      "explain": "Q = λm = 334 000·0,5 = 167 000 J.",
+      "dang": "Tính nhiệt lượng làm nóng chảy và quá trình nhiều giai đoạn",
+      "id": "q10"
+    },
+    {
       "id": "q05",
       "level": "Vận dụng",
       "type": "fill",
@@ -184,6 +219,16 @@
       }
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cần 1,5·10⁵ J để làm nóng chảy hoàn toàn một khối kim loại 2 kg ở nhiệt độ nóng chảy. Nhiệt nóng chảy riêng là bao nhiêu J/kg?",
+      "expr": "150000/2",
+      "answer": "75000",
+      "explain": "λ = Q/m = 150 000/2 = 75 000 J/kg.",
+      "dang": "Tính nhiệt lượng làm nóng chảy và quá trình nhiều giai đoạn",
+      "id": "q11"
+    },
+    {
       "id": "q09",
       "level": "Vận dụng",
       "type": "fill",
@@ -191,6 +236,26 @@
       "expr": "334000*0.25",
       "answer": "83500",
       "explain": "Q = 3,34·10⁵ · 0,25 = 83 500 J."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đun 1 kg nước đá ở −10 °C lên 0 °C (c = 2100 J/kg·K) rồi cho tan hết (λ = 334 000 J/kg). Tổng nhiệt lượng là bao nhiêu J?",
+      "expr": "1*2100*10+334000",
+      "answer": "355000",
+      "explain": "Q₁ = 1·2100·10 = 21 000 J; Q₂ = 334 000 J. Tổng 355 000 J.",
+      "dang": "Tính nhiệt lượng làm nóng chảy và quá trình nhiều giai đoạn",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 0,2 kg nước đá ở 0 °C vào nước nóng; đá tan hết, lấy từ nước nóng 66 800 J. Nhiệt nóng chảy riêng của đá là bao nhiêu J/kg?",
+      "expr": "66800*5",
+      "answer": "334000",
+      "explain": "λ = Q/m = 66 800/0,2 = 334 000 J/kg.",
+      "dang": "Tính nhiệt lượng làm nóng chảy và quá trình nhiều giai đoạn",
+      "id": "q13"
     }
   ]
 }

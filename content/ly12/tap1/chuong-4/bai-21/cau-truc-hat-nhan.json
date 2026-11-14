@@ -41,6 +41,31 @@
     {
       "type": "text",
       "content": "Đồng vị là các hạt nhân có cùng số proton Z nhưng khác số neutron N (khác số khối A). Đồng vị có thể bền hoặc phóng xạ."
+    },
+    {
+      "type": "method",
+      "title": "Xác định cấu tạo hạt nhân",
+      "when": "Đề cho kí hiệu hạt nhân ᴬ_Z X và hỏi số proton, neutron, số nucleon, hoặc so sánh các hạt nhân.",
+      "steps": [
+        "Đọc kí hiệu ᴬ_Z X: A là số khối (số nucleon), Z là số proton.",
+        "Số proton = Z; số neutron N = A − Z.",
+        "Số electron của nguyên tử trung hòa bằng Z.",
+        "Đồng vị: cùng Z, khác A."
+      ],
+      "notes": [
+        "A viết ở góc trên, Z ở góc dưới.",
+        "Số nucleon bằng tổng proton và neutron.",
+        "Đồng vị có cùng số proton, khác số neutron.",
+        "Điện tích hạt nhân bằng +Ze."
+      ],
+      "sample": {
+        "problem": "Hạt nhân ²³⁵₉₂U có bao nhiêu neutron?",
+        "steps": [
+          "A = 235, Z = 92.",
+          "N = A − Z = 235 − 92 = 143."
+        ],
+        "answer": "143"
+      }
     }
   ],
   "examples": [
@@ -252,6 +277,46 @@
         "1": "Không đúng cấu tạo hạt nhân.",
         "3": "Hydrogen thường có 1 proton, không neutron."
       }
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hạt nhân ²³⁵₉₂U có bao nhiêu neutron?",
+      "expr": "235-92",
+      "answer": "143",
+      "explain": "N = A − Z = 143.",
+      "dang": "Xác định cấu tạo hạt nhân",
+      "id": "q12"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hạt nhân ¹²₆C có bao nhiêu nucleon?",
+      "expr": "12",
+      "answer": "12",
+      "explain": "Số nucleon bằng số khối A = 12.",
+      "dang": "Xác định cấu tạo hạt nhân",
+      "id": "q13"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hạt nhân ²³⁸₉₂U và ²³⁵₉₂U có số neutron hơn kém nhau bao nhiêu?",
+      "expr": "238-235",
+      "answer": "3",
+      "explain": "N = 146 và 143, chênh 3.",
+      "dang": "Xác định cấu tạo hạt nhân",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hạt nhân có Z = 8 và số neutron N = 9. Số khối A là?",
+      "expr": "8+9",
+      "answer": "17",
+      "explain": "A = Z + N = 17.",
+      "dang": "Xác định cấu tạo hạt nhân",
+      "id": "q15"
     }
   ]
 }

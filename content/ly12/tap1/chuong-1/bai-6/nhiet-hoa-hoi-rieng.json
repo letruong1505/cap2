@@ -33,6 +33,31 @@
     {
       "type": "text",
       "content": "Nhiệt nóng chảy riêng và nhiệt hoá hơi riêng còn được gọi là ẩn nhiệt riêng, vì trong các quá trình này nhiệt độ không thay đổi dù vẫn truyền nhiệt."
+    },
+    {
+      "type": "method",
+      "title": "Tính nhiệt lượng hóa hơi",
+      "when": "Đề cho khối lượng chất lỏng, nhiệt hóa hơi riêng và hỏi nhiệt lượng cần để hóa hơi hoặc ngưng tụ; hoặc quá trình đun từ nhiệt độ thấp đến hóa hơi hoàn toàn.",
+      "steps": [
+        "Chia quá trình: đun nóng đến nhiệt độ sôi (Q₁ = mcΔT), hóa hơi ở nhiệt độ không đổi (Q₂ = Lm).",
+        "Tính từng nhiệt lượng với m (kg), c (J/kg·K), L (J/kg).",
+        "Cộng lại: Q = Q₁ + Q₂.",
+        "Ngưng tụ hoàn toàn thì tỏa nhiệt lượng đúng bằng Lm."
+      ],
+      "notes": [
+        "Nhiệt độ không đổi trong lúc hóa hơi, không dùng mcΔT cho giai đoạn này.",
+        "Nhiệt hóa hơi riêng của nước ở 100 °C là 2,3·10⁶ J/kg.",
+        "Nước bắt đầu sôi ở 100 °C (áp suất chuẩn).",
+        "Hơi ngưng tụ tỏa ra lượng nhiệt bằng lượng nhiệt đã nhận khi hóa hơi."
+      ],
+      "sample": {
+        "problem": "Tính nhiệt lượng làm hóa hơi hoàn toàn 0,2 kg nước ở 100 °C (L = 2,3·10⁶ J/kg).",
+        "steps": [
+          "Q = Lm = 2,3·10⁶·0,2.",
+          "Q = 4,6·10⁵ J."
+        ],
+        "answer": "460 000 J"
+      }
     }
   ],
   "examples": [
@@ -127,6 +152,16 @@
       "explain": "Q = L·m = 2,26·10⁶ · 1 = 2 260 000 J."
     },
     {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Nhiệt lượng làm hóa hơi hoàn toàn 0,2 kg nước ở 100 °C là bao nhiêu J? (L = 2 300 000 J/kg)",
+      "expr": "2300000*0.2",
+      "answer": "460000",
+      "explain": "Q = Lm = 460 000 J.",
+      "dang": "Tính nhiệt lượng hóa hơi",
+      "id": "q09"
+    },
+    {
       "id": "q05",
       "level": "Vận dụng",
       "type": "fill",
@@ -183,6 +218,36 @@
         "2": "Nhiệt lượng vẫn đo được bằng công thức Q = λm hoặc Q = Lm.",
         "3": "Chất có thể ở thể lỏng hoặc hơi trong các quá trình này."
       }
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hơi nước 0,1 kg ngưng tụ hoàn toàn ở 100 °C tỏa ra bao nhiêu J? (L = 2 300 000 J/kg)",
+      "expr": "2300000/10",
+      "answer": "230000",
+      "explain": "Q = Lm = 2 300 000·0,1 = 230 000 J.",
+      "dang": "Tính nhiệt lượng hóa hơi",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đun 1 kg nước từ 20 °C đến 100 °C (c = 4200) rồi hóa hơi hoàn toàn (L = 2 300 000 J/kg). Tổng nhiệt lượng là bao nhiêu J?",
+      "expr": "1*4200*80+2300000",
+      "answer": "2636000",
+      "explain": "Q₁ = 4200·80 = 336 000 J; Q₂ = 2 300 000 J. Tổng 2 636 000 J.",
+      "dang": "Tính nhiệt lượng hóa hơi",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một chất lỏng 0,5 kg hóa hơi hoàn toàn cần 450 000 J. Nhiệt hóa hơi riêng của chất lỏng là bao nhiêu J/kg?",
+      "expr": "450000*2",
+      "answer": "900000",
+      "explain": "L = Q/m = 450 000/0,5 = 900 000 J/kg.",
+      "dang": "Tính nhiệt lượng hóa hơi",
+      "id": "q12"
     }
   ]
 }

@@ -33,6 +33,31 @@
       "type": "figure",
       "figure": "figures/c-ly12-b10-charles.svg",
       "caption": "Đường đẳng áp đi qua gốc khi dùng nhiệt độ tuyệt đối; áp suất càng lớn thì đường càng thoai."
+    },
+    {
+      "type": "method",
+      "title": "Bài toán quá trình đẳng áp",
+      "when": "Đề cho khí biến đổi ở áp suất không đổi, cho nhiệt độ theo °C hoặc K và hỏi thể tích hay nhiệt độ.",
+      "steps": [
+        "Đổi nhiệt độ sang kelvin: T = t + 273.",
+        "Viết V₁/T₁ = V₂/T₂.",
+        "Giải tìm đại lượng chưa biết.",
+        "Kiểm tra: nhiệt độ tăng thì thể tích tăng."
+      ],
+      "notes": [
+        "Phải dùng nhiệt độ tuyệt đối (K), không dùng °C.",
+        "T tăng gấp đôi thì V tăng gấp đôi.",
+        "Áp suất và khối lượng khí không đổi.",
+        "T (K) = t (°C) + 273."
+      ],
+      "sample": {
+        "problem": "Khí có V₁ = 3 L ở 27 °C. Đẳng áp đến 127 °C. Tính V₂.",
+        "steps": [
+          "T₁ = 300 K; T₂ = 400 K.",
+          "V₂ = V₁·T₂/T₁ = 3·400/300 = 4 L."
+        ],
+        "answer": "4 L"
+      }
     }
   ],
   "examples": [
@@ -178,6 +203,26 @@
       "explain": "T₁ = 280 K, T₂ = 350 K; V₂/V₁ = 350/280 = 1,25."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đổi 27 °C sang kelvin. Kết quả là bao nhiêu K?",
+      "expr": "27+273",
+      "answer": "300",
+      "explain": "T = t + 273 = 300 K.",
+      "dang": "Bài toán quá trình đẳng áp",
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khí có V₁ = 3 L ở 27 °C, đẳng áp đến 127 °C. Thể tích V₂ là bao nhiêu L?",
+      "expr": "3*400/300",
+      "answer": "4",
+      "explain": "V₂ = 3·400/300 = 4 L.",
+      "dang": "Bài toán quá trình đẳng áp",
+      "id": "q12"
+    },
+    {
       "id": "q08",
       "level": "Vận dụng",
       "type": "fill",
@@ -214,6 +259,26 @@
         "2": "Thể tích thay đổi khi nhiệt độ thay đổi.",
         "3": "Tỉ lệ là 2 lần, không phải 1,5 lần."
       }
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khí có thể tích 6 L ở 300 K. Đẳng áp để thể tích còn 4 L thì nhiệt độ là bao nhiêu K?",
+      "expr": "300*4/6",
+      "answer": "200",
+      "explain": "T₂ = T₁V₂/V₁ = 300·4/6 = 200 K.",
+      "dang": "Bài toán quá trình đẳng áp",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khí ở 273 K có thể tích 10 L. Đẳng áp đun nóng đến 546 K thì thể tích là bao nhiêu L?",
+      "expr": "10*2",
+      "answer": "20",
+      "explain": "T gấp đôi nên V gấp đôi: 20 L.",
+      "dang": "Bài toán quá trình đẳng áp",
+      "id": "q14"
     }
   ]
 }

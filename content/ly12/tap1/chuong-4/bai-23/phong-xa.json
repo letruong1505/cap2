@@ -41,6 +41,31 @@
     {
       "type": "text",
       "content": "Độ phóng xạ H là số phân rã trong một giây; đơn vị là becquerel (Bq), 1 Bq = 1 phân rã/s. H = λN và H = H₀·e^(−λt). Đơn vị cũ curie: 1 Ci = 3,7·10¹⁰ Bq."
+    },
+    {
+      "type": "method",
+      "title": "Bài toán chu kì bán rã",
+      "when": "Đề cho chu kì bán rã T, thời gian t, số hạt ban đầu N₀ hoặc khối lượng m₀ và hỏi số hạt còn lại, số hạt đã phân rã, tỉ lệ.",
+      "steps": [
+        "Tính tỉ số t/T = k.",
+        "Số hạt còn lại N = N₀·2⁻ᵏ (khi k nguyên: giảm một nửa k lần).",
+        "Số hạt đã phân rã = N₀ − N.",
+        "Cùng quy luật cho khối lượng chất phóng xạ: m = m₀·2⁻ᵏ."
+      ],
+      "notes": [
+        "t và T phải cùng đơn vị.",
+        "Sau mỗi chu kì còn một nửa: 1, 1/2, 1/4, 1/8,...",
+        "Phần trăm còn lại sau k chu kì là 100%/2ᵏ.",
+        "Phóng xạ không phụ thuộc điều kiện bên ngoài."
+      ],
+      "sample": {
+        "problem": "Mẫu có N₀ = 800 hạt, sau 3 chu kì bán rã còn bao nhiêu hạt?",
+        "steps": [
+          "t = 3T nên k = 3.",
+          "N = 800/2³ = 100 hạt."
+        ],
+        "answer": "100 hạt"
+      }
     }
   ],
   "examples": [
@@ -299,6 +324,46 @@
         "1": "Màu sắc không phải căn cứ của phương pháp này.",
         "3": "Nhiệt độ không phải căn cứ của phương pháp này."
       }
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mẫu có 800 hạt phóng xạ, sau 3 chu kì bán rã còn lại bao nhiêu hạt?",
+      "expr": "800/8",
+      "answer": "100",
+      "explain": "N = N₀/2³ = 100.",
+      "dang": "Bài toán chu kì bán rã",
+      "id": "q16"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Sau 2 chu kì bán rã, phần trăm chất phóng xạ còn lại là bao nhiêu %?",
+      "expr": "100/4",
+      "answer": "25",
+      "explain": "N/N₀ = 1/4 = 25%.",
+      "dang": "Bài toán chu kì bán rã",
+      "id": "q17"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có 1 000 hạt phóng xạ, sau 3 chu kì bán rã số hạt đã phân rã là bao nhiêu?",
+      "expr": "1000-1000/8",
+      "answer": "875",
+      "explain": "Còn lại 125 hạt; đã phân rã 1000 − 125 = 875 hạt.",
+      "dang": "Bài toán chu kì bán rã",
+      "id": "q18"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chất phóng xạ có chu kì bán rã 8 ngày, ban đầu 80 g. Sau 24 ngày còn lại bao nhiêu gam?",
+      "expr": "80/8",
+      "answer": "10",
+      "explain": "24 ngày = 3 chu kì; m = 80/2³ = 10 g.",
+      "dang": "Bài toán chu kì bán rã",
+      "id": "q19"
     }
   ]
 }

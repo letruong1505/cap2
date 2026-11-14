@@ -42,6 +42,31 @@
     {
       "type": "text",
       "content": "Định luật Faraday: độ lớn suất điện động cảm ứng trong mạch kín tỉ lệ với tốc độ biến thiên của từ thông qua mạch. Với cuộn dây có N vòng, e = −N·ΔΦ/Δt."
+    },
+    {
+      "type": "method",
+      "title": "Tính từ thông và suất điện động cảm ứng",
+      "when": "Đề cho B, S, góc α hoặc số vòng N, độ biến thiên từ thông và thời gian, hỏi từ thông hoặc suất điện động.",
+      "steps": [
+        "Từ thông Φ = B·S·cosα (α là góc giữa vectơ pháp tuyến mặt phẳng và B).",
+        "Tính độ biến thiên ΔΦ = Φ₂ − Φ₁.",
+        "Suất điện động |e| = N·|ΔΦ/Δt|.",
+        "Cường độ dòng điện cảm ứng (nếu mạch kín): i = e/R."
+      ],
+      "notes": [
+        "α là góc giữa pháp tuyến và B, không phải giữa mặt phẳng và B.",
+        "Đổi diện tích về m², thời gian về giây.",
+        "N là số vòng dây của cuộn.",
+        "Chiều dòng điện cảm ứng theo định luật Lenz."
+      ],
+      "sample": {
+        "problem": "Cuộn dây N = 100 vòng, từ thông giảm đều 0,05 Wb trong 0,5 s. Tính |e|.",
+        "steps": [
+          "|ΔΦ| = 0,05 Wb; Δt = 0,5 s.",
+          "|e| = 100·0,05/0,5 = 10 V."
+        ],
+        "answer": "10 V"
+      }
     }
   ],
   "examples": [],
@@ -185,6 +210,46 @@
         "2": "Nếu đứt dây kim không lệch."
       },
       "figure": "figures/ly12-b16-nam-cham-cuon-day.svg"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "B = 0,4 T, S = 0,05 m², pháp tuyến hợp với B góc 60°. Từ thông là bao nhiêu Wb? (nhập số thập phân)",
+      "expr": "0.4*0.05*0.5",
+      "answer": "0,01",
+      "explain": "Φ = BScos60° = 0,4·0,05·0,5 = 0,01 Wb.",
+      "dang": "Tính từ thông và suất điện động cảm ứng",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khung dây 1 vòng có từ thông giảm từ 0,03 Wb về 0 trong 0,1 s. Suất điện động cảm ứng là bao nhiêu V?",
+      "expr": "0.03*10",
+      "answer": "0,3",
+      "explain": "|e| = 0,03/0,1 = 0,3 V.",
+      "dang": "Tính từ thông và suất điện động cảm ứng",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cuộn dây 100 vòng, từ thông giảm đều 0,05 Wb trong 0,5 s. |e| bằng bao nhiêu V?",
+      "expr": "100*0.05*2",
+      "answer": "10",
+      "explain": "|e| = 100·0,05/0,5 = 10 V.",
+      "dang": "Tính từ thông và suất điện động cảm ứng",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Suất điện động cảm ứng 2 V trong mạch kín có điện trở 4 Ω. Cường độ dòng điện cảm ứng là bao nhiêu A? (nhập số thập phân)",
+      "expr": "2/4",
+      "answer": "0,5",
+      "explain": "i = e/R = 2/4 = 0,5 A.",
+      "dang": "Tính từ thông và suất điện động cảm ứng",
+      "id": "q12"
     }
   ]
 }

@@ -33,6 +33,31 @@
     {
       "type": "text",
       "content": "Để đo nhiệt dung riêng của nước, cần đo khối lượng nước m, độ tăng nhiệt độ Δt và nhiệt lượng Q do dòng điện qua điện trở toả ra trong thời gian đun, Q = P·τ; từ đó c = Q/(m·Δt)."
+    },
+    {
+      "type": "method",
+      "title": "Tính nhiệt lượng và bài toán cân bằng nhiệt",
+      "when": "Đề cho khối lượng, nhiệt dung riêng, độ tăng nhiệt độ và hỏi nhiệt lượng; hoặc trộn hai vật và hỏi nhiệt độ cuối.",
+      "steps": [
+        "Đổi đơn vị: m (kg), c (J/kg·K), ΔT (K hay °C, độ chênh bằng nhau).",
+        "Nhiệt lượng Q = m·c·ΔT.",
+        "Cân bằng nhiệt: nhiệt tỏa ra = nhiệt thu vào, m₁c₁(t₁ − t) = m₂c₂(t − t₂).",
+        "Giải phương trình tìm nhiệt độ cuối t, kiểm tra t nằm giữa hai nhiệt độ đầu."
+      ],
+      "notes": [
+        "ΔT luôn là hiệu hai nhiệt độ, dương khi tính độ lớn nhiệt lượng.",
+        "Chất cùng loại thì c giản ước hai vế.",
+        "Kết quả t phải nằm giữa t₂ và t₁.",
+        "Bỏ qua mất mát nhiệt ra môi trường nếu đề không nói."
+      ],
+      "sample": {
+        "problem": "Trộn 2 kg nước ở 80 °C với 3 kg nước ở 30 °C. Tính nhiệt độ cuối.",
+        "steps": [
+          "2·(80 − t) = 3·(t − 30) (cùng c).",
+          "160 − 2t = 3t − 90 ⇒ 5t = 250 ⇒ t = 50 °C."
+        ],
+        "answer": "50 °C"
+      }
     }
   ],
   "examples": [
@@ -146,6 +171,16 @@
       "explain": "Q = m·c·ΔT = 1 · 4200 · 10 = 42 000 J."
     },
     {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Nhiệt lượng cần để đun 2 kg nước từ 20 °C lên 40 °C là bao nhiêu J? (c = 4200 J/kg·K)",
+      "expr": "2*4200*20",
+      "answer": "168000",
+      "explain": "Q = mcΔT = 2·4200·20 = 168 000 J.",
+      "dang": "Tính nhiệt lượng và bài toán cân bằng nhiệt",
+      "id": "q11"
+    },
+    {
       "id": "q06",
       "level": "Hiểu",
       "type": "mcq",
@@ -205,6 +240,16 @@
       "figure": "figures/ly12-b4-thi-nghiem-nhiet-dung.svg"
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nung 0,5 kg đồng (c = 380 J/kg·K) tăng 100 °C. Nhiệt lượng cần là bao nhiêu J?",
+      "expr": "0.5*380*100",
+      "answer": "19000",
+      "explain": "Q = 0,5·380·100 = 19 000 J.",
+      "dang": "Tính nhiệt lượng và bài toán cân bằng nhiệt",
+      "id": "q12"
+    },
+    {
       "id": "q10",
       "level": "Vận dụng",
       "type": "fill",
@@ -212,6 +257,26 @@
       "expr": "84000/84000",
       "answer": "1",
       "explain": "m = Q/(c·ΔT) = 84 000 / (4200 · 20) = 1 kg."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trộn 2 kg nước ở 80 °C với 3 kg nước ở 30 °C. Nhiệt độ cân bằng là bao nhiêu °C?",
+      "expr": "(2*80+3*30)/5",
+      "answer": "50",
+      "explain": "2(80 − t) = 3(t − 30) ⇒ t = 50 °C.",
+      "dang": "Tính nhiệt lượng và bài toán cân bằng nhiệt",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cung cấp 84 000 J cho 1 kg nước (c = 4200 J/kg·K). Nước nóng thêm bao nhiêu °C?",
+      "expr": "84000/4200",
+      "answer": "20",
+      "explain": "ΔT = Q/(mc) = 84 000/4 200 = 20 °C.",
+      "dang": "Tính nhiệt lượng và bài toán cân bằng nhiệt",
+      "id": "q14"
     }
   ]
 }

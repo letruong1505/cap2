@@ -33,6 +33,31 @@
     {
       "type": "text",
       "content": "Đơn vị cảm ứng từ là tesla (T). Một tesla là cảm ứng từ của từ trường đều mà dòng điện 1 A vuông góc với đường sức chịu lực 1 N trên mỗi mét dây: 1 T = 1 N/(A·m)."
+    },
+    {
+      "type": "method",
+      "title": "Tính lực từ lên đoạn dây dẫn mang dòng điện",
+      "when": "Đề cho cảm ứng từ B, cường độ dòng điện I, chiều dài L, góc α và hỏi độ lớn lực từ, hoặc tìm B, I.",
+      "steps": [
+        "Xác định B (T), I (A), L (m), góc α giữa dây dẫn và vectơ cảm ứng từ.",
+        "Áp dụng F = B·I·L·sinα.",
+        "Với α = 90° thì F = BIL; α = 0° thì F = 0.",
+        "Chiều lực từ theo quy tắc bàn tay trái."
+      ],
+      "notes": [
+        "Đổi chiều dài về mét.",
+        "Góc α là góc giữa dây và đường sức từ, không phải giữa dây và mặt phẳng.",
+        "Dây song song đường sức từ thì không chịu lực từ.",
+        "Quy tắc bàn tay trái: đường sức xuyên lòng bàn tay, ngón giữa theo chiều dòng điện, ngón cái là chiều lực."
+      ],
+      "sample": {
+        "problem": "Dây dài 0,4 m có I = 5 A đặt trong từ trường B = 0,2 T, dây hợp với B góc 30°. Tính lực từ.",
+        "steps": [
+          "F = B·I·L·sinα = 0,2·5·0,4·0,5.",
+          "F = 0,2 N."
+        ],
+        "answer": "0,2 N"
+      }
     }
   ],
   "examples": [
@@ -247,6 +272,46 @@
         "2": "Lực không bằng 0 khi đổi chiều dòng điện.",
         "3": "Đổi chiều dòng điện không làm tăng độ lớn lực."
       }
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Dây dài 0,3 m, I = 4 A đặt vuông góc với đường sức từ B = 0,5 T. Lực từ là bao nhiêu N?",
+      "expr": "0.5*4*0.3",
+      "answer": "0,6",
+      "explain": "F = BIL = 0,5·4·0,3 = 0,6 N.",
+      "dang": "Tính lực từ lên đoạn dây dẫn mang dòng điện",
+      "id": "q12"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Dây dài 0,4 m, I = 5 A, B = 0,2 T, dây hợp với B góc 30°. Lực từ là bao nhiêu N?",
+      "expr": "0.2*5*0.4*0.5",
+      "answer": "0,2",
+      "explain": "F = 0,2·5·0,4·sin30° = 0,2 N.",
+      "dang": "Tính lực từ lên đoạn dây dẫn mang dòng điện",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lực từ lên đoạn dây dài 0,5 m, I = 2 A đặt vuông góc đường sức là 0,1 N. Cảm ứng từ là bao nhiêu T? (nhập số thập phân)",
+      "expr": "0.1",
+      "answer": "0,1",
+      "explain": "B = F/(IL) = 0,1/(2·0,5) = 0,1 T.",
+      "dang": "Tính lực từ lên đoạn dây dẫn mang dòng điện",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đoạn dây dài 20 cm, I = 10 A đặt song song với đường sức từ B = 0,5 T. Lực từ là bao nhiêu N?",
+      "expr": "0",
+      "answer": "0",
+      "explain": "α = 0° nên sinα = 0, F = 0.",
+      "dang": "Tính lực từ lên đoạn dây dẫn mang dòng điện",
+      "id": "q15"
     }
   ]
 }

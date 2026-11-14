@@ -33,6 +33,31 @@
     {
       "type": "text",
       "content": "Ở điều kiện tiêu chuẩn, một mol khí có thể tích 22,4·10⁻³ m³ (22,4 L), áp suất 1,013·10⁵ Pa và nhiệt độ 273 K."
+    },
+    {
+      "type": "method",
+      "title": "Bài toán dùng phương trình trạng thái khí lí tưởng",
+      "when": "Đề cho khí biến đổi cả p, V, T (không đẳng quá trình) và hỏi một trong các đại lượng.",
+      "steps": [
+        "Liệt kê trạng thái 1 (p₁, V₁, T₁) và trạng thái 2 (p₂, V₂, T₂), đổi T sang kelvin.",
+        "Viết p₁V₁/T₁ = p₂V₂/T₂.",
+        "Giải tìm đại lượng chưa biết.",
+        "Đối chiếu với trường hợp riêng: T không đổi (Boyle), p không đổi (Charles), V không đổi (p/T không đổi)."
+      ],
+      "notes": [
+        "Nhiệt độ luôn dùng kelvin.",
+        "Áp suất, thể tích ở hai vế cùng đơn vị.",
+        "Biến đổi đẳng tích: p₁/T₁ = p₂/T₂.",
+        "Khối lượng khí không đổi."
+      ],
+      "sample": {
+        "problem": "Khí có p₁ = 1 atm, V₁ = 12 L, T₁ = 300 K. Biến đổi đến p₂ = 2 atm, T₂ = 600 K. Tính V₂.",
+        "steps": [
+          "p₁V₁/T₁ = p₂V₂/T₂.",
+          "V₂ = p₁V₁T₂/(T₁p₂) = 1·12·600/(300·2) = 12 L."
+        ],
+        "answer": "12 L"
+      }
     }
   ],
   "examples": [
@@ -211,6 +236,46 @@
         "2": "Màu sắc bình không ảnh hưởng.",
         "3": "Thời gian không ảnh hưởng."
       }
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khí có p₁ = 1 atm, V₁ = 12 L, T₁ = 300 K, biến đổi đến p₂ = 2 atm, T₂ = 600 K. Thể tích V₂ là bao nhiêu L?",
+      "expr": "12*600/300/2",
+      "answer": "12",
+      "explain": "V₂ = 1·12·600/(300·2) = 12 L.",
+      "dang": "Bài toán dùng phương trình trạng thái khí lí tưởng",
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bình kín chứa khí ở 300 K, áp suất 1 atm. Đun nóng đến 600 K thì áp suất là bao nhiêu atm?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Đẳng tích: p₂ = p₁T₂/T₁ = 2 atm.",
+      "dang": "Bài toán dùng phương trình trạng thái khí lí tưởng",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khí ở 27 °C, 2 atm, 5 L chuyển sang 127 °C, 4 atm. Thể tích mới là bao nhiêu L? (nhập phân số)",
+      "expr": "2*5*400/300/4",
+      "answer": "10/3",
+      "explain": "V₂ = 2·5·400/(300·4) = 4000/1200 = 10/3 L.",
+      "dang": "Bài toán dùng phương trình trạng thái khí lí tưởng",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khí ở 27 °C, 1 atm. Nén đến thể tích bằng một nửa và đun lên 327 °C. Áp suất mới là bao nhiêu atm?",
+      "expr": "2*600/300",
+      "answer": "4",
+      "explain": "p₂ = p₁(V₁/V₂)(T₂/T₁) = 1·2·600/300 = 4 atm.",
+      "dang": "Bài toán dùng phương trình trạng thái khí lí tưởng",
+      "id": "q14"
     }
   ]
 }

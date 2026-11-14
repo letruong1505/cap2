@@ -37,6 +37,31 @@
     {
       "type": "text",
       "content": "Khoảng cách từ điểm M₀(x₀; y₀; z₀) đến mặt phẳng (P): Ax + By + Cz + D = 0 là d(M₀, (P)) = |Ax₀ + By₀ + Cz₀ + D| / √(A² + B² + C²)."
+    },
+    {
+      "type": "method",
+      "title": "Viết phương trình mặt phẳng và tính khoảng cách",
+      "when": "Đề cho điểm, vectơ pháp tuyến, hai vectơ chỉ phương hoặc ba điểm và yêu cầu viết phương trình mặt phẳng; hoặc tính khoảng cách điểm đến mặt phẳng.",
+      "steps": [
+        "Tìm vectơ pháp tuyến n: cho sẵn, hoặc n = [u, v] (tích có hướng) của hai vectơ không cùng phương nằm trong mặt phẳng.",
+        "Viết phương trình dạng a(x − x₀) + b(y − y₀) + c(z − z₀) = 0 với (x₀; y₀; z₀) là điểm thuộc mặt phẳng.",
+        "Khai triển về ax + by + cz + d = 0.",
+        "Khoảng cách từ M(x₁; y₁; z₁) đến mặt phẳng: d = |ax₁ + by₁ + cz₁ + d|/√(a² + b² + c²)."
+      ],
+      "notes": [
+        "Vectơ pháp tuyến vuông góc với mọi vectơ nằm trong mặt phẳng.",
+        "Có thể nhân n với số khác 0 mà phương trình không đổi.",
+        "Thế tọa độ ba điểm vào phương trình để kiểm tra.",
+        "Mặt phẳng song song với (P) có cùng vectơ pháp tuyến (chỉ khác hệ số tự do)."
+      ],
+      "sample": {
+        "problem": "Viết phương trình mặt phẳng qua A(1; 0; 0) có vectơ pháp tuyến n = (2; −1; 3).",
+        "steps": [
+          "2(x − 1) − 1(y − 0) + 3(z − 0) = 0.",
+          "Khai triển: 2x − y + 3z − 2 = 0."
+        ],
+        "answer": "2x − y + 3z − 2 = 0"
+      }
     }
   ],
   "examples": [
@@ -473,6 +498,26 @@
       }
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mặt phẳng qua A(1; 0; 0) có vectơ pháp tuyến (2; −1; 3) có dạng 2x − y + 3z + d = 0. Giá trị d là?",
+      "expr": "-2",
+      "answer": "-2",
+      "explain": "Thay A: 2 + d = 0 ⇒ d = −2.",
+      "dang": "Viết phương trình mặt phẳng và tính khoảng cách",
+      "id": "q26"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khoảng cách từ M(1; 2; 3) đến mặt phẳng 2x − y + 2z − 3 = 0 là?",
+      "expr": "(2-2+6-3)/3",
+      "answer": "1",
+      "explain": "d = |2 − 2 + 6 − 3|/√(4 + 1 + 4) = 3/3 = 1.",
+      "dang": "Viết phương trình mặt phẳng và tính khoảng cách",
+      "id": "q27"
+    },
+    {
       "id": "q25",
       "level": "Vận dụng",
       "type": "mcq",
@@ -493,6 +538,26 @@
         "3": "Chóp đều cần đáy là đa giác đều (hình vuông ở đây); đáy hình chữ nhật không cho chóp đều và hai mặt bên kề nhau vẫn không vuông góc."
       },
       "bookPage": 39
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mặt phẳng chứa hai vectơ u = (1; 0; 1), v = (0; 1; 1) có vectơ pháp tuyến n = [u, v] = (a; b; c). Giá trị a + b + c là?",
+      "expr": "-1-1+1",
+      "answer": "-1",
+      "explain": "n = (0·1 − 1·1; 1·0 − 1·1; 1·1 − 0·0) = (−1; −1; 1), tổng −1.",
+      "dang": "Viết phương trình mặt phẳng và tính khoảng cách",
+      "id": "q28"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khoảng cách giữa hai mặt phẳng song song x + 2y + 2z − 1 = 0 và x + 2y + 2z + 5 = 0 là?",
+      "expr": "6/3",
+      "answer": "2",
+      "explain": "Lấy điểm trên mặt phẳng thứ nhất, ví dụ (1; 0; 0); khoảng cách đến mặt phẳng thứ hai = |1 + 5|/3 = 2.",
+      "dang": "Viết phương trình mặt phẳng và tính khoảng cách",
+      "id": "q29"
     }
   ]
 }

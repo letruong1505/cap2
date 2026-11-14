@@ -28,6 +28,31 @@
     {
       "type": "text",
       "content": "Trong tài chính, độ lệch chuẩn của lợi nhuận đo độ rủi ro của phương án đầu tư. Chỉ nên so sánh phương sai, độ lệch chuẩn khi các số trung bình gần nhau; nếu số trung bình khác nhau rất nhiều, dùng hệ số biến thiên CV = s/x̄."
+    },
+    {
+      "type": "method",
+      "title": "Tính phương sai và độ lệch chuẩn của mẫu số liệu ghép nhóm",
+      "when": "Đề cho bảng tần số ghép nhóm và yêu cầu tính số trung bình, phương sai, độ lệch chuẩn hoặc so sánh độ phân tán.",
+      "steps": [
+        "Lập giá trị đại diện x_i của mỗi nhóm (trung bình hai đầu mút) và tần số m_i.",
+        "Tính số trung bình x̄ = (Σ m_i x_i)/n với n = Σ m_i.",
+        "Tính phương sai s² = (Σ m_i (x_i − x̄)²)/n (hoặc s² = Σ m_i x_i²/n − x̄²).",
+        "Độ lệch chuẩn s = √s²; so sánh các mẫu có số trung bình gần nhau."
+      ],
+      "notes": [
+        "Dùng giá trị đại diện, không dùng đầu mút.",
+        "Phương sai là số không âm; s² bằng 0 khi mọi giá trị bằng nhau.",
+        "Độ lệch chuẩn cùng đơn vị với số liệu, phương sai thì đơn vị bình phương.",
+        "Chỉ so sánh độ phân tán khi số trung bình gần nhau."
+      ],
+      "sample": {
+        "problem": "Nhóm [0; 10), [10; 20), [20; 30) có tần số 5, 10, 5. Tính phương sai.",
+        "steps": [
+          "Đại diện 5, 15, 25; n = 20; x̄ = (25 + 150 + 125)/20 = 15.",
+          "s² = (5·100 + 10·0 + 5·100)/20 = 50."
+        ],
+        "answer": "50"
+      }
     }
   ],
   "examples": [
@@ -263,6 +288,16 @@
       "explain": "x̄_A = 2117/200 = 10,585 (giây)."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nhóm [0; 10), [10; 20), [20; 30) có tần số 5, 10, 5. Số trung bình là?",
+      "expr": "(5*5+10*15+5*25)/20",
+      "answer": "15",
+      "explain": "x̄ = (25 + 150 + 125)/20 = 15.",
+      "dang": "Tính phương sai và độ lệch chuẩn của mẫu số liệu ghép nhóm",
+      "id": "q22"
+    },
+    {
       "id": "q17",
       "level": "Vận dụng",
       "type": "fill",
@@ -339,6 +374,36 @@
         "2": "Cùng đơn vị tiền chưa đủ điều kiện để so sánh.",
         "3": "Phương sai không luôn bằng nhau."
       }
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với mẫu trên, phương sai s² bằng?",
+      "expr": "(5*100+0+5*100)/20",
+      "answer": "50",
+      "explain": "s² = (5·10² + 10·0 + 5·10²)/20 = 50.",
+      "dang": "Tính phương sai và độ lệch chuẩn của mẫu số liệu ghép nhóm",
+      "id": "q23"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mẫu ghép nhóm có phương sai 36. Độ lệch chuẩn là?",
+      "expr": "6",
+      "answer": "6",
+      "explain": "s = √36 = 6.",
+      "dang": "Tính phương sai và độ lệch chuẩn của mẫu số liệu ghép nhóm",
+      "id": "q24"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mẫu có số liệu x̄ = 10 và Σ m_i x_i² / n = 116. Phương sai là?",
+      "expr": "116-100",
+      "answer": "16",
+      "explain": "s² = Σ m_i x_i²/n − x̄² = 116 − 100 = 16.",
+      "dang": "Tính phương sai và độ lệch chuẩn của mẫu số liệu ghép nhóm",
+      "id": "q25"
     }
   ]
 }

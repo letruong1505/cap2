@@ -34,6 +34,31 @@
       "type": "figure",
       "figure": "figures/c2-7-hai-duong-cheo.svg",
       "caption": "Hai đường thẳng chéo nhau: không song song, không cắt nhau (ở hai mức khác nhau)."
+    },
+    {
+      "type": "method",
+      "title": "Điểm thuộc đường thẳng và giao điểm đường thẳng với mặt phẳng",
+      "when": "Đề cho đường thẳng d dạng tham số hoặc chính tắc, hỏi điểm thuộc d, vectơ chỉ phương, giao điểm với mặt phẳng.",
+      "steps": [
+        "Viết d dạng tham số: x = x₀ + at, y = y₀ + bt, z = z₀ + ct với (a; b; c) là vectơ chỉ phương.",
+        "Điểm thuộc d: thay giá trị t cụ thể.",
+        "Giao điểm với mặt phẳng (P): thế x, y, z theo t vào phương trình (P), giải ra t.",
+        "Thay t vào tham số để có tọa độ giao điểm."
+      ],
+      "notes": [
+        "Dạng chính tắc (x − x₀)/a = (y − y₀)/b = (z − z₀)/c cho cùng ba biểu thức bằng t.",
+        "Nếu phương trình theo t vô nghiệm thì d song song (P); nghiệm với mọi t thì d nằm trong (P).",
+        "Vectơ chỉ phương có thể nhân với số khác 0.",
+        "Kiểm tra tọa độ giao điểm thỏa cả d và (P)."
+      ],
+      "sample": {
+        "problem": "Tìm giao điểm của d: x = 1 + t, y = 2t, z = −t và (P): x + y + z − 3 = 0.",
+        "steps": [
+          "Thế: (1 + t) + 2t + (−t) − 3 = 0 ⇒ 2t − 2 = 0 ⇒ t = 1.",
+          "Giao điểm: (2; 2; −1)."
+        ],
+        "answer": "(2; 2; −1)"
+      }
     }
   ],
   "examples": [
@@ -324,6 +349,26 @@
       }
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "d: (x − 1)/2 = (y + 1)/1 = (z − 3)/(−2). Điểm ứng với t = 2 có tổng ba tọa độ bằng?",
+      "expr": "5+1-1",
+      "answer": "5",
+      "explain": "x = 1 + 4 = 5, y = −1 + 2 = 1, z = 3 − 4 = −1. Tổng 5.",
+      "dang": "Điểm thuộc đường thẳng và giao điểm đường thẳng với mặt phẳng",
+      "id": "q28"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giao điểm của d: x = 1 + t, y = 2t, z = −t với (P): x + y + z − 3 = 0 ứng với t = ?",
+      "expr": "1",
+      "answer": "1",
+      "explain": "1 + t + 2t − t − 3 = 0 ⇒ 2t = 2 ⇒ t = 1.",
+      "dang": "Điểm thuộc đường thẳng và giao điểm đường thẳng với mặt phẳng",
+      "id": "q29"
+    },
+    {
       "id": "q16",
       "level": "Vận dụng",
       "type": "mcq",
@@ -555,6 +600,26 @@
       },
       "figure": "figures/c5-5-32-cay-cot.svg",
       "bookPage": 49
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giao điểm của d: x = 1 + t, y = 2t, z = −t với (P): x + y + z − 3 = 0 có tổng ba tọa độ bằng?",
+      "expr": "2+2-1",
+      "answer": "3",
+      "explain": "t = 1 ⇒ (2; 2; −1), tổng 3.",
+      "dang": "Điểm thuộc đường thẳng và giao điểm đường thẳng với mặt phẳng",
+      "id": "q30"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đường thẳng d: x = t, y = 1 + t, z = 2 − t cắt mặt phẳng z = 0 tại điểm có hoành độ là?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "z = 2 − t = 0 ⇒ t = 2 ⇒ x = 2.",
+      "dang": "Điểm thuộc đường thẳng và giao điểm đường thẳng với mặt phẳng",
+      "id": "q31"
     }
   ]
 }

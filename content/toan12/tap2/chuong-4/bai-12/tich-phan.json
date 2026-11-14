@@ -33,6 +33,31 @@
       "type": "figure",
       "figure": "figures/tn-toan12-b12-tich-phan.svg",
       "caption": "Tích phân và diện tích hình thang cong"
+    },
+    {
+      "type": "method",
+      "title": "Tính tích phân bằng nguyên hàm và tính chất",
+      "when": "Đề cho tích phân xác định của hàm đa thức, hoặc cho các tích phân đã biết và yêu cầu suy ra tích phân khác.",
+      "steps": [
+        "Tìm một nguyên hàm F(x) của f(x).",
+        "Áp dụng công thức Newton–Leibniz: ∫ₐᵇ f(x)dx = F(b) − F(a).",
+        "Với tích phân cho trước: dùng tính chất cộng đoạn, tuyến tính (hằng số ra ngoài, tổng bằng tổng).",
+        "Tính cẩn thận dấu và kiểm tra bằng ý nghĩa hình học (diện tích) nếu f không âm."
+      ],
+      "notes": [
+        "Không cần cộng C khi tính tích phân xác định.",
+        "Đảo cận thì đổi dấu: ∫ₐᵇ = −∫ᵇₐ.",
+        "Tính chất cộng đoạn chỉ áp dụng khi cùng hàm f.",
+        "Thay cận trên trừ cận dưới, đúng thứ tự."
+      ],
+      "sample": {
+        "problem": "Tính ∫₀² (3x² + 2x) dx.",
+        "steps": [
+          "F(x) = x³ + x².",
+          "F(2) − F(0) = (8 + 4) − 0 = 12."
+        ],
+        "answer": "12"
+      }
     }
   ],
   "examples": [
@@ -101,6 +126,16 @@
     }
   ],
   "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính ∫₀² (3x² + 2x) dx.",
+      "expr": "8+4",
+      "answer": "12",
+      "explain": "F(x) = x³ + x²; F(2) − F(0) = 12.",
+      "dang": "Tính tích phân bằng nguyên hàm và tính chất",
+      "id": "q33"
+    },
     {
       "id": "q01",
       "level": "Hiểu",
@@ -438,6 +473,16 @@
       "explain": "2x + 1 > 0 trên [1; 2] nên tích phân bằng 4."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính ∫₀³ (2x + 1) dx.",
+      "expr": "9+3",
+      "answer": "12",
+      "explain": "F(x) = x² + x; F(3) − F(0) = 12.",
+      "dang": "Tính tích phân bằng nguyên hàm và tính chất",
+      "id": "q34"
+    },
+    {
       "id": "q27",
       "level": "Vận dụng",
       "type": "fill",
@@ -501,6 +546,26 @@
       "expr": "-20*0.5*0.5+20*0.5",
       "answer": "5",
       "explain": "Ô tô dừng khi t = 0,5 s; quãng đường = ∫_0^{0,5}(−40t + 20)dt = 5 (m)."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Biết ∫₁² f(x)dx = 3 và ∫₂⁵ f(x)dx = 4. Giá trị ∫₁⁵ f(x)dx là?",
+      "expr": "3+4",
+      "answer": "7",
+      "explain": "Tính chất cộng đoạn: 3 + 4 = 7.",
+      "dang": "Tính tích phân bằng nguyên hàm và tính chất",
+      "id": "q35"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Biết ∫₀¹ f(x)dx = 2. Giá trị ∫₀¹ (3f(x) + 2) dx là?",
+      "expr": "3*2+2",
+      "answer": "8",
+      "explain": "3·2 + 2·(1 − 0) = 8.",
+      "dang": "Tính tích phân bằng nguyên hàm và tính chất",
+      "id": "q36"
     }
   ]
 }

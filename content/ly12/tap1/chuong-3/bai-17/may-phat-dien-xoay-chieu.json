@@ -38,6 +38,31 @@
       "type": "figure",
       "figure": "figures/c-ly12-b17-may-phat.svg",
       "caption": "Khung dây quay trong từ trường đều: phần ứng sinh suất điện động xoay chiều."
+    },
+    {
+      "type": "method",
+      "title": "Tính suất điện động cực đại, chu kì, tần số của máy phát điện",
+      "when": "Đề cho N, B, S, tốc độ góc ω (hoặc tần số quay) và hỏi E₀, chu kì T, tần số f.",
+      "steps": [
+        "Đổi đơn vị: B (T), S (m²), ω (rad/s).",
+        "E₀ = N·B·S·ω.",
+        "Chu kì T = 2π/ω; tần số f = ω/(2π) = 1/T.",
+        "Nếu cho vòng/phút: ω = 2π·n/60."
+      ],
+      "notes": [
+        "ω tính bằng rad/s, không phải vòng/phút.",
+        "Tần số dòng điện xoay chiều chuẩn là 50 Hz.",
+        "T và f nghịch đảo nhau.",
+        "Biểu thức e = E₀cos(ωt + φ₀)."
+      ],
+      "sample": {
+        "problem": "Khung 100 vòng, B = 0,2 T, S = 0,03 m², ω = 100 rad/s. Tính E₀.",
+        "steps": [
+          "E₀ = N·B·S·ω = 100·0,2·0,03·100.",
+          "E₀ = 60 V."
+        ],
+        "answer": "60 V"
+      }
     }
   ],
   "examples": [],
@@ -183,6 +208,26 @@
       }
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khung 100 vòng, B = 0,2 T, S = 0,03 m² quay với ω = 100 rad/s. E₀ là bao nhiêu V?",
+      "expr": "100*0.2*0.03*100",
+      "answer": "60",
+      "explain": "E₀ = NBSω = 60 V.",
+      "dang": "Tính suất điện động cực đại, chu kì, tần số của máy phát điện",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Dòng điện xoay chiều có ω = 100π rad/s. Tần số là bao nhiêu Hz?",
+      "expr": "100/2",
+      "answer": "50",
+      "explain": "f = ω/(2π) = 100π/(2π) = 50 Hz.",
+      "dang": "Tính suất điện động cực đại, chu kì, tần số của máy phát điện",
+      "id": "q11"
+    },
+    {
       "id": "q09",
       "level": "Vận dụng",
       "type": "mcq",
@@ -202,6 +247,26 @@
         "3": "Góc 90° không dùng cho máy ba pha."
       },
       "figure": "figures/ly12-b17-ba-pha.svg"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dòng điện xoay chiều có tần số 50 Hz. Chu kì là bao nhiêu s? (nhập số thập phân)",
+      "expr": "0.02",
+      "answer": "0,02",
+      "explain": "T = 1/f = 1/50 = 0,02 s.",
+      "dang": "Tính suất điện động cực đại, chu kì, tần số của máy phát điện",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khung dây quay 3 000 vòng/phút. Tần số quay là bao nhiêu Hz?",
+      "expr": "3000/60",
+      "answer": "50",
+      "explain": "f = 3000/60 = 50 Hz.",
+      "dang": "Tính suất điện động cực đại, chu kì, tần số của máy phát điện",
+      "id": "q13"
     }
   ]
 }

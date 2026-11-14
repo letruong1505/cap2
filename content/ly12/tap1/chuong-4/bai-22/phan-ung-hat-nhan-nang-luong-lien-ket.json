@@ -41,6 +41,31 @@
     {
       "type": "text",
       "content": "Phản ứng tổng hợp hạt nhân là phản ứng trong đó hai hay nhiều hạt nhân nhẹ hợp lại thành hạt nhân nặng hơn. Phản ứng này cần nhiệt độ rất cao (khoảng 10⁷ K trở lên) để thắng lực đẩy tĩnh điện, nên còn gọi là phản ứng nhiệt hạch."
+    },
+    {
+      "type": "method",
+      "title": "Viết phương trình phản ứng hạt nhân và tính năng lượng liên kết",
+      "when": "Đề cho phản ứng hạt nhân thiếu một hạt, hoặc cho độ hụt khối và hỏi năng lượng liên kết.",
+      "steps": [
+        "Viết phản ứng dưới dạng tổng ᴬ_Z trước = tổng ᴬ_Z sau.",
+        "Bảo toàn số khối: tổng A trước = tổng A sau; bảo toàn điện tích: tổng Z trước = tổng Z sau.",
+        "Giải tìm A, Z của hạt chưa biết, đối chiếu bảng tuần hoàn để gọi tên hạt nhân.",
+        "Năng lượng liên kết E_lk = Δm·c²; với Δm tính bằng u thì E_lk = Δm·931,5 MeV."
+      ],
+      "notes": [
+        "Hạt α là ⁴₂He; β⁻ là ⁰₋₁e; neutron là ¹₀n; proton là ¹₁p.",
+        "Bảo toàn cả số khối và điện tích, không bảo toàn khối lượng.",
+        "Độ hụt khối luôn dương cho hạt nhân bền.",
+        "1 u·c² = 931,5 MeV."
+      ],
+      "sample": {
+        "problem": "²³⁸₉₂U → α + ᴬ_Z Th. Tìm A và Z.",
+        "steps": [
+          "Bảo toàn số khối: 238 = 4 + A ⇒ A = 234.",
+          "Bảo toàn điện tích: 92 = 2 + Z ⇒ Z = 90."
+        ],
+        "answer": "A = 234, Z = 90"
+      }
     }
   ],
   "examples": [
@@ -282,6 +307,26 @@
       }
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phân rã α: ²³⁸₉₂U → ⁴₂He + ᴬ_Z Th. Số khối A của Th là?",
+      "expr": "238-4",
+      "answer": "234",
+      "explain": "238 = 4 + A ⇒ A = 234.",
+      "dang": "Viết phương trình phản ứng hạt nhân và tính năng lượng liên kết",
+      "id": "q16"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phân rã α: ²³⁸₉₂U → ⁴₂He + ᴬ_Z Th. Số proton Z của Th là?",
+      "expr": "92-2",
+      "answer": "90",
+      "explain": "92 = 2 + Z ⇒ Z = 90.",
+      "dang": "Viết phương trình phản ứng hạt nhân và tính năng lượng liên kết",
+      "id": "q17"
+    },
+    {
       "id": "q15",
       "level": "Vận dụng",
       "type": "mcq",
@@ -300,6 +345,26 @@
         "2": "Không có hạt alpha được phát ra.",
         "3": "Không có electron hoặc positron được phát ra."
       }
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hạt nhân có độ hụt khối 0,03 u. Năng lượng liên kết là bao nhiêu MeV? (1 u·c² = 931,5 MeV; nhập số thập phân)",
+      "expr": "0.03*931.5",
+      "answer": "27,945",
+      "explain": "E_lk = 0,03·931,5 = 27,945 MeV.",
+      "dang": "Viết phương trình phản ứng hạt nhân và tính năng lượng liên kết",
+      "id": "q18"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phản ứng: ¹₁H + ᴬ_Z X → ⁴₂He (X là hạt nhân đồng vị hiđrô nặng). Biết Z = 1. Số khối A là?",
+      "expr": "4-1",
+      "answer": "3",
+      "explain": "Bảo toàn số khối: 1 + A = 4 ⇒ A = 3 (hạt nhân ³₁H).",
+      "dang": "Viết phương trình phản ứng hạt nhân và tính năng lượng liên kết",
+      "id": "q19"
     }
   ]
 }

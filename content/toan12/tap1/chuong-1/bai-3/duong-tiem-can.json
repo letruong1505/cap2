@@ -38,6 +38,31 @@
     {
       "type": "text",
       "content": "Với hàm phân thức, để tìm tiệm cận đứng ta xét các giá trị làm mẫu số bằng 0 (và tử số khác 0); để tìm tiệm cận xiên ta chia tử cho mẫu, viết f(x) = (đa thức bậc nhất) + (phần dư)/(mẫu), rồi xét phần dư khi x → ±∞."
+    },
+    {
+      "type": "method",
+      "title": "Tìm tiệm cận của đồ thị hàm số",
+      "when": "Đề cho hàm phân thức và hỏi tiệm cận đứng, tiệm cận ngang, tiệm cận xiên hoặc số tiệm cận.",
+      "steps": [
+        "Tìm tập xác định và các giá trị làm mẫu bằng 0 mà tử khác 0: đó là tiệm cận đứng x = x₀.",
+        "Tính lim khi x → ±∞ của y; nếu bằng số hữu hạn b thì y = b là tiệm cận ngang.",
+        "Hàm y = (ax + b)/(cx + d), c ≠ 0: tiệm cận ngang y = a/c, tiệm cận đứng x = −d/c.",
+        "Hàm có bậc tử lớn hơn bậc mẫu đúng 1: chia đa thức để tìm tiệm cận xiên."
+      ],
+      "notes": [
+        "Nếu x₀ làm cả tử và mẫu bằng 0 thì chưa chắc là tiệm cận đứng; phải rút gọn trước.",
+        "Tiệm cận ngang xét cả hai phía +∞ và −∞.",
+        "Đồ thị hàm đa thức không có tiệm cận.",
+        "Giao điểm hai tiệm cận của hàm bậc nhất/bậc nhất là tâm đối xứng."
+      ],
+      "sample": {
+        "problem": "Tìm tiệm cận của y = (2x + 1)/(x − 1).",
+        "steps": [
+          "Mẫu bằng 0 khi x = 1, tử tại x = 1 bằng 3 ≠ 0: tiệm cận đứng x = 1.",
+          "lim y khi x → ±∞ bằng 2/1 = 2: tiệm cận ngang y = 2."
+        ],
+        "answer": "x = 1 và y = 2"
+      }
     }
   ],
   "examples": [
@@ -195,6 +220,36 @@
       "explain": "Mẫu số x − 4 = 0 khi x = 4, tử số 2·4 + 1 = 9 khác 0 nên x = 4 là tiệm cận đứng."
     },
     {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tiệm cận ngang của đồ thị y = (2x + 1)/(x − 1) là y = ? (nhập giá trị)",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Hệ số x trên tử chia hệ số x ở mẫu: 2/1 = 2.",
+      "dang": "Tìm tiệm cận của đồ thị hàm số",
+      "id": "q11"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tiệm cận đứng của đồ thị y = (3x − 1)/(x + 2) là x = ? (nhập giá trị)",
+      "expr": "-2",
+      "answer": "-2",
+      "explain": "Mẫu x + 2 = 0 ⇔ x = −2; tại đó tử = −7 ≠ 0.",
+      "dang": "Tìm tiệm cận của đồ thị hàm số",
+      "id": "q12"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đồ thị y = (2x + 1)/(x − 1) có tâm đối xứng I(a; b). Giá trị a + b là?",
+      "expr": "1+2",
+      "answer": "3",
+      "explain": "Tâm đối xứng là giao hai tiệm cận: I(1; 2), a + b = 3.",
+      "dang": "Tìm tiệm cận của đồ thị hàm số",
+      "id": "q13"
+    },
+    {
       "id": "q10",
       "level": "Vận dụng",
       "type": "mcq",
@@ -215,6 +270,16 @@
       },
       "figure": "figures/c1-3-hinh-1-18.svg",
       "bookPage": 20
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đồ thị y = (x² − 1)/(x² − 3x + 2) có bao nhiêu tiệm cận đứng?",
+      "expr": "1",
+      "answer": "1",
+      "explain": "Mẫu = (x − 1)(x − 2); tử = (x − 1)(x + 1). Rút gọn: (x + 1)/(x − 2). Chỉ x = 2 là tiệm cận đứng (x = 1 bị khử).",
+      "dang": "Tìm tiệm cận của đồ thị hàm số",
+      "id": "q14"
     }
   ]
 }

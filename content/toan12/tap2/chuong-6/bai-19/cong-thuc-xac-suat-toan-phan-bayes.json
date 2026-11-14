@@ -25,6 +25,31 @@
     {
       "type": "text",
       "content": "Công thức Bayes: P(A | B) = P(A) · P(B | A) / P(B) = P(A) · P(B | A) / [P(A) · P(B | A) + P(Ā) · P(B | Ā)]."
+    },
+    {
+      "type": "method",
+      "title": "Xác suất toàn phần và công thức Bayes",
+      "when": "Đề có một biến cố E xảy ra qua nhiều nguyên nhân (máy A, máy B; hộp 1, hộp 2) và hỏi P(E), hoặc hỏi nguyên nhân nào gây ra E biết E đã xảy ra.",
+      "steps": [
+        "Đặt các biến cố nguyên nhân A₁, A₂,... (đôi một xung khắc, tổng xác suất bằng 1) và biến cố kết quả E.",
+        "Xác suất toàn phần: P(E) = P(A₁)P(E|A₁) + P(A₂)P(E|A₂) + ...",
+        "Bayes: P(A₁|E) = P(A₁)P(E|A₁)/P(E).",
+        "Thay số, rút gọn phân số."
+      ],
+      "notes": [
+        "Các nguyên nhân phải bao quát hết khả năng, tổng xác suất bằng 1.",
+        "Mẫu số của Bayes chính là xác suất toàn phần P(E).",
+        "Đừng nhầm P(E|A₁) (cho trước) với P(A₁|E) (cần tìm).",
+        "Có thể vẽ sơ đồ cây để không bỏ sót nhánh."
+      ],
+      "sample": {
+        "problem": "Máy A làm 60% sản phẩm với 2% lỗi, máy B làm 40% với 5% lỗi. Tính xác suất một sản phẩm lỗi.",
+        "steps": [
+          "P(lỗi) = 0,6·0,02 + 0,4·0,05.",
+          "= 0,012 + 0,02 = 0,032."
+        ],
+        "answer": "0,032"
+      }
     }
   ],
   "examples": [
@@ -139,6 +164,16 @@
       "explain": "P(Ā) = 1 − P(A) = 0,995."
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Máy A làm 60% sản phẩm với 2% lỗi, máy B làm 40% với 5% lỗi. Xác suất một sản phẩm bất kì bị lỗi là? (nhập số thập phân)",
+      "expr": "0.6*0.02+0.4*0.05",
+      "answer": "0,032",
+      "explain": "0,6·0,02 + 0,4·0,05 = 0,012 + 0,02 = 0,032.",
+      "dang": "Xác suất toàn phần và công thức Bayes",
+      "id": "q32"
+    },
+    {
       "id": "q30",
       "level": "Vận dụng",
       "type": "mcq",
@@ -166,6 +201,36 @@
       "expr": "(0.4*1+0.6*0.5)*(0.4*1+0.6*0.5)",
       "answer": "0.49",
       "explain": "P(M) = 0,4 · 1 + 0,6 · 0,5 = 0,7 và P(E) = 0,7 · 0,7 = 0,49."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với dữ liệu trên, biết sản phẩm lỗi, xác suất sản phẩm đó do máy A làm là? (nhập phân số tối giản)",
+      "expr": "12/32",
+      "answer": "3/8",
+      "explain": "P(A|lỗi) = 0,012/0,032 = 12/32 = 3/8.",
+      "dang": "Xác suất toàn phần và công thức Bayes",
+      "id": "q33"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hộp 1 có 3 bi đỏ 2 xanh; hộp 2 có 1 bi đỏ 4 xanh. Chọn ngẫu nhiên một hộp rồi lấy một bi. Xác suất bi đỏ là? (nhập phân số)",
+      "expr": "(3/5+1/5)/2",
+      "answer": "2/5",
+      "explain": "P = (1/2)(3/5) + (1/2)(1/5) = 4/10 = 2/5.",
+      "dang": "Xác suất toàn phần và công thức Bayes",
+      "id": "q34"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với hai hộp ở trên, biết bi lấy ra màu đỏ, xác suất bi đó từ hộp 1 là? (nhập phân số)",
+      "expr": "3/4",
+      "answer": "3/4",
+      "explain": "P = (1/2·3/5)/(2/5) = (3/10)/(4/10) = 3/4.",
+      "dang": "Xác suất toàn phần và công thức Bayes",
+      "id": "q35"
     }
   ]
 }

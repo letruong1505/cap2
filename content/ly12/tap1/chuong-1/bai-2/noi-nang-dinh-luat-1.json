@@ -33,6 +33,31 @@
     {
       "type": "text",
       "content": "Định luật I của nhiệt động lực học là sự vận dụng định luật bảo toàn năng lượng vào các quá trình thay đổi nội năng. Nhiệt lượng là số đo phần năng lượng được truyền từ vật này sang vật khác trong quá trình truyền nhiệt."
+    },
+    {
+      "type": "method",
+      "title": "Áp dụng định luật I nhiệt động lực học",
+      "when": "Đề cho nhiệt lượng nhận hoặc tỏa, công nhận hoặc sinh và hỏi độ biến thiên nội năng, hoặc ngược lại.",
+      "steps": [
+        "Xác định dấu của Q: vật nhận nhiệt thì Q > 0, tỏa nhiệt thì Q < 0.",
+        "Xác định dấu của A: vật nhận công thì A > 0, sinh công thì A < 0.",
+        "Áp dụng ΔU = A + Q.",
+        "Kết luận nội năng tăng (ΔU > 0) hay giảm (ΔU < 0)."
+      ],
+      "notes": [
+        "Chú ý dấu: khí sinh công cho môi trường thì A âm.",
+        "Đơn vị đều là jun (J).",
+        "Quá trình đẳng tích: A = 0 nên ΔU = Q.",
+        "Quá trình đoạn nhiệt: Q = 0 nên ΔU = A."
+      ],
+      "sample": {
+        "problem": "Khí nhận nhiệt 200 J và sinh công 50 J. Tính ΔU.",
+        "steps": [
+          "Q = +200 J; A = −50 J.",
+          "ΔU = A + Q = −50 + 200 = 150 J."
+        ],
+        "answer": "150 J"
+      }
     }
   ],
   "examples": [
@@ -254,6 +279,46 @@
         "2": "Nhiệt độ không đổi nhưng nội năng vẫn tăng.",
         "3": "Nội năng không bằng 0."
       }
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khí nhận nhiệt 200 J và sinh công 50 J. Độ biến thiên nội năng là bao nhiêu J?",
+      "expr": "200-50",
+      "answer": "150",
+      "explain": "Q = 200, A = −50: ΔU = 150 J.",
+      "dang": "Áp dụng định luật I nhiệt động lực học",
+      "id": "q12"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khí được nén, nhận công 120 J và tỏa nhiệt 30 J. ΔU là bao nhiêu J?",
+      "expr": "120-30",
+      "answer": "90",
+      "explain": "A = 120, Q = −30: ΔU = 90 J.",
+      "dang": "Áp dụng định luật I nhiệt động lực học",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khí trong bình kín đẳng tích nhận nhiệt 80 J. Nội năng tăng bao nhiêu J?",
+      "expr": "80",
+      "answer": "80",
+      "explain": "Đẳng tích: A = 0 nên ΔU = Q = 80 J.",
+      "dang": "Áp dụng định luật I nhiệt động lực học",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một khối khí dãn đoạn nhiệt và sinh công 60 J. Độ biến thiên nội năng là bao nhiêu J?",
+      "expr": "-60",
+      "answer": "-60",
+      "explain": "Đoạn nhiệt Q = 0, sinh công A = −60 nên ΔU = −60 J (nội năng giảm).",
+      "dang": "Áp dụng định luật I nhiệt động lực học",
+      "id": "q15"
     }
   ]
 }

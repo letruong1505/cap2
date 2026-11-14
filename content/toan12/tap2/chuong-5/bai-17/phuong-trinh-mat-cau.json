@@ -25,6 +25,31 @@
     {
       "type": "text",
       "content": "Điểm M nằm trong mặt cầu khi IM < R, nằm ngoài mặt cầu khi IM > R, thuộc mặt cầu khi IM = R."
+    },
+    {
+      "type": "method",
+      "title": "Tìm tâm, bán kính mặt cầu và viết phương trình mặt cầu",
+      "when": "Đề cho phương trình mặt cầu dạng khai triển, hoặc cho tâm và điều kiện (qua điểm, tiếp xúc mặt phẳng) và yêu cầu viết phương trình.",
+      "steps": [
+        "Dạng x² + y² + z² − 2ax − 2by − 2cz + d = 0: tâm I(a; b; c), R = √(a² + b² + c² − d).",
+        "Cho tâm I và điểm A thuộc mặt cầu: R = IA.",
+        "Mặt cầu tâm I tiếp xúc mặt phẳng (P): R = d(I, (P)).",
+        "Viết (x − a)² + (y − b)² + (z − c)² = R²."
+      ],
+      "notes": [
+        "Hệ số của x là −2a, nên a bằng nửa hệ số đổi dấu.",
+        "Phải kiểm tra a² + b² + c² − d > 0 mới là mặt cầu.",
+        "R² chứ không phải R trong vế phải của phương trình.",
+        "Tiếp xúc nghĩa là khoảng cách từ tâm đến mặt phẳng bằng R."
+      ],
+      "sample": {
+        "problem": "Tìm bán kính mặt cầu x² + y² + z² − 2x + 4y − 6z − 11 = 0.",
+        "steps": [
+          "−2a = −2 ⇒ a = 1; −2b = 4 ⇒ b = −2; −2c = −6 ⇒ c = 3; d = −11.",
+          "R² = 1 + 4 + 9 + 11 = 25, R = 5."
+        ],
+        "answer": "5"
+      }
     }
   ],
   "examples": [
@@ -367,6 +392,26 @@
       }
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mặt cầu x² + y² + z² − 2x + 4y − 6z − 11 = 0 có bán kính là?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "a = 1, b = −2, c = 3, d = −11: R = √(1 + 4 + 9 + 11) = 5.",
+      "dang": "Tìm tâm, bán kính mặt cầu và viết phương trình mặt cầu",
+      "id": "q22"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mặt cầu tâm I(1; 2; 3) bán kính 4 có R² bằng bao nhiêu trong phương trình (x − 1)² + (y − 2)² + (z − 3)² = R²?",
+      "expr": "16",
+      "answer": "16",
+      "explain": "R² = 4² = 16.",
+      "dang": "Tìm tâm, bán kính mặt cầu và viết phương trình mặt cầu",
+      "id": "q23"
+    },
+    {
       "id": "q21",
       "level": "Vận dụng",
       "type": "mcq",
@@ -385,6 +430,26 @@
         "2": "AM² = 2 ≠ 1 nên không thuộc mặt cầu.",
         "3": "M không nằm trên trục Oz; lý do này không đúng."
       }
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mặt cầu tâm I(1; 2; 3) tiếp xúc mặt phẳng 2x − y + 2z − 3 = 0 có bán kính là?",
+      "expr": "1",
+      "answer": "1",
+      "explain": "R = d(I, (P)) = |2 − 2 + 6 − 3|/3 = 1.",
+      "dang": "Tìm tâm, bán kính mặt cầu và viết phương trình mặt cầu",
+      "id": "q24"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mặt cầu tâm I(0; 0; 0) đi qua A(2; 3; 6) có bán kính là?",
+      "expr": "7",
+      "answer": "7",
+      "explain": "R = IA = √(4 + 9 + 36) = 7.",
+      "dang": "Tìm tâm, bán kính mặt cầu và viết phương trình mặt cầu",
+      "id": "q25"
     }
   ]
 }

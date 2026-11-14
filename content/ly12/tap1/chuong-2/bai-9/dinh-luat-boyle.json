@@ -33,6 +33,31 @@
       "type": "figure",
       "figure": "figures/c-ly12-b9-boyle.svg",
       "caption": "Hai đường đẳng nhiệt: cùng nhiệt độ thì pV như nhau; nhiệt độ cao hơn thì đường nằm xa gốc hơn."
+    },
+    {
+      "type": "method",
+      "title": "Bài toán quá trình đẳng nhiệt",
+      "when": "Đề cho khí biến đổi ở nhiệt độ không đổi, cho hai trong bốn giá trị p₁, V₁, p₂, V₂ và hỏi giá trị còn lại.",
+      "steps": [
+        "Xác định nhiệt độ không đổi: đẳng nhiệt.",
+        "Viết p₁V₁ = p₂V₂.",
+        "Giải tìm đại lượng chưa biết; thống nhất đơn vị áp suất và thể tích hai bên.",
+        "Kiểm tra chiều biến đổi: p tăng thì V giảm."
+      ],
+      "notes": [
+        "Đơn vị áp suất ở hai vế phải giống nhau (atm, Pa...).",
+        "Nén khí thì thể tích giảm, áp suất tăng.",
+        "Đẳng nhiệt không cần đổi sang kelvin.",
+        "Khối lượng khí không đổi."
+      ],
+      "sample": {
+        "problem": "Khí có p₁ = 2 atm, V₁ = 6 L. Nén đẳng nhiệt đến p₂ = 4 atm. Tính V₂.",
+        "steps": [
+          "p₁V₁ = p₂V₂.",
+          "V₂ = 2·6/4 = 3 L."
+        ],
+        "answer": "3 L"
+      }
     }
   ],
   "examples": [
@@ -167,6 +192,26 @@
       "figure": "figures/bt-ly12-b9-q06.svg"
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khí có p₁ = 2 atm, V₁ = 6 L, nén đẳng nhiệt đến p₂ = 4 atm. Thể tích V₂ là bao nhiêu L?",
+      "expr": "2*6/4",
+      "answer": "3",
+      "explain": "p₁V₁ = p₂V₂ ⇒ V₂ = 12/4 = 3 L.",
+      "dang": "Bài toán quá trình đẳng nhiệt",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khí ở 1 atm có thể tích 12 L, dãn đẳng nhiệt đến 18 L. Áp suất sau đó bằng bao nhiêu atm? (nhập phân số)",
+      "expr": "12/18",
+      "answer": "2/3",
+      "explain": "p₂ = p₁V₁/V₂ = 12/18 = 2/3 atm.",
+      "dang": "Bài toán quá trình đẳng nhiệt",
+      "id": "q11"
+    },
+    {
       "id": "q07",
       "level": "Vận dụng",
       "type": "mcq",
@@ -216,6 +261,26 @@
         "2": "Khối lượng khí không đổi khi bơm kín.",
         "3": "Phân tử khí vẫn chuyển động không ngừng."
       }
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một bọt khí ở đáy hồ có thể tích 1 cm³ và áp suất 3 atm, nổi lên mặt hồ (1 atm) ở cùng nhiệt độ. Thể tích bọt khí là bao nhiêu cm³?",
+      "expr": "3*1/1",
+      "answer": "3",
+      "explain": "p₁V₁ = p₂V₂ ⇒ V₂ = 3·1/1 = 3 cm³.",
+      "dang": "Bài toán quá trình đẳng nhiệt",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bơm không khí 1 atm vào quả bóng 3 L để áp suất bóng là 2 atm. Mỗi lần bơm được 0,3 L. Cần bơm bao nhiêu lần? (coi thể tích bóng không đổi, ban đầu bóng chứa 3 L ở 1 atm)",
+      "expr": "3*(2-1)*10/3",
+      "answer": "10",
+      "explain": "Cần thêm khí tương ứng 3·(2 − 1) = 3 L ở 1 atm; mỗi lần 0,3 L nên 3/0,3 = 10 lần.",
+      "dang": "Bài toán quá trình đẳng nhiệt",
+      "id": "q13"
     }
   ]
 }

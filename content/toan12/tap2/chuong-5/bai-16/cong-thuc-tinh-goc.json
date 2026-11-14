@@ -29,6 +29,31 @@
     {
       "type": "text",
       "content": "Trong bài này, nếu không nói gì thêm, góc được tính theo đơn vị độ và làm tròn đến chữ số thập phân thứ nhất."
+    },
+    {
+      "type": "method",
+      "title": "Tính góc giữa đường thẳng, mặt phẳng",
+      "when": "Đề cho vectơ chỉ phương, vectơ pháp tuyến và hỏi côsin hoặc sin của góc giữa hai đường thẳng, đường thẳng – mặt phẳng, hai mặt phẳng.",
+      "steps": [
+        "Xác định vectơ chỉ phương u của đường thẳng, vectơ pháp tuyến n của mặt phẳng.",
+        "Hai đường thẳng: cos φ = |u₁·u₂|/(|u₁||u₂|). Hai mặt phẳng: cos φ = |n₁·n₂|/(|n₁||n₂|).",
+        "Đường thẳng – mặt phẳng: sin φ = |u·n|/(|u||n|).",
+        "Tính tử và mẫu rồi rút gọn; góc nhận giá trị trong [0°; 90°]."
+      ],
+      "notes": [
+        "Dùng giá trị tuyệt đối vì góc giữa hai đường thẳng không quá 90°.",
+        "Đường thẳng – mặt phẳng dùng sin, không dùng cos.",
+        "Tính |u| và |n| cẩn thận, tránh quên căn.",
+        "Hai mặt phẳng vuông góc ⇔ n₁·n₂ = 0."
+      ],
+      "sample": {
+        "problem": "Cho u = (1; 2; 2) và đường thẳng có vectơ chỉ phương (0; 0; 1). Tính côsin góc giữa hai đường thẳng.",
+        "steps": [
+          "u₁·u₂ = 2; |u₁| = 3; |u₂| = 1.",
+          "cos φ = 2/3."
+        ],
+        "answer": "2/3"
+      }
     }
   ],
   "examples": [
@@ -241,6 +266,26 @@
       "figure": "figures/t12-v-be-nuoc.svg"
     },
     {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai đường thẳng có vectơ chỉ phương (1; 2; 2) và (0; 0; 1). Côsin của góc giữa chúng là?",
+      "expr": "2/3",
+      "answer": "2/3",
+      "explain": "cos φ = |2|/(3·1) = 2/3.",
+      "dang": "Tính góc giữa đường thẳng, mặt phẳng",
+      "id": "q14"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đường thẳng có vectơ chỉ phương (1; 2; 2), mặt phẳng có vectơ pháp tuyến (0; 0; 1). Sin của góc giữa chúng là?",
+      "expr": "2/3",
+      "answer": "2/3",
+      "explain": "sin φ = |2|/(3·1) = 2/3.",
+      "dang": "Tính góc giữa đường thẳng, mặt phẳng",
+      "id": "q15"
+    },
+    {
       "id": "q12",
       "level": "Vận dụng",
       "type": "mcq",
@@ -283,6 +328,26 @@
         "3": "Góc 45° là sai: độ dốc của mặt nước so với đáy chỉ khoảng 0,0566."
       },
       "bookPage": 53
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai mặt phẳng có vectơ pháp tuyến (1; 1; 0) và (1; 0; 1). Côsin góc giữa hai mặt phẳng là?",
+      "expr": "1/2",
+      "answer": "1/2",
+      "explain": "n₁·n₂ = 1; |n₁| = |n₂| = √2; cos = 1/2.",
+      "dang": "Tính góc giữa đường thẳng, mặt phẳng",
+      "id": "q16"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị m để hai mặt phẳng có vectơ pháp tuyến (1; 2; m) và (2; −1; 3) vuông góc là?",
+      "expr": "0",
+      "answer": "0",
+      "explain": "n₁·n₂ = 2 − 2 + 3m = 3m = 0 ⇒ m = 0.",
+      "dang": "Tính góc giữa đường thẳng, mặt phẳng",
+      "id": "q17"
     }
   ]
 }
