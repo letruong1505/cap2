@@ -16,19 +16,65 @@
     {
       "type": "figure",
       "figure": "figures/lt-hinh-chu-nhat.svg",
-      "caption": "Hình chữ nhật ABCD có hai đường chéo AC, BD bằng nhau và cắt nhau tại trung điểm O của mỗi đường."
+      "caption": "Hình chữ nhật ABCD có bốn góc vuông"
     },
     {
       "type": "text",
       "content": "Tính chất: hình chữ nhật là hình bình hành, nên có mọi tính chất của hình bình hành; ngoài ra hai đường chéo của hình chữ nhật bằng nhau."
     },
     {
+      "type": "figure",
+      "figure": "figures/lt-hcn-duong-cheo.svg",
+      "caption": "Hai đường chéo AC, BD bằng nhau và cắt nhau tại trung điểm O của mỗi đường"
+    },
+    {
       "type": "text",
-      "content": "Dấu hiệu nhận biết: tứ giác có ba góc vuông; hình thang cân có một góc vuông; hình bình hành có một góc vuông; hình bình hành có hai đường chéo bằng nhau là hình chữ nhật."
+      "content": "Dấu hiệu nhận biết hình chữ nhật:"
+    },
+    {
+      "type": "text",
+      "content": "1) Tứ giác có ba góc vuông."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-hcn-dau-hieu-1.svg",
+      "caption": "Tứ giác có ba góc vuông thì góc còn lại cũng vuông"
+    },
+    {
+      "type": "text",
+      "content": "2) Hình thang cân có một góc vuông."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-hcn-dau-hieu-2.svg",
+      "caption": "Hình thang cân có một góc vuông là hình chữ nhật"
+    },
+    {
+      "type": "text",
+      "content": "3) Hình bình hành có một góc vuông."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-hcn-dau-hieu-3.svg",
+      "caption": "Hình bình hành có một góc vuông là hình chữ nhật"
+    },
+    {
+      "type": "text",
+      "content": "4) Hình bình hành có hai đường chéo bằng nhau."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-hcn-dau-hieu-4.svg",
+      "caption": "Hình bình hành có hai đường chéo bằng nhau là hình chữ nhật"
     },
     {
       "type": "text",
       "content": "Trong tam giác vuông, đường trung tuyến ứng với cạnh huyền bằng nửa cạnh huyền."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-hcn-trung-tuyen.svg",
+      "caption": "Tam giác ABC vuông tại A là một nửa hình chữ nhật ABDC, nên trung tuyến AM bằng nửa cạnh huyền BC"
     }
   ],
   "examples": [
@@ -39,7 +85,8 @@
         "O là trung điểm của AC nên OA = 10 : 2 = 5 (cm)."
       ],
       "expr": "10/2",
-      "answer": "5"
+      "answer": "5",
+      "figure": "figures/vd-toan8-b13-1.svg"
     },
     {
       "problem": "Tam giác ABC vuông tại A có đường trung tuyến AM = 6 cm. Tính cạnh huyền BC.",
@@ -47,7 +94,8 @@
         "Trung tuyến ứng với cạnh huyền bằng nửa cạnh huyền nên BC = 2·6 = 12 (cm)."
       ],
       "expr": "2*6",
-      "answer": "12"
+      "answer": "12",
+      "figure": "figures/vd-toan8-b13-2.svg"
     }
   ],
   "items": [
@@ -98,7 +146,8 @@
       "stem": "Tứ giác ABCD có ba góc vuông. Góc còn lại bằng bao nhiêu độ?",
       "expr": "360-3*90",
       "answer": "90",
-      "explain": "Tổng các góc bằng 360° nên góc còn lại là 360° − 270° = 90°."
+      "explain": "Tổng các góc bằng 360° nên góc còn lại là 360° − 270° = 90°.",
+      "figure": "figures/bt-toan8-b13-q03.svg"
     },
     {
       "id": "q04",
