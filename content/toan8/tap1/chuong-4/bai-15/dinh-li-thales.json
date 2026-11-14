@@ -31,12 +31,22 @@
       "content": "Định lí Thalès đảo: nếu một đường thẳng cắt hai cạnh của tam giác và định ra trên hai cạnh đó những đoạn thẳng tương ứng tỉ lệ thì đường thẳng đó song song với cạnh còn lại của tam giác."
     },
     {
+      "type": "figure",
+      "figure": "figures/lt-thales-dao.svg",
+      "caption": "Thalès đảo: AM/MB = AN/NC thì MN ∥ BC"
+    },
+    {
       "type": "text",
       "content": "Hệ quả: nếu một đường thẳng song song với một cạnh của tam giác và cắt hai cạnh còn lại thì nó tạo thành một tam giác mới có ba cạnh tương ứng tỉ lệ với ba cạnh của tam giác đã cho."
     },
     {
       "type": "formula",
       "content": "MN ∥ BC ⇒ AM/AB = AN/AC = MN/BC"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-thales-he-qua.svg",
+      "caption": "Hệ quả: AM/AB = AN/AC = MN/BC"
     }
   ],
   "examples": [
@@ -128,7 +138,8 @@
       "stem": "Cho MN ∥ BC (M thuộc AB, N thuộc AC), AM = 3 cm, MB = 6 cm, AN = 2 cm. Tính NC (cm).",
       "expr": "2*6/3",
       "answer": "4",
-      "explain": "AM/MB = AN/NC nên NC = AN · MB : AM = 2·6 : 3 = 4 (cm)."
+      "explain": "AM/MB = AN/NC nên NC = AN · MB : AM = 2·6 : 3 = 4 (cm).",
+      "figure": "figures/bt-toan8-b15-q05.svg"
     },
     {
       "id": "q06",
@@ -137,7 +148,8 @@
       "stem": "Cho MN ∥ BC (M thuộc AB, N thuộc AC), AM = 4 cm, AB = 10 cm, AN = 6 cm. Tính AC (cm).",
       "expr": "6*10/4",
       "answer": "15",
-      "explain": "AM/AB = AN/AC nên AC = AN · AB : AM = 6·10 : 4 = 15 (cm)."
+      "explain": "AM/AB = AN/AC nên AC = AN · AB : AM = 6·10 : 4 = 15 (cm).",
+      "figure": "figures/bt-toan8-b15-q06.svg"
     },
     {
       "id": "q07",
@@ -146,7 +158,8 @@
       "stem": "Cho MN ∥ BC (M thuộc AB, N thuộc AC), AM/AB = 1/4 và AC = 20 cm. Tính AN (cm).",
       "expr": "20/4",
       "answer": "5",
-      "explain": "AN/AC = AM/AB = 1/4 nên AN = 20 : 4 = 5 (cm)."
+      "explain": "AN/AC = AM/AB = 1/4 nên AN = 20 : 4 = 5 (cm).",
+      "figure": "figures/bt-toan8-b15-q07.svg"
     },
     {
       "id": "q08",
@@ -166,7 +179,8 @@
         "1": "Đây là kết quả của AM · MB : AN, nhầm tỉ số.",
         "3": "Chưa áp dụng đúng tỉ lệ thức AM/MB = AN/NC."
       },
-      "expr": "9*4/6"
+      "expr": "9*4/6",
+      "figure": "figures/bt-toan8-b15-q08.svg"
     },
     {
       "id": "q09",
@@ -175,7 +189,8 @@
       "stem": "Cho MN ∥ BC (M thuộc AB, N thuộc AC), AB = 18 cm, AM = 12 cm, AC = 15 cm. Tính AN (cm).",
       "expr": "15*12/18",
       "answer": "10",
-      "explain": "AN/AC = AM/AB nên AN = 15·12 : 18 = 10 (cm)."
+      "explain": "AN/AC = AM/AB nên AN = 15·12 : 18 = 10 (cm).",
+      "figure": "figures/bt-toan8-b15-q09.svg"
     },
     {
       "id": "q10",
@@ -184,7 +199,8 @@
       "stem": "Cho MN ∥ BC (M thuộc AB, N thuộc AC) và AM/AB = 2/5. Chu vi tam giác ABC là 30 cm. Tính chu vi tam giác AMN (cm).",
       "expr": "30*2/5",
       "answer": "12",
-      "explain": "Ba cạnh của tam giác AMN tỉ lệ với ba cạnh của tam giác ABC theo tỉ số 2/5 nên chu vi AMN = 30 · 2/5 = 12 (cm)."
+      "explain": "Ba cạnh của tam giác AMN tỉ lệ với ba cạnh của tam giác ABC theo tỉ số 2/5 nên chu vi AMN = 30 · 2/5 = 12 (cm).",
+      "figure": "figures/bt-toan8-b15-q10.svg"
     }
   ]
 }

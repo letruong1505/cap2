@@ -27,6 +27,11 @@
       "content": "Định lí: nếu một đường thẳng cắt hai cạnh của tam giác và song song với cạnh còn lại thì nó tạo thành một tam giác mới đồng dạng với tam giác đã cho."
     },
     {
+      "type": "figure",
+      "figure": "figures/lt-dd-dinh-li.svg",
+      "caption": "Đường thẳng MN song song với BC tạo ra tam giác AMN đồng dạng với tam giác ABC"
+    },
+    {
       "type": "text",
       "content": "Hai tam giác đồng dạng theo tỉ số k thì tỉ số hai chu vi của chúng cũng bằng k."
     }
@@ -38,7 +43,8 @@
         "k = A′B′/AB = 6/4 = 1,5."
       ],
       "expr": "6/4",
-      "answer": "1.5"
+      "answer": "1.5",
+      "figure": "figures/vd-toan8-b33-1.svg"
     },
     {
       "problem": "Cho tam giác ABC có M thuộc AB, N thuộc AC, MN ∥ BC, AM = 2 cm, AB = 6 cm, BC = 9 cm. Tính MN.",
@@ -47,7 +53,8 @@
         "MN = BC · AM : AB = 9·2 : 6 = 3 (cm)."
       ],
       "expr": "9*2/6",
-      "answer": "3"
+      "answer": "3",
+      "figure": "figures/vd-toan8-b33-2.svg"
     }
   ],
   "items": [
@@ -118,7 +125,8 @@
       "stem": "ΔA′B′C′ ∽ ΔABC theo tỉ số k = 2 và AB = 5 cm. Tính A′B′ (cm).",
       "expr": "5*2",
       "answer": "10",
-      "explain": "A′B′ = k·AB = 10 (cm)."
+      "explain": "A′B′ = k·AB = 10 (cm).",
+      "figure": "figures/bt-toan8-b33-q04.svg"
     },
     {
       "id": "q05",
@@ -127,7 +135,8 @@
       "stem": "ΔA′B′C′ ∽ ΔABC với AB = 8 cm, A′B′ = 12 cm. Tính tỉ số đồng dạng (số thập phân).",
       "expr": "12/8",
       "answer": "1.5",
-      "explain": "k = 12/8 = 1,5."
+      "explain": "k = 12/8 = 1,5.",
+      "figure": "figures/bt-toan8-b33-q05.svg"
     },
     {
       "id": "q06",
@@ -136,7 +145,8 @@
       "stem": "ΔA′B′C′ ∽ ΔABC theo tỉ số 1,5 và BC = 10 cm. Tính B′C′ (cm).",
       "expr": "10*1.5",
       "answer": "15",
-      "explain": "B′C′ = 1,5·10 = 15 (cm)."
+      "explain": "B′C′ = 1,5·10 = 15 (cm).",
+      "figure": "figures/bt-toan8-b33-q06.svg"
     },
     {
       "id": "q07",
@@ -145,7 +155,8 @@
       "stem": "ΔA′B′C′ ∽ ΔABC theo tỉ số 2,5, chu vi ΔABC bằng 24 cm. Tính chu vi ΔA′B′C′ (cm).",
       "expr": "24*2.5",
       "answer": "60",
-      "explain": "Chu vi nhân với tỉ số đồng dạng: 24·2,5 = 60 (cm)."
+      "explain": "Chu vi nhân với tỉ số đồng dạng: 24·2,5 = 60 (cm).",
+      "figure": "figures/bt-toan8-b33-q07.svg"
     },
     {
       "id": "q08",
@@ -154,7 +165,8 @@
       "stem": "ΔABC ∽ ΔA′B′C′, B̂ = 50°, Ĉ = 60°. Tính Â′ (độ).",
       "expr": "180-50-60",
       "answer": "70",
-      "explain": "Â = 180° − 50° − 60° = 70° nên Â′ = 70°."
+      "explain": "Â = 180° − 50° − 60° = 70° nên Â′ = 70°.",
+      "figure": "figures/bt-toan8-b33-q08.svg"
     },
     {
       "id": "q09",
@@ -163,7 +175,8 @@
       "stem": "MN ∥ BC (M thuộc AB, N thuộc AC), AM = 3, AB = 9, AN = 4. Tính AC.",
       "expr": "4*9/3",
       "answer": "12",
-      "explain": "ΔAMN ∽ ΔABC nên AN/AC = AM/AB, AC = 4·9 : 3 = 12."
+      "explain": "ΔAMN ∽ ΔABC nên AN/AC = AM/AB, AC = 4·9 : 3 = 12.",
+      "figure": "figures/bt-toan8-b33-q09.svg"
     },
     {
       "id": "q10",
@@ -172,7 +185,8 @@
       "stem": "Hai tam giác đồng dạng có chu vi 30 cm và 45 cm. Tính tỉ số đồng dạng (từ tam giác chu vi nhỏ đến lớn).",
       "expr": "45/30",
       "answer": "1.5",
-      "explain": "k = 45/30 = 1,5."
+      "explain": "k = 45/30 = 1,5.",
+      "figure": "figures/bt-toan8-b33-q10.svg"
     }
   ]
 }

@@ -31,12 +31,22 @@
       "content": "A′B′/AB = A′C′/AC và Â′ = Â ⇒ ΔA′B′C′ ∽ ΔABC"
     },
     {
+      "type": "figure",
+      "figure": "figures/lt-dd-cgc.svg",
+      "caption": "Trường hợp c.g.c: hai cạnh tỉ lệ và góc xen giữa bằng nhau"
+    },
+    {
       "type": "text",
       "content": "Trường hợp đồng dạng thứ ba (góc – góc): nếu hai góc của tam giác này lần lượt bằng hai góc của tam giác kia thì hai tam giác đó đồng dạng."
     },
     {
       "type": "formula",
       "content": "Â′ = Â và B̂′ = B̂ ⇒ ΔA′B′C′ ∽ ΔABC"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-dd-gg.svg",
+      "caption": "Trường hợp g.g: hai góc bằng nhau từng đôi một"
     }
   ],
   "examples": [
@@ -57,7 +67,8 @@
         "EF = 1,5·BC = 1,5·5 = 7,5 (cm)."
       ],
       "expr": "6*5/4",
-      "answer": "7.5"
+      "answer": "7.5",
+      "figure": "figures/vd-toan8-b34-2.svg"
     }
   ],
   "items": [
@@ -128,7 +139,8 @@
       "stem": "ΔABC có các cạnh 3; 4; 5 và ΔDEF có các cạnh 6; 8; 10. Tính tỉ số đồng dạng ΔDEF : ΔABC.",
       "expr": "6/3",
       "answer": "2",
-      "explain": "k = 6/3 = 2."
+      "explain": "k = 6/3 = 2.",
+      "figure": "figures/bt-toan8-b34-q04.svg"
     },
     {
       "id": "q05",
@@ -137,7 +149,8 @@
       "stem": "ΔABC có Â = 50°, B̂ = 60°; ΔDEF có D̂ = 50°, Ê = 60°. Tính F̂ (độ).",
       "expr": "180-50-60",
       "answer": "70",
-      "explain": "Ĉ = 70° và ΔABC ∽ ΔDEF (g.g) nên F̂ = Ĉ = 70°."
+      "explain": "Ĉ = 70° và ΔABC ∽ ΔDEF (g.g) nên F̂ = Ĉ = 70°.",
+      "figure": "figures/bt-toan8-b34-q05.svg"
     },
     {
       "id": "q06",
@@ -146,7 +159,8 @@
       "stem": "ΔABC có AB = 3, AC = 5, BC = 4; ΔDEF có DE = 6, DF = 10 và Â = D̂. Tính EF.",
       "expr": "6*4/3",
       "answer": "8",
-      "explain": "Tỉ số 6/3 = 10/5 = 2 nên ΔDEF ∽ ΔABC (c.g.c) và EF = 2·4 = 8."
+      "explain": "Tỉ số 6/3 = 10/5 = 2 nên ΔDEF ∽ ΔABC (c.g.c) và EF = 2·4 = 8.",
+      "figure": "figures/bt-toan8-b34-q06.svg"
     },
     {
       "id": "q07",
@@ -155,7 +169,8 @@
       "stem": "Hai tam giác ABC và DEF đồng dạng (g.g). AB = 6 cm, DE = 9 cm; chu vi ΔABC bằng 20 cm. Tính chu vi ΔDEF (cm).",
       "expr": "20*9/6",
       "answer": "30",
-      "explain": "Tỉ số k = 9/6 = 1,5 nên chu vi ΔDEF = 20·1,5 = 30 (cm)."
+      "explain": "Tỉ số k = 9/6 = 1,5 nên chu vi ΔDEF = 20·1,5 = 30 (cm).",
+      "figure": "figures/bt-toan8-b34-q07.svg"
     },
     {
       "id": "q08",
@@ -164,7 +179,8 @@
       "stem": "ΔABC có AB = 6, AC = 8, BC = 10; ΔDEF có DE = 3, DF = 4 và tỉ số các cạnh tương ứng bằng nhau (c.c.c). Tính EF.",
       "expr": "10*3/6",
       "answer": "5",
-      "explain": "k = 3/6 = 0,5 nên EF = 0,5·10 = 5."
+      "explain": "k = 3/6 = 0,5 nên EF = 0,5·10 = 5.",
+      "figure": "figures/bt-toan8-b34-q08.svg"
     },
     {
       "id": "q09",
@@ -173,7 +189,8 @@
       "stem": "ΔABC ∽ ΔMNP theo tỉ số 2/3 (MN/AB = 2/3). Biết AB = 12 cm. Tính MN (cm).",
       "expr": "12*2/3",
       "answer": "8",
-      "explain": "MN = AB · 2/3 = 8 (cm)."
+      "explain": "MN = AB · 2/3 = 8 (cm).",
+      "figure": "figures/bt-toan8-b34-q09.svg"
     },
     {
       "id": "q10",
@@ -182,7 +199,8 @@
       "stem": "Trong ΔABC có Â = 90°, B̂ = 40°. Trong ΔDEF có D̂ = 90°, F̂ = 50°. Tính Ê (độ).",
       "expr": "180-90-50",
       "answer": "40",
-      "explain": "Ê = 180° − 90° − 50° = 40° = B̂ nên hai tam giác đồng dạng (g.g)."
+      "explain": "Ê = 180° − 90° − 50° = 40° = B̂ nên hai tam giác đồng dạng (g.g).",
+      "figure": "figures/bt-toan8-b34-q10.svg"
     }
   ]
 }

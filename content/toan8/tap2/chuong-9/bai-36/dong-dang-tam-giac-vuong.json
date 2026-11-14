@@ -27,6 +27,11 @@
       "content": "ΔA′B′C′ ∽ ΔABC (tỉ số k) ⇒ S′/S = k²"
     },
     {
+      "type": "figure",
+      "figure": "figures/lt-dd-dien-tich.svg",
+      "caption": "Hai tam giác đồng dạng theo tỉ số k thì tỉ số diện tích bằng k²"
+    },
+    {
       "type": "text",
       "content": "Ứng dụng: trong tam giác ABC vuông tại A có đường cao AH thì AB² = BH·BC, AC² = CH·BC và AH·BC = AB·AC."
     }
@@ -40,7 +45,7 @@
       ],
       "expr": "3*3/5",
       "answer": "1.8",
-      "figure": "figures/lt-tam-giac-vuong-duong-cao.svg"
+      "figure": "figures/vd-toan8-b36-1.svg"
     },
     {
       "problem": "Với tam giác ABC trên, tính AH (cm).",
@@ -50,7 +55,7 @@
       ],
       "expr": "3*4/5",
       "answer": "2.4",
-      "figure": "figures/lt-tam-giac-vuong-duong-cao.svg"
+      "figure": "figures/vd-toan8-b36-2.svg"
     }
   ],
   "items": [
@@ -121,7 +126,8 @@
       "stem": "Hai tam giác đồng dạng theo tỉ số 2, diện tích tam giác nhỏ là 15 cm². Tính diện tích tam giác lớn (cm²).",
       "expr": "15*2*2",
       "answer": "60",
-      "explain": "S′ = k²·S = 4·15 = 60 (cm²)."
+      "explain": "S′ = k²·S = 4·15 = 60 (cm²).",
+      "figure": "figures/bt-toan8-b36-q04.svg"
     },
     {
       "id": "q05",
@@ -130,7 +136,8 @@
       "stem": "Hai tam giác đồng dạng theo tỉ số 3, diện tích tam giác lớn là 108 cm². Tính diện tích tam giác nhỏ (cm²).",
       "expr": "108/9",
       "answer": "12",
-      "explain": "Tỉ số diện tích là 9 nên S = 108 : 9 = 12 (cm²)."
+      "explain": "Tỉ số diện tích là 9 nên S = 108 : 9 = 12 (cm²).",
+      "figure": "figures/bt-toan8-b36-q05.svg"
     },
     {
       "id": "q06",
@@ -159,7 +166,8 @@
       "stem": "Cùng tam giác trên, tính CH (cm).",
       "expr": "10-6*6/10",
       "answer": "6.4",
-      "explain": "CH = BC − BH = 10 − 3,6 = 6,4 (cm)."
+      "explain": "CH = BC − BH = 10 − 3,6 = 6,4 (cm).",
+      "figure": "figures/bt-toan8-b36-q08.svg"
     },
     {
       "id": "q09",
@@ -177,7 +185,8 @@
       "stem": "ΔA′B′C′ ∽ ΔABC theo tỉ số 2/3, diện tích ΔABC bằng 36 cm². Tính diện tích ΔA′B′C′ (cm²).",
       "expr": "36*4/9",
       "answer": "16",
-      "explain": "S′ = (2/3)²·36 = (4/9)·36 = 16 (cm²)."
+      "explain": "S′ = (2/3)²·36 = (4/9)·36 = 16 (cm²).",
+      "figure": "figures/bt-toan8-b36-q10.svg"
     }
   ]
 }

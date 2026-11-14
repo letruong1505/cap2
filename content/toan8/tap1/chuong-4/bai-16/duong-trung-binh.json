@@ -15,6 +15,11 @@
     },
     {
       "type": "figure",
+      "figure": "figures/lt-trung-binh-ba.svg",
+      "caption": "Mỗi tam giác có ba đường trung bình"
+    },
+    {
+      "type": "figure",
       "figure": "figures/lt-duong-trung-binh.svg",
       "caption": "MN là đường trung bình của tam giác ABC (M, N là trung điểm của AB, AC)."
     },
@@ -35,7 +40,7 @@
       ],
       "expr": "14/2",
       "answer": "7",
-      "figure": "figures/lt-duong-trung-binh.svg"
+      "figure": "figures/vd-toan8-b16-1.svg"
     },
     {
       "problem": "Để đo khoảng cách giữa hai điểm A và B ở hai bên một cái ao, người ta chọn điểm O rồi lấy M, N lần lượt là trung điểm của OA, OB. Đo được MN = 40 m. Tính AB.",
@@ -44,7 +49,8 @@
         "AB = 2·MN = 2·40 = 80 (m)."
       ],
       "expr": "2*40",
-      "answer": "80"
+      "answer": "80",
+      "figure": "figures/vd-toan8-b16-2.svg"
     }
   ],
   "items": [
@@ -95,7 +101,8 @@
       "stem": "Tam giác ABC có M, N là trung điểm của AB, AC. Biết BC = 18 cm. Tính MN (cm).",
       "expr": "18/2",
       "answer": "9",
-      "explain": "MN = BC : 2 = 9 (cm)."
+      "explain": "MN = BC : 2 = 9 (cm).",
+      "figure": "figures/bt-toan8-b16-q03.svg"
     },
     {
       "id": "q04",
@@ -104,7 +111,8 @@
       "stem": "Tam giác ABC có M, N là trung điểm của AB, AC. Biết MN = 7,5 cm. Tính BC (cm).",
       "expr": "2*7.5",
       "answer": "15",
-      "explain": "BC = 2·MN = 15 (cm)."
+      "explain": "BC = 2·MN = 15 (cm).",
+      "figure": "figures/bt-toan8-b16-q04.svg"
     },
     {
       "id": "q05",
@@ -113,7 +121,8 @@
       "stem": "Tam giác ABC có M, N là trung điểm của AB, AC và góc ABC = 55°. Tính góc AMN (độ).",
       "expr": "55",
       "answer": "55",
-      "explain": "MN ∥ BC nên góc AMN = góc ABC = 55° (hai góc đồng vị)."
+      "explain": "MN ∥ BC nên góc AMN = góc ABC = 55° (hai góc đồng vị).",
+      "figure": "figures/bt-toan8-b16-q05.svg"
     },
     {
       "id": "q06",
@@ -122,7 +131,8 @@
       "stem": "Tam giác ABC có AB = 10 cm, BC = 12 cm, CA = 14 cm. D, E, F là trung điểm của BC, CA, AB. Tính chu vi tam giác DEF (cm).",
       "expr": "(10+12+14)/2",
       "answer": "18",
-      "explain": "Ba cạnh của tam giác DEF là ba đường trung bình nên có độ dài bằng nửa các cạnh tương ứng: chu vi DEF = (10 + 12 + 14) : 2 = 18 (cm)."
+      "explain": "Ba cạnh của tam giác DEF là ba đường trung bình nên có độ dài bằng nửa các cạnh tương ứng: chu vi DEF = (10 + 12 + 14) : 2 = 18 (cm).",
+      "figure": "figures/bt-toan8-b16-q06.svg"
     },
     {
       "id": "q07",
@@ -131,7 +141,8 @@
       "stem": "Các đường trung bình của một tam giác dài 3 cm, 4 cm và 5 cm. Tính chu vi của tam giác đó (cm).",
       "expr": "2*(3+4+5)",
       "answer": "24",
-      "explain": "Mỗi cạnh của tam giác gấp đôi đường trung bình tương ứng nên chu vi = 2·(3 + 4 + 5) = 24 (cm)."
+      "explain": "Mỗi cạnh của tam giác gấp đôi đường trung bình tương ứng nên chu vi = 2·(3 + 4 + 5) = 24 (cm).",
+      "figure": "figures/bt-toan8-b16-q07.svg"
     },
     {
       "id": "q08",
@@ -140,7 +151,8 @@
       "stem": "Đo khoảng cách hai điểm A, B ở hai bên một hồ nước: lấy O, M, N lần lượt là điểm bất kì, trung điểm của OA, trung điểm của OB và đo được MN = 25 m. Tính AB (m).",
       "expr": "2*25",
       "answer": "50",
-      "explain": "MN là đường trung bình của tam giác OAB nên AB = 2·MN = 50 (m)."
+      "explain": "MN là đường trung bình của tam giác OAB nên AB = 2·MN = 50 (m).",
+      "figure": "figures/bt-toan8-b16-q08.svg"
     },
     {
       "id": "q09",
@@ -149,7 +161,8 @@
       "stem": "Tam giác ABC có M, N lần lượt là trung điểm của AB, AC; MN = 6 cm. Gọi P là trung điểm của BC. Tính độ dài đường trung bình nối trung điểm AB với trung điểm BC, biết AC = 16 cm (cm).",
       "expr": "16/2",
       "answer": "8",
-      "explain": "Đoạn thẳng nối trung điểm AB và BC là đường trung bình ứng với cạnh AC nên dài 16 : 2 = 8 (cm)."
+      "explain": "Đoạn thẳng nối trung điểm AB và BC là đường trung bình ứng với cạnh AC nên dài 16 : 2 = 8 (cm).",
+      "figure": "figures/bt-toan8-b16-q09.svg"
     }
   ]
 }
