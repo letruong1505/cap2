@@ -23,8 +23,49 @@
       "content": "Tính chất: trong hình bình hành, các cạnh đối bằng nhau; các góc đối bằng nhau; hai đường chéo cắt nhau tại trung điểm của mỗi đường."
     },
     {
+      "type": "figure",
+      "figure": "figures/lt-hbh-tinh-chat.svg",
+      "caption": "Các cạnh đối bằng nhau, các góc đối bằng nhau"
+    },
+    {
       "type": "text",
-      "content": "Dấu hiệu nhận biết: tứ giác có các cạnh đối bằng nhau; hoặc có hai cạnh đối song song và bằng nhau; hoặc có các góc đối bằng nhau; hoặc có hai đường chéo cắt nhau tại trung điểm của mỗi đường thì là hình bình hành."
+      "content": "Dấu hiệu nhận biết hình bình hành:"
+    },
+    {
+      "type": "text",
+      "content": "1) Tứ giác có các cạnh đối bằng nhau."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-hbh-dau-hieu-1.svg",
+      "caption": "Tứ giác có các cạnh đối bằng nhau là hình bình hành"
+    },
+    {
+      "type": "text",
+      "content": "2) Tứ giác có hai cạnh đối song song và bằng nhau."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-hbh-dau-hieu-2.svg",
+      "caption": "Tứ giác có hai cạnh đối song song và bằng nhau là hình bình hành"
+    },
+    {
+      "type": "text",
+      "content": "3) Tứ giác có các góc đối bằng nhau."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-hbh-dau-hieu-3.svg",
+      "caption": "Tứ giác có các góc đối bằng nhau là hình bình hành"
+    },
+    {
+      "type": "text",
+      "content": "4) Tứ giác có hai đường chéo cắt nhau tại trung điểm của mỗi đường."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-hbh-dau-hieu-4.svg",
+      "caption": "Tứ giác có hai đường chéo cắt nhau tại trung điểm của mỗi đường là hình bình hành"
     }
   ],
   "examples": [
@@ -35,7 +76,8 @@
         "Góc đối bằng nhau: Ĉ = Â = 70°."
       ],
       "expr": "180-70",
-      "answer": "110"
+      "answer": "110",
+      "figure": "figures/vd-toan8-b12-1.svg"
     },
     {
       "problem": "Hình bình hành có hai cạnh kề 5 cm và 8 cm. Tính chu vi.",
@@ -43,7 +85,8 @@
         "Các cạnh đối bằng nhau nên chu vi = 2·(5 + 8) = 26 (cm)."
       ],
       "expr": "2*(5+8)",
-      "answer": "26"
+      "answer": "26",
+      "figure": "figures/vd-toan8-b12-2.svg"
     }
   ],
   "items": [
@@ -144,7 +187,8 @@
       "stem": "Hình bình hành ABCD có Â = B̂ + 40°. Tính Â (độ).",
       "expr": "(180+40)/2",
       "answer": "110",
-      "explain": "Â + B̂ = 180° và Â − B̂ = 40° nên Â = (180° + 40°)/2 = 110°."
+      "explain": "Â + B̂ = 180° và Â − B̂ = 40° nên Â = (180° + 40°)/2 = 110°.",
+      "figure": "figures/bt-toan8-b12-q08.svg"
     },
     {
       "id": "q09",

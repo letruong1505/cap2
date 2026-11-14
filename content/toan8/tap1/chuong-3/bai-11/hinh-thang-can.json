@@ -14,6 +14,11 @@
       "content": "Hình thang là tứ giác có hai cạnh đối song song. Hai cạnh song song gọi là hai đáy, hai cạnh còn lại gọi là hai cạnh bên."
     },
     {
+      "type": "figure",
+      "figure": "figures/lt-hinh-thang.svg",
+      "caption": "Hình thang ABCD có hai đáy AB, CD song song; hai cạnh bên là AD và BC"
+    },
+    {
       "type": "text",
       "content": "Hình thang cân là hình thang có hai góc kề một đáy bằng nhau."
     },
@@ -27,8 +32,18 @@
       "content": "Trong hình thang cân: hai cạnh bên bằng nhau; hai đường chéo bằng nhau."
     },
     {
+      "type": "figure",
+      "figure": "figures/lt-htc-tinh-chat.svg",
+      "caption": "Hình thang cân ABCD có hai cạnh bên AD = BC và hai đường chéo AC = BD"
+    },
+    {
       "type": "text",
       "content": "Dấu hiệu nhận biết: hình thang có hai đường chéo bằng nhau là hình thang cân."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/lt-htc-dau-hieu.svg",
+      "caption": "Hình thang có hai đường chéo bằng nhau là hình thang cân"
     }
   ],
   "examples": [
@@ -39,7 +54,8 @@
         "AB ∥ CD nên Â + D̂ = 180°, suy ra Â = 180° − 65° = 115°."
       ],
       "expr": "180-65",
-      "answer": "115"
+      "answer": "115",
+      "figure": "figures/vd-toan8-b11-1.svg"
     },
     {
       "problem": "Hình thang cân có hai đáy 6 cm và 10 cm, cạnh bên 5 cm. Tính chu vi.",
@@ -47,7 +63,8 @@
         "Chu vi = 6 + 10 + 5 + 5 = 26 (cm)."
       ],
       "expr": "6+10+5+5",
-      "answer": "26"
+      "answer": "26",
+      "figure": "figures/vd-toan8-b11-2.svg"
     }
   ],
   "items": [
@@ -128,7 +145,8 @@
       "stem": "Tổng hai góc kề một cạnh bên của hình thang bằng bao nhiêu độ?",
       "expr": "180",
       "answer": "180",
-      "explain": "Hai góc này là hai góc trong cùng phía của hai đường thẳng song song nên bù nhau: 180°."
+      "explain": "Hai góc này là hai góc trong cùng phía của hai đường thẳng song song nên bù nhau: 180°.",
+      "figure": "figures/bt-toan8-b11-q06.svg"
     },
     {
       "id": "q07",
