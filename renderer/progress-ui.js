@@ -54,7 +54,11 @@
     };
     const d = mk([10, 15, 20, 30, 40, 50, 80, 100], g.daily, 'Số câu mỗi ngày');
     const w = mk([1, 2, 3, 4, 5, 6, 7], g.weekly, 'Số ngày học mỗi tuần');
-    const apply = () => { P.save(store(), P.setGoals(P.load(store()), { daily: d.value, weekly: w.value })); renderGoals(box, grade); };
+    const apply = async () => {
+      const ui = window.VungPinUI;
+      if (ui && !(await ui.ensureUnlocked())) { renderGoals(box, grade); return; }
+      P.save(store(), P.setGoals(P.load(store()), { daily: d.value, weekly: w.value })); renderGoals(box, grade);
+    };
     d.addEventListener('change', apply); w.addEventListener('change', apply);
     box.append(h('p', { class: 'goal-set' }, 'Đặt mục tiêu: ', d, ' câu/ngày, ', w, ' ngày/tuần'));
   }
@@ -171,6 +175,9 @@
     body.append(ul);
     body.append(h('div', { class: 'goal-box', id: 'goal-box-report' }));
     renderGoals(document.getElementById('goal-box-report') || body.lastChild, grade);
+    const pinBox = h('div', { class: 'goal-box' });
+    body.append(pinBox);
+    if (window.VungPinUI) window.VungPinUI.renderSettings(pinBox, () => renderReport(body, grade));
     const nameIn = h('input', { type: 'text', placeholder: 'Tên học sinh (không bắt buộc)', autocomplete: 'off', 'aria-label': 'Tên học sinh' });
     const btn = h('button', { type: 'button', class: 'primary' }, 'Lưu ảnh báo cáo gửi Zalo');
     const msg = h('p', { class: 'meta' });

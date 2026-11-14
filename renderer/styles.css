@@ -658,3 +658,17 @@ button.ghost:hover { background: var(--paper); }
 .goal-fill { height: 100%; background: #1f6f8b; transition: width .3s; }
 .goal-fill.done { background: #2e7d4f; }
 .goal-set select { padding: 4px 6px; margin: 0 2px; }
+.quote { margin: 12px auto 4px; max-width: 760px; padding: 10px 18px; border-left: 4px solid #c8102e; background: #fff8f0; border-radius: 6px; font-style: italic; color: #4a3a2a; }
+.quote p { margin: 0 0 4px; line-height: 1.5; }
+.quote footer { font-style: normal; font-weight: 600; text-align: right; }
+.pin-back { position: fixed; inset: 0; background: rgba(0,0,0,.45); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+.pin-box { background: #fff; border-radius: 14px; padding: 20px 22px; width: 420px; max-width: 92vw; max-height: 90vh; overflow: auto; box-shadow: 0 10px 30px rgba(0,0,0,.3); }
+.pin-box h2 { margin: 0 0 10px; }
+.pin-box h3 { margin: 14px 0 6px; font-size: 15px; }
+.pin-box input[type="password"], .pin-box input[type="text"], .pin-box input[type="tel"] { display: block; width: 100%; box-sizing: border-box; margin: 8px 0; padding: 9px; font-size: 16px; }
+.pin-actions { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; margin-top: 12px; }
+.pin-actions button, .pin-box button { padding: 8px 14px; border-radius: 8px; border: 1px solid #b8c7d1; background: #f4f9fc; cursor: pointer; }
+.pin-box button.primary { background: #1f6f8b; color: #fff; border-color: #1f6f8b; }
+.pin-box button:disabled { opacity: .5; cursor: default; }
+.pin-msg { color: #b3261e; min-height: 1.2em; margin: 6px 0; }
+.pin-code { font: 700 24px monospace; letter-spacing: 2px; text-align: center; background: #f1f5f8; padding: 12px; border-radius: 8px; user-select: all; }

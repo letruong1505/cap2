@@ -30,3 +30,11 @@ CREATE TABLE IF NOT EXISTS transactions (
   order_code TEXT,
   created_at TEXT NOT NULL
 );
+
+-- Lần thử khôi phục mã PIN phụ huynh, dùng để giới hạn tần suất theo mã máy.
+CREATE TABLE IF NOT EXISTS pin_attempts (
+  machine TEXT NOT NULL,
+  at TEXT NOT NULL,
+  ok INTEGER NOT NULL DEFAULT 0
+);
+CREATE INDEX IF NOT EXISTS idx_pin_attempts ON pin_attempts (machine, at);

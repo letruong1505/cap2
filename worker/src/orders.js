@@ -165,3 +165,20 @@ export async function attachTransaction(db, env, catalog, txId, code, now = new 
   await db.prepare('UPDATE transactions SET result = ?1, order_code = ?2 WHERE id = ?3').bind(full ? 'paid-manual' : 'underpaid', order.code, tx.id).run();
   return { key, status: full ? 'paid' : 'underpaid' };
 }
+
+// Khôi phục mã PIN phụ huynh: đúng khi số điện thoại, mã đơn và mã máy cùng khớp một đơn đã thanh toán.
+// Giới hạn 5 lần thử mỗi giờ cho mỗi mã máy. Máy chủ không biết mã PIN, chỉ xác nhận quyền đặt lại.
+export async function pinReset(db, input, now = new Date()) {
+  const machine = String(input.machineId || '').trim().toUpperCase();
+  const phone = String(input.phone || '').replace(/[\s.\-]/g, '');
+  const code = String(input.code || '').toUpperCase().replace(/[^A-Z0-9]/g, '').replace(/^NL(?=[A-Z0-9]{6}$)/, '');
+  if (!MACHINE_RE.test(machine)) throw new HttpError(400, 'Không đọc được mã máy.');
+  const since = nowIso(new Date(now.getTime() - 3600_000));
+  const recent = await db.prepare('SELECT COUNT(*) AS n FROM pin_attempts WHERE machine = ?1 AND at > ?2').bind(machine, since).first();
+  if (recent.n >= 5) throw new HttpError(429, 'Thử quá nhiều lần. Vui lòng thử lại sau 1 giờ hoặc liên hệ hỗ trợ.');
+  const o = /^[A-Z0-9]{6}$/.test(code) && PHONE_RE.test(phone) ? await getOrder(db, code) : null;
+  const ok = !!o && o.status === 'paid' && o.machine === machine && o.phone === phone;
+  await db.prepare('INSERT INTO pin_attempts (machine, at, ok) VALUES (?1, ?2, ?3)').bind(machine, nowIso(now), ok ? 1 : 0).run();
+  if (!ok) throw new HttpError(404, 'Thông tin không khớp với đơn đã mua trên máy này.');
+  return { ok: true };
+}

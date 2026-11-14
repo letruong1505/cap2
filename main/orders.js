@@ -27,6 +27,7 @@ function makeClient({ baseUrl = readBaseUrl, fetchFn = (...a) => fetch(...a), ma
       name: String(o && o.name || ''), phone: String(o && o.phone || ''), ids: Array.isArray(o && o.ids) ? o.ids.map(String) : [],
       terms: { version: String(o && o.terms && o.terms.version || ''), at: String(o && o.terms && o.terms.at || '') }, machineId: machineId(),
     }),
+    pinReset: (o) => call('POST', '/api/pin-reset', { phone: String(o && o.phone || ''), code: String(o && o.code || ''), machineId: machineId() }),
     orderStatus: (code) => call('GET', `/api/orders/${encodeURIComponent(String(code).slice(0, 6))}/status?machine=${encodeURIComponent(machineId())}`),
   };
 }

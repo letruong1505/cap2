@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test test/orders.test.js",
+    "test": "node --test test/orders.test.js test/pin-reset.test.js",
     "deploy": "wrangler deploy",
     "db:init": "wrangler d1 execute nam-linh-orders --remote --file=schema.sql"
   },

@@ -37,6 +37,7 @@ ipcMain.handle('product:info', () => productInfo());
 ipcMain.handle('license:load', () => licenseNow());
 ipcMain.handle('license:activate', (_event, key) => lic.activate(licenseStoreDir(), key));
 ipcMain.handle('order:create', (_event, order) => orders.createOrder(order));
+ipcMain.handle('pin:reset', (_event, o) => orders.pinReset(o));
 ipcMain.handle('order:status', (_event, code) => orders.orderStatus(code));
 ipcMain.handle('license:remove', () => { lic.deactivate(licenseStoreDir()); return licenseNow(); });
 

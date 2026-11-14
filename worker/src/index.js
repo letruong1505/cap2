@@ -1,5 +1,5 @@
 import catalog from '../../renderer/catalog.js';
-import { HttpError, createOrder, orderStatus, applyPayment, listOrders, listUnmatched, approveOrder, cancelOrder, reissueOrder, attachTransaction } from './orders.js';
+import { HttpError, createOrder, orderStatus, applyPayment, listOrders, listUnmatched, approveOrder, cancelOrder, reissueOrder, attachTransaction, pinReset } from './orders.js';
 import { adminPage } from './admin.js';
 
 const json = (data, status = 200) => new Response(JSON.stringify(data), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
@@ -31,6 +31,10 @@ export async function handle(req, env, now = new Date()) {
     let m = /^\/api\/orders\/([A-Za-z0-9]{6})\/status$/.exec(path);
     if (req.method === 'GET' && m) {
       return json(await orderStatus(db, env, catalog, m[1], url.searchParams.get('machine'), now));
+    }
+
+    if (req.method === 'POST' && path === '/api/pin-reset') {
+      return json(await pinReset(db, await body(req), now));
     }
 
     // --- SePay gọi vào khi có tiền về ---

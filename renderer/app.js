@@ -734,8 +734,9 @@ async function init() {
     document.getElementById('btn-grades').addEventListener('click', () => showLaunch());
     document.getElementById('btn-national-back').addEventListener('click', () => showLaunch());
     document.getElementById('open-national').addEventListener('click', () => showNational());
-    const openProg = (kind, grade) => {
+    const openProg = async (kind, grade) => {
       const ui = window.VungProgressUI;
+      if (kind === 'report' && window.VungPinUI && !(await window.VungPinUI.ensureUnlocked())) return;
       ui.scope = grade;
       if (kind === 'review') ui.renderReview(document.getElementById('review-body'), grade);
       else ui.renderReport(document.getElementById('report-body'), grade);

@@ -11,6 +11,7 @@ contextBridge.exposeInMainWorld('vungBai', {
   loadLicense: () => ipcRenderer.invoke('license:load'),
   activateLicense: (key) => ipcRenderer.invoke('license:activate', key),
   createOrder: (order) => ipcRenderer.invoke('order:create', order),
+  pinReset: (o) => ipcRenderer.invoke('pin:reset', o),
   orderStatus: (code) => ipcRenderer.invoke('order:status', code),
   updateStatus: () => ipcRenderer.invoke('update:status'),
   checkUpdate: () => ipcRenderer.invoke('update:check'),
