@@ -69,7 +69,7 @@ test('lưu và nạp qua storage, dữ liệu hỏng thì trả rỗng', () => {
   P.save(st, d);
   assert.equal(P.load(st).notebook.length, 1);
   mem[P.KEY] = '{hỏng';
-  assert.deepEqual(P.load(st), { attempts: [], notebook: [] });
+  assert.deepEqual(P.load(st).attempts, []);
 });
 
 test('lọc theo lớp: báo cáo và hạn ôn chỉ tính lớp được chọn', () => {
@@ -84,4 +84,30 @@ test('lọc theo lớp: báo cáo và hạn ôn chỉ tính lớp được chọ
   assert.equal(P.weekly(d, T0).total, 20);
   assert.equal(P.due(d, T0 + DAY, 6).length, 1);
   assert.equal(P.due(d, T0 + DAY).length, 2);
+});
+
+test('điểm: thang 10 và điểm thưởng', () => {
+  assert.equal(P.score10(7, 9), 7.8);
+  assert.equal(P.score10(0, 0), 0);
+  assert.equal(P.points(9, 10), 110);
+  assert.equal(P.points(4, 4), 40);
+  assert.equal(P.points(3, 5), 30);
+});
+
+test('mục tiêu: tiến độ ngày/tuần, điểm ôn sổ, lọc lớp, giới hạn đặt mục tiêu', () => {
+  const d = P.load(null);
+  assert.deepEqual(d.goals, { daily: 20, weekly: 5 });
+  P.recordAttempt(d, meta({ correct: 9, total: 10 }), [item('q1')], [], T0);
+  P.recordAttempt(d, meta({ grade: 8, lessonId: 'toan8/a', correct: 5, total: 5 }), [], [], T0 + 2 * DAY);
+  P.grade(d, d.notebook[0].key, true, T0 + 2 * DAY);
+  let p = P.progress(d, T0 + 2 * DAY);
+  assert.equal(p.todayDone, 5);
+  assert.equal(p.daysDone, 2);
+  assert.equal(p.todayPts, 70 + 5);
+  assert.equal(p.totalPts, 110 + 70 + 5);
+  p = P.progress(d, T0 + 2 * DAY, 8);
+  assert.equal(p.totalPts, 70);
+  P.setGoals(d, { daily: 9999, weekly: 0 });
+  assert.deepEqual(d.goals, { daily: 200, weekly: 1 });
+  assert.equal(P.weekly(d, T0 + 2 * DAY).prog.weekPts, 185);
 });

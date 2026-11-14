@@ -10,7 +10,19 @@
   const MAX_ATTEMPTS = 1000;
   const MAX_NOTEBOOK = 300;
 
-  function empty() { return { attempts: [], notebook: [] }; }
+  const DEFAULT_GOALS = { daily: 20, weekly: 5 }; // 20 câu/ngày, 5 ngày học/tuần
+  function empty() { return { attempts: [], notebook: [], reviews: [], goals: Object.assign({}, DEFAULT_GOALS) }; }
+
+  /* Điểm thang 10 của một bài (làm tròn 1 chữ số). */
+  function score10(correct, total) { return total ? Math.round((correct / total) * 100) / 10 : 0; }
+  /* Điểm thưởng: 10/câu đúng, thêm 20 nếu bài từ 5 câu đạt từ 90%. Ôn sổ câu sai: 5/câu đúng. */
+  function points(correct, total) { return correct * 10 + (total >= 5 && correct / total >= 0.9 ? 20 : 0); }
+  const REVIEW_PTS = 5;
+  function clampInt(v, lo, hi, d) { v = Math.round(Number(v)); return Number.isFinite(v) ? Math.min(hi, Math.max(lo, v)) : d; }
+  function setGoals(data, g) {
+    data.goals = { daily: clampInt(g.daily, 5, 200, DEFAULT_GOALS.daily), weekly: clampInt(g.weekly, 1, 7, DEFAULT_GOALS.weekly) };
+    return data;
+  }
 
   function load(storage) {
     try {
@@ -20,6 +32,8 @@
       return {
         attempts: Array.isArray(d.attempts) ? d.attempts : [],
         notebook: Array.isArray(d.notebook) ? d.notebook : [],
+        reviews: Array.isArray(d.reviews) ? d.reviews : [],
+        goals: setGoals({}, d.goals || {}).goals,
       };
     } catch (e) { return empty(); }
   }
@@ -43,7 +57,7 @@
     data.attempts.push({
       t: now, subject: meta.subject, grade: meta.grade, lessonId: meta.lessonId,
       lesson: meta.lesson, chapter: meta.chapter || '',
-      correct: meta.correct, total: meta.total, seconds: Math.max(0, Math.round(meta.seconds || 0)),
+      correct: meta.correct, total: meta.total, pts: points(meta.correct, meta.total), seconds: Math.max(0, Math.round(meta.seconds || 0)),
     });
     if (data.attempts.length > MAX_ATTEMPTS) data.attempts.splice(0, data.attempts.length - MAX_ATTEMPTS);
 
@@ -74,6 +88,7 @@
     const i = data.notebook.findIndex((n) => n.key === key);
     if (i < 0) return;
     const n = data.notebook[i];
+    if (ok) { (data.reviews = data.reviews || []).push({ t: now, grade: n.grade }); if (data.reviews.length > MAX_ATTEMPTS) data.reviews.shift(); }
     if (!ok) { n.box = 0; n.due = now + DAY; n.misses = (n.misses || 1) + 1; return; }
     n.box += 1;
     if (n.box >= INTERVALS.length) data.notebook.splice(i, 1);
@@ -86,6 +101,27 @@
   }
 
   function startOfDay(t) { const d = new Date(t); d.setHours(0, 0, 0, 0); return d.getTime(); }
+
+  /* Tiến độ mục tiêu: hôm nay (số câu đã làm) và 7 ngày (số ngày học), cùng tổng điểm. */
+  function progress(data, now, grade) {
+    now = now || Date.now();
+    const ok = (x) => !grade || x.grade === grade;
+    const t0 = startOfDay(now); const from = t0 - 6 * DAY;
+    const goals = data.goals || DEFAULT_GOALS;
+    const at = (data.attempts || []).filter(ok);
+    const rv = (data.reviews || []).filter(ok);
+    const sum = (arr, a, b) => arr.filter((x) => x.t >= a && x.t < b);
+    const today = sum(at, t0, t0 + DAY);
+    const week = sum(at, from, t0 + DAY);
+    const weekRv = sum(rv, from, t0 + DAY);
+    const days = new Set(week.map((a) => startOfDay(a.t)).concat(weekRv.map((r) => startOfDay(r.t))));
+    return {
+      goals, todayDone: today.reduce((n, a) => n + a.total, 0), daysDone: days.size,
+      todayPts: today.reduce((n, a) => n + (a.pts || 0), 0) + sum(rv, t0, t0 + DAY).length * REVIEW_PTS,
+      weekPts: week.reduce((n, a) => n + (a.pts || 0), 0) + weekRv.length * REVIEW_PTS,
+      totalPts: at.reduce((n, a) => n + (a.pts || 0), 0) + rv.length * REVIEW_PTS,
+    };
+  }
 
   /* Báo cáo 7 ngày gần nhất (tính cả hôm nay). */
   function weekly(data, now, grade) {
@@ -112,9 +148,9 @@
     return {
       from, to: startOfDay(now), attempts: list.length, days: days.size,
       minutes: Math.round(seconds / 60), correct, total, pct: pct({ correct, total }),
-      subjects, weak, notebook: book.length, dueCount: due(data, now, grade).length, grade: grade || 0,
+      subjects, weak, prog: progress(data, now, grade), notebook: book.length, dueCount: due(data, now, grade).length, grade: grade || 0,
     };
   }
 
-  return { KEY, INTERVALS, load, save, recordAttempt, grade, due, weekly, slimItem };
+  return { KEY, INTERVALS, DEFAULT_GOALS, score10, points, setGoals, progress, load, save, recordAttempt, grade, due, weekly, slimItem };
 });

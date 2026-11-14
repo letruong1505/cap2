@@ -651,3 +651,10 @@ button.ghost:hover { background: var(--paper); }
 .launch-tools button:hover { background: #e3f0f7; }
 .report-list { line-height: 1.8; margin: 12px 0 18px 20px; }
 #report-body input[type="text"] { display: block; margin: 10px 0; padding: 8px; width: 280px; max-width: 100%; }
+.goal-box { margin: 16px 0; padding: 14px 16px; border: 1px solid #cfe0ea; border-radius: 12px; background: #f7fbfd; }
+.goal-box h2 { margin: 0 0 8px; font-size: 18px; }
+.goal-box p { margin: 6px 0 4px; }
+.goal-bar { height: 12px; border-radius: 6px; background: #dbe7ee; overflow: hidden; }
+.goal-fill { height: 100%; background: #1f6f8b; transition: width .3s; }
+.goal-fill.done { background: #2e7d4f; }
+.goal-set select { padding: 4px 6px; margin: 0 2px; }

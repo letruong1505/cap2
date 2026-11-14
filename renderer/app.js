@@ -269,6 +269,10 @@ function updateScore(lesson, attempt) {
     }
   });
   box.append(el('p', { class: 'score-total' }, el('b', {}, `${correct}/${total}`), ' câu đúng'));
+  if (window.VungProgress) {
+    const P = window.VungProgress;
+    box.append(el('p', { class: 'score-total' }, 'Điểm: ', el('b', {}, `${P.score10(correct, total)}/10`), ` · +${P.points(correct, total)} điểm thưởng`));
+  }
   if (wrong.length > 0) {
     const list = el('ul', { class: 'wrong-list' });
     for (const w of wrong) {

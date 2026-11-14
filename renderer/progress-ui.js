@@ -30,6 +30,35 @@
     P.save(store(), data);
   }
 
+  const bar = (v, max) => {
+    const pct = Math.min(100, Math.round((100 * v) / max));
+    return h('div', { class: 'goal-bar', role: 'progressbar', 'aria-valuenow': v, 'aria-valuemax': max },
+      h('div', { class: 'goal-fill' + (v >= max ? ' done' : ''), style: `width:${pct}%` }));
+  };
+
+  /* Khối mục tiêu ngày/tuần và điểm; grade = 0 là tất cả các lớp. */
+  function renderGoals(box, grade) {
+    if (!box || !P) return;
+    box.replaceChildren();
+    const data = P.load(store());
+    const p = P.progress(data, Date.now(), grade);
+    const g = p.goals;
+    box.append(h('h2', {}, grade ? `Mục tiêu · Lớp ${grade}` : 'Mục tiêu học tập'));
+    box.append(h('p', {}, `Hôm nay: ${p.todayDone}/${g.daily} câu${p.todayDone >= g.daily ? ' – đạt mục tiêu!' : ''}`), bar(p.todayDone, g.daily));
+    box.append(h('p', {}, `Tuần này: ${p.daysDone}/${g.weekly} ngày học${p.daysDone >= g.weekly ? ' – đạt mục tiêu!' : ''}`), bar(p.daysDone, g.weekly));
+    box.append(h('p', { class: 'meta' }, `Điểm: hôm nay ${p.todayPts} · 7 ngày ${p.weekPts} · tổng ${p.totalPts}`));
+    const mk = (opts, cur, label) => {
+      const sel = h('select', { 'aria-label': label });
+      opts.forEach((o) => { const op = h('option', { value: o }, String(o)); if (o === cur) op.selected = true; sel.append(op); });
+      return sel;
+    };
+    const d = mk([10, 15, 20, 30, 40, 50, 80, 100], g.daily, 'Số câu mỗi ngày');
+    const w = mk([1, 2, 3, 4, 5, 6, 7], g.weekly, 'Số ngày học mỗi tuần');
+    const apply = () => { P.save(store(), P.setGoals(P.load(store()), { daily: d.value, weekly: w.value })); renderGoals(box, grade); };
+    d.addEventListener('change', apply); w.addEventListener('change', apply);
+    box.append(h('p', { class: 'goal-set' }, 'Đặt mục tiêu: ', d, ' câu/ngày, ', w, ' ngày/tuần'));
+  }
+
   function dueCount(grade) { return P ? P.due(P.load(store()), Date.now(), grade).length : 0; }
 
   /* ---------- Sổ câu sai ---------- */
@@ -101,7 +130,8 @@
   function lines(w) {
     const out = [];
     if (w.grade) out.push(`Lớp ${w.grade}`);
-    out.push(`Số ngày học trong 7 ngày: ${w.days}/7`);
+    out.push(`Số ngày học trong 7 ngày: ${w.days}/7 (mục tiêu ${w.prog.goals.weekly} ngày)`);
+    out.push(`Điểm 7 ngày: ${w.prog.weekPts}, tổng điểm: ${w.prog.totalPts}`);
     out.push(`Số bài đã nộp: ${w.attempts}, thời gian làm: ${w.minutes} phút`);
     out.push(w.total ? `Tỉ lệ đúng chung: ${w.pct}% (${w.correct}/${w.total} câu)` : 'Chưa có bài nào trong tuần này');
     w.subjects.forEach((s) => out.push(`${subjName(s.subject)} lớp ${s.grade}: ${s.pct}% (${s.lessons} bài)`));
@@ -139,6 +169,8 @@
     const ul = h('ul', { class: 'report-list' });
     lines(w).forEach((t) => ul.append(h('li', {}, t.replace(/^\s*•\s*/, ''))));
     body.append(ul);
+    body.append(h('div', { class: 'goal-box', id: 'goal-box-report' }));
+    renderGoals(document.getElementById('goal-box-report') || body.lastChild, grade);
     const nameIn = h('input', { type: 'text', placeholder: 'Tên học sinh (không bắt buộc)', autocomplete: 'off', 'aria-label': 'Tên học sinh' });
     const btn = h('button', { type: 'button', class: 'primary' }, 'Lưu ảnh báo cáo gửi Zalo');
     const msg = h('p', { class: 'meta' });
@@ -159,9 +191,11 @@
       if (b) b.textContent = n ? `${label} (${n} câu cần ôn)` : label;
     };
     set('open-review', 'Sổ câu sai', dueCount());
+    renderGoals(document.getElementById('goal-box'), 0);
     const g = window.VungProgressUI && window.VungProgressUI.scope;
+    renderGoals(document.getElementById('goal-box-grade'), g || 0);
     if (g) set('open-review-grade', `Sổ câu sai lớp ${g}`, dueCount(g));
   }
 
-  window.VungProgressUI = { scope: 0, record, renderReview, renderReport, refreshBadge, dueCount };
+  window.VungProgressUI = { scope: 0, renderGoals, record, renderReview, renderReport, refreshBadge, dueCount };
 })();
