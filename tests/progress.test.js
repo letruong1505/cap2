@@ -71,3 +71,17 @@ test('lưu và nạp qua storage, dữ liệu hỏng thì trả rỗng', () => {
   mem[P.KEY] = '{hỏng';
   assert.deepEqual(P.load(st), { attempts: [], notebook: [] });
 });
+
+test('lọc theo lớp: báo cáo và hạn ôn chỉ tính lớp được chọn', () => {
+  const d = { attempts: [], notebook: [] };
+  P.recordAttempt(d, meta({ grade: 6, lessonId: 'toan6/a', correct: 5, total: 10 }), [item('q1')], [], T0);
+  P.recordAttempt(d, meta({ grade: 7, lessonId: 'toan7/a', correct: 9, total: 10 }), [item('q2')], [], T0);
+  const w7 = P.weekly(d, T0, 7);
+  assert.equal(w7.total, 10);
+  assert.equal(w7.pct, 90);
+  assert.equal(w7.notebook, 1);
+  assert.equal(w7.grade, 7);
+  assert.equal(P.weekly(d, T0).total, 20);
+  assert.equal(P.due(d, T0 + DAY, 6).length, 1);
+  assert.equal(P.due(d, T0 + DAY).length, 2);
+});

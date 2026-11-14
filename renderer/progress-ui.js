@@ -30,21 +30,22 @@
     P.save(store(), data);
   }
 
-  function dueCount() { return P ? P.due(P.load(store())).length : 0; }
+  function dueCount(grade) { return P ? P.due(P.load(store()), Date.now(), grade).length : 0; }
 
   /* ---------- Sổ câu sai ---------- */
-  function renderReview(body) {
+  function renderReview(body, grade) {
     body.replaceChildren();
     const data = P.load(store());
-    const list = P.due(data);
-    body.append(h('h1', {}, 'Sổ câu sai'));
-    if (!data.notebook.length) {
+    const all = grade ? data.notebook.filter((n) => n.grade === grade) : data.notebook;
+    const list = P.due(data, Date.now(), grade);
+    body.append(h('h1', {}, grade ? `Sổ câu sai · Lớp ${grade}` : 'Sổ câu sai'));
+    if (!all.length) {
       body.append(h('p', { class: 'meta' }, 'Chưa có câu sai nào. Khi làm bài và bấm "Kiểm tra toàn bài", các câu sai sẽ được lưu ở đây để ôn lại.'));
       return;
     }
-    body.append(h('p', { class: 'meta' }, `Trong sổ có ${data.notebook.length} câu, ${list.length} câu đến hạn ôn hôm nay. Làm đúng ba lần cách quãng 1, 3, 7 ngày thì câu được xóa khỏi sổ.`));
+    body.append(h('p', { class: 'meta' }, `Trong sổ có ${all.length} câu, ${list.length} câu đến hạn ôn hôm nay. Làm đúng ba lần cách quãng 1, 3, 7 ngày thì câu được xóa khỏi sổ.`));
     if (!list.length) {
-      const next = Math.min(...data.notebook.map((n) => n.due));
+      const next = Math.min(...all.map((n) => n.due));
       body.append(h('p', {}, `Hôm nay chưa có câu cần ôn. Lượt ôn tiếp theo: ${fmtDate(next)}.`));
       return;
     }
@@ -99,6 +100,7 @@
   /* ---------- Báo cáo tuần ---------- */
   function lines(w) {
     const out = [];
+    if (w.grade) out.push(`Lớp ${w.grade}`);
     out.push(`Số ngày học trong 7 ngày: ${w.days}/7`);
     out.push(`Số bài đã nộp: ${w.attempts}, thời gian làm: ${w.minutes} phút`);
     out.push(w.total ? `Tỉ lệ đúng chung: ${w.pct}% (${w.correct}/${w.total} câu)` : 'Chưa có bài nào trong tuần này');
@@ -119,7 +121,7 @@
     g.fillStyle = '#fff'; g.fillRect(0, 0, c.width, c.height);
     g.fillStyle = '#1f6f8b'; g.fillRect(0, 0, c.width, 110);
     g.fillStyle = '#fff'; g.font = 'bold 34px sans-serif';
-    g.fillText('Báo cáo tuần – Nam Linh Educenter', 36, 52);
+    g.fillText(w.grade ? `Báo cáo tuần Lớp ${w.grade} – Nam Linh Educenter` : 'Báo cáo tuần – Nam Linh Educenter', 36, 52);
     g.font = '22px sans-serif';
     g.fillText(`${name ? name + ' · ' : ''}${fmtDate(w.from)} – ${fmtDate(w.to)}`, 36, 88);
     g.fillStyle = '#222'; g.font = '24px sans-serif';
@@ -129,10 +131,10 @@
     return c;
   }
 
-  function renderReport(body) {
+  function renderReport(body, grade) {
     body.replaceChildren();
-    const w = P.weekly(P.load(store()));
-    body.append(h('h1', {}, 'Báo cáo tuần cho phụ huynh'));
+    const w = P.weekly(P.load(store()), Date.now(), grade);
+    body.append(h('h1', {}, grade ? `Báo cáo tuần cho phụ huynh · Lớp ${grade}` : 'Báo cáo tuần cho phụ huynh'));
     body.append(h('p', { class: 'meta' }, `7 ngày gần nhất: ${fmtDate(w.from)} – ${fmtDate(w.to)}`));
     const ul = h('ul', { class: 'report-list' });
     lines(w).forEach((t) => ul.append(h('li', {}, t.replace(/^\s*•\s*/, ''))));
@@ -143,7 +145,7 @@
     btn.addEventListener('click', () => {
       drawPng(w, nameIn.value.trim()).toBlob((blob) => {
         if (!blob) { msg.textContent = 'Không tạo được ảnh.'; return; }
-        const a = h('a', { download: `bao-cao-tuan-${new Date().toISOString().slice(0, 10)}.png`, href: URL.createObjectURL(blob) });
+        const a = h('a', { download: `bao-cao-tuan${grade ? '-lop' + grade : ''}-${new Date().toISOString().slice(0, 10)}.png`, href: URL.createObjectURL(blob) });
         document.body.append(a); a.click(); a.remove();
         msg.textContent = 'Đã tạo ảnh báo cáo. Chọn nơi lưu rồi gửi cho phụ huynh qua Zalo.';
       }, 'image/png');
@@ -152,10 +154,14 @@
   }
 
   function refreshBadge() {
-    const n = dueCount();
-    const b = document.getElementById('open-review');
-    if (b) b.textContent = n ? `Sổ câu sai (${n} câu cần ôn)` : 'Sổ câu sai';
+    const set = (id, label, n) => {
+      const b = document.getElementById(id);
+      if (b) b.textContent = n ? `${label} (${n} câu cần ôn)` : label;
+    };
+    set('open-review', 'Sổ câu sai', dueCount());
+    const g = window.VungProgressUI && window.VungProgressUI.scope;
+    if (g) set('open-review-grade', `Sổ câu sai lớp ${g}`, dueCount(g));
   }
 
-  window.VungProgressUI = { record, renderReview, renderReport, refreshBadge, dueCount };
+  window.VungProgressUI = { scope: 0, record, renderReview, renderReport, refreshBadge, dueCount };
 })();

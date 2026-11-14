@@ -647,6 +647,11 @@ function showSubjects(grade) {
   const title = document.querySelector('#subjects h1');
   if (title) title.textContent = 'Chọn môn học';
   document.getElementById('subjects-kicker').textContent = `Lớp ${grade}`;
+  if (window.VungProgressUI) {
+    window.VungProgressUI.scope = grade;
+    document.getElementById('open-report-grade').textContent = `Báo cáo tuần lớp ${grade}`;
+    window.VungProgressUI.refreshBadge();
+  }
   document.getElementById('breadcrumb').textContent = '';
   const box = document.getElementById('subject-list');
   box.replaceChildren();
@@ -725,10 +730,20 @@ async function init() {
     document.getElementById('btn-grades').addEventListener('click', () => showLaunch());
     document.getElementById('btn-national-back').addEventListener('click', () => showLaunch());
     document.getElementById('open-national').addEventListener('click', () => showNational());
-    document.getElementById('open-review').addEventListener('click', () => { window.VungProgressUI.renderReview(document.getElementById('review-body')); showOnly('review'); });
-    document.getElementById('open-report').addEventListener('click', () => { window.VungProgressUI.renderReport(document.getElementById('report-body')); showOnly('report'); });
-    document.getElementById('btn-review-back').addEventListener('click', () => showLaunch());
-    document.getElementById('btn-report-back').addEventListener('click', () => showLaunch());
+    const openProg = (kind, grade) => {
+      const ui = window.VungProgressUI;
+      ui.scope = grade;
+      if (kind === 'review') ui.renderReview(document.getElementById('review-body'), grade);
+      else ui.renderReport(document.getElementById('report-body'), grade);
+      showOnly(kind);
+    };
+    const backProg = () => (window.VungProgressUI.scope ? showSubjects(window.VungProgressUI.scope) : showLaunch());
+    document.getElementById('open-review').addEventListener('click', () => openProg('review', 0));
+    document.getElementById('open-report').addEventListener('click', () => openProg('report', 0));
+    document.getElementById('open-review-grade').addEventListener('click', () => openProg('review', currentGrade));
+    document.getElementById('open-report-grade').addEventListener('click', () => openProg('report', currentGrade));
+    document.getElementById('btn-review-back').addEventListener('click', backProg);
+    document.getElementById('btn-report-back').addEventListener('click', backProg);
     document.getElementById('open-purchase').addEventListener('click', () => showPurchase());
     document.getElementById('btn-purchase-back').addEventListener('click', () => showLaunch());
     renderGrades();

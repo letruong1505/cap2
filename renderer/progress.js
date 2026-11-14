@@ -80,18 +80,19 @@
     else n.due = now + INTERVALS[n.box] * DAY;
   }
 
-  function due(data, now) {
+  function due(data, now, grade) {
     now = now || Date.now();
-    return data.notebook.filter((n) => n.due <= now).sort((a, b) => a.due - b.due);
+    return data.notebook.filter((n) => n.due <= now && (!grade || n.grade === grade)).sort((a, b) => a.due - b.due);
   }
 
   function startOfDay(t) { const d = new Date(t); d.setHours(0, 0, 0, 0); return d.getTime(); }
 
   /* Báo cáo 7 ngày gần nhất (tính cả hôm nay). */
-  function weekly(data, now) {
+  function weekly(data, now, grade) {
     now = now || Date.now();
     const from = startOfDay(now) - 6 * DAY;
-    const list = data.attempts.filter((a) => a.t >= from && a.t <= now + DAY);
+    const list = data.attempts.filter((a) => a.t >= from && a.t <= now + DAY && (!grade || a.grade === grade));
+    const book = grade ? data.notebook.filter((n) => n.grade === grade) : data.notebook;
     const days = new Set(list.map((a) => startOfDay(a.t)));
     const subj = {}, chap = {};
     let correct = 0, total = 0, seconds = 0;
@@ -111,7 +112,7 @@
     return {
       from, to: startOfDay(now), attempts: list.length, days: days.size,
       minutes: Math.round(seconds / 60), correct, total, pct: pct({ correct, total }),
-      subjects, weak, notebook: data.notebook.length, dueCount: due(data, now).length,
+      subjects, weak, notebook: book.length, dueCount: due(data, now, grade).length, grade: grade || 0,
     };
   }
 
