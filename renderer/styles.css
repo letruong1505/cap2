@@ -459,6 +459,7 @@ button.link {
   main:has(#launch:not([hidden])), main:has(#national:not([hidden])) { max-width: 1840px; padding: 24px 40px; }
   #launch { padding: 22px 40px; }
   #launch .launch-head { display: grid; grid-template-columns: 1fr auto; align-items: end; column-gap: 24px; }
+  #launch .launch-head .quote { grid-column: 1 / -1; max-width: none; margin: 0 0 18px; }
   #launch .launch-head .hello { grid-column: 1; }
   #launch .launch-head .greeting { grid-column: 1; margin-bottom: 6px; }
   #launch .launch-head h1 { grid-column: 1; font-size: 36px; }
