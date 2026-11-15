@@ -1,0 +1,303 @@
+{
+  "id": "bai-1",
+  "grade": 12,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 12",
+  "chapter": "Chương I. Di truyền phân tử",
+  "lesson": "Bài 1. DNA và cơ chế tái bản DNA",
+  "section": "",
+  "bookPage": 5,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Chức năng của DNA: mang, bảo quản và truyền đạt thông tin di truyền. DNA cấu trúc theo nguyên tắc đa phân gồm 4 loại nucleotide A, T, G, C (như “chữ cái” ghi mã thông tin); cấu trúc xoắn kép bền vững nên bảo quản thông tin ít hư hỏng; các nucleotide liên kết theo nguyên tắc bổ sung (NTBS) A – T, G – C nên thông tin được truyền sang mRNA qua phiên mã rồi thành protein qua dịch mã và được truyền nguyên vẹn qua tái bản."
+    },
+    {
+      "type": "text",
+      "content": "Tái bản DNA bắt đầu từ điểm khởi đầu sao chép (Ori), tiến hành theo hai hướng ngược nhau tạo đơn vị tái bản và chạc sao chép hình chữ Y. Giai đoạn khởi đầu: protein và enzyme tách DNA thành hai mạch đơn; RNA polymerase tổng hợp đoạn mồi RNA ngắn cung cấp đầu 3’-OH. Giai đoạn tổng hợp mạch mới: DNA polymerase gắn nucleotide vào đầu 3’ của đoạn mồi theo NTBS (A – T, G – C), mạch mới tổng hợp theo chiều 5’ → 3’; một mạch tổng hợp liên tục (mạch liên tục), mạch kia tổng hợp từng đoạn ngắn (đoạn Okazaki, mạch gián đoạn); sau đó loại mồi, thay bằng DNA và enzyme nối gắn các đoạn Okazaki."
+    },
+    {
+      "type": "text",
+      "content": "Kết quả: từ một phân tử DNA mẹ tạo ra hai phân tử DNA con giống nhau và giống mẹ, mỗi phân tử có một mạch cũ và một mạch mới (nguyên tắc bán bảo toàn). Ở sinh vật nhân sơ, DNA có một điểm Ori; ở sinh vật nhân thực có nhiều điểm Ori nên tái bản xảy ra đồng thời tại nhiều vùng, có nhiều loại DNA polymerase hơn. Ứng dụng: nhân bản DNA trong ống nghiệm (PCR) để pháp y, chẩn đoán bệnh, giải trình tự gene, công nghệ di truyền."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một phân tử DNA có 20% nucleotide loại A. Theo NTBS, A = T nên tỉ lệ G bằng bao nhiêu %?",
+      "steps": [
+        "A = T = 20% nên A + T = 40%.",
+        "G + C = 100 − 40 = 60%, mà G = C nên G = 30%."
+      ],
+      "expr": "(100-2*20)/2",
+      "answer": "30"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Chức năng của DNA là:",
+      "choices": [
+        "Xúc tác phản ứng sinh hóa",
+        "Mang, bảo quản và truyền đạt thông tin di truyền",
+        "Cung cấp năng lượng",
+        "Vận chuyển amino acid"
+      ],
+      "answer": 1,
+      "explain": "DNA là vật chất di truyền.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: DNA là vật chất di truyền.",
+        "2": "Chưa đúng với nội dung bài học: DNA là vật chất di truyền.",
+        "3": "Chưa đúng với nội dung bài học: DNA là vật chất di truyền."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nguyên tắc bổ sung giữa các nucleotide trong DNA là:",
+      "choices": [
+        "A – T và G – C",
+        "A – G và T – C",
+        "A – C và G – T",
+        "A – U và G – C"
+      ],
+      "answer": 0,
+      "explain": "U có trong RNA.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: U có trong RNA.",
+        "2": "Chưa đúng với nội dung bài học: U có trong RNA.",
+        "3": "Chưa đúng với nội dung bài học: U có trong RNA."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tái bản DNA diễn ra theo nguyên tắc:",
+      "choices": [
+        "Bảo toàn",
+        "Phân tán",
+        "Bán bảo toàn và bổ sung",
+        "Chỉ nguyên tắc bổ sung"
+      ],
+      "answer": 2,
+      "explain": "Mỗi DNA con có một mạch cũ, một mạch mới.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Mỗi DNA con có một mạch cũ, một mạch mới.",
+        "1": "Chưa đúng với nội dung bài học: Mỗi DNA con có một mạch cũ, một mạch mới.",
+        "3": "Chưa đúng với nội dung bài học: Mỗi DNA con có một mạch cũ, một mạch mới."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Enzyme tổng hợp mạch DNA mới là:",
+      "choices": [
+        "RNA polymerase",
+        "Ligase chỉ tách mạch",
+        "Telomerase",
+        "DNA polymerase"
+      ],
+      "answer": 3,
+      "explain": "Gắn nucleotide vào đầu 3’.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Gắn nucleotide vào đầu 3’.",
+        "1": "Chưa đúng với nội dung bài học: Gắn nucleotide vào đầu 3’.",
+        "2": "Chưa đúng với nội dung bài học: Gắn nucleotide vào đầu 3’."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đoạn DNA ngắn được tổng hợp trên mạch gián đoạn gọi là:",
+      "choices": [
+        "Đoạn mồi",
+        "Đoạn Okazaki",
+        "Intron",
+        "Exon"
+      ],
+      "answer": 1,
+      "explain": "Sau đó được enzyme nối gắn lại.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Sau đó được enzyme nối gắn lại.",
+        "2": "Chưa đúng với nội dung bài học: Sau đó được enzyme nối gắn lại.",
+        "3": "Chưa đúng với nội dung bài học: Sau đó được enzyme nối gắn lại."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Mạch mới của DNA luôn được tổng hợp theo chiều:",
+      "choices": [
+        "3’ → 5’",
+        "Cả hai chiều",
+        "5’ → 3’",
+        "Ngẫu nhiên"
+      ],
+      "answer": 2,
+      "explain": "DNA polymerase gắn nucleotide vào đầu 3’.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: DNA polymerase gắn nucleotide vào đầu 3’.",
+        "1": "Chưa đúng với nội dung bài học: DNA polymerase gắn nucleotide vào đầu 3’.",
+        "3": "Chưa đúng với nội dung bài học: DNA polymerase gắn nucleotide vào đầu 3’."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao một mạch DNA mới tổng hợp liên tục, mạch kia gián đoạn?",
+      "choices": [
+        "Hai mạch DNA ngược chiều nhau mà enzyme chỉ tổng hợp theo chiều 5’ → 3’",
+        "Do thiếu nucleotide",
+        "Do tế bào chết",
+        "Do enzyme hỏng"
+      ],
+      "answer": 0,
+      "explain": "Cấu trúc ngược chiều của DNA.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: Cấu trúc ngược chiều của DNA.",
+        "2": "Chưa đúng với nội dung bài học: Cấu trúc ngược chiều của DNA.",
+        "3": "Chưa đúng với nội dung bài học: Cấu trúc ngược chiều của DNA."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Điểm khác nhau của tái bản ở sinh vật nhân thực so với nhân sơ là:",
+      "choices": [
+        "Chỉ có một điểm Ori",
+        "Không cần DNA polymerase",
+        "Không theo NTBS",
+        "Có nhiều điểm khởi đầu sao chép trên một phân tử DNA"
+      ],
+      "answer": 3,
+      "explain": "Tái bản đồng thời nhiều vùng.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Tái bản đồng thời nhiều vùng.",
+        "1": "Chưa đúng với nội dung bài học: Tái bản đồng thời nhiều vùng.",
+        "2": "Chưa đúng với nội dung bài học: Tái bản đồng thời nhiều vùng."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Đoạn mồi cung cấp:",
+      "choices": [
+        "Năng lượng cho tế bào",
+        "Đầu 3’-OH cho DNA polymerase tổng hợp mạch mới",
+        "Amino acid",
+        "Enzyme nối"
+      ],
+      "answer": 1,
+      "explain": "Do RNA polymerase tổng hợp.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Do RNA polymerase tổng hợp.",
+        "2": "Chưa đúng với nội dung bài học: Do RNA polymerase tổng hợp.",
+        "3": "Chưa đúng với nội dung bài học: Do RNA polymerase tổng hợp."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao DNA bền vững hơn khi có nhiều cặp G – C?",
+      "choices": [
+        "Cặp G – C có 3 liên kết hydrogen, nhiều hơn cặp A – T (2 liên kết)",
+        "Cặp G – C có 1 liên kết",
+        "G – C và A – T đều 2 liên kết",
+        "G – C không liên kết"
+      ],
+      "answer": 0,
+      "explain": "Nhiều liên kết hydrogen thì bền hơn.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: Nhiều liên kết hydrogen thì bền hơn.",
+        "2": "Chưa đúng với nội dung bài học: Nhiều liên kết hydrogen thì bền hơn.",
+        "3": "Chưa đúng với nội dung bài học: Nhiều liên kết hydrogen thì bền hơn."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cặp A – T có 2 liên kết hydrogen, cặp G – C có 3. Một đoạn DNA có 10 cặp A – T và 10 cặp G – C. Tổng số liên kết hydrogen là bao nhiêu?",
+      "expr": "10*2+10*3",
+      "answer": "50",
+      "explain": "10 × 2 + 10 × 3 = 50.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một phân tử DNA có G chiếm 35%. A chiếm bao nhiêu %?",
+      "expr": "50-35",
+      "answer": "15",
+      "explain": "G + A = 50% nên A = 50 − 35 = 15%.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một gene có 3000 nucleotide, trong đó A = 600. Số nucleotide loại G là bao nhiêu?",
+      "expr": "3000/2-600",
+      "answer": "900",
+      "explain": "A + G = 1500 nên G = 1500 − 600 = 900.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một phân tử DNA nhân đôi 3 lần liên tiếp. Tổng số phân tử DNA con tạo thành là bao nhiêu?",
+      "expr": "2*2*2",
+      "answer": "8",
+      "explain": "2³ = 8.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một DNA nhân đôi 3 lần. Số phân tử DNA con còn chứa mạch DNA gốc ban đầu là bao nhiêu (theo bán bảo toàn)?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Luôn có 2 phân tử chứa mỗi một mạch gốc.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Dựa vào sự khác biệt giữa enzyme tái bản ở vi khuẩn và ở người, có thể sản xuất thuốc kháng khuẩn như thế nào?",
+      "choices": [
+        "Thuốc ức chế mọi DNA polymerase",
+        "Thuốc tăng tái bản vi khuẩn",
+        "Thuốc ức chế đặc hiệu enzyme tái bản của vi khuẩn, ít ảnh hưởng tế bào người",
+        "Không thể thực hiện"
+      ],
+      "answer": 2,
+      "explain": "Enzyme vi khuẩn khác enzyme người.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Enzyme vi khuẩn khác enzyme người.",
+        "1": "Chưa đúng với nội dung bài học: Enzyme vi khuẩn khác enzyme người.",
+        "3": "Chưa đúng với nội dung bài học: Enzyme vi khuẩn khác enzyme người."
+      },
+      "id": "q16"
+    }
+  ]
+}

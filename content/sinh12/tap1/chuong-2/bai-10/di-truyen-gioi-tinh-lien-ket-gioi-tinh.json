@@ -1,0 +1,303 @@
+{
+  "id": "bai-10",
+  "grade": 12,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 12",
+  "chapter": "Chương II. Di truyền nhiễm sắc thể",
+  "lesson": "Bài 10. Di truyền giới tính và di truyền liên kết với giới tính",
+  "section": "",
+  "bookPage": 50,
+  "theory": [
+    {
+      "type": "text",
+      "content": "NST giới tính là NST mang gene quy định giới tính (và cả gene không quy định giới tính); có thể tồn tại thành cặp tương đồng hoặc không tương đồng. Ở người XX là nữ, XY là nam; NST Y và X có vùng tương đồng (PAR1, PAR2) và vùng không tương đồng; gene SRY trên NST Y quyết định giới tính nam. Các kiểu di truyền giới tính: XX – XY (người, thú, ruồi giấm), ZZ – ZW (chim, một số cá và côn trùng, con đực ZZ, con cái ZW), XX – XO (châu chấu, dế). Ong, kiến: con cái lưỡng bội từ trứng thụ tinh, con đực đơn bội từ trứng không thụ tinh; rùa, cá sấu: nhiệt độ môi trường quyết định giới tính. Tỉ lệ giới tính 1 : 1 vì giao tử mang X và Y tạo ra với tỉ lệ bằng nhau, xác suất sinh con trai hay gái đều 50%."
+    },
+    {
+      "type": "text",
+      "content": "Di truyền liên kết với giới tính là sự di truyền tính trạng do gene nằm trên NST giới tính. Morgan (1910) phát hiện ở ruồi giấm: ruồi đực mắt trắng duy nhất; phép lai thuận (cái mắt đỏ × đực mắt trắng) và nghịch cho kết quả khác nhau, chứng tỏ gene quy định màu mắt nằm trên NST X ở vùng không tương đồng với Y. Ở người: bệnh máu khó đông, mù màu do allele lặn trên X (biểu hiện chủ yếu ở nam vì chỉ cần một allele lặn); còi xương do giảm phosphate máu do allele trội trên X. Liên kết với Y hiếm gặp (túm lông trên vành tai, truyền từ bố cho con trai)."
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: phân biệt sớm giới tính vật nuôi nhờ tính trạng liên kết giới tính (màu trứng tằm để chọn tằm đực cho nhiều tơ), chuyển gene kháng thuốc sang NST Y ở muỗi để thu muỗi đực nhân nuôi phòng trừ bằng thả đực bất dục. Bất hoạt NST X ở nữ: mỗi tế bào chỉ một X hoạt động, đảm bảo lượng sản phẩm gene trên X ở hai giới như nhau."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Người mẹ XAXa (mang allele lặn bệnh) và bố XAY. Xác suất sinh con trai bị bệnh là bao nhiêu % trong tổng số con?",
+      "steps": [
+        "Con gồm 1/4 XAXA, 1/4 XAXa, 1/4 XAY, 1/4 XaY.",
+        "XaY chiếm 1/4 = 25%."
+      ],
+      "expr": "1/4*100",
+      "answer": "25"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Cặp NST giới tính của người nam là:",
+      "choices": [
+        "XX",
+        "XO",
+        "ZW",
+        "XY"
+      ],
+      "answer": 3,
+      "explain": "Nữ là XX.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Nữ là XX.",
+        "1": "Chưa đúng với nội dung bài học: Nữ là XX.",
+        "2": "Chưa đúng với nội dung bài học: Nữ là XX."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Gene quyết định giới tính nam ở người là:",
+      "choices": [
+        "SRY trên NST X",
+        "SRY trên NST Y",
+        "DMD",
+        "CFTR"
+      ],
+      "answer": 1,
+      "explain": "Nằm trên Y.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Nằm trên Y.",
+        "2": "Chưa đúng với nội dung bài học: Nằm trên Y.",
+        "3": "Chưa đúng với nội dung bài học: Nằm trên Y."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Ở chim, con cái có cặp NST giới tính là:",
+      "choices": [
+        "ZZ",
+        "XX",
+        "ZW",
+        "XY"
+      ],
+      "answer": 2,
+      "explain": "Con đực ZZ.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Con đực ZZ.",
+        "1": "Chưa đúng với nội dung bài học: Con đực ZZ.",
+        "3": "Chưa đúng với nội dung bài học: Con đực ZZ."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Người phát hiện di truyền liên kết với giới tính ở ruồi giấm là:",
+      "choices": [
+        "Morgan",
+        "Mendel",
+        "Watson",
+        "Darwin"
+      ],
+      "answer": 0,
+      "explain": "Gene màu mắt nằm trên X.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: Gene màu mắt nằm trên X.",
+        "2": "Chưa đúng với nội dung bài học: Gene màu mắt nằm trên X.",
+        "3": "Chưa đúng với nội dung bài học: Gene màu mắt nằm trên X."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Bệnh do allele lặn trên NST X ở người là:",
+      "choices": [
+        "Hồng cầu hình liềm",
+        "Phenylketone niệu",
+        "Bạch tạng",
+        "Máu khó đông, mù màu"
+      ],
+      "answer": 3,
+      "explain": "Biểu hiện chủ yếu ở nam.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Biểu hiện chủ yếu ở nam.",
+        "1": "Chưa đúng với nội dung bài học: Biểu hiện chủ yếu ở nam.",
+        "2": "Chưa đúng với nội dung bài học: Biểu hiện chủ yếu ở nam."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tỉ lệ đực : cái là 1 : 1 vì:",
+      "choices": [
+        "Con đực tạo ít tinh trùng",
+        "Hai loại giao tử mang X và Y tạo ra với tỉ lệ bằng nhau",
+        "Con cái sinh nhiều hơn",
+        "Do môi trường"
+      ],
+      "answer": 1,
+      "explain": "Tổ hợp ngẫu nhiên khi thụ tinh.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Tổ hợp ngẫu nhiên khi thụ tinh.",
+        "2": "Chưa đúng với nội dung bài học: Tổ hợp ngẫu nhiên khi thụ tinh.",
+        "3": "Chưa đúng với nội dung bài học: Tổ hợp ngẫu nhiên khi thụ tinh."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Bệnh lặn trên X biểu hiện chủ yếu ở nam vì:",
+      "choices": [
+        "Nam chỉ có một NST X nên một allele lặn đã biểu hiện",
+        "Nam có hai NST X",
+        "Nữ không có X",
+        "Allele lặn trên Y"
+      ],
+      "answer": 0,
+      "explain": "Nữ cần hai allele lặn.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: Nữ cần hai allele lặn.",
+        "2": "Chưa đúng với nội dung bài học: Nữ cần hai allele lặn.",
+        "3": "Chưa đúng với nội dung bài học: Nữ cần hai allele lặn."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ở ong, con đực phát triển từ:",
+      "choices": [
+        "Trứng thụ tinh",
+        "Hợp tử lưỡng bội",
+        "Trứng không được thụ tinh, cơ thể đơn bội",
+        "Tinh trùng"
+      ],
+      "answer": 2,
+      "explain": "Giới tính do mức bội thể.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Giới tính do mức bội thể.",
+        "1": "Chưa đúng với nội dung bài học: Giới tính do mức bội thể.",
+        "3": "Chưa đúng với nội dung bài học: Giới tính do mức bội thể."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tính trạng liên kết Y di truyền:",
+      "choices": [
+        "Từ mẹ cho con gái",
+        "Cả hai giới như nhau",
+        "Chỉ từ mẹ",
+        "Từ bố cho con trai"
+      ],
+      "answer": 3,
+      "explain": "Y chỉ có ở nam.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Y chỉ có ở nam.",
+        "1": "Chưa đúng với nội dung bài học: Y chỉ có ở nam.",
+        "2": "Chưa đúng với nội dung bài học: Y chỉ có ở nam."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Kết quả lai thuận nghịch khác nhau gợi ý gene nằm trên:",
+      "choices": [
+        "NST thường",
+        "NST giới tính",
+        "Ti thể",
+        "Chỉ trong nhân con"
+      ],
+      "answer": 1,
+      "explain": "Đặc điểm di truyền liên kết giới tính.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Đặc điểm di truyền liên kết giới tính.",
+        "2": "Chưa đúng với nội dung bài học: Đặc điểm di truyền liên kết giới tính.",
+        "3": "Chưa đúng với nội dung bài học: Đặc điểm di truyền liên kết giới tính."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Xác suất sinh con trai bằng bao nhiêu %?",
+      "expr": "1/2*100",
+      "answer": "50",
+      "explain": "Một nửa.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mẹ XAXa × bố XaY. Xác suất con gái bị bệnh (XaXa) trong tổng số con là bao nhiêu %?",
+      "expr": "1/4*100",
+      "answer": "25",
+      "explain": "Con gái XaXa chiếm 1/4.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mẹ XAXa × bố XAY, có 400 con. Số con trai bị bệnh dự kiến là bao nhiêu?",
+      "expr": "400/4",
+      "answer": "100",
+      "explain": "XaY chiếm 1/4.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bố bình thường XAY, mẹ XAXa. Trong số con trai, xác suất con trai bị bệnh là bao nhiêu %?",
+      "expr": "1/2*100",
+      "answer": "50",
+      "explain": "Con trai nhận Xa với xác suất 1/2.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Con người có 46 NST trong đó 44 NST thường. Số NST giới tính là bao nhiêu?",
+      "expr": "46-44",
+      "answer": "2",
+      "explain": "46 − 44 = 2.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Ở gà, để phân biệt gene trên NST thường với gene trên Z không có alen trên W nên dùng:",
+      "choices": [
+        "Chỉ lai thuận",
+        "Lai phân tích một chiều",
+        "Phép lai thuận nghịch, nếu kết quả khác nhau là liên kết Z",
+        "Tự thụ phấn"
+      ],
+      "answer": 2,
+      "explain": "Kết quả hai phép lai khác nhau chứng tỏ liên kết giới tính.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Kết quả hai phép lai khác nhau chứng tỏ liên kết giới tính.",
+        "1": "Chưa đúng với nội dung bài học: Kết quả hai phép lai khác nhau chứng tỏ liên kết giới tính.",
+        "3": "Chưa đúng với nội dung bài học: Kết quả hai phép lai khác nhau chứng tỏ liên kết giới tính."
+      },
+      "id": "q16"
+    }
+  ]
+}

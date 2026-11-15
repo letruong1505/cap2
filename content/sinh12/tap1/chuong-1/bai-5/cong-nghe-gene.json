@@ -1,0 +1,303 @@
+{
+  "id": "bai-5",
+  "grade": 12,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 12",
+  "chapter": "Chương I. Di truyền phân tử",
+  "lesson": "Bài 5. Công nghệ gene",
+  "section": "",
+  "bookPage": 27,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Công nghệ gene là quy trình kĩ thuật sử dụng công nghệ DNA tái tổ hợp để thay đổi kiểu gene và kiểu hình của sinh vật, tạo ra các sản phẩm protein ứng dụng thực tiễn; gồm công nghệ DNA tái tổ hợp và công nghệ tạo sinh vật biến đổi gene. Công nghệ DNA tái tổ hợp là quy trình tạo phân tử DNA từ hai nguồn khác nhau (thường hai loài) rồi chuyển vào tế bào nhận; DNA tái tổ hợp gồm gene chuyển và DNA vector (vector phải tái bản được và đảm bảo gene chuyển phiên mã, dịch mã trong tế bào nhận). Nguyên lí: tách chiết gene, nhân bản gene, cắt và ghép nối DNA để tạo sản phẩm có chức năng."
+    },
+    {
+      "type": "text",
+      "content": "Thành tựu của công nghệ DNA tái tổ hợp: dược phẩm (năm 1979 công ty Eli Lilly bán insulin người sản xuất từ vi khuẩn: gene insulin người đã loại intron, gắn vào plasmid, chuyển vào vi khuẩn); công nghiệp và bảo vệ môi trường (sản xuất ethanol, xử lí nước thải, hóa chất độc, kim loại nặng, thu hồi dầu); nông nghiệp (vi khuẩn giúp cây hấp thụ nitrogen, ức chế vi khuẩn, nấm gây bệnh)."
+    },
+    {
+      "type": "text",
+      "content": "Sinh vật biến đổi gene (chuyển gene) là sinh vật có hệ gene được biến đổi, chủ yếu có thêm gene mới từ loài khác. Nguyên lí dựa trên DNA tái tổ hợp. Động vật: dùng trứng vừa thụ tinh khi nhân tinh trùng và nhân trứng chưa hòa nhập, tiêm hàng trăm bản sao gene chuyển, tích hợp ngẫu nhiên vào hệ gene, nuôi phôi nang rồi chuyển vào tử cung mẹ nuôi. Thực vật: dùng súng bắn gene hoặc virus chuyển DNA tái tổ hợp vào tế bào có thành tế bào, rồi nuôi cấy tái sinh thành cây. Thành tựu: lúa vàng (tiền vitamin A), bông kháng sâu, cừu tiết antithrombin người trong sữa, cá hồi chuyển gene hormone sinh trưởng. Quan ngại: phát tán gene chuyển vào tự nhiên (“siêu cỏ dại”), sức khỏe (dị ứng), đạo đức sinh học (chỉnh sửa hệ gene người)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Gene quy định insulin người ban đầu có phần exon 330 nucleotide và intron 200 nucleotide (giả sử). Sau khi loại intron để chuyển vào vi khuẩn, gene còn bao nhiêu nucleotide?",
+      "steps": [
+        "Vi khuẩn không có hệ thống cắt intron, nên gene chuyển phải loại intron.",
+        "Số nucleotide còn lại là phần exon: 330 (và để so sánh, tổng ban đầu 330 + 200 = 530)."
+      ],
+      "expr": "330+200-200",
+      "answer": "330"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Công nghệ DNA tái tổ hợp tạo ra:",
+      "choices": [
+        "DNA từ một nguồn duy nhất",
+        "Protein từ DNA",
+        "RNA từ protein",
+        "Phân tử DNA từ hai nguồn khác nhau rồi chuyển vào tế bào nhận"
+      ],
+      "answer": 3,
+      "explain": "Gồm gene chuyển và vector.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Gồm gene chuyển và vector.",
+        "1": "Chưa đúng với nội dung bài học: Gồm gene chuyển và vector.",
+        "2": "Chưa đúng với nội dung bài học: Gồm gene chuyển và vector."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thành phần của DNA tái tổ hợp gồm:",
+      "choices": [
+        "Chỉ gene chuyển",
+        "Gene chuyển và vector",
+        "Chỉ plasmid",
+        "Ribosome và mRNA"
+      ],
+      "answer": 1,
+      "explain": "Vector phải tái bản được.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Vector phải tái bản được.",
+        "2": "Chưa đúng với nội dung bài học: Vector phải tái bản được.",
+        "3": "Chưa đúng với nội dung bài học: Vector phải tái bản được."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Insulin người từ vi khuẩn được công ty Eli Lilly đưa ra thị trường năm:",
+      "choices": [
+        "1979",
+        "1953",
+        "1990",
+        "2004"
+      ],
+      "answer": 0,
+      "explain": "Thành tựu đầu tiên của dược phẩm.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: Thành tựu đầu tiên của dược phẩm.",
+        "2": "Chưa đúng với nội dung bài học: Thành tựu đầu tiên của dược phẩm.",
+        "3": "Chưa đúng với nội dung bài học: Thành tựu đầu tiên của dược phẩm."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Vector thường dùng để chuyển gene vào vi khuẩn là:",
+      "choices": [
+        "Ribosome",
+        "NST nhân thực",
+        "Plasmid",
+        "Lục lạp"
+      ],
+      "answer": 2,
+      "explain": "Có khả năng tái bản.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Có khả năng tái bản.",
+        "1": "Chưa đúng với nội dung bài học: Có khả năng tái bản.",
+        "3": "Chưa đúng với nội dung bài học: Có khả năng tái bản."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Giống lúa chuyển gene tổng hợp tiền chất vitamin A gọi là:",
+      "choices": [
+        "Lúa nếp",
+        "Lúa lai",
+        "Lúa thơm",
+        "Lúa vàng"
+      ],
+      "answer": 3,
+      "explain": "Phòng thiếu vitamin A.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Phòng thiếu vitamin A.",
+        "1": "Chưa đúng với nội dung bài học: Phòng thiếu vitamin A.",
+        "2": "Chưa đúng với nội dung bài học: Phòng thiếu vitamin A."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Gene của người được chuyển vào vi khuẩn phải loại bỏ intron vì:",
+      "choices": [
+        "Intron quá ngắn",
+        "Vi khuẩn không có hệ thống cắt intron, nối exon",
+        "Exon không cần thiết",
+        "Vi khuẩn không có DNA"
+      ],
+      "answer": 1,
+      "explain": "Cần gene không còn intron (cDNA).",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Cần gene không còn intron (cDNA).",
+        "2": "Chưa đúng với nội dung bài học: Cần gene không còn intron (cDNA).",
+        "3": "Chưa đúng với nội dung bài học: Cần gene không còn intron (cDNA)."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tạo động vật biến đổi gene dùng tế bào nhận là:",
+      "choices": [
+        "Tế bào da",
+        "Tế bào máu",
+        "Trứng vừa mới thụ tinh",
+        "Tinh trùng trưởng thành"
+      ],
+      "answer": 2,
+      "explain": "Tiêm gene chuyển khi hai nhân chưa hòa nhập.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Tiêm gene chuyển khi hai nhân chưa hòa nhập.",
+        "1": "Chưa đúng với nội dung bài học: Tiêm gene chuyển khi hai nhân chưa hòa nhập.",
+        "3": "Chưa đúng với nội dung bài học: Tiêm gene chuyển khi hai nhân chưa hòa nhập."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tạo cây biến đổi gene cần thêm công nghệ:",
+      "choices": [
+        "Nuôi cấy tế bào để tái sinh thành cây",
+        "Thụ tinh nhân tạo",
+        "Nhân bản vô tính cừu",
+        "Lai xa"
+      ],
+      "answer": 0,
+      "explain": "Tế bào chuyển gene tái sinh thành cây.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: Tế bào chuyển gene tái sinh thành cây.",
+        "2": "Chưa đúng với nội dung bài học: Tế bào chuyển gene tái sinh thành cây.",
+        "3": "Chưa đúng với nội dung bài học: Tế bào chuyển gene tái sinh thành cây."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Một quan ngại về sinh vật biến đổi gene là:",
+      "choices": [
+        "Làm tăng đa dạng gene hoang dại",
+        "Giảm năng suất ngay lập tức",
+        "Không có quan ngại",
+        "Phát tán gene chuyển vào tự nhiên, tạo “siêu cỏ dại”"
+      ],
+      "answer": 3,
+      "explain": "Gene kháng thuốc diệt cỏ truyền sang cây hoang dại.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Gene kháng thuốc diệt cỏ truyền sang cây hoang dại.",
+        "1": "Chưa đúng với nội dung bài học: Gene kháng thuốc diệt cỏ truyền sang cây hoang dại.",
+        "2": "Chưa đúng với nội dung bài học: Gene kháng thuốc diệt cỏ truyền sang cây hoang dại."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nhiều quốc gia yêu cầu thực phẩm biến đổi gene:",
+      "choices": [
+        "Cấm hoàn toàn",
+        "Ghi rõ nhãn để người tiêu dùng lựa chọn",
+        "Không cần ghi nhãn",
+        "Chỉ xuất khẩu"
+      ],
+      "answer": 1,
+      "explain": "Minh bạch thông tin.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Minh bạch thông tin.",
+        "2": "Chưa đúng với nội dung bài học: Minh bạch thông tin.",
+        "3": "Chưa đúng với nội dung bài học: Minh bạch thông tin."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Plasmid tái tổ hợp được chuyển vào 1 vi khuẩn. Nếu vi khuẩn phân chia 4 lần liên tiếp thì có bao nhiêu vi khuẩn con (mỗi con nhận plasmid)?",
+      "expr": "2*2*2*2",
+      "answer": "16",
+      "explain": "2⁴ = 16.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một vi khuẩn mang gene insulin phân đôi mỗi 30 phút. Sau 3 giờ có bao nhiêu vi khuẩn (3 giờ = 6 lần phân chia)?",
+      "expr": "2*2*2*2*2*2",
+      "answer": "64",
+      "explain": "2⁶ = 64.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 100 trứng thụ tinh được tiêm gene; chỉ 5 trứng tích hợp gene chuyển. Tỉ lệ thành công là bao nhiêu %?",
+      "expr": "5/100*100",
+      "answer": "5",
+      "explain": "5 : 100 × 100 = 5%.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tiêm gene vào 200 trứng, tỉ lệ thành công 2%. Có bao nhiêu trứng thành công?",
+      "expr": "200*2/100",
+      "answer": "4",
+      "explain": "200 × 0,02 = 4.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Từ 1979 đến 2026 insulin tái tổ hợp được sản xuất đã bao nhiêu năm?",
+      "expr": "2026-1979",
+      "answer": "47",
+      "explain": "2026 − 1979 = 47.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Nếu gắn gene người vào plasmid rồi chuyển vào E. coli (đã loại intron, có promoter phù hợp) thì:",
+      "choices": [
+        "Vi khuẩn có thể tạo ra protein của gene người",
+        "Không bao giờ tạo được",
+        "Chỉ tạo RNA",
+        "Chỉ tạo DNA"
+      ],
+      "answer": 0,
+      "explain": "Mã di truyền phổ biến nên vi khuẩn dịch mã được.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: Mã di truyền phổ biến nên vi khuẩn dịch mã được.",
+        "2": "Chưa đúng với nội dung bài học: Mã di truyền phổ biến nên vi khuẩn dịch mã được.",
+        "3": "Chưa đúng với nội dung bài học: Mã di truyền phổ biến nên vi khuẩn dịch mã được."
+      },
+      "id": "q16"
+    }
+  ]
+}

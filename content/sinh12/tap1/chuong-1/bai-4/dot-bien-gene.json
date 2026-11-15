@@ -1,0 +1,303 @@
+{
+  "id": "bai-4",
+  "grade": 12,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 12",
+  "chapter": "Chương I. Di truyền phân tử",
+  "lesson": "Bài 4. Đột biến gene",
+  "section": "",
+  "bookPage": 23,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đột biến gene là sự thay đổi trình tự nucleotide trong gene. Đột biến làm thay đổi một cặp nucleotide gọi là đột biến điểm. Sinh vật mang gene đột biến biểu hiện kiểu hình khác thường gọi là thể đột biến. Các dạng đột biến gene (theo cơ chế): thay thế một cặp nucleotide, thêm một cặp nucleotide, mất một cặp nucleotide. Cũng có thể phân loại theo trội/lặn, có lợi/có hại/trung tính, có làm thay đổi trình tự amino acid hay không."
+    },
+    {
+      "type": "text",
+      "content": "Nguyên nhân: tự phát (phần nhiều do sai sót trong nhân đôi DNA) hoặc do tác nhân vật lí (tia UV, tia X, tia gamma), hóa học (5-bromouracil, HNO₃, EMS, acridine orange, dioxin), sinh học. Cơ chế: thêm/mất cặp nucleotide do nucleotide được dùng làm khuôn hai lần hoặc không làm khuôn, hoặc do tác nhân chèn vào DNA; thay thế cặp nucleotide do chất có cấu trúc giống base thường (5-bromouracil bắt cặp với adenine gây thay A – T bằng G – C)."
+    },
+    {
+      "type": "text",
+      "content": "Vai trò: trong nghiên cứu di truyền (tạo dòng đột biến, xác định tính trội/lặn, các gene; ví dụ bố mẹ cùng điếc bẩm sinh nhưng con bình thường chứng tỏ hai đột biến lặn ở hai gene khác nhau); trong chọn giống (súp lơ, lợn siêu nạc); trong tiến hoá (cung cấp nguyên liệu: ví dụ FOXP2 khác tinh tinh 2 trong 715 amino acid; đột biến chiều xoắn vỏ ốc gây cách li sinh sản). Phòng tránh: hạn chế tiếp xúc tác nhân đột biến (tia UV, hóa chất độc), tiêm vaccine viêm gan B,..."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một gene bị đột biến mất 1 cặp nucleotide, ban đầu có 1500 cặp nucleotide. Sau đột biến còn bao nhiêu cặp?",
+      "steps": [
+        "Mất một cặp thì số cặp giảm 1.",
+        "1500 − 1 = 1499."
+      ],
+      "expr": "1500-1",
+      "answer": "1499"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đột biến gene là:",
+      "choices": [
+        "Sự thay đổi số lượng NST",
+        "Sự thay đổi trình tự nucleotide trong gene",
+        "Sự thay đổi tổ hợp gene do lai",
+        "Sự thay đổi môi trường"
+      ],
+      "answer": 1,
+      "explain": "Khái niệm.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Khái niệm.",
+        "2": "Chưa đúng với nội dung bài học: Khái niệm.",
+        "3": "Chưa đúng với nội dung bài học: Khái niệm."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đột biến điểm là đột biến liên quan đến:",
+      "choices": [
+        "Một đoạn NST",
+        "Cả bộ NST",
+        "Một cặp nucleotide",
+        "Nhiều gene"
+      ],
+      "answer": 2,
+      "explain": "Thay thế, thêm hoặc mất một cặp.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Thay thế, thêm hoặc mất một cặp.",
+        "1": "Chưa đúng với nội dung bài học: Thay thế, thêm hoặc mất một cặp.",
+        "3": "Chưa đúng với nội dung bài học: Thay thế, thêm hoặc mất một cặp."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Các dạng đột biến điểm gồm:",
+      "choices": [
+        "Thay thế, thêm, mất một cặp nucleotide",
+        "Mất đoạn, lặp đoạn",
+        "Đa bội, dị bội",
+        "Chuyển đoạn, đảo đoạn"
+      ],
+      "answer": 0,
+      "explain": "Dựa trên cơ chế phát sinh.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: Dựa trên cơ chế phát sinh.",
+        "2": "Chưa đúng với nội dung bài học: Dựa trên cơ chế phát sinh.",
+        "3": "Chưa đúng với nội dung bài học: Dựa trên cơ chế phát sinh."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thể đột biến là:",
+      "choices": [
+        "Gene bị đột biến",
+        "NST bị đột biến",
+        "Tế bào bị đột biến",
+        "Cơ thể mang gene đột biến đã biểu hiện ra kiểu hình"
+      ],
+      "answer": 3,
+      "explain": "Kiểu hình khác thường.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Kiểu hình khác thường.",
+        "1": "Chưa đúng với nội dung bài học: Kiểu hình khác thường.",
+        "2": "Chưa đúng với nội dung bài học: Kiểu hình khác thường."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tác nhân hóa học gây đột biến thay thế A – T bằng G – C là:",
+      "choices": [
+        "Tia UV",
+        "5-bromouracil",
+        "Tia X",
+        "Tia gamma"
+      ],
+      "answer": 1,
+      "explain": "Bắt cặp nhầm với adenine.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Bắt cặp nhầm với adenine.",
+        "2": "Chưa đúng với nội dung bài học: Bắt cặp nhầm với adenine.",
+        "3": "Chưa đúng với nội dung bài học: Bắt cặp nhầm với adenine."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Đột biến tự phát phần nhiều do:",
+      "choices": [
+        "Sai sót trong quá trình nhân đôi DNA",
+        "Tia UV",
+        "Hóa chất",
+        "Virus"
+      ],
+      "answer": 0,
+      "explain": "Không cần tác nhân bên ngoài.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: Không cần tác nhân bên ngoài.",
+        "2": "Chưa đúng với nội dung bài học: Không cần tác nhân bên ngoài.",
+        "3": "Chưa đúng với nội dung bài học: Không cần tác nhân bên ngoài."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Đột biến gene là nguồn nguyên liệu của tiến hoá vì:",
+      "choices": [
+        "Làm mất gene",
+        "Không di truyền",
+        "Liên tục tạo ra các allele mới",
+        "Chỉ có hại"
+      ],
+      "answer": 2,
+      "explain": "Chọn lọc tự nhiên tác động lên.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Chọn lọc tự nhiên tác động lên.",
+        "1": "Chưa đúng với nội dung bài học: Chọn lọc tự nhiên tác động lên.",
+        "3": "Chưa đúng với nội dung bài học: Chọn lọc tự nhiên tác động lên."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tia UV có thể gây đột biến bằng cách:",
+      "choices": [
+        "Làm đứt NST",
+        "Thêm NST",
+        "Mất ribosome",
+        "Làm hai T trên cùng một mạch liên kết với nhau"
+      ],
+      "answer": 3,
+      "explain": "Dẫn đến thêm/mất cặp nucleotide khi sửa chữa.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Dẫn đến thêm/mất cặp nucleotide khi sửa chữa.",
+        "1": "Chưa đúng với nội dung bài học: Dẫn đến thêm/mất cặp nucleotide khi sửa chữa.",
+        "2": "Chưa đúng với nội dung bài học: Dẫn đến thêm/mất cặp nucleotide khi sửa chữa."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Bố mẹ cùng điếc bẩm sinh do gene lặn nhưng con bình thường chứng tỏ:",
+      "choices": [
+        "Cùng một gene",
+        "Hai đột biến lặn thuộc hai gene khác nhau",
+        "Con bị đột biến mới",
+        "Do môi trường"
+      ],
+      "answer": 1,
+      "explain": "AAbb × aaBB cho con AaBb.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: AAbb × aaBB cho con AaBb.",
+        "2": "Chưa đúng với nội dung bài học: AAbb × aaBB cho con AaBb.",
+        "3": "Chưa đúng với nội dung bài học: AAbb × aaBB cho con AaBb."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Đột biến gene có vai trò trong chọn giống vì:",
+      "choices": [
+        "Làm giống mất đặc tính",
+        "Không di truyền",
+        "Tạo ra các dạng mới để con người chọn lọc",
+        "Giảm đa dạng"
+      ],
+      "answer": 2,
+      "explain": "Ví dụ súp lơ, lợn siêu nạc.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Ví dụ súp lơ, lợn siêu nạc.",
+        "1": "Chưa đúng với nội dung bài học: Ví dụ súp lơ, lợn siêu nạc.",
+        "3": "Chưa đúng với nội dung bài học: Ví dụ súp lơ, lợn siêu nạc."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một gene có 1200 cặp nucleotide, đột biến thêm 2 cặp. Số cặp nucleotide sau đột biến là bao nhiêu?",
+      "expr": "1200+2",
+      "answer": "1202",
+      "explain": "1 200 + 2 = 1 202.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Gene có A = 300, G = 450. Đột biến thay một cặp A – T bằng một cặp G – C. Số nucleotide loại G sau đột biến là bao nhiêu?",
+      "expr": "450+1",
+      "answer": "451",
+      "explain": "G tăng thêm 1.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Gene có 3000 nucleotide, đột biến mất 3 cặp nucleotide. Tổng số nucleotide còn lại là bao nhiêu?",
+      "expr": "3000-3*2",
+      "answer": "2994",
+      "explain": "Mất 3 cặp = 6 nucleotide: 3000 − 6 = 2994.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Gene FOXP2 có 715 amino acid; người khác tinh tinh ở 2 amino acid. Số amino acid giống nhau là bao nhiêu?",
+      "expr": "715-2",
+      "answer": "713",
+      "explain": "715 − 2 = 713.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Gene có 2400 nucleotide, A = 20%. Số nucleotide loại A là bao nhiêu?",
+      "expr": "2400*20/100",
+      "answer": "480",
+      "explain": "2400 × 0,2 = 480.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Làm gì để phòng tránh bệnh ung thư da do tia UV?",
+      "choices": [
+        "Hạn chế phơi nắng gắt, che chắn, dùng kem chống nắng",
+        "Phơi nắng nhiều",
+        "Không cần phòng tránh",
+        "Dùng hóa chất gây đột biến"
+      ],
+      "answer": 0,
+      "explain": "Giảm tiếp xúc với tác nhân đột biến.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: Giảm tiếp xúc với tác nhân đột biến.",
+        "2": "Chưa đúng với nội dung bài học: Giảm tiếp xúc với tác nhân đột biến.",
+        "3": "Chưa đúng với nội dung bài học: Giảm tiếp xúc với tác nhân đột biến."
+      },
+      "id": "q16"
+    }
+  ]
+}

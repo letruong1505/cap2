@@ -1,0 +1,228 @@
+{
+  "id": "bai-25",
+  "grade": 12,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 12",
+  "chapter": "Chương VI. Môi trường và sinh thái học quần thể",
+  "lesson": "Bài 25. Thực hành: Xác định một số đặc trưng của quần thể",
+  "section": "",
+  "bookPage": 138,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Mục tiêu: ước tính kích thước và mật độ quần thể ở loài thực vật hoặc động vật ít di chuyển (giun đất, ốc, cua, sò). Dụng cụ: ống nhòm, bản đồ, thước dây, sổ ghi chép, khung ô vuông (10 m × 10 m với cây gỗ lớn, 1 m × 1 m với cây thân thảo, 10 cm × 10 cm với địa y)."
+    },
+    {
+      "type": "text",
+      "content": "Phương pháp ô vuông (quadrat): xác định khu vực phân bố, lập bản đồ chia ô và đánh số, chọn ngẫu nhiên các vị trí lấy mẫu; đặt ô vuông, đếm số cá thể; xử lí số liệu: N = (A/a) × n, trong đó N là số cá thể ước tính của quần thể, n là số cá thể trung bình ở các ô vuông, A là tổng diện tích khu vực khảo sát, a là diện tích một ô vuông. Mật độ = N : diện tích khu vực. Số mẫu càng lớn thì độ tin cậy càng cao."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Khu vực khảo sát 1000 m², ô vuông 1 m². Trung bình mỗi ô có 4 cây. Ước tính kích thước quần thể?",
+      "steps": [
+        "N = (A/a) × n.",
+        "N = (1000/1) × 4 = 4000."
+      ],
+      "expr": "(1000/1)*4",
+      "answer": "4000"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phương pháp dùng để ước tính kích thước quần thể thực vật là:",
+      "choices": [
+        "Đánh dấu thả lại",
+        "Điều tra phỏng vấn",
+        "Quan sát từ xa",
+        "Ô vuông (quadrat)"
+      ],
+      "answer": 3,
+      "explain": "Đặt ô vuông ngẫu nhiên.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Đặt ô vuông ngẫu nhiên.",
+        "1": "Chưa đúng với nội dung bài học: Đặt ô vuông ngẫu nhiên.",
+        "2": "Chưa đúng với nội dung bài học: Đặt ô vuông ngẫu nhiên."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Ô vuông 1 m × 1 m dùng cho:",
+      "choices": [
+        "Cây gỗ lớn",
+        "Cây thân thảo",
+        "Địa y",
+        "Chim lớn"
+      ],
+      "answer": 1,
+      "explain": "Kích thước phù hợp đối tượng.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Kích thước phù hợp đối tượng.",
+        "2": "Chưa đúng với nội dung bài học: Kích thước phù hợp đối tượng.",
+        "3": "Chưa đúng với nội dung bài học: Kích thước phù hợp đối tượng."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Ô vuông 10 m × 10 m dùng cho:",
+      "choices": [
+        "Cây thân thảo",
+        "Địa y",
+        "Cây gỗ lớn",
+        "Giun đất"
+      ],
+      "answer": 2,
+      "explain": "Kích thước tương ứng.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Kích thước tương ứng.",
+        "1": "Chưa đúng với nội dung bài học: Kích thước tương ứng.",
+        "3": "Chưa đúng với nội dung bài học: Kích thước tương ứng."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao cần chọn vị trí đặt ô vuông ngẫu nhiên?",
+      "choices": [
+        "Để mẫu đại diện cho cả quần thể, tăng độ tin cậy",
+        "Để dễ đếm",
+        "Để giảm số ô",
+        "Để tránh cây to"
+      ],
+      "answer": 0,
+      "explain": "Nguyên tắc lấy mẫu.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: Nguyên tắc lấy mẫu.",
+        "2": "Chưa đúng với nội dung bài học: Nguyên tắc lấy mẫu.",
+        "3": "Chưa đúng với nội dung bài học: Nguyên tắc lấy mẫu."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tăng số ô vuông lấy mẫu sẽ:",
+      "choices": [
+        "Giảm độ tin cậy",
+        "Không thay đổi",
+        "Tăng sai số chắc chắn",
+        "Tăng độ tin cậy của số liệu"
+      ],
+      "answer": 3,
+      "explain": "Mẫu lớn hơn.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Mẫu lớn hơn.",
+        "1": "Chưa đúng với nội dung bài học: Mẫu lớn hơn.",
+        "2": "Chưa đúng với nội dung bài học: Mẫu lớn hơn."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cần xác định khu vực phân bố trước khi ước tính vì:",
+      "choices": [
+        "Để chọn ô lớn hơn",
+        "Số liệu mẫu phải lấy trong khu vực phân bố của quần thể",
+        "Để đếm loài khác",
+        "Để tính độ cao"
+      ],
+      "answer": 1,
+      "explain": "Mật độ cần diện tích đúng.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Mật độ cần diện tích đúng.",
+        "2": "Chưa đúng với nội dung bài học: Mật độ cần diện tích đúng.",
+        "3": "Chưa đúng với nội dung bài học: Mật độ cần diện tích đúng."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Diện tích khu vực 2000 m², một ô 4 m². Số ô vuông tối đa tương đương là bao nhiêu?",
+      "expr": "2000/4",
+      "answer": "500",
+      "explain": "A : a = 500.",
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đặt 5 ô vuông, đếm 3, 5, 4, 6, 2 cá thể. Số cá thể trung bình mỗi ô là bao nhiêu?",
+      "expr": "(3+5+4+6+2)/5",
+      "answer": "4",
+      "explain": "20 : 5 = 4.",
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khu vực 1 ha (10 000 m²), ô vuông 1 m², trung bình 3 cây/ô. Kích thước ước tính là bao nhiêu?",
+      "expr": "(10000/1)*3",
+      "answer": "30000",
+      "explain": "N = 10 000 × 3.",
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khu vực 400 m², ô 4 m², trung bình 8 con ốc/ô. Số ốc ước tính là bao nhiêu?",
+      "expr": "(400/4)*8",
+      "answer": "800",
+      "explain": "100 × 8 = 800.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Quần thể ước tính 800 ốc trên 400 m². Mật độ là bao nhiêu con/m²?",
+      "expr": "800/400",
+      "answer": "2",
+      "explain": "800 : 400 = 2.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ước tính 6000 cây trên 3000 m². Mật độ là bao nhiêu cây/m²?",
+      "expr": "6000/3000",
+      "answer": "2",
+      "explain": "6000 : 3000 = 2.",
+      "id": "q12"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Phương pháp ô vuông phù hợp nhất với đối tượng nào?",
+      "choices": [
+        "Thực vật và động vật nhỏ, ít di chuyển (ốc, cua, sò, giun)",
+        "Chim di cư",
+        "Cá voi",
+        "Hổ"
+      ],
+      "answer": 0,
+      "explain": "Đối tượng ít di chuyển.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: Đối tượng ít di chuyển.",
+        "2": "Chưa đúng với nội dung bài học: Đối tượng ít di chuyển.",
+        "3": "Chưa đúng với nội dung bài học: Đối tượng ít di chuyển."
+      },
+      "id": "q13"
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "id": "bai-3",
+  "grade": 12,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 12",
+  "chapter": "Chương I. Di truyền phân tử",
+  "lesson": "Bài 3. Điều hòa biểu hiện gene",
+  "section": "",
+  "bookPage": 18,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Thí nghiệm của Monod và Jacob (thập niên 1950) trên E. coli: nuôi vi khuẩn trong môi trường có và không có lactose cùng amino acid đánh dấu phóng xạ. Kết quả: ở lô không có lactose, lượng enzyme β-galactosidase, permease và transacetylase đánh dấu phóng xạ không đáng kể; ở lô có lactose, lượng ba enzyme tăng mạnh. Kết luận: lactose kích hoạt tế bào tổng hợp đồng thời cả ba enzyme; ba gene cấu trúc nằm liền nhau; đề xuất thuyết operon."
+    },
+    {
+      "type": "text",
+      "content": "Cấu trúc operon lac: vùng điều hoà gồm promoter (P, nơi RNA polymerase khởi động phiên mã) và operator (O, nơi protein ức chế liên kết); ba gene cấu trúc lacZ (β-galactosidase), lacY (permease), lacA (transacetylase). Gene điều hoà lacI quy định protein ức chế và không thuộc operon lac. Khi không có lactose: protein ức chế liên kết operator, RNA polymerase không liên kết promoter nên các gene cấu trúc không phiên mã. Khi có lactose: một lượng nhỏ lactose chuyển thành đồng phân, liên kết với protein ức chế làm đổi cấu hình, protein không liên kết operator, RNA polymerase phiên mã các gene cấu trúc (phiên mã đến đâu dịch mã đến đó vì vi khuẩn không có màng nhân, gene không phân mảnh)."
+    },
+    {
+      "type": "text",
+      "content": "Ý nghĩa điều hoà biểu hiện gene: tiết kiệm năng lượng (E. coli dùng tới 90% ATP để tổng hợp protein), giúp tế bào thích nghi môi trường (gene chống sốc nhiệt, kháng thể), và là cơ sở biệt hoá tế bào, phát triển cá thể ở sinh vật đa bào (cùng hệ gene nhưng đóng mở nhóm gene khác nhau); điều hoà sai gây dị dạng, ung thư (proto-oncogene thành oncogene). Ứng dụng: sản xuất thuốc ức chế sản phẩm gene gây bệnh (tamoxifen ức chế thụ thể ERα), nuôi cấy tế bào gốc, chữa lùn do thiếu hormone sinh trưởng, điều khiển ra hoa bằng chế độ chiếu sáng, xử lí hormone testosterone trứng cá rô phi để thu 100% cá đực. Di truyền biểu sinh: gắn nhóm CH₃ vào cytosine làm đổi biểu hiện gene mà không đổi trình tự nucleotide."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "E. coli dùng 90% ATP để tổng hợp protein. Phần ATP dùng cho các hoạt động khác bằng bao nhiêu %?",
+      "steps": [
+        "Tổng là 100%.",
+        "100 − 90 = 10%."
+      ],
+      "expr": "100-90",
+      "answer": "10"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hai nhà khoa học phát hiện operon lac là:",
+      "choices": [
+        "Watson và Crick",
+        "Monod và Jacob",
+        "Mendel và Morgan",
+        "Hershey và Chase"
+      ],
+      "answer": 1,
+      "explain": "Thí nghiệm trên E. coli.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Thí nghiệm trên E. coli.",
+        "2": "Chưa đúng với nội dung bài học: Thí nghiệm trên E. coli.",
+        "3": "Chưa đúng với nội dung bài học: Thí nghiệm trên E. coli."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số gene cấu trúc của operon lac là:",
+      "choices": [
+        "3",
+        "1",
+        "2",
+        "5"
+      ],
+      "answer": 0,
+      "explain": "lacZ, lacY, lacA.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: lacZ, lacY, lacA.",
+        "2": "Chưa đúng với nội dung bài học: lacZ, lacY, lacA.",
+        "3": "Chưa đúng với nội dung bài học: lacZ, lacY, lacA."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Gene lacZ quy định enzyme:",
+      "choices": [
+        "Permease",
+        "Transacetylase",
+        "β-galactosidase",
+        "RNA polymerase"
+      ],
+      "answer": 2,
+      "explain": "Phân giải lactose.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Phân giải lactose.",
+        "1": "Chưa đúng với nội dung bài học: Phân giải lactose.",
+        "3": "Chưa đúng với nội dung bài học: Phân giải lactose."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trình tự operator là nơi liên kết với:",
+      "choices": [
+        "RNA polymerase",
+        "Ribosome",
+        "DNA polymerase",
+        "Protein ức chế"
+      ],
+      "answer": 3,
+      "explain": "Ngăn cản phiên mã.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Ngăn cản phiên mã.",
+        "1": "Chưa đúng với nội dung bài học: Ngăn cản phiên mã.",
+        "2": "Chưa đúng với nội dung bài học: Ngăn cản phiên mã."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Gene điều hoà lacI:",
+      "choices": [
+        "Là gene cấu trúc",
+        "Quy định protein ức chế và không thuộc operon lac",
+        "Nằm trong operon",
+        "Quy định lactose"
+      ],
+      "answer": 1,
+      "explain": "Sản phẩm là protein ức chế.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Sản phẩm là protein ức chế.",
+        "2": "Chưa đúng với nội dung bài học: Sản phẩm là protein ức chế.",
+        "3": "Chưa đúng với nội dung bài học: Sản phẩm là protein ức chế."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi môi trường không có lactose, operon lac:",
+      "choices": [
+        "Phiên mã mạnh",
+        "Dịch mã nhưng không phiên mã",
+        "Không phiên mã vì protein ức chế gắn vào operator",
+        "Phiên mã vì promoter hoạt động"
+      ],
+      "answer": 2,
+      "explain": "RNA polymerase không gắn được promoter.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: RNA polymerase không gắn được promoter.",
+        "1": "Chưa đúng với nội dung bài học: RNA polymerase không gắn được promoter.",
+        "3": "Chưa đúng với nội dung bài học: RNA polymerase không gắn được promoter."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi có lactose, protein ức chế không liên kết với operator vì:",
+      "choices": [
+        "Đồng phân của lactose liên kết làm protein thay đổi cấu hình",
+        "Operator bị mất",
+        "Promoter bị hỏng",
+        "RNA polymerase gắn thay"
+      ],
+      "answer": 0,
+      "explain": "Cho phép phiên mã.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: Cho phép phiên mã.",
+        "2": "Chưa đúng với nội dung bài học: Cho phép phiên mã.",
+        "3": "Chưa đúng với nội dung bài học: Cho phép phiên mã."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao ở vi khuẩn phiên mã đến đâu được dịch mã đến đó?",
+      "choices": [
+        "Có màng nhân",
+        "Gene phân mảnh",
+        "Chỉ có một ribosome",
+        "Không có màng nhân và gene không phân mảnh"
+      ],
+      "answer": 3,
+      "explain": "Đặc điểm sinh vật nhân sơ.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Đặc điểm sinh vật nhân sơ.",
+        "1": "Chưa đúng với nội dung bài học: Đặc điểm sinh vật nhân sơ.",
+        "2": "Chưa đúng với nội dung bài học: Đặc điểm sinh vật nhân sơ."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ý nghĩa của điều hòa biểu hiện gene ở tế bào là:",
+      "choices": [
+        "Tăng lãng phí năng lượng",
+        "Tiết kiệm năng lượng và thích nghi với thay đổi môi trường",
+        "Ngăn mọi gene hoạt động",
+        "Giảm số gene"
+      ],
+      "answer": 1,
+      "explain": "Chỉ tổng hợp khi cần.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Chỉ tổng hợp khi cần.",
+        "2": "Chưa đúng với nội dung bài học: Chỉ tổng hợp khi cần.",
+        "3": "Chưa đúng với nội dung bài học: Chỉ tổng hợp khi cần."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Các tế bào của một cơ thể có hệ gene giống nhau nhưng chuyên hoá khác nhau do:",
+      "choices": [
+        "Đóng mở các nhóm gene khác nhau",
+        "Mất gene",
+        "Có DNA khác nhau",
+        "Do đột biến NST"
+      ],
+      "answer": 0,
+      "explain": "Biệt hoá tế bào.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: Biệt hoá tế bào.",
+        "2": "Chưa đúng với nội dung bài học: Biệt hoá tế bào.",
+        "3": "Chưa đúng với nội dung bài học: Biệt hoá tế bào."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Operon lac có 1 promoter, 1 operator và 3 gene cấu trúc. Tổng số thành phần trên là bao nhiêu?",
+      "expr": "1+1+3",
+      "answer": "5",
+      "explain": "1 + 1 + 3 = 5.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một operon gồm 3 gene cấu trúc; mỗi gene tạo mRNA riêng có 3 enzyme. Số enzyme tạo ra khi operon hoạt động (mỗi gene một enzyme) là bao nhiêu?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Mỗi gene cấu trúc quy định một enzyme.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một operon phiên mã 4 lần. Mỗi lần tạo 1 mRNA mang thông tin 3 gene. Tổng số mRNA tạo ra là bao nhiêu?",
+      "expr": "4*1",
+      "answer": "4",
+      "explain": "4 × 1 = 4.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một mRNA mang thông tin 3 gene, mỗi gene dịch mã thành 1 chuỗi polypeptide trên mỗi ribosome. 5 ribosome cùng dịch mã mRNA đó thì tạo ra tối đa bao nhiêu chuỗi polypeptide mỗi lượt?",
+      "expr": "3*5",
+      "answer": "15",
+      "explain": "3 × 5 = 15.",
+      "id": "q14"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Môi trường không có lactose nhưng operon lac vẫn hoạt động. Vi khuẩn có thể bị hỏng ở:",
+      "choices": [
+        "Gene lacZ",
+        "Gene lacA",
+        "Gene lacI hoặc vùng operator (protein ức chế không gắn được)",
+        "Ribosome"
+      ],
+      "answer": 2,
+      "explain": "Mất khả năng ức chế phiên mã.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Mất khả năng ức chế phiên mã.",
+        "1": "Chưa đúng với nội dung bài học: Mất khả năng ức chế phiên mã.",
+        "3": "Chưa đúng với nội dung bài học: Mất khả năng ức chế phiên mã."
+      },
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Gene CSP của S. pneumoniae hoạt động khi có kháng sinh làm vi khuẩn nhanh kháng thuốc vì:",
+      "choices": [
+        "Protein CSP phá thuốc trực tiếp",
+        "Gene CSP làm tế bào chết",
+        "Gene CSP làm DNA tăng nhanh",
+        "Protein CSP giúp tế bào dễ nhận gene từ môi trường, trong đó có gene kháng thuốc"
+      ],
+      "answer": 3,
+      "explain": "Tiếp nhận gene kháng thuốc.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Tiếp nhận gene kháng thuốc.",
+        "1": "Chưa đúng với nội dung bài học: Tiếp nhận gene kháng thuốc.",
+        "2": "Chưa đúng với nội dung bài học: Tiếp nhận gene kháng thuốc."
+      },
+      "id": "q16"
+    }
+  ]
+}

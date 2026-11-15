@@ -1,0 +1,365 @@
+{
+  "id": "bai-2",
+  "grade": 12,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 12",
+  "chapter": "Chương I. Di truyền phân tử",
+  "lesson": "Bài 2. Gene, quá trình truyền đạt thông tin di truyền và hệ gene",
+  "section": "",
+  "bookPage": 9,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Gene là một đoạn của phân tử DNA mang thông tin quy định một sản phẩm (chuỗi polypeptide hoặc RNA). Chỉ một mạch (mạch khuôn) được dùng tổng hợp mRNA; mạch còn lại là mạch mã hoá. Cấu trúc gene gồm ba vùng: vùng điều hoà (ở đầu 3’ mạch khuôn, có promoter), vùng mã hoá, vùng kết thúc (ở đầu 5’ mạch khuôn). Gene sinh vật nhân sơ thường không phân mảnh và nhiều gene có chung vùng điều hoà; gene sinh vật nhân thực phần lớn phân mảnh (exon xen intron), mỗi gene có vùng điều hoà riêng. Phân loại: theo chức năng gồm gene cấu trúc và gene điều hoà; theo cấu trúc gồm gene phân mảnh và không phân mảnh."
+    },
+    {
+      "type": "text",
+      "content": "Hệ gene là tập hợp tất cả vật chất di truyền (DNA) trong tế bào của một sinh vật. Hệ gene người: hơn 3,2 tỉ cặp nucleotide trên 23 cặp NST, giải trình tự năm 2004 với độ chính xác 99,999%; khoảng gần 21 300 gene mã hoá protein; exon và vùng mã hoá rRNA, tRNA chiếm 1,5%, vùng điều hoà khoảng 5%, intron xấp xỉ 20%; trung bình mỗi gene dài 27 000 cặp nucleotide, có 10 exon. Ứng dụng: y học (thuốc hướng đích, phòng bệnh), pháp y, nghiên cứu tiến hóa (tinh tinh gần người nhất)."
+    },
+    {
+      "type": "text",
+      "content": "Phiên mã là tổng hợp RNA dựa trên mạch khuôn của gene: khởi đầu (RNA polymerase liên kết promoter), kéo dài (tổng hợp mRNA theo chiều 5’ → 3’, NTBS A – U, T – A, G – C, C – G), kết thúc (gặp tín hiệu kết thúc). Ở nhân thực tạo tiền mRNA, gắn mũ 7-methylguanine ở đầu 5’ và đuôi poly A ở đầu 3’, cắt intron, nối exon thành mRNA trưởng thành. Các loại RNA: mRNA (làm khuôn dịch mã), tRNA (vận chuyển amino acid, có bộ ba đối mã; tế bào có từ 30 đến 40 loại), rRNA (cấu tạo ribosome). Phiên mã ngược là tổng hợp DNA từ khuôn RNA (virus như HIV, SARS-CoV-2; telomerase kéo dài đầu mút NST; tạo cDNA trong công nghệ gene)."
+    },
+    {
+      "type": "text",
+      "content": "Mã di truyền là bộ các bộ ba nucleotide (codon) trên mRNA quy định amino acid: 61 bộ ba mã hoá amino acid và 3 bộ ba kết thúc (UAA, UAG, UGA); AUG là bộ ba mở đầu. Đặc điểm: mã bộ ba; đọc liên tục từng bộ ba không chồng gối; thoái hoá (nhiều bộ ba mã hoá một amino acid); đặc hiệu (mỗi bộ ba chỉ mã hoá một amino acid); phổ biến (dùng chung cho mọi sinh vật, có ngoại lệ). Dịch mã diễn ra ở ribosome gồm khởi đầu (tiểu phần nhỏ gắn AUG, tRNA mang Met, ghép tiểu phần lớn), kéo dài (tRNA vào vị trí A, hình thành liên kết peptide, ribosome dịch chuyển 5’ → 3’, tRNA đi qua A, P, E), kết thúc (gặp bộ ba kết thúc, yếu tố giải phóng tách chuỗi polypeptide). Thông tin di truyền: DNA → mRNA → protein (một chiều), ngoại lệ phiên mã ngược RNA → DNA."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một mRNA có 300 bộ ba mã hoá (không tính bộ ba kết thúc). Vùng mã hoá có bao nhiêu nucleotide (tính cả bộ ba kết thúc)?",
+      "steps": [
+        "Mỗi bộ ba có 3 nucleotide.",
+        "(300 + 1) × 3 = 903."
+      ],
+      "expr": "(300+1)*3",
+      "answer": "903"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Cấu trúc chung của một gene mã hoá protein gồm:",
+      "choices": [
+        "Exon, intron, promoter",
+        "Chỉ vùng mã hoá",
+        "Vùng mở đầu và vùng đột biến",
+        "Vùng điều hoà, vùng mã hoá, vùng kết thúc"
+      ],
+      "answer": 3,
+      "explain": "Ba vùng.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Ba vùng.",
+        "1": "Chưa đúng với nội dung bài học: Ba vùng.",
+        "2": "Chưa đúng với nội dung bài học: Ba vùng."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Promoter nằm ở:",
+      "choices": [
+        "Vùng kết thúc",
+        "Vùng điều hoà, nơi RNA polymerase liên kết",
+        "Vùng mã hoá",
+        "Trên ribosome"
+      ],
+      "answer": 1,
+      "explain": "Khởi đầu phiên mã.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Khởi đầu phiên mã.",
+        "2": "Chưa đúng với nội dung bài học: Khởi đầu phiên mã.",
+        "3": "Chưa đúng với nội dung bài học: Khởi đầu phiên mã."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Bộ ba mở đầu trên mRNA là:",
+      "choices": [
+        "UAA",
+        "UAG",
+        "AUG",
+        "UGA"
+      ],
+      "answer": 2,
+      "explain": "Mã hoá Met (hoặc fMet).",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Mã hoá Met (hoặc fMet).",
+        "1": "Chưa đúng với nội dung bài học: Mã hoá Met (hoặc fMet).",
+        "3": "Chưa đúng với nội dung bài học: Mã hoá Met (hoặc fMet)."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số bộ ba mã hoá amino acid là:",
+      "choices": [
+        "61",
+        "64",
+        "20",
+        "3"
+      ],
+      "answer": 0,
+      "explain": "3 bộ ba còn lại là bộ ba kết thúc.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: 3 bộ ba còn lại là bộ ba kết thúc.",
+        "2": "Chưa đúng với nội dung bài học: 3 bộ ba còn lại là bộ ba kết thúc.",
+        "3": "Chưa đúng với nội dung bài học: 3 bộ ba còn lại là bộ ba kết thúc."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Quá trình tổng hợp protein dựa trên mRNA gọi là:",
+      "choices": [
+        "Phiên mã",
+        "Tái bản",
+        "Phiên mã ngược",
+        "Dịch mã"
+      ],
+      "answer": 3,
+      "explain": "Diễn ra ở ribosome.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Diễn ra ở ribosome.",
+        "1": "Chưa đúng với nội dung bài học: Diễn ra ở ribosome.",
+        "2": "Chưa đúng với nội dung bài học: Diễn ra ở ribosome."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Loại RNA vận chuyển amino acid là:",
+      "choices": [
+        "mRNA",
+        "tRNA",
+        "rRNA",
+        "miRNA"
+      ],
+      "answer": 1,
+      "explain": "Có bộ ba đối mã.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Có bộ ba đối mã.",
+        "2": "Chưa đúng với nội dung bài học: Có bộ ba đối mã.",
+        "3": "Chưa đúng với nội dung bài học: Có bộ ba đối mã."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Sự khác biệt giữa gene nhân sơ và nhân thực thường là:",
+      "choices": [
+        "Gene nhân thực phân mảnh (có intron), gene nhân sơ không phân mảnh",
+        "Gene nhân sơ có intron",
+        "Gene nhân thực không có vùng điều hoà",
+        "Không khác nhau"
+      ],
+      "answer": 0,
+      "explain": "Nhân thực: exon xen intron.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: Nhân thực: exon xen intron.",
+        "2": "Chưa đúng với nội dung bài học: Nhân thực: exon xen intron.",
+        "3": "Chưa đúng với nội dung bài học: Nhân thực: exon xen intron."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Mã di truyền có tính thoái hoá nghĩa là:",
+      "choices": [
+        "Mỗi bộ ba mã hoá nhiều amino acid",
+        "Mã đọc chồng gối",
+        "Nhiều bộ ba cùng mã hoá một amino acid",
+        "Mã không phổ biến"
+      ],
+      "answer": 2,
+      "explain": "Ví dụ Ala có 4 bộ ba.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Ví dụ Ala có 4 bộ ba.",
+        "1": "Chưa đúng với nội dung bài học: Ví dụ Ala có 4 bộ ba.",
+        "3": "Chưa đúng với nội dung bài học: Ví dụ Ala có 4 bộ ba."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Mã di truyền có tính đặc hiệu nghĩa là:",
+      "choices": [
+        "Mỗi amino acid chỉ có một bộ ba",
+        "Mọi loài khác mã",
+        "Bộ ba có 4 nucleotide",
+        "Mỗi bộ ba chỉ mã hoá một amino acid"
+      ],
+      "answer": 3,
+      "explain": "Ví dụ UAU chỉ mã hoá tyrosine.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Ví dụ UAU chỉ mã hoá tyrosine.",
+        "1": "Chưa đúng với nội dung bài học: Ví dụ UAU chỉ mã hoá tyrosine.",
+        "2": "Chưa đúng với nội dung bài học: Ví dụ UAU chỉ mã hoá tyrosine."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ở sinh vật nhân thực, mRNA trưởng thành được tạo nên sau khi:",
+      "choices": [
+        "Gắn thêm intron",
+        "Cắt bỏ intron, nối các exon",
+        "Cắt exon",
+        "Không biến đổi"
+      ],
+      "answer": 1,
+      "explain": "Có mũ 5’ và đuôi poly A.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Có mũ 5’ và đuôi poly A.",
+        "2": "Chưa đúng với nội dung bài học: Có mũ 5’ và đuôi poly A.",
+        "3": "Chưa đúng với nội dung bài học: Có mũ 5’ và đuôi poly A."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Chiều di chuyển của ribosome trên mRNA là:",
+      "choices": [
+        "3’ → 5’",
+        "Hai chiều",
+        "5’ → 3’",
+        "Ngẫu nhiên"
+      ],
+      "answer": 2,
+      "explain": "Đọc từng bộ ba.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Đọc từng bộ ba.",
+        "1": "Chưa đúng với nội dung bài học: Đọc từng bộ ba.",
+        "3": "Chưa đúng với nội dung bài học: Đọc từng bộ ba."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Phiên mã ngược được thực hiện nhờ:",
+      "choices": [
+        "Enzyme phiên mã ngược (ví dụ ở HIV)",
+        "DNA polymerase",
+        "Ligase",
+        "Enzyme tách mạch"
+      ],
+      "answer": 0,
+      "explain": "Tổng hợp DNA từ RNA.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: Tổng hợp DNA từ RNA.",
+        "2": "Chưa đúng với nội dung bài học: Tổng hợp DNA từ RNA.",
+        "3": "Chưa đúng với nội dung bài học: Tổng hợp DNA từ RNA."
+      },
+      "id": "q12"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số bộ ba mã hoá amino acid là 61, số bộ ba kết thúc là 3. Tổng số bộ ba của mã di truyền là bao nhiêu?",
+      "expr": "61+3",
+      "answer": "64",
+      "explain": "61 + 3 = 64.",
+      "id": "q13"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mã bộ ba được tạo từ 4 loại nucleotide. Số bộ ba có thể có là bao nhiêu?",
+      "expr": "4*4*4",
+      "answer": "64",
+      "explain": "4³ = 64.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một gene dài 5100 Å (1 nucleotide dài 3,4 Å). Gene có bao nhiêu cặp nucleotide?",
+      "expr": "51000/34",
+      "answer": "1500",
+      "explain": "5100 : 3,4 = 1500.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một gene có 3000 nucleotide phiên mã một lần. mRNA tạo ra có bao nhiêu ribonucleotide?",
+      "expr": "3000/2",
+      "answer": "1500",
+      "explain": "Chiều dài mRNA bằng một mạch gene = 1500.",
+      "id": "q16"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một mRNA có 1200 ribonucleotide (chỉ gồm các bộ ba mã hoá). Số bộ ba của mRNA là bao nhiêu?",
+      "expr": "1200/3",
+      "answer": "400",
+      "explain": "1200 : 3 = 400.",
+      "id": "q17"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hệ gene người: exon và RNA 1,5%, vùng điều hoà 5%, intron 20%. Phần còn lại chiếm bao nhiêu %?",
+      "expr": "100-1.5-5-20",
+      "answer": "73.5",
+      "explain": "100 − 1,5 − 5 − 20 = 73,5.",
+      "id": "q18"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hệ gene người có 21 300 gene mã hoá protein. Nếu giảm 300 gene thì còn bao nhiêu?",
+      "expr": "21300-300",
+      "answer": "21000",
+      "explain": "21 300 − 300 = 21 000.",
+      "id": "q19"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Nếu biết tổng nucleotide vùng mã hoá của gene nhân thực thì có tính được số amino acid của chuỗi polypeptide không?",
+      "choices": [
+        "Có, chia ngay cho 3",
+        "Có, nhân với 3",
+        "Luôn tính được",
+        "Không đủ, vì vùng mã hoá còn chứa intron bị cắt bỏ"
+      ],
+      "answer": 3,
+      "explain": "Cần biết số nucleotide của exon.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Cần biết số nucleotide của exon.",
+        "1": "Chưa đúng với nội dung bài học: Cần biết số nucleotide của exon.",
+        "2": "Chưa đúng với nội dung bài học: Cần biết số nucleotide của exon."
+      },
+      "id": "q20"
+    }
+  ]
+}
