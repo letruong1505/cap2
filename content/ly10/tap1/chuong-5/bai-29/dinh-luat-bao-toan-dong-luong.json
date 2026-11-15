@@ -1,0 +1,283 @@
+{
+  "id": "bai-29",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương V. Động lượng",
+  "lesson": "Bài 29. Định luật bảo toàn động lượng",
+  "section": "",
+  "bookPage": 113,
+  "requirements": [
+    "Nêu được hệ kín và định luật bảo toàn động lượng.",
+    "Vận dụng định luật bảo toàn động lượng cho va chạm mềm, chuyển động bằng phản lực, súng giật."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hệ kín (hệ cô lập) là hệ vật không chịu tác dụng của ngoại lực, hoặc tổng các ngoại lực bằng 0, hoặc ngoại lực rất nhỏ so với nội lực trong thời gian tương tác ngắn (va chạm, nổ)."
+    },
+    {
+      "type": "text",
+      "content": "Định luật bảo toàn động lượng: Tổng động lượng của một hệ kín được bảo toàn."
+    },
+    {
+      "type": "formula",
+      "content": "m₁→v₁ + m₂→v₂ = m₁→v₁′ + m₂→v₂′"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b29-va-cham.svg",
+      "caption": "Va chạm mềm: sau va chạm hai vật dính vào nhau, chuyển động cùng vận tốc"
+    },
+    {
+      "type": "text",
+      "content": "Va chạm mềm: sau va chạm hai vật dính nhau, chuyển động cùng vận tốc v: m₁v₁ + m₂v₂ = (m₁ + m₂)v. Trong va chạm mềm động năng không bảo toàn (một phần chuyển thành nhiệt)."
+    },
+    {
+      "type": "text",
+      "content": "Va chạm đàn hồi: sau va chạm các vật tách rời, cả động lượng và động năng được bảo toàn. Chuyển động bằng phản lực: hệ ban đầu đứng yên tách thành hai phần thì m₁v₁ + m₂v₂ = 0, hai phần chuyển động ngược chiều (súng giật lùi, tên lửa)."
+    },
+    {
+      "type": "method",
+      "title": "Vận dụng bảo toàn động lượng",
+      "when": "Đề cho hai vật va chạm (dính nhau hoặc bật ra), súng bắn đạn, người nhảy khỏi thuyền, vật nổ thành hai mảnh; hỏi vận tốc sau tương tác.",
+      "steps": [
+        "Xác định hệ kín và chọn chiều dương.",
+        "Viết tổng động lượng trước = tổng động lượng sau, vận tốc mang dấu.",
+        "Giải tìm ẩn; dấu âm nghĩa là ngược chiều dương.",
+        "Nếu va chạm mềm: các vật cùng vận tốc sau va chạm."
+      ],
+      "notes": [
+        "Ban đầu đứng yên thì tổng động lượng bằng 0.",
+        "Đổi g ra kg."
+      ],
+      "sample": {
+        "problem": "Xe 2 kg chạy 3 m/s va vào xe 1 kg đứng yên, dính nhau. Tìm vận tốc sau va chạm.",
+        "steps": [
+          "2·3 = 3·v ⇒ v = 2 m/s."
+        ],
+        "answer": "2 m/s"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Khẩu súng 4 kg bắn viên đạn 20 g với vận tốc 500 m/s. Tính vận tốc giật lùi của súng.",
+      "steps": [
+        "Trước khi bắn tổng động lượng bằng 0.",
+        "0,02·500 + 4·V = 0 ⇒ V = −2,5 m/s (ngược chiều đạn)."
+      ],
+      "expr": "10/4",
+      "answer": "2.5"
+    },
+    {
+      "problem": "Một toa xe 3 tấn chạy 4 m/s đến móc vào toa 1 tấn đứng yên. Tính vận tốc hai toa sau khi móc nối.",
+      "steps": [
+        "3000·4 = 4000·v.",
+        "v = 3 m/s."
+      ],
+      "expr": "12000/4000",
+      "answer": "3"
+    },
+    {
+      "problem": "Người 50 kg chạy 4 m/s nhảy lên xe 150 kg đang chạy cùng chiều 1 m/s. Tính vận tốc xe sau đó.",
+      "steps": [
+        "50·4 + 150·1 = 200·v.",
+        "v = 350/200 = 1,75 m/s."
+      ],
+      "expr": "350/200",
+      "answer": "1.75"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hệ kín là hệ:",
+      "choices": [
+        "không chịu ngoại lực hoặc tổng ngoại lực bằng 0",
+        "chỉ có một vật",
+        "có lực ma sát lớn",
+        "luôn đứng yên"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong hệ kín, đại lượng được bảo toàn là:",
+      "choices": [
+        "tổng động lượng",
+        "vận tốc mỗi vật",
+        "động năng trong mọi va chạm",
+        "khối lượng mỗi vật thay đổi"
+      ],
+      "answer": 0,
+      "explain": "Định luật bảo toàn động lượng.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Chỉ va chạm đàn hồi.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Súng giật lùi khi bắn là ứng dụng của:",
+      "choices": [
+        "định luật bảo toàn động lượng",
+        "định luật 1 Newton",
+        "định luật Archimedes",
+        "quy tắc moment"
+      ],
+      "answer": 0,
+      "explain": "Tổng động lượng bằng 0.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật 2 kg chạy 4 m/s va vật 2 kg đứng yên, dính nhau. Vận tốc sau (m/s):",
+      "expr": "2",
+      "answer": "2",
+      "explain": "8 = 4v.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong va chạm mềm:",
+      "choices": [
+        "các vật dính nhau và chuyển động cùng vận tốc",
+        "các vật bật ra với vận tốc như cũ",
+        "động năng được bảo toàn",
+        "động lượng không bảo toàn"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa va chạm mềm.",
+      "wrong_explain": {
+        "1": "Đàn hồi.",
+        "2": "Không bảo toàn.",
+        "3": "Vẫn bảo toàn."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Súng 5 kg bắn đạn 10 g với 600 m/s. Tốc độ giật lùi (m/s):",
+      "expr": "1.2",
+      "answer": "1.2",
+      "explain": "6/5.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Xe 4 kg chạy 5 m/s va xe 1 kg đứng yên, dính nhau. Vận tốc sau (m/s):",
+      "expr": "4",
+      "answer": "4",
+      "explain": "20/5.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Người 60 kg đứng trên thuyền 140 kg đứng yên, nhảy lên bờ với 2 m/s. Thuyền lùi lại (m/s, viết dạng phân số):",
+      "expr": "120/140",
+      "answer": "6/7",
+      "explain": "60·2 = 140·V ⇒ V = 6/7 ≈ 0,86 m/s.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật đứng yên nổ thành hai mảnh 1 kg và 3 kg; mảnh 1 kg bay 9 m/s. Tốc độ mảnh 3 kg (m/s):",
+      "expr": "3",
+      "answer": "3",
+      "explain": "9 = 3v.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bi A 0,2 kg chạy 3 m/s va bi B 0,1 kg chạy ngược chiều 3 m/s, dính nhau. Vận tốc sau (m/s):",
+      "expr": "1",
+      "answer": "1",
+      "explain": "0,6 − 0,3 = 0,3·v ⇒ v = 1 m/s theo chiều bi A.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Xe 2 kg chạy 6 m/s đuổi va xe 1 kg chạy cùng chiều 3 m/s, dính nhau. Vận tốc sau (m/s):",
+      "expr": "5",
+      "answer": "5",
+      "explain": "15/3.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Viên đạn 10 g bay 400 m/s cắm vào khối gỗ 990 g đứng yên trên mặt nhẵn. Vận tốc khối gỗ sau đó (m/s):",
+      "expr": "4",
+      "answer": "4",
+      "explain": "4 = 1·v.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với dữ kiện trên, phần động năng chuyển thành nhiệt (J):",
+      "expr": "800-8",
+      "answer": "792",
+      "explain": "800 J − ½·1·16.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tên lửa 1 tấn đứng yên phụt 100 kg khí với 1000 m/s so với đất. Vận tốc tên lửa (m/s, làm tròn 1 chữ số):",
+      "expr": "111.1",
+      "answer": "111.1",
+      "explain": "100 000/900.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Toa 2 tấn chạy 3 m/s va toa 1 tấn chạy ngược chiều 1,5 m/s, móc nối. Vận tốc sau (m/s):",
+      "expr": "1.5",
+      "answer": "1.5",
+      "explain": "(6000 − 1500)/3000.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Vật 3 kg đang bay về phía bắc 2 m/s thì nổ thành hai mảnh; mảnh 1 kg bay về phía đông 6 m/s. Bình phương độ lớn động lượng của mảnh 2 kg (kg²·m²/s²) là:",
+      "expr": "36+36",
+      "answer": "72",
+      "explain": "Động lượng ban đầu 6 kg·m/s về bắc; →p₂ = →p − →p₁ có hai thành phần vuông góc 6 và 6: p₂² = 72, p₂ ≈ 8,49.",
+      "id": "q16"
+    }
+  ]
+}

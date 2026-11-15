@@ -1,0 +1,304 @@
+{
+  "id": "bai-8",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương II. Động học",
+  "lesson": "Bài 8. Chuyển động biến đổi. Gia tốc",
+  "section": "",
+  "bookPage": 37,
+  "requirements": [
+    "Nêu được khái niệm gia tốc, công thức và đơn vị; phân biệt chuyển động nhanh dần, chậm dần.",
+    "Vẽ và đọc đồ thị vận tốc – thời gian; tính gia tốc từ đồ thị."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Chuyển động biến đổi là chuyển động có vận tốc thay đổi theo thời gian. Chuyển động biến đổi đều có vận tốc thay đổi đều (độ biến thiên vận tốc trong những khoảng thời gian bằng nhau là như nhau)."
+    },
+    {
+      "type": "formula",
+      "content": "Gia tốc: a = Δv/Δt = (v − v₀)/(t − t₀)        Đơn vị: m/s²"
+    },
+    {
+      "type": "text",
+      "content": "Gia tốc là đại lượng vectơ, cùng hướng với độ biến thiên vận tốc Δ→v. Trong chuyển động thẳng: →a cùng chiều →v thì vật chuyển động nhanh dần (a·v > 0); →a ngược chiều →v thì chậm dần (a·v < 0)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b9-do-thi-v-t.svg",
+      "caption": "Đồ thị vận tốc – thời gian: đoạn dốc lên là nhanh dần đều, đoạn nằm ngang là chuyển động đều"
+    },
+    {
+      "type": "text",
+      "content": "Đồ thị vận tốc – thời gian (v – t): độ dốc của đồ thị bằng gia tốc. Đồ thị là đường thẳng khi chuyển động biến đổi đều; nằm ngang khi chuyển động đều (a = 0). Diện tích giới hạn bởi đồ thị v – t và trục thời gian bằng độ dịch chuyển."
+    },
+    {
+      "type": "text",
+      "content": "Gia tốc tức thời tại một thời điểm bằng độ dốc của tiếp tuyến với đồ thị v – t tại điểm đó."
+    },
+    {
+      "type": "method",
+      "title": "Tính gia tốc từ số liệu hoặc đồ thị v – t",
+      "when": "Đề cho vận tốc tại hai thời điểm, hoặc đồ thị v – t gồm các đoạn thẳng; hỏi gia tốc, loại chuyển động, độ dịch chuyển.",
+      "steps": [
+        "Xác định v₀, v và khoảng thời gian Δt (đổi về m/s, s).",
+        "a = (v − v₀)/Δt, giữ dấu; so dấu a với dấu v để kết luận nhanh dần hay chậm dần.",
+        "Trên đồ thị v – t: a mỗi đoạn là độ dốc; độ dịch chuyển là diện tích hình thang hoặc tam giác dưới đồ thị.",
+        "Đổi km/h sang m/s trước khi tính."
+      ],
+      "notes": [
+        "a âm không có nghĩa là chậm dần; phải so với dấu của v.",
+        "Diện tích dưới trục t mang dấu âm (độ dịch chuyển âm)."
+      ],
+      "sample": {
+        "problem": "Ô tô tăng tốc từ 36 km/h lên 72 km/h trong 5 s. Tính gia tốc.",
+        "steps": [
+          "v₀ = 10 m/s, v = 20 m/s.",
+          "a = (20 − 10)/5 = 2 m/s²."
+        ],
+        "answer": "2 m/s²"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một xe máy đang chạy 15 m/s thì hãm phanh, sau 3 s còn 6 m/s. Tính gia tốc và cho biết tính chất chuyển động.",
+      "steps": [
+        "a = (6 − 15)/3 = −3 m/s².",
+        "a ngược dấu với v nên xe chuyển động chậm dần."
+      ],
+      "expr": "(6-15)/3",
+      "answer": "-3"
+    },
+    {
+      "problem": "Đồ thị v – t của một vật là đoạn thẳng từ (0; 2 m/s) đến (4 s; 10 m/s). Tính gia tốc và độ dịch chuyển trong 4 s.",
+      "steps": [
+        "a = (10 − 2)/4 = 2 m/s².",
+        "Độ dịch chuyển bằng diện tích hình thang: (2 + 10)·4/2 = 24 m."
+      ],
+      "expr": "(2+10)*4/2",
+      "answer": "24"
+    },
+    {
+      "problem": "Đồ thị v – t: 0–2 s vận tốc tăng đều từ 0 lên 8 m/s; 2–6 s giữ 8 m/s; 6–10 s giảm đều về 0. Tính gia tốc từng giai đoạn và tổng độ dịch chuyển.",
+      "steps": [
+        "a₁ = 8/2 = 4 m/s²; a₂ = 0; a₃ = (0 − 8)/4 = −2 m/s².",
+        "Độ dịch chuyển = diện tích: 8 + 32 + 16 = 56 m."
+      ],
+      "expr": "8*2/2+8*4+8*4/2",
+      "answer": "56"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật tăng tốc từ 4 m/s lên 10 m/s trong 3 s. Gia tốc (m/s²) là:",
+      "expr": "(10-4)/3",
+      "answer": "2",
+      "explain": "a = Δv/Δt.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đơn vị của gia tốc trong hệ SI là:",
+      "choices": [
+        "m/s²",
+        "m/s",
+        "km/h",
+        "m²/s"
+      ],
+      "answer": 0,
+      "explain": "Vận tốc chia thời gian.",
+      "wrong_explain": {
+        "1": "Đơn vị vận tốc.",
+        "2": "Đơn vị vận tốc.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trên đồ thị v – t, độ dốc của đồ thị cho biết:",
+      "choices": [
+        "gia tốc",
+        "vận tốc",
+        "quãng đường",
+        "độ dịch chuyển"
+      ],
+      "answer": 0,
+      "explain": "a = Δv/Δt.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Diện tích mới là độ dịch chuyển.",
+        "3": "Diện tích."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vật chuyển động nhanh dần khi:",
+      "choices": [
+        "a và v cùng dấu",
+        "a và v trái dấu",
+        "a = 0",
+        "v = 0"
+      ],
+      "answer": 0,
+      "explain": "Gia tốc cùng chiều vận tốc.",
+      "wrong_explain": {
+        "1": "Chậm dần.",
+        "2": "Đều.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Đồ thị v – t là đoạn thẳng từ (0; 0) đến (5 s; 15 m/s). Gia tốc (m/s²) là:",
+      "expr": "15/5",
+      "answer": "3",
+      "explain": "Độ dốc.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ô tô đang chạy 20 m/s, hãm phanh với gia tốc có độ lớn 4 m/s². Sau 3 s vận tốc (m/s) là:",
+      "expr": "20-4*3",
+      "answer": "8",
+      "explain": "v = v₀ + at với a = −4.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật chuyển động với vận tốc từ 54 km/h giảm còn 18 km/h trong 10 s. Gia tốc (m/s²) là:",
+      "expr": "(5-15)/10",
+      "answer": "-1",
+      "explain": "15 m/s → 5 m/s.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đồ thị v – t từ (0; 4 m/s) đến (6 s; 16 m/s). Độ dịch chuyển trong 6 s (m) là:",
+      "expr": "(4+16)*6/2",
+      "answer": "60",
+      "explain": "Diện tích hình thang.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Một vật có v = −5 m/s và a = −2 m/s². Vật đang:",
+      "choices": [
+        "chuyển động nhanh dần theo chiều âm",
+        "chuyển động chậm dần",
+        "đứng yên",
+        "chuyển động đều"
+      ],
+      "answer": 0,
+      "explain": "a, v cùng dấu.",
+      "wrong_explain": {
+        "1": "Cùng dấu là nhanh dần.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đồ thị v – t nằm ngang ở 6 m/s từ 0 đến 5 s. Độ dịch chuyển (m) là:",
+      "expr": "6*5",
+      "answer": "30",
+      "explain": "Diện tích hình chữ nhật.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật đi với gia tốc 0,5 m/s² từ trạng thái nghỉ. Sau bao lâu (s) vật đạt 10 m/s?",
+      "expr": "100/5",
+      "answer": "20",
+      "explain": "t = v/a = 10/0,5 = 20 s.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đồ thị v – t: 0–4 s tăng đều từ 0 lên 12 m/s, 4–10 s giữ 12 m/s. Tổng độ dịch chuyển (m) là:",
+      "expr": "12*4/2+12*6",
+      "answer": "96",
+      "explain": "24 + 72.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đồ thị v – t: 0–3 s giảm đều từ 6 m/s về 0, 3–6 s giảm tiếp từ 0 xuống −6 m/s. Độ dịch chuyển trong 6 s (m) là:",
+      "expr": "9-9",
+      "answer": "0",
+      "explain": "Hai tam giác bằng nhau trái dấu.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đồ thị v – t: 0–3 s giảm đều từ 6 m/s về 0, 3–6 s giảm tiếp xuống −6 m/s. Quãng đường trong 6 s (m) là:",
+      "expr": "9+9",
+      "answer": "18",
+      "explain": "Tổng độ lớn hai diện tích.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tàu hoả tăng tốc đều từ 0 lên 72 km/h trong 100 s rồi chạy đều. Gia tốc giai đoạn đầu (m/s²) là:",
+      "expr": "20/100",
+      "answer": "0.2",
+      "explain": "72 km/h = 20 m/s.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một vật có đồ thị v – t là đoạn thẳng từ (0; 10 m/s) đến (5 s; 0). Thời điểm vật đi được nửa độ dịch chuyển tổng (s, làm tròn 2 chữ số) xấp xỉ:",
+      "expr": "1.46",
+      "answer": "1.46",
+      "explain": "Tổng d = 25 m; d(t) = 10t − t²; 10t − t² = 12,5 ⇔ t ≈ 1,46 s.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đồ thị v – t là đường cong lõm xuống (độ dốc giảm dần nhưng vẫn dương). Kết luận đúng:",
+      "choices": [
+        "vật chuyển động nhanh dần với gia tốc giảm dần",
+        "vật chuyển động chậm dần",
+        "gia tốc tăng dần",
+        "vật đứng yên"
+      ],
+      "answer": 0,
+      "explain": "v tăng (nhanh dần), độ dốc giảm (a giảm).",
+      "wrong_explain": {
+        "1": "v vẫn tăng.",
+        "2": "Độ dốc giảm.",
+        "3": "Sai."
+      },
+      "id": "q17"
+    }
+  ]
+}

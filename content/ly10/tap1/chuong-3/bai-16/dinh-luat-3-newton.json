@@ -1,0 +1,318 @@
+{
+  "id": "bai-16",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương III. Động lực học",
+  "lesson": "Bài 16. Định luật 3 Newton",
+  "section": "",
+  "bookPage": 67,
+  "requirements": [
+    "Phát biểu định luật 3 Newton; nêu đặc điểm của lực và phản lực.",
+    "Vận dụng định luật 3 giải thích hiện tượng và tính lực tương tác."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Định luật 3 Newton: Trong mọi trường hợp, khi vật A tác dụng lên vật B một lực thì vật B cũng tác dụng lại vật A một lực. Hai lực này có cùng giá, cùng độ lớn nhưng ngược chiều."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b16-luc-phan-luc.svg",
+      "caption": "Lực và phản lực giữa hai vật A, B"
+    },
+    {
+      "type": "formula",
+      "content": "→F_AB = −→F_BA"
+    },
+    {
+      "type": "text",
+      "content": "Một trong hai lực gọi là lực tác dụng, lực kia gọi là phản lực. Đặc điểm: lực và phản lực luôn xuất hiện (và mất đi) đồng thời; cùng loại (cùng là lực hấp dẫn, lực đàn hồi…); đặt vào hai vật khác nhau nên không cân bằng nhau."
+    },
+    {
+      "type": "text",
+      "content": "Phân biệt với cặp lực cân bằng: hai lực cân bằng đặt vào cùng một vật và có thể khác loại (trọng lực và phản lực của bàn lên sách). Cặp lực – phản lực đặt vào hai vật khác nhau (sách đè lên bàn và bàn đẩy sách là một cặp; Trái Đất hút sách và sách hút Trái Đất là một cặp)."
+    },
+    {
+      "type": "text",
+      "content": "Vì lực bằng nhau nhưng khối lượng khác nhau nên gia tốc của hai vật khác nhau: m_A·a_A = m_B·a_B. Ứng dụng: chuyển động của tên lửa, súng giật lùi, người bơi đạp nước, chèo thuyền, đi bộ đẩy đất về sau."
+    },
+    {
+      "type": "method",
+      "title": "Vận dụng định luật 3 Newton",
+      "when": "Đề mô tả hai vật tương tác (va chạm, đẩy nhau, kéo nhau) và hỏi lực hoặc gia tốc của vật còn lại; hoặc nhận diện cặp lực – phản lực.",
+      "steps": [
+        "Xác định hai vật tương tác và lực mỗi vật chịu.",
+        "Độ lớn: F_AB = F_BA.",
+        "Gia tốc mỗi vật: a = F/m, ngược chiều nhau; nếu biết thời gian tương tác thì Δv = aΔt.",
+        "Cặp lực – phản lực phải đặt lên hai vật khác nhau, cùng bản chất."
+      ],
+      "notes": [
+        "Lực và phản lực không triệt tiêu nhau.",
+        "Vật nhẹ hơn chịu gia tốc lớn hơn."
+      ],
+      "sample": {
+        "problem": "Hai bạn đứng trên patin đẩy nhau: bạn A 50 kg thu gia tốc 2 m/s². Bạn B 40 kg thu gia tốc bao nhiêu?",
+        "steps": [
+          "Lực tương tác F = 50·2 = 100 N.",
+          "a_B = 100/40 = 2,5 m/s², ngược chiều với A."
+        ],
+        "answer": "2,5 m/s²"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một xe A khối lượng 2 kg chuyển động đến va chạm vào xe B 4 kg đang đứng yên. Trong thời gian va chạm, xe A thu gia tốc 6 m/s². Tính gia tốc của xe B và lực tương tác.",
+      "steps": [
+        "F = m_A·a_A = 2·6 = 12 N.",
+        "a_B = 12/4 = 3 m/s², ngược chiều gia tốc của A."
+      ],
+      "expr": "12/4",
+      "answer": "3"
+    },
+    {
+      "problem": "Một quả bóng 0,5 kg bay đến đập vào tường với lực 200 N. Tường tác dụng lên bóng lực bao nhiêu?",
+      "steps": [
+        "Theo định luật 3, tường tác dụng lên bóng lực 200 N, ngược chiều, cùng giá."
+      ],
+      "expr": "200",
+      "answer": "200"
+    },
+    {
+      "problem": "Một khẩu súng 4 kg bắn viên đạn 10 g. Trong nòng, đạn chịu lực trung bình 400 N. Tính gia tốc giật lùi của súng.",
+      "steps": [
+        "Súng chịu lực 400 N ngược chiều.",
+        "a = 400/4 = 100 m/s²."
+      ],
+      "expr": "400/4",
+      "answer": "100"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Lực và phản lực có đặc điểm:",
+      "choices": [
+        "cùng độ lớn, ngược chiều, đặt vào hai vật khác nhau",
+        "cùng độ lớn, cùng chiều",
+        "đặt vào cùng một vật",
+        "cân bằng nhau"
+      ],
+      "answer": 0,
+      "explain": "Định luật 3.",
+      "wrong_explain": {
+        "1": "Ngược chiều.",
+        "2": "Hai vật khác nhau.",
+        "3": "Không cân bằng vì đặt vào hai vật."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Lực và phản lực luôn:",
+      "choices": [
+        "xuất hiện và mất đi đồng thời",
+        "xuất hiện trước sau",
+        "khác loại nhau",
+        "có độ lớn khác nhau"
+      ],
+      "answer": 0,
+      "explain": "Tương tác đồng thời.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Cùng loại.",
+        "3": "Bằng nhau."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Định luật 3 Newton còn mô tả:",
+      "choices": [
+        "sự tương tác giữa các vật",
+        "quán tính",
+        "sự rơi tự do",
+        "chuyển động tròn"
+      ],
+      "answer": 0,
+      "explain": "Tác dụng tương hỗ.",
+      "wrong_explain": {
+        "1": "Định luật 1.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Búa đóng vào đinh với lực 500 N. Đinh tác dụng lên búa lực (N):",
+      "expr": "500",
+      "answer": "500",
+      "explain": "Bằng nhau.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi bơi, người đạp nước về phía sau thì người tiến về phía trước vì:",
+      "choices": [
+        "nước tác dụng lên người phản lực hướng về phía trước",
+        "trọng lực đẩy người",
+        "người có quán tính",
+        "lực đẩy Archimedes"
+      ],
+      "answer": 0,
+      "explain": "Định luật 3.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Quán tính không làm tăng tốc.",
+        "3": "Lực đẩy hướng lên."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Quyển sách nằm trên bàn. Phản lực của lực \"Trái Đất hút sách\" là:",
+      "choices": [
+        "lực sách hút Trái Đất",
+        "lực bàn đẩy sách",
+        "lực sách đè lên bàn",
+        "trọng lực của bàn"
+      ],
+      "answer": 0,
+      "explain": "Cùng loại hấp dẫn, hai vật Trái Đất – sách.",
+      "wrong_explain": {
+        "1": "Đó là cặp cân bằng với trọng lực.",
+        "2": "Đó là phản lực của lực bàn đẩy sách.",
+        "3": "Sai."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ô tô tải va chạm với xe máy. Khẳng định đúng:",
+      "choices": [
+        "lực ô tô tác dụng lên xe máy bằng lực xe máy tác dụng lên ô tô",
+        "ô tô tác dụng lực lớn hơn",
+        "xe máy tác dụng lực lớn hơn",
+        "chỉ ô tô tác dụng lực"
+      ],
+      "answer": 0,
+      "explain": "Định luật 3; xe máy hư hại nhiều hơn vì gia tốc lớn hơn.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai vật 3 kg và 6 kg đẩy nhau; vật 3 kg thu gia tốc 4 m/s². Vật 6 kg thu gia tốc (m/s²):",
+      "expr": "12/6",
+      "answer": "2",
+      "explain": "F = 12 N.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao lực và phản lực không cân bằng nhau?",
+      "choices": [
+        "vì chúng đặt vào hai vật khác nhau",
+        "vì độ lớn khác nhau",
+        "vì cùng chiều",
+        "vì khác loại"
+      ],
+      "answer": 0,
+      "explain": "Cân bằng chỉ xét các lực trên cùng một vật.",
+      "wrong_explain": {
+        "1": "Bằng nhau.",
+        "2": "Ngược chiều.",
+        "3": "Cùng loại."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tên lửa bay lên được là nhờ:",
+      "choices": [
+        "khí phụt ra phía sau tác dụng phản lực đẩy tên lửa",
+        "không khí đẩy tên lửa",
+        "trọng lực giảm",
+        "quán tính"
+      ],
+      "answer": 0,
+      "explain": "Định luật 3 (và bảo toàn động lượng).",
+      "wrong_explain": {
+        "1": "Hoạt động cả trong chân không.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Người 60 kg trên patin đẩy tường với lực 120 N. Gia tốc người thu được (m/s²) là:",
+      "expr": "120/60",
+      "answer": "2",
+      "explain": "Tường đẩy lại 120 N.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Xe A 1 kg va xe B 3 kg; trong 0,1 s xe B tăng tốc từ 0 lên 0,5 m/s. Độ lớn lực tương tác (N) là:",
+      "expr": "3*5",
+      "answer": "15",
+      "explain": "a_B = 5 m/s², F = 15 N.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với dữ kiện trên, độ biến thiên vận tốc của xe A (m/s) có độ lớn:",
+      "expr": "15/10",
+      "answer": "1.5",
+      "explain": "a_A = 15 m/s², Δv = 1,5 m/s.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai thuyền nối dây, người trên thuyền A kéo dây. Thuyền A 300 kg, thuyền B 200 kg, lực kéo 60 N. Gia tốc thuyền B (m/s²) là:",
+      "expr": "60/200",
+      "answer": "0.3",
+      "explain": "Dây kéo B 60 N.",
+      "id": "q14"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Với dữ kiện trên, ban đầu hai thuyền đứng yên cách nhau 10 m (a_A = 0,2 m/s², a_B = 0,3 m/s²). Giá trị t² (s²) khi hai thuyền gặp nhau là:",
+      "expr": "4*10",
+      "answer": "40",
+      "explain": "Gia tốc tương đối 0,5 m/s²: 10 = ½·0,5·t² ⇒ t² = 40, t ≈ 6,3 s.",
+      "id": "q15"
+    }
+  ]
+}

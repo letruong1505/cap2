@@ -1,0 +1,288 @@
+{
+  "id": "bai-31",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương VI. Chuyển động tròn",
+  "lesson": "Bài 31. Động học của chuyển động tròn đều",
+  "section": "",
+  "bookPage": 120,
+  "requirements": [
+    "Nêu được radian, độ dịch chuyển góc, tốc độ góc, chu kì, tần số.",
+    "Vận dụng v = ωr, T = 2π/ω để tính các đại lượng của chuyển động tròn đều."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Chuyển động tròn đều là chuyển động có quỹ đạo là đường tròn và tốc độ không đổi. Vectơ vận tốc luôn tiếp tuyến với quỹ đạo, có độ lớn không đổi nhưng hướng thay đổi liên tục."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b31-chuyen-dong-tron.svg",
+      "caption": "Vận tốc trong chuyển động tròn đều luôn tiếp tuyến với quỹ đạo"
+    },
+    {
+      "type": "text",
+      "content": "Radian (rad) là số đo góc ở tâm chắn cung có độ dài bằng bán kính. Độ dịch chuyển góc θ = s/r (rad); 360° = 2π rad, 180° = π rad."
+    },
+    {
+      "type": "formula",
+      "content": "Tốc độ góc: ω = Δθ/Δt (rad/s)        Tốc độ: v = ω·r"
+    },
+    {
+      "type": "formula",
+      "content": "Chu kì: T = 2π/ω (s)        Tần số: f = 1/T (Hz hoặc vòng/s)        ω = 2πf"
+    },
+    {
+      "type": "text",
+      "content": "Chu kì là thời gian vật đi hết một vòng; tần số là số vòng vật đi được trong một giây. Các điểm trên cùng một vật rắn quay quanh trục có cùng tốc độ góc nhưng điểm càng xa trục thì tốc độ dài càng lớn."
+    },
+    {
+      "type": "text",
+      "content": "Ví dụ: kim giây quay một vòng trong 60 s nên ω = 2π/60 ≈ 0,105 rad/s; Trái Đất tự quay một vòng trong khoảng 24 giờ."
+    },
+    {
+      "type": "method",
+      "title": "Tính các đại lượng của chuyển động tròn đều",
+      "when": "Đề cho bán kính và chu kì (tần số, số vòng/phút), hoặc tốc độ; hỏi ω, v, T, f, góc quay, quãng đường.",
+      "steps": [
+        "Đổi số vòng/phút ra vòng/s (chia 60) để được f; ω = 2πf.",
+        "v = ωr; T = 1/f.",
+        "Góc quay trong thời gian t: θ = ωt; quãng đường s = θ·r = vt.",
+        "Đổi độ ra rad khi cần: rad = độ·π/180."
+      ],
+      "notes": [
+        "Bán kính tính bằng m.",
+        "Các điểm cùng một vật quay có cùng ω."
+      ],
+      "sample": {
+        "problem": "Bánh xe bán kính 0,3 m quay 120 vòng/phút. Tính ω và tốc độ của điểm trên vành.",
+        "steps": [
+          "f = 2 vòng/s; ω = 2π·2 = 4π ≈ 12,6 rad/s.",
+          "v = ωr = 4π·0,3 ≈ 3,77 m/s."
+        ],
+        "answer": "ω ≈ 12,6 rad/s; v ≈ 3,77 m/s"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một vật chuyển động tròn đều trên đường tròn bán kính 2 m, đi một vòng trong 4 s. Tính tần số, tốc độ góc và tốc độ (lấy π ≈ 3,14).",
+      "steps": [
+        "T = 4 s ⇒ f = 0,25 Hz.",
+        "ω = 2π/T = 3,14/2 = 1,57 rad/s.",
+        "v = ωr = 3,14 m/s."
+      ],
+      "expr": "3.14/2*2",
+      "answer": "3.14"
+    },
+    {
+      "problem": "Đổi 60° ra radian và tính độ dài cung tương ứng trên đường tròn bán kính 30 cm.",
+      "steps": [
+        "60° = π/3 rad ≈ 1,047 rad.",
+        "s = θr = (π/3)·0,3 ≈ 0,314 m."
+      ],
+      "expr": "0.314",
+      "answer": "0.314"
+    },
+    {
+      "problem": "Kim phút của đồng hồ dài 10 cm. Tính tốc độ của đầu kim (π ≈ 3,14).",
+      "steps": [
+        "T = 3600 s; ω = 2π/3600.",
+        "v = ωr = 6,28·0,1/3600 ≈ 1,74·10⁻⁴ m/s."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong chuyển động tròn đều, đại lượng KHÔNG đổi là:",
+      "choices": [
+        "tốc độ",
+        "vectơ vận tốc",
+        "hướng chuyển động",
+        "vị trí"
+      ],
+      "answer": 0,
+      "explain": "Độ lớn vận tốc không đổi, hướng thay đổi.",
+      "wrong_explain": {
+        "1": "Hướng thay đổi.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đơn vị của tốc độ góc là:",
+      "choices": [
+        "rad/s",
+        "m/s",
+        "Hz",
+        "vòng"
+      ],
+      "answer": 0,
+      "explain": "ω = Δθ/Δt.",
+      "wrong_explain": {
+        "1": "Tốc độ dài.",
+        "2": "Tần số.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hệ thức đúng giữa tốc độ, tốc độ góc và bán kính là:",
+      "choices": [
+        "v = ωr",
+        "v = ω/r",
+        "v = r/ω",
+        "v = ω²r"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Đó là gia tốc hướng tâm."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật quay đều 5 vòng/s. Chu kì (s):",
+      "expr": "1/5",
+      "answer": "0.2",
+      "explain": "T = 1/f.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tốc độ góc 4 rad/s, bán kính 0,5 m. Tốc độ (m/s):",
+      "expr": "2",
+      "answer": "2",
+      "explain": "ωr.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật quay 300 vòng/phút. Tần số (Hz):",
+      "expr": "5",
+      "answer": "5",
+      "explain": "300/60.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chu kì 2 s. Tốc độ góc (rad/s, π ≈ 3,14):",
+      "expr": "3.14",
+      "answer": "3.14",
+      "explain": "2π/T.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đổi 90° ra rad (π ≈ 3,14):",
+      "expr": "1.57",
+      "answer": "1.57",
+      "explain": "π/2.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật quay với ω = 2 rad/s trong 3 s. Góc quay (rad):",
+      "expr": "6",
+      "answer": "6",
+      "explain": "θ = ωt.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai điểm A (gần trục) và B (ở vành) trên một bánh xe quay đều. Kết luận:",
+      "choices": [
+        "cùng tốc độ góc, B có tốc độ lớn hơn",
+        "cùng tốc độ",
+        "A có tốc độ góc lớn hơn",
+        "B có chu kì lớn hơn"
+      ],
+      "answer": 0,
+      "explain": "v = ωr.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Cùng chu kì."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đĩa quay đều với ω = 10 rad/s. Điểm cách trục 20 cm có tốc độ (m/s):",
+      "expr": "2",
+      "answer": "2",
+      "explain": "10·0,2.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bánh xe đạp đường kính 0,6 m, xe chạy 6 m/s không trượt. Tốc độ góc của bánh (rad/s):",
+      "expr": "20",
+      "answer": "20",
+      "explain": "ω = v/r = 6/0,3.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trái Đất quay quanh trục một vòng 24 h. Tốc độ góc (rad/s, làm tròn: 7,27·10⁻⁵ nhập 0.0000727):",
+      "expr": "0.0000727",
+      "answer": "0.0000727",
+      "explain": "2π/86 400.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vệ tinh quay quanh Trái Đất bán kính quỹ đạo 7000 km, chu kì 5800 s. Tốc độ (km/s, π ≈ 3,14, làm tròn 2 chữ số):",
+      "expr": "7.58",
+      "answer": "7.58",
+      "explain": "2π·7000/5800.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Quạt quay 1200 vòng/phút, cánh dài 0,25 m. Tốc độ đầu cánh (m/s, π ≈ 3,14):",
+      "expr": "31.4",
+      "answer": "31.4",
+      "explain": "ω = 40π; v = 10π.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Kim giờ và kim phút: tỉ số tốc độ góc của kim phút so với kim giờ là:",
+      "expr": "12",
+      "answer": "12",
+      "explain": "T_giờ = 12 h, T_phút = 1 h.",
+      "id": "q16"
+    }
+  ]
+}

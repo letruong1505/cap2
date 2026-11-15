@@ -1,0 +1,309 @@
+{
+  "id": "bai-14",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương III. Động lực học",
+  "lesson": "Bài 14. Định luật 1 Newton",
+  "section": "",
+  "bookPage": 60,
+  "requirements": [
+    "Phát biểu định luật 1 Newton; nêu được quán tính và mức quán tính phụ thuộc khối lượng.",
+    "Giải thích các hiện tượng liên quan đến quán tính trong đời sống."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Trước Galilei, người ta cho rằng muốn vật chuyển động thì phải có lực tác dụng (Aristotle). Galilei dùng thí nghiệm máng nghiêng để chỉ ra: nếu không có ma sát, vật lăn trên mặt phẳng ngang sẽ chuyển động mãi mãi; lực không cần để duy trì chuyển động mà để thay đổi chuyển động."
+    },
+    {
+      "type": "text",
+      "content": "Định luật 1 Newton: Nếu một vật không chịu tác dụng của lực nào hoặc chịu tác dụng của các lực có hợp lực bằng 0 thì vật đang đứng yên sẽ tiếp tục đứng yên, đang chuyển động sẽ tiếp tục chuyển động thẳng đều."
+    },
+    {
+      "type": "formula",
+      "content": "→F_hl = →0  ⇔  →v = hằng số (đứng yên hoặc chuyển động thẳng đều)"
+    },
+    {
+      "type": "text",
+      "content": "Quán tính là tính chất của mọi vật có xu hướng bảo toàn vận tốc cả về hướng và độ lớn. Vì vậy định luật 1 còn gọi là định luật quán tính; chuyển động thẳng đều là chuyển động theo quán tính."
+    },
+    {
+      "type": "text",
+      "content": "Khối lượng là đại lượng đặc trưng cho mức quán tính của vật: vật có khối lượng càng lớn thì quán tính càng lớn, càng khó thay đổi vận tốc. Khối lượng là đại lượng vô hướng, dương, không đổi với mỗi vật và có tính cộng được."
+    },
+    {
+      "type": "text",
+      "content": "Ví dụ quán tính: xe phanh gấp, người ngả về phía trước; xe tăng tốc đột ngột, người ngả về phía sau; giũ quần áo cho sạch bụi; tra cán búa bằng cách gõ cán xuống đất. Thắt dây an toàn để giảm nguy hiểm do quán tính khi xe dừng đột ngột."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b14-quan-tinh.svg",
+      "caption": "Hành khách ngả về phía trước khi xe phanh gấp"
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Theo định luật 1 Newton, khi hợp lực tác dụng lên vật bằng 0, vật đang chuyển động sẽ:",
+      "choices": [
+        "chuyển động thẳng đều",
+        "dừng lại ngay",
+        "chuyển động chậm dần",
+        "chuyển động nhanh dần"
+      ],
+      "answer": 0,
+      "explain": "Bảo toàn vận tốc.",
+      "wrong_explain": {
+        "1": "Không có lực để dừng.",
+        "2": "Cần lực cản.",
+        "3": "Cần lực kéo."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đại lượng đặc trưng cho mức quán tính của vật là:",
+      "choices": [
+        "khối lượng",
+        "vận tốc",
+        "trọng lượng",
+        "thể tích"
+      ],
+      "answer": 0,
+      "explain": "Khối lượng lớn, quán tính lớn.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Trọng lượng là lực.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Người đưa ra thí nghiệm máng nghiêng phản bác quan niệm của Aristotle là:",
+      "choices": [
+        "Galilei",
+        "Newton",
+        "Einstein",
+        "Archimedes"
+      ],
+      "answer": 0,
+      "explain": "Galilei.",
+      "wrong_explain": {
+        "1": "Newton phát biểu định luật sau đó.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Định luật 1 Newton còn gọi là:",
+      "choices": [
+        "định luật quán tính",
+        "định luật hấp dẫn",
+        "định luật bảo toàn",
+        "định luật tác dụng tương hỗ"
+      ],
+      "answer": 0,
+      "explain": "Nói về quán tính.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Đó là định luật 3."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Lực có tác dụng:",
+      "choices": [
+        "làm thay đổi vận tốc của vật",
+        "duy trì chuyển động thẳng đều",
+        "làm vật đứng yên mãi",
+        "không ảnh hưởng chuyển động"
+      ],
+      "answer": 0,
+      "explain": "Lực gây ra gia tốc.",
+      "wrong_explain": {
+        "1": "Chuyển động đều không cần lực.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Xe buýt đang chạy thì phanh gấp, hành khách bị ngả về phía trước vì:",
+      "choices": [
+        "quán tính giữ người tiếp tục chuyển động về phía trước",
+        "có lực đẩy người về phía trước",
+        "ghế đẩy người",
+        "trọng lực tăng lên"
+      ],
+      "answer": 0,
+      "explain": "Chân dừng theo xe, thân tiếp tục chuyển động.",
+      "wrong_explain": {
+        "1": "Không có lực đẩy.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Xe đang đứng yên đột ngột tăng tốc, hành khách bị ngả về phía:",
+      "choices": [
+        "sau",
+        "trước",
+        "bên trái",
+        "bên phải"
+      ],
+      "answer": 0,
+      "explain": "Thân người có xu hướng giữ trạng thái đứng yên.",
+      "wrong_explain": {
+        "1": "Khi phanh mới ngả trước.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vật nào khó thay đổi vận tốc nhất?",
+      "choices": [
+        "Xe tải 10 tấn",
+        "Xe máy 100 kg",
+        "Xe đạp 15 kg",
+        "Quả bóng 0,5 kg"
+      ],
+      "answer": 0,
+      "explain": "Khối lượng lớn nhất.",
+      "wrong_explain": {
+        "1": "Nhẹ hơn.",
+        "2": "Nhẹ hơn.",
+        "3": "Nhẹ nhất."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Một quyển sách nằm yên trên bàn. Kết luận đúng:",
+      "choices": [
+        "hợp lực tác dụng lên sách bằng 0",
+        "không có lực nào tác dụng lên sách",
+        "chỉ có trọng lực tác dụng",
+        "sách không có quán tính"
+      ],
+      "answer": 0,
+      "explain": "Trọng lực và phản lực cân bằng.",
+      "wrong_explain": {
+        "1": "Có trọng lực và phản lực.",
+        "2": "Còn phản lực.",
+        "3": "Mọi vật đều có quán tính."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Muốn tra đầu búa chặt vào cán, người ta:",
+      "choices": [
+        "gõ mạnh đuôi cán xuống đất",
+        "gõ vào đầu búa",
+        "kéo đầu búa ra",
+        "xoay cán búa"
+      ],
+      "answer": 0,
+      "explain": "Cán dừng, đầu búa tiếp tục đi xuống do quán tính.",
+      "wrong_explain": {
+        "1": "Làm lỏng thêm.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tàu vũ trụ ở rất xa các thiên thể, tắt động cơ. Tàu sẽ:",
+      "choices": [
+        "chuyển động thẳng đều",
+        "dừng lại",
+        "rơi về Trái Đất",
+        "quay tròn"
+      ],
+      "answer": 0,
+      "explain": "Không có lực tác dụng.",
+      "wrong_explain": {
+        "1": "Không có lực cản.",
+        "2": "Ở rất xa.",
+        "3": "Sai."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao người lái xe và hành khách phải thắt dây an toàn?",
+      "choices": [
+        "Giảm chấn thương do quán tính khi xe dừng đột ngột",
+        "Để xe chạy nhanh hơn",
+        "Để giảm khối lượng xe",
+        "Để tăng quán tính"
+      ],
+      "answer": 0,
+      "explain": "Dây giữ người lại khi xe giảm tốc đột ngột.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Kéo nhanh tờ giấy nằm dưới cốc nước, cốc gần như đứng yên vì:",
+      "choices": [
+        "cốc có quán tính và thời gian tác dụng quá ngắn",
+        "cốc quá nặng nên không có ma sát",
+        "tờ giấy không có ma sát",
+        "cốc bị dính vào bàn"
+      ],
+      "answer": 0,
+      "explain": "Lực ma sát tác dụng trong thời gian ngắn không đủ làm cốc thay đổi vận tốc đáng kể.",
+      "wrong_explain": {
+        "1": "Có ma sát.",
+        "2": "Có ma sát.",
+        "3": "Sai."
+      },
+      "id": "q13"
+    }
+  ]
+}

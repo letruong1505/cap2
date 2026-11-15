@@ -1,0 +1,282 @@
+{
+  "id": "bai-15",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương III. Động lực học",
+  "lesson": "Bài 15. Định luật 2 Newton",
+  "section": "",
+  "bookPage": 63,
+  "requirements": [
+    "Phát biểu và vận dụng định luật 2 Newton; nêu được đơn vị niutơn.",
+    "Giải bài toán tìm gia tốc, lực, khối lượng của vật chuyển động thẳng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Định luật 2 Newton: Gia tốc của một vật cùng hướng với lực tác dụng lên vật. Độ lớn của gia tốc tỉ lệ thuận với độ lớn của lực và tỉ lệ nghịch với khối lượng của vật."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b15-a-theo-f.svg",
+      "caption": "Đồ thị gia tốc theo lực với hai vật khối lượng khác nhau"
+    },
+    {
+      "type": "formula",
+      "content": "→a = →F/m   hay   →F = m·→a        1 N = 1 kg·m/s²"
+    },
+    {
+      "type": "text",
+      "content": "Trường hợp vật chịu nhiều lực, →F là hợp lực của tất cả các lực tác dụng lên vật. Định luật 1 là trường hợp riêng của định luật 2 khi →F = →0 thì →a = →0."
+    },
+    {
+      "type": "text",
+      "content": "Từ định luật 2 thấy: cùng một lực, vật khối lượng lớn thì gia tốc nhỏ (khó thay đổi vận tốc) – đúng với ý nghĩa khối lượng là mức quán tính."
+    },
+    {
+      "type": "text",
+      "content": "Kết hợp với động học: tính a = F/m rồi dùng v = v₀ + at, d = v₀t + ½at², v² − v₀² = 2ad; hoặc ngược lại tìm a từ động học rồi tính lực F = ma."
+    },
+    {
+      "type": "method",
+      "title": "Vận dụng định luật 2 Newton",
+      "when": "Đề cho lực và khối lượng hỏi gia tốc, vận tốc, quãng đường; hoặc cho chuyển động (vận tốc, thời gian, quãng đường) hỏi lực.",
+      "steps": [
+        "Chọn chiều dương (thường theo chiều chuyển động); vẽ các lực tác dụng lên vật.",
+        "Viết →F_hl = m→a; chiếu lên chiều dương để được F_hl = ma (lực ngược chiều mang dấu âm).",
+        "Nếu thiếu a, tính từ công thức động học; nếu biết a, dùng động học tìm v, d, t.",
+        "Đổi đơn vị: g → kg, km/h → m/s."
+      ],
+      "notes": [
+        "F_hl là hợp lực, không phải một lực riêng lẻ.",
+        "Lực hãm làm a âm theo chiều chuyển động."
+      ],
+      "sample": {
+        "problem": "Một lực 20 N tác dụng vào vật 4 kg đang đứng yên trên mặt phẳng nhẵn. Tính gia tốc và quãng đường sau 3 s.",
+        "steps": [
+          "a = F/m = 20/4 = 5 m/s².",
+          "d = ½at² = ½·5·9 = 22,5 m."
+        ],
+        "answer": "a = 5 m/s², d = 22,5 m"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một ô tô khối lượng 1,5 tấn đang chạy 20 m/s thì hãm phanh, dừng lại sau 5 s. Tính lực hãm.",
+      "steps": [
+        "a = (0 − 20)/5 = −4 m/s².",
+        "F = ma = 1500·(−4) = −6000 N; lực hãm có độ lớn 6000 N, ngược chiều chuyển động."
+      ],
+      "expr": "1500*4",
+      "answer": "6000"
+    },
+    {
+      "problem": "Một vật 2 kg chịu lực kéo 10 N và lực cản 4 N ngược chiều. Tính gia tốc.",
+      "steps": [
+        "F_hl = 10 − 4 = 6 N.",
+        "a = 6/2 = 3 m/s²."
+      ],
+      "expr": "6/2",
+      "answer": "3"
+    },
+    {
+      "problem": "Một quả bóng 0,5 kg đang đứng yên được đá với lực 250 N trong 0,02 s. Tính vận tốc bóng bay đi.",
+      "steps": [
+        "a = 250/0,5 = 500 m/s².",
+        "v = at = 500·0,02 = 10 m/s."
+      ],
+      "expr": "500*0.02",
+      "answer": "10"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Lực 12 N tác dụng vào vật 3 kg. Gia tốc (m/s²) là:",
+      "expr": "12/3",
+      "answer": "4",
+      "explain": "a = F/m.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật 5 kg có gia tốc 2 m/s². Hợp lực (N) là:",
+      "expr": "5*2",
+      "answer": "10",
+      "explain": "F = ma.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Gia tốc của vật cùng hướng với:",
+      "choices": [
+        "hợp lực tác dụng lên vật",
+        "vận tốc của vật",
+        "độ dịch chuyển",
+        "trọng lực"
+      ],
+      "answer": 0,
+      "explain": "Định luật 2.",
+      "wrong_explain": {
+        "1": "Không nhất thiết.",
+        "2": "Không nhất thiết.",
+        "3": "Chỉ khi rơi tự do."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "1 N bằng:",
+      "choices": [
+        "1 kg·m/s²",
+        "1 kg·m/s",
+        "1 g·cm/s²",
+        "1 kg/m"
+      ],
+      "answer": 0,
+      "explain": "F = ma.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Đó là dyn.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật 0,4 kg chịu lực 2 N. Gia tốc (m/s²) là:",
+      "expr": "20/4",
+      "answer": "5",
+      "explain": "a = 2/0,4.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật 2 kg chịu lực kéo 15 N và lực ma sát 5 N. Gia tốc (m/s²) là:",
+      "expr": "10/2",
+      "answer": "5",
+      "explain": "F_hl = 10 N.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cùng một lực, vật 2 kg có gia tốc 6 m/s². Vật 3 kg có gia tốc (m/s²) là:",
+      "expr": "12/3",
+      "answer": "4",
+      "explain": "F = 12 N.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật 4 kg từ nghỉ, chịu lực 8 N. Vận tốc sau 5 s (m/s) là:",
+      "expr": "2*5",
+      "answer": "10",
+      "explain": "a = 2 m/s².",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật 4 kg từ nghỉ, chịu lực 8 N. Quãng đường sau 5 s (m) là:",
+      "expr": "2*25/2",
+      "answer": "25",
+      "explain": "d = ½at².",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tác dụng cùng một lực vào hai vật A và B; gia tốc của A lớn gấp đôi B. Kết luận:",
+      "choices": [
+        "khối lượng B gấp đôi A",
+        "khối lượng A gấp đôi B",
+        "hai vật cùng khối lượng",
+        "A có quán tính lớn hơn"
+      ],
+      "answer": 0,
+      "explain": "a tỉ lệ nghịch với m.",
+      "wrong_explain": {
+        "1": "Ngược.",
+        "2": "Sai.",
+        "3": "A nhẹ hơn nên quán tính nhỏ hơn."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật 2 kg tăng tốc từ 3 m/s lên 7 m/s trong 2 s. Hợp lực (N) là:",
+      "expr": "2*2",
+      "answer": "4",
+      "explain": "a = 2 m/s².",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Xe 1000 kg đang chạy 72 km/h hãm phanh với lực 5000 N. Quãng đường đến khi dừng (m) là:",
+      "expr": "400/10",
+      "answer": "40",
+      "explain": "a = −5 m/s²; d = 20²/(2·5).",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Xe 1000 kg từ nghỉ đạt 54 km/h sau khi đi 75 m. Hợp lực (N) là:",
+      "expr": "1000*225/150",
+      "answer": "1500",
+      "explain": "a = 15²/(2·75) = 1,5 m/s².",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật 3 kg đang chuyển động 10 m/s, chịu lực cản 6 N. Thời gian đến khi dừng (s) là:",
+      "expr": "10/2",
+      "answer": "5",
+      "explain": "a = −2 m/s².",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Quả bóng 0,4 kg bay tới 10 m/s, bị đá bật ngược lại 15 m/s, thời gian chạm 0,05 s. Độ lớn lực trung bình (N) là:",
+      "expr": "8*25",
+      "answer": "200",
+      "explain": "Δv = 15 − (−10) = 25 m/s; F = mΔv/Δt = 0,4·25/0,05 = 200 N.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lực F gây cho vật m₁ gia tốc 2 m/s², cho vật m₂ gia tốc 3 m/s². Ghép hai vật, F gây gia tốc (m/s²) là:",
+      "expr": "6/5",
+      "answer": "1.2",
+      "explain": "m₁ = F/2, m₂ = F/3; a = F/(F/2 + F/3) = 6/5.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Kéo vật 5 kg trên sàn nhẵn bằng lực 20 N hợp phương ngang 60°. Gia tốc (m/s²) là:",
+      "expr": "10/5",
+      "answer": "2",
+      "explain": "Thành phần ngang 20·cos 60° = 10 N.",
+      "id": "q17"
+    }
+  ]
+}

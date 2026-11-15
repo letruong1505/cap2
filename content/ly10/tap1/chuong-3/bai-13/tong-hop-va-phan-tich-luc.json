@@ -1,0 +1,295 @@
+{
+  "id": "bai-13",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương III. Động lực học",
+  "lesson": "Bài 13. Tổng hợp và phân tích lực. Cân bằng lực",
+  "section": "",
+  "bookPage": 56,
+  "requirements": [
+    "Tổng hợp hai lực đồng quy bằng quy tắc hình bình hành; phân tích một lực thành hai lực thành phần vuông góc.",
+    "Nêu điều kiện cân bằng của chất điểm; vận dụng để tính lực."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Lực là đại lượng vectơ đặc trưng cho tác dụng của vật này lên vật khác, làm vật biến dạng hoặc thay đổi vận tốc. Đơn vị là niutơn (N). Lực được biểu diễn bằng mũi tên có gốc tại điểm đặt, hướng của lực và độ dài tỉ lệ với độ lớn."
+    },
+    {
+      "type": "text",
+      "content": "Tổng hợp lực là thay thế nhiều lực đồng thời tác dụng lên vật bằng một lực có tác dụng giống hệt (hợp lực). Hai lực đồng quy được tổng hợp theo quy tắc hình bình hành: hợp lực là đường chéo của hình bình hành có hai cạnh là hai lực."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b13-hop-luc.svg",
+      "caption": "Tổng hợp hai lực đồng quy theo quy tắc hình bình hành"
+    },
+    {
+      "type": "formula",
+      "content": "F² = F₁² + F₂² + 2F₁F₂cos α  (α là góc giữa →F₁ và →F₂)        |F₁ − F₂| ≤ F ≤ F₁ + F₂"
+    },
+    {
+      "type": "text",
+      "content": "Trường hợp đặc biệt: cùng chiều F = F₁ + F₂; ngược chiều F = |F₁ − F₂|; vuông góc F = √(F₁² + F₂²)."
+    },
+    {
+      "type": "text",
+      "content": "Phân tích lực là thay một lực bằng hai hay nhiều lực có tác dụng giống hệt lực đó; thường phân tích theo hai phương vuông góc: F_x = F·cos α, F_y = F·sin α. Ví dụ trọng lực của vật trên mặt phẳng nghiêng góc α được phân tích thành P·sin α (song song mặt nghiêng) và P·cos α (vuông góc mặt nghiêng)."
+    },
+    {
+      "type": "formula",
+      "content": "Điều kiện cân bằng của chất điểm: →F₁ + →F₂ + ... + →F_n = →0  (F_x = 0 và F_y = 0)"
+    },
+    {
+      "type": "method",
+      "title": "Tổng hợp lực và bài toán cân bằng",
+      "when": "Đề cho hai lực đồng quy và góc giữa chúng, hỏi hợp lực; hoặc vật cân bằng dưới tác dụng của nhiều lực, hỏi lực chưa biết.",
+      "steps": [
+        "Vẽ hình, xác định các lực và góc giữa chúng.",
+        "Hai lực: dùng F² = F₁² + F₂² + 2F₁F₂cos α hoặc các trường hợp đặc biệt.",
+        "Nhiều lực, cân bằng: chọn hệ trục Ox, Oy; chiếu mọi lực lên hai trục; cho tổng hình chiếu bằng 0 trên mỗi trục rồi giải.",
+        "Kiểm tra: hợp lực nằm trong khoảng |F₁ − F₂| đến F₁ + F₂."
+      ],
+      "notes": [
+        "Ba lực cân bằng thì một lực bằng và ngược chiều với hợp lực của hai lực còn lại.",
+        "Góc giữa hai lực, không phải góc với phương ngang."
+      ],
+      "sample": {
+        "problem": "Hai lực 6 N và 8 N đồng quy, vuông góc nhau. Tính hợp lực.",
+        "steps": [
+          "F = √(6² + 8²) = 10 N."
+        ],
+        "answer": "10 N"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hai lực F₁ = F₂ = 10 N đồng quy hợp với nhau góc 60°. Tính độ lớn hợp lực.",
+      "steps": [
+        "F² = 100 + 100 + 2·100·cos 60° = 300.",
+        "F = √300 = 10√3 ≈ 17,3 N."
+      ],
+      "expr": "100+100+100",
+      "answer": "300"
+    },
+    {
+      "problem": "Một vật nặng 20 N được treo bằng hai dây, mỗi dây hợp với phương thẳng đứng góc 30°. Tính lực căng mỗi dây.",
+      "steps": [
+        "Theo phương thẳng đứng: 2T·cos 30° = P.",
+        "T = 20/(2·0,866) ≈ 11,5 N."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Vật nặng P = 50 N nằm trên mặt phẳng nghiêng góc 30° so với phương ngang. Phân tích trọng lực thành hai thành phần song song và vuông góc với mặt nghiêng.",
+      "steps": [
+        "P_x = P·sin 30° = 25 N (kéo vật xuống dọc mặt nghiêng).",
+        "P_y = P·cos 30° ≈ 43,3 N (ép vật vào mặt nghiêng)."
+      ],
+      "expr": "50/2",
+      "answer": "25"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đơn vị của lực trong hệ SI là:",
+      "choices": [
+        "niutơn (N)",
+        "kilôgam (kg)",
+        "jun (J)",
+        "oát (W)"
+      ],
+      "answer": 0,
+      "explain": "Lực đo bằng N.",
+      "wrong_explain": {
+        "1": "Đơn vị khối lượng.",
+        "2": "Đơn vị năng lượng.",
+        "3": "Đơn vị công suất."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai lực đồng quy được tổng hợp theo quy tắc:",
+      "choices": [
+        "hình bình hành",
+        "hình tam giác vuông",
+        "cộng đại số độ lớn",
+        "nhân hai lực"
+      ],
+      "answer": 0,
+      "explain": "Hợp lực là đường chéo.",
+      "wrong_explain": {
+        "1": "Chỉ khi vuông góc.",
+        "2": "Chỉ khi cùng phương.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hai lực 3 N và 4 N cùng phương, cùng chiều. Hợp lực (N) là:",
+      "expr": "3+4",
+      "answer": "7",
+      "explain": "Cộng.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hai lực 3 N và 4 N cùng phương, ngược chiều. Hợp lực (N) là:",
+      "expr": "4-3",
+      "answer": "1",
+      "explain": "Trừ.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hai lực 3 N và 4 N vuông góc nhau. Hợp lực (N) là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "√(9 + 16).",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai lực 5 N và 12 N. Hợp lực KHÔNG thể có độ lớn:",
+      "choices": [
+        "20 N",
+        "7 N",
+        "13 N",
+        "17 N"
+      ],
+      "answer": 0,
+      "explain": "Hợp lực trong khoảng 7 N đến 17 N.",
+      "wrong_explain": {
+        "1": "Giá trị nhỏ nhất.",
+        "2": "Khi vuông góc.",
+        "3": "Giá trị lớn nhất."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai lực 6 N và 6 N hợp với nhau góc 120°. Hợp lực (N) là:",
+      "expr": "6",
+      "answer": "6",
+      "explain": "F² = 36 + 36 + 72·(−0,5) = 36.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lực 20 N hợp với phương ngang góc 30°. Thành phần nằm ngang (N, cos 30° ≈ 0,866) là:",
+      "expr": "20*0.866",
+      "answer": "17.32",
+      "explain": "F·cos α.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lực 20 N hợp với phương ngang góc 30°. Thành phần thẳng đứng (N) là:",
+      "expr": "20/2",
+      "answer": "10",
+      "explain": "F·sin 30°.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Một chất điểm đứng yên dưới tác dụng của ba lực. Khẳng định đúng:",
+      "choices": [
+        "hợp lực của ba lực bằng 0",
+        "ba lực bằng nhau",
+        "ba lực cùng phương",
+        "có một lực bằng 0"
+      ],
+      "answer": 0,
+      "explain": "Điều kiện cân bằng.",
+      "wrong_explain": {
+        "1": "Không cần bằng nhau.",
+        "2": "Không cần cùng phương.",
+        "3": "Sai."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật nặng 40 N trên mặt nghiêng 30°. Thành phần trọng lực song song mặt nghiêng (N) là:",
+      "expr": "40/2",
+      "answer": "20",
+      "explain": "P·sin 30°.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ba lực đồng quy cân bằng: F₁ = 6 N, F₂ = 8 N vuông góc nhau. Độ lớn F₃ (N) là:",
+      "expr": "10",
+      "answer": "10",
+      "explain": "F₃ bằng hợp lực của F₁, F₂.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đèn nặng 30 N treo bằng hai dây, mỗi dây hợp phương thẳng đứng 60°. Lực căng mỗi dây (N) là:",
+      "expr": "30",
+      "answer": "30",
+      "explain": "2T·cos 60° = P.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai lực 10 N hợp nhau góc α có hợp lực 10 N. Góc α (độ) là:",
+      "expr": "120",
+      "answer": "120",
+      "explain": "100 = 200 + 200cos α ⇒ cos α = −1/2.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Kéo thùng bằng lực 50 N hợp phương ngang 60°. Thành phần kéo thùng đi theo phương ngang (N) là:",
+      "expr": "50/2",
+      "answer": "25",
+      "explain": "F·cos 60°.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ba lực 3 N, 4 N, 5 N đồng quy cân bằng. Góc giữa hai lực 3 N và 4 N (độ) là:",
+      "expr": "90",
+      "answer": "90",
+      "explain": "Hợp lực 3 N và 4 N bằng 5 N ⇒ vuông góc.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Vật nặng 100 N treo bởi hai dây: dây 1 nằm ngang, dây 2 hợp phương thẳng đứng 45°. Lực căng dây 1 (N) là:",
+      "expr": "100",
+      "answer": "100",
+      "explain": "T₂cos 45° = P, T₁ = T₂sin 45° = P·tan 45° = 100.",
+      "id": "q17"
+    }
+  ]
+}

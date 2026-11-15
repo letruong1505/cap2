@@ -1,0 +1,294 @@
+{
+  "id": "bai-23",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương IV. Năng lượng, công, công suất",
+  "lesson": "Bài 23. Năng lượng. Công cơ học",
+  "section": "",
+  "bookPage": 91,
+  "requirements": [
+    "Nêu được các dạng năng lượng, sự truyền và chuyển hoá năng lượng; định luật bảo toàn năng lượng.",
+    "Tính công của lực trong trường hợp lực không đổi; phân biệt công phát động và công cản."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Năng lượng là đại lượng đặc trưng cho khả năng sinh công hoặc toả nhiệt của vật. Các dạng năng lượng: động năng, thế năng, nhiệt năng, hoá năng, điện năng, quang năng, năng lượng hạt nhân… Đơn vị là jun (J)."
+    },
+    {
+      "type": "text",
+      "content": "Năng lượng có thể truyền từ vật này sang vật khác (bằng cách thực hiện công hoặc truyền nhiệt) và chuyển hoá từ dạng này sang dạng khác. Định luật bảo toàn năng lượng: năng lượng không tự sinh ra và không tự mất đi mà chỉ chuyển từ dạng này sang dạng khác hoặc truyền từ vật này sang vật khác."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b23-cong.svg",
+      "caption": "Lực →F hợp với hướng dịch chuyển góc α"
+    },
+    {
+      "type": "formula",
+      "content": "A = F·d·cos α        Đơn vị: 1 J = 1 N·m"
+    },
+    {
+      "type": "text",
+      "content": "Dấu của công: 0 ≤ α < 90° thì A > 0, công phát động (lực kéo); α = 90° thì A = 0 (lực vuông góc với hướng dịch chuyển, ví dụ trọng lực khi vật chuyển động ngang); 90° < α ≤ 180° thì A < 0, công cản (lực ma sát, lực cản)."
+    },
+    {
+      "type": "text",
+      "content": "Công của trọng lực khi vật dịch chuyển từ độ cao h₁ xuống h₂: A = mg(h₁ − h₂), không phụ thuộc hình dạng đường đi. Công của lực ma sát trượt trên mặt ngang: A = −μmg·d."
+    },
+    {
+      "type": "method",
+      "title": "Tính công của lực",
+      "when": "Đề cho lực, độ dịch chuyển và góc giữa chúng; hoặc vật được kéo trên mặt ngang/mặt nghiêng có ma sát; hỏi công của từng lực, tổng công.",
+      "steps": [
+        "Xác định độ lớn lực F, độ dịch chuyển d và góc α giữa →F và →d.",
+        "A = F·d·cos α; chú ý dấu.",
+        "Công của trọng lực: A = mg·Δh (dương khi đi xuống); công ma sát: −F_ms·d.",
+        "Tổng công bằng tổng đại số các công thành phần (hoặc công của hợp lực)."
+      ],
+      "notes": [
+        "α là góc giữa lực và hướng dịch chuyển, không phải với phương thẳng đứng.",
+        "Phản lực vuông góc mặt phẳng không sinh công."
+      ],
+      "sample": {
+        "problem": "Kéo thùng đi 10 m bằng lực 50 N hợp phương ngang 60°. Tính công của lực kéo.",
+        "steps": [
+          "A = 50·10·cos 60° = 250 J."
+        ],
+        "answer": "250 J"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một người kéo xe đi 20 m trên đường ngang bằng lực 200 N theo phương ngang. Lực ma sát 150 N. Tính công của lực kéo, công của lực ma sát và tổng công.",
+      "steps": [
+        "A_k = 200·20 = 4000 J.",
+        "A_ms = −150·20 = −3000 J.",
+        "Tổng công 1000 J."
+      ],
+      "expr": "4000-3000",
+      "answer": "1000"
+    },
+    {
+      "problem": "Vật 2 kg rơi từ độ cao 10 m xuống 2 m (g = 10). Tính công của trọng lực.",
+      "steps": [
+        "A = mg(h₁ − h₂) = 20·8 = 160 J."
+      ],
+      "expr": "20*8",
+      "answer": "160"
+    },
+    {
+      "problem": "Một vật được kéo đều lên dốc dài 5 m, cao 3 m, vật nặng 100 N, không ma sát. Tính công của lực kéo.",
+      "steps": [
+        "Kéo đều, không ma sát: công kéo bằng độ lớn công của trọng lực.",
+        "A = P·h = 100·3 = 300 J."
+      ],
+      "expr": "100*3",
+      "answer": "300"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đơn vị của công là:",
+      "choices": [
+        "jun (J)",
+        "oát (W)",
+        "niutơn (N)",
+        "N/m"
+      ],
+      "answer": 0,
+      "explain": "1 J = 1 N·m.",
+      "wrong_explain": {
+        "1": "Công suất.",
+        "2": "Lực.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Lực 30 N kéo vật đi 4 m cùng hướng lực. Công (J) là:",
+      "expr": "120",
+      "answer": "120",
+      "explain": "A = Fd.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Lực sinh công bằng 0 khi:",
+      "choices": [
+        "lực vuông góc với hướng dịch chuyển",
+        "lực cùng hướng dịch chuyển",
+        "lực ngược hướng dịch chuyển",
+        "lực rất nhỏ"
+      ],
+      "answer": 0,
+      "explain": "cos 90° = 0.",
+      "wrong_explain": {
+        "1": "Công dương.",
+        "2": "Công âm.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Định luật bảo toàn năng lượng phát biểu:",
+      "choices": [
+        "năng lượng không tự sinh ra hay mất đi, chỉ chuyển hoá hoặc truyền đi",
+        "năng lượng luôn giảm",
+        "năng lượng luôn tăng",
+        "năng lượng chỉ tồn tại dạng cơ năng"
+      ],
+      "answer": 0,
+      "explain": "Định luật cơ bản.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Pin mặt trời chuyển hoá:",
+      "choices": [
+        "quang năng thành điện năng",
+        "điện năng thành quang năng",
+        "hoá năng thành nhiệt năng",
+        "cơ năng thành điện năng"
+      ],
+      "answer": 0,
+      "explain": "Ánh sáng thành điện.",
+      "wrong_explain": {
+        "1": "Đèn LED.",
+        "2": "Đốt nhiên liệu.",
+        "3": "Máy phát điện."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lực 40 N hợp hướng dịch chuyển 60°, dịch chuyển 5 m. Công (J) là:",
+      "expr": "40*5/2",
+      "answer": "100",
+      "explain": "cos 60° = 0,5.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lực ma sát 15 N, vật trượt 8 m. Công của ma sát (J) là:",
+      "expr": "-120",
+      "answer": "-120",
+      "explain": "Công cản.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật 3 kg rơi tự do 5 m (g = 10). Công của trọng lực (J) là:",
+      "expr": "150",
+      "answer": "150",
+      "explain": "mgh.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Người xách túi đi trên đường ngang. Công của lực xách tay (thẳng đứng) là:",
+      "choices": [
+        "bằng 0",
+        "dương",
+        "âm",
+        "bằng trọng lượng túi"
+      ],
+      "answer": 0,
+      "explain": "Lực vuông góc dịch chuyển.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ném vật 0,5 kg lên cao 4 m (g = 10). Công của trọng lực trong quá trình đi lên (J) là:",
+      "expr": "-20",
+      "answer": "-20",
+      "explain": "Trọng lực ngược hướng dịch chuyển.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Kéo vật 5 kg lên cao 2 m đều (g = 10). Công của lực kéo (J) là:",
+      "expr": "100",
+      "answer": "100",
+      "explain": "A = mgh.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Kéo vật 10 kg trên sàn ngang 6 m bằng lực ngang 50 N, μ = 0,3 (g = 10). Tổng công (J) là:",
+      "expr": "300-180",
+      "answer": "120",
+      "explain": "A_k = 300; A_ms = −0,3·100·6 = −180.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật 2 kg trượt từ đỉnh dốc cao 3 m, dài 5 m xuống chân dốc (g = 10). Công của trọng lực (J) là:",
+      "expr": "60",
+      "answer": "60",
+      "explain": "mgh, không phụ thuộc đường đi.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lực 100 N kéo xe 50 m, hợp phương ngang 30° (cos 30° ≈ 0,866). Công (J) là:",
+      "expr": "100*50*0.866",
+      "answer": "4330",
+      "explain": "Fdcos α.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cần cẩu nâng kiện hàng 500 kg lên cao 12 m đều (g = 10). Công (kJ) là:",
+      "expr": "60",
+      "answer": "60",
+      "explain": "5000·12 = 60 000 J.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Vật 4 kg trượt xuống dốc dài 10 m, nghiêng 30°, μ = 0,2 (g = 10, cos 30° ≈ 0,866). Công của lực ma sát (J, làm tròn 1 chữ số thập phân) là:",
+      "expr": "-69.3",
+      "answer": "-69.3",
+      "explain": "F_ms = 0,2·40·0,866 = 6,928 N; A = −69,28 J.",
+      "id": "q16"
+    }
+  ]
+}

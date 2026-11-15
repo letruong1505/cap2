@@ -1,0 +1,302 @@
+{
+  "id": "bai-12",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương II. Động học",
+  "lesson": "Bài 12. Chuyển động ném",
+  "section": "",
+  "bookPage": 49,
+  "requirements": [
+    "Mô tả chuyển động ném ngang như tổng hợp của chuyển động thẳng đều theo phương ngang và rơi tự do theo phương thẳng đứng.",
+    "Tính thời gian rơi, tầm xa, vận tốc chạm đất của vật ném ngang; mô tả định tính chuyển động ném xiên."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Chuyển động ném ngang: vật được ném với vận tốc đầu →v₀ theo phương ngang từ độ cao h, chỉ chịu tác dụng của trọng lực (bỏ qua lực cản). Phân tích thành hai chuyển động thành phần: theo phương ngang Ox là chuyển động thẳng đều với vận tốc v₀; theo phương thẳng đứng Oy là rơi tự do."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b12-nem-ngang.svg",
+      "caption": "Quỹ đạo của vật ném ngang là một nhánh parabol"
+    },
+    {
+      "type": "formula",
+      "content": "x = v₀·t,  y = ½·g·t²        Quỹ đạo: y = g·x²/(2v₀²) (nhánh parabol)"
+    },
+    {
+      "type": "formula",
+      "content": "Thời gian rơi: t = √(2h/g)        Tầm xa: L = v₀·√(2h/g)        Vận tốc chạm đất: v = √(v₀² + (gt)²)"
+    },
+    {
+      "type": "text",
+      "content": "Thời gian rơi của vật ném ngang bằng thời gian rơi tự do từ cùng độ cao, không phụ thuộc v₀. Tầm xa tỉ lệ thuận với v₀ và với căn bậc hai của độ cao."
+    },
+    {
+      "type": "text",
+      "content": "Chuyển động ném xiên: vật ném với →v₀ hợp với phương ngang góc α. Thành phần ngang v₀cos α không đổi, thành phần đứng v₀sin α giảm dần rồi đổi chiều. Quỹ đạo là parabol; tầm cao H = (v₀sin α)²/(2g); tầm xa L = v₀²sin 2α/g, lớn nhất khi α = 45° (trên mặt phẳng ngang, bỏ qua lực cản)."
+    },
+    {
+      "type": "method",
+      "title": "Bài toán ném ngang",
+      "when": "Đề cho độ cao và vận tốc ném ngang (hoặc tầm xa) và hỏi thời gian, tầm xa, vận tốc chạm đất, vị trí sau t giây.",
+      "steps": [
+        "Chọn gốc tại điểm ném, Ox ngang theo v₀, Oy hướng xuống.",
+        "Thời gian rơi từ phương đứng: t = √(2h/g).",
+        "Tầm xa từ phương ngang: L = v₀t; ngược lại v₀ = L/t.",
+        "Vận tốc tại thời điểm t: v_x = v₀, v_y = gt, v = √(v_x² + v_y²); góc với phương ngang: tan β = v_y/v_x."
+      ],
+      "notes": [
+        "Thời gian rơi không phụ thuộc v₀.",
+        "Đổi km/h ra m/s."
+      ],
+      "sample": {
+        "problem": "Một vật ném ngang từ độ cao 20 m với v₀ = 15 m/s (g = 10 m/s²). Tính thời gian rơi và tầm xa.",
+        "steps": [
+          "t = √(2·20/10) = 2 s.",
+          "L = 15 · 2 = 30 m."
+        ],
+        "answer": "t = 2 s, L = 30 m"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một máy bay bay ngang ở độ cao 500 m với tốc độ 100 m/s thả một gói hàng (g = 10 m/s²). Gói hàng chạm đất sau bao lâu và cách vị trí thả theo phương ngang bao xa?",
+      "steps": [
+        "t = √(2·500/10) = 10 s.",
+        "L = 100 · 10 = 1000 m."
+      ],
+      "expr": "100*10",
+      "answer": "1000"
+    },
+    {
+      "problem": "Một viên bi lăn khỏi mép bàn cao 1,25 m và rơi xuống đất cách chân bàn 2 m (g = 10 m/s²). Tính vận tốc của bi khi rời bàn.",
+      "steps": [
+        "t = √(2·1,25/10) = 0,5 s.",
+        "v₀ = L/t = 2/0,5 = 4 m/s."
+      ],
+      "expr": "20/5",
+      "answer": "4"
+    },
+    {
+      "problem": "Vật ném ngang với v₀ = 30 m/s từ độ cao 80 m (g = 10 m/s²). Tính vận tốc khi chạm đất.",
+      "steps": [
+        "t = √(2·80/10) = 4 s; v_y = gt = 40 m/s.",
+        "v = √(30² + 40²) = 50 m/s."
+      ],
+      "expr": "50",
+      "answer": "50"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Theo phương ngang, vật ném ngang chuyển động:",
+      "choices": [
+        "thẳng đều",
+        "nhanh dần đều",
+        "chậm dần đều",
+        "rơi tự do"
+      ],
+      "answer": 0,
+      "explain": "Không có lực theo phương ngang.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Đó là phương thẳng đứng."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Quỹ đạo của vật ném ngang là:",
+      "choices": [
+        "một nhánh parabol",
+        "đường thẳng",
+        "đường tròn",
+        "đường elip"
+      ],
+      "answer": 0,
+      "explain": "y tỉ lệ x².",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thời gian rơi của vật ném ngang phụ thuộc vào:",
+      "choices": [
+        "độ cao h và g",
+        "vận tốc ném v₀",
+        "khối lượng vật",
+        "hình dạng vật"
+      ],
+      "answer": 0,
+      "explain": "t = √(2h/g).",
+      "wrong_explain": {
+        "1": "Không phụ thuộc v₀.",
+        "2": "Sai.",
+        "3": "Bỏ qua lực cản."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật ném ngang từ độ cao 45 m (g = 10 m/s²). Thời gian rơi (s) là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "t = √(2·45/10).",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật ném ngang với v₀ = 10 m/s, thời gian rơi 3 s. Tầm xa (m) là:",
+      "expr": "10*3",
+      "answer": "30",
+      "explain": "L = v₀t.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật ném ngang từ độ cao 20 m với v₀ = 8 m/s (g = 10 m/s²). Tầm xa (m) là:",
+      "expr": "8*2",
+      "answer": "16",
+      "explain": "t = 2 s.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật ném ngang với v₀ = 6 m/s, sau 0,8 s thành phần vận tốc thẳng đứng (m/s, g = 10) là:",
+      "expr": "10*0.8",
+      "answer": "8",
+      "explain": "v_y = gt.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật ném ngang với v₀ = 6 m/s, sau 0,8 s độ lớn vận tốc (m/s, g = 10) là:",
+      "expr": "10",
+      "answer": "10",
+      "explain": "√(36 + 64).",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật ném ngang rơi xuống đất cách chân điểm ném 12 m sau 2 s. Vận tốc ném (m/s) là:",
+      "expr": "12/2",
+      "answer": "6",
+      "explain": "v₀ = L/t.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai vật ném ngang cùng độ cao với v₀ khác nhau. Kết luận:",
+      "choices": [
+        "chạm đất cùng lúc, vật có v₀ lớn hơn rơi xa hơn",
+        "vật nhanh hơn chạm đất trước",
+        "vật chậm hơn chạm đất trước",
+        "rơi cùng một chỗ"
+      ],
+      "answer": 0,
+      "explain": "t không phụ thuộc v₀; L = v₀t.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật ném xiên với v₀ = 20 m/s, góc 30°. Thành phần vận tốc ngang (m/s, cos 30° ≈ 0,866) là:",
+      "expr": "20*0.866",
+      "answer": "17.32",
+      "explain": "v₀cos α.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật ném ngang từ độ cao 80 m, chạm đất cách chân 120 m (g = 10 m/s²). Vận tốc ném (m/s) là:",
+      "expr": "120/4",
+      "answer": "30",
+      "explain": "t = 4 s.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật ném ngang với v₀ = 20 m/s từ độ cao 45 m (g = 10 m/s²). Vận tốc chạm đất (m/s, làm tròn 1 chữ số thập phân) là:",
+      "expr": "36.1",
+      "answer": "36.1",
+      "explain": "v_y = 30; √(400 + 900) ≈ 36,1.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Để tầm xa tăng gấp đôi khi ném ngang từ cùng độ cao, vận tốc ném phải:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "L tỉ lệ v₀: tăng gấp 2 lần.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ném ngang từ độ cao h với v₀ cho tầm xa L. Nếu độ cao tăng 4 lần, tầm xa tăng bao nhiêu lần?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "L tỉ lệ √h.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ném xiên với v₀ = 20 m/s, góc 45° (g = 10 m/s²). Tầm xa trên mặt phẳng ngang (m) là:",
+      "expr": "400/10",
+      "answer": "40",
+      "explain": "L = v₀²sin 2α/g = 400·1/10.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Ném xiên với v₀ = 20 m/s, góc 30° (g = 10 m/s², sin 30° = 0,5). Tầm cao cực đại (m) là:",
+      "expr": "100/20",
+      "answer": "5",
+      "explain": "H = (v₀sin α)²/(2g) = 100/20.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Vật ném ngang từ độ cao 20 m (g = 10 m/s²), khi chạm đất vận tốc hợp với phương ngang góc 45°. Vận tốc ném (m/s) là:",
+      "expr": "20",
+      "answer": "20",
+      "explain": "v_y = gt = 20 m/s; góc 45° nên v₀ = v_y.",
+      "id": "q18"
+    }
+  ]
+}

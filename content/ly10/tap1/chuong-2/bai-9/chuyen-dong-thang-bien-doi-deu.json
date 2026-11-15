@@ -1,0 +1,281 @@
+{
+  "id": "bai-9",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương II. Động học",
+  "lesson": "Bài 9. Chuyển động thẳng biến đổi đều",
+  "section": "",
+  "bookPage": 40,
+  "requirements": [
+    "Vận dụng các công thức của chuyển động thẳng biến đổi đều: v = v₀ + at, d = v₀t + at²/2, v² − v₀² = 2ad.",
+    "Giải bài toán về xe tăng tốc, hãm phanh, quãng đường, thời gian."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Chuyển động thẳng biến đổi đều là chuyển động thẳng có gia tốc không đổi (độ lớn và hướng). Nhanh dần đều khi a cùng chiều v₀; chậm dần đều khi a ngược chiều v₀."
+    },
+    {
+      "type": "formula",
+      "content": "v = v₀ + a·t        d = v₀·t + ½·a·t²        v² − v₀² = 2·a·d"
+    },
+    {
+      "type": "text",
+      "content": "Trong các công thức trên, chọn chiều dương là chiều chuyển động ban đầu: v₀ > 0; nhanh dần đều thì a > 0, chậm dần đều thì a < 0. Khi v₀ = 0 (xuất phát từ nghỉ): v = at, d = ½at², v² = 2ad."
+    },
+    {
+      "type": "text",
+      "content": "Đồ thị v – t là đường thẳng có độ dốc a; đồ thị d – t là một nhánh parabol. Vận tốc trung bình trong khoảng thời gian t của chuyển động biến đổi đều bằng (v₀ + v)/2."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b9-do-thi-v-t.svg",
+      "caption": "Đồ thị v – t của chuyển động thẳng biến đổi đều là đường thẳng"
+    },
+    {
+      "type": "text",
+      "content": "Khi vật chậm dần đều đến dừng lại: thời gian dừng t = −v₀/a, quãng đường dừng d = −v₀²/(2a) (với a < 0). Khoảng cách an toàn khi lái xe phụ thuộc vào bình phương tốc độ."
+    },
+    {
+      "type": "method",
+      "title": "Giải bài toán chuyển động thẳng biến đổi đều",
+      "when": "Đề cho một số trong các đại lượng v₀, v, a, t, d và hỏi đại lượng còn lại; bài xe tăng tốc, hãm phanh, quãng đường trong giây thứ n.",
+      "steps": [
+        "Chọn chiều dương là chiều chuyển động; ghi rõ v₀, v, a (dấu), t, d đã biết.",
+        "Chọn công thức không chứa đại lượng chưa biết và không cần: không có t dùng v² − v₀² = 2ad; không có d dùng v = v₀ + at; không có v dùng d = v₀t + ½at².",
+        "Giải và kiểm tra dấu: quãng đường, thời gian phải dương.",
+        "Quãng đường trong giây thứ n: d(n) − d(n − 1)."
+      ],
+      "notes": [
+        "Chậm dần đều: a âm khi chiều dương theo v₀.",
+        "Đổi km/h ra m/s trước khi tính."
+      ],
+      "sample": {
+        "problem": "Ô tô bắt đầu chuyển động nhanh dần đều, sau 10 s đạt 20 m/s. Tính gia tốc và quãng đường đi được trong 10 s đó.",
+        "steps": [
+          "a = (20 − 0)/10 = 2 m/s².",
+          "d = ½·2·10² = 100 m."
+        ],
+        "answer": "a = 2 m/s², d = 100 m"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một xe đang chạy 20 m/s thì hãm phanh, chuyển động chậm dần đều với gia tốc có độ lớn 2 m/s². Tính thời gian và quãng đường từ lúc hãm đến khi dừng.",
+      "steps": [
+        "Chọn chiều dương theo chiều chuyển động: v₀ = 20 m/s, a = −2 m/s², v = 0.",
+        "t = (0 − 20)/(−2) = 10 s.",
+        "d = (0² − 20²)/(2·(−2)) = 100 m."
+      ],
+      "expr": "400/4",
+      "answer": "100"
+    },
+    {
+      "problem": "Một vật chuyển động nhanh dần đều từ nghỉ với gia tốc 3 m/s². Tính quãng đường vật đi được trong giây thứ 4.",
+      "steps": [
+        "d(4) = ½·3·16 = 24 m; d(3) = ½·3·9 = 13,5 m.",
+        "Quãng đường trong giây thứ 4: 24 − 13,5 = 10,5 m."
+      ],
+      "expr": "24-13.5",
+      "answer": "10.5"
+    },
+    {
+      "problem": "Một đoàn tàu đang chạy 10 m/s thì tăng tốc đều, sau khi đi được 300 m thì đạt 20 m/s. Tính gia tốc và thời gian tăng tốc.",
+      "steps": [
+        "v² − v₀² = 2ad ⇒ a = (400 − 100)/(2·300) = 0,5 m/s².",
+        "t = (20 − 10)/0,5 = 20 s."
+      ],
+      "expr": "300/600",
+      "answer": "0.5"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật xuất phát từ nghỉ với a = 2 m/s². Vận tốc sau 6 s (m/s) là:",
+      "expr": "2*6",
+      "answer": "12",
+      "explain": "v = at.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật xuất phát từ nghỉ với a = 2 m/s². Quãng đường sau 6 s (m) là:",
+      "expr": "2*36/2",
+      "answer": "36",
+      "explain": "d = ½at².",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Công thức liên hệ vận tốc, gia tốc và độ dịch chuyển (không chứa thời gian) là:",
+      "choices": [
+        "v² − v₀² = 2ad",
+        "v = v₀ + at",
+        "d = v₀t + ½at²",
+        "d = vt"
+      ],
+      "answer": 0,
+      "explain": "Khử t từ hai công thức còn lại.",
+      "wrong_explain": {
+        "1": "Chứa t.",
+        "2": "Chứa t.",
+        "3": "Chuyển động đều."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chuyển động thẳng chậm dần đều có:",
+      "choices": [
+        "gia tốc không đổi và ngược chiều vận tốc",
+        "gia tốc bằng 0",
+        "gia tốc cùng chiều vận tốc",
+        "gia tốc tăng dần"
+      ],
+      "answer": 0,
+      "explain": "Vận tốc giảm đều.",
+      "wrong_explain": {
+        "1": "Đó là đều.",
+        "2": "Nhanh dần.",
+        "3": "Không phải biến đổi đều."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật có v₀ = 5 m/s, a = 1 m/s². Vận tốc sau 4 s (m/s) là:",
+      "expr": "5+4",
+      "answer": "9",
+      "explain": "v = v₀ + at.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Xe đang chạy 15 m/s, hãm phanh với a = −3 m/s². Thời gian đến khi dừng (s) là:",
+      "expr": "15/3",
+      "answer": "5",
+      "explain": "t = −v₀/a.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Xe đang chạy 15 m/s, hãm phanh với a = −3 m/s². Quãng đường đến khi dừng (m) là:",
+      "expr": "225/6",
+      "answer": "37.5",
+      "explain": "d = v₀²/(2|a|).",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật có v₀ = 2 m/s, a = 0,5 m/s². Độ dịch chuyển sau 8 s (m) là:",
+      "expr": "2*8+0.5*64/2",
+      "answer": "32",
+      "explain": "d = v₀t + ½at².",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật tăng tốc từ 6 m/s lên 10 m/s trên quãng đường 16 m. Gia tốc (m/s²) là:",
+      "expr": "(100-36)/32",
+      "answer": "2",
+      "explain": "a = (v² − v₀²)/(2d).",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật từ nghỉ nhanh dần đều, sau 4 s đi được 32 m. Gia tốc (m/s²) là:",
+      "expr": "2*32/16",
+      "answer": "4",
+      "explain": "a = 2d/t².",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vận tốc trung bình của vật tăng đều từ 4 m/s lên 12 m/s là (m/s):",
+      "expr": "(4+12)/2",
+      "answer": "8",
+      "explain": "(v₀ + v)/2.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật từ nghỉ với a = 2 m/s². Quãng đường đi trong giây thứ 5 (m) là:",
+      "expr": "25-16",
+      "answer": "9",
+      "explain": "d(5) − d(4) = 25 − 16.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ô tô chạy 72 km/h, người lái mất 1 s phản xạ rồi hãm phanh với độ lớn gia tốc 5 m/s². Quãng đường dừng tổng cộng (m) là:",
+      "expr": "20+400/10",
+      "answer": "60",
+      "explain": "20 m (phản xạ) + 20²/(2·5) = 40 m.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật nhanh dần đều, trong 2 s đầu đi 6 m, trong 2 s tiếp theo đi 14 m. Gia tốc (m/s²) là:",
+      "expr": "(14-6)/4",
+      "answer": "2",
+      "explain": "Hiệu quãng đường hai khoảng bằng nhau liên tiếp: Δd = aT² ⇒ a = 8/4.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Máy bay cần đạt 80 m/s để cất cánh với gia tốc 2 m/s². Đường băng tối thiểu (m) là:",
+      "expr": "6400/4",
+      "answer": "1600",
+      "explain": "d = v²/(2a).",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật từ nghỉ nhanh dần đều, đi 1 m đầu mất 1 s. Thời gian đi hết 4 m đầu (s) là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "d tỉ lệ t²: 4 m ứng với t = 2 s.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Vật từ nghỉ nhanh dần đều với a = 2 m/s². Tỉ số quãng đường giây thứ 3 trên giây thứ 1 là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Các quãng đường trong các giây liên tiếp tỉ lệ 1 : 3 : 5.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Một vật ném lên dốc chậm dần đều với a = −4 m/s² từ v₀ = 12 m/s. Độ dịch chuyển lớn nhất lên dốc (m) là:",
+      "expr": "144/8",
+      "answer": "18",
+      "explain": "d = v₀²/(2|a|).",
+      "id": "q18"
+    }
+  ]
+}

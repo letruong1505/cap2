@@ -1,0 +1,289 @@
+{
+  "id": "bai-25",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương IV. Năng lượng, công, công suất",
+  "lesson": "Bài 25. Động năng, thế năng",
+  "section": "",
+  "bookPage": 99,
+  "requirements": [
+    "Nêu được công thức động năng, thế năng trọng trường; định lí động năng.",
+    "Tính động năng, thế năng; vận dụng định lí động năng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Động năng là dạng năng lượng mà vật có được do chuyển động. Động năng là đại lượng vô hướng, không âm, phụ thuộc hệ quy chiếu."
+    },
+    {
+      "type": "formula",
+      "content": "W_đ = ½·m·v²        (J)"
+    },
+    {
+      "type": "text",
+      "content": "Định lí động năng: Độ biến thiên động năng của vật bằng tổng công của các lực tác dụng lên vật. Nếu công dương thì động năng tăng; công âm thì động năng giảm."
+    },
+    {
+      "type": "formula",
+      "content": "W_đ2 − W_đ1 = A  (tổng công của các lực tác dụng)"
+    },
+    {
+      "type": "text",
+      "content": "Thế năng trọng trường là dạng năng lượng mà vật có được do vị trí của nó trong trọng trường (độ cao so với mốc thế năng). Thế năng phụ thuộc việc chọn mốc: tại mốc W_t = 0, trên mốc W_t > 0, dưới mốc W_t < 0."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b25-dong-the-nang.svg",
+      "caption": "Thế năng trọng trường phụ thuộc độ cao, động năng phụ thuộc vận tốc"
+    },
+    {
+      "type": "formula",
+      "content": "W_t = m·g·h        A_P = W_t1 − W_t2  (công của trọng lực bằng độ giảm thế năng)"
+    },
+    {
+      "type": "text",
+      "content": "Ngoài thế năng trọng trường còn có thế năng đàn hồi của lò xo bị biến dạng (W = ½k(Δl)²) – vật đàn hồi bị biến dạng có khả năng sinh công."
+    },
+    {
+      "type": "method",
+      "title": "Tính động năng, thế năng và dùng định lí động năng",
+      "when": "Đề cho khối lượng, vận tốc, độ cao; hỏi động năng, thế năng, lực hãm, quãng đường hãm, công của lực cản.",
+      "steps": [
+        "Đổi đơn vị: g → kg, km/h → m/s.",
+        "W_đ = ½mv²; W_t = mgh với h tính từ mốc đã chọn.",
+        "Định lí động năng: ½mv₂² − ½mv₁² = tổng công (công lực kéo + công lực cản + công trọng lực…).",
+        "Giải tìm lực hoặc quãng đường."
+      ],
+      "notes": [
+        "Vận tốc tăng gấp đôi thì động năng tăng gấp bốn.",
+        "Thế năng có thể âm nếu vật dưới mốc."
+      ],
+      "sample": {
+        "problem": "Ô tô 1 tấn chạy 20 m/s. Tính động năng.",
+        "steps": [
+          "W_đ = ½·1000·400 = 200 000 J = 200 kJ."
+        ],
+        "answer": "200 kJ"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Viên đạn 10 g bay với 400 m/s xuyên qua tấm gỗ dày 5 cm, vận tốc sau khi xuyên còn 200 m/s. Tính lực cản trung bình của gỗ.",
+      "steps": [
+        "ΔW_đ = ½·0,01·(200² − 400²) = −600 J.",
+        "A_c = −F_c·0,05 = −600 ⇒ F_c = 12 000 N."
+      ],
+      "expr": "12000",
+      "answer": "12000"
+    },
+    {
+      "problem": "Vật 2 kg ở độ cao 5 m so với mặt đất, trên một bàn cao 1 m (g = 10). Tính thế năng khi chọn mốc tại mặt đất và tại mặt bàn.",
+      "steps": [
+        "Mốc mặt đất: W_t = 2·10·5 = 100 J.",
+        "Mốc mặt bàn: W_t = 2·10·4 = 80 J."
+      ],
+      "expr": "2*10*4",
+      "answer": "80"
+    },
+    {
+      "problem": "Ô tô 1,5 tấn đang chạy 15 m/s thì hãm phanh với lực hãm 4500 N. Tính quãng đường đến khi dừng.",
+      "steps": [
+        "W_đ1 = ½·1500·225 = 168 750 J; W_đ2 = 0.",
+        "−4500·d = −168 750 ⇒ d = 37,5 m."
+      ],
+      "expr": "168750/4500",
+      "answer": "37.5"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật 2 kg chuyển động 3 m/s. Động năng (J):",
+      "expr": "9",
+      "answer": "9",
+      "explain": "½·2·9.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật 5 kg ở độ cao 4 m (g = 10, mốc mặt đất). Thế năng (J):",
+      "expr": "200",
+      "answer": "200",
+      "explain": "mgh.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Động năng của vật phụ thuộc vào:",
+      "choices": [
+        "khối lượng và vận tốc",
+        "khối lượng và độ cao",
+        "vận tốc và độ cao",
+        "chỉ độ cao"
+      ],
+      "answer": 0,
+      "explain": "½mv².",
+      "wrong_explain": {
+        "1": "Đó là thế năng.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thế năng trọng trường phụ thuộc vào:",
+      "choices": [
+        "việc chọn mốc thế năng",
+        "vận tốc của vật",
+        "hướng chuyển động",
+        "thời gian"
+      ],
+      "answer": 0,
+      "explain": "h tính từ mốc.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Theo định lí động năng, độ biến thiên động năng bằng:",
+      "choices": [
+        "tổng công của các lực tác dụng",
+        "công của trọng lực",
+        "thế năng",
+        "động lượng"
+      ],
+      "answer": 0,
+      "explain": "ΔW_đ = A.",
+      "wrong_explain": {
+        "1": "Chỉ khi chỉ có trọng lực.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vận tốc của vật tăng gấp 3 lần, động năng tăng bao nhiêu lần?",
+      "expr": "9",
+      "answer": "9",
+      "explain": "Tỉ lệ v².",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Xe 1000 kg chạy 36 km/h. Động năng (kJ):",
+      "expr": "50",
+      "answer": "50",
+      "explain": "½·1000·100 = 50 000 J.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật 1 kg đang ở đáy giếng sâu 5 m, mốc tại mặt đất (g = 10). Thế năng (J):",
+      "expr": "-50",
+      "answer": "-50",
+      "explain": "Dưới mốc.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật 2 kg tăng tốc từ 2 m/s lên 6 m/s. Tổng công các lực (J):",
+      "expr": "36-4",
+      "answer": "32",
+      "explain": "½·2·(36 − 4).",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật 4 kg rơi từ 10 m xuống 3 m (g = 10). Độ giảm thế năng (J):",
+      "expr": "280",
+      "answer": "280",
+      "explain": "mg·Δh.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật có động năng 50 J, vận tốc 5 m/s. Khối lượng (kg):",
+      "expr": "4",
+      "answer": "4",
+      "explain": "m = 2W/v².",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ô tô 2 tấn chạy 20 m/s hãm phanh, lực hãm 10 000 N. Quãng đường hãm (m):",
+      "expr": "400000/10000",
+      "answer": "40",
+      "explain": "½·2000·400 = 400 000 J.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Viên đạn 20 g bay 500 m/s cắm vào gỗ sâu 10 cm. Lực cản trung bình (N):",
+      "expr": "25000",
+      "answer": "25000",
+      "explain": "W_đ = ½·0,02·250 000 = 2500 J; F = 2500/0,1.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Kéo vật 2 kg từ nghỉ trên sàn nhẵn bằng lực 16 N đi 2 m. Vận tốc cuối (m/s):",
+      "expr": "4",
+      "answer": "4",
+      "explain": "½·2·v² = 16·2 ⇒ v² = 16.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thả vật 0,5 kg từ độ cao 20 m (g = 10, bỏ qua lực cản). Động năng khi chạm đất (J):",
+      "expr": "100",
+      "answer": "100",
+      "explain": "Công trọng lực mgh.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Vật 1 kg trượt trên sàn với v₀ = 6 m/s, μ = 0,3 (g = 10). Quãng đường trượt đến khi dừng (m):",
+      "expr": "18/3",
+      "answer": "6",
+      "explain": "½·36 = 3·d.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Lò xo k = 200 N/m bị nén 10 cm. Thế năng đàn hồi (J):",
+      "expr": "2/2",
+      "answer": "1",
+      "explain": "½kΔl².",
+      "id": "q17"
+    }
+  ]
+}

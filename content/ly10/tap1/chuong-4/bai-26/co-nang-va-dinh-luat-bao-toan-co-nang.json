@@ -1,0 +1,271 @@
+{
+  "id": "bai-26",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương IV. Năng lượng, công, công suất",
+  "lesson": "Bài 26. Cơ năng và định luật bảo toàn cơ năng",
+  "section": "",
+  "bookPage": 102,
+  "requirements": [
+    "Nêu được cơ năng là tổng động năng và thế năng; điều kiện và nội dung định luật bảo toàn cơ năng.",
+    "Vận dụng định luật bảo toàn cơ năng giải bài toán rơi, ném, trượt, con lắc."
+  ],
+  "theory": [
+    {
+      "type": "formula",
+      "content": "Cơ năng: W = W_đ + W_t = ½mv² + mgh"
+    },
+    {
+      "type": "text",
+      "content": "Định luật bảo toàn cơ năng: Khi vật chuyển động trong trọng trường và chỉ chịu tác dụng của trọng lực (hoặc lực đàn hồi), cơ năng của vật được bảo toàn."
+    },
+    {
+      "type": "formula",
+      "content": "W₁ = W₂  ⇔  ½mv₁² + mgh₁ = ½mv₂² + mgh₂"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b26-co-nang.svg",
+      "caption": "Chuyển hoá giữa động năng và thế năng của vật chuyển động trên quỹ đạo không ma sát"
+    },
+    {
+      "type": "text",
+      "content": "Trong quá trình chuyển động, động năng và thế năng chuyển hoá lẫn nhau: thế năng giảm bao nhiêu thì động năng tăng bấy nhiêu. Tại độ cao lớn nhất động năng nhỏ nhất, tại vị trí thấp nhất động năng lớn nhất."
+    },
+    {
+      "type": "text",
+      "content": "Khi có lực cản, ma sát: cơ năng không bảo toàn; độ biến thiên cơ năng bằng công của lực cản, ma sát: W₂ − W₁ = A_c (A_c < 0). Phần cơ năng giảm chuyển thành nhiệt năng."
+    },
+    {
+      "type": "method",
+      "title": "Vận dụng định luật bảo toàn cơ năng",
+      "when": "Đề cho vật rơi, ném lên, trượt trên máng không ma sát, con lắc đơn; hỏi vận tốc ở một độ cao, độ cao cực đại, vị trí W_đ = nW_t.",
+      "steps": [
+        "Chọn mốc thế năng (thường mặt đất hoặc vị trí thấp nhất).",
+        "Viết cơ năng tại vị trí đã biết đủ v và h.",
+        "Cho cơ năng bằng nhau tại vị trí cần tìm; giải tìm v hoặc h.",
+        "Nếu có ma sát: W₂ = W₁ + A_ms."
+      ],
+      "notes": [
+        "Khối lượng thường triệt tiêu: v = √(2g(h₁ − h₂)) khi rơi từ nghỉ.",
+        "Tại vị trí W_đ = W_t thì W_t = W/2."
+      ],
+      "sample": {
+        "problem": "Ném vật thẳng đứng lên với v₀ = 10 m/s từ mặt đất (g = 10). Tính độ cao cực đại.",
+        "steps": [
+          "½mv₀² = mgh_max ⇒ h_max = v₀²/(2g) = 5 m."
+        ],
+        "answer": "5 m"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Vật trượt không ma sát từ đỉnh dốc cao 5 m (g = 10). Tính vận tốc ở chân dốc.",
+      "steps": [
+        "mgh = ½mv² ⇒ v = √(2gh) = √100 = 10 m/s."
+      ],
+      "expr": "10",
+      "answer": "10"
+    },
+    {
+      "problem": "Thả vật từ độ cao 20 m (g = 10). Ở độ cao nào động năng bằng thế năng?",
+      "steps": [
+        "W = mg·20; khi W_đ = W_t thì W_t = W/2.",
+        "mgh = mg·10 ⇒ h = 10 m."
+      ],
+      "expr": "20/2",
+      "answer": "10"
+    },
+    {
+      "problem": "Vật 1 kg trượt từ đỉnh dốc cao 5 m, đến chân dốc có vận tốc 8 m/s (g = 10). Tính công của lực ma sát.",
+      "steps": [
+        "W₁ = 1·10·5 = 50 J; W₂ = ½·1·64 = 32 J.",
+        "A_ms = W₂ − W₁ = −18 J."
+      ],
+      "expr": "32-50",
+      "answer": "-18"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cơ năng của vật bằng:",
+      "choices": [
+        "tổng động năng và thế năng",
+        "hiệu động năng và thế năng",
+        "tích động năng và thế năng",
+        "chỉ động năng"
+      ],
+      "answer": 0,
+      "explain": "W = W_đ + W_t.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cơ năng được bảo toàn khi:",
+      "choices": [
+        "vật chỉ chịu tác dụng của trọng lực (lực thế)",
+        "có lực ma sát",
+        "có lực cản không khí",
+        "có lực kéo"
+      ],
+      "answer": 0,
+      "explain": "Không có lực không thế sinh công.",
+      "wrong_explain": {
+        "1": "Cơ năng giảm.",
+        "2": "Cơ năng giảm.",
+        "3": "Cơ năng thay đổi."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật 2 kg ở độ cao 3 m có vận tốc 4 m/s (g = 10, mốc mặt đất). Cơ năng (J):",
+      "expr": "60+16",
+      "answer": "76",
+      "explain": "mgh + ½mv².",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vật rơi tự do, khi rơi xuống:",
+      "choices": [
+        "thế năng giảm, động năng tăng",
+        "thế năng tăng, động năng giảm",
+        "cả hai cùng tăng",
+        "cả hai cùng giảm"
+      ],
+      "answer": 0,
+      "explain": "Chuyển hoá.",
+      "wrong_explain": {
+        "1": "Ngược.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật rơi từ độ cao 45 m (g = 10, không ma sát). Vận tốc chạm đất (m/s):",
+      "expr": "30",
+      "answer": "30",
+      "explain": "√(2gh).",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ném vật lên với 20 m/s (g = 10). Độ cao cực đại (m):",
+      "expr": "400/20",
+      "answer": "20",
+      "explain": "v²/(2g).",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Thả vật từ 30 m (g = 10). Độ cao tại đó W_đ = W_t (m):",
+      "expr": "15",
+      "answer": "15",
+      "explain": "Nửa độ cao.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Thả vật từ 30 m (g = 10). Độ cao tại đó W_đ = 2W_t (m):",
+      "expr": "10",
+      "answer": "10",
+      "explain": "W_t = W/3.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Con lắc đơn thả từ độ cao 0,2 m so với vị trí thấp nhất (g = 10). Vận tốc ở vị trí thấp nhất (m/s):",
+      "expr": "2",
+      "answer": "2",
+      "explain": "√(2·10·0,2).",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật trượt không ma sát từ dốc cao 1,8 m (g = 10). Vận tốc ở chân dốc (m/s):",
+      "expr": "6",
+      "answer": "6",
+      "explain": "√36.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật ném lên từ độ cao 15 m với v₀ = 10 m/s (g = 10). Vận tốc chạm đất (m/s):",
+      "expr": "20",
+      "answer": "20",
+      "explain": "v² = 100 + 300.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật 2 kg thả từ 10 m chạm đất với 12 m/s (g = 10). Công lực cản không khí (J):",
+      "expr": "144-200",
+      "answer": "-56",
+      "explain": "W₂ − W₁.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật ném lên với v₀ = 8 m/s từ mặt đất (g = 10). Vận tốc khi lên đến 1,4 m (m/s):",
+      "expr": "6",
+      "answer": "6",
+      "explain": "v² = 64 − 28 = 36.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Viên bi trượt không ma sát vào vòng xiếc; tại đỉnh cao 2 m vận tốc 4 m/s (g = 10). Độ cao thả ban đầu (m):",
+      "expr": "2+0.8",
+      "answer": "2.8",
+      "explain": "h = 2 + v²/(2g).",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thả vật 0,5 kg từ 20 m (g = 10). Động năng khi vật cách đất 5 m (J):",
+      "expr": "75",
+      "answer": "75",
+      "explain": "mg·15.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Vật trượt từ đỉnh dốc cao 5 m dài 10 m, μ = 0,2, nghiêng 30° (g = 10, cos 30° ≈ 0,866). Vận tốc ở chân dốc (m/s, làm tròn 2 chữ số):",
+      "expr": "8.08",
+      "answer": "8.08",
+      "explain": "½v² = 50 − 0,2·10·0,866·10 = 32,68; v ≈ 8,08.",
+      "id": "q16"
+    }
+  ]
+}

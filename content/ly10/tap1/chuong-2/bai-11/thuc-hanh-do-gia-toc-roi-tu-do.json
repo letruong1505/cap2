@@ -1,0 +1,287 @@
+{
+  "id": "bai-11",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương II. Động học",
+  "lesson": "Bài 11. Thực hành: Đo gia tốc rơi tự do",
+  "section": "",
+  "bookPage": 47,
+  "requirements": [
+    "Thiết kế và thực hiện phương án đo gia tốc rơi tự do bằng cổng quang điện và đồng hồ đo thời gian hiện số.",
+    "Xử lí số liệu, tính g và sai số của phép đo."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cơ sở lí thuyết: vật rơi tự do từ trạng thái nghỉ đi được quãng đường h trong thời gian t thì h = ½gt², suy ra g = 2h/t². Đo h bằng thước, đo t bằng đồng hồ đo thời gian hiện số kết nối với cổng quang điện."
+    },
+    {
+      "type": "text",
+      "content": "Dụng cụ: giá đỡ thẳng đứng có thước, nam châm điện giữ viên bi thép, cổng quang điện, đồng hồ đo thời gian hiện số (chế độ A ↔ B hoặc nam châm → cổng quang), công tắc, dây nối."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b11-bo-tri.svg",
+      "caption": "Bố trí thí nghiệm đo gia tốc rơi tự do"
+    },
+    {
+      "type": "text",
+      "content": "Tiến hành: điều chỉnh giá thẳng đứng bằng dây dọi; đặt cổng quang cách vị trí bi một khoảng h; ngắt điện nam châm để bi rơi, đồng hồ bắt đầu đếm, bi qua cổng thì dừng; ghi t. Lặp lại ít nhất 3 lần với mỗi h; đo với vài giá trị h khác nhau."
+    },
+    {
+      "type": "text",
+      "content": "Xử lí: với mỗi h tính t̄, ḡ = 2h/t̄², sai số δg = δh + 2δt. Có thể vẽ đồ thị h theo t²: đồ thị là đường thẳng qua gốc, độ dốc bằng g/2."
+    },
+    {
+      "type": "text",
+      "content": "Nguyên nhân sai số: giá không thẳng đứng, bi không rơi từ nghỉ (còn vận tốc đầu do nam châm nhả chậm), đo h không chính xác (từ tâm bi đến tia cổng quang), lực cản không khí."
+    },
+    {
+      "type": "method",
+      "title": "Tính g và sai số từ số liệu thực hành",
+      "when": "Đề cho h, các lần đo t; hỏi ḡ, Δg hoặc so sánh với giá trị 9,8 m/s².",
+      "steps": [
+        "Tính t̄ và Δt.",
+        "ḡ = 2h/t̄².",
+        "δg = δh + 2δt (vì g tỉ lệ nghịch với t²); Δg = δg·ḡ.",
+        "Ghi g = ḡ ± Δg, so sánh với 9,8 m/s²."
+      ],
+      "notes": [
+        "Sai số của t được nhân đôi.",
+        "h là khoảng cách từ vị trí xuất phát của bi đến cổng quang."
+      ],
+      "sample": {
+        "problem": "Với h = 0,80 m, thời gian rơi trung bình 0,404 s. Tính g.",
+        "steps": [
+          "g = 2·0,80/0,404² = 1,6/0,1632 ≈ 9,8 m/s²."
+        ],
+        "answer": "≈ 9,8 m/s²"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đo thời gian bi rơi quãng đường h = 0,45 m được ba lần: 0,30 s; 0,31 s; 0,29 s. Tính g.",
+      "steps": [
+        "t̄ = 0,30 s.",
+        "g = 2h/t̄² = 0,90/0,09 = 10 m/s²."
+      ],
+      "expr": "90/9",
+      "answer": "10"
+    },
+    {
+      "problem": "Với h = 0,45 ± 0,005 m và t̄ = 0,30 ± 0,01 s, tính sai số tỉ đối và sai số tuyệt đối của g.",
+      "steps": [
+        "δg = δh + 2δt = 0,005/0,45 + 2·0,01/0,30 ≈ 0,011 + 0,067 = 0,078 ≈ 7,8%.",
+        "Δg ≈ 0,078 · 10 ≈ 0,8 m/s²; g = 10,0 ± 0,8 (m/s²)."
+      ],
+      "expr": "2*100/30",
+      "answer": "20/3"
+    },
+    {
+      "problem": "Đồ thị h theo t² là đường thẳng qua gốc, đi qua điểm (0,16 s²; 0,80 m). Tính g.",
+      "steps": [
+        "Độ dốc = 0,80/0,16 = 5 = g/2.",
+        "g = 10 m/s²."
+      ],
+      "expr": "2*80/16",
+      "answer": "10"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Công thức dùng để tính g trong bài thực hành là:",
+      "choices": [
+        "g = 2h/t²",
+        "g = h/t",
+        "g = 2t/h",
+        "g = ht²"
+      ],
+      "answer": 0,
+      "explain": "Từ h = ½gt².",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dụng cụ giữ và thả viên bi để bi rơi từ trạng thái nghỉ là:",
+      "choices": [
+        "nam châm điện",
+        "lò xo",
+        "tay người",
+        "dây dọi"
+      ],
+      "answer": 0,
+      "explain": "Ngắt điện là bi rơi, đồng thời đồng hồ bắt đầu đếm.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Có vận tốc đầu, sai số lớn.",
+        "3": "Dùng để chỉnh thẳng đứng."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dây dọi dùng để:",
+      "choices": [
+        "kiểm tra giá đỡ thẳng đứng",
+        "đo thời gian",
+        "giữ viên bi",
+        "đo khối lượng"
+      ],
+      "answer": 0,
+      "explain": "Đảm bảo bi rơi thẳng đứng qua cổng.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "h = 0,20 m, t = 0,2 s. Giá trị g (m/s²) là:",
+      "expr": "2*20/4",
+      "answer": "10",
+      "explain": "g = 2h/t² = 0,4/0,04 = 10.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Đo t ba lần: 0,40; 0,42; 0,41 (s). Thời gian trung bình (s) là:",
+      "expr": "(0.40+0.42+0.41)/3",
+      "answer": "0.41",
+      "explain": "Trung bình cộng.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nếu nam châm điện nhả bi chậm sau khi đồng hồ đã bắt đầu đếm, kết quả g sẽ:",
+      "choices": [
+        "nhỏ hơn giá trị thật",
+        "lớn hơn giá trị thật",
+        "không đổi",
+        "bằng 0"
+      ],
+      "answer": 0,
+      "explain": "t đo được lớn hơn thực, g = 2h/t² nhỏ đi.",
+      "wrong_explain": {
+        "1": "Ngược.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong công thức sai số δg = δh + 2δt, hệ số 2 xuất hiện vì:",
+      "choices": [
+        "g tỉ lệ với t mũ −2",
+        "đo t hai lần",
+        "có hai cổng quang",
+        "h đo bằng hai thước"
+      ],
+      "answer": 0,
+      "explain": "Sai số tỉ đối của luỹ thừa n nhân n.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đồ thị h theo t² là đường thẳng có độ dốc 4,9 m/s². Giá trị g (m/s²) là:",
+      "expr": "2*4.9",
+      "answer": "9.8",
+      "explain": "Độ dốc = g/2.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "δh = 1%, δt = 2%. Sai số tỉ đối của g (phần trăm) là:",
+      "expr": "1+2*2",
+      "answer": "5",
+      "explain": "δg = δh + 2δt.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "h = 1,25 m, t̄ = 0,50 s. g (m/s²) là:",
+      "expr": "250/25",
+      "answer": "10",
+      "explain": "2·1,25/0,25.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Kết quả g = 9,6 ± 0,3 (m/s²). Sai số tỉ đối (phần trăm, làm tròn 1 chữ số thập phân) là:",
+      "expr": "3.1",
+      "answer": "3.1",
+      "explain": "0,3/9,6 ≈ 0,031.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đo ba độ cao 0,2; 0,45; 0,8 m được t² lần lượt 0,04; 0,09; 0,16 s². Tỉ số h/t² trung bình (m/s²) là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Mỗi cặp đều cho 5.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Một nhóm đo được g = 8,5 m/s² (nhỏ hơn 9,8 nhiều). Nguyên nhân hợp lí nhất:",
+      "choices": [
+        "đo h nhỏ hơn thực tế hoặc đồng hồ bắt đầu đếm trước khi bi rơi",
+        "lực cản không khí lên bi thép quá lớn",
+        "g ở phòng thí nghiệm thực sự bằng 8,5",
+        "thước đo quá chính xác"
+      ],
+      "answer": 0,
+      "explain": "Sai số hệ thống làm t lớn hoặc h nhỏ.",
+      "wrong_explain": {
+        "1": "Bi thép nặng, lực cản nhỏ.",
+        "2": "g không thay đổi nhiều như vậy.",
+        "3": "Sai."
+      },
+      "id": "q13"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Với cùng sai số tuyệt đối của t là 0,01 s, muốn δt ≤ 2% thì thời gian rơi tối thiểu (s) là:",
+      "expr": "0.5",
+      "answer": "0.5",
+      "explain": "t ≥ 0,01/0,02 = 0,5 s, tức h ≥ 1,25 m.",
+      "id": "q14"
+    }
+  ]
+}

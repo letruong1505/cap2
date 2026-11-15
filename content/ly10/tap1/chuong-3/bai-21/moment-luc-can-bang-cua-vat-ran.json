@@ -1,0 +1,309 @@
+{
+  "id": "bai-21",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương III. Động lực học",
+  "lesson": "Bài 21. Moment lực. Cân bằng của vật rắn",
+  "section": "",
+  "bookPage": 83,
+  "requirements": [
+    "Nêu được khái niệm moment lực, ngẫu lực và quy tắc moment.",
+    "Vận dụng quy tắc moment và điều kiện cân bằng của vật rắn để tính lực, khoảng cách."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tác dụng làm quay của lực lên vật có trục quay cố định phụ thuộc độ lớn của lực và khoảng cách từ trục quay đến giá của lực (cánh tay đòn d). Lực có giá đi qua trục quay không làm vật quay."
+    },
+    {
+      "type": "formula",
+      "content": "Moment lực: M = F·d   (đơn vị N·m)"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b21-moment.svg",
+      "caption": "Đòn bẩy cân bằng theo quy tắc moment"
+    },
+    {
+      "type": "text",
+      "content": "Quy tắc moment: Muốn một vật có trục quay cố định ở trạng thái cân bằng thì tổng các moment lực có xu hướng làm vật quay theo chiều kim đồng hồ phải bằng tổng các moment lực có xu hướng làm vật quay ngược chiều kim đồng hồ."
+    },
+    {
+      "type": "formula",
+      "content": "ΣM (cùng chiều kim đồng hồ) = ΣM (ngược chiều kim đồng hồ)        Đòn bẩy: F₁·d₁ = F₂·d₂"
+    },
+    {
+      "type": "text",
+      "content": "Ngẫu lực là hệ hai lực song song, ngược chiều, có độ lớn bằng nhau và cùng tác dụng vào một vật; chỉ làm vật quay. Moment ngẫu lực M = F·d với d là khoảng cách giữa hai giá của lực (ví dụ vặn vòi nước, vô lăng)."
+    },
+    {
+      "type": "text",
+      "content": "Điều kiện cân bằng tổng quát của vật rắn: tổng các lực tác dụng lên vật bằng 0 (không chuyển động tịnh tiến) và tổng moment lực đối với một trục bất kì bằng 0 (không quay)."
+    },
+    {
+      "type": "method",
+      "title": "Vận dụng quy tắc moment",
+      "when": "Đề cho đòn bẩy, thanh, cánh cửa, bập bênh có trục quay; hỏi lực cần tác dụng, vị trí đặt vật, phản lực ở trục.",
+      "steps": [
+        "Xác định trục quay và các lực tác dụng (kể cả trọng lực của thanh đặt tại trọng tâm).",
+        "Tính cánh tay đòn của mỗi lực: khoảng cách từ trục đến giá của lực.",
+        "Viết quy tắc moment: tổng moment theo chiều kim đồng hồ bằng tổng moment ngược chiều; giải tìm ẩn.",
+        "Nếu cần phản lực ở trục: dùng thêm ΣF = 0."
+      ],
+      "notes": [
+        "Lực có giá qua trục có moment bằng 0.",
+        "Lực xiên: cánh tay đòn là khoảng cách vuông góc, không phải chiều dài thanh."
+      ],
+      "sample": {
+        "problem": "Đòn bẩy: vật 600 N đặt cách điểm tựa 0,5 m; người ấn ở đầu kia cách điểm tựa 1,5 m. Tính lực ấn.",
+        "steps": [
+          "F·1,5 = 600·0,5.",
+          "F = 200 N."
+        ],
+        "answer": "200 N"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một thanh nhẹ AB dài 1 m, trục quay ở O với OA = 0,4 m. Treo vật 30 N ở A. Phải treo ở B vật nặng bao nhiêu để thanh cân bằng nằm ngang?",
+      "steps": [
+        "OB = 0,6 m.",
+        "P_B·0,6 = 30·0,4 ⇒ P_B = 20 N."
+      ],
+      "expr": "120/6",
+      "answer": "20"
+    },
+    {
+      "problem": "Một thanh đồng chất dài 2 m, nặng 40 N, có trục quay ở một đầu A, được giữ nằm ngang bởi lực F thẳng đứng hướng lên ở đầu B. Tính F.",
+      "steps": [
+        "Trọng lực đặt tại trung điểm, cánh tay đòn 1 m; F có cánh tay đòn 2 m.",
+        "F·2 = 40·1 ⇒ F = 20 N."
+      ],
+      "expr": "40/2",
+      "answer": "20"
+    },
+    {
+      "problem": "Vặn vô lăng bằng hai tay với hai lực song song ngược chiều, mỗi lực 10 N, đường kính vô lăng 0,4 m. Tính moment ngẫu lực.",
+      "steps": [
+        "M = F·d = 10·0,4 = 4 N·m."
+      ],
+      "expr": "10*0.4",
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Moment lực đối với trục quay được tính bằng:",
+      "choices": [
+        "tích độ lớn lực và cánh tay đòn",
+        "tích lực và khối lượng",
+        "thương lực và khoảng cách",
+        "tổng lực và khoảng cách"
+      ],
+      "answer": 0,
+      "explain": "M = F·d.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đơn vị của moment lực là:",
+      "choices": [
+        "N·m",
+        "N",
+        "N/m",
+        "J/s"
+      ],
+      "answer": 0,
+      "explain": "Lực nhân khoảng cách.",
+      "wrong_explain": {
+        "1": "Đơn vị lực.",
+        "2": "Sai.",
+        "3": "Đơn vị công suất."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Lực 20 N có cánh tay đòn 0,3 m. Moment lực (N·m) là:",
+      "expr": "20*0.3",
+      "answer": "6",
+      "explain": "M = Fd.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Lực KHÔNG làm vật quay quanh trục khi:",
+      "choices": [
+        "giá của lực đi qua trục quay",
+        "lực rất lớn",
+        "lực vuông góc với thanh",
+        "lực đặt xa trục"
+      ],
+      "answer": 0,
+      "explain": "Cánh tay đòn bằng 0.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ngẫu lực là hai lực:",
+      "choices": [
+        "song song, ngược chiều, cùng độ lớn, tác dụng vào một vật",
+        "cùng chiều, cùng độ lớn",
+        "đặt vào hai vật khác nhau",
+        "vuông góc nhau"
+      ],
+      "answer": 0,
+      "explain": "Chỉ làm vật quay.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Đó là lực – phản lực.",
+        "3": "Sai."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bập bênh: bạn 30 kg ngồi cách trục 2 m. Bạn 40 kg phải ngồi cách trục (m) để cân bằng:",
+      "expr": "60/40",
+      "answer": "1.5",
+      "explain": "30·2 = 40·d.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cờ lê dài 0,25 m, cần moment 50 N·m để mở ốc. Lực tối thiểu vuông góc tay cầm (N) là:",
+      "expr": "5000/25",
+      "answer": "200",
+      "explain": "F = M/d = 50/0,25.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao tay nắm cửa thường đặt xa bản lề?",
+      "choices": [
+        "để tăng cánh tay đòn, cần lực nhỏ hơn",
+        "để cửa nặng hơn",
+        "để giảm moment",
+        "để cửa không quay"
+      ],
+      "answer": 0,
+      "explain": "Moment như nhau với lực nhỏ hơn.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Ngược.",
+        "3": "Sai."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đòn bẩy: vật 900 N cách điểm tựa 0,3 m, lực ấn cách điểm tựa 1,8 m. Lực ấn (N) là:",
+      "expr": "2700/18",
+      "answer": "150",
+      "explain": "900·0,3 = F·1,8.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lực 40 N tác dụng vào thanh dài 0,5 m, hợp với thanh 30° (đầu kia là trục). Moment lực (N·m) là:",
+      "expr": "40*0.5/2",
+      "answer": "10",
+      "explain": "d = 0,5·sin 30° = 0,25 m.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điều kiện cân bằng của vật rắn là:",
+      "choices": [
+        "tổng lực bằng 0 và tổng moment bằng 0",
+        "chỉ tổng lực bằng 0",
+        "chỉ tổng moment bằng 0",
+        "vận tốc bằng 0"
+      ],
+      "answer": 0,
+      "explain": "Không tịnh tiến, không quay.",
+      "wrong_explain": {
+        "1": "Có thể quay.",
+        "2": "Có thể tịnh tiến.",
+        "3": "Sai."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thanh đồng chất 3 m, nặng 60 N, tựa trục ở đầu A, giữ ngang bởi lực thẳng đứng ở B. Lực (N) là:",
+      "expr": "90/3",
+      "answer": "30",
+      "explain": "F·3 = 60·1,5.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với thanh trên, phản lực ở trục A (N) là:",
+      "expr": "60-30",
+      "answer": "30",
+      "explain": "ΣF = 0.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thanh nhẹ dài 1,2 m, treo vật 40 N ở đầu A và 80 N ở đầu B. Điểm treo cân bằng cách A (m) là:",
+      "expr": "0.8",
+      "answer": "0.8",
+      "explain": "40·x = 80(1,2 − x) ⇒ x = 0,8.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ngẫu lực có moment 6 N·m, hai lực cách nhau 0,3 m. Độ lớn mỗi lực (N) là:",
+      "expr": "60/3",
+      "answer": "20",
+      "explain": "F = M/d.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Thanh đồng chất dài 1 m, nặng 20 N, trục quay O cách đầu A 0,2 m. Treo ở A vật nặng bao nhiêu (N) để thanh cân bằng nằm ngang?",
+      "expr": "30",
+      "answer": "30",
+      "explain": "Trọng tâm cách O 0,3 m về phía B: P_A·0,2 = 20·0,3.",
+      "id": "q16"
+    }
+  ]
+}

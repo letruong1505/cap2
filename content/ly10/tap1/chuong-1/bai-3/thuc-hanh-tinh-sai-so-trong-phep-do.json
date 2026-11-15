@@ -1,0 +1,318 @@
+{
+  "id": "bai-3",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương I. Mở đầu",
+  "lesson": "Bài 3. Thực hành tính sai số trong phép đo. Ghi kết quả đo",
+  "section": "",
+  "bookPage": 17,
+  "requirements": [
+    "Phân biệt phép đo trực tiếp và gián tiếp; sai số hệ thống và sai số ngẫu nhiên.",
+    "Tính sai số tuyệt đối, sai số tỉ đối và ghi kết quả đo đúng quy tắc."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phép đo trực tiếp: đo đại lượng bằng dụng cụ đo và đọc kết quả trực tiếp (đo chiều dài bằng thước). Phép đo gián tiếp: xác định đại lượng thông qua công thức liên hệ với các đại lượng đo trực tiếp (tính tốc độ từ quãng đường và thời gian)."
+    },
+    {
+      "type": "text",
+      "content": "Sai số hệ thống: do dụng cụ đo (độ chia nhỏ nhất, dụng cụ sai lệch) hoặc do cách đo, có giá trị và dấu xác định, thường làm kết quả lệch về một phía; khắc phục bằng hiệu chỉnh dụng cụ. Sai số ngẫu nhiên: do các yếu tố không kiểm soát (phản xạ của người đo, điều kiện môi trường), thay đổi ngẫu nhiên; giảm bằng cách đo nhiều lần và lấy trung bình."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b3-sai-so.svg",
+      "caption": "Minh hoạ sai số ngẫu nhiên và sai số hệ thống"
+    },
+    {
+      "type": "formula",
+      "content": "Giá trị trung bình: Ā = (A₁ + A₂ + ... + A_n)/n        Sai số tuyệt đối mỗi lần: ΔA_i = |A_i − Ā|"
+    },
+    {
+      "type": "formula",
+      "content": "Sai số ngẫu nhiên: ΔĀ = (ΔA₁ + ... + ΔA_n)/n        Sai số dụng cụ ΔA_dc (thường lấy bằng một nửa hoặc một độ chia nhỏ nhất)        ΔA = ΔĀ + ΔA_dc"
+    },
+    {
+      "type": "formula",
+      "content": "Sai số tỉ đối: δA = ΔA/Ā · 100%        Ghi kết quả: A = Ā ± ΔA"
+    },
+    {
+      "type": "text",
+      "content": "Sai số của phép đo gián tiếp: nếu A = B + C hoặc A = B − C thì ΔA = ΔB + ΔC. Nếu A = B·C hoặc A = B/C thì δA = δB + δC (sai số tỉ đối cộng lại). Nếu A = Bⁿ thì δA = n·δB."
+    },
+    {
+      "type": "text",
+      "content": "Quy tắc ghi kết quả: sai số tuyệt đối làm tròn đến một hoặc hai chữ số có nghĩa; giá trị trung bình làm tròn đến cùng hàng với sai số. Ví dụ: 2,3456 m với ΔA = 0,02 m ghi là 2,35 ± 0,02 (m)."
+    },
+    {
+      "type": "method",
+      "title": "Tính sai số và ghi kết quả đo",
+      "when": "Đề cho bảng các lần đo một đại lượng, độ chia nhỏ nhất của dụng cụ; yêu cầu tính giá trị trung bình, sai số và viết kết quả; hoặc tính sai số của đại lượng đo gián tiếp.",
+      "steps": [
+        "Tính giá trị trung bình Ā.",
+        "Tính sai số tuyệt đối từng lần |A_i − Ā| rồi lấy trung bình được ΔĀ.",
+        "Cộng sai số dụng cụ: ΔA = ΔĀ + ΔA_dc; tính δA = ΔA/Ā·100%.",
+        "Làm tròn và ghi A = Ā ± ΔA. Với đại lượng gián tiếp dùng quy tắc cộng sai số tuyệt đối (tổng, hiệu) hoặc cộng sai số tỉ đối (tích, thương)."
+      ],
+      "notes": [
+        "Sai số dụng cụ không bỏ qua khi đề cho.",
+        "Số chữ số thập phân của Ā phải khớp với ΔA."
+      ],
+      "sample": {
+        "problem": "Đo chiều dài một vật 3 lần được 20,1 cm; 20,3 cm; 20,2 cm, thước có độ chia 0,1 cm (lấy ΔA_dc = 0,1 cm). Viết kết quả đo.",
+        "steps": [
+          "Ā = (20,1 + 20,3 + 20,2)/3 = 20,2 cm.",
+          "ΔĀ = (0,1 + 0,1 + 0)/3 ≈ 0,07 cm; ΔA = 0,07 + 0,1 ≈ 0,2 cm.",
+          "Kết quả: l = 20,2 ± 0,2 (cm); δ ≈ 1%."
+        ],
+        "answer": "l = 20,2 ± 0,2 cm"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đo thời gian rơi của một vật 5 lần được: 0,52; 0,50; 0,53; 0,51; 0,54 (s). Tính giá trị trung bình và sai số ngẫu nhiên.",
+      "steps": [
+        "t̄ = (0,52 + 0,50 + 0,53 + 0,51 + 0,54)/5 = 2,60/5 = 0,52 s.",
+        "Các sai số tuyệt đối: 0; 0,02; 0,01; 0,01; 0,02; tổng 0,06.",
+        "Δt̄ = 0,06/5 = 0,012 s."
+      ],
+      "expr": "6/500",
+      "answer": "0.012"
+    },
+    {
+      "problem": "Một hình chữ nhật có chiều dài a = 12,0 ± 0,1 cm và chiều rộng b = 5,0 ± 0,1 cm. Tính diện tích và sai số tỉ đối của phép đo diện tích.",
+      "steps": [
+        "S̄ = 12,0 · 5,0 = 60,0 cm².",
+        "δS = δa + δb = 0,1/12 + 0,1/5 ≈ 0,0083 + 0,02 = 0,0283 ≈ 2,8%.",
+        "ΔS = δS · S̄ ≈ 1,7 cm²; S = 60,0 ± 1,7 (cm²)."
+      ],
+      "expr": "12*5",
+      "answer": "60"
+    },
+    {
+      "problem": "Đo quãng đường s = 1,00 ± 0,01 m và thời gian t = 0,50 ± 0,01 s. Tính tốc độ trung bình và sai số của nó.",
+      "steps": [
+        "v̄ = s̄/t̄ = 1,00/0,50 = 2,00 m/s.",
+        "δv = δs + δt = 0,01/1,00 + 0,01/0,50 = 0,01 + 0,02 = 0,03 = 3%.",
+        "Δv = 0,03 · 2,00 = 0,06 m/s; v = 2,00 ± 0,06 (m/s)."
+      ],
+      "expr": "3*2/100",
+      "answer": "0.06"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đo khối lượng bằng cân là phép đo:",
+      "choices": [
+        "trực tiếp",
+        "gián tiếp",
+        "ước lượng",
+        "suy luận"
+      ],
+      "answer": 0,
+      "explain": "Đọc kết quả ngay trên dụng cụ.",
+      "wrong_explain": {
+        "1": "Gián tiếp phải tính qua công thức.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Xác định khối lượng riêng bằng cách đo khối lượng và thể tích rồi tính D = m/V là phép đo:",
+      "choices": [
+        "gián tiếp",
+        "trực tiếp",
+        "không chính xác",
+        "ngẫu nhiên"
+      ],
+      "answer": 0,
+      "explain": "Tính qua công thức.",
+      "wrong_explain": {
+        "1": "Không đọc trực tiếp.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sai số nào có thể giảm bằng cách đo nhiều lần rồi lấy trung bình?",
+      "choices": [
+        "Sai số ngẫu nhiên",
+        "Sai số hệ thống",
+        "Sai số dụng cụ",
+        "Cả ba loại"
+      ],
+      "answer": 0,
+      "explain": "Sai số ngẫu nhiên thay đổi quanh giá trị thật.",
+      "wrong_explain": {
+        "1": "Hệ thống lệch về một phía, không triệt tiêu khi lấy trung bình.",
+        "2": "Không giảm khi đo nhiều lần.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Đo 3 lần được 4,2; 4,4; 4,3 (cm). Giá trị trung bình là:",
+      "expr": "(4.2+4.4+4.3)/3",
+      "answer": "4.3",
+      "explain": "Tổng 12,9 chia 3.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Kết quả l = 15,2 ± 0,3 (cm) có sai số tỉ đối (phần trăm, làm tròn 1 chữ số thập phân) khoảng:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "0,3/15,2 ≈ 0,0197 ≈ 2%.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dùng thước bị co ngắn do nhiệt độ để đo, mọi kết quả đều lớn hơn giá trị thật. Đây là:",
+      "choices": [
+        "sai số hệ thống",
+        "sai số ngẫu nhiên",
+        "sai số tỉ đối",
+        "sai số do đọc nhầm"
+      ],
+      "answer": 0,
+      "explain": "Lệch về một phía do dụng cụ.",
+      "wrong_explain": {
+        "1": "Không ngẫu nhiên.",
+        "2": "Không phải loại sai số.",
+        "3": "Sai."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đo 4 lần được 10,2; 10,0; 10,3; 9,9 (s). Sai số ngẫu nhiên (s) là:",
+      "expr": "6/40",
+      "answer": "0.15",
+      "explain": "Trung bình 10,1; các độ lệch 0,1; 0,1; 0,2; 0,2; trung bình 0,15.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giá trị trung bình 10,1 s, sai số ngẫu nhiên 0,15 s, sai số dụng cụ 0,05 s. Sai số tuyệt đối của phép đo (s) là:",
+      "expr": "0.15+0.05",
+      "answer": "0.2",
+      "explain": "ΔA = ΔĀ + ΔA_dc.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cách ghi kết quả nào đúng quy tắc?",
+      "choices": [
+        "m = 2,45 ± 0,02 (kg)",
+        "m = 2,4537 ± 0,02 (kg)",
+        "m = 2,45 ± 0,0213 (kg)",
+        "m = 2 ± 0,02 (kg)"
+      ],
+      "answer": 0,
+      "explain": "Giá trị trung bình cùng hàng với sai số.",
+      "wrong_explain": {
+        "1": "Trung bình thừa chữ số.",
+        "2": "Sai số thừa chữ số.",
+        "3": "Trung bình thiếu chữ số."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đại lượng A = B + C với ΔB = 0,2 và ΔC = 0,3. Sai số ΔA bằng:",
+      "expr": "0.2+0.3",
+      "answer": "0.5",
+      "explain": "Tổng thì cộng sai số tuyệt đối.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đại lượng A = B·C với δB = 1% và δC = 2%. Sai số tỉ đối δA bằng (phần trăm):",
+      "expr": "1+2",
+      "answer": "3",
+      "explain": "Tích thì cộng sai số tỉ đối.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cạnh hình vuông a = 5,0 ± 0,1 cm. Sai số tỉ đối của diện tích (phần trăm) là:",
+      "expr": "2*0.1/5*100",
+      "answer": "4",
+      "explain": "δS = 2δa = 2·2% = 4%.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đo s = 2,00 ± 0,02 m và t = 1,00 ± 0,02 s. Sai số tuyệt đối của v = s/t (m/s) là:",
+      "expr": "2*(0.02/2+0.02/1)",
+      "answer": "0.06",
+      "explain": "δv = 1% + 2% = 3%; Δv = 0,03 · 2 = 0,06.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đồng hồ bấm giây có độ chia nhỏ nhất 0,01 s; lấy sai số dụng cụ bằng một độ chia. Đo 3 lần được 1,23; 1,25; 1,24 (s). Sai số tuyệt đối của phép đo (s, viết dạng phân số) là:",
+      "expr": "2/300+1/100",
+      "answer": "1/60",
+      "explain": "ΔĀ = (0,01 + 0,01 + 0)/3 = 1/150; cộng 0,01 được 1/150 + 1/100 = 1/60 ≈ 0,017 s.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thể tích hình hộp V = a·b·c với δa = 1%, δb = 1,5%, δc = 0,5%. Sai số tỉ đối của V (phần trăm) là:",
+      "expr": "1+1.5+0.5",
+      "answer": "3",
+      "explain": "Cộng sai số tỉ đối.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Để giảm sai số khi đo thời gian một vật rơi bằng đồng hồ bấm tay, cách tốt nhất là:",
+      "choices": [
+        "dùng cổng quang điện và đồng hồ đo thời gian hiện số",
+        "bấm nhanh hơn",
+        "đo một lần thật cẩn thận",
+        "dùng đồng hồ treo tường"
+      ],
+      "answer": 0,
+      "explain": "Loại bỏ phản xạ của người bấm (sai số ngẫu nhiên lớn).",
+      "wrong_explain": {
+        "1": "Vẫn còn phản xạ.",
+        "2": "Một lần không giảm sai số ngẫu nhiên.",
+        "3": "Kém chính xác hơn."
+      },
+      "id": "q16"
+    }
+  ]
+}

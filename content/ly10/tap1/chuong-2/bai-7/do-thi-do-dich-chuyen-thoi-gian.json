@@ -1,0 +1,296 @@
+{
+  "id": "bai-7",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương II. Động học",
+  "lesson": "Bài 7. Đồ thị độ dịch chuyển – thời gian",
+  "section": "",
+  "bookPage": 34,
+  "requirements": [
+    "Vẽ và đọc đồ thị độ dịch chuyển – thời gian của chuyển động thẳng.",
+    "Tính vận tốc từ độ dốc của đồ thị; mô tả chuyển động từ đồ thị."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Chuyển động thẳng đều là chuyển động thẳng có vận tốc không đổi (tốc độ không đổi, không đổi chiều). Độ dịch chuyển tỉ lệ thuận với thời gian: d = v·t."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b7-do-thi-d-t.svg",
+      "caption": "Đồ thị độ dịch chuyển – thời gian của ba giai đoạn chuyển động"
+    },
+    {
+      "type": "text",
+      "content": "Đồ thị độ dịch chuyển – thời gian (d – t) của chuyển động thẳng đều là một đường thẳng. Độ dốc (hệ số góc) của đồ thị bằng vận tốc: v = Δd/Δt. Đồ thị dốc lên: vật đi theo chiều dương; dốc xuống: vật đi ngược chiều dương; nằm ngang: vật đứng yên."
+    },
+    {
+      "type": "formula",
+      "content": "v = Δd/Δt = (d₂ − d₁)/(t₂ − t₁)        Đồ thị càng dốc thì tốc độ càng lớn"
+    },
+    {
+      "type": "text",
+      "content": "Từ đồ thị có thể đọc được vị trí tại mỗi thời điểm, thời điểm hai vật gặp nhau (giao điểm hai đồ thị), quãng đường và độ dịch chuyển trong một khoảng thời gian."
+    },
+    {
+      "type": "text",
+      "content": "Vận tốc tức thời tại một thời điểm trên đồ thị cong bằng độ dốc của tiếp tuyến với đồ thị tại điểm đó."
+    },
+    {
+      "type": "method",
+      "title": "Đọc đồ thị độ dịch chuyển – thời gian",
+      "when": "Đề cho đồ thị d – t gồm các đoạn thẳng, hỏi vận tốc từng giai đoạn, quãng đường, độ dịch chuyển, thời điểm gặp nhau, mô tả chuyển động.",
+      "steps": [
+        "Chia đồ thị thành các đoạn thẳng; mỗi đoạn là một giai đoạn vận tốc không đổi.",
+        "Vận tốc mỗi đoạn = độ dốc = (d cuối − d đầu)/(t cuối − t đầu), kèm dấu.",
+        "Quãng đường = tổng độ lớn các độ dịch chuyển; độ dịch chuyển tổng = d cuối − d đầu.",
+        "Hai vật gặp nhau tại giao điểm hai đồ thị (cùng d, cùng t)."
+      ],
+      "notes": [
+        "Đoạn nằm ngang là đứng yên, không phải vận tốc bằng hằng số khác 0.",
+        "Độ dốc âm nghĩa là vật đi ngược chiều dương, tốc độ vẫn dương."
+      ],
+      "sample": {
+        "problem": "Đồ thị d – t của một vật: từ 0 đến 4 s, d tăng từ 0 lên 20 m; từ 4 đến 6 s d không đổi; từ 6 đến 10 s d giảm về 0. Tính vận tốc từng giai đoạn.",
+        "steps": [
+          "Giai đoạn 1: v = 20/4 = 5 m/s.",
+          "Giai đoạn 2: v = 0 (đứng yên).",
+          "Giai đoạn 3: v = (0 − 20)/4 = −5 m/s (đi ngược lại)."
+        ],
+        "answer": "5 m/s; 0; −5 m/s"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một vật chuyển động thẳng đều với đồ thị d – t đi qua gốc toạ độ và điểm (5 s; 30 m). Tính vận tốc và độ dịch chuyển sau 12 s.",
+      "steps": [
+        "v = 30/5 = 6 m/s.",
+        "d = v·t = 6 · 12 = 72 m."
+      ],
+      "expr": "6*12",
+      "answer": "72"
+    },
+    {
+      "problem": "Đồ thị d – t của xe A là đường thẳng d = 10t (m), của xe B là d = 100 − 15t (m). Hai xe gặp nhau lúc nào và ở đâu?",
+      "steps": [
+        "Gặp nhau khi 10t = 100 − 15t ⇔ 25t = 100 ⇔ t = 4 s.",
+        "Vị trí gặp: d = 10 · 4 = 40 m."
+      ],
+      "expr": "100/25",
+      "answer": "4"
+    },
+    {
+      "problem": "Trên đồ thị d – t, từ t = 0 đến t = 3 s, d tăng từ 0 lên 12 m; từ 3 s đến 8 s, d giảm từ 12 m xuống −8 m. Tính quãng đường và độ dịch chuyển trong 8 s.",
+      "steps": [
+        "Giai đoạn 1 đi 12 m; giai đoạn 2 đi 12 + 8 = 20 m: s = 32 m.",
+        "Độ dịch chuyển: d = −8 − 0 = −8 m."
+      ],
+      "expr": "12+20",
+      "answer": "32"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đồ thị độ dịch chuyển – thời gian của chuyển động thẳng đều là:",
+      "choices": [
+        "một đường thẳng",
+        "một parabol",
+        "một đường tròn",
+        "một đường cong bất kì"
+      ],
+      "answer": 0,
+      "explain": "d = vt là hàm bậc nhất theo t.",
+      "wrong_explain": {
+        "1": "Đó là biến đổi đều.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Độ dốc của đồ thị d – t cho biết:",
+      "choices": [
+        "vận tốc",
+        "gia tốc",
+        "quãng đường",
+        "thời gian"
+      ],
+      "answer": 0,
+      "explain": "v = Δd/Δt.",
+      "wrong_explain": {
+        "1": "Độ dốc đồ thị v – t mới là gia tốc.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đoạn đồ thị d – t nằm ngang cho biết vật:",
+      "choices": [
+        "đứng yên",
+        "chuyển động đều",
+        "chuyển động nhanh dần",
+        "đổi chiều"
+      ],
+      "answer": 0,
+      "explain": "d không đổi.",
+      "wrong_explain": {
+        "1": "Đều thì đồ thị dốc.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Đồ thị d – t đi qua (0; 0) và (4 s; 20 m). Vận tốc (m/s) là:",
+      "expr": "20/4",
+      "answer": "5",
+      "explain": "Độ dốc.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật chuyển động đều 3 m/s. Độ dịch chuyển sau 15 s (m) là:",
+      "expr": "3*15",
+      "answer": "45",
+      "explain": "d = vt.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đồ thị d – t đi từ (2 s; 30 m) đến (8 s; 0 m). Vận tốc (m/s) là:",
+      "expr": "(0-30)/(8-2)",
+      "answer": "-5",
+      "explain": "Độ dốc âm.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai đồ thị d – t cắt nhau tại một điểm. Điều đó có nghĩa:",
+      "choices": [
+        "hai vật gặp nhau tại thời điểm đó",
+        "hai vật có cùng vận tốc",
+        "hai vật dừng lại",
+        "hai vật cùng xuất phát"
+      ],
+      "answer": 0,
+      "explain": "Cùng vị trí, cùng thời điểm.",
+      "wrong_explain": {
+        "1": "Cùng vận tốc thì song song.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đồ thị d – t của vật A dốc hơn đồ thị của vật B (cả hai dốc lên). Kết luận:",
+      "choices": [
+        "A chuyển động nhanh hơn B",
+        "B nhanh hơn A",
+        "A và B cùng tốc độ",
+        "A đứng yên"
+      ],
+      "answer": 0,
+      "explain": "Độ dốc lớn, vận tốc lớn.",
+      "wrong_explain": {
+        "1": "Ngược.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đồ thị d – t: 0–5 s tăng từ 0 lên 25 m; 5–10 s giảm từ 25 m về 5 m. Quãng đường (m) là:",
+      "expr": "25+20",
+      "answer": "45",
+      "explain": "Giai đoạn 1 đi 25 m, giai đoạn 2 đi 20 m.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đồ thị d – t: 0–5 s tăng từ 0 lên 25 m; 5–10 s giảm từ 25 m về 5 m. Độ dịch chuyển (m) là:",
+      "expr": "5-0",
+      "answer": "5",
+      "explain": "d cuối − d đầu.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Xe A: d = 8t; xe B: d = 60 − 4t (m, s). Thời điểm gặp nhau (s) là:",
+      "expr": "60/12",
+      "answer": "5",
+      "explain": "8t = 60 − 4t.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Xe A: d = 8t; xe B: d = 60 − 4t. Vị trí gặp nhau cách gốc (m):",
+      "expr": "8*5",
+      "answer": "40",
+      "explain": "d = 8 · 5.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một người đi bộ 1,5 m/s xuất phát trước; 10 s sau một người chạy 3 m/s đuổi theo từ cùng điểm. Thời gian từ lúc chạy đến lúc đuổi kịp (s) là:",
+      "expr": "150/15",
+      "answer": "10",
+      "explain": "Người đi bộ đã đi 15 m; vận tốc tương đối 1,5 m/s; t = 15/1,5 = 10 s.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đồ thị d – t của vật là đoạn thẳng từ (0; 10 m) đến (4 s; 30 m), rồi nằm ngang đến 7 s, rồi xuống (10 s; 0). Tốc độ trung bình trong 10 s (m/s) là:",
+      "expr": "(20+30)/10",
+      "answer": "5",
+      "explain": "Quãng đường 20 + 0 + 30 = 50 m.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với đồ thị trên, độ lớn vận tốc trung bình trong 10 s (m/s) là:",
+      "expr": "10/10",
+      "answer": "1",
+      "explain": "Độ dịch chuyển 0 − 10 = −10 m, độ lớn 10 m.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hai xe xuất phát cùng lúc từ hai điểm cách nhau 180 km, đi ngược chiều với 50 km/h và 40 km/h. Trên đồ thị d – t (gốc tại xe thứ nhất) hai đường cắt nhau tại hoành độ (h):",
+      "expr": "180/90",
+      "answer": "2",
+      "explain": "50t = 180 − 40t.",
+      "id": "q16"
+    }
+  ]
+}

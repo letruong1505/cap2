@@ -1,0 +1,324 @@
+{
+  "id": "bai-18",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương III. Động lực học",
+  "lesson": "Bài 18. Lực ma sát",
+  "section": "",
+  "bookPage": 72,
+  "requirements": [
+    "Nêu được đặc điểm của lực ma sát nghỉ, ma sát trượt; công thức F = μN.",
+    "Vận dụng định luật 2 Newton giải bài toán có ma sát; nêu lợi ích và tác hại của ma sát."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Lực ma sát nghỉ xuất hiện ở mặt tiếp xúc khi vật chịu tác dụng của ngoại lực nhưng chưa trượt; cân bằng với thành phần ngoại lực song song mặt tiếp xúc; có độ lớn thay đổi, cực đại khi vật bắt đầu trượt."
+    },
+    {
+      "type": "text",
+      "content": "Lực ma sát trượt xuất hiện khi vật trượt trên bề mặt vật khác; ngược chiều với vận tốc tương đối; độ lớn không phụ thuộc diện tích tiếp xúc và tốc độ, tỉ lệ với áp lực N, phụ thuộc vật liệu và tình trạng bề mặt."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b18-ma-sat.svg",
+      "caption": "Các lực tác dụng lên vật được kéo trượt trên mặt phẳng ngang"
+    },
+    {
+      "type": "formula",
+      "content": "F_mst = μ·N        Trên mặt ngang, không có lực xiên: N = mg  ⇒  F_mst = μmg"
+    },
+    {
+      "type": "text",
+      "content": "μ là hệ số ma sát trượt, không có đơn vị, thường nhỏ hơn 1. Ma sát lăn nhỏ hơn ma sát trượt rất nhiều nên người ta dùng ổ bi, bánh xe."
+    },
+    {
+      "type": "text",
+      "content": "Ma sát có lợi: giúp đi lại, cầm nắm, phanh xe, đánh diêm, dây curoa truyền chuyển động. Ma sát có hại: làm mòn chi tiết máy, tốn năng lượng, sinh nhiệt. Tăng ma sát: làm nhám bề mặt, tăng áp lực; giảm ma sát: bôi trơn, dùng ổ bi, đệm khí."
+    },
+    {
+      "type": "method",
+      "title": "Bài toán có lực ma sát trượt",
+      "when": "Đề cho vật kéo trượt trên mặt ngang hoặc trượt tự do do quán tính, có hệ số ma sát; hỏi gia tốc, lực kéo, quãng đường, thời gian.",
+      "steps": [
+        "Vẽ các lực: trọng lực, phản lực, lực kéo, ma sát (ngược chiều chuyển động).",
+        "Tính N từ phương vuông góc mặt tiếp xúc (mặt ngang, kéo ngang: N = mg).",
+        "F_mst = μN; viết F_hl = F − F_mst = ma theo chiều chuyển động.",
+        "Kết hợp động học tìm v, d, t."
+      ],
+      "notes": [
+        "Vật trượt chỉ do quán tính: a = −μg.",
+        "Kéo xiên góc α lên trên thì N = mg − F·sin α."
+      ],
+      "sample": {
+        "problem": "Kéo vật 5 kg trên sàn ngang bằng lực 20 N nằm ngang, μ = 0,2 (g = 10). Tính gia tốc.",
+        "steps": [
+          "F_mst = 0,2·50 = 10 N.",
+          "a = (20 − 10)/5 = 2 m/s²."
+        ],
+        "answer": "2 m/s²"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một khúc gỗ 2 kg đặt trên sàn ngang, μ = 0,3 (g = 10). Kéo bằng lực ngang 10 N. Tính gia tốc của khúc gỗ.",
+      "steps": [
+        "F_mst = 0,3·20 = 6 N.",
+        "a = (10 − 6)/2 = 2 m/s²."
+      ],
+      "expr": "4/2",
+      "answer": "2"
+    },
+    {
+      "problem": "Một vật trượt trên sàn ngang với vận tốc đầu 6 m/s, μ = 0,3 (g = 10). Tính quãng đường vật trượt đến khi dừng.",
+      "steps": [
+        "a = −μg = −3 m/s².",
+        "d = v₀²/(2|a|) = 36/6 = 6 m."
+      ],
+      "expr": "36/6",
+      "answer": "6"
+    },
+    {
+      "problem": "Kéo thùng 20 kg đều trên sàn ngang bằng lực nằm ngang 60 N (g = 10). Tính hệ số ma sát trượt.",
+      "steps": [
+        "Chuyển động đều nên F = F_mst = μmg.",
+        "μ = 60/200 = 0,3."
+      ],
+      "expr": "60/200",
+      "answer": "0.3"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật 4 kg trượt trên sàn ngang, μ = 0,25 (g = 10). Lực ma sát trượt (N) là:",
+      "expr": "0.25*40",
+      "answer": "10",
+      "explain": "F = μmg.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Lực ma sát trượt KHÔNG phụ thuộc vào:",
+      "choices": [
+        "diện tích tiếp xúc",
+        "áp lực",
+        "vật liệu bề mặt",
+        "tình trạng bề mặt"
+      ],
+      "answer": 0,
+      "explain": "Đặc điểm của ma sát trượt.",
+      "wrong_explain": {
+        "1": "Tỉ lệ với áp lực.",
+        "2": "Có phụ thuộc.",
+        "3": "Có phụ thuộc."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Lực ma sát trượt có chiều:",
+      "choices": [
+        "ngược chiều chuyển động tương đối",
+        "cùng chiều chuyển động",
+        "vuông góc mặt tiếp xúc",
+        "hướng lên"
+      ],
+      "answer": 0,
+      "explain": "Cản trở chuyển động.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Đó là phản lực.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ổ bi trong trục bánh xe dùng để:",
+      "choices": [
+        "thay ma sát trượt bằng ma sát lăn",
+        "tăng ma sát",
+        "tăng khối lượng",
+        "giảm áp lực"
+      ],
+      "answer": 0,
+      "explain": "Ma sát lăn nhỏ hơn.",
+      "wrong_explain": {
+        "1": "Ngược.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trường hợp ma sát có lợi là:",
+      "choices": [
+        "ma sát giữa đế giày và mặt đường khi đi bộ",
+        "ma sát ở trục quay của máy",
+        "ma sát giữa pít-tông và xi-lanh",
+        "ma sát làm mòn lốp xe"
+      ],
+      "answer": 0,
+      "explain": "Giúp người đi không trượt.",
+      "wrong_explain": {
+        "1": "Có hại.",
+        "2": "Có hại.",
+        "3": "Có hại."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Kéo vật 10 kg trên sàn ngang bằng lực 50 N, μ = 0,2 (g = 10). Gia tốc (m/s²) là:",
+      "expr": "30/10",
+      "answer": "3",
+      "explain": "F_ms = 20 N.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật trượt trên sàn chỉ do quán tính, μ = 0,4 (g = 10). Độ lớn gia tốc (m/s²) là:",
+      "expr": "0.4*10",
+      "answer": "4",
+      "explain": "a = μg.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Kéo vật 15 kg chuyển động đều trên sàn ngang cần lực 45 N (g = 10). Hệ số ma sát là:",
+      "expr": "45/150",
+      "answer": "0.3",
+      "explain": "μ = F/(mg).",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật trượt với v₀ = 10 m/s trên sàn, μ = 0,5 (g = 10). Thời gian đến khi dừng (s) là:",
+      "expr": "10/5",
+      "answer": "2",
+      "explain": "a = −5 m/s².",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Một tủ nặng đứng yên khi bị đẩy nhẹ theo phương ngang. Lực giữ tủ đứng yên là:",
+      "choices": [
+        "lực ma sát nghỉ",
+        "lực ma sát trượt",
+        "trọng lực",
+        "phản lực"
+      ],
+      "answer": 0,
+      "explain": "Cân bằng với lực đẩy.",
+      "wrong_explain": {
+        "1": "Tủ chưa trượt.",
+        "2": "Thẳng đứng.",
+        "3": "Thẳng đứng."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đẩy tủ 30 N nhưng tủ chưa trượt. Lực ma sát nghỉ (N) là:",
+      "expr": "30",
+      "answer": "30",
+      "explain": "Cân bằng lực đẩy.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ô tô chạy 72 km/h, phanh gấp, bánh xe trượt trên đường với μ = 0,5 (g = 10). Quãng đường trượt (m) là:",
+      "expr": "400/10",
+      "answer": "40",
+      "explain": "a = −5; d = 20²/10.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Kéo vật 5 kg từ nghỉ trên sàn ngang bằng lực 25 N, μ = 0,3 (g = 10). Vận tốc sau 4 s (m/s) là:",
+      "expr": "2*4",
+      "answer": "8",
+      "explain": "a = (25 − 15)/5 = 2.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Kéo vật 10 kg trên sàn bằng lực 50 N hợp phương ngang 30° hướng lên, μ = 0,2 (g = 10). Phản lực N (N) là:",
+      "expr": "100-25",
+      "answer": "75",
+      "explain": "N = mg − F·sin 30°.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với dữ kiện trên (cos 30° ≈ 0,866), gia tốc của vật (m/s², làm tròn 2 chữ số) là:",
+      "expr": "(43.3-15)/10",
+      "answer": "2.83",
+      "explain": "F cos 30° = 43,3 N; F_ms = 0,2·75 = 15 N.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đường đóng băng có μ = 0,1, xe chạy 36 km/h phanh gấp (g = 10). Quãng đường trượt (m) là:",
+      "expr": "100/2",
+      "answer": "50",
+      "explain": "a = −1; d = 10²/2.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Vật trượt xuống dốc nghiêng 30° có μ = 0,2 (g = 10, cos 30° ≈ 0,866). Gia tốc (m/s², làm tròn 2 chữ số) là:",
+      "expr": "5-1.73",
+      "answer": "3.27",
+      "explain": "a = g(sin α − μcos α) = 10(0,5 − 0,1732).",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao xe có lốp mòn dễ bị trượt khi trời mưa?",
+      "choices": [
+        "vì hệ số ma sát giữa lốp và mặt đường ướt giảm mạnh",
+        "vì khối lượng xe tăng",
+        "vì trọng lực giảm",
+        "vì diện tích tiếp xúc tăng"
+      ],
+      "answer": 0,
+      "explain": "Lớp nước làm giảm ma sát.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Ma sát không phụ thuộc diện tích."
+      },
+      "id": "q18"
+    }
+  ]
+}

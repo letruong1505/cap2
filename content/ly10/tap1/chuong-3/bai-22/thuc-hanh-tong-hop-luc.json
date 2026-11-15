@@ -1,0 +1,292 @@
+{
+  "id": "bai-22",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương III. Động lực học",
+  "lesson": "Bài 22. Thực hành: Tổng hợp lực",
+  "section": "",
+  "bookPage": 86,
+  "requirements": [
+    "Thực hiện thí nghiệm kiểm chứng quy tắc tổng hợp hai lực đồng quy và hai lực song song cùng chiều.",
+    "Xử lí số liệu, so sánh kết quả đo với tính toán lí thuyết."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dụng cụ: bảng thép đặt thẳng đứng, các lực kế (hoặc quả nặng và ròng rọc), dây mảnh, vòng nhẫn, thước đo góc, thước thẳng, bút, giấy."
+    },
+    {
+      "type": "text",
+      "content": "Tổng hợp hai lực đồng quy: móc hai lực kế vào vòng nhẫn kéo theo hai phương, ghi độ lớn F₁, F₂ và phương của chúng. Sau đó dùng một lực kế kéo vòng nhẫn đến đúng vị trí cũ, ghi F và phương. Vẽ →F₁, →F₂ theo cùng tỉ lệ, dựng hình bình hành, so sánh đường chéo với →F đo được."
+    },
+    {
+      "type": "formula",
+      "content": "Kiểm tra: F_tính = √(F₁² + F₂² + 2F₁F₂cos α)  so với F_đo"
+    },
+    {
+      "type": "text",
+      "content": "Tổng hợp hai lực song song cùng chiều: treo hai vật P₁, P₂ ở hai điểm trên thanh nhẹ, dùng lực kế treo thanh ở điểm O sao cho thanh nằm ngang. Kết quả: hợp lực F = P₁ + P₂, điểm đặt O chia trong khoảng cách giữa hai lực theo tỉ lệ nghịch với độ lớn."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b22-luc-song-song.svg",
+      "caption": "Tổng hợp hai lực song song cùng chiều"
+    },
+    {
+      "type": "formula",
+      "content": "Hai lực song song cùng chiều: F = F₁ + F₂,   F₁/F₂ = d₂/d₁"
+    },
+    {
+      "type": "text",
+      "content": "Nguyên nhân sai số: ma sát giữa dây và bảng, lực kế không thẳng hàng với dây, đọc vạch chia, đo góc chưa chính xác. Khắc phục: lặp lại nhiều lần, điều chỉnh lực kế, đọc vuông góc mặt số."
+    },
+    {
+      "type": "method",
+      "title": "Xử lí số liệu thực hành tổng hợp lực",
+      "when": "Đề cho số chỉ lực kế, góc giữa hai lực, khoảng cách; hỏi hợp lực tính toán, sai số so với giá trị đo, vị trí điểm đặt hợp lực song song.",
+      "steps": [
+        "Tính F_tính theo công thức hình bình hành (đồng quy) hoặc F = F₁ + F₂ (song song cùng chiều).",
+        "So sánh với F_đo: sai số tỉ đối |F_đo − F_tính|/F_tính.",
+        "Hai lực song song: d₁ + d₂ = khoảng cách giữa hai lực, F₁d₁ = F₂d₂.",
+        "Kết luận về quy tắc tổng hợp."
+      ],
+      "notes": [
+        "Vẽ các lực theo cùng một tỉ lệ xích.",
+        "Điểm đặt hợp lực song song gần lực lớn hơn."
+      ],
+      "sample": {
+        "problem": "Hai lực kế chỉ 3,0 N và 4,0 N, góc giữa hai dây 90°; lực kế thứ ba chỉ 5,1 N. Đánh giá kết quả.",
+        "steps": [
+          "F_tính = √(9 + 16) = 5,0 N.",
+          "Sai số tỉ đối |5,1 − 5,0|/5,0 = 2%: kết quả phù hợp quy tắc hình bình hành."
+        ],
+        "answer": "Phù hợp, sai số 2%"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hai lực song song cùng chiều P₁ = 2 N và P₂ = 3 N đặt cách nhau 50 cm trên thanh nhẹ. Tìm độ lớn và điểm đặt của hợp lực.",
+      "steps": [
+        "F = 2 + 3 = 5 N.",
+        "d₁ + d₂ = 50 và 2d₁ = 3d₂ ⇒ d₁ = 30 cm, d₂ = 20 cm. Điểm đặt cách P₁ 30 cm."
+      ],
+      "expr": "150/5",
+      "answer": "30"
+    },
+    {
+      "problem": "Hai lực đồng quy 4 N và 4 N hợp với nhau góc 60°, lực kế đo được hợp lực 7,0 N. Tính hợp lực lí thuyết và sai số tỉ đối.",
+      "steps": [
+        "F_tính = √(16 + 16 + 16) = √48 ≈ 6,93 N.",
+        "Sai số ≈ |7,0 − 6,93|/6,93 ≈ 1%."
+      ],
+      "expr": "16+16+16",
+      "answer": "48"
+    },
+    {
+      "problem": "Trong thí nghiệm hai lực song song, P₁ = 1 N ở A và P₂ = 4 N ở B, AB = 40 cm. Tính khoảng cách từ A đến điểm treo lực kế.",
+      "steps": [
+        "d₁ + d₂ = 40, 1·d₁ = 4·d₂ ⇒ d₂ = 8 cm, d₁ = 32 cm.",
+        "Điểm treo cách A 32 cm."
+      ],
+      "expr": "160/5",
+      "answer": "32"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong thí nghiệm tổng hợp hai lực đồng quy, ta kiểm chứng quy tắc:",
+      "choices": [
+        "hình bình hành",
+        "moment",
+        "đòn bẩy",
+        "Archimedes"
+      ],
+      "answer": 0,
+      "explain": "Hợp lực là đường chéo.",
+      "wrong_explain": {
+        "1": "Dùng cho vật quay.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hợp lực của hai lực song song cùng chiều có độ lớn:",
+      "choices": [
+        "bằng tổng độ lớn hai lực",
+        "bằng hiệu hai lực",
+        "bằng tích hai lực",
+        "bằng 0"
+      ],
+      "answer": 0,
+      "explain": "F = F₁ + F₂.",
+      "wrong_explain": {
+        "1": "Ngược chiều.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điểm đặt hợp lực của hai lực song song cùng chiều nằm:",
+      "choices": [
+        "trong khoảng giữa hai lực, gần lực lớn hơn",
+        "ngoài khoảng hai lực",
+        "gần lực nhỏ hơn",
+        "chính giữa"
+      ],
+      "answer": 0,
+      "explain": "F₁d₁ = F₂d₂.",
+      "wrong_explain": {
+        "1": "Đó là lực ngược chiều.",
+        "2": "Ngược.",
+        "3": "Chỉ khi hai lực bằng nhau."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hai lực song song cùng chiều 6 N và 4 N. Hợp lực (N) là:",
+      "expr": "10",
+      "answer": "10",
+      "explain": "Cộng.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hai lực đồng quy 6 N, 8 N vuông góc. Hợp lực lí thuyết (N):",
+      "expr": "10",
+      "answer": "10",
+      "explain": "√(36 + 64).",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai lực song song cùng chiều 2 N và 6 N cách nhau 40 cm. Điểm đặt hợp lực cách lực 2 N (cm):",
+      "expr": "30",
+      "answer": "30",
+      "explain": "2d₁ = 6d₂, d₁ + d₂ = 40.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "F_tính = 5,0 N, F_đo = 5,2 N. Sai số tỉ đối (phần trăm) là:",
+      "expr": "2/50*100",
+      "answer": "4",
+      "explain": "0,2/5.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao phải kéo vòng nhẫn bằng một lực kế đến đúng vị trí cũ?",
+      "choices": [
+        "để lực đó có tác dụng giống hệt hai lực thành phần",
+        "để lực kế không hỏng",
+        "để giảm ma sát",
+        "để đo góc"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa hợp lực.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên nhân gây sai số trong thí nghiệm là:",
+      "choices": [
+        "ma sát giữa dây và bảng",
+        "khối lượng vòng nhẫn bằng 0",
+        "dây không dãn",
+        "bảng thẳng đứng"
+      ],
+      "answer": 0,
+      "explain": "Ma sát làm số chỉ lệch.",
+      "wrong_explain": {
+        "1": "Không gây sai số.",
+        "2": "Lí tưởng.",
+        "3": "Lí tưởng."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai lực 5 N và 5 N hợp nhau góc 120°. Hợp lực lí thuyết (N):",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Tam giác đều.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thanh nhẹ AB dài 60 cm, treo P₁ = 3 N ở A, P₂ = 6 N ở B. Treo lực kế cách A bao nhiêu cm để thanh ngang?",
+      "expr": "40",
+      "answer": "40",
+      "explain": "3d₁ = 6d₂, d₁ + d₂ = 60.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với hệ trên, lực kế chỉ (N, bỏ qua khối lượng thanh):",
+      "expr": "9",
+      "answer": "9",
+      "explain": "F = P₁ + P₂.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai lực kế chỉ 3 N, 4 N; góc giữa hai dây 60°. Bình phương hợp lực lí thuyết (N²) là:",
+      "expr": "9+16+12",
+      "answer": "37",
+      "explain": "F² = 9 + 16 + 2·12·0,5.",
+      "id": "q13"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nếu kết quả đo hợp lực luôn lớn hơn giá trị tính ở mọi lần, sai số chủ yếu là:",
+      "choices": [
+        "sai số hệ thống, ví dụ lực kế chưa chỉnh về 0",
+        "sai số ngẫu nhiên",
+        "không có sai số",
+        "sai số do tính toán"
+      ],
+      "answer": 0,
+      "explain": "Lệch về một phía.",
+      "wrong_explain": {
+        "1": "Ngẫu nhiên lệch hai phía.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q14"
+    }
+  ]
+}

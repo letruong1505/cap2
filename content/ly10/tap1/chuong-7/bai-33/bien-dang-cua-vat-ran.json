@@ -1,0 +1,294 @@
+{
+  "id": "bai-33",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương VII. Biến dạng của vật rắn. Áp suất chất lỏng",
+  "lesson": "Bài 33. Biến dạng của vật rắn",
+  "section": "",
+  "bookPage": 128,
+  "requirements": [
+    "Phân biệt biến dạng đàn hồi và biến dạng dẻo; biến dạng kéo và nén.",
+    "Phát biểu và vận dụng định luật Hooke; đọc đồ thị lực – độ biến dạng của lò xo."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Biến dạng của vật rắn là sự thay đổi hình dạng, kích thước của vật khi chịu tác dụng của lực. Biến dạng đàn hồi: khi thôi tác dụng lực vật lấy lại hình dạng, kích thước ban đầu (lò xo, dây cao su). Biến dạng dẻo (không đàn hồi): vật không lấy lại được hình dạng ban đầu (đất sét, dây đồng bị kéo quá mức)."
+    },
+    {
+      "type": "text",
+      "content": "Biến dạng kéo làm vật dài ra, biến dạng nén làm vật ngắn lại. Độ biến dạng của lò xo: Δl = |l − l₀| với l₀ là chiều dài tự nhiên."
+    },
+    {
+      "type": "text",
+      "content": "Giới hạn đàn hồi là giới hạn mà trong đó vật rắn còn giữ được tính đàn hồi. Vượt quá giới hạn này vật bị biến dạng dẻo, và nếu tiếp tục tăng lực vật có thể bị phá huỷ."
+    },
+    {
+      "type": "formula",
+      "content": "Định luật Hooke: F_đh = k·|Δl|        (k: độ cứng của lò xo, N/m)"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b33-hooke.svg",
+      "caption": "Đồ thị lực đàn hồi theo độ biến dạng: đoạn thẳng tuân theo định luật Hooke"
+    },
+    {
+      "type": "text",
+      "content": "Trong giới hạn đàn hồi, độ lớn lực đàn hồi của lò xo tỉ lệ thuận với độ biến dạng. Lực đàn hồi có chiều ngược với chiều biến dạng (lò xo dãn thì kéo vào, nén thì đẩy ra). Độ cứng k phụ thuộc vật liệu, kích thước của lò xo; trên đồ thị F – Δl, k là độ dốc."
+    },
+    {
+      "type": "method",
+      "title": "Vận dụng định luật Hooke",
+      "when": "Đề cho lò xo treo vật hoặc chịu lực kéo/nén, chiều dài tự nhiên và chiều dài khi biến dạng; hỏi độ cứng, lực đàn hồi, chiều dài mới, khối lượng vật treo.",
+      "steps": [
+        "Tính Δl = |l − l₀| (đổi ra m).",
+        "Vật treo cân bằng: k·Δl = mg.",
+        "Từ một trạng thái tìm k, rồi áp dụng cho trạng thái khác: Δl tỉ lệ với lực.",
+        "Đồ thị F – Δl: k = độ dốc = F/Δl."
+      ],
+      "notes": [
+        "Chỉ áp dụng trong giới hạn đàn hồi.",
+        "Đơn vị k là N/m, Δl phải đổi về m."
+      ],
+      "sample": {
+        "problem": "Lò xo dài tự nhiên 20 cm, treo vật 0,5 kg thì dài 25 cm (g = 10). Tính độ cứng.",
+        "steps": [
+          "Δl = 0,05 m; F = 5 N.",
+          "k = 5/0,05 = 100 N/m."
+        ],
+        "answer": "100 N/m"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một lò xo có k = 200 N/m, chiều dài tự nhiên 30 cm. Kéo lò xo bằng lực 10 N. Tính chiều dài lò xo khi đó.",
+      "steps": [
+        "Δl = F/k = 10/200 = 0,05 m = 5 cm.",
+        "l = 30 + 5 = 35 cm."
+      ],
+      "expr": "30+5",
+      "answer": "35"
+    },
+    {
+      "problem": "Treo vật 200 g vào lò xo thì lò xo dãn 4 cm. Treo thêm vật 300 g nữa thì lò xo dãn bao nhiêu (g = 10)?",
+      "steps": [
+        "k = 2/0,04 = 50 N/m.",
+        "Tổng 500 g: Δl = 5/50 = 0,1 m = 10 cm."
+      ],
+      "expr": "5/50*100",
+      "answer": "10"
+    },
+    {
+      "problem": "Đồ thị F – Δl của lò xo là đoạn thẳng qua gốc và điểm (0,08 m; 4 N). Tính độ cứng.",
+      "steps": [
+        "k = 4/0,08 = 50 N/m."
+      ],
+      "expr": "400/8",
+      "answer": "50"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Biến dạng đàn hồi là biến dạng:",
+      "choices": [
+        "vật lấy lại hình dạng ban đầu khi thôi tác dụng lực",
+        "vật không trở lại hình dạng cũ",
+        "vật bị vỡ",
+        "chỉ xảy ra với chất lỏng"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Biến dạng dẻo.",
+        "2": "Phá huỷ.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Theo định luật Hooke, lực đàn hồi:",
+      "choices": [
+        "tỉ lệ thuận với độ biến dạng",
+        "tỉ lệ nghịch với độ biến dạng",
+        "không phụ thuộc độ biến dạng",
+        "tỉ lệ với bình phương độ biến dạng"
+      ],
+      "answer": 0,
+      "explain": "F = kΔl.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đơn vị độ cứng lò xo là:",
+      "choices": [
+        "N/m",
+        "N",
+        "m/N",
+        "N·m"
+      ],
+      "answer": 0,
+      "explain": "k = F/Δl.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Moment."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Lò xo k = 100 N/m dãn 3 cm. Lực đàn hồi (N):",
+      "expr": "3",
+      "answer": "3",
+      "explain": "100·0,03.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vật nào có tính đàn hồi kém nhất?",
+      "choices": [
+        "cục đất sét",
+        "lò xo thép",
+        "dây cao su",
+        "thước nhựa mỏng"
+      ],
+      "answer": 0,
+      "explain": "Biến dạng dẻo.",
+      "wrong_explain": {
+        "1": "Đàn hồi tốt.",
+        "2": "Đàn hồi tốt.",
+        "3": "Đàn hồi."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lò xo dài tự nhiên 15 cm, treo vật dài 18 cm, k = 100 N/m. Lực đàn hồi (N):",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Δl = 0,03 m.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lò xo k = 50 N/m treo vật 0,2 kg (g = 10). Độ dãn (cm):",
+      "expr": "4",
+      "answer": "4",
+      "explain": "2/50 = 0,04 m.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lực 6 N làm lò xo dãn 2 cm. Lực 15 N làm lò xo dãn (cm):",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Tỉ lệ thuận.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lò xo dài tự nhiên 20 cm, k = 80 N/m, bị nén bởi lực 4 N. Chiều dài (cm):",
+      "expr": "15",
+      "answer": "15",
+      "explain": "Δl = 0,05 m.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Kéo lò xo vượt quá giới hạn đàn hồi thì:",
+      "choices": [
+        "lò xo không trở lại chiều dài ban đầu",
+        "lò xo cứng hơn",
+        "định luật Hooke vẫn đúng",
+        "lực đàn hồi bằng 0"
+      ],
+      "answer": 0,
+      "explain": "Biến dạng dẻo.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Không đúng nữa.",
+        "3": "Sai."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đồ thị F – Δl đi qua (0,05 m; 10 N). Độ cứng (N/m):",
+      "expr": "200",
+      "answer": "200",
+      "explain": "10/0,05.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lò xo treo vật 100 g dài 31 cm, treo vật 300 g dài 35 cm (g = 10). Độ cứng (N/m):",
+      "expr": "200/4",
+      "answer": "50",
+      "explain": "ΔF = 2 N ứng với Δl = 0,04 m.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với lò xo trên, chiều dài tự nhiên (cm):",
+      "expr": "29",
+      "answer": "29",
+      "explain": "Vật 100 g làm dãn 2 cm: 31 − 2.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lực kế có lò xo k = 400 N/m, thang đo 20 N. Độ dãn tối đa (cm):",
+      "expr": "5",
+      "answer": "5",
+      "explain": "20/400 = 0,05 m.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai lò xo giống nhau k = 100 N/m mắc song song, treo vật 1 kg (g = 10). Độ dãn mỗi lò xo (cm):",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Mỗi lò xo chịu 5 N.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hai lò xo k₁ = 100 N/m, k₂ = 300 N/m mắc nối tiếp. Độ cứng tương đương (N/m):",
+      "expr": "75",
+      "answer": "75",
+      "explain": "1/k = 1/100 + 1/300.",
+      "id": "q16"
+    }
+  ]
+}

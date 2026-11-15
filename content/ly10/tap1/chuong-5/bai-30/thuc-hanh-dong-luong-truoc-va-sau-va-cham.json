@@ -1,0 +1,292 @@
+{
+  "id": "bai-30",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương V. Động lượng",
+  "lesson": "Bài 30. Thực hành: Xác định động lượng của vật trước và sau va chạm",
+  "section": "",
+  "bookPage": 116,
+  "requirements": [
+    "Thực hiện thí nghiệm đo vận tốc hai xe trước và sau va chạm bằng cổng quang điện trên đệm khí.",
+    "Xử lí số liệu, kiểm chứng định luật bảo toàn động lượng; so sánh động năng trước và sau va chạm."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dụng cụ: đệm khí (hoặc máng ngang) giảm ma sát, hai xe trượt có khối lượng đã biết (có thể gắn thêm quả nặng), tấm chắn sáng có bề rộng d, hai cổng quang điện, đồng hồ đo thời gian hiện số, cân."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b30-dem-khi.svg",
+      "caption": "Bố trí thí nghiệm va chạm trên đệm khí với hai cổng quang điện"
+    },
+    {
+      "type": "text",
+      "content": "Đo vận tốc: mỗi xe gắn tấm chắn sáng rộng d; thời gian chắn cổng Δt cho vận tốc v = d/Δt. Đặt cổng 1 trước điểm va chạm để đo vận tốc xe 1 trước va chạm, cổng 2 sau điểm va chạm để đo vận tốc sau va chạm."
+    },
+    {
+      "type": "text",
+      "content": "Va chạm mềm: gắn băng dính (hoặc kim – sáp) để hai xe dính nhau sau va chạm. Va chạm đàn hồi: gắn lò xo hoặc nam châm cùng cực để hai xe bật ra."
+    },
+    {
+      "type": "formula",
+      "content": "Kiểm chứng: p_trước = m₁v₁ + m₂v₂  so với  p_sau = m₁v₁′ + m₂v₂′        Sai số: |p_sau − p_trước|/p_trước"
+    },
+    {
+      "type": "text",
+      "content": "Kết quả thí nghiệm cho thấy tổng động lượng trước và sau va chạm xấp xỉ bằng nhau (sai lệch vài phần trăm do ma sát, đệm khí không hoàn toàn nằm ngang, sai số đo). Trong va chạm mềm động năng giảm đáng kể; trong va chạm gần đàn hồi động năng gần như không đổi."
+    },
+    {
+      "type": "text",
+      "content": "Lưu ý khi tiến hành: chỉnh đệm khí nằm ngang (xe đặt lên đứng yên), đẩy xe nhẹ nhàng, đọc kết quả ngay sau mỗi lần, lặp lại ít nhất 3 lần."
+    },
+    {
+      "type": "method",
+      "title": "Xử lí số liệu va chạm",
+      "when": "Đề cho khối lượng hai xe, bề rộng tấm chắn, thời gian chắn cổng trước và sau va chạm; hỏi vận tốc, động lượng, sai số, động năng mất mát.",
+      "steps": [
+        "Đổi d ra m; v = d/Δt cho từng lần chắn.",
+        "p_trước = Σmv trước; p_sau = Σmv sau (chú ý chiều).",
+        "So sánh và tính sai số tỉ đối.",
+        "Động năng: W = Σ½mv², so sánh trước và sau."
+      ],
+      "notes": [
+        "Xe đứng yên trước va chạm có v = 0.",
+        "Va chạm mềm: hai xe có cùng v′."
+      ],
+      "sample": {
+        "problem": "Xe 1 (0,4 kg) có tấm chắn 2 cm chắn cổng 1 trong 0,04 s rồi va chạm mềm với xe 2 (0,4 kg) đứng yên; sau va chạm tấm chắn chắn cổng 2 trong 0,08 s. Kiểm chứng bảo toàn động lượng.",
+        "steps": [
+          "v₁ = 0,02/0,04 = 0,5 m/s; p_trước = 0,4·0,5 = 0,2 kg·m/s.",
+          "v′ = 0,02/0,08 = 0,25 m/s; p_sau = 0,8·0,25 = 0,2 kg·m/s.",
+          "Động lượng bảo toàn."
+        ],
+        "answer": "p_trước = p_sau = 0,2 kg·m/s"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Xe 1 khối lượng 0,3 kg chạy 0,6 m/s va chạm mềm với xe 2 khối lượng 0,2 kg đứng yên; đo được vận tốc chung 0,35 m/s. Tính sai số tỉ đối của động lượng.",
+      "steps": [
+        "p_trước = 0,3·0,6 = 0,18; p_sau = 0,5·0,35 = 0,175 kg·m/s.",
+        "Sai số = 0,005/0,18 ≈ 2,8%."
+      ],
+      "expr": "0.18-0.175",
+      "answer": "0.005"
+    },
+    {
+      "problem": "Với số liệu trên, tính động năng trước và sau va chạm.",
+      "steps": [
+        "W_trước = ½·0,3·0,36 = 0,054 J.",
+        "W_sau = ½·0,5·0,1225 ≈ 0,031 J. Động năng giảm khoảng 43%."
+      ],
+      "expr": "0.15*0.36",
+      "answer": "0.054"
+    },
+    {
+      "problem": "Tấm chắn rộng 1,5 cm chắn cổng trong 0,025 s. Tính vận tốc của xe.",
+      "steps": [
+        "v = 0,015/0,025 = 0,6 m/s."
+      ],
+      "expr": "15/25",
+      "answer": "0.6"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đệm khí được dùng trong thí nghiệm để:",
+      "choices": [
+        "giảm ma sát, coi hệ hai xe là hệ kín",
+        "tăng khối lượng xe",
+        "đo thời gian",
+        "tăng tốc độ xe"
+      ],
+      "answer": 0,
+      "explain": "Ngoại lực ma sát nhỏ.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Đó là cổng quang.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vận tốc xe được tính bằng:",
+      "choices": [
+        "bề rộng tấm chắn chia thời gian chắn cổng",
+        "quãng đường chia khối lượng",
+        "khối lượng chia thời gian",
+        "thời gian chia bề rộng"
+      ],
+      "answer": 0,
+      "explain": "v = d/Δt.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Để tạo va chạm mềm, người ta gắn lên hai xe:",
+      "choices": [
+        "băng dính hoặc kim và sáp",
+        "lò xo",
+        "nam châm cùng cực",
+        "dây cao su căng"
+      ],
+      "answer": 0,
+      "explain": "Hai xe dính nhau.",
+      "wrong_explain": {
+        "1": "Va chạm đàn hồi.",
+        "2": "Va chạm đàn hồi.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tấm chắn 2 cm chắn cổng 0,05 s. Vận tốc (m/s):",
+      "expr": "2/5",
+      "answer": "0.4",
+      "explain": "0,02/0,05.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Xe 0,5 kg chạy 0,4 m/s. Động lượng (kg·m/s):",
+      "expr": "0.2",
+      "answer": "0.2",
+      "explain": "mv.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Xe 0,5 kg chạy 0,4 m/s va chạm mềm xe 0,5 kg đứng yên. Vận tốc lí thuyết sau va chạm (m/s):",
+      "expr": "0.2",
+      "answer": "0.2",
+      "explain": "0,2 = 1·v.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "p_trước = 0,25, p_sau = 0,24 kg·m/s. Sai số tỉ đối (%):",
+      "expr": "1/25*100",
+      "answer": "4",
+      "explain": "0,01/0,25.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong va chạm mềm, kết quả đo thường cho thấy:",
+      "choices": [
+        "động lượng gần như bảo toàn, động năng giảm",
+        "động năng bảo toàn, động lượng giảm",
+        "cả hai đều tăng",
+        "cả hai đều bảo toàn tuyệt đối"
+      ],
+      "answer": 0,
+      "explain": "Va chạm mềm mất động năng.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Có sai số và mất động năng."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên nhân chính làm động lượng sau va chạm đo được hơi nhỏ hơn trước va chạm là:",
+      "choices": [
+        "ma sát còn lại và đệm khí chưa nằm ngang",
+        "khối lượng xe thay đổi",
+        "cổng quang quá chính xác",
+        "động lượng không bảo toàn trong hệ kín"
+      ],
+      "answer": 0,
+      "explain": "Ngoại lực nhỏ còn tồn tại.",
+      "wrong_explain": {
+        "1": "Không đổi.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Xe 0,2 kg chạy 0,5 m/s va chạm đàn hồi xe 0,2 kg đứng yên; sau va chạm xe 1 đứng yên. Vận tốc xe 2 (m/s):",
+      "expr": "0.5",
+      "answer": "0.5",
+      "explain": "Trao đổi vận tốc.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Xe 1 (0,4 kg), tấm chắn 2 cm chắn cổng 1 trong 0,05 s; va chạm mềm xe 2 (0,1 kg) đứng yên. Vận tốc chung lí thuyết (m/s):",
+      "expr": "16/50",
+      "answer": "0.32",
+      "explain": "v₁ = 0,4; p = 0,16.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với dữ kiện trên, thời gian tấm chắn 2 cm chắn cổng 2 sau va chạm theo lí thuyết (s):",
+      "expr": "2/32",
+      "answer": "0.0625",
+      "explain": "Δt = d/v = 0,02/0,32 = 0,0625 s.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Va chạm mềm: W_trước = 0,05 J, W_sau = 0,03 J. Phần trăm động năng mất (%):",
+      "expr": "40",
+      "answer": "40",
+      "explain": "0,02/0,05.",
+      "id": "q13"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Muốn kiểm tra đệm khí nằm ngang, cách đơn giản là:",
+      "choices": [
+        "đặt xe đứng yên trên đệm khí khi bật quạt, xe không tự trôi",
+        "đẩy mạnh xe",
+        "đo khối lượng xe",
+        "tắt quạt đệm khí"
+      ],
+      "answer": 0,
+      "explain": "Xe tự trôi chứng tỏ đệm nghiêng.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q14"
+    }
+  ]
+}
