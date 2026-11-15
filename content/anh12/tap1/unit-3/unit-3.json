@@ -16,13 +16,18 @@
   "vocab": [
     {
       "w": "carbon footprint",
-      "pos": "np",
-      "vi": "lượng phát thải các-bon"
+      "pos": "n",
+      "vi": "tổng lượng phát thải khí nhà kính"
     },
     {
       "w": "cardboard",
-      "pos": "n",
-      "vi": "bìa cứng, các-tông"
+      "pos": "n, adj",
+      "vi": "bìa cứng, làm bằng bìa cứng"
+    },
+    {
+      "w": "clean up",
+      "pos": "phr v",
+      "vi": "dọn dẹp"
     },
     {
       "w": "compost",
@@ -32,12 +37,12 @@
     {
       "w": "container",
       "pos": "n",
-      "vi": "thùng, hộp đựng"
+      "vi": "thùng, hộp, gói"
     },
     {
       "w": "contaminated",
       "pos": "adj",
-      "vi": "bị nhiễm bẩn"
+      "vi": "nhiễm độc, nhiễm khuẩn"
     },
     {
       "w": "decompose",
@@ -47,7 +52,7 @@
     {
       "w": "eco-friendly",
       "pos": "adj",
-      "vi": "thân thiện với môi trường"
+      "vi": "thân thiện/tốt cho hệ sinh thái, môi trường"
     },
     {
       "w": "fruit peel",
@@ -65,9 +70,9 @@
       "vi": "về lâu dài"
     },
     {
-      "w": "in the short term",
+      "w": "in the long/medium/short term",
       "pos": "idiom",
-      "vi": "trong thời gian trước mắt"
+      "vi": "về lâu dài / trong thời gian không xa / trong thời gian trước mắt"
     },
     {
       "w": "landfill",
@@ -75,9 +80,29 @@
       "vi": "bãi chôn rác"
     },
     {
-      "w": "recyclable",
+      "w": "layer",
+      "pos": "n",
+      "vi": "lớp"
+    },
+    {
+      "w": "leftover",
+      "pos": "n, adj",
+      "vi": "thức ăn thừa"
+    },
+    {
+      "w": "packaging",
+      "pos": "n",
+      "vi": "bao bì"
+    },
+    {
+      "w": "pile",
+      "pos": "n",
+      "vi": "chồng, đống"
+    },
+    {
+      "w": "reusable",
       "pos": "adj",
-      "vi": "có thể tái chế"
+      "vi": "tái sử dụng được"
     },
     {
       "w": "reuse",
@@ -85,19 +110,9 @@
       "vi": "tái sử dụng"
     },
     {
-      "w": "rinse",
-      "pos": "v",
-      "vi": "rửa sạch, tráng"
-    },
-    {
-      "w": "waste",
-      "pos": "n",
-      "vi": "rác thải, sự lãng phí"
-    },
-    {
-      "w": "reduce",
-      "pos": "v",
-      "vi": "giảm bớt"
+      "w": "rinse out",
+      "pos": "phr v",
+      "vi": "xối nước, rửa sạch"
     },
     {
       "w": "single-use",
@@ -105,24 +120,9 @@
       "vi": "dùng một lần"
     },
     {
-      "w": "sort",
-      "pos": "v",
-      "vi": "phân loại"
-    },
-    {
-      "w": "sustainable",
-      "pos": "adj",
-      "vi": "bền vững"
-    },
-    {
-      "w": "organic",
-      "pos": "adj",
-      "vi": "hữu cơ"
-    },
-    {
-      "w": "packaging",
+      "w": "waste",
       "pos": "n",
-      "vi": "bao bì"
+      "vi": "rác thải, sự lãng phí"
     }
   ],
   "crossword": {
@@ -137,10 +137,10 @@
         "clueEn": "to use something again"
       },
       {
-        "answer": "rinse",
+        "answer": "rinse out",
         "keyIndex": 4,
         "clueVi": "rửa sạch",
-        "clueEn": "to wash something quickly with clean water"
+        "clueEn": "to wash the inside of something quickly with clean water"
       },
       {
         "answer": "compost",
