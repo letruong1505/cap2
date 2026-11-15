@@ -168,6 +168,7 @@ h2 { font-size: 20px; font-weight: 700; margin: 32px 0 12px; color: var(--ink); 
 .question + .question { border-top: 1px solid #edf1f6; }
 .question .stem { font-weight: 600; margin-bottom: 10px; color: var(--ink); max-width: 72ch; }
 .question .figure, .example .figure, .theory-figure .figure { display: block; max-width: 420px; width: 100%; height: auto; margin: 4px 0 10px; }
+.theory-figure .figure { max-width: 560px; }
 .theory-figure { margin: 10px 0; }
 .theory-figure figcaption { font-size: 14px; color: var(--mute); margin-top: 2px; }
 .choice {
