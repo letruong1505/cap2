@@ -35,7 +35,17 @@
       "content": "Khí lí tưởng là mô hình đơn giản hóa: phân tử được coi là chất điểm, không tương tác khi chưa va chạm, và các va chạm là hoàn toàn đàn hồi. Mô hình này bỏ qua thể tích phân tử."
     }
   ],
-  "examples": [],
+  "examples": [
+    {
+      "problem": "Ví dụ 1: Ở điều kiện chuẩn, tốc độ trung bình của phân tử oxygen khoảng 400 m/s. Nếu phân tử giữ nguyên tốc độ trung bình này trong 2 s, nó đi được quãng đường bao nhiêu mét?",
+      "steps": [
+        "Quãng đường s = v·t = 400 · 2 = 800 m.",
+        "Đây chỉ là phép tính minh hoạ tốc độ; trong thực tế các phân tử va chạm liên tục nên đường đi thực tế ngắn hơn."
+      ],
+      "expr": "400*2",
+      "answer": "800"
+    }
+  ],
   "items": [
     {
       "id": "q01",

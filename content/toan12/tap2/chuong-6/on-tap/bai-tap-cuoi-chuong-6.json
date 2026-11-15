@@ -191,6 +191,46 @@
       "expr": "630/1942",
       "answer": "315/971",
       "explain": "P = 0,18 · 0,35 / (0,18 · 0,35 + 0,82 · 0,16) = 0,063/0,1942 = 315/971 ≈ 0,3244."
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Công thức nhân xác suất P(AB) bằng?",
+      "choices": [
+        "P(A)·P(B|A)",
+        "P(A) + P(B|A)",
+        "P(A)·P(B)",
+        "P(B|A) / P(A)"
+      ],
+      "answer": 0,
+      "explain": "Xác suất cả hai biến cố cùng xảy ra bằng xác suất A nhân xác suất B khi biết A.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Dùng phép cộng thay cho phép nhân.",
+        "2": "Chỉ đúng khi A và B độc lập.",
+        "3": "Đó là công thức chia, không phải công thức nhân."
+      },
+      "id": "q14"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Xác suất có điều kiện P(B|A) được định nghĩa là?",
+      "choices": [
+        "P(AB) / P(B)",
+        "P(A) / P(AB)",
+        "P(AB) / P(A)",
+        "P(A)·P(B)"
+      ],
+      "answer": 2,
+      "explain": "Lấy xác suất cả hai xảy ra chia cho xác suất của điều kiện A.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chia cho P(B) thay vì P(A).",
+        "1": "Đảo tử số và mẫu số.",
+        "3": "Đây là công thức của trường hợp độc lập."
+      },
+      "id": "q15"
     }
   ]
 }

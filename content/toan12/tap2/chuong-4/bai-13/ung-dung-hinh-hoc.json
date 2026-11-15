@@ -595,6 +595,46 @@
       "explain": "x² = 4 ⇒ x = ±2. S = ∫₋₂² (4 − x²)dx = [4x − x³/3]₋₂² = 2(8 − 8/3) = 32/3.",
       "dang": "Tính diện tích hình phẳng và thể tích khối tròn xoay",
       "id": "q30"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thể tích khối tròn xoay khi quay hình phẳng y = f(x) ≥ 0, trục hoành, x = a, x = b quanh Ox là?",
+      "choices": [
+        "V = π∫_a^b f²(x)dx",
+        "V = ∫_a^b f(x)dx",
+        "V = 2π∫_a^b f(x)dx",
+        "V = π∫_a^b f(x)dx"
+      ],
+      "answer": 0,
+      "explain": "Thể tích khối tròn xoay có hệ số π và bình phương hàm số.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Đó là diện tích hình phẳng; thiếu π và bình phương.",
+        "2": "Dùng 2π như công thức chu vi đường tròn.",
+        "3": "Quên bình phương f(x)."
+      },
+      "id": "q31"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Diện tích hình phẳng giới hạn bởi y = f(x) liên tục, trục hoành, x = a, x = b là?",
+      "choices": [
+        "S = ∫_a^b f(x)dx",
+        "S = |f(a) − f(b)|",
+        "S = ∫_a^b |f(x)|dx",
+        "S = π∫_a^b f²(x)dx"
+      ],
+      "answer": 2,
+      "explain": "Lấy giá trị tuyệt đối để diện tích luôn dương, kể cả khi f(x) đổi dấu.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Bỏ giá trị tuyệt đối: sai khi f(x) đổi dấu trên [a; b].",
+        "1": "Dùng giá trị hàm tại hai đầu mút, không phải tích phân.",
+        "3": "Đây là công thức thể tích khối tròn xoay."
+      },
+      "id": "q32"
     }
   ]
 }

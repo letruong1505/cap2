@@ -1,0 +1,242 @@
+{
+  "id": "bai-14",
+  "grade": 10,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 10",
+  "chapter": "Chương 4. Chuyển hoá năng lượng trong tế bào",
+  "lesson": "Bài 14. Phân giải và tổng hợp các chất trong tế bào",
+  "section": "",
+  "bookPage": 85,
+  "requirements": [
+    "Phát biểu được khái niệm phân giải và tổng hợp các chất trong tế bào.",
+    "Trình bày được các giai đoạn phân giải hiếu khí và lên men.",
+    "Nêu được vai trò của quang hợp, hoá tổng hợp và quang khử trong tổng hợp chất và tích luỹ năng lượng.",
+    "Phân tích được mối quan hệ giữa tổng hợp và phân giải."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phân giải là quá trình phá vỡ liên kết trong phân tử sinh học tạo phân tử nhỏ hơn và giải phóng năng lượng, một phần tích luỹ trong ATP, phần còn lại thành nhiệt. Carbohydrate là nguyên liệu phân giải chính. Đường có ba con đường: hô hấp tế bào (hiếu khí), hô hấp kị khí và lên men."
+    },
+    {
+      "type": "text",
+      "content": "Hô hấp tế bào hiếu khí phân giải glucose hoàn toàn thành CO₂ và H₂O với sự tham gia của O₂. Phương trình tổng quát: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + 30–32 ATP + nhiệt năng. Quá trình gồm ba giai đoạn: đường phân (tế bào chất, không cần O₂, tạo 2 pyruvate, 2 ATP, 2 NADH), chu trình Krebs (chất nền ti thể, tạo CO₂, NADH, FADH₂, ATP) và chuỗi truyền electron (màng trong ti thể, tạo nhiều ATP nhất)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b14-ho-hap-ba-giai-doan.svg",
+      "caption": "Ba giai đoạn của hô hấp hiếu khí"
+    },
+    {
+      "type": "text",
+      "content": "Lên men phân giải đường không hoàn toàn, không cần O₂ và chuỗi truyền electron, chỉ tạo 2 ATP từ mỗi glucose. Lên men lactate: pyruvate nhận electron từ NADH tạo lactate (động vật, người, nhiều vi khuẩn). Lên men ethanol: acetaldehyde nhận electron tạo ethanol (chủ yếu ở thực vật và nấm men)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b14-len-men.svg",
+      "caption": "Hai con đường lên men lactate và ethanol"
+    },
+    {
+      "type": "text",
+      "content": "Tổng hợp là hình thành hợp chất phức tạp từ chất đơn giản, tiêu tốn năng lượng. Protein, nucleic acid và carbohydrate là đại phân tử được tổng hợp từ đơn phân nhờ enzyme và ATP. Lipid được tổng hợp từ acid béo và glycerol. Nguồn năng lượng và nguyên liệu cho tổng hợp bắt nguồn từ sinh vật tự dưỡng."
+    },
+    {
+      "type": "text",
+      "content": "Quang hợp ở thực vật chuyển năng lượng ánh sáng thành hoá năng: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ với ánh sáng và diệp lục. Gồm pha sáng (trên màng thylakoid, tạo ATP, NADPH và giải phóng O₂ từ quang phân li nước) và pha tối (chu trình Calvin ở chất nền lục lạp, dùng ATP và NADPH để cố định CO₂ thành G3P, từ đó tạo glucose)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b14-quang-hop.svg",
+      "caption": "Mối quan hệ giữa pha sáng và pha tối"
+    },
+    {
+      "type": "text",
+      "content": "Vi khuẩn quang khử dùng H₂S, S, H₂ thay cho nước nên không giải phóng O₂. Vi khuẩn hoá tổng hợp lấy năng lượng từ oxy hoá chất vô cơ (ví dụ nitrosomonas, nitrobacter, vi khuẩn lưu huỳnh, vi khuẩn sắt) để cố định CO₂; có vai trò làm sạch môi trường, duy trì chu trình nitrogen và hình thành mỏ sắt."
+    },
+    {
+      "type": "text",
+      "content": "Tổng hợp và phân giải là hai quá trình trái ngược nhưng thống nhất: sản phẩm tổng hợp là nguyên liệu cho phân giải, còn năng lượng và sản phẩm trung gian từ phân giải dùng cho tổng hợp. Ăn quá nhiều đường và ít vận động dẫn đến dư năng lượng, tích mỡ và tăng nguy cơ bệnh."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Vì sao cùng một glucose, hô hấp hiếu khí tạo được 30–32 ATP còn lên men chỉ tạo 2 ATP?",
+      "steps": [
+        "Hô hấp hiếu khí oxy hoá hoàn toàn glucose và dùng chuỗi truyền electron với O₂ làm chất nhận cuối cùng.",
+        "Lên men chỉ phân giải không hoàn toàn, chất nhận electron là hữu cơ nên chỉ thu được ít ATP."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Vì sao khi vận động nhiều, cơ thể đau mỏi cơ?",
+      "steps": [
+        "Khi thiếu O₂, cơ chuyển sang lên men lactate, lactic acid tích luỹ và gây độc cho cơ.",
+        "Phòng tránh bằng cách vận động vừa sức và nghỉ ngơi đủ để cung cấp O₂ đủ cho hô hấp hiếu khí."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sản phẩm cuối cùng của hô hấp tế bào hiếu khí là:",
+      "choices": [
+        "CO₂ và H₂O, kèm theo ATP",
+        "tinh bột và O₂",
+        "lactate và ethanol",
+        "glucose và NADPH"
+      ],
+      "answer": 0,
+      "explain": "Hô hấp hiếu khí tạo CO₂, H₂O và ATP.",
+      "wrong_explain": {
+        "1": "Tinh bột không phải sản phẩm hô hấp.",
+        "2": "Lactate và ethanol là sản phẩm lên men.",
+        "3": "Glucose là nguyên liệu, không phải sản phẩm."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đường phân diễn ra ở đâu trong tế bào?",
+      "choices": [
+        "tế bào chất",
+        "chất nền ti thể",
+        "màng thylakoid",
+        "màng trong ti thể"
+      ],
+      "answer": 0,
+      "explain": "Đường phân diễn ra ở tế bào chất, không cần O₂.",
+      "wrong_explain": {
+        "1": "Chu trình Krebs diễn ra ở chất nền ti thể.",
+        "2": "Pha sáng quang hợp diễn ra ở màng thylakoid.",
+        "3": "Chuỗi truyền electron diễn ra ở màng trong ti thể."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Pha sáng của quang hợp diễn ra ở:",
+      "choices": [
+        "màng thylakoid của lục lạp",
+        "chất nền lục lạp",
+        "tế bào chất",
+        "ti thể"
+      ],
+      "answer": 0,
+      "explain": "Pha sáng diễn ra trên màng thylakoid.",
+      "wrong_explain": {
+        "1": "Chu trình Calvin diễn ra ở chất nền.",
+        "2": "Quang hợp chỉ diễn ra trong lục lạp.",
+        "3": "Ti thể không thực hiện quang hợp."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất nhận electron cuối cùng trong lên men lactate là:",
+      "choices": [
+        "pyruvate",
+        "O₂",
+        "CO₂",
+        "acetaldehyde"
+      ],
+      "answer": 0,
+      "explain": "Pyruvate nhận electron từ NADH tạo lactate.",
+      "wrong_explain": {
+        "1": "O₂ là chất nhận cuối trong hô hấp hiếu khí.",
+        "2": "CO₂ là sản phẩm, không nhận electron.",
+        "3": "Acetaldehyde là chất nhận trong lên men ethanol."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sản phẩm của pha sáng quang hợp được dùng cho:",
+      "choices": [
+        "pha tối (chu trình Calvin)",
+        "đường phân",
+        "chu trình Krebs",
+        "lên men lactate"
+      ],
+      "answer": 0,
+      "explain": "ATP và NADPH của pha sáng dùng trong chu trình Calvin.",
+      "wrong_explain": {
+        "1": "Đường phân không dùng sản phẩm pha sáng.",
+        "2": "Chu trình Krebs dùng NADH, FADH₂ từ đường phân.",
+        "3": "Lên men không dùng sản phẩm pha sáng."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vi khuẩn quang khử khác quang hợp ở thực vật ở chỗ:",
+      "choices": [
+        "không giải phóng O₂ vì dùng H₂S hoặc H₂ làm nguồn electron",
+        "dùng CO₂ làm nguyên liệu",
+        "không dùng ánh sáng",
+        "sống ở tế bào thực vật"
+      ],
+      "answer": 0,
+      "explain": "Quang khử dùng H₂S, S, H₂ thay vì H₂O.",
+      "wrong_explain": {
+        "1": "Cả hai đều dùng CO₂.",
+        "2": "Quang khử vẫn dùng năng lượng ánh sáng.",
+        "3": "Vi khuẩn không sống trong tế bào thực vật."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao nông sản bảo quản lạnh (2–8 °C) lâu hơn?",
+      "choices": [
+        "nhiệt độ thấp làm giảm hoạt tính enzyme, chậm hô hấp của nông sản và vi sinh vật",
+        "nhiệt độ thấp làm tăng hô hấp",
+        "nhiệt độ thấp làm tăng quang hợp",
+        "nhiệt độ thấp làm tăng lên men lactate"
+      ],
+      "answer": 0,
+      "explain": "Lạnh làm chậm enzyme và hô hấp.",
+      "wrong_explain": {
+        "1": "Lạnh làm giảm hô hấp.",
+        "2": "Bảo quản lạnh không tăng quang hợp trong kho.",
+        "3": "Lạnh ức chế lên men."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao sấy khô hạt giúp bảo quản lâu hơn?",
+      "choices": [
+        "mất nước làm hô hấp và hoạt động vi sinh vật bị chậm hoặc ngừng",
+        "nước là chất xúc tác cho hô hấp nên thêm nước giúp bảo quản",
+        "sấy khô tăng ATP",
+        "sấy khô làm enzyme nhân lên"
+      ],
+      "answer": 0,
+      "explain": "Nước cần cho hô hấp và môi trường cho phản ứng sinh hoá.",
+      "wrong_explain": {
+        "1": "Nước không phải chất xúc tác mà là nguyên liệu/môi trường; làm mất nước mới ức chế hô hấp.",
+        "2": "Sấy không tăng ATP.",
+        "3": "Sấy không làm enzyme nhân lên."
+      },
+      "id": "q08"
+    }
+  ]
+}

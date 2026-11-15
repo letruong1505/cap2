@@ -288,6 +288,46 @@
         "2": "Cần dùng một đại lượng đo phân tán.",
         "3": "Khoảng biến thiên không luôn chính xác hơn."
       }
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khoảng biến thiên R của mẫu số liệu ghép nhóm được tính bằng công thức nào?",
+      "choices": [
+        "R = a_{k+1} − a_1",
+        "R = a_k − a_2",
+        "R = Q_3 − Q_1",
+        "R = a_{k+1} + a_1"
+      ],
+      "answer": 0,
+      "explain": "R là hiệu đầu mút phải của nhóm cuối và đầu mút trái của nhóm đầu.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Dùng nhầm các đầu mút ở giữa, không phải nhóm đầu và nhóm cuối.",
+        "2": "Đó là khoảng tứ phân vị, không phải khoảng biến thiên.",
+        "3": "Dùng tổng thay cho hiệu."
+      },
+      "id": "q21"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khoảng tứ phân vị Δ_Q của mẫu số liệu ghép nhóm được tính bằng?",
+      "choices": [
+        "Δ_Q = Q_2 − Q_1",
+        "Δ_Q = Q_3 + Q_1",
+        "Δ_Q = Q_3 − Q_1",
+        "Δ_Q = Q_3 / Q_1"
+      ],
+      "answer": 2,
+      "explain": "Khoảng tứ phân vị là hiệu của tứ phân vị thứ ba và thứ nhất.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Q_2 là trung vị, không dùng trong khoảng tứ phân vị.",
+        "1": "Dùng tổng thay cho hiệu.",
+        "3": "Dùng thương thay cho hiệu."
+      },
+      "id": "q22"
     }
   ]
 }

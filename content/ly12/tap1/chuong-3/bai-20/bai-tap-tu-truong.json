@@ -22,7 +22,17 @@
       "content": "Khi giải bài tập định tính, cần xác định phương chiều của B, lực từ và dòng điện cảm ứng; khi giải bài tập định lượng, cần chọn đúng công thức theo từng hiện tượng."
     }
   ],
-  "examples": [],
+  "examples": [
+    {
+      "problem": "Ví dụ 1: Đoạn dây dẫn thẳng dài 0,2 m mang dòng điện 5 A, đặt vuông góc với đường cảm ứng từ B = 0,1 T. Tính lực từ tác dụng lên đoạn dây (N).",
+      "steps": [
+        "Vì dây vuông góc với B nên sin 90° = 1: F = B·I·l·sin α = B·I·l.",
+        "F = 0,1 · 5 · 0,2 = 0,1 N."
+      ],
+      "expr": "0.1*5*0.2",
+      "answer": "0.1"
+    }
+  ],
   "items": [
     {
       "id": "q01",

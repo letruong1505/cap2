@@ -678,6 +678,46 @@
       "explain": "s(t) = 3t² + 2t + C, C = 0. s(2) = 12 + 4 = 16.",
       "dang": "Tìm nguyên hàm thỏa điều kiện cho trước",
       "id": "q32"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nguyên hàm của x^α (α ≠ −1) là?",
+      "choices": [
+        "α·x^(α−1) + C",
+        "x^(α+1)/(α+1) + C",
+        "x^α·ln x + C",
+        "x^(α+1) + C"
+      ],
+      "answer": 1,
+      "explain": "Tăng số mũ lên 1 rồi chia cho số mũ mới.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đó là đạo hàm của x^α, không phải nguyên hàm.",
+        "2": "Nhầm với công thức có logarit.",
+        "3": "Quên chia cho α + 1."
+      },
+      "id": "q33"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nguyên hàm của cos x là?",
+      "choices": [
+        "−sin x + C",
+        "cos x + C",
+        "tan x + C",
+        "sin x + C"
+      ],
+      "answer": 3,
+      "explain": "(sin x)' = cos x nên sin x là một nguyên hàm của cos x.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Nhầm với nguyên hàm của sin x.",
+        "1": "Lấy chính hàm số, không phải nguyên hàm.",
+        "2": "Nhầm với nguyên hàm của 1/cos²x."
+      },
+      "id": "q34"
     }
   ]
 }

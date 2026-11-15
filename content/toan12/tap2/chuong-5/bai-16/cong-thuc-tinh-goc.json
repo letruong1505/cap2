@@ -348,6 +348,46 @@
       "explain": "n₁·n₂ = 2 − 2 + 3m = 3m = 0 ⇒ m = 0.",
       "dang": "Tính góc giữa đường thẳng, mặt phẳng",
       "id": "q17"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Góc giữa hai đường thẳng có vectơ chỉ phương u, u′ được tính bằng công thức?",
+      "choices": [
+        "cos = |u·u′| / (|u|·|u′|)",
+        "cos = u·u′ / (|u| + |u′|)",
+        "cos = |u − u′| / (|u|·|u′|)",
+        "cos = u·u′"
+      ],
+      "answer": 0,
+      "explain": "Lấy giá trị tuyệt đối của tích vô hướng rồi chia cho tích độ dài.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chia cho tổng độ dài thay vì tích độ dài.",
+        "2": "Dùng hiệu vectơ thay vì tích vô hướng.",
+        "3": "Quên chia cho tích độ dài."
+      },
+      "id": "q18"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Góc giữa đường thẳng có vectơ chỉ phương u và mặt phẳng có vectơ pháp tuyến n được tính bằng?",
+      "choices": [
+        "sin = u·n / |n|",
+        "sin = |u + n| / |u|",
+        "sin = |u·n| / (|u|·|n|)",
+        "sin = |u × n|"
+      ],
+      "answer": 2,
+      "explain": "Góc giữa đường thẳng và mặt phẳng tính qua sin, bằng |cos(u, n)|.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Thiếu chia cho |u| và thiếu giá trị tuyệt đối.",
+        "1": "Dùng tổng vectơ thay vì tích vô hướng.",
+        "3": "Đó là độ lớn tích có hướng, không phải công thức góc."
+      },
+      "id": "q19"
     }
   ]
 }

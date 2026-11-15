@@ -404,6 +404,46 @@
       "explain": "s² = Σ m_i x_i²/n − x̄² = 116 − 100 = 16.",
       "dang": "Tính phương sai và độ lệch chuẩn của mẫu số liệu ghép nhóm",
       "id": "q25"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Độ lệch chuẩn s của mẫu số liệu được tính từ phương sai s² bằng công thức nào?",
+      "choices": [
+        "s = s²/2",
+        "s = √s²",
+        "s = 2s²",
+        "s = (s²)²"
+      ],
+      "answer": 1,
+      "explain": "Độ lệch chuẩn là căn bậc hai không âm của phương sai.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Lấy nửa phương sai, không phải căn bậc hai.",
+        "2": "Nhân phương sai với 2.",
+        "3": "Bình phương phương sai, làm tăng giá trị thay vì khai căn."
+      },
+      "id": "q26"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Công thức rút gọn của phương sai mẫu ghép nhóm là?",
+      "choices": [
+        "s² = (Σm_i·x_i²)/n + x̄²",
+        "s² = Σm_i·x_i² − x̄²",
+        "s² = (Σm_i·x_i)/n − x̄²",
+        "s² = (Σm_i·x_i²)/n − x̄²"
+      ],
+      "answer": 3,
+      "explain": "Phương sai bằng trung bình của bình phương giá trị đại diện trừ đi bình phương số trung bình.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Dấu cộng ở cuối là sai; phải trừ x̄².",
+        "1": "Thiếu chia cho cỡ mẫu n.",
+        "2": "Dùng x_i thay vì x_i² trong tổng."
+      },
+      "id": "q27"
     }
   ]
 }

@@ -1,0 +1,257 @@
+{
+  "id": "bai-7",
+  "grade": 10,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 10",
+  "chapter": "Chương 2. Cấu trúc tế bào",
+  "lesson": "Bài 7. Tế bào nhân sơ",
+  "section": "",
+  "bookPage": 44,
+  "requirements": [
+    "Mô tả được kích thước, cấu tạo và chức năng các thành phần của tế bào nhân sơ.",
+    "So sánh được đặc điểm tế bào nhân sơ và tế bào nhân thực.",
+    "Giải thích được vì sao sinh vật nhân sơ thích nghi tốt và sinh sản nhanh.",
+    "Nêu được cơ chế kháng thuốc kháng sinh của vi khuẩn ở mức khái quát."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Mọi sinh vật đều được cấu tạo từ tế bào. Có hai loại tế bào: nhân sơ và nhân thực. Sinh vật nhân sơ phân bố hầu như mọi nơi trên Trái Đất."
+    },
+    {
+      "type": "text",
+      "content": "Đặc điểm chung: tế bào nhân sơ có kích thước điển hình 1–5 μm, khoảng 1/10 tế bào nhân thực. Kích thước nhỏ làm tỉ lệ diện tích bề mặt/thể tích (S/V) lớn, nên trao đổi chất với môi trường nhanh, sinh trưởng và sinh sản nhanh. Tế bào nhân sơ chưa có màng nhân, chưa có hệ thống nội màng và bào quan có màng bao bọc; thường có hình cầu, hình que hoặc hình xoắn."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b7-kich-thuoc.svg",
+      "caption": "Kích thước một số loại tế bào và cấu trúc dưới tế bào"
+    },
+    {
+      "type": "text",
+      "content": "1. Lông, roi và màng ngoài: roi (một hoặc vài chiếc) là cơ quan vận động, cấu tạo từ bó sợi protein. Lông ngắn và nhiều hơn, giúp bám dính, tiếp hợp. Một số vi khuẩn có màng ngoài giàu lipopolysaccharide giúp tránh tế bào bạch cầu."
+    },
+    {
+      "type": "text",
+      "content": "2. Thành tế bào và màng tế bào: thành cấu tạo từ peptidoglycan, dày 10–20 nm, giữ hình dạng và bảo vệ tế bào. Dựa vào thành tế bào, vi khuẩn chia thành Gram dương (thành dày, bắt màu tím) và Gram âm (thành mỏng, có màng ngoài, bắt màu đỏ). Kháng sinh như penicillin diệt vi khuẩn bằng cách ngăn tổng hợp thành tế bào, đặc biệt với Gram dương. Màng tế bào gồm lớp kép phospholipid và protein, kiểm soát chất ra vào và là nơi diễn ra một số quá trình chuyển hoá."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b7-te-bao-nhan-so.svg",
+      "caption": "Cấu tạo tế bào nhân sơ điển hình (vi khuẩn)"
+    },
+    {
+      "type": "text",
+      "content": "3. Tế bào chất: gồm bào tương dạng keo lỏng (chứa nước, chất hữu cơ, vô cơ), các hạt dự trữ và khoảng 10 000–100 000 ribosome (nơi tổng hợp protein). Tế bào chất là nơi diễn ra các phản ứng hoá sinh."
+    },
+    {
+      "type": "text",
+      "content": "4. Vùng nhân: không có màng bao bọc, thường chứa một phân tử DNA dạng vòng, mạch kép mang thông tin điều khiển mọi hoạt động sống. Plasmid là DNA vòng nhỏ, không thiết yếu nhưng thường mang gene kháng thuốc; plasmid được dùng làm vector trong kĩ thuật chuyển gene."
+    },
+    {
+      "type": "text",
+      "content": "Kháng thuốc kháng sinh: vi khuẩn có thể bơm thuốc ra ngoài, giảm tính thấm, biến đổi phân tử đích của thuốc, tăng enzyme bất hoạt thuốc. Vì vậy cần sử dụng kháng sinh đúng cách."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Vi khuẩn A có kích thước 1 μm, vi khuẩn B có kích thước 5 μm. Loại nào có tốc độ sinh sản nhanh hơn? Giải thích.",
+      "steps": [
+        "Vi khuẩn A nhỏ hơn nên tỉ lệ S/V lớn hơn.",
+        "Tỉ lệ S/V lớn giúp trao đổi chất với môi trường nhanh hơn nên vi khuẩn A có tốc độ sinh sản nhanh hơn."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Vì sao gọi là vùng nhân mà không gọi là nhân tế bào?",
+      "steps": [
+        "Vùng nhân không có màng nhân bao bọc, DNA phân bố trực tiếp trong tế bào chất.",
+        "Nhân thực có màng nhân, nên vùng nhân không đúng nghĩa là nhân."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tế bào nhân sơ có đặc điểm nào sau đây?",
+      "choices": [
+        "chưa có màng nhân bao bọc vùng nhân",
+        "có nhân hoàn chỉnh với màng nhân",
+        "có nhiều bào quan có màng bao bọc",
+        "có hệ thống nội màng phát triển"
+      ],
+      "answer": 0,
+      "explain": "Tế bào nhân sơ không có màng nhân.",
+      "wrong_explain": {
+        "1": "Đây là đặc điểm của tế bào nhân thực.",
+        "2": "Tế bào nhân sơ không có bào quan có màng bao.",
+        "3": "Tế bào nhân sơ không có hệ thống nội màng."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Kích thước điển hình của tế bào nhân sơ là:",
+      "choices": [
+        "1–5 μm",
+        "10–100 μm",
+        "0,1–1 mm",
+        "1–5 nm"
+      ],
+      "answer": 0,
+      "explain": "Tế bào nhân sơ thường nhỏ, 1–5 μm.",
+      "wrong_explain": {
+        "1": "Kích thước này thuộc tế bào nhân thực lớn.",
+        "2": "Kích thước này quá lớn so với tế bào nhân sơ.",
+        "3": "Kích thước này quá nhỏ, gần cấp phân tử."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thành phần cấu tạo thành tế bào vi khuẩn là:",
+      "choices": [
+        "peptidoglycan",
+        "cellulose",
+        "chitin",
+        "lipid"
+      ],
+      "answer": 0,
+      "explain": "Thành tế bào vi khuẩn có peptidoglycan.",
+      "wrong_explain": {
+        "1": "Cellulose có ở thành tế bào thực vật.",
+        "2": "Chitin có ở vỏ tôm, cua và thành nấm.",
+        "3": "Lipid cấu tạo màng, không phải thành tế bào vi khuẩn."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ribosome trong tế bào nhân sơ có chức năng:",
+      "choices": [
+        "tổng hợp protein",
+        "tổng hợp lipid",
+        "lưu trữ DNA",
+        "điều hoà thân nhiệt"
+      ],
+      "answer": 0,
+      "explain": "Ribosome là nơi tổng hợp protein.",
+      "wrong_explain": {
+        "1": "Lipid được tổng hợp ở các bộ phận khác.",
+        "2": "DNA nằm ở vùng nhân.",
+        "3": "Không phải chức năng của ribosome."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vi khuẩn Gram dương và Gram âm khác nhau chủ yếu ở:",
+      "choices": [
+        "cấu tạo thành tế bào",
+        "kích thước tế bào",
+        "số lượng ribosome",
+        "hình dạng vùng nhân"
+      ],
+      "answer": 0,
+      "explain": "Gram dương có thành dày; Gram âm có thành mỏng và màng ngoài.",
+      "wrong_explain": {
+        "1": "Kích thước không là tiêu chí phân nhóm.",
+        "2": "Số lượng ribosome không phân biệt hai nhóm.",
+        "3": "Vùng nhân đều có DNA dạng vòng."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Plasmid là:",
+      "choices": [
+        "phân tử DNA dạng vòng, nhỏ, nằm ngoài vùng nhân",
+        "phân tử protein của thành tế bào",
+        "bào quan có màng bao bọc",
+        "ribosome nằm trong vùng nhân"
+      ],
+      "answer": 0,
+      "explain": "Plasmid là DNA vòng nhỏ trong tế bào chất.",
+      "wrong_explain": {
+        "1": "Thành tế bào không cấu tạo từ protein đơn thuần.",
+        "2": "Tế bào nhân sơ không có bào quan có màng.",
+        "3": "Ribosome không phải DNA."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao tế bào nhân sơ có tốc độ sinh sản nhanh?",
+      "choices": [
+        "tỉ lệ S/V lớn nên trao đổi chất với môi trường nhanh",
+        "có nhân lớn chứa nhiều DNA",
+        "có nhiều bào quan có màng",
+        "có màng nhân bền vững"
+      ],
+      "answer": 0,
+      "explain": "Kích thước nhỏ giúp trao đổi chất và sinh trưởng nhanh.",
+      "wrong_explain": {
+        "1": "Tế bào nhân sơ không có nhân có màng.",
+        "2": "Tế bào nhân sơ không có bào quan có màng.",
+        "3": "Tế bào nhân sơ không có màng nhân."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Kháng sinh penicillin thường có hiệu quả chủ yếu với nhóm vi khuẩn nào?",
+      "choices": [
+        "Gram dương, vì thành tế bào dày bị ảnh hưởng nhiều hơn",
+        "Gram âm, vì không có thành tế bào",
+        "tất cả vi khuẩn như nhau",
+        "virus"
+      ],
+      "answer": 0,
+      "explain": "Penicillin ức chế tổng hợp thành tế bào, đặc biệt ở Gram dương.",
+      "wrong_explain": {
+        "1": "Gram âm vẫn có thành tế bào mỏng.",
+        "2": "Không đúng với mọi vi khuẩn.",
+        "3": "Virus không có thành tế bào."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao cần sử dụng kháng sinh đúng cách để hạn chế kháng thuốc của vi khuẩn?",
+      "choices": [
+        "vi khuẩn có thể biến đổi và tích luỹ cơ chế kháng thuốc qua thời gian",
+        "vi khuẩn không bao giờ kháng thuốc",
+        "kháng sinh làm vi khuẩn mạnh hơn",
+        "kháng sinh chỉ có tác dụng với virus"
+      ],
+      "answer": 0,
+      "explain": "Sử dụng sai làm vi khuẩn chọn lọc và kháng thuốc.",
+      "wrong_explain": {
+        "1": "Vi khuẩn có thể kháng thuốc.",
+        "2": "Kháng sinh không làm vi khuẩn mạnh hơn.",
+        "3": "Kháng sinh không tác dụng với virus."
+      },
+      "id": "q09"
+    }
+  ]
+}

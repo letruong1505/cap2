@@ -1,0 +1,221 @@
+{
+  "id": "bai-20",
+  "grade": 10,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 10",
+  "chapter": "Chương 6. Sinh học vi sinh vật",
+  "lesson": "Bài 20. Các nhóm vi sinh vật. Kiểu dinh dưỡng và phương pháp nghiên cứu",
+  "section": "",
+  "bookPage": 116,
+  "requirements": [
+    "Nêu được khái niệm vi sinh vật và kể tên các nhóm vi sinh vật.",
+    "Phân biệt được các kiểu dinh dưỡng của vi sinh vật.",
+    "Trình bày được một số phương pháp nghiên cứu vi sinh vật."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Vi sinh vật là sinh vật có kích thước nhỏ, thường chỉ quan sát được dưới kính hiển vi. Vi sinh vật gồm vi sinh vật nhân sơ (vi khuẩn, Archaea) và vi sinh vật nhân thực (vi tảo, vi nấm, động vật nguyên sinh). Nhờ kích thước nhỏ, cấu tạo đơn giản, vi sinh vật có tốc độ chuyển hoá nhanh, sinh trưởng, sinh sản nhanh và phân bố gần như khắp nơi trên Trái Đất."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b20-nhom-vi-sinh-vat.svg",
+      "caption": "Sơ đồ phân chia các nhóm vi sinh vật"
+    },
+    {
+      "type": "text",
+      "content": "Vi khuẩn Archaea sống ở môi trường cực đoan, như nơi có áp suất cao, nồng độ muối cao, phóng xạ cao hoặc nhiệt độ cực thấp, cao. Vi khuẩn là nhóm có số lượng lớn nhất, chiếm khoảng một nửa sinh khối trên Trái Đất; con người mới phát hiện khoảng 10% số lượng của chúng."
+    },
+    {
+      "type": "text",
+      "content": "Dựa vào nguồn năng lượng và nguồn carbon, vi sinh vật có bốn kiểu dinh dưỡng: quang tự dưỡng (ánh sáng, CO₂), hoá tự dưỡng (chất vô cơ, CO₂), quang dị dưỡng (ánh sáng, chất hữu cơ) và hoá dị dưỡng (chất hữu cơ). Vi sinh vật có thêm các kiểu dinh dưỡng mà thực vật và động vật không có, như hoá tự dưỡng và quang dị dưỡng."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b20-kieu-dinh-duong.svg",
+      "caption": "Bốn kiểu dinh dưỡng của vi sinh vật"
+    },
+    {
+      "type": "text",
+      "content": "Phương pháp nghiên cứu gồm quan sát (làm tiêu bản soi tươi, nhuộm đơn, nhuộm Gram), phân lập và nuôi cấy trên môi trường thạch để thu khuẩn lạc thuần khiết, và phân tích hoá sinh hay sinh học phân tử (DNA, RNA) để định loại chính xác. Nhuộm Gram phân biệt vi khuẩn Gram dương (giữ màu tím) và Gram âm (mất màu tím, bắt màu đỏ), có ý nghĩa trong chọn thuốc điều trị."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b20-nhuom-gram.svg",
+      "caption": "Các bước nhuộm Gram"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Vì sao vi khuẩn Gram dương và Gram âm bắt màu khác nhau khi nhuộm Gram?",
+      "steps": [
+        "Gram dương có thành peptidoglycan dày giữ được màu tím.",
+        "Gram âm có màng ngoài và thành mỏng nên mất màu tím khi rửa cồn, rồi bắt màu đỏ của fuchsin."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nhóm vi sinh vật nào có nhân thực?",
+      "choices": [
+        "nấm đơn bào, tảo đơn bào, động vật nguyên sinh",
+        "vi khuẩn",
+        "Archaea",
+        "vi khuẩn lam"
+      ],
+      "answer": 0,
+      "explain": "Vi sinh vật nhân thực gồm nấm, tảo, nguyên sinh động vật.",
+      "wrong_explain": {
+        "1": "Vi khuẩn là nhân sơ.",
+        "2": "Archaea là nhân sơ.",
+        "3": "Vi khuẩn lam là vi khuẩn, nhân sơ."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vi sinh vật tự dưỡng là vi sinh vật:",
+      "choices": [
+        "tự tổng hợp chất hữu cơ từ chất vô cơ",
+        "lấy chất hữu cơ có sẵn trong thức ăn",
+        "chỉ sống trong cơ thể sinh vật khác",
+        "chỉ dùng ánh sáng để tổng hợp CO₂"
+      ],
+      "answer": 0,
+      "explain": "Tự dưỡng tổng hợp chất hữu cơ từ chất vô cơ.",
+      "wrong_explain": {
+        "1": "Đó là đặc điểm dị dưỡng.",
+        "2": "Không đặc trưng cho tự dưỡng.",
+        "3": "Ánh sáng không phải tiêu chí duy nhất của tự dưỡng."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vi khuẩn lam (quang tự dưỡng) dùng nguồn năng lượng nào?",
+      "choices": [
+        "ánh sáng",
+        "chất hữu cơ",
+        "NH₃",
+        "Fe²⁺"
+      ],
+      "answer": 0,
+      "explain": "Vi khuẩn lam dùng ánh sáng và CO₂.",
+      "wrong_explain": {
+        "1": "Chất hữu cơ là nguồn của dị dưỡng.",
+        "2": "NH₃ là nguồn của hoá tự dưỡng.",
+        "3": "Fe²⁺ là nguồn của hoá tự dưỡng."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vi khuẩn chỉ cần chất hữu cơ và sống không có ánh sáng thuộc kiểu:",
+      "choices": [
+        "hoá dị dưỡng",
+        "quang tự dưỡng",
+        "hoá tự dưỡng",
+        "quang dị dưỡng"
+      ],
+      "answer": 0,
+      "explain": "Năng lượng từ chất hữu cơ, không có ánh sáng.",
+      "wrong_explain": {
+        "1": "Quang tự dưỡng cần ánh sáng.",
+        "2": "Hoá tự dưỡng dùng chất vô cơ.",
+        "3": "Quang dị dưỡng cần ánh sáng."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong nhuộm Gram, bước nào làm vi khuẩn Gram âm mất màu tím?",
+      "choices": [
+        "rửa bằng ethyl alcohol 95%",
+        "nhuộm iodine",
+        "nhuộm tím kết tinh",
+        "nhuộm fuchsin"
+      ],
+      "answer": 0,
+      "explain": "Cồn làm mất màu tím ở Gram âm.",
+      "wrong_explain": {
+        "1": "Iodine giữ màu tím.",
+        "2": "Tím kết tinh là bước nhuộm ban đầu.",
+        "3": "Fuchsin nhuộm màu đỏ cuối cùng."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phương pháp nào dùng để thu được tập hợp tế bào thuần khiết?",
+      "choices": [
+        "phân lập và nuôi cấy trên môi trường thạch",
+        "nhuộm đơn",
+        "soi tươi",
+        "nhuộm Gram"
+      ],
+      "answer": 0,
+      "explain": "Phân lập trên thạch tạo khuẩn lạc riêng rẽ.",
+      "wrong_explain": {
+        "1": "Nhuộm đơn chỉ quan sát hình thái.",
+        "2": "Soi tươi quan sát trạng thái sống.",
+        "3": "Nhuộm Gram phân loại vi khuẩn."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bệnh nhân nhiễm khuẩn phổi, bác sĩ thường chỉ định làm gì để chọn thuốc đúng?",
+      "choices": [
+        "xét nghiệm nuôi cấy và nhuộm Gram để xác định loại vi khuẩn",
+        "tự chọn kháng sinh phổ rộng",
+        "không cần xét nghiệm",
+        "truyền dịch thay thuốc"
+      ],
+      "answer": 0,
+      "explain": "Xác định đúng loại vi khuẩn giúp chọn thuốc hiệu quả.",
+      "wrong_explain": {
+        "1": "Tự chọn thuốc có thể không hiệu quả và gây kháng thuốc.",
+        "2": "Xét nghiệm là cần thiết để điều trị chính xác.",
+        "3": "Truyền dịch không thay thế điều trị nhiễm khuẩn."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Một vi khuẩn không sử dụng được chất hữu cơ và chỉ dùng CO₂ với năng lượng từ NH₃. Đây là kiểu:",
+      "choices": [
+        "hoá tự dưỡng",
+        "quang dị dưỡng",
+        "hoá dị dưỡng",
+        "quang tự dưỡng"
+      ],
+      "answer": 0,
+      "explain": "Năng lượng từ chất vô cơ NH₃, carbon từ CO₂.",
+      "wrong_explain": {
+        "1": "Quang dị dưỡng cần ánh sáng và chất hữu cơ.",
+        "2": "Hoá dị dưỡng cần chất hữu cơ.",
+        "3": "Quang tự dưỡng dùng ánh sáng."
+      },
+      "id": "q08"
+    }
+  ]
+}

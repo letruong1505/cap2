@@ -1,0 +1,245 @@
+{
+  "id": "bai-3",
+  "grade": 10,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 10",
+  "chapter": "Phần mở đầu",
+  "lesson": "Bài 3. Các cấp độ tổ chức của thế giới sống",
+  "section": "",
+  "bookPage": 18,
+  "requirements": [
+    "Phát biểu được khái niệm cấp độ tổ chức sống.",
+    "Trình bày được các đặc điểm chung của các cấp độ tổ chức sống.",
+    "Phân biệt được các cấp độ tổ chức sống dựa vào sơ đồ.",
+    "Giải thích được mối quan hệ giữa các cấp độ tổ chức sống."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cấp độ tổ chức sống là cấp độ tổ chức của vật chất có biểu hiện đầy đủ đặc tính của sự sống. Thế giới sống được tổ chức theo thứ bậc gồm các cấp trung gian (nguyên tử, phân tử, bào quan, mô) và các cấp cơ bản (tế bào, cơ thể, quần thể, quần xã, hệ sinh thái). Tế bào là đơn vị cơ bản nhỏ nhất có đầy đủ đặc tính của sự sống."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b3-cap-do.svg",
+      "caption": "Các cấp độ tổ chức của thế giới sống"
+    },
+    {
+      "type": "text",
+      "content": "Quan hệ giữa các cấp độ: cơ thể gồm mô, cơ quan, hệ cơ quan; quần thể là tập hợp cá thể cùng loài trong một khu vực và thời điểm; quần xã gồm các quần thể của nhiều loài; hệ sinh thái gồm quần xã và môi trường vô sinh. Các cấp độ liên hệ với nhau qua hoạt động truyền tin ở cấp tế bào và qua chuyển hoá vật chất, năng lượng từ Mặt Trời."
+    },
+    {
+      "type": "text",
+      "content": "Đặc điểm chung: (1) được tổ chức theo nguyên tắc thứ bậc, cấp thấp làm nền tảng cho cấp cao, tạo ra đặc tính nổi trội mà cấp thấp không có; (2) là hệ mở, trao đổi vật chất và năng lượng với môi trường; (3) có khả năng tự điều chỉnh để duy trì cân bằng nội môi; (4) liên tục tiến hoá nhờ thông tin di truyền trong DNA và chọn lọc của môi trường."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b3-he-mo.svg",
+      "caption": "Hệ mở và cân bằng nội môi"
+    },
+    {
+      "type": "text",
+      "content": "Ví dụ: cơ thể người duy trì thân nhiệt, pH, đường huyết ở mức ổn định; nếu cơ chế tự điều chỉnh bị rối loạn, con người có thể mắc bệnh."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Phân biệt cấp độ tổ chức cơ thể và cấp độ tổ chức quần thể.",
+      "steps": [
+        "Cơ thể là một cá thể sinh vật, gồm các mô, cơ quan, hệ cơ quan phối hợp.",
+        "Quần thể là tập hợp nhiều cá thể cùng loài sống trong một khu vực địa lí và thời điểm nhất định."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Một con robot có khả năng di chuyển, tương tác với môi trường và đưa lời khuyên. Robot giống và khác vật sống ở điểm nào?",
+      "steps": [
+        "Giống: có thể di chuyển, tương tác với môi trường, xử lí thông tin.",
+        "Khác: không được cấu tạo từ tế bào, không tự sinh trưởng, sinh sản và chuyển hoá vật chất, năng lượng theo cách của sinh vật."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cấp độ tổ chức cơ bản nhỏ nhất có đầy đủ đặc tính của sự sống là:",
+      "choices": [
+        "tế bào",
+        "phân tử",
+        "bào quan",
+        "mô"
+      ],
+      "answer": 0,
+      "explain": "Tế bào là đơn vị cấu trúc và chức năng cơ bản của sự sống.",
+      "wrong_explain": {
+        "1": "Phân tử chưa có đầy đủ đặc tính sống.",
+        "2": "Bào quan là thành phần của tế bào.",
+        "3": "Mô là cấp trung gian, gồm nhiều tế bào."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tập hợp các cá thể cùng loài sống trong một khu vực và thời điểm nhất định tạo nên:",
+      "choices": [
+        "quần thể",
+        "quần xã",
+        "hệ sinh thái",
+        "cơ quan"
+      ],
+      "answer": 0,
+      "explain": "Quần thể là cấp tổ chức của cùng một loài.",
+      "wrong_explain": {
+        "1": "Quần xã gồm nhiều loài khác nhau.",
+        "2": "Hệ sinh thái gồm quần xã và môi trường.",
+        "3": "Cơ quan là cấp dưới cơ thể."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Các quần thể của nhiều loài khác nhau cùng tồn tại trong một khu vực tạo nên:",
+      "choices": [
+        "quần xã",
+        "quần thể",
+        "cơ thể",
+        "mô"
+      ],
+      "answer": 0,
+      "explain": "Quần xã gồm nhiều quần thể của nhiều loài.",
+      "wrong_explain": {
+        "1": "Quần thể chỉ gồm một loài.",
+        "2": "Cơ thể là một cá thể.",
+        "3": "Mô thuộc cấp dưới cơ thể."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đặc tính nổi trội của một cấp tổ chức xuất hiện khi:",
+      "choices": [
+        "các bộ phận tương tác với nhau trong một cấu trúc",
+        "các bộ phận tách rời nhau",
+        "chỉ có một bộ phận tồn tại",
+        "môi trường thay đổi đột ngột"
+      ],
+      "answer": 0,
+      "explain": "Tương tác giữa các thành phần tạo nên đặc tính mới.",
+      "wrong_explain": {
+        "1": "Tách rời làm mất đặc tính nổi trội.",
+        "2": "Một bộ phận đơn lẻ không có đặc tính này.",
+        "3": "Môi trường không tạo ra đặc tính nổi trội."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao các cấp độ tổ chức sống được gọi là hệ mở?",
+      "choices": [
+        "luôn trao đổi vật chất và năng lượng với môi trường",
+        "không chịu tác động của môi trường",
+        "không cần năng lượng",
+        "tách biệt hoàn toàn khỏi môi trường"
+      ],
+      "answer": 0,
+      "explain": "Hệ mở trao đổi vật chất, năng lượng và thông tin với môi trường.",
+      "wrong_explain": {
+        "1": "Sinh vật chịu tác động và tác động trở lại môi trường.",
+        "2": "Sinh vật luôn cần năng lượng.",
+        "3": "Trái với bản chất hệ mở."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cơ chế duy trì nhiệt độ cơ thể ổn định là ví dụ cho:",
+      "choices": [
+        "cân bằng nội môi",
+        "sự tiến hoá",
+        "sự phân bào",
+        "quang hợp"
+      ],
+      "answer": 0,
+      "explain": "Duy trì môi trường trong ổn định là cân bằng nội môi.",
+      "wrong_explain": {
+        "1": "Tiến hoá là quá trình thay đổi qua nhiều thế hệ.",
+        "2": "Phân bào là sinh sản tế bào.",
+        "3": "Quang hợp là quá trình tạo chất hữu cơ từ ánh sáng."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thế giới sống tiến hoá dựa trên cơ sở nào?",
+      "choices": [
+        "thông tin di truyền trong DNA được truyền qua các thế hệ, có đột biến và chọn lọc",
+        "thông tin không thay đổi qua các thế hệ",
+        "chỉ nhờ sự thay đổi của vật không sống",
+        "không có đột biến"
+      ],
+      "answer": 0,
+      "explain": "Đột biến và chọn lọc tự nhiên thúc đẩy tiến hoá.",
+      "wrong_explain": {
+        "1": "Thông tin có thay đổi do đột biến.",
+        "2": "Tiến hoá là đặc trưng của thế giới sống.",
+        "3": "Đột biến là nguồn nguyên liệu của tiến hoá."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phát biểu nào đúng về mối quan hệ giữa các cấp độ tổ chức sống?",
+      "choices": [
+        "các cấp độ liên hệ với nhau qua hoạt động sống ở cấp tế bào và sự truyền năng lượng",
+        "các cấp độ hoàn toàn độc lập",
+        "chỉ cấp tế bào có năng lượng",
+        "cấp cao không chịu ảnh hưởng của cấp thấp"
+      ],
+      "answer": 0,
+      "explain": "Mối quan hệ dựa trên hoạt động sống của tế bào và chuyển hoá năng lượng.",
+      "wrong_explain": {
+        "1": "Các cấp độ liên hệ chặt chẽ với nhau.",
+        "2": "Năng lượng được truyền qua các cấp độ.",
+        "3": "Cấp cao chịu ảnh hưởng của cấp thấp."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao nói nếu không có Mặt Trời thì Trái Đất sẽ bị huỷ diệt?",
+      "choices": [
+        "nguồn năng lượng chủ yếu của thế giới sống đến từ Mặt Trời",
+        "Mặt Trời tạo ra nước",
+        "Mặt Trời tạo ra không khí",
+        "Mặt Trời tạo ra kim loại"
+      ],
+      "answer": 0,
+      "explain": "Năng lượng từ Mặt Trời được truyền qua các cấp độ tổ chức.",
+      "wrong_explain": {
+        "1": "Không phải vai trò của Mặt Trời.",
+        "2": "Không phải vai trò của Mặt Trời.",
+        "3": "Không phải vai trò của Mặt Trời."
+      },
+      "id": "q09"
+    }
+  ]
+}

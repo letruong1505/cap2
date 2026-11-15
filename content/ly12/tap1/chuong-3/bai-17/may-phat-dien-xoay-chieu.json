@@ -65,7 +65,17 @@
       }
     }
   ],
-  "examples": [],
+  "examples": [
+    {
+      "problem": "Ví dụ 1: Khung dây N = 200 vòng, diện tích S = 0,03 m², đặt trong từ trường đều B = 0,05 T, quay đều với ω = 50 rad/s. Tính suất điện động cực đại E₀ (V).",
+      "steps": [
+        "Công thức suất điện động cực đại: E₀ = N·B·S·ω.",
+        "E₀ = 200 · 0,05 · 0,03 · 50 = 15 V."
+      ],
+      "expr": "200*0.05*0.03*50",
+      "answer": "15"
+    }
+  ],
   "items": [
     {
       "id": "q01",

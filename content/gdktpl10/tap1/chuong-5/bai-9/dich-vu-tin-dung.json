@@ -1,0 +1,240 @@
+{
+  "id": "bai-9",
+  "grade": 10,
+  "subject": "gdktpl",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Giáo dục kinh tế và pháp luật 10",
+  "chapter": "Chủ đề 5. Tín dụng và cách sử dụng các dịch vụ tín dụng trong đời sống",
+  "lesson": "Bài 9. Dịch vụ tín dụng",
+  "section": "",
+  "bookPage": 52,
+  "requirements": [
+    "Nhận biết và mô tả được đặc điểm một số dịch vụ tín dụng.",
+    "Nhận biết được sự chênh lệch giữa chi phí sử dụng tiền mặt và mua tín dụng.",
+    "Biết cách sử dụng có trách nhiệm một số dịch vụ tín dụng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tín dụng ngân hàng là việc ngân hàng chấp nhận để khách hàng sử dụng một lượng tiền vốn trong một thời gian nhất định trên cơ sở lòng tin khách hàng có khả năng hoàn trả gốc và lãi khi đến hạn. Tín dụng ngân hàng có đặc điểm dựa trên lòng tin, có tính thời hạn, phải hoàn trả cả gốc lẫn lãi vô điều kiện và tiềm ẩn rủi ro."
+    },
+    {
+      "type": "text",
+      "content": "Từ khoá cần ghi nhớ: tín dụng ngân hàng; tín chấp; thế chấp; trả góp; tín dụng thương mại; tín dụng tiêu dùng; thẻ tín dụng; tín dụng nhà nước; trái phiếu chính phủ; ngân hàng chính sách xã hội; công trái."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/gdktpl10-b9-dich-vu.svg",
+      "caption": "Các loại dịch vụ tín dụng"
+    },
+    {
+      "type": "text",
+      "content": "Cho vay tín chấp dựa hoàn toàn vào uy tín của người vay, không cần tài sản bảo đảm, số tiền thường nhỏ, thời hạn ngắn, lãi khá cao. Cho vay thế chấp đòi hỏi tài sản có giá trị tương đương với khoản vay; thủ tục phức tạp, số tiền lớn, thời gian dài. Cho vay trả góp: hằng tháng người vay trả lãi và một phần gốc, hạn mức cao nhưng lãi suất khá cao và có mức phạt nếu trả chậm."
+    },
+    {
+      "type": "text",
+      "content": "Tín dụng thương mại là quan hệ tín dụng giữa các doanh nghiệp dưới hình thức mua bán chịu, mua bán trả chậm hoặc trả góp hàng hoá. Tín dụng tiêu dùng là quan hệ giữa tổ chức tín dụng và người tiêu dùng nhằm thoả mãn nhu cầu mua sắm, với nguồn trả nợ là thu nhập của người vay. Thẻ tín dụng là thẻ chi tiêu trước, trả tiền sau do ngân hàng phát hành."
+    },
+    {
+      "type": "text",
+      "content": "Tín dụng nhà nước gồm phát hành trái phiếu chính phủ (tín phiếu kho bạc, trái phiếu kho bạc, công trái xây dựng Tổ quốc) và cho vay ưu đãi qua ngân hàng chính sách xã hội. Ngân hàng chính sách xã hội hoạt động không vì lợi nhuận, cho các hộ nghèo và đối tượng chính sách vay, chủ yếu theo hình thức uỷ thác qua các hội, đoàn thể."
+    },
+    {
+      "type": "text",
+      "content": "Khi sử dụng dịch vụ tín dụng, người vay có trách nhiệm cung cấp thông tin trung thực, chính xác; trả đủ gốc và lãi đúng hạn; sử dụng vốn đúng mục đích; cân nhắc chi phí và rủi ro. Nợ quá hạn làm xấu lịch sử tín dụng và có thể phải chịu lãi cao."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Chị B gửi 100 triệu đồng với lãi 6,8%/năm hay cho vay với lãi 10%/năm? Hãy so sánh tiền lãi trong 1 năm nếu bỏ qua rủi ro.",
+      "steps": [
+        "Gửi ngân hàng: 100 × 6,8% = 6,8 triệu đồng.",
+        "Cho vay: 100 × 10% = 10 triệu đồng, nhưng có rủi ro mất vốn nếu người vay không trả."
+      ],
+      "expr": "100*0.068",
+      "answer": "6.8"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tín dụng ngân hàng là việc ngân hàng:",
+      "choices": [
+        "cho không khách hàng tiền",
+        "chấp nhận để khách hàng sử dụng vốn trong thời gian nhất định trên cơ sở lòng tin",
+        "chỉ nhận tiền gửi không cho vay",
+        "chỉ phục vụ doanh nghiệp nhà nước"
+      ],
+      "answer": 1,
+      "explain": "Tín dụng ngân hàng dựa trên lòng tin và thời hạn.",
+      "wrong_explain": {
+        "0": "Tín dụng phải hoàn trả.",
+        "2": "Ngân hàng vừa nhận gửi vừa cho vay.",
+        "3": "Ngân hàng phục vụ nhiều đối tượng."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho vay tín chấp là hình thức cho vay:",
+      "choices": [
+        "dựa vào uy tín của người vay, không cần tài sản bảo đảm",
+        "bắt buộc có tài sản thế chấp",
+        "không cần hoàn trả",
+        "chỉ dành cho doanh nghiệp lớn"
+      ],
+      "answer": 0,
+      "explain": "Tín chấp dựa hoàn toàn vào uy tín người vay.",
+      "wrong_explain": {
+        "1": "Thế chấp mới cần tài sản.",
+        "2": "Tín chấp vẫn phải hoàn trả.",
+        "3": "Tín chấp dành cho nhiều đối tượng."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đặc điểm nổi bật của cho vay thế chấp là:",
+      "choices": [
+        "không cần tài sản",
+        "số tiền luôn nhỏ",
+        "thủ tục đơn giản nhất",
+        "người vay phải có tài sản bảo đảm có giá trị tương đương"
+      ],
+      "answer": 3,
+      "explain": "Thế chấp yêu cầu tài sản đảm bảo.",
+      "wrong_explain": {
+        "0": "Thế chấp cần tài sản.",
+        "1": "Số tiền thường lớn.",
+        "2": "Thủ tục thế chấp phức tạp."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao ngân hàng cho anh S vay tín chấp mà không cần tài sản bảo đảm?",
+      "choices": [
+        "vì anh là người nghèo",
+        "vì ngân hàng không quan tâm",
+        "vì anh có uy tín, thu nhập ổn định và lịch sử tín dụng tốt",
+        "vì khoản vay không có lãi"
+      ],
+      "answer": 2,
+      "explain": "Uy tín và khả năng trả nợ là căn cứ.",
+      "wrong_explain": {
+        "0": "Hoàn cảnh không phải căn cứ.",
+        "1": "Ngân hàng có xem xét.",
+        "3": "Vay có lãi."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đặc điểm của tín dụng tiêu dùng là:",
+      "choices": [
+        "mục đích đầu tư sản xuất lớn",
+        "mục đích vay để tiêu dùng, nguồn trả nợ là thu nhập của người vay",
+        "không có nguồn trả nợ",
+        "chỉ dành cho nhà nước"
+      ],
+      "answer": 1,
+      "explain": "Tín dụng tiêu dùng gắn với nhu cầu mua sắm cá nhân.",
+      "wrong_explain": {
+        "0": "Đây là tín dụng sản xuất.",
+        "2": "Thu nhập là nguồn trả nợ.",
+        "3": "Đối tượng là cá nhân, hộ gia đình."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trái phiếu chính phủ là hình thức tín dụng nhà nước vì:",
+      "choices": [
+        "Nhà nước đi vay để bù đắp ngân sách và đầu tư các công trình quan trọng",
+        "Nhà nước cho vay không hoàn trả",
+        "người dân vay Nhà nước",
+        "Nhà nước không phải hoàn trả"
+      ],
+      "answer": 0,
+      "explain": "Nhà nước là người vay và có nghĩa vụ trả nợ.",
+      "wrong_explain": {
+        "1": "Nhà nước phải hoàn trả.",
+        "2": "Nhà nước là bên vay.",
+        "3": "Nhà nước có nghĩa vụ hoàn trả."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thanh toán bằng thẻ tín dụng mang lại lợi ích gì so với tiền mặt?",
+      "choices": [
+        "phải trả thêm phí không cần thiết",
+        "mất quyền giao dịch",
+        "không có lợi ích gì",
+        "được hoàn lại một phần giá trị hoá đơn và tích điểm tín dụng"
+      ],
+      "answer": 3,
+      "explain": "Thẻ tín dụng có ưu đãi nếu sử dụng đúng hạn.",
+      "wrong_explain": {
+        "0": "Thẻ có nhiều ưu đãi.",
+        "1": "Giao dịch vẫn được thực hiện.",
+        "2": "Có lợi ích rõ rệt."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi sử dụng thẻ tín dụng, chủ thẻ cần làm gì?",
+      "choices": [
+        "để nợ quá hạn tuỳ ý",
+        "không cần quan tâm lãi",
+        "thanh toán đúng hạn quyết toán và cung cấp thông tin chính xác",
+        "chia sẻ thông tin thẻ cho người lạ"
+      ],
+      "answer": 2,
+      "explain": "Trả đúng hạn giữ uy tín tín dụng.",
+      "wrong_explain": {
+        "0": "Nợ quá hạn bị phạt.",
+        "1": "Lãi là chi phí cần cân nhắc.",
+        "3": "Thông tin thẻ cần được bảo mật."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trước khi vay trả góp, em nên làm gì?",
+      "choices": [
+        "vay tối đa không cần tính",
+        "so sánh tổng chi phí lãi với việc thanh toán một lần và tự xác định khả năng trả nợ",
+        "không cần đọc hợp đồng",
+        "chỉ hỏi bạn bè"
+      ],
+      "answer": 1,
+      "explain": "Trả góp làm tăng chi phí do lãi.",
+      "wrong_explain": {
+        "0": "Vay quá mức gây rủi ro.",
+        "2": "Hợp đồng cần được đọc kĩ.",
+        "3": "Cần thông tin chính thức."
+      },
+      "id": "q09"
+    }
+  ]
+}

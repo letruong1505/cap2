@@ -558,6 +558,46 @@
       "explain": "Lấy điểm trên mặt phẳng thứ nhất, ví dụ (1; 0; 0); khoảng cách đến mặt phẳng thứ hai = |1 + 5|/3 = 2.",
       "dang": "Viết phương trình mặt phẳng và tính khoảng cách",
       "id": "q29"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Vectơ pháp tuyến n của mặt phẳng (α) là vectơ như thế nào?",
+      "choices": [
+        "Song song với (α)",
+        "Khác 0 và vuông góc với (α)",
+        "Nằm trong (α)",
+        "Bằng 0"
+      ],
+      "answer": 1,
+      "explain": "Vectơ pháp tuyến có giá vuông góc với mặt phẳng.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Vectơ song song với mặt phẳng là vectơ chỉ phương, không phải pháp tuyến.",
+        "2": "Vectơ nằm trong mặt phẳng không thể vuông góc với nó.",
+        "3": "Vectơ pháp tuyến phải khác 0 để xác định mặt phẳng."
+      },
+      "id": "q30"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phương trình mặt phẳng đi qua M₀(x₀; y₀; z₀), có vectơ pháp tuyến n = (A; B; C), là?",
+      "choices": [
+        "A(x + x₀) + B(y + y₀) + C(z + z₀) = 0",
+        "(x − x₀)² + (y − y₀)² + (z − z₀)² = 0",
+        "A·x₀ + B·y₀ + C·z₀ = 0",
+        "A(x − x₀) + B(y − y₀) + C(z − z₀) = 0"
+      ],
+      "answer": 3,
+      "explain": "Dùng điểm đi qua và các thành phần của vectơ pháp tuyến.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đổi dấu toạ độ điểm M₀.",
+        "1": "Đó là phương trình của một điểm, không phải mặt phẳng.",
+        "2": "Thiếu biến x, y, z: đó là một hằng số, không phải phương trình mặt phẳng."
+      },
+      "id": "q31"
     }
   ]
 }

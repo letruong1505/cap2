@@ -336,6 +336,46 @@
       "expr": "(1*3.875*3.875+3*3.925*3.925+4*3.975*3.975+2*4.025*4.025)/10-(99/25)*(99/25)",
       "answer": "81/40000",
       "explain": "x̄ = 99/25 = 3,96; s² = 81/40000, nên s ≈ 0,045 (V)."
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Với mẫu số liệu ghép nhóm, số đặc trưng chỉ phụ thuộc hai nhóm đầu và nhóm cuối là?",
+      "choices": [
+        "Khoảng biến thiên R",
+        "Phương sai s²",
+        "Khoảng tứ phân vị Δ_Q",
+        "Độ lệch chuẩn s"
+      ],
+      "answer": 0,
+      "explain": "R chỉ dùng đầu mút của nhóm đầu và nhóm cuối.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Phương sai dùng giá trị của mọi nhóm.",
+        "2": "Δ_Q phụ thuộc các nhóm chứa Q₁ và Q₃, không chỉ hai nhóm đầu cuối.",
+        "3": "Độ lệch chuẩn dùng mọi nhóm."
+      },
+      "id": "q24"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Cỡ mẫu n của mẫu số liệu ghép nhóm được tính bằng?",
+      "choices": [
+        "k (số nhóm)",
+        "m₁·m_k",
+        "m₁ + m₂ + … + m_k",
+        "a_{k+1} − a_1"
+      ],
+      "answer": 2,
+      "explain": "Cỡ mẫu là tổng tần số của tất cả các nhóm.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "k là số nhóm, không phải cỡ mẫu.",
+        "1": "Đây là tích của hai tần số, không phải tổng.",
+        "3": "Đây là khoảng biến thiên R."
+      },
+      "id": "q25"
     }
   ]
 }

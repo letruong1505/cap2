@@ -231,6 +231,46 @@
       "explain": "P = (1/2·3/5)/(2/5) = (3/10)/(4/10) = 3/4.",
       "dang": "Xác suất toàn phần và công thức Bayes",
       "id": "q35"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Công thức xác suất toàn phần P(B) với hai biến cố A và Ā là?",
+      "choices": [
+        "P(A)·P(B|A) + P(Ā)·P(B|Ā)",
+        "P(A) + P(B|A)",
+        "P(A)·P(B|A) − P(Ā)·P(B|Ā)",
+        "P(A)·P(Ā)"
+      ],
+      "answer": 0,
+      "explain": "Cộng xác suất của B theo từng trường hợp A và Ā, mỗi trường hợp nhân với xác suất của trường hợp đó.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Cộng nhầm các xác suất có điều kiện với xác suất của A.",
+        "2": "Dùng dấu trừ; xác suất toàn phần luôn cộng các nhánh.",
+        "3": "Đó là xác suất của A và Ā cùng xảy ra, không liên quan đến B."
+      },
+      "id": "q36"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Công thức Bayes P(A|B) bằng?",
+      "choices": [
+        "P(B)·P(A|B) / P(A)",
+        "P(A)·P(B) / P(B|A)",
+        "P(A)·P(B|A) / P(B)",
+        "P(A|B)·P(B)"
+      ],
+      "answer": 2,
+      "explain": "Đảo điều kiện: nhân xác suất của A với P(B|A) rồi chia cho P(B).",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đây là công thức biến đổi sai, không phải Bayes.",
+        "1": "Đảo vị trí P(B) và P(B|A).",
+        "3": "Đây là công thức nhân, không phải Bayes."
+      },
+      "id": "q37"
     }
   ]
 }

@@ -35,7 +35,17 @@
       "content": "Dòng điện Foucault là dòng điện cảm ứng xuất hiện trong khối vật dẫn chuyển động trong từ trường hoặc đặt trong từ trường biến thiên. Dòng này được ứng dụng trong bếp từ và phanh điện từ."
     }
   ],
-  "examples": [],
+  "examples": [
+    {
+      "problem": "Ví dụ 1: Máy biến áp lí tưởng có N₁ = 1000 vòng, N₂ = 200 vòng. Điện áp sơ cấp U₁ = 220 V. Tính điện áp thứ cấp U₂ (V).",
+      "steps": [
+        "Với máy biến áp lí tưởng: U₂/U₁ = N₂/N₁.",
+        "U₂ = 220 · 200/1000 = 44 V; đây là máy hạ áp."
+      ],
+      "expr": "220*200/1000",
+      "answer": "44"
+    }
+  ],
   "items": [
     {
       "id": "q01",

@@ -35,7 +35,17 @@
       "content": "Nguyên tắc an toàn phóng xạ: giữ khoảng cách đủ xa nguồn; dùng tấm chắn đủ tốt; giảm thiểu thời gian phơi nhiễm. Liều hiệu dụng: D_hd = D·W, với D là liều hấp thụ (Gy), W là trọng số bức xạ; đơn vị liều hiệu dụng là sievert (Sv). W = 1 với tia β, γ và W = 20 với tia α."
     }
   ],
-  "examples": [],
+  "examples": [
+    {
+      "problem": "Ví dụ 1: Liều hấp thụ D = 0,1 Gy do tia α gây ra. Tính liều hiệu dụng (Sv), biết trọng số bức xạ W = 20 với tia α.",
+      "steps": [
+        "Liều hiệu dụng: D_hd = D·W.",
+        "D_hd = 0,1 · 20 = 2 Sv."
+      ],
+      "expr": "0.1*20",
+      "answer": "2"
+    }
+  ],
   "items": [
     {
       "id": "q01",

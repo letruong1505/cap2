@@ -344,6 +344,46 @@
       "answer": "94/3",
       "explain": "V = π∫_2^4 (25 − x²)dx = 94π/3.",
       "figure": "figures/bt12-c4-q20.svg"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nguyên hàm của sin x là?",
+      "choices": [
+        "cos x + C",
+        "−cos x + C",
+        "−sin x + C",
+        "tan x + C"
+      ],
+      "answer": 1,
+      "explain": "Đạo hàm của −cos x là sin x.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đạo hàm của cos x là −sin x, không phải sin x.",
+        "2": "Nhầm với nguyên hàm của cos x.",
+        "3": "Nhầm với nguyên hàm của 1/cos²x."
+      },
+      "id": "q21"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nguyên hàm của e^x là?",
+      "choices": [
+        "x·e^(x−1) + C",
+        "e^(x+1) + C",
+        "ln x + C",
+        "e^x + C"
+      ],
+      "answer": 3,
+      "explain": "Đạo hàm của e^x vẫn là e^x.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Không đúng quy tắc nguyên hàm của hàm mũ.",
+        "1": "Đạo hàm của e^(x+1) là e^(x+1), không phải e^x.",
+        "2": "Đó là nguyên hàm của 1/x."
+      },
+      "id": "q22"
     }
   ]
 }

@@ -1,0 +1,369 @@
+{
+  "id": "bai-5",
+  "grade": 10,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 10",
+  "chapter": "Chương 1. Thành phần hoá học của tế bào",
+  "lesson": "Bài 5. Các phân tử sinh học",
+  "section": "",
+  "bookPage": 28,
+  "requirements": [
+    "Nêu được khái niệm phân tử sinh học.",
+    "Trình bày được thành phần cấu tạo và vai trò của carbohydrate, lipid, protein, nucleic acid.",
+    "Phân tích được mối quan hệ giữa cấu tạo và chức năng của các phân tử sinh học.",
+    "Nêu được một số nguồn thực phẩm cung cấp các phân tử sinh học.",
+    "Vận dụng được kiến thức về phân tử sinh học để giải thích hiện tượng trong thực tiễn (ví dụ: DNA trong xác định huyết thống, truy tìm tội phạm)."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phân tử sinh học là các phân tử hữu cơ được tổng hợp và tồn tại trong tế bào sống. Các phân tử sinh học chính gồm carbohydrate, lipid, protein và nucleic acid. Protein, carbohydrate (polysaccharide) và nucleic acid là đại phân tử được cấu tạo theo nguyên tắc đa phân, gọi là polymer, gồm nhiều đơn phân liên kết với nhau."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b5-dai-phan-tu.svg",
+      "caption": "Nguyên tắc đa phân: đơn phân → chuỗi → đại phân tử"
+    },
+    {
+      "type": "text",
+      "content": "1. Carbohydrate: gồm C, H, O theo tỉ lệ 1 : 2 : 1, công thức chung Cₙ(H₂O)ₘ. Gồm đường đơn (glucose, fructose, galactose), đường đôi (sucrose, lactose, maltose; hình thành qua liên kết glycosidic) và đường đa (tinh bột, glycogen, cellulose, chitin). Chức năng: nguồn năng lượng, dự trữ năng lượng và cấu trúc tế bào. Cellulose là thành phần chính của thành tế bào thực vật; chitin cấu tạo nên vỏ kitin của tôm, cua và thành tế bào nấm."
+    },
+    {
+      "type": "text",
+      "content": "2. Lipid: nhóm kị nước, rất đa dạng. Gồm triglyceride (dầu, mỡ: 1 glycerol + 3 acid béo), phospholipid (cấu tạo màng tế bào, có đầu ưa nước và hai đuôi kị nước), steroid (cholesterol, hormone sinh dục, vitamin D) và carotenoid. Lipid dự trữ năng lượng lâu dài, cấu tạo màng và là dung môi của các vitamin A, D, E, K."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b5-triglyceride.svg",
+      "caption": "Cấu tạo triglyceride"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b5-phospholipid-mang.svg",
+      "caption": "Phospholipid tạo lớp kép của màng tế bào"
+    },
+    {
+      "type": "text",
+      "content": "3. Protein: đa phân gồm 20 loại amino acid. Các amino acid liên kết bằng liên kết peptide tạo chuỗi polypeptide. Protein có 4 bậc cấu trúc: bậc 1 (trình tự amino acid), bậc 2 (xoắn α, gấp nếp β), bậc 3 (cấu trúc không gian ba chiều), bậc 4 (nhiều chuỗi polypeptide). Protein có nhiều chức năng: cấu trúc, xúc tác (enzyme), bảo vệ (kháng thể), vận động, tiếp nhận thông tin (thụ thể), điều hoà (hormone). Khi nhiệt độ, pH thay đổi quá mức, protein bị biến tính và mất chức năng."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b5-bac-cau-truc-protein.svg",
+      "caption": "Các bậc cấu trúc của protein"
+    },
+    {
+      "type": "text",
+      "content": "4. Nucleic acid: gồm DNA và RNA. DNA gồm hai chuỗi polynucleotide ngược chiều, liên kết với nhau bằng liên kết hydrogen theo nguyên tắc bổ sung: A với T (2 liên kết H), G với C (3 liên kết H). Đơn phân là nucleotide gồm đường deoxyribose, gốc phosphate và một trong bốn base A, T, G, C. DNA mang, bảo quản và truyền thông tin di truyền. RNA thường là một chuỗi polynucleotide, có base U thay T; gồm mRNA (làm khuôn tổng hợp protein), tRNA (vận chuyển amino acid), rRNA (cấu tạo ribosome) và các RNA điều hoà."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b5-cap-bazo-dna.svg",
+      "caption": "Nguyên tắc bổ sung trong phân tử DNA"
+    },
+    {
+      "type": "text",
+      "content": "Thông tin trong DNA được truyền theo sơ đồ: DNA → (phiên mã) mRNA → (dịch mã) protein. Mỗi loài có số lượng và trình tự DNA đặc trưng. Dấu vân tay DNA (trình tự lặp lại đặc trưng cho từng cá thể) được dùng để xác định nhân thân và quan hệ huyết thống."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Mười phân tử glucose liên kết tạo một đường đa. Hãy nêu công thức chung của đường đa và giải thích.",
+      "steps": [
+        "Mỗi glucose có công thức C₆H₁₂O₆. Khi 10 phân tử liên kết glycosidic, mỗi liên kết loại một phân tử H₂O, nên có 9 liên kết và loại 9 H₂O.",
+        "Công thức: 10 C₆H₁₂O₆ − 9 H₂O = C₆₀H₁₀₂O₅₁."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Vì sao cellulose và tinh bột được cấu tạo từ cùng một loại đơn phân nhưng có tính chất khác nhau?",
+      "steps": [
+        "Tinh bột ít phân nhánh, tan tốt hơn, là chất dự trữ năng lượng ở thực vật.",
+        "Cellulose là mạch thẳng, các mạch song song tạo bó sợi bền vững, là thành phần cấu trúc của thành tế bào; người không tiêu hoá được."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Các phân tử sinh học chính trong tế bào gồm:",
+      "choices": [
+        "carbohydrate, lipid, protein và nucleic acid",
+        "carbohydrate, vitamin, nước và muối khoáng",
+        "lipid, nước, khí và ion",
+        "protein, muối khoáng và hormone"
+      ],
+      "answer": 0,
+      "explain": "Bốn nhóm phân tử sinh học chính.",
+      "wrong_explain": {
+        "1": "Nước và muối khoáng không phải phân tử sinh học chính.",
+        "2": "Nước và khí không phải phân tử sinh học chính.",
+        "3": "Muối khoáng không phải phân tử sinh học chính."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đường đơn có ba loại chính là:",
+      "choices": [
+        "glucose, fructose, galactose",
+        "sucrose, maltose, lactose",
+        "tinh bột, glycogen, cellulose",
+        "chitin, cellulose, saccharin"
+      ],
+      "answer": 0,
+      "explain": "Đường đơn có 6 carbon.",
+      "wrong_explain": {
+        "1": "Đây là đường đôi.",
+        "2": "Đây là đường đa.",
+        "3": "Chitin là đường đa; saccharin không phải đường sinh học."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đơn phân cấu tạo nên protein là:",
+      "choices": [
+        "amino acid",
+        "nucleotide",
+        "glucose",
+        "glycerol"
+      ],
+      "answer": 0,
+      "explain": "Protein được cấu tạo từ 20 loại amino acid.",
+      "wrong_explain": {
+        "1": "Nucleotide cấu tạo nên nucleic acid.",
+        "2": "Glucose cấu tạo nên đường đa.",
+        "3": "Glycerol là thành phần của lipid."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đơn phân cấu tạo nên DNA là:",
+      "choices": [
+        "nucleotide",
+        "amino acid",
+        "đường đơn",
+        "acid béo"
+      ],
+      "answer": 0,
+      "explain": "DNA có các nucleotide với đường deoxyribose, phosphate và base.",
+      "wrong_explain": {
+        "1": "Amino acid là đơn phân của protein.",
+        "2": "Đường đơn là đơn phân của carbohydrate.",
+        "3": "Acid béo là thành phần của lipid."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong phân tử DNA, base A liên kết với base nào bằng hai liên kết hydrogen?",
+      "choices": [
+        "T",
+        "G",
+        "C",
+        "U"
+      ],
+      "answer": 0,
+      "explain": "Nguyên tắc bổ sung: A–T (2 liên kết H).",
+      "wrong_explain": {
+        "1": "G liên kết với C bằng 3 liên kết H.",
+        "2": "C liên kết với G bằng 3 liên kết H.",
+        "3": "U chỉ có trong RNA."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Liên kết nào hình thành giữa các amino acid trong chuỗi polypeptide?",
+      "choices": [
+        "liên kết peptide",
+        "liên kết hydrogen",
+        "liên kết glycosidic",
+        "liên kết phosphodiester"
+      ],
+      "answer": 0,
+      "explain": "Liên kết peptide nối amino acid, loại một phân tử nước.",
+      "wrong_explain": {
+        "1": "Liên kết hydrogen không nối các amino acid theo chuỗi chính.",
+        "2": "Liên kết glycosidic nối đường.",
+        "3": "Liên kết phosphodiester nối nucleotide."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao lipid không tan (hoặc rất ít tan) trong nước?",
+      "choices": [
+        "chứa nhiều liên kết C–H không phân cực",
+        "chứa nhiều nhóm ion",
+        "chứa nhiều liên kết hydrogen với nước",
+        "chứa nhiều nguyên tử oxygen"
+      ],
+      "answer": 0,
+      "explain": "Lipid là nhóm kị nước do liên kết C–H không phân cực.",
+      "wrong_explain": {
+        "1": "Lipid không có ion.",
+        "2": "Lipid không tạo liên kết hydrogen với nước.",
+        "3": "Lipid chứa ít nguyên tử oxygen."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dầu ở thể lỏng ở nhiệt độ phòng vì:",
+      "choices": [
+        "chứa nhiều acid béo không no",
+        "chứa nhiều acid béo no",
+        "chứa nhiều protein",
+        "không chứa glycerol"
+      ],
+      "answer": 0,
+      "explain": "Acid béo không no làm chất béo khó đông đặc.",
+      "wrong_explain": {
+        "1": "Acid béo no làm mỡ ở thể rắn.",
+        "2": "Dầu không nhiều protein.",
+        "3": "Dầu có glycerol trong triglyceride."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Protein bị biến tính khi:",
+      "choices": [
+        "nhiệt độ, pH thay đổi quá mức làm đứt các liên kết yếu",
+        "bị đun nóng nhẹ ở nhiệt độ thấp",
+        "được hoà tan trong nước muối loãng",
+        "được lưu trữ ở nơi khô mát"
+      ],
+      "answer": 0,
+      "explain": "Biến tính làm phá vỡ cấu trúc không gian và mất chức năng.",
+      "wrong_explain": {
+        "1": "Đun nóng nhẹ không nhất thiết làm biến tính.",
+        "2": "Hoà tan không làm protein biến tính.",
+        "3": "Bảo quản đúng cách không làm biến tính."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cấu trúc bậc 3 của protein được duy trì chủ yếu nhờ:",
+      "choices": [
+        "các liên kết yếu như hydrogen, kị nước, ion",
+        "liên kết peptide giữa các amino acid",
+        "liên kết phosphodiester",
+        "liên kết glycosidic"
+      ],
+      "answer": 0,
+      "explain": "Liên kết peptide quyết định cấu trúc bậc 1; các liên kết yếu giữ cấu trúc không gian.",
+      "wrong_explain": {
+        "1": "Liên kết peptide tạo chuỗi bậc 1.",
+        "2": "Liên kết này thuộc nucleic acid.",
+        "3": "Liên kết này thuộc đường đôi và đa."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chức năng nào sau đây là của lipid?",
+      "choices": [
+        "dự trữ năng lượng lâu dài và cấu tạo màng tế bào",
+        "xúc tác phản ứng sinh hoá",
+        "mang thông tin di truyền",
+        "vận chuyển amino acid đến ribosome"
+      ],
+      "answer": 0,
+      "explain": "Lipid dự trữ năng lượng và cấu tạo màng.",
+      "wrong_explain": {
+        "1": "Enzyme (protein) xúc tác phản ứng.",
+        "2": "DNA mang thông tin di truyền.",
+        "3": "tRNA vận chuyển amino acid."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Loại RNA trực tiếp làm khuôn để tổng hợp protein là:",
+      "choices": [
+        "mRNA",
+        "tRNA",
+        "rRNA",
+        "DNA"
+      ],
+      "answer": 0,
+      "explain": "mRNA làm khuôn tại ribosome.",
+      "wrong_explain": {
+        "1": "tRNA vận chuyển amino acid.",
+        "2": "rRNA cấu tạo ribosome.",
+        "3": "DNA không trực tiếp làm khuôn dịch mã."
+      },
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao dấu vân tay DNA có thể dùng để xác định quan hệ huyết thống?",
+      "choices": [
+        "trình tự DNA lặp lại đặc trưng cho từng cá thể và được di truyền",
+        "DNA của mọi người giống nhau hoàn toàn",
+        "DNA chỉ có ở người lớn",
+        "DNA thay đổi theo từng năm"
+      ],
+      "answer": 0,
+      "explain": "Dấu vân tay DNA đặc trưng cho từng cá thể, được di truyền cho con.",
+      "wrong_explain": {
+        "1": "DNA khác nhau giữa các cá thể.",
+        "2": "DNA có ở mọi tế bào có nhân.",
+        "3": "DNA không thay đổi trong đời sống cá thể."
+      },
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thực phẩm giàu nucleic acid như nội tạng động vật dễ gây bệnh gút vì:",
+      "choices": [
+        "purin trong nucleic acid chuyển hoá thành uric acid tích luỹ ở khớp",
+        "nucleic acid làm tăng lượng đường",
+        "nucleic acid làm giảm lượng nước",
+        "nucleic acid chỉ có ở thực vật"
+      ],
+      "answer": 0,
+      "explain": "Purin chuyển thành uric acid, lắng đọng ở khớp.",
+      "wrong_explain": {
+        "1": "Nucleic acid không chủ yếu làm tăng đường.",
+        "2": "Không liên quan đến nước.",
+        "3": "Nucleic acid có ở cả động vật và thực vật."
+      },
+      "id": "q14"
+    }
+  ]
+}

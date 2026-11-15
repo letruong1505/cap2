@@ -450,6 +450,46 @@
       "explain": "R = IA = √(4 + 9 + 36) = 7.",
       "dang": "Tìm tâm, bán kính mặt cầu và viết phương trình mặt cầu",
       "id": "q25"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phương trình mặt cầu tâm I(a; b; c), bán kính R là?",
+      "choices": [
+        "(x+a)²+(y+b)²+(z+c)² = R²",
+        "(x−a)²+(y−b)²+(z−c)² = R²",
+        "(x−a)²+(y−b)²+(z−c)² = R",
+        "(x−a)+(y−b)+(z−c) = R²"
+      ],
+      "answer": 1,
+      "explain": "Bình phương khoảng cách từ điểm đến tâm bằng bình phương bán kính.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đổi dấu toạ độ tâm.",
+        "2": "Dùng R thay cho R².",
+        "3": "Thiếu bình phương các hiệu."
+      },
+      "id": "q26"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Điểm M nằm ngoài mặt cầu (S) tâm I, bán kính R khi nào?",
+      "choices": [
+        "IM < R",
+        "IM = R",
+        "IM ≥ 0",
+        "IM > R"
+      ],
+      "answer": 3,
+      "explain": "Điểm nằm ngoài khi khoảng cách từ nó đến tâm lớn hơn bán kính.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đó là điểm nằm trong mặt cầu.",
+        "1": "Đó là điểm nằm trên mặt cầu.",
+        "2": "Điều này luôn đúng với mọi điểm nên không phân biệt được vị trí."
+      },
+      "id": "q27"
     }
   ]
 }

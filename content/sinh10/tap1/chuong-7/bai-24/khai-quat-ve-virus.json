@@ -1,0 +1,186 @@
+{
+  "id": "bai-24",
+  "grade": 10,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 10",
+  "chapter": "Chương 7. Virus",
+  "lesson": "Bài 24. Khái quát về virus",
+  "section": "",
+  "bookPage": 141,
+  "requirements": [
+    "Nêu được khái niệm và các đặc điểm của virus.",
+    "Trình bày được cấu tạo của virus.",
+    "Trình bày được các giai đoạn nhân lên của virus trong tế bào chủ."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Virus là thực thể chưa có cấu tạo tế bào, kích thước khoảng 20–300 nm, chỉ nhân lên trong tế bào sống. Ngoài tế bào, virus không sinh sản và không chuyển hoá, nên được xem là vật kí sinh bắt buộc. Đã xác định trên 2 000 loại virus."
+    },
+    {
+      "type": "text",
+      "content": "Cấu tạo chung: lõi là nucleic acid (DNA hoặc RNA, mạch đơn hoặc kép, một hoặc vài đoạn) và vỏ capsid là protein. Một số virus động vật có thêm vỏ ngoài là màng kép phospholipid với gai glycoprotein giúp bám vào tế bào chủ. Hạt virus hoàn chỉnh gọi là virion."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b24-cau-tao-virus.svg",
+      "caption": "Cấu tạo hạt virus có và không có vỏ ngoài"
+    },
+    {
+      "type": "text",
+      "content": "Virus có thể kí sinh ở vi khuẩn, nấm, thực vật và động vật; mỗi loại chỉ lây nhiễm một số loài nhất định gọi là phổ vật chủ. Nơi virus tồn tại tự nhiên là ổ chứa, có thể không biểu hiện triệu chứng nhưng vẫn phát tán bệnh."
+    },
+    {
+      "type": "text",
+      "content": "Nhân lên của virus trải qua năm giai đoạn: (1) hấp phụ lên thụ thể tế bào chủ; (2) xâm nhập, đưa vật chất di truyền vào tế bào; (3) tổng hợp các thành phần của virus nhờ enzyme của tế bào chủ; (4) lắp ráp lõi nucleic acid với vỏ protein thành hạt hoàn chỉnh; (5) giải phóng ra ngoài."
+    },
+    {
+      "type": "text",
+      "content": "Có hai chu kì: chu kì sinh tan (năm giai đoạn, tế bào bị phá huỷ khi virus được giải phóng) và chu kì tiềm tan (DNA virus tích hợp vào hệ gene tế bào, nhân lên cùng phân bào, rồi thoát ra khi gặp điều kiện bất lợi). Thể thực khuẩn có thể theo cả hai chu kì."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b24-chu-ki-nhan-len.svg",
+      "caption": "Chu kì sinh tan và chu kì tiềm tan của thể thực khuẩn"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Vì sao virus không được xem là một vật sống hoàn chỉnh?",
+      "steps": [
+        "Ngoài tế bào chủ, virus không có khả năng sinh sản và chuyển hoá vì thiếu các thành phần cấu tạo của tế bào."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Vì sao chế phẩm thể thực khuẩn phun lên rau quả có thể bảo vệ lâu dài?",
+      "steps": [
+        "Thể thực khuẩn chỉ tiêu diệt vi khuẩn gây hỏng rau quả, có tính đặc hiệu nên không gây hại cho người và các sinh vật khác."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thành phần nào sau đây không có trong cấu tạo chung của virus?",
+      "choices": [
+        "ribosome",
+        "lõi nucleic acid",
+        "vỏ capsid",
+        "vỏ ngoài ở một số loại"
+      ],
+      "answer": 0,
+      "explain": "Virus không có ribosome.",
+      "wrong_explain": {
+        "1": "Lõi nucleic acid là thành phần chung.",
+        "2": "Vỏ capsid là thành phần chung.",
+        "3": "Vỏ ngoài có ở một số virus động vật."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Virus được gọi là vật kí sinh bắt buộc vì:",
+      "choices": [
+        "chỉ nhân lên được trong tế bào sống",
+        "có màng tế bào riêng",
+        "tự tổng hợp ATP",
+        "có ribosome riêng"
+      ],
+      "answer": 0,
+      "explain": "Virus chỉ nhân lên trong tế bào chủ.",
+      "wrong_explain": {
+        "1": "Virus không có cấu tạo tế bào.",
+        "2": "Virus không tự tổng hợp ATP.",
+        "3": "Virus không có ribosome."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Gai glycoprotein trên vỏ ngoài của virus có vai trò:",
+      "choices": [
+        "giúp virus liên kết với thụ thể trên tế bào chủ",
+        "tổng hợp ATP",
+        "phân giải DNA tế bào chủ",
+        "tạo lõi nucleic acid"
+      ],
+      "answer": 0,
+      "explain": "Gai glycoprotein nhận biết và bám thụ thể.",
+      "wrong_explain": {
+        "1": "ATP không do gai glycoprotein tạo.",
+        "2": "Không phân giải DNA tế bào chủ.",
+        "3": "Lõi nucleic acid không do gai tạo."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong chu kì sinh tan, tế bào chủ thường bị:",
+      "choices": [
+        "phá huỷ khi virus được giải phóng",
+        "tích hợp DNA virus vào hệ gene",
+        "phân chia cùng virus",
+        "không bị ảnh hưởng"
+      ],
+      "answer": 0,
+      "explain": "Chu kì sinh tan kết thúc bằng phá huỷ tế bào.",
+      "wrong_explain": {
+        "1": "Tích hợp là đặc điểm chu kì tiềm tan.",
+        "2": "Phân chia cùng virus là đặc điểm chu kì tiềm tan.",
+        "3": "Tế bào bị ảnh hưởng trong chu kì sinh tan."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điểm khác nhau chủ yếu giữa chu kì sinh tan và tiềm tan là:",
+      "choices": [
+        "tiềm tan có giai đoạn tích hợp DNA virus vào hệ gene tế bào chủ",
+        "sinh tan có tích hợp DNA",
+        "tiềm tan phá huỷ tế bào ngay",
+        "không có khác biệt"
+      ],
+      "answer": 0,
+      "explain": "Đặc điểm tích hợp làm khác biệt rõ.",
+      "wrong_explain": {
+        "1": "Sinh tan không tích hợp.",
+        "2": "Tiềm tan không phá huỷ ngay.",
+        "3": "Có khác biệt rõ ràng."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Để ngăn virus xâm nhập vào tế bào, nên tác động vào giai đoạn nào?",
+      "choices": [
+        "hấp phụ, vì virus cần bám thụ thể để vào tế bào",
+        "giải phóng, khi virus đã ra ngoài",
+        "lắp ráp, khi virus đã hoàn chỉnh",
+        "hấp phụ và xâm nhập đều không cần"
+      ],
+      "answer": 0,
+      "explain": "Ngăn hấp phụ là cách hiệu quả ngay từ đầu.",
+      "wrong_explain": {
+        "1": "Khi giải phóng virus đã lây sang tế bào khác.",
+        "2": "Lắp ráp đã tạo virus mới.",
+        "3": "Hai giai đoạn đầu là then chốt."
+      },
+      "id": "q06"
+    }
+  ]
+}

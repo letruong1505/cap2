@@ -1,0 +1,269 @@
+{
+  "id": "bai-13",
+  "grade": 10,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 10",
+  "chapter": "Chương 4. Chuyển hoá năng lượng trong tế bào",
+  "lesson": "Bài 13. Khái quát về chuyển hoá vật chất và năng lượng. Enzyme",
+  "section": "",
+  "bookPage": 78,
+  "requirements": [
+    "Phân biệt được các dạng năng lượng trong chuyển hoá năng lượng ở tế bào.",
+    "Phân tích được cấu tạo và chức năng của ATP về giá trị năng lượng sinh học.",
+    "Nêu được khái niệm, cấu trúc và cơ chế tác động của enzyme.",
+    "Phân tích được các yếu tố ảnh hưởng đến hoạt tính xúc tác của enzyme."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Năng lượng là khả năng sinh công hoặc tạo nên sự chuyển động của vật chất. Trong tế bào, năng lượng tồn tại ở hai dạng: động năng (nhiệt năng, cơ năng, điện năng) và thế năng (năng lượng trong liên kết hoá học, chênh lệch điện thế và nồng độ giữa hai bên màng)."
+    },
+    {
+      "type": "text",
+      "content": "ATP là \"đồng tiền\" năng lượng của tế bào: gồm adenine, đường ribose và ba gốc phosphate. Liên kết phosphate ngoài cùng dễ bị phá vỡ, giải phóng năng lượng, ATP chuyển thành ADP; khi phá cả hai liên kết cao năng, ATP chuyển thành AMP. ATP được tạo ra và dùng ngay trong tế bào nên đóng vai trò như một viên pin sạc."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b13-chu-trinh-atp.svg",
+      "caption": "Chu trình ATP trong tế bào"
+    },
+    {
+      "type": "text",
+      "content": "Chuyển hoá vật chất là tập hợp các phản ứng hoá học làm biến đổi chất; chuyển hoá năng lượng là sự chuyển đổi năng lượng từ dạng này sang dạng khác và tuân theo quy luật nhiệt động học. Phản ứng tổng hợp (đồng hoá) tiêu tốn năng lượng, phản ứng phân giải (dị hoá) giải phóng năng lượng. Hầu hết phản ứng trong tế bào là oxy hoá khử và cần enzyme xúc tác."
+    },
+    {
+      "type": "text",
+      "content": "Enzyme là chất xúc tác sinh học, làm tăng tốc độ phản ứng trong điều kiện sinh lí và không bị biến đổi sau phản ứng. Phần lớn enzyme là protein, một số cần cofactor (ion kim loại hoặc phân tử hữu cơ như heme, NAD, FAD, vitamin). Ribozyme là RNA có khả năng xúc tác."
+    },
+    {
+      "type": "text",
+      "content": "Trung tâm hoạt động của enzyme có cấu hình không gian phù hợp với cơ chất. Khi liên kết, cả hai thay đổi cấu hình để khớp chặt hơn (mô hình khớp cảm ứng). Sản phẩm tách ra và enzyme trở lại trạng thái ban đầu. Vì đặc hiệu như vậy, một enzyme thường chỉ xúc tác cho một cơ chất hoặc một nhóm phản ứng nhất định."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b13-enzyme-co-che.svg",
+      "caption": "Cơ chế hoạt động của enzyme theo ba giai đoạn"
+    },
+    {
+      "type": "text",
+      "content": "Enzyme làm giảm năng lượng hoạt hoá nên phản ứng xảy ra ở nhiệt độ, áp suất và pH bình thường của cơ thể. Nếu không có enzyme, các phản ứng sinh hoá quá chậm hoặc cần năng lượng cao làm tổn thương tế bào."
+    },
+    {
+      "type": "text",
+      "content": "Hoạt tính enzyme (lượng cơ chất chuyển đổi trong một phút) phụ thuộc nồng độ enzyme và cơ chất (đạt ngưỡng khi enzyme hoạt động hết công suất), pH (mỗi enzyme có khoảng pH tối ưu), nhiệt độ (có khoảng tối ưu; quá cao làm enzyme mất hoạt tính) và các chất hoạt hoá hoặc ức chế. Ức chế ngược: sản phẩm cuối quay lại ức chế enzyme đầu chuỗi khi đã đủ nhu cầu. Enzyme trong lysosome bất hoạt ở pH trung tính và hoạt hoá khi bơm H⁺ vào làm pH giảm."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Vì sao khi nhiệt độ tăng quá cao so với nhiệt độ tối ưu, hoạt tính enzyme giảm và có thể mất hẳn?",
+      "steps": [
+        "Nhiệt độ cao làm cấu hình không gian của enzyme, đặc biệt trung tâm hoạt động, bị biến đổi.",
+        "Enzyme không còn liên kết được với cơ chất nên không xúc tác được nữa."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phân tử ATP gồm các thành phần nào?",
+      "choices": [
+        "adenine, đường ribose và ba gốc phosphate",
+        "adenine, đường deoxyribose và một gốc phosphate",
+        "glucose và ba gốc phosphate",
+        "adenine và lipid"
+      ],
+      "answer": 0,
+      "explain": "ATP gồm adenine, ribose và ba gốc phosphate.",
+      "wrong_explain": {
+        "1": "ATP chứa ribose, không phải deoxyribose; và có ba gốc phosphate.",
+        "2": "ATP không chứa glucose.",
+        "3": "ATP không chứa lipid."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao ATP được gọi là \"đồng tiền\" năng lượng của tế bào?",
+      "choices": [
+        "được tạo ra và sử dụng ngay cho các hoạt động sống",
+        "luôn được dự trữ lâu dài trong tế bào",
+        "chỉ có trong tế bào thực vật",
+        "không có liên kết giàu năng lượng"
+      ],
+      "answer": 0,
+      "explain": "ATP được sinh ra và dùng ngay để cung cấp năng lượng.",
+      "wrong_explain": {
+        "1": "ATP không dự trữ lâu dài; dự trữ dài hạn là glycogen, lipid.",
+        "2": "ATP có ở mọi tế bào sống.",
+        "3": "ATP có liên kết cao năng."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Enzyme là chất có bản chất chủ yếu là:",
+      "choices": [
+        "protein",
+        "lipid",
+        "glucose",
+        "ion kim loại"
+      ],
+      "answer": 0,
+      "explain": "Phần lớn enzyme là protein.",
+      "wrong_explain": {
+        "1": "Lipid không phải enzyme chủ yếu.",
+        "2": "Glucose là đường đơn.",
+        "3": "Ion kim loại chỉ là cofactor đi kèm."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Enzyme có tính đặc hiệu vì:",
+      "choices": [
+        "trung tâm hoạt động có cấu hình không gian phù hợp với một cơ chất nhất định",
+        "enzyme tiêu tốn nhiều năng lượng",
+        "enzyme luôn bị biến đổi sau phản ứng",
+        "enzyme không cần cơ chất"
+      ],
+      "answer": 0,
+      "explain": "Trung tâm hoạt động chỉ khớp với cơ chất tương ứng.",
+      "wrong_explain": {
+        "1": "Tiêu tốn năng lượng không quyết định tính đặc hiệu.",
+        "2": "Enzyme không bị biến đổi sau phản ứng.",
+        "3": "Enzyme cần cơ chất để xúc tác."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vai trò của enzyme trong chuyển hoá là:",
+      "choices": [
+        "làm giảm năng lượng hoạt hoá để phản ứng xảy ra nhanh ở điều kiện bình thường",
+        "tăng nhiệt độ cơ thể",
+        "tiêu thụ hết ATP",
+        "thay đổi thành phần DNA"
+      ],
+      "answer": 0,
+      "explain": "Enzyme giảm năng lượng hoạt hoá.",
+      "wrong_explain": {
+        "1": "Enzyme không làm tăng nhiệt độ.",
+        "2": "Enzyme không tiêu thụ ATP làm nguyên liệu.",
+        "3": "Enzyme không thay đổi DNA."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi nồng độ cơ chất đã vượt ngưỡng, tốc độ phản ứng không tăng vì:",
+      "choices": [
+        "enzyme đã hoạt động hết công suất",
+        "cơ chất bị phân huỷ hết",
+        "enzyme bị bất hoạt hoàn toàn",
+        "pH tăng lên quá cao"
+      ],
+      "answer": 0,
+      "explain": "Khi toàn bộ enzyme bão hoà, tốc độ không tăng thêm.",
+      "wrong_explain": {
+        "1": "Cơ chất vẫn còn khi đạt ngưỡng.",
+        "2": "Enzyme chưa bị bất hoạt.",
+        "3": "pH không phải lí do chính."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Mỗi enzyme thường có khoảng pH tối ưu. Ngoài khoảng đó:",
+      "choices": [
+        "hoạt tính giảm hoặc bị bất hoạt",
+        "hoạt tính tăng mạnh",
+        "enzyme được tổng hợp thêm",
+        "cơ chất được tạo ra"
+      ],
+      "answer": 0,
+      "explain": "pH ngoài khoảng tối ưu làm biến đổi cấu hình enzyme.",
+      "wrong_explain": {
+        "1": "Hoạt tính không tăng khi ra ngoài khoảng tối ưu.",
+        "2": "pH không kích thích tổng hợp enzyme.",
+        "3": "pH không tạo cơ chất."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ức chế ngược trong chuyển hoá có nghĩa là:",
+      "choices": [
+        "sản phẩm cuối quay lại ức chế enzyme ở đầu chuỗi",
+        "sản phẩm cuối kích hoạt tất cả enzyme",
+        "cơ chất ngăn enzyme liên kết",
+        "enzyme tự tổng hợp sản phẩm"
+      ],
+      "answer": 0,
+      "explain": "Sản phẩm dư thừa ức chế enzyme đầu chuỗi để dừng tổng hợp.",
+      "wrong_explain": {
+        "1": "Sản phẩm cuối không kích hoạt toàn bộ enzyme.",
+        "2": "Đây không phải ức chế ngược.",
+        "3": "Enzyme không tự tổng hợp sản phẩm."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi thịt được để ở nhiệt độ cao, enzyme trong thịt bị mất hoạt tính. Điều này liên quan đến:",
+      "choices": [
+        "cấu hình enzyme bị biến đổi do nhiệt, mất khả năng xúc tác",
+        "enzyme tăng số lượng nhanh",
+        "ATP được tổng hợp nhiều hơn",
+        "cơ chất được thêm vào"
+      ],
+      "answer": 0,
+      "explain": "Nhiệt cao làm biến đổi cấu hình enzyme.",
+      "wrong_explain": {
+        "1": "Nhiệt cao không làm tăng số lượng enzyme.",
+        "2": "Không liên quan trực tiếp đến tổng hợp ATP.",
+        "3": "Không có cơ chất được thêm vào."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong trồng trọt và chăn nuôi, vì sao cần bổ sung nguyên tố vi lượng và vitamin?",
+      "choices": [
+        "vì nhiều enzyme cần cofactor là ion kim loại hoặc vitamin để hoạt động",
+        "vì vi lượng làm tăng nhiệt độ cơ thể",
+        "vì vitamin là cơ chất trực tiếp tạo đường",
+        "vì vi lượng thay thế hoàn toàn ATP"
+      ],
+      "answer": 0,
+      "explain": "Cofactor và coenzyme cần cho hoạt động xúc tác của enzyme.",
+      "wrong_explain": {
+        "1": "Vi lượng không trực tiếp làm tăng nhiệt.",
+        "2": "Vitamin thường là cofactor, không phải cơ chất tạo đường.",
+        "3": "Vi lượng không thay thế ATP."
+      },
+      "id": "q10"
+    }
+  ]
+}

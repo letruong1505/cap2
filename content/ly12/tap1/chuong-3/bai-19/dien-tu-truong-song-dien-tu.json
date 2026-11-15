@@ -39,7 +39,17 @@
       "content": "Trong đó c là tốc độ ánh sáng trong chân không, T là chu kì và f là tần số của sóng điện từ. Sóng điện từ có tốc độ truyền bằng tốc độ ánh sáng trong chân không."
     }
   ],
-  "examples": [],
+  "examples": [
+    {
+      "problem": "Ví dụ 1: Sóng điện từ có tần số f = 100 MHz lan truyền trong chân không với tốc độ c = 3·10⁸ m/s. Tính bước sóng λ (m).",
+      "steps": [
+        "Quan hệ giữa tốc độ, bước sóng và tần số: c = λ·f, suy ra λ = c/f.",
+        "λ = 3·10⁸ / 10⁸ = 3 m."
+      ],
+      "expr": "300000000/100000000",
+      "answer": "3"
+    }
+  ],
   "items": [
     {
       "id": "q01",
@@ -240,6 +250,26 @@
         "1": "T/c không phải công thức bước sóng.",
         "2": "Cộng c và T không có ý nghĩa."
       }
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Tại một điểm trên đường truyền sóng điện từ, vectơ E và B có đặc điểm gì?",
+      "choices": [
+        "Dao động ngược pha nhau",
+        "Song song với phương truyền sóng",
+        "Dao động cùng pha, vuông góc với nhau và vuông góc với phương truyền sóng",
+        "Không vuông góc với nhau"
+      ],
+      "answer": 2,
+      "explain": "Trong sóng điện từ, E và B luôn đồng pha, vuông góc với nhau và với phương truyền sóng.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Sóng điện từ có E và B đồng pha, không ngược pha.",
+        "1": "Sóng điện từ là sóng ngang: E và B đều vuông góc với phương truyền.",
+        "3": "E và B luôn vuông góc với nhau tại mỗi điểm."
+      },
+      "id": "q11"
     }
   ]
 }

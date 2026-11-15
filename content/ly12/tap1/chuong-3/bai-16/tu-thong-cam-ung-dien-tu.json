@@ -69,7 +69,17 @@
       }
     }
   ],
-  "examples": [],
+  "examples": [
+    {
+      "problem": "Ví dụ 1: Cuộn dây N = 100 vòng, diện tích mỗi vòng S = 0,01 m², vectơ pháp tuyến song song với B. Cảm ứng từ giảm đều từ 0,2 T xuống 0 trong 0,5 s. Tính suất điện động cảm ứng trung bình (V).",
+      "steps": [
+        "Độ biến thiên từ thông mỗi vòng: |ΔΦ| = ΔB·S·cos 0° = 0,2 · 0,01 = 0,002 Wb.",
+        "Suất điện động: |e| = N·|ΔΦ|/Δt = 100 · 0,002 / 0,5 = 0,4 V."
+      ],
+      "expr": "100*2/1000*2",
+      "answer": "0.4"
+    }
+  ],
   "items": [
     {
       "id": "q01",
