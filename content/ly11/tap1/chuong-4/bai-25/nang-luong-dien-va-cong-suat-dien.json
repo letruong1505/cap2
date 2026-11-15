@@ -1,0 +1,350 @@
+{
+  "id": "bai-25",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 4. Dòng điện. Mạch điện",
+  "lesson": "Bài 25. Năng lượng điện và công suất điện",
+  "section": "",
+  "bookPage": 106,
+  "requirements": [
+    "Nêu được công của dòng điện, công suất điện, định luật Joule – Lenz, công suất và hiệu suất của nguồn.",
+    "Vận dụng A = UIt, P = UI, Q = I²Rt để tính điện năng tiêu thụ, công suất, tiền điện."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khi có dòng điện chạy qua đoạn mạch, điện năng được chuyển hoá thành các dạng năng lượng khác (nhiệt, quang, cơ,...). Công của dòng điện (điện năng tiêu thụ) trên đoạn mạch: A = UIt (J). Công suất điện: P = A/t = UI (W)."
+    },
+    {
+      "type": "formula",
+      "content": "A = UIt;   P = UI;   đoạn mạch chỉ có điện trở R: P = I²R = U²/R;   nhiệt lượng toả ra (định luật Joule – Lenz): Q = I²Rt."
+    },
+    {
+      "type": "text",
+      "content": "Đơn vị: 1 W = 1 J/s; 1 kWh = 3,6·10⁶ J. Điện năng tiêu thụ ghi trên công tơ điện bằng kWh. Công suất định mức của thiết bị ghi trên thiết bị (ví dụ bóng đèn 220 V – 60 W). Thiết bị hoạt động bình thường khi U bằng hiệu điện thế định mức."
+    },
+    {
+      "type": "formula",
+      "content": "Công suất của nguồn: P_ng = EI;   công suất mạch ngoài: P = UI = I²R;   công suất hao phí trong nguồn: I²r;   hiệu suất H = P/P_ng = U/E."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b25-cong-suat-theo-r.svg",
+      "caption": "Công suất mạch ngoài P = E²R/(R + r)² theo R: đạt cực đại P_max = E²/(4r) khi R = r"
+    },
+    {
+      "type": "text",
+      "content": "Tiết kiệm điện: dùng thiết bị hiệu suất cao (đèn LED), tắt thiết bị không dùng, chọn công suất phù hợp, dùng dây dẫn tiết diện đủ lớn để giảm hao phí nhiệt trên đường dây."
+    },
+    {
+      "type": "method",
+      "title": "Tính điện năng tiêu thụ, công suất, tiền điện",
+      "when": "Cho U, I, t hoặc công suất thiết bị và thời gian dùng; giá điện 1 kWh.",
+      "steps": [
+        "P = UI (W); đổi sang kW (chia 1000).",
+        "Điện năng A = Pt; t đổi giờ để ra kWh (hoặc giây để ra J).",
+        "Tiền = số kWh × giá 1 kWh.",
+        "Cộng nhiều thiết bị."
+      ],
+      "notes": [
+        "1 kWh = 3,6·10⁶ J.",
+        "Nhớ đổi W → kW và phút → giờ."
+      ],
+      "sample": {
+        "problem": "Bóng đèn 60 W dùng 5 giờ mỗi ngày trong 30 ngày, giá 2000 đồng/kWh. Tính tiền điện.",
+        "steps": [
+          "A = 0,06·5·30 = 9 kWh.",
+          "Tiền = 9·2000 = 18 000 đồng."
+        ],
+        "answer": "18 000 đồng"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Công suất và nhiệt lượng trên điện trở",
+      "when": "Cho R, I (hoặc U) và thời gian; tính P, Q; hoặc tính thời gian đun nước.",
+      "steps": [
+        "P = I²R = U²/R.",
+        "Q = I²Rt = Pt.",
+        "Nếu cho đun nước: Q = mcΔt; bỏ qua hao phí thì Q = A.",
+        "Tính hiệu suất H = Q_có ích/A."
+      ],
+      "notes": [
+        "Công suất tỉ lệ I² (R cố định).",
+        "Dây dẫn nóng lên do hiệu ứng Joule."
+      ],
+      "sample": {
+        "problem": "Ấm điện 1000 W đun 2 kg nước từ 20 °C đến 100 °C (c = 4200 J/kg·K), H = 100%. Tính thời gian.",
+        "steps": [
+          "Q = mcΔt = 2·4200·80 = 672 000 J.",
+          "t = Q/P = 672 s."
+        ],
+        "answer": "672 s"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Công suất và hiệu suất của nguồn, bài toán R để P cực đại",
+      "when": "Mạch kín (E, r, R), hỏi công suất mạch ngoài, công suất cực đại, hiệu suất.",
+      "steps": [
+        "P = I²R = E²R/(R + r)².",
+        "P_max = E²/(4r) khi R = r (khi đó H = 50%).",
+        "Công suất nguồn P_ng = EI; hao phí I²r.",
+        "Hiệu suất H = R/(R + r)."
+      ],
+      "notes": [
+        "R lớn thì H lớn nhưng P có thể nhỏ.",
+        "Hai giá trị R khác nhau cho cùng P thoả R₁R₂ = r²."
+      ],
+      "sample": {
+        "problem": "E = 12 V, r = 2 Ω. Tìm R để P cực đại và P_max.",
+        "steps": [
+          "R = r = 2 Ω.",
+          "P_max = E²/(4r) = 144/8 = 18 W."
+        ],
+        "answer": "R = 2 Ω; P_max = 18 W"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Bóng đèn 60 W dùng 5 giờ/ngày × 30 ngày. Điện năng (kWh)?",
+      "steps": [
+        "A = 0,06·5·30.",
+        "= 9 kWh."
+      ],
+      "expr": "0.06*5*30",
+      "answer": "9"
+    },
+    {
+      "problem": "Ấm 1000 W đun 2 kg nước từ 20 đến 100 °C (c = 4200). Q (J)?",
+      "steps": [
+        "Q = mcΔt.",
+        "= 672 000 J."
+      ],
+      "expr": "2*4200*80",
+      "answer": "672000"
+    },
+    {
+      "problem": "E = 12 V, r = 2 Ω. P_max (W) = E²/(4r)?",
+      "steps": [
+        "P_max = 144/8.",
+        "= 18 W."
+      ],
+      "expr": "(12*12)/(4*2)",
+      "answer": "18"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "U = 12 V, I = 0,5 A. P (W):",
+      "expr": "12*0.5",
+      "answer": "6",
+      "explain": "P = 6 W.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "P = 60 W, t = 5 h. A (Wh):",
+      "expr": "60*5",
+      "answer": "300",
+      "explain": "A = 300 Wh = 0,3 kWh.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Điện trở R = 10 Ω, I = 2 A. P (W):",
+      "expr": "2*2*10",
+      "answer": "40",
+      "explain": "P = I²R = 40 W.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Công suất điện được tính bằng:",
+      "choices": [
+        "P = UI",
+        "P = U/I",
+        "P = I/U",
+        "P = U + I"
+      ],
+      "answer": 0,
+      "explain": "P = UI.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "1 kWh bằng:",
+      "choices": [
+        "3,6·10⁶ J",
+        "3600 J",
+        "1000 J",
+        "3,6·10³ J"
+      ],
+      "answer": 0,
+      "explain": "1 kWh = 1000 W·3600 s.",
+      "wrong_explain": {
+        "1": "Chưa đúng.",
+        "2": "Chưa đúng.",
+        "3": "Chưa đúng."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nhiệt lượng toả ra trên điện trở R khi có dòng I trong thời gian t là:",
+      "choices": [
+        "Q = I²Rt",
+        "Q = IRt",
+        "Q = IR²t",
+        "Q = I/Rt"
+      ],
+      "answer": 0,
+      "explain": "Định luật Joule – Lenz.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bóng đèn 60 W dùng 5 h/ngày × 30 ngày. Điện năng (kWh):",
+      "expr": "0.06*5*30",
+      "answer": "9",
+      "explain": "A = 9 kWh.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "9 kWh, giá 2000 đồng/kWh. Tiền điện (đồng):",
+      "expr": "9*2000",
+      "answer": "18000",
+      "explain": "18 000 đồng.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Điện trở R = 20 Ω, U = 40 V. P = U²/R (W):",
+      "expr": "(40*40)/(20)",
+      "answer": "80",
+      "explain": "P = 80 W.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Q = I²Rt với I = 2 A, R = 10 Ω, t = 5 s. Q (J):",
+      "expr": "2*2*10*5",
+      "answer": "200",
+      "explain": "Q = 200 J.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi dòng điện qua dây dẫn tăng gấp đôi (R không đổi) thì công suất toả nhiệt:",
+      "choices": [
+        "tăng 4 lần",
+        "tăng 2 lần",
+        "không đổi",
+        "giảm 2 lần"
+      ],
+      "answer": 0,
+      "explain": "P ∝ I².",
+      "wrong_explain": {
+        "1": "P ∝ I², không tăng 2.",
+        "2": "Có thay đổi.",
+        "3": "Không giảm."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ấm 1000 W đun 2 kg nước từ 20 °C lên 100 °C, H = 100%, c = 4200. Thời gian (s) = 672000/1000:",
+      "expr": "(2*4200*80)/(1000)",
+      "answer": "672",
+      "explain": "t = 672 s.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ấm 1000 W, H = 80%, cần Q = 672 000 J. Thời gian (s) = Q/(0,8·P):",
+      "expr": "(672000)/(0.8*1000)",
+      "answer": "840",
+      "explain": "t = 840 s.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "E = 12 V, r = 2 Ω, R = 2 Ω. P mạch ngoài (W):",
+      "expr": "(12*12*2)/((2+2)*(2+2))",
+      "answer": "18",
+      "explain": "P = 18 W.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hiệu suất nguồn khi R = r (nhập 1/2 → a/b):",
+      "expr": "1/2",
+      "answer": "1/2",
+      "explain": "H = R/(R + r) = 1/2.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Mạch có E = 12 V, r = 2 Ω; R₁ = 1 Ω và R₂ thoả R₁R₂ = r² cho cùng công suất. R₂ (Ω):",
+      "expr": "(2*2)/(1)",
+      "answer": "4",
+      "explain": "R₂ = 4 Ω.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Công suất mạch ngoài cực đại khi:",
+      "choices": [
+        "R = r",
+        "R = 0",
+        "R rất lớn",
+        "R = 2r"
+      ],
+      "answer": 0,
+      "explain": "P_max khi R = r.",
+      "wrong_explain": {
+        "1": "R = 0 thì P = 0.",
+        "2": "R lớn thì P nhỏ.",
+        "3": "Không phải cực đại."
+      },
+      "id": "q17"
+    }
+  ]
+}

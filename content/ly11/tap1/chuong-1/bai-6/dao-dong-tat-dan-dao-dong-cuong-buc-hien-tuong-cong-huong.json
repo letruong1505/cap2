@@ -1,0 +1,355 @@
+{
+  "id": "bai-6",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 1. Dao động",
+  "lesson": "Bài 6. Dao động tắt dần. Dao động cưỡng bức. Hiện tượng cộng hưởng",
+  "section": "",
+  "bookPage": 24,
+  "requirements": [
+    "Nêu được đặc điểm của dao động tắt dần, dao động cưỡng bức và hiện tượng cộng hưởng.",
+    "Giải thích và vận dụng cộng hưởng trong đời sống; tính điều kiện cộng hưởng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dao động tắt dần là dao động có biên độ giảm dần theo thời gian do lực cản của môi trường. Lực ma sát và lực cản làm cơ năng giảm dần và chuyển hoá thành nhiệt. Lực cản càng lớn thì dao động tắt dần càng nhanh."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b6-tat-dan.svg",
+      "caption": "Đồ thị li độ – thời gian của dao động tắt dần: biên độ giảm dần (đường bao)"
+    },
+    {
+      "type": "text",
+      "content": "Dao động duy trì: bổ sung năng lượng đúng lúc để dao động không tắt dần mà vẫn giữ tần số riêng (ví dụ con lắc đồng hồ). Dao động cưỡng bức là dao động chịu tác dụng của ngoại lực tuần hoàn F = F₀cos(ωt). Sau giai đoạn quá độ, dao động cưỡng bức có tần số bằng tần số ngoại lực."
+    },
+    {
+      "type": "text",
+      "content": "Biên độ dao động cưỡng bức phụ thuộc vào biên độ của ngoại lực, lực cản của môi trường và độ chênh lệch giữa tần số ngoại lực f và tần số riêng f₀: |f − f₀| càng nhỏ thì biên độ càng lớn."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b6-cong-huong.svg",
+      "caption": "Đường cong cộng hưởng: biên độ dao động cưỡng bức đạt cực đại khi f = f₀; ma sát càng nhỏ thì đỉnh càng cao và nhọn"
+    },
+    {
+      "type": "formula",
+      "content": "Hiện tượng cộng hưởng: biên độ dao động cưỡng bức đạt giá trị cực đại khi tần số ngoại lực bằng tần số riêng của hệ: f = f₀."
+    },
+    {
+      "type": "text",
+      "content": "Cộng hưởng có lợi: hộp đàn, hộp cộng hưởng của nhạc cụ; máy đo tần số. Cộng hưởng có hại: cầu, nhà cao tầng, bộ phận máy bị rung mạnh khi tần số ngoại lực gần tần số riêng, có thể gãy đổ; cần thiết kế để tránh cộng hưởng hoặc tăng ma sát."
+    },
+    {
+      "type": "method",
+      "title": "Nhận biết loại dao động và điều kiện cộng hưởng",
+      "when": "Đề mô tả một dao động và hỏi là tắt dần, duy trì hay cưỡng bức; khi nào xảy ra cộng hưởng.",
+      "steps": [
+        "Có ngoại lực tuần hoàn tác dụng liên tục: dao động cưỡng bức.",
+        "Biên độ giảm theo thời gian do ma sát: tắt dần.",
+        "Hệ tự bổ sung năng lượng để giữ biên độ: dao động duy trì.",
+        "Cộng hưởng khi f_ngoại lực = f₀ (hay chu kì ngoại lực bằng chu kì riêng)."
+      ],
+      "notes": [
+        "Tần số dao động cưỡng bức bằng tần số ngoại lực, không phải f₀.",
+        "Cộng hưởng rõ nhất khi ma sát nhỏ."
+      ],
+      "sample": {
+        "problem": "Hệ có tần số riêng 2 Hz, chịu lực cưỡng bức tần số 2 Hz. Biên độ thế nào?",
+        "steps": [
+          "f = f₀ = 2 Hz.",
+          "Xảy ra cộng hưởng: biên độ cực đại."
+        ],
+        "answer": "Cộng hưởng, biên độ cực đại"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Bài toán cộng hưởng về tốc độ (xe, người đi bộ, đoàn tàu)",
+      "when": "Vật chịu kích thích tuần hoàn do mấp mô, mối nối ray, bước chân; hỏi tốc độ gây cộng hưởng.",
+      "steps": [
+        "Xác định chu kì ngoại lực: T_ngoại = quãng đường giữa hai kích thích liên tiếp / tốc độ = d/v.",
+        "Cộng hưởng khi T_ngoại = T₀ (chu kì riêng).",
+        "Suy ra v = d/T₀.",
+        "Đổi đơn vị (m/s ↔ km/h: nhân 3,6)."
+      ],
+      "notes": [
+        "Tốc độ khác thì biên độ nhỏ hơn.",
+        "Giảm tốc độ hoặc tăng độ cứng giúp tránh cộng hưởng."
+      ],
+      "sample": {
+        "problem": "Mối nối ray cách nhau 12,5 m; toa tàu có chu kì dao động riêng 0,5 s. Tàu chạy với tốc độ nào thì rung mạnh nhất?",
+        "steps": [
+          "v = d/T₀ = 12,5/0,5 = 25 m/s.",
+          "25 m/s = 90 km/h."
+        ],
+        "answer": "25 m/s"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Biên độ giảm dần trong dao động tắt dần",
+      "when": "Biết sau mỗi chu kì biên độ giảm một tỉ lệ cố định; tìm biên độ sau n chu kì, số chu kì để biên độ giảm tới giá trị cho trước.",
+      "steps": [
+        "Biên độ sau mỗi chu kì nhân với q (0 < q < 1): A_n = A₀·qⁿ.",
+        "Tính A sau n chu kì bằng nhân liên tiếp.",
+        "Cơ năng tỉ lệ A²: W_n = W₀·q²ⁿ.",
+        "Tính phần trăm cơ năng mất: (1 − q²ⁿ)·100%."
+      ],
+      "notes": [
+        "Giảm 10% mỗi chu kì ⇒ q = 0,9.",
+        "Cơ năng giảm nhanh hơn biên độ vì tỉ lệ A²."
+      ],
+      "sample": {
+        "problem": "A₀ = 10 cm, mỗi chu kì biên độ giảm 10%. Biên độ sau 2 chu kì?",
+        "steps": [
+          "A₂ = 10·0,9·0,9.",
+          "= 8,1 cm."
+        ],
+        "answer": "8,1 cm"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Mối nối ray cách nhau 12,5 m, chu kì riêng của toa 0,5 s. Tốc độ gây cộng hưởng (m/s)?",
+      "steps": [
+        "v = d/T₀.",
+        "= 12,5/0,5 = 25 m/s."
+      ],
+      "expr": "(12.5)/(0.5)",
+      "answer": "25"
+    },
+    {
+      "problem": "A₀ = 10 cm, mỗi chu kì biên độ giảm 10%. Biên độ sau 2 chu kì (cm)?",
+      "steps": [
+        "A₂ = 10·0,9·0,9.",
+        "= 8,1 cm."
+      ],
+      "expr": "10*0.9*0.9",
+      "answer": "81/10"
+    },
+    {
+      "problem": "Tần số riêng 2 Hz. Lực cưỡng bức có tần số bao nhiêu (Hz) thì cộng hưởng?",
+      "steps": [
+        "Cộng hưởng khi f = f₀.",
+        "f = 2 Hz."
+      ],
+      "expr": "2",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hệ có tần số riêng f₀ = 2 Hz. Tần số lực cưỡng bức gây cộng hưởng (Hz) là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "f = f₀.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Dao động cưỡng bức có tần số của ngoại lực 5 Hz. Tần số dao động của hệ (Hz) là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Bằng tần số ngoại lực.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dao động tắt dần có:",
+      "choices": [
+        "biên độ giảm dần theo thời gian",
+        "tần số giảm dần",
+        "biên độ không đổi",
+        "năng lượng tăng dần"
+      ],
+      "answer": 0,
+      "explain": "Do lực cản.",
+      "wrong_explain": {
+        "1": "Tần số riêng không đổi.",
+        "2": "Biên độ giảm.",
+        "3": "Cơ năng giảm."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hiện tượng cộng hưởng xảy ra khi:",
+      "choices": [
+        "tần số ngoại lực bằng tần số riêng của hệ",
+        "tần số ngoại lực lớn hơn tần số riêng",
+        "có ma sát lớn",
+        "biên độ ngoại lực bằng 0"
+      ],
+      "answer": 0,
+      "explain": "f = f₀.",
+      "wrong_explain": {
+        "1": "Lớn hơn thì biên độ không cực đại.",
+        "2": "Ma sát lớn làm giảm cộng hưởng.",
+        "3": "Không có ngoại lực thì không có dao động cưỡng bức."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Biện pháp nào giúp giảm tác hại của cộng hưởng?",
+      "choices": [
+        "tăng ma sát (giảm chấn)",
+        "giảm khối lượng",
+        "tăng tần số ngoại lực bằng đúng f₀",
+        "không làm gì"
+      ],
+      "answer": 0,
+      "explain": "Ma sát lớn làm đỉnh cộng hưởng thấp.",
+      "wrong_explain": {
+        "1": "Không có tác dụng chắc chắn.",
+        "2": "Làm cộng hưởng mạnh hơn.",
+        "3": "Cộng hưởng có thể gây hại."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mối nối ray cách 12,5 m, toa có chu kì riêng 0,5 s. Tốc độ gây rung mạnh nhất (m/s):",
+      "expr": "(12.5)/(0.5)",
+      "answer": "25",
+      "explain": "v = d/T₀ = 25 m/s.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Xe qua đường mấp mô cách nhau 5 m, chu kì riêng của xe 0,5 s. Tốc độ gây cộng hưởng (m/s):",
+      "expr": "(5)/(0.5)",
+      "answer": "10",
+      "explain": "v = 10 m/s.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Biên độ ban đầu 10 cm, mỗi chu kì giảm 10%. Sau 2 chu kì (cm):",
+      "expr": "10*0.9*0.9",
+      "answer": "81/10",
+      "explain": "10·0,81 = 8,1 cm.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chu kì riêng T₀ = 0,25 s. Tần số riêng f₀ (Hz):",
+      "expr": "(1)/(0.25)",
+      "answer": "4",
+      "explain": "f₀ = 4 Hz.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cầu có tần số riêng 2 Hz. Bước chân đều của đoàn người có tần số gây cộng hưởng (bước/s):",
+      "expr": "2",
+      "answer": "2",
+      "explain": "f = f₀ = 2.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dao động của quả lắc đồng hồ được duy trì nhờ:",
+      "choices": [
+        "cơ cấu bổ sung năng lượng định kì",
+        "lực cản của không khí",
+        "ngoại lực biến thiên với tần số bất kì",
+        "tăng khối lượng"
+      ],
+      "answer": 0,
+      "explain": "Đó là dao động duy trì.",
+      "wrong_explain": {
+        "1": "Lực cản làm tắt dần.",
+        "2": "Không có ngoại lực bất kì.",
+        "3": "Khối lượng không bổ sung năng lượng."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tốc độ 25 m/s tương đương bao nhiêu km/h?",
+      "expr": "25*3.6",
+      "answer": "90",
+      "explain": "25·3,6 = 90 km/h.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Biên độ giảm 5% mỗi chu kì từ 20 cm. Sau 1 chu kì (cm):",
+      "expr": "20*0.95",
+      "answer": "19",
+      "explain": "19 cm.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cơ năng tỉ lệ A². A giảm còn 1/2 thì cơ năng còn bao nhiêu phần (nhập a/b)?",
+      "expr": "1/2*1/2",
+      "answer": "1/4",
+      "explain": "Cơ năng còn 1/4.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đoàn người đi đều qua cầu có chu kì riêng 0,5 s, mỗi bước dài 0,75 m. Tốc độ gây cộng hưởng (m/s):",
+      "expr": "(0.75)/(0.5)",
+      "answer": "3/2",
+      "explain": "v = d/T = 1,5 m/s.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Biên độ giảm 10% mỗi chu kì; sau 1 chu kì cơ năng còn bao nhiêu phần trăm (0,9² = 0,81)? Giá trị:",
+      "expr": "0.9*0.9*100",
+      "answer": "81",
+      "explain": "81%.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi f ngoại lực tăng từ rất nhỏ lên rất lớn qua f₀ thì biên độ dao động cưỡng bức:",
+      "choices": [
+        "tăng rồi giảm, cực đại tại f₀",
+        "giảm liên tục",
+        "tăng liên tục",
+        "không đổi"
+      ],
+      "answer": 0,
+      "explain": "Đường cong cộng hưởng.",
+      "wrong_explain": {
+        "1": "Có đỉnh tại f₀.",
+        "2": "Cũng có đỉnh.",
+        "3": "Phụ thuộc f."
+      },
+      "id": "q17"
+    }
+  ]
+}

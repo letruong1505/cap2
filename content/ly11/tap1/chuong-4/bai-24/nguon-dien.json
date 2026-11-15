@@ -1,0 +1,356 @@
+{
+  "id": "bai-24",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 4. Dòng điện. Mạch điện",
+  "lesson": "Bài 24. Nguồn điện",
+  "section": "",
+  "bookPage": 102,
+  "requirements": [
+    "Nêu được suất điện động, điện trở trong của nguồn điện và hiệu suất của nguồn điện.",
+    "Vận dụng định luật Ohm toàn mạch I = E/(R + r), U = E − Ir và ghép nguồn."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nguồn điện là thiết bị duy trì hiệu điện thế giữa hai cực để tạo dòng điện trong mạch. Nguồn điện thực hiện công đưa các điện tích dương từ cực âm sang cực dương (công của lực lạ). Suất điện động của nguồn: E = A/q (J/C = V), đo bằng hiệu điện thế giữa hai cực khi mạch hở. Nguồn điện có điện trở trong r."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b24-mach-kin.svg",
+      "caption": "Mạch kín gồm nguồn (E, r), điện trở ngoài R, ampe kế đo I và vôn kế đo hiệu điện thế mạch ngoài U"
+    },
+    {
+      "type": "formula",
+      "content": "Định luật Ohm toàn mạch: I = E/(R + r).   Hiệu điện thế hai cực: U = E − Ir = IR.   Hiệu suất của nguồn: H = U/E = R/(R + r)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b24-do-thi-u-i.svg",
+      "caption": "Đồ thị U theo I của nguồn điện: đường thẳng giảm dần; cắt trục tung tại E, độ dốc bằng −r, cắt trục hoành tại I = E/r (ngắn mạch)"
+    },
+    {
+      "type": "text",
+      "content": "Ghép nguồn nối tiếp (n nguồn giống nhau): E_b = nE, r_b = nr. Ghép song song (n nguồn giống nhau): E_b = E, r_b = r/n. Pin mới có E lớn; pin cũ có r lớn. Ngắn mạch: R = 0, I = E/r rất lớn, có thể gây hỏng nguồn."
+    },
+    {
+      "type": "method",
+      "title": "Tính cường độ dòng điện và hiệu điện thế mạch kín",
+      "when": "Cho E, r, R; yêu cầu I, U, hiệu suất.",
+      "steps": [
+        "I = E/(R + r).",
+        "U = IR (hoặc E − Ir).",
+        "H = U/E = R/(R + r).",
+        "Kiểm tra: U < E khi có dòng."
+      ],
+      "notes": [
+        "Khi mạch hở: I = 0, U = E.",
+        "Ngắn mạch: I = E/r."
+      ],
+      "sample": {
+        "problem": "E = 12 V, r = 1 Ω, R = 5 Ω. Tính I, U, H.",
+        "steps": [
+          "I = 12/(5 + 1) = 2 A.",
+          "U = IR = 10 V; H = 10/12 = 5/6 ≈ 83%."
+        ],
+        "answer": "I = 2 A; U = 10 V; H ≈ 83%"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Xác định E và r từ hai trạng thái (hoặc đồ thị U–I)",
+      "when": "Cho hai cặp (I₁, U₁), (I₂, U₂) hoặc đồ thị U–I.",
+      "steps": [
+        "Viết U₁ = E − I₁r, U₂ = E − I₂r.",
+        "Trừ vế: r = (U₁ − U₂)/(I₂ − I₁).",
+        "E = U₁ + I₁r.",
+        "Từ đồ thị: E là giao điểm với trục tung, r là độ lớn hệ số góc."
+      ],
+      "notes": [
+        "Khi I = 0 thì U = E.",
+        "Chú ý đơn vị."
+      ],
+      "sample": {
+        "problem": "I₁ = 1 A có U₁ = 4,5 V; I₂ = 2 A có U₂ = 3 V. Tìm r và E.",
+        "steps": [
+          "r = (4,5 − 3)/(2 − 1) = 1,5 Ω.",
+          "E = 4,5 + 1·1,5 = 6 V."
+        ],
+        "answer": "r = 1,5 Ω; E = 6 V"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Ghép nguồn điện",
+      "when": "Đề cho nhiều nguồn giống nhau ghép nối tiếp hoặc song song.",
+      "steps": [
+        "Nối tiếp n nguồn: E_b = nE, r_b = nr.",
+        "Song song n nguồn: E_b = E, r_b = r/n.",
+        "Dùng E_b, r_b trong định luật Ohm toàn mạch.",
+        "So sánh dòng điện của các cách ghép với cùng R."
+      ],
+      "notes": [
+        "Ghép nối tiếp tăng hiệu điện thế; ghép song song giảm điện trở trong.",
+        "Chỉ ghép song song các nguồn giống nhau."
+      ],
+      "sample": {
+        "problem": "3 pin E = 1,5 V, r = 0,5 Ω nối tiếp, mạch ngoài R = 3 Ω. Tính I.",
+        "steps": [
+          "E_b = 4,5 V; r_b = 1,5 Ω.",
+          "I = 4,5/(3 + 1,5) = 1 A."
+        ],
+        "answer": "I = 1 A"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "E = 12 V, r = 1 Ω, R = 5 Ω. I (A)?",
+      "steps": [
+        "I = E/(R + r).",
+        "= 12/6 = 2 A."
+      ],
+      "expr": "(12)/(5+1)",
+      "answer": "2"
+    },
+    {
+      "problem": "Cùng mạch. U giữa hai cực (V)?",
+      "steps": [
+        "U = IR = 2·5.",
+        "= 10 V."
+      ],
+      "expr": "2*5",
+      "answer": "10"
+    },
+    {
+      "problem": "I₁ = 1 A có U₁ = 4,5 V; I₂ = 2 A có U₂ = 3 V. r (Ω)?",
+      "steps": [
+        "r = (U₁ − U₂)/(I₂ − I₁).",
+        "= 1,5 Ω."
+      ],
+      "expr": "(4.5-3)/(2-1)",
+      "answer": "3/2"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "E = 12 V, r = 1 Ω, R = 5 Ω. I (A):",
+      "expr": "(12)/(5+1)",
+      "answer": "2",
+      "explain": "I = 2 A.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "I = 2 A, R = 5 Ω. U mạch ngoài (V):",
+      "expr": "2*5",
+      "answer": "10",
+      "explain": "U = 10 V.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "E = 6 V, r = 2 Ω; ngắn mạch. I (A):",
+      "expr": "6/2",
+      "answer": "3",
+      "explain": "I = E/r = 3 A.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Suất điện động của nguồn điện là:",
+      "choices": [
+        "đại lượng đo bằng công của lực lạ trên một đơn vị điện tích dương",
+        "hiệu điện thế khi có dòng điện chạy qua",
+        "dòng điện qua nguồn",
+        "điện trở của nguồn"
+      ],
+      "answer": 0,
+      "explain": "E = A/q.",
+      "wrong_explain": {
+        "1": "Đó là U.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Biểu thức định luật Ohm cho toàn mạch là:",
+      "choices": [
+        "I = E/(R + r)",
+        "I = E/R",
+        "I = E·(R + r)",
+        "I = U·R"
+      ],
+      "answer": 0,
+      "explain": "Toàn mạch gồm R và r.",
+      "wrong_explain": {
+        "1": "Thiếu r.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi mạch hở, hiệu điện thế giữa hai cực của nguồn bằng:",
+      "choices": [
+        "suất điện động E",
+        "0",
+        "E/2",
+        "Ir"
+      ],
+      "answer": 0,
+      "explain": "I = 0 nên U = E.",
+      "wrong_explain": {
+        "1": "Mạch kín chưa chắc 0.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "E = 12 V, r = 1 Ω, R = 5 Ω. Hiệu suất H (nhập a/b): R/(R + r)",
+      "expr": "(5)/(5+1)",
+      "answer": "5/6",
+      "explain": "H = 5/6 ≈ 83%.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "E = 9 V, r = 1 Ω, R = 2 Ω. I (A):",
+      "expr": "(9)/(2+1)",
+      "answer": "3",
+      "explain": "I = 3 A.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "E = 9 V, r = 1 Ω, R = 2 Ω. U (V):",
+      "expr": "3*2",
+      "answer": "6",
+      "explain": "U = 6 V.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "I₁ = 1 A có U₁ = 4,5 V; I₂ = 2 A có U₂ = 3 V. r (Ω):",
+      "expr": "(4.5-3)/(2-1)",
+      "answer": "3/2",
+      "explain": "r = 1,5 Ω.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Với r = 1,5 Ω, I₁ = 1 A, U₁ = 4,5 V. E (V):",
+      "expr": "4.5+1*1.5",
+      "answer": "6",
+      "explain": "E = 6 V.",
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Pin cũ so với pin mới thường có:",
+      "choices": [
+        "điện trở trong lớn hơn",
+        "suất điện động lớn hơn",
+        "điện trở trong nhỏ hơn",
+        "không đổi"
+      ],
+      "answer": 0,
+      "explain": "Pin cũ có r lớn.",
+      "wrong_explain": {
+        "1": "E giảm.",
+        "2": "r tăng.",
+        "3": "Có thay đổi."
+      },
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "3 pin E = 1,5 V, r = 0,5 Ω nối tiếp, R = 3 Ω. I (A) = 3·1,5/(3 + 3·0,5):",
+      "expr": "(3*1.5)/(3+3*0.5)",
+      "answer": "1",
+      "explain": "I = 1 A.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "4 pin giống nhau E = 1,5 V, r = 1 Ω ghép song song. r_b (Ω):",
+      "expr": "1/4",
+      "answer": "1/4",
+      "explain": "r_b = r/n = 0,25 Ω.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mạch ngoài R = 4 Ω, nguồn E = 12 V, r = 2 Ω. Công suất mạch ngoài P = I²R (W):",
+      "expr": "((12)/(4+2))*((12)/(4+2))*4",
+      "answer": "16",
+      "explain": "I = 2 A; P = 16 W.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "E = 6 V, r = 1 Ω. Cường độ khi R = 5 Ω (A):",
+      "expr": "(6)/(5+1)",
+      "answer": "1",
+      "explain": "I = 1 A.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Nguồn E = 12 V, r = 2 Ω. Với R = 2 Ω, công suất mạch ngoài (W): P = E²R/(R + r)²:",
+      "expr": "(12*12*2)/((2+2)*(2+2))",
+      "answer": "18",
+      "explain": "P = 18 W.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đồ thị U theo I của nguồn điện là:",
+      "choices": [
+        "đường thẳng dốc xuống, cắt trục tung tại E",
+        "đường thẳng đi lên",
+        "đường parabol",
+        "đường nằm ngang"
+      ],
+      "answer": 0,
+      "explain": "U = E − Ir.",
+      "wrong_explain": {
+        "1": "Hệ số góc âm.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "id": "q18"
+    }
+  ]
+}

@@ -1,0 +1,349 @@
+{
+  "id": "bai-5",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 1. Dao động",
+  "lesson": "Bài 5. Động năng. Thế năng. Sự chuyển hoá năng lượng trong dao động điều hoà",
+  "section": "",
+  "bookPage": 20,
+  "requirements": [
+    "Viết được biểu thức động năng, thế năng, cơ năng của vật dao động điều hoà.",
+    "Mô tả được sự chuyển hoá giữa động năng và thế năng; tính cơ năng, động năng, thế năng tại một vị trí."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khi vật dao động điều hoà, động năng và thế năng của vật biến thiên tuần hoàn theo thời gian nhưng cơ năng được bảo toàn (khi không có ma sát)."
+    },
+    {
+      "type": "formula",
+      "content": "Động năng: W_đ = ½mv² = ½mω²A²sin²(ωt + φ).   Thế năng (con lắc lò xo): W_t = ½kx² = ½mω²A²cos²(ωt + φ)."
+    },
+    {
+      "type": "formula",
+      "content": "Cơ năng: W = W_đ + W_t = ½kA² = ½mω²A² = ½mv_max² = hằng số."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b5-nang-luong-theo-x.svg",
+      "caption": "Đồ thị thế năng (parabol đỏ), động năng (parabol xanh lá) và cơ năng (đường ngang xanh dương) theo li độ x; tại x = ±A/√2 thì W_đ = W_t = W/2"
+    },
+    {
+      "type": "text",
+      "content": "Chuyển hoá năng lượng: từ biên về VTCB thế năng giảm, động năng tăng; từ VTCB ra biên động năng giảm, thế năng tăng. Tại VTCB: W_đ = W (cực đại), W_t = 0. Tại biên: W_t = W, W_đ = 0."
+    },
+    {
+      "type": "text",
+      "content": "Động năng và thế năng biến thiên tuần hoàn với tần số góc 2ω (tần số 2f, chu kì T/2). Khoảng thời gian giữa hai lần liên tiếp W_đ = W_t là T/4."
+    },
+    {
+      "type": "method",
+      "title": "Tính cơ năng, động năng, thế năng",
+      "when": "Cho m, k, A, ω, x (hoặc v) và hỏi W, W_đ, W_t.",
+      "steps": [
+        "Cơ năng W = ½kA² = ½mω²A² (A đổi sang mét).",
+        "Thế năng tại x: W_t = ½kx².",
+        "Động năng W_đ = W − W_t (hoặc ½mv²).",
+        "Kiểm tra W_đ ≥ 0, tức |x| ≤ A."
+      ],
+      "notes": [
+        "A, x phải đổi sang mét để năng lượng ra J.",
+        "k = mω²."
+      ],
+      "sample": {
+        "problem": "Con lắc lò xo k = 100 N/m, A = 0,1 m. Tính cơ năng, và động năng khi x = 0,06 m.",
+        "steps": [
+          "W = ½·100·0,1² = 0,5 J.",
+          "W_t = ½·100·0,06² = 0,18 J.",
+          "W_đ = 0,5 − 0,18 = 0,32 J."
+        ],
+        "answer": "W = 0,5 J; W_đ = 0,32 J"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Vị trí mà W_đ = n·W_t và thời gian giữa các lần",
+      "when": "Đề hỏi li độ tại đó động năng bằng n lần thế năng, hoặc thời gian giữa hai lần liên tiếp W_đ = W_t.",
+      "steps": [
+        "W_đ = nW_t ⇒ W = (n + 1)W_t ⇒ x² = A²/(n + 1).",
+        "Vị trí: x = ±A/√(n + 1).",
+        "Thời gian giữa hai lần liên tiếp W_đ = W_t bằng T/4.",
+        "Dùng đường tròn để tìm thời gian khi cần."
+      ],
+      "notes": [
+        "n = 1: x = ±A/√2; n = 3: x = ±A/2; n = 8: x = ±A/3.",
+        "Chọn nghiệm theo dấu li độ."
+      ],
+      "sample": {
+        "problem": "A = 8 cm, W_đ = 3W_t. Tìm |x|.",
+        "steps": [
+          "x² = A²/(n + 1) = 64/4 = 16.",
+          "|x| = 4 cm."
+        ],
+        "answer": "4 cm"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tìm vận tốc, biên độ từ năng lượng",
+      "when": "Cho cơ năng (hoặc W_t, W_đ) và m, k; hỏi v tại vị trí, A, v_max.",
+      "steps": [
+        "Cơ năng cho biết ½mv_max² = W ⇒ v_max = √(2W/m).",
+        "W = ½kA² ⇒ A = √(2W/k).",
+        "Tại vị trí x: ½mv² = W − ½kx² ⇒ v.",
+        "Đổi đơn vị trước khi thay."
+      ],
+      "notes": [
+        "Có thể dùng bảo toàn cơ năng giữa hai vị trí.",
+        "Nhớ lấy cả giá trị dương và âm của v nếu cần."
+      ],
+      "sample": {
+        "problem": "W = 0,5 J, m = 1 kg. Tính v_max.",
+        "steps": [
+          "½mv_max² = W ⇒ v_max² = 2·0,5/1 = 1.",
+          "v_max = 1 m/s."
+        ],
+        "answer": "1 m/s"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Con lắc lò xo k = 100 N/m, A = 0,1 m. Cơ năng W (J) bằng:",
+      "steps": [
+        "W = ½kA².",
+        "= ½·100·0,01 = 0,5 J."
+      ],
+      "expr": "(1/2)*100*0.1*0.1",
+      "answer": "1/2"
+    },
+    {
+      "problem": "Cùng con lắc, thế năng khi x = 0,06 m (J)?",
+      "steps": [
+        "W_t = ½kx².",
+        "= ½·100·0,0036 = 0,18 J."
+      ],
+      "expr": "(1/2)*100*0.06*0.06",
+      "answer": "9/50"
+    },
+    {
+      "problem": "A = 8 cm, W_đ = 3W_t. Giá trị |x| (cm)?",
+      "steps": [
+        "x² = A²/4 = 16.",
+        "|x| = 4 cm."
+      ],
+      "expr": "8/2",
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Con lắc lò xo k = 100 N/m, A = 0,1 m. Cơ năng W (J) là:",
+      "expr": "(1/2)*100*0.1*0.1",
+      "answer": "1/2",
+      "explain": "W = ½kA² = 0,5 J.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cơ năng 0,5 J, thế năng tại một vị trí 0,18 J. Động năng (J) là:",
+      "expr": "0.5-0.18",
+      "answer": "8/25",
+      "explain": "W_đ = W − W_t = 0,32 J.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tại VTCB, thế năng của con lắc lò xo (J) bằng:",
+      "expr": "0",
+      "answer": "0",
+      "explain": "x = 0 nên W_t = 0.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cơ năng của con lắc lò xo dao động điều hoà (bỏ qua ma sát):",
+      "choices": [
+        "không đổi theo thời gian",
+        "tăng dần",
+        "giảm dần",
+        "biến thiên điều hoà với chu kì T"
+      ],
+      "answer": 0,
+      "explain": "Cơ năng bảo toàn.",
+      "wrong_explain": {
+        "1": "Không có tác dụng làm tăng.",
+        "2": "Không có ma sát nên không giảm.",
+        "3": "Cơ năng không biến thiên."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Động năng của vật dao động điều hoà cực đại khi vật ở:",
+      "choices": [
+        "VTCB",
+        "biên",
+        "x = A/2",
+        "bất kì vị trí nào"
+      ],
+      "answer": 0,
+      "explain": "Tại VTCB tốc độ lớn nhất.",
+      "wrong_explain": {
+        "1": "Tại biên v = 0.",
+        "2": "Tại A/2 động năng nhỏ hơn.",
+        "3": "Phụ thuộc vị trí."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "k = 100 N/m, thế năng khi x = 0,06 m (J) là:",
+      "expr": "(1/2)*100*0.06*0.06",
+      "answer": "9/50",
+      "explain": "W_t = 0,18 J.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "m = 0,1 kg, ω = 10 rad/s, A = 0,05 m. Cơ năng W (J) là:",
+      "expr": "(1/2)*0.1*100*0.05*0.05",
+      "answer": "1/80",
+      "explain": "W = ½mω²A² = 0,0125 J.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "m = 0,2 kg, v_max = 1 m/s. Cơ năng (J) là:",
+      "expr": "(1/2)*0.2*1*1",
+      "answer": "1/10",
+      "explain": "W = ½mv_max² = 0,1 J.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chu kì dao động của vật là 0,5 s. Chu kì biến thiên của động năng (s) là:",
+      "expr": "0.5/2",
+      "answer": "1/4",
+      "explain": "Động năng biến thiên với chu kì T/2 = 0,25 s.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tần số dao động của vật là 2 Hz. Tần số biến thiên của thế năng (Hz) là:",
+      "expr": "2*2",
+      "answer": "4",
+      "explain": "Tần số 2f = 4 Hz.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi vật dao động điều hoà đi từ VTCB ra biên thì:",
+      "choices": [
+        "động năng giảm, thế năng tăng",
+        "động năng tăng, thế năng giảm",
+        "cả hai đều tăng",
+        "cả hai đều giảm"
+      ],
+      "answer": 0,
+      "explain": "Cơ năng không đổi nên một dạng tăng thì dạng kia giảm.",
+      "wrong_explain": {
+        "1": "Đó là khi từ biên về VTCB.",
+        "2": "Tổng bằng hằng số nên không cùng tăng.",
+        "3": "Tổng không đổi nên không cùng giảm."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "A = 8 cm, W_đ = 3W_t. Giá trị |x| (cm) là:",
+      "expr": "8/2",
+      "answer": "4",
+      "explain": "x² = A²/(n+1) = 16.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "A = 9 cm, W_đ = 8W_t. Giá trị |x| (cm) là:",
+      "expr": "9/3",
+      "answer": "3",
+      "explain": "x² = A²/9 = 9.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cơ năng 0,5 J, m = 1 kg. Tốc độ cực đại (m/s) là:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "v_max² = 2W/m = 1.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chu kì T = 1,2 s. Khoảng thời gian giữa hai lần liên tiếp W_đ = W_t (s) là:",
+      "expr": "(1.2)/4",
+      "answer": "3/10",
+      "explain": "T/4 = 0,3 s.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật dao động W = 0,2 J, ở vị trí có W_t = 0,05 J. Tỉ số W_đ/W_t bằng:",
+      "expr": "(0.2-0.05)/0.05",
+      "answer": "3",
+      "explain": "W_đ = 0,15 J nên tỉ số 3.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "W = ½kA², nếu biên độ tăng gấp 3 lần thì cơ năng tăng gấp:",
+      "expr": "3*3",
+      "answer": "9",
+      "explain": "W ∝ A²: gấp 9 lần.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai con lắc cùng A, m₂ = 4m₁, cùng ω. Tỉ số W₂/W₁:",
+      "choices": [
+        "4",
+        "2",
+        "1/4",
+        "16"
+      ],
+      "answer": 0,
+      "explain": "W = ½mω²A² tỉ lệ m.",
+      "wrong_explain": {
+        "1": "Tỉ lệ m chứ không phải √m.",
+        "2": "Tỉ lệ thuận với m.",
+        "3": "Nhỏ hơn thì sai chiều."
+      },
+      "id": "q18"
+    }
+  ]
+}

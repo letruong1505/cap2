@@ -1,0 +1,344 @@
+{
+  "id": "bai-1",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 1. Dao động",
+  "lesson": "Bài 1. Dao động điều hoà",
+  "section": "",
+  "bookPage": 6,
+  "requirements": [
+    "Nêu được khái niệm dao động, dao động tuần hoàn, dao động điều hoà và các đại lượng đặc trưng: biên độ, chu kì, tần số, tần số góc, pha.",
+    "Viết được phương trình dao động điều hoà và tính li độ, chu kì, tần số, quãng đường theo chu kì."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dao động cơ là chuyển động qua lại của vật quanh một vị trí cân bằng (VTCB). Dao động tuần hoàn là dao động mà trạng thái dao động lặp lại như cũ sau những khoảng thời gian bằng nhau. Khoảng thời gian ngắn nhất để trạng thái dao động lặp lại như cũ gọi là chu kì T."
+    },
+    {
+      "type": "text",
+      "content": "Dao động điều hoà là dao động trong đó li độ x của vật là một hàm côsin (hoặc sin) của thời gian. Li độ x là độ lệch của vật so với VTCB (có thể dương hoặc âm)."
+    },
+    {
+      "type": "formula",
+      "content": "x = A cos(ωt + φ)"
+    },
+    {
+      "type": "text",
+      "content": "Trong đó: A > 0 là biên độ (độ lệch cực đại so với VTCB); (ωt + φ) là pha dao động tại thời điểm t; φ là pha ban đầu (pha tại t = 0); ω là tần số góc (rad/s). Quỹ đạo dao động có chiều dài 2A."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b1-chuyen-dong-tron.svg",
+      "caption": "Hình chiếu P của chất điểm M chuyển động tròn đều (tốc độ góc ω) lên đường kính dao động điều hoà với biên độ A = bán kính, pha ban đầu φ"
+    },
+    {
+      "type": "formula",
+      "content": "Chu kì T = t/N (s), tần số f = 1/T = N/t (Hz), tần số góc ω = 2π/T = 2πf (rad/s).   Quãng đường đi được trong 1 chu kì: 4A; trong nửa chu kì: 2A."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b1-do-thi-xt.svg",
+      "caption": "Đồ thị li độ – thời gian của dao động điều hoà x = A cos(ωt + φ): đường hình sin có biên độ A, chu kì T"
+    },
+    {
+      "type": "method",
+      "title": "Xác định các đại lượng từ phương trình dao động",
+      "when": "Đề cho x = A cos(ωt + φ) và hỏi biên độ, tần số góc, chu kì, tần số, pha ban đầu, li độ tại thời điểm t.",
+      "steps": [
+        "So sánh phương trình với dạng chuẩn x = A cos(ωt + φ) để đọc A, ω, φ (chú ý đổi sin về cos: sin α = cos(α − π/2)).",
+        "Tính T = 2π/ω và f = ω/2π.",
+        "Thay t vào phương trình để tính li độ và pha tại thời điểm đó.",
+        "Kiểm tra đơn vị (cm hay m, rad hay độ)."
+      ],
+      "notes": [
+        "A luôn dương; nếu hệ số trước cos là âm, thêm π vào pha.",
+        "Máy tính phải để chế độ rađian."
+      ],
+      "sample": {
+        "problem": "Vật dao động x = 5cos(4πt + π/3) cm. Xác định A, ω, T, f và li độ lúc t = 0.",
+        "steps": [
+          "A = 5 cm, ω = 4π rad/s, φ = π/3.",
+          "T = 2π/4π = 0,5 s; f = 2 Hz.",
+          "x(0) = 5cos(π/3) = 2,5 cm."
+        ],
+        "answer": "A = 5 cm; ω = 4π rad/s; T = 0,5 s; f = 2 Hz; x₀ = 2,5 cm"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tính chu kì, tần số từ số dao động và quãng đường trong dao động",
+      "when": "Đề cho số dao động trong một khoảng thời gian, hoặc hỏi quãng đường vật đi được trong một số chu kì.",
+      "steps": [
+        "Chu kì T = t/N (t: thời gian, N: số dao động toàn phần); tần số f = N/t.",
+        "Quãng đường trong 1 chu kì là 4A; trong n chu kì là 4nA; trong nửa chu kì là 2A.",
+        "Chiều dài quỹ đạo L = 2A nên A = L/2.",
+        "Đổi t ra chu kì (t/T) để tính quãng đường."
+      ],
+      "notes": [
+        "Chỉ riêng các khoảng 1/2 hoặc 1/4 chu kì mới tính nhanh được quãng đường: T/4 từ VTCB hoặc từ biên bằng A.",
+        "Quãng đường khác độ dịch chuyển; sau 1 chu kì độ dịch chuyển bằng 0."
+      ],
+      "sample": {
+        "problem": "Vật dao động điều hoà thực hiện 30 dao động trong 15 s với quỹ đạo dài 12 cm. Tính T, f và quãng đường trong 2,5 chu kì.",
+        "steps": [
+          "T = 15/30 = 0,5 s; f = 2 Hz.",
+          "A = 12/2 = 6 cm.",
+          "S = 2,5·4A = 10A = 60 cm."
+        ],
+        "answer": "T = 0,5 s; f = 2 Hz; S = 60 cm"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Dùng vòng tròn lượng giác (chuyển động tròn đều) tìm li độ và thời gian",
+      "when": "Tìm thời gian ngắn nhất để vật đi từ vị trí này đến vị trí khác, hoặc tìm pha/li độ ban đầu.",
+      "steps": [
+        "Vẽ đường tròn bán kính A, trục Ox nằm ngang; vị trí x ứng với điểm có hình chiếu x.",
+        "Xác định góc Δφ mà bán kính quét từ vị trí đầu đến vị trí cuối (ngược chiều kim đồng hồ là chiều dương của pha).",
+        "Thời gian t = Δφ/ω = (Δφ/2π)·T.",
+        "Các mốc thường gặp: từ biên về VTCB mất T/4; từ VTCB đến x = A/2 mất T/12; từ x = A/2 đến biên mất T/6."
+      ],
+      "notes": [
+        "Một vòng quét 2π ứng với 1 chu kì T.",
+        "Cần xác định đúng chiều chuyển động của vật (chiều dương hay âm)."
+      ],
+      "sample": {
+        "problem": "Chu kì T = 2 s. Thời gian ngắn nhất để vật đi từ biên x = A đến VTCB (x = 0) là bao nhiêu?",
+        "steps": [
+          "Bán kính quét góc π/2.",
+          "t = (π/2)/(2π)·T = T/4 = 0,5 s."
+        ],
+        "answer": "0,5 s"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Vật dao động x = 5cos(4πt + π/3) cm. Chu kì T (s) bằng bao nhiêu?",
+      "steps": [
+        "ω = 4π rad/s.",
+        "T = 2π/ω = 2π/4π = 0,5 s."
+      ],
+      "expr": "2/4",
+      "answer": "1/2"
+    },
+    {
+      "problem": "Vật thực hiện 30 dao động trong 15 s. Tần số f (Hz)?",
+      "steps": [
+        "f = N/t.",
+        "= 30/15 = 2 Hz."
+      ],
+      "expr": "30/15",
+      "answer": "2"
+    },
+    {
+      "problem": "Vật dao động với biên độ 6 cm. Quãng đường đi được trong 2,5 chu kì (cm)?",
+      "steps": [
+        "S = 2,5 · 4A = 10A.",
+        "= 60 cm."
+      ],
+      "expr": "10*6",
+      "answer": "60"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật dao động x = 6cos(5πt) cm. Biên độ dao động (cm) là:",
+      "expr": "6",
+      "answer": "6",
+      "explain": "So sánh với x = A cos(ωt + φ): A = 6 cm.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật dao động x = 6cos(5πt) cm. Tần số góc ω = kπ rad/s. Giá trị k là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "ω = 5π rad/s nên k = 5.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật dao động x = 6cos(5πt) cm. Tần số f (Hz) là:",
+      "expr": "5/2",
+      "answer": "5/2",
+      "explain": "f = ω/2π = 5π/2π = 2,5 Hz.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật dao động x = 6cos(5πt) cm. Chu kì T (s) là:",
+      "expr": "2/5",
+      "answer": "2/5",
+      "explain": "T = 2π/ω = 2/5 = 0,4 s.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong phương trình x = A cos(ωt + φ), đại lượng (ωt + φ) gọi là:",
+      "choices": [
+        "pha dao động",
+        "biên độ",
+        "tần số góc",
+        "chu kì"
+      ],
+      "answer": 0,
+      "explain": "(ωt + φ) là pha dao động tại thời điểm t.",
+      "wrong_explain": {
+        "1": "Biên độ là A.",
+        "2": "Tần số góc là ω.",
+        "3": "Chu kì là T = 2π/ω."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật thực hiện 30 dao động trong 15 s. Chu kì T (s) là:",
+      "expr": "15/30",
+      "answer": "1/2",
+      "explain": "T = t/N = 0,5 s.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chu kì dao động là 0,25 s. Tần số f (Hz) là:",
+      "expr": "(1)/(0.25)",
+      "answer": "4",
+      "explain": "f = 1/T = 4 Hz.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật dao động có ω = 4π rad/s. Chu kì T (s) là:",
+      "expr": "2/4",
+      "answer": "1/2",
+      "explain": "T = 2π/ω = 0,5 s.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật dao động x = 4cos(2πt + π/2) cm. Li độ lúc t = 0 (cm) là:",
+      "expr": "4*0",
+      "answer": "0",
+      "explain": "x(0) = 4cos(π/2) = 0.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật dao động x = 5cos(πt) cm. Quãng đường đi được trong đúng 1 chu kì (cm) là:",
+      "expr": "4*5",
+      "answer": "20",
+      "explain": "S = 4A = 20 cm.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Quỹ đạo của vật dao động điều hoà là đoạn thẳng dài 12 cm. Biên độ A (cm) là:",
+      "expr": "12/2",
+      "answer": "6",
+      "explain": "L = 2A nên A = 6 cm.",
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi vật dao động điều hoà đi từ biên này đến biên kia thì quãng đường đi được là:",
+      "choices": [
+        "2A",
+        "A",
+        "4A",
+        "A/2"
+      ],
+      "answer": 0,
+      "explain": "Từ −A đến +A: quãng đường 2A.",
+      "wrong_explain": {
+        "1": "A là từ VTCB đến biên.",
+        "2": "4A là quãng đường cả chu kì.",
+        "3": "A/2 là nửa biên độ."
+      },
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Biên độ A = 3 cm. Quãng đường đi được trong 2,5 chu kì (cm) là:",
+      "expr": "10*3",
+      "answer": "30",
+      "explain": "S = 2,5·4A = 10A = 30 cm.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật dao động có f = 2 Hz. Số dao động toàn phần trong 10 s là:",
+      "expr": "2*10",
+      "answer": "20",
+      "explain": "N = f·t = 20.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chu kì T = 2 s. Thời gian ngắn nhất để vật đi từ biên x = A về VTCB (s) là:",
+      "expr": "2/4",
+      "answer": "1/2",
+      "explain": "t = T/4 = 0,5 s.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật có A = 8 cm. Quãng đường đi được trong 3 chu kì (cm) là:",
+      "expr": "3*4*8",
+      "answer": "96",
+      "explain": "S = 3·4A = 96 cm.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Chu kì T = 1,2 s. Thời gian ngắn nhất để vật đi từ VTCB đến x = A/2 (T/12) (s) là:",
+      "expr": "(1.2)/12",
+      "answer": "1/10",
+      "explain": "t = T/12 = 0,1 s.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong một chu kì, vận tốc trung bình của vật dao động điều hoà bằng:",
+      "choices": [
+        "0",
+        "A/T",
+        "2A/T",
+        "4A/T"
+      ],
+      "answer": 0,
+      "explain": "Độ dịch chuyển sau một chu kì bằng 0 nên vận tốc trung bình bằng 0.",
+      "wrong_explain": {
+        "1": "Đó chưa phải vận tốc trung bình mà cũng không phải tốc độ trung bình.",
+        "2": "Chưa đúng.",
+        "3": "4A/T là tốc độ trung bình, không phải vận tốc trung bình."
+      },
+      "id": "q18"
+    }
+  ]
+}

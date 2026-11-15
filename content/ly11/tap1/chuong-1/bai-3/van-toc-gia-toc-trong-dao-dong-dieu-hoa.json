@@ -1,0 +1,339 @@
+{
+  "id": "bai-3",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 1. Dao động",
+  "lesson": "Bài 3. Vận tốc, gia tốc trong dao động điều hoà",
+  "section": "",
+  "bookPage": 14,
+  "requirements": [
+    "Viết được biểu thức vận tốc, gia tốc của dao động điều hoà và nhận biết độ lệch pha giữa x, v, a.",
+    "Tính vận tốc, gia tốc tại vị trí bất kì, tốc độ cực đại, gia tốc cực đại và dùng hệ thức độc lập với thời gian."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Vận tốc là đạo hàm của li độ theo thời gian, gia tốc là đạo hàm của vận tốc: v = x′, a = v′."
+    },
+    {
+      "type": "formula",
+      "content": "x = A cos(ωt + φ);   v = −ωA sin(ωt + φ) = ωA cos(ωt + φ + π/2);   a = −ω²A cos(ωt + φ) = −ω²x."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b3-x-v-a.svg",
+      "caption": "Đồ thị x, v, a theo thời gian: v sớm pha π/2 so với x; a ngược pha với x"
+    },
+    {
+      "type": "text",
+      "content": "Tốc độ cực đại v_max = ωA khi vật qua VTCB (x = 0). Gia tốc có độ lớn cực đại a_max = ω²A khi vật ở biên (x = ±A). Vật đổi chiều chuyển động ở biên (v = 0). Vectơ gia tốc luôn hướng về VTCB."
+    },
+    {
+      "type": "formula",
+      "content": "Hệ thức độc lập với thời gian: x²/A² + v²/(ωA)² = 1, tức A² = x² + v²/ω²;   v² = ω²(A² − x²);   a = −ω²x."
+    },
+    {
+      "type": "text",
+      "content": "Hợp lực tác dụng lên vật dao động điều hoà (lực kéo về) có độ lớn tỉ lệ với li độ và hướng về VTCB: F = ma = −mω²x."
+    },
+    {
+      "type": "method",
+      "title": "Tính vận tốc, gia tốc tại thời điểm hoặc vị trí cho trước",
+      "when": "Đề cho x = A cos(ωt + φ) hoặc A, ω, x và hỏi v, a.",
+      "steps": [
+        "Viết v = −ωA sin(ωt + φ), a = −ω²x.",
+        "Tại thời điểm t: thay t để tính pha, rồi tính sin, cos.",
+        "Tại vị trí x: dùng v² = ω²(A² − x²) (hai dấu: chiều chuyển động) và a = −ω²x.",
+        "Kiểm tra: v_max = ωA, a_max = ω²A."
+      ],
+      "notes": [
+        "Đổi A sang m (hoặc dùng đồng bộ cm), a có đơn vị cm/s² hoặc m/s².",
+        "Dấu của v phụ thuộc chiều chuyển động."
+      ],
+      "sample": {
+        "problem": "Vật dao động A = 5 cm, ω = 2 rad/s. Khi x = 3 cm, tốc độ và gia tốc có độ lớn là bao nhiêu?",
+        "steps": [
+          "v = ω√(A² − x²) = 2·√(25 − 9) = 2·4 = 8 cm/s.",
+          "|a| = ω²|x| = 4·3 = 12 cm/s²."
+        ],
+        "answer": "v = 8 cm/s; |a| = 12 cm/s²"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tìm A, ω từ giá trị tức thời của x, v (a)",
+      "when": "Cho hai cặp giá trị (x, v) hoặc (v, a), hoặc v_max, a_max.",
+      "steps": [
+        "Từ v_max = ωA và a_max = ω²A: ω = a_max/v_max; A = v_max²/a_max.",
+        "Từ hai cặp (x₁, v₁), (x₂, v₂): giải hệ A² = x₁² + v₁²/ω² = x₂² + v₂²/ω² để tìm ω.",
+        "Tính T = 2π/ω.",
+        "Kiểm tra lại với một cặp giá trị."
+      ],
+      "notes": [
+        "Dùng ω² = (v₁² − v₂²)/(x₂² − x₁²) khi hai cặp (x, v) cho trước.",
+        "Cẩn thận đơn vị khi lấy tỉ số."
+      ],
+      "sample": {
+        "problem": "v_max = 20 cm/s và a_max = 100 cm/s². Tính ω và A.",
+        "steps": [
+          "ω = a_max/v_max = 5 rad/s.",
+          "A = v_max/ω = 4 cm."
+        ],
+        "answer": "ω = 5 rad/s; A = 4 cm"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Lực kéo về và gia tốc ở các vị trí đặc biệt",
+      "when": "Cho khối lượng m, tần số góc, hỏi lực kéo về hoặc xác định tại vị trí nào lực, gia tốc, vận tốc cực đại hay bằng 0.",
+      "steps": [
+        "Lực kéo về F = ma = −mω²x.",
+        "Tại VTCB: x = 0, a = 0, F = 0, v = v_max.",
+        "Tại biên: x = ±A, a = a_max, F = F_max = mω²A, v = 0.",
+        "Thay số để tính."
+      ],
+      "notes": [
+        "Lực kéo về luôn hướng về VTCB.",
+        "Với con lắc lò xo, F = −kx với k = mω²."
+      ],
+      "sample": {
+        "problem": "m = 0,2 kg, ω = 10 rad/s, A = 5 cm. Tính lực kéo về cực đại.",
+        "steps": [
+          "F_max = mω²A.",
+          "= 0,2·100·0,05 = 1 N."
+        ],
+        "answer": "1 N"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Vật dao động A = 5 cm, ω = 2 rad/s. Khi x = 3 cm, tốc độ v (cm/s) bằng bao nhiêu?",
+      "steps": [
+        "v = ω√(A² − x²) = 2·√(25 − 9).",
+        "= 2·4 = 8 cm/s."
+      ],
+      "expr": "2*4",
+      "answer": "8"
+    },
+    {
+      "problem": "v_max = 20 cm/s, a_max = 100 cm/s². Tần số góc ω (rad/s) là bao nhiêu?",
+      "steps": [
+        "ω = a_max/v_max.",
+        "= 100/20 = 5."
+      ],
+      "expr": "100/20",
+      "answer": "5"
+    },
+    {
+      "problem": "m = 0,2 kg, ω = 10 rad/s, A = 5 cm. Lực kéo về cực đại (N)?",
+      "steps": [
+        "F_max = mω²A = 0,2·100·0,05.",
+        "= 1 N."
+      ],
+      "expr": "0.2*100*0.05",
+      "answer": "1"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật dao động có A = 4 cm, ω = 5 rad/s. Tốc độ cực đại (cm/s) là:",
+      "expr": "5*4",
+      "answer": "20",
+      "explain": "v_max = ωA = 20 cm/s.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật dao động có A = 4 cm, ω = 5 rad/s. Gia tốc cực đại (cm/s²) là:",
+      "expr": "5*5*4",
+      "answer": "100",
+      "explain": "a_max = ω²A = 100 cm/s².",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật có ω = 2 rad/s. Khi x = 3 cm thì gia tốc a (cm/s²) bằng:",
+      "expr": "-2*2*3",
+      "answer": "-12",
+      "explain": "a = −ω²x = −12 cm/s².",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tại VTCB, gia tốc của vật dao động điều hoà bằng:",
+      "expr": "0",
+      "answer": "0",
+      "explain": "x = 0 nên a = 0.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vận tốc của vật dao động điều hoà có giá trị lớn nhất khi vật:",
+      "choices": [
+        "qua VTCB",
+        "ở biên dương",
+        "ở biên âm",
+        "có li độ A/2"
+      ],
+      "answer": 0,
+      "explain": "Tại VTCB v = ±ωA.",
+      "wrong_explain": {
+        "1": "Tại biên v = 0.",
+        "2": "Tại biên v = 0.",
+        "3": "Tại A/2 tốc độ nhỏ hơn cực đại."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Gia tốc của dao động điều hoà luôn:",
+      "choices": [
+        "hướng về VTCB",
+        "hướng ra xa VTCB",
+        "cùng chiều chuyển động",
+        "bằng không"
+      ],
+      "answer": 0,
+      "explain": "a = −ω²x hướng về VTCB.",
+      "wrong_explain": {
+        "1": "Hướng về VTCB.",
+        "2": "Không liên quan chiều chuyển động.",
+        "3": "Chỉ bằng 0 tại VTCB."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "A = 5 cm, ω = 2 rad/s. Khi x = 3 cm, tốc độ v (cm/s) bằng:",
+      "expr": "2*4",
+      "answer": "8",
+      "explain": "v = ω√(A² − x²) = 2·4 = 8.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "v_max = 20 cm/s, a_max = 100 cm/s². Tần số góc ω (rad/s) là:",
+      "expr": "100/20",
+      "answer": "5",
+      "explain": "ω = a_max/v_max = 5.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "v_max = 20 cm/s, a_max = 100 cm/s². Biên độ A (cm) là:",
+      "expr": "20/5",
+      "answer": "4",
+      "explain": "A = v_max/ω = 4.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "m = 0,2 kg, ω = 10 rad/s, A = 5 cm. Lực kéo về cực đại (N):",
+      "expr": "0.2*100*0.05",
+      "answer": "1",
+      "explain": "F_max = mω²A = 1 N.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Độ lệch pha giữa vận tốc và li độ của dao động điều hoà là:",
+      "choices": [
+        "v sớm pha π/2 so với x",
+        "v chậm pha π/2 so với x",
+        "v cùng pha với x",
+        "v ngược pha với x"
+      ],
+      "answer": 0,
+      "explain": "v = ωA cos(ωt + φ + π/2).",
+      "wrong_explain": {
+        "1": "v sớm, không chậm.",
+        "2": "Không cùng pha.",
+        "3": "a mới ngược pha với x."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "A = 10 cm, ω = 4 rad/s. Khi v = 20 cm/s thì x² (cm²) bằng (dùng A² = x² + v²/ω²):",
+      "expr": "100-(20*20)/(4*4)",
+      "answer": "75",
+      "explain": "x² = 100 − 25 = 75.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật có ω = 5 rad/s, khi x = 4 cm có v = 15 cm/s. Biên độ A² (cm²) là:",
+      "expr": "4*4+(15*15)/(5*5)",
+      "answer": "25",
+      "explain": "A² = 16 + 9 = 25 nên A = 5 cm.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tại x₁ = 3 cm có v₁ = 40 cm/s; tại x₂ = 4 cm có v₂ = 30 cm/s. ω² (rad/s)² = (v₁² − v₂²)/(x₂² − x₁²) bằng:",
+      "expr": "(40*40-30*30)/(4*4-3*3)",
+      "answer": "100",
+      "explain": "ω² = 700/7 = 100, ω = 10 rad/s.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật dao động điều hoà có A = 10 cm, T = 1 s. Tốc độ cực đại v_max = 2πA/T. Giá trị v_max/π (cm/s) là:",
+      "expr": "2*10/1",
+      "answer": "20",
+      "explain": "v_max = 20π cm/s.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "a_max = 4π² m/s² và A = 1 m. ω = kπ rad/s. Giá trị k là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "ω² = a_max/A = 4π² nên ω = 2π.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đồ thị a theo x của dao động điều hoà là:",
+      "choices": [
+        "đường thẳng đi qua gốc toạ độ, hệ số góc âm",
+        "đường elip",
+        "đường parabol",
+        "đường hình sin"
+      ],
+      "answer": 0,
+      "explain": "a = −ω²x là hàm bậc nhất.",
+      "wrong_explain": {
+        "1": "Đồ thị v theo x mới là elip.",
+        "2": "Không phải parabol.",
+        "3": "Hình sin là a theo t."
+      },
+      "id": "q17"
+    }
+  ]
+}

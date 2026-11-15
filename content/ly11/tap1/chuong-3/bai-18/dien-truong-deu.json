@@ -1,0 +1,335 @@
+{
+  "id": "bai-18",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 3. Điện trường",
+  "lesson": "Bài 18. Điện trường đều",
+  "section": "",
+  "bookPage": 71,
+  "requirements": [
+    "Nêu được điện trường đều và đặc điểm đường sức điện trong điện trường đều giữa hai bản kim loại song song.",
+    "Vận dụng E = U/d, F = qE và chuyển động của điện tích trong điện trường đều."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Điện trường đều là điện trường có vectơ cường độ điện trường tại mọi điểm đều bằng nhau (cùng phương, cùng chiều, cùng độ lớn). Đường sức điện của điện trường đều là các đường thẳng song song, cách đều nhau. Giữa hai bản kim loại phẳng song song tích điện trái dấu, điện trường (ở vùng giữa, xa mép) là đều."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b18-dien-truong-deu.svg",
+      "caption": "Điện trường đều giữa hai bản song song: đường sức thẳng, song song, cách đều, hướng từ bản dương sang bản âm; điện tích dương chịu lực F = qE cùng chiều E"
+    },
+    {
+      "type": "formula",
+      "content": "E = U/d   (U: hiệu điện thế giữa hai bản, d: khoảng cách giữa hai bản).   Lực điện: F = |q|E."
+    },
+    {
+      "type": "text",
+      "content": "Điện tích q khối lượng m chuyển động trong điện trường đều chịu lực điện không đổi F = |q|E nên có gia tốc a = |q|E/m không đổi. Nếu bỏ qua trọng lực và điện tích bắt đầu từ trạng thái nghỉ thì chuyển động nhanh dần đều theo phương đường sức: v = at; s = ½at²; v² = 2as. Điện tích dương chuyển động cùng chiều E, điện tích âm ngược chiều E."
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: ống phóng electron (màn hình ống tia âm cực cũ), máy lọc bụi tĩnh điện, in phun, ống tia X, thiết bị tăng tốc hạt."
+    },
+    {
+      "type": "method",
+      "title": "Tính E, U, d trong điện trường đều",
+      "when": "Cho hiệu điện thế giữa hai bản và khoảng cách, hỏi E; hoặc ngược lại.",
+      "steps": [
+        "Đổi d về mét.",
+        "E = U/d; U = Ed; d = U/E.",
+        "Chiều E: từ bản dương sang bản âm.",
+        "Kiểm tra: U lớn thì E lớn (d không đổi)."
+      ],
+      "notes": [
+        "1 V/m = 1 N/C.",
+        "E đều nên không phụ thuộc vị trí giữa hai bản."
+      ],
+      "sample": {
+        "problem": "Hai bản cách nhau 2 cm, U = 10 V. Tính E.",
+        "steps": [
+          "E = U/d = 10/0,02.",
+          "= 500 V/m."
+        ],
+        "answer": "500 V/m"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Chuyển động của điện tích trong điện trường đều",
+      "when": "Điện tích thả nhẹ (v₀ = 0) trong điện trường, hỏi gia tốc, vận tốc, thời gian, quãng đường.",
+      "steps": [
+        "Lực F = |q|E, gia tốc a = |q|E/m.",
+        "Chọn chiều dương theo chuyển động: s = ½at², v = at, v² = 2as.",
+        "Dùng định lí động năng: ½mv² = |q|Ed.",
+        "Bỏ qua trọng lực nếu m rất nhỏ."
+      ],
+      "notes": [
+        "Điện tích dương chạy từ bản dương sang bản âm.",
+        "Với electron, đổi hướng lực ngược E."
+      ],
+      "sample": {
+        "problem": "Hạt m = 10⁻⁶ kg, q = 2·10⁻⁸ C trong E = 500 V/m (bỏ qua trọng lực). Tính a.",
+        "steps": [
+          "F = qE = 10⁻⁵ N.",
+          "a = F/m = 10 m/s²."
+        ],
+        "answer": "a = 10 m/s²"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Cân bằng của hạt tích điện giữa hai bản",
+      "when": "Hạt bụi tích điện lơ lửng giữa hai bản nằm ngang; tìm điện tích hoặc hiệu điện thế.",
+      "steps": [
+        "Cân bằng: |q|E = mg.",
+        "Với E = U/d: |q|U/d = mg.",
+        "Suy ra |q| = mgd/U hoặc U = mgd/|q|.",
+        "Lực điện phải hướng lên; xét dấu điện tích theo chiều E."
+      ],
+      "notes": [
+        "Hạt dương nằm trong E hướng lên mới cân bằng.",
+        "g = 10 m/s²."
+      ],
+      "sample": {
+        "problem": "Hạt m = 10⁻⁶ kg lơ lửng giữa hai bản cách 2 cm, U = 10 V. Tính |q|.",
+        "steps": [
+          "E = 10/0,02 = 500 V/m.",
+          "|q| = mg/E = 10⁻⁵/500 = 2·10⁻⁸ C."
+        ],
+        "answer": "2·10⁻⁸ C"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hai bản cách nhau 2 cm, U = 10 V. E (V/m)?",
+      "steps": [
+        "E = U/d = 10/0,02.",
+        "= 500 V/m."
+      ],
+      "expr": "(10)/(0.02)",
+      "answer": "500"
+    },
+    {
+      "problem": "Hạt m = 10⁻⁶ kg, q = 2·10⁻⁸ C trong E = 500 V/m. Gia tốc a (m/s²)?",
+      "steps": [
+        "F = qE = 10⁻⁵ N.",
+        "a = F/m = 10 m/s²."
+      ],
+      "expr": "(0.00000002*500)/(0.000001)",
+      "answer": "10"
+    },
+    {
+      "problem": "Hạt lơ lửng, m = 10⁻⁶ kg, E = 500 V/m, g = 10. |q| (C) = mg/E:",
+      "steps": [
+        "|q| = 10⁻⁵/500.",
+        "= 2·10⁻⁸ C."
+      ],
+      "expr": "(0.000001*10)/(500)",
+      "answer": "1/50000000"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hai bản cách nhau 2 cm, U = 10 V. E (V/m):",
+      "expr": "(10)/(0.02)",
+      "answer": "500",
+      "explain": "E = 500 V/m.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "U = 100 V, d = 0,5 m. E (V/m):",
+      "expr": "(100)/(0.5)",
+      "answer": "200",
+      "explain": "E = 200 V/m.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "E = 1000 V/m, d = 0,05 m. U (V):",
+      "expr": "1000*0.05",
+      "answer": "50",
+      "explain": "U = 50 V.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đường sức điện trong điện trường đều là:",
+      "choices": [
+        "các đường thẳng song song cách đều",
+        "các đường tròn đồng tâm",
+        "các đường cong kín",
+        "các đường thẳng cắt nhau"
+      ],
+      "answer": 0,
+      "explain": "Đặc điểm điện trường đều.",
+      "wrong_explain": {
+        "1": "Đó là các mặt đẳng thế quanh điện tích điểm.",
+        "2": "Đường sức không kín.",
+        "3": "Không cắt nhau."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Giữa hai bản kim loại phẳng song song tích điện trái dấu có:",
+      "choices": [
+        "điện trường đều",
+        "điện trường không đều",
+        "từ trường",
+        "không có điện trường"
+      ],
+      "answer": 0,
+      "explain": "Vùng giữa hai bản là điện trường đều.",
+      "wrong_explain": {
+        "1": "Là đều.",
+        "2": "Không có từ trường.",
+        "3": "Có điện trường."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Điện tích q = 2·10⁻⁸ C trong E = 500 V/m. F (N):",
+      "expr": "0.00000002*500",
+      "answer": "1/100000",
+      "explain": "F = 10⁻⁵ N.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "F = 10⁻⁵ N tác dụng lên hạt m = 10⁻⁶ kg. a (m/s²):",
+      "expr": "(0.00001)/(0.000001)",
+      "answer": "10",
+      "explain": "a = 10 m/s².",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hạt có a = 10 m/s² xuất phát nghỉ. Sau 2 s, v (m/s):",
+      "expr": "10*2",
+      "answer": "20",
+      "explain": "v = at = 20 m/s.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hạt có a = 10 m/s². Quãng đường sau 2 s (m): ½at²:",
+      "expr": "(1/2)*10*2*2",
+      "answer": "20",
+      "explain": "s = 20 m.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hạt lơ lửng m = 10⁻⁶ kg, E = 500 V/m, g = 10. |q| (C):",
+      "expr": "(0.000001*10)/(500)",
+      "answer": "1/50000000",
+      "explain": "|q| = 2·10⁻⁸ C.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi U giữa hai bản tăng gấp đôi (d không đổi) thì E:",
+      "choices": [
+        "tăng gấp đôi",
+        "giảm một nửa",
+        "không đổi",
+        "tăng 4 lần"
+      ],
+      "answer": 0,
+      "explain": "E = U/d.",
+      "wrong_explain": {
+        "1": "E ∝ U.",
+        "2": "E thay đổi.",
+        "3": "E ∝ U, không phải U²."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hạt m = 2·10⁻⁶ kg lơ lửng giữa hai bản cách 4 cm, g = 10; điện tích |q| = 4·10⁻⁸ C. U = mgd/|q| (V):",
+      "expr": "(0.000002*10*0.04)/(0.00000004)",
+      "answer": "20",
+      "explain": "U = 20 V.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hạt q = 10⁻⁶ C, m = 10⁻⁴ kg, E = 200 V/m (bỏ qua trọng lực). a (m/s²):",
+      "expr": "(0.000001*200)/(0.0001)",
+      "answer": "2",
+      "explain": "a = 2 m/s².",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Điện tích q = 2·10⁻⁶ C đi quãng đường d = 0,05 m dọc đường sức, E = 1000 V/m. Công A = qEd (J):",
+      "expr": "0.000002*1000*0.05",
+      "answer": "1/10000",
+      "explain": "A = 10⁻⁴ J.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hạt bắt đầu nghỉ, a = 10 m/s², đi 20 m. v² = 2as (m²/s²):",
+      "expr": "2*10*20",
+      "answer": "400",
+      "explain": "v² = 400, v = 20 m/s.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hai bản cách d = 0,04 m, E = 500 V/m. Điện tích q = 10⁻⁶ C đi hết khoảng giữa hai bản. Động năng thu được (J) = qEd:",
+      "expr": "0.000001*500*0.04",
+      "answer": "1/50000",
+      "explain": "W_đ = 2·10⁻⁵ J.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điện tích dương thả nhẹ trong điện trường đều sẽ chuyển động:",
+      "choices": [
+        "nhanh dần đều cùng chiều E",
+        "nhanh dần đều ngược chiều E",
+        "thẳng đều",
+        "tròn đều"
+      ],
+      "answer": 0,
+      "explain": "Lực điện không đổi cùng chiều E (q > 0).",
+      "wrong_explain": {
+        "1": "Đó là điện tích âm.",
+        "2": "Có gia tốc nên không đều.",
+        "3": "Không tròn."
+      },
+      "id": "q17"
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "id": "bai-21",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 3. Điện trường",
+  "lesson": "Bài 21. Tụ điện",
+  "section": "",
+  "bookPage": 83,
+  "requirements": [
+    "Nêu được cấu tạo, chức năng của tụ điện, định nghĩa và đơn vị điện dung; biểu thức năng lượng tụ điện.",
+    "Tính điện dung, điện tích, năng lượng tụ điện và điện dung bộ tụ ghép nối tiếp, song song."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tụ điện là hệ hai vật dẫn đặt gần nhau, ngăn cách bằng lớp điện môi; dùng để tích và phóng điện. Tụ phẳng gồm hai bản kim loại phẳng song song với lớp điện môi ở giữa. Khi nối tụ với nguồn điện U, hai bản tích điện trái dấu +Q và −Q; Q gọi là điện tích của tụ."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b21-tu-dien.svg",
+      "caption": "Tụ điện phẳng: hai bản, điện môi, kí hiệu; hai cách ghép: song song (C = C₁ + C₂) và nối tiếp (1/C = 1/C₁ + 1/C₂)"
+    },
+    {
+      "type": "formula",
+      "content": "Điện dung C = Q/U (F);   1 μF = 10⁻⁶ F; 1 nF = 10⁻⁹ F; 1 pF = 10⁻¹² F.   Tụ phẳng: C = εS/(4πk·d) (S diện tích bản, d khoảng cách bản)."
+    },
+    {
+      "type": "formula",
+      "content": "Năng lượng tụ điện: W = ½QU = ½CU² = Q²/(2C)."
+    },
+    {
+      "type": "text",
+      "content": "Ghép song song: U bằng nhau, Q = Q₁ + Q₂, C = C₁ + C₂. Ghép nối tiếp: Q bằng nhau, U = U₁ + U₂, 1/C = 1/C₁ + 1/C₂. Ứng dụng: đèn flash máy ảnh, máy khử rung tim, mạch lọc, mạch dao động, màn hình cảm ứng."
+    },
+    {
+      "type": "method",
+      "title": "Tính điện dung, điện tích, năng lượng của tụ",
+      "when": "Cho hai trong ba đại lượng C, Q, U và hỏi các đại lượng còn lại, năng lượng.",
+      "steps": [
+        "C = Q/U ⇒ Q = CU, U = Q/C.",
+        "W = ½CU² = ½QU = Q²/(2C).",
+        "Đổi μF, nF, pF về F.",
+        "Kiểm tra: tụ có giới hạn U (điện áp đánh thủng)."
+      ],
+      "notes": [
+        "C chỉ phụ thuộc cấu tạo tụ (S, d, ε).",
+        "Năng lượng ∝ U²."
+      ],
+      "sample": {
+        "problem": "C = 2 μF nối với U = 10 V. Tính Q và W.",
+        "steps": [
+          "Q = CU = 2·10⁻⁶·10 = 2·10⁻⁵ C.",
+          "W = ½CU² = ½·2·10⁻⁶·100 = 10⁻⁴ J."
+        ],
+        "answer": "Q = 2·10⁻⁵ C; W = 10⁻⁴ J"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Ghép tụ điện: nối tiếp và song song",
+      "when": "Cho các tụ C₁, C₂,… ghép với nhau, tính điện dung, điện tích, hiệu điện thế mỗi tụ.",
+      "steps": [
+        "Song song: C = C₁ + C₂; U chung; Q_i = C_iU.",
+        "Nối tiếp: 1/C = 1/C₁ + 1/C₂ (hai tụ: C = C₁C₂/(C₁ + C₂)); Q chung; U_i = Q/C_i.",
+        "Tính Q tổng rồi U_i hoặc Q_i.",
+        "Kiểm tra: tổng U_i = U (nối tiếp), tổng Q_i = Q (song song)."
+      ],
+      "notes": [
+        "Nối tiếp: C nhỏ hơn tụ nhỏ nhất; song song: C lớn hơn mọi tụ.",
+        "Cẩn thận phân biệt Q tổng và Q từng tụ."
+      ],
+      "sample": {
+        "problem": "C₁ = 3 μF nối tiếp C₂ = 6 μF. Tính C và khi U = 9 V tính Q.",
+        "steps": [
+          "C = 3·6/(3 + 6) = 2 μF.",
+          "Q = CU = 2·9 = 18 μC (cho mỗi tụ)."
+        ],
+        "answer": "C = 2 μF; Q = 18 μC"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Phụ thuộc của điện dung tụ phẳng vào cấu tạo",
+      "when": "Thay đổi diện tích bản, khoảng cách hai bản, chất điện môi.",
+      "steps": [
+        "C = εS/(4πkd) ⇒ C ∝ ε, ∝ S, ∝ 1/d.",
+        "Lập tỉ số C′/C.",
+        "Nếu nối nguồn: U không đổi; nếu ngắt nguồn: Q không đổi.",
+        "Tính W, Q, U sau thay đổi."
+      ],
+      "notes": [
+        "Giảm d một nửa thì C tăng gấp đôi.",
+        "Đưa điện môi ε vào thì C tăng ε lần."
+      ],
+      "sample": {
+        "problem": "Tụ có C = 2 μF; tăng khoảng cách hai bản lên gấp đôi. C mới?",
+        "steps": [
+          "C ∝ 1/d.",
+          "C′ = 1 μF."
+        ],
+        "answer": "1 μF"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "C = 2 μF, U = 10 V. Q (μC) = CU:",
+      "steps": [
+        "Q = 2·10 = 20 μC."
+      ],
+      "expr": "2*10",
+      "answer": "20"
+    },
+    {
+      "problem": "C = 2 μF, U = 10 V. W (J) = ½CU²:",
+      "steps": [
+        "W = ½·2·10⁻⁶·100.",
+        "= 10⁻⁴ J."
+      ],
+      "expr": "(1/2)*0.000002*100",
+      "answer": "1/10000"
+    },
+    {
+      "problem": "C₁ = 3 μF nối tiếp C₂ = 6 μF. C (μF)?",
+      "steps": [
+        "C = 3·6/(3 + 6).",
+        "= 2 μF."
+      ],
+      "expr": "(3*6)/(3+6)",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "C = 2 μF, U = 10 V. Q (μC):",
+      "expr": "2*10",
+      "answer": "20",
+      "explain": "Q = CU = 20 μC.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Q = 20 μC, U = 10 V. C (μF):",
+      "expr": "20/10",
+      "answer": "2",
+      "explain": "C = Q/U = 2 μF.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "C = 2 μF, U = 10 V. W (J):",
+      "expr": "(1/2)*0.000002*100",
+      "answer": "1/10000",
+      "explain": "W = 10⁻⁴ J.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đơn vị điện dung là:",
+      "choices": [
+        "fara (F)",
+        "vôn (V)",
+        "ôm (Ω)",
+        "oát (W)"
+      ],
+      "answer": 0,
+      "explain": "Fara.",
+      "wrong_explain": {
+        "1": "V là hiệu điện thế.",
+        "2": "Ω là điện trở.",
+        "3": "W là công suất."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tụ điện dùng để:",
+      "choices": [
+        "tích và phóng điện",
+        "khuếch đại dòng điện",
+        "tạo ra điện tích",
+        "đổi dòng một chiều thành xoay chiều"
+      ],
+      "answer": 0,
+      "explain": "Chức năng của tụ.",
+      "wrong_explain": {
+        "1": "Không khuếch đại.",
+        "2": "Không tạo điện tích.",
+        "3": "Không đổi dòng."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai tụ song song C₁ = 3 μF, C₂ = 6 μF. C (μF):",
+      "expr": "3+6",
+      "answer": "9",
+      "explain": "C = 9 μF.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai tụ nối tiếp C₁ = 3 μF, C₂ = 6 μF. C (μF):",
+      "expr": "(3*6)/(3+6)",
+      "answer": "2",
+      "explain": "C = 2 μF.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai tụ nối tiếp, bộ tụ có C = 2 μF nối U = 9 V. Q (μC):",
+      "expr": "2*9",
+      "answer": "18",
+      "explain": "Q = 18 μC.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tụ C = 4 μF có Q = 40 μC. W = Q²/(2C) (μJ), nhập (40*40)/(2*4):",
+      "expr": "(40*40)/(2*4)",
+      "answer": "200",
+      "explain": "W = 200 μJ.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai tụ giống nhau mỗi tụ 4 μF nối tiếp: C (μF):",
+      "expr": "(4*4)/(4+4)",
+      "answer": "2",
+      "explain": "C = 2 μF.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tăng khoảng cách hai bản tụ phẳng (cấu tạo khác không đổi) thì điện dung:",
+      "choices": [
+        "giảm",
+        "tăng",
+        "không đổi",
+        "bằng không"
+      ],
+      "answer": 0,
+      "explain": "C ∝ 1/d.",
+      "wrong_explain": {
+        "1": "Giảm chứ không tăng.",
+        "2": "Có thay đổi.",
+        "3": "Không bằng 0."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tụ C = 2 μF; tăng d gấp đôi. C′ (μF):",
+      "expr": "2/2",
+      "answer": "1",
+      "explain": "C′ = 1 μF.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tụ C = 2 μF nối với nguồn U = 6 V. Q (μC):",
+      "expr": "2*6",
+      "answer": "12",
+      "explain": "Q = 12 μC.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tụ nối nguồn có U = 10 V, tăng U lên gấp đôi. Năng lượng tăng bao nhiêu lần?",
+      "expr": "2*2",
+      "answer": "4",
+      "explain": "W ∝ U²: tăng 4 lần.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bộ gồm C₁ = 6 μF song song C₂ = 3 μF, nối U = 12 V. Q tổng (μC):",
+      "expr": "(6+3)*12",
+      "answer": "108",
+      "explain": "Q = 108 μC.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hai tụ C₁ = 2 μF, C₂ = 4 μF song song, Q tổng 36 μC. U (V) = Q/C:",
+      "expr": "(36)/(2+4)",
+      "answer": "6",
+      "explain": "U = 6 V.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi nối tiếp hai tụ thì:",
+      "choices": [
+        "điện tích hai tụ bằng nhau",
+        "hiệu điện thế hai tụ bằng nhau",
+        "điện dung bằng tổng",
+        "năng lượng bằng nhau"
+      ],
+      "answer": 0,
+      "explain": "Nối tiếp: Q₁ = Q₂.",
+      "wrong_explain": {
+        "1": "Song song mới có U bằng nhau.",
+        "2": "Điện dung bằng tổng khi song song.",
+        "3": "Năng lượng khác nhau."
+      },
+      "id": "q17"
+    }
+  ]
+}

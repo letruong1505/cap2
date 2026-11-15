@@ -1,0 +1,350 @@
+{
+  "id": "bai-22",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 4. Dòng điện. Mạch điện",
+  "lesson": "Bài 22. Cường độ dòng điện",
+  "section": "",
+  "bookPage": 91,
+  "requirements": [
+    "Nêu được dòng điện, chiều dòng điện quy ước và định nghĩa cường độ dòng điện, đơn vị ampe.",
+    "Vận dụng I = Δq/Δt và I = nSve để tính cường độ dòng điện, số hạt tải điện, tốc độ trôi."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dòng điện là dòng các điện tích chuyển động có hướng. Chiều dòng điện quy ước là chiều chuyển động của các điện tích dương (ngược chiều chuyển động của electron trong kim loại). Trong kim loại hạt tải điện là các electron tự do; trong chất điện phân là các ion; trong chất khí là ion và electron."
+    },
+    {
+      "type": "text",
+      "content": "Tác dụng của dòng điện: tác dụng nhiệt, từ, hoá học, sinh lí, quang. Cường độ dòng điện cho biết độ mạnh yếu của dòng điện, đo bằng điện lượng chuyển qua tiết diện thẳng của vật dẫn trong một đơn vị thời gian."
+    },
+    {
+      "type": "formula",
+      "content": "I = Δq/Δt   (1 A = 1 C/s);   dòng điện không đổi: I = q/t;   1 mA = 10⁻³ A; 1 μA = 10⁻⁶ A."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b22-dong-dien-trong-day-dan.svg",
+      "caption": "Dòng điện trong dây dẫn kim loại: electron chuyển động có hướng ngược chiều dòng điện quy ước; I = nSve"
+    },
+    {
+      "type": "formula",
+      "content": "Số hạt tải điện qua tiết diện: N = q/|e| = It/|e|, |e| = 1,6·10⁻¹⁹ C.   Cường độ theo mật độ hạt: I = nSv|e| (n: mật độ hạt tải điện, S: tiết diện, v: tốc độ trôi)."
+    },
+    {
+      "type": "text",
+      "content": "Tốc độ trôi (tốc độ chuyển động có hướng) của electron rất nhỏ (cỡ 10⁻⁴ m/s), còn tín hiệu điện lan truyền cả mạch với tốc độ gần bằng tốc độ ánh sáng. Dụng cụ đo cường độ dòng điện là ampe kế, mắc nối tiếp với đoạn mạch cần đo."
+    },
+    {
+      "type": "method",
+      "title": "Tính cường độ dòng điện và điện lượng",
+      "when": "Cho điện lượng q và thời gian t, hoặc I và t; tìm I, q hoặc t.",
+      "steps": [
+        "I = q/t; q = It; t = q/I.",
+        "Đổi đơn vị: mA → A, phút → giây.",
+        "Dòng điện không đổi: I = const.",
+        "Điện lượng q = diện tích dưới đồ thị I–t."
+      ],
+      "notes": [
+        "1 A = 1 C/s.",
+        "Đổi 1 phút = 60 s; 1 h = 3600 s."
+      ],
+      "sample": {
+        "problem": "Điện lượng 12 C qua tiết diện dây trong 4 s. Tính I.",
+        "steps": [
+          "I = q/t = 12/4.",
+          "= 3 A."
+        ],
+        "answer": "3 A"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Số electron qua tiết diện và tốc độ trôi",
+      "when": "Cho I, t và hỏi số electron; hoặc cho n, S, I và hỏi v.",
+      "steps": [
+        "q = It.",
+        "N = q/|e| = It/(1,6·10⁻¹⁹).",
+        "Từ I = nSv|e| ⇒ v = I/(nS|e|).",
+        "Đổi đơn vị mm² → m² (1 mm² = 10⁻⁶ m²)."
+      ],
+      "notes": [
+        "Số electron rất lớn.",
+        "Tốc độ trôi nhỏ so với tốc độ tín hiệu."
+      ],
+      "sample": {
+        "problem": "I = 1,6 A chạy trong 1 s. Có bao nhiêu electron qua tiết diện?",
+        "steps": [
+          "q = It = 1,6 C.",
+          "N = 1,6/1,6·10⁻¹⁹ = 10¹⁹ hạt."
+        ],
+        "answer": "10¹⁹ electron"
+      }
+    },
+    {
+      "type": "method",
+      "title": "So sánh dòng điện qua các đoạn mạch nối tiếp, song song",
+      "when": "Đề cho nhánh, nút mạch; xác định cường độ ở các nhánh.",
+      "steps": [
+        "Nối tiếp: cùng cường độ I qua mọi phần tử.",
+        "Tại nút: tổng dòng vào bằng tổng dòng ra.",
+        "Song song: I = I₁ + I₂.",
+        "Đọc số chỉ ampe kế (mắc nối tiếp, điện trở rất nhỏ)."
+      ],
+      "notes": [
+        "Dòng điện không bị “mất” dọc đường.",
+        "Chú ý chiều quy ước."
+      ],
+      "sample": {
+        "problem": "Dòng I = 5 A rẽ vào hai nhánh; nhánh 1 có 3 A. Nhánh 2?",
+        "steps": [
+          "I₂ = I − I₁ = 5 − 3.",
+          "= 2 A."
+        ],
+        "answer": "2 A"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Điện lượng 12 C qua tiết diện trong 4 s. I (A)?",
+      "steps": [
+        "I = q/t.",
+        "= 3 A."
+      ],
+      "expr": "12/4",
+      "answer": "3"
+    },
+    {
+      "problem": "I = 2 A chạy trong 30 s. Điện lượng q (C)?",
+      "steps": [
+        "q = It.",
+        "= 60 C."
+      ],
+      "expr": "2*30",
+      "answer": "60"
+    },
+    {
+      "problem": "I = 1,6 A trong 1 s. Số electron theo 10¹⁹ = 1,6/(1,6)?",
+      "steps": [
+        "N = It/e.",
+        "= 10¹⁹ hạt."
+      ],
+      "expr": "(1.6)/(1.6)",
+      "answer": "1"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Điện lượng 12 C qua tiết diện trong 4 s. I (A):",
+      "expr": "12/4",
+      "answer": "3",
+      "explain": "I = 3 A.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "I = 0,5 A, t = 60 s. q (C):",
+      "expr": "0.5*60",
+      "answer": "30",
+      "explain": "q = 30 C.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "q = 20 C chạy qua trong 5 s. I (A):",
+      "expr": "20/5",
+      "answer": "4",
+      "explain": "I = 4 A.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chiều dòng điện quy ước là chiều chuyển động của:",
+      "choices": [
+        "điện tích dương",
+        "electron",
+        "ion âm",
+        "các hạt trung hoà"
+      ],
+      "answer": 0,
+      "explain": "Quy ước chiều điện tích dương.",
+      "wrong_explain": {
+        "1": "Electron ngược chiều dòng điện.",
+        "2": "Ion âm ngược chiều quy ước.",
+        "3": "Hạt trung hoà không tải điện."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ampe kế được mắc:",
+      "choices": [
+        "nối tiếp với đoạn mạch cần đo",
+        "song song với đoạn mạch",
+        "tuỳ ý",
+        "không cần mắc vào mạch"
+      ],
+      "answer": 0,
+      "explain": "Đo dòng qua phần tử nên phải nối tiếp.",
+      "wrong_explain": {
+        "1": "Song song là vôn kế.",
+        "2": "Phải nối tiếp.",
+        "3": "Phải mắc vào mạch."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đơn vị của cường độ dòng điện là:",
+      "choices": [
+        "ampe (A)",
+        "vôn (V)",
+        "ôm (Ω)",
+        "culông (C)"
+      ],
+      "answer": 0,
+      "explain": "Ampe.",
+      "wrong_explain": {
+        "1": "V là hiệu điện thế.",
+        "2": "Ω là điện trở.",
+        "3": "C là điện lượng."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "I = 2 A trong 30 s. q (C):",
+      "expr": "2*30",
+      "answer": "60",
+      "explain": "q = 60 C.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "I = 50 mA = 0,05 A trong 2 phút (120 s). q (C):",
+      "expr": "0.05*120",
+      "answer": "6",
+      "explain": "q = 6 C.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "q = 3,2 C. Số electron theo đơn vị 10¹⁹ là 3,2/1,6:",
+      "expr": "(3.2)/(1.6)",
+      "answer": "2",
+      "explain": "N = 2·10¹⁹.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Điện lượng 90 C qua trong 3 phút. I (A) = 90/180:",
+      "expr": "90/180",
+      "answer": "1/2",
+      "explain": "I = 0,5 A.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tốc độ trôi của electron trong dây dẫn so với tốc độ lan truyền tín hiệu điện:",
+      "choices": [
+        "nhỏ hơn rất nhiều",
+        "lớn hơn rất nhiều",
+        "bằng nhau",
+        "không thể so sánh"
+      ],
+      "answer": 0,
+      "explain": "Tốc độ trôi cỡ 10⁻⁴ m/s.",
+      "wrong_explain": {
+        "1": "Nhỏ hơn.",
+        "2": "Tín hiệu nhanh hơn.",
+        "3": "Khác nhau rất nhiều."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dây có I = 2 A; nhánh 1 có 1,2 A. Nhánh 2 (A):",
+      "expr": "2-1.2",
+      "answer": "4/5",
+      "explain": "I₂ = 0,8 A.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dòng điện I = 0,4 A chạy qua trong 10 phút (600 s). q (C):",
+      "expr": "0.4*600",
+      "answer": "240",
+      "explain": "q = 240 C.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bóng đèn có I = 0,5 A. Điện lượng chạy qua trong 1 giờ (3600 s) (C):",
+      "expr": "0.5*3600",
+      "answer": "1800",
+      "explain": "q = 1800 C.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dây dẫn có I = 1 A, mật độ n, tiết diện S: tỉ số v₂/v₁ khi I tăng gấp 3 (n, S không đổi):",
+      "expr": "3",
+      "answer": "3",
+      "explain": "v ∝ I.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "q = 1,6 C trong 0,5 s. I (A):",
+      "expr": "(1.6)/(0.5)",
+      "answer": "16/5",
+      "explain": "I = 3,2 A.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi dây dẫn có tiết diện không đều, cường độ dòng điện qua các tiết diện:",
+      "choices": [
+        "bằng nhau (dòng không đổi)",
+        "lớn hơn ở chỗ hẹp",
+        "lớn hơn ở chỗ rộng",
+        "bằng không"
+      ],
+      "answer": 0,
+      "explain": "Điện tích không tích tụ nên I bằng nhau.",
+      "wrong_explain": {
+        "1": "Tốc độ trôi lớn hơn ở chỗ hẹp, I thì bằng nhau.",
+        "2": "I bằng nhau.",
+        "3": "Có dòng điện."
+      },
+      "id": "q17"
+    }
+  ]
+}

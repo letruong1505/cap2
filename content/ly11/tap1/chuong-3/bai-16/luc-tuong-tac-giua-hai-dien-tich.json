@@ -1,0 +1,349 @@
+{
+  "id": "bai-16",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 3. Điện trường",
+  "lesson": "Bài 16. Lực tương tác giữa hai điện tích",
+  "section": "",
+  "bookPage": 61,
+  "requirements": [
+    "Nêu được hai loại điện tích, tương tác giữa các điện tích và phát biểu được định luật Coulomb.",
+    "Vận dụng biểu thức F = k|q₁q₂|/r² để tính lực, so sánh lực và tìm vị trí cân bằng của điện tích."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Có hai loại điện tích: điện tích dương và điện tích âm. Các điện tích cùng dấu đẩy nhau, khác dấu hút nhau. Đơn vị điện tích trong hệ SI là coulomb (C). Điện tích điểm là vật tích điện có kích thước rất nhỏ so với khoảng cách tới điểm xét."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b16-luc-coulomb.svg",
+      "caption": "Lực tương tác giữa hai điện tích điểm: cùng dấu thì đẩy nhau, khác dấu thì hút nhau; hai lực cùng phương (đường thẳng nối hai điện tích), ngược chiều, cùng độ lớn"
+    },
+    {
+      "type": "text",
+      "content": "Định luật Coulomb: lực tương tác giữa hai điện tích điểm đứng yên có phương trùng với đường thẳng nối hai điện tích, có độ lớn tỉ lệ thuận với tích độ lớn hai điện tích và tỉ lệ nghịch với bình phương khoảng cách giữa chúng."
+    },
+    {
+      "type": "formula",
+      "content": "F = k|q₁q₂|/r²  (chân không, không khí),  k = 1/(4πε₀) = 9·10⁹ N·m²/C²,  ε₀ = 8,85·10⁻¹² C²/(N·m²)."
+    },
+    {
+      "type": "formula",
+      "content": "Trong môi trường có hằng số điện môi ε: F = k|q₁q₂|/(εr²).   Đổi đơn vị: 1 μC = 10⁻⁶ C; 1 nC = 10⁻⁹ C; 1 cm = 10⁻² m."
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: sơn tĩnh điện, lọc bụi tĩnh điện, máy photocopy. Nếu có nhiều điện tích thì lực điện tổng hợp tác dụng lên một điện tích bằng tổng vectơ các lực do từng điện tích khác gây ra."
+    },
+    {
+      "type": "method",
+      "title": "Tính lực tương tác giữa hai điện tích điểm",
+      "when": "Cho q₁, q₂, khoảng cách r (và hằng số điện môi) và hỏi độ lực, chiều lực.",
+      "steps": [
+        "Đổi q về coulomb (μC, nC → C) và r về mét.",
+        "F = k|q₁q₂|/r² (chia thêm ε nếu có môi trường).",
+        "Chiều: cùng dấu đẩy nhau, khác dấu hút nhau (vẽ vectơ lực trên đường thẳng nối).",
+        "Kiểm tra đơn vị N."
+      ],
+      "notes": [
+        "Dùng giá trị tuyệt đối của điện tích khi tính độ lớn.",
+        "Hai lực tương tác là cặp lực trực đối."
+      ],
+      "sample": {
+        "problem": "q₁ = 2 μC, q₂ = 3 μC đặt trong không khí cách nhau 0,3 m. Tính F.",
+        "steps": [
+          "F = 9·10⁹·2·10⁻⁶·3·10⁻⁶/0,3².",
+          "= 5,4·10⁻²/0,09 = 0,6 N (lực đẩy)."
+        ],
+        "answer": "0,6 N, lực đẩy"
+      }
+    },
+    {
+      "type": "method",
+      "title": "So sánh lực khi thay đổi điện tích hoặc khoảng cách",
+      "when": "Cho điện tích, khoảng cách thay đổi gấp bao nhiêu lần, hỏi lực tăng hay giảm bao nhiêu lần.",
+      "steps": [
+        "F ∝ |q₁q₂| và F ∝ 1/r².",
+        "Lập tỉ số F′/F = (q₁′q₂′/q₁q₂)·(r/r′)².",
+        "Thay hệ số.",
+        "Kết luận tăng hay giảm bao nhiêu lần."
+      ],
+      "notes": [
+        "Tăng r gấp 2 thì F giảm 4 lần.",
+        "Tăng mỗi q gấp 3 thì F tăng 9 lần."
+      ],
+      "sample": {
+        "problem": "r tăng 2 lần, mỗi điện tích tăng 3 lần. Lực thay đổi thế nào?",
+        "steps": [
+          "F′/F = (3·3)/(2²) = 9/4.",
+          "Lực tăng 9/4 = 2,25 lần."
+        ],
+        "answer": "Tăng 2,25 lần"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tìm vị trí đặt điện tích để lực tổng hợp bằng 0",
+      "when": "Cho hai điện tích q₁, q₂ cố định cách nhau d, tìm điểm đặt điện tích q₀ để chịu lực tổng hợp bằng 0.",
+      "steps": [
+        "Cùng dấu: điểm nằm trong đoạn nối hai điện tích, gần điện tích nhỏ hơn.",
+        "Khác dấu: điểm nằm ngoài đoạn nối, gần điện tích có độ lớn nhỏ hơn.",
+        "Lập phương trình |q₁|/r₁² = |q₂|/r₂² với liên hệ hình học (r₁ ± r₂ = d).",
+        "Giải, lấy nghiệm hợp lí (bài toán chọn các số để căn là số hữu tỉ)."
+      ],
+      "notes": [
+        "Giá trị q₀ và dấu của q₀ không ảnh hưởng đến vị trí.",
+        "Điểm cân bằng không nằm giữa khi hai điện tích khác dấu."
+      ],
+      "sample": {
+        "problem": "q₁ = 9 μC, q₂ = −4 μC cách nhau 0,2 m. Tìm điểm lực lên q₀ bằng 0.",
+        "steps": [
+          "Khác dấu: điểm ngoài đoạn, gần q₂ hơn. Đặt cách q₂ một đoạn x: r₁ = x + 0,2.",
+          "9/(x + 0,2)² = 4/x² ⇒ (x + 0,2)/x = 3/2 ⇒ x = 0,4 m."
+        ],
+        "answer": "Cách q₂ 0,4 m (ngoài đoạn nối, phía q₂)"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "q₁ = 2 μC, q₂ = 3 μC cách nhau 0,3 m trong không khí. F (N)?",
+      "steps": [
+        "F = k|q₁q₂|/r².",
+        "= 9·10⁹·6·10⁻¹²/0,09 = 0,6 N."
+      ],
+      "expr": "(9000000000*0.000002*0.000003)/(0.09)",
+      "answer": "3/5"
+    },
+    {
+      "problem": "r tăng 2 lần, mỗi điện tích tăng 3 lần. Lực tăng bao nhiêu lần (nhập a/b)?",
+      "steps": [
+        "F′/F = 9/4."
+      ],
+      "expr": "(3*3)/(2*2)",
+      "answer": "9/4"
+    },
+    {
+      "problem": "q₁ = 9 μC, q₂ = −4 μC cách nhau 0,2 m. Điểm cân bằng cách q₂ bao nhiêu mét?",
+      "steps": [
+        "(x + 0,2)/x = 3/2.",
+        "x = 0,4 m."
+      ],
+      "expr": "2*0.2",
+      "answer": "2/5"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hai điện tích 1 μC cách nhau 0,3 m. F (N) = 9·10⁹·10⁻¹²/0,09 là:",
+      "expr": "(9000000000*0.000001*0.000001)/(0.09)",
+      "answer": "1/10",
+      "explain": "F = 0,1 N.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hai điện tích cùng độ lớn 2 μC cách nhau 0,1 m. F (N):",
+      "expr": "(9000000000*0.000002*0.000002)/(0.01)",
+      "answer": "18/5",
+      "explain": "F = 3,6 N.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hai điện tích 10⁻⁷ C và 4·10⁻⁷ C cách nhau 0,2 m. F (N):",
+      "expr": "(9000000000*0.0000001*0.0000004)/(0.04)",
+      "answer": "9/1000",
+      "explain": "F = 9·10⁻³ N = 0,009 N.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai điện tích cùng dấu thì:",
+      "choices": [
+        "đẩy nhau",
+        "hút nhau",
+        "không tương tác",
+        "triệt tiêu"
+      ],
+      "answer": 0,
+      "explain": "Cùng dấu đẩy nhau.",
+      "wrong_explain": {
+        "1": "Khác dấu mới hút.",
+        "2": "Chúng có tương tác.",
+        "3": "Không triệt tiêu."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Biểu thức đúng của định luật Coulomb trong chân không là:",
+      "choices": [
+        "F = k|q₁q₂|/r²",
+        "F = k|q₁q₂|/r",
+        "F = k·r²/|q₁q₂|",
+        "F = k|q₁|/r²"
+      ],
+      "answer": 0,
+      "explain": "F tỉ lệ q₁q₂, tỉ lệ nghịch r².",
+      "wrong_explain": {
+        "1": "Phải là r².",
+        "2": "Sai biểu thức.",
+        "3": "Thiếu q₂."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đơn vị của điện tích trong hệ SI là:",
+      "choices": [
+        "coulomb (C)",
+        "vôn (V)",
+        "ampe (A)",
+        "oát (W)"
+      ],
+      "answer": 0,
+      "explain": "Coulomb.",
+      "wrong_explain": {
+        "1": "V là đơn vị hiệu điện thế.",
+        "2": "A là cường độ dòng điện.",
+        "3": "W là công suất."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khoảng cách tăng 2 lần thì lực giảm đi bao nhiêu lần?",
+      "expr": "2*2",
+      "answer": "4",
+      "explain": "F ∝ 1/r² nên giảm 4 lần.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mỗi điện tích tăng 3 lần, r không đổi. Lực tăng bao nhiêu lần?",
+      "expr": "3*3",
+      "answer": "9",
+      "explain": "Tăng 9 lần.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "r tăng 2 lần, mỗi điện tích tăng 3 lần. Lực tăng bao nhiêu lần (nhập a/b)?",
+      "expr": "(3*3)/(2*2)",
+      "answer": "9/4",
+      "explain": "9/4 lần.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "F = 0,6 N giữa hai điện tích. Nếu đặt chúng vào môi trường ε = 2 thì F (N):",
+      "expr": "0.6/2",
+      "answer": "3/10",
+      "explain": "F′ = F/ε = 0,3 N.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai lực tương tác giữa hai điện tích điểm là:",
+      "choices": [
+        "cặp lực trực đối",
+        "cặp lực cân bằng đặt lên cùng một vật",
+        "có độ lớn khác nhau",
+        "vuông góc nhau"
+      ],
+      "answer": 0,
+      "explain": "Cùng phương, ngược chiều, cùng độ lớn, đặt lên hai vật.",
+      "wrong_explain": {
+        "1": "Đặt lên hai vật khác nhau.",
+        "2": "Độ lớn bằng nhau.",
+        "3": "Cùng phương."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai điện tích 3 μC và −3 μC cách nhau 0,3 m. Lực hút F (N):",
+      "expr": "(9000000000*0.000003*0.000003)/(0.09)",
+      "answer": "9/10",
+      "explain": "F = 0,9 N.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai điện tích 1 μC cùng độ lớn tác dụng nhau lực 0,9 N. Bình phương khoảng cách r² (m²) là:",
+      "expr": "(9000000000*0.000001*0.000001)/(0.9)",
+      "answer": "1/100",
+      "explain": "r² = kq²/F = 0,01 m² nên r = 0,1 m.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "q₁ = 9 μC, q₂ = −4 μC cách nhau 0,2 m. Điểm cân bằng cách q₂ (m):",
+      "expr": "2*0.2",
+      "answer": "2/5",
+      "explain": "x = 0,4 m.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai điện tích cùng dấu q₁ = 4 μC, q₂ = 1 μC cách nhau 0,3 m. Điểm lực bằng 0 cách q₂ (m): từ 4/r₁² = 1/r₂² ⇒ r₁ = 2r₂, r₁ + r₂ = 0,3:",
+      "expr": "0.3/3",
+      "answer": "1/10",
+      "explain": "r₂ = 0,1 m.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hai quả cầu giống nhau tích điện 4 μC và −2 μC cho tiếp xúc rồi tách ra: điện tích mỗi quả (μC):",
+      "expr": "(4-2)/2",
+      "answer": "1",
+      "explain": "q = (4 − 2)/2 = 1 μC.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nếu đưa hai điện tích vào dầu có ε > 1 giữ nguyên r, độ lớn lực:",
+      "choices": [
+        "giảm ε lần",
+        "tăng ε lần",
+        "không đổi",
+        "bằng 0"
+      ],
+      "answer": 0,
+      "explain": "F = k|q₁q₂|/(εr²).",
+      "wrong_explain": {
+        "1": "Giảm chứ không tăng.",
+        "2": "Có thay đổi.",
+        "3": "Không bằng 0."
+      },
+      "id": "q17"
+    }
+  ]
+}

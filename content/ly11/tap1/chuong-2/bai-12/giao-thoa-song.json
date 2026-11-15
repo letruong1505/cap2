@@ -1,0 +1,356 @@
+{
+  "id": "bai-12",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 2. Sóng",
+  "lesson": "Bài 12. Giao thoa sóng",
+  "section": "",
+  "bookPage": 48,
+  "requirements": [
+    "Mô tả được hiện tượng giao thoa của hai sóng mặt nước, điều kiện giao thoa và hai nguồn kết hợp.",
+    "Mô tả thí nghiệm Y-âng về giao thoa ánh sáng và vận dụng i = λD/a để tính bước sóng, khoảng vân."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khi hai sóng kết hợp gặp nhau thì có những điểm ở đó hai sóng luôn đồng pha nên dao động mạnh nhất (cực đại), có những điểm hai sóng luôn ngược pha nên đứng yên (cực tiểu). Hiện tượng đó gọi là giao thoa; các gợn sóng ổn định gọi là vân giao thoa."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b12-giao-thoa-song-nuoc.svg",
+      "caption": "Hai nguồn S₁, S₂ cùng tần số, cùng pha tạo vân giao thoa: các đường cực đại xen kẽ với các đường cực tiểu"
+    },
+    {
+      "type": "text",
+      "content": "Điều kiện giao thoa: hai nguồn phải dao động cùng phương, cùng tần số và có độ lệch pha không đổi theo thời gian (hai nguồn kết hợp). Điểm có hiệu đường đi d₂ − d₁ = kλ dao động cực đại; điểm có d₂ − d₁ = (k + ½)λ đứng yên. Khoảng cách giữa hai cực đại cạnh nhau trên đoạn S₁S₂ bằng λ/2."
+    },
+    {
+      "type": "formula",
+      "content": "Cực đại giao thoa: d₂ − d₁ = kλ.   Cực tiểu giao thoa: d₂ − d₁ = (k + ½)λ.   Hai cực đại liền kề trên S₁S₂ cách nhau λ/2."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b12-thi-nghiem-young.svg",
+      "caption": "Thí nghiệm Y-âng (Young): nguồn S chiếu hai khe F₁, F₂ (hai nguồn kết hợp) cách nhau a; màn quan sát cách khe D; xuất hiện hệ vân sáng, tối xen kẽ"
+    },
+    {
+      "type": "formula",
+      "content": "Khoảng vân i = λD/a   ⇒   λ = ai/D.   Khoảng cách giữa n vân sáng liên tiếp bằng (n − 1)i.   Vân sáng bậc k: x = ki; vân tối: x = (k + ½)i."
+    },
+    {
+      "type": "text",
+      "content": "Ánh sáng đơn sắc cho vân sáng và tối xen kẽ đều đặn. Ánh sáng trắng cho vân trung tâm trắng, hai bên có dải màu như cầu vồng (tím gần vân trung tâm hơn đỏ vì i tỉ lệ λ). Giao thoa chứng tỏ ánh sáng có tính chất sóng."
+    },
+    {
+      "type": "method",
+      "title": "Giao thoa sóng mặt nước: khoảng cực đại, hiệu đường đi",
+      "when": "Cho v, f của cần rung và hỏi khoảng cách giữa hai cực đại liền kề trên S₁S₂, hoặc xác định điểm là cực đại hay cực tiểu.",
+      "steps": [
+        "Tính λ = v/f.",
+        "Khoảng cách hai cực đại (hoặc hai cực tiểu) liền kề trên S₁S₂ là λ/2.",
+        "Với điểm M: tính d₂ − d₁ rồi so với λ: số nguyên → cực đại; nửa nguyên → cực tiểu.",
+        "Đổi đơn vị cho thống nhất."
+      ],
+      "notes": [
+        "Hai nguồn cùng pha: trung điểm S₁S₂ là cực đại.",
+        "Khoảng cách một cực đại – một cực tiểu liền kề là λ/4."
+      ],
+      "sample": {
+        "problem": "v = 50 cm/s, f = 40 Hz. Khoảng cách giữa hai cực đại cạnh nhau trên S₁S₂?",
+        "steps": [
+          "λ = 50/40 = 1,25 cm.",
+          "Khoảng cực đại: λ/2 = 0,625 cm."
+        ],
+        "answer": "0,625 cm"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tính bước sóng ánh sáng, khoảng vân trong thí nghiệm Y-âng",
+      "when": "Cho a, D, i hoặc λ và hỏi đại lượng còn lại; cho khoảng cách giữa n vân.",
+      "steps": [
+        "Khoảng vân i = (khoảng cách n vân sáng liên tiếp)/(n − 1).",
+        "Dùng λ = ai/D (hoặc i = λD/a).",
+        "Đổi đơn vị: mm → m, μm → m.",
+        "Tần số f = c/λ nếu hỏi."
+      ],
+      "notes": [
+        "Khoảng vân tỉ lệ thuận λ và D, tỉ lệ nghịch a.",
+        "Màn xa khe hơn thì i lớn hơn."
+      ],
+      "sample": {
+        "problem": "a = 0,5 mm, D = 2 m, i = 2,4 mm. Tính λ.",
+        "steps": [
+          "λ = ai/D = 0,5·10⁻³·2,4·10⁻³/2.",
+          "= 6·10⁻⁷ m = 0,6 μm."
+        ],
+        "answer": "0,6 μm"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Vị trí vân và bài toán hai bức xạ",
+      "when": "Cho hai ánh sáng đơn sắc λ₁, λ₂ và hỏi vị trí vân trùng, khoảng cách ngắn nhất giữa hai vân cùng màu vân trung tâm.",
+      "steps": [
+        "Tính i₁ = λ₁D/a, i₂ = λ₂D/a.",
+        "Vân trùng: k₁i₁ = k₂i₂ ⇒ k₁/k₂ = λ₂/λ₁ (rút gọn thành phân số tối giản p/q).",
+        "Khoảng cách ngắn nhất giữa hai vân trùng liên tiếp: x = p·i₁ = q·i₂.",
+        "Tính x theo mm."
+      ],
+      "notes": [
+        "Vị trí trùng đầu tiên (không kể vân trung tâm) ứng với p, q nhỏ nhất.",
+        "Tỉ số i₁/i₂ = λ₁/λ₂."
+      ],
+      "sample": {
+        "problem": "λ₁ = 0,66 μm, λ₂ = 0,55 μm, a = 2 mm, D = 1,2 m. Tính i₁, i₂ và x trùng gần nhất.",
+        "steps": [
+          "i₁ = 0,66·1,2/2 = 0,396 mm; i₂ = 0,55·1,2/2 = 0,33 mm.",
+          "k₁/k₂ = 0,55/0,66 = 5/6.",
+          "x = 5·i₁ = 1,98 mm."
+        ],
+        "answer": "i₁ = 0,396 mm; i₂ = 0,33 mm; x = 1,98 mm"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Sóng nước v = 50 cm/s, f = 40 Hz. Khoảng giữa hai cực đại cạnh nhau (cm)?",
+      "steps": [
+        "λ = 50/40 = 1,25 cm.",
+        "Khoảng = λ/2 = 0,625 cm."
+      ],
+      "expr": "50/40/2",
+      "answer": "5/8"
+    },
+    {
+      "problem": "a = 0,5 mm, D = 2 m, i = 2,4 mm. λ (μm) = a·i/D (mm·mm/m = μm)?",
+      "steps": [
+        "λ = 0,5·2,4/2.",
+        "= 0,6 μm."
+      ],
+      "expr": "0.5*2.4/2",
+      "answer": "3/5"
+    },
+    {
+      "problem": "12 vân sáng liên tiếp cách nhau 6,6 mm. Khoảng vân i (mm)?",
+      "steps": [
+        "Có 11 khoảng vân.",
+        "i = 6,6/11 = 0,6 mm."
+      ],
+      "expr": "(6.6)/(11)",
+      "answer": "3/5"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Sóng λ = 4 cm. Khoảng giữa hai cực đại liền kề trên S₁S₂ (cm) là:",
+      "expr": "4/2",
+      "answer": "2",
+      "explain": "λ/2 = 2 cm.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "a = 1 mm, D = 2 m, i = 1 mm. λ (μm) = a·i/D tính bằng mm·mm/m = μm:",
+      "expr": "1*1/2",
+      "answer": "1/2",
+      "explain": "λ = 0,5 μm.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Khoảng vân i = 2 mm; khoảng cách 6 vân sáng liên tiếp (mm) là:",
+      "expr": "5*2",
+      "answer": "10",
+      "explain": "5 khoảng vân = 10 mm.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điều kiện để có giao thoa của hai sóng là hai nguồn:",
+      "choices": [
+        "kết hợp",
+        "có biên độ bằng nhau",
+        "có cùng pha tại mọi thời điểm",
+        "khác tần số"
+      ],
+      "answer": 0,
+      "explain": "Cùng tần số, độ lệch pha không đổi.",
+      "wrong_explain": {
+        "1": "Biên độ không phải điều kiện.",
+        "2": "Chỉ cần lệch pha không đổi.",
+        "3": "Phải cùng tần số."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điểm dao động cực đại khi hiệu đường đi bằng:",
+      "choices": [
+        "kλ",
+        "(k + ½)λ",
+        "λ/4",
+        "(2k + 1)λ/4"
+      ],
+      "answer": 0,
+      "explain": "Hai sóng đồng pha.",
+      "wrong_explain": {
+        "1": "Đó là cực tiểu.",
+        "2": "Không phải điều kiện.",
+        "3": "Không phải điều kiện."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Giao thoa ánh sáng chứng tỏ ánh sáng có:",
+      "choices": [
+        "tính chất sóng",
+        "tính chất hạt",
+        "tốc độ vô hạn",
+        "tính phân cực"
+      ],
+      "answer": 0,
+      "explain": "Vân sáng, tối xen kẽ là đặc trưng của sóng.",
+      "wrong_explain": {
+        "1": "Không chứng minh tính hạt.",
+        "2": "Không liên quan.",
+        "3": "Không liên quan."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "v = 50 cm/s, f = 40 Hz. λ (cm) là:",
+      "expr": "50/40",
+      "answer": "5/4",
+      "explain": "λ = 1,25 cm.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "v = 50 cm/s, f = 40 Hz. Khoảng cực đại cạnh nhau (cm) là:",
+      "expr": "50/40/2",
+      "answer": "5/8",
+      "explain": "0,625 cm.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khoảng vân i = λD/a. Với λ = 0,5 μm, D = 2 m, a = 1 mm: i (mm) = 0,5·2/1:",
+      "expr": "0.5*2/1",
+      "answer": "1",
+      "explain": "i = 1 mm.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "12 vân sáng liên tiếp cách nhau 6,6 mm. Khoảng vân i (mm) là:",
+      "expr": "(6.6)/(11)",
+      "answer": "3/5",
+      "explain": "i = 6,6/11 = 0,6 mm.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi tăng khoảng cách D từ hai khe đến màn thì khoảng vân:",
+      "choices": [
+        "tăng",
+        "giảm",
+        "không đổi",
+        "bằng 0"
+      ],
+      "answer": 0,
+      "explain": "i = λD/a.",
+      "wrong_explain": {
+        "1": "Tỉ lệ thuận D.",
+        "2": "Tỉ lệ thuận D.",
+        "3": "Tỉ lệ thuận D."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "a = 0,5 mm, D = 2 m, i = 2,4 mm. Bước sóng λ (μm) = a·i/D là:",
+      "expr": "0.5*2.4/2",
+      "answer": "3/5",
+      "explain": "λ = 0,6 μm.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "a = 1 mm, D = 1,2 m, 12 vân sáng liên tiếp cách nhau 6,6 mm. Bước sóng λ (μm) là:",
+      "expr": "(1*6.6)/(11*1.2)",
+      "answer": "1/2",
+      "explain": "i = 6,6/11 = 0,6 mm; λ = ai/D = 0,5 μm.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "i₁ = 0,396 mm; vân trùng ứng k₁ = 5. Khoảng x (mm) = 5·0,396:",
+      "expr": "5*0.396",
+      "answer": "99/50",
+      "explain": "x = 1,98 mm.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "λ₁ = 0,66 μm, λ₂ = 0,55 μm. Tỉ số k₁/k₂ = λ₂/λ₁ (nhập dạng (55)/(66)):",
+      "expr": "(55)/(66)",
+      "answer": "5/6",
+      "explain": "= 5/6.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Màn dịch lại gần 0,25 m làm i giảm từ 1 mm xuống 0,8 mm; a = 0,6 mm. Ta có i₁ = λD/a, i₂ = λ(D − 0,25)/a ⇒ Δi = 0,2 mm = λ·0,25/a. λ (μm) = 0,2·0,6/0,25 (mm·mm/m):",
+      "expr": "0.2*(0.6)/(0.25)",
+      "answer": "12/25",
+      "explain": "λ = 0,48 μm.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Với ánh sáng trắng, vân sáng trung tâm có màu:",
+      "choices": [
+        "trắng",
+        "đỏ",
+        "tím",
+        "vàng"
+      ],
+      "answer": 0,
+      "explain": "Mọi màu đều trùng nhau tại vân trung tâm.",
+      "wrong_explain": {
+        "1": "Không phải.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "id": "q17"
+    }
+  ]
+}

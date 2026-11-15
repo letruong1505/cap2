@@ -1,0 +1,335 @@
+{
+  "id": "bai-15",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 2. Sóng",
+  "lesson": "Bài 15. Thực hành: Đo tốc độ truyền âm",
+  "section": "",
+  "bookPage": 58,
+  "requirements": [
+    "Biết bố trí và tiến hành thí nghiệm đo tốc độ truyền âm trong không khí bằng ống trụ có pít-tông và nguồn âm tần số xác định.",
+    "Xử lí số liệu để tính tốc độ truyền âm v = 2(l₂ − l₁)f và sai số."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dụng cụ: ống trụ bằng thuỷ tinh hữu cơ trong suốt (đường kính trong 40 mm, dài 670 mm, chia độ 0–660 mm); pít-tông có thể di chuyển trong ống; máy phát tần số (tín hiệu hình sin); loa nhỏ hoặc âm thoa; giá đỡ. Sóng âm từ loa truyền trong cột khí, phản xạ trên pít-tông tạo sóng dừng trong ống (một đầu là pít-tông – nút, một đầu loa – gần như bụng)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b15-bo-thi-nghiem.svg",
+      "caption": "Ống trụ với pít-tông: âm to nhất khi có sóng dừng trong cột khí; hai vị trí âm to nhất liên tiếp l₁, l₂ cách nhau λ/2"
+    },
+    {
+      "type": "text",
+      "content": "Tiến hành: đặt tần số máy phát f = 500 Hz; kéo pít-tông chậm trong ống cho đến khi nghe âm to nhất lần 1, đo chiều dài cột khí l₁; kéo tiếp đến lần âm to nhất thứ 2, đo l₂; lặp lại ba lần, ghi bảng 15.1."
+    },
+    {
+      "type": "formula",
+      "content": "Hai vị trí âm to nhất liên tiếp: l₂ − l₁ = λ/2 ⇒ λ = 2(l₂ − l₁);   v = λf = 2(l₂ − l₁)f.   Sai số: Δv/v = Δd/d + Δf/f (d = l₂ − l₁)."
+    },
+    {
+      "type": "text",
+      "content": "Không xác định tốc độ qua l₁ hay l₂ riêng lẻ vì sóng không phản xạ đúng tại miệng ống (hiệu chỉnh đầu ống); hiệu l₂ − l₁ loại bỏ sai số này. Tốc độ âm: không khí khoảng 340 m/s; nước khoảng 1500 m/s; gỗ khoảng 3400 m/s."
+    },
+    {
+      "type": "method",
+      "title": "Tính tốc độ truyền âm từ l₁, l₂ và f",
+      "when": "Cho hai vị trí âm to nhất liên tiếp và tần số nguồn.",
+      "steps": [
+        "d = l₂ − l₁ = λ/2.",
+        "λ = 2d.",
+        "v = λf = 2df.",
+        "Đổi cm → m trước khi nhân."
+      ],
+      "notes": [
+        "Đo nhiều lần rồi lấy trung bình.",
+        "Âm to nhất ứng với sóng dừng."
+      ],
+      "sample": {
+        "problem": "f = 500 Hz, l₁ = 0,16 m, l₂ = 0,50 m. Tính v.",
+        "steps": [
+          "d = 0,34 m.",
+          "v = 2·0,34·500 = 340 m/s."
+        ],
+        "answer": "340 m/s"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Xử lí số liệu và tính sai số",
+      "when": "Có ba lần đo d₁, d₂, d₃; yêu cầu tính d̄, Δd, v̄ và sai số tỉ đối.",
+      "steps": [
+        "d̄ = (d₁ + d₂ + d₃)/3; Δd = trung bình |dᵢ − d̄|.",
+        "v̄ = 2d̄f.",
+        "δ = Δd/d̄ (+ Δf/f).",
+        "Viết v = v̄ ± Δv, Δv = δ·v̄."
+      ],
+      "notes": [
+        "Sai số dụng cụ thêm nửa độ chia nhỏ nhất.",
+        "So sánh v̄ với 340 m/s."
+      ],
+      "sample": {
+        "problem": "d = 0,34; 0,35; 0,33 m, f = 500 Hz. Tính v̄ và δ.",
+        "steps": [
+          "d̄ = 0,34 m; Δd = 0,0067 m.",
+          "v̄ = 340 m/s; δ = 0,0067/0,34 ≈ 2%."
+        ],
+        "answer": "v̄ = 340 m/s; δ ≈ 2%"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Giải thích hiện tượng trong thí nghiệm",
+      "when": "Hỏi vì sao âm lúc to lúc nhỏ khi kéo pít-tông; vì sao dùng hiệu l₂ − l₁.",
+      "steps": [
+        "Pít-tông phản xạ sóng, sóng tới và sóng phản xạ giao thoa tạo sóng dừng.",
+        "Khi cột khí thoả điều kiện sóng dừng, biên độ lớn → nghe to nhất.",
+        "Hai lần liên tiếp cách nhau λ/2.",
+        "Dùng hiệu hai lần đo để triệt tiêu sai số đầu ống."
+      ],
+      "notes": [
+        "Sau hai vị trí liên tiếp, pha thay đổi π.",
+        "Cột khí đóng vai trò hộp cộng hưởng."
+      ],
+      "sample": {
+        "problem": "Vì sao âm nghe to nhất ở các vị trí xác định của pít-tông?",
+        "steps": [
+          "Khi đó có sóng dừng trong cột khí.",
+          "Biên độ dao động của không khí lớn nhất."
+        ],
+        "answer": "Do sóng dừng (cộng hưởng) trong cột khí"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "f = 500 Hz, l₁ = 0,16 m, l₂ = 0,50 m. v (m/s)?",
+      "steps": [
+        "d = 0,34 m.",
+        "v = 2·0,34·500 = 340 m/s."
+      ],
+      "expr": "2*(0.5-0.16)*500",
+      "answer": "340"
+    },
+    {
+      "problem": "Ba lần đo d = 0,34; 0,35; 0,33 m. d̄ (m)?",
+      "steps": [
+        "d̄ = (0,34 + 0,35 + 0,33)/3.",
+        "= 0,34 m."
+      ],
+      "expr": "(0.34+0.35+0.33)/3",
+      "answer": "17/50"
+    },
+    {
+      "problem": "d̄ = 0,34 m, f = 500 Hz. v̄ (m/s)?",
+      "steps": [
+        "v̄ = 2d̄f.",
+        "= 340 m/s."
+      ],
+      "expr": "2*0.34*500",
+      "answer": "340"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hai vị trí âm to nhất liên tiếp cách nhau d = 0,34 m. λ (m) là:",
+      "expr": "2*0.34",
+      "answer": "17/25",
+      "explain": "λ = 2d = 0,68 m.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "λ = 0,68 m, f = 500 Hz. v (m/s):",
+      "expr": "0.68*500",
+      "answer": "340",
+      "explain": "v = 340 m/s.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tốc độ truyền âm trong không khí khoảng (m/s):",
+      "expr": "340",
+      "answer": "340",
+      "explain": "Khoảng 340 m/s.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Âm nghe to nhất khi cột khí trong ống có:",
+      "choices": [
+        "sóng dừng",
+        "sóng chạy",
+        "không có sóng",
+        "biên độ nhỏ nhất"
+      ],
+      "answer": 0,
+      "explain": "Cộng hưởng sóng dừng.",
+      "wrong_explain": {
+        "1": "Sóng dừng mới cho biên độ lớn.",
+        "2": "Phải có sóng.",
+        "3": "Biên độ lớn nhất."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khoảng cách giữa hai vị trí pít-tông cho âm to nhất liên tiếp bằng:",
+      "choices": [
+        "λ/2",
+        "λ",
+        "λ/4",
+        "2λ"
+      ],
+      "answer": 0,
+      "explain": "Hai bụng/nút liên tiếp cách nhau λ/2.",
+      "wrong_explain": {
+        "1": "Bằng nửa bước sóng.",
+        "2": "Là nút – bụng.",
+        "3": "Quá lớn."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "l₁ = 0,16 m, l₂ = 0,50 m, f = 500 Hz. v (m/s):",
+      "expr": "2*(0.5-0.16)*500",
+      "answer": "340",
+      "explain": "v = 340 m/s.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ba lần đo d = 0,34; 0,35; 0,33 m. d̄ (m):",
+      "expr": "(0.34+0.35+0.33)/3",
+      "answer": "17/50",
+      "explain": "d̄ = 0,34 m.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "d̄ = 0,34 m, f = 500 Hz. v̄ (m/s):",
+      "expr": "2*0.34*500",
+      "answer": "340",
+      "explain": "v̄ = 340 m/s.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "f = 1000 Hz, d = 0,17 m. v (m/s):",
+      "expr": "2*0.17*1000",
+      "answer": "340",
+      "explain": "v = 340 m/s.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "f = 400 Hz, d = 0,425 m. v (m/s):",
+      "expr": "2*0.425*400",
+      "answer": "340",
+      "explain": "v = 340 m/s.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao dùng hiệu l₂ − l₁ để tính λ?",
+      "choices": [
+        "loại bỏ sai số hiệu chỉnh ở đầu ống",
+        "cho kết quả lớn hơn",
+        "dễ đo hơn",
+        "không cần đo tần số"
+      ],
+      "answer": 0,
+      "explain": "Sóng không phản xạ đúng tại miệng ống.",
+      "wrong_explain": {
+        "1": "Mục đích là chính xác.",
+        "2": "Không phải do dễ đo.",
+        "3": "Vẫn cần f."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Sai số: Δd = 0,0067 m, d̄ = 0,34 m. Sai số tỉ đối (%) ≈ 100·0,0067/0,34:",
+      "expr": "(0.0067*100)/(0.34)",
+      "answer": "67/34",
+      "explain": "≈ 2%.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "δ = 2% và v̄ = 340 m/s. Δv (m/s):",
+      "expr": "0.02*340",
+      "answer": "34/5",
+      "explain": "Δv = 6,8 m/s.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Máy phát f = 440 Hz, d = 0,386 m (gần đúng). v (m/s) = 2df:",
+      "expr": "2*0.386*440",
+      "answer": "8492/25",
+      "explain": "v ≈ 339,7 m/s.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tốc độ âm trong nước 1500 m/s, f = 500 Hz. λ (m):",
+      "expr": "1500/500",
+      "answer": "3",
+      "explain": "λ = 3 m.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tốc độ âm trong không khí tăng khi nhiệt độ tăng. Nếu v = 340 m/s, f = 680 Hz thì d = λ/2 (m):",
+      "expr": "340/680/2",
+      "answer": "1/4",
+      "explain": "d = 0,25 m.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nếu ống rất ngắn so với bước sóng thì khó thấy hai cực đại liên tiếp. Giải pháp:",
+      "choices": [
+        "dùng tần số lớn hơn (λ nhỏ hơn)",
+        "dùng tần số nhỏ hơn",
+        "tăng biên độ nguồn",
+        "bỏ pít-tông"
+      ],
+      "answer": 0,
+      "explain": "λ nhỏ cho nhiều cực đại hơn trong ống.",
+      "wrong_explain": {
+        "1": "Tần số nhỏ làm λ lớn.",
+        "2": "Biên độ không đổi λ.",
+        "3": "Phải có pít-tông."
+      },
+      "id": "q17"
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "id": "bai-23",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 4. Dòng điện. Mạch điện",
+  "lesson": "Bài 23. Điện trở. Định luật Ohm",
+  "section": "",
+  "bookPage": 95,
+  "requirements": [
+    "Nêu được khái niệm điện trở, định luật Ohm, đặc tuyến vôn-ampe và sự phụ thuộc của điện trở vào kích thước, vật liệu, nhiệt độ.",
+    "Vận dụng I = U/R, R = ρl/S và công thức ghép điện trở nối tiếp, song song."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Điện trở của vật dẫn đặc trưng cho mức độ cản trở dòng điện của vật dẫn đó: R = U/I; đơn vị ôm (Ω), 1 Ω = 1 V/A. Định luật Ohm: cường độ dòng điện qua vật dẫn kim loại ở nhiệt độ không đổi tỉ lệ thuận với hiệu điện thế giữa hai đầu vật dẫn."
+    },
+    {
+      "type": "formula",
+      "content": "I = U/R;   U = IR.   Điện trở dây dẫn: R = ρ·l/S  (ρ: điện trở suất (Ω·m), l: chiều dài, S: tiết diện)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b23-dac-tuyen-vol-ampe.svg",
+      "caption": "Đặc tuyến vôn–ampe: điện trở thuần là đường thẳng đi qua gốc (hệ số góc 1/R); dây tóc bóng đèn là đường cong vì R tăng theo nhiệt độ"
+    },
+    {
+      "type": "text",
+      "content": "Điện trở của kim loại tăng theo nhiệt độ: R = R₀[1 + α(t − t₀)] (α: hệ số nhiệt điện trở). Điện trở suất phụ thuộc vật liệu (bạc, đồng, nhôm nhỏ; nicrom lớn). Điện trở của nhiệt điện trở (thermistor) thay đổi mạnh theo nhiệt độ; quang điện trở thay đổi theo ánh sáng."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b23-ghep-dien-tro.svg",
+      "caption": "Ghép điện trở: nối tiếp (cùng cường độ I, điện trở tăng) và song song (cùng hiệu điện thế U, điện trở giảm)"
+    },
+    {
+      "type": "formula",
+      "content": "Nối tiếp: R = R₁ + R₂ + …;  I = I₁ = I₂;  U = U₁ + U₂.   Song song: 1/R = 1/R₁ + 1/R₂ + …;  U = U₁ = U₂;  I = I₁ + I₂."
+    },
+    {
+      "type": "method",
+      "title": "Tính I, U, R theo định luật Ohm",
+      "when": "Cho hai trong ba đại lượng U, I, R của một đoạn mạch hoặc một điện trở.",
+      "steps": [
+        "Viết I = U/R, U = IR hoặc R = U/I.",
+        "Đổi đơn vị (mA → A, kΩ → Ω).",
+        "Thay số.",
+        "Kiểm tra: tăng U thì I tăng (R không đổi)."
+      ],
+      "notes": [
+        "Chỉ áp dụng cho vật dẫn kim loại ở nhiệt độ không đổi.",
+        "Đồ thị I–U là đường thẳng đi qua gốc."
+      ],
+      "sample": {
+        "problem": "Đặt U = 12 V vào R = 6 Ω. Tính I.",
+        "steps": [
+          "I = U/R = 12/6.",
+          "= 2 A."
+        ],
+        "answer": "2 A"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tính điện trở dây dẫn và sự phụ thuộc nhiệt độ",
+      "when": "Cho ρ, l, S hoặc cho R ở nhiệt độ này, tìm R ở nhiệt độ khác.",
+      "steps": [
+        "R = ρl/S (S đổi về m²).",
+        "So sánh tỉ lệ: R ∝ l, R ∝ 1/S.",
+        "R(t) = R₀[1 + α(t − t₀)].",
+        "Thay số."
+      ],
+      "notes": [
+        "Gấp đôi chiều dài thì R gấp đôi; gấp đôi tiết diện thì R giảm một nửa.",
+        "Kim loại: α > 0."
+      ],
+      "sample": {
+        "problem": "Dây đồng ρ = 1,7·10⁻⁸ Ω·m, l = 100 m, S = 1 mm². Tính R.",
+        "steps": [
+          "S = 10⁻⁶ m².",
+          "R = 1,7·10⁻⁸·100/10⁻⁶ = 1,7 Ω."
+        ],
+        "answer": "1,7 Ω"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tính điện trở tương đương và dòng điện trong mạch ghép",
+      "when": "Mạch có nhiều điện trở nối tiếp, song song hoặc hỗn hợp.",
+      "steps": [
+        "Nhận dạng cách ghép từng đoạn.",
+        "Tính R_tđ theo công thức nối tiếp/song song.",
+        "I = U/R_tđ.",
+        "Tính U₁, I₁ của từng nhánh từ nơi chung."
+      ],
+      "notes": [
+        "Hai điện trở song song: R = R₁R₂/(R₁ + R₂).",
+        "Song song: R_tđ nhỏ hơn điện trở nhỏ nhất."
+      ],
+      "sample": {
+        "problem": "R₁ = 6 Ω song song R₂ = 3 Ω nối U = 12 V. Tính R_tđ và I.",
+        "steps": [
+          "R = 6·3/(6 + 3) = 2 Ω.",
+          "I = 12/2 = 6 A."
+        ],
+        "answer": "R = 2 Ω; I = 6 A"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "U = 12 V, R = 6 Ω. I (A)?",
+      "steps": [
+        "I = U/R.",
+        "= 2 A."
+      ],
+      "expr": "12/6",
+      "answer": "2"
+    },
+    {
+      "problem": "Dây đồng ρ = 1,7·10⁻⁸ Ω·m, l = 100 m, S = 1 mm². R (Ω)?",
+      "steps": [
+        "R = ρl/S.",
+        "= 1,7 Ω."
+      ],
+      "expr": "(0.000000017*100)/(0.000001)",
+      "answer": "17/10"
+    },
+    {
+      "problem": "R₁ = 6 Ω song song R₂ = 3 Ω. R (Ω)?",
+      "steps": [
+        "R = 6·3/(6 + 3).",
+        "= 2 Ω."
+      ],
+      "expr": "(6*3)/(6+3)",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "U = 12 V, R = 6 Ω. I (A):",
+      "expr": "12/6",
+      "answer": "2",
+      "explain": "I = 2 A.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "I = 0,5 A, R = 20 Ω. U (V):",
+      "expr": "0.5*20",
+      "answer": "10",
+      "explain": "U = 10 V.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "U = 6 V, I = 0,3 A. R (Ω):",
+      "expr": "(6)/(0.3)",
+      "answer": "20",
+      "explain": "R = 20 Ω.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đặc tuyến vôn–ampe của điện trở thuần là:",
+      "choices": [
+        "đường thẳng qua gốc toạ độ",
+        "đường cong",
+        "đường thẳng song song trục U",
+        "đường tròn"
+      ],
+      "answer": 0,
+      "explain": "I = U/R tỉ lệ thuận U.",
+      "wrong_explain": {
+        "1": "Cong là bóng đèn dây tóc.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điện trở của dây dẫn kim loại tăng khi:",
+      "choices": [
+        "nhiệt độ tăng",
+        "tiết diện tăng",
+        "chiều dài giảm",
+        "hiệu điện thế giảm"
+      ],
+      "answer": 0,
+      "explain": "Kim loại: R tăng theo nhiệt độ.",
+      "wrong_explain": {
+        "1": "S tăng thì R giảm.",
+        "2": "l giảm thì R giảm.",
+        "3": "R không phụ thuộc U."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Công thức điện trở của dây dẫn là:",
+      "choices": [
+        "R = ρl/S",
+        "R = ρS/l",
+        "R = lS/ρ",
+        "R = ρlS"
+      ],
+      "answer": 0,
+      "explain": "Tỉ lệ l, tỉ lệ nghịch S.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Dây đồng ρ = 1,7·10⁻⁸ Ω·m, l = 100 m, S = 10⁻⁶ m². R (Ω):",
+      "expr": "(0.000000017*100)/(0.000001)",
+      "answer": "17/10",
+      "explain": "R = 1,7 Ω.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Dây có R = 4 Ω; gấp đôi chiều dài. R mới (Ω):",
+      "expr": "2*4",
+      "answer": "8",
+      "explain": "R′ = 8 Ω.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Dây có R = 4 Ω; gấp đôi tiết diện. R mới (Ω):",
+      "expr": "4/2",
+      "answer": "2",
+      "explain": "R′ = 2 Ω.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "R₁ = 6 Ω nối tiếp R₂ = 3 Ω. R (Ω):",
+      "expr": "6+3",
+      "answer": "9",
+      "explain": "R = 9 Ω.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "R₁ = 6 Ω song song R₂ = 3 Ω. R (Ω):",
+      "expr": "(6*3)/(6+3)",
+      "answer": "2",
+      "explain": "R = 2 Ω.",
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai điện trở nối tiếp thì:",
+      "choices": [
+        "cường độ dòng điện qua hai điện trở bằng nhau",
+        "hiệu điện thế hai đầu bằng nhau",
+        "điện trở tương đương nhỏ hơn mỗi điện trở",
+        "dòng điện chia đôi"
+      ],
+      "answer": 0,
+      "explain": "Nối tiếp: I chung.",
+      "wrong_explain": {
+        "1": "U chung là song song.",
+        "2": "Nối tiếp thì R lớn hơn.",
+        "3": "Dòng điện không chia."
+      },
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "R₁ = 6 Ω ∥ R₂ = 3 Ω nối U = 12 V. I (A):",
+      "expr": "(12)/((6*3)/(6+3))",
+      "answer": "6",
+      "explain": "R = 2 Ω; I = 6 A.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "R₁ = 4 Ω nối tiếp R₂ = 8 Ω, U = 24 V. I (A):",
+      "expr": "(24)/(4+8)",
+      "answer": "2",
+      "explain": "I = 2 A.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cùng mạch (R₁ = 4 Ω, R₂ = 8 Ω nối tiếp, I = 2 A). U₂ (V):",
+      "expr": "2*8",
+      "answer": "16",
+      "explain": "U₂ = 16 V.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dây tóc R₀ = 10 Ω ở 20 °C, α = 0,004 K⁻¹. Ở 270 °C: R = 10(1 + 0,004·250) (Ω):",
+      "expr": "10*(1+0.004*250)",
+      "answer": "20",
+      "explain": "R = 20 Ω.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Ba điện trở 6 Ω song song: R (Ω):",
+      "expr": "6/3",
+      "answer": "2",
+      "explain": "R = 2 Ω.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai điện trở song song R₁ < R₂. Điện trở tương đương:",
+      "choices": [
+        "nhỏ hơn R₁",
+        "lớn hơn R₂",
+        "bằng R₁ + R₂",
+        "bằng trung bình cộng"
+      ],
+      "answer": 0,
+      "explain": "1/R = 1/R₁ + 1/R₂ > 1/R₁.",
+      "wrong_explain": {
+        "1": "Không thể lớn hơn.",
+        "2": "Đó là nối tiếp.",
+        "3": "Không phải trung bình."
+      },
+      "id": "q18"
+    }
+  ]
+}

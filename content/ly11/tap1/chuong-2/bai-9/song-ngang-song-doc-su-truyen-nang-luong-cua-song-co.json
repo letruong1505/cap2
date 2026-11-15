@@ -1,0 +1,348 @@
+{
+  "id": "bai-9",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 2. Sóng",
+  "lesson": "Bài 9. Sóng ngang, sóng dọc. Sự truyền năng lượng của sóng cơ",
+  "section": "",
+  "bookPage": 37,
+  "requirements": [
+    "Phân biệt được sóng ngang và sóng dọc; nêu ví dụ thực tế.",
+    "Giải thích được sóng truyền năng lượng chứ không truyền phần tử vật chất và vận dụng mô hình sóng giải thích tính chất của âm."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Sóng ngang là sóng trong đó các phần tử môi trường dao động theo phương vuông góc với phương truyền sóng (sóng trên mặt nước, sóng trên dây đàn hồi). Sóng ngang chỉ truyền được trong chất rắn và trên bề mặt chất lỏng."
+    },
+    {
+      "type": "text",
+      "content": "Sóng dọc là sóng trong đó các phần tử môi trường dao động theo phương trùng với phương truyền sóng (sóng trên lò xo, sóng âm trong không khí). Sóng dọc truyền được trong chất rắn, lỏng và khí; trong sóng dọc xuất hiện các vùng nén và dãn xen kẽ."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b9-song-ngang-song-doc.svg",
+      "caption": "Sóng ngang (dao động vuông góc phương truyền) và sóng dọc (dao động dọc theo phương truyền, có vùng nén – dãn)"
+    },
+    {
+      "type": "text",
+      "content": "Quá trình truyền sóng là quá trình truyền năng lượng: sóng mang năng lượng của nguồn đến mọi nơi trên phương truyền sóng mà không mang các phần tử vật chất đi theo. Sóng càng lớn thì năng lượng truyền đi càng nhiều; cường độ sóng giảm khi ra xa nguồn."
+    },
+    {
+      "type": "text",
+      "content": "Mô hình sóng dọc trên lò xo giúp giải thích sóng âm: nguồn âm dao động làm các phân tử không khí dao động dọc theo phương truyền, tạo ra các lớp khí nén – dãn lan truyền. Biên độ sóng âm càng lớn thì âm nghe càng to; tần số càng lớn thì âm nghe càng cao. Tai người nghe được âm có tần số từ khoảng 16 Hz đến 20 000 Hz. Ánh sáng cũng là sóng (sóng điện từ, sóng ngang), truyền được trong chân không."
+    },
+    {
+      "type": "method",
+      "title": "Nhận biết sóng ngang, sóng dọc",
+      "when": "Cho hình vẽ hoặc mô tả thí nghiệm và hỏi sóng thuộc loại nào, truyền được trong môi trường nào.",
+      "steps": [
+        "Xác định phương dao động của phần tử và phương truyền sóng.",
+        "Hai phương vuông góc → sóng ngang; trùng nhau → sóng dọc.",
+        "Sóng dọc có vùng nén – dãn; sóng ngang có ngọn – lõm.",
+        "Nhớ: chất lỏng, chất khí chỉ truyền sóng dọc (trừ sóng mặt nước)."
+      ],
+      "notes": [
+        "Sóng âm trong không khí là sóng dọc.",
+        "Sóng điện từ là sóng ngang."
+      ],
+      "sample": {
+        "problem": "Sóng trên lò xo khi tay dao động dọc theo trục lò xo thuộc loại nào?",
+        "steps": [
+          "Phần tử dao động trùng phương truyền sóng.",
+          "Đó là sóng dọc."
+        ],
+        "answer": "Sóng dọc"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tính bước sóng của sóng âm và sóng ánh sáng",
+      "when": "Cho tần số, tốc độ truyền, tìm bước sóng; hoặc cho dải tần số nghe được.",
+      "steps": [
+        "λ = v/f.",
+        "Bước sóng ngắn nhất ứng với tần số lớn nhất; dài nhất ứng với tần số nhỏ nhất.",
+        "Âm trong không khí v ≈ 330–340 m/s; ánh sáng c = 3·10⁸ m/s.",
+        "Đổi đơn vị m, cm, μm."
+      ],
+      "notes": [
+        "Trong chân không mọi ánh sáng có cùng tốc độ c.",
+        "λ và f tỉ lệ nghịch khi v không đổi."
+      ],
+      "sample": {
+        "problem": "Tai nghe được từ 30 Hz đến 16 000 Hz, v = 330 m/s. Tìm λ ngắn nhất.",
+        "steps": [
+          "λ_min ứng với f_max = 16 000 Hz.",
+          "λ = 330/16000 ≈ 0,0206 m ≈ 2,06 cm."
+        ],
+        "answer": "≈ 2,06 cm"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Giải thích sự truyền năng lượng và tính chất của âm",
+      "when": "Hỏi vì sao sóng truyền năng lượng; vì sao âm to/nhỏ, cao/thấp; so sánh hình dao động kí.",
+      "steps": [
+        "Sóng mang năng lượng từ nguồn → phần tử môi trường dao động, tốc độ sóng khác tốc độ phần tử.",
+        "Biên độ lớn → âm to; biên độ nhỏ → âm nhỏ.",
+        "Tần số lớn (chu kì ngắn) → âm cao (thanh); tần số nhỏ → âm trầm.",
+        "Trên dao động kí: biên độ đọc theo trục dọc, chu kì theo trục ngang."
+      ],
+      "notes": [
+        "Độ cao ứng với tần số; độ to ứng với biên độ (mức cường độ).",
+        "Phần tử chỉ dao động tại chỗ, không chuyển động theo sóng."
+      ],
+      "sample": {
+        "problem": "Hình dao động kí A có biên độ 2 ô, chu kì 4 ô; hình B có biên độ 4 ô, chu kì 4 ô. Âm nào to hơn, cao hơn?",
+        "steps": [
+          "B có biên độ lớn hơn: to hơn.",
+          "Chu kì bằng nhau nên độ cao như nhau."
+        ],
+        "answer": "B to hơn; độ cao như nhau"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tai nghe âm tần số cao nhất 16 000 Hz, v = 330 m/s. Bước sóng ngắn nhất (m)?",
+      "steps": [
+        "λ = v/f.",
+        "= 330/16000 ≈ 0,0206 m."
+      ],
+      "expr": "330/16000",
+      "answer": "33/1600"
+    },
+    {
+      "problem": "Âm f = 440 Hz truyền với v = 330 m/s. Bước sóng λ (m)?",
+      "steps": [
+        "λ = 330/440.",
+        "= 0,75 m."
+      ],
+      "expr": "330/440",
+      "answer": "3/4"
+    },
+    {
+      "problem": "Ánh sáng đỏ có f = 4·10¹⁴ Hz, c = 3·10⁸ m/s. λ tính theo nm là 3·10⁸/(4·10¹⁴)·10⁹ = ?",
+      "steps": [
+        "λ = c/f = 7,5·10⁻⁷ m.",
+        "= 750 nm."
+      ],
+      "expr": "(300000000)/(400000000000000)*1000000000",
+      "answer": "750"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sóng trong đó các phần tử dao động vuông góc phương truyền là:",
+      "choices": [
+        "sóng ngang",
+        "sóng dọc",
+        "sóng âm trong không khí",
+        "sóng nén"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa sóng ngang.",
+      "wrong_explain": {
+        "1": "Sóng dọc dao động trùng phương truyền.",
+        "2": "Sóng âm trong không khí là sóng dọc.",
+        "3": "Sóng nén là sóng dọc."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sóng âm truyền trong không khí là:",
+      "choices": [
+        "sóng dọc",
+        "sóng ngang",
+        "sóng điện từ",
+        "sóng vô tuyến"
+      ],
+      "answer": 0,
+      "explain": "Các lớp khí nén – dãn dọc phương truyền.",
+      "wrong_explain": {
+        "1": "Không phải sóng ngang.",
+        "2": "Không phải sóng điện từ.",
+        "3": "Không phải sóng vô tuyến."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sóng truyền đi mang theo:",
+      "choices": [
+        "năng lượng, không mang phần tử vật chất",
+        "phần tử vật chất",
+        "cả năng lượng và vật chất",
+        "không mang gì"
+      ],
+      "answer": 0,
+      "explain": "Phần tử chỉ dao động tại chỗ.",
+      "wrong_explain": {
+        "1": "Phần tử không đi theo sóng.",
+        "2": "Không mang vật chất.",
+        "3": "Sóng có mang năng lượng."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Âm nghe càng cao khi sóng âm có:",
+      "choices": [
+        "tần số càng lớn",
+        "biên độ càng lớn",
+        "tốc độ càng lớn",
+        "bước sóng càng lớn"
+      ],
+      "answer": 0,
+      "explain": "Độ cao ứng với tần số.",
+      "wrong_explain": {
+        "1": "Biên độ ứng với độ to.",
+        "2": "Tốc độ phụ thuộc môi trường.",
+        "3": "λ lớn thì f nhỏ."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Âm f = 440 Hz, v = 330 m/s. Bước sóng λ (m) là:",
+      "expr": "330/440",
+      "answer": "3/4",
+      "explain": "λ = 0,75 m.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Âm f = 1000 Hz, v = 340 m/s. Bước sóng λ (m) là:",
+      "expr": "340/1000",
+      "answer": "17/50",
+      "explain": "λ = 0,34 m.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ánh sáng nhìn thấy có f = 5·10¹⁴ Hz. λ (nm) = 3·10⁸/(5·10¹⁴)·10⁹ là:",
+      "expr": "(300000000)/(500000000000000)*1000000000",
+      "answer": "600",
+      "explain": "λ = 600 nm.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Sóng truyền được 3 bước sóng trong 6 s. Chu kì T (s) là:",
+      "expr": "6/3",
+      "answer": "2",
+      "explain": "Một chu kì sóng truyền được 1 bước sóng: T = 2 s.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chu kì âm 0,002 s. Tần số f (Hz) là:",
+      "expr": "(1)/(0.002)",
+      "answer": "500",
+      "explain": "f = 500 Hz.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nếu biên độ sóng âm tăng nhưng tần số không đổi thì âm nghe:",
+      "choices": [
+        "to hơn, độ cao không đổi",
+        "cao hơn",
+        "trầm hơn",
+        "nhỏ hơn"
+      ],
+      "answer": 0,
+      "explain": "Độ to phụ thuộc biên độ.",
+      "wrong_explain": {
+        "1": "Độ cao ứng với tần số.",
+        "2": "Độ trầm ứng với tần số.",
+        "3": "Biên độ tăng nên to hơn."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tai nghe từ 30 Hz đến 16 000 Hz, v = 330 m/s. λ ngắn nhất (m) = 330/16000 là:",
+      "expr": "330/16000",
+      "answer": "33/1600",
+      "explain": "≈ 0,0206 m.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cùng f = 440 Hz, tốc độ âm trong nước là 1500 m/s. λ trong nước (m) là (nhập 1500/440):",
+      "expr": "1500/440",
+      "answer": "75/22",
+      "explain": "λ ≈ 3,41 m.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Âm truyền từ không khí (v = 340 m/s) vào nước (v = 1500 m/s). Tần số thay đổi hay không (nhập 1: không đổi, 0: đổi)?",
+      "expr": "1",
+      "answer": "1",
+      "explain": "Tần số do nguồn quyết định nên không đổi.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ánh sáng từ Mặt Trời đến Trái Đất mất 500 s; c = 3·10⁸ m/s. Khoảng cách (nhập số, đơn vị 10⁸ m, tức 3·500):",
+      "expr": "3*500",
+      "answer": "1500",
+      "explain": "s = 1500·10⁸ m = 1,5·10¹¹ m.",
+      "id": "q14"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Sóng âm có f = 500 Hz, v = 340 m/s. Hai điểm gần nhất cùng pha cách nhau (m):",
+      "expr": "340/500",
+      "answer": "17/25",
+      "explain": "λ = 0,68 m.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sóng dọc KHÔNG truyền được trong:",
+      "choices": [
+        "chân không",
+        "thép",
+        "nước",
+        "không khí"
+      ],
+      "answer": 0,
+      "explain": "Cần môi trường vật chất đàn hồi.",
+      "wrong_explain": {
+        "1": "Truyền được trong thép.",
+        "2": "Truyền được trong nước.",
+        "3": "Truyền được trong không khí."
+      },
+      "id": "q16"
+    }
+  ]
+}
