@@ -1,0 +1,242 @@
+{
+  "id": "bai-5",
+  "grade": 12,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Hóa học 12",
+  "chapter": "Chương 2. Carbohydrate",
+  "lesson": "Bài 5. Saccharose và maltose",
+  "section": "",
+  "bookPage": 25,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Saccharose có công thức phân tử C₁₂H₂₂O₁₁, cấu tạo từ một đơn vị α-glucose và một đơn vị β-fructose qua liên kết α-1,2-glycoside. Phân tử saccharose không còn nhóm –OH hemiacetal tự do nên chỉ tồn tại ở dạng mạch vòng, không có tính khử."
+    },
+    {
+      "type": "text",
+      "content": "Maltose có công thức phân tử C₁₂H₂₂O₁₁, cấu tạo từ hai đơn vị glucose qua liên kết α-1,4-glycoside. Phân tử maltose còn một nhóm –OH hemiacetal tự do nên có thể mở vòng, tồn tại cả dạng mạch vòng và mở vòng, và có tính khử (tham gia phản ứng với thuốc thử Tollens)."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất của saccharose: (1) polyalcohol: hòa tan Cu(OH)₂ trong môi trường kiềm tạo dung dịch xanh lam: 2C₁₂H₂₂O₁₁ + Cu(OH)₂ → (C₁₂H₂₁O₁₁)₂Cu + 2H₂O. (2) thủy phân trong môi trường acid hoặc enzyme tạo glucose và fructose; saccharose không phản ứng với thuốc thử Tollens nhưng sau khi thủy phân thì sản phẩm phản ứng được."
+    },
+    {
+      "type": "formula",
+      "content": "C₁₂H₂₂O₁₁ + H₂O → C₆H₁₂O₆ (glucose) + C₆H₁₂O₆ (fructose)"
+    },
+    {
+      "type": "text",
+      "content": "Maltose bị thủy phân tạo hai phân tử glucose. Saccharose có nhiều trong cây mía, củ cải đường, hoa thốt nốt, dùng làm chất tạo ngọt (bánh, kẹo, nước giải khát). Maltose có trong hạt nảy mầm, hình thành khi thủy phân tinh bột, dùng sản xuất bia và làm chất tạo ngọt."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Thủy phân hoàn toàn 34,2 g saccharose (M = 342) trong môi trường acid. Tính tổng số mol monosaccharide thu được.",
+      "steps": [
+        "n(saccharose) = 34,2/342 = 0,1 mol.",
+        "1 mol saccharose tạo 1 mol glucose và 1 mol fructose, tức 2 mol monosaccharide.",
+        "Tổng = 0,2 mol."
+      ],
+      "expr": "34.2/342*2",
+      "answer": "0.2"
+    },
+    {
+      "problem": "Thủy phân hoàn toàn 34,2 g saccharose rồi cho toàn bộ sản phẩm tráng bạc hoàn toàn. Tính khối lượng Ag thu được (Ag = 108).",
+      "steps": [
+        "Thu 0,1 mol glucose và 0,1 mol fructose; mỗi chất cho 2 Ag/mol.",
+        "n(Ag) = 0,4 mol.",
+        "m(Ag) = 0,4 × 108 = 43,2 g."
+      ],
+      "expr": "34.2/342*2*2*108",
+      "answer": "43.2"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Saccharose được cấu tạo từ:",
+      "choices": [
+        "Hai gốc α-glucose",
+        "Hai gốc β-fructose",
+        "Nhiều gốc α-glucose",
+        "Một gốc α-glucose và một gốc β-fructose"
+      ],
+      "answer": 3,
+      "explain": "Saccharose gồm α-glucose và β-fructose nối bằng liên kết α-1,2-glycoside.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đây là cấu tạo của maltose.",
+        "1": "Saccharose có một gốc glucose.",
+        "2": "Đây là cấu tạo của tinh bột."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Maltose được cấu tạo từ hai đơn vị:",
+      "choices": [
+        "Glucose, liên kết α-1,2-glycoside",
+        "Glucose, liên kết α-1,4-glycoside",
+        "Fructose, liên kết β-1,4-glycoside",
+        "Glucose, liên kết β-1,4-glycoside"
+      ],
+      "answer": 1,
+      "explain": "Maltose do hai đơn vị α-glucose nối bằng liên kết α-1,4-glycoside.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Liên kết α-1,2-glycoside là của saccharose.",
+        "2": "Maltose không chứa fructose.",
+        "3": "Liên kết β-1,4 có trong cellulose."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Saccharose có nhiều nhất trong:",
+      "choices": [
+        "Cây mía, củ cải đường, hoa thốt nốt",
+        "Hạt nảy mầm",
+        "Mật ong",
+        "Quả nho chín"
+      ],
+      "answer": 0,
+      "explain": "Mía, củ cải đường và hoa thốt nốt là nguồn saccharose chính.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Hạt nảy mầm chứa nhiều maltose.",
+        "2": "Mật ong chứa nhiều fructose và glucose.",
+        "3": "Quả nho chủ yếu chứa glucose và fructose."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao saccharose chỉ tồn tại ở dạng mạch vòng, còn maltose tồn tại cả mạch vòng và mở vòng?",
+      "choices": [
+        "Saccharose có phân tử khối lớn hơn maltose",
+        "Maltose không có liên kết glycoside",
+        "Saccharose không có nhóm –OH hemiacetal tự do, maltose còn một nhóm –OH hemiacetal",
+        "Saccharose không tan trong nước"
+      ],
+      "answer": 2,
+      "explain": "Ở saccharose, cả hai nhóm –OH hemiacetal đều đã tham gia liên kết glycoside; ở maltose còn một nhóm tự do nên vòng có thể mở.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Hai chất có cùng phân tử khối.",
+        "1": "Maltose có liên kết α-1,4-glycoside.",
+        "3": "Saccharose tan tốt trong nước."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dung dịch saccharose không phản ứng với thuốc thử Tollens, nhưng sau khi đun nóng với acid loãng thì phản ứng được. Giải thích đúng là:",
+      "choices": [
+        "Saccharose bị oxi hóa thành glucose",
+        "Acid làm saccharose trở thành aldehyde",
+        "Saccharose bị khử thành glucose",
+        "Saccharose bị thủy phân tạo glucose và fructose"
+      ],
+      "answer": 3,
+      "explain": "Sản phẩm thủy phân (glucose, fructose) có phản ứng tráng bạc.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Phản ứng thủy phân, không phải oxi hóa.",
+        "1": "Acid chỉ xúc tác thủy phân.",
+        "2": "Quá trình này không phải phản ứng khử."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nhận xét nào về maltose là đúng?",
+      "choices": [
+        "Maltose không bị thủy phân",
+        "Maltose tham gia phản ứng với thuốc thử Tollens",
+        "Maltose gồm một gốc glucose và một gốc fructose",
+        "Maltose không hòa tan Cu(OH)₂"
+      ],
+      "answer": 1,
+      "explain": "Maltose còn nhóm –OH hemiacetal nên có tính khử.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Maltose bị thủy phân tạo 2 phân tử glucose.",
+        "2": "Đó là saccharose.",
+        "3": "Maltose có nhiều nhóm –OH kề nhau nên hòa tan Cu(OH)₂."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Thủy phân hoàn toàn 34,2 g saccharose (M = 342). Tổng số mol monosaccharide thu được là bao nhiêu? (nhập số thập phân)",
+      "expr": "34.2/342*2",
+      "answer": "0.2",
+      "explain": "n(saccharose) = 0,1 mol → 0,1 mol glucose + 0,1 mol fructose = 0,2 mol.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Thủy phân hoàn toàn 34,2 g maltose (M = 342) thu được bao nhiêu gam glucose (M = 180)?",
+      "expr": "34.2/342*2*180",
+      "answer": "36",
+      "explain": "n(maltose) = 0,1 mol → 0,2 mol glucose → 36 g.",
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thủy phân hoàn toàn 34,2 g saccharose rồi cho sản phẩm tráng bạc hoàn toàn thu được bao nhiêu gam Ag? (Ag = 108)",
+      "expr": "34.2/342*2*2*108",
+      "answer": "43.2",
+      "explain": "Cả glucose và fructose đều cho 2 Ag/mol: n(Ag) = 0,4 mol → 43,2 g.",
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thủy phân 1 mol saccharose với hiệu suất 60%. Số mol saccharose đã bị thủy phân là bao nhiêu? (nhập số thập phân)",
+      "expr": "1*60/100",
+      "answer": "0.6",
+      "explain": "Lượng bị thủy phân = 1 × 60% = 0,6 mol.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thủy phân hoàn toàn 68,4 g hỗn hợp saccharose và maltose (tỉ lệ mol 1 : 1) thu được tối đa bao nhiêu mol glucose?",
+      "expr": "68.4/684*3",
+      "answer": "0.3",
+      "explain": "Mỗi cặp (1 saccharose + 1 maltose) = 684 g tạo 3 glucose: n = 68,4/684 × 3 = 0,3 mol.",
+      "id": "q11"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Phát biểu nào đúng khi so sánh saccharose và maltose?",
+      "choices": [
+        "Cả hai đều có tính khử",
+        "Cả hai đều không bị thủy phân",
+        "Cùng công thức phân tử C₁₂H₂₂O₁₁ nhưng chỉ maltose có tính khử",
+        "Chỉ saccharose hòa tan Cu(OH)₂"
+      ],
+      "answer": 2,
+      "explain": "Hai chất là đồng phân; maltose còn nhóm –OH hemiacetal tự do nên có tính khử, saccharose thì không.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Saccharose không có nhóm –OH hemiacetal tự do nên không có tính khử.",
+        "1": "Cả hai đều bị thủy phân.",
+        "3": "Cả hai đều hòa tan Cu(OH)₂."
+      },
+      "id": "q12"
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "id": "bai-2",
+  "grade": 12,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Hóa học 12",
+  "chapter": "Chương 1. Ester – Lipid",
+  "lesson": "Bài 2. Xà phòng và chất giặt rửa",
+  "section": "",
+  "bookPage": 14,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Xà phòng là hỗn hợp muối sodium hoặc potassium của các acid béo và các chất phụ gia; thành phần chủ yếu thường là sodium palmitate hoặc sodium stearate. Chất giặt rửa tổng hợp là các chất được tổng hợp hóa học có tác dụng giặt rửa như xà phòng nhưng không phải muối của acid béo, thường là muối sodium alkylsulfate hoặc alkylbenzene sulfonate. Quả bồ kết, bồ hòn là chất giặt rửa tự nhiên."
+    },
+    {
+      "type": "text",
+      "content": "Cấu tạo chung gồm hai phần: đầu phân cực ưa nước (nhóm carboxylate –COONa của xà phòng, nhóm sulfate –OSO₃Na hoặc sulfonate –SO₃Na của chất giặt rửa tổng hợp) và đuôi không phân cực kị nước là gốc hydrocarbon mạch dài R."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất giặt rửa: đuôi kị nước thâm nhập vào vết bẩn (dầu mỡ), đầu ưa nước quay ra ngoài; vết bẩn bị chia thành các hạt nhỏ phân tán vào nước và bị rửa trôi. Dung dịch xà phòng có sức căng bề mặt nhỏ nên làm vật cần giặt rửa dễ thấm ướt."
+    },
+    {
+      "type": "text",
+      "content": "Sản xuất xà phòng: đun chất béo với dung dịch NaOH (hoặc KOH) đặc, đó là phản ứng xà phòng hóa. Sau đó muối của acid béo được tách ra (thêm NaCl bão hòa) rồi trộn chất diệt khuẩn, chất tạo hương,… ép thành bánh. Xà phòng còn có thể sản xuất từ dầu mỏ."
+    },
+    {
+      "type": "formula",
+      "content": "(RCOO)₃C₃H₅ + 3NaOH → 3RCOONa + C₃H₅(OH)₃"
+    },
+    {
+      "type": "text",
+      "content": "Chất giặt rửa tổng hợp được sản xuất từ dầu mỏ (qua các giai đoạn tạo alkylbenzene, sulfonate hóa, trung hòa) rồi trộn với phụ gia."
+    },
+    {
+      "type": "text",
+      "content": "Ưu điểm của chất giặt rửa tổng hợp: dễ hòa tan trong nước hơn, dùng được với nước cứng và môi trường acid (xà phòng kém tác dụng). Nhược điểm: một số chất khó phân hủy sinh học nên kém thân thiện với môi trường."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Xà phòng hóa hoàn toàn 0,2 mol chất béo (triglyceride) cần tối thiểu bao nhiêu gam NaOH?",
+      "steps": [
+        "1 mol chất béo phản ứng với 3 mol NaOH.",
+        "n(NaOH) = 0,2 × 3 = 0,6 mol.",
+        "m(NaOH) = 0,6 × 40 = 24 g."
+      ],
+      "expr": "0.2*3*40",
+      "answer": "24"
+    },
+    {
+      "problem": "Từ 890 kg tristearin (C₅₇H₁₁₀O₆, M = 890), xà phòng hóa hoàn toàn với hiệu suất 100% thu được bao nhiêu kg sodium stearate (C₁₇H₃₅COONa, M = 306)?",
+      "steps": [
+        "n(tristearin) = 890/890 = 1 kmol.",
+        "Thu được 3 kmol muối.",
+        "m = 3 × 306 = 918 kg."
+      ],
+      "expr": "890/890*3*306",
+      "answer": "918"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thành phần chủ yếu của xà phòng thường là:",
+      "choices": [
+        "Muối sodium alkylbenzene sulfonate",
+        "Ester của glycerol",
+        "Hydrocarbon mạch dài",
+        "Muối sodium hoặc potassium của acid béo"
+      ],
+      "answer": 3,
+      "explain": "Xà phòng là hỗn hợp muối của acid béo cùng chất phụ gia.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đây là chất giặt rửa tổng hợp.",
+        "1": "Đó là chất béo, nguyên liệu để làm xà phòng.",
+        "2": "Đây chỉ là phần đuôi kị nước."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Chất nào sau đây là chất giặt rửa tổng hợp?",
+      "choices": [
+        "C₁₇H₃₅COONa",
+        "CH₃[CH₂]₁₁OSO₃Na",
+        "C₁₅H₃₁COOK",
+        "C₁₇H₃₃COONa"
+      ],
+      "answer": 1,
+      "explain": "Muối sodium alkylsulfate không phải muối của acid béo nên là chất giặt rửa tổng hợp.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đây là xà phòng (muối của stearic acid).",
+        "2": "Đây là xà phòng (muối potassium của palmitic acid).",
+        "3": "Đây là xà phòng (muối của oleic acid)."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phần kị nước trong phân tử xà phòng là:",
+      "choices": [
+        "Nhóm –COONa",
+        "Ion Na⁺",
+        "Gốc hydrocarbon mạch dài",
+        "Nhóm –OH"
+      ],
+      "answer": 2,
+      "explain": "Gốc hydrocarbon không phân cực nên kị nước, thâm nhập vào vết dầu mỡ.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đây là phần phân cực, ưa nước.",
+        "1": "Ion Na⁺ nằm ở đầu ưa nước.",
+        "3": "Phân tử xà phòng không có nhóm –OH."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao xà phòng giặt kém hiệu quả trong nước cứng?",
+      "choices": [
+        "Muối calcium, magnesium của acid béo tạo kết tủa, giảm tác dụng giặt rửa",
+        "Xà phòng bị thủy phân hoàn toàn",
+        "Nước cứng có tính acid mạnh",
+        "Xà phòng không tan trong nước"
+      ],
+      "answer": 0,
+      "explain": "Ion Ca²⁺, Mg²⁺ kết hợp với anion acid béo tạo muối không tan nên làm giảm lượng xà phòng hữu hiệu.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Xà phòng không bị thủy phân hoàn toàn trong nước cứng.",
+        "2": "Nước cứng chứa ion Ca²⁺, Mg²⁺, không phải acid mạnh.",
+        "3": "Xà phòng tan được trong nước."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi xà phòng hóa chất béo xong, người ta thêm dung dịch NaCl bão hòa vào hỗn hợp để:",
+      "choices": [
+        "Làm tăng tốc độ xà phòng hóa",
+        "Trung hòa kiềm dư",
+        "Tạo thêm glycerol",
+        "Làm xà phòng tách ra, nổi lên trên"
+      ],
+      "answer": 3,
+      "explain": "NaCl bão hòa làm giảm độ tan của muối acid béo, xà phòng tách ra và nổi lên.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "NaCl không có vai trò xúc tác.",
+        "1": "NaCl không trung hòa kiềm.",
+        "2": "Glycerol đã được tạo ra ở phản ứng xà phòng hóa."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cách giải thích đúng về tác dụng tẩy dầu mỡ của xà phòng là:",
+      "choices": [
+        "Xà phòng hòa tan dầu mỡ thành dung dịch đồng nhất",
+        "Đuôi kị nước bám vào dầu mỡ, đầu ưa nước hướng ra nước nên các hạt dầu mỡ bị phân tán và rửa trôi",
+        "Xà phòng phân hủy dầu mỡ thành nước và CO₂",
+        "Xà phòng làm dầu mỡ bay hơi"
+      ],
+      "answer": 1,
+      "explain": "Cấu trúc đầu ưa nước – đuôi kị nước giúp xà phòng nhũ hóa dầu mỡ.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Dầu mỡ không tan trong nước; chúng bị phân tán thành các hạt nhỏ.",
+        "2": "Xà phòng không phân hủy dầu mỡ.",
+        "3": "Dầu mỡ không bị bay hơi."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Xà phòng hóa hoàn toàn 0,2 mol chất béo cần tối thiểu bao nhiêu gam NaOH (M = 40)?",
+      "expr": "0.2*3*40",
+      "answer": "24",
+      "explain": "n(NaOH) = 3 × 0,2 = 0,6 mol; m = 0,6 × 40 = 24 g.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Xà phòng hóa 1 mol chất béo bằng NaOH dư thu được bao nhiêu mol glycerol?",
+      "expr": "1",
+      "answer": "1",
+      "explain": "Mỗi phân tử chất béo (triglyceride) tạo ra 1 phân tử glycerol.",
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Từ 890 kg tristearin (M = 890), xà phòng hóa hoàn toàn thu được bao nhiêu kg sodium stearate (M = 306), hiệu suất 100%?",
+      "expr": "890/890*3*306",
+      "answer": "918",
+      "explain": "1 kmol tristearin → 3 kmol sodium stearate: 3 × 306 = 918 kg.",
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với hiệu suất phản ứng 80%, từ 890 kg tristearin thu được bao nhiêu kg sodium stearate (M = 306)?",
+      "expr": "890/890*3*306*80/100",
+      "answer": "734.4",
+      "explain": "Lí thuyết 918 kg; thực tế 918 × 80% = 734,4 kg.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Xà phòng hóa hoàn toàn 80,6 g tripalmitin (M = 806) bằng NaOH dư. Khối lượng glycerol (M = 92) thu được là bao nhiêu gam?",
+      "expr": "80.6/806*92",
+      "answer": "9.2",
+      "explain": "n(tripalmitin) = 0,1 mol; m(glycerol) = 0,1 × 92 = 9,2 g.",
+      "id": "q11"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Một xà phòng chứa sodium stearate 72% theo khối lượng. Muốn có 4,25 kg xà phòng thì cần tối thiểu khoảng bao nhiêu mol sodium stearate (M = 306)?",
+      "choices": [
+        "10 mol",
+        "1 mol",
+        "100 mol",
+        "13,9 mol"
+      ],
+      "answer": 0,
+      "explain": "m(sodium stearate) = 4250 g × 0,72 = 3060 g; n = 3060/306 = 10 mol.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Tính nhầm khối lượng: 4,25 kg × 72% = 3,06 kg = 3060 g.",
+        "2": "Chia sai: 3060 g chia cho 306 g/mol được 10 mol, không phải 100 mol.",
+        "3": "Không nhân với 72% mà lấy cả 4,25 kg."
+      },
+      "id": "q12"
+    }
+  ]
+}

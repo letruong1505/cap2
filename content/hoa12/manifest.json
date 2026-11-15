@@ -1,0 +1,70 @@
+{
+  "product": "vung-bai",
+  "grade": 12,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức",
+  "publisher": "NXB Giáo dục Việt Nam",
+  "version": "0.1.0-dev",
+  "books": [
+    {
+      "id": "tap1",
+      "title": "Hóa học 12",
+      "chapters": [
+        {
+          "id": "chuong-1",
+          "title": "Chương 1. Ester – Lipid",
+          "lessons": [
+            {
+              "id": "bai-1",
+              "title": "Bài 1. Ester – Lipid",
+              "bookPage": 6,
+              "file": "tap1/chuong-1/bai-1/ester-lipid.json"
+            },
+            {
+              "id": "bai-2",
+              "title": "Bài 2. Xà phòng và chất giặt rửa",
+              "bookPage": 14,
+              "file": "tap1/chuong-1/bai-2/xa-phong-chat-giat-rua.json"
+            },
+            {
+              "id": "bai-3",
+              "title": "Bài 3. Ôn tập chương 1",
+              "bookPage": 18,
+              "file": "tap1/chuong-1/bai-3/on-tap-chuong-1.json"
+            }
+          ]
+        },
+        {
+          "id": "chuong-2",
+          "title": "Chương 2. Carbohydrate",
+          "lessons": [
+            {
+              "id": "bai-4",
+              "title": "Bài 4. Giới thiệu về carbohydrate. Glucose và fructose",
+              "bookPage": 20,
+              "file": "tap1/chuong-2/bai-4/glucose-fructose.json"
+            },
+            {
+              "id": "bai-5",
+              "title": "Bài 5. Saccharose và maltose",
+              "bookPage": 25,
+              "file": "tap1/chuong-2/bai-5/saccharose-maltose.json"
+            },
+            {
+              "id": "bai-6",
+              "title": "Bài 6. Tinh bột và cellulose",
+              "bookPage": 28,
+              "file": "tap1/chuong-2/bai-6/tinh-bot-cellulose.json"
+            },
+            {
+              "id": "bai-7",
+              "title": "Bài 7. Ôn tập chương 2",
+              "bookPage": 33,
+              "file": "tap1/chuong-2/bai-7/on-tap-chuong-2.json"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

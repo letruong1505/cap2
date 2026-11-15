@@ -1,0 +1,254 @@
+{
+  "id": "bai-6",
+  "grade": 12,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Hóa học 12",
+  "chapter": "Chương 2. Carbohydrate",
+  "lesson": "Bài 6. Tinh bột và cellulose",
+  "section": "",
+  "bookPage": 28,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tinh bột là polymer thiên nhiên có công thức phân tử (C₆H₁₀O₅)ₙ, gồm amylose và amylopectin. Amylose do nhiều đơn vị α-glucose liên kết qua liên kết α-1,4-glycoside, tạo chuỗi xoắn không phân nhánh. Amylopectin phân nhánh: các chuỗi α-1,4-glycoside nối với nhau bằng liên kết α-1,6-glycoside."
+    },
+    {
+      "type": "text",
+      "content": "Cellulose là polymer thiên nhiên có công thức (C₆H₁₀O₅)ₙ, cấu tạo từ nhiều đơn vị β-glucose liên kết qua liên kết β-1,4-glycoside, tạo chuỗi không nhánh. Mỗi đơn vị glucose có ba nhóm –OH tự do nên cellulose có thể viết [C₆H₇O₂(OH)₃]ₙ."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất hóa học của tinh bột: bị thủy phân nhờ enzyme hoặc acid (không hoàn toàn tạo dextrin, maltose, glucose; hoàn toàn tạo glucose): (C₆H₁₀O₅)ₙ + nH₂O → nC₆H₁₂O₆. Hồ tinh bột tạo màu xanh tím với dung dịch iodine (nhờ chuỗi amylose dạng xoắn), dùng để nhận biết tinh bột."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất hóa học của cellulose: thủy phân hoàn toàn tạo glucose (xúc tác acid hoặc enzyme); tác dụng với hỗn hợp HNO₃ đặc và H₂SO₄ đặc tạo cellulose nitrate: [C₆H₇O₂(OH)₃]ₙ + 3nHNO₃ → [C₆H₇O₂(ONO₂)₃]ₙ + 3nH₂O (cellulose trinitrate dùng chế tạo thuốc súng không khói); tan trong nước Schweizer ([Cu(NH₃)₄](OH)₂)."
+    },
+    {
+      "type": "text",
+      "content": "Tinh bột là chất rắn màu trắng, không tan trong nước lạnh, trong nước nóng tạo dung dịch keo gọi là hồ tinh bột. Tinh bột tạo ra trong cây xanh nhờ quang hợp: 6nCO₂ + 5nH₂O → (C₆H₁₀O₅)ₙ + 6nO₂ (ánh sáng, chất diệp lục). Trong cơ thể, tinh bột bị thủy phân nhờ α-amylase (nước bọt) và các enzyme ở ruột non thành glucose; glucose dư được chuyển thành glycogen dự trữ ở gan và cơ."
+    },
+    {
+      "type": "text",
+      "content": "Cellulose là chất rắn dạng sợi màu trắng, không tan trong nước và dung môi hữu cơ thông thường; chiếm khoảng 50% khối lượng gỗ khô và 90% khối lượng sợi bông. Ứng dụng: vật liệu xây dựng, giấy, tơ sợi, nguyên liệu điều chế ethanol và cellulose trinitrate."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một loại tinh bột có phân tử khối trung bình 162 000. Tính số mắt xích glucose (C₆H₁₀O₅, M = 162) trong một phân tử.",
+      "steps": [
+        "Số mắt xích n = 162 000 / 162.",
+        "n = 1000."
+      ],
+      "expr": "162000/162",
+      "answer": "1000"
+    },
+    {
+      "problem": "Từ 1 tấn mùn cưa chứa 81% cellulose, sản xuất ethanol với hiệu suất cả quá trình 70%. Tính khối lượng ethanol thu được (kg; M = 46).",
+      "steps": [
+        "m(cellulose) = 810 kg, ứng với 810/162 = 5 kmol mắt xích.",
+        "(C₆H₁₀O₅)ₙ → nC₆H₁₂O₆ → 2nC₂H₅OH nên n(ethanol) = 10 kmol (hiệu suất 100%).",
+        "m = 10 × 46 × 70% = 322 kg."
+      ],
+      "expr": "1000*81/100/162*2*46*70/100",
+      "answer": "322"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Công thức phân tử chung của tinh bột và cellulose là:",
+      "choices": [
+        "(C₆H₁₀O₅)ₙ",
+        "C₆H₁₂O₆",
+        "C₁₂H₂₂O₁₁",
+        "(C₁₂H₂₂O₁₁)ₙ"
+      ],
+      "answer": 0,
+      "explain": "Cả hai đều là polysaccharide tạo từ các mắt xích C₆H₁₀O₅.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Đây là công thức của glucose và fructose.",
+        "2": "Đây là công thức của saccharose và maltose.",
+        "3": "Không đúng với tinh bột và cellulose."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thuốc thử dùng để nhận biết hồ tinh bột là:",
+      "choices": [
+        "Thuốc thử Tollens",
+        "Cu(OH)₂",
+        "Nước bromine",
+        "Dung dịch iodine"
+      ],
+      "answer": 3,
+      "explain": "Dung dịch iodine tạo màu xanh tím với hồ tinh bột.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Tinh bột không có phản ứng tráng bạc.",
+        "1": "Tinh bột không hòa tan Cu(OH)₂ tạo xanh lam.",
+        "2": "Tinh bột không làm mất màu nước bromine."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Cellulose tan được trong:",
+      "choices": [
+        "Nước lạnh",
+        "Nước Schweizer",
+        "Benzene",
+        "Ether"
+      ],
+      "answer": 1,
+      "explain": "Cellulose tan trong nước Schweizer (dung dịch Cu(OH)₂ trong ammonia).",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Cellulose không tan trong nước.",
+        "2": "Cellulose không tan trong dung môi hữu cơ thông thường.",
+        "3": "Cellulose không tan trong ether."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Điểm khác nhau chính về cấu tạo giữa tinh bột và cellulose là:",
+      "choices": [
+        "Tinh bột gồm các gốc α-glucose, cellulose gồm các gốc β-glucose",
+        "Tinh bột là monosaccharide, cellulose là polysaccharide",
+        "Tinh bột chứa fructose, cellulose chứa glucose",
+        "Cả hai có cùng loại liên kết glycoside"
+      ],
+      "answer": 0,
+      "explain": "Hai polymer đều từ glucose nhưng khác dạng α hoặc β nên khác tính chất và vai trò.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Cả hai đều là polysaccharide.",
+        "2": "Cả hai chỉ chứa gốc glucose.",
+        "3": "Tinh bột có liên kết α-1,4 (và α-1,6), cellulose có liên kết β-1,4."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi nhai kĩ cơm sẽ thấy có vị ngọt vì:",
+      "choices": [
+        "Tinh bột tan trong nước bọt",
+        "Cơm chứa nhiều saccharose",
+        "Enzyme amylase trong nước bọt thủy phân tinh bột thành maltose và dextrin",
+        "Cellulose bị oxi hóa thành glucose"
+      ],
+      "answer": 2,
+      "explain": "Amylase thủy phân tinh bột thành các phân tử nhỏ có vị ngọt hơn.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Tinh bột không tan trong nước lạnh.",
+        "1": "Cơm chủ yếu chứa tinh bột.",
+        "3": "Cellulose không bị amylase thủy phân."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nhỏ dung dịch iodine lên miếng chuối xanh thấy xuất hiện màu xanh tím vì:",
+      "choices": [
+        "Chuối xanh chứa nhiều glucose",
+        "Chuối xanh chứa nhiều cellulose",
+        "Chuối xanh chứa nhiều saccharose",
+        "Chuối xanh chứa nhiều tinh bột"
+      ],
+      "answer": 3,
+      "explain": "Iodine tạo màu xanh tím với tinh bột.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Glucose không cho màu với iodine.",
+        "1": "Cellulose không cho màu xanh tím với iodine.",
+        "2": "Saccharose không cho màu với iodine."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tinh bột có phân tử khối trung bình 162 000. Số mắt xích C₆H₁₀O₅ (M = 162) trong một phân tử là bao nhiêu?",
+      "expr": "162000/162",
+      "answer": "1000",
+      "explain": "n = 162 000/162 = 1000.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Thủy phân hoàn toàn 16,2 g tinh bột (M mắt xích = 162) thu được bao nhiêu gam glucose (M = 180)?",
+      "expr": "16.2/162*180",
+      "answer": "18",
+      "explain": "n(mắt xích) = 0,1 mol → 0,1 mol glucose → 18 g.",
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Từ 1 tấn mùn cưa chứa 81% cellulose, hiệu suất cả quá trình sản xuất ethanol là 70%. Khối lượng ethanol thu được là bao nhiêu kg? (M = 46)",
+      "expr": "1000*81/100/162*2*46*70/100",
+      "answer": "322",
+      "explain": "5 kmol mắt xích → 10 kmol ethanol; 10 × 46 × 0,7 = 322 kg.",
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 81 kg cellulose tác dụng với lượng dư hỗn hợp HNO₃ đặc/H₂SO₄ đặc, hiệu suất 100%. Khối lượng cellulose trinitrate (mắt xích C₆H₇O₂(ONO₂)₃, M = 297) thu được là bao nhiêu kg?",
+      "expr": "81/162*297",
+      "answer": "148.5",
+      "explain": "81/162 = 0,5 kmol mắt xích → 0,5 × 297 = 148,5 kg.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lên men 81 g tinh bột (hiệu suất mỗi giai đoạn 100%) tạo ra bao nhiêu mol ethanol? (mắt xích C₆H₁₀O₅, M = 162)",
+      "expr": "81/162*2",
+      "answer": "1",
+      "explain": "81/162 = 0,5 mol mắt xích → 0,5 mol glucose → 1 mol ethanol.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho CO₂ từ quang hợp: để tạo 16,2 g tinh bột (mắt xích M = 162) cần bao nhiêu mol CO₂? (nhập số thập phân)",
+      "expr": "16.2/162*6",
+      "answer": "0.6",
+      "explain": "6nCO₂ → (C₆H₁₀O₅)ₙ: 0,1 mol mắt xích cần 0,6 mol CO₂.",
+      "id": "q12"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Cho các chất: glucose, saccharose, tinh bột, cellulose. Số chất bị thủy phân trong môi trường acid là:",
+      "choices": [
+        "1",
+        "3",
+        "2",
+        "4"
+      ],
+      "answer": 1,
+      "explain": "Glucose không bị thủy phân; saccharose, tinh bột và cellulose bị thủy phân.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Saccharose, tinh bột và cellulose đều bị thủy phân.",
+        "2": "Có ba chất bị thủy phân (không tính glucose).",
+        "3": "Glucose là monosaccharide nên không bị thủy phân."
+      },
+      "id": "q13"
+    }
+  ]
+}
