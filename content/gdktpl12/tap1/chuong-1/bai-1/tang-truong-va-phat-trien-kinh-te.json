@@ -1,0 +1,391 @@
+{
+  "id": "bai-1",
+  "grade": 12,
+  "subject": "gdktpl",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Giáo dục kinh tế và pháp luật 12",
+  "chapter": "Chủ đề 1. Tăng trưởng và phát triển kinh tế",
+  "lesson": "Bài 1. Tăng trưởng và phát triển kinh tế",
+  "section": "",
+  "bookPage": 6,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tăng trưởng kinh tế là sự tăng lên về thu nhập hay tổng giá trị hàng hoá và dịch vụ mà nền kinh tế tạo ra trong một thời kì nhất định (so với thời kì gốc). Các chỉ tiêu: GDP (tổng sản phẩm quốc nội: giá trị bằng tiền của hàng hoá, dịch vụ cuối cùng sản xuất trên lãnh thổ một nước trong một năm), GDP/người, GNI (tổng thu nhập quốc dân: thu nhập do công dân quốc gia tạo ra, kể cả ở nước ngoài), GNI/người. Tốc độ tăng trưởng được tính bằng tỉ lệ phần trăm thay đổi của GDP giữa hai thời kì; khi so sánh cần loại trừ lạm phát."
+    },
+    {
+      "type": "formula",
+      "content": "GDP = C + I + G + (X − M); GNI = GDP + chênh lệch thu nhập nhân tố nước ngoài; GDP/người = GDP : dân số trung bình"
+    },
+    {
+      "type": "text",
+      "content": "C là chi tiêu của hộ gia đình, I của doanh nghiệp, G của chính phủ, X là kim ngạch xuất khẩu, M là kim ngạch nhập khẩu. GDP/người phản ánh mức sống tương đối vì còn tuỳ phân phối thu nhập. Ví dụ sách nêu: GDP Việt Nam năm 2022 tăng 8,02% so với năm trước."
+    },
+    {
+      "type": "text",
+      "content": "Vai trò của tăng trưởng: làm GDP/người tăng, tạo việc làm, tăng thu nhập, nâng cao đời sống; tạo điều kiện phát triển kết cấu hạ tầng, văn hoá, y tế, phúc lợi, quốc phòng – an ninh; là điều kiện tiên quyết để khắc phục tụt hậu. Giai đoạn 2011 – 2020, GDP Việt Nam tăng khoảng 5,9%/năm, quy mô tăng gấp 2,4 lần (116 tỉ USD năm 2010 lên 268,4 tỉ USD năm 2020)."
+    },
+    {
+      "type": "text",
+      "content": "Phát triển kinh tế là tăng trưởng kinh tế gắn liền với chuyển dịch cơ cấu kinh tế và bảo đảm tiến bộ xã hội. Chỉ tiêu: (1) tăng trưởng (GDP, GNI...); (2) chuyển dịch cơ cấu ngành theo hướng tăng tỉ trọng công nghiệp, dịch vụ, giảm tỉ trọng nông nghiệp; (3) tiến bộ xã hội: chỉ số phát triển con người HDI tăng, tỉ lệ hộ nghèo đa chiều giảm, hệ số Gini (từ 0 đến 1, càng cao càng bất bình đẳng) giảm. HDI gồm tuổi thọ, giáo dục và thu nhập. Tăng trưởng là điều kiện cần nhưng chưa đủ cho phát triển."
+    },
+    {
+      "type": "text",
+      "content": "Phát triển bền vững là sự kết hợp hài hoà giữa phát triển kinh tế, phát triển xã hội và bảo vệ môi trường. Tăng trưởng kinh tế ổn định là tiêu chí hàng đầu của phát triển bền vững, nhưng tăng trưởng không gắn với tiến bộ xã hội và bảo vệ môi trường sẽ cản trở phát triển bền vững; ngược lại xã hội ổn định, nguồn nhân lực chất lượng thúc đẩy tăng trưởng. Việt Nam chủ trương không đánh đổi tăng trưởng bằng mọi giá."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "GDP năm trước là 400 tỉ USD, năm nay là 432 tỉ USD. Tốc độ tăng trưởng GDP là bao nhiêu %?",
+      "steps": [
+        "Mức tăng = 432 − 400 = 32.",
+        "Tốc độ = 32 : 400 × 100 = 8%."
+      ],
+      "expr": "(432-400)/400*100",
+      "answer": "8"
+    },
+    {
+      "problem": "Một nước có C = 60, I = 20, G = 15, X = 12, M = 7 (nghìn tỉ đồng). Tính GDP.",
+      "steps": [
+        "GDP = C + I + G + (X − M).",
+        "= 60 + 20 + 15 + 5 = 100."
+      ],
+      "expr": "60+20+15+(12-7)",
+      "answer": "100"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tăng trưởng kinh tế là:",
+      "choices": [
+        "Sự thay đổi cơ cấu kinh tế",
+        "Sự tăng lên về thu nhập hay tổng giá trị hàng hoá, dịch vụ của nền kinh tế trong một thời kì",
+        "Sự giảm tỉ lệ hộ nghèo",
+        "Sự tăng dân số"
+      ],
+      "answer": 1,
+      "explain": "Tăng trưởng là sự thay đổi về lượng.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Tăng trưởng là sự thay đổi về lượng.",
+        "2": "Chưa đúng với nội dung bài học: Tăng trưởng là sự thay đổi về lượng.",
+        "3": "Chưa đúng với nội dung bài học: Tăng trưởng là sự thay đổi về lượng."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "GDP là:",
+      "choices": [
+        "Giá trị bằng tiền của hàng hoá, dịch vụ cuối cùng sản xuất trên lãnh thổ một nước trong một thời gian nhất định",
+        "Thu nhập của công dân ở nước ngoài",
+        "Tổng số dân cư",
+        "Tổng kim ngạch xuất khẩu"
+      ],
+      "answer": 0,
+      "explain": "GDP tính theo lãnh thổ.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: GDP tính theo lãnh thổ.",
+        "2": "Chưa đúng với nội dung bài học: GDP tính theo lãnh thổ.",
+        "3": "Chưa đúng với nội dung bài học: GDP tính theo lãnh thổ."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "GNI là tổng thu nhập từ hàng hoá, dịch vụ cuối cùng do:",
+      "choices": [
+        "Người nước ngoài tạo ra trong nước",
+        "Chính phủ chi tiêu",
+        "Công dân của quốc gia tạo ra, kể cả ở trong và ngoài lãnh thổ",
+        "Doanh nghiệp xuất khẩu"
+      ],
+      "answer": 2,
+      "explain": "GNI tính theo công dân.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: GNI tính theo công dân.",
+        "1": "Chưa đúng với nội dung bài học: GNI tính theo công dân.",
+        "3": "Chưa đúng với nội dung bài học: GNI tính theo công dân."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hệ số Gini phản ánh:",
+      "choices": [
+        "Tốc độ tăng GDP",
+        "Tuổi thọ trung bình",
+        "Tỉ lệ lạm phát",
+        "Mức bất bình đẳng trong phân phối thu nhập"
+      ],
+      "answer": 3,
+      "explain": "Giá trị từ 0 đến 1.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Giá trị từ 0 đến 1.",
+        "1": "Chưa đúng với nội dung bài học: Giá trị từ 0 đến 1.",
+        "2": "Chưa đúng với nội dung bài học: Giá trị từ 0 đến 1."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phát triển kinh tế là tăng trưởng kinh tế gắn liền với:",
+      "choices": [
+        "Giảm dân số",
+        "Chuyển dịch cơ cấu kinh tế và bảo đảm tiến bộ xã hội",
+        "Tăng lạm phát",
+        "Giảm xuất khẩu"
+      ],
+      "answer": 1,
+      "explain": "Phạm vi rộng hơn tăng trưởng.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Phạm vi rộng hơn tăng trưởng.",
+        "2": "Chưa đúng với nội dung bài học: Phạm vi rộng hơn tăng trưởng.",
+        "3": "Chưa đúng với nội dung bài học: Phạm vi rộng hơn tăng trưởng."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Chỉ tiêu nào dùng để đánh giá tăng trưởng kinh tế?",
+      "choices": [
+        "Tỉ lệ lạm phát",
+        "Mức tăng dân số",
+        "Mức tăng GDP trong một thời kì",
+        "Mức tăng hệ số Gini"
+      ],
+      "answer": 2,
+      "explain": "GDP, GNI và bình quân đầu người.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: GDP, GNI và bình quân đầu người.",
+        "1": "Chưa đúng với nội dung bài học: GDP, GNI và bình quân đầu người.",
+        "3": "Chưa đúng với nội dung bài học: GDP, GNI và bình quân đầu người."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hệ số Gini càng gần 1 thì:",
+      "choices": [
+        "Bất bình đẳng thu nhập càng lớn",
+        "Bình đẳng tuyệt đối",
+        "Tăng trưởng càng cao",
+        "Tuổi thọ càng cao"
+      ],
+      "answer": 0,
+      "explain": "0 là bình đẳng tuyệt đối.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: 0 là bình đẳng tuyệt đối.",
+        "2": "Chưa đúng với nội dung bài học: 0 là bình đẳng tuyệt đối.",
+        "3": "Chưa đúng với nội dung bài học: 0 là bình đẳng tuyệt đối."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Chuyển dịch cơ cấu ngành theo hướng tích cực thể hiện ở:",
+      "choices": [
+        "Tỉ trọng nông nghiệp tăng",
+        "Giá trị các ngành đều giảm",
+        "Chỉ dịch vụ giảm",
+        "Tỉ trọng công nghiệp, dịch vụ tăng, nông nghiệp giảm trong GDP"
+      ],
+      "answer": 3,
+      "explain": "Giá trị tuyệt đối vẫn tăng.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Giá trị tuyệt đối vẫn tăng.",
+        "1": "Chưa đúng với nội dung bài học: Giá trị tuyệt đối vẫn tăng.",
+        "2": "Chưa đúng với nội dung bài học: Giá trị tuyệt đối vẫn tăng."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tăng trưởng kinh tế không đồng nghĩa phát triển kinh tế vì:",
+      "choices": [
+        "Hai khái niệm hoàn toàn giống nhau",
+        "Tăng trưởng mới là thay đổi về lượng, chưa bao hàm cơ cấu và tiến bộ xã hội",
+        "Tăng trưởng luôn kéo theo phát triển",
+        "Phát triển không cần tăng trưởng"
+      ],
+      "answer": 1,
+      "explain": "Tăng trưởng là điều kiện cần.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Tăng trưởng là điều kiện cần.",
+        "2": "Chưa đúng với nội dung bài học: Tăng trưởng là điều kiện cần.",
+        "3": "Chưa đúng với nội dung bài học: Tăng trưởng là điều kiện cần."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "HDI gồm các tiêu chí:",
+      "choices": [
+        "Tuổi thọ, giáo dục và thu nhập",
+        "Chỉ GDP",
+        "Dân số, diện tích, khí hậu",
+        "Xuất khẩu, nhập khẩu, tiết kiệm"
+      ],
+      "answer": 0,
+      "explain": "Thước đo tổng hợp phát triển con người.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: Thước đo tổng hợp phát triển con người.",
+        "2": "Chưa đúng với nội dung bài học: Thước đo tổng hợp phát triển con người.",
+        "3": "Chưa đúng với nội dung bài học: Thước đo tổng hợp phát triển con người."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tăng trưởng không gắn với bảo vệ môi trường và công bằng xã hội sẽ:",
+      "choices": [
+        "Luôn đảm bảo bền vững",
+        "Làm giảm bất bình đẳng",
+        "Cản trở phát triển bền vững",
+        "Không có tác động"
+      ],
+      "answer": 2,
+      "explain": "Phải kết hợp hài hoà ba mặt.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Phải kết hợp hài hoà ba mặt.",
+        "1": "Chưa đúng với nội dung bài học: Phải kết hợp hài hoà ba mặt.",
+        "3": "Chưa đúng với nội dung bài học: Phải kết hợp hài hoà ba mặt."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "GDP năm trước là 500, năm nay là 520 (nghìn tỉ đồng). Tốc độ tăng trưởng là bao nhiêu %?",
+      "expr": "(520-500)/500*100",
+      "answer": "4",
+      "explain": "20 : 500 × 100 = 4%.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "GDP một nước là 900 tỉ USD, dân số trung bình 100 triệu người. GDP/người là bao nhiêu USD? (900 tỉ : 100 triệu)",
+      "expr": "900000/100",
+      "answer": "9000",
+      "explain": "900 000 triệu : 100 triệu = 9 000.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "C = 50, I = 18, G = 12, X = 25, M = 20. Tính GDP.",
+      "expr": "50+18+12+(25-20)",
+      "answer": "85",
+      "explain": "GDP = C + I + G + (X − M).",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "GDP = 408, chênh lệch thu nhập nhân tố nước ngoài = −20 (tỉ USD). GNI là bao nhiêu?",
+      "expr": "408-20",
+      "answer": "388",
+      "explain": "GNI = GDP + chênh lệch.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "GDP năm 2020 là 268 tỉ USD, năm 2010 là 134 tỉ USD. GDP năm 2020 gấp bao nhiêu lần năm 2010?",
+      "expr": "268/134",
+      "answer": "2",
+      "explain": "268 : 134 = 2.",
+      "id": "q16"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị GDP tăng từ 200 lên 210 tỉ USD. Tốc độ tăng trưởng là bao nhiêu %?",
+      "expr": "(210-200)/200*100",
+      "answer": "5",
+      "explain": "10 : 200 × 100.",
+      "id": "q17"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "HDI của một nước năm 2018 là 0,69, năm 2022 là 0,73. HDI tăng bao nhiêu điểm?",
+      "expr": "0.73-0.69",
+      "answer": "0.04",
+      "explain": "0,73 − 0,69.",
+      "id": "q18"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tỉ trọng ba ngành: nông nghiệp 12%, công nghiệp 38%. Tỉ trọng dịch vụ (phần còn lại) là bao nhiêu %?",
+      "expr": "100-12-38",
+      "answer": "50",
+      "explain": "100 − 12 − 38.",
+      "id": "q19"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Một nước tăng GDP 7% nhưng môi trường ô nhiễm nặng và bất bình đẳng tăng. Nhận định đúng là:",
+      "choices": [
+        "Đã phát triển bền vững",
+        "Phát triển hoàn hảo",
+        "Không có vấn đề gì",
+        "Tăng trưởng cao nhưng chưa bền vững và chưa phải phát triển toàn diện"
+      ],
+      "answer": 3,
+      "explain": "Cần kết hợp tăng trưởng, tiến bộ xã hội, bảo vệ môi trường.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Cần kết hợp tăng trưởng, tiến bộ xã hội, bảo vệ môi trường.",
+        "1": "Chưa đúng với nội dung bài học: Cần kết hợp tăng trưởng, tiến bộ xã hội, bảo vệ môi trường.",
+        "2": "Chưa đúng với nội dung bài học: Cần kết hợp tăng trưởng, tiến bộ xã hội, bảo vệ môi trường."
+      },
+      "id": "q20"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "GDP/người của nước A cao hơn nước B nhưng không kết luận chắc chắn dân A sống tốt hơn vì:",
+      "choices": [
+        "GDP/người luôn sai",
+        "Chỉ tiêu này là mức bình quân, còn phụ thuộc phân phối thu nhập",
+        "Không liên quan đến mức sống",
+        "Chỉ dựa vào xuất khẩu"
+      ],
+      "answer": 1,
+      "explain": "Cần xét thêm Gini và điều kiện tiếp cận dịch vụ.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Cần xét thêm Gini và điều kiện tiếp cận dịch vụ.",
+        "2": "Chưa đúng với nội dung bài học: Cần xét thêm Gini và điều kiện tiếp cận dịch vụ.",
+        "3": "Chưa đúng với nội dung bài học: Cần xét thêm Gini và điều kiện tiếp cận dịch vụ."
+      },
+      "id": "q21"
+    }
+  ]
+}

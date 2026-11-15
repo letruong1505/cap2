@@ -2,7 +2,7 @@
    và các hàm dùng chung của app.js (isCorrect, showResult, figureSrc) tại thời điểm gọi. */
 (function () {
   const P = window.VungProgress;
-  const SUBJ = { anh: 'Tiếng Anh', toan: 'Toán', ly: 'Vật lí', hoa: 'Hoá học', sinh: 'Sinh học', 'lich-su': 'Lịch sử', 'dia-li': 'Địa lí' };
+  const SUBJ = { anh: 'Tiếng Anh', toan: 'Toán', ly: 'Vật lí', hoa: 'Hoá học', sinh: 'Sinh học', gdktpl: 'Giáo dục KT&PL', 'lich-su': 'Lịch sử', 'dia-li': 'Địa lí' };
   const subjName = (s) => SUBJ[s] || s;
   const store = () => { try { return window.localStorage; } catch (e) { return null; } };
 

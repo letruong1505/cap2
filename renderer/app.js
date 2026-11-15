@@ -464,7 +464,7 @@ async function openLesson(relPath, mode = 'practice') {
   try {
     const lesson = await window.vungBai.loadLesson(relPath);
     document.getElementById('breadcrumb').textContent =
-      `Lớp ${lesson.grade} › ${{ anh: 'Tiếng Anh', toan: 'Toán', ly: 'Vật lí', hoa: 'Hoá học', sinh: 'Sinh học', 'lich-su': 'Lịch sử', 'dia-li': 'Địa lí' }[lesson.subject] || lesson.subject} › ${lesson.chapter}`;
+      `Lớp ${lesson.grade} › ${{ anh: 'Tiếng Anh', toan: 'Toán', ly: 'Vật lí', hoa: 'Hoá học', sinh: 'Sinh học', gdktpl: 'Giáo dục KT&PL', 'lich-su': 'Lịch sử', 'dia-li': 'Địa lí' }[lesson.subject] || lesson.subject} › ${lesson.chapter}`;
 
     if (lesson.kind === 'review') {
       const view = mode === 'solutions' ? 'solutions' : 'review';
@@ -514,7 +514,7 @@ async function openLesson(relPath, mode = 'practice') {
 // Màn hình khởi động: chọn lớp, thông tin bản quyền và khu vực quảng cáo.
 // Lớp và môn lấy từ cấu hình sản phẩm (THCS hoặc THPT), nạp khi mở app.
 let GRADES = [];
-const SUBJECT_BASE = { anh: 'Tiếng Anh', toan: 'Toán', ly: 'Vật lí', hoa: 'Hoá học', sinh: 'Sinh học', lichsu: 'Lịch sử', diali: 'Địa lí' };
+const SUBJECT_BASE = { anh: 'Tiếng Anh', toan: 'Toán', ly: 'Vật lí', hoa: 'Hoá học', sinh: 'Sinh học', gdktpl: 'Giáo dục KT&PL', lichsu: 'Lịch sử', diali: 'Địa lí' };
 const GRADE_SUBJECTS = {};
 // Giá bản quyền theo lớp, hiển thị dưới mỗi ô lớp.
 const GRADE_PRICE = { 6: '399.000 đ', 7: '399.000 đ', 8: '399.000 đ', 9: '399.000 đ', 10: '449.000 đ', 11: '449.000 đ', 12: '499.000 đ' };
