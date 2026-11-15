@@ -48,6 +48,10 @@ body {
 .vocab-vi { color: var(--mute); margin-top: 3px; font-size: 14px; }
 .reading-title { margin: 6px 0; }
 .reading-text { max-width: 72ch; line-height: 1.8; }
+.ipa-title { margin: 1rem 0 0.4rem; font-size: 1rem; }
+.ipa-list { list-style: none; padding: 0; margin: 0 0 1rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.35rem 1rem; max-width: 72ch; }
+.ipa-word { font-weight: 600; }
+.ipa-sound { font-family: 'Doulos SIL', 'Charis SIL', 'Noto Sans', serif; color: #374151; }
 .cw-bar { display: flex; gap: 18px; font-weight: 600; margin: 8px 0 12px; }
 .cw-grid { display: grid; gap: 4px; overflow-x: auto; padding-bottom: 6px; }
 .cw-line { display: flex; gap: 4px; align-items: center; padding: 3px; border-radius: 10px; }

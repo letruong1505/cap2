@@ -84,6 +84,10 @@
   function renderReading(box, reading) {
     box.replaceChildren(h('h2', {}, 'Đọc hiểu'), h('h3', { class: 'reading-title' }, reading.title));
     for (const p of reading.paragraphs) box.append(h('p', { class: 'reading-text', lang: 'en' }, p));
+    if (Array.isArray(reading.phonetics) && reading.phonetics.length) {
+      const rows = reading.phonetics.map((x) => h('li', { class: 'ipa-item' }, h('span', { class: 'ipa-word', lang: 'en' }, x.w), ' ', h('span', { class: 'ipa-sound', lang: 'en' }, x.ipa)));
+      box.append(h('h4', { class: 'ipa-title' }, 'Phiên âm các từ khó'), h('ul', { class: 'ipa-list' }, ...rows));
+    }
     box.append(h('p', { class: 'screen-sub' }, 'Đọc xong, trả lời các câu hỏi đọc hiểu trong phần Luyện tập bên dưới.'));
   }
 
