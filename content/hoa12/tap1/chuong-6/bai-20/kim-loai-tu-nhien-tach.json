@@ -1,0 +1,271 @@
+{
+  "id": "bai-20",
+  "grade": 12,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Hóa học 12",
+  "chapter": "Chương 6. Đại cương về kim loại",
+  "lesson": "Bài 20. Kim loại trong tự nhiên và phương pháp tách kim loại",
+  "section": "",
+  "bookPage": 94,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Trong tự nhiên, hầu hết kim loại tồn tại ở dạng hợp chất (oxide, muối,…) trong quặng; chỉ các kim loại kém hoạt động (Au, Ag, Pt,…) có dạng đơn chất. Quặng là đất, đá chứa khoáng vật kim loại hoặc hợp chất của kim loại với trữ lượng đủ lớn để khai thác. Một số quặng: bauxite Al₂O₃·2H₂O; hematite Fe₂O₃; pyrite FeS₂; zinc blende ZnS; chalcopyrite CuFeS₂."
+    },
+    {
+      "type": "text",
+      "content": "Nguyên tắc điều chế kim loại: khử ion kim loại thành nguyên tử: Mⁿ⁺ + ne → M."
+    },
+    {
+      "type": "text",
+      "content": "Kim loại hoạt động mạnh (K, Na, Ca, Mg, Al,…): điện phân nóng chảy hợp chất (oxide hoặc chloride). Ví dụ MgCl₂ → Mg + Cl₂ (cathode: Mg²⁺ + 2e → Mg; anode: 2Cl⁻ → Cl₂ + 2e); 2Al₂O₃ → 4Al + 3O₂."
+    },
+    {
+      "type": "text",
+      "content": "Kim loại hoạt động trung bình, yếu (Zn, Fe, Sn, Pb, Cu,…): (1) nhiệt luyện — khử oxide ở nhiệt độ cao bằng C, CO,…: Fe₂O₃ + 3CO → 2Fe + 3CO₂; ZnO + C → Zn + CO; (2) điện phân dung dịch muối: CuCl₂ → Cu + Cl₂; (3) thủy luyện — dùng dung dịch thích hợp (H₂SO₄, NaOH, NaCN,…) hòa tan, rồi khử ion kim loại bằng kim loại mạnh hơn (Fe + CuSO₄ → FeSO₄ + Cu; thu vàng bằng dung dịch KCN rồi Zn)."
+    },
+    {
+      "type": "text",
+      "content": "Tái chế kim loại (sắt, nhôm, đồng) vừa bảo đảm nguồn cung, tiết kiệm năng lượng, vừa bảo vệ môi trường và phát triển bền vững; quy trình gồm thu gom, phân loại, xử lí sơ bộ, phối trộn, nấu chảy, tinh chế, đúc và gia công."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Khử hoàn toàn 16 g Fe₂O₃ (M = 160) bằng CO dư. Tính khối lượng Fe thu được (Fe = 56).",
+      "steps": [
+        "n(Fe₂O₃) = 16/160 = 0,1 mol.",
+        "Fe₂O₃ + 3CO → 2Fe + 3CO₂ nên n(Fe) = 0,2 mol.",
+        "m(Fe) = 0,2 × 56 = 11,2 g."
+      ],
+      "expr": "16/160*2*56",
+      "answer": "11.2"
+    },
+    {
+      "problem": "Điện phân nóng chảy 95 g MgCl₂ (M = 95). Tính khối lượng Mg thu được (Mg = 24, hiệu suất 100%).",
+      "steps": [
+        "n(MgCl₂) = 1 mol.",
+        "MgCl₂ → Mg + Cl₂ nên n(Mg) = 1 mol.",
+        "m(Mg) = 24 g."
+      ],
+      "expr": "95/95*24",
+      "answer": "24"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kim loại tồn tại ở dạng đơn chất trong tự nhiên là:",
+      "choices": [
+        "Au",
+        "Fe",
+        "Al",
+        "Na"
+      ],
+      "answer": 0,
+      "explain": "Au là kim loại kém hoạt động nên có dạng đơn chất.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Fe có trong quặng hematite, pyrite.",
+        "2": "Al có trong bauxite.",
+        "3": "Na có trong NaCl."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Quặng hematite có thành phần chính là:",
+      "choices": [
+        "FeS₂",
+        "ZnS",
+        "Fe₂O₃",
+        "Al₂O₃·2H₂O"
+      ],
+      "answer": 2,
+      "explain": "Hematite là quặng sắt chứa Fe₂O₃.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đó là pyrite.",
+        "1": "Đó là zinc blende.",
+        "3": "Đó là bauxite."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nguyên tắc điều chế kim loại là:",
+      "choices": [
+        "Oxi hóa nguyên tử kim loại",
+        "Trung hòa ion kim loại bằng acid",
+        "Hòa tan kim loại vào nước",
+        "Khử ion kim loại thành nguyên tử kim loại"
+      ],
+      "answer": 3,
+      "explain": "Mⁿ⁺ + ne → M.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đó là quá trình ngược lại.",
+        "1": "Không phải nguyên tắc điều chế.",
+        "2": "Không phải nguyên tắc điều chế."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Kim loại nào sau đây được điều chế bằng phương pháp điện phân nóng chảy?",
+      "choices": [
+        "Fe",
+        "Na",
+        "Cu",
+        "Zn"
+      ],
+      "answer": 1,
+      "explain": "Kim loại mạnh (K, Na, Ca, Mg, Al) được điều chế bằng điện phân nóng chảy.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Fe được điều chế bằng nhiệt luyện.",
+        "2": "Cu điều chế bằng điện phân dung dịch, thủy luyện.",
+        "3": "Zn điều chế bằng nhiệt luyện hoặc điện phân dung dịch."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dùng CO khử Fe₂O₃ ở nhiệt độ cao là phương pháp:",
+      "choices": [
+        "Thủy luyện",
+        "Điện phân dung dịch",
+        "Nhiệt luyện",
+        "Điện phân nóng chảy"
+      ],
+      "answer": 2,
+      "explain": "Nhiệt luyện: khử oxide kim loại bằng C, CO,… ở nhiệt độ cao.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Thủy luyện dùng dung dịch.",
+        "1": "Điện phân dùng dòng điện.",
+        "3": "Điện phân dùng dòng điện."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Phương pháp thích hợp để điều chế Cu từ dung dịch CuSO₄ bằng cách đơn giản là:",
+      "choices": [
+        "Cho Fe vào dung dịch (thủy luyện)",
+        "Điện phân nóng chảy CuSO₄",
+        "Cho Na vào dung dịch",
+        "Nhiệt phân dung dịch"
+      ],
+      "answer": 0,
+      "explain": "Fe (E° = −0,44) đẩy Cu²⁺ ra khỏi dung dịch: Fe + CuSO₄ → FeSO₄ + Cu.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Muối sulfate không điện phân nóng chảy để điều chế Cu.",
+        "2": "Na phản ứng với nước trước.",
+        "3": "Không điều chế được Cu như vậy."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Việc tái chế kim loại có lợi ích nào sau đây?",
+      "choices": [
+        "Tăng khai thác quặng",
+        "Làm giảm giá trị kinh tế",
+        "Tăng lượng rác thải kim loại",
+        "Tiết kiệm năng lượng và giảm ô nhiễm môi trường"
+      ],
+      "answer": 3,
+      "explain": "Tái chế giúp tiết kiệm năng lượng, giảm tác động môi trường.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Tái chế giúp giảm khai thác quặng.",
+        "1": "Tái chế tăng giá trị kinh tế.",
+        "2": "Tái chế giảm lượng phế thải."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khử hoàn toàn 16 g Fe₂O₃ (M = 160) bằng CO dư. Khối lượng Fe thu được là bao nhiêu gam? (Fe = 56)",
+      "expr": "16/160*2*56",
+      "answer": "11.2",
+      "explain": "n(Fe₂O₃) = 0,1 mol → n(Fe) = 0,2 mol → 11,2 g.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Điện phân nóng chảy 95 g MgCl₂ (M = 95) thu được bao nhiêu gam Mg? (Mg = 24)",
+      "expr": "95/95*24",
+      "answer": "24",
+      "explain": "n(MgCl₂) = 1 mol → n(Mg) = 1 mol → 24 g.",
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Điện phân nóng chảy 102 g Al₂O₃ (M = 102) với hiệu suất 100%, khối lượng Al thu được là bao nhiêu gam? (Al = 27)",
+      "expr": "102/102*2*27",
+      "answer": "54",
+      "explain": "n(Al₂O₃) = 1 mol → n(Al) = 2 mol → 54 g.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khử hoàn toàn 23,2 g Fe₃O₄ (M = 232) bằng CO dư. Khối lượng Fe thu được là bao nhiêu gam? (Fe = 56)",
+      "expr": "23.2/232*3*56",
+      "answer": "16.8",
+      "explain": "n(Fe₃O₄) = 0,1 mol → n(Fe) = 0,3 mol → 16,8 g.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cần bao nhiêu tấn quặng hematite chứa 80% Fe₂O₃ để sản xuất 1,12 tấn Fe với hiệu suất 100%? (Fe₂O₃ = 160, Fe = 56)",
+      "expr": "1.12/112*160*100/80",
+      "answer": "2",
+      "explain": "Fe₂O₃ cần: 1,12/112 × 160 = 1,6 tấn; quặng = 1,6/0,8 = 2 tấn.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đốt cháy 0,2 mol ZnS trong oxygen dư tạo ZnO rồi khử bằng C thu được Zn với hiệu suất 100%. Khối lượng Zn là bao nhiêu gam? (Zn = 65)",
+      "expr": "0.2*65",
+      "answer": "13",
+      "explain": "n(Zn) = n(ZnS) = 0,2 mol → 13 g.",
+      "id": "q13"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Phương pháp nào KHÔNG điều chế được Al trong công nghiệp?",
+      "choices": [
+        "Điện phân Al₂O₃ nóng chảy trong cryolite",
+        "Điện phân dung dịch AlCl₃",
+        "Điện phân AlCl₃ nóng chảy",
+        "Không có phương pháp nào ở trên bị loại"
+      ],
+      "answer": 1,
+      "explain": "Điện phân dung dịch AlCl₃ khử nước ở cathode thay cho Al³⁺ nên không thu được Al.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đây là phương pháp công nghiệp.",
+        "2": "Về nguyên tắc điều chế được Al.",
+        "3": "Phương pháp điện phân dung dịch không thu được Al."
+      },
+      "id": "q14"
+    }
+  ]
+}

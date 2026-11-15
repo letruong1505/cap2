@@ -1,0 +1,260 @@
+{
+  "id": "bai-22",
+  "grade": 12,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Hóa học 12",
+  "chapter": "Chương 6. Đại cương về kim loại",
+  "lesson": "Bài 22. Sự ăn mòn kim loại",
+  "section": "",
+  "bookPage": 102,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Ăn mòn kim loại là sự phá hủy kim loại hoặc hợp kim dưới tác dụng của các chất trong môi trường, trong đó kim loại bị oxi hóa: M → Mⁿ⁺ + ne. Ví dụ: thép bị gỉ sắt màu nâu đỏ; đồng bị gỉ xanh."
+    },
+    {
+      "type": "text",
+      "content": "Ăn mòn hóa học: xảy ra phản ứng oxi hóa – khử trực tiếp giữa kim loại với chất oxi hóa trong môi trường (không phát sinh dòng điện). Ví dụ: 3Fe + 2O₂ → Fe₃O₄ (ở nhiệt độ cao, trong lò đốt)."
+    },
+    {
+      "type": "text",
+      "content": "Ăn mòn điện hóa: xảy ra khi có sự tạo thành pin điện. Trong không khí ẩm, trên bề mặt gang, thép có lớp nước mỏng hòa tan O₂, CO₂ tạo dung dịch chất điện li; Fe và C tạo vô số pin điện nhỏ: anode là Fe (Fe → Fe²⁺ + 2e), cathode là C (½O₂ + H₂O + 2e → 2OH⁻). Fe²⁺ tiếp tục bị oxi hóa thành gỉ Fe₂O₃·nH₂O."
+    },
+    {
+      "type": "text",
+      "content": "Điều kiện ăn mòn điện hóa: có hai điện cực khác nhau (hai kim loại khác nhau, hoặc kim loại và phi kim); các điện cực tiếp xúc nhau trực tiếp hoặc qua dây dẫn; cùng tiếp xúc với dung dịch chất điện li. Kim loại hoạt động mạnh hơn (E° nhỏ hơn) bị ăn mòn."
+    },
+    {
+      "type": "text",
+      "content": "Chống ăn mòn: (1) phương pháp điện hóa — gắn kim loại cần bảo vệ với kim loại hoạt động mạnh hơn (ví dụ gắn tấm Zn vào vỏ tàu thép; Zn bị ăn mòn thay cho Fe); (2) phương pháp phủ bề mặt — phủ kim loại không gỉ (mạ vàng, tráng thiếc – sắt tây, tráng kẽm – tôn) hoặc phủ sơn, dầu, mỡ."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một tấm thép được bảo vệ bằng cách gắn tấm kẽm. Trong 1 giờ có 0,2 mol electron chuyển từ Zn sang môi trường. Tính khối lượng Zn bị ăn mòn (Zn = 65).",
+      "steps": [
+        "Zn → Zn²⁺ + 2e nên n(Zn) = 0,2/2 = 0,1 mol.",
+        "m(Zn) = 0,1 × 65 = 6,5 g."
+      ],
+      "expr": "0.2/2*65",
+      "answer": "6.5"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Ăn mòn kim loại là sự phá hủy kim loại do:",
+      "choices": [
+        "Tác dụng của các chất trong môi trường",
+        "Tác động cơ học thuần túy",
+        "Nhiệt độ cao thuần túy",
+        "Tác dụng của ánh sáng"
+      ],
+      "answer": 0,
+      "explain": "Ăn mòn là kim loại bị oxi hóa bởi các chất trong môi trường.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Ăn mòn do phản ứng hóa học với môi trường.",
+        "2": "Ăn mòn liên quan tới phản ứng oxi hóa.",
+        "3": "Không phải nguyên nhân chính."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong ăn mòn điện hóa gang, thép, cực âm (anode) là:",
+      "choices": [
+        "Carbon",
+        "Nước",
+        "Sắt",
+        "Oxygen"
+      ],
+      "answer": 2,
+      "explain": "Fe bị oxi hóa ở anode: Fe → Fe²⁺ + 2e.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Carbon là cathode.",
+        "1": "Nước là chất điện li.",
+        "3": "Oxygen bị khử ở cathode."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phương pháp nào sau đây là bảo vệ kim loại bằng phương pháp điện hóa?",
+      "choices": [
+        "Sơn lên vỏ tàu",
+        "Mạ vàng lên đồng hồ",
+        "Tra dầu mỡ vào máy",
+        "Gắn các tấm kẽm vào vỏ tàu thép"
+      ],
+      "answer": 3,
+      "explain": "Zn hoạt động mạnh hơn Fe nên bị ăn mòn thay cho thép.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đó là phương pháp phủ bề mặt.",
+        "1": "Đó là phương pháp phủ bề mặt.",
+        "2": "Đó là phương pháp phủ bề mặt."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Thép bị gỉ trong không khí ẩm thuộc loại ăn mòn:",
+      "choices": [
+        "Hóa học",
+        "Điện hóa",
+        "Cơ học",
+        "Sinh học"
+      ],
+      "answer": 1,
+      "explain": "Có đủ điều kiện hình thành pin điện: Fe–C trong dung dịch chất điện li.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Có tạo thành pin điện giữa Fe và C.",
+        "2": "Không phải ăn mòn cơ học.",
+        "3": "Không phải nguyên nhân chính."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Đinh sắt nối với dây kẽm bị ăn mòn chậm hơn đinh sắt trần vì:",
+      "choices": [
+        "Zn là cathode",
+        "Zn không bị oxi hóa",
+        "Zn là anode bị ăn mòn thay cho Fe",
+        "Zn phản ứng với nước tạo lớp bảo vệ"
+      ],
+      "answer": 2,
+      "explain": "Zn (E° = −0,762) mạnh hơn Fe (E° = −0,44) nên Zn bị ăn mòn.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Zn hoạt động mạnh hơn Fe nên là anode.",
+        "1": "Zn bị oxi hóa trước Fe.",
+        "3": "Cơ chế chính là bảo vệ điện hóa."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Điều kiện nào KHÔNG cần cho ăn mòn điện hóa?",
+      "choices": [
+        "Nhiệt độ rất cao",
+        "Hai điện cực khác nhau",
+        "Tiếp xúc trực tiếp hoặc qua dây dẫn",
+        "Cùng tiếp xúc với dung dịch chất điện li"
+      ],
+      "answer": 0,
+      "explain": "Ăn mòn điện hóa cần pin điện, không cần nhiệt độ cao.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Là điều kiện cần.",
+        "2": "Là điều kiện cần.",
+        "3": "Là điều kiện cần."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Sắt tây (thép tráng thiếc) và tôn (thép tráng kẽm) là ví dụ của phương pháp:",
+      "choices": [
+        "Điện hóa",
+        "Nhiệt luyện",
+        "Thủy luyện",
+        "Phủ bề mặt"
+      ],
+      "answer": 3,
+      "explain": "Lớp kim loại phủ ngăn thép tiếp xúc với môi trường.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đó là gắn kim loại mạnh hơn.",
+        "1": "Không phải phương pháp chống ăn mòn.",
+        "2": "Không phải phương pháp chống ăn mòn."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Zn bị ăn mòn khi 0,2 mol electron chuyển đi. Số mol Zn bị ăn mòn là bao nhiêu? (nhập số thập phân)",
+      "expr": "0.2/2",
+      "answer": "0.1",
+      "explain": "Zn → Zn²⁺ + 2e: n(Zn) = 0,2/2 = 0,1 mol.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khối lượng Zn bị ăn mòn (0,1 mol, Zn = 65) là bao nhiêu gam?",
+      "expr": "0.1*65",
+      "answer": "6.5",
+      "explain": "m = 0,1 × 65 = 6,5 g.",
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một vỏ tàu thép gắn tấm kẽm 650 g; khi tấm kẽm bị ăn mòn hết, số mol electron đã nhường là bao nhiêu? (Zn = 65)",
+      "expr": "650/65*2",
+      "answer": "20",
+      "explain": "n(Zn) = 10 mol → n(e) = 20 mol.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một thanh sắt 5,6 g bị ăn mòn hoàn toàn thành Fe²⁺. Số mol electron nhường là bao nhiêu? (Fe = 56; nhập số thập phân)",
+      "expr": "5.6/56*2",
+      "answer": "0.2",
+      "explain": "n(Fe) = 0,1 mol → n(e) = 0,2 mol.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một thanh sắt 11,2 g bị gỉ thành Fe₂O₃ (Fe = 56). Khối lượng Fe₂O₃ (M = 160) tối đa tạo thành là bao nhiêu gam?",
+      "expr": "11.2/56/2*160",
+      "answer": "16",
+      "explain": "n(Fe) = 0,2 mol → n(Fe₂O₃) = 0,1 mol → 16 g.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cần bao nhiêu mol O₂ để oxi hóa hoàn toàn 0,2 mol Fe thành Fe₂O₃? (nhập số thập phân)",
+      "expr": "0.2*3/4",
+      "answer": "0.15",
+      "explain": "4Fe + 3O₂ → 2Fe₂O₃: n(O₂) = 0,2 × 3/4 = 0,15 mol.",
+      "id": "q13"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Nối thanh Fe với thanh Cu rồi nhúng vào dung dịch HCl loãng. Phát biểu đúng là:",
+      "choices": [
+        "Cu bị ăn mòn",
+        "Fe bị ăn mòn điện hóa, H₂ thoát ra ở thanh Cu",
+        "Không có hiện tượng ăn mòn điện hóa",
+        "H₂ thoát ra ở thanh Fe"
+      ],
+      "answer": 1,
+      "explain": "Fe là anode bị oxi hóa; H⁺ bị khử ở cathode Cu thành H₂.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Cu có E° lớn hơn nên là cathode.",
+        "2": "Có pin điện Fe–Cu trong dung dịch acid.",
+        "3": "H₂ thoát ra chủ yếu ở cathode (Cu)."
+      },
+      "id": "q14"
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "id": "bai-23",
+  "grade": 12,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Hóa học 12",
+  "chapter": "Chương 6. Đại cương về kim loại",
+  "lesson": "Bài 23. Ôn tập chương 6",
+  "section": "",
+  "bookPage": 106,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nguyên tử kim loại có 1–3 electron lớp ngoài cùng; liên kết kim loại do lực hút tĩnh điện giữa electron tự do và ion dương ở nút mạng. Kim loại dẻo, dẫn điện, dẫn nhiệt, ánh kim; tính chất hóa học chung là tính khử (phản ứng với phi kim, nước, acid, muối)."
+    },
+    {
+      "type": "text",
+      "content": "Kim loại trong tự nhiên chủ yếu ở dạng hợp chất; điều chế bằng khử ion kim loại: điện phân nóng chảy (kim loại mạnh), nhiệt luyện, điện phân dung dịch, thủy luyện (kim loại trung bình, yếu). Hợp kim: gang, thép, duralumin. Ăn mòn kim loại: ăn mòn hóa học và điện hóa; bảo vệ bằng phương pháp điện hóa hoặc phủ bề mặt."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho 3,25 g Zn vào dung dịch CuSO₄ dư. Tính khối lượng chất rắn thu được tăng hay giảm bao nhiêu gam (Zn = 65, Cu = 64)?",
+      "steps": [
+        "n(Zn) = 0,05 mol.",
+        "Mỗi mol Zn tan thì chất rắn giảm 65 − 64 = 1 g.",
+        "Chất rắn giảm 0,05 g."
+      ],
+      "expr": "3.25/65*(65-64)",
+      "answer": "0.05"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kim loại nào sau đây không phản ứng hóa học với dung dịch HCl loãng?",
+      "choices": [
+        "Đồng",
+        "Calcium",
+        "Magnesium",
+        "Kẽm"
+      ],
+      "answer": 0,
+      "explain": "Cu đứng sau H trong dãy điện hóa nên không khử được H⁺.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Ca phản ứng mạnh với HCl.",
+        "2": "Mg phản ứng với HCl.",
+        "3": "Zn phản ứng với HCl."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trường hợp nào có xảy ra phản ứng hóa học?",
+      "choices": [
+        "Nhúng thanh Cu vào dung dịch NaCl",
+        "Nhúng thanh Al vào dung dịch MgCl₂",
+        "Nhúng thanh Cu vào dung dịch AgNO₃",
+        "Nhúng thanh Ag vào dung dịch FeSO₄"
+      ],
+      "answer": 2,
+      "explain": "Cu khử được Ag⁺.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Cu không khử được Na⁺.",
+        "1": "Al không khử được Mg²⁺.",
+        "3": "Ag không khử được Fe²⁺."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Thứ tự tăng dần thế điện cực chuẩn của các cặp Fe²⁺/Fe, Cu²⁺/Cu, Fe³⁺/Fe²⁺ là:",
+      "choices": [
+        "Cu²⁺/Cu < Fe²⁺/Fe < Fe³⁺/Fe²⁺",
+        "Fe³⁺/Fe²⁺ < Cu²⁺/Cu < Fe²⁺/Fe",
+        "Cu²⁺/Cu < Fe³⁺/Fe²⁺ < Fe²⁺/Fe",
+        "Fe²⁺/Fe < Cu²⁺/Cu < Fe³⁺/Fe²⁺"
+      ],
+      "answer": 3,
+      "explain": "−0,44 < +0,340 < +0,771 (V).",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Fe²⁺/Fe có E° nhỏ hơn Cu²⁺/Cu.",
+        "1": "Sai thứ tự.",
+        "2": "Sai thứ tự."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nhúng hai thanh kẽm vào hai cốc chứa HCl 1 M; nhỏ thêm vài giọt CuSO₄ vào cốc 2. Phát biểu đúng là:",
+      "choices": [
+        "Cả hai cốc đều chỉ ăn mòn điện hóa",
+        "Cốc 1 chỉ ăn mòn hóa học; cốc 2 có ăn mòn điện hóa nên Zn tan nhanh hơn",
+        "Cả hai cốc đều chỉ ăn mòn hóa học",
+        "Cốc 2 không bị ăn mòn"
+      ],
+      "answer": 1,
+      "explain": "Cu sinh ra bám trên Zn tạo pin điện Zn–Cu, tăng tốc độ ăn mòn.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Cốc 1 chỉ có Zn tiếp xúc với dung dịch acid.",
+        "2": "Cốc 2 xuất hiện Cu bám lên Zn tạo pin Zn–Cu.",
+        "3": "Zn vẫn bị ăn mòn nhanh hơn."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Phát biểu nào sau đây đúng?",
+      "choices": [
+        "Tất cả nguyên tố nhóm B đều là phi kim",
+        "Mọi kim loại có bán kính lớn hơn phi kim cùng nhóm",
+        "Ở trạng thái rắn, đơn chất kim loại có cấu tạo tinh thể",
+        "Liên kết kim loại là liên kết cộng hóa trị"
+      ],
+      "answer": 2,
+      "explain": "Kim loại ở thể rắn có cấu tạo tinh thể (trừ Hg lỏng).",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Các nguyên tố nhóm B đều là kim loại.",
+        "1": "Phát biểu không chính xác.",
+        "3": "Liên kết kim loại khác liên kết cộng hóa trị."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho 3,25 g Zn vào dung dịch CuSO₄ dư. Khối lượng chất rắn giảm bao nhiêu gam? (Zn = 65, Cu = 64; nhập số thập phân)",
+      "expr": "3.25/65*(65-64)",
+      "answer": "0.05",
+      "explain": "n(Zn) = 0,05 mol; mỗi mol làm khối lượng chất rắn giảm 1 g nên giảm 0,05 g.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho 5,4 g Al tác dụng với dung dịch HCl dư. Thể tích H₂ thu được ở điều kiện chuẩn là bao nhiêu lít? (Al = 27; 22,4 L/mol)",
+      "expr": "5.4/27*3/2*22.4",
+      "answer": "6.72",
+      "explain": "n(Al) = 0,2 mol → n(H₂) = 0,3 mol → 6,72 L.",
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hòa tan hoàn toàn 8,3 g hỗn hợp Al và Fe vào dung dịch HCl dư thu được 5,6 L H₂ (đktc). Khối lượng Al trong hỗn hợp là bao nhiêu gam? (Al = 27, Fe = 56, 22,4 L/mol; nhập số thập phân)",
+      "expr": "27/10",
+      "answer": "2.7",
+      "explain": "Gọi x, y là số mol Al, Fe: 27x + 56y = 8,3 và 1,5x + y = 0,25. Giải ra x = 0,1, y = 0,1: m(Al) = 2,7 g.",
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với hỗn hợp trên (x = 0,1 mol Al; y = 0,1 mol Fe), khối lượng Fe là bao nhiêu gam? (Fe = 56)",
+      "expr": "0.1*56",
+      "answer": "5.6",
+      "explain": "m(Fe) = 0,1 × 56 = 5,6 g.",
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khử hoàn toàn 32 g Fe₂O₃ bằng CO dư, thể tích CO (đktc) cần dùng là bao nhiêu lít? (Fe₂O₃ = 160; 22,4 L/mol)",
+      "expr": "32/160*3*22.4",
+      "answer": "13.44",
+      "explain": "n(Fe₂O₃) = 0,2 mol → n(CO) = 0,6 mol → 13,44 L.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 0,1 mol Mg vào dung dịch chứa 0,15 mol CuSO₄. Số mol Cu thu được là bao nhiêu? (nhập số thập phân)",
+      "expr": "0.1",
+      "answer": "0.1",
+      "explain": "Mg hết (0,1 mol) → n(Cu) = 0,1 mol.",
+      "id": "q11"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Điện phân nóng chảy NaCl với dòng điện, thu được 0,1 mol Na. Số mol Cl₂ là bao nhiêu? (nhập số thập phân)",
+      "expr": "0.1/2",
+      "answer": "0.05",
+      "explain": "2NaCl → 2Na + Cl₂: n(Cl₂) = 0,05 mol.",
+      "id": "q12"
+    }
+  ]
+}
