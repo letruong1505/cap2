@@ -1,0 +1,257 @@
+{
+  "id": "bai-8",
+  "grade": 10,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 10",
+  "chapter": "Chương II. Bảng tuần hoàn các nguyên tố hoá học và định luật tuần hoàn",
+  "lesson": "Bài 8. Định luật tuần hoàn. Ý nghĩa của bảng tuần hoàn các nguyên tố hoá học",
+  "section": "",
+  "bookPage": 43,
+  "requirements": [
+    "Phát biểu được định luật tuần hoàn.",
+    "Trình bày được ý nghĩa của bảng tuần hoàn: mối liên hệ giữa vị trí với cấu tạo và tính chất; dự đoán tính chất của nguyên tố."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Định luật tuần hoàn: Tính chất của các nguyên tố và đơn chất, cũng như thành phần và tính chất của các hợp chất tạo nên từ các nguyên tố đó biến đổi tuần hoàn theo chiều tăng của điện tích hạt nhân nguyên tử."
+    },
+    {
+      "type": "text",
+      "content": "Nguyên nhân: cấu hình electron lớp ngoài cùng của nguyên tử các nguyên tố biến đổi tuần hoàn khi điện tích hạt nhân tăng dần, mà cấu hình lớp ngoài cùng quyết định tính chất hoá học."
+    },
+    {
+      "type": "formula",
+      "content": "Vị trí (ô, chu kì, nhóm)  ⇔  Cấu tạo nguyên tử (Z, số lớp, số e lớp ngoài cùng)  ⇔  Tính chất (kim loại/phi kim, hoá trị, oxide, hydroxide)"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b8-lien-he.svg",
+      "caption": "Mối liên hệ giữa vị trí, cấu tạo nguyên tử và tính chất của nguyên tố"
+    },
+    {
+      "type": "text",
+      "content": "Ý nghĩa: biết vị trí của một nguyên tố có thể suy ra cấu tạo nguyên tử và dự đoán tính chất: kim loại hay phi kim, hoá trị cao nhất với oxygen, hoá trị với hydrogen, công thức oxide cao nhất, hydroxide tương ứng và tính acid/base; so sánh tính chất với các nguyên tố lân cận."
+    },
+    {
+      "type": "text",
+      "content": "Lịch sử: dựa vào định luật tuần hoàn, Mendeleev đã dự đoán tính chất của các nguyên tố chưa biết như eka-silicon (germanium), eka-aluminium (gallium); các dự đoán sau đó được xác nhận bằng thực nghiệm."
+    },
+    {
+      "type": "method",
+      "title": "Từ vị trí dự đoán tính chất nguyên tố",
+      "when": "Đề cho Z hoặc vị trí, yêu cầu nêu cấu tạo, tính chất cơ bản; hoặc so sánh với nguyên tố lân cận.",
+      "steps": [
+        "Viết cấu hình electron, xác định chu kì, nhóm.",
+        "Suy ra loại nguyên tố (kim loại/phi kim/khí hiếm) từ số e lớp ngoài cùng.",
+        "Viết oxide cao nhất R₂Oₙ, hydroxide, hợp chất với H (nếu là phi kim) và nêu tính acid/base.",
+        "So sánh với nguyên tố lân cận theo quy luật chu kì, nhóm."
+      ],
+      "notes": [
+        "Kim loại nhóm IA, IIA tạo hydroxide base.",
+        "Phi kim nhóm VIA, VIIA tạo acid mạnh."
+      ],
+      "sample": {
+        "problem": "Dựa vào vị trí của sulfur (Z = 16), hãy nêu tính chất cơ bản.",
+        "steps": [
+          "Chu kì 3, nhóm VIA, phi kim (6e lớp ngoài cùng).",
+          "Oxide cao nhất SO₃ (oxide acid), hydroxide H₂SO₄ (acid mạnh), hợp chất với H: H₂S.",
+          "Tính phi kim: S > P nhưng S < Cl; S < O."
+        ],
+        "answer": "Phi kim, SO₃, H₂SO₄, H₂S"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Nguyên tố X có Z = 19. Dự đoán tính chất của X.",
+      "steps": [
+        "Cấu hình [Ar]4s¹: chu kì 4, nhóm IA, kim loại kiềm (potassium).",
+        "Oxide K₂O là oxide base; hydroxide KOH là base mạnh; tính kim loại K > Na."
+      ],
+      "expr": "19",
+      "answer": "19"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Theo định luật tuần hoàn, tính chất các nguyên tố biến đổi tuần hoàn theo chiều tăng của:",
+      "choices": [
+        "điện tích hạt nhân",
+        "nguyên tử khối",
+        "số neutron",
+        "số lớp electron"
+      ],
+      "answer": 0,
+      "explain": "Định luật tuần hoàn.",
+      "wrong_explain": {
+        "1": "Theo Mendeleev ban đầu.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên nhân sự biến đổi tuần hoàn tính chất các nguyên tố là:",
+      "choices": [
+        "sự biến đổi tuần hoàn cấu hình electron lớp ngoài cùng",
+        "sự tăng dần khối lượng",
+        "sự tăng số neutron",
+        "sự tăng bán kính"
+      ],
+      "answer": 0,
+      "explain": "Lớp ngoài cùng quyết định tính chất.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Không tuần hoàn."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên tố eka-silicon do Mendeleev dự đoán sau này được gọi là:",
+      "choices": [
+        "germanium",
+        "gallium",
+        "scandium",
+        "silicon"
+      ],
+      "answer": 0,
+      "explain": "Ge.",
+      "wrong_explain": {
+        "1": "Eka-aluminium.",
+        "2": "Eka-boron.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên tố ở chu kì 3, nhóm VA có oxide cao nhất là:",
+      "choices": [
+        "P₂O₅",
+        "N₂O₅",
+        "PO₂",
+        "P₂O₃"
+      ],
+      "answer": 0,
+      "explain": "Phosphorus, hoá trị 5.",
+      "wrong_explain": {
+        "1": "Chu kì 2.",
+        "2": "Sai.",
+        "3": "Không phải cao nhất."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên tố Z = 20 có tính chất:",
+      "choices": [
+        "kim loại, hydroxide là base",
+        "phi kim, hydroxide là acid",
+        "khí hiếm",
+        "lưỡng tính"
+      ],
+      "answer": 0,
+      "explain": "Ca: nhóm IIA, Ca(OH)₂ là base.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Từ vị trí của Cl, có thể khẳng định:",
+      "choices": [
+        "Cl là phi kim mạnh hơn S",
+        "Cl là kim loại",
+        "HClO₄ là base",
+        "Cl có bán kính lớn hơn S"
+      ],
+      "answer": 0,
+      "explain": "Cùng chu kì 3, Cl đứng sau S.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Acid.",
+        "3": "Nhỏ hơn."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nguyên tố Z = 15 có hoá trị cao nhất với oxygen bằng:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Nhóm VA.",
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên tố X có cấu hình lớp ngoài cùng 3s² 3p⁴. Phát biểu sai là:",
+      "choices": [
+        "hydroxide cao nhất của X là base",
+        "X là phi kim",
+        "oxide cao nhất là XO₃",
+        "hợp chất với H là H₂X"
+      ],
+      "answer": 0,
+      "explain": "H₂SO₄ là acid.",
+      "wrong_explain": {
+        "1": "Đúng.",
+        "2": "Đúng.",
+        "3": "Đúng."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên tố nhóm A là R tạo oxide cao nhất R₂O₇ và R thuộc chu kì 4. R là:",
+      "choices": [
+        "Br",
+        "Cl",
+        "Mn",
+        "I"
+      ],
+      "answer": 0,
+      "explain": "Nhóm VIIA, chu kì 4.",
+      "wrong_explain": {
+        "1": "Chu kì 3.",
+        "2": "Mn thuộc nhóm VIIB, không phải nhóm A.",
+        "3": "Chu kì 5."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "X ở chu kì 3, nhóm IIIA. Số electron của ion X³⁺ là:",
+      "expr": "10",
+      "answer": "10",
+      "explain": "Al có 13e, mất 3e.",
+      "id": "q10"
+    }
+  ]
+}

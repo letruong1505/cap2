@@ -1,0 +1,193 @@
+{
+  "id": "bai-14",
+  "grade": 10,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 10",
+  "chapter": "Chương III. Liên kết hoá học",
+  "lesson": "Bài 14. Ôn tập chương 3",
+  "section": "",
+  "bookPage": 68,
+  "requirements": [
+    "Hệ thống hoá kiến thức về quy tắc octet, liên kết ion, liên kết cộng hoá trị, liên kết hydrogen, tương tác van der Waals.",
+    "Vận dụng để xác định loại liên kết, viết công thức cấu tạo, so sánh tính chất vật lí."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hệ thống kiến thức chương 3: (1) Quy tắc octet. (2) Liên kết ion: lực hút tĩnh điện giữa ion trái dấu, Δχ ≥ 1,7; hợp chất ion rắn, nóng chảy cao, dẫn điện khi nóng chảy/tan. (3) Liên kết cộng hoá trị: cặp electron chung; không cực (Δχ < 0,4), có cực (0,4 – 1,7); liên kết đơn, đôi, ba; σ, π; năng lượng liên kết. (4) Liên kết hydrogen và tương tác van der Waals ảnh hưởng đến nhiệt độ sôi, độ tan."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b14-on-tap.svg",
+      "caption": "Sơ đồ hệ thống hoá kiến thức chương III"
+    },
+    {
+      "type": "formula",
+      "content": "Δχ < 0,4: CHT không cực   |   0,4 ≤ Δχ < 1,7: CHT có cực   |   Δχ ≥ 1,7: ion"
+    },
+    {
+      "type": "method",
+      "title": "Xác định loại liên kết và tính chất của chất",
+      "when": "Đề cho dãy chất hoặc nguyên tố, hỏi loại liên kết, số σ/π, so sánh nhiệt độ sôi, tính dẫn điện.",
+      "steps": [
+        "Xác định nguyên tố, tính Δχ nếu có số liệu.",
+        "Kim loại điển hình + phi kim điển hình: ion; hai phi kim: cộng hoá trị.",
+        "Đếm σ, π từ công thức cấu tạo.",
+        "So sánh nhiệt độ sôi: ion > chất có liên kết hydrogen > chất chỉ có van der Waals (cùng cỡ khối lượng)."
+      ],
+      "notes": [
+        "Phân tử CO₂, CH₄ có liên kết phân cực nhưng phân tử không phân cực.",
+        "Liên kết hydrogen là liên kết giữa các phân tử (liên phân tử)."
+      ],
+      "sample": {
+        "problem": "Cho các chất: KCl, H₂O, Cl₂, CO₂. Chất nào có liên kết ion, chất nào có liên kết cộng hoá trị không cực?",
+        "steps": [
+          "KCl: ion.",
+          "Cl₂: cộng hoá trị không cực; H₂O, CO₂: cộng hoá trị có cực."
+        ],
+        "answer": "KCl ion; Cl₂ không cực"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đếm tổng số liên kết σ trong phân tử C₂H₆ (CH₃–CH₃).",
+      "steps": [
+        "6 liên kết C–H và 1 liên kết C–C, đều là liên kết đơn.",
+        "Tổng 7σ, không có π."
+      ],
+      "expr": "6+1",
+      "answer": "7"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Liên kết trong phân tử O₂ là:",
+      "choices": [
+        "cộng hoá trị không cực",
+        "ion",
+        "cộng hoá trị có cực",
+        "hydrogen"
+      ],
+      "answer": 0,
+      "explain": "Hai nguyên tử giống nhau.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Liên kết đôi gồm:",
+      "choices": [
+        "1σ và 1π",
+        "2σ",
+        "2π",
+        "1σ và 2π"
+      ],
+      "answer": 0,
+      "explain": "Liên kết đôi.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Liên kết ba."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất nào dẫn điện ở trạng thái nóng chảy?",
+      "choices": [
+        "KCl",
+        "Cl₂",
+        "CH₄",
+        "I₂"
+      ],
+      "answer": 0,
+      "explain": "Hợp chất ion.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số liên kết π trong phân tử CO₂ là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Hai liên kết đôi.",
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất có nhiệt độ nóng chảy cao nhất trong: NaCl, H₂O, CH₄, Cl₂ là:",
+      "choices": [
+        "NaCl",
+        "H₂O",
+        "CH₄",
+        "Cl₂"
+      ],
+      "answer": 0,
+      "explain": "Hợp chất ion.",
+      "wrong_explain": {
+        "1": "Thấp hơn.",
+        "2": "Rất thấp.",
+        "3": "Thấp."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "χ(Al) = 1,61; χ(Cl) = 3,16. Liên kết Al–Cl theo hiệu độ âm điện là:",
+      "choices": [
+        "cộng hoá trị có cực",
+        "ion",
+        "cộng hoá trị không cực",
+        "kim loại"
+      ],
+      "answer": 0,
+      "explain": "Δχ = 1,55 < 1,7.",
+      "wrong_explain": {
+        "1": "Δχ < 1,7.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hiệu độ âm điện của liên kết K–Cl (χ(K) = 0,82; χ(Cl) = 3,16) là:",
+      "expr": "3.16-0.82",
+      "answer": "2.34",
+      "explain": "Liên kết ion.",
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Số liên kết σ trong phân tử H₂SO₄ (cấu tạo: 2 O–H, 2 S–O, 2 S=O) là:",
+      "expr": "6",
+      "answer": "6",
+      "explain": "Mỗi liên kết có đúng 1σ.",
+      "id": "q08"
+    }
+  ]
+}

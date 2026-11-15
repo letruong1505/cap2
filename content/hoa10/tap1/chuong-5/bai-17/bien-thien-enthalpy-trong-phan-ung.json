@@ -1,0 +1,326 @@
+{
+  "id": "bai-17",
+  "grade": 10,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 10",
+  "chapter": "Chương V. Năng lượng hoá học",
+  "lesson": "Bài 17. Biến thiên enthalpy trong các phản ứng hoá học",
+  "section": "",
+  "bookPage": 82,
+  "requirements": [
+    "Trình bày được khái niệm phản ứng toả nhiệt, thu nhiệt; điều kiện chuẩn; enthalpy tạo thành và biến thiên enthalpy chuẩn của phản ứng.",
+    "Viết được phương trình nhiệt hoá học, biểu diễn sơ đồ biến thiên enthalpy; tính ΔrH°₂₉₈ từ nhiệt tạo thành và từ năng lượng liên kết."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phản ứng toả nhiệt là phản ứng giải phóng năng lượng dạng nhiệt ra môi trường (đốt cháy nhiên liệu, phản ứng trung hoà). Phản ứng thu nhiệt là phản ứng nhận năng lượng dạng nhiệt từ môi trường (nhiệt phân CaCO₃, Cu(OH)₂, hoà tan NH₄Cl vào nước)."
+    },
+    {
+      "type": "text",
+      "content": "Biến thiên enthalpy của phản ứng (ΔrH) là nhiệt lượng toả ra hay thu vào của phản ứng ở áp suất không đổi. Điều kiện chuẩn: áp suất 1 bar (với chất khí), nồng độ 1 mol/L (với chất tan trong dung dịch), nhiệt độ thường chọn 25 °C (298 K). Biến thiên enthalpy chuẩn kí hiệu ΔrH°₂₉₈, đơn vị kJ hoặc kJ/mol."
+    },
+    {
+      "type": "formula",
+      "content": "Phản ứng toả nhiệt: ΔrH°₂₉₈ < 0        Phản ứng thu nhiệt: ΔrH°₂₉₈ > 0"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b17-toa-nhiet.svg",
+      "caption": "Sơ đồ biến thiên enthalpy của phản ứng toả nhiệt"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b17-thu-nhiet.svg",
+      "caption": "Sơ đồ biến thiên enthalpy của phản ứng thu nhiệt"
+    },
+    {
+      "type": "text",
+      "content": "Phương trình nhiệt hoá học là phương trình phản ứng có ghi kèm trạng thái của các chất (s, l, g, aq) và giá trị biến thiên enthalpy. Ví dụ: C(graphite) + O₂(g) → CO₂(g), ΔrH°₂₉₈ = −393,5 kJ. Giá trị ΔrH tỉ lệ với lượng chất phản ứng; đảo chiều phản ứng thì đổi dấu ΔrH."
+    },
+    {
+      "type": "text",
+      "content": "Enthalpy tạo thành chuẩn (nhiệt tạo thành chuẩn) ΔfH°₂₉₈ của một chất là biến thiên enthalpy của phản ứng tạo thành 1 mol chất đó từ các đơn chất bền nhất ở điều kiện chuẩn. ΔfH°₂₉₈ của đơn chất bền bằng 0. Ví dụ: CO₂(g): −393,5; H₂O(l): −285,8; CH₄(g): −74,9; NaCl(s): −411,1 kJ/mol."
+    },
+    {
+      "type": "formula",
+      "content": "ΔrH°₂₉₈ = Σ ΔfH°₂₉₈(sản phẩm) − Σ ΔfH°₂₉₈(chất đầu)        ΔrH°₂₉₈ = Σ E_b(chất đầu) − Σ E_b(sản phẩm)  (các chất ở thể khí)"
+    },
+    {
+      "type": "method",
+      "title": "Tính biến thiên enthalpy của phản ứng",
+      "when": "Đề cho bảng nhiệt tạo thành chuẩn hoặc năng lượng liên kết, yêu cầu tính ΔrH°₂₉₈, kết luận toả hay thu nhiệt, tính nhiệt lượng theo lượng chất.",
+      "steps": [
+        "Cân bằng phương trình, ghi trạng thái các chất.",
+        "Theo nhiệt tạo thành: lấy tổng (hệ số × ΔfH) sản phẩm trừ tổng chất đầu; đơn chất bền có ΔfH = 0.",
+        "Theo năng lượng liên kết: tổng năng lượng liên kết bị phá vỡ (chất đầu) trừ tổng năng lượng liên kết tạo thành (sản phẩm); nhớ nhân số liên kết trong mỗi phân tử.",
+        "Nhiệt lượng thực tế = |ΔrH| × (số mol chất / hệ số trong phương trình)."
+      ],
+      "notes": [
+        "Chú ý dấu: hai công thức có thứ tự trừ ngược nhau.",
+        "ΔrH < 0: toả nhiệt."
+      ],
+      "sample": {
+        "problem": "Tính ΔrH°₂₉₈ của phản ứng CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l).",
+        "steps": [
+          "ΔrH = [−393,5 + 2(−285,8)] − [−74,9 + 0] = −965,1 + 74,9.",
+          "ΔrH°₂₉₈ = −890,2 kJ ⇒ phản ứng toả nhiệt."
+        ],
+        "answer": "−890,2 kJ"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính ΔrH°₂₉₈ của phản ứng SO₂(g) + ½O₂(g) → SO₃(l), biết ΔfH°₂₉₈ của SO₂(g) = −296,8 kJ/mol, SO₃(l) = −441,0 kJ/mol.",
+      "steps": [
+        "ΔrH = −441,0 − (−296,8 + 0) = −144,2 kJ.",
+        "Phản ứng toả nhiệt."
+      ],
+      "expr": "-441+296.8",
+      "answer": "-144.2"
+    },
+    {
+      "problem": "Tính ΔrH°₂₉₈ của phản ứng H₂(g) + Cl₂(g) → 2HCl(g) theo năng lượng liên kết: E(H–H) = 436, E(Cl–Cl) = 243, E(H–Cl) = 432 kJ/mol.",
+      "steps": [
+        "ΔrH = [E(H–H) + E(Cl–Cl)] − 2E(H–Cl).",
+        "= (436 + 243) − 864 = −185 kJ."
+      ],
+      "expr": "436+243-864",
+      "answer": "-185"
+    },
+    {
+      "problem": "Đốt cháy 1 mol C (graphite) toả ra 393,5 kJ. Tính nhiệt toả ra khi đốt cháy 6 g C.",
+      "steps": [
+        "n(C) = 0,5 mol.",
+        "Q = 0,5·393,5 = 196,75 kJ."
+      ],
+      "expr": "0.5*393.5",
+      "answer": "196.75"
+    },
+    {
+      "problem": "Tính ΔrH°₂₉₈ của phản ứng nhiệt phân CaCO₃(s) → CaO(s) + CO₂(g), biết ΔfH°₂₉₈: CaCO₃ = −1206,9; CaO = −635,1; CO₂ = −393,5 kJ/mol.",
+      "steps": [
+        "ΔrH = (−635,1 − 393,5) − (−1206,9) = +178,3 kJ.",
+        "ΔrH > 0: phản ứng thu nhiệt (cần nung nóng)."
+      ],
+      "expr": "-635.1-393.5+1206.9",
+      "answer": "178.3"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phản ứng toả nhiệt có:",
+      "choices": [
+        "ΔrH < 0",
+        "ΔrH > 0",
+        "ΔrH = 0",
+        "không xác định"
+      ],
+      "answer": 0,
+      "explain": "Hệ mất năng lượng.",
+      "wrong_explain": {
+        "1": "Thu nhiệt.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điều kiện chuẩn đối với chất khí là:",
+      "choices": [
+        "áp suất 1 bar, thường ở 25 °C",
+        "áp suất 1 atm, 0 °C",
+        "100 °C",
+        "áp suất 10 bar"
+      ],
+      "answer": 0,
+      "explain": "Quy ước.",
+      "wrong_explain": {
+        "1": "Điều kiện tiêu chuẩn cũ.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Enthalpy tạo thành chuẩn của đơn chất bền bằng:",
+      "choices": [
+        "0",
+        "1",
+        "−1",
+        "phụ thuộc chất"
+      ],
+      "answer": 0,
+      "explain": "Quy ước.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phản ứng nào là phản ứng thu nhiệt?",
+      "choices": [
+        "Nhiệt phân CaCO₃",
+        "Đốt cháy than",
+        "Trung hoà acid – base",
+        "Đốt cháy cồn"
+      ],
+      "answer": 0,
+      "explain": "Cần cung cấp nhiệt liên tục.",
+      "wrong_explain": {
+        "1": "Toả.",
+        "2": "Toả.",
+        "3": "Toả."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đơn vị của biến thiên enthalpy chuẩn là:",
+      "choices": [
+        "kJ hoặc kJ/mol",
+        "J/s",
+        "kJ/kg",
+        "atm"
+      ],
+      "answer": 0,
+      "explain": "Nhiệt lượng.",
+      "wrong_explain": {
+        "1": "Công suất.",
+        "2": "Sai.",
+        "3": "Áp suất."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho phản ứng: N₂(g) + O₂(g) → 2NO(g), ΔrH°₂₉₈ = +180 kJ. Phát biểu đúng:",
+      "choices": [
+        "phản ứng thu nhiệt",
+        "phản ứng toả nhiệt",
+        "NO kém bền hơn N₂ là sai",
+        "ΔrH của phản ứng ngược là +180 kJ"
+      ],
+      "answer": 0,
+      "explain": "ΔrH > 0.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Phản ứng ngược −180 kJ."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phản ứng: 2H₂(g) + O₂(g) → 2H₂O(l), ΔrH = −571,6 kJ. ΔrH của phản ứng H₂(g) + ½O₂(g) → H₂O(l) (kJ):",
+      "expr": "-571.6/2",
+      "answer": "-285.8",
+      "explain": "ΔrH tỉ lệ với lượng chất.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phản ứng ngược H₂O(l) → H₂(g) + ½O₂(g) có ΔrH (kJ):",
+      "expr": "285.8",
+      "answer": "285.8",
+      "explain": "Đổi dấu.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính ΔrH°₂₉₈ (kJ) của C(s) + O₂(g) → CO₂(g), biết ΔfH(CO₂) = −393,5 kJ/mol:",
+      "expr": "-393.5",
+      "answer": "-393.5",
+      "explain": "Đơn chất có ΔfH = 0.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trên sơ đồ biến thiên enthalpy của phản ứng toả nhiệt:",
+      "choices": [
+        "mức năng lượng sản phẩm thấp hơn chất đầu",
+        "mức sản phẩm cao hơn chất đầu",
+        "hai mức bằng nhau",
+        "không có chất đầu"
+      ],
+      "answer": 0,
+      "explain": "ΔrH < 0.",
+      "wrong_explain": {
+        "1": "Thu nhiệt.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đốt cháy 1 mol CH₄ toả 890 kJ. Nhiệt toả ra khi đốt 0,25 mol CH₄ (kJ):",
+      "expr": "890/4",
+      "answer": "222.5",
+      "explain": "Tỉ lệ thuận.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính ΔrH°₂₉₈ (kJ) của CO(g) + ½O₂(g) → CO₂(g), biết ΔfH: CO = −110,5; CO₂ = −393,5 kJ/mol:",
+      "expr": "-393.5+110.5",
+      "answer": "-283",
+      "explain": "Sản phẩm − chất đầu.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính ΔrH°₂₉₈ (kJ) của C₂H₄(g) + H₂(g) → C₂H₆(g), biết ΔfH: C₂H₄ = +52,5; C₂H₆ = −84,7 kJ/mol:",
+      "expr": "-84.7-52.5",
+      "answer": "-137.2",
+      "explain": "ΔrH = −84,7 − 52,5.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính ΔrH (kJ) của N₂(g) + 3H₂(g) → 2NH₃(g) theo năng lượng liên kết: E(N≡N) = 945, E(H–H) = 436, E(N–H) = 391 kJ/mol:",
+      "expr": "945+3*436-6*391",
+      "answer": "-93",
+      "explain": "(945 + 1308) − 6·391 = −93 kJ.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính ΔrH (kJ) của NaOH(s) + HCl(g) → NaCl(s) + H₂O(l), với ΔfH: NaOH = −425,6; HCl(g) = −92,3; NaCl = −411,1; H₂O(l) = −285,8:",
+      "expr": "-411.1-285.8+425.6+92.3",
+      "answer": "-179",
+      "explain": "(−696,9) − (−517,9) = −179 kJ.",
+      "id": "q15"
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "id": "bai-7",
+  "grade": 10,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 10",
+  "chapter": "Chương II. Bảng tuần hoàn các nguyên tố hoá học và định luật tuần hoàn",
+  "lesson": "Bài 7. Xu hướng biến đổi thành phần và một số tính chất của hợp chất trong một chu kì",
+  "section": "",
+  "bookPage": 40,
+  "requirements": [
+    "Nhận xét được xu hướng biến đổi thành phần các oxide cao nhất và hydroxide tương ứng trong chu kì 3.",
+    "Nêu và giải thích được xu hướng biến đổi tính acid – base của oxide và hydroxide trong chu kì 3."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Trong một chu kì, theo chiều tăng điện tích hạt nhân, hoá trị cao nhất của nguyên tố trong oxide tăng dần từ 1 đến 7 (bằng số thứ tự nhóm A). Công thức oxide cao nhất: R₂Oₙ hoặc ROₙ/₂ với n là số thứ tự nhóm."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b7-oxide-hydroxide.svg",
+      "caption": "Oxide cao nhất và hydroxide tương ứng của các nguyên tố chu kì 3"
+    },
+    {
+      "type": "formula",
+      "content": "Nhóm A số n: oxide cao nhất R₂Oₙ; hợp chất khí với hydrogen (n ≥ 4) RH₈₋ₙ"
+    },
+    {
+      "type": "text",
+      "content": "Tính acid – base của oxide: Na₂O, MgO là oxide base; Al₂O₃ là oxide lưỡng tính; SiO₂, P₂O₅, SO₃, Cl₂O₇ là oxide acid, tính acid tăng dần."
+    },
+    {
+      "type": "text",
+      "content": "Tính acid – base của hydroxide: NaOH là base mạnh (kiềm), Mg(OH)₂ là base yếu, Al(OH)₃ là hydroxide lưỡng tính; H₂SiO₃ là acid rất yếu, H₃PO₄ acid trung bình, H₂SO₄ acid mạnh, HClO₄ acid rất mạnh."
+    },
+    {
+      "type": "text",
+      "content": "Kết luận: trong một chu kì, theo chiều tăng điện tích hạt nhân, tính base của oxide và hydroxide giảm dần, tính acid tăng dần – phù hợp với tính kim loại giảm và tính phi kim tăng. Trong một nhóm A theo chiều tăng Z, tính base tăng, tính acid giảm."
+    },
+    {
+      "type": "method",
+      "title": "Xác định công thức oxide, hydroxide và so sánh tính acid – base",
+      "when": "Đề cho nguyên tố hoặc vị trí, hỏi công thức oxide cao nhất, hydroxide, hợp chất khí với hydrogen; so sánh tính acid/base; tìm nguyên tố từ phần trăm khối lượng.",
+      "steps": [
+        "Xác định nhóm A (n) ⇒ oxide cao nhất R₂Oₙ; hợp chất với H: RH₈₋ₙ (phi kim).",
+        "So sánh: cùng chu kì, Z lớn hơn thì tính acid mạnh hơn; cùng nhóm, Z lớn hơn thì tính base mạnh hơn.",
+        "Bài phần trăm: lập phương trình theo M_R, giải tìm R."
+      ],
+      "notes": [
+        "Al₂O₃, Al(OH)₃ lưỡng tính.",
+        "Hoá trị với H của phi kim = 8 − n."
+      ],
+      "sample": {
+        "problem": "Nguyên tố R thuộc nhóm VIA. Viết công thức oxide cao nhất và hợp chất khí với hydrogen.",
+        "steps": [
+          "n = 6: oxide cao nhất RO₃.",
+          "Hợp chất với hydrogen: RH₂ (ví dụ SO₃ và H₂S)."
+        ],
+        "answer": "RO₃; H₂R"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Oxide cao nhất của nguyên tố R có công thức RO₂, trong đó oxygen chiếm 53,33% khối lượng. Tìm R.",
+      "steps": [
+        "%O = 32/(R + 32) = 0,5333 ⇒ R + 32 = 60.",
+        "R = 28: silicon (Si), oxide SiO₂."
+      ],
+      "expr": "60-32",
+      "answer": "28"
+    },
+    {
+      "problem": "Hợp chất khí với hydrogen của nguyên tố X là XH₃, trong đó hydrogen chiếm 17,65% khối lượng. Tìm X và công thức oxide cao nhất.",
+      "steps": [
+        "%H = 3/(X + 3) = 0,1765 ⇒ X + 3 = 17 ⇒ X = 14 (nitrogen).",
+        "X thuộc nhóm VA ⇒ oxide cao nhất N₂O₅."
+      ],
+      "expr": "17-3",
+      "answer": "14"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Oxide cao nhất của nguyên tố nhóm VIIA có công thức chung:",
+      "choices": [
+        "R₂O₇",
+        "RO₇",
+        "R₂O",
+        "RO₃"
+      ],
+      "answer": 0,
+      "explain": "Hoá trị cao nhất 7.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Nhóm VIA."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hydroxide nào là lưỡng tính?",
+      "choices": [
+        "Al(OH)₃",
+        "NaOH",
+        "Mg(OH)₂",
+        "H₂SO₄"
+      ],
+      "answer": 0,
+      "explain": "Vừa tác dụng acid vừa tác dụng base.",
+      "wrong_explain": {
+        "1": "Base mạnh.",
+        "2": "Base yếu.",
+        "3": "Acid."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong chu kì 3, acid mạnh nhất là:",
+      "choices": [
+        "HClO₄",
+        "H₂SO₄",
+        "H₃PO₄",
+        "H₂SiO₃"
+      ],
+      "answer": 0,
+      "explain": "Cl có Z lớn nhất (trừ Ar).",
+      "wrong_explain": {
+        "1": "Yếu hơn.",
+        "2": "Trung bình.",
+        "3": "Rất yếu."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Oxide nào là oxide base?",
+      "choices": [
+        "Na₂O",
+        "SO₃",
+        "P₂O₅",
+        "Cl₂O₇"
+      ],
+      "answer": 0,
+      "explain": "Kim loại kiềm.",
+      "wrong_explain": {
+        "1": "Acid.",
+        "2": "Acid.",
+        "3": "Acid."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dãy sắp xếp theo chiều tăng tính acid là:",
+      "choices": [
+        "H₂SiO₃ < H₃PO₄ < H₂SO₄ < HClO₄",
+        "HClO₄ < H₂SO₄ < H₃PO₄ < H₂SiO₃",
+        "H₃PO₄ < H₂SiO₃ < HClO₄ < H₂SO₄",
+        "H₂SO₄ < HClO₄ < H₃PO₄ < H₂SiO₃"
+      ],
+      "answer": 0,
+      "explain": "Tính acid tăng theo chu kì.",
+      "wrong_explain": {
+        "1": "Ngược.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dãy sắp xếp theo chiều giảm tính base là:",
+      "choices": [
+        "NaOH > Mg(OH)₂ > Al(OH)₃",
+        "Al(OH)₃ > Mg(OH)₂ > NaOH",
+        "Mg(OH)₂ > NaOH > Al(OH)₃",
+        "NaOH > Al(OH)₃ > Mg(OH)₂"
+      ],
+      "answer": 0,
+      "explain": "Tính base giảm theo chu kì.",
+      "wrong_explain": {
+        "1": "Ngược.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên tố R có hợp chất khí với hydrogen là RH₄. Oxide cao nhất của R là:",
+      "choices": [
+        "RO₂",
+        "R₂O₅",
+        "RO₃",
+        "R₂O₇"
+      ],
+      "answer": 0,
+      "explain": "8 − n = 4 ⇒ n = 4.",
+      "wrong_explain": {
+        "1": "Nhóm VA.",
+        "2": "Nhóm VIA.",
+        "3": "Nhóm VIIA."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nguyên tố R ở nhóm VIA. Hoá trị của R trong hợp chất khí với hydrogen là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "8 − 6.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "So sánh tính base: KOH và NaOH.",
+      "choices": [
+        "KOH mạnh hơn NaOH",
+        "NaOH mạnh hơn KOH",
+        "bằng nhau",
+        "KOH là acid"
+      ],
+      "answer": 0,
+      "explain": "Cùng nhóm IA, K ở chu kì lớn hơn.",
+      "wrong_explain": {
+        "1": "Ngược.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Oxide cao nhất R₂O₅ có %O = 56,34%. Nguyên tử khối R (làm tròn đến đơn vị):",
+      "expr": "31",
+      "answer": "31",
+      "explain": "80/(2R + 80) = 0,5634 ⇒ 2R ≈ 62 ⇒ R = 31 (P).",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hợp chất RH₂ có %H = 5,88%. Nguyên tử khối R là:",
+      "expr": "32",
+      "answer": "32",
+      "explain": "2/(R + 2) = 0,0588 ⇒ R = 32 (S).",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Oxide cao nhất RO₃ có %O = 60%. Nguyên tử khối R:",
+      "expr": "32",
+      "answer": "32",
+      "explain": "48/(R + 48) = 0,6 ⇒ R = 32.",
+      "id": "q12"
+    }
+  ]
+}

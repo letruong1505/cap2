@@ -1,0 +1,342 @@
+{
+  "id": "bai-6",
+  "grade": 10,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 10",
+  "chapter": "Chương II. Bảng tuần hoàn các nguyên tố hoá học và định luật tuần hoàn",
+  "lesson": "Bài 6. Xu hướng biến đổi một số tính chất của nguyên tử các nguyên tố trong một chu kì và trong một nhóm",
+  "section": "",
+  "bookPage": 34,
+  "requirements": [
+    "Giải thích được xu hướng biến đổi bán kính nguyên tử, độ âm điện trong một chu kì và trong một nhóm A.",
+    "Giải thích được xu hướng biến đổi tính kim loại, tính phi kim trong chu kì và nhóm A."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Bán kính nguyên tử: trong một chu kì, theo chiều tăng điện tích hạt nhân, bán kính nguyên tử giảm dần (số lớp electron không đổi nhưng điện tích hạt nhân tăng, lực hút electron lớp ngoài tăng). Trong một nhóm A, theo chiều tăng điện tích hạt nhân, bán kính nguyên tử tăng dần (số lớp electron tăng)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b6-ban-kinh.svg",
+      "caption": "Bán kính nguyên tử các nguyên tố chu kì 3"
+    },
+    {
+      "type": "text",
+      "content": "Độ âm điện (χ) đặc trưng cho khả năng hút electron của nguyên tử khi tạo liên kết hoá học. Theo thang Pauling, fluorine có độ âm điện lớn nhất (3,98). Trong một chu kì, độ âm điện tăng dần; trong một nhóm A, độ âm điện giảm dần theo chiều tăng điện tích hạt nhân."
+    },
+    {
+      "type": "text",
+      "content": "Tính kim loại là khả năng nguyên tử nhường electron để trở thành ion dương; tính phi kim là khả năng nhận electron để trở thành ion âm. Nguyên tử càng dễ nhường electron thì tính kim loại càng mạnh."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b6-xu-huong.svg",
+      "caption": "Xu hướng biến đổi tính chất nguyên tử trong chu kì và nhóm A"
+    },
+    {
+      "type": "formula",
+      "content": "Trong chu kì (trái → phải): bán kính ↓, độ âm điện ↑, tính kim loại ↓, tính phi kim ↑        Trong nhóm A (trên → dưới): bán kính ↑, độ âm điện ↓, tính kim loại ↑, tính phi kim ↓"
+    },
+    {
+      "type": "text",
+      "content": "Kim loại mạnh nhất ở góc dưới bên trái (Cs, Fr); phi kim mạnh nhất ở góc trên bên phải (F, không kể khí hiếm)."
+    },
+    {
+      "type": "method",
+      "title": "So sánh tính chất các nguyên tố",
+      "when": "Đề cho các nguyên tố (Z hoặc kí hiệu), yêu cầu sắp xếp theo bán kính, độ âm điện, tính kim loại, tính phi kim.",
+      "steps": [
+        "Xác định vị trí (chu kì, nhóm) của mỗi nguyên tố.",
+        "Các nguyên tố cùng chu kì: so sánh theo Z (trái phải); cùng nhóm: so sánh theo chu kì (trên dưới).",
+        "Nguyên tố khác cả chu kì và nhóm: dùng một nguyên tố trung gian cùng chu kì với nguyên tố này và cùng nhóm với nguyên tố kia.",
+        "Viết dãy sắp xếp và giải thích."
+      ],
+      "notes": [
+        "Bán kính và tính kim loại biến đổi cùng chiều; độ âm điện và tính phi kim biến đổi cùng chiều.",
+        "Khí hiếm thường không xét độ âm điện."
+      ],
+      "sample": {
+        "problem": "Sắp xếp Na, Mg, K theo chiều tăng bán kính nguyên tử.",
+        "steps": [
+          "Na, Mg cùng chu kì 3: r(Mg) < r(Na).",
+          "Na, K cùng nhóm IA: r(Na) < r(K).",
+          "Dãy: Mg < Na < K."
+        ],
+        "answer": "Mg < Na < K"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Sắp xếp các nguyên tố F, Cl, O theo chiều giảm độ âm điện.",
+      "steps": [
+        "F, O cùng chu kì 2: χ(F) > χ(O).",
+        "F, Cl cùng nhóm VIIA: χ(F) > χ(Cl). Theo thang Pauling χ(O) = 3,44 > χ(Cl) = 3,16.",
+        "Dãy: F > O > Cl."
+      ],
+      "expr": "3.98-3.44",
+      "answer": "0.54"
+    },
+    {
+      "problem": "So sánh tính kim loại của Na (Z = 11), Mg (Z = 12) và Al (Z = 13).",
+      "steps": [
+        "Ba nguyên tố cùng chu kì 3, Z tăng dần.",
+        "Tính kim loại giảm: Na > Mg > Al."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong một chu kì, theo chiều tăng điện tích hạt nhân, bán kính nguyên tử:",
+      "choices": [
+        "giảm dần",
+        "tăng dần",
+        "không đổi",
+        "tăng rồi giảm"
+      ],
+      "answer": 0,
+      "explain": "Điện tích hạt nhân tăng, số lớp không đổi.",
+      "wrong_explain": {
+        "1": "Đó là trong nhóm.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên tố có độ âm điện lớn nhất là:",
+      "choices": [
+        "fluorine",
+        "oxygen",
+        "chlorine",
+        "cesium"
+      ],
+      "answer": 0,
+      "explain": "χ(F) = 3,98.",
+      "wrong_explain": {
+        "1": "3,44.",
+        "2": "3,16.",
+        "3": "Nhỏ nhất."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong một nhóm A, theo chiều tăng điện tích hạt nhân, tính kim loại:",
+      "choices": [
+        "tăng dần",
+        "giảm dần",
+        "không đổi",
+        "biến đổi không quy luật"
+      ],
+      "answer": 0,
+      "explain": "Bán kính tăng, dễ nhường e.",
+      "wrong_explain": {
+        "1": "Đó là tính phi kim.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Độ âm điện đặc trưng cho:",
+      "choices": [
+        "khả năng hút electron của nguyên tử khi tạo liên kết",
+        "khả năng nhường electron",
+        "kích thước nguyên tử",
+        "khối lượng nguyên tử"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Đó là tính kim loại.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dãy sắp xếp theo chiều tăng bán kính là:",
+      "choices": [
+        "Cl < S < P < Si",
+        "Si < P < S < Cl",
+        "S < Cl < P < Si",
+        "P < Si < Cl < S"
+      ],
+      "answer": 0,
+      "explain": "Cùng chu kì 3, Z giảm thì r tăng.",
+      "wrong_explain": {
+        "1": "Ngược.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Kim loại mạnh nhất trong các nguyên tố: Li, Na, K, Rb là:",
+      "choices": [
+        "Rb",
+        "Li",
+        "Na",
+        "K"
+      ],
+      "answer": 0,
+      "explain": "Cùng nhóm IA, chu kì lớn nhất.",
+      "wrong_explain": {
+        "1": "Yếu nhất.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phi kim mạnh nhất trong các nguyên tố: N, O, F, Cl là:",
+      "choices": [
+        "F",
+        "N",
+        "O",
+        "Cl"
+      ],
+      "answer": 0,
+      "explain": "Góc trên bên phải.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bán kính nguyên tử giảm dần trong chu kì vì:",
+      "choices": [
+        "điện tích hạt nhân tăng mà số lớp electron không đổi",
+        "số lớp electron tăng",
+        "khối lượng nguyên tử giảm",
+        "số neutron giảm"
+      ],
+      "answer": 0,
+      "explain": "Lực hút hạt nhân tăng.",
+      "wrong_explain": {
+        "1": "Không đổi trong chu kì.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sắp xếp theo chiều giảm tính phi kim: ",
+      "choices": [
+        "Cl > S > P",
+        "P > S > Cl",
+        "S > Cl > P",
+        "P > Cl > S"
+      ],
+      "answer": 0,
+      "explain": "Cùng chu kì 3.",
+      "wrong_explain": {
+        "1": "Ngược.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho X (Z = 9), Y (Z = 17), Z (Z = 35). Thứ tự tăng dần độ âm điện là:",
+      "choices": [
+        "Z < Y < X",
+        "X < Y < Z",
+        "Y < Z < X",
+        "Z < X < Y"
+      ],
+      "answer": 0,
+      "explain": "Cùng nhóm VIIA: F > Cl > Br.",
+      "wrong_explain": {
+        "1": "Ngược.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sắp xếp Mg, Ca, Al theo chiều tăng tính kim loại:",
+      "choices": [
+        "Al < Mg < Ca",
+        "Ca < Mg < Al",
+        "Mg < Al < Ca",
+        "Al < Ca < Mg"
+      ],
+      "answer": 0,
+      "explain": "Al < Mg (cùng chu kì 3), Mg < Ca (cùng nhóm IIA).",
+      "wrong_explain": {
+        "1": "Ngược.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên tố có bán kính lớn nhất trong: Na, K, Mg, Al là:",
+      "choices": [
+        "K",
+        "Na",
+        "Mg",
+        "Al"
+      ],
+      "answer": 0,
+      "explain": "K ở chu kì 4, nhóm IA.",
+      "wrong_explain": {
+        "1": "Chu kì 3.",
+        "2": "Chu kì 3.",
+        "3": "Chu kì 3."
+      },
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hiệu độ âm điện giữa F (3,98) và Na (0,93) là:",
+      "expr": "3.98-0.93",
+      "answer": "3.05",
+      "explain": "Dùng để dự đoán loại liên kết (chương 3).",
+      "id": "q13"
+    }
+  ]
+}

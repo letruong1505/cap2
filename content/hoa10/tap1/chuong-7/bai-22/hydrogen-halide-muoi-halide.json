@@ -1,0 +1,325 @@
+{
+  "id": "bai-22",
+  "grade": 10,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 10",
+  "chapter": "Chương VII. Nguyên tố nhóm halogen",
+  "lesson": "Bài 22. Hydrogen halide. Muối halide",
+  "section": "",
+  "bookPage": 112,
+  "requirements": [
+    "Mô tả được cấu tạo, tính chất vật lí của hydrogen halide; giải thích sự biến đổi nhiệt độ sôi và tính acid của dãy hydrohalic acid.",
+    "Trình bày tính chất hoá học của hydrochloric acid, tính khử của ion halide; nhận biết ion halide bằng AgNO₃; nêu ứng dụng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hydrogen halide HX (HF, HCl, HBr, HI) là phân tử có liên kết cộng hoá trị phân cực, ở điều kiện thường là chất khí, tan nhiều trong nước tạo dung dịch hydrohalic acid. HF có nhiệt độ sôi cao bất thường (19,5 °C) do liên kết hydrogen; từ HCl đến HI nhiệt độ sôi tăng do tương tác van der Waals tăng."
+    },
+    {
+      "type": "formula",
+      "content": "Tính acid: HF < HCl < HBr < HI   (HF là acid yếu; độ bền liên kết H–X giảm từ HF đến HI)"
+    },
+    {
+      "type": "text",
+      "content": "Hydrochloric acid (HCl) có đầy đủ tính chất của acid mạnh: làm quỳ tím hoá đỏ; tác dụng với kim loại đứng trước H tạo muối và H₂ (Fe + 2HCl → FeCl₂ + H₂); với oxide base, base, muối. HF ăn mòn thuỷ tinh: SiO₂ + 4HF → SiF₄ + 2H₂O (dùng khắc chữ lên thuỷ tinh)."
+    },
+    {
+      "type": "text",
+      "content": "Tính khử của ion halide tăng từ F⁻ đến I⁻: Cl⁻ chỉ bị oxi hoá bởi chất oxi hoá mạnh (MnO₂, KMnO₄); Br⁻, I⁻ bị H₂SO₄ đặc oxi hoá: 2NaBr + 2H₂SO₄ → Na₂SO₄ + Br₂ + SO₂ + 2H₂O; 8NaI + 5H₂SO₄ → 4Na₂SO₄ + 4I₂ + H₂S + 4H₂O; NaCl + H₂SO₄ đặc → NaHSO₄ + HCl (không oxi hoá Cl⁻)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b22-agx.svg",
+      "caption": "Nhận biết các ion halide bằng dung dịch AgNO₃"
+    },
+    {
+      "type": "formula",
+      "content": "Ag⁺ + Cl⁻ → AgCl↓ (trắng)    Ag⁺ + Br⁻ → AgBr↓ (vàng nhạt)    Ag⁺ + I⁻ → AgI↓ (vàng)    AgF tan"
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: HCl dùng tẩy gỉ kim loại, sản xuất phân bón, dược phẩm, chế biến thực phẩm; NaCl làm muối ăn, nguyên liệu sản xuất Cl₂, NaOH; KI, KIO₃ bổ sung iodine; AgBr dùng trong phim ảnh; NaF trong kem đánh răng."
+    },
+    {
+      "type": "method",
+      "title": "Bài toán hydrochloric acid và muối halide",
+      "when": "Đề cho kim loại, oxide, muối carbonate tác dụng với HCl, hoặc muối halide tác dụng với AgNO₃; hỏi khối lượng, thể tích, nồng độ, thành phần hỗn hợp.",
+      "steps": [
+        "Viết phương trình phản ứng.",
+        "Tính số mol chất đã biết; với hỗn hợp đặt ẩn, lập hệ phương trình theo khối lượng và lượng khí/kết tủa.",
+        "Áp dụng bảo toàn khối lượng hoặc bảo toàn nguyên tố Cl khi cần: n(HCl) = 2n(H₂) khi kim loại tác dụng HCl.",
+        "Tính đại lượng cần tìm (V = n·24,79; C_M = n/V)."
+      ],
+      "notes": [
+        "Fe tác dụng HCl tạo FeCl₂.",
+        "Cu, Ag không tác dụng với HCl."
+      ],
+      "sample": {
+        "problem": "Cho 5,6 g Fe tác dụng hết với HCl. Tính thể tích H₂ (điều kiện chuẩn) và khối lượng muối.",
+        "steps": [
+          "Fe + 2HCl → FeCl₂ + H₂: n = 0,1 mol.",
+          "V(H₂) = 2,479 L; m(FeCl₂) = 0,1·127 = 12,7 g."
+        ],
+        "answer": "2,479 L; 12,7 g"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho dung dịch AgNO₃ dư vào dung dịch chứa 5,85 g NaCl. Tính khối lượng kết tủa.",
+      "steps": [
+        "n(NaCl) = 0,1 mol = n(AgCl).",
+        "m = 0,1·143,5 = 14,35 g."
+      ],
+      "expr": "0.1*143.5",
+      "answer": "14.35"
+    },
+    {
+      "problem": "Hoà tan hoàn toàn 10 g CaCO₃ bằng HCl dư. Tính thể tích CO₂ (điều kiện chuẩn).",
+      "steps": [
+        "CaCO₃ + 2HCl → CaCl₂ + CO₂ + H₂O.",
+        "n(CO₂) = 0,1 mol ⇒ V = 2,479 L."
+      ],
+      "expr": "0.1*24.79",
+      "answer": "2.479"
+    },
+    {
+      "problem": "Hỗn hợp Mg và Fe nặng 8 g tác dụng hết với HCl thu được 0,2 mol H₂. Tính khối lượng mỗi kim loại.",
+      "steps": [
+        "Gọi a, b là số mol Mg, Fe: 24a + 56b = 8; a + b = 0,2.",
+        "a = 0,1; b = 0,1 ⇒ m(Mg) = 2,4 g; m(Fe) = 5,6 g."
+      ],
+      "expr": "0.1*56",
+      "answer": "5.6"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dung dịch acid yếu trong dãy hydrohalic acid là:",
+      "choices": [
+        "HF",
+        "HCl",
+        "HBr",
+        "HI"
+      ],
+      "answer": 0,
+      "explain": "Liên kết H–F rất bền.",
+      "wrong_explain": {
+        "1": "Mạnh.",
+        "2": "Mạnh.",
+        "3": "Mạnh nhất."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Acid dùng để khắc chữ lên thuỷ tinh là:",
+      "choices": [
+        "HF",
+        "HCl",
+        "HBr",
+        "H₂SO₄"
+      ],
+      "answer": 0,
+      "explain": "SiO₂ + 4HF.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thuốc thử nhận biết ion Cl⁻ là:",
+      "choices": [
+        "AgNO₃",
+        "BaCl₂",
+        "NaOH",
+        "quỳ tím"
+      ],
+      "answer": 0,
+      "explain": "Kết tủa trắng AgCl.",
+      "wrong_explain": {
+        "1": "Nhận biết SO₄²⁻.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Kết tủa AgI có màu:",
+      "choices": [
+        "vàng",
+        "trắng",
+        "đen",
+        "xanh"
+      ],
+      "answer": 0,
+      "explain": "Đặc trưng.",
+      "wrong_explain": {
+        "1": "AgCl.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Kim loại KHÔNG tác dụng với dung dịch HCl là:",
+      "choices": [
+        "Cu",
+        "Fe",
+        "Zn",
+        "Mg"
+      ],
+      "answer": 0,
+      "explain": "Đứng sau H.",
+      "wrong_explain": {
+        "1": "Có.",
+        "2": "Có.",
+        "3": "Có."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "HF có nhiệt độ sôi cao hơn HCl vì:",
+      "choices": [
+        "có liên kết hydrogen giữa các phân tử",
+        "HF nặng hơn",
+        "HF là hợp chất ion",
+        "HF có liên kết đôi"
+      ],
+      "answer": 0,
+      "explain": "F có độ âm điện lớn.",
+      "wrong_explain": {
+        "1": "Nhẹ hơn.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tính khử của ion halide tăng theo dãy:",
+      "choices": [
+        "F⁻ < Cl⁻ < Br⁻ < I⁻",
+        "I⁻ < Br⁻ < Cl⁻ < F⁻",
+        "Cl⁻ < F⁻ < I⁻ < Br⁻",
+        "F⁻ < I⁻ < Cl⁻ < Br⁻"
+      ],
+      "answer": 0,
+      "explain": "Bán kính tăng, dễ nhường e.",
+      "wrong_explain": {
+        "1": "Ngược.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Fe tác dụng với HCl tạo:",
+      "choices": [
+        "FeCl₂ và H₂",
+        "FeCl₃ và H₂",
+        "FeCl₂ và Cl₂",
+        "FeCl₃ và H₂O"
+      ],
+      "answer": 0,
+      "explain": "H⁺ chỉ oxi hoá Fe lên +2.",
+      "wrong_explain": {
+        "1": "Với Cl₂.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phản ứng chứng minh HCl có tính khử là:",
+      "choices": [
+        "MnO₂ + 4HCl → MnCl₂ + Cl₂ + 2H₂O",
+        "Fe + 2HCl → FeCl₂ + H₂",
+        "NaOH + HCl → NaCl + H₂O",
+        "CaO + 2HCl → CaCl₂ + H₂O"
+      ],
+      "answer": 0,
+      "explain": "Cl⁻ bị oxi hoá thành Cl₂.",
+      "wrong_explain": {
+        "1": "HCl thể hiện tính oxi hoá (H⁺).",
+        "2": "Trung hoà.",
+        "3": "Tính acid."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho 0,1 mol Zn vào HCl dư. Số mol HCl phản ứng là:",
+      "expr": "0.2",
+      "answer": "0.2",
+      "explain": "Zn + 2HCl.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 6,5 g Zn tác dụng hết với HCl. Thể tích H₂ (L, điều kiện chuẩn):",
+      "expr": "0.1*24.79",
+      "answer": "2.479",
+      "explain": "n = 0,1 mol.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trung hoà 200 mL dung dịch NaOH 1 M cần V mL dung dịch HCl 2 M. Giá trị V:",
+      "expr": "100",
+      "answer": "100",
+      "explain": "n(HCl) = 0,2 mol.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho AgNO₃ dư vào dung dịch chứa 0,1 mol NaCl và 0,05 mol NaBr. Khối lượng kết tủa (g):",
+      "expr": "14.35+9.4",
+      "answer": "23.75",
+      "explain": "AgCl 14,35 g + AgBr 0,05·188 = 9,4 g.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hoà tan 4 g MgO bằng HCl vừa đủ. Khối lượng MgCl₂ (g):",
+      "expr": "9.5",
+      "answer": "9.5",
+      "explain": "n = 0,1 mol.",
+      "id": "q14"
+    }
+  ]
+}

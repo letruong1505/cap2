@@ -1,0 +1,303 @@
+{
+  "id": "bai-10",
+  "grade": 10,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 10",
+  "chapter": "Chương III. Liên kết hoá học",
+  "lesson": "Bài 10. Quy tắc octet",
+  "section": "",
+  "bookPage": 49,
+  "requirements": [
+    "Trình bày được quy tắc octet trong quá trình hình thành liên kết hoá học cho các nguyên tố nhóm A.",
+    "Vận dụng quy tắc octet để giải thích sự tạo thành ion và cặp electron dùng chung."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Liên kết hoá học là sự kết hợp giữa các nguyên tử tạo thành phân tử hay tinh thể bền vững hơn. Các khí hiếm có lớp electron ngoài cùng bền vững (8 electron, riêng He có 2 electron) nên tồn tại ở dạng nguyên tử tự do."
+    },
+    {
+      "type": "text",
+      "content": "Quy tắc octet: Trong quá trình hình thành liên kết hoá học, nguyên tử của các nguyên tố nhóm A có xu hướng tạo thành lớp vỏ có 8 electron ở lớp ngoài cùng (giống khí hiếm), bằng cách nhường, nhận hoặc góp chung electron."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b10-octet.svg",
+      "caption": "Nguyên tử Na nhường 1 electron, Cl nhận 1 electron để đạt cấu hình bền của khí hiếm"
+    },
+    {
+      "type": "text",
+      "content": "Kim loại (1, 2, 3 electron lớp ngoài cùng) có xu hướng nhường electron tạo ion dương; phi kim (5, 6, 7 electron lớp ngoài cùng) có xu hướng nhận electron tạo ion âm, hoặc góp chung electron với nguyên tử phi kim khác."
+    },
+    {
+      "type": "formula",
+      "content": "Na → Na⁺ + 1e        Mg → Mg²⁺ + 2e        Cl + 1e → Cl⁻        O + 2e → O²⁻"
+    },
+    {
+      "type": "text",
+      "content": "Hạn chế: quy tắc octet không áp dụng được cho một số trường hợp như BF₃ (B chỉ có 6 electron), PCl₅, SF₆ (P, S có hơn 8 electron), NO (số electron lẻ). Quy tắc octet áp dụng tốt cho các nguyên tố chu kì 2."
+    },
+    {
+      "type": "method",
+      "title": "Vận dụng quy tắc octet",
+      "when": "Đề cho nguyên tố, yêu cầu viết quá trình tạo ion, xác định điện tích ion, số electron dùng chung để đạt octet.",
+      "steps": [
+        "Viết cấu hình electron, xác định số electron lớp ngoài cùng.",
+        "Kim loại: nhường hết electron lớp ngoài cùng; điện tích ion = +số e nhường.",
+        "Phi kim: nhận thêm (8 − số e lớp ngoài cùng) electron; điện tích âm tương ứng.",
+        "Viết quá trình và cấu hình của ion (giống khí hiếm gần nhất)."
+      ],
+      "notes": [
+        "H chỉ cần 2 electron (giống He).",
+        "Ion tạo thành có cấu hình khí hiếm cùng chu kì (ion âm) hoặc chu kì trước (ion dương)."
+      ],
+      "sample": {
+        "problem": "Viết quá trình tạo ion của Al (Z = 13) và S (Z = 16).",
+        "steps": [
+          "Al (2, 8, 3): Al → Al³⁺ + 3e, cấu hình giống Ne.",
+          "S (2, 8, 6): S + 2e → S²⁻, cấu hình giống Ar."
+        ],
+        "answer": "Al³⁺, S²⁻"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Mỗi nguyên tử trong phân tử Cl₂ đạt octet như thế nào?",
+      "steps": [
+        "Cl có 7 electron lớp ngoài cùng, thiếu 1 electron.",
+        "Hai nguyên tử Cl mỗi nguyên tử góp 1 electron tạo 1 cặp electron chung; mỗi Cl có 8 electron xung quanh."
+      ],
+      "expr": "1",
+      "answer": "1"
+    },
+    {
+      "problem": "Tính số electron của ion Mg²⁺ và ion O²⁻; nhận xét cấu hình.",
+      "steps": [
+        "Mg (12e) nhường 2e ⇒ Mg²⁺ có 10e.",
+        "O (8e) nhận 2e ⇒ O²⁻ có 10e. Cả hai có cấu hình giống Ne."
+      ],
+      "expr": "12-2",
+      "answer": "10"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Theo quy tắc octet, nguyên tử các nguyên tố nhóm A có xu hướng đạt:",
+      "choices": [
+        "8 electron ở lớp ngoài cùng",
+        "2 electron lớp trong cùng",
+        "18 electron",
+        "0 electron"
+      ],
+      "answer": 0,
+      "explain": "Giống khí hiếm.",
+      "wrong_explain": {
+        "1": "Chỉ áp dụng với H, Li.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên tử kim loại có xu hướng:",
+      "choices": [
+        "nhường electron",
+        "nhận electron",
+        "không thay đổi",
+        "góp chung electron với kim loại"
+      ],
+      "answer": 0,
+      "explain": "Ít e lớp ngoài cùng.",
+      "wrong_explain": {
+        "1": "Phi kim.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khí hiếm tồn tại ở dạng nguyên tử tự do vì:",
+      "choices": [
+        "lớp electron ngoài cùng bền vững",
+        "có khối lượng lớn",
+        "có nhiều proton",
+        "có bán kính lớn"
+      ],
+      "answer": 0,
+      "explain": "8e (He: 2e).",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ion Na⁺ có cấu hình electron giống khí hiếm:",
+      "choices": [
+        "Ne",
+        "Ar",
+        "He",
+        "Kr"
+      ],
+      "answer": 0,
+      "explain": "Na⁺ có 10e.",
+      "wrong_explain": {
+        "1": "18e.",
+        "2": "2e.",
+        "3": "36e."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Nguyên tử oxygen cần nhận thêm bao nhiêu electron để đạt octet?",
+      "expr": "8-6",
+      "answer": "2",
+      "explain": "O có 6e lớp ngoài cùng.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ion nào có cấu hình giống Ar?",
+      "choices": [
+        "Cl⁻",
+        "Na⁺",
+        "F⁻",
+        "Mg²⁺"
+      ],
+      "answer": 0,
+      "explain": "Cl⁻ có 18e.",
+      "wrong_explain": {
+        "1": "10e.",
+        "2": "10e.",
+        "3": "10e."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phân tử nào không tuân theo quy tắc octet?",
+      "choices": [
+        "BF₃",
+        "CH₄",
+        "H₂O",
+        "NH₃"
+      ],
+      "answer": 0,
+      "explain": "B chỉ có 6e xung quanh.",
+      "wrong_explain": {
+        "1": "Tuân theo.",
+        "2": "Tuân theo.",
+        "3": "Tuân theo."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ion Ca²⁺ có bao nhiêu electron?",
+      "expr": "20-2",
+      "answer": "18",
+      "explain": "Ca có 20e.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ion N³⁻ có bao nhiêu electron?",
+      "expr": "7+3",
+      "answer": "10",
+      "explain": "N có 7e.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong phân tử N₂, mỗi nguyên tử N góp chung bao nhiêu electron?",
+      "choices": [
+        "3",
+        "1",
+        "2",
+        "5"
+      ],
+      "answer": 0,
+      "explain": "N có 5e, cần thêm 3.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên tố X có Z = 16. Ion tạo thành từ X theo quy tắc octet là:",
+      "choices": [
+        "X²⁻",
+        "X²⁺",
+        "X⁶⁺",
+        "X⁻"
+      ],
+      "answer": 0,
+      "explain": "S nhận 2e.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ion M³⁺ và ion X²⁻ đều có cấu hình [Ne]. Tổng số proton của M và X là:",
+      "expr": "13+8",
+      "answer": "21",
+      "explain": "M = Al (13), X = O (8).",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dãy gồm các ion đều có cấu hình electron giống Ne là:",
+      "choices": [
+        "Na⁺, Mg²⁺, F⁻, O²⁻",
+        "K⁺, Ca²⁺, Cl⁻",
+        "Na⁺, K⁺, Cl⁻",
+        "Li⁺, Be²⁺, H⁻"
+      ],
+      "answer": 0,
+      "explain": "Đều có 10e.",
+      "wrong_explain": {
+        "1": "18e.",
+        "2": "Lẫn.",
+        "3": "2e."
+      },
+      "id": "q13"
+    }
+  ]
+}

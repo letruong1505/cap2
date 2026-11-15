@@ -1,0 +1,307 @@
+{
+  "id": "bai-13",
+  "grade": 10,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 10",
+  "chapter": "Chương III. Liên kết hoá học",
+  "lesson": "Bài 13. Liên kết hydrogen và tương tác van der Waals",
+  "section": "",
+  "bookPage": 64,
+  "requirements": [
+    "Nêu được khái niệm liên kết hydrogen; giải thích được ảnh hưởng của liên kết hydrogen đến nhiệt độ sôi, nóng chảy, độ tan của H₂O, NH₃.",
+    "Nêu được khái niệm tương tác van der Waals và ảnh hưởng của nó đến nhiệt độ nóng chảy, nhiệt độ sôi."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Liên kết hydrogen là một loại liên kết yếu, được hình thành giữa nguyên tử H (đã liên kết với nguyên tử có độ âm điện lớn như F, O, N) với một nguyên tử khác có độ âm điện lớn (F, O, N) còn cặp electron hoá trị chưa liên kết."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b13-lien-ket-h.svg",
+      "caption": "Liên kết hydrogen giữa các phân tử nước"
+    },
+    {
+      "type": "text",
+      "content": "Ảnh hưởng của liên kết hydrogen: làm tăng nhiệt độ sôi, nhiệt độ nóng chảy (H₂O sôi ở 100 °C trong khi H₂S sôi ở −60 °C); làm tăng độ tan trong nước của các chất tạo được liên kết hydrogen với nước (NH₃, C₂H₅OH tan tốt). Nước đá có cấu trúc rỗng do liên kết hydrogen nên nhẹ hơn nước lỏng. Liên kết hydrogen còn có vai trò quan trọng trong cấu trúc DNA, protein."
+    },
+    {
+      "type": "text",
+      "content": "Tương tác van der Waals là tương tác tĩnh điện yếu giữa các lưỡng cực (vĩnh viễn hoặc tạm thời) của các phân tử. Tương tác van der Waals tăng khi khối lượng phân tử tăng và kích thước phân tử tăng."
+    },
+    {
+      "type": "formula",
+      "content": "Độ mạnh: liên kết ion, cộng hoá trị  ≫  liên kết hydrogen  >  tương tác van der Waals"
+    },
+    {
+      "type": "text",
+      "content": "Ảnh hưởng: trong dãy halogen F₂, Cl₂, Br₂, I₂, khối lượng phân tử tăng nên tương tác van der Waals tăng, nhiệt độ nóng chảy và sôi tăng (F₂, Cl₂ là khí; Br₂ lỏng; I₂ rắn). Tương tự với các khí hiếm, các alkane."
+    },
+    {
+      "type": "method",
+      "title": "So sánh nhiệt độ sôi dựa vào lực liên phân tử",
+      "when": "Đề cho dãy chất, yêu cầu sắp xếp theo nhiệt độ sôi, nóng chảy hoặc độ tan; giải thích bất thường (H₂O, HF, NH₃).",
+      "steps": [
+        "Xác định chất nào có liên kết hydrogen (có H gắn với F, O, N).",
+        "Chất có liên kết hydrogen thường sôi cao hơn chất có khối lượng tương đương không có liên kết hydrogen.",
+        "Các chất cùng loại không có liên kết hydrogen: so sánh khối lượng phân tử (tương tác van der Waals).",
+        "Kết luận thứ tự."
+      ],
+      "notes": [
+        "HF, H₂O, NH₃ có nhiệt độ sôi cao bất thường.",
+        "Hợp chất ion sôi cao nhất."
+      ],
+      "sample": {
+        "problem": "Sắp xếp theo chiều tăng nhiệt độ sôi: H₂O, H₂S, H₂Se.",
+        "steps": [
+          "H₂O có liên kết hydrogen nên sôi cao nhất.",
+          "H₂S < H₂Se do khối lượng phân tử tăng.",
+          "Thứ tự: H₂S < H₂Se < H₂O."
+        ],
+        "answer": "H₂S < H₂Se < H₂O"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Giải thích vì sao ethanol (C₂H₅OH) tan vô hạn trong nước còn ethane (C₂H₆) hầu như không tan.",
+      "steps": [
+        "C₂H₅OH có nhóm –OH tạo được liên kết hydrogen với nước.",
+        "C₂H₆ không phân cực, không tạo liên kết hydrogen với nước."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Sắp xếp các halogen F₂, Cl₂, Br₂, I₂ theo chiều tăng nhiệt độ sôi và giải thích.",
+      "steps": [
+        "Khối lượng phân tử tăng từ F₂ (38) đến I₂ (254).",
+        "Tương tác van der Waals tăng ⇒ nhiệt độ sôi tăng: F₂ < Cl₂ < Br₂ < I₂."
+      ],
+      "expr": "254-38",
+      "answer": "216"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Liên kết hydrogen được hình thành giữa nguyên tử H và nguyên tử có độ âm điện lớn như:",
+      "choices": [
+        "F, O, N",
+        "C, H, S",
+        "Na, K, Ca",
+        "Cl, Br, I"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Độ âm điện không đủ lớn.",
+        "2": "Kim loại.",
+        "3": "Thường không xét."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất nào có liên kết hydrogen giữa các phân tử?",
+      "choices": [
+        "H₂O",
+        "CH₄",
+        "H₂S",
+        "CO₂"
+      ],
+      "answer": 0,
+      "explain": "H gắn với O.",
+      "wrong_explain": {
+        "1": "Không có.",
+        "2": "S độ âm điện nhỏ.",
+        "3": "Không có H."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tương tác van der Waals tăng khi:",
+      "choices": [
+        "khối lượng phân tử tăng",
+        "khối lượng phân tử giảm",
+        "nhiệt độ tăng",
+        "phân tử nhỏ đi"
+      ],
+      "answer": 0,
+      "explain": "Lưỡng cực tạm thời mạnh hơn.",
+      "wrong_explain": {
+        "1": "Ngược.",
+        "2": "Sai.",
+        "3": "Ngược."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Liên kết hydrogen so với liên kết cộng hoá trị thì:",
+      "choices": [
+        "yếu hơn nhiều",
+        "mạnh hơn",
+        "bằng nhau",
+        "mạnh gấp đôi"
+      ],
+      "answer": 0,
+      "explain": "Liên kết yếu.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nước có nhiệt độ sôi cao hơn H₂S vì:",
+      "choices": [
+        "giữa các phân tử nước có liên kết hydrogen",
+        "phân tử nước nặng hơn",
+        "nước là hợp chất ion",
+        "H₂S có liên kết hydrogen mạnh hơn"
+      ],
+      "answer": 0,
+      "explain": "H₂O nhẹ hơn H₂S nhưng sôi cao hơn.",
+      "wrong_explain": {
+        "1": "Nhẹ hơn.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nước đá nổi trên nước lỏng vì:",
+      "choices": [
+        "liên kết hydrogen tạo cấu trúc rỗng làm khối lượng riêng nhỏ hơn",
+        "nước đá nặng hơn",
+        "nước đá có không khí",
+        "nước lỏng không có liên kết hydrogen"
+      ],
+      "answer": 0,
+      "explain": "Cấu trúc tứ diện rỗng.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Không phải lí do chính.",
+        "3": "Có nhưng linh động."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ở điều kiện thường, halogen tồn tại ở thể rắn là:",
+      "choices": [
+        "I₂",
+        "F₂",
+        "Cl₂",
+        "Br₂"
+      ],
+      "answer": 0,
+      "explain": "Khối lượng lớn nhất.",
+      "wrong_explain": {
+        "1": "Khí.",
+        "2": "Khí.",
+        "3": "Lỏng."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất nào tan tốt trong nước nhờ liên kết hydrogen?",
+      "choices": [
+        "NH₃",
+        "CH₄",
+        "N₂",
+        "O₂"
+      ],
+      "answer": 0,
+      "explain": "N–H tạo liên kết hydrogen.",
+      "wrong_explain": {
+        "1": "Không phân cực.",
+        "2": "Không.",
+        "3": "Ít tan."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thứ tự tăng nhiệt độ sôi của: CH₄, NH₃, H₂O là:",
+      "choices": [
+        "CH₄ < NH₃ < H₂O",
+        "H₂O < NH₃ < CH₄",
+        "NH₃ < CH₄ < H₂O",
+        "CH₄ < H₂O < NH₃"
+      ],
+      "answer": 0,
+      "explain": "CH₄ không có liên kết H; liên kết H của H₂O mạnh và nhiều hơn.",
+      "wrong_explain": {
+        "1": "Ngược.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thứ tự tăng nhiệt độ sôi các khí hiếm He, Ne, Ar, Kr:",
+      "choices": [
+        "He < Ne < Ar < Kr",
+        "Kr < Ar < Ne < He",
+        "Ne < He < Kr < Ar",
+        "Ar < Kr < He < Ne"
+      ],
+      "answer": 0,
+      "explain": "Khối lượng tăng.",
+      "wrong_explain": {
+        "1": "Ngược.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất có nhiệt độ sôi cao nhất trong: HF, HCl, HBr, HI là:",
+      "choices": [
+        "HF",
+        "HCl",
+        "HBr",
+        "HI"
+      ],
+      "answer": 0,
+      "explain": "Liên kết hydrogen mạnh.",
+      "wrong_explain": {
+        "1": "Thấp nhất.",
+        "2": "Sai.",
+        "3": "Cao nhưng thấp hơn HF."
+      },
+      "id": "q11"
+    }
+  ]
+}

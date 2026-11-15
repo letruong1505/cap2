@@ -1,0 +1,64 @@
+{
+  "id": "hoa10-nang-cao-chuong-5",
+  "grade": 10,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Bài tập nâng cao",
+  "chapter": "Chương V. Năng lượng hoá học",
+  "lesson": "Bài tập nâng cao · Chương V. Năng lượng hoá học",
+  "section": "Bài tập nâng cao",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các câu nâng cao của chương, gộp từ các bài đã học. Tên bài hiển thị trong ngoặc ở đầu mỗi câu. Hãy ôn lại lý thuyết và ví dụ của bài đó trước khi làm."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 17] Đốt cháy hoàn toàn 2,479 L khí CO (điều kiện chuẩn, 1 mol = 24,79 L), biết ΔrH của CO + ½O₂ → CO₂ là −283 kJ. Nhiệt lượng toả ra (kJ):",
+      "expr": "0.1*283",
+      "answer": "28.3",
+      "explain": "n(CO) = 0,1 mol.",
+      "id": "b17-n01"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 17] Tính ΔrH (kJ) của CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(g) theo năng lượng liên kết: E(C–H) = 414, E(O=O) = 498, E(C=O) = 799, E(O–H) = 464 kJ/mol:",
+      "expr": "4*414+2*498-2*799-4*464",
+      "answer": "-802",
+      "explain": "(1656 + 996) − (1598 + 1856) = −802 kJ.",
+      "id": "b17-n02"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 17] Để đun 1 kg nước từ 25 °C lên 100 °C cần 315 kJ. Khối lượng CH₄ tối thiểu cần đốt (g, viết dạng phân số), biết đốt 1 mol CH₄ toả 890 kJ:",
+      "expr": "315*16/890",
+      "answer": "504/89",
+      "explain": "n = 315/890 ≈ 0,354 mol; m = 16·315/890 = 504/89 ≈ 5,66 g.",
+      "id": "b17-n03"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 18] Đốt cháy hết 1,6 g CH₄ và 2,8 g CO (ΔrH: CH₄ −890; CO −283 kJ/mol). Tổng nhiệt toả ra (kJ):",
+      "expr": "89+28.3",
+      "answer": "117.3",
+      "explain": "0,1·890 + 0,1·283.",
+      "id": "b18-n01"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 18] Tính ΔrH (kJ) của 2NO(g) + O₂(g) → 2NO₂(g), biết ΔfH: NO = +90,3; NO₂ = +33,2 kJ/mol:",
+      "expr": "2*33.2-2*90.3",
+      "answer": "-114.2",
+      "explain": "2(33,2) − 2(90,3).",
+      "id": "b18-n02"
+    }
+  ]
+}

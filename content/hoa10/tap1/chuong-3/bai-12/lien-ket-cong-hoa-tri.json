@@ -1,0 +1,338 @@
+{
+  "id": "bai-12",
+  "grade": 10,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 10",
+  "chapter": "Chương III. Liên kết hoá học",
+  "lesson": "Bài 12. Liên kết cộng hoá trị",
+  "section": "",
+  "bookPage": 55,
+  "requirements": [
+    "Trình bày được khái niệm liên kết cộng hoá trị; viết được công thức Lewis, công thức cấu tạo của một số phân tử đơn giản.",
+    "Phân biệt liên kết cộng hoá trị không cực, có cực, liên kết ion dựa vào hiệu độ âm điện; phân biệt liên kết σ, π; nêu được khái niệm năng lượng liên kết."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Liên kết cộng hoá trị là liên kết được hình thành giữa hai nguyên tử bằng một hay nhiều cặp electron dùng chung. Mỗi cặp electron dùng chung tạo một liên kết: liên kết đơn (1 cặp, ví dụ H–H), liên kết đôi (2 cặp, O=O), liên kết ba (3 cặp, N≡N)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b12-lewis.svg",
+      "caption": "Công thức Lewis và công thức cấu tạo của một số phân tử"
+    },
+    {
+      "type": "text",
+      "content": "Liên kết cho – nhận là liên kết cộng hoá trị trong đó cặp electron dùng chung do một nguyên tử đóng góp (biểu diễn bằng mũi tên), ví dụ trong NH₄⁺, SO₂, CO."
+    },
+    {
+      "type": "formula",
+      "content": "Hiệu độ âm điện Δχ:  0 ≤ Δχ < 0,4: cộng hoá trị không cực;  0,4 ≤ Δχ < 1,7: cộng hoá trị có cực;  Δχ ≥ 1,7: liên kết ion"
+    },
+    {
+      "type": "text",
+      "content": "Liên kết cộng hoá trị không cực: cặp electron chung không lệch về nguyên tử nào (H₂, Cl₂, N₂). Liên kết cộng hoá trị có cực: cặp electron chung lệch về phía nguyên tử có độ âm điện lớn hơn (HCl, H₂O). Phân tử có liên kết phân cực có thể không phân cực nếu cấu trúc đối xứng (CO₂)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b12-sigma-pi.svg",
+      "caption": "Liên kết σ (xen phủ trục) và liên kết π (xen phủ bên)"
+    },
+    {
+      "type": "text",
+      "content": "Liên kết σ hình thành do sự xen phủ trục của hai orbital (s – s, s – p, p – p), bền vững. Liên kết π hình thành do sự xen phủ bên của hai orbital p, kém bền hơn σ. Liên kết đơn gồm 1σ; liên kết đôi 1σ + 1π; liên kết ba 1σ + 2π."
+    },
+    {
+      "type": "text",
+      "content": "Năng lượng liên kết (E_b) của một liên kết cộng hoá trị là năng lượng cần để phá vỡ 1 mol liên kết đó ở thể khí, tạo thành nguyên tử ở thể khí. Năng lượng liên kết càng lớn thì liên kết càng bền. Ví dụ: E(H–H) = 436 kJ/mol; E(N≡N) = 945 kJ/mol."
+    },
+    {
+      "type": "method",
+      "title": "Xác định loại liên kết và đếm số liên kết σ, π",
+      "when": "Đề cho phân tử, yêu cầu viết công thức Lewis/cấu tạo, xác định loại liên kết theo hiệu độ âm điện, đếm liên kết σ và π, so sánh độ bền.",
+      "steps": [
+        "Tính tổng số electron hoá trị, sắp xếp để mỗi nguyên tử đạt octet (H đạt 2e).",
+        "Viết công thức cấu tạo, đếm liên kết đơn, đôi, ba.",
+        "Mỗi liên kết đơn: 1σ; đôi: 1σ + 1π; ba: 1σ + 2π.",
+        "Tính Δχ để phân loại: < 0,4; 0,4 – 1,7; ≥ 1,7."
+      ],
+      "notes": [
+        "Δχ chỉ dùng để dự đoán, có ngoại lệ.",
+        "Năng lượng liên kết lớn hơn thì liên kết bền hơn."
+      ],
+      "sample": {
+        "problem": "Đếm số liên kết σ và π trong phân tử C₂H₄ (H₂C=CH₂).",
+        "steps": [
+          "4 liên kết C–H (4σ) và 1 liên kết C=C (1σ + 1π).",
+          "Tổng: 5σ và 1π."
+        ],
+        "answer": "5σ, 1π"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Xác định loại liên kết trong HCl, biết χ(H) = 2,20; χ(Cl) = 3,16.",
+      "steps": [
+        "Δχ = 3,16 − 2,20 = 0,96.",
+        "0,4 ≤ 0,96 < 1,7 ⇒ liên kết cộng hoá trị có cực, cặp electron lệch về Cl."
+      ],
+      "expr": "3.16-2.2",
+      "answer": "0.96"
+    },
+    {
+      "problem": "Xác định loại liên kết trong NaF, biết χ(Na) = 0,93; χ(F) = 3,98.",
+      "steps": [
+        "Δχ = 3,05 ≥ 1,7 ⇒ liên kết ion."
+      ],
+      "expr": "3.98-0.93",
+      "answer": "3.05"
+    },
+    {
+      "problem": "Đếm số liên kết σ và π trong phân tử HCN (H–C≡N).",
+      "steps": [
+        "H–C: 1σ; C≡N: 1σ + 2π.",
+        "Tổng 2σ và 2π."
+      ],
+      "expr": "2+2",
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Liên kết cộng hoá trị được hình thành bởi:",
+      "choices": [
+        "các cặp electron dùng chung",
+        "lực hút tĩnh điện giữa ion",
+        "electron tự do",
+        "liên kết hydrogen"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Liên kết ion.",
+        "2": "Liên kết kim loại.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phân tử có liên kết cộng hoá trị không cực là:",
+      "choices": [
+        "Cl₂",
+        "HCl",
+        "H₂O",
+        "NaCl"
+      ],
+      "answer": 0,
+      "explain": "Hai nguyên tử giống nhau.",
+      "wrong_explain": {
+        "1": "Có cực.",
+        "2": "Có cực.",
+        "3": "Ion."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Liên kết ba gồm:",
+      "choices": [
+        "1σ và 2π",
+        "3σ",
+        "2σ và 1π",
+        "3π"
+      ],
+      "answer": 0,
+      "explain": "Liên kết ba.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Liên kết σ được hình thành do:",
+      "choices": [
+        "sự xen phủ trục của các orbital",
+        "sự xen phủ bên",
+        "lực hút tĩnh điện",
+        "nhường electron"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Liên kết π.",
+        "2": "Liên kết ion.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Năng lượng liên kết càng lớn thì liên kết:",
+      "choices": [
+        "càng bền",
+        "càng kém bền",
+        "càng dài",
+        "càng phân cực"
+      ],
+      "answer": 0,
+      "explain": "Cần nhiều năng lượng để phá vỡ.",
+      "wrong_explain": {
+        "1": "Ngược.",
+        "2": "Thường ngắn hơn.",
+        "3": "Không liên quan trực tiếp."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hiệu độ âm điện của liên kết O–H là 1,24. Liên kết O–H là:",
+      "choices": [
+        "cộng hoá trị có cực",
+        "cộng hoá trị không cực",
+        "liên kết ion",
+        "liên kết kim loại"
+      ],
+      "answer": 0,
+      "explain": "0,4 ≤ 1,24 < 1,7.",
+      "wrong_explain": {
+        "1": "< 0,4.",
+        "2": "≥ 1,7.",
+        "3": "Sai."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số liên kết σ trong phân tử CO₂ (O=C=O) là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Mỗi liên kết đôi có 1σ.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số liên kết π trong phân tử N₂ là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "N≡N: 1σ + 2π.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số cặp electron dùng chung trong phân tử NH₃ là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "3 liên kết N–H.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong phân tử HCl, cặp electron dùng chung lệch về phía:",
+      "choices": [
+        "Cl",
+        "H",
+        "không lệch",
+        "cả hai luân phiên"
+      ],
+      "answer": 0,
+      "explain": "Cl có độ âm điện lớn hơn.",
+      "wrong_explain": {
+        "1": "Ngược.",
+        "2": "Có cực.",
+        "3": "Sai."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Liên kết cho – nhận có trong ion:",
+      "choices": [
+        "NH₄⁺",
+        "Cl⁻",
+        "Na⁺",
+        "O²⁻"
+      ],
+      "answer": 0,
+      "explain": "N cho cặp electron cho H⁺.",
+      "wrong_explain": {
+        "1": "Đơn nguyên tử.",
+        "2": "Đơn nguyên tử.",
+        "3": "Đơn nguyên tử."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "χ(Mg) = 1,31; χ(O) = 3,44. Hiệu độ âm điện (liên kết trong MgO là ion) bằng:",
+      "expr": "3.44-1.31",
+      "answer": "2.13",
+      "explain": "Δχ ≥ 1,7 ⇒ liên kết ion.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Số liên kết σ trong phân tử C₂H₂ (H–C≡C–H) là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "2 C–H + 1σ của C≡C.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Năng lượng cần để phá vỡ hết liên kết trong 1 mol H₂O, biết E(O–H) = 464 kJ/mol (kJ):",
+      "expr": "2*464",
+      "answer": "928",
+      "explain": "2 liên kết O–H.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dãy gồm các phân tử đều có liên kết cộng hoá trị phân cực:",
+      "choices": [
+        "HCl, H₂O, NH₃",
+        "H₂, Cl₂, N₂",
+        "NaCl, KCl, MgO",
+        "HCl, Cl₂, O₂"
+      ],
+      "answer": 0,
+      "explain": "Liên kết giữa hai nguyên tử khác nhau.",
+      "wrong_explain": {
+        "1": "Không cực.",
+        "2": "Ion.",
+        "3": "Lẫn không cực."
+      },
+      "id": "q15"
+    }
+  ]
+}

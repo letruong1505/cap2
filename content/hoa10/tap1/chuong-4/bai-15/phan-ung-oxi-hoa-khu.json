@@ -1,0 +1,297 @@
+{
+  "id": "bai-15",
+  "grade": 10,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 10",
+  "chapter": "Chương IV. Phản ứng oxi hoá – khử",
+  "lesson": "Bài 15. Phản ứng oxi hoá – khử",
+  "section": "",
+  "bookPage": 72,
+  "requirements": [
+    "Nêu được khái niệm và xác định được số oxi hoá của nguyên tử các nguyên tố trong hợp chất.",
+    "Nêu được khái niệm phản ứng oxi hoá – khử, chất oxi hoá, chất khử, quá trình oxi hoá, quá trình khử; cân bằng phương trình bằng phương pháp thăng bằng electron; nêu ý nghĩa của phản ứng oxi hoá – khử."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Số oxi hoá của một nguyên tử trong phân tử là điện tích của nguyên tử đó với giả thiết đây là hợp chất ion (cặp electron chung thuộc về nguyên tử có độ âm điện lớn hơn). Số oxi hoá viết ở phía trên kí hiệu nguyên tố, dấu trước số sau (+2, −1)."
+    },
+    {
+      "type": "formula",
+      "content": "Quy tắc: đơn chất: 0;  H: +1 (trừ hydride kim loại −1);  O: −2 (trừ OF₂, peroxide −1);  kim loại nhóm IA: +1, IIA: +2, Al: +3;  tổng số oxi hoá trong phân tử = 0, trong ion = điện tích ion"
+    },
+    {
+      "type": "text",
+      "content": "Phản ứng oxi hoá – khử là phản ứng hoá học trong đó có sự chuyển electron giữa các chất, hay có sự thay đổi số oxi hoá của một số nguyên tử. Chất khử (chất bị oxi hoá) là chất nhường electron, số oxi hoá tăng. Chất oxi hoá (chất bị khử) là chất nhận electron, số oxi hoá giảm. Quá trình oxi hoá là quá trình nhường electron; quá trình khử là quá trình nhận electron."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b15-oxi-hoa-khu.svg",
+      "caption": "Chất khử, chất oxi hoá và các quá trình trong phản ứng luyện gang"
+    },
+    {
+      "type": "text",
+      "content": "Cân bằng bằng phương pháp thăng bằng electron (nguyên tắc: tổng số electron chất khử nhường bằng tổng số electron chất oxi hoá nhận) gồm 4 bước: (1) xác định số oxi hoá, tìm chất oxi hoá, chất khử; (2) viết quá trình oxi hoá và quá trình khử; (3) tìm hệ số thích hợp sao cho số e nhường = số e nhận; (4) đặt hệ số vào phương trình, kiểm tra số nguyên tử hai vế."
+    },
+    {
+      "type": "text",
+      "content": "Ý nghĩa: phản ứng oxi hoá – khử xảy ra phổ biến trong đời sống và sản xuất: sự cháy của nhiên liệu, quá trình hô hấp, quang hợp, luyện kim (luyện gang thép), sản xuất hoá chất (NH₃, H₂SO₄), pin và acquy; nhưng cũng gây hại như sự gỉ kim loại, cháy nổ."
+    },
+    {
+      "type": "method",
+      "title": "Cân bằng phản ứng oxi hoá – khử",
+      "when": "Đề cho sơ đồ phản ứng có sự thay đổi số oxi hoá, yêu cầu xác định chất oxi hoá, chất khử và cân bằng bằng thăng bằng electron; hoặc tính lượng chất theo số mol electron.",
+      "steps": [
+        "Xác định số oxi hoá các nguyên tố thay đổi.",
+        "Viết quá trình oxi hoá (chất khử nhường e) và quá trình khử (chất oxi hoá nhận e).",
+        "Nhân hệ số để số e nhường = số e nhận (bội chung nhỏ nhất).",
+        "Đặt hệ số vào chất oxi hoá, chất khử, rồi cân bằng các nguyên tố còn lại (thường H, O sau cùng)."
+      ],
+      "notes": [
+        "Bảo toàn electron: Σn(e nhường) = Σn(e nhận) – dùng để giải bài toán nhanh.",
+        "Một chất có thể vừa là chất oxi hoá vừa là chất khử (phản ứng tự oxi hoá – khử)."
+      ],
+      "sample": {
+        "problem": "Cân bằng: Fe₂O₃ + CO → Fe + CO₂.",
+        "steps": [
+          "C⁺² → C⁺⁴ + 2e (×3); 2Fe⁺³ + 6e → 2Fe⁰ (×1).",
+          "Fe₂O₃ + 3CO → 2Fe + 3CO₂."
+        ],
+        "answer": "Fe₂O₃ + 3CO → 2Fe + 3CO₂"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Xác định số oxi hoá của S trong H₂S, S, SO₂, H₂SO₄.",
+      "steps": [
+        "H₂S: 2(+1) + x = 0 ⇒ x = −2.",
+        "S: 0; SO₂: x + 2(−2) = 0 ⇒ +4; H₂SO₄: 2 + x − 8 = 0 ⇒ +6."
+      ],
+      "expr": "8-2",
+      "answer": "6"
+    },
+    {
+      "problem": "Cân bằng phản ứng: Cu + HNO₃ → Cu(NO₃)₂ + NO + H₂O.",
+      "steps": [
+        "Cu⁰ → Cu⁺² + 2e (×3); N⁺⁵ + 3e → N⁺² (×2).",
+        "3Cu + 8HNO₃ → 3Cu(NO₃)₂ + 2NO + 4H₂O (6 HNO₃ tạo muối, 2 HNO₃ bị khử)."
+      ],
+      "expr": "3*2+2",
+      "answer": "8"
+    },
+    {
+      "problem": "Cho 5,6 g Fe tác dụng hết với Cl₂ tạo FeCl₃. Tính số mol electron Fe nhường.",
+      "steps": [
+        "n(Fe) = 0,1 mol; Fe → Fe⁺³ + 3e.",
+        "n(e) = 0,3 mol."
+      ],
+      "expr": "0.1*3",
+      "answer": "0.3"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Số oxi hoá của nguyên tử trong đơn chất bằng:",
+      "choices": [
+        "0",
+        "+1",
+        "−1",
+        "hoá trị"
+      ],
+      "answer": 0,
+      "explain": "Quy tắc 1.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất khử là chất:",
+      "choices": [
+        "nhường electron, số oxi hoá tăng",
+        "nhận electron, số oxi hoá giảm",
+        "không thay đổi số oxi hoá",
+        "luôn là phi kim"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Đó là chất oxi hoá.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Quá trình khử là quá trình:",
+      "choices": [
+        "nhận electron",
+        "nhường electron",
+        "tăng số oxi hoá",
+        "mất proton"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Quá trình oxi hoá.",
+        "2": "Quá trình oxi hoá.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Số oxi hoá của Mn trong KMnO₄ là:",
+      "expr": "8-1",
+      "answer": "7",
+      "explain": "1 + x − 8 = 0 ⇒ x = +7.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phản ứng nào là phản ứng oxi hoá – khử?",
+      "choices": [
+        "2Na + Cl₂ → 2NaCl",
+        "NaOH + HCl → NaCl + H₂O",
+        "CaCO₃ → CaO + CO₂",
+        "BaCl₂ + Na₂SO₄ → BaSO₄ + 2NaCl"
+      ],
+      "answer": 0,
+      "explain": "Số oxi hoá Na, Cl thay đổi.",
+      "wrong_explain": {
+        "1": "Trao đổi.",
+        "2": "Không đổi số oxi hoá.",
+        "3": "Trao đổi."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số oxi hoá của N trong NH₄⁺ là:",
+      "expr": "-3",
+      "answer": "-3",
+      "explain": "x + 4 = +1 ⇒ x = −3.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số oxi hoá của Cr trong K₂Cr₂O₇ là:",
+      "expr": "6",
+      "answer": "6",
+      "explain": "2 + 2x − 14 = 0 ⇒ x = +6.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số oxi hoá của S trong SO₄²⁻ là:",
+      "expr": "6",
+      "answer": "6",
+      "explain": "x − 8 = −2.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong phản ứng Zn + CuSO₄ → ZnSO₄ + Cu, chất oxi hoá là:",
+      "choices": [
+        "CuSO₄ (Cu⁺²)",
+        "Zn",
+        "ZnSO₄",
+        "Cu"
+      ],
+      "answer": 0,
+      "explain": "Cu⁺² nhận 2e.",
+      "wrong_explain": {
+        "1": "Chất khử.",
+        "2": "Sản phẩm.",
+        "3": "Sản phẩm."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong phản ứng 2H₂ + O₂ → 2H₂O, H₂ đóng vai trò:",
+      "choices": [
+        "chất khử",
+        "chất oxi hoá",
+        "vừa oxi hoá vừa khử",
+        "môi trường"
+      ],
+      "answer": 0,
+      "explain": "H⁰ → H⁺¹.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hệ số của Al trong phản ứng Al + O₂ → Al₂O₃ (tối giản) là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "4Al + 3O₂ → 2Al₂O₃.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cân bằng: MnO₂ + HCl → MnCl₂ + Cl₂ + H₂O. Hệ số của HCl (tối giản) là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "MnO₂ + 4HCl → MnCl₂ + Cl₂ + 2H₂O.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cân bằng: Fe + HNO₃ (loãng) → Fe(NO₃)₃ + NO + H₂O. Tổng hệ số (tối giản) là:",
+      "expr": "1+4+1+1+2",
+      "answer": "9",
+      "explain": "Fe + 4HNO₃ → Fe(NO₃)₃ + NO + 2H₂O.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 2,7 g Al tác dụng hết với HCl. Số mol electron Al nhường là:",
+      "expr": "0.3",
+      "answer": "0.3",
+      "explain": "n(Al) = 0,1; Al → Al³⁺ + 3e.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với 2,7 g Al ở trên, số mol H₂ thu được là:",
+      "expr": "0.15",
+      "answer": "0.15",
+      "explain": "2H⁺ + 2e → H₂: n(H₂) = 0,3/2.",
+      "id": "q15"
+    }
+  ]
+}

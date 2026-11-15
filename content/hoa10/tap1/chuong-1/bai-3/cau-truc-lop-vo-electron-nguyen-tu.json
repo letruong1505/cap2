@@ -1,0 +1,329 @@
+{
+  "id": "bai-3",
+  "grade": 10,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 10",
+  "chapter": "Chương I. Cấu tạo nguyên tử",
+  "lesson": "Bài 3. Cấu trúc lớp vỏ electron nguyên tử",
+  "section": "",
+  "bookPage": 21,
+  "requirements": [
+    "So sánh mô hình Rutherford – Bohr với mô hình hiện đại; nêu khái niệm orbital nguyên tử, hình dạng orbital s, p.",
+    "Trình bày cấu trúc lớp, phân lớp electron; viết cấu hình electron và biểu diễn electron trong ô orbital cho 20 nguyên tố đầu; dự đoán tính chất từ số electron lớp ngoài cùng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Mô hình Rutherford – Bohr: electron chuyển động trên những quỹ đạo tròn xác định quanh hạt nhân, mỗi quỹ đạo có mức năng lượng xác định. Mô hình hiện đại: electron chuyển động rất nhanh, không theo quỹ đạo xác định mà tạo thành đám mây electron; vùng không gian quanh hạt nhân có xác suất tìm thấy electron lớn nhất (khoảng 90%) gọi là orbital nguyên tử (AO)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b3-orbital.svg",
+      "caption": "Hình dạng orbital s (hình cầu) và orbital p (hình số tám nổi)"
+    },
+    {
+      "type": "text",
+      "content": "Lớp electron gồm các electron có mức năng lượng gần bằng nhau, đánh số n = 1, 2, 3, 4… (K, L, M, N…). Mỗi lớp chia thành các phân lớp s, p, d, f. Lớp n có n phân lớp và n² orbital; số electron tối đa của lớp n là 2n²."
+    },
+    {
+      "type": "formula",
+      "content": "Phân lớp s: 1 AO (tối đa 2e);  p: 3 AO (6e);  d: 5 AO (10e);  f: 7 AO (14e)        Lớp n: tối đa 2n² electron"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b3-thu-tu-nang-luong.svg",
+      "caption": "Thứ tự mức năng lượng các phân lớp dùng để viết cấu hình electron"
+    },
+    {
+      "type": "text",
+      "content": "Nguyên lí vững bền: electron chiếm các orbital có mức năng lượng từ thấp đến cao. Nguyên lí Pauli: mỗi orbital chứa tối đa 2 electron có chiều tự quay ngược nhau. Quy tắc Hund: trong cùng phân lớp, electron phân bố sao cho số electron độc thân là tối đa (điền đơn trước, ghép đôi sau)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b3-o-orbital.svg",
+      "caption": "Biểu diễn electron trong ô orbital của N và O theo quy tắc Hund"
+    },
+    {
+      "type": "text",
+      "content": "Đặc điểm lớp electron ngoài cùng: nguyên tử có 1, 2, 3 electron lớp ngoài cùng thường là kim loại (trừ H, He, B); có 5, 6, 7 electron thường là phi kim; có 8 electron (và He có 2) là khí hiếm, rất bền; có 4 electron có thể là kim loại hoặc phi kim."
+    },
+    {
+      "type": "method",
+      "title": "Viết cấu hình electron",
+      "when": "Đề cho Z (hoặc tổng số hạt), yêu cầu viết cấu hình electron, ô orbital, xác định số electron lớp ngoài cùng, số electron độc thân, dự đoán kim loại hay phi kim.",
+      "steps": [
+        "Xác định Z = số electron.",
+        "Điền electron theo thứ tự năng lượng 1s 2s 2p 3s 3p 4s 3d 4p…, mỗi phân lớp không vượt quá số tối đa.",
+        "Viết lại theo thứ tự lớp (3d trước 4s) nếu có phân lớp d.",
+        "Đếm electron lớp ngoài cùng (n lớn nhất) để kết luận tính chất; vẽ ô orbital theo Hund để đếm electron độc thân."
+      ],
+      "notes": [
+        "Fe (Z = 26): 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶ 4s², lớp ngoài cùng có 2e.",
+        "Cr và Cu có cấu hình đặc biệt (3d⁵4s¹, 3d¹⁰4s¹) – lớp 10 không bắt buộc."
+      ],
+      "sample": {
+        "problem": "Viết cấu hình electron của sulfur (Z = 16) và cho biết S là kim loại hay phi kim.",
+        "steps": [
+          "1s² 2s² 2p⁶ 3s² 3p⁴.",
+          "Lớp ngoài cùng (n = 3) có 6 electron ⇒ S là phi kim."
+        ],
+        "answer": "1s² 2s² 2p⁶ 3s² 3p⁴; phi kim"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Viết cấu hình electron của calcium (Z = 20) và cho biết số electron lớp ngoài cùng.",
+      "steps": [
+        "Ca: 1s² 2s² 2p⁶ 3s² 3p⁶ 4s².",
+        "Lớp ngoài cùng (n = 4) có 2 electron ⇒ kim loại."
+      ],
+      "expr": "2",
+      "answer": "2"
+    },
+    {
+      "problem": "Nguyên tử X có tổng số electron ở các phân lớp p là 11. Xác định Z của X.",
+      "steps": [
+        "Phân lớp 2p chứa tối đa 6e, nên 3p có 5e.",
+        "Cấu hình 1s² 2s² 2p⁶ 3s² 3p⁵ ⇒ Z = 17 (chlorine)."
+      ],
+      "expr": "2+2+6+2+5",
+      "answer": "17"
+    },
+    {
+      "problem": "Biểu diễn các electron phân lớp ngoài cùng của phosphorus (Z = 15) vào ô orbital và cho biết số electron độc thân.",
+      "steps": [
+        "P: 1s² 2s² 2p⁶ 3s² 3p³.",
+        "3p³ có 3 orbital, mỗi orbital 1 electron (Hund) ⇒ 3 electron độc thân."
+      ],
+      "expr": "3",
+      "answer": "3"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Orbital s có hình dạng:",
+      "choices": [
+        "hình cầu",
+        "hình số tám nổi",
+        "hình tròn phẳng",
+        "hình bầu dục"
+      ],
+      "answer": 0,
+      "explain": "AO s đối xứng cầu.",
+      "wrong_explain": {
+        "1": "Đó là orbital p.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Số electron tối đa của phân lớp p là:",
+      "choices": [
+        "6",
+        "2",
+        "10",
+        "14"
+      ],
+      "answer": 0,
+      "explain": "3 orbital × 2e.",
+      "wrong_explain": {
+        "1": "Phân lớp s.",
+        "2": "Phân lớp d.",
+        "3": "Phân lớp f."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Số electron tối đa của lớp thứ 3 (n = 3) là:",
+      "expr": "2*9",
+      "answer": "18",
+      "explain": "2n².",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Mỗi orbital chứa tối đa bao nhiêu electron?",
+      "choices": [
+        "2",
+        "1",
+        "6",
+        "8"
+      ],
+      "answer": 0,
+      "explain": "Nguyên lí Pauli.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Phân lớp p.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cấu hình electron của Na (Z = 11) là:",
+      "choices": [
+        "1s² 2s² 2p⁶ 3s¹",
+        "1s² 2s² 2p⁷",
+        "1s² 2s² 2p⁵ 3s²",
+        "1s² 2s⁸ 3s¹"
+      ],
+      "answer": 0,
+      "explain": "Điền theo thứ tự năng lượng.",
+      "wrong_explain": {
+        "1": "2p tối đa 6e.",
+        "2": "Phải điền đầy 2p trước.",
+        "3": "2s tối đa 2e."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên tử có cấu hình 1s² 2s² 2p⁶ 3s² 3p⁵ là:",
+      "choices": [
+        "phi kim (7e lớp ngoài cùng)",
+        "kim loại",
+        "khí hiếm",
+        "kim loại chuyển tiếp"
+      ],
+      "answer": 0,
+      "explain": "Lớp 3 có 7e.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Cần 8e.",
+        "3": "Không có phân lớp d."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số electron độc thân của nitrogen (Z = 7) là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "2p³: 3 electron độc thân.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số electron độc thân của oxygen (Z = 8) là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "2p⁴: một ô ghép đôi, hai ô độc thân.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong nguyên tử K (Z = 19), electron cuối cùng được điền vào phân lớp:",
+      "choices": [
+        "4s",
+        "3d",
+        "3p",
+        "4p"
+      ],
+      "answer": 0,
+      "explain": "4s có năng lượng thấp hơn 3d.",
+      "wrong_explain": {
+        "1": "3d sau 4s.",
+        "2": "3p đã đầy.",
+        "3": "Sau 3d."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số electron lớp ngoài cùng của nguyên tử Al (Z = 13) là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "3s² 3p¹.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Quy tắc Hund phát biểu:",
+      "choices": [
+        "trong một phân lớp, electron phân bố để số electron độc thân tối đa",
+        "mỗi orbital tối đa 2 electron",
+        "electron điền từ mức thấp đến cao",
+        "lớp n có tối đa 2n² electron"
+      ],
+      "answer": 0,
+      "explain": "Điền đơn trước.",
+      "wrong_explain": {
+        "1": "Đó là Pauli.",
+        "2": "Đó là nguyên lí vững bền.",
+        "3": "Hệ quả."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nguyên tử X có 3 lớp electron, lớp ngoài cùng có 6 electron. Số hiệu nguyên tử Z là:",
+      "expr": "2+8+6",
+      "answer": "16",
+      "explain": "Lớp 1: 2e, lớp 2: 8e, lớp 3: 6e.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nguyên tử Y có tổng số electron trên các phân lớp s là 7. Số hiệu nguyên tử nhỏ nhất của Y là:",
+      "expr": "19",
+      "answer": "19",
+      "explain": "1s² 2s² 3s² 4s¹ ⇒ 7e s ⇒ K (Z = 19).",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cấu hình electron của Fe (Z = 26) là:",
+      "choices": [
+        "1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶ 4s²",
+        "1s² 2s² 2p⁶ 3s² 3p⁶ 4s² 4p⁶",
+        "1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁸",
+        "1s² 2s² 2p⁶ 3s² 3p⁶ 4s⁸"
+      ],
+      "answer": 0,
+      "explain": "Điền 4s trước 3d, viết theo thứ tự lớp.",
+      "wrong_explain": {
+        "1": "Phải điền 3d trước 4p.",
+        "2": "Thiếu 4s.",
+        "3": "4s tối đa 2e."
+      },
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ion X²⁺ có cấu hình 1s² 2s² 2p⁶. Số hiệu nguyên tử X là:",
+      "expr": "12",
+      "answer": "12",
+      "explain": "X có 12e ⇒ Mg.",
+      "id": "q15"
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "id": "bai-11",
+  "grade": 10,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 10",
+  "chapter": "Chương III. Liên kết hoá học",
+  "lesson": "Bài 11. Liên kết ion",
+  "section": "",
+  "bookPage": 51,
+  "requirements": [
+    "Trình bày được khái niệm và sự hình thành liên kết ion; nêu được cấu tạo tinh thể NaCl.",
+    "Giải thích được vì sao các hợp chất ion thường ở trạng thái rắn, có nhiệt độ nóng chảy cao, dẫn điện khi nóng chảy hoặc tan trong nước."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Ion là phần tử mang điện. Cation (ion dương) tạo thành khi nguyên tử nhường electron (Na⁺, Mg²⁺, Al³⁺); anion (ion âm) tạo thành khi nguyên tử nhận electron (Cl⁻, O²⁻, S²⁻). Ion đa nguyên tử: NH₄⁺, OH⁻, SO₄²⁻, NO₃⁻, CO₃²⁻, PO₄³⁻."
+    },
+    {
+      "type": "text",
+      "content": "Liên kết ion là liên kết được hình thành bởi lực hút tĩnh điện giữa các ion mang điện tích trái dấu. Liên kết ion thường hình thành giữa kim loại điển hình (nhóm IA, IIA) và phi kim điển hình (nhóm VIA, VIIA)."
+    },
+    {
+      "type": "formula",
+      "content": "2Na + Cl₂ → 2NaCl:   Na → Na⁺ + 1e;   Cl₂ + 2e → 2Cl⁻;   Na⁺ + Cl⁻ → NaCl"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b11-tinh-the-nacl.svg",
+      "caption": "Cấu trúc tinh thể ion NaCl"
+    },
+    {
+      "type": "text",
+      "content": "Tinh thể ion: các ion được sắp xếp luân phiên đều đặn trong mạng tinh thể. Trong tinh thể NaCl, mỗi ion Na⁺ được bao quanh bởi 6 ion Cl⁻ gần nhất và ngược lại."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất hợp chất ion: ở điều kiện thường là chất rắn, khá rắn nhưng giòn; nhiệt độ nóng chảy, nhiệt độ sôi cao (NaCl nóng chảy ở 801 °C) do lực hút tĩnh điện mạnh; nhiều hợp chất ion tan tốt trong nước; dẫn điện khi nóng chảy hoặc khi hoà tan trong nước (ion chuyển động tự do), không dẫn điện ở trạng thái rắn."
+    },
+    {
+      "type": "method",
+      "title": "Mô tả sự hình thành liên kết ion",
+      "when": "Đề cho hai nguyên tố (kim loại – phi kim), yêu cầu viết quá trình nhường, nhận electron, công thức hợp chất ion và giải thích tính chất.",
+      "steps": [
+        "Viết cấu hình, xác định số e kim loại nhường (bằng số e lớp ngoài cùng) và phi kim nhận (8 − số e lớp ngoài cùng).",
+        "Viết quá trình tạo cation và anion.",
+        "Cân bằng điện tích để có công thức: tổng điện tích dương bằng tổng điện tích âm.",
+        "Viết phương trình phản ứng tạo hợp chất."
+      ],
+      "notes": [
+        "Công thức MgCl₂, Al₂O₃, Na₂O lấy theo nguyên tắc trung hoà điện.",
+        "Hợp chất ion không dẫn điện ở thể rắn."
+      ],
+      "sample": {
+        "problem": "Mô tả sự hình thành liên kết trong MgO.",
+        "steps": [
+          "Mg → Mg²⁺ + 2e; O + 2e → O²⁻.",
+          "Mg²⁺ + O²⁻ → MgO (lực hút tĩnh điện)."
+        ],
+        "answer": "MgO"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Viết công thức hợp chất ion tạo bởi Al và O, tính tổng số electron trao đổi khi tạo 1 phân tử.",
+      "steps": [
+        "Al → Al³⁺ + 3e; O + 2e → O²⁻.",
+        "Trung hoà điện: 2·(+3) + 3·(−2) = 0 ⇒ Al₂O₃.",
+        "Tổng electron chuyển: 2·3 = 6."
+      ],
+      "expr": "2*3",
+      "answer": "6"
+    },
+    {
+      "problem": "Cho các ion: Na⁺, Ca²⁺, Cl⁻, SO₄²⁻. Viết công thức các hợp chất ion có thể tạo thành.",
+      "steps": [
+        "NaCl, Na₂SO₄, CaCl₂, CaSO₄."
+      ],
+      "expr": "4",
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Liên kết ion được hình thành bởi:",
+      "choices": [
+        "lực hút tĩnh điện giữa các ion trái dấu",
+        "cặp electron dùng chung",
+        "lực hút giữa các phân tử",
+        "liên kết hydrogen"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Liên kết cộng hoá trị.",
+        "2": "Tương tác van der Waals.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hợp chất nào chứa liên kết ion?",
+      "choices": [
+        "NaCl",
+        "HCl",
+        "H₂O",
+        "CO₂"
+      ],
+      "answer": 0,
+      "explain": "Kim loại điển hình – phi kim điển hình.",
+      "wrong_explain": {
+        "1": "Cộng hoá trị.",
+        "2": "Cộng hoá trị.",
+        "3": "Cộng hoá trị."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Anion là:",
+      "choices": [
+        "ion mang điện tích âm",
+        "ion mang điện tích dương",
+        "nguyên tử trung hoà",
+        "phân tử"
+      ],
+      "answer": 0,
+      "explain": "Nhận electron.",
+      "wrong_explain": {
+        "1": "Cation.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong tinh thể NaCl, mỗi ion Na⁺ được bao quanh bởi số ion Cl⁻ gần nhất là:",
+      "choices": [
+        "6",
+        "4",
+        "8",
+        "12"
+      ],
+      "answer": 0,
+      "explain": "Mạng lập phương.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ion nào là ion đa nguyên tử?",
+      "choices": [
+        "SO₄²⁻",
+        "Cl⁻",
+        "Na⁺",
+        "O²⁻"
+      ],
+      "answer": 0,
+      "explain": "Nhiều nguyên tử.",
+      "wrong_explain": {
+        "1": "Đơn nguyên tử.",
+        "2": "Đơn nguyên tử.",
+        "3": "Đơn nguyên tử."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hợp chất ion có nhiệt độ nóng chảy cao vì:",
+      "choices": [
+        "lực hút tĩnh điện giữa các ion rất mạnh",
+        "phân tử có khối lượng lớn",
+        "có liên kết hydrogen",
+        "các ion chuyển động tự do"
+      ],
+      "answer": 0,
+      "explain": "Phá vỡ mạng tinh thể cần nhiều năng lượng.",
+      "wrong_explain": {
+        "1": "Không phải phân tử.",
+        "2": "Sai.",
+        "3": "Ở thể rắn ion không tự do."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "NaCl rắn không dẫn điện nhưng dung dịch NaCl dẫn điện vì:",
+      "choices": [
+        "trong dung dịch các ion chuyển động tự do",
+        "NaCl rắn không có ion",
+        "nước dẫn điện tốt",
+        "dung dịch có electron tự do"
+      ],
+      "answer": 0,
+      "explain": "Ion tự do mang điện.",
+      "wrong_explain": {
+        "1": "Có ion nhưng cố định.",
+        "2": "Nước nguyên chất dẫn điện kém.",
+        "3": "Sai."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Công thức hợp chất ion tạo bởi Ca²⁺ và PO₄³⁻ là:",
+      "choices": [
+        "Ca₃(PO₄)₂",
+        "CaPO₄",
+        "Ca₂(PO₄)₃",
+        "Ca(PO₄)₂"
+      ],
+      "answer": 0,
+      "explain": "3·(+2) + 2·(−3) = 0.",
+      "wrong_explain": {
+        "1": "Không trung hoà.",
+        "2": "Không trung hoà.",
+        "3": "Không trung hoà."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khi tạo 1 phân tử MgCl₂, số electron Mg nhường là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Mg → Mg²⁺ + 2e.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Liên kết ion thường hình thành giữa:",
+      "choices": [
+        "kim loại điển hình và phi kim điển hình",
+        "hai phi kim",
+        "hai kim loại",
+        "phi kim và khí hiếm"
+      ],
+      "answer": 0,
+      "explain": "Chênh lệch độ âm điện lớn.",
+      "wrong_explain": {
+        "1": "Cộng hoá trị.",
+        "2": "Liên kết kim loại.",
+        "3": "Sai."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khi 0,1 mol Na phản ứng hết với Cl₂, số mol electron Na nhường là:",
+      "expr": "0.1",
+      "answer": "0.1",
+      "explain": "Mỗi Na nhường 1e.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khi 0,2 mol Al phản ứng hết với O₂, số mol electron nhường là:",
+      "expr": "0.6",
+      "answer": "0.6",
+      "explain": "Mỗi Al nhường 3e.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dãy gồm các chất đều có liên kết ion:",
+      "choices": [
+        "NaCl, MgO, K₂S",
+        "NaCl, HCl, H₂O",
+        "CO₂, MgO, KCl",
+        "Cl₂, NaCl, CaO"
+      ],
+      "answer": 0,
+      "explain": "Đều là kim loại điển hình – phi kim.",
+      "wrong_explain": {
+        "1": "HCl, H₂O cộng hoá trị.",
+        "2": "CO₂ cộng hoá trị.",
+        "3": "Cl₂ cộng hoá trị."
+      },
+      "id": "q13"
+    }
+  ]
+}

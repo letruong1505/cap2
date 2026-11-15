@@ -1,0 +1,273 @@
+{
+  "id": "bai-1",
+  "grade": 10,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 10",
+  "chapter": "Chương I. Cấu tạo nguyên tử",
+  "lesson": "Bài 1. Thành phần của nguyên tử",
+  "section": "",
+  "bookPage": 13,
+  "requirements": [
+    "Trình bày được thành phần của nguyên tử (hạt nhân gồm proton, neutron; vỏ gồm electron); điện tích, khối lượng mỗi loại hạt.",
+    "So sánh được khối lượng electron với proton, neutron; kích thước hạt nhân với kích thước nguyên tử."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nguyên tử gồm hạt nhân mang điện tích dương ở tâm và lớp vỏ gồm các electron mang điện tích âm chuyển động xung quanh. Thí nghiệm tia âm cực của J. J. Thomson (1897) phát hiện ra electron; thí nghiệm bắn hạt α vào lá vàng của E. Rutherford (1911) phát hiện ra hạt nhân; J. Chadwick (1932) phát hiện ra neutron."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b1-nguyen-tu.svg",
+      "caption": "Mô hình cấu tạo nguyên tử: hạt nhân (proton, neutron) và vỏ electron"
+    },
+    {
+      "type": "formula",
+      "content": "proton: m ≈ 1 amu, q = +1        neutron: m ≈ 1 amu, q = 0        electron: m ≈ 0,00055 amu, q = −1"
+    },
+    {
+      "type": "text",
+      "content": "Khối lượng electron rất nhỏ (khoảng 1/1837 khối lượng proton), nên khối lượng nguyên tử tập trung hầu hết ở hạt nhân. Nguyên tử trung hoà về điện: số proton bằng số electron."
+    },
+    {
+      "type": "formula",
+      "content": "1 amu = 1/12 khối lượng nguyên tử carbon-12 = 1,661·10⁻²⁷ kg        1 Å = 10⁻¹⁰ m;  1 pm = 10⁻¹² m"
+    },
+    {
+      "type": "text",
+      "content": "Kích thước: nguyên tử có đường kính khoảng 10⁻¹⁰ m (1 Å), hạt nhân khoảng 10⁻¹⁴ m, nhỏ hơn nguyên tử khoảng 10 000 lần. Do đó nguyên tử có cấu tạo rỗng."
+    },
+    {
+      "type": "formula",
+      "content": "Số đơn vị điện tích hạt nhân Z = số proton = số electron        Số khối A = Z + N (N: số neutron)"
+    },
+    {
+      "type": "text",
+      "content": "Ví dụ: hạt nhân Na có 11 proton và 12 neutron nên Z = 11, A = 23. Bài toán tổng số hạt: tổng số hạt = 2Z + N; số hạt mang điện = 2Z; số hạt không mang điện = N."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Nguyên tử X có tổng số hạt proton, neutron, electron là 40; số hạt mang điện nhiều hơn số hạt không mang điện là 12. Tìm Z và A.",
+      "steps": [
+        "2Z + N = 40 và 2Z − N = 12.",
+        "Cộng hai phương trình: 4Z = 52 ⇒ Z = 13; N = 14.",
+        "A = Z + N = 27 (nguyên tố aluminium)."
+      ],
+      "expr": "13+14",
+      "answer": "27"
+    },
+    {
+      "problem": "Một nguyên tử oxygen có khối lượng 2,656·10⁻²⁶ kg. Tính khối lượng nguyên tử theo amu (1 amu = 1,661·10⁻²⁷ kg).",
+      "steps": [
+        "m = 2,656·10⁻²⁶ / 1,661·10⁻²⁷ = 26,56/1,661 ≈ 15,99 amu."
+      ],
+      "expr": "15.99",
+      "answer": "15.99"
+    },
+    {
+      "problem": "Nguyên tử Y có 17 proton và 18 neutron. Tính số electron, số khối và tổng số hạt.",
+      "steps": [
+        "Số e = số p = 17.",
+        "A = 17 + 18 = 35; tổng số hạt = 17 + 17 + 18 = 52."
+      ],
+      "expr": "17+17+18",
+      "answer": "52"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hạt nhân nguyên tử được cấu tạo bởi:",
+      "choices": [
+        "proton và neutron",
+        "electron và proton",
+        "electron và neutron",
+        "chỉ proton"
+      ],
+      "answer": 0,
+      "explain": "Electron ở vỏ.",
+      "wrong_explain": {
+        "1": "Electron ở vỏ.",
+        "2": "Electron ở vỏ.",
+        "3": "Còn neutron (trừ ¹H)."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hạt mang điện tích âm trong nguyên tử là:",
+      "choices": [
+        "electron",
+        "proton",
+        "neutron",
+        "hạt nhân"
+      ],
+      "answer": 0,
+      "explain": "Electron có q = −1.",
+      "wrong_explain": {
+        "1": "Proton mang điện dương.",
+        "2": "Neutron không mang điện.",
+        "3": "Hạt nhân mang điện dương."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Người phát hiện ra hạt nhân nguyên tử bằng thí nghiệm bắn hạt α vào lá vàng là:",
+      "choices": [
+        "Rutherford",
+        "Thomson",
+        "Chadwick",
+        "Bohr"
+      ],
+      "answer": 0,
+      "explain": "Năm 1911.",
+      "wrong_explain": {
+        "1": "Phát hiện electron.",
+        "2": "Phát hiện neutron.",
+        "3": "Mô hình nguyên tử Bohr."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong nguyên tử trung hoà điện:",
+      "choices": [
+        "số proton bằng số electron",
+        "số proton bằng số neutron",
+        "số neutron bằng số electron",
+        "số khối bằng số proton"
+      ],
+      "answer": 0,
+      "explain": "Điện tích dương và âm cân bằng.",
+      "wrong_explain": {
+        "1": "Không nhất thiết.",
+        "2": "Không nhất thiết.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Nguyên tử có 11 proton và 12 neutron. Số khối A là:",
+      "expr": "11+12",
+      "answer": "23",
+      "explain": "A = Z + N.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khối lượng nguyên tử tập trung chủ yếu ở hạt nhân vì:",
+      "choices": [
+        "khối lượng electron rất nhỏ so với proton và neutron",
+        "hạt nhân có kích thước lớn",
+        "electron không có khối lượng",
+        "số electron ít"
+      ],
+      "answer": 0,
+      "explain": "m_e ≈ m_p/1837.",
+      "wrong_explain": {
+        "1": "Hạt nhân rất nhỏ.",
+        "2": "Electron có khối lượng nhưng rất nhỏ.",
+        "3": "Sai."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Kết quả hầu hết hạt α đi thẳng qua lá vàng chứng tỏ:",
+      "choices": [
+        "nguyên tử có cấu tạo rỗng",
+        "hạt nhân mang điện âm",
+        "electron rất nặng",
+        "lá vàng không có nguyên tử"
+      ],
+      "answer": 0,
+      "explain": "Phần lớn thể tích nguyên tử là khoảng trống.",
+      "wrong_explain": {
+        "1": "Hạt nhân mang điện dương.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nguyên tử có Z = 20, A = 40. Số neutron là:",
+      "expr": "40-20",
+      "answer": "20",
+      "explain": "N = A − Z.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nguyên tử phosphorus có 15 proton và 16 neutron. Tổng số hạt là:",
+      "expr": "15+15+16",
+      "answer": "46",
+      "explain": "2Z + N.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đường kính nguyên tử khoảng 10⁻¹⁰ m, hạt nhân khoảng 10⁻¹⁴ m. Nguyên tử lớn hơn hạt nhân bao nhiêu lần?",
+      "expr": "10000",
+      "answer": "10000",
+      "explain": "10⁻¹⁰/10⁻¹⁴ = 10⁴.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nguyên tử X có tổng số hạt 34, số hạt mang điện nhiều hơn số hạt không mang điện là 10. Số proton là:",
+      "expr": "44/4",
+      "answer": "11",
+      "explain": "2Z + N = 34; 2Z − N = 10 ⇒ Z = 11.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với nguyên tử X ở câu trên, số khối A là:",
+      "expr": "11+12",
+      "answer": "23",
+      "explain": "N = 12.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nguyên tử Y có tổng số hạt 58, số hạt không mang điện nhiều hơn số proton là 1. Số proton là:",
+      "expr": "57/3",
+      "answer": "19",
+      "explain": "2Z + (Z + 1) = 58 ⇒ Z = 19 (potassium).",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nguyên tử carbon-12 có khối lượng 19,926·10⁻²⁷ kg. Một amu (đơn vị 10⁻²⁷ kg) bằng:",
+      "expr": "19.926/12",
+      "answer": "1.6605",
+      "explain": "19,926/12 = 1,6605.",
+      "id": "q14"
+    }
+  ]
+}
