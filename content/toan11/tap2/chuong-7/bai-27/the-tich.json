@@ -1,0 +1,333 @@
+{
+  "id": "bai-27",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Toán 11, tập 2",
+  "chapter": "Chương VII. Quan hệ vuông góc trong không gian",
+  "lesson": "Bài 27. Thể tích",
+  "section": "",
+  "bookPage": 61,
+  "requirements": [
+    "Nắm công thức thể tích khối chóp, khối lăng trụ, khối hộp, khối chóp cụt đều.",
+    "Tính thể tích các khối đa diện và giải bài toán thực tế."
+  ],
+  "theory": [
+    {
+      "type": "formula",
+      "content": "Thể tích khối lăng trụ (và khối hộp): V = S_đáy·h.   Khối hộp chữ nhật a × b × c: V = abc.   Khối lập phương cạnh a: V = a³."
+    },
+    {
+      "type": "formula",
+      "content": "Thể tích khối chóp: V = (1/3)·S_đáy·h, với h là chiều cao (khoảng cách từ đỉnh đến mặt phẳng đáy)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b27-hinh-chop-deu.svg",
+      "caption": "Hình chóp tứ giác đều S.ABCD: SO ⟂ (ABCD), SO = h là chiều cao; V = (1/3)·S_ABCD·h"
+    },
+    {
+      "type": "formula",
+      "content": "Khối chóp cụt đều: V = (h/3)·(S₁ + S₂ + √(S₁S₂)), với S₁, S₂ là diện tích hai đáy, h là chiều cao."
+    },
+    {
+      "type": "text",
+      "content": "Tỉ số thể tích: cho hình chóp S.ABC, các điểm A′ ∈ SA, B′ ∈ SB, C′ ∈ SC. Khi đó V_{S.A′B′C′}/V_{S.ABC} = (SA′/SA)·(SB′/SB)·(SC′/SC). Tứ diện vuông O.ABC (OA, OB, OC đôi một vuông góc): V = (1/6)·OA·OB·OC."
+    },
+    {
+      "type": "method",
+      "title": "Tính thể tích khối chóp, khối lăng trụ",
+      "when": "Cho đáy và chiều cao, hoặc cho cạnh và yếu tố vuông góc.",
+      "steps": [
+        "Xác định đáy và tính diện tích đáy S.",
+        "Xác định chiều cao h (cạnh bên vuông góc đáy; đường cao từ đỉnh đến tâm đáy).",
+        "Lăng trụ: V = S·h. Chóp: V = S·h/3.",
+        "Thay số, ghi đơn vị (thể tích)."
+      ],
+      "notes": [
+        "Chiều cao khối chóp là khoảng cách từ đỉnh đến đáy, không phải cạnh bên.",
+        "Hình chóp đều: chiều cao SO với O là tâm đáy."
+      ],
+      "sample": {
+        "problem": "Khối chóp có diện tích đáy 12 và chiều cao 5. Tính thể tích.",
+        "steps": [
+          "V = (1/3)·12·5.",
+          "= 20."
+        ],
+        "answer": "20"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tính thể tích bằng phân chia, tỉ số thể tích, khối chóp cụt",
+      "when": "Khối phức tạp cần cắt thành các khối đơn giản; cho các tỉ số trên cạnh bên; chóp cụt.",
+      "steps": [
+        "Phân chia khối thành chóp, lăng trụ hoặc dùng V = V₁ − V₂.",
+        "Với S.A′B′C′: V′/V = (SA′/SA)(SB′/SB)(SC′/SC).",
+        "Khối chóp cụt: V = (h/3)(S₁ + S₂ + √(S₁S₂)).",
+        "Tứ diện vuông: V = (1/6)·OA·OB·OC."
+      ],
+      "notes": [
+        "Tỉ số thể tích chỉ dùng cho khối chóp tam giác có chung đỉnh.",
+        "Kiểm tra căn số hạng chính phương."
+      ],
+      "sample": {
+        "problem": "S.ABC, A′, B′, C′ là trung điểm SA, SB, SC. Tỉ số V_{S.A′B′C′}/V_{S.ABC} là gì?",
+        "steps": [
+          "Tích tỉ số: (1/2)(1/2)(1/2).",
+          "= 1/8."
+        ],
+        "answer": "1/8"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Bài toán thực tế về thể tích",
+      "when": "Bể nước, kim tự tháp, thùng chứa, đóng gói.",
+      "steps": [
+        "Nhận dạng khối (hộp chữ nhật, chóp, lăng trụ).",
+        "Đọc kích thước, đổi cùng đơn vị.",
+        "Áp dụng công thức thích hợp.",
+        "Đổi đơn vị (1 m³ = 1000 lít) nếu cần và trả lời."
+      ],
+      "notes": [
+        "Thể tích đo bằng đơn vị lập phương.",
+        "Kiểm tra tính hợp lí (so sánh bậc độ lớn)."
+      ],
+      "sample": {
+        "problem": "Bể nước hình hộp chữ nhật 2 m × 3 m × 1,5 m. Chứa tối đa bao nhiêu m³?",
+        "steps": [
+          "V = 2·3·1,5.",
+          "= 9 m³."
+        ],
+        "answer": "9 m³"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Khối chóp có diện tích đáy 12 và chiều cao 5. Thể tích?",
+      "steps": [
+        "V = (1/3)·S·h.",
+        "= 12·5/3 = 20."
+      ],
+      "expr": "12*5/3",
+      "answer": "20"
+    },
+    {
+      "problem": "Khối lăng trụ có diện tích đáy 6, chiều cao 7. Thể tích?",
+      "steps": [
+        "V = S·h.",
+        "= 42."
+      ],
+      "expr": "6*7",
+      "answer": "42"
+    },
+    {
+      "problem": "Tứ diện vuông O.ABC có OA = 3, OB = 4, OC = 6. Thể tích?",
+      "steps": [
+        "V = (1/6)·OA·OB·OC.",
+        "= 12."
+      ],
+      "expr": "3*4*6/6",
+      "answer": "12"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hộp chữ nhật 3 × 4 × 5 có thể tích:",
+      "expr": "3*4*5",
+      "answer": "60",
+      "explain": "V = abc = 60.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hình lập phương cạnh 3 có thể tích:",
+      "expr": "3*3*3",
+      "answer": "27",
+      "explain": "V = a³ = 27.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Lăng trụ có diện tích đáy 6 và chiều cao 7. Thể tích:",
+      "expr": "6*7",
+      "answer": "42",
+      "explain": "V = S·h = 42.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Khối chóp có diện tích đáy 12 và chiều cao 5. Thể tích:",
+      "expr": "12*5/3",
+      "answer": "20",
+      "explain": "V = S·h/3 = 20.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thể tích khối chóp có diện tích đáy S và chiều cao h là:",
+      "choices": [
+        "V = (1/3)·S·h",
+        "V = S·h",
+        "V = (1/2)·S·h",
+        "V = 3·S·h"
+      ],
+      "answer": 0,
+      "explain": "Chóp bằng 1/3 lăng trụ cùng đáy và chiều cao.",
+      "wrong_explain": {
+        "1": "Đó là công thức lăng trụ.",
+        "2": "Hệ số là 1/3, không phải 1/2.",
+        "3": "Công thức không có hệ số 3."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chóp tứ giác đều đáy cạnh 6, chiều cao 4. Thể tích:",
+      "expr": "6*6*4/3",
+      "answer": "48",
+      "explain": "S = 36; V = 36·4/3 = 48.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tứ diện vuông O.ABC có OA = 3, OB = 4, OC = 6. Thể tích:",
+      "expr": "3*4*6/6",
+      "answer": "12",
+      "explain": "V = OA·OB·OC/6 = 12.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bể nước hộp chữ nhật 2 m × 3 m × 1,5 m. Thể tích (m³):",
+      "expr": "2*3*1.5",
+      "answer": "9",
+      "explain": "V = 9 m³.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "S.ABCD đáy hình chữ nhật 3×4, SA ⟂ đáy, SA = 5. Thể tích:",
+      "expr": "3*4*5/3",
+      "answer": "20",
+      "explain": "V = (1/3)·12·5 = 20.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lăng trụ đứng đáy tam giác vuông cạnh góc vuông 3 và 4, chiều cao 10. Thể tích:",
+      "expr": "3*4/2*10",
+      "answer": "60",
+      "explain": "S = 6; V = 60.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "S.A′B′C′ và S.ABC có SA′/SA = SB′/SB = SC′/SC = 1/2. Tỉ số thể tích V′/V (nhập a/b):",
+      "expr": "1/2*1/2*1/2",
+      "answer": "1/8",
+      "explain": "Tích ba tỉ số: 1/8.",
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chiều cao của khối chóp là:",
+      "choices": [
+        "khoảng cách từ đỉnh đến mặt đáy",
+        "độ dài cạnh bên",
+        "độ dài cạnh đáy",
+        "đường chéo đáy"
+      ],
+      "answer": 0,
+      "explain": "Đó là khoảng cách từ đỉnh xuống mặt phẳng đáy.",
+      "wrong_explain": {
+        "1": "Cạnh bên thường dài hơn chiều cao.",
+        "2": "Cạnh đáy không phải chiều cao.",
+        "3": "Đường chéo đáy không liên quan."
+      },
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chóp cụt đều, h = 3, S₁ = 4, S₂ = 16. Thể tích (dùng √(S₁S₂) = 8):",
+      "expr": "3*(4+16+8)/3",
+      "answer": "28",
+      "explain": "V = (3/3)(4 + 16 + 8) = 28.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thể tích khối hộp chữ nhật 2 × 3 × h là 30. Chiều cao h bằng:",
+      "expr": "30/6",
+      "answer": "5",
+      "explain": "h = 30/(2·3) = 5.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khối chóp có thể tích 20 và diện tích đáy 12. Chiều cao (nhập a/b):",
+      "expr": "3*20/12",
+      "answer": "5",
+      "explain": "h = 3V/S = 5.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lập phương cạnh 6 bị cắt bỏ khối lập phương cạnh 2 ở góc. Thể tích còn lại:",
+      "expr": "6*6*6-2*2*2",
+      "answer": "208",
+      "explain": "216 − 8 = 208.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hình hộp chữ nhật có ba mặt chung đỉnh diện tích 6, 8, 12. Thể tích bình phương (V² = tích ba diện tích):",
+      "expr": "6*8*12",
+      "answer": "576",
+      "explain": "V² = (ab)(bc)(ca) = 576, V = 24.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi tăng cạnh hình lập phương gấp 2 lần thì thể tích tăng:",
+      "choices": [
+        "8 lần",
+        "2 lần",
+        "4 lần",
+        "6 lần"
+      ],
+      "answer": 0,
+      "explain": "V = a³ nên (2a)³ = 8a³.",
+      "wrong_explain": {
+        "1": "Thể tích tỉ lệ với lập phương cạnh.",
+        "2": "Diện tích mới tăng 4 lần, thể tích tăng 8.",
+        "3": "Không phải 6."
+      },
+      "id": "q18"
+    }
+  ]
+}

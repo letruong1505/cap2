@@ -1,0 +1,342 @@
+{
+  "id": "bai-19",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Toán 11, tập 2",
+  "chapter": "Chương VI. Hàm số mũ và hàm số lôgarit",
+  "lesson": "Bài 19. Lôgarit",
+  "section": "",
+  "bookPage": 10,
+  "requirements": [
+    "Hiểu định nghĩa lôgarit và tính các giá trị lôgarit cơ bản.",
+    "Vận dụng quy tắc tính và công thức đổi cơ số để biến đổi, tính giá trị biểu thức."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cho a > 0, a ≠ 1 và b > 0. Số thực α thoả aᵅ = b gọi là lôgarit cơ số a của b, kí hiệu log_a b = α. Như vậy log_a b = α ⇔ aᵅ = b. Lôgarit cơ số 10 viết lg b hoặc log b; lôgarit cơ số e (e ≈ 2,718) viết ln b."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b19-do-thi-log.svg",
+      "caption": "Đồ thị y = log₂ x đi qua (1; 0), (2; 1), (4; 2), (1/2; −1)"
+    },
+    {
+      "type": "formula",
+      "content": "log_a 1 = 0;  log_a a = 1;  a^{log_a b} = b;  log_a aᵅ = α."
+    },
+    {
+      "type": "formula",
+      "content": "Quy tắc (a > 0, a ≠ 1; M, N > 0): log_a(MN) = log_a M + log_a N;  log_a(M/N) = log_a M − log_a N;  log_a Mᵅ = α·log_a M."
+    },
+    {
+      "type": "formula",
+      "content": "Đổi cơ số (a, b, c > 0; a, b ≠ 1): log_a c = log_b c / log_b a;  hệ quả: log_a b = 1/log_b a;  log_{aᵅ} b = (1/α)·log_a b."
+    },
+    {
+      "type": "method",
+      "title": "Tính giá trị lôgarit theo định nghĩa",
+      "when": "Cần tính log_a b khi b là luỹ thừa hữu tỉ của a (như log₂ 8, log_{1/2} 4, log₄ 2).",
+      "steps": [
+        "Đặt log_a b = x, tức aˣ = b.",
+        "Viết b dưới dạng luỹ thừa của a (hoặc đưa cả hai về cùng cơ số nguyên tố).",
+        "So sánh số mũ để tìm x.",
+        "Kiểm tra bằng cách thay lại."
+      ],
+      "notes": [
+        "log_a b có nghĩa khi a > 0, a ≠ 1, b > 0.",
+        "Cơ số nhỏ hơn 1 cho giá trị âm khi b > 1."
+      ],
+      "sample": {
+        "problem": "Tính log_{1/2} 4.",
+        "steps": [
+          "(1/2)ˣ = 4 = 2².",
+          "2⁻ˣ = 2² nên x = −2."
+        ],
+        "answer": "−2"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tính, rút gọn biểu thức lôgarit bằng quy tắc",
+      "when": "Biểu thức có tổng, hiệu của nhiều lôgarit cùng cơ số, hoặc có hệ số đứng trước log.",
+      "steps": [
+        "Đưa hệ số vào mũ: n·log_a M = log_a Mⁿ.",
+        "Gộp tổng thành tích, hiệu thành thương.",
+        "Rút gọn biểu thức trong dấu log về luỹ thừa của cơ số.",
+        "Tính theo định nghĩa."
+      ],
+      "notes": [
+        "Điều kiện của các biểu thức trong dấu log là dương.",
+        "Không có công thức cho log(M + N)."
+      ],
+      "sample": {
+        "problem": "Tính 2log₃ 6 − log₃ 4.",
+        "steps": [
+          "= log₃ 36 − log₃ 4 = log₃ 9.",
+          "= 2."
+        ],
+        "answer": "2"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Biểu diễn lôgarit theo lôgarit cho trước (đổi cơ số)",
+      "when": "Đề cho log₂ 3 = a (hoặc log 2 = a) và yêu cầu tính log₆ 18, log 12… theo a, b.",
+      "steps": [
+        "Phân tích số trong dấu log thành tích các số nguyên tố đã cho.",
+        "Dùng quy tắc tách log của tích, luỹ thừa.",
+        "Nếu khác cơ số: đổi về cùng cơ số bằng log_a c = log_b c / log_b a.",
+        "Thay biến, rút gọn."
+      ],
+      "notes": [
+        "Chọn cơ số chung là cơ số xuất hiện trong dữ kiện.",
+        "Kiểm tra bằng cách thử giá trị số gần đúng."
+      ],
+      "sample": {
+        "problem": "Cho log₂ 3 = a. Tính log₂ 12 theo a.",
+        "steps": [
+          "log₂ 12 = log₂ 4 + log₂ 3.",
+          "= 2 + a."
+        ],
+        "answer": "2 + a"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính log₂ 8.",
+      "steps": [
+        "8 = 2³.",
+        "log₂ 8 = 3."
+      ],
+      "expr": "3",
+      "answer": "3"
+    },
+    {
+      "problem": "Tính log_{1/2} 4.",
+      "steps": [
+        "(1/2)ˣ = 4 = 2².",
+        "x = −2."
+      ],
+      "expr": "0-2",
+      "answer": "-2"
+    },
+    {
+      "problem": "Tính 2log₃ 6 − log₃ 4.",
+      "steps": [
+        "= log₃ 36 − log₃ 4 = log₃ 9.",
+        "= 2."
+      ],
+      "expr": "2",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Giá trị của log₂ 8 là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "2³ = 8.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Giá trị của log₃ 81 là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "3⁴ = 81.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Giá trị của lg 1000 (log₁₀ 1000) là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "10³ = 1000.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Giá trị của log₅ 1 là:",
+      "expr": "0",
+      "answer": "0",
+      "explain": "log_a 1 = 0.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điều kiện của cơ số a trong log_a b là:",
+      "choices": [
+        "a > 0 và a ≠ 1",
+        "a > 0",
+        "a ≠ 0",
+        "a ≥ 1"
+      ],
+      "answer": 0,
+      "explain": "Cơ số phải dương và khác 1.",
+      "wrong_explain": {
+        "1": "Còn phải loại a = 1.",
+        "2": "Còn thiếu a ≠ 1.",
+        "3": "Cơ số không thể bằng 1."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giá trị của log_{1/2} 4 là:",
+      "expr": "0-2",
+      "answer": "-2",
+      "explain": "(1/2)⁻² = 4 nên log = −2.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giá trị của log₂ (1/8) là:",
+      "expr": "0-3",
+      "answer": "-3",
+      "explain": "2⁻³ = 1/8 nên log = −3.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giá trị của log₄ 2 là (nhập a/b):",
+      "expr": "1/2",
+      "answer": "1/2",
+      "explain": "4^{1/2} = 2 nên log₄ 2 = 1/2.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giá trị của log₂ 6 + log₂ (4/3) là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "log₂(6·4/3) = log₂ 8 = 3.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giá trị của log₂ 12 − log₂ 3 là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "log₂(12/3) = log₂ 4 = 2.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giá trị của 3^{log₃ 7} là:",
+      "expr": "7",
+      "answer": "7",
+      "explain": "a^{log_a b} = b.",
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Với a > 0, a ≠ 1 và M, N > 0, khẳng định đúng là:",
+      "choices": [
+        "log_a(MN) = log_a M + log_a N",
+        "log_a(M + N) = log_a M·log_a N",
+        "log_a(MN) = log_a M·log_a N",
+        "log_a(M/N) = log_a M + log_a N"
+      ],
+      "answer": 0,
+      "explain": "Lôgarit của tích bằng tổng các lôgarit.",
+      "wrong_explain": {
+        "1": "Không có công thức cho log(M + N).",
+        "2": "Tích của log không bằng log của tích.",
+        "3": "Lôgarit của thương bằng hiệu các lôgarit."
+      },
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị của 2log₃ 6 − log₃ 4 là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "= log₃ 36 − log₃ 4 = log₃ 9 = 2.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị của log₂ 3·log₃ 8 là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "log₃ 8 = 3log₃ 2 = 3/log₂ 3, nên tích = 3.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị của log₂ 5 + log₂ (1/5) + log₂ 4 là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "log₂ 5 + log₂(1/5) = 0 nên còn log₂ 4 = 2.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị của lg 25 + 2lg 2 là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "lg 25 + lg 4 = lg 100 = 2.",
+      "id": "q16"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho log₂ 3 = a. Khi đó log₂ 12 bằng:",
+      "choices": [
+        "2 + a",
+        "2a",
+        "a + 12",
+        "a/2"
+      ],
+      "answer": 0,
+      "explain": "log₂ 12 = log₂ 4 + log₂ 3 = 2 + a.",
+      "wrong_explain": {
+        "1": "2a = log₂ 9.",
+        "2": "Không có công thức như vậy.",
+        "3": "a/2 không là log₂ 12."
+      },
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Giá trị của log₈ 16 là (nhập a/b):",
+      "expr": "4/3",
+      "answer": "4/3",
+      "explain": "8 = 2³, 16 = 2⁴ nên log₈ 16 = 4/3.",
+      "id": "q18"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Giá trị của log_{√2} 8 là:",
+      "expr": "6",
+      "answer": "6",
+      "explain": "(√2)⁶ = 8 nên log = 6.",
+      "id": "q19"
+    }
+  ]
+}

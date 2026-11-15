@@ -1,0 +1,351 @@
+{
+  "id": "bai-32",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Toán 11, tập 2",
+  "chapter": "Chương IX. Đạo hàm",
+  "lesson": "Bài 32. Các quy tắc tính đạo hàm",
+  "section": "",
+  "bookPage": 88,
+  "requirements": [
+    "Thuộc đạo hàm của các hàm số thường gặp và các quy tắc tổng, hiệu, tích, thương, hàm hợp.",
+    "Tính đạo hàm các hàm số và giải bài toán liên quan (tiếp tuyến, phương trình f′ = 0)."
+  ],
+  "theory": [
+    {
+      "type": "formula",
+      "content": "(c)′ = 0;  (x)′ = 1;  (xⁿ)′ = n·xⁿ⁻¹;  (√x)′ = 1/(2√x);  (1/x)′ = −1/x²;  (sin x)′ = cos x;  (cos x)′ = −sin x;  (tan x)′ = 1/cos²x;  (cot x)′ = −1/sin²x."
+    },
+    {
+      "type": "formula",
+      "content": "(eˣ)′ = eˣ;  (aˣ)′ = aˣ·ln a;  (ln x)′ = 1/x;  (log_a x)′ = 1/(x·ln a)."
+    },
+    {
+      "type": "formula",
+      "content": "(u ± v)′ = u′ ± v′;  (uv)′ = u′v + uv′;  (ku)′ = k·u′;  (u/v)′ = (u′v − uv′)/v² (v ≠ 0)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b32-do-thi-dao-ham.svg",
+      "caption": "Đồ thị y = x³ (xanh) và đạo hàm y′ = 3x² (đỏ): y′ = 0 tại x = 0, hàm đồng biến vì y′ ≥ 0"
+    },
+    {
+      "type": "formula",
+      "content": "Đạo hàm của hàm hợp: nếu y = f(u), u = u(x) thì y′ₓ = y′ᵤ·u′ₓ. Ví dụ: (uⁿ)′ = n·uⁿ⁻¹·u′;  (sin u)′ = u′·cos u;  (e^u)′ = u′·e^u;  (ln u)′ = u′/u."
+    },
+    {
+      "type": "method",
+      "title": "Tính đạo hàm bằng bảng và quy tắc tổng, hiệu, tích, thương",
+      "when": "Hàm là đa thức, phân thức, tích hoặc thương của các hàm cơ bản.",
+      "steps": [
+        "Nhận dạng cấu trúc: tổng/hiệu, tích, thương.",
+        "Áp dụng quy tắc tương ứng và bảng đạo hàm từng hàm cơ bản.",
+        "Thu gọn biểu thức đạo hàm.",
+        "Thay x₀ khi cần giá trị f′(x₀)."
+      ],
+      "notes": [
+        "Tích (uv)′ = u′v + uv′; thương cần bình phương mẫu.",
+        "Có thể khai triển đa thức trước khi đạo hàm."
+      ],
+      "sample": {
+        "problem": "Tính y′ của y = x/(x + 1).",
+        "steps": [
+          "y′ = [1·(x + 1) − x·1]/(x + 1)².",
+          "= 1/(x + 1)²."
+        ],
+        "answer": "1/(x + 1)²"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Đạo hàm của hàm số hợp",
+      "when": "Hàm có dạng (ax + b)ⁿ, sin(ax + b), e^{u}, ln u, √u.",
+      "steps": [
+        "Đặt u là biểu thức bên trong (hàm trong).",
+        "Đạo hàm hàm ngoài theo u, giữ nguyên u.",
+        "Nhân thêm u′.",
+        "Rút gọn và thay giá trị nếu cần."
+      ],
+      "notes": [
+        "Quên nhân u′ là lỗi phổ biến nhất.",
+        "Dùng liên tiếp nhiều lần nếu hàm lồng nhiều tầng."
+      ],
+      "sample": {
+        "problem": "Tính đạo hàm của y = (2x + 1)³ tại x = 0.",
+        "steps": [
+          "y′ = 3(2x + 1)²·2.",
+          "y′(0) = 3·1·2 = 6."
+        ],
+        "answer": "6"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Giải phương trình f′(x) = 0 và bài toán tiếp tuyến",
+      "when": "Tìm điểm có tiếp tuyến nằm ngang, tìm điểm có hệ số góc cho trước, tìm cực trị sơ bộ.",
+      "steps": [
+        "Tính f′(x).",
+        "Giải f′(x) = k (k = 0 nếu tiếp tuyến nằm ngang).",
+        "Tính tung độ f(x₀).",
+        "Viết phương trình tiếp tuyến y = f′(x₀)(x − x₀) + f(x₀)."
+      ],
+      "notes": [
+        "f′(x) > 0 trên khoảng thì hàm đồng biến (sẽ học ở lớp 12).",
+        "Kiểm tra nghiệm thuộc tập xác định."
+      ],
+      "sample": {
+        "problem": "Tìm x để tiếp tuyến của y = x³ − 3x nằm ngang.",
+        "steps": [
+          "y′ = 3x² − 3 = 0.",
+          "x = 1 hoặc x = −1."
+        ],
+        "answer": "x = ±1"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính (x³)′ tại x = 2.",
+      "steps": [
+        "(x³)′ = 3x².",
+        "Tại 2: 12."
+      ],
+      "expr": "3*2*2",
+      "answer": "12"
+    },
+    {
+      "problem": "Tính (x/(x + 1))′ tại x = 1.",
+      "steps": [
+        "y′ = 1/(x + 1)².",
+        "Tại 1: 1/4."
+      ],
+      "expr": "(1)/(2*2)",
+      "answer": "1/4"
+    },
+    {
+      "problem": "Tính ((2x + 1)³)′ tại x = 0.",
+      "steps": [
+        "y′ = 3(2x + 1)²·2.",
+        "Tại 0: 6."
+      ],
+      "expr": "3*1*1*2",
+      "answer": "6"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính (x³)′ tại x = 2:",
+      "expr": "3*2*2",
+      "answer": "12",
+      "explain": "(x³)′ = 3x²: 12.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính (x⁵)′ tại x = 1:",
+      "expr": "5*1",
+      "answer": "5",
+      "explain": "5x⁴ tại 1: 5.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính (sin x)′ tại x = 0:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "cos 0 = 1.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính (cos x)′ tại x = 0:",
+      "expr": "0",
+      "answer": "0",
+      "explain": "−sin 0 = 0.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính (eˣ)′ tại x = 0:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "eˣ tại 0 là 1.",
+      "id": "q05"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính (ln x)′ tại x = 2 (nhập a/b):",
+      "expr": "1/2",
+      "answer": "1/2",
+      "explain": "1/x tại 2: 1/2.",
+      "id": "q06"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đạo hàm của √x (x > 0) là:",
+      "choices": [
+        "1/(2√x)",
+        "2√x",
+        "√x/2",
+        "1/√x"
+      ],
+      "answer": 0,
+      "explain": "(√x)′ = 1/(2√x).",
+      "wrong_explain": {
+        "1": "Đó là nghịch đảo của đạo hàm.",
+        "2": "Không đúng.",
+        "3": "Thiếu hệ số 1/2."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (x² − 3x + 1)′ tại x = 2:",
+      "expr": "2*2-3",
+      "answer": "1",
+      "explain": "y′ = 2x − 3: 1.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (√x)′ tại x = 4 (nhập a/b):",
+      "expr": "(1)/(2*2)",
+      "answer": "1/4",
+      "explain": "1/(2√4) = 1/4.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (1/x)′ tại x = 2 (nhập a/b):",
+      "expr": "0-(1)/(2*2)",
+      "answer": "-1/4",
+      "explain": "−1/x² = −1/4.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (x(x + 1))′ tại x = 1:",
+      "expr": "2*1+1",
+      "answer": "3",
+      "explain": "y = x² + x nên y′ = 2x + 1 = 3.",
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (x/(x + 1))′ tại x = 1 (nhập a/b):",
+      "expr": "(1)/(2*2)",
+      "answer": "1/4",
+      "explain": "y′ = 1/(x + 1)²: 1/4.",
+      "id": "q12"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đạo hàm của tích (uv)′ bằng:",
+      "choices": [
+        "u′v + uv′",
+        "u′v′",
+        "u′v − uv′",
+        "u′ + v′"
+      ],
+      "answer": 0,
+      "explain": "Quy tắc đạo hàm của tích.",
+      "wrong_explain": {
+        "1": "Không có công thức u′v′.",
+        "2": "Đó là tử thức của quy tắc thương.",
+        "3": "Đó là đạo hàm của tổng."
+      },
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính ((2x + 1)³)′ tại x = 0:",
+      "expr": "3*1*1*2",
+      "answer": "6",
+      "explain": "3(2x + 1)²·2 tại 0: 6.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính ((x² + 1)²)′ tại x = 1:",
+      "expr": "2*2*2",
+      "answer": "8",
+      "explain": "2(x² + 1)·2x = 2·2·2 = 8.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính (sin 2x)′ tại x = 0:",
+      "expr": "2*1",
+      "answer": "2",
+      "explain": "2cos 2x tại 0: 2.",
+      "id": "q16"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính (e^{2x})′ tại x = 0:",
+      "expr": "2*1",
+      "answer": "2",
+      "explain": "2e^{2x}: 2.",
+      "id": "q17"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính (ln(2x))′ tại x = 1:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "(2x)′/(2x) = 1/x = 1.",
+      "id": "q18"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tích hai nghiệm của y′ = 0 với y = x³ − 3x là:",
+      "expr": "1*(-1)",
+      "answer": "-1",
+      "explain": "y′ = 3x² − 3 = 0 nên x = ±1; tích −1.",
+      "id": "q19"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đạo hàm của (f(u))′ theo x bằng:",
+      "choices": [
+        "f′(u)·u′",
+        "f′(u) + u′",
+        "f′(x)",
+        "f(u)·u′"
+      ],
+      "answer": 0,
+      "explain": "Quy tắc đạo hàm của hàm hợp.",
+      "wrong_explain": {
+        "1": "Phải nhân, không cộng.",
+        "2": "Là f′ theo u, nhân u′.",
+        "3": "Là f′, không phải f."
+      },
+      "id": "q20"
+    }
+  ]
+}

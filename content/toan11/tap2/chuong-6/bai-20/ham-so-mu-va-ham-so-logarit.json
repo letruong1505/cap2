@@ -1,0 +1,339 @@
+{
+  "id": "bai-20",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Toán 11, tập 2",
+  "chapter": "Chương VI. Hàm số mũ và hàm số lôgarit",
+  "lesson": "Bài 20. Hàm số mũ và hàm số lôgarit",
+  "section": "",
+  "bookPage": 16,
+  "requirements": [
+    "Nhận biết hàm số mũ, hàm số lôgarit; tính biến thiên và đồ thị của chúng.",
+    "Tìm tập xác định, so sánh giá trị và giải bài toán thực tế tăng trưởng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hàm số mũ y = aˣ (a > 0, a ≠ 1): tập xác định ℝ, tập giá trị (0; +∞), đồng biến trên ℝ khi a > 1, nghịch biến trên ℝ khi 0 < a < 1. Đồ thị luôn đi qua điểm (0; 1), nhận trục Ox làm tiệm cận ngang, nằm phía trên trục hoành."
+    },
+    {
+      "type": "text",
+      "content": "Hàm số lôgarit y = log_a x (a > 0, a ≠ 1): tập xác định (0; +∞), tập giá trị ℝ, đồng biến khi a > 1, nghịch biến khi 0 < a < 1. Đồ thị luôn đi qua điểm (1; 0), nhận trục Oy làm tiệm cận đứng, nằm bên phải trục tung."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b20-do-thi-mu-log.svg",
+      "caption": "Đồ thị y = 2ˣ (xanh) và y = log₂ x (đỏ) đối xứng nhau qua đường thẳng y = x (nét đứt)"
+    },
+    {
+      "type": "text",
+      "content": "Hai hàm y = aˣ và y = log_a x là hai hàm ngược của nhau, đồ thị đối xứng qua đường thẳng y = x. So sánh: nếu a > 1 thì aˣ > aʸ ⇔ x > y và log_a x > log_a y ⇔ x > y; nếu 0 < a < 1 thì chiều ngược lại."
+    },
+    {
+      "type": "method",
+      "title": "Tìm tập xác định của hàm số mũ, lôgarit",
+      "when": "Hàm có log_a u(x), aᵘ⁽ˣ⁾ (mũ luôn xác định), hoặc căn/phân thức chứa lôgarit.",
+      "steps": [
+        "log_a u(x): điều kiện u(x) > 0 (và cơ số hợp lệ).",
+        "Căn √A: A ≥ 0; phân thức: mẫu ≠ 0.",
+        "Giải bất phương trình, hệ điều kiện.",
+        "Viết tập xác định dưới dạng khoảng/hợp khoảng."
+      ],
+      "notes": [
+        "Hàm mũ aᵘ⁽ˣ⁾ xác định khi u(x) xác định.",
+        "Kết hợp các điều kiện bằng giao các tập."
+      ],
+      "sample": {
+        "problem": "Tìm tập xác định của y = log₂(x − 1).",
+        "steps": [
+          "Điều kiện x − 1 > 0.",
+          "D = (1; +∞)."
+        ],
+        "answer": "(1; +∞)"
+      }
+    },
+    {
+      "type": "method",
+      "title": "So sánh giá trị và xét chiều biến thiên",
+      "when": "So sánh 2^{√2} với 2^{1,4}; log₃ 5 với log₃ 7; xét hàm đồng biến hay nghịch biến.",
+      "steps": [
+        "Xác định cơ số a > 1 hay 0 < a < 1.",
+        "Cùng cơ số: so sánh số mũ (hoặc biểu thức trong log) theo chiều biến thiên.",
+        "Khác cơ số: so sánh với số 1 hoặc đưa về cùng cơ số.",
+        "Kết luận."
+      ],
+      "notes": [
+        "log_a x > 0 ⇔ (a − 1)(x − 1) > 0.",
+        "Cơ số nhỏ hơn 1 đảo chiều bất đẳng thức."
+      ],
+      "sample": {
+        "problem": "So sánh (1/2)³ và (1/2)².",
+        "steps": [
+          "Cơ số 0,5 < 1 nên hàm nghịch biến.",
+          "3 > 2 nên (1/2)³ < (1/2)²."
+        ],
+        "answer": "(1/2)³ < (1/2)²"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Bài toán thực tế: tăng trưởng, lãi kép",
+      "when": "Dân số, vi khuẩn, lãi kép, khấu hao theo công thức P = P₀·aᵗ.",
+      "steps": [
+        "Xác định P₀ (lượng ban đầu) và hệ số a mỗi chu kì.",
+        "Viết công thức P = P₀·aᵗ.",
+        "Thay t, tính P; hoặc giải aᵗ = P/P₀ để tìm t (dùng lôgarit).",
+        "Trả lời kèm đơn vị."
+      ],
+      "notes": [
+        "a > 1 là tăng trưởng, 0 < a < 1 là suy giảm.",
+        "Lãi suất 10%/năm cho a = 1,1."
+      ],
+      "sample": {
+        "problem": "Vi khuẩn nhân đôi mỗi giờ, ban đầu 100 con. Sau 5 giờ có bao nhiêu con?",
+        "steps": [
+          "P = 100·2⁵.",
+          "= 3200."
+        ],
+        "answer": "3200 con"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính 2³ (giá trị hàm y = 2ˣ tại x = 3).",
+      "steps": [
+        "y(3) = 2³.",
+        "= 8."
+      ],
+      "expr": "2*2*2",
+      "answer": "8"
+    },
+    {
+      "problem": "Tính (1/2)² (giá trị y = (1/2)ˣ tại x = 2).",
+      "steps": [
+        "(1/2)² = 1/4."
+      ],
+      "expr": "(1/2)*(1/2)",
+      "answer": "1/4"
+    },
+    {
+      "problem": "Vi khuẩn ban đầu 100 con, nhân đôi mỗi giờ. Sau 5 giờ có bao nhiêu con?",
+      "steps": [
+        "P = 100·2⁵.",
+        "= 3200."
+      ],
+      "expr": "100*2*2*2*2*2",
+      "answer": "3200"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Giá trị của hàm y = 2ˣ tại x = 3 là:",
+      "expr": "2*2*2",
+      "answer": "8",
+      "explain": "y = 8.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Giá trị của hàm y = (1/2)ˣ tại x = 2 là (nhập a/b):",
+      "expr": "(1/2)*(1/2)",
+      "answer": "1/4",
+      "explain": "y = 1/4.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Đồ thị y = aˣ luôn đi qua điểm có tung độ bằng (tại x = 0):",
+      "expr": "1",
+      "answer": "1",
+      "explain": "a⁰ = 1.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Đồ thị y = log_a x luôn đi qua điểm có hoành độ bằng (tại y = 0):",
+      "expr": "1",
+      "answer": "1",
+      "explain": "log_a 1 = 0.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số y = 3ˣ là hàm:",
+      "choices": [
+        "đồng biến trên ℝ",
+        "nghịch biến trên ℝ",
+        "chẵn",
+        "có tập xác định (0; +∞)"
+      ],
+      "answer": 0,
+      "explain": "Cơ số 3 > 1 nên hàm mũ đồng biến.",
+      "wrong_explain": {
+        "1": "Cơ số lớn hơn 1 nên không nghịch biến.",
+        "2": "Không có tính chẵn.",
+        "3": "Tập xác định là ℝ."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tập xác định của y = log₂ x là:",
+      "choices": [
+        "(0; +∞)",
+        "ℝ",
+        "[0; +∞)",
+        "(−∞; 0)"
+      ],
+      "answer": 0,
+      "explain": "Biểu thức trong lôgarit phải dương.",
+      "wrong_explain": {
+        "1": "ℝ là tập xác định của hàm mũ.",
+        "2": "x = 0 không thoả log.",
+        "3": "Phải dương, không âm."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tập xác định của y = log₂(x − 1) là (a; +∞). Giá trị a là:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "x − 1 > 0 nên x > 1.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tập xác định của y = log₃(2x − 6) là (a; +∞). Giá trị a là:",
+      "expr": "6/2",
+      "answer": "3",
+      "explain": "2x − 6 > 0 nên x > 3.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giá trị nhỏ nhất của số nguyên x thoả 2ˣ > 10 là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "2³ = 8 < 10 < 16 = 2⁴ nên x nguyên nhỏ nhất là 4.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vi khuẩn nhân đôi mỗi giờ, ban đầu 100 con. Sau 5 giờ có:",
+      "expr": "100*2*2*2*2*2",
+      "answer": "3200",
+      "explain": "P = 100·2⁵ = 3200.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "So sánh (1/2)³ và (1/2)²:",
+      "choices": [
+        "(1/2)³ < (1/2)²",
+        "(1/2)³ > (1/2)²",
+        "Bằng nhau",
+        "Không so sánh được"
+      ],
+      "answer": 0,
+      "explain": "Cơ số 1/2 < 1 nên hàm nghịch biến.",
+      "wrong_explain": {
+        "1": "Với cơ số nhỏ hơn 1, số mũ lớn cho giá trị nhỏ hơn.",
+        "2": "Hai số mũ khác nhau nên giá trị khác.",
+        "3": "Có thể so sánh."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dân số 2 triệu người, tăng đều mỗi năm theo hệ số 2 trong 3 năm (nhân đôi mỗi năm). Dân số sau 3 năm (triệu) là:",
+      "expr": "2*2*2*2",
+      "answer": "16",
+      "explain": "2·2³ = 16 triệu.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Gửi 100 triệu, lãi kép 10%/năm. Sau 2 năm số tiền (triệu) là:",
+      "expr": "100*1.1*1.1",
+      "answer": "121",
+      "explain": "100·1,1² = 121.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chất phóng xạ giảm một nửa sau mỗi năm, ban đầu 80 g. Sau 3 năm còn (g):",
+      "expr": "80*(1/2)*(1/2)*(1/2)",
+      "answer": "10",
+      "explain": "80·(1/2)³ = 10 g.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tập xác định của y = log₂(x² − 4x + 3) là hợp hai khoảng (−∞; 1) ∪ (3; +∞). Tổng hai đầu mút 1 và 3 là:",
+      "expr": "1+3",
+      "answer": "4",
+      "explain": "x² − 4x + 3 > 0 ⇔ x < 1 hoặc x > 3; 1 + 3 = 4.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khẳng định nào đúng?",
+      "choices": [
+        "log₂ 3 < log₂ 5",
+        "log₁/₂ 3 < log₁/₂ 5",
+        "(1/3)² > (1/3)¹",
+        "3⁻¹ > 3⁰"
+      ],
+      "answer": 0,
+      "explain": "Cơ số 2 > 1: hàm đồng biến.",
+      "wrong_explain": {
+        "1": "Cơ số 1/2 < 1 nên log₁/₂ 3 > log₁/₂ 5.",
+        "2": "(1/3)² = 1/9 < 1/3.",
+        "3": "3⁻¹ = 1/3 < 1."
+      },
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hai đồ thị y = 2ˣ và y = log₂ x đối xứng qua đường thẳng y = x. Điểm đối xứng của (3; 8) có hoành độ là:",
+      "expr": "8",
+      "answer": "8",
+      "explain": "Đổi chỗ toạ độ: (8; 3).",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Số năm tối thiểu (nguyên) để 100 triệu gửi lãi kép gấp đôi, biết (1,1)⁷ ≈ 1,95 và (1,1)⁸ ≈ 2,14, là:",
+      "expr": "8",
+      "answer": "8",
+      "explain": "Cần (1,1)ⁿ ≥ 2 nên n = 8.",
+      "id": "q18"
+    }
+  ]
+}

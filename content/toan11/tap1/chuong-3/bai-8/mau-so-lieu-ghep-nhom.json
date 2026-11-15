@@ -1,0 +1,320 @@
+{
+  "id": "bai-8",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Toán 11, tập 1",
+  "chapter": "Chương III. Các số đặc trưng đo xu thế trung tâm của mẫu số liệu ghép nhóm",
+  "lesson": "Bài 8. Mẫu số liệu ghép nhóm",
+  "section": "",
+  "bookPage": 58,
+  "requirements": [
+    "Lập bảng tần số ghép nhóm, tính tần số tích luỹ và tần số tương đối.",
+    "Đọc và vẽ biểu đồ cột (histogram) của mẫu số liệu ghép nhóm."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khi số liệu nhiều và phân tán, ta chia thành các nhóm [a₁; a₂), [a₂; a₃), …, [aₘ; aₘ₊₁) và đếm số giá trị rơi vào mỗi nhóm. Bảng ghi các nhóm và tần số tương ứng gọi là bảng tần số ghép nhóm; mẫu số liệu này gọi là mẫu số liệu ghép nhóm. Độ rộng nhóm thường lấy bằng nhau."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b8-histogram.svg",
+      "caption": "Biểu đồ cột (histogram) của mẫu số liệu ghép nhóm: chiều cao cột bằng tần số của nhóm"
+    },
+    {
+      "type": "formula",
+      "content": "Tần số tương đối của nhóm: fᵢ = (nᵢ/n)·100%.   Tần số tích luỹ của nhóm: cfᵢ = n₁ + … + nᵢ (số giá trị nhỏ hơn đầu mút phải của nhóm i)."
+    },
+    {
+      "type": "text",
+      "content": "Đại diện của nhóm [aᵢ; aᵢ₊₁) là giá trị chính giữa xᵢ = (aᵢ + aᵢ₊₁)/2. Khi tính toán trên mẫu ghép nhóm, xem mọi giá trị trong nhóm đều bằng giá trị đại diện."
+    },
+    {
+      "type": "method",
+      "title": "Lập bảng tần số ghép nhóm từ mẫu số liệu thô",
+      "when": "Cho danh sách giá trị (điểm, chiều cao, cân nặng, thời gian) và yêu cầu chia nhóm, lập bảng.",
+      "steps": [
+        "Tìm giá trị nhỏ nhất, lớn nhất; chọn số nhóm (thường 4 đến 7) và độ rộng nhóm đều.",
+        "Chia các nhóm dạng [a; b) liên tiếp, nhóm cuối có thể là [a; b].",
+        "Đếm số giá trị rơi vào mỗi nhóm (mỗi giá trị chỉ thuộc đúng một nhóm).",
+        "Kiểm tra tổng các tần số bằng cỡ mẫu n."
+      ],
+      "notes": [
+        "Đầu mút trái thuộc nhóm, đầu mút phải thuộc nhóm kế tiếp.",
+        "Tổng tần số tương đối phải bằng 100%."
+      ],
+      "sample": {
+        "problem": "Chiều cao 30 học sinh có các tần số 6; 12; 9; 3 ở các nhóm [150;160), [160;170), [170;180), [180;190). Tính tần số tương đối của nhóm [160; 170).",
+        "steps": [
+          "n = 6 + 12 + 9 + 3 = 30.",
+          "f = 12/30 = 40%."
+        ],
+        "answer": "40%"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tính tần số tích luỹ và tần số tương đối",
+      "when": "Cho bảng tần số và hỏi có bao nhiêu giá trị nhỏ hơn một mốc, hoặc tỉ lệ phần trăm của một nhóm.",
+      "steps": [
+        "Cỡ mẫu n = tổng các tần số.",
+        "Tần số tương đối nhóm i: nᵢ/n nhân 100%.",
+        "Tần số tích luỹ nhóm i: cộng dồn từ nhóm đầu đến nhóm i.",
+        "Số giá trị nhỏ hơn mốc aᵢ₊₁ bằng tần số tích luỹ của nhóm i."
+      ],
+      "notes": [
+        "Tần số tích luỹ của nhóm cuối bằng n.",
+        "Mốc nằm giữa nhóm thì chỉ ước lượng được."
+      ],
+      "sample": {
+        "problem": "Với bảng 6; 12; 9; 3, có bao nhiêu em cao dưới 180 cm?",
+        "steps": [
+          "Cộng dồn đến nhóm [170; 180): 6 + 12 + 9 = 27.",
+          "Vậy 27 em."
+        ],
+        "answer": "27 em"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tìm giá trị đại diện và đọc biểu đồ",
+      "when": "Cần chuẩn bị tính trung bình, hoặc đọc histogram để biết nhóm đông nhất, ít nhất.",
+      "steps": [
+        "Giá trị đại diện xᵢ = (đầu mút trái + đầu mút phải)/2.",
+        "Trên biểu đồ cột, chiều cao tỉ lệ với tần số (độ rộng nhóm bằng nhau).",
+        "Nhóm có cột cao nhất là nhóm có tần số lớn nhất.",
+        "Tổng chiều cao các cột (theo tần số) bằng cỡ mẫu n."
+      ],
+      "notes": [
+        "Nếu độ rộng nhóm khác nhau, dùng mật độ = tần số / độ rộng.",
+        "Đọc đúng đơn vị trục hoành."
+      ],
+      "sample": {
+        "problem": "Giá trị đại diện của nhóm [160; 170) là bao nhiêu?",
+        "steps": [
+          "x = (160 + 170)/2.",
+          "= 165."
+        ],
+        "answer": "165"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính cỡ mẫu từ bảng tần số 6; 12; 9; 3.",
+      "steps": [
+        "n = tổng các tần số.",
+        "n = 6 + 12 + 9 + 3 = 30."
+      ],
+      "expr": "6+12+9+3",
+      "answer": "30"
+    },
+    {
+      "problem": "Tần số tương đối (%) của nhóm có tần số 12 trong mẫu cỡ 30?",
+      "steps": [
+        "f = 12/30 · 100%.",
+        "= 40%."
+      ],
+      "expr": "12*100/30",
+      "answer": "40"
+    },
+    {
+      "problem": "Giá trị đại diện của nhóm [160; 170).",
+      "steps": [
+        "x = (160 + 170)/2.",
+        "= 165."
+      ],
+      "expr": "(160+170)/2",
+      "answer": "165"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Bảng tần số các nhóm có tần số 6; 12; 9; 3. Cỡ mẫu n là:",
+      "expr": "6+12+9+3",
+      "answer": "30",
+      "explain": "n bằng tổng các tần số = 30.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Giá trị đại diện của nhóm [150; 160) là:",
+      "expr": "(150+160)/2",
+      "answer": "155",
+      "explain": "x = 155.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Độ rộng của nhóm [160; 170) là:",
+      "expr": "170-160",
+      "answer": "10",
+      "explain": "170 − 160 = 10.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Giá trị đại diện của một nhóm [a; b) là:",
+      "choices": [
+        "(a + b)/2",
+        "a",
+        "b",
+        "b − a"
+      ],
+      "answer": 0,
+      "explain": "Đại diện là điểm chính giữa của nhóm.",
+      "wrong_explain": {
+        "1": "a chỉ là đầu mút trái.",
+        "2": "b chỉ là đầu mút phải.",
+        "3": "b − a là độ rộng nhóm."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mẫu cỡ 30, nhóm có tần số 12. Tần số tương đối (%) là:",
+      "expr": "12*100/30",
+      "answer": "40",
+      "explain": "12/30 = 40%.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tần số 6; 12; 9; 3. Số giá trị nhỏ hơn 170 (tần số tích luỹ của nhóm thứ hai) là:",
+      "expr": "6+12",
+      "answer": "18",
+      "explain": "6 + 12 = 18.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tần số 6; 12; 9; 3. Số giá trị nhỏ hơn 180 là:",
+      "expr": "6+12+9",
+      "answer": "27",
+      "explain": "Cộng dồn ba nhóm đầu: 27.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tổng các tần số tương đối (%) của mọi nhóm bằng:",
+      "expr": "100",
+      "answer": "100",
+      "explain": "Tổng các tỉ lệ luôn bằng 100%.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong histogram, cột cao nhất ứng với nhóm có:",
+      "choices": [
+        "tần số lớn nhất",
+        "tần số nhỏ nhất",
+        "giá trị đại diện lớn nhất",
+        "độ rộng lớn nhất"
+      ],
+      "answer": 0,
+      "explain": "Chiều cao cột biểu diễn tần số.",
+      "wrong_explain": {
+        "1": "Cột thấp nhất mới có tần số nhỏ nhất.",
+        "2": "Vị trí nằm trên trục hoành, không phải chiều cao.",
+        "3": "Độ rộng các nhóm thường bằng nhau."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Điểm kiểm tra: [5;6): 4, [6;7): 8, [7;8): 10, [8;9): 6, [9;10]: 2. Cỡ mẫu n là:",
+      "expr": "4+8+10+6+2",
+      "answer": "30",
+      "explain": "n = 30.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với bảng điểm trên, số học sinh được từ 8 điểm trở lên là:",
+      "expr": "6+2",
+      "answer": "8",
+      "explain": "[8;9): 6 và [9;10]: 2 nên 8 em.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với bảng điểm trên, tỉ lệ (%) học sinh đạt dưới 7 điểm là:",
+      "expr": "(4+8)*100/30",
+      "answer": "40",
+      "explain": "(4 + 8)/30 = 40%.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tần số tích luỹ nhóm [7;8) trong bảng điểm trên là:",
+      "expr": "4+8+10",
+      "answer": "22",
+      "explain": "4 + 8 + 10 = 22.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thời gian đi học (phút) 40 em chia 5 nhóm có tần số 5; 9; 14; 8; 4. Số em đi quá 3 nhóm đầu là:",
+      "expr": "8+4",
+      "answer": "12",
+      "explain": "Hai nhóm cuối: 8 + 4 = 12.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị đại diện của nhóm [15; 25) là:",
+      "expr": "(15+25)/2",
+      "answer": "20",
+      "explain": "x = 20.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Một nhóm có tần số tương đối 25% trong mẫu 48. Tần số của nhóm là:",
+      "expr": "48*25/100",
+      "answer": "12",
+      "explain": "48·25% = 12.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tần số tích luỹ của nhóm cuối cùng luôn bằng:",
+      "choices": [
+        "cỡ mẫu n",
+        "100",
+        "tần số nhóm đầu",
+        "0"
+      ],
+      "answer": 0,
+      "explain": "Cộng dồn tất cả nhóm bằng tổng tần số n.",
+      "wrong_explain": {
+        "1": "100 chỉ đúng với tổng tần số tương đối (%).",
+        "2": "Tần số tích luỹ nhóm đầu mới bằng tần số nhóm đầu.",
+        "3": "Không thể bằng 0."
+      },
+      "id": "q17"
+    }
+  ]
+}

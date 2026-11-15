@@ -1,0 +1,335 @@
+{
+  "id": "bai-24",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Toán 11, tập 2",
+  "chapter": "Chương VII. Quan hệ vuông góc trong không gian",
+  "lesson": "Bài 24. Phép chiếu vuông góc. Góc giữa đường thẳng và mặt phẳng",
+  "section": "",
+  "bookPage": 38,
+  "requirements": [
+    "Hiểu phép chiếu vuông góc, định lí ba đường vuông góc.",
+    "Xác định và tính góc giữa đường thẳng và mặt phẳng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phép chiếu song song lên (P) theo phương vuông góc với (P) gọi là phép chiếu vuông góc lên (P). Hình chiếu vuông góc của điểm M là chân đường vuông góc hạ từ M xuống (P). Hình chiếu của đường thẳng d không vuông góc (P) lên (P) là đường thẳng d′."
+    },
+    {
+      "type": "text",
+      "content": "Định lí ba đường vuông góc: cho đường thẳng a ⊂ (P) và b là đường thẳng không vuông góc (P) với hình chiếu b′ lên (P). Khi đó a ⟂ b ⇔ a ⟂ b′."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b24-goc-duong-mp.svg",
+      "caption": "SA ⟂ (ABCD): hình chiếu của SB lên (ABCD) là AB; góc giữa SB và (ABCD) là ∠SBA"
+    },
+    {
+      "type": "text",
+      "content": "Góc giữa đường thẳng d và mặt phẳng (P): nếu d ⟂ (P) thì góc bằng 90°; nếu d ∥ hoặc d ⊂ (P) thì góc bằng 0°; nếu d cắt (P) nhưng không vuông góc thì góc giữa d và (P) là góc giữa d và hình chiếu d′ của nó lên (P). Góc này thuộc [0°; 90°]."
+    },
+    {
+      "type": "formula",
+      "content": "Trong tam giác vuông SAB (vuông tại A, SA ⟂ (ABCD)): sin α = SA/SB, cos α = AB/SB, tan α = SA/AB, với α = ∠SBA là góc giữa SB và (ABCD)."
+    },
+    {
+      "type": "method",
+      "title": "Xác định góc giữa đường thẳng và mặt phẳng",
+      "when": "Đề yêu cầu tính (SB, (ABCD)), (SC, (ABC)), (A′C, (ABCD)) …",
+      "steps": [
+        "Tìm giao điểm O của đường thẳng d với (P) (nếu có).",
+        "Tìm hình chiếu vuông góc H của một điểm M ∈ d (M ≠ O) lên (P) (dùng đường vuông góc mp có sẵn).",
+        "Góc giữa d và (P) là ∠MOH.",
+        "Tính góc trong tam giác vuông MHO bằng sin, cos hoặc tan."
+      ],
+      "notes": [
+        "Hình chiếu của đường thẳng đi qua O và H.",
+        "Góc luôn nhọn (không quá 90°)."
+      ],
+      "sample": {
+        "problem": "S.ABCD, SA ⟂ (ABCD), SA = AB. Tính góc giữa SB và (ABCD).",
+        "steps": [
+          "Hình chiếu của SB lên (ABCD) là AB.",
+          "Góc là ∠SBA; tan = SA/AB = 1.",
+          "Góc bằng 45°."
+        ],
+        "answer": "45°"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tính độ dài hình chiếu, quãng đường theo góc nghiêng",
+      "when": "Đoạn thẳng dài ℓ hợp với mặt phẳng góc φ; cần tính độ dài hình chiếu và độ cao.",
+      "steps": [
+        "Hình chiếu của đoạn lên mặt phẳng có độ dài ℓ·cos φ.",
+        "Khoảng cách từ đầu mút đến mặt phẳng (độ cao) = ℓ·sin φ.",
+        "Thay số và tính.",
+        "Kiểm tra: (ℓ cos φ)² + (ℓ sin φ)² = ℓ²."
+      ],
+      "notes": [
+        "φ = 90° thì hình chiếu là một điểm.",
+        "φ = 0° thì hình chiếu bằng chính đoạn."
+      ],
+      "sample": {
+        "problem": "Đoạn dài 10 hợp với mặt phẳng góc 60°. Tính độ dài hình chiếu.",
+        "steps": [
+          "ℓ cos 60° = 10·1/2.",
+          "= 5."
+        ],
+        "answer": "5"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Vận dụng định lí ba đường vuông góc",
+      "when": "Chứng minh hai đường vuông góc khi có SA ⟂ đáy và một đường trong đáy vuông góc với hình chiếu.",
+      "steps": [
+        "Xác định đường thẳng b (nghiêng) và hình chiếu b′ của nó.",
+        "Chứng minh a ⟂ b′ (a ⊂ (P)).",
+        "Kết luận a ⟂ b nhờ định lí ba đường vuông góc.",
+        "Ngược lại, từ a ⟂ b suy ra a ⟂ b′."
+      ],
+      "notes": [
+        "Ví dụ: SA ⟂ (ABCD), ABCD hình vuông: BD ⟂ SC (vì BD ⟂ AC là hình chiếu của SC).",
+        "Định lí hai chiều."
+      ],
+      "sample": {
+        "problem": "SA ⟂ (ABCD), ABCD hình vuông. Chứng minh BD ⟂ SC.",
+        "steps": [
+          "Hình chiếu của SC lên (ABCD) là AC.",
+          "BD ⟂ AC (hai đường chéo hình vuông).",
+          "Theo định lí ba đường vuông góc, BD ⟂ SC."
+        ],
+        "answer": "BD ⟂ SC"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "S.ABCD có SA ⟂ (ABCD), SA = AB. Góc giữa SB và (ABCD) bằng bao nhiêu độ?",
+      "steps": [
+        "tan ∠SBA = SA/AB = 1.",
+        "Góc = 45°."
+      ],
+      "expr": "180/4",
+      "answer": "45"
+    },
+    {
+      "problem": "SA = 3, AB = 4, SA ⟂ (ABCD). Tính sin góc giữa SB và (ABCD).",
+      "steps": [
+        "SB = 5.",
+        "sin = SA/SB = 3/5."
+      ],
+      "expr": "3/5",
+      "answer": "3/5"
+    },
+    {
+      "problem": "Đoạn dài 10 hợp với mặt phẳng góc 60°. Độ dài hình chiếu?",
+      "steps": [
+        "10·cos 60° = 10·1/2.",
+        "= 5."
+      ],
+      "expr": "10*1/2",
+      "answer": "5"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hình chiếu vuông góc của điểm M lên mặt phẳng (P) là:",
+      "choices": [
+        "chân đường vuông góc hạ từ M xuống (P)",
+        "điểm bất kì của (P)",
+        "giao điểm của OM với (P)",
+        "điểm đối xứng với M"
+      ],
+      "answer": 0,
+      "explain": "Đó là định nghĩa.",
+      "wrong_explain": {
+        "1": "Phải là chân đường vuông góc.",
+        "2": "Không phải giao điểm tuỳ ý.",
+        "3": "Điểm đối xứng không phải hình chiếu."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Góc giữa đường thẳng và mặt phẳng nằm trong khoảng:",
+      "choices": [
+        "[0°; 90°]",
+        "[0°; 180°]",
+        "[90°; 180°]",
+        "(0°; 360°)"
+      ],
+      "answer": 0,
+      "explain": "Góc giữa đường thẳng và mp luôn không tù.",
+      "wrong_explain": {
+        "1": "180° dành cho góc giữa hai tia.",
+        "2": "Không tù.",
+        "3": "Không quá 90°."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Góc giữa đường thẳng d và mặt phẳng (P) khi d ⟂ (P) bằng (độ):",
+      "expr": "90",
+      "answer": "90",
+      "explain": "Theo định nghĩa.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Góc giữa đường thẳng d và mặt phẳng (P) khi d ∥ (P) bằng (độ):",
+      "expr": "0",
+      "answer": "0",
+      "explain": "Theo định nghĩa.",
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "S.ABCD, SA ⟂ (ABCD), SA = AB. Góc giữa SB và (ABCD) (độ):",
+      "expr": "180/4",
+      "answer": "45",
+      "explain": "tan = 1 nên 45°.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "SA ⟂ (ABCD), SA = 3, AB = 4. sin góc giữa SB và (ABCD) (nhập a/b):",
+      "expr": "3/5",
+      "answer": "3/5",
+      "explain": "SB = 5, sin = 3/5.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "SA ⟂ (ABCD), SA = 3, AB = 4. cos góc giữa SB và (ABCD) (nhập a/b):",
+      "expr": "4/5",
+      "answer": "4/5",
+      "explain": "cos = AB/SB = 4/5.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "SA ⟂ (ABCD), SA = 3, AB = 4. tan góc giữa SB và (ABCD) (nhập a/b):",
+      "expr": "3/4",
+      "answer": "3/4",
+      "explain": "tan = SA/AB = 3/4.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "SB = 2SA, SA ⟂ (ABCD). Góc giữa SB và (ABCD) (độ): sin = 1/2 nên góc là:",
+      "expr": "180/6",
+      "answer": "30",
+      "explain": "sin = 1/2 ⇒ 30°.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình lập phương ABCD.A′B′C′D′. Góc giữa AA′ và (ABCD) (độ):",
+      "expr": "90",
+      "answer": "90",
+      "explain": "AA′ ⟂ (ABCD).",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình lập phương. Góc giữa A′B và (ABCD) (độ):",
+      "expr": "180/4",
+      "answer": "45",
+      "explain": "Hình chiếu là AB; tam giác A′AB vuông cân: 45°.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đoạn thẳng dài 10 hợp với mặt phẳng góc 60°. Độ dài hình chiếu:",
+      "expr": "10*1/2",
+      "answer": "5",
+      "explain": "10·cos 60° = 5.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đoạn thẳng dài 12 hợp với mặt phẳng góc 30°. Khoảng cách từ đầu trên đến mặt phẳng:",
+      "expr": "12*1/2",
+      "answer": "6",
+      "explain": "12·sin 30° = 6.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thang dài 5 m dựa vào tường thẳng đứng, chân thang cách tường 3 m. Sin góc giữa thang và tường (nhập a/b):",
+      "expr": "3/5",
+      "answer": "3/5",
+      "explain": "Góc với tường: sin = 3/5.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thang dài 5 m, chân thang cách tường 3 m. Chiều cao thang chạm tường (m):",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Pytago: 5² − 3² = 16 nên 4 m.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "SA ⟂ (ABCD), ABCD là hình vuông. Khẳng định đúng là:",
+      "choices": [
+        "BD ⟂ SC",
+        "BD ∥ SC",
+        "AC ∥ SB",
+        "BD ⟂ SB"
+      ],
+      "answer": 0,
+      "explain": "Hình chiếu của SC là AC mà BD ⟂ AC.",
+      "wrong_explain": {
+        "1": "BD và SC chéo nhau, không song song.",
+        "2": "AC và SB không song song.",
+        "3": "BD và SB không vuông góc."
+      },
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "S.ABC có SA ⟂ (ABC), SA = AB. tan góc giữa SB và (ABC) bằng:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "tan = SA/AB = 1, góc 45°.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Một đoạn thẳng hợp mặt phẳng góc 45° có hình chiếu dài 7. Độ dài đoạn thẳng nhân √2 bằng:",
+      "expr": "7*2",
+      "answer": "14",
+      "explain": "ℓ cos 45° = 7 ⇒ ℓ = 7√2, nên ℓ√2 = 14.",
+      "id": "q18"
+    }
+  ]
+}

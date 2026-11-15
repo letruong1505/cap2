@@ -1,0 +1,342 @@
+{
+  "id": "bai-23",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Toán 11, tập 2",
+  "chapter": "Chương VII. Quan hệ vuông góc trong không gian",
+  "lesson": "Bài 23. Đường thẳng vuông góc với mặt phẳng",
+  "section": "",
+  "bookPage": 31,
+  "requirements": [
+    "Nhận biết và chứng minh đường thẳng vuông góc với mặt phẳng.",
+    "Vận dụng tính chất để chứng minh hai đường vuông góc, tìm tam giác vuông và tính độ dài."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đường thẳng d vuông góc với mặt phẳng (P), kí hiệu d ⟂ (P), nếu d vuông góc với mọi đường thẳng nằm trong (P). Điều kiện: nếu d vuông góc với hai đường thẳng cắt nhau a, b nằm trong (P) thì d ⟂ (P)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b23-duong-vuong-goc-mp.svg",
+      "caption": "Hình chóp S.ABCD có SA ⟂ (ABCD): SA vuông góc với mọi đường trong đáy (AB, AD, AC, …)"
+    },
+    {
+      "type": "text",
+      "content": "Tính chất: có duy nhất một mặt phẳng đi qua một điểm cho trước và vuông góc với một đường thẳng cho trước; có duy nhất một đường thẳng đi qua một điểm cho trước và vuông góc với một mặt phẳng cho trước. Nếu a ∥ b và a ⟂ (P) thì b ⟂ (P). Nếu hai mặt phẳng phân biệt cùng vuông góc với một đường thẳng thì chúng song song. Mặt phẳng trung trực của đoạn AB là mặt phẳng vuông góc với AB tại trung điểm của AB."
+    },
+    {
+      "type": "formula",
+      "content": "Đường chéo hình hộp chữ nhật các cạnh a, b, c: d² = a² + b² + c².   Đường chéo hình lập phương cạnh a: d = a√3."
+    },
+    {
+      "type": "method",
+      "title": "Chứng minh đường thẳng vuông góc với mặt phẳng",
+      "when": "Cần chứng minh d ⟂ (P), thường để suy ra d vuông góc với một đường nào đó.",
+      "steps": [
+        "Tìm hai đường thẳng cắt nhau a, b nằm trong (P).",
+        "Chứng minh d ⟂ a và d ⟂ b (dùng giả thiết, tam giác vuông, định lí Pythagore đảo, đường chéo hình vuông…).",
+        "Kết luận d ⟂ (P).",
+        "Suy ra d vuông góc với mọi đường trong (P)."
+      ],
+      "notes": [
+        "Hai đường a, b phải cắt nhau.",
+        "Có thể dùng a ∥ b ⟂ (P) ⇒ a ⟂ (P)."
+      ],
+      "sample": {
+        "problem": "S.ABCD, SA ⟂ (ABCD), ABCD là hình vuông. Chứng minh BD ⟂ (SAC).",
+        "steps": [
+          "BD ⟂ AC (hai đường chéo hình vuông).",
+          "BD ⟂ SA (SA ⟂ (ABCD) ⊃ BD).",
+          "AC, SA cắt nhau tại A trong (SAC) nên BD ⟂ (SAC)."
+        ],
+        "answer": "BD ⟂ (SAC)"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tìm tam giác vuông và tính độ dài đoạn thẳng",
+      "when": "Hình chóp có cạnh bên vuông góc đáy; cần tìm các tam giác vuông, tính SB, SC, đường chéo.",
+      "steps": [
+        "Từ SA ⟂ (ABCD): SA ⟂ AB, AC, AD ⇒ các tam giác SAB, SAC, SAD vuông tại A.",
+        "Dùng thêm BC ⟂ AB, BC ⟂ SA ⇒ BC ⟂ (SAB) ⇒ BC ⟂ SB (tam giác SBC vuông tại B).",
+        "Tính độ dài bằng định lí Pythagore: SB² = SA² + AB²…",
+        "Với hình hộp chữ nhật: d² = a² + b² + c²."
+      ],
+      "notes": [
+        "Trong hình chóp tứ giác có đáy chữ nhật và SA ⟂ đáy, cả bốn mặt bên đều là tam giác vuông.",
+        "Ghi chú tính SC² = SA² + AB² + AD²."
+      ],
+      "sample": {
+        "problem": "SA ⟂ (ABCD), SA = 3, ABCD hình chữ nhật AB = 4, AD = 12. Tính SC².",
+        "steps": [
+          "AC² = AB² + AD² = 16 + 144 = 160.",
+          "SC² = SA² + AC² = 9 + 160 = 169."
+        ],
+        "answer": "169"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Mặt phẳng trung trực và tâm đường tròn ngoại tiếp",
+      "when": "Hình chóp có các cạnh bên bằng nhau; hoặc đề nói “chân đường cao là tâm …”.",
+      "steps": [
+        "Hình chóp có SA = SB = SC thì chân đường cao H cách đều A, B, C.",
+        "Do đó H là tâm đường tròn ngoại tiếp tam giác ABC.",
+        "Tam giác vuông: H là trung điểm cạnh huyền; tam giác đều: H là trọng tâm.",
+        "Dùng để tính HA, đường cao SH = √(SA² − HA²)."
+      ],
+      "notes": [
+        "Hình chóp đều: chân đường cao là tâm của đa giác đáy.",
+        "Tâm đường tròn ngoại tiếp tam giác vuông là trung điểm cạnh huyền."
+      ],
+      "sample": {
+        "problem": "S.ABC có SA = SB = SC, ΔABC vuông tại A, BC = 10. H là chân đường cao. Tính HA.",
+        "steps": [
+          "H là tâm đường tròn ngoại tiếp ΔABC.",
+          "ΔABC vuông tại A nên H là trung điểm BC.",
+          "HA = BC/2 = 5."
+        ],
+        "answer": "5"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "S.ABCD, SA ⟂ (ABCD), SA = 3, AB = 4. Tính SB².",
+      "steps": [
+        "Tam giác SAB vuông tại A.",
+        "SB² = 9 + 16 = 25."
+      ],
+      "expr": "3*3+4*4",
+      "answer": "25"
+    },
+    {
+      "problem": "Hộp chữ nhật các cạnh 3, 4, 12. Tính bình phương độ dài đường chéo.",
+      "steps": [
+        "d² = 3² + 4² + 12².",
+        "= 169."
+      ],
+      "expr": "3*3+4*4+12*12",
+      "answer": "169"
+    },
+    {
+      "problem": "S.ABC có SA = SB = SC, ΔABC vuông tại A, BC = 10. Tính HA (H là chân đường cao).",
+      "steps": [
+        "H là trung điểm BC.",
+        "HA = 10/2 = 5."
+      ],
+      "expr": "10/2",
+      "answer": "5"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đường thẳng d vuông góc với mặt phẳng (P) khi:",
+      "choices": [
+        "d vuông góc với hai đường cắt nhau nằm trong (P)",
+        "d vuông góc với một đường trong (P)",
+        "d song song (P)",
+        "d nằm trong (P)"
+      ],
+      "answer": 0,
+      "explain": "Đó là điều kiện đủ để d ⟂ (P).",
+      "wrong_explain": {
+        "1": "Chỉ một đường là chưa đủ.",
+        "2": "Song song không liên quan vuông góc.",
+        "3": "Nếu nằm trong (P) thì không vuông góc với (P)."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nếu a ∥ b và a ⟂ (P) thì:",
+      "choices": [
+        "b ⟂ (P)",
+        "b ∥ (P)",
+        "b ⊂ (P)",
+        "b cắt (P) không vuông góc"
+      ],
+      "answer": 0,
+      "explain": "Hai đường song song, một đường vuông góc với mặt phẳng thì đường kia cũng vuông góc.",
+      "wrong_explain": {
+        "1": "Không thể song song với (P).",
+        "2": "Không nằm trong (P).",
+        "3": "Phải vuông góc."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "S.ABC có SA ⟂ (ABC), ΔABC vuông tại B. Số tam giác vuông trong 4 mặt của tứ diện là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "SAB, SAC vuông tại A; ABC vuông tại B; SBC vuông tại B.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "S.ABCD có SA ⟂ (ABCD), ABCD là hình chữ nhật. Số mặt bên là tam giác vuông là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "SAB, SAD (tại A), SBC (tại B), SCD (tại D).",
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "SA ⟂ (ABCD), SA = 3, AB = 4. SB² bằng:",
+      "expr": "3*3+4*4",
+      "answer": "25",
+      "explain": "SB² = 9 + 16 = 25.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "SA = 6, AC = 8, SA ⟂ (ABC). SC² bằng:",
+      "expr": "6*6+8*8",
+      "answer": "100",
+      "explain": "36 + 64 = 100.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hộp chữ nhật các cạnh 3, 4, 12. Bình phương đường chéo là:",
+      "expr": "3*3+4*4+12*12",
+      "answer": "169",
+      "explain": "d² = 9 + 16 + 144 = 169.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình lập phương cạnh 3. Bình phương đường chéo là:",
+      "expr": "3*3*3",
+      "answer": "27",
+      "explain": "d² = 3a² = 27.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số mặt phẳng đi qua điểm O và vuông góc với đường thẳng d cho trước là:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "Có duy nhất một mặt phẳng.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Góc giữa BC và SB (độ) khi SA ⟂ (ABC) và AB ⟂ BC là:",
+      "expr": "90",
+      "answer": "90",
+      "explain": "BC ⟂ (SAB) nên BC ⟂ SB.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Mặt phẳng trung trực của đoạn AB là mặt phẳng:",
+      "choices": [
+        "vuông góc với AB tại trung điểm AB",
+        "chứa AB",
+        "song song AB",
+        "đi qua A và vuông góc AB"
+      ],
+      "answer": 0,
+      "explain": "Đó là định nghĩa mặt phẳng trung trực.",
+      "wrong_explain": {
+        "1": "Mặt phẳng chứa AB không phải trung trực.",
+        "2": "Song song AB không là trung trực.",
+        "3": "Phải đi qua trung điểm, không phải đầu A."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "S.ABCD, SA ⟂ (ABCD), ABCD hình vuông cạnh 4, SA = 3. SC² bằng:",
+      "expr": "3*3+4*4+4*4",
+      "answer": "41",
+      "explain": "AC² = 32; SC² = 9 + 32 = 41.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "SA ⟂ (ABCD), SA = 3, ABCD hình chữ nhật AB = 4, AD = 12. SC² bằng:",
+      "expr": "3*3+4*4+12*12",
+      "answer": "169",
+      "explain": "9 + 16 + 144 = 169.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "S.ABC có SA = SB = SC, ΔABC vuông tại A, BC = 10. HA bằng:",
+      "expr": "10/2",
+      "answer": "5",
+      "explain": "H là trung điểm BC nên HA = 5.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "S.ABC có SA = SB = SC = 13, ΔABC vuông tại A, BC = 10. SH² (H trung điểm BC) bằng:",
+      "expr": "13*13-5*5",
+      "answer": "144",
+      "explain": "SH² = 169 − 25 = 144.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hộp chữ nhật 2, 3, 6 có đường chéo d; d² bằng:",
+      "expr": "2*2+3*3+6*6",
+      "answer": "49",
+      "explain": "4 + 9 + 36 = 49 nên d = 7.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hình lập phương cạnh 4. Bình phương đường chéo của hình lập phương bằng 3a². Giá trị là:",
+      "expr": "3*4*4",
+      "answer": "48",
+      "explain": "d² = 48.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai mặt phẳng phân biệt cùng vuông góc với đường thẳng d thì:",
+      "choices": [
+        "song song với nhau",
+        "cắt nhau",
+        "trùng nhau",
+        "vuông góc nhau"
+      ],
+      "answer": 0,
+      "explain": "Cùng vuông góc d ⇒ song song.",
+      "wrong_explain": {
+        "1": "Không có giao tuyến.",
+        "2": "Đã nói phân biệt.",
+        "3": "Chúng song song, không vuông góc."
+      },
+      "id": "q18"
+    }
+  ]
+}

@@ -1,0 +1,323 @@
+{
+  "id": "bai-15",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Toán 11, tập 1",
+  "chapter": "Chương V. Giới hạn. Hàm số liên tục",
+  "lesson": "Bài 15. Giới hạn của dãy số",
+  "section": "",
+  "bookPage": 104,
+  "requirements": [
+    "Hiểu định nghĩa giới hạn của dãy số và các giới hạn cơ bản.",
+    "Tính giới hạn dãy số dạng phân thức, có căn; tính tổng cấp số nhân lùi vô hạn."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dãy số (uₙ) có giới hạn 0 khi n dần tới dương vô cực nếu |uₙ| nhỏ hơn một số dương bé tuỳ ý kể từ một số hạng nào đó trở đi; kí hiệu lim uₙ = 0. Dãy (uₙ) có giới hạn a (hữu hạn) nếu lim (uₙ − a) = 0, kí hiệu lim uₙ = a."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b15-gioi-han-day-so.svg",
+      "caption": "Dãy uₙ = (2n + 1)/(n + 1) có các số hạng tiến lại gần đường thẳng y = 2: lim uₙ = 2"
+    },
+    {
+      "type": "formula",
+      "content": "lim 1/nᵏ = 0 (k nguyên dương);  lim c = c;  lim qⁿ = 0 nếu |q| < 1;  lim nᵏ = +∞;  lim qⁿ = +∞ nếu q > 1."
+    },
+    {
+      "type": "formula",
+      "content": "Nếu lim uₙ = a, lim vₙ = b thì lim(uₙ ± vₙ) = a ± b, lim(uₙvₙ) = ab, lim(uₙ/vₙ) = a/b (b ≠ 0), lim √uₙ = √a (uₙ ≥ 0, a ≥ 0)."
+    },
+    {
+      "type": "text",
+      "content": "Tổng của cấp số nhân lùi vô hạn (|q| < 1): S = u₁ + u₁q + u₁q² + … = u₁/(1 − q). Ứng dụng: đổi số thập phân vô hạn tuần hoàn thành phân số, ví dụ 0,(3) = 0,3 + 0,03 + … = 1/3."
+    },
+    {
+      "type": "method",
+      "title": "Tính giới hạn của dãy phân thức",
+      "when": "uₙ = P(n)/Q(n) với P, Q là đa thức của n (hoặc biểu thức có aⁿ).",
+      "steps": [
+        "Tìm luỹ thừa cao nhất của n ở mẫu (hoặc cơ số lớn nhất nếu có aⁿ).",
+        "Chia cả tử và mẫu cho luỹ thừa đó.",
+        "Dùng lim 1/nᵏ = 0, lim qⁿ = 0 (|q| < 1).",
+        "Tính giới hạn của thương hai biểu thức hằng."
+      ],
+      "notes": [
+        "Bậc tử = bậc mẫu: giới hạn bằng thương hai hệ số cao nhất.",
+        "Bậc tử < bậc mẫu: giới hạn 0; bậc tử > bậc mẫu: giới hạn ±∞."
+      ],
+      "sample": {
+        "problem": "Tính lim (3n² + n)/(2n² − 1).",
+        "steps": [
+          "Chia tử và mẫu cho n²: (3 + 1/n)/(2 − 1/n²).",
+          "Giới hạn: 3/2."
+        ],
+        "answer": "3/2"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Giới hạn có căn: nhân lượng liên hợp",
+      "when": "Có hiệu hai căn hoặc căn trừ đi một biểu thức, ví dụ √(n² + n) − n, dạng ∞ − ∞.",
+      "steps": [
+        "Nhân và chia với biểu thức liên hợp (√A + √B).",
+        "Rút gọn tử: A − B.",
+        "Chia tử và mẫu cho n (luỹ thừa cao nhất, nhớ √n² = n).",
+        "Tính giới hạn."
+      ],
+      "notes": [
+        "Với n > 0: √(n² + k) = n·√(1 + k/n²).",
+        "Đừng quên dấu căn khi chia: chia cho n thì chia vào trong căn cho n²."
+      ],
+      "sample": {
+        "problem": "Tính lim (√(n² + n) − n).",
+        "steps": [
+          "= lim n/(√(n² + n) + n).",
+          "Chia tử, mẫu cho n: 1/(√(1 + 1/n) + 1).",
+          "Giới hạn: 1/2."
+        ],
+        "answer": "1/2"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tổng cấp số nhân lùi vô hạn và số thập phân tuần hoàn",
+      "when": "Cần tính 1 + 1/2 + 1/4 + …, hoặc viết 0,(3), 0,(27) thành phân số.",
+      "steps": [
+        "Xác định u₁ và q = uₙ₊₁/uₙ.",
+        "Kiểm tra |q| < 1.",
+        "Áp dụng S = u₁/(1 − q).",
+        "Số thập phân tuần hoàn: viết thành tổng các số hạng u₁, u₁q, …"
+      ],
+      "notes": [
+        "Nếu |q| ≥ 1 thì tổng không tồn tại (không hữu hạn).",
+        "Quãng đường quả bóng nảy: cộng quãng rơi đầu và 2 lần quãng đi lên."
+      ],
+      "sample": {
+        "problem": "Tính 1 + 1/3 + 1/9 + ….",
+        "steps": [
+          "u₁ = 1, q = 1/3.",
+          "S = 1/(1 − 1/3) = 3/2."
+        ],
+        "answer": "3/2"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính lim (3n² + n)/(2n² − 1).",
+      "steps": [
+        "Chia cho n²: (3 + 1/n)/(2 − 1/n²).",
+        "Giới hạn bằng 3/2."
+      ],
+      "expr": "3/2",
+      "answer": "3/2"
+    },
+    {
+      "problem": "Tính tổng 1 + 1/3 + 1/9 + ….",
+      "steps": [
+        "q = 1/3, |q| < 1.",
+        "S = 1/(1 − 1/3) = 3/2."
+      ],
+      "expr": "(1)/(1-1/3)",
+      "answer": "3/2"
+    },
+    {
+      "problem": "Viết 0,(3) thành phân số tối giản.",
+      "steps": [
+        "0,(3) = 3/10 + 3/100 + … có u₁ = 3/10, q = 1/10.",
+        "S = (3/10)/(1 − 1/10) = 1/3."
+      ],
+      "expr": "(3/10)/(1-1/10)",
+      "answer": "1/3"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Giới hạn lim 1/n bằng:",
+      "expr": "0",
+      "answer": "0",
+      "explain": "lim 1/n = 0.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Giới hạn lim (5 + 2/n) bằng:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "lim 2/n = 0 nên giới hạn là 5.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Giới hạn lim (−1/2)ⁿ bằng:",
+      "expr": "0",
+      "answer": "0",
+      "explain": "|q| = 1/2 < 1 nên qⁿ → 0.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Giới hạn lim n² bằng:",
+      "choices": [
+        "+∞",
+        "0",
+        "1",
+        "−∞"
+      ],
+      "answer": 0,
+      "explain": "nᵏ → +∞ với k nguyên dương.",
+      "wrong_explain": {
+        "1": "n² không tiến về 0.",
+        "2": "n² không tiến về 1.",
+        "3": "n² luôn dương, không đến −∞."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính lim (2n + 1)/(n − 3):",
+      "expr": "2/1",
+      "answer": "2",
+      "explain": "Chia cho n: (2 + 1/n)/(1 − 3/n) → 2.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính lim (3n² + n)/(2n² − 1) (nhập a/b):",
+      "expr": "3/2",
+      "answer": "3/2",
+      "explain": "Chia cho n²: giới hạn 3/2.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính lim (n + 1)/(n² + 2):",
+      "expr": "0",
+      "answer": "0",
+      "explain": "Bậc tử nhỏ hơn bậc mẫu nên giới hạn 0.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính lim (4n³ − 2n)/(2n³ + 5):",
+      "expr": "4/2",
+      "answer": "2",
+      "explain": "Hệ số cao nhất: 4/2 = 2.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tổng 1 + 1/2 + 1/4 + … bằng:",
+      "expr": "(1)/(1-1/2)",
+      "answer": "2",
+      "explain": "u₁ = 1, q = 1/2: S = 2.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tổng 1 + 1/3 + 1/9 + … bằng (nhập a/b):",
+      "expr": "(1)/(1-1/3)",
+      "answer": "3/2",
+      "explain": "S = 1/(2/3) = 3/2.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính lim (√(n² + n) − n):",
+      "expr": "1/2",
+      "answer": "1/2",
+      "explain": "Nhân liên hợp: n/(√(n² + n) + n) → 1/2.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính lim (2ⁿ + 1)/(3·2ⁿ) (nhập a/b):",
+      "expr": "1/3",
+      "answer": "1/3",
+      "explain": "Chia cho 2ⁿ: (1 + 2⁻ⁿ)/3 → 1/3.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính lim (3ⁿ + 2ⁿ)/(3ⁿ − 1):",
+      "expr": "1",
+      "answer": "1",
+      "explain": "Chia cho 3ⁿ: (1 + (2/3)ⁿ)/(1 − 3⁻ⁿ) → 1.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Viết 0,(3) thành phân số tối giản (nhập a/b):",
+      "expr": "(3/10)/(1-1/10)",
+      "answer": "1/3",
+      "explain": "u₁ = 3/10, q = 1/10, S = 1/3.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính tổng 3 − 1 + 1/3 − 1/9 + … (nhập a/b):",
+      "expr": "(3)/(1+1/3)",
+      "answer": "9/4",
+      "explain": "u₁ = 3, q = −1/3: S = 3/(4/3) = 9/4.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thả quả bóng từ độ cao 8 m, mỗi lần nảy lên một nửa độ cao trước. Tổng quãng đường bóng đi (m) là:",
+      "expr": "8+2*((4)/(1-1/2))",
+      "answer": "24",
+      "explain": "Rơi 8 m, sau đó mỗi lần nảy gồm lên và xuống: 8 + 2·(4 + 2 + 1 + …) = 8 + 2·8 = 24.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tính lim n(√(n² + 1) − n) (nhập a/b):",
+      "expr": "1/2",
+      "answer": "1/2",
+      "explain": "n/(√(n² + 1) + n) → 1/2.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tổng S = u₁/(1 − q) của cấp số nhân chỉ có nghĩa khi:",
+      "choices": [
+        "|q| < 1",
+        "q > 1",
+        "q = 1",
+        "u₁ = 0"
+      ],
+      "answer": 0,
+      "explain": "Chỉ khi |q| < 1 thì qⁿ → 0 và chuỗi hội tụ.",
+      "wrong_explain": {
+        "1": "q > 1 làm tổng tăng không giới hạn.",
+        "2": "q = 1 mẫu bằng 0.",
+        "3": "u₁ = 0 chỉ là trường hợp tầm thường."
+      },
+      "id": "q18"
+    }
+  ]
+}

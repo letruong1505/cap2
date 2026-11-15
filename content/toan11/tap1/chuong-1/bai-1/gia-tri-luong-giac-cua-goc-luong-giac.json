@@ -1,0 +1,360 @@
+{
+  "id": "bai-1",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Toán 11, tập 1",
+  "chapter": "Chương I. Hàm số lượng giác và phương trình lượng giác",
+  "lesson": "Bài 1. Giá trị lượng giác của góc lượng giác",
+  "section": "",
+  "bookPage": 5,
+  "requirements": [
+    "Đổi số đo giữa độ và rađian; tính độ dài cung tròn.",
+    "Tính các giá trị lượng giác của một góc từ giá trị đã biết, dùng đường tròn lượng giác và công thức góc liên quan."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Góc lượng giác (Ou, Ov) có số đo α + k·360° (hay α + k·2π, k ∈ ℤ). Đơn vị rađian: π rad = 180°, 1 rad = (180/π)° ≈ 57°17′45″. Muốn đổi a° sang rađian: α = a·π/180; đổi ngược: a = α·180/π."
+    },
+    {
+      "type": "formula",
+      "content": "Độ dài cung: l = R·α (α tính bằng rađian, R là bán kính)."
+    },
+    {
+      "type": "text",
+      "content": "Đường tròn lượng giác là đường tròn tâm O bán kính 1, chiều dương ngược chiều kim đồng hồ, điểm gốc A(1; 0). Góc lượng giác α có điểm biểu diễn M(cos α; sin α). Khi đó cos α là hoành độ, sin α là tung độ của M; tan α = sin α / cos α (cos α ≠ 0), cot α = cos α / sin α (sin α ≠ 0)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b1-duong-tron-luong-giac.svg",
+      "caption": "Đường tròn lượng giác và điểm M(cos α; sin α)"
+    },
+    {
+      "type": "formula",
+      "content": "sin²α + cos²α = 1;   1 + tan²α = 1/cos²α;   1 + cot²α = 1/sin²α;   tan α · cot α = 1."
+    },
+    {
+      "type": "formula",
+      "content": "Góc đối: cos(−α) = cos α, sin(−α) = −sin α.   Góc bù: sin(π − α) = sin α, cos(π − α) = −cos α.   Hơn kém π: sin(α + π) = −sin α, cos(α + π) = −cos α, tan(α + π) = tan α.   Phụ nhau: sin(π/2 − α) = cos α, cos(π/2 − α) = sin α."
+    },
+    {
+      "type": "text",
+      "content": "Giá trị đặc biệt: sin 30° = 1/2, cos 60° = 1/2; sin 45° = cos 45° = √2/2; sin 60° = cos 30° = √3/2; tan 45° = 1; tan 30° = √3/3; tan 60° = √3."
+    },
+    {
+      "type": "method",
+      "title": "Đổi độ – rađian và tính độ dài cung",
+      "when": "Đề cho số đo bằng độ hoặc rađian cần đổi qua lại, hoặc hỏi độ dài cung, quãng đường bánh xe lăn, số vòng quay.",
+      "steps": [
+        "Nhớ π rad = 180°.",
+        "Độ → rađian: nhân với π/180; rađian → độ: nhân với 180/π.",
+        "Độ dài cung l = R·α với α tính bằng rađian (đổi α về rađian trước).",
+        "Quãng đường bánh xe = số vòng × chu vi 2πR."
+      ],
+      "notes": [
+        "Tuyệt đối không thay α độ vào công thức l = Rα.",
+        "Giữ kết quả dạng kπ cho chính xác, chỉ lấy số thập phân khi đề yêu cầu."
+      ],
+      "sample": {
+        "problem": "Cung tròn bán kính 20 cm có số đo 135°. Tính độ dài cung.",
+        "steps": [
+          "135° = 135·π/180 = 3π/4 rad.",
+          "l = R·α = 20·3π/4 = 15π cm ≈ 47,1 cm."
+        ],
+        "answer": "15π cm"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tính các giá trị lượng giác khi biết một giá trị",
+      "when": "Cho sin α (hoặc cos, tan, cot) và khoảng chứa α, yêu cầu tính các giá trị còn lại.",
+      "steps": [
+        "Xác định góc phần tư của α từ khoảng đã cho để biết dấu của sin, cos, tan, cot.",
+        "Dùng sin²α + cos²α = 1 để tính giá trị còn thiếu (lấy căn rồi chọn dấu).",
+        "Tính tan α = sin α / cos α và cot α = 1 / tan α.",
+        "Kiểm tra lại bằng 1 + tan²α = 1/cos²α."
+      ],
+      "notes": [
+        "Bước chọn dấu là chỗ dễ sai nhất: luôn vẽ đường tròn lượng giác nháp.",
+        "Nếu đề chỉ cho tan α, dùng 1 + tan²α = 1/cos²α để tìm cos²α trước."
+      ],
+      "sample": {
+        "problem": "Cho sin α = 3/5 với π/2 < α < π. Tính cos α và tan α.",
+        "steps": [
+          "α thuộc góc phần tư II nên cos α < 0.",
+          "cos²α = 1 − 9/25 = 16/25 nên cos α = −4/5.",
+          "tan α = (3/5)/(−4/5) = −3/4."
+        ],
+        "answer": "cos α = −4/5; tan α = −3/4"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Rút gọn, tính giá trị biểu thức nhờ góc liên quan",
+      "when": "Biểu thức chứa sin, cos của các góc −α, π − α, π + α, π/2 − α, hoặc các góc lớn hơn 2π.",
+      "steps": [
+        "Đưa mỗi góc về dạng một góc nhọn cộng/trừ bội của π/2.",
+        "Áp dụng công thức góc đối, bù, hơn kém π, phụ nhau để đổi sang giá trị lượng giác của góc nhọn.",
+        "Thay giá trị đặc biệt rồi rút gọn.",
+        "Kiểm tra dấu theo góc phần tư của góc ban đầu."
+      ],
+      "notes": [
+        "Có thể bỏ bớt k·2π (k·360°) vì giá trị không đổi.",
+        "sin 150° = sin(180° − 30°) = sin 30° = 1/2."
+      ],
+      "sample": {
+        "problem": "Tính A = sin 150° + cos 120° + tan 135°.",
+        "steps": [
+          "sin 150° = 1/2; cos 120° = −1/2; tan 135° = −1.",
+          "A = 1/2 − 1/2 − 1 = −1."
+        ],
+        "answer": "−1"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đổi 135° sang rađian. Kết quả có dạng kπ, tìm k.",
+      "steps": [
+        "135° = 135·π/180 = 3π/4.",
+        "Vậy k = 3/4."
+      ],
+      "expr": "135/180",
+      "answer": "3/4"
+    },
+    {
+      "problem": "Cung tròn bán kính 20 cm có số đo 3π/4 rad. Độ dài cung là kπ cm; tìm k.",
+      "steps": [
+        "l = R·α = 20·3π/4.",
+        "= 15π cm; k = 15."
+      ],
+      "expr": "20*3/4",
+      "answer": "15"
+    },
+    {
+      "problem": "Cho sin α = 3/5 và π/2 < α < π. Tính tan α.",
+      "steps": [
+        "Góc phần tư II: cos α = −4/5.",
+        "tan α = (3/5) : (−4/5) = −3/4."
+      ],
+      "expr": "(3/5)/(-4/5)",
+      "answer": "-3/4"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Đổi 90° sang rađian: số đo bằng kπ. Giá trị của k là:",
+      "expr": "90/180",
+      "answer": "1/2",
+      "explain": "90° = 90π/180 = π/2 nên k = 1/2.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Đổi 150° sang rađian: số đo bằng kπ. Giá trị của k là:",
+      "expr": "150/180",
+      "answer": "5/6",
+      "explain": "150π/180 = 5π/6 nên k = 5/6.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Đổi 3π/4 rad sang độ. Kết quả (độ) là:",
+      "expr": "3/4*180",
+      "answer": "135",
+      "explain": "3/4 · 180° = 135°.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Đổi 5π/6 rad sang độ. Kết quả (độ) là:",
+      "expr": "5/6*180",
+      "answer": "150",
+      "explain": "5/6 · 180° = 150°.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điểm M trên đường tròn lượng giác biểu diễn góc α có toạ độ là:",
+      "choices": [
+        "(cos α; sin α)",
+        "(sin α; cos α)",
+        "(tan α; cot α)",
+        "(cos α; tan α)"
+      ],
+      "answer": 0,
+      "explain": "Hoành độ của M là cos α, tung độ là sin α.",
+      "wrong_explain": {
+        "1": "Đảo thứ tự: hoành độ là cos α, không phải sin α.",
+        "2": "tan, cot không phải toạ độ của M.",
+        "3": "Tung độ của M là sin α, không phải tan α."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Giá trị của sin 30° là:",
+      "expr": "1/2",
+      "answer": "1/2",
+      "explain": "sin 30° = 1/2.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cung tròn bán kính 12 cm có số đo π/3 rad. Độ dài cung bằng kπ cm; k là:",
+      "expr": "12/3",
+      "answer": "4",
+      "explain": "l = 12·π/3 = 4π cm nên k = 4.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cung có số đo 2 rad trên đường tròn bán kính 7,5 cm có độ dài (cm) là:",
+      "expr": "7.5*2",
+      "answer": "15",
+      "explain": "l = R·α = 7,5 · 2 = 15 cm.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho sin α = 3/5 và π/2 < α < π. Giá trị cos α là:",
+      "expr": "-4/5",
+      "answer": "-4/5",
+      "explain": "α ở góc phần tư II nên cos α < 0; cos²α = 16/25 nên cos α = −4/5.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho cos α = 5/13 và 0 < α < π/2. Giá trị tan α là:",
+      "expr": "12/5",
+      "answer": "12/5",
+      "explain": "sin α = 12/13 (> 0), tan α = (12/13)/(5/13) = 12/5.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Với π < α < 3π/2, dấu của sin α và cos α là:",
+      "choices": [
+        "sin α < 0, cos α < 0",
+        "sin α > 0, cos α < 0",
+        "sin α < 0, cos α > 0",
+        "sin α > 0, cos α > 0"
+      ],
+      "answer": 0,
+      "explain": "Góc phần tư III: hoành độ và tung độ đều âm.",
+      "wrong_explain": {
+        "1": "Góc phần tư II mới có sin > 0, cos < 0.",
+        "2": "Góc phần tư IV mới có sin < 0, cos > 0.",
+        "3": "Góc phần tư I mới có cả hai dương."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho tan α = 2. Giá trị của 1/cos²α là:",
+      "expr": "1+2*2",
+      "answer": "5",
+      "explain": "1/cos²α = 1 + tan²α = 1 + 4 = 5.",
+      "id": "q12"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giá trị của sin 150° là:",
+      "expr": "1/2",
+      "answer": "1/2",
+      "explain": "sin 150° = sin(180° − 30°) = sin 30° = 1/2.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho cos α = −3/5 và π < α < 3π/2. Giá trị cot α là:",
+      "expr": "(-3/5)/(-4/5)",
+      "answer": "3/4",
+      "explain": "sin α = −4/5 (góc phần tư III). cot α = cos/sin = (−3/5)/(−4/5) = 3/4.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính giá trị của sin²20° + cos²20° + tan 45°:",
+      "expr": "1+1",
+      "answer": "2",
+      "explain": "sin²20° + cos²20° = 1 và tan 45° = 1 nên tổng bằng 2.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bánh xe bán kính 30 cm lăn được 2 vòng. Quãng đường đi được bằng kπ cm; k là:",
+      "expr": "2*2*30",
+      "answer": "120",
+      "explain": "Mỗi vòng đi 2π·30 = 60π cm; 2 vòng là 120π cm.",
+      "id": "q16"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Huyết áp tâm trương B(t) = 80 + 7·sin(πt/12) (mmHg). Tại t = 6 giờ, B bằng:",
+      "expr": "80+7*1",
+      "answer": "87",
+      "explain": "sin(π·6/12) = sin(π/2) = 1 nên B = 80 + 7 = 87 mmHg.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho tan α = 3. Giá trị của (sin α + cos α)/(sin α − cos α) là:",
+      "expr": "(3+1)/(3-1)",
+      "answer": "2",
+      "explain": "Chia tử và mẫu cho cos α: (tan α + 1)/(tan α − 1) = 4/2 = 2.",
+      "id": "q18"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho sin α + cos α = 1/2. Giá trị của sin α·cos α là:",
+      "expr": "((1/2)*(1/2)-1)/2",
+      "answer": "-3/8",
+      "explain": "Bình phương: 1 + 2 sin α cos α = 1/4 nên sin α cos α = (1/4 − 1)/2 = −3/8.",
+      "id": "q19"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khẳng định nào đúng với mọi α?",
+      "choices": [
+        "sin(α + π) = −sin α",
+        "cos(α + π) = cos α",
+        "sin(π − α) = −sin α",
+        "cos(−α) = −cos α"
+      ],
+      "answer": 0,
+      "explain": "Hơn kém π: sin đổi dấu.",
+      "wrong_explain": {
+        "1": "Hơn kém π thì cos cũng đổi dấu: cos(α + π) = −cos α.",
+        "2": "Góc bù: sin(π − α) = sin α.",
+        "3": "Côsin là hàm chẵn: cos(−α) = cos α."
+      },
+      "id": "q20"
+    }
+  ]
+}

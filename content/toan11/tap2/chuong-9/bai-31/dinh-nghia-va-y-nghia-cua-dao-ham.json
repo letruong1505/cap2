@@ -1,0 +1,348 @@
+{
+  "id": "bai-31",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Toán 11, tập 2",
+  "chapter": "Chương IX. Đạo hàm",
+  "lesson": "Bài 31. Định nghĩa và ý nghĩa của đạo hàm",
+  "section": "",
+  "bookPage": 81,
+  "requirements": [
+    "Hiểu định nghĩa đạo hàm tại một điểm và ý nghĩa hình học, ý nghĩa vật lí.",
+    "Tính đạo hàm bằng định nghĩa, viết phương trình tiếp tuyến và tính vận tốc tức thời."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cho hàm số y = f(x) xác định trên khoảng (a; b) và x₀ ∈ (a; b). Giới hạn hữu hạn (nếu có) của f(x) − f(x₀) trên x − x₀ khi x → x₀ gọi là đạo hàm của f tại x₀, kí hiệu f′(x₀) hay y′(x₀)."
+    },
+    {
+      "type": "formula",
+      "content": "f′(x₀) = lim_{x→x₀} [f(x) − f(x₀)]/(x − x₀).   Đặt Δx = x − x₀: f′(x₀) = lim_{Δx→0} [f(x₀ + Δx) − f(x₀)]/Δx."
+    },
+    {
+      "type": "text",
+      "content": "Hàm số có đạo hàm tại x₀ thì liên tục tại x₀ (ngược lại không đúng, ví dụ y = |x| tại 0). Hàm có đạo hàm tại mọi điểm của khoảng (a; b) gọi là có đạo hàm trên (a; b); khi đó hàm f′(x) gọi là đạo hàm của f."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b31-tiep-tuyen.svg",
+      "caption": "Đạo hàm f′(x₀) là hệ số góc của tiếp tuyến của đồ thị tại M(x₀; f(x₀)). Với y = x² tại x₀ = 1: tiếp tuyến y = 2x − 1"
+    },
+    {
+      "type": "formula",
+      "content": "Ý nghĩa hình học: f′(x₀) là hệ số góc của tiếp tuyến tại M(x₀; f(x₀)). Phương trình tiếp tuyến: y = f′(x₀)(x − x₀) + f(x₀)."
+    },
+    {
+      "type": "formula",
+      "content": "Ý nghĩa vật lí: vận tốc tức thời của chuyển động s = s(t) tại t₀ là v(t₀) = s′(t₀). Cường độ dòng điện tức thời I(t₀) = Q′(t₀). Đạo hàm đo tốc độ biến thiên tức thời của đại lượng."
+    },
+    {
+      "type": "method",
+      "title": "Tính đạo hàm tại một điểm bằng định nghĩa",
+      "when": "Đề yêu cầu “dùng định nghĩa” tính f′(x₀), hoặc tính giới hạn có dạng [f(x) − f(x₀)]/(x − x₀).",
+      "steps": [
+        "Tính f(x₀).",
+        "Lập tỉ số [f(x) − f(x₀)]/(x − x₀) và rút gọn (phân tích nhân tử).",
+        "Tìm giới hạn khi x → x₀.",
+        "Kết luận f′(x₀) bằng giới hạn đó."
+      ],
+      "notes": [
+        "Dạng 0/0 thường rút gọn được nhân tử (x − x₀).",
+        "Tính giới hạn một bên nếu hàm cho bởi nhiều nhánh."
+      ],
+      "sample": {
+        "problem": "Tính f′(2) của f(x) = x² bằng định nghĩa.",
+        "steps": [
+          "(x² − 4)/(x − 2) = x + 2.",
+          "Giới hạn khi x → 2 bằng 4."
+        ],
+        "answer": "4"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Viết phương trình tiếp tuyến",
+      "when": "Cho đồ thị y = f(x) và điểm M(x₀; y₀) hoặc hệ số góc hoặc tiếp tuyến song song một đường.",
+      "steps": [
+        "Tính f′(x) và hệ số góc k = f′(x₀).",
+        "Tại điểm M(x₀; y₀): y = k(x − x₀) + y₀.",
+        "Biết hệ số góc k (hoặc song song y = kx + m): giải f′(x₀) = k tìm x₀ rồi tính y₀.",
+        "Rút gọn và viết dạng y = kx + m."
+      ],
+      "notes": [
+        "Tiếp tuyến song song ⇒ cùng hệ số góc; vuông góc ⇒ tích hệ số góc bằng −1.",
+        "Kiểm tra điểm M thuộc đồ thị."
+      ],
+      "sample": {
+        "problem": "Viết phương trình tiếp tuyến của y = x² tại M(1; 1).",
+        "steps": [
+          "f′(x) = 2x nên k = f′(1) = 2.",
+          "y = 2(x − 1) + 1 = 2x − 1."
+        ],
+        "answer": "y = 2x − 1"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Ứng dụng vật lí: vận tốc, cường độ, tốc độ thay đổi",
+      "when": "Cho s(t), Q(t), N(t) và hỏi giá trị tức thời của vận tốc, cường độ dòng điện, tốc độ tăng.",
+      "steps": [
+        "Xác định hàm số theo thời gian: s(t), Q(t), …",
+        "Đạo hàm theo t: v(t) = s′(t), I(t) = Q′(t).",
+        "Thay giá trị t₀ cần tính.",
+        "Ghi đơn vị đúng (m/s, A, …)."
+      ],
+      "notes": [
+        "Vận tốc trung bình = Δs/Δt, vận tốc tức thời = s′(t₀).",
+        "Dấu của v cho biết chiều chuyển động."
+      ],
+      "sample": {
+        "problem": "Chất điểm có s(t) = t² (m). Tính vận tốc tại t = 3 s.",
+        "steps": [
+          "v(t) = s′(t) = 2t.",
+          "v(3) = 6 m/s."
+        ],
+        "answer": "6 m/s"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dùng định nghĩa, tính f′(2) của f(x) = x².",
+      "steps": [
+        "(x² − 4)/(x − 2) = x + 2.",
+        "Khi x → 2: 4."
+      ],
+      "expr": "2+2",
+      "answer": "4"
+    },
+    {
+      "problem": "Viết tiếp tuyến của y = x² tại M(1; 1): y = kx + m. Tính m.",
+      "steps": [
+        "k = 2.",
+        "y = 2(x − 1) + 1 = 2x − 1 nên m = −1."
+      ],
+      "expr": "1-2*1",
+      "answer": "-1"
+    },
+    {
+      "problem": "Chất điểm s(t) = 5t² + 2t (m). Vận tốc tại t = 2 s (m/s)?",
+      "steps": [
+        "v = s′ = 10t + 2.",
+        "v(2) = 22."
+      ],
+      "expr": "10*2+2",
+      "answer": "22"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "f(x) = 3x + 2. Giá trị f′(x₀) bằng:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Hệ số góc của đường thẳng.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Dùng định nghĩa: f(x) = x². f′(3) bằng:",
+      "expr": "2*3",
+      "answer": "6",
+      "explain": "lim (x² − 9)/(x − 3) = x + 3 → 6.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hệ số góc của tiếp tuyến của y = x² tại x = 2 là:",
+      "expr": "2*2",
+      "answer": "4",
+      "explain": "k = f′(2) = 4.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ý nghĩa hình học của f′(x₀) là:",
+      "choices": [
+        "hệ số góc của tiếp tuyến tại (x₀; f(x₀))",
+        "tung độ của điểm (x₀; f(x₀))",
+        "hoành độ của điểm cực trị",
+        "diện tích dưới đồ thị"
+      ],
+      "answer": 0,
+      "explain": "Đạo hàm là hệ số góc của tiếp tuyến.",
+      "wrong_explain": {
+        "1": "Tung độ là f(x₀), không phải f′(x₀).",
+        "2": "Điểm cực trị cần f′ = 0.",
+        "3": "Diện tích là tích phân."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phương trình tiếp tuyến của đồ thị y = f(x) tại M(x₀; y₀) là:",
+      "choices": [
+        "y = f′(x₀)(x − x₀) + y₀",
+        "y = f(x₀)(x − x₀) + f′(x₀)",
+        "y = f′(x₀)x",
+        "y = f(x) − f′(x)"
+      ],
+      "answer": 0,
+      "explain": "Đường thẳng qua M với hệ số góc f′(x₀).",
+      "wrong_explain": {
+        "1": "Đã đảo f và f′.",
+        "2": "Thiếu y₀.",
+        "3": "Không phải phương trình tiếp tuyến."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Dùng định nghĩa: f(x) = x³. f′(1) bằng:",
+      "expr": "3*1*1",
+      "answer": "3",
+      "explain": "f′(x) = 3x² nên f′(1) = 3.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "f(x) = x² − 3x. f′(2) bằng:",
+      "expr": "2*2-3",
+      "answer": "1",
+      "explain": "f′(x) = 2x − 3: f′(2) = 1.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tiếp tuyến của y = x² tại M(1; 1) là y = 2x + m. Giá trị m:",
+      "expr": "1-2*1",
+      "answer": "-1",
+      "explain": "m = 1 − 2 = −1.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tiếp tuyến của y = x³ tại M(1; 1) là y = 3x + m. Giá trị m:",
+      "expr": "1-3*1",
+      "answer": "-2",
+      "explain": "m = 1 − 3 = −2.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chất điểm có s(t) = t² (m). Vận tốc tại t = 3 s (m/s):",
+      "expr": "2*3",
+      "answer": "6",
+      "explain": "v = 2t: 6 m/s.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật rơi tự do s = 5t² (m). Vận tốc sau 3 giây (m/s):",
+      "expr": "10*3",
+      "answer": "30",
+      "explain": "v = 10t: 30 m/s.",
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nếu hàm f có đạo hàm tại x₀ thì:",
+      "choices": [
+        "f liên tục tại x₀",
+        "f không liên tục tại x₀",
+        "f(x₀) = 0",
+        "f′(x₀) = 0"
+      ],
+      "answer": 0,
+      "explain": "Có đạo hàm suy ra liên tục.",
+      "wrong_explain": {
+        "1": "Có đạo hàm thì liên tục.",
+        "2": "Không có giá trị bằng 0 bắt buộc.",
+        "3": "Không bắt buộc bằng 0."
+      },
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chất điểm s(t) = 5t² + 2t (m). Vận tốc tại t = 2 s (m/s):",
+      "expr": "10*2+2",
+      "answer": "22",
+      "explain": "v = 10t + 2: 22.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Điện lượng Q(t) = t³ + 2t. Cường độ dòng điện tại t = 1 (A):",
+      "expr": "3*1*1+2",
+      "answer": "5",
+      "explain": "I = Q′ = 3t² + 2: 5 A.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tiếp tuyến của y = x² song song với y = 4x + 1 tại điểm có hoành độ x₀ bằng:",
+      "expr": "4/2",
+      "answer": "2",
+      "explain": "2x₀ = 4 nên x₀ = 2.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dùng định nghĩa: lim_{x→2} (x² − 4)/(x − 2) bằng:",
+      "expr": "2+2",
+      "answer": "4",
+      "explain": "Giới hạn đó là f′(2) với f(x) = x²: 4.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tiếp tuyến của y = x² tại x = 4 cắt trục hoành tại điểm có hoành độ:",
+      "expr": "4/2",
+      "answer": "2",
+      "explain": "Tiếp tuyến y = 8x − 16, cắt Ox tại x = 2.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm y = |x| tại x = 0:",
+      "choices": [
+        "liên tục nhưng không có đạo hàm",
+        "có đạo hàm bằng 0",
+        "không liên tục",
+        "có đạo hàm bằng 1"
+      ],
+      "answer": 0,
+      "explain": "Đạo hàm bên trái −1, bên phải 1 nên không có đạo hàm.",
+      "wrong_explain": {
+        "1": "Hai đạo hàm một bên khác nhau.",
+        "2": "Hàm liên tục tại 0.",
+        "3": "Không phải 1."
+      },
+      "id": "q18"
+    }
+  ]
+}

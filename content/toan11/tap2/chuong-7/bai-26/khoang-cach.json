@@ -1,0 +1,338 @@
+{
+  "id": "bai-26",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Toán 11, tập 2",
+  "chapter": "Chương VII. Quan hệ vuông góc trong không gian",
+  "lesson": "Bài 26. Khoảng cách",
+  "section": "",
+  "bookPage": 54,
+  "requirements": [
+    "Xác định và tính khoảng cách từ một điểm đến đường thẳng, mặt phẳng; giữa hai đường thẳng song song, hai mặt phẳng song song.",
+    "Tính khoảng cách giữa đường thẳng và mặt phẳng song song, và khoảng cách giữa hai đường thẳng chéo nhau trong các trường hợp đơn giản."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khoảng cách từ điểm M đến đường thẳng a là độ dài đoạn MH, với H là hình chiếu vuông góc của M trên a. Khoảng cách từ điểm M đến mặt phẳng (P) là độ dài MH, H là hình chiếu vuông góc của M lên (P). Kí hiệu d(M, a), d(M, (P))."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b26-khoang-cach.svg",
+      "caption": "Khoảng cách từ điểm M đến mặt phẳng (P) bằng độ dài đoạn vuông góc MH"
+    },
+    {
+      "type": "text",
+      "content": "Khoảng cách giữa đường thẳng a và mặt phẳng (P) song song với nó là khoảng cách từ một điểm bất kì của a đến (P). Khoảng cách giữa hai mặt phẳng song song là khoảng cách từ một điểm bất kì của mặt phẳng này đến mặt phẳng kia. Khoảng cách giữa hai đường thẳng chéo nhau là độ dài đoạn vuông góc chung của chúng."
+    },
+    {
+      "type": "formula",
+      "content": "Tam giác vuông tại A, đường cao AH: AH = AB·AC/BC.   Hình chữ nhật AB = a, AD = b: d(A, BD) = ab/√(a² + b²)."
+    },
+    {
+      "type": "method",
+      "title": "Tính khoảng cách từ điểm đến mặt phẳng",
+      "when": "Cần d(A, (SBC)), d(S, (ABCD)), d(A′, (ABCD)) …",
+      "steps": [
+        "Nếu điểm nằm trên đường vuông góc với mặt phẳng thì khoảng cách là độ dài đoạn đó (ví dụ SA ⟂ (ABCD) ⇒ d(S, (ABCD)) = SA).",
+        "Ngược lại, dựng mặt phẳng phụ chứa điểm và vuông góc mặt phẳng đã cho; hạ đường vuông góc xuống giao tuyến.",
+        "Hoặc quy về điểm khác bằng đường thẳng song song (d(M, (P)) bằng nhau với mọi M ∈ a ∥ (P)).",
+        "Tính độ dài đoạn vuông góc bằng hệ thức lượng."
+      ],
+      "notes": [
+        "Có thể dùng công thức thể tích: d = 3V/S.",
+        "Chú ý điểm ở các phía khác nhau."
+      ],
+      "sample": {
+        "problem": "Hình lập phương cạnh 4. Tính d(A′, (ABCD)).",
+        "steps": [
+          "AA′ ⟂ (ABCD).",
+          "d = AA′ = 4."
+        ],
+        "answer": "4"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Khoảng cách từ điểm đến đường thẳng",
+      "when": "Cần d(A, BD), d(S, BC)… trong mặt phẳng hoặc không gian.",
+      "steps": [
+        "Xác định chân đường vuông góc H từ điểm đến đường thẳng.",
+        "Nếu trong tam giác vuông tại A: AH = AB·AC/BC.",
+        "Trong không gian: hạ đường vuông góc xuống đáy rồi dùng định lí ba đường vuông góc.",
+        "Tính bằng hệ thức lượng."
+      ],
+      "notes": [
+        "Trong hình chữ nhật AB = a, AD = b: d(A, BD) = ab/BD.",
+        "Kiểm tra Pythagore."
+      ],
+      "sample": {
+        "problem": "Tam giác vuông tại A, AB = 3, AC = 4. Tính d(A, BC).",
+        "steps": [
+          "BC = 5.",
+          "AH = 3·4/5 = 12/5."
+        ],
+        "answer": "12/5"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Khoảng cách giữa các yếu tố song song và đường chéo nhau",
+      "when": "Hình hộp, lăng trụ, hình chóp có đường thẳng song song mặt phẳng; cạnh chéo nhau vuông góc với một trong hai.",
+      "steps": [
+        "Giữa hai mặt phẳng song song: lấy một điểm trên mặt này, tính khoảng cách đến mặt kia.",
+        "Đường thẳng song song mặt phẳng: tính từ điểm bất kì trên đường.",
+        "Hai đường chéo nhau: tìm mặt phẳng chứa đường này, song song đường kia, rồi quy về khoảng cách đường–mặt.",
+        "Với hình lập phương, khoảng cách giữa hai cạnh chéo nhau là độ dài cạnh."
+      ],
+      "notes": [
+        "Hai đáy của lăng trụ song song: khoảng cách là chiều cao.",
+        "Có thể dùng công thức diện tích/thể tích."
+      ],
+      "sample": {
+        "problem": "Hình lập phương cạnh 7. Khoảng cách giữa AA′ và BC.",
+        "steps": [
+          "AB ⟂ AA′ và AB ⟂ BC.",
+          "AB là đoạn vuông góc chung nên khoảng cách bằng AB = 7."
+        ],
+        "answer": "7"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hình lập phương cạnh 4. Tính d(A′, (ABCD)).",
+      "steps": [
+        "AA′ ⟂ (ABCD).",
+        "d = 4."
+      ],
+      "expr": "4",
+      "answer": "4"
+    },
+    {
+      "problem": "Tam giác vuông tại A, AB = 3, AC = 4. Tính d(A, BC).",
+      "steps": [
+        "BC = 5.",
+        "AH = AB·AC/BC = 12/5."
+      ],
+      "expr": "3*4/5",
+      "answer": "12/5"
+    },
+    {
+      "problem": "Hình chữ nhật AB = 6, AD = 8. Tính d(A, BD).",
+      "steps": [
+        "BD = 10.",
+        "d = 6·8/10 = 24/5."
+      ],
+      "expr": "6*8/10",
+      "answer": "24/5"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hình lập phương cạnh 4. Khoảng cách từ A′ đến mặt phẳng (ABCD) là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "AA′ ⟂ (ABCD) nên d = 4.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hai mặt phẳng (ABCD) và (A′B′C′D′) của hình lập phương cạnh 4 cách nhau:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Bằng độ dài cạnh bên.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "S.ABC, SA ⟂ (ABC), SA = 6. Khoảng cách từ S đến (ABC) là:",
+      "expr": "6",
+      "answer": "6",
+      "explain": "d = SA = 6.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khoảng cách từ M đến mặt phẳng (P) là:",
+      "choices": [
+        "độ dài đoạn MH, H là hình chiếu vuông góc của M lên (P)",
+        "độ dài đoạn MA, A là điểm bất kì trên (P)",
+        "độ dài đoạn nhỏ nhất qua M cắt (P) tại góc 45°",
+        "góc giữa MH và (P)"
+      ],
+      "answer": 0,
+      "explain": "Đó là định nghĩa khoảng cách từ điểm đến mặt phẳng.",
+      "wrong_explain": {
+        "1": "Đoạn MA tuỳ ý thường dài hơn khoảng cách.",
+        "2": "Khoảng cách không liên quan góc 45°.",
+        "3": "Khoảng cách là độ dài, không phải góc."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác vuông tại A, AB = 3, AC = 4. Khoảng cách từ A đến BC (nhập a/b):",
+      "expr": "3*4/5",
+      "answer": "12/5",
+      "explain": "AH = 12/5.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chữ nhật AB = 6, AD = 8. Khoảng cách từ A đến BD (nhập a/b):",
+      "expr": "6*8/10",
+      "answer": "24/5",
+      "explain": "BD = 10, d = 48/10 = 24/5.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình vuông cạnh 6, tâm O. Khoảng cách từ O đến cạnh AB là:",
+      "expr": "6/2",
+      "answer": "3",
+      "explain": "d = 3.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hộp chữ nhật 3×4×12. Khoảng cách giữa hai mặt đáy lớn (đáy 3×4) là:",
+      "expr": "12",
+      "answer": "12",
+      "explain": "Bằng chiều cao 12.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khoảng cách giữa AA′ và BC trong hình lập phương cạnh 7 là:",
+      "expr": "7",
+      "answer": "7",
+      "explain": "AB là đoạn vuông góc chung, bằng 7.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác vuông tại B, BA = 5, BC = 12. Khoảng cách từ B đến AC (nhập a/b):",
+      "expr": "5*12/13",
+      "answer": "60/13",
+      "explain": "AC = 13; BH = 60/13.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nếu a ∥ (P), thì khoảng cách từ mọi điểm của a đến (P):",
+      "choices": [
+        "bằng nhau",
+        "tăng dần",
+        "giảm dần",
+        "bằng 0"
+      ],
+      "answer": 0,
+      "explain": "Khoảng cách từ đường thẳng song song đến mặt phẳng là không đổi.",
+      "wrong_explain": {
+        "1": "Không đổi.",
+        "2": "Không đổi.",
+        "3": "Bằng 0 chỉ khi đường nằm trong mặt."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "S.ABC có SA ⟂ (ABC), SA = a, ΔABC vuông tại B, AB = 3, BC = 4. Khoảng cách từ B đến AC (nhập a/b):",
+      "expr": "3*4/5",
+      "answer": "12/5",
+      "explain": "BH = AB·BC/AC = 12/5.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lăng trụ đứng đáy ABC vuông tại A, AB = 3, AC = 4, chiều cao 10. Khoảng cách giữa hai đáy:",
+      "expr": "10",
+      "answer": "10",
+      "explain": "Bằng chiều cao 10.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình chữ nhật 6×8, khoảng cách từ A đến BD nhân 5 bằng:",
+      "expr": "6*8/10*5",
+      "answer": "24",
+      "explain": "d = 24/5; nhân 5: 24.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình hộp chữ nhật 3×4×12. Đường chéo mặt đáy có độ dài (đáy 3×4):",
+      "expr": "5",
+      "answer": "5",
+      "explain": "√(9 + 16) = 5.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thể tích hình chóp 20, diện tích đáy 12. Chiều cao (khoảng cách từ đỉnh đến đáy) là (nhập a/b):",
+      "expr": "3*20/12",
+      "answer": "5",
+      "explain": "V = 1/3·S·h nên h = 3V/S = 5.",
+      "id": "q16"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khoảng cách từ O (tâm hình vuông ABCD cạnh 8) đến cạnh BC là:",
+      "expr": "8/2",
+      "answer": "4",
+      "explain": "d = 4.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Chóp S.ABCD có SA ⟂ (ABCD), SA = 12, ABCD là hình chữ nhật AB = 3, AD = 4. Khoảng cách từ A đến BD (nhập a/b):",
+      "expr": "3*4/5",
+      "answer": "12/5",
+      "explain": "BD = 5; d = 12/5.",
+      "id": "q18"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khoảng cách giữa hai đường thẳng chéo nhau là:",
+      "choices": [
+        "độ dài đoạn vuông góc chung",
+        "độ dài đoạn nối hai điểm tuỳ ý",
+        "góc giữa hai đường",
+        "bằng 0"
+      ],
+      "answer": 0,
+      "explain": "Đó là định nghĩa.",
+      "wrong_explain": {
+        "1": "Đoạn tuỳ ý dài hơn khoảng cách.",
+        "2": "Khoảng cách là độ dài.",
+        "3": "Chéo nhau nên khoảng cách dương."
+      },
+      "id": "q19"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "id": "bai-9",
+  "grade": 10,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 10",
+  "chapter": "Chương 4. Khí quyển",
+  "lesson": "Bài 9. Khí quyển, các yếu tố khí hậu",
+  "section": "",
+  "bookPage": 28,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khí quyển là lớp không khí bao quanh Trái Đất, chịu ảnh hưởng của vũ trụ, trước hết là Mặt Trời. Thành phần chính của không khí là ni-tơ (khoảng 78,1%), ô-xi (khoảng 20,9%), cùng argon, các-bon đi-ô-xit, hơi nước và bụi."
+    },
+    {
+      "type": "text",
+      "content": "Khí quyển chia làm năm tầng. Tầng đối lưu quan trọng nhất vì có liên quan đến các quá trình tự nhiên diễn ra trên bề mặt Trái Đất."
+    },
+    {
+      "type": "text",
+      "content": "Nhiệt độ không khí giảm từ Xích đạo về hai cực. Trong tầng đối lưu, nhiệt độ trung bình giảm khoảng 0,6°C khi độ cao tăng thêm 100 m. Lục địa vào mùa hạ nóng hơn đại dương, vào mùa đông lạnh hơn; các nơi sâu trong lục địa có biên độ nhiệt lớn hơn."
+    },
+    {
+      "type": "text",
+      "content": "Khí áp là sức nén của không khí lên bề mặt đất; khí áp tiêu chuẩn ở mực nước biển là 1013 mb. Khí áp thay đổi theo nhiệt độ, độ cao và độ ẩm. Các đai khí áp cao và thấp phân bố xen kẽ, đối xứng qua đai áp thấp xích đạo."
+    },
+    {
+      "type": "text",
+      "content": "Các loại gió chính: gió Mậu dịch thổi từ đai áp cao cận chí tuyến về đai áp thấp xích đạo; gió Tây ôn đới; gió Đông cực; gió mùa; gió đất và gió biển; gió phơn (vượt núi, gây mưa ở sườn đón gió, khi xuống sườn khuất gió thì khô và nóng)."
+    },
+    {
+      "type": "text",
+      "content": "Mưa phụ thuộc vào khí áp, frông, gió, dòng biển và địa hình. Lượng mưa nhiều nhất ở vùng Xích đạo, ít ở hai vùng chí tuyến, nhiều ở hai vùng ôn đới và rất ít ở hai vùng cực."
+    },
+    {
+      "type": "text",
+      "content": "Từ khoá cần ghi nhớ: khí quyển; tầng đối lưu; nhiệt độ; khí áp; đai khí áp; gió Mậu dịch; gió mùa; gió phơn; frông; lượng mưa."
+    },
+    {
+      "type": "text",
+      "content": "Điểm nhấn ghi nhớ: Lên cao 100 m, nhiệt độ giảm 0,6°C. Gió Mậu dịch thổi từ cận chí tuyến về xích đạo. Sườn đón gió mưa nhiều, sườn khuất gió mưa ít."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Không khí ở chân núi có nhiệt độ 25°C. Lên đỉnh núi cao 2000 m, nhiệt độ giảm trung bình 0,6°C mỗi 100 m. Nhiệt độ ở đỉnh núi là bao nhiêu?",
+      "steps": [
+        "Độ cao tăng 2000 m, tức là 20 lần 100 m.",
+        "Nhiệt độ giảm: 20 × 0,6 = 12°C.",
+        "Nhiệt độ đỉnh núi: 25 − 12 = 13°C."
+      ],
+      "expr": "25-0.6*20",
+      "answer": "13"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thành phần chiếm tỉ lệ lớn nhất trong không khí là gì?",
+      "choices": [
+        "Ô-xi",
+        "Ni-tơ",
+        "Hơi nước",
+        "Các-bon đi-ô-xit"
+      ],
+      "answer": 1,
+      "explain": "Ni-tơ chiếm khoảng 78,1% không khí, là thành phần chiếm tỉ lệ lớn nhất.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Ô-xi chiếm khoảng 20,9%, ít hơn ni-tơ.",
+        "2": "Hơi nước là thành phần thay đổi và chiếm tỉ lệ nhỏ.",
+        "3": "Các-bon đi-ô-xit chiếm tỉ lệ rất nhỏ trong không khí."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong tầng đối lưu, nhiệt độ trung bình giảm bao nhiêu khi độ cao tăng thêm 100 m?",
+      "choices": [
+        "0,2°C",
+        "0,6°C",
+        "1°C",
+        "2°C"
+      ],
+      "answer": 1,
+      "explain": "Trong tầng đối lưu, nhiệt độ không khí trung bình giảm khoảng 0,6°C khi độ cao tăng thêm 100 m.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "0,2°C là con số không đúng với quy luật giảm nhiệt theo độ cao.",
+        "2": "1°C là con số không đúng với mức giảm trung bình.",
+        "3": "2°C là con số không đúng với mức giảm trung bình."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao vào mùa hạ lục địa nóng hơn đại dương?",
+      "choices": [
+        "Vì bề mặt đất hấp thụ nhiệt nhanh hơn và toả nhiệt cũng nhanh hơn bề mặt nước",
+        "Vì lục địa không nhận ánh sáng Mặt Trời",
+        "Vì đại dương có nhiệt độ cao hơn",
+        "Vì không khí trên lục địa loãng hơn"
+      ],
+      "answer": 0,
+      "explain": "Đất hấp thụ và toả nhiệt nhanh hơn nước, nên vào mùa hạ lục địa nóng hơn đại dương, vào mùa đông lạnh hơn.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Lục địa vẫn nhận ánh sáng Mặt Trời như mọi nơi khác.",
+        "2": "Đại dương thường có nhiệt độ ổn định hơn và không cao hơn lục địa vào mùa hạ.",
+        "3": "Độ loãng của không khí không phải nguyên nhân chính."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Gió Tây ôn đới ở bán cầu Bắc có hướng và đặc điểm gì?",
+      "choices": [
+        "Hướng đông bắc, khô và lạnh",
+        "Hướng tây nam, ẩm và thường gây mưa",
+        "Hướng đông nam, khô và nóng",
+        "Hướng tây bắc, rất lạnh"
+      ],
+      "answer": 1,
+      "explain": "Gió Tây ôn đới ở bán cầu Bắc thổi theo hướng tây nam, thường có độ ẩm cao và gây mưa.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Hướng đông bắc, khô và lạnh là đặc điểm của gió Đông cực.",
+        "2": "Hướng đông nam là hướng gió Tây ôn đới ở bán cầu Nam, không phải bán cầu Bắc.",
+        "3": "Gió tây bắc rất lạnh không phải đặc điểm gió Tây ôn đới ở bán cầu Bắc."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Một sườn núi đón gió ẩm và sườn còn lại khuất gió. Nhận định nào đúng?",
+      "choices": [
+        "Sườn đón gió thường mưa nhiều hơn",
+        "Sườn khuất gió mưa nhiều hơn",
+        "Hai sườn mưa như nhau",
+        "Không có mưa ở cả hai sườn"
+      ],
+      "answer": 0,
+      "explain": "Sườn đón gió nhận được nhiều hơi ẩm nên mưa nhiều; sườn khuất gió thường mưa ít và khô ráo.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Sườn khuất gió thường mưa ít và khô ráo, không phải mưa nhiều.",
+        "2": "Hai sườn khác nhau do khác biệt về hướng đón gió.",
+        "3": "Sườn đón gió thường có mưa, không phải không có mưa."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Gió phơn có đặc điểm gì?",
+      "choices": [
+        "Lạnh và ẩm ở mọi nơi",
+        "Vượt núi, gây mưa ở sườn đón gió; sang sườn khuất gió thì khô và nóng",
+        "Luôn thổi từ biển vào đất liền mát mẻ",
+        "Chỉ thổi vào mùa đông ở vùng cực"
+      ],
+      "answer": 1,
+      "explain": "Gió phơn vượt núi, hơi nước ngưng tụ ở sườn đón gió gây mưa; khi xuống sườn bên kia, không khí khô và nóng hơn.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Gió phơn không phải là gió lạnh và ẩm ở mọi nơi.",
+        "2": "Gió thổi từ biển vào đất liền không phải đặc điểm của gió phơn.",
+        "3": "Gió phơn không chỉ thổi ở vùng cực vào mùa đông."
+      }
+    }
+  ]
+}

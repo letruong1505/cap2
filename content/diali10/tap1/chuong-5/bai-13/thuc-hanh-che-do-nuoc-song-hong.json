@@ -1,0 +1,175 @@
+{
+  "id": "bai-13",
+  "grade": 10,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 10",
+  "chapter": "Chương 5. Thuỷ quyển",
+  "lesson": "Bài 13. Thực hành: Phân tích chế độ nước sông Hồng",
+  "section": "",
+  "bookPage": 44,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Bảng số liệu lưu lượng nước trung bình tháng của sông Hồng tại trạm Hà Nội (đơn vị m³/s) gồm 12 tháng, từ tháng 1 đến tháng 12. Các tháng lưu lượng lớn nhất thường là tháng 7 và tháng 8."
+    },
+    {
+      "type": "text",
+      "content": "Cách làm: vẽ biểu đồ cột thể hiện lưu lượng nước từng tháng; tính tổng lưu lượng 12 tháng rồi chia cho 12 để có lưu lượng trung bình tháng; các tháng có lưu lượng lớn hơn trung bình là mùa lũ, các tháng nhỏ hơn là mùa cạn."
+    },
+    {
+      "type": "text",
+      "content": "Kết quả phân tích: theo số liệu trong bảng, mùa lũ của sông Hồng từ tháng 6 đến tháng 10; mùa cạn từ tháng 11 đến tháng 5. Sự chênh lệch lưu lượng giữa mùa lũ và mùa cạn rất lớn."
+    },
+    {
+      "type": "text",
+      "content": "Từ khoá cần ghi nhớ: lưu lượng; lưu lượng trung bình tháng; mùa lũ; mùa cạn; biểu đồ cột; sông Hồng."
+    },
+    {
+      "type": "text",
+      "content": "Điểm nhấn ghi nhớ: Tổng 12 tháng ÷ 12 = trung bình tháng. Tháng trên trung bình là mùa lũ, tháng dưới trung bình là mùa cạn."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Lưu lượng nước sông Hồng tại Hà Nội theo 12 tháng lần lượt là: 1455; 1343; 1215; 1522; 2403; 4214; 7300; 7266; 5181; 3507; 2240; 1517 (m³/s). Tổng lưu lượng 12 tháng là bao nhiêu?",
+      "steps": [
+        "Cộng lần lượt 12 giá trị.",
+        "Tổng bằng 39 163 m³/s."
+      ],
+      "expr": "1455+1343+1215+1522+2403+4214+7300+7266+5181+3507+2240+1517",
+      "answer": "39163"
+    },
+    {
+      "problem": "Dựa vào số liệu trên, lưu lượng tháng 8 (7266) hơn tháng 2 (1343) bao nhiêu m³/s?",
+      "steps": [
+        "Lấy lưu lượng tháng 8 trừ lưu lượng tháng 2.",
+        "7266 − 1343 = 5923 m³/s."
+      ],
+      "expr": "7266-1343",
+      "answer": "5923"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn vị của lưu lượng nước sông trong bảng số liệu là gì?",
+      "choices": [
+        "m³/s",
+        "km²",
+        "°C",
+        "mm"
+      ],
+      "answer": 0,
+      "explain": "Lưu lượng nước sông có đơn vị là mét khối trên giây (m³/s).",
+      "concept": true,
+      "wrong_explain": {
+        "1": "km² là đơn vị diện tích, không dùng cho lưu lượng.",
+        "2": "°C là đơn vị nhiệt độ, không dùng cho lưu lượng.",
+        "3": "mm là đơn vị đo lượng mưa, không dùng cho lưu lượng nước sông."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Theo bảng số liệu sông Hồng tại Hà Nội, mùa lũ diễn ra vào các tháng nào?",
+      "choices": [
+        "Tháng 1 đến tháng 4",
+        "Tháng 6 đến tháng 10",
+        "Tháng 11 đến tháng 12",
+        "Tháng 2 đến tháng 3"
+      ],
+      "answer": 1,
+      "explain": "Các tháng có lưu lượng lớn hơn trung bình tháng là từ tháng 6 đến tháng 10.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Tháng 1 đến tháng 4 có lưu lượng nhỏ, thuộc mùa cạn.",
+        "2": "Tháng 11 và 12 có lưu lượng nhỏ, thuộc mùa cạn.",
+        "3": "Tháng 2 và 3 có lưu lượng nhỏ, thuộc mùa cạn."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao các tháng có lưu lượng lớn hơn trung bình tháng được xem là mùa lũ?",
+      "choices": [
+        "Vì lượng nước sông vượt mức bình quân, mực nước dâng cao hơn bình thường",
+        "Vì nhiệt độ cao nhất",
+        "Vì không có mưa",
+        "Vì sông bị khô cạn"
+      ],
+      "answer": 0,
+      "explain": "Lưu lượng vượt mức trung bình cho thấy lượng nước đang nhiều hơn bình thường, mực nước thường dâng cao.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Nhiệt độ cao không phải tiêu chí để xác định mùa lũ.",
+        "2": "Mùa lũ thường có mưa nhiều, không phải không có mưa.",
+        "3": "Khô cạn là đặc điểm của mùa cạn."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nhận xét nào đúng về chế độ nước sông Hồng theo bảng số liệu?",
+      "choices": [
+        "Đều đặn quanh năm",
+        "Chênh lệch lớn giữa mùa lũ và mùa cạn",
+        "Không có mùa lũ",
+        "Chỉ có mùa cạn"
+      ],
+      "answer": 1,
+      "explain": "Lưu lượng chênh lệch rất lớn giữa các tháng mùa lũ (như tháng 7 khoảng 7300 m³/s) và các tháng mùa cạn (như tháng 1 khoảng 1455 m³/s).",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Lưu lượng không đều quanh năm, có sự khác biệt lớn giữa các tháng.",
+        "2": "Bảng số liệu cho thấy rõ có mùa lũ.",
+        "3": "Bảng số liệu cho thấy có cả mùa lũ và mùa cạn."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Muốn tìm lưu lượng trung bình tháng của sông Hồng, cần làm gì?",
+      "choices": [
+        "Lấy tổng lưu lượng 12 tháng chia cho 12",
+        "Lấy lưu lượng tháng lớn nhất",
+        "Nhân 12 với lưu lượng tháng nhỏ nhất",
+        "Cộng hai tháng liên tiếp"
+      ],
+      "answer": 0,
+      "explain": "Lưu lượng trung bình tháng bằng tổng lưu lượng 12 tháng chia cho 12.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Tháng lớn nhất chỉ cho biết giá trị cao nhất, không phải trung bình.",
+        "2": "Nhân 12 với tháng nhỏ nhất không cho ra trung bình.",
+        "3": "Cộng hai tháng không đủ để tính trung bình của cả năm."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Khi vẽ biểu đồ cột thể hiện lưu lượng nước theo tháng, cách trình bày nào là hợp lí?",
+      "choices": [
+        "Vẽ 12 cột ứng với 12 tháng và thể hiện đường trung bình",
+        "Vẽ biểu đồ tròn không có nhãn",
+        "Không cần chú thích tháng",
+        "Ghi toàn bộ số liệu bằng chữ"
+      ],
+      "answer": 0,
+      "explain": "Biểu đồ cột với 12 cột theo tháng, kèm đường trung bình giúp dễ thấy các tháng lũ và tháng cạn.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Biểu đồ tròn không thể hiện rõ sự thay đổi theo thời gian của lưu lượng.",
+        "2": "Phải có nhãn tháng để người đọc biết cột tương ứng với tháng nào.",
+        "3": "Ghi bằng chữ không trực quan và khó so sánh."
+      }
+    }
+  ]
+}

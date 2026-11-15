@@ -1,0 +1,174 @@
+{
+  "id": "bai-5",
+  "grade": 10,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 10",
+  "chapter": "Chương 2. Trái Đất",
+  "lesson": "Bài 5. Hệ quả địa lí các chuyển động của Trái Đất",
+  "section": "",
+  "bookPage": 17,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Trái Đất có hai chuyển động chính: tự quay quanh trục (từ tây sang đông, khoảng 24 giờ một vòng) và quay quanh Mặt Trời (vận tốc trung bình khoảng 29,8 km/s, trục nghiêng khoảng 66°33′ so với mặt phẳng quỹ đạo, hướng trục không đổi)."
+    },
+    {
+      "type": "text",
+      "content": "Hệ quả của tự quay: luân phiên ngày và đêm. Do Trái Đất tự quay từ tây sang đông, các địa điểm khác kinh tuyến có giờ địa phương khác nhau. Để thuận tiện, Trái Đất được chia thành 24 múi giờ, mỗi múi rộng 15 độ kinh tuyến. Múi số 0 có kinh tuyến gốc đi qua giữa múi, lấy làm giờ GMT."
+    },
+    {
+      "type": "text",
+      "content": "Đường chuyển ngày quốc tế là kinh tuyến 180°. Đi từ tây sang đông qua kinh tuyến này thì lùi lại một ngày lịch; đi từ đông sang tây thì tăng thêm một ngày lịch."
+    },
+    {
+      "type": "text",
+      "content": "Hệ quả của chuyển động quanh Mặt Trời: ngày đêm dài ngắn khác nhau theo mùa và theo vĩ độ ở hai bán cầu, trừ ngày 21/3 và 23/9 ngày đêm bằng nhau. Ở Xích đạo, ngày và đêm gần như bằng nhau quanh năm; ở hai cực có sáu tháng ngày và sáu tháng đêm."
+    },
+    {
+      "type": "text",
+      "content": "Các mùa do trục Trái Đất nghiêng và không đổi hướng khi chuyển động quanh Mặt Trời, làm góc chiếu tia sáng và thời gian nhận ánh sáng thay đổi trong năm. Mùa diễn ra ngược nhau giữa hai bán cầu. Ở Việt Nam, thời gian bắt đầu các mùa sớm hơn khoảng 45 ngày so với dương lịch do tính theo âm lịch."
+    },
+    {
+      "type": "text",
+      "content": "Từ khoá cần ghi nhớ: tự quay; quay quanh Mặt Trời; giờ địa phương; múi giờ; đường chuyển ngày quốc tế; góc nghiêng 66°33′; các mùa; ngày đêm dài ngắn."
+    },
+    {
+      "type": "text",
+      "content": "Điểm nhấn ghi nhớ: Tự quay → ngày đêm và múi giờ (mỗi múi 15°). Quanh Mặt Trời + trục nghiêng → các mùa. 21/3 và 23/9: ngày đêm bằng nhau."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hà Nội có kinh độ 105°52′Đ, Hải Phòng có kinh độ 106°43′Đ. Cứ mỗi độ kinh tuyến lệch nhau 4 phút thời gian. Giờ địa phương của hai nơi chênh nhau bao nhiêu phút?",
+      "steps": [
+        "Hiệu kinh độ: 106°43′ − 105°52′ = 0°51′ = 0,85°.",
+        "Thời gian chênh: 0,85 × 4 = 3,4 phút (tức 3 phút 24 giây)."
+      ],
+      "expr": "0.85*4",
+      "answer": "3.4"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trái Đất tự quay quanh trục theo chiều nào?",
+      "choices": [
+        "Từ đông sang tây",
+        "Từ tây sang đông",
+        "Từ bắc xuống nam",
+        "Từ nam lên bắc"
+      ],
+      "answer": 1,
+      "explain": "Trái Đất tự quay quanh trục từ tây sang đông.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chiều từ đông sang tây là ngược với chiều tự quay thực tế của Trái Đất.",
+        "2": "Từ bắc xuống nam không phải chiều tự quay của Trái Đất.",
+        "3": "Từ nam lên bắc không phải chiều tự quay của Trái Đất."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trái Đất được chia thành bao nhiêu múi giờ, mỗi múi rộng bao nhiêu độ kinh tuyến?",
+      "choices": [
+        "12 múi, mỗi múi 30 độ",
+        "24 múi, mỗi múi 15 độ",
+        "24 múi, mỗi múi 10 độ",
+        "36 múi, mỗi múi 10 độ"
+      ],
+      "answer": 1,
+      "explain": "Bề mặt Trái Đất được chia thành 24 múi giờ, mỗi múi rộng 15 độ kinh tuyến.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chia 12 múi, mỗi múi 30 độ không đúng với cách chia múi giờ đã học.",
+        "2": "Mỗi múi rộng 15 độ, không phải 10 độ.",
+        "3": "Chỉ có 24 múi giờ, không phải 36 múi."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao các địa điểm khác kinh tuyến có giờ địa phương khác nhau?",
+      "choices": [
+        "Vì Trái Đất có dạng khối cầu và tự quay từ tây sang đông",
+        "Vì Trái Đất đứng yên",
+        "Vì Mặt Trăng quay quanh Trái Đất",
+        "Vì khoảng cách đến Mặt Trời khác nhau"
+      ],
+      "answer": 0,
+      "explain": "Trái Đất có dạng khối cầu và tự quay từ tây sang đông, nên các địa điểm ở các kinh tuyến khác nhau nhận ánh sáng Mặt Trời vào các thời điểm khác nhau.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Nếu Trái Đất đứng yên thì không có ngày đêm luân phiên và không có giờ địa phương.",
+        "2": "Mặt Trăng không quyết định giờ địa phương.",
+        "3": "Khoảng cách đến Mặt Trời không làm thay đổi giờ địa phương theo kinh tuyến."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Nguyên nhân chính sinh ra các mùa trên Trái Đất là gì?",
+      "choices": [
+        "Khoảng cách Trái Đất – Mặt Trời thay đổi nhiều",
+        "Trục Trái Đất nghiêng và không đổi hướng khi chuyển động quanh Mặt Trời, làm góc chiếu và thời gian nhận ánh sáng thay đổi",
+        "Trái Đất tự quay nhanh hơn vào mùa hạ",
+        "Do Mặt Trăng che khuất Mặt Trời"
+      ],
+      "answer": 1,
+      "explain": "Trục Trái Đất nghiêng khoảng 66°33′ và hướng không đổi, nên góc chiếu tia sáng và thời gian chiếu sáng thay đổi trong năm.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Khoảng cách Trái Đất – Mặt Trời thay đổi không phải nguyên nhân chính của các mùa.",
+        "2": "Tốc độ tự quay không thay đổi theo mùa.",
+        "3": "Mặt Trăng không gây ra các mùa trên Trái Đất."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vào ngày 22/6, ở bán cầu Bắc có hiện tượng gì?",
+      "choices": [
+        "Ngày dài hơn đêm",
+        "Ngày ngắn hơn đêm",
+        "Ngày bằng đêm ở mọi vĩ độ",
+        "Đêm dài 6 tháng ở mọi nơi"
+      ],
+      "answer": 0,
+      "explain": "Vào 22/6, bán cầu Bắc ngả về phía Mặt Trời nên ngày dài hơn đêm; vĩ độ càng cao, ngày càng dài.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Ngày ngắn hơn đêm xảy ra ở bán cầu Bắc vào ngày 22/12.",
+        "2": "Chỉ vào 21/3 và 23/9 ngày mới bằng đêm.",
+        "3": "Đêm dài 6 tháng chỉ xảy ra ở vùng cực, không phải ở mọi nơi."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vì sao ở Xích đạo độ dài ngày và đêm gần như bằng nhau quanh năm?",
+      "choices": [
+        "Vì Xích đạo gần Mặt Trời nhất",
+        "Vì Xích đạo nằm giữa hai cực nên nhận ánh sáng gần đều quanh năm",
+        "Vì Xích đạo không tự quay",
+        "Vì ở Xích đạo không có đêm"
+      ],
+      "answer": 1,
+      "explain": "Xích đạo nằm xa hai cực nhất nên độ dài ngày và đêm gần như bằng nhau quanh năm, không bị ảnh hưởng nhiều bởi độ nghiêng của trục.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Xích đạo không phải là nơi gần Mặt Trời nhất trong quỹ đạo của Trái Đất.",
+        "2": "Xích đạo vẫn tự quay như mọi nơi khác trên Trái Đất.",
+        "3": "Xích đạo vẫn có đêm, chỉ là độ dài ngày và đêm gần bằng nhau."
+      }
+    }
+  ]
+}

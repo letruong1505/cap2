@@ -1,0 +1,340 @@
+{
+  "id": "bai-17",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Toán 11, tập 1",
+  "chapter": "Chương V. Giới hạn. Hàm số liên tục",
+  "lesson": "Bài 17. Hàm số liên tục",
+  "section": "",
+  "bookPage": 119,
+  "requirements": [
+    "Nhận biết hàm số liên tục tại một điểm, trên một khoảng; xác định điểm gián đoạn.",
+    "Tìm tham số để hàm liên tục và chứng minh phương trình có nghiệm bằng tính liên tục."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hàm số y = f(x) xác định trên khoảng K, x₀ ∈ K. Hàm f liên tục tại x₀ nếu lim_{x→x₀} f(x) = f(x₀). Nếu f không liên tục tại x₀ thì gián đoạn tại x₀. Hàm liên tục trên khoảng nếu liên tục tại mọi điểm của khoảng; liên tục trên [a; b] nếu liên tục trên (a; b) và lim_{x→a⁺} f = f(a), lim_{x→b⁻} f = f(b)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b17-lien-tuc.svg",
+      "caption": "Đồ thị hàm số gián đoạn tại x = 1: giới hạn bên trái bằng 1, bên phải bằng 2 (đồ thị bị đứt)"
+    },
+    {
+      "type": "text",
+      "content": "Các hàm đa thức, phân thức hữu tỉ, lượng giác liên tục trên tập xác định của chúng. Tổng, hiệu, tích của hai hàm liên tục tại x₀ liên tục tại x₀; thương liên tục tại x₀ nếu mẫu khác 0 tại x₀. Hàm căn thức √x liên tục trên [0; +∞)."
+    },
+    {
+      "type": "formula",
+      "content": "Định lí giá trị trung gian (hệ quả): nếu f liên tục trên [a; b] và f(a)·f(b) < 0 thì phương trình f(x) = 0 có ít nhất một nghiệm trong khoảng (a; b)."
+    },
+    {
+      "type": "method",
+      "title": "Xét tính liên tục của hàm số tại một điểm",
+      "when": "Cho hàm số cho bởi một biểu thức hoặc nhiều nhánh, hỏi hàm liên tục tại x₀ hay không.",
+      "steps": [
+        "Tính f(x₀).",
+        "Tính lim_{x→x₀} f(x) (tính hai giới hạn một bên nếu hàm nhiều nhánh).",
+        "So sánh lim và f(x₀).",
+        "Bằng nhau thì liên tục; khác nhau hoặc giới hạn không tồn tại thì gián đoạn."
+      ],
+      "notes": [
+        "Hàm đa thức luôn liên tục trên ℝ.",
+        "Hàm phân thức gián đoạn tại các nghiệm của mẫu."
+      ],
+      "sample": {
+        "problem": "Xét f(x) = (x² − 1)/(x − 1) với x ≠ 1, f(1) = 2 tại x = 1.",
+        "steps": [
+          "lim = lim (x + 1) = 2.",
+          "f(1) = 2 nên liên tục tại x = 1."
+        ],
+        "answer": "Liên tục tại x = 1"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tìm tham số để hàm số liên tục",
+      "when": "Hàm có hai nhánh hoặc có giá trị tại một điểm chứa tham số m.",
+      "steps": [
+        "Tính giới hạn trái và phải (hoặc lim f) tại điểm nối.",
+        "Tính f(x₀) theo m.",
+        "Đặt phương trình lim = f(x₀) (cả hai giới hạn một bên bằng nhau).",
+        "Giải tìm m và kiểm tra."
+      ],
+      "notes": [
+        "Có khi cần hai điều kiện đồng thời.",
+        "Nhớ thay đúng nhánh khi tính f(x₀)."
+      ],
+      "sample": {
+        "problem": "f(x) = x² + m (x < 2), f(x) = 3x − 1 (x ≥ 2). Tìm m để f liên tục tại x = 2.",
+        "steps": [
+          "lim_{x→2⁻} = 4 + m; lim_{x→2⁺} = 5 = f(2).",
+          "4 + m = 5 nên m = 1."
+        ],
+        "answer": "m = 1"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Chứng minh phương trình có nghiệm",
+      "when": "Phương trình f(x) = 0 với f liên tục (đa thức); đề yêu cầu chứng minh có ít nhất một nghiệm hoặc số nghiệm.",
+      "steps": [
+        "Đặt f(x) = vế trái − vế phải, nhận xét f liên tục trên ℝ.",
+        "Tìm a, b sao cho f(a)·f(b) < 0 (thử các giá trị nguyên nhỏ).",
+        "Kết luận có nghiệm trong (a; b).",
+        "Muốn đếm nghiệm: tìm nhiều khoảng rời nhau mà f đổi dấu."
+      ],
+      "notes": [
+        "Các khoảng phải rời nhau để đếm nghiệm phân biệt.",
+        "Phương trình bậc ba tối đa 3 nghiệm."
+      ],
+      "sample": {
+        "problem": "Chứng minh x³ − 3x + 1 = 0 có nghiệm trong (0; 1).",
+        "steps": [
+          "f(0) = 1, f(1) = −1.",
+          "f(0)·f(1) = −1 < 0 và f liên tục nên có nghiệm trong (0; 1)."
+        ],
+        "answer": "Có nghiệm trong (0; 1)"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "f(x) = x² − 2x liên tục tại x = 3. Tính lim_{x→3} f(x).",
+      "steps": [
+        "Hàm đa thức liên tục nên lim = f(3).",
+        "= 9 − 6 = 3."
+      ],
+      "expr": "3*3-2*3",
+      "answer": "3"
+    },
+    {
+      "problem": "f(x) = x² + m (x < 2), f(x) = 3x − 1 (x ≥ 2). Tìm m để f liên tục tại x = 2.",
+      "steps": [
+        "4 + m = 5.",
+        "m = 1."
+      ],
+      "expr": "3*2-1-2*2",
+      "answer": "1"
+    },
+    {
+      "problem": "f(x) = x³ − 3x + 1. Tính f(0)·f(1).",
+      "steps": [
+        "f(0) = 1, f(1) = −1.",
+        "Tích bằng −1 < 0: có nghiệm trong (0; 1)."
+      ],
+      "expr": "1*(1-3+1)",
+      "answer": "-1"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hàm f(x) = x² − 2x liên tục tại x = 3. Giá trị lim_{x→3} f(x) là:",
+      "expr": "3*3-2*3",
+      "answer": "3",
+      "explain": "lim = f(3) = 3.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm f liên tục tại x₀ nếu:",
+      "choices": [
+        "lim_{x→x₀} f(x) = f(x₀)",
+        "f(x₀) = 0",
+        "f xác định trên ℝ",
+        "lim f(x) = +∞"
+      ],
+      "answer": 0,
+      "explain": "Đây là định nghĩa liên tục tại một điểm.",
+      "wrong_explain": {
+        "1": "f(x₀) = 0 không cần thiết.",
+        "2": "Chỉ cần xác định tại và gần x₀.",
+        "3": "Giới hạn phải hữu hạn."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số nào liên tục trên ℝ?",
+      "choices": [
+        "y = x³ − 2x + 1",
+        "y = 1/x",
+        "y = (x + 1)/(x − 2)",
+        "y = tan x"
+      ],
+      "answer": 0,
+      "explain": "Đa thức liên tục trên ℝ.",
+      "wrong_explain": {
+        "1": "1/x gián đoạn tại 0.",
+        "2": "Gián đoạn tại x = 2.",
+        "3": "tan x gián đoạn tại π/2 + kπ."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hàm y = 1/(x − 2) gián đoạn tại bao nhiêu điểm?",
+      "expr": "1",
+      "answer": "1",
+      "explain": "Chỉ gián đoạn tại x = 2.",
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hàm y = (x + 1)/(x² − 5x + 6) gián đoạn tại bao nhiêu điểm?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Mẫu có hai nghiệm x = 2, x = 3.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "f(x) = (x² − 1)/(x − 1) (x ≠ 1), f(1) = m. Tìm m để f liên tục tại x = 1:",
+      "expr": "1+1",
+      "answer": "2",
+      "explain": "lim = 2 nên m = 2.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "f(x) = (x² − 4)/(x − 2) (x ≠ 2), f(2) = m. Tìm m để f liên tục tại x = 2:",
+      "expr": "2+2",
+      "answer": "4",
+      "explain": "lim = 4 nên m = 4.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "f(x) = 3x − 1 (x < 1), f(x) = 2x + m (x ≥ 1). Tìm m để liên tục tại x = 1:",
+      "expr": "3*1-1-2*1",
+      "answer": "0",
+      "explain": "2 = 2 + m nên m = 0.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "f(x) = x² + m (x < 2), f(x) = 3x − 1 (x ≥ 2). Tìm m để liên tục tại x = 2:",
+      "expr": "3*2-1-2*2",
+      "answer": "1",
+      "explain": "4 + m = 5 nên m = 1.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tích các điểm gián đoạn của y = 1/(x² − 4) là:",
+      "expr": "2*(-2)",
+      "answer": "-4",
+      "explain": "Gián đoạn tại x = ±2; tích bằng −4.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với f(x) = x³ − 3x + 1, tích f(0)·f(1) bằng:",
+      "expr": "1*(1-3+1)",
+      "answer": "-1",
+      "explain": "f(0) = 1, f(1) = −1 nên tích −1 < 0.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "f(x) = x³ − 3x + 1 có f(−2) = −1, f(−1) = 3, f(1) = −1, f(2) = 3. Số khoảng rời nhau mà f đổi dấu là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "f đổi dấu trên (−2; −1), (−1; 1) và (1; 2): phương trình có 3 nghiệm.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phương trình x⁵ − 3x + 1 = 0 có f(0) = 1, f(1) = −1. Số nghiệm tối thiểu trong (0; 1) là:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "f liên tục, tích trái dấu nên có ít nhất 1 nghiệm.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hàm y = (x + 3)/(x² − 9) gián đoạn tại bao nhiêu điểm?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Mẫu có nghiệm x = ±3.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phương trình x⁴ − x − 1 = 0 có f(0) = −1, f(2) = 13. Khẳng định đúng là:",
+      "choices": [
+        "Có nghiệm trong (0; 2)",
+        "Vô nghiệm trong (0; 2)",
+        "Có đúng hai nghiệm trong (0; 2)",
+        "Không kết luận được"
+      ],
+      "answer": 0,
+      "explain": "f liên tục và f(0)·f(2) < 0.",
+      "wrong_explain": {
+        "1": "Có đổi dấu nên có nghiệm.",
+        "2": "Không đủ để biết đúng hai nghiệm.",
+        "3": "Có kết luận chắc chắn là có nghiệm."
+      },
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Phương trình 2x³ − 6x + 1 = 0 có f(−2) = −3, f(−1) = 5, f(1) = −3, f(2) = 5. Số nghiệm thực là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "f đổi dấu trên 3 khoảng rời nhau và bậc ba nên có đúng 3 nghiệm.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hàm f(x) = (x² − 1)/(x − 1) (x ≠ 1), f(1) = 3 gián đoạn tại x = 1. Hiệu giữa lim và f(1) (lim − f(1)) là:",
+      "expr": "2-3",
+      "answer": "-1",
+      "explain": "lim = 2, f(1) = 3 nên hiệu −1; hàm gián đoạn.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số f(x) = √x liên tục trên:",
+      "choices": [
+        "[0; +∞)",
+        "ℝ",
+        "(−∞; 0)",
+        "(0; +∞) nhưng gián đoạn tại 0"
+      ],
+      "answer": 0,
+      "explain": "Căn thức liên tục trên tập xác định [0; +∞) (tại 0 liên tục phải).",
+      "wrong_explain": {
+        "1": "Không xác định khi x < 0.",
+        "2": "Không xác định với x âm.",
+        "3": "Tại 0 hàm liên tục (từ bên phải)."
+      },
+      "id": "q18"
+    }
+  ]
+}

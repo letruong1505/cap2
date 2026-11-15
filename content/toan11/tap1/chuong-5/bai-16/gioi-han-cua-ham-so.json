@@ -1,0 +1,329 @@
+{
+  "id": "bai-16",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Toán 11, tập 1",
+  "chapter": "Chương V. Giới hạn. Hàm số liên tục",
+  "lesson": "Bài 16. Giới hạn của hàm số",
+  "section": "",
+  "bookPage": 111,
+  "requirements": [
+    "Hiểu giới hạn hữu hạn, giới hạn một bên và giới hạn tại vô cực của hàm số.",
+    "Tính các giới hạn dạng 0/0, dạng ∞/∞ và các giới hạn có căn."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cho hàm số f xác định trên khoảng chứa x₀ (có thể trừ x₀). Ta nói f(x) có giới hạn L khi x dần tới x₀, kí hiệu lim_{x→x₀} f(x) = L, nếu với mọi dãy (xₙ) trong tập xác định, xₙ ≠ x₀, xₙ → x₀ thì f(xₙ) → L."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b16-gioi-han-ham-so.svg",
+      "caption": "Đồ thị y = (x² − 1)/(x − 1) = x + 1 (x ≠ 1): hàm không xác định tại x = 1 nhưng lim = 2"
+    },
+    {
+      "type": "formula",
+      "content": "lim_{x→x₀} x = x₀;  lim c = c;  nếu lim f = L, lim g = M thì lim(f ± g) = L ± M, lim(fg) = LM, lim(f/g) = L/M (M ≠ 0)."
+    },
+    {
+      "type": "text",
+      "content": "Giới hạn một bên: lim_{x→x₀⁺} f(x) (x > x₀) và lim_{x→x₀⁻} f(x) (x < x₀). Tồn tại lim_{x→x₀} f(x) = L khi và chỉ khi hai giới hạn một bên cùng bằng L. Giới hạn tại vô cực: lim_{x→±∞} 1/xᵏ = 0; lim_{x→+∞} xᵏ = +∞. Giới hạn vô cực: lim_{x→0⁺} 1/x = +∞, lim_{x→0⁻} 1/x = −∞."
+    },
+    {
+      "type": "method",
+      "title": "Giới hạn dạng 0/0: phân tích nhân tử, rút gọn",
+      "when": "Thay x = x₀ vào được 0/0 với tử và mẫu là đa thức.",
+      "steps": [
+        "Thay x₀ nhận ra dạng 0/0.",
+        "Phân tích tử và mẫu có nhân tử chung (x − x₀).",
+        "Rút gọn (x − x₀) vì x ≠ x₀.",
+        "Thay x = x₀ vào biểu thức còn lại."
+      ],
+      "notes": [
+        "Dùng hằng đẳng thức a² − b², a³ − b³.",
+        "Có thể dùng chia đa thức hoặc sơ đồ Horner."
+      ],
+      "sample": {
+        "problem": "Tính lim_{x→2} (x² − 4)/(x − 2).",
+        "steps": [
+          "(x − 2)(x + 2)/(x − 2) = x + 2.",
+          "Khi x → 2: 4."
+        ],
+        "answer": "4"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Giới hạn có căn: nhân lượng liên hợp",
+      "when": "Tử hoặc mẫu chứa căn và dạng 0/0, ví dụ (√(x + 1) − 1)/x khi x → 0.",
+      "steps": [
+        "Nhân tử và mẫu với liên hợp của biểu thức có căn.",
+        "Dùng (a − b)(a + b) = a² − b² để khử căn.",
+        "Rút gọn nhân tử (x − x₀).",
+        "Thay x = x₀."
+      ],
+      "notes": [
+        "Liên hợp của √A − B là √A + B.",
+        "Với căn bậc ba dùng a³ − b³ = (a − b)(a² + ab + b²)."
+      ],
+      "sample": {
+        "problem": "Tính lim_{x→0} (√(x + 1) − 1)/x.",
+        "steps": [
+          "= lim x/[x(√(x + 1) + 1)] = lim 1/(√(x + 1) + 1).",
+          "Giới hạn: 1/2."
+        ],
+        "answer": "1/2"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Giới hạn tại vô cực và giới hạn một bên",
+      "when": "x → ±∞ với hàm phân thức; hoặc x → x₀⁺, x₀⁻ khi mẫu tiến 0.",
+      "steps": [
+        "x → ±∞: chia tử và mẫu cho luỹ thừa cao nhất của x.",
+        "Tính giới hạn từng phần (1/xᵏ → 0).",
+        "x → x₀⁺ hoặc x₀⁻: xét dấu của tử (giới hạn) và mẫu (0⁺ hay 0⁻).",
+        "Kết luận +∞, −∞ hoặc giá trị hữu hạn."
+      ],
+      "notes": [
+        "Khi x → −∞ cần chú ý dấu khi đưa x ra khỏi căn: √x² = |x| = −x.",
+        "Giới hạn hai bên khác nhau thì không tồn tại giới hạn."
+      ],
+      "sample": {
+        "problem": "Tính lim_{x→+∞} (2x + 1)/(x − 3).",
+        "steps": [
+          "Chia cho x: (2 + 1/x)/(1 − 3/x).",
+          "Giới hạn bằng 2."
+        ],
+        "answer": "2"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính lim_{x→1} (x² − 1)/(x − 1).",
+      "steps": [
+        "(x − 1)(x + 1)/(x − 1) = x + 1.",
+        "Khi x → 1: 2."
+      ],
+      "expr": "1+1",
+      "answer": "2"
+    },
+    {
+      "problem": "Tính lim_{x→0} (√(x + 1) − 1)/x.",
+      "steps": [
+        "Nhân liên hợp được 1/(√(x + 1) + 1).",
+        "Khi x → 0: 1/2."
+      ],
+      "expr": "(1)/(1+1)",
+      "answer": "1/2"
+    },
+    {
+      "problem": "Tính lim_{x→+∞} (x² + 1)/(2x² − x).",
+      "steps": [
+        "Chia cho x²: (1 + 1/x²)/(2 − 1/x).",
+        "Giới hạn 1/2."
+      ],
+      "expr": "1/2",
+      "answer": "1/2"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính lim_{x→2} (x² − 1):",
+      "expr": "2*2-1",
+      "answer": "3",
+      "explain": "Thay x = 2: 4 − 1 = 3.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính lim_{x→−1} (x³ + 2x):",
+      "expr": "(-1)*(-1)*(-1)+2*(-1)",
+      "answer": "-3",
+      "explain": "−1 − 2 = −3.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính lim_{x→+∞} 1/x:",
+      "expr": "0",
+      "answer": "0",
+      "explain": "lim 1/x = 0.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "lim_{x→0⁺} 1/x bằng:",
+      "choices": [
+        "+∞",
+        "−∞",
+        "0",
+        "1"
+      ],
+      "answer": 0,
+      "explain": "Khi x → 0⁺ thì 1/x dương và rất lớn.",
+      "wrong_explain": {
+        "1": "lim_{x→0⁻} 1/x mới bằng −∞.",
+        "2": "1/x không tiến về 0 khi x → 0.",
+        "3": "1/x không tiến về 1."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính lim_{x→1} (x² − 1)/(x − 1):",
+      "expr": "1+1",
+      "answer": "2",
+      "explain": "Rút gọn thành x + 1 nên bằng 2.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính lim_{x→2} (x² − 4)/(x − 2):",
+      "expr": "2+2",
+      "answer": "4",
+      "explain": "x + 2 → 4.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính lim_{x→3} (x² − 9)/(x − 3):",
+      "expr": "3+3",
+      "answer": "6",
+      "explain": "x + 3 → 6.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính lim_{x→1} (x³ − 1)/(x − 1):",
+      "expr": "1+1+1",
+      "answer": "3",
+      "explain": "x² + x + 1 → 3.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính lim_{x→2} (x² − 3x + 2)/(x − 2):",
+      "expr": "2-1",
+      "answer": "1",
+      "explain": "(x − 1)(x − 2)/(x − 2) = x − 1 → 1.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính lim_{x→−2} (x³ + 8)/(x + 2):",
+      "expr": "4+4+4",
+      "answer": "12",
+      "explain": "x² − 2x + 4 → 4 + 4 + 4 = 12.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính lim_{x→0} (√(x + 1) − 1)/x (nhập a/b):",
+      "expr": "(1)/(1+1)",
+      "answer": "1/2",
+      "explain": "Nhân liên hợp: 1/(√(x + 1) + 1) → 1/2.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính lim_{x→4} (√x − 2)/(x − 4) (nhập a/b):",
+      "expr": "(1)/(2+2)",
+      "answer": "1/4",
+      "explain": "(1)/(√x + 2) → 1/4.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính lim_{x→+∞} (2x + 1)/(x − 3):",
+      "expr": "2/1",
+      "answer": "2",
+      "explain": "Chia cho x: giới hạn bằng 2.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính lim_{x→+∞} (x² + 1)/(2x² − x) (nhập a/b):",
+      "expr": "1/2",
+      "answer": "1/2",
+      "explain": "Hệ số cao nhất 1/2.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "lim_{x→1⁺} 1/(x − 1) bằng:",
+      "choices": [
+        "+∞",
+        "−∞",
+        "0",
+        "1"
+      ],
+      "answer": 0,
+      "explain": "x − 1 → 0⁺ nên 1/(x − 1) → +∞.",
+      "wrong_explain": {
+        "1": "lim_{x→1⁻} mới bằng −∞.",
+        "2": "Mẫu tiến 0 nên không có giới hạn 0.",
+        "3": "Không có giá trị hữu hạn."
+      },
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hàm f(x) = x + 1 khi x < 1 và f(x) = 3 − x khi x ≥ 1. lim_{x→1⁻} f(x) bằng:",
+      "expr": "1+1",
+      "answer": "2",
+      "explain": "Nhánh x < 1: x + 1 → 2.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Với f ở câu trên, lim_{x→1⁺} f(x) bằng:",
+      "expr": "3-1",
+      "answer": "2",
+      "explain": "Nhánh x ≥ 1: 3 − x → 2. Hai giới hạn một bên cùng bằng 2.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Giới hạn lim_{x→x₀} f(x) tồn tại và bằng L khi và chỉ khi:",
+      "choices": [
+        "hai giới hạn một bên cùng bằng L",
+        "f(x₀) = L",
+        "f xác định tại x₀",
+        "chỉ giới hạn bên phải bằng L"
+      ],
+      "answer": 0,
+      "explain": "Điều kiện cần và đủ là hai giới hạn một bên trùng nhau.",
+      "wrong_explain": {
+        "1": "f(x₀) có thể không tồn tại mà vẫn có giới hạn.",
+        "2": "Giới hạn không đòi hỏi f xác định tại x₀.",
+        "3": "Cần cả hai bên cùng bằng L."
+      },
+      "id": "q18"
+    }
+  ]
+}

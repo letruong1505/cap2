@@ -1,0 +1,331 @@
+{
+  "id": "bai-22",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Toán 11, tập 2",
+  "chapter": "Chương VII. Quan hệ vuông góc trong không gian",
+  "lesson": "Bài 22. Hai đường thẳng vuông góc",
+  "section": "",
+  "bookPage": 27,
+  "requirements": [
+    "Xác định góc giữa hai đường thẳng trong không gian và nhận biết hai đường thẳng vuông góc.",
+    "Tính góc giữa hai đường thẳng trong hình lập phương, hình chóp, tứ diện."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Góc giữa hai đường thẳng a và b trong không gian là góc giữa hai đường thẳng a′, b′ cùng đi qua một điểm O và lần lượt song song (hoặc trùng) với a, b. Số đo góc này không phụ thuộc vào điểm O và thuộc đoạn [0°; 90°]. Nếu a ∥ b hoặc a ≡ b thì góc giữa chúng bằng 0°."
+    },
+    {
+      "type": "text",
+      "content": "Hai đường thẳng vuông góc: góc giữa chúng bằng 90°, kí hiệu a ⟂ b. Hai đường thẳng vuông góc có thể cắt nhau hoặc chéo nhau. Nếu a ∥ b và c ⟂ a thì c ⟂ b."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b22-goc-hai-duong.svg",
+      "caption": "Hình lập phương: AC ∥ A′C′ nên góc giữa AC và A′B bằng góc ∠BA′C′ = 60° (tam giác A′BC′ đều vì có ba cạnh là đường chéo mặt)"
+    },
+    {
+      "type": "text",
+      "content": "Cách tính góc: chọn điểm O thích hợp (thường là một đỉnh), dựng các đường thẳng đi qua O song song với hai đường đã cho (hoặc tìm trên hình có sẵn), rồi tính góc trong một tam giác bằng định lí côsin, hệ thức lượng trong tam giác vuông. Trong tứ diện đều, hai cạnh đối diện luôn vuông góc."
+    },
+    {
+      "type": "method",
+      "title": "Tính góc giữa hai đường thẳng",
+      "when": "Cho hai đường thẳng a, b (thường chéo nhau) trong hình lập phương, hình chóp, hình lăng trụ.",
+      "steps": [
+        "Chọn điểm O (thường là đỉnh nằm trên một trong hai đường).",
+        "Qua O dựng đường thẳng song song với đường thẳng còn lại (dùng cạnh song song có sẵn trong hình).",
+        "Xác định tam giác chứa góc cần tìm.",
+        "Tính góc bằng tam giác đều, vuông cân, hệ thức lượng hoặc định lí côsin; kiểm tra góc ≤ 90°."
+      ],
+      "notes": [
+        "Nếu tính ra góc tù φ thì góc giữa hai đường thẳng là 180° − φ.",
+        "Trong hình lập phương mọi đường chéo mặt bằng nhau, thường xuất hiện tam giác đều."
+      ],
+      "sample": {
+        "problem": "Hình lập phương ABCD.A′B′C′D′. Tính góc giữa AC và A′B.",
+        "steps": [
+          "AC ∥ A′C′ nên góc cần tìm bằng ∠BA′C′.",
+          "A′B = BC′ = A′C′ (đường chéo mặt) nên tam giác A′BC′ đều.",
+          "Góc bằng 60°."
+        ],
+        "answer": "60°"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Chứng minh hai đường thẳng vuông góc",
+      "when": "Đề yêu cầu chứng minh a ⟂ b trong hình không gian.",
+      "steps": [
+        "Tính góc giữa a và b bằng cách đưa về hai đường cắt nhau (qua đường song song).",
+        "Chứng minh góc đó bằng 90° (định lí Pythagore đảo, tam giác vuông cân, đường chéo hình thoi, hình vuông…).",
+        "Hoặc dùng tính chất: a ∥ c và c ⟂ b thì a ⟂ b.",
+        "Hoặc dùng định lí đường thẳng vuông góc mặt phẳng (Bài 23)."
+      ],
+      "notes": [
+        "Tứ diện đều: AB ⟂ CD, AC ⟂ BD, AD ⟂ BC.",
+        "Hai đường chéo hình vuông, hình thoi vuông góc nhau."
+      ],
+      "sample": {
+        "problem": "Trong hình lập phương, AB ⟂ A′D′?",
+        "steps": [
+          "AB ∥ A′B′.",
+          "A′B′ ⟂ A′D′ (hai cạnh của hình vuông A′B′C′D′).",
+          "Do đó AB ⟂ A′D′."
+        ],
+        "answer": "AB ⟂ A′D′"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Đếm số cặp cạnh vuông góc, song song trong hình hộp chữ nhật",
+      "when": "Đề hỏi hình hộp chữ nhật có bao nhiêu cặp cạnh vuông góc, song song, chéo nhau.",
+      "steps": [
+        "Hình hộp chữ nhật có 12 cạnh chia thành 3 nhóm, mỗi nhóm 4 cạnh song song.",
+        "Mỗi cạnh vuông góc với đúng 8 cạnh thuộc hai nhóm còn lại.",
+        "Số cặp vuông góc = 12·8/2.",
+        "Số cặp song song = 3·C(4,2) = 18."
+      ],
+      "notes": [
+        "Không đếm hai lần mỗi cặp: chia 2.",
+        "Cặp cạnh vuông góc gồm cả cắt nhau và chéo nhau."
+      ],
+      "sample": {
+        "problem": "Hình hộp chữ nhật có bao nhiêu cặp cạnh vuông góc?",
+        "steps": [
+          "Mỗi cạnh vuông góc với 8 cạnh.",
+          "12·8/2 = 48."
+        ],
+        "answer": "48"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hình lập phương ABCD.A′B′C′D′. Tính góc giữa AC và A′B (độ).",
+      "steps": [
+        "AC ∥ A′C′ nên góc = ∠BA′C′.",
+        "Tam giác A′BC′ đều: 60°."
+      ],
+      "expr": "180/3",
+      "answer": "60"
+    },
+    {
+      "problem": "Trong hình lập phương, góc giữa AB và A′C′ (độ)?",
+      "steps": [
+        "AB ∥ A′B′ nên góc = ∠B′A′C′.",
+        "Tam giác A′B′C′ vuông cân tại B′: 45°."
+      ],
+      "expr": "180/4",
+      "answer": "45"
+    },
+    {
+      "problem": "Hình hộp chữ nhật có bao nhiêu cặp cạnh vuông góc?",
+      "steps": [
+        "Mỗi cạnh vuông góc với 8 cạnh.",
+        "12·8/2 = 48."
+      ],
+      "expr": "12*8/2",
+      "answer": "48"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Góc giữa hai đường thẳng song song bằng (độ):",
+      "expr": "0",
+      "answer": "0",
+      "explain": "Hai đường song song có góc 0°.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Góc giữa hai đường thẳng vuông góc bằng (độ):",
+      "expr": "90",
+      "answer": "90",
+      "explain": "Theo định nghĩa.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Trong hình lập phương ABCD.A′B′C′D′, góc giữa AB và A′D′ (độ) là:",
+      "expr": "90",
+      "answer": "90",
+      "explain": "AB ∥ A′B′ ⟂ A′D′ nên bằng 90°.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Trong hình lập phương, góc giữa AB và A′B′ (độ) là:",
+      "expr": "0",
+      "answer": "0",
+      "explain": "AB ∥ A′B′.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Góc giữa hai đường thẳng trong không gian có số đo thuộc:",
+      "choices": [
+        "[0°; 90°]",
+        "[0°; 180°]",
+        "(90°; 180°)",
+        "[−90°; 90°]"
+      ],
+      "answer": 0,
+      "explain": "Góc giữa hai đường thẳng luôn không vượt quá 90°.",
+      "wrong_explain": {
+        "1": "180° chỉ dùng với góc giữa hai tia/vectơ.",
+        "2": "Góc giữa hai đường không thể tù.",
+        "3": "Góc không âm."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình lập phương ABCD.A′B′C′D′. Góc giữa AB và A′C′ (độ):",
+      "expr": "180/4",
+      "answer": "45",
+      "explain": "∠B′A′C′ = 45°.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình lập phương ABCD.A′B′C′D′. Góc giữa AC và A′B (độ):",
+      "expr": "180/3",
+      "answer": "60",
+      "explain": "Tam giác A′BC′ đều nên 60°.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình lập phương ABCD.A′B′C′D′. Góc giữa AC và BD (độ):",
+      "expr": "90",
+      "answer": "90",
+      "explain": "Hai đường chéo hình vuông ABCD vuông góc.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tứ diện đều ABCD. Góc giữa AB và CD (độ):",
+      "expr": "90",
+      "answer": "90",
+      "explain": "Hai cạnh đối của tứ diện đều vuông góc.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tứ diện đều ABCD. Góc giữa hai cạnh AB và AC (độ):",
+      "expr": "180/3",
+      "answer": "60",
+      "explain": "Tam giác ABC đều nên 60°.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC vuông tại A. Góc giữa AB và AC (độ):",
+      "expr": "90",
+      "answer": "90",
+      "explain": "Định nghĩa tam giác vuông.",
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nếu a ∥ b và a ⟂ c thì:",
+      "choices": [
+        "b ⟂ c",
+        "b ∥ c",
+        "b cắt c tại góc 45°",
+        "b ≡ c"
+      ],
+      "answer": 0,
+      "explain": "Hai đường song song có cùng góc với đường thứ ba.",
+      "wrong_explain": {
+        "1": "Không thể song song với c khi a ⟂ c.",
+        "2": "Góc là 90° chứ không phải 45°.",
+        "3": "Không thể trùng."
+      },
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình hộp chữ nhật có bao nhiêu cặp cạnh vuông góc?",
+      "expr": "12*8/2",
+      "answer": "48",
+      "explain": "Mỗi cạnh vuông góc 8 cạnh: 48 cặp.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình hộp chữ nhật có bao nhiêu cặp cạnh song song?",
+      "expr": "3*4*3/2",
+      "answer": "18",
+      "explain": "Mỗi nhóm 4 cạnh có C(4,2) = 6 cặp; ba nhóm: 18.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình lập phương ABCD.A′B′C′D′. Góc giữa AB′ và BC′ (độ):",
+      "expr": "180/3",
+      "answer": "60",
+      "explain": "AB′ ∥ DC′, tam giác BC′D đều nên 60°.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình lập phương, góc giữa A′C′ và BD (độ):",
+      "expr": "90",
+      "answer": "90",
+      "explain": "A′C′ ∥ AC mà AC ⟂ BD.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tứ diện đều cạnh a, M là trung điểm AB. Góc giữa CM và AB (độ):",
+      "expr": "90",
+      "answer": "90",
+      "explain": "CM là trung tuyến cũng là đường cao của tam giác đều ABC nên CM ⟂ AB.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khẳng định nào đúng trong hình lập phương ABCD.A′B′C′D′?",
+      "choices": [
+        "AC ⟂ B′D′",
+        "AC ⟂ A′B",
+        "AB′ ⟂ A′D′",
+        "AB ∥ CC′"
+      ],
+      "answer": 0,
+      "explain": "AC ∥ A′C′ và A′C′ ⟂ B′D′ (hai đường chéo hình vuông).",
+      "wrong_explain": {
+        "1": "AC và A′B tạo góc 60°, không vuông góc.",
+        "2": "AB′ và A′D′ tạo góc 60°, không vuông góc.",
+        "3": "AB ⟂ CC′ chứ không song song."
+      },
+      "id": "q18"
+    }
+  ]
+}
