@@ -69,7 +69,7 @@
     const grid = h('div', { class: 'vocab-grid' });
     for (const v of vocab) {
       const card = h('div', { class: 'vocab-card' });
-      const top = h('div', { class: 'vocab-top' }, h('b', {}, v.w), h('span', { class: 'vocab-pos' }, `(${v.pos})`));
+      const top = h('div', { class: 'vocab-top' }, h('b', {}, v.w), ...(v.ipa ? [h('span', { class: 'vocab-ipa', lang: 'en' }, v.ipa)] : []), h('span', { class: 'vocab-pos' }, `(${v.pos})`));
       if (canSpeak) {
         const b = h('button', { type: 'button', class: 'vocab-speak', 'aria-label': `Nghe từ ${v.w}`, title: 'Nghe' }, '🔊');
         b.addEventListener('click', () => speak(v.w));
