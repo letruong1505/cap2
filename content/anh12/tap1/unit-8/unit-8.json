@@ -19,19 +19,24 @@
       "vi": "bộ phận cơ thể"
     },
     {
+      "w": "captivity",
+      "pos": "n",
+      "vi": "sự nuôi nhốt"
+    },
+    {
       "w": "conservation",
       "pos": "n",
-      "vi": "sự bảo tồn"
+      "vi": "sự bảo vệ, sự bảo tồn"
     },
     {
       "w": "conserve",
       "pos": "v",
-      "vi": "bảo tồn"
+      "vi": "bảo vệ, bảo tồn"
     },
     {
-      "w": "coral reef",
-      "pos": "np",
-      "vi": "rạn san hô"
+      "w": "coral",
+      "pos": "n",
+      "vi": "san hô"
     },
     {
       "w": "critically endangered",
@@ -44,9 +49,19 @@
       "vi": "mảnh vỡ, mảnh vụn"
     },
     {
+      "w": "degrade",
+      "pos": "v",
+      "vi": "xuống cấp"
+    },
+    {
+      "w": "enclosure",
+      "pos": "n",
+      "vi": "chuồng thú"
+    },
+    {
       "w": "endangered",
       "pos": "adj",
-      "vi": "có nguy cơ tuyệt chủng"
+      "vi": "bị đe doạ, gặp nguy hiểm"
     },
     {
       "w": "extinct",
@@ -56,7 +71,7 @@
     {
       "w": "forest clearance",
       "pos": "np",
-      "vi": "sự phá rừng"
+      "vi": "sự chặt, phá rừng"
     },
     {
       "w": "house",
@@ -81,17 +96,17 @@
     {
       "w": "nursery",
       "pos": "n",
-      "vi": "vườn ươm, nơi nuôi dưỡng"
+      "vi": "vườn ươm"
     },
     {
       "w": "poach",
       "pos": "v",
-      "vi": "săn bắt trái phép"
+      "vi": "săn bắn bất hợp pháp"
     },
     {
       "w": "primate",
       "pos": "n",
-      "vi": "động vật linh trưởng"
+      "vi": "bộ (họ) linh trưởng"
     },
     {
       "w": "rare",
@@ -110,12 +125,12 @@
     },
     {
       "w": "sea turtle",
-      "pos": "np",
+      "pos": "n",
       "vi": "rùa biển"
     },
     {
       "w": "sign language",
-      "pos": "np",
+      "pos": "n",
       "vi": "ngôn ngữ kí hiệu"
     },
     {
@@ -126,64 +141,59 @@
     {
       "w": "survive",
       "pos": "v",
-      "vi": "sống sót, tồn tại"
+      "vi": "tồn tại"
+    },
+    {
+      "w": "threatened",
+      "pos": "adj",
+      "vi": "bị đe doạ"
     },
     {
       "w": "vulnerable",
       "pos": "adj",
       "vi": "dễ bị tổn thương"
-    },
-    {
-      "w": "habitat",
-      "pos": "n",
-      "vi": "môi trường sống"
-    },
-    {
-      "w": "species",
-      "pos": "n",
-      "vi": "loài"
     }
   ],
   "crossword": {
     "theme": "Wildlife conservation",
-    "keyword": "rescue",
+    "keyword": "marine",
     "seconds": 240,
     "words": [
       {
-        "answer": "rare",
+        "answer": "mammal",
         "keyIndex": 0,
+        "clueVi": "động vật có vú",
+        "clueEn": "an animal that feeds its young with milk"
+      },
+      {
+        "answer": "rare",
+        "keyIndex": 1,
         "clueVi": "quý hiếm",
         "clueEn": "not found very often"
       },
       {
-        "answer": "release",
-        "keyIndex": 1,
-        "clueVi": "thả",
-        "clueEn": "to let an animal go free"
-      },
-      {
-        "answer": "species",
+        "answer": "rescue",
         "keyIndex": 0,
-        "clueVi": "loài",
-        "clueEn": "a group of animals or plants of the same kind"
+        "clueVi": "giải cứu",
+        "clueEn": "to save an animal or person from danger"
       },
       {
-        "answer": "conserve",
-        "keyIndex": 0,
-        "clueVi": "bảo tồn",
-        "clueEn": "to protect something from being destroyed"
-      },
-      {
-        "answer": "survive",
-        "keyIndex": 1,
-        "clueVi": "sống sót",
-        "clueEn": "to continue to live"
+        "answer": "monitor",
+        "keyIndex": 3,
+        "clueVi": "giám sát",
+        "clueEn": "to watch and check something regularly"
       },
       {
         "answer": "extinct",
-        "keyIndex": 0,
+        "keyIndex": 4,
         "clueVi": "tuyệt chủng",
         "clueEn": "no longer existing"
+      },
+      {
+        "answer": "survive",
+        "keyIndex": 6,
+        "clueVi": "sống sót",
+        "clueEn": "to continue to live"
       }
     ]
   },
