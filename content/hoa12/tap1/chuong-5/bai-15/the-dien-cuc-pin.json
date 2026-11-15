@@ -1,0 +1,279 @@
+{
+  "id": "bai-15",
+  "grade": 12,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Hóa học 12",
+  "chapter": "Chương 5. Pin điện và điện phân",
+  "lesson": "Bài 15. Thế điện cực và nguồn điện hóa học",
+  "section": "",
+  "bookPage": 67,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cặp oxi hóa – khử của kim loại gồm dạng oxi hóa (Mⁿ⁺) và dạng khử (M) của cùng một nguyên tố: Mⁿ⁺ + ne ⇌ M, ví dụ Zn²⁺/Zn, Cu²⁺/Cu, Ag⁺/Ag. Nguyên tử kim loại là chất khử, ion kim loại là chất oxi hóa."
+    },
+    {
+      "type": "text",
+      "content": "Thế điện cực chuẩn E° là đại lượng đặc trưng cho điện cực ở điều kiện chuẩn (nồng độ ion 1 M, 25 °C); quy ước E°(2H⁺/H₂) = 0 V. Một số giá trị (V): Li⁺/Li −3,040; K⁺/K −2,924; Ca²⁺/Ca −2,84; Na⁺/Na −2,713; Mg²⁺/Mg −2,356; Al³⁺/Al −1,676; Zn²⁺/Zn −0,762; Fe²⁺/Fe −0,44; Ni²⁺/Ni −0,257; Sn²⁺/Sn −0,137; Pb²⁺/Pb −0,126; 2H⁺/H₂ 0,000; Cu²⁺/Cu +0,340; Fe³⁺/Fe²⁺ +0,771; Ag⁺/Ag +0,799; Au³⁺/Au +1,52."
+    },
+    {
+      "type": "text",
+      "content": "Ý nghĩa: E° càng nhỏ thì dạng khử có tính khử càng mạnh và dạng oxi hóa có tính oxi hóa càng yếu; E° càng lớn thì dạng oxi hóa càng mạnh, dạng khử càng yếu. Dãy điện hóa của kim loại (sắp theo E° tăng): K, Ca, Na, Mg, Al, Zn, Fe, Ni, Sn, Pb, H, Cu, Ag, Au."
+    },
+    {
+      "type": "text",
+      "content": "Chiều phản ứng: chất khử của cặp có E° nhỏ hơn tác dụng với chất oxi hóa của cặp có E° lớn hơn (quy tắc α). Ví dụ Zn + Cu²⁺ → Zn²⁺ + Cu; Cu + 2Ag⁺ → Cu²⁺ + 2Ag. Kim loại có E°(Mⁿ⁺/M) < 0 khử được H⁺ của acid thành H₂."
+    },
+    {
+      "type": "text",
+      "content": "Pin Galvani gồm hai điện cực nối với nhau bằng dây dẫn và cầu muối. Anode (cực âm): xảy ra quá trình oxi hóa (cặp có E° nhỏ hơn); cathode (cực dương): xảy ra quá trình khử (cặp có E° lớn hơn). Sức điện động chuẩn của pin: E°pin = E°cathode − E°anode. Với pin Zn–Cu: E° = 0,340 − (−0,762) = 1,102 V."
+    },
+    {
+      "type": "formula",
+      "content": "Zn + Cu²⁺ → Zn²⁺ + Cu   (E°pin = 1,102 V)"
+    },
+    {
+      "type": "text",
+      "content": "Một số nguồn điện khác: acquy (pin sạc, dùng trong ô tô, xe máy; rẻ, ổn định nhưng nặng, gây ô nhiễm chì), pin nhiên liệu (chuyển hóa năng của nhiên liệu như H₂, CH₄ với O₂ thành điện năng; hiệu suất cao, sạch nhưng giá thành cao), pin Mặt Trời (chuyển quang năng thành điện năng; sạch nhưng phụ thuộc thời tiết), pin lithium-ion (pin sạc nhẹ, bền, dùng cho điện thoại, laptop, xe điện), pin khô (pin sơ cấp, không sạc được)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính sức điện động chuẩn của pin Zn–Ag, biết E°(Zn²⁺/Zn) = −0,762 V và E°(Ag⁺/Ag) = +0,799 V.",
+      "steps": [
+        "Cực dương (cathode) là cặp có E° lớn hơn: Ag⁺/Ag; cực âm (anode) là Zn²⁺/Zn.",
+        "E°pin = 0,799 − (−0,762).",
+        "E°pin = 1,561 V."
+      ],
+      "expr": "0.799+0.762",
+      "answer": "1.561"
+    },
+    {
+      "problem": "Pin điện hóa tạo bởi Pb²⁺/Pb (−0,126 V) và Zn²⁺/Zn (−0,762 V). Tính sức điện động chuẩn của pin.",
+      "steps": [
+        "Zn là anode, Pb là cathode.",
+        "E°pin = −0,126 − (−0,762).",
+        "E°pin = 0,636 V."
+      ],
+      "expr": "-0.126+0.762",
+      "answer": "0.636"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Quy ước giá trị thế điện cực chuẩn của cặp 2H⁺/H₂ là:",
+      "choices": [
+        "+1 V",
+        "−1 V",
+        "0 V",
+        "+0,34 V"
+      ],
+      "answer": 2,
+      "explain": "Điện cực hydrogen chuẩn được quy ước có thế điện cực chuẩn bằng 0.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Quy ước là 0 V.",
+        "1": "Quy ước là 0 V.",
+        "3": "Đó là thế điện cực chuẩn của cặp Cu²⁺/Cu."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong pin Galvani, tại anode xảy ra quá trình:",
+      "choices": [
+        "Oxi hóa",
+        "Khử",
+        "Trung hòa",
+        "Trao đổi ion"
+      ],
+      "answer": 0,
+      "explain": "Anode là cực âm, nơi chất khử bị oxi hóa nhường electron.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Khử xảy ra ở cathode.",
+        "2": "Không phải quá trình tại điện cực.",
+        "3": "Không phải quá trình điện cực chính."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Sức điện động chuẩn của pin điện hóa được tính theo công thức:",
+      "choices": [
+        "E°pin = E°anode − E°cathode",
+        "E°pin = E°cathode + E°anode",
+        "E°pin = E°anode × E°cathode",
+        "E°pin = E°cathode − E°anode"
+      ],
+      "answer": 3,
+      "explain": "E°pin bằng thế cực dương trừ thế cực âm.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Sai thứ tự.",
+        "1": "Phải lấy hiệu.",
+        "2": "Không phải công thức."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Kim loại có tính khử mạnh nhất trong dãy Ag, Cu, Zn, Mg là:",
+      "choices": [
+        "Ag",
+        "Mg",
+        "Cu",
+        "Zn"
+      ],
+      "answer": 1,
+      "explain": "E° nhỏ nhất (−2,356 V) nên tính khử mạnh nhất.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Ag có E° lớn nhất nên khử yếu nhất.",
+        "2": "Cu khử yếu hơn Zn và Mg.",
+        "3": "Zn khử yếu hơn Mg."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dãy kim loại nào sau đây khử được ion H⁺ trong dung dịch acid ở điều kiện chuẩn?",
+      "choices": [
+        "Zn, Fe, Mg",
+        "Cu, Ag, Au",
+        "Zn, Cu, Ag",
+        "Fe, Ag, Au"
+      ],
+      "answer": 0,
+      "explain": "Kim loại có E°(Mⁿ⁺/M) < 0 đứng trước H trong dãy điện hóa nên khử được H⁺.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Các kim loại này có E° > 0.",
+        "2": "Cu và Ag có E° > 0 nên không khử được H⁺.",
+        "3": "Ag, Au có E° > 0 nên không khử được H⁺."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Phản ứng nào sau đây xảy ra ở điều kiện chuẩn?",
+      "choices": [
+        "Cu + Zn²⁺ → Cu²⁺ + Zn",
+        "Ag + Cu²⁺ → Ag⁺ + Cu",
+        "Fe + Cu²⁺ → Fe²⁺ + Cu",
+        "Cu + Fe²⁺ → Cu²⁺ + Fe"
+      ],
+      "answer": 2,
+      "explain": "Fe (E° = −0,44) khử được Cu²⁺ (E° = +0,340).",
+      "concept": true,
+      "wrong_explain": {
+        "0": "E°(Cu²⁺/Cu) > E°(Zn²⁺/Zn) nên phản ứng này không xảy ra.",
+        "1": "E°(Ag⁺/Ag) > E°(Cu²⁺/Cu) nên phản ứng không xảy ra.",
+        "3": "E°(Cu²⁺/Cu) > E°(Fe²⁺/Fe) nên phản ứng không xảy ra."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vai trò của cầu muối trong pin Galvani là:",
+      "choices": [
+        "Cung cấp electron cho pin",
+        "Làm tăng nồng độ ion kim loại",
+        "Ngăn mọi ion đi qua",
+        "Đóng kín mạch và duy trì sự trung hòa điện của các dung dịch"
+      ],
+      "answer": 3,
+      "explain": "Ion trong cầu muối di chuyển để cân bằng điện tích hai dung dịch.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Electron chạy qua dây dẫn, không qua cầu muối.",
+        "1": "Không phải vai trò của cầu muối.",
+        "2": "Cầu muối cho ion di chuyển qua."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Sức điện động chuẩn của pin Zn–Cu là bao nhiêu volt? (E° Cu²⁺/Cu = 0,340; Zn²⁺/Zn = −0,762)",
+      "expr": "0.340+0.762",
+      "answer": "1.102",
+      "explain": "E° = 0,340 − (−0,762) = 1,102 V.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Sức điện động chuẩn của pin Cu–Ag là bao nhiêu volt? (E° Ag⁺/Ag = 0,799; Cu²⁺/Cu = 0,340)",
+      "expr": "0.799-0.340",
+      "answer": "0.459",
+      "explain": "E° = 0,799 − 0,340 = 0,459 V.",
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Pin gồm Pb²⁺/Pb (−0,126 V) và Zn²⁺/Zn (−0,762 V). Sức điện động chuẩn của pin là bao nhiêu volt?",
+      "expr": "-0.126+0.762",
+      "answer": "0.636",
+      "explain": "E° = −0,126 − (−0,762) = 0,636 V.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một pin có cực dương là Ag⁺/Ag (0,799 V) và sức điện động chuẩn 1,056 V. Thế điện cực chuẩn của cực âm là bao nhiêu volt?",
+      "expr": "0.799-1.056",
+      "answer": "-0.257",
+      "explain": "E°anode = 0,799 − 1,056 = −0,257 V (cặp Ni²⁺/Ni).",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Pin điện hóa Zn–Cu hoạt động, khối lượng thanh Zn giảm 6,5 g (Zn = 65). Số mol electron đã chuyển qua dây dẫn là bao nhiêu? (nhập số thập phân)",
+      "expr": "6.5/65*2",
+      "answer": "0.2",
+      "explain": "Zn − 2e → Zn²⁺: n(Zn) = 0,1 mol → n(e) = 0,2 mol.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong pin Zn–Cu, khi thanh Zn tan 6,5 g (0,1 mol) thì khối lượng Cu bám vào cathode là bao nhiêu gam? (Cu = 64)",
+      "expr": "6.5/65*64",
+      "answer": "6.4",
+      "explain": "n(Cu) = n(Zn) = 0,1 mol → m = 6,4 g.",
+      "id": "q13"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Cho các kim loại Fe, Ni, Sn, Cu. Để lập pin có Ag⁺/Ag làm cực dương với sức điện động chuẩn 1,056 V thì kim loại M cần chọn là: (E° Ag⁺/Ag = 0,799 V; Fe −0,44; Ni −0,257; Sn −0,137; Cu 0,340)",
+      "choices": [
+        "Fe",
+        "Ni",
+        "Sn",
+        "Cu"
+      ],
+      "answer": 1,
+      "explain": "E°M = 0,799 − 1,056 = −0,257 V ứng với cặp Ni²⁺/Ni.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Pin Fe–Ag có E° = 1,239 V.",
+        "2": "Pin Sn–Ag có E° = 0,936 V.",
+        "3": "Pin Cu–Ag có E° = 0,459 V."
+      },
+      "id": "q14"
+    }
+  ]
+}

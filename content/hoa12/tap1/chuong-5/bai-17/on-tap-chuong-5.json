@@ -1,0 +1,197 @@
+{
+  "id": "bai-17",
+  "grade": 12,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Hóa học 12",
+  "chapter": "Chương 5. Pin điện và điện phân",
+  "lesson": "Bài 17. Ôn tập chương 5",
+  "section": "",
+  "bookPage": 85,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Thế điện cực chuẩn E° đánh giá khả năng khử của dạng khử và khả năng oxi hóa của dạng oxi hóa; E° càng lớn thì tính oxi hóa của Mⁿ⁺ càng mạnh và tính khử của M càng yếu. Phản ứng giữa hai cặp: chất oxi hóa của cặp có E° lớn oxi hóa chất khử của cặp có E° nhỏ."
+    },
+    {
+      "type": "text",
+      "content": "Pin Galvani: anode (−) oxi hóa, cathode (+) khử; E°pin = E°cathode − E°anode. Điện phân: cathode khử chất oxi hóa mạnh nhất, anode oxi hóa chất khử mạnh nhất; ứng dụng sản xuất kim loại, tinh chế kim loại, mạ điện."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Sức điện động chuẩn của pin Mg–Ag, biết E°(Mg²⁺/Mg) = −2,356 V và E°(Ag⁺/Ag) = +0,799 V.",
+      "steps": [
+        "E° = 0,799 − (−2,356).",
+        "E° = 3,155 V."
+      ],
+      "expr": "0.799+2.356",
+      "answer": "3.155"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong các kim loại Al, Ag, Mg, Fe, kim loại có tính khử yếu nhất là:",
+      "choices": [
+        "Al",
+        "Ag",
+        "Mg",
+        "Fe"
+      ],
+      "answer": 1,
+      "explain": "Ag có E° lớn nhất (+0,799 V) nên khử yếu nhất.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Al khử mạnh hơn Ag.",
+        "2": "Mg khử mạnh hơn Ag.",
+        "3": "Fe khử mạnh hơn Ag."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số kim loại trong Al, Ag, Mg, Fe khử được ion H⁺ thành H₂ ở điều kiện chuẩn là:",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "explain": "Al, Mg, Fe có E° < 0 nên khử được H⁺.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Có ba kim loại có E° < 0.",
+        "1": "Có ba kim loại có E° < 0.",
+        "3": "Ag có E° > 0 nên không khử được H⁺."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Số kim loại trong Al, Ag, Mg, Fe khử được ion Ag⁺ thành Ag ở điều kiện chuẩn là:",
+      "choices": [
+        "3",
+        "4",
+        "1",
+        "2"
+      ],
+      "answer": 0,
+      "explain": "Al, Mg, Fe có E° < +0,799 V nên khử được Ag⁺.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Ag không tự khử ion Ag⁺.",
+        "2": "Có nhiều hơn một kim loại có E° nhỏ hơn Ag.",
+        "3": "Có ba kim loại: Al, Mg, Fe."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Điện phân dung dịch nào sau đây (điện cực trơ) thu được kim loại ở cathode?",
+      "choices": [
+        "NaCl",
+        "KNO₃",
+        "MgCl₂",
+        "CuSO₄"
+      ],
+      "answer": 3,
+      "explain": "Cu²⁺ bị khử trước H₂O nên tạo Cu.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Thu được H₂ ở cathode.",
+        "1": "Thu được H₂ ở cathode.",
+        "2": "Thu được H₂ ở cathode."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trong mạ điện, vật cần mạ đóng vai trò:",
+      "choices": [
+        "Anode",
+        "Cathode",
+        "Cầu muối",
+        "Chất điện li"
+      ],
+      "answer": 1,
+      "explain": "Ion kim loại bị khử bám lên vật nên vật là cathode.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Kim loại mạ là anode.",
+        "2": "Không có cầu muối trong bình mạ điện.",
+        "3": "Chất điện li là dung dịch muối."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Sức điện động chuẩn của pin Pb–Zn là bao nhiêu volt? (E° Pb²⁺/Pb = −0,126; Zn²⁺/Zn = −0,762)",
+      "expr": "-0.126+0.762",
+      "answer": "0.636",
+      "explain": "E° = −0,126 − (−0,762) = 0,636 V.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Pin có cực dương Ag⁺/Ag (0,799 V), E°pin = 1,056 V. Giá trị E° của cặp ở cực âm là bao nhiêu volt?",
+      "expr": "0.799-1.056",
+      "answer": "-0.257",
+      "explain": "E° = 0,799 − 1,056 = −0,257 V (Ni²⁺/Ni).",
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Pin Fe–Ag có sức điện động chuẩn là bao nhiêu volt? (E° Fe²⁺/Fe = −0,44; Ag⁺/Ag = 0,799)",
+      "expr": "0.799+0.44",
+      "answer": "1.239",
+      "explain": "E° = 0,799 − (−0,44) = 1,239 V.",
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Điện phân dung dịch CuSO₄ với I = 5 A trong 1930 s. Số mol electron trao đổi là bao nhiêu? (F = 96 500; nhập số thập phân)",
+      "expr": "5*1930/96500",
+      "answer": "0.1",
+      "explain": "n(e) = 9650/96 500 = 0,1 mol.",
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khối lượng Cu bám ở cathode khi trao đổi 0,1 mol electron là bao nhiêu gam? (Cu = 64)",
+      "expr": "0.1/2*64",
+      "answer": "3.2",
+      "explain": "n(Cu) = 0,05 mol → m = 3,2 g.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Điện phân dung dịch NaCl bão hòa có màng ngăn đến khi thu được 1,12 L khí H₂ (đktc, 22,4 L/mol). Số mol NaOH tạo thành là bao nhiêu? (nhập số thập phân)",
+      "expr": "112/2240*2",
+      "answer": "0.1",
+      "explain": "n(H₂) = 0,05 mol → n(NaOH) = 0,1 mol.",
+      "id": "q11"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Điện phân hoàn toàn 1 mol Al₂O₃ nóng chảy thì số mol electron trao đổi là bao nhiêu?",
+      "expr": "6",
+      "answer": "6",
+      "explain": "1 mol Al₂O₃ tạo 2 mol Al, mỗi Al³⁺ nhận 3e nên cần 6 mol electron.",
+      "id": "q12"
+    }
+  ]
+}
