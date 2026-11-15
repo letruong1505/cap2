@@ -13,7 +13,7 @@
       { id: 'ranh-gioi-so', name: 'Ranh giới số', note: 'Học sinh THPT & tân sinh viên', price: 1590000 },
     ] },
     { group: 'Giáo trình Văn hóa', items: [6, 7, 8, 9, 12].map((g) => ({
-      id: 'van-hoa-' + g, name: 'Giáo trình Văn hóa lớp ' + g, note: g === 12 ? '4 môn học' : '6 môn học', price: g === 12 ? 499000 : 399000, grade: g })) },
+      id: 'van-hoa-' + g, name: 'Giáo trình Văn hóa lớp ' + g, note: g === 12 ? '5 môn học' : '6 môn học', price: g === 12 ? 499000 : 399000, grade: g })) },
   ];
   const ALL = GROUPS.flatMap((c) => c.items);
   const byId = Object.fromEntries(ALL.map((x) => [x.id, x]));
