@@ -1,0 +1,342 @@
+{
+  "id": "bai-3",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 1",
+  "chapter": "Chương II. Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
+  "lesson": "Bài 3. Bất phương trình bậc nhất hai ẩn",
+  "section": "",
+  "bookPage": 22,
+  "requirements": [
+    "Nhận biết bất phương trình bậc nhất hai ẩn và nghiệm của nó.",
+    "Biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn trên mặt phẳng toạ độ."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Bất phương trình bậc nhất hai ẩn x, y có dạng tổng quát ax + by ≤ c (hoặc ax + by < c, ax + by ≥ c, ax + by > c), trong đó a, b, c là các số thực đã cho, a và b không đồng thời bằng 0. Cặp số (x₀; y₀) là một nghiệm nếu thay vào bất phương trình ta được mệnh đề đúng."
+    },
+    {
+      "type": "text",
+      "content": "Trong mặt phẳng toạ độ Oxy, tập hợp các điểm có toạ độ là nghiệm của bất phương trình gọi là miền nghiệm của nó. Đường thẳng d: ax + by = c chia mặt phẳng thành hai nửa mặt phẳng; một trong hai nửa (kể cả bờ d) là miền nghiệm của ax + by ≤ c, nửa còn lại là miền nghiệm của ax + by ≥ c."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t10-b3-mien-nghiem.svg",
+      "caption": "Miền nghiệm của 2x + 3y ≤ 6 là nửa mặt phẳng chứa gốc O, kể cả bờ"
+    },
+    {
+      "type": "method",
+      "title": "Biểu diễn miền nghiệm của bất phương trình ax + by ≤ c",
+      "when": "Đề yêu cầu vẽ miền nghiệm, hoặc hỏi điểm nào thuộc miền nghiệm, hoặc hỏi miền nghiệm nằm phía nào của đường thẳng.",
+      "steps": [
+        "Vẽ đường thẳng d: ax + by = c (tìm hai điểm, thường là giao với hai trục).",
+        "Lấy một điểm M₀(x₀; y₀) không thuộc d, thường là gốc O(0; 0) nếu c ≠ 0, và tính ax₀ + by₀.",
+        "Nếu ax₀ + by₀ ≤ c thì nửa mặt phẳng chứa M₀ (bờ d) là miền nghiệm; nếu không thì nửa mặt phẳng còn lại là miền nghiệm.",
+        "Với dấu < hoặc > thì bỏ bờ d (vẽ nét đứt); với ≤ hoặc ≥ thì lấy cả bờ."
+      ],
+      "notes": [
+        "Nếu d đi qua O (c = 0) thì chọn điểm khác, ví dụ (1; 0) hoặc (0; 1).",
+        "Kiểm tra điểm thuộc miền nghiệm chỉ cần thay toạ độ vào bất phương trình."
+      ],
+      "sample": {
+        "problem": "Biểu diễn miền nghiệm của bất phương trình x − 2y > 4.",
+        "steps": [
+          "Vẽ d: x − 2y = 4 qua hai điểm (4; 0) và (0; −2), vẽ nét đứt vì dấu >.",
+          "Thay O(0; 0): 0 − 0 = 0 > 4 sai, nên O không thuộc miền nghiệm.",
+          "Miền nghiệm là nửa mặt phẳng bờ d không chứa O, không kể bờ."
+        ],
+        "answer": "Nửa mặt phẳng không chứa O, bỏ bờ"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cặp số nào sau đây là nghiệm của bất phương trình 2x − y ≥ 1: (0; 0), (1; 0), (2; 5)?",
+      "steps": [
+        "(0; 0): 2·0 − 0 = 0 ≥ 1 sai, không là nghiệm.",
+        "(1; 0): 2·1 − 0 = 2 ≥ 1 đúng, là nghiệm.",
+        "(2; 5): 4 − 5 = −1 ≥ 1 sai, không là nghiệm.",
+        "Vậy có 1 cặp là nghiệm."
+      ],
+      "expr": "1",
+      "answer": "1"
+    },
+    {
+      "problem": "Một cửa hàng bán hai loại bánh: bánh A giá 20 nghìn đồng, bánh B giá 30 nghìn đồng. Bạn Lan có 120 nghìn đồng. Gọi x, y lần lượt là số bánh A, bánh B Lan mua. Viết bất phương trình mô tả điều kiện về số tiền và kiểm tra Lan có mua được 3 bánh A và 2 bánh B không.",
+      "steps": [
+        "Số tiền phải trả là 20x + 30y (nghìn đồng), không vượt quá 120: 20x + 30y ≤ 120, với x, y là số tự nhiên.",
+        "Với x = 3, y = 2: 20·3 + 30·2 = 120 ≤ 120 đúng.",
+        "Vậy Lan mua được, vừa hết 120 nghìn đồng."
+      ],
+      "expr": "20*3+30*2",
+      "answer": "120"
+    },
+    {
+      "problem": "Biểu diễn miền nghiệm của bất phương trình x + y ≤ 3.",
+      "steps": [
+        "Vẽ đường thẳng d: x + y = 3 đi qua (3; 0) và (0; 3).",
+        "Thay O(0; 0): 0 + 0 = 0 ≤ 3 đúng nên O thuộc miền nghiệm.",
+        "Miền nghiệm là nửa mặt phẳng bờ d chứa gốc O, kể cả bờ d."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bất phương trình nào sau đây là bất phương trình bậc nhất hai ẩn?",
+      "choices": [
+        "2x − 3y < 5",
+        "x² + y ≥ 1",
+        "xy ≤ 4",
+        "x + 1/y > 0"
+      ],
+      "answer": 0,
+      "explain": "Dạng ax + by < c với a = 2, b = −3.",
+      "wrong_explain": {
+        "1": "Có x² nên không phải bậc nhất.",
+        "2": "Có tích xy.",
+        "3": "Có 1/y."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cặp số nào là nghiệm của bất phương trình x + 2y ≤ 4?",
+      "choices": [
+        "(0; 0)",
+        "(3; 1)",
+        "(0; 3)",
+        "(5; 0)"
+      ],
+      "answer": 0,
+      "explain": "0 + 0 = 0 ≤ 4 đúng.",
+      "wrong_explain": {
+        "1": "3 + 2 = 5 > 4.",
+        "2": "0 + 6 = 6 > 4.",
+        "3": "5 > 4."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Miền nghiệm của bất phương trình ax + by ≤ c là:",
+      "choices": [
+        "Một nửa mặt phẳng kể cả bờ là đường thẳng ax + by = c",
+        "Một đường thẳng",
+        "Một nửa mặt phẳng không kể bờ",
+        "Toàn bộ mặt phẳng"
+      ],
+      "answer": 0,
+      "explain": "Dấu ≤ nên lấy cả bờ.",
+      "wrong_explain": {
+        "1": "Đường thẳng là miền nghiệm của phương trình.",
+        "2": "Không kể bờ ứng với dấu < hoặc >.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điểm O(0; 0) thuộc miền nghiệm của bất phương trình nào?",
+      "choices": [
+        "x − y < 2",
+        "x + y > 1",
+        "2x − y ≥ 3",
+        "x − 3y ≤ −1"
+      ],
+      "answer": 0,
+      "explain": "0 − 0 = 0 < 2 đúng.",
+      "wrong_explain": {
+        "1": "0 > 1 sai.",
+        "2": "0 ≥ 3 sai.",
+        "3": "0 ≤ −1 sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Miền nghiệm của bất phương trình 3x + 2y > 6 là nửa mặt phẳng:",
+      "choices": [
+        "bờ là đường thẳng 3x + 2y = 6, không chứa gốc O, không kể bờ",
+        "bờ là đường thẳng 3x + 2y = 6, chứa gốc O, không kể bờ",
+        "bờ là đường thẳng 3x + 2y = 6, không chứa gốc O, kể cả bờ",
+        "bờ là đường thẳng 3x + 2y = 6, chứa gốc O, kể cả bờ"
+      ],
+      "answer": 0,
+      "explain": "Thay O: 0 > 6 sai nên miền nghiệm không chứa O; dấu > nên bỏ bờ.",
+      "wrong_explain": {
+        "1": "O không thoả mãn.",
+        "2": "Dấu > thì không kể bờ.",
+        "3": "Sai cả hai ý."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điểm nào sau đây KHÔNG thuộc miền nghiệm của x − y ≥ −1?",
+      "choices": [
+        "(0; 2)",
+        "(1; 1)",
+        "(2; 0)",
+        "(−1; 0)"
+      ],
+      "answer": 0,
+      "explain": "0 − 2 = −2 ≥ −1 sai.",
+      "wrong_explain": {
+        "1": "0 ≥ −1 đúng.",
+        "2": "2 ≥ −1 đúng.",
+        "3": "−1 ≥ −1 đúng."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nửa mặt phẳng bờ là đường thẳng y = 2x (kể cả bờ) chứa điểm (1; 0) là miền nghiệm của bất phương trình:",
+      "choices": [
+        "2x − y ≥ 0",
+        "2x − y ≤ 0",
+        "2x − y > 0",
+        "y − 2x ≥ 0"
+      ],
+      "answer": 0,
+      "explain": "Thay (1; 0): 2 − 0 = 2 ≥ 0 đúng; kể cả bờ nên dấu ≥.",
+      "wrong_explain": {
+        "1": "(1; 0) không thoả mãn.",
+        "2": "Kể cả bờ thì dùng ≥.",
+        "3": "(1; 0) không thoả mãn."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Với x = 2, bất phương trình 3x + y ≤ 10 có nghiệm (2; y) với y nguyên dương lớn nhất bằng:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "6 + y ≤ 10 ⇔ y ≤ 4.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đường thẳng 4x + 5y = 20 cắt trục Ox tại điểm có hoành độ bằng:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Cho y = 0: 4x = 20 ⇔ x = 5.",
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có bao nhiêu cặp số tự nhiên (x; y) là nghiệm của bất phương trình x + y ≤ 2?",
+      "expr": "6",
+      "answer": "6",
+      "explain": "(0;0), (0;1), (0;2), (1;0), (1;1), (2;0): 6 cặp.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một xưởng có 60 giờ máy. Sản phẩm I cần 2 giờ, sản phẩm II cần 3 giờ. Nếu làm 12 sản phẩm I thì số sản phẩm II nhiều nhất có thể làm là:",
+      "expr": "(60-2*12)/3",
+      "answer": "12",
+      "explain": "2·12 + 3y ≤ 60 ⇔ 3y ≤ 36 ⇔ y ≤ 12.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bạn An có không quá 50 nghìn đồng để mua vở (7 nghìn/quyển) và bút (3 nghìn/chiếc). Gọi x là số vở, y là số bút. Bất phương trình mô tả là:",
+      "choices": [
+        "7x + 3y ≤ 50",
+        "7x + 3y ≥ 50",
+        "3x + 7y ≤ 50",
+        "7x + 3y < 50"
+      ],
+      "answer": 0,
+      "explain": "Tổng tiền 7x + 3y không vượt quá 50.",
+      "wrong_explain": {
+        "1": "Sai chiều.",
+        "2": "Nhầm giá vở và bút.",
+        "3": "Có thể dùng đúng 50 nghìn nên dấu ≤."
+      },
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Miền nghiệm của bất phương trình −x + 2y ≤ 4 chứa điểm nào sau đây?",
+      "choices": [
+        "(2; 1)",
+        "(0; 3)",
+        "(−4; 1)",
+        "(−2; 2)"
+      ],
+      "answer": 0,
+      "explain": "−2 + 2 = 0 ≤ 4 đúng.",
+      "wrong_explain": {
+        "1": "0 + 6 = 6 > 4.",
+        "2": "4 + 2 = 6 > 4.",
+        "3": "2 + 4 = 6 > 4."
+      },
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho bất phương trình 2x + y ≤ m. Giá trị nhỏ nhất của m để điểm (3; 4) thuộc miền nghiệm là:",
+      "expr": "2*3+4",
+      "answer": "10",
+      "explain": "Cần 6 + 4 ≤ m ⇔ m ≥ 10.",
+      "id": "q14"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Miền nghiệm của bất phương trình (x − 1)(x + 2) + y ≥ x² + x là:",
+      "choices": [
+        "Nửa mặt phẳng bờ y = 2 chứa điểm (0; 3), kể cả bờ",
+        "Nửa mặt phẳng bờ y = −2 chứa O",
+        "Nửa mặt phẳng bờ x = 1 chứa O",
+        "Toàn mặt phẳng"
+      ],
+      "answer": 0,
+      "explain": "Khai triển: x² + x − 2 + y ≥ x² + x ⇔ y ≥ 2.",
+      "wrong_explain": {
+        "1": "Rút gọn sai.",
+        "2": "Rút gọn sai.",
+        "3": "Sai."
+      },
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Số cặp số nguyên dương (x; y) thoả mãn 2x + 3y ≤ 12 là:",
+      "expr": "4+3+1",
+      "answer": "8",
+      "explain": "y = 1: x ∈ {1; 2; 3; 4}; y = 2: x ∈ {1; 2; 3}; y = 3: x = 1. Tổng 4 + 3 + 1 = 8 cặp.",
+      "id": "q16"
+    }
+  ]
+}

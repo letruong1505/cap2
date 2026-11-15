@@ -1,0 +1,291 @@
+{
+  "id": "bai-13",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 1",
+  "chapter": "Chương V. Các số đặc trưng của mẫu số liệu không ghép nhóm",
+  "lesson": "Bài 13. Các số đặc trưng đo xu thế trung tâm",
+  "section": "",
+  "bookPage": 78,
+  "requirements": [
+    "Tính số trung bình, trung vị, tứ phân vị, mốt của mẫu số liệu không ghép nhóm.",
+    "Chọn số đặc trưng phù hợp và giải thích ý nghĩa."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Số trung bình của mẫu số liệu x₁, x₂, ..., x_n là x̄ = (x₁ + x₂ + ... + x_n)/n. Nếu giá trị x_i xuất hiện với tần số m_i thì x̄ = (m₁x₁ + m₂x₂ + ... + m_kx_k)/n. Số trung bình bị ảnh hưởng bởi các giá trị bất thường (quá lớn hoặc quá nhỏ)."
+    },
+    {
+      "type": "formula",
+      "content": "x̄ = (x₁ + x₂ + ... + x_n)/n"
+    },
+    {
+      "type": "text",
+      "content": "Trung vị M_e: sắp xếp mẫu theo thứ tự không giảm. Nếu n lẻ, trung vị là số ở chính giữa (vị trí (n + 1)/2); nếu n chẵn, trung vị là trung bình cộng của hai số ở giữa (vị trí n/2 và n/2 + 1). Trung vị không bị ảnh hưởng bởi giá trị bất thường."
+    },
+    {
+      "type": "text",
+      "content": "Tứ phân vị: sắp xếp mẫu không giảm. Q₂ là trung vị của mẫu; Q₁ là trung vị của nửa số liệu bên trái Q₂ (không kể Q₂ nếu n lẻ); Q₃ là trung vị của nửa bên phải Q₂. Ba số Q₁, Q₂, Q₃ chia mẫu thành bốn phần có số lượng xấp xỉ nhau."
+    },
+    {
+      "type": "text",
+      "content": "Mốt M_o là giá trị xuất hiện với tần số lớn nhất trong mẫu. Một mẫu có thể có nhiều mốt hoặc không có mốt (khi mọi giá trị có cùng tần số). Mốt dùng được cả với dữ liệu định tính (ví dụ màu sắc, nhãn hiệu)."
+    },
+    {
+      "type": "method",
+      "title": "Tìm số trung bình, trung vị, tứ phân vị và mốt",
+      "when": "Đề cho dãy số liệu (có thể kèm bảng tần số) và hỏi các số đặc trưng, hoặc hỏi nên dùng số nào để đại diện.",
+      "steps": [
+        "Sắp xếp số liệu theo thứ tự không giảm, đếm n.",
+        "Trung bình: cộng tất cả rồi chia n (với bảng tần số thì nhân giá trị với tần số).",
+        "Trung vị: n lẻ lấy số giữa, n chẵn lấy trung bình hai số giữa.",
+        "Tứ phân vị: tách hai nửa (bỏ trung vị khi n lẻ) rồi tìm trung vị mỗi nửa.",
+        "Mốt: giá trị có tần số lớn nhất."
+      ],
+      "notes": [
+        "Khi mẫu có giá trị bất thường, trung vị đại diện tốt hơn trung bình.",
+        "Q₂ chính là trung vị M_e.",
+        "Phải sắp xếp trước khi tìm trung vị, tứ phân vị."
+      ],
+      "sample": {
+        "problem": "Tìm trung vị và tứ phân vị của mẫu: 3, 7, 1, 5, 9, 2, 8.",
+        "steps": [
+          "Sắp xếp: 1, 2, 3, 5, 7, 8, 9 (n = 7).",
+          "Q₂ = 5 (số thứ 4).",
+          "Nửa trái 1, 2, 3 có trung vị Q₁ = 2; nửa phải 7, 8, 9 có Q₃ = 8."
+        ],
+        "answer": "Q₁ = 2, Q₂ = 5, Q₃ = 8"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Điểm kiểm tra của 8 học sinh: 6, 7, 8, 5, 9, 7, 10, 4. Tính số trung bình, trung vị và mốt.",
+      "steps": [
+        "Tổng = 56, n = 8 nên x̄ = 56/8 = 7.",
+        "Sắp xếp: 4, 5, 6, 7, 7, 8, 9, 10; hai số giữa là 7 và 7 nên M_e = 7.",
+        "Giá trị 7 xuất hiện 2 lần, nhiều nhất, nên M_o = 7."
+      ],
+      "expr": "56/8",
+      "answer": "7"
+    },
+    {
+      "problem": "Thu nhập (triệu đồng/tháng) của 7 người trong một nhóm: 8, 9, 9, 10, 11, 12, 60. Nên dùng số trung bình hay trung vị để đại diện cho thu nhập của nhóm?",
+      "steps": [
+        "x̄ = 119/7 = 17 triệu, cao hơn thu nhập của 6/7 số người vì bị giá trị 60 kéo lên.",
+        "Trung vị M_e = 10 triệu phản ánh đúng hơn mức thu nhập điển hình.",
+        "Vậy nên dùng trung vị."
+      ],
+      "expr": "119/7",
+      "answer": "17"
+    },
+    {
+      "problem": "Bảng tần số số con trong 20 gia đình: 0 con: 3 gia đình; 1 con: 6; 2 con: 9; 3 con: 2. Tính số trung bình.",
+      "steps": [
+        "Tổng số con = 0·3 + 1·6 + 2·9 + 3·2 = 30.",
+        "x̄ = 30/20 = 1,5 con."
+      ],
+      "expr": "30/20",
+      "answer": "1.5"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Số trung bình của mẫu 2, 4, 6, 8, 10 là:",
+      "expr": "30/5",
+      "answer": "6",
+      "explain": "(2 + 4 + 6 + 8 + 10)/5 = 6.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Trung vị của mẫu 5, 1, 9, 3, 7 là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Sắp xếp 1, 3, 5, 7, 9; số giữa là 5.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Mốt của mẫu 2, 3, 3, 5, 3, 7, 5 là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "3 xuất hiện 3 lần, nhiều nhất.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Số đặc trưng nào không bị ảnh hưởng bởi giá trị bất thường?",
+      "choices": [
+        "Trung vị",
+        "Số trung bình",
+        "Tổng các số liệu",
+        "Không có số nào"
+      ],
+      "answer": 0,
+      "explain": "Trung vị chỉ phụ thuộc vị trí giữa của dãy.",
+      "wrong_explain": {
+        "1": "Trung bình bị kéo theo giá trị bất thường.",
+        "2": "Tổng thay đổi theo mọi giá trị.",
+        "3": "Trung vị không bị ảnh hưởng."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Trung vị của mẫu 4, 8, 1, 6 là:",
+      "expr": "(4+6)/2",
+      "answer": "5",
+      "explain": "Sắp xếp 1, 4, 6, 8; n = 4 chẵn nên M_e = (4 + 6)/2 = 5.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mẫu số liệu 1, 3, 4, 6, 7, 9, 10, 12. Tứ phân vị thứ nhất Q₁ là:",
+      "expr": "(3+4)/2",
+      "answer": "3.5",
+      "explain": "Nửa trái 1, 3, 4, 6 có trung vị (3 + 4)/2 = 3,5.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mẫu số liệu 1, 3, 4, 6, 7, 9, 10, 12. Tứ phân vị thứ ba Q₃ là:",
+      "expr": "(9+10)/2",
+      "answer": "9.5",
+      "explain": "Nửa phải 7, 9, 10, 12 có trung vị 9,5.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Điểm của 5 bạn có trung bình 7. Bốn bạn được 6, 8, 9, 5. Điểm bạn còn lại là:",
+      "expr": "35-28",
+      "answer": "7",
+      "explain": "Tổng = 35; 35 − (6 + 8 + 9 + 5) = 7.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bảng tần số: giá trị 1 (tần số 2), 2 (tần số 5), 3 (tần số 3). Số trung bình là:",
+      "expr": "(2+10+9)/10",
+      "answer": "2.1",
+      "explain": "(1·2 + 2·5 + 3·3)/10 = 21/10 = 2,1.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Mẫu 10, 10, 20, 20, 30, 30 có:",
+      "choices": [
+        "không có mốt",
+        "mốt là 10",
+        "mốt là 20",
+        "mốt là 30"
+      ],
+      "answer": 0,
+      "explain": "Mọi giá trị có cùng tần số 2.",
+      "wrong_explain": {
+        "1": "Tần số bằng nhau.",
+        "2": "Tần số bằng nhau.",
+        "3": "Tần số bằng nhau."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mẫu 2, 5, 5, 7, 8, 11, 13, 13, 15 có Q₂ bằng:",
+      "expr": "8",
+      "answer": "8",
+      "explain": "n = 9, số thứ 5 là 8.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mẫu 2, 5, 5, 7, 8, 11, 13, 13, 15. Khoảng Q₃ − Q₁ bằng:",
+      "expr": "13-5",
+      "answer": "8",
+      "explain": "Q₁ = trung vị của 2, 5, 5, 7 là 5; Q₃ = trung vị của 11, 13, 13, 15 là 13.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lương (triệu đồng) của 6 nhân viên: 7, 7, 8, 9, 10, 31. Số trung bình trừ trung vị bằng:",
+      "expr": "12-8.5",
+      "answer": "3.5",
+      "explain": "x̄ = 72/6 = 12; M_e = (8 + 9)/2 = 8,5; hiệu 3,5.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cửa hàng giày muốn biết cỡ giày bán chạy nhất để nhập hàng. Số đặc trưng phù hợp là:",
+      "choices": [
+        "Mốt",
+        "Số trung bình",
+        "Trung vị",
+        "Tứ phân vị"
+      ],
+      "answer": 0,
+      "explain": "Mốt là giá trị xuất hiện nhiều nhất.",
+      "wrong_explain": {
+        "1": "Cỡ trung bình có thể không ai mang.",
+        "2": "Không phản ánh cỡ bán chạy.",
+        "3": "Không phản ánh cỡ bán chạy."
+      },
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lớp 10A có 20 học sinh điểm trung bình 7,5; lớp 10B có 30 học sinh điểm trung bình 8. Điểm trung bình cả hai lớp là:",
+      "expr": "(20*7.5+30*8)/50",
+      "answer": "7.8",
+      "explain": "(150 + 240)/50 = 7,8.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mẫu số liệu gồm 7 số có trung vị 10. Nếu thêm số 100 vào mẫu thì trung vị mới nằm giữa 10 và số liền sau nó. Biết số liền sau 10 trong mẫu là 12, trung vị mới là:",
+      "expr": "(10+12)/2",
+      "answer": "11",
+      "explain": "n = 8, hai số giữa là 10 và 12.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Mẫu gồm 5 số tự nhiên có trung bình 6, trung vị 7, mốt duy nhất 8 và số nhỏ nhất là 1. Số còn lại là:",
+      "expr": "30-1-7-8-8",
+      "answer": "6",
+      "explain": "Tổng 30; mốt 8 xuất hiện ít nhất 2 lần: 1, x, 7, 8, 8 với x ≤ 7 nên x = 30 − 24 = 6.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Mẫu 3, 5, 7, x, 12, 15 (đã sắp xếp) có trung vị 8. Giá trị x là:",
+      "expr": "16-7",
+      "answer": "9",
+      "explain": "(7 + x)/2 = 8 ⇔ x = 9.",
+      "id": "q18"
+    }
+  ]
+}

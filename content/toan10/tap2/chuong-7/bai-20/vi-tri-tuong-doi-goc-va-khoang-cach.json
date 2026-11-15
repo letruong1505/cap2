@@ -1,0 +1,297 @@
+{
+  "id": "bai-20",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 2",
+  "chapter": "Chương VII. Phương pháp toạ độ trong mặt phẳng",
+  "lesson": "Bài 20. Vị trí tương đối giữa hai đường thẳng. Góc và khoảng cách",
+  "section": "",
+  "bookPage": 36,
+  "requirements": [
+    "Xét vị trí tương đối của hai đường thẳng bằng hệ phương trình hoặc vectơ.",
+    "Tính góc giữa hai đường thẳng và khoảng cách từ một điểm đến một đường thẳng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cho Δ₁: a₁x + b₁y + c₁ = 0 và Δ₂: a₂x + b₂y + c₂ = 0. Xét hệ hai phương trình: hệ có nghiệm duy nhất thì hai đường thẳng cắt nhau tại điểm có toạ độ là nghiệm; hệ vô nghiệm thì song song; hệ có vô số nghiệm thì trùng nhau."
+    },
+    {
+      "type": "text",
+      "content": "Dùng vectơ pháp tuyến: →n₁, →n₂ không cùng phương thì cắt nhau; cùng phương thì song song hoặc trùng (kiểm tra một điểm). Δ₁ ⊥ Δ₂ ⇔ →n₁·→n₂ = 0 ⇔ a₁a₂ + b₁b₂ = 0."
+    },
+    {
+      "type": "formula",
+      "content": "cos(Δ₁, Δ₂) = |a₁a₂ + b₁b₂| / (√(a₁² + b₁²)·√(a₂² + b₂²))        0° ≤ (Δ₁, Δ₂) ≤ 90°"
+    },
+    {
+      "type": "text",
+      "content": "Góc giữa hai đường thẳng là góc không tù tạo bởi chúng; có thể tính qua vectơ pháp tuyến hoặc vectơ chỉ phương (công thức tương tự với toạ độ các vectơ chỉ phương)."
+    },
+    {
+      "type": "formula",
+      "content": "d(M₀, Δ) = |ax₀ + by₀ + c| / √(a² + b²)  với M₀(x₀; y₀), Δ: ax + by + c = 0"
+    },
+    {
+      "type": "method",
+      "title": "Tính góc và khoảng cách",
+      "when": "Đề cho hai đường thẳng (tổng quát hoặc tham số) hỏi vị trí tương đối, giao điểm, góc; hoặc cho điểm và đường thẳng hỏi khoảng cách, diện tích tam giác, bán kính đường tròn tiếp xúc.",
+      "steps": [
+        "Đưa các đường thẳng về dạng tổng quát để lấy →n.",
+        "Vị trí tương đối: so sánh tỉ lệ a₁/a₂, b₁/b₂, c₁/c₂ hoặc giải hệ.",
+        "Góc: dùng công thức cos với giá trị tuyệt đối ở tử.",
+        "Khoảng cách: thay toạ độ điểm vào phương trình, lấy giá trị tuyệt đối chia √(a² + b²)."
+      ],
+      "notes": [
+        "Hai đường thẳng vuông góc khi a₁a₂ + b₁b₂ = 0, không cần tính góc.",
+        "Điểm nằm trên đường thẳng thì khoảng cách bằng 0."
+      ],
+      "sample": {
+        "problem": "Tính khoảng cách từ M(2; −1) đến Δ: 3x − 4y + 5 = 0.",
+        "steps": [
+          "d = |3·2 − 4·(−1) + 5|/√(9 + 16) = 15/5 = 3."
+        ],
+        "answer": "3"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Xét vị trí tương đối của d₁: x − 2y + 1 = 0 và d₂: 2x + y − 3 = 0; tìm giao điểm nếu có.",
+      "steps": [
+        "→n₁ = (1; −2), →n₂ = (2; 1) không cùng phương nên hai đường thẳng cắt nhau; hơn nữa 1·2 + (−2)·1 = 0 nên chúng vuông góc.",
+        "Giải hệ: từ d₁, x = 2y − 1; thay vào d₂: 4y − 2 + y − 3 = 0 ⇔ y = 1, x = 1.",
+        "Giao điểm (1; 1)."
+      ],
+      "expr": "1+1",
+      "answer": "2"
+    },
+    {
+      "problem": "Tính góc giữa hai đường thẳng Δ₁: x + y − 2 = 0 và Δ₂: x − 3 = 0.",
+      "steps": [
+        "→n₁ = (1; 1), →n₂ = (1; 0).",
+        "cos φ = |1·1 + 1·0|/(√2·1) = √2/2 nên φ = 45°."
+      ],
+      "expr": "45",
+      "answer": "45"
+    },
+    {
+      "problem": "Cho tam giác ABC với A(1; 2), B(−2; −2), C(4; −1). Tính độ dài đường cao kẻ từ A.",
+      "steps": [
+        "Đường thẳng BC: →BC = (6; 1) nên →n = (1; −6); BC: (x + 2) − 6(y + 2) = 0 ⇔ x − 6y − 10 = 0.",
+        "h = d(A, BC) = |1 − 12 − 10|/√37 = 21/√37 ≈ 3,45."
+      ],
+      "expr": "1-12-10",
+      "answer": "-21"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai đường thẳng 2x − y + 1 = 0 và 4x − 2y + 5 = 0:",
+      "choices": [
+        "song song",
+        "cắt nhau",
+        "trùng nhau",
+        "vuông góc"
+      ],
+      "answer": 0,
+      "explain": "Tỉ lệ 2/4 = −1/−2 ≠ 1/5.",
+      "wrong_explain": {
+        "1": "Pháp tuyến cùng phương.",
+        "2": "Hằng số không tỉ lệ.",
+        "3": "Pháp tuyến cùng phương."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai đường thẳng x + 2y − 1 = 0 và 2x − y + 3 = 0:",
+      "choices": [
+        "vuông góc",
+        "song song",
+        "trùng nhau",
+        "tạo góc 45°"
+      ],
+      "answer": 0,
+      "explain": "1·2 + 2·(−1) = 0.",
+      "wrong_explain": {
+        "1": "Pháp tuyến không cùng phương.",
+        "2": "Sai.",
+        "3": "Góc 90°."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Khoảng cách từ O(0; 0) đến đường thẳng 3x + 4y − 10 = 0 bằng:",
+      "expr": "10/5",
+      "answer": "2",
+      "explain": "|−10|/5 = 2.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Khoảng cách từ M(1; 2) đến đường thẳng y = 5 (tức y − 5 = 0) bằng:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "|2 − 5|/1 = 3.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Góc giữa hai đường thẳng luôn thuộc:",
+      "choices": [
+        "[0°; 90°]",
+        "[0°; 180°]",
+        "(0°; 180°)",
+        "[90°; 180°]"
+      ],
+      "answer": 0,
+      "explain": "Góc giữa hai đường thẳng là góc không tù.",
+      "wrong_explain": {
+        "1": "Đó là góc giữa hai vectơ.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giao điểm của d₁: x + y − 3 = 0 và d₂: x − y − 1 = 0 có hoành độ:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Cộng hai phương trình: 2x = 4 ⇔ x = 2, y = 1.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khoảng cách từ A(−1; 3) đến Δ: 4x − 3y + 2 = 0 bằng (viết dạng phân số):",
+      "expr": "11/5",
+      "answer": "11/5",
+      "explain": "|−4 − 9 + 2|/5 = 11/5.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Góc giữa hai đường thẳng x − y = 0 và x = 0 bằng:",
+      "choices": [
+        "45°",
+        "30°",
+        "60°",
+        "90°"
+      ],
+      "answer": 0,
+      "explain": "cos = |1·1 + (−1)·0|/(√2·1) = √2/2.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai đường thẳng mx + y − 1 = 0 và x + 2y + 3 = 0 vuông góc khi m bằng:",
+      "expr": "-2",
+      "answer": "-2",
+      "explain": "m·1 + 1·2 = 0 ⇔ m = −2.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai đường thẳng 2x + 3y − 1 = 0 và 4x + my + 7 = 0 song song khi m bằng:",
+      "expr": "6",
+      "answer": "6",
+      "explain": "2/4 = 3/m ⇔ m = 6 (và −1/7 ≠ 1/2 nên không trùng).",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đường thẳng d: x = 1 + t, y = 2 − t. Khoảng cách từ O đến d bằng (viết dạng a/√2 thì a bằng):",
+      "expr": "3",
+      "answer": "3",
+      "explain": "d: x + y − 3 = 0; khoảng cách 3/√2.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Góc giữa hai đường thẳng √3x − y + 1 = 0 và x − √3y + 2 = 0 (độ) bằng:",
+      "expr": "30",
+      "answer": "30",
+      "explain": "cos = |√3 + √3|/(2·2) = √3/2 ⇒ 30°.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác ABC có A(2; 3), BC nằm trên đường thẳng 3x + 4y − 1 = 0 và BC = 5. Diện tích tam giác ABC bằng (viết dạng phân số):",
+      "expr": "17/2",
+      "answer": "17/2",
+      "explain": "h = |6 + 12 − 1|/5 = 17/5; S = (1/2)·5·17/5 = 8,5.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đường tròn tâm I(1; 2) tiếp xúc với đường thẳng 3x − 4y + 10 = 0 có bán kính:",
+      "expr": "5/5",
+      "answer": "1",
+      "explain": "R = d(I, Δ) = |3 − 8 + 10|/5 = 1.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Điểm M trên trục Ox cách đường thẳng 3x − 4y + 6 = 0 một khoảng bằng 3 và có hoành độ dương. Hoành độ M là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "|3x + 6|/5 = 3 ⇔ 3x + 6 = ±15 ⇔ x = 3 hoặc x = −7.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khoảng cách giữa hai đường thẳng song song 3x + 4y − 5 = 0 và 3x + 4y + 10 = 0 bằng:",
+      "expr": "15/5",
+      "answer": "3",
+      "explain": "Khoảng cách giữa hai đường thẳng song song bằng |c₁ − c₂|/√(a² + b²) = 15/5 = 3.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Đường thẳng d qua A(1; 1) tạo với trục Ox góc 45° có hệ số góc k > 0. Giá trị k bằng:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "tan 45° = 1.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho d: x + y − 4 = 0 và hai điểm A(1; 0), B(3; 6) nằm khác phía đối với d. Điểm M trên d sao cho MA + MB nhỏ nhất có hoành độ bằng:",
+      "expr": "7/4",
+      "answer": "7/4",
+      "explain": "MA + MB ≥ AB, dấu bằng khi M = AB ∩ d. AB: 3x − y − 3 = 0; giải với x + y − 4 = 0 được x = 7/4, y = 9/4.",
+      "id": "q18"
+    }
+  ]
+}

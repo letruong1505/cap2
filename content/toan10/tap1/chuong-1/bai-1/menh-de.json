@@ -1,0 +1,405 @@
+{
+  "id": "bai-1",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 1",
+  "chapter": "Chương I. Mệnh đề và tập hợp",
+  "lesson": "Bài 1. Mệnh đề",
+  "section": "",
+  "bookPage": 5,
+  "requirements": [
+    "Nhận biết mệnh đề, mệnh đề phủ định, mệnh đề kéo theo, mệnh đề đảo, mệnh đề tương đương.",
+    "Dùng đúng các kí hiệu ∀, ∃ và lập mệnh đề phủ định của mệnh đề chứa kí hiệu ∀, ∃."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Mệnh đề là một khẳng định đúng hoặc sai (không thể vừa đúng vừa sai). Câu hỏi, câu cảm thán, câu mệnh lệnh không phải là mệnh đề. Ví dụ: \"Hà Nội là thủ đô của Việt Nam\" là mệnh đề đúng; \"7 là số chẵn\" là mệnh đề sai; \"Hôm nay trời đẹp quá!\" không phải mệnh đề."
+    },
+    {
+      "type": "text",
+      "content": "Mệnh đề chứa biến là câu khẳng định chứa biến, tính đúng sai phụ thuộc vào giá trị của biến. Ví dụ P(x): \"x² − 1 = 0\" đúng khi x = 1 hoặc x = −1, sai với các giá trị khác."
+    },
+    {
+      "type": "text",
+      "content": "Mệnh đề phủ định của P kí hiệu là P̄ (đọc là \"không P\"). P đúng thì P̄ sai, P sai thì P̄ đúng. Ví dụ: P: \"5 là số nguyên tố\" thì P̄: \"5 không phải là số nguyên tố\"."
+    },
+    {
+      "type": "text",
+      "content": "Mệnh đề kéo theo \"Nếu P thì Q\" kí hiệu P ⇒ Q, chỉ sai khi P đúng và Q sai. Khi P ⇒ Q đúng, ta nói P là điều kiện đủ để có Q, Q là điều kiện cần để có P. Mệnh đề Q ⇒ P gọi là mệnh đề đảo của P ⇒ Q."
+    },
+    {
+      "type": "text",
+      "content": "Nếu cả P ⇒ Q và Q ⇒ P đều đúng thì P và Q là hai mệnh đề tương đương, kí hiệu P ⇔ Q, đọc là \"P khi và chỉ khi Q\" hoặc \"P là điều kiện cần và đủ để có Q\"."
+    },
+    {
+      "type": "text",
+      "content": "Kí hiệu ∀ đọc là \"với mọi\", kí hiệu ∃ đọc là \"tồn tại\". Mệnh đề \"∀x ∈ X, P(x)\" đúng khi P(x) đúng với mọi x thuộc X; mệnh đề \"∃x ∈ X, P(x)\" đúng khi có ít nhất một x thuộc X làm P(x) đúng."
+    },
+    {
+      "type": "formula",
+      "content": "Phủ định của \"∀x ∈ X, P(x)\" là \"∃x ∈ X, P̄(x)\"        Phủ định của \"∃x ∈ X, P(x)\" là \"∀x ∈ X, P̄(x)\""
+    },
+    {
+      "type": "method",
+      "title": "Xét tính đúng sai và lập mệnh đề phủ định",
+      "when": "Đề cho một câu và hỏi có phải mệnh đề không, đúng hay sai; hoặc yêu cầu phát biểu mệnh đề phủ định, mệnh đề đảo, dùng \"điều kiện cần\", \"điều kiện đủ\".",
+      "steps": [
+        "Kiểm tra câu có phải khẳng định đúng hoặc sai không: câu hỏi, cảm thán, mệnh lệnh thì loại.",
+        "Với mệnh đề P ⇒ Q: chỉ sai khi P đúng, Q sai; mệnh đề đảo là Q ⇒ P.",
+        "Phủ định: đổi \"có\" thành \"không có\"; đổi ∀ thành ∃ và ngược lại, đồng thời phủ định P(x) (đổi =, >, <, ≥, ≤ thành ≠, ≤, ≥, <, > tương ứng).",
+        "Kết luận đúng sai: với mệnh đề ∀ chỉ cần một phản ví dụ là sai; với mệnh đề ∃ chỉ cần một ví dụ là đúng."
+      ],
+      "notes": [
+        "Phủ định của \"x > 2\" là \"x ≤ 2\", không phải \"x < 2\".",
+        "P ⇒ Q đúng không suy ra Q ⇒ P đúng.",
+        "Mệnh đề chứa biến chưa phải mệnh đề khi chưa gán giá trị cho biến."
+      ],
+      "sample": {
+        "problem": "Lập mệnh đề phủ định của A: \"∀x ∈ ℝ, x² + 1 > 0\" và xét tính đúng sai của A.",
+        "steps": [
+          "Ā: \"∃x ∈ ℝ, x² + 1 ≤ 0\".",
+          "Vì x² ≥ 0 nên x² + 1 ≥ 1 > 0 với mọi x thực, do đó A đúng và Ā sai."
+        ],
+        "answer": "A đúng"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Trong các câu sau, câu nào là mệnh đề? (a) \"Số 12 chia hết cho 3.\" (b) \"Bạn có thích học Toán không?\" (c) \"2x + 1 = 5.\" (d) \"Tam giác đều có ba cạnh bằng nhau.\"",
+      "steps": [
+        "(a) là khẳng định đúng nên là mệnh đề đúng.",
+        "(b) là câu hỏi, không phải mệnh đề.",
+        "(c) chứa biến x, đúng sai phụ thuộc x: là mệnh đề chứa biến, chưa phải mệnh đề.",
+        "(d) là khẳng định đúng nên là mệnh đề."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Cho P: \"Tứ giác ABCD là hình vuông\" và Q: \"Tứ giác ABCD có bốn cạnh bằng nhau\". Phát biểu P ⇒ Q, mệnh đề đảo và xét tính đúng sai của chúng.",
+      "steps": [
+        "P ⇒ Q: \"Nếu ABCD là hình vuông thì ABCD có bốn cạnh bằng nhau\": đúng.",
+        "Mệnh đề đảo Q ⇒ P: \"Nếu ABCD có bốn cạnh bằng nhau thì ABCD là hình vuông\": sai, vì hình thoi có bốn cạnh bằng nhau nhưng chưa chắc là hình vuông.",
+        "Vậy P là điều kiện đủ để có Q, nhưng không phải điều kiện cần."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Cho mệnh đề B: \"∃n ∈ ℕ, n² = 2n\". Xét tính đúng sai của B và lập mệnh đề phủ định.",
+      "steps": [
+        "n = 2 cho 2² = 4 = 2·2 nên B đúng (n = 0 cũng thoả mãn).",
+        "Phủ định B̄: \"∀n ∈ ℕ, n² ≠ 2n\", là mệnh đề sai."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Câu nào sau đây là mệnh đề?",
+      "choices": [
+        "Số 15 là bội của 5.",
+        "Bạn đã làm bài tập chưa?",
+        "Hãy mở sách ra!",
+        "Trời hôm nay đẹp quá!"
+      ],
+      "answer": 0,
+      "explain": "Khẳng định đúng (15 = 5·3) nên là mệnh đề.",
+      "wrong_explain": {
+        "1": "Câu hỏi không phải mệnh đề.",
+        "2": "Câu mệnh lệnh không phải mệnh đề.",
+        "3": "Câu cảm thán không phải mệnh đề."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Mệnh đề phủ định của P: \"9 là số chính phương\" là:",
+      "choices": [
+        "9 không phải là số chính phương.",
+        "9 là số nguyên tố.",
+        "9 là số lẻ.",
+        "9 không phải là số lẻ."
+      ],
+      "answer": 0,
+      "explain": "Phủ định là \"không P\".",
+      "wrong_explain": {
+        "1": "Không phải phủ định của P.",
+        "2": "Không liên quan đến P.",
+        "3": "Không phải phủ định của P."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Mệnh đề P ⇒ Q sai khi nào?",
+      "choices": [
+        "P đúng và Q sai",
+        "P sai và Q đúng",
+        "P sai và Q sai",
+        "P đúng và Q đúng"
+      ],
+      "answer": 0,
+      "explain": "Kéo theo chỉ sai khi giả thiết đúng mà kết luận sai.",
+      "wrong_explain": {
+        "1": "Khi P sai, P ⇒ Q luôn đúng.",
+        "2": "Khi P sai, P ⇒ Q luôn đúng.",
+        "3": "P đúng, Q đúng thì P ⇒ Q đúng."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Kí hiệu ∃ đọc là:",
+      "choices": [
+        "tồn tại",
+        "với mọi",
+        "thuộc",
+        "suy ra"
+      ],
+      "answer": 0,
+      "explain": "∃ là \"tồn tại\", ∀ là \"với mọi\".",
+      "wrong_explain": {
+        "1": "Đó là ∀.",
+        "2": "Đó là ∈.",
+        "3": "Đó là ⇒."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Mệnh đề đảo của \"Nếu a chia hết cho 6 thì a chia hết cho 3\" là:",
+      "choices": [
+        "Nếu a chia hết cho 3 thì a chia hết cho 6.",
+        "Nếu a không chia hết cho 6 thì a không chia hết cho 3.",
+        "Nếu a không chia hết cho 3 thì a không chia hết cho 6.",
+        "a chia hết cho 6 khi và chỉ khi a chia hết cho 3."
+      ],
+      "answer": 0,
+      "explain": "Mệnh đề đảo của P ⇒ Q là Q ⇒ P.",
+      "wrong_explain": {
+        "1": "Đây là phủ định hai vế, không phải mệnh đề đảo.",
+        "2": "Đây là mệnh đề phản đảo.",
+        "3": "Đây là mệnh đề tương đương."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Mệnh đề nào sau đây đúng?",
+      "choices": [
+        "∀x ∈ ℝ, x² ≥ 0",
+        "∀x ∈ ℝ, x² > 0",
+        "∃x ∈ ℝ, x² < 0",
+        "∀x ∈ ℕ, x > 0"
+      ],
+      "answer": 0,
+      "explain": "Bình phương của mọi số thực đều không âm.",
+      "wrong_explain": {
+        "1": "Sai vì x = 0 cho x² = 0.",
+        "2": "Không có số thực nào có bình phương âm.",
+        "3": "Sai vì 0 ∈ ℕ và 0 > 0 sai."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phủ định của mệnh đề \"∀x ∈ ℝ, x² − 3x + 2 ≠ 0\" là:",
+      "choices": [
+        "∃x ∈ ℝ, x² − 3x + 2 = 0",
+        "∀x ∈ ℝ, x² − 3x + 2 = 0",
+        "∃x ∈ ℝ, x² − 3x + 2 ≠ 0",
+        "∀x ∈ ℝ, x² − 3x + 2 > 0"
+      ],
+      "answer": 0,
+      "explain": "Đổi ∀ thành ∃ và phủ định ≠ thành =.",
+      "wrong_explain": {
+        "1": "Phải đổi ∀ thành ∃.",
+        "2": "Phải phủ định cả P(x).",
+        "3": "Không phải phủ định."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong mệnh đề đúng \"Nếu tam giác ABC đều thì tam giác ABC cân\", kết luận nào đúng?",
+      "choices": [
+        "\"ABC đều\" là điều kiện đủ để \"ABC cân\".",
+        "\"ABC đều\" là điều kiện cần để \"ABC cân\".",
+        "\"ABC cân\" là điều kiện đủ để \"ABC đều\".",
+        "Hai mệnh đề tương đương."
+      ],
+      "answer": 0,
+      "explain": "Trong P ⇒ Q đúng, P là điều kiện đủ để có Q.",
+      "wrong_explain": {
+        "1": "P là điều kiện đủ, Q mới là điều kiện cần.",
+        "2": "Cân chưa đủ để đều.",
+        "3": "Mệnh đề đảo sai nên không tương đương."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Mệnh đề nào sau đây sai?",
+      "choices": [
+        "∃n ∈ ℕ, n² = 3",
+        "∃n ∈ ℕ, n² = 4",
+        "∀n ∈ ℕ, n² ≥ n",
+        "∃n ∈ ℕ, n + 1 = 1"
+      ],
+      "answer": 0,
+      "explain": "Không có số tự nhiên nào bình phương bằng 3.",
+      "wrong_explain": {
+        "1": "n = 2 thoả mãn.",
+        "2": "Đúng với mọi số tự nhiên.",
+        "3": "n = 0 thoả mãn."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho P: \"x = 2\" và Q: \"x² = 4\" (x ∈ ℝ). Khẳng định nào đúng?",
+      "choices": [
+        "P ⇒ Q đúng, Q ⇒ P sai.",
+        "P ⇒ Q sai, Q ⇒ P đúng.",
+        "P ⇔ Q.",
+        "Cả P ⇒ Q và Q ⇒ P đều sai."
+      ],
+      "answer": 0,
+      "explain": "x = 2 thì x² = 4; nhưng x² = 4 còn có x = −2.",
+      "wrong_explain": {
+        "1": "Ngược lại.",
+        "2": "Không tương đương vì x = −2.",
+        "3": "P ⇒ Q đúng."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có bao nhiêu câu là mệnh đề trong các câu: \"3 + 4 = 7\"; \"x > 5\"; \"Bạn tên gì?\"; \"Số 0 là số chẵn\"; \"Nhanh lên nào!\"?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Hai khẳng định \"3 + 4 = 7\" và \"Số 0 là số chẵn\" là mệnh đề; các câu còn lại không phải.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mệnh đề chứa biến P(x): \"x² − 5x + 6 = 0\" (x ∈ ℕ). Tổng các giá trị của x làm P(x) đúng là:",
+      "expr": "2+3",
+      "answer": "5",
+      "explain": "x² − 5x + 6 = 0 ⇔ x = 2 hoặc x = 3; tổng là 5.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mệnh đề A: \"∀n ∈ ℕ, n ≤ 10 thì n² ≤ 50\" sai. Giá trị nhỏ nhất của n làm A sai là:",
+      "expr": "8",
+      "answer": "8",
+      "explain": "8² = 64 > 50 còn 7² = 49 ≤ 50, nên phản ví dụ nhỏ nhất là n = 8.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho mệnh đề \"∃x ∈ ℤ, 2x + 3 = 9\". Giá trị x làm mệnh đề đúng là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "2x + 3 = 9 ⇔ x = 3 ∈ ℤ.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phủ định của mệnh đề \"Mọi học sinh lớp 10A đều thích môn Toán\" là:",
+      "choices": [
+        "Có ít nhất một học sinh lớp 10A không thích môn Toán.",
+        "Mọi học sinh lớp 10A đều không thích môn Toán.",
+        "Có ít nhất một học sinh lớp 10A thích môn Toán.",
+        "Không học sinh nào lớp 10A thích môn Toán."
+      ],
+      "answer": 0,
+      "explain": "Phủ định của \"mọi ... đều\" là \"có ít nhất một ... không\".",
+      "wrong_explain": {
+        "1": "Đây không phải phủ định mà là mệnh đề khác.",
+        "2": "Không phải phủ định.",
+        "3": "Không phải phủ định."
+      },
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Mệnh đề nào sau đây là mệnh đề tương đương đúng?",
+      "choices": [
+        "Tam giác ABC vuông tại A khi và chỉ khi BC² = AB² + AC².",
+        "x > 0 khi và chỉ khi x² > 0.",
+        "a chia hết cho 4 khi và chỉ khi a chia hết cho 2.",
+        "Tứ giác là hình chữ nhật khi và chỉ khi nó có hai đường chéo bằng nhau."
+      ],
+      "answer": 0,
+      "explain": "Định lí Pythagore và định lí đảo đều đúng.",
+      "wrong_explain": {
+        "1": "x = −1 có x² > 0 nhưng x < 0.",
+        "2": "6 chia hết cho 2 nhưng không chia hết cho 4.",
+        "3": "Hình thang cân cũng có hai đường chéo bằng nhau."
+      },
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho mệnh đề \"∀x ∈ ℝ, x² − 2mx + m² + 1 > 0\". Khẳng định nào đúng?",
+      "choices": [
+        "Mệnh đề đúng với mọi m.",
+        "Mệnh đề chỉ đúng khi m = 0.",
+        "Mệnh đề sai với mọi m.",
+        "Mệnh đề đúng khi và chỉ khi m > 0."
+      ],
+      "answer": 0,
+      "explain": "x² − 2mx + m² + 1 = (x − m)² + 1 ≥ 1 > 0 với mọi x, mọi m.",
+      "wrong_explain": {
+        "1": "Đúng với mọi m.",
+        "2": "Luôn đúng.",
+        "3": "Không phụ thuộc dấu của m."
+      },
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Số mệnh đề đúng trong ba mệnh đề: (1) \"∀x ∈ ℝ, |x| ≥ x\"; (2) \"∃x ∈ ℚ, x² = 2\"; (3) \"∀n ∈ ℕ, n(n + 1) chia hết cho 2\" là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "(1) đúng; (2) sai vì √2 vô tỉ; (3) đúng vì tích hai số tự nhiên liên tiếp chia hết cho 2.",
+      "id": "q18"
+    }
+  ]
+}

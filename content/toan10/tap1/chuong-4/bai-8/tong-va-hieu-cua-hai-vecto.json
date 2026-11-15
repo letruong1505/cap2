@@ -1,0 +1,369 @@
+{
+  "id": "bai-8",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 1",
+  "chapter": "Chương IV. Vectơ",
+  "lesson": "Bài 8. Tổng và hiệu của hai vectơ",
+  "section": "",
+  "bookPage": 51,
+  "requirements": [
+    "Thực hiện phép cộng, trừ vectơ bằng quy tắc ba điểm, quy tắc hình bình hành và quy tắc hiệu.",
+    "Vận dụng tính chất trung điểm, trọng tâm và áp dụng vào bài toán vật lí (hợp lực)."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tổng của hai vectơ: với ba điểm A, B, C bất kì, →AB + →BC = →AC (quy tắc ba điểm). Nếu ABCD là hình bình hành thì →AB + →AD = →AC (quy tắc hình bình hành)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t10-b8-tong-hieu.svg",
+      "caption": "Cộng hai vectơ bằng quy tắc ba điểm"
+    },
+    {
+      "type": "text",
+      "content": "Phép cộng vectơ có tính chất giao hoán →a + →b = →b + →a, kết hợp (→a + →b) + →c = →a + (→b + →c), và →a + →0 = →a."
+    },
+    {
+      "type": "text",
+      "content": "Hiệu của hai vectơ: →a − →b = →a + (−→b). Quy tắc hiệu: với ba điểm O, A, B bất kì, →OB − →OA = →AB. Đặc biệt →a − →a = →0."
+    },
+    {
+      "type": "formula",
+      "content": "M là trung điểm AB ⇔ →MA + →MB = →0        G là trọng tâm tam giác ABC ⇔ →GA + →GB + →GC = →0"
+    },
+    {
+      "type": "text",
+      "content": "Trong vật lí, hợp lực của hai lực →F₁, →F₂ cùng tác dụng vào một vật là →F = →F₁ + →F₂; nếu hai lực vuông góc thì |→F|² = |→F₁|² + |→F₂|²."
+    },
+    {
+      "type": "method",
+      "title": "Chứng minh đẳng thức vectơ và tính độ dài tổng, hiệu",
+      "when": "Đề yêu cầu chứng minh →AB + →CD = →AD + →CB, tính |→AB + →AD|, |→AB − →AC| trong hình vuông, tam giác đều, hình chữ nhật; hoặc tìm hợp lực.",
+      "steps": [
+        "Dùng quy tắc ba điểm để chèn điểm: →AB = →AM + →MB; dùng quy tắc hiệu →OB − →OA = →AB.",
+        "Dùng quy tắc hình bình hành để gộp hai vectơ chung gốc thành đường chéo.",
+        "Để tính độ dài: biến đổi tổng/hiệu về một vectơ duy nhất rồi tính độ dài đoạn thẳng tương ứng (Pythagore, tính chất hình).",
+        "Với trung điểm, trọng tâm: dùng các hệ thức →MA + →MB = →0, →GA + →GB + →GC = →0."
+      ],
+      "notes": [
+        "|→a + →b| nói chung khác |→a| + |→b|; chỉ bằng khi hai vectơ cùng hướng.",
+        "→AB − →AC = →CB (quy tắc hiệu), không phải →BC."
+      ],
+      "sample": {
+        "problem": "Cho hình vuông ABCD cạnh a. Tính |→AB + →AD| và |→AB − →AD|.",
+        "steps": [
+          "→AB + →AD = →AC nên |→AB + →AD| = AC = a√2.",
+          "→AB − →AD = →DB nên |→AB − →AD| = DB = a√2."
+        ],
+        "answer": "Cả hai bằng a√2"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho bốn điểm A, B, C, D bất kì. Chứng minh →AB + →CD = →AD + →CB.",
+      "steps": [
+        "Theo quy tắc ba điểm: →AB = →AD + →DB và →CD = →CB + →BD.",
+        "Cộng vế: →AB + →CD = →AD + →CB + (→DB + →BD) = →AD + →CB + →0.",
+        "Vậy →AB + →CD = →AD + →CB."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Cho tam giác đều ABC cạnh 6. Tính |→AB + →AC|.",
+      "steps": [
+        "Gọi M là trung điểm BC thì →AB + →AC = 2→AM.",
+        "AM là đường cao: AM = 6·√3/2 = 3√3.",
+        "|→AB + →AC| = 2·3√3 = 6√3 ≈ 10,4; bình phương độ dài là 108."
+      ],
+      "expr": "36*3",
+      "answer": "108"
+    },
+    {
+      "problem": "Hai lực →F₁, →F₂ cùng tác dụng vào một vật, vuông góc với nhau, có độ lớn 6 N và 8 N. Tính độ lớn hợp lực.",
+      "steps": [
+        "Hợp lực →F = →F₁ + →F₂ là đường chéo hình chữ nhật có hai cạnh 6 và 8.",
+        "|→F| = √(6² + 8²) = √100 = 10 N."
+      ],
+      "expr": "10",
+      "answer": "10"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Với ba điểm A, B, C bất kì, →AB + →BC bằng:",
+      "choices": [
+        "→AC",
+        "→CA",
+        "→BA",
+        "→0"
+      ],
+      "answer": 0,
+      "explain": "Quy tắc ba điểm.",
+      "wrong_explain": {
+        "1": "Ngược hướng.",
+        "2": "Sai.",
+        "3": "Chỉ khi A trùng C."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho hình bình hành ABCD. →AB + →AD bằng:",
+      "choices": [
+        "→AC",
+        "→BD",
+        "→DB",
+        "→CA"
+      ],
+      "answer": 0,
+      "explain": "Quy tắc hình bình hành.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Ngược hướng."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "→OB − →OA bằng:",
+      "choices": [
+        "→AB",
+        "→BA",
+        "→AO",
+        "→OA"
+      ],
+      "answer": 0,
+      "explain": "Quy tắc hiệu.",
+      "wrong_explain": {
+        "1": "Sai hướng.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "M là trung điểm của AB khi và chỉ khi:",
+      "choices": [
+        "→MA + →MB = →0",
+        "→MA = →MB",
+        "→AM + →BM = →AB",
+        "|→MA| = |→AB|"
+      ],
+      "answer": 0,
+      "explain": "Hai vectơ →MA, →MB đối nhau.",
+      "wrong_explain": {
+        "1": "Hai vectơ ngược hướng, không bằng nhau.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "G là trọng tâm tam giác ABC khi và chỉ khi:",
+      "choices": [
+        "→GA + →GB + →GC = →0",
+        "→GA = →GB = →GC",
+        "→AG + →BG = →CG",
+        "→GA + →GB = →GC"
+      ],
+      "answer": 0,
+      "explain": "Tính chất trọng tâm.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai dấu."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho hình vuông ABCD cạnh 4. Giá trị |→AB + →AD|² bằng:",
+      "expr": "16+16",
+      "answer": "32",
+      "explain": "→AB + →AD = →AC, AC² = 32.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho hình chữ nhật ABCD có AB = 6, AD = 8. Độ dài |→AB − →AD| bằng:",
+      "expr": "10",
+      "answer": "10",
+      "explain": "→AB − →AD = →DB, DB = √(36 + 64) = 10.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho tam giác ABC. →AB − →AC bằng:",
+      "choices": [
+        "→CB",
+        "→BC",
+        "→CA",
+        "→AB"
+      ],
+      "answer": 0,
+      "explain": "Quy tắc hiệu: →AB − →AC = →CB.",
+      "wrong_explain": {
+        "1": "Ngược hướng.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho I là trung điểm AB và M bất kì. Khẳng định nào đúng?",
+      "choices": [
+        "→MA + →MB = 2→MI",
+        "→MA + →MB = →MI",
+        "→MA − →MB = 2→MI",
+        "→MA + →MB = →0"
+      ],
+      "answer": 0,
+      "explain": "→MA + →MB = (→MI + →IA) + (→MI + →IB) = 2→MI.",
+      "wrong_explain": {
+        "1": "Thiếu hệ số 2.",
+        "2": "→MA − →MB = →BA.",
+        "3": "Chỉ khi M trùng I."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai lực vuông góc có độ lớn 5 N và 12 N. Độ lớn hợp lực (N) bằng:",
+      "expr": "13",
+      "answer": "13",
+      "explain": "√(25 + 144) = 13.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho →a và →b cùng hướng, |→a| = 3, |→b| = 5. Độ dài |→a + →b| bằng:",
+      "expr": "3+5",
+      "answer": "8",
+      "explain": "Cùng hướng thì độ dài tổng bằng tổng độ dài.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho tam giác đều ABC cạnh 4 và M là trung điểm BC. Giá trị |→AB + →AC|² bằng:",
+      "expr": "4*12",
+      "answer": "48",
+      "explain": "→AB + →AC = 2→AM; AM² = 16 − 4 = 12; (2AM)² = 48.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho →a và →b ngược hướng, |→a| = 7, |→b| = 3. Độ dài |→a + →b| bằng:",
+      "expr": "7-3",
+      "answer": "4",
+      "explain": "Ngược hướng: độ dài tổng bằng hiệu độ dài.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho hình bình hành ABCD tâm O. Tổng →OA + →OB + →OC + →OD bằng:",
+      "choices": [
+        "→0",
+        "→AC",
+        "2→AC",
+        "→BD"
+      ],
+      "answer": 0,
+      "explain": "→OA + →OC = →0 và →OB + →OD = →0.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho hình vuông ABCD cạnh 2. Giá trị |→AB + →AC + →AD|² bằng:",
+      "expr": "4*8",
+      "answer": "32",
+      "explain": "→AB + →AD = →AC nên tổng bằng 2→AC; AC² = 8; (2AC)² = 32.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Một chiếc thuyền chạy với vận tốc 4 km/h so với nước theo hướng vuông góc với bờ, nước chảy 3 km/h. Vận tốc thực của thuyền so với bờ có độ lớn:",
+      "choices": [
+        "5 km/h",
+        "7 km/h",
+        "1 km/h",
+        "12 km/h"
+      ],
+      "answer": 0,
+      "explain": "Hai vectơ vuông góc: √(16 + 9) = 5.",
+      "wrong_explain": {
+        "1": "Chỉ đúng nếu cùng hướng.",
+        "2": "Chỉ đúng nếu ngược hướng.",
+        "3": "Sai."
+      },
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho tam giác ABC có trọng tâm G và điểm M bất kì. Khẳng định nào đúng?",
+      "choices": [
+        "→MA + →MB + →MC = 3→MG",
+        "→MA + →MB + →MC = →MG",
+        "→MA + →MB + →MC = →0",
+        "→MA + →MB + →MC = 2→MG"
+      ],
+      "answer": 0,
+      "explain": "Chèn G: mỗi →MX = →MG + →GX, tổng →GA + →GB + →GC = →0.",
+      "wrong_explain": {
+        "1": "Thiếu hệ số 3.",
+        "2": "Chỉ khi M trùng G.",
+        "3": "Sai hệ số."
+      },
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho tam giác ABC vuông tại A, AB = 3, AC = 4, M là trung điểm BC. Độ dài |→MB − →MC| bằng:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "→MB − →MC = →CB, CB = 5.",
+      "id": "q18"
+    }
+  ]
+}

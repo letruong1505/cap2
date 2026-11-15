@@ -1,0 +1,306 @@
+{
+  "id": "bai-21",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 2",
+  "chapter": "Chương VII. Phương pháp toạ độ trong mặt phẳng",
+  "lesson": "Bài 21. Đường tròn trong mặt phẳng toạ độ",
+  "section": "",
+  "bookPage": 43,
+  "requirements": [
+    "Lập phương trình đường tròn khi biết tâm và bán kính, hoặc các điều kiện khác; nhận dạng phương trình đường tròn.",
+    "Viết phương trình tiếp tuyến của đường tròn tại một điểm thuộc đường tròn."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đường tròn tâm I(a; b), bán kính R là tập hợp các điểm M(x; y) sao cho IM = R."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t10-b21-duong-tron.svg",
+      "caption": "Đường tròn tâm I(a; b), bán kính R"
+    },
+    {
+      "type": "formula",
+      "content": "(x − a)² + (y − b)² = R²"
+    },
+    {
+      "type": "text",
+      "content": "Phương trình x² + y² − 2ax − 2by + c = 0 là phương trình đường tròn khi và chỉ khi a² + b² − c > 0; khi đó tâm là I(a; b) và bán kính R = √(a² + b² − c)."
+    },
+    {
+      "type": "formula",
+      "content": "x² + y² − 2ax − 2by + c = 0  (a² + b² − c > 0):  tâm I(a; b), R = √(a² + b² − c)"
+    },
+    {
+      "type": "text",
+      "content": "Tiếp tuyến của đường tròn tâm I tại điểm M₀(x₀; y₀) thuộc đường tròn là đường thẳng đi qua M₀ và nhận →IM₀ = (x₀ − a; y₀ − b) làm vectơ pháp tuyến."
+    },
+    {
+      "type": "formula",
+      "content": "Tiếp tuyến tại M₀: (x₀ − a)(x − x₀) + (y₀ − b)(y − y₀) = 0"
+    },
+    {
+      "type": "method",
+      "title": "Lập phương trình đường tròn và tiếp tuyến",
+      "when": "Đề cho tâm và bán kính, tâm và một điểm, đường kính AB, ba điểm, hoặc tâm và đường thẳng tiếp xúc; hoặc hỏi tiếp tuyến tại một điểm.",
+      "steps": [
+        "Xác định tâm I: trung điểm đường kính, điểm cho trước, hoặc giải hệ từ ba điểm (dạng x² + y² − 2ax − 2by + c = 0).",
+        "Xác định R: khoảng cách từ tâm đến một điểm trên đường tròn, hoặc khoảng cách từ tâm đến đường thẳng tiếp xúc.",
+        "Viết (x − a)² + (y − b)² = R².",
+        "Tiếp tuyến tại M₀: dùng →IM₀ làm pháp tuyến."
+      ],
+      "notes": [
+        "Từ dạng khai triển, hệ số của x là −2a nên a = −(hệ số)/2.",
+        "Kiểm tra a² + b² − c > 0 trước khi kết luận là đường tròn."
+      ],
+      "sample": {
+        "problem": "Viết phương trình đường tròn đường kính AB với A(1; 2), B(5; 6).",
+        "steps": [
+          "Tâm I là trung điểm AB: I(3; 4). R = IA = √(4 + 4) = 2√2.",
+          "(x − 3)² + (y − 4)² = 8."
+        ],
+        "answer": "(x − 3)² + (y − 4)² = 8"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tìm tâm và bán kính của đường tròn x² + y² − 4x + 6y − 3 = 0.",
+      "steps": [
+        "−2a = −4 ⇒ a = 2; −2b = 6 ⇒ b = −3; c = −3.",
+        "R = √(4 + 9 + 3) = 4. Tâm I(2; −3), R = 4."
+      ],
+      "expr": "4+9+3",
+      "answer": "16"
+    },
+    {
+      "problem": "Viết phương trình đường tròn tâm I(1; −2) tiếp xúc với đường thẳng Δ: 3x − 4y + 9 = 0.",
+      "steps": [
+        "R = d(I, Δ) = |3 + 8 + 9|/5 = 4.",
+        "(x − 1)² + (y + 2)² = 16."
+      ],
+      "expr": "20/5",
+      "answer": "4"
+    },
+    {
+      "problem": "Viết phương trình tiếp tuyến của đường tròn (C): (x − 1)² + (y + 1)² = 25 tại điểm M(4; 3).",
+      "steps": [
+        "Tâm I(1; −1); →IM = (3; 4) là pháp tuyến.",
+        "3(x − 4) + 4(y − 3) = 0 ⇔ 3x + 4y − 24 = 0."
+      ],
+      "expr": "12+12",
+      "answer": "24"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đường tròn (x − 2)² + (y + 3)² = 9 có tâm và bán kính là:",
+      "choices": [
+        "I(2; −3), R = 3",
+        "I(−2; 3), R = 3",
+        "I(2; −3), R = 9",
+        "I(−2; 3), R = 9"
+      ],
+      "answer": 0,
+      "explain": "Dạng (x − a)² + (y − b)² = R².",
+      "wrong_explain": {
+        "1": "Sai dấu tâm.",
+        "2": "R² = 9 nên R = 3.",
+        "3": "Sai cả hai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Đường tròn tâm O(0; 0) đi qua A(3; 4) có bán kính bằng:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "R = OA = √(9 + 16) = 5.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phương trình nào là phương trình đường tròn?",
+      "choices": [
+        "x² + y² − 2x + 4y − 4 = 0",
+        "x² + y² + 2x + 4y + 10 = 0",
+        "x² − y² = 4",
+        "x² + 2y² = 1"
+      ],
+      "answer": 0,
+      "explain": "a = 1, b = −2, c = −4: a² + b² − c = 9 > 0.",
+      "wrong_explain": {
+        "1": "1 + 4 − 10 < 0.",
+        "2": "Dấu trừ giữa x², y².",
+        "3": "Hệ số x², y² khác nhau."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Đường tròn x² + y² − 6x + 2y + 1 = 0 có bán kính bằng:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "a = 3, b = −1, c = 1: R = √(9 + 1 − 1) = 3.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phương trình đường tròn tâm I(−1; 2), bán kính 2 là:",
+      "choices": [
+        "(x + 1)² + (y − 2)² = 4",
+        "(x − 1)² + (y + 2)² = 4",
+        "(x + 1)² + (y − 2)² = 2",
+        "(x − 1)² + (y − 2)² = 4"
+      ],
+      "answer": 0,
+      "explain": "Thay a = −1, b = 2, R² = 4.",
+      "wrong_explain": {
+        "1": "Sai dấu.",
+        "2": "R² = 4.",
+        "3": "Sai dấu hoành độ tâm."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đường tròn đường kính AB với A(−1; 1), B(3; 5) có tâm I. Tổng hoành độ và tung độ của I bằng:",
+      "expr": "1+3",
+      "answer": "4",
+      "explain": "I(1; 3).",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đường tròn đường kính AB với A(−1; 1), B(3; 5) có R² bằng:",
+      "expr": "4+4",
+      "answer": "8",
+      "explain": "IA² = (−1 − 1)² + (1 − 3)² = 8.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đường tròn tâm I(2; 1) tiếp xúc với đường thẳng 4x − 3y + 5 = 0 có bán kính:",
+      "expr": "10/5",
+      "answer": "2",
+      "explain": "R = |8 − 3 + 5|/5 = 2.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tiếp tuyến của đường tròn x² + y² = 25 tại điểm M(3; −4) là:",
+      "choices": [
+        "3x − 4y − 25 = 0",
+        "3x + 4y − 25 = 0",
+        "4x − 3y = 0",
+        "3x − 4y + 25 = 0"
+      ],
+      "answer": 0,
+      "explain": "→OM = (3; −4): 3(x − 3) − 4(y + 4) = 0.",
+      "wrong_explain": {
+        "1": "Sai dấu pháp tuyến.",
+        "2": "Đó là đường thẳng OM.",
+        "3": "Sai hằng số."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đường tròn x² + y² − 2x − 4y + m = 0 là đường tròn khi m nhỏ hơn:",
+      "expr": "1+4",
+      "answer": "5",
+      "explain": "a² + b² − c = 1 + 4 − m > 0 ⇔ m < 5.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Điểm A(5; 1) có nằm trên đường tròn (x − 2)² + (y − 5)² = 25 không? Tính (5 − 2)² + (1 − 5)²:",
+      "expr": "9+16",
+      "answer": "25",
+      "explain": "Bằng 25 nên A thuộc đường tròn.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đường tròn đi qua ba điểm O(0; 0), A(4; 0), B(0; 6) có tâm I. Giá trị x_I + y_I bằng:",
+      "expr": "2+3",
+      "answer": "5",
+      "explain": "Tam giác vuông tại O nên tâm là trung điểm AB: I(2; 3).",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đường tròn (C): x² + y² − 2x + 4y − 20 = 0 và điểm M(4; 2). Khoảng cách IM trừ bán kính bằng:",
+      "expr": "5-5",
+      "answer": "0",
+      "explain": "I(1; −2), R = 5; IM = √(9 + 16) = 5; hiệu 0, M nằm trên (C).",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đường tròn tâm I(3; −1) tiếp xúc với trục Oy có bán kính bằng:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Khoảng cách từ I đến Oy bằng |x_I| = 3.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tiếp tuyến của đường tròn (x − 1)² + (y − 2)² = 5 tại M(2; 4) có dạng x + 2y + c = 0. Giá trị c bằng:",
+      "expr": "-2-8",
+      "answer": "-10",
+      "explain": "→IM = (1; 2): (x − 2) + 2(y − 4) = 0 ⇔ x + 2y − 10 = 0.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đường thẳng 3x + 4y − 2 = 0 cắt đường tròn tâm I(1; 1) bán kính 2 theo dây cung AB. Giá trị AB² bằng:",
+      "expr": "4*(4-1)",
+      "answer": "12",
+      "explain": "d(I, Δ) = |3 + 4 − 2|/5 = 1; nửa dây = √(R² − d²) = √3; AB² = 4·3 = 12.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Đường tròn tâm thuộc trục Ox đi qua A(1; 3) và B(5; 1) có hoành độ tâm bằng:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "I(a; 0): (a − 1)² + 9 = (a − 5)² + 1 ⇔ −2a + 10 = −10a + 26 ⇔ a = 2.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Từ điểm P(6; 0) kẻ tiếp tuyến PT đến đường tròn x² + y² = 9 (T là tiếp điểm). Giá trị PT² bằng:",
+      "expr": "36-9",
+      "answer": "27",
+      "explain": "Tam giác OTP vuông tại T: PT² = OP² − R² = 36 − 9 = 27.",
+      "id": "q18"
+    }
+  ]
+}

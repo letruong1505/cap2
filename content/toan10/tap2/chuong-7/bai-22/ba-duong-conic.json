@@ -1,0 +1,295 @@
+{
+  "id": "bai-22",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 2",
+  "chapter": "Chương VII. Phương pháp toạ độ trong mặt phẳng",
+  "lesson": "Bài 22. Ba đường conic",
+  "section": "",
+  "bookPage": 48,
+  "requirements": [
+    "Nhận biết elip, hypebol, parabol và phương trình chính tắc của chúng.",
+    "Xác định tiêu điểm, đỉnh, độ dài trục, tiêu cự; lập phương trình chính tắc từ điều kiện cho trước."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Elip: cho hai điểm F₁, F₂ cố định với F₁F₂ = 2c > 0 và số a > c. Tập hợp các điểm M sao cho MF₁ + MF₂ = 2a là elip; F₁, F₂ là tiêu điểm, 2c là tiêu cự."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t10-b22-elip.svg",
+      "caption": "Elip với hai tiêu điểm F₁, F₂; MF₁ + MF₂ = 2a"
+    },
+    {
+      "type": "formula",
+      "content": "Elip (E): x²/a² + y²/b² = 1 với b² = a² − c², a > b > 0. Tiêu điểm F₁(−c; 0), F₂(c; 0); đỉnh A₁(−a; 0), A₂(a; 0), B₁(0; −b), B₂(0; b); trục lớn 2a, trục nhỏ 2b."
+    },
+    {
+      "type": "text",
+      "content": "Hypebol: cho F₁F₂ = 2c và số a với 0 < a < c. Tập hợp các điểm M sao cho |MF₁ − MF₂| = 2a là hypebol."
+    },
+    {
+      "type": "formula",
+      "content": "Hypebol (H): x²/a² − y²/b² = 1 với b² = c² − a². Tiêu điểm F₁(−c; 0), F₂(c; 0); đỉnh A₁(−a; 0), A₂(a; 0); trục thực 2a, trục ảo 2b."
+    },
+    {
+      "type": "text",
+      "content": "Parabol: cho điểm F và đường thẳng Δ không đi qua F. Tập hợp các điểm M cách đều F và Δ là parabol; F là tiêu điểm, Δ là đường chuẩn, khoảng cách từ F đến Δ là tham số tiêu p."
+    },
+    {
+      "type": "formula",
+      "content": "Parabol (P): y² = 2px (p > 0). Tiêu điểm F(p/2; 0), đường chuẩn x = −p/2."
+    },
+    {
+      "type": "method",
+      "title": "Xác định các yếu tố của conic từ phương trình chính tắc",
+      "when": "Đề cho phương trình chính tắc và hỏi tiêu điểm, đỉnh, độ dài trục, tiêu cự; hoặc cho các yếu tố và yêu cầu lập phương trình chính tắc.",
+      "steps": [
+        "Đưa phương trình về đúng dạng chính tắc (vế phải bằng 1 hoặc dạng y² = 2px).",
+        "Đọc a², b² (hoặc p); tính c² = a² − b² với elip, c² = a² + b² với hypebol.",
+        "Suy ra tiêu điểm (±c; 0), đỉnh, độ dài các trục, tiêu cự 2c.",
+        "Lập phương trình: tìm a, b (hoặc p) từ các điều kiện rồi thay vào."
+      ],
+      "notes": [
+        "Với elip a > b; với hypebol không cần a > b.",
+        "Điểm thuộc conic thì toạ độ thoả mãn phương trình: dùng để lập phương trình."
+      ],
+      "sample": {
+        "problem": "Tìm tiêu điểm và độ dài hai trục của elip x²/25 + y²/9 = 1.",
+        "steps": [
+          "a = 5, b = 3, c² = 25 − 9 = 16 ⇒ c = 4.",
+          "Tiêu điểm F₁(−4; 0), F₂(4; 0); trục lớn 10, trục nhỏ 6."
+        ],
+        "answer": "F(±4; 0), 2a = 10, 2b = 6"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Lập phương trình chính tắc của elip có độ dài trục lớn bằng 10 và tiêu cự bằng 6.",
+      "steps": [
+        "2a = 10 ⇒ a = 5; 2c = 6 ⇒ c = 3; b² = 25 − 9 = 16.",
+        "(E): x²/25 + y²/16 = 1."
+      ],
+      "expr": "25-9",
+      "answer": "16"
+    },
+    {
+      "problem": "Cho hypebol (H): x²/16 − y²/9 = 1. Tìm tiêu điểm và tiêu cự.",
+      "steps": [
+        "a = 4, b = 3, c² = 16 + 9 = 25 ⇒ c = 5.",
+        "Tiêu điểm F₁(−5; 0), F₂(5; 0); tiêu cự 2c = 10."
+      ],
+      "expr": "16+9",
+      "answer": "25"
+    },
+    {
+      "problem": "Cho parabol (P): y² = 8x. Tìm tiêu điểm, đường chuẩn và tính khoảng cách từ điểm M(2; 4) thuộc (P) đến tiêu điểm.",
+      "steps": [
+        "2p = 8 ⇒ p = 4; F(2; 0); đường chuẩn x = −2.",
+        "MF bằng khoảng cách từ M đến đường chuẩn: 2 + 2 = 4."
+      ],
+      "expr": "2+2",
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phương trình nào là phương trình chính tắc của elip?",
+      "choices": [
+        "x²/9 + y²/4 = 1",
+        "x²/9 − y²/4 = 1",
+        "y² = 4x",
+        "x² + y² = 9"
+      ],
+      "answer": 0,
+      "explain": "Dạng x²/a² + y²/b² = 1 với a > b.",
+      "wrong_explain": {
+        "1": "Đó là hypebol.",
+        "2": "Đó là parabol.",
+        "3": "Đó là đường tròn."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Elip x²/16 + y²/7 = 1 có c bằng:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "c² = 16 − 7 = 9.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hypebol x²/9 − y²/16 = 1 có tiêu cự bằng:",
+      "expr": "2*5",
+      "answer": "10",
+      "explain": "c² = 9 + 16 = 25, 2c = 10.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Parabol y² = 12x có tiêu điểm là:",
+      "choices": [
+        "F(3; 0)",
+        "F(6; 0)",
+        "F(0; 3)",
+        "F(−3; 0)"
+      ],
+      "answer": 0,
+      "explain": "2p = 12 ⇒ p = 6, F(p/2; 0).",
+      "wrong_explain": {
+        "1": "p/2 chứ không phải p.",
+        "2": "Tiêu điểm trên Ox.",
+        "3": "Đó là đường chuẩn x = −3."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Elip x²/25 + y²/16 = 1 có độ dài trục nhỏ bằng:",
+      "expr": "2*4",
+      "answer": "8",
+      "explain": "b = 4, 2b = 8.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Elip có a = 5, c = 4. Giá trị b² bằng:",
+      "expr": "25-16",
+      "answer": "9",
+      "explain": "b² = a² − c².",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Điểm M thuộc elip x²/25 + y²/9 = 1 có MF₁ = 7. Khi đó MF₂ bằng:",
+      "expr": "10-7",
+      "answer": "3",
+      "explain": "MF₁ + MF₂ = 2a = 10.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hypebol x²/4 − y²/5 = 1 có đỉnh A₂ với hoành độ bằng:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "a² = 4 nên a = 2.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đường chuẩn của parabol y² = 6x là:",
+      "choices": [
+        "x = −3/2",
+        "x = 3/2",
+        "y = −3/2",
+        "x = −3"
+      ],
+      "answer": 0,
+      "explain": "p = 3, đường chuẩn x = −p/2.",
+      "wrong_explain": {
+        "1": "Đó là hoành độ tiêu điểm.",
+        "2": "Đường chuẩn song song Oy.",
+        "3": "Sai."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Elip đi qua điểm (0; 3) và có a = 5. Giá trị b bằng:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "(0; 3) là đỉnh trên trục nhỏ nên b = 3.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Điểm M thuộc hypebol x²/9 − y²/16 = 1 có MF₁ = 10. Giá trị MF₂ bằng (biết MF₂ < MF₁):",
+      "expr": "10-6",
+      "answer": "4",
+      "explain": "|MF₁ − MF₂| = 2a = 6.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Elip có tiêu cự 8 và trục nhỏ 6. Độ dài trục lớn bằng:",
+      "expr": "2*5",
+      "answer": "10",
+      "explain": "c = 4, b = 3 ⇒ a = 5.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hypebol có tiêu điểm F₂(5; 0) và đỉnh A₂(3; 0). Giá trị b² bằng:",
+      "expr": "25-9",
+      "answer": "16",
+      "explain": "b² = c² − a².",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Parabol y² = 2px đi qua điểm (2; 4). Giá trị p bằng:",
+      "expr": "16/4",
+      "answer": "4",
+      "explain": "16 = 4p ⇒ p = 4.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Điểm M(x; 6) thuộc parabol y² = 4x. Khoảng cách từ M đến tiêu điểm bằng:",
+      "expr": "9+1",
+      "answer": "10",
+      "explain": "x = 9; p = 2; MF = x + p/2 = 10.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Elip x²/100 + y²/36 = 1 mô tả quỹ đạo (đơn vị: triệu km). Khoảng cách xa nhất từ một tiêu điểm đến một điểm trên elip bằng:",
+      "expr": "10+8",
+      "answer": "18",
+      "explain": "c = 8; khoảng cách lớn nhất a + c = 18.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Elip đi qua M(3; 0) và N(0; −2) có phương trình x²/a² + y²/b² = 1. Giá trị a² + b² bằng:",
+      "expr": "9+4",
+      "answer": "13",
+      "explain": "a = 3, b = 2.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hypebol x²/a² − y²/b² = 1 có a = 2 và đi qua điểm (4; 6). Giá trị b² bằng:",
+      "expr": "12",
+      "answer": "12",
+      "explain": "16/4 − 36/b² = 1 ⇔ 36/b² = 3 ⇔ b² = 12.",
+      "id": "q18"
+    }
+  ]
+}

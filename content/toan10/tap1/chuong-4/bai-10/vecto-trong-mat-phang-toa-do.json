@@ -1,0 +1,320 @@
+{
+  "id": "bai-10",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 1",
+  "chapter": "Chương IV. Vectơ",
+  "lesson": "Bài 10. Vectơ trong mặt phẳng toạ độ",
+  "section": "",
+  "bookPage": 60,
+  "requirements": [
+    "Xác định toạ độ của vectơ, của điểm; biểu thị vectơ qua →i, →j.",
+    "Tính toạ độ của tổng, hiệu, tích với một số; tính độ dài vectơ, khoảng cách hai điểm, toạ độ trung điểm, trọng tâm."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Trên mặt phẳng toạ độ Oxy, →i và →j là hai vectơ đơn vị trên hai trục Ox, Oy. Với mỗi vectơ →u có duy nhất cặp số (x; y) sao cho →u = x→i + y→j; cặp số đó gọi là toạ độ của →u, viết →u = (x; y) hoặc →u(x; y)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t10-b10-toa-do.svg",
+      "caption": "Toạ độ của điểm M chính là toạ độ của vectơ →OM"
+    },
+    {
+      "type": "text",
+      "content": "Toạ độ của điểm M là toạ độ của vectơ →OM. Nếu A(x_A; y_A) và B(x_B; y_B) thì →AB = (x_B − x_A; y_B − y_A). Hai vectơ bằng nhau khi và chỉ khi các toạ độ tương ứng bằng nhau."
+    },
+    {
+      "type": "formula",
+      "content": "→u = (x; y), →v = (x′; y′):   →u + →v = (x + x′; y + y′),   →u − →v = (x − x′; y − y′),   k→u = (kx; ky)"
+    },
+    {
+      "type": "formula",
+      "content": "|→u| = √(x² + y²)        AB = |→AB| = √((x_B − x_A)² + (y_B − y_A)²)"
+    },
+    {
+      "type": "text",
+      "content": "→v cùng phương với →u ≠ →0 khi và chỉ khi có số k để x′ = kx, y′ = ky (khi x, y khác 0 có thể viết x′/x = y′/y). Ba điểm A, B, C thẳng hàng khi →AB và →AC cùng phương."
+    },
+    {
+      "type": "formula",
+      "content": "Trung điểm I của AB: x_I = (x_A + x_B)/2, y_I = (y_A + y_B)/2.        Trọng tâm G của ABC: x_G = (x_A + x_B + x_C)/3, y_G = (y_A + y_B + y_C)/3."
+    },
+    {
+      "type": "method",
+      "title": "Tính toán với toạ độ vectơ",
+      "when": "Đề cho toạ độ các điểm hoặc vectơ và yêu cầu tìm toạ độ vectơ tổng, hiệu, tích; tìm điểm thoả mãn đẳng thức vectơ; xét ba điểm thẳng hàng; tính độ dài, chu vi; tìm trung điểm, trọng tâm.",
+      "steps": [
+        "Viết toạ độ từng vectơ cần dùng: →AB = (x_B − x_A; y_B − y_A).",
+        "Thay vào biểu thức, tính theo từng toạ độ (hoành độ với hoành độ, tung độ với tung độ).",
+        "Nếu tìm điểm M(x; y) chưa biết: viết đẳng thức vectơ thành hệ hai phương trình theo x, y rồi giải.",
+        "Độ dài dùng công thức căn bậc hai; thẳng hàng kiểm tra tỉ lệ toạ độ."
+      ],
+      "notes": [
+        "Chú ý dấu khi lấy hiệu toạ độ: điểm cuối trừ điểm đầu.",
+        "Hình bình hành ABCD thì →AB = →DC (không phải →AB = →CD).",
+        "Khi x = 0 hoặc y = 0 không chia, dùng điều kiện x·y′ − x′·y = 0 cho cùng phương."
+      ],
+      "sample": {
+        "problem": "Cho A(1; 2), B(4; 6). Tính độ dài AB và toạ độ trung điểm I của AB.",
+        "steps": [
+          "→AB = (4 − 1; 6 − 2) = (3; 4) nên AB = √(9 + 16) = 5.",
+          "I((1 + 4)/2; (2 + 6)/2) = (2,5; 4)."
+        ],
+        "answer": "AB = 5, I(2,5; 4)"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho →u = (2; −1), →v = (−3; 4). Tìm toạ độ của →u + →v, →u − →v và 2→u + 3→v.",
+      "steps": [
+        "→u + →v = (2 − 3; −1 + 4) = (−1; 3).",
+        "→u − →v = (2 + 3; −1 − 4) = (5; −5).",
+        "2→u = (4; −2), 3→v = (−9; 12) nên 2→u + 3→v = (−5; 10)."
+      ],
+      "expr": "-5+10",
+      "answer": "5"
+    },
+    {
+      "problem": "Cho A(−1; 3), B(2; −1), C(5; 2). Tìm toạ độ điểm D để ABCD là hình bình hành.",
+      "steps": [
+        "ABCD là hình bình hành khi →AD = →BC.",
+        "→BC = (5 − 2; 2 + 1) = (3; 3); →AD = (x_D + 1; y_D − 3).",
+        "x_D + 1 = 3 và y_D − 3 = 3 nên D(2; 6)."
+      ],
+      "expr": "2+6",
+      "answer": "8"
+    },
+    {
+      "problem": "Cho A(1; 1), B(3; 5), C(7; 13). Chứng minh ba điểm A, B, C thẳng hàng.",
+      "steps": [
+        "→AB = (2; 4), →AC = (6; 12).",
+        "Vì 6/2 = 12/4 = 3 nên →AC = 3→AB, hai vectơ cùng phương.",
+        "Vậy A, B, C thẳng hàng."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong mặt phẳng Oxy, vectơ →u = 3→i − 2→j có toạ độ là:",
+      "choices": [
+        "(3; −2)",
+        "(−2; 3)",
+        "(3; 2)",
+        "(−3; 2)"
+      ],
+      "answer": 0,
+      "explain": "Hệ số của →i là hoành độ, hệ số của →j là tung độ.",
+      "wrong_explain": {
+        "1": "Đảo thứ tự.",
+        "2": "Sai dấu tung độ.",
+        "3": "Sai dấu."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho A(2; 5) và B(−1; 3). Toạ độ của →AB là:",
+      "choices": [
+        "(−3; −2)",
+        "(3; 2)",
+        "(1; 8)",
+        "(−3; 2)"
+      ],
+      "answer": 0,
+      "explain": "→AB = (x_B − x_A; y_B − y_A) = (−1 − 2; 3 − 5).",
+      "wrong_explain": {
+        "1": "Đó là →BA.",
+        "2": "Đó là tổng toạ độ.",
+        "3": "Sai dấu tung độ."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Độ dài của vectơ →u = (6; −8) là:",
+      "expr": "10",
+      "answer": "10",
+      "explain": "|→u| = √(36 + 64) = 10.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cho A(1; 2), B(5; 8). Hoành độ trung điểm của AB là:",
+      "expr": "(1+5)/2",
+      "answer": "3",
+      "explain": "x_I = (1 + 5)/2 = 3.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai vectơ →a = (2; m) và →b = (2; 5) bằng nhau khi:",
+      "choices": [
+        "m = 5",
+        "m = 2",
+        "m = −5",
+        "m = 0"
+      ],
+      "answer": 0,
+      "explain": "Hai vectơ bằng nhau khi các toạ độ tương ứng bằng nhau.",
+      "wrong_explain": {
+        "1": "Hoành độ đã bằng nhau; cần tung độ bằng nhau.",
+        "2": "Sai dấu.",
+        "3": "Không đúng."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho →u = (1; −3), →v = (4; 2). Tung độ của 2→u − →v là:",
+      "expr": "2*(-3)-2",
+      "answer": "-8",
+      "explain": "2→u − →v = (2 − 4; −6 − 2) = (−2; −8).",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho A(−2; 1), B(1; 5). Độ dài đoạn AB là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "→AB = (3; 4), AB = √(9 + 16) = 5.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC có A(1; 2), B(3; −4), C(5; 8). Tung độ trọng tâm G là:",
+      "expr": "(2-4+8)/3",
+      "answer": "2",
+      "explain": "y_G = (2 − 4 + 8)/3 = 2.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vectơ nào sau đây cùng phương với →a = (2; −6)?",
+      "choices": [
+        "(−1; 3)",
+        "(1; 3)",
+        "(6; 2)",
+        "(3; −1)"
+      ],
+      "answer": 0,
+      "explain": "(−1; 3) = −1/2·(2; −6).",
+      "wrong_explain": {
+        "1": "1/2 ≠ 3/(−6).",
+        "2": "6/2 ≠ 2/(−6).",
+        "3": "3/2 ≠ −1/(−6)."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho →a = (3; 2), →b = (m; 4). Giá trị m để →a và →b cùng phương là:",
+      "expr": "6",
+      "answer": "6",
+      "explain": "m/3 = 4/2 nên m = 6.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho A(1; 1), B(4; 5). Điểm M thoả mãn →AM = →AB có toạ độ:",
+      "choices": [
+        "(4; 5)",
+        "(3; 4)",
+        "(5; 6)",
+        "(−2; −3)"
+      ],
+      "answer": 0,
+      "explain": "→AM = →AB nên M trùng B.",
+      "wrong_explain": {
+        "1": "Đó là toạ độ →AB.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho A(2; 1), B(−1; 3), C(0; −2). Hoành độ điểm D để ABCD là hình bình hành là:",
+      "expr": "2+1",
+      "answer": "3",
+      "explain": "→AD = →BC = (1; −5) nên x_D = 2 + 1 = 3, y_D = −4.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho A(1; 2), B(3; 6), C(m; 10). Giá trị m để A, B, C thẳng hàng là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "→AB = (2; 4), →AC = (m − 1; 8); thẳng hàng khi (m − 1)/2 = 8/4 nên m = 5.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác ABC có A(0; 0), B(3; 0), C(0; 4). Chu vi tam giác ABC là:",
+      "expr": "3+4+5",
+      "answer": "12",
+      "explain": "AB = 3, AC = 4, BC = √(9 + 16) = 5; chu vi 12.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho A(1; 3), B(5; −1). Điểm M trên trục Ox cách đều A và B có hoành độ là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "MA² = MB²: (x − 1)² + 9 = (x − 5)² + 1 ⇔ −2x + 10 = −10x + 26 ⇔ x = 2.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho →u = (2; 3), →v = (1; −1), →w = (7; 3). Nếu →w = x→u + y→v thì x + y bằng:",
+      "expr": "2+3",
+      "answer": "5",
+      "explain": "2x + y = 7 và 3x − y = 3 cho x = 2, y = 3; x + y = 5.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho A(1; 2), B(4; 6). Điểm M thoả mãn →MA + 2→MB = →0. Giá trị 3·x_M + 3·y_M bằng:",
+      "expr": "3*3+14",
+      "answer": "23",
+      "explain": "→MA + 2→MB = →0 ⇔ 3→OM = →OA + 2→OB nên M = ((1 + 8)/3; (2 + 12)/3) = (3; 14/3); 3·3 + 3·14/3 = 23.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho A(−1; 2), B(3; 4). Điểm C(0; c) trên trục Oy sao cho tam giác ABC vuông tại A. Giá trị của c là:",
+      "expr": "0",
+      "answer": "0",
+      "explain": "Vuông tại A: AB² + AC² = BC² ⇔ 20 + 1 + (c − 2)² = 9 + (c − 4)² ⇔ 25 − 4c = 25 − 8c ⇔ c = 0.",
+      "id": "q18"
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "id": "bai-27",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 2",
+  "chapter": "Chương IX. Tính xác suất theo định nghĩa cổ điển",
+  "lesson": "Bài 27. Thực hành tính xác suất theo định nghĩa cổ điển",
+  "section": "",
+  "bookPage": 83,
+  "requirements": [
+    "Dùng phương pháp tổ hợp, sơ đồ hình cây để tính xác suất.",
+    "Dùng xác suất của biến cố đối để tính xác suất của biến cố \"ít nhất\"."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phương pháp tổ hợp: khi phép thử là chọn ngẫu nhiên k phần tử từ n phần tử (không kể thứ tự) thì n(Ω) = C_n^k; số kết quả thuận lợi cũng đếm bằng tổ hợp kết hợp quy tắc nhân."
+    },
+    {
+      "type": "text",
+      "content": "Sơ đồ hình cây: khi phép thử gồm nhiều giai đoạn với ít kết quả mỗi giai đoạn (gieo đồng xu vài lần, bốc thẻ lần lượt), vẽ sơ đồ hình cây để liệt kê đầy đủ không gian mẫu rồi đếm."
+    },
+    {
+      "type": "formula",
+      "content": "P(Ā) = 1 − P(A)   →   P(A) = 1 − P(Ā)"
+    },
+    {
+      "type": "text",
+      "content": "Với biến cố dạng \"có ít nhất một ...\" hoặc \"không phải tất cả ...\", biến cố đối thường dễ đếm hơn: \"không có ... nào\" hoặc \"tất cả đều ...\"."
+    },
+    {
+      "type": "text",
+      "content": "Lưu ý khi đếm: \"lấy đồng thời\" hoặc \"lấy ngẫu nhiên k vật\" dùng tổ hợp; \"lấy lần lượt\" hoặc \"xếp\" thì có thứ tự; kết quả phải đồng khả năng."
+    },
+    {
+      "type": "method",
+      "title": "Tính xác suất bằng tổ hợp và biến cố đối",
+      "when": "Đề cho hộp bi, nhóm người, bộ thẻ… và hỏi xác suất chọn được nhóm thoả điều kiện, hoặc \"ít nhất\", \"có đủ\", \"không có\".",
+      "steps": [
+        "n(Ω) = C_n^k khi chọn k trong n không kể thứ tự.",
+        "Đếm n(A) bằng cách chia theo thành phần (ví dụ 2 đỏ và 1 xanh: C_a^2·C_b^1); nếu có nhiều trường hợp thì cộng.",
+        "Với \"ít nhất một\": tính P(không có) rồi lấy 1 trừ.",
+        "Rút gọn phân số."
+      ],
+      "notes": [
+        "Không cộng các trường hợp trùng nhau.",
+        "Kiểm tra n(A) ≤ n(Ω)."
+      ],
+      "sample": {
+        "problem": "Một hộp có 4 bi đỏ và 3 bi xanh. Lấy ngẫu nhiên 3 bi. Tính xác suất lấy được ít nhất một bi đỏ.",
+        "steps": [
+          "n(Ω) = C_7^3 = 35.",
+          "Biến cố đối: cả 3 bi xanh, C_3^3 = 1 cách; P(Ā) = 1/35.",
+          "P(A) = 1 − 1/35 = 34/35."
+        ],
+        "answer": "34/35"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một hộp có 5 bi đỏ và 4 bi xanh. Lấy ngẫu nhiên 3 bi. Tính xác suất lấy được 2 bi đỏ và 1 bi xanh.",
+      "steps": [
+        "n(Ω) = C_9^3 = 84.",
+        "n(A) = C_5^2·C_4^1 = 10·4 = 40.",
+        "P(A) = 40/84 = 10/21."
+      ],
+      "expr": "40/84",
+      "answer": "10/21"
+    },
+    {
+      "problem": "Một nhóm có 6 nam và 4 nữ. Chọn ngẫu nhiên 3 người. Tính xác suất để trong 3 người có cả nam và nữ.",
+      "steps": [
+        "n(Ω) = C_10^3 = 120.",
+        "Biến cố đối: cả 3 cùng giới: C_6^3 + C_4^3 = 20 + 4 = 24.",
+        "P = 1 − 24/120 = 96/120 = 4/5."
+      ],
+      "expr": "1-24/120",
+      "answer": "4/5"
+    },
+    {
+      "problem": "Gieo một đồng xu rồi gieo một con xúc xắc. Dùng sơ đồ hình cây, tính xác suất để đồng xu sấp và xúc xắc ra số chấm lẻ.",
+      "steps": [
+        "Sơ đồ hình cây: 2 nhánh (S, N), mỗi nhánh 6 nhánh con: n(Ω) = 12.",
+        "Thuận lợi: S1, S3, S5: 3 kết quả.",
+        "P = 3/12 = 1/4."
+      ],
+      "expr": "3/12",
+      "answer": "1/4"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Chọn ngẫu nhiên 2 học sinh từ 8 học sinh. Số phần tử của không gian mẫu là:",
+      "expr": "8*7/2",
+      "answer": "28",
+      "explain": "C_8^2.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Một hộp có 3 bi đỏ, 2 bi xanh. Lấy 2 bi. Số cách lấy được 2 bi xanh là:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "C_2^2 = 1.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "P(A) = 2/5. Xác suất của biến cố đối là:",
+      "expr": "1-2/5",
+      "answer": "3/5",
+      "explain": "1 − P(A).",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Để tính xác suất \"ít nhất một lần ngửa\" khi gieo đồng xu 4 lần, ta nên:",
+      "choices": [
+        "tính xác suất \"không lần nào ngửa\" rồi lấy 1 trừ đi",
+        "liệt kê tất cả trường hợp có ngửa",
+        "chỉ đếm trường hợp 1 lần ngửa",
+        "cộng xác suất mỗi lần ngửa"
+      ],
+      "answer": 0,
+      "explain": "Biến cố đối dễ đếm hơn.",
+      "wrong_explain": {
+        "1": "Dài và dễ sót.",
+        "2": "Thiếu các trường hợp 2, 3, 4 lần.",
+        "3": "Sai cách."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Gieo đồng xu rồi gieo xúc xắc. Số phần tử của không gian mẫu là:",
+      "expr": "2*6",
+      "answer": "12",
+      "explain": "Quy tắc nhân.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một hộp có 4 bi đỏ, 6 bi xanh. Lấy 2 bi. Xác suất lấy được 2 bi đỏ là:",
+      "expr": "6/45",
+      "answer": "2/15",
+      "explain": "C_4^2/C_10^2 = 6/45.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một hộp có 4 bi đỏ, 6 bi xanh. Lấy 2 bi. Xác suất lấy được 1 đỏ 1 xanh là:",
+      "expr": "24/45",
+      "answer": "8/15",
+      "explain": "4·6/45.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Gieo đồng xu 4 lần. Xác suất có ít nhất một lần ngửa là:",
+      "expr": "1-1/16",
+      "answer": "15/16",
+      "explain": "P(không ngửa) = 1/16.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chọn 2 người từ 3 nam và 2 nữ. Xác suất chọn được 2 nam là:",
+      "expr": "3/10",
+      "answer": "3/10",
+      "explain": "C_3^2/C_5^2.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một lớp có 30 học sinh, trong đó 12 bạn giỏi Toán. Chọn 1 bạn. Xác suất bạn đó không giỏi Toán là:",
+      "expr": "18/30",
+      "answer": "3/5",
+      "explain": "1 − 12/30.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Gieo hai xúc xắc. Xác suất có ít nhất một mặt 6 chấm là:",
+      "expr": "11/36",
+      "answer": "11/36",
+      "explain": "Biến cố đối: không có mặt 6: 25/36.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một hộp có 5 bi đỏ, 3 bi xanh. Lấy 3 bi. Xác suất lấy được ít nhất 1 bi xanh là:",
+      "expr": "1-10/56",
+      "answer": "23/28",
+      "explain": "P(cả 3 đỏ) = C_5^3/C_8^3 = 10/56.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một tổ có 5 nam, 5 nữ. Chọn 3 người. Xác suất có đúng 2 nữ là:",
+      "expr": "50/120",
+      "answer": "5/12",
+      "explain": "C_5^2·C_5^1/C_10^3 = 10·5/120.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Xếp ngẫu nhiên 4 bạn trong đó có An và Bình thành hàng ngang. Xác suất An và Bình đứng cạnh nhau là:",
+      "expr": "12/24",
+      "answer": "1/2",
+      "explain": "Khối AB: 3!·2 = 12; n(Ω) = 24.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Rút ngẫu nhiên 2 thẻ từ 10 thẻ đánh số 1–10. Xác suất tổng hai số là số chẵn là:",
+      "expr": "20/45",
+      "answer": "4/9",
+      "explain": "Cùng chẵn C_5^2 = 10 hoặc cùng lẻ 10: 20/45.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Gieo xúc xắc 2 lần. Xác suất tích hai số chấm chia hết cho 6 là:",
+      "expr": "15/36",
+      "answer": "5/12",
+      "explain": "Đếm cặp có tích chia hết cho 6: 15 cặp trong 36.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Một hộp có 3 bi đỏ, 3 bi xanh, 3 bi vàng. Lấy 3 bi. Xác suất lấy được 3 bi khác màu là:",
+      "expr": "27/84",
+      "answer": "9/28",
+      "explain": "3·3·3/C_9^3 = 27/84.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Chọn ngẫu nhiên 3 số từ 1 đến 9. Xác suất để 3 số đó lập thành cấp số cộng (số ở giữa là trung bình cộng hai số kia) là:",
+      "expr": "16/84",
+      "answer": "4/21",
+      "explain": "Cặp (a, c) cùng tính chẵn lẻ: C_5^2 + C_4^2 = 16 bộ; n(Ω) = 84.",
+      "id": "q18"
+    }
+  ]
+}

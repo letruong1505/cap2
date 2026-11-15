@@ -1,0 +1,325 @@
+{
+  "id": "bai-4",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 1",
+  "chapter": "Chương II. Bất phương trình và hệ bất phương trình bậc nhất hai ẩn",
+  "lesson": "Bài 4. Hệ bất phương trình bậc nhất hai ẩn",
+  "section": "",
+  "bookPage": 26,
+  "requirements": [
+    "Nhận biết hệ bất phương trình bậc nhất hai ẩn, biểu diễn miền nghiệm trên mặt phẳng toạ độ.",
+    "Vận dụng để tìm giá trị lớn nhất, nhỏ nhất của biểu thức F = ax + by trên miền nghiệm và giải bài toán thực tế."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hệ bất phương trình bậc nhất hai ẩn là hệ gồm hai hay nhiều bất phương trình bậc nhất hai ẩn x, y. Cặp (x₀; y₀) là nghiệm của hệ khi nó là nghiệm của mọi bất phương trình trong hệ. Miền nghiệm của hệ là giao các miền nghiệm của từng bất phương trình."
+    },
+    {
+      "type": "text",
+      "content": "Để biểu diễn miền nghiệm của hệ: vẽ từng đường thẳng, gạch bỏ phần không là miền nghiệm của mỗi bất phương trình; phần còn lại không bị gạch là miền nghiệm của hệ (thường là một miền đa giác)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t10-b4-he-bpt.svg",
+      "caption": "Miền nghiệm của hệ x ≥ 0, y ≥ 0, x + y ≤ 4, x + 2y ≤ 6 là tứ giác có các đỉnh O(0; 0), (4; 0), (2; 2), (0; 3)"
+    },
+    {
+      "type": "text",
+      "content": "Giá trị lớn nhất (nhỏ nhất) của biểu thức F(x; y) = ax + by trên một miền đa giác đạt được tại một trong các đỉnh của miền đa giác đó. Nhiều bài toán thực tế (lập kế hoạch sản xuất, pha chế, vận chuyển) đưa về tìm GTLN, GTNN của F trên miền nghiệm của một hệ bất phương trình."
+    },
+    {
+      "type": "method",
+      "title": "Tìm giá trị lớn nhất, nhỏ nhất của F = ax + by trên miền nghiệm",
+      "when": "Đề cho hệ bất phương trình (hoặc bài toán thực tế dẫn đến hệ) và yêu cầu tìm max, min của F = ax + by, hoặc phương án tối ưu.",
+      "steps": [
+        "Nếu là bài thực tế: đặt ẩn x, y, lập các bất phương trình ràng buộc (kể cả x ≥ 0, y ≥ 0) và biểu thức F cần tối ưu.",
+        "Vẽ miền nghiệm của hệ, xác định toạ độ các đỉnh của miền đa giác (giải hệ phương trình của từng cặp đường thẳng).",
+        "Tính F tại từng đỉnh.",
+        "So sánh: giá trị lớn nhất là max F, nhỏ nhất là min F; trả lời theo yêu cầu của bài."
+      ],
+      "notes": [
+        "Miền nghiệm phải bị chặn (đa giác) thì mới chắc chắn có cả max và min.",
+        "Bài thực tế thường yêu cầu x, y nguyên; kiểm tra đỉnh có toạ độ nguyên không."
+      ],
+      "sample": {
+        "problem": "Tìm giá trị lớn nhất của F = 3x + 2y với x, y thoả mãn x ≥ 0, y ≥ 0, x + y ≤ 4, x + 2y ≤ 6.",
+        "steps": [
+          "Miền nghiệm là tứ giác có đỉnh O(0; 0), A(4; 0), B(2; 2), C(0; 3).",
+          "F(O) = 0; F(A) = 12; F(B) = 10; F(C) = 6.",
+          "Vậy max F = 12 tại (4; 0)."
+        ],
+        "answer": "12"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cặp số (1; 2) có là nghiệm của hệ x − y < 1 và 2x + y ≥ 3 không?",
+      "steps": [
+        "Thay vào bất phương trình thứ nhất: 1 − 2 = −1 < 1 đúng.",
+        "Thay vào bất phương trình thứ hai: 2 + 2 = 4 ≥ 3 đúng.",
+        "Cả hai đều đúng nên (1; 2) là nghiệm của hệ; giá trị 2x + y bằng 4."
+      ],
+      "expr": "2*1+2",
+      "answer": "4"
+    },
+    {
+      "problem": "Tìm giá trị nhỏ nhất của F = x + 3y trên miền nghiệm của hệ x ≥ 0, y ≥ 0, x + y ≤ 4, x + 2y ≤ 6.",
+      "steps": [
+        "Các đỉnh của miền nghiệm: O(0; 0), A(4; 0), B(2; 2), C(0; 3).",
+        "F(O) = 0, F(A) = 4, F(B) = 8, F(C) = 9.",
+        "Vậy min F = 0 tại O(0; 0) và max F = 9 tại C(0; 3)."
+      ],
+      "expr": "0+3*3",
+      "answer": "9"
+    },
+    {
+      "problem": "Một xưởng làm hai loại bàn. Bàn loại I cần 2 giờ cắt và 1 giờ lắp, lãi 300 nghìn đồng; bàn loại II cần 1 giờ cắt và 2 giờ lắp, lãi 400 nghìn đồng. Mỗi tuần có tối đa 40 giờ cắt và 50 giờ lắp. Hỏi nên làm bao nhiêu bàn mỗi loại để lãi lớn nhất và lãi đó là bao nhiêu nghìn đồng?",
+      "steps": [
+        "Gọi x, y là số bàn loại I, II (x, y ≥ 0). Ràng buộc: 2x + y ≤ 40 (cắt), x + 2y ≤ 50 (lắp). Lãi F = 300x + 400y.",
+        "Đỉnh miền nghiệm: (0; 0), (20; 0), (10; 20), (0; 25).",
+        "F lần lượt bằng 0; 6000; 11 000; 10 000.",
+        "Lãi lớn nhất 11 000 nghìn đồng khi làm 10 bàn loại I và 20 bàn loại II."
+      ],
+      "expr": "300*10+400*20",
+      "answer": "11000"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cặp số nào là nghiệm của hệ x + y ≤ 3 và x − y ≥ 0?",
+      "choices": [
+        "(2; 1)",
+        "(1; 2)",
+        "(3; 1)",
+        "(0; 1)"
+      ],
+      "answer": 0,
+      "explain": "2 + 1 = 3 ≤ 3 và 2 − 1 = 1 ≥ 0.",
+      "wrong_explain": {
+        "1": "1 − 2 < 0.",
+        "2": "3 + 1 = 4 > 3.",
+        "3": "0 − 1 < 0."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Miền nghiệm của hệ bất phương trình là:",
+      "choices": [
+        "giao của các miền nghiệm của từng bất phương trình",
+        "hợp của các miền nghiệm của từng bất phương trình",
+        "miền nghiệm của bất phương trình đầu tiên",
+        "một đường thẳng"
+      ],
+      "answer": 0,
+      "explain": "Nghiệm của hệ phải thoả mãn mọi bất phương trình.",
+      "wrong_explain": {
+        "1": "Hợp là sai.",
+        "2": "Phải thoả mãn tất cả.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hệ bất phương trình x ≥ 0, y ≥ 0 có miền nghiệm là:",
+      "choices": [
+        "góc phần tư thứ nhất kể cả hai tia Ox, Oy",
+        "góc phần tư thứ ba",
+        "nửa mặt phẳng bên phải trục Oy",
+        "toàn bộ mặt phẳng"
+      ],
+      "answer": 0,
+      "explain": "x ≥ 0 và y ≥ 0 là các điểm có hoành độ và tung độ không âm.",
+      "wrong_explain": {
+        "1": "Đó là x ≤ 0, y ≤ 0.",
+        "2": "Thiếu điều kiện y ≥ 0.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Giá trị lớn nhất của F = ax + by trên một miền đa giác đạt được tại:",
+      "choices": [
+        "một đỉnh của miền đa giác",
+        "tâm của miền đa giác",
+        "trung điểm một cạnh",
+        "gốc toạ độ"
+      ],
+      "answer": 0,
+      "explain": "Tính chất của hàm bậc nhất hai ẩn trên miền đa giác.",
+      "wrong_explain": {
+        "1": "Không đúng.",
+        "2": "Không đúng.",
+        "3": "Không nhất thiết."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giá trị của F = 2x + 5y tại đỉnh (3; 4) là:",
+      "expr": "2*3+5*4",
+      "answer": "26",
+      "explain": "F = 6 + 20 = 26.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai đường thẳng x + y = 5 và x − y = 1 cắt nhau tại điểm có hoành độ bằng:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Cộng hai phương trình: 2x = 6 ⇔ x = 3.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điểm nào thuộc miền nghiệm của hệ 2x − y ≤ 2, x + y ≥ 1, y ≤ 3?",
+      "choices": [
+        "(1; 2)",
+        "(3; 1)",
+        "(0; 0)",
+        "(0; 4)"
+      ],
+      "answer": 0,
+      "explain": "2 − 2 = 0 ≤ 2; 1 + 2 = 3 ≥ 1; 2 ≤ 3.",
+      "wrong_explain": {
+        "1": "6 − 1 = 5 > 2.",
+        "2": "0 + 0 < 1.",
+        "3": "4 > 3."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Miền nghiệm của hệ x ≥ 0, y ≥ 0, x + y ≤ 2 là:",
+      "choices": [
+        "tam giác có các đỉnh (0; 0), (2; 0), (0; 2)",
+        "hình vuông cạnh 2",
+        "tam giác có các đỉnh (0; 0), (1; 0), (0; 1)",
+        "nửa mặt phẳng"
+      ],
+      "answer": 0,
+      "explain": "Ba đường x = 0, y = 0, x + y = 2 tạo tam giác vuông.",
+      "wrong_explain": {
+        "1": "Không phải hình vuông.",
+        "2": "Sai toạ độ đỉnh.",
+        "3": "Miền bị chặn."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trên miền tam giác có đỉnh (0; 0), (2; 0), (0; 2), giá trị lớn nhất của F = 3x + y là:",
+      "expr": "3*2+0",
+      "answer": "6",
+      "explain": "F(0;0) = 0, F(2;0) = 6, F(0;2) = 2; max là 6.",
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm giá trị nhỏ nhất của F = x + 2y trên miền có các đỉnh (1; 1), (4; 1), (2; 5).",
+      "expr": "1+2*1",
+      "answer": "3",
+      "explain": "F(1;1) = 3, F(4;1) = 6, F(2;5) = 12; min là 3.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Miền nghiệm của hệ x ≥ 0, y ≥ 0, x + y ≤ 4, x + 2y ≤ 6 có một đỉnh là giao của x + y = 4 và x + 2y = 6. Tung độ đỉnh đó là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Trừ hai phương trình: y = 2 (và x = 2).",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một người cần ít nhất 12 đơn vị chất A và 10 đơn vị chất B. Thực phẩm X chứa 2 đơn vị A và 1 đơn vị B; thực phẩm Y chứa 1 đơn vị A và 2 đơn vị B. Nếu dùng 2 phần X thì cần ít nhất bao nhiêu phần Y?",
+      "expr": "8",
+      "answer": "8",
+      "explain": "Chất A: 4 + y ≥ 12 ⇔ y ≥ 8; chất B: 2 + 2y ≥ 10 ⇔ y ≥ 4. Vậy y ≥ 8.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Một hệ bất phương trình có miền nghiệm là tứ giác với các đỉnh (0; 0), (5; 0), (3; 4), (0; 6). Giá trị lớn nhất của F = 2x + 3y là:",
+      "choices": [
+        "18",
+        "10",
+        "15",
+        "12"
+      ],
+      "answer": 0,
+      "explain": "F(0;0)=0, F(5;0)=10, F(3;4)=18, F(0;6)=18. Max = 18.",
+      "wrong_explain": {
+        "1": "Chỉ là F tại (5; 0).",
+        "2": "Không phải giá trị tại đỉnh.",
+        "3": "Không phải giá trị tại đỉnh."
+      },
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một nông trại trồng ngô và đậu trên tối đa 10 ha. Mỗi ha ngô cần 3 công, mỗi ha đậu cần 2 công, có tối đa 24 công. Lãi ngô 4 triệu/ha, đậu 3 triệu/ha. Lãi lớn nhất (triệu đồng) là:",
+      "expr": "4*4+3*6",
+      "answer": "34",
+      "explain": "Đỉnh miền nghiệm: (0;0), (8;0), (4;6), (0;10). Lãi: 0; 32; 34; 30. Max = 34 tại 4 ha ngô, 6 ha đậu.",
+      "id": "q14"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hệ bất phương trình x + y ≤ m, x ≥ 1, y ≥ 2 có nghiệm khi và chỉ khi:",
+      "choices": [
+        "m ≥ 3",
+        "m > 3",
+        "m ≤ 3",
+        "m ≥ 1"
+      ],
+      "answer": 0,
+      "explain": "Cần tồn tại x ≥ 1, y ≥ 2 với x + y ≤ m, nhỏ nhất x + y = 3, nên m ≥ 3.",
+      "wrong_explain": {
+        "1": "m = 3 vẫn có nghiệm (1; 2).",
+        "2": "Sai chiều.",
+        "3": "Chưa đủ."
+      },
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Trên miền nghiệm của hệ x ≥ 0, y ≥ 0, 2x + y ≤ 8, x + 3y ≤ 9, giá trị lớn nhất của F = 5x + 4y là:",
+      "expr": "5*3+4*2",
+      "answer": "23",
+      "explain": "Đỉnh: (0;0), (4;0), (3;2), (0;3). F: 0; 20; 23; 12. Max = 23.",
+      "id": "q16"
+    }
+  ]
+}

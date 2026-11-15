@@ -1,0 +1,317 @@
+{
+  "id": "bai-11",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 1",
+  "chapter": "Chương IV. Vectơ",
+  "lesson": "Bài 11. Tích vô hướng của hai vectơ",
+  "section": "",
+  "bookPage": 66,
+  "requirements": [
+    "Xác định góc giữa hai vectơ; tính tích vô hướng bằng định nghĩa và bằng toạ độ.",
+    "Dùng tích vô hướng để tính độ dài, góc, chứng minh vuông góc và giải bài toán hình học."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Góc giữa hai vectơ →a, →b khác →0: lấy điểm O bất kì, vẽ →OA = →a, →OB = →b, khi đó góc AOB (từ 0° đến 180°) là góc giữa hai vectơ, kí hiệu (→a, →b). Nếu (→a, →b) = 90° ta nói →a ⊥ →b."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t10-b11-goc-vecto.svg",
+      "caption": "Góc giữa hai vectơ và tích vô hướng"
+    },
+    {
+      "type": "formula",
+      "content": "→a·→b = |→a|·|→b|·cos(→a, →b)        →a·→a = →a² = |→a|²        →a ⊥ →b ⇔ →a·→b = 0"
+    },
+    {
+      "type": "text",
+      "content": "Biểu thức toạ độ: nếu →a = (x; y), →b = (x′; y′) thì →a·→b = xx′ + yy′. Từ đó |→a| = √(x² + y²) và cos(→a, →b) = (xx′ + yy′)/(√(x² + y²)·√(x′² + y′²))."
+    },
+    {
+      "type": "formula",
+      "content": "Tính chất: →a·→b = →b·→a;   →a·(→b + →c) = →a·→b + →a·→c;   (k→a)·→b = k(→a·→b)"
+    },
+    {
+      "type": "formula",
+      "content": "(→a + →b)² = →a² + 2→a·→b + →b²        (→a − →b)² = →a² − 2→a·→b + →b²        (→a + →b)(→a − →b) = →a² − →b²"
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: tích vô hướng cho phép tính độ dài đoạn thẳng, số đo góc, kiểm tra hai đường thẳng vuông góc; trong vật lí công của lực →F làm vật dịch chuyển →d là A = →F·→d."
+    },
+    {
+      "type": "method",
+      "title": "Tính tích vô hướng và góc giữa hai vectơ",
+      "when": "Đề cho toạ độ các vectơ, điểm, hoặc cho độ dài và góc; hỏi →a·→b, góc giữa hai vectơ, điều kiện vuông góc, hoặc tính độ dài qua đẳng thức vectơ.",
+      "steps": [
+        "Nếu có toạ độ: tính →a·→b = xx′ + yy′, |→a|, |→b| rồi suy ra cos của góc.",
+        "Nếu có độ dài và góc: dùng định nghĩa →a·→b = |→a||→b|cos α; chú ý góc giữa →AB và →AC là góc A, nhưng góc giữa →AB và →CA là 180° − A.",
+        "Bài tìm tham số để vuông góc: cho tích vô hướng bằng 0 rồi giải.",
+        "Bài độ dài: bình phương vô hướng, khai triển hằng đẳng thức vectơ rồi thay →a², →b², →a·→b."
+      ],
+      "notes": [
+        "Tích vô hướng là một số, không phải vectơ.",
+        "cos âm cho góc tù, cos dương cho góc nhọn.",
+        "Vuông góc dùng dấu hiệu tích vô hướng bằng 0, không cần tính góc."
+      ],
+      "sample": {
+        "problem": "Cho →a = (1; 2), →b = (3; −1). Tính →a·→b và góc giữa hai vectơ.",
+        "steps": [
+          "→a·→b = 1·3 + 2·(−1) = 1.",
+          "|→a| = √5, |→b| = √10 nên cos(→a, →b) = 1/√50 ≈ 0,1414, góc ≈ 81,87°."
+        ],
+        "answer": "→a·→b = 1, góc ≈ 81,87°"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho tam giác đều ABC cạnh a. Tính →AB·→AC và →AB·→BC.",
+      "steps": [
+        "(→AB, →AC) = 60° nên →AB·→AC = a·a·cos 60° = a²/2.",
+        "Góc giữa →AB và →BC là góc ngoài tại B, bằng 120°, nên →AB·→BC = a²·cos 120° = −a²/2.",
+        "Với a = 2: →AB·→AC = 2."
+      ],
+      "expr": "2*2/2",
+      "answer": "2"
+    },
+    {
+      "problem": "Cho →a = (2; −1), →b = (m; 4). Tìm m để →a ⊥ →b.",
+      "steps": [
+        "→a·→b = 2m − 4.",
+        "→a ⊥ →b ⇔ 2m − 4 = 0 ⇔ m = 2."
+      ],
+      "expr": "4/2",
+      "answer": "2"
+    },
+    {
+      "problem": "Cho A(1; 1), B(4; 5), C(−3; 4). Chứng minh tam giác ABC vuông tại A.",
+      "steps": [
+        "→AB = (3; 4), →AC = (−4; 3).",
+        "→AB·→AC = 3·(−4) + 4·3 = 0 nên →AB ⊥ →AC.",
+        "Vậy tam giác ABC vuông tại A."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Cho |→a| = 3, |→b| = 4 và (→a, →b) = 60°. Tính |→a + →b|.",
+      "steps": [
+        "(→a + →b)² = →a² + 2→a·→b + →b² = 9 + 2·3·4·cos 60° + 16 = 9 + 12 + 16 = 37.",
+        "|→a + →b| = √37 ≈ 6,08."
+      ],
+      "expr": "9+12+16",
+      "answer": "37"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tích vô hướng của hai vectơ →a, →b là:",
+      "choices": [
+        "|→a|·|→b|·cos(→a, →b)",
+        "|→a|·|→b|·sin(→a, →b)",
+        "|→a| + |→b|",
+        "một vectơ cùng hướng với →a"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa tích vô hướng.",
+      "wrong_explain": {
+        "1": "Không dùng sin.",
+        "2": "Không phải tổng độ dài.",
+        "3": "Tích vô hướng là một số."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cho →a = (2; 3), →b = (−1; 4). Tích vô hướng →a·→b bằng:",
+      "expr": "2*(-1)+3*4",
+      "answer": "10",
+      "explain": "2·(−1) + 3·4 = 10.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cho |→a| = 2, |→b| = 5 và góc giữa chúng là 60°. →a·→b bằng:",
+      "expr": "2*5/2",
+      "answer": "5",
+      "explain": "2·5·cos 60° = 5.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai vectơ →a = (1; 2) và →b = (4; −2):",
+      "choices": [
+        "vuông góc với nhau",
+        "cùng hướng",
+        "ngược hướng",
+        "tạo góc 60°"
+      ],
+      "answer": 0,
+      "explain": "→a·→b = 4 − 4 = 0.",
+      "wrong_explain": {
+        "1": "Toạ độ không tỉ lệ.",
+        "2": "Toạ độ không tỉ lệ.",
+        "3": "Tích vô hướng bằng 0 nên góc 90°."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cho →u = (3; −4). Bình phương vô hướng →u² bằng:",
+      "expr": "9+16",
+      "answer": "25",
+      "explain": "→u² = |→u|² = 9 + 16 = 25.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho →a = (1; −1), →b = (2; 3). Giá trị (→a + →b)·→a bằng:",
+      "expr": "3*1+2*(-1)",
+      "answer": "1",
+      "explain": "→a + →b = (3; 2); (3; 2)·(1; −1) = 3 − 2 = 1.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho →a = (m; 2), →b = (3; −6). Giá trị m để →a ⊥ →b là:",
+      "expr": "12/3",
+      "answer": "4",
+      "explain": "3m − 12 = 0 nên m = 4.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho →a = (1; 1), →b = (0; 1). Góc giữa →a và →b bằng:",
+      "choices": [
+        "45°",
+        "30°",
+        "60°",
+        "90°"
+      ],
+      "answer": 0,
+      "explain": "cos = 1/(√2·1) = √2/2.",
+      "wrong_explain": {
+        "1": "cos 30° = √3/2.",
+        "2": "cos 60° = 1/2.",
+        "3": "Tích vô hướng khác 0."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC vuông tại A có AB = 3, AC = 4. Giá trị →BA·→BC bằng:",
+      "expr": "3*3",
+      "answer": "9",
+      "explain": "→BA·→BC = BA·BC·cos B = 3·5·(3/5) = 9 (hoặc = BA² theo hệ thức lượng).",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho hình vuông ABCD cạnh 2. Giá trị →AB·→AC bằng:",
+      "expr": "2*2",
+      "answer": "4",
+      "explain": "→AB·→AC = AB·AC·cos 45° = 2·2√2·(√2/2) = 4.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khẳng định nào sau đây đúng với mọi vectơ →a, →b?",
+      "choices": [
+        "(→a + →b)² = →a² + 2→a·→b + →b²",
+        "(→a + →b)² = →a² + →b²",
+        "→a·→b = →a × →b",
+        "|→a·→b| = |→a|·|→b|"
+      ],
+      "answer": 0,
+      "explain": "Khai triển bình phương vô hướng.",
+      "wrong_explain": {
+        "1": "Thiếu 2→a·→b.",
+        "2": "Không có phép nhân này ở lớp 10.",
+        "3": "Chỉ đúng khi cùng phương."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho |→a| = 1, |→b| = 2, (→a, →b) = 120°. Giá trị (→a + →b)² bằng:",
+      "expr": "1+2*(-1)+4",
+      "answer": "3",
+      "explain": "→a·→b = 1·2·cos 120° = −1; (→a + →b)² = 1 − 2 + 4 = 3.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho A(0; 3), B(4; 0), C(4; 3). Giá trị cos của góc BAC bằng (làm tròn 0,8):",
+      "expr": "16/20",
+      "answer": "0.8",
+      "explain": "→AB = (4; −3), →AC = (4; 0); cos A = 16/(5·4) = 0,8.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho →a = (2; 1), →b = (1; −3). Giá trị m để →a + m→b vuông góc với →a là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "→a + m→b = (2 + m; 1 − 3m); (2 + m)·2 + (1 − 3m)·1 = 5 − m = 0 ⇔ m = 5.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lực →F có độ lớn 20 N kéo một vật đi được quãng đường 5 m, lực hợp với hướng chuyển động góc 60°. Công của lực (đơn vị J) là:",
+      "expr": "20*5/2",
+      "answer": "50",
+      "explain": "A = F·d·cos 60° = 20·5·0,5 = 50 J.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác ABC có A(1; 2), B(−1; 1), C(5; −1). Số đo góc A (độ, làm tròn đến đơn vị) là:",
+      "expr": "117",
+      "answer": "117",
+      "explain": "→AB = (−2; −1), →AC = (4; −3); →AB·→AC = −8 + 3 = −5; |→AB| = √5, |→AC| = 5; cos A = −5/(5√5) ≈ −0,447 nên A ≈ 117°.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho tam giác ABC có AB = 5, AC = 8, BC = 7. Giá trị →AB·→AC bằng:",
+      "expr": "(25+64-49)/2",
+      "answer": "20",
+      "explain": "→AB·→AC = (AB² + AC² − BC²)/2 = (25 + 64 − 49)/2 = 20.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho hình chữ nhật ABCD có AB = 4, AD = 3; M là trung điểm BC. Giá trị →AM·→BD bằng:",
+      "expr": "4*(-4)+1.5*3",
+      "answer": "-11.5",
+      "explain": "Chọn A(0;0), B(4;0), D(0;3), C(4;3), M(4; 1,5): →AM = (4; 1,5), →BD = (−4; 3); tích = −16 + 4,5 = −11,5.",
+      "id": "q18"
+    }
+  ]
+}

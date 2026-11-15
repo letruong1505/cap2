@@ -1,0 +1,382 @@
+{
+  "id": "bai-7",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 1",
+  "chapter": "Chương IV. Vectơ",
+  "lesson": "Bài 7. Các khái niệm mở đầu",
+  "section": "",
+  "bookPage": 46,
+  "requirements": [
+    "Nhận biết vectơ, độ dài vectơ, hai vectơ cùng phương, cùng hướng, bằng nhau, vectơ-không.",
+    "Biểu thị một số đại lượng trong thực tiễn bằng vectơ."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Vectơ là một đoạn thẳng có hướng. Vectơ có điểm đầu A, điểm cuối B kí hiệu là →AB; độ dài của →AB là độ dài đoạn AB, kí hiệu |→AB| = AB. Vectơ còn được kí hiệu →a, →b, →u, →v khi không cần chỉ rõ điểm đầu, điểm cuối."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t10-b7-vecto.svg",
+      "caption": "Vectơ →AB; hai vectơ bằng nhau →a = →b; vectơ →c ngược hướng với →a"
+    },
+    {
+      "type": "text",
+      "content": "Đường thẳng đi qua điểm đầu và điểm cuối của một vectơ gọi là giá của vectơ. Hai vectơ cùng phương nếu giá của chúng song song hoặc trùng nhau. Hai vectơ cùng phương thì hoặc cùng hướng hoặc ngược hướng."
+    },
+    {
+      "type": "text",
+      "content": "Hai vectơ →a và →b bằng nhau (→a = →b) nếu chúng cùng hướng và cùng độ dài. Hai vectơ →a và →b đối nhau (→a = −→b) nếu chúng ngược hướng và cùng độ dài; →BA = −→AB."
+    },
+    {
+      "type": "text",
+      "content": "Vectơ-không →0 là vectơ có điểm đầu và điểm cuối trùng nhau (→AA = →BB = →0), có độ dài bằng 0, cùng phương và cùng hướng với mọi vectơ."
+    },
+    {
+      "type": "text",
+      "content": "Ba điểm phân biệt A, B, C thẳng hàng khi và chỉ khi →AB và →AC cùng phương. Vectơ dùng để biểu thị các đại lượng có hướng như lực, vận tốc, độ dịch chuyển."
+    },
+    {
+      "type": "method",
+      "title": "Nhận biết các vectơ bằng nhau, cùng phương, cùng hướng trong hình",
+      "when": "Đề cho hình bình hành, hình chữ nhật, hình vuông, hình lục giác đều, trung điểm... và hỏi các vectơ cùng phương, cùng hướng, bằng nhau, đối nhau hoặc tính độ dài vectơ.",
+      "steps": [
+        "Xác định giá của từng vectơ; các vectơ nằm trên các đường thẳng song song hoặc trùng nhau thì cùng phương.",
+        "Xét hướng: cùng chiều mũi tên là cùng hướng, ngược chiều là ngược hướng.",
+        "So sánh độ dài: cùng hướng và cùng độ dài thì bằng nhau; ngược hướng và cùng độ dài thì đối nhau.",
+        "Độ dài vectơ: tính độ dài đoạn thẳng tương ứng (Pythagore, tính chất hình)."
+      ],
+      "notes": [
+        "→AB = →DC trong hình bình hành ABCD, nhưng →AB ≠ →CD (ngược hướng).",
+        "Hai vectơ bằng nhau không cần cùng điểm đầu."
+      ],
+      "sample": {
+        "problem": "Cho hình bình hành ABCD tâm O. Tìm các vectơ bằng →AB và các vectơ đối của →AO.",
+        "steps": [
+          "AB // DC, AB = DC và →AB, →DC cùng hướng nên →DC = →AB.",
+          "O là trung điểm AC và BD nên →AO = →OC; vectơ đối của →AO là →OA và →CO."
+        ],
+        "answer": "→DC; →OA, →CO"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho hình bình hành ABCD. Hãy chỉ ra các vectơ (khác →0) có điểm đầu, điểm cuối là đỉnh của hình bình hành và bằng →AD.",
+      "steps": [
+        "→AD và →BC cùng hướng (AD // BC, cùng chiều) và AD = BC nên →BC = →AD.",
+        "→DA và →CB ngược hướng với →AD nên là các vectơ đối, không bằng →AD.",
+        "Vậy chỉ có →BC = →AD."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Cho hình vuông ABCD cạnh 2. Tính |→AC| và |→AB + ...| không cần; chỉ tính độ dài →AC và →AB.",
+      "steps": [
+        "|→AB| = AB = 2.",
+        "AC là đường chéo hình vuông cạnh 2: AC = 2√2 nên |→AC| = 2√2 ≈ 2,83.",
+        "Bình phương độ dài đường chéo: AC² = 2² + 2² = 8."
+      ],
+      "expr": "2*2+2*2",
+      "answer": "8"
+    },
+    {
+      "problem": "Cho ba điểm A, B, C. Chứng tỏ rằng nếu →AB và →AC cùng phương thì A, B, C thẳng hàng.",
+      "steps": [
+        "Hai vectơ →AB và →AC có chung điểm đầu A.",
+        "Chúng cùng phương nên giá của chúng song song hoặc trùng nhau; vì cùng đi qua A nên hai giá trùng nhau.",
+        "Do đó A, B, C cùng nằm trên một đường thẳng."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vectơ là:",
+      "choices": [
+        "một đoạn thẳng có hướng",
+        "một đường thẳng",
+        "một đoạn thẳng",
+        "một tia"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa vectơ.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Thiếu yếu tố hướng.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai vectơ bằng nhau khi:",
+      "choices": [
+        "cùng hướng và cùng độ dài",
+        "cùng phương và cùng độ dài",
+        "cùng độ dài",
+        "cùng hướng"
+      ],
+      "answer": 0,
+      "explain": "Cần cả hai điều kiện.",
+      "wrong_explain": {
+        "1": "Cùng phương có thể ngược hướng.",
+        "2": "Thiếu điều kiện hướng.",
+        "3": "Thiếu điều kiện độ dài."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vectơ-không có độ dài bằng:",
+      "choices": [
+        "0",
+        "1",
+        "không xác định",
+        "tuỳ ý"
+      ],
+      "answer": 0,
+      "explain": "Điểm đầu trùng điểm cuối.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Xác định bằng 0.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho hình bình hành ABCD. Vectơ nào bằng →AB?",
+      "choices": [
+        "→DC",
+        "→CD",
+        "→BA",
+        "→AD"
+      ],
+      "answer": 0,
+      "explain": "AB // DC, cùng hướng và cùng độ dài.",
+      "wrong_explain": {
+        "1": "→CD ngược hướng với →AB.",
+        "2": "→BA là vectơ đối.",
+        "3": "→AD không cùng phương với →AB."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vectơ đối của →MN là:",
+      "choices": [
+        "→NM",
+        "→MN",
+        "→0",
+        "−→NM"
+      ],
+      "answer": 0,
+      "explain": "Vectơ đối ngược hướng, cùng độ dài: →NM = −→MN.",
+      "wrong_explain": {
+        "1": "Chính nó.",
+        "2": "Sai.",
+        "3": "−→NM = →MN."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho đoạn thẳng AB = 6 cm và M là trung điểm. Độ dài |→AM| (cm) bằng:",
+      "expr": "6/2",
+      "answer": "3",
+      "explain": "AM = AB/2 = 3 cm.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Từ 3 điểm phân biệt A, B, C không thẳng hàng, lập được bao nhiêu vectơ khác →0 có điểm đầu và điểm cuối là hai trong ba điểm đó?",
+      "expr": "3*2",
+      "answer": "6",
+      "explain": "Mỗi cặp điểm có thứ tự cho một vectơ: 3·2 = 6.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho hình chữ nhật ABCD. Khẳng định nào đúng?",
+      "choices": [
+        "|→AC| = |→BD|",
+        "→AC = →BD",
+        "→AB = →CD",
+        "|→AB| = |→AD|"
+      ],
+      "answer": 0,
+      "explain": "Hai đường chéo hình chữ nhật bằng nhau.",
+      "wrong_explain": {
+        "1": "Hai vectơ không cùng hướng.",
+        "2": "Ngược hướng.",
+        "3": "Chỉ đúng với hình vuông."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ba điểm A, B, C thẳng hàng khi và chỉ khi:",
+      "choices": [
+        "→AB và →AC cùng phương",
+        "→AB = →AC",
+        "|→AB| = |→AC|",
+        "→AB và →AC cùng hướng"
+      ],
+      "answer": 0,
+      "explain": "Điều kiện thẳng hàng.",
+      "wrong_explain": {
+        "1": "Khi đó B trùng C.",
+        "2": "Không đủ.",
+        "3": "Có thể ngược hướng (A nằm giữa) vẫn thẳng hàng."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho tam giác đều ABC cạnh a. Khẳng định nào đúng?",
+      "choices": [
+        "|→AB| = |→BC| = |→CA| = a",
+        "→AB = →BC = →CA",
+        "→AB = →AC",
+        "→AB và →BC cùng phương"
+      ],
+      "answer": 0,
+      "explain": "Ba cạnh bằng nhau nhưng các vectơ không cùng hướng.",
+      "wrong_explain": {
+        "1": "Khác hướng nên không bằng nhau.",
+        "2": "Khác hướng.",
+        "3": "Không cùng phương."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình vuông ABCD cạnh 3. Giá trị |→AC|² bằng:",
+      "expr": "9+9",
+      "answer": "18",
+      "explain": "AC² = 3² + 3² = 18.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho hình bình hành ABCD tâm O. Số vectơ khác →0 bằng →AO trong hình (điểm đầu, điểm cuối thuộc {A, B, C, D, O}) là:",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "answer": 0,
+      "explain": "Chỉ có →OC = →AO.",
+      "wrong_explain": {
+        "1": "→CO và →OA là vectơ đối.",
+        "2": "Sai.",
+        "3": "Có →OC."
+      },
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho lục giác đều ABCDEF tâm O. Vectơ nào bằng →AB?",
+      "choices": [
+        "→FO",
+        "→DE",
+        "→BA",
+        "→OE"
+      ],
+      "answer": 0,
+      "explain": "Trong lục giác đều, ABOF là hình thoi nên →FO = →AB (cùng với →OC, →ED).",
+      "wrong_explain": {
+        "1": "→DE ngược hướng với →AB.",
+        "2": "Vectơ đối.",
+        "3": "Sai hướng."
+      },
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho tam giác ABC có trung điểm các cạnh BC, CA, AB lần lượt là M, N, P. Số vectơ khác →0 bằng →PN (điểm đầu, điểm cuối thuộc {A, B, C, M, N, P}) là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "PN là đường trung bình: →PN = →BM = →MC.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Một vật chịu hai lực →F₁ và →F₂ cùng độ lớn 10 N, ngược hướng nhau. Khẳng định nào đúng?",
+      "choices": [
+        "→F₁ = −→F₂",
+        "→F₁ = →F₂",
+        "|→F₁| ≠ |→F₂|",
+        "→F₁ và →F₂ không cùng phương"
+      ],
+      "answer": 0,
+      "explain": "Cùng độ lớn, ngược hướng: hai vectơ đối nhau.",
+      "wrong_explain": {
+        "1": "Ngược hướng nên không bằng nhau.",
+        "2": "Cùng độ lớn 10 N.",
+        "3": "Ngược hướng thì cùng phương."
+      },
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho tứ giác ABCD có →AB = →DC và |→AB| = |→AD| = 4, AC = 4√2. Khi đó ABCD là hình vuông và diện tích của nó bằng:",
+      "expr": "4*4",
+      "answer": "16",
+      "explain": "→AB = →DC nên ABCD là hình bình hành; hai cạnh kề bằng nhau nên là hình thoi; AC² = 32 = AB² + AD² nên góc A vuông: hình vuông cạnh 4.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho hình thoi ABCD. Khẳng định nào sai?",
+      "choices": [
+        "|→AC| = |→BD|",
+        "→AB = →DC",
+        "|→AB| = |→BC|",
+        "→AD = →BC"
+      ],
+      "answer": 0,
+      "explain": "Hình thoi có hai đường chéo thường không bằng nhau.",
+      "wrong_explain": {
+        "1": "Đúng với hình bình hành.",
+        "2": "Hình thoi có bốn cạnh bằng nhau.",
+        "3": "Đúng với hình bình hành."
+      },
+      "id": "q17"
+    }
+  ]
+}

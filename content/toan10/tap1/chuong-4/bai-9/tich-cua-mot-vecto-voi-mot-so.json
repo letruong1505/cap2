@@ -1,0 +1,355 @@
+{
+  "id": "bai-9",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 1",
+  "chapter": "Chương IV. Vectơ",
+  "lesson": "Bài 9. Tích của một vectơ với một số",
+  "section": "",
+  "bookPage": 55,
+  "requirements": [
+    "Thực hiện phép nhân vectơ với một số và dùng các tính chất của nó.",
+    "Dùng điều kiện cùng phương, thẳng hàng; phân tích một vectơ theo hai vectơ không cùng phương."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tích của vectơ →a ≠ →0 với số thực k ≠ 0 là vectơ k→a, cùng hướng với →a nếu k > 0, ngược hướng với →a nếu k < 0, và có độ dài |k→a| = |k|·|→a|. Quy ước 0→a = →0 và k→0 = →0."
+    },
+    {
+      "type": "formula",
+      "content": "k(→a + →b) = k→a + k→b        (h + k)→a = h→a + k→a        h(k→a) = (hk)→a        1→a = →a,  (−1)→a = −→a"
+    },
+    {
+      "type": "text",
+      "content": "Trung điểm và trọng tâm: nếu I là trung điểm AB thì với mọi điểm M, →MA + →MB = 2→MI. Nếu G là trọng tâm tam giác ABC thì với mọi M, →MA + →MB + →MC = 3→MG."
+    },
+    {
+      "type": "text",
+      "content": "Điều kiện cùng phương: →b cùng phương với →a (→a ≠ →0) khi và chỉ khi tồn tại số k sao cho →b = k→a. Ba điểm phân biệt A, B, C thẳng hàng khi và chỉ khi có số k để →AB = k→AC."
+    },
+    {
+      "type": "text",
+      "content": "Phân tích vectơ: cho hai vectơ →a, →b không cùng phương. Khi đó mọi vectơ →u đều phân tích được duy nhất dưới dạng →u = x→a + y→b với x, y là hai số thực."
+    },
+    {
+      "type": "method",
+      "title": "Phân tích vectơ và chứng minh ba điểm thẳng hàng",
+      "when": "Đề cho tam giác, hình bình hành với các điểm chia đoạn theo tỉ số; yêu cầu biểu diễn một vectơ theo hai vectơ cho trước, hoặc chứng minh ba điểm thẳng hàng, hai đường thẳng song song.",
+      "steps": [
+        "Chọn hai vectơ gốc không cùng phương (thường là hai cạnh chung đỉnh, ví dụ →AB, →AC).",
+        "Dùng quy tắc ba điểm và giả thiết tỉ số (→AM = k→AB, trung điểm, trọng tâm) để viết các vectơ cần thiết theo hai vectơ gốc.",
+        "Để chứng minh M, N, P thẳng hàng: tính →MN và →MP theo hai vectơ gốc rồi tìm k sao cho →MN = k→MP.",
+        "Kết luận và nêu tỉ số (nếu đề hỏi)."
+      ],
+      "notes": [
+        "Hệ số phân tích là duy nhất, nên có thể so sánh hệ số để tìm ẩn.",
+        "Nếu →AM = k→AB với k < 0 thì M nằm ngoài đoạn AB về phía A."
+      ],
+      "sample": {
+        "problem": "Cho tam giác ABC, M là trung điểm BC và G là trọng tâm. Phân tích →AG theo →AB và →AC.",
+        "steps": [
+          "→AM = ½(→AB + →AC) vì M là trung điểm BC.",
+          "G là trọng tâm nên →AG = ⅔→AM.",
+          "→AG = ⅔·½(→AB + →AC) = ⅓→AB + ⅓→AC."
+        ],
+        "answer": "→AG = ⅓→AB + ⅓→AC"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho →a có |→a| = 4. Tính |−3→a| và |½→a|.",
+      "steps": [
+        "|−3→a| = |−3|·|→a| = 3·4 = 12.",
+        "|½→a| = ½·4 = 2."
+      ],
+      "expr": "3*4",
+      "answer": "12"
+    },
+    {
+      "problem": "Cho tam giác ABC có điểm M trên cạnh BC sao cho BM = 2MC. Phân tích →AM theo →AB và →AC.",
+      "steps": [
+        "→BM = ⅔→BC = ⅔(→AC − →AB).",
+        "→AM = →AB + →BM = →AB + ⅔→AC − ⅔→AB = ⅓→AB + ⅔→AC.",
+        "Hệ số của →AC là 2/3."
+      ],
+      "expr": "2/3",
+      "answer": "2/3"
+    },
+    {
+      "problem": "Cho tam giác ABC, điểm I thoả mãn →IA + 2→IB = →0. Điểm I nằm ở đâu trên đoạn AB và tỉ số IA/IB bằng bao nhiêu?",
+      "steps": [
+        "→IA = −2→IB nên →IA và →IB ngược hướng: I nằm giữa A và B.",
+        "|→IA| = 2|→IB| nên IA = 2·IB, tỉ số IA/IB = 2.",
+        "Vậy I chia AB theo tỉ lệ AI : IB = 2 : 1, tức →AI = ⅔→AB."
+      ],
+      "expr": "2",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Với k < 0 và →a ≠ →0, vectơ k→a:",
+      "choices": [
+        "ngược hướng với →a",
+        "cùng hướng với →a",
+        "bằng →0",
+        "không cùng phương với →a"
+      ],
+      "answer": 0,
+      "explain": "k âm thì ngược hướng.",
+      "wrong_explain": {
+        "1": "Khi k > 0.",
+        "2": "Khi k = 0.",
+        "3": "Luôn cùng phương."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cho |→a| = 5. Độ dài |−2→a| bằng:",
+      "expr": "2*5",
+      "answer": "10",
+      "explain": "|k→a| = |k|·|→a|.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "→b cùng phương với →a (→a ≠ →0) khi và chỉ khi:",
+      "choices": [
+        "tồn tại số k sao cho →b = k→a",
+        "|→b| = |→a|",
+        "→b = →a",
+        "→b = −→a"
+      ],
+      "answer": 0,
+      "explain": "Điều kiện cùng phương.",
+      "wrong_explain": {
+        "1": "Không đủ.",
+        "2": "Trường hợp riêng.",
+        "3": "Trường hợp riêng."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "I là trung điểm AB và M bất kì. Khẳng định nào đúng?",
+      "choices": [
+        "→MA + →MB = 2→MI",
+        "→MA + →MB = →MI",
+        "→MA + →MB = 3→MI",
+        "→MA − →MB = 2→MI"
+      ],
+      "answer": 0,
+      "explain": "Hệ thức trung điểm.",
+      "wrong_explain": {
+        "1": "Thiếu hệ số 2.",
+        "2": "Đó là hệ số của trọng tâm.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho tam giác ABC trọng tâm G. →AB + →AC bằng:",
+      "choices": [
+        "3→AG",
+        "2→AG",
+        "→AG",
+        "3→GA"
+      ],
+      "answer": 0,
+      "explain": "→AB + →AC = 2→AM = 3→AG (M là trung điểm BC).",
+      "wrong_explain": {
+        "1": "Sai hệ số.",
+        "2": "Sai hệ số.",
+        "3": "Sai hướng."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho →AB = 3→CD và |→CD| = 2. Độ dài |→AB| bằng:",
+      "expr": "3*2",
+      "answer": "6",
+      "explain": "|3→CD| = 3·2 = 6.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho tam giác ABC, M là trung điểm BC. Nếu →AM = x→AB + y→AC thì x + y bằng:",
+      "expr": "1/2+1/2",
+      "answer": "1",
+      "explain": "→AM = ½→AB + ½→AC.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho →u = 2→a − 3→b và →v = −4→a + 6→b. Khẳng định nào đúng?",
+      "choices": [
+        "→v = −2→u",
+        "→v = 2→u",
+        "→u = 2→v",
+        "→u và →v không cùng phương"
+      ],
+      "answer": 0,
+      "explain": "−4→a + 6→b = −2(2→a − 3→b).",
+      "wrong_explain": {
+        "1": "Sai dấu.",
+        "2": "Sai hệ số.",
+        "3": "Cùng phương vì →v = −2→u."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ba điểm A, B, C thẳng hàng khi và chỉ khi:",
+      "choices": [
+        "→AB = k→AC với k nào đó",
+        "→AB = →AC",
+        "|→AB| = |→AC|",
+        "→AB + →AC = →0"
+      ],
+      "answer": 0,
+      "explain": "Điều kiện thẳng hàng.",
+      "wrong_explain": {
+        "1": "Khi đó B ≡ C.",
+        "2": "Không đủ.",
+        "3": "Chỉ là trường hợp A là trung điểm."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho hình bình hành ABCD tâm O. Nếu →AC = k→AO thì k bằng:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "O là trung điểm AC.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho →a = 2→i, →b = 6→i. Số k để →b = k→a là:",
+      "expr": "6/2",
+      "answer": "3",
+      "explain": "6→i = 3·2→i.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho tam giác ABC, điểm N trên cạnh AC sao cho AN = 3NC. Nếu →BN = x→BA + y→BC thì y bằng:",
+      "expr": "3/4",
+      "answer": "3/4",
+      "explain": "→BN = →BA + →AN = →BA + ¾→AC = →BA + ¾(→BC − →BA) = ¼→BA + ¾→BC.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho tam giác ABC với trọng tâm G. Nếu →AG = m→AB + n→AC thì m + n bằng:",
+      "expr": "1/3+1/3",
+      "answer": "2/3",
+      "explain": "→AG = ⅓→AB + ⅓→AC.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho điểm K thoả mãn →KA = −3→KB. Tỉ số KA/KB bằng:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "|→KA| = 3|→KB|.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho tam giác ABC. Điểm M thoả mãn →MA + →MB + 2→MC = →0. Khẳng định nào đúng?",
+      "choices": [
+        "M là trung điểm của đoạn nối C với trung điểm I của AB",
+        "M là trọng tâm tam giác ABC",
+        "M là trung điểm AB",
+        "M trùng C"
+      ],
+      "answer": 0,
+      "explain": "→MA + →MB = 2→MI nên 2→MI + 2→MC = →0 ⇔ →MI + →MC = →0.",
+      "wrong_explain": {
+        "1": "Trọng tâm ứng với hệ số 1, 1, 1.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho tam giác ABC, M là trung điểm AB và N trên AC với →AN = ⅓→AC. Khẳng định nào đúng?",
+      "choices": [
+        "→MN = ⅓→AC − ½→AB",
+        "→MN = ½→AC − ⅓→AB",
+        "→MN = ⅓→AC + ½→AB",
+        "→MN = ½→AC − ½→AB"
+      ],
+      "answer": 0,
+      "explain": "→MN = →AN − →AM = ⅓→AC − ½→AB.",
+      "wrong_explain": {
+        "1": "Đổi chỗ hệ số.",
+        "2": "Sai dấu.",
+        "3": "Sai hệ số của →AC."
+      },
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho hình bình hành ABCD, điểm E trên cạnh BC với BE = 2EC và F là trung điểm CD. Nếu →AE = x→AB + y→AD và →AF = u→AB + v→AD thì x + y + u + v bằng:",
+      "expr": "1+2/3+1/2+1",
+      "answer": "19/6",
+      "explain": "→AE = →AB + ⅔→AD; →AF = ½→AB + →AD. Tổng = 1 + 2/3 + 1/2 + 1 = 19/6.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho tam giác ABC có trọng tâm G và điểm M thoả mãn →GM = 2→GA. Khẳng định nào đúng?",
+      "choices": [
+        "A là trung điểm của GM",
+        "M là trung điểm của AG",
+        "→AM = 2→GA",
+        "M trùng với trọng tâm G"
+      ],
+      "answer": 0,
+      "explain": "→AM = →GM − →GA = 2→GA − →GA = →GA, nên →GA = →AM: A là trung điểm GM.",
+      "wrong_explain": {
+        "1": "Ngược lại.",
+        "2": "Sai hệ số.",
+        "3": "Sai."
+      },
+      "id": "q18"
+    }
+  ]
+}
