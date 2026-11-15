@@ -1,0 +1,20 @@
+name: Release
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tạo Release từ file cài đặt trong dist-thpt
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          VER="${GITHUB_REF_NAME#v}"
+          EXE="dist-thpt/Nam-Linh-Educenter-Setup-${VER}.exe"
+          test -f "$EXE" || { echo "Không thấy $EXE trong kho"; exit 1; }
+          gh release create "$GITHUB_REF_NAME" "$EXE" "$EXE.blockmap" dist-thpt/latest.yml \
+            --title "Nam Linh Educenter ${VER}" --generate-notes
