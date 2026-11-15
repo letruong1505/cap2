@@ -1,0 +1,270 @@
+{
+  "id": "bai-10",
+  "grade": 12,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Hóa học 12",
+  "chapter": "Chương 3. Hợp chất chứa nitrogen",
+  "lesson": "Bài 10. Protein và enzyme",
+  "section": "",
+  "bookPage": 46,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Protein là hợp chất cao phân tử được cấu tạo từ một hay nhiều chuỗi polypeptide; mỗi chuỗi gồm các đơn vị α-amino acid liên kết với nhau qua liên kết peptide theo một trật tự nhất định. Protein đơn giản chỉ cho α-amino acid khi thủy phân; protein phức tạp còn có thành phần phi protein (nucleic acid, lipid,…). Ví dụ insulin gồm hai chuỗi A (21 amino acid) và B (30 amino acid)."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất vật lí: protein dạng hình sợi (keratin ở tóc và móng, collagen ở da, myosin ở cơ) không tan trong nước và dung môi thông thường; protein dạng hình cầu (hemoglobin, albumin) tan trong nước tạo dung dịch keo."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất hóa học: (1) thủy phân nhờ acid, base hoặc enzyme, hoàn toàn tạo các α-amino acid; (2) phản ứng màu: với thuốc thử biuret (Cu(OH)₂/kiềm) tạo màu tím, với HNO₃ đặc tạo sản phẩm rắn màu vàng; (3) đông tụ dưới tác dụng của nhiệt, acid, base hoặc ion kim loại nặng do cấu tạo ban đầu bị biến đổi."
+    },
+    {
+      "type": "text",
+      "content": "Vai trò: protein tham gia xây dựng tế bào, vận chuyển chất, điều hòa trao đổi chất, xúc tác phản ứng sinh hóa, chống tác nhân có hại và là nguồn cung cấp amino acid thiết yếu, năng lượng cho cơ thể."
+    },
+    {
+      "type": "text",
+      "content": "Enzyme: phần lớn enzyme là protein xúc tác cho các phản ứng hóa học và sinh hóa; enzyme có tính chọn lọc cao (mỗi enzyme xúc tác cho một hoặc một số phản ứng nhất định) và làm tăng tốc độ phản ứng rất nhiều lần so với xúc tác hóa học. Enzyme ứng dụng trong công nghiệp thực phẩm, dược phẩm và kĩ thuật di truyền."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Insulin gồm chuỗi A có 21 amino acid và chuỗi B có 30 amino acid. Tính tổng số liên kết peptide trong phân tử (không tính các liên kết khác giữa hai chuỗi).",
+      "steps": [
+        "Chuỗi A có 21 − 1 = 20 liên kết peptide.",
+        "Chuỗi B có 30 − 1 = 29 liên kết peptide.",
+        "Tổng cộng 20 + 29 = 49."
+      ],
+      "expr": "(21-1)+(30-1)",
+      "answer": "49"
+    },
+    {
+      "problem": "Một loại protein chứa trung bình 16% nitrogen theo khối lượng. Cần bao nhiêu gam protein để chứa 1,4 g nitrogen?",
+      "steps": [
+        "m(protein) = 1,4 × 100/16.",
+        "m = 8,75 g."
+      ],
+      "expr": "1.4*100/16",
+      "answer": "8.75"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Protein là hợp chất:",
+      "choices": [
+        "Thấp phân tử cấu tạo từ glucose",
+        "Ester của glycerol với acid béo",
+        "Cao phân tử cấu tạo từ một hay nhiều chuỗi polypeptide",
+        "Polysaccharide từ α-glucose"
+      ],
+      "answer": 2,
+      "explain": "Protein gồm một hay nhiều chuỗi polypeptide.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Protein tạo từ amino acid, không phải glucose.",
+        "1": "Đó là chất béo.",
+        "3": "Đó là tinh bột."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi thủy phân hoàn toàn protein đơn giản thu được:",
+      "choices": [
+        "Glucose",
+        "Glycerol và acid béo",
+        "Các acid béo",
+        "Các α-amino acid"
+      ],
+      "answer": 3,
+      "explain": "Protein đơn giản thủy phân hoàn toàn chỉ cho hỗn hợp α-amino acid.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Glucose thu được khi thủy phân carbohydrate.",
+        "1": "Đó là sản phẩm thủy phân chất béo.",
+        "2": "Không có acid béo."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Protein hình cầu, tan được trong nước tạo dung dịch keo, là:",
+      "choices": [
+        "Keratin",
+        "Albumin (lòng trắng trứng)",
+        "Collagen",
+        "Myosin"
+      ],
+      "answer": 1,
+      "explain": "Albumin và hemoglobin là protein hình cầu.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Keratin là protein hình sợi, không tan.",
+        "2": "Collagen là protein hình sợi, không tan.",
+        "3": "Myosin là protein hình sợi."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Phản ứng màu đặc trưng của protein với thuốc thử biuret cho sản phẩm màu:",
+      "choices": [
+        "Xanh lam",
+        "Vàng",
+        "Tím",
+        "Đỏ gạch"
+      ],
+      "answer": 2,
+      "explain": "Protein có các liên kết peptide tạo phức màu tím với Cu²⁺ trong môi trường kiềm.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Xanh lam là màu của Cu(OH)₂ với polyalcohol hoặc amine.",
+        "1": "Màu vàng là của phản ứng với HNO₃ đặc.",
+        "3": "Đỏ gạch là kết tủa Cu₂O của aldehyde."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi đun nóng lòng trắng trứng, hiện tượng quan sát được là:",
+      "choices": [
+        "Lòng trắng đông tụ",
+        "Lòng trắng tan hoàn toàn",
+        "Lòng trắng chuyển thành khí",
+        "Lòng trắng đổi màu xanh"
+      ],
+      "answer": 0,
+      "explain": "Nhiệt làm biến tính, đông tụ protein.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Protein bị đông tụ, không tan thêm.",
+        "2": "Protein không chuyển thành khí.",
+        "3": "Không có phản ứng tạo màu xanh."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tác nhân nào sau đây KHÔNG làm đông tụ protein?",
+      "choices": [
+        "Nhiệt độ cao",
+        "Dung dịch acid hoặc base",
+        "Ion kim loại nặng như Pb²⁺, Cu²⁺",
+        "Đường glucose ở nồng độ thấp"
+      ],
+      "answer": 3,
+      "explain": "Glucose ở nồng độ thấp không làm biến tính protein.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Nhiệt làm đông tụ protein.",
+        "1": "Acid và base làm đông tụ protein.",
+        "2": "Ion kim loại nặng làm đông tụ protein."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Đặc điểm nào của enzyme là đúng?",
+      "choices": [
+        "Mọi enzyme là carbohydrate",
+        "Phần lớn là protein, xúc tác chọn lọc cho một hoặc một số phản ứng nhất định",
+        "Enzyme xúc tác cho mọi phản ứng như nhau",
+        "Enzyme làm giảm tốc độ phản ứng"
+      ],
+      "answer": 1,
+      "explain": "Enzyme là xúc tác sinh học có tính chọn lọc cao.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Phần lớn enzyme là protein.",
+        "2": "Enzyme có tính chọn lọc cao.",
+        "3": "Enzyme làm tăng tốc độ phản ứng."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chuỗi polypeptide gồm 100 amino acid chứa bao nhiêu liên kết peptide?",
+      "expr": "100-1",
+      "answer": "99",
+      "explain": "Mạch hở n gốc có n − 1 liên kết peptide.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Insulin gồm chuỗi A (21 amino acid) và chuỗi B (30 amino acid) nên tổng số amino acid là bao nhiêu?",
+      "expr": "21+30",
+      "answer": "51",
+      "explain": "21 + 30 = 51 amino acid.",
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tổng số liên kết peptide trong insulin (chuỗi A 21 amino acid, chuỗi B 30 amino acid) là bao nhiêu?",
+      "expr": "(21-1)+(30-1)",
+      "answer": "49",
+      "explain": "20 + 29 = 49 liên kết peptide.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một protein chứa trung bình 16% nitrogen theo khối lượng. Cần bao nhiêu gam protein để chứa 1,4 g nitrogen?",
+      "expr": "1.4*100/16",
+      "answer": "8.75",
+      "explain": "m = 1,4/0,16 = 8,75 g.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một chuỗi polypeptide có phân tử khối 11 000, mỗi amino acid trung bình 110. Số amino acid trong chuỗi xấp xỉ bao nhiêu?",
+      "expr": "11000/110",
+      "answer": "100",
+      "explain": "n ≈ 11 000/110 = 100.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thủy phân hoàn toàn 0,1 mol tripeptide mạch hở (3 gốc α-amino acid, mỗi gốc chỉ có 1 nhóm –COOH) trong NaOH dư. Số mol NaOH đã phản ứng là bao nhiêu? (nhập số thập phân)",
+      "expr": "0.1*3",
+      "answer": "0.3",
+      "explain": "Mỗi gốc amino acid sau thủy phân tạo muối cần 1 NaOH: 3 × 0,1 = 0,3 mol.",
+      "id": "q13"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Hiện tượng “riêu cua” nổi lên khi đun nóng nước cua được giải thích bởi:",
+      "choices": [
+        "Sự đông tụ protein khi đun nóng",
+        "Sự thủy phân protein thành amino acid",
+        "Sự oxi hóa chất béo",
+        "Sự phân hủy đường"
+      ],
+      "answer": 0,
+      "explain": "Nhiệt làm protein trong cua biến tính, đông tụ nổi thành mảng.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Hiện tượng này do đông tụ, không phải thủy phân.",
+        "2": "Đây không phải chất béo bị oxi hóa.",
+        "3": "Hiện tượng không liên quan đến đường."
+      },
+      "id": "q14"
+    }
+  ]
+}
