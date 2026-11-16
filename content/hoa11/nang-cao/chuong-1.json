@@ -1,0 +1,115 @@
+{
+  "id": "hoa11-nang-cao-chuong-1",
+  "grade": 11,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Bài tập nâng cao",
+  "chapter": "Chương 1. Cân bằng hoá học",
+  "lesson": "Bài tập nâng cao · Chương 1. Cân bằng hoá học",
+  "section": "Bài tập nâng cao",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các câu nâng cao của chương, gộp từ các bài đã học. Tên bài hiển thị trong ngoặc ở đầu mỗi câu. Hãy ôn lại lý thuyết và ví dụ của bài đó trước khi làm."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 1] Phản ứng A ⇌ B có K_C = 4. Ở cân bằng [A] = 0,25 M. Nồng độ [B] (M):",
+      "expr": "4*0.25",
+      "answer": "1",
+      "explain": "K_C = [B]/[A] nên [B] = 4·0,25 = 1 M.",
+      "id": "b1-n01"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "[Bài 1] Ở 25 °C cân bằng Cl₂ + H₂O ⇌ HCl + HClO. Thêm dung dịch NaOH vào thì cân bằng:",
+      "choices": [
+        "chuyển theo chiều thuận (NaOH tác dụng với HCl, HClO làm giảm nồng độ)",
+        "chuyển theo chiều nghịch",
+        "không chuyển dịch",
+        "dừng hẳn"
+      ],
+      "answer": 0,
+      "explain": "NaOH trung hoà acid, giảm nồng độ sản phẩm.",
+      "wrong_explain": {
+        "1": "Ngược lại.",
+        "2": "Có chuyển dịch.",
+        "3": "Không dừng."
+      },
+      "id": "b1-n02"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 2] Dung dịch X có [H⁺] = 0,0001 M. Hỏi [OH⁻] bằng bao nhiêu (M)? (K_w = 10⁻¹⁴ = 0,00000000000001)",
+      "expr": "(0.00000000000001)/(0.0001)",
+      "answer": "0.0000000001",
+      "explain": "[OH⁻] = 10⁻¹⁴/10⁻⁴ = 10⁻¹⁰ M.",
+      "id": "b2-n01"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 2] Trộn 100 mL HCl 0,2 M với 100 mL NaOH 0,1 M. Nồng độ H⁺ dư sau phản ứng (M)?",
+      "expr": "(0.02-0.01)/0.2",
+      "answer": "0.05",
+      "explain": "n(H⁺ dư) = 0,02 − 0,01 = 0,01 mol; V = 0,2 L nên [H⁺] = 0,05 M.",
+      "id": "b2-n02"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "[Bài 2] Dung dịch nào có pH nhỏ nhất (cùng nồng độ 0,1 M)?",
+      "choices": [
+        "HCl",
+        "CH₃COOH",
+        "NaCl",
+        "NaOH"
+      ],
+      "answer": 0,
+      "explain": "HCl điện li mạnh hoàn toàn, [H⁺] lớn nhất.",
+      "wrong_explain": {
+        "1": "Acid yếu phân li ít.",
+        "2": "Trung tính pH = 7.",
+        "3": "Base, pH > 7."
+      },
+      "id": "b2-n03"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 3] Phản ứng aA ⇌ bB có K_C = 0,5. Ở cân bằng [B] = 0,2 M, hệ số b = 1, a = 1. Tính [A] (M).",
+      "expr": "(0.2)/(0.5)",
+      "answer": "0.4",
+      "explain": "K_C = [B]/[A] nên [A] = 0,2/0,5 = 0,4 M.",
+      "id": "b3-n01"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "[Bài 3] Chất nào làm tăng K_C của phản ứng thuận nghịch?",
+      "choices": [
+        "Thay đổi nhiệt độ",
+        "Tăng nồng độ chất đầu",
+        "Tăng áp suất",
+        "Thêm xúc tác"
+      ],
+      "answer": 0,
+      "explain": "K_C chỉ phụ thuộc nhiệt độ và bản chất.",
+      "wrong_explain": {
+        "1": "Không đổi K_C.",
+        "2": "Không đổi K_C.",
+        "3": "Không đổi K_C."
+      },
+      "id": "b3-n02"
+    }
+  ]
+}

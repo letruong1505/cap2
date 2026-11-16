@@ -1,0 +1,330 @@
+{
+  "id": "bai-17",
+  "grade": 11,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 11",
+  "chapter": "Chương 4. Hydrocarbon",
+  "lesson": "Bài 17. Arene (hydrocarbon thơm)",
+  "section": "",
+  "bookPage": 102,
+  "requirements": [
+    "Nêu khái niệm arene, viết công thức và gọi tên một số arene.",
+    "Trình bày đặc điểm cấu tạo benzene và tính chất vật lí.",
+    "Trình bày phản ứng thế, cộng, oxi hoá của arene; ứng dụng, điều chế và ứng xử an toàn khi dùng arene."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Arene (hydrocarbon thơm) là hydrocarbon có chứa một hay nhiều vòng benzene. Dãy đồng đẳng của benzene có công thức CₙH₂ₙ₋₆ (n ≥ 6): benzene C₆H₆, toluene C₆H₅CH₃, xylene C₆H₄(CH₃)₂ (o-, m-, p-), ethylbenzene, styrene C₆H₅CH=CH₂, naphthalene. Benzene, toluene, xylene gọi chung là BTX."
+    },
+    {
+      "type": "text",
+      "content": "Cấu tạo benzene: 6 nguyên tử C tạo lục giác đều, cả 12 nguyên tử cùng nằm trên một mặt phẳng, các góc liên kết 120°, độ dài liên kết C–C đều bằng 139 pm (trung gian giữa đơn và đôi) nhờ các electron π liên hợp."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b17-benzene.svg",
+      "caption": "Cấu tạo phân tử benzene"
+    },
+    {
+      "type": "text",
+      "content": "Tính chất vật lí: benzene, toluene, xylene là chất lỏng không màu, mùi đặc trưng, dễ cháy, không tan trong nước, nhẹ hơn nước, tan trong dung môi hữu cơ; naphthalene là chất rắn kết tinh. Chúng độc, benzene làm tăng nguy cơ ung thư."
+    },
+    {
+      "type": "text",
+      "content": "Phản ứng thế: halogen hoá (Br₂, xúc tác bột Fe hoặc FeBr₃): C₆H₆ + Br₂ → C₆H₅Br + HBr; nitro hoá (hỗn hợp HNO₃ đặc và H₂SO₄ đặc): C₆H₆ + HNO₃ → C₆H₅NO₂ + H₂O. Quy tắc thế: khi vòng benzene có nhóm alkyl (như –CH₃), phản ứng thế dễ hơn benzene và ưu tiên thế ở vị trí ortho và para (vị trí 2 hoặc 4) so với nhóm alkyl. Toluene + Br₂ (Fe) → o-bromotoluene và p-bromotoluene."
+    },
+    {
+      "type": "text",
+      "content": "Phản ứng cộng: benzene cộng hydrogen (Ni, Pt, t°, p cao) tạo cyclohexane: C₆H₆ + 3H₂ → C₆H₁₂; cộng Cl₂ (ánh sáng) tạo hexachlorocyclohexane C₆H₆Cl₆ (thuốc trừ sâu 666 – nay bị cấm). Benzene khó cộng hơn alkene và không làm mất màu nước bromine."
+    },
+    {
+      "type": "text",
+      "content": "Phản ứng oxi hoá: cháy toả nhiều nhiệt, nhiều muội than (C₆H₆ + 7,5O₂ → 6CO₂ + 3H₂O); benzene không làm mất màu KMnO₄, còn toluene bị oxi hoá nhóm CH₃ khi đun nóng thành C₆H₅COOK (làm mất màu tím): C₆H₅CH₃ + 2KMnO₄ → C₆H₅COOK + 2MnO₂ + KOH + H₂O."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b17-phan-ung.svg",
+      "caption": "Phản ứng của arene"
+    },
+    {
+      "type": "text",
+      "content": "Điều chế: benzene, toluene từ reforming các alkane, cycloalkane C₆–C₈ của dầu mỏ, và từ nhựa than đá; ethylbenzene từ benzene + ethylene (xúc tác zeolite). Ứng dụng: nguyên liệu sản xuất polymer (polystyrene, PET), dung môi, thuốc nhuộm, dược phẩm, chất nổ TNT; naphthalene làm băng phiến. Cần hạn chế tiếp xúc, không dùng DDT, 666, sử dụng thuốc bảo vệ thực vật thế hệ mới an toàn."
+    },
+    {
+      "type": "method",
+      "title": "Viết sản phẩm thế vào vòng thơm của dẫn xuất benzene",
+      "when": "Đề cho toluene (hoặc alkylbenzene) tác dụng với Br₂ (Fe) hoặc HNO₃/H₂SO₄.",
+      "steps": [
+        "Nhận diện nhóm thế alkyl trên vòng (nhóm đẩy electron).",
+        "Xác định vị trí ortho và para so với nhóm –CH₃.",
+        "Viết sản phẩm thế mono ở o- và p- (sản phẩm chính).",
+        "Cân bằng phương trình."
+      ],
+      "notes": [
+        "Sản phẩm chính là hỗn hợp o- và p-, không phải m-.",
+        "Nhiệt độ cao, xúc tác Fe cho thế ở vòng; ánh sáng thế ở nhóm CH₃."
+      ],
+      "sample": {
+        "problem": "Toluene + HNO₃ đặc (H₂SO₄ đặc) thu sản phẩm mono nào?",
+        "steps": [
+          "Thế ưu tiên vị trí ortho và para.",
+          "o-nitrotoluene và p-nitrotoluene."
+        ],
+        "answer": "o- và p-nitrotoluene"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Nitro hoá 0,1 mol benzene (hiệu suất 100%). Tính khối lượng nitrobenzene (g), M = 123.",
+      "steps": [
+        "n(C₆H₅NO₂) = 0,1 mol.",
+        "m = 0,1·123 = 12,3 g."
+      ],
+      "expr": "0.1*123",
+      "answer": "12.3"
+    },
+    {
+      "problem": "Hydrogen hoá 0,1 mol benzene thành cyclohexane. Tính thể tích H₂ (đktc, 22,4 L/mol).",
+      "steps": [
+        "C₆H₆ + 3H₂ → C₆H₁₂.",
+        "V = 0,3·22,4 = 6,72 L."
+      ],
+      "expr": "0.1*3*22.4",
+      "answer": "6.72"
+    },
+    {
+      "problem": "Một arene CₙH₂ₙ₋₆ có phân tử khối 92. Tìm n.",
+      "steps": [
+        "14n − 6 = 92.",
+        "n = 98/14 = 7, là toluene C₇H₈."
+      ],
+      "expr": "(92+6)/14",
+      "answer": "7"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Công thức chung dãy đồng đẳng của benzene là:",
+      "choices": [
+        "CₙH₂ₙ₋₆ (n ≥ 6)",
+        "CₙH₂ₙ₊₂",
+        "CₙH₂ₙ",
+        "CₙH₂ₙ₋₂"
+      ],
+      "answer": 0,
+      "explain": "Có vòng benzene.",
+      "wrong_explain": {
+        "1": "Alkane.",
+        "2": "Alkene.",
+        "3": "Alkyne."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất nào là arene?",
+      "choices": [
+        "toluene",
+        "cyclohexane",
+        "hexane",
+        "hex-1-ene"
+      ],
+      "answer": 0,
+      "explain": "Có vòng benzene.",
+      "wrong_explain": {
+        "1": "Không phải vòng benzene.",
+        "2": "Là alkane.",
+        "3": "Là alkene."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Các góc liên kết trong benzene bằng:",
+      "choices": [
+        "120°",
+        "109,5°",
+        "180°",
+        "90°"
+      ],
+      "answer": 0,
+      "explain": "Lục giác đều.",
+      "wrong_explain": {
+        "1": "Tứ diện.",
+        "2": "Thẳng.",
+        "3": "Không đúng."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Benzene tan tốt trong:",
+      "choices": [
+        "hexane",
+        "nước",
+        "dung dịch NaOH",
+        "dung dịch HCl"
+      ],
+      "answer": 0,
+      "explain": "Phân tử không phân cực.",
+      "wrong_explain": {
+        "1": "Không tan.",
+        "2": "Không tan.",
+        "3": "Không tan."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất làm mất màu dung dịch KMnO₄ khi đun nóng là:",
+      "choices": [
+        "toluene",
+        "benzene",
+        "cyclohexane",
+        "hexane"
+      ],
+      "answer": 0,
+      "explain": "Nhóm CH₃ bị oxi hoá.",
+      "wrong_explain": {
+        "1": "Không làm mất màu.",
+        "2": "Không làm mất màu.",
+        "3": "Không làm mất màu."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phản ứng nitro hoá benzene dùng thuốc thử:",
+      "choices": [
+        "HNO₃ đặc và H₂SO₄ đặc",
+        "HNO₃ loãng",
+        "NaNO₃",
+        "HCl đặc"
+      ],
+      "answer": 0,
+      "explain": "Tạo ion nitronium.",
+      "wrong_explain": {
+        "1": "Cần acid đặc.",
+        "2": "Không tạo nitro.",
+        "3": "Không phù hợp."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sản phẩm chính khi thế Br₂ (Fe) vào toluene là:",
+      "choices": [
+        "o- và p-bromotoluene",
+        "m-bromotoluene",
+        "benzyl bromide",
+        "hexabromocyclohexane"
+      ],
+      "answer": 0,
+      "explain": "Nhóm –CH₃ định hướng ortho, para.",
+      "wrong_explain": {
+        "1": "Không ưu tiên meta.",
+        "2": "Thế ở nhóm CH₃ cần ánh sáng.",
+        "3": "Phản ứng cộng."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phản ứng của benzene với H₂ (Ni, t°) tạo:",
+      "choices": [
+        "cyclohexane",
+        "hexane",
+        "cyclohexene",
+        "toluene"
+      ],
+      "answer": 0,
+      "explain": "Cộng 3H₂.",
+      "wrong_explain": {
+        "1": "Mở vòng.",
+        "2": "Cộng chưa hết.",
+        "3": "Không phải."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điểm khác biệt benzene với alkene là:",
+      "choices": [
+        "không làm mất màu nước Br₂",
+        "cháy được",
+        "có carbon",
+        "là hydrocarbon"
+      ],
+      "answer": 0,
+      "explain": "Liên kết π liên hợp bền.",
+      "wrong_explain": {
+        "1": "Cả hai cháy.",
+        "2": "Cả hai có C.",
+        "3": "Cả hai là hydrocarbon."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nên hạn chế sử dụng benzene vì:",
+      "choices": [
+        "độc, làm tăng nguy cơ ung thư",
+        "quá đắt",
+        "không cháy",
+        "tan trong nước"
+      ],
+      "answer": 0,
+      "explain": "Cần an toàn.",
+      "wrong_explain": {
+        "1": "Không phải lí do.",
+        "2": "Dễ cháy.",
+        "3": "Không tan."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Terephthalic acid điều chế bằng oxi hoá arene C₈H₁₀ nào?",
+      "choices": [
+        "p-xylene",
+        "ethylbenzene",
+        "o-xylene",
+        "m-xylene"
+      ],
+      "answer": 0,
+      "explain": "Hai nhóm –COOH ở vị trí para.",
+      "wrong_explain": {
+        "1": "Cho benzoic acid.",
+        "2": "Cho phthalic acid.",
+        "3": "Cho isophthalic acid."
+      },
+      "id": "q11"
+    }
+  ]
+}

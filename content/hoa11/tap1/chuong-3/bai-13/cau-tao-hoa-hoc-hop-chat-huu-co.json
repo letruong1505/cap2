@@ -1,0 +1,307 @@
+{
+  "id": "bai-13",
+  "grade": 11,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 11",
+  "chapter": "Chương 3. Đại cương về hoá học hữu cơ",
+  "lesson": "Bài 13. Cấu tạo hoá học hợp chất hữu cơ",
+  "section": "",
+  "bookPage": 74,
+  "requirements": [
+    "Trình bày được thuyết cấu tạo hoá học (Butlerov).",
+    "Giải thích hiện tượng đồng phân; nêu khái niệm đồng đẳng, dãy đồng đẳng.",
+    "Viết được công thức cấu tạo đầy đủ, thu gọn và nhận biết đồng phân, đồng đẳng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Thuyết cấu tạo hoá học (Butlerov, 1861) có ba luận điểm chính: (1) trong phân tử hợp chất hữu cơ, các nguyên tử liên kết với nhau theo đúng hoá trị và một thứ tự nhất định (cấu tạo hoá học); thay đổi thứ tự liên kết sẽ tạo chất khác; (2) trong phân tử hữu cơ, carbon có hoá trị IV; các nguyên tử carbon không chỉ liên kết với nguyên tử khác mà còn liên kết với nhau tạo mạch carbon (không nhánh, có nhánh, vòng); (3) tính chất phụ thuộc vào thành phần phân tử (bản chất, số lượng nguyên tử) và cấu tạo hoá học; các nguyên tử trong phân tử ảnh hưởng qua lại với nhau."
+    },
+    {
+      "type": "text",
+      "content": "Ví dụ: ethanol CH₃CH₂OH (sôi 78,3 °C, tan vô hạn trong nước, tác dụng với sodium) và dimethyl ether CH₃OCH₃ (sôi −24,9 °C, ít tan, không tác dụng với sodium) cùng công thức phân tử C₂H₆O nhưng khác cấu tạo nên khác tính chất."
+    },
+    {
+      "type": "text",
+      "content": "Công thức cấu tạo biểu diễn cách liên kết và thứ tự liên kết giữa các nguyên tử trong phân tử; gồm công thức cấu tạo đầy đủ (vẽ hết các liên kết) và công thức cấu tạo thu gọn (nhóm nguyên tử cùng liên kết với một carbon viết thành một nhóm). Ví dụ C₃H₆O có bốn công thức cấu tạo mạch hở: CH₃CH₂CHO, CH₃COCH₃, CH₂=CH–CH₂OH, CH₂=CH–O–CH₃."
+    },
+    {
+      "type": "text",
+      "content": "Đồng phân: các hợp chất hữu cơ khác nhau nhưng có cùng công thức phân tử. Có đồng phân cấu tạo về mạch carbon (CH₃CH₂CH₂CH₃ và CH₃CH(CH₃)CH₃), về loại nhóm chức (C₂H₅OH và CH₃OCH₃), về vị trí nhóm chức (CH₃CH₂CH₂OH và CH₃CH(OH)CH₃). Ngoài ra còn đồng phân hình học (cis, trans) do nối đôi cản trở sự quay."
+    },
+    {
+      "type": "text",
+      "content": "Đồng đẳng: các chất có tính chất hoá học tương tự nhau, thành phần phân tử hơn kém nhau một hay nhiều nhóm CH₂ hợp thành dãy đồng đẳng. Ví dụ alkane CₙH₂ₙ₊₂ (n ≥ 1), alcohol no đơn chức mạch hở CₙH₂ₙ₊₁OH hay CₙH₂ₙ₊₂O, aldehyde no đơn chức CₙH₂ₙO."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b13-dong-phan.svg",
+      "caption": "Đồng phân và đồng đẳng"
+    },
+    {
+      "type": "method",
+      "title": "Viết đồng phân cấu tạo",
+      "when": "Cho CTPT, yêu cầu viết các công thức cấu tạo (đồng phân).",
+      "steps": [
+        "Tính độ bất bão hoà để biết có nối đôi, vòng hay không (k = (2C + 2 − H)/2).",
+        "Viết đồng phân mạch carbon (thẳng, nhánh) cho khung carbon.",
+        "Đặt nhóm chức hoặc nối đôi vào các vị trí khác nhau.",
+        "Kiểm tra trùng lặp, đảm bảo carbon hoá trị IV."
+      ],
+      "notes": [
+        "Chất cùng CTPT khác cấu tạo mới là đồng phân.",
+        "Cùng một chất khi vẽ xoay chiều không là đồng phân."
+      ],
+      "sample": {
+        "problem": "Viết đồng phân của C₄H₁₀.",
+        "steps": [
+          "k = 0, chỉ có mạch carbon.",
+          "CH₃CH₂CH₂CH₃ (butane) và CH₃CH(CH₃)CH₃ (isobutane)."
+        ],
+        "answer": "2 đồng phân"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Xác định cặp đồng phân: A) C₂H₅OH và CH₃OCH₃; B) CH₃OCH₃ và CH₃CHO; C) CH₃CH₂CH₂OH và CH₃CH(OH)CH₃; D) C₄H₁₀ và C₄H₈.",
+      "steps": [
+        "A: cùng C₂H₆O, khác nhóm chức → đồng phân.",
+        "C: cùng C₃H₈O, khác vị trí nhóm –OH → đồng phân. B: C₂H₆O và C₂H₄O khác CTPT. D khác CTPT."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Tính n và công thức phân tử alkane có phân tử khối 44.",
+      "steps": [
+        "14n + 2 = 44.",
+        "n = 3, công thức C₃H₈."
+      ],
+      "expr": "(44-2)/14",
+      "answer": "3"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong hợp chất hữu cơ, carbon có hoá trị:",
+      "choices": [
+        "IV",
+        "II",
+        "III",
+        "VI"
+      ],
+      "answer": 0,
+      "explain": "Carbon luôn hoá trị IV.",
+      "wrong_explain": {
+        "1": "Không đúng.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đồng phân là những chất:",
+      "choices": [
+        "khác nhau nhưng có cùng công thức phân tử",
+        "giống hệt nhau",
+        "hơn kém nhau CH₂",
+        "cùng công thức cấu tạo"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Không phải.",
+        "2": "Đó là đồng đẳng.",
+        "3": "Cùng cấu tạo thì là một chất."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đồng đẳng là những chất:",
+      "choices": [
+        "thành phần hơn kém nhau một hay nhiều nhóm CH₂, tính chất hoá học tương tự",
+        "cùng CTPT khác cấu tạo",
+        "khác hẳn tính chất",
+        "cùng cấu tạo"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Đó là đồng phân.",
+        "2": "Tính chất tương tự.",
+        "3": "Không đúng."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cặp chất đồng phân của nhau là:",
+      "choices": [
+        "C₂H₅OH và CH₃OCH₃",
+        "CH₃OCH₃ và CH₃CHO",
+        "CH₄ và C₂H₆",
+        "C₂H₆ và C₂H₄"
+      ],
+      "answer": 0,
+      "explain": "Cùng C₂H₆O.",
+      "wrong_explain": {
+        "1": "Khác CTPT.",
+        "2": "Là đồng đẳng.",
+        "3": "Khác CTPT."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dãy chất là đồng đẳng của nhau là:",
+      "choices": [
+        "CH₃CH₂OH và CH₃CH₂CH₂OH",
+        "CH₃OCH₃ và CH₃CH₂OH",
+        "CH₄ và C₂H₄",
+        "CH₃CHO và C₂H₅OH"
+      ],
+      "answer": 0,
+      "explain": "Cùng nhóm chức, hơn kém CH₂.",
+      "wrong_explain": {
+        "1": "Khác nhóm chức.",
+        "2": "Khác dãy.",
+        "3": "Khác nhóm chức."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Số đồng phân cấu tạo của C₄H₁₀ là:",
+      "choices": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "answer": 0,
+      "explain": "Butane và isobutane.",
+      "wrong_explain": {
+        "1": "Có 2.",
+        "2": "Có 2.",
+        "3": "Có 2."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ethanol và dimethyl ether khác tính chất vì:",
+      "choices": [
+        "khác cấu tạo hoá học",
+        "khác CTPT",
+        "khác số carbon",
+        "khác khối lượng phân tử"
+      ],
+      "answer": 0,
+      "explain": "Cùng C₂H₆O.",
+      "wrong_explain": {
+        "1": "Cùng CTPT.",
+        "2": "Cùng số C.",
+        "3": "Cùng M = 46."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Alkane có công thức chung:",
+      "choices": [
+        "CₙH₂ₙ₊₂",
+        "CₙH₂ₙ",
+        "CₙH₂ₙ₋₂",
+        "CₙHₙ"
+      ],
+      "answer": 0,
+      "explain": "Hydrocarbon no, mạch hở.",
+      "wrong_explain": {
+        "1": "Alkene.",
+        "2": "Alkyne.",
+        "3": "Không phải."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Số đồng phân cấu tạo mạch hở có thể có của C₃H₆O là:",
+      "choices": [
+        "4 (như sách)",
+        "1",
+        "2",
+        "6"
+      ],
+      "answer": 0,
+      "explain": "CH₃CH₂CHO, CH₃COCH₃, CH₂=CHCH₂OH, CH₂=CHOCH₃.",
+      "wrong_explain": {
+        "1": "Nhiều hơn.",
+        "2": "Nhiều hơn.",
+        "3": "Nhiều hơn."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Công thức phân tử của chất thứ 3 trong dãy đồng đẳng alkane CₙH₂ₙ₊₂ là:",
+      "choices": [
+        "C₃H₈",
+        "C₂H₆",
+        "C₄H₁₀",
+        "CH₄"
+      ],
+      "answer": 0,
+      "explain": "n = 3.",
+      "wrong_explain": {
+        "1": "n = 2.",
+        "2": "n = 4.",
+        "3": "n = 1."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất có CTCT CH₃CH₂CH₂OH và CH₃CH(OH)CH₃ là đồng phân về:",
+      "choices": [
+        "vị trí nhóm chức",
+        "mạch carbon",
+        "loại nhóm chức",
+        "hình học"
+      ],
+      "answer": 0,
+      "explain": "Cùng nhóm –OH, khác vị trí.",
+      "wrong_explain": {
+        "1": "Cùng mạch carbon.",
+        "2": "Cùng nhóm chức.",
+        "3": "Không có nối đôi."
+      },
+      "id": "q11"
+    }
+  ]
+}

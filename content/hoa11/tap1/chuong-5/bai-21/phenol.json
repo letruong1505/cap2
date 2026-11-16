@@ -1,0 +1,301 @@
+{
+  "id": "bai-21",
+  "grade": 11,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 11",
+  "chapter": "Chương 5. Dẫn xuất halogen – Alcohol – Phenol",
+  "lesson": "Bài 21. Phenol",
+  "section": "",
+  "bookPage": 129,
+  "requirements": [
+    "Nêu khái niệm phenol, đặc điểm cấu tạo và tính chất vật lí.",
+    "Trình bày tính acid yếu và phản ứng thế vòng thơm (bromine, nitric acid).",
+    "Nêu ứng dụng và điều chế phenol (từ cumene)."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phenol là hợp chất hữu cơ có nhóm –OH liên kết trực tiếp với nguyên tử carbon của vòng benzene; đơn giản nhất là phenol C₆H₅OH. Do ảnh hưởng của vòng benzene, liên kết O–H phân cực mạnh hơn alcohol nên phenol có tính acid yếu; nhóm –OH cũng làm vòng benzene dễ thế hơn."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất vật lí: chất rắn không màu, nóng chảy 43 °C; ít tan trong nước lạnh (khoảng 8,3 g/100 g nước ở 25 °C), tan vô hạn ở 66 °C; tan trong ethanol, ether, acetone; độc, gây bỏng da."
+    },
+    {
+      "type": "text",
+      "content": "Tính acid yếu: phenol tác dụng với dung dịch NaOH, và cả Na₂CO₃ (tạo NaHCO₃): C₆H₅OH + NaOH → C₆H₅ONa + H₂O. Alcohol không phản ứng với NaOH. Phenol không làm đổi màu quỳ tím, yếu hơn H₂CO₃: C₆H₅ONa + CO₂ + H₂O → C₆H₅OH↓ + NaHCO₃."
+    },
+    {
+      "type": "text",
+      "content": "Phản ứng thế ở vòng: với nước bromine ở nhiệt độ thường tạo kết tủa trắng 2,4,6-tribromophenol (không cần xúc tác, khác benzene): C₆H₅OH + 3Br₂ → C₆H₂Br₃OH↓ + 3HBr. Với HNO₃ đặc/H₂SO₄ đặc tạo 2,4,6-trinitrophenol (picric acid, chất nổ). Nhóm –OH hoạt hoá vòng, thế vào vị trí ortho và para."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b21-phenol.svg",
+      "caption": "Tính chất của phenol"
+    },
+    {
+      "type": "formula",
+      "content": "C₆H₅OH + NaOH → C₆H₅ONa + H₂O        C₆H₅OH + 3Br₂ → C₆H₂Br₃OH↓ + 3HBr"
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: nguyên liệu tổng hợp nhựa phenol–formaldehyde, bisphenol A (polycarbonate), cyclohexanol, thuốc nhuộm, dược phẩm, thuốc diệt nấm, chất sát trùng. Điều chế: oxi hoá cumene (isopropylbenzene) bằng O₂ rồi thuỷ phân trong H₂SO₄ loãng thu phenol và acetone (phương pháp chủ yếu hiện nay); ngoài ra từ nhựa than đá. Catechin trong chè xanh là hợp chất phenol có tác dụng chống oxi hoá."
+    },
+    {
+      "type": "method",
+      "title": "Phân biệt phenol với alcohol và benzene",
+      "when": "Cho ethanol, phenol, benzene, yêu cầu nhận biết.",
+      "steps": [
+        "Phenol: tác dụng NaOH (tan), nước bromine tạo kết tủa trắng.",
+        "Alcohol: không phản ứng với NaOH, không làm mất màu nước Br₂.",
+        "Benzene: lớp lỏng không tan, không phản ứng với nước Br₂ thường (chỉ chiết Br₂).",
+        "Kết luận theo hiện tượng."
+      ],
+      "notes": [
+        "Kết tủa trắng 2,4,6-tribromophenol là phản ứng đặc trưng.",
+        "Phenol không làm đổi màu quỳ tím."
+      ],
+      "sample": {
+        "problem": "Phân biệt phenol và ethanol.",
+        "steps": [
+          "Thêm nước bromine: phenol cho kết tủa trắng.",
+          "Ethanol không có hiện tượng."
+        ],
+        "answer": "nước Br₂"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho phenol tác dụng vừa đủ với 0,3 mol Br₂ (nước bromine). Tính số mol phenol (C₆H₅OH + 3Br₂).",
+      "steps": [
+        "n(phenol) = n(Br₂)/3.",
+        "= 0,3/3 = 0,1 mol."
+      ],
+      "expr": "0.3/3",
+      "answer": "0.1"
+    },
+    {
+      "problem": "Cho 9,4 g phenol (M = 94) tác dụng với NaOH dư. Tính khối lượng C₆H₅ONa (g), M = 116.",
+      "steps": [
+        "n(phenol) = 0,1 mol, n(muối) = 0,1 mol.",
+        "m = 0,1·116 = 11,6 g."
+      ],
+      "expr": "0.1*116",
+      "answer": "11.6"
+    },
+    {
+      "problem": "Tính khối lượng kết tủa 2,4,6-tribromophenol (M = 331) tạo từ 0,05 mol phenol (nước bromine dư).",
+      "steps": [
+        "n(kết tủa) = 0,05 mol.",
+        "m = 0,05·331 = 16,55 g."
+      ],
+      "expr": "0.05*331",
+      "answer": "16.55"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phenol là hợp chất có:",
+      "choices": [
+        "–OH gắn trực tiếp với vòng benzene",
+        "–OH gắn với carbon no",
+        "–COOH",
+        "–CHO"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Đó là alcohol.",
+        "2": "Carboxylic acid.",
+        "3": "Aldehyde."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ở điều kiện thường phenol là:",
+      "choices": [
+        "chất rắn, ít tan trong nước lạnh",
+        "chất khí",
+        "chất lỏng tan vô hạn",
+        "chất rắn tan vô hạn"
+      ],
+      "answer": 0,
+      "explain": "Nóng chảy 43 °C.",
+      "wrong_explain": {
+        "1": "Không phải khí.",
+        "2": "Không đúng.",
+        "3": "Ít tan."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Công thức của picric acid là:",
+      "choices": [
+        "2,4,6-trinitrophenol",
+        "2,4,6-tribromophenol",
+        "nitrobenzene",
+        "trinitrotoluene"
+      ],
+      "answer": 0,
+      "explain": "Nitro hoá phenol.",
+      "wrong_explain": {
+        "1": "Là sản phẩm với Br₂.",
+        "2": "Chưa có –OH.",
+        "3": "Là TNT."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phenol phản ứng được với dung dịch:",
+      "choices": [
+        "NaOH",
+        "HCl",
+        "NaCl",
+        "KNO₃"
+      ],
+      "answer": 0,
+      "explain": "Có tính acid yếu.",
+      "wrong_explain": {
+        "1": "Không phản ứng.",
+        "2": "Không phản ứng.",
+        "3": "Không phản ứng."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ethanol không phản ứng với NaOH vì:",
+      "choices": [
+        "liên kết O–H kém phân cực hơn phenol",
+        "ethanol là base mạnh",
+        "ethanol không tan",
+        "ethanol có vòng benzene"
+      ],
+      "answer": 0,
+      "explain": "Ethanol không có tính acid đáng kể.",
+      "wrong_explain": {
+        "1": "Không là base mạnh.",
+        "2": "Tan vô hạn.",
+        "3": "Không có vòng."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phenol thế brom dễ hơn benzene vì:",
+      "choices": [
+        "nhóm –OH hoạt hoá vòng benzene",
+        "phenol có nhiều H hơn",
+        "phenol có khối lượng lớn hơn",
+        "phenol không có vòng benzene"
+      ],
+      "answer": 0,
+      "explain": "Ảnh hưởng qua lại.",
+      "wrong_explain": {
+        "1": "Không phải do số H.",
+        "2": "Không phải.",
+        "3": "Phenol có vòng."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hiện tượng khi nhỏ nước bromine vào dung dịch phenol là:",
+      "choices": [
+        "xuất hiện kết tủa trắng",
+        "khí thoát ra",
+        "dung dịch hoá xanh",
+        "không có hiện tượng"
+      ],
+      "answer": 0,
+      "explain": "2,4,6-tribromophenol không tan.",
+      "wrong_explain": {
+        "1": "Không có khí.",
+        "2": "Không đổi xanh.",
+        "3": "Có phản ứng."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phenol điều chế công nghiệp chủ yếu từ:",
+      "choices": [
+        "cumene",
+        "benzene và Cl₂ rồi NaOH",
+        "toluene",
+        "ethylene"
+      ],
+      "answer": 0,
+      "explain": "Đồng thời thu acetone.",
+      "wrong_explain": {
+        "1": "Không phải chính.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dùng thuốc thử nào phân biệt phenol và benzene?",
+      "choices": [
+        "nước bromine",
+        "nước",
+        "quỳ tím",
+        "dung dịch NaCl"
+      ],
+      "answer": 0,
+      "explain": "Chỉ phenol có kết tủa trắng.",
+      "wrong_explain": {
+        "1": "Cả hai không tan.",
+        "2": "Phenol không đổi màu quỳ.",
+        "3": "Không phản ứng."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hợp chất nào là phenol?",
+      "choices": [
+        "C₆H₅OH",
+        "C₆H₅CH₂OH",
+        "C₂H₅OH",
+        "C₆H₁₁OH"
+      ],
+      "answer": 0,
+      "explain": "–OH gắn vòng benzene.",
+      "wrong_explain": {
+        "1": "Là alcohol benzylic.",
+        "2": "Alcohol.",
+        "3": "Alcohol vòng no."
+      },
+      "id": "q10"
+    }
+  ]
+}

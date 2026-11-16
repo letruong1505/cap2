@@ -1,0 +1,273 @@
+{
+  "id": "bai-7",
+  "grade": 11,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 11",
+  "chapter": "Chương 2. Nitrogen – Sulfur",
+  "lesson": "Bài 7. Sulfur và sulfur dioxide",
+  "section": "",
+  "bookPage": 42,
+  "requirements": [
+    "Nêu trạng thái tự nhiên, cấu tạo, tính chất, ứng dụng của sulfur.",
+    "Thực hiện thí nghiệm sulfur vừa có tính oxi hoá vừa có tính khử.",
+    "Trình bày tính chất, ứng dụng, tác hại của SO₂ và biện pháp giảm phát thải."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Sulfur (lưu huỳnh) chiếm khoảng 0,03–0,1% khối lượng vỏ Trái Đất, tồn tại ở dạng đơn chất (gần núi lửa, suối nước nóng) và hợp chất (sulfide, sulfate, protein). Nguyên tử S ở ô 16, nhóm VIA, chu kì 3, độ âm điện 2,58, cấu hình lớp ngoài cùng 3s²3p⁴; số oxi hoá từ −2 đến +6. Phân tử gồm 8 nguyên tử S₈ dạng vòng, liên kết cộng hoá trị không phân cực, tương tác van der Waals yếu nên nóng chảy ở nhiệt độ thấp (113 °C), sôi 445 °C; có hai dạng thù hình: tà phương (bền ở nhiệt độ thường) và đơn tà; không tan trong nước, tan trong carbon disulfide."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b7-so-oxi-hoa-S.svg",
+      "caption": "Số oxi hoá của sulfur"
+    },
+    {
+      "type": "text",
+      "content": "Tính chất hoá học: tính oxi hoá khi tác dụng với kim loại và hydrogen (Fe + S → FeS; Hg + S → HgS; H₂ + S → H₂S; 2Al + 3S → Al₂S₃); tính khử khi tác dụng với phi kim mạnh (S + O₂ → SO₂, ΔH = −296,8 kJ; S + 3F₂ → SF₆). Hầu hết phản ứng cần đun nóng. Ứng dụng: lưu hoá cao su, sản xuất H₂SO₄, diêm, thuốc nổ, thuốc trừ sâu, thuốc diệt nấm."
+    },
+    {
+      "type": "formula",
+      "content": "Fe + S → FeS (t°)        S + O₂ → SO₂ (t°)        S + H₂ → H₂S"
+    },
+    {
+      "type": "text",
+      "content": "Sulfur dioxide SO₂: là oxide acid (SO₂ + H₂O ⇌ H₂SO₃; SO₂ + 2NaOH → Na₂SO₃ + H₂O); S có số oxi hoá +4 nên vừa có tính oxi hoá (SO₂ + 2H₂S → 3S + 2H₂O) vừa có tính khử (SO₂ + NO₂ → SO₃ + NO; 2SO₂ + O₂ ⇌ 2SO₃). Ứng dụng: sản xuất H₂SO₄, tẩy trắng bột giấy, khử màu, chống nấm mốc cho sản phẩm mây tre đan. Tác hại: gây mưa acid, viêm đường hô hấp; giảm phát thải bằng năng lượng sạch, xử lí khí thải, tái chế sản phẩm phụ chứa sulfur."
+    },
+    {
+      "type": "formula",
+      "content": "SO₂ + 2H₂S → 3S + 2H₂O (SO₂ oxi hoá)        2SO₂ + O₂ ⇌ 2SO₃ (SO₂ khử)"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đốt cháy hoàn toàn 3,2 g sulfur (S = 32) thu bao nhiêu mol SO₂?",
+      "steps": [
+        "n(S) = 3,2/32 = 0,1 mol.",
+        "S + O₂ → SO₂ nên n(SO₂) = 0,1 mol."
+      ],
+      "expr": "3.2/32",
+      "answer": "0.1"
+    },
+    {
+      "problem": "Trộn 5,6 g Fe với 3,2 g S rồi nung (Fe = 56, S = 32). Tính khối lượng FeS tạo thành (g), M = 88.",
+      "steps": [
+        "n(Fe) = 0,1; n(S) = 0,1 mol phản ứng vừa đủ.",
+        "m(FeS) = 0,1·88 = 8,8 g."
+      ],
+      "expr": "0.1*88",
+      "answer": "8.8"
+    },
+    {
+      "problem": "Xác định vai trò SO₂ trong SO₂ + 2H₂S → 3S + 2H₂O.",
+      "steps": [
+        "S trong SO₂ giảm từ +4 xuống 0 nên SO₂ là chất oxi hoá.",
+        "H₂S (S −2 lên 0) là chất khử."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Số oxi hoá thấp nhất và cao nhất của S trong hợp chất là:",
+      "choices": [
+        "−2 và +6",
+        "−3 và +5",
+        "0 và +4",
+        "−1 và +7"
+      ],
+      "answer": 0,
+      "explain": "Nhóm VIA.",
+      "wrong_explain": {
+        "1": "Là của N.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phân tử sulfur ở thể rắn là:",
+      "choices": [
+        "S₈ dạng vòng",
+        "S₂",
+        "S₄ mạch thẳng",
+        "nguyên tử S riêng lẻ"
+      ],
+      "answer": 0,
+      "explain": "Mạch vòng 8 nguyên tử.",
+      "wrong_explain": {
+        "1": "Không đúng.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "SO₂ là:",
+      "choices": [
+        "oxide acid",
+        "oxide base",
+        "oxide lưỡng tính",
+        "oxide trung tính"
+      ],
+      "answer": 0,
+      "explain": "Tạo H₂SO₃ với nước.",
+      "wrong_explain": {
+        "1": "Không tạo base.",
+        "2": "Không lưỡng tính.",
+        "3": "Có tác dụng với nước."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phản ứng S thể hiện tính oxi hoá là:",
+      "choices": [
+        "Fe + S → FeS",
+        "S + O₂ → SO₂",
+        "S + 3F₂ → SF₆",
+        "S + 2H₂SO₄ đặc → 3SO₂ + 2H₂O"
+      ],
+      "answer": 0,
+      "explain": "S từ 0 xuống −2.",
+      "wrong_explain": {
+        "1": "S thể hiện tính khử.",
+        "2": "S thể hiện tính khử.",
+        "3": "S thể hiện tính khử."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sulfur nóng chảy ở nhiệt độ thấp vì:",
+      "choices": [
+        "các phân tử S₈ liên kết bằng lực van der Waals yếu",
+        "có liên kết ion",
+        "có liên kết hydrogen",
+        "là kim loại"
+      ],
+      "answer": 0,
+      "explain": "Tinh thể phân tử.",
+      "wrong_explain": {
+        "1": "Không có ion.",
+        "2": "Không có H.",
+        "3": "Là phi kim."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "SO₂ có tính oxi hoá trong phản ứng với:",
+      "choices": [
+        "H₂S",
+        "O₂",
+        "NO₂",
+        "Br₂ (dung dịch)"
+      ],
+      "answer": 0,
+      "explain": "SO₂ + 2H₂S → 3S + 2H₂O.",
+      "wrong_explain": {
+        "1": "Với O₂ là chất khử.",
+        "2": "Với NO₂ là chất khử.",
+        "3": "Với Br₂ là chất khử."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "SO₂ có tính khử trong phản ứng với:",
+      "choices": [
+        "O₂ (xúc tác V₂O₅)",
+        "H₂S",
+        "Mg",
+        "H₂"
+      ],
+      "answer": 0,
+      "explain": "S từ +4 lên +6.",
+      "wrong_explain": {
+        "1": "Với H₂S là oxi hoá.",
+        "2": "Với Mg là oxi hoá.",
+        "3": "Là oxi hoá."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tác hại của SO₂ với môi trường là:",
+      "choices": [
+        "gây mưa acid, viêm đường hô hấp",
+        "làm tăng ozone tầng cao",
+        "giảm hiệu ứng nhà kính",
+        "làm tăng pH nước mưa"
+      ],
+      "answer": 0,
+      "explain": "SO₂ → H₂SO₄ trong nước mưa.",
+      "wrong_explain": {
+        "1": "Không đúng.",
+        "2": "Không đúng.",
+        "3": "Làm giảm pH."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cách giảm phát thải SO₂ là:",
+      "choices": [
+        "dùng nhiên liệu ít lưu huỳnh và xử lí khí thải",
+        "đốt nhiều than hơn",
+        "xả thẳng khói",
+        "bỏ lọc bụi"
+      ],
+      "answer": 0,
+      "explain": "Giảm nguồn S.",
+      "wrong_explain": {
+        "1": "Tăng SO₂.",
+        "2": "Tăng SO₂.",
+        "3": "Tăng ô nhiễm."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thủy ngân rơi vãi được xử lí bằng bột sulfur vì:",
+      "choices": [
+        "tạo HgS ít độc, ít bay hơi",
+        "tạo khí HgS độc",
+        "sulfur làm bay hơi Hg",
+        "không phản ứng"
+      ],
+      "answer": 0,
+      "explain": "Hg + S → HgS.",
+      "wrong_explain": {
+        "1": "HgS là rắn.",
+        "2": "Không bay hơi.",
+        "3": "Có phản ứng."
+      },
+      "id": "q10"
+    }
+  ]
+}

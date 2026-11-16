@@ -1,0 +1,264 @@
+{
+  "id": "bai-6",
+  "grade": 11,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 11",
+  "chapter": "Chương 2. Nitrogen – Sulfur",
+  "lesson": "Bài 6. Một số hợp chất của nitrogen với oxygen",
+  "section": "",
+  "bookPage": 38,
+  "requirements": [
+    "Phân tích được nguồn gốc oxide của nitrogen trong không khí và nguyên nhân gây mưa acid.",
+    "Nêu được cấu tạo HNO₃, tính acid và tính oxi hoá mạnh, ứng dụng.",
+    "Giải thích được nguyên nhân, hệ quả của hiện tượng phú dưỡng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Oxide của nitrogen kí hiệu chung NOₓ gồm N₂O (dinitrogen oxide), NO (nitrogen monoxide), NO₂ (nitrogen dioxide), N₂O₄ (dinitrogen tetroxide); là tác nhân gây ô nhiễm không khí. Nguồn gốc: tự nhiên (núi lửa, cháy rừng, mưa dông sấm sét) và chủ yếu nhân tạo (giao thông vận tải, nhà máy nhiệt điện, công nghiệp, nông nghiệp). Cơ chế: NOₓ nhiệt (N₂ + O₂ ở trên 3000 °C), NOₓ nhiên liệu (nitrogen trong nhiên liệu bị oxi hoá), NOₓ tức thời (N₂ + gốc tự do hydrocarbon)."
+    },
+    {
+      "type": "text",
+      "content": "Mưa acid: nước mưa bình thường pH khoảng 5,6 (do CO₂ hoà tan); mưa có pH < 5,6 gọi là mưa acid. Nguyên nhân chính là SO₂ và NOₓ bị oxi hoá rồi hoà tan tạo H₂SO₄ và HNO₃. Hậu quả: ăn mòn công trình bằng đá, kim loại, ảnh hưởng thực vật, thuỷ sinh, sức khoẻ. Giải pháp: giảm phát thải qua xử lí khí thải, dùng năng lượng sạch, nhiên liệu ít lưu huỳnh."
+    },
+    {
+      "type": "formula",
+      "content": "2SO₂ + O₂ + 2H₂O → 2H₂SO₄        4NO₂ + O₂ + 2H₂O → 4HNO₃"
+    },
+    {
+      "type": "text",
+      "content": "Nitric acid HNO₃: N có số oxi hoá +5 (cao nhất). Tính acid mạnh (phân li hoàn toàn): HNO₃ → H⁺ + NO₃⁻; tác dụng với base, oxide base, muối carbonate (CaCO₃ + 2HNO₃ → Ca(NO₃)₂ + CO₂ + H₂O), NH₃ tạo NH₄NO₃ (phân bón). Tính oxi hoá mạnh: oxi hoá nhiều kim loại, phi kim, hợp chất; dùng phá mẫu quặng; HNO₃ đặc dùng sản xuất thuốc nổ (TNT, cellulose trinitrate); nước cường toan (HNO₃ đặc : HCl đặc = 1 : 3) hoà tan được vàng, platinum."
+    },
+    {
+      "type": "text",
+      "content": "Phú dưỡng: ao, hồ nhận nhiều nitrogen và phosphorus từ nước thải sinh hoạt, nông nghiệp, thức ăn dư thừa làm tảo, rong phát triển mạnh, che ánh sáng, khi chết phân huỷ tiêu thụ oxygen gây thiếu oxygen, cá chết, nước ô nhiễm. Biện pháp: xử lí nước thải, dùng phân bón hợp lí, hạn chế thức ăn dư, trồng cây lọc nước, nạo vét."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b6-mua-acid-phu-duong.svg",
+      "caption": "Cơ chế mưa acid và phú dưỡng"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hoà tan 0,2 mol Cu trong HNO₃ loãng sinh khí NO (3Cu + 8HNO₃ → 3Cu(NO₃)₂ + 2NO + 4H₂O). Tính số mol NO.",
+      "steps": [
+        "n(NO) = 2/3·n(Cu).",
+        "n(NO) = 2·0,2/3 = 0,1333 mol (xấp xỉ 2/15)."
+      ],
+      "expr": "2*0.2/3",
+      "answer": "2/15"
+    },
+    {
+      "problem": "Một mẫu nước mưa có pH = 4,5. Có phải mưa acid không?",
+      "steps": [
+        "Nước mưa bình thường có pH ≈ 5,6.",
+        "4,5 < 5,6 nên là mưa acid (tác động rõ rệt khi pH dưới 4,5)."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hiện tượng mưa acid xảy ra khi pH nước mưa:",
+      "choices": [
+        "nhỏ hơn 5,6",
+        "bằng 7",
+        "lớn hơn 8",
+        "bằng 14"
+      ],
+      "answer": 0,
+      "explain": "Mưa bình thường pH ≈ 5,6.",
+      "wrong_explain": {
+        "1": "Trung tính.",
+        "2": "Base.",
+        "3": "Base rất mạnh."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nitric acid có số oxi hoá của N là:",
+      "choices": [
+        "+5",
+        "+3",
+        "+4",
+        "−3"
+      ],
+      "answer": 0,
+      "explain": "Số oxi hoá cao nhất của N.",
+      "wrong_explain": {
+        "1": "Là của HNO₂.",
+        "2": "Là của NO₂.",
+        "3": "Là của NH₃."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai khí chính gây mưa acid là:",
+      "choices": [
+        "SO₂ và NOₓ",
+        "CO₂ và N₂",
+        "O₂ và H₂",
+        "CH₄ và NH₃"
+      ],
+      "answer": 0,
+      "explain": "Chúng tạo H₂SO₄ và HNO₃.",
+      "wrong_explain": {
+        "1": "CO₂ làm pH 5,6.",
+        "2": "Không gây acid.",
+        "3": "Không gây mưa acid."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nước cường toan là hỗn hợp:",
+      "choices": [
+        "HNO₃ đặc và HCl đặc",
+        "H₂SO₄ và HCl",
+        "HNO₃ và NaOH",
+        "HCl và NH₃"
+      ],
+      "answer": 0,
+      "explain": "Hoà tan được Au, Pt.",
+      "wrong_explain": {
+        "1": "Không phải.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phản ứng chứng tỏ HNO₃ có tính acid:",
+      "choices": [
+        "CaCO₃ + 2HNO₃ → Ca(NO₃)₂ + CO₂ + H₂O",
+        "Cu + HNO₃ → Cu(NO₃)₂ + NO₂ + H₂O",
+        "C + HNO₃ → CO₂ + NO₂",
+        "S + HNO₃ → H₂SO₄ + NO"
+      ],
+      "answer": 0,
+      "explain": "Không đổi số oxi hoá.",
+      "wrong_explain": {
+        "1": "Cu bị oxi hoá.",
+        "2": "C bị oxi hoá.",
+        "3": "S bị oxi hoá."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguồn NOₓ chủ yếu trong không khí là:",
+      "choices": [
+        "hoạt động của con người (giao thông, nhiệt điện, công nghiệp)",
+        "chỉ từ núi lửa",
+        "chỉ từ cây xanh",
+        "chỉ từ biển"
+      ],
+      "answer": 0,
+      "explain": "Phát thải nhân tạo là chủ yếu.",
+      "wrong_explain": {
+        "1": "Có nguồn nhân tạo.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên nhân chính gây phú dưỡng ao hồ là:",
+      "choices": [
+        "dư thừa N, P từ nước thải và phân bón",
+        "thiếu ánh sáng",
+        "nhiệt độ thấp",
+        "thiếu CO₂"
+      ],
+      "answer": 0,
+      "explain": "Nguồn dinh dưỡng dư thừa làm tảo nở hoa.",
+      "wrong_explain": {
+        "1": "Không phải.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hệ quả của phú dưỡng là:",
+      "choices": [
+        "thiếu oxygen hoà tan, cá tôm chết",
+        "nước trong hơn",
+        "tăng oxygen",
+        "giảm tảo"
+      ],
+      "answer": 0,
+      "explain": "Tảo chết phân huỷ tiêu thụ O₂.",
+      "wrong_explain": {
+        "1": "Nước đục.",
+        "2": "Giảm oxygen.",
+        "3": "Tăng tảo."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Biện pháp giảm phát thải NOₓ từ giao thông là:",
+      "choices": [
+        "dùng phương tiện điện, nhiên liệu sạch, xử lí khí thải",
+        "tăng số xe cá nhân",
+        "đốt nhiên liệu ở nhiệt độ rất cao",
+        "bỏ xử lí khí thải"
+      ],
+      "answer": 0,
+      "explain": "Giảm nguồn phát thải.",
+      "wrong_explain": {
+        "1": "Tăng ô nhiễm.",
+        "2": "Tăng NOₓ nhiệt.",
+        "3": "Tăng ô nhiễm."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Để hạn chế phú dưỡng ở ao nuôi, nên:",
+      "choices": [
+        "cho ăn vừa đủ, xử lí nước thải",
+        "cho ăn thật nhiều",
+        "xả thải trực tiếp",
+        "bón thêm phân đạm vào ao"
+      ],
+      "answer": 0,
+      "explain": "Giảm N, P dư thừa.",
+      "wrong_explain": {
+        "1": "Làm tăng N, P.",
+        "2": "Làm ô nhiễm.",
+        "3": "Tăng dinh dưỡng thừa."
+      },
+      "id": "q10"
+    }
+  ]
+}

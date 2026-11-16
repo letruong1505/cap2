@@ -1,0 +1,294 @@
+{
+  "id": "bai-12",
+  "grade": 11,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 11",
+  "chapter": "Chương 3. Đại cương về hoá học hữu cơ",
+  "lesson": "Bài 12. Công thức phân tử hợp chất hữu cơ",
+  "section": "",
+  "bookPage": 70,
+  "requirements": [
+    "Nêu được khái niệm công thức phân tử, công thức đơn giản nhất.",
+    "Sử dụng phổ khối lượng (MS) xác định phân tử khối.",
+    "Lập được công thức phân tử từ dữ liệu phân tích nguyên tố và phân tử khối."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Công thức phân tử cho biết thành phần nguyên tố và số nguyên tử của mỗi nguyên tố trong phân tử (ví dụ butane C₄H₁₀, propane C₃H₈). Công thức tổng quát cho biết các nguyên tố có trong chất, ví dụ CₓHᵧO_z. Công thức đơn giản nhất cho biết tỉ lệ tối giản số nguyên tử các nguyên tố (ví dụ C₆H₁₂O₆ có công thức đơn giản nhất CH₂O)."
+    },
+    {
+      "type": "text",
+      "content": "Lập công thức đơn giản nhất từ phần trăm khối lượng: x : y : z = %C/12 : %H/1 : %O/16, rồi rút gọn về số nguyên nhỏ nhất."
+    },
+    {
+      "type": "formula",
+      "content": "x : y : z = %C/12 : %H/1 : %O/16 = a : b : c (số nguyên tối giản)"
+    },
+    {
+      "type": "text",
+      "content": "Phân tử khối xác định từ phổ khối lượng (MS): peak ion phân tử [M⁺] có giá trị m/z lớn nhất ứng với phân tử khối M của chất. Công thức phân tử = (công thức đơn giản nhất)ₙ, với n = M / (khối lượng công thức đơn giản nhất)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b12-pho-khoi.svg",
+      "caption": "Phổ khối lượng của camphor, [M⁺] = 152"
+    },
+    {
+      "type": "method",
+      "title": "Lập công thức phân tử từ % khối lượng và phổ MS",
+      "when": "Cho %C, %H, %O (hoặc khối lượng, thể tích sản phẩm cháy) và peak [M⁺] hoặc phân tử khối.",
+      "steps": [
+        "Tính tỉ lệ x : y : z = %C/12 : %H/1 : %O/16, rút gọn thành số nguyên → công thức đơn giản nhất.",
+        "Xác định M từ peak [M⁺] trên phổ MS.",
+        "Tính n = M / khối lượng công thức đơn giản nhất.",
+        "Nhân chỉ số, viết công thức phân tử."
+      ],
+      "notes": [
+        "%O = 100 − %C − %H nếu đề không cho.",
+        "Số nguyên nhỏ nhất bằng cách chia cho số bé nhất rồi nhân thêm nếu còn lẻ."
+      ],
+      "sample": {
+        "problem": "Camphor: 78,94% C; 10,53% H; 10,53% O; [M⁺] = 152. Tìm công thức phân tử.",
+        "steps": [
+          "C : H : O = 78,94/12 : 10,53/1 : 10,53/16 = 6,58 : 10,53 : 0,658 = 10 : 16 : 1.",
+          "Công thức đơn giản nhất C₁₀H₁₆O có M = 152 nên n = 1.",
+          "Công thức phân tử C₁₀H₁₆O."
+        ],
+        "answer": "C₁₀H₁₆O"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hợp chất X có công thức đơn giản nhất CH₂O (M = 30) và phân tử khối 180. Tìm n.",
+      "steps": [
+        "n = 180/30 = 6.",
+        "Công thức phân tử C₆H₁₂O₆."
+      ],
+      "expr": "180/30",
+      "answer": "6"
+    },
+    {
+      "problem": "Alkane CₙH₂ₙ₊₂ có phân tử khối 58. Tìm n.",
+      "steps": [
+        "14n + 2 = 58.",
+        "n = 56/14 = 4, chất là C₄H₁₀."
+      ],
+      "expr": "(58-2)/14",
+      "answer": "4"
+    },
+    {
+      "problem": "Một hợp chất chứa 40% C, 6,67% H, 53,33% O về khối lượng. Tính tỉ lệ C : H : O (tìm số nguyên nhỏ nhất, viết số nguyên tử C khi H = 2).",
+      "steps": [
+        "C : H : O = 40/12 : 6,67 : 53,33/16 ≈ 3,33 : 6,67 : 3,33 = 1 : 2 : 1.",
+        "Công thức đơn giản nhất CH₂O; số nguyên tử C khi H = 2 là 1."
+      ],
+      "expr": "(40/12)/(6.67/2)",
+      "answer": "2000/2001"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Công thức phân tử cho biết:",
+      "choices": [
+        "thành phần nguyên tố và số nguyên tử mỗi nguyên tố trong phân tử",
+        "chỉ tỉ lệ tối giản",
+        "cấu tạo phân tử",
+        "chỉ khối lượng mol"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Đó là công thức đơn giản nhất.",
+        "2": "Đó là công thức cấu tạo.",
+        "3": "Không chỉ vậy."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Công thức đơn giản nhất của C₆H₁₂O₆ là:",
+      "choices": [
+        "CH₂O",
+        "C₂H₄O₂",
+        "C₃H₆O₃",
+        "C₆H₁₂O₆"
+      ],
+      "answer": 0,
+      "explain": "Chia cho 6.",
+      "wrong_explain": {
+        "1": "Chưa tối giản.",
+        "2": "Chưa tối giản.",
+        "3": "Chưa tối giản."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phân tử khối xác định từ phổ MS ứng với peak:",
+      "choices": [
+        "ion phân tử [M⁺] có m/z lớn nhất",
+        "peak thấp nhất",
+        "peak đầu tiên",
+        "peak ở m/z = 1"
+      ],
+      "answer": 0,
+      "explain": "m/z của ion phân tử bằng M.",
+      "wrong_explain": {
+        "1": "Không đúng.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tỉ lệ x : y : z của CₓHᵧO_z theo % khối lượng là:",
+      "choices": [
+        "%C/12 : %H/1 : %O/16",
+        "%C·12 : %H : %O·16",
+        "%C : %H : %O",
+        "12/%C : 1/%H : 16/%O"
+      ],
+      "answer": 0,
+      "explain": "Chia % cho nguyên tử khối.",
+      "wrong_explain": {
+        "1": "Nhân sai.",
+        "2": "Chưa chia.",
+        "3": "Nghịch đảo."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất có công thức đơn giản nhất CH₂ và M = 56 có công thức phân tử:",
+      "choices": [
+        "C₄H₈",
+        "C₂H₄",
+        "C₃H₆",
+        "C₅H₁₀"
+      ],
+      "answer": 0,
+      "explain": "n = 56/14 = 4.",
+      "wrong_explain": {
+        "1": "M = 28.",
+        "2": "M = 42.",
+        "3": "M = 70."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hợp chất có công thức đơn giản nhất CH₂O, M = 60 là:",
+      "choices": [
+        "C₂H₄O₂",
+        "CH₂O",
+        "C₃H₆O₃",
+        "C₆H₁₂O₆"
+      ],
+      "answer": 0,
+      "explain": "n = 60/30 = 2.",
+      "wrong_explain": {
+        "1": "M = 30.",
+        "2": "M = 90.",
+        "3": "M = 180."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đồng phân của nhau có cùng:",
+      "choices": [
+        "công thức phân tử",
+        "công thức cấu tạo",
+        "tính chất vật lí",
+        "nhóm chức"
+      ],
+      "answer": 0,
+      "explain": "Cùng CTPT khác cấu tạo.",
+      "wrong_explain": {
+        "1": "Khác cấu tạo.",
+        "2": "Khác nhau.",
+        "3": "Có thể khác."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đốt 0,1 mol hợp chất tạo 0,2 mol CO₂ và 0,3 mol H₂O (hợp chất chỉ gồm C, H, có thể có O). Số nguyên tử C trong phân tử là:",
+      "choices": [
+        "2",
+        "3",
+        "1",
+        "6"
+      ],
+      "answer": 0,
+      "explain": "Bảo toàn C: 0,2/0,1 = 2.",
+      "wrong_explain": {
+        "1": "Tính sai.",
+        "2": "Tính sai.",
+        "3": "Tính sai."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hợp chất có %C = 85,71% và %H = 14,29%, M = 28 là:",
+      "choices": [
+        "C₂H₄",
+        "CH₂",
+        "C₃H₆",
+        "C₄H₈"
+      ],
+      "answer": 0,
+      "explain": "CH₂ có M = 14; n = 2.",
+      "wrong_explain": {
+        "1": "Chưa đúng M.",
+        "2": "M = 42.",
+        "3": "M = 56."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phổ MS của một chất có peak [M⁺] ở m/z = 46 và chất có CTĐGN CH₂O. Công thức phân tử là:",
+      "choices": [
+        "không phải CH₂O × số nguyên",
+        "CH₂O",
+        "C₂H₄O₂",
+        "C₃H₆O₃"
+      ],
+      "answer": 0,
+      "explain": "46/30 không nguyên nên CTĐGN CH₂O không phù hợp.",
+      "wrong_explain": {
+        "1": "M = 30.",
+        "2": "M = 60.",
+        "3": "M = 90."
+      },
+      "id": "q10"
+    }
+  ]
+}
