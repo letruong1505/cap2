@@ -1,0 +1,205 @@
+{
+  "id": "bai-8",
+  "grade": 11,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 11",
+  "chapter": "Chương 2. Khu vực Mỹ La-tinh",
+  "lesson": "Thực hành: Viết báo cáo về tình hình phát triển kinh tế – xã hội ở Cộng hoà Liên bang Bra-xin",
+  "section": "",
+  "bookPage": 35,
+  "requirements": [
+    "Viết được báo cáo về tình hình phát triển kinh tế và những vấn đề xã hội cần giải quyết ở Bra-xin.",
+    "Sử dụng số liệu để nhận xét về GDP và cơ cấu kinh tế của Bra-xin."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nội dung thực hành: viết báo cáo về tình hình phát triển kinh tế – xã hội và những vấn đề xã hội cần giải quyết ở Cộng hoà Liên bang Bra-xin. Tư liệu tham khảo gồm thông tin trên internet và sách, báo, tạp chí liên quan."
+    },
+    {
+      "type": "text",
+      "content": "Cấu trúc gợi ý: diện tích, số dân; tình hình phát triển kinh tế (đặc điểm và nguyên nhân); những vấn đề xã hội cần giải quyết (mức sống, phân hoá giàu nghèo, thất nghiệp, nghèo đói, ổ chuột; đô thị hoá tự phát và hậu quả)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/diali11-bra-gdp.svg",
+      "caption": "Quy mô GDP của Bra-xin qua các năm"
+    },
+    {
+      "type": "text",
+      "content": "GDP của Bra-xin tăng từ 655,5 tỉ USD (2000) lên 2 208,9 tỉ USD (2010), sau đó giảm còn 1 448,6 tỉ USD (2020). Tỉ trọng dịch vụ trong GDP luôn lớn nhất và tăng từ 58,3% (2000) lên 62,8% (2020); năm 2020, nông nghiệp chiếm 5,9%, công nghiệp và xây dựng 17,7%, thuế sản phẩm trừ trợ cấp 13,6%."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/diali11-bra-cocau.svg",
+      "caption": "Tỉ trọng dịch vụ trong GDP của Bra-xin"
+    },
+    {
+      "type": "text",
+      "content": "Những vấn đề xã hội cần giải quyết: chênh lệch thu nhập rất lớn (10% giàu nhất chiếm hơn 40% GDP, 10% nghèo nhất chỉ khoảng 1% GDP); phân hoá vùng (Đông Nam có trên 40% dân số và trên 60% GDP); mất an ninh trật tự; đô thị hoá tự phát với 87% dân thành thị năm 2020, dẫn đến thất nghiệp và khu nhà ổ chuột."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/diali11-bra-van-de.svg",
+      "caption": "Các vấn đề xã hội của Bra-xin"
+    },
+    {
+      "type": "method",
+      "title": "Viết báo cáo về một quốc gia",
+      "when": "Thực hành viết báo cáo có số liệu và nhận định.",
+      "steps": [
+        "Giới thiệu diện tích, số dân và vị trí.",
+        "Trình bày đặc điểm và nguyên nhân phát triển kinh tế, có số liệu theo bảng.",
+        "Nêu các vấn đề xã hội, phân tích hậu quả.",
+        "Kết luận và nêu hướng giải quyết."
+      ],
+      "notes": [
+        "Ghi rõ năm và nguồn số liệu.",
+        "Đối chiếu số liệu với các mốc thời gian."
+      ],
+      "sample": {
+        "problem": "GDP Bra-xin giảm từ 2 208,9 tỉ USD (2010) xuống 1 448,6 tỉ USD (2020).",
+        "steps": [
+          "2 208,9 − 1 448,6 = 760,3.",
+          "Giảm khoảng 760,3 tỉ USD.",
+          "Nêu nguyên nhân: suy giảm kinh tế, biến động tài chính."
+        ],
+        "answer": "760,3 tỉ USD"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tỉ trọng dịch vụ của Bra-xin năm 2000 là 58,3%, năm 2020 là 62,8%. Tăng bao nhiêu điểm phần trăm?",
+      "steps": [
+        "62,8 − 58,3 = 4,5.",
+        "Tăng 4,5 điểm phần trăm."
+      ],
+      "expr": "62.8-58.3",
+      "answer": "4.5"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tỉ trọng ngành nào chiếm lớn nhất trong GDP Bra-xin năm 2020?",
+      "choices": [
+        "dịch vụ (62,8%)",
+        "nông nghiệp (5,9%)",
+        "công nghiệp và xây dựng (17,7%)",
+        "thuế sản phẩm (13,6%)"
+      ],
+      "answer": 0,
+      "explain": "Theo bảng 8.2.",
+      "wrong_explain": {
+        "1": "Chỉ 5,9%.",
+        "2": "Chỉ 17,7%.",
+        "3": "Chỉ 13,6%."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tỉ lệ dân thành thị của Bra-xin năm 2020 là:",
+      "choices": [
+        "87%",
+        "40%",
+        "50%",
+        "20%"
+      ],
+      "answer": 0,
+      "explain": "Theo mục 2 của phần tình hình xã hội.",
+      "wrong_explain": {
+        "1": "Không đúng.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vùng Đông Nam của Bra-xin có đặc điểm:",
+      "choices": [
+        "tập trung trên 40% dân số và trên 60% GDP",
+        "chỉ có 1% dân số",
+        "không có kinh tế",
+        "là vùng khô hạn nhất"
+      ],
+      "answer": 0,
+      "explain": "Thể hiện sự phân hoá vùng.",
+      "wrong_explain": {
+        "1": "Không đúng.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đô thị hoá tự phát ở Bra-xin dẫn đến hậu quả:",
+      "choices": [
+        "thất nghiệp cao, khu nhà ổ chuột, ô nhiễm môi trường",
+        "không có vấn đề gì",
+        "giảm dân thành thị",
+        "tăng thu nhập đồng đều"
+      ],
+      "answer": 0,
+      "explain": "Đô thị hoá không gắn với công nghiệp hoá.",
+      "wrong_explain": {
+        "1": "Không đúng.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao thu nhập ở Bra-xin chênh lệch rất lớn?",
+      "choices": [
+        "10% người giàu nhất chiếm hơn 40% GDP, trong khi 10% nghèo nhất chỉ khoảng 1%",
+        "mọi người có thu nhập bằng nhau",
+        "không có người giàu",
+        "không có số liệu"
+      ],
+      "answer": 0,
+      "explain": "Theo nội dung bài.",
+      "wrong_explain": {
+        "1": "Không đúng.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nhận xét đúng về GDP của Bra-xin giai đoạn 2010–2020 là:",
+      "choices": [
+        "giảm từ 2 208,9 tỉ USD xuống 1 448,6 tỉ USD",
+        "tăng liên tục",
+        "không thay đổi",
+        "tăng gấp đôi"
+      ],
+      "answer": 0,
+      "explain": "So sánh các mốc trong bảng 8.1.",
+      "wrong_explain": {
+        "1": "Ngược lại.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "id": "q06"
+    }
+  ]
+}

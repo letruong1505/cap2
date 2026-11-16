@@ -1,0 +1,186 @@
+{
+  "id": "bai-17",
+  "grade": 11,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 11",
+  "chapter": "Chương 5. Khu vực Tây Nam Á",
+  "lesson": "Thực hành: Viết báo cáo về vấn đề dầu mỏ của khu vực Tây Nam Á",
+  "section": "",
+  "bookPage": 79,
+  "requirements": [
+    "Trình bày được đặc điểm tài nguyên dầu mỏ của khu vực Tây Nam Á.",
+    "Nêu được tình hình khai thác và xuất khẩu dầu mỏ của khu vực."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nội dung thực hành: viết báo cáo về đặc điểm tài nguyên dầu mỏ của Tây Nam Á và việc khai thác dầu mỏ của khu vực. Tư liệu gồm thông tin trên internet, sách, báo, tạp chí liên quan."
+    },
+    {
+      "type": "text",
+      "content": "Cấu trúc gợi ý: (1) đặc điểm tài nguyên gồm trữ lượng và phân bố; (2) việc khai thác gồm sản lượng khai thác và xuất khẩu. Bảng 17 cho biết tổng trữ lượng dầu mỏ (Tây Nam Á 113,2 tỉ tấn; thế giới 244,4 tỉ tấn), sản lượng khai thác và xuất khẩu năm 2020."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/diali11-tna-dau.svg",
+      "caption": "Khai thác và xuất khẩu dầu thô của Tây Nam Á"
+    },
+    {
+      "type": "method",
+      "title": "Viết báo cáo về một tài nguyên",
+      "when": "Thực hành viết báo cáo có số liệu so sánh với thế giới.",
+      "steps": [
+        "Nêu trữ lượng của khu vực và của thế giới, tính tỉ lệ.",
+        "Nêu phân bố tài nguyên theo quốc gia.",
+        "Nêu sản lượng khai thác và xuất khẩu.",
+        "Nhận xét vai trò của dầu mỏ đối với kinh tế và các vấn đề chính trị."
+      ],
+      "notes": [
+        "Ghi rõ năm và đơn vị (tỉ tấn, triệu tấn).",
+        "Tỉ lệ nên làm tròn một chữ số thập phân."
+      ],
+      "sample": {
+        "problem": "Chênh lệch tổng trữ lượng dầu mỏ giữa thế giới và Tây Nam Á (theo bảng 17, tỉ tấn).",
+        "steps": [
+          "244,4 − 113,2 = 131,2.",
+          "Phần còn lại ngoài Tây Nam Á là 131,2 tỉ tấn."
+        ],
+        "answer": "244.4-113.2"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Khai thác dầu thô của Tây Nam Á năm 2020 là 1 297,5 triệu tấn, xuất khẩu là 874,9 triệu tấn. Chênh lệch giữa hai đại lượng là bao nhiêu triệu tấn?",
+      "steps": [
+        "1 297,5 − 874,9 = 422,6.",
+        "Lượng dầu không xuất khẩu là 422,6 triệu tấn."
+      ],
+      "expr": "1297.5-874.9",
+      "answer": "422.6"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tổng trữ lượng dầu mỏ của Tây Nam Á năm 2020 (theo bảng 17) là:",
+      "choices": [
+        "113,2 tỉ tấn",
+        "244,4 tỉ tấn",
+        "874,9 triệu tấn",
+        "2 108,6 triệu tấn"
+      ],
+      "answer": 0,
+      "explain": "Theo bảng 17.",
+      "wrong_explain": {
+        "1": "Là số liệu thế giới.",
+        "2": "Là số liệu thế giới.",
+        "3": "Là lượng xuất khẩu."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguồn tư liệu tin cậy để viết báo cáo về dầu mỏ là:",
+      "choices": [
+        "số liệu của tổ chức, tập đoàn năng lượng và ngân hàng",
+        "tin đồn trên mạng",
+        "ý kiến không rõ nguồn",
+        "quảng cáo"
+      ],
+      "answer": 0,
+      "explain": "Cần dựa trên nguồn chính thống.",
+      "wrong_explain": {
+        "1": "Không đáng tin.",
+        "2": "Không đáng tin.",
+        "3": "Không đáng tin."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Lượng dầu thô xuất khẩu của Tây Nam Á năm 2020 là:",
+      "choices": [
+        "874,9 triệu tấn",
+        "113,2 tỉ tấn",
+        "1 297,5 triệu tấn",
+        "2 108,6 triệu tấn"
+      ],
+      "answer": 0,
+      "explain": "Theo bảng 17.",
+      "wrong_explain": {
+        "1": "Không phải xuất khẩu.",
+        "2": "Là trữ lượng.",
+        "3": "Là khai thác khu vực (không phải xuất khẩu)."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi viết báo cáo, nên thể hiện trữ lượng dầu mỏ khu vực bằng cách nào để dễ so sánh?",
+      "choices": [
+        "tính tỉ lệ phần trăm so với thế giới",
+        "chỉ viết số liệu không kèm đơn vị",
+        "bỏ qua số liệu thế giới",
+        "dùng số liệu của năm khác mà không ghi"
+      ],
+      "answer": 0,
+      "explain": "So sánh cùng đơn vị và cùng năm.",
+      "wrong_explain": {
+        "1": "Không đúng.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao tài nguyên dầu mỏ vừa là động lực phát triển vừa là nguyên nhân tranh chấp ở Tây Nam Á?",
+      "choices": [
+        "vì dầu khí mang lại thu nhập lớn nhưng là đối tượng cạnh tranh, kiểm soát của nhiều bên",
+        "vì dầu mỏ không có giá trị",
+        "vì khu vực không khai thác dầu",
+        "vì dầu mỏ chỉ dùng cho nông nghiệp"
+      ],
+      "answer": 0,
+      "explain": "Theo nội dung mục II.5 và bài 15.",
+      "wrong_explain": {
+        "1": "Không đúng.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khu vực Tây Nam Á cần làm gì để giảm rủi ro từ phụ thuộc dầu mỏ?",
+      "choices": [
+        "đa dạng hoá kinh tế, phát triển công nghiệp chế biến, dịch vụ và kinh tế tri thức",
+        "tăng xuất khẩu dầu thô duy nhất",
+        "ngừng phát triển",
+        "chỉ nhập khẩu lương thực"
+      ],
+      "answer": 0,
+      "explain": "Xu hướng kinh tế của khu vực.",
+      "wrong_explain": {
+        "1": "Không đúng.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "id": "q06"
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "id": "bai-22",
+  "grade": 11,
+  "subject": "dia-li",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Địa lí 11",
+  "chapter": "Chương 7. Liên bang Nga",
+  "lesson": "Thực hành: Tìm hiểu về công nghiệp khai thác dầu khí của Liên bang Nga",
+  "section": "",
+  "bookPage": 113,
+  "requirements": [
+    "Vẽ được biểu đồ thể hiện sản lượng khai thác dầu mỏ và khí tự nhiên của Liên bang Nga giai đoạn 2000–2020.",
+    "Nhận xét được về sự phát triển của công nghiệp khai thác dầu khí."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nội dung thực hành: vẽ biểu đồ thể hiện sản lượng khai thác dầu mỏ và khí tự nhiên của Liên bang Nga giai đoạn 2000–2020, sau đó nhận xét về sự phát triển của công nghiệp khai thác dầu khí. Tư liệu gồm thông tin trên internet, sách, báo và bảng số liệu trong sách."
+    },
+    {
+      "type": "text",
+      "content": "Bảng 22.1 cho biết sản lượng khai thác dầu mỏ (triệu tấn) và khí tự nhiên (tỉ m³) qua các mốc năm. Bảng 22.2 cho biết sản lượng xuất khẩu dầu mỏ (triệu tấn) và khí tự nhiên (tỉ m³) cùng giai đoạn."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/diali11-ru-dau.svg",
+      "caption": "Sản lượng khai thác dầu mỏ của Liên bang Nga"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/diali11-ru-khi.svg",
+      "caption": "Sản lượng khai thác khí tự nhiên của Liên bang Nga"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/diali11-ru-xk-dau.svg",
+      "caption": "Sản lượng xuất khẩu dầu mỏ của Liên bang Nga"
+    },
+    {
+      "type": "method",
+      "title": "Vẽ và nhận xét biểu đồ cột về khai thác khoáng sản",
+      "when": "Thực hành vẽ biểu đồ và nhận xét xu hướng.",
+      "steps": [
+        "Chọn biểu đồ cột (hoặc đường) cho chuỗi số liệu theo năm.",
+        "Ghi đơn vị, tên biểu đồ, chú giải.",
+        "Nhận xét xu hướng tăng, giảm và mức chênh lệch.",
+        "Giải thích nguyên nhân (đầu tư, khai thác ở Tây Xi-bia, nhu cầu thị trường)."
+      ],
+      "notes": [
+        "Ghi đơn vị đúng (triệu tấn, tỉ m³).",
+        "Nhận xét cần có số liệu cụ thể."
+      ],
+      "sample": {
+        "problem": "Mức tăng sản lượng khai thác dầu mỏ từ năm 2000 đến năm 2015 (triệu tấn).",
+        "steps": [
+          "544,6 − 326,7 = 217,9.",
+          "Tăng 217,9 triệu tấn."
+        ],
+        "answer": "544.6-326.7"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Sản lượng khai thác khí tự nhiên năm 2000 là 537,1 tỉ m³, năm 2020 là 638,5 tỉ m³. Tăng bao nhiêu tỉ m³?",
+      "steps": [
+        "638,5 − 537,1 = 101,4.",
+        "Tăng 101,4 tỉ m³."
+      ],
+      "expr": "638.5-537.1",
+      "answer": "101.4"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đơn vị phù hợp của sản lượng khai thác dầu mỏ trong bảng 22.1 là:",
+      "choices": [
+        "triệu tấn",
+        "tỉ m³",
+        "nghìn người",
+        "độ C"
+      ],
+      "answer": 0,
+      "explain": "Theo đơn vị ghi trong bảng.",
+      "wrong_explain": {
+        "1": "Đơn vị của khí tự nhiên.",
+        "2": "Không phù hợp.",
+        "3": "Không phù hợp."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Biểu đồ phù hợp nhất để thể hiện sản lượng khai thác qua các năm là:",
+      "choices": [
+        "biểu đồ cột hoặc đường",
+        "biểu đồ tròn một năm",
+        "bản đồ phân bố",
+        "bảng thống kê không vẽ"
+      ],
+      "answer": 0,
+      "explain": "Thể hiện xu hướng theo thời gian.",
+      "wrong_explain": {
+        "1": "Không phù hợp.",
+        "2": "Không phù hợp.",
+        "3": "Không phải biểu đồ."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sản lượng khai thác dầu mỏ của Liên bang Nga tăng mạnh nhất trong giai đoạn nào?",
+      "choices": [
+        "2000–2010",
+        "2015–2020",
+        "2010–2015",
+        "Không tăng"
+      ],
+      "answer": 0,
+      "explain": "Từ 326,7 lên 512,3 triệu tấn.",
+      "wrong_explain": {
+        "1": "Tăng ít hơn.",
+        "2": "Giảm nhẹ.",
+        "3": "Tăng ít hơn."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sản lượng xuất khẩu dầu mỏ năm 2020 so với năm 2000 có xu hướng:",
+      "choices": [
+        "tăng",
+        "giảm mạnh",
+        "không đổi",
+        "bằng 0"
+      ],
+      "answer": 0,
+      "explain": "Từ 229,7 lên 260,0 triệu tấn.",
+      "wrong_explain": {
+        "1": "Không đúng.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên nhân chủ yếu giúp công nghiệp khai thác dầu khí của Liên bang Nga phát triển là:",
+      "choices": [
+        "tài nguyên dồi dào, đầu tư công nghệ và nhu cầu thị trường thế giới",
+        "không có tài nguyên",
+        "không có đầu tư",
+        "chỉ dựa vào nông nghiệp"
+      ],
+      "answer": 0,
+      "explain": "Theo nội dung bài 21.",
+      "wrong_explain": {
+        "1": "Không đúng.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi nhận xét biểu đồ khí tự nhiên, cần nêu điều nào?",
+      "choices": [
+        "xu hướng chung, mức tăng và năm có giá trị cao nhất",
+        "chỉ nêu tên đơn vị",
+        "bỏ qua số liệu",
+        "nhận xét về dân số"
+      ],
+      "answer": 0,
+      "explain": "Nhận xét dựa trên số liệu.",
+      "wrong_explain": {
+        "1": "Chưa đủ.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "id": "q06"
+    }
+  ]
+}
