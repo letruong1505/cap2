@@ -713,3 +713,15 @@ button.ghost:hover { background: var(--paper); }
 .pin-box button:disabled { opacity: .5; cursor: default; }
 .pin-msg { color: #b3261e; min-height: 1.2em; margin: 6px 0; }
 .pin-code { font: 700 24px monospace; letter-spacing: 2px; text-align: center; background: #f1f5f8; padding: 12px; border-radius: 8px; user-select: all; }
+
+/* Sổ câu sai: toàn bộ câu sai và kiến thức cần nắm */
+.all-wrong { margin: 8px 0 28px; }
+.all-wrong h2 { font-size: 20px; margin: 0 0 8px; }
+.wrong-group { margin: 0 0 22px; padding: 14px 16px; border: 1px solid var(--rule); border-radius: 12px; background: var(--paper); }
+.wrong-group h3 { margin: 0 0 8px; font-size: 16px; }
+.kt-box { margin: 6px 0 12px; padding: 10px 12px; border-left: 4px solid var(--marker); background: #fffdf5; border-radius: 6px; }
+.kt-box .formula { margin: 6px 0; }
+.kt-line { font-size: 14px; line-height: 1.5; }
+.choice-correct { color: #1b7a3e; font-weight: 700; }
+.choice-plain { color: #334155; }
+.wrong-card .figure { max-width: 320px; }

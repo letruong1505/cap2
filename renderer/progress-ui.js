@@ -65,6 +65,52 @@
 
   function dueCount(grade) { return P ? P.due(P.load(store()), Date.now(), grade).length : 0; }
 
+  /* Toàn bộ câu sai trong sổ (không chỉ câu đến hạn), nhóm theo bài, kèm kiến thức cần nắm. */
+  function appendAllWrong(body, all) {
+    const sec = h('section', { class: 'all-wrong' });
+    sec.append(h('h2', {}, `Toàn bộ câu sai (${all.length})`));
+    const groups = new Map();
+    all.slice().sort((a, b) => (a.subject + a.grade + a.lessonId).localeCompare(b.subject + b.grade + b.lessonId) || a.added - b.added)
+      .forEach((n) => {
+        if (!groups.has(n.lessonId)) groups.set(n.lessonId, { meta: n, items: [] });
+        groups.get(n.lessonId).items.push(n);
+      });
+    groups.forEach((g, lessonId) => {
+      const box = h('div', { class: 'wrong-group' });
+      box.append(h('h3', {}, `${subjName(g.meta.subject)} lớp ${g.meta.grade} · ${g.meta.lesson}`));
+      const know = h('div', { class: 'kt-box' }, h('div', { class: 'meta' }, 'Đang tải kiến thức cần nắm…'));
+      box.append(know);
+      g.items.forEach((n, idx) => {
+        const it = n.item;
+        const q = h('div', { class: 'question wrong-card' });
+        q.append(h('div', { class: 'stem' }, `${idx + 1}. ${it.stem}`));
+        if (it.expr) q.append(h('div', { class: 'meta' }, `Phép tính: ${it.expr}`));
+        if (it.type === 'mcq') {
+          it.choices.forEach((c, i) => {
+            const ok = i === it.answer;
+            q.append(h('div', { class: ok ? 'choice-correct' : 'choice-plain' }, (ok ? '✓ ' : '• ') + c));
+          });
+        } else {
+          q.append(h('div', { class: 'choice-correct' }, '✓ Đáp án đúng: ' + viNumber(it.answer)));
+        }
+        q.append(h('div', { class: 'feedback ok' }, 'Lời giải: ' + it.explain));
+        box.append(q);
+      });
+      sec.append(box);
+      if (window.vungBai && window.vungBai.loadLesson) {
+        window.vungBai.loadLesson(lessonId).then((lesson) => {
+          const kids = [h('div', { class: 'meta' }, 'Kiến thức cần nắm')];
+          (lesson.requirements || []).forEach((r) => kids.push(h('div', { class: 'kt-line' }, '• ' + r)));
+          (lesson.theory || []).filter((t) => t.type === 'formula').forEach((t) => kids.push(h('p', { class: 'formula' }, t.content)));
+          know.replaceChildren(...kids);
+        }).catch(() => know.replaceChildren(h('div', { class: 'meta' }, 'Không tải được phần kiến thức của bài này.')));
+      } else {
+        know.replaceChildren(h('div', { class: 'meta' }, 'Kiến thức cần nắm chưa khả dụng.'));
+      }
+    });
+    body.append(sec);
+  }
+
   /* ---------- Sổ câu sai ---------- */
   function renderReview(body, grade) {
     body.replaceChildren();
@@ -77,6 +123,7 @@
       return;
     }
     body.append(h('p', { class: 'meta' }, `Trong sổ có ${all.length} câu, ${list.length} câu đến hạn ôn hôm nay. Làm đúng ba lần cách quãng 1, 3, 7 ngày thì câu được xóa khỏi sổ.`));
+    appendAllWrong(body, all);
     if (!list.length) {
       const next = Math.min(...all.map((n) => n.due));
       body.append(h('p', {}, `Hôm nay chưa có câu cần ôn. Lượt ôn tiếp theo: ${fmtDate(next)}.`));
