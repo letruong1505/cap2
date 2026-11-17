@@ -730,3 +730,26 @@ button.ghost:hover { background: var(--paper); }
 
 .update-head { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
 .update-notes { margin: 0; padding-left: 20px; max-height: 40vh; overflow: auto; font-size: 13px; color: #dbe8f5; line-height: 1.5; }
+
+.ai-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; }
+.ai-card { position: relative; display: flex; flex-direction: column; gap: 4px; padding: 12px 14px; border: 2px solid #dfe5ec; border-radius: 12px; background: #fff; cursor: pointer; font-size: 13.5px; }
+.ai-card:has(input:checked) { border-color: #2a8a4a; background: #f3fbf5; }
+.ai-card.viewing { box-shadow: 0 0 0 2px #bcd9f1; }
+.ai-card input { position: absolute; right: 10px; top: 10px; width: 20px; height: 20px; }
+.ai-logo { width: 38px; height: 38px; border-radius: 10px; color: #fff; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+.ai-name { font-weight: 800; font-size: 18px; }
+.ai-k { font-size: 11px; font-weight: 700; letter-spacing: .04em; color: #5b6773; margin-top: 4px; }
+.ai-card ul { margin: 0; padding-left: 18px; }
+.ai-fit { background: #e5f5ea; color: #1f6a39; font-weight: 700; font-size: 12.5px; border-radius: 6px; padding: 5px 8px; margin-top: 6px; }
+.ai-price { font-weight: 800; margin-top: 4px; }
+.ai-panel { margin-top: 12px; }
+.ai-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 760px) { .ai-cols { grid-template-columns: 1fr; } }
+.ai-col { background: #fff; border: 1px solid #dfe5ec; border-radius: 12px; padding: 12px; }
+.ai-colhead { font-weight: 800; margin-bottom: 8px; }
+.ai-pill { display: inline-block; background: #17406b; color: #fff; border-radius: 12px; padding: 2px 9px; font-size: 11px; margin-right: 8px; }
+.ai-pill.own { background: #2a8a4a; }
+.ai-lesson { background: #f2f6fb; border-radius: 8px; padding: 8px 10px; margin: 6px 0; display: flex; flex-direction: column; gap: 2px; font-size: 13.5px; }
+.ai-lesson b { color: #17406b; }
+.ai-lesson.soon { background: #fdf0e1; }
+.ai-lesson em { font-style: normal; font-size: 11px; font-weight: 700; color: #a85f12; background: #fff; border-radius: 10px; padding: 1px 8px; margin-left: 8px; }

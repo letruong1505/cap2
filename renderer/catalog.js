@@ -12,6 +12,11 @@
       { id: 'cong-dan-so', name: 'Công dân số', note: 'Học sinh 16 - 18 tuổi', price: 1990000 },
       { id: 'ranh-gioi-so', name: 'Ranh giới số', note: 'Học sinh THPT & tân sinh viên', price: 1490000 },
     ] },
+    { group: 'AI cho người đi làm', ai: true, items: [
+      { id: 'ai-nguoi-di-lam-chatgpt', name: 'AI cho người đi làm · ChatGPT', note: 'Lớp học trên ChatGPT', price: 1990000, ai: 'chatgpt' },
+      { id: 'ai-nguoi-di-lam-gemini', name: 'AI cho người đi làm · Gemini', note: 'Lớp học trên Gemini', price: 1990000, ai: 'gemini' },
+      { id: 'ai-nguoi-di-lam-claude', name: 'AI cho người đi làm · Claude', note: 'Lớp học trên Claude', price: 1990000, ai: 'claude' },
+    ] },
     { group: 'Giáo trình Văn hóa', items: [6, 7, 8, 9, 10, 12].map((g) => ({
       id: 'van-hoa-' + g, name: 'Giáo trình Văn hóa lớp ' + g, note: g === 12 ? '8 môn học' : g === 10 ? '4 môn học (Toán, Vật lí, Hoá học, Tiếng Anh)' : '7 môn học', price: g === 12 ? 499000 : 399000, grade: g })) },
   ];
