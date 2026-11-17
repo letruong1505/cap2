@@ -18,5 +18,7 @@ contextBridge.exposeInMainWorld('vungBai', {
   downloadUpdate: () => ipcRenderer.invoke('update:download'),
   installUpdate: () => ipcRenderer.invoke('update:install'),
   onUpdate: (cb) => ipcRenderer.on('update:status', (_e, st) => cb(st)),
+  storeAll: () => ipcRenderer.sendSync('store:all'),
+  storeSet: (key, value) => ipcRenderer.send('store:set', key, value),
   removeLicense: () => ipcRenderer.invoke('license:remove'),
 });

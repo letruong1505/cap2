@@ -5,6 +5,7 @@ const { loadManifest, loadLesson, productInfo } = require('./content-loader');
 const lic = require('./license');
 const orders = require('./orders');
 const { createUpdater } = require('./updater');
+const { createStore } = require('./persist');
 
 const APP_TITLE = productInfo().title;
 
@@ -33,6 +34,13 @@ ipcMain.handle('lesson:load', (_event, relPath) => {
 });
 ipcMain.handle('app:info', () => readBuildInfo());
 ipcMain.handle('product:info', () => productInfo());
+
+
+// Dữ liệu người dùng (PIN, câu sai, tiến độ...) lưu ra file trong thư mục cố định, không phụ thuộc tên ứng dụng hay bản cài.
+let userStore = null;
+const getUserStore = () => userStore || (userStore = createStore(path.join(app.getPath('appData'), 'Nam Linh Educenter')));
+ipcMain.on('store:all', (event) => { try { event.returnValue = getUserStore().all(); } catch { event.returnValue = {}; } });
+ipcMain.on('store:set', (_event, key, value) => { try { getUserStore().set(key, value); } catch { /* bỏ qua */ } });
 
 ipcMain.handle('license:load', () => licenseNow());
 ipcMain.handle('license:activate', (_event, key) => lic.activate(licenseStoreDir(), key));
