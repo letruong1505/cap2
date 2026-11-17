@@ -10,8 +10,9 @@
     { id: 'ai-nguoi-di-lam-claude', ai: 'claude', label: 'Claude', mark: 'C', color: '#2a8a4a',
       strong: ['Viết dài, giọng văn tự nhiên', 'Đọc kỹ tài liệu, hợp đồng', 'Lập trình, làm công cụ'], fit: 'Hợp: giáo viên, tư vấn, kỹ thuật, quản lý',
       own: [
-        ['Bài 4', 'Làm quen và đặt câu lệnh trên Claude'], ['Bài 5', 'Viết và sửa văn bản dài'], ['Bài 6', 'Đọc và phân tích tài liệu'],
-        ['Bài 7', 'Làm công cụ và tự động hóa'], ['Bài 8', 'Dự án cuối'],
+        ['Bài 4', 'Làm xong một việc thật ngay buổi đầu'], ['Bài 5', 'Ra lệnh đúng một lần, sửa cho trúng'], ['Bài 6', 'Giọng văn của bạn và trợ lý riêng'],
+        ['Bài 7', 'Đọc nhanh, nghĩ rõ, quyết nhanh'], ['Bài 8', 'Biến thành sản phẩm và file'], ['Bài 9', 'Ứng dụng theo nghề (Giáo dục · Kinh doanh – truyền thông · Dữ liệu)'],
+        ['Bài 10', 'Tự động hóa và nâng cao'], ['Bài 11', 'Tổng kết, dự án cuối và đo năng suất'],
       ] },
   ];
   const COMMON = [['Bài 1', 'An toàn', 'bai1'], ['Bài 2', 'Trách nhiệm', 'bai2'], ['Bài 3', 'Kiểm chứng', 'bai3']];
