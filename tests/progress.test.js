@@ -125,3 +125,18 @@ test('không truyền given thì vẫn ghi được, given là null', () => {
   const d = P.recordAttempt({ attempts: [], notebook: [] }, meta(), [item('q1')], [], T0);
   assert.equal(d.notebook[0].given, null);
 });
+
+test('report: theo khoảng ngày, lọc môn, đếm đúng/sai từng ngày', () => {
+  const d = P.load(null);
+  const T = new Date(2026, 10, 17, 10).getTime();
+  P.recordAttempt(d, { subject: 'toan', grade: 8, lessonId: 'a', lesson: 'A', chapter: 'C1', correct: 7, total: 10, seconds: 60 }, [], [], T);
+  P.recordAttempt(d, { subject: 'anh', grade: 8, lessonId: 'b', lesson: 'B', chapter: 'C2', correct: 3, total: 5, seconds: 60 }, [], [], T - 86400000);
+  const r = P.report(d, { from: T - 6 * 86400000, to: T }, T);
+  assert.equal(r.days.length, 7);
+  assert.equal(r.total, 15); assert.equal(r.correct, 10); assert.equal(r.wrong, 5); assert.equal(r.pct, 67);
+  assert.equal(r.days[6].total, 10); assert.equal(r.days[5].correct, 3); assert.equal(r.activeDays, 2);
+  const m = P.report(d, { from: T, to: T, subject: 'toan' }, T);
+  assert.equal(m.days.length, 1); assert.equal(m.total, 10); assert.equal(m.subjects.length, 1);
+  assert.equal(P.report(d, { from: T, to: T, subject: 'anh' }, T).total, 0);
+  assert.equal(P.progress(d, T).todayCorrect, 7);
+});

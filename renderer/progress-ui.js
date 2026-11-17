@@ -31,6 +31,27 @@
     P.save(store(), data);
   }
 
+  const DOW = ['Chủ nhật', 'Thứ hai', 'Thứ ba', 'Thứ tư', 'Thứ năm', 'Thứ sáu', 'Thứ bảy'];
+  const fmtFull = (t) => { const d = new Date(t); return `${DOW[d.getDay()]}, ${d.toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric' })}`; };
+  const iso = (t) => { const d = new Date(t); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; };
+  const fromIso = (v) => { const [y, m, d] = String(v).split('-').map(Number); return new Date(y, m - 1, d).getTime(); };
+
+  /* Thanh chất lượng: xanh = đúng, đỏ = sai, kèm số câu và tỉ lệ %. */
+  function qualityBar(correct, total, withText) {
+    const wrong = total - correct;
+    const pc = total ? Math.round((100 * correct) / total) : 0;
+    const box = h('div', { class: 'q-wrap' });
+    const bar = h('div', { class: 'q-bar', role: 'img', 'aria-label': total ? `Đúng ${correct}, sai ${wrong} trên ${total} câu` : 'Chưa làm câu nào' });
+    if (total) {
+      bar.append(h('div', { class: 'q-ok', style: `width:${100 - (100 - pc)}%` }), h('div', { class: 'q-bad', style: `width:${100 - pc}%` }));
+    }
+    box.append(bar);
+    if (withText) box.append(h('p', { class: 'q-text' }, total
+      ? `Đúng ${correct} · Sai ${wrong} (${pc}% đúng / ${100 - pc}% sai, tổng ${total} câu)`
+      : 'Chưa làm câu nào'));
+    return box;
+  }
+
   const bar = (v, max) => {
     const pct = Math.min(100, Math.round((100 * v) / max));
     return h('div', { class: 'goal-bar', role: 'progressbar', 'aria-valuenow': v, 'aria-valuemax': max },
@@ -45,7 +66,9 @@
     const p = P.progress(data, Date.now(), grade);
     const g = p.goals;
     box.append(h('h2', {}, grade ? `Mục tiêu · Lớp ${grade}` : 'Mục tiêu học tập'));
+    box.append(h('p', { class: 'meta' }, fmtFull(Date.now())));
     box.append(h('p', {}, `Hôm nay: ${p.todayDone}/${g.daily} câu${p.todayDone >= g.daily ? ' – đạt mục tiêu!' : ''}`), bar(p.todayDone, g.daily));
+    box.append(h('p', { class: 'meta' }, 'Chất lượng hôm nay'), qualityBar(p.todayCorrect, p.todayDone, true));
     box.append(h('p', {}, `Tuần này: ${p.daysDone}/${g.weekly} ngày học${p.daysDone >= g.weekly ? ' – đạt mục tiêu!' : ''}`), bar(p.daysDone, g.weekly));
     box.append(h('p', { class: 'meta' }, `Điểm: hôm nay ${p.todayPts} · 7 ngày ${p.weekPts} · tổng ${p.totalPts}`));
     const mk = (opts, cur, label) => {
@@ -184,49 +207,131 @@
     body.append(done, result);
   }
 
-  /* ---------- Báo cáo tuần ---------- */
-  function lines(w) {
+  /* ---------- Báo cáo cho phụ huynh ---------- */
+  const PERIODS = [['today', 'Hôm nay'], ['week', 'Tuần này (từ thứ hai)'], ['7', '7 ngày gần nhất'], ['month', 'Tháng này'], ['30', '30 ngày gần nhất'], ['custom', 'Chọn khoảng ngày']];
+
+  function rangeOf(kind, now, customFrom, customTo) {
+    const t0 = new Date(now); t0.setHours(0, 0, 0, 0);
+    const day = 86400000; const today = t0.getTime();
+    if (kind === 'today') return { from: today, to: today };
+    if (kind === 'week') { const dow = (t0.getDay() + 6) % 7; return { from: today - dow * day, to: today - dow * day + 6 * day }; }
+    if (kind === '30') return { from: today - 29 * day, to: today };
+    if (kind === 'month') { const a = new Date(t0.getFullYear(), t0.getMonth(), 1); const b = new Date(t0.getFullYear(), t0.getMonth() + 1, 0); return { from: a.getTime(), to: b.getTime() }; }
+    if (kind === 'custom') { const a = customFrom || today; const b = customTo || today; return a <= b ? { from: a, to: b } : { from: b, to: a }; }
+    return { from: today - 6 * day, to: today };
+  }
+
+  function lines(r) {
     const out = [];
-    if (w.grade) out.push(`Lớp ${w.grade}`);
-    out.push(`Số ngày học trong 7 ngày: ${w.days}/7 (mục tiêu ${w.prog.goals.weekly} ngày)`);
-    out.push(`Điểm 7 ngày: ${w.prog.weekPts}, tổng điểm: ${w.prog.totalPts}`);
-    out.push(`Số bài đã nộp: ${w.attempts}, thời gian làm: ${w.minutes} phút`);
-    out.push(w.total ? `Tỉ lệ đúng chung: ${w.pct}% (${w.correct}/${w.total} câu)` : 'Chưa có bài nào trong tuần này');
-    w.subjects.forEach((s) => out.push(`${subjName(s.subject)} lớp ${s.grade}: ${s.pct}% (${s.lessons} bài)`));
-    if (w.weak.length) {
+    if (r.grade) out.push(`Lớp ${r.grade}`);
+    if (r.subject) out.push(`Môn: ${subjName(r.subject)}`);
+    out.push(`Số ngày có học: ${r.activeDays}/${r.days.length}`);
+    out.push(`Số bài đã nộp: ${r.attempts}, thời gian làm: ${r.minutes} phút`);
+    out.push(r.total ? `Đúng ${r.correct} · Sai ${r.wrong} (${r.pct}% đúng / ${100 - r.pct}% sai, tổng ${r.total} câu)` : 'Chưa có bài nào trong khoảng này');
+    r.subjects.forEach((s) => out.push(`${subjName(s.subject)} lớp ${s.grade}: đúng ${s.correct}, sai ${s.wrong} (${s.pct}% đúng)`));
+    if (r.weak.length) {
       out.push('Cần ôn thêm:');
-      w.weak.forEach((c) => out.push(`  • ${c.name} (${subjName(c.subject)} ${c.grade}) – ${c.pct}%`));
-    } else if (w.total) out.push('Chưa có chương nào dưới 70%.');
-    out.push(`Sổ câu sai: ${w.notebook} câu, ${w.dueCount} câu đến hạn ôn`);
+      r.weak.forEach((c) => out.push(`  • ${c.name} (${subjName(c.subject)} ${c.grade}) – ${c.pct}%`));
+    } else if (r.total) out.push('Chưa có chương nào dưới 70%.');
     return out;
   }
 
-  function drawPng(w, name) {
-    const L = lines(w);
+  function drawPng(r, name) {
+    const L = lines(r);
+    const days = r.days.length <= 14 ? r.days : [];
     const c = document.createElement('canvas');
-    c.width = 900; c.height = 220 + L.length * 44;
+    c.width = 900; c.height = 230 + L.length * 44 + (days.length ? 170 : 0);
     const g = c.getContext('2d');
     g.fillStyle = '#fff'; g.fillRect(0, 0, c.width, c.height);
     g.fillStyle = '#1f6f8b'; g.fillRect(0, 0, c.width, 110);
     g.fillStyle = '#fff'; g.font = 'bold 34px sans-serif';
-    g.fillText(w.grade ? `Báo cáo tuần Lớp ${w.grade} – Nam Linh Educenter` : 'Báo cáo tuần – Nam Linh Educenter', 36, 52);
+    g.fillText(r.grade ? `Báo cáo học tập Lớp ${r.grade} – Nam Linh Educenter` : 'Báo cáo học tập – Nam Linh Educenter', 36, 52);
     g.font = '22px sans-serif';
-    g.fillText(`${name ? name + ' · ' : ''}${fmtDate(w.from)} – ${fmtDate(w.to)}`, 36, 88);
+    g.fillText(`${name ? name + ' · ' : ''}${fmtDate(r.from)} – ${fmtDate(r.to)}`, 36, 88);
     g.fillStyle = '#222'; g.font = '24px sans-serif';
     L.forEach((t, i) => g.fillText(t, 36, 160 + i * 44));
+    let y = 170 + L.length * 44;
+    if (days.length) {
+      const w = Math.floor(828 / days.length);
+      days.forEach((d, i) => {
+        const x = 36 + i * w;
+        g.fillStyle = '#222'; g.font = '16px sans-serif';
+        g.fillText(fmtDate(d.t), x, y + 16);
+        g.fillStyle = '#e3ebf0'; g.fillRect(x, y + 26, w - 8, 70);
+        if (d.total) {
+          const h1 = Math.round(70 * d.correct / d.total);
+          g.fillStyle = '#d64545'; g.fillRect(x, y + 26, w - 8, 70);
+          g.fillStyle = '#2e7d4f'; g.fillRect(x, y + 26 + 70 - h1, w - 8, h1);
+        }
+        g.fillStyle = '#222'; g.fillText(d.total ? `${d.correct}/${d.total}` : '–', x, y + 118);
+      });
+    }
     g.fillStyle = '#888'; g.font = '18px sans-serif';
-    g.fillText('Dữ liệu lưu trên máy của học sinh', 36, c.height - 24);
+    g.fillText('Xanh: đúng · Đỏ: sai · Dữ liệu lưu trên máy của học sinh', 36, c.height - 24);
     return c;
   }
 
+  function calendar(r, today) {
+    const wrap = h('div', { class: 'cal' });
+    ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN'].forEach((n) => wrap.append(h('div', { class: 'cal-h' }, n)));
+    const first = new Date(r.days[0].t); const lead = (first.getDay() + 6) % 7;
+    for (let i = 0; i < lead; i++) wrap.append(h('div', { class: 'cal-pad' }));
+    r.days.forEach((d) => {
+      const cell = h('div', { class: 'cal-d' + (d.t === today ? ' today' : '') + (d.total ? '' : ' none') });
+      cell.append(h('b', {}, new Date(d.t).toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit' })));
+      if (d.total) {
+        cell.append(h('span', {}, `${d.correct}/${d.total} câu`), qualityBar(d.correct, d.total, false), h('small', {}, `${d.pct}% đúng${d.reached ? ' · đạt mục tiêu' : ''}`));
+      } else cell.append(h('small', {}, 'Chưa học'));
+      wrap.append(cell);
+    });
+    return wrap;
+  }
+
+  const view = { period: '7', subject: '', from: null, to: null };
+
   function renderReport(body, grade) {
     body.replaceChildren();
-    const w = P.weekly(P.load(store()), Date.now(), grade);
-    body.append(h('h1', {}, grade ? `Báo cáo tuần cho phụ huynh · Lớp ${grade}` : 'Báo cáo tuần cho phụ huynh'));
-    body.append(h('p', { class: 'meta' }, `7 ngày gần nhất: ${fmtDate(w.from)} – ${fmtDate(w.to)}`));
+    const now = Date.now();
+    const today = new Date(now).setHours(0, 0, 0, 0);
+    const data = P.load(store());
+    const rg = rangeOf(view.period, now, view.from, view.to);
+    const r = P.report(data, { from: rg.from, to: rg.to, subject: view.subject, grade }, now);
+    body.append(h('h1', {}, grade ? `Báo cáo cho phụ huynh · Lớp ${grade}` : 'Báo cáo cho phụ huynh'));
+    body.append(h('p', { class: 'meta' }, `Hôm nay: ${fmtFull(now)} (theo ngày của máy tính)`));
+
+    const rerender = () => renderReport(body, grade);
+    const perSel = h('select', { 'aria-label': 'Khoảng thời gian' });
+    PERIODS.forEach(([k, t]) => { const o = h('option', { value: k }, t); if (k === view.period) o.selected = true; perSel.append(o); });
+    perSel.addEventListener('change', () => { view.period = perSel.value; if (view.period === 'custom' && view.from == null) { view.from = rg.from; view.to = rg.to; } rerender(); });
+    const subSel = h('select', { 'aria-label': 'Môn học' });
+    const allOpt = h('option', { value: '' }, 'Tất cả môn'); subSel.append(allOpt);
+    Object.keys(SUBJ).forEach((k) => { const o = h('option', { value: k }, SUBJ[k]); if (k === view.subject) o.selected = true; subSel.append(o); });
+    subSel.addEventListener('change', () => { view.subject = subSel.value; rerender(); });
+    const ctl = h('div', { class: 'rep-ctl' }, h('label', {}, 'Thời gian ', perSel), h('label', {}, 'Môn học ', subSel));
+    if (view.period === 'custom') {
+      const f = h('input', { type: 'date', value: iso(rg.from), max: iso(today), 'aria-label': 'Từ ngày' });
+      const t = h('input', { type: 'date', value: iso(rg.to), max: iso(today), 'aria-label': 'Đến ngày' });
+      const onDate = () => { if (f.value && t.value) { view.from = fromIso(f.value); view.to = fromIso(t.value); rerender(); } };
+      f.addEventListener('change', onDate); t.addEventListener('change', onDate);
+      ctl.append(h('label', {}, 'Từ ', f), h('label', {}, 'Đến ', t));
+    }
+    body.append(ctl);
+    body.append(h('p', { class: 'meta' }, `${fmtFull(r.from)} → ${fmtFull(r.to)}${view.subject ? ' · ' + subjName(view.subject) : ''}`));
+
+    body.append(h('div', { class: 'goal-box' }, h('h2', {}, 'Chất lượng làm bài'), qualityBar(r.correct, r.total, true)));
+    if (r.days.length > 1 || r.total) {
+      body.append(h('h2', { class: 'rep-h' }, r.days.length <= 7 ? 'Lịch tuần' : 'Lịch học'), calendar(r, today));
+    }
+    if (r.subjects.length) {
+      const box = h('div', { class: 'goal-box' }, h('h2', {}, 'Theo môn học'));
+      r.subjects.forEach((s) => box.append(h('p', {}, `${subjName(s.subject)} lớp ${s.grade}: ${s.lessons} bài`), qualityBar(s.correct, s.total, true)));
+      body.append(box);
+    }
     const ul = h('ul', { class: 'report-list' });
-    lines(w).forEach((t) => ul.append(h('li', {}, t.replace(/^\s*•\s*/, ''))));
+    lines(r).forEach((t) => ul.append(h('li', {}, t.replace(/^\s*•\s*/, ''))));
     body.append(ul);
+    const book = grade ? data.notebook.filter((n) => n.grade === grade) : data.notebook;
+    body.append(h('p', { class: 'meta' }, `Sổ câu sai: ${book.length} câu, ${P.due(data, now, grade).length} câu đến hạn ôn`));
     body.append(h('div', { class: 'goal-box', id: 'goal-box-report' }));
     renderGoals(document.getElementById('goal-box-report') || body.lastChild, grade);
     const pinBox = h('div', { class: 'goal-box' });
@@ -236,9 +341,9 @@
     const btn = h('button', { type: 'button', class: 'primary' }, 'Lưu ảnh báo cáo gửi Zalo');
     const msg = h('p', { class: 'meta' });
     btn.addEventListener('click', () => {
-      drawPng(w, nameIn.value.trim()).toBlob((blob) => {
+      drawPng(r, nameIn.value.trim()).toBlob((blob) => {
         if (!blob) { msg.textContent = 'Không tạo được ảnh.'; return; }
-        const a = h('a', { download: `bao-cao-tuan${grade ? '-lop' + grade : ''}-${new Date().toISOString().slice(0, 10)}.png`, href: URL.createObjectURL(blob) });
+        const a = h('a', { download: `bao-cao${grade ? '-lop' + grade : ''}-${iso(now)}.png`, href: URL.createObjectURL(blob) });
         document.body.append(a); a.click(); a.remove();
         msg.textContent = 'Đã tạo ảnh báo cáo. Chọn nơi lưu rồi gửi cho phụ huynh qua Zalo.';
       }, 'image/png');

@@ -691,7 +691,7 @@ function showSubjects(grade) {
   document.getElementById('subjects-kicker').textContent = `Lớp ${grade}`;
   if (window.VungProgressUI) {
     window.VungProgressUI.scope = grade;
-    document.getElementById('open-report-grade').textContent = `Báo cáo tuần lớp ${grade}`;
+    document.getElementById('open-report-grade').textContent = `Báo cáo lớp ${grade}`;
     window.VungProgressUI.refreshBadge();
   }
   document.getElementById('breadcrumb').textContent = '';

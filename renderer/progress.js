@@ -119,7 +119,7 @@
     const weekRv = sum(rv, from, t0 + DAY);
     const days = new Set(week.map((a) => startOfDay(a.t)).concat(weekRv.map((r) => startOfDay(r.t))));
     return {
-      goals, todayDone: today.reduce((n, a) => n + a.total, 0), daysDone: days.size,
+      goals, todayDone: today.reduce((n, a) => n + a.total, 0), todayCorrect: today.reduce((n, a) => n + a.correct, 0), daysDone: days.size,
       todayPts: today.reduce((n, a) => n + (a.pts || 0), 0) + sum(rv, t0, t0 + DAY).length * REVIEW_PTS,
       weekPts: week.reduce((n, a) => n + (a.pts || 0), 0) + weekRv.length * REVIEW_PTS,
       totalPts: at.reduce((n, a) => n + (a.pts || 0), 0) + rv.length * REVIEW_PTS,
@@ -155,5 +155,46 @@
     };
   }
 
-  return { KEY, INTERVALS, DEFAULT_GOALS, score10, points, setGoals, progress, load, save, recordAttempt, grade, due, weekly, slimItem };
+  /* Báo cáo theo khoảng ngày tùy chọn. from/to là mốc đầu ngày (to tính cả ngày đó); subject, grade lọc nếu có.
+     Trả về từng ngày (số câu đúng/sai) để vẽ lịch, tổng, theo môn và các chương yếu. */
+  function report(data, opts, now) {
+    now = now || Date.now();
+    opts = opts || {};
+    const from = startOfDay(opts.from != null ? opts.from : now - 6 * DAY);
+    const to = startOfDay(opts.to != null ? opts.to : now);
+    const subject = opts.subject || ''; const grade = opts.grade || 0;
+    const goals = data.goals || DEFAULT_GOALS;
+    const list = (data.attempts || []).filter((a) => a.t >= from && a.t < to + DAY && (!grade || a.grade === grade) && (!subject || a.subject === subject));
+    const pct = (x) => (x.total ? Math.round((100 * x.correct) / x.total) : 0);
+    const days = [];
+    for (let t = from; t <= to && days.length < 366; t += DAY) {
+      const d = new Date(t); d.setHours(0, 0, 0, 0);
+      const day = { t: d.getTime(), correct: 0, total: 0, lessons: 0 };
+      list.forEach((a) => { if (a.t >= day.t && a.t < day.t + DAY) { day.correct += a.correct; day.total += a.total; day.lessons += 1; } });
+      day.wrong = day.total - day.correct; day.pct = pct(day);
+      day.reached = !subject && day.total >= goals.daily;
+      days.push(day);
+    }
+    const subj = {}, chap = {};
+    let correct = 0, total = 0, seconds = 0;
+    list.forEach((a) => {
+      correct += a.correct; total += a.total; seconds += a.seconds || 0;
+      const sk = a.subject + '|' + a.grade;
+      const s = subj[sk] || (subj[sk] = { subject: a.subject, grade: a.grade, correct: 0, total: 0, lessons: 0 });
+      s.correct += a.correct; s.total += a.total; s.lessons += 1;
+      const ck = sk + '|' + (a.chapter || a.lesson);
+      const c = chap[ck] || (chap[ck] = { subject: a.subject, grade: a.grade, name: a.chapter || a.lesson, correct: 0, total: 0 });
+      c.correct += a.correct; c.total += a.total;
+    });
+    const subjects = Object.values(subj).map((x) => Object.assign(x, { wrong: x.total - x.correct, pct: pct(x) })).sort((a, b) => b.total - a.total);
+    const weak = Object.values(chap).filter((c) => c.total >= 5).map((c) => Object.assign(c, { pct: pct(c) }))
+      .filter((c) => c.pct < 70).sort((a, b) => a.pct - b.pct).slice(0, 5);
+    return {
+      from, to, days, goals, subject, grade, correct, wrong: total - correct, total, pct: pct({ correct, total }),
+      minutes: Math.round(seconds / 60), attempts: list.length, activeDays: days.filter((d) => d.total > 0).length,
+      subjects, weak,
+    };
+  }
+
+  return { KEY, INTERVALS, DEFAULT_GOALS, score10, points, setGoals, progress, report, load, save, recordAttempt, grade, due, weekly, slimItem };
 });
