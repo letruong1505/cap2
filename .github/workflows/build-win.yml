@@ -23,29 +23,34 @@ jobs:
         run: |
           for i in 1 2 3; do npm install && exit 0; echo "npm install lỗi, thử lại lần $i"; rm -rf node_modules/electron; sleep 20; done; exit 1
 
-      - name: Build installer exe (THCS)
-        shell: bash
+      - name: Write build info
         env:
           RUN_NUMBER: ${{ github.run_number }}
           COMMIT_SHA: ${{ github.sha }}
+        run: |
+          node -e "const fs=require('fs'); const info={version:'1.2.'+(Number(process.env.RUN_NUMBER)-84), commit:process.env.COMMIT_SHA.slice(0,7)}; fs.writeFileSync('main/build-info.json', JSON.stringify(info)); console.log(JSON.stringify(info))"
+
+      - name: Set package version from run number
+        shell: bash
+        env:
+          RUN_NUMBER: ${{ github.run_number }}
+        run: npm pkg set version="1.2.$((RUN_NUMBER-84))"
+
+      - name: Build installer exe (THCS)
+        shell: bash
+        env:
           ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/
           ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/
         run: |
-          node -e "const fs=require('fs'); const v='1.1.'+process.env.RUN_NUMBER; fs.writeFileSync('main/build-info.json', JSON.stringify({version:v, commit:process.env.COMMIT_SHA.slice(0,7)})); console.log('Phiên bản '+v)"
-          npm pkg set version="1.1.$RUN_NUMBER"
           node tools/select-product.js thcs
           for i in 1 2 3; do npm run dist:win && exit 0; echo "build lỗi, thử lại lần $i"; sleep 20; done; exit 1
 
       - name: Build installer exe (Nam Linh Educenter)
         shell: bash
         env:
-          RUN_NUMBER: ${{ github.run_number }}
-          COMMIT_SHA: ${{ github.sha }}
           ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/
           ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/
         run: |
-          node -e "const fs=require('fs'); const v='1.2.'+process.env.RUN_NUMBER; fs.writeFileSync('main/build-info.json', JSON.stringify({version:v, commit:process.env.COMMIT_SHA.slice(0,7)})); console.log('Phiên bản '+v)"
-          npm pkg set version="1.2.$RUN_NUMBER"
           node tools/select-product.js nam-linh-educenter
           for i in 1 2 3; do npm run dist:win:nam-linh && exit 0; echo "build lỗi, thử lại lần $i"; sleep 20; done; exit 1
 
