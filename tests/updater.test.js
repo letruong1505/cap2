@@ -52,3 +52,14 @@ test('lỗi mạng chỉ ghi vào trạng thái', async () => {
   assert.equal(u.status().state, 'error');
   assert.match(u.status().error, /ENOTFOUND/);
 });
+
+test('hiển thị nội dung cập nhật từ releaseNotes (chuỗi, mảng, HTML)', async () => {
+  const { notesText } = require('../main/updater');
+  assert.equal(notesText('- A\n- B'), '- A\n- B');
+  assert.equal(notesText([{ version: '1', note: '<p>Một</p><p>Hai</p>' }]), 'Một\nHai');
+  assert.equal(notesText(undefined), '');
+  const au = fake(); au.checkForUpdates = async () => { au.emit('update-available', { version: '9.9.9', releaseNotes: '- Sửa lỗi X' }); };
+  const u = createUpdater({ autoUpdater: au, send() {}, url: 'https://u.example.com' });
+  await u.check();
+  assert.equal(u.status().notes, '- Sửa lỗi X');
+});

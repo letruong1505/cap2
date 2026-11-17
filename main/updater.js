@@ -1,10 +1,16 @@
 // Cập nhật phần mềm qua mạng. Chỉ chạy khi: app đã cài (không phải chế độ dev), có địa chỉ máy chủ
 // cập nhật, và sản phẩm là Nam Linh Educenter. Người dùng luôn được hỏi trước khi tải và trước khi cài.
 // Phần lõi nhận autoUpdater và hàm gửi tin vào dạng tham số để kiểm thử không cần Electron.
+// releaseNotes trong latest.yml có thể là chuỗi hoặc mảng {version, note}; đưa về văn bản thuần.
+function notesText(n) {
+  const raw = Array.isArray(n) ? n.map((x) => (x && x.note) || '').join('\n') : String(n || '');
+  return raw.replace(/<\/(li|p|div|h\d)>/gi, '\n').replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]+>/g, '').replace(/\n{2,}/g, '\n').trim().slice(0, 1500);
+}
+
 function createUpdater({ autoUpdater, send, url, enabled = true, version = '' }) {
   const feed = String(url || '').trim().replace(/\/+$/, '');
   const active = !!(enabled && /^https:\/\//i.test(feed));
-  let state = { state: active ? 'idle' : 'off', version: '', percent: 0, error: '' };
+  let state = { state: active ? 'idle' : 'off', version: '', notes: '', percent: 0, error: '' };
 
   const set = (patch) => { state = { ...state, ...patch }; send(state); return state; };
 
@@ -14,7 +20,7 @@ function createUpdater({ autoUpdater, send, url, enabled = true, version = '' })
     autoUpdater.allowPrerelease = false;
     autoUpdater.setFeedURL({ provider: 'generic', url: feed });
     autoUpdater.on('checking-for-update', () => set({ state: 'checking', error: '' }));
-    autoUpdater.on('update-available', (i) => set({ state: 'available', version: String(i && i.version || '') }));
+    autoUpdater.on('update-available', (i) => set({ state: 'available', version: String(i && i.version || ''), notes: notesText(i && i.releaseNotes) }));
     autoUpdater.on('update-not-available', () => set({ state: 'none' }));
     autoUpdater.on('download-progress', (p) => set({ state: 'downloading', percent: Math.round(p && p.percent || 0) }));
     autoUpdater.on('update-downloaded', (i) => set({ state: 'ready', percent: 100, version: String(i && i.version || state.version) }));
@@ -44,4 +50,4 @@ function createUpdater({ autoUpdater, send, url, enabled = true, version = '' })
   };
 }
 
-module.exports = { createUpdater };
+module.exports = { createUpdater, notesText };

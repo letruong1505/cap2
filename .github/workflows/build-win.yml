@@ -36,6 +36,9 @@ jobs:
           RUN_NUMBER: ${{ github.run_number }}
         run: npm pkg set version="1.2.$((RUN_NUMBER-84))"
 
+      - name: Add release notes from CHANGELOG.md
+        run: node tools/release-notes.js
+
       - name: Build installer exe (THCS)
         shell: bash
         env:

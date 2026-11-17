@@ -710,9 +710,15 @@ function setupUpdateBar() {
     bar.replaceChildren();
     const msg = document.createElement('span');
     let acts = [];
+    let notes = null;
     if (st.state === 'available' && dismissed !== st.version) {
       msg.textContent = `Có phiên bản mới ${st.version}.`;
       acts = [btn('Tải về', () => window.vungBai.downloadUpdate()), btn('Để sau', () => { dismissed = st.version; render({ state: 'none' }); }, 'ghost')];
+      if (st.notes) {
+        const ul = document.createElement('ul'); ul.className = 'update-notes';
+        for (const line of st.notes.split('\n')) { const t = line.replace(/^\s*[-*•]\s*/, '').trim(); if (t) { const li = document.createElement('li'); li.textContent = t; ul.append(li); } }
+        notes = ul;
+      }
     } else if (st.state === 'checking' && manual) {
       msg.textContent = 'Đang kiểm tra bản mới…';
     } else if ((st.state === 'none' || st.state === 'error') && manual) {
@@ -725,7 +731,8 @@ function setupUpdateBar() {
       msg.textContent = `Đã tải xong phiên bản ${st.version}.`;
       acts = [btn('Khởi động lại để cài', () => window.vungBai.installUpdate()), btn('Để sau', () => { bar.hidden = true; }, 'ghost')];
     } else { bar.hidden = true; return; }
-    bar.append(msg, ...acts);
+    const head = document.createElement('div'); head.className = 'update-head'; head.append(msg, ...acts);
+    bar.append(head); if (notes) bar.append(notes);
     bar.hidden = false;
   };
   window.vungBai.onUpdate(render);
