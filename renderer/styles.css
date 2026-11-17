@@ -792,3 +792,13 @@ button.ghost:hover { background: var(--paper); }
 .aiw-lesson .aiw-fig svg { width: 100%; height: auto; display: block; }
 .aiw-lesson .aiw-fig svg text { font-family: inherit; }
 .aiw-lesson .aiw-fig figcaption { text-align: center; color: #5b6773; font-size: 13px; margin-top: 6px; }
+.aiw-lesson .ex { border: 1px solid #dfe5ec; border-radius: 12px; margin: 14px 0; overflow: hidden; }
+.aiw-lesson .ex-t { background: #eef3f8; padding: 8px 14px; font-weight: 700; color: #17406b; }
+.aiw-lesson .ex-row { display: grid; grid-template-columns: 1fr 1fr; }
+@media (max-width: 760px) { .aiw-lesson .ex-row { grid-template-columns: 1fr; } }
+.aiw-lesson .ex-bad, .aiw-lesson .ex-good { padding: 10px 14px; }
+.aiw-lesson .ex-bad { background: #fbe9e7; } .aiw-lesson .ex-good { background: #e5f5ea; }
+.aiw-lesson .ex pre { white-space: pre-wrap; font-family: inherit; font-size: 14px; line-height: 1.5; margin: 4px 0 0; }
+.aiw-lesson .ex-note { margin: 0; padding: 8px 14px; font-size: 14px; color: #5b6773; border-top: 1px solid #dfe5ec; }
+.aiw-lesson .gloss { background: #f6f8fb; border: 1px solid #dfe5ec; border-radius: 12px; padding: 10px 16px; margin: 16px 0; }
+.aiw-lesson .gloss ul { margin: 6px 0 0; padding-left: 20px; }
