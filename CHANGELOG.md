@@ -1,4 +1,5 @@
 ## Bản mới
+- Màn hình Mua khóa học: thêm chính sách hoàn tiền (7 ngày khi có lỗi kỹ thuật không khắc phục được), phải tích đồng ý riêng mới tạo được mã QR.
 - Sửa lỗi mất mã PIN và câu sai sau khi cập nhật phần mềm.
 - Sửa lỗi bản quyền: mua Văn hóa và Kỹ năng ở hai đơn khác nhau thì giờ gộp cả hai, không còn ghi đè nhau.
 - Sổ câu sai hiển thị đáp án em đã chọn hoặc nhập, đặt cạnh đáp án đúng.

@@ -51,10 +51,10 @@
   const phoneOk = (s) => /^(0|\+84)\d{9}$/.test(normPhone(s));
 
   let ctx = { machineId: '' };
-  const st = { name: '', phone: '', picks: new Set(), agreed: false, order: null };
+  const st = { name: '', phone: '', picks: new Set(), agreed: false, refundOk: false, order: null };
 
   function total() { return ALL.filter((x) => st.picks.has(x.id)).reduce((s, x) => s + x.price, 0); }
-  function formOk() { return st.name.trim().length >= 2 && phoneOk(st.phone) && st.picks.size > 0 && st.agreed; }
+  function formOk() { return st.name.trim().length >= 2 && phoneOk(st.phone) && st.picks.size > 0 && st.agreed && st.refundOk; }
 
   function orderText(o) {
     const P = window.NL_PAYMENT;
@@ -87,6 +87,7 @@
     if (!phoneOk(st.phone)) miss.push('số điện thoại hợp lệ');
     if (!st.picks.size) miss.push('ít nhất một khóa học');
     if (!st.agreed) miss.push('đồng ý điều khoản');
+    if (!st.refundOk) miss.push('xác nhận chính sách hoàn tiền');
     createBtn.disabled = !formOk();
     hint.textContent = miss.length ? 'Còn thiếu: ' + miss.join(', ') + '.' : '';
   }
@@ -197,6 +198,17 @@
     const agree = h('input', { type: 'checkbox', id: 'buy-agree', checked: st.agreed });
     agree.addEventListener('change', () => { st.agreed = agree.checked; renderSummary(); });
 
+    const refundAgree = h('input', { type: 'checkbox', id: 'buy-refund', checked: st.refundOk });
+    refundAgree.addEventListener('change', () => { st.refundOk = refundAgree.checked; renderSummary(); });
+    const refundBox = h('div', { class: 'buy-refund' },
+      h('h3', {}, 'Chính sách hoàn tiền'),
+      h('ul', {},
+        h('li', {}, 'Hoàn tiền trong 07 ngày kể từ khi kích hoạt, chỉ khi phần mềm có lỗi kỹ thuật mà bên em không khắc phục được (không kích hoạt được, không chạy trên máy của mình).'),
+        h('li', {}, 'Không hoàn tiền khi đổi ý sau khi đã kích hoạt. Được hỗ trợ đổi máy miễn phí.'),
+        h('li', {}, 'Có thể học thử các bài miễn phí trong phần mềm trước khi mua.')),
+      h('label', { class: 'buy-agree', for: 'buy-refund' }, refundAgree,
+        h('span', {}, 'Tôi đã đọc và đồng ý chính sách hoàn tiền trên.')));
+
     summaryEl = h('section', { class: 'buy-card buy-summary' });
     payEl = h('section', { class: 'buy-card buy-pay', hidden: true });
     hint = h('p', { class: 'muted buy-hint', 'aria-live': 'polite' });
@@ -228,7 +240,8 @@
             h('p', { class: 'muted' }, 'Chọn một hoặc nhiều khóa. Mỗi khóa dùng vĩnh viễn trên 1 máy.'), groups),
           h('section', { class: 'buy-card' }, h('h2', {}, h('span', { class: 'buy-n' }, '3'), 'Điều khoản'), terms,
             h('label', { class: 'buy-agree', for: 'buy-agree' }, agree,
-              h('span', {}, 'Tôi là phụ huynh, người giám hộ hoặc người từ đủ 18 tuổi, đã đọc và đồng ý Điều khoản mua và sử dụng của Nam Linh Technology.')))),
+              h('span', {}, 'Tôi là phụ huynh, người giám hộ hoặc người từ đủ 18 tuổi, đã đọc và đồng ý Điều khoản mua và sử dụng của Nam Linh Technology.')),
+            refundBox)),
         h('aside', { class: 'buy-side' }, summaryEl, payEl, hint, createBtn)));
     renderSummary();
     if (st.order) showPay(st.order);
