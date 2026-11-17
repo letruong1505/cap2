@@ -19,3 +19,5 @@ $('issue').addEventListener('click', async () => {
   msg.className = 'ok'; msg.textContent = 'Đã tạo khoá ' + r.id + '. Nhấn Sao chép rồi gửi cho khách.';
 });
 $('copy').addEventListener('click', () => { if ($('out').value) window.kg.copy($('out').value); });
+
+$('pickall').addEventListener('click', () => { $('all').checked = true; document.querySelectorAll('#grades input[value], #courses input').forEach((c) => { c.checked = true; }); });
