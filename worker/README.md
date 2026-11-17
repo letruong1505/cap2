@@ -52,6 +52,14 @@ Trong SePay: Webhooks, Thêm webhook:
 2. `renderer/payment-config.js`: điền ngân hàng (mã BIN), số tài khoản, tên chủ tài khoản.
 3. Build lại phần mềm. Để trống `baseUrl` thì phần mềm quay về cách cũ: sao chép đơn gửi Zalo.
 
+## Thu hồi khóa và theo dõi máy đang dùng
+- Phần mềm (bản mới) mở lên 8 giây thì gửi tín hiệu `POST /api/ping` về Worker, sau đó mỗi 5 phút, và gửi ngay sau khi kích hoạt. Nội dung chỉ gồm mã máy, mã đơn của các khóa đang dùng và số bản. Không gửi dữ liệu học tập.
+- Trang `/admin` có cột "Máy đã dùng": mã máy, số bản, nhãn **Đang online** (có tín hiệu trong 10 phút) hoặc **Offline** kèm lần mở gần nhất. Trang tự tải lại mỗi 30 giây.
+- Nút **Thu hồi** (đơn đã thanh toán): gõ lại mã đơn để xác nhận, nhập lý do. Chỉ đánh dấu trong bảng `revocations`, không xóa đơn, không xóa dữ liệu học trên máy khách. Máy khách bị vô hiệu khóa của đúng đơn đó ở tín hiệu kế tiếp (tối đa 5 phút khi có mạng), các khóa khác của khách vẫn dùng.
+- Nút **Khôi phục**: gỡ đánh dấu, máy khách dùng lại ở tín hiệu kế tiếp. Lịch sử thu hồi vẫn còn trong bảng.
+- Giới hạn: chỉ áp dụng cho bản phần mềm có tính năng này; khóa cấp tay bằng công cụ cấp khóa (không thuộc đơn nào) không thu hồi được; máy không có mạng vẫn dùng được cho đến khi có mạng.
+- Nâng cấp từ bản cũ: chạy lại `npm run db:init` (an toàn, chỉ tạo thêm hai bảng `revocations` và `devices`) rồi `npm run deploy`.
+
 ## Kiểm thử trước khi bán
 - Chạy thử với giá thấp: tạm sửa giá một khóa trong `renderer/catalog.js` xuống vài nghìn đồng, build, deploy Worker, tạo đơn và chuyển khoản thật. Xong trả giá về như cũ ở **cả** phần mềm và Worker (cùng một file, nên build và deploy lại cả hai).
 - Hoặc tạo đơn rồi dùng nút "Duyệt tay" trên `/admin` để thử phần cấp khóa mà không cần chuyển tiền.

@@ -1,5 +1,5 @@
 const { evaluateKey, today } = require('./verify');
-const { readStore, writeStore } = require('./store');
+const { readStore, updateStore } = require('./store');
 const { getMachineId } = require('./machine');
 
 const MAX_FREE_LESSONS = 2; // chưa mua: chỉ mở 2 bài đầu của mỗi môn
@@ -22,12 +22,14 @@ function currentLicense(dir, now = new Date(), pubKey) {
   const store = readStore(dir);
   if (!store.keys.length) return { status: 'missing', machineId };
   const t = today(now);
-  const results = store.keys.map((k) => evaluateKey(k, machineId, now, pubKey));
+  // Khóa của đơn bị thu hồi (máy chủ báo về) thì vô hiệu, các khóa khác vẫn dùng bình thường.
+  const revoked = new Set(store.revoked.map((c) => 'NL-' + c));
+  const results = store.keys.map((k) => { const e = evaluateKey(k, machineId, now, pubKey); return e.status === 'ok' && revoked.has(e.id) ? { ...e, status: 'revoked' } : e; });
   const merged = merge(results);
-  const r = merged || results.find((x) => x.status === 'expired') || results[0];
+  const r = merged || results.find((x) => x.status === 'revoked') || results.find((x) => x.status === 'expired') || results[0];
   // Khoá vĩnh viễn không phụ thuộc ngày nên không cần chặn khi đồng hồ bị lùi.
   if (r.expiresOn !== 'never' && store.lastSeen && t < store.lastSeen) return { status: 'clock', machineId };
-  if (r.status === 'ok' && t > store.lastSeen) writeStore(dir, { keys: store.keys, lastSeen: t });
+  if (r.status === 'ok' && t > store.lastSeen) updateStore(dir, { lastSeen: t });
   return { ...r, machineId };
 }
 
@@ -38,12 +40,27 @@ function activate(dir, key, now = new Date(), pubKey) {
   const r = evaluateKey(clean, machineId, now, pubKey);
   if (r.status !== 'ok') return { ...r, machineId };
   const keep = readStore(dir).keys.filter((k) => k !== clean && evaluateKey(k, machineId, now, pubKey).id !== r.id);
-  writeStore(dir, { keys: [...keep, clean], lastSeen: today(now) });
+  updateStore(dir, { keys: [...keep, clean], lastSeen: today(now) });
   return { ...currentLicense(dir, now, pubKey), machineId };
 }
 
 function deactivate(dir) {
-  writeStore(dir, { keys: [], lastSeen: readStore(dir).lastSeen });
+  updateStore(dir, { keys: [] });
+}
+
+// Mã đơn (6 ký tự) của các khóa đang hợp lệ trên máy này, để gửi tín hiệu về máy chủ. Khóa cấp tay không thuộc đơn nào thì bỏ qua.
+function pingCodes(dir, now = new Date(), pubKey) {
+  const machineId = getMachineId();
+  return readStore(dir).keys.map((k) => evaluateKey(k, machineId, now, pubKey)).filter((r) => r.status === 'ok' && /^NL-[A-Z0-9]{6}$/.test(r.id)).map((r) => r.id.slice(3));
+}
+
+// Cập nhật danh sách mã đơn bị thu hồi từ máy chủ. Trả về true nếu có thay đổi.
+function setRevoked(dir, codes) {
+  const next = [...new Set((codes || []).filter((c) => typeof c === 'string'))].sort();
+  const cur = [...readStore(dir).revoked].sort();
+  if (JSON.stringify(next) === JSON.stringify(cur)) return false;
+  updateStore(dir, { revoked: next });
+  return true;
 }
 
 const gradeOf = (subject) => Number(String(subject).match(/(\d+)$/)?.[1]);
@@ -75,4 +92,4 @@ function annotateManifest(license, subject, manifest) {
   return out;
 }
 
-module.exports = { currentLicense, activate, deactivate, canOpen, annotateManifest, hasGrade, MAX_FREE_LESSONS };
+module.exports = { currentLicense, activate, deactivate, pingCodes, setRevoked, canOpen, annotateManifest, hasGrade, MAX_FREE_LESSONS };

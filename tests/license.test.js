@@ -99,3 +99,37 @@ test('bản cũ lưu một khoá (key) vẫn đọc được', () => {
   fs.writeFileSync(path.join(dir, 'license.json'), JSON.stringify({ key: issue({ id: 'NL-E', grades: [6], expires: 'never' }), lastSeen: '' }));
   assert.deepEqual(lic.currentLicense(dir, NOW, publicKey).grades, [6]);
 });
+
+test('khóa của đơn bị thu hồi thì vô hiệu, khóa khác vẫn dùng, khôi phục thì dùng lại', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'lic-'));
+  const a = issue({ id: 'NL-AAAAAA', grades: [7], expires: 'never' });
+  const b = issue({ id: 'NL-BBBBBB', grades: [8], expires: 'never' });
+  lic.activate(dir, a, NOW, publicKey); lic.activate(dir, b, NOW, publicKey);
+  assert.deepStrictEqual(lic.pingCodes(dir, NOW, publicKey).sort(), ['AAAAAA', 'BBBBBB']);
+  assert.strictEqual(lic.setRevoked(dir, ['AAAAAA']), true);
+  assert.strictEqual(lic.setRevoked(dir, ['AAAAAA']), false);
+  let r = lic.currentLicense(dir, NOW, publicKey);
+  assert.strictEqual(r.status, 'ok'); assert.deepStrictEqual(r.grades, [8]);
+  lic.setRevoked(dir, ['AAAAAA', 'BBBBBB']);
+  assert.strictEqual(lic.currentLicense(dir, NOW, publicKey).status, 'revoked');
+  lic.setRevoked(dir, []);
+  assert.deepStrictEqual(lic.currentLicense(dir, NOW, publicKey).grades, [7, 8]);
+  // Dán lại khóa đã thu hồi vẫn bị vô hiệu; danh sách thu hồi không mất khi kích hoạt thêm khóa.
+  lic.setRevoked(dir, ['AAAAAA']);
+  assert.strictEqual(lic.activate(dir, a, NOW, publicKey).grades.includes(7), false);
+});
+
+test('tín hiệu định kỳ: gửi mã đơn và cập nhật danh sách thu hồi, lỗi mạng thì bỏ qua', async () => {
+  const { createHeartbeat } = require('../main/heartbeat');
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'lic-'));
+  const fake = { pingCodes: () => ['AAAAAA'], setRevoked: (d, c) => { fake.got = c; return true; } };
+  let sent;
+  const hb = createHeartbeat({ dir, lic: fake, version: '1.2.9', client: { ping: async (o) => { sent = o; return { ok: true, data: { revoked: ['AAAAAA'] } }; } } });
+  assert.deepStrictEqual(await hb.beat(), { sent: true, ok: true, changed: true });
+  assert.deepStrictEqual(sent, { ids: ['AAAAAA'], version: '1.2.9' });
+  assert.deepStrictEqual(fake.got, ['AAAAAA']);
+  const off = createHeartbeat({ dir, lic: fake, version: 'x', client: { ping: async () => ({ ok: false, offline: true }) } });
+  assert.deepStrictEqual(await off.beat(), { sent: true, ok: false });
+  const none = createHeartbeat({ dir, lic: { pingCodes: () => [] }, version: 'x', client: { ping: async () => { throw new Error('không được gọi'); } } });
+  assert.deepStrictEqual(await none.beat(), { sent: false });
+});

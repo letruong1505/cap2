@@ -26,3 +26,12 @@ test('lỗi 4xx trả thông báo, lỗi 5xx và lỗi mạng trả offline', as
   assert.deepStrictEqual(await mk(reply(500, {})).createOrder({}), { ok: false, offline: true });
   assert.deepStrictEqual(await mk(async () => { throw new Error('net'); }).orderStatus('ABCDEF'), { ok: false, offline: true });
 });
+
+test('tín hiệu: gửi mã máy, mã đơn và số bản, bỏ trường lạ', async () => {
+  let sent;
+  const c = makeClient({ baseUrl: () => 'https://x.test', machineId: () => 'AAAA-BBBB-CCCC',
+    fetchFn: async (url, opt) => { sent = { url, body: JSON.parse(opt.body) }; return { status: 200, ok: true, json: async () => ({ revoked: [] }) }; } });
+  await c.ping({ ids: ['ABCDEF'], version: '1.2.9', machineId: 'GIẢ', name: 'X' });
+  assert.strictEqual(sent.url, 'https://x.test/api/ping');
+  assert.deepStrictEqual(sent.body, { machineId: 'AAAA-BBBB-CCCC', ids: ['ABCDEF'], version: '1.2.9' });
+});

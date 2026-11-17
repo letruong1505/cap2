@@ -28,6 +28,8 @@ function makeClient({ baseUrl = readBaseUrl, fetchFn = (...a) => fetch(...a), ma
       terms: { version: String(o && o.terms && o.terms.version || ''), at: String(o && o.terms && o.terms.at || '') }, machineId: machineId(),
     }),
     pinReset: (o) => call('POST', '/api/pin-reset', { phone: String(o && o.phone || ''), code: String(o && o.code || ''), machineId: machineId() }),
+    // Tín hiệu "máy này đang mở phần mềm" + nhận danh sách mã đơn bị thu hồi. Chỉ gửi mã máy, mã đơn và số bản, không gửi dữ liệu học tập.
+    ping: (o) => call('POST', '/api/ping', { machineId: machineId(), ids: Array.isArray(o && o.ids) ? o.ids.map(String) : [], version: String(o && o.version || '') }),
     orderStatus: (code) => call('GET', `/api/orders/${encodeURIComponent(String(code).slice(0, 6))}/status?machine=${encodeURIComponent(machineId())}`),
   };
 }

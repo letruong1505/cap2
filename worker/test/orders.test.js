@@ -166,3 +166,66 @@ test('gắn giao dịch lạc vào đơn rồi cấp key', async () => {
   assert.equal((await orderStatus(db, env, catalog, 'ABCDEF', MACHINE)).status, 'paid');
   await assert.rejects(attachTransaction(db, env, catalog, 7, 'ABCDEF'), (e) => e.status === 409);
 });
+
+// ---- Thu hồi khóa và theo dõi máy đang dùng ----
+async function paidOrder(db, env, machine = MACHINE) {
+  const o = await createOrder(db, catalog, input({ machineId: machine }), new Date(), fixedRand);
+  await approveOrder(db, env, catalog, o.code, 'x');
+  return o.code;
+}
+
+test('tín hiệu từ máy: ghi nhận máy, online trong 10 phút rồi chuyển offline', async () => {
+  const { ping, listOrders } = await import('../src/orders.js');
+  const db = fakeD1(); const { env } = testEnv();
+  const code = await paidOrder(db, env);
+  const t0 = new Date('2026-11-18T01:00:00Z');
+  assert.deepEqual(await ping(db, { machineId: MACHINE, ids: ['NL-' + code, 'KHONGCO', 'ZZZZZZ'], version: '1.2.9' }, t0), { revoked: [] });
+  let o = (await listOrders(db, {}, new Date(t0.getTime() + 5 * 60000)))[0];
+  assert.equal(o.devices.length, 1);
+  assert.equal(o.devices[0].online, true);
+  assert.equal(o.devices[0].version, '1.2.9');
+  o = (await listOrders(db, {}, new Date(t0.getTime() + 11 * 60000)))[0];
+  assert.equal(o.devices[0].online, false);
+  // Gửi lại: cập nhật cùng một dòng, không tạo thêm.
+  await ping(db, { machineId: MACHINE, ids: [code], version: '1.3.0' }, new Date(t0.getTime() + 20 * 60000));
+  o = (await listOrders(db, {}, new Date(t0.getTime() + 21 * 60000)))[0];
+  assert.equal(o.devices.length, 1); assert.equal(o.devices[0].version, '1.3.0');
+});
+
+test('tín hiệu: từ chối mã máy sai, bỏ qua đơn chưa thanh toán', async () => {
+  const { ping, listOrders } = await import('../src/orders.js');
+  const db = fakeD1();
+  const o = await createOrder(db, catalog, input(), new Date(), fixedRand);
+  await assert.rejects(ping(db, { machineId: 'abc', ids: [o.code] }), HttpError);
+  await ping(db, { machineId: MACHINE, ids: [o.code] });
+  assert.equal((await listOrders(db, {}))[0].devices.length, 0);
+});
+
+test('thu hồi: chỉ đơn đã thanh toán, ping trả về mã bị thu hồi, khôi phục lại được', async () => {
+  const { ping, revokeOrder, restoreOrder, listOrders } = await import('../src/orders.js');
+  const db = fakeD1(); const { env } = testEnv();
+  const code = await paidOrder(db, env);
+  const pend = await createOrder(db, catalog, input({ machineId: 'AAAA-AAAA-AAAA' }), new Date(), () => Uint8Array.from([9, 8, 7, 6, 5, 4]));
+  await assert.rejects(revokeOrder(db, pend.code, 'x'), (e) => e.status === 404);
+  await assert.rejects(restoreOrder(db, code), (e) => e.status === 409);
+  await revokeOrder(db, code, 'Hoàn tiền');
+  assert.deepEqual(await ping(db, { machineId: MACHINE, ids: [code] }), { revoked: [code] });
+  const o = (await listOrders(db, { status: 'paid' }))[0];
+  assert.equal(o.revoked.reason, 'Hoàn tiền');
+  await restoreOrder(db, code);
+  assert.deepEqual(await ping(db, { machineId: MACHINE, ids: [code] }), { revoked: [] });
+  assert.equal((await listOrders(db, { status: 'paid' }))[0].revoked, null);
+  await revokeOrder(db, code, 'Lần hai'); // thu hồi lại sau khi khôi phục
+  assert.deepEqual(await ping(db, { machineId: MACHINE, ids: [code] }), { revoked: [code] });
+});
+
+test('đường dẫn: /api/ping công khai, thu hồi và khôi phục cần mật khẩu quản trị', async () => {
+  const db = fakeD1(); const { env } = testEnv(); const e = { ...env, DB: db };
+  const code = await paidOrder(db, env);
+  const post = (path, body, auth) => handle(new Request('https://x.test' + path, { method: 'POST', headers: { 'content-type': 'application/json', ...(auth ? { authorization: 'Bearer admin-secret' } : {}) }, body: JSON.stringify(body) }), e);
+  assert.equal((await post('/api/admin/orders/' + code + '/revoke', { reason: 'x' })).status, 401);
+  assert.equal((await post('/api/admin/orders/' + code + '/revoke', { reason: 'x' }, true)).status, 200);
+  const r = await post('/api/ping', { machineId: MACHINE, ids: [code], version: '1' });
+  assert.deepEqual(await r.json(), { revoked: [code] });
+  assert.equal((await post('/api/admin/orders/' + code + '/restore', {}, true)).status, 200);
+});

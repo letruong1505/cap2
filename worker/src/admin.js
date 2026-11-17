@@ -13,7 +13,7 @@ table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;ove
 th,td{padding:9px 12px;border-bottom:1px solid #e3e9f0;text-align:left;vertical-align:top;font-size:14px}
 th{background:#eaf0f7}
 .st{padding:2px 10px;border-radius:99px;font-size:12.5px;font-weight:700;display:inline-block}
-.pending{background:#fff4d6}.underpaid{background:#ffe0d6}.paid{background:#d9f2e1}.cancelled{background:#e6e6e6}
+.on{background:#d9f2e1}.off{background:#eee}.rv{background:#f6d5d1}.pending{background:#fff4d6}.underpaid{background:#ffe0d6}.paid{background:#d9f2e1}.cancelled{background:#e6e6e6}
 .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 #msg{min-height:22px;color:#9b2b1f}
 code{font-size:12.5px;word-break:break-all}
@@ -32,6 +32,12 @@ function money(n){return Number(n||0).toLocaleString('vi-VN')+' đ'}
 function api(method,url,data){return fetch(url,{method:method,headers:{'authorization':'Bearer '+T.value,'content-type':'application/json'},body:data?JSON.stringify(data):undefined}).then(function(r){return r.json().then(function(j){if(!r.ok)throw new Error(j.error||'Lỗi');return j})})}
 function el(t,a){var e=document.createElement(t);for(var k in (a||{})){if(k==='class')e.className=a[k];else if(k==='onclick')e.onclick=a[k];else e.setAttribute(k,a[k])}for(var i=2;i<arguments.length;i++){var c=arguments[i];if(c==null)continue;e.append(c.nodeType?c:document.createTextNode(String(c)))}return e}
 function act(o,what,extra,after){return api('POST','/api/admin/orders/'+o.code+'/'+what,extra).then(after||load).catch(function(e){msg.textContent=e.message})}
+function devCell(o){
+  var c=el('div',{});
+  if(!o.devices.length)c.append(el('div',{},o.status==='paid'?'Chưa thấy máy nào mở phần mềm':'-'));
+  o.devices.forEach(function(d){c.append(el('div',{},el('code',{},d.machine),' ',el('span',{class:'st '+(d.online?'on':'off')},d.online?'Đang online':'Offline'),el('div',{},(d.online?'Bản '+(d.version||'?')+', đang mở phần mềm':'Mở gần nhất '+new Date(d.last_seen).toLocaleString('vi-VN')+(d.version?', bản '+d.version:'')))))});
+  c.append(el('div',{},'Máy đặt đơn: ',el('code',{},o.machine)));
+  return c}
 function showKey(k){window.prompt('Khóa kích hoạt (sao chép):',k)}
 function load(){
   msg.textContent='';
@@ -39,13 +45,15 @@ function load(){
   var u='/api/admin/orders?status='+encodeURIComponent(document.getElementById('st').value)+'&q='+encodeURIComponent(document.getElementById('q').value);
   api('GET',u).then(function(d){
     CAT=d.catalog;var box=document.getElementById('orders');box.replaceChildren();
-    var tb=el('table',{},el('tr',{},el('th',{},'Mã đơn'),el('th',{},'Phụ huynh'),el('th',{},'Khóa học'),el('th',{},'Tiền'),el('th',{},'Trạng thái'),el('th',{},'Mã máy'),el('th',{},'Thao tác')));
+    var tb=el('table',{},el('tr',{},el('th',{},'Mã đơn'),el('th',{},'Phụ huynh'),el('th',{},'Khóa học'),el('th',{},'Tiền'),el('th',{},'Trạng thái'),el('th',{},'Máy đã dùng'),el('th',{},'Thao tác')));
     d.orders.forEach(function(o){
       var names=JSON.parse(o.items).map(function(i){return CAT[i]?CAT[i].name:i}).join(', ');
       var ops=el('div',{class:'row'});
       if(o.status!=='paid'&&o.status!=='cancelled'){ops.append(el('button',{class:'p',onclick:function(){if(confirm('Xác nhận đã nhận đủ tiền và cấp key cho '+o.code+'?'))act(o,'approve',{note:'Duyệt tay'},function(r){showKey(r.key);load()})}},'Duyệt tay'));ops.append(el('button',{class:'d',onclick:function(){if(confirm('Hủy đơn '+o.code+'?'))act(o,'cancel',{})}},'Hủy'))}
+      if(o.status==='paid'&&!o.revoked){ops.append(el('button',{class:'d',onclick:function(){var c=prompt('THU HỒI khóa của '+o.name+' ('+o.phone+'), '+names+', '+money(o.amount)+'.\\nGõ lại mã đơn '+o.code+' để xác nhận:');if(c===null)return;if(c.trim().toUpperCase().replace(/^NL-/,'')!==o.code){alert('Mã đơn không khớp, chưa thu hồi.');return}var r=prompt('Lý do thu hồi (hoàn tiền, vi phạm...):','Hoàn tiền');if(r===null)return;act(o,'revoke',{reason:r})}},'Thu hồi'))}
+      if(o.revoked){ops.append(el('button',{class:'p',onclick:function(){if(confirm('Khôi phục khóa của đơn '+o.code+'? Máy khách dùng lại được ở lần mở phần mềm kế tiếp có mạng.'))act(o,'restore',{})}},'Khôi phục'))}
       if(o.status==='paid'){ops.append(el('button',{onclick:function(){act(o,'reissue',{machine:o.machine},function(r){showKey(r.key)})}},'Xem key'));ops.append(el('button',{onclick:function(){var m=prompt('Mã máy mới (XXXX-XXXX-XXXX):');if(m)act(o,'reissue',{machine:m},function(r){showKey(r.key);load()})}},'Đổi máy'))}
-      tb.append(el('tr',{},el('td',{},el('code',{},'NL-'+o.code),el('div',{},new Date(o.created_at).toLocaleString('vi-VN'))),el('td',{},o.name,el('div',{},o.phone)),el('td',{},names),el('td',{},money(o.amount),o.paid_amount&&o.paid_amount!==o.amount?el('div',{},'đã nhận '+money(o.paid_amount)):null),el('td',{},el('span',{class:'st '+o.status},LBL[o.status]||o.status),o.note?el('div',{},o.note):null,o.reissues?el('div',{},'đã đổi máy '+o.reissues+' lần'):null),el('td',{},el('code',{},o.machine)),el('td',{},ops)));
+      tb.append(el('tr',{},el('td',{},el('code',{},'NL-'+o.code),el('div',{},new Date(o.created_at).toLocaleString('vi-VN'))),el('td',{},o.name,el('div',{},o.phone)),el('td',{},names),el('td',{},money(o.amount),o.paid_amount&&o.paid_amount!==o.amount?el('div',{},'đã nhận '+money(o.paid_amount)):null),el('td',{},el('span',{class:'st '+o.status},LBL[o.status]||o.status),o.revoked?el('div',{},el('span',{class:'st rv'},'Đã thu hồi'),el('div',{},(o.revoked.reason||'')+' ('+new Date(o.revoked.at).toLocaleString('vi-VN')+')')):null,o.note?el('div',{},o.note):null,o.reissues?el('div',{},'đã đổi máy '+o.reissues+' lần'):null),el('td',{},devCell(o)),el('td',{},ops)));
     });
     box.append(d.orders.length?tb:el('p',{},'Chưa có đơn.'));
     return api('GET','/api/admin/transactions');
@@ -58,7 +66,7 @@ function load(){
 }
 document.getElementById('go').onclick=load;document.getElementById('rf').onclick=load;document.getElementById('st').onchange=load;
 document.getElementById('q').onkeydown=function(e){if(e.key==='Enter')load()};
-if(T.value)load();
+if(T.value){load();setInterval(function(){if(!document.hidden&&!msg.textContent)load()},30000)}
 })();
 </script></body></html>`;
 

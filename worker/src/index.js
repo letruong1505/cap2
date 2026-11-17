@@ -1,5 +1,5 @@
 import catalog from '../../renderer/catalog.js';
-import { HttpError, createOrder, orderStatus, applyPayment, listOrders, listUnmatched, approveOrder, cancelOrder, reissueOrder, attachTransaction, pinReset } from './orders.js';
+import { HttpError, createOrder, orderStatus, applyPayment, listOrders, listUnmatched, approveOrder, cancelOrder, reissueOrder, attachTransaction, pinReset, revokeOrder, restoreOrder, ping } from './orders.js';
 import { adminPage } from './admin.js';
 
 const json = (data, status = 200) => new Response(JSON.stringify(data), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
@@ -37,6 +37,10 @@ export async function handle(req, env, now = new Date()) {
       return json(await pinReset(db, await body(req), now));
     }
 
+    if (req.method === 'POST' && path === '/api/ping') {
+      return json(await ping(db, await body(req), now));
+    }
+
     // --- SePay gọi vào khi có tiền về ---
     if (req.method === 'POST' && path === '/api/sepay') {
       if (!env.SEPAY_API_KEY || !safeEqual(sepayKey(req), env.SEPAY_API_KEY)) return json({ success: false }, 401);
@@ -51,14 +55,16 @@ export async function handle(req, env, now = new Date()) {
     if (req.method === 'GET' && path === '/admin') return adminPage();
     if (path.startsWith('/api/admin/')) {
       if (!env.ADMIN_TOKEN || !safeEqual(bearer(req), env.ADMIN_TOKEN)) return json({ error: 'Sai mật khẩu quản trị.' }, 401);
-      if (req.method === 'GET' && path === '/api/admin/orders') return json({ orders: await listOrders(db, { status: url.searchParams.get('status') || '', q: url.searchParams.get('q') || '' }), catalog: catalog.byId });
+      if (req.method === 'GET' && path === '/api/admin/orders') return json({ orders: await listOrders(db, { status: url.searchParams.get('status') || '', q: url.searchParams.get('q') || '' }, now), catalog: catalog.byId });
       if (req.method === 'GET' && path === '/api/admin/transactions') return json({ transactions: await listUnmatched(db) });
       m = /^\/api\/admin\/transactions\/(\d+)\/attach$/.exec(path);
       if (req.method === 'POST' && m) { const b = await body(req); return json(await attachTransaction(db, env, catalog, Number(m[1]), b.code, now)); }
-      m = /^\/api\/admin\/orders\/([A-Za-z0-9]{6})\/(approve|cancel|reissue)$/.exec(path);
+      m = /^\/api\/admin\/orders\/([A-Za-z0-9]{6})\/(approve|cancel|reissue|revoke|restore)$/.exec(path);
       if (req.method === 'POST' && m) {
         const b = await body(req);
         if (m[2] === 'approve') return json({ key: await approveOrder(db, env, catalog, m[1], b.note, now) });
+        if (m[2] === 'revoke') { await revokeOrder(db, m[1], b.reason, now); return json({ ok: true }); }
+        if (m[2] === 'restore') { await restoreOrder(db, m[1], now); return json({ ok: true }); }
         if (m[2] === 'cancel') { await cancelOrder(db, m[1], b.note); return json({ ok: true }); }
         return json({ key: await reissueOrder(db, env, catalog, m[1], b.machine, now) });
       }

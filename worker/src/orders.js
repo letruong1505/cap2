@@ -6,6 +6,9 @@ export const MACHINE_RE = /^[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}$/;
 const PHONE_RE = /^(0|\+84)\d{9}$/;
 export const CODE_RE = /(?:^|[^A-Z0-9])NL[\s\-]*([ABCDEFGHJKMNPQRSTUVWXYZ2-9]{6})/;
 
+// Máy được coi là đang online nếu có tín hiệu trong 10 phút (phần mềm gửi mỗi 5 phút khi đang mở).
+export const ONLINE_MS = 10 * 60 * 1000;
+
 export class HttpError extends Error {
   constructor(status, message) { super(message); this.status = status; }
 }
@@ -107,14 +110,20 @@ export async function applyPayment(db, env, catalog, tx, now = new Date()) {
   return finish(paid > order.amount ? 'paid-overpaid' : 'paid', order.code);
 }
 
-export async function listOrders(db, { status, q } = {}) {
+export async function listOrders(db, { status, q } = {}, now = new Date()) {
   let sql = 'SELECT code, name, phone, machine, items, amount, status, paid_amount, paid_at, created_at, reissues, note, CASE WHEN key IS NULL THEN 0 ELSE 1 END AS has_key FROM orders';
   const where = []; const args = [];
   if (status) { args.push(status); where.push('status = ?' + args.length); }
   if (q) { args.push('%' + String(q).slice(0, 40) + '%'); where.push(`(name LIKE ?${args.length} OR phone LIKE ?${args.length} OR code LIKE ?${args.length} OR machine LIKE ?${args.length})`); }
   if (where.length) sql += ' WHERE ' + where.join(' AND ');
   sql += ' ORDER BY created_at DESC LIMIT 200';
-  return (await db.prepare(sql).bind(...args).all()).results;
+  const orders = (await db.prepare(sql).bind(...args).all()).results;
+  // Gắn máy đã mở phần mềm và trạng thái thu hồi (hai truy vấn riêng, tránh giới hạn số tham số của D1).
+  const devs = (await db.prepare('SELECT code, machine, version, first_seen, last_seen FROM devices ORDER BY last_seen DESC LIMIT 3000').all()).results;
+  const revs = (await db.prepare('SELECT code, reason, revoked_at FROM revocations WHERE restored_at IS NULL').all()).results;
+  const byDev = new Map(); for (const d of devs) { if (!byDev.has(d.code)) byDev.set(d.code, []); byDev.get(d.code).push({ machine: d.machine, version: d.version, first_seen: d.first_seen, last_seen: d.last_seen, online: now - new Date(d.last_seen) < ONLINE_MS }); }
+  const byRev = new Map(revs.map((r) => [r.code, { reason: r.reason, at: r.revoked_at }]));
+  return orders.map((o) => ({ ...o, devices: byDev.get(o.code) || [], revoked: byRev.get(o.code) || null }));
 }
 
 export async function listUnmatched(db) {
@@ -181,4 +190,36 @@ export async function pinReset(db, input, now = new Date()) {
   await db.prepare('INSERT INTO pin_attempts (machine, at, ok) VALUES (?1, ?2, ?3)').bind(machine, nowIso(now), ok ? 1 : 0).run();
   if (!ok) throw new HttpError(404, 'Thông tin không khớp với đơn đã mua trên máy này.');
   return { ok: true };
+}
+
+// Thu hồi khóa theo mã đơn. Chỉ đánh dấu; khóa trên máy khách bị vô hiệu ở lần phần mềm gửi tín hiệu kế tiếp. Khôi phục bằng restoreOrder.
+export async function revokeOrder(db, code, reason, now = new Date()) {
+  const o = await getOrder(db, code);
+  if (!o || o.status !== 'paid') throw new HttpError(404, 'Chỉ thu hồi được đơn đã thanh toán.');
+  await db.prepare('INSERT INTO revocations (code, reason, revoked_at, restored_at) VALUES (?1, ?2, ?3, NULL) ON CONFLICT(code) DO UPDATE SET reason = ?2, revoked_at = ?3, restored_at = NULL')
+    .bind(o.code, String(reason || 'Thu hồi').slice(0, 200), nowIso(now)).run();
+}
+
+export async function restoreOrder(db, code, now = new Date()) {
+  const o = await getOrder(db, code);
+  if (!o) throw new HttpError(404, 'Không tìm thấy đơn.');
+  const r = await db.prepare('UPDATE revocations SET restored_at = ?1 WHERE code = ?2 AND restored_at IS NULL').bind(nowIso(now), o.code).run();
+  if (!r.meta.changes) throw new HttpError(409, 'Đơn này không đang bị thu hồi.');
+}
+
+// Phần mềm gửi tín hiệu: ghi nhận máy đang mở phần mềm với các khóa của đơn, trả về những mã đơn đang bị thu hồi.
+export async function ping(db, input, now = new Date()) {
+  const machine = String(input && input.machineId || '').trim().toUpperCase();
+  if (!MACHINE_RE.test(machine)) throw new HttpError(400, 'Mã máy không hợp lệ.');
+  const ids = [...new Set((Array.isArray(input.ids) ? input.ids : []).slice(0, 20).map((x) => String(x).toUpperCase().replace(/^NL-/, '')).filter((x) => /^[A-Z0-9]{6}$/.test(x)))];
+  const version = String(input.version || '').slice(0, 20);
+  const revoked = [];
+  for (const code of ids) {
+    const o = await getOrder(db, code);
+    if (!o || o.status !== 'paid') continue;
+    await db.prepare('INSERT INTO devices (code, machine, version, first_seen, last_seen) VALUES (?1, ?2, ?3, ?4, ?4) ON CONFLICT(code, machine) DO UPDATE SET version = ?3, last_seen = ?4')
+      .bind(o.code, machine, version, nowIso(now)).run();
+    if (await db.prepare('SELECT 1 AS x FROM revocations WHERE code = ?1 AND restored_at IS NULL').bind(o.code).first()) revoked.push(o.code);
+  }
+  return { revoked };
 }

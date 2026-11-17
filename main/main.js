@@ -6,6 +6,7 @@ const lic = require('./license');
 const orders = require('./orders');
 const { createUpdater } = require('./updater');
 const { createStore } = require('./persist');
+const { createHeartbeat } = require('./heartbeat');
 
 const APP_TITLE = productInfo().title;
 
@@ -43,7 +44,12 @@ ipcMain.on('store:all', (event) => { try { event.returnValue = getUserStore().al
 ipcMain.on('store:set', (_event, key, value) => { try { getUserStore().set(key, value); } catch { /* bỏ qua */ } });
 
 ipcMain.handle('license:load', () => licenseNow());
-ipcMain.handle('license:activate', (_event, key) => lic.activate(licenseStoreDir(), key));
+let heartbeat = null;
+ipcMain.handle('license:activate', (_event, key) => {
+  const r = lic.activate(licenseStoreDir(), key);
+  if (heartbeat) heartbeat.beat().catch(() => {}); // báo ngay cho máy chủ biết máy đã kích hoạt
+  return r;
+});
 ipcMain.handle('order:create', (_event, order) => orders.createOrder(order));
 ipcMain.handle('pin:reset', (_event, o) => orders.pinReset(o));
 ipcMain.handle('order:status', (_event, code) => orders.orderStatus(code));
@@ -94,6 +100,8 @@ function createWindow() {
 
 app.whenReady().then(() => {
   createWindow();
+  heartbeat = createHeartbeat({ dir: licenseStoreDir(), client: orders, lic, version: readBuildInfo().version });
+  heartbeat.start();
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow();
   });

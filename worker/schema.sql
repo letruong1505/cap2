@@ -38,3 +38,21 @@ CREATE TABLE IF NOT EXISTS pin_attempts (
   ok INTEGER NOT NULL DEFAULT 0
 );
 CREATE INDEX IF NOT EXISTS idx_pin_attempts ON pin_attempts (machine, at);
+
+-- Thu hồi khóa theo mã đơn. Còn hiệu lực khi restored_at rỗng. Khôi phục chỉ ghi restored_at, không xóa lịch sử.
+CREATE TABLE IF NOT EXISTS revocations (
+  code TEXT PRIMARY KEY,
+  reason TEXT,
+  revoked_at TEXT NOT NULL,
+  restored_at TEXT
+);
+
+-- Máy đã mở phần mềm với khóa của đơn (phần mềm gửi tín hiệu mỗi 5 phút khi đang mở). Dùng để hiển thị đang online / lần mở gần nhất.
+CREATE TABLE IF NOT EXISTS devices (
+  code TEXT NOT NULL,
+  machine TEXT NOT NULL,
+  version TEXT,
+  first_seen TEXT NOT NULL,
+  last_seen TEXT NOT NULL,
+  PRIMARY KEY (code, machine)
+);

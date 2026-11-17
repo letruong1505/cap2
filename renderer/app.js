@@ -545,6 +545,7 @@ function licenseDaysLeft(expiresOn) {
 const LICENSE_MESSAGES = {
   invalid: 'Khoá không hợp lệ. Hãy kiểm tra lại và dán đủ toàn bộ khoá.',
   'wrong-machine': 'Khoá này được cấp cho máy khác.',
+  revoked: 'Khóa này đã bị thu hồi. Liên hệ Zalo 0968 646 853 để được hỗ trợ.',
   expired: 'Khoá đã hết hạn. Liên hệ Nam Linh Educenter để gia hạn.',
   clock: 'Đồng hồ máy bị chỉnh lùi. Hãy chỉnh lại đúng ngày giờ.',
 };
