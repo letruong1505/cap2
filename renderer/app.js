@@ -517,6 +517,8 @@ let GRADES = [];
 const SUBJECT_BASE = { anh: 'Tiếng Anh', toan: 'Toán', ly: 'Vật lí', hoa: 'Hoá học', sinh: 'Sinh học', gdktpl: 'Giáo dục KT&PL', lichsu: 'Lịch sử', diali: 'Địa lí' };
 const GRADE_SUBJECTS = {};
 // Giá bản quyền theo lớp, hiển thị dưới mỗi ô lớp.
+const GIFT_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 7h-2.2A3 3 0 0 0 12 4.6 3 3 0 0 0 6.2 7H4a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1ZM15 5a1 1 0 1 1 0 2h-2.2A2.99 2.99 0 0 1 15 5ZM9 5a1 1 0 0 1 2.2 2H9a1 1 0 0 1 0-2Zm2 15H6v-7h5v7Zm0-9H5V9h6v2Zm2 9v-7h5v7h-5Zm6-9h-6V9h6v2Z"/></svg>';
+function giftBadge() { const b = el('span', { class: 'gift-badge', title: 'Tặng kèm', 'aria-label': 'Tặng kèm' }); b.innerHTML = GIFT_SVG; return b; }
 const GRADE_PRICE = { 6: '399.000 đ', 7: '399.000 đ', 8: '399.000 đ', 9: '399.000 đ', 10: '449.000 đ', 11: '449.000 đ', 12: '499.000 đ' };
 const SUBJECT_LABELS = {};
 function applyProduct(product) {
@@ -641,7 +643,7 @@ function renderGrades() {
     );
     if (g.grade === 9) {
       btn.classList.add('grade-gift');
-      btn.append(el('span', { class: 'gift-badge' }, 'Tặng'), el('span', { class: 'gift-note' }, 'Tặng bộ đề ôn thi chuyển cấp'));
+      btn.append(giftBadge(), el('span', { class: 'gift-note' }, 'Tặng bộ đề ôn thi chuyển cấp'));
     }
     if (g.available) btn.addEventListener('click', () => showSubjects(g.grade));
     else btn.disabled = true;
@@ -735,7 +737,7 @@ function showSubjects(grade) {
     const ex = el('button', { class: 'exam-entry', type: 'button' },
       el('span', { class: 'exam-title' }, 'Ôn thi và luyện đề'),
       el('span', { class: 'exam-sub' }, 'Bộ đề ôn thi chuyển cấp vào lớp 10'),
-      el('span', { class: 'gift-badge' }, 'Tặng'));
+      giftBadge());
     ex.addEventListener('click', () => showExamPrep());
     box.append(ex);
   }

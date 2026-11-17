@@ -17,8 +17,8 @@
       { id: 'ai-nguoi-di-lam-gemini', name: 'AI cho người đi làm · Gemini', note: 'Lớp học trên Gemini', price: 1990000, ai: 'gemini' },
       { id: 'ai-nguoi-di-lam-claude', name: 'AI cho người đi làm · Claude', note: 'Lớp học trên Claude', price: 1990000, ai: 'claude' },
     ] },
-    { group: 'Giáo trình Văn hóa', items: [6, 7, 8, 9, 10, 12].map((g) => ({
-      id: 'van-hoa-' + g, name: 'Giáo trình Văn hóa lớp ' + g, note: g === 12 ? '8 môn học' : g === 10 ? '4 môn học (Toán, Vật lí, Hoá học, Tiếng Anh)' : '7 môn học', price: g === 12 ? 499000 : 399000, grade: g })) },
+    { group: 'Giáo trình Văn hóa', items: [6, 7, 8, 9, 10, 11, 12].map((g) => ({
+      id: 'van-hoa-' + g, name: 'Giáo trình Văn hóa lớp ' + g, note: g >= 10 ? '8 môn học' : '7 môn học', price: g === 12 ? 499000 : g >= 10 ? 449000 : 399000, grade: g })) },
   ];
   const ALL = GROUPS.flatMap((c) => c.items);
   const byId = Object.fromEntries(ALL.map((x) => [x.id, x]));

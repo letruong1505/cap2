@@ -4,13 +4,13 @@
   'use strict';
   const COURSES = [
     { id: 'ai-nguoi-di-lam-chatgpt', ai: 'chatgpt', label: 'ChatGPT', mark: 'GPT', color: '#d9822b',
-      strong: ['Việc nhỏ đa dạng mỗi ngày', 'Tạo ảnh, giọng nói', 'Tự dựng trợ lý riêng'], fit: 'Hợp: bán hàng, truyền thông, quản lý nhỏ', own: [] },
+      strong: ['Việc nhỏ đa dạng mỗi ngày', 'Tạo ảnh, giọng nói', 'Tự dựng trợ lý riêng'], fit: 'Hợp: Bán hàng, truyền thông, quản lý nhỏ', own: [] },
     { id: 'ai-nguoi-di-lam-gemini', ai: 'gemini', label: 'Gemini', mark: 'G', color: '#1f6fb2',
-      strong: ['Gmail, Docs, Sheets, Drive', 'Tìm thông tin, tài liệu lớn', 'Ảnh và video'], fit: 'Hợp: văn phòng, kế toán, hành chính', own: [] },
+      strong: ['Gmail, Docs, Sheets, Drive', 'Tìm thông tin, tài liệu lớn', 'Ảnh và video'], fit: 'Hợp: Văn phòng, kế toán, hành chính', own: [] },
     { id: 'ai-nguoi-di-lam-claude', ai: 'claude', label: 'Claude', mark: 'C', color: '#2a8a4a',
-      strong: ['Viết dài, giọng văn tự nhiên', 'Đọc kỹ tài liệu, hợp đồng', 'Lập trình, làm công cụ'], fit: 'Hợp: giáo viên, tư vấn, kỹ thuật, quản lý',
+      strong: ['Viết dài, giọng văn tự nhiên', 'Đọc kỹ tài liệu, hợp đồng', 'Lập trình, làm công cụ'], fit: 'Hợp: Giáo viên, tư vấn, kỹ thuật, quản lý',
       own: [
-        ['Bài 4', 'Làm xong một việc thật ngay buổi đầu'], ['Bài 5', 'Ra lệnh đúng một lần, sửa cho trúng'], ['Bài 6', 'Giọng văn của bạn và trợ lý riêng'],
+        ['Bài 4', 'Làm xong một việc thật ngay buổi đầu'], ['Bài 5', 'Ra lệnh đúng một lần, sửa cho trúng'], ['Bài 6', 'Giọng văn của Anh/Chị và trợ lý riêng'],
         ['Bài 7', 'Đọc nhanh, nghĩ rõ, quyết nhanh'], ['Bài 8', 'Biến thành sản phẩm và file'], ['Bài 9', 'Ứng dụng theo nghề (Giáo dục · Kinh doanh – truyền thông · Dữ liệu)'],
         ['Bài 10', 'Tự động hóa và nâng cao'], ['Bài 11', 'Tổng kết, dự án cuối và đo năng suất'],
       ] },
@@ -37,7 +37,7 @@
     body.replaceChildren(
       h('button', { class: 'back-link', type: 'button', onclick: () => ctx.onExit() }, '← Chọn lớp'),
       h('header', { class: 'screen-head' }, h('p', { class: 'screen-kicker' }, 'Khóa Kỹ năng'), h('h1', {}, 'AI cho người đi làm'),
-        h('p', { class: 'screen-sub' }, 'Chọn AI bạn muốn học. Mỗi AI là một lớp riêng. 3 bài đầu (phần chung) xem miễn phí, các bài còn lại mở khi mua lớp.')),
+        h('p', { class: 'screen-sub' }, 'Chọn AI Anh/Chị muốn học. Mỗi AI là một lớp riêng. 3 bài đầu (phần chung) xem miễn phí, các bài còn lại mở khi mua lớp.')),
       h('div', { class: 'aiw-cards' }, COURSES.map((c) => {
         const own = owned(ctx.license(), c.id);
         return h('button', { class: 'aiw-card', type: 'button', onclick: () => courseScreen(c) },
@@ -62,16 +62,20 @@
   function courseScreen(c) {
     const own = owned(ctx.license(), c.id);
     const buy = () => {
-      if (window.confirm('Bài này mở khi bạn mua lớp ' + c.label + '. Mở màn hình Mua khóa học?')) ctx.onBuy(c.id);
+      if (window.confirm('Bài này mở khi Anh/Chị mua lớp ' + c.label + '. Mở màn hình Mua khóa học?')) ctx.onBuy(c.id);
     };
     const common = h('ul', { class: 'lesson-list' }, COMMON.map(([no, name, key]) => h('li', {}, row(no, name, 'open', () => lessonScreen(c, key)))));
     const ownList = h('ul', { class: 'lesson-list' });
-    if (c.own.length) for (const [no, name] of c.own) ownList.append(h('li', {}, own ? row(no, name, 'pending') : row(no, name, 'locked', buy)));
+    if (c.own.length) for (const [no, name] of c.own) {
+      const key = 'bai' + no.replace(/\D/g, '');
+      const has = !!(window.AI_WORK_CLAUDE && window.AI_WORK_CLAUDE[key]);
+      ownList.append(h('li', {}, !own ? row(no, name, 'locked', buy) : has ? row(no, name, 'open', () => lessonScreen(c, key)) : row(no, name, 'pending')));
+    }
     else ownList.append(h('li', {}, row('Phần riêng', c.label, 'pending')));
     body.replaceChildren(
       h('button', { class: 'back-link', type: 'button', onclick: listScreen }, '← Chọn AI'),
       h('header', { class: 'screen-head' }, h('p', { class: 'screen-kicker' }, 'AI cho người đi làm'), h('h1', {}, 'Lớp học trên ' + c.label),
-        h('p', { class: 'screen-sub' }, own ? 'Bạn đã mua lớp này. Phần riêng đang được biên soạn, sẽ có trong phần mềm khi hoàn thành.' : 'Phần chung xem miễn phí. Phần riêng mở khi mua lớp (1.990.000 đ).'),
+        h('p', { class: 'screen-sub' }, own ? (c.own.length && window.AI_WORK_CLAUDE ? 'Anh/Chị đã mua lớp này. Mở từng bài bên dưới để học.' : 'Anh/Chị đã mua lớp này. Phần riêng đang được biên soạn, sẽ có trong phần mềm khi hoàn thành.') : 'Phần chung xem miễn phí. Phần riêng mở khi mua lớp (1.990.000 đ).'),
         own ? null : h('button', { class: 'primary', type: 'button', onclick: () => ctx.onBuy(c.id) }, 'Mua lớp ' + c.label)),
       h('section', { class: 'book' }, h('h2', { class: 'book-title' }, 'Phần chung · Ai học cũng có'), common),
       h('section', { class: 'book' }, h('h2', { class: 'book-title' }, 'Phần riêng · Đi sâu vào ' + c.label), ownList));
@@ -79,7 +83,7 @@
   }
 
   function lessonScreen(c, key) {
-    const L = (window.AI_WORK_LESSONS || {})[key];
+    const L = (window.AI_WORK_LESSONS || {})[key] || (owned(ctx.license(), c.id) ? (window.AI_WORK_CLAUDE || {})[key] : null);
     const box = h('article', { class: 'aiw-lesson' });
     if (L) { box.innerHTML = '<h2>' + L.title + '</h2><p class="sub">' + L.sub + '</p>' + L.html; }
     else box.append(h('p', {}, 'Bài này đang được biên soạn.'));

@@ -776,7 +776,8 @@ button.ghost:hover { background: var(--paper); }
 @media (max-width: 700px) { .cal { grid-template-columns: repeat(2, 1fr); } .cal-h, .cal-pad { display: none; } }
 
 .grade-tile.grade-gift { position: relative; border: 2px solid #e8b94a; background: #fff6d6; }
-.gift-badge { background: #8a5a00; color: #fff; font-size: 11px; font-weight: 700; border-radius: 10px; padding: 2px 9px; }
+.gift-badge { background: #8a5a00; color: #fff; border-radius: 50%; width: 26px; height: 26px; display: inline-flex; align-items: center; justify-content: center; }
+.gift-badge svg { width: 16px; height: 16px; }
 .grade-gift .gift-badge { position: absolute; top: -10px; right: 10px; }
 .gift-note { margin-top: 6px; padding-top: 6px; border-top: 1px dashed #e8b94a; font-size: 12px; font-weight: 700; color: #8a5a00; }
 .exam-entry { grid-column: 1 / -1; display: flex; align-items: center; gap: 14px; text-align: left; padding: 16px 18px; border: 2px solid #e8b94a; border-radius: 14px; background: #fff6d6; cursor: pointer; font: inherit; }
@@ -785,3 +786,5 @@ button.ghost:hover { background: var(--paper); }
 .exam-sub { flex: 1; font-size: 13.5px; color: #5b6773; }
 #examprep .subject-btn { flex-direction: column; gap: 4px; }
 #examprep .subject-btn small { margin-top: 0; text-align: center; }
+.aiw-lesson pre.prompt { white-space: pre-wrap; background: #f3f6fa; border: 1px dashed #9db4cc; border-left: 4px solid #1f6fb2; border-radius: 8px; padding: 10px 14px; margin: 10px 0; font: 14px/1.55 inherit; font-family: inherit; user-select: text; }
+.aiw-lesson h3 { color: #17406b; margin: 20px 0 6px; }
