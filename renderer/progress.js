@@ -62,13 +62,16 @@
     if (data.attempts.length > MAX_ATTEMPTS) data.attempts.splice(0, data.attempts.length - MAX_ATTEMPTS);
 
     const key = (it) => meta.lessonId + '#' + it.id;
+    // Đáp án em đã nhập hoặc chọn ở lần làm sai gần nhất (null nếu bỏ trống).
+    const given = meta.given || {};
+    const givenOf = (it) => (given[it.id] === undefined || given[it.id] === null || given[it.id] === '' ? null : String(given[it.id]));
     (wrong || []).forEach((it) => {
       const k = key(it);
       const found = data.notebook.find((n) => n.key === k);
-      if (found) { found.box = 0; found.due = now + DAY; found.misses = (found.misses || 1) + 1; found.item = slimItem(it); }
+      if (found) { found.box = 0; found.due = now + DAY; found.misses = (found.misses || 1) + 1; found.item = slimItem(it); found.given = givenOf(it); }
       else data.notebook.push({
         key: k, subject: meta.subject, grade: meta.grade, lessonId: meta.lessonId, lesson: meta.lesson,
-        chapter: meta.chapter || '', box: 0, due: now + DAY, misses: 1, added: now, item: slimItem(it),
+        chapter: meta.chapter || '', box: 0, due: now + DAY, misses: 1, added: now, item: slimItem(it), given: givenOf(it),
       });
     });
     (right || []).forEach((it) => {

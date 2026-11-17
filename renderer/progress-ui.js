@@ -24,6 +24,7 @@
     });
     const data = P.load(store());
     P.recordAttempt(data, Object.assign({}, meta, {
+      given: Object.assign({}, attempt.answers),
       correct: right.length, total: right.length + wrong.length,
       seconds: (Date.now() - (attempt.started || Date.now())) / 1000,
     }), wrong, right);
@@ -88,9 +89,15 @@
         if (it.type === 'mcq') {
           it.choices.forEach((c, i) => {
             const ok = i === it.answer;
-            q.append(h('div', { class: ok ? 'choice-correct' : 'choice-plain' }, (ok ? '✓ ' : '• ') + c));
+            const mine = !ok && n.given === c;
+            q.append(h('div', { class: ok ? 'choice-correct' : mine ? 'choice-wrong' : 'choice-plain' },
+              (ok ? '✓ ' : mine ? '✗ Em đã chọn: ' : '• ') + c));
           });
+          if (n.given === null) q.append(h('div', { class: 'choice-wrong' }, 'Em chưa chọn đáp án nào.'));
         } else {
+          if (Object.prototype.hasOwnProperty.call(n, 'given')) {
+            q.append(h('div', { class: 'choice-wrong' }, n.given === null ? 'Em chưa trả lời.' : '✗ Em trả lời: ' + n.given));
+          }
           q.append(h('div', { class: 'choice-correct' }, '✓ Đáp án đúng: ' + viNumber(it.answer)));
         }
         q.append(h('div', { class: 'feedback ok' }, 'Lời giải: ' + it.explain));

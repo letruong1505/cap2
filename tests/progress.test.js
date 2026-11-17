@@ -111,3 +111,17 @@ test('mục tiêu: tiến độ ngày/tuần, điểm ôn sổ, lọc lớp, gi�
   assert.deepEqual(d.goals, { daily: 200, weekly: 1 });
   assert.equal(P.weekly(d, T0 + 2 * DAY).prog.weekPts, 185);
 });
+
+test('lưu đáp án em đã nhập khi làm sai, null nếu bỏ trống, cập nhật ở lần sai sau', () => {
+  const m = Object.assign(meta(), { given: { q1: '1500', q2: null } });
+  const d = P.recordAttempt({ attempts: [], notebook: [] }, m, [item('q1'), item('q2')], [], T0);
+  assert.equal(d.notebook.find((n) => n.key.endsWith('#q1')).given, '1500');
+  assert.equal(d.notebook.find((n) => n.key.endsWith('#q2')).given, null);
+  P.recordAttempt(d, Object.assign(meta(), { given: { q1: '150' } }), [item('q1')], [], T0 + 1000);
+  assert.equal(d.notebook.find((n) => n.key.endsWith('#q1')).given, '150');
+});
+
+test('không truyền given thì vẫn ghi được, given là null', () => {
+  const d = P.recordAttempt({ attempts: [], notebook: [] }, meta(), [item('q1')], [], T0);
+  assert.equal(d.notebook[0].given, null);
+});
