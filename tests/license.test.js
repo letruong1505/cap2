@@ -66,3 +66,36 @@ test('kích hoạt thật bằng khoá công khai trong repo', () => {
   assert.equal(lic.currentLicense(dir).status, 'missing');
   assert.match(getMachineId(), /^[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}$/);
 });
+
+test('kích hoạt hai khoá khác đơn thì gộp lớp Văn hóa và khóa Kỹ năng', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'lic-'));
+  const van = issue({ id: 'NL-A', grades: [6, 7, 8, 9, 10, 11, 12], courses: [], expires: 'never' });
+  const kn = issue({ id: 'NL-B', grades: [], courses: ['gia-su-ai', 'ai-nguoi-di-lam-claude'], expires: 'never' });
+  assert.equal(lic.activate(dir, van, NOW, publicKey).status, 'ok');
+  const r = lic.activate(dir, kn, NOW, publicKey);
+  assert.equal(r.status, 'ok');
+  assert.deepEqual(r.grades, [6, 7, 8, 9, 10, 11, 12]);
+  assert.deepEqual(r.courses, ['gia-su-ai', 'ai-nguoi-di-lam-claude']);
+  assert.equal(lic.currentLicense(dir, NOW, publicKey).courses.length, 2);
+  // Kích hoạt lại cùng khoá thì không nhân đôi
+  lic.activate(dir, kn, NOW, publicKey);
+  assert.equal(JSON.parse(fs.readFileSync(path.join(dir, 'license.json'), 'utf8')).keys.length, 2);
+});
+
+test('khoá cấp lại cùng mã đơn thay khoá cũ; khoá hết hạn không làm mất khoá còn hạn', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'lic-'));
+  lic.activate(dir, issue({ id: 'NL-C', grades: [7], expires: 'never' }), NOW, publicKey);
+  lic.activate(dir, issue({ id: 'NL-C', grades: [7, 8], expires: 'never' }), NOW, publicKey);
+  assert.deepEqual(lic.currentLicense(dir, NOW, publicKey).grades, [7, 8]);
+  lic.activate(dir, issue({ id: 'NL-D', grades: [9], expires: '2026-12-01' }), NOW, publicKey);
+  const later = new Date(2027, 0, 1);
+  const r = lic.currentLicense(dir, later, publicKey);
+  assert.equal(r.status, 'ok');
+  assert.deepEqual(r.grades, [7, 8]);
+});
+
+test('bản cũ lưu một khoá (key) vẫn đọc được', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'lic-'));
+  fs.writeFileSync(path.join(dir, 'license.json'), JSON.stringify({ key: issue({ id: 'NL-E', grades: [6], expires: 'never' }), lastSeen: '' }));
+  assert.deepEqual(lic.currentLicense(dir, NOW, publicKey).grades, [6]);
+});

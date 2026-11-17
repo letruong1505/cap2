@@ -7,9 +7,11 @@ const file = (dir) => path.join(dir, 'license.json');
 function readStore(dir) {
   try {
     const d = JSON.parse(fs.readFileSync(file(dir), 'utf8'));
-    return { key: typeof d.key === 'string' ? d.key : '', lastSeen: typeof d.lastSeen === 'string' ? d.lastSeen : '' };
+    // Bản cũ chỉ lưu một khoá (key); bản mới lưu nhiều khoá (keys) để gộp khoá Văn hóa và khoá Kỹ năng mua ở các đơn khác nhau.
+    const keys = Array.isArray(d.keys) ? d.keys.filter((k) => typeof k === 'string' && k) : (typeof d.key === 'string' && d.key ? [d.key] : []);
+    return { keys, lastSeen: typeof d.lastSeen === 'string' ? d.lastSeen : '' };
   } catch {
-    return { key: '', lastSeen: '' };
+    return { keys: [], lastSeen: '' };
   }
 }
 
