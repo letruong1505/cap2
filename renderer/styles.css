@@ -774,3 +774,14 @@ button.ghost:hover { background: var(--paper); }
 .cal-d b { font-size: 13px; }
 .cal-d .q-wrap { margin: 2px 0; } .cal-d .q-bar { height: 8px; }
 @media (max-width: 700px) { .cal { grid-template-columns: repeat(2, 1fr); } .cal-h, .cal-pad { display: none; } }
+
+.grade-tile.grade-gift { position: relative; border: 2px solid #e8b94a; background: #fff6d6; }
+.gift-badge { background: #8a5a00; color: #fff; font-size: 11px; font-weight: 700; border-radius: 10px; padding: 2px 9px; }
+.grade-gift .gift-badge { position: absolute; top: -10px; right: 10px; }
+.gift-note { margin-top: 6px; padding-top: 6px; border-top: 1px dashed #e8b94a; font-size: 12px; font-weight: 700; color: #8a5a00; }
+.exam-entry { grid-column: 1 / -1; display: flex; align-items: center; gap: 14px; text-align: left; padding: 16px 18px; border: 2px solid #e8b94a; border-radius: 14px; background: #fff6d6; cursor: pointer; font: inherit; }
+.exam-entry:hover { background: #ffefb8; }
+.exam-title { font-weight: 800; font-size: 17px; color: #17324a; }
+.exam-sub { flex: 1; font-size: 13.5px; color: #5b6773; }
+#examprep .subject-btn { flex-direction: column; gap: 4px; }
+#examprep .subject-btn small { margin-top: 0; text-align: center; }

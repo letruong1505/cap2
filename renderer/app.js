@@ -311,7 +311,7 @@ function updateScore(lesson, attempt) {
 }
 
 function showOnly(id) {
-  for (const sec of ['launch', 'subjects', 'home', 'lesson', 'games', 'game', 'national', 'aiwork', 'purchase', 'review', 'report', 'empty']) {
+  for (const sec of ['launch', 'subjects', 'home', 'lesson', 'games', 'game', 'national', 'aiwork', 'examprep', 'purchase', 'review', 'report', 'empty']) {
     document.getElementById(sec).hidden = sec !== id;
   }
 }
@@ -639,6 +639,10 @@ function renderGrades() {
       el('span', { class: 'grade-num' }, String(g.grade)),
       el('span', { class: 'grade-note' }, `${g.available ? `${(GRADE_SUBJECTS[g.grade] || []).length} môn học` : 'Đang biên soạn'} · ${GRADE_PRICE[g.grade] || ''}`),
     );
+    if (g.grade === 9) {
+      btn.classList.add('grade-gift');
+      btn.append(el('span', { class: 'gift-badge' }, 'Tặng'), el('span', { class: 'gift-note' }, 'Tặng bộ đề ôn thi chuyển cấp'));
+    }
     if (g.available) btn.addEventListener('click', () => showSubjects(g.grade));
     else btn.disabled = true;
     box.append(btn);
@@ -651,6 +655,31 @@ function renderGrades() {
     el('span', { class: 'grade-note' }, 'Đang biên soạn · 555.000 đ'),
   );
   box.append(thpt);
+}
+
+// Ôn thi và luyện đề (tặng kèm Lớp 9): chọn môn rồi làm đề thử vào lớp 10. Đề đang được biên soạn.
+const EXAM_PREP_GRADE = 9;
+const EXAM_PREP = [
+  { name: 'Toán', note: 'Đang biên soạn' },
+  { name: 'Ngữ văn', note: 'Đang biên soạn' },
+  { name: 'Tiếng Anh', note: 'Đang biên soạn' },
+  { name: 'Đề tổng hợp', note: 'Giống đề thi thật · đang biên soạn' },
+];
+function showExamPrep() {
+  const box = document.getElementById('examprep-body');
+  box.replaceChildren(
+    el('button', { class: 'back-link', type: 'button' }, '← Chọn môn học'),
+    el('header', { class: 'screen-head' },
+      el('p', { class: 'screen-kicker' }, `Lớp ${EXAM_PREP_GRADE} · Tặng kèm`),
+      el('h1', {}, 'Ôn thi và luyện đề'),
+      el('p', { class: 'screen-sub' }, 'Bộ đề ôn thi chuyển cấp vào lớp 10. Chọn môn rồi làm đề; điểm và câu sai được lưu vào Sổ câu sai như các bài khác. Các đề đang được biên soạn và sẽ có trong phần mềm khi hoàn thành.')),
+    el('div', { class: 'grades' }, ...EXAM_PREP.map((x) => {
+      const b = el('button', { class: 'grade subject-btn', type: 'button', disabled: true }, x.name, el('small', {}, x.note));
+      return b;
+    })));
+  box.querySelector('.back-link').addEventListener('click', () => showSubjects(EXAM_PREP_GRADE));
+  showOnly('examprep');
+  window.scrollTo(0, 0);
 }
 
 function showPurchase(preselect) {
@@ -701,6 +730,14 @@ function showSubjects(grade) {
     const btn = el('button', { class: 'grade subject-btn', type: 'button' }, SUBJECT_LABELS[subject]);
     btn.addEventListener('click', () => renderHome(manifestCache[subject], subject));
     box.append(btn);
+  }
+  if (grade === EXAM_PREP_GRADE) {
+    const ex = el('button', { class: 'exam-entry', type: 'button' },
+      el('span', { class: 'exam-title' }, 'Ôn thi và luyện đề'),
+      el('span', { class: 'exam-sub' }, 'Bộ đề ôn thi chuyển cấp vào lớp 10'),
+      el('span', { class: 'gift-badge' }, 'Tặng'));
+    ex.addEventListener('click', () => showExamPrep());
+    box.append(ex);
   }
   showOnly('subjects');
 }
