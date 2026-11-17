@@ -67,11 +67,10 @@
               <span class="price-name">Ranh giới số <span class="price-detail">(Học sinh THPT &amp; tân sinh viên)</span></span>
               <span class="price-value">1.490.000 đ</span>
             </div>
-            <div class="price-option">
-              <span class="price-name">AI cho người đi làm</span>
-              <span class="price-detail">Chọn ChatGPT, Gemini hoặc Claude. Giá mỗi lớp AI.</span>
-              <span class="price-value">1.990.000 đ</span>
-            </div>
+            <button type="button" class="price-option free" id="open-aiwork">
+              <span class="price-name">AI cho người đi làm <span class="price-detail">(Chọn ChatGPT, Gemini hoặc Claude)</span></span>
+              <span class="price-value">1.990.000 đ <span class="view-arrow" aria-hidden="true">→</span></span>
+            </button>
             <div class="price-option">
               <span class="price-name">Tư duy &amp; lập trình <span class="edu-soon">sắp ra mắt</span></span>
               <span class="price-detail">Xây dựng tư duy cho kỷ nguyên mới.</span>
@@ -159,6 +158,10 @@
       <div id="purchase-body"></div>
     </section>
 
+    <section id="aiwork" class="panel" hidden>
+      <div id="aiwork-body"></div>
+    </section>
+
     <section id="national" class="panel" hidden>
       <button id="btn-national-back" class="back-link nat-noprint" type="button">← Chọn lớp</button>
       <div id="national-body"></div>
@@ -228,6 +231,8 @@
   <script src="terms.js"></script>
   <script src="catalog.js"></script>
   <script src="purchase.js"></script>
+  <script src="ai-work-content.js"></script>
+  <script src="ai-work.js"></script>
   <script src="national-data.js"></script>
   <script src="national.js"></script>
   <script src="app.js"></script>

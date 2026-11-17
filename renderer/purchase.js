@@ -174,67 +174,6 @@
     }
   }
 
-  // Khóa "AI cho người đi làm": chọn AI muốn học, xem AI đó mạnh việc gì và nội dung khóa trước khi mua.
-  const AI_INFO = {
-    chatgpt: { label: 'ChatGPT', mark: 'GPT', color: '#d9822b',
-      strong: ['Việc nhỏ đa dạng mỗi ngày', 'Tạo ảnh, giọng nói', 'Tự dựng trợ lý riêng'], can: ['Soạn bài đăng, kịch bản', 'Poster, ảnh quảng cáo'], fit: 'Hợp: bán hàng, truyền thông, quản lý nhỏ' },
-    gemini: { label: 'Gemini', mark: 'G', color: '#1f6fb2',
-      strong: ['Gmail, Docs, Sheets, Drive', 'Tìm thông tin, tài liệu lớn', 'Ảnh và video'], can: ['Tóm tắt thư, họp, báo cáo', 'Bảng tính tự động'], fit: 'Hợp: văn phòng, kế toán, hành chính' },
-    claude: { label: 'Claude', mark: 'C', color: '#2a8a4a',
-      strong: ['Viết dài, giọng văn tự nhiên', 'Đọc kỹ tài liệu, hợp đồng', 'Lập trình, làm công cụ'], can: ['Văn bản, email, trả lời khách', 'Công cụ và tự động hóa'], fit: 'Hợp: giáo viên, tư vấn, kỹ thuật, quản lý' },
-  };
-  const AI_COMMON = [
-    ['Bài 1 · An toàn', 'Dữ liệu công ty và khách hàng không được đưa cho AI; nhận biết lừa đảo, giọng nói và video giả; quy tắc đèn giao thông cho thông tin.'],
-    ['Bài 2 · Trách nhiệm', 'Bản quyền, minh bạch khi dùng AI trong công việc, quyết định cuối cùng thuộc về người, không giao AI việc nhạy cảm.'],
-    ['Bài 3 · Kiểm chứng', 'Vì sao AI bịa; kiểm số liệu, nguồn và trích dẫn; quy tắc ít nhất một nguồn không phải AI trước khi gửi cho khách hay cấp trên.'],
-  ];
-  const AI_OWN = {
-    claude: [
-      ['Bài 4 · Làm quen và đặt câu lệnh trên Claude', 'Giao diện, cách hỏi rõ vai trò, bối cảnh, định dạng; lưu câu lệnh dùng lại.'],
-      ['Bài 5 · Viết và sửa văn bản dài', 'Email, báo cáo, phản hồi khách hàng và phụ huynh giữ đúng giọng văn của bạn.'],
-      ['Bài 6 · Đọc và phân tích tài liệu', 'Tóm tắt hợp đồng, báo cáo dài; tìm điểm cần chú ý; hỏi ngược lại tài liệu.'],
-      ['Bài 7 · Làm công cụ và tự động hóa', 'Viết bảng tính, biểu mẫu, ứng dụng nhỏ cho công việc của bạn.'],
-      ['Bài 8 · Dự án cuối', 'Mang một việc thật của bạn, làm trọn bằng AI và tự kiểm chứng.'],
-    ],
-  };
-
-  function aiGroup(c) {
-    const panel = h('div', { class: 'ai-panel' });
-    let shown = (c.items.find((x) => st.picks.has(x.id)) || c.items[2]).ai;
-    const cards = {};
-    function renderPanel() {
-      const info = AI_INFO[shown];
-      const own = AI_OWN[shown];
-      panel.replaceChildren(
-        h('div', { class: 'ai-cols' },
-          h('div', { class: 'ai-col' }, h('div', { class: 'ai-colhead' }, h('span', { class: 'ai-pill' }, 'PHẦN CHUNG'), 'Ai học cũng có · 3 bài'),
-            AI_COMMON.map(([t, d]) => h('div', { class: 'ai-lesson' }, h('b', {}, t), h('span', {}, d)))),
-          h('div', { class: 'ai-col' }, h('div', { class: 'ai-colhead' }, h('span', { class: 'ai-pill own' }, 'PHẦN RIÊNG'), 'Đi sâu vào ' + info.label + (own ? ' · ' + own.length + ' bài' : '')),
-            own ? own.map(([t, d]) => h('div', { class: 'ai-lesson soon' }, h('b', {}, t, h('em', {}, 'Đang biên soạn')), h('span', {}, d)))
-              : h('div', { class: 'ai-lesson soon' }, h('b', {}, 'Phần riêng ' + info.label, h('em', {}, 'Đang biên soạn')), h('span', {}, 'Nội dung đi sâu vào ' + info.label + ' đang được biên soạn và sẽ có trong phần mềm khi hoàn thành.')))));
-      for (const [k, el] of Object.entries(cards)) el.classList.toggle('viewing', k === shown);
-    }
-    const items = c.items.map((x) => {
-      const info = AI_INFO[x.ai];
-      const cb = h('input', { type: 'checkbox', checked: st.picks.has(x.id), 'aria-label': 'Chọn lớp học trên ' + info.label });
-      cb.addEventListener('change', () => { cb.checked ? st.picks.add(x.id) : st.picks.delete(x.id); shown = x.ai; renderPanel(); renderSummary(); });
-      const card = h('label', { class: 'ai-card' }, cb,
-        h('span', { class: 'ai-logo', style: 'background:' + info.color }, info.mark),
-        h('span', { class: 'ai-name' }, info.label),
-        h('span', { class: 'ai-k' }, 'MẠNH NHẤT Ở'), h('ul', {}, info.strong.map((t) => h('li', {}, t))),
-        h('span', { class: 'ai-k' }, 'BẠN SẼ LÀM ĐƯỢC'), h('ul', {}, info.can.map((t) => h('li', {}, t))),
-        h('span', { class: 'ai-fit' }, info.fit),
-        h('span', { class: 'ai-price' }, money(x.price)));
-      card.addEventListener('mouseenter', () => { shown = x.ai; renderPanel(); });
-      cards[x.ai] = card;
-      return card;
-    });
-    renderPanel();
-    return h('fieldset', { class: 'buy-group ai-group' }, h('legend', {}, 'Khóa AI cho người đi làm'),
-      h('p', { class: 'muted' }, 'Mỗi lựa chọn là một lớp học riêng, học trên đúng công cụ đó. Có thể mua thêm lớp khác sau. Giá 1.990.000 đ mỗi lớp.'),
-      h('div', { class: 'ai-cards' }, items), panel);
-  }
-
   function build() {
     const T = window.NL_TERMS;
     const name = h('input', { type: 'text', id: 'buy-name', autocomplete: 'off', placeholder: 'Nguyễn Văn A', maxlength: '60' });
@@ -243,7 +182,7 @@
     phone.addEventListener('input', () => { st.phone = phone.value; renderSummary(); });
     name.value = st.name; phone.value = st.phone;
 
-    const groups = CATALOG.map((c) => c.ai ? aiGroup(c) : h('fieldset', { class: 'buy-group' }, h('legend', {}, c.group),
+    const groups = CATALOG.map((c) => h('fieldset', { class: 'buy-group' }, h('legend', {}, c.group),
       c.items.map((x) => {
         const cb = h('input', { type: 'checkbox', checked: st.picks.has(x.id) });
         cb.addEventListener('change', () => { cb.checked ? st.picks.add(x.id) : st.picks.delete(x.id); renderSummary(); });
@@ -309,6 +248,7 @@
   window.Purchase = {
     open(c) {
       ctx = c || ctx;
+      if (ctx.preselect && window.NL_CATALOG.byId[ctx.preselect]) st.picks.add(ctx.preselect);
       root = document.getElementById('purchase-body');
       stopPoll();
       build();

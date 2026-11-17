@@ -311,7 +311,7 @@ function updateScore(lesson, attempt) {
 }
 
 function showOnly(id) {
-  for (const sec of ['launch', 'subjects', 'home', 'lesson', 'games', 'game', 'national', 'purchase', 'review', 'report', 'empty']) {
+  for (const sec of ['launch', 'subjects', 'home', 'lesson', 'games', 'game', 'national', 'aiwork', 'purchase', 'review', 'report', 'empty']) {
     document.getElementById(sec).hidden = sec !== id;
   }
 }
@@ -653,10 +653,20 @@ function renderGrades() {
   box.append(thpt);
 }
 
-function showPurchase() {
+function showPurchase(preselect) {
   document.getElementById('breadcrumb').textContent = '';
-  window.Purchase.open({ machineId: (lastLicense && lastLicense.machineId) || '', onActivated: () => refreshLicense() });
+  window.Purchase.open({ machineId: (lastLicense && lastLicense.machineId) || '', onActivated: () => refreshLicense(), preselect });
   showOnly('purchase');
+}
+
+function showAiWork() {
+  document.getElementById('breadcrumb').textContent = '';
+  window.AiWork.open({
+    license: () => lastLicense,
+    onBuy: (id) => { showPurchase(id); },
+    onExit: () => showLaunch(),
+  });
+  showOnly('aiwork');
 }
 
 function showNational() {
@@ -769,6 +779,7 @@ async function init() {
     document.getElementById('btn-grades').addEventListener('click', () => showLaunch());
     document.getElementById('btn-national-back').addEventListener('click', () => showLaunch());
     document.getElementById('open-national').addEventListener('click', () => showNational());
+    document.getElementById('open-aiwork').addEventListener('click', () => showAiWork());
     const openProg = async (kind, grade) => {
       const ui = window.VungProgressUI;
       if (kind === 'report' && window.VungPinUI && !(await window.VungPinUI.ensureUnlocked())) return;

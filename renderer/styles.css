@@ -731,25 +731,29 @@ button.ghost:hover { background: var(--paper); }
 .update-head { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
 .update-notes { margin: 0; padding-left: 20px; max-height: 40vh; overflow: auto; font-size: 13px; color: #dbe8f5; line-height: 1.5; }
 
-.ai-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; }
-.ai-card { position: relative; display: flex; flex-direction: column; gap: 4px; padding: 12px 14px; border: 2px solid #dfe5ec; border-radius: 12px; background: #fff; cursor: pointer; font-size: 13.5px; }
-.ai-card:has(input:checked) { border-color: #2a8a4a; background: #f3fbf5; }
-.ai-card.viewing { box-shadow: 0 0 0 2px #bcd9f1; }
-.ai-card input { position: absolute; right: 10px; top: 10px; width: 20px; height: 20px; }
 .ai-logo { width: 38px; height: 38px; border-radius: 10px; color: #fff; font-weight: 800; display: flex; align-items: center; justify-content: center; }
-.ai-name { font-weight: 800; font-size: 18px; }
+.ai-name { font-weight: 800; font-size: 20px; }
 .ai-k { font-size: 11px; font-weight: 700; letter-spacing: .04em; color: #5b6773; margin-top: 4px; }
-.ai-card ul { margin: 0; padding-left: 18px; }
 .ai-fit { background: #e5f5ea; color: #1f6a39; font-weight: 700; font-size: 12.5px; border-radius: 6px; padding: 5px 8px; margin-top: 6px; }
-.ai-price { font-weight: 800; margin-top: 4px; }
-.ai-panel { margin-top: 12px; }
-.ai-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-@media (max-width: 760px) { .ai-cols { grid-template-columns: 1fr; } }
-.ai-col { background: #fff; border: 1px solid #dfe5ec; border-radius: 12px; padding: 12px; }
-.ai-colhead { font-weight: 800; margin-bottom: 8px; }
-.ai-pill { display: inline-block; background: #17406b; color: #fff; border-radius: 12px; padding: 2px 9px; font-size: 11px; margin-right: 8px; }
-.ai-pill.own { background: #2a8a4a; }
-.ai-lesson { background: #f2f6fb; border-radius: 8px; padding: 8px 10px; margin: 6px 0; display: flex; flex-direction: column; gap: 2px; font-size: 13.5px; }
-.ai-lesson b { color: #17406b; }
-.ai-lesson.soon { background: #fdf0e1; }
-.ai-lesson em { font-style: normal; font-size: 11px; font-weight: 700; color: #a85f12; background: #fff; border-radius: 10px; padding: 1px 8px; margin-left: 8px; }
+.aiw-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; margin-top: 14px; }
+.aiw-card { position: relative; display: flex; flex-direction: column; gap: 4px; text-align: left; padding: 16px; border: 2px solid #dfe5ec; border-radius: 14px; background: #fff; cursor: pointer; font: inherit; font-size: 14px; }
+.aiw-card:hover { border-color: #1f6fb2; }
+.aiw-card ul { margin: 0; padding-left: 18px; }
+.aiw-own { position: absolute; right: 12px; top: 12px; background: #2a8a4a; color: #fff; font-size: 12px; font-weight: 700; border-radius: 10px; padding: 2px 10px; }
+.aiw-go { margin-top: 8px; font-weight: 700; color: #1f6fb2; }
+.aiw-lesson { background: #fff; border: 1px solid #dfe5ec; border-radius: 14px; padding: 18px 20px; max-width: 900px; }
+.aiw-lesson h2 { margin: 0 0 4px; color: #17406b; }
+.aiw-lesson .sub { color: #5b6773; margin: 0 0 14px; }
+.aiw-lesson .meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin: 12px 0; }
+.aiw-lesson .meta div { background: #f6f8fb; border: 1px solid #dfe5ec; border-radius: 10px; padding: 10px 12px; font-size: 14px; }
+.aiw-lesson .meta b { display: block; color: #1f6fb2; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+.aiw-lesson .card { border: 1px solid #dfe5ec; border-radius: 12px; padding: 14px 16px; margin: 14px 0; }
+.aiw-lesson .goal { background: #e6f1fb; } .aiw-lesson .ok { background: #e5f5ea; } .aiw-lesson .warn { background: #fdf0e1; } .aiw-lesson .think { background: #fff6d6; }
+.aiw-lesson .lbl { font-weight: 700; font-size: 13px; text-transform: uppercase; margin-bottom: 4px; }
+.aiw-lesson table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 15px; }
+.aiw-lesson th, .aiw-lesson td { border: 1px solid #dfe5ec; padding: 8px 10px; text-align: left; vertical-align: top; }
+.aiw-lesson th { background: #eef3f8; } .aiw-lesson td.g { background: #e5f5ea; } .aiw-lesson td.y { background: #fff6d6; } .aiw-lesson td.r { background: #fbe9e7; }
+.aiw-lesson .steps { counter-reset: s; list-style: none; padding: 0; }
+.aiw-lesson .steps > li { counter-increment: s; position: relative; padding: 10px 12px 10px 52px; margin: 10px 0; background: #f6f8fb; border: 1px solid #dfe5ec; border-radius: 10px; }
+.aiw-lesson .steps > li:before { content: counter(s); position: absolute; left: 12px; top: 10px; width: 28px; height: 28px; border-radius: 50%; background: #1f6fb2; color: #fff; font-weight: 700; text-align: center; line-height: 28px; }
+.aiw-lesson .age { border-left: 4px solid #d9822b; padding: 6px 12px; background: #fdf0e1; margin: 10px 0; font-size: 14px; }
