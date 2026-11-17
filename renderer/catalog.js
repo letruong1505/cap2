@@ -7,10 +7,10 @@
   const GROUPS = [
     { group: 'Khóa Kỹ năng', items: [
       { id: 'gia-su-ai', name: 'Gia sư AI', note: 'Học sinh từ 12 tuổi trở lên', price: 999000, was: 1600000 },
-      { id: 'he-mien-dich-so', name: 'Hệ miễn dịch số', note: 'Học sinh 8 - 11 tuổi', price: 2090000 },
-      { id: 'lam-chu-the-gioi-so', name: 'Làm chủ thế giới số', note: 'Học sinh 12 - 15 tuổi', price: 2590000 },
-      { id: 'cong-dan-so', name: 'Công dân số', note: 'Học sinh 16 - 18 tuổi', price: 2990000 },
-      { id: 'ranh-gioi-so', name: 'Ranh giới số', note: 'Học sinh THPT & tân sinh viên', price: 1590000 },
+      { id: 'he-mien-dich-so', name: 'Hệ miễn dịch số', note: 'Học sinh 8 - 11 tuổi', price: 990000 },
+      { id: 'lam-chu-the-gioi-so', name: 'Làm chủ thế giới số', note: 'Học sinh 12 - 15 tuổi', price: 1490000 },
+      { id: 'cong-dan-so', name: 'Công dân số', note: 'Học sinh 16 - 18 tuổi', price: 1990000 },
+      { id: 'ranh-gioi-so', name: 'Ranh giới số', note: 'Học sinh THPT & tân sinh viên', price: 1490000 },
     ] },
     { group: 'Giáo trình Văn hóa', items: [6, 7, 8, 9, 10, 12].map((g) => ({
       id: 'van-hoa-' + g, name: 'Giáo trình Văn hóa lớp ' + g, note: g === 12 ? '8 môn học' : g === 10 ? '4 môn học (Toán, Vật lí, Hoá học, Tiếng Anh)' : '7 môn học', price: g === 12 ? 499000 : 399000, grade: g })) },
