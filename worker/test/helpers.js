@@ -12,7 +12,9 @@ export function fakeD1() {
     run: async () => { const r = sql.prepare(q).run(...args); return { meta: { changes: Number(r.changes) } }; },
     all: async () => ({ results: sql.prepare(q).all(...args) }),
   });
-  return { prepare: (q) => wrap(q), raw: sql };
+  // D1 chạy các câu lệnh trong batch như một giao dịch; bản giả lập chỉ chạy lần lượt.
+  const batch = async (stmts) => { const out = []; for (const s of stmts) out.push(await s.run()); return out; };
+  return { prepare: (q) => wrap(q), batch, raw: sql };
 }
 
 export function testEnv() {

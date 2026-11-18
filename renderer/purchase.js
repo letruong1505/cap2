@@ -51,7 +51,7 @@
   const phoneOk = (s) => /^(0|\+84)\d{9}$/.test(normPhone(s));
 
   let ctx = { machineId: '' };
-  const st = { name: '', phone: '', picks: new Set(), agreed: false, refundOk: false, order: null };
+  const st = { name: '', phone: '', picks: new Set(), agreed: false, refundOk: false, order: null, partnerCode: '' };
 
   function total() { return ALL.filter((x) => st.picks.has(x.id)).reduce((s, x) => s + x.price, 0); }
   function formOk() { return st.name.trim().length >= 2 && phoneOk(st.phone) && st.picks.size > 0 && st.agreed && st.refundOk; }
@@ -99,15 +99,62 @@
   const loadPending = () => { try { return JSON.parse(localStorage.getItem(PENDING_KEY) || 'null'); } catch { return null; } };
   function stopPoll() { if (timer) clearInterval(timer); timer = null; }
 
-  function showDone(o) {
+  // Phiếu xác nhận thanh toán dạng PNG. Khách tải về để lưu hoặc gửi qua Zalo.
+  const RECEIPT_URL = 'https://nam-linh-orders.namlinh.workers.dev/hoa-don';
+  function receiptPng(r) {
+    const lines = r.lines || [];
+    const c = document.createElement('canvas');
+    c.width = 900;
+    c.height = 420 + lines.length * 52 + (r.partner ? 40 : 0);
+    const g = c.getContext('2d');
+    g.fillStyle = '#fff'; g.fillRect(0, 0, c.width, c.height);
+    g.fillStyle = '#15324e'; g.fillRect(0, 0, c.width, 110);
+    g.fillStyle = '#fff'; g.font = 'bold 34px sans-serif'; g.fillText('Phiếu xác nhận thanh toán', 36, 58);
+    g.font = '22px sans-serif'; g.fillText('Nam Linh Educenter', 36, 90);
+    g.fillStyle = '#1c2733';
+    let y = 152;
+    const put = (t, bold) => { g.font = (bold ? 'bold ' : '') + '24px sans-serif'; g.fillText(t, 36, y); y += 40; };
+    put('Mã đơn: NL-' + r.code, true);
+    put('Thanh toán lúc: ' + (r.paidAt ? new Date(r.paidAt).toLocaleString('vi-VN') : ''));
+    put('Phụ huynh: ' + (r.name || '') + ' · ' + (r.phone || ''));
+    y += 12;
+    lines.forEach((l) => {
+      const nm = ALL.find((x) => x.id === l.id);
+      g.font = '24px sans-serif'; g.textAlign = 'left'; g.fillText(nm ? nm.name : l.id, 36, y);
+      g.textAlign = 'right';
+      g.fillText(money(l.paid) + (l.list !== l.paid ? '  (giá gốc ' + money(l.list) + ')' : ''), 864, y);
+      g.textAlign = 'left'; y += 52;
+    });
+    g.font = 'bold 26px sans-serif';
+    g.textAlign = 'right'; g.fillText('Tổng đã thanh toán: ' + money(r.paidAmount || r.amount), 864, y + 10); g.textAlign = 'left';
+    y += 50;
+    if (r.partner) { g.font = '22px sans-serif'; g.fillText('Mã đối tác ' + r.partner.code + ' · giảm ' + r.partner.percent + '% trên giá từng khóa', 36, y); y += 40; }
+    g.font = '18px sans-serif'; g.fillStyle = '#5d6d80';
+    g.fillText('Phiếu này không phải hóa đơn giá trị gia tăng.', 36, y + 20);
+    g.fillText('Xem lại: ' + RECEIPT_URL + ' (nhập mã đơn và số điện thoại)', 36, y + 46);
+    return c;
+  }
+
+  function showDone(o, d) {
     const P = window.NL_PAYMENT;
+    const info = { ...o, ...(d || {}), code: o.code, lines: (d && d.lines) || o.lines || [], partner: (d && d.partner) || o.partner || null, name: (d && d.name) || o.name, phone: (d && d.phone) || o.phone, paidAmount: (d && d.paidAmount) || o.amount };
     const names = ALL.filter((x) => o.ids.includes(x.id)).map((x) => x.name);
+    const dl = h('button', { type: 'button', class: 'ghost', onclick: () => {
+      receiptPng(info).toBlob((blob) => {
+        if (!blob) return;
+        const a = h('a', { download: `phieu-xac-nhan-NL-${o.code}.png`, href: URL.createObjectURL(blob) });
+        document.body.append(a); a.click(); a.remove();
+      }, 'image/png');
+    } }, 'Tải phiếu xác nhận (PNG)');
     payEl.replaceChildren(
       h('h2', {}, 'Thanh toán thành công'),
       h('p', { class: 'buy-ok' }, 'Khóa học đã được kích hoạt trên máy này.'),
       h('ul', { class: 'buy-lines' }, names.map((n) => h('li', {}, h('span', {}, n)))),
+      h('p', { class: 'muted' }, 'Lưu phiếu xác nhận thanh toán để giữ làm bằng chứng. Có thể xem lại trên web bằng mã đơn và số điện thoại: ' + RECEIPT_URL),
       h('p', { class: 'muted' }, 'Cần hỗ trợ: Zalo ' + P.zalo + '.'),
-      h('div', { class: 'buy-actions' }, h('button', { type: 'button', class: 'primary', onclick: () => document.getElementById('btn-purchase-back').click() }, 'Về màn hình chính')));
+      h('div', { class: 'buy-actions' },
+        dl,
+        h('button', { type: 'button', class: 'primary', onclick: () => document.getElementById('btn-purchase-back').click() }, 'Về màn hình chính')));
     payEl.hidden = false; summaryEl.hidden = true; createBtn.hidden = true; hint.hidden = true;
   }
 
@@ -122,7 +169,7 @@
       if (a.status === 'ok') {
         savePending(null);
         if (ctx.onActivated) ctx.onActivated();
-        showDone(o);
+        showDone(o, d);
       } else statusEl.textContent = 'Đã nhận tiền nhưng chưa kích hoạt được khóa. Em liên hệ Zalo ' + window.NL_PAYMENT.zalo + ' kèm mã đơn NL-' + o.code + '.';
     } else if (d.status === 'paid') statusEl.textContent = 'Đã nhận tiền, đang cấp khóa...';
     else if (d.status === 'underpaid') statusEl.textContent = 'Đã nhận ' + money(d.paidAmount) + ', còn thiếu ' + money(d.amount - d.paidAmount) + '. Em chuyển thêm đúng nội dung NL ' + o.code + '.';
@@ -153,6 +200,7 @@
         P.bankName ? row('Ngân hàng', P.bankName) : null,
         P.accountNo ? row('Số tài khoản', P.accountNo, true) : null,
         P.accountName ? row('Chủ tài khoản', P.accountName) : null,
+        o.partner ? row('Mã đối tác', o.partner.code + ' (giảm ' + o.partner.percent + '%)') : null,
         row('Số tiền', money(o.amount), true),
         row('Nội dung', 'NL ' + o.code, true),
         row('Mã đơn', 'NL-' + o.code)),
@@ -183,6 +231,13 @@
     phone.addEventListener('input', () => { st.phone = phone.value; renderSummary(); });
     name.value = st.name; phone.value = st.phone;
 
+    const partnerIn = h('input', { type: 'text', id: 'buy-partner', autocomplete: 'off', placeholder: 'Nếu có mã đối tác', maxlength: '20' });
+    partnerIn.addEventListener('input', () => { st.partnerCode = partnerIn.value; });
+    partnerIn.value = st.partnerCode;
+    const partnerField = h('div', { class: 'buy-partner' },
+      h('label', { for: 'buy-partner' }, 'Mã đối tác (không bắt buộc)', partnerIn),
+      h('p', { class: 'muted' }, 'Áp mã cần kết nối mạng. Không có mã thì bỏ trống.'));
+
     const groups = CATALOG.map((c) => h('fieldset', { class: 'buy-group' }, h('legend', {}, c.group),
       c.fee ? h('p', { class: 'buy-fee' }, c.fee) : null,
       c.items.map((x) => {
@@ -204,8 +259,9 @@
     const refundBox = h('div', { class: 'buy-refund' },
       h('h3', {}, 'Chính sách hoàn tiền'),
       h('ul', {},
-        h('li', {}, 'Hoàn tiền trong 07 ngày kể từ khi kích hoạt, chỉ khi phần mềm có lỗi kỹ thuật mà bên em không khắc phục được (không kích hoạt được, không chạy trên máy của mình).'),
+        h('li', {}, 'Hoàn tiền trong 07 ngày kể từ khi thanh toán thành công, chỉ khi phần mềm có lỗi kỹ thuật mà bên em không khắc phục được (không kích hoạt được, không chạy trên máy của mình).'),
         h('li', {}, 'Không hoàn tiền khi đổi ý sau khi đã kích hoạt. Được hỗ trợ đổi máy miễn phí.'),
+        h('li', {}, 'Đơn có mã đối tác: số tiền hoàn là số tiền đã trả sau khi giảm, không phải giá niêm yết.'),
         h('li', {}, 'Có thể học thử các bài miễn phí trong phần mềm trước khi mua.')),
       h('label', { class: 'buy-agree', for: 'buy-refund' }, refundAgree,
         h('span', {}, 'Tôi đã đọc và đồng ý chính sách hoàn tiền trên.')));
@@ -218,9 +274,11 @@
       createBtn.disabled = true; hint.textContent = 'Đang tạo đơn...';
       const at = new Date().toLocaleString('vi-VN');
       const base = { name: st.name.trim(), phone: normPhone(st.phone), ids: ALL.filter((x) => st.picks.has(x.id)).map((x) => x.id), at };
-      const r = await window.vungBai.createOrder({ name: base.name, phone: base.phone, ids: base.ids, terms: { version: window.NL_TERMS.version, at } });
+      const partnerCode = st.partnerCode.trim();
+      const r = await window.vungBai.createOrder({ name: base.name, phone: base.phone, ids: base.ids, partnerCode, terms: { version: window.NL_TERMS.version, at } });
       let o;
-      if (r.ok) o = { ...base, code: r.data.code, amount: r.data.amount, online: true };
+      if (r.ok) o = { ...base, code: r.data.code, amount: r.data.amount, online: true, partner: r.data.partner, lines: r.data.items };
+      else if (r.offline && partnerCode) { hint.textContent = 'Áp mã đối tác cần kết nối máy chủ. Em thử lại khi có mạng, hoặc bỏ mã để gửi đơn qua Zalo.'; createBtn.disabled = false; return; }
       else if (r.offline) o = { ...base, code: newCode(), amount: total(), online: false };
       else { hint.textContent = r.error; createBtn.disabled = false; return; }
       st.order = o;
@@ -238,7 +296,7 @@
               h('label', { for: 'buy-name' }, 'Họ và tên', name),
               h('label', { for: 'buy-phone' }, 'Số điện thoại (Zalo)', phone))),
           h('section', { class: 'buy-card' }, h('h2', {}, h('span', { class: 'buy-n' }, '2'), 'Chọn khóa học của con'),
-            h('p', { class: 'muted' }, 'Chọn một hoặc nhiều khóa. Mỗi khóa dùng vĩnh viễn trên 1 máy.'), groups),
+            h('p', { class: 'muted' }, 'Chọn một hoặc nhiều khóa. Mỗi khóa dùng vĩnh viễn trên 1 máy.'), groups, partnerField),
           h('section', { class: 'buy-card' }, h('h2', {}, h('span', { class: 'buy-n' }, '3'), 'Điều khoản'), terms,
             h('label', { class: 'buy-agree', for: 'buy-agree' }, agree,
               h('span', {}, 'Tôi là phụ huynh, người giám hộ hoặc người từ đủ 18 tuổi, đã đọc và đồng ý Điều khoản mua và sử dụng của Nam Linh Technology.')),
@@ -254,7 +312,7 @@
     if (!r.ok || !r.data) return;
     const d = r.data;
     if (d.status === 'pending' || d.status === 'underpaid' || (d.status === 'paid' && d.key)) {
-      const o = { code, amount: d.amount, ids: d.items || [], name: '', phone: '', online: true };
+      const o = { code, amount: d.amount, ids: d.items || [], name: '', phone: '', online: true, partner: d.partner || null };
       st.order = o; showPay(o);
     } else savePending(null);
   }

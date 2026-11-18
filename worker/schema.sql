@@ -66,3 +66,23 @@ CREATE TABLE IF NOT EXISTS item_revocations (
   restored_at TEXT,
   PRIMARY KEY (code, item)
 );
+
+-- Mã đối tác: giảm theo tỉ lệ phần trăm trên giá từng khóa. Tắt bằng active = 0, không xóa để giữ lịch sử đơn.
+CREATE TABLE IF NOT EXISTS partner_codes (
+  code TEXT PRIMARY KEY,
+  partner TEXT NOT NULL,
+  percent INTEGER NOT NULL,
+  active INTEGER NOT NULL DEFAULT 1,
+  created_at TEXT NOT NULL
+);
+
+-- Giá từng khóa trong đơn: giá niêm yết, giá khách thực trả và mã đối tác đã áp (nếu có). Dùng cho hoàn tiền một phần và phiếu xác nhận.
+CREATE TABLE IF NOT EXISTS order_prices (
+  code TEXT NOT NULL,
+  item TEXT NOT NULL,
+  list_price INTEGER NOT NULL,
+  paid_price INTEGER NOT NULL,
+  partner_code TEXT,
+  percent INTEGER,
+  PRIMARY KEY (code, item)
+);

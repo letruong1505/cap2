@@ -826,3 +826,9 @@ button.ghost:hover { background: var(--paper); }
 .thpt-bar { height: 8px; background: var(--rule); border-radius: 99px; overflow: hidden; margin-top: 10px; }
 .thpt-bar > span { display: block; height: 100%; background: #1e8e4e; }
 .thpt-placeholder p { margin: 0; color: var(--mute); }
+
+/* Ô mã đối tác trong thẻ chọn khóa */
+.buy-partner { margin-top: 14px; display: grid; gap: 6px; }
+.buy-partner label { display: grid; gap: 6px; font-weight: 600; font-size: 14px; }
+.buy-partner input { width: 100%; box-sizing: border-box; min-width: 0; }
+.buy-partner .muted { margin: 0; font-size: 13px; }

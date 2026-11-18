@@ -1,6 +1,6 @@
 // Điều khoản mua và sử dụng. BẢN NHÁP chờ chủ doanh nghiệp quyết định; đổi nội dung ở đây.
 window.NL_TERMS = {
-  version: '1.0 (bản nháp 11/2026)',
+  version: '1.2 (bản nháp 11/2026)',
   sections: [
     ['1. Đơn vị cung cấp', [
       'Công ty TNHH Giải pháp & Ứng dụng Công nghệ Nam Linh (gọi tắt là Nam Linh Technology), mã số thuế 2902274556, địa chỉ: xã Hùng Châu, tỉnh Nghệ An. Điện thoại/Zalo: 0968 646 853. Email: namlinh.educenter@gmail.com.']],
@@ -12,13 +12,16 @@ window.NL_TERMS = {
       'Nội dung được cập nhật, sửa lỗi trong phạm vi khóa đã mua. Nam Linh Technology không cam kết tặng các khóa học hoặc phiên bản mới khác, trừ khi có thông báo riêng.']],
     ['4. Giá và thanh toán', [
       'Giá trong phần mềm tính bằng đồng Việt Nam. Người mua chuyển khoản theo mã QR, đúng số tiền và đúng nội dung chuyển khoản trên đơn hàng.',
-      'Đơn hàng chỉ được xử lý khi Nam Linh Technology nhận đủ số tiền. Nếu chuyển thiếu, thừa hoặc sai nội dung, người mua liên hệ Nam Linh Technology để được xử lý.']],
+      'Đơn hàng chỉ được xử lý khi Nam Linh Technology nhận đủ số tiền. Nếu chuyển thiếu, thừa hoặc sai nội dung, người mua liên hệ Nam Linh Technology để được xử lý.',
+      'Đơn có mã đối tác được giảm theo tỉ lệ ghi trong mã, tính trên giá từng khóa học. Số tiền thanh toán là số tiền sau giảm. Mã cần kết nối mạng để áp dụng.',
+      'Sau khi thanh toán, người mua có thể tải phiếu xác nhận thanh toán trong phần mềm hoặc xem lại trên web bằng mã đơn và số điện thoại. Phiếu xác nhận không phải hóa đơn giá trị gia tăng.']],
     ['5. Kích hoạt khóa học', [
       'Sau khi xác nhận thanh toán, Nam Linh Technology gửi khóa kích hoạt qua số điện thoại hoặc Zalo người mua đã cung cấp. Phần mềm tự kích hoạt khi có kết nối mạng; nếu không, người mua dán khóa vào ô "Đổi khóa" trong phần mềm để kích hoạt.',
       'Khóa kích hoạt gắn với mã máy. Khi cần chuyển sang máy khác, người mua liên hệ Nam Linh Technology để được hỗ trợ.']],
     ['6. Hủy đơn và hoàn tiền', [
       'Trước khi Nam Linh Technology gửi khóa kích hoạt, người mua có thể hủy đơn và được hoàn lại toàn bộ số tiền đã chuyển.',
-      'Khóa học là sản phẩm số. Sau khi khóa kích hoạt đã được gửi, đơn hàng không được hoàn tiền, trừ trường hợp phần mềm lỗi kỹ thuật mà Nam Linh Technology không khắc phục được.']],
+      'Khi hoàn tiền cho một khóa học trong đơn, số tiền hoàn là số tiền người mua đã trả cho khóa đó, tức là giá sau giảm nếu đơn có mã đối tác.',
+      'Khóa học là sản phẩm số. Trong 07 ngày kể từ khi thanh toán thành công, người mua được hoàn tiền nếu phần mềm lỗi kỹ thuật mà Nam Linh Technology không khắc phục được. Sau 07 ngày, đơn hàng không được hoàn tiền.']],
     ['7. Quy định sử dụng', [
       'Không sao chép, chia sẻ khóa kích hoạt, bán lại, cho thuê, dịch ngược hoặc chỉnh sửa phần mềm và nội dung khóa học.',
       'Trường hợp vi phạm, Nam Linh Technology có quyền thu hồi khóa kích hoạt mà không hoàn tiền.']],

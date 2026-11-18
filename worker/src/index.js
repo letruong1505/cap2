@@ -1,6 +1,7 @@
 import catalog from '../../renderer/catalog.js';
-import { HttpError, createOrder, orderStatus, applyPayment, listOrders, listUnmatched, approveOrder, cancelOrder, reissueOrder, attachTransaction, pinReset, revokeOrder, restoreOrder, revokeItem, restoreItem, ping } from './orders.js';
+import { HttpError, createOrder, orderStatus, applyPayment, listOrders, listUnmatched, approveOrder, cancelOrder, reissueOrder, attachTransaction, pinReset, revokeOrder, restoreOrder, revokeItem, restoreItem, ping, listPartnerCodes, createPartnerCode, setPartnerActive } from './orders.js';
 import { adminPage } from './admin.js';
+import { receiptPage } from './receipt.js';
 
 const json = (data, status = 200) => new Response(JSON.stringify(data), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
 
@@ -33,6 +34,11 @@ export async function handle(req, env, now = new Date()) {
       return json(await orderStatus(db, env, catalog, m[1], url.searchParams.get('machine'), now));
     }
 
+    // Trang xem lại phiếu xác nhận thanh toán (khách nhập mã đơn và số điện thoại).
+    if (req.method === 'GET' && path === '/hoa-don') {
+      return receiptPage(db, catalog, url);
+    }
+
     if (req.method === 'POST' && path === '/api/pin-reset') {
       return json(await pinReset(db, await body(req), now));
     }
@@ -57,6 +63,10 @@ export async function handle(req, env, now = new Date()) {
       if (!env.ADMIN_TOKEN || !safeEqual(bearer(req), env.ADMIN_TOKEN)) return json({ error: 'Sai mật khẩu quản trị.' }, 401);
       if (req.method === 'GET' && path === '/api/admin/orders') return json({ orders: await listOrders(db, { status: url.searchParams.get('status') || '', q: url.searchParams.get('q') || '' }, now), catalog: catalog.byId });
       if (req.method === 'GET' && path === '/api/admin/transactions') return json({ transactions: await listUnmatched(db) });
+      if (req.method === 'GET' && path === '/api/admin/partner-codes') return json({ partners: await listPartnerCodes(db) });
+      if (req.method === 'POST' && path === '/api/admin/partner-codes') return json(await createPartnerCode(db, await body(req), now), 201);
+      m = /^\/api\/admin\/partner-codes\/([A-Za-z0-9-]{3,20})\/active$/.exec(path);
+      if (req.method === 'POST' && m) { const b = await body(req); await setPartnerActive(db, m[1], !!b.active); return json({ ok: true }); }
       m = /^\/api\/admin\/transactions\/(\d+)\/attach$/.exec(path);
       if (req.method === 'POST' && m) { const b = await body(req); return json(await attachTransaction(db, env, catalog, Number(m[1]), b.code, now)); }
       m = /^\/api\/admin\/orders\/([A-Za-z0-9]{6})\/(approve|cancel|reissue|revoke|restore)$/.exec(path);

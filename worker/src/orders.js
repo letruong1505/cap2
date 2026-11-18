@@ -28,6 +28,32 @@ export function findCode(...texts) {
 
 const nowIso = (now) => now.toISOString();
 
+// Hoàn tiền chỉ trong 7 ngày kể từ lúc thanh toán thành công.
+export const REFUND_DAYS = 7;
+export function refundOpen(paidAt, now = new Date()) {
+  if (!paidAt) return false;
+  return now.getTime() - new Date(paidAt).getTime() <= REFUND_DAYS * 86400e3;
+}
+const REFUND_CLOSED = 'Đã quá 7 ngày kể từ khi thanh toán thành công, không thu hồi để hoàn tiền được nữa.';
+
+// Mã đối tác: chữ, số và dấu gạch ngang, 3 đến 20 ký tự.
+export const PARTNER_RE = /^[A-Z0-9-]{3,20}$/;
+
+// Giá sau giảm của một khóa, làm tròn đến đồng. Dùng chung cho máy chủ và (nếu cần) giao diện.
+export function discountPrice(list, percent) {
+  return Math.round(list * (100 - percent) / 100);
+}
+
+// Tìm mã đối tác đang bật. Mã sai hoặc đã tắt đều báo lỗi cho khách.
+export async function findPartner(db, raw) {
+  const code = String(raw || '').trim().toUpperCase();
+  if (!code) return null;
+  if (!PARTNER_RE.test(code)) throw new HttpError(400, 'Mã đối tác không đúng định dạng.');
+  const p = await db.prepare('SELECT code, partner, percent FROM partner_codes WHERE code = ?1 AND active = 1').bind(code).first();
+  if (!p) throw new HttpError(400, 'Mã đối tác không đúng hoặc đã ngừng dùng.');
+  return p;
+}
+
 export async function createOrder(db, catalog, input, now = new Date(), rand) {
   const name = String(input.name || '').trim().replace(/\s+/g, ' ');
   const phone = String(input.phone || '').replace(/[\s.\-]/g, '');
@@ -38,18 +64,33 @@ export async function createOrder(db, catalog, input, now = new Date(), rand) {
   if (!MACHINE_RE.test(machine)) throw new HttpError(400, 'Không đọc được mã máy. Em mở lại phần mềm rồi thử lại.');
   if (!ids.length || ids.some((id) => !catalog.byId[id])) throw new HttpError(400, 'Danh sách khóa học không hợp lệ.');
   if (!input.terms || !input.terms.version) throw new HttpError(400, 'Cần đồng ý điều khoản.');
-  const amount = ids.reduce((s, id) => s + catalog.byId[id].price, 0);
 
   const since = nowIso(new Date(now.getTime() - 3600_000));
   const recent = await db.prepare('SELECT COUNT(*) AS n FROM orders WHERE (machine = ?1 OR phone = ?2) AND created_at > ?3').bind(machine, phone, since).first();
   if (recent.n >= 10) throw new HttpError(429, 'Tạo quá nhiều đơn trong một giờ. Em vui lòng thử lại sau.');
 
+  const partner = await findPartner(db, input.partnerCode);
+  const lines = ids.map((id) => {
+    const list = catalog.byId[id].price;
+    return { id, list, paid: partner ? discountPrice(list, partner.percent) : list };
+  });
+  const amount = lines.reduce((s, l) => s + l.paid, 0);
+
   for (let i = 0; i < 5; i++) {
     const code = newCode(rand);
     try {
-      await db.prepare('INSERT INTO orders (code, name, phone, machine, items, amount, status, terms_version, terms_at, created_at) VALUES (?1,?2,?3,?4,?5,?6,\'pending\',?7,?8,?9)')
-        .bind(code, name, phone, machine, JSON.stringify(ids), amount, String(input.terms.version).slice(0, 40), String(input.terms.at || '').slice(0, 40), nowIso(now)).run();
-      return { code, amount, content: 'NL ' + code, status: 'pending' };
+      // Đơn và giá từng khóa ghi cùng lúc, để hoàn tiền và phiếu xác nhận luôn đúng số đã thu.
+      await db.batch([
+        db.prepare('INSERT INTO orders (code, name, phone, machine, items, amount, status, terms_version, terms_at, created_at) VALUES (?1,?2,?3,?4,?5,?6,\'pending\',?7,?8,?9)')
+          .bind(code, name, phone, machine, JSON.stringify(ids), amount, String(input.terms.version).slice(0, 40), String(input.terms.at || '').slice(0, 40), nowIso(now)),
+        ...lines.map((l) => db.prepare('INSERT INTO order_prices (code, item, list_price, paid_price, partner_code, percent) VALUES (?1,?2,?3,?4,?5,?6)')
+          .bind(code, l.id, l.list, l.paid, partner ? partner.code : null, partner ? partner.percent : null)),
+      ]);
+      return {
+        code, amount, content: 'NL ' + code, status: 'pending',
+        partner: partner ? { code: partner.code, percent: partner.percent } : null,
+        items: lines,
+      };
     } catch (e) {
       if (!/UNIQUE|constraint/i.test(String(e.message))) throw e;
     }
@@ -74,10 +115,30 @@ export async function orderStatus(db, env, catalog, code, machine, now = new Dat
   const o = await getOrder(db, code);
   if (!o || o.machine !== String(machine || '').toUpperCase()) throw new HttpError(404, 'Không tìm thấy đơn.');
   const out = { code: o.code, status: o.status, amount: o.amount, paidAmount: o.paid_amount || 0, items: JSON.parse(o.items) };
+  // Thông tin dùng cho phiếu xác nhận thanh toán (chính khách hàng, trên đúng máy đã đặt đơn).
+  out.name = o.name;
+  out.phone = o.phone;
+  out.paidAt = o.paid_at || null;
+  out.lines = await linePrices(db, o.code, catalog, out.items);
+  const withPartner = out.lines.find((l) => l.partner);
+  out.partner = withPartner ? withPartner.partner : null;
   if (o.status === 'paid') {
     out.key = o.key || await issueKey(db, env, catalog, o, now).catch(() => null);
   }
   return out;
+}
+
+// Giá từng khóa của đơn. Đơn cũ (trước khi có bảng giá) dùng giá niêm yết, không giảm.
+export async function linePrices(db, code, catalog, items) {
+  const rows = (await db.prepare('SELECT item, list_price, paid_price, partner_code, percent FROM order_prices WHERE code = ?1').bind(code).all()).results;
+  const byItem = new Map(rows.map((r) => [r.item, r]));
+  return items.map((id) => {
+    const r = byItem.get(id);
+    const list = r ? r.list_price : (catalog.byId[id] ? catalog.byId[id].price : 0);
+    const paid = r ? r.paid_price : list;
+    const partner = r && r.partner_code ? { code: r.partner_code, percent: r.percent } : null;
+    return { id, name: catalog.byId[id] ? catalog.byId[id].name : id, list, paid, partner };
+  });
 }
 
 // Xử lý một giao dịch tiền vào từ SePay. Trả về chuỗi kết quả để lưu log.
@@ -125,7 +186,45 @@ export async function listOrders(db, { status, q } = {}, now = new Date()) {
   const byRev = new Map(revs.map((r) => [r.code, { reason: r.reason, at: r.revoked_at }]));
   const itemRevs = (await db.prepare('SELECT code, item, reason, revoked_at FROM item_revocations WHERE restored_at IS NULL').all()).results;
   const byItem = new Map(); for (const r of itemRevs) { if (!byItem.has(r.code)) byItem.set(r.code, []); byItem.get(r.code).push({ item: r.item, reason: r.reason, at: r.revoked_at }); }
-  return orders.map((o) => ({ ...o, devices: byDev.get(o.code) || [], revoked: byRev.get(o.code) || null, item_revoked: byItem.get(o.code) || [] }));
+  // Giá từng khóa và mã đối tác của các đơn đang hiển thị (để biết số tiền hoàn cho từng khóa).
+  const priceRows = (await db.prepare('SELECT code, item, list_price, paid_price, partner_code, percent FROM order_prices WHERE code IN (SELECT code FROM orders ORDER BY created_at DESC LIMIT 200)').all()).results;
+  const byPrice = new Map();
+  for (const r of priceRows) {
+    if (!byPrice.has(r.code)) byPrice.set(r.code, { prices: {}, partner: null });
+    const e = byPrice.get(r.code);
+    e.prices[r.item] = { list: r.list_price, paid: r.paid_price };
+    if (r.partner_code) e.partner = { code: r.partner_code, percent: r.percent };
+  }
+  return orders.map((o) => {
+    const pr = byPrice.get(o.code) || { prices: {}, partner: null };
+    return { ...o, devices: byDev.get(o.code) || [], revoked: byRev.get(o.code) || null, item_revoked: byItem.get(o.code) || [], prices: pr.prices, partner: pr.partner };
+  });
+}
+
+// Mã đối tác: danh sách (kèm số đơn đã dùng), tạo mới, bật/tắt.
+export async function listPartnerCodes(db) {
+  return (await db.prepare('SELECT p.code, p.partner, p.percent, p.active, p.created_at, (SELECT COUNT(DISTINCT op.code) FROM order_prices op WHERE op.partner_code = p.code) AS used FROM partner_codes p ORDER BY p.created_at DESC').all()).results;
+}
+
+export async function createPartnerCode(db, input, now = new Date()) {
+  const code = String(input.code || '').trim().toUpperCase();
+  const partner = String(input.partner || '').trim().replace(/\s+/g, ' ');
+  const percent = Number(input.percent === undefined || input.percent === '' ? 20 : input.percent);
+  if (!PARTNER_RE.test(code)) throw new HttpError(400, 'Mã phải gồm chữ, số hoặc dấu gạch ngang, dài 3 đến 20 ký tự.');
+  if (partner.length < 2 || partner.length > 60) throw new HttpError(400, 'Tên đối tác phải từ 2 đến 60 ký tự.');
+  if (!Number.isInteger(percent) || percent < 1 || percent > 99) throw new HttpError(400, 'Tỉ lệ giảm phải là số nguyên từ 1 đến 99.');
+  try {
+    await db.prepare('INSERT INTO partner_codes (code, partner, percent, active, created_at) VALUES (?1, ?2, ?3, 1, ?4)').bind(code, partner, percent, nowIso(now)).run();
+  } catch (e) {
+    if (/UNIQUE|constraint/i.test(String(e.message))) throw new HttpError(409, 'Mã này đã tồn tại.');
+    throw e;
+  }
+  return { code, partner, percent };
+}
+
+export async function setPartnerActive(db, code, active) {
+  const r = await db.prepare('UPDATE partner_codes SET active = ?1 WHERE code = ?2').bind(active ? 1 : 0, String(code || '').toUpperCase()).run();
+  if (!r.meta.changes) throw new HttpError(404, 'Không tìm thấy mã đối tác.');
 }
 
 export async function listUnmatched(db) {
@@ -198,6 +297,7 @@ export async function pinReset(db, input, now = new Date()) {
 export async function revokeOrder(db, code, reason, now = new Date()) {
   const o = await getOrder(db, code);
   if (!o || o.status !== 'paid') throw new HttpError(404, 'Chỉ thu hồi được đơn đã thanh toán.');
+  if (!refundOpen(o.paid_at, now)) throw new HttpError(409, REFUND_CLOSED);
   await db.prepare('INSERT INTO revocations (code, reason, revoked_at, restored_at) VALUES (?1, ?2, ?3, NULL) ON CONFLICT(code) DO UPDATE SET reason = ?2, revoked_at = ?3, restored_at = NULL')
     .bind(o.code, String(reason || 'Thu hồi').slice(0, 200), nowIso(now)).run();
 }
@@ -215,6 +315,7 @@ export async function revokeItem(db, code, item, reason, now = new Date()) {
   const o = await getOrder(db, code);
   if (!o || o.status !== 'paid') throw new HttpError(404, 'Chỉ thu hồi được đơn đã thanh toán.');
   if (!JSON.parse(o.items).includes(item)) throw new HttpError(400, 'Khóa học này không thuộc đơn.');
+  if (!refundOpen(o.paid_at, now)) throw new HttpError(409, REFUND_CLOSED);
   await db.prepare('INSERT INTO item_revocations (code, item, reason, revoked_at, restored_at) VALUES (?1, ?2, ?3, ?4, NULL) ON CONFLICT(code, item) DO UPDATE SET reason = ?3, revoked_at = ?4, restored_at = NULL')
     .bind(o.code, item, String(reason || 'Hoàn tiền một phần').slice(0, 200), nowIso(now)).run();
 }

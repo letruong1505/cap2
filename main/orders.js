@@ -25,6 +25,7 @@ function makeClient({ baseUrl = readBaseUrl, fetchFn = (...a) => fetch(...a), ma
     // Giao diện chỉ gửi thông tin phụ huynh và danh sách khóa; mã máy do tiến trình chính tự thêm.
     createOrder: (o) => call('POST', '/api/orders', {
       name: String(o && o.name || ''), phone: String(o && o.phone || ''), ids: Array.isArray(o && o.ids) ? o.ids.map(String) : [],
+      partnerCode: String(o && o.partnerCode || '').trim().slice(0, 20),
       terms: { version: String(o && o.terms && o.terms.version || ''), at: String(o && o.terms && o.terms.at || '') }, machineId: machineId(),
     }),
     pinReset: (o) => call('POST', '/api/pin-reset', { phone: String(o && o.phone || ''), code: String(o && o.code || ''), machineId: machineId() }),

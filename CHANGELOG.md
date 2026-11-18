@@ -1,11 +1,12 @@
 ## Bản mới
+- Cập nhật chính sách & điều khoản hoàn tiền: tính 7 ngày từ lúc thanh toán thành công, hoàn tiền theo số tiền sau khi giảm.
+- Mua khóa học: nhập mã đối tác để được giảm 20% trên giá từng khóa (cần kết nối mạng). Sau khi thanh toán, tải phiếu xác nhận thanh toán dạng PNG hoặc xem lại trên web.
+
+## Các bản trước
 - Thêm màn hình Ôn thi THPT Quốc gia: chọn 2 môn tự chọn để xem khối thi; bài học và đề đang được biên soạn.
-- Cập nhật chính sách & điều khoản hoàn tiền.
 - Hỗ trợ thu hồi bản quyền trực tuyến khi hoàn tiền, kể cả hoàn tiền riêng một khóa học; phần mềm tự cập nhật ngay khi khóa bị thu hồi hoặc khôi phục.
 - Sửa lỗi ảnh báo cáo học tập bị cắt chữ ở các dòng dài.
 - Ghi rõ giá khóa AI chưa gồm phí bản quyền AI.
-
-## Các bản trước
 - Sửa lỗi mất mã PIN và câu sai sau khi cập nhật phần mềm.
 - Sửa lỗi bản quyền: mua Văn hóa và Kỹ năng ở hai đơn khác nhau thì giờ gộp cả hai, không còn ghi đè nhau.
 - Sổ câu sai hiển thị đáp án em đã chọn hoặc nhập, đặt cạnh đáp án đúng.

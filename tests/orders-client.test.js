@@ -35,3 +35,13 @@ test('tín hiệu: gửi mã máy, mã đơn và số bản, bỏ trường lạ
   assert.strictEqual(sent.url, 'https://x.test/api/ping');
   assert.deepStrictEqual(sent.body, { machineId: 'AAAA-BBBB-CCCC', ids: ['ABCDEF'], version: '1.2.9' });
 });
+
+test('gửi mã đối tác lên máy chủ, đã trim và cắt độ dài', async () => {
+  let sent;
+  const c = makeClient({ baseUrl: () => 'https://x.test/', machineId: () => 'AAAA-BBBB-CCCC',
+    fetchFn: async (url, opt) => { sent = JSON.parse(opt.body); return { status: 201, ok: true, json: async () => ({ code: 'ABCDEF' }) }; } });
+  await c.createOrder({ name: 'A', phone: '0912345678', ids: ['gia-su-ai'], partnerCode: '  dt-hoai  ', terms: { version: '1', at: 't' } });
+  assert.strictEqual(sent.partnerCode, 'dt-hoai');
+  await c.createOrder({ name: 'A', phone: '0912345678', ids: ['gia-su-ai'], terms: { version: '1', at: 't' } });
+  assert.strictEqual(sent.partnerCode, '');
+});
