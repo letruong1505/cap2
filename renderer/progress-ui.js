@@ -237,10 +237,24 @@
   }
 
   function drawPng(r, name) {
-    const L = lines(r);
     const days = r.days.length <= 14 ? r.days : [];
     const c = document.createElement('canvas');
-    c.width = 900; c.height = 230 + L.length * 44 + (days.length ? 170 : 0);
+    c.width = 900;
+    // Ngắt dòng theo chiều rộng khung vẽ để không bị cắt chữ (tên chương dài)
+    const mg = c.getContext('2d');
+    mg.font = '24px sans-serif';
+    const L = [];
+    lines(r).forEach((t) => {
+      const lead = (t.match(/^\s*•?\s*/) || [''])[0];
+      const indent = lead.includes('•') ? '    ' : '';
+      let cur = '';
+      t.split(' ').forEach((w) => {
+        const next = cur ? cur + ' ' + w : w;
+        if (cur && mg.measureText(next).width > 828) { L.push(cur); cur = indent + w; } else cur = next;
+      });
+      L.push(cur);
+    });
+    c.height = 230 + L.length * 44 + (days.length ? 170 : 0);
     const g = c.getContext('2d');
     g.fillStyle = '#fff'; g.fillRect(0, 0, c.width, c.height);
     g.fillStyle = '#1f6f8b'; g.fillRect(0, 0, c.width, 110);

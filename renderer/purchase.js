@@ -184,6 +184,7 @@
     name.value = st.name; phone.value = st.phone;
 
     const groups = CATALOG.map((c) => h('fieldset', { class: 'buy-group' }, h('legend', {}, c.group),
+      c.fee ? h('p', { class: 'buy-fee' }, c.fee) : null,
       c.items.map((x) => {
         const cb = h('input', { type: 'checkbox', checked: st.picks.has(x.id) });
         cb.addEventListener('change', () => { cb.checked ? st.picks.add(x.id) : st.picks.delete(x.id); renderSummary(); });
