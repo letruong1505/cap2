@@ -100,7 +100,8 @@ function createWindow() {
 
 app.whenReady().then(() => {
   createWindow();
-  heartbeat = createHeartbeat({ dir: licenseStoreDir(), client: orders, lic, version: readBuildInfo().version });
+  heartbeat = createHeartbeat({ dir: licenseStoreDir(), client: orders, lic, version: readBuildInfo().version,
+    onChange: () => BrowserWindow.getAllWindows().forEach((w) => w.webContents.send('license:changed')) });
   heartbeat.start();
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow();

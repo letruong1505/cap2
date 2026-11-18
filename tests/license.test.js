@@ -128,6 +128,10 @@ test('tín hiệu định kỳ: gửi mã đơn và cập nhật danh sách thu 
   assert.deepStrictEqual(await hb.beat(), { sent: true, ok: true, changed: true });
   assert.deepStrictEqual(sent, { ids: ['AAAAAA'], version: '1.2.9' });
   assert.deepStrictEqual(fake.got, ['AAAAAA']);
+  let notified = 0;
+  const withCb = createHeartbeat({ dir, lic: fake, version: 'x', onChange: () => { notified++; }, client: { ping: async () => ({ ok: true, data: { revoked: [] } }) } });
+  await withCb.beat();
+  assert.strictEqual(notified, 1);
   const off = createHeartbeat({ dir, lic: fake, version: 'x', client: { ping: async () => ({ ok: false, offline: true }) } });
   assert.deepStrictEqual(await off.beat(), { sent: true, ok: false });
   const none = createHeartbeat({ dir, lic: { pingCodes: () => [] }, version: 'x', client: { ping: async () => { throw new Error('không được gọi'); } } });

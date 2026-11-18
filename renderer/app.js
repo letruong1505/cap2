@@ -568,6 +568,14 @@ function showLockedNotice() {
   window.alert('Bài này cần bản quyền. Bản dùng thử chỉ mở 2 bài đầu của mỗi môn.\nVề màn hình chọn lớp để nhập khoá kích hoạt.');
 }
 
+// Máy chủ báo khóa bị thu hồi hoặc khôi phục: tải lại để mục lục và các khóa Kỹ năng đổi theo ngay.
+if (window.vungBai && window.vungBai.onLicenseChanged) {
+  window.vungBai.onLicenseChanged(() => {
+    window.alert('Bản quyền trên máy này vừa được cập nhật. Phần mềm sẽ tải lại.');
+    window.location.reload();
+  });
+}
+
 async function refreshLicense() {
   try {
     lastLicense = await window.vungBai.loadLicense();

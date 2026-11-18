@@ -2,7 +2,7 @@
 // Không có mạng hoặc máy chủ lỗi thì bỏ qua, phần mềm vẫn học bình thường (khóa đã bị thu hồi từ trước vẫn bị vô hiệu vì đã lưu trên máy).
 const INTERVAL_MS = 5 * 60 * 1000;
 
-function createHeartbeat({ dir, client, lic, version, intervalMs = INTERVAL_MS, setIntervalFn = setInterval, setTimeoutFn = setTimeout }) {
+function createHeartbeat({ dir, client, lic, version, onChange = () => {}, intervalMs = INTERVAL_MS, setIntervalFn = setInterval, setTimeoutFn = setTimeout }) {
   let timer = null;
   async function beat() {
     const ids = lic.pingCodes(dir);
@@ -10,6 +10,7 @@ function createHeartbeat({ dir, client, lic, version, intervalMs = INTERVAL_MS, 
     const r = await client.ping({ ids, version });
     if (!r.ok) return { sent: true, ok: false };
     const changed = Array.isArray(r.data && r.data.revoked) ? lic.setRevoked(dir, r.data.revoked, r.data.revokedItems) : false;
+    if (changed) { try { onChange(); } catch { /* bỏ qua */ } } // báo giao diện tải lại bản quyền
     return { sent: true, ok: true, changed };
   }
   function start() {

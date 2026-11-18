@@ -1,6 +1,6 @@
 ## Bản mới
 - Cập nhật chính sách & điều khoản hoàn tiền.
-- Hỗ trợ thu hồi bản quyền trực tuyến khi hoàn tiền, kể cả hoàn tiền riêng một khóa học.
+- Hỗ trợ thu hồi bản quyền trực tuyến khi hoàn tiền, kể cả hoàn tiền riêng một khóa học; phần mềm tự cập nhật ngay khi khóa bị thu hồi hoặc khôi phục.
 
 ## Các bản trước
 - Sửa lỗi mất mã PIN và câu sai sau khi cập nhật phần mềm.
