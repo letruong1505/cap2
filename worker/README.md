@@ -57,8 +57,9 @@ Trong SePay: Webhooks, Thêm webhook:
 - Trang `/admin` có cột "Máy đã dùng": mã máy, số bản, nhãn **Đang online** (có tín hiệu trong 10 phút) hoặc **Offline** kèm lần mở gần nhất. Trang tự tải lại mỗi 30 giây.
 - Nút **Thu hồi** (đơn đã thanh toán): gõ lại mã đơn để xác nhận, nhập lý do. Chỉ đánh dấu trong bảng `revocations`, không xóa đơn, không xóa dữ liệu học trên máy khách. Máy khách bị vô hiệu khóa của đúng đơn đó ở tín hiệu kế tiếp (tối đa 5 phút khi có mạng), các khóa khác của khách vẫn dùng.
 - Nút **Khôi phục**: gỡ đánh dấu, máy khách dùng lại ở tín hiệu kế tiếp. Lịch sử thu hồi vẫn còn trong bảng.
+- **Hoàn tiền một phần:** ở cột Khóa học, mỗi khóa học có nút **Thu hồi** riêng (gõ lại mã đơn để xác nhận, nhập lý do). Chỉ khóa học đó bị tắt trên máy khách, các khóa còn lại trong cùng đơn vẫn dùng, khách không phải nhập lại khóa. Khôi phục theo từng khóa học. Thu hồi hết mọi khóa học của một đơn thì tương đương thu hồi cả đơn. Dữ liệu nằm trong bảng `item_revocations`. Khóa Văn hóa tắt theo lớp (ví dụ chỉ tắt Lớp 9).
 - Giới hạn: chỉ áp dụng cho bản phần mềm có tính năng này; khóa cấp tay bằng công cụ cấp khóa (không thuộc đơn nào) không thu hồi được; máy không có mạng vẫn dùng được cho đến khi có mạng.
-- Nâng cấp từ bản cũ: chạy lại `npm run db:init` (an toàn, chỉ tạo thêm hai bảng `revocations` và `devices`) rồi `npm run deploy`.
+- Nâng cấp từ bản cũ: chạy lại `npm run db:init` (an toàn, chỉ tạo thêm các bảng `revocations`, `devices` và `item_revocations`) rồi `npm run deploy`.
 
 ## Kiểm thử trước khi bán
 - Chạy thử với giá thấp: tạm sửa giá một khóa trong `renderer/catalog.js` xuống vài nghìn đồng, build, deploy Worker, tạo đơn và chuyển khoản thật. Xong trả giá về như cũ ở **cả** phần mềm và Worker (cùng một file, nên build và deploy lại cả hai).

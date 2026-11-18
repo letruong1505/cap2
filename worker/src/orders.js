@@ -123,7 +123,9 @@ export async function listOrders(db, { status, q } = {}, now = new Date()) {
   const revs = (await db.prepare('SELECT code, reason, revoked_at FROM revocations WHERE restored_at IS NULL').all()).results;
   const byDev = new Map(); for (const d of devs) { if (!byDev.has(d.code)) byDev.set(d.code, []); byDev.get(d.code).push({ machine: d.machine, version: d.version, first_seen: d.first_seen, last_seen: d.last_seen, online: now - new Date(d.last_seen) < ONLINE_MS }); }
   const byRev = new Map(revs.map((r) => [r.code, { reason: r.reason, at: r.revoked_at }]));
-  return orders.map((o) => ({ ...o, devices: byDev.get(o.code) || [], revoked: byRev.get(o.code) || null }));
+  const itemRevs = (await db.prepare('SELECT code, item, reason, revoked_at FROM item_revocations WHERE restored_at IS NULL').all()).results;
+  const byItem = new Map(); for (const r of itemRevs) { if (!byItem.has(r.code)) byItem.set(r.code, []); byItem.get(r.code).push({ item: r.item, reason: r.reason, at: r.revoked_at }); }
+  return orders.map((o) => ({ ...o, devices: byDev.get(o.code) || [], revoked: byRev.get(o.code) || null, item_revoked: byItem.get(o.code) || [] }));
 }
 
 export async function listUnmatched(db) {
@@ -208,18 +210,41 @@ export async function restoreOrder(db, code, now = new Date()) {
 }
 
 // Phần mềm gửi tín hiệu: ghi nhận máy đang mở phần mềm với các khóa của đơn, trả về những mã đơn đang bị thu hồi.
-export async function ping(db, input, now = new Date()) {
+// Thu hồi / khôi phục riêng một khóa học trong đơn (hoàn tiền một phần). Các khóa còn lại của đơn vẫn dùng bình thường.
+export async function revokeItem(db, code, item, reason, now = new Date()) {
+  const o = await getOrder(db, code);
+  if (!o || o.status !== 'paid') throw new HttpError(404, 'Chỉ thu hồi được đơn đã thanh toán.');
+  if (!JSON.parse(o.items).includes(item)) throw new HttpError(400, 'Khóa học này không thuộc đơn.');
+  await db.prepare('INSERT INTO item_revocations (code, item, reason, revoked_at, restored_at) VALUES (?1, ?2, ?3, ?4, NULL) ON CONFLICT(code, item) DO UPDATE SET reason = ?3, revoked_at = ?4, restored_at = NULL')
+    .bind(o.code, item, String(reason || 'Hoàn tiền một phần').slice(0, 200), nowIso(now)).run();
+}
+
+export async function restoreItem(db, code, item, now = new Date()) {
+  const o = await getOrder(db, code);
+  if (!o) throw new HttpError(404, 'Không tìm thấy đơn.');
+  const r = await db.prepare('UPDATE item_revocations SET restored_at = ?1 WHERE code = ?2 AND item = ?3 AND restored_at IS NULL').bind(nowIso(now), o.code, String(item)).run();
+  if (!r.meta.changes) throw new HttpError(409, 'Khóa học này không đang bị thu hồi.');
+}
+
+export async function ping(db, input, now = new Date(), catalog) {
   const machine = String(input && input.machineId || '').trim().toUpperCase();
   if (!MACHINE_RE.test(machine)) throw new HttpError(400, 'Mã máy không hợp lệ.');
   const ids = [...new Set((Array.isArray(input.ids) ? input.ids : []).slice(0, 20).map((x) => String(x).toUpperCase().replace(/^NL-/, '')).filter((x) => /^[A-Z0-9]{6}$/.test(x)))];
   const version = String(input.version || '').slice(0, 20);
-  const revoked = [];
+  const revoked = []; const revokedItems = {};
   for (const code of ids) {
     const o = await getOrder(db, code);
     if (!o || o.status !== 'paid') continue;
     await db.prepare('INSERT INTO devices (code, machine, version, first_seen, last_seen) VALUES (?1, ?2, ?3, ?4, ?4) ON CONFLICT(code, machine) DO UPDATE SET version = ?3, last_seen = ?4')
       .bind(o.code, machine, version, nowIso(now)).run();
     if (await db.prepare('SELECT 1 AS x FROM revocations WHERE code = ?1 AND restored_at IS NULL').bind(o.code).first()) revoked.push(o.code);
+    // Khóa học bị thu hồi riêng, đổi sang cách ghi trong khóa: lớp Văn hóa (grades) và khóa Kỹ năng (courses).
+    const gone = (await db.prepare('SELECT item FROM item_revocations WHERE code = ?1 AND restored_at IS NULL').bind(o.code).all()).results.map((r) => r.item);
+    if (gone.length && catalog) {
+      const grades = gone.map((id) => catalog.byId[id]?.grade).filter((g) => Number.isInteger(g)).sort((a, b) => a - b);
+      const courses = gone.filter((id) => catalog.byId[id] && !catalog.byId[id].grade);
+      revokedItems[o.code] = { grades, courses };
+    }
   }
-  return { revoked };
+  return { revoked, revokedItems };
 }

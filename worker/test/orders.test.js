@@ -179,7 +179,7 @@ test('tín hiệu từ máy: ghi nhận máy, online trong 10 phút rồi chuy�
   const db = fakeD1(); const { env } = testEnv();
   const code = await paidOrder(db, env);
   const t0 = new Date('2026-11-18T01:00:00Z');
-  assert.deepEqual(await ping(db, { machineId: MACHINE, ids: ['NL-' + code, 'KHONGCO', 'ZZZZZZ'], version: '1.2.9' }, t0), { revoked: [] });
+  assert.deepEqual((await ping(db, { machineId: MACHINE, ids: ['NL-' + code, 'KHONGCO', 'ZZZZZZ'], version: '1.2.9' }, t0)).revoked, []);
   let o = (await listOrders(db, {}, new Date(t0.getTime() + 5 * 60000)))[0];
   assert.equal(o.devices.length, 1);
   assert.equal(o.devices[0].online, true);
@@ -209,14 +209,14 @@ test('thu hồi: chỉ đơn đã thanh toán, ping trả về mã bị thu hồ
   await assert.rejects(revokeOrder(db, pend.code, 'x'), (e) => e.status === 404);
   await assert.rejects(restoreOrder(db, code), (e) => e.status === 409);
   await revokeOrder(db, code, 'Hoàn tiền');
-  assert.deepEqual(await ping(db, { machineId: MACHINE, ids: [code] }), { revoked: [code] });
+  assert.deepEqual((await ping(db, { machineId: MACHINE, ids: [code] })).revoked, [code]);
   const o = (await listOrders(db, { status: 'paid' }))[0];
   assert.equal(o.revoked.reason, 'Hoàn tiền');
   await restoreOrder(db, code);
-  assert.deepEqual(await ping(db, { machineId: MACHINE, ids: [code] }), { revoked: [] });
+  assert.deepEqual((await ping(db, { machineId: MACHINE, ids: [code] })).revoked, []);
   assert.equal((await listOrders(db, { status: 'paid' }))[0].revoked, null);
   await revokeOrder(db, code, 'Lần hai'); // thu hồi lại sau khi khôi phục
-  assert.deepEqual(await ping(db, { machineId: MACHINE, ids: [code] }), { revoked: [code] });
+  assert.deepEqual((await ping(db, { machineId: MACHINE, ids: [code] })).revoked, [code]);
 });
 
 test('đường dẫn: /api/ping công khai, thu hồi và khôi phục cần mật khẩu quản trị', async () => {
@@ -226,6 +226,38 @@ test('đường dẫn: /api/ping công khai, thu hồi và khôi phục cần m�
   assert.equal((await post('/api/admin/orders/' + code + '/revoke', { reason: 'x' })).status, 401);
   assert.equal((await post('/api/admin/orders/' + code + '/revoke', { reason: 'x' }, true)).status, 200);
   const r = await post('/api/ping', { machineId: MACHINE, ids: [code], version: '1' });
-  assert.deepEqual(await r.json(), { revoked: [code] });
+  assert.deepEqual((await r.json()).revoked, [code]);
   assert.equal((await post('/api/admin/orders/' + code + '/restore', {}, true)).status, 200);
+});
+
+// ---- Thu hồi riêng từng khóa học trong đơn (hoàn tiền một phần) ----
+test('thu hồi một khóa học: ping trả đúng lớp/khóa, khôi phục được, không thu hồi khóa lạ', async () => {
+  const { ping, revokeItem, restoreItem, listOrders } = await import('../src/orders.js');
+  const db = fakeD1(); const { env } = testEnv();
+  const code = await paidOrder(db, env); // gồm gia-su-ai và van-hoa-8
+  await assert.rejects(revokeItem(db, code, 'van-hoa-9', 'x'), (e) => e.status === 400);
+  await assert.rejects(restoreItem(db, code, 'van-hoa-8'), (e) => e.status === 409);
+  await revokeItem(db, code, 'van-hoa-8', 'Hoàn tiền một phần');
+  let r = await ping(db, { machineId: MACHINE, ids: [code] }, new Date(), catalog);
+  assert.deepEqual(r.revoked, []);
+  assert.deepEqual(r.revokedItems[code], { grades: [8], courses: [] });
+  await revokeItem(db, code, 'gia-su-ai', 'x');
+  r = await ping(db, { machineId: MACHINE, ids: [code] }, new Date(), catalog);
+  assert.deepEqual(r.revokedItems[code], { grades: [8], courses: ['gia-su-ai'] });
+  const o = (await listOrders(db, {}))[0];
+  assert.deepEqual(o.item_revoked.map((x) => x.item).sort(), ['gia-su-ai', 'van-hoa-8']);
+  await restoreItem(db, code, 'van-hoa-8');
+  r = await ping(db, { machineId: MACHINE, ids: [code] }, new Date(), catalog);
+  assert.deepEqual(r.revokedItems[code], { grades: [], courses: ['gia-su-ai'] });
+});
+
+test('đường dẫn quản trị: thu hồi/khôi phục theo khóa học cần mật khẩu', async () => {
+  const db = fakeD1(); const { env } = testEnv(); const e = { ...env, DB: db };
+  const code = await paidOrder(db, env);
+  const post = (path, body, auth) => handle(new Request('https://x.test' + path, { method: 'POST', headers: { 'content-type': 'application/json', ...(auth ? { authorization: 'Bearer admin-secret' } : {}) }, body: JSON.stringify(body) }), e);
+  assert.equal((await post('/api/admin/orders/' + code + '/revoke', { item: 'van-hoa-8' })).status, 401);
+  assert.equal((await post('/api/admin/orders/' + code + '/revoke', { item: 'van-hoa-8', reason: 'x' }, true)).status, 200);
+  const r = await (await post('/api/ping', { machineId: MACHINE, ids: [code] })).json();
+  assert.deepEqual(r.revokedItems[code], { grades: [8], courses: [] });
+  assert.equal((await post('/api/admin/orders/' + code + '/restore', { item: 'van-hoa-8' }, true)).status, 200);
 });

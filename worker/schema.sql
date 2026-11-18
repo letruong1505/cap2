@@ -56,3 +56,13 @@ CREATE TABLE IF NOT EXISTS devices (
   last_seen TEXT NOT NULL,
   PRIMARY KEY (code, machine)
 );
+
+-- Thu hồi riêng từng khóa học trong một đơn (hoàn tiền một phần). item là mã khóa học trong catalog, ví dụ van-hoa-9 hoặc gia-su-ai.
+CREATE TABLE IF NOT EXISTS item_revocations (
+  code TEXT NOT NULL,
+  item TEXT NOT NULL,
+  reason TEXT,
+  revoked_at TEXT NOT NULL,
+  restored_at TEXT,
+  PRIMARY KEY (code, item)
+);

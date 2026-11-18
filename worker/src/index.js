@@ -1,5 +1,5 @@
 import catalog from '../../renderer/catalog.js';
-import { HttpError, createOrder, orderStatus, applyPayment, listOrders, listUnmatched, approveOrder, cancelOrder, reissueOrder, attachTransaction, pinReset, revokeOrder, restoreOrder, ping } from './orders.js';
+import { HttpError, createOrder, orderStatus, applyPayment, listOrders, listUnmatched, approveOrder, cancelOrder, reissueOrder, attachTransaction, pinReset, revokeOrder, restoreOrder, revokeItem, restoreItem, ping } from './orders.js';
 import { adminPage } from './admin.js';
 
 const json = (data, status = 200) => new Response(JSON.stringify(data), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
@@ -38,7 +38,7 @@ export async function handle(req, env, now = new Date()) {
     }
 
     if (req.method === 'POST' && path === '/api/ping') {
-      return json(await ping(db, await body(req), now));
+      return json(await ping(db, await body(req), now, catalog));
     }
 
     // --- SePay gọi vào khi có tiền về ---
@@ -63,6 +63,8 @@ export async function handle(req, env, now = new Date()) {
       if (req.method === 'POST' && m) {
         const b = await body(req);
         if (m[2] === 'approve') return json({ key: await approveOrder(db, env, catalog, m[1], b.note, now) });
+        if (m[2] === 'revoke' && b.item) { await revokeItem(db, m[1], String(b.item), b.reason, now); return json({ ok: true }); }
+        if (m[2] === 'restore' && b.item) { await restoreItem(db, m[1], String(b.item), now); return json({ ok: true }); }
         if (m[2] === 'revoke') { await revokeOrder(db, m[1], b.reason, now); return json({ ok: true }); }
         if (m[2] === 'restore') { await restoreOrder(db, m[1], now); return json({ ok: true }); }
         if (m[2] === 'cancel') { await cancelOrder(db, m[1], b.note); return json({ ok: true }); }

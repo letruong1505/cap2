@@ -13,7 +13,7 @@ table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;ove
 th,td{padding:9px 12px;border-bottom:1px solid #e3e9f0;text-align:left;vertical-align:top;font-size:14px}
 th{background:#eaf0f7}
 .st{padding:2px 10px;border-radius:99px;font-size:12.5px;font-weight:700;display:inline-block}
-.on{background:#d9f2e1}.off{background:#eee}.rv{background:#f6d5d1}.pending{background:#fff4d6}.underpaid{background:#ffe0d6}.paid{background:#d9f2e1}.cancelled{background:#e6e6e6}
+.gone{text-decoration:line-through;color:#8a8f96}button.sm{padding:2px 8px;font-size:12.5px;margin-left:6px}.it{margin:2px 0}.on{background:#d9f2e1}.off{background:#eee}.rv{background:#f6d5d1}.pending{background:#fff4d6}.underpaid{background:#ffe0d6}.paid{background:#d9f2e1}.cancelled{background:#e6e6e6}
 .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 #msg{min-height:22px;color:#9b2b1f}
 code{font-size:12.5px;word-break:break-all}
@@ -38,6 +38,19 @@ function devCell(o){
   o.devices.forEach(function(d){c.append(el('div',{},el('code',{},d.machine),' ',el('span',{class:'st '+(d.online?'on':'off')},d.online?'Đang online':'Offline'),el('div',{},(d.online?'Bản '+(d.version||'?')+', đang mở phần mềm':'Mở gần nhất '+new Date(d.last_seen).toLocaleString('vi-VN')+(d.version?', bản '+d.version:'')))))});
   c.append(el('div',{},'Máy đặt đơn: ',el('code',{},o.machine)));
   return c}
+function itemsCell(o,names){
+  var c=el('div',{});
+  JSON.parse(o.items).forEach(function(id){
+    var nm=CAT[id]?CAT[id].name:id,rv=(o.item_revoked||[]).filter(function(r){return r.item===id})[0],row=el('div',{class:'it'});
+    if(rv){
+      row.append(el('span',{class:'gone'},nm),' ',el('span',{class:'st rv'},'Đã thu hồi'),el('button',{class:'p sm',onclick:function(){if(confirm('Khôi phục khóa học "'+nm+'" của đơn '+o.code+'?'))api('POST','/api/admin/orders/'+o.code+'/restore',{item:id}).then(load).catch(function(e){msg.textContent=e.message})}},'Khôi phục'));
+      if(rv.reason)row.append(el('div',{},rv.reason+' ('+new Date(rv.at).toLocaleString('vi-VN')+')'))
+    }else{
+      row.append(nm);
+      if(o.status==='paid'&&!o.revoked)row.append(el('button',{class:'d sm',onclick:function(){var x=prompt('THU HỒI RIÊNG khóa học "'+nm+'" của '+o.name+' ('+o.phone+'), đơn '+money(o.amount)+'.\\nCác khóa khác trong đơn vẫn dùng bình thường.\\nGõ lại mã đơn '+o.code+' để xác nhận:');if(x===null)return;if(x.trim().toUpperCase().replace(/^NL-/,'')!==o.code){alert('Mã đơn không khớp, chưa thu hồi.');return}var r=prompt('Lý do (hoàn tiền một phần...):','Hoàn tiền một phần');if(r===null)return;api('POST','/api/admin/orders/'+o.code+'/revoke',{item:id,reason:r}).then(load).catch(function(e){msg.textContent=e.message})}},'Thu hồi'))
+    }
+    c.append(row)});
+  return c}
 function showKey(k){window.prompt('Khóa kích hoạt (sao chép):',k)}
 function load(){
   msg.textContent='';
@@ -53,7 +66,7 @@ function load(){
       if(o.status==='paid'&&!o.revoked){ops.append(el('button',{class:'d',onclick:function(){var c=prompt('THU HỒI khóa của '+o.name+' ('+o.phone+'), '+names+', '+money(o.amount)+'.\\nGõ lại mã đơn '+o.code+' để xác nhận:');if(c===null)return;if(c.trim().toUpperCase().replace(/^NL-/,'')!==o.code){alert('Mã đơn không khớp, chưa thu hồi.');return}var r=prompt('Lý do thu hồi (hoàn tiền, vi phạm...):','Hoàn tiền');if(r===null)return;act(o,'revoke',{reason:r})}},'Thu hồi'))}
       if(o.revoked){ops.append(el('button',{class:'p',onclick:function(){if(confirm('Khôi phục khóa của đơn '+o.code+'? Máy khách dùng lại được ở lần mở phần mềm kế tiếp có mạng.'))act(o,'restore',{})}},'Khôi phục'))}
       if(o.status==='paid'){ops.append(el('button',{onclick:function(){act(o,'reissue',{machine:o.machine},function(r){showKey(r.key)})}},'Xem key'));ops.append(el('button',{onclick:function(){var m=prompt('Mã máy mới (XXXX-XXXX-XXXX):');if(m)act(o,'reissue',{machine:m},function(r){showKey(r.key);load()})}},'Đổi máy'))}
-      tb.append(el('tr',{},el('td',{},el('code',{},'NL-'+o.code),el('div',{},new Date(o.created_at).toLocaleString('vi-VN'))),el('td',{},o.name,el('div',{},o.phone)),el('td',{},names),el('td',{},money(o.amount),o.paid_amount&&o.paid_amount!==o.amount?el('div',{},'đã nhận '+money(o.paid_amount)):null),el('td',{},el('span',{class:'st '+o.status},LBL[o.status]||o.status),o.revoked?el('div',{},el('span',{class:'st rv'},'Đã thu hồi'),el('div',{},(o.revoked.reason||'')+' ('+new Date(o.revoked.at).toLocaleString('vi-VN')+')')):null,o.note?el('div',{},o.note):null,o.reissues?el('div',{},'đã đổi máy '+o.reissues+' lần'):null),el('td',{},devCell(o)),el('td',{},ops)));
+      tb.append(el('tr',{},el('td',{},el('code',{},'NL-'+o.code),el('div',{},new Date(o.created_at).toLocaleString('vi-VN'))),el('td',{},o.name,el('div',{},o.phone)),el('td',{},itemsCell(o,names)),el('td',{},money(o.amount),o.paid_amount&&o.paid_amount!==o.amount?el('div',{},'đã nhận '+money(o.paid_amount)):null),el('td',{},el('span',{class:'st '+o.status},LBL[o.status]||o.status),o.revoked?el('div',{},el('span',{class:'st rv'},'Đã thu hồi'),el('div',{},(o.revoked.reason||'')+' ('+new Date(o.revoked.at).toLocaleString('vi-VN')+')')):null,o.note?el('div',{},o.note):null,o.reissues?el('div',{},'đã đổi máy '+o.reissues+' lần'):null),el('td',{},devCell(o)),el('td',{},ops)));
     });
     box.append(d.orders.length?tb:el('p',{},'Chưa có đơn.'));
     return api('GET','/api/admin/transactions');

@@ -9,7 +9,7 @@ function createHeartbeat({ dir, client, lic, version, intervalMs = INTERVAL_MS, 
     if (!ids.length) return { sent: false };
     const r = await client.ping({ ids, version });
     if (!r.ok) return { sent: true, ok: false };
-    const changed = Array.isArray(r.data && r.data.revoked) ? lic.setRevoked(dir, r.data.revoked) : false;
+    const changed = Array.isArray(r.data && r.data.revoked) ? lic.setRevoked(dir, r.data.revoked, r.data.revokedItems) : false;
     return { sent: true, ok: true, changed };
   }
   function start() {

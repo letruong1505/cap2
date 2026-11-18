@@ -11,9 +11,11 @@ function readStore(dir) {
     const keys = Array.isArray(d.keys) ? d.keys.filter((k) => typeof k === 'string' && k) : (typeof d.key === 'string' && d.key ? [d.key] : []);
     // revoked: mã đơn bị thu hồi do máy chủ báo về, lưu lại để khóa vẫn bị vô hiệu khi mở phần mềm lúc không có mạng.
     const revoked = Array.isArray(d.revoked) ? d.revoked.filter((c) => typeof c === 'string') : [];
-    return { keys, lastSeen: typeof d.lastSeen === 'string' ? d.lastSeen : '', revoked };
+    // revokedItems: khóa học bị thu hồi riêng trong đơn, dạng { MÃĐƠN: { grades: [..], courses: [..] } }.
+    const revokedItems = d.revokedItems && typeof d.revokedItems === 'object' && !Array.isArray(d.revokedItems) ? d.revokedItems : {};
+    return { keys, lastSeen: typeof d.lastSeen === 'string' ? d.lastSeen : '', revoked, revokedItems };
   } catch {
-    return { keys: [], lastSeen: '', revoked: [] };
+    return { keys: [], lastSeen: '', revoked: [], revokedItems: {} };
   }
 }
 
@@ -25,7 +27,7 @@ function writeStore(dir, data) {
 // Ghi đè một phần, giữ nguyên các trường còn lại.
 function updateStore(dir, patch) {
   const cur = readStore(dir);
-  writeStore(dir, { keys: cur.keys, lastSeen: cur.lastSeen, revoked: cur.revoked, ...patch });
+  writeStore(dir, { keys: cur.keys, lastSeen: cur.lastSeen, revoked: cur.revoked, revokedItems: cur.revokedItems, ...patch });
 }
 
 module.exports = { readStore, writeStore, updateStore };

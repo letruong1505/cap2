@@ -133,3 +133,23 @@ test('tín hiệu định kỳ: gửi mã đơn và cập nhật danh sách thu 
   const none = createHeartbeat({ dir, lic: { pingCodes: () => [] }, version: 'x', client: { ping: async () => { throw new Error('không được gọi'); } } });
   assert.deepStrictEqual(await none.beat(), { sent: false });
 });
+
+test('hoàn tiền một phần: chỉ tắt đúng lớp/khóa bị thu hồi, các khóa khác trong cùng đơn vẫn dùng', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'lic-'));
+  const k = issue({ id: 'NL-AAAAAA', grades: [8, 9], courses: ['gia-su-ai', 'cong-dan-so'], expires: 'never' });
+  lic.activate(dir, k, NOW, publicKey);
+  assert.strictEqual(lic.setRevoked(dir, [], { AAAAAA: { grades: [9], courses: ['gia-su-ai'] } }), true);
+  assert.strictEqual(lic.setRevoked(dir, [], { AAAAAA: { grades: [9], courses: ['gia-su-ai'] } }), false);
+  let r = lic.currentLicense(dir, NOW, publicKey);
+  assert.strictEqual(r.status, 'ok');
+  assert.deepStrictEqual(r.grades, [8]); assert.deepStrictEqual(r.courses, ['cong-dan-so']);
+  assert.strictEqual(lic.hasGrade(r, 'toan-9'), false);
+  assert.strictEqual(lic.hasGrade(r, 'toan-8'), true);
+  // Khôi phục: danh sách rỗng thì dùng lại đủ.
+  lic.setRevoked(dir, [], {});
+  r = lic.currentLicense(dir, NOW, publicKey);
+  assert.deepStrictEqual(r.grades, [8, 9]); assert.deepStrictEqual(r.courses, ['gia-su-ai', 'cong-dan-so']);
+  // Thu hồi hết mọi khóa của đơn thì coi như thu hồi cả đơn.
+  lic.setRevoked(dir, [], { AAAAAA: { grades: [8, 9], courses: ['gia-su-ai', 'cong-dan-so'] } });
+  assert.strictEqual(lic.currentLicense(dir, NOW, publicKey).status, 'revoked');
+});
