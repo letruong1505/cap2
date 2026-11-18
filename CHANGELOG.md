@@ -1,4 +1,5 @@
 ## Bản mới
+- Thêm màn hình Ôn thi THPT Quốc gia: chọn 2 môn tự chọn để xem khối thi; bài học và đề đang được biên soạn.
 - Cập nhật chính sách & điều khoản hoàn tiền.
 - Hỗ trợ thu hồi bản quyền trực tuyến khi hoàn tiền, kể cả hoàn tiền riêng một khóa học; phần mềm tự cập nhật ngay khi khóa bị thu hồi hoặc khôi phục.
 - Sửa lỗi ảnh báo cáo học tập bị cắt chữ ở các dòng dài.

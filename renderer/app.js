@@ -311,7 +311,7 @@ function updateScore(lesson, attempt) {
 }
 
 function showOnly(id) {
-  for (const sec of ['launch', 'subjects', 'home', 'lesson', 'games', 'game', 'national', 'aiwork', 'examprep', 'purchase', 'review', 'report', 'empty']) {
+  for (const sec of ['launch', 'subjects', 'home', 'lesson', 'games', 'game', 'national', 'aiwork', 'examprep', 'thpt', 'purchase', 'review', 'report', 'empty']) {
     document.getElementById(sec).hidden = sec !== id;
   }
 }
@@ -658,14 +658,22 @@ function renderGrades() {
     else btn.disabled = true;
     box.append(btn);
   }
-  // Ôn thi THPT: content not yet ready, shown beside Lớp 12 as a placeholder tile.
-  const thpt = el('button', { class: 'grade-tile', type: 'button', disabled: true, 'aria-label': 'Ôn thi THPT' });
+  // Ôn thi THPT: màn hình khung (chọn tổ hợp, khối thi); bài học và đề đang được biên soạn.
+  const thpt = el('button', { class: 'grade-tile', type: 'button', 'aria-label': 'Ôn thi THPT' });
   thpt.append(
     el('span', { class: 'grade-word' }, 'Ôn thi'),
     el('span', { class: 'grade-num long' }, 'THPT'),
     el('span', { class: 'grade-note' }, 'Đang biên soạn · 555.000 đ'),
   );
+  thpt.addEventListener('click', () => showThpt());
   box.append(thpt);
+}
+
+function showThpt() {
+  document.getElementById('breadcrumb').textContent = '';
+  window.ThptExam.open();
+  showOnly('thpt');
+  window.scrollTo(0, 0);
 }
 
 // Ôn thi và luyện đề (tặng kèm Lớp 9): chọn môn rồi làm đề thử vào lớp 10. Đề đang được biên soạn.
@@ -826,6 +834,7 @@ async function init() {
     });
     document.getElementById('btn-grades').addEventListener('click', () => showLaunch());
     document.getElementById('btn-national-back').addEventListener('click', () => showLaunch());
+    document.getElementById('btn-thpt-back').addEventListener('click', () => showLaunch());
     document.getElementById('open-national').addEventListener('click', () => showNational());
     document.getElementById('open-aiwork').addEventListener('click', () => showAiWork());
     const openProg = async (kind, grade) => {
