@@ -138,3 +138,23 @@ test('danh sách đơn của admin kèm mã đối tác và giá từng khóa', 
   assert.equal(mine.prices['gia-su-ai'].paid, 799200);
   assert.equal(mine.prices['gia-su-ai'].list, 999000);
 });
+
+test('mã đối tác giới hạn số máy: máy mới vượt giới hạn bị từ chối, máy đã dùng vẫn mua thêm được', async () => {
+  const db = fakeD1();
+  await createPartnerCode(db, { code: 'DT-LIM', partner: 'Đối tác giới hạn', percent: 20, maxMachines: 2 }, NOW);
+  const rnd = (n) => () => Uint8Array.from([n, 1, 2, 3, 4, 5]);
+  await createOrder(db, catalog, input({ partnerCode: 'DT-LIM', machineId: 'AAAA-AAAA-AAAA' }), NOW, rnd(0));
+  await createOrder(db, catalog, input({ partnerCode: 'DT-LIM', machineId: 'BBBB-BBBB-BBBB' }), NOW, rnd(1));
+  await assert.rejects(createOrder(db, catalog, input({ partnerCode: 'DT-LIM', machineId: 'CCCC-CCCC-CCCC' }), NOW, rnd(2)), (e) => e.status === 403);
+  // máy đã dùng mã vẫn được mua thêm khóa khác
+  await createOrder(db, catalog, input({ partnerCode: 'DT-LIM', machineId: 'AAAA-AAAA-AAAA' }), NOW, rnd(3));
+  // không dùng mã thì máy nào cũng mua được
+  await createOrder(db, catalog, input({ machineId: 'CCCC-CCCC-CCCC' }), NOW, rnd(4));
+});
+
+test('số máy tối đa mặc định 5 và phải là số nguyên từ 1 đến 1000', async () => {
+  const db = fakeD1();
+  assert.equal((await createPartnerCode(db, { code: 'M-1', partner: 'Ab' }, NOW)).maxMachines, 5);
+  await assert.rejects(createPartnerCode(db, { code: 'M-2', partner: 'Ab', maxMachines: 0 }, NOW), HttpError);
+  await assert.rejects(createPartnerCode(db, { code: 'M-3', partner: 'Ab', maxMachines: 1001 }, NOW), HttpError);
+});

@@ -76,6 +76,12 @@ CREATE TABLE IF NOT EXISTS partner_codes (
   created_at TEXT NOT NULL
 );
 
+-- Số máy tối đa được dùng mỗi mã đối tác (bảng riêng để chạy lại schema an toàn trên DB đã có).
+CREATE TABLE IF NOT EXISTS partner_limits (
+  code TEXT PRIMARY KEY,
+  max_machines INTEGER NOT NULL
+);
+
 -- Giá từng khóa trong đơn: giá niêm yết, giá khách thực trả và mã đối tác đã áp (nếu có). Dùng cho hoàn tiền một phần và phiếu xác nhận.
 CREATE TABLE IF NOT EXISTS order_prices (
   code TEXT NOT NULL,

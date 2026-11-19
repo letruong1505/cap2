@@ -22,7 +22,7 @@ h2{margin:26px 0 0;font-size:17px}
 <header><h1>Quản trị đơn - Nam Linh Educenter</h1><div class="row"><input id="tok" type="password" placeholder="Mật khẩu quản trị" autocomplete="off"><button class="p" id="go">Vào</button></div></header>
 <main><div class="row"><select id="st"><option value="">Tất cả trạng thái</option><option value="pending">Chờ thanh toán</option><option value="underpaid">Chuyển thiếu</option><option value="paid">Đã thanh toán</option><option value="cancelled">Đã hủy</option></select>
 <input id="q" placeholder="Tìm tên, SĐT, mã đơn, mã máy"><button id="rf">Tải lại</button></div><div id="msg" role="status"></div>
-<div id="orders"></div><h2>Mã đối tác</h2><div class="row"><input id="pc" placeholder="Mã, ví dụ DT-HOAI" maxlength="20"><input id="pp" placeholder="Tên đối tác" maxlength="60"><input id="pn" type="number" value="20" min="1" max="99" style="width:90px" title="Giảm (%)"><button class="p" id="pcAdd">Tạo mã</button></div><div id="partners"></div><h2>Giao dịch chưa khớp đơn hoặc cần xử lý</h2><div id="tx"></div></main>
+<div id="orders"></div><h2>Mã đối tác</h2><div class="row"><input id="pc" placeholder="Mã, ví dụ DT-HOAI" maxlength="20"><input id="pp" placeholder="Tên đối tác" maxlength="60"><input id="pn" type="number" value="20" min="1" max="99" style="width:90px" title="Giảm (%)"><input id="pm" type="number" value="5" min="1" max="1000" style="width:90px" title="Số máy tối đa" placeholder="Số máy"><button class="p" id="pcAdd">Tạo mã</button></div><div id="partners"></div><h2>Giao dịch chưa khớp đơn hoặc cần xử lý</h2><div id="tx"></div></main>
 <script nonce="__N__">
 (function(){
 var T=document.getElementById('tok'),msg=document.getElementById('msg'),CAT={};
@@ -56,15 +56,15 @@ function refundOpen(o){return !!o.paid_at&&Date.now()-new Date(o.paid_at).getTim
 function loadPartners(){
   api('GET','/api/admin/partner-codes').then(function(d){
     var box=document.getElementById('partners');box.replaceChildren();
-    var tb=el('table',{},el('tr',{},el('th',{},'Mã'),el('th',{},'Đối tác'),el('th',{},'Giảm'),el('th',{},'Trạng thái'),el('th',{},'Số đơn đã dùng'),el('th',{},'')));
+    var tb=el('table',{},el('tr',{},el('th',{},'Mã'),el('th',{},'Đối tác'),el('th',{},'Giảm'),el('th',{},'Máy đã dùng'),el('th',{},'Trạng thái'),el('th',{},'Số đơn đã dùng'),el('th',{},'')));
     d.partners.forEach(function(p){
-      tb.append(el('tr',{},el('td',{},el('code',{},p.code)),el('td',{},p.partner),el('td',{},p.percent+'%'),el('td',{},el('span',{class:'st '+(p.active?'on':'off')},p.active?'Đang bật':'Đã tắt')),el('td',{},String(p.used||0)),el('td',{},el('button',{onclick:function(){if(!confirm((p.active?'Tắt':'Bật')+' mã '+p.code+'?'))return;api('POST','/api/admin/partner-codes/'+encodeURIComponent(p.code)+'/active',{active:!p.active}).then(loadPartners).catch(function(e){msg.textContent=e.message})}},p.active?'Tắt':'Bật'))));
+      tb.append(el('tr',{},el('td',{},el('code',{},p.code)),el('td',{},p.partner),el('td',{},p.percent+'%'),el('td',{},(p.machines||0)+'/'+(p.max_machines||'∞')+' máy'),el('td',{},el('span',{class:'st '+(p.active?'on':'off')},p.active?'Đang bật':'Đã tắt')),el('td',{},String(p.used||0)),el('td',{},el('button',{onclick:function(){if(!confirm((p.active?'Tắt':'Bật')+' mã '+p.code+'?'))return;api('POST','/api/admin/partner-codes/'+encodeURIComponent(p.code)+'/active',{active:!p.active}).then(loadPartners).catch(function(e){msg.textContent=e.message})}},p.active?'Tắt':'Bật'))));
     });
     box.append(d.partners.length?tb:el('p',{},'Chưa có mã đối tác.'));
   }).catch(function(e){msg.textContent=e.message});
 }
 document.getElementById('pcAdd').onclick=function(){
-  api('POST','/api/admin/partner-codes',{code:document.getElementById('pc').value,partner:document.getElementById('pp').value,percent:Number(document.getElementById('pn').value)})
+  api('POST','/api/admin/partner-codes',{code:document.getElementById('pc').value,partner:document.getElementById('pp').value,percent:Number(document.getElementById('pn').value),maxMachines:Number(document.getElementById('pm').value)})
     .then(function(){document.getElementById('pc').value='';document.getElementById('pp').value='';loadPartners()})
     .catch(function(e){msg.textContent=e.message});
 };
