@@ -20,7 +20,7 @@ async function body(req) {
   try { return await req.json(); } catch { throw new HttpError(400, 'Dữ liệu gửi lên không hợp lệ.'); }
 }
 
-export async function handle(req, env, now = new Date()) {
+async function route(req, env, now) {
   const url = new URL(req.url);
   const path = url.pathname.replace(/\/+$/, '') || '/';
   const db = env.DB;
@@ -92,6 +92,26 @@ export async function handle(req, env, now = new Date()) {
     console.error('lỗi', e && e.stack || e);
     return json({ error: 'Lỗi máy chủ.' }, 500);
   }
+}
+
+// Ứng dụng Android chạy trong WebView ở địa chỉ https://localhost nên trình duyệt đòi CORS khi gọi sang máy chủ này.
+// Chỉ mở cho các địa chỉ của chính ứng dụng và chỉ cho các đường dẫn của phần mềm khách; trang quản trị và SePay không mở.
+export const APP_ORIGINS = ['https://localhost', 'http://localhost', 'capacitor://localhost'];
+const CLIENT_PATH = /^\/api\/(orders(\/[A-Za-z0-9]{6}\/status)?|pin-reset|claim-device|ping)$/;
+
+export async function handle(req, env, now = new Date()) {
+  const origin = req.headers.get('origin');
+  const path = new URL(req.url).pathname.replace(/\/+$/, '') || '/';
+  const cors = origin && APP_ORIGINS.includes(origin) && CLIENT_PATH.test(path) ? { 'access-control-allow-origin': origin, vary: 'Origin' } : null;
+  if (req.method === 'OPTIONS') {
+    if (!cors) return new Response(null, { status: 403 });
+    return new Response(null, { status: 204, headers: { ...cors, 'access-control-allow-methods': 'GET, POST, OPTIONS', 'access-control-allow-headers': 'content-type', 'access-control-max-age': '86400' } });
+  }
+  const res = await route(req, env, now);
+  if (!cors) return res;
+  const headers = new Headers(res.headers);
+  for (const [k, v] of Object.entries(cors)) headers.set(k, v);
+  return new Response(res.body, { status: res.status, headers });
 }
 
 export default { fetch: (req, env) => handle(req, env) };
