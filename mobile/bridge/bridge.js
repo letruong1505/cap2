@@ -18,6 +18,7 @@
     var heartbeat = Heartbeat.create({ lic: lic, client: client, version: o.config.version, intervalMs: o.intervalMs, setTimeoutFn: o.setTimeoutFn, setIntervalFn: o.setIntervalFn,
       onChange: function () { listeners.slice().forEach(function (cb) { try { cb(); } catch (e) { /* bỏ qua */ } }); } });
     var off = { state: 'off' };
+    var up = o.updater || null;
     var userStore = o.userStore || { all: function () { return {}; }, set: function () {} };
 
     function afterActivate(license) { heartbeat.beat().catch(function () {}); return license; }
@@ -53,17 +54,17 @@
           return r;
         });
       },
-      // Cập nhật: bản Android cập nhật bằng tệp APK mới hoặc CH Play, không tự cập nhật trong app.
-      updateStatus: function () { return Promise.resolve(off); },
-      checkUpdate: function () { return Promise.resolve(off); },
-      downloadUpdate: function () { return Promise.resolve(off); },
-      installUpdate: function () { return Promise.resolve(false); },
-      onUpdate: function () {},
+      // Cập nhật: o.updater (mobile/bridge/updater.js) lo gói nội dung và apk mới; không có thì tắt (chạy thử trên trình duyệt).
+      updateStatus: function () { return Promise.resolve(up ? up.status() : off); },
+      checkUpdate: function () { return up ? up.check() : Promise.resolve(off); },
+      downloadUpdate: function () { return up ? up.download() : Promise.resolve(off); },
+      installUpdate: function () { return up ? up.install() : Promise.resolve(false); },
+      onUpdate: function (cb) { if (up) up.onUpdate(cb); },
       onLicenseChanged: function (cb) { listeners.push(cb); },
       storeAll: function () { try { return userStore.all() || {}; } catch (e) { return {}; } },
       storeSet: function (k, v) { try { userStore.set(String(k), v); } catch (e) { /* bỏ qua */ } },
     };
-    return { api: api, heartbeat: heartbeat, license: lic, client: client };
+    return { api: api, heartbeat: heartbeat, license: lic, client: client, updater: up };
   }
 
   // Bản sao dữ liệu người dùng (PIN, tiến độ...) lưu song song với localStorage, để khôi phục khi localStorage bị xóa.

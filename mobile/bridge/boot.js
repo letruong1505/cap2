@@ -29,12 +29,24 @@
 
   // Nội dung phụ thuộc mã thiết bị (async) và danh sách môn (product.json), nên dựng cầu nối sau khi có đủ hai thứ.
   var rawSet = Storage.prototype.setItem; var rawGet = Storage.prototype.getItem; var rawRemove = Storage.prototype.removeItem;
+  // Cập nhật ứng dụng: chỉ bật khi chạy trong apk có trang khởi động OTA (NL_NATIVE) và kho gói (NLOtaStore).
+  var updater = null;
+  if (window.NL_NATIVE && window.NLOtaStore && window.NLMobileUpdater && window.NL_NATIVE.otaPublicKey) {
+    updater = window.NLMobileUpdater.create({
+      fetchFn: function (u, i) { return fetch(u, i); }, baseUrl: function () { return cfg.ordersBaseUrl; }, nacl: window.nacl,
+      b64uToBytes: window.NLMobileLicense.b64uToBytes, otaPublicKey: window.NLMobileLicense.b64uToBytes(window.NL_NATIVE.otaPublicKey.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '')),
+      native: window.NL_NATIVE, runningBuild: function () { return window.NL_OTA_RUNNING || window.NL_NATIVE.code; },
+      store: window.NLOtaStore, storage: { get: function (k) { return rawGet.call(ls, k); }, set: function (k, v) { rawSet.call(ls, k, v); } },
+      openUrl: function (u) { window.open(u, '_blank'); }, reload: function () { location.href = 'index.html'; },
+    });
+  }
+
   var ready = Promise.all([rawDeviceId(), fetchText('product.json').then(JSON.parse)]).then(function (r) {
     return window.NLMobileBridge.create({
       nacl: window.nacl, publicKey: keyBytes,
       storage: { get: function (k) { return rawGet.call(ls, k); }, set: function (k, v) { rawSet.call(ls, k, v); } },
       rawDeviceId: r[0] || fallbackId(), fetchFn: function (u, i) { return fetch(u, i); }, fetchText: fetchText, product: r[1], config: cfg,
-      userStore: window.NLMobileBridge.mirrorUserStore(ls, rawGet, rawSet, rawRemove),
+      userStore: window.NLMobileBridge.mirrorUserStore(ls, rawGet, rawSet, rawRemove), updater: updater,
     });
   });
 
@@ -44,9 +56,11 @@
   var names = ['loadManifest', 'loadLesson', 'appInfo', 'productInfo', 'loadLicense', 'activateLicense', 'removeLicense', 'createOrder', 'pinReset', 'orderStatus', 'claimDevice', 'updateStatus', 'checkUpdate', 'downloadUpdate', 'installUpdate'];
   var proxy = { version: cfg.version || 'android', platform: 'android',
     storeAll: function () { return mirror.all(); }, storeSet: function (k, v) { mirror.set(String(k), v); },
-    onUpdate: function () {},
+    onUpdate: function (cb) { ready.then(function (b) { b.api.onUpdate(cb); }); },
     onLicenseChanged: function (cb) { ready.then(function (b) { b.api.onLicenseChanged(cb); }); } };
   names.forEach(function (n) { proxy[n] = function () { var a = arguments; return ready.then(function (b) { return b.api[n].apply(null, a); }); }; });
   window.vungBai = proxy;
   ready.then(function (b) { b.heartbeat.start(); }).catch(function () {});
+  // Kiểm tra bản mới ngầm sau khi mở app vài giây (tối đa mỗi 6 giờ một lần).
+  if (updater) setTimeout(function () { updater.check({ auto: true }); }, 4000);
 })();

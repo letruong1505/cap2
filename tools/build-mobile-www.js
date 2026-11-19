@@ -19,7 +19,7 @@ function rawPublicKey(pemPath) {
   return Buffer.from(der.subarray(-32)).toString('base64');
 }
 
-const SCRIPTS = ['mobile/vendor/nacl-fast.min.js', 'mobile/mobile-config.js', 'mobile/license.js', 'mobile/api.js', 'mobile/content.js', 'mobile/heartbeat.js', 'mobile/machine.js', 'mobile/bridge.js', 'mobile/boot.js'];
+const SCRIPTS = ['mobile/native.js', 'mobile/ota-store.js', 'mobile/vendor/nacl-fast.min.js', 'mobile/mobile-config.js', 'mobile/license.js', 'mobile/api.js', 'mobile/content.js', 'mobile/heartbeat.js', 'mobile/machine.js', 'mobile/updater.js', 'mobile/bridge.js', 'mobile/boot.js'];
 
 // Chỉnh index.html cho điện thoại: nạp cầu nối trước persist-shim.js, cho phép gọi máy chủ đơn hàng, thêm viewport, sửa đường dẫn core/.
 function rewriteIndex(html, apiOrigin) {
@@ -27,13 +27,35 @@ function rewriteIndex(html, apiOrigin) {
   let out = html.replace('  <script src="persist-shim.js"></script>', tags + '  <script src="persist-shim.js"></script>');
   if (out === html) throw new Error('Không tìm thấy persist-shim.js trong index.html');
   out = out.replace('src="../core/rational.js"', 'src="core/rational.js"');
+  // blob: cho phép nạp gói cập nhật nội dung (OTA) đã được kiểm tra chữ ký.
+  out = out.replace("default-src 'self';", "default-src 'self'; script-src 'self' blob:;");
   out = out.replace("font-src 'self'\"", `font-src 'self'; connect-src 'self' ${apiOrigin}"`);
   if (!out.includes(`connect-src 'self' ${apiOrigin}`)) throw new Error('Không sửa được Content-Security-Policy');
   if (!/name="viewport"/.test(out)) out = out.replace('<meta charset="UTF-8" />', '<meta charset="UTF-8" />\n  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />');
   return out;
 }
 
-function build({ out, pubkey, version, commit, api }) {
+// Trang khởi động (index.html): đọc gói OTA nếu có, nếu không thì chuyển sang app.html trong apk.
+function launcherHtml(apiOrigin) {
+  return `<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' ${apiOrigin}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Nam Linh Educenter</title>
+  <style>html,body{margin:0;background:#14304F}</style>
+</head>
+<body>
+  <script src="mobile/native.js"></script>
+  <script src="mobile/ota-store.js"></script>
+  <script src="mobile/ota-boot.js"></script>
+</body>
+</html>
+`;
+}
+
+function build({ out, pubkey, version, commit, api, versionCode = 1, otaPublicKey }) {
   fs.rmSync(out, { recursive: true, force: true });
   fs.mkdirSync(path.join(out, 'mobile'), { recursive: true });
   fs.cpSync(path.join(ROOT, 'renderer'), out, { recursive: true });
@@ -47,14 +69,19 @@ function build({ out, pubkey, version, commit, api }) {
   fs.copyFileSync(path.join(ROOT, 'mobile', 'vendor', 'TWEETNACL-LICENSE.txt'), path.join(out, 'mobile', 'vendor', 'TWEETNACL-LICENSE.txt'));
   const config = { publicKey: rawPublicKey(pubkey), ordersBaseUrl: api, version, commit };
   fs.writeFileSync(path.join(out, 'mobile', 'mobile-config.js'), 'window.NL_MOBILE_CONFIG = ' + JSON.stringify(config) + ';\n');
-  fs.writeFileSync(path.join(out, 'index.html'), rewriteIndex(fs.readFileSync(path.join(ROOT, 'renderer', 'index.html'), 'utf8'), new URL(api).origin));
+  const native = { code: versionCode, version, otaPublicKey };
+  fs.writeFileSync(path.join(out, 'mobile', 'native.js'), 'window.NL_NATIVE = ' + JSON.stringify(native) + ';\n');
+  fs.writeFileSync(path.join(out, 'app.html'), rewriteIndex(fs.readFileSync(path.join(ROOT, 'renderer', 'index.html'), 'utf8'), new URL(api).origin));
+  fs.writeFileSync(path.join(out, 'index.html'), launcherHtml(new URL(api).origin));
+  fs.copyFileSync(path.join(ROOT, 'mobile', 'bridge', 'ota-boot.js'), path.join(out, 'mobile', 'ota-boot.js'));
   return config;
 }
 
-module.exports = { build, rewriteIndex, rawPublicKey, SCRIPTS };
+module.exports = { build, rewriteIndex, launcherHtml, rawPublicKey, SCRIPTS };
 
 if (require.main === module) {
   const api = arg('api', JSON.parse(fs.readFileSync(path.join(ROOT, 'main', 'orders-api.json'), 'utf8')).baseUrl);
-  const cfg = build({ out: path.resolve(arg('out', path.join(ROOT, 'mobile', 'www'))), pubkey: path.resolve(arg('pubkey', path.join(ROOT, 'main', 'license', 'public-key.pem'))), version: arg('version', JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8')).version), commit: arg('commit', 'local'), api });
+  const cfg = build({ out: path.resolve(arg('out', path.join(ROOT, 'mobile', 'www'))), pubkey: path.resolve(arg('pubkey', path.join(ROOT, 'main', 'license', 'public-key.pem'))), version: arg('version', JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8')).version), commit: arg('commit', 'local'), api,
+    versionCode: Number(arg('version-code', '1')), otaPublicKey: fs.readFileSync(path.join(ROOT, 'mobile', 'ota-public-key.txt'), 'utf8').trim() });
   console.log('Đã tạo', arg('out', 'mobile/www'), '— bản', cfg.version, '— máy chủ', cfg.ordersBaseUrl);
 }

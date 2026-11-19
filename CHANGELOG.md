@@ -1,7 +1,8 @@
 ## Bản mới
-- Một đơn dùng được cho 1 máy tính và 1 điện thoại; thêm mục "Đã mua ở thiết bị khác?" để nhận khóa bằng mã đơn và số điện thoại.
+- Bản Android tự cập nhật: tự tải và dùng bản sửa lỗi ở lần mở sau, chỉ phải cài lại khi có thay đổi lớn.
 
 ## Các bản trước
+- Một đơn dùng được cho 1 máy tính và 1 điện thoại; thêm mục "Đã mua ở thiết bị khác?" để nhận khóa bằng mã đơn và số điện thoại.
 - Làm đẹp giao diện: sửa lỗi trang Mua khóa học bị tràn đè lên khung Đơn hàng trên màn hình nhỏ, chỉnh ô nhập mã đối tác và khoảng cách các thẻ.
 - Cập nhật chính sách & điều khoản hoàn tiền: tính 7 ngày từ lúc thanh toán thành công, hoàn tiền theo số tiền sau khi giảm.
 - Mua khóa học: nhập mã đối tác để được giảm theo tỉ lệ của mã trên giá từng khóa (cần kết nối mạng). Sau khi thanh toán, tải phiếu xác nhận thanh toán dạng PNG hoặc xem lại trên web.

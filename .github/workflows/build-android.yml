@@ -10,6 +10,7 @@ on:
       - 'tools/build-mobile-www.js'
       - 'renderer/**'
       - 'core/**'
+      - 'tools/build-ota.js'
       - '.github/workflows/build-android.yml'
 
 jobs:
@@ -28,7 +29,7 @@ jobs:
           java-version: 21
 
       - name: Kiểm tra cầu nối Android và bản quyền
-        run: node --test tests/mobile-bridge.test.js tests/license.test.js
+        run: node --test tests/mobile-bridge.test.js tests/mobile-ota.test.js tests/license.test.js
 
       - name: Đặt số bản
         run: |
@@ -36,7 +37,23 @@ jobs:
           echo "NL_VERSION_NAME=1.0.${{ github.run_number }}" >> "$GITHUB_ENV"
 
       - name: Gói giao diện và nội dung (www)
-        run: node tools/build-mobile-www.js --version "$NL_VERSION_NAME" --commit "${GITHUB_SHA::7}"
+        run: node tools/build-mobile-www.js --version "$NL_VERSION_NAME" --version-code "$NL_VERSION_CODE" --commit "${GITHUB_SHA::7}"
+
+      # Gói cập nhật nội dung (OTA): máy đã cài apk có trang khởi động OTA sẽ tự tải gói này, không cần cài lại apk.
+      # Chỉ đổi phần Android gốc (icon, quyền, plugin) mới bắt buộc cài apk mới: khi đó nâng số trong mobile/ota-min-native.txt
+      # lên số build của apk đó để các máy cũ chuyển sang đường "có bản apk mới".
+      - name: Đóng gói cập nhật nội dung (OTA)
+        id: ota
+        env:
+          OTA_PRIVATE_KEY_BASE64: ${{ secrets.OTA_PRIVATE_KEY_BASE64 }}
+        run: |
+          if [ -z "$OTA_PRIVATE_KEY_BASE64" ]; then
+            echo "Chưa cấu hình OTA_PRIVATE_KEY_BASE64: không tạo gói cập nhật nội dung."
+            echo "ota=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          node tools/build-ota.js --www mobile/www --out "$RUNNER_TEMP/ota.nlo" --build "$NL_VERSION_CODE" --version "$NL_VERSION_NAME"
+          echo "ota=true" >> "$GITHUB_OUTPUT"
 
       - name: Cài Capacitor và đồng bộ vào dự án Android
         working-directory: mobile
@@ -99,7 +116,17 @@ jobs:
         run: |
           if [ -z "$R2_BUCKET" ] || [ -z "$R2_ACCOUNT_ID" ]; then echo "Chưa cấu hình R2, bỏ qua bước đẩy apk."; exit 0; fi
           EP="https://$R2_ACCOUNT_ID.r2.cloudflarestorage.com"
-          # Đẩy apk trước, latest.json sau cùng để trang tải không thấy bản mới khi file chưa lên đủ.
+          # Thứ tự: gói OTA, apk, rồi latest.json sau cùng để máy khách không thấy bản mới khi tệp chưa lên đủ.
+          OTA_BUILD=0
+          if [ "${{ steps.ota.outputs.ota }}" = "true" ]; then
+            aws s3 cp "$RUNNER_TEMP/ota.nlo" "s3://$R2_BUCKET/educenter-android/ota/$NL_VERSION_CODE.nlo" --endpoint-url "$EP" --content-type text/plain
+            OTA_BUILD="$NL_VERSION_CODE"
+          fi
           aws s3 cp "$RUNNER_TEMP/nam-linh-educenter.apk" "s3://$R2_BUCKET/educenter-android/nam-linh-educenter.apk" --endpoint-url "$EP" --content-type application/vnd.android.package-archive
-          printf '{"version":"%s","versionCode":%s,"apk":"nam-linh-educenter.apk","commit":"%s"}\n' "$NL_VERSION_NAME" "$NL_VERSION_CODE" "${GITHUB_SHA::7}" > latest.json
+          NOTES=$(awk '/^## Bản mới/{f=1;next} /^## /{f=0} f' CHANGELOG.md | sed 's/^[-*] *//' | sed '/^$/d' | head -8)
+          NL_NOTES="$NOTES" NL_OTA_BUILD="$OTA_BUILD" NL_MIN_NATIVE="$(tr -dc '0-9' < mobile/ota-min-native.txt)" node -e '
+            const e = process.env;
+            process.stdout.write(JSON.stringify({ version: e.NL_VERSION_NAME, versionCode: Number(e.NL_VERSION_CODE), apk: "nam-linh-educenter.apk", commit: e.GITHUB_SHA.slice(0, 7), otaBuild: Number(e.NL_OTA_BUILD), minNative: Number(e.NL_MIN_NATIVE || 0), notes: e.NL_NOTES || "" }) + "\n");
+          ' > latest.json
+          cat latest.json
           aws s3 cp latest.json "s3://$R2_BUCKET/educenter-android/latest.json" --endpoint-url "$EP" --cache-control "no-cache" --content-type application/json

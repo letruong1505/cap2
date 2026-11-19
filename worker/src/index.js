@@ -20,6 +20,39 @@ async function body(req) {
   try { return await req.json(); } catch { throw new HttpError(400, 'Dữ liệu gửi lên không hợp lệ.'); }
 }
 
+const OTA_MAX_BYTES = 12 * 1024 * 1024;
+
+function updatesBase(env) {
+  const b = String(env.UPDATES_BASE || '').trim().replace(/\/+$/, '');
+  if (!/^https:\/\//i.test(b)) throw new HttpError(503, 'Chưa cấu hình nơi lưu bản cập nhật.');
+  return b;
+}
+
+// Thông tin bản mới nhất của ứng dụng Android (latest.json do workflow build đẩy lên R2).
+async function androidLatest(env) {
+  const base = updatesBase(env);
+  const r = await fetch(base + '/educenter-android/latest.json', { cf: { cacheTtl: 60 } }).catch(() => null);
+  if (!r || !r.ok) throw new HttpError(502, 'Chưa đọc được thông tin bản mới.');
+  let j;
+  try { j = await r.json(); } catch { throw new HttpError(502, 'Thông tin bản mới không hợp lệ.'); }
+  const n = (v) => (Number.isInteger(v) && v >= 0 ? v : 0);
+  const apk = /^[A-Za-z0-9._-]{1,80}$/.test(String(j.apk || '')) ? String(j.apk) : 'nam-linh-educenter.apk';
+  return json({
+    version: String(j.version || '').slice(0, 20), versionCode: n(j.versionCode), otaBuild: n(j.otaBuild), minNative: n(j.minNative),
+    notes: String(j.notes || '').slice(0, 1500), apkUrl: base + '/educenter-android/' + apk,
+  });
+}
+
+// Gói cập nhật nội dung (OTA) của một bản build. Gói đã được ký; ứng dụng tự kiểm tra chữ ký trước khi dùng.
+async function androidOta(env, build) {
+  const base = updatesBase(env);
+  const r = await fetch(base + '/educenter-android/ota/' + build + '.nlo', { cf: { cacheTtl: 3600 } }).catch(() => null);
+  if (!r || !r.ok) throw new HttpError(404, 'Không có gói cập nhật cho bản này.');
+  const text = await r.text();
+  if (text.length > OTA_MAX_BYTES) throw new HttpError(502, 'Gói cập nhật quá lớn.');
+  return new Response(text, { status: 200, headers: { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
+}
+
 async function route(req, env, now) {
   const url = new URL(req.url);
   const path = url.pathname.replace(/\/+$/, '') || '/';
@@ -42,6 +75,11 @@ async function route(req, env, now) {
     if (req.method === 'POST' && path === '/api/pin-reset') {
       return json(await pinReset(db, await body(req), now));
     }
+
+    // Cập nhật bản Android: chuyển tiếp tệp công khai trên R2 để ứng dụng không cần cấu hình CORS cho R2.
+    if (req.method === 'GET' && path === '/api/app/android/latest') return await androidLatest(env);
+    m = /^\/api\/app\/android\/ota\/(\d{1,9})$/.exec(path);
+    if (req.method === 'GET' && m) return await androidOta(env, m[1]);
 
     if (req.method === 'POST' && path === '/api/claim-device') {
       return json(await claimDevice(db, env, catalog, await body(req), now));
@@ -97,7 +135,7 @@ async function route(req, env, now) {
 // Ứng dụng Android chạy trong WebView ở địa chỉ https://localhost nên trình duyệt đòi CORS khi gọi sang máy chủ này.
 // Chỉ mở cho các địa chỉ của chính ứng dụng và chỉ cho các đường dẫn của phần mềm khách; trang quản trị và SePay không mở.
 export const APP_ORIGINS = ['https://localhost', 'http://localhost', 'capacitor://localhost'];
-const CLIENT_PATH = /^\/api\/(orders(\/[A-Za-z0-9]{6}\/status)?|pin-reset|claim-device|ping)$/;
+const CLIENT_PATH = /^\/api\/(orders(\/[A-Za-z0-9]{6}\/status)?|pin-reset|claim-device|ping|app\/android\/(latest|ota\/\d{1,9}))$/;
 
 export async function handle(req, env, now = new Date()) {
   const origin = req.headers.get('origin');
