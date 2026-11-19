@@ -46,7 +46,7 @@ function itemsCell(o,names){
       row.append(el('span',{class:'gone'},nm),' ',el('span',{class:'st rv'},'Đã thu hồi'),el('button',{class:'p sm',onclick:function(){if(confirm('Khôi phục khóa học "'+nm+'" của đơn '+o.code+'?'))api('POST','/api/admin/orders/'+o.code+'/restore',{item:id}).then(load).catch(function(e){msg.textContent=e.message})}},'Khôi phục'));
       if(rv.reason)row.append(el('div',{},rv.reason+' ('+new Date(rv.at).toLocaleString('vi-VN')+')'))
     }else{
-      row.append(nm,o.prices&&o.prices[id]?el('small',{},' · đã trả '+money(o.prices[id].paid)):null);
+      row.append(nm);if(o.prices&&o.prices[id])row.append(el('small',{},' · đã trả '+money(o.prices[id].paid)));
       if(o.status==='paid'&&!o.revoked&&refundOpen(o))row.append(el('button',{class:'d sm',onclick:function(){var x=prompt('THU HỒI RIÊNG khóa học "'+nm+'" của '+o.name+' ('+o.phone+'), đơn '+money(o.amount)+'.\\nCác khóa khác trong đơn vẫn dùng bình thường.\\nGõ lại mã đơn '+o.code+' để xác nhận:');if(x===null)return;if(x.trim().toUpperCase().replace(/^NL-/,'')!==o.code){alert('Mã đơn không khớp, chưa thu hồi.');return}var r=prompt('Lý do (hoàn tiền một phần...):','Hoàn tiền một phần');if(r===null)return;api('POST','/api/admin/orders/'+o.code+'/revoke',{item:id,reason:r}).then(load).catch(function(e){msg.textContent=e.message})}},'Thu hồi'))
     }
     c.append(row)});
