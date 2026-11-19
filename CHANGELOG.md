@@ -1,5 +1,6 @@
 ## Bản mới
 - Bản Android tự cập nhật: tự tải và dùng bản sửa lỗi ở lần mở sau, chỉ phải cài lại khi có thay đổi lớn.
+- Bản Android: nghe phát âm từ vựng tiếng Anh bằng giọng đọc của điện thoại.
 
 ## Các bản trước
 - Một đơn dùng được cho 1 máy tính và 1 điện thoại; thêm mục "Đã mua ở thiết bị khác?" để nhận khóa bằng mã đơn và số điện thoại.

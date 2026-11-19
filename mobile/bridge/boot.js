@@ -59,6 +59,16 @@
     onUpdate: function (cb) { ready.then(function (b) { b.api.onUpdate(cb); }); },
     onLicenseChanged: function (cb) { ready.then(function (b) { b.api.onLicenseChanged(cb); }); } };
   names.forEach(function (n) { proxy[n] = function () { var a = arguments; return ready.then(function (b) { return b.api[n].apply(null, a); }); }; });
+  // Đọc phát âm tiếng Anh bằng giọng đọc của Android (plugin TextToSpeech). WebView không có speechSynthesis.
+  // Chỉ bật khi apk có plugin; apk cũ không có thì giao diện giữ thông báo cũ.
+  var tts = window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.TextToSpeech;
+  if (tts && tts.speak) {
+    proxy.speak = function (text) {
+      return Promise.resolve(tts.stop ? tts.stop() : null).catch(function () {}).then(function () {
+        return tts.speak({ text: String(text).slice(0, 200), lang: 'en-US', rate: 0.85, pitch: 1, volume: 1, category: 'ambient' });
+      }).then(function () { return { ok: true }; }, function (e) { return { ok: false, error: String(e && e.message || e) }; });
+    };
+  }
   window.vungBai = proxy;
   ready.then(function (b) { b.heartbeat.start(); }).catch(function () {});
   // Kiểm tra bản mới ngầm sau khi mở app vài giây (tối đa mỗi 6 giờ một lần).
