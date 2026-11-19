@@ -643,7 +643,7 @@ function renderLicense(license) {
 
 // Một đơn dùng được cho 1 máy tính và 1 điện thoại: nhập mã đơn + số điện thoại đã mua để nhận khóa cho thiết bị này.
 function claimDeviceBox() {
-  const code = el('input', { type: 'text', id: 'claim-code', placeholder: 'Mã đơn (6 ký tự)', maxlength: '8', autocomplete: 'off', spellcheck: 'false' });
+  const code = el('input', { type: 'text', id: 'claim-code', placeholder: 'Mã đơn, ví dụ 3KAHFK', maxlength: '14', autocomplete: 'off', spellcheck: 'false' });
   const phone = el('input', { type: 'tel', id: 'claim-phone', placeholder: 'Số điện thoại đã mua', maxlength: '15', autocomplete: 'off' });
   const btn = el('button', { type: 'button', class: 'primary' }, 'Nhận khóa');
   const msg = el('div', { class: 'muted', id: 'claim-msg', role: 'status' });
@@ -652,7 +652,7 @@ function claimDeviceBox() {
     if (!code.value.trim() || !phone.value.trim()) { msg.textContent = 'Nhập đủ mã đơn và số điện thoại đã dùng khi mua.'; return; }
     btn.disabled = true;
     try {
-      const r = await window.vungBai.claimDevice({ code: code.value, phone: phone.value });
+      const r = await window.vungBai.claimDevice({ code: code.value.toUpperCase().replace(/[^A-Z0-9]/g, '').replace(/^NL(?=[A-Z0-9]{6}$)/, ''), phone: phone.value.replace(/[\s.\-]/g, '') });
       if (r.ok && r.license && r.license.status === 'ok') {
         code.value = ''; phone.value = '';
         await refreshLicense();

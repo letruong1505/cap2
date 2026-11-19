@@ -146,7 +146,7 @@ export async function claimDevice(db, env, catalog, input, now = new Date()) {
   const platform = platformOf(input.platform);
   if (!MACHINE_RE.test(machine)) throw new HttpError(400, 'Không đọc được mã máy.');
   const since = nowIso(new Date(now.getTime() - 3600_000));
-  const recent = await db.prepare('SELECT COUNT(*) AS n FROM pin_attempts WHERE machine = ?1 AND at > ?2').bind(machine, since).first();
+  const recent = await db.prepare('SELECT COUNT(*) AS n FROM pin_attempts WHERE machine = ?1 AND ok = 0 AND at > ?2').bind(machine, since).first();
   if (recent.n >= 5) throw new HttpError(429, 'Thử quá nhiều lần. Vui lòng thử lại sau 1 giờ hoặc liên hệ hỗ trợ.');
   const o = /^[A-Z0-9]{6}$/.test(code) && PHONE_RE.test(phone) ? await getOrder(db, code) : null;
   const ok = !!o && o.status === 'paid' && o.phone === phone;

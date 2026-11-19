@@ -119,3 +119,11 @@ test('giới hạn máy của mã đối tác đếm cả điện thoại', asyn
   await claimDevice(db, env, catalog, { code: o.code, phone: '0912345678', machineId: PHONE, platform: 'android' }, NOW);
   await assert.rejects(createOrder(db, catalog, { ...base, machineId: PHONE2, partnerCode: 'DT-X' }, NOW, () => Uint8Array.from([9, 1, 2, 3, 4, 5])), (e) => e.status === 403);
 });
+
+test('giới hạn thử: 5 lần nhập sai thì chặn, nhận khóa thành công không bị tính vào giới hạn', async () => {
+  const { db, env, code } = await paid('win', PC);
+  for (let i = 0; i < 4; i++) await claimDevice(db, env, catalog, { code, phone: '0912345678', machineId: PHONE, platform: 'android' }, NOW);
+  await claimDevice(db, env, catalog, { code, phone: '0912345678', machineId: PHONE, platform: 'android' }, NOW); // lần thứ 5 vẫn được
+  for (let i = 0; i < 5; i++) await assert.rejects(claimDevice(db, env, catalog, { code, phone: '0900000000', machineId: PHONE, platform: 'android' }, NOW), (e) => e.status === 404);
+  await assert.rejects(claimDevice(db, env, catalog, { code, phone: '0912345678', machineId: PHONE, platform: 'android' }, NOW), (e) => e.status === 429);
+});

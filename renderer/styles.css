@@ -350,7 +350,7 @@ button.link {
 
 @media (max-width: 860px) {
   .grade-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .license-bar { grid-template-columns: 1fr; }
+  .license-bar { grid-template-columns: minmax(0, 1fr); }
   .pricing-options { grid-template-columns: 1fr; }
   .path { grid-template-columns: 1fr; gap: 22px; }
   .path::before { content: none; }
@@ -854,3 +854,11 @@ button.ghost:hover { background: var(--paper); }
 .license-claim h3 { margin: 0 0 4px; font-size: 16px; }
 .license-claim .license-form { flex-wrap: wrap; margin-top: 10px; }
 .license-claim .license-form input { flex: 1 1 160px; min-width: 0; }
+
+/* Điện thoại: khung bản quyền không tràn ngang, ô nhập và nút xuống dòng gọn */
+.license-bar > div { min-width: 0; }
+@media (max-width: 560px) {
+  .license-form { flex-wrap: wrap; }
+  .license-form input { flex: 1 1 100%; }
+  .license-form button { flex: 1 1 100%; }
+}
