@@ -8,6 +8,8 @@ on:
     paths:
       - 'mobile/**'
       - 'tools/build-mobile-www.js'
+      - 'renderer/**'
+      - 'core/**'
       - '.github/workflows/build-android.yml'
 
 jobs:
