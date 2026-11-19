@@ -1,0 +1,162 @@
+{
+  "id": "t7-tap2-dong-quy-trung-truc-duong-cao",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 2",
+  "chapter": "Chương IX. Quan hệ giữa các yếu tố trong một tam giác",
+  "lesson": "Bài 35. Sự đồng quy của ba đường trung trực, ba đường cao trong một tam giác",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Ba đường trung trực của một tam giác cùng đi qua một điểm. Điểm này cách đều ba đỉnh của tam giác."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t2-lt-tam-duong-tron.svg",
+      "caption": "O là giao điểm ba đường trung trực nên O cách đều ba đỉnh: OA = OB = OC."
+    },
+    {
+      "type": "text",
+      "content": "Đường cao của tam giác là đoạn vuông góc kẻ từ một đỉnh đến đường thẳng chứa cạnh đối diện. Ba đường cao của một tam giác cùng đi qua một điểm, gọi là trực tâm của tam giác."
+    },
+    {
+      "type": "formula",
+      "content": "O là giao điểm ba đường trung trực của tam giác ABC thì OA = OB = OC."
+    },
+    {
+      "type": "text",
+      "content": "Với tam giác vuông tại A, hai đường cao kẻ từ B và từ C chính là BA và CA, nên trực tâm trùng với đỉnh góc vuông A."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "O là giao điểm ba đường trung trực của tam giác ABC, OA = 5 cm. Tính OC.",
+      "expr": "5",
+      "steps": [
+        "O nằm trên đường trung trực của AC nên OC = OA.",
+        "Vậy OC = 5 cm."
+      ],
+      "answer": "5",
+      "figure": "figures/t2-vd-duong-tron.svg"
+    },
+    {
+      "problem": "Tam giác ABC vuông tại A có trực tâm H. Tính số đo góc BHC.",
+      "expr": "90",
+      "steps": [
+        "Vì AB ⊥ AC nên đường cao kẻ từ B là BA và đường cao kẻ từ C là CA.",
+        "Hai đường cao này cắt nhau tại A, nên H trùng A.",
+        "Do đó góc BHC = góc BAC = 90°."
+      ],
+      "answer": "90",
+      "figure": "figures/t2-vuong-tai-A.svg"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "O là giao điểm ba đường trung trực của tam giác ABC và OA = 5 cm. Tính OB (cm).",
+      "figure": "figures/t2-duong-tron-ngoai-tiep.svg",
+      "expr": "5",
+      "answer": "5",
+      "explain": "O cách đều ba đỉnh của tam giác nên OB = OA = 5 cm."
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Giao điểm của ba đường cao của một tam giác gọi là:",
+      "choices": [
+        "Trực tâm",
+        "Trọng tâm",
+        "Giao điểm ba đường phân giác"
+      ],
+      "answer": 0,
+      "explain": "Ba đường cao cùng đi qua một điểm gọi là trực tâm.",
+      "wrong_explain": {
+        "1": "Trọng tâm là giao điểm của ba đường trung tuyến.",
+        "2": "Giao điểm ba đường phân giác cách đều ba cạnh, không phải giao điểm ba đường cao."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Giao điểm của ba đường trung trực của một tam giác có tính chất nào?",
+      "choices": [
+        "Cách đều ba đỉnh",
+        "Cách đều ba cạnh",
+        "Chia mỗi trung tuyến theo tỉ số 2 : 1"
+      ],
+      "answer": 0,
+      "explain": "Mỗi điểm trên đường trung trực của một cạnh cách đều hai đầu cạnh đó, nên giao điểm ba đường trung trực cách đều ba đỉnh.",
+      "wrong_explain": {
+        "1": "Điểm cách đều ba cạnh là giao điểm ba đường phân giác.",
+        "2": "Tính chất chia trung tuyến theo tỉ số 2 : 1 là của trọng tâm."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Điểm O cách đều ba đỉnh của tam giác ABC và OA = 7 cm. Tính OB (cm).",
+      "figure": "figures/t2-duong-tron-ngoai-tiep.svg",
+      "expr": "7",
+      "answer": "7",
+      "explain": "O cách đều ba đỉnh nên OB = OA = 7 cm."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Điểm M nằm trên đường trung trực của đoạn thẳng AB và MA = 4 cm. Tính MB (cm).",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Điểm nằm trên đường trung trực của đoạn thẳng thì cách đều hai đầu đoạn thẳng, nên MB = MA = 4 cm."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tam giác ABC vuông tại A. Trực tâm của tam giác là:",
+      "choices": [
+        "Điểm A",
+        "Điểm B",
+        "Điểm C",
+        "Trung điểm của BC"
+      ],
+      "answer": 0,
+      "explain": "Đường cao kẻ từ B là BA, đường cao kẻ từ C là CA; hai đường này cắt nhau tại A.",
+      "wrong_explain": {
+        "1": "Đường cao kẻ từ C là CA; đường thẳng này không đi qua B.",
+        "2": "Đường cao kẻ từ B là BA; đường thẳng này không đi qua C.",
+        "3": "Trung điểm của BC không nằm trên đường cao BA."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "O là giao điểm ba đường trung trực của tam giác ABC. Biết OA = 2x + 1 (cm) và OB = 3x − 2 (cm). Tìm x.",
+      "figure": "figures/t2-duong-tron-ngoai-tiep.svg",
+      "expr": "3",
+      "answer": "3",
+      "explain": "O cách đều A và B nên OA = OB: 2x + 1 = 3x − 2, suy ra x = 3 (khi đó OA = OB = 7 cm)."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác ABC vuông tại A có trực tâm H. Tính số đo góc BHC (độ).",
+      "figure": "figures/t2-vuong-tai-A.svg",
+      "expr": "90",
+      "answer": "90",
+      "explain": "Trực tâm của tam giác vuông tại A là đỉnh A, nên góc BHC = góc BAC = 90°."
+    }
+  ]
+}

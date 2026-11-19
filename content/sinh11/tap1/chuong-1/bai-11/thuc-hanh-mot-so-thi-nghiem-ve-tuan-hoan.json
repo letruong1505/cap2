@@ -1,0 +1,190 @@
+{
+  "id": "bai-11",
+  "grade": 11,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 11",
+  "chapter": "Chương 1. Trao đổi chất và chuyển hoá năng lượng ở sinh vật",
+  "lesson": "Bài 11. Thực hành: Một số thí nghiệm về tuần hoàn",
+  "section": "",
+  "bookPage": 69,
+  "requirements": [
+    "Thực hành đo được huyết áp, đếm nhịp tim ở người ở các trạng thái hoạt động khác nhau và giải thích kết quả.",
+    "Mổ được tim ếch, tìm hiểu tính tự động của tim, vai trò của dây giao cảm, đối giao cảm và tác động của adrenalin."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đếm nhịp tim: đếm mạch đập ở cổ tay trong 1 phút khi nghỉ ngơi (ngửa tay, ấn ba ngón trỏ, giữa, áp út vào rãnh quay), rồi đếm ngay sau khi chạy nhanh tại chỗ và sau khi nghỉ để so sánh. Kết quả: nhịp tim tăng sau vận động rồi giảm dần khi nghỉ; ở người tập luyện nhịp tim lúc nghỉ thấp hơn và hồi phục nhanh hơn, phản ánh sức khoẻ tim mạch."
+    },
+    {
+      "type": "text",
+      "content": "Đo huyết áp bằng huyết áp kế điện tử: ngồi nghỉ vài phút, đặt vòng bọc ở cánh tay ngang tim, bấm công tắc, máy tự bơm và xả khí; màn hình hiển thị huyết áp tâm thu (trên), tâm trương (giữa) và nhịp tim (dưới). Giữ nguyên tư thế, không nói chuyện, tránh căng thẳng; nếu đo lại phải chờ khoảng 3 phút; sai số khoảng 5%; biểu tượng Err cần tắt máy đo lại."
+    },
+    {
+      "type": "text",
+      "content": "Tính tự động của tim ếch: phá tuỷ sống ếch, ghim ngửa trên khay mổ; cắt da ngực hình tam giác, nâng xương ức, cắt bỏ mảnh lồng ngực, cắt màng bao tim để lộ tim; đếm số nhịp tim trong 1 phút. Cắt tim rời khỏi cơ thể, đặt vào dung dịch sinh lí, tim vẫn co dãn nhịp nhàng nhờ hệ dẫn truyền tim."
+    },
+    {
+      "type": "text",
+      "content": "Vai trò dây thần kinh: tách dây thần kinh hỗn hợp (giao cảm và đối giao cảm) đặt vào điện cực kích thích 5 s; dây giao cảm làm tim đập nhanh, mạnh; dây đối giao cảm làm tim đập chậm, yếu. Tác động của adrenalin: cắt tim rời đặt vào dung dịch sinh lí rồi thay bằng dung dịch có adrenalin (1/50 000 hoặc 1/100 000), nhịp tim tăng, co mạnh hơn, chứng tỏ điều hoà thể dịch."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh11-b11-tim-ech.svg",
+      "caption": "Ba thí nghiệm chính trên tim ếch"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Vì sao tim ếch tách rời cơ thể vẫn đập?",
+      "steps": [
+        "Tim có hệ dẫn truyền tim gồm nút xoang nhĩ tự phát xung điện.",
+        "Chỉ cần đủ chất dinh dưỡng, O₂ và nhiệt độ thích hợp thì tim vẫn co dãn tự động."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi đếm mạch ở cổ tay, người ta ấn ba ngón vào:",
+      "choices": [
+        "rãnh quay cổ tay",
+        "khuỷu tay",
+        "vai",
+        "cổ chân"
+      ],
+      "answer": 0,
+      "explain": "Động mạch quay ở rãnh quay cổ tay.",
+      "wrong_explain": {
+        "1": "Khuỷu tay không bắt mạch tiện.",
+        "2": "Vai không bắt mạch.",
+        "3": "Cổ chân không dùng."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất làm tim ếch đập nhanh, mạnh trong thí nghiệm là:",
+      "choices": [
+        "adrenalin",
+        "nước cất",
+        "dung dịch sinh lí đơn thuần",
+        "cồn"
+      ],
+      "answer": 0,
+      "explain": "Adrenalin là hormone tăng hoạt động tim.",
+      "wrong_explain": {
+        "1": "Nước cất không làm nhanh.",
+        "2": "Dung dịch sinh lí giữ tim hoạt động bình thường.",
+        "3": "Cồn làm hại tim."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sau khi chạy nhanh tại chỗ, nhịp tim tăng vì:",
+      "choices": [
+        "cơ thể cần nhiều O₂ và dinh dưỡng hơn",
+        "cơ thể cần ít O₂",
+        "tim bị yếu",
+        "huyết áp giảm"
+      ],
+      "answer": 0,
+      "explain": "Tim tăng lưu lượng để đáp ứng nhu cầu.",
+      "wrong_explain": {
+        "1": "Nhu cầu O₂ tăng.",
+        "2": "Không phải tim yếu.",
+        "3": "Huyết áp thường tăng."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Kích thích dây thần kinh giao cảm làm tim:",
+      "choices": [
+        "đập nhanh, mạnh",
+        "đập chậm, yếu",
+        "ngừng đập vĩnh viễn",
+        "không thay đổi"
+      ],
+      "answer": 0,
+      "explain": "Dây giao cảm tăng hoạt động tim.",
+      "wrong_explain": {
+        "1": "Đó là đối giao cảm.",
+        "2": "Không ngừng vĩnh viễn.",
+        "3": "Có thay đổi rõ."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi đo huyết áp điện tử cần:",
+      "choices": [
+        "nghỉ ngơi, giữ yên, không nói chuyện",
+        "chạy trước khi đo",
+        "nói chuyện thoải mái",
+        "đo liên tục không nghỉ"
+      ],
+      "answer": 0,
+      "explain": "Tránh sai số do hoạt động, căng thẳng.",
+      "wrong_explain": {
+        "1": "Chạy làm huyết áp tăng.",
+        "2": "Nói chuyện gây sai số.",
+        "3": "Phải chờ ~3 phút giữa hai lần đo."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Người tập thể thao thường xuyên so với người ít vận động, nhịp tim lúc nghỉ:",
+      "choices": [
+        "thường thấp hơn",
+        "luôn cao hơn",
+        "bằng 0",
+        "không đo được"
+      ],
+      "answer": 0,
+      "explain": "Tim khoẻ có thể tích tâm thu lớn.",
+      "wrong_explain": {
+        "1": "Thấp hơn chứ không cao.",
+        "2": "Không bằng 0.",
+        "3": "Đo được bình thường."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Kết quả huyết áp 150/95 mmHg ở người trưởng thành nghỉ ngơi cho thấy:",
+      "choices": [
+        "huyết áp cao hơn mức bình thường, cần theo dõi và khám",
+        "huyết áp rất thấp",
+        "bình thường tuyệt đối",
+        "tim ngừng đập"
+      ],
+      "answer": 0,
+      "explain": "Bình thường khoảng 110 – 120/70 – 80 mmHg.",
+      "wrong_explain": {
+        "1": "Cao chứ không thấp.",
+        "2": "Số liệu cao hơn bình thường.",
+        "3": "Tim vẫn đập."
+      },
+      "id": "q07"
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "id": "bai-6",
+  "grade": 10,
+  "subject": "gdktpl",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Giáo dục kinh tế và pháp luật 10",
+  "chapter": "Chủ đề 3. Ngân sách nhà nước và thuế",
+  "lesson": "Bài 6. Thuế",
+  "section": "",
+  "bookPage": 33,
+  "requirements": [
+    "Giải thích được vì sao Nhà nước phải thu thuế.",
+    "Gọi được tên một số loại thuế phổ biến.",
+    "Nêu được quy định cơ bản của pháp luật về quyền và nghĩa vụ công dân trong việc thực hiện pháp luật thuế.",
+    "Ủng hộ những hành vi chấp hành và phê phán những hành vi vi phạm pháp luật về thuế."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Thuế là một khoản nộp ngân sách nhà nước bắt buộc của tổ chức, hộ gia đình, hộ kinh doanh, cá nhân theo quy định của các luật thuế. Thuế là nguồn thu chủ yếu của ngân sách nhà nước; đồng thời là công cụ để huy động nguồn lực tài chính, điều tiết kinh tế, kiềm chế lạm phát, ổn định giá cả, kích thích đầu tư và điều tiết thu nhập."
+    },
+    {
+      "type": "text",
+      "content": "Từ khoá cần ghi nhớ: thuế; thuế trực thu; thuế gián thu; thuế thu nhập doanh nghiệp; thuế thu nhập cá nhân; thuế giá trị gia tăng; thuế tiêu thụ đặc biệt; thuế bảo vệ môi trường; trốn thuế; Luật Quản lí thuế."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/gdktpl10-b6-vai-tro.svg",
+      "caption": "Các vai trò chính của thuế"
+    },
+    {
+      "type": "text",
+      "content": "Thuế trực thu là thuế điều tiết trực tiếp vào thu nhập hoặc tài sản của người nộp thuế, gồm thuế thu nhập doanh nghiệp và thuế thu nhập cá nhân. Thuế gián thu điều tiết gián tiếp qua giá cả hàng hoá, dịch vụ, gồm thuế giá trị gia tăng, thuế tiêu thụ đặc biệt, thuế xuất khẩu – nhập khẩu và thuế bảo vệ môi trường."
+    },
+    {
+      "type": "text",
+      "content": "Các loại thuế khác gồm thuế môn bài, thuế tài nguyên, thuế sử dụng đất nông nghiệp và phi nông nghiệp. Thuế đánh cao vào hàng hoá xa xỉ và thấp vào hàng hoá thiết yếu, qua đó điều tiết thu nhập và hướng dẫn tiêu dùng theo hướng tích cực. Ví dụ: Nhà nước tăng thuế thuốc lá nhằm giảm người hút thuốc và tăng ngân sách."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/gdktpl10-b6-phan-loai.svg",
+      "caption": "Phân loại thuế theo cách điều tiết"
+    },
+    {
+      "type": "text",
+      "content": "Quyền và nghĩa vụ của người nộp thuế: được hỗ trợ, hướng dẫn nộp thuế, được hưởng ưu đãi và hoàn thuế theo quy định; có nghĩa vụ khai thuế chính xác, trung thực, đầy đủ, nộp đúng hạn tiền thuế, tiền chậm nộp và tiền phạt. Trốn thuế, gian lận thuế bị xử phạt hành chính và có thể bị truy cứu trách nhiệm hình sự theo Bộ luật Hình sự."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Doanh nghiệp có doanh thu 2 tỉ đồng và chi phí 1,5 tỉ đồng, thuế thu nhập doanh nghiệp là 20% lợi nhuận. Thuế phải nộp là bao nhiêu?",
+      "steps": [
+        "Lợi nhuận = 2 − 1,5 = 0,5 tỉ đồng.",
+        "Thuế = 20% × 0,5 = 0,1 tỉ đồng (100 triệu đồng)."
+      ],
+      "expr": "(2-1.5)*0.2",
+      "answer": "0.1"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thuế là:",
+      "choices": [
+        "khoản đóng góp tự nguyện",
+        "khoản nộp bắt buộc vào ngân sách nhà nước theo quy định của luật thuế",
+        "khoản tiền gửi ngân hàng",
+        "khoản đầu tư của doanh nghiệp"
+      ],
+      "answer": 1,
+      "explain": "Thuế có tính bắt buộc và được quy định bởi luật.",
+      "wrong_explain": {
+        "0": "Thuế không tự nguyện.",
+        "2": "Tiền gửi ngân hàng không phải thuế.",
+        "3": "Đầu tư không phải thuế."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thuế là nguồn thu:",
+      "choices": [
+        "chủ yếu nhất của ngân sách nhà nước",
+        "không đáng kể",
+        "chỉ dùng cho quân sự",
+        "chỉ do doanh nghiệp nộp"
+      ],
+      "answer": 0,
+      "explain": "Thuế chiếm tỉ trọng lớn trong thu ngân sách.",
+      "wrong_explain": {
+        "1": "Thuế có tỉ trọng lớn.",
+        "2": "Thuế phục vụ nhiều lĩnh vực.",
+        "3": "Cá nhân cũng nộp thuế."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thuế thu nhập doanh nghiệp là loại thuế:",
+      "choices": [
+        "gián thu",
+        "xuất khẩu",
+        "bảo vệ môi trường",
+        "trực thu"
+      ],
+      "answer": 3,
+      "explain": "Thuế trực thu đánh trực tiếp vào thu nhập của người nộp thuế.",
+      "wrong_explain": {
+        "0": "Gián thu đánh qua giá hàng hoá.",
+        "1": "Xuất khẩu là thuế gián thu.",
+        "2": "Bảo vệ môi trường là thuế gián thu."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thuế giá trị gia tăng là loại thuế gián thu vì:",
+      "choices": [
+        "đánh trực tiếp vào lương",
+        "không liên quan đến giá",
+        "được tính vào giá bán và người tiêu dùng cuối cùng chịu thuế",
+        "chỉ nộp một lần"
+      ],
+      "answer": 2,
+      "explain": "Thuế GTGT điều tiết qua giá bán hàng hoá.",
+      "wrong_explain": {
+        "0": "Thuế này không đánh vào lương.",
+        "1": "Thuế này có liên quan đến giá.",
+        "3": "Thuế không chỉ nộp một lần."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao Nhà nước đánh thuế cao vào hàng hoá xa xỉ?",
+      "choices": [
+        "để khuyến khích tiêu dùng xa xỉ",
+        "để điều tiết thu nhập và hạn chế tiêu dùng không thực sự cần thiết",
+        "để tăng giá hàng thiết yếu",
+        "để không thu được thuế"
+      ],
+      "answer": 1,
+      "explain": "Thuế cao làm giảm tiêu dùng hàng xa xỉ và điều tiết thu nhập.",
+      "wrong_explain": {
+        "0": "Thuế cao hạn chế tiêu dùng xa xỉ.",
+        "2": "Hàng thiết yếu được đánh thuế thấp.",
+        "3": "Thuế là nguồn thu."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vai trò của thuế trong điều tiết thị trường là:",
+      "choices": [
+        "hướng dẫn tiêu dùng theo hướng tích cực và bảo vệ thị trường trong nước",
+        "làm rối loạn thị trường",
+        "loại bỏ cạnh tranh",
+        "khuyến khích hàng nhập lậu"
+      ],
+      "answer": 0,
+      "explain": "Thuế giúp định hướng tiêu dùng và thị trường.",
+      "wrong_explain": {
+        "1": "Thuế không làm rối loạn thị trường.",
+        "2": "Thuế không loại bỏ cạnh tranh.",
+        "3": "Thuế ngăn hàng nhập lậu."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hành vi nào sau đây là trốn thuế?",
+      "choices": [
+        "khai thuế đầy đủ và đúng hạn",
+        "nộp thuế đúng địa điểm",
+        "kê khai trung thực",
+        "giảm số liệu thu chi để giảm thuế phải nộp"
+      ],
+      "answer": 3,
+      "explain": "Khai sai số liệu để giảm thuế là gian lận thuế.",
+      "wrong_explain": {
+        "0": "Khai đúng là nghĩa vụ.",
+        "1": "Nộp đúng địa điểm là nghĩa vụ.",
+        "2": "Kê khai trung thực là nghĩa vụ."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Người nộp thuế có quyền nào?",
+      "choices": [
+        "được miễn mọi nghĩa vụ thuế",
+        "được tự quyết định mức thuế",
+        "được hỗ trợ, hướng dẫn nộp thuế và hưởng ưu đãi, hoàn thuế theo quy định",
+        "không cần khai thuế"
+      ],
+      "answer": 2,
+      "explain": "Người nộp thuế có quyền được hỗ trợ và ưu đãi theo pháp luật.",
+      "wrong_explain": {
+        "0": "Không có quyền miễn mọi nghĩa vụ.",
+        "1": "Mức thuế do pháp luật quy định.",
+        "3": "Người nộp thuế phải khai thuế."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho rằng nộp thuế chỉ là nghĩa vụ mà không có lợi ích là:",
+      "choices": [
+        "đúng, vì không hưởng gì",
+        "chưa đúng, vì người dân được hưởng dịch vụ công từ nguồn thu thuế",
+        "đúng, vì thuế không dùng cho dân",
+        "đúng, vì thuế chỉ dùng cho quân đội"
+      ],
+      "answer": 1,
+      "explain": "Thuế đóng góp vào giáo dục, y tế, hạ tầng và an sinh.",
+      "wrong_explain": {
+        "0": "Người dân có hưởng lợi từ thuế.",
+        "2": "Thuế phục vụ dịch vụ công cho dân.",
+        "3": "Thuế có nhiều lĩnh vực sử dụng."
+      },
+      "id": "q09"
+    }
+  ]
+}

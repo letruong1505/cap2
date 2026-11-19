@@ -1,0 +1,294 @@
+{
+  "id": "bai-27",
+  "grade": 12,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Hóa học 12",
+  "chapter": "Chương 8. Sơ lược về dãy kim loại chuyển tiếp thứ nhất và phức chất",
+  "lesson": "Bài 27. Đại cương về kim loại chuyển tiếp dãy thứ nhất",
+  "section": "",
+  "bookPage": 128,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Kim loại chuyển tiếp dãy thứ nhất gồm 9 nguyên tố chu kì 4 từ Sc (Z = 21) đến Cu (Z = 29), thuộc khối d (nhóm B). Cấu hình electron có dạng [Ar]3d¹⁻¹⁰4s¹⁻²: Sc 3d¹4s²; Ti 3d²4s²; V 3d³4s²; Cr 3d⁵4s¹; Mn 3d⁵4s²; Fe 3d⁶4s²; Co 3d⁷4s²; Ni 3d⁸4s²; Cu 3d¹⁰4s¹. Số electron ở 3d tăng từ 1 đến 10; ở 4s thường là 2 (trừ Cr và Cu có 1)."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất vật lí: nhiệt độ nóng chảy cao (đặc biệt V, Cr, Co), độ cứng cao (Cr cứng nhất), khối lượng riêng lớn (Sc, Ti tương đối nhẹ, các kim loại khác là kim loại nặng, D > 5 g/cm³), dẫn điện và dẫn nhiệt tốt (Cu dẫn điện tốt, chỉ sau Ag). So với kim loại nhóm s (K, Ca), kim loại chuyển tiếp có nhiệt độ nóng chảy, khối lượng riêng, độ cứng và độ dẫn điện cao hơn. Ứng dụng: chế tạo dụng cụ, máy móc chịu nhiệt, hợp kim không gỉ hoặc siêu cứng (Cr), vật liệu hàng không (Ti), dây dẫn điện (Cu), thiết bị trao đổi nhiệt, đồ gia dụng."
+    },
+    {
+      "type": "text",
+      "content": "Số oxi hóa: do có nhiều electron hóa trị ở 4s và 3d nên các nguyên tố chuyển tiếp thể hiện nhiều trạng thái oxi hóa. Thường gặp: Cr +3, +6; Mn +2, +4, +7; Fe +2, +3; Cu +2. Khi tạo cation, nguyên tử nhường electron 4s trước rồi đến 3d: Fe → Fe²⁺ + 2e ([Ar]3d⁶); Fe → Fe³⁺ + 3e ([Ar]3d⁵). Ví dụ cấu hình: Cr³⁺ [Ar]3d³; Mn²⁺ [Ar]3d⁵; Cu²⁺ [Ar]3d⁹."
+    },
+    {
+      "type": "text",
+      "content": "Màu sắc: ion kim loại chuyển tiếp thường có màu phong phú trong dung dịch (Cu²⁺ xanh lam; Fe²⁺ lục nhạt; Fe³⁺ vàng nhạt; Cr³⁺ xanh tím; Co²⁺ hồng đỏ; MnO₄⁻ tím)."
+    },
+    {
+      "type": "text",
+      "content": "Chuẩn độ Fe²⁺ bằng KMnO₄ trong môi trường H₂SO₄: 10FeSO₄ + 2KMnO₄ + 8H₂SO₄ → 5Fe₂(SO₄)₃ + K₂SO₄ + 2MnSO₄ + 8H₂O. Điểm kết thúc khi dung dịch xuất hiện màu hồng bền khoảng 20 giây; khi đó n(Fe²⁺) = 5n(KMnO₄)."
+    },
+    {
+      "type": "text",
+      "content": "Nhận biết ion: Cu²⁺ + 2OH⁻ → Cu(OH)₂↓ (xanh nhạt); Fe³⁺ + 3OH⁻ → Fe(OH)₃↓ (nâu đỏ)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Chuẩn độ 5,0 mL dung dịch FeSO₄ bằng dung dịch KMnO₄ 0,02 M thì hết 5,0 mL. Tính nồng độ mol của FeSO₄.",
+      "steps": [
+        "n(KMnO₄) = 0,02 × 5,0×10⁻³ = 1×10⁻⁴ mol.",
+        "n(Fe²⁺) = 5 × 1×10⁻⁴ = 5×10⁻⁴ mol.",
+        "C(FeSO₄) = 5×10⁻⁴/5×10⁻³ = 0,1 M."
+      ],
+      "expr": "0.02*5/5*5",
+      "answer": "0.1"
+    },
+    {
+      "problem": "Cr (Z = 24) có cấu hình [Ar]3d⁵4s¹. Số electron hóa trị tối đa (ở 3d và 4s) là bao nhiêu?",
+      "steps": [
+        "Electron hóa trị gồm 3d và 4s.",
+        "5 + 1 = 6."
+      ],
+      "expr": "5+1",
+      "answer": "6"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Các nguyên tố kim loại chuyển tiếp dãy thứ nhất thuộc chu kì:",
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": 1,
+      "explain": "Dãy 3d gồm Sc đến Cu ở chu kì 4.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chu kì 3 gồm Na đến Ar.",
+        "2": "Dãy 4d thuộc chu kì 5.",
+        "3": "Dãy 5d thuộc chu kì 6."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kim loại chuyển tiếp dãy thứ nhất gồm các nguyên tố từ:",
+      "choices": [
+        "K (Z = 19) đến Zn (Z = 30)",
+        "Sc (Z = 21) đến Zn (Z = 30)",
+        "Sc (Z = 21) đến Cu (Z = 29)",
+        "Fe (Z = 26) đến Zn (Z = 30)"
+      ],
+      "answer": 2,
+      "explain": "Gồm 9 nguyên tố từ Sc đến Cu.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "K, Ca không phải kim loại chuyển tiếp.",
+        "1": "Dãy gồm 9 nguyên tố, dừng ở Cu.",
+        "3": "Chưa đủ các nguyên tố của dãy."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kim loại cứng nhất trong tất cả các kim loại là:",
+      "choices": [
+        "Chromium",
+        "Iron",
+        "Copper",
+        "Sodium"
+      ],
+      "answer": 0,
+      "explain": "Cr cứng nhất, cắt được kính.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Fe mềm hơn Cr.",
+        "2": "Cu mềm hơn Cr.",
+        "3": "Na rất mềm."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Màu của dung dịch chứa ion Cu²⁺ là:",
+      "choices": [
+        "Hồng đỏ",
+        "Vàng nhạt",
+        "Không màu",
+        "Xanh lam"
+      ],
+      "answer": 3,
+      "explain": "Dung dịch CuSO₄ có màu xanh lam do phức aqua.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đó là màu của Co²⁺.",
+        "1": "Đó là màu của Fe³⁺.",
+        "2": "Cu²⁺ có màu xanh lam."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Đặc điểm cấu hình electron chung của kim loại chuyển tiếp dãy thứ nhất là:",
+      "choices": [
+        "Có 1 electron lớp ngoài cùng",
+        "Có lớp vỏ trong của Ar và electron điền vào phân lớp 3d",
+        "Electron điền vào phân lớp 4p",
+        "Không có electron ở 4s"
+      ],
+      "answer": 1,
+      "explain": "Cấu hình [Ar]3dˣ4sʸ với x từ 1 đến 10.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Phần lớn có 2 electron ở 4s.",
+        "2": "Điền vào phân lớp 3d.",
+        "3": "Hầu hết có electron ở 4s."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Kim loại chuyển tiếp dãy thứ nhất có nhiều số oxi hóa vì:",
+      "choices": [
+        "Có nhiều electron hóa trị ở cả phân lớp 4s và 3d",
+        "Có bán kính nguyên tử rất lớn",
+        "Chỉ có 1 electron lớp ngoài cùng",
+        "Không có phân lớp d"
+      ],
+      "answer": 0,
+      "explain": "Electron 4s và 3d đều có thể tham gia tạo liên kết.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Không phải nguyên nhân chính.",
+        "2": "Chúng có nhiều electron hóa trị.",
+        "3": "Chúng có phân lớp d chưa bão hòa."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khi nguyên tử Fe nhường electron tạo ion, electron được nhường trước là ở phân lớp:",
+      "choices": [
+        "3d",
+        "3p",
+        "4s",
+        "2p"
+      ],
+      "answer": 2,
+      "explain": "Fe ([Ar]3d⁶4s²) → Fe²⁺ ([Ar]3d⁶) → Fe³⁺ ([Ar]3d⁵).",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Electron 4s nhường trước.",
+        "1": "Phân lớp 3p đã đầy ở lớp trong.",
+        "3": "Là electron lớp trong."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "So với kim loại nhóm s trong cùng chu kì, kim loại chuyển tiếp có:",
+      "choices": [
+        "Nhiệt độ nóng chảy thấp hơn",
+        "Khối lượng riêng nhỏ hơn",
+        "Độ cứng thấp hơn",
+        "Nhiệt độ nóng chảy và khối lượng riêng cao hơn"
+      ],
+      "answer": 3,
+      "explain": "Kim loại chuyển tiếp khó nóng chảy, cứng và nặng hơn kim loại kiềm, kiềm thổ.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Kim loại chuyển tiếp nóng chảy ở nhiệt độ cao hơn.",
+        "1": "Khối lượng riêng lớn hơn.",
+        "2": "Độ cứng cao hơn."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nguyên tử Fe (Z = 26) có bao nhiêu electron ở phân lớp 3d?",
+      "expr": "6",
+      "answer": "6",
+      "explain": "Cấu hình [Ar]3d⁶4s² nên phân lớp 3d có 6 electron.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ion Fe³⁺ có bao nhiêu electron ở phân lớp 3d?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Fe³⁺: [Ar]3d⁵.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ion Cu²⁺ (Cu có Z = 29) có bao nhiêu electron ở phân lớp 3d?",
+      "expr": "9",
+      "answer": "9",
+      "explain": "Cu: [Ar]3d¹⁰4s¹ → Cu²⁺: [Ar]3d⁹.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ion Mn²⁺ (Mn có Z = 25) có bao nhiêu electron ở phân lớp 3d?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Mn: [Ar]3d⁵4s² → Mn²⁺: [Ar]3d⁵.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 0,1 mol FeSO₄ phản ứng với KMnO₄/H₂SO₄ vừa đủ. Số mol KMnO₄ cần dùng là bao nhiêu? (nhập số thập phân)",
+      "expr": "0.1*2/10",
+      "answer": "0.02",
+      "explain": "10FeSO₄ : 2KMnO₄ nên n(KMnO₄) = 0,1 × 2/10 = 0,02 mol.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chuẩn độ 5 mL dung dịch FeSO₄ cần 5 mL KMnO₄ 0,02 M. Nồng độ mol của FeSO₄ là bao nhiêu mol/L? (nhập số thập phân)",
+      "expr": "0.02*5/5*5",
+      "answer": "0.1",
+      "explain": "n(KMnO₄) = 1×10⁻⁴ mol; n(Fe²⁺) = 5×10⁻⁴ mol; C = 5×10⁻⁴/5×10⁻³ = 0,1 M.",
+      "id": "q14"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Để nhận biết riêng ion Fe³⁺ và Cu²⁺ trong hai dung dịch, có thể dùng dung dịch NaOH vì:",
+      "choices": [
+        "Cả hai đều tạo kết tủa trắng",
+        "Fe³⁺ tạo kết tủa nâu đỏ, Cu²⁺ tạo kết tủa xanh nhạt",
+        "Cả hai đều tạo dung dịch trong suốt",
+        "Chỉ Cu²⁺ tạo kết tủa"
+      ],
+      "answer": 1,
+      "explain": "Fe(OH)₃ nâu đỏ, Cu(OH)₂ xanh nhạt.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Màu kết tủa khác nhau.",
+        "2": "Cả hai đều tạo kết tủa.",
+        "3": "Cả hai đều tạo kết tủa."
+      },
+      "id": "q15"
+    }
+  ]
+}

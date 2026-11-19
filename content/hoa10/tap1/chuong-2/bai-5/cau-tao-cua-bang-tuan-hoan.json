@@ -1,0 +1,314 @@
+{
+  "id": "bai-5",
+  "grade": 10,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 10",
+  "chapter": "Chương II. Bảng tuần hoàn các nguyên tố hoá học và định luật tuần hoàn",
+  "lesson": "Bài 5. Cấu tạo của bảng tuần hoàn các nguyên tố hoá học",
+  "section": "",
+  "bookPage": 30,
+  "requirements": [
+    "Nêu được lịch sử phát minh bảng tuần hoàn và nguyên tắc sắp xếp các nguyên tố.",
+    "Mô tả cấu tạo bảng tuần hoàn: ô, chu kì, nhóm; phân loại nguyên tố theo cấu hình electron (s, p, d, f) và theo tính chất (kim loại, phi kim, khí hiếm)."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Năm 1869, D. I. Mendeleev công bố bảng tuần hoàn, sắp xếp các nguyên tố theo chiều tăng dần nguyên tử khối và để trống ô cho các nguyên tố chưa biết. Bảng tuần hoàn hiện đại sắp xếp theo chiều tăng dần điện tích hạt nhân."
+    },
+    {
+      "type": "text",
+      "content": "Nguyên tắc sắp xếp: (1) các nguyên tố được xếp theo chiều tăng dần điện tích hạt nhân nguyên tử; (2) các nguyên tố có cùng số lớp electron được xếp thành một hàng (chu kì); (3) các nguyên tố có cùng số electron hoá trị được xếp thành một cột (nhóm)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b5-o-nguyen-to.svg",
+      "caption": "Các thông tin trong một ô nguyên tố của bảng tuần hoàn"
+    },
+    {
+      "type": "formula",
+      "content": "Số thứ tự ô = Z        Số thứ tự chu kì = số lớp electron        Số thứ tự nhóm A = số electron lớp ngoài cùng (electron hoá trị)"
+    },
+    {
+      "type": "text",
+      "content": "Chu kì: bảng có 7 chu kì; chu kì 1, 2, 3 là chu kì nhỏ (2, 8, 8 nguyên tố), chu kì 4, 5, 6, 7 là chu kì lớn. Nhóm: 18 cột chia thành 8 nhóm A (IA → VIIIA) và 8 nhóm B (IIIB → IIB, nhóm VIIIB gồm 3 cột)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b5-khoi.svg",
+      "caption": "Các khối nguyên tố s, p, d, f trong bảng tuần hoàn"
+    },
+    {
+      "type": "text",
+      "content": "Phân loại theo cấu hình: nguyên tố s (electron cuối điền vào phân lớp s: nhóm IA, IIA và He), nguyên tố p (nhóm IIIA → VIIIA, trừ He), nguyên tố d (nhóm B), nguyên tố f (họ lanthanide, actinide). Theo tính chất: kim loại (hầu hết nguyên tố s, d, f và một số p), phi kim, khí hiếm (nhóm VIIIA)."
+    },
+    {
+      "type": "method",
+      "title": "Xác định vị trí nguyên tố từ cấu hình electron",
+      "when": "Đề cho Z hoặc cấu hình electron, hỏi ô, chu kì, nhóm, loại nguyên tố; hoặc ngược lại từ vị trí suy ra cấu hình.",
+      "steps": [
+        "Viết cấu hình electron theo Z.",
+        "Ô = Z; chu kì = số lớp (n lớn nhất).",
+        "Nguyên tố s, p: nhóm A, số thứ tự nhóm = số electron lớp ngoài cùng.",
+        "Nguyên tố d: nhóm B, dựa vào tổng số electron (n−1)d + ns (3–7: nhóm IIIB–VIIB; 8–10: VIIIB; 11, 12: IB, IIB)."
+      ],
+      "notes": [
+        "He có 2e nhưng thuộc nhóm VIIIA.",
+        "Electron cuối điền vào phân lớp nào thì là nguyên tố khối đó."
+      ],
+      "sample": {
+        "problem": "Xác định vị trí của nguyên tố có Z = 17.",
+        "steps": [
+          "1s² 2s² 2p⁶ 3s² 3p⁵.",
+          "Ô 17, chu kì 3, nhóm VIIA, nguyên tố p, phi kim (chlorine)."
+        ],
+        "answer": "Ô 17, chu kì 3, nhóm VIIA"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Nguyên tố X ở chu kì 3, nhóm IIA. Viết cấu hình electron và xác định Z.",
+      "steps": [
+        "Chu kì 3 ⇒ 3 lớp electron; nhóm IIA ⇒ 2 electron lớp ngoài cùng, nguyên tố s.",
+        "Cấu hình 1s² 2s² 2p⁶ 3s² ⇒ Z = 12 (magnesium)."
+      ],
+      "expr": "12",
+      "answer": "12"
+    },
+    {
+      "problem": "Nguyên tố Fe có Z = 26. Xác định vị trí trong bảng tuần hoàn.",
+      "steps": [
+        "Cấu hình [Ar] 3d⁶ 4s²: 4 lớp ⇒ chu kì 4.",
+        "Electron cuối điền vào 3d ⇒ nguyên tố d; 6 + 2 = 8 ⇒ nhóm VIIIB."
+      ],
+      "expr": "6+2",
+      "answer": "8"
+    },
+    {
+      "problem": "Nguyên tử của nguyên tố Y có 3 lớp electron và 5 electron lớp ngoài cùng. Tính Z.",
+      "steps": [
+        "Cấu hình: 2, 8, 5 electron ⇒ Z = 15 (phosphorus), chu kì 3, nhóm VA."
+      ],
+      "expr": "2+8+5",
+      "answer": "15"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bảng tuần hoàn hiện đại sắp xếp các nguyên tố theo chiều tăng dần:",
+      "choices": [
+        "điện tích hạt nhân",
+        "nguyên tử khối",
+        "số neutron",
+        "bán kính nguyên tử"
+      ],
+      "answer": 0,
+      "explain": "Nguyên tắc 1.",
+      "wrong_explain": {
+        "1": "Đó là của Mendeleev ban đầu.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Số thứ tự chu kì bằng:",
+      "choices": [
+        "số lớp electron",
+        "số electron lớp ngoài cùng",
+        "số proton",
+        "số neutron"
+      ],
+      "answer": 0,
+      "explain": "Nguyên tắc 2.",
+      "wrong_explain": {
+        "1": "Đó là số thứ tự nhóm A.",
+        "2": "Đó là số thứ tự ô.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Bảng tuần hoàn hiện nay có bao nhiêu chu kì?",
+      "expr": "7",
+      "answer": "7",
+      "explain": "7 chu kì.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Người công bố bảng tuần hoàn đầu tiên năm 1869 là:",
+      "choices": [
+        "Mendeleev",
+        "Rutherford",
+        "Bohr",
+        "Lavoisier"
+      ],
+      "answer": 0,
+      "explain": "D. I. Mendeleev.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Các nguyên tố nhóm B đều là:",
+      "choices": [
+        "kim loại",
+        "phi kim",
+        "khí hiếm",
+        "á kim"
+      ],
+      "answer": 0,
+      "explain": "Kim loại chuyển tiếp.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên tố có cấu hình 1s² 2s² 2p⁶ 3s² 3p¹ thuộc:",
+      "choices": [
+        "chu kì 3, nhóm IIIA",
+        "chu kì 3, nhóm IA",
+        "chu kì 2, nhóm IIIA",
+        "chu kì 1, nhóm IIIA"
+      ],
+      "answer": 0,
+      "explain": "3 lớp, 3e ngoài cùng.",
+      "wrong_explain": {
+        "1": "Sai số e ngoài cùng.",
+        "2": "Sai số lớp.",
+        "3": "Sai."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nguyên tố ở chu kì 2, nhóm VIA có Z là:",
+      "expr": "8",
+      "answer": "8",
+      "explain": "1s² 2s² 2p⁴ ⇒ oxygen.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên tố K (Z = 19) thuộc khối:",
+      "choices": [
+        "s",
+        "p",
+        "d",
+        "f"
+      ],
+      "answer": 0,
+      "explain": "Electron cuối điền vào 4s.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số nguyên tố của chu kì 3 là:",
+      "expr": "8",
+      "answer": "8",
+      "explain": "Từ Na đến Ar.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên tố có Z = 24 (cấu hình [Ar]3d⁵4s¹) thuộc nhóm:",
+      "choices": [
+        "VIB",
+        "IA",
+        "VIA",
+        "IB"
+      ],
+      "answer": 0,
+      "explain": "5 + 1 = 6, nguyên tố d.",
+      "wrong_explain": {
+        "1": "Không phải nguyên tố s.",
+        "2": "Nhóm A là p.",
+        "3": "Sai."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên tố X ở chu kì 4, nhóm IA. X là:",
+      "choices": [
+        "kim loại có Z = 19",
+        "phi kim có Z = 19",
+        "kim loại có Z = 11",
+        "khí hiếm có Z = 18"
+      ],
+      "answer": 0,
+      "explain": "[Ar]4s¹ ⇒ potassium.",
+      "wrong_explain": {
+        "1": "Nhóm IA là kim loại kiềm.",
+        "2": "Chu kì 3.",
+        "3": "Sai."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ion X²⁻ có cấu hình 1s² 2s² 2p⁶ 3s² 3p⁶. X ở nhóm số mấy (A)?",
+      "expr": "6",
+      "answer": "6",
+      "explain": "X có 16e (S), nhóm VIA.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ion Y³⁺ có cấu hình [Ne]. Y ở chu kì số:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Y có 13e (Al), chu kì 3.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai nguyên tố A, B kế tiếp nhau trong một chu kì, tổng số proton là 25. Số proton của A (nhỏ hơn) là:",
+      "expr": "12",
+      "answer": "12",
+      "explain": "Z + Z + 1 = 25 ⇒ Mg và Al.",
+      "id": "q14"
+    }
+  ]
+}

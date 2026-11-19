@@ -1,0 +1,187 @@
+{
+  "id": "bai-25",
+  "grade": 10,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 10",
+  "chapter": "Chương 7. Virus",
+  "lesson": "Bài 25. Một số bệnh do virus và các thành tựu nghiên cứu, ứng dụng virus",
+  "section": "",
+  "bookPage": 145,
+  "requirements": [
+    "Giải thích được cơ chế gây bệnh do virus.",
+    "Trình bày được phương thức lây truyền và cách phòng chống một số bệnh do virus ở người, thực vật và động vật.",
+    "Giải thích được vì sao các bệnh do virus thường lây lan nhanh, rộng và có nhiều biến thể.",
+    "Kể tên được một số thành tựu ứng dụng virus trong sản xuất chế phẩm sinh học, y học, nông nghiệp."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cơ chế gây bệnh chung: virus kiểu sinh tan phá huỷ tế bào, mức độ bệnh phụ thuộc số tế bào bị huỷ và khả năng tái sinh; virus sinh ra độc tố; virus kiểu tiềm tan có thể gây đột biến dẫn đến ung thư (như viêm gan B và HPV; trên 10% ca ung thư ở người do virus). Virus còn có thể biến đổi vi khuẩn không gây bệnh thành chủng gây bệnh (như Vibrio cholerae tạo độc tố tiêu chảy)."
+    },
+    {
+      "type": "text",
+      "content": "Sốt cao và đau nhức là đáp ứng của hệ miễn dịch chống virus chứ không phải do virus phá huỷ trực tiếp. Virus RNA có enzyme sao chép sai và ít sửa lỗi nên dễ phát sinh chủng mới; tái tổ hợp giữa các virus cúm (ví dụ trong lợn) cũng tạo virus mới có thể lây sang người."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b25-chung-cum-moi.svg",
+      "caption": "Hai cơ chế tạo chủng virus cúm mới"
+    },
+    {
+      "type": "text",
+      "content": "HIV tấn công tế bào bạch cầu T4 và đại thực bào, có vật chất di truyền là RNA với hai enzyme phiên mã ngược, enzyme intergrase. HIV lây qua đường máu, đường tình dục và từ mẹ sang con; có ba giai đoạn: sơ nhiễm, không triệu chứng (1–10 năm) và AIDS với các bệnh cơ hội. Hiện chưa có vaccine vì HIV biến đổi nhanh; phòng tránh bằng quan hệ an toàn, không dùng chung kim tiêm và truyền máu an toàn."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b25-nhan-len-hiv.svg",
+      "caption": "Nhân lên của HIV trong tế bào bạch cầu người"
+    },
+    {
+      "type": "text",
+      "content": "Virus cúm A gây đại dịch ở người và động vật; virus lây theo giọt bắn khi hắt hơi và tiếp xúc bề mặt có dịch tiết. Phòng chống: đeo khẩu trang, rửa tay, tránh nơi đông người, tiêm vaccine định kì, không ăn thịt động vật chết do dịch. Bệnh ở thực vật (lá xoăn, vết vàng, nâu, trắng) gây thiệt hại khoảng 15 tỉ USD mỗi năm, lây theo hàng ngang qua côn trùng chích hút và vết thương, hoặc theo hàng dọc qua sinh sản; chưa có thuốc, phòng bằng tiêu huỷ cây bệnh, diệt côn trùng và vệ sinh đồng ruộng."
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: vaccine (Jevax phòng viêm não Nhật Bản, Havax phòng viêm gan A, Gene-HBvax phòng viêm gan B); thuốc trừ sâu virus đặc hiệu, không tiêu diệt côn trùng có lợi; virus làm vector chuyển gene trong công nghệ di truyền và liệu pháp gene; thể thực khuẩn diệt vi khuẩn gây hỏng rau quả."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Vì sao bệnh cúm mùa cần tiêm vaccine mỗi năm, còn một số bệnh khác chỉ cần tiêm một lần?",
+      "steps": [
+        "Virus cúm có vật chất di truyền RNA dễ đột biến và tái tổ hợp, biến đổi kháng nguyên mỗi năm nên vaccine cũ không còn hiệu quả."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Vì sao không nên dùng kháng sinh để chữa bệnh cúm?",
+      "steps": [
+        "Kháng sinh chỉ tác động lên vi khuẩn, không tác động lên virus cúm; dùng sai còn làm vi khuẩn kháng thuốc."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hiện tượng nào làm virus cúm nhanh chóng xuất hiện chủng mới?",
+      "choices": [
+        "đột biến gene và tái tổ hợp vật chất di truyền",
+        "tích hợp DNA vào hệ gene người",
+        "tự tiêu biến",
+        "không có hiện tượng nào"
+      ],
+      "answer": 0,
+      "explain": "Đột biến và tái tổ hợp tạo chủng mới.",
+      "wrong_explain": {
+        "1": "Tích hợp DNA là đặc điểm HIV, không phải cúm.",
+        "2": "Virus không tự tiêu biến.",
+        "3": "Có cơ chế rõ ràng."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Enzyme đặc trưng của HIV giúp chuyển RNA thành DNA là:",
+      "choices": [
+        "enzyme phiên mã ngược",
+        "enzyme phân giải lipid",
+        "enzyme tổng hợp ATP",
+        "enzyme amylase"
+      ],
+      "answer": 0,
+      "explain": "Enzyme phiên mã ngược thực hiện chuyển RNA thành DNA.",
+      "wrong_explain": {
+        "1": "Lipid không liên quan.",
+        "2": "ATP không do enzyme này tổng hợp.",
+        "3": "Amylase phân giải tinh bột."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao HIV khó có vaccine phòng ngừa?",
+      "choices": [
+        "HIV biến đổi rất nhanh",
+        "HIV không có vật chất di truyền",
+        "HIV chỉ lây qua không khí",
+        "HIV không gây bệnh cho người"
+      ],
+      "answer": 0,
+      "explain": "HIV biến đổi nhanh khiến vaccine khó hiệu quả.",
+      "wrong_explain": {
+        "1": "HIV có RNA.",
+        "2": "HIV lây qua máu, tình dục, mẹ con.",
+        "3": "HIV gây AIDS."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong giai đoạn cuối của AIDS, nguyên nhân tử vong chủ yếu là:",
+      "choices": [
+        "các bệnh cơ hội do vi sinh vật khác gây ra",
+        "HIV phá huỷ hoàn toàn não",
+        "tế bào T4 tăng quá mức",
+        "thuốc kháng virus gây chết"
+      ],
+      "answer": 0,
+      "explain": "Hệ miễn dịch suy yếu khiến bệnh cơ hội gây tử vong.",
+      "wrong_explain": {
+        "1": "HIV không phá huỷ não là nguyên nhân chính.",
+        "2": "T4 giảm chứ không tăng.",
+        "3": "Thuốc giúp ngăn virus, không gây chết chính."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Virus thực vật chủ yếu lây từ cây sang cây qua:",
+      "choices": [
+        "vết thương của cây do côn trùng chích hút và cắt tỉa",
+        "gai glycoprotein bám màng",
+        "thực bào trực tiếp",
+        "dung hợp với màng tế bào"
+      ],
+      "answer": 0,
+      "explain": "Thành tế bào thực vật ngăn virus xâm nhập trực tiếp, nên cần vết thương.",
+      "wrong_explain": {
+        "1": "Thực vật không có gai glycoprotein.",
+        "2": "Tế bào thực vật có thành nên không thực bào.",
+        "3": "Không dung hợp màng tế bào như động vật."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao việc sử dụng virus làm thuốc trừ sâu được xem là ưu việt hơn?",
+      "choices": [
+        "đặc hiệu, chỉ diệt sâu hại và không tiêu diệt côn trùng có lợi",
+        "diệt mọi côn trùng",
+        "có thể tích tụ trong thực phẩm",
+        "tăng số lượng sâu hại"
+      ],
+      "answer": 0,
+      "explain": "Tính đặc hiệu làm an toàn hơn cho môi trường.",
+      "wrong_explain": {
+        "1": "Không diệt mọi côn trùng.",
+        "2": "Thuốc virus ít tồn dư độc hại.",
+        "3": "Không làm tăng sâu hại."
+      },
+      "id": "q06"
+    }
+  ]
+}

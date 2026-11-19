@@ -1,0 +1,351 @@
+{
+  "id": "bai-4",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 1. Dao động",
+  "lesson": "Bài 4. Bài tập về dao động điều hoà",
+  "section": "",
+  "bookPage": 17,
+  "requirements": [
+    "Vận dụng phương trình, vận tốc, gia tốc để giải bài tập về dao động điều hoà.",
+    "Vận dụng công thức chu kì của con lắc lò xo và con lắc đơn."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Con lắc lò xo gồm vật khối lượng m gắn vào lò xo có độ cứng k, đặt nằm ngang trên mặt phẳng không ma sát. Vật dao động điều hoà với tần số góc ω = √(k/m)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b4-con-lac-lo-xo.svg",
+      "caption": "Con lắc lò xo nằm ngang: VTCB tại O; lực kéo về là lực đàn hồi F = −kx"
+    },
+    {
+      "type": "formula",
+      "content": "Con lắc lò xo: ω = √(k/m);  T = 2π√(m/k);  f = (1/2π)√(k/m).   Lực kéo về F = −kx."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b4-con-lac-don.svg",
+      "caption": "Con lắc đơn: sợi dây dài ℓ, vật nặng dao động quanh VTCB; góc lệch nhỏ (α < 10°) thì dao động gần đúng là điều hoà"
+    },
+    {
+      "type": "formula",
+      "content": "Con lắc đơn (góc nhỏ): ω = √(g/ℓ);  T = 2π√(ℓ/g);  f = (1/2π)√(g/ℓ)."
+    },
+    {
+      "type": "text",
+      "content": "Chu kì của con lắc lò xo không phụ thuộc biên độ, tăng khi khối lượng tăng (T ∝ √m) và giảm khi độ cứng tăng (T ∝ 1/√k). Chu kì con lắc đơn tỉ lệ với căn bậc hai của chiều dài, không phụ thuộc khối lượng vật nặng."
+    },
+    {
+      "type": "method",
+      "title": "Viết phương trình dao động điều hoà",
+      "when": "Đề cho A, T (hoặc ω, f) và trạng thái ban đầu (x₀, chiều chuyển động); yêu cầu viết x(t).",
+      "steps": [
+        "Tính ω = 2π/T (hoặc ω = 2πf, ω = √(k/m)).",
+        "A: từ chiều dài quỹ đạo L = 2A, hoặc v_max = ωA, hoặc x₀ và v₀.",
+        "Pha ban đầu: từ điều kiện t = 0: x₀ = A cos φ, v₀ = −ωA sin φ (v > 0 thì sin φ < 0, v < 0 thì sin φ > 0).",
+        "Viết x = A cos(ωt + φ)."
+      ],
+      "notes": [
+        "Thả nhẹ tại biên dương: φ = 0; thả tại biên âm: φ = π.",
+        "Qua VTCB theo chiều dương: φ = −π/2; theo chiều âm: φ = +π/2."
+      ],
+      "sample": {
+        "problem": "Vật A = 6 cm, T = 0,5 s, lúc t = 0 qua VTCB theo chiều dương. Viết phương trình.",
+        "steps": [
+          "ω = 2π/T = 4π rad/s.",
+          "x₀ = 0 và v₀ > 0 ⇒ φ = −π/2.",
+          "x = 6cos(4πt − π/2) cm."
+        ],
+        "answer": "x = 6cos(4πt − π/2) cm"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tính chu kì, tần số của con lắc lò xo, con lắc đơn",
+      "when": "Cho m, k, ℓ, g; hoặc thay đổi khối lượng, độ cứng, chiều dài rồi hỏi chu kì mới.",
+      "steps": [
+        "Con lắc lò xo: T = 2π√(m/k); con lắc đơn: T = 2π√(ℓ/g).",
+        "Với bài thay đổi đại lượng: lập tỉ số T′/T = √(m′/m) (lò xo) hoặc √(ℓ′/ℓ) (con lắc đơn).",
+        "Thay số, tính T, f.",
+        "Chú ý đổi đơn vị (kg, N/m, m)."
+      ],
+      "notes": [
+        "Cắt ghép lò xo: k tỉ lệ nghịch chiều dài.",
+        "Thang máy hay xe chuyển động có gia tốc: g thay bằng g hiệu dụng."
+      ],
+      "sample": {
+        "problem": "Lò xo k = 40 N/m treo vật m = 0,1 kg. Tính T. Khi gắn thêm vật để khối lượng thành 0,4 kg thì T mới bao nhiêu?",
+        "steps": [
+          "T = 2π√(0,1/40) = 2π·0,05 = 0,1π s ≈ 0,31 s.",
+          "m′ = 4m nên T′ = 2T = 0,2π s ≈ 0,63 s."
+        ],
+        "answer": "T = 0,1π s; T′ = 0,2π s"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tìm thời điểm, quãng đường, số lần qua một vị trí",
+      "when": "Cho phương trình dao động và hỏi thời điểm vật qua vị trí x₁, số lần qua x₁ trong khoảng thời gian t.",
+      "steps": [
+        "Đặt phương trình lượng giác cos(ωt + φ) = x₁/A.",
+        "Giải ωt + φ = ±α + k2π và chọn nghiệm t > 0 nhỏ nhất.",
+        "Mỗi chu kì vật qua mỗi vị trí (trừ biên) 2 lần; qua biên 1 lần.",
+        "Số lần = 2·(số chu kì nguyên) + phần dư (xét bằng đường tròn)."
+      ],
+      "notes": [
+        "Có thể dùng đường tròn để tránh sai nghiệm.",
+        "Lần đầu tiên và lần thứ n khác nhau: lần n = lần đầu + (n − 1)T/2 theo cặp."
+      ],
+      "sample": {
+        "problem": "x = 4cos(2πt) cm. Trong 5 s, vật qua vị trí x = 2 cm bao nhiêu lần?",
+        "steps": [
+          "T = 1 s nên 5 s = 5 chu kì.",
+          "Mỗi chu kì qua x = 2 cm hai lần.",
+          "Số lần = 10."
+        ],
+        "answer": "10 lần"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Lò xo k = 40 N/m treo vật m = 0,1 kg. T = kπ s. Tìm k.",
+      "steps": [
+        "T = 2π√(m/k) = 2π√(0,1/40) = 2π·0,05.",
+        "T = 0,1π nên k = 1/10."
+      ],
+      "expr": "2*(1/20)",
+      "answer": "1/10"
+    },
+    {
+      "problem": "Con lắc đơn dài 1 m, g = π² m/s². Chu kì T (s) bằng bao nhiêu?",
+      "steps": [
+        "T = 2π√(ℓ/g) = 2π√(1/π²).",
+        "= 2 s."
+      ],
+      "expr": "2*1",
+      "answer": "2"
+    },
+    {
+      "problem": "Chu kì con lắc lò xo là 0,5 s. Khi tăng khối lượng gấp 4 lần thì chu kì mới (s)?",
+      "steps": [
+        "T′ = T√4 = 2T.",
+        "= 1 s."
+      ],
+      "expr": "2*0.5",
+      "answer": "1"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Con lắc lò xo m = 0,1 kg, k = 40 N/m. ω² (rad²/s²) bằng:",
+      "expr": "(40)/(0.1)",
+      "answer": "400",
+      "explain": "ω² = k/m = 400 nên ω = 20 rad/s.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Con lắc đơn dài 1 m, g = π² m/s². Chu kì T (s) là:",
+      "expr": "2*1",
+      "answer": "2",
+      "explain": "T = 2π√(1/π²) = 2 s.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Con lắc đơn dài 0,25 m, g = π² m/s². Chu kì T (s) là:",
+      "expr": "2*(1/2)",
+      "answer": "1",
+      "explain": "T = 2π√(0,25/π²) = 2·0,5 = 1 s.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chu kì của con lắc đơn dao động nhỏ phụ thuộc vào:",
+      "choices": [
+        "chiều dài dây và gia tốc trọng trường",
+        "khối lượng vật nặng",
+        "biên độ dao động",
+        "cách kích thích dao động"
+      ],
+      "answer": 0,
+      "explain": "T = 2π√(ℓ/g).",
+      "wrong_explain": {
+        "1": "Không phụ thuộc khối lượng.",
+        "2": "Dao động nhỏ thì T không phụ thuộc biên độ.",
+        "3": "Không phụ thuộc cách kích thích."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Công thức chu kì con lắc lò xo là:",
+      "choices": [
+        "T = 2π√(m/k)",
+        "T = 2π√(k/m)",
+        "T = 2π√(ℓ/g)",
+        "T = (1/2π)√(m/k)"
+      ],
+      "answer": 0,
+      "explain": "T = 2π√(m/k).",
+      "wrong_explain": {
+        "1": "Đã đảo m và k.",
+        "2": "Đó là của con lắc đơn.",
+        "3": "Đó là biểu thức của f đã sai."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lò xo k = 40 N/m, m = 0,1 kg. T = (a/b)π s, tìm a/b = T/π:",
+      "expr": "2*(1/20)",
+      "answer": "1/10",
+      "explain": "T = 2π√(0,1/40) = 2π/20 = 0,1π s.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Con lắc lò xo có T = 0,5 s. Tăng khối lượng gấp 4 lần thì T mới (s) là:",
+      "expr": "2*0.5",
+      "answer": "1",
+      "explain": "T′ = T√4 = 1 s.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Con lắc đơn T = 2 s. Tăng chiều dài lên 4 lần thì T mới (s) là:",
+      "expr": "2*2",
+      "answer": "4",
+      "explain": "T′ = T√4 = 4 s.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật dao động A = 6 cm, T = 0,5 s. Tần số góc ω = kπ rad/s. Giá trị k là:",
+      "expr": "(2)/(0.5)",
+      "answer": "4",
+      "explain": "ω = 2π/0,5 = 4π nên k = 4.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Thả nhẹ vật tại biên dương (A = 5 cm). Pha ban đầu φ (rad) bằng:",
+      "expr": "0",
+      "answer": "0",
+      "explain": "x₀ = A nên φ = 0.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vật qua VTCB theo chiều dương lúc t = 0 thì pha ban đầu φ bằng:",
+      "choices": [
+        "−π/2",
+        "π/2",
+        "0",
+        "π"
+      ],
+      "answer": 0,
+      "explain": "x₀ = 0 và v₀ > 0 nên φ = −π/2.",
+      "wrong_explain": {
+        "1": "π/2 ứng với chiều âm.",
+        "2": "φ = 0 là ở biên dương.",
+        "3": "φ = π là ở biên âm."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "m = 0,1 kg, A = 5 cm, ω = 20 rad/s. Độ lớn lực kéo về cực đại (N) là:",
+      "expr": "0.1*400*0.05",
+      "answer": "2",
+      "explain": "F = mω²A = 2 N.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Con lắc lò xo m = 0,4 kg dao động với ω = 10 rad/s. Độ cứng k (N/m) là:",
+      "expr": "0.4*100",
+      "answer": "40",
+      "explain": "k = mω² = 40 N/m.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "x = 4cos(2πt) cm. Trong 5 s vật qua vị trí x = 2 cm bao nhiêu lần?",
+      "expr": "5*2",
+      "answer": "10",
+      "explain": "T = 1 s, mỗi chu kì qua 2 lần: 10 lần.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Con lắc lò xo thẳng đứng, ở VTCB lò xo dãn Δℓ = 0,025 m, g = 10 m/s². ω² (rad²/s²) = g/Δℓ bằng:",
+      "expr": "(10)/(0.025)",
+      "answer": "400",
+      "explain": "ω² = 400, ω = 20 rad/s.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lò xo dài 20 cm cắt thành hai phần 5 cm và 15 cm. Phần 5 cm có k gấp mấy lần k ban đầu?",
+      "expr": "20/5",
+      "answer": "4",
+      "explain": "k tỉ lệ nghịch chiều dài: gấp 4 lần.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hai lò xo giống nhau k mỗi lò xo ghép song song gắn vật m. Hệ số độ cứng tương đương gấp bao nhiêu lần k?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Ghép song song: k_hệ = k₁ + k₂ = 2k.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi khối lượng tăng gấp 4 lần và độ cứng k tăng gấp 4 lần thì chu kì T:",
+      "choices": [
+        "không đổi",
+        "tăng gấp 2",
+        "giảm một nửa",
+        "tăng gấp 4"
+      ],
+      "answer": 0,
+      "explain": "T = 2π√(m/k) với m/k không đổi.",
+      "wrong_explain": {
+        "1": "Tỉ số m/k không đổi.",
+        "2": "Không đổi.",
+        "3": "Không đổi."
+      },
+      "id": "q18"
+    }
+  ]
+}

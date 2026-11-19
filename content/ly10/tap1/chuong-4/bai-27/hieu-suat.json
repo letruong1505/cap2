@@ -1,0 +1,275 @@
+{
+  "id": "bai-27",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương IV. Năng lượng, công, công suất",
+  "lesson": "Bài 27. Hiệu suất",
+  "section": "",
+  "bookPage": 106,
+  "requirements": [
+    "Nêu được khái niệm hiệu suất, năng lượng có ích và hao phí.",
+    "Tính hiệu suất của động cơ, máy cơ đơn giản, thiết bị điện."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khi chuyển hoá năng lượng, chỉ một phần năng lượng toàn phần được chuyển thành năng lượng có ích (phục vụ mục đích); phần còn lại là năng lượng hao phí (thường chuyển thành nhiệt do ma sát, toả ra môi trường)."
+    },
+    {
+      "type": "formula",
+      "content": "Hiệu suất: H = W_ci / W_tp · 100% = A_ci / A_tp · 100% = P_ci / P_tp · 100%        (H < 100%)"
+    },
+    {
+      "type": "text",
+      "content": "W_tp = W_ci + W_hp. Hiệu suất càng cao thì máy càng tiết kiệm năng lượng. Ví dụ: động cơ điện khoảng 80–95%, động cơ xăng khoảng 25–30%, bóng đèn sợi đốt chỉ khoảng 5% (phần lớn thành nhiệt), đèn LED khoảng 30–40%."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b27-hieu-suat.svg",
+      "caption": "Sơ đồ phân chia năng lượng có ích và hao phí"
+    },
+    {
+      "type": "text",
+      "content": "Hiệu suất của mặt phẳng nghiêng, ròng rọc, đòn bẩy: H = (P·h)/(F·s) với P·h là công có ích nâng vật, F·s là công toàn phần của lực kéo."
+    },
+    {
+      "type": "text",
+      "content": "Tăng hiệu suất: giảm ma sát (bôi trơn, ổ bi), giảm hao phí nhiệt, chọn thiết bị tiết kiệm năng lượng. Hiệu suất của động cơ nhiệt bị giới hạn bởi nguyên lí nhiệt động lực học, luôn nhỏ hơn 100%."
+    },
+    {
+      "type": "method",
+      "title": "Tính hiệu suất",
+      "when": "Đề cho năng lượng (công, công suất) có ích và toàn phần, hoặc máy cơ đơn giản (mặt nghiêng, ròng rọc) với lực kéo và vật nâng; hỏi hiệu suất, năng lượng hao phí, công suất đầu vào.",
+      "steps": [
+        "Xác định đâu là phần có ích (mục đích sử dụng) và toàn phần (năng lượng cung cấp).",
+        "H = có ích/toàn phần·100%.",
+        "Hao phí = toàn phần − có ích.",
+        "Bài ngược: toàn phần = có ích/H."
+      ],
+      "notes": [
+        "Đơn vị năng lượng hai phần phải giống nhau.",
+        "H luôn nhỏ hơn 100%."
+      ],
+      "sample": {
+        "problem": "Động cơ nhận điện năng 1000 J, sinh công cơ học 800 J. Tính hiệu suất.",
+        "steps": [
+          "H = 800/1000 = 80%."
+        ],
+        "answer": "80%"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Kéo vật 50 kg lên cao 2 m bằng mặt phẳng nghiêng dài 5 m với lực kéo 250 N (g = 10). Tính hiệu suất mặt phẳng nghiêng.",
+      "steps": [
+        "A_ci = P·h = 500·2 = 1000 J.",
+        "A_tp = F·s = 250·5 = 1250 J.",
+        "H = 1000/1250 = 80%."
+      ],
+      "expr": "1000/1250*100",
+      "answer": "80"
+    },
+    {
+      "problem": "Một máy bơm điện công suất 2 kW, hiệu suất 75%, bơm nước lên cao 10 m (g = 10). Mỗi phút bơm được bao nhiêu kg nước?",
+      "steps": [
+        "P_ci = 0,75·2000 = 1500 W; trong 60 s: A_ci = 90 000 J.",
+        "m = A_ci/(gh) = 90 000/100 = 900 kg."
+      ],
+      "expr": "90000/100",
+      "answer": "900"
+    },
+    {
+      "problem": "Bóng đèn 60 W chỉ biến 5% điện năng thành quang năng. Tính năng lượng hao phí trong 1 giờ.",
+      "steps": [
+        "Điện năng: 60·3600 = 216 000 J.",
+        "Hao phí 95%: 205 200 J."
+      ],
+      "expr": "216000*95/100",
+      "answer": "205200"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hiệu suất là tỉ số giữa:",
+      "choices": [
+        "năng lượng có ích và năng lượng toàn phần",
+        "năng lượng hao phí và có ích",
+        "năng lượng toàn phần và có ích",
+        "công suất và thời gian"
+      ],
+      "answer": 0,
+      "explain": "H = W_ci/W_tp.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Lớn hơn 1.",
+        "3": "Đó là công."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hiệu suất của máy luôn:",
+      "choices": [
+        "nhỏ hơn 100%",
+        "bằng 100%",
+        "lớn hơn 100%",
+        "bằng 0"
+      ],
+      "answer": 0,
+      "explain": "Luôn có hao phí.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Động cơ nhận 500 J, sinh công có ích 400 J. Hiệu suất (%):",
+      "expr": "80",
+      "answer": "80",
+      "explain": "400/500.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Năng lượng toàn phần 1200 J, có ích 900 J. Hao phí (J):",
+      "expr": "300",
+      "answer": "300",
+      "explain": "Hiệu.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phần năng lượng hao phí trong động cơ thường chuyển thành:",
+      "choices": [
+        "nhiệt năng",
+        "quang năng",
+        "hoá năng",
+        "điện năng"
+      ],
+      "answer": 0,
+      "explain": "Do ma sát.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Máy có H = 70%, cần sinh công có ích 1400 J. Năng lượng toàn phần (J):",
+      "expr": "2000",
+      "answer": "2000",
+      "explain": "1400/0,7.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ròng rọc nâng vật 200 N lên 3 m, lực kéo 250 N, dây kéo 3 m. Hiệu suất (%):",
+      "expr": "600/750*100",
+      "answer": "80",
+      "explain": "Có ích 600 J, toàn phần 750 J.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Động cơ 5 kW, hiệu suất 90%. Công suất có ích (kW):",
+      "expr": "4.5",
+      "answer": "4.5",
+      "explain": "0,9·5.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thiết bị chiếu sáng tiết kiệm năng lượng hơn là:",
+      "choices": [
+        "đèn LED",
+        "đèn sợi đốt",
+        "đèn dầu",
+        "nến"
+      ],
+      "answer": 0,
+      "explain": "Hiệu suất cao hơn.",
+      "wrong_explain": {
+        "1": "Hiệu suất rất thấp.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mặt nghiêng dài 4 m, cao 1 m, vật 400 N, lực kéo 125 N. Hiệu suất (%):",
+      "expr": "400/500*100",
+      "answer": "80",
+      "explain": "400 J / 500 J.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cần cẩu 10 kW, hiệu suất 80%, nâng 2 tấn lên 20 m (g = 10). Thời gian (s):",
+      "expr": "400000/8000",
+      "answer": "50",
+      "explain": "A_ci = 400 000 J; P_ci = 8 kW.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ô tô tiêu thụ năng lượng nhiên liệu 400 kJ, sinh công 100 kJ. Hiệu suất (%):",
+      "expr": "25",
+      "answer": "25",
+      "explain": "100/400.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Máy bơm 1,5 kW, H = 80%, bơm nước lên 6 m trong 10 phút (g = 10). Khối lượng nước bơm được (kg):",
+      "expr": "720000/60",
+      "answer": "12000",
+      "explain": "A_ci = 1200·600 = 720 000 J.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mặt nghiêng có H = 75%, kéo vật 300 N lên cao 2 m, dài 4 m. Lực kéo (N):",
+      "expr": "200",
+      "answer": "200",
+      "explain": "A_tp = 600/0,75 = 800 J; F = 800/4.",
+      "id": "q14"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Nhà máy thuỷ điện: nước rơi 100 m, lưu lượng 50 m³/s, hiệu suất 85% (g = 10). Công suất điện (MW):",
+      "expr": "42.5",
+      "answer": "42.5",
+      "explain": "P = 0,85·50 000·10·100 = 42,5·10⁶ W.",
+      "id": "q15"
+    }
+  ]
+}

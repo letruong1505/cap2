@@ -1,0 +1,364 @@
+{
+  "id": "bai-10",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 11, tập 1",
+  "chapter": "Chương IV. Quan hệ song song trong không gian",
+  "lesson": "Bài 10. Đường thẳng và mặt phẳng trong không gian",
+  "section": "",
+  "bookPage": 70,
+  "requirements": [
+    "Nắm các tính chất thừa nhận và cách xác định mặt phẳng trong không gian.",
+    "Tìm giao tuyến, giao điểm; nhận biết hình chóp, hình tứ diện."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Trong không gian, điểm, đường thẳng, mặt phẳng là các khái niệm cơ bản. Mặt phẳng (P) không có bề dày và vô hạn; thường vẽ bằng hình bình hành. Điểm A thuộc (P) kí hiệu A ∈ (P)."
+    },
+    {
+      "type": "text",
+      "content": "Các tính chất thừa nhận: (1) Có một và chỉ một đường thẳng đi qua hai điểm phân biệt. (2) Có một và chỉ một mặt phẳng đi qua ba điểm không thẳng hàng. (3) Nếu một đường thẳng có hai điểm phân biệt thuộc mặt phẳng thì mọi điểm của đường thẳng đều thuộc mặt phẳng. (4) Hai mặt phẳng phân biệt có điểm chung thì chúng có chung một đường thẳng đi qua điểm đó (giao tuyến). (5) Trong mỗi mặt phẳng, các kết quả của hình học phẳng đều đúng."
+    },
+    {
+      "type": "text",
+      "content": "Cách xác định mặt phẳng: qua ba điểm không thẳng hàng; qua một đường thẳng và một điểm ngoài nó; qua hai đường thẳng cắt nhau; qua hai đường thẳng song song."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b10-hinh-chop.svg",
+      "caption": "Hình chóp S.ABCD: O = AC ∩ BD, nên SO là giao tuyến của hai mặt phẳng (SAC) và (SBD)"
+    },
+    {
+      "type": "text",
+      "content": "Hình chóp S.A₁A₂…Aₙ: đỉnh S, đáy là đa giác A₁A₂…Aₙ, các mặt bên là tam giác. Hình chóp n-giác có n + 1 mặt, n + 1 đỉnh, 2n cạnh. Hình tứ diện ABCD có 4 mặt, 4 đỉnh, 6 cạnh; mỗi cặp cạnh không có đỉnh chung là cặp cạnh đối."
+    },
+    {
+      "type": "method",
+      "title": "Tìm giao tuyến của hai mặt phẳng",
+      "when": "Hai mặt phẳng (P), (Q) cho bằng các điểm, đường thẳng trong một hình chóp hoặc tứ diện.",
+      "steps": [
+        "Tìm hai điểm chung phân biệt của (P) và (Q) (một điểm chung thấy ngay, như đỉnh S).",
+        "Tìm điểm chung thứ hai: gọi giao điểm của hai đường thẳng cùng nằm trong hai mặt phẳng khác nhau (ví dụ AC ∩ BD = O).",
+        "Nối hai điểm chung: đó là giao tuyến.",
+        "Ghi rõ lập luận: “S ∈ (P) ∩ (Q), O ∈ (P) ∩ (Q) ⇒ SO = (P) ∩ (Q)”."
+      ],
+      "notes": [
+        "Cần đúng hai điểm chung; một điểm chưa đủ.",
+        "Nếu hai mặt phẳng chứa hai đường thẳng song song, giao tuyến song song với chúng (Bài 11)."
+      ],
+      "sample": {
+        "problem": "Cho S.ABCD, O = AC ∩ BD. Tìm (SAC) ∩ (SBD).",
+        "steps": [
+          "S là điểm chung.",
+          "O ∈ AC ⊂ (SAC) và O ∈ BD ⊂ (SBD) nên O là điểm chung.",
+          "Vậy (SAC) ∩ (SBD) = SO."
+        ],
+        "answer": "SO"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tìm giao điểm của đường thẳng và mặt phẳng",
+      "when": "Cho đường thẳng d và mặt phẳng (P), tìm điểm d ∩ (P).",
+      "steps": [
+        "Chọn mặt phẳng phụ (Q) chứa d.",
+        "Tìm giao tuyến Δ = (P) ∩ (Q).",
+        "Trong (Q), gọi M = d ∩ Δ.",
+        "Vì M ∈ Δ ⊂ (P) và M ∈ d nên M = d ∩ (P)."
+      ],
+      "notes": [
+        "Chọn (Q) sao cho dễ tìm giao tuyến với (P).",
+        "Nếu d ∥ Δ thì d song song với (P), không có giao điểm."
+      ],
+      "sample": {
+        "problem": "Tìm giao điểm của SO với (ABCD) trong hình chóp S.ABCD.",
+        "steps": [
+          "SO ⊂ (SAC); (SAC) ∩ (ABCD) = AC.",
+          "O ∈ AC nên SO ∩ (ABCD) = O."
+        ],
+        "answer": "O"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Đếm số yếu tố của hình chóp, tứ diện; số mặt phẳng, đường thẳng xác định bởi các điểm",
+      "when": "Đề hỏi hình chóp n-giác có bao nhiêu mặt, cạnh; hoặc n điểm xác định bao nhiêu đường thẳng, mặt phẳng.",
+      "steps": [
+        "Hình chóp n-giác: n + 1 mặt, n + 1 đỉnh, 2n cạnh.",
+        "Số đường thẳng nối từng cặp từ n điểm (không ba điểm thẳng hàng): n(n − 1)/2.",
+        "Số mặt phẳng xác định bởi n điểm (không ba thẳng hàng, không bốn đồng phẳng): n(n − 1)(n − 2)/6.",
+        "Tính và kiểm tra bằng ví dụ nhỏ (n = 4 cho tứ diện: 6 cạnh, 4 mặt)."
+      ],
+      "notes": [
+        "Điều kiện “không ba điểm thẳng hàng, không bốn điểm đồng phẳng” là cần thiết.",
+        "Tứ diện có đúng 3 cặp cạnh đối chéo nhau."
+      ],
+      "sample": {
+        "problem": "Hình chóp có đáy là lục giác có bao nhiêu cạnh?",
+        "steps": [
+          "n = 6 nên số cạnh là 2n = 12."
+        ],
+        "answer": "12"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hình chóp tứ giác S.ABCD có bao nhiêu cạnh?",
+      "steps": [
+        "Mỗi đáy có 4 cạnh, thêm 4 cạnh bên.",
+        "4·2 = 8 cạnh."
+      ],
+      "expr": "4*2",
+      "answer": "8"
+    },
+    {
+      "problem": "Có bao nhiêu mặt phẳng xác định bởi 4 điểm không đồng phẳng (không ba điểm thẳng hàng)?",
+      "steps": [
+        "Mỗi bộ 3 điểm xác định 1 mặt phẳng.",
+        "C(4,3) = 4·3·2/6 = 4."
+      ],
+      "expr": "4*3*2/6",
+      "answer": "4"
+    },
+    {
+      "problem": "Có bao nhiêu đường thẳng đi qua 2 trong 5 điểm không có ba điểm nào thẳng hàng?",
+      "steps": [
+        "C(5,2) = 5·4/2.",
+        "= 10."
+      ],
+      "expr": "5*4/2",
+      "answer": "10"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hình chóp tứ giác S.ABCD có bao nhiêu mặt (kể cả đáy)?",
+      "expr": "4+1",
+      "answer": "5",
+      "explain": "4 mặt bên + 1 mặt đáy = 5.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hình chóp tứ giác S.ABCD có bao nhiêu cạnh?",
+      "expr": "4*2",
+      "answer": "8",
+      "explain": "4 cạnh đáy + 4 cạnh bên = 8.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hình tứ diện có bao nhiêu cạnh?",
+      "expr": "4*3/2",
+      "answer": "6",
+      "explain": "C(4,2) = 6 cạnh.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hình chóp có đáy là lục giác có bao nhiêu cạnh?",
+      "expr": "2*6",
+      "answer": "12",
+      "explain": "2n = 12.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Qua ba điểm không thẳng hàng có:",
+      "choices": [
+        "một và chỉ một mặt phẳng",
+        "vô số mặt phẳng",
+        "đúng hai mặt phẳng",
+        "không có mặt phẳng nào"
+      ],
+      "answer": 0,
+      "explain": "Đây là tính chất thừa nhận về xác định mặt phẳng.",
+      "wrong_explain": {
+        "1": "Ba điểm không thẳng hàng xác định duy nhất một mặt phẳng.",
+        "2": "Chỉ có đúng một mặt phẳng.",
+        "3": "Luôn tồn tại mặt phẳng đi qua ba điểm."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hình chóp S.ABCD (đáy ABCD) có O = AC ∩ BD. Giao tuyến của (SAC) và (SBD) là:",
+      "choices": [
+        "SO",
+        "AC",
+        "BD",
+        "SA"
+      ],
+      "answer": 0,
+      "explain": "S và O đều là điểm chung của hai mặt phẳng.",
+      "wrong_explain": {
+        "1": "AC chỉ nằm trong (SAC).",
+        "2": "BD chỉ nằm trong (SBD).",
+        "3": "SA chỉ nằm trong (SAC)."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có bao nhiêu mặt phẳng xác định bởi 4 điểm không đồng phẳng?",
+      "expr": "4*3*2/6",
+      "answer": "4",
+      "explain": "Mỗi bộ ba điểm cho một mặt phẳng: C(4,3) = 4.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có bao nhiêu đường thẳng đi qua hai trong 5 điểm không ba điểm nào thẳng hàng?",
+      "expr": "5*4/2",
+      "answer": "10",
+      "explain": "C(5,2) = 10.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chóp có đáy là đa giác 8 cạnh có bao nhiêu đỉnh?",
+      "expr": "8+1",
+      "answer": "9",
+      "explain": "n + 1 = 9 đỉnh.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chóp có 7 cạnh đáy có bao nhiêu mặt bên?",
+      "expr": "7",
+      "answer": "7",
+      "explain": "Số mặt bên bằng số cạnh đáy.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tứ diện có bao nhiêu cặp cạnh đối (cặp cạnh không có đỉnh chung)?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "AB–CD, AC–BD, AD–BC.",
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cách nào sau đây KHÔNG xác định được một mặt phẳng?",
+      "choices": [
+        "Ba điểm thẳng hàng",
+        "Hai đường thẳng cắt nhau",
+        "Một đường thẳng và một điểm ngoài đường thẳng",
+        "Hai đường thẳng song song"
+      ],
+      "answer": 0,
+      "explain": "Ba điểm thẳng hàng nằm trên vô số mặt phẳng.",
+      "wrong_explain": {
+        "1": "Hai đường thẳng cắt nhau xác định một mặt phẳng.",
+        "2": "Đường thẳng và điểm ngoài nó xác định một mặt phẳng.",
+        "3": "Hai đường thẳng song song xác định một mặt phẳng."
+      },
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có bao nhiêu mặt phẳng xác định bởi 5 điểm không ba điểm nào thẳng hàng và không bốn điểm nào đồng phẳng?",
+      "expr": "5*4*3/6",
+      "answer": "10",
+      "explain": "C(5,3) = 10.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình chóp ngũ giác có tổng số cạnh là:",
+      "expr": "2*5",
+      "answer": "10",
+      "explain": "5 cạnh đáy + 5 cạnh bên = 10.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một hình chóp có tổng 14 cạnh. Đáy là đa giác có bao nhiêu cạnh?",
+      "expr": "14/2",
+      "answer": "7",
+      "explain": "2n = 14 nên n = 7.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một hình chóp có 10 mặt. Đáy là đa giác bao nhiêu cạnh?",
+      "expr": "10-1",
+      "answer": "9",
+      "explain": "n + 1 = 10 nên n = 9.",
+      "id": "q16"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Giao điểm của SO với mặt phẳng (ABCD) trong hình chóp S.ABCD (O = AC ∩ BD) là:",
+      "choices": [
+        "O",
+        "S",
+        "A",
+        "Không có"
+      ],
+      "answer": 0,
+      "explain": "SO cắt (ABCD) tại O ∈ AC ⊂ (ABCD).",
+      "wrong_explain": {
+        "1": "S không thuộc (ABCD).",
+        "2": "A không nằm trên SO.",
+        "3": "SO cắt (ABCD) tại O nên có giao điểm."
+      },
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tứ diện ABCD: có bao nhiêu mặt phẳng đi qua ba trong bốn đỉnh?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Mỗi cách bỏ một đỉnh cho một mặt: 4 mặt.",
+      "id": "q18"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai mặt phẳng phân biệt (P), (Q) có một điểm chung M. Khẳng định đúng là:",
+      "choices": [
+        "(P) ∩ (Q) là đường thẳng qua M",
+        "(P) ∩ (Q) = {M}",
+        "(P), (Q) song song",
+        "(P) ∩ (Q) = ∅"
+      ],
+      "answer": 0,
+      "explain": "Hai mặt phẳng phân biệt có điểm chung thì giao là một đường thẳng.",
+      "wrong_explain": {
+        "1": "Giao của hai mặt phẳng phân biệt không thể là một điểm.",
+        "2": "Có điểm chung nên không song song.",
+        "3": "Có điểm chung nên giao khác rỗng."
+      },
+      "id": "q19"
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "id": "bai-2",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 1",
+  "chapter": "Chương I. Phương trình và hệ hai phương trình bậc nhất hai ẩn",
+  "lesson": "Bài 2. Giải hệ hai phương trình bậc nhất hai ẩn",
+  "section": "",
+  "bookPage": 11,
+  "requirements": [
+    "Giải hệ hai phương trình bậc nhất hai ẩn bằng phương pháp thế, phương pháp cộng đại số; dùng máy tính cầm tay."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phương pháp thế: từ một phương trình biểu diễn một ẩn theo ẩn kia, thế vào phương trình còn lại để được phương trình một ẩn; giải rồi suy ra ẩn còn lại."
+    },
+    {
+      "type": "text",
+      "content": "Phương pháp cộng đại số: nhân hai vế mỗi phương trình với số thích hợp để hệ số của một ẩn bằng nhau hoặc đối nhau; cộng hoặc trừ từng vế để khử ẩn đó."
+    },
+    {
+      "type": "text",
+      "content": "Hệ hai phương trình bậc nhất hai ẩn có thể có một nghiệm duy nhất, vô nghiệm hoặc vô số nghiệm."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/c-t9-b2-ba-truong-hop.svg",
+      "caption": "Hệ có 1 nghiệm, vô nghiệm hoặc vô số nghiệm."
+    },
+    {
+      "type": "text",
+      "content": "Có thể dùng máy tính cầm tay (chế độ giải hệ phương trình) để tìm nghiệm."
+    },
+    {
+      "type": "method",
+      "title": "Giải hệ hai phương trình bậc nhất hai ẩn",
+      "when": "Đề cho hệ hai phương trình bậc nhất hai ẩn x, y và yêu cầu tìm nghiệm hoặc biểu thức theo nghiệm.",
+      "steps": [
+        "Chọn phương pháp: thế (khi một ẩn có hệ số 1 hoặc −1) hoặc cộng đại số (khi hệ số của một ẩn bằng nhau hoặc đối nhau, hoặc nhân để được như vậy).",
+        "Biến đổi để được một phương trình chỉ chứa một ẩn.",
+        "Giải phương trình đó, thế ngược vào một phương trình của hệ để tìm ẩn còn lại.",
+        "Kiểm tra nghiệm trong cả hai phương trình và kết luận nghiệm (x; y)."
+      ],
+      "notes": [
+        "Khi cộng đại số, nhân cả hai vế của phương trình, không chỉ một vế.",
+        "Cùng dấu thì trừ vế với vế, đối dấu thì cộng vế với vế để mất một ẩn.",
+        "Nghiệm phải thỏa mãn cả hai phương trình; hãy thử lại.",
+        "Hệ có thể vô nghiệm hoặc vô số nghiệm khi các hệ số tỉ lệ nhau."
+      ],
+      "sample": {
+        "problem": "Giải hệ x + y = 5; x − y = 1.",
+        "steps": [
+          "Cộng hai phương trình vế với vế: 2x = 6 ⇒ x = 3.",
+          "Thế vào x + y = 5: y = 2.",
+          "Nghiệm của hệ là (3; 2)."
+        ],
+        "answer": "(3; 2)"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Giải hệ { x + y = 10 ; x − y = 4 }. Tìm x.",
+      "steps": [
+        "Cộng từng vế: 2x = 14.",
+        "x = 7, y = 3."
+      ],
+      "expr": "14/2",
+      "answer": "7"
+    },
+    {
+      "problem": "Dạng phương pháp thế: { y = 2x − 1 ; 3x + y = 9 }. Tìm x.",
+      "steps": [
+        "Thế: 3x + 2x − 1 = 9 ⇒ 5x = 10.",
+        "x = 2, y = 3."
+      ],
+      "expr": "10/5",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Để khử ẩn y trong hệ { 2x + 3y = 7 ; x − 3y = 2 } ta:",
+      "choices": [
+        "Cộng từng vế hai phương trình",
+        "Trừ từng vế",
+        "Nhân phương trình đầu với 2",
+        "Thế y = 7"
+      ],
+      "answer": 0,
+      "explain": "3y + (−3y) = 0.",
+      "wrong_explain": {
+        "1": "Hệ số y đối nhau nên cộng.",
+        "2": "Không cần.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hệ { x + y = 2 ; x + y = 5 } có:",
+      "choices": [
+        "Một nghiệm",
+        "Vô số nghiệm",
+        "Hai nghiệm",
+        "Vô nghiệm"
+      ],
+      "answer": 3,
+      "explain": "x + y không thể vừa bằng 2 vừa bằng 5.",
+      "wrong_explain": {
+        "0": "Hai đường thẳng song song.",
+        "1": "Vế phải khác nhau.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hệ x + y = 5; x − y = 1 có nghiệm (x; y). Giá trị của x là?",
+      "expr": "(5+1)/2",
+      "answer": "3",
+      "explain": "Cộng hai phương trình: 2x = 6 ⇒ x = 3.",
+      "dang": "Giải hệ hai phương trình bậc nhất hai ẩn",
+      "id": "q10"
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải hệ { x + y = 8 ; x − y = 2 }. Tìm y.",
+      "expr": "3",
+      "answer": "3",
+      "explain": "x = 5, y = 3."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải hệ { 2x + y = 7 ; x − y = 2 }. Tìm x.",
+      "expr": "3",
+      "answer": "3",
+      "explain": "3x = 9, x = 3."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải hệ { 3x + 2y = 12 ; x + 2y = 8 }. Tìm x.",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Trừ: 2x = 4, x = 2."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải hệ { x = 3y ; x + y = 12 }. Tìm y.",
+      "expr": "3",
+      "answer": "3",
+      "explain": "4y = 12, y = 3."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải hệ { 2x − 3y = 1 ; x + y = 3 }. Tìm x.",
+      "expr": "2",
+      "answer": "2",
+      "explain": "x = 3 − y ⇒ 6 − 2y − 3y = 1, y = 1, x = 2."
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hệ 2x + y = 7; x − y = 2 có nghiệm (x; y). Giá trị của y là?",
+      "expr": "1",
+      "answer": "1",
+      "explain": "Cộng hai phương trình: 3x = 9 ⇒ x = 3. Thế: 3 − y = 2 ⇒ y = 1.",
+      "dang": "Giải hệ hai phương trình bậc nhất hai ẩn",
+      "id": "q11"
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giải hệ { 4x + 5y = 3 ; x − 3y = 5 }. Tìm y.",
+      "expr": "-1",
+      "answer": "-1",
+      "explain": "x = 5 + 3y ⇒ 20 + 12y + 5y = 3 ⇒ y = −1."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giải hệ { 0,5x + y = 4 ; x − y = 2 }. Tìm x.",
+      "expr": "4",
+      "answer": "4",
+      "explain": "1,5x = 6, x = 4."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hệ 3x + 2y = 13; x − y = 1 có nghiệm (x; y). Giá trị của y là?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Từ x = y + 1 thế vào phương trình đầu: 3(y + 1) + 2y = 13 ⇒ 5y = 10 ⇒ y = 2.",
+      "dang": "Giải hệ hai phương trình bậc nhất hai ẩn",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hệ 2x + 3y = 1; 4x − 3y = 11 có nghiệm (x; y). Giá trị của x + y là?",
+      "expr": "2+(-1)",
+      "answer": "1",
+      "explain": "Cộng hai phương trình: 6x = 12 ⇒ x = 2. Thế: 4 + 3y = 1 ⇒ y = −1. Vậy x + y = 1.",
+      "dang": "Giải hệ hai phương trình bậc nhất hai ẩn",
+      "id": "q13"
+    }
+  ]
+}

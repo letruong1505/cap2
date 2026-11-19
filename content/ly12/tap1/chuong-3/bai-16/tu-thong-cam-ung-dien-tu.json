@@ -1,0 +1,265 @@
+{
+  "id": "bai-16",
+  "grade": 12,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 12",
+  "chapter": "Chương III. Từ trường",
+  "lesson": "Bài 16. Từ thông. Hiện tượng cảm ứng điện từ",
+  "section": "",
+  "bookPage": 66,
+  "theory": [
+    {
+      "type": "formula",
+      "content": "Φ = B·S·cosα"
+    },
+    {
+      "type": "text",
+      "content": "Từ thông Φ qua diện tích S đặt trong từ trường đều B, với α là góc giữa vectơ pháp tuyến của S và B. Đơn vị từ thông là vêbe (Wb); 1 Wb = 1 T·m². Từ thông biểu diễn số đường sức từ xuyên qua diện tích S."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/c-ly12-b16-tu-thong.svg",
+      "caption": "Từ thông phụ thuộc góc α giữa pháp tuyến n và B."
+    },
+    {
+      "type": "text",
+      "content": "Khi từ thông qua cuộn dây dẫn kín biến thiên thì trong cuộn dây xuất hiện dòng điện cảm ứng. Hiện tượng này gọi là hiện tượng cảm ứng điện từ, chỉ tồn tại trong khoảng thời gian từ thông biến thiên."
+    },
+    {
+      "type": "text",
+      "content": "Định luật Lenz: dòng điện cảm ứng có chiều sao cho từ trường do nó sinh ra chống lại sự biến thiên của từ thông ban đầu qua mạch kín."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/c-ly12-b16-cam-ung.svg",
+      "caption": "Nam châm đưa lại gần cuộn dây kín, điện kế G chỉ dòng cảm ứng."
+    },
+    {
+      "type": "formula",
+      "content": "|e| = N·|ΔΦ/Δt|"
+    },
+    {
+      "type": "text",
+      "content": "Định luật Faraday: độ lớn suất điện động cảm ứng trong mạch kín tỉ lệ với tốc độ biến thiên của từ thông qua mạch. Với cuộn dây có N vòng, e = −N·ΔΦ/Δt."
+    },
+    {
+      "type": "method",
+      "title": "Tính từ thông và suất điện động cảm ứng",
+      "when": "Đề cho B, S, góc α hoặc số vòng N, độ biến thiên từ thông và thời gian, hỏi từ thông hoặc suất điện động.",
+      "steps": [
+        "Từ thông Φ = B·S·cosα (α là góc giữa vectơ pháp tuyến mặt phẳng và B).",
+        "Tính độ biến thiên ΔΦ = Φ₂ − Φ₁.",
+        "Suất điện động |e| = N·|ΔΦ/Δt|.",
+        "Cường độ dòng điện cảm ứng (nếu mạch kín): i = e/R."
+      ],
+      "notes": [
+        "α là góc giữa pháp tuyến và B, không phải giữa mặt phẳng và B.",
+        "Đổi diện tích về m², thời gian về giây.",
+        "N là số vòng dây của cuộn.",
+        "Chiều dòng điện cảm ứng theo định luật Lenz."
+      ],
+      "sample": {
+        "problem": "Cuộn dây N = 100 vòng, từ thông giảm đều 0,05 Wb trong 0,5 s. Tính |e|.",
+        "steps": [
+          "|ΔΦ| = 0,05 Wb; Δt = 0,5 s.",
+          "|e| = 100·0,05/0,5 = 10 V."
+        ],
+        "answer": "10 V"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Ví dụ 1: Cuộn dây N = 100 vòng, diện tích mỗi vòng S = 0,01 m², vectơ pháp tuyến song song với B. Cảm ứng từ giảm đều từ 0,2 T xuống 0 trong 0,5 s. Tính suất điện động cảm ứng trung bình (V).",
+      "steps": [
+        "Độ biến thiên từ thông mỗi vòng: |ΔΦ| = ΔB·S·cos 0° = 0,2 · 0,01 = 0,002 Wb.",
+        "Suất điện động: |e| = N·|ΔΦ|/Δt = 100 · 0,002 / 0,5 = 0,4 V."
+      ],
+      "expr": "100*2/1000*2",
+      "answer": "0.4"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn vị của từ thông trong hệ SI là:",
+      "choices": [
+        "Vêbe (Wb)",
+        "Tesla (T)",
+        "Ampe (A)",
+        "Niutơn (N)"
+      ],
+      "answer": 0,
+      "explain": "Từ thông có đơn vị vêbe (Wb), với 1 Wb = 1 T·m².",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Tesla là đơn vị cảm ứng từ.",
+        "2": "Ampe là đơn vị cường độ dòng điện.",
+        "3": "Niutơn là đơn vị lực."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Từ thông qua khung dây bằng 0 khi:",
+      "choices": [
+        "α = 90°, tức B song song với mặt phẳng khung",
+        "α = 0°",
+        "Khung dây quay quanh trục bất kì",
+        "B luôn bằng 0"
+      ],
+      "answer": 0,
+      "explain": "Khi α = 90°, cosα = 0 nên Φ = 0.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Khi α = 0°, cosα = 1 nên Φ = BS > 0.",
+        "2": "Từ thông phụ thuộc vào góc α, không phải chuyển động bất kì.",
+        "3": "B khác 0 thì Φ có thể khác 0."
+      },
+      "figure": "figures/ly12-b16-khung-tu-thong.svg"
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hiện tượng cảm ứng điện từ xuất hiện trong mạch kín khi:",
+      "choices": [
+        "Không có nguồn điện",
+        "Từ thông qua mạch kín biến thiên",
+        "Từ thông qua mạch không đổi",
+        "Mạch kín đứng yên trong từ trường đều không đổi"
+      ],
+      "answer": 1,
+      "explain": "Dòng điện cảm ứng xuất hiện khi từ thông qua mạch kín biến thiên.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Dòng cảm ứng không cần nguồn điện riêng.",
+        "2": "Từ thông không đổi thì không có dòng điện cảm ứng.",
+        "3": "Mạch đứng yên trong từ trường không đổi không có dòng cảm ứng."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Theo định luật Lenz, dòng điện cảm ứng có chiều sao cho:",
+      "choices": [
+        "Từ trường do nó sinh ra chống lại sự biến thiên của từ thông ban đầu",
+        "Từ trường do nó sinh ra làm tăng biến thiên từ thông",
+        "Từ trường do nó sinh ra song song với dòng điện",
+        "Từ trường do nó sinh ra luôn bằng không"
+      ],
+      "answer": 0,
+      "explain": "Đây là nội dung định luật Lenz về chiều dòng điện cảm ứng.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Nếu làm tăng biến thiên thì vi phạm định luật bảo toàn năng lượng.",
+        "2": "Từ trường cảm ứng không cần song song với dòng điện.",
+        "3": "Dòng cảm ứng có từ trường khác không."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Theo định luật Faraday, độ lớn suất điện động cảm ứng tỉ lệ với:",
+      "choices": [
+        "Từ thông tại thời điểm đó",
+        "Cường độ dòng điện",
+        "Điện trở của mạch",
+        "Tốc độ biến thiên của từ thông"
+      ],
+      "answer": 3,
+      "explain": "Suất điện động cảm ứng tỉ lệ với tốc độ biến thiên của từ thông, không phải giá trị từ thông.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Từ thông lớn không đồng nghĩa suất điện động lớn nếu không biến thiên.",
+        "1": "Cường độ dòng là hệ quả, không phải nguyên nhân.",
+        "2": "Điện trở không nằm trong định luật Faraday."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cuộn dây 100 vòng, từ thông qua cuộn biến thiên một lượng 2 Wb trong thời gian 4 s. Độ lớn suất điện động cảm ứng (V):",
+      "expr": "100*2/4",
+      "answer": "50",
+      "explain": "|e| = N·ΔΦ/Δt = 100 · 2/4 = 50 V."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khung dây có diện tích 50 cm² (0,005 m²) đặt trong từ trường đều B = 0,1 T. Góc α giữa vectơ pháp tuyến của khung và B là 60°. Từ thông qua khung (Wb):",
+      "expr": "0.1*0.005*1/2",
+      "answer": "0,00025",
+      "explain": "Φ = BScos60° = 0,1 · 0,005 · 0,5 = 0,00025 Wb."
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trong thí nghiệm với nam châm và cuộn dây, kim điện kế lệch khỏi vạch 0 chứng tỏ:",
+      "choices": [
+        "Không có từ trường",
+        "Từ thông không đổi",
+        "Cuộn dây bị đứt",
+        "Có dòng điện cảm ứng trong cuộn dây"
+      ],
+      "answer": 3,
+      "explain": "Kim điện kế lệch khi có dòng điện cảm ứng, do từ thông qua cuộn dây biến thiên.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Từ trường vẫn có khi nam châm di chuyển.",
+        "1": "Khi từ thông không đổi kim không lệch.",
+        "2": "Nếu đứt dây kim không lệch."
+      },
+      "figure": "figures/ly12-b16-nam-cham-cuon-day.svg"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "B = 0,4 T, S = 0,05 m², pháp tuyến hợp với B góc 60°. Từ thông là bao nhiêu Wb? (nhập số thập phân)",
+      "expr": "0.4*0.05*0.5",
+      "answer": "0,01",
+      "explain": "Φ = BScos60° = 0,4·0,05·0,5 = 0,01 Wb.",
+      "dang": "Tính từ thông và suất điện động cảm ứng",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khung dây 1 vòng có từ thông giảm từ 0,03 Wb về 0 trong 0,1 s. Suất điện động cảm ứng là bao nhiêu V?",
+      "expr": "0.03*10",
+      "answer": "0,3",
+      "explain": "|e| = 0,03/0,1 = 0,3 V.",
+      "dang": "Tính từ thông và suất điện động cảm ứng",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cuộn dây 100 vòng, từ thông giảm đều 0,05 Wb trong 0,5 s. |e| bằng bao nhiêu V?",
+      "expr": "100*0.05*2",
+      "answer": "10",
+      "explain": "|e| = 100·0,05/0,5 = 10 V.",
+      "dang": "Tính từ thông và suất điện động cảm ứng",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Suất điện động cảm ứng 2 V trong mạch kín có điện trở 4 Ω. Cường độ dòng điện cảm ứng là bao nhiêu A? (nhập số thập phân)",
+      "expr": "2/4",
+      "answer": "0,5",
+      "explain": "i = e/R = 2/4 = 0,5 A.",
+      "dang": "Tính từ thông và suất điện động cảm ứng",
+      "id": "q12"
+    }
+  ]
+}

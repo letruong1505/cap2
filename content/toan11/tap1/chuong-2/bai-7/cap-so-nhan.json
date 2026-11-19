@@ -1,0 +1,309 @@
+{
+  "id": "bai-7",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 11, tập 1",
+  "chapter": "Chương II. Dãy số. Cấp số cộng và cấp số nhân",
+  "lesson": "Bài 7. Cấp số nhân",
+  "section": "",
+  "bookPage": 52,
+  "requirements": [
+    "Nhận biết cấp số nhân, tìm số hạng đầu và công bội.",
+    "Vận dụng công thức số hạng tổng quát và tổng n số hạng đầu để giải toán thực tế."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cấp số nhân là dãy số (hữu hạn hoặc vô hạn) trong đó kể từ số hạng thứ hai, mỗi số hạng bằng tích của số hạng đứng ngay trước nó với một số q không đổi: uₙ₊₁ = uₙ·q. Số q gọi là công bội."
+    },
+    {
+      "type": "formula",
+      "content": "Số hạng tổng quát: uₙ = u₁·qⁿ⁻¹.   Ba số khác 0 là a, b, c (theo thứ tự) lập cấp số nhân ⇔ b² = ac."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b7-cap-so-nhan.svg",
+      "caption": "Các số hạng của cấp số nhân u₁ = 1, q = 2 tăng rất nhanh: 1, 2, 4, 8, 16, 32"
+    },
+    {
+      "type": "formula",
+      "content": "Tổng n số hạng đầu (q ≠ 1): Sₙ = u₁(1 − qⁿ)/(1 − q).   Nếu q = 1 thì Sₙ = n·u₁."
+    },
+    {
+      "type": "method",
+      "title": "Nhận biết cấp số nhân, tìm u₁ và q",
+      "when": "Đề cho một dãy số hoặc một vài số hạng, yêu cầu xác định công bội và số hạng đầu.",
+      "steps": [
+        "Tính tỉ số uₙ₊₁/uₙ của hai số hạng liên tiếp (uₙ ≠ 0).",
+        "Nếu tỉ số là hằng số q thì dãy là cấp số nhân công bội q.",
+        "Cho uₘ, uₖ: qᵏ⁻ᵐ = uₖ/uₘ; giải q (chú ý dấu).",
+        "Tìm u₁ = uₘ/qᵐ⁻¹."
+      ],
+      "notes": [
+        "Ba số lập cấp số nhân thì số ở giữa thoả b² = ac.",
+        "Dãy có số hạng bằng 0 (trừ dãy 0) không là cấp số nhân."
+      ],
+      "sample": {
+        "problem": "Cho u₃ = 12 và q = 2. Tìm u₁.",
+        "steps": [
+          "u₃ = u₁q².",
+          "u₁ = 12/4 = 3."
+        ],
+        "answer": "3"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tính số hạng và tổng n số hạng đầu",
+      "when": "Đề hỏi uₙ hoặc Sₙ khi biết u₁, q, n hoặc cần tìm n.",
+      "steps": [
+        "Xác định u₁, q.",
+        "Dùng uₙ = u₁qⁿ⁻¹ để tìm số hạng; khi tìm n, đưa về qⁿ⁻¹ = uₙ/u₁ rồi so sánh luỹ thừa.",
+        "Dùng Sₙ = u₁(1 − qⁿ)/(1 − q) khi q ≠ 1.",
+        "Tính cẩn thận luỹ thừa của số âm."
+      ],
+      "notes": [
+        "q = 1 thì mọi số hạng bằng nhau, Sₙ = nu₁.",
+        "Lũy thừa chẵn của số âm là số dương."
+      ],
+      "sample": {
+        "problem": "Tính S₆ của cấp số nhân u₁ = 1, q = 2.",
+        "steps": [
+          "S₆ = 1·(1 − 2⁶)/(1 − 2).",
+          "= (1 − 64)/(−1) = 63."
+        ],
+        "answer": "63"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Bài toán thực tế về cấp số nhân",
+      "when": "Vi khuẩn nhân đôi, lãi suất kép, quả bóng nảy lên theo tỉ lệ, dân số tăng theo tỉ lệ phần trăm.",
+      "steps": [
+        "Xác định đại lượng nhân với một số không đổi sau mỗi bước ⇒ q.",
+        "Xác định u₁ và số bước (chú ý u₁ là số hạng đầu, số bước = n − 1).",
+        "Áp dụng uₙ hoặc Sₙ.",
+        "Trả lời kèm đơn vị, làm tròn nếu đề yêu cầu."
+      ],
+      "notes": [
+        "Tăng 10% mỗi năm ⇒ q = 1,1; giảm 5% ⇒ q = 0,95.",
+        "Sau 2 lần nhân thì uₙ = u₁q²: đừng nhầm mũ."
+      ],
+      "sample": {
+        "problem": "Gửi 100 triệu, lãi kép 10%/năm. Sau 2 năm có bao nhiêu triệu?",
+        "steps": [
+          "q = 1,1; u₁ = 100.",
+          "Sau 2 năm: 100·1,1·1,1 = 121 triệu."
+        ],
+        "answer": "121 triệu"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cấp số nhân có u₁ = 2, q = 3. Tính u₄.",
+      "steps": [
+        "u₄ = u₁q³.",
+        "= 2·27 = 54."
+      ],
+      "expr": "2*3*3*3",
+      "answer": "54"
+    },
+    {
+      "problem": "Cấp số nhân có u₁ = 1, q = 2. Tính S₆.",
+      "steps": [
+        "S₆ = (1 − 2⁶)/(1 − 2).",
+        "= 63."
+      ],
+      "expr": "(1-2*2*2*2*2*2)/(1-2)",
+      "answer": "63"
+    },
+    {
+      "problem": "Thả quả bóng từ độ cao 8 m, mỗi lần nảy lên 3/4 độ cao trước. Độ cao sau lần nảy thứ 3 (m)?",
+      "steps": [
+        "q = 3/4, ba lần nhân.",
+        "8·(3/4)³ = 27/8 m."
+      ],
+      "expr": "8*(3/4)*(3/4)*(3/4)",
+      "answer": "27/8"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cấp số nhân có u₁ = 2, q = 3. Giá trị u₄ là:",
+      "expr": "2*3*3*3",
+      "answer": "54",
+      "explain": "u₄ = 2·3³ = 54.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cấp số nhân có u₁ = 3, q = −2. Giá trị u₅ là:",
+      "expr": "3*(-2)*(-2)*(-2)*(-2)",
+      "answer": "48",
+      "explain": "u₅ = 3·(−2)⁴ = 48.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cấp số nhân có u₁ = 2, u₂ = 10. Công bội q là:",
+      "expr": "10/2",
+      "answer": "5",
+      "explain": "q = u₂/u₁ = 5.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dãy số nào là cấp số nhân?",
+      "choices": [
+        "2; 6; 18; 54",
+        "1; 3; 5; 7",
+        "1; 2; 3; 4",
+        "2; 4; 6; 8"
+      ],
+      "answer": 0,
+      "explain": "Tỉ số hai số hạng liên tiếp luôn bằng 3.",
+      "wrong_explain": {
+        "1": "Đây là cấp số cộng công sai 2, tỉ số không đều.",
+        "2": "Tỉ số lần lượt 2, 3/2, 4/3: không đều.",
+        "3": "Đây là cấp số cộng, tỉ số không đều."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tổng 6 số hạng đầu của cấp số nhân u₁ = 1, q = 2 là:",
+      "expr": "(1-2*2*2*2*2*2)/(1-2)",
+      "answer": "63",
+      "explain": "S₆ = (1 − 64)/(1 − 2) = 63.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cấp số nhân có u₃ = 12 và q = 2. Số hạng đầu u₁ là:",
+      "expr": "(12)/(2*2)",
+      "answer": "3",
+      "explain": "u₁ = u₃/q² = 3.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cấp số nhân có u₂ = 6, u₄ = 24. Giá trị q² là:",
+      "expr": "24/6",
+      "answer": "4",
+      "explain": "u₄/u₂ = q² = 4.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vi khuẩn nhân đôi mỗi giờ, ban đầu có 500. Sau 4 giờ có số con là:",
+      "expr": "500*2*2*2*2",
+      "answer": "8000",
+      "explain": "500·2⁴ = 8000.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Dãy 3; 6; 12; …; 768 là cấp số nhân. 768 là số hạng thứ mấy?",
+      "expr": "8+1",
+      "answer": "9",
+      "explain": "3·2ⁿ⁻¹ = 768 ⇒ 2ⁿ⁻¹ = 256 = 2⁸ ⇒ n = 9.",
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chèn hai số vào giữa 3 và 24 để thành cấp số nhân. Số hạng thứ hai là:",
+      "expr": "3*2",
+      "answer": "6",
+      "explain": "q³ = 8 nên q = 2; số hạng thứ hai là 6.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tổng 5 số hạng đầu của cấp số nhân u₁ = 3, q = 2 là:",
+      "expr": "3*(1-2*2*2*2*2)/(1-2)",
+      "answer": "93",
+      "explain": "S₅ = 3·31 = 93.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Gửi 100 triệu, lãi kép 10%/năm. Sau 2 năm có (triệu):",
+      "expr": "100*1.1*1.1",
+      "answer": "121",
+      "explain": "100·1,1² = 121.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cấp số nhân có u₁ = −4, u₃ = −1. Giá trị q² là:",
+      "expr": "(-1)/(-4)",
+      "answer": "1/4",
+      "explain": "u₃ = u₁q² nên q² = 1/4.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Quả bóng thả từ 8 m, mỗi lần nảy lên 3/4 độ cao trước. Sau lần nảy thứ 3 cao (m):",
+      "expr": "8*(3/4)*(3/4)*(3/4)",
+      "answer": "27/8",
+      "explain": "8·27/64 = 27/8 m.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dãy uₙ = 3·2ⁿ là cấp số nhân với công bội q bằng:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "uₙ₊₁/uₙ = 2.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tổng 1 + 2 + 4 + … + 512 (10 số hạng) là:",
+      "expr": "(1-1024)/(1-2)",
+      "answer": "1023",
+      "explain": "S₁₀ = (1 − 2¹⁰)/(1 − 2) = 1023.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ba số khác 0 là a, b, c theo thứ tự lập cấp số nhân khi và chỉ khi:",
+      "choices": [
+        "b² = ac",
+        "a + c = 2b",
+        "b = a + c",
+        "ab = c"
+      ],
+      "answer": 0,
+      "explain": "b/a = c/b nên b² = ac.",
+      "wrong_explain": {
+        "1": "Đó là điều kiện cấp số cộng.",
+        "2": "Không phải điều kiện của bất kỳ cấp số nào.",
+        "3": "Không đúng cho cấp số nhân."
+      },
+      "id": "q17"
+    }
+  ]
+}

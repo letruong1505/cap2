@@ -1,0 +1,357 @@
+{
+  "id": "bai-1",
+  "grade": 11,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 11",
+  "chapter": "Chương 1. Cân bằng hoá học",
+  "lesson": "Bài 1. Khái niệm về cân bằng hoá học",
+  "section": "",
+  "bookPage": 6,
+  "requirements": [
+    "Trình bày được khái niệm phản ứng thuận nghịch và trạng thái cân bằng.",
+    "Viết được biểu thức hằng số cân bằng K_C và tính K_C.",
+    "Vận dụng nguyên lí Le Chatelier để giải thích ảnh hưởng của nồng độ, nhiệt độ, áp suất đến cân bằng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phản ứng một chiều chỉ xảy ra theo một chiều từ chất đầu tạo sản phẩm, sản phẩm không phản ứng lại với nhau tạo chất đầu (ví dụ đốt cháy methane, NaOH + HCl). Phản ứng thuận nghịch là phản ứng xảy ra theo hai chiều ngược nhau trong cùng điều kiện, kí hiệu bằng hai nửa mũi tên ngược chiều (⇌): chiều từ trái sang phải là phản ứng thuận, chiều từ phải sang trái là phản ứng nghịch. Phản ứng thuận nghịch xảy ra không hoàn toàn. Ví dụ H₂ + I₂ ⇌ 2HI; CO₂ + H₂O + CaCO₃ ⇌ Ca(HCO₃)₂ (tạo hang động, thạch nhũ)."
+    },
+    {
+      "type": "formula",
+      "content": "H₂(g) + I₂(g) ⇌ 2HI(g)        Cl₂ + H₂O ⇌ HCl + HClO"
+    },
+    {
+      "type": "text",
+      "content": "Trạng thái cân bằng của phản ứng thuận nghịch là trạng thái tại đó tốc độ phản ứng thuận bằng tốc độ phản ứng nghịch. Lúc đầu v thuận lớn, v nghịch nhỏ; theo thời gian v thuận giảm dần, v nghịch tăng dần đến khi bằng nhau. Khi đó nồng độ (số mol) các chất không đổi nữa. Cân bằng hoá học là cân bằng động: các phản ứng thuận và nghịch vẫn tiếp diễn nhưng với tốc độ bằng nhau."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b1-toc-do-can-bang.svg",
+      "caption": "Tốc độ phản ứng thuận, nghịch tiến đến bằng nhau"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b1-so-mol-HI.svg",
+      "caption": "Số mol các chất đạt giá trị không đổi ở trạng thái cân bằng"
+    },
+    {
+      "type": "text",
+      "content": "Hằng số cân bằng: với phản ứng aA + bB ⇌ cC + dD, ở trạng thái cân bằng K_C = [C]ᶜ·[D]ᵈ / ([A]ᵃ·[B]ᵇ), trong đó [X] là nồng độ mol của chất X ở trạng thái cân bằng, a, b, c, d là hệ số tỉ lượng. K_C chỉ phụ thuộc bản chất phản ứng và nhiệt độ, không phụ thuộc nồng độ ban đầu. Chất rắn không có mặt trong biểu thức K_C (ví dụ C(s) + CO₂(g) ⇌ 2CO(g): K_C = [CO]²/[CO₂]). K_C càng lớn thì phản ứng thuận càng chiếm ưu thế, K_C càng nhỏ thì phản ứng nghịch càng chiếm ưu thế."
+    },
+    {
+      "type": "formula",
+      "content": "K_C = [C]ᶜ·[D]ᵈ / ([A]ᵃ·[B]ᵇ)        (không viết chất rắn)"
+    },
+    {
+      "type": "text",
+      "content": "Các yếu tố ảnh hưởng đến cân bằng: nhiệt độ (tăng nhiệt độ, cân bằng chuyển dịch theo chiều thu nhiệt; giảm nhiệt độ, theo chiều toả nhiệt), nồng độ (tăng nồng độ một chất, cân bằng chuyển dịch theo chiều làm giảm nồng độ chất đó), áp suất (tăng áp suất chung, cân bằng chuyển dịch theo chiều giảm số mol khí; nếu tổng hệ số khí hai vế bằng nhau thì không chuyển dịch). Chất xúc tác làm tăng tốc độ thuận và nghịch như nhau nên không làm chuyển dịch cân bằng, chỉ giúp đạt cân bằng nhanh hơn."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b1-le-chatelier.svg",
+      "caption": "Tóm tắt các yếu tố ảnh hưởng đến cân bằng"
+    },
+    {
+      "type": "text",
+      "content": "Nguyên lí Le Chatelier: một phản ứng thuận nghịch đang ở trạng thái cân bằng, khi chịu một tác động bên ngoài làm thay đổi nồng độ, nhiệt độ, áp suất thì cân bằng sẽ chuyển dịch theo chiều làm giảm tác động bên ngoài đó. Ứng dụng: tổng hợp ammonia N₂ + 3H₂ ⇌ 2NH₃ (ΔH = −91,8 kJ) cần áp suất cao (khoảng 200 bar, vì giảm số mol khí) và nhiệt độ vừa phải khoảng 450 °C cùng xúc tác Fe để đảm bảo tốc độ."
+    },
+    {
+      "type": "method",
+      "title": "Xét chiều chuyển dịch cân bằng",
+      "when": "Đề cho một cân bằng và một tác động (nồng độ, nhiệt độ, áp suất); hỏi cân bằng chuyển dịch theo chiều nào.",
+      "steps": [
+        "Viết cân bằng, xác định chiều toả nhiệt/thu nhiệt (dựa vào dấu ΔH) và số mol khí hai vế.",
+        "Xác định tác động: tăng/giảm nồng độ, nhiệt độ hoặc áp suất.",
+        "Áp dụng Le Chatelier: cân bằng chuyển dịch theo chiều làm giảm tác động đó.",
+        "Kết luận chiều thuận hay chiều nghịch."
+      ],
+      "notes": [
+        "Chất xúc tác không làm chuyển dịch cân bằng.",
+        "Chất rắn không ảnh hưởng đến cân bằng khi thay đổi lượng.",
+        "Khi số mol khí hai vế bằng nhau, áp suất không ảnh hưởng."
+      ],
+      "sample": {
+        "problem": "Cân bằng N₂ + 3H₂ ⇌ 2NH₃ ΔH < 0. Tăng áp suất thì chuyển dịch theo chiều nào?",
+        "steps": [
+          "Vế trái 4 mol khí, vế phải 2 mol khí.",
+          "Tăng áp suất → chiều giảm số mol khí → chiều thuận."
+        ],
+        "answer": "Chiều thuận"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Ở nhiệt độ t °C, cân bằng N₂ + 3H₂ ⇌ 2NH₃ có [N₂] = 0,4 M, [H₂] = 0,1 M, [NH₃] = 0,2 M. Tính K_C.",
+      "steps": [
+        "K_C = [NH₃]² / ([N₂]·[H₂]³).",
+        "K_C = 0,2² / (0,4·0,1³) = 0,04 / 0,0004.",
+        "K_C = 100."
+      ],
+      "expr": "(0.2*0.2)/(0.4*0.1*0.1*0.1)",
+      "answer": "100"
+    },
+    {
+      "problem": "Ở 445 °C, cân bằng H₂ + I₂ ⇌ 2HI có [H₂] = [I₂] = 0,02 M và [HI] = 0,16 M. Tính K_C.",
+      "steps": [
+        "K_C = [HI]²/([H₂][I₂]).",
+        "K_C = 0,16²/(0,02·0,02) = 0,0256/0,0004.",
+        "K_C = 64."
+      ],
+      "expr": "(0.16*0.16)/(0.02*0.02)",
+      "answer": "64"
+    },
+    {
+      "problem": "Cân bằng CaCO₃(s) ⇌ CaO(s) + CO₂(g), ΔH > 0. Tăng nhiệt độ thì cân bằng chuyển dịch theo chiều nào?",
+      "steps": [
+        "Chiều thuận là chiều thu nhiệt (ΔH > 0).",
+        "Tăng nhiệt độ → chuyển dịch theo chiều thu nhiệt, tức chiều thuận (tạo CaO và CO₂)."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phản ứng thuận nghịch là phản ứng:",
+      "choices": [
+        "xảy ra theo hai chiều ngược nhau trong cùng điều kiện",
+        "xảy ra theo một chiều và hoàn toàn",
+        "chỉ xảy ra ở nhiệt độ cao",
+        "không tạo sản phẩm"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa phản ứng thuận nghịch.",
+      "wrong_explain": {
+        "1": "Đó là phản ứng một chiều.",
+        "2": "Không phụ thuộc nhiệt độ cao.",
+        "3": "Có tạo sản phẩm."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ở trạng thái cân bằng thì:",
+      "choices": [
+        "tốc độ phản ứng thuận bằng tốc độ phản ứng nghịch",
+        "phản ứng dừng hẳn",
+        "nồng độ chất đầu bằng nồng độ sản phẩm",
+        "chỉ còn phản ứng thuận"
+      ],
+      "answer": 0,
+      "explain": "Cân bằng là cân bằng động, v thuận = v nghịch.",
+      "wrong_explain": {
+        "1": "Phản ứng không dừng.",
+        "2": "Nồng độ không nhất thiết bằng nhau.",
+        "3": "Cả hai chiều vẫn xảy ra."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hằng số cân bằng K_C phụ thuộc vào:",
+      "choices": [
+        "nhiệt độ và bản chất phản ứng",
+        "nồng độ ban đầu",
+        "áp suất đầu",
+        "chất xúc tác"
+      ],
+      "answer": 0,
+      "explain": "K_C chỉ phụ thuộc nhiệt độ và bản chất.",
+      "wrong_explain": {
+        "1": "Không phụ thuộc nồng độ đầu.",
+        "2": "Không phụ thuộc áp suất đầu.",
+        "3": "Xúc tác không làm đổi K_C."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất không có mặt trong biểu thức hằng số cân bằng là:",
+      "choices": [
+        "chất rắn",
+        "chất khí",
+        "chất tan",
+        "mọi chất"
+      ],
+      "answer": 0,
+      "explain": "Nồng độ chất rắn coi như không đổi.",
+      "wrong_explain": {
+        "1": "Khí có mặt.",
+        "2": "Chất tan có mặt.",
+        "3": "Chỉ chất rắn bị bỏ."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Biểu thức K_C của N₂(g) + 3H₂(g) ⇌ 2NH₃(g) là:",
+      "choices": [
+        "[NH₃]² / ([N₂]·[H₂]³)",
+        "[N₂]·[H₂]³ / [NH₃]²",
+        "[NH₃] / ([N₂]·[H₂])",
+        "2[NH₃] / (3[H₂] + [N₂])"
+      ],
+      "answer": 0,
+      "explain": "Sản phẩm ở tử, mũ bằng hệ số.",
+      "wrong_explain": {
+        "1": "Đó là nghịch đảo.",
+        "2": "Thiếu số mũ theo hệ số.",
+        "3": "Không dùng phép cộng như vậy."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Biểu thức K_C của CaCO₃(s) ⇌ CaO(s) + CO₂(g) là:",
+      "choices": [
+        "K_C = [CO₂]",
+        "K_C = [CaO][CO₂]/[CaCO₃]",
+        "K_C = [CaCO₃]/[CO₂]",
+        "K_C = [CaO]/[CaCO₃]"
+      ],
+      "answer": 0,
+      "explain": "Chất rắn không viết.",
+      "wrong_explain": {
+        "1": "Không viết chất rắn.",
+        "2": "Sai chiều và có chất rắn.",
+        "3": "Không viết chất rắn."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất xúc tác trong phản ứng thuận nghịch:",
+      "choices": [
+        "không làm chuyển dịch cân bằng, chỉ rút ngắn thời gian đạt cân bằng",
+        "làm chuyển dịch theo chiều thuận",
+        "làm chuyển dịch theo chiều nghịch",
+        "làm tăng K_C"
+      ],
+      "answer": 0,
+      "explain": "Tăng v thuận và v nghịch như nhau.",
+      "wrong_explain": {
+        "1": "Không làm chuyển dịch.",
+        "2": "Không làm chuyển dịch.",
+        "3": "K_C không đổi."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cân bằng 2NO₂ (nâu đỏ) ⇌ N₂O₄ (không màu), ΔH < 0. Khi làm lạnh hệ thì:",
+      "choices": [
+        "màu nâu nhạt đi, cân bằng chuyển theo chiều thuận",
+        "màu nâu đậm hơn",
+        "màu không đổi",
+        "cân bằng chuyển theo chiều nghịch"
+      ],
+      "answer": 0,
+      "explain": "Giảm nhiệt độ → chiều toả nhiệt (thuận).",
+      "wrong_explain": {
+        "1": "Đó là khi đun nóng.",
+        "2": "Có chuyển dịch.",
+        "3": "Không theo chiều nghịch."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cân bằng H₂ + I₂ ⇌ 2HI. Thay đổi áp suất chung của hệ thì:",
+      "choices": [
+        "cân bằng không chuyển dịch",
+        "chuyển theo chiều thuận",
+        "chuyển theo chiều nghịch",
+        "K_C tăng"
+      ],
+      "answer": 0,
+      "explain": "Tổng số mol khí hai vế bằng nhau (2 = 2).",
+      "wrong_explain": {
+        "1": "Không đổi số mol khí.",
+        "2": "Không đổi số mol khí.",
+        "3": "K_C không phụ thuộc áp suất."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tổng hợp ammonia N₂ + 3H₂ ⇌ 2NH₃ (toả nhiệt) thực hiện ở áp suất cao vì:",
+      "choices": [
+        "tăng áp suất làm cân bằng chuyển theo chiều thuận (giảm số mol khí)",
+        "tăng áp suất làm cân bằng chuyển theo chiều nghịch",
+        "tăng áp suất làm giảm K_C",
+        "áp suất không ảnh hưởng"
+      ],
+      "answer": 0,
+      "explain": "Chiều thuận giảm 4 → 2 mol khí.",
+      "wrong_explain": {
+        "1": "Ngược lại.",
+        "2": "K_C không phụ thuộc áp suất.",
+        "3": "Có ảnh hưởng."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ở phản ứng toả nhiệt, tăng nhiệt độ làm:",
+      "choices": [
+        "cân bằng chuyển theo chiều nghịch (thu nhiệt)",
+        "cân bằng chuyển theo chiều thuận",
+        "không ảnh hưởng",
+        "tăng hiệu suất tạo sản phẩm"
+      ],
+      "answer": 0,
+      "explain": "Theo Le Chatelier, chiều thu nhiệt là chiều nghịch.",
+      "wrong_explain": {
+        "1": "Đó là khi giảm nhiệt độ.",
+        "2": "Có ảnh hưởng.",
+        "3": "Hiệu suất giảm."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Lên núi cao người ta dễ chóng mặt vì cân bằng Hb + O₂ ⇌ HbO₂:",
+      "choices": [
+        "nồng độ O₂ thấp, cân bằng chuyển theo chiều nghịch, ít HbO₂",
+        "nồng độ O₂ cao, chuyển theo chiều thuận",
+        "áp suất cao làm tăng HbO₂",
+        "Hb tăng nên thừa O₂"
+      ],
+      "answer": 0,
+      "explain": "Thiếu O₂ làm cân bằng lệch sang trái.",
+      "wrong_explain": {
+        "1": "Trên núi O₂ thấp.",
+        "2": "Áp suất thấp.",
+        "3": "Không đúng."
+      },
+      "id": "q12"
+    }
+  ]
+}

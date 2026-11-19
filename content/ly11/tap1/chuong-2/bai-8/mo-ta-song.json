@@ -1,0 +1,341 @@
+{
+  "id": "bai-8",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 2. Sóng",
+  "lesson": "Bài 8. Mô tả sóng",
+  "section": "",
+  "bookPage": 32,
+  "requirements": [
+    "Nêu được sóng cơ là gì, giải thích sự tạo thành sóng và các đại lượng đặc trưng: biên độ, chu kì, tần số, bước sóng, tốc độ truyền sóng.",
+    "Vận dụng hệ thức λ = vT = v/f và đọc được đồ thị u – x của sóng hình sin."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Sóng cơ là những dao động cơ lan truyền trong môi trường đàn hồi. Có hai nguyên nhân tạo nên sóng: có nguồn dao động bên ngoài tác dụng lên môi trường và có lực liên kết giữa các phần tử của môi trường. Các phần tử môi trường chỉ dao động quanh vị trí cân bằng của chúng, không chuyển động theo sóng; sóng truyền đi rất xa."
+    },
+    {
+      "type": "text",
+      "content": "Sóng cơ không truyền được trong chân không vì cần môi trường vật chất."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b8-do-thi-song.svg",
+      "caption": "Đồ thị (u – x) của một sóng hình sin tại một thời điểm: biên độ sóng A, ngọn sóng, lõm sóng và bước sóng λ"
+    },
+    {
+      "type": "text",
+      "content": "Các đại lượng đặc trưng: Biên độ sóng A là độ lệch lớn nhất của phần tử sóng khỏi VTCB (bằng biên độ dao động của nguồn). Chu kì T và tần số f = 1/T của sóng bằng chu kì và tần số của nguồn. Tốc độ truyền sóng v là tốc độ lan truyền dao động; chỉ phụ thuộc vào tính chất của môi trường, không phụ thuộc tần số nguồn. Bước sóng λ là khoảng cách giữa hai phần tử gần nhất trên phương truyền sóng dao động cùng pha; cũng là quãng đường sóng truyền được trong một chu kì."
+    },
+    {
+      "type": "formula",
+      "content": "λ = vT = v/f;   v = λf = λ/T;   f = 1/T."
+    },
+    {
+      "type": "text",
+      "content": "Độ lệch pha giữa hai điểm trên phương truyền sóng cách nhau d là Δφ = 2πd/λ. Hai điểm cách nhau một số nguyên lần λ dao động cùng pha; cách nhau (k + ½)λ dao động ngược pha; cách nhau (2k + 1)λ/4 dao động vuông pha. Cường độ sóng là năng lượng sóng truyền qua một đơn vị diện tích vuông góc với phương truyền trong một đơn vị thời gian (đơn vị W/m²)."
+    },
+    {
+      "type": "method",
+      "title": "Tìm chu kì, tần số, bước sóng, tốc độ truyền sóng",
+      "when": "Đề cho số ngọn sóng, khoảng thời gian, khoảng cách giữa các ngọn sóng, quãng đường sóng truyền được trong thời gian t.",
+      "steps": [
+        "Chu kì T = t/N (N: số dao động trong thời gian t); f = 1/T.",
+        "Tốc độ truyền sóng v = s/t (quãng đường sóng truyền / thời gian).",
+        "Bước sóng λ = vT = v/f; hoặc λ là khoảng cách giữa hai ngọn sóng liên tiếp.",
+        "Giữa n ngọn sóng liên tiếp có (n − 1) bước sóng: λ = d/(n − 1)."
+      ],
+      "notes": [
+        "Đổi đơn vị: cm → m, ms → s.",
+        "Tốc độ truyền sóng phụ thuộc môi trường, bước sóng phụ thuộc cả v và f."
+      ],
+      "sample": {
+        "problem": "Thuyền thực hiện 24 dao động trong 40 s; ngọn sóng tới bờ cách thuyền 10 m sau 5 s. Tính T, v, λ.",
+        "steps": [
+          "T = 40/24 = 5/3 s.",
+          "v = 10/5 = 2 m/s.",
+          "λ = vT = 2·5/3 = 10/3 ≈ 3,33 m."
+        ],
+        "answer": "T = 5/3 s; v = 2 m/s; λ ≈ 3,33 m"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Độ lệch pha giữa hai điểm trên phương truyền sóng",
+      "when": "Cho khoảng cách d giữa hai điểm, hỏi chúng cùng pha, ngược pha hay vuông pha, hoặc tính Δφ.",
+      "steps": [
+        "Tính λ = v/f.",
+        "Độ lệch pha Δφ = 2πd/λ.",
+        "Xét tỉ số d/λ: số nguyên → cùng pha; nửa nguyên → ngược pha; (2k + 1)/4 → vuông pha.",
+        "Điểm xa nguồn hơn dao động trễ pha hơn."
+      ],
+      "notes": [
+        "Hai điểm cùng pha cách nhau kλ; ngược pha cách nhau (k + 0,5)λ.",
+        "d = λ/4 ứng với Δφ = π/2."
+      ],
+      "sample": {
+        "problem": "Sóng có v = 12 m/s, f = 20 Hz. Hai điểm cách nhau 0,45 m dao động thế nào?",
+        "steps": [
+          "λ = 12/20 = 0,6 m.",
+          "d/λ = 0,45/0,6 = 0,75 = 3/4.",
+          "Δφ = 2π·3/4 = 3π/2: vuông pha."
+        ],
+        "answer": "Vuông pha (Δφ = 3π/2)"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Đọc đồ thị sóng (u – x) và (u – t)",
+      "when": "Cho đồ thị li độ theo toạ độ hoặc theo thời gian, hỏi biên độ, bước sóng, chu kì, tần số, tốc độ.",
+      "steps": [
+        "Đồ thị (u – x): biên độ là độ cao ngọn sóng; λ là khoảng cách giữa hai ngọn liên tiếp.",
+        "Đồ thị (u – t): chu kì T là khoảng thời gian giữa hai ngọn liên tiếp; f = 1/T.",
+        "Tốc độ v = λ/T = λf.",
+        "Chú ý thang chia của đồ thị (mỗi ô ứng với bao nhiêu cm, ms)."
+      ],
+      "notes": [
+        "Cùng một đồ thị (u – x) chỉ cho λ, không cho T.",
+        "Muốn có v cần biết T hoặc f."
+      ],
+      "sample": {
+        "problem": "Đồ thị (u – t) trên dao động kí: hai ngọn sóng liên tiếp cách nhau 4 ô, mỗi ô ứng 1 ms. Tính tần số.",
+        "steps": [
+          "T = 4 ms = 4·10⁻³ s.",
+          "f = 1/T = 250 Hz."
+        ],
+        "answer": "250 Hz"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Thuyền thực hiện 24 dao động trong 40 s. Chu kì T (s) là bao nhiêu? (nhập dạng phân số)",
+      "steps": [
+        "T = t/N.",
+        "= 40/24 = 5/3 s."
+      ],
+      "expr": "40/24",
+      "answer": "5/3"
+    },
+    {
+      "problem": "Ngọn sóng đi 10 m trong 5 s. Tốc độ truyền sóng v (m/s)?",
+      "steps": [
+        "v = s/t.",
+        "= 10/5 = 2 m/s."
+      ],
+      "expr": "10/5",
+      "answer": "2"
+    },
+    {
+      "problem": "Sóng có v = 12 m/s, f = 20 Hz. Bước sóng λ (m)?",
+      "steps": [
+        "λ = v/f.",
+        "= 12/20 = 0,6 m."
+      ],
+      "expr": "12/20",
+      "answer": "3/5"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Sóng truyền với v = 340 m/s, tần số f = 170 Hz. Bước sóng λ (m) là:",
+      "expr": "340/170",
+      "answer": "2",
+      "explain": "λ = v/f = 2 m.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Sóng có chu kì T = 0,02 s. Tần số f (Hz) là:",
+      "expr": "(1)/(0.02)",
+      "answer": "50",
+      "explain": "f = 1/T = 50 Hz.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Sóng có λ = 0,5 m, f = 20 Hz. Tốc độ truyền sóng v (m/s) là:",
+      "expr": "0.5*20",
+      "answer": "10",
+      "explain": "v = λf = 10 m/s.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sóng cơ không truyền được trong:",
+      "choices": [
+        "chân không",
+        "chất rắn",
+        "chất lỏng",
+        "chất khí"
+      ],
+      "answer": 0,
+      "explain": "Sóng cơ cần môi trường vật chất.",
+      "wrong_explain": {
+        "1": "Có truyền được trong chất rắn.",
+        "2": "Có truyền được trong chất lỏng.",
+        "3": "Có truyền được trong chất khí."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bước sóng là:",
+      "choices": [
+        "quãng đường sóng truyền được trong một chu kì",
+        "khoảng cách giữa hai điểm bất kì",
+        "quãng đường phần tử đi trong một chu kì",
+        "tốc độ truyền sóng"
+      ],
+      "answer": 0,
+      "explain": "λ = vT.",
+      "wrong_explain": {
+        "1": "Phải là hai điểm gần nhất cùng pha.",
+        "2": "Phần tử đi được 4A, không phải λ.",
+        "3": "Đó là v."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Thuyền thực hiện 24 dao động trong 40 s. Chu kì T (s) là:",
+      "expr": "40/24",
+      "answer": "5/3",
+      "explain": "T = t/N = 5/3 s.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Sóng truyền 10 m trong 5 s. Tốc độ v (m/s) là:",
+      "expr": "10/5",
+      "answer": "2",
+      "explain": "v = 2 m/s.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai gợn sóng tròn liên tiếp có bán kính 12,4 cm và 14,3 cm, f = 50 Hz. Tốc độ v (cm/s) là:",
+      "expr": "(14.3-12.4)*50",
+      "answer": "95",
+      "explain": "λ = 1,9 cm; v = 95 cm/s.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giữa 5 ngọn sóng liên tiếp có khoảng cách 2 m. Bước sóng λ (m) là:",
+      "expr": "2/4",
+      "answer": "1/2",
+      "explain": "Có 4 bước sóng: λ = 0,5 m.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Sóng có f = 50 Hz, v = 10 m/s. Hai điểm cách nhau 0,1 m (λ = 0,2 m). Tỉ số d/λ bằng (nhập a/b):",
+      "expr": "(0.1)/(0.2)",
+      "answer": "1/2",
+      "explain": "d/λ = 1/2: ngược pha.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi tần số sóng tăng (môi trường không đổi) thì:",
+      "choices": [
+        "tốc độ không đổi, bước sóng giảm",
+        "tốc độ tăng, bước sóng không đổi",
+        "bước sóng tăng",
+        "tốc độ giảm"
+      ],
+      "answer": 0,
+      "explain": "v phụ thuộc môi trường; λ = v/f giảm.",
+      "wrong_explain": {
+        "1": "v không đổi.",
+        "2": "λ thay đổi.",
+        "3": "λ giảm khi f tăng."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Sóng v = 12 m/s, f = 20 Hz. Độ lệch pha giữa hai điểm cách nhau 0,45 m: Δφ = kπ/2. Tìm k (d/λ = 3/4):",
+      "expr": "4*(0.45)/(0.6)",
+      "answer": "3",
+      "explain": "Δφ = 2π·0,75 = 3π/2; k = 3.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đồ thị (u – t): hai ngọn sóng cách nhau 4 ô, mỗi ô 1 ms. Tần số f (Hz) là:",
+      "expr": "(1)/(0.004)",
+      "answer": "250",
+      "explain": "T = 4 ms; f = 250 Hz.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Học sinh nghe được từ 30 Hz đến 16 000 Hz; v = 330 m/s. Bước sóng ngắn nhất (m) là:",
+      "expr": "330/16000",
+      "answer": "33/1600",
+      "explain": "λ_min = v/f_max ≈ 0,0206 m ≈ 2,06 cm.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Sóng truyền với v = 4 m/s, bước sóng 0,8 m. Chu kì T (s) là:",
+      "expr": "0.8/4",
+      "answer": "1/5",
+      "explain": "T = λ/v = 0,2 s.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hai điểm cùng pha gần nhau nhất cách nhau 0,6 m, f = 10 Hz. Tốc độ v (m/s) là:",
+      "expr": "0.6*10",
+      "answer": "6",
+      "explain": "λ = 0,6 m; v = 6 m/s.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai điểm trên phương truyền sóng cách nhau d = 1,5λ thì:",
+      "choices": [
+        "ngược pha",
+        "cùng pha",
+        "vuông pha",
+        "lệch pha π/4"
+      ],
+      "answer": 0,
+      "explain": "d/λ = 1,5 nên Δφ = 3π: ngược pha.",
+      "wrong_explain": {
+        "1": "Cùng pha khi d = kλ.",
+        "2": "Vuông pha khi d = (2k+1)λ/4.",
+        "3": "Không phải."
+      },
+      "id": "q17"
+    }
+  ]
+}

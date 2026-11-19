@@ -1,0 +1,193 @@
+{
+  "id": "on-tap-chuong-8",
+  "kind": "review",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 2",
+  "chapter": "Chương VIII. Làm quen với biến cố và xác suất của biến cố",
+  "title": "Ôn tập Chương VIII",
+  "questions": [
+    {
+      "id": "q01",
+      "stem": "Gieo một con xúc xắc. Biến cố \"số chấm xuất hiện nhỏ hơn 7\" là loại biến cố gì? Vì sao?",
+      "steps": [
+        "Các mặt của xúc xắc có từ 1 đến 6 chấm, đều nhỏ hơn 7.",
+        "Biến cố luôn xảy ra nên là biến cố chắc chắn."
+      ],
+      "answer": "Biến cố chắc chắn"
+    },
+    {
+      "id": "q02",
+      "stem": "Gieo một con xúc xắc. Biến cố \"số chấm xuất hiện bằng 0\" là loại biến cố gì? Vì sao?",
+      "steps": [
+        "Mặt ít chấm nhất có 1 chấm, không có mặt nào 0 chấm.",
+        "Biến cố không bao giờ xảy ra nên là biến cố không thể."
+      ],
+      "answer": "Biến cố không thể"
+    },
+    {
+      "id": "q03",
+      "stem": "Gieo một con xúc xắc. Biến cố \"số chấm xuất hiện là số chẵn\" là loại biến cố gì? Vì sao?",
+      "steps": [
+        "Nếu xuất hiện mặt 2, 4 hoặc 6 thì biến cố xảy ra; nếu xuất hiện mặt 1, 3 hoặc 5 thì không.",
+        "Không biết trước được biến cố có xảy ra hay không nên đây là biến cố ngẫu nhiên."
+      ],
+      "answer": "Biến cố ngẫu nhiên"
+    },
+    {
+      "id": "q04",
+      "stem": "Một hộp chỉ chứa 3 viên bi đỏ. Lấy ngẫu nhiên một viên. Biến cố \"lấy được viên bi đỏ\" là loại biến cố gì? Tính xác suất của biến cố đó.",
+      "steps": [
+        "Viên bi nào trong hộp cũng màu đỏ nên biến cố luôn xảy ra: đó là biến cố chắc chắn.",
+        "Biến cố chắc chắn có xác suất bằng 1."
+      ],
+      "answer": "Biến cố chắc chắn; xác suất bằng 1"
+    },
+    {
+      "id": "q05",
+      "stem": "Cũng hộp chỉ chứa 3 viên bi đỏ. Tính xác suất của biến cố \"lấy được viên bi xanh\".",
+      "steps": [
+        "Trong hộp không có bi xanh nên biến cố không bao giờ xảy ra: đó là biến cố không thể.",
+        "Biến cố không thể có xác suất bằng 0."
+      ],
+      "answer": "0"
+    },
+    {
+      "id": "q06",
+      "stem": "Gieo một con xúc xắc cân đối. Tính xác suất của biến cố \"xuất hiện mặt 5 chấm\".",
+      "steps": [
+        "Sáu biến cố \"xuất hiện mặt 1 chấm\", …, \"xuất hiện mặt 6 chấm\" là đồng khả năng.",
+        "Mỗi lần gieo luôn xảy ra một và chỉ một trong sáu biến cố đó, nên mỗi biến cố có xác suất 1/6."
+      ],
+      "answer": "1/6"
+    },
+    {
+      "id": "q07",
+      "stem": "Tung một đồng xu cân đối. Tính xác suất của biến cố \"đồng xu xuất hiện mặt sấp\".",
+      "steps": [
+        "Hai biến cố \"mặt sấp\" và \"mặt ngửa\" đồng khả năng.",
+        "Luôn xảy ra một và chỉ một trong hai biến cố nên mỗi biến cố có xác suất 1/2."
+      ],
+      "answer": "1/2"
+    },
+    {
+      "id": "q08",
+      "stem": "Một hộp có 4 quả bóng cùng kích thước, mỗi quả một màu: xanh, đỏ, tím, vàng. Lấy ngẫu nhiên một quả. Tính xác suất lấy được quả bóng đỏ.",
+      "steps": [
+        "Bốn biến cố \"lấy được quả xanh\", \"lấy được quả đỏ\", \"lấy được quả tím\", \"lấy được quả vàng\" đồng khả năng.",
+        "Luôn xảy ra một và chỉ một trong bốn biến cố, nên xác suất lấy được quả đỏ là 1/4."
+      ],
+      "answer": "1/4"
+    },
+    {
+      "id": "q09",
+      "stem": "Lớp 7A có 20 bạn nam và 20 bạn nữ. Cô giáo gọi ngẫu nhiên một bạn lên bảng. Tính xác suất của biến cố \"bạn được gọi là nữ\".",
+      "steps": [
+        "Số bạn nam bằng số bạn nữ nên hai biến cố \"gọi được bạn nam\" và \"gọi được bạn nữ\" đồng khả năng.",
+        "Luôn xảy ra một và chỉ một trong hai biến cố, nên xác suất là 1/2."
+      ],
+      "answer": "1/2"
+    },
+    {
+      "id": "q10",
+      "stem": "Có 10 tấm thẻ giống nhau ghi các số 1, 2, …, 10. Rút ngẫu nhiên một tấm. Tính xác suất rút được thẻ ghi số 7.",
+      "steps": [
+        "Mười biến cố \"rút được thẻ ghi số 1\", …, \"rút được thẻ ghi số 10\" đồng khả năng.",
+        "Luôn xảy ra một và chỉ một trong mười biến cố, nên xác suất rút được thẻ số 7 là 1/10."
+      ],
+      "answer": "1/10"
+    },
+    {
+      "id": "q11",
+      "stem": "Gieo đồng thời hai con xúc xắc. Mỗi biến cố sau là loại gì: A: \"tổng số chấm nhỏ hơn 13\"; B: \"tổng số chấm bằng 1\"?",
+      "steps": [
+        "Tổng số chấm lớn nhất là 6 + 6 = 12 < 13, nên A luôn xảy ra: A là biến cố chắc chắn.",
+        "Tổng số chấm nhỏ nhất là 1 + 1 = 2 > 1, nên B không bao giờ xảy ra: B là biến cố không thể."
+      ],
+      "answer": "A là biến cố chắc chắn; B là biến cố không thể"
+    },
+    {
+      "id": "q12",
+      "stem": "Gieo một con xúc xắc cân đối. Tính xác suất của biến cố \"số chấm xuất hiện là số lẻ\".",
+      "steps": [
+        "Có 3 mặt lẻ (1, 3, 5) và 3 mặt chẵn (2, 4, 6), nên hai biến cố \"số chấm lẻ\" và \"số chấm chẵn\" đồng khả năng.",
+        "Luôn xảy ra một và chỉ một trong hai biến cố, nên xác suất là 1/2."
+      ],
+      "answer": "1/2"
+    },
+    {
+      "id": "q13",
+      "stem": "Bạn Lan chọn ngẫu nhiên một ngày trong tuần để đi thư viện. Tính xác suất Lan chọn thứ Hai.",
+      "steps": [
+        "Bảy biến cố \"chọn thứ Hai\", …, \"chọn Chủ nhật\" đồng khả năng.",
+        "Luôn xảy ra một và chỉ một trong bảy biến cố, nên xác suất chọn thứ Hai là 1/7."
+      ],
+      "answer": "1/7"
+    },
+    {
+      "id": "q14",
+      "stem": "Chọn ngẫu nhiên một tháng trong năm. Tính xác suất của biến cố \"tháng được chọn có ít nhất 28 ngày\".",
+      "steps": [
+        "Tháng nào cũng có ít nhất 28 ngày (tháng 2 có 28 hoặc 29 ngày, các tháng khác có 30 hoặc 31 ngày).",
+        "Biến cố luôn xảy ra nên là biến cố chắc chắn, có xác suất bằng 1."
+      ],
+      "answer": "1"
+    },
+    {
+      "id": "q15",
+      "stem": "Một vòng quay được chia thành 4 phần bằng nhau, ghi các số 1, 2, 3, 4. Quay vòng quay một lần. Tính xác suất kim chỉ vào số 3.",
+      "steps": [
+        "Bốn biến cố \"kim chỉ vào số 1\", …, \"kim chỉ vào số 4\" đồng khả năng.",
+        "Luôn xảy ra một và chỉ một trong bốn biến cố, nên xác suất kim chỉ vào số 3 là 1/4."
+      ],
+      "answer": "1/4"
+    },
+    {
+      "id": "q16",
+      "stem": "Trong các số 1,2; −0,5; 0,3; 3/2, số nào có thể là xác suất của một biến cố? Vì sao?",
+      "steps": [
+        "Xác suất của một biến cố nhận giá trị từ 0 đến 1.",
+        "1,2 > 1; −0,5 < 0; 3/2 > 1 nên đều không thể là xác suất. Chỉ 0,3 nằm trong khoảng từ 0 đến 1."
+      ],
+      "answer": "0,3"
+    },
+    {
+      "id": "q17",
+      "stem": "Bạn Minh nói: \"Xác suất để ngày mai trời mưa là 120%\". Bạn Minh nói đúng hay sai? Vì sao?",
+      "steps": [
+        "Xác suất của một biến cố không vượt quá 1, tức là không vượt quá 100%.",
+        "120% > 100% nên bạn Minh nói sai."
+      ],
+      "answer": "Sai, vì xác suất không vượt quá 1 (100%)"
+    },
+    {
+      "id": "q18",
+      "stem": "Gieo một con xúc xắc cân đối. Xét hai biến cố A: \"số chấm không vượt quá 3\" và B: \"số chấm lớn hơn 3\". Hai biến cố này có đồng khả năng không? Tính xác suất của A.",
+      "steps": [
+        "A xảy ra khi xuất hiện mặt 1, 2, 3; B xảy ra khi xuất hiện mặt 4, 5, 6. Mỗi biến cố ứng với 3 mặt nên A và B đồng khả năng.",
+        "Mỗi lần gieo luôn xảy ra một và chỉ một trong hai biến cố A, B, nên xác suất của A là 1/2."
+      ],
+      "answer": "Đồng khả năng; xác suất của A là 1/2"
+    },
+    {
+      "id": "q19",
+      "stem": "Một túi có 2 viên bi đỏ và 1 viên bi xanh cùng kích thước. Lấy ngẫu nhiên một viên. Hai biến cố \"lấy được bi đỏ\" và \"lấy được bi xanh\" có đồng khả năng không? Vì sao?",
+      "steps": [
+        "Số bi đỏ (2 viên) nhiều hơn số bi xanh (1 viên).",
+        "Khả năng lấy được bi đỏ lớn hơn khả năng lấy được bi xanh, nên hai biến cố không đồng khả năng."
+      ],
+      "answer": "Không đồng khả năng"
+    },
+    {
+      "id": "q20",
+      "stem": "Một hộp có 4 tấm thẻ ghi các số 2, 4, 6, 8. Rút ngẫu nhiên một thẻ. Hãy nêu một biến cố chắc chắn, một biến cố không thể và một biến cố ngẫu nhiên.",
+      "steps": [
+        "Biến cố chắc chắn: \"rút được thẻ ghi số chẵn\" (mọi thẻ đều ghi số chẵn).",
+        "Biến cố không thể: \"rút được thẻ ghi số lẻ\" (không có thẻ nào ghi số lẻ).",
+        "Biến cố ngẫu nhiên: \"rút được thẻ ghi số 4\" (có thể xảy ra hoặc không)."
+      ],
+      "answer": "Chắc chắn: thẻ ghi số chẵn; không thể: thẻ ghi số lẻ; ngẫu nhiên: thẻ ghi số 4"
+    }
+  ]
+}

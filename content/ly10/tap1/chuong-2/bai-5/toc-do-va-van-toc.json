@@ -1,0 +1,284 @@
+{
+  "id": "bai-5",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương II. Động học",
+  "lesson": "Bài 5. Tốc độ và vận tốc",
+  "section": "",
+  "bookPage": 26,
+  "requirements": [
+    "Phân biệt tốc độ trung bình, tốc độ tức thời, vận tốc trung bình, vận tốc tức thời.",
+    "Tính tốc độ, vận tốc; tổng hợp vận tốc trong trường hợp cùng phương và vuông góc."
+  ],
+  "theory": [
+    {
+      "type": "formula",
+      "content": "Tốc độ trung bình: v = s/t        Vận tốc trung bình: →v = →d/t (vectơ, cùng hướng với độ dịch chuyển)"
+    },
+    {
+      "type": "text",
+      "content": "Tốc độ trung bình cho biết mức độ nhanh chậm của chuyển động, là đại lượng vô hướng. Vận tốc trung bình cho biết cả mức độ nhanh chậm và hướng chuyển động, là đại lượng vectơ. Trong chuyển động thẳng không đổi chiều, độ lớn vận tốc trung bình bằng tốc độ trung bình."
+    },
+    {
+      "type": "text",
+      "content": "Tốc độ tức thời là tốc độ tại một thời điểm (số chỉ tốc kế); vận tốc tức thời là vận tốc tại một thời điểm, có hướng của chuyển động tại thời điểm đó và độ lớn bằng tốc độ tức thời."
+    },
+    {
+      "type": "text",
+      "content": "Đơn vị: m/s, km/h; 1 m/s = 3,6 km/h. Khi vật đổi chiều hoặc đi theo đường cong, tốc độ trung bình (theo quãng đường) khác độ lớn vận tốc trung bình (theo độ dịch chuyển)."
+    },
+    {
+      "type": "formula",
+      "content": "Tổng hợp vận tốc: →v₁₃ = →v₁₂ + →v₂₃  (vận tốc của vật 1 đối với vật 3 bằng vận tốc của 1 đối với 2 cộng vận tốc của 2 đối với 3)"
+    },
+    {
+      "type": "text",
+      "content": "Cùng chiều: v₁₃ = v₁₂ + v₂₃ (thuyền xuôi dòng); ngược chiều: v₁₃ = |v₁₂ − v₂₃| (thuyền ngược dòng); vuông góc: v₁₃ = √(v₁₂² + v₂₃²) (thuyền bơi ngang sông)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b5-tong-hop-van-toc.svg",
+      "caption": "Tổng hợp vận tốc khi thuyền đi vuông góc với dòng nước"
+    },
+    {
+      "type": "method",
+      "title": "Tính vận tốc trung bình và tổng hợp vận tốc",
+      "when": "Đề cho hành trình nhiều đoạn với thời gian hoặc tốc độ từng đoạn, hoặc bài thuyền – dòng nước, máy bay – gió.",
+      "steps": [
+        "Tốc độ trung bình: tổng quãng đường chia tổng thời gian (không lấy trung bình cộng các tốc độ).",
+        "Vận tốc trung bình: độ dịch chuyển chia tổng thời gian.",
+        "Tổng hợp vận tốc: xác định ba vật (vật, môi trường, bờ), viết →v₁₃ = →v₁₂ + →v₂₃ rồi cộng theo phương.",
+        "Đổi đơn vị thống nhất (m/s hoặc km/h)."
+      ],
+      "notes": [
+        "Đi hai đoạn bằng nhau với tốc độ v₁, v₂ thì tốc độ trung bình là 2v₁v₂/(v₁ + v₂).",
+        "Ngược dòng thì vận tốc so với bờ nhỏ hơn."
+      ],
+      "sample": {
+        "problem": "Một người đi xe đạp 6 km trong 20 phút rồi nghỉ 10 phút, sau đó đi tiếp 4 km trong 15 phút. Tính tốc độ trung bình cả chuyến đi.",
+        "steps": [
+          "Tổng quãng đường 10 km; tổng thời gian 45 phút = 0,75 h.",
+          "v = 10/0,75 ≈ 13,3 km/h."
+        ],
+        "answer": "≈ 13,3 km/h"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một ô tô đi từ A đến B dài 120 km mất 2 giờ, rồi quay về A mất 3 giờ. Tính tốc độ trung bình và vận tốc trung bình cả chuyến đi.",
+      "steps": [
+        "Tốc độ trung bình: s/t = 240/5 = 48 km/h.",
+        "Độ dịch chuyển bằng 0 (về lại A) nên vận tốc trung bình bằng 0."
+      ],
+      "expr": "240/5",
+      "answer": "48"
+    },
+    {
+      "problem": "Một thuyền có tốc độ 5 m/s so với nước, dòng nước chảy 1 m/s so với bờ. Tính vận tốc của thuyền so với bờ khi xuôi dòng và khi ngược dòng.",
+      "steps": [
+        "Xuôi dòng: v = 5 + 1 = 6 m/s.",
+        "Ngược dòng: v = 5 − 1 = 4 m/s."
+      ],
+      "expr": "5+1",
+      "answer": "6"
+    },
+    {
+      "problem": "Một người bơi vuông góc với dòng nước với tốc độ 1,5 m/s so với nước; nước chảy 2 m/s. Tính tốc độ của người so với bờ.",
+      "steps": [
+        "Hai vận tốc vuông góc nhau.",
+        "v = √(1,5² + 2²) = √6,25 = 2,5 m/s."
+      ],
+      "expr": "2.5",
+      "answer": "2.5"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật đi 100 m trong 20 s. Tốc độ trung bình (m/s) là:",
+      "expr": "100/20",
+      "answer": "5",
+      "explain": "v = s/t.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Đổi 72 km/h ra m/s:",
+      "expr": "720/36",
+      "answer": "20",
+      "explain": "Chia 3,6.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Đổi 15 m/s ra km/h:",
+      "expr": "15*3.6",
+      "answer": "54",
+      "explain": "Nhân 3,6.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đại lượng nào là vectơ?",
+      "choices": [
+        "Vận tốc trung bình",
+        "Tốc độ trung bình",
+        "Quãng đường",
+        "Thời gian"
+      ],
+      "answer": 0,
+      "explain": "Vận tốc có hướng.",
+      "wrong_explain": {
+        "1": "Vô hướng.",
+        "2": "Vô hướng.",
+        "3": "Vô hướng."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Số chỉ của tốc kế trên ô tô là:",
+      "choices": [
+        "tốc độ tức thời",
+        "tốc độ trung bình",
+        "vận tốc trung bình",
+        "độ dịch chuyển"
+      ],
+      "answer": 0,
+      "explain": "Tốc độ tại thời điểm đó.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật đi 60 m về đông trong 10 s rồi 20 m về tây trong 10 s. Tốc độ trung bình (m/s) là:",
+      "expr": "80/20",
+      "answer": "4",
+      "explain": "s = 80 m, t = 20 s.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật đi 60 m về đông trong 10 s rồi 20 m về tây trong 10 s. Độ lớn vận tốc trung bình (m/s) là:",
+      "expr": "40/20",
+      "answer": "2",
+      "explain": "d = 40 m, t = 20 s.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Thuyền 4 m/s so với nước, nước chảy 1,5 m/s. Tốc độ thuyền so với bờ khi ngược dòng (m/s) là:",
+      "expr": "4-1.5",
+      "answer": "2.5",
+      "explain": "Trừ.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ô tô đi 2 giờ đầu với 40 km/h và 1 giờ sau với 70 km/h. Tốc độ trung bình (km/h) là:",
+      "expr": "(80+70)/3",
+      "answer": "50",
+      "explain": "Tổng 150 km trong 3 h.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Máy bay bay 200 m/s so với không khí, gió thổi cùng chiều 20 m/s. Tốc độ máy bay so với đất (m/s) là:",
+      "expr": "200+20",
+      "answer": "220",
+      "explain": "Cộng.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật chạy một vòng tròn chu vi 400 m trong 80 s. Độ lớn vận tốc trung bình (m/s) là:",
+      "expr": "0",
+      "answer": "0",
+      "explain": "Độ dịch chuyển bằng 0.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một người đi nửa đầu quãng đường với 30 km/h, nửa sau với 60 km/h. Tốc độ trung bình cả quãng đường (km/h) là:",
+      "expr": "2*30*60/90",
+      "answer": "40",
+      "explain": "2v₁v₂/(v₁ + v₂) = 3600/90.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thuyền xuôi dòng 36 km mất 2 h, ngược dòng cũng quãng ấy mất 3 h. Tốc độ dòng nước (km/h) là:",
+      "expr": "(18-12)/2",
+      "answer": "3",
+      "explain": "Xuôi 18 km/h, ngược 12 km/h; v_nước = (18 − 12)/2.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Người bơi vuông góc dòng nước với 3 m/s so với nước, nước chảy 4 m/s. Tốc độ so với bờ (m/s) là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "√(9 + 16).",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Sông rộng 60 m, người bơi vuông góc dòng với tốc độ 1,5 m/s so với nước, nước chảy 2 m/s. Thời gian sang sông (s) là:",
+      "expr": "600/15",
+      "answer": "40",
+      "explain": "Thành phần vuông góc quyết định thời gian: 60/1,5.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Sông rộng 60 m, người bơi vuông góc với 1,5 m/s, nước chảy 2 m/s. Người bị trôi xuôi dòng một đoạn (m):",
+      "expr": "2*40",
+      "answer": "80",
+      "explain": "x = v_nước · t = 2 · 40.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hai xe cách nhau 150 km chạy ngược chiều lại gặp nhau với tốc độ 40 km/h và 60 km/h. Thời gian đến lúc gặp nhau (h) là:",
+      "expr": "150/100",
+      "answer": "1.5",
+      "explain": "Vận tốc tương đối 100 km/h.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Xe A chạy 60 km/h đuổi theo xe B chạy 40 km/h cách 30 km phía trước. Thời gian đuổi kịp (h) là:",
+      "expr": "30/20",
+      "answer": "1.5",
+      "explain": "Vận tốc tương đối 20 km/h.",
+      "id": "q18"
+    }
+  ]
+}

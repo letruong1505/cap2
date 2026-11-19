@@ -1,0 +1,162 @@
+{
+  "id": "bai-14",
+  "grade": 11,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 11",
+  "chapter": "Chương 3. Đại cương về hoá học hữu cơ",
+  "lesson": "Bài 14. Ôn tập chương 3",
+  "section": "",
+  "bookPage": 80,
+  "requirements": [
+    "Hệ thống hoá kiến thức đại cương hoá học hữu cơ: khái niệm, phân loại, nhóm chức, phương pháp tách, công thức phân tử, cấu tạo, đồng phân, đồng đẳng.",
+    "Vận dụng giải bài tập lập công thức phân tử, xác định đồng phân."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hợp chất hữu cơ gồm hydrocarbon và dẫn xuất; nhóm chức quyết định tính chất đặc trưng; phổ IR giúp xác định nhóm chức, phổ MS cho phân tử khối. Phương pháp tách và tinh chế: chưng cất (nhiệt độ sôi), chiết (độ tan trong hai dung môi), kết tinh (độ tan theo nhiệt độ), sắc kí cột (phân bố giữa pha động, pha tĩnh)."
+    },
+    {
+      "type": "text",
+      "content": "Công thức phân tử lập từ % khối lượng và M; thuyết cấu tạo hoá học: thứ tự liên kết, carbon hoá trị IV, tính chất phụ thuộc thành phần và cấu tạo; đồng phân (cấu tạo mạch, nhóm chức, vị trí nhóm chức, hình học) và đồng đẳng (hơn kém CH₂)."
+    },
+    {
+      "type": "formula",
+      "content": "x : y : z = %C/12 : %H/1 : %O/16        n = M / M(CTĐGN)        CₙH₂ₙ₊₂ (alkane)"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hợp chất có 54,55% C; 9,09% H; 36,36% O và M = 88. Tính n (CTĐGN C₂H₄O, M = 44).",
+      "steps": [
+        "C : H : O = 4,546 : 9,09 : 2,273 = 2 : 4 : 1 nên CTĐGN C₂H₄O.",
+        "n = 88/44 = 2, CTPT C₄H₈O₂."
+      ],
+      "expr": "88/44",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phương pháp tách hai chất lỏng tan lẫn vào nhau, nhiệt độ sôi khác nhau nhiều là:",
+      "choices": [
+        "chưng cất",
+        "chiết",
+        "kết tinh",
+        "lọc"
+      ],
+      "answer": 0,
+      "explain": "Dựa vào nhiệt độ sôi.",
+      "wrong_explain": {
+        "1": "Không dùng.",
+        "2": "Không dùng.",
+        "3": "Không dùng."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phát biểu đúng về hợp chất hữu cơ là:",
+      "choices": [
+        "liên kết chủ yếu là cộng hoá trị",
+        "luôn tan tốt trong nước",
+        "luôn bền nhiệt",
+        "chỉ có trong cơ thể sống"
+      ],
+      "answer": 0,
+      "explain": "Đặc điểm chung.",
+      "wrong_explain": {
+        "1": "Thường ít tan.",
+        "2": "Dễ bị nhiệt phân.",
+        "3": "Có thể tổng hợp."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nhóm chức –COOH thuộc loại hợp chất:",
+      "choices": [
+        "carboxylic acid",
+        "ester",
+        "ketone",
+        "alcohol"
+      ],
+      "answer": 0,
+      "explain": "Nhóm carboxyl.",
+      "wrong_explain": {
+        "1": "Ester là –COO–.",
+        "2": "Ketone là >C=O.",
+        "3": "Alcohol là –OH."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hydrocarbon A có M = 58, CTĐGN C₂H₅. Công thức phân tử là:",
+      "choices": [
+        "C₄H₁₀",
+        "C₂H₅",
+        "C₆H₁₅",
+        "C₃H₈"
+      ],
+      "answer": 0,
+      "explain": "M(C₂H₅) = 29, n = 2.",
+      "wrong_explain": {
+        "1": "M = 29.",
+        "2": "M = 87.",
+        "3": "M = 44."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất nào là đồng đẳng của CH₃OH?",
+      "choices": [
+        "C₂H₅OH",
+        "CH₃OCH₃",
+        "CH₃CHO",
+        "HCOOH"
+      ],
+      "answer": 0,
+      "explain": "Cùng nhóm –OH, hơn kém CH₂.",
+      "wrong_explain": {
+        "1": "Là đồng phân của C₂H₅OH.",
+        "2": "Là aldehyde.",
+        "3": "Là acid."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phổ IR có peak mạnh ~1700 cm⁻¹ và peak rộng 3300–2500 cm⁻¹ là của:",
+      "choices": [
+        "carboxylic acid",
+        "ketone",
+        "alcohol",
+        "amine"
+      ],
+      "answer": 0,
+      "explain": "Có C=O và O–H acid.",
+      "wrong_explain": {
+        "1": "Ketone không có O–H.",
+        "2": "Alcohol không có C=O.",
+        "3": "Amine không có C=O."
+      },
+      "id": "q06"
+    }
+  ]
+}

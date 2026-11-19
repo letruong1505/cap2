@@ -1,0 +1,303 @@
+{
+  "id": "bai-17",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương III. Động lực học",
+  "lesson": "Bài 17. Trọng lực và lực căng",
+  "section": "",
+  "bookPage": 69,
+  "requirements": [
+    "Nêu được trọng lực, trọng tâm, trọng lượng; phân biệt khối lượng và trọng lượng.",
+    "Nêu đặc điểm của lực căng dây; vận dụng tính lực căng khi vật cân bằng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Trọng lực là lực hấp dẫn của Trái Đất tác dụng lên vật, có phương thẳng đứng, chiều từ trên xuống, đặt tại trọng tâm của vật. Với vật đồng chất, có dạng hình học đối xứng, trọng tâm là tâm đối xứng của vật."
+    },
+    {
+      "type": "formula",
+      "content": "→P = m·→g        P = m·g  (g ≈ 9,8 m/s²)"
+    },
+    {
+      "type": "text",
+      "content": "Trọng lượng là độ lớn của trọng lực, đo bằng lực kế, đơn vị N. Khối lượng (kg) là mức quán tính, không đổi theo vị trí; trọng lượng phụ thuộc g nên thay đổi theo vị trí (trên Mặt Trăng trọng lượng chỉ khoảng 1/6 trên Trái Đất)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b17-luc-cang.svg",
+      "caption": "Vật treo bằng dây cân bằng dưới tác dụng của trọng lực và lực căng"
+    },
+    {
+      "type": "text",
+      "content": "Lực căng là lực mà dây (sợi, xích, thanh mảnh) tác dụng lên vật khi dây bị kéo căng. Đặc điểm: điểm đặt tại chỗ dây tiếp xúc vật; phương trùng với sợi dây; chiều hướng từ hai đầu dây vào phần giữa của dây (kéo vật về phía dây)."
+    },
+    {
+      "type": "text",
+      "content": "Với dây nhẹ, không dãn, lực căng có độ lớn bằng nhau tại mọi điểm trên dây. Khi vật treo cân bằng: T = P = mg. Khi vật được kéo lên với gia tốc a hướng lên: T − mg = ma."
+    },
+    {
+      "type": "method",
+      "title": "Tính trọng lượng và lực căng",
+      "when": "Đề cho khối lượng và g, hỏi trọng lượng; hoặc vật treo bằng một hay nhiều dây (đứng yên hoặc chuyển động có gia tốc), hỏi lực căng.",
+      "steps": [
+        "Vẽ các lực tác dụng lên vật: trọng lực hướng xuống, lực căng dọc dây.",
+        "Vật cân bằng: tổng các lực bằng 0, chiếu lên phương thẳng đứng (và ngang nếu nhiều dây).",
+        "Vật chuyển động có gia tốc: dùng định luật 2, chọn chiều dương theo chiều gia tốc.",
+        "Đổi khối lượng về kg."
+      ],
+      "notes": [
+        "Kéo lên nhanh dần: T > mg; hạ xuống nhanh dần: T < mg.",
+        "Trọng lượng khác khối lượng: P = mg."
+      ],
+      "sample": {
+        "problem": "Vật 2 kg treo vào dây, đứng yên (g = 10 m/s²). Tính lực căng.",
+        "steps": [
+          "T = P = mg = 2·10 = 20 N."
+        ],
+        "answer": "20 N"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một vật 5 kg treo trên dây được kéo lên thẳng đứng với gia tốc 2 m/s² (g = 10 m/s²). Tính lực căng dây.",
+      "steps": [
+        "Chọn chiều dương hướng lên: T − mg = ma.",
+        "T = m(g + a) = 5·12 = 60 N."
+      ],
+      "expr": "5*12",
+      "answer": "60"
+    },
+    {
+      "problem": "Một người có khối lượng 60 kg. Tính trọng lượng của người đó trên Trái Đất (g = 9,8 m/s²) và trên Mặt Trăng (g = 1,6 m/s²).",
+      "steps": [
+        "Trên Trái Đất: P = 60·9,8 = 588 N.",
+        "Trên Mặt Trăng: P = 60·1,6 = 96 N. Khối lượng vẫn là 60 kg."
+      ],
+      "expr": "60*9.8",
+      "answer": "588"
+    },
+    {
+      "problem": "Đèn 3 kg treo ở giữa một sợi dây căng ngang, hai nửa dây hợp với phương ngang góc 30° (g = 10 m/s²). Tính lực căng mỗi nửa dây.",
+      "steps": [
+        "Theo phương thẳng đứng: 2T·sin 30° = mg.",
+        "T = 30/(2·0,5) = 30 N."
+      ],
+      "expr": "30",
+      "answer": "30"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trọng lực có phương và chiều:",
+      "choices": [
+        "thẳng đứng, hướng xuống",
+        "nằm ngang",
+        "thẳng đứng, hướng lên",
+        "theo hướng chuyển động"
+      ],
+      "answer": 0,
+      "explain": "Hướng về tâm Trái Đất.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật 3 kg có trọng lượng (N, g = 10 m/s²):",
+      "expr": "3*10",
+      "answer": "30",
+      "explain": "P = mg.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đại lượng KHÔNG đổi khi mang vật từ Trái Đất lên Mặt Trăng là:",
+      "choices": [
+        "khối lượng",
+        "trọng lượng",
+        "trọng lực",
+        "gia tốc rơi tự do"
+      ],
+      "answer": 0,
+      "explain": "Khối lượng là mức quán tính.",
+      "wrong_explain": {
+        "1": "Giảm.",
+        "2": "Giảm.",
+        "3": "Khác nhau."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Lực căng của dây có phương:",
+      "choices": [
+        "trùng với sợi dây",
+        "luôn thẳng đứng",
+        "luôn nằm ngang",
+        "vuông góc sợi dây"
+      ],
+      "answer": 0,
+      "explain": "Dọc theo dây.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trọng tâm của một tấm kim loại hình tròn đồng chất là:",
+      "choices": [
+        "tâm của hình tròn",
+        "một điểm trên mép",
+        "điểm thấp nhất",
+        "không xác định"
+      ],
+      "answer": 0,
+      "explain": "Tâm đối xứng.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật 2 kg treo dây đứng yên (g = 9,8 m/s²). Lực căng (N) là:",
+      "expr": "2*9.8",
+      "answer": "19.6",
+      "explain": "T = mg.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật 4 kg kéo lên với gia tốc 1,5 m/s² (g = 10). Lực căng (N) là:",
+      "expr": "4*11.5",
+      "answer": "46",
+      "explain": "T = m(g + a).",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật 4 kg hạ xuống nhanh dần với gia tốc 2 m/s² (g = 10). Lực căng (N) là:",
+      "expr": "4*8",
+      "answer": "32",
+      "explain": "T = m(g − a).",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Người 50 kg trên Mặt Trăng (g = 1,6 m/s²) có trọng lượng (N):",
+      "expr": "50*1.6",
+      "answer": "80",
+      "explain": "P = mg.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thang máy đi lên nhanh dần đều, lực căng dây cáp so với trọng lượng thang máy:",
+      "choices": [
+        "lớn hơn",
+        "nhỏ hơn",
+        "bằng",
+        "bằng 0"
+      ],
+      "answer": 0,
+      "explain": "T − P = ma > 0.",
+      "wrong_explain": {
+        "1": "Khi đi xuống nhanh dần.",
+        "2": "Khi đều.",
+        "3": "Sai."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lực kế chỉ 15 N khi treo vật ở nơi g = 10 m/s². Khối lượng vật (kg) là:",
+      "expr": "15/10",
+      "answer": "1.5",
+      "explain": "m = P/g.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đèn 2 kg treo giữa dây, hai nửa dây hợp phương ngang 30° (g = 10). Lực căng mỗi nửa (N) là:",
+      "expr": "20",
+      "answer": "20",
+      "explain": "2T·0,5 = 20.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật 10 kg treo bằng hai dây cùng hợp phương thẳng đứng 60° (g = 10). Lực căng mỗi dây (N) là:",
+      "expr": "100",
+      "answer": "100",
+      "explain": "2T·cos 60° = 100.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dây chịu được lực căng tối đa 300 N. Kéo vật 20 kg lên với gia tốc tối đa (m/s², g = 10) là:",
+      "expr": "(300-200)/20",
+      "answer": "5",
+      "explain": "T − mg = ma.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai vật 1 kg và 2 kg nối dây, treo vật 2 kg dưới vật 1 kg, treo cả hệ vào trần (g = 10). Lực căng dây trên cùng (N) là:",
+      "expr": "30",
+      "answer": "30",
+      "explain": "Đỡ cả 3 kg.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với hệ trên, lực căng dây nối giữa hai vật (N) là:",
+      "expr": "20",
+      "answer": "20",
+      "explain": "Chỉ đỡ vật 2 kg.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Vật 0,5 kg treo vào dây trong thang máy chuyển động chậm dần đều đi lên với gia tốc 2 m/s² (g = 10). Lực căng (N) là:",
+      "expr": "0.5*8",
+      "answer": "4",
+      "explain": "Gia tốc hướng xuống: T = m(g − a).",
+      "id": "q17"
+    }
+  ]
+}

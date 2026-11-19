@@ -1,0 +1,362 @@
+{
+  "id": "bai-15",
+  "grade": 11,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 11",
+  "chapter": "Chương 4. Hydrocarbon",
+  "lesson": "Bài 15. Alkane",
+  "section": "",
+  "bookPage": 82,
+  "requirements": [
+    "Nêu khái niệm, công thức chung, nguồn alkane trong tự nhiên; gọi tên theo danh pháp thay thế.",
+    "Giải thích đặc điểm cấu tạo, tính chất vật lí; trình bày phản ứng thế, cracking, reforming, cháy.",
+    "Nêu ứng dụng, điều chế alkane và biện pháp hạn chế ô nhiễm không khí do giao thông."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Alkane là hydrocarbon no, mạch hở, trong phân tử chỉ có liên kết đơn C–C và C–H; công thức chung CₙH₂ₙ₊₂ (n ≥ 1). Nguồn alkane: khí thiên nhiên, khí dầu mỏ (đồng hành), dầu mỏ."
+    },
+    {
+      "type": "text",
+      "content": "Danh pháp thay thế (alkane không nhánh): tên = tiền tố chỉ số C + đuôi \"ane\": meth-, eth-, prop-, but-, pent-, hex-, hept-, oct-, non-, dec-. Alkane mạch nhánh: chọn mạch dài nhất, nhiều nhánh nhất làm mạch chính; đánh số sao cho nhánh có chỉ số nhỏ nhất; tên = (số chỉ vị trí + tên nhánh alkyl) + tên mạch chính; có nhiều nhánh giống nhau thì dùng di-, tri-. Gốc alkyl CₙH₂ₙ₊₁– (methyl CH₃–, ethyl C₂H₅–, propyl C₃H₇–)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b15-ten-alkane.svg",
+      "caption": "Tên các alkane C₁–C₁₀"
+    },
+    {
+      "type": "text",
+      "content": "Đồng phân: từ C₄ có đồng phân mạch carbon (C₄H₁₀: butane và 2-methylpropane; C₅H₁₂: pentane, 2-methylbutane, 2,2-dimethylpropane). Liên kết trong phân tử là liên kết σ bền, ít phân cực nên alkane kém hoạt động ở nhiệt độ thường."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất vật lí: C₁–C₄ và neopentane ở thể khí; C₅–C₁₇ lỏng; từ C₁₈ rắn (sáp paraffin). Nhiệt độ sôi, nóng chảy và khối lượng riêng tăng theo phân tử khối; mạch nhánh có nhiệt độ sôi thấp hơn đồng phân mạch thẳng; không tan trong nước, nhẹ hơn nước, tan trong dung môi hữu cơ."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất hoá học: (1) Thế halogen khi chiếu sáng hoặc đun nóng: CH₄ + Cl₂ → CH₃Cl + HCl, tiếp tục tạo CH₂Cl₂, CHCl₃, CCl₄. (2) Cracking: bẻ gãy mạch C–C của alkane dài thành alkane ngắn và alkene (nhiệt độ cao, xúc tác) – nguyên liệu lọc dầu. (3) Reforming: chuyển alkane thẳng thành alkane nhánh và arene, không đổi số nguyên tử C, tăng chỉ số octane xăng. (4) Cháy hoàn toàn toả nhiều nhiệt; oxi hoá không hoàn toàn cắt mạch tạo carboxylic acid (sản xuất acid béo làm xà phòng)."
+    },
+    {
+      "type": "formula",
+      "content": "CH₄ + Cl₂ → CH₃Cl + HCl (as)        CₙH₂ₙ₊₂ + (3n+1)/2 O₂ → nCO₂ + (n+1)H₂O        CH₄ + 2O₂ → CO₂ + 2H₂O, ΔH = −890 kJ"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b15-phan-ung.svg",
+      "caption": "Các phản ứng của alkane"
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: nhiên liệu (LPG chứa propane, butane; xăng, diesel, jet fuel); nguyên liệu sản xuất phân urea, ammonia, H₂ từ methane; alkane C₆–C₈ để sản xuất benzene, toluene, xylene; vaseline, paraffin. Điều chế: chưng cất phân đoạn dầu mỏ, khai thác khí thiên nhiên."
+    },
+    {
+      "type": "text",
+      "content": "Ô nhiễm do giao thông: xăng, diesel cháy sinh CO₂ (hiệu ứng nhà kính), nếu thiếu O₂ sinh CO, VOCs, bụi đen chứa arene đa vòng; nhiên liệu chứa S sinh SO₂, nhiệt độ cao sinh NOₓ. Biện pháp: nhiên liệu sạch, tiêu chuẩn khí thải, bộ chuyển đổi xúc tác, xe điện, giao thông công cộng, bảo dưỡng phương tiện."
+    },
+    {
+      "type": "method",
+      "title": "Gọi tên alkane mạch nhánh",
+      "when": "Cho công thức cấu tạo alkane, yêu cầu gọi tên (hoặc ngược lại).",
+      "steps": [
+        "Chọn mạch carbon dài nhất, có nhiều nhánh nhất làm mạch chính.",
+        "Đánh số từ phía gần nhánh hơn sao cho tổng/vị trí nhánh nhỏ nhất.",
+        "Gọi tên nhánh, kèm số chỉ vị trí (nhiều nhánh giống nhau dùng di-, tri-; sắp xếp theo thứ tự chữ cái).",
+        "Ghép: vị trí–nhánh + tên mạch chính."
+      ],
+      "notes": [
+        "Không dùng \"1-methyl\": mạch chính phải dài hơn.",
+        "Dấu gạch nối giữa số và chữ; dấu phẩy giữa các số."
+      ],
+      "sample": {
+        "problem": "Gọi tên CH₃–CH(CH₃)–CH₂–CH₃.",
+        "steps": [
+          "Mạch chính 4 C (butane), nhánh methyl ở C số 2.",
+          "Tên: 2-methylbutane."
+        ],
+        "answer": "2-methylbutane"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Xác định công thức phân tử alkane có phân tử khối 86. Tính số nguyên tử C.",
+      "steps": [
+        "14n + 2 = 86.",
+        "n = 84/14 = 6, là C₆H₁₄."
+      ],
+      "expr": "(86-2)/14",
+      "answer": "6"
+    },
+    {
+      "problem": "Đốt cháy hoàn toàn 0,1 mol CH₄. Tính thể tích CO₂ (đktc, lít; 22,4 L/mol).",
+      "steps": [
+        "CH₄ + 2O₂ → CO₂ + 2H₂O nên n(CO₂) = 0,1 mol.",
+        "V = 0,1·22,4 = 2,24 L."
+      ],
+      "expr": "0.1*22.4",
+      "answer": "2.24"
+    },
+    {
+      "problem": "Tính thể tích O₂ (đktc) cần đốt 0,2 mol C₂H₆ (C₂H₆ + 3,5O₂ → 2CO₂ + 3H₂O). Dùng 22,4 L/mol.",
+      "steps": [
+        "n(O₂) = 3,5·0,2 = 0,7 mol.",
+        "V = 0,7·22,4 = 15,68 L."
+      ],
+      "expr": "0.2*3.5*22.4",
+      "answer": "15.68"
+    },
+    {
+      "problem": "Tính nhiệt (kJ) toả ra khi đốt 0,5 mol CH₄, biết ΔH = −890 kJ/mol.",
+      "steps": [
+        "Q = 0,5·890 = 445 kJ."
+      ],
+      "expr": "0.5*890",
+      "answer": "445"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Công thức chung của alkane là:",
+      "choices": [
+        "CₙH₂ₙ₊₂",
+        "CₙH₂ₙ",
+        "CₙH₂ₙ₋₂",
+        "CₙH₂ₙ₋₆"
+      ],
+      "answer": 0,
+      "explain": "Hydrocarbon no, mạch hở.",
+      "wrong_explain": {
+        "1": "Là alkene.",
+        "2": "Là alkyne.",
+        "3": "Là arene."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tên gọi của CH₃–CH₂–CH₂–CH₃ là:",
+      "choices": [
+        "butane",
+        "propane",
+        "pentane",
+        "ethane"
+      ],
+      "answer": 0,
+      "explain": "4 nguyên tử C.",
+      "wrong_explain": {
+        "1": "3 C.",
+        "2": "5 C.",
+        "3": "2 C."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Alkane là chất không tan trong:",
+      "choices": [
+        "nước",
+        "hexane",
+        "ether",
+        "benzene"
+      ],
+      "answer": 0,
+      "explain": "Phân tử không phân cực.",
+      "wrong_explain": {
+        "1": "Tan trong dung môi hữu cơ.",
+        "2": "Tan trong dung môi hữu cơ.",
+        "3": "Tan trong dung môi hữu cơ."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ở điều kiện thường, alkane thể khí là:",
+      "choices": [
+        "C₁–C₄",
+        "C₅–C₁₇",
+        "C₁₈ trở lên",
+        "chỉ methane"
+      ],
+      "answer": 0,
+      "explain": "Theo quy luật trạng thái.",
+      "wrong_explain": {
+        "1": "Lỏng.",
+        "2": "Rắn.",
+        "3": "Ethane cũng khí."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phản ứng đặc trưng của alkane là:",
+      "choices": [
+        "phản ứng thế",
+        "phản ứng cộng",
+        "phản ứng trùng hợp",
+        "phản ứng tráng bạc"
+      ],
+      "answer": 0,
+      "explain": "Chỉ có liên kết đơn σ.",
+      "wrong_explain": {
+        "1": "Cần liên kết π.",
+        "2": "Cần liên kết π.",
+        "3": "Không có nhóm –CHO."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phản ứng cracking alkane tạo ra:",
+      "choices": [
+        "alkane ngắn hơn và alkene",
+        "alkane dài hơn",
+        "chỉ khí CO₂",
+        "alcohol"
+      ],
+      "answer": 0,
+      "explain": "Bẻ gãy mạch C–C.",
+      "wrong_explain": {
+        "1": "Không tạo mạch dài.",
+        "2": "Không phải cháy.",
+        "3": "Không có O."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Reforming alkane nhằm:",
+      "choices": [
+        "tăng chỉ số octane của xăng",
+        "giảm số nguyên tử C",
+        "tạo CO₂",
+        "tạo alcohol"
+      ],
+      "answer": 0,
+      "explain": "Tạo alkane nhánh và arene.",
+      "wrong_explain": {
+        "1": "Số C không đổi.",
+        "2": "Không phải cháy.",
+        "3": "Không tạo O."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sản phẩm thế một lần của CH₄ với Cl₂ (as) là:",
+      "choices": [
+        "CH₃Cl và HCl",
+        "CH₂Cl₂ và H₂",
+        "CCl₄ và H₂",
+        "C₂H₆ và HCl"
+      ],
+      "answer": 0,
+      "explain": "Thay một H bằng Cl.",
+      "wrong_explain": {
+        "1": "Thế hai lần.",
+        "2": "Thế bốn lần.",
+        "3": "Sai."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao alkane thường kém hoạt động ở điều kiện thường?",
+      "choices": [
+        "chỉ có liên kết σ bền, ít phân cực",
+        "có liên kết ba",
+        "có nhóm chức",
+        "có nhiều oxygen"
+      ],
+      "answer": 0,
+      "explain": "Liên kết C–C, C–H bền.",
+      "wrong_explain": {
+        "1": "Alkane không có liên kết ba.",
+        "2": "Không có nhóm chức.",
+        "3": "Không có oxygen."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Số đồng phân cấu tạo của C₅H₁₂ là:",
+      "choices": [
+        "3",
+        "2",
+        "4",
+        "5"
+      ],
+      "answer": 0,
+      "explain": "Pentane, 2-methylbutane, 2,2-dimethylpropane.",
+      "wrong_explain": {
+        "1": "Là 3.",
+        "2": "Là 3.",
+        "3": "Là 3."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Biển \"Cấm lửa\" tại cây xăng vì:",
+      "choices": [
+        "hơi xăng dễ cháy nổ",
+        "xăng là chất rắn",
+        "xăng tan trong nước",
+        "xăng không cháy"
+      ],
+      "answer": 0,
+      "explain": "Alkane dễ cháy, toả nhiều nhiệt.",
+      "wrong_explain": {
+        "1": "Xăng là lỏng.",
+        "2": "Không tan.",
+        "3": "Xăng cháy."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Biện pháp hạn chế ô nhiễm do xe cộ là:",
+      "choices": [
+        "dùng nhiên liệu sạch, bảo dưỡng và xe điện",
+        "tăng số xe",
+        "bỏ bộ lọc khí thải",
+        "dùng nhiên liệu nhiều lưu huỳnh"
+      ],
+      "answer": 0,
+      "explain": "Giảm khí thải.",
+      "wrong_explain": {
+        "1": "Tăng khí thải.",
+        "2": "Tăng ô nhiễm.",
+        "3": "Tăng SO₂."
+      },
+      "id": "q12"
+    }
+  ]
+}

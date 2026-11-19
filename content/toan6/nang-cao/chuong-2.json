@@ -1,0 +1,154 @@
+{
+  "id": "toan6-nang-cao-chuong-2",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Bài tập nâng cao",
+  "chapter": "Chương II. Tính chia hết trong tập hợp các số tự nhiên",
+  "lesson": "Bài tập nâng cao · Chương II. Tính chia hết trong tập hợp các số tự nhiên",
+  "section": "Bài tập nâng cao",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các câu nâng cao của chương, gộp từ các bài đã học. Tên bài hiển thị trong ngoặc ở đầu mỗi câu. Hãy ôn lại lý thuyết và ví dụ của bài đó trước khi làm."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "b8-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 8] Tìm số tự nhiên x nhỏ nhất lớn hơn 0 để 12 + 18 + x chia hết cho 6.",
+      "expr": "6",
+      "answer": "6",
+      "explain": "12 và 18 chia hết cho 6 nên x phải chia hết cho 6; nhỏ nhất là 6."
+    },
+    {
+      "id": "b8-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 8] Có bao nhiêu số có hai chữ số chia hết cho 9?",
+      "expr": "(99-18)/9+1",
+      "answer": "10",
+      "explain": "18; 27; …; 99: 10 số."
+    },
+    {
+      "id": "b8-n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 8] Số 100 có bao nhiêu ước?",
+      "expr": "9",
+      "answer": "9",
+      "explain": "1; 2; 4; 5; 10; 20; 25; 50; 100."
+    },
+    {
+      "id": "b9-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 9] Tìm số nhỏ nhất có ba chữ số chia hết cho cả 2, 3, 5 và 9.",
+      "expr": "180",
+      "answer": "180",
+      "explain": "Chia hết cho 2 và 5 thì tận cùng 0; tổng chữ số chia hết cho 9; nhỏ nhất là 180."
+    },
+    {
+      "id": "b9-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 9] Có bao nhiêu số từ 1 đến 100 chia hết cho 2 nhưng không chia hết cho 5?",
+      "expr": "50-10",
+      "answer": "40",
+      "explain": "Chia hết cho 2: 50 số; trong đó chia hết cho 10: 10 số. Còn 40."
+    },
+    {
+      "id": "b9-n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 9] Tìm các chữ số a, b để a56b‾ chia hết cho 45 và a lớn nhất. Tính a + b.",
+      "expr": "7+0",
+      "answer": "7",
+      "explain": "Chia hết cho 5 và 9: b = 0 thì a + 11 ⋮ 9 ⇒ a = 7; b = 5 thì a = 2. a lớn nhất là 7, a + b = 7."
+    },
+    {
+      "id": "b10-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 10] Tìm số nguyên tố p sao cho p + 2 và p + 4 cũng là số nguyên tố.",
+      "expr": "3",
+      "answer": "3",
+      "explain": "p = 3: 3, 5, 7 đều nguyên tố. Với p khác 3, một trong ba số chia hết cho 3."
+    },
+    {
+      "id": "b10-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 10] Tổng của hai số nguyên tố bằng 31. Tìm số lớn hơn.",
+      "expr": "29",
+      "answer": "29",
+      "explain": "Tổng lẻ nên có một số là 2, số kia là 29."
+    },
+    {
+      "id": "b10-n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 10] Số 360 = 2³·3²·5 có bao nhiêu ước?",
+      "expr": "4*3*2",
+      "answer": "24",
+      "explain": "(3 + 1)(2 + 1)(1 + 1) = 24."
+    },
+    {
+      "id": "b11-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 11] Có 48 nam và 72 nữ chia đều thành các tổ nhiều nhất. Mỗi tổ có bao nhiêu học sinh?",
+      "expr": "(48+72)/24",
+      "answer": "5",
+      "explain": "ƯCLN(48, 72) = 24 tổ; mỗi tổ 2 nam + 3 nữ = 5 học sinh."
+    },
+    {
+      "id": "b11-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 11] Tìm số tự nhiên a lớn nhất biết 420 ⋮ a và 700 ⋮ a.",
+      "expr": "140",
+      "answer": "140",
+      "explain": "a = ƯCLN(420, 700) = 140."
+    },
+    {
+      "id": "b11-n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 11] Tìm ƯCLN(2⁴·3²·5, 2²·3³·7).",
+      "expr": "4*9",
+      "answer": "36",
+      "explain": "Thừa số chung 2, 3 với số mũ nhỏ nhất: 2²·3² = 36."
+    },
+    {
+      "id": "b12-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 12] Một số chia cho 4, 5, 6 đều dư 1 và là số nhỏ nhất lớn hơn 1. Tìm số đó.",
+      "expr": "60+1",
+      "answer": "61",
+      "explain": "Số đó trừ 1 là BCNN(4, 5, 6) = 60, nên số đó là 61."
+    },
+    {
+      "id": "b12-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 12] Tích của hai số là 432, ƯCLN của chúng là 6. Tìm BCNN.",
+      "expr": "432/6",
+      "answer": "72",
+      "explain": "ƯCLN·BCNN = tích hai số nên BCNN = 432 : 6 = 72."
+    },
+    {
+      "id": "b12-n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 12] Ba bạn trực nhật: An 4 ngày một lần, Bình 6 ngày, Chi 8 ngày. Hôm nay cả ba cùng trực. Sau ít nhất bao nhiêu ngày cả ba lại cùng trực?",
+      "expr": "24",
+      "answer": "24",
+      "explain": "BCNN(4, 6, 8) = 24 ngày."
+    }
+  ]
+}

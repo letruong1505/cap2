@@ -1,0 +1,341 @@
+{
+  "id": "bai-19",
+  "grade": 10,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 10",
+  "chapter": "Chương VI. Tốc độ phản ứng",
+  "lesson": "Bài 19. Tốc độ phản ứng",
+  "section": "",
+  "bookPage": 93,
+  "requirements": [
+    "Trình bày được khái niệm tốc độ phản ứng, tốc độ trung bình; viết được biểu thức tốc độ theo định luật tác dụng khối lượng.",
+    "Giải thích được ảnh hưởng của nồng độ, áp suất, nhiệt độ, diện tích bề mặt, chất xúc tác đến tốc độ phản ứng; vận dụng hệ số nhiệt độ Van’t Hoff."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tốc độ phản ứng là đại lượng đặc trưng cho sự nhanh chậm của phản ứng, được xác định bằng độ biến thiên nồng độ của một chất phản ứng hoặc sản phẩm trong một đơn vị thời gian. Đơn vị thường dùng: mol/(L·s), mol/(L·min)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b19-nong-do-thoi-gian.svg",
+      "caption": "Nồng độ chất đầu giảm, nồng độ sản phẩm tăng theo thời gian"
+    },
+    {
+      "type": "formula",
+      "content": "Phản ứng aA + bB → mM + nN:   v̄ = −(1/a)·ΔC_A/Δt = −(1/b)·ΔC_B/Δt = (1/m)·ΔC_M/Δt = (1/n)·ΔC_N/Δt"
+    },
+    {
+      "type": "text",
+      "content": "Đa số phản ứng có tốc độ giảm dần theo thời gian (do nồng độ chất phản ứng giảm). Tốc độ trong khoảng thời gian rất ngắn gọi là tốc độ tức thời."
+    },
+    {
+      "type": "formula",
+      "content": "Định luật tác dụng khối lượng (phản ứng đơn giản): v = k·C_A^a·C_B^b   (k: hằng số tốc độ, phụ thuộc bản chất phản ứng và nhiệt độ)"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b19-yeu-to.svg",
+      "caption": "Các yếu tố ảnh hưởng đến tốc độ phản ứng"
+    },
+    {
+      "type": "text",
+      "content": "Ảnh hưởng: nồng độ tăng thì tốc độ tăng (số va chạm tăng); áp suất tăng thì tốc độ phản ứng có chất khí tăng; nhiệt độ tăng thì tốc độ tăng (số va chạm hiệu quả tăng); diện tích bề mặt tiếp xúc tăng (nghiền nhỏ) thì tốc độ tăng; chất xúc tác làm tăng tốc độ phản ứng nhưng không bị biến đổi về lượng và chất sau phản ứng (giảm năng lượng hoạt hoá)."
+    },
+    {
+      "type": "formula",
+      "content": "Quy tắc Van’t Hoff: v₂/v₁ = γ^((T₂ − T₁)/10)   (γ: hệ số nhiệt độ, thường từ 2 đến 4)"
+    },
+    {
+      "type": "text",
+      "content": "Năng lượng hoạt hoá là năng lượng tối thiểu mà các hạt cần có để va chạm dẫn đến phản ứng. Ứng dụng: bảo quản thực phẩm trong tủ lạnh (giảm nhiệt độ), dùng nồi áp suất (tăng nhiệt độ), nhóm bếp bằng củi nhỏ (tăng diện tích bề mặt), dùng enzyme, xúc tác trong công nghiệp."
+    },
+    {
+      "type": "method",
+      "title": "Tính tốc độ phản ứng và vận dụng các yếu tố",
+      "when": "Đề cho nồng độ tại hai thời điểm, hoặc biểu thức tốc độ, hoặc hệ số nhiệt độ; hỏi tốc độ trung bình, tốc độ thay đổi khi đổi nồng độ, nhiệt độ.",
+      "steps": [
+        "Tốc độ trung bình: lấy |ΔC|/Δt rồi chia cho hệ số của chất trong phương trình.",
+        "Đổi nồng độ: viết v = kC_A^a C_B^b, thay nồng độ mới, so sánh tỉ số.",
+        "Đổi nhiệt độ: v₂/v₁ = γ^(ΔT/10); tính số lần tăng.",
+        "Ngược lại tìm thời gian phản ứng: thời gian tỉ lệ nghịch với tốc độ."
+      ],
+      "notes": [
+        "Chất đầu có ΔC âm nên phải lấy dấu trừ.",
+        "Tăng nhiệt độ 10 °C, tốc độ tăng γ lần."
+      ],
+      "sample": {
+        "problem": "Phản ứng có γ = 2. Khi tăng nhiệt độ từ 20 °C lên 50 °C, tốc độ tăng bao nhiêu lần?",
+        "steps": [
+          "ΔT/10 = 3.",
+          "v₂/v₁ = 2³ = 8 lần."
+        ],
+        "answer": "8 lần"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho phản ứng Br₂ + HCOOH → 2HBr + CO₂. Nồng độ Br₂ ban đầu 0,012 M, sau 50 giây còn 0,010 M. Tính tốc độ trung bình theo Br₂.",
+      "steps": [
+        "ΔC = 0,010 − 0,012 = −0,002 M.",
+        "v̄ = 0,002/50 = 4·10⁻⁵ mol/(L·s)."
+      ],
+      "expr": "0.002/50",
+      "answer": "0.00004"
+    },
+    {
+      "problem": "Phản ứng 2NO + O₂ → 2NO₂ là phản ứng đơn giản. Tốc độ thay đổi thế nào khi nồng độ NO tăng gấp đôi, O₂ không đổi?",
+      "steps": [
+        "v = k·C²(NO)·C(O₂).",
+        "C(NO) tăng 2 lần ⇒ v tăng 2² = 4 lần."
+      ],
+      "expr": "2*2",
+      "answer": "4"
+    },
+    {
+      "problem": "Phản ứng có hệ số nhiệt độ γ = 3. Ở 30 °C phản ứng kết thúc sau 27 phút. Ở 60 °C phản ứng kết thúc sau bao lâu?",
+      "steps": [
+        "Tốc độ tăng 3³ = 27 lần.",
+        "Thời gian giảm 27 lần: 27/27 = 1 phút."
+      ],
+      "expr": "27/27",
+      "answer": "1"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tốc độ phản ứng là:",
+      "choices": [
+        "độ biến thiên nồng độ chất trong một đơn vị thời gian",
+        "khối lượng sản phẩm tạo thành",
+        "nhiệt lượng toả ra",
+        "thời gian phản ứng kết thúc"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất xúc tác là chất:",
+      "choices": [
+        "làm tăng tốc độ phản ứng, không bị biến đổi sau phản ứng",
+        "bị tiêu hao trong phản ứng",
+        "làm giảm tốc độ phản ứng",
+        "luôn là chất rắn"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Đó là chất ức chế.",
+        "3": "Có thể lỏng, khí."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Yếu tố nào KHÔNG ảnh hưởng đến tốc độ phản ứng của chất rắn với dung dịch?",
+      "choices": [
+        "Thể tích bình chứa dung dịch",
+        "Nồng độ dung dịch",
+        "Nhiệt độ",
+        "Kích thước hạt rắn"
+      ],
+      "answer": 0,
+      "explain": "Không ảnh hưởng nồng độ hay bề mặt.",
+      "wrong_explain": {
+        "1": "Có ảnh hưởng.",
+        "2": "Có ảnh hưởng.",
+        "3": "Có ảnh hưởng."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bảo quản thực phẩm trong tủ lạnh dựa trên yếu tố:",
+      "choices": [
+        "nhiệt độ",
+        "nồng độ",
+        "áp suất",
+        "xúc tác"
+      ],
+      "answer": 0,
+      "explain": "Giảm nhiệt độ làm chậm phản ứng.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đơn vị thường dùng của tốc độ phản ứng là:",
+      "choices": [
+        "mol/(L·s)",
+        "mol/L",
+        "J/s",
+        "g/s·L"
+      ],
+      "answer": 0,
+      "explain": "Nồng độ chia thời gian.",
+      "wrong_explain": {
+        "1": "Đơn vị nồng độ.",
+        "2": "Công suất.",
+        "3": "Sai."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nhóm lửa bằng củi chẻ nhỏ cháy nhanh hơn khúc gỗ to vì:",
+      "choices": [
+        "diện tích bề mặt tiếp xúc tăng",
+        "nhiệt độ thấp hơn",
+        "có chất xúc tác",
+        "nồng độ oxygen giảm"
+      ],
+      "answer": 0,
+      "explain": "Nghiền nhỏ tăng diện tích.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dùng nồi áp suất nấu chín thức ăn nhanh hơn vì:",
+      "choices": [
+        "nhiệt độ sôi của nước tăng",
+        "áp suất làm giảm nhiệt độ",
+        "có xúc tác",
+        "nồng độ thức ăn tăng"
+      ],
+      "answer": 0,
+      "explain": "Áp suất cao, nước sôi trên 100 °C.",
+      "wrong_explain": {
+        "1": "Ngược.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nồng độ chất A giảm từ 0,5 M xuống 0,3 M trong 10 s. Tốc độ trung bình theo A (mol/(L·s)):",
+      "expr": "0.2/10",
+      "answer": "0.02",
+      "explain": "|ΔC|/Δt.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phản ứng 2H₂O₂ → 2H₂O + O₂: nồng độ H₂O₂ giảm 0,4 M trong 20 s. Tốc độ trung bình của phản ứng (mol/(L·s)):",
+      "expr": "0.4/20/2",
+      "answer": "0.01",
+      "explain": "Chia thêm hệ số 2.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phản ứng có γ = 2, tăng nhiệt độ thêm 20 °C thì tốc độ tăng (lần):",
+      "expr": "4",
+      "answer": "4",
+      "explain": "2² = 4.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phản ứng đơn giản A + B → C có v = kC_A·C_B. Tăng C_A gấp 3, giữ C_B, tốc độ tăng (lần):",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Tỉ lệ bậc 1 với A.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phản ứng 2A + B → C đơn giản. Nồng độ A và B đều tăng gấp đôi, tốc độ tăng (lần):",
+      "expr": "2*2*2",
+      "answer": "8",
+      "explain": "v = kC_A²C_B.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phản ứng có γ = 3. Tăng nhiệt độ từ 25 °C lên 55 °C, tốc độ tăng (lần):",
+      "expr": "27",
+      "answer": "27",
+      "explain": "3³.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ở 20 °C phản ứng kết thúc sau 64 phút, γ = 2. Ở 80 °C phản ứng kết thúc sau (phút):",
+      "expr": "64/64",
+      "answer": "1",
+      "explain": "Tốc độ tăng 2⁶ = 64 lần.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phản ứng N₂ + 3H₂ → 2NH₃: tốc độ tạo NH₃ là 0,04 mol/(L·s). Tốc độ tiêu thụ H₂ (mol/(L·s)):",
+      "expr": "0.04*3/2",
+      "answer": "0.06",
+      "explain": "v(H₂) = 3/2·v(NH₃).",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong sản xuất H₂SO₄, phản ứng 2SO₂ + O₂ → 2SO₃ dùng V₂O₅ nhằm:",
+      "choices": [
+        "tăng tốc độ phản ứng",
+        "tăng lượng SO₃ tạo thành ở cân bằng",
+        "giảm nhiệt độ cần thiết xuống 0 °C",
+        "làm phản ứng thu nhiệt"
+      ],
+      "answer": 0,
+      "explain": "Vai trò chất xúc tác.",
+      "wrong_explain": {
+        "1": "Xúc tác không làm chuyển dịch cân bằng.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q16"
+    }
+  ]
+}

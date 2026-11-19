@@ -1,0 +1,141 @@
+{
+  "id": "bai-25",
+  "grade": 11,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 11",
+  "chapter": "Chương 6. Hợp chất carbonyl – Carboxylic acid",
+  "lesson": "Bài 25. Ôn tập chương 6",
+  "section": "",
+  "bookPage": 153,
+  "requirements": [
+    "Hệ thống hoá hợp chất carbonyl và carboxylic acid: cấu tạo, tính chất, chuyển hoá.",
+    "Vận dụng giải bài tập nhận biết, tính toán."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hợp chất carbonyl: aldehyde RCHO (khử → alcohol bậc I; oxi hoá → acid; tráng bạc; Cu(OH)₂ → Cu₂O) và ketone R–CO–R′ (khử → alcohol bậc II; không bị oxi hoá nhẹ); cùng phản ứng cộng HCN, tạo iodoform (có CH₃CO–). Carboxylic acid RCOOH: tính acid (quỳ, kim loại, oxide base, base, muối carbonate), ester hoá với alcohol."
+    },
+    {
+      "type": "text",
+      "content": "Chuỗi chuyển hoá: alcohol bậc I → aldehyde → carboxylic acid → ester. Alcohol bậc II → ketone. Alkene → alcohol (hydrate hoá). Dẫn xuất halogen → alcohol."
+    },
+    {
+      "type": "formula",
+      "content": "RCH₂OH →[O] RCHO →[O] RCOOH        RCOOH + R′OH ⇌ RCOOR′ + H₂O"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hiệu suất ester hoá 60% khi dùng 0,5 mol acid và alcohol dư. Tính số mol ester thu được.",
+      "steps": [
+        "n(ester) = 0,5·60% = 0,3 mol."
+      ],
+      "expr": "0.5*0.6",
+      "answer": "0.3"
+    }
+  ],
+  "items": [
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất nào cho phản ứng tráng bạc?",
+      "choices": [
+        "CH₃CHO",
+        "CH₃COCH₃",
+        "CH₃COOH",
+        "C₂H₅OH"
+      ],
+      "answer": 0,
+      "explain": "Aldehyde.",
+      "wrong_explain": {
+        "1": "Ketone không tráng bạc.",
+        "2": "Acid (trừ HCOOH).",
+        "3": "Alcohol không."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phản ứng của CH₃COOH với C₂H₅OH (H₂SO₄ đặc) gọi là:",
+      "choices": [
+        "ester hoá",
+        "trùng hợp",
+        "cracking",
+        "tráng gương"
+      ],
+      "answer": 0,
+      "explain": "Tạo ester.",
+      "wrong_explain": {
+        "1": "Không phải.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khử propanone bằng NaBH₄ thu được:",
+      "choices": [
+        "propan-2-ol",
+        "propan-1-ol",
+        "propanal",
+        "propanoic acid"
+      ],
+      "answer": 0,
+      "explain": "Ketone → alcohol bậc II.",
+      "wrong_explain": {
+        "1": "Từ aldehyde.",
+        "2": "Oxi hoá.",
+        "3": "Oxi hoá."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thuốc thử phân biệt ethanal, ethanoic acid, ethanol là:",
+      "choices": [
+        "quỳ tím và Tollens",
+        "chỉ NaOH",
+        "chỉ nước",
+        "chỉ HCl"
+      ],
+      "answer": 0,
+      "explain": "Acid làm đỏ quỳ; ethanal tráng bạc.",
+      "wrong_explain": {
+        "1": "Không đủ.",
+        "2": "Không đủ.",
+        "3": "Không đủ."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho propanal tác dụng với HCN thu được:",
+      "choices": [
+        "2-hydroxybutanenitrile",
+        "propan-1-ol",
+        "butanone",
+        "butanoic acid"
+      ],
+      "answer": 0,
+      "explain": "Cộng vào C=O.",
+      "wrong_explain": {
+        "1": "Là sản phẩm khử.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "id": "q05"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "ly7-nang-cao-chuong-4",
+  "grade": 7,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Bài tập nâng cao",
+  "chapter": "Chương IV. Âm thanh",
+  "lesson": "Bài tập nâng cao · Chương IV. Âm thanh",
+  "section": "Bài tập nâng cao",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các câu nâng cao của chương, gộp từ các bài đã học. Tên bài hiển thị trong ngoặc ở đầu mỗi câu. Hãy ôn lại lý thuyết và ví dụ của bài đó trước khi làm."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "b12-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 12] Một vật dao động với tần số 40 Hz. Trong 2 phút nó thực hiện bao nhiêu dao động?",
+      "expr": "40*120",
+      "answer": "4800",
+      "explain": "2 phút = 120 s; số dao động = 40·120 = 4800."
+    },
+    {
+      "id": "b12-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 12] Âm truyền trong nước với tốc độ 1500 m/s. Sau 3 s âm đi được bao nhiêu mét?",
+      "expr": "1500*3",
+      "answer": "4500",
+      "explain": "s = v·t = 1500·3 = 4500 m."
+    },
+    {
+      "id": "b12-n03",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 12] Vật dao động có tần số 50 Hz. Thời gian thực hiện một dao động là bao nhiêu giây?",
+      "expr": "1/50",
+      "answer": "0.02",
+      "explain": "Một dao động mất 1/f = 1/50 = 0,02 s."
+    },
+    {
+      "id": "b13-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 13] Một âm có tần số 110 Hz. Trong 1 phút vật phát âm dao động bao nhiêu lần?",
+      "expr": "110*60",
+      "answer": "6600",
+      "explain": "1 phút = 60 s nên số dao động = 110·60 = 6600."
+    },
+    {
+      "id": "b13-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 13] Độ to của âm tăng từ 40 dB lên 70 dB. Độ to tăng thêm bao nhiêu dB?",
+      "expr": "70-40",
+      "answer": "30",
+      "explain": "70 − 40 = 30 dB."
+    },
+    {
+      "id": "b13-n03",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "[Bài 13] Muốn âm phát ra to hơn, ta cần làm cho nguồn âm dao động với:",
+      "choices": [
+        "Biên độ lớn hơn",
+        "Tần số lớn hơn",
+        "Tần số nhỏ hơn",
+        "Biên độ nhỏ hơn"
+      ],
+      "answer": 0,
+      "explain": "Biên độ dao động càng lớn thì âm càng to.",
+      "wrong_explain": {
+        "1": "Tần số lớn hơn làm âm cao hơn, không làm âm to hơn.",
+        "2": "Tần số nhỏ hơn làm âm trầm hơn.",
+        "3": "Biên độ nhỏ làm âm nhỏ đi."
+      },
+      "concept": true
+    },
+    {
+      "id": "b14-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 14] Người đứng cách vách đá 85 m và hét to. Sau bao nhiêu giây nghe thấy tiếng vang? (tốc độ âm 340 m/s)",
+      "expr": "2*85/340",
+      "answer": "0.5",
+      "explain": "Âm đi và về: 2·85 = 170 m nên t = 170 : 340 = 0,5 s."
+    },
+    {
+      "id": "b14-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 14] Một người nghe tiếng vang sau 2 s kể từ khi hét. Tốc độ âm 340 m/s. Vách phản xạ cách người bao nhiêu mét?",
+      "expr": "340*2/2",
+      "answer": "340",
+      "explain": "Quãng đường âm đi cả đi lẫn về: 340·2 = 680 m nên khoảng cách là 680 : 2 = 340 m."
+    },
+    {
+      "id": "b14-n03",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "[Bài 14] Vật liệu nào hấp thụ âm tốt, thường dùng để chống ô nhiễm tiếng ồn?",
+      "choices": [
+        "Vật mềm, xốp, có bề mặt gồ ghề",
+        "Vật cứng, nhẵn",
+        "Kim loại bóng",
+        "Mặt kính phẳng"
+      ],
+      "answer": 0,
+      "explain": "Vật mềm, xốp hấp thụ âm tốt, phản xạ âm kém.",
+      "wrong_explain": {
+        "1": "Vật cứng, nhẵn phản xạ âm tốt.",
+        "2": "Phản xạ âm tốt, hấp thụ kém.",
+        "3": "Phản xạ âm tốt, hấp thụ kém."
+      },
+      "concept": true
+    }
+  ]
+}

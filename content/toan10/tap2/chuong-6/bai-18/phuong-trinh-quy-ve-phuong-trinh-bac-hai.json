@@ -1,0 +1,289 @@
+{
+  "id": "bai-18",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 2",
+  "chapter": "Chương VI. Hàm số, đồ thị và ứng dụng",
+  "lesson": "Bài 18. Phương trình quy về phương trình bậc hai",
+  "section": "",
+  "bookPage": 25,
+  "requirements": [
+    "Giải phương trình dạng √(ax² + bx + c) = √(dx² + ex + f) và √(ax² + bx + c) = dx + e.",
+    "Vận dụng giải bài toán thực tiễn, biết thử lại nghiệm."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dạng 1: √(ax² + bx + c) = √(dx² + ex + f). Bình phương hai vế đưa về ax² + bx + c = dx² + ex + f, giải tìm x rồi thử lại: chỉ nhận nghiệm làm cả hai biểu thức dưới căn không âm."
+    },
+    {
+      "type": "formula",
+      "content": "√A = √B  ⇒  A = B (rồi thử lại điều kiện A ≥ 0)"
+    },
+    {
+      "type": "text",
+      "content": "Dạng 2: √(ax² + bx + c) = dx + e. Bình phương hai vế đưa về ax² + bx + c = (dx + e)², giải tìm x rồi thử lại: chỉ nhận nghiệm làm vế phải dx + e ≥ 0 (và biểu thức dưới căn không âm, điều này tự đúng khi vế phải không âm)."
+    },
+    {
+      "type": "formula",
+      "content": "√A = B  ⇔  B ≥ 0 và A = B²"
+    },
+    {
+      "type": "text",
+      "content": "Vì phép bình phương có thể tạo nghiệm ngoại lai, luôn phải thử lại nghiệm vào phương trình ban đầu (hoặc kiểm tra điều kiện) trước khi kết luận."
+    },
+    {
+      "type": "method",
+      "title": "Giải phương trình chứa căn bậc hai",
+      "when": "Đề cho phương trình có căn bậc hai một hoặc hai vế, hoặc bài toán thực tế dẫn đến phương trình chứa căn.",
+      "steps": [
+        "Nhận dạng: hai căn bằng nhau (dạng 1) hay căn bằng biểu thức bậc nhất (dạng 2).",
+        "Bình phương hai vế, chuyển về phương trình bậc hai (hoặc bậc nhất) và giải.",
+        "Thử lại từng nghiệm: dạng 1 cần biểu thức dưới căn ≥ 0; dạng 2 cần vế phải ≥ 0.",
+        "Kết luận tập nghiệm; với bài thực tế loại thêm nghiệm không phù hợp (âm, quá lớn)."
+      ],
+      "notes": [
+        "Không được \"chia hai vế cho x\" khi x có thể bằng 0.",
+        "Nghiệm ngoại lai thường xuất hiện ở dạng 2 khi vế phải âm."
+      ],
+      "sample": {
+        "problem": "Giải phương trình √(2x² − 3x + 1) = x + 1.",
+        "steps": [
+          "Bình phương: 2x² − 3x + 1 = x² + 2x + 1 ⇔ x² − 5x = 0 ⇔ x = 0 hoặc x = 5.",
+          "Thử lại: x = 0: √1 = 1 đúng; x = 5: √36 = 6 đúng. Tập nghiệm {0; 5}."
+        ],
+        "answer": "{0; 5}"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Giải phương trình √(x² + 3x − 2) = √(2x² − 4x + 4).",
+      "steps": [
+        "Bình phương: x² + 3x − 2 = 2x² − 4x + 4 ⇔ x² − 7x + 6 = 0 ⇔ x = 1 hoặc x = 6.",
+        "Thử lại: x = 1: 1 + 3 − 2 = 2 ≥ 0, nhận; x = 6: 36 + 18 − 2 = 52 ≥ 0, nhận.",
+        "Tập nghiệm {1; 6}."
+      ],
+      "expr": "1+6",
+      "answer": "7"
+    },
+    {
+      "problem": "Giải phương trình √(3x² − 4x − 4) = x + 2.",
+      "steps": [
+        "Bình phương: 3x² − 4x − 4 = x² + 4x + 4 ⇔ 2x² − 8x − 8 = 0 ⇔ x² − 4x − 4 = 0 ⇔ x = 2 ± 2√2.",
+        "Cả hai nghiệm đều làm x + 2 > 0 (vì 2 − 2√2 ≈ −0,83 > −2), nên nhận cả hai.",
+        "Tập nghiệm {2 − 2√2; 2 + 2√2}."
+      ],
+      "expr": "2+2",
+      "answer": "4"
+    },
+    {
+      "problem": "Giải phương trình √(2x + 7) = x − 4.",
+      "steps": [
+        "Bình phương: 2x + 7 = x² − 8x + 16 ⇔ x² − 10x + 9 = 0 ⇔ x = 1 hoặc x = 9.",
+        "Thử lại: x = 1 cho vế phải −3 < 0, loại; x = 9: √25 = 5 = 9 − 4, nhận.",
+        "Tập nghiệm {9}."
+      ],
+      "expr": "9",
+      "answer": "9"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phương trình √A = B (B là biểu thức) tương đương với:",
+      "choices": [
+        "B ≥ 0 và A = B²",
+        "A = B²",
+        "A ≥ 0 và A = B²",
+        "A = B"
+      ],
+      "answer": 0,
+      "explain": "Vế phải phải không âm.",
+      "wrong_explain": {
+        "1": "Thiếu điều kiện có thể sinh nghiệm ngoại lai.",
+        "2": "Điều kiện đúng là B ≥ 0.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Nghiệm của phương trình √(x + 3) = 2 là:",
+      "expr": "4-3",
+      "answer": "1",
+      "explain": "x + 3 = 4 ⇔ x = 1.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Phương trình √(2x − 1) = √(x + 4) có nghiệm:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "2x − 1 = x + 4 ⇔ x = 5; thử lại 9 ≥ 0.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sau khi bình phương hai vế, ta cần:",
+      "choices": [
+        "thử lại nghiệm vào phương trình ban đầu",
+        "kết luận ngay tập nghiệm",
+        "chia hai vế cho x",
+        "bình phương thêm lần nữa"
+      ],
+      "answer": 0,
+      "explain": "Bình phương có thể tạo nghiệm ngoại lai.",
+      "wrong_explain": {
+        "1": "Có thể nhận nghiệm sai.",
+        "2": "Không được chia khi chưa chắc x ≠ 0.",
+        "3": "Không cần."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Phương trình √(x² − 1) = √(x + 1) có bao nhiêu nghiệm?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "x² − 1 = x + 1 ⇔ x = −1 hoặc x = 2; cả hai làm x + 1 ≥ 0.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nghiệm của phương trình √(x² − 2x + 4) = √(x² + x − 2) là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "x² − 2x + 4 = x² + x − 2 ⇔ 3x = 6 ⇔ x = 2; thử lại: x² + x − 2 = 4 ≥ 0, nhận.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nghiệm của phương trình √(x + 2) = x là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "x ≥ 0 và x + 2 = x² ⇔ x = 2 (loại x = −1).",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phương trình √(3x + 1) = x − 1 có nghiệm duy nhất x bằng:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "x ≥ 1; 3x + 1 = x² − 2x + 1 ⇔ x² − 5x = 0 ⇔ x = 5 (loại 0).",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phương trình √(x − 1) = −2:",
+      "choices": [
+        "vô nghiệm",
+        "có nghiệm x = 5",
+        "có nghiệm x = 3",
+        "có hai nghiệm"
+      ],
+      "answer": 0,
+      "explain": "Căn bậc hai không âm nên không thể bằng −2.",
+      "wrong_explain": {
+        "1": "√4 = 2 ≠ −2.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số nghiệm của phương trình √(x² − 4x + 3) = x − 3 là:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "x ≥ 3; x² − 4x + 3 = x² − 6x + 9 ⇔ x = 3. Nhận.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nghiệm lớn nhất của phương trình √(x + 6) = √(2x² − 3x) là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "x + 6 = 2x² − 3x ⇔ 2x² − 4x − 6 = 0 ⇔ x = 3 hoặc x = −1; cả hai đều làm biểu thức dưới căn không âm. Nghiệm lớn nhất là 3.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tích các nghiệm của phương trình √(2x² − 6x + 4) = x − 1 là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "x ≥ 1; 2x² − 6x + 4 = x² − 2x + 1 ⇔ x² − 4x + 3 = 0 ⇔ x = 1 hoặc 3; cả hai nhận; tích 3.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một tam giác vuông có cạnh huyền dài hơn một cạnh góc vuông 1 cm và cạnh góc vuông còn lại dài 5 cm. Độ dài cạnh huyền (cm) là:",
+      "expr": "13",
+      "answer": "13",
+      "explain": "√(x² + 25) = x + 1 ⇔ x² + 25 = x² + 2x + 1 ⇔ x = 12; cạnh huyền 13.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phương trình √(x² + 5x + 1) = 2x − 1 có nghiệm x bằng:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "x ≥ 1/2; x² + 5x + 1 = 4x² − 4x + 1 ⇔ 3x² − 9x = 0 ⇔ x = 3 (loại x = 0).",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phương trình √(4 − x) = x − 2 có nghiệm x bằng:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "x ≥ 2; 4 − x = x² − 4x + 4 ⇔ x² − 3x = 0 ⇔ x = 3 (loại 0).",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khoảng cách từ điểm M(x; 0) trên trục hoành đến A(1; 2) bằng khoảng cách đến B(3; 4). Hoành độ M là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "(x − 1)² + 4 = (x − 3)² + 16 ⇔ −2x + 5 = −6x + 25 ⇔ x = 5.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Phương trình √(x² − 3x + 3) + √(x² − 3x + 6) = 3 có tổng các nghiệm bằng:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Đặt t = x² − 3x: √(t + 3) + √(t + 6) = 3 ⇔ t = −2 (vì √1 + √4 = 3); x² − 3x + 2 = 0 ⇔ x = 1 hoặc 2; tổng 3.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Số nghiệm của phương trình √(x² − 1) = x − m khi m = 2 là:",
+      "expr": "0",
+      "answer": "0",
+      "explain": "x ≥ 2; x² − 1 = x² − 4x + 4 ⇔ x = 5/4 < 2, loại. Vô nghiệm.",
+      "id": "q18"
+    }
+  ]
+}

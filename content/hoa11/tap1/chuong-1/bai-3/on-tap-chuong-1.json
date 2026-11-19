@@ -1,0 +1,195 @@
+{
+  "id": "bai-3",
+  "grade": 11,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 11",
+  "chapter": "Chương 1. Cân bằng hoá học",
+  "lesson": "Bài 3. Ôn tập chương 1",
+  "section": "",
+  "bookPage": 27,
+  "requirements": [
+    "Hệ thống hoá kiến thức về cân bằng hoá học và cân bằng trong dung dịch nước.",
+    "Vận dụng tổng hợp để giải bài tập về hằng số cân bằng, chiều chuyển dịch, pH, chuẩn độ."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cân bằng hoá học: phản ứng thuận nghịch ⇌; trạng thái cân bằng v thuận = v nghịch, nồng độ không đổi; K_C = [C]ᶜ[D]ᵈ/([A]ᵃ[B]ᵇ) (bỏ chất rắn), chỉ phụ thuộc nhiệt độ và bản chất phản ứng; Le Chatelier: cân bằng chuyển dịch chống lại tác động."
+    },
+    {
+      "type": "text",
+      "content": "Cân bằng trong dung dịch nước: sự điện li; chất điện li mạnh (acid mạnh, base mạnh, hầu hết muối), điện li yếu (acid yếu, base yếu), không điện li (nước nguyên chất, saccharose, ethanol). Thuyết Brønsted – Lowry: acid cho H⁺, base nhận H⁺. pH = −lg[H⁺]; môi trường acid pH < 7, base pH > 7. Thuỷ phân ion: Na₂CO₃ base; AlCl₃, FeCl₃ acid. Chuẩn độ: V₁C₁ = V₂C₂ (axit, base một chức)."
+    },
+    {
+      "type": "formula",
+      "content": "K_C = [C]ᶜ[D]ᵈ/([A]ᵃ[B]ᵇ)    pH = −lg[H⁺]    [H⁺][OH⁻] = 10⁻¹⁴    V₁C₁ = V₂C₂"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b1-le-chatelier.svg",
+      "caption": "Tóm tắt các yếu tố ảnh hưởng đến cân bằng"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cân bằng CO + H₂O ⇌ CO₂ + H₂ ở nhiệt độ nào đó có [CO] = 0,2; [H₂O] = 0,2; [CO₂] = 0,4; [H₂] = 0,4 (M). Tính K_C.",
+      "steps": [
+        "K_C = [CO₂][H₂]/([CO][H₂O]).",
+        "K_C = 0,4·0,4/(0,2·0,2) = 4."
+      ],
+      "expr": "(0.4*0.4)/(0.2*0.2)",
+      "answer": "4"
+    },
+    {
+      "problem": "Trộn 50 mL HCl 0,1 M với 50 mL NaOH 0,1 M. Xác định môi trường dung dịch thu được.",
+      "steps": [
+        "n(HCl) = n(NaOH) = 0,005 mol nên phản ứng vừa đủ.",
+        "Dung dịch chỉ chứa NaCl, môi trường trung tính (pH = 7)."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phát biểu nào đúng về cân bằng hoá học?",
+      "choices": [
+        "Là cân bằng động, v thuận = v nghịch",
+        "Phản ứng dừng lại",
+        "Nồng độ các chất bằng nhau",
+        "Chỉ xảy ra với chất khí"
+      ],
+      "answer": 0,
+      "explain": "Cân bằng động.",
+      "wrong_explain": {
+        "1": "Phản ứng vẫn xảy ra.",
+        "2": "Chỉ không đổi, không nhất thiết bằng nhau.",
+        "3": "Cả dung dịch."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi tăng nhiệt độ, cân bằng chuyển dịch theo chiều:",
+      "choices": [
+        "thu nhiệt",
+        "toả nhiệt",
+        "tăng số mol khí",
+        "giảm số mol khí"
+      ],
+      "answer": 0,
+      "explain": "Chống lại việc tăng nhiệt độ.",
+      "wrong_explain": {
+        "1": "Đó là khi giảm nhiệt độ.",
+        "2": "Liên quan áp suất.",
+        "3": "Liên quan áp suất."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất nào là base theo Brønsted – Lowry trong NH₃ + H₂O ⇌ NH₄⁺ + OH⁻ (chiều thuận)?",
+      "choices": [
+        "NH₃",
+        "H₂O",
+        "NH₄⁺",
+        "không có"
+      ],
+      "answer": 0,
+      "explain": "NH₃ nhận H⁺.",
+      "wrong_explain": {
+        "1": "H₂O cho H⁺, là acid.",
+        "2": "NH₄⁺ là acid ở chiều nghịch.",
+        "3": "Có base."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cặp chất cùng dãy điện li mạnh là:",
+      "choices": [
+        "HNO₃, Ba(OH)₂, NaCl",
+        "CH₃COOH, NaOH, KCl",
+        "HF, KOH, NaCl",
+        "H₂CO₃, NaOH, KNO₃"
+      ],
+      "answer": 0,
+      "explain": "Acid mạnh, base mạnh, muối.",
+      "wrong_explain": {
+        "1": "CH₃COOH yếu.",
+        "2": "HF yếu.",
+        "3": "H₂CO₃ yếu."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dung dịch có [OH⁻] = 10⁻³ M có pH bằng:",
+      "choices": [
+        "11",
+        "3",
+        "7",
+        "14"
+      ],
+      "answer": 0,
+      "explain": "[H⁺] = 10⁻¹¹ nên pH = 11.",
+      "wrong_explain": {
+        "1": "Đó là pOH.",
+        "2": "Trung tính.",
+        "3": "Không đúng."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho cân bằng 2SO₂ + O₂ ⇌ 2SO₃ ΔH < 0. Để tăng hiệu suất tạo SO₃ nên:",
+      "choices": [
+        "tăng áp suất và giảm nhiệt độ (trong giới hạn thực tế)",
+        "giảm áp suất và tăng nhiệt độ",
+        "dùng thêm chất xúc tác để chuyển dịch",
+        "giảm nồng độ O₂"
+      ],
+      "answer": 0,
+      "explain": "Chiều thuận giảm số mol khí và toả nhiệt.",
+      "wrong_explain": {
+        "1": "Ngược lại.",
+        "2": "Xúc tác không chuyển dịch.",
+        "3": "Giảm O₂ làm lệch về nghịch."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Để điều chỉnh pH của nước hồ nuôi tôm quá thấp, người ta thường:",
+      "choices": [
+        "bón vôi",
+        "thêm acid",
+        "thêm phèn",
+        "thêm muối ăn"
+      ],
+      "answer": 0,
+      "explain": "Vôi làm tăng pH.",
+      "wrong_explain": {
+        "1": "Giảm thêm pH.",
+        "2": "Phèn gây acid.",
+        "3": "Không đổi pH."
+      },
+      "id": "q07"
+    }
+  ]
+}

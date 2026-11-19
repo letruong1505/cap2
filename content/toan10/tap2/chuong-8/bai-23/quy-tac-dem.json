@@ -1,0 +1,270 @@
+{
+  "id": "bai-23",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 2",
+  "chapter": "Chương VIII. Đại số tổ hợp",
+  "lesson": "Bài 23. Quy tắc đếm",
+  "section": "",
+  "bookPage": 60,
+  "requirements": [
+    "Vận dụng quy tắc cộng và quy tắc nhân để đếm số phương án, số cách chọn.",
+    "Dùng sơ đồ hình cây để mô tả và đếm."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Quy tắc cộng: một công việc có thể thực hiện theo một trong hai phương án; phương án thứ nhất có m cách, phương án thứ hai có n cách (không trùng nhau) thì công việc có m + n cách thực hiện. Mở rộng cho nhiều phương án."
+    },
+    {
+      "type": "text",
+      "content": "Quy tắc nhân: một công việc gồm hai công đoạn liên tiếp; công đoạn thứ nhất có m cách, với mỗi cách đó công đoạn thứ hai có n cách thì công việc có m·n cách thực hiện. Mở rộng cho nhiều công đoạn."
+    },
+    {
+      "type": "formula",
+      "content": "Quy tắc cộng: \"hoặc\" → m + n        Quy tắc nhân: \"và, rồi\" → m · n"
+    },
+    {
+      "type": "text",
+      "content": "Sơ đồ hình cây: vẽ các nhánh ứng với từng lựa chọn ở mỗi công đoạn; số đường đi từ gốc đến ngọn là số kết quả. Thường dùng khi số lựa chọn nhỏ để liệt kê và kiểm tra."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t10-b23-so-do-cay.svg",
+      "caption": "Sơ đồ hình cây đếm số cách chọn một bộ áo và quần"
+    },
+    {
+      "type": "text",
+      "content": "Phần bù: đếm số kết quả không thoả mãn rồi lấy tổng trừ đi, thường gọn hơn khi điều kiện có từ \"ít nhất\"."
+    },
+    {
+      "type": "method",
+      "title": "Đếm bằng quy tắc cộng và quy tắc nhân",
+      "when": "Đề hỏi số cách chọn, số số tự nhiên lập được, số đường đi, số cách sắp xếp đơn giản.",
+      "steps": [
+        "Phân tích công việc: các phương án loại trừ nhau (cộng) hay các bước nối tiếp (nhân).",
+        "Với bài lập số: xét từng chữ số từ ràng buộc chặt nhất (chữ số đầu khác 0, chữ số cuối chẵn/lẻ), nhân số cách lại.",
+        "Nếu các trường hợp khác nhau về cách đếm thì chia trường hợp rồi cộng.",
+        "Bài \"ít nhất\" thì dùng phần bù."
+      ],
+      "notes": [
+        "Chữ số hàng cao nhất khác 0.",
+        "\"Đôi một khác nhau\" làm số lựa chọn giảm dần sau mỗi bước."
+      ],
+      "sample": {
+        "problem": "Từ các chữ số 1, 2, 3, 4, 5 lập được bao nhiêu số tự nhiên có ba chữ số đôi một khác nhau?",
+        "steps": [
+          "Hàng trăm 5 cách, hàng chục 4 cách, hàng đơn vị 3 cách.",
+          "5·4·3 = 60 số."
+        ],
+        "answer": "60"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một cửa hàng có 5 loại áo và 4 loại quần. Hỏi (a) có bao nhiêu cách chọn một món đồ; (b) có bao nhiêu cách chọn một bộ gồm một áo và một quần?",
+      "steps": [
+        "(a) Quy tắc cộng: 5 + 4 = 9 cách.",
+        "(b) Quy tắc nhân: 5·4 = 20 cách."
+      ],
+      "expr": "5*4",
+      "answer": "20"
+    },
+    {
+      "problem": "Từ các chữ số 0, 1, 2, 3, 4 lập được bao nhiêu số tự nhiên có ba chữ số đôi một khác nhau?",
+      "steps": [
+        "Chữ số hàng trăm khác 0: 4 cách.",
+        "Hàng chục: 4 cách (còn 4 chữ số kể cả 0); hàng đơn vị: 3 cách.",
+        "4·4·3 = 48 số."
+      ],
+      "expr": "4*4*3",
+      "answer": "48"
+    },
+    {
+      "problem": "Từ thành phố A đến B có 3 con đường, từ B đến C có 2 con đường. Có bao nhiêu cách đi từ A đến C qua B rồi quay về A qua B mà không đi lại con đường nào đã đi?",
+      "steps": [
+        "Đi A→B: 3, B→C: 2, về C→B: 1 (tránh đường đã đi), B→A: 2.",
+        "3·2·1·2 = 12 cách."
+      ],
+      "expr": "3*2*1*2",
+      "answer": "12"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Một lớp có 18 nam và 15 nữ. Số cách chọn một học sinh làm lớp trưởng là:",
+      "expr": "18+15",
+      "answer": "33",
+      "explain": "Quy tắc cộng.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Có 4 loại bánh và 3 loại nước. Số cách chọn một bánh và một nước là:",
+      "expr": "4*3",
+      "answer": "12",
+      "explain": "Quy tắc nhân.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Số cách chọn một cặp (nam, nữ) từ 18 nam và 15 nữ là:",
+      "expr": "18*15",
+      "answer": "270",
+      "explain": "Quy tắc nhân.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi một công việc có thể thực hiện theo một trong hai phương án độc lập, ta dùng:",
+      "choices": [
+        "quy tắc cộng",
+        "quy tắc nhân",
+        "hoán vị",
+        "tổ hợp"
+      ],
+      "answer": 0,
+      "explain": "\"Hoặc\" phương án này hoặc phương án kia.",
+      "wrong_explain": {
+        "1": "Nhân dùng cho các bước nối tiếp.",
+        "2": "Không liên quan.",
+        "3": "Không liên quan."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Từ các chữ số 1, 2, 3 lập được bao nhiêu số có hai chữ số (các chữ số có thể trùng nhau)?",
+      "expr": "3*3",
+      "answer": "9",
+      "explain": "Mỗi hàng 3 cách.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Từ các chữ số 1, 2, 3, 4, 5, 6 lập được bao nhiêu số chẵn có hai chữ số khác nhau?",
+      "expr": "3*5",
+      "answer": "15",
+      "explain": "Hàng đơn vị chẵn: 3 cách; hàng chục: 5 cách.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có bao nhiêu số tự nhiên có ba chữ số đôi một khác nhau lập từ 0, 1, 2, 3, 4, 5?",
+      "expr": "5*5*4",
+      "answer": "100",
+      "explain": "Hàng trăm 5 cách (khác 0), hàng chục 5, hàng đơn vị 4.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một mật khẩu gồm 2 chữ cái (trong 26 chữ) rồi 2 chữ số (0–9). Số mật khẩu có thể là:",
+      "expr": "26*26*10*10",
+      "answer": "67600",
+      "explain": "26·26·10·10.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có bao nhiêu số tự nhiên lẻ có ba chữ số?",
+      "expr": "9*10*5",
+      "answer": "450",
+      "explain": "Hàng trăm 9, hàng chục 10, hàng đơn vị 5 (1, 3, 5, 7, 9).",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Từ A đến B có 4 đường, từ B đến C có 3 đường, từ A đến C trực tiếp có 2 đường. Số cách đi từ A đến C là:",
+      "expr": "4*3+2",
+      "answer": "14",
+      "explain": "Qua B: 4·3 = 12; trực tiếp: 2; cộng lại.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có bao nhiêu cách xếp 3 bạn vào 3 ghế thành hàng ngang?",
+      "expr": "3*2*1",
+      "answer": "6",
+      "explain": "Ghế 1: 3 cách, ghế 2: 2, ghế 3: 1.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có bao nhiêu số tự nhiên có 4 chữ số đôi một khác nhau được lập từ 0, 1, 2, 3, 4, 5, 6 và chia hết cho 5?",
+      "expr": "6*5*4+5*5*4",
+      "answer": "220",
+      "explain": "Tận cùng là 0: 6·5·4 = 120 số; tận cùng là 5: hàng nghìn 5 cách (khác 0 và 5), hai hàng còn lại 5·4 = 20 ⇒ 100 số. Tổng 220.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một đội có 6 học sinh. Số cách chọn một đội trưởng và một đội phó (hai người khác nhau) là:",
+      "expr": "6*5",
+      "answer": "30",
+      "explain": "Đội trưởng 6 cách, đội phó 5 cách.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Biển số xe gồm 2 chữ cái (26 chữ) và 4 chữ số, chữ số đầu khác 0. Số biển số có thể là:",
+      "expr": "26*26*9*10*10*10",
+      "answer": "6084000",
+      "explain": "26·26·9·1000.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có bao nhiêu số có ba chữ số mà các chữ số tăng dần từ trái sang phải và lập từ 1, 2, 3, 4?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Mỗi bộ ba chữ số chỉ cho một số: {123, 124, 134, 234}.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một người có 3 áo sơ mi, 2 áo phông, 4 quần. Số cách chọn một bộ gồm một áo (sơ mi hoặc phông) và một quần là:",
+      "expr": "(3+2)*4",
+      "answer": "20",
+      "explain": "Chọn áo 5 cách, quần 4 cách.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Có bao nhiêu số tự nhiên có 3 chữ số đôi một khác nhau mà có mặt chữ số 5?",
+      "expr": "9*8+2*8*8",
+      "answer": "200",
+      "explain": "Số 5 ở hàng trăm: 9·8 = 72 số. Số 5 ở hàng chục hoặc hàng đơn vị (2 vị trí): hàng trăm 8 cách (khác 0 và 5), vị trí còn lại 8 cách ⇒ 2·64 = 128. Tổng 200.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Có bao nhiêu cách tô màu 4 ô vuông xếp thành hàng ngang bằng 3 màu sao cho hai ô kề nhau khác màu?",
+      "expr": "3*2*2*2",
+      "answer": "24",
+      "explain": "Ô đầu 3 cách, mỗi ô sau 2 cách.",
+      "id": "q18"
+    }
+  ]
+}

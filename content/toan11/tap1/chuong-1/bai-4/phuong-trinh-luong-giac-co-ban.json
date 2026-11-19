@@ -1,0 +1,331 @@
+{
+  "id": "bai-4",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 11, tập 1",
+  "chapter": "Chương I. Hàm số lượng giác và phương trình lượng giác",
+  "lesson": "Bài 4. Phương trình lượng giác cơ bản",
+  "section": "",
+  "bookPage": 31,
+  "requirements": [
+    "Giải các phương trình sin x = m, cos x = m, tan x = m, cot x = m.",
+    "Giải phương trình dạng sin u = sin v, cos u = cos v, và các bài toán thực tế dao động."
+  ],
+  "theory": [
+    {
+      "type": "formula",
+      "content": "sin x = sin α ⇔ x = α + k2π hoặc x = π − α + k2π.   cos x = cos α ⇔ x = ±α + k2π.   tan x = tan α ⇔ x = α + kπ.   cot x = cot α ⇔ x = α + kπ  (k ∈ ℤ)."
+    },
+    {
+      "type": "text",
+      "content": "Phương trình sin x = m và cos x = m có nghiệm khi và chỉ khi |m| ≤ 1; tan x = m, cot x = m luôn có nghiệm với mọi m. Các giá trị đặc biệt: sin x = 0 ⇔ x = kπ; sin x = 1 ⇔ x = π/2 + k2π; sin x = −1 ⇔ x = −π/2 + k2π; cos x = 0 ⇔ x = π/2 + kπ; cos x = 1 ⇔ x = k2π; cos x = −1 ⇔ x = π + k2π."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b4-pt-sin.svg",
+      "caption": "Phương trình sin x = 1/2: hai điểm trên đường tròn lượng giác ứng với x = π/6 và x = 5π/6"
+    },
+    {
+      "type": "text",
+      "content": "Khi gặp phương trình dạng sin u = sin v, cos u = cos v, đưa về công thức nghiệm. Dạng sin u = cos v: dùng cos v = sin(π/2 − v). Dạng sin u = −sin v: dùng −sin v = sin(−v). Khi nghiệm cho trong một đoạn, chọn k nguyên để nghiệm thuộc đoạn đó."
+    },
+    {
+      "type": "method",
+      "title": "Giải phương trình lượng giác cơ bản",
+      "when": "Phương trình dạng sin x = m, cos x = m, tan x = m, cot x = m, hoặc sin(ax + b) = m… với m là số đặc biệt hoặc dùng arcsin.",
+      "steps": [
+        "Kiểm tra điều kiện có nghiệm (|m| ≤ 1 với sin, cos).",
+        "Tìm một góc α sao cho giá trị lượng giác bằng m (α đặc biệt hoặc α = arcsin m, arccos m, arctan m).",
+        "Viết nghiệm theo công thức tổng quát với k ∈ ℤ.",
+        "Với góc phức tạp ax + b, giải ra x bằng cách trừ b rồi chia a (chia cả chu kì k·2π)."
+      ],
+      "notes": [
+        "Công thức sin có hai họ nghiệm; công thức tan chỉ có một họ.",
+        "Nếu đề cho độ, dùng k·360° thay k·2π."
+      ],
+      "sample": {
+        "problem": "Giải phương trình 2 sin x − 1 = 0.",
+        "steps": [
+          "sin x = 1/2 = sin(π/6).",
+          "x = π/6 + k2π hoặc x = π − π/6 + k2π = 5π/6 + k2π (k ∈ ℤ)."
+        ],
+        "answer": "x = π/6 + k2π; x = 5π/6 + k2π"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Phương trình sin u = sin v, cos u = cos v",
+      "when": "Hai vế đều là hàm lượng giác cùng loại, ví dụ sin 2x = sin(x + π/3), cos 3x = cos x; hoặc khác loại (sin = cos).",
+      "steps": [
+        "Nếu khác loại, đổi về cùng loại bằng góc phụ nhau.",
+        "Áp dụng sin u = sin v ⇔ u = v + k2π hoặc u = π − v + k2π; cos u = cos v ⇔ u = ±v + k2π.",
+        "Giải mỗi phương trình bậc nhất theo x.",
+        "Gộp hoặc loại nghiệm trùng nếu cần."
+      ],
+      "notes": [
+        "tan u = tan v cần thêm điều kiện cos u ≠ 0, cos v ≠ 0.",
+        "Họ nghiệm có thể gộp bằng cách thay k theo chu kì nhỏ hơn."
+      ],
+      "sample": {
+        "problem": "Giải cos 3x = cos x.",
+        "steps": [
+          "3x = x + k2π hoặc 3x = −x + k2π.",
+          "x = kπ hoặc x = kπ/2.",
+          "Họ x = kπ nằm trong họ x = kπ/2 nên nghiệm là x = kπ/2."
+        ],
+        "answer": "x = kπ/2"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Ứng dụng: dao động điều hoà, quỹ đạo",
+      "when": "Đề cho phương trình x(t) = A cos(ωt + φ) và hỏi thời điểm vật qua vị trí cân bằng, số lần qua một vị trí trong một khoảng thời gian.",
+      "steps": [
+        "Đặt điều kiện cho vị trí (ví dụ x = 0 ⇒ cos(ωt + φ) = 0).",
+        "Giải phương trình lượng giác cơ bản.",
+        "Chọn nghiệm t trong khoảng thời gian đề cho (cho k chạy các số nguyên).",
+        "Đếm số nghiệm thoả mãn."
+      ],
+      "notes": [
+        "Một chu kì T vật qua vị trí cân bằng 2 lần.",
+        "Kiểm tra mốc đầu và cuối khoảng."
+      ],
+      "sample": {
+        "problem": "x = 2 cos(πt/3) cm. Trong 6 giây, vật qua vị trí cân bằng bao nhiêu lần?",
+        "steps": [
+          "Chu kì T = 2π/(π/3) = 6 s.",
+          "Trong 1 chu kì qua vị trí cân bằng 2 lần.",
+          "Vậy 2 lần."
+        ],
+        "answer": "2 lần"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Giải 2 sin x − 1 = 0. Nghiệm dạng x = π/6 + k2π và x = mπ/6 + k2π; tìm m.",
+      "steps": [
+        "sin x = 1/2.",
+        "x = π − π/6 = 5π/6, nên m = 5."
+      ],
+      "expr": "6-1",
+      "answer": "5"
+    },
+    {
+      "problem": "Giải cos x = −1/2 trên (0; π). Nghiệm là x = nπ/3; tìm n.",
+      "steps": [
+        "cos x = −1/2 = cos(2π/3).",
+        "Trong (0; π) có x = 2π/3, n = 2."
+      ],
+      "expr": "2",
+      "answer": "2"
+    },
+    {
+      "problem": "Giải tan x = 1. Nghiệm x = π/m + kπ; tìm m.",
+      "steps": [
+        "tan(π/4) = 1.",
+        "x = π/4 + kπ, m = 4."
+      ],
+      "expr": "4",
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phương trình sin x = 1/2 có tập nghiệm:",
+      "choices": [
+        "x = π/6 + k2π hoặc x = 5π/6 + k2π",
+        "x = π/3 + k2π hoặc x = 2π/3 + k2π",
+        "x = ±π/6 + k2π",
+        "x = π/6 + kπ"
+      ],
+      "answer": 0,
+      "explain": "sin x = sin(π/6) nên x = π/6 + k2π hoặc x = π − π/6 + k2π.",
+      "wrong_explain": {
+        "1": "Hai họ này tương ứng với sin x = √3/2.",
+        "2": "Họ ±α + k2π là nghiệm của cos x = cos α.",
+        "3": "Họ α + kπ là nghiệm của tan x = tan α."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Số nghiệm của phương trình cos x = 0 trên đoạn [0; 2π] là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "cos x = 0 ⇔ x = π/2 + kπ; trên [0; 2π] có π/2 và 3π/2.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Số nghiệm của phương trình tan x = 0 trên đoạn [0; 2π] là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "tan x = 0 ⇔ x = kπ; trên [0; 2π] có 0, π, 2π.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phương trình cos x = 2:",
+      "choices": [
+        "Vô nghiệm",
+        "Có nghiệm x = 0",
+        "Có nghiệm x = π",
+        "Có hai họ nghiệm"
+      ],
+      "answer": 0,
+      "explain": "|cos x| ≤ 1 nên cos x = 2 vô nghiệm.",
+      "wrong_explain": {
+        "1": "cos 0 = 1, không phải 2.",
+        "2": "cos π = −1.",
+        "3": "Phương trình vô nghiệm nên không có họ nghiệm nào."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phương trình sin x = −1 có nghiệm x = −π/m + k2π; giá trị m là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "sin x = −1 ⇔ x = −π/2 + k2π.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phương trình 2 sin x − 1 = 0 có hai họ nghiệm: x = π/6 + k2π và x = mπ/6 + k2π. Tìm m:",
+      "expr": "6-1",
+      "answer": "5",
+      "explain": "x = π − π/6 = 5π/6.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số nghiệm của cos x = −1/2 trong đoạn [0; 2π] là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "x = 2π/3 và x = 4π/3.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phương trình tan x = √3 có nghiệm x = π/m + kπ; giá trị m là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "tan(π/3) = √3.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phương trình cot x = 1 có nghiệm x = π/m + kπ; giá trị m là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "cot(π/4) = 1.",
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phương trình cos 3x = cos x có nghiệm x = kπ/m. Giá trị m là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "3x = ±x + k2π nên x = kπ hoặc x = kπ/2; gộp được x = kπ/2.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nghiệm dương nhỏ nhất của sin 2x = 1/2 là x = π/m; m là:",
+      "expr": "12",
+      "answer": "12",
+      "explain": "2x = π/6 nên x = π/12.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phương trình sin 2x = cos x có nghiệm x = π/2 + kπ và x = π/m + k2π (chọn nghiệm nhỏ nhất dương của họ thứ hai). Tìm m:",
+      "expr": "6",
+      "answer": "6",
+      "explain": "cos x (2 sin x − 1) = 0: sin x = 1/2 nên x = π/6 + k2π.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Số nghiệm của sin x = 1/2 trên đoạn [0; 4π] là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Mỗi chu kì 2π có 2 nghiệm, trên 4π có 4 nghiệm.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "x = 2 cos(πt/3) cm. Chu kì (giây):",
+      "expr": "2*3",
+      "answer": "6",
+      "explain": "T = 2π/(π/3) = 6.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với x = 2 cos(πt/3), vật qua vị trí cân bằng bao nhiêu lần trong 6 giây?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Mỗi chu kì (6 s) vật qua vị trí cân bằng 2 lần.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Phương trình sin x = 1/2 có bao nhiêu nghiệm trong khoảng (−π; π)?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "x = π/6 và x = 5π/6; hai nghiệm.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Quả đạn bắn với v₀ = 500 m/s hợp góc α = 45°: tầm xa R = v₀² sin 2α / g (g = 10). Tầm xa (m) là:",
+      "expr": "500*500*1/10",
+      "answer": "25000",
+      "explain": "sin 90° = 1; R = 250000/10 = 25 000 m.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phương trình sin x = sin(2x) có số họ nghiệm là:",
+      "choices": [
+        "2 họ: x = k2π và x = π/3 + k2π/3 (gộp)",
+        "Vô nghiệm",
+        "1 họ",
+        "4 họ"
+      ],
+      "answer": 0,
+      "explain": "x = 2x + k2π ⇒ x = −k2π; x = π − 2x + k2π ⇒ x = π/3 + k2π/3.",
+      "wrong_explain": {
+        "1": "Hai vế bằng nhau tại x = 0 nên có nghiệm.",
+        "2": "Có hai họ khác nhau.",
+        "3": "Chỉ có hai họ chứ không phải bốn."
+      },
+      "id": "q18"
+    }
+  ]
+}

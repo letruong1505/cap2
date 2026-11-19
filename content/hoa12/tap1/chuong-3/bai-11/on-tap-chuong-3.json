@@ -1,0 +1,201 @@
+{
+  "id": "bai-11",
+  "grade": 12,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Hóa học 12",
+  "chapter": "Chương 3. Hợp chất chứa nitrogen",
+  "lesson": "Bài 11. Ôn tập chương 3",
+  "section": "",
+  "bookPage": 49,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Amine: dẫn xuất của ammonia, phân loại theo bậc (1, 2, 3) và theo gốc (alkylamine, arylamine); tính base yếu, alkylamine làm quỳ tím xanh, aniline không; methylamine, ethylamine tạo phức với Cu(OH)₂; alkylamine bậc một tác dụng với HNO₂ tạo N₂; aniline thế dễ với nước bromine tạo kết tủa trắng."
+    },
+    {
+      "type": "text",
+      "content": "Amino acid: hợp chất tạp chức có –NH₂ và –COOH, tồn tại dạng ion lưỡng cực, có tính lưỡng tính, phản ứng ester hóa, trùng ngưng. Peptide: các đơn vị α-amino acid nối qua liên kết peptide –CO–NH–; thủy phân; từ tripeptide có phản ứng biuret."
+    },
+    {
+      "type": "text",
+      "content": "Protein: một hay nhiều chuỗi polypeptide; thủy phân tạo α-amino acid; màu biuret (tím), với HNO₃ đặc cho màu vàng; đông tụ bởi nhiệt, acid, base, ion kim loại nặng. Enzyme (phần lớn là protein) xúc tác chọn lọc cho phản ứng sinh hóa."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho 7,6 g hỗn hợp gồm methylamine (M = 31) và ethylamine (M = 45) có số mol bằng nhau tác dụng hết với HCl. Tính số mol HCl đã phản ứng.",
+      "steps": [
+        "Gọi số mol mỗi amine là x: 31x + 45x = 7,6 ⇒ x = 0,1 mol.",
+        "Mỗi amine đơn chức phản ứng 1 : 1 với HCl nên n(HCl) = 0,1 + 0,1 = 0,2 mol."
+      ],
+      "expr": "7.6/76*2",
+      "answer": "0.2"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số amine bậc hai là đồng phân của C₃H₉N là:",
+      "choices": [
+        "0",
+        "2",
+        "1",
+        "3"
+      ],
+      "answer": 2,
+      "explain": "Amine bậc hai C₃H₉N: CH₃NHC₂H₅.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Có N-methylethanamine.",
+        "1": "Chỉ có 1 amine bậc hai.",
+        "3": "Chỉ có 1 amine bậc hai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phát biểu nào sau đây KHÔNG đúng?",
+      "choices": [
+        "Thủy phân hoàn toàn polypeptide thu được các α-amino acid",
+        "Protein có thể bị đông tụ dưới tác dụng của nhiệt, acid hoặc base",
+        "Protein tác dụng với HNO₃ đặc tạo sản phẩm rắn màu vàng",
+        "Protein tác dụng với Cu(OH)₂ trong môi trường kiềm tạo dung dịch màu xanh lam"
+      ],
+      "answer": 3,
+      "explain": "Phản ứng biuret của protein tạo màu tím, không phải xanh lam.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đúng.",
+        "1": "Đúng.",
+        "2": "Đúng."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trong các phát biểu sau, số phát biểu đúng là bao nhiêu? (1) Dung dịch ethylamine và dung dịch aniline đều làm xanh quỳ tím. (2) Methylamine dư hòa tan kết tủa Cu(OH)₂ tạo phức xanh lam. (3) Methylamine tác dụng với FeCl₃ tạo kết tủa nâu đỏ. (4) Aniline tạo kết tủa trắng với nước bromine.",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "1"
+      ],
+      "answer": 1,
+      "explain": "(1) sai vì dung dịch aniline không làm đổi màu quỳ tím; (2), (3), (4) đúng.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Có ba phát biểu đúng: (2), (3), (4).",
+        "2": "Phát biểu (1) sai.",
+        "3": "Có nhiều hơn một phát biểu đúng."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Thủy phân không hoàn toàn tetrapeptide Ala-Gly-Glu-Val có thể thu được tối đa bao nhiêu peptide (dipeptide và tripeptide)?",
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": 2,
+      "explain": "3 dipeptide (Ala-Gly, Gly-Glu, Glu-Val) và 2 tripeptide (Ala-Gly-Glu, Gly-Glu-Val): tổng 5.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Có thêm hai tripeptide.",
+        "1": "Có 3 dipeptide và 2 tripeptide.",
+        "3": "Chỉ có 5 peptide như vậy."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Chất nào sau đây có phản ứng màu biuret?",
+      "choices": [
+        "Lòng trắng trứng",
+        "Glycine",
+        "Gly-Ala",
+        "Aniline"
+      ],
+      "answer": 0,
+      "explain": "Protein có nhiều liên kết peptide nên cho phản ứng màu biuret.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Glycine không có liên kết peptide.",
+        "2": "Dipeptide không có phản ứng biuret.",
+        "3": "Aniline không có phản ứng biuret."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho 0,1 mol aniline tác dụng với nước bromine dư thu được bao nhiêu gam kết tủa 2,4,6-tribromoaniline (M = 330)?",
+      "expr": "0.1*330",
+      "answer": "33",
+      "explain": "n(kết tủa) = n(aniline) = 0,1 mol; m = 33 g.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho 0,1 mol alanine (M = 89) phản ứng với NaOH dư. Số mol NaOH phản ứng là bao nhiêu? (nhập số thập phân)",
+      "expr": "0.1",
+      "answer": "0.1",
+      "explain": "Alanine có một nhóm –COOH nên phản ứng 1 : 1 với NaOH.",
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 3,1 g methylamine (M = 31) tác dụng hết với HCl. Khối lượng muối thu được là bao nhiêu gam? (M muối CH₃NH₃Cl = 67,5)",
+      "expr": "3.1/31*67.5",
+      "answer": "6.75",
+      "explain": "n = 0,1 mol; m = 0,1 × 67,5 = 6,75 g.",
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 0,1 mol lysine (có 2 nhóm –NH₂, 1 nhóm –COOH) tác dụng với HCl dư. Số mol HCl đã phản ứng là bao nhiêu? (nhập số thập phân)",
+      "expr": "0.1*2",
+      "answer": "0.2",
+      "explain": "Lysine có hai nhóm amino phản ứng với HCl: 0,2 mol.",
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đốt cháy hoàn toàn 0,1 mol một amine no, đơn chức, mạch hở thu được 0,2 mol CO₂. Công thức của amine có bao nhiêu nguyên tử hydrogen?",
+      "expr": "7",
+      "answer": "7",
+      "explain": "Số C = 0,2/0,1 = 2; amine no đơn chức CₙH₂ₙ₊₃N nên C₂H₇N có 7 H.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 17,8 g alanine (M = 89) tác dụng hết với NaOH. Khối lượng muối H₂NCH(CH₃)COONa (M = 111) thu được là bao nhiêu gam?",
+      "expr": "17.8/89*111",
+      "answer": "22.2",
+      "explain": "n = 0,2 mol; m = 0,2 × 111 = 22,2 g.",
+      "id": "q11"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Đun nóng 0,1 mol tripeptide Gly-Gly-Gly (M = 189) với dung dịch HCl dư thu được bao nhiêu gam muối ClH₃NCH₂COOH (M = 111,5)?",
+      "expr": "0.1*3*111.5",
+      "answer": "33.45",
+      "explain": "0,1 mol tripeptide → 0,3 mol Gly → 0,3 mol muối; m = 0,3 × 111,5 = 33,45 g.",
+      "id": "q12"
+    }
+  ]
+}

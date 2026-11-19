@@ -1,0 +1,207 @@
+{
+  "id": "bai-6",
+  "grade": 10,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 10",
+  "chapter": "Chương 1. Thành phần hoá học của tế bào",
+  "lesson": "Bài 6. Thực hành: Nhận biết một số phân tử sinh học",
+  "section": "",
+  "bookPage": 41,
+  "requirements": [
+    "Tiến hành được thí nghiệm nhận biết đường đơn, tinh bột, protein và lipid trong tế bào.",
+    "Áp dụng được nguyên lí của các phản ứng hoá học đặc thù để nhận biết từng loại phân tử sinh học.",
+    "Có kĩ năng thao tác an toàn trong phòng thí nghiệm: pha hoá chất, sử dụng dụng cụ và đèn cồn."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Mục tiêu: nhận biết đường glucose, lipid và protein bằng các phép thử đặc thù. Dụng cụ: ống nghiệm, bình thuỷ tinh chịu nhiệt, pipet, đèn cồn, kẹp ống nghiệm. Hoá chất: thuốc thử Benedict, cồn tuyệt đối, NaOH loãng, CuSO₄ 1%, dung dịch glucose, albumin 1% (hoặc lòng trắng trứng), dầu ăn."
+    },
+    {
+      "type": "text",
+      "content": "1. Nhận biết đường glucose (Benedict): dung dịch Benedict có màu xanh. Khi đun nóng cùng glucose, Cu²⁺ bị khử thành Cu₂O tạo kết tủa đỏ gạch. Quy trình: trộn dung dịch glucose với thuốc thử Benedict theo thể tích bằng nhau; đun cách thuỷ hoặc hơ ống nghiệm trên ngọn lửa, không để sôi. Quan sát: màu xanh lục → vàng → cam, xuất hiện kết tủa đỏ gạch dưới đáy."
+    },
+    {
+      "type": "text",
+      "content": "2. Nhận biết lipid (phép thử nhũ tương): lipid không tan trong nước nhưng tan trong cồn. Hoà tan dầu ăn trong 5 mL cồn tuyệt đối, rót vào nước; xuất hiện huyền phù trắng sữa (nhũ tương). Nếu không có lipid, cồn hoà tan trong nước và dung dịch trong suốt."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b6-bang-nhan-biet.svg",
+      "caption": "Tóm tắt phép thử nhận biết các phân tử sinh học"
+    },
+    {
+      "type": "text",
+      "content": "3. Nhận biết protein (phép thử Biuret): liên kết peptide chứa nitrogen tạo phức chất với Cu²⁺ trong môi trường kiềm, cho màu xanh tím. Quy trình: cho albumin 1% (hoặc lòng trắng trứng) và NaOH loãng vào ống nghiệm, thêm CuSO₄ 1%; dung dịch chuyển từ xanh sang xanh tím sau vài phút."
+    },
+    {
+      "type": "text",
+      "content": "Lưu ý an toàn: không để dung dịch sôi bắn vào người; cẩn thận khi dùng đèn cồn; rửa tay sau thí nghiệm; thu gom hoá chất đúng nơi quy định."
+    },
+    {
+      "type": "text",
+      "content": "Báo cáo thực hành gồm: mục đích, cách tiến hành, kết quả, giải thích và kết luận, trả lời câu hỏi."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Mô tả hiện tượng và giải thích khi nhận biết đường glucose bằng thuốc thử Benedict.",
+      "steps": [
+        "Hiện tượng: màu xanh lục chuyển sang vàng, cam và có kết tủa đỏ gạch dưới đáy ống nghiệm.",
+        "Giải thích: glucose khử Cu²⁺ thành Cu₂O (đỏ gạch) trong môi trường kiềm khi đun nóng."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "So sánh quy trình nhận biết protein và lipid. Vì sao quy trình khác nhau?",
+      "steps": [
+        "Protein: dùng thuốc thử Biuret (NaOH và CuSO₄) ở nhiệt độ thường, dựa trên liên kết peptide.",
+        "Lipid: dùng cồn để hoà tan rồi cho vào nước, dựa trên tính kị nước; mỗi phép thử dựa vào tính chất hoá học khác nhau của từng nhóm phân tử."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thuốc thử dùng để nhận biết đường glucose trong thực hành là:",
+      "choices": [
+        "Benedict",
+        "Biuret",
+        "cồn tuyệt đối",
+        "iodine"
+      ],
+      "answer": 0,
+      "explain": "Benedict cho kết tủa đỏ gạch khi đun nóng với glucose.",
+      "wrong_explain": {
+        "1": "Biuret nhận biết protein.",
+        "2": "Cồn dùng để hoà tan lipid.",
+        "3": "Iodine nhận biết tinh bột."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phép thử Biuret dùng để nhận biết:",
+      "choices": [
+        "protein",
+        "đường đơn",
+        "lipid",
+        "tinh bột"
+      ],
+      "answer": 0,
+      "explain": "Liên kết peptide tạo màu xanh tím với Cu²⁺ trong môi trường kiềm.",
+      "wrong_explain": {
+        "1": "Benedict dùng cho đường đơn.",
+        "2": "Lipid nhận biết bằng phép thử nhũ tương.",
+        "3": "Tinh bột nhận biết bằng iodine."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi nhận biết lipid, hiện tượng nào cho thấy có lipid trong mẫu?",
+      "choices": [
+        "xuất hiện huyền phù trắng sữa khi nhỏ hỗn hợp cồn vào nước",
+        "dung dịch trong suốt như nước",
+        "xuất hiện kết tủa đỏ gạch",
+        "dung dịch chuyển xanh tím"
+      ],
+      "answer": 0,
+      "explain": "Nhũ tương trắng sữa là dấu hiệu của lipid.",
+      "wrong_explain": {
+        "1": "Dung dịch trong suốt cho thấy không có lipid.",
+        "2": "Kết tủa đỏ gạch là dấu hiệu của đường khử.",
+        "3": "Màu xanh tím là dấu hiệu của protein."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong phép thử Biuret, vì sao cần thêm sodium citrate hoặc sodium potassium tartrate?",
+      "choices": [
+        "để ngăn Cu²⁺ kết tủa với nhóm hydroxyl",
+        "để làm tăng nhiệt độ phản ứng",
+        "để tạo màu đỏ gạch",
+        "để hoà tan dầu"
+      ],
+      "answer": 0,
+      "explain": "Các chất này giữ Cu²⁺ trong dung dịch.",
+      "wrong_explain": {
+        "1": "Không liên quan đến nhiệt độ.",
+        "2": "Không tạo màu đỏ gạch.",
+        "3": "Không hoà tan dầu."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao khi đun dung dịch Benedict với glucose lại tạo kết tủa đỏ gạch?",
+      "choices": [
+        "glucose khử Cu²⁺ thành Cu₂O",
+        "glucose tạo liên kết peptide",
+        "glucose bị phân huỷ thành lipid",
+        "glucose tạo nhũ tương"
+      ],
+      "answer": 0,
+      "explain": "Phản ứng khử Cu²⁺ tạo Cu₂O màu đỏ gạch.",
+      "wrong_explain": {
+        "1": "Liên kết peptide thuộc protein.",
+        "2": "Glucose không tạo lipid trong phép thử này.",
+        "3": "Nhũ tương là dấu hiệu lipid."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi làm thí nghiệm, bước nào cần thận trọng nhất để tránh bỏng và hoả hoạn?",
+      "choices": [
+        "đun ống nghiệm bằng đèn cồn, không để dung dịch sôi bắn ra",
+        "để dung dịch sôi mạnh để phản ứng nhanh hơn",
+        "đốt cồn tuyệt đối gần ngọn lửa",
+        "đổ hoá chất thừa vào bồn rửa tay"
+      ],
+      "answer": 0,
+      "explain": "Đun đúng cách và tránh để dung dịch sôi bắn.",
+      "wrong_explain": {
+        "1": "Đun sôi mạnh gây nguy hiểm.",
+        "2": "Cồn dễ cháy, không để gần lửa.",
+        "3": "Hoá chất thừa phải thu gom đúng nơi quy định."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nếu mẫu thực phẩm không đổi màu khi thử với Biuret, kết luận hợp lí nhất là:",
+      "choices": [
+        "mẫu không chứa protein hoặc hàm lượng rất thấp",
+        "mẫu chứa nhiều đường",
+        "mẫu chứa nhiều lipid",
+        "mẫu chứa nhiều nước"
+      ],
+      "answer": 0,
+      "explain": "Phép thử Biuret chỉ phát hiện protein.",
+      "wrong_explain": {
+        "1": "Benedict mới dùng để nhận biết đường.",
+        "2": "Lipid có phép thử riêng.",
+        "3": "Nước không được nhận biết bằng Biuret."
+      },
+      "id": "q07"
+    }
+  ]
+}

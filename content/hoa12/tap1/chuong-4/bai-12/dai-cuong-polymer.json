@@ -1,0 +1,274 @@
+{
+  "id": "bai-12",
+  "grade": 12,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Hóa học 12",
+  "chapter": "Chương 4. Polymer",
+  "lesson": "Bài 12. Đại cương về polymer",
+  "section": "",
+  "bookPage": 51,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Polymer là những hợp chất có phân tử khối lớn do nhiều đơn vị nhỏ (gọi là mắt xích) liên kết với nhau tạo nên. Monomer là những phân tử nhỏ phản ứng với nhau tạo nên polymer. Ví dụ: nCH₂=CH₂ → (–CH₂–CH₂–)ₙ (ethylene → polyethylene, PE); n là hệ số polymer hóa (số mắt xích)."
+    },
+    {
+      "type": "text",
+      "content": "Danh pháp: các polymer đơn giản được gọi theo \"poly\" + tên monomer (đặt trong ngoặc đơn nếu tên monomer gồm hai cụm từ): polyethylene (PE), polypropylene (PP), polystyrene (PS), poly(vinyl chloride) (PVC), polybuta-1,3-diene, polyisoprene, poly(methyl methacrylate), poly(phenol formaldehyde) (PPF); capron; nylon-6,6."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất vật lí: hầu hết polymer là chất rắn, không bay hơi, không nóng chảy hoặc nóng chảy ở khoảng nhiệt độ rộng. Polymer nóng chảy khi đun gọi là polymer nhiệt dẻo; polymer bị phân hủy bởi nhiệt mà không nóng chảy gọi là polymer nhiệt rắn. Hầu hết không tan trong nước, một số tan trong dung môi hữu cơ. Tùy cấu tạo mà polymer có tính dẻo (PE, PP), đàn hồi (polyisoprene, polybuta-1,3-diene), dai bền, kéo sợi được (capron, nylon-6,6), cách điện (PE, PVC) hoặc bán dẫn."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất hóa học: (1) Cắt mạch: polystyrene nhiệt phân thành styrene; polyamide (capron, nylon-6,6), tinh bột, cellulose bị thủy phân (acid, base hoặc enzyme). (2) Tăng mạch: lưu hóa cao su (đun cao su với lưu huỳnh tạo cầu nối disulfide –S–S– giữa các mạch, tạo mạng không gian). (3) Giữ nguyên mạch: phản ứng ở nhóm thế hoặc cộng vào liên kết đôi mà không đổi độ dài mạch, ví dụ thủy phân poly(vinyl acetate) trong NaOH tạo poly(vinyl alcohol)."
+    },
+    {
+      "type": "text",
+      "content": "Phương pháp tổng hợp: trùng hợp là quá trình kết hợp nhiều phân tử nhỏ giống nhau hoặc tương tự nhau thành polymer; monomer thường có liên kết đôi (CH₂=CHR) hoặc vòng kém bền (caprolactam). Trùng ngưng là quá trình kết hợp nhiều phân tử nhỏ thành polymer đồng thời giải phóng phân tử nhỏ (thường là H₂O); monomer phải có ít nhất hai nhóm chức có khả năng phản ứng."
+    },
+    {
+      "type": "formula",
+      "content": "nHOOC[CH₂]₄COOH + nH₂N[CH₂]₆NH₂ → (–OC[CH₂]₄CO–NH[CH₂]₆NH–)ₙ + 2nH₂O (nylon-6,6)"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Polyethylene có phân tử khối trung bình 28 000. Tính hệ số polymer hóa n (M ethylene = 28).",
+      "steps": [
+        "Mỗi mắt xích –CH₂–CH₂– có M = 28.",
+        "n = 28 000/28.",
+        "n = 1000."
+      ],
+      "expr": "28000/28",
+      "answer": "1000"
+    },
+    {
+      "problem": "Nylon-6,6 (mắt xích C₁₂H₂₂N₂O₂, M = 226) có phân tử khối 22 600. Tính số mắt xích.",
+      "steps": [
+        "n = 22 600/226.",
+        "n = 100."
+      ],
+      "expr": "22600/226",
+      "answer": "100"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Polymer là những hợp chất:",
+      "choices": [
+        "Có phân tử khối nhỏ, do một mắt xích tạo nên",
+        "Chỉ gồm hai phân tử monomer ghép lại",
+        "Không chứa liên kết cộng hóa trị",
+        "Có phân tử khối rất lớn do nhiều mắt xích liên kết với nhau"
+      ],
+      "answer": 3,
+      "explain": "Polymer = nhiều mắt xích liên kết với nhau.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Polymer có phân tử khối lớn gồm nhiều mắt xích.",
+        "1": "Đó là dimer, không phải polymer.",
+        "2": "Polymer chứa liên kết cộng hóa trị."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Monomer dùng để điều chế polystyrene (PS) là:",
+      "choices": [
+        "Ethylene",
+        "Styrene",
+        "Vinyl chloride",
+        "Propylene"
+      ],
+      "answer": 1,
+      "explain": "PS được trùng hợp từ styrene C₆H₅CH=CH₂.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Ethylene tạo PE.",
+        "2": "Vinyl chloride tạo PVC.",
+        "3": "Propylene tạo PP."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Polymer nào sau đây được điều chế bằng phản ứng trùng ngưng?",
+      "choices": [
+        "Nylon-6,6",
+        "PVC",
+        "PE",
+        "Polystyrene"
+      ],
+      "answer": 0,
+      "explain": "Nylon-6,6 tạo từ adipic acid và hexamethylenediamine, giải phóng nước.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "PVC điều chế bằng trùng hợp.",
+        "2": "PE điều chế bằng trùng hợp.",
+        "3": "PS điều chế bằng trùng hợp."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Điều kiện của monomer để tham gia phản ứng trùng ngưng là:",
+      "choices": [
+        "Có liên kết đôi trong phân tử",
+        "Có một nhóm chức duy nhất",
+        "Có ít nhất hai nhóm chức có khả năng phản ứng",
+        "Phải là chất khí"
+      ],
+      "answer": 2,
+      "explain": "Hai nhóm chức giúp các phân tử nối thành mạch dài và tách nước.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Điều kiện của phản ứng trùng hợp.",
+        "1": "Cần ít nhất hai nhóm chức.",
+        "3": "Không liên quan trạng thái."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Phản ứng lưu hóa cao su thuộc loại phản ứng:",
+      "choices": [
+        "Cắt mạch polymer",
+        "Giữ nguyên mạch polymer",
+        "Trùng ngưng",
+        "Tăng mạch polymer"
+      ],
+      "answer": 3,
+      "explain": "Lưu huỳnh tạo cầu nối –S–S– giữa các mạch tạo mạng không gian.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Cắt mạch là phân cắt thành monomer hoặc mạch ngắn.",
+        "1": "Lưu hóa tạo cầu nối làm mạch tăng lên.",
+        "2": "Lưu hóa không phải tổng hợp polymer từ monomer."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Phản ứng thủy phân poly(vinyl acetate) trong NaOH tạo poly(vinyl alcohol) là phản ứng:",
+      "choices": [
+        "Cắt mạch polymer",
+        "Giữ nguyên mạch polymer",
+        "Tăng mạch polymer",
+        "Trùng hợp"
+      ],
+      "answer": 1,
+      "explain": "Chỉ nhóm thế –OCOCH₃ bị đổi thành –OH, mạch chính giữ nguyên.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Độ dài mạch carbon không đổi.",
+        "2": "Không tạo cầu nối giữa các mạch.",
+        "3": "Đây không phải phản ứng trùng hợp."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tính chất nào của PVC làm nó được dùng làm vỏ bọc dây điện?",
+      "choices": [
+        "Tính đàn hồi cao",
+        "Tính dẫn điện tốt",
+        "Tính cách điện",
+        "Tính tan trong nước"
+      ],
+      "answer": 2,
+      "explain": "PVC cách điện và bền nên làm vỏ cáp.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "PVC không đàn hồi như cao su.",
+        "1": "PVC không dẫn điện.",
+        "3": "PVC không tan trong nước."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Polyethylene có phân tử khối 28 000. Hệ số polymer hóa n là bao nhiêu? (mắt xích M = 28)",
+      "expr": "28000/28",
+      "answer": "1000",
+      "explain": "n = 28 000/28 = 1000.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "PVC có phân tử khối 35 000 (mắt xích –CH₂–CHCl–, M = 62,5). Hệ số polymer hóa n là bao nhiêu?",
+      "expr": "35000/625*10",
+      "answer": "560",
+      "explain": "n = 35 000/62,5 = 560.",
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nylon-6,6 có phân tử khối 22 600 (mắt xích M = 226). Số mắt xích là bao nhiêu?",
+      "expr": "22600/226",
+      "answer": "100",
+      "explain": "n = 22 600/226 = 100.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Để điều chế 1 tấn PE với hiệu suất 80% cần bao nhiêu kg ethylene?",
+      "expr": "1000*100/80",
+      "answer": "1250",
+      "explain": "m = 1000/0,8 = 1250 kg.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Điều chế nylon-6,6 từ adipic acid (M = 146) và hexamethylenediamine (M = 116). Để thu 22,6 kg nylon-6,6 với hiệu suất 100% cần bao nhiêu kg hexamethylenediamine?",
+      "expr": "22.6/226*116",
+      "answer": "11.6",
+      "explain": "Mắt xích 226 ứng với 1 mol amine (116): 22,6/226 × 116 = 11,6 kg.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Từ 14,6 kg adipic acid (M = 146) và lượng dư hexamethylenediamine, hiệu suất 80%, khối lượng nylon-6,6 (mắt xích M = 226) thu được là bao nhiêu kg?",
+      "expr": "14.6/146*226*80/100",
+      "answer": "18.08",
+      "explain": "Lí thuyết 22,6 kg; thực tế 22,6 × 0,8 = 18,08 kg.",
+      "id": "q13"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Cho các polymer: PE, PVC, PS, nylon-6,6, capron, PPF, poly(methyl methacrylate). Số polymer được điều chế bằng phản ứng trùng ngưng là:",
+      "choices": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "answer": 0,
+      "explain": "Nylon-6,6 (adipic acid + diamine) và PPF (phenol + formaldehyde) tạo bằng trùng ngưng; các polymer còn lại bằng trùng hợp.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Có nylon-6,6 và PPF.",
+        "2": "Capron thường điều chế bằng trùng hợp mở vòng caprolactam.",
+        "3": "Chỉ nylon-6,6 và PPF là trùng ngưng."
+      },
+      "id": "q14"
+    }
+  ]
+}

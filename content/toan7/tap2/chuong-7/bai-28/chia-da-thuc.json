@@ -1,0 +1,122 @@
+{
+  "id": "t7-tap2-chia-da-thuc",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 2",
+  "chapter": "Chương VII. Biểu thức đại số và đa thức một biến",
+  "lesson": "Bài 28. Phép chia đa thức một biến",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Chia đơn thức cho đơn thức: với b ≠ 0 và m ≥ n, ta có axᵐ : bxⁿ = (a : b)xᵐ⁻ⁿ."
+    },
+    {
+      "type": "text",
+      "content": "Chia đa thức cho đơn thức: chia từng hạng tử của đa thức cho đơn thức rồi cộng các kết quả."
+    },
+    {
+      "type": "text",
+      "content": "Chia đa thức A cho đa thức B (B ≠ 0): đặt tính chia tương tự chia số tự nhiên, được thương Q và dư R sao cho A = B · Q + R, trong đó R = 0 hoặc bậc của R nhỏ hơn bậc của B. Nếu R = 0 thì A chia hết cho B."
+    },
+    {
+      "type": "formula",
+      "content": "Ví dụ: (x² + 3x + 2) : (x + 1) = x + 2 vì (x + 1)(x + 2) = x² + 3x + 2."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính 12x⁵ : 4x². Hệ số của thương là bao nhiêu?",
+      "expr": "12/4",
+      "steps": [
+        "12x⁵ : 4x² = (12 : 4) · x⁵⁻² = 3x³.",
+        "Hệ số của thương là 3."
+      ],
+      "answer": "3"
+    },
+    {
+      "problem": "Chia x² + 5x + 6 cho x + 2. Tính giá trị của thương tại x = 4.",
+      "expr": "4+3",
+      "steps": [
+        "x² : x = x; nhân lại x · (x + 2) = x² + 2x; lấy (x² + 5x + 6) − (x² + 2x) = 3x + 6.",
+        "3x : x = 3; nhân lại 3 · (x + 2) = 3x + 6; lấy (3x + 6) − (3x + 6) = 0.",
+        "Thương là x + 3, dư 0. Tại x = 4, thương bằng 4 + 3 = 7."
+      ],
+      "answer": "7"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính 8x⁴ : 2x. Hệ số của thương là bao nhiêu?",
+      "expr": "8/2",
+      "answer": "4",
+      "explain": "8x⁴ : 2x = (8 : 2) · x⁴⁻¹ = 4x³, hệ số là 4."
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Thương của phép chia 6x⁵ : 3x² có dạng 2xⁿ. Tìm n.",
+      "expr": "5-2",
+      "answer": "3",
+      "explain": "Khi chia hai lũy thừa cùng biến, trừ số mũ: 5 − 2 = 3, nên 6x⁵ : 3x² = 2x³."
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính (−15x³) : (5x³).",
+      "expr": "-15/5",
+      "answer": "-3",
+      "explain": "(−15 : 5) · x³⁻³ = −3 · x⁰ = −3."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (6x³ − 9x² + 3x) : 3x rồi tìm giá trị của thương tại x = 2.",
+      "expr": "2*2*2-3*2+1",
+      "answer": "3",
+      "explain": "Chia từng hạng tử cho 3x: 6x³ : 3x = 2x²; −9x² : 3x = −3x; 3x : 3x = 1. Thương là 2x² − 3x + 1; tại x = 2 bằng 8 − 6 + 1 = 3."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chia x² − 4x + 3 cho x − 1. Hệ số tự do của thương là bao nhiêu?",
+      "expr": "-3",
+      "answer": "-3",
+      "explain": "x² : x = x; x(x − 1) = x² − x; (x² − 4x + 3) − (x² − x) = −3x + 3. Tiếp: −3x : x = −3; −3(x − 1) = −3x + 3; dư 0. Thương là x − 3, hệ số tự do là −3."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chia x² + 1 cho x − 1 được thương x + 1 và dư R. Tìm R.",
+      "expr": "1-(-1)",
+      "answer": "2",
+      "explain": "x² : x = x; x(x − 1) = x² − x; (x² + 1) − (x² − x) = x + 1. Tiếp: x : x = 1; 1 · (x − 1) = x − 1; (x + 1) − (x − 1) = 2. Vậy R = 2, tức x² + 1 = (x − 1)(x + 1) + 2."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chia 2x² + 3x − 2 cho x + 2 được thương ax + b. Tính a + b.",
+      "expr": "2+(-1)",
+      "answer": "1",
+      "explain": "2x² : x = 2x; 2x(x + 2) = 2x² + 4x; (2x² + 3x − 2) − (2x² + 4x) = −x − 2. Tiếp: −x : x = −1; −1 · (x + 2) = −x − 2; dư 0. Thương là 2x − 1 nên a = 2, b = −1, a + b = 1."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Biết (x − 1)(x² + x + 1) = x³ − 1. Thương của phép chia (x³ − 1) : (x − 1) có giá trị bằng bao nhiêu tại x = 2?",
+      "expr": "2*2+2+1",
+      "answer": "7",
+      "explain": "Vì x³ − 1 = (x − 1)(x² + x + 1) nên thương là x² + x + 1. Tại x = 2: 4 + 2 + 1 = 7."
+    }
+  ]
+}

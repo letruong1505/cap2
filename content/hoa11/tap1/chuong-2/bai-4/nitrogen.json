@@ -1,0 +1,273 @@
+{
+  "id": "bai-4",
+  "grade": 11,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 11",
+  "chapter": "Chương 2. Nitrogen – Sulfur",
+  "lesson": "Bài 4. Nitrogen",
+  "section": "",
+  "bookPage": 29,
+  "requirements": [
+    "Phát biểu được trạng thái tự nhiên của nitrogen.",
+    "Giải thích được tính trơ của N₂ ở nhiệt độ thường qua năng lượng liên kết; trình bày tính chất hoá học của N₂.",
+    "Giải thích sự tạo và cung cấp nitrate cho đất từ nước mưa; nêu ứng dụng của nitrogen khí và lỏng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nitrogen chiếm khoảng 78,1% thể tích (75,5% khối lượng) khí quyển, là nguyên tố phổ biến nhất ở khí quyển. Trong vỏ Trái Đất có ở mỏ sodium nitrate (diêm tiêu Chile). Nitrogen có trong protein, nucleic acid của mọi sinh vật (khoảng 3% khối lượng cơ thể người). Có hai đồng vị bền ¹⁴N (99,63%) và ¹⁵N (0,37%)."
+    },
+    {
+      "type": "text",
+      "content": "Cấu tạo: nguyên tử N ở ô số 7, nhóm VA, chu kì 2, độ âm điện 3,04, phi kim điển hình, cấu hình lớp ngoài cùng 2s²2p³. Nitrogen tạo hợp chất với số oxi hoá từ −3 đến +5, do đó vừa có tính oxi hoá vừa có tính khử. Phân tử N₂ gồm hai nguyên tử liên kết với nhau bằng liên kết ba (1σ + 2π), năng lượng liên kết rất lớn 945 kJ/mol nên N₂ rất bền, kém hoạt động ở nhiệt độ thường."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b4-so-oxi-hoa-N.svg",
+      "caption": "Số oxi hoá của nitrogen trong một số chất"
+    },
+    {
+      "type": "text",
+      "content": "Tính chất vật lí: chất khí không màu, không mùi, không vị, khó hoá lỏng (−196 °C), tan rất ít trong nước (phân tử không phân cực, lực van der Waals yếu), không duy trì sự cháy và sự hô hấp."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất hoá học: ở nhiệt độ cao, áp suất cao và xúc tác Fe, N₂ tác dụng với H₂ (thể hiện tính oxi hoá): N₂ + 3H₂ ⇌ 2NH₃ (quá trình Haber – Bosch, từ năm 1913). Ở trên 3000 °C hoặc có tia lửa điện, N₂ tác dụng với O₂ (thể hiện tính khử): N₂ + O₂ ⇌ 2NO, ΔH = +180,6 kJ (hiệu suất thấp). Trong tự nhiên, phản ứng này xảy ra khi mưa dông kèm sấm sét: NO bị oxi hoá thành NO₂, rồi tạo HNO₃ tan trong nước mưa cung cấp nitrate cho đất."
+    },
+    {
+      "type": "formula",
+      "content": "N₂ + 3H₂ ⇌ 2NH₃ (Fe, 450 °C, 200 bar)        N₂ + O₂ ⇌ 2NO (tia lửa điện)        2NO + O₂ → 2NO₂        4NO₂ + O₂ + 2H₂O → 4HNO₃"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b4-nitrogen.svg",
+      "caption": "Phân tử N₂ và sự tạo nitrate từ nước mưa"
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: tổng hợp ammonia (nguyên liệu sản xuất phân đạm, nitric acid, thuốc nổ), tạo khí quyển trơ trong bảo quản thực phẩm (nạp vào bao bì), nitrogen lỏng làm tác nhân làm lạnh, bảo quản mẫu sinh học, máu, tinh trùng, điều trị mụn cóc. Thợ lặn lên mặt nước quá nhanh có thể bị bệnh giảm áp vì nitrogen hoà tan trong máu thoát ra thành bọt khí."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính thể tích N₂ (đktc, lít) cần để điều chế 4,48 lít NH₃ (đktc) nếu hiệu suất 100% (N₂ + 3H₂ ⇌ 2NH₃).",
+      "steps": [
+        "Cùng điều kiện, tỉ lệ thể tích bằng tỉ lệ mol: V(N₂) : V(NH₃) = 1 : 2.",
+        "V(N₂) = 4,48/2 = 2,24 lít."
+      ],
+      "expr": "4.48/2",
+      "answer": "2.24"
+    },
+    {
+      "problem": "Giải thích vì sao N₂ khá trơ ở nhiệt độ thường.",
+      "steps": [
+        "Phân tử N₂ có liên kết ba N≡N với năng lượng liên kết 945 kJ/mol rất lớn.",
+        "Cần nhiệt độ rất cao hoặc tia lửa điện mới phá vỡ được liên kết nên ở nhiệt độ thường N₂ kém hoạt động."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên tố nitrogen có số oxi hoá thấp nhất và cao nhất lần lượt là:",
+      "choices": [
+        "−3 và +5",
+        "−2 và +6",
+        "0 và +5",
+        "−3 và +4"
+      ],
+      "answer": 0,
+      "explain": "Nitrogen ở nhóm VA: từ −3 đến +5.",
+      "wrong_explain": {
+        "1": "−2 và +6 là của sulfur.",
+        "2": "Còn số oxi hoá thấp hơn 0.",
+        "3": "Cao nhất là +5."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phân tử N₂ có liên kết:",
+      "choices": [
+        "ba (1σ + 2π)",
+        "đơn",
+        "đôi",
+        "ion"
+      ],
+      "answer": 0,
+      "explain": "Công thức cấu tạo N≡N.",
+      "wrong_explain": {
+        "1": "Liên kết đơn yếu hơn.",
+        "2": "Không phải đôi.",
+        "3": "Không phải ion."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khí nitrogen chiếm khoảng bao nhiêu phần trăm thể tích khí quyển?",
+      "choices": [
+        "78,1%",
+        "21%",
+        "0,03%",
+        "50%"
+      ],
+      "answer": 0,
+      "explain": "Nitrogen là thành phần chính của không khí.",
+      "wrong_explain": {
+        "1": "21% là oxygen.",
+        "2": "0,03% là CO₂.",
+        "3": "Không đúng."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "N₂ khá trơ ở nhiệt độ thường vì:",
+      "choices": [
+        "liên kết ba N≡N rất bền",
+        "N₂ là chất rắn",
+        "N₂ tan nhiều trong nước",
+        "nitrogen có độ âm điện nhỏ"
+      ],
+      "answer": 0,
+      "explain": "Năng lượng liên kết 945 kJ/mol rất lớn.",
+      "wrong_explain": {
+        "1": "N₂ là chất khí.",
+        "2": "N₂ tan rất ít.",
+        "3": "Độ âm điện lớn (3,04)."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong phản ứng N₂ + 3H₂ ⇌ 2NH₃, nitrogen thể hiện:",
+      "choices": [
+        "tính oxi hoá",
+        "tính khử",
+        "cả hai",
+        "tính acid"
+      ],
+      "answer": 0,
+      "explain": "Số oxi hoá giảm từ 0 xuống −3.",
+      "wrong_explain": {
+        "1": "Tính khử khi tăng số oxi hoá.",
+        "2": "Chỉ một vai trò.",
+        "3": "Không phải tính acid."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong phản ứng N₂ + O₂ ⇌ 2NO, nitrogen thể hiện:",
+      "choices": [
+        "tính khử",
+        "tính oxi hoá",
+        "cả hai",
+        "không đổi số oxi hoá"
+      ],
+      "answer": 0,
+      "explain": "Số oxi hoá tăng từ 0 lên +2.",
+      "wrong_explain": {
+        "1": "Số oxi hoá tăng nên là khử.",
+        "2": "Chỉ một vai trò.",
+        "3": "Có đổi."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điều kiện để N₂ phản ứng với O₂ là:",
+      "choices": [
+        "trên 3000 °C hoặc tia lửa điện",
+        "nhiệt độ thường",
+        "có mặt nước",
+        "ánh sáng yếu"
+      ],
+      "answer": 0,
+      "explain": "Phản ứng thu nhiệt, cần năng lượng lớn.",
+      "wrong_explain": {
+        "1": "Ở nhiệt độ thường không xảy ra.",
+        "2": "Không liên quan nước.",
+        "3": "Không liên quan ánh sáng."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sau những cơn mưa dông có sấm sét, cây xanh tốt hơn vì:",
+      "choices": [
+        "mưa mang nitrate (từ NO, NO₂, HNO₃) vào đất",
+        "mưa mang sulfate",
+        "mưa mang N₂ trực tiếp",
+        "mưa mang ion Na⁺"
+      ],
+      "answer": 0,
+      "explain": "Chuỗi N₂ → NO → NO₂ → HNO₃ → NO₃⁻.",
+      "wrong_explain": {
+        "1": "Không phải sulfate.",
+        "2": "N₂ không dùng trực tiếp.",
+        "3": "Không phải Na⁺."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nitrogen lỏng được dùng để bảo quản mẫu sinh học vì:",
+      "choices": [
+        "rất lạnh (−196 °C) và trơ về hoá học",
+        "có tính oxi hoá mạnh",
+        "có tính acid",
+        "dễ cháy"
+      ],
+      "answer": 0,
+      "explain": "Làm lạnh sâu, không phản ứng với mẫu.",
+      "wrong_explain": {
+        "1": "N₂ trơ.",
+        "2": "N₂ không là acid.",
+        "3": "N₂ không cháy."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nạp khí N₂ vào bao bì thực phẩm thay vì không khí nhằm:",
+      "choices": [
+        "hạn chế oxi hoá, vi sinh vật phát triển",
+        "làm thực phẩm cháy",
+        "tăng độ ẩm",
+        "tăng vi khuẩn"
+      ],
+      "answer": 0,
+      "explain": "N₂ trơ, không có O₂.",
+      "wrong_explain": {
+        "1": "Không gây cháy.",
+        "2": "Không tăng ẩm.",
+        "3": "Giảm vi khuẩn."
+      },
+      "id": "q10"
+    }
+  ]
+}

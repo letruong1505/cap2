@@ -1,0 +1,229 @@
+{
+  "id": "bai-18",
+  "grade": 12,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 12",
+  "chapter": "Chương III. Từ trường",
+  "lesson": "Bài 18. Ứng dụng hiện tượng cảm ứng điện từ",
+  "section": "",
+  "bookPage": 78,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Máy biến áp gồm hai cuộn dây có số vòng khác nhau quấn trên lõi kín. Hoạt động của máy biến áp dựa trên hiện tượng cảm ứng điện từ: dòng xoay chiều trong cuộn sơ cấp gây từ thông biến thiên qua cuộn thứ cấp."
+    },
+    {
+      "type": "formula",
+      "content": "U₁/U₂ = N₁/N₂"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/c-ly12-b18-may-bien-ap.svg",
+      "caption": "Cuộn sơ cấp nối nguồn xoay chiều, cuộn thứ cấp nối tải; hai cuộn quấn trên cùng lõi thép."
+    },
+    {
+      "type": "text",
+      "content": "Lõi biến áp được ghép từ các lá thép silicon mỏng, cách điện với nhau để giảm hao phí do dòng điện Foucault."
+    },
+    {
+      "type": "text",
+      "content": "Đàn ghi ta điện dùng cuộn dây cảm ứng đặt dưới dây thép. Khi dây dao động, từ thông qua cuộn dây biến thiên và sinh ra dòng điện cảm ứng có cùng tần số với âm."
+    },
+    {
+      "type": "text",
+      "content": "Dòng điện Foucault là dòng điện cảm ứng xuất hiện trong khối vật dẫn chuyển động trong từ trường hoặc đặt trong từ trường biến thiên. Dòng này được ứng dụng trong bếp từ và phanh điện từ."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Ví dụ 1: Máy biến áp lí tưởng có N₁ = 1000 vòng, N₂ = 200 vòng. Điện áp sơ cấp U₁ = 220 V. Tính điện áp thứ cấp U₂ (V).",
+      "steps": [
+        "Với máy biến áp lí tưởng: U₂/U₁ = N₂/N₁.",
+        "U₂ = 220 · 200/1000 = 44 V; đây là máy hạ áp."
+      ],
+      "expr": "220*200/1000",
+      "answer": "44"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Máy biến áp hoạt động dựa trên hiện tượng:",
+      "choices": [
+        "Phóng xạ",
+        "Cảm ứng điện từ",
+        "Quang điện",
+        "Nhiệt điện"
+      ],
+      "answer": 1,
+      "explain": "Từ thông biến thiên trong cuộn sơ cấp gây suất điện động cảm ứng trong cuộn thứ cấp.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Phóng xạ không liên quan.",
+        "2": "Hiện tượng quang điện không dùng trong máy biến áp.",
+        "3": "Hiện tượng nhiệt điện không dùng trong máy biến áp."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Cuộn sơ cấp của máy biến áp là cuộn:",
+      "choices": [
+        "Có ít vòng hơn",
+        "Không có lõi thép",
+        "Nối với nguồn điện xoay chiều",
+        "Nối với tải tiêu thụ điện"
+      ],
+      "answer": 2,
+      "explain": "Cuộn sơ cấp được nối với nguồn xoay chiều; cuộn thứ cấp nối với tải tiêu thụ.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Số vòng không quyết định tên gọi sơ cấp.",
+        "1": "Lõi thép là đặc điểm chung, không phải định nghĩa.",
+        "3": "Đây là cuộn thứ cấp."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Máy biến áp có N₁ = 1000 vòng, N₂ = 200 vòng, điện áp sơ cấp U₁ = 220 V. Điện áp thứ cấp U₂ (V):",
+      "expr": "220*200/1000",
+      "answer": "44",
+      "explain": "U₂ = U₁·N₂/N₁ = 220 · 200/1000 = 44 V."
+    },
+    {
+      "id": "q04",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Máy biến áp có N₁ = 400 vòng, N₂ = 2000 vòng, U₁ = 40 V. Điện áp thứ cấp U₂ (V):",
+      "expr": "40*2000/400",
+      "answer": "200",
+      "explain": "U₂ = 40 · 2000/400 = 200 V."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Lõi biến áp được ghép từ các lá thép mỏng cách điện nhằm mục đích:",
+      "choices": [
+        "Tăng điện trở cuộn dây",
+        "Giảm hao phí do dòng điện Foucault",
+        "Tăng từ thông qua lõi",
+        "Giảm khối lượng máy"
+      ],
+      "answer": 1,
+      "explain": "Lá mỏng cách điện làm tăng điện trở đối với dòng Foucault, giảm tác dụng toả nhiệt.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Điện trở cuộn dây không được tăng bằng cách này.",
+        "2": "Lõi lá mỏng không nhằm tăng từ thông.",
+        "3": "Giảm khối lượng không phải mục đích chính."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Đàn ghi ta điện hoạt động dựa trên:",
+      "choices": [
+        "Hiệu ứng quang điện",
+        "Hiệu ứng nhiệt điện",
+        "Phóng xạ",
+        "Cảm ứng điện từ do dây thép dao động trong từ trường của nam châm"
+      ],
+      "answer": 3,
+      "explain": "Dao động của dây thép làm từ thông qua cuộn dây cảm ứng biến thiên, sinh ra dòng điện cảm ứng.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Không có hiệu ứng quang điện trong đàn.",
+        "1": "Không có hiệu ứng nhiệt điện trong đàn.",
+        "2": "Không có phóng xạ trong đàn."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dòng điện Foucault là dòng điện cảm ứng:",
+      "choices": [
+        "Chỉ xuất hiện khi có nguồn một chiều",
+        "Xuất hiện trong khối vật dẫn chuyển động trong từ trường hoặc đặt trong từ trường biến thiên",
+        "Chỉ xuất hiện trong dây dẫn có vỏ cách điện",
+        "Xuất hiện trong chân không"
+      ],
+      "answer": 1,
+      "explain": "Dòng Foucault là các dòng cảm ứng xoáy trong khối vật dẫn.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Dòng Foucault là dòng cảm ứng, không cần nguồn một chiều.",
+        "2": "Dây có vỏ cách điện không phải điều kiện của dòng Foucault.",
+        "3": "Dòng Foucault không xuất hiện trong chân không."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Bếp từ hoạt động dựa trên:",
+      "choices": [
+        "Tia hồng ngoại",
+        "Phản ứng hoá học",
+        "Dòng điện Foucault làm nóng nồi kim loại",
+        "Điện trở thuần của dây đốt"
+      ],
+      "answer": 2,
+      "explain": "Từ trường biến thiên trong bếp sinh dòng Foucault trong đáy nồi, làm nồi nóng lên.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Bếp từ không dùng tia hồng ngoại làm nguồn nhiệt chính.",
+        "1": "Bếp từ không dựa trên phản ứng hoá học.",
+        "3": "Bếp từ không dùng dây đốt điện trở."
+      }
+    },
+    {
+      "id": "q09",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Máy biến áp lí tưởng có N₂ > N₁. Quan hệ đúng giữa điện áp hai đầu cuộn sơ cấp U₁ và thứ cấp U₂ là:",
+      "choices": [
+        "U₂ > U₁ (máy tăng áp)",
+        "U₂ < U₁ (máy hạ áp)",
+        "U₂ = U₁ luôn luôn",
+        "U₂ = 0"
+      ],
+      "answer": 0,
+      "explain": "Từ U₁/U₂ = N₁/N₂ suy ra U₂ = U₁·N₂/N₁. Với N₂ > N₁ thì U₂ > U₁: đây là máy tăng áp.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Với N₂ > N₁ thì U₂ lớn hơn U₁, không nhỏ hơn.",
+        "2": "Chỉ khi N₁ = N₂ mới có U₁ = U₂.",
+        "3": "Máy biến áp tạo ra điện áp thứ cấp khác 0 khi có từ thông biến thiên."
+      }
+    },
+    {
+      "id": "q10",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao dòng điện xoay chiều được dùng để truyền tải điện năng đi xa?",
+      "choices": [
+        "Vì dòng xoay chiều không có từ trường",
+        "Vì dòng xoay chiều có cường độ không đổi",
+        "Dễ biến đổi điện áp bằng máy biến áp, giảm hao phí trên đường dây",
+        "Vì dòng xoay chiều không sinh nhiệt"
+      ],
+      "answer": 2,
+      "explain": "Tăng điện áp bằng máy biến áp làm giảm dòng trên đường dây, nên giảm hao phí.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Dòng xoay chiều vẫn có từ trường.",
+        "1": "Dòng xoay chiều có cường độ biến thiên.",
+        "3": "Mọi dòng điện đều có tỏa nhiệt trên dây."
+      }
+    }
+  ]
+}

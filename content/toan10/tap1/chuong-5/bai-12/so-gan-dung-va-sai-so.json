@@ -1,0 +1,308 @@
+{
+  "id": "bai-12",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 1",
+  "chapter": "Chương V. Các số đặc trưng của mẫu số liệu không ghép nhóm",
+  "lesson": "Bài 12. Số gần đúng và sai số",
+  "section": "",
+  "bookPage": 73,
+  "requirements": [
+    "Hiểu số gần đúng, sai số tuyệt đối, độ chính xác, sai số tương đối.",
+    "Quy tròn số gần đúng theo độ chính xác cho trước; xác định số quy tròn."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Trong đo đạc, tính toán ta thường chỉ nhận được số gần đúng a của số đúng ā. Sai số tuyệt đối của số gần đúng a là Δ_a = |a − ā|. Thường không biết ā nên ta chỉ ước lượng được một số d sao cho Δ_a ≤ d; d gọi là độ chính xác của số gần đúng và viết ā = a ± d."
+    },
+    {
+      "type": "formula",
+      "content": "Δ_a = |a − ā| ≤ d   ⇔   a − d ≤ ā ≤ a + d"
+    },
+    {
+      "type": "text",
+      "content": "Sai số tương đối của số gần đúng a là δ_a = Δ_a/|a| ≤ d/|a|. Sai số tương đối càng nhỏ thì phép đo càng chính xác; thường viết dưới dạng phần trăm."
+    },
+    {
+      "type": "text",
+      "content": "Quy tròn số: khi quy tròn số đến một hàng nào đó thì sai số tuyệt đối không vượt quá nửa đơn vị của hàng đó. Ví dụ quy tròn 3,14159 đến hàng phần trăm được 3,14 với sai số không quá 0,005."
+    },
+    {
+      "type": "text",
+      "content": "Xác định số quy tròn của số gần đúng với độ chính xác cho trước: quy tròn a đến hàng cao hơn hàng của d một đơn vị (hàng thấp nhất mà d nhỏ hơn nửa đơn vị của hàng đó). Ví dụ a = 2,8465 với d = 0,004 thì quy tròn đến hàng phần trăm: 2,85."
+    },
+    {
+      "type": "method",
+      "title": "Quy tròn số gần đúng theo độ chính xác",
+      "when": "Đề cho ā = a ± d và yêu cầu số quy tròn của a, hoặc cho kết quả đo và hỏi sai số tuyệt đối, sai số tương đối.",
+      "steps": [
+        "Tìm hàng của chữ số khác 0 đầu tiên của d (ví dụ d = 0,004 ở hàng phần nghìn).",
+        "Quy tròn a đến hàng liền trước (cao hơn) hàng đó: d ở hàng phần nghìn thì quy tròn a đến hàng phần trăm.",
+        "Sai số tương đối: lấy d chia |a|, đổi ra phần trăm nếu cần."
+      ],
+      "notes": [
+        "Nếu d = 0,5 (hàng phần mười) thì quy tròn đến hàng đơn vị.",
+        "Chữ số bỏ đi từ 5 trở lên thì làm tròn lên."
+      ],
+      "sample": {
+        "problem": "Cho ā = 1,2345 ± 0,003. Tìm số quy tròn của 1,2345.",
+        "steps": [
+          "d = 0,003 ở hàng phần nghìn nên quy tròn đến hàng phần trăm.",
+          "1,2345 ≈ 1,23."
+        ],
+        "answer": "1,23"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một chiếc bàn dài khoảng 1,2 m với độ chính xác 0,01 m (viết 1,2 ± 0,01). Chiều dài thực của bàn nằm trong khoảng nào? Tính sai số tương đối.",
+      "steps": [
+        "1,2 − 0,01 ≤ ā ≤ 1,2 + 0,01, tức 1,19 m ≤ ā ≤ 1,21 m.",
+        "Sai số tương đối δ ≤ 0,01/1,2 ≈ 0,0083 = 0,83%."
+      ],
+      "expr": "1/120",
+      "answer": "1/120"
+    },
+    {
+      "problem": "Cho số gần đúng a = 15 823 với độ chính xác d = 70. Tìm số quy tròn của a.",
+      "steps": [
+        "d = 70 có chữ số khác 0 đầu tiên ở hàng chục, nên quy tròn a đến hàng trăm.",
+        "15 823 ≈ 15 800."
+      ],
+      "expr": "15800",
+      "answer": "15800"
+    },
+    {
+      "problem": "Hai phép đo: chiều dài cây cầu 150 m ± 0,2 m và chiều dài bút chì 15 cm ± 0,2 cm. Phép đo nào chính xác hơn?",
+      "steps": [
+        "Sai số tương đối của phép đo cầu: 0,2/150 ≈ 0,13%.",
+        "Sai số tương đối của phép đo bút: 0,2/15 ≈ 1,33%.",
+        "Phép đo cây cầu chính xác hơn vì sai số tương đối nhỏ hơn."
+      ],
+      "expr": "1/750",
+      "answer": "1/750"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sai số tuyệt đối của số gần đúng a so với số đúng ā là:",
+      "choices": [
+        "|a − ā|",
+        "a − ā",
+        "ā/a",
+        "|a|·|ā|"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa Δ_a = |a − ā|.",
+      "wrong_explain": {
+        "1": "Phải lấy giá trị tuyệt đối.",
+        "2": "Đó không phải sai số.",
+        "3": "Không đúng."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Lấy 3,14 làm giá trị gần đúng của π ≈ 3,14159. Sai số tuyệt đối (làm tròn 4 chữ số thập phân) là:",
+      "expr": "0.0016",
+      "answer": "0.0016",
+      "explain": "|3,14 − 3,14159| ≈ 0,0016.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Số quy tròn của 12,567 đến hàng phần mười là:",
+      "choices": [
+        "12,6",
+        "12,5",
+        "12,57",
+        "13"
+      ],
+      "answer": 0,
+      "explain": "Chữ số hàng phần trăm là 6 ≥ 5 nên làm tròn lên.",
+      "wrong_explain": {
+        "1": "Phải làm tròn lên.",
+        "2": "Đó là hàng phần trăm.",
+        "3": "Đó là hàng đơn vị."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Quy tròn số 2 718,28 đến hàng chục ta được:",
+      "expr": "2720",
+      "answer": "2720",
+      "explain": "Chữ số hàng đơn vị là 8 ≥ 5.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Viết ā = 5,2 ± 0,1 nghĩa là:",
+      "choices": [
+        "5,1 ≤ ā ≤ 5,3",
+        "ā = 5,2 hoặc ā = 0,1",
+        "ā = 5,3",
+        "ā = 5,1"
+      ],
+      "answer": 0,
+      "explain": "Số đúng nằm trong đoạn [a − d; a + d].",
+      "wrong_explain": {
+        "1": "Sai ý nghĩa.",
+        "2": "Chỉ là một cận.",
+        "3": "Chỉ là một cận."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho ā = 3,1416 ± 0,002. Số quy tròn của 3,1416 là:",
+      "choices": [
+        "3,14",
+        "3,142",
+        "3,1",
+        "3,1416"
+      ],
+      "answer": 0,
+      "explain": "d = 0,002 ở hàng phần nghìn nên quy tròn đến hàng phần trăm.",
+      "wrong_explain": {
+        "1": "Hàng phần nghìn chưa đủ tin cậy.",
+        "2": "Quy tròn quá nhiều.",
+        "3": "Chưa quy tròn."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho a = 37 975 với độ chính xác d = 150. Số quy tròn của a là:",
+      "expr": "38000",
+      "answer": "38000",
+      "explain": "d = 150 có chữ số đầu ở hàng trăm nên quy tròn đến hàng nghìn: 38 000.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Kết quả đo 24,5 cm ± 0,5 cm có sai số tương đối lớn nhất (phần trăm, viết dạng phân số) là:",
+      "expr": "500/245",
+      "answer": "100/49",
+      "explain": "0,5/24,5 ≈ 0,0204 = 2,04%.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phép đo nào chính xác hơn?",
+      "choices": [
+        "Đo 200 m với độ chính xác 1 m",
+        "Đo 20 m với độ chính xác 0,5 m",
+        "Đo 2 m với độ chính xác 0,2 m",
+        "Cả ba như nhau"
+      ],
+      "answer": 0,
+      "explain": "Sai số tương đối 1/200 = 0,5% nhỏ nhất (0,5/20 = 2,5%; 0,2/2 = 10%).",
+      "wrong_explain": {
+        "1": "2,5%.",
+        "2": "10%.",
+        "3": "Khác nhau."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Dùng 1,41 làm giá trị gần đúng của √2 ≈ 1,41421. Sai số tuyệt đối (làm tròn 4 chữ số thập phân) là:",
+      "expr": "0.0042",
+      "answer": "0.0042",
+      "explain": "|1,41 − 1,41421| ≈ 0,0042.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chiều cao một toà nhà đo được 45,3 m với độ chính xác 0,05 m. Chiều cao lớn nhất có thể (m) là:",
+      "expr": "45.3+0.05",
+      "answer": "45.35",
+      "explain": "a + d = 45,35.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một mảnh vườn hình chữ nhật đo được dài 10 m ± 0,1 m, rộng 5 m ± 0,1 m. Diện tích lớn nhất có thể (m²) là:",
+      "expr": "10.1*5.1",
+      "answer": "51.51",
+      "explain": "10,1 × 5,1 = 51,51.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho ā = 2,35 ± 0,006 và b̄ = 1,04 ± 0,004. Độ chính xác của tổng a + b là:",
+      "expr": "0.006+0.004",
+      "answer": "0.01",
+      "explain": "Sai số của tổng không vượt quá tổng hai độ chính xác: 0,01.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Số dân một tỉnh ước tính 1 234 567 người với độ chính xác 500 người. Số quy tròn là:",
+      "expr": "1235000",
+      "answer": "1235000",
+      "explain": "d = 500 có chữ số đầu ở hàng trăm nên quy tròn đến hàng nghìn.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một vật nặng 2,5 kg ± 50 g. Sai số tương đối lớn nhất (phần trăm) là:",
+      "expr": "5/250*100",
+      "answer": "2",
+      "explain": "50 g = 0,05 kg; 0,05/2,5 = 2%.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lấy 22/7 làm giá trị gần đúng của π ≈ 3,141593. Sai số tuyệt đối làm tròn 4 chữ số thập phân là:",
+      "expr": "0.0013",
+      "answer": "0.0013",
+      "explain": "22/7 ≈ 3,142857; hiệu ≈ 0,0013.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Để sai số tương đối của phép đo chiều dài 80 m không vượt quá 0,5%, độ chính xác d lớn nhất (m) là:",
+      "expr": "80*0.005",
+      "answer": "0.4",
+      "explain": "d/80 ≤ 0,005 nên d ≤ 0,4 m.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Bán kính đường tròn đo được r = 5 cm ± 0,1 cm. Lấy π ≈ 3,14, chu vi lớn nhất có thể (cm) là:",
+      "expr": "2*3.14*5.1",
+      "answer": "32.028",
+      "explain": "C = 2π(r + d) = 2·3,14·5,1 = 32,028.",
+      "id": "q18"
+    }
+  ]
+}

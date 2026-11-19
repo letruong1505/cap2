@@ -1,0 +1,334 @@
+{
+  "id": "bai-15",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 2",
+  "chapter": "Chương VI. Hàm số, đồ thị và ứng dụng",
+  "lesson": "Bài 15. Hàm số",
+  "section": "",
+  "bookPage": 4,
+  "requirements": [
+    "Nhận biết hàm số, tập xác định, tập giá trị; tính giá trị của hàm số.",
+    "Xét sự đồng biến, nghịch biến; đọc và mô tả đồ thị hàm số."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cho tập D ⊂ ℝ khác rỗng. Nếu với mỗi giá trị x thuộc D có đúng một giá trị tương ứng y thuộc ℝ thì ta có một hàm số; x là biến số, y = f(x) là hàm số của x; D là tập xác định, tập các giá trị y nhận được là tập giá trị."
+    },
+    {
+      "type": "text",
+      "content": "Hàm số có thể cho bằng bảng, biểu đồ hoặc công thức. Khi cho bằng công thức mà không chỉ rõ tập xác định, ta quy ước tập xác định là tập tất cả các số thực x sao cho biểu thức f(x) có nghĩa (mẫu khác 0, biểu thức dưới căn bậc hai không âm)."
+    },
+    {
+      "type": "text",
+      "content": "Đồ thị của hàm số y = f(x) xác định trên D là tập hợp các điểm M(x; f(x)) với x thuộc D. Một đường trong mặt phẳng là đồ thị của một hàm số khi mọi đường thẳng song song với Oy cắt nó tại không quá một điểm."
+    },
+    {
+      "type": "formula",
+      "content": "Hàm số đồng biến trên (a; b): x₁ < x₂ ⇒ f(x₁) < f(x₂).        Nghịch biến trên (a; b): x₁ < x₂ ⇒ f(x₁) > f(x₂)."
+    },
+    {
+      "type": "text",
+      "content": "Đồ thị hàm số đồng biến đi lên từ trái sang phải, đồ thị hàm số nghịch biến đi xuống từ trái sang phải. Hàm số y = ax + b đồng biến khi a > 0, nghịch biến khi a < 0."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t10-b15-dong-nghich-bien.svg",
+      "caption": "Đồ thị hàm số đồng biến và nghịch biến"
+    },
+    {
+      "type": "method",
+      "title": "Tìm tập xác định của hàm số",
+      "when": "Đề cho công thức hàm số chứa phân thức hoặc căn bậc hai và hỏi tập xác định; hoặc hỏi giá trị của hàm số tại một điểm.",
+      "steps": [
+        "Phân thức: cho mẫu khác 0.",
+        "Căn bậc hai: cho biểu thức dưới căn ≥ 0; căn ở mẫu thì biểu thức dưới căn > 0.",
+        "Kết hợp các điều kiện, viết tập xác định dưới dạng khoảng, đoạn hoặc ℝ \\ {…}.",
+        "Giá trị tại x₀: thay x₀ vào công thức."
+      ],
+      "notes": [
+        "Hàm đa thức có tập xác định ℝ.",
+        "Kiểm tra x₀ thuộc tập xác định trước khi tính f(x₀)."
+      ],
+      "sample": {
+        "problem": "Tìm tập xác định của hàm số y = √(x − 1) + 2/(x − 3).",
+        "steps": [
+          "Điều kiện: x − 1 ≥ 0 và x − 3 ≠ 0.",
+          "x ≥ 1 và x ≠ 3; tập xác định D = [1; +∞) \\ {3}."
+        ],
+        "answer": "D = [1; +∞) \\ {3}"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho hàm số f(x) = 2x² − 3x + 1. Tính f(0), f(2) và f(−1).",
+      "steps": [
+        "f(0) = 1.",
+        "f(2) = 8 − 6 + 1 = 3.",
+        "f(−1) = 2 + 3 + 1 = 6."
+      ],
+      "expr": "2*4-6+1",
+      "answer": "3"
+    },
+    {
+      "problem": "Tìm tập xác định của hàm số y = (x + 1)/(x² − 4).",
+      "steps": [
+        "Điều kiện x² − 4 ≠ 0 ⇔ x ≠ 2 và x ≠ −2.",
+        "D = ℝ \\ {−2; 2}."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Xét sự đồng biến, nghịch biến của hàm số y = 3x − 5 trên ℝ.",
+      "steps": [
+        "Với x₁ < x₂ ta có f(x₂) − f(x₁) = 3(x₂ − x₁) > 0 nên f(x₁) < f(x₂).",
+        "Vậy hàm số đồng biến trên ℝ (hệ số a = 3 > 0)."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tập xác định của hàm số y = 1/(x − 2) là:",
+      "choices": [
+        "ℝ \\ {2}",
+        "ℝ",
+        "ℝ \\ {−2}",
+        "(2; +∞)"
+      ],
+      "answer": 0,
+      "explain": "Mẫu khác 0 nên x ≠ 2.",
+      "wrong_explain": {
+        "1": "Mẫu bằng 0 tại x = 2.",
+        "2": "Sai dấu.",
+        "3": "x < 2 vẫn xác định."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tập xác định của hàm số y = √(x − 3) là:",
+      "choices": [
+        "[3; +∞)",
+        "(3; +∞)",
+        "ℝ",
+        "(−∞; 3]"
+      ],
+      "answer": 0,
+      "explain": "Biểu thức dưới căn không âm: x ≥ 3.",
+      "wrong_explain": {
+        "1": "x = 3 vẫn xác định.",
+        "2": "x < 3 không xác định.",
+        "3": "Sai chiều."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cho f(x) = x² − 4x + 7. Giá trị f(3) bằng:",
+      "expr": "9-12+7",
+      "answer": "4",
+      "explain": "f(3) = 9 − 12 + 7 = 4.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số y = −2x + 1:",
+      "choices": [
+        "nghịch biến trên ℝ",
+        "đồng biến trên ℝ",
+        "không đổi",
+        "đồng biến trên (0; +∞)"
+      ],
+      "answer": 0,
+      "explain": "Hệ số a = −2 < 0.",
+      "wrong_explain": {
+        "1": "a âm.",
+        "2": "Không phải hàm hằng.",
+        "3": "Nghịch biến trên toàn ℝ."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điểm nào thuộc đồ thị hàm số y = 2x − 1?",
+      "choices": [
+        "(2; 3)",
+        "(1; 2)",
+        "(0; 1)",
+        "(3; 4)"
+      ],
+      "answer": 0,
+      "explain": "2·2 − 1 = 3.",
+      "wrong_explain": {
+        "1": "2·1 − 1 = 1.",
+        "2": "y = −1.",
+        "3": "y = 5."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tập xác định của hàm số y = √(4 − x) / (x + 1) là:",
+      "choices": [
+        "(−∞; 4] \\ {−1}",
+        "(−∞; 4]",
+        "[4; +∞)",
+        "ℝ \\ {−1}"
+      ],
+      "answer": 0,
+      "explain": "4 − x ≥ 0 và x + 1 ≠ 0.",
+      "wrong_explain": {
+        "1": "Thiếu điều kiện mẫu.",
+        "2": "Sai chiều căn.",
+        "3": "Thiếu điều kiện căn."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho f(x) = (x + 2)/(x − 1). Giá trị f(3) + f(0) bằng:",
+      "expr": "5/2-2",
+      "answer": "1/2",
+      "explain": "f(3) = 5/2, f(0) = −2; tổng 1/2.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hàm số y = f(x) có bảng giá trị: x = 1 → y = 4; x = 2 → y = 7; x = 3 → y = 10. Nếu hàm số là bậc nhất, hệ số góc là:",
+      "expr": "(7-4)/(2-1)",
+      "answer": "3",
+      "explain": "Mỗi khi x tăng 1 thì y tăng 3.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số nào sau đây có tập xác định là ℝ?",
+      "choices": [
+        "y = x² + √2",
+        "y = 1/x",
+        "y = √x",
+        "y = 1/(x² − 1)"
+      ],
+      "answer": 0,
+      "explain": "Đa thức xác định với mọi x.",
+      "wrong_explain": {
+        "1": "x ≠ 0.",
+        "2": "x ≥ 0.",
+        "3": "x ≠ ±1."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đồ thị hàm số y = x² − 2x cắt trục hoành tại hai điểm có hoành độ x₁ < x₂. Giá trị x₂ − x₁ bằng:",
+      "expr": "2-0",
+      "answer": "2",
+      "explain": "x² − 2x = 0 ⇔ x = 0 hoặc x = 2.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho f(x) = 3x + 2. Nếu f(a) = 11 thì a bằng:",
+      "expr": "(11-2)/3",
+      "answer": "3",
+      "explain": "3a + 2 = 11 ⇔ a = 3.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một cửa hàng cho thuê xe với giá 50 nghìn đồng cố định cộng 15 nghìn đồng mỗi giờ. Số tiền (nghìn đồng) phải trả khi thuê 4 giờ là:",
+      "expr": "50+15*4",
+      "answer": "110",
+      "explain": "f(x) = 50 + 15x; f(4) = 110.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hàm số y = √(x + 2) + √(5 − x) có tập xác định [a; b]. Giá trị a + b bằng:",
+      "expr": "-2+5",
+      "answer": "3",
+      "explain": "x + 2 ≥ 0 và 5 − x ≥ 0 ⇔ −2 ≤ x ≤ 5.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hàm số y = f(x) xác định bởi f(x) = x + 1 khi x ≤ 0 và f(x) = x² khi x > 0. Giá trị f(−3) + f(2) bằng:",
+      "expr": "-2+4",
+      "answer": "2",
+      "explain": "f(−3) = −2; f(2) = 4.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số y = 2x − 3 có tập giá trị trên đoạn [0; 2] là:",
+      "choices": [
+        "[−3; 1]",
+        "[0; 2]",
+        "[1; 3]",
+        "[−3; 3]"
+      ],
+      "answer": 0,
+      "explain": "Hàm đồng biến: f(0) = −3, f(2) = 1.",
+      "wrong_explain": {
+        "1": "Đó là tập xác định.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hàm số y = (2x − m)/(x − 1) có f(2) = 5. Giá trị m bằng:",
+      "expr": "4-5",
+      "answer": "-1",
+      "explain": "(4 − m)/1 = 5 ⇔ m = −1.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Số giá trị nguyên của x thuộc tập xác định của hàm số y = √(9 − x²) là:",
+      "expr": "7",
+      "answer": "7",
+      "explain": "−3 ≤ x ≤ 3: các số −3, …, 3, có 7 số.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hàm số y = √(x − m) xác định trên [3; +∞) khi m lớn nhất bằng:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Cần x − m ≥ 0 với mọi x ≥ 3 ⇔ m ≤ 3.",
+      "id": "q18"
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "id": "bai-25",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 11, tập 2",
+  "chapter": "Chương VII. Quan hệ vuông góc trong không gian",
+  "lesson": "Bài 25. Hai mặt phẳng vuông góc",
+  "section": "",
+  "bookPage": 44,
+  "requirements": [
+    "Hiểu góc nhị diện, góc giữa hai mặt phẳng và điều kiện hai mặt phẳng vuông góc.",
+    "Tính góc giữa hai mặt phẳng và diện tích hình chiếu; nhận biết hình lăng trụ đứng, hình chóp đều."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Góc nhị diện: hình gồm hai nửa mặt phẳng có chung bờ a. Góc phẳng nhị diện là góc giữa hai tia vuông góc với bờ a tại cùng một điểm, mỗi tia nằm trong một nửa mặt phẳng. Số đo góc nhị diện bằng số đo góc phẳng nhị diện (từ 0° đến 180°)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b25-nhi-dien.svg",
+      "caption": "Góc nhị diện [P, a, Q]: hai tia cùng vuông góc với cạnh a tại O tạo thành góc phẳng nhị diện φ"
+    },
+    {
+      "type": "text",
+      "content": "Góc giữa hai mặt phẳng cắt nhau là góc nhỏ nhất trong các góc tạo bởi hai đường thẳng lần lượt vuông góc với mỗi mặt phẳng (hoặc góc giữa hai đường thẳng vuông góc cạnh chung, nằm trong hai mặt phẳng). Nó thuộc [0°; 90°]. Hai mặt phẳng vuông góc: góc giữa chúng bằng 90°."
+    },
+    {
+      "type": "formula",
+      "content": "Điều kiện: (P) ⟂ (Q) nếu (P) chứa một đường thẳng vuông góc với (Q).   Nếu (P) ⟂ (Q) và d ⊂ (P) vuông góc với giao tuyến thì d ⟂ (Q).   Diện tích hình chiếu: S′ = S·cos φ."
+    },
+    {
+      "type": "text",
+      "content": "Hình lăng trụ đứng có các cạnh bên vuông góc với đáy, các mặt bên là hình chữ nhật và vuông góc với đáy. Hình chóp đều có đáy là đa giác đều và chân đường cao trùng tâm đáy; các cạnh bên bằng nhau, các mặt bên là các tam giác cân bằng nhau."
+    },
+    {
+      "type": "method",
+      "title": "Tính góc giữa hai mặt phẳng",
+      "when": "Đề hỏi góc giữa (SBC) và (ABCD), (A′BD) và (ABCD) …",
+      "steps": [
+        "Xác định giao tuyến c của hai mặt phẳng.",
+        "Trong mỗi mặt phẳng, dựng đường thẳng vuông góc với c tại cùng một điểm.",
+        "Góc giữa hai đường đó là góc phẳng nhị diện (nhận góc nhọn).",
+        "Tính góc trong tam giác vuông (tan = đối/kề)."
+      ],
+      "notes": [
+        "Nếu SA ⟂ đáy, từ A hạ AH ⟂ BC thì ∠SHA là góc giữa (SBC) và đáy.",
+        "Góc giữa hai mặt phẳng luôn không quá 90°."
+      ],
+      "sample": {
+        "problem": "Hình chóp S.ABCD đáy hình vuông cạnh a, SA ⟂ (ABCD), SA = a. Tính góc giữa (SBC) và (ABCD).",
+        "steps": [
+          "Giao tuyến là BC; BC ⟂ AB và BC ⟂ SB.",
+          "Góc cần tìm là ∠SBA; tan = SA/AB = 1.",
+          "Góc bằng 45°."
+        ],
+        "answer": "45°"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Chứng minh hai mặt phẳng vuông góc",
+      "when": "Cần chứng minh (P) ⟂ (Q).",
+      "steps": [
+        "Tìm đường thẳng d ⊂ (P).",
+        "Chứng minh d ⟂ (Q) (hai đường cắt nhau trong (Q)).",
+        "Kết luận (P) ⟂ (Q).",
+        "Có thể dùng góc phẳng nhị diện bằng 90°."
+      ],
+      "notes": [
+        "Hình chóp có SA ⟂ đáy: mọi mặt phẳng chứa SA vuông góc đáy.",
+        "Mặt bên của lăng trụ đứng vuông góc đáy."
+      ],
+      "sample": {
+        "problem": "SA ⟂ (ABCD). Chứng minh (SAB) ⟂ (ABCD).",
+        "steps": [
+          "SA ⊂ (SAB), SA ⟂ (ABCD).",
+          "Vậy (SAB) ⟂ (ABCD)."
+        ],
+        "answer": "(SAB) ⟂ (ABCD)"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Diện tích hình chiếu và hình lăng trụ đứng",
+      "when": "Cho diện tích một hình phẳng và góc nghiêng với mặt phẳng chiếu; hoặc yếu tố lăng trụ đứng.",
+      "steps": [
+        "Xác định góc φ giữa mặt phẳng chứa hình và mặt phẳng chiếu.",
+        "S′ = S·cos φ.",
+        "Với lăng trụ đứng: các mặt bên vuông góc đáy; thể tích V = S_đáy·h.",
+        "Thay số, tính."
+      ],
+      "notes": [
+        "φ = 0° thì S′ = S; φ = 90° thì S′ = 0.",
+        "Đa giác bất kì dùng được công thức này."
+      ],
+      "sample": {
+        "problem": "Hình phẳng diện tích 20 hợp với mặt phẳng chiếu góc 60°. Tính diện tích hình chiếu.",
+        "steps": [
+          "S′ = 20·cos 60°.",
+          "= 20·1/2 = 10."
+        ],
+        "answer": "10"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hình chóp S.ABCD, SA ⟂ (ABCD), SA = AB, ABCD là hình vuông. Góc giữa (SBC) và (ABCD) bằng bao nhiêu độ?",
+      "steps": [
+        "Giao tuyến BC, ∠SBA là góc phẳng nhị diện.",
+        "tan = 1 nên 45°."
+      ],
+      "expr": "180/4",
+      "answer": "45"
+    },
+    {
+      "problem": "Hình phẳng diện tích 20 hợp với mặt phẳng chiếu góc 60°. Diện tích hình chiếu?",
+      "steps": [
+        "S′ = S cos 60°.",
+        "= 10."
+      ],
+      "expr": "20*1/2",
+      "answer": "10"
+    },
+    {
+      "problem": "Lăng trụ đứng tam giác có bao nhiêu mặt bên vuông góc với đáy?",
+      "steps": [
+        "Các mặt bên đều là hình chữ nhật vuông góc đáy.",
+        "3 mặt."
+      ],
+      "expr": "3",
+      "answer": "3"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Góc giữa hai mặt phẳng có số đo thuộc:",
+      "choices": [
+        "[0°; 90°]",
+        "[0°; 180°]",
+        "(90°; 180°)",
+        "[−90°; 90°]"
+      ],
+      "answer": 0,
+      "explain": "Góc giữa hai mặt phẳng luôn không quá 90°.",
+      "wrong_explain": {
+        "1": "180° là góc nhị diện lớn nhất.",
+        "2": "Góc giữa hai mp không tù.",
+        "3": "Góc không âm."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Góc giữa hai mặt phẳng vuông góc bằng (độ):",
+      "expr": "90",
+      "answer": "90",
+      "explain": "Theo định nghĩa.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Góc giữa hai mặt phẳng song song bằng (độ):",
+      "expr": "0",
+      "answer": "0",
+      "explain": "Hai mặt phẳng song song có góc 0°.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Trong hình lập phương, góc giữa (ABCD) và (ABB′A′) (độ):",
+      "expr": "90",
+      "answer": "90",
+      "explain": "Hai mặt kề nhau vuông góc.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điều kiện đủ để (P) ⟂ (Q) là:",
+      "choices": [
+        "(P) chứa một đường thẳng vuông góc với (Q)",
+        "(P) song song với (Q)",
+        "(P) chứa một đường song song với (Q)",
+        "(P) ∩ (Q) = ∅"
+      ],
+      "answer": 0,
+      "explain": "Đó là điều kiện hai mặt phẳng vuông góc.",
+      "wrong_explain": {
+        "1": "Song song không phải vuông góc.",
+        "2": "Chứa đường song song thì chưa đủ.",
+        "3": "Không giao nhau thì song song."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lăng trụ đứng tam giác có bao nhiêu mặt bên vuông góc với đáy?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Cả 3 mặt bên.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình lập phương. Góc giữa (A′B′CD) và (ABCD) (độ):",
+      "expr": "180/4",
+      "answer": "45",
+      "explain": "Tam giác BCB′ vuông cân nên 45°.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "S.ABCD, SA ⟂ (ABCD), SA = AB, ABCD hình vuông. Góc giữa (SBC) và (ABCD) (độ):",
+      "expr": "180/4",
+      "answer": "45",
+      "explain": "tan ∠SBA = 1 nên 45°.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong hình lập phương, số mặt (trong 6 mặt) vuông góc với mặt (ABCD) là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Bốn mặt bên.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình phẳng diện tích 20 hợp với mặt phẳng chiếu góc 60°. Diện tích hình chiếu:",
+      "expr": "20*1/2",
+      "answer": "10",
+      "explain": "S′ = S cos 60° = 10.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình phẳng diện tích 12, cos φ = 3/4. Diện tích hình chiếu:",
+      "expr": "12*3/4",
+      "answer": "9",
+      "explain": "S′ = 12·3/4 = 9.",
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nếu (P) ⟂ (Q) và d ⊂ (P), d ⟂ giao tuyến thì:",
+      "choices": [
+        "d ⟂ (Q)",
+        "d ∥ (Q)",
+        "d ⊂ (Q)",
+        "d chéo (Q)"
+      ],
+      "answer": 0,
+      "explain": "Đây là tính chất của hai mặt phẳng vuông góc.",
+      "wrong_explain": {
+        "1": "Phải vuông góc.",
+        "2": "Không song song.",
+        "3": "Không nằm trong (Q)."
+      },
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "S.ABCD, SA ⟂ (ABCD), ABCD hình chữ nhật AB = 4, SA = 3. tan góc giữa (SBC) và (ABCD) (nhập a/b):",
+      "expr": "3/4",
+      "answer": "3/4",
+      "explain": "BC ⟂ (SAB), góc là ∠SBA, tan = SA/AB = 3/4.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chóp tứ giác đều đáy cạnh 2, chiều cao 1. tan góc giữa mặt bên và mặt đáy bằng:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "tan = h/(a/2) = 1/1 = 1, góc 45°.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lăng trụ đứng đáy tam giác diện tích 6, chiều cao 7. Thể tích:",
+      "expr": "6*7",
+      "answer": "42",
+      "explain": "V = S·h = 42.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình chữ nhật 6×8 nghiêng hợp với mặt phẳng chiếu góc 60°. Diện tích hình chiếu:",
+      "expr": "6*8*1/2",
+      "answer": "24",
+      "explain": "S = 48; S′ = 24.",
+      "id": "q16"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "SA ⟂ (ABCD), khẳng định đúng là:",
+      "choices": [
+        "(SAC) ⟂ (ABCD)",
+        "(SAC) ∥ (ABCD)",
+        "(SAC) ⟂ (SBC) luôn",
+        "(SBD) ∥ (SAC)"
+      ],
+      "answer": 0,
+      "explain": "SA ⊂ (SAC) và SA ⟂ (ABCD).",
+      "wrong_explain": {
+        "1": "(SAC) cắt (ABCD) theo AC.",
+        "2": "Không luôn vuông góc (SBC).",
+        "3": "Hai mặt cắt nhau theo SO."
+      },
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Diện tích hình chiếu của đa giác S lên mặt phẳng hợp góc 45° bằng 7. Diện tích S nhân √2 bằng:",
+      "expr": "7*2",
+      "answer": "14",
+      "explain": "S′ = S/√2 = 7 ⇒ S = 7√2; S√2 = 14.",
+      "id": "q18"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hình lăng trụ đứng có:",
+      "choices": [
+        "các mặt bên vuông góc với đáy",
+        "các mặt bên song song với đáy",
+        "đáy là hình vuông",
+        "các cạnh bên không bằng nhau"
+      ],
+      "answer": 0,
+      "explain": "Cạnh bên ⟂ đáy nên các mặt bên ⟂ đáy.",
+      "wrong_explain": {
+        "1": "Mặt bên cắt đáy.",
+        "2": "Đáy là đa giác bất kì.",
+        "3": "Các cạnh bên luôn bằng nhau."
+      },
+      "id": "q19"
+    }
+  ]
+}

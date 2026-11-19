@@ -1,0 +1,168 @@
+{
+  "id": "bai-5",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 1",
+  "chapter": "Chương II. Phương trình và bất phương trình bậc nhất một ẩn",
+  "lesson": "Bài 5. Bất đẳng thức và tính chất",
+  "section": "",
+  "bookPage": 32,
+  "requirements": [
+    "Nhận biết bất đẳng thức; vận dụng tính chất liên hệ giữa thứ tự với phép cộng, phép nhân."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hệ thức dạng a > b (a < b, a ≥ b, a ≤ b) gọi là bất đẳng thức; a là vế trái, b là vế phải."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất bắc cầu: a > b và b > c ⇒ a > c."
+    },
+    {
+      "type": "text",
+      "content": "Liên hệ với phép cộng: a > b ⇒ a + c > b + c (cộng cùng một số vào hai vế, chiều không đổi)."
+    },
+    {
+      "type": "text",
+      "content": "Liên hệ với phép nhân: a > b, c > 0 ⇒ ac > bc; a > b, c < 0 ⇒ ac < bc (nhân với số âm phải đổi chiều)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho a > b. So sánh −3a và −3b: hệ số nhân là bao nhiêu và có đổi chiều không?",
+      "steps": [
+        "Nhân hai vế với −3 < 0 nên đổi chiều.",
+        "−3a < −3b."
+      ],
+      "expr": "-3",
+      "answer": "-3"
+    },
+    {
+      "problem": "Dạng chứng minh bằng hằng đẳng thức: chứng minh a² + 1 ≥ 2a. Tính giá trị (a − 1)² tại a = 1 (dấu bằng).",
+      "steps": [
+        "a² + 1 − 2a = (a − 1)² ≥ 0.",
+        "Dấu \"=\" khi a = 1: (1 − 1)² = 0."
+      ],
+      "expr": "0",
+      "answer": "0"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nếu a > b và c < 0 thì:",
+      "choices": [
+        "ac > bc",
+        "ac = bc",
+        "ac < bc",
+        "Không so sánh được"
+      ],
+      "answer": 2,
+      "explain": "Đổi chiều.",
+      "wrong_explain": {
+        "0": "Nhân với số âm phải đổi chiều.",
+        "1": "Không.",
+        "3": "So sánh được."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nếu a < b thì:",
+      "choices": [
+        "a − 5 > b − 5",
+        "a − 5 < b − 5",
+        "a + 5 > b + 5",
+        "−a < −b"
+      ],
+      "answer": 1,
+      "explain": "Cộng −5 vào hai vế.",
+      "wrong_explain": {
+        "0": "Cộng trừ không đổi chiều.",
+        "2": "Không đổi chiều.",
+        "3": "Phải đổi chiều."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cho a > 2. Khẳng định nào đúng?",
+      "choices": [
+        "2a > 4",
+        "2a < 4",
+        "−a > −2",
+        "a − 2 < 0"
+      ],
+      "answer": 0,
+      "explain": "Nhân hai vế với 2.",
+      "wrong_explain": {
+        "1": "Nhân với 2 > 0 không đổi chiều.",
+        "2": "Phải là −a < −2.",
+        "3": "a − 2 > 0."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho x ≥ 3. Giá trị nhỏ nhất của 2x + 1 là:",
+      "expr": "7",
+      "answer": "7",
+      "explain": "2x + 1 ≥ 7."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho x ≤ 5. Giá trị nhỏ nhất của 10 − x là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "−x ≥ −5 ⇒ 10 − x ≥ 5."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giá trị nhỏ nhất của (x − 3)² + 4 là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "(x − 3)² ≥ 0."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giá trị lớn nhất của 6 − (x + 1)² là:",
+      "expr": "6",
+      "answer": "6",
+      "explain": "−(x + 1)² ≤ 0."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho a + b = 10. Giá trị lớn nhất của ab là (khi a = b):",
+      "expr": "25",
+      "answer": "25",
+      "explain": "ab ≤ (a + b)²/4 = 25."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị nhỏ nhất của x² − 6x + 10 là:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "(x − 3)² + 1 ≥ 1."
+    }
+  ]
+}

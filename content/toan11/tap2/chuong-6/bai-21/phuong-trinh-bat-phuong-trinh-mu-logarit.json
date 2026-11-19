@@ -1,0 +1,329 @@
+{
+  "id": "bai-21",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 11, tập 2",
+  "chapter": "Chương VI. Hàm số mũ và hàm số lôgarit",
+  "lesson": "Bài 21. Phương trình, bất phương trình mũ và lôgarit",
+  "section": "",
+  "bookPage": 20,
+  "requirements": [
+    "Giải phương trình, bất phương trình mũ và lôgarit cơ bản.",
+    "Giải bằng đưa về cùng cơ số, đặt ẩn phụ, mũ hoá và lôgarit hoá."
+  ],
+  "theory": [
+    {
+      "type": "formula",
+      "content": "Phương trình mũ: aᵘ = aᵛ ⇔ u = v (a > 0, a ≠ 1);   aˣ = b (b > 0) ⇔ x = log_a b.   Phương trình lôgarit: log_a u = log_a v ⇔ u = v > 0;   log_a x = b ⇔ x = aᵇ (x > 0)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b21-pt-mu.svg",
+      "caption": "Nghiệm của 2ˣ = 8 là hoành độ giao điểm của đồ thị y = 2ˣ và đường thẳng y = 8: x = 3"
+    },
+    {
+      "type": "formula",
+      "content": "Bất phương trình mũ (a > 1): aᵘ > aᵛ ⇔ u > v;  (0 < a < 1): aᵘ > aᵛ ⇔ u < v.   Bất phương trình lôgarit (a > 1): log_a u > log_a v ⇔ u > v > 0;  (0 < a < 1): ⇔ 0 < u < v."
+    },
+    {
+      "type": "text",
+      "content": "Khi giải phương trình lôgarit luôn đặt điều kiện biểu thức trong lôgarit dương, và thử lại nghiệm (đối chiếu điều kiện)."
+    },
+    {
+      "type": "method",
+      "title": "Phương pháp đưa về cùng cơ số",
+      "when": "Hai vế đều có thể viết thành luỹ thừa của cùng cơ số: 2ˣ = 8, 3^{x−1} = 9, (1/2)ˣ > 4.",
+      "steps": [
+        "Viết hai vế dưới dạng luỹ thừa cùng cơ số a.",
+        "Phương trình: so sánh số mũ (u = v).",
+        "Bất phương trình: xét a > 1 hay 0 < a < 1 để giữ hoặc đảo chiều.",
+        "Giải phương trình/bất phương trình bậc nhất, hợp lại."
+      ],
+      "notes": [
+        "Cơ số 0 < a < 1 làm đảo chiều bất đẳng thức.",
+        "Kiểm tra lại bằng cách thử nghiệm."
+      ],
+      "sample": {
+        "problem": "Giải 3^{x−1} = 9.",
+        "steps": [
+          "9 = 3².",
+          "x − 1 = 2 nên x = 3."
+        ],
+        "answer": "x = 3"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Đặt ẩn phụ để đưa về phương trình bậc hai",
+      "when": "Có dạng A·a^{2x} + B·aˣ + C = 0, ví dụ 4ˣ − 5·2ˣ + 4 = 0.",
+      "steps": [
+        "Đặt t = aˣ (t > 0).",
+        "Giải phương trình bậc hai theo t, loại nghiệm t ≤ 0.",
+        "Với mỗi t > 0: giải aˣ = t để tìm x.",
+        "Kết luận tập nghiệm."
+      ],
+      "notes": [
+        "Nhớ điều kiện t > 0.",
+        "4ˣ = (2ˣ)² giúp chuyển cơ số."
+      ],
+      "sample": {
+        "problem": "Giải 4ˣ − 5·2ˣ + 4 = 0.",
+        "steps": [
+          "Đặt t = 2ˣ > 0: t² − 5t + 4 = 0 nên t = 1 hoặc t = 4.",
+          "2ˣ = 1 nên x = 0; 2ˣ = 4 nên x = 2."
+        ],
+        "answer": "x = 0 hoặc x = 2"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Giải phương trình, bất phương trình lôgarit",
+      "when": "Dạng log_a u = b, log_a u = log_a v, hoặc bất phương trình tương ứng.",
+      "steps": [
+        "Đặt điều kiện biểu thức trong log > 0.",
+        "Mũ hoá: log_a u = b ⇒ u = aᵇ; hoặc đưa về log cùng cơ số rồi cho u = v.",
+        "Bất phương trình: xét a > 1 hay 0 < a < 1 để giữ hay đảo chiều.",
+        "Giao nghiệm với điều kiện."
+      ],
+      "notes": [
+        "Quên điều kiện là lỗi phổ biến nhất.",
+        "Phương trình log có thể đổi cơ số trước khi so sánh."
+      ],
+      "sample": {
+        "problem": "Giải log₂(x + 1) = 3.",
+        "steps": [
+          "Điều kiện x > −1.",
+          "x + 1 = 2³ = 8 nên x = 7 (thoả điều kiện)."
+        ],
+        "answer": "x = 7"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Giải 3^{x−1} = 9. Nghiệm x bằng bao nhiêu?",
+      "steps": [
+        "9 = 3² nên x − 1 = 2.",
+        "x = 3."
+      ],
+      "expr": "2+1",
+      "answer": "3"
+    },
+    {
+      "problem": "Giải log₂(x + 1) = 3.",
+      "steps": [
+        "x + 1 = 2³ = 8.",
+        "x = 7."
+      ],
+      "expr": "2*2*2-1",
+      "answer": "7"
+    },
+    {
+      "problem": "Giải log₃(2x − 1) = 2.",
+      "steps": [
+        "2x − 1 = 9.",
+        "x = 5."
+      ],
+      "expr": "(9+1)/2",
+      "answer": "5"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Nghiệm của phương trình 2ˣ = 8 là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "2³ = 8.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Nghiệm của phương trình 3^{x−1} = 9 là:",
+      "expr": "2+1",
+      "answer": "3",
+      "explain": "x − 1 = 2 nên x = 3.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Nghiệm của phương trình log₂ x = 3 là:",
+      "expr": "2*2*2",
+      "answer": "8",
+      "explain": "x = 2³ = 8.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điều kiện của phương trình log₂(x − 3) = 1 là:",
+      "choices": [
+        "x > 3",
+        "x ≥ 3",
+        "x > 0",
+        "x ≠ 3"
+      ],
+      "answer": 0,
+      "explain": "Biểu thức trong log phải dương: x − 3 > 0.",
+      "wrong_explain": {
+        "1": "Dấu bằng làm log không xác định.",
+        "2": "Điều kiện là x − 3 > 0, không phải x > 0.",
+        "3": "Còn phải có x > 3."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nghiệm của phương trình log₂(x + 1) = 3 là:",
+      "expr": "2*2*2-1",
+      "answer": "7",
+      "explain": "x + 1 = 8 nên x = 7.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nghiệm của phương trình log₃(2x − 1) = 2 là:",
+      "expr": "(9+1)/2",
+      "answer": "5",
+      "explain": "2x − 1 = 9 nên x = 5.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nghiệm của phương trình 5^{2x} = 125 là (nhập a/b):",
+      "expr": "3/2",
+      "answer": "3/2",
+      "explain": "5^{2x} = 5³ nên 2x = 3, x = 3/2.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nghiệm của phương trình (1/2)ˣ = 8 là:",
+      "expr": "0-3",
+      "answer": "-3",
+      "explain": "(1/2)ˣ = 2⁻ˣ = 2³ nên x = −3.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số nguyên lớn nhất thoả 2ˣ ≤ 100 là:",
+      "expr": "6",
+      "answer": "6",
+      "explain": "2⁶ = 64 ≤ 100 < 128 = 2⁷.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số nghiệm của phương trình 4ˣ − 5·2ˣ + 4 = 0 là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "t = 2ˣ: t = 1 hoặc t = 4, tức x = 0 và x = 2.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tổng các nghiệm của 4ˣ − 5·2ˣ + 4 = 0 là:",
+      "expr": "0+2",
+      "answer": "2",
+      "explain": "x = 0 và x = 2 nên tổng 2.",
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bất phương trình 2ˣ > 16 có tập nghiệm:",
+      "choices": [
+        "x > 4",
+        "x < 4",
+        "x > 8",
+        "x < 8"
+      ],
+      "answer": 0,
+      "explain": "2ˣ > 2⁴ và cơ số 2 > 1 nên x > 4.",
+      "wrong_explain": {
+        "1": "Cơ số lớn hơn 1 giữ nguyên chiều.",
+        "2": "Không phải x > 8.",
+        "3": "Không phải x < 8."
+      },
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Số nguyên nhỏ nhất thoả 3ˣ > 100 là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "3⁴ = 81 < 100 < 243 = 3⁵.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nghiệm của log₂(x − 1) + log₂(x + 1) = 3 là (x > 1; (x − 1)(x + 1) = 8):",
+      "expr": "3",
+      "answer": "3",
+      "explain": "x² − 1 = 8 nên x = 3 (loại −3).",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Số nguyên lớn nhất thoả log₂ x ≤ 3 là:",
+      "expr": "2*2*2",
+      "answer": "8",
+      "explain": "0 < x ≤ 8 nên x = 8.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bất phương trình log_{1/2}(x − 1) ≥ 1 có nghiệm 1 < x ≤ a. Giá trị a là (nhập a/b):",
+      "expr": "1+1/2",
+      "answer": "3/2",
+      "explain": "Cơ số < 1 đảo chiều: 0 < x − 1 ≤ 1/2 nên x ≤ 3/2.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Giá trị x thoả 9ˣ − 4·3ˣ − 45 = 0 là x = log₃ t với t là nghiệm dương của t² − 4t − 45 = 0. t bằng:",
+      "expr": "9",
+      "answer": "9",
+      "explain": "(t − 9)(t + 5) = 0 nên t = 9 và x = 2.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tập nghiệm của log₂ x² = 2 là:",
+      "choices": [
+        "{−2; 2}",
+        "{2}",
+        "{4}",
+        "{−4; 4}"
+      ],
+      "answer": 0,
+      "explain": "x² = 4 với x ≠ 0 nên x = ±2.",
+      "wrong_explain": {
+        "1": "Còn thiếu nghiệm âm.",
+        "2": "x² = 4 chứ không phải x = 4.",
+        "3": "x² = 2² = 4, không phải 16."
+      },
+      "id": "q18"
+    }
+  ]
+}

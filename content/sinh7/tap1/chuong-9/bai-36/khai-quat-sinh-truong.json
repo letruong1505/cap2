@@ -1,0 +1,204 @@
+{
+  "id": "bai-36",
+  "grade": 7,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 7",
+  "chapter": "Chương IX. Sinh trưởng và phát triển ở sinh vật",
+  "lesson": "Bài 36. Khái quát về sinh trưởng và phát triển ở sinh vật",
+  "section": "",
+  "bookPage": 148,
+  "requirements": [
+    "Phát biểu được khái niệm sinh trưởng và phát triển ở sinh vật.",
+    "Nêu được mối quan hệ giữa sinh trưởng và phát triển.",
+    "Chỉ ra được mô phân sinh trên sơ đồ cắt ngang thân cây hai lá mầm và trình bày được chức năng của mô phân sinh làm cây lớn lên.",
+    "Dựa vào hình vẽ vòng đời của một sinh vật, trình bày được các giai đoạn sinh trưởng và phát triển của sinh vật đó."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Sinh trưởng là sự tăng về kích thước và khối lượng của cơ thể do sự tăng lên về số lượng và kích thước tế bào, nhờ đó cơ thể lớn lên."
+    },
+    {
+      "type": "text",
+      "content": "Phát triển bao gồm sinh trưởng, phân hoá tế bào, phát sinh hình thái cơ quan và cơ thể."
+    },
+    {
+      "type": "text",
+      "content": "Các giai đoạn sinh trưởng và phát triển diễn ra đan xen với nhau. Sinh trưởng gắn với phát triển và phát triển dựa trên cơ sở của sinh trưởng; nếu không có sinh trưởng sẽ không có phát triển và ngược lại."
+    },
+    {
+      "type": "text",
+      "content": "Thực vật sinh trưởng nhờ mô phân sinh. Mô phân sinh đỉnh ở đỉnh rễ và đỉnh chồi giúp thân, cành và rễ tăng lên về chiều dài. Mô phân sinh bên giúp thân, cành và rễ tăng lên về chiều ngang."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/khtn-mo-phan-sinh.svg",
+      "caption": "Vị trí mô phân sinh đỉnh và mô phân sinh bên (minh họa)."
+    },
+    {
+      "type": "text",
+      "content": "Thực vật một lá mầm có mô phân sinh lóng giúp chiều cao cây tăng lên nhanh; cây hai lá mầm lâu năm có mô phân sinh thứ cấp giúp đường kính thân tăng lên."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cây cam trồng 3 năm, mỗi năm cao thêm 40 cm. Chiều cao tăng thêm sau 3 năm là bao nhiêu cm?",
+      "expr": "40 * 3",
+      "steps": [
+        "Mỗi năm tăng 40 cm, trong 3 năm.",
+        "40 × 3 = 120 cm."
+      ],
+      "answer": "120"
+    },
+    {
+      "problem": "Một cây có 3 đỉnh chồi và 1 đỉnh rễ. Tổng số đỉnh mô phân sinh đỉnh của cây là bao nhiêu?",
+      "expr": "3 + 1",
+      "steps": [
+        "Số đỉnh chồi là 3, số đỉnh rễ là 1.",
+        "3 + 1 = 4 đỉnh."
+      ],
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Sinh trưởng là sự tăng về:",
+      "choices": [
+        "Kích thước và khối lượng cơ thể",
+        "Số lượng loài",
+        "Màu sắc",
+        "Nhiệt độ"
+      ],
+      "answer": 0,
+      "explain": "Sinh trưởng là sự tăng về kích thước và khối lượng cơ thể.",
+      "wrong_explain": {
+        "1": "Số lượng loài không phải là sinh trưởng cá thể.",
+        "2": "Màu sắc không là định nghĩa sinh trưởng.",
+        "3": "Nhiệt độ không là định nghĩa sinh trưởng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phát triển bao gồm:",
+      "choices": [
+        "Sinh trưởng, phân hoá tế bào và phát sinh hình thái cơ quan",
+        "Chỉ sinh trưởng",
+        "Chỉ sinh sản",
+        "Chỉ hô hấp"
+      ],
+      "answer": 0,
+      "explain": "Phát triển bao gồm sinh trưởng, phân hoá tế bào và phát sinh hình thái cơ quan.",
+      "wrong_explain": {
+        "1": "Phát triển không chỉ là sinh trưởng.",
+        "2": "Sinh sản không phải toàn bộ phát triển.",
+        "3": "Hô hấp không phải phát triển."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Mô phân sinh đỉnh giúp cây:",
+      "choices": [
+        "Tăng chiều dài",
+        "Tăng chiều ngang",
+        "Hấp thụ ánh sáng",
+        "Trao đổi khí"
+      ],
+      "answer": 0,
+      "explain": "Mô phân sinh đỉnh giúp thân, cành và rễ tăng lên về chiều dài.",
+      "wrong_explain": {
+        "1": "Tăng chiều ngang là chức năng của mô phân sinh bên.",
+        "2": "Hấp thụ ánh sáng là chức năng của lá.",
+        "3": "Trao đổi khí là chức năng của khí khổng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Mô phân sinh bên giúp cây:",
+      "choices": [
+        "Tăng chiều ngang",
+        "Tăng chiều dài",
+        "Ra hoa",
+        "Tạo quả"
+      ],
+      "answer": 0,
+      "explain": "Mô phân sinh bên giúp thân, cành và rễ tăng về chiều ngang.",
+      "wrong_explain": {
+        "1": "Tăng chiều dài là chức năng của mô phân sinh đỉnh.",
+        "2": "Ra hoa không do mô phân sinh bên quyết định.",
+        "3": "Tạo quả không do mô phân sinh bên quyết định."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cây một lá mầm (ví dụ tre) tăng chiều cao nhanh nhờ:",
+      "choices": [
+        "Mô phân sinh lóng",
+        "Mô phân sinh bên",
+        "Mô phân sinh thứ cấp",
+        "Lông hút"
+      ],
+      "answer": 0,
+      "explain": "Mô phân sinh lóng nằm ở các mắt thân, giúp chiều cao cây tăng nhanh.",
+      "wrong_explain": {
+        "1": "Mô phân sinh bên giúp tăng chiều ngang, không phải chiều cao.",
+        "2": "Mô phân sinh thứ cấp có ở cây hai lá mầm lâu năm.",
+        "3": "Lông hút hấp thụ nước, không làm cây cao lên."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cây cam mỗi năm cao thêm 40 cm, trồng trong 3 năm. Chiều cao tăng thêm là bao nhiêu cm?",
+      "expr": "40 * 3",
+      "answer": "120",
+      "explain": "40 × 3 = 120 cm."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cây có 3 đỉnh chồi và 1 đỉnh rễ. Tổng số đỉnh mô phân sinh đỉnh là bao nhiêu?",
+      "expr": "3 + 1",
+      "answer": "4",
+      "explain": "3 + 1 = 4 đỉnh."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Cây hai lá mầm lâu năm như cây cau có đường kính thân tăng lên nhờ:",
+      "choices": [
+        "Mô phân sinh thứ cấp",
+        "Mô phân sinh đỉnh",
+        "Lông hút",
+        "Khí khổng"
+      ],
+      "answer": 0,
+      "explain": "Mô phân sinh thứ cấp tạo các dãy tế bào mô mềm ở phía ngoài làm đường kính thân tăng.",
+      "wrong_explain": {
+        "1": "Mô phân sinh đỉnh làm tăng chiều dài, không phải đường kính.",
+        "2": "Lông hút hấp thụ nước.",
+        "3": "Khí khổng trao đổi khí, không làm tăng đường kính thân."
+      },
+      "concept": true
+    }
+  ]
+}

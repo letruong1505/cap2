@@ -1,0 +1,197 @@
+{
+  "id": "bai-14",
+  "grade": 12,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Hóa học 12",
+  "chapter": "Chương 4. Polymer",
+  "lesson": "Bài 14. Ôn tập chương 4",
+  "section": "",
+  "bookPage": 65,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Polymer: mắt xích liên kết thành phân tử khối lớn. Phản ứng đặc trưng: cắt mạch, tăng mạch, giữ nguyên mạch. Tổng hợp: trùng hợp (monomer có liên kết đôi hoặc vòng) và trùng ngưng (ít nhất hai nhóm chức, tách nước)."
+    },
+    {
+      "type": "text",
+      "content": "Vật liệu polymer: chất dẻo (PE, PP, PVC, PS, poly(methyl methacrylate), PPF); composite (cốt + nền); tơ (tự nhiên, bán tổng hợp, tổng hợp); cao su (tự nhiên, tổng hợp); keo dán (nhựa vá săm, epoxy, poly(urea-formaldehyde))."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Trùng hợp methyl cyanoacrylate CH₂=C(CN)COOCH₃ (M = 111) có hiệu suất 100%. Từ 11,1 g monomer thu được bao nhiêu gam polymer?",
+      "steps": [
+        "Trùng hợp không tạo sản phẩm phụ nên khối lượng bảo toàn.",
+        "m = 11,1 g."
+      ],
+      "expr": "11.1",
+      "answer": "11.1"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trùng hợp styrene thu được polymer có kí hiệu viết tắt là:",
+      "choices": [
+        "PE",
+        "PS",
+        "PP",
+        "PVC"
+      ],
+      "answer": 1,
+      "explain": "Polystyrene viết tắt là PS.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "PE từ ethylene.",
+        "2": "PP từ propylene.",
+        "3": "PVC từ vinyl chloride."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "PE được điều chế từ monomer:",
+      "choices": [
+        "Ethylene",
+        "Propylene",
+        "Styrene",
+        "Vinyl chloride"
+      ],
+      "answer": 0,
+      "explain": "PE là polyethylene từ ethylene.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Propylene cho PP.",
+        "2": "Styrene cho PS.",
+        "3": "Vinyl chloride cho PVC."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cao su buna-S được tổng hợp từ các chất:",
+      "choices": [
+        "CH₂=CH₂ và C₆H₅CH=CH₂",
+        "CH₂=CH–CH=CH₂ và lưu huỳnh",
+        "CH₂=CH–CH=CH₂ và C₆H₅CH=CH₂",
+        "CH₂=CH–CH₂–CH₃ và C₆H₅CH=CH₂"
+      ],
+      "answer": 2,
+      "explain": "Buta-1,3-diene và styrene.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Thiếu buta-1,3-diene.",
+        "1": "Lưu huỳnh dùng để lưu hóa.",
+        "3": "Buta-1,3-diene (hai liên kết đôi) mới là monomer."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Phản ứng trùng hợp methyl cyanoacrylate trong keo 502 được thúc đẩy bởi:",
+      "choices": [
+        "Nhiệt độ rất cao",
+        "Ánh sáng tia cực tím mạnh",
+        "Dung dịch acid đặc",
+        "Hơi ẩm trong không khí"
+      ],
+      "answer": 3,
+      "explain": "Hơi ẩm làm khởi đầu phản ứng trùng hợp.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Keo 502 trùng hợp nhờ hơi ẩm.",
+        "1": "Không phải điều kiện chính.",
+        "2": "Không cần acid đặc."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Dãy gồm các polymer đều điều chế bằng trùng hợp là:",
+      "choices": [
+        "PE, nylon-6,6, PS",
+        "PE, PP, PVC, PS",
+        "PPF, PVC, PS",
+        "Nylon-6,6, PPF, PVC"
+      ],
+      "answer": 1,
+      "explain": "PE, PP, PVC, PS đều từ monomer có liên kết đôi, trùng hợp.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Nylon-6,6 điều chế bằng trùng ngưng.",
+        "2": "PPF điều chế bằng trùng ngưng.",
+        "3": "Nylon-6,6 và PPF điều chế bằng trùng ngưng."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có bao nhiêu polymer trong dãy: PE, PVC, PS, PP đều có chứa chlorine trong phân tử?",
+      "expr": "1",
+      "answer": "1",
+      "explain": "Chỉ PVC chứa Cl.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một loại PE có n = 2000 mắt xích (M = 28). Phân tử khối trung bình của polymer là bao nhiêu?",
+      "expr": "2000*28",
+      "answer": "56000",
+      "explain": "M = 2000 × 28 = 56 000.",
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trùng hợp 11,1 g methyl cyanoacrylate (M = 111) với hiệu suất 100% thu được bao nhiêu gam polymer?",
+      "expr": "11.1",
+      "answer": "11.1",
+      "explain": "Khối lượng bảo toàn: 11,1 g.",
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thủy phân hoàn toàn 11,3 g capron (mắt xích M = 113) thu được bao nhiêu gam 6-aminohexanoic acid (M = 131)?",
+      "expr": "11.3/113*131",
+      "answer": "13.1",
+      "explain": "n(mắt xích) = 0,1 mol → 0,1 mol amino acid → 13,1 g.",
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Từ 1 tấn PE hiệu suất cả quá trình 100% cần bao nhiêu kg ethylene?",
+      "expr": "1000",
+      "answer": "1000",
+      "explain": "Bảo toàn khối lượng.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một mẫu cao su buna-N chứa mắt xích buta-1,3-diene (54) và acrylonitrile (53) tỉ lệ 1 : 1. Phân tử khối trung bình mỗi cặp mắt xích là bao nhiêu?",
+      "expr": "54+53",
+      "answer": "107",
+      "explain": "M = 54 + 53 = 107.",
+      "id": "q11"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Khối lượng của một đoạn mạch nylon-6,6 gồm 50 mắt xích (M = 226) là bao nhiêu?",
+      "expr": "50*226",
+      "answer": "11300",
+      "explain": "m = 50 × 226 = 11 300.",
+      "id": "q12"
+    }
+  ]
+}

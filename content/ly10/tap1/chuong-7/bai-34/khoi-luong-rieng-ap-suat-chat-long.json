@@ -1,0 +1,271 @@
+{
+  "id": "bai-34",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương VII. Biến dạng của vật rắn. Áp suất chất lỏng",
+  "lesson": "Bài 34. Khối lượng riêng. Áp suất chất lỏng",
+  "section": "",
+  "bookPage": 131,
+  "requirements": [
+    "Nêu được khối lượng riêng, áp suất; công thức áp suất chất lỏng p = p₀ + ρgh.",
+    "Vận dụng tính khối lượng riêng, áp suất, chênh lệch áp suất giữa hai điểm trong chất lỏng."
+  ],
+  "theory": [
+    {
+      "type": "formula",
+      "content": "Khối lượng riêng: ρ = m/V   (kg/m³)        Áp suất: p = F/S   (Pa = N/m²)"
+    },
+    {
+      "type": "text",
+      "content": "Khối lượng riêng của một chất là khối lượng của một đơn vị thể tích chất đó; ví dụ nước 1000 kg/m³, sắt khoảng 7800 kg/m³, nhôm 2700 kg/m³, không khí khoảng 1,29 kg/m³. Áp suất là độ lớn áp lực trên một đơn vị diện tích bị ép; 1 atm ≈ 1,013·10⁵ Pa."
+    },
+    {
+      "type": "text",
+      "content": "Chất lỏng gây áp suất theo mọi phương lên đáy bình, thành bình và các vật trong lòng nó. Tại cùng một độ sâu, áp suất chất lỏng như nhau theo mọi hướng."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b34-ap-suat.svg",
+      "caption": "Áp suất tại điểm M ở độ sâu h trong chất lỏng"
+    },
+    {
+      "type": "formula",
+      "content": "Áp suất tại độ sâu h: p = p₀ + ρ·g·h        Chênh lệch áp suất: Δp = ρ·g·Δh"
+    },
+    {
+      "type": "text",
+      "content": "p₀ là áp suất khí quyển trên mặt thoáng. Áp suất chất lỏng chỉ phụ thuộc độ sâu và khối lượng riêng, không phụ thuộc hình dạng bình. Ứng dụng: bình thông nhau (mực chất lỏng cùng loại ngang nhau), đập thuỷ điện xây dưới chân dày hơn, thợ lặn cần đồ bảo hộ khi lặn sâu."
+    },
+    {
+      "type": "method",
+      "title": "Tính khối lượng riêng và áp suất chất lỏng",
+      "when": "Đề cho khối lượng, thể tích; hoặc độ sâu, khối lượng riêng chất lỏng; hỏi khối lượng riêng, áp suất tại một điểm, chênh lệch áp suất, áp lực lên diện tích.",
+      "steps": [
+        "Đổi đơn vị: g → kg, cm³ → m³ (1 cm³ = 10⁻⁶ m³), cm → m.",
+        "ρ = m/V; áp suất do chất lỏng ρgh; áp suất tuyệt đối p₀ + ρgh.",
+        "Chênh lệch áp suất giữa hai độ sâu: ρg·Δh.",
+        "Áp lực F = p·S."
+      ],
+      "notes": [
+        "Độ sâu h tính từ mặt thoáng xuống.",
+        "Nếu đề chỉ hỏi áp suất do chất lỏng gây ra thì không cộng p₀."
+      ],
+      "sample": {
+        "problem": "Tính áp suất do nước gây ra ở độ sâu 5 m (g = 10).",
+        "steps": [
+          "p = ρgh = 1000·10·5 = 50 000 Pa."
+        ],
+        "answer": "5·10⁴ Pa"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một khối kim loại có khối lượng 540 g và thể tích 200 cm³. Tính khối lượng riêng và cho biết khối đó có thể làm bằng chất gì.",
+      "steps": [
+        "ρ = 0,54/(2·10⁻⁴) = 2700 kg/m³.",
+        "Đó là khối lượng riêng của nhôm."
+      ],
+      "expr": "540000/200",
+      "answer": "2700"
+    },
+    {
+      "problem": "Tính áp suất tuyệt đối tại độ sâu 20 m dưới mặt biển (ρ = 1030 kg/m³, g = 10, p₀ = 1,0·10⁵ Pa).",
+      "steps": [
+        "ρgh = 1030·10·20 = 206 000 Pa.",
+        "p = 100 000 + 206 000 = 306 000 Pa ≈ 3 atm."
+      ],
+      "expr": "100000+206000",
+      "answer": "306000"
+    },
+    {
+      "problem": "Hai điểm A, B trong nước cách nhau theo phương thẳng đứng 0,8 m. Tính chênh lệch áp suất (g = 10).",
+      "steps": [
+        "Δp = ρgΔh = 1000·10·0,8 = 8000 Pa."
+      ],
+      "expr": "1000*10*8/10",
+      "answer": "8000"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật 2 kg, thể tích 0,001 m³. Khối lượng riêng (kg/m³):",
+      "expr": "2000",
+      "answer": "2000",
+      "explain": "m/V.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đơn vị áp suất trong hệ SI là:",
+      "choices": [
+        "pascal (Pa)",
+        "niutơn (N)",
+        "kg/m³",
+        "jun (J)"
+      ],
+      "answer": 0,
+      "explain": "1 Pa = 1 N/m².",
+      "wrong_explain": {
+        "1": "Lực.",
+        "2": "Khối lượng riêng.",
+        "3": "Năng lượng."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Áp suất chất lỏng tại một điểm phụ thuộc vào:",
+      "choices": [
+        "độ sâu và khối lượng riêng chất lỏng",
+        "hình dạng bình",
+        "diện tích đáy bình",
+        "thể tích chất lỏng"
+      ],
+      "answer": 0,
+      "explain": "p = ρgh.",
+      "wrong_explain": {
+        "1": "Không phụ thuộc.",
+        "2": "Không phụ thuộc.",
+        "3": "Không phụ thuộc."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Áp suất do nước gây ra ở độ sâu 3 m (g = 10, Pa):",
+      "expr": "30000",
+      "answer": "30000",
+      "explain": "ρgh.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Lực 200 N ép lên diện tích 0,5 m². Áp suất (Pa):",
+      "expr": "400",
+      "answer": "400",
+      "explain": "F/S.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khối gỗ thể tích 50 cm³, khối lượng 40 g. Khối lượng riêng (kg/m³):",
+      "expr": "800",
+      "answer": "800",
+      "explain": "0,04/5·10⁻⁵.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chênh lệch áp suất giữa đáy và mặt nước sâu 1,5 m (g = 10, Pa):",
+      "expr": "15000",
+      "answer": "15000",
+      "explain": "ρgΔh.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Áp suất tuyệt đối ở độ sâu 10 m trong nước (p₀ = 10⁵ Pa, g = 10, Pa):",
+      "expr": "200000",
+      "answer": "200000",
+      "explain": "10⁵ + 10⁵.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đập thuỷ điện được xây phần chân dày hơn phần trên vì:",
+      "choices": [
+        "áp suất nước tăng theo độ sâu",
+        "nước ở dưới nặng hơn",
+        "để tiết kiệm vật liệu",
+        "áp suất giảm theo độ sâu"
+      ],
+      "answer": 0,
+      "explain": "p = ρgh.",
+      "wrong_explain": {
+        "1": "Không phải lí do.",
+        "2": "Sai.",
+        "3": "Ngược."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Áp suất do dầu ρ = 800 kg/m³ ở độ sâu 2 m (g = 10, Pa):",
+      "expr": "16000",
+      "answer": "16000",
+      "explain": "ρgh.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Độ sâu (m) tại đó áp suất do nước gây ra bằng 50 000 Pa (g = 10):",
+      "expr": "5",
+      "answer": "5",
+      "explain": "h = p/(ρg).",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thợ lặn ở độ sâu 30 m trong nước biển ρ = 1030 kg/m³ (g = 10). Áp suất do nước biển gây ra (Pa):",
+      "expr": "309000",
+      "answer": "309000",
+      "explain": "ρgh.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cửa sổ tàu ngầm diện tích 0,02 m² ở độ sâu 100 m (ρ = 1000 kg/m³, g = 10). Áp lực do nước (N):",
+      "expr": "20000",
+      "answer": "20000",
+      "explain": "p = 10⁶ Pa; F = pS.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bình hình trụ đựng nước cao 0,4 m, đáy diện tích 0,05 m² (g = 10). Áp lực nước lên đáy (N):",
+      "expr": "200",
+      "answer": "200",
+      "explain": "p = 4000 Pa.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ống chữ U chứa nước; đổ dầu ρ = 800 kg/m³ vào một nhánh cao 10 cm. Độ chênh mực nước giữa hai nhánh (cm):",
+      "expr": "8",
+      "answer": "8",
+      "explain": "ρ_d·h_d = ρ_n·h_n.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Áp suất khí quyển 10⁵ Pa tương ứng cột nước cao bao nhiêu mét (g = 10)?",
+      "expr": "10",
+      "answer": "10",
+      "explain": "h = 10⁵/(1000·10).",
+      "id": "q16"
+    }
+  ]
+}

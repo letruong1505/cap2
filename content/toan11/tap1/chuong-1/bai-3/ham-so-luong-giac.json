@@ -1,0 +1,352 @@
+{
+  "id": "bai-3",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 11, tập 1",
+  "chapter": "Chương I. Hàm số lượng giác và phương trình lượng giác",
+  "lesson": "Bài 3. Hàm số lượng giác",
+  "section": "",
+  "bookPage": 22,
+  "requirements": [
+    "Tìm tập xác định, tập giá trị; xét tính chẵn lẻ và tính tuần hoàn của hàm số lượng giác.",
+    "Đọc đồ thị hàm y = sin x, cos x, tan x, cot x và dùng đồ thị để tìm nghiệm, khoảng đồng biến, nghịch biến."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hàm y = sin x: tập xác định ℝ, tập giá trị [−1; 1], hàm lẻ, tuần hoàn chu kì 2π, đồng biến trên (−π/2 + k2π; π/2 + k2π), nghịch biến trên (π/2 + k2π; 3π/2 + k2π). Đồ thị đối xứng qua gốc O."
+    },
+    {
+      "type": "text",
+      "content": "Hàm y = cos x: tập xác định ℝ, tập giá trị [−1; 1], hàm chẵn, tuần hoàn chu kì 2π, đồng biến trên (−π + k2π; k2π), nghịch biến trên (k2π; π + k2π). Đồ thị đối xứng qua trục Oy."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b3-do-thi-sin-cos.svg",
+      "caption": "Đồ thị y = sin x (xanh) và y = cos x (đỏ) trên [−2π; 2π]"
+    },
+    {
+      "type": "text",
+      "content": "Hàm y = tan x: tập xác định ℝ \\ {π/2 + kπ}, tập giá trị ℝ, hàm lẻ, tuần hoàn chu kì π, đồng biến trên mỗi khoảng (−π/2 + kπ; π/2 + kπ). Đồ thị nhận các đường thẳng x = π/2 + kπ làm tiệm cận. Hàm y = cot x: tập xác định ℝ \\ {kπ}, tập giá trị ℝ, hàm lẻ, chu kì π, nghịch biến trên mỗi khoảng (kπ; π + kπ)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b3-do-thi-tan.svg",
+      "caption": "Đồ thị y = tan x và các đường tiệm cận x = ±π/2"
+    },
+    {
+      "type": "text",
+      "content": "Hàm số y = f(x) tuần hoàn chu kì T nếu f(x + T) = f(x) với mọi x. Hàm chẵn: f(−x) = f(x); hàm lẻ: f(−x) = −f(x) (tập xác định đối xứng). Hàm y = sin(ax + b), cos(ax + b) có chu kì 2π/|a|; tan(ax + b), cot(ax + b) có chu kì π/|a|."
+    },
+    {
+      "type": "method",
+      "title": "Tìm tập xác định của hàm số lượng giác",
+      "when": "Hàm có tan, cot hoặc phân thức chứa sin, cos ở mẫu, hoặc căn thức chứa biểu thức lượng giác.",
+      "steps": [
+        "Liệt kê điều kiện: mẫu ≠ 0; biểu thức dưới căn ≥ 0; tan u cần cos u ≠ 0; cot u cần sin u ≠ 0.",
+        "Giải từng điều kiện bằng phương trình lượng giác cơ bản.",
+        "Loại các giá trị cấm khỏi ℝ, viết dạng ℝ \\ {…}.",
+        "Kết hợp nếu có nhiều điều kiện."
+      ],
+      "notes": [
+        "Đừng quên điều kiện của tan, cot dù không viết ở mẫu.",
+        "sin x ≠ 1 ⇔ x ≠ π/2 + k2π."
+      ],
+      "sample": {
+        "problem": "Tìm tập xác định của y = (1 − cos x)/sin x.",
+        "steps": [
+          "Điều kiện: sin x ≠ 0.",
+          "x ≠ kπ (k ∈ ℤ).",
+          "D = ℝ \\ {kπ | k ∈ ℤ}."
+        ],
+        "answer": "ℝ \\ {kπ}"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tìm tập giá trị, GTLN, GTNN",
+      "when": "Hàm có dạng a·sin(ux + v) + b hoặc a·cos(ux + v) + b, hoặc chứa căn bậc hai của biểu thức lượng giác.",
+      "steps": [
+        "Dùng −1 ≤ sin ≤ 1 và −1 ≤ cos ≤ 1.",
+        "Nhân với a (đổi chiều bất đẳng thức nếu a < 0).",
+        "Cộng b rồi áp dụng thêm căn, nghịch đảo nếu cần.",
+        "Kết luận tập giá trị, GTLN, GTNN."
+      ],
+      "notes": [
+        "Với y = a sin x + b cos x dùng công thức tập giá trị [−√(a² + b²); √(a² + b²)].",
+        "Hàm có căn thì xét thêm điều kiện biểu thức dưới căn ≥ 0."
+      ],
+      "sample": {
+        "problem": "Tìm tập giá trị của y = 2 sin(x − π/6) − 1.",
+        "steps": [
+          "−1 ≤ sin(x − π/6) ≤ 1.",
+          "−2 ≤ 2 sin(…) ≤ 2.",
+          "−3 ≤ y ≤ 1; tập giá trị [−3; 1]."
+        ],
+        "answer": "[−3; 1]"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Xét tính chẵn lẻ và tính tuần hoàn",
+      "when": "Đề hỏi hàm là chẵn, lẻ, hay không chẵn không lẻ; hoặc tìm chu kì tuần hoàn.",
+      "steps": [
+        "Kiểm tra tập xác định có đối xứng (x thuộc D thì −x thuộc D).",
+        "Tính f(−x) và so với f(x), −f(x).",
+        "Kết luận: f(−x) = f(x) chẵn; f(−x) = −f(x) lẻ; còn lại không chẵn không lẻ.",
+        "Chu kì: dùng 2π/|a| (sin, cos) hoặc π/|a| (tan, cot); tổng các hàm lấy bội chung nhỏ nhất."
+      ],
+      "notes": [
+        "Để chứng minh không chẵn/lẻ, chỉ cần một giá trị cụ thể.",
+        "Tích chẵn × lẻ cho hàm lẻ."
+      ],
+      "sample": {
+        "problem": "Xét tính chẵn lẻ của y = sin x cos 2x.",
+        "steps": [
+          "D = ℝ đối xứng.",
+          "f(−x) = sin(−x) cos(−2x) = −sin x cos 2x = −f(x).",
+          "Hàm số lẻ."
+        ],
+        "answer": "Hàm lẻ"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tìm chu kì của hàm số y = sin(3x). Chu kì bằng 2π/k; tìm k.",
+      "steps": [
+        "Chu kì của sin(ax) là 2π/|a|.",
+        "Với a = 3, k = 3."
+      ],
+      "expr": "3",
+      "answer": "3"
+    },
+    {
+      "problem": "Tập giá trị của y = 2 sin(x − π/6) − 1 là [m; M]. Tính M + m.",
+      "steps": [
+        "y ∈ [−3; 1].",
+        "M + m = 1 + (−3) = −2."
+      ],
+      "expr": "1-3",
+      "answer": "-2"
+    },
+    {
+      "problem": "Sóng biển có h(t) = 90 cos(πt/10) cm. Tìm chu kì (giây).",
+      "steps": [
+        "Chu kì = 2π/(π/10) = 20.",
+        "Chu kì 20 giây."
+      ],
+      "expr": "2*10",
+      "answer": "20"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Chu kì của hàm số y = sin x (đơn vị π) là kπ; k là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "y = sin x tuần hoàn chu kì 2π nên k = 2.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Chu kì của hàm số y = tan x (đơn vị π) là kπ; k là:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "y = tan x có chu kì π nên k = 1.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Giá trị lớn nhất của hàm số y = cos x là:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "cos x ≤ 1 và đạt 1 khi x = k2π.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Giá trị nhỏ nhất của hàm số y = sin x là:",
+      "expr": "-1",
+      "answer": "-1",
+      "explain": "sin x ≥ −1.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số nào sau đây là hàm số chẵn?",
+      "choices": [
+        "y = cos x",
+        "y = sin x",
+        "y = tan x",
+        "y = cot x"
+      ],
+      "answer": 0,
+      "explain": "cos(−x) = cos x.",
+      "wrong_explain": {
+        "1": "sin x là hàm lẻ.",
+        "2": "tan x là hàm lẻ.",
+        "3": "cot x là hàm lẻ."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tập xác định của hàm số y = tan x là:",
+      "choices": [
+        "ℝ \\ {π/2 + kπ | k ∈ ℤ}",
+        "ℝ \\ {kπ | k ∈ ℤ}",
+        "ℝ",
+        "[−1; 1]"
+      ],
+      "answer": 0,
+      "explain": "tan x = sin x / cos x cần cos x ≠ 0.",
+      "wrong_explain": {
+        "1": "ℝ \\ {kπ} là tập xác định của cot x.",
+        "2": "tan x không xác định tại π/2 + kπ nên không phải ℝ.",
+        "3": "[−1; 1] là tập giá trị của sin, cos."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chu kì của y = cos(2x) (đơn vị π) là kπ; k là:",
+      "expr": "2/2",
+      "answer": "1",
+      "explain": "Chu kì 2π/|2| = π nên k = 1.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chu kì của y = sin(3x) bằng 2π/k; k là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Chu kì = 2π/3.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giá trị lớn nhất của y = 3 sin x + 2 là:",
+      "expr": "3+2",
+      "answer": "5",
+      "explain": "Khi sin x = 1 thì y = 5.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giá trị nhỏ nhất của y = 2 cos x − 1 là:",
+      "expr": "-2-1",
+      "answer": "-3",
+      "explain": "cos x = −1 cho y = −3.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tập giá trị của y = 2 sin(x − π/6) − 1 là [m; M]. Giá trị M là:",
+      "expr": "2-1",
+      "answer": "1",
+      "explain": "Giá trị lớn nhất là 2 − 1 = 1.",
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Sóng biển h(t) = 90 cos(πt/10) (cm). Chu kì (giây) là:",
+      "expr": "2*10",
+      "answer": "20",
+      "explain": "T = 2π/(π/10) = 20.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chiều cao sóng (khoảng cách đỉnh – đáy) của h(t) = 90 cos(πt/10) là (cm):",
+      "expr": "90*2",
+      "answer": "180",
+      "explain": "Đỉnh +90, đáy −90 nên chiều cao 180 cm.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị nhỏ nhất của y = 3 − 2 sin²x là:",
+      "expr": "3-2",
+      "answer": "1",
+      "explain": "sin²x ≤ 1 nên y ≥ 3 − 2 = 1.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị lớn nhất của y = 4 sin x − 3 cos x là (√(a² + b²)):",
+      "expr": "5",
+      "answer": "5",
+      "explain": "√(16 + 9) = 5.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hàm số y = tan 2x có chu kì π/k; k là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "tan(ax) có chu kì π/|a|, a = 2.",
+      "id": "q16"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Xét hàm số y = sin 2x + tan 2x:",
+      "choices": [
+        "Là hàm số lẻ",
+        "Là hàm số chẵn",
+        "Không chẵn không lẻ",
+        "Vừa chẵn vừa lẻ"
+      ],
+      "answer": 0,
+      "explain": "f(−x) = −sin 2x − tan 2x = −f(x), tập xác định đối xứng.",
+      "wrong_explain": {
+        "1": "f(−x) = −f(x) ≠ f(x), không chẵn.",
+        "2": "f(−x) = −f(x) cho thấy lẻ.",
+        "3": "Không thể vừa chẵn vừa lẻ trừ hàm 0."
+      },
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tập xác định của y = 1/(1 − sin x) là:",
+      "choices": [
+        "ℝ \\ {π/2 + k2π | k ∈ ℤ}",
+        "ℝ \\ {kπ | k ∈ ℤ}",
+        "ℝ \\ {π/2 + kπ | k ∈ ℤ}",
+        "ℝ"
+      ],
+      "answer": 0,
+      "explain": "Mẫu bằng 0 khi sin x = 1, tức x = π/2 + k2π.",
+      "wrong_explain": {
+        "1": "Tập này loại mọi bội của π, quá nhiều.",
+        "2": "Loại thêm 3π/2 + k2π, nhưng tại đó sin x = −1 vẫn xác định.",
+        "3": "Mẫu bằng 0 tại sin x = 1 nên hàm không xác định trên toàn ℝ."
+      },
+      "id": "q18"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "id": "bai-9",
+  "grade": 10,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 10",
+  "chapter": "Chương II. Bảng tuần hoàn các nguyên tố hoá học và định luật tuần hoàn",
+  "lesson": "Bài 9. Ôn tập chương 2",
+  "section": "",
+  "bookPage": 45,
+  "requirements": [
+    "Hệ thống hoá kiến thức về cấu tạo bảng tuần hoàn, xu hướng biến đổi tính chất nguyên tố và hợp chất, định luật tuần hoàn.",
+    "Vận dụng tổng hợp mối liên hệ vị trí – cấu tạo – tính chất."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hệ thống kiến thức chương 2: (1) Nguyên tắc sắp xếp bảng tuần hoàn; ô, chu kì (7), nhóm A, nhóm B; khối s, p, d, f. (2) Trong chu kì: bán kính giảm, độ âm điện tăng, tính kim loại giảm, tính phi kim tăng; tính base của oxide/hydroxide giảm, tính acid tăng. Trong nhóm A: ngược lại. (3) Định luật tuần hoàn và ý nghĩa của bảng tuần hoàn."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b9-on-tap.svg",
+      "caption": "Sơ đồ hệ thống hoá kiến thức chương II"
+    },
+    {
+      "type": "formula",
+      "content": "Số thứ tự nhóm A = số e lớp ngoài cùng = hoá trị cao nhất với O        Hoá trị với H (phi kim) = 8 − số thứ tự nhóm"
+    },
+    {
+      "type": "method",
+      "title": "Bài toán tìm nguyên tố từ phản ứng",
+      "when": "Đề cho khối lượng kim loại (hoặc oxide) và lượng khí, acid tham gia phản ứng; hỏi nguyên tố.",
+      "steps": [
+        "Viết phương trình phản ứng với kim loại hoá trị n (theo nhóm).",
+        "Tính số mol chất đã biết (khí: n = V/24,79 ở điều kiện chuẩn).",
+        "Suy ra số mol kim loại, M = m/n.",
+        "Đối chiếu bảng tuần hoàn để xác định nguyên tố."
+      ],
+      "notes": [
+        "Kim loại nhóm IIA: M + 2HCl → MCl₂ + H₂.",
+        "Ở 25 °C, 1 bar: 1 mol khí chiếm 24,79 L."
+      ],
+      "sample": {
+        "problem": "Cho 1,2 g kim loại nhóm IIA tác dụng hết với HCl thu được 0,05 mol H₂. Xác định kim loại.",
+        "steps": [
+          "M + 2HCl → MCl₂ + H₂: n(M) = n(H₂) = 0,05 mol.",
+          "M = 1,2/0,05 = 24 ⇒ magnesium."
+        ],
+        "answer": "Mg"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho 0,6 g một kim loại nhóm IIA tác dụng hết với nước thu được 0,015 mol H₂. Tìm kim loại.",
+      "steps": [
+        "n(M) = n(H₂) = 0,015 mol.",
+        "M = 0,6/0,015 = 40 ⇒ calcium."
+      ],
+      "expr": "40",
+      "answer": "40"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nhóm A gồm các nguyên tố:",
+      "choices": [
+        "s và p",
+        "d",
+        "f",
+        "d và f"
+      ],
+      "answer": 0,
+      "explain": "Nhóm B là d, f.",
+      "wrong_explain": {
+        "1": "Nhóm B.",
+        "2": "Họ lanthanide, actinide.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong một nhóm A, theo chiều tăng Z, độ âm điện:",
+      "choices": [
+        "giảm dần",
+        "tăng dần",
+        "không đổi",
+        "tăng rồi giảm"
+      ],
+      "answer": 0,
+      "explain": "Bán kính tăng.",
+      "wrong_explain": {
+        "1": "Trong chu kì.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên tố có cấu hình [Ne]3s² 3p³ thuộc chu kì và nhóm:",
+      "choices": [
+        "chu kì 3, nhóm VA",
+        "chu kì 3, nhóm IIIA",
+        "chu kì 2, nhóm VA",
+        "chu kì 5, nhóm IIIA"
+      ],
+      "answer": 0,
+      "explain": "3 lớp, 5e lớp ngoài cùng.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dãy tăng dần tính phi kim:",
+      "choices": [
+        "Si < P < S < Cl",
+        "Cl < S < P < Si",
+        "P < Si < Cl < S",
+        "S < Cl < Si < P"
+      ],
+      "answer": 0,
+      "explain": "Cùng chu kì 3.",
+      "wrong_explain": {
+        "1": "Ngược.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 3,9 g kim loại nhóm IA tác dụng hết với nước thu được 0,05 mol H₂. Nguyên tử khối kim loại:",
+      "expr": "39",
+      "answer": "39",
+      "explain": "n(M) = 0,1 mol ⇒ M = 39 (K).",
+      "id": "q05"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 2,7 g kim loại nhóm IIIA tác dụng với HCl dư thu được 0,15 mol H₂. Nguyên tử khối kim loại:",
+      "expr": "27",
+      "answer": "27",
+      "explain": "2M + 6HCl → 2MCl₃ + 3H₂: n(M) = 0,1 ⇒ M = 27 (Al).",
+      "id": "q06"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thể tích (L) của 0,2 mol khí ở 25 °C, 1 bar là (1 mol = 24,79 L):",
+      "expr": "0.2*24.79",
+      "answer": "4.958",
+      "explain": "V = n·24,79.",
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "X, Y ở hai nhóm A liên tiếp trong cùng chu kì 3; X có tính kim loại mạnh hơn Y; tổng Z là 23. X và Y là:",
+      "choices": [
+        "Na và Mg",
+        "Mg và Al",
+        "Al và Si",
+        "Na và Al"
+      ],
+      "answer": 0,
+      "explain": "Z + Z + 1 = 23 ⇒ 11 và 12.",
+      "wrong_explain": {
+        "1": "Tổng 25.",
+        "2": "Tổng 27.",
+        "3": "Không liên tiếp."
+      },
+      "id": "q08"
+    }
+  ]
+}

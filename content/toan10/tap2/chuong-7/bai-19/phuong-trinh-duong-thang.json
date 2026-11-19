@@ -1,0 +1,324 @@
+{
+  "id": "bai-19",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 2",
+  "chapter": "Chương VII. Phương pháp toạ độ trong mặt phẳng",
+  "lesson": "Bài 19. Phương trình đường thẳng",
+  "section": "",
+  "bookPage": 30,
+  "requirements": [
+    "Xác định vectơ chỉ phương, vectơ pháp tuyến của đường thẳng.",
+    "Lập phương trình tổng quát và phương trình tham số của đường thẳng; chuyển đổi giữa hai dạng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Vectơ →n ≠ →0 gọi là vectơ pháp tuyến của đường thẳng Δ nếu giá của →n vuông góc với Δ. Vectơ →u ≠ →0 gọi là vectơ chỉ phương của Δ nếu giá của →u song song hoặc trùng với Δ. Nếu →n = (a; b) là vectơ pháp tuyến thì →u = (b; −a) hoặc (−b; a) là vectơ chỉ phương và ngược lại."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t10-b19-duong-thang.svg",
+      "caption": "Vectơ chỉ phương và vectơ pháp tuyến của đường thẳng"
+    },
+    {
+      "type": "formula",
+      "content": "Phương trình tổng quát: ax + by + c = 0 (a² + b² ≠ 0), vectơ pháp tuyến →n = (a; b)"
+    },
+    {
+      "type": "text",
+      "content": "Đường thẳng đi qua M₀(x₀; y₀) và có vectơ pháp tuyến →n = (a; b) có phương trình a(x − x₀) + b(y − y₀) = 0. Đường thẳng đi qua A(a; 0), B(0; b) với ab ≠ 0 có phương trình đoạn chắn x/a + y/b = 1."
+    },
+    {
+      "type": "formula",
+      "content": "Phương trình tham số: x = x₀ + at, y = y₀ + bt (t ∈ ℝ), vectơ chỉ phương →u = (a; b)"
+    },
+    {
+      "type": "text",
+      "content": "Mỗi giá trị t cho một điểm trên đường thẳng. Đường thẳng qua hai điểm A, B có vectơ chỉ phương →AB. Đường thẳng y = kx + m có vectơ chỉ phương (1; k) và vectơ pháp tuyến (k; −1)."
+    },
+    {
+      "type": "method",
+      "title": "Lập phương trình đường thẳng",
+      "when": "Đề cho một điểm và một vectơ (pháp tuyến hoặc chỉ phương), hoặc hai điểm, hoặc yêu cầu đường thẳng song song, vuông góc với đường thẳng cho trước; hỏi phương trình tổng quát hoặc tham số.",
+      "steps": [
+        "Xác định một điểm M₀ thuộc đường thẳng.",
+        "Xác định vectơ pháp tuyến →n (nếu cần tổng quát) hoặc chỉ phương →u (nếu cần tham số); đổi qua lại bằng cách đảo toạ độ và đổi dấu một thành phần.",
+        "Song song với ax + by + c = 0 thì dùng cùng →n = (a; b); vuông góc thì dùng →n = (b; −a).",
+        "Viết phương trình và rút gọn."
+      ],
+      "notes": [
+        "Đường thẳng có vô số vectơ pháp tuyến, chỉ phương (cùng phương với nhau).",
+        "Kiểm tra điểm thuộc đường thẳng bằng cách thay toạ độ."
+      ],
+      "sample": {
+        "problem": "Viết phương trình tổng quát của đường thẳng đi qua A(1; 2) và B(3; −1).",
+        "steps": [
+          "→AB = (2; −3) là vectơ chỉ phương nên →n = (3; 2).",
+          "3(x − 1) + 2(y − 2) = 0 ⇔ 3x + 2y − 7 = 0."
+        ],
+        "answer": "3x + 2y − 7 = 0"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Viết phương trình tham số và phương trình tổng quát của đường thẳng d đi qua M(2; −1) và có vectơ chỉ phương →u = (3; 4).",
+      "steps": [
+        "Tham số: x = 2 + 3t, y = −1 + 4t.",
+        "Vectơ pháp tuyến →n = (4; −3): 4(x − 2) − 3(y + 1) = 0 ⇔ 4x − 3y − 11 = 0."
+      ],
+      "expr": "4*2-3*(-1)",
+      "answer": "11"
+    },
+    {
+      "problem": "Cho đường thẳng Δ: 2x − y + 3 = 0. Viết phương trình đường thẳng d đi qua A(1; 1) và song song với Δ; đường thẳng d′ đi qua A và vuông góc với Δ.",
+      "steps": [
+        "d có →n = (2; −1): 2(x − 1) − (y − 1) = 0 ⇔ 2x − y − 1 = 0.",
+        "d′ có →n′ = (1; 2): (x − 1) + 2(y − 1) = 0 ⇔ x + 2y − 3 = 0."
+      ],
+      "expr": "1+2",
+      "answer": "3"
+    },
+    {
+      "problem": "Đường thẳng d có phương trình tham số x = 1 − 2t, y = 3 + t. Tìm điểm thuộc d có hoành độ bằng 5 và viết phương trình tổng quát của d.",
+      "steps": [
+        "x = 5 ⇔ 1 − 2t = 5 ⇔ t = −2, khi đó y = 1: điểm (5; 1).",
+        "→u = (−2; 1) nên →n = (1; 2): (x − 1) + 2(y − 3) = 0 ⇔ x + 2y − 7 = 0."
+      ],
+      "expr": "5+2*1",
+      "answer": "7"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đường thẳng 3x − 4y + 5 = 0 có một vectơ pháp tuyến là:",
+      "choices": [
+        "(3; −4)",
+        "(4; 3)",
+        "(3; 4)",
+        "(−4; −3)"
+      ],
+      "answer": 0,
+      "explain": "Hệ số của x và y.",
+      "wrong_explain": {
+        "1": "Đó là vectơ chỉ phương.",
+        "2": "Sai dấu.",
+        "3": "Đó là vectơ chỉ phương (ngược)."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đường thẳng có phương trình tham số x = 1 + 2t, y = −3 + 5t có vectơ chỉ phương:",
+      "choices": [
+        "(2; 5)",
+        "(1; −3)",
+        "(5; −2)",
+        "(−5; 2)"
+      ],
+      "answer": 0,
+      "explain": "Hệ số của t.",
+      "wrong_explain": {
+        "1": "Đó là điểm đi qua.",
+        "2": "Đó là pháp tuyến.",
+        "3": "Đó là pháp tuyến."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điểm nào thuộc đường thẳng 2x + y − 5 = 0?",
+      "choices": [
+        "(1; 3)",
+        "(1; 2)",
+        "(2; 2)",
+        "(0; 3)"
+      ],
+      "answer": 0,
+      "explain": "2·1 + 3 − 5 = 0.",
+      "wrong_explain": {
+        "1": "2 + 2 − 5 ≠ 0.",
+        "2": "4 + 2 − 5 ≠ 0.",
+        "3": "0 + 3 − 5 ≠ 0."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đường thẳng đi qua M(1; −2) và có vectơ pháp tuyến →n = (3; 1) có phương trình:",
+      "choices": [
+        "3x + y − 1 = 0",
+        "x + 3y + 5 = 0",
+        "3x + y + 1 = 0",
+        "3x − y − 5 = 0"
+      ],
+      "answer": 0,
+      "explain": "3(x − 1) + (y + 2) = 0.",
+      "wrong_explain": {
+        "1": "Dùng sai pháp tuyến.",
+        "2": "Sai hằng số.",
+        "3": "Sai dấu."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vectơ chỉ phương của đường thẳng x − 2y + 1 = 0 là:",
+      "choices": [
+        "(2; 1)",
+        "(1; −2)",
+        "(1; 2)",
+        "(−2; −1) không phải"
+      ],
+      "answer": 0,
+      "explain": "→n = (1; −2) nên →u = (2; 1).",
+      "wrong_explain": {
+        "1": "Đó là pháp tuyến.",
+        "2": "Không vuông góc với →n.",
+        "3": "(−2; −1) vẫn là vectơ chỉ phương; đáp án này sai vì phủ định."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đường thẳng đi qua A(2; 0) và B(0; 3) có phương trình 3x + 2y + c = 0. Giá trị c bằng:",
+      "expr": "-6",
+      "answer": "-6",
+      "explain": "Thay A: 6 + c = 0 ⇔ c = −6 (hoặc x/2 + y/3 = 1).",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đường thẳng d: x = 3 + t, y = 1 − 2t. Tung độ của điểm trên d có hoành độ 5 là:",
+      "expr": "1-2*2",
+      "answer": "-3",
+      "explain": "t = 2 nên y = 1 − 4 = −3.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đường thẳng qua M(1; 1) song song với 2x − 3y + 7 = 0 có dạng 2x − 3y + c = 0. Giá trị c bằng:",
+      "expr": "3-2",
+      "answer": "1",
+      "explain": "2 − 3 + c = 0 ⇔ c = 1.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đường thẳng qua M(2; −1) vuông góc với x + 4y − 1 = 0 có dạng 4x − y + c = 0. Giá trị c bằng:",
+      "expr": "-8-1",
+      "answer": "-9",
+      "explain": "4·2 − (−1) + c = 0 ⇔ c = −9.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đường thẳng y = 2x − 3 có vectơ pháp tuyến là:",
+      "choices": [
+        "(2; −1)",
+        "(1; 2)",
+        "(2; 1)",
+        "(−3; 1)"
+      ],
+      "answer": 0,
+      "explain": "2x − y − 3 = 0.",
+      "wrong_explain": {
+        "1": "Đó là chỉ phương.",
+        "2": "Sai dấu.",
+        "3": "Sai."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đường thẳng Δ đi qua A(1; 2), B(4; 6). Hệ số góc của Δ bằng:",
+      "expr": "(6-2)/(4-1)",
+      "answer": "4/3",
+      "explain": "k = Δy/Δx = 4/3.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đường thẳng d đi qua A(−1; 2) và có vectơ chỉ phương (3; −1) cắt trục hoành tại điểm có hoành độ:",
+      "expr": "-1+3*2",
+      "answer": "5",
+      "explain": "x = −1 + 3t, y = 2 − t; y = 0 ⇔ t = 2 ⇒ x = 5.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác ABC có A(1; 3), B(−1; 1), C(5; −1). Đường trung tuyến AM (M là trung điểm BC) có phương trình 3x + y + c = 0. Giá trị c bằng:",
+      "expr": "-6",
+      "answer": "-6",
+      "explain": "M(2; 0); →AM = (1; −3) nên →n = (3; 1); 3(x − 2) + y = 0 ⇔ 3x + y − 6 = 0.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đường cao kẻ từ A của tam giác ABC với A(1; 3), B(−1; 1), C(5; −1) có phương trình 3x − y + c = 0. Giá trị c bằng:",
+      "expr": "3-3",
+      "answer": "0",
+      "explain": "→BC = (6; −2) là pháp tuyến, rút gọn (3; −1): 3(x − 1) − (y − 3) = 0 ⇔ 3x − y = 0.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đường thẳng x/a + y/b = 1 đi qua (2; 3) và có a = 4. Giá trị b bằng:",
+      "expr": "6",
+      "answer": "6",
+      "explain": "2/4 + 3/b = 1 ⇔ 3/b = 1/2 ⇔ b = 6.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đường thẳng 3x + 4y − 12 = 0 cắt hai trục toạ độ tạo thành tam giác có diện tích:",
+      "expr": "4*3/2",
+      "answer": "6",
+      "explain": "Cắt Ox tại (4; 0), Oy tại (0; 3); S = 4·3/2 = 6.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Đường trung trực của đoạn AB với A(1; 1), B(5; 3) có phương trình 2x + y + c = 0. Giá trị c bằng:",
+      "expr": "-6-2",
+      "answer": "-8",
+      "explain": "Trung điểm I(3; 2), pháp tuyến →AB = (4; 2) ~ (2; 1): 2(x − 3) + (y − 2) = 0 ⇔ 2x + y − 8 = 0.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Đường thẳng d qua M(2; 1) cắt tia Ox, Oy tại A(a; 0), B(0; b) với M là trung điểm AB. Giá trị a + b bằng:",
+      "expr": "4+2",
+      "answer": "6",
+      "explain": "M trung điểm ⇒ a = 4, b = 2.",
+      "id": "q18"
+    }
+  ]
+}

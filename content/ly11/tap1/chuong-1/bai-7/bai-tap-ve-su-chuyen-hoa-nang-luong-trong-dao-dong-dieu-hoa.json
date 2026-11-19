@@ -1,0 +1,320 @@
+{
+  "id": "bai-7",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 1. Dao động",
+  "lesson": "Bài 7. Bài tập về sự chuyển hoá năng lượng trong dao động điều hoà",
+  "section": "",
+  "bookPage": 28,
+  "requirements": [
+    "Vận dụng biểu thức động năng, thế năng, cơ năng và định luật bảo toàn cơ năng vào các bài toán dao động điều hoà.",
+    "Tìm vị trí, vận tốc, thời gian liên quan đến năng lượng; giải bài toán cộng hưởng và tắt dần ở mức đơn giản."
+  ],
+  "theory": [
+    {
+      "type": "formula",
+      "content": "W = ½kA² = ½mω²A²;   W_t = ½kx²;   W_đ = W − W_t = ½k(A² − x²);   v² = (k/m)(A² − x²)."
+    },
+    {
+      "type": "text",
+      "content": "Khi W_đ = nW_t: x = ±A/√(n + 1) và v = ±ωA√(n/(n + 1)). Khi W_đ = W_t: x = ±A/√2. Tại x = ±A/2: W_t = W/4, W_đ = 3W/4."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b7-nang-luong-theo-t.svg",
+      "caption": "Con lắc lò xo nằm ngang: thế năng cực đại ở biên, động năng cực đại ở VTCB; tổng không đổi"
+    },
+    {
+      "type": "text",
+      "content": "Với con lắc lò xo thẳng đứng, chọn VTCB làm gốc thế năng đàn hồi + trọng lực thì biểu thức thế năng của hệ vẫn có dạng ½kx² (x tính từ VTCB). Bảo toàn cơ năng: ½mv₁² + ½kx₁² = ½mv₂² + ½kx₂²."
+    },
+    {
+      "type": "method",
+      "title": "Bảo toàn cơ năng giữa hai vị trí",
+      "when": "Biết v tại một vị trí và cần v tại vị trí khác (hoặc biết A, tìm v tại x).",
+      "steps": [
+        "Viết W = ½mv₁² + ½kx₁² = ½mv₂² + ½kx₂².",
+        "Thay các đại lượng đã biết (đổi sang đơn vị SI).",
+        "Giải tìm đại lượng chưa biết (v₂² = v₁² + (k/m)(x₁² − x₂²)).",
+        "Lấy căn, xét dấu theo chiều chuyển động nếu cần."
+      ],
+      "notes": [
+        "Cơ năng có thể tính từ v_max hoặc từ A.",
+        "Dùng m/k = 1/ω² để rút gọn."
+      ],
+      "sample": {
+        "problem": "k = 100 N/m, m = 1 kg. Tại x₁ = 0 có v₁ = 1 m/s. Tính v tại x₂ = 0,05 m.",
+        "steps": [
+          "v₂² = v₁² − (k/m)x₂² = 1 − 100·0,0025 = 0,75.",
+          "v₂ ≈ 0,87 m/s."
+        ],
+        "answer": "v₂² = 0,75 m²/s²"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tìm li độ, thời gian khi W_đ = nW_t",
+      "when": "Đề cho tỉ số W_đ/W_t (hoặc W_t/W) tại một thời điểm; tìm x, v hoặc thời gian giữa hai lần.",
+      "steps": [
+        "Từ W_đ = nW_t ⇒ W_t = W/(n + 1) ⇒ x² = A²/(n + 1).",
+        "Tính x, và v = ωA√(n/(n + 1)).",
+        "Thời gian giữa hai lần liên tiếp W_đ = W_t là T/4.",
+        "Dùng đường tròn để tính thời gian khác."
+      ],
+      "notes": [
+        "Hệ số n có thể là phân số.",
+        "Kết quả x có hai dấu."
+      ],
+      "sample": {
+        "problem": "A = 6 cm. Tại vị trí có W_đ = 8W_t, tìm |x|.",
+        "steps": [
+          "x² = A²/9 = 4.",
+          "|x| = 2 cm."
+        ],
+        "answer": "2 cm"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Công suất cung cấp để duy trì dao động tắt dần",
+      "when": "Dao động tắt dần cần bổ sung năng lượng để duy trì biên độ; tính năng lượng mất đi mỗi chu kì hoặc công suất.",
+      "steps": [
+        "Cơ năng ban đầu W₀ = ½kA₀².",
+        "Sau mỗi chu kì cơ năng giảm ΔW; công suất bù P = ΔW/T.",
+        "Phần trăm cơ năng mất: ΔW/W₀ · 100%.",
+        "Thay số."
+      ],
+      "notes": [
+        "Biên độ giảm 2% mỗi chu kì ⇒ cơ năng giảm khoảng 4%.",
+        "Đổi đơn vị J và s."
+      ],
+      "sample": {
+        "problem": "W₀ = 0,5 J, mỗi chu kì mất 4% cơ năng, T = 0,5 s. Công suất duy trì?",
+        "steps": [
+          "ΔW = 0,04·0,5 = 0,02 J.",
+          "P = ΔW/T = 0,04 W."
+        ],
+        "answer": "0,04 W"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "k = 100 N/m, m = 1 kg, tại x = 0 có v = 1 m/s. Tại x = 0,05 m, v² (m²/s²) bằng:",
+      "steps": [
+        "v² = v₀² − (k/m)x² = 1 − 100·0,0025.",
+        "= 0,75."
+      ],
+      "expr": "1-100*0.05*0.05",
+      "answer": "3/4"
+    },
+    {
+      "problem": "A = 6 cm, W_đ = 8W_t. Giá trị |x| (cm)?",
+      "steps": [
+        "x² = A²/9 = 4.",
+        "|x| = 2 cm."
+      ],
+      "expr": "6/3",
+      "answer": "2"
+    },
+    {
+      "problem": "W₀ = 0,5 J, mỗi chu kì mất 4% cơ năng, T = 0,5 s. Công suất duy trì (W)?",
+      "steps": [
+        "ΔW = 0,04·0,5 = 0,02 J.",
+        "P = 0,02/0,5 = 0,04 W."
+      ],
+      "expr": "(0.04*0.5)/(0.5)",
+      "answer": "1/25"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Con lắc có cơ năng 0,5 J, W_t = 0,3 J. W_đ (J) là:",
+      "expr": "0.5-0.3",
+      "answer": "1/5",
+      "explain": "0,2 J.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tại biên, W_đ (J) bằng:",
+      "expr": "0",
+      "answer": "0",
+      "explain": "v = 0 nên W_đ = 0.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cơ năng là W; tại x = A/2 thế năng bằng W/4. Tỉ số W_t/W (nhập a/b):",
+      "expr": "1/4",
+      "answer": "1/4",
+      "explain": "W_t/W = x²/A² = 1/4.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi W_đ = W_t thì li độ bằng:",
+      "choices": [
+        "±A/√2",
+        "±A/2",
+        "±A",
+        "0"
+      ],
+      "answer": 0,
+      "explain": "W_t = W/2 nên x² = A²/2.",
+      "wrong_explain": {
+        "1": "±A/2 là khi W_đ = 3W_t.",
+        "2": "Tại biên W_t = W.",
+        "3": "Tại VTCB W_t = 0."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "A = 6 cm, W_đ = 8W_t. |x| (cm) là:",
+      "expr": "6/3",
+      "answer": "2",
+      "explain": "x² = A²/9 = 4.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "A = 8 cm, W_đ = 3W_t. |x| (cm) là:",
+      "expr": "8/2",
+      "answer": "4",
+      "explain": "x² = A²/4 = 16.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "k = 100 N/m, m = 1 kg, tại x = 0 có v = 1 m/s. Tại x = 0,05 m có v² (m²/s²) =:",
+      "expr": "1-100*0.05*0.05",
+      "answer": "3/4",
+      "explain": "v² = 1 − 0,25 = 0,75.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tại x = A/2 động năng bằng bao nhiêu phần của cơ năng? (nhập a/b)",
+      "expr": "3/4",
+      "answer": "3/4",
+      "explain": "W_đ = W − W/4 = 3W/4.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chu kì T = 2 s. Thời gian giữa hai lần liên tiếp W_đ = W_t (s) là:",
+      "expr": "2/4",
+      "answer": "1/2",
+      "explain": "T/4 = 0,5 s.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cơ năng 0,2 J, m = 0,4 kg. v_max² (m²/s²) bằng:",
+      "expr": "(2*0.2)/(0.4)",
+      "answer": "1",
+      "explain": "v_max² = 2W/m = 1.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cơ năng con lắc lò xo tỉ lệ thuận với:",
+      "choices": [
+        "bình phương biên độ",
+        "biên độ",
+        "chu kì",
+        "khối lượng vật nặng khi A, k cố định"
+      ],
+      "answer": 0,
+      "explain": "W = ½kA².",
+      "wrong_explain": {
+        "1": "Tỉ lệ A², không phải A.",
+        "2": "Không phụ thuộc chu kì trực tiếp.",
+        "3": "W = ½kA² không phụ thuộc m."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "m = 0,1 kg, ω = 10 rad/s, A = 5 cm. Khi x = 3 cm, W_đ (J) là:",
+      "expr": "(1/2)*0.1*100*(0.05*0.05-0.03*0.03)",
+      "answer": "1/125",
+      "explain": "W_đ = ½mω²(A² − x²) = 0,008 J.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Biên độ 4 cm, ω = 10 rad/s. Khi x = 2 cm, v² (cm²/s²) bằng ω²(A² − x²):",
+      "expr": "100*(16-4)",
+      "answer": "1200",
+      "explain": "v² = 1200 cm²/s².",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "W₀ = 0,5 J, mỗi chu kì mất 4% cơ năng, T = 0,5 s. Công suất duy trì (W):",
+      "expr": "(0.04*0.5)/(0.5)",
+      "answer": "1/25",
+      "explain": "P = 0,04 W.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Con lắc có W = 0,18 J, k = 100 N/m. Biên độ A² (m²) = 2W/k bằng:",
+      "expr": "2*0.18/100",
+      "answer": "9/2500",
+      "explain": "A² = 0,0036 nên A = 0,06 m.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hai vị trí x₁ = 3 cm (v₁ = 40 cm/s) và x₂ = 4 cm (v₂ = 30 cm/s): (v₁² − v₂²)/(x₂² − x₁²) bằng:",
+      "expr": "(40*40-30*30)/(4*4-3*3)",
+      "answer": "100",
+      "explain": "ω² = 100 s⁻².",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi lực cản môi trường tăng thì tại một thời điểm, dao động tắt dần:",
+      "choices": [
+        "nhanh hơn",
+        "chậm hơn",
+        "không thay đổi",
+        "trở thành điều hoà"
+      ],
+      "answer": 0,
+      "explain": "Cơ năng mất nhanh hơn.",
+      "wrong_explain": {
+        "1": "Lực cản lớn nên tắt nhanh.",
+        "2": "Ngược lại.",
+        "3": "Lực cản vẫn làm tắt."
+      },
+      "id": "q17"
+    }
+  ]
+}

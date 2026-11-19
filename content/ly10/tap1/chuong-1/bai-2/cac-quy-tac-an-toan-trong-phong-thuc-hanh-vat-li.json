@@ -1,0 +1,298 @@
+{
+  "id": "bai-2",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương I. Mở đầu",
+  "lesson": "Bài 2. Các quy tắc an toàn trong phòng thực hành Vật lí",
+  "section": "",
+  "bookPage": 12,
+  "requirements": [
+    "Nhận biết các nguy cơ mất an toàn khi làm thí nghiệm với điện, nhiệt, hoá chất, vật sắc nhọn, phóng xạ.",
+    "Thực hiện được các quy tắc an toàn và hiểu ý nghĩa các biển báo trong phòng thực hành."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các nguy cơ mất an toàn trong phòng thực hành: điện giật (dây điện hở, nguồn điện cao áp), bỏng (nguồn nhiệt, nước sôi), cháy nổ (chất dễ cháy, bình khí nén), chấn thương do vật sắc nhọn hoặc vật nặng rơi, hoá chất độc, nhiễm xạ từ nguồn phóng xạ."
+    },
+    {
+      "type": "text",
+      "content": "Quy tắc an toàn khi dùng điện: đọc kĩ hướng dẫn và kiểm tra thiết bị trước khi dùng; chỉ cắm điện khi đã lắp mạch đúng và được giáo viên cho phép; không chạm vào phần kim loại hở; tay khô khi thao tác; ngắt nguồn trước khi tháo lắp; không dùng thiết bị quá công suất."
+    },
+    {
+      "type": "text",
+      "content": "Quy tắc khi dùng nguồn nhiệt và hoá chất: dùng kẹp, găng tay khi tiếp xúc vật nóng; không nếm, ngửi trực tiếp hoá chất; đeo kính bảo hộ; để chất dễ cháy xa nguồn nhiệt; bỏ chất thải đúng nơi quy định."
+    },
+    {
+      "type": "text",
+      "content": "Quy tắc chung: mặc trang phục gọn gàng, buộc tóc; không ăn uống, đùa nghịch; làm thí nghiệm đúng hướng dẫn, dưới sự giám sát của giáo viên; biết vị trí bình chữa cháy, tủ thuốc; dọn dẹp, rửa tay sau khi làm xong; báo ngay cho giáo viên khi có sự cố."
+    },
+    {
+      "type": "text",
+      "content": "Biển báo an toàn: biển cấm (viền đỏ, hình tròn: cấm lửa, cấm chạm tay), biển cảnh báo (tam giác vàng viền đen: điện cao áp, nhiệt độ cao, chất độc, phóng xạ), biển bắt buộc (hình tròn nền xanh: phải đeo kính, găng tay), biển chỉ dẫn (hình chữ nhật xanh lá: lối thoát hiểm, vòi rửa mắt)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b2-bien-bao.svg",
+      "caption": "Các nhóm biển báo an toàn trong phòng thực hành"
+    },
+    {
+      "type": "text",
+      "content": "Một số kí hiệu trên thiết bị: DC hoặc dấu gạch ngang – dòng điện một chiều; AC hoặc dấu ~ – dòng điện xoay chiều; dấu + và − là cực dương, cực âm của nguồn; \"Input/Output\" là đầu vào/ra; kí hiệu thùng rác gạch chéo – không vứt chung với rác thường."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Ví dụ 1: Một thiết bị ghi 'Input: 220 V AC; Output: 12 V DC'. Hãy nhận định đúng về thiết bị.",
+      "steps": [
+        "Input 220 V AC: đầu vào là điện xoay chiều điện áp 220 V nên phải cắm đúng nguồn và không chạm vào đầu dây hở.",
+        "Output 12 V DC: đầu ra là dòng một chiều 12 V, phân biệt đúng cực dương và cực âm khi nối mạch."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Biển báo hình tam giác nền vàng viền đen có ý nghĩa:",
+      "choices": [
+        "cảnh báo nguy hiểm",
+        "cấm thực hiện",
+        "bắt buộc thực hiện",
+        "chỉ dẫn lối đi"
+      ],
+      "answer": 0,
+      "explain": "Tam giác vàng là biển cảnh báo.",
+      "wrong_explain": {
+        "1": "Biển cấm hình tròn viền đỏ.",
+        "2": "Biển bắt buộc nền xanh.",
+        "3": "Biển chỉ dẫn hình chữ nhật xanh lá."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Kí hiệu \"~\" hoặc \"AC\" trên thiết bị điện chỉ:",
+      "choices": [
+        "dòng điện xoay chiều",
+        "dòng điện một chiều",
+        "cực dương",
+        "đầu ra"
+      ],
+      "answer": 0,
+      "explain": "AC: alternating current.",
+      "wrong_explain": {
+        "1": "DC.",
+        "2": "Dấu +.",
+        "3": "Output."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trước khi cắm nguồn cho mạch điện thí nghiệm, cần:",
+      "choices": [
+        "kiểm tra mạch đã lắp đúng và được giáo viên cho phép",
+        "bật công tắc ngay",
+        "tăng điện áp lên mức cao nhất",
+        "chạm thử vào dây dẫn"
+      ],
+      "answer": 0,
+      "explain": "Tránh chập cháy, điện giật.",
+      "wrong_explain": {
+        "1": "Nguy hiểm.",
+        "2": "Nguy hiểm.",
+        "3": "Nguy hiểm."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Biển báo hình tròn nền xanh có hình kính bảo hộ nghĩa là:",
+      "choices": [
+        "bắt buộc đeo kính bảo hộ",
+        "cấm đeo kính",
+        "cảnh báo chói mắt",
+        "nơi để kính"
+      ],
+      "answer": 0,
+      "explain": "Biển bắt buộc.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi cầm vật vừa nung nóng cần dùng:",
+      "choices": [
+        "kẹp hoặc găng tay cách nhiệt",
+        "tay không",
+        "khăn ướt",
+        "giấy mỏng"
+      ],
+      "answer": 0,
+      "explain": "Tránh bỏng.",
+      "wrong_explain": {
+        "1": "Bỏng.",
+        "2": "Có thể gây nổ hơi nước, bỏng.",
+        "3": "Không cách nhiệt."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bạn A làm đổ nước lên bàn có ổ cắm đang có điện. Việc đầu tiên nên làm là:",
+      "choices": [
+        "ngắt nguồn điện (cầu dao, công tắc) rồi báo giáo viên",
+        "lau nước bằng tay ngay",
+        "nhấc ổ cắm lên bằng tay ướt",
+        "tiếp tục thí nghiệm"
+      ],
+      "answer": 0,
+      "explain": "Loại bỏ nguy cơ điện giật trước.",
+      "wrong_explain": {
+        "1": "Nguy cơ điện giật.",
+        "2": "Rất nguy hiểm.",
+        "3": "Sai."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao không được để chất dễ cháy (cồn, xăng) gần đèn cồn đang cháy?",
+      "choices": [
+        "Vì hơi của chúng dễ bắt lửa gây cháy nổ",
+        "Vì làm đèn cồn tắt",
+        "Vì làm giảm nhiệt độ ngọn lửa",
+        "Vì làm bẩn bàn"
+      ],
+      "answer": 0,
+      "explain": "Hơi chất dễ cháy bắt lửa.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Biển cảnh báo có kí hiệu ba cánh quạt đen trên nền vàng cảnh báo:",
+      "choices": [
+        "chất phóng xạ",
+        "điện cao áp",
+        "chất độc",
+        "nhiệt độ cao"
+      ],
+      "answer": 0,
+      "explain": "Kí hiệu phóng xạ quốc tế.",
+      "wrong_explain": {
+        "1": "Tia sét.",
+        "2": "Đầu lâu xương chéo.",
+        "3": "Kí hiệu khác."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi làm thí nghiệm với nguồn điện cao áp, tại sao tay phải khô?",
+      "choices": [
+        "Vì nước làm giảm điện trở của da, dễ bị điện giật",
+        "Vì nước làm hỏng pin",
+        "Vì tay ướt làm trơn dụng cụ",
+        "Vì tay ướt làm bẩn mạch"
+      ],
+      "answer": 0,
+      "explain": "Da ướt dẫn điện tốt hơn.",
+      "wrong_explain": {
+        "1": "Không phải lí do chính.",
+        "2": "Không phải lí do chính.",
+        "3": "Sai."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Việc làm nào vi phạm quy tắc an toàn?",
+      "choices": [
+        "Ăn bánh trong lúc chờ kết quả thí nghiệm",
+        "Buộc gọn tóc dài trước khi làm",
+        "Đọc hướng dẫn trước khi dùng thiết bị",
+        "Rửa tay sau khi làm xong"
+      ],
+      "answer": 0,
+      "explain": "Không ăn uống trong phòng thực hành.",
+      "wrong_explain": {
+        "1": "Đúng quy tắc.",
+        "2": "Đúng quy tắc.",
+        "3": "Đúng quy tắc."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Một thiết bị ghi \"Input: 220 V AC; Output: 12 V DC\". Nhận định đúng là:",
+      "choices": [
+        "thiết bị nhận điện xoay chiều 220 V và cấp ra điện một chiều 12 V",
+        "thiết bị cấp ra điện xoay chiều 12 V",
+        "thiết bị nhận điện một chiều 220 V",
+        "có thể cắm trực tiếp vào nguồn 12 V xoay chiều"
+      ],
+      "answer": 0,
+      "explain": "Đọc đúng kí hiệu AC/DC và Input/Output.",
+      "wrong_explain": {
+        "1": "Output là DC.",
+        "2": "Input là AC.",
+        "3": "Sai nguồn vào."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi nhìn thấy khói bốc lên từ bộ nguồn điện, hành động đúng là:",
+      "choices": [
+        "ngắt nguồn, báo giáo viên, dùng bình chữa cháy nếu cần",
+        "dùng nước dập ngay",
+        "mở nắp thiết bị kiểm tra",
+        "tiếp tục dùng vì khói ít"
+      ],
+      "answer": 0,
+      "explain": "Không dùng nước với cháy điện.",
+      "wrong_explain": {
+        "1": "Nước dẫn điện, nguy hiểm.",
+        "2": "Nguy hiểm.",
+        "3": "Sai."
+      },
+      "id": "q12"
+    }
+  ]
+}

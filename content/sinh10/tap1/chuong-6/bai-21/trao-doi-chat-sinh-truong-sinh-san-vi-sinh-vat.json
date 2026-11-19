@@ -1,0 +1,231 @@
+{
+  "id": "bai-21",
+  "grade": 10,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 10",
+  "chapter": "Chương 6. Sinh học vi sinh vật",
+  "lesson": "Bài 21. Trao đổi chất, sinh trưởng và sinh sản ở vi sinh vật",
+  "section": "",
+  "bookPage": 122,
+  "requirements": [
+    "Nêu được ví dụ về tổng hợp và phân giải các chất ở vi sinh vật.",
+    "Nêu được khái niệm sinh trưởng ở vi sinh vật và đặc điểm các pha sinh trưởng của quần thể vi khuẩn.",
+    "Trình bày được các yếu tố ảnh hưởng đến sinh trưởng và ý nghĩa, tác hại của kháng sinh.",
+    "Phân biệt được các hình thức sinh sản ở vi sinh vật nhân sơ và nhân thực."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Vi sinh vật có khả năng tổng hợp đầy đủ các chất như carbohydrate, protein, nucleic acid, lipid. Phần lớn vi sinh vật tổng hợp được 20 amino acid, còn người chỉ tổng hợp được 11. Một số vi khuẩn lam và Rhizobium cố định N₂ thành NH₃ để tổng hợp amino acid. Vi sinh vật dị dưỡng hoại sinh tiết enzyme phân giải chất hữu cơ phức tạp thành chất đơn giản rồi hấp thụ vào tế bào."
+    },
+    {
+      "type": "text",
+      "content": "Sinh trưởng của quần thể vi sinh vật là sự tăng số lượng tế bào. Thời gian thế hệ g là thời gian để số tế bào tăng gấp đôi; E. coli có g khoảng 20 phút. Trong điều kiện lí tưởng, số tế bào N_t = N₀ × 2^n."
+    },
+    {
+      "type": "text",
+      "content": "Nuôi cấy không liên tục có bốn pha: pha tiềm phát (thích nghi), pha luỹ thừa (phân chia mạnh, đạt cực đại cuối pha), pha cân bằng (số tế bào sinh ra bằng số chết đi) và pha suy vong (số tế bào giảm). Nuôi cấy liên tục bổ sung dinh dưỡng và loại bỏ sản phẩm, giữ mật độ ổn định để thu năng suất cao nhất, như trong sản xuất vitamin, enzyme, kháng sinh."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b21-duong-cong-sinh-truong.svg",
+      "caption": "Đường cong sinh trưởng của quần thể vi khuẩn trong nuôi cấy không liên tục"
+    },
+    {
+      "type": "text",
+      "content": "Yếu tố vật lí: nhiệt độ (ưa lạnh, ưa ấm, ưa nhiệt, siêu ưa nhiệt), độ ẩm, pH, ánh sáng, áp suất thẩm thấu. Ứng dụng: thanh trùng bằng nhiệt, phơi khô, ướp muối, ướp đường. Yếu tố hoá học: chất dinh dưỡng, nhân tố sinh trưởng, chất ức chế như phenol, cồn, chlorine và kháng sinh."
+    },
+    {
+      "type": "text",
+      "content": "Kháng sinh là chất do vi sinh vật tiết ra hoặc tổng hợp nhân tạo, ức chế hoặc tiêu diệt vi khuẩn. Lạm dụng kháng sinh làm vi khuẩn kháng thuốc, thậm chí đa kháng thuốc. Phải dùng đúng chỉ định và tuân thủ liều điều trị; không tự ý dùng kháng sinh cho các bệnh do virus như cảm lạnh."
+    },
+    {
+      "type": "text",
+      "content": "Mọi vi sinh vật đều có ba hình thức sinh sản chính: phân đôi (phổ biến nhất; vi khuẩn phân đôi vô tính, trùng giày có phân đôi hữu tính theo cách tiếp hợp), sinh sản bằng bào tử (bào tử đính, bào tử tiếp hợp, ngoại bào tử; nội bào tử chỉ là cách chống chịu môi trường bất lợi) và nảy chồi (vi khuẩn quang dưỡng màu tía, nấm men)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b21-kieu-sinh-san.svg",
+      "caption": "Ba hình thức sinh sản của vi sinh vật"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Vì sao vi khuẩn E. coli có thể tăng số lượng rất nhanh trong điều kiện thuận lợi?",
+      "steps": [
+        "Vi khuẩn sinh sản bằng phân đôi với thời gian thế hệ khoảng 20 phút, nên số tế bào tăng theo luỹ thừa 2^n."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Vì sao người ta dùng nhiệt độ cao để thanh trùng thực phẩm và dụng cụ?",
+      "steps": [
+        "Nhiệt độ cao làm biến tính protein và enzyme của vi sinh vật, khiến chúng không sinh trưởng và bị tiêu diệt."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong môi trường nuôi cấy không liên tục, số lượng tế bào tăng nhanh nhất ở pha:",
+      "choices": [
+        "luỹ thừa",
+        "tiềm phát",
+        "cân bằng",
+        "suy vong"
+      ],
+      "answer": 0,
+      "explain": "Pha luỹ thừa là pha phân chia mạnh nhất.",
+      "wrong_explain": {
+        "1": "Pha tiềm phát vi khuẩn còn thích nghi.",
+        "2": "Pha cân bằng số tế bào không tăng nhanh.",
+        "3": "Pha suy vong số tế bào giảm."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thời gian thế hệ là:",
+      "choices": [
+        "thời gian để số tế bào trong quần thể tăng gấp đôi",
+        "thời gian để tế bào chết đi",
+        "thời gian chuẩn bị nuôi cấy",
+        "thời gian sống của một bào tử"
+      ],
+      "answer": 0,
+      "explain": "Thời gian thế hệ là thời gian tăng gấp đôi số tế bào.",
+      "wrong_explain": {
+        "1": "Đây là khái niệm tế bào chết, không phải thời gian thế hệ.",
+        "2": "Không phải thời gian chuẩn bị.",
+        "3": "Không phải thời gian sống của bào tử."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hình thức sinh sản phổ biến nhất ở vi sinh vật là:",
+      "choices": [
+        "phân đôi",
+        "nảy chồi",
+        "bào tử đính",
+        "bào tử đốt"
+      ],
+      "answer": 0,
+      "explain": "Phân đôi là hình thức phổ biến nhất.",
+      "wrong_explain": {
+        "1": "Nảy chồi chỉ ở một số ít loài.",
+        "2": "Bào tử đính là một loại bào tử.",
+        "3": "Bào tử đốt là một loại bào tử."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Pha cân bằng trong nuôi cấy không liên tục xảy ra vì:",
+      "choices": [
+        "dinh dưỡng giảm, chất độc tăng khiến số tế bào sinh ra bằng số chết đi",
+        "dinh dưỡng được bổ sung đầy đủ",
+        "vi khuẩn không còn chất độc",
+        "tế bào không phân chia nữa"
+      ],
+      "answer": 0,
+      "explain": "Ở pha cân bằng, tốc độ sinh ra và tốc độ chết ngang nhau.",
+      "wrong_explain": {
+        "1": "Môi trường không được bổ sung trong nuôi cấy không liên tục.",
+        "2": "Chất độc tăng dần.",
+        "3": "Tế bào vẫn phân chia nhưng cân bằng với chết."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vi sinh vật sống trong đường ruột người, cạnh tranh với vi sinh vật gây bệnh để:",
+      "choices": [
+        "nâng cao khả năng kháng bệnh và hỗ trợ tiêu hoá",
+        "gây hỏng thức ăn trong ruột",
+        "thay thế hoàn toàn tế bào ruột",
+        "làm giảm pH máu"
+      ],
+      "answer": 0,
+      "explain": "Vi sinh vật có lợi hỗ trợ cơ thể.",
+      "wrong_explain": {
+        "1": "Đây là tác hại, không phải vai trò có lợi.",
+        "2": "Không thay thế tế bào ruột.",
+        "3": "Không làm giảm pH máu."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao nội bào tử không phải là hình thức sinh sản của vi khuẩn?",
+      "choices": [
+        "chỉ là cách chống chịu môi trường bất lợi, không tạo cá thể mới",
+        "làm tăng số lượng tế bào ngay",
+        "tạo ra hai cá thể mới nhờ nảy chồi",
+        "là giai đoạn của phân đôi"
+      ],
+      "answer": 0,
+      "explain": "Nội bào tử giúp vi khuẩn sống tiềm sinh, không nhân số lượng.",
+      "wrong_explain": {
+        "1": "Nội bào tử không làm tăng số lượng.",
+        "2": "Nảy chồi là hình thức khác.",
+        "3": "Phân đôi không tạo nội bào tử."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Người ta dùng ướp muối để bảo quản thực phẩm vì:",
+      "choices": [
+        "môi trường ưu trương làm vi sinh vật mất nước và không sinh trưởng",
+        "muối làm vi sinh vật phát triển mạnh",
+        "muối làm tăng pH thức ăn",
+        "muối cung cấp chất dinh dưỡng cho vi sinh vật"
+      ],
+      "answer": 0,
+      "explain": "Áp suất thẩm thấu cao ức chế sinh trưởng.",
+      "wrong_explain": {
+        "1": "Muối ức chế, không kích thích.",
+        "2": "Muối không làm tăng pH theo hướng có lợi.",
+        "3": "Muối không là nguồn dinh dưỡng chính."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao không nên tự ý mua kháng sinh để điều trị cảm lạnh, đau họng, ho?",
+      "choices": [
+        "cảm lạnh chủ yếu do virus, kháng sinh không tác dụng và dễ gây kháng thuốc",
+        "kháng sinh tiêu diệt virus cảm lạnh",
+        "kháng sinh làm bệnh nặng hơn ngay",
+        "kháng sinh không có tác dụng phụ"
+      ],
+      "answer": 0,
+      "explain": "Kháng sinh không diệt virus và có thể gây kháng thuốc.",
+      "wrong_explain": {
+        "1": "Kháng sinh không tác dụng với virus.",
+        "2": "Không phải lí do chính.",
+        "3": "Kháng sinh có tác dụng phụ."
+      },
+      "id": "q08"
+    }
+  ]
+}

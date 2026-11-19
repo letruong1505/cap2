@@ -1,0 +1,204 @@
+{
+  "id": "bai-22",
+  "grade": 7,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 7",
+  "chapter": "Chương VII. Trao đổi chất và chuyển hoá năng lượng ở sinh vật",
+  "lesson": "Bài 22. Quang hợp ở thực vật",
+  "section": "",
+  "bookPage": 101,
+  "requirements": [
+    "Nêu được khái niệm, nguyên liệu, sản phẩm của quang hợp.",
+    "Viết được phương trình quang hợp.",
+    "Nêu được mối quan hệ giữa trao đổi chất và chuyển hoá năng lượng trong quang hợp.",
+    "Nêu được vai trò của lá cây với chức năng quang hợp."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Quang hợp là quá trình lá cây sử dụng nước và khí carbon dioxide nhờ năng lượng ánh sáng để tổng hợp chất hữu cơ và giải phóng oxygen. Quá trình này diễn ra chủ yếu ở lá, trong bào quan lục lạp."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/khtn-la-quang-hop.svg",
+      "caption": "Cấu tạo lá và trao đổi khí, nước khi quang hợp (minh họa)."
+    },
+    {
+      "type": "formula",
+      "content": "6CO2 + 6H2O → (ánh sáng, diệp lục) → C₆H₁₂O₆ + 6O2"
+    },
+    {
+      "type": "text",
+      "content": "Các phân tử glucose tạo thành trong quang hợp liên kết với nhau hình thành tinh bột, là chất dự trữ đặc trưng ở thực vật."
+    },
+    {
+      "type": "text",
+      "content": "Trong quang hợp, trao đổi chất và chuyển hoá năng lượng diễn ra đồng thời: quang năng chuyển hoá thành hoá năng dự trữ trong các hợp chất hữu cơ."
+    },
+    {
+      "type": "text",
+      "content": "Lá là cơ quan chủ yếu thực hiện quang hợp. Phiến lá có diện tích bề mặt lớn; lớp biểu bì có khí khổng để carbon dioxide đi vào và oxygen đi ra; lục lạp chứa diệp lục để hấp thụ ánh sáng; gân lá vận chuyển nước và chất hữu cơ."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Trong 1 giờ, một lá cây tổng hợp được 12 đơn vị glucose. Trong 4 giờ tổng hợp được bao nhiêu đơn vị glucose?",
+      "expr": "12 * 4",
+      "steps": [
+        "Số glucose mỗi giờ là 12.",
+        "12 × 4 = 48 đơn vị."
+      ],
+      "answer": "48"
+    },
+    {
+      "problem": "Một cây có 3 lá, mỗi lá có 2 mặt đều có khí khổng. Tổng số mặt lá có khí khổng là bao nhiêu?",
+      "expr": "3 * 2",
+      "steps": [
+        "Mỗi lá có 2 mặt.",
+        "3 × 2 = 6 mặt lá."
+      ],
+      "answer": "6"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Quang hợp là quá trình lá cây sử dụng nước và carbon dioxide để tổng hợp:",
+      "choices": [
+        "Chất hữu cơ và giải phóng oxygen",
+        "Khí nitrogen",
+        "Nước",
+        "Muối khoáng"
+      ],
+      "answer": 0,
+      "explain": "Quang hợp tổng hợp chất hữu cơ và giải phóng oxygen nhờ năng lượng ánh sáng.",
+      "wrong_explain": {
+        "1": "Khí nitrogen không được tổng hợp trong quang hợp.",
+        "2": "Nước là nguyên liệu, không phải sản phẩm của quang hợp.",
+        "3": "Muối khoáng được hấp thụ từ đất, không phải sản phẩm quang hợp."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Bào quan thực hiện quang hợp trong tế bào lá là:",
+      "choices": [
+        "Lục lạp",
+        "Ti thể",
+        "Nhân",
+        "Ribosome"
+      ],
+      "answer": 0,
+      "explain": "Quang hợp diễn ra trong lục lạp có chứa diệp lục.",
+      "wrong_explain": {
+        "1": "Ti thể là nơi hô hấp tế bào.",
+        "2": "Nhân chứa vật chất di truyền, không thực hiện quang hợp.",
+        "3": "Ribosome tổng hợp protein, không thực hiện quang hợp."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Sản phẩm của quang hợp gồm:",
+      "choices": [
+        "Glucose và oxygen",
+        "Nước và carbon dioxide",
+        "Ánh sáng và diệp lục",
+        "Muối khoáng và nitrogen"
+      ],
+      "answer": 0,
+      "explain": "Quang hợp tạo ra glucose (và tinh bột) và giải phóng oxygen.",
+      "wrong_explain": {
+        "1": "Nước và carbon dioxide là nguyên liệu của quang hợp.",
+        "2": "Ánh sáng và diệp lục là các yếu tố tham gia, không phải sản phẩm.",
+        "3": "Muối khoáng và nitrogen không phải sản phẩm quang hợp."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Chất dự trữ đặc trưng ở thực vật được hình thành từ các phân tử glucose là:",
+      "choices": [
+        "Tinh bột",
+        "Protein",
+        "Lipid",
+        "Vitamin"
+      ],
+      "answer": 0,
+      "explain": "Các phân tử glucose liên kết với nhau tạo thành tinh bột.",
+      "wrong_explain": {
+        "1": "Protein không được tạo trực tiếp từ liên kết glucose trong bài.",
+        "2": "Lipid không phải chất dự trữ đặc trưng từ glucose trong bài.",
+        "3": "Vitamin không được hình thành như vậy."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Khí khổng trên lá có vai trò:",
+      "choices": [
+        "Cho carbon dioxide đi vào và oxygen đi ra",
+        "Hấp thụ ánh sáng",
+        "Vận chuyển nước",
+        "Tổng hợp glucose"
+      ],
+      "answer": 0,
+      "explain": "Khí khổng là nơi carbon dioxide đi vào và oxygen đi ra khỏi lá.",
+      "wrong_explain": {
+        "1": "Hấp thụ ánh sáng là chức năng của diệp lục trong lục lạp.",
+        "2": "Vận chuyển nước là chức năng của gân lá.",
+        "3": "Tổng hợp glucose diễn ra trong lục lạp, không phải khí khổng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trong 1 giờ, một lá cây tổng hợp được 12 đơn vị glucose. Trong 4 giờ tổng hợp được bao nhiêu đơn vị?",
+      "expr": "12 * 4",
+      "answer": "48",
+      "explain": "12 × 4 = 48 đơn vị."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một cây có 3 lá, mỗi lá có 2 mặt đều có khí khổng. Tổng số mặt lá có khí khổng là bao nhiêu?",
+      "expr": "3 * 2",
+      "answer": "6",
+      "explain": "3 × 2 = 6 mặt lá."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Ở các loài cây có lá biến đổi thành gai hoặc xương rồng, bộ phận nào thực hiện quang hợp chủ yếu?",
+      "choices": [
+        "Thân (cành) xanh",
+        "Rễ",
+        "Hoa",
+        "Quả"
+      ],
+      "answer": 0,
+      "explain": "Ở những cây có lá biến đổi, thân hoặc cành chứa diệp lục nên thực hiện quang hợp.",
+      "wrong_explain": {
+        "1": "Rễ không có diệp lục nên không quang hợp.",
+        "2": "Hoa không phải bộ phận quang hợp chủ yếu.",
+        "3": "Quả không phải bộ phận quang hợp chủ yếu."
+      },
+      "concept": true
+    }
+  ]
+}

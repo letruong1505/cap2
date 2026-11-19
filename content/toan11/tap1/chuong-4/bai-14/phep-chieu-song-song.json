@@ -1,0 +1,335 @@
+{
+  "id": "bai-14",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 11, tập 1",
+  "chapter": "Chương IV. Quan hệ song song trong không gian",
+  "lesson": "Bài 14. Phép chiếu song song",
+  "section": "",
+  "bookPage": 95,
+  "requirements": [
+    "Hiểu phép chiếu song song và các tính chất bảo toàn.",
+    "Vẽ hình biểu diễn của một hình trong không gian và tính tỉ số đoạn thẳng qua phép chiếu."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cho mặt phẳng (P) và đường thẳng Δ cắt (P). Với mỗi điểm M, đường thẳng qua M song song với Δ cắt (P) tại M′. Điểm M′ gọi là hình chiếu song song của M lên (P) theo phương Δ. (P) gọi là mặt phẳng chiếu, Δ là phương chiếu."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b14-phep-chieu.svg",
+      "caption": "Phép chiếu song song lên (P) theo phương Δ: các đường chiếu AA′, BB′ song song với nhau"
+    },
+    {
+      "type": "text",
+      "content": "Tính chất: (1) Phép chiếu song song biến ba điểm thẳng hàng thành ba điểm thẳng hàng và bảo toàn thứ tự của chúng. (2) Biến đường thẳng thành đường thẳng, tia thành tia, đoạn thẳng thành đoạn thẳng. (3) Biến hai đường thẳng song song thành hai đường thẳng song song hoặc trùng nhau. (4) Bảo toàn tỉ số độ dài của hai đoạn thẳng cùng nằm trên một đường thẳng hoặc trên hai đường thẳng song song."
+    },
+    {
+      "type": "formula",
+      "content": "A, B, C thẳng hàng: AB/BC = A′B′/B′C′.   M là trung điểm AB thì M′ là trung điểm A′B′."
+    },
+    {
+      "type": "text",
+      "content": "Hình biểu diễn của một hình trong không gian trên mặt phẳng là hình chiếu song song của hình đó lên mặt phẳng theo một phương chiếu. Hình vuông, hình chữ nhật, hình thoi có hình biểu diễn là hình bình hành; hình tròn có hình biểu diễn là hình elip; tam giác bất kì có hình biểu diễn là tam giác (bất kì)."
+    },
+    {
+      "type": "method",
+      "title": "Tính tỉ số độ dài qua phép chiếu song song",
+      "when": "Biết tỉ số AB/BC hoặc điểm chia đoạn, yêu cầu tính tỉ số hoặc độ dài của ảnh.",
+      "steps": [
+        "Kiểm tra các điểm thẳng hàng (hoặc các đoạn nằm trên hai đường song song).",
+        "Áp dụng bảo toàn tỉ số: A′B′/B′C′ = AB/BC.",
+        "Thay số, giải để tìm độ dài ảnh.",
+        "Lưu ý: độ dài tuyệt đối thường không giữ nguyên."
+      ],
+      "notes": [
+        "Hình chiếu của trung điểm là trung điểm.",
+        "Hình chiếu của đoạn song song với mặt chiếu cùng phương thì bằng đoạn gốc."
+      ],
+      "sample": {
+        "problem": "AB/BC = 2/3 và A′B′ = 6. Tính B′C′.",
+        "steps": [
+          "A′B′/B′C′ = 2/3.",
+          "B′C′ = 6·3/2 = 9."
+        ],
+        "answer": "9"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Vẽ hình biểu diễn của hình cho trước",
+      "when": "Cần vẽ hình chóp, lăng trụ, hình hộp trên giấy; hay xác định hình biểu diễn của hình vuông, hình tròn.",
+      "steps": [
+        "Giữ nguyên quan hệ song song và tỉ số đoạn thẳng nằm trên một đường.",
+        "Hình phẳng đã cho: vẽ bằng hình bình hành, elip tương ứng.",
+        "Nét thấy vẽ liền, nét bị che khuất vẽ nét đứt.",
+        "Đặt tên các đỉnh theo đúng thứ tự."
+      ],
+      "notes": [
+        "Góc và độ dài tuyệt đối không được bảo toàn.",
+        "Chọn hình biểu diễn dễ thấy các quan hệ song song."
+      ],
+      "sample": {
+        "problem": "Hình biểu diễn của hình vuông ABCD là hình gì?",
+        "steps": [
+          "Hai cặp cạnh đối song song được bảo toàn.",
+          "Hình bình hành."
+        ],
+        "answer": "Hình bình hành"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Chứng minh đồng quy, thẳng hàng bằng phép chiếu song song",
+      "when": "Chứng minh điểm là trung điểm, ba điểm thẳng hàng qua hình biểu diễn.",
+      "steps": [
+        "Chọn phép chiếu phù hợp (phương song song một cạnh).",
+        "Xác định ảnh của các điểm.",
+        "Dùng tính chất bảo toàn thứ tự, tỉ số để kết luận.",
+        "Quay lại hình gốc."
+      ],
+      "notes": [
+        "Trọng tâm (chia trung tuyến 2 : 1) được bảo toàn qua phép chiếu.",
+        "Phép chiếu song song không bảo toàn góc nên không dùng cho vuông góc."
+      ],
+      "sample": {
+        "problem": "G là trọng tâm tam giác ABC. Ảnh G′ chia trung tuyến ảnh theo tỉ số nào?",
+        "steps": [
+          "AG/GM = 2.",
+          "G′ chia A′M′ theo A′G′/G′M′ = 2."
+        ],
+        "answer": "2 : 1"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "A, B, C thẳng hàng, AB/BC = 2/3, A′B′ = 6. Tính B′C′.",
+      "steps": [
+        "Bảo toàn tỉ số.",
+        "B′C′ = 6·3/2 = 9."
+      ],
+      "expr": "6*3/2",
+      "answer": "9"
+    },
+    {
+      "problem": "M trung điểm AB, A′B′ = 10. Tính A′M′.",
+      "steps": [
+        "M′ là trung điểm A′B′.",
+        "A′M′ = 5."
+      ],
+      "expr": "10/2",
+      "answer": "5"
+    },
+    {
+      "problem": "G là trọng tâm tam giác ABC, A′G′/G′M′ = k. Tìm k.",
+      "steps": [
+        "AG/GM = 2.",
+        "k = 2."
+      ],
+      "expr": "2/1",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hình biểu diễn của hình vuông là:",
+      "choices": [
+        "hình bình hành",
+        "hình thoi",
+        "hình vuông",
+        "hình tròn"
+      ],
+      "answer": 0,
+      "explain": "Phép chiếu song song bảo toàn tính song song nên hai cặp cạnh đối vẫn song song.",
+      "wrong_explain": {
+        "1": "Hình thoi cần các cạnh bằng nhau, không được bảo toàn.",
+        "2": "Hình vuông cần vuông góc, không được bảo toàn.",
+        "3": "Hình tròn là ảnh của đường tròn."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hình biểu diễn của đường tròn là:",
+      "choices": [
+        "hình elip",
+        "hình tròn",
+        "hình bình hành",
+        "hình thoi"
+      ],
+      "answer": 0,
+      "explain": "Đường tròn qua phép chiếu song song cho elip.",
+      "wrong_explain": {
+        "1": "Hình tròn chỉ khi mặt phẳng chứa đường tròn song song mặt chiếu.",
+        "2": "Không có đỉnh nên không là hình bình hành.",
+        "3": "Không có đỉnh nên không là hình thoi."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "M là trung điểm AB, A′B′ = 10. Độ dài A′M′ là:",
+      "expr": "10/2",
+      "answer": "5",
+      "explain": "M′ là trung điểm A′B′ nên A′M′ = 5.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Phép chiếu song song biến ba điểm thẳng hàng thành ba điểm như thế nào? Số điểm trong ảnh thẳng hàng là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Ba điểm thẳng hàng được biến thành ba điểm thẳng hàng.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phép chiếu song song KHÔNG bảo toàn:",
+      "choices": [
+        "góc và độ dài tuyệt đối",
+        "tính song song",
+        "tỉ số đoạn trên một đường",
+        "thứ tự ba điểm thẳng hàng"
+      ],
+      "answer": 0,
+      "explain": "Góc và độ dài thường bị thay đổi.",
+      "wrong_explain": {
+        "1": "Song song được bảo toàn.",
+        "2": "Tỉ số được bảo toàn.",
+        "3": "Thứ tự được bảo toàn."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "A, B, C thẳng hàng, AB/BC = 2/3, A′B′ = 6. Độ dài B′C′ là:",
+      "expr": "6*3/2",
+      "answer": "9",
+      "explain": "B′C′ = 9.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "AB = 12, M thuộc AB với AM/MB = 1/2. Ảnh A′B′ = 18 thì A′M′ bằng:",
+      "expr": "18*1/3",
+      "answer": "6",
+      "explain": "A′M′/A′B′ = AM/AB = 1/3 nên A′M′ = 6.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "G trọng tâm tam giác ABC, M trung điểm BC; ảnh A′M′ = 9. Độ dài A′G′ là:",
+      "expr": "9*2/3",
+      "answer": "6",
+      "explain": "A′G′/A′M′ = 2/3 nên A′G′ = 6.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình bình hành ABCD có ảnh A′B′C′D′. Ảnh có A′B′ = 7 thì C′D′ bằng:",
+      "expr": "7",
+      "answer": "7",
+      "explain": "AB ∥ CD và AB = CD nên A′B′ = C′D′ = 7.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC có ảnh A′B′C′ với B′C′ = 8; M trung điểm BC. Độ dài B′M′ là:",
+      "expr": "8/2",
+      "answer": "4",
+      "explain": "M′ là trung điểm B′C′ nên B′M′ = 4.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "AB ∥ CD, AB/CD = 3/2 và C′D′ = 8. Độ dài A′B′ là:",
+      "expr": "8*3/2",
+      "answer": "12",
+      "explain": "Hai đoạn song song giữ tỉ số: A′B′ = 12.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đoạn AB = 20 bị chia bởi M, N thành ba phần AM : MN : NB = 2 : 3 : 5. Ảnh A′B′ = 40; độ dài M′N′ là:",
+      "expr": "40*3/10",
+      "answer": "12",
+      "explain": "M′N′/A′B′ = MN/AB = 3/10 nên M′N′ = 12.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình chữ nhật ABCD có tâm O, ảnh A′B′C′D′ có A′C′ = 14. Độ dài A′O′ là:",
+      "expr": "14/2",
+      "answer": "7",
+      "explain": "O là trung điểm AC nên O′ là trung điểm A′C′: A′O′ = 7.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong hình biểu diễn, G′ chia trung tuyến A′M′ sao cho A′G′ = 8. Độ dài G′M′ là:",
+      "expr": "8/2",
+      "answer": "4",
+      "explain": "A′G′ = 2G′M′ nên G′M′ = 4.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "AB = 30, điểm M ∈ AB thoả AM = 2MB. Ảnh A′B′ = 24. Độ dài A′M′ là:",
+      "expr": "24*2/3",
+      "answer": "16",
+      "explain": "AM/AB = 2/3 nên A′M′ = 16.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Lăng trụ ABC.A′B′C′ chiếu theo phương AA′ lên (A′B′C′). Hình chiếu của tam giác ABC là tam giác A′B′C′. Tỉ số diện tích (nhập a/b) là:",
+      "expr": "1/1",
+      "answer": "1",
+      "explain": "Hai tam giác bằng nhau nên tỉ số diện tích 1.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phép chiếu song song biến hai đường thẳng song song thành:",
+      "choices": [
+        "hai đường thẳng song song hoặc trùng nhau",
+        "hai đường thẳng cắt nhau",
+        "hai đường chéo nhau",
+        "hai đoạn bằng nhau"
+      ],
+      "answer": 0,
+      "explain": "Tính chất bảo toàn tính song song.",
+      "wrong_explain": {
+        "1": "Không thể trở thành cắt nhau.",
+        "2": "Ảnh luôn nằm trong mặt chiếu nên không chéo nhau.",
+        "3": "Độ dài không được bảo toàn."
+      },
+      "id": "q17"
+    }
+  ]
+}

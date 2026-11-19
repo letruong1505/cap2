@@ -1,0 +1,285 @@
+{
+  "id": "t12-chuong1-bai3-duong-tiem-can",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 12, tập 1",
+  "chapter": "Chương I. Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+  "lesson": "Bài 3. Đường tiệm cận của đồ thị hàm số",
+  "section": "Phần 1: Tiệm cận ngang, tiệm cận đứng, tiệm cận xiên",
+  "bookPage": 20,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đường thẳng y = y₀ gọi là tiệm cận ngang của đồ thị hàm số y = f(x) nếu lim f(x) = y₀ khi x → +∞ hoặc lim f(x) = y₀ khi x → −∞."
+    },
+    {
+      "type": "text",
+      "content": "Đường thẳng x = x₀ gọi là tiệm cận đứng của đồ thị hàm số y = f(x) nếu ít nhất một trong các điều kiện sau được thoả mãn: lim f(x) = +∞, lim f(x) = −∞, khi x → x₀⁺ hoặc khi x → x₀⁻."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/b3-tiem-can-dung.svg",
+      "caption": "Đồ thị y = (3 − x)/(x + 2) có tiệm cận đứng x = −2 và tiệm cận ngang y = −1."
+    },
+    {
+      "type": "text",
+      "content": "Đường thẳng y = ax + b (a ≠ 0) gọi là tiệm cận xiên của đồ thị hàm số y = f(x) nếu lim [f(x) − (ax + b)] = 0 khi x → +∞ hoặc khi x → −∞."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/b3-tiem-can-xien.svg",
+      "caption": "Đồ thị y = (x² − x + 2)/(x + 1) có tiệm cận đứng x = −1 và tiệm cận xiên y = x − 2."
+    },
+    {
+      "type": "text",
+      "content": "Cách tìm tiệm cận xiên: a = lim f(x)/x và b = lim [f(x) − ax] (khi x → +∞ hoặc x → −∞). Nếu a = 0 thì đường thẳng y = b là tiệm cận ngang."
+    },
+    {
+      "type": "text",
+      "content": "Với hàm phân thức, để tìm tiệm cận đứng ta xét các giá trị làm mẫu số bằng 0 (và tử số khác 0); để tìm tiệm cận xiên ta chia tử cho mẫu, viết f(x) = (đa thức bậc nhất) + (phần dư)/(mẫu), rồi xét phần dư khi x → ±∞."
+    },
+    {
+      "type": "method",
+      "title": "Tìm tiệm cận của đồ thị hàm số",
+      "when": "Đề cho hàm phân thức và hỏi tiệm cận đứng, tiệm cận ngang, tiệm cận xiên hoặc số tiệm cận.",
+      "steps": [
+        "Tìm tập xác định và các giá trị làm mẫu bằng 0 mà tử khác 0: đó là tiệm cận đứng x = x₀.",
+        "Tính lim khi x → ±∞ của y; nếu bằng số hữu hạn b thì y = b là tiệm cận ngang.",
+        "Hàm y = (ax + b)/(cx + d), c ≠ 0: tiệm cận ngang y = a/c, tiệm cận đứng x = −d/c.",
+        "Hàm có bậc tử lớn hơn bậc mẫu đúng 1: chia đa thức để tìm tiệm cận xiên."
+      ],
+      "notes": [
+        "Nếu x₀ làm cả tử và mẫu bằng 0 thì chưa chắc là tiệm cận đứng; phải rút gọn trước.",
+        "Tiệm cận ngang xét cả hai phía +∞ và −∞.",
+        "Đồ thị hàm đa thức không có tiệm cận.",
+        "Giao điểm hai tiệm cận của hàm bậc nhất/bậc nhất là tâm đối xứng."
+      ],
+      "sample": {
+        "problem": "Tìm tiệm cận của y = (2x + 1)/(x − 1).",
+        "steps": [
+          "Mẫu bằng 0 khi x = 1, tử tại x = 1 bằng 3 ≠ 0: tiệm cận đứng x = 1.",
+          "lim y khi x → ±∞ bằng 2/1 = 2: tiệm cận ngang y = 2."
+        ],
+        "answer": "x = 1 và y = 2"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tìm tiệm cận ngang của đồ thị hàm số y = (3x − 2)/(x + 1).",
+      "expr": "3",
+      "steps": [
+        "lim (3x − 2)/(x + 1) = lim (3 − 2/x)/(1 + 1/x) = 3 khi x → ±∞.",
+        "Vậy đồ thị có tiệm cận ngang y = 3."
+      ],
+      "answer": "3",
+      "figure": "figures/t12-b3-ex1.svg"
+    },
+    {
+      "problem": "Tìm tiệm cận đứng của đồ thị hàm số y = (3 − x)/(x + 2).",
+      "expr": "-2",
+      "steps": [
+        "Mẫu số x + 2 bằng 0 khi x = −2; tử số 3 − (−2) = 5 khác 0.",
+        "lim y = +∞ khi x → −2⁺ và lim y = −∞ khi x → −2⁻.",
+        "Vậy đồ thị có tiệm cận đứng x = −2."
+      ],
+      "answer": "-2",
+      "figure": "figures/b3-tiem-can-dung.svg"
+    },
+    {
+      "problem": "Tìm tiệm cận xiên của đồ thị hàm số y = (x² − x + 2)/(x + 1).",
+      "expr": "-2",
+      "steps": [
+        "Ta viết y = x − 2 + 4/(x + 1).",
+        "Vì 4/(x + 1) → 0 khi x → ±∞, nên đồ thị có tiệm cận xiên y = x − 2.",
+        "Hệ số b của tiệm cận xiên là b = −2."
+      ],
+      "answer": "-2",
+      "figure": "figures/b3-tiem-can-xien.svg"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đường thẳng y = y₀ là tiệm cận ngang của đồ thị y = f(x) khi nào?",
+      "choices": [
+        "lim f(x) = y₀ khi x → +∞ hoặc khi x → −∞",
+        "lim f(x) = +∞ khi x → y₀",
+        "f(y₀) = 0",
+        "f(x) = y₀ với mọi x"
+      ],
+      "answer": 0,
+      "explain": "Tiệm cận ngang là đường mà đồ thị tiến dần tới khi x tiến ra vô cực.",
+      "wrong_explain": {
+        "1": "Đây là điều kiện của tiệm cận đứng, không phải tiệm cận ngang.",
+        "2": "Điều kiện f(y₀) = 0 không liên quan đến tiệm cận.",
+        "3": "Nếu f(x) = y₀ với mọi x thì đồ thị là một đường thẳng trùng với tiệm cận, không phải đặc trưng của tiệm cận ngang."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tiệm cận ngang của đồ thị y = (3x − 2)/(x + 1) là y = ?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "lim (3x − 2)/(x + 1) = 3 khi x → ±∞, nên tiệm cận ngang là y = 3.",
+      "figure": "figures/t12-b3-ex1b.svg"
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tiệm cận đứng của đồ thị y = (3 − x)/(x + 2) là x = ?",
+      "expr": "-2",
+      "answer": "-2",
+      "explain": "Mẫu số x + 2 = 0 khi x = −2, tử số khác 0 tại x = −2 nên đường x = −2 là tiệm cận đứng.",
+      "figure": "figures/t12-b3-q03.svg"
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàm số y = (x² + 2)/x có bao nhiêu tiệm cận đứng?",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "Vô số"
+      ],
+      "answer": 1,
+      "explain": "Mẫu số x bằng 0 chỉ khi x = 0, và tử số x² + 2 = 2 khác 0, nên có đúng một tiệm cận đứng x = 0.",
+      "wrong_explain": {
+        "0": "Mẫu số bằng 0 tại x = 0 và tử số khác 0 ở đó, nên đồ thị có tiệm cận đứng.",
+        "2": "Chỉ có một giá trị làm mẫu số bằng 0, nên chỉ có một tiệm cận đứng.",
+        "3": "Hàm số chỉ không xác định tại x = 0, nên không có vô số tiệm cận đứng."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đồ thị hàm số y = (x² − x + 2)/(x + 1) có tiệm cận xiên y = x + b. Giá trị của b là?",
+      "expr": "-2",
+      "answer": "-2",
+      "explain": "Chia tử cho mẫu: y = x − 2 + 4/(x + 1). Vì 4/(x + 1) → 0 khi x → ±∞, nên b = −2.",
+      "figure": "figures/t12-b3-q05.svg"
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chi phí loại bỏ p% tảo độc là C(p) = 45p/(100 − p) (triệu đồng), với 0 ≤ p < 100. Tiệm cận đứng của đồ thị C(p) có ý nghĩa thực tiễn gì?",
+      "choices": [
+        "Khi p tiến gần 100%, chi phí tăng không giới hạn",
+        "Chi phí luôn bằng 0 khi p = 0",
+        "Chi phí không phụ thuộc vào p",
+        "Chi phí giảm dần về 0 khi p tiến tới 100%"
+      ],
+      "answer": 0,
+      "explain": "Mẫu số 100 − p tiến về 0 khi p → 100⁻, nên C(p) → +∞: loại bỏ gần hết tảo đòi hỏi chi phí rất lớn.",
+      "wrong_explain": {
+        "1": "C(0) = 0 là giá trị tại một điểm, không phải ý nghĩa của tiệm cận đứng.",
+        "2": "C(p) phụ thuộc rõ ràng vào p nên khẳng định này sai.",
+        "3": "Điều ngược lại xảy ra: mẫu số tiến về 0 làm chi phí tăng lên."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Đồ thị hàm số y = (x² − 4x + 2)/(1 − x) có tiệm cận xiên y = −x + b. Giá trị của b là?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Ta có y = −x + 3 − 1/(1 − x). Vì 1/(1 − x) → 0 khi x → ±∞, nên b = 3.",
+      "figure": "figures/t12-b3-q07.svg"
+    },
+    {
+      "id": "q08",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Luyện tập 1: tiệm cận ngang của đồ thị y = (2x − 1)/(x − 1) là y = ?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "lim (2x − 1)/(x − 1) = 2 khi x → ±∞, nên tiệm cận ngang là y = 2.",
+      "figure": "figures/t12-b3-q08.svg"
+    },
+    {
+      "id": "q09",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Luyện tập 2: tiệm cận đứng của đồ thị y = (2x + 1)/(x − 4) là x = ?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Mẫu số x − 4 = 0 khi x = 4, tử số 2·4 + 1 = 9 khác 0 nên x = 4 là tiệm cận đứng."
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tiệm cận ngang của đồ thị y = (2x + 1)/(x − 1) là y = ? (nhập giá trị)",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Hệ số x trên tử chia hệ số x ở mẫu: 2/1 = 2.",
+      "dang": "Tìm tiệm cận của đồ thị hàm số",
+      "id": "q11"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tiệm cận đứng của đồ thị y = (3x − 1)/(x + 2) là x = ? (nhập giá trị)",
+      "expr": "-2",
+      "answer": "-2",
+      "explain": "Mẫu x + 2 = 0 ⇔ x = −2; tại đó tử = −7 ≠ 0.",
+      "dang": "Tìm tiệm cận của đồ thị hàm số",
+      "id": "q12"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đồ thị y = (2x + 1)/(x − 1) có tâm đối xứng I(a; b). Giá trị a + b là?",
+      "expr": "1+2",
+      "answer": "3",
+      "explain": "Tâm đối xứng là giao hai tiệm cận: I(1; 2), a + b = 3.",
+      "dang": "Tìm tiệm cận của đồ thị hàm số",
+      "id": "q13"
+    },
+    {
+      "id": "q10",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tình huống mở đầu: khối lượng chất phóng xạ m(t) = 15e^(−0,012t) (gam). Khi t → +∞ thì m(t) tiến tới giá trị nào, và điều này nói lên điều gì?",
+      "choices": [
+        "0: khối lượng chất phóng xạ tiến dần về 0",
+        "15: khối lượng không đổi",
+        "+∞: khối lượng tăng không giới hạn",
+        "−15: khối lượng âm"
+      ],
+      "answer": 0,
+      "explain": "Khi t → +∞, e^(−0,012t) → 0 nên m(t) → 0: chất phóng xạ phân rã dần hết. Đường thẳng y = 0 là tiệm cận ngang của đồ thị, đúng với hình dáng đồ thị giảm dần về 0.",
+      "wrong_explain": {
+        "1": "Đây là giá trị tại t = 0 (m(0) = 15), không phải giới hạn khi t → +∞.",
+        "2": "Đồ thị giảm dần, nên khối lượng không tăng không giới hạn.",
+        "3": "Khối lượng không thể âm; đường y = −15 không liên quan đến bài toán."
+      },
+      "figure": "figures/c1-3-hinh-1-18.svg",
+      "bookPage": 20
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đồ thị y = (x² − 1)/(x² − 3x + 2) có bao nhiêu tiệm cận đứng?",
+      "expr": "1",
+      "answer": "1",
+      "explain": "Mẫu = (x − 1)(x − 2); tử = (x − 1)(x + 1). Rút gọn: (x + 1)/(x − 2). Chỉ x = 2 là tiệm cận đứng (x = 1 bị khử).",
+      "dang": "Tìm tiệm cận của đồ thị hàm số",
+      "id": "q14"
+    }
+  ]
+}

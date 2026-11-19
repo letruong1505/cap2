@@ -1,4 +1,4 @@
-name: Build Windows test exe
+name: Build Windows exe
 
 on:
   workflow_dispatch:
@@ -17,20 +17,85 @@ jobs:
         run: npm run validate
 
       - name: Install dependencies
-        run: npm install
+        shell: bash
+        env:
+          ELECTRON_SKIP_BINARY_DOWNLOAD: '1'
+        run: |
+          for i in 1 2 3; do npm install && exit 0; echo "npm install lỗi, thử lại lần $i"; rm -rf node_modules/electron; sleep 20; done; exit 1
 
       - name: Write build info
         env:
           RUN_NUMBER: ${{ github.run_number }}
           COMMIT_SHA: ${{ github.sha }}
         run: |
-          node -e "const fs=require('fs'); const info={version:'1.0.'+process.env.RUN_NUMBER, commit:process.env.COMMIT_SHA.slice(0,7)}; fs.writeFileSync('main/build-info.json', JSON.stringify(info)); console.log(JSON.stringify(info))"
+          node -e "const fs=require('fs'); const info={version:'1.2.'+(Number(process.env.RUN_NUMBER)-84), commit:process.env.COMMIT_SHA.slice(0,7)}; fs.writeFileSync('main/build-info.json', JSON.stringify(info)); console.log(JSON.stringify(info))"
 
-      - name: Build portable exe
-        run: npm run dist:win
+      - name: Set package version from run number
+        shell: bash
+        env:
+          RUN_NUMBER: ${{ github.run_number }}
+        run: npm pkg set version="1.2.$((RUN_NUMBER-84))"
+
+      - name: Add release notes from CHANGELOG.md
+        run: node tools/release-notes.js
+
+      - name: Build installer exe (THCS)
+        shell: bash
+        env:
+          ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/
+          ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/
+        run: |
+          node tools/select-product.js thcs
+          for i in 1 2 3; do npm run dist:win && exit 0; echo "build lỗi, thử lại lần $i"; sleep 20; done; exit 1
+
+      - name: Build installer exe (Nam Linh Educenter)
+        shell: bash
+        env:
+          ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/
+          ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/
+        run: |
+          node tools/select-product.js nam-linh-educenter
+          for i in 1 2 3; do npm run dist:win:nam-linh && exit 0; echo "build lỗi, thử lại lần $i"; sleep 20; done; exit 1
+
+      - name: Publish update to Cloudflare R2
+        shell: bash
+        env:
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+        run: |
+          if [ -z "$R2_BUCKET" ] || [ -z "$R2_ACCOUNT_ID" ]; then echo "Chưa cấu hình R2, bỏ qua bước đẩy bản cập nhật."; exit 0; fi
+          EP="https://$R2_ACCOUNT_ID.r2.cloudflarestorage.com"
+          cd dist-thpt
+          ls
+          # Đẩy file cài đặt và blockmap trước, latest.yml sau cùng để máy khách không thấy bản mới khi file chưa lên đủ.
+          for f in *.exe *.exe.blockmap; do aws s3 cp "$f" "s3://$R2_BUCKET/educenter/$f" --endpoint-url "$EP"; done
+          aws s3 cp latest.yml "s3://$R2_BUCKET/educenter/latest.yml" --endpoint-url "$EP" --cache-control "no-cache"
+
+      - name: Build key issuing tool exe
+        shell: bash
+        env:
+          ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/
+          ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/
+        run: |
+          for i in 1 2 3; do npm run dist:keygen && exit 0; echo "build lỗi, thử lại lần $i"; sleep 20; done; exit 1
 
       - name: Upload exe
         uses: actions/upload-artifact@v4
         with:
-          name: vung-bai-test-exe
+          name: vung-bai-exe
           path: dist/*.exe
+
+      - name: Upload THPT exe
+        uses: actions/upload-artifact@v4
+        with:
+          name: nam-linh-educenter-exe
+          path: dist-thpt/*.exe
+
+      - name: Upload key issuing tool
+        uses: actions/upload-artifact@v4
+        with:
+          name: cap-khoa-exe
+          path: dist-keygen/*.exe

@@ -1,0 +1,195 @@
+{
+  "id": "on-tap-chuong-9",
+  "kind": "review",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 2",
+  "chapter": "Chương IX. Quan hệ giữa các yếu tố trong một tam giác",
+  "title": "Ôn tập Chương IX",
+  "questions": [
+    {
+      "id": "q01",
+      "stem": "Tam giác ABC có Â = 60° và B̂ = 80°. Cạnh nào lớn nhất? Vì sao?",
+      "steps": [
+        "Ĉ = 180° − 60° − 80° = 40°.",
+        "Góc lớn nhất là B̂ = 80°. Cạnh đối diện với góc B là AC, nên AC là cạnh lớn nhất."
+      ],
+      "answer": "Cạnh AC"
+    },
+    {
+      "id": "q02",
+      "stem": "Tam giác ABC có AB = 5 cm, BC = 8 cm, CA = 7 cm. Sắp xếp các góc của tam giác theo thứ tự từ nhỏ đến lớn.",
+      "steps": [
+        "AB = 5 cm đối diện góc C; CA = 7 cm đối diện góc B; BC = 8 cm đối diện góc A.",
+        "Vì AB < CA < BC nên Ĉ < B̂ < Â."
+      ],
+      "answer": "Ĉ < B̂ < Â"
+    },
+    {
+      "id": "q03",
+      "stem": "Tam giác ABC cân tại A có Â = 50°. So sánh AB và BC.",
+      "steps": [
+        "B̂ = Ĉ = (180° − 50°) : 2 = 65°.",
+        "AB đối diện góc C = 65°, BC đối diện góc A = 50°.",
+        "Vì 65° > 50° nên AB > BC."
+      ],
+      "answer": "AB > BC"
+    },
+    {
+      "id": "q04",
+      "stem": "Tam giác ABC vuông tại A. Chứng tỏ BC là cạnh lớn nhất của tam giác.",
+      "steps": [
+        "Vì B̂ + Ĉ = 90° nên B̂ < 90° và Ĉ < 90°, tức là Â = 90° là góc lớn nhất.",
+        "Cạnh đối diện góc A là BC, nên BC lớn hơn AB và AC."
+      ],
+      "answer": "BC là cạnh lớn nhất"
+    },
+    {
+      "id": "q05",
+      "stem": "Từ điểm A nằm ngoài đường thẳng d kẻ AH vuông góc với d (H thuộc d), AH = 4 cm. Đường xiên AB kẻ từ A đến d có thể dài 3,5 cm không? Vì sao?",
+      "steps": [
+        "Đường vuông góc là đường ngắn nhất trong các đường kẻ từ A đến d, nên mọi đường xiên AB đều lớn hơn AH = 4 cm.",
+        "Vì 3,5 cm < 4 cm nên AB không thể dài 3,5 cm."
+      ],
+      "answer": "Không thể"
+    },
+    {
+      "id": "q06",
+      "stem": "Hình chữ nhật ABCD có AB = 7 cm, BC = 4 cm. Tính khoảng cách từ D đến đường thẳng AB.",
+      "steps": [
+        "DA vuông góc với AB tại A, nên khoảng cách từ D đến AB bằng DA.",
+        "Trong hình chữ nhật, DA = BC = 4 cm."
+      ],
+      "answer": "4 cm"
+    },
+    {
+      "id": "q07",
+      "stem": "Ba đoạn thẳng 3 cm, 5 cm, 8 cm có là ba cạnh của một tam giác không? Vì sao?",
+      "steps": [
+        "Đoạn dài nhất là 8 cm. Ta có 3 + 5 = 8, không lớn hơn 8.",
+        "Không thỏa bất đẳng thức tam giác nên không phải ba cạnh của một tam giác."
+      ],
+      "answer": "Không"
+    },
+    {
+      "id": "q08",
+      "stem": "Tam giác có hai cạnh 7 cm và 10 cm. Độ dài cạnh thứ ba là số nguyên (cm). Có bao nhiêu giá trị có thể?",
+      "steps": [
+        "Gọi cạnh thứ ba là x: 10 − 7 < x < 10 + 7, tức 3 < x < 17.",
+        "Các số nguyên từ 4 đến 16: có 13 giá trị."
+      ],
+      "answer": "13 giá trị"
+    },
+    {
+      "id": "q09",
+      "stem": "Tam giác cân có hai cạnh dài 4 cm và 9 cm. Tính chu vi của tam giác.",
+      "steps": [
+        "Nếu cạnh bên dài 4 cm thì ba cạnh là 4, 4, 9; nhưng 4 + 4 = 8 < 9, không tạo thành tam giác.",
+        "Vậy cạnh bên dài 9 cm, cạnh đáy 4 cm (9 < 9 + 4 thỏa mãn). Chu vi: 9 + 9 + 4 = 22 cm."
+      ],
+      "answer": "22 cm"
+    },
+    {
+      "id": "q10",
+      "stem": "Tam giác ABC có AB = 1 cm, AC = 7 cm và độ dài BC là một số nguyên (cm). Tìm BC và cho biết tam giác ABC là tam giác gì.",
+      "steps": [
+        "Theo bất đẳng thức tam giác: 7 − 1 < BC < 7 + 1, tức 6 < BC < 8.",
+        "BC là số nguyên nên BC = 7 cm.",
+        "Khi đó CA = CB = 7 cm nên tam giác ABC cân tại C."
+      ],
+      "answer": "BC = 7 cm; tam giác ABC cân tại C"
+    },
+    {
+      "id": "q11",
+      "stem": "Tam giác ABC có trung tuyến AM = 12 cm và trọng tâm G. Tính AG và GM.",
+      "steps": [
+        "AG = (2/3) · AM = (2/3) · 12 = 8 cm.",
+        "GM = AM − AG = 12 − 8 = 4 cm."
+      ],
+      "answer": "AG = 8 cm; GM = 4 cm"
+    },
+    {
+      "id": "q12",
+      "stem": "Tam giác ABC có trung tuyến BN = 15 cm và trọng tâm G. Tính BG.",
+      "steps": [
+        "Trọng tâm cách mỗi đỉnh một khoảng bằng 2/3 độ dài trung tuyến đi qua đỉnh đó.",
+        "BG = (2/3) · 15 = 10 cm."
+      ],
+      "answer": "BG = 10 cm"
+    },
+    {
+      "id": "q13",
+      "stem": "Tam giác ABC có trung tuyến CP = 9 cm và trọng tâm G. Tính GP.",
+      "steps": [
+        "CG = (2/3) · 9 = 6 cm.",
+        "GP = CP − CG = 9 − 6 = 3 cm."
+      ],
+      "answer": "GP = 3 cm"
+    },
+    {
+      "id": "q14",
+      "stem": "G là trọng tâm của tam giác ABC, AM là trung tuyến và GM = 3 cm. Tính AG và AM.",
+      "steps": [
+        "GM = (1/3) · AM nên AM = 3 · GM = 9 cm.",
+        "AG = AM − GM = 9 − 3 = 6 cm."
+      ],
+      "answer": "AG = 6 cm; AM = 9 cm"
+    },
+    {
+      "id": "q15",
+      "stem": "O là giao điểm ba đường phân giác của tam giác ABC. Khoảng cách từ O đến cạnh AB là 4 cm. Tính khoảng cách từ O đến các cạnh BC và CA.",
+      "steps": [
+        "Giao điểm ba đường phân giác của tam giác cách đều ba cạnh.",
+        "Vậy khoảng cách từ O đến BC và đến CA đều bằng 4 cm."
+      ],
+      "answer": "Đều bằng 4 cm"
+    },
+    {
+      "id": "q16",
+      "stem": "O là giao điểm ba đường trung trực của tam giác ABC, OA = 6,5 cm. Tính OB và OC.",
+      "steps": [
+        "Giao điểm ba đường trung trực của tam giác cách đều ba đỉnh.",
+        "Vậy OB = OC = OA = 6,5 cm."
+      ],
+      "answer": "OB = OC = 6,5 cm"
+    },
+    {
+      "id": "q17",
+      "stem": "Tam giác ABC vuông tại A. Xác định trực tâm của tam giác và giải thích.",
+      "steps": [
+        "Vì AB ⊥ AC nên BA là đường cao kẻ từ B và CA là đường cao kẻ từ C.",
+        "Hai đường cao này cắt nhau tại A, nên trực tâm của tam giác là đỉnh A."
+      ],
+      "answer": "Trực tâm là đỉnh A"
+    },
+    {
+      "id": "q18",
+      "stem": "Tam giác ABC có Â = 2B̂ và Ĉ = 3B̂. Tính các góc và cho biết cạnh lớn nhất.",
+      "steps": [
+        "B̂ + 2B̂ + 3B̂ = 6B̂ = 180°, suy ra B̂ = 30°, Â = 60°, Ĉ = 90°.",
+        "Góc lớn nhất là Ĉ = 90°, cạnh đối diện là AB, nên AB là cạnh lớn nhất."
+      ],
+      "answer": "B̂ = 30°, Â = 60°, Ĉ = 90°; cạnh lớn nhất là AB"
+    },
+    {
+      "id": "q19",
+      "stem": "Tam giác có chu vi 30 cm và hai cạnh dài 9 cm và 11 cm. Tính cạnh thứ ba và kiểm tra ba độ dài đó có tạo thành tam giác không.",
+      "steps": [
+        "Cạnh thứ ba: 30 − 9 − 11 = 10 cm.",
+        "Cạnh dài nhất là 11 cm và 11 < 9 + 10 = 19, nên ba độ dài tạo thành tam giác."
+      ],
+      "answer": "10 cm; tạo thành tam giác"
+    },
+    {
+      "id": "q20",
+      "stem": "Cho tam giác ABC, kẻ AH vuông góc với BC (H nằm giữa B và C). Chứng minh AB + AC > 2AH.",
+      "steps": [
+        "AH là đường vuông góc, AB là đường xiên kẻ từ A đến đường thẳng BC, nên AB > AH.",
+        "Tương tự, AC là đường xiên nên AC > AH.",
+        "Cộng hai bất đẳng thức: AB + AC > 2AH."
+      ],
+      "answer": "AB + AC > 2AH"
+    }
+  ]
+}

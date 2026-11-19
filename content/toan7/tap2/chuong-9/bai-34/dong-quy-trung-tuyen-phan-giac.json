@@ -1,0 +1,124 @@
+{
+  "id": "t7-tap2-dong-quy-trung-tuyen-phan-giac",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 2",
+  "chapter": "Chương IX. Quan hệ giữa các yếu tố trong một tam giác",
+  "lesson": "Bài 34. Sự đồng quy của ba đường trung tuyến, ba đường phân giác trong một tam giác",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Ba đường trung tuyến của tam giác đồng quy tại một điểm gọi là trọng tâm G. Trọng tâm cách mỗi đỉnh một khoảng bằng 2/3 đường trung tuyến đi qua đỉnh đó."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t2-lt-trong-tam.svg",
+      "caption": "AM là trung tuyến (M là trung điểm BC) và G là trọng tâm: AG = (2/3) · AM và GM = (1/3) · AM."
+    },
+    {
+      "type": "formula",
+      "content": "AG = (2/3) · AM và GM = (1/3) · AM (với AM là trung tuyến kẻ từ A)."
+    },
+    {
+      "type": "text",
+      "content": "Ba đường phân giác của tam giác đồng quy tại một điểm cách đều ba cạnh của tam giác."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tam giác ABC có trung tuyến AM = 9 cm và trọng tâm G. Tính AG (cm).",
+      "expr": "2*9/3",
+      "steps": [
+        "AG = (2/3) · AM = (2/3) · 9 = 6 cm."
+      ],
+      "answer": "6",
+      "figure": "figures/t2-vd-trung-tuyen.svg"
+    },
+    {
+      "problem": "Trọng tâm G của tam giác có GM = 4 cm (M là trung điểm BC). Tính AG (cm), với AM là trung tuyến kẻ từ A.",
+      "expr": "2*4",
+      "steps": [
+        "AG = 2 · GM = 8 cm."
+      ],
+      "answer": "8"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tam giác ABC có trung tuyến AM = 9 cm và trọng tâm G. Tính AG (cm).",
+      "figure": "figures/t2-trung-tuyen-trong-tam.svg",
+      "expr": "2*9/3",
+      "answer": "6",
+      "explain": "AG = (2/3) · 9 = 6 cm."
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Trọng tâm G có GM = 4 cm (M là trung điểm BC, trung tuyến AM). Tính AG (cm).",
+      "figure": "figures/t2-trung-tuyen-trong-tam.svg",
+      "expr": "2*4",
+      "answer": "8",
+      "explain": "AG = 2 · GM = 8 cm."
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "fill",
+      "stem": "G là trọng tâm của tam giác ABC, AM là trung tuyến. Độ dài AG gấp mấy lần GM?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "AG = (2/3)AM và GM = (1/3)AM, nên AG = 2 · GM."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trọng tâm G của tam giác có AG = 10 cm (A là đỉnh, AM là trung tuyến). Tính AM (cm).",
+      "expr": "10*3/2",
+      "answer": "15",
+      "explain": "AM = (3/2) · AG = 15 cm."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Trung tuyến AM = 12 cm và trọng tâm G. Tính GM (cm).",
+      "figure": "figures/t2-trung-tuyen-trong-tam.svg",
+      "expr": "12/3",
+      "answer": "4",
+      "explain": "GM = (1/3) · AM = 4 cm."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "O là giao điểm ba đường phân giác của tam giác ABC. Khoảng cách từ O đến cạnh AB là 3 cm. Khoảng cách từ O đến cạnh BC bằng bao nhiêu cm?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Giao điểm ba đường phân giác cách đều ba cạnh của tam giác, nên khoảng cách từ O đến BC cũng bằng 3 cm."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác ABC có trung tuyến AM = 18 cm và trọng tâm G. Tính AG (cm).",
+      "expr": "2*18/3",
+      "answer": "12",
+      "explain": "AG = (2/3) · 18 = 12 cm."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "G là trọng tâm của tam giác ABC, AM là trung tuyến và AG = 8 cm. Tính GM (cm).",
+      "expr": "8/2",
+      "answer": "4",
+      "explain": "AG = 2 · GM nên GM = 8 : 2 = 4 cm."
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "id": "bai-33",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 11, tập 2",
+  "chapter": "Chương IX. Đạo hàm",
+  "lesson": "Bài 33. Đạo hàm cấp hai",
+  "section": "",
+  "bookPage": 95,
+  "requirements": [
+    "Hiểu khái niệm đạo hàm cấp hai và tính đạo hàm cấp hai của các hàm số thường gặp.",
+    "Hiểu ý nghĩa cơ học: gia tốc tức thời là đạo hàm cấp hai của quãng đường theo thời gian."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cho hàm số y = f(x) có đạo hàm f′(x) tại mọi x ∈ (a; b). Nếu f′ lại có đạo hàm tại x thì đạo hàm của f′ gọi là đạo hàm cấp hai của f, kí hiệu f″(x) hay y″: f″(x) = (f′(x))′."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b33-dao-ham-cap-hai.svg",
+      "caption": "Đồ thị y = x³ − 3x: y″ = 6x. Với x < 0, y″ < 0 (đồ thị lõm xuống); với x > 0, y″ > 0 (đồ thị lõm lên); x = 0 là điểm đổi chiều cong"
+    },
+    {
+      "type": "formula",
+      "content": "(xⁿ)″ = n(n − 1)xⁿ⁻²;  (sin x)″ = −sin x;  (cos x)″ = −cos x;  (eˣ)″ = eˣ;  (ln x)″ = −1/x²;  (1/x)″ = 2/x³."
+    },
+    {
+      "type": "text",
+      "content": "Ý nghĩa cơ học: nếu chất điểm chuyển động theo s = s(t) thì vận tốc tức thời v(t) = s′(t) và gia tốc tức thời a(t) = v′(t) = s″(t). Đạo hàm cấp hai còn mô tả tốc độ thay đổi của tốc độ biến thiên."
+    },
+    {
+      "type": "method",
+      "title": "Tính đạo hàm cấp hai",
+      "when": "Cho hàm số y = f(x) và yêu cầu y″ hoặc giá trị f″(x₀).",
+      "steps": [
+        "Tính đạo hàm cấp một f′(x).",
+        "Tính tiếp đạo hàm của f′(x).",
+        "Thu gọn f″(x).",
+        "Thay x₀ nếu cần giá trị f″(x₀)."
+      ],
+      "notes": [
+        "Không đạo hàm hai lần trong một bước.",
+        "Có thể dùng công thức nhanh cho xⁿ, sin, cos, eˣ."
+      ],
+      "sample": {
+        "problem": "Tính y″ của y = x³ − 3x² tại x = 2.",
+        "steps": [
+          "y′ = 3x² − 6x.",
+          "y″ = 6x − 6.",
+          "y″(2) = 6."
+        ],
+        "answer": "6"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tính gia tốc của chuyển động",
+      "when": "Cho s(t) (quãng đường, toạ độ theo thời gian); hỏi vận tốc, gia tốc tại t₀ hoặc thời điểm gia tốc bằng 0.",
+      "steps": [
+        "v(t) = s′(t).",
+        "a(t) = v′(t) = s″(t).",
+        "Thay t₀ để tính, hoặc giải a(t) = 0 tìm thời điểm.",
+        "Ghi đơn vị (m/s²)."
+      ],
+      "notes": [
+        "Gia tốc dương: vận tốc tăng; âm: vận tốc giảm.",
+        "Chuyển động đều có a = 0."
+      ],
+      "sample": {
+        "problem": "Chất điểm s(t) = t³ − 3t². Tính gia tốc tại t = 2 s.",
+        "steps": [
+          "v = 3t² − 6t; a = 6t − 6.",
+          "a(2) = 6 m/s²."
+        ],
+        "answer": "6 m/s²"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Chứng minh đẳng thức chứa đạo hàm",
+      "when": "Chứng minh y″ + y = 0 (y = sin x), y″ − 3y′ + 2y = 0 (y = e^{2x}) …",
+      "steps": [
+        "Tính y′ và y″ theo biến x.",
+        "Thay vào vế trái của đẳng thức.",
+        "Rút gọn về 0 (hoặc đúng vế phải).",
+        "Kết luận."
+      ],
+      "notes": [
+        "Đặt nhân tử chung để rút gọn nhanh.",
+        "Kiểm tra bằng một giá trị cụ thể của x."
+      ],
+      "sample": {
+        "problem": "Cho y = sin x. Chứng minh y″ + y = 0.",
+        "steps": [
+          "y′ = cos x; y″ = −sin x.",
+          "y″ + y = −sin x + sin x = 0."
+        ],
+        "answer": "y″ + y = 0"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính (x³)″ tại x = 2.",
+      "steps": [
+        "(x³)′ = 3x², (x³)″ = 6x.",
+        "Tại 2: 12."
+      ],
+      "expr": "6*2",
+      "answer": "12"
+    },
+    {
+      "problem": "Chất điểm s = t³ − 3t². Gia tốc tại t = 2 (m/s²)?",
+      "steps": [
+        "a = s″ = 6t − 6.",
+        "a(2) = 6."
+      ],
+      "expr": "6*2-6",
+      "answer": "6"
+    },
+    {
+      "problem": "Tính (ln x)″ tại x = 1.",
+      "steps": [
+        "(ln x)′ = 1/x; (ln x)″ = −1/x².",
+        "Tại 1: −1."
+      ],
+      "expr": "0-1",
+      "answer": "-1"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính (x²)″:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "(x²)′ = 2x; (x²)″ = 2.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính (x³)″ tại x = 2:",
+      "expr": "6*2",
+      "answer": "12",
+      "explain": "(x³)″ = 6x: 12.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính (x⁴)″ tại x = 1:",
+      "expr": "12*1*1",
+      "answer": "12",
+      "explain": "(x⁴)″ = 12x²: 12.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính (sin x)″ tại x = 0:",
+      "expr": "0",
+      "answer": "0",
+      "explain": "(sin x)″ = −sin x: 0.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính (cos x)″ tại x = 0:",
+      "expr": "0-1",
+      "answer": "-1",
+      "explain": "(cos x)″ = −cos x: −1.",
+      "id": "q05"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính (eˣ)″ tại x = 0:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "(eˣ)″ = eˣ: 1.",
+      "id": "q06"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Gia tốc tức thời a(t) của chuyển động s = s(t) bằng:",
+      "choices": [
+        "s″(t)",
+        "s′(t)",
+        "s(t)",
+        "s‴(t)"
+      ],
+      "answer": 0,
+      "explain": "a = v′ = s″.",
+      "wrong_explain": {
+        "1": "s′ là vận tốc.",
+        "2": "s là quãng đường.",
+        "3": "Bậc ba không phải gia tốc."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (1/x)″ tại x = 1:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "(1/x)″ = 2/x³: 2.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (ln x)″ tại x = 1:",
+      "expr": "0-1",
+      "answer": "-1",
+      "explain": "−1/x²: −1.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chất điểm s = t³ − 3t². Gia tốc tại t = 2 (m/s²):",
+      "expr": "6*2-6",
+      "answer": "6",
+      "explain": "a = 6t − 6: 6.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chất điểm s = t³ − 3t². Gia tốc tại t = 1 (m/s²):",
+      "expr": "6*1-6",
+      "answer": "0",
+      "explain": "a = 6t − 6: 0.",
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chất điểm s = 5t². Gia tốc (m/s²):",
+      "expr": "10",
+      "answer": "10",
+      "explain": "v = 10t; a = 10.",
+      "id": "q12"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Với n ≥ 2, (xⁿ)″ bằng:",
+      "choices": [
+        "n(n − 1)xⁿ⁻²",
+        "nxⁿ⁻¹",
+        "n²xⁿ⁻²",
+        "xⁿ⁻²"
+      ],
+      "answer": 0,
+      "explain": "Áp dụng hai lần quy tắc luỹ thừa.",
+      "wrong_explain": {
+        "1": "Đó là đạo hàm cấp một.",
+        "2": "Hệ số là n(n − 1), không phải n².",
+        "3": "Thiếu hệ số."
+      },
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chất điểm s = 2t³ + t. Gia tốc tại t = 3 (m/s²):",
+      "expr": "12*3",
+      "answer": "36",
+      "explain": "a = 12t: 36.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "y = x³ − 3x. Tính y″ tại x = 1:",
+      "expr": "6*1",
+      "answer": "6",
+      "explain": "y″ = 6x: 6.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "y = x⁴ − 2x². Tính y″ tại x = 0:",
+      "expr": "0-4",
+      "answer": "-4",
+      "explain": "y″ = 12x² − 4: −4.",
+      "id": "q16"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chất điểm s = t³ − 6t² + 9t. Thời điểm gia tốc bằng 0 (giây):",
+      "expr": "12/6",
+      "answer": "2",
+      "explain": "a = 6t − 12 = 0 nên t = 2.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "y = x·eˣ. Tính y″ tại x = 0:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "y′ = eˣ(1 + x), y″ = eˣ(2 + x): 2.",
+      "id": "q18"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Với y = sin x, hệ thức nào đúng?",
+      "choices": [
+        "y″ + y = 0",
+        "y″ − y = 0",
+        "y″ = y′",
+        "y″ = y"
+      ],
+      "answer": 0,
+      "explain": "y″ = −sin x = −y.",
+      "wrong_explain": {
+        "1": "y″ = −y nên y″ − y ≠ 0.",
+        "2": "y′ = cos x ≠ y″.",
+        "3": "y″ = −y chứ không bằng y."
+      },
+      "id": "q19"
+    }
+  ]
+}

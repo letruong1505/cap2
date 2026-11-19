@@ -1,0 +1,7 @@
+{
+  "appId": "vn.namlinh.capkhoa",
+  "productName": "NamLinh-CapKhoa",
+  "directories": { "app": "keygen", "output": "dist-keygen" },
+  "files": ["**/*", "!builder.json"],
+  "win": { "target": "portable", "artifactName": "NamLinh-CapKhoa.exe" }
+}

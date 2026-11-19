@@ -1,0 +1,339 @@
+{
+  "id": "bai-19",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 3. Điện trường",
+  "lesson": "Bài 19. Thế năng điện",
+  "section": "",
+  "bookPage": 76,
+  "requirements": [
+    "Nêu được công của lực điện trong điện trường đều không phụ thuộc đường đi và biểu thức A = qEd.",
+    "Nêu được khái niệm thế năng điện của điện tích trong điện trường đều và mối liên hệ với công của lực điện."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khi một điện tích q di chuyển trong điện trường đều từ điểm M đến điểm N thì lực điện (không đổi) thực hiện công không phụ thuộc hình dạng đường đi mà chỉ phụ thuộc vị trí điểm đầu, điểm cuối: lực điện là lực thế."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b19-cong-cua-luc-dien.svg",
+      "caption": "Công của lực điện trong điện trường đều: A = qEd, d là hình chiếu của đoạn MN lên phương đường sức (có chiều nếu cùng chiều đường sức)"
+    },
+    {
+      "type": "formula",
+      "content": "A_MN = qE·d   (d = hình chiếu MN lên đường sức, d > 0 nếu cùng chiều đường sức, d < 0 nếu ngược chiều)."
+    },
+    {
+      "type": "text",
+      "content": "Điện tích q đặt trong điện trường có thế năng điện bằng năng lượng mà điện tích có được nhờ nằm trong điện trường. Thế năng điện tại M: W_M = A_M∞ (công của lực điện khi di chuyển q từ M ra vô cực hoặc về mốc quy ước, ví dụ bản âm). Trong điện trường đều giữa hai bản, chọn mốc ở bản âm thì W_M = qEd_M (d_M: khoảng cách từ M đến bản âm theo phương đường sức)."
+    },
+    {
+      "type": "formula",
+      "content": "A_MN = W_M − W_N.   Công của lực điện bằng độ giảm thế năng điện."
+    },
+    {
+      "type": "text",
+      "content": "Khi q > 0 di chuyển cùng chiều đường sức, lực điện sinh công dương, thế năng điện giảm. Khi lực điện sinh công dương thì động năng tăng (định lí động năng); bảo toàn năng lượng: W_đ + W_t = hằng số (khi chỉ có lực điện tác dụng)."
+    },
+    {
+      "type": "method",
+      "title": "Tính công của lực điện A = qEd",
+      "when": "Cho q, E, quãng đường và góc/hình chiếu so với đường sức.",
+      "steps": [
+        "Xác định d = hình chiếu của quãng đường dịch chuyển lên đường sức, có dấu.",
+        "A = qEd (q có dấu).",
+        "A > 0: lực điện sinh công dương (thế năng giảm); A < 0: lực cản.",
+        "Công không phụ thuộc đường đi."
+      ],
+      "notes": [
+        "Dịch chuyển vuông góc đường sức: d = 0, A = 0.",
+        "Quỹ đạo kín: A = 0."
+      ],
+      "sample": {
+        "problem": "q = 2 μC di chuyển 5 cm dọc đường sức, E = 1000 V/m, cùng chiều E. Tính A.",
+        "steps": [
+          "A = qEd = 2·10⁻⁶·1000·0,05.",
+          "= 10⁻⁴ J."
+        ],
+        "answer": "10⁻⁴ J"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Công – thế năng – động năng",
+      "when": "Điện tích chuyển động giữa hai điểm, tìm thế năng, độ biến thiên động năng, vận tốc.",
+      "steps": [
+        "A_MN = W_M − W_N.",
+        "Định lí động năng: A_MN = ΔW_đ = ½mv_N² − ½mv_M².",
+        "W_t tại điểm: W = qEd_M với mốc ở bản âm.",
+        "Tính cơ năng điện W_đ + W_t = const."
+      ],
+      "notes": [
+        "Công dương làm giảm thế năng.",
+        "Dùng đơn vị J (hoặc eV)."
+      ],
+      "sample": {
+        "problem": "q = 10⁻⁶ C, E = 500 V/m, M cách bản âm 0,04 m. Tính thế năng tại M (mốc ở bản âm).",
+        "steps": [
+          "W_M = qEd = 10⁻⁶·500·0,04.",
+          "= 2·10⁻⁵ J."
+        ],
+        "answer": "2·10⁻⁵ J"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tìm công và thế năng khi đổi đường đi",
+      "when": "Điện tích đi theo đường gấp khúc, đường cong từ M đến N.",
+      "steps": [
+        "Chỉ cần xét vị trí đầu M và cuối N.",
+        "Tìm hình chiếu d của MN lên đường sức.",
+        "A = qEd, đúng với mọi đường đi.",
+        "Kết quả đường đi theo cung quanh co cũng bằng."
+      ],
+      "notes": [
+        "Lực điện là lực thế.",
+        "Điện tích đi vòng trở về chỗ cũ: A = 0."
+      ],
+      "sample": {
+        "problem": "Điện tích đi M → N theo hai đường khác nhau, hình chiếu d = 0,05 m, q = 2 μC, E = 1000 V/m. So sánh công?",
+        "steps": [
+          "Cả hai đường: A = qEd = 10⁻⁴ J.",
+          "Bằng nhau."
+        ],
+        "answer": "Bằng nhau, 10⁻⁴ J"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "q = 2 μC, E = 1000 V/m, di chuyển 5 cm dọc đường sức cùng chiều. A (J)?",
+      "steps": [
+        "A = qEd.",
+        "= 10⁻⁴ J."
+      ],
+      "expr": "0.000002*1000*0.05",
+      "answer": "1/10000"
+    },
+    {
+      "problem": "q = 10⁻⁶ C, E = 500 V/m, M cách bản âm 0,04 m. W_M (J) = qEd:",
+      "steps": [
+        "W_M = 10⁻⁶·500·0,04.",
+        "= 2·10⁻⁵ J."
+      ],
+      "expr": "0.000001*500*0.04",
+      "answer": "1/50000"
+    },
+    {
+      "problem": "Công 10⁻⁴ J làm tăng động năng điện tích. ΔW_đ (J)?",
+      "steps": [
+        "A = ΔW_đ.",
+        "= 10⁻⁴ J."
+      ],
+      "expr": "0.0001",
+      "answer": "1/10000"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "q = 2 μC, E = 1000 V/m, d = 0,05 m cùng chiều E. A (J):",
+      "expr": "0.000002*1000*0.05",
+      "answer": "1/10000",
+      "explain": "A = 10⁻⁴ J.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Điện tích dịch chuyển vuông góc đường sức. Công lực điện A (J):",
+      "expr": "0",
+      "answer": "0",
+      "explain": "d = 0 nên A = 0.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Điện tích đi theo đường cong kín trở về vị trí cũ. Công lực điện (J):",
+      "expr": "0",
+      "answer": "0",
+      "explain": "Lực thế: công trên đường kín bằng 0.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Công của lực điện khi điện tích di chuyển trong điện trường đều:",
+      "choices": [
+        "không phụ thuộc hình dạng đường đi",
+        "phụ thuộc hình dạng đường đi",
+        "luôn bằng không",
+        "luôn âm"
+      ],
+      "answer": 0,
+      "explain": "Lực điện là lực thế.",
+      "wrong_explain": {
+        "1": "Chỉ phụ thuộc điểm đầu, cuối.",
+        "2": "Không phải luôn bằng 0.",
+        "3": "Có thể dương hoặc âm."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Công của lực điện bằng:",
+      "choices": [
+        "độ giảm thế năng điện",
+        "độ tăng thế năng điện",
+        "thế năng điện tại điểm đầu",
+        "công suất"
+      ],
+      "answer": 0,
+      "explain": "A = W_M − W_N.",
+      "wrong_explain": {
+        "1": "Ngược lại.",
+        "2": "Chỉ bằng hiệu hai thế năng.",
+        "3": "Không phải công suất."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "q = 10⁻⁶ C, E = 500 V/m, M cách bản âm 0,04 m. W_M (J):",
+      "expr": "0.000001*500*0.04",
+      "answer": "1/50000",
+      "explain": "W_M = 2·10⁻⁵ J.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "W_M = 2·10⁻⁵ J, W_N = 5·10⁻⁶ J. A_MN (J):",
+      "expr": "0.00002-0.000005",
+      "answer": "3/200000",
+      "explain": "A = 1,5·10⁻⁵ J.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Công lực điện 10⁻⁴ J, động năng ban đầu 0. Động năng sau (J):",
+      "expr": "0.0001",
+      "answer": "1/10000",
+      "explain": "W_đ = A = 10⁻⁴ J.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Electron di chuyển ngược chiều đường sức. Công lực điện dương (nhập 1) hay âm (nhập 0)?",
+      "expr": "1",
+      "answer": "1",
+      "explain": "Electron âm: lực điện ngược chiều E, dịch chuyển ngược chiều E → công dương.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hình chiếu d = 0,1 m, q = 5·10⁻⁷ C, E = 2000 V/m. A (J):",
+      "expr": "0.0000005*2000*0.1",
+      "answer": "1/10000",
+      "explain": "A = 10⁻⁴ J.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi điện tích dương di chuyển cùng chiều đường sức thì thế năng điện:",
+      "choices": [
+        "giảm",
+        "tăng",
+        "không đổi",
+        "bằng không"
+      ],
+      "answer": 0,
+      "explain": "Lực điện sinh công dương.",
+      "wrong_explain": {
+        "1": "Công dương nên giảm.",
+        "2": "Có thay đổi.",
+        "3": "Không bằng 0."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "q = 10⁻⁶ C, A = 4·10⁻⁵ J, d = 0,04 m. E = A/(qd) (V/m):",
+      "expr": "(0.00004)/(0.000001*0.04)",
+      "answer": "1000",
+      "explain": "E = 1000 V/m.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Điện tích m = 10⁻⁶ kg đi dọc đường sức nhận công 10⁻⁴ J (từ nghỉ). v² = 2A/m (m²/s²):",
+      "expr": "(2*0.0001)/(0.000001)",
+      "answer": "200",
+      "explain": "v² = 200, v ≈ 14,1 m/s.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Điện tích q = 5·10⁻⁷ C ở M có W_M = 10⁻⁴ J (mốc bản âm), E = 1000 V/m. d_M = W/(qE) (m):",
+      "expr": "(0.0001)/(0.0000005*1000)",
+      "answer": "1/5",
+      "explain": "d_M = 0,2 m.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Công lực điện A = 10⁻⁴ J, q = 2·10⁻⁶ C. Hiệu điện thế giữa hai điểm A/q (V):",
+      "expr": "(0.0001)/(0.000002)",
+      "answer": "50",
+      "explain": "U = 50 V.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Điện tích q = −2·10⁻⁶ C đi 5 cm cùng chiều E = 1000 V/m. Công lực điện A (J):",
+      "expr": "-0.000002*1000*0.05",
+      "answer": "-1/10000",
+      "explain": "A = −10⁻⁴ J (công âm).",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi lực điện sinh công âm thì:",
+      "choices": [
+        "thế năng điện tăng, động năng giảm",
+        "thế năng điện giảm, động năng tăng",
+        "cả hai đều tăng",
+        "cả hai không đổi"
+      ],
+      "answer": 0,
+      "explain": "A < 0: W_t tăng, W_đ giảm.",
+      "wrong_explain": {
+        "1": "Đó là A > 0.",
+        "2": "Tổng không đổi.",
+        "3": "Có thay đổi."
+      },
+      "id": "q17"
+    }
+  ]
+}

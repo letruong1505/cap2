@@ -1,0 +1,48 @@
+{
+  "id": "hoa8-nang-cao-mo-dau",
+  "grade": 8,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Bài tập nâng cao",
+  "chapter": "Mở đầu",
+  "lesson": "Bài tập nâng cao · Mở đầu",
+  "section": "Bài tập nâng cao",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các câu nâng cao của chương, gộp từ các bài đã học. Tên bài hiển thị trong ngoặc ở đầu mỗi câu. Hãy ôn lại lý thuyết và ví dụ của bài đó trước khi làm."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "b1-n01",
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "[Bài 1] Dung dịch hoá chất pha sẵn phải có nhãn ghi thông tin nào để dùng đúng?",
+      "choices": [
+        "Chỉ ghi ngày sản xuất",
+        "Chỉ ghi tên người pha",
+        "Nồng độ của chất tan",
+        "Không cần ghi gì"
+      ],
+      "answer": 2,
+      "explain": "Dung dịch pha sẵn cần có nhãn ghi nồng độ chất tan.",
+      "wrong_explain": {
+        "0": "Cần biết nồng độ để dùng đúng.",
+        "1": "Thiếu thông tin về nồng độ chất tan.",
+        "3": "Không dùng hoá chất không nhãn."
+      },
+      "concept": true
+    },
+    {
+      "id": "b1-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 1] Một bộ nguồn gồm 2 pin 1,5 V mắc nối tiếp. Hiệu điện thế của bộ nguồn là bao nhiêu vôn?",
+      "expr": "2*1.5",
+      "answer": "3",
+      "explain": "Hiệu điện thế tổng bằng tổng các pin: 2 × 1,5 = 3 V."
+    }
+  ]
+}

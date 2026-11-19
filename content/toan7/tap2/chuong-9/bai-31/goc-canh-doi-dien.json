@@ -1,0 +1,189 @@
+{
+  "id": "t7-tap2-goc-canh-doi-dien",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 2",
+  "chapter": "Chương IX. Quan hệ giữa các yếu tố trong một tam giác",
+  "lesson": "Bài 31. Quan hệ giữa góc và cạnh đối diện trong một tam giác",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Trong một tam giác, góc đối diện với cạnh lớn hơn là góc lớn hơn. Ngược lại, cạnh đối diện với góc lớn hơn là cạnh lớn hơn."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t2-lt-goc-canh.svg",
+      "caption": "Tam giác ABC có B̂ = 70° là góc lớn nhất, nên cạnh đối diện AC là cạnh lớn nhất; Â = 50° nhỏ nhất nên BC nhỏ nhất."
+    },
+    {
+      "type": "formula",
+      "content": "Trong tam giác ABC: nếu BC > CA thì Â > B̂; nếu Â > B̂ thì BC > CA."
+    },
+    {
+      "type": "text",
+      "content": "Hai cạnh bằng nhau thì hai góc đối diện bằng nhau (tam giác cân) và ngược lại."
+    },
+    {
+      "type": "text",
+      "content": "Trong tam giác vuông, góc vuông là góc lớn nhất nên cạnh huyền (đối diện góc vuông) là cạnh lớn nhất. Trong tam giác tù, cạnh đối diện góc tù là cạnh lớn nhất."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tam giác ABC có Â = 50° và B̂ = 70°. Tính Ĉ rồi cho biết cạnh lớn nhất.",
+      "expr": "180-50-70",
+      "steps": [
+        "Ĉ = 180° − 50° − 70° = 60°.",
+        "Góc lớn nhất là B̂ = 70°. Cạnh đối diện với B̂ là AC, nên AC là cạnh lớn nhất."
+      ],
+      "answer": "60",
+      "figure": "figures/t2-vd-goc-tam-50-70.svg"
+    },
+    {
+      "problem": "Tam giác ABC có Â = 100° và B̂ = 45°. Tính Ĉ rồi sắp xếp ba cạnh theo thứ tự từ nhỏ đến lớn.",
+      "expr": "180-100-45",
+      "steps": [
+        "Ĉ = 180° − 100° − 45° = 35°.",
+        "Ta có Ĉ < B̂ < Â (35° < 45° < 100°).",
+        "Cạnh đối diện Ĉ là AB, đối diện B̂ là CA, đối diện Â là BC. Vậy AB < CA < BC."
+      ],
+      "answer": "35",
+      "figure": "figures/t2-vd-goc-100-45.svg"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tam giác ABC có AB = 5 cm, BC = 7 cm, CA = 6 cm. Góc lớn nhất của tam giác là:",
+      "figure": "figures/t2-canh-5-7-6.svg",
+      "choices": [
+        "Góc A",
+        "Góc B",
+        "Góc C"
+      ],
+      "answer": 0,
+      "explain": "Cạnh lớn nhất là BC = 7 cm. Góc đối diện với BC là góc A, nên góc A lớn nhất.",
+      "wrong_explain": {
+        "1": "Góc B đối diện cạnh CA = 6 cm, không phải cạnh lớn nhất.",
+        "2": "Góc C đối diện cạnh AB = 5 cm, là cạnh nhỏ nhất, nên góc C là góc nhỏ nhất."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tam giác ABC có Â = 80°, B̂ = 60°, Ĉ = 40°. Cạnh lớn nhất của tam giác là:",
+      "choices": [
+        "BC",
+        "CA",
+        "AB"
+      ],
+      "answer": 0,
+      "explain": "Góc lớn nhất là Â = 80°. Cạnh đối diện góc A là BC, nên BC lớn nhất.",
+      "wrong_explain": {
+        "1": "CA đối diện góc B = 60°, không phải góc lớn nhất.",
+        "2": "AB đối diện góc C = 40°, là góc nhỏ nhất, nên AB là cạnh nhỏ nhất."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tam giác ABC vuông tại A. Cạnh lớn nhất của tam giác là:",
+      "choices": [
+        "BC",
+        "AB",
+        "AC"
+      ],
+      "answer": 0,
+      "explain": "Góc A = 90° là góc lớn nhất. Cạnh đối diện góc A là cạnh huyền BC, nên BC lớn nhất.",
+      "wrong_explain": {
+        "1": "AB đối diện góc C, là góc nhọn nên nhỏ hơn góc A.",
+        "2": "AC đối diện góc B, là góc nhọn nên nhỏ hơn góc A."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tam giác ABC có Â = 50° và B̂ = 70°. Cạnh nhỏ nhất của tam giác là:",
+      "figure": "figures/t2-goc-tam-50-70.svg",
+      "choices": [
+        "BC",
+        "CA",
+        "AB"
+      ],
+      "answer": 0,
+      "explain": "Ĉ = 180° − 50° − 70° = 60°. Góc nhỏ nhất là Â = 50°, cạnh đối diện là BC, nên BC nhỏ nhất.",
+      "wrong_explain": {
+        "1": "CA đối diện góc B = 70°, là góc lớn nhất, nên CA là cạnh lớn nhất.",
+        "2": "AB đối diện góc C = 60°, không phải góc nhỏ nhất."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC có Â = 50° và B̂ = 70° (hình vẽ). Tính số đo góc C (độ).",
+      "figure": "figures/t2-goc-tam-50-70.svg",
+      "expr": "180-50-70",
+      "answer": "60",
+      "explain": "Ĉ = 180° − 50° − 70° = 60°. Khi đó Â < Ĉ < B̂ nên BC < AB < CA."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tam giác ABC cân tại A có Â = 40°. So sánh AB và BC.",
+      "choices": [
+        "AB > BC",
+        "AB < BC",
+        "AB = BC"
+      ],
+      "answer": 0,
+      "explain": "B̂ = Ĉ = (180° − 40°) : 2 = 70°. Cạnh AB đối diện góc C = 70°, cạnh BC đối diện góc A = 40°. Vì 70° > 40° nên AB > BC.",
+      "wrong_explain": {
+        "1": "Góc đối diện AB (70°) lớn hơn góc đối diện BC (40°), nên AB không thể nhỏ hơn BC.",
+        "2": "AB = BC chỉ khi Ĉ = Â, nhưng 70° ≠ 40°."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tam giác ABC có AB = 4 cm, BC = 6 cm, CA = 5 cm. Sắp xếp các góc theo thứ tự từ nhỏ đến lớn:",
+      "figure": "figures/t2-canh-4-6-5.svg",
+      "choices": [
+        "Ĉ < B̂ < Â",
+        "Â < B̂ < Ĉ",
+        "B̂ < Ĉ < Â",
+        "Ĉ < Â < B̂"
+      ],
+      "answer": 0,
+      "explain": "AB = 4 cm đối diện góc C, CA = 5 cm đối diện góc B, BC = 6 cm đối diện góc A. Vì AB < CA < BC nên Ĉ < B̂ < Â.",
+      "wrong_explain": {
+        "1": "Thứ tự này ngược lại: cạnh BC lớn nhất nên Â phải lớn nhất.",
+        "2": "Góc B đối diện CA = 5 cm, lớn hơn AB = 4 cm (đối diện góc C), nên B̂ > Ĉ.",
+        "3": "Góc A đối diện BC = 6 cm là cạnh lớn nhất, nên Â phải là góc lớn nhất."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác ABC có Â = 2B̂ và Ĉ = 3B̂. Tính góc lớn nhất của tam giác (độ).",
+      "expr": "3*180/6",
+      "answer": "90",
+      "explain": "B̂ + 2B̂ + 3B̂ = 6B̂ = 180°, nên B̂ = 30°, Â = 60°, Ĉ = 90°. Góc lớn nhất là Ĉ = 90°, do đó cạnh lớn nhất là AB."
+    }
+  ]
+}

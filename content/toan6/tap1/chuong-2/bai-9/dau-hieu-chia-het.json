@@ -1,0 +1,235 @@
+{
+  "id": "bai-9",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương II. Tính chia hết trong tập hợp các số tự nhiên",
+  "lesson": "Bài 9. Dấu hiệu chia hết",
+  "section": "",
+  "bookPage": 34,
+  "requirements": [
+    "Nhận biết và vận dụng dấu hiệu chia hết cho 2, 5, 3, 9."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dấu hiệu chia hết cho 2: các số có chữ số tận cùng là chữ số chẵn (0; 2; 4; 6; 8). Dấu hiệu chia hết cho 5: các số có chữ số tận cùng là 0 hoặc 5."
+    },
+    {
+      "type": "text",
+      "content": "Dấu hiệu chia hết cho 9: các số có tổng các chữ số chia hết cho 9. Dấu hiệu chia hết cho 3: các số có tổng các chữ số chia hết cho 3."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t6-b9-dau-hieu.svg",
+      "caption": "Bảng dấu hiệu chia hết"
+    },
+    {
+      "type": "text",
+      "content": "Số chia hết cho 9 thì chia hết cho 3 (điều ngược lại không đúng). Số chia hết cho cả 2 và 5 thì có tận cùng là 0."
+    },
+    {
+      "type": "method",
+      "title": "Tìm chữ số chưa biết để số chia hết",
+      "when": "Đề cho số có chữ số chưa biết (dạng 47a, 25b) và yêu cầu chia hết cho 2, 3, 5, 9.",
+      "steps": [
+        "Liệt kê các điều kiện chia hết cần thỏa mãn.",
+        "Chia hết cho 2 hoặc 5: xét chữ số tận cùng. Chia hết cho 3 hoặc 9: xét tổng các chữ số.",
+        "Lập tổng các chữ số (có chữ số chưa biết) rồi tìm các chữ số 0–9 làm tổng chia hết cho 3 hoặc 9.",
+        "Kết hợp mọi điều kiện, loại giá trị không thỏa, rồi thử lại."
+      ],
+      "notes": [
+        "Chữ số cần tìm chỉ nhận giá trị 0, 1, ..., 9; chữ số đầu tiên của số phải khác 0.",
+        "Chia hết cho 9 thì chia hết cho 3, nhưng chia hết cho 3 chưa chắc chia hết cho 9.",
+        "Chia hết cho cả 2 và 5 thì tận cùng là 0.",
+        "Nếu có nhiều đáp số phải liệt kê đủ; nếu hỏi \"có bao nhiêu\" thì đếm cho đúng."
+      ],
+      "sample": {
+        "problem": "Tìm chữ số a để số 25a chia hết cho 3.",
+        "steps": [
+          "Tổng các chữ số: 2 + 5 + a = 7 + a.",
+          "7 + a chia hết cho 3 và 0 ≤ a ≤ 9 nên 7 + a ∈ {9, 12, 15}.",
+          "Vậy a ∈ {2, 5, 8}."
+        ],
+        "answer": "a = 2, 5 hoặc 8"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tổng các chữ số của 5 427 là bao nhiêu? Số này có chia hết cho 9 không?",
+      "steps": [
+        "5 + 4 + 2 + 7 = 18.",
+        "18 ⋮ 9 nên 5 427 ⋮ 9."
+      ],
+      "expr": "5+4+2+7",
+      "answer": "18"
+    },
+    {
+      "problem": "Dạng điền chữ số: tìm chữ số * lớn nhất để 3*5‾ chia hết cho 3.",
+      "steps": [
+        "Tổng 3 + * + 5 = 8 + * phải chia hết cho 3.",
+        "* ∈ {1; 4; 7}, lớn nhất là 7."
+      ],
+      "expr": "7",
+      "answer": "7"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số nào chia hết cho 5?",
+      "choices": [
+        "1 234",
+        "1 235",
+        "1 237",
+        "1 238"
+      ],
+      "answer": 1,
+      "explain": "Tận cùng là 0 hoặc 5.",
+      "wrong_explain": {
+        "0": "Tận cùng là 4.",
+        "2": "Tận cùng là 7.",
+        "3": "Tận cùng là 8."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Số nào chia hết cho 9?",
+      "choices": [
+        "4 518",
+        "4 517",
+        "4 515",
+        "4 513"
+      ],
+      "answer": 0,
+      "explain": "4 + 5 + 1 + 8 = 18 ⋮ 9.",
+      "wrong_explain": {
+        "1": "Tổng chữ số 17 không chia hết cho 9.",
+        "2": "Tổng chữ số 15.",
+        "3": "Tổng chữ số 13."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Số chia hết cho cả 2 và 5 có chữ số tận cùng là:",
+      "choices": [
+        "5",
+        "2",
+        "Bất kì chữ số chẵn nào",
+        "0"
+      ],
+      "answer": 3,
+      "explain": "Tận cùng 0.",
+      "wrong_explain": {
+        "0": "Số tận cùng 5 không chia hết cho 2.",
+        "1": "Không chia hết cho 5.",
+        "2": "Chỉ có 0."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tổng các chữ số của 2 019 là bao nhiêu?",
+      "expr": "2+0+1+9",
+      "answer": "12",
+      "explain": "= 12, nên 2 019 ⋮ 3 nhưng không chia hết cho 9."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có bao nhiêu số chia hết cho 5 trong khoảng từ 1 đến 100?",
+      "expr": "20",
+      "answer": "20",
+      "explain": "5; 10; …; 100: 20 số."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm chữ số x để 72x‾ chia hết cho cả 2 và 5.",
+      "expr": "0",
+      "answer": "0",
+      "explain": "Tận cùng phải là 0."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm chữ số a để 4a7‾ chia hết cho 9.",
+      "expr": "7",
+      "answer": "7",
+      "explain": "4 + a + 7 = 11 + a ⋮ 9 nên a = 7."
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm chữ số a khác 0 để số 47a chia hết cho 5.",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Chia hết cho 5 thì tận cùng là 0 hoặc 5; a khác 0 nên a = 5.",
+      "dang": "Tìm chữ số chưa biết để số chia hết",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tìm chữ số b để số 25b chia hết cho 9.",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Tổng các chữ số 2 + 5 + b = 7 + b phải chia hết cho 9, nên 7 + b = 9, tức b = 2.",
+      "dang": "Tìm chữ số chưa biết để số chia hết",
+      "id": "q11"
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có bao nhiêu số có hai chữ số chia hết cho 2?",
+      "expr": "(98-10)/2+1",
+      "answer": "45",
+      "explain": "10; 12; …; 98: 45 số."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Số dư khi chia 1 246 cho 9 là:",
+      "expr": "13-9",
+      "answer": "4",
+      "explain": "Tổng chữ số 13, chia 9 dư 4."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có bao nhiêu chữ số a để số 1a5 chia hết cho 3?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Tổng 1 + a + 5 = 6 + a chia hết cho 3 nên a ∈ {0, 3, 6, 9}: có 4 chữ số.",
+      "dang": "Tìm chữ số chưa biết để số chia hết",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm chữ số b để số 5b2 chia hết cho cả 2 và 9.",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Chữ số tận cùng 2 là chẵn nên chia hết cho 2. Tổng 5 + b + 2 = 7 + b chia hết cho 9 nên b = 2.",
+      "dang": "Tìm chữ số chưa biết để số chia hết",
+      "id": "q13"
+    }
+  ]
+}

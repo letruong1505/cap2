@@ -1,0 +1,196 @@
+{
+  "id": "on-tap-chuong-3",
+  "kind": "review",
+  "grade": 7,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 7, tập 1",
+  "chapter": "Chương III. Góc và đường thẳng song song",
+  "title": "Ôn tập Chương III (tự luận)",
+  "questions": [
+    {
+      "id": "q01",
+      "stem": "Hai góc kề bù, một góc bằng 47°. Tính góc còn lại.",
+      "steps": [
+        "Hai góc kề bù có tổng bằng 180°.",
+        "Góc còn lại: 180° − 47° = 133°."
+      ],
+      "answer": "133°"
+    },
+    {
+      "id": "q02",
+      "stem": "Hai góc kề bù có số đo tỉ lệ với 3 : 7. Tìm số đo hai góc.",
+      "steps": [
+        "Gọi hai góc là 3k và 7k: 3k + 7k = 180°, nên 10k = 180°, k = 18°.",
+        "Hai góc: 3 · 18° = 54° và 7 · 18° = 126°."
+      ],
+      "answer": "54° và 126°"
+    },
+    {
+      "id": "q03",
+      "stem": "Hai đường thẳng xx′ và yy′ cắt nhau tại O, xOy = 62°. Tính x′Oy′ và x′Oy.",
+      "steps": [
+        "x′Oy′ đối đỉnh với xOy nên x′Oy′ = 62°.",
+        "x′Oy kề bù với xOy nên x′Oy = 180° − 62° = 118°."
+      ],
+      "answer": "x′Oy′ = 62°; x′Oy = 118°"
+    },
+    {
+      "id": "q04",
+      "stem": "Oz là tia phân giác của góc xOy, biết xOy = 96°. Tính xOz.",
+      "steps": [
+        "Tia phân giác chia góc thành hai góc bằng nhau: xOz = xOy / 2.",
+        "xOz = 96° : 2 = 48°."
+      ],
+      "answer": "48°"
+    },
+    {
+      "id": "q05",
+      "stem": "Cho a ∥ b, đường thẳng c cắt a và b. Một góc tạo bởi c và a bằng 70°. Tính góc đồng vị với nó ở đường b và góc trong cùng phía tương ứng.",
+      "steps": [
+        "Góc đồng vị với góc 70° có số đo bằng 70° (vì a ∥ b).",
+        "Góc trong cùng phía với góc 70° bù với nó: 180° − 70° = 110°."
+      ],
+      "answer": "Đồng vị: 70°; trong cùng phía: 110°"
+    },
+    {
+      "id": "q06",
+      "stem": "Cho a ∥ b. Một cặp góc so le trong có một góc bằng 65°. Tính góc so le trong còn lại.",
+      "steps": [
+        "Khi a ∥ b, hai góc so le trong bằng nhau.",
+        "Góc so le trong còn lại bằng 65°."
+      ],
+      "answer": "65°"
+    },
+    {
+      "id": "q07",
+      "stem": "Cho a ∥ b. Hai góc trong cùng phía có số đo 3x − 20° và x + 60° (x tính bằng độ). Tìm x và hai góc đó.",
+      "steps": [
+        "Trong cùng phía bù nhau: (3x − 20) + (x + 60) = 180.",
+        "4x + 40 = 180, suy ra x = 35.",
+        "Hai góc: 3 · 35 − 20 = 85° và 35 + 60 = 95°. Kiểm tra: 85 + 95 = 180."
+      ],
+      "answer": "x = 35; hai góc 85° và 95°"
+    },
+    {
+      "id": "q08",
+      "stem": "Cho a ∥ b. Hai góc so le trong có số đo 4x + 10° và 2x + 30° (x tính bằng độ). Tìm x.",
+      "steps": [
+        "Khi a ∥ b, hai góc so le trong bằng nhau: 4x + 10 = 2x + 30.",
+        "2x = 20, suy ra x = 10. Khi đó hai góc đều bằng 50°."
+      ],
+      "answer": "x = 10"
+    },
+    {
+      "id": "q09",
+      "stem": "Phát biểu tiên đề Euclid về đường thẳng song song. Qua một điểm M nằm ngoài đường thẳng d có bao nhiêu đường thẳng song song với d?",
+      "steps": [
+        "Tiên đề Euclid: qua một điểm nằm ngoài một đường thẳng, chỉ vẽ được duy nhất một đường thẳng song song với đường thẳng đó.",
+        "Vậy có đúng 1 đường thẳng."
+      ],
+      "answer": "Duy nhất một đường thẳng"
+    },
+    {
+      "id": "q10",
+      "stem": "Chứng minh: nếu a ⊥ c và b ⊥ c thì a ∥ b.",
+      "steps": [
+        "a ⊥ c nên góc tạo bởi a và c bằng 90°; b ⊥ c nên góc tạo bởi b và c cũng bằng 90°.",
+        "Hai góc này ở vị trí đồng vị và bằng nhau (cùng 90°) nên theo dấu hiệu nhận biết hai đường thẳng song song, a ∥ b."
+      ],
+      "answer": "a ∥ b (theo dấu hiệu góc đồng vị bằng nhau)"
+    },
+    {
+      "id": "q11",
+      "stem": "Cho định lí: nếu a ∥ b và c ⊥ a thì c ⊥ b. Khi đó góc giữa c và b bằng bao nhiêu độ?",
+      "steps": [
+        "Vì c ⊥ a nên góc giữa c và a bằng 90°.",
+        "Vì a ∥ b, góc đồng vị với nó ở b cũng bằng 90°. Vậy c ⊥ b."
+      ],
+      "answer": "90°"
+    },
+    {
+      "id": "q12",
+      "stem": "Hai góc kề bù có số đo là x + 20° và 2x − 50°. Tìm x và số đo hai góc.",
+      "steps": [
+        "Tổng hai góc bằng 180°: (x + 20) + (2x − 50) = 180.",
+        "3x − 30 = 180, suy ra x = 70.",
+        "Hai góc: 70 + 20 = 90° và 2 · 70 − 50 = 90°. Hai góc đều vuông."
+      ],
+      "answer": "x = 70; hai góc đều 90°"
+    },
+    {
+      "id": "q13",
+      "stem": "Cho a ∥ b. Hai góc đồng vị có số đo 3x + 15° và 5x − 35°. Tìm x.",
+      "steps": [
+        "Góc đồng vị bằng nhau: 3x + 15 = 5x − 35.",
+        "2x = 50, suy ra x = 25. Khi đó hai góc đều bằng 90°."
+      ],
+      "answer": "x = 25"
+    },
+    {
+      "id": "q14",
+      "stem": "Hai góc kề bù, một góc gấp 4 lần góc kia. Tìm số đo hai góc.",
+      "steps": [
+        "Gọi góc nhỏ là a, góc lớn là 4a: a + 4a = 180°, nên a = 36°.",
+        "Hai góc: 36° và 144°."
+      ],
+      "answer": "36° và 144°"
+    },
+    {
+      "id": "q15",
+      "stem": "Oz là tia phân giác của góc xOy. Biết xOz = 2x + 10° và zOy = 3x − 20° (x tính bằng độ). Tính xOy.",
+      "steps": [
+        "Tia phân giác: xOz = zOy, nên 2x + 10 = 3x − 20, suy ra x = 30.",
+        "xOz = zOy = 2 · 30 + 10 = 70°.",
+        "xOy = 2 · 70° = 140°."
+      ],
+      "answer": "xOy = 140°"
+    },
+    {
+      "id": "q16",
+      "stem": "Hai góc đối đỉnh có bằng nhau không? Giải thích.",
+      "steps": [
+        "Hai góc đối đỉnh cùng kề bù với cùng một góc.",
+        "Nếu hai góc cùng bù với một góc thì bằng nhau (cùng bằng 180° trừ góc đó).",
+        "Vậy hai góc đối đỉnh bằng nhau."
+      ],
+      "answer": "Có, vì cùng bù với một góc"
+    },
+    {
+      "id": "q17",
+      "stem": "Cho a ∥ b và đường thẳng c cắt a, b. Hai góc đồng vị có số đo 3x và 2x + 20° (x tính bằng độ). Tìm x và số đo hai góc đó.",
+      "steps": [
+        "Khi a ∥ b, hai góc đồng vị bằng nhau: 3x = 2x + 20.",
+        "x = 20, khi đó góc bằng 3 · 20 = 60°."
+      ],
+      "answer": "x = 20; hai góc đều 60°"
+    },
+    {
+      "id": "q18",
+      "stem": "Cho a ∥ b, một góc trong cùng phía bằng 110°. Tính góc trong cùng phía còn lại.",
+      "steps": [
+        "Hai góc trong cùng phía bù nhau.",
+        "Góc còn lại: 180° − 110° = 70°."
+      ],
+      "answer": "70°"
+    },
+    {
+      "id": "q19",
+      "stem": "Nêu dấu hiệu nhận biết hai đường thẳng song song qua một cặp góc so le trong bằng nhau và giải thích ngắn gọn.",
+      "steps": [
+        "Dấu hiệu: nếu một đường thẳng cắt hai đường thẳng khác và tạo thành một cặp góc so le trong bằng nhau thì hai đường thẳng đó song song.",
+        "Đây là dấu hiệu nhận biết hai đường thẳng song song đã học ở bài 9."
+      ],
+      "answer": "Có cặp góc so le trong bằng nhau thì hai đường thẳng song song"
+    },
+    {
+      "id": "q20",
+      "stem": "Đường thẳng c cắt hai đường thẳng song song a và b lần lượt tại A và B. Biết một góc tại A bằng 40°. Tính góc kề bù với nó tại A và góc so le trong với nó tại B.",
+      "steps": [
+        "Góc kề bù với góc 40° tại A: 180° − 40° = 140°.",
+        "Vì a ∥ b nên góc so le trong với góc 40° tại B cũng bằng 40°."
+      ],
+      "answer": "Góc kề bù: 140°; góc so le trong: 40°"
+    }
+  ]
+}

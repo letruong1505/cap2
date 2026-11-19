@@ -1,0 +1,321 @@
+{
+  "id": "bai-19",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương III. Động lực học",
+  "lesson": "Bài 19. Lực cản và lực nâng",
+  "section": "",
+  "bookPage": 77,
+  "requirements": [
+    "Nêu được đặc điểm của lực cản của chất lưu và lực nâng (lực đẩy Archimedes).",
+    "Giải thích chuyển động của vật rơi trong chất lưu, đạt tốc độ giới hạn; tính lực đẩy Archimedes."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Chất lưu là chất có thể chảy được (chất lỏng và chất khí). Vật chuyển động trong chất lưu chịu lực cản ngược chiều chuyển động. Lực cản phụ thuộc hình dạng, kích thước của vật (diện tích mặt cắt ngang), tốc độ của vật và tính chất của chất lưu; tốc độ càng lớn thì lực cản càng lớn."
+    },
+    {
+      "type": "text",
+      "content": "Vật có hình dạng khí động học (thuôn, nhọn phía trước như thân cá, máy bay, tàu cao tốc) chịu lực cản nhỏ. Ngược lại, dù lượn, đuôi máy bay cần lực cản lớn."
+    },
+    {
+      "type": "text",
+      "content": "Vật rơi trong không khí: ban đầu tốc độ tăng, lực cản tăng dần; khi lực cản bằng trọng lực thì hợp lực bằng 0, vật chuyển động đều với tốc độ giới hạn (tốc độ cuối). Người nhảy dù mở dù để tăng lực cản, giảm tốc độ giới hạn xuống mức an toàn."
+    },
+    {
+      "type": "text",
+      "content": "Lực nâng (lực đẩy Archimedes): vật nhúng trong chất lỏng (hay chất khí) chịu lực đẩy hướng thẳng đứng lên trên, có độ lớn bằng trọng lượng của phần chất lỏng bị vật chiếm chỗ."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b19-archimedes.svg",
+      "caption": "Lực đẩy Archimedes và trọng lực tác dụng lên vật nhúng trong chất lỏng"
+    },
+    {
+      "type": "formula",
+      "content": "F_A = ρ·g·V        (ρ: khối lượng riêng chất lỏng, V: thể tích phần chất lỏng bị vật chiếm chỗ)"
+    },
+    {
+      "type": "text",
+      "content": "Điều kiện nổi, chìm: F_A > P thì vật nổi lên; F_A = P thì vật lơ lửng (hoặc nổi cân bằng trên mặt); F_A < P thì vật chìm. Với vật đặc đồng chất: vật nổi khi khối lượng riêng của vật nhỏ hơn khối lượng riêng của chất lỏng."
+    },
+    {
+      "type": "method",
+      "title": "Tính lực đẩy Archimedes và xét nổi chìm",
+      "when": "Đề cho thể tích vật (hoặc phần chìm), khối lượng riêng chất lỏng, trọng lượng vật; hỏi lực đẩy, số chỉ lực kế, phần thể tích chìm.",
+      "steps": [
+        "Đổi thể tích về m³ (1 dm³ = 10⁻³ m³, 1 cm³ = 10⁻⁶ m³).",
+        "Tính F_A = ρgV với V là thể tích phần chìm.",
+        "So sánh F_A với P để kết luận nổi, chìm; vật nhúng treo lực kế thì số chỉ = P − F_A.",
+        "Vật nổi cân bằng: P = F_A ⇒ V_chìm = m/ρ_lỏng."
+      ],
+      "notes": [
+        "Chỉ tính thể tích phần chìm.",
+        "ρ nước = 1000 kg/m³."
+      ],
+      "sample": {
+        "problem": "Một vật thể tích 2 dm³ nhúng chìm hoàn toàn trong nước (g = 10). Tính lực đẩy Archimedes.",
+        "steps": [
+          "V = 2·10⁻³ m³.",
+          "F_A = 1000·10·0,002 = 20 N."
+        ],
+        "answer": "20 N"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một vật nặng 15 N khi treo vào lực kế ngoài không khí. Nhúng chìm vật vào nước, lực kế chỉ 10 N. Tính lực đẩy Archimedes và thể tích vật (g = 10).",
+      "steps": [
+        "F_A = 15 − 10 = 5 N.",
+        "V = F_A/(ρg) = 5/10000 = 5·10⁻⁴ m³ = 0,5 dm³."
+      ],
+      "expr": "5/10000",
+      "answer": "0.0005"
+    },
+    {
+      "problem": "Khối gỗ 0,6 kg có khối lượng riêng 600 kg/m³ thả vào nước. Tính thể tích phần chìm.",
+      "steps": [
+        "Gỗ nhẹ hơn nước nên nổi: F_A = P = 6 N.",
+        "V_chìm = 6/(1000·10) = 6·10⁻⁴ m³ = 0,6 dm³ (tổng thể tích gỗ 1 dm³)."
+      ],
+      "expr": "6/10000",
+      "answer": "0.0006"
+    },
+    {
+      "problem": "Người nhảy dù tổng khối lượng 80 kg rơi đều với tốc độ giới hạn (g = 10). Tính lực cản của không khí.",
+      "steps": [
+        "Rơi đều nên hợp lực bằng 0: F_c = P.",
+        "F_c = 80·10 = 800 N."
+      ],
+      "expr": "80*10",
+      "answer": "800"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Lực cản của chất lưu có chiều:",
+      "choices": [
+        "ngược chiều chuyển động của vật",
+        "cùng chiều chuyển động",
+        "luôn hướng xuống",
+        "luôn hướng lên"
+      ],
+      "answer": 0,
+      "explain": "Cản trở chuyển động.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Lực đẩy Archimedes có độ lớn bằng:",
+      "choices": [
+        "trọng lượng phần chất lỏng bị vật chiếm chỗ",
+        "trọng lượng của vật",
+        "khối lượng chất lỏng",
+        "thể tích vật"
+      ],
+      "answer": 0,
+      "explain": "Định luật Archimedes.",
+      "wrong_explain": {
+        "1": "Chỉ bằng khi vật nổi.",
+        "2": "Sai đơn vị.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vật có hình dạng khí động học là vật:",
+      "choices": [
+        "có dạng thuôn, giảm lực cản",
+        "có mặt phẳng rộng",
+        "rất nặng",
+        "có nhiều góc cạnh"
+      ],
+      "answer": 0,
+      "explain": "Ví dụ thân máy bay.",
+      "wrong_explain": {
+        "1": "Lực cản lớn.",
+        "2": "Sai.",
+        "3": "Lực cản lớn."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật thể tích 3 dm³ chìm hoàn toàn trong nước (g = 10). Lực đẩy Archimedes (N) là:",
+      "expr": "1000*10*3/1000",
+      "answer": "30",
+      "explain": "F = ρgV.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vật chìm xuống đáy khi:",
+      "choices": [
+        "trọng lượng lớn hơn lực đẩy Archimedes",
+        "trọng lượng nhỏ hơn lực đẩy",
+        "trọng lượng bằng lực đẩy",
+        "thể tích lớn"
+      ],
+      "answer": 0,
+      "explain": "P > F_A.",
+      "wrong_explain": {
+        "1": "Nổi.",
+        "2": "Lơ lửng.",
+        "3": "Sai."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vật rơi trong không khí đạt tốc độ giới hạn khi:",
+      "choices": [
+        "lực cản cân bằng trọng lực",
+        "lực cản bằng 0",
+        "trọng lực bằng 0",
+        "gia tốc bằng g"
+      ],
+      "answer": 0,
+      "explain": "Hợp lực bằng 0.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Rơi tự do."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật nặng 20 N ngoài không khí, nhúng chìm trong nước lực kế chỉ 12 N. Lực đẩy (N) là:",
+      "expr": "20-12",
+      "answer": "8",
+      "explain": "F_A = P − P′.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Với vật trên, thể tích vật (dm³, g = 10) là:",
+      "expr": "8/10",
+      "answer": "0.8",
+      "explain": "V = 8/10000 m³ = 0,8 dm³.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi người nhảy dù mở dù, tốc độ giảm mạnh vì:",
+      "choices": [
+        "diện tích mặt cản tăng nên lực cản tăng",
+        "trọng lượng giảm",
+        "khối lượng giảm",
+        "g giảm"
+      ],
+      "answer": 0,
+      "explain": "Lực cản phụ thuộc diện tích.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Một quả cầu sắt đặc thả vào thuỷ ngân (ρ = 13 600 kg/m³) thì:",
+      "choices": [
+        "nổi",
+        "chìm",
+        "lơ lửng giữa",
+        "tan ra"
+      ],
+      "answer": 0,
+      "explain": "ρ sắt ≈ 7800 < 13 600.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Khối gỗ 2 kg nổi trên nước (g = 10). Lực đẩy Archimedes (N) là:",
+      "expr": "20",
+      "answer": "20",
+      "explain": "Nổi cân bằng: F_A = P.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khối gỗ thể tích 5 dm³, khối lượng riêng 800 kg/m³ nổi trên nước. Thể tích phần chìm (dm³) là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "V_chìm = m/ρ_nước = 4 kg / 1000 = 4 dm³.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật thể tích 2 dm³ chìm hoàn toàn trong dầu ρ = 800 kg/m³ (g = 10). Lực đẩy (N) là:",
+      "expr": "800*10*2/1000",
+      "answer": "16",
+      "explain": "ρgV.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Viên bi 0,05 kg rơi trong dầu đạt tốc độ giới hạn; lực đẩy Archimedes 0,1 N (g = 10). Lực cản khi đó (N) là:",
+      "expr": "0.5-0.1",
+      "answer": "0.4",
+      "explain": "P = F_A + F_c.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phao bơi thể tích 20 dm³, khối lượng không đáng kể. Phao giữ nổi tối đa vật nặng bao nhiêu kg (khi phao chìm hoàn toàn)?",
+      "expr": "20",
+      "answer": "20",
+      "explain": "F_A = 200 N đỡ được 20 kg (bỏ qua thể tích vật).",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Một tảng băng (ρ = 900 kg/m³) nổi trên nước biển (ρ = 1030 kg/m³). Tỉ lệ thể tích phần nổi (phần trăm, làm tròn 1 chữ số thập phân) là:",
+      "expr": "12.6",
+      "answer": "12.6",
+      "explain": "V_chìm/V = 900/1030 ≈ 87,4%, phần nổi ≈ 12,6%.",
+      "id": "q16"
+    }
+  ]
+}

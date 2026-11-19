@@ -1,0 +1,150 @@
+{
+  "id": "bai-16",
+  "grade": 10,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 10",
+  "chapter": "Chương IV. Phản ứng oxi hoá – khử",
+  "lesson": "Bài 16. Ôn tập chương 4",
+  "section": "",
+  "bookPage": 79,
+  "requirements": [
+    "Hệ thống hoá kiến thức về số oxi hoá và phản ứng oxi hoá – khử.",
+    "Vận dụng định luật bảo toàn electron giải bài tập."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hệ thống kiến thức chương 4: (1) Số oxi hoá và các quy tắc xác định. (2) Phản ứng oxi hoá – khử: có sự thay đổi số oxi hoá; chất khử nhường e (số oxi hoá tăng), chất oxi hoá nhận e (số oxi hoá giảm). (3) Cân bằng bằng thăng bằng electron. (4) Ý nghĩa trong đời sống, sản xuất."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b16-on-tap.svg",
+      "caption": "Sơ đồ hệ thống hoá kiến thức chương IV"
+    },
+    {
+      "type": "formula",
+      "content": "Bảo toàn electron: Σ(số mol × số e nhường của chất khử) = Σ(số mol × số e nhận của chất oxi hoá)"
+    },
+    {
+      "type": "method",
+      "title": "Giải bài toán bằng bảo toàn electron",
+      "when": "Đề cho kim loại tác dụng với acid có tính oxi hoá (HNO₃, H₂SO₄ đặc) hoặc halogen, hỏi khối lượng kim loại, thể tích khí sản phẩm khử.",
+      "steps": [
+        "Xác định chất nhường e (kim loại) và chất nhận e (N⁺⁵, S⁺⁶, Cl₂…), viết số e trao đổi cho mỗi phân tử/nguyên tử.",
+        "Lập phương trình bảo toàn electron.",
+        "Giải tìm ẩn; nếu có thể tích khí ở điều kiện chuẩn dùng V = n·24,79."
+      ],
+      "notes": [
+        "NO: N nhận 3e; NO₂: 1e; SO₂: S nhận 2e; H₂: 2H⁺ nhận 2e.",
+        "Fe tác dụng HCl tạo Fe²⁺, tác dụng HNO₃ dư tạo Fe³⁺."
+      ],
+      "sample": {
+        "problem": "Hoà tan 6,4 g Cu trong HNO₃ đặc dư thu được NO₂. Tính số mol NO₂.",
+        "steps": [
+          "n(Cu) = 0,1; Cu → Cu²⁺ + 2e: n(e) = 0,2.",
+          "N⁺⁵ + 1e → N⁺⁴: n(NO₂) = 0,2 mol."
+        ],
+        "answer": "0,2 mol"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho 4,8 g Mg tác dụng hết với H₂SO₄ đặc, nóng, thu được SO₂ (sản phẩm khử duy nhất). Tính thể tích SO₂ ở điều kiện chuẩn.",
+      "steps": [
+        "n(Mg) = 0,2 mol, nhường 0,4 mol e.",
+        "S⁺⁶ + 2e → S⁺⁴: n(SO₂) = 0,2 mol; V = 0,2·24,79 = 4,958 L."
+      ],
+      "expr": "0.2*24.79",
+      "answer": "4.958"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phản ứng nào KHÔNG phải phản ứng oxi hoá – khử?",
+      "choices": [
+        "CaO + H₂O → Ca(OH)₂",
+        "Fe + 2HCl → FeCl₂ + H₂",
+        "C + O₂ → CO₂",
+        "2KClO₃ → 2KCl + 3O₂"
+      ],
+      "answer": 0,
+      "explain": "Không thay đổi số oxi hoá.",
+      "wrong_explain": {
+        "1": "Có.",
+        "2": "Có.",
+        "3": "Có."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số oxi hoá của Fe trong Fe₃O₄ (giá trị trung bình, viết dạng phân số):",
+      "expr": "8/3",
+      "answer": "8/3",
+      "explain": "3x − 8 = 0.",
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong phản ứng Cl₂ + 2NaOH → NaCl + NaClO + H₂O, Cl₂ đóng vai trò:",
+      "choices": [
+        "vừa là chất oxi hoá vừa là chất khử",
+        "chỉ là chất oxi hoá",
+        "chỉ là chất khử",
+        "không thay đổi số oxi hoá"
+      ],
+      "answer": 0,
+      "explain": "Cl⁰ → Cl⁻¹ và Cl⁺¹.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số oxi hoá của Cl trong NaClO là:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "1 + x − 2 = 0.",
+      "id": "q04"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 5,4 g Al tác dụng với HNO₃ loãng dư thu được NO (sản phẩm khử duy nhất). Số mol NO là:",
+      "expr": "0.2",
+      "answer": "0.2",
+      "explain": "n(Al) = 0,2 mol; 3·0,2 = 3n(NO).",
+      "id": "q05"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 0,1 mol Fe tác dụng hết với HCl. Thể tích H₂ (L, điều kiện chuẩn) là:",
+      "expr": "0.1*24.79",
+      "answer": "2.479",
+      "explain": "Fe + 2HCl → FeCl₂ + H₂.",
+      "id": "q06"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cân bằng: Zn + H₂SO₄ (đặc) → ZnSO₄ + SO₂ + H₂O. Hệ số của H₂SO₄ (tối giản) là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Zn + 2H₂SO₄ → ZnSO₄ + SO₂ + 2H₂O.",
+      "id": "q07"
+    }
+  ]
+}

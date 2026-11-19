@@ -1,0 +1,292 @@
+{
+  "id": "bai-6",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương II. Động học",
+  "lesson": "Bài 6. Thực hành: Đo tốc độ của vật chuyển động",
+  "section": "",
+  "bookPage": 30,
+  "requirements": [
+    "Mô tả cách đo tốc độ bằng đồng hồ bấm giây, cổng quang điện và đồng hồ đo thời gian hiện số.",
+    "Tính tốc độ trung bình, tốc độ tức thời từ số liệu và đánh giá sai số."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đo tốc độ trung bình: đo quãng đường s bằng thước và thời gian t bằng đồng hồ bấm giây; v = s/t. Sai số chủ yếu do phản xạ của người bấm đồng hồ (khoảng 0,2 s), nên phương pháp này chỉ phù hợp khi thời gian chuyển động đủ dài."
+    },
+    {
+      "type": "text",
+      "content": "Cổng quang điện gồm một nguồn phát tia hồng ngoại và một cảm biến thu; khi vật chắn tia, cổng gửi tín hiệu đến đồng hồ đo thời gian hiện số để bắt đầu hoặc dừng đếm. Hai cổng đặt cách nhau quãng s cho thời gian vật đi hết s, từ đó tính tốc độ trung bình trên đoạn đó."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b6-cong-quang.svg",
+      "caption": "Đo tốc độ bằng cổng quang điện và đồng hồ đo thời gian hiện số"
+    },
+    {
+      "type": "text",
+      "content": "Đo tốc độ tức thời: dùng một cổng quang điện và một tấm chắn sáng có bề rộng nhỏ d gắn trên xe. Thời gian Δt tấm chắn đi qua cổng rất ngắn nên v = d/Δt coi là tốc độ tức thời tại cổng."
+    },
+    {
+      "type": "text",
+      "content": "Đồng hồ đo thời gian hiện số có các chế độ MODE: A (đo thời gian chắn cổng A), B, A + B (tổng), A ↔ B (thời gian từ cổng A đến cổng B). Độ chia nhỏ nhất thường 0,001 s nên sai số dụng cụ rất nhỏ."
+    },
+    {
+      "type": "text",
+      "content": "Thiết kế phương án đo: chọn dụng cụ, bố trí máng, xe, cổng quang; tiến hành đo nhiều lần (ít nhất 3 lần) ở cùng điều kiện; tính giá trị trung bình, sai số; viết kết quả v = v̄ ± Δv."
+    },
+    {
+      "type": "text",
+      "content": "Ưu điểm của cổng quang điện: loại bỏ sai số do phản xạ của người đo, đo được khoảng thời gian rất ngắn. Hạn chế: cần nguồn điện, chỉ đo được tại vị trí đặt cổng."
+    },
+    {
+      "type": "method",
+      "title": "Xử lí số liệu đo tốc độ",
+      "when": "Đề cho bảng số liệu quãng đường, thời gian (nhiều lần đo), hoặc bề rộng tấm chắn và thời gian chắn cổng; hỏi tốc độ và sai số.",
+      "steps": [
+        "Tính thời gian trung bình t̄ và sai số Δt.",
+        "v̄ = s/t̄ (tốc độ trung bình) hoặc v = d/Δt (tốc độ tức thời).",
+        "Sai số tỉ đối δv = δs + δt; Δv = δv · v̄.",
+        "Ghi kết quả v = v̄ ± Δv với đúng số chữ số."
+      ],
+      "notes": [
+        "Đổi mm, cm về m để tốc độ ra m/s.",
+        "Thời gian chắn cổng càng ngắn thì giá trị càng gần tốc độ tức thời."
+      ],
+      "sample": {
+        "problem": "Tấm chắn rộng 10 mm đi qua cổng quang trong 0,025 s. Tính tốc độ tức thời của xe.",
+        "steps": [
+          "v = d/Δt = 0,010/0,025 = 0,4 m/s."
+        ],
+        "answer": "0,4 m/s"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hai cổng quang điện cách nhau 0,60 m. Thời gian xe đi từ cổng A đến cổng B đo 3 lần: 0,52 s; 0,50 s; 0,51 s. Tính tốc độ trung bình của xe trên đoạn AB.",
+      "steps": [
+        "t̄ = (0,52 + 0,50 + 0,51)/3 = 0,51 s.",
+        "v̄ = 0,60/0,51 = 20/17 ≈ 1,18 m/s."
+      ],
+      "expr": "60/51",
+      "answer": "20/17"
+    },
+    {
+      "problem": "Tấm chắn sáng rộng 2,0 cm gắn trên xe đi qua cổng quang trong 0,040 s. Tính tốc độ tức thời của xe tại cổng.",
+      "steps": [
+        "Đổi d = 0,020 m.",
+        "v = 0,020/0,040 = 0,50 m/s."
+      ],
+      "expr": "2/4",
+      "answer": "0.5"
+    },
+    {
+      "problem": "Đo quãng đường s = 1,000 ± 0,002 m và thời gian t = 2,00 ± 0,05 s. Viết kết quả đo tốc độ.",
+      "steps": [
+        "v̄ = 1,000/2,00 = 0,500 m/s.",
+        "δv = 0,002/1 + 0,05/2 = 0,002 + 0,025 = 0,027 = 2,7%.",
+        "Δv ≈ 0,027 · 0,5 ≈ 0,014 m/s; v = 0,500 ± 0,014 (m/s)."
+      ],
+      "expr": "0.002+0.025",
+      "answer": "0.027"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dụng cụ nào loại bỏ được sai số do phản xạ của người đo thời gian?",
+      "choices": [
+        "Cổng quang điện và đồng hồ đo thời gian hiện số",
+        "Đồng hồ bấm giây",
+        "Đồng hồ treo tường",
+        "Thước cuộn"
+      ],
+      "answer": 0,
+      "explain": "Tín hiệu điện tự động dừng đồng hồ.",
+      "wrong_explain": {
+        "1": "Vẫn do người bấm.",
+        "2": "Sai.",
+        "3": "Không đo thời gian."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chế độ A ↔ B của đồng hồ đo thời gian hiện số đo:",
+      "choices": [
+        "thời gian vật đi từ cổng A đến cổng B",
+        "thời gian chắn cổng A",
+        "tổng thời gian chắn hai cổng",
+        "số lần chắn cổng"
+      ],
+      "answer": 0,
+      "explain": "Dùng để đo tốc độ trung bình trên đoạn AB.",
+      "wrong_explain": {
+        "1": "Đó là MODE A.",
+        "2": "Đó là A + B.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Để đo tốc độ tức thời bằng cổng quang điện, cần gắn trên xe:",
+      "choices": [
+        "tấm chắn sáng có bề rộng nhỏ đã biết",
+        "một thước dài",
+        "một đồng hồ",
+        "một quả nặng"
+      ],
+      "answer": 0,
+      "explain": "v = d/Δt với d nhỏ.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Xe đi 0,8 m giữa hai cổng trong 0,4 s. Tốc độ trung bình (m/s) là:",
+      "expr": "8/4",
+      "answer": "2",
+      "explain": "v = s/t.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tấm chắn rộng 15 mm qua cổng trong 0,03 s. Tốc độ tức thời (m/s) là:",
+      "expr": "15/30",
+      "answer": "0.5",
+      "explain": "Đổi 15 mm = 0,015 m.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao đo thời gian bằng đồng hồ bấm giây cho sai số lớn khi vật chuyển động nhanh?",
+      "choices": [
+        "Vì thời gian phản xạ của người bấm (~0,2 s) đáng kể so với thời gian đo",
+        "Vì đồng hồ bấm giây không có kim",
+        "Vì vật nhanh làm đồng hồ hỏng",
+        "Vì không nhìn thấy vật"
+      ],
+      "answer": 0,
+      "explain": "Sai số tỉ đối lớn khi t nhỏ.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Không phải nguyên nhân chính."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Muốn giá trị đo gần tốc độ tức thời hơn, nên:",
+      "choices": [
+        "dùng tấm chắn sáng hẹp hơn",
+        "dùng tấm chắn rộng hơn",
+        "đặt hai cổng xa nhau hơn",
+        "bấm đồng hồ nhanh hơn"
+      ],
+      "answer": 0,
+      "explain": "Δt càng nhỏ càng gần tức thời.",
+      "wrong_explain": {
+        "1": "Ngược lại.",
+        "2": "Đó là tốc độ trung bình trên đoạn dài.",
+        "3": "Không dùng đồng hồ bấm."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ba lần đo thời gian: 0,42; 0,44; 0,43 (s). Thời gian trung bình (s) là:",
+      "expr": "(0.42+0.44+0.43)/3",
+      "answer": "0.43",
+      "explain": "Trung bình cộng.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Quãng đường 0,50 m, thời gian trung bình 0,25 s, sai số thời gian 0,01 s, sai số quãng đường 0,005 m. Sai số tỉ đối của tốc độ (phần trăm) là:",
+      "expr": "(5/500+1/25)*100",
+      "answer": "5",
+      "explain": "1% + 4%.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Xe đi qua cổng A với tốc độ 0,4 m/s và cổng B với 0,8 m/s, hai cổng cách nhau 0,6 m, thời gian đi 1 s. Tốc độ trung bình trên AB (m/s) là:",
+      "expr": "0.6/1",
+      "answer": "0.6",
+      "explain": "Tốc độ trung bình = s/t, không phải trung bình hai tốc độ tức thời.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tấm chắn rộng 1,0 cm đi qua cổng A trong 0,020 s và cổng B trong 0,010 s. Tốc độ tại B lớn hơn tại A bao nhiêu m/s?",
+      "expr": "1-1/2",
+      "answer": "0.5",
+      "explain": "v_A = 0,5 m/s; v_B = 1,0 m/s.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai cổng cách nhau 1,20 m; thời gian đo được 3 lần: 0,60; 0,62; 0,58 (s). Tốc độ trung bình (m/s) là:",
+      "expr": "12/6",
+      "answer": "2",
+      "explain": "t̄ = 0,60 s.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với số liệu trên (t̄ = 0,60 s), sai số ngẫu nhiên của thời gian (s, viết dạng phân số) là:",
+      "expr": "4/300",
+      "answer": "1/75",
+      "explain": "Các độ lệch 0; 0,02; 0,02.",
+      "id": "q13"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Một học sinh đo tốc độ xe bằng hai cổng quang và nhận thấy kết quả ba lần đo lệch nhau nhiều. Nguyên nhân hợp lí nhất là:",
+      "choices": [
+        "xe được thả từ các vị trí khác nhau nên tốc độ mỗi lần khác nhau",
+        "đồng hồ hiện số có sai số 0,2 s",
+        "cổng quang điện không đo được thời gian",
+        "thước đo bị sai"
+      ],
+      "answer": 0,
+      "explain": "Điều kiện thí nghiệm không giống nhau giữa các lần đo.",
+      "wrong_explain": {
+        "1": "Sai số đồng hồ hiện số rất nhỏ.",
+        "2": "Sai.",
+        "3": "Sai thước gây sai số hệ thống, không gây lệch giữa các lần."
+      },
+      "id": "q14"
+    }
+  ]
+}

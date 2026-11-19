@@ -1,0 +1,282 @@
+{
+  "id": "bai-20",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương III. Động lực học",
+  "lesson": "Bài 20. Một số ví dụ về cách giải các bài toán thuộc phần động lực học",
+  "section": "",
+  "bookPage": 80,
+  "requirements": [
+    "Vận dụng phương pháp động lực học (định luật 2 Newton kết hợp động học) để giải bài toán một vật và hệ vật nối dây.",
+    "Giải bài toán vật trên mặt phẳng nghiêng, vật chịu lực kéo xiên."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phương pháp động lực học gồm hai dạng bài toán: (1) biết lực tác dụng, tìm chuyển động (gia tốc, vận tốc, quãng đường); (2) biết chuyển động, tìm lực. Cầu nối giữa hai phần là gia tốc a."
+    },
+    {
+      "type": "text",
+      "content": "Các bước giải: (1) Chọn vật (hệ vật) khảo sát và hệ quy chiếu (trục toạ độ, chiều dương thường theo chiều chuyển động). (2) Phân tích các lực tác dụng lên vật, vẽ hình. (3) Viết phương trình định luật 2 Newton dạng vectơ: ΣF = m→a. (4) Chiếu lên các trục toạ độ, giải tìm ẩn. (5) Kết hợp công thức động học nếu cần."
+    },
+    {
+      "type": "formula",
+      "content": "Mặt phẳng nghiêng góc α (không ma sát): a = g·sin α        Có ma sát trượt: a = g(sin α − μ·cos α) khi trượt xuống"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b20-mat-nghieng.svg",
+      "caption": "Các lực tác dụng lên vật trên mặt phẳng nghiêng"
+    },
+    {
+      "type": "formula",
+      "content": "Hai vật nối dây trên mặt ngang nhẵn, kéo vật đầu bằng F: a = F/(m₁ + m₂), lực căng T = m₂·a"
+    },
+    {
+      "type": "text",
+      "content": "Với hệ vật nối dây không dãn, các vật có cùng độ lớn gia tốc. Có thể coi cả hệ là một vật (nội lực – lực căng – triệt tiêu) để tìm a, sau đó xét riêng từng vật để tìm lực căng."
+    },
+    {
+      "type": "method",
+      "title": "Giải bài toán động lực học",
+      "when": "Đề cho vật trên mặt ngang hoặc mặt nghiêng, có hoặc không có ma sát, hoặc hệ hai vật nối dây; hỏi gia tốc, lực căng, vận tốc, quãng đường, lực kéo.",
+      "steps": [
+        "Chọn chiều dương, vẽ đủ các lực lên mỗi vật.",
+        "Viết định luật 2 cho vật (hoặc hệ): ΣF = ma; chiếu lên trục song song và vuông góc mặt tiếp xúc.",
+        "Từ phương vuông góc tìm N (để tính ma sát); từ phương chuyển động tìm a.",
+        "Dùng động học để tìm v, d, t."
+      ],
+      "notes": [
+        "Trên mặt nghiêng: N = mg·cos α (khi không có lực xiên).",
+        "Hệ nối dây: lực căng là nội lực."
+      ],
+      "sample": {
+        "problem": "Vật trượt không ma sát từ đỉnh mặt nghiêng dài 10 m, góc 30° (g = 10). Tính gia tốc và vận tốc ở chân dốc.",
+        "steps": [
+          "a = g·sin 30° = 5 m/s².",
+          "v = √(2ad) = √100 = 10 m/s."
+        ],
+        "answer": "a = 5 m/s², v = 10 m/s"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hai vật m₁ = 2 kg và m₂ = 3 kg nối với nhau bằng dây nhẹ, đặt trên mặt ngang nhẵn. Kéo m₁ bằng lực F = 15 N nằm ngang. Tính gia tốc của hệ và lực căng dây.",
+      "steps": [
+        "Coi hệ là một vật: a = F/(m₁ + m₂) = 15/5 = 3 m/s².",
+        "Xét m₂: T = m₂a = 3·3 = 9 N."
+      ],
+      "expr": "3*3",
+      "answer": "9"
+    },
+    {
+      "problem": "Vật 2 kg trượt xuống mặt nghiêng góc 30°, hệ số ma sát 0,1 (g = 10, cos 30° ≈ 0,87). Tính gia tốc.",
+      "steps": [
+        "N = mg·cos 30° ≈ 17,4 N; F_ms = 0,1·17,4 = 1,74 N.",
+        "a = (mg·sin 30° − F_ms)/m = (10 − 1,74)/2 ≈ 4,13 m/s²."
+      ],
+      "expr": "(10-1.74)/2",
+      "answer": "4.13"
+    },
+    {
+      "problem": "Một ô tô 1,2 tấn khởi hành, sau 10 s đạt 36 km/h. Lực cản bằng 0,05 trọng lượng (g = 10). Tính lực kéo của động cơ.",
+      "steps": [
+        "a = 10/10 = 1 m/s²; F_c = 0,05·12000 = 600 N.",
+        "F − F_c = ma ⇒ F = 1200·1 + 600 = 1800 N."
+      ],
+      "expr": "1200+600",
+      "answer": "1800"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật trượt không ma sát trên mặt nghiêng 30° (g = 10). Gia tốc (m/s²) là:",
+      "expr": "10/2",
+      "answer": "5",
+      "explain": "a = g sin α.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hai vật 1 kg và 4 kg nối dây trên mặt ngang nhẵn, kéo bằng lực 10 N. Gia tốc (m/s²) là:",
+      "expr": "10/5",
+      "answer": "2",
+      "explain": "a = F/(m₁ + m₂).",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bước đầu tiên khi giải bài toán động lực học là:",
+      "choices": [
+        "chọn vật khảo sát và hệ quy chiếu",
+        "tính vận tốc",
+        "tính quãng đường",
+        "đổi đơn vị lực"
+      ],
+      "answer": 0,
+      "explain": "Xác định đối tượng và chiều dương.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đại lượng là cầu nối giữa động lực học và động học là:",
+      "choices": [
+        "gia tốc",
+        "vận tốc",
+        "khối lượng",
+        "thời gian"
+      ],
+      "answer": 0,
+      "explain": "a = F/m và a dùng trong công thức động học.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật 3 kg trên mặt nghiêng 30°. Thành phần trọng lực kéo vật xuống dốc (N, g = 10) là:",
+      "expr": "30/2",
+      "answer": "15",
+      "explain": "mg sin α.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai vật 1 kg và 4 kg nối dây, kéo vật 1 kg bằng lực 10 N (mặt nhẵn). Lực căng dây (N) là:",
+      "expr": "4*2",
+      "answer": "8",
+      "explain": "T = m₂a.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật trượt không ma sát từ đỉnh mặt nghiêng dài 2,5 m, góc 30° (g = 10). Vận tốc ở chân dốc (m/s) là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "v² = 2·5·2,5 = 25.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Kéo vật 4 kg trên sàn ngang bằng lực 20 N, μ = 0,25 (g = 10). Quãng đường sau 2 s từ nghỉ (m) là:",
+      "expr": "2.5*4/2",
+      "answer": "5",
+      "explain": "a = (20 − 10)/4 = 2,5.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Xe 1 tấn tăng tốc từ 0 lên 20 m/s trong 10 s, lực cản 500 N. Lực kéo (N) là:",
+      "expr": "2000+500",
+      "answer": "2500",
+      "explain": "a = 2; F = ma + F_c.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vật trượt trên mặt nghiêng có ma sát, phản lực của mặt nghiêng có độ lớn:",
+      "choices": [
+        "mg·cos α",
+        "mg",
+        "mg·sin α",
+        "μmg"
+      ],
+      "answer": 0,
+      "explain": "Cân bằng thành phần vuông góc.",
+      "wrong_explain": {
+        "1": "Chỉ khi mặt ngang.",
+        "2": "Thành phần song song.",
+        "3": "Đó là ma sát trên mặt ngang."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật đẩy lên dốc 30° không ma sát với v₀ = 10 m/s (g = 10). Quãng đường đi lên tối đa (m) là:",
+      "expr": "100/10",
+      "answer": "10",
+      "explain": "a = −5; d = v₀²/(2|a|).",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ba vật 1, 2, 3 kg nối nhau, kéo vật đầu (1 kg) bằng 12 N, mặt nhẵn. Lực căng dây nối vật 1 kg và 2 kg (N) là:",
+      "expr": "5*2",
+      "answer": "10",
+      "explain": "a = 2; dây đó kéo 5 kg.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật m₁ = 3 kg trên bàn nhẵn nối qua ròng rọc với m₂ = 1 kg treo thẳng đứng (g = 10). Gia tốc hệ (m/s²) là:",
+      "expr": "10/4",
+      "answer": "2.5",
+      "explain": "a = m₂g/(m₁ + m₂).",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Với hệ trên, lực căng dây (N) là:",
+      "expr": "3*2.5",
+      "answer": "7.5",
+      "explain": "T = m₁a.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật trượt xuống mặt nghiêng 45° có μ = 0,5 (g = 10, sin 45° = cos 45° ≈ 0,707). Gia tốc (m/s², làm tròn 2 chữ số) là:",
+      "expr": "10*0.707*0.5",
+      "answer": "3.535",
+      "explain": "a = g(sin α − μcos α) = 10·0,707·0,5.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lực kéo tối thiểu để kéo đều vật 10 kg lên dốc 30° không ma sát (g = 10) là (N):",
+      "expr": "50",
+      "answer": "50",
+      "explain": "F = mg sin α.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Vật nằm yên trên mặt nghiêng 30°. Hệ số ma sát nghỉ tối thiểu là (làm tròn 3 chữ số, tan 30° ≈ 0,577):",
+      "expr": "0.577",
+      "answer": "0.577",
+      "explain": "mg sin α ≤ μmg cos α ⇒ μ ≥ tan α.",
+      "id": "q17"
+    }
+  ]
+}

@@ -25,20 +25,60 @@ function readJson(relPath) {
 function checkLesson(lesson, relPath) {
   const problems = [];
   if (!lesson.id) problems.push('thiếu id');
-  if (!Array.isArray(lesson.items)) problems.push('thiếu danh sách câu hỏi');
-  if (!Array.isArray(lesson.theory)) problems.push('thiếu lý thuyết');
+  if (lesson.kind === 'review') {
+    if (!Array.isArray(lesson.questions)) problems.push('thiếu danh sách câu tự luận');
+  } else {
+    if (!Array.isArray(lesson.items)) problems.push('thiếu danh sách câu hỏi');
+    if (!Array.isArray(lesson.theory)) problems.push('thiếu lý thuyết');
+  }
   if (problems.length) {
     throw new Error(`Bài ${relPath} không hợp lệ: ${problems.join(', ')}`);
   }
   return lesson;
 }
 
-function loadManifest(product) {
-  return readJson(path.join(product, 'manifest.json'));
+function loadManifest(subject) {
+  return readJson(path.join(assertSubject(subject), 'manifest.json'));
 }
 
+// Sản phẩm đang chạy (THCS hoặc THPT) quyết định các môn được phép đọc. Xem tools/select-product.js.
+const PRODUCT = require('./product.json');
+const SUBJECTS = PRODUCT.subjects;
+
+function productInfo() {
+  return { id: PRODUCT.id, title: PRODUCT.title, grades: PRODUCT.grades, subjects: PRODUCT.subjects };
+}
+
+function assertSubject(subject) {
+  if (!SUBJECTS.includes(subject)) throw new Error('Môn học không hợp lệ');
+  return subject;
+}
+
+// Đọc nội dung SVG của hình minh họa và gắn vào câu hỏi (figureSvg), để giao diện không cần quyền đọc file.
+function readFigure(base, rel) {
+  return fs.readFileSync(safeResolve(path.join(base, rel)), 'utf8');
+}
+
+function attachFigures(lesson, base) {
+  for (const item of lesson.items || []) {
+    if (item.figure) item.figureSvg = readFigure(base, item.figure);
+  }
+  for (const q of lesson.questions || []) {
+    if (q.figure) q.figureSvg = readFigure(base, q.figure);
+  }
+  for (const block of lesson.theory || []) {
+    if (block.type === 'figure') block.figureSvg = readFigure(base, block.figure);
+  }
+  for (const ex of lesson.examples || []) {
+    if (ex.figure) ex.figureSvg = readFigure(base, ex.figure);
+  }
+  return lesson;
+}
+
+// Đường dẫn bài học có dạng "<môn>/<file>", ví dụ "toan7/tap1/chuong-1/bai-1/tap-hop.json".
 function loadLesson(relPath) {
-  return checkLesson(readJson(relPath), relPath);
+  const base = assertSubject(String(relPath).split('/')[0]);
+  return attachFigures(checkLesson(readJson(relPath), relPath), base);
 }
 
-module.exports = { loadManifest, loadLesson, safeResolve };
+module.exports = { loadManifest, loadLesson, safeResolve, SUBJECTS, productInfo };

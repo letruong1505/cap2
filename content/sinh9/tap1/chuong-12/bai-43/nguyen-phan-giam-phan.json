@@ -1,0 +1,240 @@
+{
+  "id": "bai-43",
+  "grade": 9,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 9",
+  "chapter": "Chương XII. Di truyền nhiễm sắc thể",
+  "lesson": "Bài 43. Nguyên phân và giảm phân",
+  "section": "",
+  "bookPage": 186,
+  "requirements": [
+    "Trình bày được quá trình nguyên phân, giảm phân; ý nghĩa; mối quan hệ giữa giảm phân và thụ tinh."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nguyên phân là hình thức phân chia tế bào, từ một tế bào mẹ (2n) tạo hai tế bào con có bộ NST giống hệt tế bào mẹ (2n). Gồm các kì: đầu, giữa, sau, cuối. Ý nghĩa: giúp cơ thể sinh trưởng, tái sinh mô; cơ sở của sinh sản vô tính."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/c-s9-b43-nguyen-phan.svg",
+      "caption": "Các kì của nguyên phân (sơ đồ, 2n = 4)"
+    },
+    {
+      "type": "text",
+      "content": "Giảm phân xảy ra ở tế bào sinh dục chín, gồm hai lần phân bào liên tiếp nhưng NST chỉ nhân đôi một lần, tạo bốn tế bào con có bộ NST đơn bội (n)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/c-s9-b43-giam-phan.svg",
+      "caption": "Giảm phân (sơ đồ, 2n = 4)"
+    },
+    {
+      "type": "text",
+      "content": "Thụ tinh là sự kết hợp giữa giao tử đực (n) và giao tử cái (n) tạo hợp tử (2n). Nhờ giảm phân và thụ tinh, bộ NST của loài được duy trì ổn định qua các thế hệ."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/c-s9-b43-thu-tinh.svg",
+      "caption": "Thụ tinh (sơ đồ)"
+    },
+    {
+      "type": "formula",
+      "content": "Nguyên phân k lần: 1 tế bào → 2ᵏ tế bào; giảm phân: 1 tế bào → 4 tế bào (n)"
+    },
+    {
+      "type": "method",
+      "title": "Tính số tế bào và NST qua nguyên phân, giảm phân",
+      "when": "Đề cho số tế bào ban đầu, số lần nguyên phân, bộ NST 2n và hỏi số tế bào con, số NST, số giao tử.",
+      "steps": [
+        "Nguyên phân k lần từ a tế bào: số tế bào con = a·2ᵏ.",
+        "Số NST đơn trong các tế bào con = a·2ᵏ·2n.",
+        "Giảm phân: 1 tế bào sinh tinh → 4 tinh trùng; 1 tế bào sinh trứng → 1 trứng.",
+        "Tính từng bước và kiểm tra bằng bộ NST n hoặc 2n của loại tế bào đang xét."
+      ],
+      "notes": [
+        "Giảm phân tạo tế bào đơn bội n; nguyên phân giữ nguyên 2n.",
+        "Lũy thừa: 2⁴ = 16, không phải 8.",
+        "Tế bào sinh trứng chỉ cho 1 trứng.",
+        "Đọc kĩ \"bao nhiêu tế bào\" hay \"bao nhiêu NST\"."
+      ],
+      "sample": {
+        "problem": "Một tế bào 2n = 8 nguyên phân 4 lần. Tính số tế bào con.",
+        "steps": [
+          "Số tế bào con = 2⁴ = 16."
+        ],
+        "answer": "16 tế bào"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "1 tế bào nguyên phân 3 lần tạo bao nhiêu tế bào con?",
+      "steps": [
+        "2³.",
+        "= 8."
+      ],
+      "expr": "8",
+      "answer": "8"
+    },
+    {
+      "problem": "Dạng giảm phân: 5 tế bào sinh tinh giảm phân tạo bao nhiêu tinh trùng?",
+      "steps": [
+        "Mỗi tế bào tạo 4 tinh trùng.",
+        "5·4 = 20."
+      ],
+      "expr": "5*4",
+      "answer": "20"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nguyên phân tạo ra tế bào con có bộ NST:",
+      "choices": [
+        "Giảm một nửa",
+        "Giống hệt tế bào mẹ (2n)",
+        "Gấp đôi",
+        "Ngẫu nhiên"
+      ],
+      "answer": 1,
+      "explain": "2n → 2n.",
+      "wrong_explain": {
+        "0": "Giảm phân.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Giảm phân xảy ra ở:",
+      "choices": [
+        "Tế bào sinh dục chín",
+        "Tế bào da",
+        "Tế bào cơ",
+        "Tế bào thần kinh"
+      ],
+      "answer": 0,
+      "explain": "Hình thành giao tử.",
+      "wrong_explain": {
+        "1": "Nguyên phân.",
+        "2": "Không phân chia.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Một tế bào nguyên phân 3 lần liên tiếp. Số tế bào con tạo ra là?",
+      "expr": "2*2*2",
+      "answer": "8",
+      "explain": "Số tế bào = 2³ = 8.",
+      "dang": "Tính số tế bào và NST qua nguyên phân, giảm phân",
+      "id": "q08"
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Từ 1 tế bào qua giảm phân tạo ra:",
+      "choices": [
+        "2 tế bào con (2n)",
+        "8 tế bào",
+        "1 tế bào",
+        "4 tế bào con (n)"
+      ],
+      "answer": 3,
+      "explain": "Hai lần phân bào.",
+      "wrong_explain": {
+        "0": "Nguyên phân.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Bộ NST của loài ổn định qua các thế hệ nhờ:",
+      "choices": [
+        "Chỉ nguyên phân",
+        "Chỉ thụ tinh",
+        "Giảm phân và thụ tinh",
+        "Đột biến"
+      ],
+      "answer": 2,
+      "explain": "n + n = 2n.",
+      "wrong_explain": {
+        "0": "Không đủ.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "1 tế bào nguyên phân 4 lần tạo bao nhiêu tế bào?",
+      "expr": "16",
+      "answer": "16",
+      "explain": "2⁴."
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một tế bào ruồi giấm (2n = 8) nguyên phân 4 lần. Tổng số NST trong các tế bào con là?",
+      "expr": "16*8",
+      "answer": "128",
+      "explain": "2⁴ = 16 tế bào, mỗi tế bào 8 NST: 128 NST.",
+      "dang": "Tính số tế bào và NST qua nguyên phân, giảm phân",
+      "id": "q09"
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tế bào người (2n = 46) sau giảm phân có bao nhiêu NST?",
+      "expr": "23",
+      "answer": "23",
+      "explain": "n."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "10 tế bào sinh trứng giảm phân tạo bao nhiêu trứng (mỗi tế bào 1 trứng)?",
+      "expr": "10",
+      "answer": "10",
+      "explain": "1 trứng + 3 thể cực."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có 5 tế bào sinh tinh giảm phân. Số tinh trùng tạo ra là?",
+      "expr": "5*4",
+      "answer": "20",
+      "explain": "Mỗi tế bào sinh tinh cho 4 tinh trùng: 20.",
+      "dang": "Tính số tế bào và NST qua nguyên phân, giảm phân",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có 5 tế bào sinh trứng giảm phân. Số trứng tạo ra là?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Mỗi tế bào sinh trứng chỉ cho 1 trứng.",
+      "dang": "Tính số tế bào và NST qua nguyên phân, giảm phân",
+      "id": "q11"
+    }
+  ]
+}

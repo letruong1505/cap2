@@ -1,0 +1,346 @@
+{
+  "id": "bai-26",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 4. Dòng điện. Mạch điện",
+  "lesson": "Bài 26. Thực hành: Đo suất điện động và điện trở trong của pin điện hoá",
+  "section": "",
+  "bookPage": 111,
+  "requirements": [
+    "Biết bố trí mạch điện (pin, biến trở, ampe kế, vôn kế) để đo hiệu điện thế và cường độ dòng điện.",
+    "Xử lí số liệu, vẽ đồ thị U – I để xác định suất điện động E và điện trở trong r."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cơ sở lí thuyết: hiệu điện thế hai cực pin khi có dòng I chạy qua là U = E − Ir. Vẽ đồ thị U theo I là đường thẳng; giao điểm với trục tung cho E, độ lớn hệ số góc cho r. Dụng cụ: pin điện hoá cần đo, biến trở, điện trở bảo vệ R₀, ampe kế, vôn kế, công tắc, dây nối."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b26-mach-do-va-do-thi.svg",
+      "caption": "Sơ đồ mạch đo (pin – ampe kế – biến trở – R₀, vôn kế đo U hai cực pin) và đồ thị U–I: đường thẳng qua các điểm đo cắt trục tung tại E, hệ số góc −r"
+    },
+    {
+      "type": "text",
+      "content": "Tiến hành: (1) Mắc mạch theo sơ đồ, đóng khoá K. (2) Đặt biến trở ở giá trị lớn nhất, đọc U và I; (3) giảm dần biến trở, ghi các cặp (I, U) vào bảng (khoảng 5–6 lần); ngắt khoá giữa các lần đo để pin không nóng, nhanh cạn. (4) Vẽ đồ thị U–I."
+    },
+    {
+      "type": "formula",
+      "content": "Từ hai điểm (I₁, U₁), (I₂, U₂): r = (U₁ − U₂)/(I₂ − I₁);   E = U₁ + I₁r.   Sai số: ΔE = E_max − E_min ..., Δr tương tự; giá trị trung bình E = Σ/n."
+    },
+    {
+      "type": "text",
+      "content": "Lưu ý: vôn kế có điện trở rất lớn; ampe kế có điện trở rất nhỏ; chọn thang đo phù hợp; giữ dòng điện nhỏ để pin ít bị hao; điện trở bảo vệ R₀ để tránh ngắn mạch. Nguyên nhân sai số: điện trở dụng cụ đo, đọc số, pin thay đổi trong quá trình đo."
+    },
+    {
+      "type": "method",
+      "title": "Xác định E và r bằng phương pháp đồ thị",
+      "when": "Có bảng (I, U); vẽ đồ thị và đọc E, r.",
+      "steps": [
+        "Vẽ các điểm (I, U) trên giấy kẻ ô, vẽ đường thẳng đi gần các điểm nhất.",
+        "E là giá trị U tại I = 0 (giao trục tung).",
+        "r = |hệ số góc| = (E − U)/I tại một điểm trên đường thẳng.",
+        "Có thể kiểm tra bằng cách tính từ hai điểm xa nhau."
+      ],
+      "notes": [
+        "Chọn hai điểm trên đường thẳng, không nhất thiết là điểm đo.",
+        "Đơn vị: V và A cho r tính ra Ω."
+      ],
+      "sample": {
+        "problem": "Đường thẳng đi qua (0,5 A; 5,7 V) và (2,0 A; 2,7 V). Tìm r và E.",
+        "steps": [
+          "r = (5,7 − 2,7)/(2,0 − 0,5) = 2 Ω.",
+          "E = 5,7 + 0,5·2 = 6,7 V."
+        ],
+        "answer": "r = 2 Ω; E = 6,7 V"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Xử lí số liệu bằng bảng và tính sai số",
+      "when": "Cho vài cặp (I, U); tính r và E từ các cặp liên tiếp rồi lấy trung bình.",
+      "steps": [
+        "Với mỗi cặp hai điểm tính r_i = (U₁ − U₂)/(I₂ − I₁) và E_i = U₁ + I₁r_i.",
+        "r̄ = Σr_i/n; Ē = ΣE_i/n.",
+        "Sai số tuyệt đối trung bình Δr = Σ|r_i − r̄|/n.",
+        "Viết kết quả r = r̄ ± Δr."
+      ],
+      "notes": [
+        "Đo nhiều điểm để giảm sai số ngẫu nhiên.",
+        "Bỏ các điểm lệch bất thường."
+      ],
+      "sample": {
+        "problem": "Hai lần đo: r₁ = 1,9 Ω; r₂ = 2,1 Ω. Tính r̄ và Δr.",
+        "steps": [
+          "r̄ = 2,0 Ω.",
+          "Δr = (0,1 + 0,1)/2 = 0,1 Ω."
+        ],
+        "answer": "r = 2,0 ± 0,1 Ω"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Phân tích mạch đo và nguyên nhân sai số",
+      "when": "Hỏi vì sao dùng biến trở, điện trở bảo vệ, vì sao ngắt khoá giữa các lần đo.",
+      "steps": [
+        "Biến trở thay đổi R mạch ngoài để thu được nhiều cặp (I, U).",
+        "R₀ bảo vệ, tránh dòng quá lớn khi biến trở nhỏ.",
+        "Ngắt khoá khi không đo để pin không nóng, E không giảm.",
+        "Sai số do điện trở ampe kế, dòng qua vôn kế, đọc số."
+      ],
+      "notes": [
+        "Vôn kế phải nối trực tiếp hai cực pin.",
+        "Dòng không quá lớn."
+      ],
+      "sample": {
+        "problem": "Tại sao phải mắc điện trở bảo vệ R₀?",
+        "steps": [
+          "Khi biến trở nhỏ, nguy cơ dòng lớn gần ngắn mạch.",
+          "R₀ giới hạn dòng, bảo vệ pin và dụng cụ."
+        ],
+        "answer": "Giới hạn dòng điện, tránh ngắn mạch"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đường thẳng U–I qua (0,5 A; 5,7 V) và (2,0 A; 2,7 V). r (Ω)?",
+      "steps": [
+        "r = (5,7 − 2,7)/(2 − 0,5).",
+        "= 2 Ω."
+      ],
+      "expr": "(5.7-2.7)/(2-0.5)",
+      "answer": "2"
+    },
+    {
+      "problem": "Cùng đồ thị. E (V) = U₁ + I₁r?",
+      "steps": [
+        "E = 5,7 + 0,5·2.",
+        "= 6,7 V."
+      ],
+      "expr": "5.7+0.5*2",
+      "answer": "67/10"
+    },
+    {
+      "problem": "r₁ = 1,9 Ω, r₂ = 2,1 Ω. r̄ (Ω)?",
+      "steps": [
+        "r̄ = (1,9 + 2,1)/2.",
+        "= 2 Ω."
+      ],
+      "expr": "(1.9+2.1)/2",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Pin: khi I = 0, U = 6,7 V. Suất điện động E (V):",
+      "expr": "6.7",
+      "answer": "67/10",
+      "explain": "U(I = 0) = E.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "U = E − Ir với E = 6,7 V, I = 0,5 A, r = 2 Ω. U (V):",
+      "expr": "6.7-0.5*2",
+      "answer": "57/10",
+      "explain": "U = 5,7 V.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hệ số góc của đồ thị U–I là −2 V/A. Điện trở trong r (Ω):",
+      "expr": "2",
+      "answer": "2",
+      "explain": "r = |hệ số góc| = 2 Ω.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong thí nghiệm, ampe kế mắc:",
+      "choices": [
+        "nối tiếp với mạch",
+        "song song với pin",
+        "song song với biến trở",
+        "không cần mắc"
+      ],
+      "answer": 0,
+      "explain": "Đo dòng chạy trong mạch.",
+      "wrong_explain": {
+        "1": "Song song là vôn kế.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vôn kế dùng để đo:",
+      "choices": [
+        "hiệu điện thế giữa hai cực của pin",
+        "cường độ dòng điện",
+        "điện trở của biến trở",
+        "công suất"
+      ],
+      "answer": 0,
+      "explain": "U hai cực pin.",
+      "wrong_explain": {
+        "1": "Là ampe kế.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Mục đích của điện trở bảo vệ R₀ là:",
+      "choices": [
+        "tránh dòng điện quá lớn",
+        "tăng suất điện động",
+        "đo điện áp",
+        "giảm điện trở trong"
+      ],
+      "answer": 0,
+      "explain": "Giới hạn dòng.",
+      "wrong_explain": {
+        "1": "Không tăng E.",
+        "2": "Không đo.",
+        "3": "Không đổi r."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đồ thị qua (0,5 A; 5,7 V) và (2,0 A; 2,7 V). r (Ω):",
+      "expr": "(5.7-2.7)/(2-0.5)",
+      "answer": "2",
+      "explain": "r = 2 Ω.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cùng đồ thị. E (V):",
+      "expr": "5.7+0.5*2",
+      "answer": "67/10",
+      "explain": "E = 6,7 V.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "r₁ = 1,9 Ω, r₂ = 2,1 Ω. r̄ (Ω):",
+      "expr": "(1.9+2.1)/2",
+      "answer": "2",
+      "explain": "r̄ = 2 Ω.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Δr = (|1,9 − 2| + |2,1 − 2|)/2 (Ω):",
+      "expr": "(0.1+0.1)/2",
+      "answer": "1/10",
+      "explain": "Δr = 0,1 Ω.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao nên ngắt khoá giữa các lần đo?",
+      "choices": [
+        "để pin không nóng và E không giảm",
+        "để tăng điện áp",
+        "để đo nhanh hơn",
+        "không cần thiết"
+      ],
+      "answer": 0,
+      "explain": "Hạn chế hao pin.",
+      "wrong_explain": {
+        "1": "Không tăng điện áp.",
+        "2": "Không phải mục đích.",
+        "3": "Có cần."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai điểm (0,2 A; 3,8 V) và (0,6 A; 3,4 V). r (Ω):",
+      "expr": "(3.8-3.4)/(0.6-0.2)",
+      "answer": "1",
+      "explain": "r = 1 Ω.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Từ hai điểm trên, E (V) = 3,8 + 0,2·1:",
+      "expr": "3.8+0.2*1",
+      "answer": "4",
+      "explain": "E = 4 V.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Pin E = 4 V, r = 1 Ω, nối R = 3 Ω. Dòng I (A):",
+      "expr": "(4)/(3+1)",
+      "answer": "1",
+      "explain": "I = 1 A.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Pin E = 4 V, r = 1 Ω. Dòng ngắn mạch (A):",
+      "expr": "4/1",
+      "answer": "4",
+      "explain": "I = E/r = 4 A.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Ba lần đo E: 4,02; 3,98; 4,00 V. Ē (V):",
+      "expr": "(4.02+3.98+4.00)/3",
+      "answer": "4",
+      "explain": "Ē = 4,00 V.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nếu bỏ qua điện trở ampe kế (thực tế nhỏ nhưng khác 0), giá trị r đo được:",
+      "choices": [
+        "lớn hơn r thực một chút",
+        "nhỏ hơn r thực",
+        "bằng đúng",
+        "bằng 0"
+      ],
+      "answer": 0,
+      "explain": "Ampe kế nối tiếp cộng thêm vào điện trở nguồn.",
+      "wrong_explain": {
+        "1": "Sai chiều.",
+        "2": "Có sai số.",
+        "3": "Không phải 0."
+      },
+      "id": "q17"
+    }
+  ]
+}

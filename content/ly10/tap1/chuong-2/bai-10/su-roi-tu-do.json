@@ -1,0 +1,301 @@
+{
+  "id": "bai-10",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương II. Động học",
+  "lesson": "Bài 10. Sự rơi tự do",
+  "section": "",
+  "bookPage": 44,
+  "requirements": [
+    "Nêu được đặc điểm của sự rơi tự do và gia tốc rơi tự do.",
+    "Vận dụng công thức rơi tự do để tính thời gian rơi, vận tốc chạm đất, độ cao."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Trong không khí, các vật rơi nhanh chậm khác nhau chủ yếu do lực cản của không khí. Trong chân không (ống Newton), mọi vật rơi như nhau. Sự rơi tự do là sự rơi chỉ dưới tác dụng của trọng lực."
+    },
+    {
+      "type": "text",
+      "content": "Đặc điểm: rơi tự do là chuyển động thẳng nhanh dần đều theo phương thẳng đứng, chiều từ trên xuống, với gia tốc rơi tự do g. Tại một nơi trên Trái Đất và ở gần mặt đất, mọi vật rơi tự do với cùng gia tốc g; g phụ thuộc vĩ độ và độ cao, thường lấy g ≈ 9,8 m/s² (hoặc 10 m/s² khi tính gần đúng)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b10-roi-tu-do.svg",
+      "caption": "Vị trí vật rơi tự do sau những khoảng thời gian bằng nhau: quãng đường tăng theo t²"
+    },
+    {
+      "type": "formula",
+      "content": "v = g·t        h = ½·g·t²        v² = 2·g·h        t = √(2h/g)"
+    },
+    {
+      "type": "text",
+      "content": "Vật rơi tự do từ độ cao h chạm đất sau thời gian t = √(2h/g) với vận tốc v = √(2gh). Quãng đường rơi trong giây thứ n: Δh = ½g(2n − 1)."
+    },
+    {
+      "type": "text",
+      "content": "Đo gia tốc rơi tự do: thả vật qua hai cổng quang điện hoặc đo thời gian rơi trên quãng đường h đã biết, rồi tính g = 2h/t²."
+    },
+    {
+      "type": "method",
+      "title": "Bài toán rơi tự do",
+      "when": "Đề cho độ cao, thời gian rơi hoặc vận tốc chạm đất và hỏi các đại lượng còn lại; quãng đường trong giây cuối; so sánh hai vật thả cách nhau một khoảng thời gian.",
+      "steps": [
+        "Chọn gốc tại vị trí thả, chiều dương hướng xuống, v₀ = 0, a = g.",
+        "Dùng h = ½gt², v = gt, v² = 2gh tuỳ dữ kiện.",
+        "Quãng đường trong giây cuối: h(t) − h(t − 1).",
+        "Với bài ném thẳng đứng dùng v₀ ≠ 0 và a = −g nếu chọn chiều dương hướng lên."
+      ],
+      "notes": [
+        "Rơi tự do không phụ thuộc khối lượng.",
+        "Lấy g theo đề (9,8 hoặc 10 m/s²)."
+      ],
+      "sample": {
+        "problem": "Một vật rơi tự do từ độ cao 45 m (g = 10 m/s²). Tính thời gian rơi và vận tốc chạm đất.",
+        "steps": [
+          "t = √(2·45/10) = 3 s.",
+          "v = gt = 30 m/s."
+        ],
+        "answer": "t = 3 s, v = 30 m/s"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Thả một hòn đá từ miệng giếng, sau 2 s nghe thấy tiếng đá chạm đáy (bỏ qua thời gian truyền âm). Tính độ sâu của giếng, lấy g = 9,8 m/s².",
+      "steps": [
+        "h = ½gt² = ½ · 9,8 · 2² = 19,6 m."
+      ],
+      "expr": "9.8*4/2",
+      "answer": "19.6"
+    },
+    {
+      "problem": "Một vật rơi tự do với g = 10 m/s². Tính quãng đường vật rơi trong giây thứ 3.",
+      "steps": [
+        "h(3) = ½·10·9 = 45 m; h(2) = ½·10·4 = 20 m.",
+        "Quãng đường trong giây thứ 3: 45 − 20 = 25 m."
+      ],
+      "expr": "45-20",
+      "answer": "25"
+    },
+    {
+      "problem": "Một vật rơi tự do chạm đất với vận tốc 20 m/s (g = 10 m/s²). Tính độ cao thả vật và thời gian rơi.",
+      "steps": [
+        "h = v²/(2g) = 400/20 = 20 m.",
+        "t = v/g = 2 s."
+      ],
+      "expr": "400/20",
+      "answer": "20"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sự rơi tự do là sự rơi:",
+      "choices": [
+        "chỉ dưới tác dụng của trọng lực",
+        "trong không khí",
+        "của vật nặng",
+        "có vận tốc không đổi"
+      ],
+      "answer": 0,
+      "explain": "Bỏ qua lực cản.",
+      "wrong_explain": {
+        "1": "Không khí có lực cản.",
+        "2": "Mọi vật.",
+        "3": "Nhanh dần đều."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chuyển động rơi tự do là:",
+      "choices": [
+        "thẳng nhanh dần đều",
+        "thẳng đều",
+        "thẳng chậm dần đều",
+        "tròn đều"
+      ],
+      "answer": 0,
+      "explain": "Gia tốc g không đổi.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong ống chân không, hòn bi và lông chim thả cùng lúc:",
+      "choices": [
+        "rơi chạm đáy cùng lúc",
+        "bi chạm trước",
+        "lông chim chạm trước",
+        "không rơi"
+      ],
+      "answer": 0,
+      "explain": "Không có lực cản.",
+      "wrong_explain": {
+        "1": "Chỉ trong không khí.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật rơi tự do (g = 10 m/s²) sau 3 s có vận tốc (m/s):",
+      "expr": "10*3",
+      "answer": "30",
+      "explain": "v = gt.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật rơi tự do (g = 10 m/s²) trong 3 s đi được (m):",
+      "expr": "10*9/2",
+      "answer": "45",
+      "explain": "h = ½gt².",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật rơi tự do từ độ cao 80 m (g = 10 m/s²). Thời gian rơi (s) là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "t = √(2·80/10).",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật rơi tự do từ độ cao 80 m (g = 10 m/s²). Vận tốc chạm đất (m/s) là:",
+      "expr": "40",
+      "answer": "40",
+      "explain": "v = √(2gh) = √1600.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật rơi tự do, trong giây cuối cùng rơi được 25 m (g = 10 m/s²). Thời gian rơi (s) là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "½g(2t − 1) = 25 ⇔ 2t − 1 = 5.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đo được vật rơi 4,9 m trong 1 s. Gia tốc rơi tự do (m/s²) là:",
+      "expr": "2*4.9",
+      "answer": "9.8",
+      "explain": "g = 2h/t².",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Gia tốc rơi tự do:",
+      "choices": [
+        "phụ thuộc vĩ độ và độ cao nơi thả",
+        "phụ thuộc khối lượng vật",
+        "phụ thuộc hình dạng vật",
+        "như nhau ở mọi nơi"
+      ],
+      "answer": 0,
+      "explain": "g thay đổi nhẹ theo vị trí địa lí.",
+      "wrong_explain": {
+        "1": "Không phụ thuộc.",
+        "2": "Chỉ trong không khí.",
+        "3": "Sai."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật rơi tự do từ độ cao h chạm đất sau 2 s. Nếu thả từ độ cao 4h thì thời gian rơi (s) là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "t tỉ lệ √h.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thả vật A, sau 1 s thả vật B từ cùng độ cao (g = 10 m/s²). Khi B rơi được 1 s, khoảng cách hai vật (m) là:",
+      "expr": "20-5",
+      "answer": "15",
+      "explain": "h_A = ½·10·4 = 20; h_B = 5.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật rơi tự do từ độ cao 125 m (g = 10 m/s²). Quãng đường rơi trong giây cuối (m) là:",
+      "expr": "125-80",
+      "answer": "45",
+      "explain": "t = 5 s; h(4) = 80 m.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật rơi tự do (g = 10 m/s²) đi được 2 m đầu tiên mất 0,632 s. Nếu đo h = 2 m và t = 0,632 s thì g tính được (m/s², làm tròn 1 chữ số) là:",
+      "expr": "10",
+      "answer": "10",
+      "explain": "g = 2h/t² = 4/0,3994 ≈ 10.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật rơi tự do, vận tốc khi chạm đất là 30 m/s (g = 10 m/s²). Vận tốc khi đi được nửa độ cao (m/s, làm tròn 1 chữ số thập phân) là:",
+      "expr": "21.2",
+      "answer": "21.2",
+      "explain": "h = 45 m; v = √(2g·22,5) = √450 ≈ 21,2.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giọt nước rơi từ mái nhà cao 5 m (g = 10 m/s²). Giọt sau rơi khi giọt trước chạm đất, hai giọt cách nhau về thời gian (s):",
+      "expr": "1",
+      "answer": "1",
+      "explain": "t = √(2·5/10) = 1 s.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Vật rơi tự do, hai giây cuối rơi được 60 m (g = 10 m/s²). Độ cao thả (m) là:",
+      "expr": "80",
+      "answer": "80",
+      "explain": "½g[t² − (t − 2)²] = 60 ⇔ 10(2t − 2) = 60 ⇔ t = 4 s; h = 80 m.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Trên Mặt Trăng g = 1,6 m/s². Vật rơi từ độ cao 20 m mất bao lâu (s)?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "t = √(2·20/1,6) = √25.",
+      "id": "q18"
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "id": "bai-24",
+  "grade": 11,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 11",
+  "chapter": "Chương 6. Hợp chất carbonyl – Carboxylic acid",
+  "lesson": "Bài 24. Carboxylic acid",
+  "section": "",
+  "bookPage": 145,
+  "requirements": [
+    "Nêu khái niệm, gọi tên carboxylic acid; đặc điểm cấu tạo nhóm –COOH và acetic acid.",
+    "Giải thích tính chất vật lí; trình bày tính acid và phản ứng ester hoá.",
+    "Nêu ứng dụng, điều chế (lên men giấm, oxi hoá alkane)."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Carboxylic acid là hợp chất hữu cơ có nhóm carboxyl –COOH liên kết với carbon (gốc hydrocarbon hoặc –COOH) hoặc hydrogen; công thức đơn chức RCOOH. Danh pháp thay thế: tên hydrocarbon bỏ \"e\" + \"oic acid\", mạch chính chứa –COOH, đánh số từ C của –COOH: HCOOH methanoic acid (formic), CH₃COOH ethanoic acid (acetic), CH₃CH₂COOH propanoic acid, CH₂=CHCOOH propenoic acid, 2-methylbutanoic acid."
+    },
+    {
+      "type": "text",
+      "content": "Cấu tạo: nhóm –COOH gồm >C=O và –OH liền nhau; nhóm C=O hút electron nên liên kết O–H phân cực mạnh hơn alcohol, phenol; dễ phân li H⁺ nên tính chất đặc trưng là tính acid. Giữa các phân tử tạo liên kết hydrogen bền (dạng dimer)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b24-carboxylic.svg",
+      "caption": "Đặc điểm của carboxylic acid"
+    },
+    {
+      "type": "text",
+      "content": "Tính chất vật lí: nhiệt độ sôi cao hơn hydrocarbon, alcohol, aldehyde cùng phân tử khối (acetic acid 118 °C; propan-1-ol 97 °C; propanal 49 °C); acid mạch ngắn (C₁–C₄) là chất lỏng, tan vô hạn trong nước; độ tan giảm khi mạch carbon tăng; acid mạch dài là chất rắn dạng sáp, mùi chua nồng."
+    },
+    {
+      "type": "text",
+      "content": "Tính acid (yếu): làm quỳ tím hoá đỏ nhạt; phản ứng với kim loại trước H, oxide base, base, muối carbonate: 2CH₃COOH + Mg → (CH₃COO)₂Mg + H₂; 2CH₃COOH + CaCO₃ → (CH₃COO)₂Ca + CO₂ + H₂O; CH₃COOH + NaOH → CH₃COONa + H₂O."
+    },
+    {
+      "type": "formula",
+      "content": "2CH₃COOH + Na₂CO₃ → 2CH₃COONa + CO₂↑ + H₂O        CH₃COOH ⇌ CH₃COO⁻ + H⁺"
+    },
+    {
+      "type": "text",
+      "content": "Phản ứng ester hoá: RCOOH + R′OH ⇌ RCOOR′ + H₂O (H₂SO₄ đặc, đun nóng), thuận nghịch. Ví dụ CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O (ethyl acetate, mùi thơm). Ester có mùi hoa quả (isoamyl acetate mùi chuối, methyl butyrate mùi táo, ethyl benzoate mùi cherry)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b24-ester.svg",
+      "caption": "Phản ứng ester hoá"
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: acetic acid làm giấm ăn, sản xuất ester, tơ acetate, dược phẩm; formic acid khử trùng, thuộc da; citric acid (chanh) làm gia vị, tẩy cặn (bột vệ sinh lồng giặt); acid béo làm xà phòng. Điều chế acetic acid: lên men giấm (C₂H₅OH + O₂ → CH₃COOH + H₂O, men acetobacter); oxi hoá butane; carbonyl hoá methanol (CH₃OH + CO → CH₃COOH, xúc tác)."
+    },
+    {
+      "type": "method",
+      "title": "Giải bài toán ester hoá có hiệu suất",
+      "when": "Cho khối lượng acid, alcohol, ester thu được; tính hiệu suất.",
+      "steps": [
+        "Viết phương trình RCOOH + R′OH ⇌ RCOOR′ + H₂O.",
+        "Tính số mol từng chất tham gia, xác định chất thiếu (theo tỉ lệ 1 : 1).",
+        "Tính khối lượng ester lí thuyết theo chất thiếu.",
+        "H = m thực tế / m lí thuyết × 100%."
+      ],
+      "notes": [
+        "Ester hoá thuận nghịch nên hiệu suất < 100%.",
+        "Hiệu suất tính theo chất phản ứng hết (chất thiếu)."
+      ],
+      "sample": {
+        "problem": "12 g CH₃COOH + 12 g C₂H₅OH, thu 8 g CH₃COOC₂H₅ (M = 88). Tính H.",
+        "steps": [
+          "n(acid) = 12/60 = 0,2; n(alcohol) = 12/46 ≈ 0,26 (dư).",
+          "m lí thuyết = 0,2·88 = 17,6 g; H = 8/17,6 ≈ 45,5%."
+        ],
+        "answer": "≈ 45,5%"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Trung hoà 0,2 mol CH₃COOH bằng NaOH vừa đủ. Tính số mol NaOH.",
+      "steps": [
+        "CH₃COOH + NaOH → CH₃COONa + H₂O.",
+        "n(NaOH) = 0,2 mol."
+      ],
+      "expr": "0.2",
+      "answer": "0.2"
+    },
+    {
+      "problem": "Cho CH₃COOH tác dụng với CaCO₃ dư thu 0,05 mol CO₂. Tính số mol CH₃COOH phản ứng.",
+      "steps": [
+        "2CH₃COOH + CaCO₃ → (CH₃COO)₂Ca + CO₂ + H₂O.",
+        "n(acid) = 2·0,05 = 0,1 mol."
+      ],
+      "expr": "2*0.05",
+      "answer": "0.1"
+    },
+    {
+      "problem": "Tính khối lượng CH₃COOC₂H₅ (g, M = 88) thu được từ 0,1 mol CH₃COOH và C₂H₅OH dư với hiệu suất 50%.",
+      "steps": [
+        "n(ester) lí thuyết = 0,1 mol.",
+        "m = 0,1·88·50% = 4,4 g."
+      ],
+      "expr": "0.1*88*0.5",
+      "answer": "4.4"
+    },
+    {
+      "problem": "Tính hiệu suất (%) khi 0,2 mol CH₃COOH + C₂H₅OH dư thu 0,1 mol ester.",
+      "steps": [
+        "Lí thuyết 0,2 mol.",
+        "H = 0,1/0,2·100 = 50%."
+      ],
+      "expr": "(0.1)/(0.2)*100",
+      "answer": "50"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nhóm chức của carboxylic acid là:",
+      "choices": [
+        "–COOH",
+        "–CHO",
+        "–OH",
+        "–COO–"
+      ],
+      "answer": 0,
+      "explain": "Nhóm carboxyl.",
+      "wrong_explain": {
+        "1": "Aldehyde.",
+        "2": "Alcohol.",
+        "3": "Ester."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tên thay thế của CH₃CH₂COOH là:",
+      "choices": [
+        "propanoic acid",
+        "ethanoic acid",
+        "butanoic acid",
+        "propanal"
+      ],
+      "answer": 0,
+      "explain": "3 C.",
+      "wrong_explain": {
+        "1": "2 C.",
+        "2": "4 C.",
+        "3": "Aldehyde."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tên của HCOOH là:",
+      "choices": [
+        "methanoic acid",
+        "ethanoic acid",
+        "methanol",
+        "methanal"
+      ],
+      "answer": 0,
+      "explain": "1 C.",
+      "wrong_explain": {
+        "1": "2 C.",
+        "2": "Alcohol.",
+        "3": "Aldehyde."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Acetic acid sôi cao hơn propanal vì:",
+      "choices": [
+        "tạo liên kết hydrogen bền giữa các phân tử",
+        "có khối lượng lớn hơn nhiều",
+        "có vòng benzene",
+        "không phân cực"
+      ],
+      "answer": 0,
+      "explain": "Có nhóm –OH linh động.",
+      "wrong_explain": {
+        "1": "Cùng M gần nhau.",
+        "2": "Không có vòng.",
+        "3": "Có phân cực."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất nào làm quỳ tím hoá đỏ nhạt?",
+      "choices": [
+        "CH₃COOH",
+        "C₂H₅OH",
+        "CH₃CHO",
+        "C₆H₅OH"
+      ],
+      "answer": 0,
+      "explain": "Tính acid.",
+      "wrong_explain": {
+        "1": "Không đổi màu.",
+        "2": "Không đổi màu.",
+        "3": "Không đổi màu."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phản ứng ester hoá có đặc điểm:",
+      "choices": [
+        "thuận nghịch, xúc tác H₂SO₄ đặc",
+        "một chiều",
+        "không cần xúc tác",
+        "xảy ra ở nhiệt độ thấp"
+      ],
+      "answer": 0,
+      "explain": "Cân bằng hoá học.",
+      "wrong_explain": {
+        "1": "Không một chiều.",
+        "2": "Cần xúc tác.",
+        "3": "Cần đun nóng."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khí thoát ra khi cho acetic acid vào dung dịch Na₂CO₃ là:",
+      "choices": [
+        "CO₂",
+        "H₂",
+        "O₂",
+        "CH₄"
+      ],
+      "answer": 0,
+      "explain": "Acid mạnh hơn H₂CO₃.",
+      "wrong_explain": {
+        "1": "Chỉ với kim loại.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Acetic acid là acid:",
+      "choices": [
+        "yếu",
+        "mạnh",
+        "rất mạnh",
+        "không phải acid"
+      ],
+      "answer": 0,
+      "explain": "Phân li không hoàn toàn.",
+      "wrong_explain": {
+        "1": "Không mạnh.",
+        "2": "Không.",
+        "3": "Là acid."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Citric acid trong bột vệ sinh lồng máy giặt có vai trò:",
+      "choices": [
+        "hoà tan cặn calcium carbonate",
+        "tạo bọt",
+        "làm thơm",
+        "khử trùng bằng oxi hoá"
+      ],
+      "answer": 0,
+      "explain": "Acid hoà tan cặn.",
+      "wrong_explain": {
+        "1": "Không phải vai trò.",
+        "2": "Không phải.",
+        "3": "Không phải."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Giấm ăn là dung dịch của:",
+      "choices": [
+        "acetic acid",
+        "ethanol",
+        "formic acid",
+        "acetone"
+      ],
+      "answer": 0,
+      "explain": "Lên men giấm.",
+      "wrong_explain": {
+        "1": "Là rượu.",
+        "2": "Không phải.",
+        "3": "Là dung môi."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ester có mùi táo là:",
+      "choices": [
+        "methyl butyrate",
+        "ethyl benzoate",
+        "ethyl acetate",
+        "isoamyl acetate"
+      ],
+      "answer": 0,
+      "explain": "Ester của butyric acid.",
+      "wrong_explain": {
+        "1": "Mùi cherry.",
+        "2": "Dung môi.",
+        "3": "Mùi chuối."
+      },
+      "id": "q11"
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "id": "bai-25",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 2",
+  "chapter": "Chương VIII. Đại số tổ hợp",
+  "lesson": "Bài 25. Nhị thức Newton",
+  "section": "",
+  "bookPage": 72,
+  "requirements": [
+    "Khai triển (a + b)ⁿ với n = 4, 5 bằng công thức nhị thức Newton và tam giác Pascal.",
+    "Tìm hệ số, số hạng trong khai triển; tính tổng các hệ số."
+  ],
+  "theory": [
+    {
+      "type": "formula",
+      "content": "(a + b)⁴ = a⁴ + 4a³b + 6a²b² + 4ab³ + b⁴"
+    },
+    {
+      "type": "formula",
+      "content": "(a + b)⁵ = a⁵ + 5a⁴b + 10a³b² + 10a²b³ + 5ab⁴ + b⁵"
+    },
+    {
+      "type": "text",
+      "content": "Tổng quát (a + b)ⁿ = C_n^0 aⁿ + C_n^1 aⁿ⁻¹b + C_n^2 aⁿ⁻²b² + ... + C_n^n bⁿ. Số hạng thứ k + 1 là C_n^k aⁿ⁻ᵏ bᵏ. Các hệ số C_n^k chính là hàng thứ n của tam giác Pascal: 1; 1 1; 1 2 1; 1 3 3 1; 1 4 6 4 1; 1 5 10 10 5 1."
+    },
+    {
+      "type": "text",
+      "content": "Khai triển (a − b)ⁿ: thay b bằng −b, dấu các số hạng đan xen + −. Khai triển có n + 1 số hạng; tổng số mũ của a và b trong mỗi số hạng bằng n."
+    },
+    {
+      "type": "formula",
+      "content": "Thay a = b = 1: C_n^0 + C_n^1 + ... + C_n^n = 2ⁿ"
+    },
+    {
+      "type": "method",
+      "title": "Tìm hệ số của một số hạng trong khai triển",
+      "when": "Đề cho (ax + b)ⁿ hoặc (x + c/x)ⁿ với n ≤ 5 và hỏi hệ số của xᵏ, số hạng không chứa x, hoặc tổng các hệ số.",
+      "steps": [
+        "Viết số hạng tổng quát C_n^k (ax)ⁿ⁻ᵏ bᵏ.",
+        "Rút gọn thành hệ số · x^(số mũ); lập phương trình số mũ bằng giá trị đề hỏi để tìm k.",
+        "Thay k vào để tính hệ số (nhớ dấu nếu có −).",
+        "Tổng hệ số: thay x = 1."
+      ],
+      "notes": [
+        "Hệ số khác với số hạng: số hạng chứa cả x.",
+        "Với (a − b)ⁿ chú ý dấu (−1)ᵏ."
+      ],
+      "sample": {
+        "problem": "Tìm hệ số của x³ trong khai triển (2x + 1)⁵.",
+        "steps": [
+          "Số hạng tổng quát C_5^k (2x)⁵⁻ᵏ: hệ số x³ khi 5 − k = 3 ⇔ k = 2.",
+          "C_5^2·2³ = 10·8 = 80."
+        ],
+        "answer": "80"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Khai triển (x + 2)⁴.",
+      "steps": [
+        "(x + 2)⁴ = x⁴ + 4x³·2 + 6x²·4 + 4x·8 + 16.",
+        "= x⁴ + 8x³ + 24x² + 32x + 16."
+      ],
+      "expr": "6*4",
+      "answer": "24"
+    },
+    {
+      "problem": "Khai triển (2x − 1)⁵ và tìm hệ số của x².",
+      "steps": [
+        "(2x − 1)⁵ = 32x⁵ − 80x⁴ + 80x³ − 40x² + 10x − 1.",
+        "Hệ số của x² là C_5^3·2²·(−1)³ = 10·4·(−1) = −40."
+      ],
+      "expr": "-10*4",
+      "answer": "-40"
+    },
+    {
+      "problem": "Tính tổng S = C_5^0 + C_5^1 + C_5^2 + C_5^3 + C_5^4 + C_5^5.",
+      "steps": [
+        "Thay a = b = 1 vào (a + b)⁵: S = 2⁵ = 32."
+      ],
+      "expr": "2*2*2*2*2",
+      "answer": "32"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hệ số của x³ trong khai triển (x + 1)⁴ là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "C_4^1 = 4.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Khai triển (a + b)⁵ có bao nhiêu số hạng?",
+      "expr": "5+1",
+      "answer": "6",
+      "explain": "n + 1 số hạng.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hệ số lớn nhất trong khai triển (x + 1)⁴ là:",
+      "expr": "6",
+      "answer": "6",
+      "explain": "1, 4, 6, 4, 1.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hàng thứ 5 của tam giác Pascal (ứng với n = 5) là:",
+      "choices": [
+        "1 5 10 10 5 1",
+        "1 4 6 4 1",
+        "1 5 5 1",
+        "1 6 15 20 15 6 1"
+      ],
+      "answer": 0,
+      "explain": "C_5^k với k = 0..5.",
+      "wrong_explain": {
+        "1": "Đó là n = 4.",
+        "2": "Sai.",
+        "3": "Đó là n = 6."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Số hạng thứ hai trong khai triển (x + 3)⁴ có hệ số bằng:",
+      "expr": "4*3",
+      "answer": "12",
+      "explain": "C_4^1·3 = 12.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hệ số của x² trong khai triển (x + 2)⁴ là:",
+      "expr": "6*4",
+      "answer": "24",
+      "explain": "C_4^2·2² = 24.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hệ số của x⁴ trong khai triển (2x + 1)⁵ là:",
+      "expr": "5*16",
+      "answer": "80",
+      "explain": "C_5^1·2⁴ = 80.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hệ số của x trong khai triển (x − 2)⁵ là:",
+      "expr": "5*16",
+      "answer": "80",
+      "explain": "C_5^4·(−2)⁴ = 5·16 = 80.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tổng các hệ số trong khai triển (3x − 1)⁴ là:",
+      "expr": "16",
+      "answer": "16",
+      "explain": "Thay x = 1: (3 − 1)⁴ = 16.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số hạng không chứa x trong khai triển (x + 1/x)⁴ là:",
+      "expr": "6",
+      "answer": "6",
+      "explain": "C_4^2 x² (1/x)² = 6.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giá trị của 1 + 4 + 6 + 4 + 1 bằng:",
+      "expr": "16",
+      "answer": "16",
+      "explain": "Tổng hệ số hàng n = 4 là 2⁴.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hệ số của x³ trong khai triển (1 − 2x)⁵ là:",
+      "expr": "-10*8",
+      "answer": "-80",
+      "explain": "C_5^3·(−2)³ = 10·(−8).",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hệ số của x³ trong khai triển (x + 1)⁴ + (x + 1)⁵ là:",
+      "expr": "4+10",
+      "answer": "14",
+      "explain": "C_4^1 + C_5^2 = 4 + 10.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị chính xác của 1,01⁴ (dùng khai triển (1 + 0,01)⁴) là:",
+      "expr": "1+4*0.01+6*0.0001+4*0.000001+0.00000001",
+      "answer": "1.04060401",
+      "explain": "(1 + 0,01)⁴ = 1 + 4·0,01 + 6·0,0001 + 4·0,000001 + 0,00000001 = 1,04060401.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hệ số của x²y³ trong khai triển (x + y)⁵ là:",
+      "expr": "10",
+      "answer": "10",
+      "explain": "C_5^3 = 10.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một tập hợp có 5 phần tử. Số tập con của nó là:",
+      "expr": "32",
+      "answer": "32",
+      "explain": "C_5^0 + ... + C_5^5 = 2⁵.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hệ số của x⁵ trong khai triển x(2x − 1)⁴ là:",
+      "expr": "16",
+      "answer": "16",
+      "explain": "Cần hệ số x⁴ của (2x − 1)⁴: C_4^0·2⁴ = 16.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Giá trị của C_5^0 − C_5^1 + C_5^2 − C_5^3 + C_5^4 − C_5^5 bằng:",
+      "expr": "0",
+      "answer": "0",
+      "explain": "Thay a = 1, b = −1: (1 − 1)⁵ = 0.",
+      "id": "q18"
+    }
+  ]
+}

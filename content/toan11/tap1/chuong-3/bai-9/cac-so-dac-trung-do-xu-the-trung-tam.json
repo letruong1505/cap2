@@ -1,0 +1,325 @@
+{
+  "id": "bai-9",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 11, tập 1",
+  "chapter": "Chương III. Các số đặc trưng đo xu thế trung tâm của mẫu số liệu ghép nhóm",
+  "lesson": "Bài 9. Các số đặc trưng đo xu thế trung tâm",
+  "section": "",
+  "bookPage": 62,
+  "requirements": [
+    "Tính số trung bình, trung vị, tứ phân vị và mốt của mẫu số liệu ghép nhóm.",
+    "Hiểu ý nghĩa và dùng các số đặc trưng để so sánh hai mẫu số liệu."
+  ],
+  "theory": [
+    {
+      "type": "formula",
+      "content": "Số trung bình: x̄ = (n₁x₁ + n₂x₂ + … + nₘxₘ)/n, trong đó xᵢ là giá trị đại diện của nhóm i, nᵢ là tần số, n = n₁ + … + nₘ."
+    },
+    {
+      "type": "formula",
+      "content": "Trung vị Mₑ = a_p + [(n/2 − cf_{p−1})/n_p]·(a_{p+1} − a_p), với nhóm p là nhóm đầu tiên có tần số tích luỹ ≥ n/2; cf_{p−1} là tần số tích luỹ của nhóm đứng trước."
+    },
+    {
+      "type": "text",
+      "content": "Tứ phân vị: Q₂ = Mₑ; Q₁ tính tương tự trung vị nhưng thay n/2 bằng n/4; Q₃ thay bằng 3n/4. Trên mẫu số liệu: Q₁ là trung vị của nửa dưới, Q₃ là trung vị của nửa trên. Khoảng tứ phân vị Δ_Q = Q₃ − Q₁ đo độ phân tán của nửa giữa mẫu."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b9-hist-trung-vi.svg",
+      "caption": "Tần số 5; 9; 14; 8; 4: nhóm chứa trung vị là nhóm có tần số tích luỹ lần đầu ≥ n/2 (cột đậm hơn)"
+    },
+    {
+      "type": "formula",
+      "content": "Mốt M₀ = u_m + [(n_m − n_{m−1})/((n_m − n_{m−1}) + (n_m − n_{m+1}))]·(u_{m+1} − u_m), với nhóm m có tần số lớn nhất."
+    },
+    {
+      "type": "method",
+      "title": "Tính số trung bình của mẫu ghép nhóm",
+      "when": "Cho bảng tần số ghép nhóm, yêu cầu tìm giá trị trung bình (tuổi thọ, thời gian, điểm).",
+      "steps": [
+        "Lập bảng với giá trị đại diện xᵢ của mỗi nhóm.",
+        "Tính tích nᵢxᵢ rồi cộng lại.",
+        "Tính n = Σnᵢ.",
+        "x̄ = Σnᵢxᵢ / n."
+      ],
+      "notes": [
+        "Giá trị đại diện luôn là điểm giữa nhóm, không phải đầu mút.",
+        "Kết quả chỉ là ước lượng vì dùng đại diện."
+      ],
+      "sample": {
+        "problem": "Nhóm [0;10): 5, [10;20): 9, [20;30): 14, [30;40): 8, [40;50): 4. Tính x̄.",
+        "steps": [
+          "Đại diện 5; 15; 25; 35; 45.",
+          "Σnx = 25 + 135 + 350 + 280 + 180 = 970; n = 40.",
+          "x̄ = 970/40 = 24,25."
+        ],
+        "answer": "24,25"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tính trung vị và tứ phân vị",
+      "when": "Bảng tần số ghép nhóm, cần Mₑ, Q₁, Q₃ hoặc khoảng tứ phân vị.",
+      "steps": [
+        "Tính n và tần số tích luỹ từng nhóm.",
+        "Chọn mốc k = n/2 (trung vị), n/4 (Q₁), 3n/4 (Q₃); tìm nhóm đầu tiên có tích luỹ ≥ k.",
+        "Dùng công thức a_p + [(k − cf_{p−1})/n_p]·độ rộng.",
+        "Δ_Q = Q₃ − Q₁."
+      ],
+      "notes": [
+        "Cẩn thận nhầm cf_{p−1} với cf_p.",
+        "Trung vị không bị ảnh hưởng nhiều bởi giá trị ngoại lai."
+      ],
+      "sample": {
+        "problem": "Với bảng trên (n = 40), tìm Mₑ.",
+        "steps": [
+          "n/2 = 20; tích luỹ 5; 14; 28; … nên nhóm [20; 30) (cf trước = 14, n_p = 14).",
+          "Mₑ = 20 + (20 − 14)/14 · 10 = 20 + 60/14 = 24,29 (xấp xỉ)."
+        ],
+        "answer": "Mₑ ≈ 24,29"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tìm mốt và so sánh hai mẫu số liệu",
+      "when": "Hỏi giá trị xuất hiện nhiều nhất (mốt) hoặc so sánh hai lớp, hai tổ về mức độ tập trung.",
+      "steps": [
+        "Tìm nhóm có tần số lớn nhất (nhóm mốt).",
+        "Dùng công thức mốt với n_{m−1}, n_{m+1} là tần số hai nhóm kề.",
+        "Tính x̄, Mₑ cho cả hai mẫu.",
+        "So sánh: x̄ lớn hơn nghĩa là trung bình cao hơn; Δ_Q nhỏ hơn nghĩa là đồng đều hơn."
+      ],
+      "notes": [
+        "Có thể có nhiều nhóm cùng tần số lớn nhất (nhiều mốt).",
+        "Chỉ so sánh khi cùng đơn vị và độ rộng nhóm."
+      ],
+      "sample": {
+        "problem": "Với bảng trên, tìm nhóm mốt.",
+        "steps": [
+          "Tần số lớn nhất là 14 ở nhóm [20; 30).",
+          "Mốt nằm trong nhóm [20; 30)."
+        ],
+        "answer": "Nhóm [20; 30)"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Nhóm [0;10): 5, [10;20): 9, [20;30): 14, [30;40): 8, [40;50): 4. Tính trung bình x̄.",
+      "steps": [
+        "Σnx = 5·5 + 9·15 + 14·25 + 8·35 + 4·45 = 970.",
+        "x̄ = 970/40 = 24,25."
+      ],
+      "expr": "(5*5+9*15+14*25+8*35+4*45)/40",
+      "answer": "97/4"
+    },
+    {
+      "problem": "Cùng bảng trên: tìm n/2.",
+      "steps": [
+        "n = 40.",
+        "n/2 = 20."
+      ],
+      "expr": "40/2",
+      "answer": "20"
+    },
+    {
+      "problem": "Cùng bảng trên: tính Q₁ của nhóm [10; 20) nếu n/4 = 10 và cf trước là 5, n_p = 9.",
+      "steps": [
+        "Q₁ = 10 + (10 − 5)/9 · 10.",
+        "= 10 + 50/9 = 140/9."
+      ],
+      "expr": "10+(10-5)*10/9",
+      "answer": "140/9"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Bảng tần số 5; 9; 14; 8; 4. Cỡ mẫu n là:",
+      "expr": "5+9+14+8+4",
+      "answer": "40",
+      "explain": "n = 40.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Nhóm [0;10), [10;20), … có giá trị đại diện của nhóm thứ ba là:",
+      "expr": "(20+30)/2",
+      "answer": "25",
+      "explain": "x₃ = 25.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "n = 40. Trung vị nằm ở vị trí ứng với tích luỹ n/2 bằng:",
+      "expr": "40/2",
+      "answer": "20",
+      "explain": "n/2 = 20.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Số trung bình của mẫu ghép nhóm được tính bằng:",
+      "choices": [
+        "Σnᵢxᵢ / n với xᵢ là giá trị đại diện",
+        "Σnᵢ / n",
+        "nhóm có tần số lớn nhất",
+        "giá trị đại diện của nhóm đầu"
+      ],
+      "answer": 0,
+      "explain": "Trung bình là tổng có trọng số các giá trị đại diện chia cho n.",
+      "wrong_explain": {
+        "1": "Σnᵢ / n luôn bằng 1.",
+        "2": "Đó là nhóm chứa mốt.",
+        "3": "Không liên quan đến trung bình."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tần số 5; 9; 14; 8; 4 (đại diện 5, 15, 25, 35, 45). Σnᵢxᵢ là:",
+      "expr": "5*5+9*15+14*25+8*35+4*45",
+      "answer": "970",
+      "explain": "25 + 135 + 350 + 280 + 180 = 970.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Với bảng trên, số trung bình x̄ là:",
+      "expr": "(5*5+9*15+14*25+8*35+4*45)/40",
+      "answer": "97/4",
+      "explain": "970/40 = 97/4 = 24,25.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Với bảng trên, tần số tích luỹ nhóm thứ hai [10; 20) là:",
+      "expr": "5+9",
+      "answer": "14",
+      "explain": "5 + 9 = 14.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Với bảng trên, nhóm chứa trung vị là [20; 30). Tần số tích luỹ nhóm đứng trước là:",
+      "expr": "5+9",
+      "answer": "14",
+      "explain": "cf₍p−1₎ = 14.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số điểm trung bình lớp: [5;7): 6; [7;9): 14; [9;11): 10 (đại diện 6, 8, 10). Trung bình là:",
+      "expr": "(6*6+14*8+10*10)/30",
+      "answer": "124/15",
+      "explain": "(36 + 112 + 100)/30 = 248/30 = 124/15.",
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trung vị của bảng 5; 9; 14; 8; 4 là Mₑ = 20 + (20 − 14)/14·10. Viết dưới dạng phân số tối giản, Mₑ bằng:",
+      "expr": "20+6*10/14",
+      "answer": "170/7",
+      "explain": "20 + 60/14 = 20 + 30/7 = 170/7 ≈ 24,29.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Q₁ cho n = 40: vị trí n/4 là:",
+      "expr": "40/4",
+      "answer": "10",
+      "explain": "n/4 = 10.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Q₃ cho n = 40: vị trí 3n/4 là:",
+      "expr": "3*40/4",
+      "answer": "30",
+      "explain": "3n/4 = 30.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khoảng tứ phân vị Δ_Q với Q₁ = 15 và Q₃ = 32 là:",
+      "expr": "32-15",
+      "answer": "17",
+      "explain": "Δ_Q = Q₃ − Q₁ = 17.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai lớp có trung bình 7,5 và 8,2. Hiệu số trung bình (lớp sau trừ lớp trước) là:",
+      "expr": "8.2-7.5",
+      "answer": "7/10",
+      "explain": "0,7: lớp sau có trung bình cao hơn.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nhóm [20; 30) có tần số 14 lớn nhất. Nhóm này là:",
+      "choices": [
+        "nhóm chứa mốt",
+        "nhóm chứa Q₁",
+        "nhóm có đại diện nhỏ nhất",
+        "nhóm có tích luỹ nhỏ nhất"
+      ],
+      "answer": 0,
+      "explain": "Mốt nằm trong nhóm có tần số lớn nhất.",
+      "wrong_explain": {
+        "1": "Q₁ phụ thuộc vị trí n/4, không chỉ tần số.",
+        "2": "Đại diện phụ thuộc vị trí nhóm.",
+        "3": "Tích luỹ nhỏ nhất là nhóm đầu."
+      },
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Mốt trong nhóm [20; 30): M₀ = 20 + (14 − 9)/((14 − 9) + (14 − 8))·10. Giá trị này là:",
+      "expr": "20+5*10/11",
+      "answer": "270/11",
+      "explain": "20 + 50/11 = 270/11 ≈ 24,5.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi mẫu có giá trị ngoại lai rất lớn, số đặc trưng ít bị ảnh hưởng nhất là:",
+      "choices": [
+        "trung vị",
+        "số trung bình",
+        "tổng các giá trị",
+        "giá trị lớn nhất"
+      ],
+      "answer": 0,
+      "explain": "Trung vị dựa trên vị trí giữa nên ổn định.",
+      "wrong_explain": {
+        "1": "Trung bình bị kéo lệch bởi giá trị lớn.",
+        "2": "Tổng bị ảnh hưởng trực tiếp.",
+        "3": "Giá trị lớn nhất chính là ngoại lai."
+      },
+      "id": "q17"
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "id": "bai-5",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 1",
+  "chapter": "Chương III. Hệ thức lượng trong tam giác",
+  "lesson": "Bài 5. Giá trị lượng giác của một góc từ 0° đến 180°",
+  "section": "",
+  "bookPage": 33,
+  "requirements": [
+    "Nhận biết giá trị lượng giác sin, côsin, tang, côtang của góc từ 0° đến 180° trên nửa đường tròn đơn vị.",
+    "Dùng được mối liên hệ giữa giá trị lượng giác của hai góc bù nhau, hai góc phụ nhau và các hệ thức cơ bản."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Trên nửa đường tròn đơn vị (tâm O, bán kính 1, nằm phía trên trục hoành), với mỗi góc α (0° ≤ α ≤ 180°) có đúng một điểm M(x₀; y₀) sao cho góc xOM = α. Khi đó sin α = y₀, cos α = x₀, tan α = y₀/x₀ (x₀ ≠ 0), cot α = x₀/y₀ (y₀ ≠ 0)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t10-b5-nua-duong-tron.svg",
+      "caption": "Điểm M trên nửa đường tròn đơn vị: hoành độ là cos α, tung độ là sin α"
+    },
+    {
+      "type": "text",
+      "content": "Dấu: với 0° < α < 90°, mọi giá trị lượng giác đều dương; với 90° < α < 180°, sin α > 0 còn cos α, tan α, cot α đều âm. tan 90° và cot 0°, cot 180° không xác định."
+    },
+    {
+      "type": "formula",
+      "content": "sin(180° − α) = sin α        cos(180° − α) = −cos α        tan(180° − α) = −tan α        cot(180° − α) = −cot α"
+    },
+    {
+      "type": "formula",
+      "content": "sin²α + cos²α = 1        tan α = sin α / cos α        cot α = cos α / sin α        tan α · cot α = 1"
+    },
+    {
+      "type": "text",
+      "content": "Bảng giá trị thường dùng: sin 0° = 0, sin 30° = 1/2, sin 45° = √2/2, sin 60° = √3/2, sin 90° = 1; cos 0° = 1, cos 30° = √3/2, cos 45° = √2/2, cos 60° = 1/2, cos 90° = 0; tan 45° = 1, tan 30° = √3/3, tan 60° = √3. Hai góc phụ nhau: sin(90° − α) = cos α, cos(90° − α) = sin α."
+    },
+    {
+      "type": "method",
+      "title": "Tính giá trị lượng giác của góc tù và biểu thức lượng giác",
+      "when": "Đề yêu cầu tính sin, cos, tan của các góc như 120°, 135°, 150°; hoặc cho một giá trị lượng giác và tính các giá trị còn lại; hoặc rút gọn biểu thức có góc bù nhau.",
+      "steps": [
+        "Đưa góc tù về góc nhọn bù với nó: α = 180° − β, dùng sin α = sin β, cos α = −cos β, tan α = −tan β.",
+        "Tra bảng giá trị của góc nhọn đặc biệt.",
+        "Nếu cho sin α (hoặc cos α): dùng sin²α + cos²α = 1 để tìm giá trị còn lại, chọn dấu theo α nhọn hay tù; rồi tính tan, cot.",
+        "Rút gọn biểu thức: thay các góc bù, phụ nhau, dùng các hệ thức cơ bản."
+      ],
+      "notes": [
+        "Với 90° < α < 180° thì cos α < 0, tan α < 0.",
+        "Không nhầm: cos(180° − α) đổi dấu, sin(180° − α) giữ nguyên."
+      ],
+      "sample": {
+        "problem": "Cho cos α = −3/5 với 90° < α < 180°. Tính sin α và tan α.",
+        "steps": [
+          "sin²α = 1 − cos²α = 1 − 9/25 = 16/25.",
+          "α tù nên sin α > 0: sin α = 4/5.",
+          "tan α = sin α / cos α = (4/5) : (−3/5) = −4/3."
+        ],
+        "answer": "sin α = 4/5; tan α = −4/3"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính cos 120°, sin 150° và tan 135°.",
+      "steps": [
+        "cos 120° = cos(180° − 60°) = −cos 60° = −1/2.",
+        "sin 150° = sin(180° − 30°) = sin 30° = 1/2.",
+        "tan 135° = tan(180° − 45°) = −tan 45° = −1.",
+        "Tổng cos 120° + sin 150° = 0."
+      ],
+      "expr": "-1/2+1/2",
+      "answer": "0"
+    },
+    {
+      "problem": "Cho sin α = 1/3 với 90° < α < 180°. Tính cos α và giá trị của cos²α.",
+      "steps": [
+        "cos²α = 1 − sin²α = 1 − 1/9 = 8/9.",
+        "Vì α tù nên cos α < 0: cos α = −2√2/3.",
+        "Giá trị cos²α = 8/9."
+      ],
+      "expr": "1-1/9",
+      "answer": "8/9"
+    },
+    {
+      "problem": "Rút gọn biểu thức A = sin(180° − α)·cos α + cos(180° − α)·sin α + 2 sin²α + 2 cos²α.",
+      "steps": [
+        "sin(180° − α) = sin α và cos(180° − α) = −cos α.",
+        "A = sin α·cos α − cos α·sin α + 2(sin²α + cos²α) = 0 + 2·1 = 2."
+      ],
+      "expr": "2",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Với 90° < α < 180°, khẳng định nào đúng?",
+      "choices": [
+        "sin α > 0 và cos α < 0",
+        "sin α < 0 và cos α > 0",
+        "sin α < 0 và cos α < 0",
+        "sin α > 0 và cos α > 0"
+      ],
+      "answer": 0,
+      "explain": "Điểm M nằm bên trái trục tung, phía trên trục hoành.",
+      "wrong_explain": {
+        "1": "Sai dấu.",
+        "2": "sin góc tù dương.",
+        "3": "cos góc tù âm."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "sin(180° − α) bằng:",
+      "choices": [
+        "sin α",
+        "−sin α",
+        "cos α",
+        "−cos α"
+      ],
+      "answer": 0,
+      "explain": "Hai góc bù nhau có sin bằng nhau.",
+      "wrong_explain": {
+        "1": "Sai dấu.",
+        "2": "Đó là góc phụ nhau.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "cos 150° bằng:",
+      "choices": [
+        "−√3/2",
+        "√3/2",
+        "−1/2",
+        "1/2"
+      ],
+      "answer": 0,
+      "explain": "cos 150° = −cos 30° = −√3/2.",
+      "wrong_explain": {
+        "1": "Thiếu dấu âm.",
+        "2": "Đó là cos 120°.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Giá trị nào sau đây không xác định?",
+      "choices": [
+        "tan 90°",
+        "tan 0°",
+        "cot 90°",
+        "sin 180°"
+      ],
+      "answer": 0,
+      "explain": "Tại 90°, cos = 0 nên tan không xác định.",
+      "wrong_explain": {
+        "1": "tan 0° = 0.",
+        "2": "cot 90° = 0.",
+        "3": "sin 180° = 0."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "sin 30° + cos 60° bằng:",
+      "expr": "1/2+1/2",
+      "answer": "1",
+      "explain": "Cả hai đều bằng 1/2.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "cos 120° + cos 60° bằng:",
+      "expr": "-1/2+1/2",
+      "answer": "0",
+      "explain": "cos 120° = −cos 60°.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giá trị của sin²135° + cos²135° là:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "Hệ thức cơ bản sin²α + cos²α = 1.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "tan 135° · cot 135° bằng:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "tan α · cot α = 1 với mọi α mà hai giá trị xác định.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khẳng định nào sau đây sai?",
+      "choices": [
+        "cos(180° − α) = cos α",
+        "sin(180° − α) = sin α",
+        "tan(180° − α) = −tan α",
+        "sin(90° − α) = cos α"
+      ],
+      "answer": 0,
+      "explain": "cos của hai góc bù nhau đối nhau.",
+      "wrong_explain": {
+        "1": "Đúng.",
+        "2": "Đúng.",
+        "3": "Đúng."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nếu cos α = 0 với 0° ≤ α ≤ 180° thì α bằng:",
+      "choices": [
+        "90°",
+        "0°",
+        "180°",
+        "45°"
+      ],
+      "answer": 0,
+      "explain": "Chỉ cos 90° = 0.",
+      "wrong_explain": {
+        "1": "cos 0° = 1.",
+        "2": "cos 180° = −1.",
+        "3": "cos 45° = √2/2."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho sin α = 3/5 (α nhọn). Giá trị cos²α là:",
+      "expr": "1-9/25",
+      "answer": "16/25",
+      "explain": "cos²α = 1 − sin²α = 16/25.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho cos α = −5/13 với 90° < α < 180°. Giá trị của sin α là:",
+      "expr": "12/13",
+      "answer": "12/13",
+      "explain": "sin²α = 1 − 25/169 = 144/169, sin α > 0 nên sin α = 12/13.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho tan α = −2 với 90° < α < 180°. Giá trị của cos²α là:",
+      "expr": "1/5",
+      "answer": "1/5",
+      "explain": "1 + tan²α = 1/cos²α nên cos²α = 1/(1 + 4) = 1/5.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị của biểu thức P = sin 150° − cos 120° + tan 135° là:",
+      "expr": "1/2+1/2-1",
+      "answer": "0",
+      "explain": "P = 1/2 − (−1/2) + (−1) = 0.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho sin α + cos α = 1/5 (0° ≤ α ≤ 180°). Giá trị của sin α · cos α là:",
+      "expr": "(1/25-1)/2",
+      "answer": "-12/25",
+      "explain": "Bình phương: 1 + 2 sin α cos α = 1/25 ⇒ sin α cos α = −12/25.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Rút gọn B = sin(180° − α) + cos(180° − α)·tan α với 0° < α < 90°, ta được:",
+      "choices": [
+        "0",
+        "2 sin α",
+        "2 cos α",
+        "1"
+      ],
+      "answer": 0,
+      "explain": "B = sin α − cos α · (sin α / cos α) = sin α − sin α = 0.",
+      "wrong_explain": {
+        "1": "Tính sai dấu.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho tam giác ABC. Khẳng định nào đúng?",
+      "choices": [
+        "sin A = sin(B + C)",
+        "cos A = cos(B + C)",
+        "tan A = tan(B + C)",
+        "sin A = −sin(B + C)"
+      ],
+      "answer": 0,
+      "explain": "A + B + C = 180° nên A và B + C bù nhau: sin bằng nhau.",
+      "wrong_explain": {
+        "1": "cos đối nhau.",
+        "2": "tan đối nhau.",
+        "3": "Sai dấu."
+      },
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho cot α = 3/4 với α nhọn. Giá trị của sin²α là:",
+      "expr": "16/25",
+      "answer": "16/25",
+      "explain": "1 + cot²α = 1/sin²α ⇒ sin²α = 1/(1 + 9/16) = 16/25.",
+      "id": "q18"
+    }
+  ]
+}

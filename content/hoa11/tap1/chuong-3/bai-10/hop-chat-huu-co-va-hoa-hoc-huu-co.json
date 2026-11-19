@@ -1,0 +1,320 @@
+{
+  "id": "bai-10",
+  "grade": 11,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 11",
+  "chapter": "Chương 3. Đại cương về hoá học hữu cơ",
+  "lesson": "Bài 10. Hợp chất hữu cơ và hoá học hữu cơ",
+  "section": "",
+  "bookPage": 57,
+  "requirements": [
+    "Nêu được khái niệm hợp chất hữu cơ, hoá học hữu cơ và đặc điểm chung.",
+    "Phân loại được hợp chất hữu cơ (hydrocarbon và dẫn xuất).",
+    "Nêu được khái niệm nhóm chức; sử dụng bảng tín hiệu phổ hồng ngoại (IR) để xác định nhóm chức."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hợp chất của carbon là hợp chất hữu cơ (trừ CO, CO₂, muối carbonate, cyanide, carbide...). Hoá học hữu cơ là ngành hoá học nghiên cứu các hợp chất hữu cơ. Ví dụ: eugenol, limonene, tinh bột. Năm 1828 Wöhler tổng hợp được urea từ chất vô cơ, bác bỏ quan niệm chất hữu cơ chỉ có trong cơ thể sống."
+    },
+    {
+      "type": "text",
+      "content": "Đặc điểm chung: thành phần phân tử nhất thiết có carbon, thường có H, O, N, halogen, S, P; liên kết chủ yếu là liên kết cộng hoá trị; nhiệt độ nóng chảy, nhiệt độ sôi thấp, thường không tan hoặc ít tan trong nước, tan trong dung môi hữu cơ; dễ cháy, dễ bị nhiệt phân huỷ; phản ứng thường xảy ra chậm, theo nhiều hướng tạo hỗn hợp sản phẩm."
+    },
+    {
+      "type": "text",
+      "content": "Phân loại theo thành phần: hydrocarbon (chỉ gồm C và H, ví dụ CH₄, CH₂=CH₂, CH≡CH, C₆H₆) và dẫn xuất của hydrocarbon (thay một hay nhiều H bằng nguyên tử hay nhóm nguyên tử khác như CH₃Cl, C₂H₅OH, CH₃COOH)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b10-phan-loai.svg",
+      "caption": "Phân loại hợp chất hữu cơ"
+    },
+    {
+      "type": "text",
+      "content": "Nhóm chức là nguyên tử hoặc nhóm nguyên tử gây ra những tính chất hoá học đặc trưng của hợp chất hữu cơ. Ví dụ ethanol (C₂H₅OH) phản ứng với sodium giải phóng H₂ còn dimethyl ether (CH₃OCH₃) cùng công thức phân tử C₂H₆O thì không, do nhóm –OH."
+    },
+    {
+      "type": "formula",
+      "content": "2C₂H₅OH + 2Na → 2C₂H₅ONa + H₂↑"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b10-nhom-chuc.svg",
+      "caption": "Một số nhóm chức cơ bản"
+    },
+    {
+      "type": "text",
+      "content": "Phổ hồng ngoại (IR): mỗi liên kết trong phân tử hấp thụ bức xạ hồng ngoại ở số sóng đặc trưng; phổ ghi độ truyền qua (%) theo số sóng (cm⁻¹); các cực tiểu truyền qua (peak) cho biết nhóm chức. Số sóng đặc trưng: O–H alcohol 3500–3200; N–H amine 3300–3000; C–H aldehyde 2830–2695 và C=O 1740–1685; C=O ketone 1715–1666; acid O–H 3300–2500 và C=O 1760–1690; ester C=O 1750–1715."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b10-ir.svg",
+      "caption": "Bảng số sóng hấp thụ đặc trưng"
+    },
+    {
+      "type": "method",
+      "title": "Dự đoán nhóm chức từ phổ IR",
+      "when": "Cho phổ IR hoặc các số sóng hấp thụ, yêu cầu xác định nhóm chức.",
+      "steps": [
+        "Tìm các peak hấp thụ mạnh, ghi số sóng.",
+        "Đối chiếu với bảng số sóng đặc trưng (O–H, N–H, C=O...).",
+        "Kết hợp công thức phân tử (nếu có) để loại phương án.",
+        "Kết luận nhóm chức và loại hợp chất."
+      ],
+      "notes": [
+        "Peak rộng 3500–3200 đặc trưng cho O–H của alcohol; acid có O–H rất rộng 3300–2500.",
+        "Peak mạnh khoảng 1700 cho C=O."
+      ],
+      "sample": {
+        "problem": "Phổ IR có peak mạnh ở 1715 cm⁻¹ và không có peak 3500–3200, dự đoán nhóm chức?",
+        "steps": [
+          "1715 cm⁻¹ thuộc C=O.",
+          "Không có O–H nên không là alcohol hay acid; phù hợp với ketone."
+        ],
+        "answer": "ketone"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Phân loại: CH₃–CH=CH–CH₃, CH₃CH₂OH, C₆H₆, CH₃COCH₃.",
+      "steps": [
+        "Hydrocarbon (chỉ có C, H): CH₃–CH=CH–CH₃, C₆H₆.",
+        "Dẫn xuất của hydrocarbon: CH₃CH₂OH (nhóm –OH), CH₃COCH₃ (nhóm C=O)."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Nêu các nhóm chức trong glutamic acid HOOC–CH₂–CH₂–CH(NH₂)–COOH.",
+      "steps": [
+        "Có hai nhóm carboxylic acid –COOH.",
+        "Có một nhóm amine –NH₂."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất nào sau đây là hợp chất hữu cơ?",
+      "choices": [
+        "C₂H₆",
+        "CO₂",
+        "CaCO₃",
+        "CO"
+      ],
+      "answer": 0,
+      "explain": "C₂H₆ là hydrocarbon.",
+      "wrong_explain": {
+        "1": "Là oxide carbon.",
+        "2": "Là muối carbonate.",
+        "3": "Là oxide carbon."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hydrocarbon là hợp chất chỉ gồm:",
+      "choices": [
+        "carbon và hydrogen",
+        "carbon và oxygen",
+        "hydrogen và oxygen",
+        "carbon, hydrogen và oxygen"
+      ],
+      "answer": 0,
+      "explain": "Chỉ có hai nguyên tố C, H.",
+      "wrong_explain": {
+        "1": "Thiếu H.",
+        "2": "Thiếu C.",
+        "3": "Có thêm O là dẫn xuất."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nhóm chức của alcohol là:",
+      "choices": [
+        "–OH",
+        "–CHO",
+        "–COOH",
+        "–NH₂"
+      ],
+      "answer": 0,
+      "explain": "Nhóm hydroxy gắn với carbon no.",
+      "wrong_explain": {
+        "1": "Là aldehyde.",
+        "2": "Là carboxylic acid.",
+        "3": "Là amine."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nhóm chức của aldehyde là:",
+      "choices": [
+        "–CHO",
+        "–OH",
+        "–COO–",
+        ">C=O"
+      ],
+      "answer": 0,
+      "explain": "Aldehyde có nhóm –CHO.",
+      "wrong_explain": {
+        "1": "Là alcohol.",
+        "2": "Là ester.",
+        "3": "Là ketone."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đặc điểm chung của hợp chất hữu cơ là:",
+      "choices": [
+        "thường có nhiệt độ sôi, nóng chảy thấp và dễ cháy",
+        "tan tốt trong nước",
+        "bền với nhiệt",
+        "phản ứng rất nhanh"
+      ],
+      "answer": 0,
+      "explain": "Liên kết chủ yếu là cộng hoá trị.",
+      "wrong_explain": {
+        "1": "Thường ít tan trong nước.",
+        "2": "Dễ bị nhiệt phân.",
+        "3": "Thường chậm."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "C₂H₅OH và CH₃OCH₃ khác nhau về tính chất vì:",
+      "choices": [
+        "có nhóm chức khác nhau",
+        "khác khối lượng phân tử",
+        "khác số nguyên tử C",
+        "đều là hydrocarbon"
+      ],
+      "answer": 0,
+      "explain": "Cùng CTPT C₂H₆O nhưng khác nhóm chức.",
+      "wrong_explain": {
+        "1": "Cùng phân tử khối.",
+        "2": "Cùng số C.",
+        "3": "Đều là dẫn xuất."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Số sóng 1750–1715 cm⁻¹ thường là của nhóm:",
+      "choices": [
+        "C=O của ester",
+        "O–H của alcohol",
+        "N–H của amine",
+        "C–H của ankan"
+      ],
+      "answer": 0,
+      "explain": "Peak C=O.",
+      "wrong_explain": {
+        "1": "O–H ở 3500–3200.",
+        "2": "N–H ở 3300–3000.",
+        "3": "Không phải đặc trưng."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Peak rộng ở 3300–2500 cm⁻¹ đặc trưng của:",
+      "choices": [
+        "O–H của carboxylic acid",
+        "C=O của ketone",
+        "C–H của aldehyde",
+        "N–H của amine"
+      ],
+      "answer": 0,
+      "explain": "O–H acid liên kết hydrogen mạnh.",
+      "wrong_explain": {
+        "1": "C=O ở 1700.",
+        "2": "C–H 2830–2695.",
+        "3": "N–H 3300–3000."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hợp chất CH₃CHO thuộc loại:",
+      "choices": [
+        "aldehyde",
+        "ketone",
+        "alcohol",
+        "ether"
+      ],
+      "answer": 0,
+      "explain": "Có nhóm –CHO.",
+      "wrong_explain": {
+        "1": "Ketone là >C=O ở giữa.",
+        "2": "Alcohol có –OH.",
+        "3": "Ether có –O–."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất có peak mạnh ~1715 cm⁻¹, không có peak 3500–3200 có thể là:",
+      "choices": [
+        "CH₃COCH₃",
+        "C₂H₅OH",
+        "CH₃COOH",
+        "CH₃NH₂"
+      ],
+      "answer": 0,
+      "explain": "Có C=O, không có O–H.",
+      "wrong_explain": {
+        "1": "Có O–H.",
+        "2": "Có O–H rộng.",
+        "3": "Có N–H."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dãy chỉ gồm hydrocarbon là:",
+      "choices": [
+        "CH₄, C₂H₄, C₆H₆",
+        "CH₃Cl, C₂H₄, C₆H₆",
+        "C₂H₅OH, CH₄",
+        "CH₃COOH, C₂H₂"
+      ],
+      "answer": 0,
+      "explain": "Chỉ chứa C, H.",
+      "wrong_explain": {
+        "1": "CH₃Cl chứa Cl.",
+        "2": "C₂H₅OH chứa O.",
+        "3": "CH₃COOH chứa O."
+      },
+      "id": "q11"
+    }
+  ]
+}

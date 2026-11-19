@@ -1,0 +1,157 @@
+{
+  "id": "bai-17",
+  "grade": 9,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 9",
+  "chapter": "Chương V. Năng lượng với cuộc sống",
+  "lesson": "Bài 17. Một số dạng năng lượng tái tạo",
+  "section": "",
+  "bookPage": 80,
+  "requirements": [
+    "Nêu được một số dạng năng lượng tái tạo; ưu, nhược điểm; ứng dụng ở Việt Nam."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Năng lượng tái tạo gồm: năng lượng Mặt Trời (pin mặt trời, máy nước nóng), năng lượng gió (tuabin gió), năng lượng nước (thuỷ điện, thuỷ triều, sóng biển), năng lượng địa nhiệt, năng lượng sinh khối (biogas, nhiên liệu sinh học)."
+    },
+    {
+      "type": "text",
+      "content": "Ưu điểm: gần như vô hạn, ít phát thải khí nhà kính. Nhược điểm: phụ thuộc tự nhiên (thời tiết, địa hình), chi phí đầu tư cao, một số ảnh hưởng hệ sinh thái (thuỷ điện)."
+    },
+    {
+      "type": "text",
+      "content": "Việt Nam có tiềm năng lớn về điện mặt trời (Nam Trung Bộ, Tây Nguyên), điện gió (ven biển), thuỷ điện (Hoà Bình, Sơn La, Lai Châu)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Pin mặt trời diện tích 2 m², mỗi m² nhận 1 000 W, hiệu suất 20%. Công suất điện?",
+      "steps": [
+        "2·1 000·20/100.",
+        "= 400 W."
+      ],
+      "expr": "2*1000*20/100",
+      "answer": "400"
+    },
+    {
+      "problem": "Dạng tính điện năng: tuabin gió 3 MW hoạt động 8 giờ tạo bao nhiêu MWh?",
+      "steps": [
+        "3·8.",
+        "= 24 MWh."
+      ],
+      "expr": "3*8",
+      "answer": "24"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nhà máy thuỷ điện chuyển hoá:",
+      "choices": [
+        "Quang năng thành điện năng",
+        "Nhiệt năng thành điện năng",
+        "Hoá năng thành điện năng",
+        "Thế năng của nước thành điện năng"
+      ],
+      "answer": 3,
+      "explain": "Thuỷ điện.",
+      "wrong_explain": {
+        "0": "Pin mặt trời.",
+        "1": "Nhiệt điện.",
+        "2": "Pin."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nhược điểm của năng lượng Mặt Trời là:",
+      "choices": [
+        "Gây ô nhiễm nặng",
+        "Sắp cạn kiệt",
+        "Phụ thuộc thời tiết, ban đêm không có",
+        "Thải nhiều CO₂"
+      ],
+      "answer": 2,
+      "explain": "Không ổn định.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Biogas được sản xuất từ:",
+      "choices": [
+        "Than đá",
+        "Chất thải hữu cơ (phân, rác) phân huỷ",
+        "Dầu mỏ",
+        "Cát"
+      ],
+      "answer": 1,
+      "explain": "Sinh khối.",
+      "wrong_explain": {
+        "0": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vùng có tiềm năng điện gió lớn ở nước ta là:",
+      "choices": [
+        "Ven biển Nam Trung Bộ, Nam Bộ",
+        "Vùng núi Tây Bắc sâu trong đất liền",
+        "Đồng bằng sông Hồng nội địa",
+        "Thành phố lớn"
+      ],
+      "answer": 0,
+      "explain": "Gió mạnh ổn định.",
+      "wrong_explain": {
+        "1": "Gió yếu hơn.",
+        "2": "Không lớn.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hệ pin mặt trời 5 kW chạy 5 giờ/ngày, 30 ngày tạo bao nhiêu kWh?",
+      "expr": "750",
+      "answer": "750",
+      "explain": "5·5·30."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tấm pin 1,5 m² nhận 1 000 W/m², hiệu suất 18%. Công suất (W):",
+      "expr": "270",
+      "answer": "270",
+      "explain": "1,5·1 000·18%."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong: thuỷ triều, địa nhiệt, dầu mỏ, sinh khối, than – có bao nhiêu nguồn tái tạo?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Thuỷ triều, địa nhiệt, sinh khối."
+    }
+  ]
+}

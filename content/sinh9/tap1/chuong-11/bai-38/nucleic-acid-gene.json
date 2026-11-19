@@ -1,0 +1,237 @@
+{
+  "id": "bai-38",
+  "grade": 9,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 9",
+  "chapter": "Chương XI. Di truyền học Mendel. Cơ sở phân tử của hiện tượng di truyền",
+  "lesson": "Bài 38. Nucleic acid và gene",
+  "section": "",
+  "bookPage": 166,
+  "requirements": [
+    "Nêu được thành phần hoá học, cấu trúc DNA, RNA; khái niệm gene."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nucleic acid gồm DNA và RNA, là đại phân tử được cấu tạo theo nguyên tắc đa phân, đơn phân là nucleotide."
+    },
+    {
+      "type": "text",
+      "content": "DNA gồm hai mạch polynucleotide xoắn kép; bốn loại nucleotide A, T, G, C. Các nucleotide trên hai mạch liên kết theo nguyên tắc bổ sung: A liên kết với T (2 liên kết hydrogen), G liên kết với C (3 liên kết hydrogen). Mỗi chu kì xoắn dài 3,4 nm gồm 10 cặp nucleotide."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/c-s9-b38-dna.svg",
+      "caption": "Cấu trúc DNA và nguyên tắc bổ sung (sơ đồ)"
+    },
+    {
+      "type": "formula",
+      "content": "A = T; G = C; N = 2A + 2G; chiều dài L = N/2 · 0,34 nm"
+    },
+    {
+      "type": "text",
+      "content": "RNA gồm một mạch, đơn phân A, U, G, C; có mRNA, tRNA, rRNA. Gene là một đoạn DNA mang thông tin quy định một sản phẩm nhất định (RNA hoặc protein)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/c-s9-b38-dna-rna.svg",
+      "caption": "So sánh cấu trúc DNA và RNA"
+    },
+    {
+      "type": "method",
+      "title": "Tính toán số nucleotide, chiều dài và liên kết hydrogen của DNA",
+      "when": "Đề cho số nucleotide từng loại hoặc phần trăm, hỏi số nucleotide còn lại, chiều dài, số liên kết H.",
+      "steps": [
+        "Dùng nguyên tắc bổ sung: A = T, G = C.",
+        "Tổng số nucleotide N = 2A + 2G (hay A + G = N/2).",
+        "Chiều dài L = (N/2)·0,34 nm.",
+        "Số liên kết hydrogen H = 2A + 3G."
+      ],
+      "notes": [
+        "Số nucleotide tính cho cả hai mạch.",
+        "A + G luôn bằng N/2.",
+        "%A + %G = 50%.",
+        "Đơn vị chiều dài thường là nm (1 nm = 10 Å)."
+      ],
+      "sample": {
+        "problem": "Gene có A = 600 và G = 400. Tính N, L và H.",
+        "steps": [
+          "N = 2(600 + 400) = 2000.",
+          "L = 1000·0,34 = 340 nm.",
+          "H = 2·600 + 3·400 = 2400."
+        ],
+        "answer": "N = 2000; L = 340 nm; H = 2400"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một gene có A = 600, G = 900. Tổng số nucleotide N?",
+      "steps": [
+        "N = 2A + 2G = 1 200 + 1 800.",
+        "= 3 000."
+      ],
+      "expr": "2*600+2*900",
+      "answer": "3000"
+    },
+    {
+      "problem": "Dạng tính chiều dài: gene có 3 000 nucleotide dài bao nhiêu nm?",
+      "steps": [
+        "L = 3 000/2·0,34.",
+        "= 510 nm."
+      ],
+      "expr": "3000/2*0.34",
+      "answer": "510"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Theo nguyên tắc bổ sung trong DNA, A liên kết với:",
+      "choices": [
+        "G",
+        "T",
+        "C",
+        "U"
+      ],
+      "answer": 1,
+      "explain": "A – T.",
+      "wrong_explain": {
+        "0": "G liên kết với C.",
+        "2": "Không.",
+        "3": "Trong RNA."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn phân của nucleic acid là:",
+      "choices": [
+        "Nucleotide",
+        "Amino acid",
+        "Glucose",
+        "Acid béo"
+      ],
+      "answer": 0,
+      "explain": "Nucleotide.",
+      "wrong_explain": {
+        "1": "Của protein.",
+        "2": "Của tinh bột.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "RNA khác DNA ở chỗ:",
+      "choices": [
+        "Có hai mạch",
+        "Chứa T",
+        "Không có G",
+        "Có một mạch và chứa U thay T"
+      ],
+      "answer": 3,
+      "explain": "Cấu trúc RNA.",
+      "wrong_explain": {
+        "0": "DNA.",
+        "1": "DNA.",
+        "2": "Có."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Gene là:",
+      "choices": [
+        "Một phân tử protein",
+        "Một nhiễm sắc thể",
+        "Đoạn DNA mang thông tin quy định một sản phẩm",
+        "Một loại đường"
+      ],
+      "answer": 2,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "0": "Không.",
+        "1": "Lớn hơn.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Gene có A = 300, G = 200. Số T:",
+      "expr": "300",
+      "answer": "300",
+      "explain": "A = T."
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một gene có A = 600, G = 400. Tổng số nucleotide N là?",
+      "expr": "2*(600+400)",
+      "answer": "2000",
+      "explain": "N = 2A + 2G = 2000.",
+      "dang": "Tính toán số nucleotide, chiều dài và liên kết hydrogen của DNA",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Gene có 3 000 nucleotide. Chiều dài là bao nhiêu nm?",
+      "expr": "3000/2*0.34",
+      "answer": "510",
+      "explain": "L = (3 000/2)·0,34 = 510 nm.",
+      "dang": "Tính toán số nucleotide, chiều dài và liên kết hydrogen của DNA",
+      "id": "q09"
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Gene có A = 400, G = 600. Tổng nucleotide:",
+      "expr": "2000",
+      "answer": "2000",
+      "explain": "2·400 + 2·600."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Gene có 120 chu kì xoắn. Tổng số nucleotide:",
+      "expr": "2400",
+      "answer": "2400",
+      "explain": "120·20."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Gene có A = 600, G = 400. Số liên kết hydrogen là?",
+      "expr": "2*600+3*400",
+      "answer": "2400",
+      "explain": "H = 2A + 3G = 1 200 + 1 200 = 2 400.",
+      "dang": "Tính toán số nucleotide, chiều dài và liên kết hydrogen của DNA",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "DNA có tổng 2 400 nucleotide, A chiếm 20%. Số nucleotide loại G là?",
+      "expr": "2400*30/100",
+      "answer": "720",
+      "explain": "G = 50% − 20% = 30% nên 2 400·30% = 720.",
+      "dang": "Tính toán số nucleotide, chiều dài và liên kết hydrogen của DNA",
+      "id": "q11"
+    }
+  ]
+}

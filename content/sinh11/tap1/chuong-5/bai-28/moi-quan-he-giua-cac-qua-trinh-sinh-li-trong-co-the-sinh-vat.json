@@ -1,0 +1,224 @@
+{
+  "id": "bai-28",
+  "grade": 11,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 11",
+  "chapter": "Chương 5. Mối quan hệ giữa các quá trình sinh lí trong cơ thể sinh vật và một số ngành nghề liên quan đến sinh học cơ thể",
+  "lesson": "Bài 28. Mối quan hệ giữa các quá trình sinh lí trong cơ thể sinh vật",
+  "section": "",
+  "bookPage": 183,
+  "requirements": [
+    "Trình bày được mối quan hệ giữa các quá trình sinh lí trong cơ thể thực vật và động vật.",
+    "Chứng minh được cơ thể là một hệ thống mở, tự điều chỉnh."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Trong cơ thể thực vật diễn ra nhiều quá trình sinh lí như trao đổi nước, dinh dưỡng khoáng, quang hợp, hô hấp... Các quá trình có mối quan hệ mật thiết, đảm bảo hoạt động thống nhất của cơ thể; bất kì quá trình nào thay đổi đều ảnh hưởng đến quá trình khác. Ví dụ: hấp thụ nước, khoáng bị cản trở thì thiếu nguyên liệu cho quang hợp, hô hấp. Thoát hơi nước ở lá tạo lực hút kéo nước, khoáng từ rễ lên; quang hợp tổng hợp carbohydrate, cung cấp chất hữu cơ cho hô hấp; hô hấp cung cấp ATP cho hấp thụ khoáng chủ động và vận chuyển."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh11-b28-quan-he-thuc-vat.svg",
+      "caption": "Quan hệ giữa các quá trình sinh lí ở thực vật"
+    },
+    {
+      "type": "text",
+      "content": "Ở động vật có tiêu hoá, hô hấp, tuần hoàn, bài tiết, thần kinh, nội tiết... Cơ thể chỉ tồn tại, sinh trưởng, phát triển bình thường khi các hoạt động này diễn ra nhịp nhàng. Ví dụ: hệ tuần hoàn hoạt động tốt đảm bảo lưu lượng máu lên phổi nên hệ hô hấp lấy đủ O₂, thải CO₂; tiêu hoá cung cấp chất dinh dưỡng cho máu mang đến tế bào; tuần hoàn đưa chất thải đến thận để bài tiết."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh11-b28-quan-he-dong-vat.svg",
+      "caption": "Quan hệ giữa các hệ cơ quan ở động vật"
+    },
+    {
+      "type": "text",
+      "content": "Cơ thể sinh vật là hệ thống mở: thường xuyên trao đổi chất và năng lượng với môi trường (lấy vào chất cần thiết, thải ra chất thải). Đồng thời cơ thể có khả năng tự điều chỉnh (thông qua cơ chế liên hệ ngược của hệ thần kinh, nội tiết, quang chu kì, hormone thực vật...) để duy trì hoạt động sống ổn định trước thay đổi của môi trường (ví dụ cân bằng nội môi: thân nhiệt, đường huyết, pH)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh11-b28-he-thong-mo.svg",
+      "caption": "Cơ thể là một hệ thống mở, tự điều chỉnh"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Giải thích vì sao khi cây thiếu nước thì quang hợp giảm.",
+      "steps": [
+        "Thiếu nước làm khí khổng đóng, giảm CO₂ vào lá.",
+        "Nước còn là nguyên liệu của pha sáng nên quang hợp giảm."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Vì sao nói cơ thể động vật là một thể thống nhất?",
+      "steps": [
+        "Các hệ cơ quan phối hợp nhịp nhàng: tuần hoàn nối tiêu hoá, hô hấp, bài tiết.",
+        "Một hệ rối loạn thì ảnh hưởng đến hệ khác và toàn cơ thể."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hệ cơ quan vận chuyển O₂, chất dinh dưỡng đến mọi tế bào là:",
+      "choices": [
+        "hệ tuần hoàn",
+        "hệ bài tiết",
+        "hệ sinh dục",
+        "hệ vận động"
+      ],
+      "answer": 0,
+      "explain": "Máu mang O₂ và chất dinh dưỡng.",
+      "wrong_explain": {
+        "1": "Bài tiết thải chất thải.",
+        "2": "Sinh dục sinh sản.",
+        "3": "Vận động di chuyển."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cơ thể sinh vật là hệ thống:",
+      "choices": [
+        "mở và tự điều chỉnh",
+        "kín",
+        "không điều chỉnh",
+        "chỉ thu nhận"
+      ],
+      "answer": 0,
+      "explain": "Trao đổi chất với môi trường và tự điều chỉnh.",
+      "wrong_explain": {
+        "1": "Không kín.",
+        "2": "Có điều chỉnh.",
+        "3": "Có thu và thải."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thoát hơi nước ở lá có vai trò:",
+      "choices": [
+        "tạo lực hút kéo nước, khoáng từ rễ lên",
+        "tạo ATP",
+        "tổng hợp chất hữu cơ",
+        "hấp thụ khoáng chủ động"
+      ],
+      "answer": 0,
+      "explain": "Thoát hơi nước là động lực trên.",
+      "wrong_explain": {
+        "1": "ATP từ hô hấp.",
+        "2": "Chất hữu cơ từ quang hợp.",
+        "3": "Cần ATP từ hô hấp."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi hấp thụ nước, khoáng bị cản trở thì:",
+      "choices": [
+        "quang hợp, hô hấp thiếu nguyên liệu",
+        "quang hợp tăng",
+        "cây lớn nhanh",
+        "không ảnh hưởng"
+      ],
+      "answer": 0,
+      "explain": "Các quá trình liên quan chặt chẽ.",
+      "wrong_explain": {
+        "1": "Giảm.",
+        "2": "Chậm lớn.",
+        "3": "Có ảnh hưởng."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Quang hợp và hô hấp liên quan với nhau vì:",
+      "choices": [
+        "sản phẩm của quá trình này là nguyên liệu của quá trình kia",
+        "cùng tạo O₂",
+        "cùng tiêu thụ CO₂",
+        "không liên quan"
+      ],
+      "answer": 0,
+      "explain": "Quang hợp tạo chất hữu cơ và O₂ cho hô hấp.",
+      "wrong_explain": {
+        "1": "Hô hấp tiêu thụ O₂.",
+        "2": "Hô hấp thải CO₂.",
+        "3": "Liên quan chặt chẽ."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khả năng tự điều chỉnh của cơ thể nhằm:",
+      "choices": [
+        "duy trì hoạt động sống ổn định khi môi trường thay đổi",
+        "ngừng trao đổi chất",
+        "tăng thải nước",
+        "tách khỏi môi trường"
+      ],
+      "answer": 0,
+      "explain": "Cân bằng nội môi.",
+      "wrong_explain": {
+        "1": "Cần trao đổi chất.",
+        "2": "Không phải mục tiêu.",
+        "3": "Không tách biệt."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi chạy nhanh, nhịp tim và nhịp thở đều tăng thể hiện:",
+      "choices": [
+        "sự phối hợp tuần hoàn – hô hấp đáp ứng nhu cầu O₂",
+        "hai hệ độc lập",
+        "cơ thể hệ thống kín",
+        "giảm trao đổi chất"
+      ],
+      "answer": 0,
+      "explain": "Cơ thể tăng cung cấp O₂ cho cơ.",
+      "wrong_explain": {
+        "1": "Phối hợp.",
+        "2": "Là hệ thống mở.",
+        "3": "Trao đổi chất tăng."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cây héo ở nắng gắt buổi trưa nhưng phục hồi buổi chiều nhờ:",
+      "choices": [
+        "khả năng tự điều chỉnh (đóng khí khổng, hút nước)",
+        "tự tổng hợp nước",
+        "ngừng hô hấp",
+        "hoa nở"
+      ],
+      "answer": 0,
+      "explain": "Cây điều chỉnh thoát hơi nước.",
+      "wrong_explain": {
+        "1": "Không tự tạo nước.",
+        "2": "Vẫn hô hấp.",
+        "3": "Không liên quan."
+      },
+      "id": "q08"
+    }
+  ]
+}

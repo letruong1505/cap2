@@ -1,0 +1,146 @@
+{
+  "id": "bai-7",
+  "grade": 6,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 6",
+  "chapter": "Chương I. Mở đầu về Khoa học tự nhiên",
+  "lesson": "Bài 7. Đo thời gian",
+  "section": "",
+  "bookPage": 22,
+  "requirements": [
+    "Nêu được đơn vị đo thời gian; cách đo thời gian bằng đồng hồ."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đơn vị đo thời gian chính thức là giây (s). Các đơn vị khác: phút, giờ, ngày, tuần, tháng, năm. 1 phút = 60 s; 1 giờ = 60 phút = 3 600 s."
+    },
+    {
+      "type": "text",
+      "content": "Dụng cụ đo: đồng hồ treo tường, đồng hồ đeo tay, đồng hồ bấm giây, đồng hồ đo thời gian hiện số dùng cổng quang điện."
+    },
+    {
+      "type": "text",
+      "content": "Cách đo: ước lượng khoảng thời gian để chọn đồng hồ phù hợp; hiệu chỉnh đồng hồ về số 0; thực hiện đo; mắt nhìn đúng cách; đọc và ghi kết quả."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đổi 2,5 giờ ra phút.",
+      "steps": [
+        "1 giờ = 60 phút.",
+        "2,5·60 = 150 phút."
+      ],
+      "expr": "2.5*60",
+      "answer": "150"
+    },
+    {
+      "problem": "Dạng tính khoảng thời gian: bắt đầu chạy lúc 7 giờ 15 phút, về đích lúc 7 giờ 52 phút. Bạn chạy bao nhiêu phút?",
+      "steps": [
+        "52 − 15.",
+        "= 37 phút."
+      ],
+      "expr": "52-15",
+      "answer": "37"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Đơn vị đo thời gian chính thức là:",
+      "choices": [
+        "Giây",
+        "Phút",
+        "Giờ",
+        "Ngày"
+      ],
+      "answer": 0,
+      "explain": "Giây (s).",
+      "wrong_explain": {
+        "1": "Là đơn vị thường dùng.",
+        "2": "Thường dùng.",
+        "3": "Thường dùng."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Để đo thời gian chạy 100 m nên dùng:",
+      "choices": [
+        "Đồng hồ treo tường",
+        "Lịch",
+        "Đồng hồ cát",
+        "Đồng hồ bấm giây"
+      ],
+      "answer": 3,
+      "explain": "Cần đo chính xác đến phần mười giây.",
+      "wrong_explain": {
+        "0": "Không đủ chính xác.",
+        "1": "Không.",
+        "2": "Không chính xác."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "1 giờ bằng bao nhiêu giây?",
+      "choices": [
+        "60 s",
+        "360 s",
+        "3 600 s",
+        "36 000 s"
+      ],
+      "answer": 2,
+      "explain": "60·60.",
+      "wrong_explain": {
+        "0": "Đó là 1 phút.",
+        "1": "Sai.",
+        "3": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đổi 3 phút 20 giây ra giây.",
+      "expr": "3*60+20",
+      "answer": "200",
+      "explain": "200 s."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đổi 7 200 giây ra giờ.",
+      "expr": "2",
+      "answer": "2",
+      "explain": "2 giờ."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một bộ phim dài 1 giờ 45 phút. Đổi ra phút.",
+      "expr": "105",
+      "answer": "105",
+      "explain": "105 phút."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mỗi tiết học 45 phút, buổi sáng có 5 tiết. Tổng thời gian học (phút):",
+      "expr": "225",
+      "answer": "225",
+      "explain": "225 phút."
+    }
+  ]
+}

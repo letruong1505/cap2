@@ -1,0 +1,330 @@
+{
+  "id": "bai-23",
+  "grade": 11,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 11",
+  "chapter": "Chương 6. Hợp chất carbonyl – Carboxylic acid",
+  "lesson": "Bài 23. Hợp chất carbonyl",
+  "section": "",
+  "bookPage": 136,
+  "requirements": [
+    "Nêu khái niệm aldehyde, ketone; gọi tên theo danh pháp thay thế.",
+    "Mô tả cấu tạo nhóm carbonyl; tính chất vật lí.",
+    "Trình bày phản ứng khử, oxi hoá aldehyde (Br₂, Tollens, Cu(OH)₂), cộng HCN, tạo iodoform; ứng dụng và điều chế."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Aldehyde là hợp chất hữu cơ có nhóm –CHO liên kết với carbon (gốc hydrocarbon hoặc –CHO) hoặc với hydrogen. Ketone là hợp chất có nhóm >C=O liên kết với hai gốc hydrocarbon. Hai loại hợp chất đều chứa nhóm carbonyl C=O: C sp², nhóm phẳng, góc khoảng 120°; liên kết C=O phân cực (C mang δ⁺, O mang δ⁻)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b23-carbonyl.svg",
+      "caption": "Aldehyde và ketone"
+    },
+    {
+      "type": "text",
+      "content": "Danh pháp thay thế: aldehyde = tên hydrocarbon bỏ \"e\" + \"al\" (nhóm –CHO ở C1): methanal HCHO, ethanal CH₃CHO, 3-methylbutanal, but-3-enal. Ketone = tên hydrocarbon bỏ \"e\" + số chỉ vị trí + \"one\": propanone CH₃COCH₃, butanone, pentan-2-one. Tên thông thường: formaldehyde, acetaldehyde, benzaldehyde, acetone."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất vật lí: phân cực nên nhiệt độ sôi cao hơn hydrocarbon cùng phân tử khối (nhưng thấp hơn alcohol vì không có liên kết hydrogen giữa các phân tử); methanal (−21 °C), ethanal (20 °C) ở thể khí hoặc dễ bay hơi, các chất khác lỏng; mạch ngắn tan tốt trong nước, độ tan giảm khi mạch carbon dài."
+    },
+    {
+      "type": "text",
+      "content": "Phản ứng khử (NaBH₄ hoặc LiAlH₄): aldehyde + 2[H] → alcohol bậc I; ketone + 2[H] → alcohol bậc II. Phản ứng oxi hoá aldehyde thành carboxylic acid: với nước bromine (CH₃CHO + Br₂ + H₂O → CH₃COOH + 2HBr); với thuốc thử Tollens [Ag(NH₃)₂]OH tạo lớp bạc sáng (phản ứng tráng bạc): CH₃CHO + 2[Ag(NH₃)₂]OH → CH₃COONH₄ + 2Ag↓ + 3NH₃ + H₂O; với Cu(OH)₂/NaOH đun nóng tạo kết tủa Cu₂O đỏ gạch: RCHO + 2Cu(OH)₂ + NaOH → RCOONa + Cu₂O↓ + 3H₂O. Ketone không có các phản ứng oxi hoá này."
+    },
+    {
+      "type": "text",
+      "content": "Phản ứng cộng HCN vào nhóm C=O tạo cyanohydrin: CH₃CHO + HCN → CH₃CH(OH)CN. Phản ứng tạo iodoform: hợp chất có nhóm CH₃–CO– (aldehyde CH₃CHO và methyl ketone như acetone) tác dụng I₂/NaOH tạo CHI₃ kết tủa vàng: CH₃COCH₃ + 3I₂ + 4NaOH → CH₃COONa + CHI₃↓ + 3NaI + 3H₂O – dùng nhận biết."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b23-phan-ung.svg",
+      "caption": "Các phản ứng của hợp chất carbonyl"
+    },
+    {
+      "type": "formula",
+      "content": "CH₃CHO + 2[Ag(NH₃)₂]OH → CH₃COONH₄ + 2Ag↓ + 3NH₃ + H₂O        CH₃CHO + 2Cu(OH)₂ + NaOH → CH₃COONa + Cu₂O↓ + 3H₂O"
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: formaldehyde (dung dịch formol bảo quản mẫu, sản xuất nhựa phenol–formaldehyde, keo dán gỗ, nhựa melamine); acetaldehyde sản xuất acetic acid; acetone là dung môi, nguyên liệu bisphenol A. Điều chế: oxi hoá ethylene thành acetaldehyde (PdCl₂, CuCl₂); oxi hoá cumene thu acetone và phenol; oxi hoá alcohol bậc I, II bằng CuO."
+    },
+    {
+      "type": "method",
+      "title": "Nhận biết aldehyde, ketone",
+      "when": "Phân biệt các chất carbonyl (ethanal, propanone, ...).",
+      "steps": [
+        "Dùng thuốc thử Tollens (hoặc Cu(OH)₂/OH⁻, đun nóng): chỉ aldehyde cho Ag↓ (hoặc Cu₂O đỏ gạch).",
+        "Dùng I₂/NaOH: chất có nhóm CH₃CO– cho CHI₃ vàng.",
+        "Kết hợp hai thuốc thử để phân biệt.",
+        "Viết phương trình."
+      ],
+      "notes": [
+        "Tỉ lệ aldehyde đơn chức : Ag = 1 : 2 (trừ HCHO: 1 : 4).",
+        "Ketone không tráng bạc."
+      ],
+      "sample": {
+        "problem": "Phân biệt ethanal và propanone.",
+        "steps": [
+          "Dùng Tollens: ethanal cho Ag↓, propanone không.",
+          "Hoặc I₂/NaOH đều cho CHI₃ nên không phân biệt được."
+        ],
+        "answer": "Tollens"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho 0,1 mol CH₃CHO tráng bạc hoàn toàn. Tính khối lượng Ag (g), Ag = 108.",
+      "steps": [
+        "n(Ag) = 2·0,1 = 0,2 mol.",
+        "m = 0,2·108 = 21,6 g."
+      ],
+      "expr": "0.2*108",
+      "answer": "21.6"
+    },
+    {
+      "problem": "Oxi hoá 0,2 mol CH₃CHO bằng Cu(OH)₂/NaOH. Tính khối lượng Cu₂O (g), M = 144.",
+      "steps": [
+        "n(Cu₂O) = 0,2 mol.",
+        "m = 0,2·144 = 28,8 g."
+      ],
+      "expr": "0.2*144",
+      "answer": "28.8"
+    },
+    {
+      "problem": "Tính khối lượng CHI₃ (M = 394) tạo từ 0,05 mol propanone với I₂/NaOH dư.",
+      "steps": [
+        "n(CHI₃) = 0,05 mol.",
+        "m = 0,05·394 = 19,7 g."
+      ],
+      "expr": "0.05*394",
+      "answer": "19.7"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nhóm chức của aldehyde là:",
+      "choices": [
+        "–CHO",
+        ">C=O",
+        "–COOH",
+        "–OH"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Ketone.",
+        "2": "Acid.",
+        "3": "Alcohol."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tên thay thế của CH₃CHO là:",
+      "choices": [
+        "ethanal",
+        "ethanol",
+        "ethanoic acid",
+        "methanal"
+      ],
+      "answer": 0,
+      "explain": "Đuôi \"al\".",
+      "wrong_explain": {
+        "1": "Alcohol.",
+        "2": "Acid.",
+        "3": "1 C."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tên thay thế của CH₃COCH₃ là:",
+      "choices": [
+        "propanone",
+        "propanal",
+        "propan-2-ol",
+        "butanone"
+      ],
+      "answer": 0,
+      "explain": "Ketone 3 C.",
+      "wrong_explain": {
+        "1": "Aldehyde.",
+        "2": "Alcohol.",
+        "3": "4 C."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Aldehyde sôi thấp hơn alcohol cùng M vì:",
+      "choices": [
+        "không có liên kết hydrogen giữa các phân tử",
+        "không phân cực",
+        "có khối lượng nhỏ hơn",
+        "có vòng benzene"
+      ],
+      "answer": 0,
+      "explain": "Không có H gắn O.",
+      "wrong_explain": {
+        "1": "Có phân cực.",
+        "2": "Cùng M.",
+        "3": "Không có vòng."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phản ứng tráng bạc là của:",
+      "choices": [
+        "aldehyde",
+        "ketone",
+        "alcohol bậc II",
+        "ether"
+      ],
+      "answer": 0,
+      "explain": "Aldehyde bị oxi hoá.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khử aldehyde bằng NaBH₄ thu được:",
+      "choices": [
+        "alcohol bậc I",
+        "alcohol bậc II",
+        "carboxylic acid",
+        "ketone"
+      ],
+      "answer": 0,
+      "explain": "RCHO + 2[H] → RCH₂OH.",
+      "wrong_explain": {
+        "1": "Từ ketone.",
+        "2": "Oxi hoá mới ra.",
+        "3": "Không phải."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất cho kết tủa vàng với I₂/NaOH là:",
+      "choices": [
+        "CH₃COCH₃",
+        "CH₃CH₂CHO",
+        "HCHO",
+        "CH₃CH₂COCH₂CH₃"
+      ],
+      "answer": 0,
+      "explain": "Có nhóm CH₃CO–.",
+      "wrong_explain": {
+        "1": "Không có CH₃CO.",
+        "2": "Không có CH₃CO.",
+        "3": "Không có CH₃CO."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phản ứng với Cu(OH)₂/NaOH đun nóng của aldehyde tạo kết tủa:",
+      "choices": [
+        "Cu₂O đỏ gạch",
+        "CuO đen",
+        "Cu(OH)₂ xanh",
+        "CuSO₄"
+      ],
+      "answer": 0,
+      "explain": "Cu²⁺ bị khử thành Cu⁺.",
+      "wrong_explain": {
+        "1": "Không phải.",
+        "2": "Là chất ban đầu.",
+        "3": "Là chất ban đầu."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dung dịch formol dùng để:",
+      "choices": [
+        "bảo quản mẫu sinh vật",
+        "làm dung môi sơn",
+        "làm đồ uống",
+        "sản xuất xà phòng"
+      ],
+      "answer": 0,
+      "explain": "Là dung dịch HCHO.",
+      "wrong_explain": {
+        "1": "Là acetone.",
+        "2": "Độc.",
+        "3": "Không đúng."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phân biệt ethanal và propanone dùng:",
+      "choices": [
+        "thuốc thử Tollens",
+        "quỳ tím",
+        "NaOH",
+        "HCl"
+      ],
+      "answer": 0,
+      "explain": "Chỉ aldehyde tráng bạc.",
+      "wrong_explain": {
+        "1": "Cả hai không đổi.",
+        "2": "Không phản ứng.",
+        "3": "Không phản ứng."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Acetone điều chế công nghiệp từ:",
+      "choices": [
+        "cumene",
+        "methane",
+        "ethylene",
+        "glucose"
+      ],
+      "answer": 0,
+      "explain": "Cùng với phenol.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Cho acetaldehyde.",
+        "3": "Không."
+      },
+      "id": "q11"
+    }
+  ]
+}

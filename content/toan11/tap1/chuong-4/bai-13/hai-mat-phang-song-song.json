@@ -1,0 +1,329 @@
+{
+  "id": "bai-13",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 11, tập 1",
+  "chapter": "Chương IV. Quan hệ song song trong không gian",
+  "lesson": "Bài 13. Hai mặt phẳng song song",
+  "section": "",
+  "bookPage": 88,
+  "requirements": [
+    "Nhận biết hai mặt phẳng song song và các điều kiện song song.",
+    "Vận dụng định lí Thalès trong không gian và tính chất hình hộp, hình lăng trụ."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hai mặt phẳng (P), (Q) song song nếu chúng không có điểm chung, kí hiệu (P) ∥ (Q). Điều kiện: nếu (P) chứa hai đường thẳng cắt nhau a, b cùng song song với (Q) thì (P) ∥ (Q)."
+    },
+    {
+      "type": "text",
+      "content": "Qua một điểm nằm ngoài mặt phẳng (P) có duy nhất một mặt phẳng song song với (P). Nếu hai mặt phẳng song song bị mặt phẳng thứ ba cắt thì hai giao tuyến song song."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b13-thales-khong-gian.svg",
+      "caption": "Ba mặt phẳng song song (P), (Q), (R) chắn trên hai đường thẳng những đoạn thẳng tương ứng tỉ lệ"
+    },
+    {
+      "type": "formula",
+      "content": "Định lí Thalès trong không gian: ba mặt phẳng đôi một song song cắt hai đường thẳng d, d′ tại A, B, C và A′, B′, C′ thì AB/BC = A′B′/B′C′."
+    },
+    {
+      "type": "text",
+      "content": "Hình hộp ABCD.A′B′C′D′ có các mặt là hình bình hành; các mặt đối diện song song và bằng nhau; bốn đường chéo AC′, BD′, CA′, DB′ đồng quy tại trung điểm của mỗi đường. Hình lăng trụ có hai đáy nằm trên hai mặt phẳng song song."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b13-hinh-hop.svg",
+      "caption": "Hình hộp ABCD.A′B′C′D′ và mặt phẳng (ABC′D′) cắt hình hộp theo thiết diện hình bình hành"
+    },
+    {
+      "type": "method",
+      "title": "Chứng minh hai mặt phẳng song song",
+      "when": "Cần chứng minh (P) ∥ (Q) trong hình hộp, lăng trụ, hình chóp.",
+      "steps": [
+        "Chọn hai đường thẳng cắt nhau a, b nằm trong (P).",
+        "Chứng minh a ∥ (Q) và b ∥ (Q) (tìm đường trong (Q) song song với a, b).",
+        "Kết luận (P) ∥ (Q).",
+        "Nếu cần: dùng tính chất “hai mặt phẳng cùng song song mặt thứ ba thì song song”."
+      ],
+      "notes": [
+        "Hai đường phải cắt nhau, không được song song.",
+        "Trong hình hộp, hai mặt đối diện luôn song song."
+      ],
+      "sample": {
+        "problem": "Hình hộp ABCD.A′B′C′D′: chứng minh (ABB′A′) ∥ (CDD′C′).",
+        "steps": [
+          "AB ∥ CD ⊂ (CDD′C′), AA′ ∥ DD′ ⊂ (CDD′C′).",
+          "AB, AA′ cắt nhau trong (ABB′A′) nên (ABB′A′) ∥ (CDD′C′)."
+        ],
+        "answer": "(ABB′A′) ∥ (CDD′C′)"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tính độ dài bằng Thalès trong không gian",
+      "when": "Ba (hoặc nhiều) mặt phẳng song song cắt hai đường thẳng, biết độ dài một số đoạn.",
+      "steps": [
+        "Gọi các giao điểm trên hai đường thẳng: A, B, C và A′, B′, C′.",
+        "Viết AB/BC = A′B′/B′C′ (hoặc AB/AC = A′B′/A′C′).",
+        "Thay giá trị đã biết, giải phương trình bậc nhất.",
+        "Kiểm tra thứ tự các điểm cùng phía."
+      ],
+      "notes": [
+        "Chú ý đoạn nào là AB, đoạn nào là BC.",
+        "Cũng áp dụng khi hai đường thẳng chéo nhau."
+      ],
+      "sample": {
+        "problem": "AB = 4, BC = 6, A′B′ = x, B′C′ = 9. Tìm x.",
+        "steps": [
+          "4/6 = x/9.",
+          "x = 4·9/6 = 6."
+        ],
+        "answer": "6"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Xác định thiết diện của hình hộp, hình lăng trụ",
+      "when": "Mặt phẳng cắt hình hộp, hình lăng trụ; cần dựng và nhận dạng thiết diện.",
+      "steps": [
+        "Giao tuyến với mỗi cặp mặt đối diện song song nhau (nên kẻ song song).",
+        "Nối các giao tuyến thành đa giác.",
+        "Xác định hình dạng (hình bình hành, hình thang…).",
+        "Tính độ dài các cạnh hoặc chu vi nhờ Thalès."
+      ],
+      "notes": [
+        "Hai mặt song song bị cắt bởi mặt phẳng thứ ba cho hai giao tuyến song song.",
+        "Thiết diện của hình hộp có thể là tam giác đến lục giác."
+      ],
+      "sample": {
+        "problem": "Mặt phẳng (ABC′D′) cắt hình hộp. Thiết diện là hình gì?",
+        "steps": [
+          "AB ∥ D′C′ và AD′ ∥ BC′.",
+          "Thiết diện là hình bình hành ABC′D′."
+        ],
+        "answer": "Hình bình hành"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Ba mặt phẳng song song cắt hai đường thẳng, AB = 4, BC = 6, B′C′ = 9. Tính A′B′.",
+      "steps": [
+        "A′B′/B′C′ = AB/BC.",
+        "A′B′ = 9·4/6 = 6."
+      ],
+      "expr": "4*9/6",
+      "answer": "6"
+    },
+    {
+      "problem": "Hình hộp có bao nhiêu đường chéo?",
+      "steps": [
+        "Nối hai đỉnh đối xứng qua tâm: AC′, BD′, CA′, DB′.",
+        "4 đường chéo."
+      ],
+      "expr": "4",
+      "answer": "4"
+    },
+    {
+      "problem": "Hình lăng trụ tứ giác có bao nhiêu cạnh?",
+      "steps": [
+        "3n = 12.",
+        "12 cạnh."
+      ],
+      "expr": "3*4",
+      "answer": "12"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hình hộp có bao nhiêu mặt?",
+      "expr": "6",
+      "answer": "6",
+      "explain": "6 mặt hình bình hành.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hình hộp có bao nhiêu đỉnh?",
+      "expr": "8",
+      "answer": "8",
+      "explain": "8 đỉnh.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hình hộp có bao nhiêu đường chéo?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "AC′, BD′, CA′, DB′.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điều kiện đủ để (P) ∥ (Q) là:",
+      "choices": [
+        "(P) chứa hai đường thẳng cắt nhau cùng song song (Q)",
+        "(P) chứa một đường song song (Q)",
+        "(P) và (Q) cùng chứa một điểm",
+        "(P) cắt (Q)"
+      ],
+      "answer": 0,
+      "explain": "Hai đường cắt nhau trong (P) cùng song song với (Q) thì (P) ∥ (Q).",
+      "wrong_explain": {
+        "1": "Một đường là chưa đủ, có thể cắt nhau.",
+        "2": "Có điểm chung thì không song song.",
+        "3": "Cắt nhau thì không song song."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ba mặt phẳng song song, AB = 4, BC = 6, B′C′ = 9. Độ dài A′B′ là:",
+      "expr": "4*9/6",
+      "answer": "6",
+      "explain": "A′B′/B′C′ = AB/BC nên A′B′ = 6.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ba mặt phẳng song song, AB = 3, AC = 12, A′B′ = 5. Độ dài A′C′ là:",
+      "expr": "5*12/3",
+      "answer": "20",
+      "explain": "A′C′/A′B′ = AC/AB = 4 nên A′C′ = 20.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lăng trụ tứ giác có bao nhiêu cạnh?",
+      "expr": "3*4",
+      "answer": "12",
+      "explain": "3n = 12.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lăng trụ lục giác có bao nhiêu mặt?",
+      "expr": "6+2",
+      "answer": "8",
+      "explain": "n + 2 = 8.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lăng trụ tam giác có bao nhiêu đỉnh?",
+      "expr": "2*3",
+      "answer": "6",
+      "explain": "2n = 6.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong hình hộp ABCD.A′B′C′D′, mặt phẳng song song với (ABCD) là:",
+      "choices": [
+        "(A′B′C′D′)",
+        "(ABB′A′)",
+        "(BCC′B′)",
+        "(ACC′A′)"
+      ],
+      "answer": 0,
+      "explain": "Hai đáy của hình hộp song song.",
+      "wrong_explain": {
+        "1": "(ABB′A′) cắt (ABCD) theo AB.",
+        "2": "(BCC′B′) cắt (ABCD) theo BC.",
+        "3": "(ACC′A′) cắt (ABCD) theo AC."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai mặt phẳng song song chắn trên hai đường thẳng d, d′ các đoạn AB và A′B′ khi AB : A′B′ = 3 : 5. Nếu AB = 9 thì A′B′ bằng:",
+      "expr": "9*5/3",
+      "answer": "15",
+      "explain": "A′B′ = 9·5/3 = 15.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hình hộp ABCD.A′B′C′D′ có AB = 5, AD = 4. Chu vi hình bình hành ABCD là:",
+      "expr": "2*(5+4)",
+      "answer": "18",
+      "explain": "Chu vi = 18.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lăng trụ tam giác ABC.A′B′C′, AB = 6, BC = 8, CA = 10. Chu vi tam giác A′B′C′ là:",
+      "expr": "6+8+10",
+      "answer": "24",
+      "explain": "Hai đáy bằng nhau: 24.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai đáy của lăng trụ tam giác có diện tích mỗi đáy 12. Tổng diện tích hai đáy là:",
+      "expr": "12*2",
+      "answer": "24",
+      "explain": "Hai đáy bằng nhau: 24.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ba mặt phẳng song song cắt d tại A, B, C với AB = BC. Tỉ số A′B′/B′C′ (nhập a/b) là:",
+      "expr": "1/1",
+      "answer": "1",
+      "explain": "Thalès cho A′B′ = B′C′, tỉ số 1.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tổng số cạnh của hình lăng trụ có đáy là đa giác 10 cạnh là:",
+      "expr": "3*10",
+      "answer": "30",
+      "explain": "3n = 30.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai mặt phẳng song song bị mặt phẳng thứ ba cắt thì hai giao tuyến:",
+      "choices": [
+        "song song",
+        "cắt nhau",
+        "chéo nhau",
+        "trùng nhau"
+      ],
+      "answer": 0,
+      "explain": "Đó là tính chất giao tuyến với hai mặt song song.",
+      "wrong_explain": {
+        "1": "Hai giao tuyến cùng nằm trong mặt phẳng thứ ba, không có điểm chung.",
+        "2": "Chúng đồng phẳng nên không chéo nhau.",
+        "3": "Chúng ở hai mặt phẳng khác nhau nên không trùng."
+      },
+      "id": "q17"
+    }
+  ]
+}

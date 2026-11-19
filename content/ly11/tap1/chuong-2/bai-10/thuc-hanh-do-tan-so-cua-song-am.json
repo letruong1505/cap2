@@ -1,0 +1,335 @@
+{
+  "id": "bai-10",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 2. Sóng",
+  "lesson": "Bài 10. Thực hành: Đo tần số của sóng âm",
+  "section": "",
+  "bookPage": 41,
+  "requirements": [
+    "Biết cách bố trí thí nghiệm và sử dụng dao động kí để đo chu kì, tần số của sóng âm.",
+    "Xử lí số liệu: tính tần số, giá trị trung bình, sai số và so sánh với tần số ghi trên âm thoa."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dụng cụ: dao động kí điện tử và dây đo; micro; bộ khuếch đại tín hiệu; âm thoa và búa cao su; giá đỡ và kẹp giữ âm thoa. Nguyên tắc: sóng âm do âm thoa phát ra làm màng micro dao động, micro biến dao động đó thành tín hiệu điện cùng tần số; dao động kí hiển thị đồ thị điện áp theo thời gian, từ đó đo chu kì T rồi tính f = 1/T."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b10-bo-tri-thi-nghiem.svg",
+      "caption": "Bố trí thí nghiệm đo tần số sóng âm: âm thoa – micro (cách 20 cm) – dao động kí"
+    },
+    {
+      "type": "text",
+      "content": "Tiến hành: (1) Bố trí thí nghiệm, đặt micro cách âm thoa khoảng 20 cm, nối micro và bộ khuếch đại vào dao động kí. (2) Dùng búa cao su gõ nhẹ vào âm thoa. (3) Điều chỉnh VOLTS/DIV và TIME/DIV để thấy rõ đồ thị sóng, xác định chu kì T = (số ô theo phương ngang) × (thời gian mỗi ô). (4) Ghi vào Bảng 10.1 và lặp lại ba lần."
+    },
+    {
+      "type": "formula",
+      "content": "f = 1/T;   T̄ = (T₁ + T₂ + T₃)/3;   ΔT = (|T₁ − T̄| + |T₂ − T̄| + |T₃ − T̄|)/3;   f̄ = 1/T̄;   Δf/f̄ = ΔT/T̄."
+    },
+    {
+      "type": "text",
+      "content": "Giảm ảnh hưởng của tiếng ồn bên ngoài: làm thí nghiệm ở nơi yên tĩnh, để micro gần âm thoa, hiệu chỉnh độ khuếch đại. Tần số các nốt nhạc cơ bản (Hz): Đô 262, Rê 294, Mi 330, Fa 349, Sol 392, La 440, Si 494 (nốt La chuẩn 440 Hz). Ứng dụng: dùng phần mềm trên điện thoại để chỉnh dây đàn ghita."
+    },
+    {
+      "type": "method",
+      "title": "Đọc chu kì và tính tần số từ màn hình dao động kí",
+      "when": "Cho số ô ứng với một chu kì và thang thời gian TIME/DIV.",
+      "steps": [
+        "Đếm số ô n theo phương ngang ứng với một chu kì (hai đỉnh liên tiếp).",
+        "T = n × (thời gian mỗi ô).",
+        "f = 1/T.",
+        "Kiểm tra bằng cách đo nhiều chu kì rồi chia N để giảm sai số."
+      ],
+      "notes": [
+        "Đo N chu kì rồi lấy T = (tổng)/N chính xác hơn đo một chu kì.",
+        "Đổi ms → s trước khi lấy nghịch đảo."
+      ],
+      "sample": {
+        "problem": "Một chu kì chiếm 4 ô, mỗi ô 1 ms. Tính f.",
+        "steps": [
+          "T = 4 ms = 0,004 s.",
+          "f = 1/0,004 = 250 Hz."
+        ],
+        "answer": "250 Hz"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Xử lí số liệu: giá trị trung bình và sai số",
+      "when": "Cho ba lần đo chu kì T₁, T₂, T₃ cần tính f trung bình và sai số.",
+      "steps": [
+        "Tính T̄ = (T₁ + T₂ + T₃)/3.",
+        "Tính sai số tuyệt đối từng lần |Tᵢ − T̄| rồi lấy trung bình được ΔT.",
+        "f̄ = 1/T̄, sai số tương đối δ = ΔT/T̄ = Δf/f̄.",
+        "Viết kết quả f = f̄ ± Δf."
+      ],
+      "notes": [
+        "Sai số dụng cụ cộng thêm nửa độ chia nhỏ nhất nếu đề yêu cầu.",
+        "So sánh f̄ với tần số ghi trên âm thoa để nhận xét."
+      ],
+      "sample": {
+        "problem": "Ba lần đo T = 2,26; 2,28; 2,24 ms. Tính T̄ và ΔT.",
+        "steps": [
+          "T̄ = (2,26 + 2,28 + 2,24)/3 = 2,26 ms.",
+          "ΔT = (0 + 0,02 + 0,02)/3 ≈ 0,013 ms."
+        ],
+        "answer": "T̄ = 2,26 ms; ΔT ≈ 0,013 ms"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Giải thích thí nghiệm và nhận xét kết quả",
+      "when": "Đề hỏi tại sao tần số tín hiệu trên dao động kí bằng tần số âm thoa, vì sao phải đo nhiều lần, cách giảm nhiễu.",
+      "steps": [
+        "Sóng âm làm màng micro dao động cưỡng bức với tần số bằng tần số âm thoa.",
+        "Micro biến dao động cơ thành dòng điện cùng tần số → dao động kí hiển thị.",
+        "Lặp lại nhiều lần để giảm sai số ngẫu nhiên, lấy trung bình.",
+        "Giảm tiếng ồn: làm nơi yên tĩnh, micro gần nguồn, chỉnh độ khuếch đại."
+      ],
+      "notes": [
+        "Tần số đo được gần với tần số ghi trên âm thoa là phép đo tốt.",
+        "Âm thoa phát âm đơn sắc nên đồ thị gần hình sin."
+      ],
+      "sample": {
+        "problem": "Vì sao đồ thị trên dao động kí có dạng hình sin?",
+        "steps": [
+          "Âm thoa phát âm thuần (một tần số).",
+          "Dao động của màng micro hình sin nên tín hiệu điện hình sin."
+        ],
+        "answer": "Vì âm thoa phát âm đơn sắc"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một chu kì chiếm 4 ô, mỗi ô 1 ms. Tần số f (Hz)?",
+      "steps": [
+        "T = 4 ms = 0,004 s.",
+        "f = 1/0,004 = 250 Hz."
+      ],
+      "expr": "(1)/(0.004)",
+      "answer": "250"
+    },
+    {
+      "problem": "Ba lần đo T = 2,26; 2,28; 2,24 ms. T̄ (ms)?",
+      "steps": [
+        "T̄ = (2,26 + 2,28 + 2,24)/3.",
+        "= 2,26 ms."
+      ],
+      "expr": "(2.26+2.28+2.24)/3",
+      "answer": "113/50"
+    },
+    {
+      "problem": "Âm thoa 440 Hz đo được 436 Hz. Sai lệch tương đối (%) là (440−436)/440·100, nhập (4*100)/(440) làm tròn gần đúng:",
+      "steps": [
+        "Độ lệch 4 Hz.",
+        "≈ 0,91%."
+      ],
+      "expr": "(4*100)/(440)",
+      "answer": "10/11"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Một chu kì chiếm 4 ô, mỗi ô 1 ms. Chu kì T (ms) là:",
+      "expr": "4*1",
+      "answer": "4",
+      "explain": "T = 4 ms.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Chu kì T = 0,004 s. Tần số f (Hz) là:",
+      "expr": "(1)/(0.004)",
+      "answer": "250",
+      "explain": "f = 250 Hz.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Nốt La chuẩn có tần số (Hz):",
+      "expr": "440",
+      "answer": "440",
+      "explain": "Theo bảng tần số các nốt nhạc.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thiết bị biến sóng âm thành tín hiệu điện trong thí nghiệm là:",
+      "choices": [
+        "micro",
+        "âm thoa",
+        "búa cao su",
+        "giá đỡ"
+      ],
+      "answer": 0,
+      "explain": "Micro chuyển dao động âm thành tín hiệu điện.",
+      "wrong_explain": {
+        "1": "Âm thoa là nguồn âm.",
+        "2": "Búa dùng để gõ âm thoa.",
+        "3": "Giá chỉ để giữ."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dụng cụ dùng để hiển thị đồ thị âm theo thời gian là:",
+      "choices": [
+        "dao động kí điện tử",
+        "micro",
+        "âm thoa",
+        "loa"
+      ],
+      "answer": 0,
+      "explain": "Dao động kí hiển thị u – t.",
+      "wrong_explain": {
+        "1": "Micro chỉ thu âm.",
+        "2": "Âm thoa phát âm.",
+        "3": "Loa phát âm."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ba lần đo T = 2,26; 2,28; 2,24 ms. T̄ (ms) là:",
+      "expr": "(2.26+2.28+2.24)/3",
+      "answer": "113/50",
+      "explain": "T̄ = 2,26 ms.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ba lần đo T = 2,0; 2,2; 1,8 ms. Sai số tuyệt đối trung bình ΔT (ms) = (0 + 0,2 + 0,2)/3 làm tròn: nhập 0.4/3:",
+      "expr": "0.4/3",
+      "answer": "2/15",
+      "explain": "ΔT ≈ 0,133 ms.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đo 5 chu kì được 10 ms. Chu kì T (ms) là:",
+      "expr": "10/5",
+      "answer": "2",
+      "explain": "T = 2 ms.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Đo 10 chu kì được 25 ms. Chu kì T (ms) là:",
+      "expr": "25/10",
+      "answer": "5/2",
+      "explain": "T = 2,5 ms.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "T̄ = 2,5 ms. Tần số f̄ (Hz) là:",
+      "expr": "(1)/(0.0025)",
+      "answer": "400",
+      "explain": "f̄ = 400 Hz.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Để giảm sai số ngẫu nhiên khi đo chu kì, ta nên:",
+      "choices": [
+        "đo nhiều lần rồi lấy trung bình",
+        "chỉ đo một lần",
+        "tăng độ to của âm",
+        "giảm khoảng cách bằng 0"
+      ],
+      "answer": 0,
+      "explain": "Lấy trung bình nhiều lần.",
+      "wrong_explain": {
+        "1": "Một lần dễ sai số.",
+        "2": "Độ to không giảm sai số ngẫu nhiên.",
+        "3": "Không liên quan."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "f đo được 436 Hz, âm thoa ghi 440 Hz. Độ lệch |Δf| (Hz) là:",
+      "expr": "440-436",
+      "answer": "4",
+      "explain": "4 Hz.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Độ lệch 4 Hz so với 440 Hz. Sai số tương đối (%) ≈ 4·100/440 (nhập 4*100/440 dạng (4*100)/(440)):",
+      "expr": "(4*100)/(440)",
+      "answer": "10/11",
+      "explain": "≈ 0,91%.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dao động kí: TIME/DIV = 0,5 ms, một chu kì 8 ô. Tần số f (Hz):",
+      "expr": "(1)/(8*0.0005)",
+      "answer": "250",
+      "explain": "T = 4 ms; f = 250 Hz.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "f = 262 Hz (Đô). Chu kì T (s) làm tròn: 1/262 nhập (1)/(262):",
+      "expr": "(1)/(262)",
+      "answer": "1/262",
+      "explain": "T ≈ 3,82 ms.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Nốt La (440 Hz) và Mi (330 Hz). Tỉ số tần số La/Mi (nhập 440/330):",
+      "expr": "440/330",
+      "answer": "4/3",
+      "explain": "= 4/3.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao đặt micro quá xa âm thoa là không tốt?",
+      "choices": [
+        "tín hiệu yếu, dễ bị nhiễu",
+        "âm thoa không phát âm",
+        "tần số thay đổi",
+        "micro hỏng"
+      ],
+      "answer": 0,
+      "explain": "Biên độ tín hiệu giảm, nhiễu ồn lớn hơn.",
+      "wrong_explain": {
+        "1": "Âm thoa vẫn phát âm.",
+        "2": "Tần số không đổi theo khoảng cách.",
+        "3": "Không liên quan."
+      },
+      "id": "q17"
+    }
+  ]
+}

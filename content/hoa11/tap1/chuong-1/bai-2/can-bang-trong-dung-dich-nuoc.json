@@ -1,0 +1,352 @@
+{
+  "id": "bai-2",
+  "grade": 11,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 11",
+  "chapter": "Chương 1. Cân bằng hoá học",
+  "lesson": "Bài 2. Cân bằng trong dung dịch nước",
+  "section": "",
+  "bookPage": 16,
+  "requirements": [
+    "Nêu được khái niệm sự điện li, chất điện li, chất không điện li; phân biệt điện li mạnh, yếu.",
+    "Trình bày được thuyết acid – base của Brønsted – Lowry.",
+    "Tính được pH của dung dịch, nêu ý nghĩa pH và cách xác định pH.",
+    "Giải thích sự thuỷ phân của các ion và nguyên tắc chuẩn độ acid – base."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Sự điện li là quá trình phân li các chất trong nước thành ion. Chất tan trong nước phân li ra ion gọi là chất điện li (dung dịch dẫn điện); chất tan không phân li ra ion gọi là chất không điện li (saccharose, ethanol...). Nước là dung môi phân cực: các phân tử nước hút và tách các ion ra khỏi mạng tinh thể (ví dụ NaCl → Na⁺ + Cl⁻)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b2-dien-li.svg",
+      "caption": "Sự điện li của NaCl trong nước"
+    },
+    {
+      "type": "text",
+      "content": "Chất điện li mạnh phân li gần như hoàn toàn, biểu diễn bằng mũi tên một chiều (acid mạnh HCl, HNO₃, H₂SO₄; base mạnh NaOH, KOH, Ca(OH)₂, Ba(OH)₂; hầu hết muối). Chất điện li yếu chỉ phân li một phần, là phản ứng thuận nghịch (acid yếu CH₃COOH, HClO, HF, H₂CO₃; base yếu Cu(OH)₂, Fe(OH)₃...)."
+    },
+    {
+      "type": "formula",
+      "content": "HNO₃ → H⁺ + NO₃⁻        CH₃COOH ⇌ H⁺ + CH₃COO⁻"
+    },
+    {
+      "type": "text",
+      "content": "Thuyết Brønsted – Lowry: acid là chất cho proton (H⁺), base là chất nhận proton. Ví dụ HCl + H₂O → H₃O⁺ + Cl⁻ (HCl là acid, H₂O là base); NH₃ + H₂O ⇌ NH₄⁺ + OH⁻ (NH₃ là base). Chất vừa cho vừa nhận H⁺ gọi là lưỡng tính (H₂O, HCO₃⁻). Thuyết này tổng quát hơn thuyết Arrhenius: NH₃ không có nhóm OH và CO₃²⁻ cũng là base."
+    },
+    {
+      "type": "text",
+      "content": "Khái niệm pH: pH = −lg[H⁺], hay [H⁺] = 10⁻ᵖᴴ. Ở 25 °C tích số ion của nước K_w = [H⁺]·[OH⁻] = 10⁻¹⁴. Môi trường acid: pH < 7; trung tính: pH = 7; base: pH > 7. Thang pH thường dùng từ 1 đến 14."
+    },
+    {
+      "type": "formula",
+      "content": "pH = −lg[H⁺]        [H⁺][OH⁻] = 10⁻¹⁴        pH + pOH = 14"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b2-thang-ph.svg",
+      "caption": "Thang pH"
+    },
+    {
+      "type": "text",
+      "content": "Ý nghĩa của pH: pH máu 7,3 – 7,4; dạ dày 1,5 – 3,5; nước bọt 6,0 – 7,4; nước tiểu 4,8 – 7,0. Cá ưa môi trường nước pH khoảng 7,5 – 8,5; mỗi loại cây trồng cần pH đất thích hợp (đất chua pH thấp được khử chua bằng vôi). Xác định pH gần đúng bằng chất chỉ thị (giấy pH, quỳ tím, phenolphthalein, dịch hoa đậu biếc, bắp cải tím) hoặc chính xác bằng máy đo pH."
+    },
+    {
+      "type": "text",
+      "content": "Sự thuỷ phân của ion: phản ứng giữa ion với nước. Dung dịch Na₂CO₃ có môi trường base vì CO₃²⁻ + H₂O ⇌ HCO₃⁻ + OH⁻. Dung dịch AlCl₃, FeCl₃ có môi trường acid vì Al³⁺ + H₂O ⇌ Al(OH)²⁺ + H⁺; Fe³⁺ + H₂O ⇌ Fe(OH)²⁺ + H⁺. Muối của acid mạnh và base mạnh (NaCl) không thuỷ phân, môi trường trung tính."
+    },
+    {
+      "type": "text",
+      "content": "Chuẩn độ acid – base: xác định nồng độ một chất bằng dung dịch chuẩn đã biết nồng độ. Với NaOH + HCl → NaCl + H₂O, khi vừa đủ: V_HCl·C_HCl = V_NaOH·C_NaOH. Kết thúc chuẩn độ khi chỉ thị phenolphthalein chuyển từ không màu sang hồng nhạt bền khoảng 10 giây. Dụng cụ: burette, pipette, bình tam giác; cần chuẩn độ ít nhất ba lần lấy kết quả trung bình."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b2-chuan-do.svg",
+      "caption": "Dụng cụ chuẩn độ"
+    },
+    {
+      "type": "method",
+      "title": "Tính pH của dung dịch acid, base mạnh",
+      "when": "Cho nồng độ acid mạnh hoặc base mạnh, yêu cầu tính [H⁺], pH hoặc ngược lại.",
+      "steps": [
+        "Viết phương trình điện li hoàn toàn, tìm nồng độ ion.",
+        "Với acid: [H⁺] = n·C_acid; với base: [OH⁻] = n·C_base rồi [H⁺] = 10⁻¹⁴/[OH⁻].",
+        "Tính pH = −lg[H⁺].",
+        "So sánh với 7 để kết luận môi trường."
+      ],
+      "notes": [
+        "Acid yếu chỉ phân li một phần nên không dùng [H⁺] = C.",
+        "Nhớ hệ số: H₂SO₄ cho 2 H⁺, Ba(OH)₂ cho 2 OH⁻."
+      ],
+      "sample": {
+        "problem": "Dung dịch HCl 0,001 M có pH bao nhiêu?",
+        "steps": [
+          "HCl → H⁺ + Cl⁻ nên [H⁺] = 0,001 = 10⁻³ M.",
+          "pH = −lg 10⁻³ = 3."
+        ],
+        "answer": "pH = 3"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dung dịch HCl 0,01 M. Tính [H⁺] (M) và pH. ",
+      "steps": [
+        "HCl là acid mạnh, phân li hoàn toàn: [H⁺] = 0,01 = 10⁻² M.",
+        "pH = −lg 10⁻² = 2."
+      ],
+      "expr": "0.01",
+      "answer": "0.01"
+    },
+    {
+      "problem": "Dung dịch NaOH 0,1 M. Tính [H⁺] (M) và pH.",
+      "steps": [
+        "[OH⁻] = 0,1 = 10⁻¹ M.",
+        "[H⁺] = 10⁻¹⁴ / 10⁻¹ = 10⁻¹³ M, nên pH = 13."
+      ],
+      "expr": "0.0000000000001",
+      "answer": "0.0000000000001"
+    },
+    {
+      "problem": "Chuẩn độ 10 mL HCl 0,1 M cần 9,8 mL NaOH. Tính nồng độ NaOH (M, làm tròn).",
+      "steps": [
+        "V_NaOH·C_NaOH = V_HCl·C_HCl.",
+        "C_NaOH = 10·0,1/9,8 ≈ 0,102 M."
+      ],
+      "expr": "(10*0.1)/(9.8)",
+      "answer": "5/49"
+    },
+    {
+      "problem": "Xác định chất acid, base trong phản ứng CH₃COOH + H₂O ⇌ CH₃COO⁻ + H₃O⁺.",
+      "steps": [
+        "CH₃COOH cho H⁺ nên là acid; H₂O nhận H⁺ nên là base.",
+        "Chiều nghịch: H₃O⁺ là acid, CH₃COO⁻ là base."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất điện li mạnh là chất:",
+      "choices": [
+        "khi tan trong nước phân li gần như hoàn toàn thành ion",
+        "chỉ phân li một phần",
+        "không tan trong nước",
+        "không phân li"
+      ],
+      "answer": 0,
+      "explain": "Điện li mạnh phân li hầu như hoàn toàn.",
+      "wrong_explain": {
+        "1": "Đó là điện li yếu.",
+        "2": "Không liên quan độ tan.",
+        "3": "Đó là không điện li."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất nào sau đây là chất điện li yếu?",
+      "choices": [
+        "CH₃COOH",
+        "HCl",
+        "NaOH",
+        "NaCl"
+      ],
+      "answer": 0,
+      "explain": "CH₃COOH là acid yếu.",
+      "wrong_explain": {
+        "1": "HCl điện li mạnh.",
+        "2": "NaOH điện li mạnh.",
+        "3": "NaCl điện li mạnh."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất nào sau đây là chất không điện li?",
+      "choices": [
+        "C₂H₅OH (ethanol)",
+        "KOH",
+        "H₂SO₄",
+        "NaCl"
+      ],
+      "answer": 0,
+      "explain": "Ethanol không phân li thành ion.",
+      "wrong_explain": {
+        "1": "KOH điện li.",
+        "2": "H₂SO₄ điện li.",
+        "3": "NaCl điện li."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Theo Brønsted – Lowry, acid là chất:",
+      "choices": [
+        "cho proton (H⁺)",
+        "nhận proton",
+        "cho electron",
+        "nhận electron"
+      ],
+      "answer": 0,
+      "explain": "Acid cho H⁺, base nhận H⁺.",
+      "wrong_explain": {
+        "1": "Đó là base.",
+        "2": "Không phải electron.",
+        "3": "Không phải electron."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Môi trường của dung dịch có pH = 5 là:",
+      "choices": [
+        "acid",
+        "base",
+        "trung tính",
+        "không xác định"
+      ],
+      "answer": 0,
+      "explain": "pH < 7 là môi trường acid.",
+      "wrong_explain": {
+        "1": "pH > 7 mới là base.",
+        "2": "pH = 7 mới trung tính.",
+        "3": "Xác định được."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dung dịch Na₂CO₃ có môi trường base vì:",
+      "choices": [
+        "CO₃²⁻ thuỷ phân tạo OH⁻",
+        "Na⁺ thuỷ phân tạo OH⁻",
+        "Na₂CO₃ là base mạnh",
+        "CO₃²⁻ cho H⁺ vào nước"
+      ],
+      "answer": 0,
+      "explain": "CO₃²⁻ + H₂O ⇌ HCO₃⁻ + OH⁻.",
+      "wrong_explain": {
+        "1": "Na⁺ không thuỷ phân.",
+        "2": "Na₂CO₃ là muối.",
+        "3": "CO₃²⁻ nhận H⁺."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dung dịch AlCl₃ có môi trường:",
+      "choices": [
+        "acid",
+        "base",
+        "trung tính",
+        "lưỡng tính"
+      ],
+      "answer": 0,
+      "explain": "Al³⁺ thuỷ phân tạo H⁺.",
+      "wrong_explain": {
+        "1": "Không tạo OH⁻.",
+        "2": "Cl⁻ không thuỷ phân nhưng Al³⁺ thuỷ phân.",
+        "3": "Không dùng khái niệm đó ở đây."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ion HCO₃⁻ có tính lưỡng tính vì:",
+      "choices": [
+        "vừa có thể cho vừa có thể nhận H⁺",
+        "chỉ cho H⁺",
+        "chỉ nhận H⁺",
+        "không tham gia phản ứng"
+      ],
+      "answer": 0,
+      "explain": "HCO₃⁻ cho H⁺ thành CO₃²⁻ và nhận H⁺ thành H₂CO₃.",
+      "wrong_explain": {
+        "1": "Còn nhận được.",
+        "2": "Còn cho được.",
+        "3": "Có tham gia phản ứng."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất chỉ thị phenolphthalein trong môi trường base có màu:",
+      "choices": [
+        "hồng",
+        "không màu",
+        "xanh",
+        "đỏ"
+      ],
+      "answer": 0,
+      "explain": "Phenolphthalein hồng khi pH > 8,3.",
+      "wrong_explain": {
+        "1": "Không màu ở acid.",
+        "2": "Không phải xanh.",
+        "3": "Quỳ tím đỏ ở acid."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đất chua (pH thấp) có thể cải tạo bằng cách bón:",
+      "choices": [
+        "vôi",
+        "acid sulfuric",
+        "phèn nhôm",
+        "muối ăn"
+      ],
+      "answer": 0,
+      "explain": "Vôi trung hoà acid, tăng pH.",
+      "wrong_explain": {
+        "1": "Làm đất chua hơn.",
+        "2": "Phèn nhôm tạo H⁺.",
+        "3": "Muối ăn không đổi pH."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi chuẩn độ NaOH bằng HCl với phenolphthalein, điểm kết thúc là lúc:",
+      "choices": [
+        "dung dịch xuất hiện màu hồng nhạt bền khoảng 10 giây",
+        "dung dịch mất màu hồng",
+        "dung dịch chuyển đỏ đậm",
+        "xuất hiện kết tủa"
+      ],
+      "answer": 0,
+      "explain": "Dấu hiệu dừng chuẩn độ theo sách.",
+      "wrong_explain": {
+        "1": "Không đúng.",
+        "2": "Đỏ đậm là dư NaOH.",
+        "3": "Không có kết tủa."
+      },
+      "id": "q11"
+    }
+  ]
+}

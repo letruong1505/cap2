@@ -1,0 +1,215 @@
+{
+  "id": "bai-4",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 1",
+  "chapter": "Chương II. Phương trình và bất phương trình bậc nhất một ẩn",
+  "lesson": "Bài 4. Phương trình quy về phương trình bậc nhất một ẩn",
+  "section": "",
+  "bookPage": 26,
+  "requirements": [
+    "Giải phương trình tích dạng (ax + b)(cx + d) = 0; giải phương trình chứa ẩn ở mẫu quy về bậc nhất."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Phương trình tích (ax + b)(cx + d) = 0 tương đương ax + b = 0 hoặc cx + d = 0. Ta giải hai phương trình rồi lấy tất cả các nghiệm."
+    },
+    {
+      "type": "text",
+      "content": "Phương trình chứa ẩn ở mẫu: (1) tìm điều kiện xác định (mọi mẫu khác 0); (2) quy đồng mẫu rồi khử mẫu; (3) giải phương trình nhận được; (4) đối chiếu điều kiện để kết luận."
+    },
+    {
+      "type": "method",
+      "title": "Giải phương trình tích và phương trình chứa ẩn ở mẫu",
+      "when": "Đề cho phương trình dạng (ax + b)(cx + d) = 0 hoặc phương trình có ẩn x ở mẫu.",
+      "steps": [
+        "Phương trình tích: đưa về dạng A(x)·B(x) = 0 (chuyển vế, phân tích thành nhân tử).",
+        "Phương trình tích: giải A(x) = 0 và B(x) = 0, mọi nghiệm đều là nghiệm.",
+        "Phương trình chứa ẩn ở mẫu: tìm điều kiện xác định (mẫu khác 0), quy đồng, khử mẫu rồi giải phương trình nhận được.",
+        "Đối chiếu từng nghiệm với điều kiện xác định, loại nghiệm làm mẫu bằng 0, kết luận."
+      ],
+      "notes": [
+        "Không chia hai vế cho biểu thức chứa x vì sẽ mất nghiệm.",
+        "Luôn đối chiếu nghiệm với điều kiện xác định sau khi khử mẫu.",
+        "Khử mẫu chỉ được khi nhân hai vế với biểu thức khác 0 (đã có điều kiện).",
+        "Phương trình tích có thể có nhiều nghiệm; liệt kê đầy đủ."
+      ],
+      "sample": {
+        "problem": "Giải phương trình (x − 2)(2x + 6) = 0.",
+        "steps": [
+          "x − 2 = 0 ⇒ x = 2.",
+          "2x + 6 = 0 ⇒ x = −3.",
+          "Phương trình có hai nghiệm x = 2 và x = −3."
+        ],
+        "answer": "x = 2 hoặc x = −3"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Giải (x − 3)(2x + 8) = 0. Tính tổng các nghiệm.",
+      "steps": [
+        "x − 3 = 0 ⇒ x = 3; 2x + 8 = 0 ⇒ x = −4.",
+        "Tổng: 3 + (−4) = −1."
+      ],
+      "expr": "3-4",
+      "answer": "-1"
+    },
+    {
+      "problem": "Dạng chứa ẩn ở mẫu: 2/(x − 1) = 1/(x + 2). Tìm x.",
+      "steps": [
+        "ĐKXĐ: x ≠ 1, x ≠ −2. Khử mẫu: 2(x + 2) = x − 1.",
+        "x = −5 (thoả mãn)."
+      ],
+      "expr": "-5",
+      "answer": "-5"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phương trình (x + 2)(x − 5) = 0 có tập nghiệm:",
+      "choices": [
+        "{−2; 5}",
+        "{2; −5}",
+        "{−2}",
+        "{5}"
+      ],
+      "answer": 0,
+      "explain": "Mỗi thừa số bằng 0.",
+      "wrong_explain": {
+        "1": "Sai dấu.",
+        "2": "Thiếu nghiệm 5.",
+        "3": "Thiếu nghiệm −2."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Điều kiện xác định của phương trình 3/(x − 4) = 1 là:",
+      "choices": [
+        "x ≠ −4",
+        "x ≠ 0",
+        "x > 4",
+        "x ≠ 4"
+      ],
+      "answer": 3,
+      "explain": "Mẫu khác 0.",
+      "wrong_explain": {
+        "0": "Mẫu x − 4 = 0 khi x = 4.",
+        "1": "Không.",
+        "2": "Chỉ cần khác 4."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải (2x − 6)(x + 1) = 0. Nghiệm lớn nhất là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "x = 3 hoặc x = −1."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải x(x − 7) = 0. Tổng các nghiệm là:",
+      "expr": "7",
+      "answer": "7",
+      "explain": "x = 0 hoặc x = 7."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải x² − 9 = 0 bằng cách đưa về phương trình tích. Nghiệm dương là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "(x − 3)(x + 3) = 0."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải 3/(x + 1) = 1. Tìm x.",
+      "expr": "2",
+      "answer": "2",
+      "explain": "x + 1 = 3, x = 2."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải (x + 3)/(x − 2) = 2. Tìm x.",
+      "expr": "7",
+      "answer": "7",
+      "explain": "x + 3 = 2x − 4, x = 7."
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải (x − 2)(2x + 6) = 0. Nghiệm lớn hơn là?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "x − 2 = 0 ⇒ x = 2; 2x + 6 = 0 ⇒ x = −3. Nghiệm lớn hơn là 2.",
+      "dang": "Giải phương trình tích và phương trình chứa ẩn ở mẫu",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giải x² − 5x = 0. Tổng các nghiệm là?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "x(x − 5) = 0 ⇒ x = 0 hoặc x = 5. Tổng bằng 5.",
+      "dang": "Giải phương trình tích và phương trình chứa ẩn ở mẫu",
+      "id": "q11"
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giải x² − 5x = 0. Nghiệm khác 0 là:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "x(x − 5) = 0."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giải (3x − 1)(x + 4) = 0. Tích các nghiệm là:",
+      "expr": "1/3*(-4)",
+      "answer": "-4/3",
+      "explain": "x = 1/3, x = −4; tích −4/3."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giải 1/(x − 1) = 2/(x + 1) (x ≠ ±1). Nghiệm là x = ?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Quy đồng: x + 1 = 2(x − 1) ⇒ x + 1 = 2x − 2 ⇒ x = 3 (thỏa điều kiện).",
+      "dang": "Giải phương trình tích và phương trình chứa ẩn ở mẫu",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giải (x² − 4)/(x − 2) = 0. Nghiệm của phương trình là x = ?",
+      "expr": "-2",
+      "answer": "-2",
+      "explain": "Điều kiện x ≠ 2. Tử bằng 0: x² − 4 = 0 ⇒ x = 2 hoặc x = −2. Loại x = 2 (làm mẫu bằng 0), nhận x = −2.",
+      "dang": "Giải phương trình tích và phương trình chứa ẩn ở mẫu",
+      "id": "q13"
+    }
+  ]
+}

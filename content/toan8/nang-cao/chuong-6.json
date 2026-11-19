@@ -1,0 +1,91 @@
+{
+  "id": "toan8-nang-cao-6",
+  "grade": 8,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Bài tập nâng cao",
+  "chapter": "Chương VI. Phân thức đại số",
+  "lesson": "Bài tập nâng cao · Chương VI. Phân thức đại số",
+  "section": "Bài tập nâng cao",
+  "theory": [
+    {
+      "type": "text",
+      "content": "Các câu nâng cao của chương, gộp từ các bài đã học. Tên bài hiển thị trong ngoặc ở đầu mỗi câu. Hãy ôn lại lý thuyết và ví dụ của bài đó trước khi làm."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "id": "b21-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 21] Tìm x để phân thức (x + 1)/(x − 3) bằng 2.",
+      "expr": "1+6",
+      "answer": "7",
+      "explain": "(x + 1)/(x − 3) = 2 (x ≠ 3) ⇒ x + 1 = 2x − 6 ⇒ x = 7. Kiểm tra: 8/4 = 2."
+    },
+    {
+      "id": "b21-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 21] Có bao nhiêu giá trị nguyên của x để phân thức 6/(x − 1) có giá trị nguyên?",
+      "expr": "2*4",
+      "answer": "8",
+      "explain": "x − 1 phải là ước nguyên của 6: ±1, ±2, ±3, ±6, tức 8 giá trị nguyên của x − 1, nên có 8 giá trị của x."
+    },
+    {
+      "id": "b22-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 22] Rút gọn (x² − 4x + 4)/(x² − 4) rồi tính giá trị tại x = 6.",
+      "expr": "4/8",
+      "answer": "0.5",
+      "explain": "Tử = (x − 2)², mẫu = (x − 2)(x + 2). Rút gọn: (x − 2)/(x + 2). Với x = 6: 4/8 = 0,5."
+    },
+    {
+      "id": "b22-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 22] Quy đồng mẫu thức hai phân thức 1/(x² − 1) và 1/(x + 1) với mẫu chung x² − 1. Tử thức của phân thức thứ hai sau khi quy đồng là x − 1; tính giá trị của nó tại x = 5.",
+      "expr": "5-1",
+      "answer": "4",
+      "explain": "x² − 1 = (x − 1)(x + 1) nên phải nhân cả tử và mẫu của 1/(x + 1) với x − 1. Tử mới là x − 1 = 4 khi x = 5."
+    },
+    {
+      "id": "b23-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 23] Tính giá trị của 1/x − 1/(x + 1) tại x = 4.",
+      "expr": "1/20",
+      "answer": "0.05",
+      "explain": "1/x − 1/(x + 1) = ((x + 1) − x)/(x(x + 1)) = 1/(x(x + 1)). Với x = 4: 1/20 = 0,05."
+    },
+    {
+      "id": "b23-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 23] Tính tổng 1/(1·2) + 1/(2·3) + 1/(3·4) + 1/(4·5).",
+      "expr": "1-1/5",
+      "answer": "0.8",
+      "explain": "Mỗi số hạng 1/(n(n+1)) = 1/n − 1/(n + 1). Tổng thu gọn còn 1 − 1/5 = 4/5 = 0,8."
+    },
+    {
+      "id": "b24-n01",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 24] Tính giá trị của (x² − 4)/(x + 1) · (x + 1)/(x − 2) tại x = 5.",
+      "expr": "5+2",
+      "answer": "7",
+      "explain": "x² − 4 = (x − 2)(x + 2); rút gọn các nhân tử x + 1 và x − 2 còn x + 2. Với x = 5: 7."
+    },
+    {
+      "id": "b24-n02",
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "[Bài 24] Tính giá trị của x/(x + 1) : (x + 1)/x tại x = 3.",
+      "expr": "9/16",
+      "answer": "0.5625",
+      "explain": "Chia = nhân với nghịch đảo: (x/(x + 1))·(x/(x + 1)) = x²/(x + 1)². Với x = 3: 9/16 = 0,5625."
+    }
+  ]
+}

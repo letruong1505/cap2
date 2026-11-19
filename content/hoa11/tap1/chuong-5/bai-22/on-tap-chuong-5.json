@@ -1,0 +1,162 @@
+{
+  "id": "bai-22",
+  "grade": 11,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 11",
+  "chapter": "Chương 5. Dẫn xuất halogen – Alcohol – Phenol",
+  "lesson": "Bài 22. Ôn tập chương 5",
+  "section": "",
+  "bookPage": 134,
+  "requirements": [
+    "Hệ thống hoá dẫn xuất halogen, alcohol, phenol: cấu tạo, tính chất, chuyển hoá.",
+    "Vận dụng giải bài tập nhận biết và tính toán."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dẫn xuất halogen RX: thế (NaOH/nước → ROH), tách HX (NaOH/ethanol → alkene). Alcohol ROH: thế H (Na), tạo ether, tách nước, oxi hoá bởi CuO (bậc I → aldehyde, bậc II → ketone), cháy, polyalcohol + Cu(OH)₂. Phenol: tính acid yếu (NaOH), thế vòng thơm (Br₂, HNO₃)."
+    },
+    {
+      "type": "text",
+      "content": "Sơ đồ chuyển hoá: alkene ⇌ alcohol (hydrate hoá, tách nước); dẫn xuất halogen ↔ alcohol; alcohol → aldehyde/ketone → (aldehyde) carboxylic acid. Nhớ: alcohol tan tốt nhờ liên kết hydrogen; phenol tan ít ở nhiệt độ thường."
+    },
+    {
+      "type": "formula",
+      "content": "RX + NaOH → ROH + NaX        ROH → alkene + H₂O (H₂SO₄ đặc, 170 °C)        ROH + CuO → R′CHO (hoặc ketone) + Cu + H₂O"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đun nóng 0,2 mol C₂H₅OH với CuO dư (hiệu suất 100%). Tính khối lượng CH₃CHO (g), M = 44.",
+      "steps": [
+        "n(CH₃CHO) = 0,2 mol.",
+        "m = 0,2·44 = 8,8 g."
+      ],
+      "expr": "0.2*44",
+      "answer": "8.8"
+    }
+  ],
+  "items": [
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất tan tốt nhất trong nước là:",
+      "choices": [
+        "ethanol",
+        "hexane",
+        "bromoethane",
+        "phenol"
+      ],
+      "answer": 0,
+      "explain": "Liên kết hydrogen với nước, mạch ngắn.",
+      "wrong_explain": {
+        "1": "Không tan.",
+        "2": "Ít tan.",
+        "3": "Ít tan."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phản ứng thuỷ phân dẫn xuất halogen trong kiềm là:",
+      "choices": [
+        "phản ứng thế",
+        "phản ứng cộng",
+        "phản ứng tách",
+        "phản ứng oxi hoá"
+      ],
+      "answer": 0,
+      "explain": "X được thay bởi OH.",
+      "wrong_explain": {
+        "1": "Không cộng.",
+        "2": "Không tách.",
+        "3": "Không thay đổi số oxi hoá."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phát biểu đúng về phenol là:",
+      "choices": [
+        "tác dụng với NaOH",
+        "sôi thấp hơn ethanol",
+        "không phản ứng với nước Br₂",
+        "là alcohol thơm"
+      ],
+      "answer": 0,
+      "explain": "Tính acid yếu.",
+      "wrong_explain": {
+        "1": "Sôi cao hơn.",
+        "2": "Có phản ứng.",
+        "3": "Là phenol."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nhận biết glycerol, ethanol bằng:",
+      "choices": [
+        "Cu(OH)₂",
+        "Na",
+        "NaOH",
+        "quỳ tím"
+      ],
+      "answer": 0,
+      "explain": "Glycerol tạo phức xanh lam.",
+      "wrong_explain": {
+        "1": "Cả hai cho H₂.",
+        "2": "Không phản ứng.",
+        "3": "Không đổi màu."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đun butan-2-ol với H₂SO₄ đặc, 170 °C, sản phẩm chính là:",
+      "choices": [
+        "but-2-ene",
+        "but-1-ene",
+        "butane",
+        "butanal"
+      ],
+      "answer": 0,
+      "explain": "Zaitsev: tách H ở carbon bậc cao hơn (C3).",
+      "wrong_explain": {
+        "1": "Là sản phẩm phụ.",
+        "2": "Không phải tách nước.",
+        "3": "Không phải tách nước."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Oxi hoá bởi CuO cho aldehyde khi alcohol là:",
+      "choices": [
+        "bậc I",
+        "bậc II",
+        "bậc III",
+        "phenol"
+      ],
+      "answer": 0,
+      "explain": "RCH₂OH.",
+      "wrong_explain": {
+        "1": "Cho ketone.",
+        "2": "Không phản ứng.",
+        "3": "Không có H ở C-OH."
+      },
+      "id": "q06"
+    }
+  ]
+}

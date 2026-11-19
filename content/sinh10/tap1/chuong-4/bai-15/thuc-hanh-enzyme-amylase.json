@@ -1,0 +1,182 @@
+{
+  "id": "bai-15",
+  "grade": 10,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 10",
+  "chapter": "Chương 4. Chuyển hoá năng lượng trong tế bào",
+  "lesson": "Bài 15. Thực hành: Phân tích ảnh hưởng của một số yếu tố đến hoạt tính enzyme và kiểm tra enzyme amylase",
+  "section": "",
+  "bookPage": 94,
+  "requirements": [
+    "Quan sát và nhận xét hiệu quả tác dụng của enzyme trong phân huỷ protein và tinh bột.",
+    "Nhận xét ảnh hưởng của pH và nhiệt độ đến hoạt tính enzyme phân huỷ protein và tinh bột.",
+    "Thực hiện được các bước thí nghiệm theo quy trình."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Mục tiêu: đánh giá tác dụng của enzyme phân huỷ protein (từ lõi dứa hoặc dịch đu đủ) với lòng trắng trứng, và enzyme amylase (từ mầm lúa hoặc ngô) với tinh bột; xét ảnh hưởng của nước vôi trong (kiềm), đun sôi và nước đá."
+    },
+    {
+      "type": "text",
+      "content": "Thí nghiệm 1 (protein): chia dịch enzyme thành 4 ống, thêm nước cất, nước vôi trong, đun sôi hoặc nước đá theo bảng; thêm dung dịch lòng trắng trứng, ghi thời gian dung dịch từ đục chuyển sang trong. Ống có enzyme hoạt động tốt sẽ trong nhanh hơn."
+    },
+    {
+      "type": "text",
+      "content": "Thí nghiệm 2 (tinh bột): chuẩn bị đĩa tinh bột từ bột lọc, chia dịch mầm lúa vào 4 ống xử lí như trên; nhỏ dịch lên đĩa, sau 15 phút đo đường kính vết lõm. Đường kính lớn cho thấy enzyme phân huỷ tinh bột mạnh."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b15-thi-nghiem-enzyme.svg",
+      "caption": "Sơ đồ bố trí bốn ống thí nghiệm enzyme"
+    },
+    {
+      "type": "text",
+      "content": "Báo cáo cần nêu mục đích, cách tiến hành, kết quả (thời gian và đường kính vết lõm), giải thích và trả lời câu hỏi. Giải thích vì sao nhai cơm lâu thấy ngọt: amylase trong nước bọt phân huỷ tinh bột thành đường. Khi ăn dứa tươi nên gọt lõi vì lõi chứa enzyme phân huỷ protein dễ gây rát lưỡi."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong thí nghiệm enzyme, ống đối chứng là ống:",
+      "choices": [
+        "thêm nước cất, để ở nhiệt độ phòng",
+        "đun sôi 10 phút",
+        "đặt trong nước đá",
+        "thêm nước vôi trong"
+      ],
+      "answer": 0,
+      "explain": "Ống đối chứng không xử lí đặc biệt để so sánh.",
+      "wrong_explain": {
+        "1": "Đun sôi là xử lí thử nghiệm nhiệt độ.",
+        "2": "Nước đá là xử lí nhiệt độ thấp.",
+        "3": "Nước vôi trong là xử lí pH."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dịch chứa enzyme phân huỷ protein trong thí nghiệm có thể lấy từ:",
+      "choices": [
+        "lõi dứa hoặc dịch đu đủ",
+        "lòng trắng trứng",
+        "bột lọc",
+        "nước vôi trong"
+      ],
+      "answer": 0,
+      "explain": "Lõi dứa và đu đủ chứa enzyme phân huỷ protein.",
+      "wrong_explain": {
+        "1": "Lòng trắng là cơ chất protein.",
+        "2": "Bột lọc là cơ chất tinh bột.",
+        "3": "Nước vôi trong là dung dịch kiềm."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ống có nước vôi trong (kiềm) làm hoạt tính enzyme:",
+      "choices": [
+        "thay đổi, do pH ngoài khoảng tối ưu",
+        "tăng mạnh vì enzyme được tổng hợp thêm",
+        "không đổi vì enzyme không nhạy pH",
+        "tăng vì nước vôi là cơ chất"
+      ],
+      "answer": 0,
+      "explain": "Mỗi enzyme có pH tối ưu, pH khác làm giảm hoặc thay đổi hoạt tính.",
+      "wrong_explain": {
+        "1": "Enzyme không được tổng hợp thêm trong thí nghiệm.",
+        "2": "Enzyme nhạy với pH.",
+        "3": "Nước vôi không phải cơ chất của enzyme."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ống đun sôi làm mất hoạt tính enzyme vì:",
+      "choices": [
+        "nhiệt độ cao làm biến đổi cấu hình enzyme",
+        "nhiệt độ cao làm tăng cơ chất",
+        "nhiệt độ cao làm enzyme nhân đôi",
+        "nhiệt độ cao làm tinh bột tan hết"
+      ],
+      "answer": 0,
+      "explain": "Nhiệt cao làm enzyme mất cấu hình và hoạt tính.",
+      "wrong_explain": {
+        "1": "Cơ chất không tăng do đun sôi.",
+        "2": "Enzyme không nhân đôi.",
+        "3": "Tinh bột không tan hết và không làm mất hoạt tính enzyme."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ống để trong nước đá có hoạt tính enzyme thấp vì:",
+      "choices": [
+        "nhiệt độ thấp làm enzyme hoạt động chậm",
+        "nhiệt độ thấp làm enzyme tăng cơ chất",
+        "nhiệt độ thấp làm enzyme bị đun sôi",
+        "nhiệt độ thấp làm enzyme nhân đôi"
+      ],
+      "answer": 0,
+      "explain": "Nhiệt độ thấp làm phản ứng xúc tác chậm lại.",
+      "wrong_explain": {
+        "1": "Nhiệt độ không tạo cơ chất.",
+        "2": "Nước đá không đun sôi enzyme.",
+        "3": "Enzyme không nhân đôi."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao nhai cơm lâu trong miệng thường cảm thấy ngọt?",
+      "choices": [
+        "amylase trong nước bọt phân huỷ tinh bột thành đường",
+        "cơm tự sinh ra đường khi nhai",
+        "lưỡi có enzyme phân huỷ protein",
+        "răng làm tăng nhiệt độ cơm"
+      ],
+      "answer": 0,
+      "explain": "Amylase biến tinh bột thành đường.",
+      "wrong_explain": {
+        "1": "Cơm không tự tạo đường khi nhai.",
+        "2": "Enzyme phân huỷ protein không làm cơm ngọt.",
+        "3": "Nhiệt độ không tạo vị ngọt."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao khi ăn dứa tươi nên gọt bỏ lõi?",
+      "choices": [
+        "lõi chứa enzyme phân huỷ protein có thể gây rát lưỡi",
+        "lõi chứa nhiều đường làm đắng",
+        "lõi chứa vi khuẩn gây bệnh",
+        "lõi chứa nhiều ATP làm nóng miệng"
+      ],
+      "answer": 0,
+      "explain": "Enzyme trong lõi phân huỷ protein ở niêm mạc miệng.",
+      "wrong_explain": {
+        "1": "Lõi không gây đắng bởi đường.",
+        "2": "Vi khuẩn không phải lí do chính.",
+        "3": "ATP không làm nóng miệng."
+      },
+      "id": "q07"
+    }
+  ]
+}

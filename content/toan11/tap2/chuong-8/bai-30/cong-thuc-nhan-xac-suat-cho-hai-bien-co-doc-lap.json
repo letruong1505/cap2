@@ -1,0 +1,325 @@
+{
+  "id": "bai-30",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 11, tập 2",
+  "chapter": "Chương VIII. Quy tắc tính xác suất",
+  "lesson": "Bài 30. Công thức nhân xác suất cho hai biến cố độc lập",
+  "section": "",
+  "bookPage": 76,
+  "requirements": [
+    "Vận dụng công thức nhân xác suất cho hai biến cố độc lập.",
+    "Dùng sơ đồ cây và biến cố đối để giải bài toán thực tế."
+  ],
+  "theory": [
+    {
+      "type": "formula",
+      "content": "Hai biến cố A, B độc lập ⇔ P(A ∩ B) = P(A)·P(B).   Khi đó A và B̄, Ā và B, Ā và B̄ cũng độc lập."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b30-so-do-cay.svg",
+      "caption": "Sơ đồ cây cho hai biến cố độc lập: xác suất một nhánh bằng tích các xác suất trên đường đi (ví dụ P(A ∩ B) = 0,8 × 0,9)"
+    },
+    {
+      "type": "text",
+      "content": "Mở rộng: nếu A₁, A₂, …, Aₙ độc lập từng đôi và lập thành các phép thử độc lập thì P(A₁A₂…Aₙ) = P(A₁)P(A₂)…P(Aₙ). Để tính “ít nhất một biến cố xảy ra” cho các biến cố độc lập: P = 1 − P(Ā₁)·P(Ā₂)·…·P(Āₙ)."
+    },
+    {
+      "type": "method",
+      "title": "Tính xác suất xảy ra đồng thời các biến cố độc lập",
+      "when": "Hai (hoặc nhiều) người/lần thử độc lập: hai xạ thủ bắn bia, tung nhiều lần đồng xu, lấy có hoàn lại.",
+      "steps": [
+        "Đặt biến cố cho từng lần/người: A₁, A₂, ….",
+        "Xác định xác suất từng biến cố.",
+        "Kiểm tra tính độc lập.",
+        "Nhân: P(A₁A₂…) = P(A₁)·P(A₂)·…."
+      ],
+      "notes": [
+        "Bốc không hoàn lại thường không độc lập.",
+        "Biểu diễn bằng sơ đồ cây để khỏi sót nhánh."
+      ],
+      "sample": {
+        "problem": "Hai xạ thủ bắn độc lập vào một bia, xác suất trúng lần lượt 0,8 và 0,9. Tính xác suất cả hai cùng trúng.",
+        "steps": [
+          "P = 0,8·0,9.",
+          "= 0,72 = 18/25."
+        ],
+        "answer": "18/25"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Xác suất “ít nhất một” với biến cố độc lập",
+      "when": "Có nhiều người/lần thử độc lập và hỏi “ít nhất một trúng/thành công”.",
+      "steps": [
+        "Xác định xác suất “không thành công” của từng biến cố.",
+        "Nhân các xác suất đó (độc lập).",
+        "P(ít nhất một) = 1 − tích vừa tính.",
+        "Rút gọn."
+      ],
+      "notes": [
+        "Đối của “ít nhất một” là “không có cái nào”.",
+        "Dùng khi số trường hợp thuận lợi quá nhiều."
+      ],
+      "sample": {
+        "problem": "Hai xạ thủ trúng với xác suất 0,8 và 0,9. Xác suất có ít nhất một người trúng?",
+        "steps": [
+          "P(cả hai trượt) = 0,2·0,1 = 0,02.",
+          "P = 1 − 0,02 = 0,98 = 49/50."
+        ],
+        "answer": "49/50"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Bài toán nhiều giai đoạn dùng sơ đồ cây",
+      "when": "Tung nhiều lần đồng xu, xúc xắc; dây chuyền sản xuất qua nhiều công đoạn.",
+      "steps": [
+        "Vẽ sơ đồ cây với xác suất trên từng nhánh.",
+        "Xác suất của một kết quả = tích các xác suất trên đường đi.",
+        "Cộng xác suất các nhánh thoả yêu cầu (xung khắc).",
+        "Kiểm tra tổng bằng 1."
+      ],
+      "notes": [
+        "Các nhánh khác nhau là xung khắc nên cộng.",
+        "Sơ đồ cây giúp tránh bỏ sót."
+      ],
+      "sample": {
+        "problem": "Tung đồng xu cân đối 3 lần. Xác suất cả ba lần sấp?",
+        "steps": [
+          "Mỗi lần 1/2 và độc lập.",
+          "P = 1/2·1/2·1/2 = 1/8."
+        ],
+        "answer": "1/8"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hai xạ thủ bắn độc lập, xác suất trúng 4/5 và 9/10. Xác suất cả hai trúng (nhập a/b)?",
+      "steps": [
+        "P = 4/5·9/10.",
+        "= 18/25."
+      ],
+      "expr": "4/5*9/10",
+      "answer": "18/25"
+    },
+    {
+      "problem": "Tung đồng xu 3 lần, xác suất cả ba lần sấp (nhập a/b)?",
+      "steps": [
+        "P = (1/2)³.",
+        "= 1/8."
+      ],
+      "expr": "1/2*1/2*1/2",
+      "answer": "1/8"
+    },
+    {
+      "problem": "Xác suất có ít nhất một người trúng, nếu xác suất trượt của hai người là 1/5 và 1/10 (nhập a/b)?",
+      "steps": [
+        "P(cả hai trượt) = 1/50.",
+        "P = 49/50."
+      ],
+      "expr": "1-1/5*1/10",
+      "answer": "49/50"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "A, B độc lập, P(A) = 0,5, P(B) = 0,4. P(A ∩ B) bằng:",
+      "expr": "0.5*0.4",
+      "answer": "1/5",
+      "explain": "P = 0,2.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tung đồng xu 2 lần, P(cả hai ngửa) (nhập a/b):",
+      "expr": "1/2*1/2",
+      "answer": "1/4",
+      "explain": "1/4.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Xúc xắc tung 2 lần, P(cả hai lần được 6) (nhập a/b):",
+      "expr": "1/6*1/6",
+      "answer": "1/36",
+      "explain": "1/36.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "A, B độc lập khi và chỉ khi:",
+      "choices": [
+        "P(A ∩ B) = P(A)·P(B)",
+        "P(A ∩ B) = 0",
+        "P(A ∪ B) = P(A) + P(B)",
+        "A ∩ B = Ω"
+      ],
+      "answer": 0,
+      "explain": "Đó là định nghĩa độc lập qua xác suất.",
+      "wrong_explain": {
+        "1": "Đó là xung khắc.",
+        "2": "Đó là điều kiện xung khắc cho công thức cộng.",
+        "3": "Giao không thể bằng Ω."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai xạ thủ trúng với xác suất 4/5 và 9/10, bắn độc lập. P(cả hai trúng) (nhập a/b):",
+      "expr": "4/5*9/10",
+      "answer": "18/25",
+      "explain": "36/50 = 18/25.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cùng đề, P(cả hai trượt) (nhập a/b):",
+      "expr": "1/5*1/10",
+      "answer": "1/50",
+      "explain": "1/50.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cùng đề, P(ít nhất một người trúng) (nhập a/b):",
+      "expr": "1-1/5*1/10",
+      "answer": "49/50",
+      "explain": "1 − 1/50 = 49/50.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cùng đề, P(chỉ người thứ nhất trúng) (nhập a/b):",
+      "expr": "4/5*1/10",
+      "answer": "2/25",
+      "explain": "4/50 = 2/25.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tung đồng xu 3 lần, P(cả ba sấp) (nhập a/b):",
+      "expr": "1/2*1/2*1/2",
+      "answer": "1/8",
+      "explain": "1/8.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tung đồng xu 3 lần, P(ít nhất một ngửa) (nhập a/b):",
+      "expr": "1-1/2*1/2*1/2",
+      "answer": "7/8",
+      "explain": "1 − 1/8 = 7/8.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai lần bốc bi CÓ hoàn lại thì các biến cố của hai lần là:",
+      "choices": [
+        "độc lập",
+        "xung khắc",
+        "đối nhau",
+        "trùng nhau"
+      ],
+      "answer": 0,
+      "explain": "Có hoàn lại nên kết quả lần trước không ảnh hưởng lần sau.",
+      "wrong_explain": {
+        "1": "Không thể xung khắc.",
+        "2": "Không đối nhau.",
+        "3": "Không trùng."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hộp 3 bi đỏ, 2 bi xanh. Bốc có hoàn lại 2 lần. P(cả hai đỏ) (nhập a/b):",
+      "expr": "3/5*3/5",
+      "answer": "9/25",
+      "explain": "9/25.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cùng đề, P(lần thứ nhất đỏ, lần thứ hai xanh) (nhập a/b):",
+      "expr": "3/5*2/5",
+      "answer": "6/25",
+      "explain": "6/25.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cùng đề, P(hai bi cùng màu) (nhập a/b):",
+      "expr": "3/5*3/5+2/5*2/5",
+      "answer": "13/25",
+      "explain": "9/25 + 4/25 = 13/25.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ba máy hoạt động độc lập tốt với xác suất 0,9. P(cả ba tốt):",
+      "expr": "0.9*0.9*0.9",
+      "answer": "729/1000",
+      "explain": "0,729.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ba máy tốt với xác suất 0,9. P(cả ba hỏng) (nhân 1000 để có số nguyên):",
+      "expr": "0.1*0.1*0.1*1000",
+      "answer": "1",
+      "explain": "0,1³ = 0,001; nhân 1000 là 1.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Xác suất ít nhất một trong ba máy tốt (0,9 mỗi máy), nhân 1000 để có số nguyên:",
+      "expr": "(1-0.001)*1000",
+      "answer": "999",
+      "explain": "1 − 0,001 = 0,999; nhân 1000 = 999.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tung hai xúc xắc, A: “lần 1 ra 6”, B: “tổng bằng 7”. A và B:",
+      "choices": [
+        "độc lập",
+        "xung khắc",
+        "đối nhau",
+        "không độc lập"
+      ],
+      "answer": 0,
+      "explain": "P(A) = 1/6, P(B) = 1/6, P(A ∩ B) = 1/36 = P(A)P(B).",
+      "wrong_explain": {
+        "1": "Có thể cùng xảy ra (6 và 1).",
+        "2": "Không đối nhau.",
+        "3": "Đúng ra là độc lập."
+      },
+      "id": "q18"
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "id": "bai-10",
+  "grade": 10,
+  "subject": "gdktpl",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Giáo dục kinh tế và pháp luật 10",
+  "chapter": "Chủ đề 6. Lập kế hoạch tài chính cá nhân",
+  "lesson": "Bài 10. Lập kế hoạch tài chính cá nhân",
+  "section": "",
+  "bookPage": 61,
+  "requirements": [
+    "Nêu được khái niệm kế hoạch tài chính cá nhân, các loại kế hoạch và tầm quan trọng của việc lập kế hoạch.",
+    "Nhận biết được các bước lập kế hoạch tài chính cá nhân.",
+    "Lập được kế hoạch tài chính của cá nhân.",
+    "Kiểm soát được tài chính cá nhân."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Kế hoạch tài chính cá nhân là bản kế hoạch về thu chi ngân sách nhằm thực hiện các mục tiêu tài chính của cá nhân, gồm các quyết định về thu nhập, chi tiêu, tiết kiệm và đầu tư. Theo thời gian, có kế hoạch ngắn hạn (dưới 3 tháng), trung hạn (từ 3 đến 6 tháng) và dài hạn (từ 6 tháng trở lên)."
+    },
+    {
+      "type": "text",
+      "content": "Từ khoá cần ghi nhớ: kế hoạch tài chính cá nhân; mục tiêu tài chính; thu nhập; chi tiêu; tiết kiệm; ngắn hạn; trung hạn; dài hạn; quy tắc 80/13/7; thiết yếu."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/gdktpl10-b10-buoc.svg",
+      "caption": "Bốn bước lập kế hoạch tài chính cá nhân"
+    },
+    {
+      "type": "text",
+      "content": "Lập kế hoạch tài chính cá nhân giúp tính toán, cân nhắc các khoản chi thiết yếu; chủ động nắm tình hình tài chính; duy trì chi tiêu lành mạnh, không thâm hụt hay nợ nần; có tiết kiệm để thực hiện mục tiêu quan trọng trong tương lai."
+    },
+    {
+      "type": "text",
+      "content": "Bước 1: xác định mục tiêu tài chính và thời hạn thực hiện, đánh giá năng lực tài chính để đặt mục tiêu ngắn, trung và dài hạn. Bước 2: ghi chép đầy đủ các khoản thu, chi; phân biệt chi thiết yếu và chi phát sinh; điều chỉnh ngay khi chi vượt mức. Bước 3: đặt quy tắc thu chi, ví dụ chi không vượt số tiền đang có, phân bổ thu nhập, tiết kiệm từ việc cắt giảm chi không thiết yếu."
+    },
+    {
+      "type": "text",
+      "content": "Bước 4: tuân thủ kế hoạch, cắt giảm khoản chi không cần thiết để bù khoản chi đột xuất, và cập nhật kế hoạch khi nhu cầu hoặc thu nhập thay đổi. Ví dụ: với thu nhập 3 triệu đồng, phân bổ 2,4 triệu đồng cho chi thiết yếu, 390 nghìn đồng cho chi phát sinh và 210 nghìn đồng cho tiết kiệm."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Bạn có thu nhập 2 000 000 đồng/tháng. Theo quy tắc 80/13/7, số tiền dành cho tiết kiệm là bao nhiêu?",
+      "steps": [
+        "Tiết kiệm = 7% × 2 000 000 = 140 000 đồng."
+      ],
+      "expr": "2000000*0.07",
+      "answer": "140000"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Kế hoạch tài chính cá nhân ngắn hạn là kế hoạch có thời gian thực hiện:",
+      "choices": [
+        "trên 1 năm",
+        "dưới 3 tháng",
+        "từ 3 đến 6 tháng",
+        "trên 10 năm"
+      ],
+      "answer": 1,
+      "explain": "Ngắn hạn được xác định là dưới 3 tháng.",
+      "wrong_explain": {
+        "0": "Đó là dài hạn.",
+        "2": "Đó là trung hạn.",
+        "3": "Đó là dài hạn."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Kế hoạch tài chính cá nhân trung hạn có thời gian thực hiện:",
+      "choices": [
+        "từ 3 đến 6 tháng",
+        "dưới 1 tháng",
+        "trên 2 năm",
+        "không xác định"
+      ],
+      "answer": 0,
+      "explain": "Trung hạn là từ 3 đến 6 tháng.",
+      "wrong_explain": {
+        "1": "Đó là ngắn hạn.",
+        "2": "Đó là dài hạn.",
+        "3": "Thời gian được xác định rõ."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Bước đầu tiên khi lập kế hoạch tài chính cá nhân là:",
+      "choices": [
+        "mua sắm theo ý thích",
+        "vay tiền ngay",
+        "không cần ghi chép",
+        "xác định mục tiêu tài chính và thời hạn thực hiện"
+      ],
+      "answer": 3,
+      "explain": "Mục tiêu là căn cứ để lập kế hoạch.",
+      "wrong_explain": {
+        "0": "Mua sắm không phải bước đầu.",
+        "1": "Vay tiền không phải bước đầu.",
+        "2": "Ghi chép là bước cần thiết."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao cần phân biệt chi tiêu thiết yếu và chi phát sinh?",
+      "choices": [
+        "để tăng chi tiêu",
+        "để không cần ghi chép",
+        "để ưu tiên chi thiết yếu và chỉ tiết kiệm từ phần còn lại",
+        "để bỏ qua chi thiết yếu"
+      ],
+      "answer": 2,
+      "explain": "Phân biệt giúp phân bổ nguồn thu hợp lí.",
+      "wrong_explain": {
+        "0": "Mục tiêu là kiểm soát chi tiêu.",
+        "1": "Ghi chép là cần thiết.",
+        "3": "Không được bỏ qua chi thiết yếu."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong quy tắc 80/13/7, 7% thu nhập dùng để:",
+      "choices": [
+        "chi thiết yếu",
+        "tiết kiệm",
+        "chi phát sinh",
+        "trả nợ lãi"
+      ],
+      "answer": 1,
+      "explain": "Quy tắc 80/13/7 phân bổ 7% cho tiết kiệm.",
+      "wrong_explain": {
+        "0": "Chi thiết yếu chiếm 80%.",
+        "2": "Chi phát sinh chiếm 13%.",
+        "3": "Quy tắc không có khoản trả lãi."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi có khoản chi đột xuất vượt kế hoạch, cách xử lí đúng là:",
+      "choices": [
+        "cắt giảm chi không cần thiết trong ngày, tuần hoặc tháng tiếp theo",
+        "bỏ kế hoạch",
+        "vay nợ để chi",
+        "bỏ qua"
+      ],
+      "answer": 0,
+      "explain": "Điều chỉnh kịp thời giữ kế hoạch cân đối.",
+      "wrong_explain": {
+        "1": "Bỏ kế hoạch làm mất kiểm soát.",
+        "2": "Vay nợ tạo rủi ro.",
+        "3": "Bỏ qua khiến thâm hụt tăng."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Việc cắt giảm chi tiêu thiết yếu để tiết kiệm có đúng không?",
+      "choices": [
+        "đúng, nên cắt giảm tối đa",
+        "đúng, nếu muốn tiết kiệm nhanh",
+        "đúng, miễn là có mục tiêu",
+        "không đúng, vì không được ảnh hưởng đến sức khoẻ và học tập"
+      ],
+      "answer": 3,
+      "explain": "Tiết kiệm phải dựa trên cắt giảm chi không thiết yếu.",
+      "wrong_explain": {
+        "0": "Không cắt giảm chi thiết yếu.",
+        "1": "Tiết kiệm nhanh không được phép làm ảnh hưởng sức khoẻ.",
+        "2": "Mục tiêu không biện minh cho cắt giảm chi thiết yếu."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Với thu nhập 3 000 000 đồng/tháng, theo quy tắc 80/13/7, số tiền chi thiết yếu là:",
+      "choices": [
+        "2 000 000 đồng",
+        "2 700 000 đồng",
+        "2 400 000 đồng",
+        "390 000 đồng"
+      ],
+      "answer": 2,
+      "explain": "80% × 3 000 000 = 2 400 000 đồng.",
+      "wrong_explain": {
+        "0": "Đó là 2/3 của 80%, không đúng.",
+        "1": "Đó là 90% của 3 000 000 đồng.",
+        "3": "Đó là 13%, dành cho chi phát sinh."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Em muốn tiết kiệm 200 000 đồng trong 1 tháng. Cách lập kế hoạch hợp lí là:",
+      "choices": [
+        "không cần ghi chép",
+        "ghi chép thu chi, tính số tiền tiết kiệm mỗi ngày và cắt giảm chi không cần thiết",
+        "vay tiền để tiết kiệm",
+        "chỉ tiết kiệm khi có tiền dư"
+      ],
+      "answer": 1,
+      "explain": "Chia nhỏ mục tiêu và kiểm soát chi giúp đạt mục tiêu.",
+      "wrong_explain": {
+        "0": "Ghi chép là cần thiết.",
+        "2": "Vay tiền không giúp tiết kiệm.",
+        "3": "Tiết kiệm cần kế hoạch chủ động."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi thu nhập tăng, em nên điều chỉnh kế hoạch tài chính như thế nào?",
+      "choices": [
+        "cập nhật kế hoạch để phù hợp với thu nhập và nhu cầu thực tế",
+        "giữ nguyên kế hoạch cũ mãi",
+        "chi tiêu hết toàn bộ thu nhập",
+        "không cần điều chỉnh"
+      ],
+      "answer": 0,
+      "explain": "Kế hoạch cần được cập nhật theo thực tế.",
+      "wrong_explain": {
+        "1": "Kế hoạch cần thay đổi khi thực tế thay đổi.",
+        "2": "Chi hết thu nhập không tiết kiệm được.",
+        "3": "Điều chỉnh là cần thiết."
+      },
+      "id": "q10"
+    }
+  ]
+}

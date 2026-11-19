@@ -1,0 +1,152 @@
+{
+  "id": "bai-23",
+  "grade": 10,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 10",
+  "chapter": "Chương VII. Nguyên tố nhóm halogen",
+  "lesson": "Bài 23. Ôn tập chương 7",
+  "section": "",
+  "bookPage": 117,
+  "requirements": [
+    "Hệ thống hoá kiến thức về đơn chất halogen, hydrogen halide và muối halide.",
+    "Vận dụng giải bài tập tổng hợp và nhận biết các chất."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hệ thống kiến thức chương 7: (1) Halogen: ns²np⁵, tồn tại dạng hợp chất; F₂ → I₂: nhiệt độ sôi tăng, màu đậm dần, tính oxi hoá giảm. (2) Phản ứng với kim loại, hydrogen, nước, kiềm, muối halide; điều chế Cl₂. (3) Hydrogen halide: tính acid HF < HCl < HBr < HI; HF ăn mòn thuỷ tinh. (4) Ion halide: tính khử F⁻ < Cl⁻ < Br⁻ < I⁻; nhận biết bằng AgNO₃."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b23-on-tap.svg",
+      "caption": "Sơ đồ hệ thống hoá kiến thức chương VII"
+    },
+    {
+      "type": "formula",
+      "content": "Halogen mạnh đẩy halogen yếu: Cl₂ + 2Br⁻ → 2Cl⁻ + Br₂        Ag⁺ + X⁻ → AgX↓"
+    },
+    {
+      "type": "method",
+      "title": "Nhận biết các dung dịch halide",
+      "when": "Đề cho các lọ mất nhãn chứa muối halide hoặc acid; yêu cầu chọn thuốc thử và nêu hiện tượng.",
+      "steps": [
+        "Dùng quỳ tím phân biệt acid với muối trung tính.",
+        "Dùng AgNO₃: Cl⁻ kết tủa trắng, Br⁻ vàng nhạt, I⁻ vàng, F⁻ không có kết tủa.",
+        "Có thể dùng nước chlorine và hồ tinh bột để nhận ra I⁻ (hồ tinh bột hoá xanh).",
+        "Viết phương trình minh hoạ."
+      ],
+      "notes": [
+        "AgCl hoá đen ngoài ánh sáng.",
+        "I₂ làm hồ tinh bột chuyển xanh tím."
+      ],
+      "sample": {
+        "problem": "Nhận biết các dung dịch NaF, NaCl, NaBr, NaI.",
+        "steps": [
+          "Nhỏ AgNO₃: NaF không hiện tượng; NaCl kết tủa trắng; NaBr vàng nhạt; NaI vàng."
+        ],
+        "answer": "Dùng AgNO₃"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho 11,7 g NaCl tác dụng H₂SO₄ đặc dư, đun nóng (NaCl + H₂SO₄ → NaHSO₄ + HCl). Hoà tan khí HCl thu được vào nước được 200 mL dung dịch. Tính nồng độ mol dung dịch HCl.",
+      "steps": [
+        "n(HCl) = n(NaCl) = 0,2 mol.",
+        "C_M = 0,2/0,2 = 1 M."
+      ],
+      "expr": "1",
+      "answer": "1"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thứ tự tính oxi hoá giảm dần là:",
+      "choices": [
+        "F₂ > Cl₂ > Br₂ > I₂",
+        "I₂ > Br₂ > Cl₂ > F₂",
+        "Cl₂ > F₂ > Br₂ > I₂",
+        "Br₂ > I₂ > F₂ > Cl₂"
+      ],
+      "answer": 0,
+      "explain": "Theo nhóm VIIA.",
+      "wrong_explain": {
+        "1": "Ngược.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sục khí Cl₂ vào dung dịch KI có hồ tinh bột, hiện tượng là:",
+      "choices": [
+        "dung dịch chuyển màu xanh tím",
+        "có kết tủa trắng",
+        "có khí bay ra",
+        "không hiện tượng"
+      ],
+      "answer": 0,
+      "explain": "Cl₂ đẩy I₂, I₂ làm hồ tinh bột hoá xanh.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Để phân biệt dung dịch HCl và NaCl có thể dùng:",
+      "choices": [
+        "quỳ tím",
+        "AgNO₃",
+        "nước",
+        "dung dịch NaNO₃"
+      ],
+      "answer": 0,
+      "explain": "HCl làm quỳ hoá đỏ.",
+      "wrong_explain": {
+        "1": "Đều tạo kết tủa trắng.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 0,15 mol Cl₂ tác dụng hết với Na. Khối lượng NaCl (g):",
+      "expr": "0.3*58.5",
+      "answer": "17.55",
+      "explain": "n(NaCl) = 0,3 mol.",
+      "id": "q04"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 2,24 g Fe vào HCl dư. Khối lượng FeCl₂ (g):",
+      "expr": "0.04*127",
+      "answer": "5.08",
+      "explain": "n(Fe) = 0,04.",
+      "id": "q05"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thể tích dung dịch HCl 1 M (mL) cần hoà tan hết 2,7 g Al là:",
+      "expr": "300",
+      "answer": "300",
+      "explain": "n(HCl) = 3·0,1 = 0,3 mol.",
+      "id": "q06"
+    }
+  ]
+}

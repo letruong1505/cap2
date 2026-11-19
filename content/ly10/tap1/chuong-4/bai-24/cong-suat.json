@@ -1,0 +1,277 @@
+{
+  "id": "bai-24",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương IV. Năng lượng, công, công suất",
+  "lesson": "Bài 24. Công suất",
+  "section": "",
+  "bookPage": 96,
+  "requirements": [
+    "Nêu được ý nghĩa, công thức và đơn vị của công suất; liên hệ P = F·v.",
+    "Tính công suất của người, máy trong các tình huống thực tế."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Công suất là đại lượng đặc trưng cho tốc độ sinh công, đo bằng công sinh ra trong một đơn vị thời gian."
+    },
+    {
+      "type": "formula",
+      "content": "P = A/t        Đơn vị: oát (W), 1 W = 1 J/s;  1 kW = 1000 W;  1 HP (mã lực) ≈ 746 W"
+    },
+    {
+      "type": "text",
+      "content": "Khi lực không đổi và cùng hướng chuyển động với vận tốc v: P = A/t = F·d/t = F·v. Với cùng công suất, muốn lực kéo lớn thì phải giảm tốc độ (ô tô lên dốc phải về số thấp)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b24-p-fv.svg",
+      "caption": "Công suất của động cơ ô tô P = F·v"
+    },
+    {
+      "type": "formula",
+      "content": "P = F·v"
+    },
+    {
+      "type": "text",
+      "content": "Đơn vị năng lượng thường dùng trong đời sống: kilôoát giờ (kWh), 1 kWh = 1000 W·3600 s = 3,6·10⁶ J. Công suất định mức ghi trên thiết bị điện là công suất khi hoạt động bình thường."
+    },
+    {
+      "type": "text",
+      "content": "Công suất trung bình P = A/t; công suất tức thời P = F·v với v là vận tốc tức thời."
+    },
+    {
+      "type": "method",
+      "title": "Tính công suất",
+      "when": "Đề cho công và thời gian, hoặc lực kéo và tốc độ, hoặc khối lượng nâng lên độ cao trong thời gian; hỏi công suất, thời gian, lực.",
+      "steps": [
+        "Tính công A (A = Fd, A = mgh…).",
+        "P = A/t, đổi thời gian ra giây.",
+        "Nếu chuyển động đều với lực kéo F: P = Fv (v tính bằng m/s).",
+        "Điện năng tiêu thụ: A = P·t (kWh nếu P tính kW, t tính giờ)."
+      ],
+      "notes": [
+        "Đổi km/h ra m/s khi dùng P = Fv.",
+        "Chuyển động đều thì lực kéo bằng lực cản."
+      ],
+      "sample": {
+        "problem": "Một máy bơm nâng 600 kg nước lên cao 5 m trong 1 phút (g = 10). Tính công suất.",
+        "steps": [
+          "A = 6000·5 = 30 000 J.",
+          "P = 30 000/60 = 500 W."
+        ],
+        "answer": "500 W"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một ô tô chuyển động đều với tốc độ 72 km/h, lực kéo động cơ 2000 N. Tính công suất của động cơ.",
+      "steps": [
+        "v = 20 m/s.",
+        "P = F·v = 2000·20 = 40 000 W = 40 kW."
+      ],
+      "expr": "2000*20",
+      "answer": "40000"
+    },
+    {
+      "problem": "Một học sinh 50 kg chạy lên cầu thang cao 6 m mất 10 s (g = 10). Tính công suất trung bình.",
+      "steps": [
+        "A = mgh = 500·6 = 3000 J.",
+        "P = 3000/10 = 300 W."
+      ],
+      "expr": "3000/10",
+      "answer": "300"
+    },
+    {
+      "problem": "Một ấm điện 1500 W dùng mỗi ngày 30 phút. Tính điện năng tiêu thụ trong 30 ngày (kWh).",
+      "steps": [
+        "Mỗi ngày: 1,5 kW · 0,5 h = 0,75 kWh.",
+        "30 ngày: 22,5 kWh."
+      ],
+      "expr": "0.75*30",
+      "answer": "22.5"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Máy sinh công 6000 J trong 20 s. Công suất (W) là:",
+      "expr": "300",
+      "answer": "300",
+      "explain": "P = A/t.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đơn vị của công suất là:",
+      "choices": [
+        "oát (W)",
+        "jun (J)",
+        "niutơn (N)",
+        "kWh"
+      ],
+      "answer": 0,
+      "explain": "J/s.",
+      "wrong_explain": {
+        "1": "Công.",
+        "2": "Lực.",
+        "3": "Năng lượng."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "1 kWh bằng bao nhiêu J?",
+      "expr": "3600000",
+      "answer": "3600000",
+      "explain": "1000·3600.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Công thức liên hệ công suất với lực và vận tốc là:",
+      "choices": [
+        "P = F·v",
+        "P = F/v",
+        "P = F·t",
+        "P = m·v"
+      ],
+      "answer": 0,
+      "explain": "Khi lực cùng hướng chuyển động.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Đó là động lượng."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Lực kéo 500 N, vận tốc 4 m/s. Công suất (W):",
+      "expr": "2000",
+      "answer": "2000",
+      "explain": "Fv.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cần cẩu nâng 200 kg lên 15 m trong 30 s (g = 10). Công suất (W):",
+      "expr": "30000/30",
+      "answer": "1000",
+      "explain": "mgh/t.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ô tô công suất 60 kW chạy đều 30 m/s. Lực kéo (N):",
+      "expr": "2000",
+      "answer": "2000",
+      "explain": "F = P/v.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Động cơ 2 kW làm việc 5 phút. Công (kJ):",
+      "expr": "600",
+      "answer": "600",
+      "explain": "2000·300 = 600 000 J.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ô tô lên dốc thường về số thấp (chạy chậm) để:",
+      "choices": [
+        "tăng lực kéo với cùng công suất",
+        "giảm công suất",
+        "tăng tốc độ",
+        "giảm ma sát"
+      ],
+      "answer": 0,
+      "explain": "F = P/v.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Ngược.",
+        "3": "Sai."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bóng đèn 60 W thắp 5 giờ tiêu thụ (kWh):",
+      "expr": "0.06*5",
+      "answer": "0.3",
+      "explain": "P·t.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Máy A sinh 3000 J trong 10 s, máy B sinh 4000 J trong 20 s. Công suất máy A lớn hơn máy B (W):",
+      "expr": "300-200",
+      "answer": "100",
+      "explain": "300 W và 200 W.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Xe 1 tấn chạy đều 54 km/h trên đường ngang, lực cản bằng 0,04 trọng lượng (g = 10). Công suất động cơ (kW):",
+      "expr": "400*15/1000",
+      "answer": "6",
+      "explain": "F = 400 N, v = 15 m/s.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thác nước cao 20 m, mỗi giây đổ xuống 100 m³ nước (g = 10). Công suất của dòng nước (MW):",
+      "expr": "20",
+      "answer": "20",
+      "explain": "1,0·10⁵ kg·10·20 = 2·10⁷ W.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Động cơ 1,5 kW kéo thang máy 300 kg đi lên đều (g = 10). Tốc độ thang máy (m/s):",
+      "expr": "1500/3000",
+      "answer": "0.5",
+      "explain": "v = P/F.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một gia đình dùng 150 kWh/tháng, giá trung bình 2500 đồng/kWh. Tiền điện (nghìn đồng):",
+      "expr": "375",
+      "answer": "375",
+      "explain": "150·2,5.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Ô tô 1,2 tấn tăng tốc đều từ 0 lên 20 m/s trong 10 s, bỏ qua ma sát. Công suất tức thời của động cơ tại t = 10 s (kW):",
+      "expr": "2400*20/1000",
+      "answer": "48",
+      "explain": "a = 2, F = 2400 N; P = Fv = 2400·20.",
+      "id": "q16"
+    }
+  ]
+}

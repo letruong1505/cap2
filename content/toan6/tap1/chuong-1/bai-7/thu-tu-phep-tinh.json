@@ -1,0 +1,224 @@
+{
+  "id": "bai-7",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương I. Tập hợp các số tự nhiên",
+  "lesson": "Bài 7. Thứ tự thực hiện các phép tính",
+  "section": "",
+  "bookPage": 25,
+  "requirements": [
+    "Nắm thứ tự thực hiện phép tính trong biểu thức có và không có dấu ngoặc; tính giá trị biểu thức."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Biểu thức không có dấu ngoặc: chỉ có cộng, trừ hoặc chỉ có nhân, chia thì làm từ trái sang phải. Có đủ các phép tính thì làm luỹ thừa → nhân, chia → cộng, trừ."
+    },
+    {
+      "type": "text",
+      "content": "Biểu thức có dấu ngoặc: làm trong ngoặc tròn ( ) trước, rồi ngoặc vuông [ ], cuối cùng ngoặc nhọn { }."
+    },
+    {
+      "type": "formula",
+      "content": "Luỹ thừa → Nhân và chia → Cộng và trừ"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t6-b7-thu-tu.svg",
+      "caption": "Thứ tự thực hiện phép tính"
+    },
+    {
+      "type": "method",
+      "title": "Tính giá trị biểu thức có nhiều phép tính",
+      "when": "Đề cho biểu thức có cộng, trừ, nhân, chia, lũy thừa và dấu ngoặc, yêu cầu \"tính giá trị\" hoặc \"thực hiện phép tính\".",
+      "steps": [
+        "Quan sát biểu thức: có ngoặc không, có lũy thừa không, có nhân chia không.",
+        "Xác định thứ tự: không có ngoặc thì lũy thừa → nhân, chia → cộng, trừ; có ngoặc thì ( ) trước, rồi [ ], rồi { }.",
+        "Làm từng bước nhỏ, mỗi bước chỉ tính một nhóm phép tính và viết lại biểu thức sau bước đó; các phép tính cùng cấp làm từ trái sang phải.",
+        "Kiểm tra lại bằng cách ước lượng hoặc tính lại bước dễ sai (dấu trừ, lũy thừa)."
+      ],
+      "notes": [
+        "Cộng trừ cùng cấp thì làm từ trái sang phải; nhân chia cũng vậy. Ví dụ 12 − 5 + 3 = 10 chứ không phải 4.",
+        "Lũy thừa có số mũ chỉ áp dụng cho số đứng ngay trước nó: 2·3² = 2·9, không phải 6².",
+        "Với nhiều lớp ngoặc, làm từ ngoặc trong cùng ra ngoài.",
+        "Nhân chia trước, cộng trừ sau; không \"gom\" nhầm hai nhóm phép tính trong một bước."
+      ],
+      "sample": {
+        "problem": "Tính 3 + 2·(8 − 5)².",
+        "steps": [
+          "Trong ngoặc trước: 8 − 5 = 3, được 3 + 2·3².",
+          "Lũy thừa: 3² = 9, được 3 + 2·9.",
+          "Nhân: 2·9 = 18; cộng: 3 + 18 = 21."
+        ],
+        "answer": "21"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính 5·2³ − 18 : 3² .",
+      "steps": [
+        "Luỹ thừa: 2³ = 8, 3² = 9.",
+        "5·8 − 18 : 9 = 40 − 2 = 38."
+      ],
+      "expr": "5*8-18/9",
+      "answer": "38"
+    },
+    {
+      "problem": "Dạng biểu thức nhiều dấu ngoặc: 80 − [130 − (12 − 4)²].",
+      "steps": [
+        "(12 − 4)² = 64.",
+        "130 − 64 = 66; 80 − 66 = 14."
+      ],
+      "expr": "80-(130-64)",
+      "answer": "14"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Với biểu thức không có ngoặc gồm cộng, nhân, luỹ thừa, ta làm phép nào trước?",
+      "choices": [
+        "Cộng",
+        "Nhân",
+        "Luỹ thừa",
+        "Từ trái sang phải bất kể phép tính"
+      ],
+      "answer": 2,
+      "explain": "Thứ tự: luỹ thừa, nhân chia, cộng trừ.",
+      "wrong_explain": {
+        "0": "Cộng làm sau cùng.",
+        "1": "Nhân làm sau luỹ thừa.",
+        "3": "Chỉ áp dụng khi cùng loại phép tính."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thứ tự thực hiện các dấu ngoặc là:",
+      "choices": [
+        "{ } → [ ] → ( )",
+        "( ) → [ ] → { }",
+        "[ ] → ( ) → { }",
+        "Tuỳ ý"
+      ],
+      "answer": 1,
+      "explain": "Ngoặc tròn trước rồi đến vuông, nhọn.",
+      "wrong_explain": {
+        "0": "Ngược lại.",
+        "2": "Sai thứ tự.",
+        "3": "Có thứ tự xác định."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 36 : 4·3.",
+      "expr": "36/4*3",
+      "answer": "27",
+      "explain": "Từ trái sang phải: 9·3 = 27."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 100 − 5·4².",
+      "expr": "100-5*16",
+      "answer": "20",
+      "explain": "100 − 80 = 20."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (15 + 35)·4 − 100.",
+      "expr": "50*4-100",
+      "answer": "100",
+      "explain": "200 − 100 = 100."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 2·3² + 4·5.",
+      "expr": "2*9+20",
+      "answer": "38",
+      "explain": "18 + 20 = 38."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 150 : [25·(18 − 4·4)].",
+      "expr": "150/50",
+      "answer": "3",
+      "explain": "18 − 16 = 2; 25·2 = 50; 150 : 50 = 3."
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 12 + 3·4 − 5.",
+      "expr": "12+3*4-5",
+      "answer": "19",
+      "explain": "Nhân trước: 3·4 = 12. Rồi 12 + 12 − 5 = 19.",
+      "dang": "Tính giá trị biểu thức có nhiều phép tính",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (25 − 7) : 3 + 2²·5.",
+      "expr": "(25-7)/3+4*5",
+      "answer": "26",
+      "explain": "Ngoặc: 25 − 7 = 18; 18 : 3 = 6. Lũy thừa: 2² = 4; 4·5 = 20. Cộng: 6 + 20 = 26.",
+      "dang": "Tính giá trị biểu thức có nhiều phép tính",
+      "id": "q11"
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính 3·{120 + [55 − (11 − 3·2)²]}.",
+      "expr": "3*(120+(55-25))",
+      "answer": "450",
+      "explain": "(11 − 6)² = 25; 55 − 25 = 30; 3·150 = 450."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mua 5 quyển vở giá 8 000 đồng và 3 cây bút giá 6 000 đồng. Đưa 100 000 đồng thì được trả lại bao nhiêu?",
+      "expr": "100000-(5*8000+3*6000)",
+      "answer": "42000",
+      "explain": "100 000 − 58 000 = 42 000 đồng."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính 5·3² − 2·(7 − 1)·2.",
+      "expr": "5*9-2*(7-1)*2",
+      "answer": "21",
+      "explain": "5·3² = 5·9 = 45. Ngoặc: 7 − 1 = 6; 2·6·2 = 24. Trừ: 45 − 24 = 21.",
+      "dang": "Tính giá trị biểu thức có nhiều phép tính",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính 100 : {2·[(18 − 3·4) + 4]}.",
+      "expr": "5",
+      "answer": "5",
+      "explain": "Trong ngoặc tròn: 3·4 = 12; 18 − 12 = 6. Ngoặc vuông: 6 + 4 = 10. Ngoặc nhọn: 2·10 = 20. Cuối cùng 100 : 20 = 5.",
+      "dang": "Tính giá trị biểu thức có nhiều phép tính",
+      "id": "q13"
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "id": "bai-5",
+  "grade": 11,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 11",
+  "chapter": "Chương 2. Nitrogen – Sulfur",
+  "lesson": "Bài 5. Ammonia – Muối ammonium",
+  "section": "",
+  "bookPage": 33,
+  "requirements": [
+    "Mô tả công thức Lewis, dạng hình học NH₃; giải thích tính tan, tính base, tính khử của ammonia.",
+    "Vận dụng cân bằng hoá học, tốc độ, enthalpy cho quá trình Haber.",
+    "Trình bày tính chất muối ammonium và nhận biết ion NH₄⁺."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cấu tạo: phân tử NH₃ có dạng chóp tam giác, nguyên tử N còn một cặp electron không liên kết, ba liên kết N–H phân cực (năng lượng liên kết 386 kJ/mol). Giữa các phân tử NH₃ và với nước có liên kết hydrogen nên NH₃ dễ hoá lỏng (−33,3 °C), tan rất nhiều trong nước (1 L nước hoà tan khoảng 700 L NH₃), nhẹ hơn không khí, mùi khai, xốc."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b5-ammonia.svg",
+      "caption": "Phân tử ammonia và liên kết hydrogen"
+    },
+    {
+      "type": "text",
+      "content": "Tính base: NH₃ nhận H⁺ của acid hoặc của nước: NH₃ + H₂O ⇌ NH₄⁺ + OH⁻ (dung dịch base yếu, làm quỳ tím hoá xanh, phenolphthalein hoá hồng). NH₃ + HCl → NH₄Cl; NH₃ + HNO₃ → NH₄NO₃; 2NH₃ + H₂SO₄ → (NH₄)₂SO₄ (sản xuất phân bón)."
+    },
+    {
+      "type": "text",
+      "content": "Tính khử: nitrogen trong NH₃ có số oxi hoá −3 (thấp nhất). 4NH₃ + 3O₂ → 2N₂ + 6H₂O (cháy, lửa vàng); 4NH₃ + 5O₂ → 4NO + 6H₂O (800–900 °C, xúc tác Pt), là giai đoạn sản xuất nitric acid theo phương pháp Ostwald."
+    },
+    {
+      "type": "formula",
+      "content": "NH₃ + H₂O ⇌ NH₄⁺ + OH⁻        4NH₃ + 5O₂ → 4NO + 6H₂O (Pt, 850 °C)"
+    },
+    {
+      "type": "text",
+      "content": "Sản xuất ammonia bằng phản ứng N₂ + 3H₂ ⇌ 2NH₃, ΔH = −91,8 kJ ở 400–450 °C, 150–200 bar, xúc tác Fe. Áp suất cao làm cân bằng chuyển dịch thuận (giảm số mol khí); phản ứng toả nhiệt nên nhiệt độ thấp có lợi cho cân bằng nhưng quá chậm, nên chọn nhiệt độ vừa phải và dùng xúc tác; tách NH₃ ra khỏi hỗn hợp, tuần hoàn N₂, H₂ chưa phản ứng."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b5-haber.svg",
+      "caption": "Điều kiện tối ưu của quá trình Haber"
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng của ammonia: sản xuất phân đạm (urea, ammonium nitrate, ammonium sulfate), nitric acid, tác nhân làm lạnh, dung môi."
+    },
+    {
+      "type": "text",
+      "content": "Muối ammonium (NH₄Cl, NH₄NO₃, (NH₄)₂SO₄, NH₄HCO₃...) dễ tan, phân li hoàn toàn (NH₄Cl → NH₄⁺ + Cl⁻); tác dụng với kiềm khi đun nóng giải phóng khí NH₃ mùi khai làm giấy pH ẩm hoá xanh – dùng nhận biết NH₄⁺: NH₄⁺ + OH⁻ → NH₃↑ + H₂O; kém bền nhiệt, dễ phân huỷ khi đun nóng (NH₄Cl → NH₃ + HCl; NH₄NO₃ có thể phân huỷ gây nổ); dùng làm phân bón, chất tạo xốp."
+    },
+    {
+      "type": "formula",
+      "content": "(NH₄)₂SO₄ + 2NaOH → Na₂SO₄ + 2NH₃↑ + 2H₂O        NH₄⁺ + OH⁻ → NH₃↑ + H₂O"
+    },
+    {
+      "type": "method",
+      "title": "Nhận biết ion NH₄⁺ và tính toán với NH₃",
+      "when": "Đề cho dung dịch muối nghi chứa NH₄⁺; hoặc tính khối lượng, thể tích NH₃ trong phản ứng.",
+      "steps": [
+        "Cho dung dịch kiềm (NaOH), đun nóng nhẹ.",
+        "Đưa giấy pH ẩm (hoặc quỳ tím ẩm) vào miệng ống nghiệm: hoá xanh và có mùi khai chứng tỏ có NH₄⁺.",
+        "Viết phương trình ion rút gọn NH₄⁺ + OH⁻ → NH₃↑ + H₂O.",
+        "Tính toán lượng chất theo tỉ lệ mol của phương trình."
+      ],
+      "notes": [
+        "Phải đun nóng vì NH₃ tan nhiều trong nước.",
+        "NH₄⁺ không nhận biết bằng AgNO₃."
+      ],
+      "sample": {
+        "problem": "Từ 0,1 mol (NH₄)₂SO₄ cho tác dụng với NaOH dư. Tính thể tích NH₃ (đktc, 22,4 L/mol).",
+        "steps": [
+          "n(NH₃) = 2·0,1 = 0,2 mol.",
+          "V = 0,2·22,4 = 4,48 lít (đktc)."
+        ],
+        "answer": "4,48 L"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Điều chế NH₃ từ 5,6 lít N₂ và 16,8 lít H₂ (đktc), hiệu suất 100%. Tính thể tích NH₃ thu được (lít).",
+      "steps": [
+        "N₂ : H₂ = 5,6 : 16,8 = 1 : 3 đúng tỉ lệ phản ứng.",
+        "V(NH₃) = 2·V(N₂) = 11,2 lít."
+      ],
+      "expr": "2*5.6",
+      "answer": "11.2"
+    },
+    {
+      "problem": "Cho 0,2 mol NH₃ tác dụng hết với H₂SO₄ tạo (NH₄)₂SO₄. Tính khối lượng muối (g), M = 132.",
+      "steps": [
+        "2NH₃ + H₂SO₄ → (NH₄)₂SO₄ nên n muối = 0,1 mol.",
+        "m = 0,1·132 = 13,2 g."
+      ],
+      "expr": "0.1*132",
+      "answer": "13.2"
+    },
+    {
+      "problem": "Tính hiệu suất tổng hợp NH₃ (%) nếu từ 1 mol N₂ (H₂ dư) thu được 1,2 mol NH₃.",
+      "steps": [
+        "Lí thuyết thu 2 mol NH₃.",
+        "H = 1,2/2·100 = 60%."
+      ],
+      "expr": "1.2/2*100",
+      "answer": "60"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phân tử NH₃ có dạng hình học:",
+      "choices": [
+        "chóp tam giác",
+        "tam giác phẳng",
+        "đường thẳng",
+        "chữ T"
+      ],
+      "answer": 0,
+      "explain": "N còn một cặp electron không liên kết.",
+      "wrong_explain": {
+        "1": "Có cặp electron không liên kết nên không phẳng.",
+        "2": "Không thẳng.",
+        "3": "Không phải chữ T."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khí nào làm giấy pH ẩm hoá xanh?",
+      "choices": [
+        "NH₃",
+        "HCl",
+        "CO₂",
+        "SO₂"
+      ],
+      "answer": 0,
+      "explain": "NH₃ là khí có tính base.",
+      "wrong_explain": {
+        "1": "HCl là acid.",
+        "2": "CO₂ là oxide acid.",
+        "3": "SO₂ là oxide acid."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nhận biết ion NH₄⁺ bằng:",
+      "choices": [
+        "dung dịch kiềm, đun nóng",
+        "dung dịch BaCl₂",
+        "dung dịch AgNO₃",
+        "quỳ tím"
+      ],
+      "answer": 0,
+      "explain": "Giải phóng NH₃ mùi khai.",
+      "wrong_explain": {
+        "1": "BaCl₂ nhận ion sulfate.",
+        "2": "AgNO₃ nhận halide.",
+        "3": "Không đặc trưng."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "NH₃ tan nhiều trong nước vì:",
+      "choices": [
+        "tạo được liên kết hydrogen với nước",
+        "là phân tử không phân cực",
+        "phản ứng thành kết tủa",
+        "nhẹ hơn không khí"
+      ],
+      "answer": 0,
+      "explain": "NH₃ và H₂O đều có liên kết phân cực.",
+      "wrong_explain": {
+        "1": "NH₃ phân cực.",
+        "2": "Không tạo kết tủa.",
+        "3": "Không liên quan."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tính base của NH₃ thể hiện qua phản ứng:",
+      "choices": [
+        "NH₃ + HCl → NH₄Cl",
+        "4NH₃ + 3O₂ → 2N₂ + 6H₂O",
+        "2NH₃ → N₂ + 3H₂",
+        "NH₃ + CuO → N₂"
+      ],
+      "answer": 0,
+      "explain": "NH₃ nhận H⁺.",
+      "wrong_explain": {
+        "1": "Đó là tính khử.",
+        "2": "Là phản ứng phân huỷ.",
+        "3": "Là tính khử."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong phản ứng 4NH₃ + 5O₂ → 4NO + 6H₂O, NH₃ là:",
+      "choices": [
+        "chất khử",
+        "chất oxi hoá",
+        "acid",
+        "chất xúc tác"
+      ],
+      "answer": 0,
+      "explain": "N từ −3 lên +2.",
+      "wrong_explain": {
+        "1": "Số oxi hoá tăng nên là khử.",
+        "2": "Không phải acid ở đây.",
+        "3": "Pt là xúc tác."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Muối ammonium khi đun nóng thường:",
+      "choices": [
+        "dễ bị phân huỷ",
+        "rất bền nhiệt",
+        "thăng hoa thành khí N₂",
+        "không phản ứng"
+      ],
+      "answer": 0,
+      "explain": "Các muối ammonium kém bền nhiệt.",
+      "wrong_explain": {
+        "1": "Kém bền.",
+        "2": "Không như vậy.",
+        "3": "Có phân huỷ."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tăng áp suất trong tổng hợp NH₃ nhằm:",
+      "choices": [
+        "chuyển cân bằng theo chiều thuận",
+        "chuyển cân bằng theo chiều nghịch",
+        "giảm tốc độ",
+        "giảm hiệu suất"
+      ],
+      "answer": 0,
+      "explain": "Chiều thuận giảm từ 4 xuống 2 mol khí.",
+      "wrong_explain": {
+        "1": "Ngược lại.",
+        "2": "Tăng tốc độ.",
+        "3": "Tăng hiệu suất."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phân đạm ammonium sulfate được điều chế bằng phản ứng:",
+      "choices": [
+        "2NH₃ + H₂SO₄ → (NH₄)₂SO₄",
+        "N₂ + O₂ → NO",
+        "NH₄Cl → NH₃ + HCl",
+        "NH₃ + O₂ → N₂"
+      ],
+      "answer": 0,
+      "explain": "NH₃ trung hoà acid.",
+      "wrong_explain": {
+        "1": "Không tạo muối.",
+        "2": "Phân huỷ.",
+        "3": "Oxi hoá."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Quá trình tuần hoàn N₂, H₂ chưa phản ứng và tách NH₃ lỏng nhằm:",
+      "choices": [
+        "tăng hiệu suất tổng hợp",
+        "giảm áp suất",
+        "tạo xúc tác",
+        "giảm nhiệt độ cân bằng"
+      ],
+      "answer": 0,
+      "explain": "Lấy sản phẩm ra làm cân bằng chuyển thuận.",
+      "wrong_explain": {
+        "1": "Không phải mục tiêu.",
+        "2": "Không tạo xúc tác.",
+        "3": "Không phải mục tiêu."
+      },
+      "id": "q10"
+    }
+  ]
+}

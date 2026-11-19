@@ -1,0 +1,153 @@
+{
+  "id": "bai-8",
+  "grade": 9,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 9, tập 1",
+  "chapter": "Chương III. Căn bậc hai và căn bậc ba",
+  "lesson": "Bài 8. Khai căn bậc hai với phép nhân và phép chia",
+  "section": "",
+  "bookPage": 50,
+  "requirements": [
+    "Vận dụng quy tắc khai căn một tích, một thương; nhân, chia các căn bậc hai."
+  ],
+  "theory": [
+    {
+      "type": "formula",
+      "content": "√(a·b) = √a·√b   (a ≥ 0, b ≥ 0)"
+    },
+    {
+      "type": "formula",
+      "content": "√(a/b) = √a/√b   (a ≥ 0, b > 0)"
+    },
+    {
+      "type": "text",
+      "content": "Quy tắc trên mở rộng cho tích nhiều số không âm. Có thể dùng để tính nhanh, ví dụ √(16·25) = 4·5 = 20; √2·√8 = √16 = 4."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính √(36·49).",
+      "steps": [
+        "= √36·√49 = 6·7.",
+        "= 42."
+      ],
+      "expr": "6*7",
+      "answer": "42"
+    },
+    {
+      "problem": "Dạng nhân hai căn: √12·√3.",
+      "steps": [
+        "= √(12·3) = √36.",
+        "= 6."
+      ],
+      "expr": "6",
+      "answer": "6"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Với a ≥ 0, b ≥ 0, √(ab) bằng:",
+      "choices": [
+        "√a + √b",
+        "a·√b",
+        "√(a + b)",
+        "√a·√b"
+      ],
+      "answer": 3,
+      "explain": "Quy tắc khai căn một tích.",
+      "wrong_explain": {
+        "0": "Không đúng với phép cộng.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "√(a/b) = √a/√b đúng khi:",
+      "choices": [
+        "a, b bất kì",
+        "b = 0",
+        "a ≥ 0, b > 0",
+        "a < 0"
+      ],
+      "answer": 2,
+      "explain": "Điều kiện.",
+      "wrong_explain": {
+        "0": "Cần không âm và b khác 0.",
+        "1": "Không chia cho 0.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính √(25·64).",
+      "expr": "5*8",
+      "answer": "40",
+      "explain": "40."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính √2·√18.",
+      "expr": "6",
+      "answer": "6",
+      "explain": "√36 = 6."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính √50 : √2.",
+      "expr": "5",
+      "answer": "5",
+      "explain": "√25 = 5."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính √(0,09·400).",
+      "expr": "0.3*20",
+      "answer": "6",
+      "explain": "6."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính √(49/81)·9.",
+      "expr": "7",
+      "answer": "7",
+      "explain": "7/9·9 = 7."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính √5·√45.",
+      "expr": "15",
+      "answer": "15",
+      "explain": "√225 = 15."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính √(1,6)·√(10).",
+      "expr": "4",
+      "answer": "4",
+      "explain": "√16 = 4."
+    }
+  ]
+}

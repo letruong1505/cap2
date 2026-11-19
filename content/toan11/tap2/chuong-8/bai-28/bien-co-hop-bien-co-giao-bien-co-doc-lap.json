@@ -1,0 +1,331 @@
+{
+  "id": "bai-28",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 11, tập 2",
+  "chapter": "Chương VIII. Quy tắc tính xác suất",
+  "lesson": "Bài 28. Biến cố hợp, biến cố giao, biến cố độc lập",
+  "section": "",
+  "bookPage": 66,
+  "requirements": [
+    "Nhận biết biến cố hợp, biến cố giao, biến cố xung khắc, biến cố độc lập.",
+    "Xác định các biến cố đó bằng tập hợp kết quả và tính xác suất bằng định nghĩa cổ điển."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cho không gian mẫu Ω của một phép thử, A và B là hai biến cố. Biến cố hợp A ∪ B xảy ra khi A xảy ra hoặc B xảy ra (ít nhất một trong hai). Biến cố giao A ∩ B (còn viết AB) xảy ra khi cả A và B cùng xảy ra. Biến cố đối Ā xảy ra khi A không xảy ra."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b28-hop-giao.svg",
+      "caption": "Biểu đồ Venn: biến cố giao A ∩ B là phần chung của hai tập hợp A và B"
+    },
+    {
+      "type": "text",
+      "content": "Hai biến cố A và B xung khắc nếu chúng không thể cùng xảy ra, tức A ∩ B = ∅. Hai biến cố A và B độc lập nếu việc xảy ra hay không xảy ra của biến cố này không làm ảnh hưởng đến xác suất xảy ra của biến cố kia. Nếu A, B độc lập thì A và B̄, Ā và B, Ā và B̄ cũng độc lập."
+    },
+    {
+      "type": "formula",
+      "content": "Xác suất theo định nghĩa cổ điển: P(A) = n(A)/n(Ω). Với hợp, giao: n(A ∪ B) = n(A) + n(B) − n(A ∩ B)."
+    },
+    {
+      "type": "method",
+      "title": "Xác định biến cố hợp, giao, đối bằng cách liệt kê",
+      "when": "Phép thử có ít kết quả (xúc xắc, thẻ số, đồng xu) và hai biến cố A, B cho bằng lời.",
+      "steps": [
+        "Liệt kê không gian mẫu Ω và các tập con A, B.",
+        "A ∪ B: gộp mọi phần tử của A và của B (mỗi phần tử một lần).",
+        "A ∩ B: các phần tử thuộc cả A và B.",
+        "Ā: các phần tử của Ω không thuộc A."
+      ],
+      "notes": [
+        "Dùng biểu đồ Venn để khỏi sót.",
+        "Kiểm tra n(A ∪ B) = n(A) + n(B) − n(A ∩ B)."
+      ],
+      "sample": {
+        "problem": "Gieo xúc xắc. A: “số chấm chẵn”, B: “số chấm lớn hơn 3”. Tìm A ∪ B, A ∩ B.",
+        "steps": [
+          "A = {2, 4, 6}, B = {4, 5, 6}.",
+          "A ∪ B = {2, 4, 5, 6}; A ∩ B = {4, 6}."
+        ],
+        "answer": "A ∪ B = {2,4,5,6}; A ∩ B = {4,6}"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Nhận biết hai biến cố xung khắc, độc lập",
+      "when": "Đề hỏi hai biến cố có xung khắc không, có độc lập không.",
+      "steps": [
+        "Xung khắc: kiểm tra A ∩ B = ∅ (không thể cùng xảy ra).",
+        "Độc lập: xét xem kết quả của lần/phép thử này có tác động tới xác suất kia không (ví dụ hai lần tung độc lập, bốc có hoàn lại).",
+        "Có thể kiểm tra P(AB) = P(A)P(B).",
+        "Kết luận."
+      ],
+      "notes": [
+        "Xung khắc và độc lập là hai khái niệm khác nhau; hai biến cố có xác suất dương và xung khắc thì không độc lập.",
+        "Bốc không hoàn lại thường không độc lập."
+      ],
+      "sample": {
+        "problem": "Gieo xúc xắc: A = {1, 2}, B = {5, 6}. Hai biến cố này có xung khắc không?",
+        "steps": [
+          "A ∩ B = ∅.",
+          "Vậy xung khắc."
+        ],
+        "answer": "Xung khắc"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tính xác suất của biến cố hợp, giao bằng đếm",
+      "when": "Cần tính P(A ∪ B), P(A ∩ B) bằng đếm số kết quả thuận lợi.",
+      "steps": [
+        "Tính n(Ω).",
+        "Đếm n(A ∪ B) hoặc n(A ∩ B) bằng liệt kê hoặc công thức.",
+        "P = số kết quả thuận lợi / n(Ω).",
+        "Rút gọn phân số."
+      ],
+      "notes": [
+        "Có thể dùng P(Ā) = 1 − P(A) cho dạng “ít nhất một”.",
+        "Cần đảm bảo các kết quả đồng khả năng."
+      ],
+      "sample": {
+        "problem": "Gieo xúc xắc: A = {2, 4, 6}, B = {4, 5, 6}. Tính P(A ∪ B).",
+        "steps": [
+          "n(A ∪ B) = 4, n(Ω) = 6.",
+          "P = 4/6 = 2/3."
+        ],
+        "answer": "2/3"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Gieo xúc xắc: A = {2, 4, 6}, B = {4, 5, 6}. Số phần tử của A ∪ B?",
+      "steps": [
+        "A ∪ B = {2, 4, 5, 6}.",
+        "n = 4."
+      ],
+      "expr": "3+3-2",
+      "answer": "4"
+    },
+    {
+      "problem": "Cùng phép thử, tính P(A ∩ B) (nhập a/b).",
+      "steps": [
+        "A ∩ B = {4, 6}.",
+        "P = 2/6 = 1/3."
+      ],
+      "expr": "2/6",
+      "answer": "1/3"
+    },
+    {
+      "problem": "Thẻ đánh số 1 đến 10. A: chia hết cho 2, B: chia hết cho 3. Số phần tử của A ∪ B?",
+      "steps": [
+        "A = 5 phần tử, B = 3 phần tử, A ∩ B = {6}.",
+        "5 + 3 − 1 = 7."
+      ],
+      "expr": "5+3-1",
+      "answer": "7"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Gieo một xúc xắc. Không gian mẫu có bao nhiêu phần tử?",
+      "expr": "6",
+      "answer": "6",
+      "explain": "Ω = {1, 2, 3, 4, 5, 6}.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Gieo xúc xắc, A: “chẵn” có bao nhiêu kết quả thuận lợi?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "A = {2, 4, 6}.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Biến cố A ∪ B xảy ra khi:",
+      "choices": [
+        "A hoặc B xảy ra",
+        "cả A và B xảy ra",
+        "A không xảy ra",
+        "A xảy ra, B không xảy ra"
+      ],
+      "answer": 0,
+      "explain": "Biến cố hợp xảy ra khi có ít nhất một trong hai biến cố xảy ra.",
+      "wrong_explain": {
+        "1": "Đó là biến cố giao.",
+        "2": "Đó là biến cố đối của A.",
+        "3": "Đó là A ∩ B̄."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai biến cố A, B xung khắc khi:",
+      "choices": [
+        "A ∩ B = ∅",
+        "A ∪ B = Ω",
+        "A = B",
+        "P(A) = P(B)"
+      ],
+      "answer": 0,
+      "explain": "Không thể cùng xảy ra.",
+      "wrong_explain": {
+        "1": "Đó là điều kiện hai biến cố đối nhau.",
+        "2": "A = B là hai biến cố trùng nhau.",
+        "3": "Xác suất bằng nhau không đủ để xung khắc."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Gieo xúc xắc: A = {2, 4, 6}, B = {4, 5, 6}. n(A ∪ B) bằng:",
+      "expr": "3+3-2",
+      "answer": "4",
+      "explain": "3 + 3 − 2 = 4.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cùng phép thử, n(A ∩ B) bằng:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "A ∩ B = {4, 6}.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cùng phép thử, P(A ∩ B) (nhập a/b):",
+      "expr": "2/6",
+      "answer": "1/3",
+      "explain": "P = 2/6 = 1/3.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cùng phép thử, P(A ∪ B) (nhập a/b):",
+      "expr": "4/6",
+      "answer": "2/3",
+      "explain": "P = 4/6 = 2/3.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Thẻ đánh số 1 đến 10. A: chia hết cho 2, B: chia hết cho 3. n(A ∪ B) là:",
+      "expr": "5+3-1",
+      "answer": "7",
+      "explain": "A có 5, B có 3, giao có 1 (số 6): 7.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Thẻ 1 đến 10, A: chia hết cho 2, B: chia hết cho 3. P(A ∩ B) (nhập a/b):",
+      "expr": "1/10",
+      "answer": "1/10",
+      "explain": "A ∩ B = {6}.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Gieo xúc xắc: A = {1, 2}, B = {5, 6}. A và B:",
+      "choices": [
+        "xung khắc",
+        "không xung khắc",
+        "cùng một biến cố",
+        "đối nhau"
+      ],
+      "answer": 0,
+      "explain": "A ∩ B = ∅.",
+      "wrong_explain": {
+        "1": "Không có kết quả chung.",
+        "2": "Hai biến cố khác nhau.",
+        "3": "A ∪ B ≠ Ω nên không đối nhau."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Gieo xúc xắc: A = “chia hết cho 3”, B = “chẵn”. n(A ∩ B) bằng:",
+      "expr": "1",
+      "answer": "1",
+      "explain": "A ∩ B = {6}.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Gieo xúc xắc: A = “chia hết cho 3”, B = “chẵn”. P(A ∪ B) (nhập a/b):",
+      "expr": "(2+3-1)/6",
+      "answer": "2/3",
+      "explain": "A ∪ B = {2, 3, 4, 6} nên 4/6 = 2/3.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tung hai đồng xu. A: “đồng thứ nhất ngửa”, B: “đồng thứ hai ngửa”. P(A ∩ B) (nhập a/b):",
+      "expr": "1/4",
+      "answer": "1/4",
+      "explain": "Chỉ kết quả NN: 1/4.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lớp 40 học sinh: 25 em thích Toán, 18 em thích Lí, 10 em thích cả hai. Số em thích ít nhất một môn là:",
+      "expr": "25+18-10",
+      "answer": "33",
+      "explain": "n(A ∪ B) = 33.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lớp 40 em, trong đó 33 em thích ít nhất một trong hai môn. Số em không thích môn nào là:",
+      "expr": "40-33",
+      "answer": "7",
+      "explain": "Số còn lại là 7.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai biến cố A, B có P(A) > 0, P(B) > 0 và xung khắc. Khi đó:",
+      "choices": [
+        "A, B không độc lập",
+        "A, B độc lập",
+        "A ⊂ B",
+        "A = B̄ luôn đúng"
+      ],
+      "answer": 0,
+      "explain": "Nếu độc lập thì P(AB) = P(A)P(B) > 0, nhưng xung khắc cho P(AB) = 0.",
+      "wrong_explain": {
+        "1": "Độc lập sẽ mâu thuẫn với xung khắc.",
+        "2": "Không có quan hệ bao hàm.",
+        "3": "Chưa chắc là biến cố đối."
+      },
+      "id": "q17"
+    }
+  ]
+}

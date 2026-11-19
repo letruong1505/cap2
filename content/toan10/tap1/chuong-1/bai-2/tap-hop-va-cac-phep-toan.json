@@ -1,0 +1,393 @@
+{
+  "id": "bai-2",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 1",
+  "chapter": "Chương I. Mệnh đề và tập hợp",
+  "lesson": "Bài 2. Tập hợp và các phép toán trên tập hợp",
+  "section": "",
+  "bookPage": 12,
+  "requirements": [
+    "Mô tả tập hợp bằng liệt kê phần tử hoặc chỉ ra tính chất đặc trưng; nhận biết tập con, hai tập hợp bằng nhau.",
+    "Thực hiện các phép toán giao, hợp, hiệu, phần bù trên tập hợp, đặc biệt trên các tập con của ℝ (khoảng, đoạn, nửa khoảng)."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tập hợp có thể được mô tả bằng cách liệt kê các phần tử (A = {1; 2; 3}) hoặc chỉ ra tính chất đặc trưng (A = {x ∈ ℕ | 0 < x < 4}). Tập hợp không chứa phần tử nào là tập rỗng ∅. Số phần tử của tập hữu hạn A kí hiệu n(A)."
+    },
+    {
+      "type": "text",
+      "content": "Tập con: A ⊂ B nếu mọi phần tử của A đều thuộc B. Hai tập hợp bằng nhau: A = B khi A ⊂ B và B ⊂ A. Quy ước ∅ ⊂ A với mọi tập A. Một tập có n phần tử có 2ⁿ tập con."
+    },
+    {
+      "type": "text",
+      "content": "Các tập hợp số: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ. Các tập con thường dùng của ℝ: khoảng (a; b) = {x | a < x < b}; đoạn [a; b] = {x | a ≤ x ≤ b}; nửa khoảng [a; b), (a; b]; các khoảng vô hạn (a; +∞), (−∞; b], ... Kí hiệu +∞, −∞ không phải là số."
+    },
+    {
+      "type": "text",
+      "content": "Giao A ∩ B gồm các phần tử vừa thuộc A vừa thuộc B. Hợp A ∪ B gồm các phần tử thuộc A hoặc thuộc B. Hiệu A \\ B gồm các phần tử thuộc A nhưng không thuộc B. Nếu A ⊂ U thì phần bù của A trong U là C_U A = U \\ A."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t10-b2-ven.svg",
+      "caption": "Biểu đồ Ven minh hoạ giao, hợp, hiệu của hai tập hợp"
+    },
+    {
+      "type": "formula",
+      "content": "n(A ∪ B) = n(A) + n(B) − n(A ∩ B)"
+    },
+    {
+      "type": "method",
+      "title": "Tìm giao, hợp, hiệu của các tập con của ℝ",
+      "when": "Đề cho các khoảng, đoạn, nửa khoảng và yêu cầu tìm A ∩ B, A ∪ B, A \\ B hoặc C_ℝ A.",
+      "steps": [
+        "Biểu diễn từng tập trên trục số; dùng ngoặc tròn tại đầu mút không thuộc tập, ngoặc vuông tại đầu mút thuộc tập.",
+        "Giao: lấy phần chung của hai tập; hợp: gộp hai tập; hiệu A \\ B: lấy phần của A nằm ngoài B.",
+        "Xác định đầu mút của kết quả có thuộc tập hay không rồi viết bằng kí hiệu khoảng, đoạn."
+      ],
+      "notes": [
+        "Với giao, đầu mút thuộc kết quả khi thuộc cả hai tập; với hợp, khi thuộc ít nhất một tập.",
+        "C_ℝ (a; b) = (−∞; a] ∪ [b; +∞).",
+        "Hai khoảng rời nhau thì giao là ∅ và hợp phải viết bằng dấu ∪, không gộp thành một khoảng."
+      ],
+      "sample": {
+        "problem": "Cho A = [−2; 3) và B = (1; 5]. Tìm A ∩ B, A ∪ B, A \\ B.",
+        "steps": [
+          "A ∩ B = (1; 3): phần chung, 1 không thuộc B và 3 không thuộc A.",
+          "A ∪ B = [−2; 5]: −2 thuộc A, 5 thuộc B.",
+          "A \\ B = [−2; 1]: phần của A ngoài B, số 1 không thuộc B nên vẫn giữ lại."
+        ],
+        "answer": "A ∩ B = (1; 3)"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho A = {x ∈ ℕ | x là ước của 12} và B = {x ∈ ℕ | x là ước của 18}. Liệt kê A, B và tìm A ∩ B, A ∪ B.",
+      "steps": [
+        "A = {1; 2; 3; 4; 6; 12}, B = {1; 2; 3; 6; 9; 18}.",
+        "A ∩ B = {1; 2; 3; 6} (các ước chung).",
+        "A ∪ B = {1; 2; 3; 4; 6; 9; 12; 18}, có n(A ∪ B) = 6 + 6 − 4 = 8 phần tử."
+      ],
+      "expr": "6+6-4",
+      "answer": "8"
+    },
+    {
+      "problem": "Lớp 10A có 35 học sinh, trong đó 20 em thích bóng đá, 18 em thích bóng rổ và 8 em thích cả hai môn. Hỏi có bao nhiêu em không thích môn nào trong hai môn đó?",
+      "steps": [
+        "Gọi A, B là tập học sinh thích bóng đá, bóng rổ: n(A) = 20, n(B) = 18, n(A ∩ B) = 8.",
+        "n(A ∪ B) = 20 + 18 − 8 = 30 em thích ít nhất một môn.",
+        "Số em không thích môn nào: 35 − 30 = 5."
+      ],
+      "expr": "35-(20+18-8)",
+      "answer": "5"
+    },
+    {
+      "problem": "Cho A = (−∞; 2] và B = (0; +∞). Tìm A ∩ B, A ∪ B và C_ℝ A.",
+      "steps": [
+        "A ∩ B = (0; 2] vì 0 không thuộc B, 2 thuộc A.",
+        "A ∪ B = ℝ = (−∞; +∞).",
+        "C_ℝ A = ℝ \\ A = (2; +∞)."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tập hợp A = {x ∈ ℕ | x < 4} viết dưới dạng liệt kê là:",
+      "choices": [
+        "{0; 1; 2; 3}",
+        "{1; 2; 3}",
+        "{0; 1; 2; 3; 4}",
+        "{1; 2; 3; 4}"
+      ],
+      "answer": 0,
+      "explain": "Số tự nhiên nhỏ hơn 4 gồm 0, 1, 2, 3.",
+      "wrong_explain": {
+        "1": "Thiếu số 0.",
+        "2": "4 không nhỏ hơn 4.",
+        "3": "Thiếu 0, thừa 4."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khẳng định nào đúng?",
+      "choices": [
+        "ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ",
+        "ℤ ⊂ ℕ ⊂ ℚ ⊂ ℝ",
+        "ℕ ⊂ ℚ ⊂ ℤ ⊂ ℝ",
+        "ℝ ⊂ ℚ ⊂ ℤ ⊂ ℕ"
+      ],
+      "answer": 0,
+      "explain": "Mỗi tập số là tập con của tập số tiếp theo.",
+      "wrong_explain": {
+        "1": "ℤ chứa ℕ, không phải ngược lại.",
+        "2": "ℤ ⊂ ℚ.",
+        "3": "Ngược thứ tự."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tập hợp [2; 5) gồm các số thực x thoả mãn:",
+      "choices": [
+        "2 ≤ x < 5",
+        "2 < x < 5",
+        "2 < x ≤ 5",
+        "2 ≤ x ≤ 5"
+      ],
+      "answer": 0,
+      "explain": "Ngoặc vuông: thuộc; ngoặc tròn: không thuộc.",
+      "wrong_explain": {
+        "1": "Đó là (2; 5).",
+        "2": "Đó là (2; 5].",
+        "3": "Đó là [2; 5]."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho A = {1; 2; 3} và B = {2; 3; 4}. Tập A \\ B là:",
+      "choices": [
+        "{1}",
+        "{4}",
+        "{2; 3}",
+        "{1; 4}"
+      ],
+      "answer": 0,
+      "explain": "Phần tử thuộc A nhưng không thuộc B.",
+      "wrong_explain": {
+        "1": "{4} là B \\ A.",
+        "2": "Đó là A ∩ B.",
+        "3": "Không phải hiệu."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tập hợp nào là tập rỗng?",
+      "choices": [
+        "{x ∈ ℝ | x² + 1 = 0}",
+        "{x ∈ ℝ | x² = 0}",
+        "{x ∈ ℕ | x < 1}",
+        "{0}"
+      ],
+      "answer": 0,
+      "explain": "x² + 1 = 0 vô nghiệm trên ℝ.",
+      "wrong_explain": {
+        "1": "Có phần tử 0.",
+        "2": "Có phần tử 0.",
+        "3": "Có một phần tử là 0."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tập hợp A = {a; b; c} có bao nhiêu tập con?",
+      "expr": "2*2*2",
+      "answer": "8",
+      "explain": "Tập có n phần tử có 2ⁿ tập con: 2³ = 8.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho A = {1; 2; 3; 4; 5; 6} và B = {4; 5; 6; 7; 8}. Số phần tử của A ∪ B là:",
+      "expr": "6+5-3",
+      "answer": "8",
+      "explain": "n(A ∪ B) = 6 + 5 − 3 = 8.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho A = (−1; 4] và B = [2; 6). Tập A ∩ B là:",
+      "choices": [
+        "[2; 4]",
+        "(−1; 6)",
+        "(2; 4)",
+        "[2; 4)"
+      ],
+      "answer": 0,
+      "explain": "Phần chung từ 2 (thuộc B) đến 4 (thuộc A).",
+      "wrong_explain": {
+        "1": "Đó là A ∪ B.",
+        "2": "2 và 4 đều thuộc giao.",
+        "3": "4 thuộc A và B nên thuộc giao."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho A = (−∞; 3) và B = [1; +∞). Tập A ∪ B là:",
+      "choices": [
+        "ℝ",
+        "[1; 3)",
+        "(−∞; 1)",
+        "(3; +∞)"
+      ],
+      "answer": 0,
+      "explain": "Hai tập phủ kín trục số.",
+      "wrong_explain": {
+        "1": "Đó là A ∩ B.",
+        "2": "Chỉ một phần của A.",
+        "3": "Chỉ một phần của B."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phần bù của A = [0; +∞) trong ℝ là:",
+      "choices": [
+        "(−∞; 0)",
+        "(−∞; 0]",
+        "(0; +∞)",
+        "ℝ"
+      ],
+      "answer": 0,
+      "explain": "C_ℝ A gồm các số thực không thuộc A, tức x < 0.",
+      "wrong_explain": {
+        "1": "0 thuộc A nên không thuộc phần bù.",
+        "2": "Đó là một phần của A.",
+        "3": "Sai."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho A = {x ∈ ℤ | −2 ≤ x < 3}. Số phần tử của A là:",
+      "choices": [
+        "5",
+        "4",
+        "6",
+        "3"
+      ],
+      "answer": 0,
+      "explain": "A = {−2; −1; 0; 1; 2}.",
+      "wrong_explain": {
+        "1": "Thiếu một phần tử.",
+        "2": "3 không thuộc A.",
+        "3": "Thiếu phần tử."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho A = (−3; 2] và B = (0; 5). Tập A \\ B = (−3; a]. Giá trị của a là:",
+      "expr": "0",
+      "answer": "0",
+      "explain": "A \\ B là phần của A không thuộc B, tức x ≤ 0: (−3; 0].",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lớp 10B có 40 học sinh; 25 em biết bơi, 22 em biết đi xe đạp, 4 em không biết cả hai. Số em biết cả bơi và đi xe đạp là:",
+      "expr": "25+22-(40-4)",
+      "answer": "11",
+      "explain": "n(A ∪ B) = 40 − 4 = 36; n(A ∩ B) = 25 + 22 − 36 = 11.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho A = [m; m + 2] và B = [1; 6]. Có bao nhiêu giá trị nguyên của m để A ⊂ B?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Cần m ≥ 1 và m + 2 ≤ 6, tức 1 ≤ m ≤ 4: có 4 giá trị nguyên.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho A = (−∞; m) và B = [3; +∞). Điều kiện của m để A ∩ B = ∅ là:",
+      "choices": [
+        "m ≤ 3",
+        "m < 3",
+        "m ≥ 3",
+        "m > 3"
+      ],
+      "answer": 0,
+      "explain": "A ∩ B = ∅ khi mọi x < m đều nhỏ hơn 3, tức m ≤ 3 (m = 3 vẫn được vì 3 ∉ A).",
+      "wrong_explain": {
+        "1": "m = 3 vẫn cho giao rỗng.",
+        "2": "Khi m > 3 giao khác rỗng.",
+        "3": "Giao khác rỗng."
+      },
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tập hợp {x ∈ ℝ | (x − 1)(x² − 4) = 0} có bao nhiêu phần tử?",
+      "choices": [
+        "3",
+        "2",
+        "1",
+        "4"
+      ],
+      "answer": 0,
+      "explain": "Nghiệm: x = 1, x = 2, x = −2.",
+      "wrong_explain": {
+        "1": "Thiếu nghiệm.",
+        "2": "Thiếu nghiệm.",
+        "3": "Chỉ có 3 nghiệm."
+      },
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho A = [−1; 3] và B = (m; +∞). Điều kiện để A \\ B = A là:",
+      "choices": [
+        "m ≥ 3",
+        "m > 3",
+        "m ≤ −1",
+        "m < 3"
+      ],
+      "answer": 0,
+      "explain": "A \\ B = A khi A ∩ B = ∅, tức mọi x ≤ 3 đều không lớn hơn m: m ≥ 3.",
+      "wrong_explain": {
+        "1": "m = 3 vẫn được vì 3 ∉ B.",
+        "2": "Khi đó B chứa A.",
+        "3": "Giao khác rỗng."
+      },
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Trong 100 học sinh, 60 em học tiếng Anh, 45 em học tiếng Pháp, 30 em học cả hai. Số em không học môn nào là:",
+      "expr": "100-(60+45-30)",
+      "answer": "25",
+      "explain": "n(A ∪ B) = 60 + 45 − 30 = 75, còn lại 25 em.",
+      "id": "q18"
+    }
+  ]
+}

@@ -1,0 +1,340 @@
+{
+  "id": "bai-2",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 11, tập 1",
+  "chapter": "Chương I. Hàm số lượng giác và phương trình lượng giác",
+  "lesson": "Bài 2. Công thức lượng giác",
+  "section": "",
+  "bookPage": 17,
+  "requirements": [
+    "Vận dụng công thức cộng, nhân đôi, hạ bậc để tính giá trị và rút gọn biểu thức lượng giác.",
+    "Vận dụng công thức biến đổi tích thành tổng và tổng thành tích."
+  ],
+  "theory": [
+    {
+      "type": "formula",
+      "content": "Công thức cộng: cos(a − b) = cos a cos b + sin a sin b;  cos(a + b) = cos a cos b − sin a sin b;  sin(a + b) = sin a cos b + cos a sin b;  sin(a − b) = sin a cos b − cos a sin b."
+    },
+    {
+      "type": "formula",
+      "content": "tan(a + b) = (tan a + tan b)/(1 − tan a tan b);   tan(a − b) = (tan a − tan b)/(1 + tan a tan b)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b2-cong-thuc-cong.svg",
+      "caption": "Hai điểm trên đường tròn lượng giác biểu diễn a và b: chứng minh cos(a − b)"
+    },
+    {
+      "type": "formula",
+      "content": "Nhân đôi: sin 2a = 2 sin a cos a;  cos 2a = cos²a − sin²a = 2cos²a − 1 = 1 − 2 sin²a;  tan 2a = 2 tan a / (1 − tan²a)."
+    },
+    {
+      "type": "formula",
+      "content": "Hạ bậc: sin²a = (1 − cos 2a)/2;  cos²a = (1 + cos 2a)/2."
+    },
+    {
+      "type": "formula",
+      "content": "Tích thành tổng: cos a cos b = ½[cos(a − b) + cos(a + b)];  sin a sin b = ½[cos(a − b) − cos(a + b)];  sin a cos b = ½[sin(a + b) + sin(a − b)]."
+    },
+    {
+      "type": "formula",
+      "content": "Tổng thành tích: cos u + cos v = 2 cos((u+v)/2) cos((u−v)/2);  cos u − cos v = −2 sin((u+v)/2) sin((u−v)/2);  sin u + sin v = 2 sin((u+v)/2) cos((u−v)/2);  sin u − sin v = 2 cos((u+v)/2) sin((u−v)/2)."
+    },
+    {
+      "type": "method",
+      "title": "Tính giá trị lượng giác bằng công thức cộng",
+      "when": "Cần tính sin, cos, tan của góc như 15°, 75°, 105°, hoặc của a ± b khi biết sin, cos của a và b.",
+      "steps": [
+        "Tách góc thành tổng/hiệu của hai góc đặc biệt (15° = 45° − 30°, 75° = 45° + 30°).",
+        "Chọn công thức cộng phù hợp.",
+        "Thay các giá trị sin, cos đã biết (nếu thiếu, tính từ sin² + cos² = 1 và xét dấu).",
+        "Tính và rút gọn."
+      ],
+      "notes": [
+        "Cẩn thận dấu giữa hai số hạng của cos(a ± b): cos(a + b) có dấu TRỪ.",
+        "Khi biết sin a, cần xác định cos a theo góc phần tư trước."
+      ],
+      "sample": {
+        "problem": "Cho sin a = 3/5, cos b = 5/13, 0 < a, b < π/2. Tính cos(a + b).",
+        "steps": [
+          "cos a = 4/5, sin b = 12/13.",
+          "cos(a + b) = (4/5)(5/13) − (3/5)(12/13) = 20/65 − 36/65 = −16/65."
+        ],
+        "answer": "−16/65"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Công thức nhân đôi và hạ bậc",
+      "when": "Cho sin a hoặc cos a (hoặc tổng sin a + cos a), cần tính sin 2a, cos 2a, tan 2a; hoặc cần hạ bậc sin², cos².",
+      "steps": [
+        "Tính đủ sin a và cos a (xét dấu theo khoảng của a).",
+        "Áp dụng sin 2a = 2 sin a cos a, cos 2a = 1 − 2 sin²a (hoặc 2cos²a − 1).",
+        "tan 2a = sin 2a / cos 2a.",
+        "Hạ bậc: thay sin²a, cos²a bằng biểu thức theo cos 2a để tích phân, giải phương trình."
+      ],
+      "notes": [
+        "Có ba dạng của cos 2a: chọn dạng chỉ chứa giá trị đã biết.",
+        "Cho sin a + cos a = m thì sin a cos a = (m² − 1)/2."
+      ],
+      "sample": {
+        "problem": "Cho sin a = 3/5, π/2 < a < π. Tính sin 2a, cos 2a.",
+        "steps": [
+          "cos a = −4/5.",
+          "sin 2a = 2·(3/5)(−4/5) = −24/25.",
+          "cos 2a = 1 − 2·9/25 = 7/25."
+        ],
+        "answer": "sin 2a = −24/25; cos 2a = 7/25"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Biến đổi tích ↔ tổng và rút gọn biểu thức",
+      "when": "Cần rút gọn tích sin, cos của các cung liên tiếp, hoặc chuyển tổng hai sin/cos thành tích để đặt nhân tử chung.",
+      "steps": [
+        "Nhận dạng: tích hai hàm → dùng công thức tích thành tổng; tổng hai hàm → dùng tổng thành tích.",
+        "Áp dụng công thức, chú ý chia 1/2 hoặc nhân 2.",
+        "Tính các giá trị lượng giác đặc biệt xuất hiện.",
+        "Rút gọn, thường dẫn đến nhân tử chung hoặc giá trị cụ thể."
+      ],
+      "notes": [
+        "Với biểu thức dạng cos x · cos 2x · cos 4x…, nhân hai vế với sin x để dùng sin 2a = 2 sin a cos a liên tiếp.",
+        "Luôn kiểm tra điều kiện mẫu số khác 0."
+      ],
+      "sample": {
+        "problem": "Tính sin 75° cos 15° bằng công thức tích thành tổng.",
+        "steps": [
+          "sin a cos b = ½[sin(a + b) + sin(a − b)].",
+          "= ½[sin 90° + sin 60°] = ½[1 + √3/2] = (2 + √3)/4."
+        ],
+        "answer": "(2 + √3)/4"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho sin a = 3/5, cos b = 5/13 với 0 < a, b < π/2. Tính cos(a + b).",
+      "steps": [
+        "cos a = 4/5; sin b = 12/13.",
+        "cos(a + b) = (4/5)(5/13) − (3/5)(12/13) = −16/65."
+      ],
+      "expr": "(4/5)*(5/13)-(3/5)*(12/13)",
+      "answer": "-16/65"
+    },
+    {
+      "problem": "Cho sin a = 3/5 với π/2 < a < π. Tính sin 2a.",
+      "steps": [
+        "cos a = −4/5.",
+        "sin 2a = 2·(3/5)·(−4/5) = −24/25."
+      ],
+      "expr": "2*(3/5)*(-4/5)",
+      "answer": "-24/25"
+    },
+    {
+      "problem": "Cho cos a = 1/3. Tính cos 2a.",
+      "steps": [
+        "cos 2a = 2cos²a − 1.",
+        "= 2/9 − 1 = −7/9."
+      ],
+      "expr": "2*(1/3)*(1/3)-1",
+      "answer": "-7/9"
+    },
+    {
+      "problem": "Tính tan(a + b) biết tan a = 1/2, tan b = 1/3.",
+      "steps": [
+        "tan(a + b) = (tan a + tan b)/(1 − tan a tan b).",
+        "= (1/2 + 1/3)/(1 − 1/6) = (5/6)/(5/6) = 1."
+      ],
+      "expr": "(1/2+1/3)/(1-(1/2)*(1/3))",
+      "answer": "1"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cho sin a = 3/5, cos a = 4/5. Giá trị sin 2a là:",
+      "expr": "2*(3/5)*(4/5)",
+      "answer": "24/25",
+      "explain": "sin 2a = 2 sin a cos a = 2·3/5·4/5 = 24/25.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cho cos a = 1/3. Giá trị cos 2a là:",
+      "expr": "2*(1/3)*(1/3)-1",
+      "answer": "-7/9",
+      "explain": "cos 2a = 2cos²a − 1 = 2/9 − 1 = −7/9.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Cho sin a = 1/2. Giá trị cos 2a = 1 − 2sin²a là:",
+      "expr": "1-2*(1/2)*(1/2)",
+      "answer": "1/2",
+      "explain": "cos 2a = 1 − 2·1/4 = 1/2.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Giá trị của cos²a nếu cos 2a = 1/5 (công thức hạ bậc) là:",
+      "expr": "(1+1/5)/2",
+      "answer": "3/5",
+      "explain": "cos²a = (1 + cos 2a)/2 = (6/5)/2 = 3/5.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Công thức đúng là:",
+      "choices": [
+        "sin(a + b) = sin a cos b + cos a sin b",
+        "sin(a + b) = sin a cos b − cos a sin b",
+        "sin(a + b) = cos a cos b + sin a sin b",
+        "sin(a + b) = sin a sin b + cos a cos b"
+      ],
+      "answer": 0,
+      "explain": "Công thức cộng của sin có dấu cộng giữa hai tích hỗn hợp.",
+      "wrong_explain": {
+        "1": "Dấu trừ là của sin(a − b).",
+        "2": "Đây là công thức của cos(a − b).",
+        "3": "Đây cũng là biểu thức của cos(a − b)."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho tan a = 1/2, tan b = 1/3. Giá trị tan(a + b) là:",
+      "expr": "(1/2+1/3)/(1-(1/2)*(1/3))",
+      "answer": "1",
+      "explain": "tan(a + b) = (5/6)/(1 − 1/6) = 1.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho sin a = 3/5, cos b = 5/13 (0 < a, b < π/2). Giá trị cos(a + b) là:",
+      "expr": "(4/5)*(5/13)-(3/5)*(12/13)",
+      "answer": "-16/65",
+      "explain": "cos a = 4/5, sin b = 12/13: cos(a + b) = 20/65 − 36/65 = −16/65.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho sin a = 3/5 và π/2 < a < π. Giá trị sin 2a là:",
+      "expr": "2*(3/5)*(-4/5)",
+      "answer": "-24/25",
+      "explain": "cos a = −4/5 nên sin 2a = 2·(3/5)·(−4/5) = −24/25.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho sin a = 3/5 và π/2 < a < π. Giá trị tan 2a là:",
+      "expr": "(-24/25)/(7/25)",
+      "answer": "-24/7",
+      "explain": "sin 2a = −24/25, cos 2a = 1 − 18/25 = 7/25; tan 2a = −24/7.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giá trị của sin 15°·cos 15° là (dùng sin 2a = 2 sin a cos a):",
+      "expr": "1/2*1/2",
+      "answer": "1/4",
+      "explain": "sin 15° cos 15° = ½ sin 30° = ½ · ½ = 1/4.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Biết cos 2a = −7/25. Giá trị sin²a là:",
+      "expr": "(1+7/25)/2",
+      "answer": "16/25",
+      "explain": "sin²a = (1 − cos 2a)/2 = (32/25)/2 = 16/25.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho sin a + cos a = 1/2. Giá trị sin 2a là:",
+      "expr": "((1/2)*(1/2)-1)",
+      "answer": "-3/4",
+      "explain": "Bình phương hai vế: 1 + sin 2a = 1/4 nên sin 2a = −3/4.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị của sin 20°cos 10° + cos 20°sin 10° là:",
+      "expr": "1/2",
+      "answer": "1/2",
+      "explain": "Công thức cộng: = sin(20° + 10°) = sin 30° = 1/2.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị của cos 75°·cos 15° bằng (cos 90° + cos 60°)/2 = ?",
+      "expr": "(0+1/2)/2",
+      "answer": "1/4",
+      "explain": "cos a cos b = ½[cos(a − b) + cos(a + b)] = ½[cos 60° + cos 90°] = 1/4.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Biết tan a = 2. Giá trị của tan 2a là:",
+      "expr": "(2*2)/(1-2*2)",
+      "answer": "-4/3",
+      "explain": "tan 2a = 2 tan a/(1 − tan²a) = 4/(1 − 4) = −4/3.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho cos a = 3/5 và 0 < a < π/2. Giá trị sin a + cos a là:",
+      "expr": "4/5+3/5",
+      "answer": "7/5",
+      "explain": "sin a = 4/5 (a ở góc phần tư I) nên sin a + cos a = 7/5.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho cos a = 1/4. Giá trị cos 4a là:",
+      "expr": "2*(2*(1/4)*(1/4)-1)*(2*(1/4)*(1/4)-1)-1",
+      "answer": "17/32",
+      "explain": "cos 2a = 2/16 − 1 = −7/8; cos 4a = 2cos²2a − 1 = 2·49/64 − 1 = 17/32.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Biểu thức sin x + sin 3x bằng:",
+      "choices": [
+        "2 sin 2x cos x",
+        "2 cos 2x cos x",
+        "2 sin 2x sin x",
+        "sin 4x"
+      ],
+      "answer": 0,
+      "explain": "sin u + sin v = 2 sin((u+v)/2) cos((u−v)/2) = 2 sin 2x cos x.",
+      "wrong_explain": {
+        "1": "Đó là công thức của cos x + cos 3x.",
+        "2": "Công thức tổng thành tích của sin + sin không cho tích hai sin.",
+        "3": "sin 4x không bằng tổng sin x + sin 3x."
+      },
+      "id": "q18"
+    }
+  ]
+}

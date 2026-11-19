@@ -1,0 +1,299 @@
+{
+  "id": "bai-19",
+  "grade": 12,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Hóa học 12",
+  "chapter": "Chương 6. Đại cương về kim loại",
+  "lesson": "Bài 19. Tính chất vật lí và tính chất hóa học của kim loại",
+  "section": "",
+  "bookPage": 89,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tính chất vật lí chung: kim loại có tính dẻo (dễ rèn, dát mỏng, kéo sợi), dẫn điện, dẫn nhiệt và ánh kim; các tính chất này do electron tự do trong mạng tinh thể gây ra. Tính dẻo do các lớp ion trượt lên nhau mà vẫn được các electron tự do giữ lại; kim loại dẻo nhất là Au, Ag, Al, Cu, Sn. Dẫn điện: electron tự do chuyển động có hướng khi có hiệu điện thế; Ag dẫn điện tốt nhất, sau đó là Cu, Au, Al. Dẫn nhiệt: electron truyền động năng. Ánh kim: electron tự do phản xạ hầu hết ánh sáng nhìn thấy."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất vật lí khác: khối lượng riêng (Li nhẹ nhất 0,534 g/cm³; Os nặng nhất 22,6 g/cm³; kim loại nhẹ có D < 5 g/cm³); nhiệt độ nóng chảy (W cao nhất 3410 °C; Hg thấp nhất −39 °C); tính cứng (Cr cứng nhất; kim loại kiềm mềm nhất)."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất hóa học chung của kim loại là tính khử: M → Mⁿ⁺ + ne."
+    },
+    {
+      "type": "text",
+      "content": "Tác dụng với phi kim: với O₂ tạo oxide (4Al + 3O₂ → 2Al₂O₃; trừ Au, Ag, Pt); với Cl₂ tạo muối chloride (2Fe + 3Cl₂ → 2FeCl₃); với S tạo sulfide (Fe + S → FeS; Hg + S → HgS ngay ở nhiệt độ thường)."
+    },
+    {
+      "type": "text",
+      "content": "Tác dụng với nước: kim loại nhóm IA, IIA mạnh (E° < −0,414 V) khử được nước ở nhiệt độ thường: 2Na + 2H₂O → 2NaOH + H₂."
+    },
+    {
+      "type": "text",
+      "content": "Tác dụng với acid: kim loại có E° < 0 khử được H⁺ trong HCl, H₂SO₄ loãng tạo H₂ (Fe + H₂SO₄ → FeSO₄ + H₂); các kim loại từ Cu đến Au không phản ứng. Với H₂SO₄ đặc, hầu hết kim loại (trừ Pt, Au) bị oxi hóa, S⁺⁶ bị khử xuống thấp hơn (Cu + 2H₂SO₄ đặc → CuSO₄ + SO₂ + 2H₂O). H₂SO₄ đặc nguội và HNO₃ đặc nguội làm thụ động hóa Al, Fe, Cr."
+    },
+    {
+      "type": "text",
+      "content": "Tác dụng với dung dịch muối: kim loại mạnh hơn (E° nhỏ hơn) đẩy kim loại yếu hơn ra khỏi dung dịch muối (Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag; Fe + CuSO₄ → FeSO₄ + Cu). Kim loại kiềm, kiềm thổ mạnh phản ứng với nước trước."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hòa tan hoàn toàn 5,6 g Fe vào dung dịch H₂SO₄ loãng dư. Tính thể tích H₂ thu được ở điều kiện chuẩn (Fe = 56; 1 mol khí = 22,4 L).",
+      "steps": [
+        "n(Fe) = 5,6/56 = 0,1 mol.",
+        "Fe + H₂SO₄ → FeSO₄ + H₂ nên n(H₂) = 0,1 mol.",
+        "V = 0,1 × 22,4 = 2,24 L."
+      ],
+      "expr": "5.6/56*22.4",
+      "answer": "2.24"
+    },
+    {
+      "problem": "Cho 6,4 g Cu vào dung dịch AgNO₃ dư. Tính khối lượng Ag thu được (Cu = 64, Ag = 108).",
+      "steps": [
+        "n(Cu) = 0,1 mol.",
+        "Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag nên n(Ag) = 0,2 mol.",
+        "m = 0,2 × 108 = 21,6 g."
+      ],
+      "expr": "6.4/64*2*108",
+      "answer": "21.6"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kim loại dẫn điện tốt nhất là:",
+      "choices": [
+        "Cu",
+        "Ag",
+        "Au",
+        "Al"
+      ],
+      "answer": 1,
+      "explain": "Thứ tự dẫn điện: Ag > Cu > Au > Al.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Cu đứng sau Ag.",
+        "2": "Au đứng sau Ag và Cu.",
+        "3": "Al dẫn điện kém hơn Ag, Cu, Au."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kim loại nào sau đây có nhiệt độ nóng chảy cao nhất?",
+      "choices": [
+        "Tungsten (W)",
+        "Hg",
+        "Na",
+        "Al"
+      ],
+      "answer": 0,
+      "explain": "W nóng chảy ở 3410 °C, cao nhất trong các kim loại.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Hg là kim loại lỏng ở điều kiện thường.",
+        "2": "Na nóng chảy ở nhiệt độ thấp.",
+        "3": "Al nóng chảy ở nhiệt độ thấp hơn W rất nhiều."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kim loại có khối lượng riêng nhỏ nhất là:",
+      "choices": [
+        "Sodium",
+        "Osmium",
+        "Lithium",
+        "Aluminium"
+      ],
+      "answer": 2,
+      "explain": "Li có D = 0,534 g/cm³.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Na nặng hơn Li.",
+        "1": "Osmium nặng nhất.",
+        "3": "Al nặng hơn Li."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tính chất hóa học chung của kim loại là:",
+      "choices": [
+        "Tính oxi hóa",
+        "Tính acid",
+        "Tính lưỡng tính",
+        "Tính khử"
+      ],
+      "answer": 3,
+      "explain": "Nguyên tử kim loại dễ nhường electron hóa trị, thể hiện tính khử.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Kim loại dễ nhường electron.",
+        "1": "Kim loại không có tính acid chung.",
+        "2": "Chỉ một số kim loại có oxide lưỡng tính."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Kim loại có tính dẻo là do:",
+      "choices": [
+        "Các ion dương bị đẩy ra xa nhau",
+        "Các lớp ion dương trượt lên nhau mà vẫn được electron tự do liên kết",
+        "Electron tự do bị mất đi khi biến dạng",
+        "Kim loại có liên kết cộng hóa trị mạnh"
+      ],
+      "answer": 1,
+      "explain": "Electron tự do giữ các ion lại với nhau khi các lớp trượt.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Mạng tinh thể không bị phá vỡ.",
+        "2": "Electron tự do vẫn còn.",
+        "3": "Liên kết kim loại không định hướng."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Kim loại nào sau đây không phản ứng với dung dịch HCl loãng?",
+      "choices": [
+        "Zn",
+        "Mg",
+        "Cu",
+        "Ca"
+      ],
+      "answer": 2,
+      "explain": "Cu có E° = +0,340 V > 0 nên không khử được H⁺.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Zn có E° < 0 nên phản ứng.",
+        "1": "Mg phản ứng mạnh.",
+        "3": "Ca phản ứng mạnh (và cả với nước)."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trường hợp nào sau đây có xảy ra phản ứng hóa học?",
+      "choices": [
+        "Nhúng thanh Cu vào dung dịch AgNO₃",
+        "Nhúng thanh Cu vào dung dịch NaCl",
+        "Nhúng thanh Al vào dung dịch MgCl₂",
+        "Nhúng thanh Ag vào dung dịch FeSO₄"
+      ],
+      "answer": 0,
+      "explain": "Cu (E° = 0,340) khử được Ag⁺ (E° = 0,799).",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Cu không khử được Na⁺.",
+        "2": "Al không khử được Mg²⁺ (Al yếu hơn Mg).",
+        "3": "Ag không khử được Fe²⁺."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Kim loại nào bị thụ động hóa trong H₂SO₄ đặc, nguội?",
+      "choices": [
+        "Cu, Ag",
+        "Zn, Mg",
+        "Na, K",
+        "Al, Fe, Cr"
+      ],
+      "answer": 3,
+      "explain": "Al, Fe, Cr bị thụ động hóa trong H₂SO₄ đặc nguội và HNO₃ đặc nguội.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Cu, Ag phản ứng với H₂SO₄ đặc (nóng).",
+        "1": "Zn, Mg phản ứng với H₂SO₄ đặc.",
+        "2": "Kim loại kiềm phản ứng mạnh."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hòa tan 5,6 g Fe vào dung dịch H₂SO₄ loãng dư. Thể tích H₂ thu được ở điều kiện chuẩn là bao nhiêu lít? (22,4 L/mol)",
+      "expr": "5.6/56*22.4",
+      "answer": "2.24",
+      "explain": "n(H₂) = n(Fe) = 0,1 mol → 2,24 L.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Cho 6,4 g Cu vào dung dịch AgNO₃ dư. Khối lượng Ag thu được là bao nhiêu gam? (Ag = 108)",
+      "expr": "6.4/64*2*108",
+      "answer": "21.6",
+      "explain": "n(Ag) = 2 n(Cu) = 0,2 mol → 21,6 g.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 2,3 g Na vào nước dư. Thể tích H₂ thu được ở điều kiện chuẩn là bao nhiêu lít?",
+      "expr": "2.3/23/2*22.4",
+      "answer": "1.12",
+      "explain": "n(Na) = 0,1 mol → n(H₂) = 0,05 mol → 1,12 L.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 5,6 g Fe vào dung dịch CuSO₄ dư. Khối lượng Cu thu được là bao nhiêu gam? (Cu = 64)",
+      "expr": "5.6/56*64",
+      "answer": "6.4",
+      "explain": "n(Cu) = n(Fe) = 0,1 mol → 6,4 g.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 6,4 g Cu tác dụng với H₂SO₄ đặc nóng dư. Thể tích SO₂ thu được ở điều kiện chuẩn là bao nhiêu lít?",
+      "expr": "6.4/64*22.4",
+      "answer": "2.24",
+      "explain": "Cu + 2H₂SO₄ → CuSO₄ + SO₂ + 2H₂O: n(SO₂) = n(Cu) = 0,1 mol → 2,24 L.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nhúng thanh Fe nặng 10 g vào dung dịch CuSO₄ dư, sau phản ứng thanh nặng 10,8 g. Khối lượng Fe đã tan là bao nhiêu gam? (Fe = 56, Cu = 64)",
+      "expr": "0.8/8*56",
+      "answer": "5.6",
+      "explain": "Mỗi mol Fe tan, thanh tăng 64 − 56 = 8 g: n(Fe) = 0,8/8 = 0,1 mol → 5,6 g.",
+      "id": "q14"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Cho Al và Fe vào dung dịch chứa Cu(NO₃)₂ và AgNO₃. Kim loại nào bị đẩy ra trước?",
+      "choices": [
+        "Cu",
+        "Ag",
+        "Fe",
+        "Al"
+      ],
+      "answer": 1,
+      "explain": "Chất oxi hóa mạnh hơn (Ag⁺) bị khử trước.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Ag⁺ có tính oxi hóa mạnh hơn Cu²⁺ nên bị khử trước.",
+        "2": "Fe là kim loại ban đầu, không phải sản phẩm.",
+        "3": "Al là kim loại ban đầu, không phải sản phẩm."
+      },
+      "id": "q15"
+    }
+  ]
+}

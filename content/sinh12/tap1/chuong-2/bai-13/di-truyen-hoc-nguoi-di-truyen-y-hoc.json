@@ -1,0 +1,307 @@
+{
+  "id": "bai-13",
+  "grade": 12,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 12",
+  "chapter": "Chương II. Di truyền nhiễm sắc thể",
+  "lesson": "Bài 13. Di truyền học người và di truyền y học",
+  "section": "",
+  "bookPage": 68,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Di truyền học người nghiên cứu sự di truyền và biến dị ở người; di truyền y học nghiên cứu cơ chế phát sinh và di truyền của các bệnh, đề xuất biện pháp phòng tránh và chữa trị bệnh di truyền. Phương pháp nghiên cứu: phả hệ, di truyền tế bào, trẻ đồng sinh, phân tử. Phả hệ là sơ đồ dùng kí hiệu hình học ghi sự di truyền của một tính trạng qua các thế hệ trong dòng họ (nam: hình vuông, nữ: hình tròn, người bị bệnh tô đen); cho biết tính trạng trội hay lặn, gene nằm trên NST thường hay giới tính. Hạn chế: mỗi gia đình ít con nên cần nhiều phả hệ."
+    },
+    {
+      "type": "text",
+      "content": "Phương pháp di truyền tế bào: nghiên cứu số lượng, hình dạng, kích thước NST; nuôi cấy bạch cầu, dùng colchicine làm tế bào dừng ở kì giữa, làm tiêu bản quan sát và lập NST đồ; phát hiện đột biến NST (Down, ung thư bạch cầu Burkitt do chuyển đoạn NST 8 – 14)."
+    },
+    {
+      "type": "text",
+      "content": "Y học tư vấn (di truyền học tư vấn) cung cấp thông tin cho người có nguy cơ mắc hoặc sinh con mắc bệnh di truyền. Cơ sở: quy luật di truyền và di truyền quần thể (hai vợ chồng cùng mang allele lặn gây bệnh thì xác suất con bị bệnh 1/4); xét nghiệm NST, chỉ tiêu sinh hóa từ dịch ối, sinh thiết nhau thai (11 – 13 tuần); kĩ thuật phân tử (thuốc đích). Tránh kết hôn gần huyết thống vì xác suất gene lặn về trạng thái đồng hợp cao."
+    },
+    {
+      "type": "text",
+      "content": "Liệu pháp gene là chữa bệnh di truyền bằng cách thay gene bệnh bằng gene bình thường hoặc chỉnh sửa gene bệnh. Hiện thử nghiệm ở tế bào soma với bệnh do một gene: lấy tế bào bệnh nhân, đưa gene bình thường vào, nuôi cấy rồi tiêm lại. Ví dụ: 2007 chữa mù do đột biến gene bằng virus mang gene RPE65 (4 bệnh nhân); 2009 chữa bệnh mù bẩm sinh Leber cho 12 người; 2018 CRISPR-Cas9 chỉnh sửa gene gây bệnh hồng cầu hình liềm. Cần tế bào có khả năng phân chia lâu dài (tế bào gốc tủy xương). Còn rào cản kĩ thuật và đạo đức."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cả hai vợ chồng đều dị hợp Aa về một bệnh lặn. Xác suất sinh con bị bệnh (aa) là bao nhiêu %?",
+      "steps": [
+        "Aa × Aa cho 1/4 aa.",
+        "1/4 = 25%."
+      ],
+      "expr": "1/4*100",
+      "answer": "25"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Phương pháp nghiên cứu sự di truyền tính trạng qua các thế hệ trong dòng họ là:",
+      "choices": [
+        "Di truyền tế bào",
+        "Nuôi cấy mô",
+        "Phương pháp phả hệ",
+        "Lai phân tích"
+      ],
+      "answer": 2,
+      "explain": "Phả hệ là sơ đồ lai tự nhiên.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Phả hệ là sơ đồ lai tự nhiên.",
+        "1": "Chưa đúng với nội dung bài học: Phả hệ là sơ đồ lai tự nhiên.",
+        "3": "Chưa đúng với nội dung bài học: Phả hệ là sơ đồ lai tự nhiên."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong phả hệ, nam được kí hiệu bằng:",
+      "choices": [
+        "Hình vuông",
+        "Hình tròn",
+        "Hình tam giác",
+        "Hình thoi"
+      ],
+      "answer": 0,
+      "explain": "Nữ là hình tròn.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: Nữ là hình tròn.",
+        "2": "Chưa đúng với nội dung bài học: Nữ là hình tròn.",
+        "3": "Chưa đúng với nội dung bài học: Nữ là hình tròn."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hóa chất dùng để dừng tế bào ở kì giữa khi làm tiêu bản NST là:",
+      "choices": [
+        "Ethanol",
+        "Acid",
+        "Cồn iodine",
+        "Colchicine"
+      ],
+      "answer": 3,
+      "explain": "Ngăn hình thành thoi phân bào.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Ngăn hình thành thoi phân bào.",
+        "1": "Chưa đúng với nội dung bài học: Ngăn hình thành thoi phân bào.",
+        "2": "Chưa đúng với nội dung bài học: Ngăn hình thành thoi phân bào."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Liệu pháp gene là:",
+      "choices": [
+        "Dùng thuốc kháng sinh",
+        "Chữa bệnh di truyền bằng cách thay thế hoặc chỉnh sửa gene bệnh",
+        "Cắt bỏ cơ quan",
+        "Truyền máu"
+      ],
+      "answer": 1,
+      "explain": "Hiện thử nghiệm trên tế bào soma.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Hiện thử nghiệm trên tế bào soma.",
+        "2": "Chưa đúng với nội dung bài học: Hiện thử nghiệm trên tế bào soma.",
+        "3": "Chưa đúng với nội dung bài học: Hiện thử nghiệm trên tế bào soma."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hệ thống chỉnh sửa gene được nhắc đến trong bài là:",
+      "choices": [
+        "CRISPR-Cas9",
+        "PCR",
+        "Western blot",
+        "Giải trình tự Sanger"
+      ],
+      "answer": 0,
+      "explain": "Chữa hồng cầu hình liềm.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: Chữa hồng cầu hình liềm.",
+        "2": "Chưa đúng với nội dung bài học: Chữa hồng cầu hình liềm.",
+        "3": "Chưa đúng với nội dung bài học: Chữa hồng cầu hình liềm."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Y học tư vấn có ý nghĩa:",
+      "choices": [
+        "Chữa khỏi mọi bệnh",
+        "Thay gene người",
+        "Giúp xác định nguy cơ và đưa biện pháp phòng bệnh di truyền",
+        "Chỉ để chẩn đoán ung thư"
+      ],
+      "answer": 2,
+      "explain": "Cung cấp thông tin cho cặp vợ chồng.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Cung cấp thông tin cho cặp vợ chồng.",
+        "1": "Chưa đúng với nội dung bài học: Cung cấp thông tin cho cặp vợ chồng.",
+        "3": "Chưa đúng với nội dung bài học: Cung cấp thông tin cho cặp vợ chồng."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cần tránh kết hôn gần huyết thống vì:",
+      "choices": [
+        "Làm giảm đa dạng văn hóa",
+        "Tăng đột biến gene",
+        "Gây đột biến NST",
+        "Xác suất gene lặn gây bệnh trở thành đồng hợp tăng cao"
+      ],
+      "answer": 3,
+      "explain": "Hai người có chung tổ tiên dễ cùng mang allele lặn.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Hai người có chung tổ tiên dễ cùng mang allele lặn.",
+        "1": "Chưa đúng với nội dung bài học: Hai người có chung tổ tiên dễ cùng mang allele lặn.",
+        "2": "Chưa đúng với nội dung bài học: Hai người có chung tổ tiên dễ cùng mang allele lặn."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Kĩ thuật chọc dò dịch ối giúp:",
+      "choices": [
+        "Chữa bệnh cho thai nhi",
+        "Phát hiện đột biến NST và một số bệnh chuyển hóa ở thai nhi",
+        "Xác định giới tính bằng gene",
+        "Tăng cân thai nhi"
+      ],
+      "answer": 1,
+      "explain": "Sàng lọc trước sinh.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Sàng lọc trước sinh.",
+        "2": "Chưa đúng với nội dung bài học: Sàng lọc trước sinh.",
+        "3": "Chưa đúng với nội dung bài học: Sàng lọc trước sinh."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao hầu hết người mắc bệnh di truyền lặn có bố mẹ bình thường?",
+      "choices": [
+        "Do đột biến mới ở mọi trường hợp",
+        "Do bệnh trội",
+        "Bố mẹ đều dị hợp mang allele lặn, con nhận cả hai allele lặn",
+        "Do môi trường"
+      ],
+      "answer": 2,
+      "explain": "Aa × Aa → aa.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Aa × Aa → aa.",
+        "1": "Chưa đúng với nội dung bài học: Aa × Aa → aa.",
+        "3": "Chưa đúng với nội dung bài học: Aa × Aa → aa."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Liệu pháp gene cần đối tượng tế bào có khả năng phân chia lâu dài vì:",
+      "choices": [
+        "Gene chuyển phải được duy trì suốt đời bệnh nhân",
+        "Để tăng kích thước tế bào",
+        "Tiết kiệm chi phí",
+        "Dễ nuôi cấy"
+      ],
+      "answer": 0,
+      "explain": "Ví dụ tế bào gốc tủy xương.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: Ví dụ tế bào gốc tủy xương.",
+        "2": "Chưa đúng với nội dung bài học: Ví dụ tế bào gốc tủy xương.",
+        "3": "Chưa đúng với nội dung bài học: Ví dụ tế bào gốc tủy xương."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Aa × Aa. Xác suất sinh con bình thường (A–) là bao nhiêu %?",
+      "expr": "3/4*100",
+      "answer": "75",
+      "explain": "3/4 = 75%.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cả hai vợ chồng dị hợp, họ có 4 con. Số con bị bệnh dự kiến là bao nhiêu?",
+      "expr": "4*1/4",
+      "answer": "1",
+      "explain": "4 × 1/4 = 1.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai vợ chồng bình thường, mỗi người có xác suất 2/3 là dị hợp Aa (em của người bệnh). Xác suất con bị bệnh bằng (2/3 × 2/3 × 1/4) = bao nhiêu phần 36 (nhập tử số)?",
+      "expr": "2*2*1",
+      "answer": "4",
+      "explain": "4/(3×3×4) = 1/9 = 4/36.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Sinh thiết nhau thai ở thai nhi 11 – 13 tuần tuổi. Khoảng thời gian (số tuần) giữa hai mốc là bao nhiêu?",
+      "expr": "13-11",
+      "answer": "2",
+      "explain": "13 − 11 = 2.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Năm 2007 chữa 4 bệnh nhân, năm 2009 chữa 12 bệnh nhân. Tổng số bệnh nhân hai thử nghiệm là bao nhiêu?",
+      "expr": "4+12",
+      "answer": "16",
+      "explain": "4 + 12 = 16.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Trong phả hệ, bố mẹ bình thường sinh con gái bị bệnh thì bệnh do:",
+      "choices": [
+        "Gene trội trên X",
+        "Gene trên Y",
+        "Gene ngoài nhân",
+        "Gene lặn trên NST thường"
+      ],
+      "answer": 3,
+      "explain": "Con gái bị bệnh nên không liên kết Y; bố bình thường nên không phải lặn trên X.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Con gái bị bệnh nên không liên kết Y; bố bình thường nên không phải lặn trên X.",
+        "1": "Chưa đúng với nội dung bài học: Con gái bị bệnh nên không liên kết Y; bố bình thường nên không phải lặn trên X.",
+        "2": "Chưa đúng với nội dung bài học: Con gái bị bệnh nên không liên kết Y; bố bình thường nên không phải lặn trên X."
+      },
+      "id": "q16"
+    }
+  ]
+}

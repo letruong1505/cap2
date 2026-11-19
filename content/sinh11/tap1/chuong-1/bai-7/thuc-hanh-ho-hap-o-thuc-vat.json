@@ -1,0 +1,194 @@
+{
+  "id": "bai-7",
+  "grade": 11,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 11",
+  "chapter": "Chương 1. Trao đổi chất và chuyển hoá năng lượng ở sinh vật",
+  "lesson": "Bài 7. Thực hành: Hô hấp ở thực vật",
+  "section": "",
+  "bookPage": 44,
+  "requirements": [
+    "Thực hành được thí nghiệm chứng minh hô hấp ở hạt nảy mầm bằng cách phát hiện CO₂.",
+    "Giải thích được kết quả và vai trò của các điều kiện thí nghiệm."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Chuẩn bị: tủ sấy (nếu có), đĩa Petri, bông hoặc giấy thấm, cốc thuỷ tinh, nước ấm khoảng 40 °C, hai chuông thuỷ tinh; nước vôi trong; hạt đậu tương, đậu đen, đậu xanh, lạc hoặc vừng."
+    },
+    {
+      "type": "text",
+      "content": "Nguyên lí: CO₂ do hạt nảy mầm hô hấp tạo ra được nước vôi trong hấp thụ tạo kết tủa CaCO₃, làm nước vôi vẩn đục (váng trắng trên bề mặt)."
+    },
+    {
+      "type": "text",
+      "content": "Bước 1 – chuẩn bị hạt nảy mầm: chọn khoảng 5 g hạt chắc, không vỡ, không mọt; ngâm trong nước ấm khoảng 40 °C khoảng 2 giờ; vớt hạt, rải vào đĩa Petri có lót giấy thấm; phủ giấy hoặc bông ẩm lên trên, đậy nắp; để ở nhiệt độ phòng hoặc tủ ấm 30 – 35 °C trong 1 – 2 ngày."
+    },
+    {
+      "type": "text",
+      "content": "Bước 2 – tiến hành: dán nhãn hai chuông A, B; chuông A đặt đĩa hạt nảy mầm và một cốc nước vôi trong; chuông B chỉ đặt một cốc nước vôi trong (đối chứng); để khoảng 1 giờ."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh11-b7-thi-nghiem-ho-hap.svg",
+      "caption": "Bố trí thí nghiệm hô hấp ở hạt nảy mầm"
+    },
+    {
+      "type": "text",
+      "content": "Kết quả: nước vôi ở chuông A vẩn đục rõ, ở chuông B hầu như trong. Kết luận: hạt nảy mầm hô hấp thải CO₂. Trả lời câu hỏi: ngâm hạt nước ấm khoảng 40 °C để hạt hút nước nhanh và hoạt hoá enzyme, kích thích nảy mầm; dùng hạt nảy mầm thay vì cây vì hạt hô hấp mạnh và không quang hợp, nên không bị hấp thụ CO₂ làm nhiễu kết quả."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Vì sao thí nghiệm cần chuông B không có hạt?",
+      "steps": [
+        "Chuông B là mẫu đối chứng để biết lượng CO₂ có sẵn trong không khí ở mức bình thường.",
+        "Nhờ đó khẳng định độ đục ở chuông A chỉ do hạt nảy mầm hô hấp thải CO₂."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất dùng để phát hiện CO₂ trong thí nghiệm hô hấp là:",
+      "choices": [
+        "nước vôi trong",
+        "dung dịch iodine",
+        "cobalt chloride",
+        "acetone"
+      ],
+      "answer": 0,
+      "explain": "Nước vôi gặp CO₂ tạo kết tủa CaCO₃ làm đục.",
+      "wrong_explain": {
+        "1": "Iodine nhận biết tinh bột.",
+        "2": "Cobalt chloride nhận biết nước.",
+        "3": "Acetone là dung môi."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hạt được ngâm trong nước ấm khoảng:",
+      "choices": [
+        "40 °C",
+        "100 °C",
+        "0 °C",
+        "70 °C"
+      ],
+      "answer": 0,
+      "explain": "Nước ấm 40 °C giúp hạt hút nước và hoạt hoá enzyme.",
+      "wrong_explain": {
+        "1": "100 °C làm chết hạt.",
+        "2": "0 °C làm chậm.",
+        "3": "70 °C làm hại hạt."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hiện tượng ở chuông A sau 1 giờ là:",
+      "choices": [
+        "nước vôi vẩn đục",
+        "nước vôi trong suốt",
+        "nước vôi đổi màu xanh",
+        "nước vôi bốc cháy"
+      ],
+      "answer": 0,
+      "explain": "CO₂ từ hạt hô hấp làm đục nước vôi.",
+      "wrong_explain": {
+        "1": "Trong là chuông B.",
+        "2": "Không đổi sang xanh.",
+        "3": "Không bốc cháy."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Mục đích của chuông B là:",
+      "choices": [
+        "đối chứng",
+        "tăng lượng CO₂",
+        "làm khô hạt",
+        "thay chuông A"
+      ],
+      "answer": 0,
+      "explain": "So sánh để kết luận chính xác.",
+      "wrong_explain": {
+        "1": "Không tạo thêm CO₂.",
+        "2": "Không làm khô hạt.",
+        "3": "Chuông A là mẫu chính."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao dùng hạt nảy mầm thay vì cây xanh có lá?",
+      "choices": [
+        "cây quang hợp hấp thụ CO₂ gây nhiễu kết quả",
+        "hạt không thở",
+        "cây không hô hấp",
+        "cây nặng hơn"
+      ],
+      "answer": 0,
+      "explain": "Cây xanh dùng CO₂ cho quang hợp.",
+      "wrong_explain": {
+        "1": "Hạt hô hấp mạnh.",
+        "2": "Cây vẫn hô hấp.",
+        "3": "Không phải lí do."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nếu dùng hạt đã luộc chín, nước vôi ở chuông A sẽ:",
+      "choices": [
+        "vẫn trong vì hạt chết, không hô hấp",
+        "đục hơn",
+        "tạo khí độc",
+        "đổi sang đỏ"
+      ],
+      "answer": 0,
+      "explain": "Hạt chết không hô hấp.",
+      "wrong_explain": {
+        "1": "Không đục hơn.",
+        "2": "Không có khí độc.",
+        "3": "Không đổi sang đỏ."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Để thí nghiệm rõ rệt hơn nên:",
+      "choices": [
+        "dùng nhiều hạt nảy mầm và để thời gian dài hơn",
+        "dùng ít hạt",
+        "để chuông hở",
+        "để nơi lạnh"
+      ],
+      "answer": 0,
+      "explain": "Tăng lượng CO₂ sinh ra.",
+      "wrong_explain": {
+        "1": "Ít hạt tạo ít CO₂.",
+        "2": "Chuông hở CO₂ thoát ra.",
+        "3": "Lạnh làm giảm hô hấp."
+      },
+      "id": "q07"
+    }
+  ]
+}

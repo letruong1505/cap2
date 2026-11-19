@@ -1,0 +1,214 @@
+{
+  "id": "bai-2",
+  "grade": 9,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Vật lí 9",
+  "chapter": "Chương I. Năng lượng cơ học",
+  "lesson": "Bài 2. Động năng. Thế năng",
+  "section": "",
+  "bookPage": 15,
+  "requirements": [
+    "Viết được biểu thức tính động năng, thế năng trọng trường; tính được động năng, thế năng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Năng lượng vật có được do chuyển động gọi là động năng. Động năng phụ thuộc vào khối lượng và tốc độ của vật."
+    },
+    {
+      "type": "formula",
+      "content": "Wđ = ½·m·v²   (m: kg; v: m/s; Wđ: J)"
+    },
+    {
+      "type": "text",
+      "content": "Năng lượng vật có được khi ở một độ cao so với vị trí khác được chọn làm gốc gọi là thế năng trọng trường. Thế năng phụ thuộc trọng lượng và độ cao."
+    },
+    {
+      "type": "formula",
+      "content": "Wt = P·h = 10·m·h   (P: N; h: m; Wt: J)"
+    },
+    {
+      "type": "method",
+      "title": "Tính động năng, thế năng",
+      "when": "Đề cho khối lượng, vận tốc, độ cao và hỏi động năng, thế năng hoặc so sánh.",
+      "steps": [
+        "Đổi đơn vị: m (kg), v (m/s), h (m).",
+        "Động năng Wđ = ½·m·v²; thế năng Wt = 10·m·h.",
+        "Thay số, tính bình phương vận tốc trước khi nhân.",
+        "Ghi kết quả với đơn vị jun (J)."
+      ],
+      "notes": [
+        "Bình phương chỉ áp dụng cho v, không áp dụng cho cả ½mv.",
+        "Đổi tốc độ km/h sang m/s trước khi tính.",
+        "Vận tốc tăng gấp đôi thì động năng tăng gấp bốn.",
+        "Độ cao tính từ mốc thế năng được chọn."
+      ],
+      "sample": {
+        "problem": "Vật 2 kg chuyển động với v = 3 m/s. Tính động năng.",
+        "steps": [
+          "Wđ = ½·2·3² = 9 J."
+        ],
+        "answer": "9 J"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính động năng của quả bóng 0,5 kg bay với tốc độ 10 m/s.",
+      "steps": [
+        "Wđ = ½·0,5·10².",
+        "= 25 J."
+      ],
+      "expr": "0.5*100/2",
+      "answer": "25"
+    },
+    {
+      "problem": "Dạng thế năng: vật 2 kg ở độ cao 5 m (gốc mặt đất). Tính thế năng.",
+      "steps": [
+        "Wt = 10·2·5.",
+        "= 100 J."
+      ],
+      "expr": "10*2*5",
+      "answer": "100"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Động năng phụ thuộc vào:",
+      "choices": [
+        "Độ cao của vật",
+        "Màu sắc",
+        "Nhiệt độ",
+        "Khối lượng và tốc độ của vật"
+      ],
+      "answer": 3,
+      "explain": "Wđ = ½mv².",
+      "wrong_explain": {
+        "0": "Thế năng.",
+        "1": "Không.",
+        "2": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Khi tốc độ tăng gấp đôi, động năng:",
+      "choices": [
+        "Tăng gấp đôi",
+        "Không đổi",
+        "Tăng gấp 4 lần",
+        "Giảm một nửa"
+      ],
+      "answer": 2,
+      "explain": "Wđ tỉ lệ với v².",
+      "wrong_explain": {
+        "0": "v bình phương.",
+        "1": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật 2 kg chuyển động với tốc độ 3 m/s. Động năng là bao nhiêu J?",
+      "expr": "0.5*2*3*3",
+      "answer": "9",
+      "explain": "Wđ = ½·2·3² = 9 J.",
+      "dang": "Tính động năng, thế năng",
+      "id": "q08"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật 5 kg ở độ cao 4 m. Thế năng trọng trường là bao nhiêu J? (lấy g = 10 m/s²)",
+      "expr": "10*5*4",
+      "answer": "200",
+      "explain": "Wt = 10·m·h = 200 J.",
+      "dang": "Tính động năng, thế năng",
+      "id": "q09"
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Thế năng trọng trường của vật phụ thuộc:",
+      "choices": [
+        "Tốc độ",
+        "Trọng lượng và độ cao so với gốc",
+        "Thể tích",
+        "Màu sắc"
+      ],
+      "answer": 1,
+      "explain": "Wt = Ph.",
+      "wrong_explain": {
+        "0": "Động năng.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Xe 1 000 kg chạy 20 m/s có động năng (J):",
+      "expr": "1000*400/2",
+      "answer": "200000",
+      "explain": "200 000 J."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật 3 kg ở độ cao 10 m có thế năng (J):",
+      "expr": "300",
+      "answer": "300",
+      "explain": "10·3·10."
+    },
+    {
+      "id": "q06",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Người 50 kg chạy 4 m/s có động năng (J):",
+      "expr": "50*16/2",
+      "answer": "400",
+      "explain": "400 J."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật nặng 20 N ở độ cao 2,5 m có thế năng (J):",
+      "expr": "50",
+      "answer": "50",
+      "explain": "20·2,5."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ô tô 1 000 kg chạy 72 km/h. Động năng là bao nhiêu kJ?",
+      "expr": "0.5*1000*20*20/1000",
+      "answer": "200",
+      "explain": "v = 20 m/s; Wđ = ½·1000·20² = 200 000 J = 200 kJ.",
+      "dang": "Tính động năng, thế năng",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật 4 kg có động năng 50 J. Tốc độ của vật là bao nhiêu m/s?",
+      "expr": "5",
+      "answer": "5",
+      "explain": "50 = ½·4·v² ⇒ v² = 25 ⇒ v = 5 m/s.",
+      "dang": "Tính động năng, thế năng",
+      "id": "q11"
+    }
+  ]
+}

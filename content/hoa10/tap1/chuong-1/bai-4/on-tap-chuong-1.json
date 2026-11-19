@@ -1,0 +1,213 @@
+{
+  "id": "bai-4",
+  "grade": 10,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 10",
+  "chapter": "Chương I. Cấu tạo nguyên tử",
+  "lesson": "Bài 4. Ôn tập chương 1",
+  "section": "",
+  "bookPage": 26,
+  "requirements": [
+    "Hệ thống hoá kiến thức về thành phần nguyên tử, nguyên tố hoá học, đồng vị và cấu trúc lớp vỏ electron.",
+    "Vận dụng tổng hợp để giải các bài tập về số hạt, nguyên tử khối trung bình, cấu hình electron."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hệ thống kiến thức chương 1: (1) Nguyên tử gồm hạt nhân (proton, neutron) và vỏ electron; nguyên tử trung hoà điện. (2) Z = số p = số e; A = Z + N; kí hiệu ᴬ_Z X. (3) Đồng vị: cùng Z, khác N; nguyên tử khối trung bình Ā = Σ(%·A)/100. (4) Lớp, phân lớp, orbital; thứ tự năng lượng 1s 2s 2p 3s 3p 4s 3d 4p…; nguyên lí vững bền, Pauli, quy tắc Hund."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b4-on-tap.svg",
+      "caption": "Sơ đồ hệ thống hoá kiến thức chương I"
+    },
+    {
+      "type": "formula",
+      "content": "2Z + N = tổng số hạt        2Z − N = hiệu số hạt mang điện và không mang điện        Ā = (a·A₁ + b·A₂)/100"
+    },
+    {
+      "type": "text",
+      "content": "Mối liên hệ cấu tạo – tính chất: số electron lớp ngoài cùng quyết định tính chất hoá học cơ bản (kim loại: 1–3e; phi kim: 5–7e; khí hiếm: 8e)."
+    },
+    {
+      "type": "method",
+      "title": "Giải bài toán tổng hợp về nguyên tử",
+      "when": "Đề cho các dữ kiện về tổng số hạt, hiệu số hạt, đồng vị, hoặc cấu hình electron; hỏi Z, A, nguyên tố, phần trăm đồng vị, tính chất.",
+      "steps": [
+        "Đặt ẩn Z, N; lập hệ phương trình từ dữ kiện số hạt.",
+        "Với đồng vị: dùng công thức Ā, đặt ẩn phần trăm.",
+        "Viết cấu hình electron từ Z, suy ra số electron lớp ngoài cùng và tính chất.",
+        "Kiểm tra: 1 ≤ N/Z ≤ 1,5 với các nguyên tố Z ≤ 82 (đồng vị bền)."
+      ],
+      "notes": [
+        "Ion dương mất electron, ion âm nhận electron; số proton không đổi.",
+        "Đọc kĩ \"số hạt mang điện\" gồm cả p và e."
+      ],
+      "sample": {
+        "problem": "Ion X⁻ có tổng số hạt 53, số hạt mang điện nhiều hơn không mang điện 17. Xác định X.",
+        "steps": [
+          "Ion X⁻ có Z proton, Z + 1 electron, N neutron: 2Z + 1 + N = 53; 2Z + 1 − N = 17.",
+          "4Z + 2 = 70 ⇒ Z = 17, N = 18: X là chlorine (³⁵Cl)."
+        ],
+        "answer": "Cl (Z = 17)"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Nguyên tử X có tổng số hạt 28, trong đó số hạt không mang điện chiếm khoảng 35,7%. Xác định X.",
+      "steps": [
+        "N = 0,357·28 ≈ 10; 2Z = 18 ⇒ Z = 9.",
+        "X là fluorine, A = 19, cấu hình 1s² 2s² 2p⁵."
+      ],
+      "expr": "9",
+      "answer": "9"
+    },
+    {
+      "problem": "Nguyên tố bromine có hai đồng vị ⁷⁹Br và ⁸¹Br, Ā = 79,92. Tính phần trăm ⁸¹Br.",
+      "steps": [
+        "Gọi x là % ⁸¹Br: 81x + 79(100 − x) = 7992.",
+        "2x = 92 ⇒ x = 46%."
+      ],
+      "expr": "92/2",
+      "answer": "46"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên tử ¹⁹₉F có số electron là:",
+      "choices": [
+        "9",
+        "19",
+        "10",
+        "28"
+      ],
+      "answer": 0,
+      "explain": "Số e = Z.",
+      "wrong_explain": {
+        "1": "Số khối.",
+        "2": "Số neutron.",
+        "3": "Tổng số hạt."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phân lớp nào sau đây có năng lượng thấp nhất?",
+      "choices": [
+        "4s",
+        "3d",
+        "4p",
+        "5s"
+      ],
+      "answer": 0,
+      "explain": "Thứ tự 4s < 3d < 4p < 5s.",
+      "wrong_explain": {
+        "1": "Cao hơn 4s.",
+        "2": "Cao hơn.",
+        "3": "Cao hơn."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên tử có cấu hình 1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹ là:",
+      "choices": [
+        "kim loại",
+        "phi kim",
+        "khí hiếm",
+        "á kim"
+      ],
+      "answer": 0,
+      "explain": "1e lớp ngoài cùng (K).",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nguyên tử Ar có 18 proton và 22 neutron. Số khối là:",
+      "expr": "40",
+      "answer": "40",
+      "explain": "18 + 22.",
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Gallium có ⁶⁹Ga (60%) và ⁷¹Ga (40%). Nguyên tử khối trung bình:",
+      "expr": "(69*60+71*40)/100",
+      "answer": "69.8",
+      "explain": "Ā = 69,8.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cấu hình nào vi phạm nguyên lí Pauli?",
+      "choices": [
+        "một orbital chứa 3 electron",
+        "2p có 3 electron độc thân",
+        "4s điền trước 3d",
+        "lớp 2 có 8 electron"
+      ],
+      "answer": 0,
+      "explain": "Mỗi orbital tối đa 2e.",
+      "wrong_explain": {
+        "1": "Đúng quy tắc Hund.",
+        "2": "Đúng nguyên lí vững bền.",
+        "3": "Đúng."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nguyên tử X có tổng số hạt 82, số hạt mang điện nhiều hơn số hạt không mang điện 22. Số proton:",
+      "expr": "26",
+      "answer": "26",
+      "explain": "2Z + N = 82; 2Z − N = 22 ⇒ Z = 26 (Fe).",
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Ion M³⁺ có 10 electron. Số proton của M là:",
+      "expr": "13",
+      "answer": "13",
+      "explain": "M có 13e ⇒ Al.",
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nguyên tố X có hai đồng vị, tỉ lệ số nguyên tử 27 : 23. Đồng vị 1 có 35 neutron, đồng vị 2 nhiều hơn đồng vị 1 là 2 neutron; Z = 29. Nguyên tử khối trung bình:",
+      "expr": "(64*27+66*23)/50",
+      "answer": "64.92",
+      "explain": "A₁ = 64, A₂ = 66; Ā = (64·27 + 66·23)/50.",
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Số electron độc thân của Si (Z = 14) ở trạng thái cơ bản là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "3p²: 2 electron độc thân.",
+      "id": "q10"
+    }
+  ]
+}

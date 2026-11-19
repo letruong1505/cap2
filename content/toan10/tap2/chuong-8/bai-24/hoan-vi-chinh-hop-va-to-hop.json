@@ -1,0 +1,274 @@
+{
+  "id": "bai-24",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 2",
+  "chapter": "Chương VIII. Đại số tổ hợp",
+  "lesson": "Bài 24. Hoán vị, chỉnh hợp và tổ hợp",
+  "section": "",
+  "bookPage": 66,
+  "requirements": [
+    "Phân biệt và tính số hoán vị, chỉnh hợp, tổ hợp.",
+    "Vận dụng vào bài toán đếm thực tế."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hoán vị: mỗi cách sắp xếp n phần tử (n ≥ 1) theo một thứ tự là một hoán vị của n phần tử. Số hoán vị là P_n = n! = n(n − 1)···2·1. Quy ước 0! = 1."
+    },
+    {
+      "type": "formula",
+      "content": "P_n = n!"
+    },
+    {
+      "type": "text",
+      "content": "Chỉnh hợp: mỗi cách lấy k phần tử từ n phần tử (1 ≤ k ≤ n) và sắp xếp chúng theo một thứ tự là một chỉnh hợp chập k của n. Số chỉnh hợp A_n^k = n(n − 1)···(n − k + 1) = n!/(n − k)!. Đặc biệt A_n^n = P_n."
+    },
+    {
+      "type": "formula",
+      "content": "A_n^k = n! / (n − k)!"
+    },
+    {
+      "type": "text",
+      "content": "Tổ hợp: mỗi cách lấy k phần tử từ n phần tử (0 ≤ k ≤ n) không kể thứ tự là một tổ hợp chập k của n. Số tổ hợp C_n^k = n!/(k!(n − k)!) = A_n^k / k!."
+    },
+    {
+      "type": "formula",
+      "content": "C_n^k = n! / (k!(n − k)!)        C_n^k = C_n^(n−k)        C_n^0 = C_n^n = 1"
+    },
+    {
+      "type": "text",
+      "content": "Phân biệt: có sắp thứ tự (chức vụ khác nhau, xếp hàng, lập số) thì dùng chỉnh hợp hoặc hoán vị; chỉ chọn ra một nhóm không phân biệt vai trò thì dùng tổ hợp."
+    },
+    {
+      "type": "method",
+      "title": "Chọn công thức đếm phù hợp",
+      "when": "Đề hỏi số cách xếp, chọn người vào các chức vụ, chọn nhóm, lập số, chọn đường chéo, tam giác… từ một tập hợp.",
+      "steps": [
+        "Hỏi \"có kể thứ tự không?\": lấy hết và xếp → hoán vị; lấy một phần và xếp → chỉnh hợp; lấy một phần không xếp → tổ hợp.",
+        "Xác định n (tổng số phần tử) và k (số phần tử lấy).",
+        "Tính theo công thức; với bài có điều kiện kèm theo, kết hợp quy tắc cộng, nhân.",
+        "Kiểm tra lại bằng cách thử với số nhỏ nếu nghi ngờ."
+      ],
+      "notes": [
+        "C_n^k = C_n^(n−k) giúp tính nhanh.",
+        "Chọn ban cán sự gồm các chức vụ khác nhau là chỉnh hợp; chọn tổ trực nhật là tổ hợp."
+      ],
+      "sample": {
+        "problem": "Một lớp có 30 học sinh. Có bao nhiêu cách (a) chọn 3 bạn đi thi; (b) chọn lớp trưởng, lớp phó, thư kí?",
+        "steps": [
+          "(a) Không kể thứ tự: C_30^3 = 30·29·28/6 = 4060.",
+          "(b) Có thứ tự: A_30^3 = 30·29·28 = 24 360."
+        ],
+        "answer": "4060 và 24 360"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính P_5, A_7^3 và C_8^3.",
+      "steps": [
+        "P_5 = 5! = 120.",
+        "A_7^3 = 7·6·5 = 210.",
+        "C_8^3 = 8·7·6/(3·2·1) = 56."
+      ],
+      "expr": "8*7*6/6",
+      "answer": "56"
+    },
+    {
+      "problem": "Có bao nhiêu cách xếp 4 bạn nam và 3 bạn nữ thành một hàng ngang sao cho 3 bạn nữ đứng cạnh nhau?",
+      "steps": [
+        "Coi 3 nữ là một khối: có 5 \"phần tử\" xếp hàng: 5! = 120 cách.",
+        "Trong khối nữ, 3 bạn đổi chỗ: 3! = 6 cách.",
+        "Tổng 120·6 = 720 cách."
+      ],
+      "expr": "120*6",
+      "answer": "720"
+    },
+    {
+      "problem": "Một đa giác lồi có 10 đỉnh. Có bao nhiêu đường chéo?",
+      "steps": [
+        "Số đoạn thẳng nối hai đỉnh: C_10^2 = 45.",
+        "Trừ 10 cạnh: 45 − 10 = 35 đường chéo."
+      ],
+      "expr": "45-10",
+      "answer": "35"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Số hoán vị của 4 phần tử là:",
+      "expr": "4*3*2*1",
+      "answer": "24",
+      "explain": "4! = 24.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "A_6^2 bằng:",
+      "expr": "6*5",
+      "answer": "30",
+      "explain": "6·5.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "C_6^2 bằng:",
+      "expr": "6*5/2",
+      "answer": "15",
+      "explain": "6·5/2.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chọn 2 bạn trong 10 bạn để trực nhật (không phân biệt vai trò) là bài toán về:",
+      "choices": [
+        "tổ hợp",
+        "chỉnh hợp",
+        "hoán vị",
+        "quy tắc cộng"
+      ],
+      "answer": 0,
+      "explain": "Không kể thứ tự.",
+      "wrong_explain": {
+        "1": "Chỉnh hợp có thứ tự.",
+        "2": "Hoán vị lấy hết.",
+        "3": "Không phải cộng."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "C_10^0 + C_10^10 bằng:",
+      "expr": "1+1",
+      "answer": "2",
+      "explain": "Cả hai bằng 1.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số cách xếp 5 cuốn sách khác nhau lên một kệ là:",
+      "expr": "5*4*3*2*1",
+      "answer": "120",
+      "explain": "5!.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có bao nhiêu cách chọn 3 học sinh từ 12 học sinh để tham gia câu lạc bộ?",
+      "expr": "12*11*10/6",
+      "answer": "220",
+      "explain": "C_12^3 = 220.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có bao nhiêu cách trao 3 giải nhất, nhì, ba cho 8 vận động viên?",
+      "expr": "8*7*6",
+      "answer": "336",
+      "explain": "A_8^3.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số tam giác có các đỉnh là đỉnh của một lục giác là:",
+      "expr": "6*5*4/6",
+      "answer": "20",
+      "explain": "C_6^3 = 20.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "C_7^5 bằng:",
+      "expr": "7*6/2",
+      "answer": "21",
+      "explain": "C_7^5 = C_7^2 = 21.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Có bao nhiêu số tự nhiên có 3 chữ số đôi một khác nhau lập từ 1, 2, 3, 4, 5, 6, 7?",
+      "expr": "7*6*5",
+      "answer": "210",
+      "explain": "A_7^3.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một tổ có 6 nam và 4 nữ. Số cách chọn 3 người gồm 2 nam và 1 nữ là:",
+      "expr": "15*4",
+      "answer": "60",
+      "explain": "C_6^2·C_4^1 = 15·4.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Có bao nhiêu cách xếp 5 bạn thành hàng ngang sao cho bạn An đứng đầu hàng?",
+      "expr": "4*3*2*1",
+      "answer": "24",
+      "explain": "Cố định An, xếp 4 bạn còn lại: 4!.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một lớp có 25 học sinh. Số cách chọn ban cán sự gồm 1 lớp trưởng và 2 lớp phó (hai lớp phó vai trò như nhau) là:",
+      "expr": "25*24*23/2",
+      "answer": "6900",
+      "explain": "25·C_24^2 = 25·276.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Từ 10 điểm phân biệt, không có 3 điểm nào thẳng hàng, vẽ được bao nhiêu đoạn thẳng?",
+      "expr": "10*9/2",
+      "answer": "45",
+      "explain": "C_10^2.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một hộp có 5 bi đỏ và 3 bi xanh. Số cách lấy 2 bi cùng màu là:",
+      "expr": "10+3",
+      "answer": "13",
+      "explain": "C_5^2 + C_3^2 = 10 + 3.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Một đội có 8 người. Số cách chọn ra một nhóm ít nhất 2 người và nhiều nhất 3 người là:",
+      "expr": "28+56",
+      "answer": "84",
+      "explain": "C_8^2 + C_8^3 = 28 + 56.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Số cách xếp 3 nam và 3 nữ thành hàng ngang sao cho nam nữ xen kẽ là:",
+      "expr": "2*6*6",
+      "answer": "72",
+      "explain": "Chọn kiểu xen kẽ (nam trước hoặc nữ trước): 2; xếp nam 3!, xếp nữ 3!.",
+      "id": "q18"
+    }
+  ]
+}

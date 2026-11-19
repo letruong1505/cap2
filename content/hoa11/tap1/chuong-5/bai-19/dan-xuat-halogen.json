@@ -1,0 +1,297 @@
+{
+  "id": "bai-19",
+  "grade": 11,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 11",
+  "chapter": "Chương 5. Dẫn xuất halogen – Alcohol – Phenol",
+  "lesson": "Bài 19. Dẫn xuất halogen",
+  "section": "",
+  "bookPage": 112,
+  "requirements": [
+    "Nêu khái niệm, gọi tên theo danh pháp thay thế dẫn xuất halogen.",
+    "Trình bày tính chất vật lí; phản ứng thế nguyên tử halogen bằng OH⁻ và phản ứng tách HX theo quy tắc Zaitsev.",
+    "Nêu ứng dụng và tác hại (CFC, thuốc trừ sâu); ứng xử hợp lí."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Dẫn xuất halogen của hydrocarbon là hợp chất thu được khi thay H của hydrocarbon bằng nguyên tử halogen; công thức tổng quát RXₙ (X là F, Cl, Br, I). Danh pháp thay thế: halogeno + tên hydrocarbon, đuôi \"-ine\" của halogen đổi thành \"-o\": CH₃Br bromomethane; CH₃CHClCH₂CH₃ 2-chlorobutane; CH₂=CH–CH₂F 3-fluoroprop-1-ene; BrCH₂CH₂Br 1,2-dibromoethane. Đánh số từ phía gần nhóm thế (hoặc liên kết bội); nhiều halogen thêm di-, tri-. Tên thường: chloroform CHCl₃, iodoform CHI₃, vinyl chloride."
+    },
+    {
+      "type": "text",
+      "content": "Liên kết C–X phân cực (C mang δ⁺, X mang δ⁻); năng lượng liên kết giảm từ C–F (486), C–Cl (327), C–Br (285) đến C–I (214 kJ/mol) nên khả năng bị phân cắt tăng theo chiều đó. Tính chất vật lí: phân cực nên nhiệt độ sôi, nóng chảy cao hơn hydrocarbon cùng phân tử khối; CH₃Cl, CH₃F khí; còn lại lỏng hoặc rắn; hầu như không tan trong nước, tan trong dung môi hữu cơ."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b19-lien-ket-CX.svg",
+      "caption": "Năng lượng liên kết C–X"
+    },
+    {
+      "type": "text",
+      "content": "Phản ứng thế (thuỷ phân trong kiềm): R–X + OH⁻ → R–OH + X⁻ (X gắn carbon no), ví dụ CH₃CH₂CH₂Cl + NaOH → CH₃CH₂CH₂OH + NaCl. Nhận biết halogen bằng AgNO₃ sau khi trung hoà kiềm dư: AgCl trắng, AgBr vàng nhạt, AgI vàng."
+    },
+    {
+      "type": "text",
+      "content": "Phản ứng tách HX (NaOH/C₂H₅OH, đun nóng) tạo alkene theo quy tắc Zaitsev: halogen bị tách cùng H ở carbon bên cạnh có bậc cao hơn (sản phẩm chính). Ví dụ 2-bromobutane → but-2-ene (chính) và but-1-ene (phụ)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b19-phan-ung.svg",
+      "caption": "Thế và tách của dẫn xuất halogen"
+    },
+    {
+      "type": "formula",
+      "content": "CH₃CH₂Br + NaOH → CH₃CH₂OH + NaBr (nước, t°)        CH₃CHBrCH₃ + NaOH → CH₃CH=CH₂ + NaBr + H₂O (C₂H₅OH, t°)"
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: dung môi (CH₂Cl₂, CHCl₃), sản xuất polymer (PVC, teflon), dược phẩm, chất làm lạnh (CFC trước đây; hiện dùng HFC như R32). CFC phá huỷ tầng ozone nên bị cấm. DDT, 666, 2,4-D khó phân huỷ, tồn dư lâu, gây hại sức khoẻ nên bị hạn chế; hướng tới nông nghiệp xanh, thuốc bảo vệ thực vật sinh học."
+    },
+    {
+      "type": "method",
+      "title": "Xác định sản phẩm chính của phản ứng tách HX",
+      "when": "Cho dẫn xuất halogen, đun với NaOH/ethanol, yêu cầu viết alkene.",
+      "steps": [
+        "Xác định carbon mang halogen.",
+        "Liệt kê các carbon bên cạnh có H.",
+        "Chọn tách H ở carbon bậc cao hơn (nhiều nhóm alkyl hơn) → sản phẩm chính.",
+        "Viết sản phẩm phụ (nếu có)."
+      ],
+      "notes": [
+        "Không tách ra khỏi cùng carbon mang X.",
+        "Sản phẩm chính thường là alkene có nhiều nhóm thế hơn quanh C=C."
+      ],
+      "sample": {
+        "problem": "Tách HBr từ 2-bromo-2-methylbutane.",
+        "steps": [
+          "Carbon bên cạnh: CH₃ (bậc I) và CH₂ (bậc II).",
+          "Chính: 2-methylbut-2-ene; phụ: 2-methylbut-1-ene."
+        ],
+        "answer": "2-methylbut-2-ene"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đun 0,1 mol C₂H₅Br (M = 109) với NaOH dư (nước). Tính khối lượng C₂H₅OH (g), M = 46.",
+      "steps": [
+        "n(C₂H₅OH) = n(C₂H₅Br) = 0,1 mol.",
+        "m = 0,1·46 = 4,6 g."
+      ],
+      "expr": "0.1*46",
+      "answer": "4.6"
+    },
+    {
+      "problem": "Thuỷ phân hoàn toàn 0,05 mol CH₃Br (M = 95) bằng NaOH dư rồi trung hoà, cho AgNO₃ dư. Tính khối lượng AgBr (g), M = 188.",
+      "steps": [
+        "n(AgBr) = n(Br⁻) = 0,05 mol.",
+        "m = 0,05·188 = 9,4 g."
+      ],
+      "expr": "0.05*188",
+      "answer": "9.4"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Công thức tổng quát của dẫn xuất halogen là:",
+      "choices": [
+        "RXₙ",
+        "ROH",
+        "RCHO",
+        "RCOOH"
+      ],
+      "answer": 0,
+      "explain": "X là halogen.",
+      "wrong_explain": {
+        "1": "Alcohol.",
+        "2": "Aldehyde.",
+        "3": "Carboxylic acid."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tên gọi của CH₃CH₂CH₂Cl là:",
+      "choices": [
+        "1-chloropropane",
+        "2-chloropropane",
+        "chloroethane",
+        "chloroform"
+      ],
+      "answer": 0,
+      "explain": "Cl ở carbon số 1.",
+      "wrong_explain": {
+        "1": "Cl ở C2 là 2-chloro.",
+        "2": "2 C.",
+        "3": "CHCl₃."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dẫn xuất halogen hầu như:",
+      "choices": [
+        "không tan trong nước",
+        "tan vô hạn trong nước",
+        "tan tốt trong nước",
+        "phản ứng với nước ở nhiệt độ thường"
+      ],
+      "answer": 0,
+      "explain": "Ít phân cực hơn nước, không tạo liên kết H.",
+      "wrong_explain": {
+        "1": "Không tan.",
+        "2": "Không tan.",
+        "3": "Không phản ứng."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Liên kết dễ bị phân cắt nhất là:",
+      "choices": [
+        "C–I",
+        "C–F",
+        "C–Cl",
+        "C–Br"
+      ],
+      "answer": 0,
+      "explain": "Năng lượng liên kết nhỏ nhất (214 kJ/mol).",
+      "wrong_explain": {
+        "1": "Bền nhất.",
+        "2": "Bền hơn.",
+        "3": "Bền hơn."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phản ứng R–X + OH⁻ → R–OH + X⁻ thuộc loại:",
+      "choices": [
+        "phản ứng thế",
+        "phản ứng cộng",
+        "phản ứng tách",
+        "phản ứng trùng hợp"
+      ],
+      "answer": 0,
+      "explain": "X được thay bởi OH.",
+      "wrong_explain": {
+        "1": "Không cộng.",
+        "2": "Tách là tạo alkene.",
+        "3": "Không trùng hợp."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điều kiện để dẫn xuất halogen bị tách HX tạo alkene là:",
+      "choices": [
+        "NaOH/ethanol, đun nóng",
+        "NaOH/nước, đun nóng",
+        "HCl loãng",
+        "H₂ (Ni)"
+      ],
+      "answer": 0,
+      "explain": "Môi trường ethanol thuận lợi cho tách.",
+      "wrong_explain": {
+        "1": "Tạo alcohol.",
+        "2": "Không phản ứng.",
+        "3": "Không phù hợp."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sản phẩm chính khi tách HBr từ CH₃CHBrCH₂CH₃ là:",
+      "choices": [
+        "but-2-ene",
+        "but-1-ene",
+        "butane",
+        "butan-2-ol"
+      ],
+      "answer": 0,
+      "explain": "Quy tắc Zaitsev.",
+      "wrong_explain": {
+        "1": "Sản phẩm phụ.",
+        "2": "Không phải tách.",
+        "3": "Là thế."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Kết tủa vàng nhạt khi cho dung dịch sau thuỷ phân bromoethane (đã trung hoà) tác dụng AgNO₃ là:",
+      "choices": [
+        "AgBr",
+        "AgCl",
+        "Ag₂O",
+        "AgNO₂"
+      ],
+      "answer": 0,
+      "explain": "Có ion Br⁻.",
+      "wrong_explain": {
+        "1": "AgCl trắng.",
+        "2": "Không đúng.",
+        "3": "Không đúng."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "CFC bị cấm sử dụng vì:",
+      "choices": [
+        "phá huỷ tầng ozone",
+        "quá đắt",
+        "dễ cháy",
+        "tan trong nước"
+      ],
+      "answer": 0,
+      "explain": "Giải phóng gốc Cl.",
+      "wrong_explain": {
+        "1": "Không phải lí do.",
+        "2": "CFC không cháy.",
+        "3": "Không tan."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ứng xử hợp lí với thuốc trừ sâu chứa chlorine là:",
+      "choices": [
+        "hạn chế, dùng thuốc thế hệ mới/sinh học",
+        "dùng DDT thật nhiều",
+        "xả thuốc ra sông",
+        "trộn nhiều loại thuốc"
+      ],
+      "answer": 0,
+      "explain": "Giảm ô nhiễm.",
+      "wrong_explain": {
+        "1": "DDT bị cấm.",
+        "2": "Gây ô nhiễm.",
+        "3": "Gây hại."
+      },
+      "id": "q10"
+    }
+  ]
+}

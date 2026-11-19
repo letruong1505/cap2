@@ -1,0 +1,284 @@
+{
+  "id": "bai-4",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương II. Động học",
+  "lesson": "Bài 4. Độ dịch chuyển và quãng đường đi được",
+  "section": "",
+  "bookPage": 21,
+  "requirements": [
+    "Phân biệt vị trí, quãng đường đi được và độ dịch chuyển; nêu được độ dịch chuyển là đại lượng vectơ.",
+    "Xác định độ dịch chuyển tổng hợp và quãng đường trong các bài toán đơn giản."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Để xác định vị trí của vật, ta chọn một vật làm gốc (mốc), hệ trục toạ độ gắn với mốc và một mốc thời gian (đồng hồ). Hệ gồm vật mốc, hệ toạ độ và đồng hồ gọi là hệ quy chiếu."
+    },
+    {
+      "type": "text",
+      "content": "Quãng đường đi được s là độ dài của đường đi mà vật vạch ra; là đại lượng vô hướng, không âm, luôn tăng khi vật chuyển động."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b4-do-dich-chuyen.svg",
+      "caption": "Quãng đường và độ dịch chuyển khi vật đi từ A đến B rồi quay lại C"
+    },
+    {
+      "type": "text",
+      "content": "Độ dịch chuyển →d là vectơ nối vị trí đầu với vị trí cuối của vật; cho biết vật dịch chuyển bao xa theo hướng nào. Độ lớn của độ dịch chuyển có thể nhỏ hơn hoặc bằng quãng đường; bằng nhau khi vật chuyển động thẳng không đổi chiều."
+    },
+    {
+      "type": "formula",
+      "content": "Chuyển động thẳng trên trục Ox: d = x₂ − x₁ (có dấu)        Tổng hợp độ dịch chuyển: →d = →d₁ + →d₂ (quy tắc cộng vectơ)"
+    },
+    {
+      "type": "text",
+      "content": "Khi hai độ dịch chuyển vuông góc nhau, độ lớn độ dịch chuyển tổng hợp tính bằng định lí Pythagore: d = √(d₁² + d₂²). Khi cùng phương thì cộng đại số có dấu."
+    },
+    {
+      "type": "method",
+      "title": "Xác định quãng đường và độ dịch chuyển",
+      "when": "Đề mô tả hành trình gồm nhiều đoạn (đi, quay lại, rẽ vuông góc) và hỏi quãng đường, độ dịch chuyển.",
+      "steps": [
+        "Vẽ sơ đồ hành trình, chọn gốc và chiều dương.",
+        "Quãng đường: cộng độ dài tất cả các đoạn.",
+        "Độ dịch chuyển: nối điểm đầu với điểm cuối; cùng phương thì cộng có dấu, vuông góc thì dùng Pythagore; nêu cả hướng.",
+        "So sánh và kết luận."
+      ],
+      "notes": [
+        "Vật về đúng chỗ cũ thì độ dịch chuyển bằng 0 dù quãng đường khác 0.",
+        "Độ dịch chuyển có thể âm khi chọn chiều dương ngược lại."
+      ],
+      "sample": {
+        "problem": "Một người đi 3 km về phía đông rồi 4 km về phía bắc. Tính quãng đường và độ dịch chuyển.",
+        "steps": [
+          "s = 3 + 4 = 7 km.",
+          "d = √(3² + 4²) = 5 km, hướng đông bắc (lệch 53° so với hướng đông)."
+        ],
+        "answer": "s = 7 km, d = 5 km"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một vật chuyển động thẳng từ A đến B cách nhau 10 m rồi quay lại điểm C ở giữa A và B với AC = 4 m. Tính quãng đường đi được và độ dịch chuyển (chọn chiều dương từ A đến B).",
+      "steps": [
+        "Quãng đường: s = AB + BC = 10 + 6 = 16 m.",
+        "Độ dịch chuyển: d = AC = +4 m (từ A đến C, theo chiều dương)."
+      ],
+      "expr": "10+6",
+      "answer": "16"
+    },
+    {
+      "problem": "Một ô tô đi 6 km về phía bắc rồi rẽ đi 8 km về phía đông. Tính độ dịch chuyển của ô tô.",
+      "steps": [
+        "Hai độ dịch chuyển vuông góc nhau.",
+        "d = √(6² + 8²) = 10 km, hướng đông bắc, lệch so với hướng bắc một góc α với tan α = 8/6, α ≈ 53°."
+      ],
+      "expr": "10",
+      "answer": "10"
+    },
+    {
+      "problem": "Một vận động viên chạy một vòng sân vận động chu vi 400 m và về đúng vạch xuất phát. Tính quãng đường và độ dịch chuyển.",
+      "steps": [
+        "Quãng đường s = 400 m.",
+        "Vị trí đầu trùng vị trí cuối nên độ dịch chuyển d = 0."
+      ],
+      "expr": "0",
+      "answer": "0"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Độ dịch chuyển là:",
+      "choices": [
+        "đại lượng vectơ nối vị trí đầu với vị trí cuối",
+        "độ dài đường đi của vật",
+        "đại lượng vô hướng luôn dương",
+        "thời gian chuyển động"
+      ],
+      "answer": 0,
+      "explain": "Có độ lớn và hướng.",
+      "wrong_explain": {
+        "1": "Đó là quãng đường.",
+        "2": "Độ dịch chuyển có hướng, có thể âm.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hệ quy chiếu gồm:",
+      "choices": [
+        "vật mốc, hệ toạ độ và đồng hồ",
+        "chỉ vật mốc",
+        "chỉ hệ toạ độ",
+        "thước và cân"
+      ],
+      "answer": 0,
+      "explain": "Đủ ba yếu tố để xác định vị trí và thời điểm.",
+      "wrong_explain": {
+        "1": "Thiếu.",
+        "2": "Thiếu.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi nào độ lớn độ dịch chuyển bằng quãng đường?",
+      "choices": [
+        "Khi vật chuyển động thẳng theo một chiều",
+        "Luôn luôn",
+        "Khi vật quay lại điểm xuất phát",
+        "Khi vật chuyển động tròn"
+      ],
+      "answer": 0,
+      "explain": "Không đổi chiều thì đường đi trùng vectơ dịch chuyển.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Khi đó d = 0.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật đi từ x₁ = 2 m đến x₂ = 9 m trên trục Ox. Độ dịch chuyển (m) là:",
+      "expr": "9-2",
+      "answer": "7",
+      "explain": "d = x₂ − x₁.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật đi 5 m rồi quay lại 5 m về chỗ cũ. Quãng đường (m) là:",
+      "expr": "5+5",
+      "answer": "10",
+      "explain": "Cộng độ dài các đoạn.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật đi từ x₁ = 8 m đến x₂ = 3 m. Độ dịch chuyển (m) là:",
+      "expr": "3-8",
+      "answer": "-5",
+      "explain": "Ngược chiều dương nên âm.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một người đi 12 m về đông rồi 5 m về bắc. Độ lớn độ dịch chuyển (m) là:",
+      "expr": "13",
+      "answer": "13",
+      "explain": "√(144 + 25) = 13.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một người đi 12 m về đông rồi 5 m về bắc. Quãng đường (m) là:",
+      "expr": "12+5",
+      "answer": "17",
+      "explain": "Tổng hai đoạn.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật đi 8 m về phía đông rồi 3 m về phía tây. Độ lớn độ dịch chuyển (m) là:",
+      "expr": "8-3",
+      "answer": "5",
+      "explain": "Cùng phương, ngược chiều: 8 − 3.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Một người chạy nửa vòng tròn bán kính R. Độ lớn độ dịch chuyển là:",
+      "choices": [
+        "2R",
+        "πR",
+        "R",
+        "0"
+      ],
+      "answer": 0,
+      "explain": "Nối hai đầu đường kính.",
+      "wrong_explain": {
+        "1": "Đó là quãng đường.",
+        "2": "Sai.",
+        "3": "Chưa về chỗ cũ."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một người chạy nửa vòng tròn bán kính 7 m. Quãng đường (lấy π ≈ 3,14, m) là:",
+      "expr": "3.14*7",
+      "answer": "21.98",
+      "explain": "s = πR.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một ô tô đi 30 km về bắc, rồi 40 km về đông, rồi 30 km về nam. Độ lớn độ dịch chuyển (km) là:",
+      "expr": "40",
+      "answer": "40",
+      "explain": "Hai đoạn bắc – nam triệt tiêu, còn 40 km về đông.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một ô tô đi 30 km về bắc, rồi 40 km về đông, rồi 30 km về nam. Quãng đường (km) là:",
+      "expr": "30+40+30",
+      "answer": "100",
+      "explain": "Tổng các đoạn.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một người bơi 50 m dọc bể rồi quay lại 20 m. Tỉ số quãng đường trên độ lớn độ dịch chuyển là:",
+      "expr": "70/30",
+      "answer": "7/3",
+      "explain": "s = 70, d = 30.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật đi từ A đến B 9 m về đông, rồi từ B đi 12 m về bắc đến C, rồi từ C đi 9 m về tây đến D. Độ lớn độ dịch chuyển AD (m) là:",
+      "expr": "12",
+      "answer": "12",
+      "explain": "D nằm đúng phía bắc A, cách 12 m.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Một người đi 6 km về đông rồi 6 km về hướng đông bắc (45° so với hướng đông). Độ lớn độ dịch chuyển (km, làm tròn 2 chữ số thập phân) xấp xỉ:",
+      "expr": "11.09",
+      "answer": "11.09",
+      "explain": "d² = 36 + 36 + 2·36·cos 45° ≈ 72 + 50,9 = 122,9; d ≈ 11,09.",
+      "id": "q16"
+    }
+  ]
+}

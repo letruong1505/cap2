@@ -1,0 +1,227 @@
+{
+  "id": "bai-17",
+  "grade": 10,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 10",
+  "chapter": "Chương 5. Chu kì tế bào và phân bào",
+  "lesson": "Bài 17. Giảm phân",
+  "section": "",
+  "bookPage": 104,
+  "requirements": [
+    "Giải thích được quá trình giảm phân, thụ tinh cùng nguyên phân là cơ sở của sinh sản hữu tính.",
+    "Trình bày được một số nhân tố ảnh hưởng đến giảm phân.",
+    "Lập được bảng so sánh nguyên phân và giảm phân.",
+    "Vận dụng kiến thức về nguyên phân và giảm phân vào giải thích một số vấn đề thực tiễn."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Giảm phân là hình thức phân chia của tế bào mầm sinh dục để sản sinh giao tử. Giảm phân gồm hai lần phân bào liên tiếp (giảm phân I và giảm phân II) nhưng chỉ có một lần nhân đôi NST ở kì trung gian trước giảm phân I."
+    },
+    {
+      "type": "text",
+      "content": "Giảm phân I: ở kì đầu I, các NST kép tương đồng bắt cặp và có thể trao đổi đoạn; ở kì giữa I, các cặp tương đồng xếp trên mặt phẳng xích đạo; ở kì sau I, hai NST kép trong cặp tách ra đi về hai cực, làm số NST giảm một nửa. Giảm phân II tương tự nguyên phân, các chromatid tách nhau ở kì sau II."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b17-tong-quat-giam-phan.svg",
+      "caption": "Sơ đồ tổng quát của giảm phân"
+    },
+    {
+      "type": "text",
+      "content": "Kết quả: từ một tế bào 2n qua giảm phân tạo bốn tế bào n có tổ hợp NST khác nhau (do phân li ngẫu nhiên và trao đổi chéo). Ở động vật, một tế bào sinh tinh cho bốn tinh trùng; một tế bào sinh trứng chỉ cho một trứng và ba thể cực tiêu biến."
+    },
+    {
+      "type": "text",
+      "content": "Yếu tố ảnh hưởng: điều kiện môi trường (ánh sáng, nhiệt độ, nước) ảnh hưởng đến khả năng ra hoa; hormone sinh dục điều khiển sinh sản; tuổi mẹ càng cao, nguy cơ giao tử bất thường (như thừa NST 21 gây hội chứng Down) càng tăng, đặc biệt từ tuổi 35."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b17-sinh-san-huu-tinh.svg",
+      "caption": "Vai trò của giảm phân, thụ tinh và nguyên phân trong sinh sản hữu tính"
+    },
+    {
+      "type": "text",
+      "content": "Ý nghĩa: giảm phân kết hợp với thụ tinh và nguyên phân giúp duy trì bộ NST 2n đặc trưng của loài; các tổ hợp NST và gene mới tạo biến dị tổ hợp, nguyên liệu cho tiến hoá và chọn giống."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Vì sao giảm phân kết hợp với thụ tinh giúp duy trì bộ NST 2n đặc trưng của loài?",
+      "steps": [
+        "Giảm phân tạo giao tử n nên khi thụ tinh hai giao tử n kết hợp thành hợp tử 2n, khôi phục bộ NST của loài."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Vì sao cùng một cơ thể nhưng các giao tử lại khác nhau về tổ hợp gene?",
+      "steps": [
+        "Do phân li ngẫu nhiên các cặp NST tương đồng và trao đổi chéo ở kì đầu I, các giao tử nhận những tổ hợp NST và gene khác nhau."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Giảm phân tạo ra số tế bào con và NST trong mỗi tế bào là:",
+      "choices": [
+        "bốn tế bào, NST giảm một nửa",
+        "hai tế bào, NST không đổi",
+        "hai tế bào, NST gấp đôi",
+        "bốn tế bào, NST gấp đôi"
+      ],
+      "answer": 0,
+      "explain": "Giảm phân tạo bốn tế bào n.",
+      "wrong_explain": {
+        "1": "Nguyên phân mới tạo hai tế bào con giữ NST.",
+        "2": "Số NST không gấp đôi trong giảm phân.",
+        "3": "NST gấp đôi không xảy ra."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Số lần nhân đôi NST trong quá trình giảm phân là:",
+      "choices": [
+        "một lần, trước giảm phân I",
+        "hai lần",
+        "không nhân đôi",
+        "ba lần"
+      ],
+      "answer": 0,
+      "explain": "Giảm phân chỉ nhân đôi NST một lần.",
+      "wrong_explain": {
+        "1": "Chỉ có một lần nhân đôi.",
+        "2": "Không có nhân đôi trong giảm phân.",
+        "3": "Không có ba lần nhân đôi."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cơ chế nào dẫn đến số NST giảm một nửa sau giảm phân?",
+      "choices": [
+        "các cặp NST tương đồng phân li về hai tế bào ở giảm phân I",
+        "nhân đôi NST hai lần",
+        "NST tự tiêu biến",
+        "chromatid không tách ra"
+      ],
+      "answer": 0,
+      "explain": "Ở giảm phân I, các NST kép tương đồng tách ra làm số NST giảm đi một nửa.",
+      "wrong_explain": {
+        "1": "Nhân đôi chỉ xảy ra một lần.",
+        "2": "NST không tự tiêu biến.",
+        "3": "Chromatid tách ra ở giảm phân II."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trao đổi chéo ở kì đầu I có vai trò:",
+      "choices": [
+        "tạo tổ hợp gene mới, tăng biến dị tổ hợp",
+        "tăng số NST trong tế bào",
+        "làm tế bào không phân chia",
+        "tạo ra tế bào 4n"
+      ],
+      "answer": 0,
+      "explain": "Trao đổi chéo tạo tổ hợp gene mới.",
+      "wrong_explain": {
+        "1": "Trao đổi chéo không tăng số NST.",
+        "2": "Tế bào vẫn phân chia.",
+        "3": "Không tạo tế bào 4n."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ở người, một tế bào sinh trứng qua giảm phân cho:",
+      "choices": [
+        "một trứng và ba thể cực tiêu biến",
+        "bốn trứng lớn",
+        "bốn tinh trùng",
+        "hai trứng và hai thể cực"
+      ],
+      "answer": 0,
+      "explain": "Chỉ một trứng được hình thành, các thể cực tiêu biến.",
+      "wrong_explain": {
+        "1": "Chỉ có một trứng lớn.",
+        "2": "Đây là đặc điểm sinh tinh.",
+        "3": "Không đúng số lượng."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điểm khác nhau cơ bản nhất giữa nguyên phân và giảm phân là:",
+      "choices": [
+        "nguyên phân giữ bộ NST, giảm phân làm giảm một nửa",
+        "nguyên phân có kì đầu, giảm phân không có",
+        "giảm phân chỉ xảy ra ở thực vật",
+        "nguyên phân tạo giao tử"
+      ],
+      "answer": 0,
+      "explain": "Giảm phân tạo giao tử n từ tế bào 2n.",
+      "wrong_explain": {
+        "1": "Cả hai đều có các kì tương tự.",
+        "2": "Giảm phân xảy ra ở cả động vật và thực vật.",
+        "3": "Nguyên phân không tạo giao tử."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao người mẹ lớn tuổi có nguy cơ sinh con mắc hội chứng Down cao hơn?",
+      "choices": [
+        "giảm phân ở người mẹ dễ rối loạn phân li NST, tạo giao tử thừa NST 21",
+        "giảm phân không liên quan đến tuổi",
+        "tuổi cao làm NST nhân đôi nhiều lần",
+        "tuổi cao làm giao tử không có NST"
+      ],
+      "answer": 0,
+      "explain": "Tuổi càng cao, giảm phân dễ rối loạn.",
+      "wrong_explain": {
+        "1": "Tuổi có ảnh hưởng đến giảm phân.",
+        "2": "Nhân đôi NST chỉ một lần.",
+        "3": "Giao tử vẫn có NST."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cây thanh long được thắp đèn ban đêm để ra hoa trái vụ. Đây là ví dụ về:",
+      "choices": [
+        "ảnh hưởng của điều kiện chiếu sáng đến quá trình sinh sản",
+        "ảnh hưởng của pH lên giảm phân",
+        "ảnh hưởng của NST đơn",
+        "ảnh hưởng của lysosome"
+      ],
+      "answer": 0,
+      "explain": "Ánh sáng ảnh hưởng đến sự ra hoa, liên quan đến sinh sản.",
+      "wrong_explain": {
+        "1": "pH không phải yếu tố trong ví dụ này.",
+        "2": "NST đơn không liên quan.",
+        "3": "Lysosome không liên quan."
+      },
+      "id": "q08"
+    }
+  ]
+}

@@ -1,0 +1,327 @@
+{
+  "id": "bai-14",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 2. Sóng",
+  "lesson": "Bài 14. Bài tập về sóng",
+  "section": "",
+  "bookPage": 55,
+  "requirements": [
+    "Vận dụng mối liên hệ λ = vT = v/f để tìm các đại lượng đặc trưng của sóng từ phương trình hoặc đồ thị.",
+    "Giải bài tập về giao thoa sóng, giao thoa ánh sáng và sóng dừng."
+  ],
+  "theory": [
+    {
+      "type": "formula",
+      "content": "λ = vT = v/f;   Δφ = 2πd/λ;   i = λD/a;   dây hai đầu cố định L = nλ/2;   một đầu tự do L = (2k + 1)λ/4;   c = λf = 3·10⁸ m/s (sóng điện từ)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b14-song-hinh-sin.svg",
+      "caption": "Đồ thị (u – x) của sóng hình sin: λ đọc từ hai ngọn liên tiếp, biên độ A là độ cao ngọn sóng; muốn có v cần thêm T hoặc f"
+    },
+    {
+      "type": "text",
+      "content": "Chiến lược giải: (1) xác định đại lượng đề cho và cần tìm; (2) đổi đơn vị; (3) chọn hệ thức phù hợp: sóng cơ bản dùng λ = v/f; giao thoa nước dùng λ/2 giữa hai cực đại; Y-âng dùng i = λD/a; sóng dừng dùng L = nλ/2; (4) kiểm tra kết quả bằng đơn vị và độ lớn hợp lí."
+    },
+    {
+      "type": "method",
+      "title": "Bài toán sóng cơ bản: tốc độ – bước sóng – tần số",
+      "when": "Cho quãng đường, thời gian, số gợn sóng, tần số nguồn.",
+      "steps": [
+        "Tính v = s/t hoặc dùng λ = (khoảng cách giữa hai gợn).",
+        "λ = v/f hoặc v = λf.",
+        "Chu kì T = 1/f.",
+        "Đổi cm ↔ m cho phù hợp."
+      ],
+      "notes": [
+        "Giữa n gợn liên tiếp có (n − 1)λ.",
+        "Tần số quyết định bởi nguồn."
+      ],
+      "sample": {
+        "problem": "Sóng âm f = 200 Hz truyền được 68 m trong 0,2 s. Tính v và λ.",
+        "steps": [
+          "v = s/t = 68/0,2 = 340 m/s.",
+          "λ = v/f = 340/200 = 1,7 m."
+        ],
+        "answer": "v = 340 m/s; λ = 1,7 m"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Xác định trạng thái dao động từ khoảng cách (cùng pha, ngược pha)",
+      "when": "Cho sóng truyền tới điểm R bắt đầu đi lên; hỏi các điểm cách R những khoảng nguyên, bán nguyên λ bắt đầu đi lên hay xuống.",
+      "steps": [
+        "Cách R số nguyên λ: dao động cùng pha với R.",
+        "Cách R (k + ½)λ: ngược pha với R.",
+        "Từ đó suy ra chiều chuyển động (lên/xuống) tại thời điểm xét.",
+        "Dùng đường sóng để minh hoạ."
+      ],
+      "notes": [
+        "Điểm Q cách R đúng 1λ: giống R.",
+        "Điểm P cách R 1,5λ: ngược R."
+      ],
+      "sample": {
+        "problem": "Sóng tới điểm R làm R bắt đầu đi lên; điểm P cách R 1,5λ. P bắt đầu đi lên hay xuống?",
+        "steps": [
+          "d = 1,5λ ⇒ ngược pha.",
+          "P bắt đầu đi xuống."
+        ],
+        "answer": "Xuống"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Bài toán giao thoa ánh sáng hai bức xạ",
+      "when": "Khe sáng phát đồng thời hai bức xạ λ₁, λ₂ cho a, D.",
+      "steps": [
+        "i₁ = λ₁D/a; i₂ = λ₂D/a.",
+        "Vân cùng màu vân trung tâm: k₁i₁ = k₂i₂ ⇒ k₁/k₂ = λ₂/λ₁ (tối giản p/q).",
+        "Khoảng cách ngắn nhất giữa hai vân cùng màu vân trung tâm: x = p·i₁ = q·i₂.",
+        "Tính theo mm."
+      ],
+      "notes": [
+        "Nếu tỉ số λ tối giản là 5/6 thì x = 5i₁.",
+        "Vân trung tâm là chung."
+      ],
+      "sample": {
+        "problem": "a = 2 mm, D = 1,2 m, λ₁ = 0,66 μm, λ₂ = 0,55 μm. Tính x.",
+        "steps": [
+          "i₁ = 0,396 mm; i₂ = 0,33 mm.",
+          "k₁/k₂ = 5/6 ⇒ x = 5·0,396 = 1,98 mm."
+        ],
+        "answer": "1,98 mm"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Sóng nước: bán kính hai gợn tròn liên tiếp 12,4 cm và 14,3 cm, f = 50 Hz. Tốc độ v (cm/s)?",
+      "steps": [
+        "λ = 14,3 − 12,4 = 1,9 cm.",
+        "v = λf = 95 cm/s."
+      ],
+      "expr": "(14.3-12.4)*50",
+      "answer": "95"
+    },
+    {
+      "problem": "Dây L = 1,2 m có 4 bụng, f = 15 Hz. v (m/s)?",
+      "steps": [
+        "λ = 2L/4 = 0,6 m.",
+        "v = 0,6·15 = 9 m/s."
+      ],
+      "expr": "(2*1.2)/(4)*15",
+      "answer": "9"
+    },
+    {
+      "problem": "a = 2 mm, D = 1,2 m, λ = 0,66 μm. Khoảng vân i (mm) = λD/a?",
+      "steps": [
+        "i = 0,66·1,2/2.",
+        "= 0,396 mm."
+      ],
+      "expr": "0.66*1.2/2",
+      "answer": "99/250"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Sóng v = 2 m/s, f = 4 Hz. λ (m):",
+      "expr": "2/4",
+      "answer": "1/2",
+      "explain": "λ = 0,5 m.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Sóng λ = 0,5 m, T = 0,25 s. v (m/s):",
+      "expr": "(0.5)/(0.25)",
+      "answer": "2",
+      "explain": "v = 2 m/s.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hai nút liên tiếp của sóng dừng cách nhau 0,4 m. λ (m):",
+      "expr": "2*0.4",
+      "answer": "4/5",
+      "explain": "λ = 0,8 m.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sóng truyền từ môi trường này sang môi trường khác thì đại lượng không đổi là:",
+      "choices": [
+        "tần số",
+        "bước sóng",
+        "tốc độ",
+        "biên độ"
+      ],
+      "answer": 0,
+      "explain": "Tần số do nguồn quyết định.",
+      "wrong_explain": {
+        "1": "λ thay đổi.",
+        "2": "v thay đổi.",
+        "3": "Biên độ có thể đổi."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điểm cách nguồn kλ so với nguồn dao động:",
+      "choices": [
+        "cùng pha",
+        "ngược pha",
+        "vuông pha",
+        "đứng yên"
+      ],
+      "answer": 0,
+      "explain": "Cùng pha khi cách nhau số nguyên bước sóng.",
+      "wrong_explain": {
+        "1": "Ngược pha khi (k+½)λ.",
+        "2": "Vuông pha khi (2k+1)λ/4.",
+        "3": "Không đứng yên."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai gợn tròn liên tiếp bán kính 12,4 cm và 14,3 cm; f = 50 Hz. v (cm/s):",
+      "expr": "(14.3-12.4)*50",
+      "answer": "95",
+      "explain": "v = 95 cm/s.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Dây 1,2 m có 4 bụng; λ (m):",
+      "expr": "(2*1.2)/(4)",
+      "answer": "3/5",
+      "explain": "λ = 0,6 m.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "a = 2 mm, D = 1,2 m, λ = 0,66 μm. i (mm):",
+      "expr": "0.66*1.2/2",
+      "answer": "99/250",
+      "explain": "i = 0,396 mm.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "λ = 0,55 μm, a = 2 mm, D = 1,2 m. i (mm):",
+      "expr": "0.55*1.2/2",
+      "answer": "33/100",
+      "explain": "i = 0,33 mm.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tần số 192 Hz, v = 340 m/s. λ (m) làm tròn: nhập 340/192:",
+      "expr": "340/192",
+      "answer": "85/48",
+      "explain": "λ ≈ 1,77 m.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khoảng vân tăng khi:",
+      "choices": [
+        "tăng λ hoặc tăng D",
+        "tăng a",
+        "giảm D",
+        "giảm λ"
+      ],
+      "answer": 0,
+      "explain": "i = λD/a.",
+      "wrong_explain": {
+        "1": "Tăng a làm i giảm.",
+        "2": "Giảm D làm i giảm.",
+        "3": "Giảm λ làm i giảm."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Sóng truyền tới R bắt đầu đi lên; điểm cách R 2λ. Điểm này bắt đầu đi lên (nhập 1) hay xuống (nhập 0)?",
+      "expr": "1",
+      "answer": "1",
+      "explain": "Cách 2λ: cùng pha nên đi lên.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Sóng truyền tới R bắt đầu đi lên; điểm cách R 1,5λ. Lên (1) hay xuống (0)?",
+      "expr": "0",
+      "answer": "0",
+      "explain": "Ngược pha: đi xuống.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "k₁/k₂ = λ₂/λ₁ = 0,55/0,66 = 5/6. x = 5·i₁ với i₁ = 0,396 mm (mm):",
+      "expr": "5*0.396",
+      "answer": "99/50",
+      "explain": "x = 1,98 mm.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Lò xo dài 1,2 m, sóng dừng chỉ có 1 bó, f = 50 Hz. v (m/s):",
+      "expr": "2*1.2*50",
+      "answer": "120",
+      "explain": "λ = 2L = 2,4 m; v = 120 m/s.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Đồ thị (u – x) có λ = 100 cm, T = 1 s. Tốc độ v (m/s):",
+      "expr": "1/1",
+      "answer": "1",
+      "explain": "v = λ/T = 1 m/s.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nếu tần số tăng lên 5 Hz và tốc độ không đổi thì bước sóng:",
+      "choices": [
+        "giảm",
+        "tăng",
+        "không đổi",
+        "bằng 0"
+      ],
+      "answer": 0,
+      "explain": "λ = v/f giảm khi f tăng.",
+      "wrong_explain": {
+        "1": "Tăng f làm λ giảm.",
+        "2": "λ thay đổi.",
+        "3": "Không bằng 0."
+      },
+      "id": "q17"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "appId": "vn.namlinh.giaotrinhthpt",
+  "productName": "Giáo trình THPT",
+  "directories": { "app": ".", "output": "dist-thpt" },
+  "files": [
+    "main/**/*",
+    "renderer/**/*",
+    "core/**/*",
+    "content/toan10/**/*",
+    "content/toan11/**/*",
+    "content/toan12/**/*",
+    "content/ly10/**/*",
+    "content/ly11/**/*",
+    "content/ly12/**/*",
+    "content/hoa10/**/*",
+    "content/hoa11/**/*",
+    "content/hoa12/**/*",
+    "content/sinh10/**/*",
+    "content/sinh11/**/*",
+    "content/sinh12/**/*",
+    "content/anh10/**/*",
+    "content/anh11/**/*",
+    "content/anh12/**/*",
+    "content/lichsu10/**/*",
+    "content/lichsu11/**/*",
+    "content/lichsu12/**/*",
+    "content/diali10/**/*",
+    "content/diali11/**/*",
+    "content/diali12/**/*",
+    "content/gdktpl10/**/*",
+    "content/gdktpl11/**/*",
+    "content/gdktpl12/**/*",
+    "package.json"
+  ],
+  "win": {
+    "target": "nsis",
+    "artifactName": "GiaoTrinhTHPT-Setup-${version}.exe"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "perMachine": false,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "Giáo trình THPT",
+    "uninstallDisplayName": "Giáo trình THPT",
+    "deleteAppDataOnUninstall": false
+  }
+}

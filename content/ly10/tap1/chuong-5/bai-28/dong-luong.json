@@ -1,0 +1,288 @@
+{
+  "id": "bai-28",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương V. Động lượng",
+  "lesson": "Bài 28. Động lượng",
+  "section": "",
+  "bookPage": 110,
+  "requirements": [
+    "Nêu được định nghĩa động lượng, đơn vị; liên hệ giữa lực và tốc độ thay đổi động lượng.",
+    "Tính động lượng, độ biến thiên động lượng và lực trung bình trong va chạm."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Động lượng của một vật là đại lượng đo bằng tích khối lượng và vận tốc của vật; là đại lượng vectơ cùng hướng với vận tốc."
+    },
+    {
+      "type": "formula",
+      "content": "→p = m·→v        Đơn vị: kg·m/s"
+    },
+    {
+      "type": "text",
+      "content": "Động lượng của hệ vật bằng tổng vectơ động lượng của các vật trong hệ: →p = →p₁ + →p₂ + ..."
+    },
+    {
+      "type": "formula",
+      "content": "Δ→p = →F·Δt   ⇔   →F = Δ→p/Δt        (F·Δt gọi là xung lượng của lực, đơn vị N·s)"
+    },
+    {
+      "type": "text",
+      "content": "Dạng khác của định luật 2 Newton: lực tác dụng lên vật bằng tốc độ thay đổi động lượng của vật. Cùng một độ biến thiên động lượng, thời gian tương tác càng dài thì lực càng nhỏ. Ứng dụng: túi khí ô tô, đệm nhảy cao, khuỵu gối khi tiếp đất, găng thủ môn."
+    },
+    {
+      "type": "text",
+      "content": "Khi vật đổi chiều chuyển động (bóng bật lại), độ biến thiên động lượng có độ lớn m(v₁ + v₂) theo phương chuyển động, vì vận tốc đổi dấu."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b28-bong-bat.svg",
+      "caption": "Quả bóng đập vào tường và bật ngược lại"
+    },
+    {
+      "type": "method",
+      "title": "Tính động lượng và lực trung bình",
+      "when": "Đề cho khối lượng, vận tốc trước và sau, thời gian va chạm; hỏi động lượng, độ biến thiên động lượng, lực trung bình.",
+      "steps": [
+        "Chọn chiều dương; ghi vận tốc trước và sau kèm dấu.",
+        "Δp = m(v₂ − v₁) (chú ý dấu khi bật ngược).",
+        "F = Δp/Δt; độ lớn lực bằng |Δp|/Δt.",
+        "Động lượng hệ: cộng vectơ (cùng phương cộng có dấu, vuông góc dùng Pythagore)."
+      ],
+      "notes": [
+        "Đổi g ra kg, km/h ra m/s.",
+        "Bật ngược lại: |Δp| = m(v₁ + v₂)."
+      ],
+      "sample": {
+        "problem": "Quả bóng 0,4 kg bay 10 m/s đập vào tường bật ngược với 8 m/s, va chạm 0,05 s. Tính lực trung bình tường tác dụng.",
+        "steps": [
+          "Chọn chiều dương là chiều bật ra: Δp = 0,4·(8 − (−10)) = 7,2 kg·m/s.",
+          "F = 7,2/0,05 = 144 N."
+        ],
+        "answer": "144 N"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Xe 1000 kg chạy 72 km/h. Tính động lượng.",
+      "steps": [
+        "v = 20 m/s.",
+        "p = 1000·20 = 20 000 kg·m/s."
+      ],
+      "expr": "1000*20",
+      "answer": "20000"
+    },
+    {
+      "problem": "Hai vật 1 kg và 2 kg chuyển động vuông góc với tốc độ lần lượt 4 m/s và 1,5 m/s. Tính động lượng của hệ.",
+      "steps": [
+        "p₁ = 4 kg·m/s, p₂ = 3 kg·m/s, vuông góc.",
+        "p = √(16 + 9) = 5 kg·m/s."
+      ],
+      "expr": "5",
+      "answer": "5"
+    },
+    {
+      "problem": "Lực 50 N tác dụng lên vật 2 kg đang đứng yên trong 0,4 s. Tính vận tốc của vật sau đó.",
+      "steps": [
+        "Δp = F·Δt = 50·0,4 = 20 kg·m/s.",
+        "v = 20/2 = 10 m/s."
+      ],
+      "expr": "20/2",
+      "answer": "10"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật 3 kg chuyển động 4 m/s. Động lượng (kg·m/s):",
+      "expr": "12",
+      "answer": "12",
+      "explain": "p = mv.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đơn vị của động lượng là:",
+      "choices": [
+        "kg·m/s",
+        "kg·m/s²",
+        "N/s",
+        "J"
+      ],
+      "answer": 0,
+      "explain": "Khối lượng nhân vận tốc.",
+      "wrong_explain": {
+        "1": "Đó là N.",
+        "2": "Sai.",
+        "3": "Năng lượng."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Động lượng là đại lượng:",
+      "choices": [
+        "vectơ cùng hướng với vận tốc",
+        "vô hướng",
+        "vectơ ngược hướng vận tốc",
+        "luôn bằng 0"
+      ],
+      "answer": 0,
+      "explain": "→p = m→v.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Xung lượng của lực bằng:",
+      "choices": [
+        "độ biến thiên động lượng",
+        "động năng",
+        "công của lực",
+        "thế năng"
+      ],
+      "answer": 0,
+      "explain": "F·Δt = Δp.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Lực 20 N tác dụng trong 0,5 s. Xung lượng (N·s):",
+      "expr": "10",
+      "answer": "10",
+      "explain": "F·Δt.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật 2 kg tăng tốc từ 3 m/s lên 8 m/s. Độ biến thiên động lượng (kg·m/s):",
+      "expr": "10",
+      "answer": "10",
+      "explain": "m·Δv.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Xe 1,5 tấn chạy 36 km/h. Động lượng (kg·m/s):",
+      "expr": "15000",
+      "answer": "15000",
+      "explain": "1500·10.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Túi khí ô tô giảm chấn thương vì:",
+      "choices": [
+        "kéo dài thời gian va chạm nên lực tác dụng nhỏ hơn",
+        "giảm động lượng ban đầu",
+        "tăng khối lượng người",
+        "làm xe dừng nhanh hơn"
+      ],
+      "answer": 0,
+      "explain": "F = Δp/Δt.",
+      "wrong_explain": {
+        "1": "Δp không đổi.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bóng 0,5 kg bay 6 m/s đập tường bật ngược 6 m/s. Độ lớn độ biến thiên động lượng (kg·m/s):",
+      "expr": "6",
+      "answer": "6",
+      "explain": "0,5·12.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Với bóng trên, va chạm 0,02 s. Lực trung bình (N):",
+      "expr": "300",
+      "answer": "300",
+      "explain": "6/0,02.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai vật 2 kg chuyển động ngược chiều, mỗi vật 3 m/s. Tổng động lượng hệ (kg·m/s):",
+      "expr": "0",
+      "answer": "0",
+      "explain": "Bằng nhau, ngược chiều.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật 1 kg rơi tự do 2 s (g = 10). Độ biến thiên động lượng (kg·m/s):",
+      "expr": "20",
+      "answer": "20",
+      "explain": "mgt.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai vật: 2 kg chạy 3 m/s về đông, 1 kg chạy 8 m/s về bắc. Động lượng hệ (kg·m/s):",
+      "expr": "10",
+      "answer": "10",
+      "explain": "√(36 + 64).",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cầu thủ đá bóng 0,45 kg từ nghỉ đạt 20 m/s, thời gian chân chạm bóng 0,015 s. Lực trung bình (N):",
+      "expr": "600",
+      "answer": "600",
+      "explain": "9/0,015.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Người 60 kg nhảy từ cao xuống, chạm đất với 6 m/s, khuỵu gối dừng trong 0,3 s. Lực trung bình của đất (bỏ qua trọng lực, N):",
+      "expr": "1200",
+      "answer": "1200",
+      "explain": "360/0,3.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Viên đạn 10 g bay 600 m/s xuyên qua tấm thép, ra với 200 m/s trong 0,001 s. Lực cản trung bình (N):",
+      "expr": "4000",
+      "answer": "4000",
+      "explain": "0,01·400/0,001.",
+      "id": "q16"
+    }
+  ]
+}

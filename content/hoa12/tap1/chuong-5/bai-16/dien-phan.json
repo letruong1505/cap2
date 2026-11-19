@@ -1,0 +1,274 @@
+{
+  "id": "bai-16",
+  "grade": 12,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Hóa học 12",
+  "chapter": "Chương 5. Pin điện và điện phân",
+  "lesson": "Bài 16. Điện phân",
+  "section": "",
+  "bookPage": 78,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Điện phân là quá trình oxi hóa – khử xảy ra tại các điện cực khi có dòng điện một chiều đi qua chất điện li nóng chảy hoặc dung dịch chất điện li. Phản ứng điện phân là phản ứng không tự xảy ra, cần điện năng. Quy ước: cathode xảy ra sự khử (cực âm), anode xảy ra sự oxi hóa (cực dương); ion dương chạy về cathode, ion âm chạy về anode."
+    },
+    {
+      "type": "text",
+      "content": "Nước có thể tham gia điện phân: là chất oxi hóa ở cathode (2H₂O + 2e → H₂ + 2OH⁻) hoặc chất khử ở anode (2H₂O → O₂ + 4H⁺ + 4e)."
+    },
+    {
+      "type": "text",
+      "content": "Thứ tự điện phân: tại cathode, chất oxi hóa mạnh hơn bị khử trước (Au³⁺ > Ag⁺ > Hg²⁺ > Cu²⁺ > H⁺ > H₂O; các ion kim loại mạnh như Na⁺, K⁺, Ca²⁺, Mg²⁺, Al³⁺ không bị khử trong dung dịch); tại anode, chất khử mạnh hơn bị oxi hóa trước (I⁻ > Br⁻ > Cl⁻ > H₂O; các anion SO₄²⁻, NO₃⁻, CO₃²⁻, PO₄³⁻, F⁻ không bị điện phân)."
+    },
+    {
+      "type": "formula",
+      "content": "Điện phân NaCl nóng chảy: 2NaCl → 2Na + Cl₂"
+    },
+    {
+      "type": "formula",
+      "content": "Điện phân dung dịch CuSO₄ (điện cực trơ): 2CuSO₄ + 2H₂O → 2Cu + O₂ + 2H₂SO₄"
+    },
+    {
+      "type": "formula",
+      "content": "Điện phân dung dịch NaCl bão hòa (màng ngăn): 2NaCl + 2H₂O → 2NaOH + H₂ + Cl₂"
+    },
+    {
+      "type": "text",
+      "content": "Nếu không có màng ngăn, Cl₂ phản ứng với NaOH tạo nước Javel: Cl₂ + 2NaOH → NaCl + NaClO + H₂O. Nước Javel có tính tẩy màu, sát trùng."
+    },
+    {
+      "type": "text",
+      "content": "Ứng dụng: (1) Sản xuất kim loại — kim loại mạnh (Na, K, Mg, Ca, Al) bằng điện phân nóng chảy; Zn, Cu,… bằng điện phân dung dịch. Nhôm: điện phân Al₂O₃ nóng chảy hòa tan trong cryolite Na₃AlF₆ (hạ nhiệt độ nóng chảy xuống ~1000 °C, tăng độ dẫn điện): 2Al₂O₃ → 4Al + 3O₂; anode than chì bị O₂ đốt cháy dần nên phải thay. (2) Tinh chế kim loại, ví dụ đồng: anode là đồng thô (tan: Cu → Cu²⁺ + 2e), cathode là đồng tinh khiết (Cu²⁺ + 2e → Cu), dung dịch CuSO₄/H₂SO₄. (3) Mạ điện: vật cần mạ làm cathode, kim loại mạ làm anode, dung dịch muối của kim loại mạ; độ dày lớp mạ tỉ lệ với cường độ dòng điện và thời gian."
+    },
+    {
+      "type": "text",
+      "content": "Định lượng (định luật Faraday): m = A·I·t/(n·F) với F = 96 500 C/mol; lượng electron trao đổi n(e) = I·t/F."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Điện phân dung dịch CuSO₄ với điện cực trơ, dòng điện I = 1,93 A trong 1000 s (F = 96 500 C/mol). Tính số mol electron trao đổi.",
+      "steps": [
+        "Q = I·t = 1,93 × 1000 = 1930 C.",
+        "n(e) = 1930/96 500 = 0,02 mol."
+      ],
+      "expr": "1930/96500",
+      "answer": "0.02"
+    },
+    {
+      "problem": "Với kết quả trên (n(e) = 0,02 mol), tính khối lượng Cu bám ở cathode (Cu = 64).",
+      "steps": [
+        "Cu²⁺ + 2e → Cu nên n(Cu) = 0,02/2 = 0,01 mol.",
+        "m(Cu) = 0,01 × 64 = 0,64 g."
+      ],
+      "expr": "0.02/2*64",
+      "answer": "0.64"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Trong điện phân, tại cathode xảy ra quá trình:",
+      "choices": [
+        "Oxi hóa",
+        "Trung hòa",
+        "Khử",
+        "Phân li"
+      ],
+      "answer": 2,
+      "explain": "Cathode là nơi chất oxi hóa nhận electron (bị khử).",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Oxi hóa xảy ra ở anode.",
+        "1": "Không phải quá trình tại điện cực.",
+        "3": "Không phải quá trình tại điện cực."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Kim loại nào sau đây được điều chế bằng cách điện phân nóng chảy hợp chất ion của nó?",
+      "choices": [
+        "Na",
+        "Cu",
+        "Ag",
+        "Fe"
+      ],
+      "answer": 0,
+      "explain": "Kim loại mạnh như Na, K, Mg, Ca, Al được điều chế bằng điện phân nóng chảy.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Cu được điều chế bằng điện phân dung dịch hoặc các phương pháp khác.",
+        "2": "Ag được điều chế bằng thủy luyện hoặc điện phân dung dịch.",
+        "3": "Fe được điều chế bằng nhiệt luyện."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Sản xuất nhôm trong công nghiệp bằng phương pháp:",
+      "choices": [
+        "Điện phân dung dịch AlCl₃",
+        "Nhiệt luyện Al₂O₃ bằng CO",
+        "Thủy luyện",
+        "Điện phân Al₂O₃ nóng chảy trong cryolite"
+      ],
+      "answer": 3,
+      "explain": "Điện phân Al₂O₃ nóng chảy: 2Al₂O₃ → 4Al + 3O₂.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Nước bị khử trước Al³⁺ nên không thu được Al.",
+        "1": "CO không khử được Al₂O₃.",
+        "2": "Không điều chế Al bằng thủy luyện."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cryolite (Na₃AlF₆) được thêm vào Al₂O₃ khi điện phân nhằm mục đích:",
+      "choices": [
+        "Làm tăng nhiệt độ nóng chảy của Al₂O₃",
+        "Hạ nhiệt độ nóng chảy, tăng độ dẫn điện của hỗn hợp",
+        "Làm tăng nồng độ ion Al³⁺ trong dung dịch",
+        "Phản ứng với Al sinh ra"
+      ],
+      "answer": 1,
+      "explain": "Hỗn hợp nóng chảy ở khoảng 1000 °C, dẫn điện tốt và nổi trên lớp Al lỏng.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Cryolite làm giảm nhiệt độ nóng chảy.",
+        "2": "Nó không làm tăng nồng độ ion Al³⁺ một cách đáng kể.",
+        "3": "Không phản ứng với Al."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Điện phân dung dịch CuSO₄ với điện cực trơ, sản phẩm tại anode là:",
+      "choices": [
+        "Khí O₂",
+        "Kim loại Cu",
+        "Khí H₂",
+        "Khí SO₂"
+      ],
+      "answer": 0,
+      "explain": "H₂O bị oxi hóa tại anode: 2H₂O → O₂ + 4H⁺ + 4e.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Cu thu được ở cathode.",
+        "2": "H₂ không tạo thành khi Cu²⁺ còn.",
+        "3": "SO₄²⁻ không bị oxi hóa."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Điện phân dung dịch NaCl bão hòa có màng ngăn, ở cathode thu được:",
+      "choices": [
+        "Na kim loại",
+        "Cl₂",
+        "H₂ và dung dịch NaOH",
+        "O₂"
+      ],
+      "answer": 2,
+      "explain": "2H₂O + 2e → H₂ + 2OH⁻ tại cathode.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Na⁺ không bị khử trong dung dịch.",
+        "1": "Cl₂ thoát ra ở anode.",
+        "3": "O₂ không sinh ra ở cathode."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trong tinh chế đồng bằng điện phân, anode là:",
+      "choices": [
+        "Đồng tinh khiết",
+        "Than chì",
+        "Platinum",
+        "Đồng thô"
+      ],
+      "answer": 3,
+      "explain": "Đồng thô tan thành Cu²⁺, rồi Cu²⁺ bị khử thành Cu tinh khiết ở cathode.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đồng tinh khiết là cathode.",
+        "1": "Anode là đồng thô để tan vào dung dịch.",
+        "2": "Không dùng platinum làm anode."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Điện phân với I = 1,93 A trong 1000 s. Số mol electron trao đổi là bao nhiêu? (F = 96 500; nhập số thập phân)",
+      "expr": "1.93*1000/96500",
+      "answer": "0.02",
+      "explain": "n(e) = 1930/96 500 = 0,02 mol.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Điện phân CuSO₄: số mol electron trao đổi là 0,02 mol. Khối lượng Cu ở cathode là bao nhiêu gam? (Cu = 64)",
+      "expr": "0.02/2*64",
+      "answer": "0.64",
+      "explain": "n(Cu) = 0,01 mol → m = 0,64 g.",
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Điện phân nóng chảy NaCl, thu được 2,3 g Na (Na = 23). Thể tích Cl₂ thu được ở điều kiện chuẩn (1 mol khí = 22,4 L) là bao nhiêu lít?",
+      "expr": "2.3/23/2*22.4",
+      "answer": "1.12",
+      "explain": "n(Na) = 0,1 mol → n(Cl₂) = 0,05 mol → V = 1,12 L.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Điện phân Al₂O₃ nóng chảy thu được 54 g Al (Al = 27). Khối lượng Al₂O₃ (M = 102) đã bị điện phân là bao nhiêu gam?",
+      "expr": "54/27/2*102",
+      "answer": "102",
+      "explain": "n(Al) = 2 mol → n(Al₂O₃) = 1 mol → m = 102 g.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Điện phân dung dịch NaCl bão hòa có màng ngăn, thu được 0,1 mol H₂. Số mol NaOH tạo thành là bao nhiêu? (nhập số thập phân)",
+      "expr": "0.1*2",
+      "answer": "0.2",
+      "explain": "2NaCl + 2H₂O → 2NaOH + H₂ + Cl₂: n(NaOH) = 2 n(H₂) = 0,2 mol.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Điện phân dung dịch AgNO₃ với I = 9,65 A trong 1000 s. Khối lượng Ag thu được là bao nhiêu gam? (Ag = 108, F = 96 500)",
+      "expr": "9.65*1000/96500*108",
+      "answer": "10.8",
+      "explain": "n(e) = 0,1 mol; Ag⁺ + e → Ag nên n(Ag) = 0,1 mol → 10,8 g.",
+      "id": "q13"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Điện phân 200 mL dung dịch CuSO₄ cho đến khi Cu²⁺ vừa hết, thu được 3,2 g Cu (Cu = 64). Số mol H₂SO₄ tạo thành là bao nhiêu? (nhập số thập phân)",
+      "expr": "3.2/64",
+      "answer": "0.05",
+      "explain": "2CuSO₄ + 2H₂O → 2Cu + O₂ + 2H₂SO₄: n(H₂SO₄) = n(Cu) = 0,05 mol.",
+      "id": "q14"
+    }
+  ]
+}

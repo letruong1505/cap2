@@ -1,0 +1,17 @@
+{
+  "name": "nam-linh-educenter-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vỏ Capacitor cho bản Android của Nam Linh Educenter. Giao diện và cầu nối nằm ngoài thư mục này (xem tools/build-mobile-www.js).",
+  "scripts": {
+    "sync": "cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.2",
+    "@capacitor/core": "^8.6.2",
+    "@capacitor/device": "^8.0.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.6.2"
+  }
+}

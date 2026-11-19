@@ -1,0 +1,206 @@
+{
+  "id": "bai-40",
+  "grade": 7,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 7",
+  "chapter": "Chương X. Sinh sản ở sinh vật",
+  "lesson": "Bài 40. Sinh sản hữu tính ở sinh vật",
+  "section": "",
+  "bookPage": 164,
+  "requirements": [
+    "Nêu được khái niệm sinh sản hữu tính ở sinh vật.",
+    "Phân biệt được sinh sản hữu tính và sinh sản vô tính.",
+    "Mô tả được các bộ phận của hoa lưỡng tính, phân biệt hoa đơn tính và hoa lưỡng tính.",
+    "Mô tả được thụ phấn, thụ tinh và lớn lên của quả.",
+    "Mô tả được khái quát quá trình sinh sản hữu tính ở động vật (lấy ví dụ ở động vật đẻ trứng và đẻ con).",
+    "Nêu được vai trò và ứng dụng của sinh sản hữu tính ở sinh vật."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Sinh sản hữu tính là hình thức sinh sản tạo ra cơ thể mới qua sự hợp nhất giữa giao tử đực và giao tử cái tạo nên hợp tử; hợp tử phát triển thành cơ thể mới. Sinh sản hữu tính là hình thức điển hình ở thực vật có hoa và nhiều nhóm động vật."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/khtn-hoa.svg",
+      "caption": "Cấu tạo hoa lưỡng tính (minh họa)."
+    },
+    {
+      "type": "text",
+      "content": "Hoa lưỡng tính có cả nhị và nhuỵ; hoa đơn tính chỉ mang nhị hoặc nhuỵ. Bộ phận sinh sản của hoa là nhị (chỉ nhị, bao phấn chứa hạt phấn mang giao tử đực) và nhuỵ (đầu nhuỵ, vòi nhuỵ, bầu nhuỵ chứa noãn mang giao tử cái)."
+    },
+    {
+      "type": "text",
+      "content": "Sinh sản hữu tính ở thực vật có hoa gồm các giai đoạn: tạo giao tử, thụ phấn, thụ tinh, hình thành quả và hạt. Thụ phấn là sự di chuyển hạt phấn đến đầu nhuỵ nhờ gió, côn trùng hoặc con người. Thụ tinh là sự hợp nhất giữa nhân của giao tử đực và nhân của giao tử cái."
+    },
+    {
+      "type": "text",
+      "content": "Hạt do noãn phát triển thành; quả do bầu nhuỵ phát triển thành. Quả hình thành không qua thụ tinh là quả không hạt."
+    },
+    {
+      "type": "text",
+      "content": "Sinh sản hữu tính ở động vật gồm ba giai đoạn: hình thành giao tử, thụ tinh, phát triển phôi thành cơ thể mới. Có loài đẻ trứng (như gà) và loài đẻ con (như thỏ)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Một bông hoa lưỡng tính có 5 nhị và 1 nhuỵ. Tổng số bộ phận nhị và nhuỵ của hoa là bao nhiêu?",
+      "expr": "5 + 1",
+      "steps": [
+        "Số nhị là 5, số nhuỵ là 1.",
+        "5 + 1 = 6 bộ phận."
+      ],
+      "answer": "6"
+    },
+    {
+      "problem": "Một quả chứa 8 hạt. Nếu 3 quả như vậy thì tổng số hạt là bao nhiêu?",
+      "expr": "8 * 3",
+      "steps": [
+        "Mỗi quả chứa 8 hạt.",
+        "8 × 3 = 24 hạt."
+      ],
+      "answer": "24"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hoa lưỡng tính là hoa:",
+      "choices": [
+        "Có cả nhị và nhuỵ",
+        "Chỉ có nhị",
+        "Chỉ có nhuỵ",
+        "Không có nhị và nhuỵ"
+      ],
+      "answer": 0,
+      "explain": "Hoa lưỡng tính có cả nhị và nhuỵ, ví dụ hoa li, hoa hồng.",
+      "wrong_explain": {
+        "1": "Hoa chỉ có nhị là hoa đơn tính đực.",
+        "2": "Hoa chỉ có nhuỵ là hoa đơn tính cái.",
+        "3": "Hoa lưỡng tính có đủ nhị và nhuỵ."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hạt phấn mang giao tử đực nằm trong:",
+      "choices": [
+        "Bao phấn",
+        "Bầu nhuỵ",
+        "Noãn",
+        "Đầu nhuỵ"
+      ],
+      "answer": 0,
+      "explain": "Bao phấn chứa hạt phấn mang giao tử đực.",
+      "wrong_explain": {
+        "1": "Bầu nhuỵ chứa noãn mang giao tử cái.",
+        "2": "Noãn nằm trong bầu nhuỵ, không chứa giao tử đực.",
+        "3": "Đầu nhuỵ tiếp nhận hạt phấn, không chứa giao tử đực."
+      },
+      "concept": true
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Thụ tinh là sự hợp nhất giữa:",
+      "choices": [
+        "Nhân của giao tử đực và nhân của giao tử cái",
+        "Hai hạt phấn",
+        "Hai noãn",
+        "Lá và thân"
+      ],
+      "answer": 0,
+      "explain": "Thụ tinh là sự hợp nhất nhân của giao tử đực và nhân của giao tử cái.",
+      "wrong_explain": {
+        "1": "Hai hạt phấn không tạo hợp tử.",
+        "2": "Hai noãn không tạo hợp tử.",
+        "3": "Lá và thân không tham gia thụ tinh."
+      },
+      "concept": true
+    },
+    {
+      "id": "q04",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Quả được hình thành từ:",
+      "choices": [
+        "Bầu nhuỵ",
+        "Bao phấn",
+        "Chỉ nhị",
+        "Đế hoa"
+      ],
+      "answer": 0,
+      "explain": "Bầu nhuỵ phát triển thành quả.",
+      "wrong_explain": {
+        "1": "Bao phấn chứa hạt phấn, không thành quả.",
+        "2": "Chỉ nhị không phát triển thành quả.",
+        "3": "Đế hoa không phải bộ phận tạo quả."
+      },
+      "concept": true
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Quả không hạt được hình thành khi:",
+      "choices": [
+        "Hoa không được thụ tinh",
+        "Hoa được thụ tinh đầy đủ",
+        "Hoa có nhiều hạt phấn",
+        "Hoa không có nhị"
+      ],
+      "answer": 0,
+      "explain": "Quả hình thành không qua thụ tinh là quả không hạt.",
+      "wrong_explain": {
+        "1": "Hoa được thụ tinh thì thường cho quả có hạt.",
+        "2": "Nhiều hạt phấn không đảm bảo quả không hạt.",
+        "3": "Không có nhị không phải lý do chính tạo quả không hạt."
+      },
+      "concept": true
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Một bông hoa lưỡng tính có 5 nhị và 1 nhuỵ. Tổng số nhị và nhuỵ là bao nhiêu?",
+      "expr": "5 + 1",
+      "answer": "6",
+      "explain": "5 + 1 = 6."
+    },
+    {
+      "id": "q07",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một quả chứa 8 hạt. Ba quả như vậy có tổng số hạt là bao nhiêu?",
+      "expr": "8 * 3",
+      "answer": "24",
+      "explain": "8 × 3 = 24 hạt."
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Ở gà, phôi phát triển trong trứng bên ngoài cơ thể mẹ. Đây là loài:",
+      "choices": [
+        "Đẻ trứng",
+        "Đẻ con",
+        "Sinh sản vô tính",
+        "Sinh sản sinh dưỡng"
+      ],
+      "answer": 0,
+      "explain": "Gà đẻ trứng, phôi phát triển trong trứng bên ngoài cơ thể mẹ.",
+      "wrong_explain": {
+        "1": "Đẻ con là phôi phát triển trong cơ thể mẹ, như thỏ.",
+        "2": "Gà sinh sản hữu tính, không vô tính.",
+        "3": "Sinh sản sinh dưỡng là ở thực vật."
+      },
+      "concept": true
+    }
+  ]
+}

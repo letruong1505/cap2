@@ -1,0 +1,268 @@
+{
+  "id": "bai-9",
+  "grade": 12,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 12",
+  "chapter": "Chương II. Di truyền nhiễm sắc thể",
+  "lesson": "Bài 9. Mở rộng học thuyết Mendel",
+  "section": "",
+  "bookPage": 46,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Một gene có thể có nhiều hơn hai allele và quy định nhiều tính trạng; một tính trạng cũng có thể do nhiều gene quy định. Tương tác giữa các allele cùng gene: trội không hoàn toàn (di truyền trung gian): hoa mõm chó đỏ × trắng thuần chủng cho F1 toàn hoa hồng, F2 tỉ lệ kiểu hình 1 đỏ : 2 hồng : 1 trắng; đồng trội: cả hai allele đều biểu hiện (nhóm máu ABO có 3 allele IA, IB, IO; kiểu gene IAIB có nhóm máu AB)."
+    },
+    {
+      "type": "text",
+      "content": "Tương tác giữa các gene khác nhau: tương tác gián tiếp theo kiểu át chế (ví dụ hai gene quy định enzyme trong con đường chuyển hóa tạo màu vỏ ốc nâu; chỉ cần một gene mất chức năng thì ốc có vỏ trắng); tương tác cộng gộp (nhiều gene, mỗi allele trội góp một “đơn vị” sản phẩm, như màu da, màu tóc, chiều cao; tính trạng số lượng như năng suất, cân nặng). Ví dụ AaBbDd × AaBbDd cho 64 tổ hợp và 7 nhóm kiểu hình tỉ lệ 1 : 6 : 15 : 20 : 15 : 6 : 1 theo số allele trội từ 0 đến 6."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho Aa × Aa, trội không hoàn toàn. Tỉ lệ kiểu hình ở F1 là bao nhiêu hoa hồng (Aa) trên 4 phần?",
+      "steps": [
+        "F1: 1AA : 2Aa : 1aa.",
+        "Hoa hồng (Aa) = 2/4."
+      ],
+      "expr": "2",
+      "answer": "2"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Hiện tượng F1 có kiểu hình trung gian giữa hai bố mẹ thuần chủng gọi là:",
+      "choices": [
+        "Trội hoàn toàn",
+        "Đồng trội",
+        "Trội không hoàn toàn",
+        "Át chế"
+      ],
+      "answer": 2,
+      "explain": "Ví dụ hoa mõm chó.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Ví dụ hoa mõm chó.",
+        "1": "Chưa đúng với nội dung bài học: Ví dụ hoa mõm chó.",
+        "3": "Chưa đúng với nội dung bài học: Ví dụ hoa mõm chó."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nhóm máu AB ở người là ví dụ của:",
+      "choices": [
+        "Trội không hoàn toàn",
+        "Át chế",
+        "Cộng gộp",
+        "Đồng trội"
+      ],
+      "answer": 3,
+      "explain": "Biểu hiện cả hai kháng nguyên A và B.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Biểu hiện cả hai kháng nguyên A và B.",
+        "1": "Chưa đúng với nội dung bài học: Biểu hiện cả hai kháng nguyên A và B.",
+        "2": "Chưa đúng với nội dung bài học: Biểu hiện cả hai kháng nguyên A và B."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Gene quy định nhóm máu ABO ở người có số allele là:",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "answer": 1,
+      "explain": "IA, IB, IO.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: IA, IB, IO.",
+        "2": "Chưa đúng với nội dung bài học: IA, IB, IO.",
+        "3": "Chưa đúng với nội dung bài học: IA, IB, IO."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Màu da, chiều cao ở người là tính trạng:",
+      "choices": [
+        "Do một gene",
+        "Chỉ do môi trường",
+        "Số lượng, do nhiều gene tương tác cộng gộp",
+        "Do gene trên Y"
+      ],
+      "answer": 2,
+      "explain": "Nhiều gene cộng dồn.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Nhiều gene cộng dồn.",
+        "1": "Chưa đúng với nội dung bài học: Nhiều gene cộng dồn.",
+        "3": "Chưa đúng với nội dung bài học: Nhiều gene cộng dồn."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ở hoa mõm chó, F2 từ F1 hồng tự thụ có tỉ lệ kiểu hình:",
+      "choices": [
+        "1 đỏ : 2 hồng : 1 trắng",
+        "3 đỏ : 1 trắng",
+        "9 : 3 : 3 : 1",
+        "1 : 1"
+      ],
+      "answer": 0,
+      "explain": "Kiểu hình trùng kiểu gene.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: Kiểu hình trùng kiểu gene.",
+        "2": "Chưa đúng với nội dung bài học: Kiểu hình trùng kiểu gene.",
+        "3": "Chưa đúng với nội dung bài học: Kiểu hình trùng kiểu gene."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tương tác át chế có đặc điểm:",
+      "choices": [
+        "Mọi gene đều biểu hiện",
+        "Cộng dồn lượng sản phẩm",
+        "Chỉ có ở NST Y",
+        "Một gene mất chức năng làm kiểu hình chung bị ảnh hưởng"
+      ],
+      "answer": 3,
+      "explain": "Ví dụ màu vỏ ốc.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Ví dụ màu vỏ ốc.",
+        "1": "Chưa đúng với nội dung bài học: Ví dụ màu vỏ ốc.",
+        "2": "Chưa đúng với nội dung bài học: Ví dụ màu vỏ ốc."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vì sao hemoglobin gồm chuỗi α và β không phải tương tác giữa các allele cùng gene?",
+      "choices": [
+        "Do cùng một gene",
+        "Hai chuỗi do hai gene khác nhau quy định",
+        "Do tương tác giữa các allele",
+        "Do NST Y"
+      ],
+      "answer": 1,
+      "explain": "Là tương tác giữa các gene.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: Là tương tác giữa các gene.",
+        "2": "Chưa đúng với nội dung bài học: Là tương tác giữa các gene.",
+        "3": "Chưa đúng với nội dung bài học: Là tương tác giữa các gene."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Đặc điểm của tương tác cộng gộp là:",
+      "choices": [
+        "Mỗi allele trội góp một lượng nhỏ sản phẩm, tạo kiểu hình chung",
+        "Một allele át hoàn toàn",
+        "Chỉ cần một gene",
+        "Không có sản phẩm"
+      ],
+      "answer": 0,
+      "explain": "Tính trạng số lượng.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Chưa đúng với nội dung bài học: Tính trạng số lượng.",
+        "2": "Chưa đúng với nội dung bài học: Tính trạng số lượng.",
+        "3": "Chưa đúng với nội dung bài học: Tính trạng số lượng."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "AaBbDd × AaBbDd có số tổ hợp giao tử là 8 × 8. Kết quả là bao nhiêu?",
+      "expr": "8*8",
+      "answer": "64",
+      "explain": "64 tổ hợp.",
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Số nhóm kiểu hình khi có 3 cặp gene cộng gộp (0 đến 6 allele trội) là bao nhiêu?",
+      "expr": "6+1",
+      "answer": "7",
+      "explain": "Từ 0 đến 6 là 7 nhóm.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tỉ lệ 1:6:15:20:15:6:1 có tổng bằng bao nhiêu?",
+      "expr": "1+6+15+20+15+6+1",
+      "answer": "64",
+      "explain": "Bằng 2⁶.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tỉ lệ kiểu hình có 3 allele trội (20/64) tương ứng bao nhiêu %? (làm tròn bằng phép chia đúng, nhập 31.25)",
+      "expr": "20/64*100",
+      "answer": "31.25",
+      "explain": "20 : 64 × 100 = 31,25.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trong 800 cây F2 hoa mõm chó (1 đỏ : 2 hồng : 1 trắng), số cây hoa hồng dự kiến là bao nhiêu?",
+      "expr": "800*2/4",
+      "answer": "400",
+      "explain": "800 × 1/2 = 400.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một gene có 4 allele thì có bao nhiêu kiểu gene lưỡng bội (n(n+1)/2)?",
+      "expr": "4*5/2",
+      "answer": "10",
+      "explain": "4 × 5 : 2 = 10.",
+      "id": "q14"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Người nhóm máu AB kết hôn với người nhóm máu O thì con có thể có nhóm máu:",
+      "choices": [
+        "AB hoặc O",
+        "Chỉ O",
+        "A hoặc B",
+        "Chỉ AB"
+      ],
+      "answer": 2,
+      "explain": "IAIB × IOIO → IAIO, IBIO.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Chưa đúng với nội dung bài học: IAIB × IOIO → IAIO, IBIO.",
+        "1": "Chưa đúng với nội dung bài học: IAIB × IOIO → IAIO, IBIO.",
+        "3": "Chưa đúng với nội dung bài học: IAIB × IOIO → IAIO, IBIO."
+      },
+      "id": "q15"
+    }
+  ]
+}

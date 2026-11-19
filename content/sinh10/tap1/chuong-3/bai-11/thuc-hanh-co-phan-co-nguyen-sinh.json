@@ -1,0 +1,142 @@
+{
+  "id": "bai-11",
+  "grade": 10,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 10",
+  "chapter": "Chương 3. Trao đổi chất qua màng và truyền tin tế bào",
+  "lesson": "Bài 11. Thực hành: Thí nghiệm co và phản co nguyên sinh",
+  "section": "",
+  "bookPage": 71,
+  "requirements": [
+    "Thực hiện thành thạo kĩ năng sử dụng kính hiển vi và làm tiêu bản.",
+    "Quan sát và vẽ được tế bào ở các giai đoạn co nguyên sinh và phản co nguyên sinh.",
+    "Điều khiển được sự co nguyên sinh qua mức độ thẩm thấu của nước."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nguyên lí: khi môi trường ngoài có nồng độ chất tan cao hơn trong tế bào, nước thoát ra làm chất nguyên sinh co lại, tách khỏi thành tế bào. Ngược lại, nước đi vào làm tế bào căng phồng. Lá thài lài tía có sắc tố nên dễ quan sát mức độ co nguyên sinh."
+    },
+    {
+      "type": "text",
+      "content": "Thí nghiệm co nguyên sinh: tách lớp biểu bì dưới lá thài lài tía, đặt lên giọt dung dịch NaCl loãng rồi đậy lamen, thấm bớt dung dịch thừa. Quan sát ở 10x, chọn vùng một lớp tế bào, chuyển sang 40x; vẽ tế bào bình thường và tế bào khí khổng. Có thể thử các nồng độ NaCl khác nhau để so sánh tốc độ co nguyên sinh."
+    },
+    {
+      "type": "text",
+      "content": "Thí nghiệm phản co nguyên sinh: sau khi đã co, nhỏ một giọt nước cất vào mép lamen và dùng giấy thấm hút ở phía đối diện để nước chảy qua tiêu bản. Quan sát sự chất nguyên sinh trở lại sát thành tế bào, vẽ các trạng thái bình thường, co và phản co."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b11-co-phan-co.svg",
+      "caption": "Sơ đồ quy trình co và phản co nguyên sinh"
+    },
+    {
+      "type": "text",
+      "content": "Báo cáo: nêu mục đích, cách tiến hành, kết quả quan sát và giải thích. Khí khổng đóng khi tế bào bảo vệ mất nước và co nguyên sinh; nếu quá chậm hoặc quá nhanh cần điều chỉnh nồng độ NaCl."
+    }
+  ],
+  "examples": [],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi tế bào bị co nguyên sinh, nguyên nhân chủ yếu là:",
+      "choices": [
+        "nước thẩm thấu ra ngoài vì môi trường có nồng độ chất tan cao hơn",
+        "nước thẩm thấu vào vì môi trường nhược trương",
+        "tế bào hấp thụ quá nhiều ion",
+        "thành tế bào bị phá huỷ"
+      ],
+      "answer": 0,
+      "explain": "Môi trường ưu trương làm nước thoát ra khỏi tế bào.",
+      "wrong_explain": {
+        "1": "Nhược trương làm tế bào căng phồng.",
+        "2": "Ion không phải nguyên nhân trực tiếp.",
+        "3": "Thành tế bào không bị phá huỷ trong thí nghiệm."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong thí nghiệm, tế bào lá thài lài tía dễ quan sát vì:",
+      "choices": [
+        "có sắc tố nên dễ thấy mức độ co nguyên sinh",
+        "không có màng tế bào",
+        "có nhiều ribosome bám màng",
+        "có lục lạp rất lớn"
+      ],
+      "answer": 0,
+      "explain": "Sắc tố giúp nhìn rõ khối nguyên sinh chất tách khỏi thành tế bào.",
+      "wrong_explain": {
+        "1": "Tế bào có màng sinh chất.",
+        "2": "Ribosome không giúp quan sát rõ.",
+        "3": "Lục lạp không phải lí do chính trong bài thí nghiệm này."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Để điều chỉnh tốc độ co nguyên sinh quá nhanh, cần:",
+      "choices": [
+        "giảm nồng độ dung dịch NaCl",
+        "tăng nồng độ NaCl",
+        "nhỏ thêm dung dịch ưu trương",
+        "bỏ lamen"
+      ],
+      "answer": 0,
+      "explain": "Nồng độ thấp hơn làm chênh lệch thẩm thấu nhỏ hơn, co chậm lại.",
+      "wrong_explain": {
+        "1": "Tăng nồng độ làm co nhanh hơn.",
+        "2": "Dung dịch ưu trương làm co nhanh hơn.",
+        "3": "Bỏ lamen không điều chỉnh được tốc độ."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi nhỏ nước cất vào tiêu bản đã co nguyên sinh, tế bào sẽ:",
+      "choices": [
+        "phản co nguyên sinh, chất nguyên sinh trở lại sát thành tế bào",
+        "co nguyên sinh mạnh hơn",
+        "vỡ tế bào ngay",
+        "không thay đổi"
+      ],
+      "answer": 0,
+      "explain": "Nước cất là môi trường nhược trương so với tế bào.",
+      "wrong_explain": {
+        "1": "Nước cất làm tế bào hút nước vào.",
+        "2": "Thành tế bào giữ tế bào không vỡ.",
+        "3": "Tế bào có thay đổi rõ rệt."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khí khổng đóng khi tế bào bảo vệ co nguyên sinh vì:",
+      "choices": [
+        "mất nước làm tế bào bảo vệ mềm lại và khí khổng khép",
+        "tế bào bảo vệ hút nước phồng ra",
+        "tế bào bảo vệ tổng hợp ATP mạnh",
+        "tế bào bảo vệ không liên quan"
+      ],
+      "answer": 0,
+      "explain": "Mất nước làm tế bào bảo vệ co lại, khí khổng đóng.",
+      "wrong_explain": {
+        "1": "Hút nước làm khí khổng mở.",
+        "2": "ATP không quyết định trực tiếp hiện tượng này.",
+        "3": "Tế bào bảo vệ có vai trò quan trọng."
+      },
+      "id": "q05"
+    }
+  ]
+}

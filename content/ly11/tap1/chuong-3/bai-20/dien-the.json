@@ -1,0 +1,346 @@
+{
+  "id": "bai-20",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 3. Điện trường",
+  "lesson": "Bài 20. Điện thế",
+  "section": "",
+  "bookPage": 79,
+  "requirements": [
+    "Nêu được khái niệm điện thế, hiệu điện thế và đơn vị vôn; mối liên hệ U = Ed trong điện trường đều.",
+    "Tính điện thế, hiệu điện thế, công của lực điện A = qU và năng lượng theo electron-vôn."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Điện thế tại điểm M trong điện trường đặc trưng cho khả năng sinh công của điện trường khi đặt một điện tích tại đó: V_M = W_M/q = A_M∞/q. Đơn vị điện thế là vôn (V), 1 V = 1 J/C. Điện thế của điện tích điểm Q: V = kQ/r (mốc ở vô cực)."
+    },
+    {
+      "type": "formula",
+      "content": "Hiệu điện thế U_MN = V_M − V_N = A_MN/q;   A_MN = qU_MN;   U = Ed (điện trường đều)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b20-dien-the-mat-dang-the.svg",
+      "caption": "Điện trường đều: các mặt đẳng thế là các mặt phẳng vuông góc đường sức; điện thế giảm dần dọc theo chiều đường sức (10 V → 0 V), mỗi khoảng cách bằng nhau ứng với độ giảm bằng nhau"
+    },
+    {
+      "type": "text",
+      "content": "Mặt đẳng thế là tập hợp các điểm có cùng điện thế; công của lực điện khi điện tích di chuyển trên mặt đẳng thế bằng 0; đường sức luôn vuông góc mặt đẳng thế. Điện thế dọc theo đường sức giảm dần. Hiệu điện thế giữa hai điểm đo bằng vôn kế tĩnh điện."
+    },
+    {
+      "type": "formula",
+      "content": "Electron-vôn: 1 eV = 1,6·10⁻¹⁹ J là năng lượng electron thu được khi đi qua hiệu điện thế 1 V (|e| = 1,6·10⁻¹⁹ C). Điện tích q chạy qua U: W_đ = |q|U."
+    },
+    {
+      "type": "method",
+      "title": "Tính hiệu điện thế từ công, từ E",
+      "when": "Cho công của lực điện A và q, hoặc E và d; yêu cầu U.",
+      "steps": [
+        "U = A/q (A, q có dấu).",
+        "Hoặc U = Ed (d là khoảng cách theo phương đường sức).",
+        "Nếu cho V_M, V_N: U_MN = V_M − V_N.",
+        "Đổi đơn vị trước khi tính."
+      ],
+      "notes": [
+        "U_MN > 0 nghĩa là V_M > V_N.",
+        "Điện thế giảm dọc theo chiều đường sức."
+      ],
+      "sample": {
+        "problem": "Công lực điện 10⁻⁴ J khi q = 2 μC di chuyển từ M đến N. Tính U_MN.",
+        "steps": [
+          "U = A/q = 10⁻⁴/(2·10⁻⁶).",
+          "= 50 V."
+        ],
+        "answer": "50 V"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Năng lượng hạt qua hiệu điện thế, electron-vôn",
+      "when": "Hạt tích điện (electron, proton) tăng tốc qua hiệu điện thế U; tính động năng, vận tốc.",
+      "steps": [
+        "Động năng thu được W_đ = |q|U (bỏ qua động năng ban đầu).",
+        "Với electron: W_đ = U (eV).",
+        "Đổi eV → J bằng 1 eV = 1,6·10⁻¹⁹ J.",
+        "Có thể suy ra v từ ½mv² = |q|U."
+      ],
+      "notes": [
+        "Proton cũng có điện tích 1,6·10⁻¹⁹ C, hạt α có 2e.",
+        "Đơn vị eV tiện cho năng lượng nhỏ."
+      ],
+      "sample": {
+        "problem": "Electron qua U = 100 V (từ nghỉ). Tính động năng theo eV và J.",
+        "steps": [
+          "W_đ = eU = 100 eV.",
+          "= 100·1,6·10⁻¹⁹ = 1,6·10⁻¹⁷ J."
+        ],
+        "answer": "100 eV = 1,6·10⁻¹⁷ J"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Điện thế dọc theo đường sức",
+      "when": "Cho điện thế hai điểm và khoảng cách, tìm E, hoặc điện thế tại điểm trung gian.",
+      "steps": [
+        "E = U/d với U là hiệu điện thế giữa hai điểm trên cùng đường sức.",
+        "Điện thế biến thiên đều theo khoảng cách (điện trường đều).",
+        "V tại điểm cách một điểm Δx: V = V₀ − EΔx.",
+        "Điểm trên cùng mặt đẳng thế có V bằng nhau."
+      ],
+      "notes": [
+        "Điểm càng xa bản dương điện thế càng thấp.",
+        "U giữa hai điểm trên mặt đẳng thế bằng 0."
+      ],
+      "sample": {
+        "problem": "Hai bản cách 4 cm có U = 10 V; điểm M cách bản dương 1 cm. Điện thế M nếu bản âm V = 0.",
+        "steps": [
+          "E = 10/0,04 = 250 V/m.",
+          "V_M = 10 − 250·0,01 = 7,5 V."
+        ],
+        "answer": "7,5 V"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Công lực điện 10⁻⁴ J, q = 2 μC. U (V)?",
+      "steps": [
+        "U = A/q.",
+        "= 10⁻⁴/(2·10⁻⁶) = 50 V."
+      ],
+      "expr": "(0.0001)/(0.000002)",
+      "answer": "50"
+    },
+    {
+      "problem": "E = 250 V/m, đi 0,01 m dọc đường sức. Độ giảm điện thế (V)?",
+      "steps": [
+        "ΔV = Ed.",
+        "= 2,5 V."
+      ],
+      "expr": "250*0.01",
+      "answer": "5/2"
+    },
+    {
+      "problem": "Electron qua U = 100 V. Động năng (eV)?",
+      "steps": [
+        "W_đ = eU.",
+        "= 100 eV."
+      ],
+      "expr": "100",
+      "answer": "100"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Công 10⁻⁴ J, q = 2 μC. U (V):",
+      "expr": "(0.0001)/(0.000002)",
+      "answer": "50",
+      "explain": "U = 50 V.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "E = 1000 V/m, d = 0,05 m. U (V):",
+      "expr": "1000*0.05",
+      "answer": "50",
+      "explain": "U = 50 V.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Electron qua U = 100 V. Động năng (eV):",
+      "expr": "100",
+      "answer": "100",
+      "explain": "W_đ = 100 eV.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đơn vị của điện thế là:",
+      "choices": [
+        "vôn (V)",
+        "culông (C)",
+        "ôm (Ω)",
+        "ampe (A)"
+      ],
+      "answer": 0,
+      "explain": "1 V = 1 J/C.",
+      "wrong_explain": {
+        "1": "C là điện tích.",
+        "2": "Ω là điện trở.",
+        "3": "A là cường độ dòng."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hệ thức đúng giữa công và hiệu điện thế là:",
+      "choices": [
+        "A = qU",
+        "A = U/q",
+        "A = q/U",
+        "A = qU²"
+      ],
+      "answer": 0,
+      "explain": "A = qU.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Công của lực điện khi di chuyển điện tích trên mặt đẳng thế bằng:",
+      "choices": [
+        "0",
+        "qEd",
+        "luôn âm",
+        "luôn dương"
+      ],
+      "answer": 0,
+      "explain": "U = 0 nên A = 0.",
+      "wrong_explain": {
+        "1": "Không có d.",
+        "2": "Bằng 0.",
+        "3": "Bằng 0."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "V_M = 7,5 V; V_N = 2,5 V. U_MN (V):",
+      "expr": "7.5-2.5",
+      "answer": "5",
+      "explain": "U_MN = 5 V.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "U = 10 V, d = 4 cm. E (V/m):",
+      "expr": "(10)/(0.04)",
+      "answer": "250",
+      "explain": "E = 250 V/m.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Điện tích 2 μC qua U = 50 V. Công (J):",
+      "expr": "0.000002*50",
+      "answer": "1/10000",
+      "explain": "A = qU = 10⁻⁴ J.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Electron có động năng 1,6·10⁻¹⁷ J. Theo eV: nhập 16/0.16:",
+      "expr": "(16)/(0.16)",
+      "answer": "100",
+      "explain": "100 eV.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điện thế dọc theo đường sức:",
+      "choices": [
+        "giảm dần",
+        "tăng dần",
+        "không đổi",
+        "bằng không"
+      ],
+      "answer": 0,
+      "explain": "Điện thế giảm theo chiều E.",
+      "wrong_explain": {
+        "1": "Giảm chứ không tăng.",
+        "2": "Không đổi chỉ trên mặt đẳng thế.",
+        "3": "Không bằng 0."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "E = 250 V/m, bản dương V = 10 V. Điểm cách bản dương 0,01 m có V (V):",
+      "expr": "10-250*0.01",
+      "answer": "15/2",
+      "explain": "V = 7,5 V.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Proton (e = 1,6·10⁻¹⁹ C) qua U = 1000 V. Động năng (eV):",
+      "expr": "1000",
+      "answer": "1000",
+      "explain": "W_đ = 1000 eV.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hạt α (2e) qua U = 100 V. Động năng (eV):",
+      "expr": "2*100",
+      "answer": "200",
+      "explain": "W_đ = 200 eV.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Công lực điện A = −10⁻⁴ J, q = 2 μC. U (V):",
+      "expr": "(-0.0001)/(0.000002)",
+      "answer": "-50",
+      "explain": "U = −50 V.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Điện thế gây ra bởi Q = 4 nC tại r = 0,36 m: V = kQ/r (V):",
+      "expr": "(9000000000*0.000000004)/(0.36)",
+      "answer": "100",
+      "explain": "V = 100 V.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đường sức điện luôn vuông góc với:",
+      "choices": [
+        "mặt đẳng thế",
+        "mặt đường sức khác",
+        "trục hoành",
+        "trục tung"
+      ],
+      "answer": 0,
+      "explain": "Đường sức vuông góc mặt đẳng thế.",
+      "wrong_explain": {
+        "1": "Không cắt nhau.",
+        "2": "Không liên quan.",
+        "3": "Không liên quan."
+      },
+      "id": "q17"
+    }
+  ]
+}

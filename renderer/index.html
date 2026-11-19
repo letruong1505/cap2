@@ -2,34 +2,216 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'" />
-  <title>Vững Bài</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'" />
+  <title>Giáo trình THCS</title>
+  <link rel="stylesheet" href="fonts.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="topbar">
-    <div class="brand">Vững Bài <span class="sub">Toán 7 · Bản thử</span> <span class="sub" id="build"></span></div>
+    <div class="brand" id="brand">Giáo trình THCS</div>
     <nav id="breadcrumb"></nav>
   </header>
 
   <main id="app">
+    <section id="launch" class="panel" hidden>
+      <header class="launch-head">
+        <blockquote class="quote">
+          <p>“Non sông Việt Nam có trở nên tươi đẹp hay không, dân tộc Việt Nam có bước tới đài vinh quang để sánh vai với các cường quốc năm châu được hay không, chính là nhờ một phần lớn ở công học tập của các em.”</p>
+          <footer>Chủ tịch Hồ Chí Minh</footer>
+        </blockquote>
+        <p class="hello">Chào bạn, Vất vả hôm nay cho Ngày mai tươi sáng!</p>
+        <p class="greeting">Mỗi ngày một bài, vững vàng cả năm.</p>
+        <h1>Chọn lớp học</h1>
+      </header>
+      <div class="grade-tiles" id="grades"></div>
+      <div class="goal-box" id="goal-box"></div>
+      <div class="launch-tools">
+        <button type="button" id="open-review">Sổ câu sai</button>
+        <button type="button" id="open-report">Báo cáo cho phụ huynh</button>
+      </div>
+
+      <div class="license-bar">
+        <div class="license-main">
+          <h2>Bản quyền</h2>
+          <div id="license-info"></div>
+          <div class="license-status" id="license-status"></div>
+          <div class="choose-slot">
+              <div class="price-option">
+                <span class="price-name">Chọn ngành – Hướng nghiệp</span>
+                <span class="price-value">Liên hệ</span>
+              </div>
+          </div>
+        </div>
+        <div class="pricing">
+          <h2>Giá bản quyền</h2>
+          <p class="pricing-terms">Mua một lần, dùng <b>vĩnh viễn</b> trên <b>1 máy tính và 1 điện thoại</b>.</p>
+          <div class="pricing-options">
+            <div class="price-option best">
+              <span class="price-name">Gia sư AI <span class="price-detail">(Học sinh từ 12 tuổi trở lên)</span></span>
+              <span class="price-value">999.000 đ <s>1.600.000 đ</s></span>
+            </div>
+            <div class="price-option">
+              <span class="price-name">Hệ miễn dịch số <span class="price-detail">(Học sinh 8 - 11 tuổi)</span></span>
+              <span class="price-value">990.000 đ</span>
+            </div>
+            <div class="price-option">
+              <span class="price-name">Làm chủ thế giới số <span class="price-detail">(Học sinh 12 - 15 tuổi)</span></span>
+              <span class="price-value">1.490.000 đ</span>
+            </div>
+            <div class="price-option">
+              <span class="price-name">Công dân số <span class="price-detail">(Học sinh 16 - 18 tuổi)</span></span>
+              <span class="price-value">1.990.000 đ</span>
+            </div>
+            <div class="price-option">
+              <span class="price-name">Ranh giới số <span class="price-detail">(Học sinh THPT &amp; tân sinh viên)</span></span>
+              <span class="price-value">1.490.000 đ</span>
+            </div>
+            <button type="button" class="price-option free" id="open-aiwork">
+              <span class="price-name">AI cho người đi làm <span class="price-detail">(Chọn ChatGPT, Gemini hoặc Claude)</span></span>
+              <span class="price-value">1.990.000 đ <span class="view-arrow" aria-hidden="true">→</span></span>
+            </button>
+            <div class="price-option">
+              <span class="price-name">Tư duy &amp; lập trình <span class="edu-soon">sắp ra mắt</span></span>
+              <span class="price-detail">Xây dựng tư duy cho kỷ nguyên mới.</span>
+              <span class="price-value">Đang cập nhật</span>
+            </div>
+            <button type="button" class="price-option free" id="open-national">
+              <span class="price-name">Định hướng công nghệ quốc gia <span class="free-badge"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#fff"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#d32f2f" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Miễn phí</span></span>
+              <span class="price-value view-hint">Bấm để xem <span class="view-arrow" aria-hidden="true">→</span></span>
+            </button>
+          </div>
+          <div class="pricing-buy">
+            <button type="button" class="primary buy-open" id="open-purchase">Mua khóa học</button>
+            <p class="pricing-note">Cần hỗ trợ: SĐT/Zalo 0968.646.853.</p>
+          </div>
+        </div>
+      </div>
+
+      <details class="edu-note">
+        <summary>Lời nhắn từ Nam Linh</summary>
+        <div class="edu-note-body">
+          <p><b>Nam Linh</b> là linh hồn Việt Nam. Nghệ An là vùng đất hiếu học, giàu lòng yêu nước, nhưng mảnh đất khô cằn khiến nhiều thế hệ phải đi làm ăn xa xứ. Không ít đứa trẻ lớn lên với ông bà, thiếu sự chăm sóc trực tiếp của cha mẹ.</p>
+          <p>Chúng tôi muốn trẻ nơi đây tiếp cận công nghệ sớm hơn, không phải để thay thế người lớn, mà để có thêm điểm tựa và một hướng đi rõ ràng. Đứa trẻ biết mình học để đi đâu sẽ ít cảm giác bị bỏ lại hơn. Khi có hướng đi đúng, các em có thể học để phục vụ quê hương và đất nước giàu mạnh hơn!</p>
+          <p>Với chúng tôi, chọn đúng con đường quan trọng hơn cố gắng. Cố gắng trên một hướng sai không chỉ làm bản thân thêm mệt hơn mà còn lãng phí nguồn lực quốc gia. Vì vậy, Nam Linh không chỉ giúp các em làm đúng câu hỏi, mà giúp các em hiểu vì sao đáp án đúng và biết mình hợp với đâu.</p>
+          <h3>Ý nghĩa các khóa học</h3>
+          <ul>
+            <li><b>Hệ miễn dịch số</b> (8–11 tuổi): nhận biết các tình huống không an toàn trên mạng và biết cách nói với người lớn.</li>
+            <li><b>Làm chủ thế giới số</b> (12–15 tuổi): hiểu cách thông tin, mạng xã hội và công nghệ hoạt động để tự quyết định khi dùng chúng.</li>
+            <li><b>Công dân số</b> (16–18 tuổi): trách nhiệm, đạo đức và pháp luật khi tham gia không gian mạng.</li>
+            <li><b>Ranh giới số</b> (THPT và tân sinh viên): tư duy phản biện và kỹ năng xử lý thông tin trước khi chia sẻ, dựng nền móng cho tuổi lập thân, lập nghiệp.</li>
+            <li><b>Định hướng công nghệ quốc gia</b> <b>(miễn phí)</b>: giúp trẻ lựa chọn đam mê theo định hướng, chính sách của Nhà nước, nhằm thúc đẩy nâng cao chất lượng và tránh lãng phí nguồn nhân lực trong kỷ nguyên mới.</li>
+            <li><b>Gia sư AI</b> (từ 12 tuổi): biến AI thành trợ lý học tập phù hợp với mỗi cá nhân, biết khắc phục điểm yếu và khai thác điểm mạnh.</li>
+            <li><b>AI cho người đi làm</b>: ứng dụng AI để tăng hiệu quả công việc và tối ưu nguồn lực, thời gian.</li>
+            <li><b>Tư duy &amp; lập trình</b> <span class="edu-soon">(sắp ra mắt)</span>: xây dựng tư duy cho kỷ nguyên mới và ứng dụng vào giải quyết vấn đề.</li>
+          </ul>
+          <h3>Cách học tốt hơn</h3>
+          <p><b>Đối với học sinh</b></p>
+          <ul>
+            <li><b>Học văn hóa:</b> kết hợp khóa văn hóa với Gia sư AI không chỉ củng cố kiến thức hiện tại mà còn bồi đắp các kiến thức nền bị hổng, xây dựng nền móng vững vàng cho tương lai.</li>
+            <li><b>Học kỹ năng:</b> các kỹ năng trên là giá trị sống trong thời đại công nghệ. Chúng ta chưa biết phía sau ánh sáng màn hình là những gì đang chờ đợi, nên học cách phòng tránh luôn tốt hơn xử lý khi đã xảy ra.</li>
+          </ul>
+          <p><b>Đối với người đi làm</b></p>
+          <ul>
+            <li>Chọn một khóa kỹ năng phù hợp với nhu cầu công việc, vừa tối ưu chi phí vừa đáp ứng hiệu quả công việc.</li>
+          </ul>
+        </div>
+      </details>
+
+      <footer class="copyright">
+        <p>© 2026 Bản quyền thiết kế bởi <b>Công ty TNHH Giải pháp &amp; Ứng dụng Công nghệ Nam Linh</b></p>
+        <p class="copyright-info">
+          <span>MST: 2902274556</span>
+          <span>Địa chỉ: xã Hùng Châu, tỉnh Nghệ An</span>
+          <span>ĐT / Zalo: 0968 646 853</span>
+          <span>Email: namlinh.educenter@gmail.com</span>
+        </p>
+      </footer>
+    </section>
+
+    <section id="subjects" class="panel" hidden>
+      <button id="btn-grades" class="back-link" type="button">← Chọn lớp</button>
+      <header class="screen-head">
+        <p class="screen-kicker" id="subjects-kicker"></p>
+        <h1>Chọn môn học</h1>
+      </header>
+      <div class="grades" id="subject-list"></div>
+      <div class="goal-box" id="goal-box-grade"></div>
+      <div class="launch-tools">
+        <button type="button" id="open-review-grade">Sổ câu sai</button>
+        <button type="button" id="open-report-grade">Báo cáo</button>
+      </div>
+    </section>
+
+    <section id="review" class="panel" hidden>
+      <button id="btn-review-back" class="back-link" type="button">← Quay lại</button>
+      <div id="review-body"></div>
+    </section>
+
+    <section id="report" class="panel" hidden>
+      <button id="btn-report-back" class="back-link" type="button">← Quay lại</button>
+      <div id="report-body"></div>
+    </section>
+
+    <section id="purchase" class="panel" hidden>
+      <button id="btn-purchase-back" class="back-link" type="button">← Chọn lớp</button>
+      <div id="purchase-body"></div>
+    </section>
+
+    <section id="examprep" class="panel" hidden>
+      <div id="examprep-body"></div>
+    </section>
+
+    <section id="aiwork" class="panel" hidden>
+      <div id="aiwork-body"></div>
+    </section>
+
+    <section id="thpt" class="panel" hidden>
+      <button id="btn-thpt-back" class="back-link" type="button">← Chọn lớp</button>
+      <div id="thpt-body"></div>
+    </section>
+
+    <section id="national" class="panel" hidden>
+      <button id="btn-national-back" class="back-link nat-noprint" type="button">← Chọn lớp</button>
+      <div id="national-body"></div>
+    </section>
+
     <section id="home" class="panel" hidden></section>
 
+    <section id="games" class="panel" hidden></section>
+
+    <section id="game" class="panel" hidden></section>
+
     <section id="lesson" class="panel" hidden>
-      <button id="btn-back" class="link" type="button">← Danh mục bài học</button>
-      <h1 id="lesson-title"></h1>
-      <p class="meta" id="lesson-meta"></p>
+      <button id="btn-back" class="back-link" type="button">← Danh mục bài học</button>
+      <header class="screen-head">
+        <p class="screen-kicker" id="lesson-kicker"></p>
+        <h1 id="lesson-title"></h1>
+        <p class="screen-sub" id="lesson-meta"></p>
+      </header>
 
-      <h2>Lý thuyết</h2>
-      <div id="theory"></div>
+      <div id="sec-theory">
+        <h2 id="theory-heading">Lý thuyết</h2>
+        <div id="theory"></div>
+      </div>
 
-      <h2>Ví dụ mẫu</h2>
-      <div id="examples"></div>
+      <div id="sec-english-top" class="en-host" hidden></div>
 
-      <h2>Luyện tập</h2>
+      <div id="sec-examples">
+        <h2>Ví dụ mẫu</h2>
+        <div id="examples"></div>
+      </div>
+
+      <h2 id="quiz-heading">Luyện tập</h2>
       <div id="score" class="score"></div>
       <div id="quiz"></div>
-      <div class="actions">
+      <div id="sec-advanced" hidden>
+        <h2 class="advanced-title">Bài tập nâng cao</h2>
+        <p class="screen-sub">Dành cho bạn muốn thử sức thêm. Các câu này được tính chung vào điểm toàn bài.</p>
+        <div id="quiz-adv"></div>
+      </div>
+      <div id="sec-english-bottom" class="en-host" hidden></div>
+      <div class="actions" id="sec-actions">
         <button id="btn-submit" class="primary" type="button">Kiểm tra toàn bài</button>
       </div>
     </section>
@@ -39,7 +221,32 @@
     </section>
   </main>
 
+  <div class="update-bar" id="update-bar" role="status" hidden></div>
+
+  <div class="app-version" id="build" aria-label="Phiên bản"></div>
+
+  <script src="persist-shim.js"></script>
   <script src="../core/rational.js"></script>
+  <script src="english.js"></script>
+  <script src="games-logic.js"></script>
+  <script src="games.js"></script>
+  <script src="pin.js"></script>
+  <script src="pin-ui.js"></script>
+  <script src="progress.js"></script>
+  <script src="progress-ui.js"></script>
+  <script src="vendor/qrcode.js"></script>
+  <script src="vietqr.js"></script>
+  <script src="payment-config.js"></script>
+  <script src="terms.js"></script>
+  <script src="catalog.js"></script>
+  <script src="purchase.js"></script>
+  <script src="ai-work-content.js"></script>
+  <script src="ai-work-claude.js"></script>
+  <script src="ai-work.js"></script>
+  <script src="national-data.js"></script>
+  <script src="national.js"></script>
+  <script src="thpt-exam-data.js"></script>
+  <script src="thpt-exam.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

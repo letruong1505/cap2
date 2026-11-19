@@ -1,0 +1,261 @@
+{
+  "id": "bai-2",
+  "grade": 10,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 10",
+  "chapter": "Phần mở đầu",
+  "lesson": "Bài 2. Phương pháp nghiên cứu và học tập môn Sinh học",
+  "section": "",
+  "bookPage": 12,
+  "requirements": [
+    "Trình bày và vận dụng được một số phương pháp nghiên cứu sinh học: quan sát, làm việc trong phòng thí nghiệm, thực nghiệm khoa học.",
+    "Nêu được một số thiết bị nghiên cứu và học tập môn Sinh học.",
+    "Trình bày được quy trình và các kĩ năng trong tiến trình nghiên cứu khoa học.",
+    "Giới thiệu được phương pháp tin sinh học như công cụ hữu ích trong nghiên cứu và học tập."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Mọi nghiên cứu sinh học đều cần phương pháp và thiết bị phù hợp. Các phương pháp chính gồm quan sát, làm việc trong phòng thí nghiệm và thực nghiệm khoa học."
+    },
+    {
+      "type": "text",
+      "content": "1. Phương pháp quan sát: lựa chọn đối tượng và phạm vi quan sát; chọn công cụ (giác quan, kính lúp, thiết bị); ghi chép số liệu đủ lớn, lặp lại nhiều lần và khách quan để xử lí bằng thống kê."
+    },
+    {
+      "type": "text",
+      "content": "2. Làm việc trong phòng thí nghiệm: luôn đảm bảo an toàn (mặc áo choàng, đeo găng tay, kính bảo hộ; không ăn uống, không nếm hoá chất; làm đúng hướng dẫn, dọn dẹp sau thí nghiệm). Các kĩ thuật thường dùng: giải phẫu, làm tiêu bản tế bào/NST, nhuộm màu."
+    },
+    {
+      "type": "text",
+      "content": "3. Phương pháp thực nghiệm: phân loại sinh vật (hình thái, phân tích gene), tách chiết (enzyme, gene, chất có hoạt tính sinh học), nuôi cấy (vi khuẩn, mô tế bào, động thực vật)."
+    },
+    {
+      "type": "text",
+      "content": "4. Thiết bị nghiên cứu: kính hiển vi quang học (độ phóng đại tối đa khoảng 1 500 lần, độ phân giải khoảng 200 nm) và kính hiển vi điện tử (phóng đại tới hàng triệu lần, nghiên cứu cấu trúc siêu hiển vi); máy li tâm (phân đoạn tế bào theo khối lượng bào quan); kính lúp, pipet."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b2-kinh-hien-vi-quang-dien.svg",
+      "caption": "Phân biệt kính hiển vi quang học và kính hiển vi điện tử"
+    },
+    {
+      "type": "text",
+      "content": "5. Quy trình nghiên cứu khoa học: quan sát và thu thập dữ liệu → đặt câu hỏi → hình thành giả thuyết (có thể kiểm chứng, dự đoán dạng \"nếu... thì...\") → thiết kế thí nghiệm có lô đối chứng và lô thí nghiệm chỉ khác nhau ở yếu tố nghiên cứu → phân tích kết quả (biến độc lập ở trục hoành, biến phụ thuộc ở trục tung; kiểm định thống kê) → rút ra kết luận chấp nhận hay bác bỏ giả thuyết."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b2-quy-trinh.svg",
+      "caption": "Quy trình nghiên cứu khoa học"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b2-doi-chung.svg",
+      "caption": "Lô đối chứng và lô thí nghiệm"
+    },
+    {
+      "type": "text",
+      "content": "6. Tin sinh học (bioinformatics) dùng phần mềm, thuật toán và mô hình để lưu trữ, phân loại và phân tích dữ liệu sinh học quy mô lớn, ví dụ tìm gene trong hệ gene và so sánh hệ gene giữa các loài."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Trình bày các bước của tiến trình nghiên cứu khoa học theo đúng thứ tự.",
+      "steps": [
+        "Quan sát và thu thập dữ liệu → đặt câu hỏi → hình thành giả thuyết → thiết kế và tiến hành thí nghiệm kiểm chứng → phân tích kết quả → rút ra kết luận."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Thiết kế một thí nghiệm kiểm tra ảnh hưởng của ánh sáng đến sự sinh trưởng của cây đậu.",
+      "steps": [
+        "Lô đối chứng: cây đậu cùng tuổi, cùng số lượng, điều kiện giống nhau, đủ ánh sáng bình thường.",
+        "Lô thí nghiệm: giống lô đối chứng nhưng chỉ thay đổi cường độ ánh sáng. So sánh chiều cao và số lá sau một thời gian."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phương pháp nào thường được dùng để nghiên cứu cấu trúc siêu hiển vi của tế bào?",
+      "choices": [
+        "kính hiển vi điện tử",
+        "kính lúp",
+        "kính hiển vi quang học",
+        "ống pipet"
+      ],
+      "answer": 0,
+      "explain": "Kính hiển vi điện tử có độ phóng đại và phân giải rất cao.",
+      "wrong_explain": {
+        "1": "Kính lúp không đủ phóng đại.",
+        "2": "Kính quang học có độ phân giải khoảng 200 nm, không đủ.",
+        "3": "Pipet dùng để lấy dung dịch."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Máy li tâm được dùng trong kĩ thuật:",
+      "choices": [
+        "phân đoạn tế bào, tách các bào quan dựa trên khối lượng",
+        "đo nhiệt độ môi trường",
+        "chụp ảnh tế bào",
+        "đếm số lượng vi khuẩn bằng mắt"
+      ],
+      "answer": 0,
+      "explain": "Lực li tâm tách các thành phần có khối lượng khác nhau.",
+      "wrong_explain": {
+        "1": "Không phải chức năng của máy li tâm.",
+        "2": "Đó là chức năng của kính hiển vi.",
+        "3": "Không phải chức năng của máy li tâm."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong thí nghiệm, lô đối chứng khác lô thí nghiệm ở điểm nào?",
+      "choices": [
+        "chỉ khác yếu tố đang nghiên cứu",
+        "khác về số lượng cá thể",
+        "khác về điều kiện môi trường nuôi dưỡng",
+        "khác cả hai yếu tố trên"
+      ],
+      "answer": 0,
+      "explain": "Hai lô phải giống nhau ngoại trừ yếu tố nghiên cứu.",
+      "wrong_explain": {
+        "1": "Hai lô phải có số lượng cá thể giống nhau.",
+        "2": "Môi trường nuôi dưỡng phải giống nhau.",
+        "3": "Chỉ được khác một yếu tố nghiên cứu."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong đồ thị nghiên cứu, biến phụ thuộc thường được đặt ở:",
+      "choices": [
+        "trục tung",
+        "trục hoành",
+        "cả hai trục",
+        "không đặt trên trục nào"
+      ],
+      "answer": 0,
+      "explain": "Biến độc lập ở trục hoành; biến phụ thuộc thay đổi theo ở trục tung.",
+      "wrong_explain": {
+        "1": "Trục hoành thể hiện biến độc lập.",
+        "2": "Không đúng quy ước.",
+        "3": "Mọi biến đều được đặt trên trục."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Giả thuyết khoa học phải có đặc điểm nào?",
+      "choices": [
+        "có thể kiểm chứng bằng thực nghiệm",
+        "không cần bằng chứng",
+        "luôn đúng",
+        "chỉ dựa trên niềm tin"
+      ],
+      "answer": 0,
+      "explain": "Giả thuyết khoa học phải kiểm chứng được.",
+      "wrong_explain": {
+        "1": "Giả thuyết cần bằng chứng để kiểm chứng.",
+        "2": "Giả thuyết có thể sai, phải thử nghiệm.",
+        "3": "Niềm tin không phải cơ sở khoa học."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sau khi phân tích kết quả, nếu sai khác giữa hai nhóm là ngẫu nhiên thì:",
+      "choices": [
+        "giả thuyết bị bác bỏ",
+        "giả thuyết được chấp nhận ngay",
+        "thí nghiệm không cần lặp lại",
+        "phải thay đổi toàn bộ quy trình"
+      ],
+      "answer": 0,
+      "explain": "Sai khác không có ý nghĩa thống kê không ủng hộ giả thuyết.",
+      "wrong_explain": {
+        "1": "Trái với logic thống kê.",
+        "2": "Trái với nguyên tắc lặp lại thí nghiệm.",
+        "3": "Không cần thiết."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Dự đoán trong suy luận diễn giải thường được diễn đạt dưới dạng:",
+      "choices": [
+        "\"nếu... thì...\"",
+        "\"vì... nên...\"",
+        "\"có thể... hoặc...\"",
+        "\"không phải... mà là...\""
+      ],
+      "answer": 0,
+      "explain": "Dạng \"nếu... thì...\" là cấu trúc của dự đoán.",
+      "wrong_explain": {
+        "1": "Không phải dạng dự đoán chuẩn.",
+        "2": "Không phải dạng dự đoán chuẩn.",
+        "3": "Không phải dạng dự đoán chuẩn."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi làm thí nghiệm trong phòng thí nghiệm, việc nào là đúng về an toàn?",
+      "choices": [
+        "mặc áo choàng, đeo găng tay và kính bảo hộ",
+        "ăn uống để giữ sức",
+        "nếm thử hoá chất để nhận biết",
+        "làm thí nghiệm khi chưa được hướng dẫn"
+      ],
+      "answer": 0,
+      "explain": "Đảm bảo an toàn cho bản thân và phòng thí nghiệm.",
+      "wrong_explain": {
+        "1": "Không được ăn uống trong phòng thí nghiệm.",
+        "2": "Không được nếm hoặc ngửi hoá chất.",
+        "3": "Chỉ làm khi đã được hướng dẫn."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tin sinh học có vai trò gì trong nghiên cứu sinh học?",
+      "choices": [
+        "phân tích dữ liệu sinh học quy mô lớn bằng phần mềm và thuật toán",
+        "thay thế hoàn toàn thí nghiệm thực tế",
+        "chỉ dùng để in tài liệu",
+        "không có ứng dụng trong học tập"
+      ],
+      "answer": 0,
+      "explain": "Tin sinh học hỗ trợ phân tích và so sánh các bộ dữ liệu lớn.",
+      "wrong_explain": {
+        "1": "Tin sinh học bổ trợ, không thay thế thực nghiệm.",
+        "2": "Không đúng bản chất.",
+        "3": "Có ứng dụng trong nghiên cứu và học tập."
+      },
+      "id": "q09"
+    }
+  ]
+}

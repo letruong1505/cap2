@@ -1,0 +1,276 @@
+{
+  "id": "bai-9",
+  "grade": 12,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Hóa học 12",
+  "chapter": "Chương 3. Hợp chất chứa nitrogen",
+  "lesson": "Bài 9. Amino acid và peptide",
+  "section": "",
+  "bookPage": 41,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Amino acid là hợp chất hữu cơ tạp chức, trong phân tử chứa đồng thời nhóm amino (–NH₂) và nhóm carboxyl (–COOH). Amino acid thiên nhiên hầu hết là α-amino acid H₂N–CH(R)–COOH; khoảng 20 α-amino acid tiêu chuẩn cấu thành protein của cơ thể người, trong đó một số là amino acid thiết yếu (cơ thể không tự tổng hợp được, phải lấy từ thức ăn)."
+    },
+    {
+      "type": "text",
+      "content": "Một số amino acid: glycine (Gly) H₂NCH₂COOH, M = 75; alanine (Ala) H₂NCH(CH₃)COOH, M = 89; valine (Val), M = 117; lysine (Lys) có 2 nhóm –NH₂ và 1 nhóm –COOH, M = 146; glutamic acid (Glu) có 1 nhóm –NH₂ và 2 nhóm –COOH, M = 147."
+    },
+    {
+      "type": "text",
+      "content": "Cấu tạo và tính chất vật lí: amino acid tồn tại chủ yếu ở dạng ion lưỡng cực H₃N⁺–CH(R)–COO⁻ nên là chất rắn kết tinh, không màu, nhiệt độ nóng chảy cao, thường tan tốt trong nước."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất hóa học: (1) Phản ứng ester hóa với alcohol (xúc tác H₂SO₄ đặc), ví dụ H₂NCH₂COOH + C₂H₅OH ⇌ H₂NCH₂COOC₂H₅ + H₂O. (2) Tính lưỡng tính: H₂NCH₂COOH + HCl → ClH₃NCH₂COOH; H₂NCH₂COOH + NaOH → H₂NCH₂COONa + H₂O. (3) Điện di: ở pH ≈ 6 Gly là ion lưỡng cực không di chuyển; pH < 6 Gly là cation, di chuyển về cực âm; pH > 6 là anion, di chuyển về cực dương. (4) Phản ứng trùng ngưng của ε-, ω-amino acid tạo polyamide (ví dụ capron từ 6-aminohexanoic acid)."
+    },
+    {
+      "type": "formula",
+      "content": "nH₂N[CH₂]₅COOH → (–HN[CH₂]₅CO–)ₙ + nH₂O"
+    },
+    {
+      "type": "text",
+      "content": "Peptide là hợp chất hữu cơ cấu tạo từ các đơn vị α-amino acid liên kết với nhau qua liên kết peptide (–CO–NH–). Chứa 2, 3, 4,… đơn vị α-amino acid lần lượt là dipeptide, tripeptide, tetrapeptide,…; nhiều đơn vị là polypeptide. Peptide mạch hở có amino acid đầu N (còn nhóm –NH₂) và amino acid đầu C (còn nhóm –COOH); tên viết tắt ghi từ đầu N đến đầu C, ví dụ Val-Gly-Ala."
+    },
+    {
+      "type": "text",
+      "content": "Tính chất của peptide: bị thủy phân nhờ acid, base hoặc enzyme (thủy phân hoàn toàn tạo các α-amino acid; trong môi trường acid hoặc base tạo muối tương ứng). Từ tripeptide trở lên (có từ hai liên kết peptide) có phản ứng màu biuret với Cu(OH)₂ trong môi trường kiềm tạo dung dịch màu tím."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Cho 7,5 g glycine (M = 75) tác dụng hết với dung dịch HCl. Tính khối lượng muối ClH₃NCH₂COOH (M = 111,5) thu được.",
+      "steps": [
+        "n(Gly) = 7,5/75 = 0,1 mol.",
+        "H₂NCH₂COOH + HCl → ClH₃NCH₂COOH nên n(muối) = 0,1 mol.",
+        "m = 0,1 × 111,5 = 11,15 g."
+      ],
+      "expr": "7.5/75*111.5",
+      "answer": "11.15"
+    },
+    {
+      "problem": "Tính phân tử khối của tripeptide Gly-Ala-Val (Gly = 75, Ala = 89, Val = 117).",
+      "steps": [
+        "Tripeptide được tạo từ 3 amino acid và tách 2 phân tử H₂O.",
+        "M = 75 + 89 + 117 − 2 × 18 = 245."
+      ],
+      "expr": "75+89+117-2*18",
+      "answer": "245"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Amino acid là hợp chất hữu cơ tạp chức có chứa đồng thời:",
+      "choices": [
+        "Nhóm –NH₂ và nhóm –OH",
+        "Nhóm –CHO và nhóm –COOH",
+        "Hai nhóm –COOH",
+        "Nhóm –NH₂ và nhóm –COOH"
+      ],
+      "answer": 3,
+      "explain": "Amino acid có nhóm amino và nhóm carboxyl trong cùng phân tử.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Nhóm –OH và –NH₂ không phải đặc điểm của amino acid.",
+        "1": "Đó không phải amino acid.",
+        "2": "Không có nhóm amino."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Công thức của glycine là:",
+      "choices": [
+        "H₂NCH(CH₃)COOH",
+        "H₂NCH₂COOH",
+        "CH₃COOH",
+        "H₂N[CH₂]₄CH(NH₂)COOH"
+      ],
+      "answer": 1,
+      "explain": "Glycine là amino acid đơn giản nhất.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đây là alanine.",
+        "2": "Đây là acetic acid.",
+        "3": "Đây là lysine."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Liên kết peptide là liên kết:",
+      "choices": [
+        "–CO–O– giữa hai đơn vị α-amino acid",
+        "–NH–NH– giữa hai đơn vị amino acid",
+        "–CO–NH– giữa hai đơn vị α-amino acid",
+        "–O– giữa hai đơn vị α-amino acid"
+      ],
+      "answer": 2,
+      "explain": "Nhóm –COOH của amino acid này kết hợp với –NH₂ của amino acid kia, tách nước.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đó là liên kết ester.",
+        "1": "Không phải liên kết peptide.",
+        "3": "Đó là liên kết ether."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ở pH ≈ 6, glycine đặt trong điện trường sẽ:",
+      "choices": [
+        "Hầu như không di chuyển vì tồn tại chủ yếu ở dạng ion lưỡng cực",
+        "Di chuyển về cực âm",
+        "Di chuyển về cực dương",
+        "Bị phân hủy hoàn toàn"
+      ],
+      "answer": 0,
+      "explain": "Ở pH gần điểm đẳng điện, tổng điện tích bằng 0 nên Gly không di chuyển.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Đó là hiện tượng ở pH < 6 khi Gly thành cation.",
+        "2": "Đó là hiện tượng ở pH > 6 khi Gly thành anion.",
+        "3": "Không có hiện tượng này."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Amino acid có tính lưỡng tính vì trong phân tử có:",
+      "choices": [
+        "Hai nhóm –COOH",
+        "Chỉ có nhóm –NH₂",
+        "Liên kết peptide",
+        "Nhóm –NH₂ (tính base) và nhóm –COOH (tính acid)"
+      ],
+      "answer": 3,
+      "explain": "Nhóm amino phản ứng được với acid, nhóm carboxyl phản ứng được với base.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Không có nhóm base.",
+        "1": "Chỉ có tính base.",
+        "2": "Amino acid không có liên kết peptide."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Peptide nào sau đây KHÔNG có phản ứng màu biuret?",
+      "choices": [
+        "Gly-Ala-Val (tripeptide)",
+        "Gly-Ala (dipeptide)",
+        "Ala-Gly-Glu-Val (tetrapeptide)",
+        "Protein lòng trắng trứng"
+      ],
+      "answer": 1,
+      "explain": "Phản ứng biuret cần từ hai liên kết peptide trở lên nên dipeptide không phản ứng.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Có hai liên kết peptide nên cho phản ứng màu biuret.",
+        "2": "Có ba liên kết peptide nên cho phản ứng.",
+        "3": "Protein cho phản ứng biuret."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tripeptide Gly-Ala-Val chứa bao nhiêu liên kết peptide?",
+      "expr": "3-1",
+      "answer": "2",
+      "explain": "Tripeptide có 3 gốc nên có 2 liên kết peptide.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính phân tử khối của tripeptide Gly-Ala-Val (Gly = 75, Ala = 89, Val = 117).",
+      "expr": "75+89+117-2*18",
+      "answer": "245",
+      "explain": "M = 75 + 89 + 117 − 2 × 18 = 245.",
+      "id": "q08"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 7,5 g glycine tác dụng hết với dung dịch HCl. Khối lượng muối thu được là bao nhiêu gam? (M muối = 111,5)",
+      "expr": "7.5/75*111.5",
+      "answer": "11.15",
+      "explain": "n = 0,1 mol → m = 11,15 g.",
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho 7,5 g glycine tác dụng hết với dung dịch NaOH. Khối lượng muối H₂NCH₂COONa (M = 97) thu được là bao nhiêu gam?",
+      "expr": "7.5/75*97",
+      "answer": "9.7",
+      "explain": "n = 0,1 mol → m = 9,7 g.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đun nóng 7,5 g glycine với ethanol dư (H₂SO₄ đặc), hiệu suất 80%. Khối lượng ethyl glycinate H₂NCH₂COOC₂H₅ (M = 103) thu được là bao nhiêu gam?",
+      "expr": "7.5/75*103*80/100",
+      "answer": "8.24",
+      "explain": "Lí thuyết 10,3 g; thực tế 10,3 × 0,8 = 8,24 g.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Trùng ngưng hoàn toàn 13,1 g 6-aminohexanoic acid (M = 131) thu được bao nhiêu gam polycaproamide (mắt xích M = 113)?",
+      "expr": "13.1/131*113",
+      "answer": "11.3",
+      "explain": "n = 0,1 mol mắt xích → m = 0,1 × 113 = 11,3 g.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Thủy phân không hoàn toàn tetrapeptide Ala-Gly-Glu-Val, có thể thu được tối đa bao nhiêu dipeptide khác nhau?",
+      "expr": "4-1",
+      "answer": "3",
+      "explain": "Các dipeptide: Ala-Gly, Gly-Glu, Glu-Val: 3 dipeptide.",
+      "id": "q13"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Cho 0,1 mol glutamic acid (M = 147) tác dụng với dung dịch NaOH dư. Số mol NaOH đã phản ứng là bao nhiêu? (nhập số thập phân)",
+      "expr": "0.1*2",
+      "answer": "0.2",
+      "explain": "Glutamic acid có hai nhóm –COOH nên phản ứng với 2 mol NaOH trên 1 mol: 0,2 mol.",
+      "id": "q14"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "stem": "Số tripeptide khác nhau chứa cả ba amino acid Gly, Ala, Val (mỗi loại một đơn vị) là:",
+      "choices": [
+        "6",
+        "3",
+        "9",
+        "1"
+      ],
+      "answer": 0,
+      "explain": "Hoán vị của 3 amino acid cho 3! = 6 tripeptide đồng phân.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Mỗi trật tự khác nhau cho một tripeptide khác nhau, có 3! = 6.",
+        "2": "Chỉ có 3! = 6 hoán vị.",
+        "3": "Thứ tự amino acid khác nhau cho các tripeptide khác nhau."
+      },
+      "id": "q15"
+    }
+  ]
+}

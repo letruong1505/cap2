@@ -1,0 +1,175 @@
+{
+  "id": "bai-18",
+  "grade": 11,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 11",
+  "chapter": "Chương 4. Hydrocarbon",
+  "lesson": "Bài 18. Ôn tập chương 4",
+  "section": "",
+  "bookPage": 110,
+  "requirements": [
+    "Hệ thống hoá kiến thức alkane, alkene, alkyne, arene: công thức chung, cấu tạo, tính chất, điều chế, ứng dụng.",
+    "Vận dụng giải bài tập nhận biết, xác định công thức, tính toán."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Alkane CₙH₂ₙ₊₂: phản ứng thế, cracking, reforming, cháy. Alkene CₙH₂ₙ: cộng (H₂, Br₂, HX, H₂O), trùng hợp, oxi hoá. Alkyne CₙH₂ₙ₋₂: cộng, phản ứng alk-1-yne với AgNO₃/NH₃, oxi hoá. Arene CₙH₂ₙ₋₆: thế (halogen hoá, nitro hoá), cộng (Cl₂, H₂), oxi hoá nhóm alkyl."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/hoa11-b18-so-sanh.svg",
+      "caption": "So sánh các loại hydrocarbon"
+    },
+    {
+      "type": "text",
+      "content": "Điều chế: alkane từ dầu mỏ, khí thiên nhiên; ethylene từ dehydrate ethanol, cracking; acetylene từ CaC₂ + H₂O hoặc methane; arene từ reforming và nhựa than đá. Quy tắc: CₙH₂ₙ₊₂ cháy cho n(H₂O) > n(CO₂); CₙH₂ₙ cho n(CO₂) = n(H₂O); alkyne cho n(CO₂) > n(H₂O)."
+    },
+    {
+      "type": "formula",
+      "content": "n(H₂O) − n(CO₂) = n(alkane)        n(CO₂) − n(H₂O) = n(alkyne) (mạch hở, một liên kết ba)"
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Đốt hoàn toàn một alkane, thu 0,3 mol CO₂ và 0,4 mol H₂O. Tính số mol alkane.",
+      "steps": [
+        "n(alkane) = n(H₂O) − n(CO₂).",
+        "= 0,4 − 0,3 = 0,1 mol."
+      ],
+      "expr": "0.4-0.3",
+      "answer": "0.1"
+    },
+    {
+      "problem": "Một hydrocarbon mạch hở cháy cho n(CO₂) = n(H₂O). Là loại nào?",
+      "steps": [
+        "Tỉ lệ này đặc trưng cho CₙH₂ₙ.",
+        "Là alkene (hoặc cycloalkane)."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Chất nào phản ứng với AgNO₃/NH₃ tạo kết tủa vàng nhạt?",
+      "choices": [
+        "propyne CH≡C–CH₃",
+        "but-2-yne",
+        "ethylene",
+        "propane"
+      ],
+      "answer": 0,
+      "explain": "Có liên kết ba đầu mạch.",
+      "wrong_explain": {
+        "1": "Liên kết ba ở giữa.",
+        "2": "Không có liên kết ba.",
+        "3": "Không có."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đốt cháy hydrocarbon cho n(CO₂) < n(H₂O) là:",
+      "choices": [
+        "alkane",
+        "alkene",
+        "alkyne",
+        "benzene"
+      ],
+      "answer": 0,
+      "explain": "CₙH₂ₙ₊₂.",
+      "wrong_explain": {
+        "1": "n(CO₂) = n(H₂O).",
+        "2": "n(CO₂) > n(H₂O).",
+        "3": "n(CO₂) > n(H₂O)."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hydrocarbon nào làm mất màu nước bromine ở điều kiện thường?",
+      "choices": [
+        "propene",
+        "benzene",
+        "hexane",
+        "toluene"
+      ],
+      "answer": 0,
+      "explain": "Có liên kết π kém bền.",
+      "wrong_explain": {
+        "1": "Không.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phân biệt hexane, hex-1-ene và toluene (đun nóng) dùng:",
+      "choices": [
+        "nước Br₂ và KMnO₄ (đun nóng)",
+        "chỉ quỳ tím",
+        "chỉ nước",
+        "chỉ NaOH"
+      ],
+      "answer": 0,
+      "explain": "Hex-1-ene làm mất màu Br₂; toluene chỉ làm mất màu KMnO₄ khi đun.",
+      "wrong_explain": {
+        "1": "Không phân biệt.",
+        "2": "Không phân biệt.",
+        "3": "Không phân biệt."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai hydrocarbon C₅H₁₂ với một sản phẩm thế monochlorine duy nhất là:",
+      "choices": [
+        "2,2-dimethylpropane",
+        "pentane",
+        "2-methylbutane",
+        "butane"
+      ],
+      "answer": 0,
+      "explain": "Phân tử đối xứng cao.",
+      "wrong_explain": {
+        "1": "Cho 3 sản phẩm.",
+        "2": "Cho 4 sản phẩm.",
+        "3": "Là C₄H₁₀."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cặp chất có thể làm nguyên liệu tổng hợp PVC là:",
+      "choices": [
+        "acetylene và HCl",
+        "ethylene và H₂",
+        "benzene và Cl₂",
+        "ethane và O₂"
+      ],
+      "answer": 0,
+      "explain": "C₂H₂ + HCl → CH₂=CHCl.",
+      "wrong_explain": {
+        "1": "Không tạo vinyl chloride.",
+        "2": "Không tạo.",
+        "3": "Không tạo."
+      },
+      "id": "q06"
+    }
+  ]
+}

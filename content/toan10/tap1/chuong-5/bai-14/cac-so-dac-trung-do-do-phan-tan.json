@@ -1,0 +1,294 @@
+{
+  "id": "bai-14",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 1",
+  "chapter": "Chương V. Các số đặc trưng của mẫu số liệu không ghép nhóm",
+  "lesson": "Bài 14. Các số đặc trưng đo độ phân tán",
+  "section": "",
+  "bookPage": 84,
+  "requirements": [
+    "Tính khoảng biến thiên, khoảng tứ phân vị, phương sai, độ lệch chuẩn.",
+    "Phát hiện giá trị bất thường bằng khoảng tứ phân vị; so sánh độ phân tán của hai mẫu."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Khoảng biến thiên R = x_max − x_min là hiệu giữa giá trị lớn nhất và nhỏ nhất của mẫu. R dễ tính nhưng chỉ dùng hai giá trị đầu mút nên bị ảnh hưởng mạnh bởi giá trị bất thường."
+    },
+    {
+      "type": "text",
+      "content": "Khoảng tứ phân vị Δ_Q = Q₃ − Q₁ đo độ phân tán của 50% số liệu ở giữa, không bị ảnh hưởng bởi giá trị bất thường."
+    },
+    {
+      "type": "formula",
+      "content": "Phương sai: s² = [(x₁ − x̄)² + (x₂ − x̄)² + ... + (x_n − x̄)²]/n        Độ lệch chuẩn: s = √s²"
+    },
+    {
+      "type": "text",
+      "content": "Phương sai và độ lệch chuẩn đo mức độ phân tán của số liệu quanh số trung bình: càng lớn thì số liệu càng phân tán. Độ lệch chuẩn có cùng đơn vị với số liệu nên thường dùng để so sánh."
+    },
+    {
+      "type": "text",
+      "content": "Giá trị bất thường: giá trị x được coi là bất thường nếu x < Q₁ − 1,5Δ_Q hoặc x > Q₃ + 1,5Δ_Q. Các giá trị này thường do sai sót khi thu thập hoặc là trường hợp đặc biệt cần xem xét riêng."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t10-b14-bat-thuong.svg",
+      "caption": "Khoảng tứ phân vị và vùng giá trị bất thường"
+    },
+    {
+      "type": "method",
+      "title": "Tính phương sai, độ lệch chuẩn và tìm giá trị bất thường",
+      "when": "Đề cho mẫu số liệu, hỏi khoảng biến thiên, khoảng tứ phân vị, phương sai, độ lệch chuẩn hoặc giá trị bất thường; hoặc so sánh độ ổn định của hai mẫu.",
+      "steps": [
+        "Tính x̄; lập bảng (x_i − x̄)² rồi cộng lại, chia n để được s²; s = √s².",
+        "Khoảng biến thiên lấy max trừ min; khoảng tứ phân vị tìm Q₁, Q₃ rồi trừ.",
+        "Giá trị bất thường: tính Q₁ − 1,5Δ_Q và Q₃ + 1,5Δ_Q, giá trị nằm ngoài là bất thường.",
+        "So sánh hai mẫu cùng trung bình: độ lệch chuẩn nhỏ hơn thì ổn định hơn."
+      ],
+      "notes": [
+        "Có thể dùng công thức s² = (x₁² + ... + x_n²)/n − x̄² cho nhanh.",
+        "Phương sai không âm; bằng 0 khi mọi số liệu bằng nhau."
+      ],
+      "sample": {
+        "problem": "Tính phương sai và độ lệch chuẩn của mẫu 2, 4, 6, 8.",
+        "steps": [
+          "x̄ = 5. Các bình phương độ lệch: 9, 1, 1, 9, tổng 20.",
+          "s² = 20/4 = 5, s = √5 ≈ 2,24."
+        ],
+        "answer": "s² = 5, s ≈ 2,24"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Điểm kiểm tra của 5 học sinh: 5, 7, 8, 9, 6. Tính khoảng biến thiên, phương sai và độ lệch chuẩn.",
+      "steps": [
+        "R = 9 − 5 = 4.",
+        "x̄ = 35/5 = 7; các bình phương độ lệch: 4, 0, 1, 4, 1, tổng 10.",
+        "s² = 10/5 = 2; s = √2 ≈ 1,41."
+      ],
+      "expr": "10/5",
+      "answer": "2"
+    },
+    {
+      "problem": "Mẫu số liệu: 11, 12, 12, 13, 14, 15, 16, 40. Tìm khoảng tứ phân vị và giá trị bất thường (nếu có).",
+      "steps": [
+        "n = 8: Q₂ = (13 + 14)/2 = 13,5; Q₁ = (12 + 12)/2 = 12; Q₃ = (15 + 16)/2 = 15,5.",
+        "Δ_Q = 3,5; Q₃ + 1,5Δ_Q = 15,5 + 5,25 = 20,75; Q₁ − 1,5Δ_Q = 6,75.",
+        "40 > 20,75 nên 40 là giá trị bất thường."
+      ],
+      "expr": "15.5-12",
+      "answer": "3.5"
+    },
+    {
+      "problem": "Hai vận động viên bắn 5 phát, điểm lần lượt: A: 8, 9, 10, 9, 9; B: 10, 7, 10, 8, 10. Ai bắn ổn định hơn?",
+      "steps": [
+        "Cả hai có trung bình 9.",
+        "A: s² = (1 + 0 + 1 + 0 + 0)/5 = 0,4. B: s² = (1 + 4 + 1 + 1 + 1)/5 = 1,6.",
+        "A có phương sai nhỏ hơn nên bắn ổn định hơn."
+      ],
+      "expr": "8/5",
+      "answer": "1.6"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Khoảng biến thiên của mẫu 12, 5, 9, 20, 7 là:",
+      "expr": "20-5",
+      "answer": "15",
+      "explain": "R = 20 − 5.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Mẫu có Q₁ = 4 và Q₃ = 11. Khoảng tứ phân vị là:",
+      "expr": "11-4",
+      "answer": "7",
+      "explain": "Δ_Q = Q₃ − Q₁.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Mẫu 3, 3, 3, 3 có phương sai bằng:",
+      "expr": "0",
+      "answer": "0",
+      "explain": "Mọi giá trị bằng trung bình nên độ lệch đều bằng 0.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Độ lệch chuẩn là:",
+      "choices": [
+        "căn bậc hai của phương sai",
+        "bình phương của phương sai",
+        "hiệu của max và min",
+        "trung bình của mẫu"
+      ],
+      "answer": 0,
+      "explain": "s = √s².",
+      "wrong_explain": {
+        "1": "Ngược lại.",
+        "2": "Đó là khoảng biến thiên.",
+        "3": "Không đúng."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đại lượng nào không bị ảnh hưởng bởi giá trị bất thường?",
+      "choices": [
+        "Khoảng tứ phân vị",
+        "Khoảng biến thiên",
+        "Phương sai",
+        "Số trung bình"
+      ],
+      "answer": 0,
+      "explain": "Δ_Q chỉ dùng 50% số liệu ở giữa.",
+      "wrong_explain": {
+        "1": "Dùng max và min.",
+        "2": "Dùng mọi giá trị.",
+        "3": "Dùng mọi giá trị."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Phương sai của mẫu 1, 3, 5 (viết dạng phân số) là:",
+      "expr": "(4+0+4)/3",
+      "answer": "8/3",
+      "explain": "x̄ = 3; (4 + 0 + 4)/3 = 8/3.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mẫu 2, 4, 4, 4, 5, 5, 7, 9 có độ lệch chuẩn bằng:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "x̄ = 5; tổng bình phương độ lệch 9 + 1 + 1 + 1 + 0 + 0 + 4 + 16 = 32; s² = 4; s = 2.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mẫu 1, 2, 4, 5, 7, 8, 10, 11 có khoảng tứ phân vị bằng:",
+      "expr": "9-3",
+      "answer": "6",
+      "explain": "Q₁ = (2 + 4)/2 = 3, Q₃ = (8 + 10)/2 = 9.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Mẫu có Q₁ = 10, Q₃ = 14. Giá trị nào là bất thường?",
+      "choices": [
+        "21",
+        "5",
+        "19",
+        "16"
+      ],
+      "answer": 0,
+      "explain": "Q₃ + 1,5·4 = 20; 21 > 20. Cận dưới là 10 − 6 = 4.",
+      "wrong_explain": {
+        "1": "5 ≥ 4.",
+        "2": "19 ≤ 20.",
+        "3": "16 ≤ 20."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mẫu 6, 8, 10 có phương sai s². Giá trị 3s² bằng:",
+      "expr": "3*8/3",
+      "answer": "8",
+      "explain": "x̄ = 8; s² = (4 + 0 + 4)/3 = 8/3; 3s² = 8.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Mẫu A có s = 1,5; mẫu B có s = 2,3. Mẫu B phân tán hơn mẫu A bao nhiêu (hiệu độ lệch chuẩn)?",
+      "expr": "2.3-1.5",
+      "answer": "0.8",
+      "explain": "2,3 − 1,5 = 0,8.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mẫu 5, 7, 9, 11, 13, 15, 17, 60. Cận trên để phát hiện giá trị bất thường Q₃ + 1,5Δ_Q bằng:",
+      "expr": "16+12",
+      "answer": "28",
+      "explain": "Q₁ = (7 + 9)/2 = 8, Q₃ = (15 + 17)/2 = 16; Δ_Q = 8; cận trên = 16 + 1,5·8 = 28, nên 60 là giá trị bất thường.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nhiệt độ (°C) 7 ngày: 25, 27, 26, 30, 28, 29, 31. Phương sai (làm tròn 2 chữ số thập phân) là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "x̄ = 196/7 = 28; bình phương độ lệch: 9, 1, 4, 4, 0, 1, 9, tổng 28; s² = 4.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mẫu gồm 4 số có trung bình 10 và tổng bình phương các số là 436. Phương sai bằng:",
+      "expr": "436/4-100",
+      "answer": "9",
+      "explain": "s² = (Σx²)/n − x̄² = 109 − 100 = 9.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai lớp có cùng điểm trung bình 7. Lớp A có s² = 1,2; lớp B có s² = 2,5. Độ lệch chuẩn của lớp có kết quả đồng đều hơn (làm tròn 2 chữ số) là:",
+      "expr": "1.1",
+      "answer": "1.1",
+      "explain": "Lớp A đồng đều hơn; s = √1,2 ≈ 1,10.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mẫu 2, 3, 5, 6, 9 có x̄ = 5. Độ lệch chuẩn (làm tròn 2 chữ số thập phân) là:",
+      "expr": "2.45",
+      "answer": "2.45",
+      "explain": "Bình phương độ lệch 9, 4, 0, 1, 16, tổng 30; s² = 6; s ≈ 2,45.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Mẫu gồm n số có phương sai 4. Nếu cộng thêm 3 vào mỗi số liệu thì phương sai mới bằng:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "Cộng hằng số không đổi độ lệch so với trung bình nên phương sai không đổi.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Mẫu gồm n số có độ lệch chuẩn 2. Nếu nhân mỗi số liệu với 3 thì độ lệch chuẩn mới bằng:",
+      "expr": "3*2",
+      "answer": "6",
+      "explain": "Nhân mỗi số với k thì độ lệch chuẩn nhân với |k|.",
+      "id": "q18"
+    }
+  ]
+}

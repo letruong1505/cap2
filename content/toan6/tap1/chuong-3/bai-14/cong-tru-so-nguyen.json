@@ -1,0 +1,228 @@
+{
+  "id": "bai-14",
+  "grade": 6,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 6, tập 1",
+  "chapter": "Chương III. Số nguyên",
+  "lesson": "Bài 14. Phép cộng và phép trừ số nguyên",
+  "section": "",
+  "bookPage": 62,
+  "requirements": [
+    "Thực hiện cộng, trừ số nguyên; vận dụng tính chất của phép cộng để tính hợp lí."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cộng hai số nguyên dương: như cộng hai số tự nhiên. Cộng hai số nguyên âm: cộng hai số đối của chúng rồi thêm dấu \"−\" trước kết quả: (−a) + (−b) = −(a + b)."
+    },
+    {
+      "type": "text",
+      "content": "Cộng hai số nguyên khác dấu: hai số đối nhau thì tổng bằng 0; không đối nhau thì lấy số lớn trừ số nhỏ (trong hai phần số tự nhiên) và đặt trước kết quả dấu của số có phần số tự nhiên lớn hơn."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/c-t6-b14-cong-so-nguyen.svg",
+      "caption": "Cộng số nguyên trên trục số."
+    },
+    {
+      "type": "text",
+      "content": "Phép cộng số nguyên có tính chất giao hoán, kết hợp, cộng với 0, cộng với số đối: a + (−a) = 0."
+    },
+    {
+      "type": "formula",
+      "content": "a − b = a + (−b)"
+    },
+    {
+      "type": "method",
+      "title": "Cộng, trừ số nguyên",
+      "when": "Đề cho các phép tính cộng, trừ với số nguyên âm và dương.",
+      "steps": [
+        "Đưa phép trừ về phép cộng: a − b = a + (−b).",
+        "Hai số cùng dấu: cộng hai giá trị tuyệt đối rồi giữ dấu chung.",
+        "Hai số khác dấu: lấy giá trị tuyệt đối lớn trừ giá trị tuyệt đối nhỏ, kết quả mang dấu của số có giá trị tuyệt đối lớn hơn.",
+        "Kiểm tra bằng trục số hoặc ước lượng dấu của kết quả."
+      ],
+      "notes": [
+        "Trừ đi một số âm bằng cộng số dương: a − (−b) = a + b.",
+        "Hai số đối nhau có tổng bằng 0.",
+        "Số âm phải đặt trong ngoặc khi đứng sau dấu phép tính: 5 + (−3).",
+        "Dấu của kết quả luôn là dấu của số có giá trị tuyệt đối lớn hơn."
+      ],
+      "sample": {
+        "problem": "Tính (−15) + 8.",
+        "steps": [
+          "Hai số khác dấu: |−15| = 15, |8| = 8.",
+          "Lấy 15 − 8 = 7, kết quả mang dấu âm vì 15 lớn hơn.",
+          "(−15) + 8 = −7."
+        ],
+        "answer": "−7"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính (−25) + (−17).",
+      "steps": [
+        "Cộng hai số nguyên âm: −(25 + 17).",
+        "= −42."
+      ],
+      "expr": "(-25)+(-17)",
+      "answer": "-42"
+    },
+    {
+      "problem": "Dạng tính hợp lí: (−37) + 54 + (−63) + 46.",
+      "steps": [
+        "Nhóm [(−37) + (−63)] + (54 + 46) = (−100) + 100.",
+        "= 0."
+      ],
+      "expr": "(-37)+54+(-63)+46",
+      "answer": "0"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tổng của hai số nguyên đối nhau bằng:",
+      "choices": [
+        "0",
+        "Gấp đôi số dương",
+        "Số âm",
+        "1"
+      ],
+      "answer": 0,
+      "explain": "a + (−a) = 0.",
+      "wrong_explain": {
+        "1": "Tổng hai số đối là 0.",
+        "2": "Không.",
+        "3": "Không."
+      },
+      "concept": true
+    },
+    {
+      "id": "q02",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Muốn trừ số nguyên a cho b ta:",
+      "choices": [
+        "Cộng a với b",
+        "Lấy b trừ a",
+        "Cộng số đối của a với b",
+        "Cộng a với số đối của b"
+      ],
+      "answer": 3,
+      "explain": "a − b = a + (−b).",
+      "wrong_explain": {
+        "0": "Phải cộng với số đối của b.",
+        "1": "Sai thứ tự.",
+        "2": "Sai."
+      },
+      "concept": true
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tính (−12) + (−7).",
+      "expr": "-12-7",
+      "answer": "-19",
+      "explain": "Hai số cùng dấu âm: 12 + 7 = 19, giữ dấu âm: −19.",
+      "dang": "Cộng, trừ số nguyên",
+      "id": "q10"
+    },
+    {
+      "id": "q03",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (−12) + 30.",
+      "expr": "-12+30",
+      "answer": "18",
+      "explain": "= 18."
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 15 + (−40).",
+      "expr": "15-40",
+      "answer": "-25",
+      "explain": "= −25."
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 7 − 19.",
+      "expr": "7-19",
+      "answer": "-12",
+      "explain": "= −12."
+    },
+    {
+      "id": "q06",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (−8) − (−20).",
+      "expr": "-8+20",
+      "answer": "12",
+      "explain": "= 12."
+    },
+    {
+      "id": "q07",
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (−45) + (−55).",
+      "expr": "-100",
+      "answer": "-100",
+      "explain": "= −100."
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính 15 + (−23).",
+      "expr": "15-23",
+      "answer": "-8",
+      "explain": "Khác dấu: 23 − 15 = 8, mang dấu của 23 (âm): −8.",
+      "dang": "Cộng, trừ số nguyên",
+      "id": "q11"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính (−9) − (−14).",
+      "expr": "-9+14",
+      "answer": "5",
+      "explain": "(−9) − (−14) = (−9) + 14 = 14 − 9 = 5.",
+      "dang": "Cộng, trừ số nguyên",
+      "id": "q12"
+    },
+    {
+      "id": "q08",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính hợp lí 125 + (−37) + (−125).",
+      "expr": "-37",
+      "answer": "-37",
+      "explain": "125 + (−125) = 0, còn −37."
+    },
+    {
+      "id": "q09",
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một tài khoản có 500 nghìn đồng, rút 800 nghìn đồng (được nợ). Số dư mới (nghìn đồng) là:",
+      "expr": "500-800",
+      "answer": "-300",
+      "explain": "= −300."
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính 8 − 17 + (−5).",
+      "expr": "8-17-5",
+      "answer": "-14",
+      "explain": "8 − 17 = −9; (−9) + (−5) = −14.",
+      "dang": "Cộng, trừ số nguyên",
+      "id": "q13"
+    }
+  ]
+}

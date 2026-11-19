@@ -1,0 +1,151 @@
+{
+  "id": "bai-20",
+  "grade": 10,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 10",
+  "chapter": "Chương VI. Tốc độ phản ứng",
+  "lesson": "Bài 20. Ôn tập chương 6",
+  "section": "",
+  "bookPage": 101,
+  "requirements": [
+    "Hệ thống hoá kiến thức về tốc độ phản ứng và các yếu tố ảnh hưởng.",
+    "Vận dụng biểu thức tốc độ, quy tắc Van’t Hoff giải bài tập và giải thích hiện tượng thực tiễn."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hệ thống kiến thức chương 6: (1) Tốc độ phản ứng, tốc độ trung bình (chia hệ số). (2) Định luật tác dụng khối lượng v = kC_A^a C_B^b. (3) Các yếu tố: nồng độ, áp suất, nhiệt độ (quy tắc Van’t Hoff), diện tích bề mặt, chất xúc tác. (4) Ứng dụng trong đời sống, sản xuất."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b20-on-tap.svg",
+      "caption": "Sơ đồ hệ thống hoá kiến thức chương VI"
+    },
+    {
+      "type": "formula",
+      "content": "v₂/v₁ = γ^((T₂ − T₁)/10)        t₂/t₁ = v₁/v₂"
+    },
+    {
+      "type": "method",
+      "title": "Giải thích ứng dụng thực tiễn",
+      "when": "Đề mô tả một biện pháp trong đời sống, sản xuất; yêu cầu chỉ ra yếu tố ảnh hưởng và giải thích.",
+      "steps": [
+        "Xác định thay đổi: nhiệt độ, nồng độ, áp suất, bề mặt hay xúc tác.",
+        "Nêu chiều ảnh hưởng (tăng/giảm tốc độ).",
+        "Giải thích bằng số va chạm, va chạm hiệu quả, năng lượng hoạt hoá."
+      ],
+      "notes": [
+        "Ướp lạnh, hút chân không: giảm tốc độ phản ứng gây hỏng thực phẩm.",
+        "Thổi không khí vào lò: tăng nồng độ O₂."
+      ],
+      "sample": {
+        "problem": "Vì sao thổi không khí vào lò than làm than cháy mạnh hơn?",
+        "steps": [
+          "Tăng nồng độ (lượng) oxygen tiếp xúc với than.",
+          "Tốc độ phản ứng cháy tăng."
+        ],
+        "answer": "Tăng nồng độ O₂"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Phản ứng có γ = 2. Ở 40 °C tốc độ là 0,5 mol/(L·s). Tính tốc độ ở 70 °C.",
+      "steps": [
+        "v₂ = 0,5·2³ = 4 mol/(L·s)."
+      ],
+      "expr": "0.5*8",
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tăng nhiệt độ thường làm tốc độ phản ứng:",
+      "choices": [
+        "tăng",
+        "giảm",
+        "không đổi",
+        "bằng 0"
+      ],
+      "answer": 0,
+      "explain": "Va chạm hiệu quả tăng.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ủ men để làm rượu, enzyme đóng vai trò:",
+      "choices": [
+        "chất xúc tác",
+        "chất phản ứng",
+        "chất ức chế",
+        "dung môi"
+      ],
+      "answer": 0,
+      "explain": "Enzyme là xúc tác sinh học.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho Zn vào HCl. Cách làm phản ứng xảy ra nhanh nhất là dùng:",
+      "choices": [
+        "Zn bột và HCl 2 M, đun nóng",
+        "Zn viên và HCl 0,5 M ở nhiệt độ thường",
+        "Zn viên và HCl 2 M, làm lạnh",
+        "Zn bột và HCl 0,5 M, làm lạnh"
+      ],
+      "answer": 0,
+      "explain": "Diện tích lớn, nồng độ cao, nhiệt độ cao.",
+      "wrong_explain": {
+        "1": "Chậm.",
+        "2": "Chậm.",
+        "3": "Chậm."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phản ứng có γ = 2, giảm nhiệt độ từ 60 °C xuống 30 °C thì tốc độ giảm (lần):",
+      "expr": "8",
+      "answer": "8",
+      "explain": "2³.",
+      "id": "q04"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phản ứng A + 2B → C đơn giản. Giảm nồng độ B còn một nửa, tốc độ giảm (lần):",
+      "expr": "4",
+      "answer": "4",
+      "explain": "v tỉ lệ C_B².",
+      "id": "q05"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nồng độ chất B tăng từ 0 lên 0,15 M trong 30 s (B là sản phẩm hệ số 3). Tốc độ trung bình phản ứng (mol/(L·s), viết dạng phân số):",
+      "expr": "15/9000",
+      "answer": "1/600",
+      "explain": "0,15/30/3.",
+      "id": "q06"
+    }
+  ]
+}

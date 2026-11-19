@@ -1,0 +1,288 @@
+{
+  "id": "bai-2",
+  "grade": 10,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 10",
+  "chapter": "Chương I. Cấu tạo nguyên tử",
+  "lesson": "Bài 2. Nguyên tố hoá học",
+  "section": "",
+  "bookPage": 17,
+  "requirements": [
+    "Phát biểu được khái niệm nguyên tố hoá học, số hiệu nguyên tử, kí hiệu nguyên tử.",
+    "Phát biểu được khái niệm đồng vị, nguyên tử khối; tính được nguyên tử khối trung bình và phần trăm các đồng vị."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Nguyên tố hoá học là tập hợp các nguyên tử có cùng số đơn vị điện tích hạt nhân (cùng số proton). Số đơn vị điện tích hạt nhân Z gọi là số hiệu nguyên tử. Ví dụ: tất cả nguyên tử có Z = 6 đều thuộc nguyên tố carbon."
+    },
+    {
+      "type": "formula",
+      "content": "Kí hiệu nguyên tử: ᴬ_Z X   (A: số khối, Z: số hiệu nguyên tử, X: kí hiệu nguyên tố)"
+    },
+    {
+      "type": "text",
+      "content": "Đồng vị là những nguyên tử của cùng một nguyên tố (cùng số proton) nhưng có số neutron khác nhau, do đó số khối khác nhau. Ví dụ: hydrogen có ¹H, ²H (deuterium), ³H (tritium); chlorine có ³⁵Cl và ³⁷Cl. Các đồng vị có tính chất hoá học giống nhau nhưng khác nhau về một số tính chất vật lí. Các đồng vị không bền gọi là đồng vị phóng xạ, được dùng trong y học, nông nghiệp, khảo cổ (¹⁴C)."
+    },
+    {
+      "type": "text",
+      "content": "Nguyên tử khối là khối lượng tương đối của nguyên tử, cho biết nguyên tử nặng gấp bao nhiêu lần 1 amu; có thể coi gần bằng số khối. Nguyên tử khối của một nguyên tố là nguyên tử khối trung bình của hỗn hợp các đồng vị, xác định bằng phổ khối lượng."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b2-pho-khoi-cl.svg",
+      "caption": "Phổ khối lượng của chlorine và cách tính nguyên tử khối trung bình"
+    },
+    {
+      "type": "formula",
+      "content": "Ā = (a·A₁ + b·A₂ + ...)/100   (a, b: phần trăm số nguyên tử mỗi đồng vị)"
+    },
+    {
+      "type": "text",
+      "content": "Bài toán ngược: biết Ā và số khối hai đồng vị, gọi phần trăm đồng vị thứ nhất là x thì Ā = [x·A₁ + (100 − x)·A₂]/100, giải tìm x."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Chlorine có hai đồng vị ³⁵Cl (75,77%) và ³⁷Cl (24,23%). Tính nguyên tử khối trung bình.",
+      "steps": [
+        "Ā = (75,77·35 + 24,23·37)/100.",
+        "= (2651,95 + 896,51)/100 ≈ 35,48."
+      ],
+      "expr": "(75.77*35+24.23*37)/100",
+      "answer": "35.4846"
+    },
+    {
+      "problem": "Copper có nguyên tử khối trung bình 63,546, gồm hai đồng vị ⁶³Cu và ⁶⁵Cu. Tính phần trăm số nguyên tử ⁶³Cu.",
+      "steps": [
+        "Gọi x là % ⁶³Cu: 63x + 65(100 − x) = 6354,6.",
+        "6500 − 2x = 6354,6 ⇒ x = 72,7%."
+      ],
+      "expr": "145.4/2",
+      "answer": "72.7"
+    },
+    {
+      "problem": "Neon có ba đồng vị ²⁰Ne (90,0%), ²¹Ne (1,0%), ²²Ne (9,0%). Tính nguyên tử khối trung bình.",
+      "steps": [
+        "Ā = (20·90 + 21·1 + 22·9)/100 = (1800 + 21 + 198)/100 = 20,19."
+      ],
+      "expr": "(1800+21+198)/100",
+      "answer": "20.19"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên tố hoá học là tập hợp các nguyên tử có cùng:",
+      "choices": [
+        "số proton",
+        "số neutron",
+        "số khối",
+        "khối lượng"
+      ],
+      "answer": 0,
+      "explain": "Cùng số đơn vị điện tích hạt nhân.",
+      "wrong_explain": {
+        "1": "Đó là đặc điểm khác nhau của đồng vị.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Các đồng vị của cùng một nguyên tố có cùng:",
+      "choices": [
+        "số proton nhưng khác số neutron",
+        "số neutron nhưng khác số proton",
+        "số khối",
+        "khối lượng"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa đồng vị.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Khác số khối.",
+        "3": "Khác khối lượng."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Kí hiệu ²³₁₁Na cho biết:",
+      "choices": [
+        "Z = 11, A = 23",
+        "Z = 23, A = 11",
+        "có 23 electron",
+        "có 11 neutron"
+      ],
+      "answer": 0,
+      "explain": "Số trên là A, số dưới là Z.",
+      "wrong_explain": {
+        "1": "Đảo.",
+        "2": "11 electron.",
+        "3": "12 neutron."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Nguyên tử ³⁹₁₉K có số neutron là:",
+      "expr": "39-19",
+      "answer": "20",
+      "explain": "N = A − Z.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phương pháp xác định phần trăm các đồng vị của một nguyên tố là:",
+      "choices": [
+        "phổ khối lượng",
+        "chuẩn độ",
+        "chưng cất",
+        "điện phân"
+      ],
+      "answer": 0,
+      "explain": "Máy phổ khối lượng tách các ion theo m/z.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cặp nguyên tử nào là đồng vị của nhau?",
+      "choices": [
+        "¹⁶₈O và ¹⁸₈O",
+        "¹⁴₆C và ¹⁴₇N",
+        "⁴⁰₁₈Ar và ⁴⁰₂₀Ca",
+        "²³₁₁Na và ²⁴₁₂Mg"
+      ],
+      "answer": 0,
+      "explain": "Cùng Z = 8.",
+      "wrong_explain": {
+        "1": "Khác Z.",
+        "2": "Khác Z.",
+        "3": "Khác Z."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cho B (Z = 8, A = 16), D (Z = 9, A = 19), E (Z = 8, A = 18), G (Z = 7, A = 15). Các nguyên tử thuộc cùng một nguyên tố là:",
+      "choices": [
+        "B và E",
+        "B và D",
+        "D và G",
+        "E và G"
+      ],
+      "answer": 0,
+      "explain": "Cùng Z = 8.",
+      "wrong_explain": {
+        "1": "Khác Z.",
+        "2": "Khác Z.",
+        "3": "Khác Z."
+      },
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nguyên tố X có hai đồng vị ⁷⁹X (50,7%) và ⁸¹X (49,3%). Nguyên tử khối trung bình (làm tròn 2 chữ số thập phân):",
+      "expr": "(79*50.7+81*49.3)/100",
+      "answer": "79.986",
+      "explain": "Ā = (79·50,7 + 81·49,3)/100.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Boron có ¹⁰B (20%) và ¹¹B (80%). Nguyên tử khối trung bình là:",
+      "expr": "(200+880)/100",
+      "answer": "10.8",
+      "explain": "(10·20 + 11·80)/100.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Nguyên tử copper có 29 proton và 34 neutron. Số khối là:",
+      "expr": "63",
+      "answer": "63",
+      "explain": "29 + 34.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên tử khối của nguyên tố thường không phải số nguyên vì:",
+      "choices": [
+        "nguyên tố là hỗn hợp nhiều đồng vị",
+        "khối lượng electron lớn",
+        "proton có khối lượng không nguyên",
+        "đo sai"
+      ],
+      "answer": 0,
+      "explain": "Nguyên tử khối là giá trị trung bình.",
+      "wrong_explain": {
+        "1": "Electron rất nhẹ.",
+        "2": "Không phải lí do chính.",
+        "3": "Sai."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nguyên tố X có hai đồng vị ⁶³X và ⁶⁵X, Ā = 63,54. Phần trăm số nguyên tử ⁶³X là:",
+      "expr": "(6500-6354)/2",
+      "answer": "73",
+      "explain": "63x + 65(100 − x) = 6354 ⇒ x = 73.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Chlorine có Ā = 35,5 gồm ³⁵Cl và ³⁷Cl. Phần trăm ³⁷Cl là:",
+      "expr": "25",
+      "answer": "25",
+      "explain": "35x + 37(100 − x) = 3550 ⇒ x = 75; ³⁷Cl: 25%.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Magnesium có ²⁴Mg (79%), ²⁵Mg (10%), ²⁶Mg (11%). Nguyên tử khối trung bình là:",
+      "expr": "(24*79+25*10+26*11)/100",
+      "answer": "24.32",
+      "explain": "(1896 + 250 + 286)/100.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hydrogen có ¹H và ²H, Ā = 1,008. Phần trăm ²H là:",
+      "expr": "0.8",
+      "answer": "0.8",
+      "explain": "Gọi x là % ¹H: x + 2(100 − x) = 100,8 ⇒ x = 99,2; ²H chiếm 0,8%.",
+      "id": "q15"
+    }
+  ]
+}

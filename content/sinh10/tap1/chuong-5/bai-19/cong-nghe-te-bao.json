@@ -1,0 +1,185 @@
+{
+  "id": "bai-19",
+  "grade": 10,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 10",
+  "chapter": "Chương 5. Chu kì tế bào và phân bào",
+  "lesson": "Bài 19. Công nghệ tế bào",
+  "section": "",
+  "bookPage": 110,
+  "requirements": [
+    "Nêu được khái niệm, nguyên lí và một số thành tựu của công nghệ tế bào động vật.",
+    "Nêu được khái niệm, nguyên lí và một số thành tựu của công nghệ tế bào thực vật."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Công nghệ tế bào động vật là nuôi cấy các loại tế bào động vật và người trong môi trường nhân tạo để tạo lượng lớn tế bào phục vụ nghiên cứu và ứng dụng. Nguyên lí: nuôi cấy tế bào gốc trong môi trường thích hợp để chúng phân chia rồi biệt hoá thành các loại tế bào khác nhau."
+    },
+    {
+      "type": "text",
+      "content": "Tế bào gốc phôi (tế bào gốc vạn năng) biệt hoá thành mọi loại tế bào; tế bào gốc trưởng thành (đa tiềm năng) chỉ biệt hoá thành một số loại tế bào nhất định."
+    },
+    {
+      "type": "text",
+      "content": "Ba thành tựu nổi bật: (1) nhân bản vô tính vật nuôi, tạo cá thể có cùng kiểu gene, như cừu Dolly (1996); có thể tăng số lượng loài nguy cơ tuyệt chủng; (2) liệu pháp tế bào gốc, truyền tế bào gốc nuôi cấy ngoài cơ thể để thay thế tế bào bệnh, ví dụ điều trị tiểu đường type 1 và ung thư máu; (3) liệu pháp gene, thay gene bệnh bằng gene lành, khi bệnh do một gene hỏng và tế bào liên tục phân chia."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b19-nhan-ban-vo-tinh.svg",
+      "caption": "Quy trình nhân bản vô tính động vật"
+    },
+    {
+      "type": "text",
+      "content": "Công nghệ tế bào thực vật là nuôi cấy tế bào, mô thực vật trong điều kiện vô trùng để tạo cây có kiểu gene giống nhau. Cơ sở khoa học là dùng môi trường dinh dưỡng bổ sung hormone thực vật để tế bào tái sinh thành cây."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b19-nuoi-cay-mo.svg",
+      "caption": "Các bước nuôi cấy mô thực vật"
+    },
+    {
+      "type": "text",
+      "content": "Ba kĩ thuật chủ yếu: nuôi cấy mô tế bào (nhân nhanh giống quý hiếm, cây sạch bệnh virus), lai tế bào sinh dưỡng (sau khi loại bỏ thành cellulose, tạo cây lai khác loài) và nuôi cấy hạt phấn hoặc noãn chưa thụ tinh (tạo cây có kiểu gene đồng hợp tử về mọi gene)."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Vì sao khi trồng cây chuối nuôi cấy mô trên diện tích rộng có thể rủi ro cao?",
+      "steps": [
+        "Các cây nuôi cấy mô có kiểu gene giống hệt nhau nên nếu một loại sâu bệnh tấn công được thì có thể gây thiệt hại trên diện rộng."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Vì sao liệu pháp tế bào gốc từ nhân tế bào da người bệnh ít bị cơ thể loại thải?",
+      "steps": [
+        "Nhân được lấy từ tế bào của chính người bệnh nên tế bào ghép có cùng kiểu gene, không bị hệ miễn dịch nhận là lạ."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tế bào gốc vạn năng là tế bào gốc có nguồn gốc từ:",
+      "choices": [
+        "phôi sớm, có thể biệt hoá thành mọi loại tế bào",
+        "mô của cơ thể trưởng thành",
+        "tế bào đã biệt hoá hoàn toàn",
+        "tế bào máu"
+      ],
+      "answer": 0,
+      "explain": "Tế bào gốc phôi có khả năng biệt hoá thành mọi loại tế bào.",
+      "wrong_explain": {
+        "1": "Tế bào gốc trưởng thành chỉ biệt hoá thành một số loại.",
+        "2": "Tế bào đã biệt hoá không còn khả năng này.",
+        "3": "Tế bào máu không phải tế bào gốc vạn năng."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Cừu Dolly được tạo ra bằng công nghệ:",
+      "choices": [
+        "nhân bản vô tính động vật",
+        "lai tế bào sinh dưỡng thực vật",
+        "nuôi cấy hạt phấn",
+        "chỉnh sửa gene thực vật"
+      ],
+      "answer": 0,
+      "explain": "Dolly là sản phẩm của nhân bản vô tính.",
+      "wrong_explain": {
+        "1": "Lai tế bào sinh dưỡng là công nghệ thực vật.",
+        "2": "Nuôi cấy hạt phấn là kĩ thuật thực vật.",
+        "3": "Dolly không phải chỉnh sửa gene thực vật."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nguyên lí của công nghệ tế bào thực vật là:",
+      "choices": [
+        "dùng môi trường có hormone thực vật để tế bào tái sinh thành cây",
+        "dùng tế bào gốc phôi động vật",
+        "dùng virus để chuyển gene",
+        "đun nóng tế bào để nhân lên"
+      ],
+      "answer": 0,
+      "explain": "Hormone thực vật giúp tế bào tái sinh thành cây.",
+      "wrong_explain": {
+        "1": "Đó là nguyên lí của công nghệ động vật.",
+        "2": "Virus không phải nguyên lí cốt lõi.",
+        "3": "Đun nóng không làm tế bào nhân lên có định hướng."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nuôi cấy mô thực vật giúp nhân giống nhanh vì:",
+      "choices": [
+        "từ mô nhỏ có thể tạo số lượng lớn cây có kiểu gene giống nhau",
+        "cây nuôi cấy mô không cần ánh sáng",
+        "mô tạo ra hạt giống nhiều",
+        "mô làm tăng số NST"
+      ],
+      "answer": 0,
+      "explain": "Nuôi cấy mô tạo nhiều cây đồng nhất từ mô nhỏ.",
+      "wrong_explain": {
+        "1": "Cây cần ánh sáng khi sinh trưởng.",
+        "2": "Phương pháp không dựa vào hạt.",
+        "3": "Không làm tăng số NST."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Mô sẹo (callus) là:",
+      "choices": [
+        "mô phân sinh được tạo ra khi tế bào biệt hoá trở về trạng thái chưa phân hoá",
+        "mô của hạt giống",
+        "mô vỏ cây đã chết",
+        "cây con hoàn chỉnh"
+      ],
+      "answer": 0,
+      "explain": "Mô sẹo là khối tế bào chưa phân hoá.",
+      "wrong_explain": {
+        "1": "Hạt không phải mô sẹo.",
+        "2": "Mô vỏ đã chết không tái sinh.",
+        "3": "Cây con hình thành sau mô sẹo."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao lai tế bào sinh dưỡng phải loại bỏ thành cellulose trước khi lai?",
+      "choices": [
+        "để hai tế bào có thể dung hợp với nhau",
+        "để tế bào không phân chia",
+        "để tăng số NST đơn",
+        "để tế bào không cần chất dinh dưỡng"
+      ],
+      "answer": 0,
+      "explain": "Loại bỏ thành giúp hai tế bào dung hợp.",
+      "wrong_explain": {
+        "1": "Loại bỏ thành không ngăn phân chia.",
+        "2": "Không liên quan số NST đơn.",
+        "3": "Tế bào vẫn cần chất dinh dưỡng."
+      },
+      "id": "q06"
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "id": "bai-17",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 2",
+  "chapter": "Chương VI. Hàm số, đồ thị và ứng dụng",
+  "lesson": "Bài 17. Dấu của tam thức bậc hai",
+  "section": "",
+  "bookPage": 19,
+  "requirements": [
+    "Xét dấu tam thức bậc hai; giải bất phương trình bậc hai một ẩn.",
+    "Tìm điều kiện của tham số để tam thức luôn dương, luôn âm; ứng dụng."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Tam thức bậc hai là biểu thức f(x) = ax² + bx + c với a ≠ 0. Nghiệm của phương trình ax² + bx + c = 0 gọi là nghiệm của tam thức; Δ = b² − 4ac là biệt thức."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t10-b17-dau-tam-thuc.svg",
+      "caption": "Đồ thị minh hoạ dấu tam thức khi a < 0 và Δ > 0"
+    },
+    {
+      "type": "text",
+      "content": "Định lí về dấu: nếu Δ < 0 thì f(x) cùng dấu với a với mọi x. Nếu Δ = 0 thì f(x) cùng dấu với a với mọi x ≠ −b/(2a). Nếu Δ > 0 với hai nghiệm x₁ < x₂ thì f(x) trái dấu với a khi x₁ < x < x₂ và cùng dấu với a khi x < x₁ hoặc x > x₂ (\"trong trái, ngoài cùng\")."
+    },
+    {
+      "type": "formula",
+      "content": "Δ < 0: a·f(x) > 0 ∀x        Δ = 0: a·f(x) > 0 ∀x ≠ −b/(2a)        Δ > 0: trong khoảng hai nghiệm trái dấu a, ngoài cùng dấu a"
+    },
+    {
+      "type": "text",
+      "content": "Bất phương trình bậc hai một ẩn có dạng ax² + bx + c > 0 (hoặc ≥, <, ≤) với a ≠ 0. Giải bằng cách xét dấu tam thức rồi chọn khoảng thoả mãn."
+    },
+    {
+      "type": "formula",
+      "content": "f(x) = ax² + bx + c > 0 với mọi x ⇔ a > 0 và Δ < 0        f(x) < 0 với mọi x ⇔ a < 0 và Δ < 0"
+    },
+    {
+      "type": "method",
+      "title": "Xét dấu tam thức và giải bất phương trình bậc hai",
+      "when": "Đề cho tam thức hoặc bất phương trình bậc hai; hỏi dấu trên từng khoảng, tập nghiệm, số nghiệm nguyên, hoặc tham số m để bất phương trình nghiệm đúng với mọi x.",
+      "steps": [
+        "Tính Δ (hoặc Δ′) và nghiệm nếu có; xác định dấu a.",
+        "Lập bảng xét dấu theo quy tắc trong trái ngoài cùng.",
+        "Chọn khoảng thoả mãn chiều bất phương trình; chú ý lấy hoặc không lấy nghiệm (≥, ≤ thì lấy).",
+        "Bài tham số \"với mọi x\": dùng điều kiện về a và Δ."
+      ],
+      "notes": [
+        "Khi a < 0 có thể nhân hai vế với −1 và đổi chiều để đưa về a > 0.",
+        "Nếu hệ số a chứa tham số, xét riêng trường hợp a = 0."
+      ],
+      "sample": {
+        "problem": "Giải bất phương trình x² − 3x + 2 ≤ 0.",
+        "steps": [
+          "f(x) = x² − 3x + 2 có a = 1 > 0 và hai nghiệm 1, 2.",
+          "f(x) ≤ 0 khi 1 ≤ x ≤ 2. Tập nghiệm [1; 2]."
+        ],
+        "answer": "[1; 2]"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Xét dấu tam thức f(x) = −x² + 4x − 3.",
+      "steps": [
+        "a = −1 < 0; Δ = 16 − 12 = 4 > 0; nghiệm x = 1 và x = 3.",
+        "f(x) > 0 (trái dấu a) khi 1 < x < 3; f(x) < 0 khi x < 1 hoặc x > 3; f(x) = 0 tại x = 1, x = 3."
+      ],
+      "expr": "16-12",
+      "answer": "4"
+    },
+    {
+      "problem": "Giải bất phương trình 2x² − 5x + 2 > 0.",
+      "steps": [
+        "Nghiệm của tam thức: x = 1/2 và x = 2; a = 2 > 0.",
+        "f(x) > 0 khi x < 1/2 hoặc x > 2. Tập nghiệm (−∞; 1/2) ∪ (2; +∞)."
+      ],
+      "expr": "25-16",
+      "answer": "9"
+    },
+    {
+      "problem": "Tìm m để x² − 2(m − 1)x + m + 5 > 0 với mọi x thuộc ℝ.",
+      "steps": [
+        "a = 1 > 0 nên cần Δ′ < 0: (m − 1)² − (m + 5) < 0.",
+        "m² − 3m − 4 < 0 ⇔ −1 < m < 4."
+      ],
+      "expr": "4-(-1)",
+      "answer": "5"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tam thức f(x) = x² + 2x + 5 có Δ′ = 1 − 5 = −4 < 0. Khẳng định đúng là:",
+      "choices": [
+        "f(x) > 0 với mọi x",
+        "f(x) < 0 với mọi x",
+        "f(x) có hai nghiệm phân biệt",
+        "f(x) đổi dấu tại x = −1"
+      ],
+      "answer": 0,
+      "explain": "Δ < 0 và a > 0 nên f(x) luôn dương.",
+      "wrong_explain": {
+        "1": "a > 0.",
+        "2": "Δ < 0 vô nghiệm.",
+        "3": "Không đổi dấu."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tam thức f(x) = x² − 5x + 6 âm khi:",
+      "choices": [
+        "2 < x < 3",
+        "x < 2",
+        "x > 3",
+        "x < 2 hoặc x > 3"
+      ],
+      "answer": 0,
+      "explain": "Nghiệm 2 và 3, a > 0: trong trái dấu a.",
+      "wrong_explain": {
+        "1": "Dương.",
+        "2": "Dương.",
+        "3": "Dương."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tập nghiệm của bất phương trình x² − 4 ≤ 0 là:",
+      "choices": [
+        "[−2; 2]",
+        "(−2; 2)",
+        "(−∞; −2] ∪ [2; +∞)",
+        "ℝ"
+      ],
+      "answer": 0,
+      "explain": "Nghiệm ±2, a > 0, lấy cả hai đầu.",
+      "wrong_explain": {
+        "1": "Dấu ≤ lấy nghiệm.",
+        "2": "Đó là x² − 4 ≥ 0.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Biệt thức Δ của tam thức 3x² − 2x − 1 là:",
+      "expr": "4+12",
+      "answer": "16",
+      "explain": "Δ = 4 + 12 = 16.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tam thức f(x) = −x² + 2x − 1 = −(x − 1)²:",
+      "choices": [
+        "âm với mọi x ≠ 1",
+        "dương với mọi x",
+        "âm với mọi x",
+        "đổi dấu tại x = 1"
+      ],
+      "answer": 0,
+      "explain": "Δ = 0, a < 0.",
+      "wrong_explain": {
+        "1": "a âm.",
+        "2": "f(1) = 0.",
+        "3": "Δ = 0 không đổi dấu."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tập nghiệm của bất phương trình −x² + 3x − 2 ≥ 0 là:",
+      "choices": [
+        "[1; 2]",
+        "(−∞; 1] ∪ [2; +∞)",
+        "(1; 2)",
+        "∅"
+      ],
+      "answer": 0,
+      "explain": "Nghiệm 1, 2; a < 0 nên f ≥ 0 giữa hai nghiệm.",
+      "wrong_explain": {
+        "1": "Đó là ≤ 0.",
+        "2": "Lấy cả hai đầu.",
+        "3": "Có nghiệm."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Số nghiệm nguyên của bất phương trình x² − 6x + 5 < 0 là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "1 < x < 5: x = 2, 3, 4.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Bất phương trình x² − 2x − 8 > 0 có tập nghiệm (−∞; a) ∪ (b; +∞). Giá trị b − a bằng:",
+      "expr": "4-(-2)",
+      "answer": "6",
+      "explain": "Nghiệm −2 và 4.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tam thức ax² + bx + c > 0 với mọi x khi và chỉ khi:",
+      "choices": [
+        "a > 0 và Δ < 0",
+        "a > 0 và Δ > 0",
+        "a < 0 và Δ < 0",
+        "Δ < 0"
+      ],
+      "answer": 0,
+      "explain": "Luôn dương: bề lõm lên và không cắt trục hoành.",
+      "wrong_explain": {
+        "1": "Có nghiệm sẽ đổi dấu.",
+        "2": "Luôn âm.",
+        "3": "Thiếu điều kiện a > 0."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam thức x² − (m + 1)x + 4 có Δ = 0 khi m dương bằng:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "(m + 1)² = 16 ⇔ m + 1 = ±4 ⇔ m = 3 hoặc m = −5.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Giá trị nhỏ nhất của x để x² − x − 6 ≥ 0 và x > 0 là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Nghiệm −2, 3; x ≥ 3 hoặc x ≤ −2.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tìm số giá trị nguyên của m để x² + 2mx + 4 > 0 với mọi x. Kết quả là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Δ′ = m² − 4 < 0 ⇔ −2 < m < 2: m = −1, 0, 1.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Bất phương trình (x − 1)(x² − 5x + 6) ≤ 0 có bao nhiêu nghiệm nguyên dương?",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Bảng xét dấu: tích ≤ 0 khi x ≤ 1 hoặc 2 ≤ x ≤ 3; nghiệm nguyên dương: 1, 2, 3.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một vật ném lên có độ cao h(t) = −5t² + 20t (m). Khoảng thời gian (giây) vật ở độ cao trên 15 m kéo dài:",
+      "expr": "3-1",
+      "answer": "2",
+      "explain": "−5t² + 20t > 15 ⇔ t² − 4t + 3 < 0 ⇔ 1 < t < 3: 2 giây.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị m nhỏ nhất (nguyên) để phương trình x² − 2x + m = 0 vô nghiệm là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Δ′ = 1 − m < 0 ⇔ m > 1.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tập xác định của hàm số y = √(−x² + 5x − 4) là đoạn [a; b]. Giá trị a·b bằng:",
+      "expr": "1*4",
+      "answer": "4",
+      "explain": "−x² + 5x − 4 ≥ 0 ⇔ 1 ≤ x ≤ 4.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Số giá trị nguyên của m để (m − 1)x² − 2(m − 1)x + 3 > 0 với mọi x là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "m = 1: 3 > 0 đúng. m ≠ 1: m − 1 > 0 và Δ′ = (m − 1)² − 3(m − 1) < 0 ⇔ 1 < m < 4. Vậy m = 1, 2, 3.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Bất phương trình x² − 2(m + 1)x + m² + 2m ≤ 0 có tập nghiệm là đoạn có độ dài bằng:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Nghiệm x = m và x = m + 2 nên đoạn [m; m + 2] dài 2 với mọi m.",
+      "id": "q18"
+    }
+  ]
+}

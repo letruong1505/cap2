@@ -1,0 +1,336 @@
+{
+  "id": "bai-2",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 1. Dao động",
+  "lesson": "Bài 2. Mô tả dao động điều hoà",
+  "section": "",
+  "bookPage": 10,
+  "requirements": [
+    "Đọc được biên độ, chu kì, pha ban đầu từ đồ thị li độ – thời gian.",
+    "Xác định được độ lệch pha giữa hai dao động cùng tần số; nhận biết hai dao động cùng pha, ngược pha, vuông pha."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Đồ thị li độ – thời gian của dao động điều hoà là đường hình sin. Từ đồ thị có thể đọc: biên độ A (giá trị cực đại của x), chu kì T (khoảng thời gian giữa hai đỉnh liên tiếp), tần số f = 1/T và pha ban đầu φ (từ li độ x₀ ở t = 0 và chiều chuyển động)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b2-do-thi-lech-pha.svg",
+      "caption": "Hai dao động cùng tần số: x₂ chậm pha hơn x₁ góc π/2 (vuông pha), đỉnh của x₂ đến sau đỉnh của x₁ một phần tư chu kì"
+    },
+    {
+      "type": "formula",
+      "content": "Độ lệch pha: Δφ = (ωt + φ₂) − (ωt + φ₁) = φ₂ − φ₁ (không phụ thuộc thời gian khi hai dao động cùng tần số)."
+    },
+    {
+      "type": "text",
+      "content": "Δφ = 2kπ: hai dao động cùng pha (cùng lên, cùng xuống, cùng qua VTCB). Δφ = (2k + 1)π: ngược pha (luôn trái dấu nhau). Δφ = (2k + 1)π/2: vuông pha. Nếu φ₂ > φ₁ thì dao động 2 sớm pha hơn dao động 1 (đạt giá trị cực đại sớm hơn)."
+    },
+    {
+      "type": "text",
+      "content": "Ví dụ thực tế: hai vật cùng dao động tuần hoàn trên hai con lắc giống nhau nhưng được thả ở hai thời điểm khác nhau có độ lệch pha Δφ = 2π·Δt/T, với Δt là khoảng thời gian chênh lệch."
+    },
+    {
+      "type": "method",
+      "title": "Đọc đồ thị li độ – thời gian",
+      "when": "Cho đồ thị x(t) và yêu cầu tìm A, T, f, ω hoặc viết phương trình.",
+      "steps": [
+        "A bằng độ lớn li độ cực đại đọc trên trục tung.",
+        "T bằng khoảng thời gian giữa hai điểm lặp lại liên tiếp (hai đỉnh, hoặc từ vị trí x = 0 đi lên đến lần tiếp theo).",
+        "ω = 2π/T; f = 1/T.",
+        "Pha ban đầu: xét x₀ tại t = 0: cos φ = x₀/A, chọn dấu của φ theo chiều chuyển động (đồ thị đang đi lên ứng với φ âm, đi xuống ứng với φ dương)."
+      ],
+      "notes": [
+        "Xác định chiều chuyển động bằng cách nhìn độ dốc của đồ thị tại t = 0.",
+        "Một đỉnh đến đỉnh liền kề là đúng một chu kì."
+      ],
+      "sample": {
+        "problem": "Đồ thị x(t) có hai đỉnh liên tiếp tại t = 0 và t = 0,5 s, giá trị cực đại 4 cm. Viết phương trình dao động.",
+        "steps": [
+          "A = 4 cm; T = 0,5 s nên ω = 2π/T = 4π rad/s.",
+          "Tại t = 0 vật ở biên dương: φ = 0.",
+          "x = 4cos(4πt) cm."
+        ],
+        "answer": "x = 4cos(4πt) cm"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tính và nhận biết độ lệch pha giữa hai dao động",
+      "when": "Cho hai phương trình cùng tần số hoặc hai đồ thị; hỏi dao động nào sớm pha, hai dao động cùng pha, ngược pha, vuông pha.",
+      "steps": [
+        "Đưa cả hai phương trình về cùng hàm cos với biên độ dương.",
+        "Tính Δφ = φ₂ − φ₁.",
+        "So sánh Δφ với các giá trị đặc biệt: 0, π (ngược pha), π/2 (vuông pha) cộng bội 2π.",
+        "Δφ > 0: dao động 2 sớm pha hơn."
+      ],
+      "notes": [
+        "sin α = cos(α − π/2): chú ý đưa về cùng hàm.",
+        "Độ lệch pha chỉ so sánh được khi tần số bằng nhau."
+      ],
+      "sample": {
+        "problem": "x₁ = 3cos(2πt) cm và x₂ = 3cos(2πt + π) cm. Hai dao động có quan hệ gì?",
+        "steps": [
+          "Δφ = π − 0 = π.",
+          "Hai dao động ngược pha."
+        ],
+        "answer": "Ngược pha"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tính độ lệch pha khi biết độ lệch thời gian",
+      "when": "Hai vật giống nhau dao động nhưng khởi động chậm nhau Δt; hoặc hai điểm sóng cách nhau.",
+      "steps": [
+        "Độ lệch pha tương ứng với độ lệch thời gian: Δφ = ωΔt = 2πΔt/T.",
+        "Đổi Δt sang cùng đơn vị với T.",
+        "Thay số tính Δφ (rad).",
+        "Nhận định cùng pha, ngược pha, vuông pha."
+      ],
+      "notes": [
+        "Δt = T/4 ứng với Δφ = π/2; Δt = T/2 ứng với Δφ = π.",
+        "Khi Δt = T thì hai dao động trùng pha."
+      ],
+      "sample": {
+        "problem": "Hai con lắc giống nhau (T = 2 s) thả cách nhau 1 s. Tính độ lệch pha.",
+        "steps": [
+          "Δφ = 2π·Δt/T = 2π·1/2.",
+          "= π rad: ngược pha."
+        ],
+        "answer": "π rad"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Hai con lắc có chu kì T = 2 s thả cách nhau Δt = 1 s. Độ lệch pha Δφ = kπ rad. Tìm k.",
+      "steps": [
+        "Δφ = 2πΔt/T.",
+        "= 2π·1/2 = π nên k = 1."
+      ],
+      "expr": "2*1/2",
+      "answer": "1"
+    },
+    {
+      "problem": "Chu kì T = 0,8 s; hai dao động lệch thời gian 0,2 s. Độ lệch pha Δφ = kπ/2. Tìm k.",
+      "steps": [
+        "Δφ = 2π·0,2/0,8 = π/2.",
+        "k = 1."
+      ],
+      "expr": "2*((2*0.2)/(0.8))",
+      "answer": "1"
+    },
+    {
+      "problem": "Hai đỉnh liên tiếp của đồ thị x(t) cách nhau 0,5 s. Tần số góc ω = kπ rad/s. Tìm k.",
+      "steps": [
+        "T = 0,5 s.",
+        "ω = 2π/T = 4π nên k = 4."
+      ],
+      "expr": "(2)/(0.5)",
+      "answer": "4"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hai đỉnh liên tiếp của đồ thị x(t) cách nhau 0,5 s. Chu kì T (s) là:",
+      "expr": "0.5",
+      "answer": "1/2",
+      "explain": "Khoảng thời gian giữa hai đỉnh liên tiếp là một chu kì.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Chu kì T = 0,5 s. Tần số f (Hz) là:",
+      "expr": "(1)/(0.5)",
+      "answer": "2",
+      "explain": "f = 1/T = 2 Hz.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Giá trị cực đại của li độ trên đồ thị là 4 cm. Biên độ A (cm) là:",
+      "expr": "4",
+      "answer": "4",
+      "explain": "A là giá trị cực đại của li độ.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai dao động cùng pha khi độ lệch pha Δφ bằng:",
+      "choices": [
+        "2kπ",
+        "(2k + 1)π",
+        "(2k + 1)π/2",
+        "kπ/3"
+      ],
+      "answer": 0,
+      "explain": "Cùng pha: Δφ = 2kπ.",
+      "wrong_explain": {
+        "1": "(2k + 1)π là ngược pha.",
+        "2": "(2k + 1)π/2 là vuông pha.",
+        "3": "Không phải giá trị đặc biệt."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hai dao động cùng tần số có Δφ = π thì chúng:",
+      "choices": [
+        "ngược pha",
+        "cùng pha",
+        "vuông pha",
+        "lệch pha π/4"
+      ],
+      "answer": 0,
+      "explain": "Δφ = π: ngược pha.",
+      "wrong_explain": {
+        "1": "Cùng pha thì Δφ = 0.",
+        "2": "Vuông pha thì Δφ = π/2.",
+        "3": "Δφ = π, không phải π/4."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chu kì 2 s, hai dao động lệch nhau Δt = 1 s. Độ lệch pha Δφ = kπ (rad). Giá trị k là:",
+      "expr": "2*1/2",
+      "answer": "1",
+      "explain": "Δφ = 2π·Δt/T = π nên k = 1.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai dao động x₁ = 3cos(2πt) và x₂ = 3cos(2πt + π). Độ lệch pha Δφ = kπ. Giá trị k là:",
+      "expr": "1-0",
+      "answer": "1",
+      "explain": "Δφ = π − 0 = π.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chu kì T = 0,8 s; Δt = 0,2 s. Tỉ số Δt/T bằng (nhập a/b):",
+      "expr": "(0.2)/(0.8)",
+      "answer": "1/4",
+      "explain": "Δt/T = 1/4 nên Δφ = π/2.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hai điểm cùng pha liên tiếp lệch Δt bằng bao nhiêu chu kì? (nhập số):",
+      "expr": "1",
+      "answer": "1",
+      "explain": "Δφ = 2π ứng với Δt = T.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Δφ = π/2 giữa hai dao động cùng tần số gọi là:",
+      "choices": [
+        "vuông pha",
+        "cùng pha",
+        "ngược pha",
+        "đồng pha"
+      ],
+      "answer": 0,
+      "explain": "Δφ = (2k+1)π/2: vuông pha.",
+      "wrong_explain": {
+        "1": "Cùng pha là 2kπ.",
+        "2": "Ngược pha là (2k+1)π.",
+        "3": "Đồng pha là cùng pha."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đỉnh đầu tiên của x(t) ở t = 0, đỉnh thứ hai ở t = 0,5 s. Tần số góc ω = kπ rad/s. Giá trị k là:",
+      "expr": "(2)/(0.5)",
+      "answer": "4",
+      "explain": "T = 0,5 s; ω = 4π.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "x₁ = 4cos(4πt) cm; x₂ = 4cos(4πt − π/2) cm. Dao động nào chậm pha hơn và chậm pha bao nhiêu? Nhập k trong Δφ = π/k:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "x₂ chậm pha π/2 so với x₁.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai dao động cùng biên độ 3 cm và ngược pha. Tại thời điểm x₁ = 3 cm thì x₂ (cm) bằng:",
+      "expr": "-3",
+      "answer": "-3",
+      "explain": "Ngược pha thì x₂ = −x₁.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai con lắc giống nhau, chu kì T = 1,2 s, thả cách nhau 0,3 s. Δφ = π/k. Giá trị k là:",
+      "expr": "2",
+      "answer": "2",
+      "explain": "Δt = T/4 ứng với Δφ = π/2.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai dao động vuông pha có biên độ 3 cm và 4 cm. Tổng bình phương hai biên độ (cm²) là:",
+      "expr": "3*3+4*4",
+      "answer": "25",
+      "explain": "9 + 16 = 25; biên độ tổng hợp là 5 cm.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hai dao động lệch nhau Δφ = 2π/3 có độ lệch thời gian Δt = T/k. Giá trị k là:",
+      "expr": "3",
+      "answer": "3",
+      "explain": "Δt = TΔφ/2π = T/3.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nếu φ₂ > φ₁ (cùng tần số) thì:",
+      "choices": [
+        "dao động 2 sớm pha hơn dao động 1",
+        "dao động 1 sớm pha hơn dao động 2",
+        "hai dao động cùng pha",
+        "hai dao động ngược pha"
+      ],
+      "answer": 0,
+      "explain": "Pha lớn hơn thì đạt cực đại sớm hơn.",
+      "wrong_explain": {
+        "1": "Pha nhỏ hơn mới chậm pha.",
+        "2": "Cùng pha khi φ₂ = φ₁.",
+        "3": "Ngược pha khi φ₂ − φ₁ = π."
+      },
+      "id": "q17"
+    }
+  ]
+}

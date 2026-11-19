@@ -1,6 +1,6 @@
 {
   "name": "vung-bai",
-  "productName": "Vững Bài",
+  "productName": "Giáo trình THCS",
   "version": "0.1.0-dev",
   "description": "Phần mềm luyện tập offline cấp 2 (Toán 7 - KNTT, bản thử)",
   "main": "main/main.js",
@@ -8,11 +8,15 @@
   "scripts": {
     "start": "electron .",
     "validate": "node tools/validate-content.js",
-    "dist:win": "electron-builder --win portable"
+    "test": "node --test tests/license.test.js tests/games.test.js tests/vietqr.test.js tests/orders-client.test.js tests/updater.test.js tests/release-notes.test.js tests/english.test.js tests/progress.test.js tests/pin.test.js tests/persist.test.js tests/thpt-exam.test.js tests/mobile-bridge.test.js tests/mobile-ota.test.js",
+    "dist:win": "electron-builder --win nsis --publish never",
+    "dist:win:thpt": "electron-builder --win nsis --publish never --config build-thpt.json",
+    "dist:keygen": "electron-builder --win portable --config keygen/builder.json",
+    "dist:win:nam-linh": "electron-builder --win nsis --publish never --config build-nam-linh.json"
   },
   "build": {
     "appId": "vn.namlinh.vungbai",
-    "productName": "Vững Bài",
+    "productName": "Giáo trình THCS",
     "files": [
       "main/**/*",
       "renderer/**/*",
@@ -21,12 +25,25 @@
       "package.json"
     ],
     "win": {
-      "target": "portable",
-      "artifactName": "VungBai-${version}-test.exe"
+      "target": "nsis",
+      "artifactName": "GiaoTrinhTHCS-Setup-${version}.exe"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "perMachine": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Giáo trình THCS",
+      "uninstallDisplayName": "Giáo trình THCS",
+      "deleteAppDataOnUninstall": false
     }
   },
   "devDependencies": {
     "electron": "31.7.7",
     "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "electron-updater": "^6.8.11"
   }
 }

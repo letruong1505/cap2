@@ -1,0 +1,275 @@
+{
+  "id": "bai-19",
+  "grade": 12,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 12",
+  "chapter": "Chương III. Từ trường",
+  "lesson": "Bài 19. Điện từ trường. Mô hình sóng điện từ",
+  "section": "",
+  "bookPage": 82,
+  "theory": [
+    {
+      "type": "text",
+      "content": "Từ trường biến thiên theo thời gian sinh ra trong không gian xung quanh một điện trường xoáy. Đường sức của điện trường xoáy là các đường cong kín."
+    },
+    {
+      "type": "text",
+      "content": "Điện trường biến thiên theo thời gian sinh ra một từ trường biến thiên. Dòng điện dịch giữa hai bản tụ điện gây ra từ trường. Đường sức của từ trường luôn khép kín."
+    },
+    {
+      "type": "text",
+      "content": "Điện trường biến thiên và từ trường biến thiên cùng tồn tại trong không gian, có thể chuyển hoá lẫn nhau, tạo thành điện từ trường thống nhất. Tại mỗi điểm, vectơ B luôn vuông góc với vectơ E."
+    },
+    {
+      "type": "text",
+      "content": "Sóng điện từ là quá trình lan truyền điện từ trường trong không gian. Sóng điện từ là sóng ngang, truyền được trong chân không; tại mỗi điểm E và B luôn đồng pha và vuông góc với nhau và với phương truyền sóng."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/c-ly12-b19-song-dien-tu.svg",
+      "caption": "Sóng điện từ: E (xanh) và B (đỏ) đồng pha, vuông góc nhau và với phương truyền c."
+    },
+    {
+      "type": "formula",
+      "content": "λ = c·T = c/f"
+    },
+    {
+      "type": "text",
+      "content": "Trong đó c là tốc độ ánh sáng trong chân không, T là chu kì và f là tần số của sóng điện từ. Sóng điện từ có tốc độ truyền bằng tốc độ ánh sáng trong chân không."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Ví dụ 1: Sóng điện từ có tần số f = 100 MHz lan truyền trong chân không với tốc độ c = 3·10⁸ m/s. Tính bước sóng λ (m).",
+      "steps": [
+        "Quan hệ giữa tốc độ, bước sóng và tần số: c = λ·f, suy ra λ = c/f.",
+        "λ = 3·10⁸ / 10⁸ = 3 m."
+      ],
+      "expr": "300000000/100000000",
+      "answer": "3"
+    }
+  ],
+  "items": [
+    {
+      "id": "q01",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Theo Maxwell, điện trường xoáy xuất hiện khi:",
+      "choices": [
+        "Có dòng điện không đổi",
+        "Có nam châm đứng yên",
+        "Có từ trường biến thiên theo thời gian",
+        "Có điện tích đứng yên"
+      ],
+      "answer": 2,
+      "explain": "Từ trường biến thiên theo thời gian sinh ra điện trường xoáy trong không gian xung quanh.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Dòng điện không đổi không tạo điện trường xoáy.",
+        "1": "Nam châm đứng yên không sinh điện trường xoáy.",
+        "3": "Điện tích đứng yên tạo điện trường tĩnh, không phải điện trường xoáy."
+      }
+    },
+    {
+      "id": "q02",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Điện trường xoáy khác điện trường tĩnh điện ở điểm nào?",
+      "choices": [
+        "Đường sức đi ra từ điện tích dương",
+        "Đường sức đi vào điện tích âm",
+        "Không có đường sức",
+        "Đường sức của điện trường xoáy là các đường cong kín"
+      ],
+      "answer": 3,
+      "explain": "Điện trường tĩnh có đường sức xuất phát từ điện tích dương và kết thúc ở điện tích âm; điện trường xoáy có đường sức khép kín.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Đây là đặc điểm của điện trường tĩnh.",
+        "1": "Đây là đặc điểm của điện trường tĩnh.",
+        "2": "Điện trường xoáy có đường sức."
+      }
+    },
+    {
+      "id": "q03",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Dòng điện dịch giữa hai bản tụ điện gây ra:",
+      "choices": [
+        "Trọng trường",
+        "Phản ứng hạt nhân",
+        "Từ trường",
+        "Điện trường tĩnh"
+      ],
+      "answer": 2,
+      "explain": "Điện trường biến thiên giữa hai bản tụ tương đương với một dòng điện, và dòng này gây ra từ trường.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Trọng trường không liên quan.",
+        "1": "Phản ứng hạt nhân không liên quan.",
+        "3": "Dòng điện dịch không tạo điện trường tĩnh."
+      }
+    },
+    {
+      "id": "q04",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Điện từ trường là trường thống nhất gồm:",
+      "choices": [
+        "Điện trường biến thiên và từ trường biến thiên",
+        "Điện trường tĩnh và trọng trường",
+        "Từ trường tĩnh và trường hấp dẫn",
+        "Trường lực hạt nhân"
+      ],
+      "answer": 0,
+      "explain": "Hai trường biến thiên này cùng tồn tại và chuyển hoá lẫn nhau tạo thành điện từ trường.",
+      "concept": true,
+      "wrong_explain": {
+        "1": "Điện trường tĩnh không tạo điện từ trường.",
+        "2": "Trường hấp dẫn không thuộc điện từ trường.",
+        "3": "Trường hạt nhân không thuộc điện từ trường."
+      }
+    },
+    {
+      "id": "q05",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Tại mỗi điểm trong điện từ trường, vectơ cảm ứng từ B và cường độ điện trường E:",
+      "choices": [
+        "Song song với nhau",
+        "Ngược chiều nhau",
+        "Trùng nhau",
+        "Vuông góc với nhau"
+      ],
+      "answer": 3,
+      "explain": "Trong sóng điện từ, E và B luôn vuông góc với nhau và cùng vuông góc với phương truyền.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "E và B không song song.",
+        "1": "E và B luôn vuông góc, không ngược chiều nhau.",
+        "2": "E và B không trùng nhau."
+      }
+    },
+    {
+      "id": "q06",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Sóng điện từ là sóng:",
+      "choices": [
+        "Chỉ truyền trong chất rắn",
+        "Ngang",
+        "Dọc",
+        "Cơ học cần môi trường"
+      ],
+      "answer": 1,
+      "explain": "Vectơ E và B vuông góc với phương truyền, nên sóng điện từ là sóng ngang.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Sóng điện từ không chỉ truyền trong chất rắn.",
+        "2": "Vectơ E và B vuông góc với phương truyền, không song song.",
+        "3": "Sóng điện từ không phải sóng cơ."
+      }
+    },
+    {
+      "id": "q07",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Sóng điện từ có thể truyền được:",
+      "choices": [
+        "Chỉ trong kim loại",
+        "Trong chân không",
+        "Chỉ trong chất rắn",
+        "Chỉ trong không khí"
+      ],
+      "answer": 1,
+      "explain": "Sóng điện từ truyền được trong mọi môi trường, kể cả chân không; đây là khác biệt với sóng cơ.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Sóng điện từ không cần kim loại để truyền.",
+        "2": "Sóng điện từ không cần chất rắn để truyền.",
+        "3": "Sóng điện từ không cần không khí để truyền."
+      }
+    },
+    {
+      "id": "q08",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Trong sóng điện từ, E và B:",
+      "choices": [
+        "Có pha bất kỳ",
+        "Luôn đồng pha",
+        "Luôn ngược pha",
+        "Lệch pha 90°"
+      ],
+      "answer": 1,
+      "explain": "Tại mỗi điểm, E và B biến thiên điều hoà đồng pha với nhau.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "E và B đồng pha, không bất kỳ.",
+        "2": "E và B không ngược pha.",
+        "3": "E và B không lệch 90°."
+      }
+    },
+    {
+      "id": "q09",
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Tốc độ lan truyền sóng điện từ trong chân không bằng:",
+      "choices": [
+        "Tốc độ dòng điện",
+        "Vận tốc của electron",
+        "Tốc độ ánh sáng",
+        "Tốc độ âm trong không khí"
+      ],
+      "answer": 2,
+      "explain": "Sóng điện từ trong chân không lan truyền với tốc độ ánh sáng c.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Dòng điện không có tốc độ lan truyền như vậy.",
+        "1": "Electron không phải tốc độ của sóng điện từ.",
+        "3": "Tốc độ âm nhỏ hơn nhiều."
+      }
+    },
+    {
+      "id": "q10",
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Bước sóng của sóng điện từ trong chân không được tính bằng:",
+      "choices": [
+        "λ = c/T",
+        "λ = T/c",
+        "λ = c + T",
+        "λ = cT, với c là tốc độ ánh sáng và T là chu kì"
+      ],
+      "answer": 3,
+      "explain": "Quãng đường truyền trong một chu kì là λ = cT.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "c/T không đúng thứ nguyên của bước sóng.",
+        "1": "T/c không phải công thức bước sóng.",
+        "2": "Cộng c và T không có ý nghĩa."
+      }
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Tại một điểm trên đường truyền sóng điện từ, vectơ E và B có đặc điểm gì?",
+      "choices": [
+        "Dao động ngược pha nhau",
+        "Song song với phương truyền sóng",
+        "Dao động cùng pha, vuông góc với nhau và vuông góc với phương truyền sóng",
+        "Không vuông góc với nhau"
+      ],
+      "answer": 2,
+      "explain": "Trong sóng điện từ, E và B luôn đồng pha, vuông góc với nhau và với phương truyền sóng.",
+      "concept": true,
+      "wrong_explain": {
+        "0": "Sóng điện từ có E và B đồng pha, không ngược pha.",
+        "1": "Sóng điện từ là sóng ngang: E và B đều vuông góc với phương truyền.",
+        "3": "E và B luôn vuông góc với nhau tại mỗi điểm."
+      },
+      "id": "q11"
+    }
+  ]
+}

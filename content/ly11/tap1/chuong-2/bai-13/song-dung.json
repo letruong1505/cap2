@@ -1,0 +1,351 @@
+{
+  "id": "bai-13",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 2. Sóng",
+  "lesson": "Bài 13. Sóng dừng",
+  "section": "",
+  "bookPage": 52,
+  "requirements": [
+    "Mô tả được hiện tượng sóng dừng, nút sóng, bụng sóng và điều kiện để có sóng dừng trên dây hai đầu cố định.",
+    "Vận dụng L = nλ/2 để tính bước sóng, tần số, tốc độ truyền sóng; giải thích sóng dừng trong nhạc cụ."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Sóng dừng là sóng tổng hợp của sóng tới và sóng phản xạ cùng truyền theo hai chiều ngược nhau trên một sợi dây. Trên dây có những điểm luôn đứng yên (nút sóng) và những điểm dao động với biên độ cực đại (bụng sóng). Hai nút liên tiếp (hoặc hai bụng liên tiếp) cách nhau λ/2; nút và bụng liền kề cách nhau λ/4."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b13-song-dung-hai-dau-co-dinh.svg",
+      "caption": "Sóng dừng trên dây hai đầu cố định với 3 bụng: L = 3λ/2; hai đầu là nút"
+    },
+    {
+      "type": "formula",
+      "content": "Dây hai đầu cố định: L = nλ/2 (n = 1, 2, 3, …) ⇒ λ = 2L/n;  f = nv/(2L);  số bụng = n, số nút = n + 1."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b13-song-dung-mot-dau-tu-do.svg",
+      "caption": "Sóng dừng trên dây (hoặc cột khí) một đầu cố định, một đầu tự do: đầu cố định là nút, đầu tự do là bụng; L = (2k + 1)λ/4"
+    },
+    {
+      "type": "formula",
+      "content": "Một đầu cố định, một đầu tự do (ống một đầu kín, một đầu hở): L = (2k + 1)λ/4 = (k + ½)λ/2;  f = (2k + 1)v/(4L)."
+    },
+    {
+      "type": "text",
+      "content": "Nhạc cụ dây (ghi-ta, vi-ô-lông, đàn tính): hai đầu dây cố định, âm cơ bản có λ = 2L và f = v/2L; ấn phím làm thay đổi chiều dài dây nên thay đổi độ cao âm; thùng đàn là hộp cộng hưởng. Nhạc cụ hơi (sáo, kèn): cột không khí dao động tạo sóng dừng; bịt hoặc mở lỗ làm thay đổi chiều dài cột khí."
+    },
+    {
+      "type": "method",
+      "title": "Dây hai đầu cố định: tìm λ, v, f, số bụng",
+      "when": "Cho chiều dài dây L và số bụng (nút) hoặc tần số, hỏi λ, tốc độ truyền sóng.",
+      "steps": [
+        "Số bụng n = số nửa bước sóng trên dây: L = nλ/2 ⇒ λ = 2L/n.",
+        "Tốc độ truyền sóng v = λf.",
+        "Số nút = n + 1 (kể cả hai đầu).",
+        "Hai tần số liên tiếp gây sóng dừng khác nhau f₀ = v/(2L) (tần số cơ bản)."
+      ],
+      "notes": [
+        "Hai đầu cố định đều là nút.",
+        "Đọc đúng số bụng từ hình vẽ."
+      ],
+      "sample": {
+        "problem": "Dây dài 0,6 m hai đầu cố định, dao động với 1 bụng. Tính λ; với 3 bụng thì λ?",
+        "steps": [
+          "n = 1: λ = 2L = 1,2 m.",
+          "n = 3: λ = 2L/3 = 0,4 m."
+        ],
+        "answer": "1,2 m; 0,4 m"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Sóng dừng một đầu cố định, một đầu tự do (ống khí)",
+      "when": "Cho ống một đầu kín, một đầu hở hoặc dây một đầu tự do; tìm điều kiện sóng dừng.",
+      "steps": [
+        "Đầu cố định (kín) là nút, đầu tự do (hở) là bụng.",
+        "L = (2k + 1)λ/4 ⇒ λ = 4L/(2k + 1).",
+        "Âm cơ bản (k = 0): λ = 4L; f = v/(4L).",
+        "Các hoạ âm là bội số lẻ của tần số cơ bản."
+      ],
+      "notes": [
+        "Ống hai đầu hở: L = nλ/2.",
+        "Độ dài ống càng ngắn, âm càng cao."
+      ],
+      "sample": {
+        "problem": "Ống sáo một đầu kín dài 0,17 m, v = 340 m/s. Tìm tần số âm cơ bản.",
+        "steps": [
+          "λ = 4L = 0,68 m.",
+          "f = v/λ = 340/0,68 = 500 Hz."
+        ],
+        "answer": "500 Hz"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Từ hình ảnh sóng dừng tìm tốc độ truyền sóng",
+      "when": "Cho hình sóng dừng (số bụng), chiều dài dây và tần số.",
+      "steps": [
+        "Đếm số bụng n; suy ra λ = 2L/n.",
+        "Tính v = λf.",
+        "Có thể dùng khoảng cách hai nút liên tiếp = λ/2.",
+        "Kiểm tra đơn vị."
+      ],
+      "notes": [
+        "Hai nút liên tiếp cách nhau λ/2.",
+        "Khoảng cách từ nút đến bụng gần nhất λ/4."
+      ],
+      "sample": {
+        "problem": "Dây L = 1,2 m có 4 bụng, f = 13,3 Hz (gần đúng). Tính v.",
+        "steps": [
+          "λ = 2L/4 = 0,6 m.",
+          "v = λf = 0,6·13,3 ≈ 8,0 m/s."
+        ],
+        "answer": "≈ 8 m/s"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Dây dài 0,6 m hai đầu cố định, 1 bụng. λ (m)?",
+      "steps": [
+        "λ = 2L/n = 1,2/1.",
+        "= 1,2 m."
+      ],
+      "expr": "2*0.6/1",
+      "answer": "6/5"
+    },
+    {
+      "problem": "Cùng dây, 3 bụng: λ (m)?",
+      "steps": [
+        "λ = 2L/3.",
+        "= 0,4 m."
+      ],
+      "expr": "(2*0.6)/(3)",
+      "answer": "2/5"
+    },
+    {
+      "problem": "Ống một đầu kín dài 0,17 m, v = 340 m/s. Tần số cơ bản f (Hz)?",
+      "steps": [
+        "λ = 4L = 0,68 m.",
+        "f = 340/0,68 = 500 Hz."
+      ],
+      "expr": "(340)/(4*0.17)",
+      "answer": "500"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Dây hai đầu cố định dài 1 m, 2 bụng. λ (m) là:",
+      "expr": "2*1/2",
+      "answer": "1",
+      "explain": "λ = 2L/n = 1 m.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Hai nút liên tiếp cách nhau 0,3 m. Bước sóng λ (m) là:",
+      "expr": "2*0.3",
+      "answer": "3/5",
+      "explain": "λ = 0,6 m.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Dây có 5 bụng. Số nút (kể cả hai đầu) là:",
+      "expr": "5+1",
+      "answer": "6",
+      "explain": "Số nút = n + 1 = 6.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điều kiện sóng dừng trên dây hai đầu cố định là:",
+      "choices": [
+        "L = nλ/2",
+        "L = nλ",
+        "L = (2n + 1)λ/4",
+        "L = λ/4"
+      ],
+      "answer": 0,
+      "explain": "Chiều dài bằng số nguyên lần nửa bước sóng.",
+      "wrong_explain": {
+        "1": "Không phải.",
+        "2": "Là điều kiện một đầu tự do.",
+        "3": "Chỉ là trường hợp riêng."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong sóng dừng, khoảng cách giữa hai bụng liên tiếp là:",
+      "choices": [
+        "λ/2",
+        "λ",
+        "λ/4",
+        "2λ"
+      ],
+      "answer": 0,
+      "explain": "Hai bụng (nút) liên tiếp cách nhau λ/2.",
+      "wrong_explain": {
+        "1": "Là bước sóng.",
+        "2": "Là nút – bụng.",
+        "3": "Quá lớn."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đầu cố định của dây trong sóng dừng là:",
+      "choices": [
+        "nút",
+        "bụng",
+        "điểm bất kì",
+        "cực đại biên độ"
+      ],
+      "answer": 0,
+      "explain": "Đầu cố định không dao động.",
+      "wrong_explain": {
+        "1": "Bụng dao động mạnh nhất.",
+        "2": "Là nút.",
+        "3": "Biên độ bằng 0."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Dây 0,6 m hai đầu cố định, 3 bụng. λ (m) là:",
+      "expr": "(2*0.6)/(3)",
+      "answer": "2/5",
+      "explain": "λ = 0,4 m.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Dây dài 1,2 m, 4 bụng. λ (m) là:",
+      "expr": "(2*1.2)/(4)",
+      "answer": "3/5",
+      "explain": "λ = 0,6 m.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Dây dài 1,2 m có 4 bụng, f = 15 Hz. Tốc độ v (m/s) là:",
+      "expr": "0.6*15",
+      "answer": "9",
+      "explain": "v = λf = 9 m/s.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Ống một đầu kín dài 0,17 m, v = 340 m/s. f cơ bản (Hz) là:",
+      "expr": "(340)/(4*0.17)",
+      "answer": "500",
+      "explain": "f = 500 Hz.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi ấn ngón tay vào phím ghi-ta (rút ngắn dây) thì âm phát ra:",
+      "choices": [
+        "cao hơn",
+        "trầm hơn",
+        "không đổi",
+        "tắt hẳn"
+      ],
+      "answer": 0,
+      "explain": "L giảm thì f = v/2L tăng.",
+      "wrong_explain": {
+        "1": "Dây ngắn hơn nên cao hơn.",
+        "2": "Ngắn thì cao.",
+        "3": "Có thay đổi."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dây L = 0,8 m, v = 40 m/s. Tần số cơ bản f₀ = v/2L (Hz):",
+      "expr": "(40)/(2*0.8)",
+      "answer": "25",
+      "explain": "f₀ = 25 Hz.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dây có f₀ = 25 Hz. Tần số của hoạ âm bậc 3 (Hz):",
+      "expr": "3*25",
+      "answer": "75",
+      "explain": "75 Hz.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dây dài 1 m, 5 bụng, f = 50 Hz. Tốc độ truyền sóng (m/s):",
+      "expr": "(2*1)/(5)*50",
+      "answer": "20",
+      "explain": "λ = 0,4 m; v = 20 m/s.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Dây một đầu cố định, một đầu tự do dài 0,75 m, λ = 4L/3. Giá trị λ (m):",
+      "expr": "4*0.75/3",
+      "answer": "1",
+      "explain": "λ = 1 m.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Ống một đầu kín dài 0,5 m, v = 340 m/s. Các tần số: f = (2k+1)v/(4L); với k = 1: f (Hz) =",
+      "expr": "3*(340)/(4*0.5)",
+      "answer": "510",
+      "explain": "f = 510 Hz.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Sóng dừng khác sóng chạy ở chỗ:",
+      "choices": [
+        "có nút và bụng cố định, không truyền năng lượng đi xa",
+        "luôn truyền năng lượng đi xa",
+        "không có nút",
+        "có tốc độ lớn hơn"
+      ],
+      "answer": 0,
+      "explain": "Năng lượng dao động tại chỗ trong sóng dừng.",
+      "wrong_explain": {
+        "1": "Sóng dừng không truyền năng lượng đi xa.",
+        "2": "Sóng dừng có nút.",
+        "3": "Tốc độ truyền sóng như nhau."
+      },
+      "id": "q17"
+    }
+  ]
+}

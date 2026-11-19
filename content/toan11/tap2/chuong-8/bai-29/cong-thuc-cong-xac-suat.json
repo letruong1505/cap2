@@ -1,0 +1,334 @@
+{
+  "id": "bai-29",
+  "grade": 11,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 11, tập 2",
+  "chapter": "Chương VIII. Quy tắc tính xác suất",
+  "lesson": "Bài 29. Công thức cộng xác suất",
+  "section": "",
+  "bookPage": 72,
+  "requirements": [
+    "Vận dụng công thức cộng xác suất cho hai biến cố xung khắc và hai biến cố bất kì.",
+    "Dùng biến cố đối và biểu đồ Venn để tính xác suất “ít nhất một”."
+  ],
+  "theory": [
+    {
+      "type": "formula",
+      "content": "Nếu A, B xung khắc: P(A ∪ B) = P(A) + P(B).   Với hai biến cố bất kì: P(A ∪ B) = P(A) + P(B) − P(A ∩ B).   Biến cố đối: P(Ā) = 1 − P(A)."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t11-b29-cong-xac-suat.svg",
+      "caption": "Biểu đồ Venn của A ∪ B (phần tô): phần chung A ∩ B được cộng hai lần nên phải trừ đi một lần"
+    },
+    {
+      "type": "text",
+      "content": "Công thức cộng mở rộng cho nhiều biến cố đôi một xung khắc: P(A₁ ∪ … ∪ Aₙ) = P(A₁) + … + P(Aₙ). Biến cố đối thường dùng cho bài toán “ít nhất một”: P(ít nhất một A) = 1 − P(không có A nào)."
+    },
+    {
+      "type": "method",
+      "title": "Tính P(A ∪ B) khi biết P(A), P(B), P(A ∩ B)",
+      "when": "Đề cho ba xác suất hoặc số phần tử, yêu cầu P(A ∪ B).",
+      "steps": [
+        "Xác định A, B có xung khắc không.",
+        "Xung khắc: cộng hai xác suất. Không xung khắc: trừ P(A ∩ B).",
+        "Thay số và rút gọn.",
+        "Kiểm tra 0 ≤ P ≤ 1."
+      ],
+      "notes": [
+        "Nếu cho số phần tử: P = n/n(Ω).",
+        "P(A ∪ B) ≥ max(P(A), P(B))."
+      ],
+      "sample": {
+        "problem": "P(A) = 1/2, P(B) = 1/3, P(A ∩ B) = 1/6. Tính P(A ∪ B).",
+        "steps": [
+          "= 1/2 + 1/3 − 1/6.",
+          "= 2/3."
+        ],
+        "answer": "2/3"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tính xác suất bằng biến cố đối",
+      "when": "Bài có chữ “ít nhất”, “không phải”, “khác”.",
+      "steps": [
+        "Đặt biến cố cần tìm là A; xác định biến cố đối Ā đơn giản hơn (“không có …”).",
+        "Tính P(Ā).",
+        "P(A) = 1 − P(Ā).",
+        "Kiểm tra bằng cách ước lượng."
+      ],
+      "notes": [
+        "“Ít nhất một” ⇒ đối là “không có cái nào”.",
+        "Phù hợp khi cần đếm nhiều trường hợp."
+      ],
+      "sample": {
+        "problem": "Tung đồng xu 3 lần. Xác suất có ít nhất một mặt ngửa?",
+        "steps": [
+          "Đối: cả ba lần sấp, P = 1/8.",
+          "P = 1 − 1/8 = 7/8."
+        ],
+        "answer": "7/8"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Bài toán thực tế dùng công thức cộng",
+      "when": "Khảo sát học sinh thích môn học, tỉ lệ khách hàng dùng hai dịch vụ.",
+      "steps": [
+        "Đặt các biến cố A, B bằng lời.",
+        "Xác định P(A), P(B), P(A ∩ B).",
+        "Tính P(A ∪ B) = P(A) + P(B) − P(A ∩ B).",
+        "Tính các phần còn lại (chỉ A, chỉ B, không có) nếu cần."
+      ],
+      "notes": [
+        "Chỉ A (không B) = P(A) − P(A ∩ B).",
+        "Không có cả hai = 1 − P(A ∪ B)."
+      ],
+      "sample": {
+        "problem": "Lớp 40 em: 25 em giỏi Toán, 18 em giỏi Lí, 10 em giỏi cả hai. Xác suất chọn một em giỏi ít nhất một môn?",
+        "steps": [
+          "n(A ∪ B) = 25 + 18 − 10 = 33.",
+          "P = 33/40."
+        ],
+        "answer": "33/40"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "P(A) = 1/2, P(B) = 1/3, P(A ∩ B) = 1/6. Tính P(A ∪ B) (nhập a/b).",
+      "steps": [
+        "P = 1/2 + 1/3 − 1/6.",
+        "= 2/3."
+      ],
+      "expr": "1/2+1/3-1/6",
+      "answer": "2/3"
+    },
+    {
+      "problem": "Tung đồng xu 3 lần. Xác suất có ít nhất một mặt ngửa (nhập a/b)?",
+      "steps": [
+        "P(cả ba sấp) = 1/8.",
+        "P = 1 − 1/8 = 7/8."
+      ],
+      "expr": "1-1/8",
+      "answer": "7/8"
+    },
+    {
+      "problem": "Số tự nhiên từ 1 đến 20, xác suất chọn số chia hết cho 3 hoặc 5 (nhập a/b)?",
+      "steps": [
+        "Chia hết cho 3: 6 số; cho 5: 4 số; cho 15: 1 số.",
+        "P = (6 + 4 − 1)/20 = 9/20."
+      ],
+      "expr": "(6+4-1)/20",
+      "answer": "9/20"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "A, B xung khắc, P(A) = 0,3, P(B) = 0,5. P(A ∪ B) bằng:",
+      "expr": "0.3+0.5",
+      "answer": "4/5",
+      "explain": "P = 0,8.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "P(A) = 0,4. Xác suất của biến cố đối P(Ā) bằng:",
+      "expr": "1-0.4",
+      "answer": "3/5",
+      "explain": "P(Ā) = 0,6.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "P(A) = 1/2, P(B) = 1/3, P(A ∩ B) = 1/6. P(A ∪ B) (nhập a/b):",
+      "expr": "1/2+1/3-1/6",
+      "answer": "2/3",
+      "explain": "3/6 + 2/6 − 1/6 = 4/6 = 2/3.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Công thức nào đúng với hai biến cố bất kì?",
+      "choices": [
+        "P(A ∪ B) = P(A) + P(B) − P(A ∩ B)",
+        "P(A ∪ B) = P(A) + P(B)",
+        "P(A ∪ B) = P(A)·P(B)",
+        "P(A ∪ B) = P(A) − P(B)"
+      ],
+      "answer": 0,
+      "explain": "Trừ phần giao bị tính hai lần.",
+      "wrong_explain": {
+        "1": "Chỉ đúng khi A, B xung khắc.",
+        "2": "Đó là công thức nhân cho biến cố độc lập (A ∩ B).",
+        "3": "Không phải công thức cộng."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Gieo xúc xắc. Xác suất “số chấm chẵn hoặc lớn hơn 4” (nhập a/b):",
+      "expr": "4/6",
+      "answer": "2/3",
+      "explain": "Kết quả {2, 4, 5, 6}: 4/6 = 2/3.",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Chọn số từ 1 đến 20. Xác suất chia hết cho 3 hoặc 5 (nhập a/b):",
+      "expr": "(6+4-1)/20",
+      "answer": "9/20",
+      "explain": "(6 + 4 − 1)/20 = 9/20.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tung đồng xu 3 lần. P(ít nhất một ngửa) (nhập a/b):",
+      "expr": "1-1/8",
+      "answer": "7/8",
+      "explain": "1 − 1/8 = 7/8.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Lớp 40 em: 25 giỏi Toán, 18 giỏi Lí, 10 giỏi cả hai. P(giỏi ít nhất một môn) (nhập a/b):",
+      "expr": "(25+18-10)/40",
+      "answer": "33/40",
+      "explain": "33/40.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Với lớp trên, P(giỏi Toán nhưng không giỏi Lí) (nhập a/b):",
+      "expr": "(25-10)/40",
+      "answer": "3/8",
+      "explain": "15/40 = 3/8.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Với lớp trên, P(không giỏi môn nào) (nhập a/b):",
+      "expr": "1-33/40",
+      "answer": "7/40",
+      "explain": "1 − 33/40 = 7/40.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "P(Ā) bằng:",
+      "choices": [
+        "1 − P(A)",
+        "P(A) − 1",
+        "1/P(A)",
+        "P(A)"
+      ],
+      "answer": 0,
+      "explain": "A và Ā tạo thành phân hoạch của Ω.",
+      "wrong_explain": {
+        "1": "Âm nên sai.",
+        "2": "Không có công thức nghịch đảo.",
+        "3": "Chỉ đúng khi P(A) = 1/2."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hộp có 5 bi đỏ, 3 bi xanh, 2 bi vàng. Lấy 1 bi: P(đỏ hoặc xanh) (nhập a/b):",
+      "expr": "(5+3)/10",
+      "answer": "4/5",
+      "explain": "8/10 = 4/5.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hộp có 5 đỏ, 3 xanh, 2 vàng. P(không phải bi vàng) (nhập a/b):",
+      "expr": "1-2/10",
+      "answer": "4/5",
+      "explain": "1 − 1/5 = 4/5.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tung xúc xắc 2 lần. P(ít nhất một lần được mặt 6) (nhập a/b): đối: không có mặt 6 là 25/36:",
+      "expr": "1-25/36",
+      "answer": "11/36",
+      "explain": "1 − 25/36 = 11/36.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tung hai đồng xu. P(ít nhất một ngửa) (nhập a/b):",
+      "expr": "1-1/4",
+      "answer": "3/4",
+      "explain": "1 − 1/4 = 3/4.",
+      "id": "q15"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Rút một lá từ bộ 52 lá. P(lá “cơ” hoặc lá “Át”) (nhập a/b):",
+      "expr": "(13+4-1)/52",
+      "answer": "4/13",
+      "explain": "(13 + 4 − 1)/52 = 16/52 = 4/13.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Hai biến cố A, B có P(A) = 0,6, P(B) = 0,5, P(A ∪ B) = 0,8. P(A ∩ B) bằng:",
+      "expr": "0.6+0.5-0.8",
+      "answer": "3/10",
+      "explain": "P(A ∩ B) = 0,3.",
+      "id": "q17"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "P(A) = 0,6, P(B) = 0,5, P(A ∪ B) = 0,8. P(chỉ A, không B) bằng:",
+      "expr": "0.6-0.3",
+      "answer": "3/10",
+      "explain": "P(A) − P(A ∩ B) = 0,3.",
+      "id": "q18"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Với mọi biến cố A, B, khẳng định đúng là:",
+      "choices": [
+        "P(A ∪ B) ≤ P(A) + P(B)",
+        "P(A ∪ B) ≥ P(A) + P(B)",
+        "P(A ∪ B) = P(A) + P(B)",
+        "P(A ∪ B) < P(A)"
+      ],
+      "answer": 0,
+      "explain": "Vì P(A ∩ B) ≥ 0.",
+      "wrong_explain": {
+        "1": "Chỉ bằng khi xung khắc.",
+        "2": "Không thể lớn hơn tổng.",
+        "3": "P(A ∪ B) ≥ P(A)."
+      },
+      "id": "q19"
+    }
+  ]
+}

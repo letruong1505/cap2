@@ -1,0 +1,176 @@
+{
+  "id": "bai-12",
+  "grade": 10,
+  "subject": "sinh",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Sinh học 10",
+  "chapter": "Chương 3. Trao đổi chất qua màng và truyền tin tế bào",
+  "lesson": "Bài 12. Truyền tin tế bào",
+  "section": "",
+  "bookPage": 73,
+  "requirements": [
+    "Nêu được khái niệm về truyền tin giữa các tế bào.",
+    "Trình bày được quá trình tiếp nhận, truyền tin và đáp ứng.",
+    "Giải thích vì sao cùng một tín hiệu gây đáp ứng khác nhau ở các tế bào khác nhau."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Truyền tin tế bào là sự phát tán và nhận các phân tử tín hiệu giữa các tế bào. Truyền tin có thể xảy ra giữa tế bào của cùng cơ thể, giữa các cá thể cùng loài hoặc khác loài. Trong cơ thể đa bào, tín hiệu đi giữa các tế bào bằng bốn cách: truyền tin trực tiếp qua cầu nối, cận tiết cho tế bào liền kề, nội tiết qua hormone vào máu và qua synapse của tế bào thần kinh."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b12-kieu-truyen-tin.svg",
+      "caption": "Bốn cách truyền tin giữa các tế bào"
+    },
+    {
+      "type": "text",
+      "content": "Tín hiệu giữa các tế bào chủ yếu là tín hiệu hoá học như amino acid, peptide, protein, nucleotide, hormone, hoặc khí NO."
+    },
+    {
+      "type": "text",
+      "content": "Truyền tin trong tế bào gồm ba giai đoạn: (1) tiếp nhận tín hiệu qua thụ thể trên màng hoặc trong tế bào chất, mỗi thụ thể gắn với một tín hiệu phù hợp như chìa khoá và ổ khoá; (2) truyền tín hiệu: thụ thể biến đổi cấu hình, chuyển từ bất hoạt sang hoạt động, lần lượt hoạt hoá các phân tử kế tiếp trong chuỗi tới phân tử đích; (3) đáp ứng: tế bào điều khiển phiên mã, dịch mã hoặc điều hoà hoạt động."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/sinh10-b12-truyen-tin-trong-te-bao.svg",
+      "caption": "Ba giai đoạn truyền tin trong tế bào"
+    },
+    {
+      "type": "text",
+      "content": "Cùng một tín hiệu nhưng gây đáp ứng khác nhau ở các tế bào khác nhau, vì mỗi loại tế bào biệt hoá có nhóm gene hoạt động khác nhau, nên thụ thể, protein truyền tin và protein đáp ứng cũng khác nhau. Ví dụ epinephrine làm tế bào gan giải phóng glucose và làm tim đập nhanh hơn. Tế bào cũng điều chỉnh mức độ nhạy với tín hiệu, như số lượng thụ thể insulin tăng khi vận động mạnh, nên tập thể dục giúp giảm nguy cơ tiểu đường type 2."
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Vì sao cùng một tín hiệu nhưng các tế bào khác nhau trong cùng một cơ thể có thể tạo ra các đáp ứng khác nhau?",
+      "steps": [
+        "Các tế bào biệt hoá có nhóm gene hoạt động khác nhau nên sản xuất thụ thể và protein truyền tin khác nhau.",
+        "Do đó cùng một tín hiệu đi qua các con đường truyền tin khác nhau và đưa đến các đáp ứng khác nhau."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Giai đoạn đầu tiên của truyền tin trong tế bào là:",
+      "choices": [
+        "tiếp nhận tín hiệu",
+        "đáp ứng tín hiệu",
+        "truyền tín hiệu",
+        "phân chia tế bào"
+      ],
+      "answer": 0,
+      "explain": "Tế bào trước hết phải tiếp nhận tín hiệu qua thụ thể.",
+      "wrong_explain": {
+        "1": "Đáp ứng là giai đoạn cuối cùng.",
+        "2": "Truyền tín hiệu diễn ra sau khi tiếp nhận.",
+        "3": "Phân chia là một đáp ứng có thể xảy ra."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Thụ thể là:",
+      "choices": [
+        "protein nhận và liên kết với tín hiệu đặc hiệu",
+        "lipid cấu tạo màng",
+        "DNA vòng nhỏ",
+        "bào quan có màng kép"
+      ],
+      "answer": 0,
+      "explain": "Thụ thể là protein gắn với tín hiệu phù hợp.",
+      "wrong_explain": {
+        "1": "Lipid là thành phần cấu tạo màng, không phải thụ thể.",
+        "2": "Plasmid là DNA vòng nhỏ.",
+        "3": "Ti thể là bào quan có màng kép."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Truyền tin qua synapse diễn ra ở:",
+      "choices": [
+        "tế bào thần kinh và tế bào đích",
+        "tế bào gan và tế bào cơ tim",
+        "tế bào thực vật và tế bào nấm",
+        "tế bào hồng cầu và bạch cầu"
+      ],
+      "answer": 0,
+      "explain": "Synapse là khe giữa tế bào thần kinh và tế bào đích.",
+      "wrong_explain": {
+        "1": "Không đặc trưng cho gan và cơ tim.",
+        "2": "Synapse không có ở thực vật và nấm.",
+        "3": "Hồng cầu không có synapse."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Hormone insulin truyền tin theo kiểu:",
+      "choices": [
+        "nội tiết",
+        "cận tiết",
+        "qua synapse",
+        "trực tiếp qua cầu nối"
+      ],
+      "answer": 0,
+      "explain": "Hormone được tiết vào máu và đến tế bào đích ở xa.",
+      "wrong_explain": {
+        "1": "Cận tiết tác động lên tế bào liền kề.",
+        "2": "Synapse là truyền tin của tế bào thần kinh.",
+        "3": "Cầu nối trực tiếp không dùng hormone vào máu."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Khi thụ thể trong tế bào chất hoạt hoá gene, sản phẩm đáp ứng thường là:",
+      "choices": [
+        "protein tổng hợp từ mRNA",
+        "ATP trực tiếp",
+        "glucose ngoài tế bào",
+        "chất nhầy ngoài màng"
+      ],
+      "answer": 0,
+      "explain": "Hoạt hoá gene tạo mRNA rồi protein.",
+      "wrong_explain": {
+        "1": "ATP được tổng hợp ở ti thể, không do gene truyền tin trực tiếp.",
+        "2": "Glucose không phải sản phẩm đáp ứng trực tiếp.",
+        "3": "Chất nhầy không phải kết quả chính."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vì sao tập thể dục thường xuyên có thể giảm nguy cơ tiểu đường type 2?",
+      "choices": [
+        "thụ thể insulin nhạy hơn hoặc tăng số lượng để đưa glucose vào tế bào",
+        "tế bào ngừng nhận insulin",
+        "tế bào tăng tiết insulin ra ngoài",
+        "tế bào không cần glucose"
+      ],
+      "answer": 0,
+      "explain": "Thụ thể insulin tăng độ nhạy giúp vận chuyển glucose tốt hơn.",
+      "wrong_explain": {
+        "1": "Điều này làm giảm hiệu quả truyền tin.",
+        "2": "Không phải cơ chế chính.",
+        "3": "Tế bào vẫn cần glucose khi hoạt động."
+      },
+      "id": "q06"
+    }
+  ]
+}

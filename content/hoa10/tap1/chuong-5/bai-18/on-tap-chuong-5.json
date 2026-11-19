@@ -1,0 +1,142 @@
+{
+  "id": "bai-18",
+  "grade": 10,
+  "subject": "hoa",
+  "bookSeries": "Kết nối tri thức với cuộc sống",
+  "book": "Hoá học 10",
+  "chapter": "Chương V. Năng lượng hoá học",
+  "lesson": "Bài 18. Ôn tập chương 5",
+  "section": "",
+  "bookPage": 90,
+  "requirements": [
+    "Hệ thống hoá kiến thức về phản ứng toả nhiệt, thu nhiệt, biến thiên enthalpy và cách tính.",
+    "Vận dụng tính ΔrH theo nhiệt tạo thành và năng lượng liên kết."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Hệ thống kiến thức chương 5: (1) Phản ứng toả nhiệt (ΔrH < 0), thu nhiệt (ΔrH > 0). (2) Điều kiện chuẩn; phương trình nhiệt hoá học; enthalpy tạo thành chuẩn, đơn chất bền có ΔfH = 0. (3) Tính ΔrH°₂₉₈ theo nhiệt tạo thành và theo năng lượng liên kết. (4) Ý nghĩa: lựa chọn nhiên liệu, điều kiện phản ứng."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/h10-b18-on-tap.svg",
+      "caption": "Sơ đồ hệ thống hoá kiến thức chương V"
+    },
+    {
+      "type": "formula",
+      "content": "ΔrH = ΣΔfH(sp) − ΣΔfH(cđ)        ΔrH = ΣE_b(cđ) − ΣE_b(sp)"
+    },
+    {
+      "type": "method",
+      "title": "Tính nhiệt lượng theo lượng chất",
+      "when": "Đề cho phương trình nhiệt hoá học và lượng chất (gam, lít khí), hỏi nhiệt lượng toả ra hoặc thu vào, hoặc ngược lại.",
+      "steps": [
+        "Đổi lượng chất ra số mol (m/M hoặc V/24,79).",
+        "So sánh với hệ số trong phương trình nhiệt hoá học.",
+        "Nhiệt lượng = |ΔrH| × n(chất)/hệ số.",
+        "Kết luận toả hay thu dựa theo dấu ΔrH."
+      ],
+      "notes": [
+        "Chú ý ΔrH cho cả phương trình với hệ số đã ghi.",
+        "1 mol khí ở điều kiện chuẩn chiếm 24,79 L."
+      ],
+      "sample": {
+        "problem": "C₂H₅OH(l) + 3O₂(g) → 2CO₂(g) + 3H₂O(l), ΔrH = −1366,8 kJ. Tính nhiệt toả ra khi đốt 4,6 g ethanol.",
+        "steps": [
+          "n = 4,6/46 = 0,1 mol.",
+          "Q = 0,1·1366,8 = 136,68 kJ."
+        ],
+        "answer": "136,68 kJ"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tính ΔrH°₂₉₈ của 4FeS₂(s) + 11O₂(g) → 2Fe₂O₃(s) + 8SO₂(g), biết ΔfH: FeS₂ = −177,9; Fe₂O₃ = −825,5; SO₂ = −296,8 kJ/mol.",
+      "steps": [
+        "ΔrH = [2(−825,5) + 8(−296,8)] − 4(−177,9).",
+        "= (−1651 − 2374,4) + 711,6 = −3313,8 kJ."
+      ],
+      "expr": "2*(-825.5)+8*(-296.8)+4*177.9",
+      "answer": "-3313.8"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phản ứng có ΔrH°₂₉₈ = −57,3 kJ là:",
+      "choices": [
+        "toả nhiệt",
+        "thu nhiệt",
+        "không có nhiệt",
+        "cần nhiệt độ cao"
+      ],
+      "answer": 0,
+      "explain": "ΔrH < 0.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Không suy ra được."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Phương trình nhiệt hoá học cần ghi:",
+      "choices": [
+        "trạng thái các chất và giá trị ΔrH",
+        "chỉ chất đầu",
+        "chỉ màu sắc",
+        "chỉ nhiệt độ"
+      ],
+      "answer": 0,
+      "explain": "Định nghĩa.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tính ΔrH (kJ) của S(s) + O₂(g) → SO₂(g), biết ΔfH(SO₂) = −296,8 kJ/mol:",
+      "expr": "-296.8",
+      "answer": "-296.8",
+      "explain": "Đơn chất 0.",
+      "id": "q03"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đốt cháy 0,2 mol CH₄ (ΔrH = −890 kJ/mol CH₄) toả ra (kJ):",
+      "expr": "178",
+      "answer": "178",
+      "explain": "0,2·890.",
+      "id": "q04"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính ΔrH (kJ) của CaO(s) + H₂O(l) → Ca(OH)₂(s), biết ΔfH: CaO = −635,1; H₂O(l) = −285,8; Ca(OH)₂ = −986,1:",
+      "expr": "-986.1+635.1+285.8",
+      "answer": "-65.2",
+      "explain": "Toả nhiệt (vôi sống tôi trong nước nóng lên).",
+      "id": "q05"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tính ΔrH (kJ) của H₂(g) + Br₂(g) → 2HBr(g) theo E(H–H) = 436, E(Br–Br) = 193, E(H–Br) = 366 kJ/mol:",
+      "expr": "436+193-732",
+      "answer": "-103",
+      "explain": "(436 + 193) − 2·366.",
+      "id": "q06"
+    }
+  ]
+}

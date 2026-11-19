@@ -1,0 +1,299 @@
+{
+  "id": "bai-32",
+  "grade": 10,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 10",
+  "chapter": "Chương VI. Chuyển động tròn",
+  "lesson": "Bài 32. Lực hướng tâm và gia tốc hướng tâm",
+  "section": "",
+  "bookPage": 123,
+  "requirements": [
+    "Nêu được gia tốc hướng tâm, lực hướng tâm và công thức tính.",
+    "Vận dụng định luật 2 Newton cho chuyển động tròn đều trong các tình huống thực tế."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Trong chuyển động tròn đều, vận tốc luôn đổi hướng nên vật có gia tốc. Gia tốc này luôn hướng vào tâm quỹ đạo, gọi là gia tốc hướng tâm."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l10-b31-chuyen-dong-tron.svg",
+      "caption": "Vận tốc tiếp tuyến và gia tốc hướng tâm trong chuyển động tròn đều"
+    },
+    {
+      "type": "formula",
+      "content": "a_ht = v²/r = ω²·r"
+    },
+    {
+      "type": "text",
+      "content": "Lực (hay hợp lực) tác dụng lên vật chuyển động tròn đều và gây ra gia tốc hướng tâm gọi là lực hướng tâm. Lực hướng tâm không phải một loại lực mới mà là hợp lực của các lực tác dụng (trọng lực, lực căng, ma sát, lực hấp dẫn…)."
+    },
+    {
+      "type": "formula",
+      "content": "F_ht = m·a_ht = m·v²/r = m·ω²·r"
+    },
+    {
+      "type": "text",
+      "content": "Ví dụ: lực hấp dẫn giữ Mặt Trăng quay quanh Trái Đất; lực ma sát nghỉ giữ ô tô vào cua trên đường ngang; lực căng dây giữ vật quay tròn. Đường ô tô, đường sắt ở khúc cua được làm nghiêng để hợp lực của trọng lực và phản lực đóng vai trò lực hướng tâm."
+    },
+    {
+      "type": "text",
+      "content": "Khi lực hướng tâm không đủ (hoặc mất đi), vật có xu hướng văng ra theo phương tiếp tuyến (chuyển động li tâm). Ứng dụng: máy vắt li tâm trong máy giặt; nguy cơ: xe vào cua quá nhanh bị trượt ra ngoài."
+    },
+    {
+      "type": "method",
+      "title": "Bài toán lực hướng tâm",
+      "when": "Đề cho khối lượng, bán kính, tốc độ (hoặc chu kì, số vòng); hỏi gia tốc hướng tâm, lực hướng tâm, tốc độ tối đa vào cua, lực căng.",
+      "steps": [
+        "Đổi đơn vị: v (m/s), r (m), số vòng/phút → ω.",
+        "a_ht = v²/r = ω²r; F_ht = m·a_ht.",
+        "Xác định lực nào đóng vai trò hướng tâm: ma sát nghỉ (xe vào cua), lực căng dây, hấp dẫn.",
+        "Tốc độ tối đa vào cua phẳng: μmg = mv²/r ⇒ v = √(μgr)."
+      ],
+      "notes": [
+        "Lực hướng tâm là hợp lực, không vẽ thêm như một lực riêng.",
+        "Tốc độ tăng gấp đôi thì lực hướng tâm tăng bốn lần."
+      ],
+      "sample": {
+        "problem": "Ô tô 1000 kg vào cua bán kính 50 m với tốc độ 10 m/s. Tính lực hướng tâm.",
+        "steps": [
+          "a_ht = 100/50 = 2 m/s².",
+          "F_ht = 1000·2 = 2000 N (do lực ma sát nghỉ cung cấp)."
+        ],
+        "answer": "2000 N"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Vật 0,2 kg buộc vào dây dài 0,5 m quay tròn đều trên mặt bàn nhẵn nằm ngang với tốc độ 3 m/s. Tính lực căng dây.",
+      "steps": [
+        "Lực căng đóng vai trò lực hướng tâm.",
+        "T = mv²/r = 0,2·9/0,5 = 3,6 N."
+      ],
+      "expr": "18/5",
+      "answer": "3.6"
+    },
+    {
+      "problem": "Hệ số ma sát nghỉ giữa lốp và mặt đường là 0,5; khúc cua bán kính 20 m (g = 10). Tính tốc độ tối đa xe vào cua mà không trượt.",
+      "steps": [
+        "μmg = mv²/r ⇒ v = √(μgr) = √(0,5·10·20) = √100.",
+        "v_max = 10 m/s = 36 km/h."
+      ],
+      "expr": "10",
+      "answer": "10"
+    },
+    {
+      "problem": "Một điểm trên vành đĩa bán kính 0,1 m quay đều 600 vòng/phút. Tính gia tốc hướng tâm (π² ≈ 10).",
+      "steps": [
+        "ω = 2π·10 = 20π rad/s.",
+        "a_ht = ω²r = 400π²·0,1 ≈ 400 m/s²."
+      ],
+      "expr": "400*10*0.1",
+      "answer": "400"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Gia tốc hướng tâm có hướng:",
+      "choices": [
+        "vào tâm quỹ đạo",
+        "tiếp tuyến quỹ đạo",
+        "ra xa tâm",
+        "cùng hướng vận tốc"
+      ],
+      "answer": 0,
+      "explain": "Theo tên gọi.",
+      "wrong_explain": {
+        "1": "Đó là vận tốc.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Công thức gia tốc hướng tâm là:",
+      "choices": [
+        "a = v²/r",
+        "a = v/r",
+        "a = vr",
+        "a = r/v²"
+      ],
+      "answer": 0,
+      "explain": "a = v²/r = ω²r.",
+      "wrong_explain": {
+        "1": "Đó là ω.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "v = 4 m/s, r = 2 m. Gia tốc hướng tâm (m/s²):",
+      "expr": "8",
+      "answer": "8",
+      "explain": "16/2.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Vật 2 kg có a_ht = 5 m/s². Lực hướng tâm (N):",
+      "expr": "10",
+      "answer": "10",
+      "explain": "F = ma.",
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Lực giữ Mặt Trăng chuyển động gần tròn quanh Trái Đất là:",
+      "choices": [
+        "lực hấp dẫn",
+        "lực ma sát",
+        "lực đàn hồi",
+        "lực đẩy Archimedes"
+      ],
+      "answer": 0,
+      "explain": "Hấp dẫn đóng vai trò hướng tâm.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "ω = 5 rad/s, r = 0,4 m. Gia tốc hướng tâm (m/s²):",
+      "expr": "10",
+      "answer": "10",
+      "explain": "ω²r.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Xe 1200 kg vào cua bán kính 60 m với 15 m/s. Lực hướng tâm (N):",
+      "expr": "1200*225/60",
+      "answer": "4500",
+      "explain": "mv²/r.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Ô tô vào cua trên đường ngang, lực đóng vai trò lực hướng tâm là:",
+      "choices": [
+        "lực ma sát nghỉ giữa lốp và mặt đường",
+        "trọng lực",
+        "phản lực mặt đường",
+        "lực kéo động cơ"
+      ],
+      "answer": 0,
+      "explain": "Ma sát nghỉ hướng vào tâm cua.",
+      "wrong_explain": {
+        "1": "Thẳng đứng.",
+        "2": "Thẳng đứng.",
+        "3": "Theo phương chuyển động."
+      },
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tốc độ tăng gấp 3, bán kính không đổi. Lực hướng tâm tăng bao nhiêu lần?",
+      "expr": "9",
+      "answer": "9",
+      "explain": "Tỉ lệ v².",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Máy giặt vắt khô quần áo dựa trên:",
+      "choices": [
+        "chuyển động li tâm của nước khi lực bám không đủ làm lực hướng tâm",
+        "lực đẩy Archimedes",
+        "sự bay hơi",
+        "lực hấp dẫn"
+      ],
+      "answer": 0,
+      "explain": "Nước văng ra qua lỗ lồng giặt.",
+      "wrong_explain": {
+        "1": "Sai.",
+        "2": "Phụ.",
+        "3": "Sai."
+      },
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Vật 0,5 kg quay tròn bán kính 1 m với ω = 4 rad/s. Lực hướng tâm (N):",
+      "expr": "8",
+      "answer": "8",
+      "explain": "mω²r.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đường cua bán kính 40 m, μ = 0,4 (g = 10). Bình phương tốc độ tối đa v² (m²/s²) là:",
+      "expr": "0.4*10*40",
+      "answer": "160",
+      "explain": "μmg = mv²/r ⇒ v² = μgr = 160, v ≈ 12,6 m/s.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vật 0,1 kg buộc dây dài 0,8 m quay tròn trên mặt nhẵn, dây chịu tối đa 5 N. Bình phương tốc độ tối đa (m²/s²) là:",
+      "expr": "40",
+      "answer": "40",
+      "explain": "v² = T·r/m = 5·0,8/0,1 = 40, v ≈ 6,3 m/s.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Vệ tinh quay quanh Trái Đất với r = 6800 km, v = 7,6 km/s. Gia tốc hướng tâm (m/s², làm tròn 2 chữ số):",
+      "expr": "8.49",
+      "answer": "8.49",
+      "explain": "(7600)²/6,8·10⁶.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Xe 1 tấn qua đỉnh cầu vồng bán kính 50 m với 10 m/s (g = 10). Áp lực lên cầu tại đỉnh (N):",
+      "expr": "10000-2000",
+      "answer": "8000",
+      "explain": "mg − N = mv²/r.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Xe qua đỉnh cầu vồng bán kính 40 m (g = 10). Tốc độ để xe bắt đầu \"bay\" (áp lực bằng 0) (m/s):",
+      "expr": "20",
+      "answer": "20",
+      "explain": "mg = mv²/r ⇒ v = √(gr).",
+      "id": "q16"
+    }
+  ]
+}

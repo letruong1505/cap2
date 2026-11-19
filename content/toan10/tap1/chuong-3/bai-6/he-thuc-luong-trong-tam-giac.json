@@ -1,0 +1,336 @@
+{
+  "id": "bai-6",
+  "grade": 10,
+  "subject": "toan",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Toán 10, tập 1",
+  "chapter": "Chương III. Hệ thức lượng trong tam giác",
+  "lesson": "Bài 6. Hệ thức lượng trong tam giác",
+  "section": "",
+  "bookPage": 38,
+  "requirements": [
+    "Vận dụng định lí côsin, định lí sin và các công thức tính diện tích tam giác.",
+    "Giải tam giác và vận dụng vào bài toán đo đạc thực tế."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Cho tam giác ABC có BC = a, CA = b, AB = c; R là bán kính đường tròn ngoại tiếp, r là bán kính đường tròn nội tiếp, p = (a + b + c)/2 là nửa chu vi, S là diện tích."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/t10-b6-tam-giac.svg",
+      "caption": "Kí hiệu các cạnh a, b, c đối diện với các góc A, B, C"
+    },
+    {
+      "type": "formula",
+      "content": "Định lí côsin: a² = b² + c² − 2bc·cos A;  b² = c² + a² − 2ca·cos B;  c² = a² + b² − 2ab·cos C"
+    },
+    {
+      "type": "formula",
+      "content": "cos A = (b² + c² − a²) / (2bc)        Định lí sin: a/sin A = b/sin B = c/sin C = 2R"
+    },
+    {
+      "type": "formula",
+      "content": "S = ½ab·sin C = ½bc·sin A = ½ca·sin B        S = abc/(4R)        S = pr        S = √[p(p − a)(p − b)(p − c)] (Heron)"
+    },
+    {
+      "type": "text",
+      "content": "Giải tam giác là tìm các cạnh và góc chưa biết khi biết một số yếu tố. Biết hai cạnh và góc xen giữa: dùng định lí côsin tìm cạnh thứ ba, rồi định lí sin hoặc côsin tìm góc. Biết một cạnh và hai góc: tính góc còn lại (tổng 180°) rồi dùng định lí sin. Biết ba cạnh: dùng hệ quả định lí côsin tìm góc."
+    },
+    {
+      "type": "method",
+      "title": "Tính cạnh, góc và diện tích tam giác",
+      "when": "Đề cho một số cạnh, góc của tam giác và yêu cầu tính cạnh, góc còn lại, diện tích, bán kính R, r; hoặc bài toán đo khoảng cách, chiều cao thực tế.",
+      "steps": [
+        "Vẽ hình, ghi các yếu tố đã biết theo đúng kí hiệu a, b, c đối diện A, B, C.",
+        "Chọn công thức: hai cạnh + góc xen giữa hoặc ba cạnh → định lí côsin; một cạnh + hai góc hoặc cần R → định lí sin.",
+        "Tính diện tích bằng công thức phù hợp với dữ kiện: ½ab sin C, Heron, pr hoặc abc/(4R).",
+        "Suy ra R = abc/(4S), r = S/p nếu đề hỏi; làm tròn theo yêu cầu."
+      ],
+      "notes": [
+        "Góc tù có cos âm; nếu dùng định lí sin tìm góc, chú ý có thể có hai góc bù nhau cùng sin.",
+        "Đơn vị độ dài phải thống nhất; diện tích tính theo đơn vị vuông."
+      ],
+      "sample": {
+        "problem": "Tam giác ABC có b = 8, c = 5 và Â = 60°. Tính a và diện tích S.",
+        "steps": [
+          "a² = 8² + 5² − 2·8·5·cos 60° = 64 + 25 − 40 = 49 nên a = 7.",
+          "S = ½·b·c·sin A = ½·8·5·(√3/2) = 10√3 ≈ 17,3."
+        ],
+        "answer": "a = 7; S = 10√3"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Tam giác ABC có a = 7, b = 8, c = 5. Tính cos A và số đo góc A.",
+      "steps": [
+        "cos A = (b² + c² − a²)/(2bc) = (64 + 25 − 49)/(2·8·5) = 40/80 = 1/2.",
+        "Vậy Â = 60°."
+      ],
+      "expr": "(64+25-49)/80",
+      "answer": "1/2"
+    },
+    {
+      "problem": "Tam giác ABC có BC = 6, B̂ = 45° và Ĉ = 75°. Tính bán kính R của đường tròn ngoại tiếp.",
+      "steps": [
+        "Â = 180° − 45° − 75° = 60°.",
+        "Theo định lí sin: 2R = a/sin A = 6/(√3/2) = 12/√3 = 4√3.",
+        "Vậy R = 2√3 ≈ 3,46."
+      ],
+      "proof": true
+    },
+    {
+      "problem": "Tam giác có ba cạnh 13, 14, 15. Tính diện tích S và bán kính r của đường tròn nội tiếp.",
+      "steps": [
+        "p = (13 + 14 + 15)/2 = 21.",
+        "S = √[21·(21 − 13)(21 − 14)(21 − 15)] = √(21·8·7·6) = √7056 = 84.",
+        "r = S/p = 84/21 = 4."
+      ],
+      "expr": "84/21",
+      "answer": "4"
+    },
+    {
+      "problem": "Từ hai điểm A, B trên bờ sông cách nhau 100 m, người ta nhìn một cái cây C ở bờ bên kia với góc CAB = 60° và góc CBA = 45°. Tính khoảng cách AC (làm tròn đến mét).",
+      "steps": [
+        "Góc ACB = 180° − 60° − 45° = 75°.",
+        "Định lí sin: AC/sin B = AB/sin C ⇒ AC = 100·sin 45°/sin 75° ≈ 100·0,7071/0,9659 ≈ 73,2.",
+        "Vậy AC ≈ 73 m."
+      ],
+      "proof": true
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Trong tam giác ABC, định lí côsin viết cho cạnh a là:",
+      "choices": [
+        "a² = b² + c² − 2bc·cos A",
+        "a² = b² + c² + 2bc·cos A",
+        "a² = b² + c² − 2bc·sin A",
+        "a = b + c − 2bc·cos A"
+      ],
+      "answer": 0,
+      "explain": "Công thức định lí côsin.",
+      "wrong_explain": {
+        "1": "Sai dấu.",
+        "2": "Phải là cos.",
+        "3": "Thiếu bình phương."
+      },
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Theo định lí sin, a/sin A bằng:",
+      "choices": [
+        "2R",
+        "R",
+        "R/2",
+        "4R"
+      ],
+      "answer": 0,
+      "explain": "a/sin A = b/sin B = c/sin C = 2R.",
+      "wrong_explain": {
+        "1": "Thiếu hệ số 2.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Công thức nào tính diện tích tam giác theo bán kính đường tròn nội tiếp r?",
+      "choices": [
+        "S = pr",
+        "S = abc/(4r)",
+        "S = ½pr",
+        "S = 2pr"
+      ],
+      "answer": 0,
+      "explain": "S = p·r với p là nửa chu vi.",
+      "wrong_explain": {
+        "1": "Công thức với R là abc/(4R).",
+        "2": "Không có hệ số ½.",
+        "3": "Sai."
+      },
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Tam giác có ba cạnh 5, 6, 7 có nửa chu vi p bằng:",
+      "expr": "(5+6+7)/2",
+      "answer": "9",
+      "explain": "p = 18/2 = 9.",
+      "id": "q04"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC có b = 3, c = 4 và Â = 90°. Độ dài a bằng:",
+      "expr": "5",
+      "answer": "5",
+      "explain": "a² = 9 + 16 − 0 = 25 (cos 90° = 0).",
+      "id": "q05"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC có a = 6, b = 10, Ĉ = 30°. Diện tích S bằng:",
+      "expr": "6*10/4",
+      "answer": "15",
+      "explain": "S = ½·6·10·sin 30° = 15.",
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC có a = 5, b = 7, c = 8. Giá trị cos B bằng:",
+      "expr": "(25+64-49)/(2*5*8)",
+      "answer": "1/2",
+      "explain": "cos B = (a² + c² − b²)/(2ac) = 40/80 = 1/2.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Tam giác ABC có Â = 30° và a = 4. Bán kính đường tròn ngoại tiếp R bằng:",
+      "expr": "8/2",
+      "answer": "4",
+      "explain": "2R = a/sin A = 4/(1/2) = 8 nên R = 4.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tam giác ABC có a² > b² + c². Khi đó góc A là:",
+      "choices": [
+        "góc tù",
+        "góc nhọn",
+        "góc vuông",
+        "không xác định được"
+      ],
+      "answer": 0,
+      "explain": "cos A = (b² + c² − a²)/(2bc) < 0.",
+      "wrong_explain": {
+        "1": "cos A âm.",
+        "2": "Vuông khi a² = b² + c².",
+        "3": "Xác định được dấu của cos A."
+      },
+      "id": "q09"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác ABC có b = 5, c = 8 và Â = 60°. Độ dài cạnh a bằng:",
+      "expr": "7",
+      "answer": "7",
+      "explain": "a² = 25 + 64 − 2·5·8·(1/2) = 49.",
+      "id": "q10"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác có ba cạnh 3, 4, 5. Bán kính đường tròn nội tiếp r bằng:",
+      "expr": "6/6",
+      "answer": "1",
+      "explain": "S = 6 (tam giác vuông), p = 6, r = S/p = 1.",
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tam giác có ba cạnh 13, 14, 15. Bán kính đường tròn ngoại tiếp R bằng:",
+      "expr": "2730/336",
+      "answer": "65/8",
+      "explain": "S = 84 (Heron), R = abc/(4S) = 2730/336 = 65/8 = 8,125.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tam giác ABC có a = 8, b = 5, c = 7. Diện tích S bằng:",
+      "choices": [
+        "10√3",
+        "20√3",
+        "5√3",
+        "30"
+      ],
+      "answer": 0,
+      "explain": "p = 10, S = √(10·2·5·3) = √300 = 10√3.",
+      "wrong_explain": {
+        "1": "Tính sai căn.",
+        "2": "Tính sai.",
+        "3": "Sai."
+      },
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tam giác ABC có B̂ = 60°, Ĉ = 45° và b = 6. Độ dài c bằng:",
+      "choices": [
+        "2√6",
+        "3√2",
+        "6√2",
+        "4√3"
+      ],
+      "answer": 0,
+      "explain": "c = b·sin C/sin B = 6·(√2/2)/(√3/2) = 6√2/√3 = 2√6.",
+      "wrong_explain": {
+        "1": "Tính sai tỉ số.",
+        "2": "Sai.",
+        "3": "Sai."
+      },
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai tàu xuất phát cùng lúc từ một cảng, đi theo hai hướng tạo với nhau góc 60°, với vận tốc 30 km/h và 40 km/h. Sau 1 giờ, bình phương khoảng cách giữa hai tàu (km²) là:",
+      "expr": "900+1600-2*30*40/2",
+      "answer": "1300",
+      "explain": "d² = 30² + 40² − 2·30·40·cos 60° = 1300 (d ≈ 36 km).",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Tam giác ABC có a = 2b·cos C. Tam giác ABC là:",
+      "choices": [
+        "tam giác cân tại A",
+        "tam giác vuông tại A",
+        "tam giác đều",
+        "tam giác vuông tại B"
+      ],
+      "answer": 0,
+      "explain": "Thay cos C = (a² + b² − c²)/(2ab): a = (a² + b² − c²)/a ⇔ b² = c² ⇔ b = c.",
+      "wrong_explain": {
+        "1": "Không suy ra được.",
+        "2": "Chỉ suy ra b = c.",
+        "3": "Sai."
+      },
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Tam giác ABC có b = 7, c = 5, cos A = 3/5. Giá trị a² bằng:",
+      "expr": "49+25-2*7*5*3/5",
+      "answer": "32",
+      "explain": "a² = 49 + 25 − 42 = 32 (a = 4√2).",
+      "id": "q17"
+    }
+  ]
+}

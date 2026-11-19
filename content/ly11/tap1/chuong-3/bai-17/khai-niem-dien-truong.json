@@ -1,0 +1,355 @@
+{
+  "id": "bai-17",
+  "grade": 11,
+  "subject": "ly",
+  "bookSeries": "Kết nối tri thức",
+  "book": "Vật lí 11",
+  "chapter": "Chương 3. Điện trường",
+  "lesson": "Bài 17. Khái niệm điện trường",
+  "section": "",
+  "bookPage": 65,
+  "requirements": [
+    "Nêu được khái niệm điện trường, cường độ điện trường; biểu diễn được vectơ cường độ điện trường và đường sức điện.",
+    "Tính cường độ điện trường của điện tích điểm, lực điện tác dụng lên điện tích và vận dụng nguyên lí chồng chất điện trường."
+  ],
+  "theory": [
+    {
+      "type": "text",
+      "content": "Điện trường là dạng vật chất tồn tại xung quanh điện tích và truyền tương tác giữa các điện tích. Ta nhận biết điện trường bằng cách đặt vào đó một điện tích thử: có lực điện tác dụng lên điện tích thử."
+    },
+    {
+      "type": "text",
+      "content": "Cường độ điện trường tại một điểm đặc trưng cho độ mạnh yếu của điện trường tại điểm đó, được đo bằng thương số giữa lực điện tác dụng lên điện tích thử dương đặt tại điểm đó và độ lớn của điện tích thử. Đơn vị: vôn trên mét (V/m)."
+    },
+    {
+      "type": "formula",
+      "content": "E = F/|q|  ⇒  F = |q|E;   vectơ: E = F/q (cùng chiều F nếu q > 0, ngược chiều F nếu q < 0)."
+    },
+    {
+      "type": "formula",
+      "content": "Điện tích điểm Q: E = k|Q|/r² (chân không), E = k|Q|/(εr²) (môi trường). Hướng ra xa Q nếu Q > 0, hướng vào Q nếu Q < 0."
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b17-vecto-cuong-do-dien-truong.svg",
+      "caption": "Vectơ cường độ điện trường E do điện tích dương Q gây ra tại M: phương là đường thẳng nối QM, hướng ra xa Q, độ lớn E = k|Q|/r²"
+    },
+    {
+      "type": "figure",
+      "figure": "figures/l11-b17-duong-suc-dien.svg",
+      "caption": "Đường sức điện của điện tích điểm: hướng ra xa với Q > 0 (đỏ), hướng vào với Q < 0 (xanh)"
+    },
+    {
+      "type": "text",
+      "content": "Nguyên lí chồng chất điện trường: điện trường tổng hợp E = E₁ + E₂ + … (tổng vectơ). Đường sức điện là đường mà tiếp tuyến tại mỗi điểm trùng với phương của vectơ cường độ điện trường, chiều của đường sức là chiều của E; các đường sức không cắt nhau; nơi E lớn đường sức dày hơn."
+    },
+    {
+      "type": "method",
+      "title": "Tính cường độ điện trường của điện tích điểm",
+      "when": "Cho Q, khoảng cách r (và ε), hỏi độ lớn, phương, chiều E.",
+      "steps": [
+        "Đổi Q về C, r về m.",
+        "E = k|Q|/(εr²).",
+        "Chiều: Q > 0 hướng ra xa; Q < 0 hướng vào gần Q.",
+        "Nếu cần lực: F = |q|E (q > 0 cùng chiều E, q < 0 ngược chiều)."
+      ],
+      "notes": [
+        "E giảm 4 lần khi r tăng 2 lần.",
+        "E tại điểm rất gần điện tích rất lớn."
+      ],
+      "sample": {
+        "problem": "Q = 4 nC đặt trong chân không. Tính E tại điểm cách Q 2 cm.",
+        "steps": [
+          "E = 9·10⁹·4·10⁻⁹/(0,02)².",
+          "= 36/(4·10⁻⁴) = 9·10⁴ V/m."
+        ],
+        "answer": "9·10⁴ V/m"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Tổng hợp điện trường của hai điện tích (cùng phương)",
+      "when": "Điểm xét nằm trên đường thẳng nối hai điện tích điểm; tính E tổng hợp hoặc tìm điểm E = 0.",
+      "steps": [
+        "Tính E₁, E₂ do từng điện tích gây ra tại điểm xét; xác định chiều.",
+        "Nếu cùng chiều: E = E₁ + E₂; ngược chiều: E = |E₁ − E₂|.",
+        "Điểm E = 0: hai vectơ ngược chiều, cùng độ lớn: |Q₁|/r₁² = |Q₂|/r₂².",
+        "Hai điện tích cùng dấu: điểm E = 0 nằm trong đoạn nối; khác dấu: nằm ngoài đoạn nối, gần điện tích nhỏ hơn."
+      ],
+      "notes": [
+        "Nếu hai vectơ vuông góc: E² = E₁² + E₂².",
+        "Chọn trục và quy ước chiều dương rõ ràng."
+      ],
+      "sample": {
+        "problem": "Q₁ = 4 μC tại A, Q₂ = 1 μC tại B (cùng dấu), AB = 0,3 m. Tìm điểm E = 0.",
+        "steps": [
+          "4/r₁² = 1/r₂² ⇒ r₁ = 2r₂; r₁ + r₂ = 0,3.",
+          "r₂ = 0,1 m; r₁ = 0,2 m."
+        ],
+        "answer": "Cách A 0,2 m, cách B 0,1 m"
+      }
+    },
+    {
+      "type": "method",
+      "title": "Chuyển động và cân bằng của điện tích trong điện trường",
+      "when": "Điện tích q (hạt bụi, quả cầu) cân bằng hoặc chuyển động trong điện trường E, trọng lực P = mg.",
+      "steps": [
+        "Lực điện F = |q|E.",
+        "Cân bằng: F = P ⇒ |q|E = mg.",
+        "Có thể suy ra E = mg/|q| hoặc m = |q|E/g.",
+        "Chiều lực điện phải ngược chiều trọng lực."
+      ],
+      "notes": [
+        "Hạt q > 0: lực điện cùng chiều E.",
+        "g = 10 m/s² nếu đề cho."
+      ],
+      "sample": {
+        "problem": "Hạt bụi m = 10⁻⁶ kg, q = 2·10⁻⁸ C cân bằng trong điện trường. Tính E.",
+        "steps": [
+          "|q|E = mg.",
+          "E = 10⁻⁶·10/(2·10⁻⁸) = 500 V/m."
+        ],
+        "answer": "500 V/m"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "problem": "Q = 4 nC. E tại điểm cách Q 2 cm (V/m)?",
+      "steps": [
+        "E = kQ/r².",
+        "= 9·10⁹·4·10⁻⁹/(4·10⁻⁴) = 9·10⁴."
+      ],
+      "expr": "(9000000000*0.000000004)/(0.0004)",
+      "answer": "90000"
+    },
+    {
+      "problem": "Điện tích q = 2·10⁻⁶ C đặt trong E = 1000 V/m. Lực điện F (N)?",
+      "steps": [
+        "F = |q|E.",
+        "= 2·10⁻³ N."
+      ],
+      "expr": "0.000002*1000",
+      "answer": "1/500"
+    },
+    {
+      "problem": "Hạt bụi m = 10⁻⁶ kg, q = 2·10⁻⁸ C cân bằng, g = 10. E (V/m)?",
+      "steps": [
+        "E = mg/|q|.",
+        "= 500 V/m."
+      ],
+      "expr": "(0.000001*10)/(0.00000002)",
+      "answer": "500"
+    }
+  ],
+  "items": [
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Điện tích q = 2·10⁻⁶ C đặt trong E = 1000 V/m. F (N):",
+      "expr": "0.000002*1000",
+      "answer": "1/500",
+      "explain": "F = qE = 2·10⁻³ N.",
+      "id": "q01"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Lực điện tác dụng lên q = 10⁻⁶ C là 5·10⁻³ N. E (V/m):",
+      "expr": "(0.005)/(0.000001)",
+      "answer": "5000",
+      "explain": "E = F/q = 5000 V/m.",
+      "id": "q02"
+    },
+    {
+      "level": "Biết",
+      "type": "fill",
+      "stem": "Điện tích Q = 4 nC, r = 2 cm. E (V/m):",
+      "expr": "(9000000000*0.000000004)/(0.0004)",
+      "answer": "90000",
+      "explain": "E = 9·10⁴ V/m.",
+      "id": "q03"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đơn vị cường độ điện trường là:",
+      "choices": [
+        "V/m",
+        "V",
+        "C",
+        "N"
+      ],
+      "answer": 0,
+      "explain": "Vôn trên mét.",
+      "wrong_explain": {
+        "1": "V là hiệu điện thế.",
+        "2": "C là điện tích.",
+        "3": "N là lực."
+      },
+      "id": "q04"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Vectơ cường độ điện trường do điện tích dương gây ra:",
+      "choices": [
+        "hướng ra xa điện tích",
+        "hướng vào điện tích",
+        "vuông góc đường nối",
+        "luôn bằng không"
+      ],
+      "answer": 0,
+      "explain": "Q > 0: E hướng ra.",
+      "wrong_explain": {
+        "1": "Đó là Q < 0.",
+        "2": "Cùng phương đường nối.",
+        "3": "Không bằng 0."
+      },
+      "id": "q05"
+    },
+    {
+      "level": "Biết",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Đường sức điện của điện tích âm:",
+      "choices": [
+        "hướng vào điện tích",
+        "hướng ra xa",
+        "là đường tròn kín",
+        "cắt nhau"
+      ],
+      "answer": 0,
+      "explain": "Hướng vào Q < 0.",
+      "wrong_explain": {
+        "1": "Đó là Q > 0.",
+        "2": "Không kín.",
+        "3": "Đường sức không cắt nhau."
+      },
+      "id": "q06"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "r tăng 2 lần thì E giảm bao nhiêu lần?",
+      "expr": "2*2",
+      "answer": "4",
+      "explain": "E ∝ 1/r²: giảm 4 lần.",
+      "id": "q07"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Q = 4 nC; E tại r = 4 cm (V/m):",
+      "expr": "(9000000000*0.000000004)/(0.0016)",
+      "answer": "22500",
+      "explain": "E = 22500 V/m.",
+      "id": "q08"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Hạt bụi m = 10⁻⁶ kg, q = 2·10⁻⁸ C cân bằng, g = 10. E (V/m):",
+      "expr": "(0.000001*10)/(0.00000002)",
+      "answer": "500",
+      "explain": "E = 500 V/m.",
+      "id": "q09"
+    },
+    {
+      "level": "Hiểu",
+      "type": "fill",
+      "stem": "Điện tích q = −2·10⁻⁶ C trong E = 500 V/m. Độ lớn F (N):",
+      "expr": "0.000002*500",
+      "answer": "1/1000",
+      "explain": "F = 10⁻³ N.",
+      "id": "q10"
+    },
+    {
+      "level": "Hiểu",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Điện tích âm đặt trong điện trường chịu lực điện:",
+      "choices": [
+        "ngược chiều vectơ E",
+        "cùng chiều vectơ E",
+        "vuông góc E",
+        "không chịu lực"
+      ],
+      "answer": 0,
+      "explain": "q < 0 nên F ngược chiều E.",
+      "wrong_explain": {
+        "1": "Đó là q > 0.",
+        "2": "Cùng phương E.",
+        "3": "Có lực."
+      },
+      "id": "q11"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai điện tích Q₁ = 4 μC và Q₂ = 1 μC cùng dấu cách nhau 0,3 m. Điểm E = 0 cách Q₂ (m): r₂ = 0,3/3:",
+      "expr": "0.3/3",
+      "answer": "1/10",
+      "explain": "r₂ = 0,1 m.",
+      "id": "q12"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tại M có E₁ = 3000 V/m, E₂ = 4000 V/m cùng chiều. E tổng (V/m):",
+      "expr": "3000+4000",
+      "answer": "7000",
+      "explain": "E = 7000 V/m.",
+      "id": "q13"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tại M có E₁ = 3000 V/m, E₂ = 4000 V/m ngược chiều. E tổng (V/m):",
+      "expr": "4000-3000",
+      "answer": "1000",
+      "explain": "E = 1000 V/m.",
+      "id": "q14"
+    },
+    {
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hai vectơ vuông góc E₁ = 3 V/m, E₂ = 4 V/m. E² (V²/m²):",
+      "expr": "3*3+4*4",
+      "answer": "25",
+      "explain": "E² = 25 nên E = 5 V/m.",
+      "id": "q15"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "fill",
+      "stem": "Q = 4 nC; E ở khoảng cách 2 cm là 9·10⁴ V/m. Lực lên điện tích 1 nC đặt tại đó (N): 1e-9·9e4:",
+      "expr": "0.000000001*90000",
+      "answer": "9/100000",
+      "explain": "F = 9·10⁻⁵ N.",
+      "id": "q16"
+    },
+    {
+      "level": "Nâng cao",
+      "type": "mcq",
+      "concept": true,
+      "stem": "Nơi đường sức điện dày đặc thì:",
+      "choices": [
+        "cường độ điện trường lớn",
+        "cường độ điện trường nhỏ",
+        "không có điện trường",
+        "điện trường bằng nhau mọi điểm"
+      ],
+      "answer": 0,
+      "explain": "Mật độ đường sức đặc trưng độ lớn E.",
+      "wrong_explain": {
+        "1": "Ngược lại.",
+        "2": "Vẫn có điện trường.",
+        "3": "Điện trường không đều."
+      },
+      "id": "q17"
+    }
+  ]
+}
