@@ -92,3 +92,15 @@ CREATE TABLE IF NOT EXISTS order_prices (
   percent INTEGER,
   PRIMARY KEY (code, item)
 );
+
+-- Mỗi đơn có tối đa 2 chỗ thiết bị: 1 máy tính (win) và 1 điện thoại (android), mỗi chỗ một khóa riêng.
+-- Đơn cũ chưa có dòng nào được hiểu là đã dùng chỗ máy tính với orders.machine.
+CREATE TABLE IF NOT EXISTS order_devices (
+  code TEXT NOT NULL,
+  platform TEXT NOT NULL,
+  machine TEXT NOT NULL,
+  key TEXT,
+  issued_at TEXT,
+  PRIMARY KEY (code, platform)
+);
+CREATE INDEX IF NOT EXISTS idx_order_devices_machine ON order_devices (machine);

@@ -1,5 +1,5 @@
 import catalog from '../../renderer/catalog.js';
-import { HttpError, createOrder, orderStatus, applyPayment, listOrders, listUnmatched, approveOrder, cancelOrder, reissueOrder, attachTransaction, pinReset, revokeOrder, restoreOrder, revokeItem, restoreItem, ping, listPartnerCodes, createPartnerCode, setPartnerActive } from './orders.js';
+import { HttpError, createOrder, orderStatus, applyPayment, listOrders, listUnmatched, approveOrder, cancelOrder, reissueOrder, attachTransaction, pinReset, claimDevice, revokeOrder, restoreOrder, revokeItem, restoreItem, ping, listPartnerCodes, createPartnerCode, setPartnerActive } from './orders.js';
 import { adminPage } from './admin.js';
 import { receiptPage } from './receipt.js';
 
@@ -43,6 +43,10 @@ export async function handle(req, env, now = new Date()) {
       return json(await pinReset(db, await body(req), now));
     }
 
+    if (req.method === 'POST' && path === '/api/claim-device') {
+      return json(await claimDevice(db, env, catalog, await body(req), now));
+    }
+
     if (req.method === 'POST' && path === '/api/ping') {
       return json(await ping(db, await body(req), now, catalog));
     }
@@ -78,7 +82,7 @@ export async function handle(req, env, now = new Date()) {
         if (m[2] === 'revoke') { await revokeOrder(db, m[1], b.reason, now); return json({ ok: true }); }
         if (m[2] === 'restore') { await restoreOrder(db, m[1], now); return json({ ok: true }); }
         if (m[2] === 'cancel') { await cancelOrder(db, m[1], b.note); return json({ ok: true }); }
-        return json({ key: await reissueOrder(db, env, catalog, m[1], b.machine, now) });
+        return json({ key: await reissueOrder(db, env, catalog, m[1], b.machine, now, b.platform) });
       }
     }
     if (path === '/') return new Response('Nam Linh Educenter orders API', { status: 200 });

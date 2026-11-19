@@ -9,6 +9,10 @@ export const CODE_RE = /(?:^|[^A-Z0-9])NL[\s\-]*([ABCDEFGHJKMNPQRSTUVWXYZ2-9]{6}
 // Máy được coi là đang online nếu có tín hiệu trong 10 phút (phần mềm gửi mỗi 5 phút khi đang mở).
 export const ONLINE_MS = 10 * 60 * 1000;
 
+export const PLATFORMS = ['win', 'android'];
+export const PLATFORM_NAME = { win: 'máy tính', android: 'điện thoại' };
+const platformOf = (v) => (String(v || '').toLowerCase() === 'android' ? 'android' : 'win');
+
 export class HttpError extends Error {
   constructor(status, message) { super(message); this.status = status; }
 }
@@ -58,6 +62,7 @@ export async function createOrder(db, catalog, input, now = new Date(), rand) {
   const name = String(input.name || '').trim().replace(/\s+/g, ' ');
   const phone = String(input.phone || '').replace(/[\s.\-]/g, '');
   const machine = String(input.machineId || '').trim().toUpperCase();
+  const platform = platformOf(input.platform);
   const ids = Array.isArray(input.ids) ? [...new Set(input.ids.map(String))] : [];
   if (name.length < 2 || name.length > 80) throw new HttpError(400, 'Họ và tên không hợp lệ.');
   if (!PHONE_RE.test(phone)) throw new HttpError(400, 'Số điện thoại không hợp lệ.');
@@ -72,7 +77,7 @@ export async function createOrder(db, catalog, input, now = new Date(), rand) {
   const partner = await findPartner(db, input.partnerCode);
   // Mỗi mã đối tác chỉ dùng được trên một số máy nhất định (đếm máy khác nhau trong các đơn chưa hủy), tránh lạm dụng mã.
   if (partner && partner.max_machines) {
-    const used = (await db.prepare('SELECT DISTINCT o.machine FROM orders o JOIN order_prices op ON op.code = o.code WHERE op.partner_code = ?1 AND o.status != \'cancelled\'').bind(partner.code).all()).results.map((r) => r.machine);
+    const used = (await db.prepare('SELECT o.machine AS machine FROM orders o WHERE o.status != \'cancelled\' AND o.code IN (SELECT code FROM order_prices WHERE partner_code = ?1) UNION SELECT d.machine FROM order_devices d JOIN orders o ON o.code = d.code WHERE o.status != \'cancelled\' AND d.code IN (SELECT code FROM order_prices WHERE partner_code = ?1)').bind(partner.code).all()).results.map((r) => r.machine);
     if (!used.includes(machine) && used.length >= partner.max_machines) throw new HttpError(403, 'Mã đối tác đã dùng hết số máy được phép. Em liên hệ đối tác hoặc Nam Linh Educenter để được hỗ trợ.');
   }
   const lines = ids.map((id) => {
@@ -88,6 +93,7 @@ export async function createOrder(db, catalog, input, now = new Date(), rand) {
       await db.batch([
         db.prepare('INSERT INTO orders (code, name, phone, machine, items, amount, status, terms_version, terms_at, created_at) VALUES (?1,?2,?3,?4,?5,?6,\'pending\',?7,?8,?9)')
           .bind(code, name, phone, machine, JSON.stringify(ids), amount, String(input.terms.version).slice(0, 40), String(input.terms.at || '').slice(0, 40), nowIso(now)),
+        db.prepare('INSERT INTO order_devices (code, platform, machine, key, issued_at) VALUES (?1,?2,?3,NULL,NULL)').bind(code, platform, machine),
         ...lines.map((l) => db.prepare('INSERT INTO order_prices (code, item, list_price, paid_price, partner_code, percent) VALUES (?1,?2,?3,?4,?5,?6)')
           .bind(code, l.id, l.list, l.paid, partner ? partner.code : null, partner ? partner.percent : null)),
       ]);
@@ -108,7 +114,55 @@ export async function issueKey(db, env, catalog, order, now = new Date(), machin
   const o = machine ? { ...order, machine } : order;
   const key = await signKey(env.SIGNING_KEY_PEM, payloadFor(o, catalog, now));
   await db.prepare('UPDATE orders SET key = ?1, machine = ?2 WHERE code = ?3').bind(key, o.machine, order.code).run();
+  // Chỗ thiết bị của máy đặt đơn dùng chung khóa này (máy cũ trước khi đổi là order.machine).
+  await db.prepare('UPDATE order_devices SET key = ?1, machine = ?2, issued_at = ?3 WHERE code = ?4 AND machine = ?5').bind(key, o.machine, nowIso(now), order.code, order.machine).run();
   return key;
+}
+
+// Các chỗ thiết bị của đơn. Đơn cũ chưa có dòng nào thì chỗ máy tính là máy đặt đơn.
+export async function getSlots(db, o) {
+  const rows = (await db.prepare('SELECT platform, machine, key, issued_at FROM order_devices WHERE code = ?1').bind(o.code).all()).results;
+  const slots = { win: null, android: null };
+  for (const r of rows) slots[r.platform] = { machine: r.machine, key: r.key, issued_at: r.issued_at };
+  if (!rows.length) slots.win = { machine: o.machine, key: o.key || null, issued_at: null };
+  return slots;
+}
+
+// Khóa cho một chỗ thiết bị của đơn đã thanh toán; chỗ của máy đặt đơn dùng đường issueKey có sẵn.
+async function issueSlotKey(db, env, catalog, o, platform, machine, now) {
+  const slots = await getSlots(db, o);
+  const cur = slots[platform];
+  if (cur && cur.machine === o.machine) return issueKey(db, env, catalog, o, now, machine);
+  const key = await signKey(env.SIGNING_KEY_PEM, payloadFor({ ...o, machine }, catalog, now));
+  await db.prepare('INSERT INTO order_devices (code, platform, machine, key, issued_at) VALUES (?1,?2,?3,?4,?5) ON CONFLICT(code, platform) DO UPDATE SET machine = ?3, key = ?4, issued_at = ?5').bind(o.code, platform, machine, key, nowIso(now)).run();
+  return key;
+}
+
+// Khách nhập mã đơn + số điện thoại trên thiết bị còn lại để nhận khóa cho chỗ máy tính hoặc điện thoại của đơn.
+export async function claimDevice(db, env, catalog, input, now = new Date()) {
+  const machine = String(input.machineId || '').trim().toUpperCase();
+  const phone = String(input.phone || '').replace(/[\s.\-]/g, '');
+  const code = String(input.code || '').toUpperCase().replace(/[^A-Z0-9]/g, '').replace(/^NL(?=[A-Z0-9]{6}$)/, '');
+  const platform = platformOf(input.platform);
+  if (!MACHINE_RE.test(machine)) throw new HttpError(400, 'Không đọc được mã máy.');
+  const since = nowIso(new Date(now.getTime() - 3600_000));
+  const recent = await db.prepare('SELECT COUNT(*) AS n FROM pin_attempts WHERE machine = ?1 AND at > ?2').bind(machine, since).first();
+  if (recent.n >= 5) throw new HttpError(429, 'Thử quá nhiều lần. Vui lòng thử lại sau 1 giờ hoặc liên hệ hỗ trợ.');
+  const o = /^[A-Z0-9]{6}$/.test(code) && PHONE_RE.test(phone) ? await getOrder(db, code) : null;
+  const ok = !!o && o.status === 'paid' && o.phone === phone;
+  await db.prepare('INSERT INTO pin_attempts (machine, at, ok) VALUES (?1, ?2, ?3)').bind(machine, nowIso(now), ok ? 1 : 0).run();
+  if (!ok) throw new HttpError(404, 'Thông tin không khớp với đơn đã mua.');
+  if (await db.prepare('SELECT 1 AS x FROM revocations WHERE code = ?1 AND restored_at IS NULL').bind(o.code).first()) throw new HttpError(403, 'Đơn này đã bị thu hồi bản quyền.');
+  const slots = await getSlots(db, o);
+  const cur = slots[platform];
+  if (cur && cur.machine !== machine) throw new HttpError(409, 'Đơn này đã dùng chỗ ' + PLATFORM_NAME[platform] + ' cho thiết bị khác. Liên hệ Nam Linh Educenter để đổi thiết bị.');
+  if (!cur && slots.win && slots.win.machine === machine) throw new HttpError(409, 'Mã máy này đã thuộc chỗ khác của đơn.');
+  // Đơn cũ chưa có dòng nào: ghi lại chỗ máy tính hiện có trước khi thêm chỗ mới.
+  if (!(await db.prepare('SELECT 1 AS x FROM order_devices WHERE code = ?1').bind(o.code).first())) {
+    await db.prepare('INSERT INTO order_devices (code, platform, machine, key, issued_at) VALUES (?1,\'win\',?2,?3,NULL)').bind(o.code, o.machine, o.key || null).run();
+  }
+  const key = cur && cur.key ? cur.key : await issueSlotKey(db, env, catalog, o, platform, machine, now);
+  return { key, platform, code: o.code, items: JSON.parse(o.items) };
 }
 
 export async function getOrder(db, code) {
@@ -189,6 +243,8 @@ export async function listOrders(db, { status, q } = {}, now = new Date()) {
   const revs = (await db.prepare('SELECT code, reason, revoked_at FROM revocations WHERE restored_at IS NULL').all()).results;
   const byDev = new Map(); for (const d of devs) { if (!byDev.has(d.code)) byDev.set(d.code, []); byDev.get(d.code).push({ machine: d.machine, version: d.version, first_seen: d.first_seen, last_seen: d.last_seen, online: now - new Date(d.last_seen) < ONLINE_MS }); }
   const byRev = new Map(revs.map((r) => [r.code, { reason: r.reason, at: r.revoked_at }]));
+  const slotRows = (await db.prepare('SELECT code, platform, machine, issued_at FROM order_devices').all()).results;
+  const bySlot = new Map(); for (const r of slotRows) { if (!bySlot.has(r.code)) bySlot.set(r.code, {}); bySlot.get(r.code)[r.platform] = { machine: r.machine, issued_at: r.issued_at }; }
   const itemRevs = (await db.prepare('SELECT code, item, reason, revoked_at FROM item_revocations WHERE restored_at IS NULL').all()).results;
   const byItem = new Map(); for (const r of itemRevs) { if (!byItem.has(r.code)) byItem.set(r.code, []); byItem.get(r.code).push({ item: r.item, reason: r.reason, at: r.revoked_at }); }
   // Giá từng khóa và mã đối tác của các đơn đang hiển thị (để biết số tiền hoàn cho từng khóa).
@@ -202,13 +258,17 @@ export async function listOrders(db, { status, q } = {}, now = new Date()) {
   }
   return orders.map((o) => {
     const pr = byPrice.get(o.code) || { prices: {}, partner: null };
-    return { ...o, devices: byDev.get(o.code) || [], revoked: byRev.get(o.code) || null, item_revoked: byItem.get(o.code) || [], prices: pr.prices, partner: pr.partner };
+    // Đơn cũ chưa có dòng chỗ thiết bị: chỗ máy tính là máy đặt đơn.
+    const slots = bySlot.get(o.code) || { win: { machine: o.machine, issued_at: null } };
+    const known = new Set(Object.values(slots).map((x) => x.machine));
+    const devices = (byDev.get(o.code) || []).map((d) => ({ ...d, platform: Object.keys(slots).find((k) => slots[k].machine === d.machine) || null, stranger: !known.has(d.machine) }));
+    return { ...o, slots, devices, revoked: byRev.get(o.code) || null, item_revoked: byItem.get(o.code) || [], prices: pr.prices, partner: pr.partner };
   });
 }
 
 // Mã đối tác: danh sách (kèm số đơn đã dùng), tạo mới, bật/tắt.
 export async function listPartnerCodes(db) {
-  return (await db.prepare('SELECT p.code, p.partner, p.percent, p.active, p.created_at, (SELECT COUNT(DISTINCT op.code) FROM order_prices op WHERE op.partner_code = p.code) AS used, l.max_machines, (SELECT COUNT(DISTINCT o.machine) FROM orders o JOIN order_prices op ON op.code = o.code WHERE op.partner_code = p.code AND o.status != \'cancelled\') AS machines FROM partner_codes p LEFT JOIN partner_limits l ON l.code = p.code ORDER BY p.created_at DESC').all()).results;
+  return (await db.prepare('SELECT p.code, p.partner, p.percent, p.active, p.created_at, (SELECT COUNT(DISTINCT op.code) FROM order_prices op WHERE op.partner_code = p.code) AS used, l.max_machines, (SELECT COUNT(*) FROM (SELECT o.machine AS m FROM orders o WHERE o.status != \'cancelled\' AND o.code IN (SELECT code FROM order_prices WHERE partner_code = p.code) UNION SELECT d.machine FROM order_devices d JOIN orders o ON o.code = d.code WHERE o.status != \'cancelled\' AND d.code IN (SELECT code FROM order_prices WHERE partner_code = p.code))) AS machines FROM partner_codes p LEFT JOIN partner_limits l ON l.code = p.code ORDER BY p.created_at DESC').all()).results;
 }
 
 export async function createPartnerCode(db, input, now = new Date()) {
@@ -218,7 +278,7 @@ export async function createPartnerCode(db, input, now = new Date()) {
   if (!PARTNER_RE.test(code)) throw new HttpError(400, 'Mã phải gồm chữ, số hoặc dấu gạch ngang, dài 3 đến 20 ký tự.');
   if (partner.length < 2 || partner.length > 60) throw new HttpError(400, 'Tên đối tác phải từ 2 đến 60 ký tự.');
   if (!Number.isInteger(percent) || percent < 1 || percent > 99) throw new HttpError(400, 'Tỉ lệ giảm phải là số nguyên từ 1 đến 99.');
-  const maxMachines = Number(input.maxMachines === undefined || input.maxMachines === '' ? 5 : input.maxMachines);
+  const maxMachines = Number(input.maxMachines === undefined || input.maxMachines === '' ? 10 : input.maxMachines);
   if (!Number.isInteger(maxMachines) || maxMachines < 1 || maxMachines > 1000) throw new HttpError(400, 'Số máy tối đa phải là số nguyên từ 1 đến 1000.');
   try {
     await db.batch([
@@ -258,12 +318,18 @@ export async function cancelOrder(db, code, note) {
 }
 
 // Đổi máy: cấp lại key cho mã máy mới.
-export async function reissueOrder(db, env, catalog, code, machine, now = new Date()) {
+export async function reissueOrder(db, env, catalog, code, machine, now = new Date(), platform) {
   const o = await getOrder(db, code);
   const m = String(machine || '').trim().toUpperCase();
   if (!o || o.status !== 'paid') throw new HttpError(404, 'Chỉ cấp lại cho đơn đã thanh toán.');
   if (!MACHINE_RE.test(m)) throw new HttpError(400, 'Mã máy phải có dạng XXXX-XXXX-XXXX.');
-  const key = await issueKey(db, env, catalog, o, now, m);
+  const slots = await getSlots(db, o);
+  // Không nói rõ chỗ nào: giữ cách cũ, cấp lại cho chỗ của máy đặt đơn.
+  const want = platform ? platformOf(platform) : (Object.keys(slots).find((k) => slots[k] && slots[k].machine === o.machine) || 'win');
+  if (!(await db.prepare('SELECT 1 AS x FROM order_devices WHERE code = ?1').bind(o.code).first())) {
+    await db.prepare('INSERT INTO order_devices (code, platform, machine, key, issued_at) VALUES (?1,\'win\',?2,?3,NULL)').bind(o.code, o.machine, o.key || null).run();
+  }
+  const key = await issueSlotKey(db, env, catalog, o, want, m, now);
   await db.prepare('UPDATE orders SET reissues = reissues + 1 WHERE code = ?1').bind(o.code).run();
   return key;
 }
@@ -297,7 +363,8 @@ export async function pinReset(db, input, now = new Date()) {
   const recent = await db.prepare('SELECT COUNT(*) AS n FROM pin_attempts WHERE machine = ?1 AND at > ?2').bind(machine, since).first();
   if (recent.n >= 5) throw new HttpError(429, 'Thử quá nhiều lần. Vui lòng thử lại sau 1 giờ hoặc liên hệ hỗ trợ.');
   const o = /^[A-Z0-9]{6}$/.test(code) && PHONE_RE.test(phone) ? await getOrder(db, code) : null;
-  const ok = !!o && o.status === 'paid' && o.machine === machine && o.phone === phone;
+  const onSlot = !!o && (o.machine === machine || !!(await db.prepare('SELECT 1 AS x FROM order_devices WHERE code = ?1 AND machine = ?2').bind(o.code, machine).first()));
+  const ok = !!o && o.status === 'paid' && onSlot && o.phone === phone;
   await db.prepare('INSERT INTO pin_attempts (machine, at, ok) VALUES (?1, ?2, ?3)').bind(machine, nowIso(now), ok ? 1 : 0).run();
   if (!ok) throw new HttpError(404, 'Thông tin không khớp với đơn đã mua trên máy này.');
   return { ok: true };

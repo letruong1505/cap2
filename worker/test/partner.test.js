@@ -152,9 +152,9 @@ test('mã đối tác giới hạn số máy: máy mới vượt giới hạn b�
   await createOrder(db, catalog, input({ machineId: 'CCCC-CCCC-CCCC' }), NOW, rnd(4));
 });
 
-test('số máy tối đa mặc định 5 và phải là số nguyên từ 1 đến 1000', async () => {
+test('số máy tối đa mặc định 10 và phải là số nguyên từ 1 đến 1000', async () => {
   const db = fakeD1();
-  assert.equal((await createPartnerCode(db, { code: 'M-1', partner: 'Ab' }, NOW)).maxMachines, 5);
+  assert.equal((await createPartnerCode(db, { code: 'M-1', partner: 'Ab' }, NOW)).maxMachines, 10);
   await assert.rejects(createPartnerCode(db, { code: 'M-2', partner: 'Ab', maxMachines: 0 }, NOW), HttpError);
   await assert.rejects(createPartnerCode(db, { code: 'M-3', partner: 'Ab', maxMachines: 1001 }, NOW), HttpError);
 });
