@@ -848,3 +848,9 @@ button.ghost:hover { background: var(--paper); }
 .price-option { transition: transform .15s, box-shadow .15s; }
 .price-option:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(20, 48, 79, .12); }
 @media (prefers-reduced-motion: reduce) { .price-option, .price-option:hover { transition: none; transform: none; } }
+
+/* Nhận khóa cho thiết bị còn lại (1 máy tính + 1 điện thoại) */
+.license-claim { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--rule); }
+.license-claim h3 { margin: 0 0 4px; font-size: 16px; }
+.license-claim .license-form { flex-wrap: wrap; margin-top: 10px; }
+.license-claim .license-form input { flex: 1 1 160px; min-width: 0; }

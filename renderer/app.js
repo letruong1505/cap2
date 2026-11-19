@@ -544,7 +544,7 @@ function licenseDaysLeft(expiresOn) {
 
 const LICENSE_MESSAGES = {
   invalid: 'Khoá không hợp lệ. Hãy kiểm tra lại và dán đủ toàn bộ khoá.',
-  'wrong-machine': 'Khoá này được cấp cho máy khác.',
+  'wrong-machine': 'Khoá này được cấp cho thiết bị khác. Nếu bạn đã mua, hãy nhập mã đơn và số điện thoại ở mục "Đã mua ở thiết bị khác" bên dưới để nhận khóa cho thiết bị này.',
   revoked: 'Khóa này đã bị thu hồi. Liên hệ Zalo 0968 646 853 để được hỗ trợ.',
   expired: 'Khoá đã hết hạn. Liên hệ Nam Linh Educenter để gia hạn.',
   clock: 'Đồng hồ máy bị chỉnh lùi. Hãy chỉnh lại đúng ngày giờ.',
@@ -603,7 +603,7 @@ function renderLicense(license) {
     for (const id of license.courses || []) courses.push(window.NL_CATALOG.byId[id]?.name || id);
     if (license.expiresOn === 'never') {
       termBig = 'Vĩnh viễn';
-      termSmall = 'Không giới hạn thời gian trên máy này';
+      termSmall = 'Không giới hạn thời gian trên thiết bị này';
     } else {
       const left = licenseDaysLeft(license.expiresOn);
       termBig = `${left} ngày`;
@@ -637,7 +637,43 @@ function renderLicense(license) {
     }
   });
   children.push(el('div', { class: 'license-form' }, input, btn), msg);
+  if (window.vungBai.claimDevice) children.push(claimDeviceBox());
   info.replaceChildren(...children);
+}
+
+// Một đơn dùng được cho 1 máy tính và 1 điện thoại: nhập mã đơn + số điện thoại đã mua để nhận khóa cho thiết bị này.
+function claimDeviceBox() {
+  const code = el('input', { type: 'text', id: 'claim-code', placeholder: 'Mã đơn (6 ký tự)', maxlength: '8', autocomplete: 'off', spellcheck: 'false' });
+  const phone = el('input', { type: 'tel', id: 'claim-phone', placeholder: 'Số điện thoại đã mua', maxlength: '15', autocomplete: 'off' });
+  const btn = el('button', { type: 'button', class: 'primary' }, 'Nhận khóa');
+  const msg = el('div', { class: 'muted', id: 'claim-msg', role: 'status' });
+  btn.addEventListener('click', async () => {
+    msg.textContent = '';
+    if (!code.value.trim() || !phone.value.trim()) { msg.textContent = 'Nhập đủ mã đơn và số điện thoại đã dùng khi mua.'; return; }
+    btn.disabled = true;
+    try {
+      const r = await window.vungBai.claimDevice({ code: code.value, phone: phone.value });
+      if (r.ok && r.license && r.license.status === 'ok') {
+        code.value = ''; phone.value = '';
+        await refreshLicense();
+        document.getElementById('license-msg').textContent = 'Đã nhận khóa cho thiết bị này.';
+      } else if (r.ok) {
+        msg.textContent = LICENSE_MESSAGES[r.license && r.license.status] || 'Không kích hoạt được khóa nhận về. Liên hệ Zalo 0968 646 853.';
+      } else {
+        msg.textContent = r.offline ? 'Cần kết nối mạng để nhận khóa. Hãy kiểm tra mạng rồi thử lại.' : (r.error || 'Không nhận được khóa.');
+      }
+    } catch {
+      msg.textContent = 'Không nhận được khóa. Hãy thử lại.';
+    } finally {
+      btn.disabled = false;
+    }
+  });
+  return el('div', { class: 'license-claim' },
+    el('h3', {}, 'Đã mua ở thiết bị khác?'),
+    el('div', { class: 'muted' }, 'Mỗi đơn dùng được cho 1 máy tính và 1 điện thoại. Nhập mã đơn và số điện thoại đã mua để nhận khóa cho thiết bị này (cần có mạng).'),
+    el('div', { class: 'license-form' }, code, phone, btn),
+    msg,
+  );
 }
 
 function renderGrades() {

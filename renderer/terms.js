@@ -17,7 +17,7 @@ window.NL_TERMS = {
       'Sau khi thanh toán, người mua có thể tải phiếu xác nhận thanh toán trong phần mềm hoặc xem lại trên web bằng mã đơn và số điện thoại. Phiếu xác nhận không phải hóa đơn giá trị gia tăng.']],
     ['5. Kích hoạt khóa học', [
       'Sau khi xác nhận thanh toán, Nam Linh Technology gửi khóa kích hoạt qua số điện thoại hoặc Zalo người mua đã cung cấp. Phần mềm tự kích hoạt khi có kết nối mạng; nếu không, người mua dán khóa vào ô "Đổi khóa" trong phần mềm để kích hoạt.',
-      'Khóa kích hoạt gắn với mã máy. Khi cần chuyển sang máy khác, người mua liên hệ Nam Linh Technology để được hỗ trợ.']],
+      'Mỗi đơn dùng được cho 01 máy tính và 01 điện thoại; khóa kích hoạt gắn với mã của từng thiết bị. Khi cần chuyển sang thiết bị khác, người mua liên hệ Nam Linh Technology để được hỗ trợ.']],
     ['6. Hủy đơn và hoàn tiền', [
       'Trước khi Nam Linh Technology gửi khóa kích hoạt, người mua có thể hủy đơn và được hoàn lại toàn bộ số tiền đã chuyển.',
       'Khi hoàn tiền cho một khóa học trong đơn, số tiền hoàn là số tiền người mua đã trả cho khóa đó, tức là giá sau giảm nếu đơn có mã đối tác.',
