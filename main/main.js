@@ -51,6 +51,15 @@ ipcMain.handle('license:activate', (_event, key) => {
   return r;
 });
 ipcMain.handle('order:create', (_event, order) => orders.createOrder(order));
+// Nhận khóa cho máy tính này từ đơn mua trên điện thoại, kích hoạt luôn và báo máy chủ.
+ipcMain.handle('device:claim', async (_event, o) => {
+  const r = await orders.claimDevice(o);
+  if (r.ok && r.data && r.data.key) {
+    r.license = lic.activate(licenseStoreDir(), r.data.key);
+    if (heartbeat) heartbeat.beat().catch(() => {});
+  }
+  return r;
+});
 ipcMain.handle('pin:reset', (_event, o) => orders.pinReset(o));
 ipcMain.handle('order:status', (_event, code) => orders.orderStatus(code));
 ipcMain.handle('license:remove', () => { lic.deactivate(licenseStoreDir()); return licenseNow(); });

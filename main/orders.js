@@ -28,6 +28,8 @@ function makeClient({ baseUrl = readBaseUrl, fetchFn = (...a) => fetch(...a), ma
       partnerCode: String(o && o.partnerCode || '').trim().slice(0, 20),
       terms: { version: String(o && o.terms && o.terms.version || ''), at: String(o && o.terms && o.terms.at || '') }, machineId: machineId(),
     }),
+    // Nhận khóa cho máy tính này từ đơn mua trên điện thoại: nhập mã đơn + số điện thoại đã mua.
+    claimDevice: (o) => call('POST', '/api/claim-device', { phone: String(o && o.phone || ''), code: String(o && o.code || ''), machineId: machineId(), platform: 'win' }),
     pinReset: (o) => call('POST', '/api/pin-reset', { phone: String(o && o.phone || ''), code: String(o && o.code || ''), machineId: machineId() }),
     // Tín hiệu "máy này đang mở phần mềm" + nhận danh sách mã đơn bị thu hồi. Chỉ gửi mã máy, mã đơn và số bản, không gửi dữ liệu học tập.
     ping: (o) => call('POST', '/api/ping', { machineId: machineId(), ids: Array.isArray(o && o.ids) ? o.ids.map(String) : [], version: String(o && o.version || '') }),
