@@ -29,6 +29,7 @@
       seconds: (Date.now() - (attempt.started || Date.now())) / 1000,
     }), wrong, right);
     P.save(store(), data);
+    if (window.VungProgressSync) window.VungProgressSync.schedule();
   }
 
   const DOW = ['Chủ nhật', 'Thứ hai', 'Thứ ba', 'Thứ tư', 'Thứ năm', 'Thứ sáu', 'Thứ bảy'];
@@ -348,6 +349,9 @@
     body.append(h('p', { class: 'meta' }, `Sổ câu sai: ${book.length} câu, ${P.due(data, now, grade).length} câu đến hạn ôn`));
     body.append(h('div', { class: 'goal-box', id: 'goal-box-report' }));
     renderGoals(document.getElementById('goal-box-report') || body.lastChild, grade);
+    const syncBox = h('div', { class: 'goal-box' });
+    body.append(syncBox);
+    if (window.VungProgressSync && !window.VungProgressUI.parentOnly) window.VungProgressSync.renderBox(syncBox, () => renderReport(body, grade));
     const pinBox = h('div', { class: 'goal-box' });
     body.append(pinBox);
     if (window.VungPinUI) window.VungPinUI.renderSettings(pinBox, () => renderReport(body, grade));
@@ -365,6 +369,89 @@
     body.append(nameIn, btn, msg);
   }
 
+  /* ---------- Phụ huynh xem trên điện thoại (dữ liệu do máy tính của học sinh gửi lên) ---------- */
+  const PV_KEY = 'vungbai.parentview.v1';
+  const pvLoad = () => { try { return JSON.parse(store().getItem(PV_KEY) || '{}') || {}; } catch (e) { return {}; } };
+  const pvSave = (v) => { try { v ? store().setItem(PV_KEY, JSON.stringify(v)) : store().removeItem(PV_KEY); } catch (e) { /* bỏ qua */ } };
+  const pvView = { period: '7', subject: '', grade: 0, from: null, to: null };
+
+  function renderParentView(body, notice) {
+    body.replaceChildren();
+    const S = window.VungProgressSync;
+    const saved = pvLoad();
+    body.append(h('h1', {}, 'Xem con học'));
+    if (!saved.code || !saved.phone) {
+      body.append(h('p', { class: 'meta' }, 'Nhập mã đơn và số điện thoại đã dùng khi mua để xem kết quả học do máy tính của con gửi lên.'));
+      const code = h('input', { type: 'text', maxlength: '14', placeholder: 'Mã đơn, ví dụ 3KAHFK', autocomplete: 'off', 'aria-label': 'Mã đơn' });
+      const phone = h('input', { type: 'tel', maxlength: '14', placeholder: 'Số điện thoại đã mua', autocomplete: 'off', 'aria-label': 'Số điện thoại đã mua' });
+      const msg = h('p', { class: 'meta', role: 'status' }, notice || '');
+      const go = h('button', { type: 'button', class: 'primary' }, 'Xem kết quả');
+      go.addEventListener('click', () => {
+        const c = code.value.toUpperCase().replace(/[^A-Z0-9]/g, '').replace(/^NL(?=[A-Z0-9]{6}$)/, '');
+        const p = phone.value.replace(/[\s.\-]/g, '');
+        if (!/^[A-Z0-9]{6}$/.test(c) || !/^(0|\+84)\d{9}$/.test(p)) { msg.textContent = 'Kiểm tra lại mã đơn (6 ký tự) và số điện thoại.'; return; }
+        pvSave({ code: c, phone: p }); renderParentView(body);
+      });
+      body.append(h('div', { class: 'license-form' }, code, phone, go), msg);
+      return;
+    }
+    const msg = h('p', { class: 'meta', role: 'status' }, 'Đang tải...');
+    body.append(msg);
+    const now = Date.now(); const today = new Date(now).setHours(0, 0, 0, 0);
+    const rg = rangeOf(pvView.period, now, pvView.from, pvView.to);
+    window.vungBai.progressView({ code: saved.code, phone: saved.phone, from: S.isoOf(rg.from), to: S.isoOf(rg.to), grade: pvView.grade }).then((res) => {
+      if (!res.ok) {
+        if (res.offline) { msg.textContent = 'Không có mạng. Vui lòng thử lại.'; body.append(h('button', { type: 'button' }, 'Thử lại')); body.lastChild.addEventListener('click', () => renderParentView(body)); return; }
+        pvSave(null); renderParentView(body, res.error || 'Không xem được.'); return;
+      }
+      const d = res.data; const rerender = () => renderParentView(body);
+      msg.remove();
+      body.append(h('p', { class: 'meta' }, `${d.name ? d.name + ' · ' : ''}Đơn ${d.code}${d.lastSync ? ' · cập nhật lúc ' + new Date(d.lastSync).toLocaleString('vi-VN') : ''}`));
+      if (!d.enabled) {
+        body.append(h('div', { class: 'goal-box' }, h('p', {}, 'Chưa có dữ liệu. Trên máy tính của con, vào "Báo cáo cho phụ huynh" và bật "Cho phụ huynh xem trên điện thoại".')));
+      } else {
+        const perSel = h('select', { 'aria-label': 'Khoảng thời gian' });
+        PERIODS.forEach(([k, t]) => { const o = h('option', { value: k }, t); if (k === pvView.period) o.selected = true; perSel.append(o); });
+        perSel.addEventListener('change', () => { pvView.period = perSel.value; if (pvView.period === 'custom' && pvView.from == null) { pvView.from = rg.from; pvView.to = rg.to; } rerender(); });
+        const ctl = h('div', { class: 'rep-ctl' }, h('label', {}, 'Thời gian ', perSel));
+        if (d.courses.length > 1) {
+          const cs = h('select', { 'aria-label': 'Khóa học' }); cs.append(h('option', { value: '0' }, 'Tất cả các khóa'));
+          d.courses.forEach((c) => { const o = h('option', { value: String(c.grade) }, c.name); if (c.grade === pvView.grade) o.selected = true; cs.append(o); });
+          cs.addEventListener('change', () => { pvView.grade = Number(cs.value); rerender(); });
+          ctl.append(h('label', {}, 'Khóa học ', cs));
+        } else if (pvView.grade) pvView.grade = 0;
+        const subs = [...new Set(d.rows.map((r) => r.subject))];
+        const ss = h('select', { 'aria-label': 'Môn học' }); ss.append(h('option', { value: '' }, 'Tất cả môn'));
+        subs.forEach((k) => { const o = h('option', { value: k }, subjName(k)); if (k === pvView.subject) o.selected = true; ss.append(o); });
+        ss.addEventListener('change', () => { pvView.subject = ss.value; rerender(); });
+        ctl.append(h('label', {}, 'Môn học ', ss));
+        if (pvView.period === 'custom') {
+          const f = h('input', { type: 'date', value: iso(rg.from), max: iso(today), 'aria-label': 'Từ ngày' });
+          const t = h('input', { type: 'date', value: iso(rg.to), max: iso(today), 'aria-label': 'Đến ngày' });
+          const onDate = () => { if (f.value && t.value) { pvView.from = fromIso(f.value); pvView.to = fromIso(t.value); rerender(); } };
+          f.addEventListener('change', onDate); t.addEventListener('change', onDate);
+          ctl.append(h('label', {}, 'Từ ', f), h('label', {}, 'Đến ', t));
+        }
+        body.append(ctl);
+        const r = S.buildReport(d.rows, { from: rg.from, to: rg.to, subject: pvView.subject, grade: pvView.grade }, d.goals);
+        body.append(h('p', { class: 'meta' }, `${fmtFull(r.from)} → ${fmtFull(r.to)}`));
+        body.append(h('div', { class: 'goal-box' }, h('h2', {}, 'Chất lượng làm bài'), qualityBar(r.correct, r.total, true)));
+        if (r.days.length > 1 || r.total) body.append(h('h2', { class: 'rep-h' }, r.days.length <= 7 ? 'Lịch tuần' : 'Lịch học'), calendar(r, today));
+        if (r.subjects.length) {
+          const box = h('div', { class: 'goal-box' }, h('h2', {}, 'Theo môn học'));
+          r.subjects.forEach((s) => box.append(h('p', {}, `${subjName(s.subject)} lớp ${s.grade}: ${s.lessons} bài`), qualityBar(s.correct, s.total, true)));
+          body.append(box);
+        }
+        const ul = h('ul', { class: 'report-list' });
+        lines(r).forEach((t) => ul.append(h('li', {}, t.replace(/^\s*•\s*/, ''))));
+        body.append(ul);
+      }
+      const out = h('button', { type: 'button' }, 'Đổi đơn khác / Thoát');
+      out.addEventListener('click', () => { pvSave(null); renderParentView(body); });
+      body.append(out);
+    });
+  }
+
   function refreshBadge() {
     const set = (id, label, n) => {
       const b = document.getElementById(id);
@@ -377,5 +464,5 @@
     if (g) set('open-review-grade', `Sổ câu sai lớp ${g}`, dueCount(g));
   }
 
-  window.VungProgressUI = { scope: 0, renderGoals, record, renderReview, renderReport, refreshBadge, dueCount };
+  window.VungProgressUI = { scope: 0, renderGoals, record, renderReview, renderReport, renderParentView, refreshBadge, dueCount };
 })();

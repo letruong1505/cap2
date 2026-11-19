@@ -47,6 +47,9 @@
       createOrder: function (order) { return client.createOrder(order); },
       pinReset: function (x) { return client.pinReset(x); },
       orderStatus: function (code) { return client.orderStatus(code); },
+      progressSettings: function (x) { return client.progressSettings(x); },
+      progressPush: function (x) { return client.progressPush(x); },
+      progressView: function (x) { return client.progressView(x); },
       // Nhận khóa cho điện thoại này từ đơn mua ở thiết bị khác (mã đơn + số điện thoại), rồi kích hoạt luôn.
       claimDevice: function (x) {
         return client.claimDevice(x).then(function (r) {

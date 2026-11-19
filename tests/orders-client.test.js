@@ -45,3 +45,17 @@ test('gửi mã đối tác lên máy chủ, đã trim và cắt độ dài', as
   await c.createOrder({ name: 'A', phone: '0912345678', ids: ['gia-su-ai'], terms: { version: '1', at: 't' } });
   assert.strictEqual(sent.partnerCode, '');
 });
+
+test('tiến độ cho phụ huynh: mã máy do tiến trình chính thêm, mã máy từ giao diện bị bỏ', async () => {
+  const sent = [];
+  const c = makeClient({ baseUrl: () => 'https://x.test', machineId: () => 'AAAA-BBBB-CCCC',
+    fetchFn: async (url, opt) => { sent.push({ url, body: JSON.parse(opt.body) }); return { status: 200, ok: true, json: async () => ({}) }; } });
+  await c.progressSettings({ code: 'ABCDEF', enabled: true, machineId: 'GIẢ' });
+  await c.progressPush({ code: 'ABCDEF', days: [{ day: '2026-11-17' }], machineId: 'GIẢ' });
+  await c.progressView({ code: 'ABCDEF', phone: '0912345678', grade: '9', from: '2026-11-01', machineId: 'GIẢ' });
+  assert.deepStrictEqual(sent.map((s) => s.url), ['https://x.test/api/progress/settings', 'https://x.test/api/progress/push', 'https://x.test/api/progress/view']);
+  sent.forEach((s) => assert.strictEqual(s.body.machineId, 'AAAA-BBBB-CCCC'));
+  assert.strictEqual(sent[0].body.enabled, true);
+  assert.strictEqual(sent[1].body.days.length, 1);
+  assert.strictEqual(sent[2].body.grade, 9);
+});

@@ -311,7 +311,7 @@ function updateScore(lesson, attempt) {
 }
 
 function showOnly(id) {
-  for (const sec of ['launch', 'subjects', 'home', 'lesson', 'games', 'game', 'national', 'aiwork', 'examprep', 'thpt', 'purchase', 'review', 'report', 'empty']) {
+  for (const sec of ['launch', 'subjects', 'home', 'lesson', 'games', 'game', 'national', 'aiwork', 'examprep', 'thpt', 'purchase', 'review', 'report', 'parent-view', 'empty']) {
     document.getElementById(sec).hidden = sec !== id;
   }
 }
@@ -887,6 +887,17 @@ async function init() {
     document.getElementById('open-report').addEventListener('click', () => openProg('report', 0));
     document.getElementById('open-review-grade').addEventListener('click', () => openProg('review', currentGrade));
     document.getElementById('open-report-grade').addEventListener('click', () => openProg('report', currentGrade));
+    // Màn hình phụ huynh xem kết quả học do máy tính gửi lên (chỉ có trên điện thoại).
+    const openParent = document.getElementById('open-parent-view');
+    if (window.vungBai.platform === 'android' && window.vungBai.progressView) {
+      openParent.hidden = false;
+      openParent.addEventListener('click', async () => {
+        if (window.VungPinUI && !(await window.VungPinUI.ensureUnlocked())) return;
+        window.VungProgressUI.renderParentView(document.getElementById('parent-body'));
+        showOnly('parent-view');
+      });
+      document.getElementById('btn-parent-back').addEventListener('click', () => showLaunch());
+    }
     document.getElementById('btn-review-back').addEventListener('click', backProg);
     document.getElementById('btn-report-back').addEventListener('click', backProg);
     document.getElementById('open-purchase').addEventListener('click', () => showPurchase());

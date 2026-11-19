@@ -153,5 +153,7 @@
     }
   }
 
-  window.VungPinUI = { ensureUnlocked, renderSettings };
+  /* Hỏi lại mã PIN hiện tại trước thao tác nhạy cảm; chưa đặt PIN thì cho qua. */
+  const guard = (title, text, okLabel) => (PIN && PIN.isSet(store()) ? confirmWithPin(title, text, okLabel) : Promise.resolve(true));
+  window.VungPinUI = { ensureUnlocked, renderSettings, guard };
 })();

@@ -1,4 +1,5 @@
 ## Bản mới
+- Phụ huynh xem kết quả học của con trên điện thoại (tùy chọn, mặc định tắt): bật ở phần Báo cáo cho phụ huynh trên máy tính, xem theo ngày hoặc khoảng ngày bằng mã đơn và số điện thoại đã mua; chọn từng khóa hoặc tất cả.
 - Tắt hoặc đổi mã PIN phụ huynh phải nhập đúng mã PIN hiện tại.
 - Bản Android tự cập nhật: tự tải và dùng bản sửa lỗi ở lần mở sau, chỉ phải cài lại khi có thay đổi lớn.
 - Bản Android: nghe phát âm từ vựng tiếng Anh bằng giọng đọc của điện thoại.

@@ -28,6 +28,7 @@ window.NL_TERMS = {
     ['8. Dữ liệu cá nhân', [
       'Nam Linh Technology thu thập họ tên, số điện thoại và mã máy của người mua để xử lý đơn hàng, cấp khóa kích hoạt và hỗ trợ sau bán hàng. Khi người mua bấm tạo mã thanh toán, các thông tin này được gửi đến máy chủ của Nam Linh Technology cùng thông tin các khóa học đã chọn và thời điểm đồng ý điều khoản. Nếu không có kết nối mạng, người mua có thể gửi thông tin đơn hàng qua Zalo.',
       'Nam Linh Technology không bán hoặc chia sẻ thông tin này cho bên thứ ba, trừ khi pháp luật yêu cầu. Người mua có quyền yêu cầu xem, sửa hoặc xóa thông tin của mình bằng cách liên hệ Nam Linh Technology.',
+      'Kết quả học tập (số câu đúng/sai theo ngày, môn, lớp, chương) chỉ lưu trên thiết bị của học sinh. Chỉ khi phụ huynh chủ động bật mục "Cho phụ huynh xem trên điện thoại", thiết bị mới gửi bản tóm tắt theo ngày (không gồm từng câu trả lời) lên máy chủ của Nam Linh Technology để phụ huynh xem bằng mã đơn và số điện thoại đã mua. Phụ huynh có thể tắt và xóa dữ liệu này bất cứ lúc nào trong phần mềm hoặc liên hệ Nam Linh Technology để xóa.',
       'Việc xử lý dữ liệu cá nhân tuân thủ quy định pháp luật Việt Nam về bảo vệ dữ liệu cá nhân.']],
     ['9. Về nội dung khóa học', [
       'Nội dung nhằm hỗ trợ học tập và rèn kỹ năng. Nam Linh Technology không cam kết kết quả thi hay điểm số cụ thể.',
