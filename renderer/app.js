@@ -824,10 +824,11 @@ function setupUpdateBar() {
     } else if (st.state === 'checking' && manual) {
       msg.textContent = 'Đang kiểm tra bản mới…';
     } else if ((st.state === 'none' || st.state === 'error') && manual) {
-      manual = false;
+      // Giữ thông báo cho đến khi bấm Đóng: trên Android trạng thái được báo hai lần liên tiếp (sự kiện rồi kết quả), nếu xóa cờ ngay thì thông báo biến mất tức thì.
       msg.textContent = st.state === 'none' ? 'Bạn đang dùng phiên bản mới nhất.' : 'Chưa kiểm tra được (không có mạng?).';
-      acts = [btn('Đóng', () => { bar.hidden = true; }, 'ghost')];
+      acts = [btn('Đóng', () => { manual = false; bar.hidden = true; }, 'ghost')];
     } else if (st.state === 'downloading') {
+      manual = false;
       msg.textContent = `Đang tải bản mới… ${st.percent || 0}%`;
     } else if (st.state === 'ready') {
       msg.textContent = `Đã tải xong phiên bản ${st.version}.`;
