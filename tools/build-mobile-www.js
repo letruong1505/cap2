@@ -62,7 +62,11 @@ function build({ out, pubkey, version, commit, api, versionCode = 1, otaPublicKe
   fs.cpSync(path.join(ROOT, 'content'), path.join(out, 'content'), { recursive: true });
   fs.mkdirSync(path.join(out, 'core'), { recursive: true });
   fs.copyFileSync(path.join(ROOT, 'core', 'rational.js'), path.join(out, 'core', 'rational.js'));
-  fs.copyFileSync(path.join(ROOT, 'main', 'product.json'), path.join(out, 'product.json'));
+  // Danh sách môn lấy từ product/nam-linh-educenter.json (bản Windows cũng được chép từ file này khi build, xem build-win.yml),
+  // không lấy main/product.json vì file đó chỉ là bản sao do tools/select-product.js ghi ra và có thể cũ.
+  const product = JSON.parse(fs.readFileSync(path.join(ROOT, 'product', 'nam-linh-educenter.json'), 'utf8'));
+  for (const sub of product.subjects) if (!fs.existsSync(path.join(ROOT, 'content', sub, 'manifest.json'))) throw new Error('Thiếu nội dung môn: ' + sub);
+  fs.writeFileSync(path.join(out, 'product.json'), JSON.stringify(product, null, 2) + '\n');
   for (const f of fs.readdirSync(path.join(ROOT, 'mobile', 'bridge'))) fs.copyFileSync(path.join(ROOT, 'mobile', 'bridge', f), path.join(out, 'mobile', f));
   fs.mkdirSync(path.join(out, 'mobile', 'vendor'), { recursive: true });
   fs.copyFileSync(path.join(ROOT, 'mobile', 'vendor', 'nacl-fast.min.js'), path.join(out, 'mobile', 'vendor', 'nacl-fast.min.js'));

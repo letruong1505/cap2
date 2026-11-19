@@ -166,3 +166,10 @@ test('gói www: index.html chỉ là trang khởi động OTA; giao diện nằm
   assert.match(native, /"code":7/);
   assert.strictEqual(Buffer.from(fs.readFileSync(path.join(ROOT, 'mobile', 'ota-public-key.txt'), 'utf8').trim(), 'base64').length, 32);
 });
+
+test('gói www Android dùng đúng danh sách môn của sản phẩm Nam Linh Educenter (cùng nguồn với bản Windows)', () => {
+  const src = JSON.parse(fs.readFileSync(path.join(ROOT, 'product', 'nam-linh-educenter.json'), 'utf8'));
+  const got = JSON.parse(fs.readFileSync(path.join(wwwDir(), 'product.json'), 'utf8'));
+  assert.deepStrictEqual(got.subjects, src.subjects);
+  assert.ok(got.subjects.includes('toan10') && got.subjects.includes('anh11'));
+});

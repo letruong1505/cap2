@@ -1,5 +1,4 @@
 ## Bản mới
-- Mở học Lớp 10 và Lớp 11 (8 môn mỗi lớp).
 - Bản Android tự cập nhật: tự tải và dùng bản sửa lỗi ở lần mở sau, chỉ phải cài lại khi có thay đổi lớn.
 
 ## Các bản trước
