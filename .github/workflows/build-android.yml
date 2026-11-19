@@ -2,6 +2,13 @@ name: Build Android apk
 
 on:
   workflow_dispatch:
+  # Kiểm tra biên dịch khi sửa phần Android trên nhánh làm việc. Chỉ chạy tay (workflow_dispatch) mới đẩy apk lên R2.
+  push:
+    branches: [thpt-1-0-0]
+    paths:
+      - 'mobile/**'
+      - 'tools/build-mobile-www.js'
+      - '.github/workflows/build-android.yml'
 
 jobs:
   build:
@@ -80,7 +87,7 @@ jobs:
           path: ${{ runner.temp }}/nam-linh-educenter.apk
 
       - name: Publish apk to Cloudflare R2
-        if: steps.sign.outputs.signed == 'true'
+        if: steps.sign.outputs.signed == 'true' && github.event_name == 'workflow_dispatch'
         env:
           R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
           R2_BUCKET: ${{ secrets.R2_BUCKET }}
