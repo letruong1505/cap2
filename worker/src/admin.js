@@ -2,27 +2,46 @@
 const PAGE = `<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Quản trị đơn - Nam Linh Educenter</title>
 <style nonce="__N__">
-body{font:15px/1.5 system-ui,sans-serif;margin:0;background:#f4f7fb;color:#1c2733}
-header{background:#14304f;color:#fff;padding:14px 24px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
-header h1{font-size:18px;margin:0;flex:1}
-main{max-width:1400px;margin:0 auto;padding:20px 24px}
-input,select,button{font:inherit;padding:8px 12px;border-radius:8px;border:1px solid #c5d0dc;background:#fff}
-button{cursor:pointer;font-weight:600}button.p{background:#14304f;color:#fff;border-color:#14304f}
-button.d{color:#9b2b1f}
-table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;margin:14px 0}
-th,td{padding:9px 12px;border-bottom:1px solid #e3e9f0;text-align:left;vertical-align:top;font-size:14px}
-th{background:#eaf0f7}
-.st{padding:2px 10px;border-radius:99px;font-size:12.5px;font-weight:700;display:inline-block}
-.gone{text-decoration:line-through;color:#8a8f96}button.sm{padding:2px 8px;font-size:12.5px;margin-left:6px}.it{margin:2px 0}.on{background:#d9f2e1}.off{background:#eee}.rv{background:#f6d5d1}.pending{background:#fff4d6}.underpaid{background:#ffe0d6}.paid{background:#d9f2e1}.cancelled{background:#e6e6e6}
-.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-#msg{min-height:22px;color:#9b2b1f}
-code{font-size:12.5px;word-break:break-all}
-h2{margin:26px 0 0;font-size:17px}
+:root{--ink:#1c2733;--mut:#64748b;--line:#e2e8f0;--navy:#14304f;--blue:#2563eb;--red:#b42318;--bg:#f1f5f9}
+*{box-sizing:border-box}
+body{font:14.5px/1.55 "Segoe UI",system-ui,-apple-system,sans-serif;margin:0;background:var(--bg);color:var(--ink)}
+header{position:sticky;top:0;z-index:5;background:linear-gradient(135deg,#0f2a47,#1d4a7a);color:#fff;padding:12px 28px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;box-shadow:0 2px 12px rgba(15,42,71,.25)}
+header h1{font-size:17px;margin:0;flex:1;font-weight:700;letter-spacing:.2px}
+header input{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.3);color:#fff}
+header input::placeholder{color:rgba(255,255,255,.65)}
+header button.p{background:#fff;color:var(--navy);border-color:#fff}
+main{max-width:1400px;margin:0 auto;padding:22px 28px 48px}
+input,select,button{font:inherit;padding:8px 12px;border-radius:10px;border:1px solid #cbd5e1;background:#fff;color:var(--ink);transition:border-color .15s,box-shadow .15s,background .15s}
+input:focus,select:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,.18)}
+button{cursor:pointer;font-weight:600}
+button:hover{background:#f1f5f9}
+button.p{background:var(--navy);color:#fff;border-color:var(--navy)}button.p:hover{background:#1d4a7a}
+button.d{color:var(--red);border-color:#f3c5c0;background:#fff}button.d:hover{background:#fef2f1;border-color:var(--red)}
+button.sm{padding:1px 10px;font-size:12.5px;margin-left:8px;border-radius:99px}
+.bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:6px}
+.bar input[type=text],.bar input:not([type]){min-width:280px}
+table{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:14px 0;box-shadow:0 1px 3px rgba(15,23,42,.06)}
+th,td{padding:11px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:14px}
+th{background:#f8fafc;color:var(--mut);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+tr:last-child td{border-bottom:0}
+tbody tr:hover td,table tr:hover td{background:#fafcff}
+.st{padding:2px 10px;border-radius:99px;font-size:12px;font-weight:700;display:inline-block;white-space:nowrap}
+.on,.paid{background:#dcfce7;color:#166534}.off,.cancelled{background:#f1f5f9;color:#64748b}.rv{background:#fee2e2;color:#991b1b}.pending{background:#fef3c7;color:#92400e}.underpaid{background:#ffedd5;color:#9a3412}
+.gone{text-decoration:line-through;color:#94a3b8}.it{margin:3px 0}
+small{color:var(--mut)}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:0 1px 3px rgba(15,23,42,.06);margin-top:12px}
+.card label{display:flex;flex-direction:column;gap:4px;font-size:12px;font-weight:700;color:var(--mut)}
+.w90{width:96px}.w180{width:200px}
+#msg{min-height:22px;color:var(--red);font-weight:600;margin:6px 0}
+code{font:12.5px ui-monospace,Consolas,monospace;background:#f1f5f9;padding:1px 6px;border-radius:6px;word-break:break-all}
+h2{margin:34px 0 0;font-size:16px;font-weight:700;display:flex;align-items:center;gap:8px}
+h2::before{content:"";width:4px;height:18px;border-radius:2px;background:var(--blue)}
 </style></head><body>
 <header><h1>Quản trị đơn - Nam Linh Educenter</h1><div class="row"><input id="tok" type="password" placeholder="Mật khẩu quản trị" autocomplete="off"><button class="p" id="go">Vào</button></div></header>
-<main><div class="row"><select id="st"><option value="">Tất cả trạng thái</option><option value="pending">Chờ thanh toán</option><option value="underpaid">Chuyển thiếu</option><option value="paid">Đã thanh toán</option><option value="cancelled">Đã hủy</option></select>
+<main><div class="bar"><select id="st"><option value="">Tất cả trạng thái</option><option value="pending">Chờ thanh toán</option><option value="underpaid">Chuyển thiếu</option><option value="paid">Đã thanh toán</option><option value="cancelled">Đã hủy</option></select>
 <input id="q" placeholder="Tìm tên, SĐT, mã đơn, mã máy"><button id="rf">Tải lại</button></div><div id="msg" role="status"></div>
-<div id="orders"></div><h2>Mã đối tác</h2><div class="row"><input id="pc" placeholder="Mã, ví dụ DT-HOAI" maxlength="20"><input id="pp" placeholder="Tên đối tác" maxlength="60"><input id="pn" type="number" value="20" min="1" max="99" style="width:90px" title="Giảm (%)"><input id="pm" type="number" value="5" min="1" max="1000" style="width:90px" title="Số máy tối đa" placeholder="Số máy"><button class="p" id="pcAdd">Tạo mã</button></div><div id="partners"></div><h2>Giao dịch chưa khớp đơn hoặc cần xử lý</h2><div id="tx"></div></main>
+<div id="orders"></div><h2>Mã đối tác</h2><div class="card"><div class="row"><label>Mã<input id="pc" class="w180" placeholder="Ví dụ DT-HOAI" maxlength="20"></label><label>Tên đối tác<input id="pp" class="w180" placeholder="Tên đối tác" maxlength="60"></label><label>Giảm (%)<input id="pn" class="w90" type="number" value="20" min="1" max="99"></label><label>Số máy tối đa<input id="pm" class="w90" type="number" value="5" min="1" max="1000"></label><button class="p" id="pcAdd">Tạo mã</button></div></div><div id="partners"></div><h2>Giao dịch chưa khớp đơn hoặc cần xử lý</h2><div id="tx"></div></main>
 <script nonce="__N__">
 (function(){
 var T=document.getElementById('tok'),msg=document.getElementById('msg'),CAT={};

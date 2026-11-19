@@ -1,8 +1,9 @@
 ## Bản mới
-- Cập nhật chính sách & điều khoản hoàn tiền: tính 7 ngày từ lúc thanh toán thành công, hoàn tiền theo số tiền sau khi giảm.
-- Mua khóa học: nhập mã đối tác để được giảm 20% trên giá từng khóa (cần kết nối mạng). Sau khi thanh toán, tải phiếu xác nhận thanh toán dạng PNG hoặc xem lại trên web.
+- Làm đẹp giao diện: sửa lỗi trang Mua khóa học bị tràn đè lên khung Đơn hàng trên màn hình nhỏ, chỉnh ô nhập mã đối tác và khoảng cách các thẻ.
 
 ## Các bản trước
+- Cập nhật chính sách & điều khoản hoàn tiền: tính 7 ngày từ lúc thanh toán thành công, hoàn tiền theo số tiền sau khi giảm.
+- Mua khóa học: nhập mã đối tác để được giảm theo tỉ lệ của mã trên giá từng khóa (cần kết nối mạng). Sau khi thanh toán, tải phiếu xác nhận thanh toán dạng PNG hoặc xem lại trên web.
 - Thêm màn hình Ôn thi THPT Quốc gia: chọn 2 môn tự chọn để xem khối thi; bài học và đề đang được biên soạn.
 - Hỗ trợ thu hồi bản quyền trực tuyến khi hoàn tiền, kể cả hoàn tiền riêng một khóa học; phần mềm tự cập nhật ngay khi khóa bị thu hồi hoặc khôi phục.
 - Sửa lỗi ảnh báo cáo học tập bị cắt chữ ở các dòng dài.
