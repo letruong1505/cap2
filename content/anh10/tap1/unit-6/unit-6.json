@@ -224,36 +224,124 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 6 nói về bình đẳng giới, nghề nghiệp và các thách thức đối với phụ nữ. Ngữ pháp trọng tâm: câu bị động với động từ khuyết thiếu."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Bị động với động từ khuyết thiếu: {k modal + be + V3 (+ by O)}. Chỉ có {k một be}."
     },
     {
       "type": "text",
-      "content": "1. Khi có động từ khuyết thiếu (can, could, may, might, must, should, ought to), ta dùng cấu trúc: Modal + be + V3 để diễn tả hành động bị tác động."
+      "content": "Unit 6 nói về bình đẳng giới, nghề nghiệp và các thách thức đối với phụ nữ."
     },
     {
-      "type": "formula",
-      "content": "S + modal + be + V3 (+ by O)"
+      "type": "card",
+      "n": 1,
+      "title": "Modal + be + V3",
+      "text": "Với can, could, may, might, must, should, ought to.",
+      "formulas": [
+        "{s S} + {c modal} + {c be} + {v V3} (+ by O)"
+      ],
+      "examples": [
+        {
+          "en": "Engineers may build a new bridge. → A new bridge {c may be} {v built} (by engineers).",
+          "vi": "Một cây cầu mới có thể được xây."
+        },
+        {
+          "en": "All the food {c must be} {v prepared} before the guests arrive.",
+          "vi": "Mọi đồ ăn phải được chuẩn bị trước khi khách đến."
+        },
+        {
+          "en": "Girls {c should be} {v given} equal access to education.",
+          "vi": "Các em gái nên được tiếp cận giáo dục bình đẳng."
+        }
+      ],
+      "wrong": "It can be be done.",
+      "right": "It {c can be} {v done}.",
+      "why": "Chỉ có một be sau động từ khuyết thiếu.",
+      "try": {
+        "q": "The homework ___ finished today.",
+        "options": [
+          "must be",
+          "must",
+          "must been"
+        ],
+        "answer": 0,
+        "explain": "modal + be + V3."
+      }
     },
     {
-      "type": "text",
-      "content": "Ví dụ: Engineers may build a new bridge. → A new bridge may be built (by engineers)."
+      "type": "card",
+      "n": 2,
+      "title": "Trọng âm từ ba âm tiết",
+      "table": {
+        "head": [
+          "Loại",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "Tính từ: nhấn âm hai",
+            "fan-TAS-tic"
+          ],
+          [
+            "Động từ: nhấn âm hai",
+            "de-VEL-op, en-COUR-age"
+          ],
+          [
+            "Danh từ: nhấn âm đầu",
+            "BEN-e-fit"
+          ]
+        ]
+      }
     },
     {
-      "type": "text",
-      "content": "2. Khi đổi sang bị động, tân ngữ của câu chủ động trở thành chủ ngữ. Ta không nói “can be be done”; chỉ có một be sau động từ khuyết thiếu."
-    },
-    {
-      "type": "text",
-      "content": "3. Ví dụ: All the food must be prepared before the guests arrive. Girls should be given equal access to education."
-    },
-    {
-      "type": "text",
-      "content": "4. Trọng âm từ ba âm tiết: tính từ như fan-TAS-tic thường nhấn âm thứ hai; động từ như de-VEL-op và en-COUR-age cũng nhấn âm thứ hai, còn danh từ như BEN-e-fit thường nhấn âm đầu."
-    },
-    {
-      "type": "text",
-      "content": "5. Từ khoá cần nhớ: equal (bình đẳng), gender (giới tính), treat (đối xử), promote (thúc đẩy), challenge (thách thức). Khi nói về nghề nghiệp, nhớ các từ như surgeon, pilot, firefighter, kindergarten teacher."
+      "type": "card",
+      "n": 3,
+      "title": "Từ vựng bình đẳng giới",
+      "collapse": "Xem từ vựng bình đẳng giới",
+      "table": {
+        "head": [
+          "Từ / cụm",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "equal",
+            "bình đẳng"
+          ],
+          [
+            "gender",
+            "giới tính"
+          ],
+          [
+            "treat",
+            "đối xử"
+          ],
+          [
+            "promote",
+            "thúc đẩy"
+          ],
+          [
+            "challenge",
+            "thách thức"
+          ],
+          [
+            "surgeon",
+            "bác sĩ phẫu thuật"
+          ],
+          [
+            "pilot",
+            "phi công"
+          ],
+          [
+            "firefighter",
+            "lính cứu hỏa"
+          ],
+          [
+            "kindergarten teacher",
+            "giáo viên mầm non"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],

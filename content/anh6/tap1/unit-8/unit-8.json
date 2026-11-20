@@ -187,40 +187,152 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 8 nói về thể thao và trò chơi. Ngữ pháp trọng tâm: thì quá khứ đơn (past simple) và câu mệnh lệnh (imperatives)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Quá khứ đơn: {k V-ed / V2}, phủ định {k didn’t + V}. Be: {k was / were}. Mệnh lệnh: {k V} hoặc {k Don’t + V}."
     },
     {
       "type": "text",
-      "content": "1. Quá khứ đơn dùng để nói về hành động đã xảy ra và kết thúc trong quá khứ. Dấu hiệu: yesterday, last week, in 2020, two days ago."
+      "content": "Unit 8 nói về thể thao và trò chơi."
     },
     {
-      "type": "formula",
-      "content": "(+) S + V-ed / V2      (–) S + didn’t + V (nguyên mẫu)      (?) Did + S + V (nguyên mẫu) ?"
+      "type": "card",
+      "n": 1,
+      "title": "Quá khứ đơn",
+      "text": "Hành động đã xảy ra và kết thúc trong quá khứ. Dấu hiệu: yesterday, last week, in 2020, two days ago.",
+      "formulas": [
+        "(+) {s S} + {v V-ed / V2}",
+        "(–) {s S} + {c didn’t} + {v V}",
+        "(?) {c Did} + {s S} + {v V} ?"
+      ],
+      "examples": [
+        {
+          "en": "I {v played} football yesterday.",
+          "vi": "Hôm qua tôi chơi bóng đá."
+        },
+        {
+          "en": "She {c didn’t} {v go} to the gym.",
+          "vi": "Cô ấy không đến phòng tập."
+        },
+        {
+          "en": "{c Did} you {v watch} the match? – Yes, I did.",
+          "vi": "Bạn xem trận đấu chứ? – Có."
+        }
+      ],
+      "wrong": "She didn’t went to the gym.",
+      "right": "She didn’t {k go} to the gym.",
+      "why": "Sau didn’t động từ về nguyên mẫu.",
+      "try": {
+        "q": "They ___ tennis last Sunday.",
+        "options": [
+          "played",
+          "play",
+          "plays"
+        ],
+        "answer": 0,
+        "explain": "last Sunday → quá khứ."
+      }
     },
     {
-      "type": "text",
-      "content": "Ví dụ: I played football yesterday. She didn’t go to the gym. Did you watch the match? – Yes, I did. / No, I didn’t."
+      "type": "card",
+      "n": 2,
+      "title": "Thêm -ed và bất quy tắc",
+      "table": {
+        "head": [
+          "Quy tắc",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "Thêm -ed",
+            "play → played, watch → watched"
+          ],
+          [
+            "Tận cùng -e thêm -d",
+            "like → liked"
+          ],
+          [
+            "Phụ âm + y → -ied",
+            "study → studied"
+          ],
+          [
+            "Bất quy tắc",
+            "go → went, have → had, see → saw, win → won, do → did"
+          ]
+        ]
+      }
     },
     {
-      "type": "text",
-      "content": "2. Động từ có quy tắc thêm -ed (play → played, watch → watched); tận cùng -e chỉ thêm -d (like → liked); phụ âm + y đổi y thành -ied (study → studied). Một số động từ bất quy tắc cần học thuộc: go → went, have → had, see → saw, win → won, do → did, play (có quy tắc)."
+      "type": "card",
+      "n": 3,
+      "title": "Động từ be",
+      "table": {
+        "head": [
+          "Chủ ngữ",
+          "Quá khứ"
+        ],
+        "rows": [
+          [
+            "I / he / she / it",
+            "was (wasn’t)"
+          ],
+          [
+            "you / we / they",
+            "were (weren’t)"
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "en": "{c Was} he at the stadium?",
+          "vi": "Anh ấy có ở sân vận động không?"
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "3. Với động từ be: was (I / he / she / it) và were (you / we / they). Phủ định: wasn’t / weren’t. Câu hỏi: Was he …? Were they …?"
+      "type": "card",
+      "n": 4,
+      "title": "Câu mệnh lệnh",
+      "text": "Dùng để ra lệnh, yêu cầu, hướng dẫn. Có thể thêm please cho lịch sự.",
+      "formulas": [
+        "{v V} + …",
+        "{c Don’t} + {v V} + …"
+      ],
+      "examples": [
+        {
+          "en": "{v Wear} your goggles.",
+          "vi": "Hãy đeo kính bơi."
+        },
+        {
+          "en": "{c Don’t} {v be} late.",
+          "vi": "Đừng đến muộn."
+        },
+        {
+          "en": "Please {v listen} carefully.",
+          "vi": "Làm ơn nghe kỹ."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "4. Câu mệnh lệnh dùng để ra lệnh, yêu cầu, hướng dẫn. Khẳng định: động từ nguyên mẫu. Phủ định: Don’t + động từ nguyên mẫu. Có thể thêm please cho lịch sự."
-    },
-    {
-      "type": "formula",
-      "content": "V (nguyên mẫu) + …      Don’t + V + …      Ví dụ: Wear your goggles. Don’t be late. Please listen carefully."
-    },
-    {
-      "type": "text",
-      "content": "5. Phát âm /e/ và /æ/: /e/ như trong bed, pen; /æ/ như trong bad, hat."
+      "type": "card",
+      "n": 5,
+      "title": "Phát âm /e/ và /æ/",
+      "table": {
+        "head": [
+          "Âm",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "/e/",
+            "bed, pen"
+          ],
+          [
+            "/æ/",
+            "bad, hat"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],

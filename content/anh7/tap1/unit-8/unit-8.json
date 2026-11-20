@@ -205,40 +205,111 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 8 nói về phim ảnh: thể loại phim, nhận xét phim. Ngữ pháp trọng tâm: liên từ although / though và trạng từ nối however để diễn tả sự tương phản; phân biệt tính từ đuôi -ed và -ing."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "{k although / though + mệnh đề}: mặc dù (không dùng but). {k However,} đứng đầu câu sau. Tính từ {k -ing} mô tả sự vật, {k -ed} mô tả cảm xúc người."
     },
     {
       "type": "text",
-      "content": "1. although / though + mệnh đề: mặc dù. Mệnh đề although có thể đứng đầu câu (có dấu phẩy ở giữa) hoặc cuối câu."
+      "content": "Unit 8 nói về phim ảnh: thể loại phim và nhận xét phim."
     },
     {
-      "type": "formula",
-      "content": "Although / Though + S + V, S + V.      S + V although / though + S + V."
+      "type": "card",
+      "n": 1,
+      "title": "Although / though",
+      "text": "Although có thể đứng đầu câu (có dấu phẩy ở giữa) hoặc giữa câu.",
+      "formulas": [
+        "{c Although / Though} + S + V, S + V.",
+        "S + V + {c although / though} + S + V."
+      ],
+      "examples": [
+        {
+          "en": "{c Although} the film was long, I enjoyed it.",
+          "vi": "Mặc dù phim dài, tôi vẫn thích."
+        },
+        {
+          "en": "I enjoyed the film {c though} it was long.",
+          "vi": "Tôi thích phim dù nó dài."
+        }
+      ],
+      "wrong": "Although the film was long, but I enjoyed it.",
+      "right": "{c Although} the film was long, I enjoyed it.",
+      "why": "Không dùng but cùng lúc với although.",
+      "try": {
+        "q": "___ it was raining, we played outside.",
+        "options": [
+          "Although",
+          "However",
+          "But"
+        ],
+        "answer": 0,
+        "explain": "Although + mệnh đề."
+      }
     },
     {
-      "type": "text",
-      "content": "Ví dụ: Although the film was long, I enjoyed it. I enjoyed the film though it was long. Không dùng but cùng lúc với although trong một câu (Although …, but … là sai)."
+      "type": "card",
+      "n": 2,
+      "title": "However",
+      "text": "Đứng đầu câu thứ hai, sau nó có dấu phẩy.",
+      "formulas": [
+        "S + V. {c However}, S + V."
+      ],
+      "examples": [
+        {
+          "en": "The acting was great. {c However}, the story was confusing.",
+          "vi": "Diễn xuất rất tốt. Tuy nhiên, cốt truyện khó hiểu."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "2. However đứng đầu câu thứ hai, sau nó có dấu phẩy, và trước nó là dấu chấm hoặc dấu chấm phẩy."
+      "type": "card",
+      "n": 3,
+      "title": "Tính từ -ing và -ed",
+      "table": {
+        "head": [
+          "Loại",
+          "Dùng cho",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "-ing",
+            "sự vật",
+            "The film is boring. The ending was shocking."
+          ],
+          [
+            "-ed",
+            "cảm xúc của người",
+            "I am bored. We were shocked."
+          ]
+        ]
+      }
     },
     {
-      "type": "formula",
-      "content": "S + V. However, S + V."
-    },
-    {
-      "type": "text",
-      "content": "Ví dụ: The acting was great. However, the story was confusing."
-    },
-    {
-      "type": "text",
-      "content": "3. Tính từ -ing mô tả tính chất của sự vật (bộ phim thế nào); tính từ -ed mô tả cảm xúc của người: The film is boring (phim chán). I am bored (tôi thấy chán). The ending was shocking. We were shocked."
-    },
-    {
-      "type": "text",
-      "content": "4. Từ nhận xét phim: gripping, moving, enjoyable (khen); dull, confusing, violent (chê); scary, frightening (đáng sợ). Hỏi ý kiến: What do you think of the film? What kind of films do you like?"
+      "type": "card",
+      "n": 4,
+      "title": "Từ nhận xét phim",
+      "collapse": "Xem từ nhận xét phim",
+      "table": {
+        "head": [
+          "Từ / cụm",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "gripping, moving, enjoyable",
+            "hấp dẫn, cảm động, thú vị"
+          ],
+          [
+            "dull, confusing, violent",
+            "tẻ nhạt, khó hiểu, bạo lực"
+          ],
+          [
+            "scary, frightening",
+            "đáng sợ"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],

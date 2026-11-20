@@ -205,36 +205,142 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 10 nói về Trái Đất, môi trường sống và động thực vật. Ngữ pháp trọng tâm: mệnh đề quan hệ không xác định (non-defining relative clauses)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Mệnh đề quan hệ {k không xác định}: thông tin phụ, {k có dấu phẩy}, không dùng {k that}, không lược bỏ đại từ quan hệ."
     },
     {
       "type": "text",
-      "content": "1. Mệnh đề quan hệ không xác định thêm thông tin phụ về danh từ đã rõ nghĩa (tên riêng, vật duy nhất…). Nếu bỏ đi, câu vẫn đủ nghĩa."
+      "content": "Unit 10 nói về Trái Đất, môi trường sống và động thực vật."
     },
     {
-      "type": "formula",
-      "content": "Earth, which is the third planet from the Sun, depends on the Sun for its energy.  →  Earth depends on the Sun for its energy."
+      "type": "card",
+      "n": 1,
+      "title": "Mệnh đề không xác định",
+      "text": "Thêm thông tin phụ về danh từ đã rõ nghĩa (tên riêng, vật duy nhất…). Nếu bỏ đi, câu vẫn đủ nghĩa.",
+      "examples": [
+        {
+          "en": "Earth{c , which} is the third planet from the Sun{c ,} depends on the Sun for its energy.",
+          "vi": "Trái Đất, hành tinh thứ ba từ Mặt Trời, phụ thuộc vào Mặt Trời để lấy năng lượng."
+        },
+        {
+          "en": "Earth depends on the Sun for its energy.",
+          "vi": "Bỏ mệnh đề phụ, câu vẫn đủ nghĩa."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "2. Mệnh đề không xác định luôn có dấu phẩy (hoặc hai dấu phẩy) ngăn với phần còn lại. Dùng who cho người, which cho vật, whose cho sở hữu. KHÔNG dùng that trong mệnh đề không xác định."
+      "type": "card",
+      "n": 2,
+      "title": "Dấu phẩy và đại từ quan hệ",
+      "text": "Luôn có dấu phẩy (hoặc hai dấu phẩy) ngăn với phần còn lại. Dùng who cho người, which cho vật, whose cho sở hữu.",
+      "examples": [
+        {
+          "en": "Neil Armstrong{c , who} was the first man on the Moon{c ,} died in 2012.",
+          "vi": "Neil Armstrong, người đầu tiên đặt chân lên Mặt Trăng, mất năm 2012."
+        },
+        {
+          "en": "Suoi Thau{c , which} is in Ha Giang{c ,} is a gorgeous grassland.",
+          "vi": "Suối Thầu, ở Hà Giang, là một đồng cỏ tuyệt đẹp."
+        }
+      ],
+      "wrong": "Neil Armstrong, that was the first man on the Moon, died in 2012.",
+      "right": "Neil Armstrong{c , who} was the first man on the Moon{c ,} died in 2012.",
+      "why": "KHÔNG dùng that trong mệnh đề không xác định.",
+      "try": {
+        "q": "My brother, ___ lives in Hue, is a doctor.",
+        "options": [
+          "who",
+          "that",
+          "which"
+        ],
+        "answer": 0,
+        "explain": "Không xác định + người → who, có dấu phẩy."
+      }
     },
     {
-      "type": "formula",
-      "content": "Neil Armstrong, who was the first man on the Moon, died in 2012.      Suoi Thau, which is in Ha Giang, is a gorgeous grassland."
+      "type": "card",
+      "n": 3,
+      "title": "Không được lược bỏ đại từ quan hệ",
+      "text": "Đại từ quan hệ trong mệnh đề không xác định KHÔNG được lược bỏ, kể cả khi nó làm tân ngữ."
     },
     {
-      "type": "text",
-      "content": "3. Đại từ quan hệ trong mệnh đề không xác định KHÔNG được lược bỏ, kể cả khi nó làm tân ngữ."
+      "type": "card",
+      "n": 4,
+      "title": "So sánh hai loại mệnh đề",
+      "table": {
+        "head": [
+          "Loại",
+          "Ví dụ",
+          "Giải thích"
+        ],
+        "rows": [
+          [
+            "Xác định",
+            "The student {k who} sits next to me is Nam.",
+            "Cần để biết học sinh nào; không dấu phẩy."
+          ],
+          [
+            "Không xác định",
+            "My brother{k , who} sits next to me{k ,} is Nam.",
+            "Chỉ có một người anh trai; có dấu phẩy."
+          ]
+        ]
+      }
     },
     {
-      "type": "text",
-      "content": "4. So sánh hai loại mệnh đề: The student who sits next to me is Nam (xác định, cần để biết học sinh nào, không có dấu phẩy). My brother, who sits next to me, is Nam (không xác định, vì chỉ có một người anh trai, có dấu phẩy)."
-    },
-    {
-      "type": "text",
-      "content": "5. Từ vựng Trái Đất và môi trường: habitat (môi trường sống), flora (thực vật), fauna (động vật), food chain (chuỗi thức ăn), climate change, nature reserve, pesticide, fertiliser, threat, landform."
+      "type": "card",
+      "n": 5,
+      "title": "Từ vựng Trái Đất và môi trường",
+      "collapse": "Xem từ vựng trái đất và môi trường",
+      "table": {
+        "head": [
+          "Từ / cụm",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "habitat",
+            "môi trường sống"
+          ],
+          [
+            "flora",
+            "thực vật"
+          ],
+          [
+            "fauna",
+            "động vật"
+          ],
+          [
+            "food chain",
+            "chuỗi thức ăn"
+          ],
+          [
+            "climate change",
+            "biến đổi khí hậu"
+          ],
+          [
+            "nature reserve",
+            "khu bảo tồn thiên nhiên"
+          ],
+          [
+            "pesticide",
+            "thuốc trừ sâu"
+          ],
+          [
+            "fertiliser",
+            "phân bón"
+          ],
+          [
+            "threat",
+            "mối đe dọa"
+          ],
+          [
+            "landform",
+            "địa hình"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],

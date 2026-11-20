@@ -199,36 +199,102 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 9 nói về các lễ hội trên thế giới. Ngữ pháp trọng tâm: ôn câu hỏi Yes/No và câu hỏi Wh- ở thì hiện tại đơn và quá khứ đơn, cùng trạng từ chỉ tần suất."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Yes/No: {k Do / Does / Did / Be + S …?} Wh-: {k Wh- + trợ động từ + S + V?}. Who làm chủ ngữ {k không cần trợ động từ}."
     },
     {
       "type": "text",
-      "content": "1. Câu hỏi Yes/No bắt đầu bằng trợ động từ hoặc động từ be: Do / Does / Did / Is / Are / Was / Were + S + …? Trả lời ngắn: Yes, I do. / No, she didn’t. / Yes, it is."
+      "content": "Unit 9 nói về các lễ hội trên thế giới."
     },
     {
-      "type": "formula",
-      "content": "Do / Does / Did + S + V ?        Is / Are / Was / Were + S + … ?"
+      "type": "card",
+      "n": 1,
+      "title": "Câu hỏi Yes/No",
+      "text": "Bắt đầu bằng trợ động từ hoặc be. Trả lời ngắn: Yes, I do. / No, she didn’t. / Yes, it is.",
+      "formulas": [
+        "{c Do / Does / Did} + {s S} + {v V} ?",
+        "{c Is / Are / Was / Were} + {s S} + … ?"
+      ],
+      "examples": [
+        {
+          "en": "{c Does} the parade last two hours?",
+          "vi": "Cuộc diễu hành kéo dài hai tiếng à?"
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "2. Câu hỏi Wh- đặt từ để hỏi trước trợ động từ: What (gì), Where (ở đâu), When (khi nào), Who (ai), Why (tại sao), How (như thế nào), How often (bao lâu một lần), How long (bao lâu), Which (cái nào)."
+      "type": "card",
+      "n": 2,
+      "title": "Câu hỏi Wh-",
+      "text": "Đặt từ để hỏi trước trợ động từ.",
+      "formulas": [
+        "{c Wh-} + do / does / did + {s S} + {v V} ?",
+        "{c Wh-} + be + {s S} ?"
+      ],
+      "examples": [
+        {
+          "en": "{c When} is the Mid-Autumn Festival? – In September or October.",
+          "vi": "Tết Trung thu khi nào? – Tháng 9 hoặc 10."
+        },
+        {
+          "en": "{c What} do people eat at Thanksgiving? – Turkey.",
+          "vi": "Người ta ăn gì ở Lễ Tạ ơn? – Gà tây."
+        },
+        {
+          "en": "{c Why} did they carve pumpkins? – To make lanterns.",
+          "vi": "Sao họ khắc bí ngô? – Để làm đèn lồng."
+        },
+        {
+          "en": "{c How long} does the parade last?",
+          "vi": "Cuộc diễu hành kéo dài bao lâu?"
+        }
+      ],
+      "try": {
+        "q": "___ the parade start? – At 9 a.m.",
+        "options": [
+          "When does",
+          "When is",
+          "When do"
+        ],
+        "answer": 0,
+        "explain": "the parade số ít, động từ thường → does."
+      }
     },
     {
-      "type": "formula",
-      "content": "Wh- + do / does / did + S + V ?        Wh- + be + S ?"
+      "type": "card",
+      "n": 3,
+      "title": "Who và Which",
+      "text": "Who làm chủ ngữ thì không cần trợ động từ. Which + danh từ.",
+      "examples": [
+        {
+          "en": "{c Who} {v makes} the lanterns?",
+          "vi": "Ai làm đèn lồng?"
+        },
+        {
+          "en": "{c Which} festival do you like best?",
+          "vi": "Bạn thích lễ hội nào nhất?"
+        }
+      ],
+      "wrong": "Who does make the lanterns?",
+      "right": "Who {k makes} the lanterns?",
+      "why": "Who làm chủ ngữ không cần does."
     },
     {
-      "type": "text",
-      "content": "Ví dụ: When is the Mid-Autumn Festival? – It’s in September or October. What do people eat at Thanksgiving? – They eat turkey. Why did they carve pumpkins? – To make lanterns. How long does the parade last? – About two hours."
-    },
-    {
-      "type": "text",
-      "content": "3. Who làm chủ ngữ thì không cần trợ động từ: Who makes the lanterns? (không nói Who does make). Which + danh từ: Which festival do you like best?"
-    },
-    {
-      "type": "text",
-      "content": "4. Trạng từ tần suất always, usually, often, sometimes, never đứng trước động từ thường và sau be: We always watch the fireworks display. The parade is usually on Sunday."
+      "type": "card",
+      "n": 4,
+      "title": "Trạng từ tần suất",
+      "text": "Đứng trước động từ thường và sau be.",
+      "examples": [
+        {
+          "en": "We {c always} watch the fireworks display.",
+          "vi": "Chúng tôi luôn xem pháo hoa."
+        },
+        {
+          "en": "The parade {v is} {c usually} on Sunday.",
+          "vi": "Cuộc diễu hành thường diễn ra vào Chủ nhật."
+        }
+      ]
     }
   ],
   "examples": [],

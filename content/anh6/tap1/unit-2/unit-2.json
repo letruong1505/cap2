@@ -193,36 +193,148 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 2 nói về ngôi nhà, các phòng và đồ đạc. Ngữ pháp trọng tâm: sở hữu cách (possessive case) và giới từ chỉ nơi chốn (prepositions of place)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Sở hữu: {k tên / danh từ số ít + ’s}; số nhiều có -s chỉ thêm {k ’}. Giới từ nơi chốn: in, on, under, behind, in front of, next to, between, near."
     },
     {
       "type": "text",
-      "content": "1. Sở hữu cách với ’s: dùng sau tên riêng và danh từ số ít để chỉ vật thuộc về ai."
+      "content": "Unit 2 nói về ngôi nhà, các phòng và đồ đạc."
     },
     {
-      "type": "formula",
-      "content": "Tên riêng / danh từ số ít + ’s + danh từ      Ví dụ: Elena’s room; my mum’s book; the cat’s bed."
+      "type": "card",
+      "n": 1,
+      "title": "Sở hữu cách ’s",
+      "text": "Dùng sau tên riêng và danh từ số ít để chỉ vật thuộc về ai. Danh từ số nhiều tận cùng -s chỉ thêm dấu phẩy trên; số nhiều bất quy tắc thì thêm ’s.",
+      "formulas": [
+        "tên / N số ít + {c ’s} + N",
+        "N số nhiều (-s) + {c ’} + N"
+      ],
+      "examples": [
+        {
+          "en": "{s Elena}{c ’s} room",
+          "vi": "phòng của Elena"
+        },
+        {
+          "en": "my {s mum}{c ’s} book",
+          "vi": "sách của mẹ tôi"
+        },
+        {
+          "en": "my {s parents}{c ’} room",
+          "vi": "phòng của bố mẹ tôi"
+        },
+        {
+          "en": "the {s children}{c ’s} toys",
+          "vi": "đồ chơi của trẻ em"
+        }
+      ],
+      "try": {
+        "q": "This is my ___ room.",
+        "options": [
+          "parents’",
+          "parent’s",
+          "parents"
+        ],
+        "answer": 0,
+        "explain": "parents là số nhiều có -s → chỉ thêm ’."
+      }
     },
     {
-      "type": "text",
-      "content": "2. Với danh từ số nhiều tận cùng -s chỉ thêm dấu phẩy trên: my parents’ room. Danh từ số nhiều bất quy tắc thì thêm ’s: the children’s toys."
+      "type": "card",
+      "n": 2,
+      "title": "Giới từ chỉ nơi chốn",
+      "table": {
+        "head": [
+          "Giới từ",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "in",
+            "trong"
+          ],
+          [
+            "on",
+            "trên (tiếp xúc)"
+          ],
+          [
+            "under",
+            "dưới"
+          ],
+          [
+            "behind",
+            "phía sau"
+          ],
+          [
+            "in front of",
+            "phía trước"
+          ],
+          [
+            "next to",
+            "bên cạnh"
+          ],
+          [
+            "between … and …",
+            "ở giữa"
+          ],
+          [
+            "near",
+            "gần"
+          ]
+        ]
+      },
+      "formulas": [
+        "The + noun + {v be} + {c preposition} + noun"
+      ],
+      "examples": [
+        {
+          "en": "The lamp {v is} {c on} the table.",
+          "vi": "Cái đèn ở trên bàn."
+        },
+        {
+          "en": "The sofa {v is} {c next to} the window.",
+          "vi": "Ghế sofa ở cạnh cửa sổ."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "3. Giới từ chỉ nơi chốn: in (trong), on (trên, tiếp xúc), under (dưới), behind (phía sau), in front of (phía trước), next to (bên cạnh), between … and … (ở giữa … và …), near (gần)."
+      "type": "card",
+      "n": 3,
+      "title": "Hỏi nơi chốn",
+      "examples": [
+        {
+          "en": "Where is the cat? – It’s {c under} the table.",
+          "vi": "Con mèo ở đâu? – Ở dưới bàn."
+        },
+        {
+          "en": "What’s in your room? – A bed, a desk and a wardrobe.",
+          "vi": "Trong phòng bạn có gì? – Một cái giường, một cái bàn và một tủ quần áo."
+        }
+      ]
     },
     {
-      "type": "formula",
-      "content": "The + noun + be + preposition + noun      Ví dụ: The lamp is on the table. The sofa is next to the window."
-    },
-    {
-      "type": "text",
-      "content": "4. Hỏi nơi chốn: Where is the cat? – It’s under the table. Hỏi trong phòng có gì: What’s in your room? – A bed, a desk and a wardrobe."
-    },
-    {
-      "type": "text",
-      "content": "5. Phát âm âm cuối -s: đọc /s/ sau âm vô thanh (lamps, shelves…), đọc /z/ sau âm hữu thanh (sofas, rooms…)."
+      "type": "card",
+      "n": 4,
+      "title": "Phát âm âm cuối -s",
+      "table": {
+        "head": [
+          "Âm",
+          "Sau âm",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "/s/",
+            "vô thanh",
+            "lamps, shelves"
+          ],
+          [
+            "/z/",
+            "hữu thanh",
+            "sofas, rooms"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],

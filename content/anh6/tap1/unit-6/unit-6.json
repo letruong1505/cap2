@@ -193,36 +193,82 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 6 nói về Tết, ngày lễ lớn nhất của Việt Nam. Ngữ pháp trọng tâm: should / shouldn’t để khuyên nhủ và some / any để chỉ số lượng."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "{k should / shouldn’t + V}: lời khuyên. {k some} cho câu khẳng định, {k any} cho phủ định và nghi vấn."
     },
     {
       "type": "text",
-      "content": "1. Should (nên) và shouldn’t (không nên) dùng để đưa ra lời khuyên. Sau should luôn là động từ nguyên mẫu, ở mọi ngôi."
+      "content": "Unit 6 nói về Tết, ngày lễ lớn nhất của Việt Nam."
     },
     {
-      "type": "formula",
-      "content": "S + should / shouldn’t + V (nguyên mẫu)      Ví dụ: You should help your mum. Children shouldn’t play with fireworks."
+      "type": "card",
+      "n": 1,
+      "title": "Should / shouldn’t",
+      "text": "Đưa ra lời khuyên. Sau should luôn là động từ nguyên mẫu, ở mọi ngôi.",
+      "formulas": [
+        "{s S} + {c should / shouldn’t} + {v V}"
+      ],
+      "examples": [
+        {
+          "en": "You {c should} {v help} your mum.",
+          "vi": "Con nên giúp mẹ."
+        },
+        {
+          "en": "Children {c shouldn’t} {v play} with fireworks.",
+          "vi": "Trẻ em không nên chơi pháo."
+        },
+        {
+          "en": "What should I do at Tet? – You should clean the house.",
+          "vi": "Tôi nên làm gì dịp Tết? – Bạn nên dọn nhà."
+        }
+      ],
+      "wrong": "She shoulds help her mum.",
+      "right": "She {c should} help her mum.",
+      "why": "Should không thêm -s, và theo sau là V nguyên mẫu."
     },
     {
-      "type": "text",
-      "content": "2. Hỏi xin lời khuyên: What should I do at Tet? – You should clean the house. Should I buy a gift? – Yes, you should. / No, you shouldn’t."
+      "type": "card",
+      "n": 2,
+      "title": "Some và any",
+      "text": "Chỉ số lượng không xác định, đi với danh từ đếm được số nhiều và không đếm được.",
+      "formulas": [
+        "(+) There are {c some} oranges.",
+        "(–) There aren’t {c any} oranges.",
+        "(?) Are there {c any} oranges?"
+      ],
+      "tip": "Some vẫn dùng trong lời mời, đề nghị: Would you like some tea? Can I have some lucky money?",
+      "try": {
+        "q": "There aren’t ___ cakes left.",
+        "options": [
+          "any",
+          "some",
+          "a"
+        ],
+        "answer": 0,
+        "explain": "Phủ định → any."
+      }
     },
     {
-      "type": "text",
-      "content": "3. Some và any chỉ số lượng không xác định. Dùng some trong câu khẳng định; dùng any trong câu phủ định và câu hỏi."
-    },
-    {
-      "type": "formula",
-      "content": "(+) There are some oranges.      (–) There aren’t any oranges.      (?) Are there any oranges?"
-    },
-    {
-      "type": "text",
-      "content": "4. Some vẫn dùng trong câu hỏi lời mời hoặc lời đề nghị: Would you like some tea? Can I have some lucky money? Some và any đi với cả danh từ đếm được số nhiều và không đếm được."
-    },
-    {
-      "type": "text",
-      "content": "5. Phát âm /s/ và /ʃ/: /s/ như trong sun, see; /ʃ/ như trong she, shop."
+      "type": "card",
+      "n": 3,
+      "title": "Phát âm /s/ và /ʃ/",
+      "table": {
+        "head": [
+          "Âm",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "/s/",
+            "sun, see"
+          ],
+          [
+            "/ʃ/",
+            "she, shop"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],

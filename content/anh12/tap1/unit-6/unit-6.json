@@ -204,40 +204,113 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 6 nói về trí tuệ nhân tạo. Ngữ pháp trọng tâm: cấu trúc sai khiến (causatives) chủ động và bị động với have và get."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Sai khiến chủ động: {k have + người + V}, {k get + người + to V}. Bị động: {k have / get + vật + V3}."
     },
     {
       "type": "text",
-      "content": "1. Sai khiến chủ động: nói ai đó làm việc gì cho mình, nêu rõ người thực hiện."
+      "content": "Unit 6 nói về trí tuệ nhân tạo."
     },
     {
-      "type": "formula",
-      "content": "have + người + V (nguyên thể)        get + người + to V"
+      "type": "card",
+      "n": 1,
+      "title": "Sai khiến chủ động",
+      "text": "Nói ai đó làm việc gì cho mình, nêu rõ người thực hiện.",
+      "formulas": [
+        "{c have} + người + {k V (nguyên thể)}",
+        "{c get} + người + {k to V}"
+      ],
+      "examples": [
+        {
+          "en": "The teacher {c had} the students {k upgrade} the software.",
+          "vi": "Cô giáo nhờ học sinh nâng cấp phần mềm."
+        },
+        {
+          "en": "I {c got} my brother {k to programme} the robot.",
+          "vi": "Tôi nhờ anh trai lập trình con rô-bốt."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "Ví dụ: The teacher had the students upgrade the software. I got my brother to programme the robot."
+      "type": "card",
+      "n": 2,
+      "title": "Sai khiến bị động",
+      "text": "Nhấn mạnh việc được làm, không cần nêu người thực hiện. Cả have và get đều dùng với quá khứ phân từ.",
+      "formulas": [
+        "{c have / get} + vật + {k V3 (past participle)}"
+      ],
+      "examples": [
+        {
+          "en": "We {c had} our computer {k upgraded} last week.",
+          "vi": "Tuần trước chúng tôi đã nhờ nâng cấp máy tính."
+        },
+        {
+          "en": "She {c got} her essay {k checked} by an AI tool.",
+          "vi": "Cô ấy nhờ công cụ AI kiểm tra bài luận."
+        },
+        {
+          "en": "Schools {c have} their lessons {k designed} by AI platforms.",
+          "vi": "Các trường nhờ nền tảng AI thiết kế bài giảng."
+        }
+      ],
+      "try": {
+        "q": "I had my laptop ___ yesterday.",
+        "options": [
+          "repaired",
+          "repair",
+          "to repair"
+        ],
+        "answer": 0,
+        "explain": "have + vật + V3."
+      }
     },
     {
-      "type": "text",
-      "content": "2. Sai khiến bị động: nhấn mạnh việc được làm, không cần nêu người thực hiện. Cả have và get đều dùng với quá khứ phân từ."
+      "type": "card",
+      "n": 3,
+      "title": "Lưu ý",
+      "tip": "Get thường dùng trong văn nói, thân mật hơn have.",
+      "examples": [
+        {
+          "en": "He {c had} his phone {k stolen}.",
+          "vi": "Anh ấy bị mất điện thoại. (việc không may)"
+        }
+      ],
+      "text": "Cấu trúc bị động cũng diễn tả việc không may xảy ra."
     },
     {
-      "type": "formula",
-      "content": "have / get + vật + V3 (past participle)"
-    },
-    {
-      "type": "text",
-      "content": "Ví dụ: We had our computer upgraded last week. She got her essay checked by an AI tool. Schools have their lessons designed by AI platforms."
-    },
-    {
-      "type": "text",
-      "content": "3. Lưu ý: get thường dùng trong văn nói, thân mật hơn have. Cấu trúc bị động cũng diễn tả việc không may xảy ra: He had his phone stolen."
-    },
-    {
-      "type": "text",
-      "content": "4. Phát âm: từ đồng âm (homophones) là các từ phát âm giống nhau nhưng viết khác và nghĩa khác: see – sea, write – right, hear – here, their – there, know – no."
+      "type": "card",
+      "n": 4,
+      "title": "Từ đồng âm (homophones)",
+      "text": "Phát âm giống nhau nhưng viết khác và nghĩa khác.",
+      "table": {
+        "head": [
+          "Cặp từ",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "see – sea",
+            "thấy – biển"
+          ],
+          [
+            "write – right",
+            "viết – đúng"
+          ],
+          [
+            "hear – here",
+            "nghe – ở đây"
+          ],
+          [
+            "their – there",
+            "của họ – ở đó"
+          ],
+          [
+            "know – no",
+            "biết – không"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],

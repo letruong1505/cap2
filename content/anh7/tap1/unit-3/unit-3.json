@@ -199,32 +199,150 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 3 nói về hoạt động cộng đồng: quyên góp, dọn dẹp, dạy kèm, thăm người già. Ngữ pháp trọng tâm là thì quá khứ đơn (past simple) để kể lại việc đã làm."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Quá khứ đơn: {k V-ed / V2}; phủ định, nghi vấn dùng {k did + V}. Với be: {k was / were}."
     },
     {
       "type": "text",
-      "content": "1. Thì quá khứ đơn diễn tả hành động đã xảy ra và kết thúc trong quá khứ, thường đi với last week, yesterday, in 2023, two years ago, last summer."
+      "content": "Unit 3 nói về hoạt động cộng đồng: quyên góp, dọn dẹp, dạy kèm, thăm người già."
     },
     {
-      "type": "formula",
-      "content": "(+) S + V-ed / V2     (−) S + did not (didn’t) + V     (?) Did + S + V ?"
+      "type": "card",
+      "n": 1,
+      "title": "Quá khứ đơn",
+      "text": "Diễn tả hành động đã xảy ra và kết thúc trong quá khứ. Hay đi với last week, yesterday, in 2023, two years ago, last summer.",
+      "formulas": [
+        "(+) {s S} + {v V-ed / V2}",
+        "(−) {s S} + {c did not (didn’t)} + {v V}",
+        "(?) {c Did} + {s S} + {v V} ?"
+      ],
+      "examples": [
+        {
+          "en": "We {v cleaned} the beach last Sunday.",
+          "vi": "Chủ nhật tuần trước chúng tôi dọn bãi biển."
+        },
+        {
+          "en": "They {c didn’t} {v collect} many bottles.",
+          "vi": "Họ không nhặt được nhiều chai."
+        },
+        {
+          "en": "{c Did} you {v donate} books? – Yes, I did.",
+          "vi": "Bạn có quyên góp sách không? – Có."
+        }
+      ],
+      "wrong": "Did they went to the orphanage?",
+      "right": "Did they {k go} to the orphanage?",
+      "why": "Sau did động từ luôn về nguyên mẫu.",
+      "try": {
+        "q": "We ___ the elderly last weekend.",
+        "options": [
+          "visited",
+          "visit",
+          "visiting"
+        ],
+        "answer": 0,
+        "explain": "last weekend → quá khứ đơn."
+      }
     },
     {
-      "type": "text",
-      "content": "Ví dụ: We cleaned the beach last Sunday. They didn’t collect many bottles. Did you donate books? – Yes, I did. / No, I didn’t."
+      "type": "card",
+      "n": 2,
+      "title": "Thêm -ed",
+      "table": {
+        "head": [
+          "Quy tắc",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "Thêm -ed",
+            "clean → cleaned"
+          ],
+          [
+            "Tận cùng e chỉ thêm d",
+            "donate → donated"
+          ],
+          [
+            "Phụ âm + y → -ied",
+            "study → studied"
+          ],
+          [
+            "CVC một âm tiết: gấp đôi",
+            "plan → planned"
+          ]
+        ]
+      }
     },
     {
-      "type": "text",
-      "content": "2. Động từ có quy tắc thêm -ed: clean → cleaned, donate → donated (tận cùng e chỉ thêm d), study → studied (phụ âm + y đổi thành ied), plan → planned (gấp đôi phụ âm cuối khi từ một âm tiết dạng phụ âm–nguyên âm–phụ âm)."
+      "type": "card",
+      "n": 3,
+      "title": "Động từ bất quy tắc",
+      "collapse": "Xem động từ bất quy tắc",
+      "table": {
+        "head": [
+          "Nguyên mẫu",
+          "Quá khứ"
+        ],
+        "rows": [
+          [
+            "go",
+            "went"
+          ],
+          [
+            "have",
+            "had"
+          ],
+          [
+            "do",
+            "did"
+          ],
+          [
+            "make",
+            "made"
+          ],
+          [
+            "give",
+            "gave"
+          ],
+          [
+            "teach",
+            "taught"
+          ],
+          [
+            "buy",
+            "bought"
+          ],
+          [
+            "see",
+            "saw"
+          ],
+          [
+            "take",
+            "took"
+          ],
+          [
+            "get",
+            "got"
+          ],
+          [
+            "be",
+            "was / were"
+          ]
+        ]
+      }
     },
     {
-      "type": "text",
-      "content": "3. Động từ bất quy tắc phải học thuộc: go → went, have → had, do → did, make → made, give → gave, teach → taught, buy → bought, see → saw, take → took, get → got, be → was/were."
-    },
-    {
-      "type": "text",
-      "content": "4. Sau did / didn’t động từ luôn về nguyên mẫu: Did they went? là sai, phải là Did they go? Với be dùng was/were, không dùng did: Were you at the orphanage? – Yes, I was."
+      "type": "card",
+      "n": 4,
+      "title": "Động từ be",
+      "text": "Với be dùng was / were, không dùng did.",
+      "examples": [
+        {
+          "en": "{c Were} you at the orphanage? – Yes, I {c was}.",
+          "vi": "Bạn có ở trại trẻ mồ côi không? – Có."
+        }
+      ]
     }
   ],
   "examples": [],

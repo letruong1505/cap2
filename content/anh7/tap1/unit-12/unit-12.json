@@ -211,32 +211,127 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 12 nói về các nước nói tiếng Anh: Anh, Mỹ, Ca-na-đa, Úc, Niu Di-lân. Ngữ pháp trọng tâm là mạo từ a, an, the và khi nào không dùng mạo từ."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "{k a / an}: nhắc lần đầu. {k the}: đã biết, duy nhất, so sánh nhất, sông biển, nước số nhiều / có Kingdom, States. {k Không mạo từ}: tên người, hầu hết tên nước và thành phố, ngôn ngữ, bữa ăn."
     },
     {
       "type": "text",
-      "content": "1. a / an dùng với danh từ đếm được số ít khi nhắc đến lần đầu hoặc nói chung chung. a trước âm phụ âm (a castle, a university), an trước âm nguyên âm (an island, an hour)."
+      "content": "Unit 12 nói về các nước nói tiếng Anh: Anh, Mỹ, Ca-na-đa, Úc, Niu Di-lân."
     },
     {
-      "type": "text",
-      "content": "2. the dùng khi cả người nói và người nghe đều biết đang nói đến cái gì: đã nhắc đến trước đó (I saw a castle. The castle was ancient), vật duy nhất (the sun, the sea, the capital of Canada), và với so sánh nhất (the longest coastline)."
+      "type": "card",
+      "n": 1,
+      "title": "A / an",
+      "text": "Dùng với danh từ đếm được số ít khi nhắc đến lần đầu hoặc nói chung. A trước âm phụ âm, an trước âm nguyên âm.",
+      "table": {
+        "head": [
+          "Mạo từ",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "a",
+            "a castle, a university"
+          ],
+          [
+            "an",
+            "an island, an hour"
+          ]
+        ]
+      },
+      "try": {
+        "q": "New Zealand is ___ island country.",
+        "options": [
+          "an",
+          "a",
+          "the"
+        ],
+        "answer": 0,
+        "explain": "island bắt đầu bằng âm nguyên âm."
+      }
     },
     {
-      "type": "formula",
-      "content": "the + tên sông, biển, đại dương, dãy núi, tên nước ở số nhiều hoặc có từ Kingdom / States / Republic: the Thames, the Pacific Ocean, the Alps, the Philippines, the UK, the USA"
+      "type": "card",
+      "n": 2,
+      "title": "The",
+      "text": "Dùng khi cả người nói và người nghe đều biết đang nói đến cái gì.",
+      "table": {
+        "head": [
+          "Trường hợp",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "Đã nhắc trước đó",
+            "I saw a castle. The castle was ancient."
+          ],
+          [
+            "Vật duy nhất",
+            "the sun, the sea, the capital of Canada"
+          ],
+          [
+            "So sánh nhất",
+            "the longest coastline"
+          ],
+          [
+            "Sông, biển, đại dương, dãy núi",
+            "the Thames, the Pacific Ocean, the Alps"
+          ],
+          [
+            "Nước số nhiều / có Kingdom, States, Republic",
+            "the Philippines, the UK, the USA"
+          ]
+        ]
+      }
     },
     {
-      "type": "text",
-      "content": "3. Không dùng mạo từ (zero article) với: tên người, tên hầu hết các nước và thành phố (Canada, Australia, London), tên ngôn ngữ (English), bữa ăn (have breakfast), danh từ số nhiều hoặc không đếm được nói chung (Penguins live in New Zealand. Culture is important)."
+      "type": "card",
+      "n": 3,
+      "title": "Không dùng mạo từ (zero article)",
+      "text": "Với tên người, tên hầu hết các nước và thành phố, ngôn ngữ, bữa ăn, danh từ số nhiều hoặc không đếm được nói chung.",
+      "examples": [
+        {
+          "en": "{c Ø} Ottawa is the capital of {c Ø} Canada.",
+          "vi": "Ottawa là thủ đô của Ca-na-đa."
+        },
+        {
+          "en": "People in {c the} UK speak {c Ø} English.",
+          "vi": "Người dân ở Anh nói tiếng Anh."
+        },
+        {
+          "en": "{c Ø} Penguins live in {c Ø} New Zealand.",
+          "vi": "Chim cánh cụt sống ở New Zealand."
+        },
+        {
+          "en": "I visited {c a} historic castle in Scotland; {c the} castle is over 800 years old.",
+          "vi": "Tôi thăm một lâu đài cổ ở Scotland; lâu đài đó hơn 800 năm tuổi."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "Ví dụ: Ottawa is the capital of Canada. New Zealand is an island country in the Pacific Ocean. People in the UK speak English. I visited a historic castle in Scotland; the castle is over 800 years old."
-    },
-    {
-      "type": "text",
-      "content": "4. Lưu ý các trường hợp hay nhầm: the USA, the UK, the Netherlands (có the) nhưng America, England, Canada (không the). Nói go to school, go home (không the) nhưng go to the cinema."
+      "type": "card",
+      "n": 4,
+      "title": "Hay nhầm",
+      "table": {
+        "head": [
+          "Có the",
+          "Không the"
+        ],
+        "rows": [
+          [
+            "the USA, the UK, the Netherlands",
+            "America, England, Canada"
+          ],
+          [
+            "go to the cinema",
+            "go to school, go home"
+          ]
+        ]
+      },
+      "wrong": "I live in the Canada.",
+      "right": "I live in {k Canada}.",
+      "why": "Hầu hết tên nước không có the."
     }
   ],
   "examples": [],

@@ -187,40 +187,160 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 11 nói về các phương tiện đi lại trong tương lai. Ngữ pháp trọng tâm: thì tương lai đơn với will và đại từ sở hữu."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Tương lai đơn: {k will + V}. Đại từ sở hữu: my → {k mine}, your → {k yours}, her → {k hers}, our → {k ours}, their → {k theirs}; {k không có danh từ theo sau}."
     },
     {
       "type": "text",
-      "content": "1. Thì tương lai đơn với will diễn tả dự đoán hoặc quyết định tức thời. Dạng giống nhau cho mọi chủ ngữ."
+      "content": "Unit 11 nói về các phương tiện đi lại trong tương lai."
     },
     {
-      "type": "formula",
-      "content": "(+) S + will + V     (−) S + will not (won’t) + V     (?) Will + S + V ?"
+      "type": "card",
+      "n": 1,
+      "title": "Tương lai đơn",
+      "text": "Diễn tả dự đoán hoặc quyết định tức thời. Dạng giống nhau cho mọi chủ ngữ. Dấu hiệu: in the future, in 2050, tomorrow, next year, soon, I think…",
+      "formulas": [
+        "(+) {s S} + {c will} + {v V}",
+        "(−) {s S} + {c will not (won’t)} + {v V}",
+        "(?) {c Will} + {s S} + {v V} ?"
+      ],
+      "examples": [
+        {
+          "en": "Cars {c will} {v run} on solar energy.",
+          "vi": "Ô tô sẽ chạy bằng năng lượng mặt trời."
+        },
+        {
+          "en": "People {c won’t} {v need} drivers.",
+          "vi": "Con người sẽ không cần tài xế."
+        },
+        {
+          "en": "{c Will} we {v fly} to school? – Yes, we will.",
+          "vi": "Chúng ta sẽ bay đến trường chứ? – Có."
+        }
+      ],
+      "wrong": "She will flies to school.",
+      "right": "She will {k fly} to school.",
+      "why": "Sau will là V nguyên mẫu. Rút gọn: I’ll, you’ll, he’ll, we’ll, they’ll; will not = won’t."
     },
     {
-      "type": "text",
-      "content": "Ví dụ: Cars will run on solar energy. People won’t need drivers. Will we fly to school? – Yes, we will. / No, we won’t. Dấu hiệu: in the future, in 2050, tomorrow, next year, soon, I think…"
+      "type": "card",
+      "n": 2,
+      "title": "Đại từ sở hữu",
+      "text": "Thay cho tính từ sở hữu + danh từ để tránh lặp từ.",
+      "table": {
+        "head": [
+          "Tính từ sở hữu",
+          "Đại từ sở hữu"
+        ],
+        "rows": [
+          [
+            "my",
+            "mine"
+          ],
+          [
+            "your",
+            "yours"
+          ],
+          [
+            "his",
+            "his"
+          ],
+          [
+            "her",
+            "hers"
+          ],
+          [
+            "its",
+            "its"
+          ],
+          [
+            "our",
+            "ours"
+          ],
+          [
+            "their",
+            "theirs"
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "en": "This bike is {c mine}. (= my bike)",
+          "vi": "Chiếc xe đạp này là của tôi."
+        },
+        {
+          "en": "Their car is electric, and {c ours} is too.",
+          "vi": "Xe của họ chạy điện, xe của chúng tôi cũng vậy."
+        },
+        {
+          "en": "Is this helmet {c yours}?",
+          "vi": "Mũ này của bạn à?"
+        }
+      ],
+      "wrong": "This is mine bike.",
+      "right": "This is {k my} bike. / This bike is {k mine}.",
+      "why": "Sau đại từ sở hữu không có danh từ.",
+      "try": {
+        "q": "That car is not theirs; it’s ___.",
+        "options": [
+          "ours",
+          "our",
+          "us"
+        ],
+        "answer": 0,
+        "explain": "Đứng một mình → ours."
+      }
     },
     {
-      "type": "text",
-      "content": "2. Đại từ sở hữu thay cho tính từ sở hữu + danh từ, để tránh lặp từ."
-    },
-    {
-      "type": "formula",
-      "content": "my → mine   your → yours   his → his   her → hers   its → its   our → ours   their → theirs"
-    },
-    {
-      "type": "text",
-      "content": "Ví dụ: This bike is mine. (= my bike) Their car is electric, and ours is too. Is this helmet yours? Sau đại từ sở hữu KHÔNG có danh từ: không nói mine bike."
-    },
-    {
-      "type": "text",
-      "content": "3. Lưu ý: sau will là động từ nguyên mẫu (will to be, will flies là sai). Dạng rút gọn: I’ll, you’ll, he’ll, we’ll, they’ll; will not = won’t."
-    },
-    {
-      "type": "text",
-      "content": "4. Từ vựng về phương tiện: driverless car, solar-powered ship, flying bike, hyperloop, teleporter; tính chất: eco-friendly, economical, convenient, comfortable, fast, safe."
+      "type": "card",
+      "n": 3,
+      "title": "Từ vựng phương tiện",
+      "collapse": "Xem từ vựng phương tiện",
+      "table": {
+        "head": [
+          "Từ / cụm",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "driverless car",
+            "xe không người lái"
+          ],
+          [
+            "solar-powered ship",
+            "tàu chạy năng lượng mặt trời"
+          ],
+          [
+            "flying bike",
+            "xe đạp bay"
+          ],
+          [
+            "hyperloop",
+            "tàu siêu tốc"
+          ],
+          [
+            "teleporter",
+            "máy dịch chuyển"
+          ],
+          [
+            "eco-friendly",
+            "thân thiện môi trường"
+          ],
+          [
+            "economical",
+            "tiết kiệm"
+          ],
+          [
+            "convenient",
+            "tiện lợi"
+          ],
+          [
+            "comfortable",
+            "thoải mái"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],

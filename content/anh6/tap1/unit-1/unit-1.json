@@ -187,36 +187,162 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 1 nói về trường học mới và các hoạt động ở trường. Ngữ pháp trọng tâm: thì hiện tại đơn (present simple) và trạng từ chỉ tần suất (adverbs of frequency)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Hiện tại đơn: thói quen, sự thật, lịch trình. {k he / she / it + V-s/es}. Trạng từ tần suất đứng {k trước V thường}, {k sau be}."
     },
     {
       "type": "text",
-      "content": "1. Thì hiện tại đơn dùng để nói về thói quen, sự thật hiển nhiên và lịch trình. Với I / you / we / they dùng động từ nguyên mẫu; với he / she / it thêm -s hoặc -es."
+      "content": "Unit 1 nói về trường học mới và các hoạt động ở trường."
     },
     {
-      "type": "formula",
-      "content": "(+) S + V(s/es)      (–) S + don’t / doesn’t + V      (?) Do / Does + S + V ?"
+      "type": "card",
+      "n": 1,
+      "title": "Hiện tại đơn",
+      "text": "Nói về thói quen, sự thật hiển nhiên và lịch trình. Với I / you / we / they dùng động từ nguyên mẫu; với he / she / it thêm -s hoặc -es.",
+      "formulas": [
+        "(+) {s S} + {v V(s/es)}",
+        "(–) {s S} + {c don’t / doesn’t} + {v V}",
+        "(?) {c Do / Does} + {s S} + {v V} ?"
+      ],
+      "examples": [
+        {
+          "en": "I {v go} to school every day.",
+          "vi": "Tôi đi học mỗi ngày."
+        },
+        {
+          "en": "She {v studies} English.",
+          "vi": "Cô ấy học tiếng Anh."
+        },
+        {
+          "en": "He {c doesn’t} {v like} maths.",
+          "vi": "Cậu ấy không thích môn toán."
+        },
+        {
+          "en": "{c Do} you {v have} a lot of homework? – Yes, I do.",
+          "vi": "Bạn có nhiều bài tập không? – Có."
+        }
+      ],
+      "wrong": "She don’t like maths.",
+      "right": "She {c doesn’t} like maths.",
+      "why": "Ngôi he / she / it dùng doesn’t, và động từ sau đó về nguyên mẫu.",
+      "try": {
+        "q": "He ___ football every Sunday.",
+        "options": [
+          "plays",
+          "play",
+          "playing"
+        ],
+        "answer": 0,
+        "explain": "he + V-s."
+      }
     },
     {
-      "type": "text",
-      "content": "Ví dụ: I go to school every day. She studies English. He doesn’t like maths. Do you have a lot of homework? – Yes, I do. / No, I don’t."
+      "type": "card",
+      "n": 2,
+      "title": "Cách thêm -s / -es",
+      "table": {
+        "head": [
+          "Quy tắc",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "Tận cùng -s, -sh, -ch, -x, -o → -es",
+            "watch → watches, go → goes"
+          ],
+          [
+            "Phụ âm + y → -ies",
+            "study → studies"
+          ],
+          [
+            "Bất quy tắc",
+            "have → has"
+          ],
+          [
+            "Còn lại thêm -s",
+            "play → plays"
+          ]
+        ]
+      }
     },
     {
-      "type": "text",
-      "content": "2. Thêm -es sau động từ tận cùng là -s, -sh, -ch, -x, -o (watches, goes). Động từ tận cùng là phụ âm + y đổi y thành -ies (study → studies). Have → has."
+      "type": "card",
+      "n": 3,
+      "title": "Trạng từ chỉ tần suất",
+      "text": "Trả lời cho câu hỏi How often …?",
+      "table": {
+        "head": [
+          "Từ",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "always",
+            "luôn luôn"
+          ],
+          [
+            "usually",
+            "thường xuyên"
+          ],
+          [
+            "often",
+            "hay"
+          ],
+          [
+            "sometimes",
+            "thỉnh thoảng"
+          ],
+          [
+            "never",
+            "không bao giờ"
+          ]
+        ]
+      },
+      "formulas": [
+        "S + {c adverb} + {v V}",
+        "S + {v be} + {c adverb}"
+      ],
+      "examples": [
+        {
+          "en": "I {c always} {v do} my homework.",
+          "vi": "Tôi luôn làm bài tập."
+        },
+        {
+          "en": "She {v is} {c never} late.",
+          "vi": "Cô ấy không bao giờ đến muộn."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "3. Trạng từ chỉ tần suất trả lời cho câu hỏi How often …?: always (luôn luôn), usually (thường xuyên), often (hay), sometimes (thỉnh thoảng), never (không bao giờ)."
-    },
-    {
-      "type": "formula",
-      "content": "S + adverb of frequency + V      /      S + be + adverb of frequency      Ví dụ: I always do my homework. She is never late."
-    },
-    {
-      "type": "text",
-      "content": "4. Động từ đi với danh từ chỉ hoạt động: play football, do homework, have lunch, study English."
+      "type": "card",
+      "n": 4,
+      "title": "Cụm hoạt động",
+      "collapse": "Xem cụm hoạt động",
+      "table": {
+        "head": [
+          "Từ / cụm",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "play football",
+            "chơi bóng đá"
+          ],
+          [
+            "do homework",
+            "làm bài tập"
+          ],
+          [
+            "have lunch",
+            "ăn trưa"
+          ],
+          [
+            "study English",
+            "học tiếng Anh"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],

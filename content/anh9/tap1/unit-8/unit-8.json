@@ -193,36 +193,137 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 8 nói về du lịch. Ngữ pháp trọng tâm: đại từ quan hệ who, which, whose (relative pronouns)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Đại từ quan hệ: {k who} (người), {k which} (vật, sự việc), {k whose} (sở hữu) + danh từ. Có thể dùng {k that} thay who / which."
     },
     {
       "type": "text",
-      "content": "1. Đại từ quan hệ đứng sau danh từ để nối một mệnh đề phụ cho biết thêm về danh từ đó. Who thay cho người; which thay cho vật hoặc sự việc; whose chỉ sự sở hữu (của người hoặc vật)."
+      "content": "Unit 8 nói về du lịch."
     },
     {
-      "type": "formula",
-      "content": "noun (person) + who + V      noun (thing) + which + V      noun + whose + noun + V"
+      "type": "card",
+      "n": 1,
+      "title": "Who, which, whose",
+      "text": "Đại từ quan hệ đứng sau danh từ để nối một mệnh đề phụ cho biết thêm về danh từ đó.",
+      "formulas": [
+        "noun (person) + {c who} + V",
+        "noun (thing) + {c which} + V",
+        "noun + {c whose} + noun + V"
+      ],
+      "examples": [
+        {
+          "en": "I know a girl {c who} works as a tour guide.",
+          "vi": "Tôi biết một cô gái làm hướng dẫn viên du lịch."
+        },
+        {
+          "en": "This is a brochure {c which} gives information about the tour.",
+          "vi": "Đây là tờ rơi cho thông tin về chuyến đi."
+        },
+        {
+          "en": "He is the man {c whose} son is a travel agent.",
+          "vi": "Ông ấy là người đàn ông có con trai làm đại lý du lịch."
+        }
+      ],
+      "try": {
+        "q": "The tourist ___ passport was lost went to the police.",
+        "options": [
+          "whose",
+          "who",
+          "which"
+        ],
+        "answer": 0,
+        "explain": "whose chỉ sở hữu, đi kèm danh từ."
+      }
     },
     {
-      "type": "text",
-      "content": "Ví dụ: I know a girl who works as a tour guide. This is a brochure which gives information about the tour. He is the man whose son is a travel agent."
+      "type": "card",
+      "n": 2,
+      "title": "Whose đi kèm danh từ",
+      "text": "Whose luôn có một danh từ ngay sau nó.",
+      "examples": [
+        {
+          "en": "the tourist {c whose} {k passport} was lost",
+          "vi": "du khách bị mất hộ chiếu"
+        },
+        {
+          "en": "a city {c whose} {k streets} are narrow",
+          "vi": "thành phố có những con đường hẹp"
+        }
+      ],
+      "wrong": "He is the man who’s son is a travel agent.",
+      "right": "He is the man {c whose} son is a travel agent.",
+      "why": "Không dùng whose như who’s (= who is)."
     },
     {
-      "type": "text",
-      "content": "2. Whose luôn đi kèm một danh từ ngay sau nó: the tourist whose passport was lost; a city whose streets are narrow. Không dùng whose như who’s (= who is)."
+      "type": "card",
+      "n": 3,
+      "title": "Làm chủ ngữ hay tân ngữ",
+      "text": "Who và which có thể là chủ ngữ hoặc tân ngữ. Làm chủ ngữ thì bắt buộc phải có; làm tân ngữ thì có thể lược bỏ trong mệnh đề xác định.",
+      "examples": [
+        {
+          "en": "The tour ({c which}) we booked was great.",
+          "vi": "Chuyến đi chúng tôi đặt rất tuyệt."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "3. Who và which có thể là chủ ngữ hoặc tân ngữ của mệnh đề quan hệ. Khi làm chủ ngữ thì bắt buộc phải có; khi làm tân ngữ thì có thể lược bỏ trong mệnh đề xác định: The tour (which) we booked was great."
+      "type": "card",
+      "n": 4,
+      "title": "That thay cho who / which",
+      "text": "Có thể dùng that thay cho who hoặc which trong mệnh đề xác định.",
+      "examples": [
+        {
+          "en": "The tourists {c that} arrived late missed the bus.",
+          "vi": "Những du khách đến muộn đã lỡ xe buýt."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "4. Có thể dùng that thay cho who hoặc which trong mệnh đề xác định: The tourists that arrived late missed the bus."
-    },
-    {
-      "type": "text",
-      "content": "5. Từ vựng du lịch: package holiday (kỳ nghỉ trọn gói), itinerary (lịch trình), brochure (tờ rơi), hop-on hop-off (xe lên xuống tùy ý), homestay, low season (mùa thấp điểm), tour guide, travel agency."
+      "type": "card",
+      "n": 5,
+      "title": "Từ vựng du lịch",
+      "collapse": "Xem từ vựng du lịch",
+      "table": {
+        "head": [
+          "Từ / cụm",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "package holiday",
+            "kỳ nghỉ trọn gói"
+          ],
+          [
+            "itinerary",
+            "lịch trình"
+          ],
+          [
+            "brochure",
+            "tờ rơi"
+          ],
+          [
+            "hop-on hop-off",
+            "xe lên xuống tùy ý"
+          ],
+          [
+            "homestay",
+            "ở nhà dân"
+          ],
+          [
+            "low season",
+            "mùa thấp điểm"
+          ],
+          [
+            "tour guide",
+            "hướng dẫn viên"
+          ],
+          [
+            "travel agency",
+            "đại lý du lịch"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],

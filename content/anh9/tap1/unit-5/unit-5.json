@@ -193,40 +193,213 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 5 nói về những trải nghiệm của chúng ta. Ngữ pháp trọng tâm: thì hiện tại hoàn thành (present perfect)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Hiện tại hoàn thành: {k have / has + V3}. Mốc thời gian xác định trong quá khứ → dùng {k quá khứ đơn}. {k Have gone to} ≠ {k have been to}."
     },
     {
       "type": "text",
-      "content": "1. Hiện tại hoàn thành diễn tả: (a) trải nghiệm trong đời cho đến nay; (b) hành động xảy ra trong quá khứ nhưng còn liên quan đến hiện tại; (c) hành động bắt đầu trong quá khứ và còn tiếp tục."
+      "content": "Unit 5 nói về những trải nghiệm của chúng ta."
     },
     {
-      "type": "formula",
-      "content": "(+) S + have / has + V3 (V-ed)      (–) S + haven’t / hasn’t + V3      (?) Have / Has + S + V3 ?"
+      "type": "card",
+      "n": 1,
+      "title": "Hiện tại hoàn thành",
+      "text": "Diễn tả: (a) trải nghiệm trong đời cho đến nay; (b) hành động xảy ra trong quá khứ nhưng còn liên quan đến hiện tại; (c) hành động bắt đầu trong quá khứ và còn tiếp tục.",
+      "formulas": [
+        "(+) S + {c have / has} + {v V3}",
+        "(–) S + {c haven’t / hasn’t} + {v V3}",
+        "(?) {c Have / Has} + S + {v V3} ?"
+      ],
+      "examples": [
+        {
+          "en": "I {c have} {v visited} Ha Long Bay twice.",
+          "vi": "Tôi đã đến vịnh Hạ Long hai lần."
+        },
+        {
+          "en": "She {c hasn’t} {v tried} snorkelling.",
+          "vi": "Cô ấy chưa thử lặn ống thở."
+        },
+        {
+          "en": "{c Have} you ever {v seen} a coral reef? – Yes, I have. / No, I haven’t.",
+          "vi": "Bạn đã từng thấy rạn san hô chưa?"
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "Ví dụ: I have visited Ha Long Bay twice. She hasn’t tried snorkelling. Have you ever seen a coral reef? – Yes, I have. / No, I haven’t."
+      "type": "card",
+      "n": 2,
+      "title": "Dấu hiệu nhận biết",
+      "table": {
+        "head": [
+          "Từ",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "ever",
+            "đã từng"
+          ],
+          [
+            "never",
+            "chưa bao giờ"
+          ],
+          [
+            "already",
+            "đã … rồi"
+          ],
+          [
+            "yet",
+            "chưa (câu phủ định, nghi vấn)"
+          ],
+          [
+            "just",
+            "vừa mới"
+          ],
+          [
+            "so far",
+            "cho đến nay"
+          ],
+          [
+            "recently, lately",
+            "gần đây"
+          ],
+          [
+            "for + khoảng thời gian",
+            "for two years"
+          ],
+          [
+            "since + mốc thời gian",
+            "since 2020"
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "en": "I have lived here {k for} two years.",
+          "vi": "Tôi sống ở đây được hai năm."
+        },
+        {
+          "en": "{k How long} have you lived here?",
+          "vi": "Bạn sống ở đây bao lâu rồi?"
+        }
+      ],
+      "try": {
+        "q": "I have lived here ___ 2020.",
+        "options": [
+          "since",
+          "for",
+          "ago"
+        ],
+        "answer": 0,
+        "explain": "since + mốc thời gian."
+      }
     },
     {
-      "type": "text",
-      "content": "2. Dấu hiệu nhận biết: ever (đã từng), never (chưa bao giờ), already (đã … rồi), yet (chưa, trong câu phủ định và nghi vấn), just (vừa mới), so far (cho đến nay), recently, lately, for + khoảng thời gian, since + mốc thời gian."
+      "type": "card",
+      "n": 3,
+      "title": "Động từ bất quy tắc cần nhớ",
+      "collapse": "Xem động từ bất quy tắc",
+      "table": {
+        "head": [
+          "Nguyên mẫu",
+          "V3"
+        ],
+        "rows": [
+          [
+            "be",
+            "been"
+          ],
+          [
+            "go",
+            "gone / been"
+          ],
+          [
+            "see",
+            "seen"
+          ],
+          [
+            "do",
+            "done"
+          ],
+          [
+            "eat",
+            "eaten"
+          ],
+          [
+            "take",
+            "taken"
+          ],
+          [
+            "write",
+            "written"
+          ],
+          [
+            "have",
+            "had"
+          ],
+          [
+            "make",
+            "made"
+          ]
+        ]
+      }
     },
     {
-      "type": "formula",
-      "content": "for two years / for a long time      since 2020 / since last summer      How long have you lived here?"
+      "type": "card",
+      "n": 4,
+      "title": "Gone to và been to",
+      "examples": [
+        {
+          "en": "He {k has gone to} Da Nang.",
+          "vi": "Anh ấy đã đi Đà Nẵng (chưa về)."
+        },
+        {
+          "en": "He {k has been to} Da Nang.",
+          "vi": "Anh ấy đã từng đến Đà Nẵng (đã về)."
+        }
+      ],
+      "wrong": "I have visited Hue last week.",
+      "right": "I {k visited} Hue last week.",
+      "why": "Không dùng hiện tại hoàn thành với mốc thời gian xác định trong quá khứ (yesterday, last week, in 2019): dùng quá khứ đơn."
     },
     {
-      "type": "text",
-      "content": "3. Động từ bất quy tắc cần nhớ: be → been, go → gone / been, see → seen, do → done, eat → eaten, take → taken, write → written, have → had, make → made."
-    },
-    {
-      "type": "text",
-      "content": "4. Phân biệt: have gone to (đã đi và chưa về) với have been to (đã từng đến, hiện đã về). Không dùng hiện tại hoàn thành với mốc thời gian xác định trong quá khứ (yesterday, last week, in 2019): dùng quá khứ đơn."
-    },
-    {
-      "type": "text",
-      "content": "5. Tính từ chỉ cảm xúc về trải nghiệm: amazing, brilliant, exhilarating, thrilling, memorable, touching (tích cực); embarrassing, unpleasant (tiêu cực)."
+      "type": "card",
+      "n": 5,
+      "title": "Tính từ chỉ cảm xúc về trải nghiệm",
+      "collapse": "Xem tính từ chỉ cảm xúc về trải nghiệm",
+      "table": {
+        "head": [
+          "Từ / cụm",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "amazing, brilliant",
+            "tuyệt vời"
+          ],
+          [
+            "exhilarating, thrilling",
+            "phấn khích"
+          ],
+          [
+            "memorable",
+            "đáng nhớ"
+          ],
+          [
+            "touching",
+            "cảm động"
+          ],
+          [
+            "embarrassing",
+            "xấu hổ"
+          ],
+          [
+            "unpleasant",
+            "khó chịu"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],

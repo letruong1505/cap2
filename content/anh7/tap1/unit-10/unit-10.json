@@ -187,36 +187,154 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 10 nói về các nguồn năng lượng: tái tạo (mặt trời, gió, nước) và không tái tạo (than, dầu, khí). Ngữ pháp trọng tâm là thì hiện tại tiếp diễn và so sánh với hiện tại đơn."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Hiện tại tiếp diễn: {k am / is / are + V-ing}, việc đang diễn ra hoặc thay đổi đang xảy ra. Hiện tại đơn: thói quen, sự thật."
     },
     {
       "type": "text",
-      "content": "1. Thì hiện tại tiếp diễn diễn tả hành động đang xảy ra ngay lúc nói hoặc quanh thời điểm nói, và những thay đổi đang diễn ra. Dấu hiệu: now, at the moment, at present, Look!, Listen!"
+      "content": "Unit 10 nói về nguồn năng lượng tái tạo và không tái tạo."
     },
     {
-      "type": "formula",
-      "content": "(+) S + am / is / are + V-ing     (−) S + am / is / are + not + V-ing     (?) Am / Is / Are + S + V-ing ?"
+      "type": "card",
+      "n": 1,
+      "title": "Hiện tại tiếp diễn",
+      "text": "Diễn tả hành động đang xảy ra ngay lúc nói hoặc quanh thời điểm nói, và những thay đổi đang diễn ra. Dấu hiệu: now, at the moment, at present, Look!, Listen!",
+      "formulas": [
+        "(+) {s S} + {c am / is / are} + {v V-ing}",
+        "(−) {s S} + {c am / is / are not} + {v V-ing}",
+        "(?) {c Am / Is / Are} + {s S} + {v V-ing} ?"
+      ],
+      "examples": [
+        {
+          "en": "We {c are} {v using} too much electricity now.",
+          "vi": "Bây giờ chúng ta đang dùng quá nhiều điện."
+        },
+        {
+          "en": "{c Is} the sun {v shining}? – Yes, it is.",
+          "vi": "Mặt trời đang chiếu à? – Đúng."
+        },
+        {
+          "en": "People {c are} {v replacing} old bulbs with LED bulbs.",
+          "vi": "Mọi người đang thay bóng đèn cũ bằng đèn LED."
+        },
+        {
+          "en": "The world {c is} {v getting} warmer.",
+          "vi": "Thế giới đang nóng lên."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "Ví dụ: We are using too much electricity now. Is the sun shining? – Yes, it is. People are replacing old light bulbs with LED bulbs. The world is getting warmer."
+      "type": "card",
+      "n": 2,
+      "title": "Thêm -ing",
+      "table": {
+        "head": [
+          "Quy tắc",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "Bỏ e",
+            "make → making"
+          ],
+          [
+            "Gấp đôi phụ âm",
+            "run → running"
+          ],
+          [
+            "ie → ying",
+            "lie → lying"
+          ],
+          [
+            "Thêm -ing",
+            "play → playing"
+          ]
+        ]
+      }
     },
     {
-      "type": "text",
-      "content": "2. Quy tắc thêm -ing: make → making (bỏ e), run → running (gấp đôi phụ âm cuối từ một âm tiết), lie → lying, play → playing."
+      "type": "card",
+      "n": 3,
+      "title": "Phân biệt với hiện tại đơn",
+      "table": {
+        "head": [
+          "Thì",
+          "Dùng cho",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "Hiện tại đơn",
+            "thói quen, sự thật",
+            "Solar energy comes from the sun. I turn off the lights every night."
+          ],
+          [
+            "Hiện tại tiếp diễn",
+            "đang diễn ra",
+            "I am turning off the lights now."
+          ]
+        ]
+      },
+      "wrong": "I am needing more energy.",
+      "right": "I {k need} more energy.",
+      "why": "Động từ trạng thái (know, like, want, need, believe, understand) không dùng tiếp diễn.",
+      "try": {
+        "q": "Look! The wind turbines ___.",
+        "options": [
+          "are turning",
+          "turn",
+          "turned"
+        ],
+        "answer": 0,
+        "explain": "Look! → đang diễn ra."
+      }
     },
     {
-      "type": "text",
-      "content": "3. Phân biệt với hiện tại đơn: hiện tại đơn nói về thói quen và sự thật (Solar energy comes from the sun. I turn off the lights every night); hiện tại tiếp diễn nói về việc đang diễn ra (I am turning off the lights now)."
-    },
-    {
-      "type": "text",
-      "content": "4. Một số động từ chỉ trạng thái thường không dùng tiếp diễn: know, like, want, need, believe, understand. Nói I need more energy, không nói I am needing."
-    },
-    {
-      "type": "text",
-      "content": "5. Từ vựng theo cặp: renewable / non-renewable, limited / unlimited, solar panel, wind turbine, hydro power, save energy, reduce the use of electricity, turn off the tap."
+      "type": "card",
+      "n": 4,
+      "title": "Từ vựng năng lượng",
+      "collapse": "Xem từ vựng năng lượng",
+      "table": {
+        "head": [
+          "Từ / cụm",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "renewable / non-renewable",
+            "tái tạo / không tái tạo"
+          ],
+          [
+            "limited / unlimited",
+            "có hạn / vô hạn"
+          ],
+          [
+            "solar panel",
+            "tấm pin mặt trời"
+          ],
+          [
+            "wind turbine",
+            "tuabin gió"
+          ],
+          [
+            "hydro power",
+            "thủy điện"
+          ],
+          [
+            "save energy",
+            "tiết kiệm năng lượng"
+          ],
+          [
+            "reduce the use of electricity",
+            "giảm dùng điện"
+          ],
+          [
+            "turn off the tap",
+            "tắt vòi nước"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],

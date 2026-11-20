@@ -235,36 +235,132 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 5 nói về đồ ăn, thức uống và công thức nấu ăn. Ngữ pháp trọng tâm: danh từ đếm được và không đếm được, các lượng từ some, any, a lot of, lots of, và câu hỏi How much / How many."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Đếm được: a / an / many. Không đếm được: much, dùng đơn vị (a bottle of…). {k some} khẳng định, {k any} phủ định / nghi vấn. {k a lot of / lots of} dùng cho cả hai."
     },
     {
       "type": "text",
-      "content": "1. Danh từ đếm được có số ít và số nhiều: an egg – two eggs, an onion – onions. Danh từ không đếm được không có dạng số nhiều: rice, water, flour, salt, beef, pork, butter."
+      "content": "Unit 5 nói về đồ ăn, thức uống và công thức nấu ăn."
     },
     {
-      "type": "text",
-      "content": "2. Để đếm danh từ không đếm được, dùng đơn vị: a bottle of water, a cup of green tea, a teaspoon of salt, a tablespoon of sauce, a kilo of beef, a bowl of soup."
+      "type": "card",
+      "n": 1,
+      "title": "Đếm được và không đếm được",
+      "table": {
+        "head": [
+          "Loại",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "Đếm được",
+            "an egg – two eggs, an onion – onions"
+          ],
+          [
+            "Không đếm được",
+            "rice, water, flour, salt, beef, pork, butter"
+          ]
+        ]
+      },
+      "text": "Danh từ không đếm được không có dạng số nhiều.",
+      "wrong": "I need a rice.",
+      "right": "I need {k some} rice. / a {k bowl of} rice.",
+      "why": "Không dùng a / an với danh từ không đếm được."
     },
     {
-      "type": "formula",
-      "content": "How many + danh từ đếm được số nhiều ?      How much + danh từ không đếm được ?"
+      "type": "card",
+      "n": 2,
+      "title": "Đơn vị đếm",
+      "table": {
+        "head": [
+          "Cụm",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "a bottle of water",
+            "một chai nước"
+          ],
+          [
+            "a cup of green tea",
+            "một tách trà xanh"
+          ],
+          [
+            "a teaspoon of salt",
+            "một thìa cà phê muối"
+          ],
+          [
+            "a tablespoon of sauce",
+            "một thìa canh nước sốt"
+          ],
+          [
+            "a kilo of beef",
+            "một ký thịt bò"
+          ],
+          [
+            "a bowl of soup",
+            "một bát súp"
+          ]
+        ]
+      }
     },
     {
-      "type": "text",
-      "content": "Ví dụ: How many eggs do we need? – Two. How much flour do we need? – 200 grams. How much is a bowl of phở? (hỏi giá)."
+      "type": "card",
+      "n": 3,
+      "title": "How many / How much",
+      "formulas": [
+        "{c How many} + N đếm được số nhiều ?",
+        "{c How much} + N không đếm được ?"
+      ],
+      "examples": [
+        {
+          "en": "{c How many} eggs do we need? – Two.",
+          "vi": "Chúng ta cần bao nhiêu quả trứng? – Hai."
+        },
+        {
+          "en": "{c How much} flour do we need? – 200 grams.",
+          "vi": "Cần bao nhiêu bột? – 200 gam."
+        },
+        {
+          "en": "{c How much} is a bowl of phở?",
+          "vi": "Một bát phở giá bao nhiêu? (hỏi giá)"
+        }
+      ],
+      "try": {
+        "q": "___ sugar do we need?",
+        "options": [
+          "How much",
+          "How many",
+          "How"
+        ],
+        "answer": 0,
+        "explain": "sugar không đếm được."
+      }
     },
     {
-      "type": "text",
-      "content": "3. some dùng trong câu khẳng định và lời mời: We need some onions. Would you like some tea? any dùng trong câu phủ định và câu hỏi: We don’t have any shrimp. Is there any juice?"
-    },
-    {
-      "type": "text",
-      "content": "4. a lot of / lots of dùng cho cả hai loại danh từ: a lot of noodles, lots of water. Trong câu khẳng định thân mật, a lot of và lots of giống nhau."
-    },
-    {
-      "type": "text",
-      "content": "5. a / an chỉ dùng với danh từ đếm được số ít: an omelette, a pancake. Không nói a rice hay a bread."
+      "type": "card",
+      "n": 4,
+      "title": "Some, any, a lot of",
+      "text": "Some dùng trong câu khẳng định và lời mời; any trong câu phủ định và câu hỏi. A lot of / lots of dùng cho cả hai loại danh từ.",
+      "examples": [
+        {
+          "en": "We need {c some} onions.",
+          "vi": "Chúng ta cần ít hành."
+        },
+        {
+          "en": "Would you like {c some} tea?",
+          "vi": "Bạn dùng chút trà nhé?"
+        },
+        {
+          "en": "We don’t have {c any} shrimp.",
+          "vi": "Chúng ta không có tôm."
+        },
+        {
+          "en": "{c Lots of} water, {c a lot of} noodles",
+          "vi": "nhiều nước, nhiều mì"
+        }
+      ]
     }
   ],
   "examples": [],

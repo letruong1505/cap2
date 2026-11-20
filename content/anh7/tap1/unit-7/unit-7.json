@@ -187,40 +187,108 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 7 nói về giao thông và an toàn đường bộ. Ngữ pháp trọng tâm: dùng It để nói về khoảng cách, câu hỏi How far, và should / shouldn’t để khuyên."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Hỏi khoảng cách: {k How far is it from A to B?} – {k It is …}. Lời khuyên: {k should / shouldn’t + V}."
     },
     {
       "type": "text",
-      "content": "1. Hỏi khoảng cách bằng How far is it from A to B? Trả lời bằng It + be + khoảng cách. It ở đây không chỉ vật gì cụ thể."
+      "content": "Unit 7 nói về giao thông và an toàn đường bộ."
     },
     {
-      "type": "formula",
-      "content": "How far is it from A to B?   –   It is (about) 2 kilometres.  /  It’s not far."
+      "type": "card",
+      "n": 1,
+      "title": "Khoảng cách với It",
+      "text": "It ở đây không chỉ vật gì cụ thể.",
+      "formulas": [
+        "{c How far} is it from A to B?",
+        "{c It is} (about) 2 kilometres. / It’s not far."
+      ],
+      "examples": [
+        {
+          "en": "How far is it from your house to school? – {c It’s} about three kilometres.",
+          "vi": "Từ nhà bạn đến trường bao xa? – Khoảng ba ki-lô-mét."
+        },
+        {
+          "en": "{c It’s} 10 minutes by bike.",
+          "vi": "Mất 10 phút đi xe đạp."
+        }
+      ],
+      "wrong": "There is 2 kilometres from my house to school.",
+      "right": "{c It is} 2 kilometres from my house to school.",
+      "why": "Khoảng cách dùng It is, không dùng There is."
     },
     {
-      "type": "text",
-      "content": "Ví dụ: How far is it from your house to school? – It’s about three kilometres. It’s 10 minutes by bike."
+      "type": "card",
+      "n": 2,
+      "title": "Should / shouldn’t",
+      "text": "Khuyên nên hay không nên làm gì. Dạng giống nhau cho mọi chủ ngữ, không thêm -s, sau đó là V nguyên mẫu.",
+      "formulas": [
+        "{s S} + {c should / shouldn’t} + {v V}",
+        "{c Should} + {s S} + {v V} ?"
+      ],
+      "examples": [
+        {
+          "en": "You {c should} {v wear} a helmet.",
+          "vi": "Bạn nên đội mũ bảo hiểm."
+        },
+        {
+          "en": "He {c shouldn’t} {v ride} on the pavement.",
+          "vi": "Cậu ấy không nên đi xe trên vỉa hè."
+        },
+        {
+          "en": "{c Should} we cross here? – No, we shouldn’t.",
+          "vi": "Chúng ta có nên qua đây không? – Không."
+        }
+      ],
+      "try": {
+        "q": "You ___ obey traffic rules.",
+        "options": [
+          "should",
+          "should to",
+          "shoulds"
+        ],
+        "answer": 0,
+        "explain": "should + V."
+      }
     },
     {
-      "type": "text",
-      "content": "2. should / shouldn’t + V (nguyên mẫu) để khuyên nên hay không nên làm gì. Dạng giống nhau cho mọi chủ ngữ, không thêm -s."
-    },
-    {
-      "type": "formula",
-      "content": "S + should / shouldn’t + V      Should + S + V ?"
-    },
-    {
-      "type": "text",
-      "content": "Ví dụ: You should wear a helmet. He shouldn’t ride on the pavement. Should we cross here? – Yes, we should. / No, we shouldn’t."
-    },
-    {
-      "type": "text",
-      "content": "3. Các cụm thường dùng: obey traffic rules, wear a seatbelt, cross at the zebra crossing, wait for the green light, look left and right. Hỏi cách đi: How do you go to school? – I go by bike / on foot."
-    },
-    {
-      "type": "text",
-      "content": "4. Lưu ý: sau should là động từ nguyên mẫu (should to wear là sai). Khoảng cách dùng It is, không dùng There is."
+      "type": "card",
+      "n": 3,
+      "title": "Cụm giao thông",
+      "collapse": "Xem cụm giao thông",
+      "table": {
+        "head": [
+          "Từ / cụm",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "obey traffic rules",
+            "tuân thủ luật giao thông"
+          ],
+          [
+            "wear a seatbelt",
+            "thắt dây an toàn"
+          ],
+          [
+            "cross at the zebra crossing",
+            "qua đường ở vạch kẻ"
+          ],
+          [
+            "wait for the green light",
+            "chờ đèn xanh"
+          ],
+          [
+            "look left and right",
+            "nhìn trái phải"
+          ],
+          [
+            "go by bike / on foot",
+            "đi xe đạp / đi bộ"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],

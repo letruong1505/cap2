@@ -198,36 +198,101 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 1 nói về cuộc đời của những người nổi tiếng mà chúng ta ngưỡng mộ. Ngữ pháp trọng tâm: thì quá khứ đơn (past simple) và thì quá khứ tiếp diễn (past continuous)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Quá khứ đơn: việc {k đã xong}, chuỗi việc nối tiếp. Quá khứ tiếp diễn: việc {k đang diễn ra}, hoặc bị việc ngắn (quá khứ đơn) {k xen vào}."
     },
     {
       "type": "text",
-      "content": "1. Quá khứ đơn diễn tả hành động đã xảy ra và kết thúc trong quá khứ, hoặc một chuỗi hành động nối tiếp nhau. Động từ có quy tắc thêm -ed; động từ bất quy tắc dùng cột 2 (go – went, found – founded nhưng find – found)."
+      "content": "Unit 1 nói về cuộc đời của những người nổi tiếng mà chúng ta ngưỡng mộ."
     },
     {
-      "type": "formula",
-      "content": "S + V-ed / V2        S + did not + V        Did + S + V?"
+      "type": "card",
+      "n": 1,
+      "title": "Quá khứ đơn",
+      "text": "Diễn tả hành động đã xảy ra và kết thúc trong quá khứ, hoặc một chuỗi hành động nối tiếp nhau. Động từ có quy tắc thêm -ed; bất quy tắc dùng cột 2 (go – went; find – found, khác với found – founded).",
+      "formulas": [
+        "S + {v V-ed / V2}",
+        "S + {c did not} + {v V}",
+        "{c Did} + S + {v V}?"
+      ],
+      "examples": [
+        {
+          "en": "He {v founded} the company in 1976.",
+          "vi": "Ông thành lập công ty vào năm 1976."
+        },
+        {
+          "en": "She {v didn’t finish} school.",
+          "vi": "Cô ấy không học hết trường."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "2. Quá khứ tiếp diễn diễn tả hành động đang diễn ra tại một thời điểm trong quá khứ, hoặc một hành động đang diễn ra thì bị hành động khác (quá khứ đơn) xen vào."
+      "type": "card",
+      "n": 2,
+      "title": "Quá khứ tiếp diễn",
+      "text": "Diễn tả hành động đang diễn ra tại một thời điểm trong quá khứ, hoặc một hành động đang diễn ra thì bị hành động khác (quá khứ đơn) xen vào.",
+      "formulas": [
+        "S + {c was / were} + {v V-ing}",
+        "{c While} + S + {c was / were} + {v V-ing}, S + {k V-ed}",
+        "S + {k V-ed} + {c when} + S + {c was / were} + {v V-ing}"
+      ],
+      "examples": [
+        {
+          "en": "{c While} he {v was growing up} in California, he {k developed} an interest in electronics.",
+          "vi": "Trong lúc lớn lên ở California, ông nảy sinh hứng thú với điện tử. (dài: was growing up; xen vào: developed)"
+        },
+        {
+          "en": "He {v was studying} at college {c when} he {k decided} to drop out.",
+          "vi": "Anh đang học đại học thì quyết định bỏ học."
+        }
+      ],
+      "try": {
+        "q": "She ___ TV when the phone rang.",
+        "options": [
+          "was watching",
+          "watched",
+          "has watched"
+        ],
+        "answer": 0,
+        "explain": "Việc đang diễn ra thì bị xen vào → quá khứ tiếp diễn."
+      }
     },
     {
-      "type": "formula",
-      "content": "S + was/were + V-ing        While + S + was/were + V-ing, S + V-ed        S + V-ed + when + S + was/were + V-ing"
+      "type": "card",
+      "n": 3,
+      "title": "Hai việc dài song song và động từ trạng thái",
+      "text": "Hai hành động dài song song dùng while + quá khứ tiếp diễn ở cả hai vế.",
+      "examples": [
+        {
+          "en": "{c While} Jobs {v was designing} the computer, Wozniak {v was writing} the software.",
+          "vi": "Trong lúc Jobs thiết kế máy tính, Wozniak viết phần mềm."
+        }
+      ],
+      "wrong": "I was knowing the answer.",
+      "right": "I {k knew} the answer.",
+      "why": "Động từ trạng thái (know, like, want, believe) thường không dùng ở dạng tiếp diễn."
     },
     {
-      "type": "text",
-      "content": "3. Ví dụ: While he was growing up in California, he developed an interest in electronics. (hành động dài: was growing up; hành động xen vào: developed.) He was studying at college when he decided to drop out."
-    },
-    {
-      "type": "text",
-      "content": "4. Lưu ý: hai hành động dài song song dùng while + quá khứ tiếp diễn ở cả hai vế: While Jobs was designing the computer, Wozniak was writing the software. Các động từ chỉ trạng thái (know, like, want, believe) thường không dùng ở dạng tiếp diễn."
-    },
-    {
-      "type": "text",
-      "content": "5. Phát âm: nguyên âm đôi /eɪ/ (day, famous, great) và /əʊ/ (hero, hope, know)."
+      "type": "card",
+      "n": 4,
+      "title": "Phát âm nguyên âm đôi /eɪ/ và /əʊ/",
+      "table": {
+        "head": [
+          "Âm",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "/eɪ/",
+            "day, famous, great"
+          ],
+          [
+            "/əʊ/",
+            "hero, hope, know"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],

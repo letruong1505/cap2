@@ -218,44 +218,104 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 10 nói về du lịch sinh thái và các loại hình du lịch. Ngữ pháp trọng tâm: câu điều kiện loại 1 và loại 2."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Điều kiện 1: {k If + hiện tại đơn, will + V} (có thể xảy ra). Điều kiện 2: {k If + quá khứ đơn / were, would + V} (không có thật ở hiện tại)."
     },
     {
       "type": "text",
-      "content": "1. Câu điều kiện loại 1 nói về tình huống có thể xảy ra ở hiện tại hoặc tương lai: If + hiện tại đơn, S + will + V."
+      "content": "Unit 10 nói về du lịch sinh thái và các loại hình du lịch."
     },
     {
-      "type": "formula",
-      "content": "If + S + V (hiện tại đơn), S + will + V (nguyên mẫu)"
+      "type": "card",
+      "n": 1,
+      "title": "Điều kiện loại 1",
+      "text": "Tình huống có thể xảy ra ở hiện tại hoặc tương lai.",
+      "formulas": [
+        "{c If} + S + {v V (hiện tại đơn)}, S + {c will} + {v V}"
+      ],
+      "examples": [
+        {
+          "en": "{c If} you {v work} hard, you {c will} {v pass} the exam.",
+          "vi": "Nếu chăm chỉ, bạn sẽ đỗ."
+        },
+        {
+          "en": "{c If} it {v rains} tomorrow, we {c will} {v stay} at home.",
+          "vi": "Nếu mai trời mưa, chúng tôi sẽ ở nhà."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "Ví dụ: If you work hard, you will pass the exam.   If it rains tomorrow, we will stay at home."
+      "type": "card",
+      "n": 2,
+      "title": "Điều kiện loại 2",
+      "text": "Tình huống không có thật hoặc khó xảy ra ở hiện tại. Với be dùng were cho mọi chủ ngữ.",
+      "formulas": [
+        "{c If} + S + {v V (quá khứ đơn / were)}, S + {c would} + {v V}"
+      ],
+      "examples": [
+        {
+          "en": "{c If} I {v were} a bird, I {c would} {v fly}.",
+          "vi": "Nếu tôi là chim, tôi sẽ bay."
+        },
+        {
+          "en": "{c If} we {v lived} in the countryside, we {c would} {v grow} our own vegetables.",
+          "vi": "Nếu sống ở nông thôn, chúng tôi sẽ tự trồng rau."
+        }
+      ],
+      "wrong": "If I was a bird, I will fly.",
+      "right": "If I {k were} a bird, I {k would} fly.",
+      "why": "Loại 2: were + would.",
+      "try": {
+        "q": "If I ___ rich, I would travel the world.",
+        "options": [
+          "were",
+          "am",
+          "will be"
+        ],
+        "answer": 0,
+        "explain": "Không có thật → were."
+      }
     },
     {
-      "type": "text",
-      "content": "2. Câu điều kiện loại 2 nói về tình huống không có thật hoặc khó xảy ra ở hiện tại: If + quá khứ đơn, S + would + V. Với động từ to be, dùng were cho mọi chủ ngữ."
+      "type": "card",
+      "n": 3,
+      "title": "Ngữ điệu",
+      "text": "Câu khẳng định và câu hỏi Wh- xuống giọng cuối câu; câu hỏi Yes/No lên giọng cuối câu."
     },
     {
-      "type": "formula",
-      "content": "If + S + V (quá khứ đơn / were), S + would + V (nguyên mẫu)"
-    },
-    {
-      "type": "text",
-      "content": "Ví dụ: If I were a bird, I would fly.   If we lived in the countryside, we would grow our own vegetables."
-    },
-    {
-      "type": "text",
-      "content": "3. Ngữ điệu: câu khẳng định và câu hỏi Wh- thường xuống giọng ở cuối; câu hỏi Yes/No thường lên giọng ở cuối."
-    },
-    {
-      "type": "text",
-      "content": "4. Lưu ý khi đọc: nhấn các từ nội dung và đọc rõ ràng để tạo nhịp điệu tự nhiên; ngữ điệu giúp người nghe hiểu thái độ và ý định của người nói."
-    },
-    {
-      "type": "text",
-      "content": "5. Từ vựng ghi nhớ: ecotourism (du lịch sinh thái), sustainable tourism (du lịch bền vững), mass tourism (du lịch đại trà), profit (lợi nhuận), stalactite (nhũ đá)."
+      "type": "card",
+      "n": 4,
+      "title": "Từ vựng du lịch sinh thái",
+      "collapse": "Xem từ vựng du lịch sinh thái",
+      "table": {
+        "head": [
+          "Từ / cụm",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "ecotourism",
+            "du lịch sinh thái"
+          ],
+          [
+            "sustainable tourism",
+            "du lịch bền vững"
+          ],
+          [
+            "mass tourism",
+            "du lịch đại trà"
+          ],
+          [
+            "profit",
+            "lợi nhuận"
+          ],
+          [
+            "stalactite",
+            "nhũ đá"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],

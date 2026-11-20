@@ -211,40 +211,165 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 1 nói về cộng đồng địa phương, những người phục vụ cộng đồng và nghề thủ công truyền thống. Ngữ pháp trọng tâm: từ để hỏi trước động từ nguyên mẫu có to (question words before to-infinitives) và cụm động từ (phrasal verbs) phần 1."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Từ để hỏi + {k to V} rút gọn câu hỏi gián tiếp. Cụm động từ = động từ + tiểu từ, nghĩa riêng. Tân ngữ là đại từ thì đặt {k giữa}: hand it down."
     },
     {
       "type": "text",
-      "content": "1. Từ để hỏi (what, where, how, who, when, which, whether) có thể đứng trước to + V để rút gọn một mệnh đề hỏi gián tiếp. Thường đi sau các động từ know, wonder, ask, decide, explain, show, tell, learn, forget, remember."
+      "content": "Unit 1 nói về cộng đồng địa phương, những người phục vụ cộng đồng và nghề thủ công truyền thống."
     },
     {
-      "type": "formula",
-      "content": "S + know / ask / decide … + question word + to V      Ví dụ: I don’t know what to do. = I don’t know what I should do."
+      "type": "card",
+      "n": 1,
+      "title": "Từ để hỏi + to V",
+      "text": "Từ để hỏi (what, where, how, who, when, which, whether) đứng trước to + V để rút gọn một mệnh đề hỏi gián tiếp. Thường đi sau know, wonder, ask, decide, explain, show, tell, learn, forget, remember.",
+      "formulas": [
+        "S + {v know / ask / decide …} + {c question word} + {k to V}"
+      ],
+      "examples": [
+        {
+          "en": "I don’t know {c what} {k to do}. (= I don’t know what I should do.)",
+          "vi": "Tôi không biết phải làm gì."
+        },
+        {
+          "en": "She showed me {c how} {k to make} pottery.",
+          "vi": "Cô ấy chỉ cho tôi cách làm đồ gốm."
+        },
+        {
+          "en": "We can’t decide {c where} {k to go}.",
+          "vi": "Chúng tôi chưa quyết định đi đâu."
+        },
+        {
+          "en": "Could you tell me {c when} {k to start}?",
+          "vi": "Bạn cho tôi biết khi nào bắt đầu được không?"
+        }
+      ],
+      "wrong": "I don’t know why to go.",
+      "right": "I don’t know {c why} we should go.",
+      "why": "Why không đứng trước to V theo cách này, dùng why + mệnh đề.",
+      "try": {
+        "q": "She showed me ___ make pottery.",
+        "options": [
+          "how to",
+          "why to",
+          "how"
+        ],
+        "answer": 0,
+        "explain": "how + to V."
+      }
     },
     {
-      "type": "text",
-      "content": "Ví dụ: She showed me how to make pottery. We can’t decide where to go. Could you tell me when to start? Lưu ý: Why không đứng trước to V theo cách này; dùng why + mệnh đề."
+      "type": "card",
+      "n": 2,
+      "title": "Cụm động từ (phrasal verbs)",
+      "text": "Gồm động từ + tiểu từ (up, down, on, out, off, around…), có nghĩa riêng, thường khác nghĩa của từng từ.",
+      "table": {
+        "head": [
+          "Cụm",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "look around",
+            "ngắm nghía xung quanh"
+          ],
+          [
+            "cut down on",
+            "cắt giảm"
+          ],
+          [
+            "run out of",
+            "hết, cạn kiệt"
+          ],
+          [
+            "get on with",
+            "có quan hệ tốt với, tiếp tục làm"
+          ],
+          [
+            "pass down / hand down",
+            "truyền lại cho thế hệ sau"
+          ]
+        ]
+      },
+      "formulas": [
+        "run out of + N",
+        "get on with + sb",
+        "pass down + N + to + sb"
+      ],
+      "examples": [
+        {
+          "en": "We {k ran out of} time.",
+          "vi": "Chúng tôi hết thời gian."
+        },
+        {
+          "en": "She {k gets on well with} her neighbours.",
+          "vi": "Cô ấy hòa thuận với hàng xóm."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "2. Cụm động từ (phrasal verb) gồm động từ + tiểu từ (up, down, on, out, off, around…) và có nghĩa riêng, thường khác nghĩa của từng từ."
+      "type": "card",
+      "n": 3,
+      "title": "Cụm động từ tách được",
+      "text": "Một số cụm có thể tách: hand sth down / hand down sth, pass sth down. Khi tân ngữ là đại từ thì bắt buộc đặt ở giữa.",
+      "examples": [
+        {
+          "en": "They {k hand it down} to their children.",
+          "vi": "Họ truyền nó lại cho con cháu."
+        }
+      ],
+      "wrong": "They hand down it to their children.",
+      "right": "They {k hand it down} to their children.",
+      "why": "Tân ngữ là đại từ (it, them, him…) thì đặt giữa động từ và tiểu từ.",
+      "try": {
+        "q": "The craft is special. They want to ___ to the next generation.",
+        "options": [
+          "hand it down",
+          "hand down it",
+          "down hand it"
+        ],
+        "answer": 0,
+        "explain": "Đại từ đặt giữa cụm."
+      }
     },
     {
-      "type": "text",
-      "content": "look around: ngắm nghía xung quanh; cut down on: cắt giảm; run out of: hết, cạn kiệt; get on with: có quan hệ tốt với, tiếp tục làm; pass down / hand down: truyền lại cho thế hệ sau."
-    },
-    {
-      "type": "formula",
-      "content": "Cụm động từ có tân ngữ: run out of + N (We ran out of time.); get on with + sb (She gets on well with her neighbours.); pass down + N + to + sb."
-    },
-    {
-      "type": "text",
-      "content": "3. Một số cụm có thể tách: hand sth down / hand down sth, pass sth down. Khi tân ngữ là đại từ thì bắt buộc đặt giữa: hand it down, không nói hand down it."
-    },
-    {
-      "type": "text",
-      "content": "4. Từ vựng nghề thủ công: pottery (đồ gốm), handicraft (sản phẩm thủ công), craft village (làng nghề), artisan (thợ thủ công), preserve (bảo tồn), speciality (đặc sản)."
+      "type": "card",
+      "n": 4,
+      "title": "Từ vựng nghề thủ công",
+      "collapse": "Xem từ vựng nghề thủ công",
+      "table": {
+        "head": [
+          "Từ / cụm",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "pottery",
+            "đồ gốm"
+          ],
+          [
+            "handicraft",
+            "sản phẩm thủ công"
+          ],
+          [
+            "craft village",
+            "làng nghề"
+          ],
+          [
+            "artisan",
+            "thợ thủ công"
+          ],
+          [
+            "preserve",
+            "bảo tồn"
+          ],
+          [
+            "speciality",
+            "đặc sản"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],

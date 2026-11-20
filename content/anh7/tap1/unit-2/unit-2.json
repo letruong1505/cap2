@@ -193,36 +193,141 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 2 nói về lối sống lành mạnh: ăn uống, tập luyện, chăm sóc da và mắt. Về ngữ pháp, em học câu đơn (simple sentences) và câu ghép (compound sentences) nối bằng and, but, or, so."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Câu đơn: 1 chủ ngữ + 1 động từ. Câu ghép: 2 câu đơn nối bằng {k , and / but / or / so}."
     },
     {
       "type": "text",
-      "content": "1. Câu đơn có một chủ ngữ và một động từ chính, diễn tả một ý trọn vẹn."
+      "content": "Unit 2 nói về lối sống lành mạnh: ăn uống, tập luyện, chăm sóc da và mắt."
     },
     {
-      "type": "formula",
-      "content": "S + V (+ O)     Ví dụ: I eat a lot of vegetables.  /  Tofu is good for you."
+      "type": "card",
+      "n": 1,
+      "title": "Câu đơn",
+      "text": "Có một chủ ngữ và một động từ chính, diễn tả một ý trọn vẹn.",
+      "formulas": [
+        "{s S} + {v V} (+ O)"
+      ],
+      "examples": [
+        {
+          "en": "I {v eat} a lot of vegetables.",
+          "vi": "Tôi ăn nhiều rau."
+        },
+        {
+          "en": "Tofu {v is} good for you.",
+          "vi": "Đậu phụ tốt cho bạn."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "2. Câu ghép gồm hai câu đơn nối với nhau bằng liên từ. Trước liên từ thường có dấu phẩy."
+      "type": "card",
+      "n": 2,
+      "title": "Câu ghép",
+      "text": "Gồm hai câu đơn nối bằng liên từ. Trước liên từ thường có dấu phẩy.",
+      "formulas": [
+        "S + V{c , and / but / or / so} + S + V"
+      ],
+      "table": {
+        "head": [
+          "Liên từ",
+          "Ý nghĩa",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "and",
+            "cùng chiều",
+            "I do yoga, and my brother goes jogging."
+          ],
+          [
+            "but",
+            "trái ngược",
+            "I like tofu, but I don’t like soybean milk."
+          ],
+          [
+            "or",
+            "lựa chọn",
+            "You can play indoors, or you can go to the park."
+          ],
+          [
+            "so",
+            "kết quả",
+            "It was sunny, so I got a sunburn."
+          ]
+        ]
+      },
+      "wrong": "I was tired, I went to bed.",
+      "right": "I was tired{c , so} I went to bed.",
+      "why": "Không dùng dấu phẩy thay cho liên từ.",
+      "try": {
+        "q": "I like tofu, ___ I don’t like soybean milk.",
+        "options": [
+          "but",
+          "so",
+          "or"
+        ],
+        "answer": 0,
+        "explain": "Hai ý trái ngược → but."
+      }
     },
     {
-      "type": "formula",
-      "content": "S + V, and / but / or / so + S + V"
+      "type": "card",
+      "n": 3,
+      "title": "Bỏ dấu phẩy",
+      "text": "Khi hai vế cùng chủ ngữ và rất ngắn có thể bỏ dấu phẩy.",
+      "examples": [
+        {
+          "en": "I {v sing} {c and} {v dance}.",
+          "vi": "Tôi hát và nhảy."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "and: thêm ý cùng chiều (I do yoga, and my brother goes jogging). but: ý trái ngược (I like tofu, but I don’t like soybean milk). or: lựa chọn (You can play indoors, or you can go to the park). so: kết quả (It was sunny, so I got a sunburn)."
-    },
-    {
-      "type": "text",
-      "content": "3. Lưu ý khi dùng: không dùng dấu phẩy thay cho liên từ (sai: I was tired, I went to bed). Khi hai vế cùng chủ ngữ và rất ngắn có thể bỏ dấu phẩy (I sing and dance)."
-    },
-    {
-      "type": "text",
-      "content": "4. Từ vựng cần nhớ theo cụm: have / get acne, chapped lips, a sunburn; put on sunscreen, lip balm; use eye drops; keep fit; stay healthy; avoid junk food."
+      "type": "card",
+      "n": 4,
+      "title": "Cụm từ sức khỏe",
+      "collapse": "Xem cụm từ sức khỏe",
+      "table": {
+        "head": [
+          "Từ / cụm",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "have / get acne",
+            "bị mụn"
+          ],
+          [
+            "chapped lips",
+            "môi nứt nẻ"
+          ],
+          [
+            "a sunburn",
+            "cháy nắng"
+          ],
+          [
+            "put on sunscreen / lip balm",
+            "bôi kem chống nắng / son dưỡng"
+          ],
+          [
+            "use eye drops",
+            "nhỏ thuốc mắt"
+          ],
+          [
+            "keep fit",
+            "giữ dáng"
+          ],
+          [
+            "stay healthy",
+            "giữ sức khỏe"
+          ],
+          [
+            "avoid junk food",
+            "tránh đồ ăn vặt"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],

@@ -187,40 +187,151 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 12 nói về lựa chọn nghề nghiệp. Ngữ pháp trọng tâm: mệnh đề trạng ngữ chỉ sự nhượng bộ, kết quả và lý do (adverbial clauses of concession, result and reason)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Nhượng bộ: {k although + mệnh đề}. Kết quả: {k so … that / such … that}. Lý do: {k because / since / as + mệnh đề}, {k because of + N}."
     },
     {
       "type": "text",
-      "content": "1. Nhượng bộ (concession): although, though, even though + mệnh đề, diễn tả hai ý trái ngược nhau. Không dùng but cùng với although trong cùng câu."
+      "content": "Unit 12 nói về lựa chọn nghề nghiệp."
     },
     {
-      "type": "formula",
-      "content": "Although / Though / Even though + S + V, S + V      Ví dụ: Although the job is demanding, it is rewarding."
+      "type": "card",
+      "n": 1,
+      "title": "Nhượng bộ (concession)",
+      "text": "Although, though, even though + mệnh đề, diễn tả hai ý trái ngược nhau.",
+      "formulas": [
+        "{c Although / Though / Even though} + S + V, S + V"
+      ],
+      "examples": [
+        {
+          "en": "{c Although} the job is demanding, it is rewarding.",
+          "vi": "Tuy công việc đòi hỏi cao, nó rất đáng làm."
+        }
+      ],
+      "wrong": "Although the job is demanding, but it is rewarding.",
+      "right": "{c Although} the job is demanding, it is rewarding.",
+      "why": "Không dùng but cùng với although trong cùng câu.",
+      "try": {
+        "q": "___ it was raining, we went out.",
+        "options": [
+          "Although",
+          "Despite",
+          "Because"
+        ],
+        "answer": 0,
+        "explain": "Although + mệnh đề."
+      }
     },
     {
-      "type": "text",
-      "content": "2. Kết quả (result): so + mệnh đề; so + adj / adv + that; such + (a / an) + adj + noun + that."
+      "type": "card",
+      "n": 2,
+      "title": "Kết quả (result)",
+      "text": "so + mệnh đề; so + adj / adv + that; such + (a / an) + adj + noun + that.",
+      "examples": [
+        {
+          "en": "She worked {c so} hard {c that} she passed the exam.",
+          "vi": "Cô ấy làm việc chăm đến mức đỗ kỳ thi."
+        },
+        {
+          "en": "It was {c such} a hard job {c that} he quit.",
+          "vi": "Đó là công việc khó đến mức anh ấy nghỉ."
+        }
+      ]
     },
     {
-      "type": "formula",
-      "content": "She worked so hard that she passed the exam.      It was such a hard job that he quit."
+      "type": "card",
+      "n": 3,
+      "title": "Lý do (reason)",
+      "text": "because, since, as + mệnh đề; because of + danh từ / V-ing. Because nhấn mạnh lý do mới; since và as dùng khi lý do đã rõ.",
+      "examples": [
+        {
+          "en": "I chose engineering {c because} it is well-paid.",
+          "vi": "Tôi chọn ngành kỹ thuật vì lương cao."
+        },
+        {
+          "en": "{c Since / As} she loves animals, she wants to be a vet.",
+          "vi": "Vì yêu động vật nên cô ấy muốn làm bác sĩ thú y."
+        },
+        {
+          "en": "{c because of} her passion / {c because of} being tired",
+          "vi": "vì đam mê của cô ấy / vì mệt"
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "3. Lý do (reason): because, since, as + mệnh đề; because of + danh từ / V-ing. Because nhấn mạnh lý do mới; since và as dùng khi lý do đã rõ."
+      "type": "card",
+      "n": 4,
+      "title": "Although với despite / in spite of",
+      "text": "Although + mệnh đề; despite / in spite of + danh từ hoặc V-ing.",
+      "examples": [
+        {
+          "en": "{c Although} it was raining, we went out.",
+          "vi": "Tuy trời mưa, chúng tôi vẫn ra ngoài."
+        },
+        {
+          "en": "{c Despite} the rain, we went out.",
+          "vi": "Cùng nghĩa với câu trên."
+        }
+      ]
     },
     {
-      "type": "formula",
-      "content": "I chose engineering because it is well-paid.      Since / As she loves animals, she wants to be a vet.      because of her passion / because of being tired"
-    },
-    {
-      "type": "text",
-      "content": "4. Phân biệt although với despite / in spite of: although + mệnh đề; despite / in spite of + danh từ hoặc V-ing. Ví dụ: Although it was raining, we went out. = Despite the rain, we went out."
-    },
-    {
-      "type": "text",
-      "content": "5. Từ vựng nghề nghiệp và tính cách: surgeon, mechanic, cashier, software engineer; decisive, inquiring, knowledgeable; demanding, repetitive, rewarding, well-paid."
+      "type": "card",
+      "n": 5,
+      "title": "Từ vựng nghề nghiệp và tính cách",
+      "collapse": "Xem từ vựng nghề nghiệp và tính cách",
+      "table": {
+        "head": [
+          "Từ / cụm",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "surgeon",
+            "bác sĩ phẫu thuật"
+          ],
+          [
+            "mechanic",
+            "thợ cơ khí"
+          ],
+          [
+            "cashier",
+            "thu ngân"
+          ],
+          [
+            "software engineer",
+            "kỹ sư phần mềm"
+          ],
+          [
+            "decisive",
+            "quyết đoán"
+          ],
+          [
+            "inquiring",
+            "ham tìm hiểu"
+          ],
+          [
+            "knowledgeable",
+            "hiểu biết rộng"
+          ],
+          [
+            "demanding",
+            "đòi hỏi cao"
+          ],
+          [
+            "repetitive",
+            "lặp đi lặp lại"
+          ],
+          [
+            "rewarding",
+            "đáng làm, xứng đáng"
+          ],
+          [
+            "well-paid",
+            "lương cao"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],

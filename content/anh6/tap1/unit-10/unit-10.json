@@ -187,40 +187,118 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 10 nói về ngôi nhà trong tương lai. Ngữ pháp trọng tâm: thì tương lai đơn (future simple) và might để nói về khả năng."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Tương lai đơn: {k will + V}. {k might + V}: có thể, chưa chắc. Will = chắc chắn hơn might."
     },
     {
       "type": "text",
-      "content": "1. Tương lai đơn dùng với will để nói về dự đoán, quyết định ngay lúc nói hoặc lời hứa. Dấu hiệu: tomorrow, next week, in the future, soon, in 2050."
+      "content": "Unit 10 nói về ngôi nhà trong tương lai."
     },
     {
-      "type": "formula",
-      "content": "(+) S + will + V      (–) S + will not (won’t) + V      (?) Will + S + V ?"
+      "type": "card",
+      "n": 1,
+      "title": "Tương lai đơn với will",
+      "text": "Nói về dự đoán, quyết định ngay lúc nói hoặc lời hứa. Dấu hiệu: tomorrow, next week, in the future, soon, in 2050.",
+      "formulas": [
+        "(+) {s S} + {c will} + {v V}",
+        "(–) {s S} + {c will not (won’t)} + {v V}",
+        "(?) {c Will} + {s S} + {v V} ?"
+      ],
+      "examples": [
+        {
+          "en": "People {c will} {v live} in smart houses.",
+          "vi": "Con người sẽ sống trong nhà thông minh."
+        },
+        {
+          "en": "We {c won’t} {v use} petrol cars.",
+          "vi": "Chúng ta sẽ không dùng xe chạy xăng."
+        },
+        {
+          "en": "{c Will} robots {v do} the housework? – Yes, they will.",
+          "vi": "Rô-bốt sẽ làm việc nhà chứ? – Có."
+        }
+      ],
+      "wrong": "She wills go tomorrow.",
+      "right": "She {c will} go tomorrow.",
+      "why": "Sau will là V nguyên mẫu, ở mọi ngôi, không thêm -s."
     },
     {
-      "type": "text",
-      "content": "Ví dụ: People will live in smart houses. We won’t use petrol cars. Will robots do the housework? – Yes, they will. / No, they won’t."
+      "type": "card",
+      "n": 2,
+      "title": "Might",
+      "text": "Diễn tả khả năng chưa chắc chắn, thấp hơn will. Phủ định: might not.",
+      "formulas": [
+        "{s S} + {c might (not)} + {v V}"
+      ],
+      "examples": [
+        {
+          "en": "We {c might} {v live} on the Moon.",
+          "vi": "Có thể chúng ta sẽ sống trên Mặt Trăng."
+        },
+        {
+          "en": "Robots {c might not} {v cook} for us.",
+          "vi": "Rô-bốt có thể sẽ không nấu ăn cho chúng ta."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "2. Will có dạng rút gọn: I’ll, you’ll, he’ll, she’ll, it’ll, we’ll, they’ll. Sau will luôn là động từ nguyên mẫu, ở mọi ngôi, không thêm -s."
+      "type": "card",
+      "n": 3,
+      "title": "Will và might",
+      "table": {
+        "head": [
+          "Từ",
+          "Mức chắc chắn",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "will",
+            "chắc chắn, dự đoán mạnh",
+            "It will rain tomorrow."
+          ],
+          [
+            "might",
+            "có thể, chưa chắc",
+            "It might rain tomorrow."
+          ]
+        ]
+      },
+      "try": {
+        "q": "I’m not sure, but it ___ snow tonight.",
+        "options": [
+          "might",
+          "will",
+          "is"
+        ],
+        "answer": 0,
+        "explain": "Không chắc → might."
+      }
     },
     {
-      "type": "text",
-      "content": "3. Might (có thể) diễn tả khả năng chưa chắc chắn, thấp hơn will. Sau might là động từ nguyên mẫu. Phủ định: might not."
-    },
-    {
-      "type": "formula",
-      "content": "S + might (not) + V      Ví dụ: We might live on the Moon. Robots might not cook for us."
-    },
-    {
-      "type": "text",
-      "content": "4. Phân biệt: will = chắc chắn, dự đoán mạnh; might = có thể, chưa chắc. Ví dụ: It will rain tomorrow (tin chắc). It might rain tomorrow (có thể)."
-    },
-    {
-      "type": "text",
-      "content": "5. Trọng âm của từ hai âm tiết: danh từ và tính từ thường nhấn âm tiết thứ nhất (’office, ’happy); động từ thường nhấn âm tiết thứ hai (re’lax, en’joy)."
+      "type": "card",
+      "n": 4,
+      "title": "Trọng âm từ hai âm tiết",
+      "table": {
+        "head": [
+          "Loại từ",
+          "Quy tắc",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "Danh từ, tính từ",
+            "nhấn âm 1",
+            "’office, ’happy"
+          ],
+          [
+            "Động từ",
+            "nhấn âm 2",
+            "re’lax, en’joy"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],

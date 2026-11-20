@@ -224,32 +224,108 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 8 nói về các cách học mới như học trực tuyến và học kết hợp. Ngữ pháp trọng tâm: mệnh đề quan hệ xác định và không xác định."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Mệnh đề quan hệ: {k who} (người), {k which} (vật), {k that} (cả hai), {k whose} (sở hữu). {k Xác định}: không dấu phẩy. {k Không xác định}: có dấu phẩy, không dùng that."
     },
     {
       "type": "text",
-      "content": "1. Mệnh đề quan hệ bổ sung thông tin cho danh từ đứng trước. Dùng who (người), which (vật), that (người hoặc vật), whose (của ai/của cái gì)."
+      "content": "Unit 8 nói về các cách học mới như học trực tuyến và học kết hợp."
     },
     {
-      "type": "formula",
-      "content": "Danh từ + who / that (chỉ người) / which / that (chỉ vật) + động từ        Danh từ + whose + danh từ + động từ"
+      "type": "card",
+      "n": 1,
+      "title": "Mệnh đề quan hệ",
+      "text": "Bổ sung thông tin cho danh từ đứng trước.",
+      "formulas": [
+        "N + {c who / that / which / that} + V",
+        "N + {c whose} + N + V"
+      ],
+      "examples": [
+        {
+          "en": "The man {c who} visited us is a doctor.",
+          "vi": "Người đàn ông đến thăm chúng tôi là bác sĩ."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "2. Mệnh đề xác định không có dấu phẩy và cần thiết để hiểu danh từ: The man who visited us is a doctor."
+      "type": "card",
+      "n": 2,
+      "title": "Xác định và không xác định",
+      "table": {
+        "head": [
+          "Loại",
+          "Ví dụ",
+          "Lưu ý"
+        ],
+        "rows": [
+          [
+            "Xác định",
+            "The man who visited us is a doctor.",
+            "Không dấu phẩy; cần để hiểu danh từ"
+          ],
+          [
+            "Không xác định",
+            "My uncle{k , who} visited us yesterday{k ,} is a doctor.",
+            "Hai dấu phẩy; thêm thông tin"
+          ]
+        ]
+      },
+      "wrong": "My uncle, that visited us yesterday, is a doctor.",
+      "right": "My uncle{k , who} visited us yesterday{k ,} is a doctor.",
+      "why": "Không dùng that trong mệnh đề không xác định.",
+      "try": {
+        "q": "My teacher, ___ lives nearby, is kind.",
+        "options": [
+          "who",
+          "that",
+          "whom"
+        ],
+        "answer": 0,
+        "explain": "Không xác định → who, không that."
+      }
     },
     {
-      "type": "text",
-      "content": "3. Mệnh đề không xác định đặt giữa hai dấu phẩy, cung cấp thêm thông tin và không dùng that: My uncle, who visited us yesterday, is a doctor. Không dùng that trong mệnh đề không xác định."
+      "type": "card",
+      "n": 3,
+      "title": "Trọng âm câu",
+      "text": "Nhấn các từ nội dung (động từ chính, danh từ, tính từ, trạng từ); các từ chức năng (a, the, of, to) đọc nhẹ.",
+      "examples": [
+        {
+          "en": "I’ll {k GO} to the {k CINema} on {k FRIday}.",
+          "vi": "Tôi sẽ đi xem phim vào thứ Sáu."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "4. Trọng âm câu: ta thường nhấn các từ nội dung (động từ chính, danh từ, tính từ, trạng từ), còn các từ chức năng (a, the, of, to) thường đọc nhẹ. Ví dụ: I’ll GO to the CINema on FRIday."
-    },
-    {
-      "type": "text",
-      "content": "5. Các từ vựng quan trọng: face-to-face (trực tiếp), blended learning (học kết hợp), distraction (xao nhãng), strategy (chiến lược). Hãy học cả cụm để dùng đúng ngữ cảnh."
+      "type": "card",
+      "n": 4,
+      "title": "Từ vựng học tập",
+      "collapse": "Xem từ vựng học tập",
+      "table": {
+        "head": [
+          "Từ / cụm",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "face-to-face",
+            "trực tiếp"
+          ],
+          [
+            "blended learning",
+            "học kết hợp"
+          ],
+          [
+            "distraction",
+            "sự xao nhãng"
+          ],
+          [
+            "strategy",
+            "chiến lược"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],
