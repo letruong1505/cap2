@@ -174,7 +174,7 @@
       const q = h('div', { class: 'question', 'data-id': it.id });
       q.append(h('div', { class: 'meta' }, `${subjName(n.subject)} lớp ${n.grade} · ${n.lesson}`));
       q.append(h('div', { class: 'stem' }, `${idx + 1}. ${it.stem}`));
-      if (it.figureSvg) q.append(h('img', { class: 'figure', alt: '', src: figureSrc(it.figureSvg) }));
+      if (it.figureSvg) q.append(typeof figureNode === 'function' ? figureNode(it.figureSvg, '') : h('img', { class: 'figure', alt: '', src: figureSrc(it.figureSvg) }));
       if (it.type === 'mcq') {
         order[it.id] = it.choices.map((_, i) => i).sort(() => Math.random() - 0.5);
         order[it.id].forEach((oi) => {

@@ -1,4 +1,5 @@
 ## Bản mới
+- Hình không gian (Toán 7, 8, 9, 11, 12: hình hộp, lăng trụ, hình chóp, tứ diện, hình trụ, nón, cầu, hệ trục Oxyz) vẽ lại chính xác theo số liệu từng bài và xoay được 360° bằng cách kéo; nét khuất tự đổi sang nét đứt theo góc nhìn.
 - Kế hoạch học tập: mục tiêu số câu tách riêng thứ 2 đến thứ 6 (mặc định 50 câu/ngày) và cuối tuần (mặc định 80 câu/ngày, chọn tới 150); báo cáo và phần phụ huynh xem trên điện thoại tính đạt mục tiêu theo đúng từng ngày.
 - Mã đối tác giảm 100% cho những khóa được chọn: đơn 0 đồng tự kích hoạt, không cần quét mã thanh toán.
 - Tiếng Anh: lý thuyết lớp 6 đến 12 trình bày lại dạng thẻ dễ học (tóm tắt, công thức từng dòng, bảng, ví dụ có bản dịch và nút nghe đọc, lỗi hay gặp, câu hỏi thử nhanh).

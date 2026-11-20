@@ -57,9 +57,23 @@ function figureSrc(svg) {
   return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
 }
 
+// Hình không gian có kèm mô hình 3D thì dựng bản xoay được 360°; còn lại (hoặc nếu lỗi) dùng ảnh tĩnh.
+function figureNode(svg, alt) {
+  const S = window.NL_SOLID3D;
+  const model = S ? S.extractModel(svg) : null;
+  if (model) {
+    try {
+      const host = el('div', { class: 'solid3d-host' });
+      S.mount(host, model, { alt: alt || '' });
+      return host;
+    } catch (e) { /* dùng ảnh tĩnh */ }
+  }
+  return el('img', { class: 'figure', alt: alt || '', src: figureSrc(svg) });
+}
+
 function figureBlock(svg, caption) {
   const fig = el('figure', { class: 'theory-figure' });
-  fig.append(el('img', { class: 'figure', alt: caption || '', src: figureSrc(svg) }));
+  fig.append(figureNode(svg, caption || ''));
   if (caption) fig.append(el('figcaption', {}, caption));
   return fig;
 }
@@ -209,7 +223,7 @@ function renderExamples(lesson) {
     const wrap = el('div', { class: 'example' });
     wrap.append(el('p', { class: 'example-label' }, `Ví dụ ${i + 1}`), el('p', { class: 'example-problem' }, ex.problem));
     if (ex.figureSvg) {
-      wrap.append(el('img', { class: 'figure', alt: `Hình minh họa ví dụ ${i + 1}`, src: figureSrc(ex.figureSvg) }));
+      wrap.append(figureNode(ex.figureSvg, `Hình minh họa ví dụ ${i + 1}`));
     }
     const steps = el('ol');
     ex.steps.forEach((s) => steps.append(el('li', {}, s)));
@@ -248,13 +262,7 @@ function renderQuiz(lesson, attempt) {
     }
     const q = el('div', { class: 'question', 'data-id': item.id });
     q.append(el('div', { class: 'stem' }, `${idx + 1}. ${item.stem}`));
-    if (item.figureSvg) {
-      q.append(el('img', {
-        class: 'figure',
-        alt: `Hình minh họa câu ${idx + 1}`,
-        src: 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(item.figureSvg),
-      }));
-    }
+    if (item.figureSvg) q.append(figureNode(item.figureSvg, `Hình minh họa câu ${idx + 1}`));
 
     // Chỉ ghi nhận lựa chọn, không hiện đúng sai khi chọn.
     if (item.type === 'mcq') {
@@ -538,13 +546,7 @@ function renderEssays(lesson, mode) {
   lesson.questions.forEach((q, idx) => {
     const card = el('div', { class: 'question essay', 'data-id': q.id });
     card.append(el('div', { class: 'stem' }, `${idx + 1}. ${q.stem}`));
-    if (q.figureSvg) {
-      card.append(el('img', {
-        class: 'figure',
-        alt: `Hình minh họa câu ${idx + 1}`,
-        src: figureSrc(q.figureSvg),
-      }));
-    }
+    if (q.figureSvg) card.append(figureNode(q.figureSvg, `Hình minh họa câu ${idx + 1}`));
     if (mode === 'solutions') {
       const steps = el('ol');
       q.steps.forEach((s) => steps.append(el('li', {}, s)));
