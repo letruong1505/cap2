@@ -2,6 +2,7 @@ import catalog from '../../renderer/catalog.js';
 import { HttpError, createOrder, orderStatus, applyPayment, listOrders, listUnmatched, approveOrder, cancelOrder, reissueOrder, attachTransaction, pinReset, claimDevice, revokeOrder, restoreOrder, revokeItem, restoreItem, ping, listPartnerCodes, createPartnerCode, setPartnerActive } from './orders.js';
 import { adminPage } from './admin.js';
 import { importLegacy } from './legacy.js';
+import { registerLegacy } from './register.js';
 import { progressSettings, progressPush, progressView } from './progress.js';
 import { receiptPage } from './receipt.js';
 
@@ -87,6 +88,7 @@ async function route(req, env, now) {
       return json(await claimDevice(db, env, catalog, await body(req), now));
     }
 
+    if (req.method === 'POST' && path === '/api/register-legacy') return json(await registerLegacy(db, env, catalog, await body(req), now), 201);
     if (req.method === 'POST' && path === '/api/progress/settings') return json(await progressSettings(db, await body(req), now));
     if (req.method === 'POST' && path === '/api/progress/push') return json(await progressPush(db, await body(req), now));
     if (req.method === 'POST' && path === '/api/progress/view') return json(await progressView(db, catalog, await body(req), now));
@@ -142,7 +144,7 @@ async function route(req, env, now) {
 // Ứng dụng Android chạy trong WebView ở địa chỉ https://localhost nên trình duyệt đòi CORS khi gọi sang máy chủ này.
 // Chỉ mở cho các địa chỉ của chính ứng dụng và chỉ cho các đường dẫn của phần mềm khách; trang quản trị và SePay không mở.
 export const APP_ORIGINS = ['https://localhost', 'http://localhost', 'capacitor://localhost'];
-const CLIENT_PATH = /^\/api\/(orders(\/[A-Za-z0-9]{6}\/status)?|pin-reset|claim-device|ping|progress\/(settings|push|view)|app\/android\/(latest|ota\/\d{1,9}))$/;
+const CLIENT_PATH = /^\/api\/(orders(\/[A-Za-z0-9]{6}\/status)?|pin-reset|claim-device|register-legacy|ping|progress\/(settings|push|view)|app\/android\/(latest|ota\/\d{1,9}))$/;
 
 export async function handle(req, env, now = new Date()) {
   const origin = req.headers.get('origin');

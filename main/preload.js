@@ -13,6 +13,7 @@ contextBridge.exposeInMainWorld('vungBai', {
   createOrder: (order) => ipcRenderer.invoke('order:create', order),
   claimDevice: (o) => ipcRenderer.invoke('device:claim', o),
   pinReset: (o) => ipcRenderer.invoke('pin:reset', o),
+  registerLegacy: (o) => ipcRenderer.invoke('license:register-legacy', o),
   progressSettings: (o) => ipcRenderer.invoke('progress:settings', o),
   progressPush: (o) => ipcRenderer.invoke('progress:push', o),
   progressView: (o) => ipcRenderer.invoke('progress:view', o),

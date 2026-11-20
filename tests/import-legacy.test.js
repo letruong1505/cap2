@@ -29,3 +29,17 @@ test('dòng lỗi được báo rõ lý do, không gửi lên', () => {
   assert.match(r[0].error, /số điện thoại/); assert.match(r[1].error, /6 ký tự/); assert.match(r[2].error, /mọi máy/);
   assert.match(r[3].error, /chữ ký/); assert.match(r[4].error, /định dạng/);
 });
+
+test('dòng nhập tay không cần khóa: mã khóa ; điện thoại ; tên ; mã máy ; lớp', () => {
+  const [a, b, c, d, e] = parseLines([
+    'nl-43356a ; 0968 646 853 ; Lê Trường ; b6f5-ab86-a5a1 ; 9, 12',
+    'NL-43356A ; 0968646853 ; Lê Trường ; B6F5-AB86-A5A1 ; all',
+    'NL-43356A ; 0968646853 ; Lê Trường ; sai ; 9',
+    'NL-0001 ; 0968646853 ; Lê Trường ; B6F5-AB86-A5A1 ; 9',
+    'NL-43356A ; 0968646853 ; Lê Trường ; B6F5-AB86-A5A1 ; ',
+  ].join('\n'), null);
+  assert.equal(a.ok, true);
+  assert.deepEqual([a.body.code, a.body.machine, a.body.grades, a.body.name], ['NL-43356A', 'B6F5-AB86-A5A1', [9, 12], 'Lê Trường']);
+  assert.equal(b.body.grades, 'all');
+  assert.match(c.error, /mã máy/); assert.match(d.error, /6 ký tự/); assert.match(e.error, /lớp/);
+});

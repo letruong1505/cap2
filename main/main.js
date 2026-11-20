@@ -60,6 +60,18 @@ ipcMain.handle('device:claim', async (_event, o) => {
   }
   return r;
 });
+// Khách tự đăng ký các khóa cũ (cấp bằng USB) của máy này vào hệ thống bằng số điện thoại phụ huynh; giao diện không gửi khóa.
+ipcMain.handle('license:register-legacy', async (_event, o) => {
+  const keys = lic.registrableKeys(licenseStoreDir());
+  if (!keys.length) return { ok: false, error: 'Máy này chưa có khóa nào cần đăng ký.' };
+  let last = { ok: false, error: 'Không đăng ký được.' };
+  for (const key of keys) {
+    last = await orders.registerLegacy({ key, phone: o && o.phone });
+    if (!last.ok) return last;
+  }
+  if (heartbeat) heartbeat.beat().catch(() => {});
+  return last;
+});
 ipcMain.handle('progress:settings', (_event, o) => orders.progressSettings(o));
 ipcMain.handle('progress:push', (_event, o) => orders.progressPush(o));
 ipcMain.handle('progress:view', (_event, o) => orders.progressView(o));

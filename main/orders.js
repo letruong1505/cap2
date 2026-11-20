@@ -31,6 +31,8 @@ function makeClient({ baseUrl = readBaseUrl, fetchFn = (...a) => fetch(...a), ma
     // Nhận khóa cho máy tính này từ đơn mua trên điện thoại: nhập mã đơn + số điện thoại đã mua.
     claimDevice: (o) => call('POST', '/api/claim-device', { phone: String(o && o.phone || ''), code: String(o && o.code || ''), machineId: machineId(), platform: 'win' }),
     pinReset: (o) => call('POST', '/api/pin-reset', { phone: String(o && o.phone || ''), code: String(o && o.code || ''), machineId: machineId() }),
+    // Khách tự đăng ký khóa cũ (cấp bằng USB) vào hệ thống: gửi khóa NL1-... (do tiến trình chính đọc từ kho khóa) và số điện thoại phụ huynh.
+    registerLegacy: (o) => call('POST', '/api/register-legacy', { key: String(o && o.key || ''), phone: String(o && o.phone || ''), machineId: machineId() }),
     // Phụ huynh xem kết quả học trên điện thoại: máy học sinh bật/tắt và gửi tóm tắt theo ngày (không có từng câu trả lời).
     progressSettings: (o) => call('POST', '/api/progress/settings', { code: String(o && o.code || ''), machineId: machineId(), enabled: o && typeof o.enabled === 'boolean' ? o.enabled : undefined, purge: o && o.purge === true ? true : undefined, goals: o && o.goals && typeof o.goals === 'object' ? { daily: Number(o.goals.daily), weekly: Number(o.goals.weekly) } : undefined }),
     progressPush: (o) => call('POST', '/api/progress/push', { code: String(o && o.code || ''), machineId: machineId(), days: Array.isArray(o && o.days) ? o.days : [] }),
