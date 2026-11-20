@@ -82,6 +82,13 @@ CREATE TABLE IF NOT EXISTS partner_limits (
   max_machines INTEGER NOT NULL
 );
 
+-- Khóa học mà mã đối tác được áp dụng. Mã không có dòng nào là áp dụng cho mọi khóa.
+CREATE TABLE IF NOT EXISTS partner_items (
+  code TEXT NOT NULL,
+  item TEXT NOT NULL,
+  PRIMARY KEY (code, item)
+);
+
 -- Giá từng khóa trong đơn: giá niêm yết, giá khách thực trả và mã đối tác đã áp (nếu có). Dùng cho hoàn tiền một phần và phiếu xác nhận.
 CREATE TABLE IF NOT EXISTS order_prices (
   code TEXT NOT NULL,
@@ -114,6 +121,11 @@ CREATE TABLE IF NOT EXISTS progress_sync (
   goal_weekly INTEGER,
   enabled_at TEXT,
   last_sync TEXT
+);
+-- Mục tiêu số câu cuối tuần (T7, CN); bảng riêng để chạy lại schema.sql trên cơ sở dữ liệu cũ không lỗi.
+CREATE TABLE IF NOT EXISTS progress_goal_ext (
+  code TEXT PRIMARY KEY,
+  goal_weekend INTEGER
 );
 CREATE TABLE IF NOT EXISTS progress_daily (
   code TEXT NOT NULL,

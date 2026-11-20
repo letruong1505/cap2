@@ -91,10 +91,10 @@ test('phụ huynh chưa bật thì không có dữ liệu; tắt rồi bật l�
   const { db, code } = await setup();
   const off = await view(db, code);
   assert.deepEqual([off.enabled, off.rows], [false, []]);
-  await progressSettings(db, { ...dev(code), enabled: true, goals: { daily: 30, weekly: 4 } }, NOW);
+  await progressSettings(db, { ...dev(code), enabled: true, goals: { daily: 30, weekend: 100, weekly: 4 } }, NOW);
   await progressPush(db, { ...dev(code), days: [row('2026-11-17', 'toan', 9, 'A', 4, 5)] }, NOW);
   const on = await view(db, code);
-  assert.deepEqual(on.goals, { daily: 30, weekly: 4 });
+  assert.deepEqual(on.goals, { daily: 30, weekend: 100, weekly: 4 });
   assert.equal(on.rows.length, 1);
   await progressSettings(db, { ...dev(code), enabled: false }, NOW); // tắt: phụ huynh không xem được nữa, dữ liệu cũ còn đó
   assert.deepEqual([(await view(db, code)).enabled, (await view(db, code)).rows.length], [false, 0]);

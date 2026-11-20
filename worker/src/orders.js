@@ -55,6 +55,7 @@ export async function findPartner(db, raw) {
   if (!PARTNER_RE.test(code)) throw new HttpError(400, 'Mã đối tác không đúng định dạng.');
   const p = await db.prepare('SELECT p.code, p.partner, p.percent, l.max_machines FROM partner_codes p LEFT JOIN partner_limits l ON l.code = p.code WHERE p.code = ?1 AND p.active = 1').bind(code).first();
   if (!p) throw new HttpError(400, 'Mã đối tác không đúng hoặc đã ngừng dùng.');
+  p.items = (await db.prepare('SELECT item FROM partner_items WHERE code = ?1').bind(p.code).all()).results.map((r) => r.item);
   return p;
 }
 
@@ -80,10 +81,20 @@ export async function createOrder(db, catalog, input, now = new Date(), rand) {
     const used = (await db.prepare('SELECT o.machine AS machine FROM orders o WHERE o.status != \'cancelled\' AND o.code IN (SELECT code FROM order_prices WHERE partner_code = ?1) UNION SELECT d.machine FROM order_devices d JOIN orders o ON o.code = d.code WHERE o.status != \'cancelled\' AND d.code IN (SELECT code FROM order_prices WHERE partner_code = ?1)').bind(partner.code).all()).results.map((r) => r.machine);
     if (!used.includes(machine) && used.length >= partner.max_machines) throw new HttpError(403, 'Mã đối tác đã dùng hết số máy được phép. Em liên hệ đối tác hoặc Nam Linh Educenter để được hỗ trợ.');
   }
+  // Mã chỉ áp dụng cho các khóa được chọn khi tạo mã (không chọn thì áp cho mọi khóa); khóa khác trong đơn tính giá niêm yết.
+  const applies = (id) => !!partner && (!partner.items.length || partner.items.includes(id));
+  if (partner && !ids.some(applies)) throw new HttpError(400, 'Mã đối tác này không áp dụng cho khóa học đã chọn.');
   const lines = ids.map((id) => {
     const list = catalog.byId[id].price;
-    return { id, list, paid: partner ? discountPrice(list, partner.percent) : list };
+    return { id, list, paid: applies(id) ? discountPrice(list, partner.percent) : list, discounted: applies(id) };
   });
+  // Khóa miễn phí 100%: mỗi máy (hoặc số điện thoại) chỉ nhận một lần cho mỗi khóa, tránh tạo đơn trùng.
+  for (const l of lines) {
+    if (l.discounted && l.paid === 0) {
+      const dup = await db.prepare('SELECT 1 AS x FROM order_prices op JOIN orders o ON o.code = op.code WHERE op.partner_code = ?1 AND op.item = ?2 AND o.status != \'cancelled\' AND (o.machine = ?3 OR o.phone = ?4) LIMIT 1').bind(partner.code, l.id, machine, phone).first();
+      if (dup) throw new HttpError(409, 'Máy hoặc số điện thoại này đã dùng mã cho khóa học đó rồi.');
+    }
+  }
   const amount = lines.reduce((s, l) => s + l.paid, 0);
 
   for (let i = 0; i < 5; i++) {
@@ -95,18 +106,28 @@ export async function createOrder(db, catalog, input, now = new Date(), rand) {
           .bind(code, name, phone, machine, JSON.stringify(ids), amount, String(input.terms.version).slice(0, 40), String(input.terms.at || '').slice(0, 40), nowIso(now)),
         db.prepare('INSERT INTO order_devices (code, platform, machine, key, issued_at) VALUES (?1,?2,?3,NULL,NULL)').bind(code, platform, machine),
         ...lines.map((l) => db.prepare('INSERT INTO order_prices (code, item, list_price, paid_price, partner_code, percent) VALUES (?1,?2,?3,?4,?5,?6)')
-          .bind(code, l.id, l.list, l.paid, partner ? partner.code : null, partner ? partner.percent : null)),
+          .bind(code, l.id, l.list, l.paid, l.discounted ? partner.code : null, l.discounted ? partner.percent : null)),
       ]);
       return {
         code, amount, content: 'NL ' + code, status: 'pending',
         partner: partner ? { code: partner.code, percent: partner.percent } : null,
-        items: lines,
+        items: lines.map(({ id, list, paid }) => ({ id, list, paid })),
       };
     } catch (e) {
       if (!/UNIQUE|constraint/i.test(String(e.message))) throw e;
     }
   }
   throw new HttpError(500, 'Không tạo được mã đơn, vui lòng thử lại.');
+}
+
+// Tạo đơn; tổng 0 đồng (mã đối tác giảm 100%) thì duyệt luôn và cấp khóa, không cần chuyển khoản.
+export async function createOrderAuto(db, env, catalog, input, now = new Date(), rand) {
+  const r = await createOrder(db, catalog, input, now, rand);
+  if (r.amount === 0) {
+    await approveOrder(db, env, catalog, r.code, 'Mã đối tác ' + (r.partner ? r.partner.code : '') + ' giảm 100%, tự duyệt', now);
+    return { ...r, status: 'paid' };
+  }
+  return r;
 }
 
 // Cấp key cho đơn đã thanh toán (hoặc đổi sang máy khác nếu truyền machine).
@@ -268,28 +289,32 @@ export async function listOrders(db, { status, q } = {}, now = new Date()) {
 
 // Mã đối tác: danh sách (kèm số đơn đã dùng), tạo mới, bật/tắt.
 export async function listPartnerCodes(db) {
-  return (await db.prepare('SELECT p.code, p.partner, p.percent, p.active, p.created_at, (SELECT COUNT(DISTINCT op.code) FROM order_prices op WHERE op.partner_code = p.code) AS used, l.max_machines, (SELECT COUNT(*) FROM (SELECT o.machine AS m FROM orders o WHERE o.status != \'cancelled\' AND o.code IN (SELECT code FROM order_prices WHERE partner_code = p.code) UNION SELECT d.machine FROM order_devices d JOIN orders o ON o.code = d.code WHERE o.status != \'cancelled\' AND d.code IN (SELECT code FROM order_prices WHERE partner_code = p.code))) AS machines FROM partner_codes p LEFT JOIN partner_limits l ON l.code = p.code ORDER BY p.created_at DESC').all()).results;
+  return (await db.prepare('SELECT p.code, p.partner, p.percent, p.active, p.created_at, (SELECT COUNT(DISTINCT op.code) FROM order_prices op WHERE op.partner_code = p.code) AS used, l.max_machines, (SELECT GROUP_CONCAT(item) FROM partner_items WHERE code = p.code) AS items, (SELECT COUNT(*) FROM (SELECT o.machine AS m FROM orders o WHERE o.status != \'cancelled\' AND o.code IN (SELECT code FROM order_prices WHERE partner_code = p.code) UNION SELECT d.machine FROM order_devices d JOIN orders o ON o.code = d.code WHERE o.status != \'cancelled\' AND d.code IN (SELECT code FROM order_prices WHERE partner_code = p.code))) AS machines FROM partner_codes p LEFT JOIN partner_limits l ON l.code = p.code ORDER BY p.created_at DESC').all()).results;
 }
 
-export async function createPartnerCode(db, input, now = new Date()) {
+export async function createPartnerCode(db, input, now = new Date(), catalog) {
   const code = String(input.code || '').trim().toUpperCase();
   const partner = String(input.partner || '').trim().replace(/\s+/g, ' ');
   const percent = Number(input.percent === undefined || input.percent === '' ? 20 : input.percent);
   if (!PARTNER_RE.test(code)) throw new HttpError(400, 'Mã phải gồm chữ, số hoặc dấu gạch ngang, dài 3 đến 20 ký tự.');
   if (partner.length < 2 || partner.length > 60) throw new HttpError(400, 'Tên đối tác phải từ 2 đến 60 ký tự.');
-  if (!Number.isInteger(percent) || percent < 1 || percent > 99) throw new HttpError(400, 'Tỉ lệ giảm phải là số nguyên từ 1 đến 99.');
+  if (!Number.isInteger(percent) || percent < 1 || percent > 100) throw new HttpError(400, 'Tỉ lệ giảm phải là số nguyên từ 1 đến 100.');
+  const items = Array.isArray(input.items) ? [...new Set(input.items.map(String))] : [];
+  if (catalog && items.some((id) => !catalog.byId[id])) throw new HttpError(400, 'Có khóa học không hợp lệ trong danh sách áp dụng.');
+  if (percent === 100 && !items.length) throw new HttpError(400, 'Mã giảm 100% phải chọn ít nhất một khóa học được áp dụng.');
   const maxMachines = Number(input.maxMachines === undefined || input.maxMachines === '' ? 10 : input.maxMachines);
   if (!Number.isInteger(maxMachines) || maxMachines < 1 || maxMachines > 1000) throw new HttpError(400, 'Số máy tối đa phải là số nguyên từ 1 đến 1000.');
   try {
     await db.batch([
       db.prepare('INSERT INTO partner_codes (code, partner, percent, active, created_at) VALUES (?1, ?2, ?3, 1, ?4)').bind(code, partner, percent, nowIso(now)),
       db.prepare('INSERT INTO partner_limits (code, max_machines) VALUES (?1, ?2)').bind(code, maxMachines),
+      ...items.map((id) => db.prepare('INSERT INTO partner_items (code, item) VALUES (?1, ?2)').bind(code, id)),
     ]);
   } catch (e) {
     if (/UNIQUE|constraint/i.test(String(e.message))) throw new HttpError(409, 'Mã này đã tồn tại.');
     throw e;
   }
-  return { code, partner, percent, maxMachines };
+  return { code, partner, percent, maxMachines, items };
 }
 
 export async function setPartnerActive(db, code, active) {
