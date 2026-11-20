@@ -311,7 +311,7 @@ function updateScore(lesson, attempt) {
 }
 
 function showOnly(id) {
-  for (const sec of ['launch', 'subjects', 'home', 'lesson', 'games', 'game', 'national', 'aiwork', 'examprep', 'thpt', 'purchase', 'review', 'report', 'empty']) {
+  for (const sec of ['launch', 'subjects', 'home', 'lesson', 'games', 'game', 'national', 'aiwork', 'examprep', 'thpt', 'purchase', 'review', 'report', 'parent-view', 'empty']) {
     document.getElementById(sec).hidden = sec !== id;
   }
 }
@@ -824,10 +824,11 @@ function setupUpdateBar() {
     } else if (st.state === 'checking' && manual) {
       msg.textContent = 'Đang kiểm tra bản mới…';
     } else if ((st.state === 'none' || st.state === 'error') && manual) {
-      manual = false;
+      // Giữ thông báo cho đến khi bấm Đóng: trên Android trạng thái được báo hai lần liên tiếp (sự kiện rồi kết quả), nếu xóa cờ ngay thì thông báo biến mất tức thì.
       msg.textContent = st.state === 'none' ? 'Bạn đang dùng phiên bản mới nhất.' : 'Chưa kiểm tra được (không có mạng?).';
-      acts = [btn('Đóng', () => { bar.hidden = true; }, 'ghost')];
+      acts = [btn('Đóng', () => { manual = false; bar.hidden = true; }, 'ghost')];
     } else if (st.state === 'downloading') {
+      manual = false;
       msg.textContent = `Đang tải bản mới… ${st.percent || 0}%`;
     } else if (st.state === 'ready') {
       msg.textContent = `Đã tải xong phiên bản ${st.version}.`;
@@ -886,6 +887,17 @@ async function init() {
     document.getElementById('open-report').addEventListener('click', () => openProg('report', 0));
     document.getElementById('open-review-grade').addEventListener('click', () => openProg('review', currentGrade));
     document.getElementById('open-report-grade').addEventListener('click', () => openProg('report', currentGrade));
+    // Màn hình phụ huynh xem kết quả học do máy tính gửi lên (chỉ có trên điện thoại).
+    const openParent = document.getElementById('open-parent-view');
+    if (window.vungBai.platform === 'android' && window.vungBai.progressView) {
+      openParent.hidden = false;
+      openParent.addEventListener('click', async () => {
+        if (window.VungPinUI && !(await window.VungPinUI.ensureUnlocked())) return;
+        window.VungProgressUI.renderParentView(document.getElementById('parent-body'));
+        showOnly('parent-view');
+      });
+      document.getElementById('btn-parent-back').addEventListener('click', () => showLaunch());
+    }
     document.getElementById('btn-review-back').addEventListener('click', backProg);
     document.getElementById('btn-report-back').addEventListener('click', backProg);
     document.getElementById('open-purchase').addEventListener('click', () => showPurchase());

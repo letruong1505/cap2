@@ -60,6 +60,9 @@ ipcMain.handle('device:claim', async (_event, o) => {
   }
   return r;
 });
+ipcMain.handle('progress:settings', (_event, o) => orders.progressSettings(o));
+ipcMain.handle('progress:push', (_event, o) => orders.progressPush(o));
+ipcMain.handle('progress:view', (_event, o) => orders.progressView(o));
 ipcMain.handle('pin:reset', (_event, o) => orders.pinReset(o));
 ipcMain.handle('order:status', (_event, code) => orders.orderStatus(code));
 ipcMain.handle('license:remove', () => { lic.deactivate(licenseStoreDir()); return licenseNow(); });

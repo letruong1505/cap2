@@ -119,6 +119,23 @@
     }
   }
 
+  /* Bắt nhập đúng mã PIN hiện tại trước một thao tác nguy hiểm (tắt/đổi PIN), kể cả khi vừa mở khóa xem báo cáo.
+     Nhập sai vẫn tính vào số lần thử và khóa tạm như màn hình mở khóa. */
+  function confirmWithPin(title, text, okLabel) {
+    return modal((b, close) => {
+      const i = pinInput('Nhập mã PIN hiện tại'); const m = msgLine();
+      const go = async () => {
+        if (!i.value) { m.textContent = 'Nhập mã PIN hiện tại.'; return; } // để trống không tính là một lần nhập sai
+        const v = await PIN.verify(store(), i.value);
+        if (v.ok) return close(true);
+        m.textContent = v.locked ? `Nhập sai nhiều lần. Thử lại sau ${mins(v.remainMs)} phút.` : `Mã PIN chưa đúng. Còn ${v.left} lần thử.`;
+        i.value = ''; i.focus();
+      };
+      i.addEventListener('keydown', (e) => { if (e.key === 'Enter') go(); });
+      b.append(h('h2', {}, title), h('p', {}, text), i, m, actions(btn('Hủy', '', () => close(false)), btn(okLabel, 'primary', go)));
+    });
+  }
+
   /* Khối cài đặt PIN trong màn hình báo cáo. */
   function renderSettings(box, rerender) {
     box.replaceChildren();
@@ -127,16 +144,16 @@
       h('p', { class: 'meta' }, on ? 'Đang bật: cần nhập PIN để xem báo cáo tuần và đổi mục tiêu.' : 'Chưa bật. Đặt PIN để học sinh không tự xem báo cáo hoặc đổi mục tiêu.'));
     if (!on) box.append(btn('Đặt mã PIN', 'primary', async () => { if (await setupPin()) rerender(); }));
     else {
-      box.append(btn('Đổi mã PIN', '', async () => { if (await setupPin('Đổi mã PIN')) rerender(); }),
+      box.append(btn('Đổi mã PIN', '', async () => {
+        if (await confirmWithPin('Đổi mã PIN', 'Nhập mã PIN hiện tại để đổi sang mã mới.', 'Tiếp tục') && await setupPin('Đổi mã PIN')) rerender();
+      }),
         btn('Tắt mã PIN', '', async () => {
-          const ok = await modal((b, close) => {
-            b.append(h('h2', {}, 'Tắt mã PIN?'), h('p', {}, 'Ai dùng máy cũng xem được báo cáo và đổi mục tiêu.'),
-              actions(btn('Giữ PIN', '', () => close(false)), btn('Tắt PIN', 'primary', () => close(true))));
-          });
-          if (ok) { PIN.clear(store()); rerender(); }
+          if (await confirmWithPin('Tắt mã PIN?', 'Nhập mã PIN hiện tại để tắt. Sau khi tắt, ai dùng máy cũng xem được báo cáo và đổi mục tiêu.', 'Tắt PIN')) { PIN.clear(store()); rerender(); }
         }));
     }
   }
 
-  window.VungPinUI = { ensureUnlocked, renderSettings };
+  /* Hỏi lại mã PIN hiện tại trước thao tác nhạy cảm; chưa đặt PIN thì cho qua. */
+  const guard = (title, text, okLabel) => (PIN && PIN.isSet(store()) ? confirmWithPin(title, text, okLabel) : Promise.resolve(true));
+  window.VungPinUI = { ensureUnlocked, renderSettings, guard };
 })();

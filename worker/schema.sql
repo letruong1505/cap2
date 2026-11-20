@@ -104,3 +104,28 @@ CREATE TABLE IF NOT EXISTS order_devices (
   PRIMARY KEY (code, platform)
 );
 CREATE INDEX IF NOT EXISTS idx_order_devices_machine ON order_devices (machine);
+
+-- Phụ huynh xem kết quả học trên điện thoại: chỉ khi phụ huynh bật trên máy của học sinh. Mỗi dòng là tóm tắt một ngày × môn × lớp × chương
+-- từ một thiết bị (src: win hoặc android); không có từng câu trả lời.
+CREATE TABLE IF NOT EXISTS progress_sync (
+  code TEXT PRIMARY KEY,
+  enabled INTEGER NOT NULL DEFAULT 0,
+  goal_daily INTEGER,
+  goal_weekly INTEGER,
+  enabled_at TEXT,
+  last_sync TEXT
+);
+CREATE TABLE IF NOT EXISTS progress_daily (
+  code TEXT NOT NULL,
+  src TEXT NOT NULL,
+  day TEXT NOT NULL,
+  subject TEXT NOT NULL,
+  grade INTEGER NOT NULL,
+  chapter TEXT NOT NULL,
+  correct INTEGER NOT NULL,
+  total INTEGER NOT NULL,
+  lessons INTEGER NOT NULL,
+  seconds INTEGER NOT NULL,
+  PRIMARY KEY (code, src, day, subject, grade, chapter)
+);
+CREATE INDEX IF NOT EXISTS idx_progress_daily_day ON progress_daily (code, day);

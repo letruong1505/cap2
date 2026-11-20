@@ -29,6 +29,7 @@
       <div class="launch-tools">
         <button type="button" id="open-review">Sổ câu sai</button>
         <button type="button" id="open-report">Báo cáo cho phụ huynh</button>
+        <button type="button" id="open-parent-view" hidden>Xem con học (từ máy tính)</button>
       </div>
 
       <div class="license-bar">
@@ -153,6 +154,11 @@
       <div id="report-body"></div>
     </section>
 
+    <section id="parent-view" class="panel" hidden>
+      <button id="btn-parent-back" class="back-link" type="button">← Quay lại</button>
+      <div id="parent-body"></div>
+    </section>
+
     <section id="purchase" class="panel" hidden>
       <button id="btn-purchase-back" class="back-link" type="button">← Chọn lớp</button>
       <div id="purchase-body"></div>
@@ -233,6 +239,7 @@
   <script src="pin.js"></script>
   <script src="pin-ui.js"></script>
   <script src="progress.js"></script>
+  <script src="progress-sync.js"></script>
   <script src="progress-ui.js"></script>
   <script src="vendor/qrcode.js"></script>
   <script src="vietqr.js"></script>

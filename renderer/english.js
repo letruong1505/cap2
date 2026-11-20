@@ -51,8 +51,15 @@
     return n;
   }
 
+  // Bản Android (WebView) không có speechSynthesis của trình duyệt: cầu nối cung cấp window.vungBai.speak chạy bằng giọng đọc của Android.
+  const nativeSpeak = () => !!(window.vungBai && typeof window.vungBai.speak === 'function');
+  const canSpeakNow = () => nativeSpeak() || 'speechSynthesis' in window;
+  const NO_VOICE = 'Máy chưa cài giọng đọc tiếng Anh. Vào Cài đặt › Quản lý chung › Chuyển văn bản thành giọng nói để cài thêm.';
+
+  // Trả về false nếu không đọc được (chỉ xảy ra với giọng đọc của Android).
   function speak(text) {
-    if (!('speechSynthesis' in window)) return;
+    if (nativeSpeak()) return window.vungBai.speak(text).then((r) => !!(r && r.ok)).catch(() => false);
+    if (!('speechSynthesis' in window)) return Promise.resolve(false);
     window.speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
     u.lang = 'en-US';
@@ -60,19 +67,21 @@
     const v = window.speechSynthesis.getVoices().find((x) => /^en[-_]/i.test(x.lang));
     if (v) u.voice = v;
     window.speechSynthesis.speak(u);
+    return Promise.resolve(true);
   }
 
   function renderVocab(box, vocab) {
     box.replaceChildren(h('h2', {}, 'Từ vựng'));
-    const canSpeak = 'speechSynthesis' in window;
-    box.append(h('p', { class: 'screen-sub' }, canSpeak ? 'Bấm vào loa để nghe phát âm.' : 'Máy này chưa có giọng đọc tiếng Anh nên chưa nghe được phát âm.'));
+    const canSpeak = canSpeakNow();
+    const sub = h('p', { class: 'screen-sub' }, canSpeak ? 'Bấm vào loa để nghe phát âm.' : 'Máy này chưa có giọng đọc tiếng Anh nên chưa nghe được phát âm.');
+    box.append(sub);
     const grid = h('div', { class: 'vocab-grid' });
     for (const v of vocab) {
       const card = h('div', { class: 'vocab-card' });
       const top = h('div', { class: 'vocab-top' }, h('b', {}, v.w), ...(v.ipa ? [h('span', { class: 'vocab-ipa', lang: 'en' }, v.ipa)] : []), h('span', { class: 'vocab-pos' }, `(${v.pos})`));
       if (canSpeak) {
         const b = h('button', { type: 'button', class: 'vocab-speak', 'aria-label': `Nghe từ ${v.w}`, title: 'Nghe' }, '🔊');
-        b.addEventListener('click', () => speak(v.w));
+        b.addEventListener('click', () => { speak(v.w).then((ok) => { if (!ok) sub.textContent = NO_VOICE; }); });
         top.append(b);
       }
       card.append(top, h('div', { class: 'vocab-vi' }, v.vi));

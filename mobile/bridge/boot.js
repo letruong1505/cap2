@@ -53,12 +53,22 @@
   // Bản quyền dùng cho cả màn hình ngay khi mở: các hàm async của giao diện chờ cầu nối sẵn sàng, riêng storeAll/storeSet phải đồng bộ
   // nên dùng bản sao lưu trực tiếp trên localStorage ngay từ đầu.
   var mirror = window.NLMobileBridge.mirrorUserStore(ls, rawGet, rawSet, rawRemove);
-  var names = ['loadManifest', 'loadLesson', 'appInfo', 'productInfo', 'loadLicense', 'activateLicense', 'removeLicense', 'createOrder', 'pinReset', 'orderStatus', 'claimDevice', 'updateStatus', 'checkUpdate', 'downloadUpdate', 'installUpdate'];
+  var names = ['loadManifest', 'loadLesson', 'appInfo', 'productInfo', 'loadLicense', 'activateLicense', 'removeLicense', 'createOrder', 'pinReset', 'orderStatus', 'claimDevice', 'progressSettings', 'progressPush', 'progressView', 'updateStatus', 'checkUpdate', 'downloadUpdate', 'installUpdate'];
   var proxy = { version: cfg.version || 'android', platform: 'android',
     storeAll: function () { return mirror.all(); }, storeSet: function (k, v) { mirror.set(String(k), v); },
     onUpdate: function (cb) { ready.then(function (b) { b.api.onUpdate(cb); }); },
     onLicenseChanged: function (cb) { ready.then(function (b) { b.api.onLicenseChanged(cb); }); } };
   names.forEach(function (n) { proxy[n] = function () { var a = arguments; return ready.then(function (b) { return b.api[n].apply(null, a); }); }; });
+  // Đọc phát âm tiếng Anh bằng giọng đọc của Android (plugin TextToSpeech). WebView không có speechSynthesis.
+  // Chỉ bật khi apk có plugin; apk cũ không có thì giao diện giữ thông báo cũ.
+  var tts = window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.TextToSpeech;
+  if (tts && tts.speak) {
+    proxy.speak = function (text) {
+      return Promise.resolve(tts.stop ? tts.stop() : null).catch(function () {}).then(function () {
+        return tts.speak({ text: String(text).slice(0, 200), lang: 'en-US', rate: 0.85, pitch: 1, volume: 1, category: 'ambient' });
+      }).then(function () { return { ok: true }; }, function (e) { return { ok: false, error: String(e && e.message || e) }; });
+    };
+  }
   window.vungBai = proxy;
   ready.then(function (b) { b.heartbeat.start(); }).catch(function () {});
   // Kiểm tra bản mới ngầm sau khi mở app vài giây (tối đa mỗi 6 giờ một lần).

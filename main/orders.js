@@ -31,6 +31,10 @@ function makeClient({ baseUrl = readBaseUrl, fetchFn = (...a) => fetch(...a), ma
     // Nhận khóa cho máy tính này từ đơn mua trên điện thoại: nhập mã đơn + số điện thoại đã mua.
     claimDevice: (o) => call('POST', '/api/claim-device', { phone: String(o && o.phone || ''), code: String(o && o.code || ''), machineId: machineId(), platform: 'win' }),
     pinReset: (o) => call('POST', '/api/pin-reset', { phone: String(o && o.phone || ''), code: String(o && o.code || ''), machineId: machineId() }),
+    // Phụ huynh xem kết quả học trên điện thoại: máy học sinh bật/tắt và gửi tóm tắt theo ngày (không có từng câu trả lời).
+    progressSettings: (o) => call('POST', '/api/progress/settings', { code: String(o && o.code || ''), machineId: machineId(), enabled: o && typeof o.enabled === 'boolean' ? o.enabled : undefined, purge: o && o.purge === true ? true : undefined, goals: o && o.goals && typeof o.goals === 'object' ? { daily: Number(o.goals.daily), weekly: Number(o.goals.weekly) } : undefined }),
+    progressPush: (o) => call('POST', '/api/progress/push', { code: String(o && o.code || ''), machineId: machineId(), days: Array.isArray(o && o.days) ? o.days : [] }),
+    progressView: (o) => call('POST', '/api/progress/view', { code: String(o && o.code || ''), phone: String(o && o.phone || ''), machineId: machineId(), from: String(o && o.from || ''), to: String(o && o.to || ''), grade: Number(o && o.grade) || 0 }),
     // Tín hiệu "máy này đang mở phần mềm" + nhận danh sách mã đơn bị thu hồi. Chỉ gửi mã máy, mã đơn và số bản, không gửi dữ liệu học tập.
     ping: (o) => call('POST', '/api/ping', { machineId: machineId(), ids: Array.isArray(o && o.ids) ? o.ids.map(String) : [], version: String(o && o.version || '') }),
     orderStatus: (code) => call('GET', `/api/orders/${encodeURIComponent(String(code).slice(0, 6))}/status?machine=${encodeURIComponent(machineId())}`),
