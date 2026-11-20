@@ -115,3 +115,30 @@ test('các đường dẫn tiến độ có CORS cho ứng dụng Android', asyn
     assert.equal(pre.status, 204, path);
   }
 });
+
+test('phụ huynh có nhiều đơn (cùng số điện thoại): nhập mã nào cũng thấy dữ liệu của tất cả đơn, đủ các khóa', async () => {
+  const { db, env, code } = await setup();
+  const o2 = await createOrder(db, catalog, { ...base, ids: ['van-hoa-10'], machineId: 'C1C1-C1C1-C1C1', platform: 'win' }, NOW, () => Uint8Array.from([6, 7, 8, 9, 10, 11]));
+  await applyPayment(db, env, catalog, { id: 2, amount: o2.amount, content: 'NL ' + o2.code }, NOW);
+  await createOrder(db, catalog, { ...base, phone: '0988888888', ids: ['van-hoa-11'], machineId: 'D1D1-D1D1-D1D1', platform: 'win' }, NOW, () => Uint8Array.from([12, 13, 14, 15, 16, 17])); // đơn của người khác
+  await progressSettings(db, { ...dev(code), enabled: true }, NOW);
+  await progressPush(db, { ...dev(code), days: [row('2026-11-17', 'toan', 9, 'A', 4, 5)] }, NOW);
+  await progressSettings(db, { ...dev(o2.code, 'C1C1-C1C1-C1C1'), enabled: true }, NOW);
+  await progressPush(db, { ...dev(o2.code, 'C1C1-C1C1-C1C1'), days: [row('2026-11-17', 'toan', 9, 'A', 1, 5)] }, NOW);
+  for (const c of [code, o2.code]) {
+    const v = await view(db, c);
+    assert.deepEqual(v.courses.map((x) => x.grade), [9, 10, 12], c);
+    assert.equal(v.codes.length, 2);
+    assert.deepEqual([v.rows.length, v.rows[0].correct, v.rows[0].total], [1, 5, 10]);
+  }
+  assert.equal((await view(db, code, { grade: 10 })).rows.length, 0);
+  assert.equal((await view(db, code, { grade: 9 })).rows.length, 1);
+  // đơn thứ hai bật, đơn đầu chưa bật: vẫn thấy
+  await progressSettings(db, { ...dev(code), enabled: false }, NOW);
+  assert.equal((await view(db, code)).enabled, true);
+  // đơn bị thu hồi thì không còn tính vào khóa của phụ huynh
+  await revokeOrder(db, o2.code, 'thử', NOW);
+  const v = await view(db, code);
+  assert.deepEqual(v.codes, [code]);
+  assert.deepEqual(v.courses.map((x) => x.grade), [9, 12]);
+});

@@ -103,12 +103,24 @@ export async function progressView(db, catalog, input, now = new Date()) {
   if (!ok) throw new HttpError(404, 'Thông tin không khớp với đơn đã mua.');
   if (await revoked(db, o.code)) throw new HttpError(403, 'Đơn này đã bị thu hồi bản quyền.');
 
-  const items = JSON.parse(o.items);
-  const courses = items.filter((id) => /^van-hoa-\d+$/.test(id)).map((id) => ({ grade: Number(id.replace('van-hoa-', '')), name: (catalog.byId[id] && catalog.byId[id].name) || id }))
-    .sort((a, b) => a.grade - b.grade);
-  const st = await statusOf(db, o.code);
-  const base = { code: o.code, name: o.name, courses, enabled: st.enabled, goals: st.goals, lastSync: st.lastSync };
-  if (!st.enabled) return { ...base, rows: [] };
+  // Phụ huynh có thể có nhiều đơn (cùng số điện thoại, mỗi đơn một mã khóa): gom tất cả đơn đã thanh toán và chưa bị thu hồi.
+  const mine = (await db.prepare("SELECT code, items FROM orders WHERE phone = ?1 AND status = 'paid' ORDER BY created_at").bind(o.phone).all()).results;
+  const orders = [];
+  for (const r of mine) if (r.code === o.code || !(await revoked(db, r.code))) orders.push(r);
+  const codes = orders.map((r) => r.code);
+  const byGrade = new Map();
+  for (const r of orders) for (const id of JSON.parse(r.items)) {
+    const m = /^van-hoa-(\d+)$/.exec(id);
+    if (m && !byGrade.has(Number(m[1]))) byGrade.set(Number(m[1]), (catalog.byId[id] && catalog.byId[id].name) || id);
+  }
+  const courses = [...byGrade].map(([grade, name]) => ({ grade, name })).sort((a, b) => a.grade - b.grade);
+  const ph = codes.map((_, i) => `?${i + 1}`).join(',');
+  const sts = (await db.prepare(`SELECT enabled, goal_daily, goal_weekly, last_sync FROM progress_sync WHERE code IN (${ph})`).bind(...codes).all()).results;
+  const enabled = sts.some((x) => x.enabled);
+  const gs = sts.find((x) => x.goal_daily);
+  const lastSync = sts.map((x) => x.last_sync).filter(Boolean).sort().pop() || null;
+  const base = { code: o.code, codes, name: o.name, courses, enabled, goals: gs ? { daily: gs.goal_daily, weekly: gs.goal_weekly } : null, lastSync };
+  if (!enabled) return { ...base, rows: [] };
 
   const today = now.toISOString().slice(0, 10);
   const to = DAY_RE.test(String(input.to || '')) ? String(input.to) : today;
@@ -118,9 +130,8 @@ export async function progressView(db, catalog, input, now = new Date()) {
   const minFrom = new Date(Date.parse(to + 'T00:00:00Z') - (MAX_RANGE_DAYS - 1) * DAY_MS).toISOString().slice(0, 10);
   if (from < minFrom) from = minFrom;
   const grade = Math.round(Number(input.grade)) || 0;
-  const q = grade
-    ? db.prepare('SELECT day, subject, grade, chapter, SUM(correct) AS correct, SUM(total) AS total, SUM(lessons) AS lessons, SUM(seconds) AS seconds FROM progress_daily WHERE code = ?1 AND day >= ?2 AND day <= ?3 AND grade = ?4 GROUP BY day, subject, grade, chapter ORDER BY day LIMIT ?5').bind(o.code, from, to, grade, MAX_VIEW_ROWS)
-    : db.prepare('SELECT day, subject, grade, chapter, SUM(correct) AS correct, SUM(total) AS total, SUM(lessons) AS lessons, SUM(seconds) AS seconds FROM progress_daily WHERE code = ?1 AND day >= ?2 AND day <= ?3 GROUP BY day, subject, grade, chapter ORDER BY day LIMIT ?4').bind(o.code, from, to, MAX_VIEW_ROWS);
-  const rows = (await q.all()).results;
+  const n = codes.length;
+  const sql = `SELECT day, subject, grade, chapter, SUM(correct) AS correct, SUM(total) AS total, SUM(lessons) AS lessons, SUM(seconds) AS seconds FROM progress_daily WHERE code IN (${ph}) AND day >= ?${n + 1} AND day <= ?${n + 2}${grade ? ` AND grade = ?${n + 4}` : ''} GROUP BY day, subject, grade, chapter ORDER BY day LIMIT ?${n + 3}`;
+  const rows = (await db.prepare(sql).bind(...codes, from, to, MAX_VIEW_ROWS, ...(grade ? [grade] : [])).all()).results;
   return { ...base, from, to, rows };
 }
