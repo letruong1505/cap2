@@ -2,6 +2,7 @@
 - Kế hoạch học tập: mục tiêu số câu tách riêng thứ 2 đến thứ 6 (mặc định 50 câu/ngày) và cuối tuần (mặc định 80 câu/ngày, chọn tới 150); báo cáo và phần phụ huynh xem trên điện thoại tính đạt mục tiêu theo đúng từng ngày.
 - Mã đối tác giảm 100% cho những khóa được chọn: đơn 0 đồng tự kích hoạt, không cần quét mã thanh toán.
 - Tiếng Anh: lý thuyết lớp 6 đến 12 trình bày lại dạng thẻ dễ học (tóm tắt, công thức từng dòng, bảng, ví dụ có bản dịch và nút nghe đọc, lỗi hay gặp, câu hỏi thử nhanh).
+- Địa lí 11 (bài 4) và Lịch sử 11 (bài 5): lý thuyết dạng thẻ có bảng so sánh, trục thời gian, mẹo nhớ và câu hỏi thử nhanh (bài mẫu).
 
 ## Các bản trước
 - Biểu tượng (icon) Nam Linh Educenter cho cả bản Windows và Android.

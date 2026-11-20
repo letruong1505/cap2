@@ -141,6 +141,16 @@ function grammarCard(c) {
   card.append(el('h3', { class: 'g-title' }, c.n ? el('span', { class: 'g-n' }, String(c.n)) : '', c.title));
   if (c.text) card.append(el('p', { class: 'g-text' }, richText(c.text)));
   (c.formulas || []).forEach((f) => card.append(el('div', { class: 'g-formula' }, richText(f))));
+  if (c.points && c.points.length) {
+    const ul = el('ul', { class: 'g-points' });
+    c.points.forEach((x) => ul.append(el('li', {}, richText(x))));
+    card.append(ul);
+  }
+  if (c.timeline && c.timeline.length) {
+    const ol = el('ol', { class: 'g-timeline' });
+    c.timeline.forEach((r) => ol.append(el('li', {}, el('span', { class: 'g-tl-when' }, richText(r[0])), el('span', { class: 'g-tl-what' }, richText(r[1])))));
+    card.append(ol);
+  }
   if (c.table) {
     const tb = el('table', { class: 'g-table' });
     tb.append(el('tr', {}, ...c.table.head.map((x) => el('th', {}, x))));
@@ -157,9 +167,9 @@ function grammarCard(c) {
     card.append(el('p', { class: 'g-sub' }, 'Ví dụ'), ul);
   }
   if (c.wrong) {
-    card.append(el('div', { class: 'g-pitfall' }, el('p', { class: 'g-pit-title' }, 'Lỗi hay gặp'),
-      el('p', { class: 'g-wrong' }, el('b', {}, '✗ Sai: '), richText(c.wrong)),
-      el('p', { class: 'g-right' }, el('b', {}, '✓ Đúng: '), richText(c.right)),
+    card.append(el('div', { class: 'g-pitfall' }, el('p', { class: 'g-pit-title' }, c.pitTitle || 'Lỗi hay gặp'),
+      el('p', { class: 'g-wrong' }, el('b', {}, c.wrongLabel || '✗ Sai: '), richText(c.wrong)),
+      el('p', { class: 'g-right' }, el('b', {}, c.rightLabel || '✓ Đúng: '), richText(c.right)),
       c.why ? el('p', { class: 'g-why' }, c.why) : ''));
   }
   if (c.tip) card.append(el('p', { class: 'g-tip' }, el('b', {}, 'Mẹo nhớ: '), richText(c.tip)));
