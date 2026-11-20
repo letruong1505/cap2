@@ -862,3 +862,48 @@ button.ghost:hover { background: var(--paper); }
   .license-form input { flex: 1 1 100%; }
   .license-form button { flex: 1 1 100%; }
 }
+
+/* Lý thuyết dạng thẻ (tiếng Anh). */
+#sec-theory .g-summary p, #sec-theory .g-card p { max-width: none; }
+.g-summary { background: #eaf3ff; border: 2px solid var(--sky); border-radius: 14px; padding: 12px 18px; margin: 4px 0 16px; max-width: 760px; }
+.g-sum-label { margin: 0 0 2px !important; font-size: 13px; font-weight: 800; color: var(--sky); text-transform: uppercase; letter-spacing: .04em; }
+.g-sum-text { margin: 0 !important; font-size: 18px; font-weight: 700; line-height: 1.5 !important; }
+.g-card { background: #fff; border: 1px solid var(--rule); border-radius: 14px; padding: 14px 18px 16px; margin: 0 0 14px; max-width: 760px; box-shadow: 0 1px 2px rgba(21,50,78,.05); }
+.g-title { margin: 0 0 8px; font-size: 19px; color: var(--ink); display: flex; align-items: center; gap: 10px; }
+.g-n { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: var(--sky); color: #fff; font-size: 15px; flex: none; }
+.g-text { margin: 0 0 10px !important; line-height: 1.65 !important; }
+.g-formula { font-size: 17px; background: var(--paper); border-left: 4px solid var(--sky); border-radius: 10px; padding: 10px 14px; margin: 0 0 10px; line-height: 1.9; font-weight: 600; }
+.rt { padding: 1px 6px; border-radius: 6px; font-weight: 700; }
+.rt-s { background: #d8ecff; color: #0d4a8f; }
+.rt-v { background: #ffe3d1; color: #a5420d; }
+.rt-c { background: #d9f5df; color: #17692e; }
+.rt-k { background: #fff1b8; color: #6b4a00; }
+.g-table-wrap { overflow-x: auto; margin: 0 0 10px; }
+.g-table { border-collapse: collapse; width: 100%; font-size: 15px; }
+.g-table th { background: var(--paper); text-align: left; padding: 7px 10px; border-bottom: 2px solid var(--rule); }
+.g-table td { padding: 7px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.g-sub { margin: 10px 0 4px !important; font-size: 13px; font-weight: 800; color: var(--mute); text-transform: uppercase; letter-spacing: .04em; }
+.g-ex { list-style: none; margin: 0 0 8px; padding: 0; }
+.g-ex li { padding: 8px 0; border-top: 1px dashed var(--rule); }
+.g-ex li:first-child { border-top: 0; }
+.g-en { font-size: 17px; line-height: 1.8; display: flex; align-items: flex-start; gap: 8px; }
+.g-vi { margin: 0 0 0 38px; color: var(--mute); font-size: 15px; }
+.g-speak { border: 1px solid var(--rule); background: #fff; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; flex: none; font-size: 14px; padding: 0; line-height: 1; }
+.g-speak:hover { background: var(--paper); }
+.g-pitfall { background: #fff1f0; border: 1px solid #f3b8b3; border-left: 5px solid #d9382b; border-radius: 10px; padding: 10px 14px; margin: 10px 0; }
+.g-pitfall p { margin: 0 0 4px !important; line-height: 1.6 !important; }
+.g-pit-title { font-weight: 800; color: #b3261e; }
+.g-wrong { color: #b3261e; } .g-right { color: #17692e; }
+.g-why { color: var(--mute); font-size: 15px; }
+.g-tip { background: #fff8e1; border-radius: 10px; padding: 8px 12px; margin: 10px 0 0 !important; line-height: 1.6 !important; }
+.g-try { background: var(--paper); border-radius: 12px; padding: 10px 14px; margin: 12px 0 0; }
+.g-try-label { margin: 0 0 2px !important; font-size: 13px; font-weight: 800; color: var(--sky); text-transform: uppercase; letter-spacing: .04em; }
+.g-try-q { margin: 0 0 8px !important; font-size: 17px; line-height: 1.6 !important; }
+.g-try-opts { display: flex; flex-wrap: wrap; gap: 8px; }
+.g-try-opt { border: 2px solid var(--rule); background: #fff; border-radius: 10px; padding: 6px 14px; font-size: 16px; font-family: inherit; cursor: pointer; }
+.g-try-opt.ok { border-color: #1f9d4a; background: #e6f7ec; }
+.g-try-opt.no { border-color: #d9382b; background: #fdecea; }
+.g-try-res { margin: 6px 0 0 !important; min-height: 1.4em; font-weight: 600; }
+.g-try-res.ok { color: #17692e; } .g-try-res.no { color: #b3261e; }
+.g-more { max-width: 760px; margin: 0 0 14px; } .g-more > summary { cursor: pointer; font-weight: 700; color: var(--sky); padding: 6px 0; }
+@media (max-width: 600px) { .g-card { padding: 12px; } .g-vi { margin-left: 0; } }

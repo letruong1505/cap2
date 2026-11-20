@@ -133,7 +133,12 @@
         window.vungBai.loadLesson(lessonId).then((lesson) => {
           const kids = [h('div', { class: 'meta' }, 'Kiến thức cần nắm')];
           (lesson.requirements || []).forEach((r) => kids.push(h('div', { class: 'kt-line' }, '• ' + r)));
-          (lesson.theory || []).filter((t) => t.type === 'formula').forEach((t) => kids.push(h('p', { class: 'formula' }, t.content)));
+          (lesson.theory || []).forEach((t) => {
+            if (t.type === 'formula') kids.push(h('p', { class: 'formula' }, t.content));
+            // Lý thuyết dạng thẻ: lấy tóm tắt và công thức, bỏ ký hiệu tô màu {s …}.
+            else if (t.type === 'summary') kids.push(h('div', { class: 'kt-line' }, String(t.content).replace(/\{[svck] ([^}]+)\}/g, '$1')));
+            else if (t.type === 'card') (t.formulas || []).forEach((f) => kids.push(h('p', { class: 'formula' }, String(f).replace(/\{[svck] ([^}]+)\}/g, '$1'))));
+          });
           know.replaceChildren(...kids);
         }).catch(() => know.replaceChildren(h('div', { class: 'meta' }, 'Không tải được phần kiến thức của bài này.')));
       } else {

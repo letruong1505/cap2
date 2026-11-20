@@ -211,40 +211,129 @@
   },
   "theory": [
     {
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Tương lai đơn: {k will + V}. Điều kiện loại 1: {k If + hiện tại đơn, will + V}. Không dùng will trong mệnh đề If."
+    },
+    {
       "type": "text",
       "content": "Unit 6 nói về lối sống ở các nơi trên thế giới và lối sống đang thay đổi. Ngữ pháp trọng tâm: thì tương lai đơn và câu điều kiện loại 1."
     },
     {
-      "type": "text",
-      "content": "1. Thì tương lai đơn: will + V để dự đoán, hứa hẹn hoặc quyết định tức thời. Phủ định won’t. Câu hỏi Will + S + V?"
+      "type": "card",
+      "n": 1,
+      "title": "Thì tương lai đơn",
+      "text": "Dùng will + V để dự đoán, hứa hẹn hoặc quyết định tức thời.",
+      "formulas": [
+        "S + {c will / won’t} + {v V}",
+        "{c Will} + S + {v V} ?"
+      ],
+      "examples": [
+        {
+          "en": "In the future, more people {c will} work online.",
+          "vi": "Trong tương lai, nhiều người sẽ làm việc trực tuyến."
+        },
+        {
+          "en": "Teenagers {c won’t} spend much time offline.",
+          "vi": "Thiếu niên sẽ không dành nhiều thời gian ngoại tuyến."
+        },
+        {
+          "en": "{c Will} robots serve food in restaurants?",
+          "vi": "Rô-bốt sẽ phục vụ đồ ăn trong nhà hàng chứ?"
+        }
+      ]
     },
     {
-      "type": "formula",
-      "content": "S + will / won’t + V      Will + S + V ?"
+      "type": "card",
+      "n": 2,
+      "title": "Câu điều kiện loại 1",
+      "text": "Nói về điều có thể xảy ra ở hiện tại hoặc tương lai. Mệnh đề If ở hiện tại đơn, mệnh đề chính ở tương lai đơn (hoặc can / should / câu mệnh lệnh).",
+      "formulas": [
+        "{c If} + S + V (hiện tại đơn), S + {c will / won’t} + V.",
+        "S + {c will} + V {c if} + S + V (hiện tại đơn)."
+      ],
+      "examples": [
+        {
+          "en": "{c If} you greet people with a smile, they {c will} like you.",
+          "vi": "Nếu bạn chào mọi người bằng nụ cười, họ sẽ quý bạn."
+        },
+        {
+          "en": "We {c won’t} maintain our traditions {c if} we forget them.",
+          "vi": "Chúng ta sẽ không giữ được truyền thống nếu quên chúng."
+        },
+        {
+          "en": "{c If} it snows, the musher {c can} use the dogsled.",
+          "vi": "Nếu tuyết rơi, người điều khiển chó kéo xe có thể dùng xe trượt tuyết."
+        }
+      ],
+      "tip": "Mệnh đề If đứng trước thì có dấu phẩy; đứng sau thì không.",
+      "try": {
+        "q": "If it ___ tomorrow, we will stay at home.",
+        "options": [
+          "rains",
+          "will rain",
+          "rained"
+        ],
+        "answer": 0,
+        "explain": "Mệnh đề If dùng hiện tại đơn."
+      }
     },
     {
-      "type": "text",
-      "content": "Ví dụ: In the future, more people will work online. Teenagers won’t spend much time offline. Will robots serve food in restaurants?"
+      "type": "card",
+      "n": 3,
+      "title": "Lỗi hay gặp và Unless",
+      "wrong": "If it will rain, we will stay at home.",
+      "right": "{c If} it {v rains}, we will stay at home.",
+      "why": "Không dùng will trong mệnh đề If.",
+      "text": "Unless = if … not.",
+      "examples": [
+        {
+          "en": "{c Unless} we act now, the nomadic lifestyle will disappear.",
+          "vi": "Nếu chúng ta không hành động ngay, lối sống du mục sẽ biến mất."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "2. Câu điều kiện loại 1 nói về điều có thể xảy ra ở hiện tại hoặc tương lai: mệnh đề If ở hiện tại đơn, mệnh đề chính ở tương lai đơn (hoặc can / should / câu mệnh lệnh)."
-    },
-    {
-      "type": "formula",
-      "content": "If + S + V (hiện tại đơn), S + will / won’t + V.      S + will + V if + S + V (hiện tại đơn)."
-    },
-    {
-      "type": "text",
-      "content": "Ví dụ: If you greet people with a smile, they will like you. We won’t maintain our traditions if we forget them. If it snows, the musher can use the dogsled. Khi mệnh đề If đứng trước, có dấu phẩy; đứng sau thì không."
-    },
-    {
-      "type": "text",
-      "content": "3. Lỗi hay gặp: dùng will trong mệnh đề If (If it will rain là sai). Unless = if … not: Unless we act now, the nomadic lifestyle will disappear."
-    },
-    {
-      "type": "text",
-      "content": "4. Từ vựng về lối sống: be in the habit of + V-ing, maintain a tradition, revive a craft, have an impact on, interact with, independent lifestyle, staple food."
+      "type": "card",
+      "n": 4,
+      "title": "Từ vựng về lối sống",
+      "collapse": "Xem từ vựng về lối sống",
+      "table": {
+        "head": [
+          "Cụm từ",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "be in the habit of + V-ing",
+            "có thói quen làm gì"
+          ],
+          [
+            "maintain a tradition",
+            "duy trì truyền thống"
+          ],
+          [
+            "revive a craft",
+            "làm sống lại nghề thủ công"
+          ],
+          [
+            "have an impact on",
+            "có tác động đến"
+          ],
+          [
+            "interact with",
+            "tương tác với"
+          ],
+          [
+            "independent lifestyle",
+            "lối sống độc lập"
+          ],
+          [
+            "staple food",
+            "lương thực chính"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],
