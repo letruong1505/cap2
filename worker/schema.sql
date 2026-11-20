@@ -141,3 +141,10 @@ CREATE TABLE IF NOT EXISTS progress_daily (
   PRIMARY KEY (code, src, day, subject, grade, chapter)
 );
 CREATE INDEX IF NOT EXISTS idx_progress_daily_day ON progress_daily (code, day);
+
+-- Ngưỡng đạt (% câu đúng) mà phụ huynh đặt: pass là ngưỡng chung, pass_by là JSON { mã môn: % }.
+CREATE TABLE IF NOT EXISTS progress_pass_ext (
+  code TEXT PRIMARY KEY,
+  pass INTEGER,
+  pass_by TEXT
+);

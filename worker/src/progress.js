@@ -34,9 +34,22 @@ async function statusOf(db, code) {
   const s = await db.prepare('SELECT enabled, goal_daily, goal_weekly, last_sync FROM progress_sync WHERE code = ?1').bind(code).first();
   const n = await db.prepare('SELECT COUNT(*) AS n FROM progress_daily WHERE code = ?1').bind(code).first();
   const x = await db.prepare('SELECT goal_weekend FROM progress_goal_ext WHERE code = ?1').bind(code).first();
-  return { enabled: !!(s && s.enabled), goals: s && s.goal_daily ? { daily: s.goal_daily, weekend: (x && x.goal_weekend) || 80, weekly: s.goal_weekly } : null, lastSync: (s && s.last_sync) || null, rows: n.n };
+  return { enabled: !!(s && s.enabled), goals: s && s.goal_daily ? { daily: s.goal_daily, weekend: (x && x.goal_weekend) || 80, weekly: s.goal_weekly, ...(await passOf(db, code)) } : null, lastSync: (s && s.last_sync) || null, rows: n.n };
 }
 
+// Ngưỡng đạt: pass chung (10–100), passBy riêng từng môn; luôn trả về giá trị đã làm sạch.
+function cleanPass(input) {
+  const out = { pass: clampInt(input && input.pass, 10, 100, 80), passBy: {} };
+  const o = input && input.passBy;
+  if (o && typeof o === 'object') Object.keys(o).slice(0, 60).forEach((k) => { const v = Math.round(Number(o[k])); if (/^[a-z0-9_-]{1,30}$/i.test(k) && Number.isFinite(v) && v >= 10 && v <= 100) out.passBy[k] = v; });
+  return out;
+}
+async function passOf(db, code) {
+  const r = await db.prepare('SELECT pass, pass_by FROM progress_pass_ext WHERE code = ?1').bind(code).first();
+  let by = {};
+  try { by = r && r.pass_by ? JSON.parse(r.pass_by) : {}; } catch (e) { by = {}; }
+  return cleanPass({ pass: r && r.pass, passBy: by });
+}
 const clampInt = (v, lo, hi, d) => { v = Math.round(Number(v)); return Number.isFinite(v) ? Math.min(hi, Math.max(lo, v)) : d; };
 
 // Bật/tắt chia sẻ, đặt mục tiêu, xóa dữ liệu trên máy chủ. Không truyền gì thì chỉ trả trạng thái.
@@ -56,6 +69,9 @@ export async function progressSettings(db, input, now = new Date()) {
       .bind(o.code, clampInt(input.goals.daily, 5, 200, 50), clampInt(input.goals.weekly, 1, 7, 5)).run();
     await db.prepare('INSERT INTO progress_goal_ext (code, goal_weekend) VALUES (?1, ?2) ON CONFLICT(code) DO UPDATE SET goal_weekend = ?2')
       .bind(o.code, clampInt(input.goals.weekend, 5, 200, 80)).run();
+    const ps = cleanPass(input.goals);
+    await db.prepare('INSERT INTO progress_pass_ext (code, pass, pass_by) VALUES (?1, ?2, ?3) ON CONFLICT(code) DO UPDATE SET pass = ?2, pass_by = ?3')
+      .bind(o.code, ps.pass, JSON.stringify(ps.passBy)).run();
   }
   return statusOf(db, o.code);
 }
@@ -123,7 +139,7 @@ export async function progressView(db, catalog, input, now = new Date()) {
   const gs = sts.find((x) => x.goal_daily);
   const gx = gs ? await db.prepare('SELECT goal_weekend FROM progress_goal_ext WHERE code = ?1').bind(gs.code).first() : null;
   const lastSync = sts.map((x) => x.last_sync).filter(Boolean).sort().pop() || null;
-  const base = { code: o.code, codes, name: o.name, courses, enabled, goals: gs ? { daily: gs.goal_daily, weekend: (gx && gx.goal_weekend) || 80, weekly: gs.goal_weekly } : null, lastSync };
+  const base = { code: o.code, codes, name: o.name, courses, enabled, goals: gs ? { daily: gs.goal_daily, weekend: (gx && gx.goal_weekend) || 80, weekly: gs.goal_weekly, ...(await passOf(db, gs.code)) } : null, lastSync };
   if (!enabled) return { ...base, rows: [] };
 
   const today = now.toISOString().slice(0, 10);

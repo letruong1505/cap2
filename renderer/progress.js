@@ -10,8 +10,9 @@
   const MAX_ATTEMPTS = 1000;
   const MAX_NOTEBOOK = 300;
 
-  const DEFAULT_GOALS = { daily: 50, weekend: 80, weekly: 5 }; // T2–T6: 50 câu/ngày; T7, CN: 80 câu/ngày; 5 ngày học/tuần
-  function empty() { return { attempts: [], notebook: [], reviews: [], goals: Object.assign({}, DEFAULT_GOALS) }; }
+  const DEFAULT_PASS = 80; // ngưỡng đạt mặc định: dưới 80% câu đúng thì báo không đạt
+  const DEFAULT_GOALS = { daily: 50, weekend: 80, weekly: 5, pass: DEFAULT_PASS, passBy: {} }; // T2–T6: 50 câu/ngày; T7, CN: 80 câu/ngày; 5 ngày học/tuần
+  function empty() { return { attempts: [], notebook: [], reviews: [], goals: Object.assign({}, DEFAULT_GOALS, { passBy: {} }) }; }
 
   /* Điểm thang 10 của một bài (làm tròn 1 chữ số). */
   function score10(correct, total) { return total ? Math.round((correct / total) * 100) / 10 : 0; }
@@ -20,12 +21,33 @@
   const REVIEW_PTS = 5;
   function clampInt(v, lo, hi, d) { v = Math.round(Number(v)); return Number.isFinite(v) ? Math.min(hi, Math.max(lo, v)) : d; }
   function setGoals(data, g) {
+    const old = data.goals || {};
+    g = Object.assign({}, { pass: old.pass, passBy: old.passBy }, g); // không nhắc tới ngưỡng đạt thì giữ nguyên
     data.goals = {
       daily: clampInt(g.daily, 5, 200, DEFAULT_GOALS.daily),
       weekend: clampInt(g.weekend, 5, 200, DEFAULT_GOALS.weekend),
       weekly: clampInt(g.weekly, 1, 7, DEFAULT_GOALS.weekly),
+      pass: clampInt(g.pass, 10, 100, DEFAULT_PASS),
+      passBy: cleanPassBy(g.passBy),
     };
     return data;
+  }
+  /* Ngưỡng riêng từng môn: { mã môn: % }, chỉ giữ giá trị hợp lệ. */
+  function cleanPassBy(o) {
+    const out = {};
+    if (o && typeof o === 'object') Object.keys(o).slice(0, 60).forEach((k) => { const v = Math.round(Number(o[k])); if (/^[a-z0-9_-]{1,30}$/i.test(k) && Number.isFinite(v) && v >= 10 && v <= 100) out[k] = v; });
+    return out;
+  }
+  /* Ngưỡng đạt (%) của một môn: riêng của môn nếu có, không thì ngưỡng chung. */
+  function passFor(goals, subject) {
+    const g = goals || DEFAULT_GOALS;
+    const own = g.passBy && g.passBy[subject];
+    return own || g.pass || DEFAULT_PASS;
+  }
+  /* Gắn ngưỡng và kết quả đạt/không đạt vào từng dòng môn (cần ít nhất 1 câu). */
+  function markPass(list, goals) {
+    list.forEach((x) => { x.need = passFor(goals, x.subject); x.passed = x.total > 0 && x.pct >= x.need; });
+    return list;
   }
   /* Mục tiêu số câu của một ngày: T7, CN dùng mục tiêu cuối tuần, còn lại dùng mục tiêu ngày thường. */
   function goalFor(goals, t) {
@@ -155,8 +177,9 @@
     });
     const pct = (x) => (x.total ? Math.round((100 * x.correct) / x.total) : 0);
     const subjects = Object.values(subj).map((s) => Object.assign(s, { pct: pct(s) })).sort((a, b) => b.total - a.total);
+    markPass(subjects, data.goals);
     const weak = Object.values(chap).filter((c) => c.total >= 5).map((c) => Object.assign(c, { pct: pct(c) }))
-      .filter((c) => c.pct < 70).sort((a, b) => a.pct - b.pct).slice(0, 5);
+      .filter((c) => c.pct < passFor(data.goals, c.subject)).sort((a, b) => a.pct - b.pct).slice(0, 5);
     return {
       from, to: startOfDay(now), attempts: list.length, days: days.size,
       minutes: Math.round(seconds / 60), correct, total, pct: pct({ correct, total }),
@@ -196,8 +219,9 @@
       c.correct += a.correct; c.total += a.total;
     });
     const subjects = Object.values(subj).map((x) => Object.assign(x, { wrong: x.total - x.correct, pct: pct(x) })).sort((a, b) => b.total - a.total);
+    markPass(subjects, goals);
     const weak = Object.values(chap).filter((c) => c.total >= 5).map((c) => Object.assign(c, { pct: pct(c) }))
-      .filter((c) => c.pct < 70).sort((a, b) => a.pct - b.pct).slice(0, 5);
+      .filter((c) => c.pct < passFor(goals, c.subject)).sort((a, b) => a.pct - b.pct).slice(0, 5);
     return {
       from, to, days, goals, subject, grade, correct, wrong: total - correct, total, pct: pct({ correct, total }),
       minutes: Math.round(seconds / 60), attempts: list.length, activeDays: days.filter((d) => d.total > 0).length,
@@ -205,5 +229,5 @@
     };
   }
 
-  return { KEY, INTERVALS, DEFAULT_GOALS, goalFor, score10, points, setGoals, progress, report, load, save, recordAttempt, grade, due, weekly, slimItem };
+  return { KEY, INTERVALS, DEFAULT_GOALS, DEFAULT_PASS, goalFor, passFor, markPass, cleanPassBy, score10, points, setGoals, progress, report, load, save, recordAttempt, grade, due, weekly, slimItem };
 });

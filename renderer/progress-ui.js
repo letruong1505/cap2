@@ -87,6 +87,35 @@
     };
     d.addEventListener('change', apply); we.addEventListener('change', apply); w.addEventListener('change', apply);
     box.append(h('p', { class: 'goal-set' }, 'Đặt mục tiêu: thứ 2–6 ', d, ' câu/ngày; thứ 7, CN ', we, ' câu/ngày; ', w, ' ngày học/tuần'));
+
+    /* Ngưỡng đạt: dưới ngưỡng thì báo "không đạt". Chung cho mọi môn, có thể đặt riêng từng môn đã học. */
+    const PASS = [50, 60, 70, 75, 80, 85, 90, 95, 100];
+    const mkPass = (cur, label) => {
+      const sel = h('select', { 'aria-label': label });
+      (PASS.includes(cur) ? PASS : PASS.concat(cur).sort((a, b) => a - b)).forEach((o) => { const op = h('option', { value: o }, o + '%'); if (o === cur) op.selected = true; sel.append(op); });
+      return sel;
+    };
+    const savePass = async (mut) => {
+      const ui = window.VungPinUI;
+      if (ui && !(await ui.ensureUnlocked())) { renderGoals(box, grade); return; }
+      const cur = P.load(store());
+      const ng = Object.assign({}, cur.goals, { passBy: Object.assign({}, cur.goals.passBy) });
+      mut(ng);
+      P.save(store(), P.setGoals(cur, ng)); renderGoals(box, grade);
+    };
+    const pg = mkPass(g.pass, 'Ngưỡng đạt chung cho mọi môn');
+    pg.addEventListener('change', () => savePass((ng) => { ng.pass = Number(pg.value); }));
+    box.append(h('p', { class: 'goal-set' }, 'Ngưỡng đạt (dưới mức này báo "không đạt"): chung ', pg, ' số câu đúng'));
+    const subs = [...new Set((data.attempts || []).filter((a) => !grade || a.grade === grade).map((a) => a.subject))].filter(Boolean);
+    if (subs.length) {
+      const row = h('p', { class: 'goal-set' }, 'Riêng từng môn: ');
+      subs.forEach((sj) => {
+        const sel = mkPass(P.passFor(g, sj), 'Ngưỡng đạt môn ' + subjName(sj));
+        sel.addEventListener('change', () => savePass((ng) => { ng.passBy[sj] = Number(sel.value); }));
+        row.append(subjName(sj) + ' ', sel, ' ');
+      });
+      box.append(row);
+    }
   }
 
   function dueCount(grade) { return P ? P.due(P.load(store()), Date.now(), grade).length : 0; }
@@ -235,11 +264,11 @@
     out.push(`Số ngày có học: ${r.activeDays}/${r.days.length}`);
     out.push(`Số bài đã nộp: ${r.attempts}, thời gian làm: ${r.minutes} phút`);
     out.push(r.total ? `Đúng ${r.correct} · Sai ${r.wrong} (${r.pct}% đúng / ${100 - r.pct}% sai, tổng ${r.total} câu)` : 'Chưa có bài nào trong khoảng này');
-    r.subjects.forEach((s) => out.push(`${subjName(s.subject)} lớp ${s.grade}: đúng ${s.correct}, sai ${s.wrong} (${s.pct}% đúng)`));
+    r.subjects.forEach((s) => out.push(`${subjName(s.subject)} lớp ${s.grade}: đúng ${s.correct}, sai ${s.wrong} (${s.pct}% đúng) – ${s.passed ? 'ĐẠT' : 'KHÔNG ĐẠT'} (ngưỡng ${s.need}%)`));
     if (r.weak.length) {
       out.push('Cần ôn thêm:');
       r.weak.forEach((c) => out.push(`  • ${c.name} (${subjName(c.subject)} ${c.grade}) – ${c.pct}%`));
-    } else if (r.total) out.push('Chưa có chương nào dưới 70%.');
+    } else if (r.total) out.push('Chưa có chương nào dưới ngưỡng đạt.');
     return out;
   }
 
@@ -345,7 +374,7 @@
     }
     if (r.subjects.length) {
       const box = h('div', { class: 'goal-box' }, h('h2', {}, 'Theo môn học'));
-      r.subjects.forEach((s) => box.append(h('p', {}, `${subjName(s.subject)} lớp ${s.grade}: ${s.lessons} bài`), qualityBar(s.correct, s.total, true)));
+      r.subjects.forEach((s) => box.append(h('p', {}, `${subjName(s.subject)} lớp ${s.grade}: ${s.lessons} bài · `, h('strong', { class: s.passed ? 'pass-ok' : 'pass-bad' }, s.passed ? `Đạt (${s.pct}% ≥ ${s.need}%)` : `Không đạt (${s.pct}% < ${s.need}%)`)), qualityBar(s.correct, s.total, true)));
       body.append(box);
     }
     const ul = h('ul', { class: 'report-list' });
@@ -445,7 +474,7 @@
         if (r.days.length > 1 || r.total) body.append(h('h2', { class: 'rep-h' }, r.days.length <= 7 ? 'Lịch tuần' : 'Lịch học'), calendar(r, today));
         if (r.subjects.length) {
           const box = h('div', { class: 'goal-box' }, h('h2', {}, 'Theo môn học'));
-          r.subjects.forEach((s) => box.append(h('p', {}, `${subjName(s.subject)} lớp ${s.grade}: ${s.lessons} bài`), qualityBar(s.correct, s.total, true)));
+          r.subjects.forEach((s) => box.append(h('p', {}, `${subjName(s.subject)} lớp ${s.grade}: ${s.lessons} bài · `, h('strong', { class: s.passed ? 'pass-ok' : 'pass-bad' }, s.passed ? `Đạt (${s.pct}% ≥ ${s.need}%)` : `Không đạt (${s.pct}% < ${s.need}%)`)), qualityBar(s.correct, s.total, true)));
           body.append(box);
         }
         const ul = h('ul', { class: 'report-list' });

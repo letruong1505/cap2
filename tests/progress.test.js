@@ -96,7 +96,7 @@ test('điểm: thang 10 và điểm thưởng', () => {
 
 test('mục tiêu: tiến độ ngày/tuần, điểm ôn sổ, lọc lớp, giới hạn đặt mục tiêu', () => {
   const d = P.load(null);
-  assert.deepEqual(d.goals, { daily: 50, weekend: 80, weekly: 5 });
+  assert.deepEqual(d.goals, { daily: 50, weekend: 80, weekly: 5, pass: 80, passBy: {} });
   P.recordAttempt(d, meta({ correct: 9, total: 10 }), [item('q1')], [], T0);
   P.recordAttempt(d, meta({ grade: 8, lessonId: 'toan8/a', correct: 5, total: 5 }), [], [], T0 + 2 * DAY);
   P.grade(d, d.notebook[0].key, true, T0 + 2 * DAY);
@@ -108,7 +108,7 @@ test('mục tiêu: tiến độ ngày/tuần, điểm ôn sổ, lọc lớp, gi�
   p = P.progress(d, T0 + 2 * DAY, 8);
   assert.equal(p.totalPts, 70);
   P.setGoals(d, { daily: 9999, weekly: 0 });
-  assert.deepEqual(d.goals, { daily: 200, weekend: 80, weekly: 1 });
+  assert.deepEqual(d.goals, { daily: 200, weekend: 80, weekly: 1, pass: 80, passBy: {} });
   assert.equal(P.weekly(d, T0 + 2 * DAY).prog.weekPts, 185);
 });
 
@@ -155,5 +155,23 @@ test('mục tiêu theo ngày: T2–T6 dùng mục tiêu ngày thường, T7 và 
   assert.equal(P.progress(d, fri).todayGoal, 50);
   // dữ liệu cũ chưa có mục tiêu cuối tuần: dùng mặc định 80
   const old = P.setGoals({}, { daily: 20, weekly: 5 });
-  assert.deepEqual(old.goals, { daily: 20, weekend: 80, weekly: 5 });
+  assert.deepEqual(old.goals, { daily: 20, weekend: 80, weekly: 5, pass: 80, passBy: {} });
+});
+
+test('ngưỡng đạt: mặc định 80%, riêng từng môn, chương yếu theo ngưỡng', () => {
+  assert.equal(P.passFor(P.load(null).goals, 'toan'), 80);
+  let d = P.recordAttempt({ attempts: [], notebook: [] }, meta({ subject: 'toan', correct: 4, total: 5 }), [], [], T0);
+  d = P.recordAttempt(d, meta({ subject: 'anh', grade: 7, lessonId: 'anh7/a', correct: 3, total: 5, chapter: 'Unit 1' }), [], [], T0);
+  d = P.setGoals(d, { daily: 50, weekend: 80, weekly: 5, pass: 80, passBy: { anh: 60, toan: 5, 'x y': 90 } });
+  assert.deepEqual(d.goals.passBy, { anh: 60 }); // giá trị <10 hoặc mã sai bị bỏ
+  const r = P.report(d, { from: T0 - DAY, to: T0 });
+  const by = Object.fromEntries(r.subjects.map((s) => [s.subject, s]));
+  assert.equal(by.toan.passed, true); assert.equal(by.toan.need, 80); // 80% >= 80%
+  assert.equal(by.anh.passed, true); assert.equal(by.anh.need, 60); // 60% >= 60%
+  d = P.setGoals(d, { pass: 90 }); // không nhắc tới passBy thì giữ nguyên
+  assert.deepEqual(d.goals.passBy, { anh: 60 });
+  const r2 = P.report(d, { from: T0 - DAY, to: T0 });
+  assert.equal(r2.subjects.find((s) => s.subject === 'toan').passed, false);
+  assert.ok(r2.weak.some((c) => c.subject === 'toan')); // 80% < 90% nên chương Toán thành chương yếu
+  assert.ok(!r2.weak.some((c) => c.subject === 'anh'));
 });
