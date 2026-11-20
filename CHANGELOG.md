@@ -3,6 +3,7 @@
 - Mã đối tác giảm 100% cho những khóa được chọn: đơn 0 đồng tự kích hoạt, không cần quét mã thanh toán.
 - Tiếng Anh: lý thuyết lớp 6 đến 12 trình bày lại dạng thẻ dễ học (tóm tắt, công thức từng dòng, bảng, ví dụ có bản dịch và nút nghe đọc, lỗi hay gặp, câu hỏi thử nhanh).
 - Địa lí 11 (bài 4) và Lịch sử 11 (bài 5): lý thuyết dạng thẻ có bảng so sánh, trục thời gian, mẹo nhớ và câu hỏi thử nhanh (bài mẫu).
+- Android: máy cài apk cũ sẽ được nhắc cài apk mới khi có bài học mới (gói tự cập nhật chỉ đổi giao diện, bài học nằm trong apk).
 
 ## Các bản trước
 - Biểu tượng (icon) Nam Linh Educenter cho cả bản Windows và Android.
