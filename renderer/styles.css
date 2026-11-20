@@ -914,3 +914,13 @@ button.ghost:hover { background: var(--paper); }
 .g-timeline li { position: relative; display: flex; gap: 12px; padding: 6px 0 6px 16px; line-height: 1.55; }
 .g-timeline li::before { content: ''; position: absolute; left: -10px; top: 14px; width: 12px; height: 12px; border-radius: 50%; background: #fff; border: 3px solid var(--sky); }
 .g-tl-when { flex: none; min-width: 92px; font-weight: 800; color: var(--sky); }
+
+.solid3d-host { max-width: 520px; margin: 8px 0 12px; }
+.solid3d { position: relative; border: 1px solid var(--rule); border-radius: 12px; overflow: hidden; background: #f8fafc; touch-action: none; user-select: none; -webkit-user-select: none; cursor: grab; outline-offset: 2px; }
+.solid3d.dragging { cursor: grabbing; }
+.solid3d-svg { display: block; width: 100%; height: auto; }
+.solid3d-bar { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 6px 10px; border-top: 1px solid var(--rule); background: #fff; font-size: 13px; color: var(--mute); }
+.solid3d-reset { border: 1px solid var(--rule); background: #fff; border-radius: 8px; padding: 4px 10px; font: inherit; cursor: pointer; color: var(--sky); font-weight: 700; }
+.solid3d-reset:hover { background: var(--paper); }
+.pass-ok { color: #1a7f37; }
+.pass-bad { color: #c62828; }

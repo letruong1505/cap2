@@ -94,7 +94,7 @@ test('phụ huynh chưa bật thì không có dữ liệu; tắt rồi bật l�
   await progressSettings(db, { ...dev(code), enabled: true, goals: { daily: 30, weekend: 100, weekly: 4 } }, NOW);
   await progressPush(db, { ...dev(code), days: [row('2026-11-17', 'toan', 9, 'A', 4, 5)] }, NOW);
   const on = await view(db, code);
-  assert.deepEqual(on.goals, { daily: 30, weekend: 100, weekly: 4 });
+  assert.deepEqual(on.goals, { daily: 30, weekend: 100, weekly: 4, pass: 80, passBy: {} });
   assert.equal(on.rows.length, 1);
   await progressSettings(db, { ...dev(code), enabled: false }, NOW); // tắt: phụ huynh không xem được nữa, dữ liệu cũ còn đó
   assert.deepEqual([(await view(db, code)).enabled, (await view(db, code)).rows.length], [false, 0]);
@@ -141,4 +141,14 @@ test('phụ huynh có nhiều đơn (cùng số điện thoại): nhập mã nà
   const v = await view(db, code);
   assert.deepEqual(v.codes, [code]);
   assert.deepEqual(v.courses.map((x) => x.grade), [9, 12]);
+});
+
+test('ngưỡng đạt của phụ huynh: lưu, làm sạch, phụ huynh xem được', async () => {
+  const { db, code } = await setup();
+  await progressSettings(db, { ...dev(code), enabled: true, goals: { daily: 30, weekend: 100, weekly: 4, pass: 85, passBy: { anh: 70, toan: 5, 'x y': 90 } } }, NOW);
+  await progressPush(db, { ...dev(code), days: [row('2026-11-17', 'toan', 9, 'A', 4, 5)] }, NOW);
+  const v = await view(db, code);
+  assert.deepEqual([v.goals.pass, v.goals.passBy], [85, { anh: 70 }]);
+  const bad = await progressSettings(db, { ...dev(code), goals: { daily: 30, weekend: 100, weekly: 4, pass: 999 } }, NOW);
+  assert.equal(bad.goals.pass, 100);
 });

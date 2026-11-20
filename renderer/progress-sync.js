@@ -9,7 +9,10 @@
   const DAY = 86400000;
   const MAX_DAYS = 120; // chỉ gửi 120 ngày gần nhất
   const MAX_ROWS = 1500; // khớp giới hạn của máy chủ
-  const DEFAULT_GOALS = { daily: 50, weekend: 80, weekly: 5 };
+  const DEFAULT_GOALS = { daily: 50, weekend: 80, weekly: 5, pass: 80, passBy: {} };
+  /* Ngưỡng đạt (%) của một môn: giống VungProgress.passFor. */
+  const passFor = (g, subject) => { g = g || DEFAULT_GOALS; return (g.passBy && g.passBy[subject]) || g.pass || 80; };
+  const markPass = (list, g) => { list.forEach((x) => { x.need = passFor(g, x.subject); x.passed = x.total > 0 && x.pct >= x.need; }); return list; };
   /* Mục tiêu số câu của một ngày: T7, CN dùng mục tiêu cuối tuần (giống VungProgress.goalFor). */
   const goalFor = (g, t) => { g = g || DEFAULT_GOALS; const wd = new Date(t).getDay(); return wd === 0 || wd === 6 ? (g.weekend || DEFAULT_GOALS.weekend) : (g.daily || DEFAULT_GOALS.daily); };
 
@@ -73,7 +76,8 @@
       c.correct += r.correct; c.total += r.total;
     });
     const subjects = Object.values(subj).map((x) => Object.assign(x, { wrong: x.total - x.correct, pct: pct(x) })).sort((a, b) => b.total - a.total);
-    const weak = Object.values(chap).filter((c) => c.total >= 5).map((c) => Object.assign(c, { pct: pct(c) })).filter((c) => c.pct < 70).sort((a, b) => a.pct - b.pct).slice(0, 5);
+    markPass(subjects, g);
+    const weak = Object.values(chap).filter((c) => c.total >= 5).map((c) => Object.assign(c, { pct: pct(c) })).filter((c) => c.pct < passFor(g, c.subject)).sort((a, b) => a.pct - b.pct).slice(0, 5);
     return {
       from, to, days, goals: g, subject, grade, correct, wrong: total - correct, total, pct: pct({ correct, total }),
       minutes: Math.round(seconds / 60), attempts, activeDays: days.filter((d) => d.total > 0).length, subjects, weak,
