@@ -14,7 +14,8 @@
   ],
   "win": {
     "target": "nsis",
-    "artifactName": "Nam-Linh-Educenter-Setup-${version}.exe"
+    "artifactName": "Nam-Linh-Educenter-Setup-${version}.exe",
+    "icon": "build/icon.ico"
   },
   "nsis": {
     "oneClick": false,
@@ -24,7 +25,9 @@
     "createStartMenuShortcut": true,
     "shortcutName": "Nam Linh Educenter",
     "uninstallDisplayName": "Nam Linh Educenter",
-    "deleteAppDataOnUninstall": false
+    "deleteAppDataOnUninstall": false,
+    "installerIcon": "build/icon.ico",
+    "uninstallerIcon": "build/icon.ico"
   },
   "publish": [
     {

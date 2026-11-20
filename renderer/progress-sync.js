@@ -135,6 +135,25 @@
   }
   const info = () => readState();
 
+  /* Khóa cấp trực tiếp (USB) chưa có trong hệ thống: khách nhập số điện thoại phụ huynh để đăng ký, rồi bật chia sẻ. */
+  function registerForm(box, msg, rerender) {
+    const h = (tag, attrs, ...kids) => { const n = document.createElement(tag); Object.entries(attrs || {}).forEach(([k, v]) => { if (v != null && v !== false) n.setAttribute(k, v); }); kids.forEach((k) => n.append(k)); return n; };
+    box.querySelectorAll('.reg-form').forEach((n) => n.remove());
+    const phone = h('input', { type: 'tel', maxlength: '14', placeholder: 'Số điện thoại phụ huynh', autocomplete: 'off', 'aria-label': 'Số điện thoại phụ huynh' });
+    const go = h('button', { type: 'button', class: 'primary' }, 'Đăng ký khóa và bật');
+    const form = h('div', { class: 'reg-form' }, h('p', { class: 'meta' }, 'Khóa của máy này được cấp trực tiếp nên chưa có trong hệ thống. Nhập số điện thoại phụ huynh để đăng ký; phụ huynh dùng số này (và mã khóa) để xem kết quả trên điện thoại.'), h('div', { class: 'license-form' }, phone, go));
+    go.addEventListener('click', async () => {
+      const p = phone.value.replace(/[\s.\-]/g, '');
+      if (!/^(0|\+84)\d{9}$/.test(p)) { msg.textContent = 'Kiểm tra lại số điện thoại.'; return; }
+      msg.textContent = 'Đang đăng ký...';
+      const r = await bridge().registerLegacy({ phone: p });
+      if (!r.ok) { msg.textContent = r.offline ? 'Không có mạng. Thử lại khi có mạng.' : (r.error || 'Chưa đăng ký được.'); return; }
+      const e = await enable();
+      if (e.ok) rerender(); else msg.textContent = e.error || 'Đã đăng ký khóa nhưng chưa bật được. Thử bật lại.';
+    });
+    msg.before(form);
+  }
+
   /* Hộp bật/tắt trong màn hình báo cáo. guard(title, text, nhãn) trả về Promise<boolean> (hỏi lại mã PIN nếu có). */
   function renderBox(box, rerender) {
     const h = (tag, attrs, ...kids) => { const n = document.createElement(tag); Object.entries(attrs || {}).forEach(([k, v]) => { if (v != null && v !== false) n.setAttribute(k, v); }); kids.forEach((k) => n.append(k)); return n; };
@@ -165,7 +184,10 @@
       const on = h('button', { type: 'button', class: 'primary' }, 'Bật cho phụ huynh xem trên điện thoại');
       on.addEventListener('click', async () => {
         if (!await guard('Bật cho phụ huynh xem?', 'Nhập mã PIN hiện tại để bật chia sẻ bản tóm tắt học tập.', 'Bật')) return;
-        const r = await run('Đang bật...', enable); if (r.ok) rerender(); else msg.textContent = r.offline ? 'Không có mạng. Thử lại khi có mạng.' : (r.error || 'Chưa bật được.');
+        const r = await run('Đang bật...', enable);
+        if (r.ok) rerender();
+        else if (/không tìm thấy đơn/i.test(r.error || '') && bridge().registerLegacy) registerForm(box, msg, rerender);
+        else msg.textContent = r.offline ? 'Không có mạng. Thử lại khi có mạng.' : (r.error || 'Chưa bật được.');
       });
       box.append(on);
     }

@@ -66,6 +66,12 @@ function pingCodes(dir, now = new Date(), pubKey) {
   return readStore(dir).keys.map((k) => evaluateKey(k, machineId, now, pubKey)).filter((r) => r.status === 'ok' && /^NL-[A-Z0-9]{6}$/.test(r.id)).map((r) => r.id.slice(3));
 }
 
+// Khóa đang hợp lệ trên máy này có mã dạng NL-xxxxxx (khóa cấp bằng USB chưa có trong hệ thống đơn hàng sẽ được khách tự đăng ký).
+function registrableKeys(dir, now = new Date(), pubKey) {
+  const machineId = getMachineId();
+  return readStore(dir).keys.filter((k) => { const r = evaluateKey(k, machineId, now, pubKey); return r.status === 'ok' && /^NL-[A-Z0-9]{6}$/.test(r.id); });
+}
+
 // Cập nhật danh sách mã đơn bị thu hồi từ máy chủ. Trả về true nếu có thay đổi.
 function setRevoked(dir, codes, items) {
   const next = [...new Set((codes || []).filter((c) => typeof c === 'string'))].sort();
@@ -108,4 +114,4 @@ function annotateManifest(license, subject, manifest) {
   return out;
 }
 
-module.exports = { currentLicense, activate, deactivate, pingCodes, setRevoked, canOpen, annotateManifest, hasGrade, MAX_FREE_LESSONS };
+module.exports = { currentLicense, activate, deactivate, pingCodes, registrableKeys, setRevoked, canOpen, annotateManifest, hasGrade, MAX_FREE_LESSONS };
