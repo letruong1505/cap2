@@ -96,7 +96,7 @@ test('điểm: thang 10 và điểm thưởng', () => {
 
 test('mục tiêu: tiến độ ngày/tuần, điểm ôn sổ, lọc lớp, giới hạn đặt mục tiêu', () => {
   const d = P.load(null);
-  assert.deepEqual(d.goals, { daily: 20, weekly: 5 });
+  assert.deepEqual(d.goals, { daily: 50, weekend: 80, weekly: 5 });
   P.recordAttempt(d, meta({ correct: 9, total: 10 }), [item('q1')], [], T0);
   P.recordAttempt(d, meta({ grade: 8, lessonId: 'toan8/a', correct: 5, total: 5 }), [], [], T0 + 2 * DAY);
   P.grade(d, d.notebook[0].key, true, T0 + 2 * DAY);
@@ -108,7 +108,7 @@ test('mục tiêu: tiến độ ngày/tuần, điểm ôn sổ, lọc lớp, gi�
   p = P.progress(d, T0 + 2 * DAY, 8);
   assert.equal(p.totalPts, 70);
   P.setGoals(d, { daily: 9999, weekly: 0 });
-  assert.deepEqual(d.goals, { daily: 200, weekly: 1 });
+  assert.deepEqual(d.goals, { daily: 200, weekend: 80, weekly: 1 });
   assert.equal(P.weekly(d, T0 + 2 * DAY).prog.weekPts, 185);
 });
 
@@ -139,4 +139,21 @@ test('report: theo khoảng ngày, lọc môn, đếm đúng/sai từng ngày', 
   assert.equal(m.days.length, 1); assert.equal(m.total, 10); assert.equal(m.subjects.length, 1);
   assert.equal(P.report(d, { from: T, to: T, subject: 'anh' }, T).total, 0);
   assert.equal(P.progress(d, T).todayCorrect, 7);
+});
+
+test('mục tiêu theo ngày: T2–T6 dùng mục tiêu ngày thường, T7 và CN dùng mục tiêu cuối tuần', () => {
+  const sat = new Date(2026, 10, 21, 10).getTime(); // thứ 7
+  const fri = sat - DAY; const sun = sat + DAY; const mon = sun + DAY;
+  const d = P.load(null);
+  P.setGoals(d, { daily: 50, weekend: 80, weekly: 5 });
+  assert.deepEqual([fri, sat, sun, mon].map((t) => P.goalFor(d.goals, t)), [50, 80, 80, 50]);
+  P.recordAttempt(d, meta({ correct: 50, total: 50 }), [], [], fri);
+  P.recordAttempt(d, meta({ correct: 60, total: 60 }), [], [], sat);
+  const r = P.report(d, { from: fri, to: sat }, sat);
+  assert.deepEqual(r.days.map((x) => x.reached), [true, false]); // T6 đủ 50; T7 mới 60/80
+  assert.equal(P.progress(d, sat).todayGoal, 80);
+  assert.equal(P.progress(d, fri).todayGoal, 50);
+  // dữ liệu cũ chưa có mục tiêu cuối tuần: dùng mặc định 80
+  const old = P.setGoals({}, { daily: 20, weekly: 5 });
+  assert.deepEqual(old.goals, { daily: 20, weekend: 80, weekly: 5 });
 });

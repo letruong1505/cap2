@@ -230,44 +230,113 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 1 nói về cuộc sống gia đình, việc nhà và trách nhiệm của từng thành viên. Ngữ pháp trọng tâm: thì hiện tại đơn và hiện tại tiếp diễn."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Hiện tại đơn: {k thói quen, sự thật} (always, usually, every day). Hiện tại tiếp diễn: {k đang diễn ra} (now, at the moment). Động từ trạng thái {k không dùng -ing}."
     },
     {
       "type": "text",
-      "content": "1. Hiện tại đơn diễn tả thói quen, việc làm thường xuyên hoặc sự thật hiển nhiên. Dùng với các trạng từ tần suất (always, usually, often, every day)."
+      "content": "Unit 1 nói về cuộc sống gia đình, việc nhà và trách nhiệm của từng thành viên."
     },
     {
-      "type": "formula",
-      "content": "S + V (s/es)        S + do/does not + V        Do/Does + S + V?"
+      "type": "card",
+      "n": 1,
+      "title": "Hiện tại đơn",
+      "text": "Diễn tả thói quen, việc làm thường xuyên hoặc sự thật hiển nhiên.",
+      "formulas": [
+        "{s S} + {v V(s/es)}",
+        "{s S} + {c do/does not} + {v V}",
+        "{c Do/Does} + {s S} + {v V}?"
+      ],
+      "examples": [
+        {
+          "en": "My mother usually {v does} the cooking.",
+          "vi": "Mẹ tôi thường nấu ăn."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "Ví dụ: My mother usually does the cooking. (việc làm thường xuyên)"
+      "type": "card",
+      "n": 2,
+      "title": "Hiện tại tiếp diễn",
+      "text": "Diễn tả hành động đang diễn ra ngay lúc nói, hoặc việc đang diễn ra trong giai đoạn hiện tại.",
+      "formulas": [
+        "{s S} + {c am/is/are} + {v V-ing}",
+        "{s S} + {c am/is/are not} + {v V-ing}",
+        "{c Am/Is/Are} + {s S} + {v V-ing}?"
+      ],
+      "examples": [
+        {
+          "en": "She {c is} {v studying} for her exams now.",
+          "vi": "Bây giờ cô ấy đang ôn thi."
+        }
+      ],
+      "try": {
+        "q": "Listen! The baby ___.",
+        "options": [
+          "is crying",
+          "cries",
+          "cried"
+        ],
+        "answer": 0,
+        "explain": "Listen! → đang diễn ra."
+      }
     },
     {
-      "type": "text",
-      "content": "2. Hiện tại tiếp diễn diễn tả hành động đang diễn ra ngay lúc nói, hoặc một việc đang diễn ra trong giai đoạn hiện tại."
+      "type": "card",
+      "n": 3,
+      "title": "Dấu hiệu nhận biết",
+      "table": {
+        "head": [
+          "Thì",
+          "Dấu hiệu"
+        ],
+        "rows": [
+          [
+            "Hiện tại đơn",
+            "always, usually, every day"
+          ],
+          [
+            "Hiện tại tiếp diễn",
+            "now, at the moment, right now, look!, listen!"
+          ]
+        ]
+      }
     },
     {
-      "type": "formula",
-      "content": "S + am/is/are + V-ing        S + am/is/are not + V-ing        Am/Is/Are + S + V-ing?"
+      "type": "card",
+      "n": 4,
+      "title": "Động từ trạng thái",
+      "text": "Like, love, need, want, know, agree… không dùng ở tiếp diễn.",
+      "wrong": "I am knowing the answer.",
+      "right": "I {k know} the answer.",
+      "why": "know là động từ trạng thái."
     },
     {
-      "type": "text",
-      "content": "Ví dụ: She is studying for her exams now. (hành động đang diễn ra lúc nói)"
-    },
-    {
-      "type": "text",
-      "content": "3. Lưu ý: không dùng hiện tại tiếp diễn với động từ chỉ trạng thái như like, love, need, want, know, agree. Ta nói “I know the answer” chứ không nói “I am knowing the answer”."
-    },
-    {
-      "type": "text",
-      "content": "4. Dấu hiệu nhận biết: hiện tại đơn có always, usually, every day; hiện tại tiếp diễn có now, at the moment, right now, look!, listen!"
-    },
-    {
-      "type": "text",
-      "content": "5. Phát âm: các cụm phụ âm /br/ (breadwinner, breakfast), /kr/ (crash, cream), /tr/ (train, tree). Đặt lưỡi và môi nhanh để hai phụ âm liền nhau trong một âm tiết."
+      "type": "card",
+      "n": 5,
+      "title": "Phát âm cụm phụ âm",
+      "table": {
+        "head": [
+          "Cụm",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "/br/",
+            "breadwinner, breakfast"
+          ],
+          [
+            "/kr/",
+            "crash, cream"
+          ],
+          [
+            "/tr/",
+            "train, tree"
+          ]
+        ]
+      },
+      "tip": "Đặt lưỡi và môi nhanh để hai phụ âm liền nhau trong một âm tiết."
     }
   ],
   "examples": [],

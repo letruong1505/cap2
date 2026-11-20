@@ -205,36 +205,151 @@
   },
   "theory": [
     {
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Love, like, enjoy, hate… + {k V-ing}. Chỉ {k love, like, hate, prefer} mới đi được với {k to V}."
+    },
+    {
       "type": "text",
       "content": "Unit 1 nói về thời gian rảnh và các hoạt động giải trí. Ngữ pháp trọng tâm: động từ chỉ sự yêu thích hoặc không thích đi với V-ing hoặc to V."
     },
     {
-      "type": "text",
-      "content": "1. Các động từ love, like, enjoy, fancy, adore, hate, detest, dislike, don’t mind, prefer đi với V-ing khi nói về một hoạt động nói chung."
+      "type": "card",
+      "n": 1,
+      "title": "Động từ yêu / ghét + V-ing",
+      "text": "Dùng V-ing khi nói về một hoạt động nói chung.",
+      "formulas": [
+        "S + {k love / like / enjoy / fancy / hate / detest / don’t mind} + {v V-ing}"
+      ],
+      "table": {
+        "head": [
+          "Nhóm",
+          "Động từ"
+        ],
+        "rows": [
+          [
+            "Thích",
+            "love, like, enjoy, fancy, adore"
+          ],
+          [
+            "Không thích",
+            "hate, detest, dislike"
+          ],
+          [
+            "Không phiền",
+            "don’t mind"
+          ],
+          [
+            "Thích hơn",
+            "prefer"
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "en": "I enjoy {v doing} DIY projects.",
+          "vi": "Tôi thích tự làm đồ thủ công."
+        },
+        {
+          "en": "She detests {v playing} video games.",
+          "vi": "Cô ấy rất ghét chơi trò chơi điện tử."
+        },
+        {
+          "en": "Do you fancy {v going} to the cinema?",
+          "vi": "Bạn có muốn đi xem phim không?"
+        },
+        {
+          "en": "He doesn’t mind {v helping} me.",
+          "vi": "Anh ấy không ngại giúp tôi."
+        }
+      ],
+      "try": {
+        "q": "She detests ___ video games.",
+        "options": [
+          "playing",
+          "to play",
+          "play"
+        ],
+        "answer": 0,
+        "explain": "“detest” chỉ đi với V-ing."
+      }
     },
     {
-      "type": "formula",
-      "content": "S + love / like / enjoy / fancy / hate / detest / don’t mind + V-ing"
+      "type": "card",
+      "n": 2,
+      "title": "Love, like, hate, prefer + to V",
+      "text": "Bốn động từ này có thể đi với to V, nghĩa gần như không đổi.",
+      "formulas": [
+        "S + {k love / like / hate / prefer} + {v to V}   (= V-ing)"
+      ],
+      "examples": [
+        {
+          "en": "I like {v to read} in the evening.",
+          "vi": "Tôi thích đọc sách vào buổi tối."
+        },
+        {
+          "en": "I like {v reading} in the evening.",
+          "vi": "Cùng nghĩa với câu trên."
+        }
+      ],
+      "wrong": "He enjoys to read comics.",
+      "right": "He enjoys {v reading} comics.",
+      "why": "Chỉ enjoy, fancy, detest, dislike, don’t mind CHỈ đi với V-ing, không đi với to V.",
+      "tip": "Nhớ nhóm “chỉ V-ing”: enjoy, fancy, detest, dislike, don’t mind."
     },
     {
-      "type": "text",
-      "content": "Ví dụ: I enjoy doing DIY projects. She detests playing video games. Do you fancy going to the cinema? He doesn’t mind helping me."
-    },
-    {
-      "type": "text",
-      "content": "2. Một số động từ love, like, hate, prefer cũng có thể đi với to V, nghĩa gần như không đổi: I like to read in the evening. = I like reading in the evening. Riêng enjoy, fancy, detest, dislike, don’t mind CHỈ đi với V-ing."
-    },
-    {
-      "type": "formula",
-      "content": "S + love / like / hate / prefer + to V   (= V-ing)"
-    },
-    {
-      "type": "text",
-      "content": "3. Tính từ chỉ sở thích: be fond of, be keen on, be crazy about, be interested in + V-ing hoặc danh từ: My sister is keen on making bracelets. I’m crazy about snowboarding."
-    },
-    {
-      "type": "text",
-      "content": "4. Lưu ý: không nói enjoy to do hay fancy to go. Sau giới từ (of, on, about, in) luôn là V-ing. Nói prefer A to B hoặc prefer doing A to doing B."
+      "type": "card",
+      "n": 3,
+      "title": "Tính từ chỉ sở thích",
+      "text": "Đi với V-ing hoặc danh từ. Sau giới từ (of, on, about, in) luôn là V-ing.",
+      "table": {
+        "head": [
+          "Cụm",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "be fond of",
+            "thích"
+          ],
+          [
+            "be keen on",
+            "đam mê"
+          ],
+          [
+            "be crazy about",
+            "mê mẩn"
+          ],
+          [
+            "be interested in",
+            "quan tâm đến"
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "en": "My sister is {k keen on} {v making} bracelets.",
+          "vi": "Chị tôi đam mê làm vòng tay."
+        },
+        {
+          "en": "I’m {k crazy about} {v snowboarding}.",
+          "vi": "Tôi mê trượt ván tuyết."
+        }
+      ],
+      "wrong": "I’m crazy about to snowboard.",
+      "right": "I’m crazy about {v snowboarding}.",
+      "why": "Sau giới từ luôn dùng V-ing.",
+      "tip": "Nói prefer A to B hoặc prefer doing A to doing B. Không nói enjoy to do hay fancy to go.",
+      "try": {
+        "q": "She is interested ___ learning English.",
+        "options": [
+          "in",
+          "on",
+          "to"
+        ],
+        "answer": 0,
+        "explain": "be interested in + V-ing."
+      }
     }
   ],
   "examples": [],

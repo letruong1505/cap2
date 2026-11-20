@@ -230,36 +230,95 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 2 nói về khoảng cách thế hệ trong gia đình. Ngữ pháp trọng tâm: must, have to và should."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "{k must}: nghĩa vụ từ người nói; {k mustn’t}: cấm. {k have to}: nghĩa vụ từ bên ngoài; {k don’t have to}: không cần. {k should}: lời khuyên."
     },
     {
       "type": "text",
-      "content": "1. Must diễn tả nghĩa vụ hoặc quy định do người nói đặt ra; mustn’t diễn tả điều bị cấm."
+      "content": "Unit 2 nói về khoảng cách thế hệ trong gia đình."
     },
     {
-      "type": "formula",
-      "content": "S + must + V (nguyên mẫu)        S + mustn’t + V (cấm)"
+      "type": "card",
+      "n": 1,
+      "title": "Must và mustn’t",
+      "text": "Must diễn tả nghĩa vụ hoặc quy định do người nói đặt ra; mustn’t diễn tả điều bị cấm.",
+      "formulas": [
+        "{s S} + {c must / mustn’t} + {v V}"
+      ],
+      "examples": [
+        {
+          "en": "You {c mustn’t} {v smoke} here.",
+          "vi": "Bạn không được hút thuốc ở đây."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "2. Have to diễn tả nghĩa vụ do hoàn cảnh hoặc luật lệ bên ngoài. Don’t have to diễn tả điều không cần thiết (không bị bắt buộc)."
+      "type": "card",
+      "n": 2,
+      "title": "Have to và don’t have to",
+      "text": "Have to là nghĩa vụ do hoàn cảnh hoặc luật lệ bên ngoài. Don’t have to là không cần thiết.",
+      "formulas": [
+        "{s S} + {c have/has to} + {v V}",
+        "{s S} + {c don’t/doesn’t have to} + {v V}"
+      ],
+      "examples": [
+        {
+          "en": "You {c don’t have to} {v bring} food.",
+          "vi": "Bạn không cần mang đồ ăn."
+        }
+      ],
+      "try": {
+        "q": "You ___ park here. It’s forbidden.",
+        "options": [
+          "mustn’t",
+          "don’t have to",
+          "shouldn’t have to"
+        ],
+        "answer": 0,
+        "explain": "Cấm → mustn’t."
+      }
     },
     {
-      "type": "formula",
-      "content": "S + have/has to + V        S + don’t/doesn’t have to + V"
+      "type": "card",
+      "n": 3,
+      "title": "Should",
+      "text": "Lời khuyên, điều nên hoặc không nên làm.",
+      "examples": [
+        {
+          "en": "You {c should} {v talk} to your parents.",
+          "vi": "Bạn nên nói chuyện với bố mẹ."
+        },
+        {
+          "en": "You {c shouldn’t} {v ignore} them.",
+          "vi": "Bạn không nên phớt lờ họ."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "3. Should diễn tả lời khuyên, điều nên làm hoặc không nên làm: You should talk to your parents. You shouldn’t ignore them."
-    },
-    {
-      "type": "text",
-      "content": "4. Dạng rút gọn (contracted forms): mustn’t, shouldn’t, don’t, I’m, they’re. Khi nói, người bản ngữ thường rút gọn; cần nhận ra chúng khi nghe."
-    },
-    {
-      "type": "text",
-      "content": "5. Lưu ý: mustn’t (cấm) khác với don’t have to (không cần). Ví dụ: You mustn’t smoke here. (cấm) / You don’t have to bring food. (không cần)"
+      "type": "card",
+      "n": 4,
+      "title": "Mustn’t và don’t have to",
+      "table": {
+        "head": [
+          "Cấu trúc",
+          "Nghĩa",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "mustn’t",
+            "cấm",
+            "You mustn’t smoke here."
+          ],
+          [
+            "don’t have to",
+            "không cần",
+            "You don’t have to bring food."
+          ]
+        ]
+      },
+      "tip": "Khi nghe, nhận ra các dạng rút gọn: mustn’t, shouldn’t, don’t, I’m, they’re."
     }
   ],
   "examples": [],

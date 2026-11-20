@@ -181,32 +181,131 @@
   },
   "theory": [
     {
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Câu phức = mệnh đề chính + mệnh đề thời gian ({k when, while, before, after, until, as soon as…}). Nói về tương lai: mệnh đề thời gian dùng {k hiện tại đơn}."
+    },
+    {
       "type": "text",
       "content": "Unit 7 nói về bảo vệ môi trường. Ngữ pháp trọng tâm: câu phức với mệnh đề trạng ngữ chỉ thời gian (when, while, before, after, until, as soon as, once, whenever)."
     },
     {
-      "type": "text",
-      "content": "1. Câu phức gồm một mệnh đề chính và một mệnh đề phụ bắt đầu bằng liên từ phụ thuộc. Mệnh đề thời gian có thể đứng trước (có dấu phẩy) hoặc sau mệnh đề chính (không dấu phẩy)."
+      "type": "card",
+      "n": 1,
+      "title": "Câu phức với mệnh đề thời gian",
+      "text": "Mệnh đề thời gian có thể đứng trước (có dấu phẩy) hoặc sau mệnh đề chính (không dấu phẩy).",
+      "formulas": [
+        "{c When / While / Before / After / Until / As soon as} + S + V, S + V.",
+        "S + V + {c when / …} + S + V."
+      ],
+      "examples": [
+        {
+          "en": "{c When} we burn coal, we release carbon dioxide.",
+          "vi": "Khi đốt than, chúng ta thải ra khí các-bon đi-ô-xít."
+        },
+        {
+          "en": "Turn off the tap {c while} you brush your teeth.",
+          "vi": "Tắt vòi nước trong khi bạn đánh răng."
+        },
+        {
+          "en": "We will plant trees {c after} the rain stops.",
+          "vi": "Chúng tôi sẽ trồng cây sau khi mưa tạnh."
+        },
+        {
+          "en": "Don’t throw rubbish into the river {c until} you find a bin.",
+          "vi": "Đừng vứt rác xuống sông cho đến khi tìm được thùng rác."
+        }
+      ]
     },
     {
-      "type": "formula",
-      "content": "When / While / Before / After / Until / As soon as + S + V, S + V.      S + V + when / … + S + V."
+      "type": "card",
+      "n": 2,
+      "title": "Nghĩa của từng liên từ",
+      "table": {
+        "head": [
+          "Liên từ",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "when",
+            "khi"
+          ],
+          [
+            "while",
+            "trong khi (hai việc cùng lúc)"
+          ],
+          [
+            "before",
+            "trước khi"
+          ],
+          [
+            "after",
+            "sau khi"
+          ],
+          [
+            "until / till",
+            "cho đến khi"
+          ],
+          [
+            "as soon as",
+            "ngay khi"
+          ],
+          [
+            "once",
+            "một khi"
+          ],
+          [
+            "whenever",
+            "bất cứ khi nào"
+          ],
+          [
+            "since",
+            "kể từ khi"
+          ]
+        ]
+      },
+      "try": {
+        "q": "Turn off the lights ___ you leave the room.",
+        "options": [
+          "before",
+          "until",
+          "while"
+        ],
+        "answer": 0,
+        "explain": "before = trước khi."
+      }
     },
     {
-      "type": "text",
-      "content": "Ví dụ: When we burn coal, we release carbon dioxide. Turn off the tap while you brush your teeth. We will plant trees after the rain stops. Don’t throw rubbish into the river until you find a bin."
+      "type": "card",
+      "n": 3,
+      "title": "Nói về tương lai: không dùng will",
+      "text": "Mệnh đề thời gian dùng hiện tại đơn, dù mệnh đề chính nói về tương lai.",
+      "examples": [
+        {
+          "en": "{c As soon as} the storm {v ends}, residents will clean the beach.",
+          "vi": "Ngay khi bão tan, người dân sẽ dọn bãi biển."
+        }
+      ],
+      "wrong": "As soon as the storm will end, residents will clean the beach.",
+      "right": "As soon as the storm {v ends}, residents will clean the beach.",
+      "why": "Không dùng will trong mệnh đề thời gian."
     },
     {
-      "type": "text",
-      "content": "2. Nghĩa của từng liên từ: when (khi), while (trong khi, hai việc cùng lúc), before (trước khi), after (sau khi), until / till (cho đến khi), as soon as (ngay khi), once (một khi), whenever (bất cứ khi nào), since (kể từ khi)."
-    },
-    {
-      "type": "text",
-      "content": "3. Khi nói về tương lai, mệnh đề thời gian dùng hiện tại đơn, không dùng will: As soon as the storm ends, residents will clean the beach. (không viết as soon as the storm will end)."
-    },
-    {
-      "type": "text",
-      "content": "4. While thường đi với thì tiếp diễn cho hành động đang diễn ra: While I was walking on the beach, I saw a lot of plastic. Khi hai mệnh đề cùng chủ ngữ, có thể rút gọn: Before leaving, turn off the lights."
+      "type": "card",
+      "n": 4,
+      "title": "While và rút gọn mệnh đề",
+      "text": "While thường đi với thì tiếp diễn cho hành động đang diễn ra. Khi hai mệnh đề cùng chủ ngữ, có thể rút gọn.",
+      "examples": [
+        {
+          "en": "{c While} I {v was walking} on the beach, I saw a lot of plastic.",
+          "vi": "Trong lúc đi dạo trên bãi biển, tôi thấy rất nhiều rác nhựa."
+        },
+        {
+          "en": "{c Before} {v leaving}, turn off the lights.",
+          "vi": "Trước khi đi, hãy tắt đèn."
+        }
+      ]
     }
   ],
   "examples": [],

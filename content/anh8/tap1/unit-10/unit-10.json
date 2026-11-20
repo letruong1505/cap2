@@ -199,32 +199,185 @@
   },
   "theory": [
     {
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Giới từ: {k at} (giờ, địa điểm cụ thể), {k on} (thứ, ngày, bề mặt / màn hình), {k in} (tháng, năm, bên trong). Đại từ sở hữu: {k mine, yours, his, hers, ours, theirs}."
+    },
+    {
       "type": "text",
       "content": "Unit 10 nói về cách con người giao tiếp trong tương lai. Ngữ pháp trọng tâm: ôn và mở rộng giới từ chỉ nơi chốn, thời gian và đại từ sở hữu."
     },
     {
-      "type": "text",
-      "content": "1. Giới từ thời gian: at + giờ, at night, at the weekend, at the moment; on + thứ, ngày, on Monday morning; in + tháng, năm, mùa, buổi, in the future, in 2050, in five minutes (sau 5 phút nữa); by + mốc hạn (by 2030: trước hoặc đúng năm 2030); from … to …; during + khoảng thời gian (during the meeting)."
+      "type": "card",
+      "n": 1,
+      "title": "Giới từ chỉ thời gian",
+      "table": {
+        "head": [
+          "Giới từ",
+          "Dùng với",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "at",
+            "giờ, at night, at the weekend, at the moment",
+            "at 7 o’clock"
+          ],
+          [
+            "on",
+            "thứ, ngày",
+            "on Monday morning"
+          ],
+          [
+            "in",
+            "tháng, năm, mùa, buổi; in + khoảng thời gian (sau bao lâu)",
+            "in the future, in 2050, in five minutes"
+          ],
+          [
+            "by",
+            "mốc hạn: trước hoặc đúng lúc",
+            "by 2030"
+          ],
+          [
+            "from … to …",
+            "từ … đến …",
+            "from 8 to 10"
+          ],
+          [
+            "during",
+            "trong suốt một khoảng thời gian",
+            "during the meeting"
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "en": "We will talk {k in} five minutes.",
+          "vi": "Chúng ta sẽ nói chuyện sau 5 phút nữa."
+        },
+        {
+          "en": "Robots will do most jobs {k by} 2030.",
+          "vi": "Đến năm 2030, rô-bốt sẽ làm hầu hết các công việc."
+        }
+      ],
+      "try": {
+        "q": "The meeting starts ___ Monday morning.",
+        "options": [
+          "on",
+          "in",
+          "at"
+        ],
+        "answer": 0,
+        "explain": "Thứ và ngày dùng on."
+      }
     },
     {
-      "type": "text",
-      "content": "2. Giới từ nơi chốn: in (bên trong, thành phố, nước): in the chat room, in Việt Nam; on (bề mặt, màn hình, mạng): on the screen, on the Internet, on social media, on the phone; at (địa điểm cụ thể): at home, at school, at the conference; các giới từ vị trí: in front of, behind, next to, between, opposite, above, under, near."
+      "type": "card",
+      "n": 2,
+      "title": "Giới từ chỉ nơi chốn",
+      "table": {
+        "head": [
+          "Giới từ",
+          "Dùng với",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "in",
+            "bên trong, thành phố, nước",
+            "in the chat room, in Việt Nam"
+          ],
+          [
+            "on",
+            "bề mặt, màn hình, mạng",
+            "on the screen, on the Internet, on social media, on the phone"
+          ],
+          [
+            "at",
+            "địa điểm cụ thể",
+            "at home, at school, at the conference"
+          ]
+        ]
+      },
+      "formulas": [
+        "{k on} the screen / the Internet / the phone / social media",
+        "{k in} the chat room / a video call",
+        "{k at} home / the meeting"
+      ],
+      "tip": "Giới từ vị trí khác: in front of, behind, next to, between, opposite, above, under, near."
     },
     {
-      "type": "formula",
-      "content": "on the screen / on the Internet / on the phone / on social media       in the chat room / in a video call       at home / at the meeting"
+      "type": "card",
+      "n": 3,
+      "title": "Đại từ sở hữu",
+      "text": "Thay cho tính từ sở hữu + danh từ, để tránh lặp.",
+      "table": {
+        "head": [
+          "Tính từ sở hữu + danh từ",
+          "Đại từ sở hữu"
+        ],
+        "rows": [
+          [
+            "my phone",
+            "mine"
+          ],
+          [
+            "your account",
+            "yours"
+          ],
+          [
+            "his / her tablet",
+            "his / hers"
+          ],
+          [
+            "our connection",
+            "ours"
+          ],
+          [
+            "their webcam",
+            "theirs"
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "en": "This tablet is {k mine}; that one is {k hers}.",
+          "vi": "Chiếc máy tính bảng này của tôi; chiếc kia của cô ấy."
+        },
+        {
+          "en": "A friend of {k mine} texted me.",
+          "vi": "Một người bạn của tôi đã nhắn tin cho tôi."
+        }
+      ],
+      "wrong": "This is mine phone.",
+      "right": "This is {k my} phone. / This phone is {k mine}.",
+      "why": "Đại từ sở hữu không đứng trước danh từ.",
+      "try": {
+        "q": "This laptop isn’t ___. It belongs to my sister.",
+        "options": [
+          "mine",
+          "my",
+          "me"
+        ],
+        "answer": 0,
+        "explain": "Đại từ sở hữu đứng một mình: mine."
+      }
     },
     {
-      "type": "text",
-      "content": "3. Đại từ sở hữu thay cho tính từ sở hữu + danh từ: mine, yours, his, hers, its, ours, theirs. Dùng để tránh lặp: This tablet is mine; that one is hers. A friend of mine texted me (một người bạn của tôi)."
-    },
-    {
-      "type": "formula",
-      "content": "my phone → mine     your account → yours     their webcam → theirs     our connection → ours"
-    },
-    {
-      "type": "text",
-      "content": "4. Lưu ý: không viết it’s cho sở hữu (it’s = it is); không dùng đại từ sở hữu trước danh từ (mine phone là sai). Nói on time (đúng giờ) và in time (kịp lúc)."
+      "type": "card",
+      "n": 4,
+      "title": "Lưu ý",
+      "examples": [
+        {
+          "en": "The dog wagged {k its} tail. / {k It’s} cold today.",
+          "vi": "its = của nó; it’s = it is."
+        },
+        {
+          "en": "Please arrive {k on time}. / We arrived {k in time} for the call.",
+          "vi": "on time = đúng giờ; in time = kịp lúc."
+        }
+      ],
+      "tip": "Không viết it’s để chỉ sở hữu: it’s = it is."
     }
   ],
   "examples": [],

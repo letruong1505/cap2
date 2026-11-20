@@ -1,12 +1,16 @@
 ## Bản mới
+- Kế hoạch học tập: mục tiêu số câu tách riêng thứ 2 đến thứ 6 (mặc định 50 câu/ngày) và cuối tuần (mặc định 80 câu/ngày, chọn tới 150); báo cáo và phần phụ huynh xem trên điện thoại tính đạt mục tiêu theo đúng từng ngày.
+- Mã đối tác giảm 100% cho những khóa được chọn: đơn 0 đồng tự kích hoạt, không cần quét mã thanh toán.
+- Tiếng Anh: lý thuyết lớp 6 đến 12 trình bày lại dạng thẻ dễ học (tóm tắt, công thức từng dòng, bảng, ví dụ có bản dịch và nút nghe đọc, lỗi hay gặp, câu hỏi thử nhanh).
+- Địa lí 11 (bài 4) và Lịch sử 11 (bài 5): lý thuyết dạng thẻ có bảng so sánh, trục thời gian, mẹo nhớ và câu hỏi thử nhanh (bài mẫu).
+
+## Các bản trước
 - Biểu tượng (icon) Nam Linh Educenter cho cả bản Windows và Android.
 - Khóa cấp trực tiếp (USB) tự đăng ký vào hệ thống bằng số điện thoại phụ huynh khi bật "Cho phụ huynh xem trên điện thoại".
 - Phụ huynh xem kết quả học của con trên điện thoại (tùy chọn, mặc định tắt): bật ở phần Báo cáo cho phụ huynh trên máy tính, xem theo ngày hoặc khoảng ngày bằng mã đơn và số điện thoại đã mua; chọn từng khóa hoặc tất cả.
 - Tắt hoặc đổi mã PIN phụ huynh phải nhập đúng mã PIN hiện tại.
 - Bản Android tự cập nhật: tự tải và dùng bản sửa lỗi ở lần mở sau, chỉ phải cài lại khi có thay đổi lớn.
 - Bản Android: nghe phát âm từ vựng tiếng Anh bằng giọng đọc của điện thoại.
-
-## Các bản trước
 - Một đơn dùng được cho 1 máy tính và 1 điện thoại; thêm mục "Đã mua ở thiết bị khác?" để nhận khóa bằng mã đơn và số điện thoại.
 - Làm đẹp giao diện: sửa lỗi trang Mua khóa học bị tràn đè lên khung Đơn hàng trên màn hình nhỏ, chỉnh ô nhập mã đối tác và khoảng cách các thẻ.
 - Cập nhật chính sách & điều khoản hoàn tiền: tính 7 ngày từ lúc thanh toán thành công, hoàn tiền theo số tiền sau khi giảm.

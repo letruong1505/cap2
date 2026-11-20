@@ -216,32 +216,148 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 2 nói về thế giới đa văn hoá. Ngữ pháp trọng tâm: ôn tập và mở rộng cách dùng mạo từ (articles): a, an, the và không dùng mạo từ."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "{k a / an}: lần đầu hoặc bất kỳ. {k the}: đã xác định, duy nhất, so sánh nhất, sông biển… {k Không mạo từ}: số nhiều / không đếm được nói chung."
     },
     {
       "type": "text",
-      "content": "1. A / an (mạo từ không xác định) dùng trước danh từ đếm được số ít khi nhắc đến lần đầu, hoặc nói về một người, vật bất kì. An đứng trước âm nguyên âm: an hour, an identity; a đứng trước âm phụ âm: a university, a European country."
+      "content": "Unit 2 nói về thế giới đa văn hoá."
     },
     {
-      "type": "text",
-      "content": "2. The (mạo từ xác định) dùng khi người nghe biết rõ đối tượng: đã nhắc đến trước đó, có cụm từ xác định đi kèm, vật duy nhất (the sun, the Internet), so sánh nhất, số thứ tự, tên sông, biển, dãy núi, quần đảo, quốc gia số nhiều (the Philippines, the United States)."
+      "type": "card",
+      "n": 1,
+      "title": "A / an",
+      "text": "Dùng trước danh từ đếm được số ít khi nhắc đến lần đầu, hoặc nói về một người, vật bất kì. An đứng trước âm nguyên âm, a đứng trước âm phụ âm.",
+      "table": {
+        "head": [
+          "Mạo từ",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "an (nguyên âm)",
+            "an hour, an identity"
+          ],
+          [
+            "a (phụ âm)",
+            "a university, a European country"
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "en": "I watched {c a} film about globalisation.",
+          "vi": "Tôi xem một bộ phim về toàn cầu hóa."
+        }
+      ],
+      "try": {
+        "q": "She works at ___ university.",
+        "options": [
+          "a",
+          "an",
+          "the"
+        ],
+        "answer": 0,
+        "explain": "university bắt đầu bằng âm /j/ (phụ âm)."
+      }
     },
     {
-      "type": "formula",
-      "content": "a/an + N đếm được số ít (lần đầu)        the + N đã xác định        Ø + N số nhiều / không đếm được nói chung"
+      "type": "card",
+      "n": 2,
+      "title": "The",
+      "text": "Dùng khi người nghe biết rõ đối tượng.",
+      "table": {
+        "head": [
+          "Trường hợp",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "Đã nhắc trước đó",
+            "a film … the film"
+          ],
+          [
+            "Có cụm xác định đi kèm",
+            "the city where I live"
+          ],
+          [
+            "Vật duy nhất",
+            "the sun, the Internet"
+          ],
+          [
+            "So sánh nhất, số thứ tự",
+            "the best, the first"
+          ],
+          [
+            "Sông, biển, dãy núi, quần đảo",
+            "the Mekong, the Alps"
+          ],
+          [
+            "Quốc gia số nhiều",
+            "the Philippines, the United States"
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "en": "{c The} film was very interesting.",
+          "vi": "Bộ phim ấy rất thú vị."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "3. Không dùng mạo từ (zero article) với danh từ số nhiều hoặc không đếm được khi nói chung (Culture is important.), tên bữa ăn, môn học, ngôn ngữ, môn thể thao, hầu hết tên nước, thành phố, đường phố (Viet Nam, Ha Noi, Tran Phu Street)."
+      "type": "card",
+      "n": 3,
+      "title": "Không dùng mạo từ (zero article)",
+      "text": "Với danh từ số nhiều hoặc không đếm được khi nói chung, tên bữa ăn, môn học, ngôn ngữ, môn thể thao, hầu hết tên nước, thành phố, đường phố.",
+      "formulas": [
+        "{k a/an} + N đếm được số ít (lần đầu)",
+        "{k the} + N đã xác định",
+        "{k Ø} + N số nhiều / không đếm được nói chung"
+      ],
+      "examples": [
+        {
+          "en": "{c Ø} Culture is important.",
+          "vi": "Văn hóa rất quan trọng."
+        },
+        {
+          "en": "{c Ø} Young people love Korean music.",
+          "vi": "Giới trẻ thích nhạc Hàn Quốc."
+        },
+        {
+          "en": "Mount Fansipan is in {c the} north of {c Ø} Viet Nam.",
+          "vi": "Núi Fansipan ở phía bắc Việt Nam."
+        }
+      ],
+      "wrong": "The culture is important.",
+      "right": "{c Ø} Culture is important.",
+      "why": "Nói chung chung thì không dùng the."
     },
     {
-      "type": "text",
-      "content": "4. Ví dụ: I watched a film about globalisation. The film was very interesting. Young people love Korean music. Mount Fansipan is in the north of Viet Nam."
-    },
-    {
-      "type": "text",
-      "content": "5. Phát âm: nguyên âm đôi /ɔɪ/ (enjoy, voice), /aɪ/ (life, identity) và /aʊ/ (how, about)."
+      "type": "card",
+      "n": 4,
+      "title": "Phát âm nguyên âm đôi /ɔɪ/, /aɪ/, /aʊ/",
+      "table": {
+        "head": [
+          "Âm",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "/ɔɪ/",
+            "enjoy, voice"
+          ],
+          [
+            "/aɪ/",
+            "life, identity"
+          ],
+          [
+            "/aʊ/",
+            "how, about"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],

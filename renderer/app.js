@@ -90,6 +90,98 @@ function methodBlock(m) {
   return wrap;
 }
 
+// Lý thuyết dạng thẻ (ngữ pháp, tiếng Anh): tóm tắt một dòng, mỗi ý một thẻ có công thức tô màu, bảng, ví dụ có phiên âm đọc, lỗi hay gặp và câu hỏi thử nhanh.
+// Chữ trong thẻ có thể đánh dấu màu: {s Teenagers} = chủ ngữ, {v face} = động từ, {c so} = liên từ, {k nội dung} = từ khóa.
+function richText(str) {
+  const frag = document.createDocumentFragment();
+  const re = /\{([svck]) ([^}]+)\}/g;
+  let last = 0; let m;
+  const text = String(str);
+  while ((m = re.exec(text))) {
+    if (m.index > last) frag.append(text.slice(last, m.index));
+    frag.append(el('span', { class: 'rt rt-' + m[1] }, m[2]));
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) frag.append(text.slice(last));
+  return frag;
+}
+
+function plainText(str) { return String(str).replace(/\{[svck] ([^}]+)\}/g, '$1'); }
+
+function speakEnglish(text) {
+  if (window.vungBai && typeof window.vungBai.speak === 'function') { window.vungBai.speak(text); return; }
+  if (!('speechSynthesis' in window)) return;
+  window.speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text); u.lang = 'en-US'; u.rate = 0.9;
+  const v = window.speechSynthesis.getVoices().find((x) => /^en[-_]/i.test(x.lang));
+  if (v) u.voice = v;
+  window.speechSynthesis.speak(u);
+}
+
+function tryBlock(t) {
+  const box = el('div', { class: 'g-try' }, el('p', { class: 'g-try-label' }, 'Thử ngay'), el('p', { class: 'g-try-q' }, richText(t.q)));
+  const res = el('p', { class: 'g-try-res', 'aria-live': 'polite' });
+  const row = el('div', { class: 'g-try-opts' });
+  t.options.forEach((o, i) => {
+    const b = el('button', { type: 'button', class: 'g-try-opt' }, o);
+    b.addEventListener('click', () => {
+      row.querySelectorAll('button').forEach((x) => { x.classList.remove('ok', 'no'); });
+      b.classList.add(i === t.answer ? 'ok' : 'no');
+      res.textContent = i === t.answer ? '✓ Đúng! ' + (t.explain || '') : '✗ Chưa đúng, thử lại nhé.' ;
+      res.className = 'g-try-res ' + (i === t.answer ? 'ok' : 'no');
+    });
+    row.append(b);
+  });
+  box.append(row, res);
+  return box;
+}
+
+function grammarCard(c) {
+  const card = el('section', { class: 'g-card' });
+  card.append(el('h3', { class: 'g-title' }, c.n ? el('span', { class: 'g-n' }, String(c.n)) : '', c.title));
+  if (c.text) card.append(el('p', { class: 'g-text' }, richText(c.text)));
+  (c.formulas || []).forEach((f) => card.append(el('div', { class: 'g-formula' }, richText(f))));
+  if (c.points && c.points.length) {
+    const ul = el('ul', { class: 'g-points' });
+    c.points.forEach((x) => ul.append(el('li', {}, richText(x))));
+    card.append(ul);
+  }
+  if (c.timeline && c.timeline.length) {
+    const ol = el('ol', { class: 'g-timeline' });
+    c.timeline.forEach((r) => ol.append(el('li', {}, el('span', { class: 'g-tl-when' }, richText(r[0])), el('span', { class: 'g-tl-what' }, richText(r[1])))));
+    card.append(ol);
+  }
+  if (c.table) {
+    const tb = el('table', { class: 'g-table' });
+    tb.append(el('tr', {}, ...c.table.head.map((x) => el('th', {}, x))));
+    c.table.rows.forEach((r) => tb.append(el('tr', {}, ...r.map((x, i) => el('td', {}, i === 0 ? el('b', {}, richText(x)) : richText(x))))));
+    card.append(el('div', { class: 'g-table-wrap' }, tb));
+  }
+  if (c.examples && c.examples.length) {
+    const ul = el('ul', { class: 'g-ex' });
+    c.examples.forEach((ex) => {
+      const sp = el('button', { type: 'button', class: 'g-speak', 'aria-label': 'Nghe câu', title: 'Nghe' }, '🔊');
+      sp.addEventListener('click', () => speakEnglish(plainText(ex.en)));
+      ul.append(el('li', {}, el('div', { class: 'g-en' }, sp, el('span', { class: 'g-en-t' }, richText(ex.en))), ex.vi ? el('div', { class: 'g-vi' }, ex.vi) : ''));
+    });
+    card.append(el('p', { class: 'g-sub' }, 'Ví dụ'), ul);
+  }
+  if (c.wrong) {
+    card.append(el('div', { class: 'g-pitfall' }, el('p', { class: 'g-pit-title' }, c.pitTitle || 'Lỗi hay gặp'),
+      el('p', { class: 'g-wrong' }, el('b', {}, c.wrongLabel || '✗ Sai: '), richText(c.wrong)),
+      el('p', { class: 'g-right' }, el('b', {}, c.rightLabel || '✓ Đúng: '), richText(c.right)),
+      c.why ? el('p', { class: 'g-why' }, c.why) : ''));
+  }
+  if (c.tip) card.append(el('p', { class: 'g-tip' }, el('b', {}, 'Mẹo nhớ: '), richText(c.tip)));
+  if (c.try) card.append(tryBlock(c.try));
+  if (c.collapse) {
+    const d = el('details', { class: 'g-more' }, el('summary', {}, c.collapse));
+    d.append(card);
+    return d;
+  }
+  return card;
+}
+
 function renderTheory(lesson) {
   const box = document.getElementById('theory');
   box.replaceChildren();
@@ -100,6 +192,10 @@ function renderTheory(lesson) {
       box.append(el('p', { class: 'formula' }, block.content));
     } else if (block.type === 'method') {
       box.append(methodBlock(block));
+    } else if (block.type === 'summary') {
+      box.append(el('div', { class: 'g-summary' }, el('p', { class: 'g-sum-label' }, block.label || 'Tóm tắt'), el('p', { class: 'g-sum-text' }, richText(block.content))));
+    } else if (block.type === 'card') {
+      box.append(grammarCard(block));
     } else {
       box.append(el('p', {}, block.content));
     }

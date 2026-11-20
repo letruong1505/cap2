@@ -217,32 +217,163 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 3 nói về tuổi thiếu niên: áp lực học tập, bạn bè, mạng xã hội. Ngữ pháp trọng tâm: câu đơn và câu ghép, ôn sâu hơn lớp 7 với các liên từ and, but, or, so và cặp liên từ."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Câu đơn = 1 mệnh đề. Câu ghép = 2 mệnh đề độc lập nối bằng {k dấu phẩy + liên từ} hoặc {k dấu chấm phẩy}."
     },
     {
       "type": "text",
-      "content": "1. Câu đơn có một mệnh đề độc lập. Chủ ngữ hoặc động từ có thể là cụm ghép mà câu vẫn là câu đơn: Nam and Hoa use social media. (hai chủ ngữ, một mệnh đề) I log on and check my messages. (một chủ ngữ, hai động từ)."
+      "content": "Unit 3 nói về tuổi thiếu niên: áp lực học tập, bạn bè, mạng xã hội. Ngữ pháp trọng tâm là câu đơn và câu ghép, ôn sâu hơn lớp 7 với các liên từ and, but, or, so và các cặp liên từ."
     },
     {
-      "type": "text",
-      "content": "2. Câu ghép có hai mệnh đề độc lập trở lên, nối bằng dấu phẩy + liên từ đẳng lập (and, but, or, so, yet) hoặc bằng dấu chấm phẩy."
+      "type": "card",
+      "n": 1,
+      "title": "Câu đơn (simple sentence)",
+      "text": "Chỉ có một mệnh đề độc lập. Chủ ngữ hoặc động từ có thể là cụm ghép mà câu vẫn là câu đơn.",
+      "formulas": [
+        "{s S} + {v V}."
+      ],
+      "examples": [
+        {
+          "en": "{s Nam and Hoa} {v use} social media.",
+          "vi": "Hai chủ ngữ nhưng chỉ một mệnh đề."
+        },
+        {
+          "en": "{s I} {v log on} and {v check} my messages.",
+          "vi": "Một chủ ngữ, hai động từ, vẫn là một mệnh đề."
+        }
+      ]
     },
     {
-      "type": "formula",
-      "content": "S + V, and / but / or / so / yet + S + V.        S + V; S + V."
+      "type": "card",
+      "n": 2,
+      "title": "Câu ghép (compound sentence)",
+      "text": "Có hai mệnh đề độc lập trở lên. Nối bằng dấu phẩy và liên từ đẳng lập (and, but, or, so, yet) hoặc bằng dấu chấm phẩy.",
+      "formulas": [
+        "{s S} + {v V}, {c and / but / or / so / yet} + {s S} + {v V}.",
+        "{s S} + {v V}; {s S} + {v V}."
+      ],
+      "table": {
+        "head": [
+          "Liên từ",
+          "Nghĩa",
+          "Dùng khi"
+        ],
+        "rows": [
+          [
+            "and",
+            "và",
+            "thêm ý cùng hướng"
+          ],
+          [
+            "but / yet",
+            "nhưng",
+            "hai ý đối lập"
+          ],
+          [
+            "or",
+            "hoặc",
+            "lựa chọn"
+          ],
+          [
+            "so",
+            "vì vậy",
+            "kết quả của vế trước"
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "en": "{s Teenagers} {v face} a lot of pressure, {c so} {s they} {v need} support.",
+          "vi": "Thiếu niên chịu nhiều áp lực, vì vậy các em cần được hỗ trợ."
+        },
+        {
+          "en": "{s I} {v wanted} to join the forum, {c but} {s I} {v didn’t have} an account.",
+          "vi": "Tôi muốn tham gia diễn đàn nhưng chưa có tài khoản."
+        },
+        {
+          "en": "{s Many students} {v browse} the web for information{c ;} {s others} {v use} it only for games.",
+          "vi": "Nhiều bạn lướt web tìm thông tin; số khác chỉ dùng để chơi game."
+        }
+      ],
+      "wrong": "Teenagers face a lot of pressure, they need support.",
+      "right": "Teenagers face a lot of pressure{c , so} they need support.",
+      "why": "Nối hai mệnh đề chỉ bằng dấu phẩy gọi là comma splice, là lỗi sai.",
+      "tip": "Thử tách từng vế: nếu mỗi vế đứng một mình thành câu được thì đó là câu ghép.",
+      "try": {
+        "q": "She likes music, ___ she plays the guitar every day.",
+        "options": [
+          "so",
+          "but",
+          "or"
+        ],
+        "answer": 0,
+        "explain": "“so” nối kết quả: cô ấy thích nhạc nên chơi đàn mỗi ngày."
+      }
     },
     {
-      "type": "text",
-      "content": "Ví dụ: Teenagers face a lot of pressure, so they need support. I wanted to join the forum, but I didn’t have an account. Many students browse the web for information; others use it only for games."
+      "type": "card",
+      "n": 3,
+      "title": "Cặp liên từ (correlative conjunctions)",
+      "collapse": "Xem các cặp liên từ",
+      "table": {
+        "head": [
+          "Cặp",
+          "Nghĩa",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "either … or",
+            "hoặc … hoặc",
+            "You can {k either} call me {k or} message me."
+          ],
+          [
+            "neither … nor",
+            "không … cũng không",
+            "He likes {k neither} tea {k nor} coffee."
+          ],
+          [
+            "both … and",
+            "cả … lẫn",
+            "She is {k both} focused {k and} mature."
+          ],
+          [
+            "not only … but also",
+            "không những … mà còn",
+            "He is {k not only} smart {k but also} kind."
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "en": "You can {k either} call me {k or} message me.",
+          "vi": "Bạn có thể gọi hoặc nhắn tin cho tôi."
+        },
+        {
+          "en": "She is {k both} focused {k and} mature.",
+          "vi": "Cô ấy vừa tập trung vừa chín chắn."
+        }
+      ],
+      "try": {
+        "q": "He is ___ smart but also kind.",
+        "options": [
+          "not only",
+          "both",
+          "neither"
+        ],
+        "answer": 0,
+        "explain": "“not only … but also” = không những … mà còn."
+      }
     },
     {
-      "type": "text",
-      "content": "3. Cặp liên từ either … or (hoặc … hoặc), neither … nor (không … cũng không), both … and (cả … lẫn), not only … but also (không những … mà còn): You can either call me or message me. She is both focused and mature."
-    },
-    {
-      "type": "text",
-      "content": "4. Lỗi hay gặp: nối hai mệnh đề chỉ bằng dấu phẩy (comma splice) là sai; đặt dấu phẩy sau liên từ là sai. Mẹo thử: nếu mỗi vế có thể đứng một mình thành câu thì đó là câu ghép."
+      "type": "card",
+      "n": 4,
+      "title": "Lỗi hay gặp: dấu phẩy đặt sau liên từ",
+      "wrong": "Teenagers face a lot of pressure so, they need support.",
+      "right": "Teenagers face a lot of pressure{c , so} they need support.",
+      "why": "Dấu phẩy phải đứng trước liên từ, không đứng sau.",
+      "tip": "Đọc câu và ngắt hơi: ngắt ở chỗ hết vế thứ nhất, rồi mới nói “so”."
     }
   ],
   "examples": [],

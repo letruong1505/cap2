@@ -224,36 +224,111 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 1 nói về sức khoẻ, thể lực và các thói quen giúp sống lâu. Ngữ pháp trọng tâm: quá khứ đơn và hiện tại hoàn thành."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Quá khứ đơn: mốc {k đã kết thúc} (yesterday, in 2019, ago). Hiện tại hoàn thành: {k have/has + V3}, kinh nghiệm, kéo dài (for, since), vừa xảy ra."
     },
     {
       "type": "text",
-      "content": "1. Quá khứ đơn diễn tả hành động đã kết thúc tại một thời điểm xác định trong quá khứ (yesterday, in 2019, two years ago)."
+      "content": "Unit 1 nói về sức khỏe, thể lực và các thói quen giúp sống lâu."
     },
     {
-      "type": "formula",
-      "content": "S + V-ed / V2        S + did not + V        Did + S + V?"
+      "type": "card",
+      "n": 1,
+      "title": "Quá khứ đơn",
+      "text": "Hành động đã kết thúc tại thời điểm xác định trong quá khứ.",
+      "formulas": [
+        "{s S} + {v V-ed / V2}",
+        "{s S} + {c did not} + {v V}",
+        "{c Did} + {s S} + {v V}?"
+      ],
+      "examples": [
+        {
+          "en": "I {v had} the flu last month.",
+          "vi": "Tháng trước tôi bị cúm. (đã kết thúc)"
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "2. Hiện tại hoàn thành (have/has + V3) diễn tả: kinh nghiệm (have ever / never been), hành động bắt đầu trong quá khứ và còn kéo dài (for, since), hoặc vừa xảy ra (just, already, yet). Không dùng với mốc thời gian đã kết thúc."
+      "type": "card",
+      "n": 2,
+      "title": "Hiện tại hoàn thành",
+      "text": "Diễn tả kinh nghiệm (ever / never), hành động bắt đầu trong quá khứ và còn kéo dài (for, since), hoặc vừa xảy ra (just, already, yet). Không dùng với mốc thời gian đã kết thúc.",
+      "formulas": [
+        "{s S} + {c have/has} + {v V3}",
+        "{s S} + {c have/has not} + {v V3}",
+        "{c Have/Has} + {s S} + {v V3}?"
+      ],
+      "examples": [
+        {
+          "en": "I {c have} {v had} the flu twice this year.",
+          "vi": "Năm nay tôi đã bị cúm hai lần."
+        },
+        {
+          "en": "She {c has} {v lived} in Vinh {c since} 2015.",
+          "vi": "Cô ấy sống ở Vinh từ năm 2015."
+        }
+      ],
+      "wrong": "I have seen him yesterday.",
+      "right": "I {k saw} him yesterday.",
+      "why": "Mốc đã kết thúc (yesterday) → quá khứ đơn.",
+      "try": {
+        "q": "They ___ here for ten years.",
+        "options": [
+          "have lived",
+          "lived",
+          "live"
+        ],
+        "answer": 0,
+        "explain": "for + khoảng thời gian → hiện tại hoàn thành."
+      }
     },
     {
-      "type": "formula",
-      "content": "S + have/has + V3        S + have/has not + V3        Have/Has + S + V3?"
+      "type": "card",
+      "n": 3,
+      "title": "Từ chỉ thời gian",
+      "table": {
+        "head": [
+          "Thì",
+          "Từ"
+        ],
+        "rows": [
+          [
+            "Quá khứ đơn",
+            "ago, yesterday, last …, in + năm"
+          ],
+          [
+            "Hiện tại hoàn thành",
+            "since, for, already, yet, ever, never"
+          ]
+        ]
+      }
     },
     {
-      "type": "text",
-      "content": "Ví dụ: I had the flu last month. (đã kết thúc)   I have had the flu twice this year. (trải nghiệm, còn trong năm nay)   She has lived in Vinh since 2015. (còn kéo dài)"
-    },
-    {
-      "type": "text",
-      "content": "3. Dạng yếu (weak forms): trong câu, các trợ động từ như have, has, was, can, must thường được đọc nhẹ, ví dụ: I’ve /aɪv/, has /həz/, can /kən/."
-    },
-    {
-      "type": "text",
-      "content": "4. Các từ chỉ thời gian quan trọng: ago, yesterday (quá khứ đơn); since, for, already, yet, ever, never (hiện tại hoàn thành)."
+      "type": "card",
+      "n": 4,
+      "title": "Dạng yếu (weak forms)",
+      "text": "Trợ động từ như have, has, was, can, must thường đọc nhẹ.",
+      "table": {
+        "head": [
+          "Từ",
+          "Đọc nhẹ"
+        ],
+        "rows": [
+          [
+            "I’ve",
+            "/aɪv/"
+          ],
+          [
+            "has",
+            "/həz/"
+          ],
+          [
+            "can",
+            "/kən/"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],

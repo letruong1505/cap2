@@ -241,32 +241,149 @@
   },
   "theory": [
     {
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Tường thuật: {k said (that) / told + người + (that)}, bỏ ngoặc kép, {k lùi thì} một bậc, đổi đại từ và trạng từ."
+    },
+    {
       "type": "text",
       "content": "Unit 11 nói về khoa học công nghệ trong đời sống và học tập. Ngữ pháp trọng tâm là câu tường thuật dạng câu kể (reported speech: statements)."
     },
     {
-      "type": "text",
-      "content": "1. Khi thuật lại lời nói của người khác, ta dùng said (that) hoặc told + người (that), bỏ dấu ngoặc kép và lùi thì động từ một bậc về quá khứ."
+      "type": "card",
+      "n": 1,
+      "title": "Cấu trúc",
+      "text": "Khi thuật lại lời người khác, dùng said (that) hoặc told + người (that), bỏ dấu ngoặc kép và lùi thì động từ một bậc về quá khứ.",
+      "formulas": [
+        "“S + V …,” he {c said}.  →  He {c said (that)} S + V (lùi thì) …",
+        "“…,” she {c told me}.  →  She {c told me (that)} …"
+      ],
+      "examples": [
+        {
+          "en": "“I am testing a new app,” Nam {c said}.",
+          "vi": "Nam nói: “Tôi đang thử một ứng dụng mới.”"
+        },
+        {
+          "en": "Nam {c said} (that) he {v was testing} a new app.",
+          "vi": "Nam nói rằng cậu ấy đang thử một ứng dụng mới."
+        }
+      ],
+      "tip": "say không có tân ngữ chỉ người (said that…); tell luôn có (told me that…).",
+      "try": {
+        "q": "She ___ me that she was busy.",
+        "options": [
+          "told",
+          "said",
+          "say"
+        ],
+        "answer": 0,
+        "explain": "tell + người + that…"
+      }
     },
     {
-      "type": "formula",
-      "content": "“S + V …,” he said.  →  He said (that) S + V (lùi thì) …      “…,” she told me.  →  She told me (that) …"
+      "type": "card",
+      "n": 2,
+      "title": "Lùi thì",
+      "table": {
+        "head": [
+          "Câu gốc",
+          "Câu tường thuật"
+        ],
+        "rows": [
+          [
+            "hiện tại đơn (use)",
+            "quá khứ đơn (used)"
+          ],
+          [
+            "hiện tại tiếp diễn (am using)",
+            "quá khứ tiếp diễn (was using)"
+          ],
+          [
+            "quá khứ đơn (used)",
+            "quá khứ hoàn thành (had used)"
+          ],
+          [
+            "will",
+            "would"
+          ],
+          [
+            "can",
+            "could"
+          ],
+          [
+            "may",
+            "might"
+          ],
+          [
+            "must",
+            "had to"
+          ]
+        ]
+      },
+      "tip": "Sự thật hiển nhiên có thể không lùi thì: He said that water boils at 100°C."
     },
     {
-      "type": "text",
-      "content": "2. Lùi thì: hiện tại đơn → quá khứ đơn (use → used); hiện tại tiếp diễn → quá khứ tiếp diễn (am using → was using); quá khứ đơn → quá khứ hoàn thành (used → had used); will → would; can → could; may → might; must → had to."
+      "type": "card",
+      "n": 3,
+      "title": "Đổi đại từ và trạng từ",
+      "table": {
+        "head": [
+          "Câu gốc",
+          "Câu tường thuật"
+        ],
+        "rows": [
+          [
+            "I / my / we",
+            "he, she / his, her / they"
+          ],
+          [
+            "here",
+            "there"
+          ],
+          [
+            "now",
+            "then"
+          ],
+          [
+            "today",
+            "that day"
+          ],
+          [
+            "tomorrow",
+            "the next day / the following day"
+          ],
+          [
+            "yesterday",
+            "the day before"
+          ],
+          [
+            "this",
+            "that"
+          ],
+          [
+            "ago",
+            "before"
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "en": "“We will use eye-tracking next year,” the teacher told us.",
+          "vi": "Cô giáo nói với chúng tôi: “Năm sau chúng ta sẽ dùng công nghệ theo dõi mắt.”"
+        },
+        {
+          "en": "The teacher told us (that) they {k would} use eye-tracking {k the following year}.",
+          "vi": "Cô giáo nói với chúng tôi rằng năm sau họ sẽ dùng công nghệ theo dõi mắt."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "3. Đổi đại từ và trạng từ cho phù hợp: I → he / she; my → his / her; we → they; here → there; now → then; today → that day; tomorrow → the next day; yesterday → the day before; this → that; ago → before."
-    },
-    {
-      "type": "text",
-      "content": "Ví dụ: “I am testing a new app,” Nam said. → Nam said (that) he was testing a new app. “We will use eye-tracking next year,” the teacher told us. → The teacher told us (that) they would use eye-tracking the following year."
-    },
-    {
-      "type": "text",
-      "content": "4. Lưu ý: say không có tân ngữ chỉ người (said that…), tell luôn có (told me that…). Sự thật hiển nhiên có thể không lùi thì: He said that water boils at 100°C."
+      "type": "card",
+      "n": 4,
+      "title": "Lỗi hay gặp",
+      "wrong": "He said me that he was busy.",
+      "right": "He {k told me} that he was busy. / He {k said} that he was busy.",
+      "why": "Say không đi với tân ngữ chỉ người; tell luôn có tân ngữ."
     }
   ],
   "examples": [],

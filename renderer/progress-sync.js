@@ -9,6 +9,9 @@
   const DAY = 86400000;
   const MAX_DAYS = 120; // chỉ gửi 120 ngày gần nhất
   const MAX_ROWS = 1500; // khớp giới hạn của máy chủ
+  const DEFAULT_GOALS = { daily: 50, weekend: 80, weekly: 5 };
+  /* Mục tiêu số câu của một ngày: T7, CN dùng mục tiêu cuối tuần (giống VungProgress.goalFor). */
+  const goalFor = (g, t) => { g = g || DEFAULT_GOALS; const wd = new Date(t).getDay(); return wd === 0 || wd === 6 ? (g.weekend || DEFAULT_GOALS.weekend) : (g.daily || DEFAULT_GOALS.daily); };
 
   const isoOf = (t) => { const d = new Date(t); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; };
   const fromIso = (v) => { const [y, m, d] = String(v).split('-').map(Number); return new Date(y, m - 1, d).getTime(); };
@@ -49,13 +52,13 @@
     const list = (rows || []).filter((r) => (!grade || r.grade === grade) && (!subject || r.subject === subject));
     const byDay = new Map();
     list.forEach((r) => { const d = byDay.get(r.day) || { correct: 0, total: 0, lessons: 0 }; d.correct += r.correct; d.total += r.total; d.lessons += r.lessons; byDay.set(r.day, d); });
-    const g = goals || { daily: 20, weekly: 5 };
+    const g = goals || DEFAULT_GOALS;
     const days = [];
     for (let t = from; t <= to && days.length < 366; t += DAY) {
       const d = new Date(t); d.setHours(0, 0, 0, 0);
       const x = byDay.get(isoOf(d.getTime())) || { correct: 0, total: 0, lessons: 0 };
       const day = { t: d.getTime(), correct: x.correct, total: x.total, lessons: x.lessons };
-      day.wrong = day.total - day.correct; day.pct = pct(day); day.reached = !subject && day.total >= g.daily;
+      day.wrong = day.total - day.correct; day.pct = pct(day); day.reached = !subject && day.total >= goalFor(g, day.t);
       days.push(day);
     }
     const subj = {}, chap = {};
@@ -77,7 +80,7 @@
     };
   }
 
-  const api = { KEY, aggregate, buildReport, codeFromLicense, isoOf, fromIso };
+  const api = { KEY, DEFAULT_GOALS, goalFor, aggregate, buildReport, codeFromLicense, isoOf, fromIso };
   if (typeof window === 'undefined' || !window.document) return api;
 
   /* ---------- Phần chạy trên máy (cần giao diện) ---------- */

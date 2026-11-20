@@ -187,40 +187,163 @@
   },
   "theory": [
     {
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Yes/No: đưa {k trợ động từ / be / khuyết thiếu} lên đầu câu. Wh-: từ để hỏi đứng {k trước} trợ động từ. Đếm được → {k How many}, không đếm được → {k How much}."
+    },
+    {
       "type": "text",
       "content": "Unit 4 nói về các dân tộc Việt Nam: nhà ở, trang phục, lễ hội. Ngữ pháp trọng tâm: câu hỏi Yes/No và Wh-, cùng danh từ đếm được và không đếm được."
     },
     {
-      "type": "text",
-      "content": "1. Câu hỏi Yes/No: đưa trợ động từ (do/does/did), động từ be hoặc động từ khuyết thiếu (can, will, should) lên đầu câu. Trả lời ngắn lặp lại trợ động từ đó."
+      "type": "card",
+      "n": 1,
+      "title": "Câu hỏi Yes/No",
+      "text": "Đưa trợ động từ (do / does / did), động từ be hoặc động từ khuyết thiếu (can, will, should) lên đầu câu. Trả lời ngắn lặp lại trợ động từ đó.",
+      "formulas": [
+        "{c Do / Does / Did} + S + V ?",
+        "{c Be} + S + … ?",
+        "{c Can / Will / Should} + S + V ?"
+      ],
+      "examples": [
+        {
+          "en": "{c Do} the Thái live in stilt houses? – Yes, they {c do}.",
+          "vi": "Người Thái ở nhà sàn phải không? – Vâng, đúng vậy."
+        },
+        {
+          "en": "{c Is} the communal house made of wood? – Yes, it {c is}.",
+          "vi": "Nhà rông làm bằng gỗ phải không? – Vâng."
+        },
+        {
+          "en": "{c Can} you play the gong? – No, I {c can’t}.",
+          "vi": "Bạn đánh được cồng chiêng không? – Không."
+        }
+      ],
+      "try": {
+        "q": "___ the Mông wear colourful clothes?",
+        "options": [
+          "Do",
+          "Does",
+          "Is"
+        ],
+        "answer": 0,
+        "explain": "Chủ ngữ số nhiều “the Mông” nên dùng Do."
+      }
     },
     {
-      "type": "formula",
-      "content": "Do / Does / Did + S + V ?     Be + S + … ?     Can / Will / Should + S + V ?"
+      "type": "card",
+      "n": 2,
+      "title": "Câu hỏi Wh-",
+      "text": "Từ để hỏi đứng trước trợ động từ.",
+      "formulas": [
+        "{c Wh-} + trợ động từ + S + V ?",
+        "{c Who / What} (làm chủ ngữ) + V ?"
+      ],
+      "table": {
+        "head": [
+          "Từ hỏi",
+          "Hỏi về"
+        ],
+        "rows": [
+          [
+            "What",
+            "cái gì"
+          ],
+          [
+            "Which",
+            "cái nào"
+          ],
+          [
+            "Who",
+            "ai"
+          ],
+          [
+            "Whose",
+            "của ai"
+          ],
+          [
+            "Where / When / Why / How",
+            "ở đâu / khi nào / tại sao / như thế nào"
+          ],
+          [
+            "How many / much",
+            "bao nhiêu"
+          ],
+          [
+            "How often / long / far",
+            "bao lâu một lần / bao lâu / bao xa"
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "en": "{c Where} do the Mông live? – In the northern highlands.",
+          "vi": "Người Mông sống ở đâu? – Ở vùng cao phía bắc."
+        },
+        {
+          "en": "{c How many} ethnic groups are there in Việt Nam? – 54.",
+          "vi": "Việt Nam có bao nhiêu dân tộc? – 54."
+        },
+        {
+          "en": "{c Who} weaves this cloth? – The women do.",
+          "vi": "Ai dệt tấm vải này? – Các phụ nữ."
+        }
+      ],
+      "tip": "Who / What làm chủ ngữ thì không cần trợ động từ: “Who weaves…?”, không nói “Who does weave…?”."
     },
     {
-      "type": "text",
-      "content": "Ví dụ: Do the Thái live in stilt houses? – Yes, they do. Is the communal house made of wood? – Yes, it is. Can you play the gong? – No, I can’t."
+      "type": "card",
+      "n": 3,
+      "title": "Danh từ đếm được và không đếm được",
+      "table": {
+        "head": [
+          "Loại",
+          "Đặc điểm",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "Đếm được",
+            "có số nhiều, dùng a/an",
+            "house → houses, flute → flutes"
+          ],
+          [
+            "Không đếm được",
+            "không số nhiều, không a/an",
+            "soil, rice, water, cloth, music, livestock"
+          ]
+        ]
+      },
+      "text": "Hỏi số lượng: How many + đếm được số nhiều; How much + không đếm được.",
+      "wrong": "How many rice do they eat?",
+      "right": "How {k much} rice do they eat?",
+      "why": "rice là danh từ không đếm được nên dùng How much.",
+      "try": {
+        "q": "How ___ water do they need?",
+        "options": [
+          "much",
+          "many",
+          "a"
+        ],
+        "answer": 0,
+        "explain": "water không đếm được nên dùng much."
+      }
     },
     {
-      "type": "text",
-      "content": "2. Câu hỏi Wh-: từ để hỏi đứng trước trợ động từ. What, Which (cái nào), Who (ai), Whose (của ai), Where, When, Why, How, How many / much, How often, How long, How far."
-    },
-    {
-      "type": "formula",
-      "content": "Wh- + trợ động từ + S + V ?      Who / What (làm chủ ngữ) + V ?"
-    },
-    {
-      "type": "text",
-      "content": "Ví dụ: Where do the Mông live? – In the northern highlands. How many ethnic groups are there in Việt Nam? – 54. Who weaves this cloth? – The women do."
-    },
-    {
-      "type": "text",
-      "content": "3. Danh từ đếm được có số nhiều (house → houses, flute → flutes); danh từ không đếm được không có số nhiều và không dùng a/an: soil, rice, water, livestock (gia súc nói chung), cloth, music. Hỏi số lượng: How many + đếm được số nhiều; How much + không đếm được."
-    },
-    {
-      "type": "text",
-      "content": "4. Lưu ý: livestock và cattle là danh từ tập hợp, không thêm -s. Nói a piece of cloth, a bag of rice để đếm danh từ không đếm được."
+      "type": "card",
+      "n": 4,
+      "title": "Lưu ý khi đếm",
+      "text": "Livestock và cattle là danh từ tập hợp, không thêm -s. Dùng a piece of cloth, a bag of rice để đếm danh từ không đếm được.",
+      "examples": [
+        {
+          "en": "The family keeps a lot of {k livestock}.",
+          "vi": "Gia đình nuôi rất nhiều gia súc."
+        },
+        {
+          "en": "She bought {k a piece of} cloth and {k a bag of} rice.",
+          "vi": "Cô ấy mua một mảnh vải và một bao gạo."
+        }
+      ]
     }
   ],
   "examples": [],

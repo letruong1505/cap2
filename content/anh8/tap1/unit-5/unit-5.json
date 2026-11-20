@@ -211,32 +211,178 @@
   },
   "theory": [
     {
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "{k a / an}: chọn theo ÂM đầu. {k the}: đã xác định, duy nhất, so sánh nhất, nhạc cụ. {k Không mạo từ}: số nhiều và không đếm được nói chung."
+    },
+    {
       "type": "text",
       "content": "Unit 5 nói về phong tục và truyền thống: Tết, lễ hội, phép tắc trong gia đình. Ngữ pháp trọng tâm là mạo từ a, an, the và trường hợp không dùng mạo từ, ở mức sâu hơn lớp 7."
     },
     {
-      "type": "text",
-      "content": "1. a / an: danh từ đếm được số ít, nhắc lần đầu hoặc nói chung chung. Chọn theo ÂM đầu, không theo chữ cái: an hour, an honest man (h câm); a university, a European custom (âm /j/); an MP (âm /e/)."
+      "type": "card",
+      "n": 1,
+      "title": "a / an",
+      "text": "Dùng với danh từ đếm được số ít, nhắc lần đầu hoặc nói chung chung. Chọn theo ÂM đầu, không theo chữ cái.",
+      "table": {
+        "head": [
+          "Ví dụ",
+          "Vì sao"
+        ],
+        "rows": [
+          [
+            "an hour, an honest man",
+            "h câm, âm đầu là nguyên âm"
+          ],
+          [
+            "a university, a European custom",
+            "âm /j/ như phụ âm"
+          ],
+          [
+            "an MP",
+            "âm /e/ (em)"
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "en": "A monk gave us {k a} small gift.",
+          "vi": "Một nhà sư tặng chúng tôi một món quà nhỏ."
+        }
+      ],
+      "wrong": "She waited for a hour.",
+      "right": "She waited for {k an} hour.",
+      "why": "hour đọc là /aʊə/, âm đầu là nguyên âm.",
+      "try": {
+        "q": "He is ___ honest man.",
+        "options": [
+          "an",
+          "a",
+          "the"
+        ],
+        "answer": 0,
+        "explain": "honest có h câm, âm đầu là nguyên âm."
+      }
     },
     {
-      "type": "text",
-      "content": "2. the: đã xác định (nhắc lại, cả hai cùng biết), vật duy nhất (the moon, the first day of Tết), so sánh nhất và số thứ tự (the best, the second), với nhạc cụ (play the flute), với tên sông, biển, dãy núi, quần đảo, và danh từ chỉ một nhóm người (the elderly, the Thái)."
+      "type": "card",
+      "n": 2,
+      "title": "the",
+      "text": "Dùng khi người nói và người nghe đều biết là cái nào.",
+      "table": {
+        "head": [
+          "Trường hợp",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "Đã nhắc trước đó",
+            "the gift"
+          ],
+          [
+            "Vật duy nhất",
+            "the moon, the first day of Tết"
+          ],
+          [
+            "So sánh nhất, số thứ tự",
+            "the best, the second"
+          ],
+          [
+            "Nhạc cụ",
+            "play the flute"
+          ],
+          [
+            "Sông, biển, dãy núi, quần đảo",
+            "the Red River, the Pacific"
+          ],
+          [
+            "Nhóm người",
+            "the elderly, the Thái"
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "en": "On {k the} first day of Tết, we visit {k the} pagoda.",
+          "vi": "Vào ngày đầu Tết, chúng tôi đi chùa."
+        },
+        {
+          "en": "A monk gave us a small gift; {k the} gift was a red envelope.",
+          "vi": "Nhà sư tặng chúng tôi một món quà nhỏ; món quà ấy là một bao lì xì."
+        },
+        {
+          "en": "My grandfather plays {k the} đàn bầu.",
+          "vi": "Ông tôi chơi đàn bầu."
+        }
+      ]
     },
     {
-      "type": "formula",
-      "content": "the + so sánh nhất / số thứ tự / nhạc cụ / sông, biển, dãy núi / the + adj (nhóm người)"
+      "type": "card",
+      "n": 3,
+      "title": "Không dùng mạo từ",
+      "table": {
+        "head": [
+          "Trường hợp",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "Số nhiều / không đếm được nói chung",
+            "Lanterns are beautiful. Rice is the main food."
+          ],
+          [
+            "Tên người, nước, thành phố, đường",
+            "Hà Nội, Việt Nam"
+          ],
+          [
+            "Bữa ăn, ngôn ngữ, môn học, môn thể thao",
+            "play football (không the)"
+          ],
+          [
+            "Cụm cố định",
+            "go to school, go home, go to bed, at night, by bus"
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "en": "We eat young rice in autumn.",
+          "vi": "Chúng tôi ăn cốm vào mùa thu."
+        }
+      ],
+      "try": {
+        "q": "They play ___ football every weekend.",
+        "options": [
+          "(không mạo từ)",
+          "the",
+          "a"
+        ],
+        "answer": 0,
+        "explain": "Môn thể thao không dùng mạo từ."
+      }
     },
     {
-      "type": "text",
-      "content": "3. Không dùng mạo từ: danh từ số nhiều hoặc không đếm được nói chung (Lanterns are beautiful. Rice is the main food), tên người, tên hầu hết các nước, thành phố, đường phố, bữa ăn, ngôn ngữ, môn học, môn thể thao (play football, không the), các cụm go to school / go home / go to bed / at night / by bus."
-    },
-    {
-      "type": "text",
-      "content": "Ví dụ: On the first day of Tết, we visit the pagoda. A monk gave us a small gift; the gift was a red envelope. We eat young rice in autumn. My grandfather plays the đàn bầu."
-    },
-    {
-      "type": "text",
-      "content": "4. So sánh: go to school (đi học) và go to the school (đến toà nhà trường vì việc khác); in hospital (nằm viện) và in the hospital (có mặt trong bệnh viện)."
+      "type": "card",
+      "n": 4,
+      "title": "So sánh: có the và không the",
+      "examples": [
+        {
+          "en": "{k go to school} (đi học)",
+          "vi": "Mục đích chính của trường."
+        },
+        {
+          "en": "{k go to the school} (đến toà nhà trường vì việc khác)",
+          "vi": "Ví dụ: đi họp phụ huynh."
+        },
+        {
+          "en": "{k in hospital} (nằm viện)",
+          "vi": "Là bệnh nhân."
+        },
+        {
+          "en": "{k in the hospital} (có mặt trong bệnh viện)",
+          "vi": "Ví dụ: đi thăm người ốm."
+        }
+      ]
     }
   ],
   "examples": [],

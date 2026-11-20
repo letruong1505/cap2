@@ -210,36 +210,87 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 5 nói về thế giới công việc. Ngữ pháp trọng tâm: câu đơn (simple sentence), câu ghép (compound sentence) và câu phức (complex sentence)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "{k Câu đơn}: 1 mệnh đề. {k Câu ghép}: các mệnh đề độc lập nối bằng liên từ kết hợp, có dấu phẩy. {k Câu phức}: có mệnh đề phụ thuộc."
     },
     {
       "type": "text",
-      "content": "1. Câu đơn có một mệnh đề độc lập, gồm một chủ ngữ và một động từ (có thể có chủ ngữ hoặc động từ kép): My brother works part-time. My brother and sister work and study."
+      "content": "Unit 5 nói về thế giới công việc."
     },
     {
-      "type": "text",
-      "content": "2. Câu ghép có hai hoặc nhiều mệnh đề độc lập nối với nhau bằng liên từ kết hợp (and, but, or, so, yet, for, nor) có dấu phẩy phía trước, hoặc bằng dấu chấm phẩy."
+      "type": "card",
+      "n": 1,
+      "title": "Câu đơn",
+      "text": "Có một mệnh đề độc lập, gồm một chủ ngữ và một động từ (có thể có chủ ngữ hoặc động từ kép).",
+      "examples": [
+        {
+          "en": "{s My brother} {v works} part-time.",
+          "vi": "Anh trai tôi làm việc bán thời gian."
+        },
+        {
+          "en": "{s My brother and sister} {v work and study}.",
+          "vi": "Anh chị tôi vừa làm vừa học."
+        }
+      ]
     },
     {
-      "type": "formula",
-      "content": "Mệnh đề độc lập, + and/but/or/so + mệnh đề độc lập"
+      "type": "card",
+      "n": 2,
+      "title": "Câu ghép",
+      "text": "Có hai hoặc nhiều mệnh đề độc lập nối với nhau bằng liên từ kết hợp (and, but, or, so, yet, for, nor) có dấu phẩy phía trước, hoặc bằng dấu chấm phẩy.",
+      "formulas": [
+        "Mệnh đề độc lập{c , and / but / or / so} + mệnh đề độc lập"
+      ],
+      "examples": [
+        {
+          "en": "The job is stressful{c , but} the salary is high.",
+          "vi": "Công việc căng thẳng nhưng lương cao."
+        }
+      ],
+      "tip": "Các liên từ kết hợp: and, but, or, so, yet, for, nor."
     },
     {
-      "type": "text",
-      "content": "3. Câu phức có một mệnh đề độc lập và ít nhất một mệnh đề phụ thuộc, bắt đầu bằng liên từ phụ thuộc (because, although, when, while, if, since, after, before, until, so that) hoặc đại từ quan hệ (who, which, that). Khi mệnh đề phụ đứng trước, có dấu phẩy ngăn cách."
+      "type": "card",
+      "n": 3,
+      "title": "Câu phức",
+      "text": "Có một mệnh đề độc lập và ít nhất một mệnh đề phụ thuộc, bắt đầu bằng liên từ phụ thuộc (because, although, when, while, if, since, after, before, until, so that) hoặc đại từ quan hệ (who, which, that). Khi mệnh đề phụ đứng trước, có dấu phẩy ngăn cách.",
+      "formulas": [
+        "{c Although / Because / When} + S + V, S + V",
+        "S + V + {c because / although / when} + S + V"
+      ],
+      "examples": [
+        {
+          "en": "{c Although} the job is stressful, the salary is high.",
+          "vi": "Tuy công việc căng thẳng, lương lại cao."
+        },
+        {
+          "en": "I want a job {c that} gives me flexible hours.",
+          "vi": "Tôi muốn một công việc có giờ giấc linh hoạt."
+        }
+      ],
+      "try": {
+        "q": "The job is stressful, ___ the salary is high.",
+        "options": [
+          "but",
+          "although",
+          "because"
+        ],
+        "answer": 0,
+        "explain": "Nối hai mệnh đề độc lập bằng , but (câu ghép)."
+      }
     },
     {
-      "type": "formula",
-      "content": "Although/Because/When + S + V, S + V        S + V + because/although/when + S + V"
-    },
-    {
-      "type": "text",
-      "content": "4. Ví dụ: The job is stressful, but the salary is high. (câu ghép) Although the job is stressful, the salary is high. (câu phức) I want a job that gives me flexible hours. (câu phức có mệnh đề quan hệ.)"
-    },
-    {
-      "type": "text",
-      "content": "5. Phát âm: trợ động từ và động từ khuyết thiếu (can, must, have, do) thường không mang trọng âm, nhưng được nhấn mạnh khi đứng cuối câu, ở dạng phủ định hoặc câu trả lời ngắn (Yes, I can.)."
+      "type": "card",
+      "n": 4,
+      "title": "Phát âm trợ động từ",
+      "text": "Trợ động từ và động từ khuyết thiếu (can, must, have, do) thường không mang trọng âm, nhưng được nhấn mạnh khi đứng cuối câu, ở dạng phủ định hoặc câu trả lời ngắn.",
+      "examples": [
+        {
+          "en": "Yes, I {k can}.",
+          "vi": "Câu trả lời ngắn, nhấn mạnh can."
+        }
+      ]
     }
   ],
   "examples": [],

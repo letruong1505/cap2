@@ -216,40 +216,102 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 7 nói về truyền thông đại chúng. Ngữ pháp trọng tâm: mệnh đề trạng ngữ chỉ cách thức (adverbial clauses of manner) và chỉ kết quả (adverbial clauses of result)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Cách thức: {k as, as if / as though} (không có thật → quá khứ đơn, {k were}). Kết quả: {k so … that}, {k such … that}."
     },
     {
       "type": "text",
-      "content": "1. Mệnh đề chỉ cách thức cho biết một việc được làm như thế nào, bắt đầu bằng as (như), as if / as though (như thể). Sau as if / as though, nếu điều không có thật ở hiện tại thì dùng quá khứ đơn (were cho mọi ngôi)."
+      "content": "Unit 7 nói về truyền thông đại chúng."
     },
     {
-      "type": "formula",
-      "content": "S + V + as + S + V        S + V + as if / as though + S + V (quá khứ đơn nếu không có thật)"
+      "type": "card",
+      "n": 1,
+      "title": "Mệnh đề chỉ cách thức",
+      "text": "Cho biết một việc được làm như thế nào, bắt đầu bằng as (như), as if / as though (như thể). Sau as if / as though, nếu điều không có thật ở hiện tại thì dùng quá khứ đơn (were cho mọi ngôi).",
+      "formulas": [
+        "S + V + {c as} + S + V",
+        "S + V + {c as if / as though} + S + V (quá khứ đơn nếu không có thật)"
+      ],
+      "examples": [
+        {
+          "en": "Do {c as} the journalist does: check every source.",
+          "vi": "Hãy làm như nhà báo: kiểm tra mọi nguồn tin."
+        },
+        {
+          "en": "He talks {c as if} he {k knew} everything about the news.",
+          "vi": "Anh ấy nói như thể biết hết mọi tin tức."
+        },
+        {
+          "en": "She looks {c as though} she {k were} a famous TV presenter.",
+          "vi": "Cô ấy trông như thể là một người dẫn chương trình nổi tiếng."
+        }
+      ],
+      "wrong": "She looks as though she was a famous TV presenter.",
+      "right": "She looks as though she {k were} a famous TV presenter.",
+      "why": "Điều không có thật ở hiện tại: dùng were cho mọi ngôi."
     },
     {
-      "type": "text",
-      "content": "Ví dụ: Do as the journalist does: check every source. He talks as if he knew everything about the news. She looks as though she were a famous TV presenter."
+      "type": "card",
+      "n": 2,
+      "title": "Mệnh đề chỉ kết quả",
+      "text": "Cho biết hệ quả của một việc, dùng so … that hoặc such … that.",
+      "formulas": [
+        "{c so} + adj/adv + {c that} + S + V",
+        "{c such} + (a/an) + adj + N + {c that} + S + V",
+        "{c so many/much/few/little} + N + {c that}"
+      ],
+      "examples": [
+        {
+          "en": "The news spread {c so quickly that} everyone knew about it.",
+          "vi": "Tin tức lan nhanh đến mức ai cũng biết."
+        },
+        {
+          "en": "It was {c such an interesting programme that} I watched it twice.",
+          "vi": "Đó là một chương trình thú vị đến mức tôi xem hai lần."
+        },
+        {
+          "en": "There were {c so many adverts that} I turned off the TV.",
+          "vi": "Có quá nhiều quảng cáo nên tôi tắt ti vi."
+        }
+      ],
+      "tip": "so đi với tính từ / trạng từ; such đi với cụm danh từ. Có thể bỏ that trong văn nói.",
+      "try": {
+        "q": "It was ___ a long film that we left early.",
+        "options": [
+          "such",
+          "so",
+          "too"
+        ],
+        "answer": 0,
+        "explain": "such + a + adj + N + that."
+      }
     },
     {
-      "type": "text",
-      "content": "2. Mệnh đề chỉ kết quả cho biết hệ quả của một việc, dùng so ... that hoặc such ... that."
-    },
-    {
-      "type": "formula",
-      "content": "so + adj/adv + that + S + V        such + (a/an) + adj + N + that + S + V        so many/much/few/little + N + that"
-    },
-    {
-      "type": "text",
-      "content": "Ví dụ: The news spread so quickly that everyone knew about it. It was such an interesting programme that I watched it twice. There were so many adverts that I turned off the TV."
-    },
-    {
-      "type": "text",
-      "content": "3. Lưu ý: so đi với tính từ/trạng từ; such đi với cụm danh từ. Có thể bỏ that trong văn nói."
-    },
-    {
-      "type": "text",
-      "content": "4. Phát âm: nối âm /r/ giữa hai nguyên âm (linking /r/): far away /fɑːr əˈweɪ/, media and /ˈmiːdiər ənd/, there is /ðeər ɪz/."
+      "type": "card",
+      "n": 3,
+      "title": "Phát âm: nối âm /r/",
+      "text": "Nối âm /r/ giữa hai nguyên âm (linking /r/).",
+      "table": {
+        "head": [
+          "Cụm",
+          "Phiên âm"
+        ],
+        "rows": [
+          [
+            "far away",
+            "/fɑːr əˈweɪ/"
+          ],
+          [
+            "media and",
+            "/ˈmiːdiər ənd/"
+          ],
+          [
+            "there is",
+            "/ðeər ɪz/"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],

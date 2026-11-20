@@ -10,7 +10,7 @@
   const MAX_ATTEMPTS = 1000;
   const MAX_NOTEBOOK = 300;
 
-  const DEFAULT_GOALS = { daily: 20, weekly: 5 }; // 20 câu/ngày, 5 ngày học/tuần
+  const DEFAULT_GOALS = { daily: 50, weekend: 80, weekly: 5 }; // T2–T6: 50 câu/ngày; T7, CN: 80 câu/ngày; 5 ngày học/tuần
   function empty() { return { attempts: [], notebook: [], reviews: [], goals: Object.assign({}, DEFAULT_GOALS) }; }
 
   /* Điểm thang 10 của một bài (làm tròn 1 chữ số). */
@@ -20,8 +20,17 @@
   const REVIEW_PTS = 5;
   function clampInt(v, lo, hi, d) { v = Math.round(Number(v)); return Number.isFinite(v) ? Math.min(hi, Math.max(lo, v)) : d; }
   function setGoals(data, g) {
-    data.goals = { daily: clampInt(g.daily, 5, 200, DEFAULT_GOALS.daily), weekly: clampInt(g.weekly, 1, 7, DEFAULT_GOALS.weekly) };
+    data.goals = {
+      daily: clampInt(g.daily, 5, 200, DEFAULT_GOALS.daily),
+      weekend: clampInt(g.weekend, 5, 200, DEFAULT_GOALS.weekend),
+      weekly: clampInt(g.weekly, 1, 7, DEFAULT_GOALS.weekly),
+    };
     return data;
+  }
+  /* Mục tiêu số câu của một ngày: T7, CN dùng mục tiêu cuối tuần, còn lại dùng mục tiêu ngày thường. */
+  function goalFor(goals, t) {
+    const g = goals || DEFAULT_GOALS; const wd = new Date(t).getDay();
+    return wd === 0 || wd === 6 ? (g.weekend || DEFAULT_GOALS.weekend) : (g.daily || DEFAULT_GOALS.daily);
   }
 
   function load(storage) {
@@ -119,7 +128,7 @@
     const weekRv = sum(rv, from, t0 + DAY);
     const days = new Set(week.map((a) => startOfDay(a.t)).concat(weekRv.map((r) => startOfDay(r.t))));
     return {
-      goals, todayDone: today.reduce((n, a) => n + a.total, 0), todayCorrect: today.reduce((n, a) => n + a.correct, 0), daysDone: days.size,
+      goals, todayGoal: goalFor(goals, now), todayDone: today.reduce((n, a) => n + a.total, 0), todayCorrect: today.reduce((n, a) => n + a.correct, 0), daysDone: days.size,
       todayPts: today.reduce((n, a) => n + (a.pts || 0), 0) + sum(rv, t0, t0 + DAY).length * REVIEW_PTS,
       weekPts: week.reduce((n, a) => n + (a.pts || 0), 0) + weekRv.length * REVIEW_PTS,
       totalPts: at.reduce((n, a) => n + (a.pts || 0), 0) + rv.length * REVIEW_PTS,
@@ -172,7 +181,7 @@
       const day = { t: d.getTime(), correct: 0, total: 0, lessons: 0 };
       list.forEach((a) => { if (a.t >= day.t && a.t < day.t + DAY) { day.correct += a.correct; day.total += a.total; day.lessons += 1; } });
       day.wrong = day.total - day.correct; day.pct = pct(day);
-      day.reached = !subject && day.total >= goals.daily;
+      day.reached = !subject && day.total >= goalFor(goals, day.t);
       days.push(day);
     }
     const subj = {}, chap = {};
@@ -196,5 +205,5 @@
     };
   }
 
-  return { KEY, INTERVALS, DEFAULT_GOALS, score10, points, setGoals, progress, report, load, save, recordAttempt, grade, due, weekly, slimItem };
+  return { KEY, INTERVALS, DEFAULT_GOALS, goalFor, score10, points, setGoals, progress, report, load, save, recordAttempt, grade, due, weekly, slimItem };
 });

@@ -193,6 +193,20 @@
           try { await navigator.clipboard.writeText(orderText(o)); copyMsg.textContent = 'Đã sao chép thông tin đơn.'; }
           catch { copyMsg.textContent = 'Không sao chép được. Em chụp màn hình để gửi.'; }
         } }, 'Sao chép thông tin đơn')];
+    if (o.amount === 0 && o.online) {
+      // Mã đối tác giảm 100%: máy chủ đã duyệt đơn, không cần chuyển khoản; chỉ nhận khóa và kích hoạt.
+      const fs = h('p', { class: 'buy-status', 'aria-live': 'polite' }, 'Đang kích hoạt khóa học...');
+      payEl.replaceChildren(
+        h('h2', {}, 'Đơn miễn phí'),
+        h('div', { class: 'buy-bank' },
+          o.partner ? row('Mã đối tác', o.partner.code + ' (giảm ' + o.partner.percent + '%)') : null,
+          row('Số tiền', money(0), true), row('Mã đơn', 'NL-' + o.code)),
+        fs,
+        h('div', { class: 'buy-actions' }, h('button', { type: 'button', class: 'primary', onclick: () => { fs.textContent = 'Đang kiểm tra...'; check(o, fs); } }, 'Kích hoạt lại')));
+      payEl.hidden = false; summaryEl.hidden = true; createBtn.hidden = true; hint.hidden = true;
+      stopPoll(); check(o, fs);
+      return;
+    }
     payEl.replaceChildren(
       h('h2', {}, 'Quét mã để thanh toán'),
       qr,

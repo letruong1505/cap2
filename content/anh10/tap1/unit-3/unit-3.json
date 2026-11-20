@@ -224,36 +224,129 @@
   },
   "theory": [
     {
-      "type": "text",
-      "content": "Unit 3 nói về âm nhạc, các chương trình thi hát và sự kiện âm nhạc. Ngữ pháp trọng tâm: câu ghép với and, but, or, so và cách dùng to-infinitive và bare infinitive."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Câu ghép: {k , and / but / or / so}. {k to V} sau decide, want, plan, hope…; {k V (không to)} sau make, let, hear."
     },
     {
       "type": "text",
-      "content": "1. Câu ghép gồm hai mệnh đề độc lập nối với nhau bằng liên từ: and (thêm ý), but (đối lập), or (lựa chọn), so (kết quả). Ví dụ: It was raining, but they still went to the show."
+      "content": "Unit 3 nói về âm nhạc, các chương trình thi hát và sự kiện âm nhạc."
     },
     {
-      "type": "formula",
-      "content": "Mệnh đề 1 + , + and / but / or / so + Mệnh đề 2"
+      "type": "card",
+      "n": 1,
+      "title": "Câu ghép",
+      "text": "Hai mệnh đề độc lập nối bằng liên từ: and (thêm ý), but (đối lập), or (lựa chọn), so (kết quả).",
+      "formulas": [
+        "Mệnh đề 1{c , and / but / or / so} mệnh đề 2"
+      ],
+      "examples": [
+        {
+          "en": "It was raining{c , but} they still went to the show.",
+          "vi": "Trời mưa nhưng họ vẫn đi xem biểu diễn."
+        }
+      ],
+      "try": {
+        "q": "It was late, ___ we went home.",
+        "options": [
+          "so",
+          "but",
+          "or"
+        ],
+        "answer": 0,
+        "explain": "Kết quả → so."
+      }
     },
     {
-      "type": "text",
-      "content": "2. Một số động từ đi với to-infinitive: decide, expect, plan, want, promise, agree, hope, ask. Ví dụ: The band decided to delay the concert."
+      "type": "card",
+      "n": 2,
+      "title": "To-infinitive",
+      "text": "Đi sau decide, expect, plan, want, promise, agree, hope, ask.",
+      "formulas": [
+        "{c decide / want / plan} + {k to V}"
+      ],
+      "examples": [
+        {
+          "en": "The band {c decided} {k to delay} the concert.",
+          "vi": "Ban nhạc quyết định hoãn buổi hòa nhạc."
+        }
+      ]
     },
     {
-      "type": "text",
-      "content": "3. Một số động từ đi với bare infinitive (động từ nguyên mẫu không to): make, let, hear, notice, help (tuỳ trường hợp). Ví dụ: Her parents won’t let her go to the festival. Their performance made us fall asleep."
+      "type": "card",
+      "n": 3,
+      "title": "Bare infinitive",
+      "text": "Đi sau make, let, hear, notice, help (tùy trường hợp).",
+      "formulas": [
+        "{c make / let / hear} + O + {k V (không to)}"
+      ],
+      "examples": [
+        {
+          "en": "Her parents won’t {c let} her {k go} to the festival.",
+          "vi": "Bố mẹ cô ấy không cho cô đi lễ hội."
+        },
+        {
+          "en": "Their performance {c made} us {k fall} asleep.",
+          "vi": "Màn trình diễn của họ làm chúng tôi buồn ngủ."
+        }
+      ],
+      "wrong": "They made us to wait.",
+      "right": "They made us {k wait}.",
+      "why": "make + O + V không to."
     },
     {
-      "type": "formula",
-      "content": "decide / want / plan + to V        make / let / hear + V (không to)"
+      "type": "card",
+      "n": 4,
+      "title": "Trọng âm từ hai âm tiết",
+      "table": {
+        "head": [
+          "Loại",
+          "Quy tắc",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "Danh từ, tính từ",
+            "nhấn âm đầu",
+            "SIN-ger, TAL-ent-ed"
+          ],
+          [
+            "Động từ",
+            "nhấn âm thứ hai",
+            "per-FORM, re-LAX"
+          ]
+        ]
+      }
     },
     {
-      "type": "text",
-      "content": "4. Trọng âm trong từ hai âm tiết: danh từ và tính từ thường nhấn âm tiết đầu (SIN-ger, TAL-ent-ed). Động từ thường nhấn âm tiết thứ hai (per-FORM, re-LAX)."
-    },
-    {
-      "type": "text",
-      "content": "5. Từ vựng quan trọng: audience (khán giả), judge (giám khảo), participant (người tham gia), eliminate (loại ra). Luyện nghe và đọc to để nhớ trọng âm của từng từ."
+      "type": "card",
+      "n": 5,
+      "title": "Từ vựng âm nhạc",
+      "collapse": "Xem từ vựng âm nhạc",
+      "table": {
+        "head": [
+          "Từ / cụm",
+          "Nghĩa"
+        ],
+        "rows": [
+          [
+            "audience",
+            "khán giả"
+          ],
+          [
+            "judge",
+            "giám khảo"
+          ],
+          [
+            "participant",
+            "người tham gia"
+          ],
+          [
+            "eliminate",
+            "loại ra"
+          ]
+        ]
+      }
     }
   ],
   "examples": [],

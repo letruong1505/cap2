@@ -53,10 +53,10 @@ test('mã sai, mã đã tắt hoặc sai định dạng bị từ chối', async
   assert.equal((await db.prepare('SELECT COUNT(*) AS n FROM orders').first()).n, 0);
 });
 
-test('tỉ lệ giảm phải là số nguyên từ 1 đến 99; mã trùng bị báo', async () => {
+test('tỉ lệ giảm phải là số nguyên từ 1 đến 100; mã trùng bị báo', async () => {
   const db = fakeD1();
   await assert.rejects(createPartnerCode(db, { code: 'X-1', partner: 'Ab', percent: 0 }, NOW), HttpError);
-  await assert.rejects(createPartnerCode(db, { code: 'X-1', partner: 'Ab', percent: 100 }, NOW), HttpError);
+  await assert.rejects(createPartnerCode(db, { code: 'X-1', partner: 'Ab', percent: 101 }, NOW), HttpError);
   await createPartnerCode(db, { code: 'X-1', partner: 'Ab' }, NOW);
   await assert.rejects(createPartnerCode(db, { code: 'x-1', partner: 'Cd' }, NOW), (e) => e.status === 409);
 });
@@ -157,4 +157,34 @@ test('số máy tối đa mặc định 10 và phải là số nguyên từ 1 đ
   assert.equal((await createPartnerCode(db, { code: 'M-1', partner: 'Ab' }, NOW)).maxMachines, 10);
   await assert.rejects(createPartnerCode(db, { code: 'M-2', partner: 'Ab', maxMachines: 0 }, NOW), HttpError);
   await assert.rejects(createPartnerCode(db, { code: 'M-3', partner: 'Ab', maxMachines: 1001 }, NOW), HttpError);
+});
+
+test('mã giảm 100%: bắt buộc chọn khóa áp dụng; đơn 0 đồng tự duyệt và cấp khóa', async () => {
+  const db = fakeD1();
+  await assert.rejects(createPartnerCode(db, { code: 'FREE-1', partner: 'Tặng', percent: 100 }, NOW, catalog), /ít nhất một khóa/);
+  await assert.rejects(createPartnerCode(db, { code: 'FREE-1', partner: 'Tặng', percent: 101, items: ['van-hoa-8'] }, NOW, catalog), /1 đến 100/);
+  await assert.rejects(createPartnerCode(db, { code: 'FREE-1', partner: 'Tặng', percent: 100, items: ['khong-co'] }, NOW, catalog), /không hợp lệ/);
+  const made = await createPartnerCode(db, { code: 'FREE-1', partner: 'Tặng', percent: 100, items: ['van-hoa-8'], maxMachines: 2 }, NOW, catalog);
+  assert.deepEqual(made.items, ['van-hoa-8']);
+  const { createOrderAuto } = await import('../src/orders.js');
+  const env = withDb(db);
+  const o = await createOrderAuto(db, env, catalog, input({ ids: ['van-hoa-8'], partnerCode: 'free-1' }), NOW, fixedRand);
+  assert.equal(o.amount, 0);
+  assert.equal(o.status, 'paid');
+  const row = await db.prepare('SELECT status, key FROM orders WHERE code = ?1').bind(o.code).first();
+  assert.equal(row.status, 'paid');
+  assert.match(row.key, /^NL1-/);
+  // cùng máy dùng lại mã cho cùng khóa: bị chặn
+  await assert.rejects(createOrderAuto(db, env, catalog, input({ ids: ['van-hoa-8'], partnerCode: 'FREE-1' }), NOW), (e) => e instanceof HttpError && e.status === 409);
+});
+
+test('mã chỉ áp dụng cho khóa được chọn: khóa khác tính giá niêm yết; không có khóa nào hợp thì báo lỗi', async () => {
+  const db = fakeD1();
+  await createPartnerCode(db, { code: 'FREE-2', partner: 'Tặng', percent: 100, items: ['van-hoa-8'], maxMachines: 5 }, NOW, catalog);
+  const mixed = await createOrder(db, catalog, input({ ids: ['van-hoa-8', 'gia-su-ai'], partnerCode: 'FREE-2' }), NOW, fixedRand);
+  assert.equal(mixed.amount, catalog.byId['gia-su-ai'].price); // chỉ phải trả khóa không thuộc mã
+  assert.equal(mixed.status, 'pending');
+  const rows = (await db.prepare('SELECT item, paid_price, partner_code FROM order_prices WHERE code = ?1 ORDER BY item').bind(mixed.code).all()).results;
+  assert.deepEqual(rows.map((r) => [r.item, r.paid_price, r.partner_code]), [['gia-su-ai', catalog.byId['gia-su-ai'].price, null], ['van-hoa-8', 0, 'FREE-2']]);
+  await assert.rejects(createOrder(db, catalog, input({ machineId: 'AAAA-BBBB-CCCC', phone: '0911111111', ids: ['gia-su-ai'], partnerCode: 'FREE-2' }), NOW), /không áp dụng/);
 });

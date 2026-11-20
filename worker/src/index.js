@@ -1,5 +1,5 @@
 import catalog from '../../renderer/catalog.js';
-import { HttpError, createOrder, orderStatus, applyPayment, listOrders, listUnmatched, approveOrder, cancelOrder, reissueOrder, attachTransaction, pinReset, claimDevice, revokeOrder, restoreOrder, revokeItem, restoreItem, ping, listPartnerCodes, createPartnerCode, setPartnerActive } from './orders.js';
+import { HttpError, createOrder, createOrderAuto, orderStatus, applyPayment, listOrders, listUnmatched, approveOrder, cancelOrder, reissueOrder, attachTransaction, pinReset, claimDevice, revokeOrder, restoreOrder, revokeItem, restoreItem, ping, listPartnerCodes, createPartnerCode, setPartnerActive } from './orders.js';
 import { adminPage } from './admin.js';
 import { importLegacy } from './legacy.js';
 import { registerLegacy } from './register.js';
@@ -63,7 +63,7 @@ async function route(req, env, now) {
   try {
     // --- Phần mềm khách ---
     if (req.method === 'POST' && path === '/api/orders') {
-      return json(await createOrder(db, catalog, await body(req), now), 201);
+      return json(await createOrderAuto(db, env, catalog, await body(req), now), 201);
     }
     let m = /^\/api\/orders\/([A-Za-z0-9]{6})\/status$/.exec(path);
     if (req.method === 'GET' && m) {
@@ -114,8 +114,8 @@ async function route(req, env, now) {
       if (req.method === 'GET' && path === '/api/admin/orders') return json({ orders: await listOrders(db, { status: url.searchParams.get('status') || '', q: url.searchParams.get('q') || '' }, now), catalog: catalog.byId });
       if (req.method === 'POST' && path === '/api/admin/import-legacy') return json(await importLegacy(db, catalog, await body(req), now), 201);
       if (req.method === 'GET' && path === '/api/admin/transactions') return json({ transactions: await listUnmatched(db) });
-      if (req.method === 'GET' && path === '/api/admin/partner-codes') return json({ partners: await listPartnerCodes(db) });
-      if (req.method === 'POST' && path === '/api/admin/partner-codes') return json(await createPartnerCode(db, await body(req), now), 201);
+      if (req.method === 'GET' && path === '/api/admin/partner-codes') return json({ partners: await listPartnerCodes(db), catalog: catalog.byId });
+      if (req.method === 'POST' && path === '/api/admin/partner-codes') return json(await createPartnerCode(db, await body(req), now, catalog), 201);
       m = /^\/api\/admin\/partner-codes\/([A-Za-z0-9-]{3,20})\/active$/.exec(path);
       if (req.method === 'POST' && m) { const b = await body(req); await setPartnerActive(db, m[1], !!b.active); return json({ ok: true }); }
       m = /^\/api\/admin\/transactions\/(\d+)\/attach$/.exec(path);
