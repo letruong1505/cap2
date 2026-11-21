@@ -1,4 +1,5 @@
 ## Bản mới
+- Giao diện: ô "Thời hạn bản quyền & khóa học" thu gọn, bấm để xem danh sách khóa học
 - Android: bản này yêu cầu cài apk mới để có đề thi thử
 - Thi thử: đề thi thử tốt nghiệp THPT theo cấu trúc mới (90 phút, 22 câu, thang 10), thử nghiệm với Toán 12
 - Android: bấm "Tải về" khi có apk mới thì app tự tải ngay trong app (có thanh tiến độ) rồi mở hộp "Cài đặt" của Android, không cần mở trình duyệt. Lần đầu máy hỏi cho phép app cài ứng dụng.
