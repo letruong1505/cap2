@@ -893,7 +893,20 @@ function showNational() {
   window.scrollTo(0, 0);
 }
 
+/* Thời khóa biểu: khung nhắc học bài và thẻ nhập thời khóa biểu theo lớp. */
+function ttOpen(grade, base) {
+  const subject = (GRADE_SUBJECTS[grade] || []).find((x) => x.replace(/\d+$/, '') === base);
+  if (subject) { currentGrade = grade; renderHome(manifestCache[subject], subject); }
+}
+function ttBanner(slotId, grades) {
+  const T = window.VungTimetable; const slot = document.getElementById(slotId);
+  if (!T || !slot) return;
+  T.banner(slot, { grades, names: SUBJECT_BASE, open: ttOpen });
+}
+function ttSyncNotifications() { if (window.VungTimetable) window.VungTimetable.sync(SUBJECT_BASE); }
+
 function showLaunch() {
+  ttBanner('tt-banner-launch', GRADES.map((g) => g.grade));
   document.getElementById('breadcrumb').textContent = '';
   showOnly('launch');
 }
@@ -912,6 +925,14 @@ function showSubjects(grade) {
     window.VungProgressUI.refreshBadge();
   }
   document.getElementById('breadcrumb').textContent = '';
+  ttBanner('tt-banner', [grade]);
+  if (window.VungTimetable) {
+    window.VungTimetable.editor(document.getElementById('tt-card'), {
+      grade,
+      subjects: (GRADE_SUBJECTS[grade] || []).map((x) => ({ id: x.replace(/\d+$/, ''), name: SUBJECT_LABELS[x] })),
+      onSaved: () => ttBanner('tt-banner', [grade]),
+    });
+  }
   const box = document.getElementById('subject-list');
   box.replaceChildren();
   for (const subject of GRADE_SUBJECTS[grade] || []) {
@@ -1048,6 +1069,7 @@ async function init() {
     renderGrades();
     if (window.VungProgressUI) window.VungProgressUI.refreshBadge();
     await refreshLicense();
+    try { ttSyncNotifications(); } catch { /* nhắc trên điện thoại là phụ */ }
     showLaunch();
   } catch (err) {
     console.error(err);

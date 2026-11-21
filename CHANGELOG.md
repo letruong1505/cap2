@@ -1,4 +1,8 @@
 ## Bản mới
+- Thời khóa biểu: nhập các môn học mỗi ngày, cập nhật mỗi tuần; tối hôm trước app nhắc ôn bài và làm bài các môn của ngày mai (Android có thêm thông báo điện thoại)
+- Android: bản này cần cài apk mới để có thông báo nhắc học bài
+
+## Các bản trước
 - Giao diện: ô "Thời hạn bản quyền & khóa học" thu gọn, bấm để xem danh sách khóa học
 - Android: bản này yêu cầu cài apk mới để có đề thi thử
 - Thi thử: đề thi thử tốt nghiệp THPT theo cấu trúc mới (90 phút, 22 câu, thang 10), thử nghiệm với Toán 12
@@ -22,8 +26,6 @@
 - Tiếng Anh: lý thuyết lớp 6 đến 12 trình bày lại dạng thẻ dễ học (tóm tắt, công thức từng dòng, bảng, ví dụ có bản dịch và nút nghe đọc, lỗi hay gặp, câu hỏi thử nhanh).
 - Địa lí 11 (bài 4) và Lịch sử 11 (bài 5): lý thuyết dạng thẻ có bảng so sánh, trục thời gian, mẹo nhớ và câu hỏi thử nhanh (bài mẫu).
 - Android: máy cài apk cũ sẽ được nhắc cài apk mới khi có bài học mới (gói tự cập nhật chỉ đổi giao diện, bài học nằm trong apk).
-
-## Các bản trước
 - Biểu tượng (icon) Nam Linh Educenter cho cả bản Windows và Android.
 - Khóa cấp trực tiếp (USB) tự đăng ký vào hệ thống bằng số điện thoại phụ huynh khi bật "Cho phụ huynh xem trên điện thoại".
 - Phụ huynh xem kết quả học của con trên điện thoại (tùy chọn, mặc định tắt): bật ở phần Báo cáo cho phụ huynh trên máy tính, xem theo ngày hoặc khoảng ngày bằng mã đơn và số điện thoại đã mua; chọn từng khóa hoặc tất cả.
