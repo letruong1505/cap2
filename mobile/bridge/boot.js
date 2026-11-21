@@ -26,10 +26,10 @@
   }
   // Thông báo nhắc học bài (thời khóa biểu): dùng plugin LocalNotifications nếu apk có; không có thì app chỉ nhắc khi mở.
   window.NLNotify = (function () {
-    var cap = window.Capacitor; var ok = false;
-    try { ok = !!(cap && cap.registerPlugin && cap.isPluginAvailable && cap.isPluginAvailable('LocalNotifications')); } catch (e) { ok = false; }
-    if (!ok) return null;
-    var LN = cap.registerPlugin('LocalNotifications');
+    // Cầu nối gốc của Capacitor không có registerPlugin (chỉ có khi nhúng @capacitor/core), nên dùng thẳng Capacitor.Plugins như TextToSpeech.
+    var cap = window.Capacitor; var LN = null;
+    try { LN = cap && cap.Plugins && cap.Plugins.LocalNotifications; } catch (e) { LN = null; }
+    if (!LN) return null;
     return {
       request: function () { return LN.requestPermissions().then(function (r) { return r.display === 'granted'; }); },
       // Thay toàn bộ lịch cũ bằng danh sách mới [{id, at (ms), title, body}].
@@ -63,10 +63,9 @@
       openUrl: function (u) { window.open(u, '_blank'); },
       // Tải apk ngay trong app rồi mở hộp cài đặt của Android (apk cũ chưa có plugin này thì null: dùng openUrl như trước).
       installApk: (function () {
-        var cap = window.Capacitor;
-        var ok = false; try { ok = !!(cap && cap.registerPlugin && cap.isPluginAvailable && cap.isPluginAvailable('ApkInstaller')); } catch (e) { ok = false; }
-        if (!ok) return null;
-        var plug = cap.registerPlugin('ApkInstaller');
+        var cap = window.Capacitor; var plug = null;
+        try { plug = cap && cap.Plugins && cap.Plugins.ApkInstaller; } catch (e) { plug = null; }
+        if (!plug) return null;
         return function (url, onProgress) {
           var sub = plug.addListener('progress', function (e) { try { onProgress(e && e.percent | 0); } catch (x) { /* bỏ qua */ } });
           var off = function () { Promise.resolve(sub).then(function (h) { if (h && h.remove) h.remove(); }, function () {}); };
