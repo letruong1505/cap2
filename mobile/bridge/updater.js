@@ -1,6 +1,6 @@
 // Cập nhật ứng dụng Android. Hai đường:
 //  1) Gói nội dung (OTA): tải gói đã ký từ máy chủ, kiểm tra chữ ký, lưu lại; lần mở sau trang khởi động sẽ dùng gói này.
-//  2) Apk mới: khi thay đổi nằm ngoài phần giao diện (hoặc gói OTA không dùng được) thì báo có bản mới và mở địa chỉ tải apk.
+//  2) Apk mới: khi thay đổi nằm ngoài phần giao diện (hoặc gói OTA không dùng được) thì báo có bản mới và tải apk ngay trong app rồi mở hộp cài đặt của Android (không có plugin thì mở địa chỉ tải).
 // Trạng thái dùng cùng giao thức với bản Windows (idle/checking/available/downloading/ready/none/error) để dùng chung thanh thông báo.
 (function (root, factory) {
   if (typeof module === 'object' && module.exports) module.exports = factory();
@@ -100,8 +100,19 @@
       },
       // Với apk mới: mở địa chỉ tải; Android sẽ hỏi cài đặt như mọi ứng dụng tải ngoài CH Play.
       download: function () {
-        if (state.state === 'available' && apkUrl) { try { o.openUrl(apkUrl); } catch (e) { /* bỏ qua */ } }
-        return Promise.resolve(snap());
+        if (state.state !== 'available' || !apkUrl) return Promise.resolve(snap());
+        var url = apkUrl;
+        var viaBrowser = function () { try { o.openUrl(url); } catch (e) { /* bỏ qua */ } };
+        if (!o.installApk) { viaBrowser(); return Promise.resolve(snap()); }
+        // Tải ngay trong app rồi mở hộp cài đặt; lỗi bất kỳ (trừ chưa cấp quyền) thì quay về cách mở trình duyệt.
+        set({ state: 'downloading', percent: 0, error: '' });
+        return o.installApk(url, function (p) { set({ state: 'downloading', percent: p }); }).then(function () {
+          return set({ state: 'available', error: '' });
+        }, function (e) {
+          if (e && e.code === 'needs_permission') return set({ state: 'available', error: 'Hãy bật "Cho phép từ nguồn này" rồi quay lại app và bấm Tải về lần nữa.' });
+          viaBrowser();
+          return set({ state: 'available', error: '' });
+        });
       },
       // Dùng ngay gói OTA đã tải: nạp lại từ trang khởi động.
       install: function () {
