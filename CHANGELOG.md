@@ -1,9 +1,11 @@
 ## Bản mới
-- AI cho người đi làm: thêm bài tổng kết và dự án cuối cho lớp Gemini (Bài 12) và lớp ChatGPT (Bài 13), có phiếu tự đánh giá năng lực, gói hồ sơ cuối bằng dữ liệu giả lập kèm đáp án
-- AI cho người đi làm – lớp Gemini: thêm 8 bài (Bài 4–11) dạng thẻ từ giáo trình cho khối văn phòng, kế toán, hành chính: nền tảng và chọn công cụ, câu lệnh R-C-T-F, email–họp–báo cáo, bảng tính và đối chiếu, văn bản–SOP–báo giá, Gemini trong hệ sinh thái Google (lệnh @, NotebookLM), bảo mật và kiểm duyệt, lộ trình 4 tuần. Có ví dụ, 16 câu lệnh mẫu và bài thực hành dữ liệu giả lập kèm đáp án
+- Gia sư AI: giáo trình trình bày lại theo dạng thẻ (tóm tắt đầu bài, mỗi ý một thẻ đánh số, ý dài tách thành gạch đầu dòng) để dễ đọc trên điện thoại
 - Android: bản này yêu cầu cài apk mới
 
 ## Các bản trước
+- AI cho người đi làm: thêm bài tổng kết và dự án cuối cho lớp Gemini (Bài 12) và lớp ChatGPT (Bài 13), có phiếu tự đánh giá năng lực, gói hồ sơ cuối bằng dữ liệu giả lập kèm đáp án
+- AI cho người đi làm – lớp Gemini: thêm 8 bài (Bài 4–11) dạng thẻ từ giáo trình cho khối văn phòng, kế toán, hành chính: nền tảng và chọn công cụ, câu lệnh R-C-T-F, email–họp–báo cáo, bảng tính và đối chiếu, văn bản–SOP–báo giá, Gemini trong hệ sinh thái Google (lệnh @, NotebookLM), bảo mật và kiểm duyệt, lộ trình 4 tuần. Có ví dụ, 16 câu lệnh mẫu và bài thực hành dữ liệu giả lập kèm đáp án
+- Android: bản này yêu cầu cài apk mới
 - AI cho người đi làm – lớp ChatGPT: Bài 4–9 có thẻ "Thực hành" và Bài 11 có bộ dữ liệu mẫu cho Case 1–4, đều là dữ liệu giả lập, prompt có nút Sao chép và đáp án để tự đối chiếu
 - AI cho người đi làm: Bài 1–3 (phần chung cho cả ba AI) và Bài 4–12 lớp ChatGPT chuyển sang dạng thẻ (tóm tắt đầu bài, mỗi ý một thẻ đánh số, ý dài tách thành gạch đầu dòng, khung "Thử ngay") để dễ đọc trên điện thoại
 - Android: bản này yêu cầu cài apk mới

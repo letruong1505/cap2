@@ -88,3 +88,11 @@ test('Bài tổng kết Gemini (Bài 12) và ChatGPT (Bài 13): có phiếu tự
   for (const t of ['21,10%', '6.600.000', '5.450.000']) assert.ok(g.html.includes(t), t);
   for (const t of ['89,74%', '1,9 điểm', '13']) assert.ok(c.html.includes(t), t);
 });
+
+test('Gia sư AI: mọi bài dạng thẻ (tóm tắt đầu bài, thẻ đánh số, không còn khung meta cũ)', () => {
+  for (const k of Object.keys(C)) {
+    assert.ok(C[k].html.startsWith('<div class="tsum">'), k);
+    assert.ok((C[k].html.match(/class="tcard"/g) || []).length >= 3, k);
+    assert.ok(!C[k].html.includes('class="meta"'), k);
+  }
+});
