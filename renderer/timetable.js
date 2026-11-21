@@ -83,7 +83,7 @@
           id: Number(iso(D).replace(/-/g, '')) * 100 + Number(g),
           at: at.getTime(),
           title: grades.length > 1 ? `Nam Linh · Lớp ${g}` : 'Nam Linh Educenter',
-          body: `Ngày mai (${DOW_NAME[dow]}) học ${list}. Ôn bài và làm bài trước nhé!` + (monday ? ' Nhớ cập nhật thời khóa biểu tuần mới.' : ''),
+          body: (typeof window !== 'undefined' && window.vungBai && window.vungBai.role === 'parent' ? `Ngày mai (${DOW_NAME[dow]}) con học ${list}. Nhắc con ôn bài và làm bài trước nhé!` : `Ngày mai (${DOW_NAME[dow]}) học ${list}. Ôn bài và làm bài trước nhé!`) + (monday ? ' Nhớ cập nhật thời khóa biểu tuần mới.' : ''),
         });
       }
     });

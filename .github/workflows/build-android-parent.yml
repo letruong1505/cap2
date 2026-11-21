@@ -1,0 +1,107 @@
+name: Build Android apk Phu huynh
+
+# App Phụ huynh: apk riêng (vn.namlinh.phuhuynh), rất nhẹ vì không chứa bài học, ít phải cập nhật.
+# Dùng chung khóa ký và dự án Android với app học; chỉ đổi mã ứng dụng, tên và phần giao diện.
+on:
+  workflow_dispatch:
+  push:
+    branches: [thpt-1-0-0]
+    paths:
+      - 'parent/**'
+      - 'tools/build-parent-www.js'
+      - '.github/workflows/build-android-parent.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Đặt số bản
+        run: |
+          echo "NL_VERSION_CODE=${{ github.run_number }}" >> "$GITHUB_ENV"
+          echo "NL_VERSION_NAME=1.0.${{ github.run_number }}" >> "$GITHUB_ENV"
+
+      - name: Gói giao diện Phụ huynh (www)
+        run: node tools/build-parent-www.js --out mobile/www --version "$NL_VERSION_NAME"
+
+      - name: Đổi mã ứng dụng và tên thành Phụ huynh
+        run: |
+          sed -i 's/"appId": *"[^"]*"/"appId": "vn.namlinh.phuhuynh"/; s/"appName": *"[^"]*"/"appName": "Nam Linh Phụ huynh"/' mobile/capacitor.config.json
+          sed -i 's/applicationId "vn.namlinh.educenter"/applicationId "vn.namlinh.phuhuynh"/' mobile/android/app/build.gradle
+          sed -i 's#<string name="app_name">[^<]*</string>#<string name="app_name">Nam Linh Phụ huynh</string>#; s#<string name="title_activity_main">[^<]*</string>#<string name="title_activity_main">Nam Linh Phụ huynh</string>#; s#<string name="package_name">[^<]*</string>#<string name="package_name">vn.namlinh.phuhuynh</string>#; s#<string name="custom_url_scheme">[^<]*</string>#<string name="custom_url_scheme">vn.namlinh.phuhuynh</string>#' mobile/android/app/src/main/res/values/strings.xml
+          grep -n "applicationId" mobile/android/app/build.gradle
+          cat mobile/android/app/src/main/res/values/strings.xml
+
+      - name: Cài Capacitor và đồng bộ vào dự án Android
+        working-directory: mobile
+        run: |
+          npm ci --no-audit --no-fund
+          npx cap sync android
+
+      - name: Giải mã khóa ký (nếu đã cấu hình)
+        id: sign
+        env:
+          KS_B64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          KS_PASS: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          KS_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+        run: |
+          if [ -z "$KS_B64" ] || [ -z "$KS_PASS" ] || [ -z "$KS_ALIAS" ]; then
+            echo "Chưa cấu hình khóa ký: chỉ build bản thử (debug), không đẩy lên R2."
+            echo "signed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "$KS_B64" | base64 -d > "$RUNNER_TEMP/nl-release.jks"
+          echo "NL_KEYSTORE_PATH=$RUNNER_TEMP/nl-release.jks" >> "$GITHUB_ENV"
+          echo "signed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Build apk
+        working-directory: mobile/android
+        env:
+          NL_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          NL_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          NL_KEY_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+        run: |
+          chmod +x gradlew
+          if [ "${{ steps.sign.outputs.signed }}" = "true" ]; then
+            ./gradlew --no-daemon assembleRelease
+            cp app/build/outputs/apk/release/app-release.apk "$RUNNER_TEMP/nam-linh-phu-huynh.apk"
+          else
+            ./gradlew --no-daemon assembleDebug
+            cp app/build/outputs/apk/debug/app-debug.apk "$RUNNER_TEMP/nam-linh-phu-huynh.apk"
+          fi
+          ls -la "$RUNNER_TEMP/nam-linh-phu-huynh.apk"
+
+      - name: Kiểm tra chữ ký apk
+        run: |
+          APKSIGNER=$(ls "$ANDROID_HOME"/build-tools/*/apksigner | sort -V | tail -1)
+          "$APKSIGNER" verify --print-certs "$RUNNER_TEMP/nam-linh-phu-huynh.apk" | head -5
+
+      - name: Upload apk
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.sign.outputs.signed == 'true' && 'nam-linh-phu-huynh-apk' || 'nam-linh-phu-huynh-apk-thu-nghiem' }}
+          path: ${{ runner.temp }}/nam-linh-phu-huynh.apk
+
+      - name: Publish apk to Cloudflare R2
+        if: steps.sign.outputs.signed == 'true' && github.event_name == 'workflow_dispatch'
+        env:
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+        run: |
+          if [ -z "$R2_BUCKET" ] || [ -z "$R2_ACCOUNT_ID" ]; then echo "Chưa cấu hình R2, bỏ qua bước đẩy apk."; exit 0; fi
+          EP="https://$R2_ACCOUNT_ID.r2.cloudflarestorage.com"
+          aws s3 cp "$RUNNER_TEMP/nam-linh-phu-huynh.apk" "s3://$R2_BUCKET/phuhuynh-android/nam-linh-phu-huynh.apk" --endpoint-url "$EP" --content-type application/vnd.android.package-archive
+          echo "Đã đẩy apk Phụ huynh bản $NL_VERSION_NAME"
