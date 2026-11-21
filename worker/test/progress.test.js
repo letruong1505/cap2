@@ -191,3 +191,19 @@ test('phần thưởng nhiều bé: view trả phần thưởng của từng đ�
   assert.equal(v.rewards.length, 1);
   assert.deepEqual([v.rewards[0].code, v.rewards[0].grades.slice().sort((a, b) => a - b), v.rewards[0].need], [code, [9, 12], 5]);
 });
+
+test('thời khóa biểu: máy học sinh gửi, phụ huynh xem; dữ liệu lạ bị làm sạch, xóa dữ liệu thì mất', async () => {
+  const { db, code } = await setup();
+  await progressSettings(db, { ...dev(code), enabled: true }, NOW);
+  const tt = { v: 1, remindOn: true, remindHour: 20, grades: { 9: { week: '2026-11-16', days: { 1: ['toan', 'x:Ngữ văn'], 2: ['anh', 5, 'y'.repeat(100)] }, evil: 1 }, abc: { week: '2026-11-16', days: {} }, 8: { week: 'xấu', days: {} } }, extra: 'bỏ' };
+  await progressSettings(db, { ...dev(code), timetable: tt }, NOW);
+  const v = await view(db, code);
+  assert.equal(v.timetables.length, 1);
+  const d = v.timetables[0].data;
+  assert.deepEqual(Object.keys(d.grades), ['9']);
+  assert.deepEqual(d.grades[9].days[1], ['toan', 'x:Ngữ văn']);
+  assert.equal(d.grades[9].days[2][1].length, 40);
+  assert.equal(d.remindHour, 20); assert.equal(d.extra, undefined);
+  await progressSettings(db, { ...dev(code), purge: true }, NOW);
+  assert.equal((await view(db, code)).timetables.length, 0);
+});

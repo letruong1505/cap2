@@ -46,3 +46,11 @@ test('ota/latest: trang web khác không nhận CORS', () => withFetch({ 'https:
   const res = await handle(get('/api/app/android/ota/1', 'https://evil.test'), env());
   assert.equal(res.headers.get('access-control-allow-origin'), null);
 }));
+
+test('parent/latest: đọc latest.json của app Phụ huynh, chỉ giữ trường cần thiết', () => withFetch({
+  'https://r2.test/phuhuynh-android/latest.json': { body: JSON.stringify({ version: '1.0.3', versionCode: 3, apk: 'nam-linh-phu-huynh.apk', notes: 'Mới', secret: 'x' }) },
+}, async () => {
+  const res = await handle(get('/api/app/parent/latest'), env());
+  assert.equal(res.status, 200);
+  assert.deepEqual(await res.json(), { version: '1.0.3', versionCode: 3, notes: 'Mới', apkUrl: 'https://r2.test/phuhuynh-android/nam-linh-phu-huynh.apk' });
+}));

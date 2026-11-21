@@ -32,13 +32,21 @@ jobs:
           echo "NL_VERSION_NAME=1.0.${{ github.run_number }}" >> "$GITHUB_ENV"
 
       - name: Gói giao diện Phụ huynh (www)
-        run: node tools/build-parent-www.js --out mobile/www --version "$NL_VERSION_NAME"
+        run: node tools/build-parent-www.js --out mobile/www --version "$NL_VERSION_NAME" --version-code "$NL_VERSION_CODE"
 
       - name: Đổi mã ứng dụng và tên thành Phụ huynh
         run: |
-          sed -i 's/"appId": *"[^"]*"/"appId": "vn.namlinh.phuhuynh"/; s/"appName": *"[^"]*"/"appName": "Nam Linh Phụ huynh"/' mobile/capacitor.config.json
+          sed -i 's/"appId": *"[^"]*"/"appId": "vn.namlinh.phuhuynh"/; s/"appName": *"[^"]*"/"appName": "Nam Linh Educenter cho phụ huynh"/' mobile/capacitor.config.json
           sed -i 's/applicationId "vn.namlinh.educenter"/applicationId "vn.namlinh.phuhuynh"/' mobile/android/app/build.gradle
-          sed -i 's#<string name="app_name">[^<]*</string>#<string name="app_name">Nam Linh Phụ huynh</string>#; s#<string name="title_activity_main">[^<]*</string>#<string name="title_activity_main">Nam Linh Phụ huynh</string>#; s#<string name="package_name">[^<]*</string>#<string name="package_name">vn.namlinh.phuhuynh</string>#; s#<string name="custom_url_scheme">[^<]*</string>#<string name="custom_url_scheme">vn.namlinh.phuhuynh</string>#' mobile/android/app/src/main/res/values/strings.xml
+          cat > mobile/android/app/src/main/res/values/strings.xml <<'XML'
+          <?xml version='1.0' encoding='utf-8'?>
+          <resources>
+              <string name="app_name">Nam Linh Educenter cho phụ huynh</string>
+              <string name="title_activity_main">Nam Linh Educenter cho phụ huynh</string>
+              <string name="package_name">vn.namlinh.phuhuynh</string>
+              <string name="custom_url_scheme">vn.namlinh.phuhuynh</string>
+          </resources>
+          XML
           grep -n "applicationId" mobile/android/app/build.gradle
           cat mobile/android/app/src/main/res/values/strings.xml
 
@@ -104,4 +112,6 @@ jobs:
           if [ -z "$R2_BUCKET" ] || [ -z "$R2_ACCOUNT_ID" ]; then echo "Chưa cấu hình R2, bỏ qua bước đẩy apk."; exit 0; fi
           EP="https://$R2_ACCOUNT_ID.r2.cloudflarestorage.com"
           aws s3 cp "$RUNNER_TEMP/nam-linh-phu-huynh.apk" "s3://$R2_BUCKET/phuhuynh-android/nam-linh-phu-huynh.apk" --endpoint-url "$EP" --content-type application/vnd.android.package-archive
-          echo "Đã đẩy apk Phụ huynh bản $NL_VERSION_NAME"
+          printf '{"version":"%s","versionCode":%s,"apk":"nam-linh-phu-huynh.apk","name":"Nam Linh Educenter cho phụ huynh"}\n' "$NL_VERSION_NAME" "$NL_VERSION_CODE" > latest.json
+          aws s3 cp latest.json "s3://$R2_BUCKET/phuhuynh-android/latest.json" --endpoint-url "$EP" --cache-control "no-cache" --content-type application/json
+          echo "Đã đẩy apk bản $NL_VERSION_NAME"
