@@ -50,8 +50,9 @@ test('app Phụ huynh: có màn mua cho con, mã gia đình và tóm tắt nội
 test('khóa Tư duy & lập trình có trong danh sách khóa của app Phụ huynh', () => {
   const w = { window: {} };
   require('vm').runInNewContext(fs.readFileSync(path.join(__dirname, '..', 'parent', 'courses.js'), 'utf8'), w);
-  const c = w.window.PARENT_COURSES['tu-duy-lap-trinh'];
-  assert.ok(c.content.length >= 3 && /Scratch/.test(c.content.join()) && /Python/.test(c.content.join()));
+  const sc = w.window.PARENT_COURSES['tu-duy-lap-trinh-scratch'], py = w.window.PARENT_COURSES['tu-duy-lap-trinh-python'];
+  assert.ok(sc.content.length >= 2 && /Scratch/.test(sc.intro));
+  assert.ok(py.content.length >= 3 && /Chương 1/.test(py.content.join()) && /Python/.test(py.intro));
 });
 
 test('app Phụ huynh: nút bấm gắn bằng addEventListener (CSP chặn onclick dạng chuỗi); khóa người đi làm ghi "Mua khóa học"', () => {

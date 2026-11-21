@@ -131,14 +131,19 @@ test('Tư duy & lập trình: nối vào app, 2 bài đầu miễn phí', () => 
   for (const x of ['tu-duy-content.js', 'tu-duy.js', 'id="tuduy-body"', 'id="open-tuduy"']) assert.ok(idx.includes(x), x);
   const app = fs.readFileSync(path.join(__dirname, '../renderer/app.js'), 'utf8');
   assert.ok(app.includes("'tuduy'") && app.includes('showTuDuy'));
-  assert.ok(fs.readFileSync(path.join(__dirname, '../renderer/tu-duy.js'), 'utf8').includes("FREE = ['tongquan', 'caidat', 'bai1']"));
+  assert.ok(fs.readFileSync(path.join(__dirname, '../renderer/tu-duy.js'), 'utf8').includes("k811: ['tongquan', 'caidat', 'bai1'], k1218: ['tongquan', 'caidat', 'c1b2']"));
 });
 
 test('Tư duy & lập trình: có trong catalog bán hàng, keygen và trang phụ huynh', () => {
   const cat = require('../renderer/catalog.js');
-  assert.strictEqual(cat.byId['tu-duy-lap-trinh'].price, 1490000);
-  assert.ok(fs.readFileSync(path.join(__dirname, '../keygen/index.html'), 'utf8').includes('value="tu-duy-lap-trinh"'));
-  assert.ok(fs.readFileSync(path.join(__dirname, '../parent/courses.js'), 'utf8').includes("'tu-duy-lap-trinh'"));
+  // Hai khóa bán riêng, mỗi khóa 1.490.000 đ; mã bản cũ vẫn tồn tại để khóa đã bán còn dùng được nhưng không còn nằm trong danh sách bán.
+  assert.strictEqual(cat.byId['tu-duy-lap-trinh-scratch'].price, 1490000);
+  assert.strictEqual(cat.byId['tu-duy-lap-trinh-python'].price, 1490000);
+  assert.ok(cat.byId['tu-duy-lap-trinh'].legacy && !cat.ALL.some((x) => x.id === 'tu-duy-lap-trinh'));
+  const kg = fs.readFileSync(path.join(__dirname, '../keygen/index.html'), 'utf8');
+  assert.ok(kg.includes('value="tu-duy-lap-trinh-scratch"') && kg.includes('value="tu-duy-lap-trinh-python"'));
+  const pc = fs.readFileSync(path.join(__dirname, '../parent/courses.js'), 'utf8');
+  assert.ok(pc.includes("'tu-duy-lap-trinh-scratch'") && pc.includes("'tu-duy-lap-trinh-python'"));
 });
 
 test('Tư duy & lập trình: bài Cài đặt có hình minh họa và hướng dẫn đúng công cụ', () => {
@@ -165,4 +170,37 @@ test('Tư duy & lập trình: mỗi bài học có đủ 7 mục kiến thức v
       assert.ok((h.match(/class="terr"/g) || []).length >= 3, t + k);
     }
   }
+});
+
+test('Python 12–18: mục lục 8 chương, Bài 0 và bài tóm tắt cuối mỗi chương; bài mới có giải nghĩa câu lệnh và đủ hình', () => {
+  const w = {};
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../renderer/tu-duy-content.js'), 'utf8'), { window: w });
+  const toc = w.TUDUY_TOC.k1218;
+  assert.strictEqual(toc.filter((g) => /^Chương \d/.test(g.t)).length, 8);
+  assert.strictEqual(toc[0].items[0].key, 'tongquan');
+  for (const g of toc.filter((x) => /^Chương \d/.test(x.t))) assert.ok(/^c\d+t$/.test(g.items[g.items.length - 1].key), g.t + ' phải kết thúc bằng bài tóm tắt');
+  const lessons = toc.flatMap((g) => g.items).filter((r) => !/^c\d+t$/.test(r.key) && r.key !== 'tongquan' && r.key !== 'bai6');
+  assert.ok(lessons.length >= 26, 'đủ 26 bài học: ' + lessons.length);
+  for (const r of toc.flatMap((g) => g.items)) assert.strictEqual(r.ready, !!w.TUDUY.k1218[r.key], r.key);
+  // chương 1 đã viết đủ
+  for (const k of ['tongquan', 'caidat', 'c1b2', 'c1b3', 'c1t']) assert.ok(w.TUDUY.k1218[k], k);
+  for (const k of ['c1b2', 'c1b3']) {
+    const h = w.TUDUY.k1218[k].html;
+    assert.ok(h.includes('Giải nghĩa từng phần của câu lệnh') && h.includes('Nếu thiếu hoặc viết sai thì sao'), k);
+    assert.strictEqual((h.match(/class="tcard tprac"/g) || []).length, 5, k);
+    assert.ok((h.match(/<svg/g) || []).length + (h.match(/class="tstep"/g) || []).length >= 10, k + ' cần 10 hình trở lên');
+    assert.ok((h.match(/class="terr"/g) || []).length >= 3, k);
+  }
+  const intro = w.TUDUY.k1218.tongquan.html;
+  assert.ok(intro.includes('Vì sao chọn Python') && intro.includes('Lộ trình 8 chương'));
+  const t1 = w.TUDUY.k1218.c1t.html;
+  assert.ok(t1.includes('Sơ đồ tóm tắt chương') && t1.includes('Dự án') && t1.includes('Tự kiểm tra') && (t1.match(/<svg/g) || []).length >= 4);
+  // kết quả lỗi là kết quả chạy thật của Python
+  assert.ok(w.TUDUY.k1218.c1b2.html.includes('NameError'));
+  assert.ok(w.TUDUY.k1218.c1b3.html.includes('ZeroDivisionError'));
+});
+test('Tư duy & lập trình: quyền mở theo từng khóa (Scratch, Python) và khóa bản cũ mở cả hai', () => {
+  const src = fs.readFileSync(path.join(__dirname, '../renderer/tu-duy.js'), 'utf8');
+  assert.ok(src.includes("lic.courses.includes(COURSE[t]) || lic.courses.includes(LEGACY_ID)"));
+  assert.ok(src.includes("'tu-duy-lap-trinh-scratch'") && src.includes("'tu-duy-lap-trinh-python'"));
 });

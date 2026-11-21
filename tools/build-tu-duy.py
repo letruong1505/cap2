@@ -183,13 +183,60 @@ c7c = 'def so_chan(ds):\n    dem = 0\n    for x in ds:\n        if x % 2 == 0:\n
 ds8 = 'Ăn uống\t450000\nĂn uống\t380000\nHọc tập\t300000\nGiải trí\t150000\nHọc tập\t220000\nGiải trí\t90000'
 c8 = 'du_lieu = [("Ăn uống", 450000), ("Ăn uống", 380000), ("Học tập", 300000),\n           ("Giải trí", 150000), ("Học tập", 220000), ("Giải trí", 90000)]\ntong = {}\nfor muc, so_tien in du_lieu:\n    tong[muc] = tong.get(muc, 0) + so_tien\nfor muc in tong:\n    print(muc, tong[muc])\nprint("Tổng:", sum(tong.values()))'
 
-import os, sys
+import os, sys, re
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import tuduy_k811, tuduy_py
+import tuduy_k811, tuduy_py, tuduy_py2
 K1.update(tuduy_k811.build())
 P.update(tuduy_py.build())
-ORDER = ['tongquan', 'caidat', 'bai1', 'bai2', 'bai3', 'bai4', 'bai5', 'bai6', 'bai7', 'bai8']
-OUT = {'k811': {k: K1[k] for k in ORDER}, 'k1218': {k: P[k] for k in ORDER}}
-js = '// Sinh bởi tools/build-tu-duy.py – đừng sửa tay.\nwindow.TUDUY = ' + json.dumps(OUT, ensure_ascii=False, indent=1) + ';\n'
+P2 = tuduy_py2.build()
+pre = P2.pop('_pre_caidat')
+P.update(P2)
+P['caidat']['html'] = pre + P['caidat']['html']
+
+# ---- Mục lục. Mỗi mục: (khóa bài, tên ngắn). Bài chưa viết hiển thị "Sắp ra mắt" cho tới khi có nội dung.
+PY_TOC = [
+  ('Mở đầu', [('tongquan', 'Giới thiệu khóa học và vì sao chọn Python')]),
+  ('Chương 1 · Bắt đầu với Python', [('caidat', 'Python là gì và cài đặt công cụ'), ('c1b2', 'Chương trình đầu tiên: Hello World và cấu trúc chương trình'), ('c1b3', 'Ghi chú và đọc thông báo lỗi'), ('c1t', None)]),
+  ('Chương 2 · Biến, số và chuỗi', [('bai2', 'Biến và kiểu dữ liệu'), ('c2b2', 'Số và phép toán'), ('c2b3', 'Chuỗi: cắt, ghép, tìm'), ('bai1', 'Nhập, xuất và từ bài toán đến thuật toán'), ('c2t', None)]),
+  ('Chương 3 · Cấu trúc rẽ nhánh', [('c3b1', 'Biểu thức lô-gíc (Boolean)'), ('bai3', 'Điều kiện if – elif – else và kiểm thử biên'), ('c3b3', 'Kiểm thử giá trị biên'), ('c3t', None)]),
+  ('Chương 4 · Cấu trúc lặp', [('c4b1', 'Vòng lặp while'), ('bai4', 'Vòng lặp for và lỗi lệch một'), ('c4b3', 'break, continue và vòng lặp lồng nhau'), ('bai7', 'Gỡ lỗi và viết test'), ('c4t', None)]),
+  ('Chương 5 · Cấu trúc dữ liệu', [('bai5', 'Danh sách (list) và hàm'), ('c5b2', 'Tuple và set'), ('c5b3', 'Từ điển (dict)'), ('c5b4', 'Duyệt, tìm kiếm và sắp xếp'), ('c5t', None)]),
+  ('Chương 6 · Hàm', [('c6b1', 'Hàm là gì, cách xây dựng một hàm'), ('c6b2', 'Tham số, giá trị trả về, phạm vi biến'), ('c6b3', 'Chia bài toán lớn thành các hàm'), ('c6t', None)]),
+  ('Chương 7 · Làm việc với tệp dữ liệu', [('c7b1', 'Mở, đọc và ghi tệp'), ('c7b2', 'Xử lý dữ liệu CSV và làm quen thư viện pandas'), ('bai8', 'Dự án: sổ chi tiêu có kiểm chứng'), ('c7t', None)]),
+  ('Chương 8 · Lập trình hướng đối tượng', [('c8b1', 'Lớp và đối tượng'), ('c8b2', 'Thuộc tính, phương thức, hàm khởi tạo'), ('c8b3', 'Dự án tổng kết: quản lý thư viện mini'), ('c8t', None)]),
+  ('Chuyên đề', [('bai6', 'Tư duy ngược')]),
+]
+SC_TOC = [('', [(k, None) for k in ['tongquan', 'caidat', 'bai1', 'bai2', 'bai3', 'bai4', 'bai5', 'bai6', 'bai7', 'bai8']])]
+PREFIX = re.compile(r'^(Bài\s*[\d.]+|Mở đầu|Cài đặt|Tóm tắt Chương\s*\d+)\s*[·:.\-–]\s*')
+
+def toc_for(track, toc, groups):
+    """Dựng mục lục và đồng bộ tiêu đề từng bài với số bài trong mục lục."""
+    out = []; ch = 0
+    for gi, (gt, items) in enumerate(toc):
+        rows = []; n = 0
+        m = re.match(r'Chương (\d+)', gt); chn = int(m.group(1)) if m else 0
+        for key, name in items:
+            L = track.get(key)
+            if key.endswith('t') and re.match(r'c\d+t$', key): label = 'Tóm tắt'; title = 'Tóm tắt chương ' + str(chn)
+            else:
+                n += 1
+                label = ('Mở đầu' if key == 'tongquan' and groups else 'Bài %d.%d' % (chn, n) if chn else ('Chuyên đề' if gt == 'Chuyên đề' else None))
+                short = name or (PREFIX.sub('', L['title']) if L else key)
+                title = short
+            if L and groups:
+                L['title'] = (label + ' · ' if label and key != 'tongquan' else 'Mở đầu · ' if key == 'tongquan' else '') + (title if label != 'Tóm tắt' else PREFIX.sub('', L['title']).replace('Bắt đầu với Python', 'Bắt đầu với Python'))
+                if label == 'Tóm tắt': L['title'] = 'Tóm tắt Chương %d · %s' % (chn, gt.split('· ', 1)[1])
+            rows.append({'key': key, 'label': label, 'title': title, 'ready': bool(L)})
+        out.append({'t': gt, 'items': rows})
+    return out
+
+ORDER_K = ['tongquan', 'caidat', 'bai1', 'bai2', 'bai3', 'bai4', 'bai5', 'bai6', 'bai7', 'bai8']
+OUT = {'k811': {k: K1[k] for k in ORDER_K}, 'k1218': {k: P[k] for k in P}}
+TOC = {'k811': toc_for(OUT['k811'], SC_TOC, False), 'k1218': toc_for(OUT['k1218'], PY_TOC, True)}
+# nhãn "Bài N" của lộ trình Scratch
+for row in TOC['k811'][0]['items']:
+    k = row['key']; row['label'] = 'Mở đầu' if k == 'tongquan' else 'Cài đặt' if k == 'caidat' else 'Bài ' + k[3:]
+    row['title'] = PREFIX.sub('', OUT['k811'][k]['title'])
+js = '// Sinh bởi tools/build-tu-duy.py – đừng sửa tay.\nwindow.TUDUY = ' + json.dumps(OUT, ensure_ascii=False, indent=1) + ';\nwindow.TUDUY_TOC = ' + json.dumps(TOC, ensure_ascii=False, indent=1) + ';\n'
 open(os.path.join(os.path.dirname(__file__), '..', 'renderer', 'tu-duy-content.js'), 'w', encoding='utf-8').write(js)
 print('ok', {k: len(v) for k, v in OUT.items()})
