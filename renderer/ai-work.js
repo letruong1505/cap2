@@ -4,7 +4,12 @@
   'use strict';
   const COURSES = [
     { id: 'ai-nguoi-di-lam-chatgpt', ai: 'chatgpt', label: 'ChatGPT', mark: 'GPT', color: '#d9822b',
-      strong: ['Việc nhỏ đa dạng mỗi ngày', 'Tạo ảnh, giọng nói', 'Tự dựng trợ lý riêng'], fit: 'Hợp: Bán hàng, truyền thông, quản lý nhỏ', own: [] },
+      strong: ['Việc nhỏ đa dạng mỗi ngày', 'Tạo ảnh, giọng nói', 'Tự dựng trợ lý riêng'], fit: 'Hợp: Bán hàng, truyền thông, quản lý nhỏ',
+      own: [
+        ['Bài 4', 'Vai trò của ChatGPT và thiết lập an toàn'], ['Bài 5', 'Công thức giao việc và quy trình 6 bước'], ['Bài 6', 'Email, Word và SOP'],
+        ['Bài 7', 'Excel và phân tích KPI'], ['Bài 8', 'PowerPoint, cuộc họp và quản lý lịch'], ['Bài 9', 'Hành chính, nhân sự và mua hàng'],
+        ['Bài 10', 'Dự án, nghiên cứu nguồn và tự động hóa'], ['Bài 11', 'Năm case study và lộ trình 30 ngày'], ['Bài 12', 'Thư viện 96 prompt và phụ lục'],
+      ] },
     { id: 'ai-nguoi-di-lam-gemini', ai: 'gemini', label: 'Gemini', mark: 'G', color: '#1f6fb2',
       strong: ['Gmail, Docs, Sheets, Drive', 'Tìm thông tin, tài liệu lớn', 'Ảnh và video'], fit: 'Hợp: Văn phòng, kế toán, hành chính', own: [] },
     { id: 'ai-nguoi-di-lam-claude', ai: 'claude', label: 'Claude', mark: 'C', color: '#2a8a4a',
@@ -59,6 +64,8 @@
     return r;
   }
 
+  function ownSet(c) { return c.ai === 'claude' ? window.AI_WORK_CLAUDE : c.ai === 'chatgpt' ? window.AI_WORK_CHATGPT : null; }
+
   function courseScreen(c) {
     const own = owned(ctx.license(), c.id);
     const buy = () => {
@@ -68,14 +75,14 @@
     const ownList = h('ul', { class: 'lesson-list' });
     if (c.own.length) for (const [no, name] of c.own) {
       const key = 'bai' + no.replace(/\D/g, '');
-      const has = !!(window.AI_WORK_CLAUDE && window.AI_WORK_CLAUDE[key]);
+      const has = !!(ownSet(c) && ownSet(c)[key]);
       ownList.append(h('li', {}, !own ? row(no, name, 'locked', buy) : has ? row(no, name, 'open', () => lessonScreen(c, key)) : row(no, name, 'pending')));
     }
     else ownList.append(h('li', {}, row('Phần riêng', c.label, 'pending')));
     body.replaceChildren(
       h('button', { class: 'back-link', type: 'button', onclick: listScreen }, '← Chọn AI'),
       h('header', { class: 'screen-head' }, h('p', { class: 'screen-kicker' }, 'AI cho người đi làm'), h('h1', {}, 'Lớp học trên ' + c.label),
-        h('p', { class: 'screen-sub' }, own ? (c.own.length && window.AI_WORK_CLAUDE ? 'Anh/Chị đã mua lớp này. Mở từng bài bên dưới để học.' : 'Anh/Chị đã mua lớp này. Phần riêng đang được biên soạn, sẽ có trong phần mềm khi hoàn thành.') : 'Phần chung xem miễn phí. Phần riêng mở khi mua lớp (1.990.000 đ).'),
+        h('p', { class: 'screen-sub' }, own ? (c.own.length && ownSet(c) ? 'Anh/Chị đã mua lớp này. Mở từng bài bên dưới để học.' : 'Anh/Chị đã mua lớp này. Phần riêng đang được biên soạn, sẽ có trong phần mềm khi hoàn thành.') : 'Phần chung xem miễn phí. Phần riêng mở khi mua lớp (1.990.000 đ).'),
         own ? null : h('button', { class: 'primary', type: 'button', onclick: () => ctx.onBuy(c.id) }, 'Mua lớp ' + c.label)),
       h('section', { class: 'book' }, h('h2', { class: 'book-title' }, 'Phần chung · Ai học cũng có'), common),
       h('section', { class: 'book' }, h('h2', { class: 'book-title' }, 'Phần riêng · Đi sâu vào ' + c.label), ownList));
@@ -83,7 +90,7 @@
   }
 
   function lessonScreen(c, key) {
-    const L = (window.AI_WORK_LESSONS || {})[key] || (owned(ctx.license(), c.id) ? (window.AI_WORK_CLAUDE || {})[key] : null);
+    const L = (window.AI_WORK_LESSONS || {})[key] || (owned(ctx.license(), c.id) ? (ownSet(c) || {})[key] : null);
     const box = h('article', { class: 'aiw-lesson' });
     if (L) { box.innerHTML = '<h2>' + L.title + '</h2><p class="sub">' + L.sub + '</p>' + L.html; }
     else box.append(h('p', {}, 'Bài này đang được biên soạn.'));
