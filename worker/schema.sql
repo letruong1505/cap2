@@ -165,3 +165,10 @@ CREATE TABLE IF NOT EXISTS progress_reward (
   data TEXT NOT NULL,
   updated_at TEXT NOT NULL
 );
+
+-- Thời khóa biểu: máy học sinh gửi (đã làm sạch), điện thoại phụ huynh xem và nhắc học.
+CREATE TABLE IF NOT EXISTS progress_timetable (
+  code TEXT PRIMARY KEY,
+  data TEXT NOT NULL,
+  updated_at TEXT NOT NULL
+);

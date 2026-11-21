@@ -64,6 +64,23 @@ async function rewardOf(db, code) {
   const r = await db.prepare('SELECT data FROM progress_reward WHERE code = ?1').bind(code).first();
   try { return r ? cleanReward({ ...JSON.parse(r.data), days: JSON.parse(r.data).need }) : null; } catch (e) { return null; }
 }
+// Thời khóa biểu từ máy học sinh: tối đa 12 lớp × 6 ngày × 12 môn, chuỗi ngắn; bỏ mọi trường lạ.
+function cleanTimetable(t) {
+  if (!t || typeof t !== 'object') return null;
+  const grades = {};
+  Object.keys(t.grades || {}).slice(0, 12).forEach((g) => {
+    const x = t.grades[g];
+    if (!/^\d{1,2}$/.test(g) || !x || !DAY_RE.test(String(x.week)) || !x.days || typeof x.days !== 'object') return;
+    const days = {};
+    for (let n = 1; n <= 6; n++) days[n] = (Array.isArray(x.days[n]) ? x.days[n] : []).filter((s) => typeof s === 'string' && s).slice(0, 12).map((s) => s.slice(0, 40));
+    grades[g] = { week: String(x.week), days };
+  });
+  return { v: 1, remindOn: t.remindOn !== false, remindHour: clampInt(t.remindHour, 0, 23, 19), grades };
+}
+async function timetableOf(db, code) {
+  const r = await db.prepare('SELECT data FROM progress_timetable WHERE code = ?1').bind(code).first();
+  try { return r ? cleanTimetable(JSON.parse(r.data)) : null; } catch (e) { return null; }
+}
 const clampInt = (v, lo, hi, d) => { v = Math.round(Number(v)); return Number.isFinite(v) ? Math.min(hi, Math.max(lo, v)) : d; };
 
 // Bật/tắt chia sẻ, đặt mục tiêu, xóa dữ liệu trên máy chủ. Không truyền gì thì chỉ trả trạng thái.
@@ -78,6 +95,7 @@ export async function progressSettings(db, input, now = new Date()) {
     await db.prepare('DELETE FROM progress_daily WHERE code = ?1').bind(o.code).run();
     await db.prepare('DELETE FROM progress_usage WHERE code = ?1').bind(o.code).run();
     await db.prepare('DELETE FROM progress_reward WHERE code = ?1').bind(o.code).run();
+    await db.prepare('DELETE FROM progress_timetable WHERE code = ?1').bind(o.code).run();
     await db.prepare('UPDATE progress_sync SET last_sync = NULL WHERE code = ?1').bind(o.code).run();
   }
   if (input.goals && typeof input.goals === 'object') {
@@ -92,6 +110,10 @@ export async function progressSettings(db, input, now = new Date()) {
   const rw = cleanReward(input.reward);
   if (rw) {
     await db.prepare('INSERT INTO progress_reward (code, data, updated_at) VALUES (?1, ?2, ?3) ON CONFLICT(code) DO UPDATE SET data = ?2, updated_at = ?3').bind(o.code, JSON.stringify(rw), nowIso(now)).run();
+  }
+  const tt = cleanTimetable(input.timetable);
+  if (tt) {
+    await db.prepare('INSERT INTO progress_timetable (code, data, updated_at) VALUES (?1, ?2, ?3) ON CONFLICT(code) DO UPDATE SET data = ?2, updated_at = ?3').bind(o.code, JSON.stringify(tt), nowIso(now)).run();
   }
   return statusOf(db, o.code);
 }
@@ -178,7 +200,14 @@ export async function progressView(db, catalog, input, now = new Date()) {
     const gs2 = JSON.parse(r.items).map((id) => /^van-hoa-(\d+)$/.exec(id)).filter(Boolean).map((m) => Number(m[1]));
     rewards.push({ code: r.code, grades: gs2, label: gs2.map((g) => (byGrade.get(g) || 'Lớp ' + g)).join(', '), ...rw });
   }
-  const base = { code: o.code, codes, name: o.name, courses, enabled, goals: gs ? { daily: gs.goal_daily, weekend: (gx && gx.goal_weekend) || 80, weekly: gs.goal_weekly, ...(await passOf(db, gs.code)) } : null, lastSync, reward: gs ? await rewardOf(db, gs.code) : null, rewards };
+  const timetables = [];
+  for (const r of orders) {
+    const tt = await timetableOf(db, r.code);
+    if (!tt || !Object.keys(tt.grades).length) continue;
+    const gs3 = JSON.parse(r.items).map((id) => /^van-hoa-(\d+)$/.exec(id)).filter(Boolean).map((m) => Number(m[1]));
+    timetables.push({ code: r.code, grades: gs3, label: gs3.map((g) => (byGrade.get(g) || 'Lớp ' + g)).join(', '), data: tt });
+  }
+  const base = { timetables, code: o.code, codes, name: o.name, courses, enabled, goals: gs ? { daily: gs.goal_daily, weekend: (gx && gx.goal_weekend) || 80, weekly: gs.goal_weekly, ...(await passOf(db, gs.code)) } : null, lastSync, reward: gs ? await rewardOf(db, gs.code) : null, rewards };
   if (!enabled) return { ...base, rows: [] };
 
   const today = now.toISOString().slice(0, 10);

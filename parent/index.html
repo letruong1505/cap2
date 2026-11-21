@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' __API_ORIGIN__" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Nam Linh Phụ huynh</title>
+  <title>Nam Linh Educenter cho phụ huynh</title>
   <link rel="stylesheet" href="fonts.css" />
   <link rel="stylesheet" href="styles.css" />
   <style>.launch-tools{display:flex;flex-direction:column;gap:10px}.launch-tools button{width:100%;text-align:left;padding:14px 16px;font-size:16px}</style>
 </head>
 <body>
   <header class="topbar">
-    <div class="brand" id="brand">Nam Linh · Phụ huynh</div>
+    <div class="brand" id="brand">Nam Linh Educenter · cho phụ huynh</div>
     <nav id="breadcrumb"></nav>
   </header>
 
@@ -25,7 +25,7 @@
       <div class="launch-tools">
         <button type="button" id="go-progress">Xem con học (tiến độ, báo cáo, phần thưởng)</button>
         <button type="button" id="go-timetable">Thời khóa biểu và nhắc học</button>
-        <button type="button" id="go-advice">Tư vấn – Định hướng</button>
+        <button type="button" id="go-advice">Liên hệ Nam Linh</button>
         <button type="button" id="go-buy">Khóa học và giá</button>
       </div>
       <p class="meta">Xem tiến độ cần mã đơn và số điện thoại đã dùng khi mua khóa học. Máy của con phải bật "Cho phụ huynh xem kết quả" trong mục "Báo cáo cho phụ huynh".</p>
@@ -39,17 +39,19 @@
     <section id="timetable" class="panel" hidden>
       <button class="back-link" type="button" data-back>← Quay lại</button>
       <h1>Thời khóa biểu của con</h1>
-      <p class="meta">Chọn lớp của con, nhập các môn học mỗi ngày. Mỗi tuần nhập lại một lần. Tối hôm trước, điện thoại này sẽ nhắc Anh/Chị nhắc con ôn bài và làm bài các môn của ngày mai.</p>
-      <label class="rep-ctl">Lớp <select id="tt-grade" aria-label="Lớp của con"></select></label>
+      <p class="meta">Con nhập thời khóa biểu trên app học; khi con đã bật "Cho phụ huynh xem kết quả", thời khóa biểu tự đồng bộ về đây. Tối hôm trước, điện thoại này nhắc Anh/Chị nhắc con ôn bài và làm bài các môn của ngày mai.</p>
       <div id="tt-banner"></div>
-      <div id="tt-card"></div>
+      <div id="tt-view"></div>
+      <div class="tt-remind-row"><label><input type="checkbox" id="tt-remind-local" /> Nhắc trên điện thoại này</label></div>
+      <button type="button" id="tt-refresh">Cập nhật từ máy của con</button>
+      <p class="meta" id="tt-msg" role="status"></p>
     </section>
 
     <section id="advice" class="panel" hidden>
       <button class="back-link" type="button" data-back>← Quay lại</button>
-      <h1>Tư vấn – Định hướng</h1>
+      <h1>Liên hệ Nam Linh</h1>
       <div class="price-option">
-        <span class="price-name">Liên hệ Nam Linh Educenter</span>
+        <span class="price-name">Thông tin liên hệ</span>
         <ul class="contact-list">
           <li><b>Công ty:</b> CÔNG TY TNHH GIẢI PHÁP &amp; ỨNG DỤNG CÔNG NGHỆ NAM LINH</li>
           <li><b>Mã số thuế:</b> 2902274556</li>
@@ -61,7 +63,7 @@
 
     <section id="purchase" class="panel" hidden>
       <button class="back-link" type="button" data-back>← Quay lại</button>
-      <h1>Khóa học của Nam Linh</h1>
+      <h1>Khóa học và bảng giá</h1>
       <div class="goal-box">
         <h2>Cách mua cho con</h2>
         <p>Mỗi đơn dùng được cho <b>1 máy tính và 1 điện thoại của con</b>. Để khóa được cấp đúng thiết bị của con, hãy mua ngay trên app học của con: mở app, chọn <b>Mua khóa học</b>, chuyển khoản theo mã QR, khóa tự kích hoạt.</p>
@@ -71,6 +73,8 @@
       <div id="price-list"></div>
     </section>
   </main>
+
+  <div class="update-bar" id="update-bar" role="status" hidden></div>
 
   <div class="app-version" id="build" aria-label="Phiên bản"></div>
 
@@ -83,6 +87,8 @@
   <script src="progress-ui.js"></script>
   <script src="catalog.js"></script>
   <script src="timetable.js"></script>
+  <script src="courses.js"></script>
+  <script src="parent-update.js"></script>
   <script src="parent.js"></script>
 </body>
 </html>

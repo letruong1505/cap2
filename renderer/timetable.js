@@ -188,6 +188,7 @@
       } else if (window.NLNotify) { await sync(names); }
       msg.textContent = note;
       det.querySelector('.tt-status').textContent = 'Đã cập nhật tuần này'; det.classList.remove('stale');
+      try { if (window.VungProgressSync && window.VungProgressSync.pushNow) window.VungProgressSync.pushNow(); } catch (e) { /* gửi lên phụ huynh là phụ */ }
       if (opts.onSaved) opts.onSaved();
     });
     body.append(saveBtn, msg);

@@ -3,13 +3,15 @@
   'use strict';
   var cfg = window.NL_MOBILE_CONFIG || {};
   var ls = window.localStorage;
+  // Mã máy dạng XXXX-XXXX-XXXX (máy chủ chỉ nhận dạng này), sinh ngẫu nhiên một lần rồi lưu lại.
   function deviceId() {
-    var k = 'nl-parent-device'; var v = null;
+    var k = 'nl-parent-machine'; var v = null;
     try { v = ls.getItem(k); } catch (e) { /* bỏ qua */ }
-    if (!v) {
-      v = 'ph'; var a = new Uint8Array(12);
+    if (!v || !/^[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}$/.test(v)) {
+      var a = new Uint8Array(6);
       (window.crypto || { getRandomValues: function (x) { for (var i = 0; i < x.length; i++) x[i] = Math.floor(Math.random() * 256); } }).getRandomValues(a);
-      for (var i = 0; i < a.length; i++) v += ('0' + a[i].toString(16)).slice(-2);
+      var hex = ''; for (var i = 0; i < a.length; i++) hex += ('0' + a[i].toString(16)).slice(-2);
+      hex = hex.toUpperCase(); v = hex.slice(0, 4) + '-' + hex.slice(4, 8) + '-' + hex.slice(8, 12);
       try { ls.setItem(k, v); } catch (e) { /* bỏ qua */ }
     }
     return v;

@@ -47,6 +47,17 @@ async function androidLatest(env) {
 }
 
 // Gói cập nhật nội dung (OTA) của một bản build. Gói đã được ký; ứng dụng tự kiểm tra chữ ký trước khi dùng.
+// Bản mới nhất của app Phụ huynh (latest.json do workflow build-android-parent đẩy lên R2).
+async function parentLatest(env) {
+  const base = updatesBase(env);
+  const r = await fetch(base + '/phuhuynh-android/latest.json', { cf: { cacheTtl: 60 } }).catch(() => null);
+  if (!r || !r.ok) throw new HttpError(502, 'Chưa đọc được thông tin bản mới.');
+  let j;
+  try { j = await r.json(); } catch { throw new HttpError(502, 'Thông tin bản mới không hợp lệ.'); }
+  const apk = /^[A-Za-z0-9._-]{1,80}$/.test(String(j.apk || '')) ? String(j.apk) : 'nam-linh-phu-huynh.apk';
+  const n = (v) => (Number.isInteger(v) && v >= 0 ? v : 0);
+  return json({ version: String(j.version || '').slice(0, 20), versionCode: n(j.versionCode), notes: String(j.notes || '').slice(0, 1500), apkUrl: base + '/phuhuynh-android/' + apk });
+}
 async function androidOta(env, build) {
   const base = updatesBase(env);
   const r = await fetch(base + '/educenter-android/ota/' + build + '.nlo', { cf: { cacheTtl: 3600 } }).catch(() => null);
@@ -81,6 +92,7 @@ async function route(req, env, now) {
 
     // Cập nhật bản Android: chuyển tiếp tệp công khai trên R2 để ứng dụng không cần cấu hình CORS cho R2.
     if (req.method === 'GET' && path === '/api/app/android/latest') return await androidLatest(env);
+    if (req.method === 'GET' && path === '/api/app/parent/latest') return await parentLatest(env);
     m = /^\/api\/app\/android\/ota\/(\d{1,9})$/.exec(path);
     if (req.method === 'GET' && m) return await androidOta(env, m[1]);
 
@@ -144,7 +156,7 @@ async function route(req, env, now) {
 // Ứng dụng Android chạy trong WebView ở địa chỉ https://localhost nên trình duyệt đòi CORS khi gọi sang máy chủ này.
 // Chỉ mở cho các địa chỉ của chính ứng dụng và chỉ cho các đường dẫn của phần mềm khách; trang quản trị và SePay không mở.
 export const APP_ORIGINS = ['https://localhost', 'http://localhost', 'capacitor://localhost'];
-const CLIENT_PATH = /^\/api\/(orders(\/[A-Za-z0-9]{6}\/status)?|pin-reset|claim-device|register-legacy|ping|progress\/(settings|push|view)|app\/android\/(latest|ota\/\d{1,9}))$/;
+const CLIENT_PATH = /^\/api\/(orders(\/[A-Za-z0-9]{6}\/status)?|pin-reset|claim-device|register-legacy|ping|progress\/(settings|push|view)|app\/(android\/(latest|ota\/\d{1,9})|parent\/latest))$/;
 
 export async function handle(req, env, now = new Date()) {
   const origin = req.headers.get('origin');

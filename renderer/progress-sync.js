@@ -125,6 +125,14 @@
         const g = await bridge().progressSettings({ code, reward: rs });
         if (g.ok) { st.reward = rs; writeState(st); }
       }
+      // Thời khóa biểu của con: gửi lên để phụ huynh xem và nhắc học trên điện thoại của mình.
+      if (window.VungTimetable) {
+        const tt = window.VungTimetable.load(store());
+        if (Object.keys(tt.grades).length && JSON.stringify(st.timetable || null) !== JSON.stringify(tt)) {
+          const g = await bridge().progressSettings({ code, timetable: tt });
+          if (g.ok) { st.timetable = tt; writeState(st); }
+        }
+      }
       const r = await bridge().progressPush({ code, days: aggregate(data.attempts), usage: window.VungUsage ? window.VungUsage.list() : [] });
       if (r.ok) { st.lastOk = Date.now(); writeState(st); }
       else if (r.error && /chưa bật/i.test(r.error)) { st.enabled = false; writeState(st); } // phụ huynh đã tắt ở nơi khác
@@ -154,6 +162,7 @@
     return r;
   }
   const info = () => readState();
+  const pushNow = () => { if (readState().enabled) { clearTimeout(timer); timer = setTimeout(push, 1500); } };
 
   /* Khóa cấp trực tiếp (USB) chưa có trong hệ thống: khách nhập số điện thoại phụ huynh để đăng ký, rồi bật chia sẻ. */
   function registerForm(box, msg, rerender) {
@@ -217,5 +226,5 @@
   setTimeout(() => { if (readState().enabled) push(); }, 8000);
   setInterval(() => { if (readState().enabled && document.visibilityState !== 'hidden') push(); }, 10 * 60000); // gửi định kỳ để thời gian dùng app luôn mới
   document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden' && readState().enabled) push(); });
-  return Object.assign(api, { push, schedule, enable, disable, info, renderBox, supported });
+  return Object.assign(api, { push, schedule, pushNow, enable, disable, info, renderBox, supported });
 });

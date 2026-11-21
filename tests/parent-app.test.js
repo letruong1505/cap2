@@ -17,4 +17,6 @@ test('app Phụ huynh: gói www nhẹ, đủ tệp và không chứa bài học'
   const size = fs.readdirSync(out, { recursive: true }).reduce((a, f) => { const p = path.join(out, f); return a + (fs.statSync(p).isFile() ? fs.statSync(p).size : 0); }, 0);
   assert.ok(size < 3 * 1024 * 1024, 'gói quá nặng: ' + size);
   assert.match(fs.readFileSync(path.join(out, 'mobile-config.js'), 'utf8'), /1\.0\.9/);
+  assert.match(fs.readFileSync(path.join(out, 'mobile-config.js'), 'utf8'), /"versionCode":1/);
+  assert.match(fs.readFileSync(path.join(out, 'parent-boot.js'), 'utf8'), /XXXX-XXXX-XXXX/);
 });
