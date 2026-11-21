@@ -11,7 +11,7 @@
 
   function h(tag, attrs, ...kids) {
     const e = document.createElement(tag);
-    for (const [k, v] of Object.entries(attrs || {})) { if (k === 'class') e.className = v; else if (v != null && v !== false) e.setAttribute(k, v); }
+    for (const [k, v] of Object.entries(attrs || {})) { if (k === 'class') e.className = v; else if (k.startsWith('on') && typeof v === 'function') e.addEventListener(k.slice(2), v); else if (v != null && v !== false) e.setAttribute(k, v); }
     for (const c of kids.flat()) if (c != null && c !== false) e.append(c.nodeType ? c : document.createTextNode(String(c)));
     return e;
   }
@@ -97,7 +97,7 @@
         if (info.content.length) { body.append(h('p', {}, h('b', {}, 'Nội dung:'))); body.append(h('ul', {}, info.content.map((t) => h('li', {}, t)))); }
         const vh = /^van-hoa-(\d+)$/.exec(x.id);
         if (vh && window.ParentDigest) body.append(h('p', {}, h('button', { type: 'button', class: 'primary', onclick: () => { window.ParentDigest.open($('digest-body'), Number(vh[1])); show('digest'); } }, 'Xem nội dung chi tiết lớp ' + vh[1])));
-        body.append(h('p', {}, h('button', { type: 'button', class: 'ghost', onclick: () => openBuy(x.id) }, 'Mua khóa này cho con')));
+        body.append(h('p', {}, h('button', { type: 'button', class: 'ghost', onclick: () => openBuy(x.id) }, /^ai-nguoi-di-lam/.test(x.id) ? 'Mua khóa học' : 'Mua khóa này cho con')));
         d.append(body); c.append(d);
       });
       box.append(c);
