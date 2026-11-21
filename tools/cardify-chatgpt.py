@@ -5,7 +5,7 @@ Chạy: node tools/dump... không cần; python3 tools/cardify-chatgpt.py"""
 import re, json, subprocess, pathlib
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 import sys
-TARGETS = {'chatgpt': ('renderer/ai-work-chatgpt.js', 'AI_WORK_CHATGPT'), 'chung': ('renderer/ai-work-content.js', 'AI_WORK_LESSONS'), 'giasu': ('renderer/gia-su-ai-content.js', 'GIA_SU_AI')}
+TARGETS = {'chatgpt': ('renderer/ai-work-chatgpt.js', 'AI_WORK_CHATGPT'), 'chung': ('renderer/ai-work-content.js', 'AI_WORK_LESSONS'), 'giasu': ('renderer/gia-su-ai-content.js', 'GIA_SU_AI'), 'claude': ('renderer/ai-work-claude.js', 'AI_WORK_CLAUDE')}
 WHICH = sys.argv[1] if len(sys.argv) > 1 else 'chatgpt'
 F = ROOT / TARGETS[WHICH][0]
 VAR = TARGETS[WHICH][1]

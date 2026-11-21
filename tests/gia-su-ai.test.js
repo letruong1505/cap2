@@ -96,3 +96,15 @@ test('Gia sư AI: mọi bài dạng thẻ (tóm tắt đầu bài, thẻ đánh 
     assert.ok(!C[k].html.includes('class="meta"'), k);
   }
 });
+
+test('AI cho người đi làm – Claude: Bài 4–11 dạng thẻ, giữ hình minh họa', () => {
+  const w = {};
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../renderer/ai-work-claude.js'), 'utf8'), { window: w });
+  const G = w.AI_WORK_CLAUDE;
+  assert.deepStrictEqual(Object.keys(G), ['bai4', 'bai5', 'bai6', 'bai7', 'bai8', 'bai9', 'bai10', 'bai11']);
+  for (const k of Object.keys(G)) {
+    assert.ok(G[k].html.startsWith('<div class="tsum">') && !G[k].html.includes('class="meta"'), k);
+    assert.ok((G[k].html.match(/class="tcard"/g) || []).length >= 4, k);
+    assert.ok(G[k].html.includes('<svg'), k);
+  }
+});
