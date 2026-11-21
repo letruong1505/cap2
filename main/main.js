@@ -60,6 +60,16 @@ ipcMain.handle('device:claim', async (_event, o) => {
   }
   return r;
 });
+// Nhận khóa các đơn phụ huynh mua cho gia đình (mã gia đình); kích hoạt từng khóa. Không có mạng thì trả offline, lần sau thử lại.
+ipcMain.handle('family:sync', async (_event, o) => {
+  const r = await orders.familySync(o);
+  if (!r.ok) return r;
+  const keys = Array.isArray(r.data && r.data.keys) ? r.data.keys : [];
+  let activated = 0;
+  for (const k of keys) { if (k && lic.activate(licenseStoreDir(), k.key).status === 'ok') activated++; }
+  if (activated && heartbeat) heartbeat.beat().catch(() => {});
+  return { ok: true, activated, total: keys.length, full: (r.data && r.data.full) || 0 };
+});
 // Khách tự đăng ký các khóa cũ (cấp bằng USB) của máy này vào hệ thống bằng số điện thoại phụ huynh; giao diện không gửi khóa.
 ipcMain.handle('license:register-legacy', async (_event, o) => {
   const keys = lic.registrableKeys(licenseStoreDir());

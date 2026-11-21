@@ -32,10 +32,13 @@
         x = x || {};
         return call('POST', '/api/orders', {
           name: s(x.name), phone: s(x.phone), ids: Array.isArray(x.ids) ? x.ids.map(String) : [],
-          partnerCode: s(x.partnerCode).trim().slice(0, 20),
+          partnerCode: s(x.partnerCode).trim().slice(0, 20), family: x.family ? s(x.family).slice(0, 12) : undefined,
           terms: { version: s(x.terms && x.terms.version), at: s(x.terms && x.terms.at) }, machineId: machineId(), platform: PLATFORM,
         });
       },
+      // Phụ huynh xin mã gia đình (app Phụ huynh); máy của con gọi familySync để nhận khóa các đơn phụ huynh mua cho gia đình.
+      familyCreate: function (x) { x = x || {}; return call('POST', '/api/family/create', { phone: s(x.phone), machineId: machineId() }); },
+      familySync: function (x) { x = x || {}; return call('POST', '/api/family/sync', { fcode: s(x.fcode), machineId: machineId(), platform: PLATFORM }); },
       pinReset: function (x) { x = x || {}; return call('POST', '/api/pin-reset', { phone: s(x.phone), code: s(x.code), machineId: machineId() }); },
       // Nhận khóa cho thiết bị này từ một đơn đã mua trên thiết bị khác: nhập mã đơn + số điện thoại đã mua.
       claimDevice: function (x) { x = x || {}; return call('POST', '/api/claim-device', { phone: s(x.phone), code: s(x.code), machineId: machineId(), platform: PLATFORM }); },

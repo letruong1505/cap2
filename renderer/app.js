@@ -770,8 +770,55 @@ function renderLicense(license) {
     }
   });
   children.push(el('div', { class: 'license-form' }, input, btn), msg);
+  if (window.vungBai.familySync) children.push(familyBox());
   if (window.vungBai.claimDevice) children.push(claimDeviceBox());
   info.replaceChildren(...children);
+}
+
+// Mã gia đình: phụ huynh mua trên app Phụ huynh, máy của con nhập mã một lần rồi tự nhận khóa mỗi khi có mạng.
+const FAMILY_KEY = 'nl-family-code';
+const cleanFamily = (v) => String(v || '').toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 8);
+const getFamily = () => { try { return localStorage.getItem(FAMILY_KEY) || ''; } catch { return ''; } };
+let familyBusy = false;
+async function syncFamilyNow() {
+  const fcode = getFamily();
+  if (!fcode || familyBusy || !window.vungBai || !window.vungBai.familySync) return null;
+  familyBusy = true;
+  try {
+    const r = await window.vungBai.familySync({ fcode });
+    if (r && r.ok && r.activated) await refreshLicense();
+    return r;
+  } catch { return null; } finally { familyBusy = false; }
+}
+function startFamilySync() {
+  if (!window.vungBai || !window.vungBai.familySync) return;
+  setTimeout(syncFamilyNow, 3000);
+  setInterval(syncFamilyNow, 10 * 60 * 1000);
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') syncFamilyNow(); });
+}
+function familyBox() {
+  const code = el('input', { type: 'text', id: 'family-code', placeholder: 'Mã gia đình (8 ký tự)', maxlength: '12', autocomplete: 'off', spellcheck: 'false', value: getFamily() });
+  const btn = el('button', { type: 'button', class: 'primary' }, 'Lưu và đồng bộ');
+  const msg = el('div', { class: 'muted', id: 'family-msg', role: 'status' }, getFamily() ? 'Đã liên kết gia đình. Khóa phụ huynh mua sẽ tự về máy này khi có mạng.' : '');
+  btn.addEventListener('click', async () => {
+    const v = cleanFamily(code.value);
+    if (v.length !== 8) { msg.textContent = 'Mã gia đình gồm 8 ký tự, xem trong app Nam Linh Educenter cho phụ huynh.'; return; }
+    btn.disabled = true; msg.textContent = 'Đang đồng bộ...';
+    try {
+      const r = await window.vungBai.familySync({ fcode: v });
+      if (!r.ok) { msg.textContent = r.offline ? 'Cần kết nối mạng. Hãy kiểm tra mạng rồi thử lại.' : (r.error || 'Không đồng bộ được.'); return; }
+      try { localStorage.setItem(FAMILY_KEY, v); } catch { /* bỏ qua */ }
+      msg.textContent = r.total ? (r.activated ? `Đã nhận ${r.activated} khóa từ phụ huynh.` : 'Đã có khóa này trên máy.') : 'Đã liên kết. Khi phụ huynh mua khóa học và thanh toán xong, khóa sẽ tự về máy này.';
+      if (r.full) msg.textContent += ` (${r.full} đơn đã dùng hết chỗ cho loại máy này.)`;
+      if (r.activated) await refreshLicense();
+    } catch { msg.textContent = 'Không đồng bộ được. Hãy thử lại.'; } finally { btn.disabled = false; }
+  });
+  return el('div', { class: 'license-claim' },
+    el('h3', {}, 'Phụ huynh mua cho con?'),
+    el('div', { class: 'muted' }, 'Nhập mã gia đình trong app Nam Linh Educenter cho phụ huynh một lần. Sau đó khóa học phụ huynh mua sẽ tự về máy này mỗi khi có mạng.'),
+    el('div', { class: 'license-form' }, code, btn),
+    msg,
+  );
 }
 
 // Một đơn dùng được cho 1 máy tính và 1 điện thoại: nhập mã đơn + số điện thoại đã mua để nhận khóa cho thiết bị này.
@@ -1091,6 +1138,7 @@ async function init() {
     renderGrades();
     if (window.VungProgressUI) window.VungProgressUI.refreshBadge();
     await refreshLicense();
+    startFamilySync();
     try { ttSyncNotifications(); } catch { /* nhắc trên điện thoại là phụ */ }
     showLaunch();
   } catch (err) {

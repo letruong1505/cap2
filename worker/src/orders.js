@@ -70,6 +70,8 @@ export async function createOrder(db, catalog, input, now = new Date(), rand) {
   if (!MACHINE_RE.test(machine)) throw new HttpError(400, 'Không đọc được mã máy. Em mở lại phần mềm rồi thử lại.');
   if (!ids.length || ids.some((id) => !catalog.byId[id])) throw new HttpError(400, 'Danh sách khóa học không hợp lệ.');
   if (!input.terms || !input.terms.version) throw new HttpError(400, 'Cần đồng ý điều khoản.');
+  const fcode = input.family ? String(input.family).toUpperCase().replace(/[^A-Z0-9]/g, '') : '';
+  if (fcode && !(await db.prepare('SELECT 1 AS x FROM families WHERE fcode = ?1 AND parent_machine = ?2 AND phone = ?3').bind(fcode, machine, phone).first())) throw new HttpError(404, 'Mã gia đình không hợp lệ.');
 
   const since = nowIso(new Date(now.getTime() - 3600_000));
   const recent = await db.prepare('SELECT COUNT(*) AS n FROM orders WHERE (machine = ?1 OR phone = ?2) AND created_at > ?3').bind(machine, phone, since).first();
@@ -104,7 +106,8 @@ export async function createOrder(db, catalog, input, now = new Date(), rand) {
       await db.batch([
         db.prepare('INSERT INTO orders (code, name, phone, machine, items, amount, status, terms_version, terms_at, created_at) VALUES (?1,?2,?3,?4,?5,?6,\'pending\',?7,?8,?9)')
           .bind(code, name, phone, machine, JSON.stringify(ids), amount, String(input.terms.version).slice(0, 40), String(input.terms.at || '').slice(0, 40), nowIso(now)),
-        db.prepare('INSERT INTO order_devices (code, platform, machine, key, issued_at) VALUES (?1,?2,?3,NULL,NULL)').bind(code, platform, machine),
+        fcode ? db.prepare('INSERT INTO family_orders (code, fcode, created_at) VALUES (?1,?2,?3)').bind(code, fcode, nowIso(now))
+          : db.prepare('INSERT INTO order_devices (code, platform, machine, key, issued_at) VALUES (?1,?2,?3,NULL,NULL)').bind(code, platform, machine),
         ...lines.map((l) => db.prepare('INSERT INTO order_prices (code, item, list_price, paid_price, partner_code, percent) VALUES (?1,?2,?3,?4,?5,?6)')
           .bind(code, l.id, l.list, l.paid, l.discounted ? partner.code : null, l.discounted ? partner.percent : null)),
       ]);
@@ -141,16 +144,21 @@ export async function issueKey(db, env, catalog, order, now = new Date(), machin
 }
 
 // Các chỗ thiết bị của đơn. Đơn cũ chưa có dòng nào thì chỗ máy tính là máy đặt đơn.
+// Đơn do phụ huynh mua trên app Phụ huynh: không gắn với máy nào, các máy của con tự nhận khóa qua mã gia đình (family.js).
+export async function isFamilyOrder(db, code) {
+  return !!(await db.prepare('SELECT 1 AS x FROM family_orders WHERE code = ?1').bind(code).first());
+}
+
 export async function getSlots(db, o) {
   const rows = (await db.prepare('SELECT platform, machine, key, issued_at FROM order_devices WHERE code = ?1').bind(o.code).all()).results;
   const slots = { win: null, android: null };
   for (const r of rows) slots[r.platform] = { machine: r.machine, key: r.key, issued_at: r.issued_at };
-  if (!rows.length) slots.win = { machine: o.machine, key: o.key || null, issued_at: null };
+  if (!rows.length && !(await isFamilyOrder(db, o.code))) slots.win = { machine: o.machine, key: o.key || null, issued_at: null };
   return slots;
 }
 
 // Khóa cho một chỗ thiết bị của đơn đã thanh toán; chỗ của máy đặt đơn dùng đường issueKey có sẵn.
-async function issueSlotKey(db, env, catalog, o, platform, machine, now) {
+export async function issueSlotKey(db, env, catalog, o, platform, machine, now) {
   const slots = await getSlots(db, o);
   const cur = slots[platform];
   if (cur && cur.machine === o.machine) return issueKey(db, env, catalog, o, now, machine);
@@ -179,7 +187,7 @@ export async function claimDevice(db, env, catalog, input, now = new Date()) {
   if (cur && cur.machine !== machine) throw new HttpError(409, 'Đơn này đã dùng chỗ ' + PLATFORM_NAME[platform] + ' cho thiết bị khác. Liên hệ Nam Linh Educenter để đổi thiết bị.');
   if (!cur && slots.win && slots.win.machine === machine) throw new HttpError(409, 'Mã máy này đã thuộc chỗ khác của đơn.');
   // Đơn cũ chưa có dòng nào: ghi lại chỗ máy tính hiện có trước khi thêm chỗ mới.
-  if (!(await db.prepare('SELECT 1 AS x FROM order_devices WHERE code = ?1').bind(o.code).first())) {
+  if (!(await db.prepare('SELECT 1 AS x FROM order_devices WHERE code = ?1').bind(o.code).first()) && !(await isFamilyOrder(db, o.code))) {
     await db.prepare('INSERT INTO order_devices (code, platform, machine, key, issued_at) VALUES (?1,\'win\',?2,?3,NULL)').bind(o.code, o.machine, o.key || null).run();
   }
   const key = cur && cur.key ? cur.key : await issueSlotKey(db, env, catalog, o, platform, machine, now);

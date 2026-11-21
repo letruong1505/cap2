@@ -1,8 +1,11 @@
 ## Bản mới
-- Tư duy & lập trình: làm lại 16 bài học (8 bài Scratch và 8 bài Python) theo cùng một khung 8 mục: ý nghĩa, cách dùng, tư duy mang đến, ứng dụng vào Scratch/Python, hình minh họa từng bước, lỗi sai hay gặp, ví dụ, và 5 bài thực hành tăng dần độ khó có lời giải
+- Phụ huynh mua khóa học cho con ngay trên app Phụ huynh (quét QR); khóa tự về máy tính và điện thoại của con khi mở app có mạng, con chỉ nhập "mã gia đình" một lần ở phần bản quyền
+- App Phụ huynh: xem tóm tắt từng bài Giáo trình văn hóa lớp 6–12 (kiến thức cần nhớ, dạng bài, các bước giải, lỗi dễ mắc) và nội dung khóa Tư duy & lập trình
 - Android: bản này yêu cầu cài apk mới
 
 ## Các bản trước
+- Tư duy & lập trình: làm lại 16 bài học (8 bài Scratch và 8 bài Python) theo cùng một khung 8 mục: ý nghĩa, cách dùng, tư duy mang đến, ứng dụng vào Scratch/Python, hình minh họa từng bước, lỗi sai hay gặp, ví dụ, và 5 bài thực hành tăng dần độ khó có lời giải
+- Android: bản này yêu cầu cài apk mới
 - Tư duy & lập trình: thêm bài "Cài đặt" cho cả hai lộ trình (Scratch và Python) với hướng dẫn từng bước và hình minh họa; bài này xem miễn phí cùng phần mở đầu và Bài 1
 - Android: bản này yêu cầu cài apk mới
 - Tư duy & lập trình: chính thức mở bán 1.490.000 đ (một khóa mở cả 2 lộ trình 8–11 và 12–18); mua trong phần mềm, key kích hoạt tự động như các khóa khác

@@ -152,6 +152,20 @@ test('cầu nối: nhận khóa từ đơn mua ở máy tính (claimDevice) rồ
   assert.ok(calls.some((c) => c.url.endsWith('/api/ping') && c.body.ids.includes('ABC234')), 'phải gửi tín hiệu sau khi kích hoạt');
 });
 
+test('cầu nối: đồng bộ gia đình (familySync) nhận nhiều khóa của phụ huynh và kích hoạt hết', async () => {
+  let mid; let sent;
+  const { b } = boot({ fetch: async (url, opt) => {
+    if (url.endsWith('/api/family/sync')) { sent = JSON.parse(opt.body); return { status: 200, ok: true, json: async () => ({ keys: [{ code: 'ABC234', key: issue({ id: 'NL-ABC234', machine: mid, grades: [], courses: ['tu-duy-lap-trinh'] }) }, { code: 'XYZ234', key: issue({ id: 'NL-XYZ234', machine: mid, grades: [7] }) }], full: 1 }) }; }
+    return { status: 200, ok: true, json: async () => ({ revoked: [] }) };
+  } });
+  mid = b.api.machineId;
+  const r = await b.api.familySync({ fcode: 'ABCD2345' });
+  assert.strictEqual(r.ok, true); assert.strictEqual(r.activated, 2); assert.strictEqual(r.full, 1);
+  assert.deepStrictEqual(sent, { fcode: 'ABCD2345', machineId: mid, platform: 'android' });
+  const lic = await b.api.loadLicense();
+  assert.deepStrictEqual(lic.grades, [7]); assert.ok(lic.courses.includes('tu-duy-lap-trinh'));
+});
+
 test('cầu nối: máy chủ báo đơn bị thu hồi thì khóa mất hiệu lực và giao diện được báo', async () => {
   let mid; let revoked = false;
   const { b } = boot({ fetch: async (url) => ({ status: 200, ok: true, json: async () => (url.endsWith('/api/ping') ? { revoked: revoked ? ['ABC234'] : [] } : {}) }) });

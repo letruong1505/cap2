@@ -6,15 +6,17 @@ const path = require('path');
 const ROOT = path.join(__dirname, '..');
 const arg = (n, d) => { const i = process.argv.indexOf('--' + n); return i > 0 && process.argv[i + 1] ? process.argv[i + 1] : d; };
 
-const FROM_RENDERER = ['styles.css', 'fonts.css', 'progress.js', 'usage.js', 'progress-sync.js', 'progress-ui.js', 'catalog.js', 'timetable.js'];
+const FROM_RENDERER = ['styles.css', 'fonts.css', 'progress.js', 'usage.js', 'progress-sync.js', 'progress-ui.js', 'catalog.js', 'timetable.js', 'vietqr.js', 'payment-config.js', 'terms.js'];
 
 function build({ out, version, api, versionCode = 1 }) {
   fs.rmSync(out, { recursive: true, force: true });
   fs.mkdirSync(path.join(out, 'vendor'), { recursive: true });
   for (const f of FROM_RENDERER) fs.copyFileSync(path.join(ROOT, 'renderer', f), path.join(out, f));
+  fs.copyFileSync(path.join(ROOT, 'renderer', 'vendor', 'qrcode.js'), path.join(out, 'vendor', 'qrcode.js'));
+  fs.cpSync(path.join(ROOT, 'parent', 'digest'), path.join(out, 'digest'), { recursive: true });
   fs.cpSync(path.join(ROOT, 'renderer', 'fonts'), path.join(out, 'fonts'), { recursive: true });
   fs.copyFileSync(path.join(ROOT, 'mobile', 'bridge', 'api.js'), path.join(out, 'api.js'));
-  for (const f of ['parent.js', 'parent-boot.js', 'courses.js', 'parent-update.js']) fs.copyFileSync(path.join(ROOT, 'parent', f), path.join(out, f));
+  for (const f of ['parent.js', 'parent-boot.js', 'courses.js', 'buy.js', 'digest.js', 'parent-update.js']) fs.copyFileSync(path.join(ROOT, 'parent', f), path.join(out, f));
   const origin = new URL(api).origin;
   fs.writeFileSync(path.join(out, 'index.html'), fs.readFileSync(path.join(ROOT, 'parent', 'index.html'), 'utf8').replace('__API_ORIGIN__', origin));
   fs.writeFileSync(path.join(out, 'mobile-config.js'), 'window.NL_MOBILE_CONFIG = ' + JSON.stringify({ ordersBaseUrl: api, version, versionCode }) + ';\n');
