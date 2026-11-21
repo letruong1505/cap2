@@ -57,11 +57,26 @@
     window.scrollTo(0, 0);
   }
 
+  // Nút "Sao chép" cho prompt mẫu và dữ liệu mẫu
+  function addCopyButtons(root) {
+    root.querySelectorAll('pre.prompt, pre.pdata').forEach((pre) => {
+      const b = h('button', { class: 'copy-btn', type: 'button' }, 'Sao chép');
+      b.addEventListener('click', () => {
+        const text = pre.textContent;
+        const ok = () => { b.textContent = 'Đã chép'; b.classList.add('done'); setTimeout(() => { b.textContent = 'Sao chép'; b.classList.remove('done'); }, 1500); };
+        const fallback = () => { const t = document.createElement('textarea'); t.value = text; t.style.position = 'fixed'; t.style.opacity = '0'; document.body.append(t); t.select(); try { document.execCommand('copy'); ok(); } catch (e) { /* bỏ qua */ } t.remove(); };
+        if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(ok, fallback); else fallback();
+      });
+      pre.parentNode.insertBefore(b, pre);
+    });
+  }
+
   function lessonScreen(key) {
     const L = content()[key];
     const box = h('article', { class: 'aiw-lesson' });
     if (L && canOpen(key)) box.innerHTML = '<h2>' + L.title + '</h2>' + (L.sub ? '<p class="sub">' + L.sub + '</p>' : '') + L.html;
     else box.append(h('p', {}, L ? 'Bài này mở khi mua khóa Gia sư AI.' : 'Bài này đang được biên soạn.'));
+    addCopyButtons(box);
     const keys = PARTS.flatMap((p) => p.keys).filter((k) => content()[k]);
     const i = keys.indexOf(key), prev = keys[i - 1], next = keys[i + 1];
     const nav = h('div', { class: 'aiw-nav' },

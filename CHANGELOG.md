@@ -1,8 +1,11 @@
 ## Bản mới
-- Gia sư AI: thêm giáo trình 8 bài tự học (nhận thức & an toàn AI, kiểm chứng, tự tìm lỗ hổng kiến thức, xây gia sư AI riêng, lộ trình cá nhân hóa). Mở miễn phí phần mở đầu, Bài 1 và Bài 2; các bài còn lại mở khi mua khóa
+- AI cho người đi làm – lớp ChatGPT: Bài 4–9 có thẻ "Thực hành" và Bài 11 có bộ dữ liệu mẫu cho Case 1–4, đều là dữ liệu giả lập, prompt có nút Sao chép và đáp án để tự đối chiếu
+- AI cho người đi làm: Bài 1–3 (phần chung cho cả ba AI) và Bài 4–12 lớp ChatGPT chuyển sang dạng thẻ (tóm tắt đầu bài, mỗi ý một thẻ đánh số, ý dài tách thành gạch đầu dòng, khung "Thử ngay") để dễ đọc trên điện thoại
 - Android: bản này yêu cầu cài apk mới
 
 ## Các bản trước
+- Gia sư AI: thêm giáo trình 8 bài tự học (nhận thức & an toàn AI, kiểm chứng, tự tìm lỗ hổng kiến thức, xây gia sư AI riêng, lộ trình cá nhân hóa). Mở miễn phí phần mở đầu, Bài 1 và Bài 2; các bài còn lại mở khi mua khóa
+- Android: bản này yêu cầu cài apk mới
 - Thời khóa biểu của con tự đồng bộ lên app Phụ huynh (khi đã bật "Cho phụ huynh xem kết quả"), để phụ huynh theo dõi và nhận nhắc học
 - AI cho người đi làm – lớp ChatGPT: thêm 9 bài (Bài 4–12) chuyển từ tài liệu ChatGPT cho nhân viên văn phòng: thiết lập an toàn, công thức giao việc, email/Word/SOP, Excel/KPI, PowerPoint/họp, hành chính–nhân sự–mua hàng, dự án, 5 case study, lộ trình 30 ngày và thư viện 96 prompt
 - Android: bản này yêu cầu cài apk mới
