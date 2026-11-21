@@ -169,16 +169,16 @@ test('thời gian dùng app: máy học sinh gửi theo ngày, chỉ tăng; ph�
   assert.deepEqual((await view(db, code)).usage, []);
 });
 
-test('phần thưởng chuỗi ngày: máy học sinh gửi trạng thái đã sạch, phụ huynh xem, xóa dữ liệu thì mất', async () => {
+test('phần thưởng theo tuần: máy học sinh gửi trạng thái đã sạch, phụ huynh xem, xóa dữ liệu thì mất', async () => {
   const { db, code } = await setup();
   await progressSettings(db, { ...dev(code), enabled: true, goals: { daily: 30, weekend: 60, weekly: 5, pass: 70 } }, NOW);
-  const st = await progressSettings(db, { ...dev(code), reward: { on: true, days: 7, pct: 70, text: '  +30 phút   chơi game ' + 'x'.repeat(200), count: 7, achieved: true, given: [{ day: '2026-11-10', text: 'Kem', days: 7 }, { day: 'xấu', text: 'a' }] } }, NOW);
+  const st = await progressSettings(db, { ...dev(code), reward: { on: true, days: 5, pct: 70, text: '  30 phút   chơi game ' + 'x'.repeat(200), count: 3, hist: [{ week: '2026-11-09', ok: true, count: 5, done: false }, { week: '2026-11-02', ok: false, count: 2, done: false }, { week: 'xấu', ok: true }] } }, NOW);
   assert.equal(st.reward.text.length, 80);
-  assert.equal(st.reward.achieved, true);
-  assert.deepEqual(JSON.parse(JSON.stringify((await view(db, code)).reward.given)), [{ day: '2026-11-10', text: 'Kem', days: 7 }]);
-  assert.equal((await view(db, code)).reward.need, 7);
-  const off = await progressSettings(db, { ...dev(code), reward: { on: false, days: 7, pct: 70, achieved: true } }, NOW);
-  assert.equal(off.reward.achieved, false); // tắt thưởng thì không còn "đã đạt"
+  assert.deepEqual([st.reward.pending, st.reward.achieved, st.reward.hist.length], [1, true, 2]);
+  const v = await view(db, code);
+  assert.deepEqual([v.reward.need, v.reward.count], [5, 3]);
+  const off = await progressSettings(db, { ...dev(code), reward: { on: false, days: 5, pct: 70, hist: [{ week: '2026-11-09', ok: true, count: 5 }] } }, NOW);
+  assert.equal(off.reward.achieved, false); // tắt thưởng thì không còn "chờ trao"
   await progressSettings(db, { ...dev(code), purge: true }, NOW);
   assert.equal((await view(db, code)).reward, null);
 });

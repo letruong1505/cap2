@@ -32,50 +32,65 @@
     };
     return data;
   }
-  /* Phần thưởng chuỗi ngày: học đủ `days` ngày liên tiếp, mỗi ngày đạt từ `pct`% câu đúng thì phụ huynh trao `text`.
-     since = ngày (YYYY-MM-DD) phụ huynh trao thưởng gần nhất; chỉ tính các ngày sau mốc đó. given = lịch sử trao. */
+  /* Phần thưởng theo tuần (thứ Hai đến Chủ nhật): đạt ít nhất `days` ngày trong tuần, mỗi ngày đúng từ `pct`% số câu thì được `text`.
+     Học sinh KHÔNG thấy nội dung thưởng; chỉ thấy lời chúc mừng khi đạt hoặc lời tiếc khi hụt.
+     from = thứ Hai đầu tiên được tính (tuần sau khi bật). hist = kết quả từng tuần: { week, ok, count, shown, done }. */
   const DAY_RE = /^\d{4}-\d{2}-\d{2}$/;
   function cleanReward(r) {
     r = r && typeof r === 'object' ? r : {};
     return {
       on: r.on === true,
-      days: clampInt(r.days, 1, 60, 7),
+      days: clampInt(r.days, 1, 7, 7),
       pct: clampInt(r.pct, 10, 100, 70),
       text: String(r.text || '').replace(/\s+/g, ' ').trim().slice(0, 80),
-      since: DAY_RE.test(String(r.since || '')) ? String(r.since) : '',
-      given: (Array.isArray(r.given) ? r.given : []).slice(-30).filter((x) => x && DAY_RE.test(String(x.day))).map((x) => ({ day: String(x.day), text: String(x.text || '').slice(0, 80), days: clampInt(x.days, 1, 60, 7) })),
+      from: DAY_RE.test(String(r.from || '')) ? String(r.from) : '',
+      hist: (Array.isArray(r.hist) ? r.hist : []).filter((x) => x && DAY_RE.test(String(x.week))).slice(-30)
+        .map((x) => ({ week: String(x.week), ok: x.ok === true, count: clampInt(x.count, 0, 7, 0), shown: x.shown === true, done: x.done === true })),
     };
   }
-  function setReward(data, r) { data.reward = cleanReward(Object.assign({}, data.reward, r)); return data; }
   function isoLocal(t) { const d = new Date(t); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
-  /* Chuỗi ngày đạt tính đến hôm nay. Ngày đạt: có làm bài và tổng số câu đúng ≥ pct% (gộp mọi môn, mọi lớp).
-     Hôm nay chưa đạt thì chưa làm đứt chuỗi (còn cả ngày để học); ngày trước đó không đạt thì chuỗi về 0. */
-  function streak(data, now) {
-    now = now || Date.now();
-    const r = cleanReward(data.reward);
-    const byDay = {};
-    (data.attempts || []).forEach((a) => { const k = isoLocal(a.t); const x = byDay[k] || (byDay[k] = { c: 0, n: 0 }); x.c += a.correct; x.n += a.total; });
-    const ok = (k) => { const x = byDay[k]; return !!x && x.n > 0 && (100 * x.c) / x.n >= r.pct; };
-    const todayKey = isoLocal(now);
-    let count = 0; let t = startOfDay(now);
-    const todayOk = ok(todayKey);
-    if (!todayOk) t -= DAY;
-    for (let i = 0; i < 400; i++, t -= DAY) {
-      const k = isoLocal(t);
-      if (r.since && k <= r.since) break;
-      if (!ok(k)) break;
-      count++;
-    }
-    return { count, need: r.days, achieved: r.on && count >= r.days, todayOk, pct: r.pct, text: r.text, on: r.on };
-  }
-  /* Phụ huynh bấm "Đã trao": ghi lịch sử và bắt đầu chuỗi mới từ hôm nay (hôm nay không tính nữa). */
-  function giveReward(data, now) {
-    now = now || Date.now();
-    const r = cleanReward(data.reward);
-    r.given = r.given.concat({ day: isoLocal(now), text: r.text, days: r.days }).slice(-30);
-    r.since = isoLocal(now);
-    data.reward = r;
+  function weekStart(t) { const d = new Date(t); d.setHours(0, 0, 0, 0); d.setDate(d.getDate() - ((d.getDay() + 6) % 7)); return d.getTime(); }
+  function addDays(t, n) { const d = new Date(t); d.setDate(d.getDate() + n); return d.getTime(); }
+  /* Bật lần đầu thì bắt đầu tính từ thứ Hai tuần sau; tắt thì xóa mốc. */
+  function setReward(data, r) {
+    const old = cleanReward(data.reward); const n = cleanReward(Object.assign({}, old, r));
+    if (!n.on) n.from = '';
+    else if (!old.on || !n.from) n.from = isoLocal(addDays(weekStart(Date.now()), 7));
+    data.reward = n;
     return data;
+  }
+  /* Số ngày đạt trong tuần bắt đầu ngày weekStartMs. Ngày đạt: có làm bài và tổng số câu đúng ≥ pct% (gộp mọi môn, mọi lớp). */
+  function weekCount(data, wStart) {
+    const r = cleanReward(data.reward); const byDay = {};
+    (data.attempts || []).forEach((a) => { const k = isoLocal(a.t); const x = byDay[k] || (byDay[k] = { c: 0, n: 0 }); x.c += a.correct; x.n += a.total; });
+    let n = 0;
+    for (let i = 0; i < 7; i++) { const x = byDay[isoLocal(addDays(wStart, i))]; if (x && x.n > 0 && (100 * x.c) / x.n >= r.pct) n++; }
+    return n;
+  }
+  /* Chốt kết quả các tuần đã tính: tuần đã qua thì đạt/hụt; tuần hiện tại đạt đủ số ngày thì thắng ngay. Trả về các kết quả chưa báo cho học sinh. */
+  function evaluate(data, now) {
+    now = now || Date.now();
+    const r = cleanReward(data.reward);
+    if (!r.on || !r.from) { data.reward = r; return []; }
+    const cur = weekStart(now);
+    const have = new Set(r.hist.map((x) => x.week));
+    for (let w = new Date(r.from + 'T00:00:00').getTime(), i = 0; w <= cur && i < 60; w = addDays(w, 7), i++) {
+      const k = isoLocal(w); if (have.has(k)) continue;
+      const count = weekCount(data, w); const ok = count >= r.days;
+      if (ok || w < cur) r.hist.push({ week: k, ok, count, shown: false, done: false });
+    }
+    r.hist = r.hist.slice(-30);
+    data.reward = r;
+    return r.hist.filter((x) => !x.shown);
+  }
+  function markShown(data, week) { const r = cleanReward(data.reward); r.hist.forEach((x) => { if (x.week === week) x.shown = true; }); data.reward = r; return data; }
+  /* Phụ huynh bấm "Đã trao" cho các tuần thắng chưa trao. */
+  function giveReward(data) { const r = cleanReward(data.reward); r.hist.forEach((x) => { if (x.ok) x.done = true; }); data.reward = r; return data; }
+  /* Tóm tắt cho phụ huynh/Worker: số ngày đạt tuần này, số tuần thắng chờ trao. */
+  function rewardState(data, now) {
+    now = now || Date.now();
+    const r = cleanReward(data.reward);
+    return { on: r.on, days: r.days, pct: r.pct, text: r.text, from: r.from, count: r.on ? weekCount(data, weekStart(now)) : 0, pending: r.hist.filter((x) => x.ok && !x.done).length, hist: r.hist.slice(-12) };
   }
 
   /* Ngưỡng riêng từng môn: { mã môn: % }, chỉ giữ giá trị hợp lệ. */
@@ -285,5 +300,5 @@
     };
   }
 
-  return { KEY, INTERVALS, DEFAULT_GOALS, DEFAULT_PASS, goalFor, passFor, markPass, cleanPassBy, score10, points, setGoals, cleanReward, setReward, streak, giveReward, progress, report, load, save, recordAttempt, grade, due, weekly, slimItem };
+  return { KEY, INTERVALS, DEFAULT_GOALS, DEFAULT_PASS, goalFor, passFor, markPass, cleanPassBy, score10, points, setGoals, cleanReward, setReward, weekStart, weekCount, evaluate, markShown, giveReward, rewardState, progress, report, load, save, recordAttempt, grade, due, weekly, slimItem };
 });

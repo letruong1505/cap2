@@ -51,12 +51,14 @@ async function passOf(db, code) {
   try { by = r && r.pass_by ? JSON.parse(r.pass_by) : {}; } catch (e) { by = {}; }
   return cleanPass({ pass: r && r.pass, passBy: by });
 }
-// Phần thưởng chuỗi ngày: chỉ giữ các trường hợp lệ, văn bản cắt ngắn.
+// Phần thưởng theo tuần: chỉ giữ các trường hợp lệ, văn bản cắt ngắn. achieved = còn tuần thắng chưa trao (phần mềm khóa máy sau này đọc cờ này).
 function cleanReward(r) {
   if (!r || typeof r !== 'object') return null;
-  const given = (Array.isArray(r.given) ? r.given : []).slice(-30).filter((x) => x && DAY_RE.test(String(x.day))).map((x) => ({ day: String(x.day), text: String(x.text || '').slice(0, 80), days: clampInt(x.days, 1, 60, 7) }));
-  const need = clampInt(r.days, 1, 60, 7);
-  return { on: r.on === true, need, pct: clampInt(r.pct, 10, 100, 70), text: String(r.text || '').replace(/\s+/g, ' ').trim().slice(0, 80), count: clampInt(r.count, 0, 400, 0), achieved: r.on === true && r.achieved === true, given };
+  const hist = (Array.isArray(r.hist) ? r.hist : []).filter((x) => x && DAY_RE.test(String(x.week))).slice(-12)
+    .map((x) => ({ week: String(x.week), ok: x.ok === true, count: clampInt(x.count, 0, 7, 0), done: x.done === true }));
+  const on = r.on === true;
+  const pending = on ? hist.filter((x) => x.ok && !x.done).length : 0;
+  return { on, need: clampInt(r.days, 1, 7, 7), pct: clampInt(r.pct, 10, 100, 70), text: String(r.text || '').replace(/\s+/g, ' ').trim().slice(0, 80), count: clampInt(r.count, 0, 7, 0), pending, achieved: pending > 0, hist };
 }
 async function rewardOf(db, code) {
   const r = await db.prepare('SELECT data FROM progress_reward WHERE code = ?1').bind(code).first();
