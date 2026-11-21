@@ -1017,3 +1017,27 @@ button.dc-col.sel { background: #dcebf3; }
 .license-fold-term { color: var(--ink, #1e293b); font-size: 15px; white-space: nowrap; }
 .license-fold-body { padding: 0 16px 12px; }
 .license-fold-body .license-courses-label { margin-top: 8px; }
+
+/* Thời khóa biểu và nhắc học bài */
+.tt-banner { margin: 12px 0; padding: 12px 16px; border: 2px solid #f0b429; border-radius: 12px; background: #fff8e1; }
+.tt-banner p { margin: 4px 0; }
+.tt-chips { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 6px 0; }
+.tt-chip { padding: 5px 12px; border: 1px solid var(--rule); border-radius: 999px; background: #fff; font: inherit; font-size: 14px; font-weight: 600; color: var(--ink); }
+button.tt-chip { cursor: pointer; }
+.tt-chip.go { border-color: var(--sky); color: var(--sky); }
+.tt-chip.toggle.on { background: var(--sky); border-color: var(--sky); color: #fff; }
+.tt-card { margin: 16px 0; border: 1px solid var(--rule); border-radius: 12px; background: var(--paper); }
+.tt-card.stale { border-color: #f0b429; }
+.tt-card summary { display: flex; align-items: baseline; gap: 10px; padding: 10px 16px; cursor: pointer; list-style: none; font-size: 14px; font-weight: 700; color: var(--mute); }
+.tt-card summary::-webkit-details-marker { display: none; }
+.tt-card summary::before { content: '▸'; }
+.tt-card[open] summary::before { content: '▾'; }
+.tt-title { flex: 1 1 auto; }
+.tt-status { color: var(--ink); font-size: 14px; }
+.tt-card.stale .tt-status { color: #b45309; }
+.tt-body { padding: 0 16px 14px; }
+.tt-day { display: flex; gap: 10px; align-items: flex-start; padding: 6px 0; border-top: 1px solid var(--rule); }
+.tt-day-name { flex: 0 0 74px; padding-top: 6px; font-weight: 700; font-size: 14px; }
+.tt-other { flex: 1 1 150px; min-width: 120px; padding: 5px 10px; border: 1px dashed var(--rule); border-radius: 999px; font: inherit; font-size: 13px; }
+.tt-remind-row { margin: 12px 0 8px; font-size: 14px; }
+@media (max-width: 600px) { .tt-day { flex-direction: column; gap: 2px; } .tt-day-name { flex: none; padding-top: 0; } }

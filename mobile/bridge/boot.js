@@ -24,6 +24,29 @@
     }
     return v;
   }
+  // Thông báo nhắc học bài (thời khóa biểu): dùng plugin LocalNotifications nếu apk có; không có thì app chỉ nhắc khi mở.
+  window.NLNotify = (function () {
+    var cap = window.Capacitor; var ok = false;
+    try { ok = !!(cap && cap.registerPlugin && cap.isPluginAvailable && cap.isPluginAvailable('LocalNotifications')); } catch (e) { ok = false; }
+    if (!ok) return null;
+    var LN = cap.registerPlugin('LocalNotifications');
+    return {
+      request: function () { return LN.requestPermissions().then(function (r) { return r.display === 'granted'; }); },
+      // Thay toàn bộ lịch cũ bằng danh sách mới [{id, at (ms), title, body}].
+      schedule: function (items) {
+        return LN.checkPermissions().then(function (p) {
+          if (p.display !== 'granted') return false;
+          return LN.getPending().then(function (pe) {
+            var old = (pe.notifications || []).map(function (n) { return { id: n.id }; });
+            return old.length ? LN.cancel({ notifications: old }) : null;
+          }).then(function () {
+            if (!items.length) return true;
+            return LN.schedule({ notifications: items.map(function (i) { return { id: i.id, title: i.title, body: i.body, schedule: { at: new Date(i.at), allowWhileIdle: true } }; }) }).then(function () { return true; });
+          });
+        });
+      },
+    };
+  })();
   var fetchText = function (url) { return fetch(url).then(function (r) { if (!r.ok) throw new Error('Không đọc được ' + url); return r.text(); }); };
   var keyBytes = window.NLMobileLicense.b64uToBytes(cfg.publicKey.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, ''));
 
