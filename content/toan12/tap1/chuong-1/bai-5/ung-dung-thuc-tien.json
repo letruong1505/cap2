@@ -10,28 +10,89 @@
   "bookPage": 33,
   "theory": [
     {
-      "type": "text",
-      "content": "Nếu y = f(x), tốc độ thay đổi trung bình của y đối với x trên đoạn [x₁; x₂] là (f(x₂) − f(x₁))/(x₂ − x₁). Giới hạn của tỉ số này khi x₂ → x₁ là tốc độ thay đổi tức thời của y tại x₁, bằng f'(x₁)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Vận tốc v = s′, gia tốc a = v′ = s″; chi phí biên là C′(x). Bài tối ưu hoá: {k lập hàm số} Q(x), tìm {k tập xác định} theo ý nghĩa thực tế, tìm {k GTLN hoặc GTNN}, rồi kết luận theo ngữ cảnh."
     },
     {
-      "type": "text",
-      "content": "Nếu s = s(t) là hàm vị trí của vật chuyển động thẳng thì vận tốc tức thời là v(t) = s'(t), và gia tốc tức thời là a(t) = v'(t) = s''(t)."
+      "type": "card",
+      "title": "Tốc độ thay đổi",
+      "text": "Với y = f(x):",
+      "formulas": [
+        "Tốc độ thay đổi {k trung bình} trên [x₁; x₂]:  (f(x₂) − f(x₁))/(x₂ − x₁)",
+        "Tốc độ thay đổi {k tức thời} tại x₁:  {k f′(x₁)}  (giới hạn của tỉ số trên khi x₂ → x₁)"
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Nếu C = C(x) là hàm chi phí khi sản xuất x đơn vị hàng hoá thì C'(x) gọi là chi phí biên, xấp xỉ chi phí để sản xuất thêm một đơn vị hàng hoá tiếp theo."
+      "type": "card",
+      "title": "Chuyển động thẳng",
+      "text": "Cho s = s(t) là hàm vị trí của vật.",
+      "formulas": [
+        "Vận tốc tức thời  {k v(t) = s′(t)}",
+        "Gia tốc tức thời  {k a(t) = v′(t) = s″(t)}"
+      ],
+      "try": {
+        "q": "Vật có s(t) = t³ thì vận tốc tức thời v(t) bằng:",
+        "options": [
+          "3t²",
+          "t²",
+          "6t"
+        ],
+        "answer": 0,
+        "explain": "v(t) = s′(t) = 3t²; còn 6t là gia tốc a(t) = v′(t)."
+      },
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Bài toán tối ưu hoá: thiết lập hàm số cần tối ưu từ dữ kiện đề bài, tìm tập xác định phù hợp với ý nghĩa thực tiễn, khảo sát để tìm giá trị lớn nhất hoặc nhỏ nhất, rồi kết luận theo ngữ cảnh."
+      "type": "card",
+      "title": "Bài toán kinh tế",
+      "table": {
+        "head": [
+          "Đại lượng",
+          "Kí hiệu",
+          "Ý nghĩa"
+        ],
+        "rows": [
+          [
+            "Chi phí",
+            "C(x)",
+            "Chi phí sản xuất x đơn vị"
+          ],
+          [
+            "Chi phí biên",
+            "C′(x)",
+            "Xấp xỉ chi phí sản xuất thêm 1 đơn vị tiếp theo"
+          ],
+          [
+            "Hàm cầu",
+            "p(x)",
+            "Giá bán mỗi đơn vị khi bán x đơn vị (thường là hàm giảm)"
+          ],
+          [
+            "Doanh thu",
+            "R(x) = x·p(x)",
+            "R′(x) là doanh thu biên"
+          ],
+          [
+            "Lợi nhuận",
+            "P(x) = R(x) − C(x)",
+            "P′(x) là lợi nhuận biên"
+          ]
+        ]
+      },
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Hàm cầu p(x) là giá bán mỗi đơn vị khi bán x đơn vị (thường là hàm giảm). Hàm doanh thu R(x) = x·p(x), hàm lợi nhuận P(x) = R(x) − C(x). Đạo hàm R'(x) là doanh thu biên và P'(x) là lợi nhuận biên."
-    },
-    {
-      "type": "text",
-      "content": "Quy trình giải bài toán tối ưu hoá: Bước 1, xác định đại lượng Q cần làm lớn nhất hoặc nhỏ nhất và biểu diễn nó qua các đại lượng khác. Bước 2, chọn một đại lượng x thích hợp, biểu diễn Q theo x và tìm tập xác định của Q(x). Bước 3, tìm giá trị lớn nhất hoặc nhỏ nhất của Q(x) rồi kết luận."
+      "type": "card",
+      "title": "Quy trình giải bài toán tối ưu hoá",
+      "points": [
+        "{k Bước 1:} Xác định đại lượng Q cần lớn nhất hoặc nhỏ nhất và biểu diễn nó qua các đại lượng khác.",
+        "{k Bước 2:} Chọn đại lượng x thích hợp, biểu diễn Q theo x và tìm tập xác định của Q(x) (phù hợp ý nghĩa thực tế).",
+        "{k Bước 3:} Tìm GTLN hoặc GTNN của Q(x) rồi kết luận."
+      ],
+      "tip": "Đọc kĩ ngữ cảnh: x thường không âm, là số nguyên khi đếm số sản phẩm.",
+      "n": 4
     }
   ],
   "examples": [

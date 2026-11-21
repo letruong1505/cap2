@@ -10,25 +10,80 @@
   "bookPage": 75,
   "theory": [
     {
-      "type": "text",
-      "content": "Khoảng biến thiên R của mẫu số liệu ghép nhóm là hiệu R = a_{k+1} − a_1, trong đó a_1 là đầu mút trái của nhóm đầu và a_{k+1} là đầu mút phải của nhóm cuối. Khoảng biến thiên đo mức độ phân tán: R càng lớn thì mẫu càng phân tán."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Khoảng biến thiên R = a_{k+1} − a₁ (đầu mút phải nhóm cuối trừ đầu mút trái nhóm đầu). Khoảng tứ phân vị Δ_Q = Q₃ − Q₁ {k không bị ảnh hưởng} bởi giá trị bất thường. Với mẫu ghép nhóm, các giá trị này chỉ là {k xấp xỉ}."
     },
     {
-      "type": "text",
-      "content": "Tứ phân vị thứ r (r = 1, 2, 3) của mẫu ghép nhóm được tính bằng công thức Q_r = a_p + ((r·n/4 − (m_1 + … + m_{p−1}))/m_p)·(a_{p+1} − a_p), với nhóm [a_p; a_{p+1}) chứa tứ phân vị thứ r."
+      "type": "card",
+      "title": "Khoảng biến thiên R",
+      "formulas": [
+        "R = {k a_{k+1} − a₁}"
+      ],
+      "points": [
+        "a₁ là đầu mút trái của nhóm đầu; a_{k+1} là đầu mút phải của nhóm cuối.",
+        "R càng lớn thì mẫu số liệu càng {k phân tán}."
+      ],
+      "try": {
+        "q": "Mẫu ghép nhóm có nhóm đầu [0; 10) và nhóm cuối [40; 50). Khoảng biến thiên R bằng:",
+        "options": [
+          "50",
+          "40",
+          "45"
+        ],
+        "answer": 0,
+        "explain": "R = 50 − 0 = 50 (đầu mút phải nhóm cuối trừ đầu mút trái nhóm đầu)."
+      },
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Khoảng tứ phân vị của mẫu ghép nhóm là Δ_Q = Q_3 − Q_1. Khoảng tứ phân vị chỉ phụ thuộc nửa giữa của mẫu số liệu nên không bị ảnh hưởng bởi giá trị bất thường; có thể dùng để đo mức độ phân tán."
+      "type": "card",
+      "title": "Tứ phân vị thứ r (r = 1, 2, 3)",
+      "formulas": [
+        "Q_r = a_p + ( r·n/4 − (m₁ + … + m_{p−1}) ) / m_p · (a_{p+1} − a_p)"
+      ],
+      "points": [
+        "n là cỡ mẫu; m_i là tần số của nhóm thứ i.",
+        "[a_p; a_{p+1}) là nhóm chứa Q_r: nhóm đầu tiên mà tần số tích luỹ ≥ r·n/4.",
+        "Q₁, Q₂, Q₃ chia mẫu thành bốn phần có số liệu bằng nhau; Q₂ là trung vị."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Giá trị của khoảng biến thiên và khoảng tứ phân vị tính từ mẫu số liệu ghép nhóm là giá trị xấp xỉ; giá trị tính trực tiếp từ mẫu số liệu gốc là giá trị chính xác."
+      "type": "card",
+      "title": "Khoảng tứ phân vị",
+      "formulas": [
+        "Δ_Q = {k Q₃ − Q₁}"
+      ],
+      "points": [
+        "Chỉ phụ thuộc vào nửa giữa của mẫu nên {k không bị ảnh hưởng} bởi giá trị bất thường.",
+        "Dùng để đo mức độ phân tán của mẫu."
+      ],
+      "try": {
+        "q": "Mẫu có một giá trị rất lớn bất thường. Số đo nào ít bị ảnh hưởng nhất?",
+        "options": [
+          "Khoảng tứ phân vị",
+          "Khoảng biến thiên",
+          "Cả hai như nhau"
+        ],
+        "answer": 0,
+        "explain": "R dùng hai đầu mút nên bị kéo lớn; Δ_Q chỉ dùng Q₁ và Q₃ nên ổn định."
+      },
+      "n": 3
     },
     {
       "type": "figure",
       "figure": "figures/tn-toan12-b9-phan-vi.svg",
       "caption": "Khoảng biến thiên và khoảng tứ phân vị"
+    },
+    {
+      "type": "card",
+      "title": "Số liệu ghép nhóm chỉ là xấp xỉ",
+      "points": [
+        "Giá trị R và Δ_Q tính từ mẫu {k ghép nhóm} là giá trị {k xấp xỉ}.",
+        "Giá trị tính trực tiếp từ mẫu số liệu gốc là giá trị chính xác."
+      ],
+      "n": 4
     }
   ],
   "examples": [

@@ -10,12 +10,39 @@
   "bookPage": 50,
   "theory": [
     {
-      "type": "text",
-      "content": "Góc giữa hai đường thẳng Δ, Δ′ có vectơ chỉ phương u = (a; b; c), u′ = (a′; b′; c′) được tính bởi cos(Δ, Δ′) = |cos(u, u′)| = |aa′ + bb′ + cc′| / (√(a² + b² + c²) · √(a′² + b′² + c′²))."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Đường – đường: {k cos} = |u·u′|/(|u||u′|). Đường – mặt: {k sin} = |u·n|/(|u||n|). Mặt – mặt: {k cos} = |n·m|/(|n||m|). Luôn có {k giá trị tuyệt đối} ở tử số vì góc giữa hai đường, hai mặt không quá 90°."
     },
     {
-      "type": "text",
-      "content": "Góc giữa đường thẳng Δ có vectơ chỉ phương u = (a; b; c) và mặt phẳng (P) có vectơ pháp tuyến n = (A; B; C) được tính bởi sin(Δ, (P)) = |cos(u, n)| = |aA + bB + cC| / (√(a² + b² + c²) · √(A² + B² + C²))."
+      "type": "card",
+      "title": "Góc giữa hai đường thẳng",
+      "text": "Δ, Δ′ có vectơ chỉ phương u = (a; b; c), u′ = (a′; b′; c′):",
+      "formulas": [
+        "cos(Δ, Δ′) = |cos(u, u′)| = {k |aa′ + bb′ + cc′| / (√(a² + b² + c²) · √(a′² + b′² + c′²))}"
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Góc giữa đường thẳng và mặt phẳng",
+      "text": "Δ có vectơ chỉ phương u = (a; b; c), (P) có vectơ pháp tuyến n = (A; B; C):",
+      "formulas": [
+        "{k sin}(Δ, (P)) = |cos(u, n)| = |aA + bB + cC| / (√(a² + b² + c²) · √(A² + B² + C²))"
+      ],
+      "wrong": "Góc giữa đường và mặt tính bằng cos của u và n.",
+      "right": "Dùng {k sin}: góc đường – mặt bù với góc giữa u và n.",
+      "try": {
+        "q": "Δ có u = (1; 0; 0), (P) có n = (0; 0; 1). Khi đó sin của góc giữa Δ và (P) bằng:",
+        "options": [
+          "0",
+          "1",
+          "1/2"
+        ],
+        "answer": 0,
+        "explain": "|1·0 + 0·0 + 0·1| = 0 nên sin = 0: Δ song song hoặc nằm trong (P)."
+      },
+      "n": 2
     },
     {
       "type": "figure",
@@ -23,12 +50,56 @@
       "caption": "Góc φ giữa đường thẳng Δ và mặt phẳng (P) là góc giữa Δ với hình chiếu IH của nó trên (P)."
     },
     {
-      "type": "text",
-      "content": "Góc giữa hai mặt phẳng (P), (Q) có vectơ pháp tuyến n, m được tính bởi cos φ = |cos(n, m)| = |n · m| / (|n| · |m|)."
+      "type": "card",
+      "title": "Góc giữa hai mặt phẳng",
+      "text": "(P), (Q) có vectơ pháp tuyến n, m:",
+      "formulas": [
+        "cos φ = |cos(n, m)| = {k |n · m| / (|n| · |m|)}"
+      ],
+      "try": {
+        "q": "Hai mặt phẳng có n = (1; 0; 0), m = (1; 1; 0). Góc giữa chúng bằng:",
+        "options": [
+          "45°",
+          "30°",
+          "60°"
+        ],
+        "answer": 0,
+        "explain": "cos φ = 1/(1·√2) = √2/2 nên φ = 45°."
+      },
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Trong bài này, nếu không nói gì thêm, góc được tính theo đơn vị độ và làm tròn đến chữ số thập phân thứ nhất."
+      "type": "card",
+      "title": "Tổng hợp",
+      "points": [
+        "Nếu không nói gì thêm, góc tính theo đơn vị độ và làm tròn đến chữ số thập phân thứ nhất."
+      ],
+      "table": {
+        "head": [
+          "Góc giữa",
+          "Dùng",
+          "Công thức"
+        ],
+        "rows": [
+          [
+            "Hai đường thẳng",
+            "cos",
+            "|u·u′| / (|u|·|u′|)"
+          ],
+          [
+            "Đường và mặt",
+            "sin",
+            "|u·n| / (|u|·|n|)"
+          ],
+          [
+            "Hai mặt phẳng",
+            "cos",
+            "|n·m| / (|n|·|m|)"
+          ]
+        ]
+      },
+      "tip": "Chỉ có góc đường – mặt dùng sin; hai trường hợp còn lại dùng cos.",
+      "n": 4
     },
     {
       "type": "method",

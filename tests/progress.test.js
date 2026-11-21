@@ -175,3 +175,13 @@ test('ngưỡng đạt: mặc định 80%, riêng từng môn, chương yếu th
   assert.ok(r2.weak.some((c) => c.subject === 'toan')); // 80% < 90% nên chương Toán thành chương yếu
   assert.ok(!r2.weak.some((c) => c.subject === 'anh'));
 });
+
+test('báo cáo từng ngày có chi tiết theo môn và đạt/không đạt (để chạm vào cột xem)', () => {
+  let d = P.recordAttempt({ attempts: [], notebook: [] }, meta({ subject: 'toan', correct: 4, total: 5 }), [], [], T0);
+  d = P.recordAttempt(d, meta({ subject: 'anh', grade: 7, lessonId: 'anh7/a', correct: 2, total: 5, chapter: 'U1' }), [], [], T0);
+  const r = P.report(d, { from: T0, to: T0 }, T0);
+  const day = r.days[0];
+  assert.equal(day.subjects.length, 2);
+  const by = Object.fromEntries(day.subjects.map((s) => [s.subject, s]));
+  assert.deepEqual([by.toan.passed, by.anh.passed, by.anh.pct], [true, false, 40]);
+});

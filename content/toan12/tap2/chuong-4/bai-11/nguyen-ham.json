@@ -10,25 +10,120 @@
   "bookPage": 4,
   "theory": [
     {
-      "type": "text",
-      "content": "Cho hàm số f(x) xác định trên khoảng K (hoặc đoạn, hoặc nửa khoảng). Hàm số F(x) được gọi là một nguyên hàm của f(x) trên K nếu F'(x) = f(x) với mọi x thuộc K."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "F là nguyên hàm của f trên K khi {k F′(x) = f(x)}. Mọi nguyên hàm có dạng {k F(x) + C}. Nhớ bảng: ∫x^α dx = x^(α+1)/(α+1) + C; ∫(1/x)dx = ln|x| + C; ∫cos x dx = sin x + C; ∫sin x dx = −cos x + C."
     },
     {
-      "type": "text",
-      "content": "Nếu F(x) là một nguyên hàm của f(x) trên K thì mọi nguyên hàm của f(x) trên K đều có dạng F(x) + C (C là hằng số). Họ các nguyên hàm này kí hiệu ∫f(x)dx = F(x) + C."
+      "type": "card",
+      "title": "Nguyên hàm",
+      "text": "Cho f(x) xác định trên khoảng K (hoặc đoạn, nửa khoảng).",
+      "formulas": [
+        "F(x) là một nguyên hàm của f(x) trên K  ⇔  {k F′(x) = f(x)} với mọi x ∈ K"
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Tính chất: ∫kf(x)dx = k∫f(x)dx (k ≠ 0) và ∫[f(x) ± g(x)]dx = ∫f(x)dx ± ∫g(x)dx."
-    },
-    {
-      "type": "text",
-      "content": "Bảng nguyên hàm thường gặp: ∫x^α dx = x^(α+1)/(α+1) + C (α ≠ −1); ∫(1/x)dx = ln|x| + C; ∫e^x dx = e^x + C; ∫a^x dx = a^x/ln a + C (0 < a ≠ 1); ∫cos x dx = sin x + C; ∫sin x dx = −cos x + C; ∫(1/cos²x)dx = tan x + C; ∫(1/sin²x)dx = −cot x + C."
+      "type": "card",
+      "title": "Họ các nguyên hàm",
+      "formulas": [
+        "∫f(x)dx = {k F(x) + C}    (C là hằng số)"
+      ],
+      "points": [
+        "Nếu F(x) là một nguyên hàm của f(x) thì mọi nguyên hàm của f(x) đều có dạng F(x) + C."
+      ],
+      "wrong": "Viết ∫2x dx = x².",
+      "right": "Phải thêm hằng số: ∫2x dx = x² + C.",
+      "n": 2
     },
     {
       "type": "figure",
       "figure": "figures/tn-toan12-b11-ho-nguyen-ham.svg",
       "caption": "Họ nguyên hàm F(x) + C"
+    },
+    {
+      "type": "card",
+      "title": "Tính chất",
+      "formulas": [
+        "∫kf(x)dx = k∫f(x)dx    (k ≠ 0)",
+        "∫[f(x) ± g(x)]dx = ∫f(x)dx ± ∫g(x)dx"
+      ],
+      "tip": "Hằng số đưa ra ngoài; tổng, hiệu tách từng hàm.",
+      "n": 3
+    },
+    {
+      "type": "card",
+      "title": "Bảng nguyên hàm thường gặp",
+      "table": {
+        "head": [
+          "Hàm f(x)",
+          "Nguyên hàm"
+        ],
+        "rows": [
+          [
+            "x^α  (α ≠ −1)",
+            "x^(α+1)/(α+1) + C"
+          ],
+          [
+            "1/x",
+            "ln|x| + C"
+          ],
+          [
+            "e^x",
+            "e^x + C"
+          ],
+          [
+            "a^x  (0 < a ≠ 1)",
+            "a^x/ln a + C"
+          ],
+          [
+            "cos x",
+            "sin x + C"
+          ],
+          [
+            "sin x",
+            "−cos x + C"
+          ],
+          [
+            "1/cos²x",
+            "tan x + C"
+          ],
+          [
+            "1/sin²x",
+            "−cot x + C"
+          ]
+        ]
+      },
+      "tip": "Nhóm sin – cos: nguyên hàm của {k cos} là sin (dương); nguyên hàm của {k sin} là −cos (có dấu trừ).",
+      "try": {
+        "q": "∫sin x dx bằng:",
+        "options": [
+          "−cos x + C",
+          "cos x + C",
+          "sin x + C"
+        ],
+        "answer": 0,
+        "explain": "(−cos x)′ = sin x nên ∫sin x dx = −cos x + C."
+      },
+      "n": 4
+    },
+    {
+      "type": "card",
+      "title": "Dễ nhầm: ∫(1/x)dx",
+      "wrong": "∫(1/x)dx = ln x + C.",
+      "right": "∫(1/x)dx = {k ln|x|} + C (có dấu giá trị tuyệt đối).",
+      "why": "Công thức x^α không dùng được khi α = −1; trường hợp đó có công thức riêng là ln|x|.",
+      "try": {
+        "q": "Hàm F(x) = x³ + 5 là nguyên hàm của:",
+        "options": [
+          "3x²",
+          "x⁴/4",
+          "3x² + 5"
+        ],
+        "answer": 0,
+        "explain": "F′(x) = 3x². Hằng số 5 mất đi khi lấy đạo hàm."
+      },
+      "n": 5
     },
     {
       "type": "method",

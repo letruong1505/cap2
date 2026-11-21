@@ -10,29 +10,86 @@
   "bookPage": 15,
   "theory": [
     {
-      "type": "text",
-      "content": "Cho hàm số y = f(x) xác định trên tập D. Số M được gọi là giá trị lớn nhất của f(x) trên D nếu f(x) ≤ M với mọi x thuộc D và tồn tại x₀ thuộc D sao cho f(x₀) = M. Kí hiệu M = max f(x)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Trên đoạn [a; b], hàm liên tục {k luôn có} GTLN và GTNN: so sánh {k f(a), f(b)} với giá trị tại các {k điểm cực trị} thuộc (a; b). Trên khoảng hoặc nửa khoảng thì có thể không tồn tại."
     },
     {
-      "type": "text",
-      "content": "Số m được gọi là giá trị nhỏ nhất của f(x) trên D nếu f(x) ≥ m với mọi x thuộc D và tồn tại x₀ thuộc D sao cho f(x₀) = m. Kí hiệu m = min f(x)."
+      "type": "card",
+      "title": "Giá trị lớn nhất",
+      "text": "Cho hàm số y = f(x) xác định trên tập D.",
+      "formulas": [
+        "M = max f(x) trên D  ⇔  {k f(x) ≤ M} với mọi x ∈ D  và  tồn tại x₀ ∈ D để {k f(x₀) = M}"
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Khi nói giá trị lớn nhất, nhỏ nhất của hàm số mà không nói 'trên tập D' thì hiểu là trên toàn bộ tập xác định của hàm số."
+      "type": "card",
+      "title": "Giá trị nhỏ nhất",
+      "formulas": [
+        "m = min f(x) trên D  ⇔  {k f(x) ≥ m} với mọi x ∈ D  và  tồn tại x₀ ∈ D để {k f(x₀) = m}"
+      ],
+      "points": [
+        "Nếu đề không nói “trên tập D” thì hiểu là trên toàn bộ tập xác định."
+      ],
+      "tip": "Hai điều kiện phải đủ: bị chặn (f(x) ≤ M) và đạt được (f(x₀) = M).",
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Để tìm giá trị lớn nhất và nhỏ nhất trên một tập D, ta thường lập bảng biến thiên của hàm số trên D rồi kết luận. Khi D là đoạn [a; b], ta so sánh giá trị f(a), f(b) với các giá trị f(x₀) tại các điểm cực trị x₀ thuộc (a; b)."
-    },
-    {
-      "type": "text",
-      "content": "Nếu hàm số liên tục trên đoạn [a; b] thì luôn có giá trị lớn nhất và giá trị nhỏ nhất trên đoạn đó. Nếu khoảng hoặc nửa khoảng có đầu mút không thuộc tập xác định hoặc tiến ra vô cực, giá trị lớn nhất hoặc nhỏ nhất có thể không tồn tại."
+      "type": "card",
+      "title": "Cách tìm GTLN, GTNN",
+      "points": [
+        "Trên tập D bất kì: lập bảng biến thiên trên D rồi kết luận.",
+        "Trên đoạn [a; b]: tính f(a), f(b) và f(x₀) tại các điểm cực trị x₀ thuộc (a; b), rồi lấy số lớn nhất, nhỏ nhất."
+      ],
+      "n": 3
     },
     {
       "type": "figure",
       "figure": "figures/tn-toan12-b2-gtln.svg",
       "caption": "Giá trị lớn nhất, nhỏ nhất trên đoạn [a; b]"
+    },
+    {
+      "type": "card",
+      "title": "Khi nào có, khi nào không",
+      "table": {
+        "head": [
+          "Tập D",
+          "Hàm số",
+          "GTLN, GTNN"
+        ],
+        "rows": [
+          [
+            "Đoạn [a; b]",
+            "Liên tục",
+            "{k Luôn có}"
+          ],
+          [
+            "Khoảng, nửa khoảng",
+            "Đầu mút không thuộc tập xác định hoặc tiến ra vô cực",
+            "Có thể không có"
+          ]
+        ]
+      },
+      "try": {
+        "q": "Hàm số y = 1/x trên khoảng (0; 1) có giá trị lớn nhất không?",
+        "options": [
+          "Không có",
+          "Có, bằng 1",
+          "Có, bằng 0"
+        ],
+        "answer": 0,
+        "explain": "Khi x tiến tới 0 thì 1/x tăng vô hạn, còn x = 1 không thuộc (0; 1), nên không có GTLN."
+      },
+      "n": 4
+    },
+    {
+      "type": "card",
+      "title": "Dễ nhầm: chỉ so sánh hai đầu mút",
+      "wrong": "Trên [a; b] chỉ cần so sánh f(a) và f(b).",
+      "right": "Phải so sánh thêm giá trị tại các điểm cực trị nằm trong (a; b).",
+      "why": "Ví dụ y = x² − 4x trên [0; 5]: f(0) = 0, f(5) = 5 nhưng f(2) = −4 nhỏ hơn, nên GTNN là −4, GTLN là 5.",
+      "n": 5
     },
     {
       "type": "method",

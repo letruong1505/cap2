@@ -10,29 +10,78 @@
   "bookPage": 12,
   "theory": [
     {
-      "type": "text",
-      "content": "Diện tích hình thang cong giới hạn bởi đồ thị y = f(x) liên tục, không âm trên [a; b], trục hoành và hai đường thẳng x = a, x = b. Nếu F(x) là một nguyên hàm của f(x) trên [a; b] thì S = F(b) − F(a)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "∫_a^b f(x)dx = F(b) − F(a) với F là một nguyên hàm của f: {k cận trên trừ cận dưới}. Nếu f ≥ 0 trên [a; b] thì tích phân là {k diện tích} hình thang cong. Đổi cận thì đổi dấu: ∫_a^b = −∫_b^a."
     },
     {
-      "type": "text",
-      "content": "Cho f(x) liên tục trên [a; b] và F(x) là một nguyên hàm của f(x). Hiệu F(b) − F(a) gọi là tích phân từ a đến b của f(x), kí hiệu ∫_a^b f(x)dx = F(x)|_a^b = F(b) − F(a). Tích phân không phụ thuộc vào cách kí hiệu biến."
+      "type": "card",
+      "title": "Diện tích hình thang cong",
+      "text": "Hình thang cong giới hạn bởi y = f(x) liên tục, không âm trên [a; b], trục hoành và hai đường x = a, x = b.",
+      "formulas": [
+        "S = {k F(b) − F(a)}    (F là một nguyên hàm của f trên [a; b])"
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Quy ước: ∫_a^a f(x)dx = 0 và ∫_a^b f(x)dx = −∫_b^a f(x)dx. Ý nghĩa hình học: nếu f(x) liên tục và không âm trên [a; b] thì ∫_a^b f(x)dx là diện tích hình thang cong giới hạn bởi y = f(x), trục hoành, x = a và x = b."
+      "type": "card",
+      "title": "Tích phân từ a đến b",
+      "formulas": [
+        "∫_a^b f(x)dx = F(x)|_a^b = {k F(b) − F(a)}"
+      ],
+      "points": [
+        "a gọi là cận dưới, b là cận trên.",
+        "Tích phân không phụ thuộc vào cách kí hiệu biến (x hay t)."
+      ],
+      "wrong": "∫_a^b f(x)dx = F(a) − F(b).",
+      "right": "{k Cận trên trừ cận dưới}: F(b) − F(a).",
+      "try": {
+        "q": "∫_0^1 2x dx bằng:",
+        "options": [
+          "1",
+          "2",
+          "0"
+        ],
+        "answer": 0,
+        "explain": "F(x) = x², nên F(1) − F(0) = 1 − 0 = 1."
+      },
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Tính chất: (1) ∫_a^b kf(x)dx = k∫_a^b f(x)dx; (2) ∫_a^b [f(x) ± g(x)]dx = ∫_a^b f(x)dx ± ∫_a^b g(x)dx; (3) ∫_a^b f(x)dx = ∫_a^c f(x)dx + ∫_c^b f(x)dx với a < c < b."
-    },
-    {
-      "type": "text",
-      "content": "Giá trị trung bình của hàm số liên tục f(x) trên [a; b] là (1/(b − a))∫_a^b f(x)dx."
+      "type": "card",
+      "title": "Quy ước và ý nghĩa hình học",
+      "formulas": [
+        "∫_a^a f(x)dx = 0",
+        "∫_a^b f(x)dx = {k −∫_b^a f(x)dx}"
+      ],
+      "points": [
+        "Nếu f(x) liên tục và không âm trên [a; b] thì ∫_a^b f(x)dx là {k diện tích} hình thang cong giới hạn bởi y = f(x), trục hoành, x = a, x = b."
+      ],
+      "n": 3
     },
     {
       "type": "figure",
       "figure": "figures/tn-toan12-b12-tich-phan.svg",
       "caption": "Tích phân và diện tích hình thang cong"
+    },
+    {
+      "type": "card",
+      "title": "Tính chất",
+      "formulas": [
+        "∫_a^b kf(x)dx = k∫_a^b f(x)dx",
+        "∫_a^b [f(x) ± g(x)]dx = ∫_a^b f(x)dx ± ∫_a^b g(x)dx",
+        "∫_a^b f(x)dx = ∫_a^c f(x)dx + ∫_c^b f(x)dx    (a < c < b)"
+      ],
+      "tip": "Tính chất thứ ba: tách đoạn [a; b] làm hai đoạn tại điểm c.",
+      "n": 4
+    },
+    {
+      "type": "card",
+      "title": "Giá trị trung bình của hàm số",
+      "formulas": [
+        "Giá trị trung bình của f(x) trên [a; b] là  {k (1/(b − a)) ∫_a^b f(x)dx}"
+      ],
+      "n": 5
     },
     {
       "type": "method",

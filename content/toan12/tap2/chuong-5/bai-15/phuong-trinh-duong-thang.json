@@ -10,12 +10,40 @@
   "bookPage": 41,
   "theory": [
     {
-      "type": "text",
-      "content": "Vectơ u ≠ 0 được gọi là vectơ chỉ phương của đường thẳng Δ nếu giá của u song song hoặc trùng với Δ. Đường thẳng được xác định khi biết một điểm mà nó đi qua và một vectơ chỉ phương."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Đường thẳng qua M₀(x₀; y₀; z₀) có vectơ chỉ phương u = (a; b; c): tham số {k x = x₀ + at, y = y₀ + bt, z = z₀ + ct}. Hai đường thẳng vuông góc khi u₁·u₂ = 0. Vị trí tương đối xét bằng u₁, u₂ và A₁A₂·[u₁, u₂]."
     },
     {
-      "type": "text",
-      "content": "Đường thẳng Δ đi qua M₀(x₀; y₀; z₀) và có vectơ chỉ phương u = (a; b; c) có phương trình tham số x = x₀ + at, y = y₀ + bt, z = z₀ + ct (t ∈ ℝ). Nếu a, b, c đều khác 0 thì Δ có phương trình chính tắc (x − x₀)/a = (y − y₀)/b = (z − z₀)/c."
+      "type": "card",
+      "title": "Vectơ chỉ phương",
+      "points": [
+        "Vectơ u ≠ 0 là vectơ chỉ phương của Δ nếu giá của u {k song song hoặc trùng} với Δ.",
+        "Đường thẳng được xác định khi biết {k một điểm} nó đi qua và {k một vectơ chỉ phương}."
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Phương trình tham số và chính tắc",
+      "text": "Δ đi qua M₀(x₀; y₀; z₀), vectơ chỉ phương u = (a; b; c):",
+      "formulas": [
+        "Tham số:  {k x = x₀ + at,  y = y₀ + bt,  z = z₀ + ct}    (t ∈ ℝ)",
+        "Chính tắc:  (x − x₀)/a = (y − y₀)/b = (z − z₀)/c"
+      ],
+      "wrong": "Luôn viết được phương trình chính tắc.",
+      "right": "Chỉ viết được khi {k a, b, c đều khác 0} (mẫu số không được bằng 0).",
+      "try": {
+        "q": "Điểm nào thuộc đường thẳng x = 1 + 2t, y = 2 − t, z = 3 + 4t?",
+        "options": [
+          "(3; 1; 7)",
+          "(3; 2; 7)",
+          "(2; 1; 7)"
+        ],
+        "answer": 0,
+        "explain": "Với t = 1: x = 3, y = 1, z = 7."
+      },
+      "n": 2
     },
     {
       "type": "figure",
@@ -23,12 +51,53 @@
       "caption": "Đường thẳng Δ đi qua M₀ và nhận u làm vectơ chỉ phương: mọi điểm M của Δ có M₀M cùng phương với u."
     },
     {
-      "type": "text",
-      "content": "Hai đường thẳng vuông góc với nhau khi và chỉ khi u₁ · u₂ = 0, với u₁, u₂ là các vectơ chỉ phương của chúng."
+      "type": "card",
+      "title": "Hai đường thẳng vuông góc",
+      "formulas": [
+        "Δ₁ ⊥ Δ₂  ⇔  {k u₁ · u₂ = 0}"
+      ],
+      "tip": "Vuông góc xét trên hai vectơ chỉ phương, không cần hai đường cắt nhau.",
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Vị trí tương đối của hai đường thẳng Δ₁ (đi qua A₁, vectơ chỉ phương u₁) và Δ₂ (đi qua A₂, vectơ chỉ phương u₂): Δ₁ ∥ Δ₂ khi u₁ cùng phương u₂ và A₁ ∉ Δ₂; Δ₁ ≡ Δ₂ khi u₁ cùng phương u₂ và A₁ ∈ Δ₂; Δ₁ cắt Δ₂ khi [u₁, u₂] ≠ 0 và A₁A₂ · [u₁, u₂] = 0; Δ₁ chéo Δ₂ khi A₁A₂ · [u₁, u₂] ≠ 0."
+      "type": "card",
+      "title": "Vị trí tương đối của Δ₁ (qua A₁, u₁) và Δ₂ (qua A₂, u₂)",
+      "table": {
+        "head": [
+          "Vị trí",
+          "Điều kiện"
+        ],
+        "rows": [
+          [
+            "Song song",
+            "u₁ cùng phương u₂ và A₁ ∉ Δ₂"
+          ],
+          [
+            "Trùng nhau",
+            "u₁ cùng phương u₂ và A₁ ∈ Δ₂"
+          ],
+          [
+            "Cắt nhau",
+            "[u₁, u₂] ≠ 0 và A₁A₂ · [u₁, u₂] = 0"
+          ],
+          [
+            "Chéo nhau",
+            "A₁A₂ · [u₁, u₂] ≠ 0"
+          ]
+        ]
+      },
+      "tip": "Chéo nhau là hai đường {k không cùng nằm trong một mặt phẳng}: không song song và không cắt.",
+      "try": {
+        "q": "Hai đường thẳng có [u₁, u₂] ≠ 0 và A₁A₂ · [u₁, u₂] = 0 thì:",
+        "options": [
+          "Cắt nhau",
+          "Chéo nhau",
+          "Song song"
+        ],
+        "answer": 0,
+        "explain": "[u₁, u₂] ≠ 0 nên không cùng phương; tích hỗn tạp bằng 0 nên đồng phẳng: cắt nhau."
+      },
+      "n": 4
     },
     {
       "type": "figure",

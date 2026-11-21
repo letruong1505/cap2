@@ -321,16 +321,29 @@
     return c;
   }
 
-  /* Biểu đồ cột: mỗi ngày một cột xếp chồng (xanh = đúng, đỏ = sai), cao theo số câu; dùng cùng lúc với lịch khi có từ 2 ngày. */
+  /* Biểu đồ cột: mỗi ngày một cột xếp chồng (xanh = đúng, đỏ = sai), cao theo số câu, ghi % đúng phía trên.
+     Chạm vào một cột thì chi tiết ngày đó hiện ra bên dưới. Dùng cùng lúc với lịch khi có từ 2 ngày. */
   function dayChart(r) {
     const max = Math.max(1, ...r.days.map((d) => d.total));
     const many = r.days.length > 14;
     const step = r.days.length <= 14 ? 1 : Math.ceil(r.days.length / 10);
-    const wrap = h('div', { class: 'dchart' + (many ? ' many' : ''), role: 'img', 'aria-label': 'Biểu đồ số câu đúng và sai theo từng ngày' });
+    const root = h('div', { class: 'dc-root' });
+    const wrap = h('div', { class: 'dchart' + (many ? ' many' : ''), role: 'group', 'aria-label': 'Biểu đồ số câu đúng và sai theo từng ngày; chạm vào cột để xem chi tiết' });
+    const detail = h('div', { class: 'dc-detail', 'aria-live': 'polite' }, h('p', { class: 'meta' }, 'Chạm vào một cột để xem chi tiết ngày đó.'));
+    const cols = [];
+    const show = (i) => {
+      const d = r.days[i];
+      cols.forEach((c, j) => c.classList.toggle('sel', j === i));
+      detail.replaceChildren(h('h3', {}, fmtFull(d.t)));
+      if (!d.total) { detail.append(h('p', { class: 'meta' }, 'Chưa làm bài nào trong ngày này.')); return; }
+      detail.append(h('p', {}, `Đúng ${d.correct} · Sai ${d.wrong} (${d.pct}% đúng), tổng ${d.total} câu trong ${d.lessons} bài${d.reached ? ' · đạt mục tiêu' : ''}`), qualityBar(d.correct, d.total, false));
+      (d.subjects || []).forEach((s) => detail.append(h('p', {}, `${subjName(s.subject)} lớp ${s.grade}: ${s.correct}/${s.total} câu (${s.pct}%) · `,
+        h('strong', { class: s.passed ? 'pass-ok' : 'pass-bad' }, s.passed ? `Đạt (ngưỡng ${s.need}%)` : `Không đạt (ngưỡng ${s.need}%)`))));
+    };
     r.days.forEach((d, i) => {
       const dt = new Date(d.t);
-      const col = h('div', { class: 'dc-col', title: d.total ? `${fmtFull(d.t)}: đúng ${d.correct}, sai ${d.wrong} (${d.pct}%)` : `${fmtFull(d.t)}: chưa học` });
-      col.append(h('span', { class: 'dc-n' }, d.total && !many ? String(d.total) : '\u00a0'));
+      const col = h('button', { type: 'button', class: 'dc-col', 'aria-label': d.total ? `${fmtFull(d.t)}: ${d.pct}% đúng, ${d.total} câu` : `${fmtFull(d.t)}: chưa học` });
+      col.append(h('span', { class: 'dc-n' }, d.total && !many ? `${d.pct}%` : '\u00a0'));
       const bar = h('div', { class: 'dc-bar' });
       if (d.total) {
         const hh = Math.max(4, Math.round((100 * d.total) / max));
@@ -340,9 +353,11 @@
         bar.append(stack);
       }
       col.append(bar, h('small', {}, i % step === 0 ? dt.toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit' }) : '\u00a0'));
-      wrap.append(col);
+      col.addEventListener('click', () => show(i));
+      cols.push(col); wrap.append(col);
     });
-    return wrap;
+    root.append(wrap, detail);
+    return root;
   }
 
   function calendar(r, today) {

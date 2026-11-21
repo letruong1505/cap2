@@ -10,33 +10,118 @@
   "bookPage": 6,
   "theory": [
     {
-      "type": "text",
-      "content": "Cho hàm số y = f(x) có đạo hàm trên khoảng (a; b). Nếu f'(x) > 0 với mọi x thuộc (a; b) thì hàm số đồng biến trên (a; b). Nếu f'(x) < 0 với mọi x thuộc (a; b) thì hàm số nghịch biến trên (a; b)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Đơn điệu: f′ > 0 thì {k đồng biến}, f′ < 0 thì {k nghịch biến}. Cực trị: f′ {k đổi dấu} qua x₀ (+ sang −: cực đại; − sang +: cực tiểu). Chỉ f′(x₀) = 0 thì {k chưa đủ} để có cực trị."
     },
     {
-      "type": "text",
-      "content": "Muốn xét chiều biến thiên, ta tính f'(x), tìm các điểm làm f'(x) bằng 0 hoặc không tồn tại, rồi xét dấu f'(x) trên từng khoảng. Kết quả thường được ghi vào bảng biến thiên."
+      "type": "card",
+      "title": "Đồng biến, nghịch biến",
+      "text": "Cho hàm số y = f(x) có đạo hàm trên khoảng (a; b).",
+      "formulas": [
+        "f′(x) > 0 với mọi x ∈ (a; b)  ⇒  hàm số {k đồng biến} trên (a; b)",
+        "f′(x) < 0 với mọi x ∈ (a; b)  ⇒  hàm số {k nghịch biến} trên (a; b)"
+      ],
+      "tip": "Đạo hàm dương: đồ thị đi lên (từ trái sang phải). Đạo hàm âm: đồ thị đi xuống.",
+      "try": {
+        "q": "Hàm số có y′ = −2x² − 1 thì:",
+        "options": [
+          "Nghịch biến trên ℝ",
+          "Đồng biến trên ℝ",
+          "Có cực trị"
+        ],
+        "answer": 0,
+        "explain": "−2x² − 1 < 0 với mọi x nên hàm số nghịch biến trên ℝ."
+      },
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Giả sử hàm số y = f(x) liên tục trên khoảng (a; b) chứa điểm x₀ và có đạo hàm trên các khoảng (a; x₀), (x₀; b). Nếu f'(x) đổi dấu từ âm sang dương khi x qua x₀ thì x₀ là điểm cực tiểu; nếu f'(x) đổi dấu từ dương sang âm thì x₀ là điểm cực đại."
+      "type": "card",
+      "title": "Xét chiều biến thiên",
+      "points": [
+        "Tính f′(x).",
+        "Tìm các điểm làm f′(x) = 0 hoặc f′(x) không tồn tại.",
+        "Xét dấu f′(x) trên từng khoảng.",
+        "Ghi kết quả vào {k bảng biến thiên} rồi kết luận."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Điểm cực đại, cực tiểu gọi chung là điểm cực trị. Giá trị f(x₀) tương ứng gọi là giá trị cực đại (y_CĐ) hoặc giá trị cực tiểu (y_CT). Lưu ý: điểm cực trị là hoành độ x₀, còn cực trị là giá trị f(x₀); trong bài thường viết kết luận dạng 'hàm số đạt cực đại tại x₀ và y_CĐ = f(x₀)'."
-    },
-    {
-      "type": "text",
-      "content": "Nếu f'(x₀) = 0 nhưng f'(x) không đổi dấu khi x qua x₀ thì x₀ không phải là điểm cực trị. Ví dụ y = x³ có f'(0) = 0 nhưng x = 0 không phải điểm cực trị."
-    },
-    {
-      "type": "text",
-      "content": "Các bước tìm cực trị: (1) tìm tập xác định; (2) tính f'(x), tìm các điểm mà tại đó f'(x) bằng 0 hoặc không tồn tại; (3) lập bảng biến thiên; (4) từ bảng biến thiên suy ra các cực trị."
+      "type": "card",
+      "title": "Điểm cực đại, điểm cực tiểu",
+      "text": "Giả sử y = f(x) liên tục trên (a; b) chứa x₀ và có đạo hàm trên (a; x₀), (x₀; b).",
+      "formulas": [
+        "f′(x) đổi dấu từ {k −} sang {k +} khi x qua x₀  ⇒  x₀ là điểm {k cực tiểu}",
+        "f′(x) đổi dấu từ {k +} sang {k −} khi x qua x₀  ⇒  x₀ là điểm {k cực đại}"
+      ],
+      "points": [
+        "Điểm cực đại và điểm cực tiểu gọi chung là {k điểm cực trị}."
+      ],
+      "n": 3
     },
     {
       "type": "figure",
       "figure": "figures/tn-toan12-b1-cuc-tri.svg",
       "caption": "Dấu của f′(x) và cực trị"
+    },
+    {
+      "type": "card",
+      "title": "Điểm cực trị và giá trị cực trị",
+      "table": {
+        "head": [
+          "Tên gọi",
+          "Là gì",
+          "Kí hiệu"
+        ],
+        "rows": [
+          [
+            "Điểm cực trị",
+            "Hoành độ x₀",
+            "x₀"
+          ],
+          [
+            "Giá trị cực trị",
+            "Tung độ f(x₀)",
+            "y_CĐ hoặc y_CT"
+          ],
+          [
+            "Điểm cực trị của đồ thị",
+            "Điểm M(x₀; f(x₀))",
+            "M"
+          ]
+        ]
+      },
+      "tip": "Kết luận thường viết: “hàm số đạt cực đại tại x₀ và y_CĐ = f(x₀)”.",
+      "n": 4
+    },
+    {
+      "type": "card",
+      "title": "Dễ nhầm: f′(x₀) = 0 là có cực trị",
+      "wrong": "f′(x₀) = 0 thì x₀ là điểm cực trị.",
+      "right": "Phải có f′(x) đổi dấu khi x qua x₀.",
+      "why": "Ví dụ y = x³: y′(0) = 0 nhưng y′ = 3x² ≥ 0 không đổi dấu, nên x = 0 không là điểm cực trị.",
+      "try": {
+        "q": "Hàm số y = x³ có cực trị không?",
+        "options": [
+          "Không có cực trị",
+          "Cực tiểu tại x = 0",
+          "Cực đại tại x = 0"
+        ],
+        "answer": 0,
+        "explain": "y′ = 3x² không đổi dấu nên hàm số đồng biến trên ℝ, không có cực trị."
+      },
+      "n": 5
+    },
+    {
+      "type": "card",
+      "title": "Các bước tìm cực trị",
+      "points": [
+        "Tìm tập xác định.",
+        "Tính f′(x), tìm các điểm f′(x) = 0 hoặc không tồn tại.",
+        "Lập bảng biến thiên.",
+        "Từ bảng biến thiên suy ra các cực trị."
+      ],
+      "n": 6
     },
     {
       "type": "method",

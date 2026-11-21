@@ -54,14 +54,22 @@
     const pct = (x) => (x.total ? Math.round((100 * x.correct) / x.total) : 0);
     const list = (rows || []).filter((r) => (!grade || r.grade === grade) && (!subject || r.subject === subject));
     const byDay = new Map();
-    list.forEach((r) => { const d = byDay.get(r.day) || { correct: 0, total: 0, lessons: 0 }; d.correct += r.correct; d.total += r.total; d.lessons += r.lessons; byDay.set(r.day, d); });
+    list.forEach((r) => {
+      const d = byDay.get(r.day) || { correct: 0, total: 0, lessons: 0, subj: {} };
+      d.correct += r.correct; d.total += r.total; d.lessons += r.lessons;
+      const k = r.subject + '|' + r.grade;
+      const x = d.subj[k] || (d.subj[k] = { subject: r.subject, grade: r.grade, correct: 0, total: 0, lessons: 0 });
+      x.correct += r.correct; x.total += r.total; x.lessons += r.lessons;
+      byDay.set(r.day, d);
+    });
     const g = goals || DEFAULT_GOALS;
     const days = [];
     for (let t = from; t <= to && days.length < 366; t += DAY) {
       const d = new Date(t); d.setHours(0, 0, 0, 0);
-      const x = byDay.get(isoOf(d.getTime())) || { correct: 0, total: 0, lessons: 0 };
+      const x = byDay.get(isoOf(d.getTime())) || { correct: 0, total: 0, lessons: 0, subj: {} };
       const day = { t: d.getTime(), correct: x.correct, total: x.total, lessons: x.lessons };
-      day.wrong = day.total - day.correct; day.pct = pct(day); day.reached = !subject && day.total >= goalFor(g, day.t);
+      day.wrong = day.total - day.correct; day.pct = pct(day);
+      day.subjects = markPass(Object.values(x.subj).map((y) => Object.assign(y, { wrong: y.total - y.correct, pct: pct(y) })).sort((a, b) => b.total - a.total), g); day.reached = !subject && day.total >= goalFor(g, day.t);
       days.push(day);
     }
     const subj = {}, chap = {};

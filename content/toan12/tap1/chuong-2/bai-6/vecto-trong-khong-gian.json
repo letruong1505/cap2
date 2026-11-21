@@ -10,24 +10,77 @@
   "bookPage": 45,
   "theory": [
     {
-      "type": "text",
-      "content": "Vectơ trong không gian là một đoạn thẳng có hướng. Độ dài của vectơ AB là khoảng cách giữa điểm đầu A và điểm cuối B, kí hiệu |AB|."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Ba quy tắc cộng: {k ba điểm} AB + BC = AC, {k hình bình hành} AB + AD = AC, {k hình hộp} AB + AD + AA′ = AC′. Hiệu: OB − OA = AB. Tích vô hướng a·b = |a|·|b|·cos(a, b) là một {k số}, bằng 0 khi hai vectơ {k vuông góc}."
     },
     {
-      "type": "text",
-      "content": "Hai vectơ cùng phương nếu chúng có giá song song hoặc trùng nhau. Hai vectơ cùng phương thì cùng hướng hoặc ngược hướng. Hai vectơ bằng nhau khi chúng có cùng độ dài và cùng hướng."
+      "type": "card",
+      "title": "Vectơ và độ dài",
+      "points": [
+        "Vectơ trong không gian là một {k đoạn thẳng có hướng}.",
+        "Độ dài của vectơ AB là khoảng cách giữa điểm đầu A và điểm cuối B, kí hiệu |AB|."
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Vectơ có điểm đầu và điểm cuối trùng nhau gọi là vectơ-không, kí hiệu 0. Vectơ-không có độ dài 0, cùng hướng với mọi vectơ và bằng nhau."
+      "type": "card",
+      "title": "Cùng phương, bằng nhau",
+      "points": [
+        "Hai vectơ {k cùng phương} nếu giá của chúng song song hoặc trùng nhau; khi đó chúng cùng hướng hoặc ngược hướng.",
+        "Hai vectơ {k bằng nhau} khi có cùng độ dài và cùng hướng."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Quy tắc ba điểm: với ba điểm A, B, C bất kì, AB + BC = AC. Quy tắc hình bình hành: nếu ABCD là hình bình hành thì AB + AD = AC."
+      "type": "card",
+      "title": "Vectơ-không",
+      "points": [
+        "Vectơ có điểm đầu và điểm cuối trùng nhau gọi là {k vectơ-không}, kí hiệu 0.",
+        "Có độ dài 0, cùng hướng với mọi vectơ; các vectơ-không bằng nhau.",
+        "Với O và vectơ a cho trước, luôn có duy nhất điểm M sao cho OM = a."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Quy tắc hình hộp: với hình hộp ABCD.A'B'C'D', AB + AD + AA' = AC'. Với O và vectơ a cho trước luôn tồn tại duy nhất điểm M sao cho OM = a."
+      "type": "card",
+      "title": "Ba quy tắc cộng vectơ",
+      "table": {
+        "head": [
+          "Quy tắc",
+          "Điều kiện",
+          "Kết quả"
+        ],
+        "rows": [
+          [
+            "Ba điểm",
+            "A, B, C bất kì",
+            "AB + BC = AC"
+          ],
+          [
+            "Hình bình hành",
+            "ABCD là hình bình hành",
+            "AB + AD = AC"
+          ],
+          [
+            "Hình hộp",
+            "ABCD.A′B′C′D′ là hình hộp",
+            "AB + AD + AA′ = AC′"
+          ]
+        ]
+      },
+      "tip": "Ba điểm: điểm cuối của vectơ trước là điểm đầu của vectơ sau (AB rồi BC).",
+      "try": {
+        "q": "Cho hình hộp ABCD.A′B′C′D′. Khi đó AB + AD + AA′ bằng:",
+        "options": [
+          "AC′",
+          "AC",
+          "BD′"
+        ],
+        "answer": 0,
+        "explain": "Quy tắc hình hộp: tổng ba vectơ chung gốc A là đường chéo AC′."
+      },
+      "n": 4
     },
     {
       "type": "figure",
@@ -35,16 +88,70 @@
       "caption": "Hình hộp ABCD.A'B'C'D': AB + AD + AA' = AC'."
     },
     {
-      "type": "text",
-      "content": "Hiệu của hai vectơ: a − b = a + (−b), trong đó −b là vectơ đối của b (cùng độ dài, ngược hướng). Với ba điểm O, A, B bất kì: OB − OA = AB."
+      "type": "card",
+      "title": "Hiệu của hai vectơ",
+      "formulas": [
+        "a − b = a + (−b)    (−b là vectơ đối của b: cùng độ dài, ngược hướng)",
+        "Với ba điểm O, A, B bất kì:  {k OB − OA = AB}"
+      ],
+      "try": {
+        "q": "Với ba điểm O, A, B bất kì, OB − OA bằng:",
+        "options": [
+          "AB",
+          "BA",
+          "OA + OB"
+        ],
+        "answer": 0,
+        "explain": "Hiệu hai vectơ cùng gốc O là vectơ nối từ điểm cuối của số trừ đến điểm cuối của số bị trừ: AB."
+      },
+      "n": 5
     },
     {
-      "type": "text",
-      "content": "Tích của số thực k ≠ 0 với vectơ a ≠ 0 là một vectơ, kí hiệu ka, cùng hướng với a nếu k > 0, ngược hướng nếu k < 0, và có độ dài |k|·|a|. Hai vectơ a, b (b ≠ 0) cùng phương khi và chỉ khi có số thực k để a = kb."
+      "type": "card",
+      "title": "Tích của một số với vectơ",
+      "text": "Với k ≠ 0 và a ≠ 0, vectơ ka:",
+      "points": [
+        "Hai vectơ a, b (b ≠ 0) cùng phương khi và chỉ khi có số thực k để {k a = kb}."
+      ],
+      "table": {
+        "head": [
+          "Trường hợp",
+          "Hướng",
+          "Độ dài"
+        ],
+        "rows": [
+          [
+            "k > 0",
+            "Cùng hướng với a",
+            "|k|·|a|"
+          ],
+          [
+            "k < 0",
+            "Ngược hướng với a",
+            "|k|·|a|"
+          ]
+        ]
+      },
+      "n": 6
     },
     {
-      "type": "text",
-      "content": "Trọng tâm G của tam giác BCD thoả GB + GC + GD = 0. Với điểm O bất kì, OB + OC + OD = 3OG."
+      "type": "card",
+      "title": "Trọng tâm tam giác",
+      "formulas": [
+        "G là trọng tâm tam giác BCD  ⇒  {k GB + GC + GD = 0}",
+        "Với điểm O bất kì:  {k OB + OC + OD = 3·OG}"
+      ],
+      "try": {
+        "q": "G là trọng tâm tam giác BCD, O là điểm bất kì. Khi đó OB + OC + OD bằng:",
+        "options": [
+          "3·OG",
+          "OG",
+          "0"
+        ],
+        "answer": 0,
+        "explain": "OB + OC + OD = 3·OG; còn GB + GC + GD mới bằng 0."
+      },
+      "n": 7
     },
     {
       "type": "figure",
@@ -52,8 +159,29 @@
       "caption": "Tứ diện ABCD: G là trọng tâm tam giác BCD, GB + GC + GD = 0."
     },
     {
-      "type": "text",
-      "content": "Góc giữa hai vectơ a, b khác 0 là góc AOB (0° ≤ AOB ≤ 180°) với OA = a, OB = b, kí hiệu (a, b). Tích vô hướng a·b = |a|·|b|·cos(a, b). Quy ước nếu a = 0 hoặc b = 0 thì a·b = 0; a ⊥ b khi và chỉ khi a·b = 0."
+      "type": "card",
+      "title": "Góc và tích vô hướng",
+      "formulas": [
+        "Góc giữa hai vectơ khác 0: góc AOB (0° ≤ AOB ≤ 180°) với OA = a, OB = b, kí hiệu (a, b)",
+        "{k a·b = |a|·|b|·cos(a, b)}"
+      ],
+      "points": [
+        "Nếu a = 0 hoặc b = 0 thì a·b = 0.",
+        "a ⊥ b khi và chỉ khi {k a·b = 0}."
+      ],
+      "wrong": "a·b là một vectơ.",
+      "right": "a·b là một {k số thực}; còn a + b, ka mới là vectơ.",
+      "try": {
+        "q": "Hai vectơ khác 0 có góc (a, b) = 90° thì a·b bằng:",
+        "options": [
+          "0",
+          "|a|·|b|",
+          "1"
+        ],
+        "answer": 0,
+        "explain": "cos 90° = 0 nên a·b = 0."
+      },
+      "n": 8
     }
   ],
   "examples": [

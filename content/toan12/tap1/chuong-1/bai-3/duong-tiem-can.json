@@ -10,12 +10,30 @@
   "bookPage": 20,
   "theory": [
     {
-      "type": "text",
-      "content": "Đường thẳng y = y₀ gọi là tiệm cận ngang của đồ thị hàm số y = f(x) nếu lim f(x) = y₀ khi x → +∞ hoặc lim f(x) = y₀ khi x → −∞."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Tiệm cận ngang y = y₀: lim f(x) = y₀ khi x → ±∞. Tiệm cận đứng x = x₀: lim f(x) = ±∞ khi x → x₀⁺ hoặc x₀⁻. Tiệm cận xiên y = ax + b: lim [f(x) − (ax + b)] = 0."
     },
     {
-      "type": "text",
-      "content": "Đường thẳng x = x₀ gọi là tiệm cận đứng của đồ thị hàm số y = f(x) nếu ít nhất một trong các điều kiện sau được thoả mãn: lim f(x) = +∞, lim f(x) = −∞, khi x → x₀⁺ hoặc khi x → x₀⁻."
+      "type": "card",
+      "title": "Tiệm cận ngang",
+      "formulas": [
+        "Đường thẳng {k y = y₀} là tiệm cận ngang nếu  lim f(x) = y₀  khi x → +∞ hoặc khi x → −∞"
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Tiệm cận đứng",
+      "text": "Đường thẳng x = x₀ là tiệm cận đứng nếu có ít nhất một điều kiện sau:",
+      "formulas": [
+        "lim f(x) = +∞  hoặc  lim f(x) = −∞",
+        "khi x → x₀⁺ hoặc khi x → x₀⁻"
+      ],
+      "points": [
+        "Tiệm cận đứng có dạng {k x = x₀} (đường thẳng đứng)."
+      ],
+      "n": 2
     },
     {
       "type": "figure",
@@ -23,8 +41,12 @@
       "caption": "Đồ thị y = (3 − x)/(x + 2) có tiệm cận đứng x = −2 và tiệm cận ngang y = −1."
     },
     {
-      "type": "text",
-      "content": "Đường thẳng y = ax + b (a ≠ 0) gọi là tiệm cận xiên của đồ thị hàm số y = f(x) nếu lim [f(x) − (ax + b)] = 0 khi x → +∞ hoặc khi x → −∞."
+      "type": "card",
+      "title": "Tiệm cận xiên",
+      "formulas": [
+        "Đường thẳng {k y = ax + b} (a ≠ 0) là tiệm cận xiên nếu  lim [f(x) − (ax + b)] = 0  khi x → +∞ hoặc x → −∞"
+      ],
+      "n": 3
     },
     {
       "type": "figure",
@@ -32,12 +54,57 @@
       "caption": "Đồ thị y = (x² − x + 2)/(x + 1) có tiệm cận đứng x = −1 và tiệm cận xiên y = x − 2."
     },
     {
-      "type": "text",
-      "content": "Cách tìm tiệm cận xiên: a = lim f(x)/x và b = lim [f(x) − ax] (khi x → +∞ hoặc x → −∞). Nếu a = 0 thì đường thẳng y = b là tiệm cận ngang."
+      "type": "card",
+      "title": "Cách tìm tiệm cận xiên",
+      "formulas": [
+        "a = lim f(x)/x",
+        "b = lim [f(x) − ax]    (khi x → +∞ hoặc khi x → −∞)"
+      ],
+      "tip": "Nếu a = 0 thì y = b là tiệm cận ngang, không phải tiệm cận xiên.",
+      "n": 4
     },
     {
-      "type": "text",
-      "content": "Với hàm phân thức, để tìm tiệm cận đứng ta xét các giá trị làm mẫu số bằng 0 (và tử số khác 0); để tìm tiệm cận xiên ta chia tử cho mẫu, viết f(x) = (đa thức bậc nhất) + (phần dư)/(mẫu), rồi xét phần dư khi x → ±∞."
+      "type": "card",
+      "title": "Hàm phân thức: nhìn bậc tử và mẫu",
+      "table": {
+        "head": [
+          "Loại",
+          "Cách tìm"
+        ],
+        "rows": [
+          [
+            "Tiệm cận đứng",
+            "Giá trị làm {k mẫu bằng 0} và {k tử khác 0}"
+          ],
+          [
+            "Tiệm cận ngang",
+            "Bậc tử nhỏ hơn bậc mẫu: y = 0; bậc tử bằng bậc mẫu: y = tỉ số hai hệ số cao nhất"
+          ],
+          [
+            "Tiệm cận xiên",
+            "Bậc tử hơn bậc mẫu 1 bậc: chia tử cho mẫu, phần nguyên dạng ax + b"
+          ]
+        ]
+      },
+      "try": {
+        "q": "Đồ thị hàm số y = (2x + 1)/(x − 3) có tiệm cận ngang là:",
+        "options": [
+          "y = 2",
+          "y = 3",
+          "y = −1/2"
+        ],
+        "answer": 0,
+        "explain": "Bậc tử bằng bậc mẫu, tỉ số hệ số cao nhất là 2/1 = 2 nên tiệm cận ngang là y = 2 (tiệm cận đứng là x = 3)."
+      },
+      "n": 5
+    },
+    {
+      "type": "card",
+      "title": "Dễ nhầm: mẫu bằng 0 là tiệm cận đứng",
+      "wrong": "Mọi giá trị làm mẫu bằng 0 đều cho tiệm cận đứng.",
+      "right": "Phải kiểm tra tử số khác 0 (hoặc tính giới hạn).",
+      "why": "Ví dụ y = (x² − 1)/(x − 1) = x + 1 với x ≠ 1: mẫu bằng 0 tại x = 1 nhưng giới hạn bằng 2, nên x = 1 không là tiệm cận đứng.",
+      "n": 6
     },
     {
       "type": "method",
