@@ -28,7 +28,18 @@
       "type": "card",
       "title": "Từ khoá cần ghi nhớ",
       "text": "Thu nhập gia đình; chi tiêu gia đình; quản lí thu chi; nhu cầu của các thành viên; tiết kiệm.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Quản lí thu, chi trong gia đình là:",
+        "options": [
+          "Chỉ ghi chép tiền lương",
+          "Chỉ tiết kiệm tối đa",
+          "Quản lí các khoản thu nhập, chi tiêu để đáp ứng nhu cầu các thành viên và phù hợp thu nhập",
+          "Chỉ vay mượn"
+        ],
+        "answer": 2,
+        "explain": "Nhằm cân đối tài chính."
+      }
     },
     {
       "type": "card",
@@ -55,7 +66,18 @@
         "Năm bước lập kế hoạch: xác định mục tiêu và thời gian; xác định nguồn thu; thống nhất khoản chi thiết yếu và không thiết yếu; thống nhất tỉ lệ phân chia; thực hiện, ghi chép và điều chỉnh.",
         "Khi thu nhập giảm hoặc chi đột xuất phải cắt giảm khoản không thiết yếu, không cắt khoản thiết yếu."
       ],
-      "n": 5
+      "n": 5,
+      "try": {
+        "q": "Mục tiêu tài chính ngắn hạn thường đạt trong:",
+        "options": [
+          "Từ 6 tháng đến 1 năm",
+          "2 – 5 năm",
+          "Trên 5 năm",
+          "Trên 10 năm"
+        ],
+        "answer": 0,
+        "explain": "Ví dụ mua tủ lạnh, kì nghỉ."
+      }
     }
   ],
   "examples": [

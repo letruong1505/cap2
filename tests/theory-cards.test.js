@@ -15,9 +15,9 @@ function collect(subject) {
   return out.filter((p) => !p.includes('on-tap') && !p.includes('nang-cao'));
 }
 // minTry: số câu "Thử ngay" tối thiểu (các môn dựng tự động bằng tools/auto-cards.py chưa có câu thử)
-const SUBJECTS = { toan12: [19, 25], ly12: [25, 25], hoa12: [22, 0], sinh12: [35, 0], lichsu12: [17, 0], diali12: [35, 0], gdktpl12: [16, 0],
-   toan11: [33, 0], ly11: [26, 0], hoa11: [19, 0], sinh11: [29, 0], lichsu11: [13, 0], diali11: [30, 0], gdktpl11: [21, 0],
-  toan10: [27, 0], ly10: [34, 0], hoa10: [16, 0], sinh10: [26, 0], lichsu10: [14, 0], diali10: [40, 0], gdktpl10: [23, 0], toan9: [32, 0], ly9: [16, 0], hoa9: [18, 0], sinh9: [16, 0], lichsu9: [22, 0], diali9: [15, 0], toan8: [39, 0], ly8: [17, 0], hoa8: [12, 0], sinh8: [18, 0], lichsu8: [20, 0], diali8: [12, 0], toan7: [37, 0], ly7: [14, 0], hoa7: [7, 0], sinh7: [23, 0], lichsu7: [22, 0], diali7: [20, 0], toan6: [43, 0], ly6: [21, 0], hoa6: [9, 0], sinh6: [17, 0], lichsu6: [20, 0], diali6: [26, 0] };
+const SUBJECTS = { toan12: [19, 25], ly12: [25, 25], hoa12: [22, 11], sinh12: [35, 17], lichsu12: [17, 8], diali12: [35, 17], gdktpl12: [16, 8],
+   toan11: [33, 16], ly11: [26, 13], hoa11: [19, 9], sinh11: [29, 14], lichsu11: [13, 6], diali11: [30, 15], gdktpl11: [21, 10],
+  toan10: [27, 13], ly10: [34, 17], hoa10: [16, 8], sinh10: [26, 13], lichsu10: [14, 7], diali10: [40, 20], gdktpl10: [23, 11], toan9: [32, 16], ly9: [16, 8], hoa9: [18, 9], sinh9: [16, 8], lichsu9: [22, 11], diali9: [15, 7], toan8: [39, 19], ly8: [17, 8], hoa8: [12, 6], sinh8: [18, 9], lichsu8: [20, 10], diali8: [12, 6], toan7: [37, 3], ly7: [14, 7], hoa7: [7, 3], sinh7: [23, 11], lichsu7: [22, 11], diali7: [20, 10], toan6: [43, 21], ly6: [21, 10], hoa6: [9, 4], sinh6: [17, 8], lichsu6: [20, 10], diali6: [26, 13] };
 
 for (const [subject, [count, minTry]] of Object.entries(SUBJECTS)) {
   const bai = collect(subject);

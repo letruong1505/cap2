@@ -27,7 +27,18 @@
       "type": "card",
       "title": "Phương pháp cộng đại số",
       "text": "Nhân hai vế mỗi phương trình với số thích hợp để hệ số của một ẩn bằng nhau hoặc đối nhau; cộng hoặc trừ từng vế để khử ẩn đó.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Để khử ẩn y trong hệ { 2x + 3y = 7 ; x − 3y = 2 } ta:",
+        "options": [
+          "Cộng từng vế hai phương trình",
+          "Trừ từng vế",
+          "Nhân phương trình đầu với 2",
+          "Thế y = 7"
+        ],
+        "answer": 0,
+        "explain": "3y + (−3y) = 0."
+      }
     },
     {
       "type": "card",
@@ -44,7 +55,18 @@
       "type": "card",
       "title": "Có thể dùng máy tính cầm tay…",
       "text": "Có thể dùng máy tính cầm tay (chế độ giải hệ phương trình) để tìm nghiệm.",
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Hệ { x + y = 2 ; x + y = 5 } có:",
+        "options": [
+          "Một nghiệm",
+          "Vô số nghiệm",
+          "Hai nghiệm",
+          "Vô nghiệm"
+        ],
+        "answer": 3,
+        "explain": "x + y không thể vừa bằng 2 vừa bằng 5."
+      }
     },
     {
       "type": "method",

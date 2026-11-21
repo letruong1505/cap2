@@ -41,7 +41,18 @@
         "Điểm tựa O nằm trong khoảng giữa điểm đặt của hai lực (bập bênh, kéo cắt, kìm, cân đòn).",
         "Nếu lực tác dụng F₁ có cánh tay đòn lớn hơn cánh tay đòn của lực F₂ thì cho lợi về lực."
       ],
-      "n": 3
+      "n": 3,
+      "try": {
+        "q": "Khoảng cách từ giá của lực đến điểm tựa gọi là:",
+        "options": [
+          "Trục quay",
+          "Cánh tay đòn",
+          "Moment",
+          "Áp lực"
+        ],
+        "answer": 1,
+        "explain": "Cánh tay đòn là khoảng cách đến điểm tựa."
+      }
     },
     {
       "type": "card",
@@ -67,7 +78,18 @@
       "type": "card",
       "title": "Chọn đòn bẩy phù hợp",
       "text": "Muốn lợi về lực thì tác dụng lực ở xa điểm tựa; muốn tăng tầm với hoặc thao tác khéo (cần câu, nhíp) thì chấp nhận không lợi về lực.",
-      "n": 6
+      "n": 6,
+      "try": {
+        "q": "Đòn bẩy cho lợi về lực khi:",
+        "options": [
+          "Cánh tay đòn của lực tác dụng lớn hơn cánh tay đòn của lực cần thắng",
+          "Cánh tay đòn của lực tác dụng nhỏ hơn",
+          "Hai cánh tay đòn không có",
+          "Điểm tựa trùng điểm đặt lực"
+        ],
+        "answer": 0,
+        "explain": "Lực tác dụng xa điểm tựa hơn thì lợi về lực."
+      }
     }
   ],
   "examples": [

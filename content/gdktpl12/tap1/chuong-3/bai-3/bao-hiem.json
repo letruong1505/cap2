@@ -33,7 +33,18 @@
       "type": "card",
       "title": "Điểm nhấn ghi nhớ",
       "text": "Người tham gia nộp phí để lập quỹ; khi gặp rủi ro, tổ chức bảo hiểm bồi thường từ quỹ này",
-      "n": 3
+      "n": 3,
+      "try": {
+        "q": "Bảo hiểm là:",
+        "options": [
+          "Hoạt động chuyển giao rủi ro giữa bên tham gia và tổ chức bảo hiểm trên cơ sở đóng phí",
+          "Hoạt động cho vay lãi suất cao",
+          "Hoạt động tiết kiệm bắt buộc không hoàn lại",
+          "Hoạt động đầu cơ"
+        ],
+        "answer": 0,
+        "explain": "Phí lập quỹ dự trữ để bồi thường."
+      }
     },
     {
       "type": "card",
@@ -59,7 +70,18 @@
         "Giúp cá nhân, gia đình, doanh nghiệp ổn định tài chính khi gặp rủi ro; tập trung vốn nhàn rỗi để đầu tư trở lại nền kinh tế (quỹ bảo hiểm thu phí trước, bồi thường sau); hỗ trợ hội nhập và hoạt động thương mại, xuất khẩu; tạo việc làm; hình thành thói quen tiết kiệm; góp phần ổn định ngân sách nhà nước.",
         "Giai đoạn 2011 – 2020 thị trường bảo hiểm Việt Nam có trên 2 800 sản phẩm, doanh thu phí từ 36,55 nghìn tỉ đồng (2011) lên 185,96 nghìn tỉ đồng (2020)."
       ],
-      "n": 6
+      "n": 6,
+      "try": {
+        "q": "Bảo hiểm xã hội bắt buộc do:",
+        "options": [
+          "Công ty tư nhân tổ chức",
+          "Chỉ người sử dụng lao động đóng",
+          "Nhà nước tổ chức, người lao động và người sử dụng lao động phải tham gia",
+          "Tự nguyện hoàn toàn"
+        ],
+        "answer": 2,
+        "explain": "Theo Luật Bảo hiểm xã hội 2014."
+      }
     }
   ],
   "examples": [

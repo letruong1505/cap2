@@ -27,7 +27,18 @@
       "type": "card",
       "title": "Khi bỏ dấu ngoặc có dấu \"−\"…",
       "text": "Khi bỏ dấu ngoặc có dấu \"−\" đứng trước, phải đổi dấu tất cả các số hạng trong ngoặc: dấu \"+\" thành \"−\", dấu \"−\" thành \"+\": a − (b − c) = a − b + c.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Bỏ dấu ngoặc trong a − (b + c) được:",
+        "options": [
+          "a − b + c",
+          "a + b − c",
+          "a − b − c",
+          "a + b + c"
+        ],
+        "answer": 2,
+        "explain": "Dấu \"−\" đứng trước: đổi dấu mọi số hạng."
+      }
     },
     {
       "type": "figure",

@@ -42,7 +42,18 @@
       "formulas": [
         "F = k|q₁q₂|/r²  (chân không, không khí),  k = 1/(4πε₀) = 9·10⁹ N·m²/C²,  ε₀ = 8,85·10⁻¹² C²/(N·m²).",
         "Trong môi trường có hằng số điện môi ε: F = k|q₁q₂|/(εr²).   Đổi đơn vị: 1 μC = 10⁻⁶ C; 1 nC = 10⁻⁹ C; 1 cm = 10⁻² m."
-      ]
+      ],
+      "try": {
+        "q": "Hai điện tích cùng dấu thì:",
+        "options": [
+          "đẩy nhau",
+          "hút nhau",
+          "không tương tác",
+          "triệt tiêu"
+        ],
+        "answer": 0,
+        "explain": "Cùng dấu đẩy nhau."
+      }
     },
     {
       "type": "card",

@@ -26,7 +26,18 @@
         "Biến cố giao A ∩ B (còn viết AB) xảy ra khi cả A và B cùng xảy ra.",
         "Biến cố đối Ā xảy ra khi A không xảy ra."
       ],
-      "n": 1
+      "n": 1,
+      "try": {
+        "q": "Biến cố A ∪ B xảy ra khi:",
+        "options": [
+          "A hoặc B xảy ra",
+          "cả A và B xảy ra",
+          "A không xảy ra",
+          "A xảy ra, B không xảy ra"
+        ],
+        "answer": 0,
+        "explain": "Biến cố hợp xảy ra khi có ít nhất một trong hai biến cố xảy ra."
+      }
     },
     {
       "type": "figure",

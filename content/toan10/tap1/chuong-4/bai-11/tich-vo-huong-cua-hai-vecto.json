@@ -46,7 +46,18 @@
       "formulas": [
         "Tính chất: →a·→b = →b·→a;   →a·(→b + →c) = →a·→b + →a·→c;   (k→a)·→b = k(→a·→b)",
         "(→a + →b)² = →a² + 2→a·→b + →b²        (→a − →b)² = →a² − 2→a·→b + →b²        (→a + →b)(→a − →b) = →a² − →b²"
-      ]
+      ],
+      "try": {
+        "q": "Tích vô hướng của hai vectơ →a, →b là:",
+        "options": [
+          "|→a|·|→b|·cos(→a, →b)",
+          "|→a|·|→b|·sin(→a, →b)",
+          "|→a| + |→b|",
+          "một vectơ cùng hướng với →a"
+        ],
+        "answer": 0,
+        "explain": "Định nghĩa tích vô hướng."
+      }
     },
     {
       "type": "card",

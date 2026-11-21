@@ -27,7 +27,18 @@
         "Đơn thức thu gọn là đơn thức chỉ gồm tích của một số với các biến, mà mỗi biến đã được nâng lên luỹ thừa với số mũ nguyên dương (mỗi biến chỉ xuất hiện một lần).",
         "Số nói trên gọi là hệ số, phần còn lại gọi là phần biến của đơn thức thu gọn."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Biểu thức nào sau đây là đơn thức?",
+        "options": [
+          "x + 2y",
+          "−5x²y",
+          "3x − y",
+          "2x + 7"
+        ],
+        "answer": 1,
+        "explain": "−5x²y chỉ gồm tích của số và các biến nên là đơn thức."
+      }
     },
     {
       "type": "card",
@@ -54,7 +65,18 @@
       "n": 5,
       "formulas": [
         "3x²y + 5x²y − x²y = (3 + 5 − 1)x²y = 7x²y"
-      ]
+      ],
+      "try": {
+        "q": "Hệ số của đơn thức thu gọn −7x³y là:",
+        "options": [
+          "−7",
+          "3",
+          "7",
+          "1"
+        ],
+        "answer": 0,
+        "explain": "Hệ số là số đứng trước phần biến: −7."
+      }
     },
     {
       "type": "figure",

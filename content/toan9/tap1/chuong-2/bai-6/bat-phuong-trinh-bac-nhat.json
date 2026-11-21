@@ -27,7 +27,18 @@
       "type": "card",
       "title": "Quy tắc chuyển vế",
       "text": "Chuyển một hạng tử từ vế này sang vế kia và đổi dấu hạng tử đó.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Bất phương trình nào là bất phương trình bậc nhất một ẩn?",
+        "options": [
+          "2x − 5 < 0",
+          "x² + 1 > 0",
+          "0x + 3 > 0",
+          "1/x > 2"
+        ],
+        "answer": 0,
+        "explain": "Dạng ax + b < 0."
+      }
     },
     {
       "type": "card",
@@ -39,7 +50,18 @@
       "type": "card",
       "title": "Giải ax + b > 0",
       "text": "Nếu a > 0 thì x > −b/a; nếu a < 0 thì x < −b/a.",
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Khi nhân hai vế bất phương trình với số âm, ta phải:",
+        "options": [
+          "Giữ nguyên chiều",
+          "Đổi dấu một vế",
+          "Bình phương hai vế",
+          "Đổi chiều bất phương trình"
+        ],
+        "answer": 3,
+        "explain": "Quy tắc nhân."
+      }
     },
     {
       "type": "figure",

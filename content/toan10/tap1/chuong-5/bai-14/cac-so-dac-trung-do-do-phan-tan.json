@@ -34,7 +34,18 @@
       "n": 2,
       "formulas": [
         "Phương sai: s² = [(x₁ − x̄)² + (x₂ − x̄)² + ... + (x_n − x̄)²]/n        Độ lệch chuẩn: s = √s²"
-      ]
+      ],
+      "try": {
+        "q": "Độ lệch chuẩn là:",
+        "options": [
+          "căn bậc hai của phương sai",
+          "bình phương của phương sai",
+          "hiệu của max và min",
+          "trung bình của mẫu"
+        ],
+        "answer": 0,
+        "explain": "s = √s²."
+      }
     },
     {
       "type": "card",
@@ -52,7 +63,18 @@
         "Giá trị x được coi là bất thường nếu x < Q₁ − 1,5Δ_Q hoặc x > Q₃ + 1,5Δ_Q.",
         "Các giá trị này thường do sai sót khi thu thập hoặc là trường hợp đặc biệt cần xem xét riêng."
       ],
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Mẫu có Q₁ = 10, Q₃ = 14. Giá trị nào là bất thường?",
+        "options": [
+          "21",
+          "5",
+          "19",
+          "16"
+        ],
+        "answer": 0,
+        "explain": "Q₃ + 1,5·4 = 20; 21 > 20. Cận dưới là 10 − 6 = 4."
+      }
     },
     {
       "type": "figure",

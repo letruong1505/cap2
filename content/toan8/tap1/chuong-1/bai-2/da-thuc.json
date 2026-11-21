@@ -27,7 +27,18 @@
         "Đa thức thu gọn là đa thức không có hai hạng tử nào đồng dạng.",
         "Muốn thu gọn đa thức, ta nhóm các hạng tử đồng dạng rồi cộng (trừ) chúng với nhau."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Biểu thức nào sau đây là đa thức?",
+        "options": [
+          "1/x + y",
+          "x² − 3xy + 2",
+          "√x + y",
+          "x/y + 1"
+        ],
+        "answer": 1,
+        "explain": "Đa thức là tổng của các đơn thức; x², −3xy và 2 đều là đơn thức."
+      }
     },
     {
       "type": "card",
@@ -39,7 +50,18 @@
       "type": "card",
       "title": "Giá trị của đa thức tại những…",
       "text": "Giá trị của đa thức tại những giá trị cho trước của các biến là kết quả nhận được khi thay các giá trị đó vào đa thức rồi thực hiện phép tính.",
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Đa thức 2x²y − 5xy + 3 có bao nhiêu hạng tử?",
+        "options": [
+          "3",
+          "2",
+          "4",
+          "1"
+        ],
+        "answer": 0,
+        "explain": "Các hạng tử là 2x²y, −5xy và 3."
+      }
     }
   ],
   "examples": [

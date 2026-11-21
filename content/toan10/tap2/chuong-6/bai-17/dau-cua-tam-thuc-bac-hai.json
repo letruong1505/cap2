@@ -43,7 +43,18 @@
       "n": 2,
       "formulas": [
         "Δ < 0: a·f(x) > 0 ∀x        Δ = 0: a·f(x) > 0 ∀x ≠ −b/(2a)        Δ > 0: trong khoảng hai nghiệm trái dấu a, ngoài cùng dấu a"
-      ]
+      ],
+      "try": {
+        "q": "Tam thức f(x) = x² + 2x + 5 có Δ′ = 1 − 5 = −4 < 0. Khẳng định đúng là:",
+        "options": [
+          "f(x) > 0 với mọi x",
+          "f(x) < 0 với mọi x",
+          "f(x) có hai nghiệm phân biệt",
+          "f(x) đổi dấu tại x = −1"
+        ],
+        "answer": 0,
+        "explain": "Δ < 0 và a > 0 nên f(x) luôn dương."
+      }
     },
     {
       "type": "card",

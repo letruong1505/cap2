@@ -27,7 +27,18 @@
       "type": "card",
       "title": "Khi đọc bản đồ, cần xác định…",
       "text": "Khi đọc bản đồ, cần xác định phạm vi và tên của từng đới, cho biết sự phân hoá thành các kiểu khí hậu trong mỗi đới, và xác định vị trí Việt Nam nằm trong đới khí hậu nhiệt đới.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Biên độ nhiệt độ năm được tính như thế nào?",
+        "options": [
+          "Nhiệt độ trung bình năm trừ nhiệt độ tháng 1",
+          "Nhiệt độ tháng cao nhất trừ nhiệt độ tháng thấp nhất",
+          "Tổng nhiệt độ 12 tháng chia 12",
+          "Nhiệt độ mùa hè cộng mùa đông"
+        ],
+        "answer": 1,
+        "explain": "Biên độ nhiệt độ năm là hiệu giữa nhiệt độ trung bình tháng cao nhất và nhiệt độ trung bình tháng thấp nhất trong năm."
+      }
     },
     {
       "type": "card",
@@ -53,7 +64,18 @@
         "Tổng mưa năm = cộng 12 tháng.",
         "Việt Nam thuộc đới khí hậu nhiệt đới."
       ],
-      "n": 5
+      "n": 5,
+      "try": {
+        "q": "Việt Nam nằm trong đới khí hậu nào?",
+        "options": [
+          "Đới khí hậu cực",
+          "Đới khí hậu ôn đới",
+          "Đới khí hậu nhiệt đới",
+          "Đới khí hậu xích đạo"
+        ],
+        "answer": 2,
+        "explain": "Việt Nam nằm trong đới khí hậu nhiệt đới, thuộc kiểu khí hậu nhiệt đới gió mùa."
+      }
     }
   ],
   "examples": [

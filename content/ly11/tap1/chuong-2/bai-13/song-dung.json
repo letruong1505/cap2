@@ -30,7 +30,18 @@
       "formulas": [
         "Dây hai đầu cố định: L = nλ/2 (n = 1, 2, 3, …) ⇒ λ = 2L/n;  f = nv/(2L);  số bụng = n, số nút = n + 1.",
         "Một đầu cố định, một đầu tự do (ống một đầu kín, một đầu hở): L = (2k + 1)λ/4 = (k + ½)λ/2;  f = (2k + 1)v/(4L)."
-      ]
+      ],
+      "try": {
+        "q": "Điều kiện sóng dừng trên dây hai đầu cố định là:",
+        "options": [
+          "L = nλ/2",
+          "L = nλ",
+          "L = (2n + 1)λ/4",
+          "L = λ/4"
+        ],
+        "answer": 0,
+        "explain": "Chiều dài bằng số nguyên lần nửa bước sóng."
+      }
     },
     {
       "type": "figure",

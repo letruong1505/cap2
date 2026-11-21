@@ -29,7 +29,18 @@
       "n": 1,
       "formulas": [
         "I = U/R;   U = IR.   Điện trở dây dẫn: R = ρ·l/S  (ρ: điện trở suất (Ω·m), l: chiều dài, S: tiết diện)."
-      ]
+      ],
+      "try": {
+        "q": "Đặc tuyến vôn–ampe của điện trở thuần là:",
+        "options": [
+          "đường thẳng qua gốc toạ độ",
+          "đường cong",
+          "đường thẳng song song trục U",
+          "đường tròn"
+        ],
+        "answer": 0,
+        "explain": "I = U/R tỉ lệ thuận U."
+      }
     },
     {
       "type": "figure",

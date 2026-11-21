@@ -168,3 +168,17 @@ test('thời gian dùng app: máy học sinh gửi theo ngày, chỉ tăng; ph�
   await progressSettings(db, { ...dev(code), enabled: true }, NOW);
   assert.deepEqual((await view(db, code)).usage, []);
 });
+
+test('phần thưởng chuỗi ngày: máy học sinh gửi trạng thái đã sạch, phụ huynh xem, xóa dữ liệu thì mất', async () => {
+  const { db, code } = await setup();
+  await progressSettings(db, { ...dev(code), enabled: true, goals: { daily: 30, weekend: 60, weekly: 5, pass: 70 } }, NOW);
+  const st = await progressSettings(db, { ...dev(code), reward: { on: true, days: 7, pct: 70, text: '  +30 phút   chơi game ' + 'x'.repeat(200), count: 7, achieved: true, given: [{ day: '2026-11-10', text: 'Kem', days: 7 }, { day: 'xấu', text: 'a' }] } }, NOW);
+  assert.equal(st.reward.text.length, 80);
+  assert.equal(st.reward.achieved, true);
+  assert.deepEqual(JSON.parse(JSON.stringify((await view(db, code)).reward.given)), [{ day: '2026-11-10', text: 'Kem', days: 7 }]);
+  assert.equal((await view(db, code)).reward.need, 7);
+  const off = await progressSettings(db, { ...dev(code), reward: { on: false, days: 7, pct: 70, achieved: true } }, NOW);
+  assert.equal(off.reward.achieved, false); // tắt thưởng thì không còn "đã đạt"
+  await progressSettings(db, { ...dev(code), purge: true }, NOW);
+  assert.equal((await view(db, code)).reward, null);
+});

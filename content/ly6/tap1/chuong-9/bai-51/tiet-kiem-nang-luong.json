@@ -33,7 +33,18 @@
         "Tắt thiết bị điện khi không dùng; sử dụng thiết bị tiết kiệm năng lượng (đèn LED, máy có nhãn năng lượng); tận dụng ánh sáng, gió tự nhiên;",
         "Đi bộ, đi xe đạp hoặc phương tiện công cộng."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Biện pháp tiết kiệm điện:",
+        "options": [
+          "Bật điều hoà 16 °C cả ngày",
+          "Tắt đèn khi ra khỏi phòng",
+          "Để tivi chế độ chờ suốt đêm",
+          "Mở tủ lạnh lâu"
+        ],
+        "answer": 1,
+        "explain": "Không dùng thì tắt."
+      }
     },
     {
       "type": "card",

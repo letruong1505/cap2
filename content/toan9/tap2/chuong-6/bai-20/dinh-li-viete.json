@@ -35,7 +35,18 @@
       "type": "card",
       "title": "Nhẩm nghiệm",
       "text": "Nếu a + b + c = 0 thì x₁ = 1, x₂ = c/a; nếu a − b + c = 0 thì x₁ = −1, x₂ = −c/a.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Tích hai nghiệm của ax² + bx + c = 0 là:",
+        "options": [
+          "−b/a",
+          "b/a",
+          "c/a",
+          "−c/a"
+        ],
+        "answer": 2,
+        "explain": "Định lí Viète."
+      }
     },
     {
       "type": "card",

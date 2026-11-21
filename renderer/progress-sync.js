@@ -120,6 +120,11 @@
         const g = await bridge().progressSettings({ code, goals: data.goals });
         if (g.ok) { st.goals = data.goals; writeState(st); }
       }
+      const rw = P.streak(data, Date.now()); const rs = { on: rw.on, days: rw.need, pct: rw.pct, text: rw.text, count: rw.count, achieved: rw.achieved, given: P.cleanReward(data.reward).given };
+      if (JSON.stringify(st.reward || null) !== JSON.stringify(rs)) {
+        const g = await bridge().progressSettings({ code, reward: rs });
+        if (g.ok) { st.reward = rs; writeState(st); }
+      }
       const r = await bridge().progressPush({ code, days: aggregate(data.attempts), usage: window.VungUsage ? window.VungUsage.list() : [] });
       if (r.ok) { st.lastOk = Date.now(); writeState(st); }
       else if (r.error && /chưa bật/i.test(r.error)) { st.enabled = false; writeState(st); } // phụ huynh đã tắt ở nơi khác

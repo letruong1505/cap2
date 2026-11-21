@@ -38,7 +38,18 @@
       "n": 2,
       "formulas": [
         "Phản ứng toả nhiệt: ΔrH°₂₉₈ < 0        Phản ứng thu nhiệt: ΔrH°₂₉₈ > 0"
-      ]
+      ],
+      "try": {
+        "q": "Phản ứng toả nhiệt có:",
+        "options": [
+          "ΔrH < 0",
+          "ΔrH > 0",
+          "ΔrH = 0",
+          "không xác định"
+        ],
+        "answer": 0,
+        "explain": "Hệ mất năng lượng."
+      }
     },
     {
       "type": "figure",
@@ -75,7 +86,18 @@
       "n": 4,
       "formulas": [
         "ΔrH°₂₉₈ = Σ ΔfH°₂₉₈(sản phẩm) − Σ ΔfH°₂₉₈(chất đầu)        ΔrH°₂₉₈ = Σ E_b(chất đầu) − Σ E_b(sản phẩm)  (các chất ở thể khí)"
-      ]
+      ],
+      "try": {
+        "q": "Điều kiện chuẩn đối với chất khí là:",
+        "options": [
+          "áp suất 1 bar, thường ở 25 °C",
+          "áp suất 1 atm, 0 °C",
+          "100 °C",
+          "áp suất 10 bar"
+        ],
+        "answer": 0,
+        "explain": "Quy ước."
+      }
     },
     {
       "type": "method",

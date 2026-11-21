@@ -31,7 +31,18 @@
       "type": "card",
       "title": "Hàm số có thể cho bằng bảng, biểu đồ hoặc công thức",
       "text": "Khi cho bằng công thức mà không chỉ rõ tập xác định, ta quy ước tập xác định là tập tất cả các số thực x sao cho biểu thức f(x) có nghĩa (mẫu khác 0, biểu thức dưới căn bậc hai không âm).",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Tập xác định của hàm số y = 1/(x − 2) là:",
+        "options": [
+          "ℝ \\ {2}",
+          "ℝ",
+          "ℝ \\ {−2}",
+          "(2; +∞)"
+        ],
+        "answer": 0,
+        "explain": "Mẫu khác 0 nên x ≠ 2."
+      }
     },
     {
       "type": "card",
@@ -52,7 +63,18 @@
         "Đồ thị hàm số đồng biến đi lên từ trái sang phải, đồ thị hàm số nghịch biến đi xuống từ trái sang phải.",
         "Hàm số y = ax + b đồng biến khi a > 0, nghịch biến khi a < 0."
       ],
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Tập xác định của hàm số y = √(x − 3) là:",
+        "options": [
+          "[3; +∞)",
+          "(3; +∞)",
+          "ℝ",
+          "(−∞; 3]"
+        ],
+        "answer": 0,
+        "explain": "Biểu thức dưới căn không âm: x ≥ 3."
+      }
     },
     {
       "type": "figure",

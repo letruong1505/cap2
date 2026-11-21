@@ -34,7 +34,18 @@
         "Hiệu suất càng cao thì máy càng tiết kiệm năng lượng.",
         "Ví dụ: động cơ điện khoảng 80–95%, động cơ xăng khoảng 25–30%, bóng đèn sợi đốt chỉ khoảng 5% (phần lớn thành nhiệt), đèn LED khoảng 30–40%."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Hiệu suất là tỉ số giữa:",
+        "options": [
+          "năng lượng có ích và năng lượng toàn phần",
+          "năng lượng hao phí và có ích",
+          "năng lượng toàn phần và có ích",
+          "công suất và thời gian"
+        ],
+        "answer": 0,
+        "explain": "H = W_ci/W_tp."
+      }
     },
     {
       "type": "figure",
@@ -54,7 +65,18 @@
         "Giảm ma sát (bôi trơn, ổ bi), giảm hao phí nhiệt, chọn thiết bị tiết kiệm năng lượng.",
         "Hiệu suất của động cơ nhiệt bị giới hạn bởi nguyên lí nhiệt động lực học, luôn nhỏ hơn 100%."
       ],
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Hiệu suất của máy luôn:",
+        "options": [
+          "nhỏ hơn 100%",
+          "bằng 100%",
+          "lớn hơn 100%",
+          "bằng 0"
+        ],
+        "answer": 0,
+        "explain": "Luôn có hao phí."
+      }
     },
     {
       "type": "method",

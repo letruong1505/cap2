@@ -45,7 +45,18 @@
       "n": 2,
       "formulas": [
         "F_ht = m·a_ht = m·v²/r = m·ω²·r"
-      ]
+      ],
+      "try": {
+        "q": "Gia tốc hướng tâm có hướng:",
+        "options": [
+          "vào tâm quỹ đạo",
+          "tiếp tuyến quỹ đạo",
+          "ra xa tâm",
+          "cùng hướng vận tốc"
+        ],
+        "answer": 0,
+        "explain": "Theo tên gọi."
+      }
     },
     {
       "type": "card",
@@ -63,7 +74,18 @@
         "Khi lực hướng tâm không đủ (hoặc mất đi), vật có xu hướng văng ra theo phương tiếp tuyến (chuyển động li tâm).",
         "Ứng dụng: máy vắt li tâm trong máy giặt; nguy cơ: xe vào cua quá nhanh bị trượt ra ngoài."
       ],
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Công thức gia tốc hướng tâm là:",
+        "options": [
+          "a = v²/r",
+          "a = v/r",
+          "a = vr",
+          "a = r/v²"
+        ],
+        "answer": 0,
+        "explain": "a = v²/r = ω²r."
+      }
     },
     {
       "type": "method",

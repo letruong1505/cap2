@@ -27,7 +27,18 @@
       "type": "card",
       "title": "Tính chất bắc cầu",
       "text": "A > b và b > c ⇒ a > c.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Nếu a > b và c < 0 thì:",
+        "options": [
+          "ac > bc",
+          "ac = bc",
+          "ac < bc",
+          "Không so sánh được"
+        ],
+        "answer": 2,
+        "explain": "Đổi chiều."
+      }
     },
     {
       "type": "card",
@@ -39,7 +50,18 @@
       "type": "card",
       "title": "Liên hệ với phép nhân",
       "text": "A > b, c > 0 ⇒ ac > bc; a > b, c < 0 ⇒ ac < bc (nhân với số âm phải đổi chiều).",
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Nếu a < b thì:",
+        "options": [
+          "a − 5 > b − 5",
+          "a − 5 < b − 5",
+          "a + 5 > b + 5",
+          "−a < −b"
+        ],
+        "answer": 1,
+        "explain": "Cộng −5 vào hai vế."
+      }
     }
   ],
   "examples": [

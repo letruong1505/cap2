@@ -33,7 +33,18 @@
         "Thực hiện đúng hướng dẫn của giáo viên; báo ngay khi gặp sự cố (vỡ dụng cụ, đổ hoá chất, cháy…).",
         "Sau khi làm xong phải thu gom chất thải, rửa sạch dụng cụ và tay."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Khi làm đổ hoá chất, em cần:",
+        "options": [
+          "Báo ngay cho giáo viên",
+          "Tự lau bằng tay",
+          "Bỏ đi không báo",
+          "Ngửi để nhận biết"
+        ],
+        "answer": 0,
+        "explain": "Báo giáo viên để xử lí."
+      }
     },
     {
       "type": "card",
@@ -50,7 +61,18 @@
       "type": "card",
       "title": "Một số kí hiệu",
       "text": "Chất dễ cháy, chất độc, chất ăn mòn, điện cao thế, cấm lửa, lối thoát hiểm.",
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Việc nào không được làm trong phòng thực hành?",
+        "options": [
+          "Đọc kĩ hướng dẫn",
+          "Đeo găng tay",
+          "Rửa tay sau khi làm",
+          "Ăn uống, đùa nghịch"
+        ],
+        "answer": 3,
+        "explain": "Gây mất an toàn."
+      }
     }
   ],
   "examples": [

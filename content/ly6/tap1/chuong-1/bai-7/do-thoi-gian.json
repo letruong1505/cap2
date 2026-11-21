@@ -31,7 +31,18 @@
       "type": "card",
       "title": "Dụng cụ đo",
       "text": "Đồng hồ treo tường, đồng hồ đeo tay, đồng hồ bấm giây, đồng hồ đo thời gian hiện số dùng cổng quang điện.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Đơn vị đo thời gian chính thức là:",
+        "options": [
+          "Giây",
+          "Phút",
+          "Giờ",
+          "Ngày"
+        ],
+        "answer": 0,
+        "explain": "Giây (s)."
+      }
     },
     {
       "type": "card",

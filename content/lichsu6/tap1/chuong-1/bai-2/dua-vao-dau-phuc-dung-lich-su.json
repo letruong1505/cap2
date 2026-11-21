@@ -33,7 +33,18 @@
       "type": "card",
       "title": "Mốc sự kiện cần nhớ",
       "text": "Ba loại tư liệu chính: truyền miệng, hiện vật, chữ viết",
-      "n": 3
+      "n": 3,
+      "try": {
+        "q": "Truyền thuyết \"Thánh Gióng\" thuộc loại tư liệu:",
+        "options": [
+          "Chữ viết",
+          "Truyền miệng",
+          "Hiện vật",
+          "Gốc"
+        ],
+        "answer": 1,
+        "explain": "Lời kể truyền đời."
+      }
     },
     {
       "type": "card",
@@ -51,7 +62,18 @@
       "type": "card",
       "title": "Tư liệu gốc là tư liệu liên…",
       "text": "Tư liệu gốc là tư liệu liên quan trực tiếp đến sự kiện lịch sử, ra đời vào thời điểm diễn ra sự kiện đó; là nguồn tư liệu đáng tin cậy nhất.",
-      "n": 6
+      "n": 6,
+      "try": {
+        "q": "Trống đồng Đông Sơn thuộc loại tư liệu:",
+        "options": [
+          "Hiện vật",
+          "Truyền miệng",
+          "Chữ viết",
+          "Phái sinh"
+        ],
+        "answer": 0,
+        "explain": "Đồ vật người xưa."
+      }
     },
     {
       "type": "figure",

@@ -28,7 +28,18 @@
       "type": "card",
       "title": "Hàm số có thể được cho bằng…",
       "text": "Hàm số có thể được cho bằng bảng, bằng công thức hoặc bằng biểu đồ.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Đại lượng y là hàm số của x khi:",
+        "options": [
+          "Với mỗi giá trị của x có hai giá trị của y",
+          "Với mỗi giá trị của y có đúng một giá trị của x",
+          "Với mỗi giá trị của x có đúng một giá trị của y",
+          "x và y luôn bằng nhau"
+        ],
+        "answer": 2,
+        "explain": "Mỗi x tương ứng với một y duy nhất."
+      }
     },
     {
       "type": "figure",

@@ -32,7 +32,18 @@
       "type": "card",
       "title": "Biến dạng kéo làm vật dài ra, biến dạng nén làm vật ngắn lại",
       "text": "Độ biến dạng của lò xo: Δl = |l − l₀| với l₀ là chiều dài tự nhiên.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Biến dạng đàn hồi là biến dạng:",
+        "options": [
+          "vật lấy lại hình dạng ban đầu khi thôi tác dụng lực",
+          "vật không trở lại hình dạng cũ",
+          "vật bị vỡ",
+          "chỉ xảy ra với chất lỏng"
+        ],
+        "answer": 0,
+        "explain": "Định nghĩa."
+      }
     },
     {
       "type": "card",
@@ -59,7 +70,18 @@
         "Lực đàn hồi có chiều ngược với chiều biến dạng (lò xo dãn thì kéo vào, nén thì đẩy ra).",
         "Độ cứng k phụ thuộc vật liệu, kích thước của lò xo; trên đồ thị F – Δl, k là độ dốc."
       ],
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Theo định luật Hooke, lực đàn hồi:",
+        "options": [
+          "tỉ lệ thuận với độ biến dạng",
+          "tỉ lệ nghịch với độ biến dạng",
+          "không phụ thuộc độ biến dạng",
+          "tỉ lệ với bình phương độ biến dạng"
+        ],
+        "answer": 0,
+        "explain": "F = kΔl."
+      }
     },
     {
       "type": "method",

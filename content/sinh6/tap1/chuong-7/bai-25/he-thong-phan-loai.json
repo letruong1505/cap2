@@ -27,7 +27,18 @@
       "type": "card",
       "title": "Các bậc phân loại từ thấp đến cao",
       "text": "Loài → Chi (giống) → Họ → Bộ → Lớp → Ngành → Giới.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Bậc phân loại thấp nhất là:",
+        "options": [
+          "Loài",
+          "Giới",
+          "Ngành",
+          "Họ"
+        ],
+        "answer": 0,
+        "explain": "Loài."
+      }
     },
     {
       "type": "card",
@@ -47,7 +58,18 @@
         "Mỗi sinh vật có tên khoa học gồm tên chi (viết hoa chữ cái đầu) và tên loài, viết in nghiêng, ví dụ Homo sapiens (người).",
         "Ngoài ra có tên địa phương (tên thường gọi)."
       ],
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Vi khuẩn thuộc giới:",
+        "options": [
+          "Nấm",
+          "Nguyên sinh",
+          "Thực vật",
+          "Khởi sinh"
+        ],
+        "answer": 3,
+        "explain": "Nhân sơ."
+      }
     },
     {
       "type": "figure",

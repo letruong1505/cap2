@@ -24,7 +24,18 @@
       "title": "Công thức",
       "formulas": [
         "Nếu A, B xung khắc: P(A ∪ B) = P(A) + P(B).   Với hai biến cố bất kì: P(A ∪ B) = P(A) + P(B) − P(A ∩ B).   Biến cố đối: P(Ā) = 1 − P(A)."
-      ]
+      ],
+      "try": {
+        "q": "Công thức nào đúng với hai biến cố bất kì?",
+        "options": [
+          "P(A ∪ B) = P(A) + P(B) − P(A ∩ B)",
+          "P(A ∪ B) = P(A) + P(B)",
+          "P(A ∪ B) = P(A)·P(B)",
+          "P(A ∪ B) = P(A) − P(B)"
+        ],
+        "answer": 0,
+        "explain": "Trừ phần giao bị tính hai lần."
+      }
     },
     {
       "type": "figure",

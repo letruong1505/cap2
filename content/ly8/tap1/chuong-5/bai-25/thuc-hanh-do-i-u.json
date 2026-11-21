@@ -42,7 +42,18 @@
       "type": "card",
       "title": "Khi dùng pin 3 V thay pin…",
       "text": "Khi dùng pin 3 V thay pin 1,5 V thì hiệu điện thế hai đầu bóng đèn tăng và cường độ dòng điện thường tăng, đèn sáng hơn.",
-      "n": 3
+      "n": 3,
+      "try": {
+        "q": "Ampe kế được mắc trong mạch theo cách:",
+        "options": [
+          "Song song",
+          "Nối tiếp",
+          "Chéo",
+          "Không cần mắc"
+        ],
+        "answer": 1,
+        "explain": "Ampe kế nối tiếp với dụng cụ."
+      }
     },
     {
       "type": "card",
@@ -64,7 +75,18 @@
       "type": "card",
       "title": "Lưu ý an toàn",
       "text": "Chọn thang đo phù hợp; mắc đúng chốt (+) và (−); không mắc ampe kế trực tiếp vào nguồn; ngắt công tắc khi thay đổi mạch.",
-      "n": 6
+      "n": 6,
+      "try": {
+        "q": "Vôn kế đo hiệu điện thế hai đầu bóng đèn phải được mắc:",
+        "options": [
+          "Song song với bóng đèn",
+          "Nối tiếp với bóng đèn",
+          "Nối với một đầu đèn",
+          "Không cần mắc vào đèn"
+        ],
+        "answer": 0,
+        "explain": "Hai chốt vôn kế nối vào hai đầu bóng đèn."
+      }
     }
   ],
   "examples": [

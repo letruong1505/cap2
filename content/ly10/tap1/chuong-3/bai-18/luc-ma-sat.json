@@ -34,7 +34,18 @@
       "n": 2,
       "formulas": [
         "F_mst = μ·N        Trên mặt ngang, không có lực xiên: N = mg  ⇒  F_mst = μmg"
-      ]
+      ],
+      "try": {
+        "q": "Lực ma sát trượt KHÔNG phụ thuộc vào:",
+        "options": [
+          "diện tích tiếp xúc",
+          "áp lực",
+          "vật liệu bề mặt",
+          "tình trạng bề mặt"
+        ],
+        "answer": 0,
+        "explain": "Đặc điểm của ma sát trượt."
+      }
     },
     {
       "type": "figure",
@@ -55,7 +66,18 @@
         "Ma sát có hại: làm mòn chi tiết máy, tốn năng lượng, sinh nhiệt.",
         "Tăng ma sát: làm nhám bề mặt, tăng áp lực; giảm ma sát: bôi trơn, dùng ổ bi, đệm khí."
       ],
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Lực ma sát trượt có chiều:",
+        "options": [
+          "ngược chiều chuyển động tương đối",
+          "cùng chiều chuyển động",
+          "vuông góc mặt tiếp xúc",
+          "hướng lên"
+        ],
+        "answer": 0,
+        "explain": "Cản trở chuyển động."
+      }
     },
     {
       "type": "method",

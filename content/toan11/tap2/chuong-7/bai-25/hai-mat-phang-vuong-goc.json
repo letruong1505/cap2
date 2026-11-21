@@ -45,7 +45,18 @@
       "n": 2,
       "formulas": [
         "Điều kiện: (P) ⟂ (Q) nếu (P) chứa một đường thẳng vuông góc với (Q).   Nếu (P) ⟂ (Q) và d ⊂ (P) vuông góc với giao tuyến thì d ⟂ (Q).   Diện tích hình chiếu: S′ = S·cos φ."
-      ]
+      ],
+      "try": {
+        "q": "Góc giữa hai mặt phẳng có số đo thuộc:",
+        "options": [
+          "[0°; 90°]",
+          "[0°; 180°]",
+          "(90°; 180°)",
+          "[−90°; 90°]"
+        ],
+        "answer": 0,
+        "explain": "Góc giữa hai mặt phẳng luôn không quá 90°."
+      }
     },
     {
       "type": "card",

@@ -42,7 +42,18 @@
       "n": 3,
       "formulas": [
         "p = F / S   (p: áp suất; F: áp lực; S: diện tích bị ép)"
-      ]
+      ],
+      "try": {
+        "q": "Áp lực là:",
+        "options": [
+          "Lực ma sát giữa hai mặt tiếp xúc",
+          "Lực ép có phương vuông góc với mặt bị ép",
+          "Lực kéo theo phương ngang",
+          "Trọng lượng của mọi vật"
+        ],
+        "answer": 1,
+        "explain": "Áp lực vuông góc với mặt bị ép."
+      }
     },
     {
       "type": "card",
@@ -66,7 +77,18 @@
       "type": "card",
       "title": "Áp suất chất khí trong bình kín…",
       "text": "Áp suất chất khí trong bình kín tăng khi tăng lượng khí trong bình có thể tích cố định, hoặc khi giảm thể tích bình chứa lượng khí nhất định.",
-      "n": 6
+      "n": 6,
+      "try": {
+        "q": "Công thức tính áp suất là:",
+        "options": [
+          "p = F / S",
+          "p = F · S",
+          "p = S / F",
+          "p = F + S"
+        ],
+        "answer": 0,
+        "explain": "Áp suất bằng áp lực chia diện tích bị ép."
+      }
     },
     {
       "type": "method",

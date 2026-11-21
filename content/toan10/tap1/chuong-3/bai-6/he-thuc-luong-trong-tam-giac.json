@@ -27,7 +27,18 @@
         "Định lí côsin: a² = b² + c² − 2bc·cos A;  b² = c² + a² − 2ca·cos B;  c² = a² + b² − 2ab·cos C",
         "cos A = (b² + c² − a²) / (2bc)        Định lí sin: a/sin A = b/sin B = c/sin C = 2R",
         "S = ½ab·sin C = ½bc·sin A = ½ca·sin B        S = abc/(4R)        S = pr        S = √[p(p − a)(p − b)(p − c)] (Heron)"
-      ]
+      ],
+      "try": {
+        "q": "Trong tam giác ABC, định lí côsin viết cho cạnh a là:",
+        "options": [
+          "a² = b² + c² − 2bc·cos A",
+          "a² = b² + c² + 2bc·cos A",
+          "a² = b² + c² − 2bc·sin A",
+          "a = b + c − 2bc·cos A"
+        ],
+        "answer": 0,
+        "explain": "Công thức định lí côsin."
+      }
     },
     {
       "type": "figure",

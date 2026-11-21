@@ -45,7 +45,18 @@
       "formulas": [
         "sin²α + cos²α = 1;   1 + tan²α = 1/cos²α;   1 + cot²α = 1/sin²α;   tan α · cot α = 1.",
         "Góc đối: cos(−α) = cos α, sin(−α) = −sin α.   Góc bù: sin(π − α) = sin α, cos(π − α) = −cos α.   Hơn kém π: sin(α + π) = −sin α, cos(α + π) = −cos α, tan(α + π) = tan α.   Phụ nhau: sin(π/2 − α) = cos α, cos(π/2 − α) = sin α."
-      ]
+      ],
+      "try": {
+        "q": "Điểm M trên đường tròn lượng giác biểu diễn góc α có toạ độ là:",
+        "options": [
+          "(cos α; sin α)",
+          "(sin α; cos α)",
+          "(tan α; cot α)",
+          "(cos α; tan α)"
+        ],
+        "answer": 0,
+        "explain": "Hoành độ của M là cos α, tung độ là sin α."
+      }
     },
     {
       "type": "figure",

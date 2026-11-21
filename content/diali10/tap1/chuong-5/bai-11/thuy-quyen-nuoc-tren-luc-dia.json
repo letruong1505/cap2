@@ -37,7 +37,18 @@
       "type": "card",
       "title": "Chế độ nước sông chịu ảnh hưởng của nguồn cấp nước và đặc điểm lưu vực",
       "text": "Địa hình dốc làm lũ tập trung nhanh; hồ, đầm và thực vật điều tiết dòng chảy; các phụ lưu tập trung trên đoạn ngắn dễ gây lũ chồng lũ.",
-      "n": 3
+      "n": 3,
+      "try": {
+        "q": "Lưu lượng nước sông là gì?",
+        "options": [
+          "Lượng mưa trong năm",
+          "Lượng nước chuyển qua mặt cắt ngang sông trong 1 giây (m³/s)",
+          "Độ sâu của lòng sông",
+          "Diện tích lưu vực"
+        ],
+        "answer": 1,
+        "explain": "Lưu lượng nước sông là lượng nước chuyển qua mặt cắt ngang sông trong thời gian 1 giây, đơn vị m³/s."
+      }
     },
     {
       "type": "card",
@@ -68,7 +79,18 @@
         "Mùa lũ: lưu lượng lớn hơn trung bình năm.",
         "Nước ngầm là nguồn nước ngọt quan trọng nhưng dễ bị suy giảm, ô nhiễm nên cần bảo vệ."
       ],
-      "n": 7
+      "n": 7,
+      "try": {
+        "q": "Mùa lũ của sông được xác định dựa trên điều kiện nào?",
+        "options": [
+          "Lưu lượng nước lớn hơn lưu lượng trung bình năm",
+          "Nhiệt độ cao nhất trong năm",
+          "Lượng mưa dưới 100 mm",
+          "Số lượng thuyền trên sông"
+        ],
+        "answer": 0,
+        "explain": "Khoảng thời gian trong năm mà lưu lượng nước sông vượt quá lưu lượng trung bình năm được gọi là mùa lũ."
+      }
     }
   ],
   "examples": [],

@@ -37,7 +37,18 @@
       "type": "card",
       "title": "Điểm nhấn ghi nhớ",
       "text": "Lưu lượng là lượng nước qua mặt cắt trong 1 giây, đơn vị m³/s",
-      "n": 3
+      "n": 3,
+      "try": {
+        "q": "Phụ lưu là:",
+        "options": [
+          "Sông thoát nước cho sông chính",
+          "Sông đổ nước vào sông chính",
+          "Hồ nhân tạo",
+          "Nước ngầm"
+        ],
+        "answer": 1,
+        "explain": "Phụ lưu."
+      }
     },
     {
       "type": "card",
@@ -61,7 +72,18 @@
       "type": "card",
       "title": "Sông, hồ cung cấp nước sinh hoạt…",
       "text": "Sông, hồ cung cấp nước sinh hoạt, tưới tiêu, thuỷ điện, giao thông, du lịch, thuỷ sản.",
-      "n": 6
+      "n": 6,
+      "try": {
+        "q": "Lưu lượng nước sông là:",
+        "options": [
+          "Lượng nước chảy qua mặt cắt ngang lòng sông trong 1 giây",
+          "Chiều dài sông",
+          "Độ sâu sông",
+          "Diện tích lưu vực"
+        ],
+        "answer": 0,
+        "explain": "Định nghĩa."
+      }
     },
     {
       "type": "figure",

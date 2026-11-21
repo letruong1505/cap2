@@ -39,7 +39,18 @@
         "Quy ước ∅ ⊂ A với mọi tập A.",
         "Một tập có n phần tử có 2ⁿ tập con."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Tập hợp A = {x ∈ ℕ | x < 4} viết dưới dạng liệt kê là:",
+        "options": [
+          "{0; 1; 2; 3}",
+          "{1; 2; 3}",
+          "{0; 1; 2; 3; 4}",
+          "{1; 2; 3; 4}"
+        ],
+        "answer": 0,
+        "explain": "Số tự nhiên nhỏ hơn 4 gồm 0, 1, 2, 3."
+      }
     },
     {
       "type": "card",
@@ -63,7 +74,18 @@
       "n": 4,
       "formulas": [
         "n(A ∪ B) = n(A) + n(B) − n(A ∩ B)"
-      ]
+      ],
+      "try": {
+        "q": "Khẳng định nào đúng?",
+        "options": [
+          "ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ",
+          "ℤ ⊂ ℕ ⊂ ℚ ⊂ ℝ",
+          "ℕ ⊂ ℚ ⊂ ℤ ⊂ ℝ",
+          "ℝ ⊂ ℚ ⊂ ℤ ⊂ ℕ"
+        ],
+        "answer": 0,
+        "explain": "Mỗi tập số là tập con của tập số tiếp theo."
+      }
     },
     {
       "type": "figure",

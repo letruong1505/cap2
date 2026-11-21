@@ -42,7 +42,18 @@
       "n": 2,
       "formulas": [
         "A_n^k = n! / (n − k)!"
-      ]
+      ],
+      "try": {
+        "q": "Chọn 2 bạn trong 10 bạn để trực nhật (không phân biệt vai trò) là bài toán về:",
+        "options": [
+          "tổ hợp",
+          "chỉnh hợp",
+          "hoán vị",
+          "quy tắc cộng"
+        ],
+        "answer": 0,
+        "explain": "Không kể thứ tự."
+      }
     },
     {
       "type": "card",

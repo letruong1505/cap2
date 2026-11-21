@@ -90,6 +90,7 @@
     box.append(h('p', { class: 'meta' }, 'Chất lượng hôm nay'), qualityBar(p.todayCorrect, p.todayDone, true));
     box.append(h('p', {}, `Tuần này: ${p.daysDone}/${g.weekly} ngày học${p.daysDone >= g.weekly ? ' – đạt mục tiêu!' : ''}`), bar(p.daysDone, g.weekly));
     box.append(h('p', { class: 'meta' }, `Điểm: hôm nay ${p.todayPts} · 7 ngày ${p.weekPts} · tổng ${p.totalPts}`));
+    rewardBar(box, data);
     const mk = (opts, cur, label) => {
       const sel = h('select', { 'aria-label': label });
       (opts.includes(cur) ? opts : opts.concat(cur).sort((a, b) => a - b)).forEach((o) => { const op = h('option', { value: o }, String(o)); if (o === cur) op.selected = true; sel.append(op); });
@@ -139,6 +140,58 @@
       });
     });
     box.append(h('p', { class: 'goal-set' }, 'Riêng từng môn (chọn xong bấm Lưu):'), grid, h('p', { class: 'goal-set' }, save));
+    rewardSettings(box, grade, data);
+  }
+
+  /* Phần thưởng chuỗi ngày: con thấy thanh tiến độ; đủ chuỗi thì chờ phụ huynh bấm "Đã trao". */
+  function rewardBar(box, data) {
+    const st = P.streak(data, Date.now());
+    if (!st.on) return;
+    const wrap = h('div', { class: 'reward-box' + (st.achieved ? ' done' : '') });
+    wrap.append(h('p', {}, st.achieved
+      ? `🎁 Đã đủ ${st.need} ngày đạt ${st.pct}%! Nhờ bố mẹ trao thưởng${st.text ? ': ' + st.text : ''}.`
+      : `🎁 Chuỗi ngày đạt ${st.pct}%: ${st.count}/${st.need} ngày${st.text ? ' · Thưởng: ' + st.text : ''}`), bar(Math.min(st.count, st.need), st.need));
+    if (!st.achieved) wrap.append(h('p', { class: 'meta' }, st.todayOk ? 'Hôm nay đã đạt – giữ vững nhé!' : 'Hôm nay làm bài đạt mức trên để tính thêm 1 ngày.'));
+    box.append(wrap);
+  }
+  function rewardSettings(box, grade, data) {
+    const R = P.cleanReward(data.reward);
+    const st = P.streak(data, Date.now());
+    const wrap = h('div', { class: 'reward-set' }, h('h3', {}, 'Phần thưởng chuỗi ngày'));
+    const on = h('input', { type: 'checkbox' }); on.checked = R.on;
+    const days = h('input', { type: 'number', min: 1, max: 60, value: R.days, 'aria-label': 'Số ngày liên tiếp' });
+    const pct = h('input', { type: 'number', min: 10, max: 100, value: R.pct, 'aria-label': 'Ngưỡng mỗi ngày (%)' });
+    const text = h('input', { type: 'text', maxlength: 80, value: R.text, placeholder: 'Ví dụ: +30 phút chơi game cuối tuần', 'aria-label': 'Phần thưởng' });
+    const refresh = () => renderGoals(box, grade);
+    const gate = async () => { const ui = window.VungPinUI; if (ui && !(await ui.ensureUnlocked())) { refresh(); return false; } return true; };
+    const save = h('button', { type: 'button' }, 'Lưu phần thưởng');
+    save.addEventListener('click', async () => {
+      if (!(await gate())) return;
+      const d = P.load(store()); P.save(store(), P.setReward(d, { on: on.checked, days: days.value, pct: pct.value, text: text.value }));
+      if (window.VungProgressSync && window.VungProgressSync.schedule) window.VungProgressSync.schedule();
+      refresh();
+    });
+    wrap.append(
+      h('p', { class: 'goal-set' }, h('label', {}, on, ' Bật phần thưởng')),
+      h('p', { class: 'goal-set' }, 'Học ', days, ' ngày liên tiếp, mỗi ngày đúng từ ', pct, '% số câu → thưởng: '),
+      h('p', { class: 'goal-set' }, text), h('p', { class: 'goal-set' }, save));
+    if (R.on) {
+      wrap.append(h('p', { class: 'meta' }, `Chuỗi hiện tại: ${Math.min(st.count, st.need)}/${st.need} ngày.`));
+      if (st.achieved) {
+        const give = h('button', { type: 'button', class: 'give-reward' }, 'Đã trao thưởng');
+        give.addEventListener('click', async () => {
+          if (!(await gate())) return;
+          P.save(store(), P.giveReward(P.load(store()))); if (window.VungProgressSync && window.VungProgressSync.schedule) window.VungProgressSync.schedule(); refresh();
+        });
+        wrap.append(h('p', {}, h('strong', {}, 'Con đã đạt thưởng! '), give));
+      }
+    }
+    if (R.given.length) {
+      const ul = h('ul', { class: 'report-list' });
+      R.given.slice().reverse().slice(0, 5).forEach((x) => ul.append(h('li', {}, `${x.day.split('-').reverse().join('/')}: ${x.text || 'Đã trao thưởng'} (${x.days} ngày)`)));
+      wrap.append(h('p', { class: 'meta' }, 'Lịch sử trao thưởng'), ul);
+    }
+    box.append(wrap);
   }
 
   function dueCount(grade) { return P ? P.due(P.load(store()), Date.now(), grade).length : 0; }
@@ -538,6 +591,12 @@
         const r = S.buildReport(d.rows, { from: rg.from, to: rg.to, subject: pvView.subject, grade: pvView.grade }, d.goals);
         body.append(h('p', { class: 'meta' }, `${fmtFull(r.from)} → ${fmtFull(r.to)}`));
         attachUsage(r, d.usage || []);
+        if (d.reward && d.reward.on) {
+          const rw = d.reward;
+          body.append(h('div', { class: 'goal-box' }, h('h2', {}, 'Phần thưởng'),
+            h('p', {}, rw.achieved ? `🎁 Con đã đủ ${rw.need} ngày đạt ${rw.pct}% – chờ bố mẹ trao${rw.text ? ': ' + rw.text : ''}.` : `Chuỗi ngày đạt ${rw.pct}%: ${rw.count}/${rw.need} ngày${rw.text ? ' · Thưởng: ' + rw.text : ''}`),
+            bar(Math.min(rw.count, rw.need), rw.need), h('p', { class: 'meta' }, 'Trao thưởng bấm "Đã trao" trong báo cáo trên máy của con.')));
+        }
         body.append(h('div', { class: 'goal-box' }, h('h2', {}, 'Chất lượng làm bài'), qualityBar(r.correct, r.total, true)));
         const ub = usageBox(r); if (ub) body.append(ub);
         if (r.days.length > 1 || r.total) body.append(h('h2', { class: 'rep-h' }, 'Biểu đồ theo ngày'), h('div', { class: 'goal-box' }, dayChart(r), h('p', { class: 'meta' }, 'Xanh: câu đúng · Đỏ: câu sai')), h('h2', { class: 'rep-h' }, r.days.length <= 7 ? 'Lịch tuần' : 'Lịch học'), calendar(r, today));

@@ -30,7 +30,18 @@
         "Mỗi đa thức cũng được coi là một phân thức với mẫu thức bằng 1.",
         "Số 0 và số 1 cũng là những phân thức."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Biểu thức nào sau đây là phân thức đại số?",
+        "options": [
+          "(x + 1)/0",
+          "√x/(x + 1)",
+          "(x + 1)/(x − 3)",
+          "x/(1/x)"
+        ],
+        "answer": 2,
+        "explain": "Tử và mẫu đều là đa thức, mẫu khác 0."
+      }
     },
     {
       "type": "card",
@@ -48,7 +59,18 @@
       "n": 4,
       "formulas": [
         "A/B = C/D ⇔ A·D = B·C (B ≠ 0, D ≠ 0)"
-      ]
+      ],
+      "try": {
+        "q": "Điều kiện xác định của phân thức 5/(x + 4) là:",
+        "options": [
+          "x ≠ 4",
+          "x ≠ −4",
+          "x ≠ 0",
+          "x = −4"
+        ],
+        "answer": 1,
+        "explain": "Mẫu x + 4 ≠ 0 nên x ≠ −4."
+      }
     },
     {
       "type": "method",

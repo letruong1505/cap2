@@ -37,7 +37,18 @@
         "Trong các công thức trên, chọn chiều dương là chiều chuyển động ban đầu: v₀ > 0; nhanh dần đều thì a > 0, chậm dần đều thì a < 0.",
         "Khi v₀ = 0 (xuất phát từ nghỉ): v = at, d = ½at², v² = 2ad."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Công thức liên hệ vận tốc, gia tốc và độ dịch chuyển (không chứa thời gian) là:",
+        "options": [
+          "v² − v₀² = 2ad",
+          "v = v₀ + at",
+          "d = v₀t + ½at²",
+          "d = vt"
+        ],
+        "answer": 0,
+        "explain": "Khử t từ hai công thức còn lại."
+      }
     },
     {
       "type": "card",
@@ -60,7 +71,18 @@
         "Thời gian dừng t = −v₀/a, quãng đường dừng d = −v₀²/(2a) (với a < 0).",
         "Khoảng cách an toàn khi lái xe phụ thuộc vào bình phương tốc độ."
       ],
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Chuyển động thẳng chậm dần đều có:",
+        "options": [
+          "gia tốc không đổi và ngược chiều vận tốc",
+          "gia tốc bằng 0",
+          "gia tốc cùng chiều vận tốc",
+          "gia tốc tăng dần"
+        ],
+        "answer": 0,
+        "explain": "Vận tốc giảm đều."
+      }
     },
     {
       "type": "method",

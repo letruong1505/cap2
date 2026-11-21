@@ -42,7 +42,18 @@
       "n": 2,
       "formulas": [
         "ΣM (cùng chiều kim đồng hồ) = ΣM (ngược chiều kim đồng hồ)        Đòn bẩy: F₁·d₁ = F₂·d₂"
-      ]
+      ],
+      "try": {
+        "q": "Moment lực đối với trục quay được tính bằng:",
+        "options": [
+          "tích độ lớn lực và cánh tay đòn",
+          "tích lực và khối lượng",
+          "thương lực và khoảng cách",
+          "tổng lực và khoảng cách"
+        ],
+        "answer": 0,
+        "explain": "M = F·d."
+      }
     },
     {
       "type": "card",
@@ -57,7 +68,18 @@
       "type": "card",
       "title": "Điều kiện cân bằng tổng quát của vật rắn",
       "text": "Tổng các lực tác dụng lên vật bằng 0 (không chuyển động tịnh tiến) và tổng moment lực đối với một trục bất kì bằng 0 (không quay).",
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Đơn vị của moment lực là:",
+        "options": [
+          "N·m",
+          "N",
+          "N/m",
+          "J/s"
+        ],
+        "answer": 0,
+        "explain": "Lực nhân khoảng cách."
+      }
     },
     {
       "type": "method",

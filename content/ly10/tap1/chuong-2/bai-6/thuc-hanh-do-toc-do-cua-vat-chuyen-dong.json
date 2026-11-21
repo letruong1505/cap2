@@ -48,7 +48,18 @@
         "Dùng một cổng quang điện và một tấm chắn sáng có bề rộng nhỏ d gắn trên xe.",
         "Thời gian Δt tấm chắn đi qua cổng rất ngắn nên v = d/Δt coi là tốc độ tức thời tại cổng."
       ],
-      "n": 3
+      "n": 3,
+      "try": {
+        "q": "Dụng cụ nào loại bỏ được sai số do phản xạ của người đo thời gian?",
+        "options": [
+          "Cổng quang điện và đồng hồ đo thời gian hiện số",
+          "Đồng hồ bấm giây",
+          "Đồng hồ treo tường",
+          "Thước cuộn"
+        ],
+        "answer": 0,
+        "explain": "Tín hiệu điện tự động dừng đồng hồ."
+      }
     },
     {
       "type": "card",
@@ -72,7 +83,18 @@
         "Loại bỏ sai số do phản xạ của người đo, đo được khoảng thời gian rất ngắn.",
         "Hạn chế: cần nguồn điện, chỉ đo được tại vị trí đặt cổng."
       ],
-      "n": 6
+      "n": 6,
+      "try": {
+        "q": "Chế độ A ↔ B của đồng hồ đo thời gian hiện số đo:",
+        "options": [
+          "thời gian vật đi từ cổng A đến cổng B",
+          "thời gian chắn cổng A",
+          "tổng thời gian chắn hai cổng",
+          "số lần chắn cổng"
+        ],
+        "answer": 0,
+        "explain": "Dùng để đo tốc độ trung bình trên đoạn AB."
+      }
     },
     {
       "type": "method",

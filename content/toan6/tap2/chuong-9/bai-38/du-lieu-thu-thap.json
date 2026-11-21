@@ -27,7 +27,18 @@
       "type": "card",
       "title": "Dữ liệu cần hợp lí",
       "text": "Phù hợp với tiêu chí đặt ra, không có giá trị vô lí (ví dụ chiều cao học sinh lớp 6 là 3 m).",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Dữ liệu nào là số liệu?",
+        "options": [
+          "Cân nặng của các bạn trong lớp",
+          "Màu sắc yêu thích",
+          "Tên các bạn",
+          "Môn thể thao yêu thích"
+        ],
+        "answer": 0,
+        "explain": "Cân nặng là số."
+      }
     },
     {
       "type": "card",

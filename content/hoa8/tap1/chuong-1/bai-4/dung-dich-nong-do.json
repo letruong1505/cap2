@@ -40,7 +40,18 @@
       "n": 2,
       "formulas": [
         "S = (m chất tan / m nước) · 100   (g/100 g nước)"
-      ]
+      ],
+      "try": {
+        "q": "Dung dịch là gì?",
+        "options": [
+          "Hỗn hợp không đồng nhất, có thể phân lớp",
+          "Hỗn hợp đồng nhất của chất tan và dung môi",
+          "Chỉ là chất lỏng nguyên chất",
+          "Chất rắn không tan trong nước"
+        ],
+        "answer": 1,
+        "explain": "Dung dịch gồm chất tan hoà đều trong dung môi."
+      }
     },
     {
       "type": "figure",
@@ -72,7 +83,18 @@
       "n": 5,
       "formulas": [
         "C_M = n / V   (mol/L)"
-      ]
+      ],
+      "try": {
+        "q": "Dung dịch bão hoà là dung dịch:",
+        "options": [
+          "Không thể hoà tan thêm chất tan đó ở nhiệt độ đã cho",
+          "Hoà tan thêm được chất tan",
+          "Chứa rất ít chất tan",
+          "Luôn có màu"
+        ],
+        "answer": 0,
+        "explain": "Dung dịch bão hoà đã hoà tan tối đa chất tan ở điều kiện đó."
+      }
     }
   ],
   "examples": [

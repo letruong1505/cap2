@@ -37,7 +37,18 @@
         "Π + k2π).",
         "Đồ thị đối xứng qua trục Oy."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Hàm số nào sau đây là hàm số chẵn?",
+        "options": [
+          "y = cos x",
+          "y = sin x",
+          "y = tan x",
+          "y = cot x"
+        ],
+        "answer": 0,
+        "explain": "cos(−x) = cos x."
+      }
     },
     {
       "type": "figure",
@@ -69,7 +80,18 @@
         "Hàm chẵn: f(−x) = f(x); hàm lẻ: f(−x) = −f(x) (tập xác định đối xứng).",
         "Hàm y = sin(ax + b), cos(ax + b) có chu kì 2π/|a|; tan(ax + b), cot(ax + b) có chu kì π/|a|."
       ],
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Tập xác định của hàm số y = tan x là:",
+        "options": [
+          "ℝ \\ {π/2 + kπ | k ∈ ℤ}",
+          "ℝ \\ {kπ | k ∈ ℤ}",
+          "ℝ",
+          "[−1; 1]"
+        ],
+        "answer": 0,
+        "explain": "tan x = sin x / cos x cần cos x ≠ 0."
+      }
     },
     {
       "type": "method",

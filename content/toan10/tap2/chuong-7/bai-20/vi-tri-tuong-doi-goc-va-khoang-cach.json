@@ -37,7 +37,18 @@
       "n": 2,
       "formulas": [
         "cos(Δ₁, Δ₂) = |a₁a₂ + b₁b₂| / (√(a₁² + b₁²)·√(a₂² + b₂²))        0° ≤ (Δ₁, Δ₂) ≤ 90°"
-      ]
+      ],
+      "try": {
+        "q": "Hai đường thẳng 2x − y + 1 = 0 và 4x − 2y + 5 = 0:",
+        "options": [
+          "song song",
+          "cắt nhau",
+          "trùng nhau",
+          "vuông góc"
+        ],
+        "answer": 0,
+        "explain": "Tỉ lệ 2/4 = −1/−2 ≠ 1/5."
+      }
     },
     {
       "type": "card",

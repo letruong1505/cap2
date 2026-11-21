@@ -33,7 +33,18 @@
         "Độ cứng thường lớn hơn, độ dẻo thường kém hơn kim loại thành phần; nhiệt độ nóng chảy phụ thuộc thành phần (ví dụ gang có nhiệt độ nóng chảy thấp hơn sắt nguyên chất).",
         "Hợp kim Au–Cu (8–12% Cu) cứng hơn vàng, dùng đúc tiền, làm đồ trang sức."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Hợp kim là vật liệu kim loại chứa:",
+        "options": [
+          "Một kim loại cơ bản và một số kim loại khác hoặc phi kim",
+          "Chỉ một kim loại duy nhất",
+          "Chỉ các phi kim",
+          "Chỉ các hợp chất ion"
+        ],
+        "answer": 0,
+        "explain": "Hợp kim có kim loại cơ bản cộng thêm các nguyên tố khác."
+      }
     },
     {
       "type": "card",
@@ -54,7 +65,18 @@
       "type": "card",
       "title": "Duralumin",
       "text": "Hợp kim chứa trên 90% nhôm, khoảng 4% đồng và một ít Mn, Mg, Si; nhẹ, cứng, bền; dùng rộng rãi trong chế tạo máy bay.",
-      "n": 5
+      "n": 5,
+      "try": {
+        "q": "Thép là hợp kim của sắt chứa lượng carbon:",
+        "options": [
+          "2–4%",
+          "Trên 5%",
+          "Dưới 2%",
+          "Hoàn toàn không có carbon"
+        ],
+        "answer": 2,
+        "explain": "Thép chứa dưới 2,0% C; gang chứa 2–4% C."
+      }
     }
   ],
   "examples": [

@@ -40,7 +40,18 @@
       "formulas": [
         "sin(180° − α) = sin α        cos(180° − α) = −cos α        tan(180° − α) = −tan α        cot(180° − α) = −cot α",
         "sin²α + cos²α = 1        tan α = sin α / cos α        cot α = cos α / sin α        tan α · cot α = 1"
-      ]
+      ],
+      "try": {
+        "q": "Với 90° < α < 180°, khẳng định nào đúng?",
+        "options": [
+          "sin α > 0 và cos α < 0",
+          "sin α < 0 và cos α > 0",
+          "sin α < 0 và cos α < 0",
+          "sin α > 0 và cos α > 0"
+        ],
+        "answer": 0,
+        "explain": "Điểm M nằm bên trái trục tung, phía trên trục hoành."
+      }
     },
     {
       "type": "card",

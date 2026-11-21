@@ -30,7 +30,18 @@
       "type": "card",
       "title": "Cách xây dựng",
       "text": "Liệt kê đặc điểm của từng sinh vật; chọn một đặc điểm để chia sinh vật thành hai nhóm (có – không có); tiếp tục chia mỗi nhóm cho đến khi xác định được từng sinh vật.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Khoá lưỡng phân dựa trên:",
+        "options": [
+          "Các cặp đặc điểm đối lập",
+          "Màu sắc duy nhất",
+          "Kích thước tuyệt đối",
+          "Tên địa phương"
+        ],
+        "answer": 0,
+        "explain": "Mỗi bước chia làm hai."
+      }
     },
     {
       "type": "figure",

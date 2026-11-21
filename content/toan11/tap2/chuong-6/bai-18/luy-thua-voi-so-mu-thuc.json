@@ -31,7 +31,18 @@
       "formulas": [
         "Luỹ thừa với số mũ hữu tỉ (a > 0): a^{m/n} = ⁿ√(aᵐ), trong đó m nguyên, n nguyên dương. Luỹ thừa với số mũ thực: a^α = lim a^{rₙ} với rₙ → α, rₙ hữu tỉ.",
         "Tính chất (a, b > 0; α, β ∈ ℝ): a^α·a^β = a^{α+β};  a^α/a^β = a^{α−β};  (a^α)^β = a^{αβ};  (ab)^α = a^α·b^α;  (a/b)^α = a^α/b^α."
-      ]
+      ],
+      "try": {
+        "q": "Với a ≠ 0, a⁰ bằng:",
+        "options": [
+          "1",
+          "0",
+          "a",
+          "Không xác định"
+        ],
+        "answer": 0,
+        "explain": "Quy ước a⁰ = 1 với a ≠ 0."
+      }
     },
     {
       "type": "figure",

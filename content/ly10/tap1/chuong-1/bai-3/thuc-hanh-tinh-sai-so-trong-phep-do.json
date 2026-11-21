@@ -39,7 +39,18 @@
         "Giá trị trung bình: Ā = (A₁ + A₂ + ... + A_n)/n        Sai số tuyệt đối mỗi lần: ΔA_i = |A_i − Ā|",
         "Sai số ngẫu nhiên: ΔĀ = (ΔA₁ + ... + ΔA_n)/n        Sai số dụng cụ ΔA_dc (thường lấy bằng một nửa hoặc một độ chia nhỏ nhất)        ΔA = ΔĀ + ΔA_dc",
         "Sai số tỉ đối: δA = ΔA/Ā · 100%        Ghi kết quả: A = Ā ± ΔA"
-      ]
+      ],
+      "try": {
+        "q": "Đo khối lượng bằng cân là phép đo:",
+        "options": [
+          "trực tiếp",
+          "gián tiếp",
+          "ước lượng",
+          "suy luận"
+        ],
+        "answer": 0,
+        "explain": "Đọc kết quả ngay trên dụng cụ."
+      }
     },
     {
       "type": "figure",
@@ -63,7 +74,18 @@
         "Sai số tuyệt đối làm tròn đến một hoặc hai chữ số có nghĩa; giá trị trung bình làm tròn đến cùng hàng với sai số.",
         "Ví dụ: 2,3456 m với ΔA = 0,02 m ghi là 2,35 ± 0,02 (m)."
       ],
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Xác định khối lượng riêng bằng cách đo khối lượng và thể tích rồi tính D = m/V là phép đo:",
+        "options": [
+          "gián tiếp",
+          "trực tiếp",
+          "không chính xác",
+          "ngẫu nhiên"
+        ],
+        "answer": 0,
+        "explain": "Tính qua công thức."
+      }
     },
     {
       "type": "method",

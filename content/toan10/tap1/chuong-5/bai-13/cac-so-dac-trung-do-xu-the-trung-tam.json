@@ -39,7 +39,18 @@
         "Nếu n lẻ, trung vị là số ở chính giữa (vị trí (n + 1)/2); nếu n chẵn, trung vị là trung bình cộng của hai số ở giữa (vị trí n/2 và n/2 + 1).",
         "Trung vị không bị ảnh hưởng bởi giá trị bất thường."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Mẫu 10, 10, 20, 20, 30, 30 có:",
+        "options": [
+          "không có mốt",
+          "mốt là 10",
+          "mốt là 20",
+          "mốt là 30"
+        ],
+        "answer": 0,
+        "explain": "Mọi giá trị có cùng tần số 2."
+      }
     },
     {
       "type": "card",
@@ -65,7 +76,18 @@
         "Một mẫu có thể có nhiều mốt hoặc không có mốt (khi mọi giá trị có cùng tần số).",
         "Mốt dùng được cả với dữ liệu định tính (ví dụ màu sắc, nhãn hiệu)."
       ],
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Cửa hàng giày muốn biết cỡ giày bán chạy nhất để nhập hàng. Số đặc trưng phù hợp là:",
+        "options": [
+          "Mốt",
+          "Số trung bình",
+          "Trung vị",
+          "Tứ phân vị"
+        ],
+        "answer": 0,
+        "explain": "Mốt là giá trị xuất hiện nhiều nhất."
+      }
     },
     {
       "type": "method",

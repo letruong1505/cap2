@@ -27,7 +27,18 @@
       "type": "card",
       "title": "Cách làm",
       "text": "Vẽ biểu đồ cột thể hiện lưu lượng nước từng tháng; tính tổng lưu lượng 12 tháng rồi chia cho 12 để có lưu lượng trung bình tháng; các tháng có lưu lượng lớn hơn trung bình là mùa lũ, các tháng nhỏ hơn là mùa cạn.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Vì sao các tháng có lưu lượng lớn hơn trung bình tháng được xem là mùa lũ?",
+        "options": [
+          "Vì lượng nước sông vượt mức bình quân, mực nước dâng cao hơn bình thường",
+          "Vì nhiệt độ cao nhất",
+          "Vì không có mưa",
+          "Vì sông bị khô cạn"
+        ],
+        "answer": 0,
+        "explain": "Lưu lượng vượt mức trung bình cho thấy lượng nước đang nhiều hơn bình thường, mực nước thường dâng cao."
+      }
     },
     {
       "type": "card",
@@ -51,7 +62,18 @@
         "Tổng 12 tháng ÷ 12 = trung bình tháng.",
         "Tháng trên trung bình là mùa lũ, tháng dưới trung bình là mùa cạn."
       ],
-      "n": 5
+      "n": 5,
+      "try": {
+        "q": "Muốn tìm lưu lượng trung bình tháng của sông Hồng, cần làm gì?",
+        "options": [
+          "Lấy tổng lưu lượng 12 tháng chia cho 12",
+          "Lấy lưu lượng tháng lớn nhất",
+          "Nhân 12 với lưu lượng tháng nhỏ nhất",
+          "Cộng hai tháng liên tiếp"
+        ],
+        "answer": 0,
+        "explain": "Lưu lượng trung bình tháng bằng tổng lưu lượng 12 tháng chia cho 12."
+      }
     }
   ],
   "examples": [

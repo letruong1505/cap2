@@ -34,7 +34,18 @@
         "Đổ nước ngập dây đốt và đầu đo nhiệt độ; mắc đúng joulemeter; chọn đại lượng đo là năng lượng; khuấy liên tục;",
         "Đọc nhiệt độ đầu t₁; bật nguồn, đọc năng lượng khi nhiệt độ tăng thêm 3 °C, 6 °C, 9 °C; lặp lại với lượng nước nhiều hơn."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Dụng cụ đo năng lượng điện do nguồn cung cấp trong thí nghiệm là:",
+        "options": [
+          "Ampe kế",
+          "Joulemeter",
+          "Vôn kế",
+          "Nhiệt kế"
+        ],
+        "answer": 1,
+        "explain": "Joulemeter đo năng lượng, công suất, điện áp, dòng điện."
+      }
     },
     {
       "type": "card",
@@ -61,7 +72,18 @@
         "Muốn đun sôi nước từ t₁ thì Q = m·c·(100 − t₁).",
         "Có thể dùng kết quả này để ước lượng năng lượng điện cần cung cấp."
       ],
-      "n": 5
+      "n": 5,
+      "try": {
+        "q": "Nhiệt dung riêng của nước có giá trị khoảng:",
+        "options": [
+          "4 180 J/(kg·K)",
+          "418 J/(kg·K)",
+          "41 800 J/(kg·K)",
+          "1 J/(kg·K)"
+        ],
+        "answer": 0,
+        "explain": "c nước = 4 180 J/(kg·K)."
+      }
     }
   ],
   "examples": [

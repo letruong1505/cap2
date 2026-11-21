@@ -33,7 +33,18 @@
       "type": "card",
       "title": "Trong hai số tự nhiên khác nhau, có một số nhỏ hơn số kia",
       "text": "Nếu a < b và b < c thì a < c (tính chất bắc cầu).",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Số liền sau của 999 là:",
+        "options": [
+          "1 000",
+          "998",
+          "9 999",
+          "990"
+        ],
+        "answer": 0,
+        "explain": "Số liền sau của a là a + 1."
+      }
     },
     {
       "type": "card",
@@ -48,7 +59,18 @@
       "type": "card",
       "title": "A ≤ b nghĩa là a <…",
       "text": "A ≤ b nghĩa là a < b hoặc a = b; a ≥ b nghĩa là a > b hoặc a = b.",
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Số tự nhiên nhỏ nhất là:",
+        "options": [
+          "1",
+          "Không có",
+          "10",
+          "0"
+        ],
+        "answer": 3,
+        "explain": "ℕ bắt đầu từ 0."
+      }
     }
   ],
   "examples": [

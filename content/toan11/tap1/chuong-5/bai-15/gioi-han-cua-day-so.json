@@ -29,7 +29,18 @@
       "formulas": [
         "lim 1/nᵏ = 0 (k nguyên dương);  lim c = c;  lim qⁿ = 0 nếu |q| < 1;  lim nᵏ = +∞;  lim qⁿ = +∞ nếu q > 1.",
         "Nếu lim uₙ = a, lim vₙ = b thì lim(uₙ ± vₙ) = a ± b, lim(uₙvₙ) = ab, lim(uₙ/vₙ) = a/b (b ≠ 0), lim √uₙ = √a (uₙ ≥ 0, a ≥ 0)."
-      ]
+      ],
+      "try": {
+        "q": "Giới hạn lim n² bằng:",
+        "options": [
+          "+∞",
+          "0",
+          "1",
+          "−∞"
+        ],
+        "answer": 0,
+        "explain": "nᵏ → +∞ với k nguyên dương."
+      }
     },
     {
       "type": "figure",

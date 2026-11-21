@@ -12,7 +12,7 @@
 
   const DEFAULT_PASS = 80; // ngưỡng đạt mặc định: dưới 80% câu đúng thì báo không đạt
   const DEFAULT_GOALS = { daily: 50, weekend: 80, weekly: 5, pass: DEFAULT_PASS, passBy: {} }; // T2–T6: 50 câu/ngày; T7, CN: 80 câu/ngày; 5 ngày học/tuần
-  function empty() { return { attempts: [], notebook: [], reviews: [], goals: Object.assign({}, DEFAULT_GOALS, { passBy: {} }) }; }
+  function empty() { return { attempts: [], notebook: [], reviews: [], goals: Object.assign({}, DEFAULT_GOALS, { passBy: {} }), reward: cleanReward({}) }; }
 
   /* Điểm thang 10 của một bài (làm tròn 1 chữ số). */
   function score10(correct, total) { return total ? Math.round((correct / total) * 100) / 10 : 0; }
@@ -32,6 +32,52 @@
     };
     return data;
   }
+  /* Phần thưởng chuỗi ngày: học đủ `days` ngày liên tiếp, mỗi ngày đạt từ `pct`% câu đúng thì phụ huynh trao `text`.
+     since = ngày (YYYY-MM-DD) phụ huynh trao thưởng gần nhất; chỉ tính các ngày sau mốc đó. given = lịch sử trao. */
+  const DAY_RE = /^\d{4}-\d{2}-\d{2}$/;
+  function cleanReward(r) {
+    r = r && typeof r === 'object' ? r : {};
+    return {
+      on: r.on === true,
+      days: clampInt(r.days, 1, 60, 7),
+      pct: clampInt(r.pct, 10, 100, 70),
+      text: String(r.text || '').replace(/\s+/g, ' ').trim().slice(0, 80),
+      since: DAY_RE.test(String(r.since || '')) ? String(r.since) : '',
+      given: (Array.isArray(r.given) ? r.given : []).slice(-30).filter((x) => x && DAY_RE.test(String(x.day))).map((x) => ({ day: String(x.day), text: String(x.text || '').slice(0, 80), days: clampInt(x.days, 1, 60, 7) })),
+    };
+  }
+  function setReward(data, r) { data.reward = cleanReward(Object.assign({}, data.reward, r)); return data; }
+  function isoLocal(t) { const d = new Date(t); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
+  /* Chuỗi ngày đạt tính đến hôm nay. Ngày đạt: có làm bài và tổng số câu đúng ≥ pct% (gộp mọi môn, mọi lớp).
+     Hôm nay chưa đạt thì chưa làm đứt chuỗi (còn cả ngày để học); ngày trước đó không đạt thì chuỗi về 0. */
+  function streak(data, now) {
+    now = now || Date.now();
+    const r = cleanReward(data.reward);
+    const byDay = {};
+    (data.attempts || []).forEach((a) => { const k = isoLocal(a.t); const x = byDay[k] || (byDay[k] = { c: 0, n: 0 }); x.c += a.correct; x.n += a.total; });
+    const ok = (k) => { const x = byDay[k]; return !!x && x.n > 0 && (100 * x.c) / x.n >= r.pct; };
+    const todayKey = isoLocal(now);
+    let count = 0; let t = startOfDay(now);
+    const todayOk = ok(todayKey);
+    if (!todayOk) t -= DAY;
+    for (let i = 0; i < 400; i++, t -= DAY) {
+      const k = isoLocal(t);
+      if (r.since && k <= r.since) break;
+      if (!ok(k)) break;
+      count++;
+    }
+    return { count, need: r.days, achieved: r.on && count >= r.days, todayOk, pct: r.pct, text: r.text, on: r.on };
+  }
+  /* Phụ huynh bấm "Đã trao": ghi lịch sử và bắt đầu chuỗi mới từ hôm nay (hôm nay không tính nữa). */
+  function giveReward(data, now) {
+    now = now || Date.now();
+    const r = cleanReward(data.reward);
+    r.given = r.given.concat({ day: isoLocal(now), text: r.text, days: r.days }).slice(-30);
+    r.since = isoLocal(now);
+    data.reward = r;
+    return data;
+  }
+
   /* Ngưỡng riêng từng môn: { mã môn: % }, chỉ giữ giá trị hợp lệ. */
   function cleanPassBy(o) {
     const out = {};
@@ -65,6 +111,7 @@
         notebook: Array.isArray(d.notebook) ? d.notebook : [],
         reviews: Array.isArray(d.reviews) ? d.reviews : [],
         goals: setGoals({}, d.goals || {}).goals,
+        reward: cleanReward(d.reward),
       };
     } catch (e) { return empty(); }
   }
@@ -238,5 +285,5 @@
     };
   }
 
-  return { KEY, INTERVALS, DEFAULT_GOALS, DEFAULT_PASS, goalFor, passFor, markPass, cleanPassBy, score10, points, setGoals, progress, report, load, save, recordAttempt, grade, due, weekly, slimItem };
+  return { KEY, INTERVALS, DEFAULT_GOALS, DEFAULT_PASS, goalFor, passFor, markPass, cleanPassBy, score10, points, setGoals, cleanReward, setReward, streak, giveReward, progress, report, load, save, recordAttempt, grade, due, weekly, slimItem };
 });

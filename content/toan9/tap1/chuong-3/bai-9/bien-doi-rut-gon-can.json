@@ -29,7 +29,18 @@
       "type": "card",
       "title": "Đưa thừa số vào trong dấu căn",
       "text": "A√b = √(a²b) với a ≥ 0; a√b = −√(a²b) với a < 0.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "√(50) bằng:",
+        "options": [
+          "5√2",
+          "2√5",
+          "25√2",
+          "10√5"
+        ],
+        "answer": 0,
+        "explain": "√(25·2) = 5√2."
+      }
     },
     {
       "type": "card",
@@ -44,7 +55,18 @@
       "type": "card",
       "title": "Rút gọn",
       "text": "Đưa về các căn đồng dạng rồi cộng, trừ; ví dụ √12 + √27 = 2√3 + 3√3 = 5√3.",
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Trục căn thức ở mẫu 1/√2 được:",
+        "options": [
+          "√2",
+          "2/√2",
+          "1/2",
+          "√2/2"
+        ],
+        "answer": 3,
+        "explain": "Nhân tử và mẫu với √2."
+      }
     },
     {
       "type": "method",

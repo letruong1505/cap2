@@ -44,7 +44,18 @@
         "Đưa ra chứng cứ;",
         "Được khôi phục quyền, lợi ích và bồi thường thiệt hại; khiếu nại lần hai hoặc khởi kiện hành chính; rút khiếu nại."
       ],
-      "n": 3
+      "n": 3,
+      "try": {
+        "q": "Khiếu nại là gì?",
+        "options": [
+          "việc đề nghị cơ quan có thẩm quyền xem xét lại quyết định hoặc hành vi trái pháp luật",
+          "việc báo cho cơ quan biết về hành vi vi phạm của người khác",
+          "việc góp ý cho luật mới",
+          "việc xin cấp giấy phép kinh doanh"
+        ],
+        "answer": 0,
+        "explain": "Khiếu nại là đề nghị xem xét lại quyết định hoặc hành vi hành chính."
+      }
     },
     {
       "type": "card",
@@ -74,7 +85,18 @@
       "type": "card",
       "title": "Hậu quả của vi phạm",
       "text": "Cản trở việc khiếu nại, tố cáo hoặc trả thù người khiếu nại, tố cáo có thể bị phạt tù theo Điều 166 Bộ luật Hình sự năm 2015; cung cấp thông tin sai sự thật làm ảnh hưởng đến uy tín cơ quan, cán bộ và trật tự xã hội.",
-      "n": 7
+      "n": 7,
+      "try": {
+        "q": "Tố cáo là việc báo cho cơ quan có thẩm quyền biết về điều gì?",
+        "options": [
+          "hành vi vi phạm pháp luật gây thiệt hại đến lợi ích Nhà nước hoặc người khác",
+          "quyết định hành chính bị cho là sai",
+          "ý kiến đóng góp cho dự thảo luật",
+          "thông tin quảng cáo sản phẩm"
+        ],
+        "answer": 0,
+        "explain": "Tố cáo là báo về hành vi vi phạm pháp luật."
+      }
     }
   ],
   "examples": [],

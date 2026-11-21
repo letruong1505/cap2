@@ -36,7 +36,18 @@
       "formulas": [
         "s = v · t",
         "t = s / v"
-      ]
+      ],
+      "try": {
+        "q": "Công thức tính tốc độ của chuyển động là:",
+        "options": [
+          "v = s · t",
+          "v = s / t",
+          "v = t / s",
+          "v = s + t"
+        ],
+        "answer": 1,
+        "explain": "Tốc độ bằng quãng đường đi được chia cho thời gian đi quãng đường đó: v = s / t."
+      }
     },
     {
       "type": "card",

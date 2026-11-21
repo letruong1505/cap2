@@ -29,7 +29,18 @@
       "formulas": [
         "Số hạng tổng quát: uₙ = u₁ + (n − 1)d.   Ba số a, b, c (theo thứ tự) lập cấp số cộng ⇔ a + c = 2b.",
         "Tổng n số hạng đầu: Sₙ = n(u₁ + uₙ)/2 = n[2u₁ + (n − 1)d]/2."
-      ]
+      ],
+      "try": {
+        "q": "Dãy số nào là cấp số cộng?",
+        "options": [
+          "1; 4; 7; 10; 13",
+          "1; 2; 4; 8; 16",
+          "2; 4; 8; 10",
+          "1; −1; 1; −1"
+        ],
+        "answer": 0,
+        "explain": "Hiệu hai số hạng liên tiếp luôn bằng 3."
+      }
     },
     {
       "type": "figure",
