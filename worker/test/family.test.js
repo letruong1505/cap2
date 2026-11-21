@@ -22,7 +22,7 @@ async function setup() {
   const { fcode } = await createFamily(db, { machineId: PARENT, phone: '0912 345 678' }, NOW);
   return { db, env, fcode };
 }
-async function buy(db, env, fcode, ids = ['tu-duy-lap-trinh']) {
+async function buy(db, env, fcode, ids = ['tu-duy-lap-trinh-python']) {
   const o = await createOrder(db, catalog, { name: 'Phụ huynh', phone: '0912345678', ids, terms: T, machineId: PARENT, family: fcode }, NOW, rand);
   await applyPayment(db, env, catalog, { id: ++txn, amount: o.amount, content: 'NL ' + o.code }, NOW);
   return o.code;
@@ -43,7 +43,7 @@ test('đơn gia đình không chiếm chỗ máy của phụ huynh; con nhận k
   const pc = await syncFamily(db, env, catalog, { fcode, machineId: PC, platform: 'win' }, NOW);
   assert.equal(pc.keys.length, 1);
   assert.equal(machineOf(pc.keys[0].key), PC);
-  assert.ok(coursesOf(pc.keys[0].key).includes('tu-duy-lap-trinh'));
+  assert.ok(coursesOf(pc.keys[0].key).includes('tu-duy-lap-trinh-python'));
   const ph = await syncFamily(db, env, catalog, { fcode, machineId: PHONE, platform: 'android' }, NOW);
   assert.equal(machineOf(ph.keys[0].key), PHONE);
   // đồng bộ lại: cùng khóa
@@ -70,7 +70,7 @@ test('máy của con tự nhận thêm khóa của đơn mua sau', async () => {
 
 test('đơn chưa thanh toán không có khóa; mã gia đình sai bị chặn và giới hạn thử', async () => {
   const { db, env, fcode } = await setup();
-  await createOrder(db, catalog, { name: 'Phụ huynh', phone: '0912345678', ids: ['tu-duy-lap-trinh'], terms: T, machineId: PARENT, family: fcode }, NOW, rand);
+  await createOrder(db, catalog, { name: 'Phụ huynh', phone: '0912345678', ids: ['tu-duy-lap-trinh-python'], terms: T, machineId: PARENT, family: fcode }, NOW, rand);
   assert.equal((await syncFamily(db, env, catalog, { fcode, machineId: PC, platform: 'win' }, NOW)).keys.length, 0);
   for (let i = 0; i < 5; i++) await assert.rejects(syncFamily(db, env, catalog, { fcode: 'ZZZZZZZZ', machineId: PC2, platform: 'win' }, NOW), (e) => e.status === 404);
   await assert.rejects(syncFamily(db, env, catalog, { fcode, machineId: PC2, platform: 'win' }, NOW), (e) => e.status === 429);
@@ -78,6 +78,6 @@ test('đơn chưa thanh toán không có khóa; mã gia đình sai bị chặn v
 
 test('mã gia đình của người khác (máy hoặc số điện thoại không khớp) không tạo được đơn', async () => {
   const { db, fcode } = await setup();
-  await assert.rejects(createOrder(db, catalog, { name: 'Kẻ lạ', phone: '0999999999', ids: ['tu-duy-lap-trinh'], terms: T, machineId: PARENT, family: fcode }, NOW, rand), (e) => e.status === 404);
-  await assert.rejects(createOrder(db, catalog, { name: 'Kẻ lạ', phone: '0912345678', ids: ['tu-duy-lap-trinh'], terms: T, machineId: 'CCCC-1111-2222', family: fcode }, NOW, rand), (e) => e.status === 404);
+  await assert.rejects(createOrder(db, catalog, { name: 'Kẻ lạ', phone: '0999999999', ids: ['tu-duy-lap-trinh-python'], terms: T, machineId: PARENT, family: fcode }, NOW, rand), (e) => e.status === 404);
+  await assert.rejects(createOrder(db, catalog, { name: 'Kẻ lạ', phone: '0912345678', ids: ['tu-duy-lap-trinh-python'], terms: T, machineId: 'CCCC-1111-2222', family: fcode }, NOW, rand), (e) => e.status === 404);
 });

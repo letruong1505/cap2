@@ -1,7 +1,10 @@
 ## Bản mới
-- App Phụ huynh: sửa nút "Xem nội dung chi tiết" và "Mua khóa học" không bấm được; khóa dành cho người đi làm ghi "Mua khóa học"
+- Tư duy & lập trình tách thành 2 khóa bán riêng, mỗi khóa 1.490.000 đ: Scratch (8–11 tuổi) và Python (12–18 tuổi); khách đã mua khóa chung trước đây vẫn mở được cả hai
+- Python 12–18: mục lục mới 8 chương; thêm bài giới thiệu khóa học và vì sao chọn Python, Chương 1 (Python là gì và cài đặt, chương trình đầu tiên, ghi chú và đọc lỗi, tóm tắt chương) với phần giải nghĩa từng phần của câu lệnh (nếu thiếu hoặc sai thì sao); các bài còn lại hiện "Sắp ra mắt" và được thêm dần
+- Android: bản này yêu cầu cài apk mới
 
 ## Các bản trước
+- App Phụ huynh: sửa nút "Xem nội dung chi tiết" và "Mua khóa học" không bấm được; khóa dành cho người đi làm ghi "Mua khóa học"
 - Phụ huynh mua khóa học cho con ngay trên app Phụ huynh (quét QR); khóa tự về máy tính và điện thoại của con khi mở app có mạng, con chỉ nhập "mã gia đình" một lần ở phần bản quyền
 - App Phụ huynh: xem tóm tắt từng bài Giáo trình văn hóa lớp 6–12 (kiến thức cần nhớ, dạng bài, các bước giải, lỗi dễ mắc) và nội dung khóa Tư duy & lập trình
 - Android: bản này yêu cầu cài apk mới
