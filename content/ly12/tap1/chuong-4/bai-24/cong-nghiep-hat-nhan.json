@@ -10,12 +10,39 @@
   "bookPage": 114,
   "theory": [
     {
-      "type": "text",
-      "content": "Năng lượng toả ra trong phản ứng hạt nhân được chuyển thành điện năng nhờ lò phản ứng hạt nhân, tua bin và máy phát điện. Nhà máy điện hạt nhân không trực tiếp thải CO₂ và có thể hoạt động nhiều năm mà không cần thay nhiên liệu liên tục, nhưng việc xử lí chất thải phóng xạ đòi hỏi công nghệ phức tạp và chi phí cao."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Nhà máy điện hạt nhân: lò phản ứng → tua bin → máy phát; thanh điều khiển giữ hệ số nhân {k k = 1}. Ứng dụng trong y học, sinh học, bảo quản thực phẩm. An toàn: giữ {k khoảng cách}, dùng {k tấm chắn}, giảm {k thời gian}; D_hd = D·W (Sv)."
     },
     {
-      "type": "text",
-      "content": "Trong lò phản ứng, các thanh điều khiển chứa bo hoặc cadimi hấp thụ neutron để giữ hệ số nhân k = 1, giúp năng lượng toả ra không đổi theo thời gian. Năm 1942, Fermi và cộng sự lần đầu duy trì được phản ứng phân hạch dây chuyền có điều khiển."
+      "type": "card",
+      "title": "Điện hạt nhân",
+      "points": [
+        "Năng lượng phản ứng hạt nhân chuyển thành điện nhờ lò phản ứng, tua bin và máy phát.",
+        "Ưu điểm: không trực tiếp thải CO₂; hoạt động nhiều năm không cần thay nhiên liệu liên tục.",
+        "Nhược điểm: xử lí chất thải phóng xạ phức tạp, tốn kém."
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Lò phản ứng",
+      "points": [
+        "Thanh điều khiển chứa bo hoặc cadimi hấp thụ neutron để giữ hệ số nhân {k k = 1}.",
+        "Năng lượng toả ra không đổi theo thời gian.",
+        "Năm 1942, Fermi và cộng sự lần đầu duy trì phản ứng phân hạch dây chuyền có điều khiển."
+      ],
+      "try": {
+        "q": "Thanh điều khiển trong lò phản ứng có tác dụng:",
+        "options": [
+          "Hấp thụ neutron để giữ k = 1",
+          "Tăng số neutron",
+          "Làm mát lò"
+        ],
+        "answer": 0,
+        "explain": "Bo hoặc cadimi hấp thụ neutron, giữ phản ứng dây chuyền ổn định ở k = 1."
+      },
+      "n": 2
     },
     {
       "type": "figure",
@@ -23,16 +50,46 @@
       "caption": "Lò phản ứng, tua bin và máy phát điện trong nhà máy điện hạt nhân."
     },
     {
-      "type": "text",
-      "content": "Trong y học, người ta đưa dược chất phóng xạ vào cơ thể để chụp ảnh cắt lớp (PET, SPECT) nhờ theo dõi vết phóng xạ. Tia phóng xạ cũng được dùng để điều trị ung thư và khử trùng."
+      "type": "card",
+      "title": "Y học và sinh học",
+      "points": [
+        "Dược chất phóng xạ để chụp ảnh cắt lớp (PET, SPECT).",
+        "Tia phóng xạ điều trị ung thư và khử trùng.",
+        "Đồng vị phóng xạ làm chất đánh dấu; tia phóng xạ diệt vi khuẩn, kéo dài hạn dùng thực phẩm."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Trong công nghệ sinh học và bảo quản thực phẩm, đồng vị phóng xạ được dùng làm chất đánh dấu, còn tia phóng xạ được dùng để diệt vi khuẩn và kéo dài thời hạn sử dụng thực phẩm."
+      "type": "card",
+      "title": "An toàn phóng xạ",
+      "points": [
+        "Giữ khoảng cách đủ xa nguồn.",
+        "Dùng tấm chắn đủ tốt.",
+        "Giảm thiểu thời gian phơi nhiễm."
+      ],
+      "n": 4
     },
     {
-      "type": "text",
-      "content": "Nguyên tắc an toàn phóng xạ: giữ khoảng cách đủ xa nguồn; dùng tấm chắn đủ tốt; giảm thiểu thời gian phơi nhiễm. Liều hiệu dụng: D_hd = D·W, với D là liều hấp thụ (Gy), W là trọng số bức xạ; đơn vị liều hiệu dụng là sievert (Sv). W = 1 với tia β, γ và W = 20 với tia α."
+      "type": "card",
+      "title": "Liều hiệu dụng",
+      "formulas": [
+        "{k D_hd = D·W}"
+      ],
+      "points": [
+        "D: liều hấp thụ (Gy); W: trọng số bức xạ; D_hd tính bằng sievert (Sv).",
+        "W = 1 với tia β, γ; W = 20 với tia α."
+      ],
+      "try": {
+        "q": "Liều hấp thụ 0,1 Gy do tia α (W = 20) cho liều hiệu dụng:",
+        "options": [
+          "2 Sv",
+          "0,1 Sv",
+          "20 Sv"
+        ],
+        "answer": 0,
+        "explain": "D_hd = 0,1·20 = 2 Sv."
+      },
+      "n": 5
     }
   ],
   "examples": [

@@ -10,20 +10,60 @@
   "bookPage": 56,
   "theory": [
     {
-      "type": "text",
-      "content": "Tương tác giữa nam châm với nam châm, giữa dòng điện với nam châm và giữa dòng điện với dòng điện đều là tương tác từ; lực tương tác gọi là lực từ. Thí nghiệm của Oersted cho thấy dòng điện làm lệch kim nam châm."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Từ trường do dòng điện hoặc nam châm gây ra, tác dụng {k lực từ}. Cảm ứng từ {k B} là vectơ đặc trưng cho từ trường. Đường sức từ là đường cong {k khép kín}, chỗ mạnh vẽ dày hơn. Chiều đường sức của dòng điện thẳng: quy tắc {k nắm bàn tay phải}."
     },
     {
-      "type": "text",
-      "content": "Từ trường là trường lực gây ra bởi dòng điện hoặc nam châm. Tính chất cơ bản của từ trường là gây ra lực từ tác dụng lên một nam châm hay một dòng điện đặt trong nó. Người ta dùng kim nam châm thử để phát hiện từ trường."
+      "type": "card",
+      "title": "Tương tác từ",
+      "points": [
+        "Nam châm với nam châm, dòng điện với nam châm, dòng điện với dòng điện đều có {k tương tác từ}; lực tương tác gọi là {k lực từ}.",
+        "Thí nghiệm của Oersted: dòng điện làm lệch kim nam châm."
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Cảm ứng từ B là đại lượng vectơ đặc trưng cho từ trường về mặt tác dụng lực. Phương của B là phương của nam châm thử cân bằng tại điểm đó; chiều của B là chiều từ cực Nam đến cực Bắc của nam châm thử. Từ trường đều có B tại mọi điểm đều bằng nhau."
+      "type": "card",
+      "title": "Từ trường",
+      "points": [
+        "Trường lực gây ra bởi dòng điện hoặc nam châm.",
+        "Tính chất cơ bản: gây ra lực từ tác dụng lên nam châm hoặc dòng điện đặt trong nó.",
+        "Dùng kim nam châm thử để phát hiện từ trường."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Đường sức từ là đường vẽ trong không gian có từ trường sao cho tiếp tuyến tại mỗi điểm trùng với phương của B. Tại mỗi điểm chỉ vẽ được một đường sức từ; các đường sức là đường cong khép kín; nơi từ trường mạnh thì đường sức vẽ dày hơn."
+      "type": "card",
+      "title": "Cảm ứng từ B",
+      "text": "Là đại lượng vectơ đặc trưng cho từ trường về mặt tác dụng lực.",
+      "points": [
+        "{k Phương} của B: phương của nam châm thử cân bằng tại điểm đó.",
+        "{k Chiều} của B: từ cực Nam đến cực Bắc của nam châm thử.",
+        "Từ trường đều: B tại mọi điểm đều bằng nhau."
+      ],
+      "n": 3
+    },
+    {
+      "type": "card",
+      "title": "Đường sức từ",
+      "text": "Đường vẽ trong từ trường sao cho tiếp tuyến tại mỗi điểm trùng với phương của B.",
+      "points": [
+        "Tại mỗi điểm chỉ vẽ được {k một} đường sức từ.",
+        "Là các đường cong {k khép kín}.",
+        "Nơi từ trường mạnh thì đường sức vẽ {k dày} hơn."
+      ],
+      "try": {
+        "q": "Tại mỗi điểm trong từ trường, vẽ được bao nhiêu đường sức từ đi qua?",
+        "options": [
+          "Một",
+          "Hai",
+          "Vô số"
+        ],
+        "answer": 0,
+        "explain": "Mỗi điểm chỉ có một đường sức từ (tiếp tuyến cho phương của B)."
+      },
+      "n": 4
     },
     {
       "type": "figure",
@@ -31,8 +71,15 @@
       "caption": "Đường sức từ là đường cong khép kín, mật độ dày hơn ở gần hai cực."
     },
     {
-      "type": "text",
-      "content": "Chiều đường sức từ của dòng điện thẳng xác định bằng quy tắc nắm bàn tay phải: ngón cái hướng theo chiều dòng điện, bốn ngón khum lại chỉ chiều đường sức."
+      "type": "card",
+      "title": "Quy tắc nắm bàn tay phải",
+      "text": "Xác định chiều đường sức từ của dòng điện thẳng:",
+      "points": [
+        "Ngón cái hướng theo {k chiều dòng điện}.",
+        "Bốn ngón tay khum lại chỉ {k chiều đường sức từ}."
+      ],
+      "tip": "Bàn tay phải: ngón cái là dòng điện, bốn ngón là đường sức.",
+      "n": 5
     },
     {
       "type": "figure",

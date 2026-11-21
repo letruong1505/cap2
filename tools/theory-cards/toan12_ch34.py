@@ -1,6 +1,7 @@
-from lib import card, build
+from lib import card, build, use
 
 def run():
+    use('toan12')
     build('tap1/chuong-3/bai-9/khoang-bien-thien-tu-phan-vi',
       "Khoảng biến thiên R = a_{k+1} − a₁ (đầu mút phải nhóm cuối trừ đầu mút trái nhóm đầu). Khoảng tứ phân vị Δ_Q = Q₃ − Q₁ {k không bị ảnh hưởng} bởi giá trị bất thường. Với mẫu ghép nhóm, các giá trị này chỉ là {k xấp xỉ}.",
       [

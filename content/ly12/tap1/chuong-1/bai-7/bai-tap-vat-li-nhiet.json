@@ -10,16 +10,59 @@
   "bookPage": 30,
   "theory": [
     {
-      "type": "text",
-      "content": "Các bài tập vật lí nhiệt dùng ba nội dung chính: cấu trúc chất và sự chuyển thể; định luật I của nhiệt động lực học; nhiệt dung riêng, nhiệt nóng chảy riêng và nhiệt hoá hơi riêng."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Bốn công thức: ΔU = A + Q; Q = m·c·ΔT; Q = λ·m; Q = L·m. Khi các vật chỉ trao đổi nhiệt với nhau: {k Q_toả = Q_thu}. Chia bài làm giai đoạn: đổi nhiệt độ dùng c, đổi thể dùng λ hoặc L."
     },
     {
-      "type": "formula",
-      "content": "ΔU = A + Q;  Q = m·c·ΔT;  Q = λ·m;  Q = L·m"
+      "type": "card",
+      "title": "Công thức cần nhớ",
+      "table": {
+        "head": [
+          "Công thức",
+          "Dùng khi"
+        ],
+        "rows": [
+          [
+            "ΔU = A + Q",
+            "Nội năng thay đổi do công và truyền nhiệt"
+          ],
+          [
+            "Q = m·c·ΔT",
+            "Vật nóng lên hoặc nguội đi (không đổi thể)"
+          ],
+          [
+            "Q = λ·m",
+            "Nóng chảy hoặc đông đặc (nhiệt độ không đổi)"
+          ],
+          [
+            "Q = L·m",
+            "Hoá hơi hoặc ngưng tụ (nhiệt độ không đổi)"
+          ]
+        ]
+      },
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Khi các vật chỉ truyền nhiệt cho nhau, không truyền nhiệt ra ngoài, thì nhiệt lượng toả ra bằng nhiệt lượng thu vào: Q_toả = Q_thu."
+      "type": "card",
+      "title": "Phương trình cân bằng nhiệt",
+      "text": "Khi các vật chỉ truyền nhiệt cho nhau, không truyền ra ngoài:",
+      "formulas": [
+        "{k Q_toả = Q_thu}"
+      ],
+      "wrong": "Dùng cân bằng nhiệt cả khi có nhiệt mất ra môi trường.",
+      "right": "Phải chắc hệ {k cô lập về nhiệt}; nếu có mất nhiệt thì Q_toả > Q_thu.",
+      "try": {
+        "q": "Trộn 1 kg nước 80 °C với 1 kg nước 20 °C (không mất nhiệt). Nhiệt độ cân bằng là:",
+        "options": [
+          "50 °C",
+          "60 °C",
+          "40 °C"
+        ],
+        "answer": 0,
+        "explain": "Cùng khối lượng và c nên nhiệt độ cân bằng là trung bình: (80 + 20)/2 = 50 °C."
+      },
+      "n": 2
     },
     {
       "type": "figure",
@@ -27,8 +70,14 @@
       "caption": "Nhiệt lượng toả ra của nước nóng bằng nhiệt lượng thu vào của nước lạnh."
     },
     {
-      "type": "text",
-      "content": "Khi nội năng thay đổi đồng thời do thực hiện công và truyền nhiệt, cần dùng công thức ΔU = A + Q cùng các công thức công cơ học đã học."
+      "type": "card",
+      "title": "Khi có cả công và nhiệt",
+      "points": [
+        "Nội năng thay đổi đồng thời do thực hiện công và truyền nhiệt: dùng {k ΔU = A + Q}.",
+        "Kết hợp với các công thức công cơ học đã học để tính A."
+      ],
+      "tip": "Với bài nhiều giai đoạn (ví dụ nước đá thành hơi): tính riêng từng giai đoạn rồi cộng các Q.",
+      "n": 3
     }
   ],
   "examples": [

@@ -10,20 +10,51 @@
   "bookPage": 34,
   "theory": [
     {
-      "type": "text",
-      "content": "Chuyển động Brown cũng xảy ra trong chất khí, cho thấy các phân tử khí chuyển động hỗn loạn, không ngừng. Khi nhiệt độ khí tăng, các hạt khói chuyển động nhanh hơn."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Mô hình động học phân tử chất khí: phân tử {k rất nhỏ} so với khoảng cách giữa chúng; chuyển động {k hỗn loạn không ngừng}; va chạm với thành bình gây {k áp suất}. Khí lí tưởng: phân tử là chất điểm, va chạm hoàn toàn đàn hồi."
     },
     {
-      "type": "text",
-      "content": "Tốc độ của các phân tử khí có tính thống kê: trong một khối khí có phân tử nhanh hơn, chậm hơn hoặc bằng tốc độ trung bình, và tốc độ này chỉ có ý nghĩa khi có rất nhiều phân tử. Ở điều kiện chuẩn (0 °C, 1 atm), tốc độ trung bình của phân tử oxygen vào khoảng 400 m/s."
+      "type": "card",
+      "title": "Chuyển động Brown trong chất khí",
+      "points": [
+        "Chuyển động Brown cũng xảy ra trong chất khí: phân tử khí chuyển động hỗn loạn, không ngừng.",
+        "Khi nhiệt độ khí tăng, các hạt khói chuyển động nhanh hơn."
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Lực liên kết giữa các phân tử khí rất yếu so với chất lỏng và chất rắn, vì khoảng cách giữa các phân tử khí rất lớn."
+      "type": "card",
+      "title": "Tốc độ phân tử mang tính thống kê",
+      "points": [
+        "Trong khối khí có phân tử nhanh hơn, chậm hơn hoặc bằng tốc độ trung bình.",
+        "Tốc độ trung bình chỉ có ý nghĩa khi có {k rất nhiều} phân tử.",
+        "Ở điều kiện chuẩn (0 °C, 1 atm), tốc độ trung bình của phân tử oxygen khoảng {k 400 m/s}."
+      ],
+      "wrong": "Mọi phân tử khí có cùng một tốc độ.",
+      "right": "Các phân tử có tốc độ khác nhau; chỉ nói về tốc độ {k trung bình} của cả khối khí.",
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Mô hình động học phân tử chất khí gồm ba nội dung: (1) kích thước phân tử rất nhỏ so với khoảng cách giữa chúng; (2) các phân tử chuyển động hỗn loạn, không ngừng, nhiệt độ càng cao thì chuyển động càng nhanh; (3) các phân tử va chạm với nhau và với thành bình, khi va chạm với thành bình thì gây áp suất lên thành bình."
+      "type": "card",
+      "title": "Ba nội dung của mô hình",
+      "points": [
+        "{k (1)} Kích thước phân tử rất nhỏ so với khoảng cách giữa chúng.",
+        "{k (2)} Phân tử chuyển động hỗn loạn, không ngừng; nhiệt độ càng cao thì càng nhanh.",
+        "{k (3)} Phân tử va chạm với nhau và với thành bình; va chạm với thành bình gây ra {k áp suất}."
+      ],
+      "tip": "Lực liên kết giữa phân tử khí rất yếu vì khoảng cách giữa chúng rất lớn.",
+      "try": {
+        "q": "Áp suất của khí lên thành bình là do:",
+        "options": [
+          "Các phân tử va chạm với thành bình",
+          "Trọng lượng của khí",
+          "Các phân tử đứng yên"
+        ],
+        "answer": 0,
+        "explain": "Tổng các lực do phân tử va chạm lên một đơn vị diện tích thành bình chính là áp suất."
+      },
+      "n": 3
     },
     {
       "type": "figure",
@@ -31,8 +62,15 @@
       "caption": "Áp suất khí là tổng các lực do phân tử va chạm lên thành bình."
     },
     {
-      "type": "text",
-      "content": "Khí lí tưởng là mô hình đơn giản hóa: phân tử được coi là chất điểm, không tương tác khi chưa va chạm, và các va chạm là hoàn toàn đàn hồi. Mô hình này bỏ qua thể tích phân tử."
+      "type": "card",
+      "title": "Khí lí tưởng",
+      "points": [
+        "Là mô hình đơn giản hoá: phân tử là {k chất điểm}.",
+        "Không tương tác với nhau khi chưa va chạm.",
+        "Các va chạm là hoàn toàn {k đàn hồi}.",
+        "Bỏ qua thể tích của phân tử."
+      ],
+      "n": 4
     }
   ],
   "examples": [

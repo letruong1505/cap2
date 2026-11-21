@@ -10,12 +10,37 @@
   "bookPage": 78,
   "theory": [
     {
-      "type": "text",
-      "content": "Máy biến áp gồm hai cuộn dây có số vòng khác nhau quấn trên lõi kín. Hoạt động của máy biến áp dựa trên hiện tượng cảm ứng điện từ: dòng xoay chiều trong cuộn sơ cấp gây từ thông biến thiên qua cuộn thứ cấp."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Máy biến áp (hai cuộn trên lõi kín) hoạt động nhờ cảm ứng điện từ: {k U₁/U₂ = N₁/N₂}. Lõi ghép bằng lá thép silicon mỏng để giảm dòng {k Foucault}. Dòng Foucault được dùng trong bếp từ và phanh điện từ."
     },
     {
-      "type": "formula",
-      "content": "U₁/U₂ = N₁/N₂"
+      "type": "card",
+      "title": "Máy biến áp",
+      "points": [
+        "Gồm hai cuộn dây có số vòng khác nhau quấn trên lõi kín.",
+        "Dòng xoay chiều trong cuộn {k sơ cấp} gây từ thông biến thiên qua cuộn {k thứ cấp}."
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Công thức máy biến áp",
+      "formulas": [
+        "{k U₁/U₂ = N₁/N₂}"
+      ],
+      "tip": "N₂ > N₁: tăng áp. N₂ < N₁: hạ áp.",
+      "try": {
+        "q": "Cuộn sơ cấp 1000 vòng, thứ cấp 100 vòng, U₁ = 220 V. Điện áp thứ cấp U₂ bằng:",
+        "options": [
+          "22 V",
+          "2200 V",
+          "220 V"
+        ],
+        "answer": 0,
+        "explain": "U₂ = U₁·N₂/N₁ = 220·100/1000 = 22 V (máy hạ áp)."
+      },
+      "n": 2
     },
     {
       "type": "figure",
@@ -23,16 +48,31 @@
       "caption": "Cuộn sơ cấp nối nguồn xoay chiều, cuộn thứ cấp nối tải; hai cuộn quấn trên cùng lõi thép."
     },
     {
-      "type": "text",
-      "content": "Lõi biến áp được ghép từ các lá thép silicon mỏng, cách điện với nhau để giảm hao phí do dòng điện Foucault."
+      "type": "card",
+      "title": "Lõi biến áp",
+      "points": [
+        "Ghép từ các lá thép silicon mỏng, cách điện với nhau.",
+        "Mục đích: giảm hao phí do dòng điện {k Foucault}."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Đàn ghi ta điện dùng cuộn dây cảm ứng đặt dưới dây thép. Khi dây dao động, từ thông qua cuộn dây biến thiên và sinh ra dòng điện cảm ứng có cùng tần số với âm."
+      "type": "card",
+      "title": "Dòng điện Foucault",
+      "text": "Dòng điện cảm ứng xuất hiện trong khối vật dẫn chuyển động trong từ trường hoặc đặt trong từ trường biến thiên.",
+      "points": [
+        "Ứng dụng: {k bếp từ}, {k phanh điện từ}."
+      ],
+      "n": 4
     },
     {
-      "type": "text",
-      "content": "Dòng điện Foucault là dòng điện cảm ứng xuất hiện trong khối vật dẫn chuyển động trong từ trường hoặc đặt trong từ trường biến thiên. Dòng này được ứng dụng trong bếp từ và phanh điện từ."
+      "type": "card",
+      "title": "Đàn ghi ta điện",
+      "points": [
+        "Cuộn dây cảm ứng đặt dưới dây thép.",
+        "Khi dây dao động, từ thông qua cuộn dây biến thiên và sinh dòng cảm ứng có cùng tần số với âm."
+      ],
+      "n": 5
     }
   ],
   "examples": [

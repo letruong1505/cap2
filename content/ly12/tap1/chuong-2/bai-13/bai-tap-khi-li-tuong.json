@@ -10,12 +10,62 @@
   "bookPage": 52,
   "theory": [
     {
-      "type": "text",
-      "content": "Khi giải bài tập về khí lí tưởng, cần xác định lượng khí có thay đổi hay không, xác định trạng thái đầu, trạng thái cuối và quá trình chuyển trạng thái, rồi xác định các thông số p, V, T, m, n của từng trạng thái."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Giải bài khí lí tưởng: xác định lượng khí có đổi không, trạng thái đầu – cuối, quá trình; ghi p, V, T (đổi sang {k Kelvin}), n. Đẳng nhiệt: p₁V₁ = p₂V₂; đẳng áp: V₁/T₁ = V₂/T₂; đẳng tích: p₁/T₁ = p₂/T₂."
     },
     {
-      "type": "formula",
-      "content": "pV = nRT;  p₁V₁/T₁ = p₂V₂/T₂;  p₁V₁ = p₂V₂ (đẳng nhiệt);  V₁/T₁ = V₂/T₂ (đẳng áp);  p₁/T₁ = p₂/T₂ (đẳng tích)"
+      "type": "card",
+      "title": "Các bước giải",
+      "points": [
+        "Xác định lượng khí có thay đổi hay không.",
+        "Xác định trạng thái đầu, trạng thái cuối và quá trình chuyển trạng thái.",
+        "Xác định các thông số {k p, V, T, m, n} của từng trạng thái; đổi T sang Kelvin."
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Công thức theo từng quá trình",
+      "formulas": [
+        "Clapeyron:  {k pV = nRT}"
+      ],
+      "table": {
+        "head": [
+          "Quá trình",
+          "Giữ không đổi",
+          "Công thức",
+          "Đồ thị"
+        ],
+        "rows": [
+          [
+            "Đẳng nhiệt",
+            "T",
+            "p₁V₁ = p₂V₂",
+            "p–V: hypebol"
+          ],
+          [
+            "Đẳng áp",
+            "p",
+            "V₁/T₁ = V₂/T₂",
+            "V–T: đường thẳng qua gốc"
+          ],
+          [
+            "Đẳng tích",
+            "V",
+            "p₁/T₁ = p₂/T₂",
+            "p–T: đường thẳng qua gốc"
+          ],
+          [
+            "Bất kì",
+            "Lượng khí",
+            "p₁V₁/T₁ = p₂V₂/T₂",
+            ""
+          ]
+        ]
+      },
+      "tip": "Đồ thị đường thẳng qua gốc chỉ đúng khi T tính bằng K.",
+      "n": 2
     },
     {
       "type": "figure",
@@ -23,12 +73,31 @@
       "caption": "Tóm tắt: đẳng nhiệt p–V là hypebol, đẳng áp V–T và đẳng tích p–T là đường thẳng qua gốc (T tính bằng K)."
     },
     {
-      "type": "text",
-      "content": "Khi lượng khí thay đổi trong quá trình (ví dụ lấy bớt khí khỏi bình), dùng phương trình Clapeyron với số mol n thay đổi, hoặc so sánh khối lượng khí còn lại với khối lượng ban đầu."
+      "type": "card",
+      "title": "Khi lượng khí thay đổi",
+      "points": [
+        "Ví dụ lấy bớt khí khỏi bình: dùng phương trình Clapeyron với số mol n thay đổi.",
+        "Hoặc so sánh khối lượng khí còn lại với khối lượng ban đầu."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Ở điều kiện tiêu chuẩn, một mol khí có thể tích 22,4 lít, nên số mol khí bằng thể tích chia cho 22,4 lít."
+      "type": "card",
+      "title": "Tính số mol ở điều kiện tiêu chuẩn",
+      "formulas": [
+        "n = V / 22,4    (V tính bằng lít)"
+      ],
+      "try": {
+        "q": "44,8 lít khí ở điều kiện tiêu chuẩn có số mol là:",
+        "options": [
+          "2 mol",
+          "1 mol",
+          "4 mol"
+        ],
+        "answer": 0,
+        "explain": "n = 44,8/22,4 = 2 mol."
+      },
+      "n": 4
     }
   ],
   "examples": [

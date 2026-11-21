@@ -10,16 +10,69 @@
   "bookPage": 86,
   "theory": [
     {
-      "type": "text",
-      "content": "Phần từ trường gồm: mô tả từ trường; lực từ tác dụng lên đoạn dây dẫn thẳng mang dòng điện; cảm ứng điện từ; dòng điện xoay chiều; sóng điện từ."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Bốn công thức chính: F = B·I·L·sinα; Φ = B·S·cosα; E₀ = N·B·S·ω; U₁/U₂ = N₁/N₂. Bài định tính: xác định phương chiều của B, lực từ, dòng cảm ứng. Bài định lượng: chọn đúng công thức theo hiện tượng."
     },
     {
-      "type": "formula",
-      "content": "F = B·I·L·sinα;  Φ = B·S·cosα;  E₀ = N·B·S·ω;  U₁/U₂ = N₁/N₂"
+      "type": "card",
+      "title": "Phần từ trường gồm",
+      "points": [
+        "Mô tả từ trường.",
+        "Lực từ lên đoạn dây thẳng mang dòng điện.",
+        "Cảm ứng điện từ.",
+        "Dòng điện xoay chiều.",
+        "Sóng điện từ."
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Khi giải bài tập định tính, cần xác định phương chiều của B, lực từ và dòng điện cảm ứng; khi giải bài tập định lượng, cần chọn đúng công thức theo từng hiện tượng."
+      "type": "card",
+      "title": "Công thức theo hiện tượng",
+      "table": {
+        "head": [
+          "Hiện tượng",
+          "Công thức"
+        ],
+        "rows": [
+          [
+            "Lực từ",
+            "F = B·I·L·sinα"
+          ],
+          [
+            "Từ thông",
+            "Φ = B·S·cosα"
+          ],
+          [
+            "Suất điện động cực đại (máy phát)",
+            "E₀ = N·B·S·ω"
+          ],
+          [
+            "Máy biến áp",
+            "U₁/U₂ = N₁/N₂"
+          ]
+        ]
+      },
+      "try": {
+        "q": "Công thức nào tính lực từ lên đoạn dây dẫn thẳng mang dòng điện?",
+        "options": [
+          "F = B·I·L·sinα",
+          "Φ = B·S·cosα",
+          "U₁/U₂ = N₁/N₂"
+        ],
+        "answer": 0,
+        "explain": "Lực từ tính theo công thức Ampe F = B·I·L·sinα."
+      },
+      "n": 2
+    },
+    {
+      "type": "card",
+      "title": "Mẹo giải",
+      "points": [
+        "Bài {k định tính}: xác định phương và chiều của B, của lực từ và của dòng điện cảm ứng (quy tắc bàn tay, định luật Lenz).",
+        "Bài {k định lượng}: chọn đúng công thức theo từng hiện tượng, chú ý góc α của mỗi công thức."
+      ],
+      "n": 3
     }
   ],
   "examples": [

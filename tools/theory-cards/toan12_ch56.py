@@ -1,6 +1,7 @@
-from lib import card, build
+from lib import card, build, use
 
 def run():
+    use('toan12')
     build('tap2/chuong-5/bai-14/phuong-trinh-mat-phang',
       "Mặt phẳng đi qua M₀ có vectơ pháp tuyến n = (A; B; C): {k A(x − x₀) + B(y − y₀) + C(z − z₀) = 0}. Khoảng cách từ M₀ đến (P): d = |Ax₀ + By₀ + Cz₀ + D| / √(A² + B² + C²). Vuông góc: AA′ + BB′ + CC′ = 0.",
       [

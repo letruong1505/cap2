@@ -10,29 +10,82 @@
   "bookPage": 10,
   "theory": [
     {
-      "type": "text",
-      "content": "Nội năng U của một vật là tổng động năng và thế năng của các phân tử cấu tạo nên vật. Nội năng được đo bằng jun (J) và phụ thuộc vào nhiệt độ và thể tích của vật."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Nội năng U là tổng động năng và thế năng của các phân tử. Định luật I: {k ΔU = A + Q}. Quy ước dấu: nhận vào thì dương (Q > 0, A > 0), toả ra hoặc sinh công thì âm (Q < 0, A < 0)."
     },
     {
-      "type": "text",
-      "content": "Có hai cách làm thay đổi nội năng: thực hiện công và truyền nhiệt. Trong vật lí người ta thường quan tâm đến độ biến thiên nội năng ΔU hơn là giá trị tuyệt đối của U."
+      "type": "card",
+      "title": "Nội năng",
+      "points": [
+        "Nội năng U của vật là tổng {k động năng} và {k thế năng} của các phân tử cấu tạo nên vật.",
+        "Đơn vị: jun (J). Phụ thuộc vào nhiệt độ và thể tích của vật.",
+        "Thường quan tâm đến độ biến thiên nội năng ΔU hơn là giá trị tuyệt đối U."
+      ],
+      "n": 1
     },
     {
-      "type": "formula",
-      "content": "ΔU = A + Q"
+      "type": "card",
+      "title": "Hai cách làm thay đổi nội năng",
+      "points": [
+        "{k Thực hiện công} (A).",
+        "{k Truyền nhiệt} (Q)."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Quy ước dấu: Q > 0 khi vật nhận nhiệt lượng từ vật khác, Q < 0 khi vật truyền nhiệt lượng cho vật khác. A > 0 khi vật nhận công từ vật khác, A < 0 khi vật thực hiện công lên vật khác."
+      "type": "card",
+      "title": "Định luật I của nhiệt động lực học",
+      "formulas": [
+        "{k ΔU = A + Q}"
+      ],
+      "points": [
+        "Là sự vận dụng định luật bảo toàn năng lượng vào các quá trình thay đổi nội năng.",
+        "Nhiệt lượng là số đo phần năng lượng truyền từ vật này sang vật khác khi truyền nhiệt."
+      ],
+      "n": 3
+    },
+    {
+      "type": "card",
+      "title": "Quy ước dấu",
+      "table": {
+        "head": [
+          "Đại lượng",
+          "Dương (> 0)",
+          "Âm (< 0)"
+        ],
+        "rows": [
+          [
+            "Q",
+            "Vật nhận nhiệt lượng",
+            "Vật truyền nhiệt lượng cho vật khác"
+          ],
+          [
+            "A",
+            "Vật nhận công",
+            "Vật thực hiện công lên vật khác"
+          ]
+        ]
+      },
+      "wrong": "Vật toả nhiệt thì Q > 0.",
+      "right": "Vật toả nhiệt thì {k Q < 0}; vật sinh công thì A < 0.",
+      "tip": "Vật “nhận được” thì dấu cộng; vật “mất đi, sinh ra” thì dấu trừ.",
+      "try": {
+        "q": "Khí nhận công 100 J và toả nhiệt 30 J. Độ biến thiên nội năng ΔU bằng:",
+        "options": [
+          "70 J",
+          "130 J",
+          "−70 J"
+        ],
+        "answer": 0,
+        "explain": "A = +100 J, Q = −30 J nên ΔU = 100 + (−30) = 70 J."
+      },
+      "n": 4
     },
     {
       "type": "figure",
       "figure": "figures/c-ly12-b2-quy-uoc-dau.svg",
       "caption": "Ghi nhớ: Q và A mang dấu theo chiều vật nhận được hay sinh ra."
-    },
-    {
-      "type": "text",
-      "content": "Định luật I của nhiệt động lực học là sự vận dụng định luật bảo toàn năng lượng vào các quá trình thay đổi nội năng. Nhiệt lượng là số đo phần năng lượng được truyền từ vật này sang vật khác trong quá trình truyền nhiệt."
     },
     {
       "type": "method",

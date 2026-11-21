@@ -10,16 +10,41 @@
   "bookPage": 45,
   "theory": [
     {
-      "type": "text",
-      "content": "Các định luật Boyle và Charles chỉ cho mối liên hệ giữa hai thông số tại một thời điểm. Phương trình trạng thái liên hệ đồng thời cả ba thông số p, V, T của một khối lượng khí xác định."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Phương trình trạng thái: {k p₁V₁/T₁ = p₂V₂/T₂}, tức pV/T = hằng số. Clapeyron: {k pV = nRT} với R = 8,31 J/(mol·K), n = m/M. Điều kiện tiêu chuẩn: 1 mol có V = 22,4 L, p = 1,013·10⁵ Pa, T = 273 K."
     },
     {
-      "type": "formula",
-      "content": "p₁V₁/T₁ = p₂V₂/T₂  hay  pV/T = hằng số"
+      "type": "card",
+      "title": "Vì sao cần phương trình trạng thái",
+      "points": [
+        "Định luật Boyle và Charles chỉ cho mối liên hệ giữa {k hai} thông số.",
+        "Phương trình trạng thái liên hệ đồng thời cả ba thông số {k p, V, T} của một khối lượng khí xác định."
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Độ lớn của hằng số trong phương trình trạng thái phụ thuộc vào lượng khí đang xét. Quá trình chuyển trạng thái chỉ phụ thuộc vào trạng thái đầu và trạng thái cuối, không phụ thuộc cách chuyển."
+      "type": "card",
+      "title": "Phương trình trạng thái khí lí tưởng",
+      "formulas": [
+        "{k pV/T = hằng số}",
+        "{k p₁V₁/T₁ = p₂V₂/T₂}"
+      ],
+      "points": [
+        "Độ lớn của hằng số phụ thuộc vào lượng khí đang xét.",
+        "Quá trình chuyển trạng thái chỉ phụ thuộc trạng thái đầu và cuối, không phụ thuộc cách chuyển."
+      ],
+      "try": {
+        "q": "Khí ở 1 atm, 6 L, 300 K. Nén tới 2 atm và nung tới 600 K thì thể tích bằng:",
+        "options": [
+          "6 L",
+          "3 L",
+          "12 L"
+        ],
+        "answer": 0,
+        "explain": "V₂ = p₁V₁T₂/(T₁p₂) = 1·6·600/(300·2) = 6 L."
+      },
+      "n": 2
     },
     {
       "type": "figure",
@@ -27,12 +52,55 @@
       "caption": "Hai đường khác nhau nhưng cùng nối trạng thái 1 và 2: độ biến thiên trạng thái không phụ thuộc đường đi."
     },
     {
-      "type": "text",
-      "content": "Với n mol khí lí tưởng, phương trình Clapeyron là pV = nRT, trong đó R = 8,31 J/(mol·K) là hằng số khí lí tưởng và n = m/M là số mol."
+      "type": "card",
+      "title": "Phương trình Clapeyron",
+      "text": "Với n mol khí lí tưởng:",
+      "formulas": [
+        "{k pV = nRT}",
+        "R = 8,31 J/(mol·K),   n = m/M"
+      ],
+      "wrong": "Dùng áp suất theo atm, thể tích theo L mà vẫn lấy R = 8,31.",
+      "right": "R = 8,31 J/(mol·K) dùng với p (Pa), V (m³), T (K).",
+      "try": {
+        "q": "1 mol khí ở 273 K, 1,013·10⁵ Pa có thể tích khoảng:",
+        "options": [
+          "22,4 L",
+          "2,24 L",
+          "224 L"
+        ],
+        "answer": 0,
+        "explain": "V = nRT/p = 8,31·273/(1,013·10⁵) ≈ 0,0224 m³ = 22,4 L."
+      },
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Ở điều kiện tiêu chuẩn, một mol khí có thể tích 22,4·10⁻³ m³ (22,4 L), áp suất 1,013·10⁵ Pa và nhiệt độ 273 K."
+      "type": "card",
+      "title": "Điều kiện tiêu chuẩn",
+      "table": {
+        "head": [
+          "Đại lượng",
+          "Giá trị"
+        ],
+        "rows": [
+          [
+            "Số mol",
+            "1 mol"
+          ],
+          [
+            "Thể tích",
+            "22,4·10⁻³ m³ (22,4 L)"
+          ],
+          [
+            "Áp suất",
+            "1,013·10⁵ Pa"
+          ],
+          [
+            "Nhiệt độ",
+            "273 K"
+          ]
+        ]
+      },
+      "n": 4
     },
     {
       "type": "method",

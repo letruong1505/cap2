@@ -10,28 +10,61 @@
   "bookPage": 48,
   "theory": [
     {
-      "type": "text",
-      "content": "Mỗi phân tử khí va chạm đàn hồi với thành bình và truyền cho thành bình một xung lượng 2mv. Áp suất của khí là tổng các lực do các phân tử tác dụng lên một đơn vị diện tích thành bình."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Áp suất khí: {k p = (1/3)·n·m·v̅² = (2/3)·n·Ē_đ}. Động năng tịnh tiến trung bình: {k Ē_đ = (3/2)·k·T}, tỉ lệ với nhiệt độ tuyệt đối, k = 1,38·10⁻²³ J/K. Khí khác nhau, cùng nhiệt độ thì Ē_đ bằng nhau."
     },
     {
-      "type": "formula",
-      "content": "p = (1/3)·n·m·v̅² = (2/3)·n·E̅đ"
+      "type": "card",
+      "title": "Áp suất do va chạm",
+      "points": [
+        "Mỗi phân tử va chạm đàn hồi với thành bình, truyền cho thành bình xung lượng {k 2mv}.",
+        "Áp suất là tổng các lực do phân tử tác dụng lên một đơn vị diện tích thành bình."
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Trong đó n là mật độ phân tử (số phân tử trong một đơn vị thể tích), v̅² là trung bình của bình phương tốc độ và E̅đ là động năng tịnh tiến trung bình của phân tử."
+      "type": "card",
+      "title": "Công thức áp suất khí",
+      "formulas": [
+        "{k p = (1/3)·n·m·v̅²}",
+        "{k p = (2/3)·n·Ē_đ}"
+      ],
+      "points": [
+        "n: mật độ phân tử (số phân tử trong một đơn vị thể tích).",
+        "v̅²: trung bình của bình phương tốc độ.",
+        "Ē_đ: động năng tịnh tiến trung bình của phân tử."
+      ],
+      "n": 2
     },
     {
-      "type": "formula",
-      "content": "E̅đ = (3/2)·k·T,  với k = 1,38·10⁻²³ J/K"
+      "type": "card",
+      "title": "Động năng phân tử và nhiệt độ",
+      "formulas": [
+        "{k Ē_đ = (3/2)·k·T}    (k = 1,38·10⁻²³ J/K)"
+      ],
+      "points": [
+        "Ē_đ tỉ lệ thuận với nhiệt độ tuyệt đối: nhiệt độ tuyệt đối là số đo động năng trung bình của phân tử."
+      ],
+      "try": {
+        "q": "Hai khí khác bản chất ở cùng nhiệt độ thì động năng tịnh tiến trung bình của phân tử:",
+        "options": [
+          "Bằng nhau",
+          "Khí nhẹ hơn lớn hơn",
+          "Khí nặng hơn lớn hơn"
+        ],
+        "answer": 0,
+        "explain": "Ē_đ = (3/2)kT chỉ phụ thuộc nhiệt độ, không phụ thuộc loại khí."
+      },
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Động năng tịnh tiến trung bình của phân tử tỉ lệ thuận với nhiệt độ tuyệt đối. Vì vậy nhiệt độ tuyệt đối là số đo động năng trung bình của phân tử theo một đơn vị khác. Các khí khác bản chất nhưng cùng nhiệt độ có động năng tịnh tiến trung bình của phân tử bằng nhau."
-    },
-    {
-      "type": "text",
-      "content": "Căn bậc hai của trung bình bình phương tốc độ được gọi là tốc độ căn quân phương, không phải tốc độ trung bình của các phân tử."
+      "type": "card",
+      "title": "Tốc độ căn quân phương",
+      "text": "Là căn bậc hai của trung bình bình phương tốc độ.",
+      "wrong": "Tốc độ căn quân phương bằng tốc độ trung bình của phân tử.",
+      "right": "Hai đại lượng khác nhau: tốc độ căn quân phương lớn hơn tốc độ trung bình một chút.",
+      "n": 4
     },
     {
       "type": "figure",

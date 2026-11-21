@@ -10,12 +10,29 @@
   "bookPage": 61,
   "theory": [
     {
-      "type": "text",
-      "content": "Khi đoạn dây dẫn mang dòng điện I đặt trong từ trường, có lực từ F tác dụng lên đoạn dây. Lực F có phương vuông góc với đoạn dây và với vectơ B, có chiều xác định theo quy tắc bàn tay trái."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Lực từ lên dây dẫn: {k F = B·I·L·sinα} (định luật Ampe), α là góc giữa dây và B; F vuông góc với dây và với B, chiều theo quy tắc {k bàn tay trái}. Đơn vị cảm ứng từ tesla: 1 T = 1 N/(A·m)."
     },
     {
-      "type": "text",
-      "content": "Quy tắc bàn tay trái: đặt bàn tay trái sao cho vectơ B hướng vào lòng bàn tay, chiều từ cổ tay đến các ngón tay trùng chiều dòng điện; khi đó ngón cái choãi ra 90° chỉ chiều của lực từ F."
+      "type": "card",
+      "title": "Lực từ lên đoạn dây mang dòng điện",
+      "points": [
+        "Đoạn dây dẫn có dòng điện I đặt trong từ trường chịu lực từ F.",
+        "F có phương {k vuông góc} với đoạn dây và với vectơ B; chiều theo quy tắc bàn tay trái."
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Quy tắc bàn tay trái",
+      "points": [
+        "Vectơ B {k hướng vào lòng bàn tay}.",
+        "Chiều từ cổ tay đến các ngón tay trùng {k chiều dòng điện}.",
+        "Ngón cái choãi ra 90° chỉ {k chiều của lực từ F}."
+      ],
+      "tip": "Bàn tay trái cho lực từ; bàn tay phải (bài 14) cho đường sức của dòng điện.",
+      "n": 2
     },
     {
       "type": "figure",
@@ -23,16 +40,39 @@
       "caption": "Quy tắc bàn tay trái: B hướng vào trang, I sang phải thì F hướng lên."
     },
     {
-      "type": "formula",
-      "content": "F = B·I·L·sinα"
+      "type": "card",
+      "title": "Công thức Ampe",
+      "formulas": [
+        "{k F = B·I·L·sinα}"
+      ],
+      "points": [
+        "B: cảm ứng từ; I: cường độ dòng điện; L: chiều dài đoạn dây.",
+        "α: góc giữa {k dây dẫn} và vectơ B."
+      ],
+      "wrong": "α là góc giữa B và lực từ F.",
+      "right": "α là góc giữa dây dẫn và B. Dây song song B (α = 0) thì F = 0; dây vuông góc B thì F lớn nhất.",
+      "try": {
+        "q": "B = 0,5 T, I = 2 A, L = 0,4 m, dây vuông góc B. Lực từ bằng:",
+        "options": [
+          "0,4 N",
+          "0,2 N",
+          "0,8 N"
+        ],
+        "answer": 0,
+        "explain": "F = 0,5·2·0,4·sin 90° = 0,4 N."
+      },
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Trong đó B là cảm ứng từ, I là cường độ dòng điện, L là chiều dài đoạn dây và α là góc giữa dây dẫn và vectơ B. Công thức này là công thức của định luật Ampe."
-    },
-    {
-      "type": "text",
-      "content": "Đơn vị cảm ứng từ là tesla (T). Một tesla là cảm ứng từ của từ trường đều mà dòng điện 1 A vuông góc với đường sức chịu lực 1 N trên mỗi mét dây: 1 T = 1 N/(A·m)."
+      "type": "card",
+      "title": "Đơn vị cảm ứng từ: tesla",
+      "formulas": [
+        "1 T = 1 N/(A·m)"
+      ],
+      "points": [
+        "1 tesla là cảm ứng từ của từ trường đều mà dòng điện 1 A vuông góc với đường sức chịu lực 1 N trên mỗi mét dây."
+      ],
+      "n": 4
     },
     {
       "type": "method",
