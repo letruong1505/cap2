@@ -1,4 +1,5 @@
 ## Bản mới
+- Android: khi phải tải apk qua trình duyệt, app ghi rõ lý do để dễ khắc phục
 - Thời khóa biểu: nhập các môn học mỗi ngày, cập nhật mỗi tuần; tối hôm trước app nhắc ôn bài và làm bài các môn của ngày mai (Android có thêm thông báo điện thoại)
 - Android: bản này cần cài apk mới để có thông báo nhắc học bài
 

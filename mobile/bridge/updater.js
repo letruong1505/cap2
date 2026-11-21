@@ -103,7 +103,8 @@
         if (state.state !== 'available' || !apkUrl) return Promise.resolve(snap());
         var url = apkUrl;
         var viaBrowser = function () { try { o.openUrl(url); } catch (e) { /* bỏ qua */ } };
-        if (!o.installApk) { viaBrowser(); return Promise.resolve(snap()); }
+        // Báo rõ lý do mở trình duyệt để biết máy thiếu plugin hay tải trong app bị lỗi.
+        if (!o.installApk) { viaBrowser(); return Promise.resolve(set({ state: 'available', error: 'Bản app đang cài chưa có tính năng tải ngay trong app (apk cũ). Cài apk này một lần, các lần sau sẽ tự tải trong app.' })); }
         // Tải ngay trong app rồi mở hộp cài đặt; lỗi bất kỳ (trừ chưa cấp quyền) thì quay về cách mở trình duyệt.
         set({ state: 'downloading', percent: 0, error: '' });
         return o.installApk(url, function (p) { set({ state: 'downloading', percent: p }); }).then(function () {
@@ -111,7 +112,7 @@
         }, function (e) {
           if (e && e.code === 'needs_permission') return set({ state: 'available', error: 'Hãy bật "Cho phép từ nguồn này" rồi quay lại app và bấm Tải về lần nữa.' });
           viaBrowser();
-          return set({ state: 'available', error: '' });
+          return set({ state: 'available', error: 'Tải trong app lỗi (' + String((e && (e.code || e.message)) || 'không rõ').slice(0, 80) + '), đã mở trình duyệt để tải.' });
         });
       },
       // Dùng ngay gói OTA đã tải: nạp lại từ trang khởi động.
