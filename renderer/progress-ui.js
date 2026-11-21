@@ -124,16 +124,21 @@
     const pg = mkPass(g.pass, 'Ngưỡng đạt chung cho mọi môn');
     pg.addEventListener('change', () => savePass((ng) => { ng.pass = Number(pg.value); }));
     box.append(h('p', { class: 'goal-set' }, 'Ngưỡng đạt (dưới mức này báo "không đạt"): chung ', pg, ' số câu đúng'));
-    const subs = [...new Set((data.attempts || []).filter((a) => !grade || a.grade === grade).map((a) => a.subject))].filter(Boolean);
-    if (subs.length) {
-      const row = h('p', { class: 'goal-set' }, 'Riêng từng môn: ');
-      subs.forEach((sj) => {
-        const sel = mkPass(P.passFor(g, sj), 'Ngưỡng đạt môn ' + subjName(sj));
-        sel.addEventListener('change', () => savePass((ng) => { ng.passBy[sj] = Number(sel.value); }));
-        row.append(subjName(sj) + ' ', sel, ' ');
+    /* Riêng từng môn: hiện tất cả các môn của lớp (không chỉ môn đã học), chọn xong bấm "Lưu ngưỡng". */
+    const subs = Object.keys(SUBJ).filter((sj) => sj !== 'gdktpl' || !grade || grade >= 10);
+    const grid = h('div', { class: 'pass-grid' });
+    const sels = {};
+    subs.forEach((sj) => {
+      sels[sj] = mkPass(P.passFor(g, sj), 'Ngưỡng đạt môn ' + subjName(sj));
+      grid.append(h('label', {}, subjName(sj) + ' ', sels[sj]));
+    });
+    const save = h('button', { type: 'button' }, 'Lưu ngưỡng từng môn');
+    save.addEventListener('click', async () => {
+      await savePass((ng) => {
+        subs.forEach((sj) => { const v = Number(sels[sj].value); if (v === ng.pass) delete ng.passBy[sj]; else ng.passBy[sj] = v; }); // bằng ngưỡng chung thì không cần đặt riêng
       });
-      box.append(row);
-    }
+    });
+    box.append(h('p', { class: 'goal-set' }, 'Riêng từng môn (chọn xong bấm Lưu):'), grid, h('p', { class: 'goal-set' }, save));
   }
 
   function dueCount(grade) { return P ? P.due(P.load(store()), Date.now(), grade).length : 0; }
