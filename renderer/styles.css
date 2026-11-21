@@ -968,3 +968,23 @@ button.dc-col.sel { background: #dcebf3; }
 .reward-msg { font-size: 1.15rem; font-weight: 600; margin: 12px 0 16px; }
 @keyframes reward-pop { 0% { transform: scale(.3); } 70% { transform: scale(1.2); } 100% { transform: scale(1); } }
 @media (prefers-reduced-motion: reduce) { .reward-emoji { animation: none; } }
+
+/* Điện thoại: bớt lề, chữ gọn, các ô chọn xếp hàng ngay ngắn. */
+@media (max-width: 600px) {
+  body { font-size: 15px; }
+  .topbar { padding: 8px 12px; flex-wrap: wrap; gap: 2px 12px; }
+  .brand { font-size: 16px; }
+  main { padding: 8px; }
+  .panel { padding: 14px 12px; border-radius: 14px; }
+  h1 { font-size: 21px; }
+  h2 { font-size: 18px; margin: 22px 0 10px; }
+  #sec-theory p:not(.formula) { line-height: 1.6; margin-bottom: 10px; }
+  .goal-box { padding: 10px 12px; margin: 12px 0; }
+  .goal-set { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; }
+  .goal-set select { margin: 0; }
+  .pass-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 12px; }
+  .pass-grid label { white-space: normal; display: flex; justify-content: space-between; align-items: center; gap: 6px; }
+  .reward-set input[type=number] { width: 4em; }
+  .reward-set > button { width: 100%; white-space: normal; }
+  .app-version { font-size: 10.5px; opacity: .75; }
+}

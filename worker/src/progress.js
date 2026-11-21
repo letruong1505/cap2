@@ -170,7 +170,15 @@ export async function progressView(db, catalog, input, now = new Date()) {
   const gs = sts.find((x) => x.goal_daily);
   const gx = gs ? await db.prepare('SELECT goal_weekend FROM progress_goal_ext WHERE code = ?1').bind(gs.code).first() : null;
   const lastSync = sts.map((x) => x.last_sync).filter(Boolean).sort().pop() || null;
-  const base = { code: o.code, codes, name: o.name, courses, enabled, goals: gs ? { daily: gs.goal_daily, weekend: (gx && gx.goal_weekend) || 80, weekly: gs.goal_weekly, ...(await passOf(db, gs.code)) } : null, lastSync, reward: gs ? await rewardOf(db, gs.code) : null };
+  // Phần thưởng của từng đơn (mỗi bé một khóa, một máy): gắn nhãn khóa/lớp để phụ huynh có nhiều con xem riêng từng bé.
+  const rewards = [];
+  for (const r of orders) {
+    const rw = await rewardOf(db, r.code);
+    if (!rw || !rw.on) continue;
+    const gs2 = JSON.parse(r.items).map((id) => /^van-hoa-(\d+)$/.exec(id)).filter(Boolean).map((m) => Number(m[1]));
+    rewards.push({ code: r.code, grades: gs2, label: gs2.map((g) => (byGrade.get(g) || 'Lớp ' + g)).join(', '), ...rw });
+  }
+  const base = { code: o.code, codes, name: o.name, courses, enabled, goals: gs ? { daily: gs.goal_daily, weekend: (gx && gx.goal_weekend) || 80, weekly: gs.goal_weekly, ...(await passOf(db, gs.code)) } : null, lastSync, reward: gs ? await rewardOf(db, gs.code) : null, rewards };
   if (!enabled) return { ...base, rows: [] };
 
   const today = now.toISOString().slice(0, 10);

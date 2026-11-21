@@ -182,3 +182,12 @@ test('phần thưởng theo tuần: máy học sinh gửi trạng thái đã s�
   await progressSettings(db, { ...dev(code), purge: true }, NOW);
   assert.equal((await view(db, code)).reward, null);
 });
+
+test('phần thưởng nhiều bé: view trả phần thưởng của từng đơn kèm khóa/lớp', async () => {
+  const { db, code } = await setup();
+  await progressSettings(db, { ...dev(code), enabled: true, goals: { daily: 30, weekend: 60, weekly: 5, pass: 70 } }, NOW);
+  await progressSettings(db, { ...dev(code), reward: { on: true, days: 5, pct: 70, text: 'Kem', count: 2, hist: [] } }, NOW);
+  const v = await view(db, code);
+  assert.equal(v.rewards.length, 1);
+  assert.deepEqual([v.rewards[0].code, v.rewards[0].grades.slice().sort((a, b) => a - b), v.rewards[0].need], [code, [9, 12], 5]);
+});

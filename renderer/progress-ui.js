@@ -631,15 +631,16 @@
         const r = S.buildReport(d.rows, { from: rg.from, to: rg.to, subject: pvView.subject, grade: pvView.grade }, d.goals);
         body.append(h('p', { class: 'meta' }, `${fmtFull(r.from)} → ${fmtFull(r.to)}`));
         attachUsage(r, d.usage || []);
-        if (d.reward && d.reward.on) {
-          const rw = d.reward;
-          const box = h('div', { class: 'goal-box' }, h('h2', {}, 'Phần thưởng cuối tuần'),
+        /* Phần thưởng: mỗi bé (mỗi khóa/máy) một khối riêng; chọn khóa học ở trên thì chỉ hiện bé thuộc khóa đó. */
+        const rws = (d.rewards || (d.reward && d.reward.on ? [d.reward] : [])).filter((x) => x.on && (!pvView.grade || !x.grades || !x.grades.length || x.grades.includes(pvView.grade)));
+        rws.forEach((rw) => {
+          const box = h('div', { class: 'goal-box' }, h('h2', {}, 'Phần thưởng cuối tuần' + (rws.length > 1 && rw.label ? ' · ' + rw.label : '')),
             h('p', {}, `Tuần này: ${rw.count}/${rw.need} ngày đạt ${rw.pct}%${rw.text ? ' · Thưởng: ' + rw.text : ''}`), bar(Math.min(rw.count, rw.need), rw.need));
           if (rw.pending) box.append(h('p', {}, h('strong', {}, `🎁 Con đạt thưởng ${rw.pending} tuần, chờ bố mẹ trao.`), ' Sau khi trao, bấm "Đã trao" trong báo cáo trên máy của con.'));
           const done = (rw.hist || []).slice().reverse().slice(0, 4);
           if (done.length) { const ul = h('ul', { class: 'report-list' }); done.forEach((x) => ul.append(h('li', {}, `Tuần ${x.week.split('-').reverse().join('/')}: ${x.ok ? (x.done ? 'đạt, đã trao' : 'đạt, chưa trao') : 'không đạt'} (${x.count}/${rw.need} ngày)`))); box.append(ul); }
           body.append(box);
-        }
+        });
         body.append(h('div', { class: 'goal-box' }, h('h2', {}, 'Chất lượng làm bài'), qualityBar(r.correct, r.total, true)));
         const ub = usageBox(r); if (ub) body.append(ub);
         if (r.days.length > 1 || r.total) body.append(h('h2', { class: 'rep-h' }, 'Biểu đồ theo ngày'), h('div', { class: 'goal-box' }, dayChart(r), h('p', { class: 'meta' }, 'Xanh: câu đúng · Đỏ: câu sai')), h('h2', { class: 'rep-h' }, r.days.length <= 7 ? 'Lịch tuần' : 'Lịch học'), calendar(r, today));
