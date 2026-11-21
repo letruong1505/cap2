@@ -1,4 +1,4 @@
-// Khóa "Tư duy & lập trình": 2 lộ trình (8–11 Scratch, 12–18 Python). Mở đầu và Bài 1 xem miễn phí; các bài còn lại mở khi khóa ra mắt và được mua.
+// Khóa "Tư duy & lập trình": 2 lộ trình (8–11 Scratch, 12–18 Python). Mở đầu và Bài 1 xem miễn phí; các bài còn lại mở khi mua khóa.
 (function () {
   'use strict';
   const COURSE_ID = 'tu-duy-lap-trinh';
@@ -28,13 +28,16 @@
   function canOpen(key) { return FREE.includes(key) || owned(ctx.license()); }
   function shortTitle(t, key) { return ((content(t)[key] || {}).title || key).replace(/^(Bài\s*\d+|Mở đầu)\s*[·:.\-–]\s*/, ''); }
   function no(key) { return key === 'tongquan' ? 'Mở đầu' : 'Bài ' + key.replace(/\D/g, ''); }
-  const soon = () => window.alert('Bài này mở khi khóa Tư duy & lập trình chính thức ra mắt. Phần mở đầu và Bài 1 đang xem thử miễn phí.');
+  const buy = () => { if (window.confirm('Bài này mở khi Anh/Chị mua khóa Tư duy & lập trình. Mở màn hình Mua khóa học?')) ctx.onBuy(COURSE_ID); };
+
+  const buy2 = () => ctx.onBuy(COURSE_ID);
 
   function trackScreen() {
     body.replaceChildren(
       h('button', { class: 'back-link', type: 'button', onclick: () => ctx.onExit() }, '← Chọn khóa'),
-      h('header', { class: 'screen-head' }, h('p', { class: 'screen-kicker' }, 'Khóa Kỹ năng · sắp ra mắt'), h('h1', {}, 'Tư duy & lập trình'),
-        h('p', { class: 'screen-sub' }, 'Lập trình chỉ là công cụ. Điều khóa học rèn là tư duy phản biện (hỏi “vì sao đúng?”) và tư duy ngược (đi từ kết quả về điều kiện ban đầu). Chọn lộ trình phù hợp với độ tuổi; phần mở đầu và Bài 1 xem miễn phí.')),
+      h('header', { class: 'screen-head' }, h('p', { class: 'screen-kicker' }, 'Khóa Kỹ năng'), h('h1', {}, 'Tư duy & lập trình'),
+        h('p', { class: 'screen-sub' }, 'Lập trình chỉ là công cụ. Điều khóa học rèn là tư duy phản biện (hỏi “vì sao đúng?”) và tư duy ngược (đi từ kết quả về điều kiện ban đầu). Chọn lộ trình phù hợp với độ tuổi; phần mở đầu và Bài 1 xem miễn phí.'),
+        owned(ctx.license()) ? null : h('button', { class: 'primary', type: 'button', onclick: buy2 }, 'Mua khóa Tư duy & lập trình')),
       h('ul', { class: 'lesson-list' }, Object.keys(TRACKS).map((t) => h('li', {}, h('button', { class: 'lesson-row', type: 'button', onclick: () => listScreen(t) },
         h('span', { class: 'lesson-no' }, TRACKS[t].tool), h('span', { class: 'lesson-name' }, TRACKS[t].name + ' – ' + TRACKS[t].sub))))));
     window.scrollTo(0, 0);
@@ -44,7 +47,7 @@
     const own = owned(ctx.license());
     const rows = KEYS.filter((k) => content(t)[k]).map((k) => {
       const open = canOpen(k);
-      const r = h('button', { class: 'lesson-row' + (open ? '' : ' locked'), type: 'button', onclick: open ? () => lessonScreen(t, k) : soon },
+      const r = h('button', { class: 'lesson-row' + (open ? '' : ' locked'), type: 'button', onclick: open ? () => lessonScreen(t, k) : buy },
         h('span', { class: 'lesson-no' }, no(k)), h('span', { class: 'lesson-name' }, shortTitle(t, k)),
         FREE.includes(k) && !own ? h('span', { class: 'lesson-tag' }, 'Xem thử') : null);
       if (!open) { const l = h('span', { class: 'lesson-lock', title: 'Mở khi mua khóa' }); l.innerHTML = LOCK; r.append(l); r.setAttribute('aria-label', no(k) + ' ' + shortTitle(t, k) + ' (cần mua khóa)'); }
