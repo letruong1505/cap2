@@ -121,8 +121,8 @@ test('Tư duy & lập trình: 2 lộ trình đủ mở đầu + 8 bài, có th�
   const all = JSON.stringify(w.TUDUY);
   assert.ok(!/<script/i.test(all));
   // số liệu đã kiểm: biến Scratch bài 4 = 12; tổng 1..99 = 4950; làm ngược 23 -> 9
-  assert.ok(w.TUDUY.k811.bai4.html.includes('điểm = 12'));
-  assert.ok(w.TUDUY.k1218.bai4.html.includes('4950'));
+  assert.ok(w.TUDUY.k811.bai4.html.includes('<b>12</b>'));
+  assert.ok(w.TUDUY.k1218.bai4.html.includes('5050'));
   assert.ok(w.TUDUY.k811.bai6.html.includes('<b>9</b>'));
   assert.ok(w.TUDUY.k1218.bai5.html.includes('5.83'));
 });
@@ -147,4 +147,22 @@ test('Tư duy & lập trình: bài Cài đặt có hình minh họa và hướng
   const sc = w.TUDUY.k811.caidat.html, py = w.TUDUY.k1218.caidat.html;
   assert.ok((sc.match(/<svg/g) || []).length >= 3 && sc.includes('scratch.mit.edu') && sc.includes('.sb3'));
   assert.ok((py.match(/<svg/g) || []).length >= 4 && py.includes('python.org') && py.includes('Add python.exe to PATH') && py.includes('IDLE') && py.includes('F5'));
+});
+
+test('Tư duy & lập trình: mỗi bài học có đủ 7 mục kiến thức và 5 bài thực hành tăng dần có lời giải', () => {
+  const w = {};
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../renderer/tu-duy-content.js'), 'utf8'), { window: w });
+  const heads = ['Ý nghĩa của bài học', 'Dùng bài học này như thế nào', 'Tư duy bài học mang đến', 'Hình minh họa từng bước', 'Lỗi sai hay gặp', 'Ví dụ minh họa'];
+  for (const t of ['k811', 'k1218']) {
+    for (const k of ['bai1', 'bai2', 'bai3', 'bai4', 'bai5', 'bai6', 'bai7', 'bai8']) {
+      const h = w.TUDUY[t][k].html;
+      for (const x of heads) assert.ok(h.includes(x), t + k + ' thiếu ' + x);
+      assert.ok(h.includes(t === 'k811' ? 'Ứng dụng vào Scratch' : 'Ứng dụng vào Python'), t + k);
+      assert.strictEqual((h.match(/class="tcard tprac"/g) || []).length, 5, t + k);
+      assert.strictEqual((h.match(/<details class="tans">/g) || []).length, 5, t + k);
+      for (const lv of ['Mức 1', 'Mức 2', 'Mức 3', 'Mức 4', 'Mức 5']) assert.ok(h.includes(lv), t + k + lv);
+      assert.ok((h.match(/class="tstep"/g) || []).length >= 3, t + k + ' cần ít nhất 3 bước minh họa');
+      assert.ok((h.match(/class="terr"/g) || []).length >= 3, t + k);
+    }
+  }
 });
