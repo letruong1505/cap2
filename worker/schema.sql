@@ -172,3 +172,26 @@ CREATE TABLE IF NOT EXISTS progress_timetable (
   data TEXT NOT NULL,
   updated_at TEXT NOT NULL
 );
+
+-- Mua cho con từ app Phụ huynh: mỗi máy phụ huynh có một mã gia đình; đơn mua qua mã đó không gắn máy nào,
+-- các máy của con nhập mã gia đình một lần rồi tự nhận khóa (mỗi đơn: 1 máy tính + 1 điện thoại).
+CREATE TABLE IF NOT EXISTS families (
+  fcode TEXT PRIMARY KEY,
+  phone TEXT NOT NULL,
+  parent_machine TEXT NOT NULL,
+  created_at TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_families_parent ON families (parent_machine, phone);
+CREATE TABLE IF NOT EXISTS family_orders (
+  code TEXT PRIMARY KEY,
+  fcode TEXT NOT NULL,
+  created_at TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_family_orders_f ON family_orders (fcode);
+CREATE TABLE IF NOT EXISTS family_links (
+  fcode TEXT NOT NULL,
+  machine TEXT NOT NULL,
+  platform TEXT NOT NULL,
+  linked_at TEXT NOT NULL,
+  PRIMARY KEY (fcode, machine)
+);

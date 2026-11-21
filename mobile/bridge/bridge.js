@@ -57,6 +57,16 @@
           return r;
         });
       },
+      // Nhận khóa các đơn phụ huynh mua cho gia đình (mã gia đình nhập một lần) và kích hoạt từng khóa.
+      familySync: function (x) {
+        return client.familySync(x).then(function (r) {
+          if (!r.ok) return r;
+          var keys = Array.isArray(r.data && r.data.keys) ? r.data.keys : [];
+          var activated = 0;
+          keys.forEach(function (k) { if (k && afterActivate(lic.activate(k.key)).status === 'ok') activated++; });
+          return { ok: true, activated: activated, total: keys.length, full: (r.data && r.data.full) || 0 };
+        });
+      },
       // Cập nhật: o.updater (mobile/bridge/updater.js) lo gói nội dung và apk mới; không có thì tắt (chạy thử trên trình duyệt).
       updateStatus: function () { return Promise.resolve(up ? up.status() : off); },
       checkUpdate: function () { return up ? up.check() : Promise.resolve(off); },

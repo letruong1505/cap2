@@ -61,14 +61,24 @@
       </div>
     </section>
 
+    <section id="buy" class="panel" hidden>
+      <button class="back-link" type="button" data-back>← Quay lại</button>
+      <div id="buy-body"></div>
+    </section>
+
+    <section id="digest" class="panel" hidden>
+      <button class="back-link" type="button" data-back-courses>← Khóa học và giá</button>
+      <div id="digest-body"></div>
+    </section>
+
     <section id="purchase" class="panel" hidden>
       <button class="back-link" type="button" data-back>← Quay lại</button>
       <h1>Khóa học và bảng giá</h1>
       <div class="goal-box">
-        <h2>Cách mua cho con</h2>
-        <p>Mỗi đơn dùng được cho <b>1 máy tính và 1 điện thoại của con</b>. Để khóa được cấp đúng thiết bị của con, hãy mua ngay trên app học của con: mở app, chọn <b>Mua khóa học</b>, chuyển khoản theo mã QR, khóa tự kích hoạt.</p>
-        <p>Đã mua ở máy khác? Trên app học của con, vào phần bản quyền, mục <b>Nhận khóa</b>, nhập mã đơn và số điện thoại đã mua.</p>
-        <p>Cần hỗ trợ: Zalo <b>0968 646 853</b>.</p>
+        <h2>Mua cho con ngay trên app này</h2>
+        <p>Mỗi đơn dùng được cho <b>1 máy tính và 1 điện thoại của con</b>. Bạn chuyển khoản theo mã QR; khóa học tự về máy của con khi con mở app học có mạng (con nhập <b>mã gia đình</b> một lần).</p>
+        <p><button type="button" class="primary" id="go-buy-now">Mua khóa học cho con</button></p>
+        <p class="meta">Cũng có thể mua trực tiếp trên app học của con: chọn <b>Mua khóa học</b>. Cần hỗ trợ: Zalo <b>0968 646 853</b>.</p>
       </div>
       <div id="price-list"></div>
     </section>
@@ -85,9 +95,15 @@
   <script src="usage.js"></script>
   <script src="progress-sync.js"></script>
   <script src="progress-ui.js"></script>
+  <script src="vendor/qrcode.js"></script>
+  <script src="vietqr.js"></script>
+  <script src="payment-config.js"></script>
+  <script src="terms.js"></script>
   <script src="catalog.js"></script>
   <script src="timetable.js"></script>
   <script src="courses.js"></script>
+  <script src="buy.js"></script>
+  <script src="digest.js"></script>
   <script src="parent-update.js"></script>
   <script src="parent.js"></script>
 </body>

@@ -20,6 +20,9 @@
   var client = window.NLMobileApi.makeClient({ baseUrl: function () { return cfg.ordersBaseUrl; }, fetchFn: function (u, i) { return fetch(u, i); }, machineId: function () { return id; } });
   window.vungBai = {
     version: cfg.version || 'phuhuynh', platform: 'android', role: 'parent', machineId: id,
+    createOrder: function (x) { return client.createOrder(x); },
+    orderStatus: function (c) { return client.orderStatus(c); },
+    familyCreate: function (x) { return client.familyCreate(x); },
     progressView: function (x) { return client.progressView(x); },
     progressSettings: function (x) { return client.progressSettings(x); },
     storeAll: function () { return {}; }, storeSet: function () {},

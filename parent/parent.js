@@ -1,7 +1,7 @@
 // Điều hướng app Phụ huynh: màn hình chính, xem con học, thời khóa biểu (đồng bộ từ máy của con), liên hệ, khóa học và giá.
 (function () {
   'use strict';
-  const SECTIONS = ['home', 'parent-view', 'timetable', 'advice', 'purchase'];
+  const SECTIONS = ['home', 'parent-view', 'timetable', 'advice', 'purchase', 'buy', 'digest'];
   const NAMES = { toan: 'Toán', van: 'Ngữ văn', anh: 'Tiếng Anh', ly: 'Vật lí', hoa: 'Hoá học', sinh: 'Sinh học', lichsu: 'Lịch sử', diali: 'Địa lí', gdktpl: 'Giáo dục KT&PL', tin: 'Tin học' };
   const T = window.VungTimetable;
   const $ = (id) => document.getElementById(id);
@@ -77,6 +77,11 @@
     T.banner($('tt-banner'), { grades: gradesOf(), names: NAMES });
   }
 
+  function openBuy(preselect) {
+    window.ParentBuy.open($('buy-body'), { preselect });
+    show('buy');
+  }
+
   function openCourses() {
     const box = $('price-list'); box.replaceChildren();
     const money = (n) => n.toLocaleString('vi-VN') + ' đ';
@@ -90,6 +95,9 @@
         if (x.note) body.append(h('p', { class: 'meta' }, x.note));
         if (info.intro) body.append(h('p', {}, info.intro));
         if (info.content.length) { body.append(h('p', {}, h('b', {}, 'Nội dung:'))); body.append(h('ul', {}, info.content.map((t) => h('li', {}, t)))); }
+        const vh = /^van-hoa-(\d+)$/.exec(x.id);
+        if (vh && window.ParentDigest) body.append(h('p', {}, h('button', { type: 'button', class: 'primary', onclick: () => { window.ParentDigest.open($('digest-body'), Number(vh[1])); show('digest'); } }, 'Xem nội dung chi tiết lớp ' + vh[1])));
+        body.append(h('p', {}, h('button', { type: 'button', class: 'ghost', onclick: () => openBuy(x.id) }, 'Mua khóa này cho con')));
         d.append(body); c.append(d);
       });
       box.append(c);
@@ -97,12 +105,14 @@
     show('purchase');
   }
 
-  document.querySelectorAll('[data-back]').forEach((b) => b.addEventListener('click', home));
+  document.querySelectorAll('[data-back]').forEach((b) => b.addEventListener('click', () => { if (b.closest('#buy')) openCourses(); else home(); }));
   $('go-progress').addEventListener('click', () => { window.VungProgressUI.renderParentView($('parent-body')); show('parent-view'); });
   $('go-timetable').addEventListener('click', openTimetable);
   $('tt-refresh').addEventListener('click', openTimetable);
   $('go-advice').addEventListener('click', () => show('advice'));
   $('go-buy').addEventListener('click', openCourses);
+  $('go-buy-now').addEventListener('click', () => openBuy());
+  document.querySelectorAll('[data-back-courses]').forEach((b) => b.addEventListener('click', openCourses));
   const v = $('build'); if (v && window.NL_MOBILE_CONFIG) v.textContent = 'Phụ huynh ' + (window.NL_MOBILE_CONFIG.version || '');
   home();
 })();

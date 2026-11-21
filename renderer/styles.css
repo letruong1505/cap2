@@ -1127,3 +1127,18 @@ button.tt-chip { cursor: pointer; }
 .aiw-lesson .tsteps { grid-template-columns: minmax(0, 1fr); }
 .aiw-lesson .tstep { min-width: 0; }
 .aiw-lesson .tstep pre.code { max-width: 100%; }
+
+/* App Phụ huynh: tóm tắt nội dung khóa học và mã gia đình */
+.dg-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+.dg-tabs button { padding: 8px 14px; }
+.dg-chapter { margin: 0 0 12px; }
+.dg-chapter > summary { cursor: pointer; padding: 4px 0; }
+.dg-l { margin: 8px 0; }
+.dg-lesson { padding: 4px 16px 14px; }
+.dg-block h4 { margin: 12px 0 4px; font-size: 14px; }
+.dg-block ul, .dg-block ol { margin: 0; padding-left: 20px; }
+.dg-block li { margin: 2px 0; }
+.dg-err { border-left: 3px solid #d97706; padding-left: 10px; }
+.dg-method { border-left: 3px solid var(--blue, #1d4ed8); padding-left: 10px; }
+.family-code { letter-spacing: 3px; font-size: 22px; }
+.family-box { margin: 12px 0; }

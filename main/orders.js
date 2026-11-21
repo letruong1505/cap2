@@ -30,6 +30,8 @@ function makeClient({ baseUrl = readBaseUrl, fetchFn = (...a) => fetch(...a), ma
     }),
     // Nhận khóa cho máy tính này từ đơn mua trên điện thoại: nhập mã đơn + số điện thoại đã mua.
     claimDevice: (o) => call('POST', '/api/claim-device', { phone: String(o && o.phone || ''), code: String(o && o.code || ''), machineId: machineId(), platform: 'win' }),
+    // Máy tính của con nhận khóa các đơn phụ huynh mua cho gia đình (mã gia đình nhập một lần).
+    familySync: (o) => call('POST', '/api/family/sync', { fcode: String(o && o.fcode || ''), machineId: machineId(), platform: 'win' }),
     pinReset: (o) => call('POST', '/api/pin-reset', { phone: String(o && o.phone || ''), code: String(o && o.code || ''), machineId: machineId() }),
     // Khách tự đăng ký khóa cũ (cấp bằng USB) vào hệ thống: gửi khóa NL1-... (do tiến trình chính đọc từ kho khóa) và số điện thoại phụ huynh.
     registerLegacy: (o) => call('POST', '/api/register-legacy', { key: String(o && o.key || ''), phone: String(o && o.phone || ''), machineId: machineId() }),
