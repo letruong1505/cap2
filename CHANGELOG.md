@@ -1,7 +1,9 @@
 ## Bản mới
-- Android: sửa lỗi nút "Tải về" cập nhật apk vẫn mở trình duyệt và thông báo nhắc học bài không hiện (app nhận nhầm là máy chưa có plugin)
+- AI cho người đi làm – lớp ChatGPT: thêm 9 bài (Bài 4–12) chuyển từ tài liệu ChatGPT cho nhân viên văn phòng: thiết lập an toàn, công thức giao việc, email/Word/SOP, Excel/KPI, PowerPoint/họp, hành chính–nhân sự–mua hàng, dự án, 5 case study, lộ trình 30 ngày và thư viện 96 prompt
+- Android: bản này yêu cầu cài apk mới
 
 ## Các bản trước
+- Android: sửa lỗi nút "Tải về" cập nhật apk vẫn mở trình duyệt và thông báo nhắc học bài không hiện (app nhận nhầm là máy chưa có plugin)
 - Mục "Tư vấn – Định hướng": dòng "Bên cạnh Quỹ tín dụng xã Diễn Yên cũ" xuống hàng riêng
 - Mục "Tư vấn – Định hướng" (trước là "Chọn ngành – Hướng nghiệp"): thêm thông tin liên hệ của Nam Linh (tên công ty, mã số thuế, địa chỉ, điện thoại)
 - Android: khi phải tải apk qua trình duyệt, app ghi rõ lý do để dễ khắc phục
