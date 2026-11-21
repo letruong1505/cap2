@@ -5,13 +5,13 @@ Chạy: node tools/dump... không cần; python3 tools/cardify-chatgpt.py"""
 import re, json, subprocess, pathlib
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 import sys
-TARGETS = {'chatgpt': ('renderer/ai-work-chatgpt.js', 'AI_WORK_CHATGPT'), 'chung': ('renderer/ai-work-content.js', 'AI_WORK_LESSONS')}
+TARGETS = {'chatgpt': ('renderer/ai-work-chatgpt.js', 'AI_WORK_CHATGPT'), 'chung': ('renderer/ai-work-content.js', 'AI_WORK_LESSONS'), 'giasu': ('renderer/gia-su-ai-content.js', 'GIA_SU_AI')}
 WHICH = sys.argv[1] if len(sys.argv) > 1 else 'chatgpt'
 F = ROOT / TARGETS[WHICH][0]
 VAR = TARGETS[WHICH][1]
 raw = subprocess.check_output(['node', '-e', "global.window={};require('%s');console.log(JSON.stringify(window.%s))" % (F, VAR)])
 data = json.loads(raw)
-head = F.read_text(encoding='utf8').split('\n', 1)[0]
+head = '\n'.join(F.read_text(encoding='utf8').split('\n', 2)[:2]) if WHICH == 'giasu' else F.read_text(encoding='utf8').split('\n', 1)[0]
 
 SENT = re.compile(r'(?<=[.!?”])\s+(?=[A-ZÀ-Ỹ“(\[])')
 def bullets(p):
@@ -44,13 +44,13 @@ def cardify(d):
     if 'class="tsum"' in h: return d
     first = re.search(r'<h[34]>', h)
     pre, rest = (h[:first.start()], h[first.start():]) if first else (h, '')
-    meta = re.search(r'<div class="meta">(.*?)</div></div>', pre, flags=re.S)
+    meta = re.search(r'<div class="meta">(.*?)</div>\s*</div>', pre, flags=re.S)
     items = []
     if meta:
         for lab, val in re.findall(r'<div><b>(.*?)</b>(.*?)(?=</div>|$)', meta.group(1) + '</div>', flags=re.S):
             items.append('<li><b>%s:</b> %s</li>' % (lab, val))
         pre = pre.replace(meta.group(0), '')
-    tsum = '<div class="tsum"><div class="tsum-l">Tóm tắt bài</div><ul>%s</ul></div>' % ''.join(items)
+    tsum = '<div class="tsum"><div class="tsum-l">Tóm tắt bài</div>%s</div>' % (('<ul>%s</ul>' % ''.join(items)) if items else '<p>%s</p>' % d['sub'])
     h3cards = '<h4>' not in rest   # bài chỉ có h3: mỗi h3 là một thẻ
     if h3cards: rest = rest.replace('<h3>', '<h4>').replace('</h3>', '</h4>')
     parts = re.split(r'(?=<h[34]>)', rest)
