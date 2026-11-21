@@ -8,10 +8,15 @@
       own: [
         ['Bài 4', 'Vai trò của ChatGPT và thiết lập an toàn'], ['Bài 5', 'Công thức giao việc và quy trình 6 bước'], ['Bài 6', 'Email, Word và SOP'],
         ['Bài 7', 'Excel và phân tích KPI'], ['Bài 8', 'PowerPoint, cuộc họp và quản lý lịch'], ['Bài 9', 'Hành chính, nhân sự và mua hàng'],
-        ['Bài 10', 'Dự án, nghiên cứu nguồn và tự động hóa'], ['Bài 11', 'Năm case study và lộ trình 30 ngày'], ['Bài 12', 'Thư viện 96 prompt và phụ lục'],
+        ['Bài 10', 'Dự án, nghiên cứu nguồn và tự động hóa'], ['Bài 11', 'Năm case study và lộ trình 30 ngày'], ['Bài 12', 'Thư viện 96 prompt và phụ lục'], ['Bài 13', 'Tổng kết lớp ChatGPT và dự án cuối'],
       ] },
     { id: 'ai-nguoi-di-lam-gemini', ai: 'gemini', label: 'Gemini', mark: 'G', color: '#1f6fb2',
-      strong: ['Gmail, Docs, Sheets, Drive', 'Tìm thông tin, tài liệu lớn', 'Ảnh và video'], fit: 'Hợp: Văn phòng, kế toán, hành chính', own: [] },
+      strong: ['Gmail, Docs, Sheets, Drive', 'Tìm thông tin, tài liệu lớn', 'Ảnh và video'], fit: 'Hợp: Văn phòng, kế toán, hành chính',
+      own: [
+        ['Bài 4', 'Gemini và bản đồ công cụ cho khối văn phòng'], ['Bài 5', 'Viết câu lệnh chuẩn bằng công thức R-C-T-F'], ['Bài 6', 'Email, họp, báo cáo cho nhân viên văn phòng'],
+        ['Bài 7', 'Bảng tính, đối chiếu, thuyết minh cho kế toán'], ['Bài 8', 'Văn bản, SOP, báo giá, sự kiện cho hành chính'], ['Bài 9', 'Gemini trong hệ sinh thái Google và NotebookLM'],
+        ['Bài 10', 'Bảo mật dữ liệu và kiểm duyệt đầu ra'], ['Bài 11', 'Lộ trình 4 tuần và thư viện câu lệnh'], ['Bài 12', 'Tổng kết lớp Gemini và dự án cuối'],
+      ] },
     { id: 'ai-nguoi-di-lam-claude', ai: 'claude', label: 'Claude', mark: 'C', color: '#2a8a4a',
       strong: ['Viết dài, giọng văn tự nhiên', 'Đọc kỹ tài liệu, hợp đồng', 'Lập trình, làm công cụ'], fit: 'Hợp: Giáo viên, tư vấn, kỹ thuật, quản lý',
       own: [
@@ -64,7 +69,7 @@
     return r;
   }
 
-  function ownSet(c) { return c.ai === 'claude' ? window.AI_WORK_CLAUDE : c.ai === 'chatgpt' ? window.AI_WORK_CHATGPT : null; }
+  function ownSet(c) { return c.ai === 'claude' ? window.AI_WORK_CLAUDE : c.ai === 'chatgpt' ? window.AI_WORK_CHATGPT : c.ai === 'gemini' ? window.AI_WORK_GEMINI : null; }
 
   function courseScreen(c) {
     const own = owned(ctx.license(), c.id);

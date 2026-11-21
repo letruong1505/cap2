@@ -51,3 +51,40 @@ test('ChatGPT Bài 11: có bộ dữ liệu mẫu cho Case 1–4 với số li�
   const names = h.match(/<pre class="pdata">Mau_don[^<]*<\/pre>/)[0].replace(/<[^>]+>/g, '').split('\n');
   assert.strictEqual(names.length, 24);
 });
+
+test('AI cho người đi làm – Gemini: Bài 4–11 dạng thẻ, có thực hành và đáp án đúng', () => {
+  const w = {};
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../renderer/ai-work-gemini.js'), 'utf8'), { window: w });
+  const G = w.AI_WORK_GEMINI;
+  assert.deepStrictEqual(Object.keys(G), ['bai4', 'bai5', 'bai6', 'bai7', 'bai8', 'bai9', 'bai10', 'bai11', 'bai12']);
+  for (const k of Object.keys(G)) {
+    assert.ok(G[k].html.includes('class="tsum"') && G[k].html.includes('tcard tprac') && G[k].html.includes('class="tans"'), k);
+  }
+  // số liệu đáp án
+  assert.strictEqual(1500000 + 800000 + 1200000, 3500000);
+  assert.strictEqual((12 / 10.7 * 100 - 100).toFixed(2), '12.15'); assert.strictEqual((3.5 / 2 * 100 - 100), 75); assert.strictEqual((9 / 8.4 * 100 - 100).toFixed(2), '7.14');
+  assert.strictEqual((3 * 6000000 + 1500000) * 1.1, 21450000); assert.strictEqual((3 * 6200000 + 1800000) * 1.1, 22440000); assert.strictEqual(3 * 5500000 + 3 * 800000, 18900000);
+  assert.strictEqual(200 * 85000, 17000000); assert.strictEqual(150 * 85000, 12750000);
+  for (const t of ['3.500.000', '21.450.000', '22.440.000', '18.900.000', '12.750.000']) assert.ok(Object.values(G).some((x) => x.html.includes(t)), t);
+  // Bài 9 (Google): 450 km < 500 km; 2 đêm × 800.000 + 3 ngày × 200.000 = 2.200.000; QUERY tháng 11: KD 4.000.000, HC 2.600.000, KT 1.500.000
+  assert.strictEqual(2 * 800000 + 3 * 200000, 2200000); assert.strictEqual(1200000 + 2800000, 4000000); assert.strictEqual(600000 + 2000000, 2600000);
+  for (const t of ['2.200.000', '4.000.000', '2.600.000', 'quy chế không quy định']) assert.ok(G.bai9.html.includes(t), t);
+  assert.ok(G.bai9.title.includes('hệ sinh thái Google') && G.bai10.title.includes('Bảo mật') && G.bai11.title.includes('Lộ trình'));
+  const aw = fs.readFileSync(path.join(__dirname, '../renderer/ai-work.js'), 'utf8');
+  assert.ok(aw.includes('AI_WORK_GEMINI') && aw.includes("['Bài 11'"));
+  assert.ok(fs.readFileSync(path.join(__dirname, '../renderer/index.html'), 'utf8').includes('ai-work-gemini.js'));
+});
+
+test('Bài tổng kết Gemini (Bài 12) và ChatGPT (Bài 13): có phiếu tự đánh giá, dự án cuối và số liệu đúng', () => {
+  const w = {}; const ctx = { window: w };
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../renderer/ai-work-gemini.js'), 'utf8'), ctx);
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../renderer/ai-work-chatgpt.js'), 'utf8'), ctx);
+  const g = w.AI_WORK_GEMINI.bai12, c = w.AI_WORK_CHATGPT.bai13;
+  for (const L of [g, c]) for (const t of ['Phiếu tự đánh giá', 'Dự án cuối', 'tcard tprac', 'Checklist 60 giây', 'Kế hoạch 30 ngày']) assert.ok(L.html.includes(t), t);
+  assert.ok(g.title.includes('Bài 12') && c.title.includes('Bài 13'));
+  assert.strictEqual(120 / 150, 0.8); assert.strictEqual(4200000 + 600000 + 1800000, 6600000); assert.strictEqual(3900000 + 650000 + 900000, 5450000);
+  assert.strictEqual((6600000 / 5450000 * 100 - 100).toFixed(2), '21.10'); assert.strictEqual((4200000 / 3900000 * 100 - 100).toFixed(2), '7.69');
+  assert.strictEqual(117 / 130, 0.9); assert.strictEqual((105 / 117 * 100).toFixed(2), '89.74'); assert.strictEqual((99 / 108 * 100 - 105 / 117 * 100).toFixed(1), '1.9');
+  for (const t of ['21,10%', '6.600.000', '5.450.000']) assert.ok(g.html.includes(t), t);
+  for (const t of ['89,74%', '1,9 điểm', '13']) assert.ok(c.html.includes(t), t);
+});
