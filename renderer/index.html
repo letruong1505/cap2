@@ -55,10 +55,10 @@
           <h2>Giá bản quyền</h2>
           <p class="pricing-terms">Mua một lần, dùng <b>vĩnh viễn</b> trên <b>1 máy tính và 1 điện thoại</b>.</p>
           <div class="pricing-options">
-            <div class="price-option best">
+            <button type="button" class="price-option best free" id="open-giasu">
               <span class="price-name">Gia sư AI <span class="price-detail">(Học sinh từ 12 tuổi trở lên)</span></span>
-              <span class="price-value">999.000 đ <s>1.600.000 đ</s></span>
-            </div>
+              <span class="price-value">999.000 đ <s>1.600.000 đ</s> <span class="view-arrow" aria-hidden="true">→</span></span>
+            </button>
             <div class="price-option">
               <span class="price-name">Hệ miễn dịch số <span class="price-detail">(Học sinh 8 - 11 tuổi)</span></span>
               <span class="price-value">990.000 đ</span>
@@ -181,6 +181,10 @@
       <div id="aiwork-body"></div>
     </section>
 
+    <section id="giasu" class="panel" hidden>
+      <div id="giasu-body"></div>
+    </section>
+
     <section id="thpt" class="panel" hidden>
       <button id="btn-thpt-back" class="back-link" type="button">← Chọn lớp</button>
       <div id="thpt-body"></div>
@@ -263,6 +267,8 @@
   <script src="ai-work-claude.js"></script>
   <script src="ai-work-chatgpt.js"></script>
   <script src="ai-work.js"></script>
+  <script src="gia-su-ai-content.js"></script>
+  <script src="gia-su-ai.js"></script>
   <script src="national-data.js"></script>
   <script src="national.js"></script>
   <script src="thpt-exam-data.js"></script>

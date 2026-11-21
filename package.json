@@ -8,7 +8,7 @@
   "scripts": {
     "start": "electron .",
     "validate": "node tools/validate-content.js",
-    "test": "node --test tests/license.test.js tests/games.test.js tests/vietqr.test.js tests/orders-client.test.js tests/updater.test.js tests/release-notes.test.js tests/english.test.js tests/progress.test.js tests/progress-sync.test.js tests/usage.test.js tests/import-legacy.test.js tests/pin.test.js tests/persist.test.js tests/thpt-exam.test.js tests/mobile-bridge.test.js tests/mobile-ota.test.js tests/solid3d.test.js tests/theory-cards.test.js tests/exam.test.js tests/timetable.test.js tests/parent-app.test.js",
+    "test": "node --test tests/license.test.js tests/games.test.js tests/vietqr.test.js tests/orders-client.test.js tests/updater.test.js tests/release-notes.test.js tests/english.test.js tests/progress.test.js tests/progress-sync.test.js tests/usage.test.js tests/import-legacy.test.js tests/pin.test.js tests/persist.test.js tests/thpt-exam.test.js tests/mobile-bridge.test.js tests/mobile-ota.test.js tests/solid3d.test.js tests/theory-cards.test.js tests/exam.test.js tests/timetable.test.js tests/parent-app.test.js tests/gia-su-ai.test.js",
     "dist:win": "electron-builder --win nsis --publish never",
     "dist:win:thpt": "electron-builder --win nsis --publish never --config build-thpt.json",
     "dist:keygen": "electron-builder --win portable --config keygen/builder.json",

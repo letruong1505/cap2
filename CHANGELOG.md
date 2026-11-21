@@ -1,7 +1,9 @@
 ## Bản mới
-- Thời khóa biểu của con tự đồng bộ lên app Phụ huynh (khi đã bật "Cho phụ huynh xem kết quả"), để phụ huynh theo dõi và nhận nhắc học
+- Gia sư AI: thêm giáo trình 8 bài tự học (nhận thức & an toàn AI, kiểm chứng, tự tìm lỗ hổng kiến thức, xây gia sư AI riêng, lộ trình cá nhân hóa). Mở miễn phí phần mở đầu, Bài 1 và Bài 2; các bài còn lại mở khi mua khóa
+- Android: bản này yêu cầu cài apk mới
 
 ## Các bản trước
+- Thời khóa biểu của con tự đồng bộ lên app Phụ huynh (khi đã bật "Cho phụ huynh xem kết quả"), để phụ huynh theo dõi và nhận nhắc học
 - AI cho người đi làm – lớp ChatGPT: thêm 9 bài (Bài 4–12) chuyển từ tài liệu ChatGPT cho nhân viên văn phòng: thiết lập an toàn, công thức giao việc, email/Word/SOP, Excel/KPI, PowerPoint/họp, hành chính–nhân sự–mua hàng, dự án, 5 case study, lộ trình 30 ngày và thư viện 96 prompt
 - Android: bản này yêu cầu cài apk mới
 - Android: sửa lỗi nút "Tải về" cập nhật apk vẫn mở trình duyệt và thông báo nhắc học bài không hiện (app nhận nhầm là máy chưa có plugin)
