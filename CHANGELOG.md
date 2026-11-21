@@ -1,8 +1,10 @@
 ## Bản mới
-- Gia sư AI: giáo trình trình bày lại theo dạng thẻ (tóm tắt đầu bài, mỗi ý một thẻ đánh số, ý dài tách thành gạch đầu dòng) để dễ đọc trên điện thoại
+- AI cho người đi làm – lớp Claude: Bài 4–11 trình bày lại theo dạng thẻ (tóm tắt đầu bài, mỗi ý một thẻ đánh số, ý dài tách thành gạch đầu dòng), giữ nguyên hình minh họa và ví dụ
 - Android: bản này yêu cầu cài apk mới
 
 ## Các bản trước
+- Gia sư AI: giáo trình trình bày lại theo dạng thẻ (tóm tắt đầu bài, mỗi ý một thẻ đánh số, ý dài tách thành gạch đầu dòng) để dễ đọc trên điện thoại
+- Android: bản này yêu cầu cài apk mới
 - AI cho người đi làm: thêm bài tổng kết và dự án cuối cho lớp Gemini (Bài 12) và lớp ChatGPT (Bài 13), có phiếu tự đánh giá năng lực, gói hồ sơ cuối bằng dữ liệu giả lập kèm đáp án
 - AI cho người đi làm – lớp Gemini: thêm 8 bài (Bài 4–11) dạng thẻ từ giáo trình cho khối văn phòng, kế toán, hành chính: nền tảng và chọn công cụ, câu lệnh R-C-T-F, email–họp–báo cáo, bảng tính và đối chiếu, văn bản–SOP–báo giá, Gemini trong hệ sinh thái Google (lệnh @, NotebookLM), bảo mật và kiểm duyệt, lộ trình 4 tuần. Có ví dụ, 16 câu lệnh mẫu và bài thực hành dữ liệu giả lập kèm đáp án
 - Android: bản này yêu cầu cài apk mới
