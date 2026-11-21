@@ -14,12 +14,21 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Tác dụng làm quay của lực lên vật có trục quay cố định phụ thuộc độ lớn của lực và khoảng cách từ trục quay đến giá của lực (cánh tay đòn d). Lực có giá đi qua trục quay không làm vật quay."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Tác dụng làm quay của lực lên vật có trục quay cố định phụ thuộc độ lớn của lực và khoảng cách từ trục quay đến giá của lực (cánh tay đòn d)."
     },
     {
-      "type": "formula",
-      "content": "Moment lực: M = F·d   (đơn vị N·m)"
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Tác dụng làm quay của lực lên vật có trục quay cố định phụ thuộc độ lớn của lực và khoảng cách từ trục quay đến giá của lực (cánh tay đòn d).",
+        "Lực có giá đi qua trục quay không làm vật quay."
+      ],
+      "n": 1,
+      "formulas": [
+        "Moment lực: M = F·d   (đơn vị N·m)"
+      ]
     },
     {
       "type": "figure",
@@ -27,20 +36,28 @@
       "caption": "Đòn bẩy cân bằng theo quy tắc moment"
     },
     {
-      "type": "text",
-      "content": "Quy tắc moment: Muốn một vật có trục quay cố định ở trạng thái cân bằng thì tổng các moment lực có xu hướng làm vật quay theo chiều kim đồng hồ phải bằng tổng các moment lực có xu hướng làm vật quay ngược chiều kim đồng hồ."
+      "type": "card",
+      "title": "Quy tắc moment",
+      "text": "Muốn một vật có trục quay cố định ở trạng thái cân bằng thì tổng các moment lực có xu hướng làm vật quay theo chiều kim đồng hồ phải bằng tổng các moment lực có xu hướng làm vật quay ngược chiều kim đồng hồ.",
+      "n": 2,
+      "formulas": [
+        "ΣM (cùng chiều kim đồng hồ) = ΣM (ngược chiều kim đồng hồ)        Đòn bẩy: F₁·d₁ = F₂·d₂"
+      ]
     },
     {
-      "type": "formula",
-      "content": "ΣM (cùng chiều kim đồng hồ) = ΣM (ngược chiều kim đồng hồ)        Đòn bẩy: F₁·d₁ = F₂·d₂"
+      "type": "card",
+      "title": "Ngẫu lực là hệ hai lực song…",
+      "points": [
+        "Ngẫu lực là hệ hai lực song song, ngược chiều, có độ lớn bằng nhau và cùng tác dụng vào một vật; chỉ làm vật quay.",
+        "Moment ngẫu lực M = F·d với d là khoảng cách giữa hai giá của lực (ví dụ vặn vòi nước, vô lăng)."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Ngẫu lực là hệ hai lực song song, ngược chiều, có độ lớn bằng nhau và cùng tác dụng vào một vật; chỉ làm vật quay. Moment ngẫu lực M = F·d với d là khoảng cách giữa hai giá của lực (ví dụ vặn vòi nước, vô lăng)."
-    },
-    {
-      "type": "text",
-      "content": "Điều kiện cân bằng tổng quát của vật rắn: tổng các lực tác dụng lên vật bằng 0 (không chuyển động tịnh tiến) và tổng moment lực đối với một trục bất kì bằng 0 (không quay)."
+      "type": "card",
+      "title": "Điều kiện cân bằng tổng quát của vật rắn",
+      "text": "Tổng các lực tác dụng lên vật bằng 0 (không chuyển động tịnh tiến) và tổng moment lực đối với một trục bất kì bằng 0 (không quay).",
+      "n": 4
     },
     {
       "type": "method",

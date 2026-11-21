@@ -14,8 +14,18 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Đường tròn tâm I(a; b), bán kính R là tập hợp các điểm M(x; y) sao cho IM = R."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Đường tròn tâm I(a; b), bán kính R là tập hợp các điểm M(x; y) sao cho IM = R.",
+      "n": 1,
+      "formulas": [
+        "(x − a)² + (y − b)² = R²"
+      ]
     },
     {
       "type": "figure",
@@ -23,24 +33,22 @@
       "caption": "Đường tròn tâm I(a; b), bán kính R"
     },
     {
-      "type": "formula",
-      "content": "(x − a)² + (y − b)² = R²"
+      "type": "card",
+      "title": "Phương trình x² + y² − 2ax…",
+      "text": "Phương trình x² + y² − 2ax − 2by + c = 0 là phương trình đường tròn khi và chỉ khi a² + b² − c > 0; khi đó tâm là I(a; b) và bán kính R = √(a² + b² − c).",
+      "n": 2,
+      "formulas": [
+        "x² + y² − 2ax − 2by + c = 0  (a² + b² − c > 0):  tâm I(a; b), R = √(a² + b² − c)"
+      ]
     },
     {
-      "type": "text",
-      "content": "Phương trình x² + y² − 2ax − 2by + c = 0 là phương trình đường tròn khi và chỉ khi a² + b² − c > 0; khi đó tâm là I(a; b) và bán kính R = √(a² + b² − c)."
-    },
-    {
-      "type": "formula",
-      "content": "x² + y² − 2ax − 2by + c = 0  (a² + b² − c > 0):  tâm I(a; b), R = √(a² + b² − c)"
-    },
-    {
-      "type": "text",
-      "content": "Tiếp tuyến của đường tròn tâm I tại điểm M₀(x₀; y₀) thuộc đường tròn là đường thẳng đi qua M₀ và nhận →IM₀ = (x₀ − a; y₀ − b) làm vectơ pháp tuyến."
-    },
-    {
-      "type": "formula",
-      "content": "Tiếp tuyến tại M₀: (x₀ − a)(x − x₀) + (y₀ − b)(y − y₀) = 0"
+      "type": "card",
+      "title": "Tiếp tuyến của đường tròn tâm I…",
+      "text": "Tiếp tuyến của đường tròn tâm I tại điểm M₀(x₀; y₀) thuộc đường tròn là đường thẳng đi qua M₀ và nhận →IM₀ = (x₀ − a; y₀ − b) làm vectơ pháp tuyến.",
+      "n": 3,
+      "formulas": [
+        "Tiếp tuyến tại M₀: (x₀ − a)(x − x₀) + (y₀ − b)(y − y₀) = 0"
+      ]
     },
     {
       "type": "method",

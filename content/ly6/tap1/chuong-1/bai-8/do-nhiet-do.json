@@ -13,16 +13,27 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Nhiệt độ là số đo độ \"nóng\", \"lạnh\" của vật. Không thể dùng cảm giác để xác định chính xác nhiệt độ."
     },
     {
-      "type": "text",
-      "content": "Thang nhiệt độ Celsius (°C): nhiệt độ nước đá đang tan là 0 °C, nước đang sôi là 100 °C. Thang Kelvin (K) là thang nhiệt độ trong hệ SI; nhiệt độ 0 °C ứng với 273 K."
+      "type": "card",
+      "title": "Nhiệt độ là số đo độ \"nóng\", \"lạnh\" của vật",
+      "text": "Không thể dùng cảm giác để xác định chính xác nhiệt độ.",
+      "n": 1
     },
     {
-      "type": "formula",
-      "content": "T(K) = t(°C) + 273;   t(°F) = 1,8·t(°C) + 32"
+      "type": "card",
+      "title": "Thang nhiệt độ Celsius (°C)",
+      "points": [
+        "Nhiệt độ nước đá đang tan là 0 °C, nước đang sôi là 100 °C.",
+        "Thang Kelvin (K) là thang nhiệt độ trong hệ SI; nhiệt độ 0 °C ứng với 273 K."
+      ],
+      "n": 2,
+      "formulas": [
+        "T(K) = t(°C) + 273;   t(°F) = 1,8·t(°C) + 32"
+      ]
     },
     {
       "type": "figure",
@@ -30,8 +41,13 @@
       "caption": "Nhiệt kế và ba thang nhiệt độ Celsius, Kelvin, Fahrenheit."
     },
     {
-      "type": "text",
-      "content": "Nhiệt kế hoạt động dựa trên sự dãn nở vì nhiệt của chất lỏng (thuỷ ngân, rượu) hoặc cảm biến. Các loại: nhiệt kế y tế, nhiệt kế rượu, nhiệt kế điện tử, nhiệt kế hồng ngoại."
+      "type": "card",
+      "title": "Nhiệt kế hoạt động dựa trên sự…",
+      "points": [
+        "Nhiệt kế hoạt động dựa trên sự dãn nở vì nhiệt của chất lỏng (thuỷ ngân, rượu) hoặc cảm biến.",
+        "Các loại: nhiệt kế y tế, nhiệt kế rượu, nhiệt kế điện tử, nhiệt kế hồng ngoại."
+      ],
+      "n": 3
     }
   ],
   "examples": [

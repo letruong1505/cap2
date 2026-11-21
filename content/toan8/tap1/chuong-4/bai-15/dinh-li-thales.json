@@ -10,12 +10,27 @@
   "bookPage": 77,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Tỉ số của hai đoạn thẳng là tỉ số độ dài của chúng theo cùng một đơn vị đo. Tỉ số của hai đoạn thẳng AB và CD kí hiệu là AB/CD."
     },
     {
-      "type": "text",
-      "content": "Định lí Thalès: nếu một đường thẳng song song với một cạnh của tam giác và cắt hai cạnh còn lại thì nó định ra trên hai cạnh đó những đoạn thẳng tương ứng tỉ lệ."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Tỉ số của hai đoạn thẳng là tỉ số độ dài của chúng theo cùng một đơn vị đo.",
+        "Tỉ số của hai đoạn thẳng AB và CD kí hiệu là AB/CD."
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Định lí Thalès",
+      "text": "Nếu một đường thẳng song song với một cạnh của tam giác và cắt hai cạnh còn lại thì nó định ra trên hai cạnh đó những đoạn thẳng tương ứng tỉ lệ.",
+      "n": 2,
+      "formulas": [
+        "MN ∥ BC ⇒ AM/AB = AN/AC; AM/MB = AN/NC; MB/AB = NC/AC"
+      ]
     },
     {
       "type": "figure",
@@ -23,12 +38,10 @@
       "caption": "Tam giác ABC có M thuộc AB, N thuộc AC và MN ∥ BC."
     },
     {
-      "type": "formula",
-      "content": "MN ∥ BC ⇒ AM/AB = AN/AC; AM/MB = AN/NC; MB/AB = NC/AC"
-    },
-    {
-      "type": "text",
-      "content": "Định lí Thalès đảo: nếu một đường thẳng cắt hai cạnh của tam giác và định ra trên hai cạnh đó những đoạn thẳng tương ứng tỉ lệ thì đường thẳng đó song song với cạnh còn lại của tam giác."
+      "type": "card",
+      "title": "Định lí Thalès đảo",
+      "text": "Nếu một đường thẳng cắt hai cạnh của tam giác và định ra trên hai cạnh đó những đoạn thẳng tương ứng tỉ lệ thì đường thẳng đó song song với cạnh còn lại của tam giác.",
+      "n": 3
     },
     {
       "type": "figure",
@@ -36,12 +49,13 @@
       "caption": "Thalès đảo: AM/MB = AN/NC thì MN ∥ BC"
     },
     {
-      "type": "text",
-      "content": "Hệ quả: nếu một đường thẳng song song với một cạnh của tam giác và cắt hai cạnh còn lại thì nó tạo thành một tam giác mới có ba cạnh tương ứng tỉ lệ với ba cạnh của tam giác đã cho."
-    },
-    {
-      "type": "formula",
-      "content": "MN ∥ BC ⇒ AM/AB = AN/AC = MN/BC"
+      "type": "card",
+      "title": "Hệ quả",
+      "text": "Nếu một đường thẳng song song với một cạnh của tam giác và cắt hai cạnh còn lại thì nó tạo thành một tam giác mới có ba cạnh tương ứng tỉ lệ với ba cạnh của tam giác đã cho.",
+      "n": 4,
+      "formulas": [
+        "MN ∥ BC ⇒ AM/AB = AN/AC = MN/BC"
+      ]
     },
     {
       "type": "figure",

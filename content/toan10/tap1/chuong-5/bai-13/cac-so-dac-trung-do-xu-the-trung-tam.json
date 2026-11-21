@@ -14,20 +14,44 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Số trung bình của mẫu số liệu x₁, x₂, ..., x_n là x̄ = (x₁ + x₂ + ... + x_n)/n. Nếu giá trị x_i xuất hiện với tần số m_i thì x̄ = (m₁x₁ + m₂x₂ + ... + m_kx_k)/n. Số trung bình bị ảnh hưởng bởi các giá trị bất thường (quá lớn hoặc quá nhỏ)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Số trung bình của mẫu số liệu x₁, x₂, ..., x_n là x̄ = (x₁ + x₂ + ... + x_n)/n. Nếu giá trị x_i xuất hiện với tần số m_i thì x̄ = (m₁x₁ + m₂x₂ + ... + m_kx_k)/n."
     },
     {
-      "type": "formula",
-      "content": "x̄ = (x₁ + x₂ + ... + x_n)/n"
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Số trung bình của mẫu số liệu x₁, x₂, ..., x_n là x̄ = (x₁ + x₂ + ... + x_n)/n.",
+        "Nếu giá trị x_i xuất hiện với tần số m_i thì x̄ = (m₁x₁ + m₂x₂ + ... + m_kx_k)/n.",
+        "Số trung bình bị ảnh hưởng bởi các giá trị bất thường (quá lớn hoặc quá nhỏ)."
+      ],
+      "n": 1,
+      "formulas": [
+        "x̄ = (x₁ + x₂ + ... + x_n)/n"
+      ]
     },
     {
-      "type": "text",
-      "content": "Trung vị M_e: sắp xếp mẫu theo thứ tự không giảm. Nếu n lẻ, trung vị là số ở chính giữa (vị trí (n + 1)/2); nếu n chẵn, trung vị là trung bình cộng của hai số ở giữa (vị trí n/2 và n/2 + 1). Trung vị không bị ảnh hưởng bởi giá trị bất thường."
+      "type": "card",
+      "title": "Trung vị M_e",
+      "points": [
+        "Sắp xếp mẫu theo thứ tự không giảm.",
+        "Nếu n lẻ, trung vị là số ở chính giữa (vị trí (n + 1)/2); nếu n chẵn, trung vị là trung bình cộng của hai số ở giữa (vị trí n/2 và n/2 + 1).",
+        "Trung vị không bị ảnh hưởng bởi giá trị bất thường."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Tứ phân vị: sắp xếp mẫu không giảm. Q₂ là trung vị của mẫu; Q₁ là trung vị của nửa số liệu bên trái Q₂ (không kể Q₂ nếu n lẻ); Q₃ là trung vị của nửa bên phải Q₂. Ba số Q₁, Q₂, Q₃ chia mẫu thành bốn phần có số lượng xấp xỉ nhau."
+      "type": "card",
+      "title": "Tứ phân vị",
+      "points": [
+        "Sắp xếp mẫu không giảm.",
+        "Q₂ là trung vị của mẫu;",
+        "Q₁ là trung vị của nửa số liệu bên trái Q₂ (không kể Q₂ nếu n lẻ);",
+        "Q₃ là trung vị của nửa bên phải Q₂.",
+        "Ba số Q₁, Q₂, Q₃ chia mẫu thành bốn phần có số lượng xấp xỉ nhau."
+      ],
+      "n": 3
     },
     {
       "type": "figure",
@@ -35,8 +59,13 @@
       "caption": "Trung vị và tứ phân vị của mẫu 1, 2, 3, 5, 7, 8, 9"
     },
     {
-      "type": "text",
-      "content": "Mốt M_o là giá trị xuất hiện với tần số lớn nhất trong mẫu. Một mẫu có thể có nhiều mốt hoặc không có mốt (khi mọi giá trị có cùng tần số). Mốt dùng được cả với dữ liệu định tính (ví dụ màu sắc, nhãn hiệu)."
+      "type": "card",
+      "title": "Mốt M_o là giá trị xuất hiện với tần số lớn nhất trong mẫu",
+      "points": [
+        "Một mẫu có thể có nhiều mốt hoặc không có mốt (khi mọi giá trị có cùng tần số).",
+        "Mốt dùng được cả với dữ liệu định tính (ví dụ màu sắc, nhãn hiệu)."
+      ],
+      "n": 4
     },
     {
       "type": "method",

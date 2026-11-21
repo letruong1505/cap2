@@ -10,16 +10,27 @@
   "bookPage": 69,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Trong một phép thử có n kết quả có thể xảy ra, đồng khả năng. Nếu biến cố A có k kết quả thuận lợi thì xác suất của biến cố A là P(A) = k/n."
     },
     {
-      "type": "formula",
-      "content": "P(A) = (số kết quả thuận lợi cho A) / (số kết quả có thể)"
+      "type": "card",
+      "title": "Trong một phép thử có n kết quả có thể xảy ra, đồng khả năng",
+      "text": "Nếu biến cố A có k kết quả thuận lợi thì xác suất của biến cố A là P(A) = k/n.",
+      "n": 1,
+      "formulas": [
+        "P(A) = (số kết quả thuận lợi cho A) / (số kết quả có thể)"
+      ]
     },
     {
-      "type": "text",
-      "content": "Xác suất của một biến cố luôn nằm từ 0 đến 1: 0 ≤ P(A) ≤ 1. Biến cố không thể có xác suất bằng 0; biến cố chắc chắn có xác suất bằng 1."
+      "type": "card",
+      "title": "Xác suất của một biến cố luôn nằm từ 0 đến 1",
+      "points": [
+        "0 ≤ P(A) ≤ 1.",
+        "Biến cố không thể có xác suất bằng 0; biến cố chắc chắn có xác suất bằng 1."
+      ],
+      "n": 2
     },
     {
       "type": "figure",

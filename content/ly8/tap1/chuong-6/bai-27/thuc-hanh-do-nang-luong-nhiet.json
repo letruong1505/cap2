@@ -14,28 +14,54 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Dây đốt đặt trong bình nhiệt lượng kế biến năng lượng điện thành năng lượng nhiệt đun nóng nước. Joulemeter đo năng lượng điện do nguồn cung cấp, từ đó biết năng lượng nhiệt nước nhận được (bỏ qua hao phí)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Dây đốt đặt trong bình nhiệt lượng kế biến năng lượng điện thành năng lượng nhiệt đun nóng nước."
     },
     {
-      "type": "text",
-      "content": "Cách tiến hành: đổ nước ngập dây đốt và đầu đo nhiệt độ; mắc đúng joulemeter; chọn đại lượng đo là năng lượng; khuấy liên tục; đọc nhiệt độ đầu t₁; bật nguồn, đọc năng lượng khi nhiệt độ tăng thêm 3 °C, 6 °C, 9 °C; lặp lại với lượng nước nhiều hơn."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Dây đốt đặt trong bình nhiệt lượng kế biến năng lượng điện thành năng lượng nhiệt đun nóng nước.",
+        "Joulemeter đo năng lượng điện do nguồn cung cấp, từ đó biết năng lượng nhiệt nước nhận được (bỏ qua hao phí)."
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Nhận xét: khi nhiệt độ tăng thêm càng nhiều thì năng lượng nhiệt cần cung cấp càng nhiều; với cùng độ tăng nhiệt độ, lượng nước càng nhiều thì cần năng lượng càng lớn."
+      "type": "card",
+      "title": "Cách tiến hành",
+      "points": [
+        "Đổ nước ngập dây đốt và đầu đo nhiệt độ; mắc đúng joulemeter; chọn đại lượng đo là năng lượng; khuấy liên tục;",
+        "Đọc nhiệt độ đầu t₁; bật nguồn, đọc năng lượng khi nhiệt độ tăng thêm 3 °C, 6 °C, 9 °C; lặp lại với lượng nước nhiều hơn."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Nhiệt lượng là phần nhiệt năng mà vật nhận được hay mất đi trong quá trình truyền nhiệt. Nhiệt lượng cần cung cấp cho m (kg) nước tăng từ t₁ (°C) đến t₂ (°C):"
+      "type": "card",
+      "title": "Nhận xét",
+      "text": "Khi nhiệt độ tăng thêm càng nhiều thì năng lượng nhiệt cần cung cấp càng nhiều; với cùng độ tăng nhiệt độ, lượng nước càng nhiều thì cần năng lượng càng lớn.",
+      "n": 3
     },
     {
-      "type": "formula",
-      "content": "Q = m · c · (t₂ − t₁)   (c = 4 180 J/(kg·K) là nhiệt dung riêng của nước)"
+      "type": "card",
+      "title": "Nhiệt lượng là phần nhiệt năng mà…",
+      "points": [
+        "Nhiệt lượng là phần nhiệt năng mà vật nhận được hay mất đi trong quá trình truyền nhiệt.",
+        "Nhiệt lượng cần cung cấp cho m (kg) nước tăng từ t₁ (°C) đến t₂ (°C):"
+      ],
+      "n": 4,
+      "formulas": [
+        "Q = m · c · (t₂ − t₁)   (c = 4 180 J/(kg·K) là nhiệt dung riêng của nước)"
+      ]
     },
     {
-      "type": "text",
-      "content": "Nước sôi ở 100 °C (ở áp suất khí quyển thường). Muốn đun sôi nước từ t₁ thì Q = m·c·(100 − t₁). Có thể dùng kết quả này để ước lượng năng lượng điện cần cung cấp."
+      "type": "card",
+      "title": "Nước sôi ở 100 °C (ở áp suất khí quyển thường)",
+      "points": [
+        "Muốn đun sôi nước từ t₁ thì Q = m·c·(100 − t₁).",
+        "Có thể dùng kết quả này để ước lượng năng lượng điện cần cung cấp."
+      ],
+      "n": 5
     }
   ],
   "examples": [

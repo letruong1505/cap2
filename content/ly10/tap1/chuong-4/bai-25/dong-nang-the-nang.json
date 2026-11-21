@@ -14,24 +14,42 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Động năng là dạng năng lượng mà vật có được do chuyển động. Động năng là đại lượng vô hướng, không âm, phụ thuộc hệ quy chiếu."
     },
     {
-      "type": "formula",
-      "content": "W_đ = ½·m·v²        (J)"
+      "type": "card",
+      "title": "Động năng là dạng năng lượng mà vật có được do chuyển động",
+      "text": "Động năng là đại lượng vô hướng, không âm, phụ thuộc hệ quy chiếu.",
+      "n": 1,
+      "formulas": [
+        "W_đ = ½·m·v²        (J)"
+      ]
     },
     {
-      "type": "text",
-      "content": "Định lí động năng: Độ biến thiên động năng của vật bằng tổng công của các lực tác dụng lên vật. Nếu công dương thì động năng tăng; công âm thì động năng giảm."
+      "type": "card",
+      "title": "Định lí động năng",
+      "points": [
+        "Độ biến thiên động năng của vật bằng tổng công của các lực tác dụng lên vật.",
+        "Nếu công dương thì động năng tăng; công âm thì động năng giảm."
+      ],
+      "n": 2,
+      "formulas": [
+        "W_đ2 − W_đ1 = A  (tổng công của các lực tác dụng)"
+      ]
     },
     {
-      "type": "formula",
-      "content": "W_đ2 − W_đ1 = A  (tổng công của các lực tác dụng)"
-    },
-    {
-      "type": "text",
-      "content": "Thế năng trọng trường là dạng năng lượng mà vật có được do vị trí của nó trong trọng trường (độ cao so với mốc thế năng). Thế năng phụ thuộc việc chọn mốc: tại mốc W_t = 0, trên mốc W_t > 0, dưới mốc W_t < 0."
+      "type": "card",
+      "title": "Thế năng trọng trường là dạng năng…",
+      "points": [
+        "Thế năng trọng trường là dạng năng lượng mà vật có được do vị trí của nó trong trọng trường (độ cao so với mốc thế năng).",
+        "Thế năng phụ thuộc việc chọn mốc: tại mốc W_t = 0, trên mốc W_t > 0, dưới mốc W_t < 0."
+      ],
+      "n": 3,
+      "formulas": [
+        "W_t = m·g·h        A_P = W_t1 − W_t2  (công của trọng lực bằng độ giảm thế năng)"
+      ]
     },
     {
       "type": "figure",
@@ -39,12 +57,10 @@
       "caption": "Thế năng trọng trường phụ thuộc độ cao, động năng phụ thuộc vận tốc"
     },
     {
-      "type": "formula",
-      "content": "W_t = m·g·h        A_P = W_t1 − W_t2  (công của trọng lực bằng độ giảm thế năng)"
-    },
-    {
-      "type": "text",
-      "content": "Ngoài thế năng trọng trường còn có thế năng đàn hồi của lò xo bị biến dạng (W = ½k(Δl)²) – vật đàn hồi bị biến dạng có khả năng sinh công."
+      "type": "card",
+      "title": "Ngoài thế năng trọng trường còn có…",
+      "text": "Ngoài thế năng trọng trường còn có thế năng đàn hồi của lò xo bị biến dạng (W = ½k(Δl)²) – vật đàn hồi bị biến dạng có khả năng sinh công.",
+      "n": 4
     },
     {
       "type": "method",

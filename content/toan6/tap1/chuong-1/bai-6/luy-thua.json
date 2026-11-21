@@ -13,8 +13,22 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Luỹ thừa bậc n của a là tích của n thừa số bằng nhau, mỗi thừa số bằng a (n ∈ ℕ*). a là cơ số, n là số mũ. a² đọc là a bình phương, a³ đọc là a lập phương. Quy ước a¹ = a, a⁰ = 1 (a ≠ 0)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Luỹ thừa bậc n của a là tích của n thừa số bằng nhau, mỗi thừa số bằng a (n ∈ ℕ*). a là cơ số, n là số mũ. a² đọc là a bình phương, a³ đọc là a lập phương."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Luỹ thừa bậc n của a là tích của n thừa số bằng nhau, mỗi thừa số bằng a (n ∈ ℕ*). a là cơ số, n là số mũ. a² đọc là a bình phương, a³ đọc là a lập phương.",
+        "Quy ước a¹ = a, a⁰ = 1 (a ≠ 0)."
+      ],
+      "n": 1,
+      "formulas": [
+        "aⁿ = a·a·…·a (n thừa số a)",
+        "aᵐ·aⁿ = aᵐ⁺ⁿ;   aᵐ : aⁿ = aᵐ⁻ⁿ (a ≠ 0, m ≥ n)"
+      ]
     },
     {
       "type": "figure",
@@ -22,16 +36,10 @@
       "caption": "Bình phương và lập phương (sơ đồ)"
     },
     {
-      "type": "formula",
-      "content": "aⁿ = a·a·…·a (n thừa số a)"
-    },
-    {
-      "type": "formula",
-      "content": "aᵐ·aⁿ = aᵐ⁺ⁿ;   aᵐ : aⁿ = aᵐ⁻ⁿ (a ≠ 0, m ≥ n)"
-    },
-    {
-      "type": "text",
-      "content": "Mọi số tự nhiên đều viết được dưới dạng tổng giá trị các chữ số nhân với luỹ thừa của 10, ví dụ 2 345 = 2·10³ + 3·10² + 4·10 + 5."
+      "type": "card",
+      "title": "Mọi số tự nhiên đều viết được…",
+      "text": "Mọi số tự nhiên đều viết được dưới dạng tổng giá trị các chữ số nhân với luỹ thừa của 10, ví dụ 2 345 = 2·10³ + 3·10² + 4·10 + 5.",
+      "n": 2
     }
   ],
   "examples": [

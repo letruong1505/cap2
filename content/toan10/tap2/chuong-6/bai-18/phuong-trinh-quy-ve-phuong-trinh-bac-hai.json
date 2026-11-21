@@ -14,24 +14,39 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Dạng 1: √(ax² + bx + c) = √(dx² + ex + f). Bình phương hai vế đưa về ax² + bx + c = dx² + ex + f, giải tìm x rồi thử lại: chỉ nhận nghiệm làm cả hai biểu thức dưới căn không âm."
     },
     {
-      "type": "formula",
-      "content": "√A = √B  ⇒  A = B (rồi thử lại điều kiện A ≥ 0)"
+      "type": "card",
+      "title": "Dạng 1",
+      "points": [
+        "√(ax² + bx + c) = √(dx² + ex + f).",
+        "Bình phương hai vế đưa về ax² + bx + c = dx² + ex + f, giải tìm x rồi thử lại: chỉ nhận nghiệm làm cả hai biểu thức dưới căn không âm."
+      ],
+      "n": 1,
+      "formulas": [
+        "√A = √B  ⇒  A = B (rồi thử lại điều kiện A ≥ 0)"
+      ]
     },
     {
-      "type": "text",
-      "content": "Dạng 2: √(ax² + bx + c) = dx + e. Bình phương hai vế đưa về ax² + bx + c = (dx + e)², giải tìm x rồi thử lại: chỉ nhận nghiệm làm vế phải dx + e ≥ 0 (và biểu thức dưới căn không âm, điều này tự đúng khi vế phải không âm)."
+      "type": "card",
+      "title": "Dạng 2",
+      "points": [
+        "√(ax² + bx + c) = dx + e.",
+        "Bình phương hai vế đưa về ax² + bx + c = (dx + e)², giải tìm x rồi thử lại: chỉ nhận nghiệm làm vế phải dx + e ≥ 0 (và biểu thức dưới căn không âm, điều này tự đúng khi vế phải không âm)."
+      ],
+      "n": 2,
+      "formulas": [
+        "√A = B  ⇔  B ≥ 0 và A = B²"
+      ]
     },
     {
-      "type": "formula",
-      "content": "√A = B  ⇔  B ≥ 0 và A = B²"
-    },
-    {
-      "type": "text",
-      "content": "Vì phép bình phương có thể tạo nghiệm ngoại lai, luôn phải thử lại nghiệm vào phương trình ban đầu (hoặc kiểm tra điều kiện) trước khi kết luận."
+      "type": "card",
+      "title": "Vì phép bình phương có thể tạo…",
+      "text": "Vì phép bình phương có thể tạo nghiệm ngoại lai, luôn phải thử lại nghiệm vào phương trình ban đầu (hoặc kiểm tra điều kiện) trước khi kết luận.",
+      "n": 3
     },
     {
       "type": "method",

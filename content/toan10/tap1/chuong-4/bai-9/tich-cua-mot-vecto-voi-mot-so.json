@@ -14,8 +14,21 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Tích của vectơ →a ≠ →0 với số thực k ≠ 0 là vectơ k→a, cùng hướng với →a nếu k > 0, ngược hướng với →a nếu k < 0, và có độ dài |k→a| = |k|·|→a|. Quy ước 0→a = →0 và k→0 = →0."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Tích của vectơ →a ≠ →0 với số thực k ≠ 0 là vectơ k→a, cùng hướng với →a nếu k > 0, ngược hướng với →a nếu k < 0, và có độ dài |k→a| = |k|·|→a|."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Tích của vectơ →a ≠ →0 với số thực k ≠ 0 là vectơ k→a, cùng hướng với →a nếu k > 0, ngược hướng với →a nếu k < 0, và có độ dài |k→a| = |k|·|→a|.",
+        "Quy ước 0→a = →0 và k→0 = →0."
+      ],
+      "n": 1,
+      "formulas": [
+        "k(→a + →b) = k→a + k→b        (h + k)→a = h→a + k→a        h(k→a) = (hk)→a        1→a = →a,  (−1)→a = −→a"
+      ]
     },
     {
       "type": "figure",
@@ -23,20 +36,31 @@
       "caption": "Tích của vectơ →a với các số 2, −2 và 1/2"
     },
     {
-      "type": "formula",
-      "content": "k(→a + →b) = k→a + k→b        (h + k)→a = h→a + k→a        h(k→a) = (hk)→a        1→a = →a,  (−1)→a = −→a"
+      "type": "card",
+      "title": "Trung điểm và trọng tâm",
+      "points": [
+        "Nếu I là trung điểm AB thì với mọi điểm M, →MA + →MB = 2→MI.",
+        "Nếu G là trọng tâm tam giác ABC thì với mọi M, →MA + →MB + →MC = 3→MG."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Trung điểm và trọng tâm: nếu I là trung điểm AB thì với mọi điểm M, →MA + →MB = 2→MI. Nếu G là trọng tâm tam giác ABC thì với mọi M, →MA + →MB + →MC = 3→MG."
+      "type": "card",
+      "title": "Điều kiện cùng phương",
+      "points": [
+        "→b cùng phương với →a (→a ≠ →0) khi và chỉ khi tồn tại số k sao cho →b = k→a.",
+        "Ba điểm phân biệt A, B, C thẳng hàng khi và chỉ khi có số k để →AB = k→AC."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Điều kiện cùng phương: →b cùng phương với →a (→a ≠ →0) khi và chỉ khi tồn tại số k sao cho →b = k→a. Ba điểm phân biệt A, B, C thẳng hàng khi và chỉ khi có số k để →AB = k→AC."
-    },
-    {
-      "type": "text",
-      "content": "Phân tích vectơ: cho hai vectơ →a, →b không cùng phương. Khi đó mọi vectơ →u đều phân tích được duy nhất dưới dạng →u = x→a + y→b với x, y là hai số thực."
+      "type": "card",
+      "title": "Phân tích vectơ",
+      "points": [
+        "Cho hai vectơ →a, →b không cùng phương.",
+        "Khi đó mọi vectơ →u đều phân tích được duy nhất dưới dạng →u = x→a + y→b với x, y là hai số thực."
+      ],
+      "n": 4
     },
     {
       "type": "method",

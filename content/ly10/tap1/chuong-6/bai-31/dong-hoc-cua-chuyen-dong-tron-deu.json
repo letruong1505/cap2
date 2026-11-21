@@ -14,8 +14,18 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Chuyển động tròn đều là chuyển động có quỹ đạo là đường tròn và tốc độ không đổi. Vectơ vận tốc luôn tiếp tuyến với quỹ đạo, có độ lớn không đổi nhưng hướng thay đổi liên tục."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Chuyển động tròn đều là chuyển động có quỹ đạo là đường tròn và tốc độ không đổi.",
+        "Vectơ vận tốc luôn tiếp tuyến với quỹ đạo, có độ lớn không đổi nhưng hướng thay đổi liên tục."
+      ],
+      "n": 1
     },
     {
       "type": "figure",
@@ -23,24 +33,36 @@
       "caption": "Vận tốc trong chuyển động tròn đều luôn tiếp tuyến với quỹ đạo"
     },
     {
-      "type": "text",
-      "content": "Radian (rad) là số đo góc ở tâm chắn cung có độ dài bằng bán kính. Độ dịch chuyển góc θ = s/r (rad); 360° = 2π rad, 180° = π rad."
+      "type": "card",
+      "title": "Radian (rad) là số đo góc ở…",
+      "points": [
+        "Radian (rad) là số đo góc ở tâm chắn cung có độ dài bằng bán kính.",
+        "Độ dịch chuyển góc θ = s/r (rad);",
+        "360° = 2π rad, 180° = π rad."
+      ],
+      "n": 2,
+      "formulas": [
+        "Tốc độ góc: ω = Δθ/Δt (rad/s)        Tốc độ: v = ω·r",
+        "Chu kì: T = 2π/ω (s)        Tần số: f = 1/T (Hz hoặc vòng/s)        ω = 2πf"
+      ]
     },
     {
-      "type": "formula",
-      "content": "Tốc độ góc: ω = Δθ/Δt (rad/s)        Tốc độ: v = ω·r"
+      "type": "card",
+      "title": "Chu kì là thời gian vật đi…",
+      "points": [
+        "Chu kì là thời gian vật đi hết một vòng; tần số là số vòng vật đi được trong một giây.",
+        "Các điểm trên cùng một vật rắn quay quanh trục có cùng tốc độ góc nhưng điểm càng xa trục thì tốc độ dài càng lớn."
+      ],
+      "n": 3
     },
     {
-      "type": "formula",
-      "content": "Chu kì: T = 2π/ω (s)        Tần số: f = 1/T (Hz hoặc vòng/s)        ω = 2πf"
-    },
-    {
-      "type": "text",
-      "content": "Chu kì là thời gian vật đi hết một vòng; tần số là số vòng vật đi được trong một giây. Các điểm trên cùng một vật rắn quay quanh trục có cùng tốc độ góc nhưng điểm càng xa trục thì tốc độ dài càng lớn."
-    },
-    {
-      "type": "text",
-      "content": "Ví dụ: kim giây quay một vòng trong 60 s nên ω = 2π/60 ≈ 0,105 rad/s; Trái Đất tự quay một vòng trong khoảng 24 giờ."
+      "type": "card",
+      "title": "Ví dụ",
+      "points": [
+        "Kim giây quay một vòng trong 60 s nên ω = 2π/60 ≈ 0,105 rad/s;",
+        "Trái Đất tự quay một vòng trong khoảng 24 giờ."
+      ],
+      "n": 4
     },
     {
       "type": "method",

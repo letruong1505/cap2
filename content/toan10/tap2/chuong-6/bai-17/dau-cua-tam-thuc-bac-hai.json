@@ -14,8 +14,18 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Tam thức bậc hai là biểu thức f(x) = ax² + bx + c với a ≠ 0. Nghiệm của phương trình ax² + bx + c = 0 gọi là nghiệm của tam thức; Δ = b² − 4ac là biệt thức."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Tam thức bậc hai là biểu thức f(x) = ax² + bx + c với a ≠ 0. Nghiệm của phương trình ax² + bx + c = 0 gọi là nghiệm của tam thức;"
+    },
+    {
+      "type": "card",
+      "title": "Tam thức bậc hai là biểu thức f(x) = ax² + bx + c với a ≠ 0",
+      "points": [
+        "Nghiệm của phương trình ax² + bx + c = 0 gọi là nghiệm của tam thức;",
+        "Δ = b² − 4ac là biệt thức."
+      ],
+      "n": 1
     },
     {
       "type": "figure",
@@ -23,20 +33,29 @@
       "caption": "Đồ thị minh hoạ dấu tam thức khi a < 0 và Δ > 0"
     },
     {
-      "type": "text",
-      "content": "Định lí về dấu: nếu Δ < 0 thì f(x) cùng dấu với a với mọi x. Nếu Δ = 0 thì f(x) cùng dấu với a với mọi x ≠ −b/(2a). Nếu Δ > 0 với hai nghiệm x₁ < x₂ thì f(x) trái dấu với a khi x₁ < x < x₂ và cùng dấu với a khi x < x₁ hoặc x > x₂ (\"trong trái, ngoài cùng\")."
+      "type": "card",
+      "title": "Định lí về dấu",
+      "points": [
+        "Nếu Δ < 0 thì f(x) cùng dấu với a với mọi x.",
+        "Nếu Δ = 0 thì f(x) cùng dấu với a với mọi x ≠ −b/(2a).",
+        "Nếu Δ > 0 với hai nghiệm x₁ < x₂ thì f(x) trái dấu với a khi x₁ < x < x₂ và cùng dấu với a khi x < x₁ hoặc x > x₂ (\"trong trái, ngoài cùng\")."
+      ],
+      "n": 2,
+      "formulas": [
+        "Δ < 0: a·f(x) > 0 ∀x        Δ = 0: a·f(x) > 0 ∀x ≠ −b/(2a)        Δ > 0: trong khoảng hai nghiệm trái dấu a, ngoài cùng dấu a"
+      ]
     },
     {
-      "type": "formula",
-      "content": "Δ < 0: a·f(x) > 0 ∀x        Δ = 0: a·f(x) > 0 ∀x ≠ −b/(2a)        Δ > 0: trong khoảng hai nghiệm trái dấu a, ngoài cùng dấu a"
-    },
-    {
-      "type": "text",
-      "content": "Bất phương trình bậc hai một ẩn có dạng ax² + bx + c > 0 (hoặc ≥, <, ≤) với a ≠ 0. Giải bằng cách xét dấu tam thức rồi chọn khoảng thoả mãn."
-    },
-    {
-      "type": "formula",
-      "content": "f(x) = ax² + bx + c > 0 với mọi x ⇔ a > 0 và Δ < 0        f(x) < 0 với mọi x ⇔ a < 0 và Δ < 0"
+      "type": "card",
+      "title": "Bất phương trình bậc hai một ẩn…",
+      "points": [
+        "Bất phương trình bậc hai một ẩn có dạng ax² + bx + c > 0 (hoặc ≥, <, ≤) với a ≠ 0.",
+        "Giải bằng cách xét dấu tam thức rồi chọn khoảng thoả mãn."
+      ],
+      "n": 3,
+      "formulas": [
+        "f(x) = ax² + bx + c > 0 với mọi x ⇔ a > 0 và Δ < 0        f(x) < 0 với mọi x ⇔ a < 0 và Δ < 0"
+      ]
     },
     {
       "type": "method",

@@ -14,8 +14,15 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Dụng cụ: đệm khí (hoặc máng ngang) giảm ma sát, hai xe trượt có khối lượng đã biết (có thể gắn thêm quả nặng), tấm chắn sáng có bề rộng d, hai cổng quang điện, đồng hồ đo thời gian hiện số, cân."
+    },
+    {
+      "type": "card",
+      "title": "Dụng cụ",
+      "text": "Đệm khí (hoặc máng ngang) giảm ma sát, hai xe trượt có khối lượng đã biết (có thể gắn thêm quả nặng), tấm chắn sáng có bề rộng d, hai cổng quang điện, đồng hồ đo thời gian hiện số, cân.",
+      "n": 1
     },
     {
       "type": "figure",
@@ -23,24 +30,40 @@
       "caption": "Bố trí thí nghiệm va chạm trên đệm khí với hai cổng quang điện"
     },
     {
-      "type": "text",
-      "content": "Đo vận tốc: mỗi xe gắn tấm chắn sáng rộng d; thời gian chắn cổng Δt cho vận tốc v = d/Δt. Đặt cổng 1 trước điểm va chạm để đo vận tốc xe 1 trước va chạm, cổng 2 sau điểm va chạm để đo vận tốc sau va chạm."
+      "type": "card",
+      "title": "Đo vận tốc",
+      "points": [
+        "Mỗi xe gắn tấm chắn sáng rộng d; thời gian chắn cổng Δt cho vận tốc v = d/Δt.",
+        "Đặt cổng 1 trước điểm va chạm để đo vận tốc xe 1 trước va chạm, cổng 2 sau điểm va chạm để đo vận tốc sau va chạm."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Va chạm mềm: gắn băng dính (hoặc kim – sáp) để hai xe dính nhau sau va chạm. Va chạm đàn hồi: gắn lò xo hoặc nam châm cùng cực để hai xe bật ra."
+      "type": "card",
+      "title": "Va chạm mềm",
+      "points": [
+        "Gắn băng dính (hoặc kim – sáp) để hai xe dính nhau sau va chạm.",
+        "Va chạm đàn hồi: gắn lò xo hoặc nam châm cùng cực để hai xe bật ra."
+      ],
+      "n": 3,
+      "formulas": [
+        "Kiểm chứng: p_trước = m₁v₁ + m₂v₂  so với  p_sau = m₁v₁′ + m₂v₂′        Sai số: |p_sau − p_trước|/p_trước"
+      ]
     },
     {
-      "type": "formula",
-      "content": "Kiểm chứng: p_trước = m₁v₁ + m₂v₂  so với  p_sau = m₁v₁′ + m₂v₂′        Sai số: |p_sau − p_trước|/p_trước"
+      "type": "card",
+      "title": "Kết quả thí nghiệm cho thấy tổng…",
+      "points": [
+        "Kết quả thí nghiệm cho thấy tổng động lượng trước và sau va chạm xấp xỉ bằng nhau (sai lệch vài phần trăm do ma sát, đệm khí không hoàn toàn nằm ngang, sai số đo).",
+        "Trong va chạm mềm động năng giảm đáng kể; trong va chạm gần đàn hồi động năng gần như không đổi."
+      ],
+      "n": 4
     },
     {
-      "type": "text",
-      "content": "Kết quả thí nghiệm cho thấy tổng động lượng trước và sau va chạm xấp xỉ bằng nhau (sai lệch vài phần trăm do ma sát, đệm khí không hoàn toàn nằm ngang, sai số đo). Trong va chạm mềm động năng giảm đáng kể; trong va chạm gần đàn hồi động năng gần như không đổi."
-    },
-    {
-      "type": "text",
-      "content": "Lưu ý khi tiến hành: chỉnh đệm khí nằm ngang (xe đặt lên đứng yên), đẩy xe nhẹ nhàng, đọc kết quả ngay sau mỗi lần, lặp lại ít nhất 3 lần."
+      "type": "card",
+      "title": "Lưu ý khi tiến hành",
+      "text": "Chỉnh đệm khí nằm ngang (xe đặt lên đứng yên), đẩy xe nhẹ nhàng, đọc kết quả ngay sau mỗi lần, lặp lại ít nhất 3 lần.",
+      "n": 5
     },
     {
       "type": "method",

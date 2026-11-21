@@ -10,24 +10,36 @@
   "bookPage": 20,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Biểu thức có phép cộng và phép trừ, hoặc chỉ có phép nhân và phép chia: thực hiện từ trái sang phải."
     },
     {
-      "type": "text",
-      "content": "Biểu thức không có dấu ngoặc: thực hiện luỹ thừa, rồi nhân và chia, cuối cùng cộng và trừ."
+      "type": "card",
+      "title": "Biểu thức có phép cộng và phép trừ, hoặc chỉ có phép nhân và phép chia",
+      "text": "Thực hiện từ trái sang phải.",
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Biểu thức có dấu ngoặc: thực hiện trong ngoặc tròn ( ) trước, rồi đến ngoặc vuông [ ], rồi đến ngoặc nhọn { }."
+      "type": "card",
+      "title": "Biểu thức không có dấu ngoặc",
+      "text": "Thực hiện luỹ thừa, rồi nhân và chia, cuối cùng cộng và trừ.",
+      "n": 2
     },
     {
-      "type": "formula",
-      "content": "Nếu a + b = c thì a = c - b.   Nếu a - b = c thì a = c + b."
+      "type": "card",
+      "title": "Biểu thức có dấu ngoặc",
+      "text": "Thực hiện trong ngoặc tròn ( ) trước, rồi đến ngoặc vuông [ ], rồi đến ngoặc nhọn { }.",
+      "n": 3,
+      "formulas": [
+        "Nếu a + b = c thì a = c - b.   Nếu a - b = c thì a = c + b."
+      ]
     },
     {
-      "type": "text",
-      "content": "Quy tắc chuyển vế: khi chuyển một số hạng từ vế này sang vế kia của đẳng thức, ta đổi dấu số hạng đó (dấu + thành -, dấu - thành +)."
+      "type": "card",
+      "title": "Quy tắc chuyển vế",
+      "text": "Khi chuyển một số hạng từ vế này sang vế kia của đẳng thức, ta đổi dấu số hạng đó (dấu + thành -, dấu - thành +).",
+      "n": 4
     },
     {
       "type": "method",

@@ -10,12 +10,21 @@
   "bookPage": 70,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Góc xen giữa hai cạnh là góc nằm giữa hai cạnh đó. Ví dụ góc A là góc xen giữa AB và AC."
     },
     {
-      "type": "text",
-      "content": "Trường hợp c.g.c: nếu hai cạnh và góc xen giữa của tam giác này bằng hai cạnh và góc xen giữa của tam giác kia thì hai tam giác bằng nhau."
+      "type": "card",
+      "title": "Góc xen giữa hai cạnh là góc nằm giữa hai cạnh đó",
+      "text": "Ví dụ góc A là góc xen giữa AB và AC.",
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Trường hợp c.g.c: nếu hai cạnh và…",
+      "text": "Trường hợp c.g.c: nếu hai cạnh và góc xen giữa của tam giác này bằng hai cạnh và góc xen giữa của tam giác kia thì hai tam giác bằng nhau.",
+      "n": 2
     },
     {
       "type": "figure",
@@ -23,8 +32,13 @@
       "caption": "Hai cạnh và góc xen giữa (α) bằng nhau thì hai tam giác bằng nhau (c.g.c)."
     },
     {
-      "type": "text",
-      "content": "Trường hợp g.c.g: nếu một cạnh và hai góc kề cạnh đó của tam giác này bằng một cạnh và hai góc kề cạnh đó của tam giác kia thì hai tam giác bằng nhau. Hai góc kề cạnh BC là góc tại B và góc tại C."
+      "type": "card",
+      "title": "Trường hợp g.c.g: nếu một cạnh và…",
+      "points": [
+        "Trường hợp g.c.g: nếu một cạnh và hai góc kề cạnh đó của tam giác này bằng một cạnh và hai góc kề cạnh đó của tam giác kia thì hai tam giác bằng nhau.",
+        "Hai góc kề cạnh BC là góc tại B và góc tại C."
+      ],
+      "n": 3
     },
     {
       "type": "figure",
@@ -32,8 +46,10 @@
       "caption": "Một cạnh và hai góc kề cạnh đó bằng nhau thì hai tam giác bằng nhau (g.c.g)."
     },
     {
-      "type": "text",
-      "content": "Lỗi thường gặp: dùng góc không xen giữa hai cạnh đã cho để áp dụng c.g.c; dùng hai cạnh và một góc không xen giữa, đây không phải trường hợp bằng nhau."
+      "type": "card",
+      "title": "Lỗi thường gặp",
+      "text": "Dùng góc không xen giữa hai cạnh đã cho để áp dụng c.g.c; dùng hai cạnh và một góc không xen giữa, đây không phải trường hợp bằng nhau.",
+      "n": 4
     }
   ],
   "examples": [

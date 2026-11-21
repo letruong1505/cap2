@@ -13,16 +13,24 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Biến cố liên quan tới phép thử là tập con của không gian mẫu. Mỗi kết quả làm cho biến cố xảy ra gọi là kết quả thuận lợi."
     },
     {
-      "type": "formula",
-      "content": "P(A) = (Số kết quả thuận lợi cho A) / (Số phần tử của Ω)"
+      "type": "card",
+      "title": "Biến cố liên quan tới phép thử là tập con của không gian mẫu",
+      "text": "Mỗi kết quả làm cho biến cố xảy ra gọi là kết quả thuận lợi.",
+      "n": 1,
+      "formulas": [
+        "P(A) = (Số kết quả thuận lợi cho A) / (Số phần tử của Ω)"
+      ]
     },
     {
-      "type": "text",
-      "content": "Công thức trên dùng khi các kết quả có thể là đồng khả năng. 0 ≤ P(A) ≤ 1; biến cố chắc chắn có xác suất 1; biến cố không thể có xác suất 0."
+      "type": "card",
+      "title": "Công thức trên dùng khi các kết quả có thể là đồng khả năng",
+      "text": "0 ≤ P(A) ≤ 1; biến cố chắc chắn có xác suất 1; biến cố không thể có xác suất 0.",
+      "n": 2
     },
     {
       "type": "figure",

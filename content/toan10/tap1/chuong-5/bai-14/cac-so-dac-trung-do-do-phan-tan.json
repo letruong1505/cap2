@@ -14,24 +14,45 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Khoảng biến thiên R = x_max − x_min là hiệu giữa giá trị lớn nhất và nhỏ nhất của mẫu. R dễ tính nhưng chỉ dùng hai giá trị đầu mút nên bị ảnh hưởng mạnh bởi giá trị bất thường."
     },
     {
-      "type": "text",
-      "content": "Khoảng tứ phân vị Δ_Q = Q₃ − Q₁ đo độ phân tán của 50% số liệu ở giữa, không bị ảnh hưởng bởi giá trị bất thường."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Khoảng biến thiên R = x_max − x_min là hiệu giữa giá trị lớn nhất và nhỏ nhất của mẫu.",
+        "R dễ tính nhưng chỉ dùng hai giá trị đầu mút nên bị ảnh hưởng mạnh bởi giá trị bất thường."
+      ],
+      "n": 1
     },
     {
-      "type": "formula",
-      "content": "Phương sai: s² = [(x₁ − x̄)² + (x₂ − x̄)² + ... + (x_n − x̄)²]/n        Độ lệch chuẩn: s = √s²"
+      "type": "card",
+      "title": "Khoảng tứ phân vị Δ_Q = Q₃…",
+      "text": "Khoảng tứ phân vị Δ_Q = Q₃ − Q₁ đo độ phân tán của 50% số liệu ở giữa, không bị ảnh hưởng bởi giá trị bất thường.",
+      "n": 2,
+      "formulas": [
+        "Phương sai: s² = [(x₁ − x̄)² + (x₂ − x̄)² + ... + (x_n − x̄)²]/n        Độ lệch chuẩn: s = √s²"
+      ]
     },
     {
-      "type": "text",
-      "content": "Phương sai và độ lệch chuẩn đo mức độ phân tán của số liệu quanh số trung bình: càng lớn thì số liệu càng phân tán. Độ lệch chuẩn có cùng đơn vị với số liệu nên thường dùng để so sánh."
+      "type": "card",
+      "title": "Phương sai và độ lệch chuẩn đo…",
+      "points": [
+        "Phương sai và độ lệch chuẩn đo mức độ phân tán của số liệu quanh số trung bình: càng lớn thì số liệu càng phân tán.",
+        "Độ lệch chuẩn có cùng đơn vị với số liệu nên thường dùng để so sánh."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Giá trị bất thường: giá trị x được coi là bất thường nếu x < Q₁ − 1,5Δ_Q hoặc x > Q₃ + 1,5Δ_Q. Các giá trị này thường do sai sót khi thu thập hoặc là trường hợp đặc biệt cần xem xét riêng."
+      "type": "card",
+      "title": "Giá trị bất thường",
+      "points": [
+        "Giá trị x được coi là bất thường nếu x < Q₁ − 1,5Δ_Q hoặc x > Q₃ + 1,5Δ_Q.",
+        "Các giá trị này thường do sai sót khi thu thập hoặc là trường hợp đặc biệt cần xem xét riêng."
+      ],
+      "n": 4
     },
     {
       "type": "figure",

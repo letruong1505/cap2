@@ -10,8 +10,15 @@
   "bookPage": 60,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Tổng ba góc trong một tam giác bằng 180°. Chứng minh: qua một đỉnh kẻ đường thẳng song song với cạnh đối diện, rồi dùng tính chất góc so le trong."
+    },
+    {
+      "type": "card",
+      "title": "Tổng ba góc trong một tam giác bằng 180°",
+      "text": "Chứng minh: qua một đỉnh kẻ đường thẳng song song với cạnh đối diện, rồi dùng tính chất góc so le trong.",
+      "n": 1
     },
     {
       "type": "figure",
@@ -19,8 +26,10 @@
       "caption": "Tổng ba góc trong: α + β + γ = 180°."
     },
     {
-      "type": "text",
-      "content": "Góc ngoài tại một đỉnh của tam giác bằng tổng hai góc trong không kề với đỉnh đó."
+      "type": "card",
+      "title": "Góc ngoài tại một đỉnh của tam…",
+      "text": "Góc ngoài tại một đỉnh của tam giác bằng tổng hai góc trong không kề với đỉnh đó.",
+      "n": 2
     },
     {
       "type": "figure",
@@ -28,12 +37,19 @@
       "caption": "Góc ngoài tại C (γ′) bằng tổng hai góc trong không kề với C: γ′ = α + β."
     },
     {
-      "type": "text",
-      "content": "Tam giác nhọn có ba góc nhọn. Tam giác vuông có một góc vuông; trong tam giác vuông, hai góc nhọn phụ nhau (tổng 90°), cạnh đối diện góc vuông là cạnh huyền. Tam giác tù có một góc tù."
+      "type": "card",
+      "title": "Tam giác nhọn có ba góc nhọn",
+      "points": [
+        "Tam giác vuông có một góc vuông; trong tam giác vuông, hai góc nhọn phụ nhau (tổng 90°), cạnh đối diện góc vuông là cạnh huyền.",
+        "Tam giác tù có một góc tù."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Lỗi thường gặp: quên rằng trong tam giác vuông hai góc nhọn có tổng 90°, không phải 180°; cộng nhầm góc ngoài với góc kề trong thay vì tổng hai góc trong không kề."
+      "type": "card",
+      "title": "Lỗi thường gặp",
+      "text": "Quên rằng trong tam giác vuông hai góc nhọn có tổng 90°, không phải 180°; cộng nhầm góc ngoài với góc kề trong thay vì tổng hai góc trong không kề.",
+      "n": 4
     },
     {
       "type": "method",

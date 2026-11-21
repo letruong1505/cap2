@@ -13,16 +13,27 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Xác suất thực nghiệm của sự kiện A khi thực hiện lặp lại trò chơi/thí nghiệm n lần:"
     },
     {
-      "type": "formula",
-      "content": "Xác suất thực nghiệm = (Số lần sự kiện A xảy ra) : (Tổng số lần thực hiện)"
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Xác suất thực nghiệm của sự kiện A khi thực hiện lặp lại trò chơi/thí nghiệm n lần:",
+      "n": 1,
+      "formulas": [
+        "Xác suất thực nghiệm = (Số lần sự kiện A xảy ra) : (Tổng số lần thực hiện)"
+      ]
     },
     {
-      "type": "text",
-      "content": "Xác suất thực nghiệm là một số từ 0 đến 1, thường được viết dưới dạng phân số, số thập phân hoặc phần trăm. Khi số lần thực hiện càng lớn thì xác suất thực nghiệm càng ổn định."
+      "type": "card",
+      "title": "Xác suất thực nghiệm là một số…",
+      "points": [
+        "Xác suất thực nghiệm là một số từ 0 đến 1, thường được viết dưới dạng phân số, số thập phân hoặc phần trăm.",
+        "Khi số lần thực hiện càng lớn thì xác suất thực nghiệm càng ổn định."
+      ],
+      "n": 2
     },
     {
       "type": "figure",

@@ -8,8 +8,18 @@
   "lesson": "Bài 33. Quan hệ giữa ba cạnh của một tam giác",
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Trong một tam giác, tổng độ dài hai cạnh bất kì luôn lớn hơn độ dài cạnh còn lại (bất đẳng thức tam giác)."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Trong một tam giác, tổng độ dài hai cạnh bất kì luôn lớn hơn độ dài cạnh còn lại (bất đẳng thức tam giác).",
+      "n": 1,
+      "formulas": [
+        "Tam giác có ba cạnh a, b, c thì: b − c < a < b + c (với b ≥ c)."
+      ]
     },
     {
       "type": "figure",
@@ -17,12 +27,10 @@
       "caption": "Tam giác có ba cạnh a, b, c: mỗi cạnh nhỏ hơn tổng hai cạnh còn lại, ví dụ a < b + c."
     },
     {
-      "type": "formula",
-      "content": "Tam giác có ba cạnh a, b, c thì: b − c < a < b + c (với b ≥ c)."
-    },
-    {
-      "type": "text",
-      "content": "Để kiểm tra ba độ dài có phải ba cạnh của một tam giác không, chỉ cần kiểm tra độ dài lớn nhất có nhỏ hơn tổng hai độ dài còn lại không."
+      "type": "card",
+      "title": "Để kiểm tra ba độ dài có…",
+      "text": "Để kiểm tra ba độ dài có phải ba cạnh của một tam giác không, chỉ cần kiểm tra độ dài lớn nhất có nhỏ hơn tổng hai độ dài còn lại không.",
+      "n": 2
     },
     {
       "type": "method",

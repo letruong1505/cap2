@@ -10,24 +10,33 @@
   "bookPage": 18,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Muốn nhân hai phân thức, ta nhân các tử thức với nhau và nhân các mẫu thức với nhau."
     },
     {
-      "type": "formula",
-      "content": "(A/B)·(C/D) = (A·C)/(B·D)"
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Muốn nhân hai phân thức, ta nhân các tử thức với nhau và nhân các mẫu thức với nhau.",
+      "n": 1,
+      "formulas": [
+        "(A/B)·(C/D) = (A·C)/(B·D)"
+      ]
     },
     {
-      "type": "text",
-      "content": "Muốn chia phân thức A/B cho phân thức C/D khác 0, ta nhân A/B với phân thức nghịch đảo của C/D."
+      "type": "card",
+      "title": "Muốn chia phân thức A/B cho phân…",
+      "text": "Muốn chia phân thức A/B cho phân thức C/D khác 0, ta nhân A/B với phân thức nghịch đảo của C/D.",
+      "n": 2,
+      "formulas": [
+        "(A/B) : (C/D) = (A/B)·(D/C)  (C/D ≠ 0)"
+      ]
     },
     {
-      "type": "formula",
-      "content": "(A/B) : (C/D) = (A/B)·(D/C)  (C/D ≠ 0)"
-    },
-    {
-      "type": "text",
-      "content": "Phép nhân phân thức có tính chất giao hoán, kết hợp và phân phối đối với phép cộng."
+      "type": "card",
+      "title": "Phép nhân phân thức có tính chất…",
+      "text": "Phép nhân phân thức có tính chất giao hoán, kết hợp và phân phối đối với phép cộng.",
+      "n": 3
     }
   ],
   "examples": [

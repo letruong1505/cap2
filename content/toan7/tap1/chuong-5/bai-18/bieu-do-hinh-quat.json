@@ -10,12 +10,21 @@
   "bookPage": 93,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Biểu đồ hình quạt tròn dùng để so sánh các phần trong toàn bộ dữ liệu. Hình tròn biểu diễn toàn bộ dữ liệu (100%), mỗi hình quạt biểu diễn tỉ lệ của một phần, tổng tỉ lệ các hình quạt bằng 100%."
     },
     {
-      "type": "formula",
-      "content": "Tỉ lệ (%) của một phần = (số liệu của phần : tổng số liệu) × 100%.   Góc ở tâm của hình quạt = tỉ lệ (%) × 3,6°. Ví dụ 1% ứng với 3,6°, 50% ứng với 180°."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Biểu đồ hình quạt tròn dùng để so sánh các phần trong toàn bộ dữ liệu.",
+        "Hình tròn biểu diễn toàn bộ dữ liệu (100%), mỗi hình quạt biểu diễn tỉ lệ của một phần, tổng tỉ lệ các hình quạt bằng 100%."
+      ],
+      "n": 1,
+      "formulas": [
+        "Tỉ lệ (%) của một phần = (số liệu của phần : tổng số liệu) × 100%.   Góc ở tâm của hình quạt = tỉ lệ (%) × 3,6°. Ví dụ 1% ứng với 3,6°, 50% ứng với 180°."
+      ]
     },
     {
       "type": "figure",
@@ -23,12 +32,16 @@
       "caption": "Cả hình tròn ứng với 100%; tổng các phần trăm bằng 100%."
     },
     {
-      "type": "text",
-      "content": "Từ tỉ lệ phần trăm có thể tính số lượng: ví dụ 60% của 200 học sinh là 0,6 × 200 = 120 học sinh."
+      "type": "card",
+      "title": "Từ tỉ lệ phần trăm có thể tính số lượng",
+      "text": "Ví dụ 60% của 200 học sinh là 0,6 × 200 = 120 học sinh.",
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Lỗi thường gặp: nhầm tỉ lệ phần trăm của một hình quạt với số đo góc của nó (hai đại lượng khác nhau nhưng cùng biểu diễn một phần); tổng các tỉ lệ không bằng 100% khi dựng biểu đồ."
+      "type": "card",
+      "title": "Lỗi thường gặp",
+      "text": "Nhầm tỉ lệ phần trăm của một hình quạt với số đo góc của nó (hai đại lượng khác nhau nhưng cùng biểu diễn một phần); tổng các tỉ lệ không bằng 100% khi dựng biểu đồ.",
+      "n": 3
     }
   ],
   "examples": [

@@ -13,12 +13,18 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Nếu x₁, x₂ là hai nghiệm của ax² + bx + c = 0 (a ≠ 0) thì:"
     },
     {
-      "type": "formula",
-      "content": "x₁ + x₂ = −b/a;   x₁·x₂ = c/a"
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Nếu x₁, x₂ là hai nghiệm của ax² + bx + c = 0 (a ≠ 0) thì:",
+      "n": 1,
+      "formulas": [
+        "x₁ + x₂ = −b/a;   x₁·x₂ = c/a"
+      ]
     },
     {
       "type": "figure",
@@ -26,12 +32,16 @@
       "caption": "Ví dụ x² − 5x + 6 = 0: S = 5, P = 6."
     },
     {
-      "type": "text",
-      "content": "Nhẩm nghiệm: nếu a + b + c = 0 thì x₁ = 1, x₂ = c/a; nếu a − b + c = 0 thì x₁ = −1, x₂ = −c/a."
+      "type": "card",
+      "title": "Nhẩm nghiệm",
+      "text": "Nếu a + b + c = 0 thì x₁ = 1, x₂ = c/a; nếu a − b + c = 0 thì x₁ = −1, x₂ = −c/a.",
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Hai số có tổng S và tích P là nghiệm của phương trình x² − Sx + P = 0 (điều kiện S² − 4P ≥ 0)."
+      "type": "card",
+      "title": "Hai số có tổng S và tích…",
+      "text": "Hai số có tổng S và tích P là nghiệm của phương trình x² − Sx + P = 0 (điều kiện S² − 4P ≥ 0).",
+      "n": 3
     },
     {
       "type": "method",

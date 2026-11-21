@@ -14,16 +14,34 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Phương pháp động lực học gồm hai dạng bài toán: (1) biết lực tác dụng, tìm chuyển động (gia tốc, vận tốc, quãng đường); (2) biết chuyển động, tìm lực. Cầu nối giữa hai phần là gia tốc a."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Phương pháp động lực học gồm hai dạng bài toán: (1) biết lực tác dụng, tìm chuyển động (gia tốc, vận tốc, quãng đường);"
     },
     {
-      "type": "text",
-      "content": "Các bước giải: (1) Chọn vật (hệ vật) khảo sát và hệ quy chiếu (trục toạ độ, chiều dương thường theo chiều chuyển động). (2) Phân tích các lực tác dụng lên vật, vẽ hình. (3) Viết phương trình định luật 2 Newton dạng vectơ: ΣF = m→a. (4) Chiếu lên các trục toạ độ, giải tìm ẩn. (5) Kết hợp công thức động học nếu cần."
+      "type": "card",
+      "title": "Phương pháp động lực học gồm hai dạng bài toán",
+      "points": [
+        "Biết lực tác dụng, tìm chuyển động (gia tốc, vận tốc, quãng đường)",
+        "Biết chuyển động, tìm lực. Cầu nối giữa hai phần là gia tốc a."
+      ],
+      "n": 1
     },
     {
-      "type": "formula",
-      "content": "Mặt phẳng nghiêng góc α (không ma sát): a = g·sin α        Có ma sát trượt: a = g(sin α − μ·cos α) khi trượt xuống"
+      "type": "card",
+      "title": "Các bước giải",
+      "points": [
+        "Chọn vật (hệ vật) khảo sát và hệ quy chiếu (trục toạ độ, chiều dương thường theo chiều chuyển động).",
+        "Phân tích các lực tác dụng lên vật, vẽ hình.",
+        "Viết phương trình định luật 2 Newton dạng vectơ: ΣF = m→a.",
+        "Chiếu lên các trục toạ độ, giải tìm ẩn.",
+        "Kết hợp công thức động học nếu cần."
+      ],
+      "n": 2,
+      "formulas": [
+        "Mặt phẳng nghiêng góc α (không ma sát): a = g·sin α        Có ma sát trượt: a = g(sin α − μ·cos α) khi trượt xuống",
+        "Hai vật nối dây trên mặt ngang nhẵn, kéo vật đầu bằng F: a = F/(m₁ + m₂), lực căng T = m₂·a"
+      ]
     },
     {
       "type": "figure",
@@ -31,12 +49,10 @@
       "caption": "Các lực tác dụng lên vật trên mặt phẳng nghiêng"
     },
     {
-      "type": "formula",
-      "content": "Hai vật nối dây trên mặt ngang nhẵn, kéo vật đầu bằng F: a = F/(m₁ + m₂), lực căng T = m₂·a"
-    },
-    {
-      "type": "text",
-      "content": "Với hệ vật nối dây không dãn, các vật có cùng độ lớn gia tốc. Có thể coi cả hệ là một vật (nội lực – lực căng – triệt tiêu) để tìm a, sau đó xét riêng từng vật để tìm lực căng."
+      "type": "card",
+      "title": "Với hệ vật nối dây không dãn, các vật có cùng độ lớn gia tốc",
+      "text": "Có thể coi cả hệ là một vật (nội lực – lực căng – triệt tiêu) để tìm a, sau đó xét riêng từng vật để tìm lực căng.",
+      "n": 3
     },
     {
       "type": "method",

@@ -10,24 +10,34 @@
   "bookPage": 16,
   "theory": [
     {
-      "type": "text",
-      "content": "Luỹ thừa bậc n của số hữu tỉ x là tích của n thừa số x: xⁿ = x · x · … · x (n thừa số), với n là số tự nhiên lớn hơn 1. Gọi x là cơ số, n là số mũ."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Luỹ thừa bậc n của số hữu tỉ x là tích của n thừa số x: xⁿ = x · x · … · x (n thừa số), với n là số tự nhiên lớn hơn 1."
     },
     {
-      "type": "text",
-      "content": "Quy ước: x⁰ = 1 (x ≠ 0) và x¹ = x."
+      "type": "card",
+      "title": "Luỹ thừa bậc n của số hữu tỉ x là tích của n thừa số x",
+      "points": [
+        "Xⁿ = x · x · … · x (n thừa số), với n là số tự nhiên lớn hơn 1.",
+        "Gọi x là cơ số, n là số mũ."
+      ],
+      "n": 1
     },
     {
-      "type": "formula",
-      "content": "xᵐ · xⁿ = xᵐ⁺ⁿ;   xᵐ : xⁿ = xᵐ⁻ⁿ (x ≠ 0, m ≥ n)"
+      "type": "card",
+      "title": "Quy ước",
+      "text": "X⁰ = 1 (x ≠ 0) và x¹ = x.",
+      "n": 2,
+      "formulas": [
+        "xᵐ · xⁿ = xᵐ⁺ⁿ;   xᵐ : xⁿ = xᵐ⁻ⁿ (x ≠ 0, m ≥ n)",
+        "(xᵐ)ⁿ = xᵐ·ⁿ;   (x · y)ⁿ = xⁿ · yⁿ;   (x/y)ⁿ = xⁿ / yⁿ (y ≠ 0)"
+      ]
     },
     {
-      "type": "formula",
-      "content": "(xᵐ)ⁿ = xᵐ·ⁿ;   (x · y)ⁿ = xⁿ · yⁿ;   (x/y)ⁿ = xⁿ / yⁿ (y ≠ 0)"
-    },
-    {
-      "type": "text",
-      "content": "Khi tính luỹ thừa của một phân số, ta lũy thừa cả tử và mẫu. Khi nhân hai luỹ thừa cùng cơ số, giữ nguyên cơ số và cộng hai số mũ."
+      "type": "card",
+      "title": "Khi tính luỹ thừa của một phân số, ta lũy thừa cả tử và mẫu",
+      "text": "Khi nhân hai luỹ thừa cùng cơ số, giữ nguyên cơ số và cộng hai số mũ.",
+      "n": 3
     },
     {
       "type": "method",

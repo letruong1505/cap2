@@ -1,4 +1,5 @@
 ## Bản mới
+- Lớp 6–10 (tất cả các môn): lý thuyết chia thành các thẻ có tiêu đề, gạch đầu dòng ngắn gọn.
 - Lớp 11 (Toán, Vật lí, Hoá, Sinh, Lịch sử, Địa lí, GDKT&PL): lý thuyết chia thành các thẻ có tiêu đề, gạch đầu dòng ngắn gọn thay cho đoạn văn dài.
 - Điện thoại: bài học Toán 12, Vật lí 12 và các môn lớp 12 dạng thẻ nằm trong bản cài mới; máy đang dùng bản cũ sẽ được báo có bản mới để tải về.
 - Hoá 12, Sinh 12, Lịch sử 12, Địa lí 12, GDKT&PL 12: lý thuyết (125 bài) chia thành các thẻ có tiêu đề, gạch đầu dòng ngắn gọn thay cho đoạn văn dài.

@@ -10,24 +10,45 @@
   "bookPage": 6,
   "theory": [
     {
-      "type": "text",
-      "content": "Phân thức đại số (gọi tắt là phân thức) là biểu thức có dạng A/B, trong đó A, B là những đa thức và B khác đa thức 0. A gọi là tử thức (tử), B gọi là mẫu thức (mẫu)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Phân thức đại số (gọi tắt là phân thức) là biểu thức có dạng A/B, trong đó A, B là những đa thức và B khác đa thức 0."
     },
     {
-      "type": "text",
-      "content": "Mỗi đa thức cũng được coi là một phân thức với mẫu thức bằng 1. Số 0 và số 1 cũng là những phân thức."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Phân thức đại số (gọi tắt là phân thức) là biểu thức có dạng A/B, trong đó A, B là những đa thức và B khác đa thức 0.",
+        "A gọi là tử thức (tử), B gọi là mẫu thức (mẫu)."
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Hai phân thức A/B và C/D gọi là bằng nhau nếu A·D = B·C. Khi đó viết A/B = C/D."
+      "type": "card",
+      "title": "Mỗi đa thức cũng được coi là…",
+      "points": [
+        "Mỗi đa thức cũng được coi là một phân thức với mẫu thức bằng 1.",
+        "Số 0 và số 1 cũng là những phân thức."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Điều kiện xác định của phân thức A/B là điều kiện để mẫu thức B khác 0. Phân thức chỉ có giá trị tại những giá trị của biến thoả mãn điều kiện xác định."
+      "type": "card",
+      "title": "Hai phân thức A/B và C/D gọi là bằng nhau nếu A·D = B·C",
+      "text": "Khi đó viết A/B = C/D.",
+      "n": 3
     },
     {
-      "type": "formula",
-      "content": "A/B = C/D ⇔ A·D = B·C (B ≠ 0, D ≠ 0)"
+      "type": "card",
+      "title": "Điều kiện xác định của phân thức…",
+      "points": [
+        "Điều kiện xác định của phân thức A/B là điều kiện để mẫu thức B khác 0.",
+        "Phân thức chỉ có giá trị tại những giá trị của biến thoả mãn điều kiện xác định."
+      ],
+      "n": 4,
+      "formulas": [
+        "A/B = C/D ⇔ A·D = B·C (B ≠ 0, D ≠ 0)"
+      ]
     },
     {
       "type": "method",

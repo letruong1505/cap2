@@ -10,20 +10,33 @@
   "bookPage": 22,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Đơn thức A chia hết cho đơn thức B (B khác 0) khi mỗi biến của B đều là biến của A với số mũ không lớn hơn số mũ của nó trong A."
     },
     {
-      "type": "text",
-      "content": "Muốn chia đơn thức A cho đơn thức B (trường hợp chia hết), ta chia hệ số của A cho hệ số của B, chia luỹ thừa của từng biến trong A cho luỹ thừa của cùng biến đó trong B rồi nhân các kết quả với nhau."
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Đơn thức A chia hết cho đơn thức B (B khác 0) khi mỗi biến của B đều là biến của A với số mũ không lớn hơn số mũ của nó trong A.",
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Đa thức A chia hết cho đơn thức B khi mọi hạng tử của A đều chia hết cho B. Muốn chia đa thức A cho đơn thức B, ta chia từng hạng tử của A cho B rồi cộng các kết quả với nhau."
+      "type": "card",
+      "title": "Muốn chia đơn thức A cho đơn…",
+      "text": "Muốn chia đơn thức A cho đơn thức B (trường hợp chia hết), ta chia hệ số của A cho hệ số của B, chia luỹ thừa của từng biến trong A cho luỹ thừa của cùng biến đó trong B rồi nhân các kết quả với nhau.",
+      "n": 2
     },
     {
-      "type": "formula",
-      "content": "(A + C) : B = A : B + C : B"
+      "type": "card",
+      "title": "Đa thức A chia hết cho đơn…",
+      "points": [
+        "Đa thức A chia hết cho đơn thức B khi mọi hạng tử của A đều chia hết cho B.",
+        "Muốn chia đa thức A cho đơn thức B, ta chia từng hạng tử của A cho B rồi cộng các kết quả với nhau."
+      ],
+      "n": 3,
+      "formulas": [
+        "(A + C) : B = A : B + C : B"
+      ]
     }
   ],
   "examples": [

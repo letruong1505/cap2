@@ -10,8 +10,19 @@
   "bookPage": 99,
   "theory": [
     {
-      "type": "text",
-      "content": "Dấu hiệu đồng dạng của hai tam giác vuông: (1) nếu hai tam giác vuông có một cặp góc nhọn bằng nhau thì chúng đồng dạng; (2) nếu hai cạnh góc vuông của tam giác vuông này tỉ lệ với hai cạnh góc vuông của tam giác vuông kia thì hai tam giác đó đồng dạng; (3) nếu cạnh huyền và một cạnh góc vuông của tam giác vuông này tỉ lệ với cạnh huyền và một cạnh góc vuông của tam giác vuông kia thì hai tam giác đó đồng dạng."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Dấu hiệu đồng dạng của hai tam giác vuông: (1) nếu hai tam giác vuông có một cặp góc nhọn bằng nhau thì chúng đồng dạng;"
+    },
+    {
+      "type": "card",
+      "title": "Dấu hiệu đồng dạng của hai tam giác vuông",
+      "points": [
+        "Nếu hai tam giác vuông có một cặp góc nhọn bằng nhau thì chúng đồng dạng",
+        "Nếu hai cạnh góc vuông của tam giác vuông này tỉ lệ với hai cạnh góc vuông của tam giác vuông kia thì hai tam giác đó đồng dạng",
+        "Nếu cạnh huyền và một cạnh góc vuông của tam giác vuông này tỉ lệ với cạnh huyền và một cạnh góc vuông của tam giác vuông kia thì hai tam giác đó đồng dạng."
+      ],
+      "n": 1
     },
     {
       "type": "figure",
@@ -19,12 +30,13 @@
       "caption": "Tam giác ABC vuông tại A, đường cao AH. ΔHBA ∽ ΔABC (chung góc B, cùng có một góc vuông)."
     },
     {
-      "type": "text",
-      "content": "Nếu hai tam giác đồng dạng theo tỉ số k thì tỉ số hai đường cao tương ứng bằng k và tỉ số diện tích bằng k²."
-    },
-    {
-      "type": "formula",
-      "content": "ΔA′B′C′ ∽ ΔABC (tỉ số k) ⇒ S′/S = k²"
+      "type": "card",
+      "title": "Nếu hai tam giác đồng dạng theo…",
+      "text": "Nếu hai tam giác đồng dạng theo tỉ số k thì tỉ số hai đường cao tương ứng bằng k và tỉ số diện tích bằng k².",
+      "n": 2,
+      "formulas": [
+        "ΔA′B′C′ ∽ ΔABC (tỉ số k) ⇒ S′/S = k²"
+      ]
     },
     {
       "type": "figure",
@@ -32,8 +44,10 @@
       "caption": "Hai tam giác đồng dạng theo tỉ số k thì tỉ số diện tích bằng k²"
     },
     {
-      "type": "text",
-      "content": "Ứng dụng: trong tam giác ABC vuông tại A có đường cao AH thì AB² = BH·BC, AC² = CH·BC và AH·BC = AB·AC."
+      "type": "card",
+      "title": "Ứng dụng",
+      "text": "Trong tam giác ABC vuông tại A có đường cao AH thì AB² = BH·BC, AC² = CH·BC và AH·BC = AB·AC.",
+      "n": 3
     }
   ],
   "examples": [

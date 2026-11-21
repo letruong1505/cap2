@@ -8,8 +8,22 @@
   "lesson": "Bài 36. Hình hộp chữ nhật và hình lập phương",
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Hình hộp chữ nhật có 6 mặt là hình chữ nhật, 12 cạnh và 8 đỉnh. Hình lập phương có 6 mặt là hình vuông bằng nhau."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Hình hộp chữ nhật có 6 mặt là hình chữ nhật, 12 cạnh và 8 đỉnh.",
+        "Hình lập phương có 6 mặt là hình vuông bằng nhau."
+      ],
+      "n": 1,
+      "formulas": [
+        "Hình hộp chữ nhật có chiều dài a, chiều rộng b, chiều cao c: diện tích xung quanh S_xq = 2(a + b) · c; thể tích V = a · b · c.",
+        "Hình lập phương cạnh a: S_xq = 4a²; V = a³."
+      ]
     },
     {
       "type": "figure",
@@ -17,16 +31,13 @@
       "caption": "Hình hộp chữ nhật có chiều dài a, chiều rộng b, chiều cao c. Các cạnh khuất vẽ bằng nét đứt."
     },
     {
-      "type": "formula",
-      "content": "Hình hộp chữ nhật có chiều dài a, chiều rộng b, chiều cao c: diện tích xung quanh S_xq = 2(a + b) · c; thể tích V = a · b · c."
-    },
-    {
-      "type": "formula",
-      "content": "Hình lập phương cạnh a: S_xq = 4a²; V = a³."
-    },
-    {
-      "type": "text",
-      "content": "Diện tích toàn phần bằng diện tích xung quanh cộng diện tích hai đáy. Với hình lập phương, đó là diện tích 6 mặt vuông: 6a²."
+      "type": "card",
+      "title": "Diện tích toàn phần bằng diện tích…",
+      "points": [
+        "Diện tích toàn phần bằng diện tích xung quanh cộng diện tích hai đáy.",
+        "Với hình lập phương, đó là diện tích 6 mặt vuông: 6a²."
+      ],
+      "n": 2
     }
   ],
   "examples": [

@@ -10,24 +10,42 @@
   "bookPage": 26,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Số thập phân hữu hạn là số có hữu hạn chữ số sau dấu phẩy, ví dụ 0,25 = 1/4."
     },
     {
-      "type": "text",
-      "content": "Số thập phân vô hạn tuần hoàn có phần thập phân lặp lại mãi một nhóm chữ số, gọi là chu kì. Chu kì được viết trong dấu ngoặc, ví dụ 0,(3) = 0,333…"
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Số thập phân hữu hạn là số có hữu hạn chữ số sau dấu phẩy, ví dụ 0,25 = 1/4.",
+      "n": 1
     },
     {
-      "type": "formula",
-      "content": "Phân số a/b tối giản (b > 0) viết được thành số thập phân hữu hạn khi và chỉ khi mẫu b không có ước nguyên tố nào khác 2 và 5."
+      "type": "card",
+      "title": "Số thập phân vô hạn tuần hoàn…",
+      "points": [
+        "Số thập phân vô hạn tuần hoàn có phần thập phân lặp lại mãi một nhóm chữ số, gọi là chu kì.",
+        "Chu kì được viết trong dấu ngoặc, ví dụ 0,(3) = 0,333…"
+      ],
+      "n": 2,
+      "formulas": [
+        "Phân số a/b tối giản (b > 0) viết được thành số thập phân hữu hạn khi và chỉ khi mẫu b không có ước nguyên tố nào khác 2 và 5."
+      ]
     },
     {
-      "type": "text",
-      "content": "Làm tròn đến một hàng: giữ các chữ số đến hàng đó. Nếu chữ số ngay sau nhỏ hơn 5 thì giữ nguyên; nếu từ 5 trở lên thì cộng thêm 1 vào chữ số của hàng đó."
+      "type": "card",
+      "title": "Làm tròn đến một hàng",
+      "points": [
+        "Giữ các chữ số đến hàng đó.",
+        "Nếu chữ số ngay sau nhỏ hơn 5 thì giữ nguyên; nếu từ 5 trở lên thì cộng thêm 1 vào chữ số của hàng đó."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Khi làm tròn, sai số không vượt quá nửa đơn vị của hàng làm tròn đến."
+      "type": "card",
+      "title": "Khi làm tròn, sai số không vượt…",
+      "text": "Khi làm tròn, sai số không vượt quá nửa đơn vị của hàng làm tròn đến.",
+      "n": 4
     }
   ],
   "examples": [

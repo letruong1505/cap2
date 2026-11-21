@@ -14,28 +14,43 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Động lượng của một vật là đại lượng đo bằng tích khối lượng và vận tốc của vật; là đại lượng vectơ cùng hướng với vận tốc."
     },
     {
-      "type": "formula",
-      "content": "→p = m·→v        Đơn vị: kg·m/s"
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Động lượng của một vật là đại lượng đo bằng tích khối lượng và vận tốc của vật; là đại lượng vectơ cùng hướng với vận tốc.",
+      "n": 1,
+      "formulas": [
+        "→p = m·→v        Đơn vị: kg·m/s"
+      ]
     },
     {
-      "type": "text",
-      "content": "Động lượng của hệ vật bằng tổng vectơ động lượng của các vật trong hệ: →p = →p₁ + →p₂ + ..."
+      "type": "card",
+      "title": "Động lượng của hệ vật bằng tổng vectơ động lượng của các vật trong hệ",
+      "text": "→p = →p₁ + →p₂ + ...",
+      "n": 2,
+      "formulas": [
+        "Δ→p = →F·Δt   ⇔   →F = Δ→p/Δt        (F·Δt gọi là xung lượng của lực, đơn vị N·s)"
+      ]
     },
     {
-      "type": "formula",
-      "content": "Δ→p = →F·Δt   ⇔   →F = Δ→p/Δt        (F·Δt gọi là xung lượng của lực, đơn vị N·s)"
+      "type": "card",
+      "title": "Dạng khác của định luật 2 Newton",
+      "points": [
+        "Lực tác dụng lên vật bằng tốc độ thay đổi động lượng của vật.",
+        "Cùng một độ biến thiên động lượng, thời gian tương tác càng dài thì lực càng nhỏ.",
+        "Ứng dụng: túi khí ô tô, đệm nhảy cao, khuỵu gối khi tiếp đất, găng thủ môn."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Dạng khác của định luật 2 Newton: lực tác dụng lên vật bằng tốc độ thay đổi động lượng của vật. Cùng một độ biến thiên động lượng, thời gian tương tác càng dài thì lực càng nhỏ. Ứng dụng: túi khí ô tô, đệm nhảy cao, khuỵu gối khi tiếp đất, găng thủ môn."
-    },
-    {
-      "type": "text",
-      "content": "Khi vật đổi chiều chuyển động (bóng bật lại), độ biến thiên động lượng có độ lớn m(v₁ + v₂) theo phương chuyển động, vì vận tốc đổi dấu."
+      "type": "card",
+      "title": "Khi vật đổi chiều chuyển động (bóng…",
+      "text": "Khi vật đổi chiều chuyển động (bóng bật lại), độ biến thiên động lượng có độ lớn m(v₁ + v₂) theo phương chuyển động, vì vận tốc đổi dấu.",
+      "n": 4
     },
     {
       "type": "figure",

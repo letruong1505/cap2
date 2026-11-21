@@ -14,20 +14,40 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Dụng cụ: bảng thép đặt thẳng đứng, các lực kế (hoặc quả nặng và ròng rọc), dây mảnh, vòng nhẫn, thước đo góc, thước thẳng, bút, giấy."
     },
     {
-      "type": "text",
-      "content": "Tổng hợp hai lực đồng quy: móc hai lực kế vào vòng nhẫn kéo theo hai phương, ghi độ lớn F₁, F₂ và phương của chúng. Sau đó dùng một lực kế kéo vòng nhẫn đến đúng vị trí cũ, ghi F và phương. Vẽ →F₁, →F₂ theo cùng tỉ lệ, dựng hình bình hành, so sánh đường chéo với →F đo được."
+      "type": "card",
+      "title": "Dụng cụ",
+      "text": "Bảng thép đặt thẳng đứng, các lực kế (hoặc quả nặng và ròng rọc), dây mảnh, vòng nhẫn, thước đo góc, thước thẳng, bút, giấy.",
+      "n": 1
     },
     {
-      "type": "formula",
-      "content": "Kiểm tra: F_tính = √(F₁² + F₂² + 2F₁F₂cos α)  so với F_đo"
+      "type": "card",
+      "title": "Tổng hợp hai lực đồng quy",
+      "points": [
+        "Móc hai lực kế vào vòng nhẫn kéo theo hai phương, ghi độ lớn F₁, F₂ và phương của chúng.",
+        "Sau đó dùng một lực kế kéo vòng nhẫn đến đúng vị trí cũ, ghi F và phương.",
+        "Vẽ →F₁, →F₂ theo cùng tỉ lệ, dựng hình bình hành, so sánh đường chéo với →F đo được."
+      ],
+      "n": 2,
+      "formulas": [
+        "Kiểm tra: F_tính = √(F₁² + F₂² + 2F₁F₂cos α)  so với F_đo"
+      ]
     },
     {
-      "type": "text",
-      "content": "Tổng hợp hai lực song song cùng chiều: treo hai vật P₁, P₂ ở hai điểm trên thanh nhẹ, dùng lực kế treo thanh ở điểm O sao cho thanh nằm ngang. Kết quả: hợp lực F = P₁ + P₂, điểm đặt O chia trong khoảng cách giữa hai lực theo tỉ lệ nghịch với độ lớn."
+      "type": "card",
+      "title": "Tổng hợp hai lực song song cùng chiều",
+      "points": [
+        "Treo hai vật P₁, P₂ ở hai điểm trên thanh nhẹ, dùng lực kế treo thanh ở điểm O sao cho thanh nằm ngang.",
+        "Kết quả: hợp lực F = P₁ + P₂, điểm đặt O chia trong khoảng cách giữa hai lực theo tỉ lệ nghịch với độ lớn."
+      ],
+      "n": 3,
+      "formulas": [
+        "Hai lực song song cùng chiều: F = F₁ + F₂,   F₁/F₂ = d₂/d₁"
+      ]
     },
     {
       "type": "figure",
@@ -35,12 +55,13 @@
       "caption": "Tổng hợp hai lực song song cùng chiều"
     },
     {
-      "type": "formula",
-      "content": "Hai lực song song cùng chiều: F = F₁ + F₂,   F₁/F₂ = d₂/d₁"
-    },
-    {
-      "type": "text",
-      "content": "Nguyên nhân sai số: ma sát giữa dây và bảng, lực kế không thẳng hàng với dây, đọc vạch chia, đo góc chưa chính xác. Khắc phục: lặp lại nhiều lần, điều chỉnh lực kế, đọc vuông góc mặt số."
+      "type": "card",
+      "title": "Nguyên nhân sai số",
+      "points": [
+        "Ma sát giữa dây và bảng, lực kế không thẳng hàng với dây, đọc vạch chia, đo góc chưa chính xác.",
+        "Khắc phục: lặp lại nhiều lần, điều chỉnh lực kế, đọc vuông góc mặt số."
+      ],
+      "n": 4
     },
     {
       "type": "method",

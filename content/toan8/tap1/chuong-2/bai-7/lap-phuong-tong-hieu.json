@@ -10,16 +10,27 @@
   "bookPage": 34,
   "theory": [
     {
-      "type": "formula",
-      "content": "(A + B)³ = A³ + 3A²B + 3AB² + B³   (lập phương của một tổng)"
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Lưu ý: trong khai triển (A + B)³ mọi hạng tử đều mang dấu \"+\"; trong khai triển (A − B)³ các dấu đan xen \"+\", \"−\"."
     },
     {
-      "type": "formula",
-      "content": "(A − B)³ = A³ − 3A²B + 3AB² − B³   (lập phương của một hiệu)"
+      "type": "card",
+      "n": 1,
+      "title": "Công thức",
+      "formulas": [
+        "(A + B)³ = A³ + 3A²B + 3AB² + B³   (lập phương của một tổng)",
+        "(A − B)³ = A³ − 3A²B + 3AB² − B³   (lập phương của một hiệu)"
+      ]
     },
     {
-      "type": "text",
-      "content": "Lưu ý: trong khai triển (A + B)³ mọi hạng tử đều mang dấu \"+\"; trong khai triển (A − B)³ các dấu đan xen \"+\", \"−\". Các hệ số lần lượt là 1, 3, 3, 1."
+      "type": "card",
+      "title": "Lưu ý",
+      "points": [
+        "Trong khai triển (A + B)³ mọi hạng tử đều mang dấu \"+\"; trong khai triển (A − B)³ các dấu đan xen \"+\", \"−\".",
+        "Các hệ số lần lượt là 1, 3, 3, 1."
+      ],
+      "n": 2
     },
     {
       "type": "figure",

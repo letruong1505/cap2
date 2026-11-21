@@ -8,16 +8,27 @@
   "lesson": "Bài 30. Làm quen với xác suất của biến cố",
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Xác suất của một biến cố là một số đo khả năng xảy ra của biến cố đó. Xác suất nhận giá trị từ 0 đến 1."
     },
     {
-      "type": "formula",
-      "content": "Biến cố chắc chắn có xác suất bằng 1. Biến cố không thể có xác suất bằng 0."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Xác suất của một biến cố là một số đo khả năng xảy ra của biến cố đó.",
+        "Xác suất nhận giá trị từ 0 đến 1."
+      ],
+      "n": 1,
+      "formulas": [
+        "Biến cố chắc chắn có xác suất bằng 1. Biến cố không thể có xác suất bằng 0."
+      ]
     },
     {
-      "type": "text",
-      "content": "Nếu có k biến cố đồng khả năng và luôn xảy ra một và chỉ một biến cố trong k biến cố đó thì xác suất của mỗi biến cố đều bằng 1/k."
+      "type": "card",
+      "title": "Nếu có k biến cố đồng khả…",
+      "text": "Nếu có k biến cố đồng khả năng và luôn xảy ra một và chỉ một biến cố trong k biến cố đó thì xác suất của mỗi biến cố đều bằng 1/k.",
+      "n": 2
     },
     {
       "type": "figure",
@@ -25,8 +36,10 @@
       "caption": "Vòng quay chia thành 4 phần bằng nhau tô 4 màu khác nhau. Bốn biến cố \"kim dừng ở màu đỏ\", \"…màu xanh\", \"…màu vàng\", \"…màu tím\" đồng khả năng và luôn xảy ra đúng một biến cố, nên mỗi biến cố có xác suất 1/4."
     },
     {
-      "type": "text",
-      "content": "Ví dụ: gieo một con xúc xắc cân đối, sáu biến cố \"xuất hiện mặt 1 chấm\", \"xuất hiện mặt 2 chấm\", …, \"xuất hiện mặt 6 chấm\" đồng khả năng và luôn xảy ra đúng một biến cố, nên mỗi biến cố có xác suất 1/6."
+      "type": "card",
+      "title": "Ví dụ",
+      "text": "Gieo một con xúc xắc cân đối, sáu biến cố \"xuất hiện mặt 1 chấm\", \"xuất hiện mặt 2 chấm\", …, \"xuất hiện mặt 6 chấm\" đồng khả năng và luôn xảy ra đúng một biến cố, nên mỗi biến cố có xác suất 1/6.",
+      "n": 3
     },
     {
       "type": "method",

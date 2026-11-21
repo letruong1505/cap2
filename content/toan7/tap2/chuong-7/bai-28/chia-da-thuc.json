@@ -8,20 +8,33 @@
   "lesson": "Bài 28. Phép chia đa thức một biến",
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Chia đơn thức cho đơn thức: với b ≠ 0 và m ≥ n, ta có axᵐ : bxⁿ = (a : b)xᵐ⁻ⁿ."
     },
     {
-      "type": "text",
-      "content": "Chia đa thức cho đơn thức: chia từng hạng tử của đa thức cho đơn thức rồi cộng các kết quả."
+      "type": "card",
+      "title": "Chia đơn thức cho đơn thức",
+      "text": "Với b ≠ 0 và m ≥ n, ta có axᵐ : bxⁿ = (a : b)xᵐ⁻ⁿ.",
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Chia đa thức A cho đa thức B (B ≠ 0): đặt tính chia tương tự chia số tự nhiên, được thương Q và dư R sao cho A = B · Q + R, trong đó R = 0 hoặc bậc của R nhỏ hơn bậc của B. Nếu R = 0 thì A chia hết cho B."
+      "type": "card",
+      "title": "Chia đa thức cho đơn thức",
+      "text": "Chia từng hạng tử của đa thức cho đơn thức rồi cộng các kết quả.",
+      "n": 2
     },
     {
-      "type": "formula",
-      "content": "Ví dụ: (x² + 3x + 2) : (x + 1) = x + 2 vì (x + 1)(x + 2) = x² + 3x + 2."
+      "type": "card",
+      "title": "Chia đa thức A cho đa thức B (B ≠ 0)",
+      "points": [
+        "Đặt tính chia tương tự chia số tự nhiên, được thương Q và dư R sao cho A = B · Q + R, trong đó R = 0 hoặc bậc của R nhỏ hơn bậc của B.",
+        "Nếu R = 0 thì A chia hết cho B."
+      ],
+      "n": 3,
+      "formulas": [
+        "Ví dụ: (x² + 3x + 2) : (x + 1) = x + 2 vì (x + 1)(x + 2) = x² + 3x + 2."
+      ]
     }
   ],
   "examples": [

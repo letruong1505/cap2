@@ -14,16 +14,30 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Công suất là đại lượng đặc trưng cho tốc độ sinh công, đo bằng công sinh ra trong một đơn vị thời gian."
     },
     {
-      "type": "formula",
-      "content": "P = A/t        Đơn vị: oát (W), 1 W = 1 J/s;  1 kW = 1000 W;  1 HP (mã lực) ≈ 746 W"
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Công suất là đại lượng đặc trưng cho tốc độ sinh công, đo bằng công sinh ra trong một đơn vị thời gian.",
+      "n": 1,
+      "formulas": [
+        "P = A/t        Đơn vị: oát (W), 1 W = 1 J/s;  1 kW = 1000 W;  1 HP (mã lực) ≈ 746 W"
+      ]
     },
     {
-      "type": "text",
-      "content": "Khi lực không đổi và cùng hướng chuyển động với vận tốc v: P = A/t = F·d/t = F·v. Với cùng công suất, muốn lực kéo lớn thì phải giảm tốc độ (ô tô lên dốc phải về số thấp)."
+      "type": "card",
+      "title": "Khi lực không đổi và cùng hướng chuyển động với vận tốc v",
+      "points": [
+        "P = A/t = F·d/t = F·v.",
+        "Với cùng công suất, muốn lực kéo lớn thì phải giảm tốc độ (ô tô lên dốc phải về số thấp)."
+      ],
+      "n": 2,
+      "formulas": [
+        "P = F·v"
+      ]
     },
     {
       "type": "figure",
@@ -31,16 +45,19 @@
       "caption": "Công suất của động cơ ô tô P = F·v"
     },
     {
-      "type": "formula",
-      "content": "P = F·v"
+      "type": "card",
+      "title": "Đơn vị năng lượng thường dùng trong đời sống",
+      "points": [
+        "Kilôoát giờ (kWh), 1 kWh = 1000 W·3600 s = 3,6·10⁶ J.",
+        "Công suất định mức ghi trên thiết bị điện là công suất khi hoạt động bình thường."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Đơn vị năng lượng thường dùng trong đời sống: kilôoát giờ (kWh), 1 kWh = 1000 W·3600 s = 3,6·10⁶ J. Công suất định mức ghi trên thiết bị điện là công suất khi hoạt động bình thường."
-    },
-    {
-      "type": "text",
-      "content": "Công suất trung bình P = A/t; công suất tức thời P = F·v với v là vận tốc tức thời."
+      "type": "card",
+      "title": "Công suất trung bình P = A/t…",
+      "text": "Công suất trung bình P = A/t; công suất tức thời P = F·v với v là vận tốc tức thời.",
+      "n": 4
     },
     {
       "type": "method",

@@ -14,16 +14,30 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Chuyển động biến đổi là chuyển động có vận tốc thay đổi theo thời gian. Chuyển động biến đổi đều có vận tốc thay đổi đều (độ biến thiên vận tốc trong những khoảng thời gian bằng nhau là như nhau)."
     },
     {
-      "type": "formula",
-      "content": "Gia tốc: a = Δv/Δt = (v − v₀)/(t − t₀)        Đơn vị: m/s²"
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Chuyển động biến đổi là chuyển động có vận tốc thay đổi theo thời gian.",
+        "Chuyển động biến đổi đều có vận tốc thay đổi đều (độ biến thiên vận tốc trong những khoảng thời gian bằng nhau là như nhau)."
+      ],
+      "n": 1,
+      "formulas": [
+        "Gia tốc: a = Δv/Δt = (v − v₀)/(t − t₀)        Đơn vị: m/s²"
+      ]
     },
     {
-      "type": "text",
-      "content": "Gia tốc là đại lượng vectơ, cùng hướng với độ biến thiên vận tốc Δ→v. Trong chuyển động thẳng: →a cùng chiều →v thì vật chuyển động nhanh dần (a·v > 0); →a ngược chiều →v thì chậm dần (a·v < 0)."
+      "type": "card",
+      "title": "Gia tốc là đại lượng vectơ, cùng…",
+      "points": [
+        "Gia tốc là đại lượng vectơ, cùng hướng với độ biến thiên vận tốc Δ→v.",
+        "Trong chuyển động thẳng: →a cùng chiều →v thì vật chuyển động nhanh dần (a·v > 0); →a ngược chiều →v thì chậm dần (a·v < 0)."
+      ],
+      "n": 2
     },
     {
       "type": "figure",
@@ -31,12 +45,20 @@
       "caption": "Đồ thị vận tốc – thời gian: đoạn dốc lên là nhanh dần đều, đoạn nằm ngang là chuyển động đều"
     },
     {
-      "type": "text",
-      "content": "Đồ thị vận tốc – thời gian (v – t): độ dốc của đồ thị bằng gia tốc. Đồ thị là đường thẳng khi chuyển động biến đổi đều; nằm ngang khi chuyển động đều (a = 0). Diện tích giới hạn bởi đồ thị v – t và trục thời gian bằng độ dịch chuyển."
+      "type": "card",
+      "title": "Đồ thị vận tốc – thời gian (v – t)",
+      "points": [
+        "Độ dốc của đồ thị bằng gia tốc.",
+        "Đồ thị là đường thẳng khi chuyển động biến đổi đều; nằm ngang khi chuyển động đều (a = 0).",
+        "Diện tích giới hạn bởi đồ thị v – t và trục thời gian bằng độ dịch chuyển."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Gia tốc tức thời tại một thời điểm bằng độ dốc của tiếp tuyến với đồ thị v – t tại điểm đó."
+      "type": "card",
+      "title": "Gia tốc tức thời tại một thời…",
+      "text": "Gia tốc tức thời tại một thời điểm bằng độ dốc của tiếp tuyến với đồ thị v – t tại điểm đó.",
+      "n": 4
     },
     {
       "type": "method",

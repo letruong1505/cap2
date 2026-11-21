@@ -14,12 +14,27 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Đo tốc độ trung bình: đo quãng đường s bằng thước và thời gian t bằng đồng hồ bấm giây; v = s/t. Sai số chủ yếu do phản xạ của người bấm đồng hồ (khoảng 0,2 s), nên phương pháp này chỉ phù hợp khi thời gian chuyển động đủ dài."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Đo tốc độ trung bình: đo quãng đường s bằng thước và thời gian t bằng đồng hồ bấm giây; v = s/t."
     },
     {
-      "type": "text",
-      "content": "Cổng quang điện gồm một nguồn phát tia hồng ngoại và một cảm biến thu; khi vật chắn tia, cổng gửi tín hiệu đến đồng hồ đo thời gian hiện số để bắt đầu hoặc dừng đếm. Hai cổng đặt cách nhau quãng s cho thời gian vật đi hết s, từ đó tính tốc độ trung bình trên đoạn đó."
+      "type": "card",
+      "title": "Đo tốc độ trung bình",
+      "points": [
+        "Đo quãng đường s bằng thước và thời gian t bằng đồng hồ bấm giây; v = s/t.",
+        "Sai số chủ yếu do phản xạ của người bấm đồng hồ (khoảng 0,2 s), nên phương pháp này chỉ phù hợp khi thời gian chuyển động đủ dài."
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Cổng quang điện gồm một nguồn phát…",
+      "points": [
+        "Cổng quang điện gồm một nguồn phát tia hồng ngoại và một cảm biến thu; khi vật chắn tia, cổng gửi tín hiệu đến đồng hồ đo thời gian hiện số để bắt đầu hoặc dừng đếm.",
+        "Hai cổng đặt cách nhau quãng s cho thời gian vật đi hết s, từ đó tính tốc độ trung bình trên đoạn đó."
+      ],
+      "n": 2
     },
     {
       "type": "figure",
@@ -27,20 +42,37 @@
       "caption": "Đo tốc độ bằng cổng quang điện và đồng hồ đo thời gian hiện số"
     },
     {
-      "type": "text",
-      "content": "Đo tốc độ tức thời: dùng một cổng quang điện và một tấm chắn sáng có bề rộng nhỏ d gắn trên xe. Thời gian Δt tấm chắn đi qua cổng rất ngắn nên v = d/Δt coi là tốc độ tức thời tại cổng."
+      "type": "card",
+      "title": "Đo tốc độ tức thời",
+      "points": [
+        "Dùng một cổng quang điện và một tấm chắn sáng có bề rộng nhỏ d gắn trên xe.",
+        "Thời gian Δt tấm chắn đi qua cổng rất ngắn nên v = d/Δt coi là tốc độ tức thời tại cổng."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Đồng hồ đo thời gian hiện số có các chế độ MODE: A (đo thời gian chắn cổng A), B, A + B (tổng), A ↔ B (thời gian từ cổng A đến cổng B). Độ chia nhỏ nhất thường 0,001 s nên sai số dụng cụ rất nhỏ."
+      "type": "card",
+      "title": "Đồng hồ đo thời gian hiện số có các chế độ MODE",
+      "points": [
+        "A (đo thời gian chắn cổng A), B, A + B (tổng), A ↔ B (thời gian từ cổng A đến cổng B).",
+        "Độ chia nhỏ nhất thường 0,001 s nên sai số dụng cụ rất nhỏ."
+      ],
+      "n": 4
     },
     {
-      "type": "text",
-      "content": "Thiết kế phương án đo: chọn dụng cụ, bố trí máng, xe, cổng quang; tiến hành đo nhiều lần (ít nhất 3 lần) ở cùng điều kiện; tính giá trị trung bình, sai số; viết kết quả v = v̄ ± Δv."
+      "type": "card",
+      "title": "Thiết kế phương án đo",
+      "text": "Chọn dụng cụ, bố trí máng, xe, cổng quang; tiến hành đo nhiều lần (ít nhất 3 lần) ở cùng điều kiện; tính giá trị trung bình, sai số; viết kết quả v = v̄ ± Δv.",
+      "n": 5
     },
     {
-      "type": "text",
-      "content": "Ưu điểm của cổng quang điện: loại bỏ sai số do phản xạ của người đo, đo được khoảng thời gian rất ngắn. Hạn chế: cần nguồn điện, chỉ đo được tại vị trí đặt cổng."
+      "type": "card",
+      "title": "Ưu điểm của cổng quang điện",
+      "points": [
+        "Loại bỏ sai số do phản xạ của người đo, đo được khoảng thời gian rất ngắn.",
+        "Hạn chế: cần nguồn điện, chỉ đo được tại vị trí đặt cổng."
+      ],
+      "n": 6
     },
     {
       "type": "method",

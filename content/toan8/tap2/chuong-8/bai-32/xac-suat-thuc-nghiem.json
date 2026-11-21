@@ -10,16 +10,27 @@
   "bookPage": 74,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Xác suất thực nghiệm của một biến cố là tỉ số giữa số lần biến cố đó xảy ra và tổng số lần thực hiện phép thử."
     },
     {
-      "type": "formula",
-      "content": "Xác suất thực nghiệm = (số lần biến cố xảy ra) / (tổng số lần thử)"
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Xác suất thực nghiệm của một biến cố là tỉ số giữa số lần biến cố đó xảy ra và tổng số lần thực hiện phép thử.",
+      "n": 1,
+      "formulas": [
+        "Xác suất thực nghiệm = (số lần biến cố xảy ra) / (tổng số lần thử)"
+      ]
     },
     {
-      "type": "text",
-      "content": "Khi số lần thực hiện phép thử càng lớn thì xác suất thực nghiệm của một biến cố càng gần với xác suất của biến cố đó. Vì vậy có thể dùng xác suất thực nghiệm để ước lượng xác suất, và dùng xác suất để dự đoán số lần xảy ra của biến cố."
+      "type": "card",
+      "title": "Khi số lần thực hiện phép thử…",
+      "points": [
+        "Khi số lần thực hiện phép thử càng lớn thì xác suất thực nghiệm của một biến cố càng gần với xác suất của biến cố đó.",
+        "Vì vậy có thể dùng xác suất thực nghiệm để ước lượng xác suất, và dùng xác suất để dự đoán số lần xảy ra của biến cố."
+      ],
+      "n": 2
     },
     {
       "type": "figure",

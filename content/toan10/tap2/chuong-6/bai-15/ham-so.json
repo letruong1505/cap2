@@ -14,24 +14,45 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Cho tập D ⊂ ℝ khác rỗng. Nếu với mỗi giá trị x thuộc D có đúng một giá trị tương ứng y thuộc ℝ thì ta có một hàm số; x là biến số, y = f(x) là hàm số của x; D là tập xác định, tập các giá trị y nhận được là tập giá trị."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Cho tập D ⊂ ℝ khác rỗng. Nếu với mỗi giá trị x thuộc D có đúng một giá trị tương ứng y thuộc ℝ thì ta có một hàm số; x là biến số, y = f(x) là hàm số của x;"
     },
     {
-      "type": "text",
-      "content": "Hàm số có thể cho bằng bảng, biểu đồ hoặc công thức. Khi cho bằng công thức mà không chỉ rõ tập xác định, ta quy ước tập xác định là tập tất cả các số thực x sao cho biểu thức f(x) có nghĩa (mẫu khác 0, biểu thức dưới căn bậc hai không âm)."
+      "type": "card",
+      "title": "Cho tập D ⊂ ℝ khác rỗng",
+      "points": [
+        "Nếu với mỗi giá trị x thuộc D có đúng một giá trị tương ứng y thuộc ℝ thì ta có một hàm số; x là biến số, y = f(x) là hàm số của x;",
+        "D là tập xác định, tập các giá trị y nhận được là tập giá trị."
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Đồ thị của hàm số y = f(x) xác định trên D là tập hợp các điểm M(x; f(x)) với x thuộc D. Một đường trong mặt phẳng là đồ thị của một hàm số khi mọi đường thẳng song song với Oy cắt nó tại không quá một điểm."
+      "type": "card",
+      "title": "Hàm số có thể cho bằng bảng, biểu đồ hoặc công thức",
+      "text": "Khi cho bằng công thức mà không chỉ rõ tập xác định, ta quy ước tập xác định là tập tất cả các số thực x sao cho biểu thức f(x) có nghĩa (mẫu khác 0, biểu thức dưới căn bậc hai không âm).",
+      "n": 2
     },
     {
-      "type": "formula",
-      "content": "Hàm số đồng biến trên (a; b): x₁ < x₂ ⇒ f(x₁) < f(x₂).        Nghịch biến trên (a; b): x₁ < x₂ ⇒ f(x₁) > f(x₂)."
+      "type": "card",
+      "title": "Đồ thị của hàm số y =…",
+      "points": [
+        "Đồ thị của hàm số y = f(x) xác định trên D là tập hợp các điểm M(x; f(x)) với x thuộc D.",
+        "Một đường trong mặt phẳng là đồ thị của một hàm số khi mọi đường thẳng song song với Oy cắt nó tại không quá một điểm."
+      ],
+      "n": 3,
+      "formulas": [
+        "Hàm số đồng biến trên (a; b): x₁ < x₂ ⇒ f(x₁) < f(x₂).        Nghịch biến trên (a; b): x₁ < x₂ ⇒ f(x₁) > f(x₂)."
+      ]
     },
     {
-      "type": "text",
-      "content": "Đồ thị hàm số đồng biến đi lên từ trái sang phải, đồ thị hàm số nghịch biến đi xuống từ trái sang phải. Hàm số y = ax + b đồng biến khi a > 0, nghịch biến khi a < 0."
+      "type": "card",
+      "title": "Đồ thị hàm số đồng biến đi…",
+      "points": [
+        "Đồ thị hàm số đồng biến đi lên từ trái sang phải, đồ thị hàm số nghịch biến đi xuống từ trái sang phải.",
+        "Hàm số y = ax + b đồng biến khi a > 0, nghịch biến khi a < 0."
+      ],
+      "n": 4
     },
     {
       "type": "figure",

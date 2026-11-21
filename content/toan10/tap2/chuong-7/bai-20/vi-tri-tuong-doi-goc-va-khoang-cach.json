@@ -14,24 +14,39 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Cho Δ₁: a₁x + b₁y + c₁ = 0 và Δ₂: a₂x + b₂y + c₂ = 0. Xét hệ hai phương trình: hệ có nghiệm duy nhất thì hai đường thẳng cắt nhau tại điểm có toạ độ là nghiệm; hệ vô nghiệm thì song song; hệ có vô số nghiệm thì trùng nhau."
     },
     {
-      "type": "text",
-      "content": "Dùng vectơ pháp tuyến: →n₁, →n₂ không cùng phương thì cắt nhau; cùng phương thì song song hoặc trùng (kiểm tra một điểm). Δ₁ ⊥ Δ₂ ⇔ →n₁·→n₂ = 0 ⇔ a₁a₂ + b₁b₂ = 0."
+      "type": "card",
+      "title": "Cho Δ₁",
+      "points": [
+        "A₁x + b₁y + c₁ = 0 và Δ₂: a₂x + b₂y + c₂ = 0.",
+        "Xét hệ hai phương trình: hệ có nghiệm duy nhất thì hai đường thẳng cắt nhau tại điểm có toạ độ là nghiệm; hệ vô nghiệm thì song song; hệ có vô số nghiệm thì trùng nhau."
+      ],
+      "n": 1
     },
     {
-      "type": "formula",
-      "content": "cos(Δ₁, Δ₂) = |a₁a₂ + b₁b₂| / (√(a₁² + b₁²)·√(a₂² + b₂²))        0° ≤ (Δ₁, Δ₂) ≤ 90°"
+      "type": "card",
+      "title": "Dùng vectơ pháp tuyến",
+      "points": [
+        "→n₁, →n₂ không cùng phương thì cắt nhau; cùng phương thì song song hoặc trùng (kiểm tra một điểm).",
+        "Δ₁ ⊥ Δ₂ ⇔ →n₁·→n₂ = 0 ⇔ a₁a₂ + b₁b₂ = 0."
+      ],
+      "n": 2,
+      "formulas": [
+        "cos(Δ₁, Δ₂) = |a₁a₂ + b₁b₂| / (√(a₁² + b₁²)·√(a₂² + b₂²))        0° ≤ (Δ₁, Δ₂) ≤ 90°"
+      ]
     },
     {
-      "type": "text",
-      "content": "Góc giữa hai đường thẳng là góc không tù tạo bởi chúng; có thể tính qua vectơ pháp tuyến hoặc vectơ chỉ phương (công thức tương tự với toạ độ các vectơ chỉ phương)."
-    },
-    {
-      "type": "formula",
-      "content": "d(M₀, Δ) = |ax₀ + by₀ + c| / √(a² + b²)  với M₀(x₀; y₀), Δ: ax + by + c = 0"
+      "type": "card",
+      "title": "Góc giữa hai đường thẳng là góc…",
+      "text": "Góc giữa hai đường thẳng là góc không tù tạo bởi chúng; có thể tính qua vectơ pháp tuyến hoặc vectơ chỉ phương (công thức tương tự với toạ độ các vectơ chỉ phương).",
+      "n": 3,
+      "formulas": [
+        "d(M₀, Δ) = |ax₀ + by₀ + c| / √(a² + b²)  với M₀(x₀; y₀), Δ: ax + by + c = 0"
+      ]
     },
     {
       "type": "figure",

@@ -13,20 +13,38 @@
   ],
   "theory": [
     {
-      "type": "formula",
-      "content": "√(a²b) = |a|·√b   (b ≥ 0)"
-    },
-    {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Đưa thừa số vào trong dấu căn: a√b = √(a²b) với a ≥ 0; a√b = −√(a²b) với a < 0."
     },
     {
-      "type": "text",
-      "content": "Trục căn thức ở mẫu: A/√B = A√B/B (B > 0); A/(√a + √b) = A(√a − √b)/(a − b)."
+      "type": "card",
+      "n": 1,
+      "title": "Công thức",
+      "formulas": [
+        "√(a²b) = |a|·√b   (b ≥ 0)"
+      ]
     },
     {
-      "type": "text",
-      "content": "Rút gọn: đưa về các căn đồng dạng rồi cộng, trừ; ví dụ √12 + √27 = 2√3 + 3√3 = 5√3."
+      "type": "card",
+      "title": "Đưa thừa số vào trong dấu căn",
+      "text": "A√b = √(a²b) với a ≥ 0; a√b = −√(a²b) với a < 0.",
+      "n": 2
+    },
+    {
+      "type": "card",
+      "title": "Trục căn thức ở mẫu",
+      "points": [
+        "A/√B = A√B/B (B > 0);",
+        "A/(√a + √b) = A(√a − √b)/(a − b)."
+      ],
+      "n": 3
+    },
+    {
+      "type": "card",
+      "title": "Rút gọn",
+      "text": "Đưa về các căn đồng dạng rồi cộng, trừ; ví dụ √12 + √27 = 2√3 + 3√3 = 5√3.",
+      "n": 4
     },
     {
       "type": "method",

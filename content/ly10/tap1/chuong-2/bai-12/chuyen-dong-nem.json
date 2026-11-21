@@ -14,8 +14,22 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Chuyển động ném ngang: vật được ném với vận tốc đầu →v₀ theo phương ngang từ độ cao h, chỉ chịu tác dụng của trọng lực (bỏ qua lực cản). Phân tích thành hai chuyển động thành phần: theo phương ngang Ox là chuyển động thẳng đều với vận tốc v₀; theo phương thẳng đứng Oy là rơi tự do."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Chuyển động ném ngang: vật được ném với vận tốc đầu →v₀ theo phương ngang từ độ cao h, chỉ chịu tác dụng của trọng lực (bỏ qua lực cản)."
+    },
+    {
+      "type": "card",
+      "title": "Chuyển động ném ngang",
+      "points": [
+        "Vật được ném với vận tốc đầu →v₀ theo phương ngang từ độ cao h, chỉ chịu tác dụng của trọng lực (bỏ qua lực cản).",
+        "Phân tích thành hai chuyển động thành phần: theo phương ngang Ox là chuyển động thẳng đều với vận tốc v₀; theo phương thẳng đứng Oy là rơi tự do."
+      ],
+      "n": 1,
+      "formulas": [
+        "x = v₀·t,  y = ½·g·t²        Quỹ đạo: y = g·x²/(2v₀²) (nhánh parabol)",
+        "Thời gian rơi: t = √(2h/g)        Tầm xa: L = v₀·√(2h/g)        Vận tốc chạm đất: v = √(v₀² + (gt)²)"
+      ]
     },
     {
       "type": "figure",
@@ -23,20 +37,23 @@
       "caption": "Quỹ đạo của vật ném ngang là một nhánh parabol"
     },
     {
-      "type": "formula",
-      "content": "x = v₀·t,  y = ½·g·t²        Quỹ đạo: y = g·x²/(2v₀²) (nhánh parabol)"
+      "type": "card",
+      "title": "Thời gian rơi của vật ném ngang…",
+      "points": [
+        "Thời gian rơi của vật ném ngang bằng thời gian rơi tự do từ cùng độ cao, không phụ thuộc v₀.",
+        "Tầm xa tỉ lệ thuận với v₀ và với căn bậc hai của độ cao."
+      ],
+      "n": 2
     },
     {
-      "type": "formula",
-      "content": "Thời gian rơi: t = √(2h/g)        Tầm xa: L = v₀·√(2h/g)        Vận tốc chạm đất: v = √(v₀² + (gt)²)"
-    },
-    {
-      "type": "text",
-      "content": "Thời gian rơi của vật ném ngang bằng thời gian rơi tự do từ cùng độ cao, không phụ thuộc v₀. Tầm xa tỉ lệ thuận với v₀ và với căn bậc hai của độ cao."
-    },
-    {
-      "type": "text",
-      "content": "Chuyển động ném xiên: vật ném với →v₀ hợp với phương ngang góc α. Thành phần ngang v₀cos α không đổi, thành phần đứng v₀sin α giảm dần rồi đổi chiều. Quỹ đạo là parabol; tầm cao H = (v₀sin α)²/(2g); tầm xa L = v₀²sin 2α/g, lớn nhất khi α = 45° (trên mặt phẳng ngang, bỏ qua lực cản)."
+      "type": "card",
+      "title": "Chuyển động ném xiên",
+      "points": [
+        "Vật ném với →v₀ hợp với phương ngang góc α.",
+        "Thành phần ngang v₀cos α không đổi, thành phần đứng v₀sin α giảm dần rồi đổi chiều.",
+        "Quỹ đạo là parabol; tầm cao H = (v₀sin α)²/(2g); tầm xa L = v₀²sin 2α/g, lớn nhất khi α = 45° (trên mặt phẳng ngang, bỏ qua lực cản)."
+      ],
+      "n": 3
     },
     {
       "type": "method",

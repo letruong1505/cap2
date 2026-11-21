@@ -10,20 +10,37 @@
   "bookPage": 33,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Tập số thực R gồm các số hữu tỉ và các số vô tỉ: R = Q ∪ I. Mỗi số thực được biểu diễn bởi đúng một điểm trên trục số thực."
     },
     {
-      "type": "text",
-      "content": "Mỗi số thực a có một số đối là −a. Số đối của số dương là số âm, số đối của số âm là số dương, số đối của 0 là 0."
+      "type": "card",
+      "title": "Tập số thực R gồm các số hữu tỉ và các số vô tỉ",
+      "points": [
+        "R = Q ∪ I.",
+        "Mỗi số thực được biểu diễn bởi đúng một điểm trên trục số thực."
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "So sánh số thực: số âm nhỏ hơn 0, 0 nhỏ hơn số dương. Với hai số thực bất kì, có đúng một trong ba quan hệ: bằng, nhỏ hơn hoặc lớn hơn. Quan hệ có tính bắc cầu."
+      "type": "card",
+      "title": "Mỗi số thực a có một số đối là −a",
+      "text": "Số đối của số dương là số âm, số đối của số âm là số dương, số đối của 0 là 0.",
+      "n": 2
     },
     {
-      "type": "formula",
-      "content": "|a| = a nếu a ≥ 0;   |a| = −a nếu a < 0.   Luôn có |a| ≥ 0 và |−a| = |a|."
+      "type": "card",
+      "title": "So sánh số thực",
+      "points": [
+        "Số âm nhỏ hơn 0, 0 nhỏ hơn số dương.",
+        "Với hai số thực bất kì, có đúng một trong ba quan hệ: bằng, nhỏ hơn hoặc lớn hơn.",
+        "Quan hệ có tính bắc cầu."
+      ],
+      "n": 3,
+      "formulas": [
+        "|a| = a nếu a ≥ 0;   |a| = −a nếu a < 0.   Luôn có |a| ≥ 0 và |−a| = |a|."
+      ]
     },
     {
       "type": "figure",
@@ -31,8 +48,13 @@
       "caption": "|−2| = 2 là khoảng cách từ −2 đến 0 trên trục số; |2| = 2 là khoảng cách từ 2 đến 0."
     },
     {
-      "type": "text",
-      "content": "Khi so sánh hai số âm, số có giá trị tuyệt đối lớn hơn thì nhỏ hơn. Ví dụ −5/4 > −2 vì |−5/4| < |−2|."
+      "type": "card",
+      "title": "Khi so sánh hai số âm, số…",
+      "points": [
+        "Khi so sánh hai số âm, số có giá trị tuyệt đối lớn hơn thì nhỏ hơn.",
+        "Ví dụ −5/4 > −2 vì |−5/4| < |−2|."
+      ],
+      "n": 4
     }
   ],
   "examples": [

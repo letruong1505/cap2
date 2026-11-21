@@ -14,24 +14,43 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Các nguy cơ mất an toàn trong phòng thực hành: điện giật (dây điện hở, nguồn điện cao áp), bỏng (nguồn nhiệt, nước sôi), cháy nổ (chất dễ cháy, bình khí nén), chấn thương do vật sắc nhọn hoặc vật nặng rơi, hoá chất độc, nhiễm xạ từ nguồn phóng xạ."
     },
     {
-      "type": "text",
-      "content": "Quy tắc an toàn khi dùng điện: đọc kĩ hướng dẫn và kiểm tra thiết bị trước khi dùng; chỉ cắm điện khi đã lắp mạch đúng và được giáo viên cho phép; không chạm vào phần kim loại hở; tay khô khi thao tác; ngắt nguồn trước khi tháo lắp; không dùng thiết bị quá công suất."
+      "type": "card",
+      "title": "Các nguy cơ mất an toàn trong phòng thực hành",
+      "text": "Điện giật (dây điện hở, nguồn điện cao áp), bỏng (nguồn nhiệt, nước sôi), cháy nổ (chất dễ cháy, bình khí nén), chấn thương do vật sắc nhọn hoặc vật nặng rơi, hoá chất độc, nhiễm xạ từ nguồn phóng xạ.",
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Quy tắc khi dùng nguồn nhiệt và hoá chất: dùng kẹp, găng tay khi tiếp xúc vật nóng; không nếm, ngửi trực tiếp hoá chất; đeo kính bảo hộ; để chất dễ cháy xa nguồn nhiệt; bỏ chất thải đúng nơi quy định."
+      "type": "card",
+      "title": "Quy tắc an toàn khi dùng điện",
+      "text": "Đọc kĩ hướng dẫn và kiểm tra thiết bị trước khi dùng; chỉ cắm điện khi đã lắp mạch đúng và được giáo viên cho phép; không chạm vào phần kim loại hở; tay khô khi thao tác; ngắt nguồn trước khi tháo lắp; không dùng thiết bị quá công suất.",
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Quy tắc chung: mặc trang phục gọn gàng, buộc tóc; không ăn uống, đùa nghịch; làm thí nghiệm đúng hướng dẫn, dưới sự giám sát của giáo viên; biết vị trí bình chữa cháy, tủ thuốc; dọn dẹp, rửa tay sau khi làm xong; báo ngay cho giáo viên khi có sự cố."
+      "type": "card",
+      "title": "Quy tắc khi dùng nguồn nhiệt và hoá chất",
+      "points": [
+        "Dùng kẹp, găng tay khi tiếp xúc vật nóng; không nếm, ngửi trực tiếp hoá chất;",
+        "Đeo kính bảo hộ;",
+        "Để chất dễ cháy xa nguồn nhiệt; bỏ chất thải đúng nơi quy định."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Biển báo an toàn: biển cấm (viền đỏ, hình tròn: cấm lửa, cấm chạm tay), biển cảnh báo (tam giác vàng viền đen: điện cao áp, nhiệt độ cao, chất độc, phóng xạ), biển bắt buộc (hình tròn nền xanh: phải đeo kính, găng tay), biển chỉ dẫn (hình chữ nhật xanh lá: lối thoát hiểm, vòi rửa mắt)."
+      "type": "card",
+      "title": "Quy tắc chung",
+      "text": "Mặc trang phục gọn gàng, buộc tóc; không ăn uống, đùa nghịch; làm thí nghiệm đúng hướng dẫn, dưới sự giám sát của giáo viên; biết vị trí bình chữa cháy, tủ thuốc; dọn dẹp, rửa tay sau khi làm xong; báo ngay cho giáo viên khi có sự cố.",
+      "n": 4
+    },
+    {
+      "type": "card",
+      "title": "Biển báo an toàn",
+      "text": "Biển cấm (viền đỏ, hình tròn: cấm lửa, cấm chạm tay), biển cảnh báo (tam giác vàng viền đen: điện cao áp, nhiệt độ cao, chất độc, phóng xạ), biển bắt buộc (hình tròn nền xanh: phải đeo kính, găng tay), biển chỉ dẫn (hình chữ nhật xanh lá: lối thoát hiểm, vòi rửa mắt).",
+      "n": 5
     },
     {
       "type": "figure",
@@ -39,8 +58,14 @@
       "caption": "Các nhóm biển báo an toàn trong phòng thực hành"
     },
     {
-      "type": "text",
-      "content": "Một số kí hiệu trên thiết bị: DC hoặc dấu gạch ngang – dòng điện một chiều; AC hoặc dấu ~ – dòng điện xoay chiều; dấu + và − là cực dương, cực âm của nguồn; \"Input/Output\" là đầu vào/ra; kí hiệu thùng rác gạch chéo – không vứt chung với rác thường."
+      "type": "card",
+      "title": "Một số kí hiệu trên thiết bị",
+      "points": [
+        "DC hoặc dấu gạch ngang – dòng điện một chiều;",
+        "AC hoặc dấu ~ – dòng điện xoay chiều; dấu + và − là cực dương, cực âm của nguồn;",
+        "\"Input/Output\" là đầu vào/ra; kí hiệu thùng rác gạch chéo – không vứt chung với rác thường."
+      ],
+      "n": 6
     }
   ],
   "examples": [

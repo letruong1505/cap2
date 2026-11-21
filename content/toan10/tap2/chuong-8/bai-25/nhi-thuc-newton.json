@@ -14,24 +14,45 @@
   ],
   "theory": [
     {
-      "type": "formula",
-      "content": "(a + b)⁴ = a⁴ + 4a³b + 6a²b² + 4ab³ + b⁴"
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Tổng quát (a + b)ⁿ = C_n^0 aⁿ + C_n^1 aⁿ⁻¹b + C_n^2 aⁿ⁻²b² + ... + C_n^n bⁿ. Số hạng thứ k + 1 là C_n^k aⁿ⁻ᵏ bᵏ."
     },
     {
-      "type": "formula",
-      "content": "(a + b)⁵ = a⁵ + 5a⁴b + 10a³b² + 10a²b³ + 5ab⁴ + b⁵"
+      "type": "card",
+      "n": 1,
+      "title": "Công thức",
+      "formulas": [
+        "(a + b)⁴ = a⁴ + 4a³b + 6a²b² + 4ab³ + b⁴",
+        "(a + b)⁵ = a⁵ + 5a⁴b + 10a³b² + 10a²b³ + 5ab⁴ + b⁵"
+      ]
     },
     {
-      "type": "text",
-      "content": "Tổng quát (a + b)ⁿ = C_n^0 aⁿ + C_n^1 aⁿ⁻¹b + C_n^2 aⁿ⁻²b² + ... + C_n^n bⁿ. Số hạng thứ k + 1 là C_n^k aⁿ⁻ᵏ bᵏ. Các hệ số C_n^k chính là hàng thứ n của tam giác Pascal: 1; 1 1; 1 2 1; 1 3 3 1; 1 4 6 4 1; 1 5 10 10 5 1."
+      "type": "card",
+      "title": "Tổng quát (a + b)ⁿ = C_n^0…",
+      "points": [
+        "Tổng quát (a + b)ⁿ = C_n^0 aⁿ + C_n^1 aⁿ⁻¹b + C_n^2 aⁿ⁻²b² + ... + C_n^n bⁿ.",
+        "Số hạng thứ k + 1 là C_n^k aⁿ⁻ᵏ bᵏ.",
+        "Các hệ số C_n^k chính là hàng thứ n của tam giác Pascal: 1;",
+        "1 1;",
+        "1 2 1;",
+        "1 3 3 1;",
+        "1 4 6 4 1;",
+        "1 5 10 10 5 1."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Khai triển (a − b)ⁿ: thay b bằng −b, dấu các số hạng đan xen + −. Khai triển có n + 1 số hạng; tổng số mũ của a và b trong mỗi số hạng bằng n."
-    },
-    {
-      "type": "formula",
-      "content": "Thay a = b = 1: C_n^0 + C_n^1 + ... + C_n^n = 2ⁿ"
+      "type": "card",
+      "title": "Khai triển (a − b)ⁿ",
+      "points": [
+        "Thay b bằng −b, dấu các số hạng đan xen + −.",
+        "Khai triển có n + 1 số hạng; tổng số mũ của a và b trong mỗi số hạng bằng n."
+      ],
+      "n": 3,
+      "formulas": [
+        "Thay a = b = 1: C_n^0 + C_n^1 + ... + C_n^n = 2ⁿ"
+      ]
     },
     {
       "type": "method",

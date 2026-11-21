@@ -10,8 +10,15 @@
   "bookPage": 102,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Từ biểu đồ, ta có thể đọc số liệu, so sánh các giá trị, tính tổng, tính tỉ lệ phần trăm và rút ra nhận xét hay dự đoán xu hướng."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Từ biểu đồ, ta có thể đọc số liệu, so sánh các giá trị, tính tổng, tính tỉ lệ phần trăm và rút ra nhận xét hay dự đoán xu hướng.",
+      "n": 1
     },
     {
       "type": "figure",
@@ -19,8 +26,13 @@
       "caption": "Doanh thu tăng ở các tháng 2, 4, 5 và giảm ở tháng 3."
     },
     {
-      "type": "text",
-      "content": "Tỉ lệ phần trăm của một phần so với tổng: (giá trị của phần : tổng) · 100%. Mức tăng (giảm) = giá trị sau − giá trị trước."
+      "type": "card",
+      "title": "Tỉ lệ phần trăm của một phần so với tổng",
+      "points": [
+        "(giá trị của phần : tổng) · 100%.",
+        "Mức tăng (giảm) = giá trị sau − giá trị trước."
+      ],
+      "n": 2
     }
   ],
   "examples": [

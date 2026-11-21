@@ -10,16 +10,27 @@
   "bookPage": 37,
   "theory": [
     {
-      "type": "formula",
-      "content": "A³ + B³ = (A + B)(A² − AB + B²)   (tổng hai lập phương)"
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Chú ý: A² − AB + B² gọi là bình phương thiếu của hiệu A − B, còn A² + AB + B² gọi là bình phương thiếu của tổng A + B."
     },
     {
-      "type": "formula",
-      "content": "A³ − B³ = (A − B)(A² + AB + B²)   (hiệu hai lập phương)"
+      "type": "card",
+      "n": 1,
+      "title": "Công thức",
+      "formulas": [
+        "A³ + B³ = (A + B)(A² − AB + B²)   (tổng hai lập phương)",
+        "A³ − B³ = (A − B)(A² + AB + B²)   (hiệu hai lập phương)"
+      ]
     },
     {
-      "type": "text",
-      "content": "Chú ý: A² − AB + B² gọi là bình phương thiếu của hiệu A − B, còn A² + AB + B² gọi là bình phương thiếu của tổng A + B. Hãy nhớ dấu: tổng hai lập phương có thừa số thứ nhất là A + B; hiệu hai lập phương có thừa số thứ nhất là A − B."
+      "type": "card",
+      "title": "Chú ý",
+      "points": [
+        "A² − AB + B² gọi là bình phương thiếu của hiệu A − B, còn A² + AB + B² gọi là bình phương thiếu của tổng A + B.",
+        "Hãy nhớ dấu: tổng hai lập phương có thừa số thứ nhất là A + B; hiệu hai lập phương có thừa số thứ nhất là A − B."
+      ],
+      "n": 2
     },
     {
       "type": "figure",

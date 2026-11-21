@@ -14,8 +14,21 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Trong chuyển động tròn đều, vận tốc luôn đổi hướng nên vật có gia tốc. Gia tốc này luôn hướng vào tâm quỹ đạo, gọi là gia tốc hướng tâm."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Trong chuyển động tròn đều, vận tốc luôn đổi hướng nên vật có gia tốc.",
+        "Gia tốc này luôn hướng vào tâm quỹ đạo, gọi là gia tốc hướng tâm."
+      ],
+      "n": 1,
+      "formulas": [
+        "a_ht = v²/r = ω²·r"
+      ]
     },
     {
       "type": "figure",
@@ -23,24 +36,34 @@
       "caption": "Vận tốc tiếp tuyến và gia tốc hướng tâm trong chuyển động tròn đều"
     },
     {
-      "type": "formula",
-      "content": "a_ht = v²/r = ω²·r"
+      "type": "card",
+      "title": "Lực (hay hợp lực) tác dụng lên…",
+      "points": [
+        "Lực (hay hợp lực) tác dụng lên vật chuyển động tròn đều và gây ra gia tốc hướng tâm gọi là lực hướng tâm.",
+        "Lực hướng tâm không phải một loại lực mới mà là hợp lực của các lực tác dụng (trọng lực, lực căng, ma sát, lực hấp dẫn…)."
+      ],
+      "n": 2,
+      "formulas": [
+        "F_ht = m·a_ht = m·v²/r = m·ω²·r"
+      ]
     },
     {
-      "type": "text",
-      "content": "Lực (hay hợp lực) tác dụng lên vật chuyển động tròn đều và gây ra gia tốc hướng tâm gọi là lực hướng tâm. Lực hướng tâm không phải một loại lực mới mà là hợp lực của các lực tác dụng (trọng lực, lực căng, ma sát, lực hấp dẫn…)."
+      "type": "card",
+      "title": "Ví dụ",
+      "points": [
+        "Lực hấp dẫn giữ Mặt Trăng quay quanh Trái Đất; lực ma sát nghỉ giữ ô tô vào cua trên đường ngang; lực căng dây giữ vật quay tròn.",
+        "Đường ô tô, đường sắt ở khúc cua được làm nghiêng để hợp lực của trọng lực và phản lực đóng vai trò lực hướng tâm."
+      ],
+      "n": 3
     },
     {
-      "type": "formula",
-      "content": "F_ht = m·a_ht = m·v²/r = m·ω²·r"
-    },
-    {
-      "type": "text",
-      "content": "Ví dụ: lực hấp dẫn giữ Mặt Trăng quay quanh Trái Đất; lực ma sát nghỉ giữ ô tô vào cua trên đường ngang; lực căng dây giữ vật quay tròn. Đường ô tô, đường sắt ở khúc cua được làm nghiêng để hợp lực của trọng lực và phản lực đóng vai trò lực hướng tâm."
-    },
-    {
-      "type": "text",
-      "content": "Khi lực hướng tâm không đủ (hoặc mất đi), vật có xu hướng văng ra theo phương tiếp tuyến (chuyển động li tâm). Ứng dụng: máy vắt li tâm trong máy giặt; nguy cơ: xe vào cua quá nhanh bị trượt ra ngoài."
+      "type": "card",
+      "title": "Khi lực hướng tâm không đủ (hoặc…",
+      "points": [
+        "Khi lực hướng tâm không đủ (hoặc mất đi), vật có xu hướng văng ra theo phương tiếp tuyến (chuyển động li tâm).",
+        "Ứng dụng: máy vắt li tâm trong máy giặt; nguy cơ: xe vào cua quá nhanh bị trượt ra ngoài."
+      ],
+      "n": 4
     },
     {
       "type": "method",

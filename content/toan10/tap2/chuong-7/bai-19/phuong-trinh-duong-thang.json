@@ -14,8 +14,22 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Vectơ →n ≠ →0 gọi là vectơ pháp tuyến của đường thẳng Δ nếu giá của →n vuông góc với Δ. Vectơ →u ≠ →0 gọi là vectơ chỉ phương của Δ nếu giá của →u song song hoặc trùng với Δ. Nếu →n = (a; b) là vectơ pháp tuyến thì →u = (b; −a) hoặc (−b; a) là vectơ chỉ phương và ngược lại."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Vectơ →n ≠ →0 gọi là vectơ pháp tuyến của đường thẳng Δ nếu giá của →n vuông góc với Δ. Vectơ →u ≠ →0 gọi là vectơ chỉ phương của Δ nếu giá của →u song song hoặc trùng với Δ."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Vectơ →n ≠ →0 gọi là vectơ pháp tuyến của đường thẳng Δ nếu giá của →n vuông góc với Δ.",
+        "Vectơ →u ≠ →0 gọi là vectơ chỉ phương của Δ nếu giá của →u song song hoặc trùng với Δ.",
+        "Nếu →n = (a; b) là vectơ pháp tuyến thì →u = (b; −a) hoặc (−b; a) là vectơ chỉ phương và ngược lại."
+      ],
+      "n": 1,
+      "formulas": [
+        "Phương trình tổng quát: ax + by + c = 0 (a² + b² ≠ 0), vectơ pháp tuyến →n = (a; b)"
+      ]
     },
     {
       "type": "figure",
@@ -23,20 +37,26 @@
       "caption": "Vectơ chỉ phương và vectơ pháp tuyến của đường thẳng"
     },
     {
-      "type": "formula",
-      "content": "Phương trình tổng quát: ax + by + c = 0 (a² + b² ≠ 0), vectơ pháp tuyến →n = (a; b)"
+      "type": "card",
+      "title": "Đường thẳng đi qua M₀(x₀; y₀) và…",
+      "points": [
+        "Đường thẳng đi qua M₀(x₀; y₀) và có vectơ pháp tuyến →n = (a; b) có phương trình a(x − x₀) + b(y − y₀) = 0.",
+        "Đường thẳng đi qua A(a;",
+        "0), B(0; b) với ab ≠ 0 có phương trình đoạn chắn x/a + y/b = 1."
+      ],
+      "n": 2,
+      "formulas": [
+        "Phương trình tham số: x = x₀ + at, y = y₀ + bt (t ∈ ℝ), vectơ chỉ phương →u = (a; b)"
+      ]
     },
     {
-      "type": "text",
-      "content": "Đường thẳng đi qua M₀(x₀; y₀) và có vectơ pháp tuyến →n = (a; b) có phương trình a(x − x₀) + b(y − y₀) = 0. Đường thẳng đi qua A(a; 0), B(0; b) với ab ≠ 0 có phương trình đoạn chắn x/a + y/b = 1."
-    },
-    {
-      "type": "formula",
-      "content": "Phương trình tham số: x = x₀ + at, y = y₀ + bt (t ∈ ℝ), vectơ chỉ phương →u = (a; b)"
-    },
-    {
-      "type": "text",
-      "content": "Mỗi giá trị t cho một điểm trên đường thẳng. Đường thẳng qua hai điểm A, B có vectơ chỉ phương →AB. Đường thẳng y = kx + m có vectơ chỉ phương (1; k) và vectơ pháp tuyến (k; −1)."
+      "type": "card",
+      "title": "Mỗi giá trị t cho một điểm trên đường thẳng",
+      "points": [
+        "Đường thẳng qua hai điểm A, B có vectơ chỉ phương →AB.",
+        "Đường thẳng y = kx + m có vectơ chỉ phương (1; k) và vectơ pháp tuyến (k; −1)."
+      ],
+      "n": 3
     },
     {
       "type": "method",

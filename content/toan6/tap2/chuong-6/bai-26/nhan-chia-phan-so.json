@@ -13,12 +13,18 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Muốn nhân hai phân số, ta nhân các tử với nhau và nhân các mẫu với nhau."
     },
     {
-      "type": "formula",
-      "content": "a/b · c/d = (a·c)/(b·d)"
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Muốn nhân hai phân số, ta nhân các tử với nhau và nhân các mẫu với nhau.",
+      "n": 1,
+      "formulas": [
+        "a/b · c/d = (a·c)/(b·d)"
+      ]
     },
     {
       "type": "figure",
@@ -26,12 +32,16 @@
       "caption": "Nhân phân số (mô hình diện tích)"
     },
     {
-      "type": "text",
-      "content": "Phép nhân phân số có tính chất giao hoán, kết hợp, nhân với 1, phân phối đối với phép cộng. Hai số gọi là nghịch đảo của nhau nếu tích của chúng bằng 1; nghịch đảo của a/b (a ≠ 0) là b/a."
-    },
-    {
-      "type": "formula",
-      "content": "a/b : c/d = a/b · d/c   (c ≠ 0)"
+      "type": "card",
+      "title": "Phép nhân phân số có tính chất…",
+      "points": [
+        "Phép nhân phân số có tính chất giao hoán, kết hợp, nhân với 1, phân phối đối với phép cộng.",
+        "Hai số gọi là nghịch đảo của nhau nếu tích của chúng bằng 1; nghịch đảo của a/b (a ≠ 0) là b/a."
+      ],
+      "n": 2,
+      "formulas": [
+        "a/b : c/d = a/b · d/c   (c ≠ 0)"
+      ]
     }
   ],
   "examples": [

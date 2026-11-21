@@ -14,16 +14,27 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Khi chuyển hoá năng lượng, chỉ một phần năng lượng toàn phần được chuyển thành năng lượng có ích (phục vụ mục đích); phần còn lại là năng lượng hao phí (thường chuyển thành nhiệt do ma sát, toả ra môi trường)."
     },
     {
-      "type": "formula",
-      "content": "Hiệu suất: H = W_ci / W_tp · 100% = A_ci / A_tp · 100% = P_ci / P_tp · 100%        (H < 100%)"
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Khi chuyển hoá năng lượng, chỉ một phần năng lượng toàn phần được chuyển thành năng lượng có ích (phục vụ mục đích); phần còn lại là năng lượng hao phí (thường chuyển thành nhiệt do ma sát, toả ra môi trường).",
+      "n": 1,
+      "formulas": [
+        "Hiệu suất: H = W_ci / W_tp · 100% = A_ci / A_tp · 100% = P_ci / P_tp · 100%        (H < 100%)"
+      ]
     },
     {
-      "type": "text",
-      "content": "W_tp = W_ci + W_hp. Hiệu suất càng cao thì máy càng tiết kiệm năng lượng. Ví dụ: động cơ điện khoảng 80–95%, động cơ xăng khoảng 25–30%, bóng đèn sợi đốt chỉ khoảng 5% (phần lớn thành nhiệt), đèn LED khoảng 30–40%."
+      "type": "card",
+      "title": "W_tp = W_ci + W_hp",
+      "points": [
+        "Hiệu suất càng cao thì máy càng tiết kiệm năng lượng.",
+        "Ví dụ: động cơ điện khoảng 80–95%, động cơ xăng khoảng 25–30%, bóng đèn sợi đốt chỉ khoảng 5% (phần lớn thành nhiệt), đèn LED khoảng 30–40%."
+      ],
+      "n": 2
     },
     {
       "type": "figure",
@@ -31,12 +42,19 @@
       "caption": "Sơ đồ phân chia năng lượng có ích và hao phí"
     },
     {
-      "type": "text",
-      "content": "Hiệu suất của mặt phẳng nghiêng, ròng rọc, đòn bẩy: H = (P·h)/(F·s) với P·h là công có ích nâng vật, F·s là công toàn phần của lực kéo."
+      "type": "card",
+      "title": "Hiệu suất của mặt phẳng nghiêng, ròng rọc, đòn bẩy",
+      "text": "H = (P·h)/(F·s) với P·h là công có ích nâng vật, F·s là công toàn phần của lực kéo.",
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Tăng hiệu suất: giảm ma sát (bôi trơn, ổ bi), giảm hao phí nhiệt, chọn thiết bị tiết kiệm năng lượng. Hiệu suất của động cơ nhiệt bị giới hạn bởi nguyên lí nhiệt động lực học, luôn nhỏ hơn 100%."
+      "type": "card",
+      "title": "Tăng hiệu suất",
+      "points": [
+        "Giảm ma sát (bôi trơn, ổ bi), giảm hao phí nhiệt, chọn thiết bị tiết kiệm năng lượng.",
+        "Hiệu suất của động cơ nhiệt bị giới hạn bởi nguyên lí nhiệt động lực học, luôn nhỏ hơn 100%."
+      ],
+      "n": 4
     },
     {
       "type": "method",

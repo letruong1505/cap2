@@ -15,24 +15,45 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Mol là lượng chất có chứa N_A = 6,022·10²³ nguyên tử hoặc phân tử của chất đó. Số 6,022·10²³ gọi là số Avogadro."
     },
     {
-      "type": "text",
-      "content": "Khối lượng mol (M) của một chất là khối lượng của N_A nguyên tử hoặc phân tử chất đó tính theo gam; đơn vị g/mol. Khối lượng mol bằng khối lượng nguyên tử (hoặc phân tử) tính theo amu về trị số. Ví dụ: M(H₂O) = 2·1 + 16 = 18 g/mol."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Mol là lượng chất có chứa N_A = 6,022·10²³ nguyên tử hoặc phân tử của chất đó.",
+        "Số 6,022·10²³ gọi là số Avogadro."
+      ],
+      "n": 1
     },
     {
-      "type": "formula",
-      "content": "n = m / M   (n: số mol; m: khối lượng, g; M: khối lượng mol, g/mol)"
+      "type": "card",
+      "title": "Khối lượng mol (M) của một chất…",
+      "points": [
+        "Khối lượng mol (M) của một chất là khối lượng của N_A nguyên tử hoặc phân tử chất đó tính theo gam;",
+        "Đơn vị g/mol.",
+        "Khối lượng mol bằng khối lượng nguyên tử (hoặc phân tử) tính theo amu về trị số.",
+        "Ví dụ: M(H₂O) = 2·1 + 16 = 18 g/mol."
+      ],
+      "n": 2,
+      "formulas": [
+        "n = m / M   (n: số mol; m: khối lượng, g; M: khối lượng mol, g/mol)"
+      ]
     },
     {
-      "type": "text",
-      "content": "Thể tích mol của chất khí là thể tích chiếm bởi N_A phân tử khí. Ở cùng nhiệt độ và áp suất, mọi chất khí có thể tích mol bằng nhau. Ở điều kiện chuẩn (25 °C, 1 bar), 1 mol khí bất kì chiếm 24,79 lít."
-    },
-    {
-      "type": "formula",
-      "content": "V = 24,79 · n   (V: lít; n: mol, ở 25 °C và 1 bar)"
+      "type": "card",
+      "title": "Thể tích mol của chất khí là…",
+      "points": [
+        "Thể tích mol của chất khí là thể tích chiếm bởi N_A phân tử khí.",
+        "Ở cùng nhiệt độ và áp suất, mọi chất khí có thể tích mol bằng nhau.",
+        "Ở điều kiện chuẩn (25 °C, 1 bar), 1 mol khí bất kì chiếm 24,79 lít."
+      ],
+      "n": 3,
+      "formulas": [
+        "V = 24,79 · n   (V: lít; n: mol, ở 25 °C và 1 bar)"
+      ]
     },
     {
       "type": "figure",
@@ -40,8 +61,14 @@
       "caption": "Mối liên hệ giữa khối lượng, số mol và thể tích khí."
     },
     {
-      "type": "text",
-      "content": "Tỉ khối của khí A đối với khí B là tỉ lệ khối lượng mol: d(A/B) = M_A / M_B. Khối lượng mol trung bình của không khí là 29 g/mol (20% O₂ và 80% N₂ theo thể tích), nên d(A/không khí) = M_A / 29. Khí có tỉ khối lớn hơn 1 thì nặng hơn."
+      "type": "card",
+      "title": "Tỉ khối của khí A đối với khí B là tỉ lệ khối lượng mol",
+      "points": [
+        "D(A/B) = M_A / M_B.",
+        "Khối lượng mol trung bình của không khí là 29 g/mol (20% O₂ và 80% N₂ theo thể tích), nên d(A/không khí) = M_A / 29.",
+        "Khí có tỉ khối lớn hơn 1 thì nặng hơn."
+      ],
+      "n": 4
     },
     {
       "type": "method",

@@ -14,8 +14,20 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Cho tam giác ABC có BC = a, CA = b, AB = c; R là bán kính đường tròn ngoại tiếp, r là bán kính đường tròn nội tiếp, p = (a + b + c)/2 là nửa chu vi, S là diện tích."
+    },
+    {
+      "type": "card",
+      "title": "Cho tam giác ABC có BC = a, CA = b, AB = c",
+      "text": "R là bán kính đường tròn ngoại tiếp, r là bán kính đường tròn nội tiếp, p = (a + b + c)/2 là nửa chu vi, S là diện tích.",
+      "n": 1,
+      "formulas": [
+        "Định lí côsin: a² = b² + c² − 2bc·cos A;  b² = c² + a² − 2ca·cos B;  c² = a² + b² − 2ab·cos C",
+        "cos A = (b² + c² − a²) / (2bc)        Định lí sin: a/sin A = b/sin B = c/sin C = 2R",
+        "S = ½ab·sin C = ½bc·sin A = ½ca·sin B        S = abc/(4R)        S = pr        S = √[p(p − a)(p − b)(p − c)] (Heron)"
+      ]
     },
     {
       "type": "figure",
@@ -23,20 +35,15 @@
       "caption": "Kí hiệu các cạnh a, b, c đối diện với các góc A, B, C"
     },
     {
-      "type": "formula",
-      "content": "Định lí côsin: a² = b² + c² − 2bc·cos A;  b² = c² + a² − 2ca·cos B;  c² = a² + b² − 2ab·cos C"
-    },
-    {
-      "type": "formula",
-      "content": "cos A = (b² + c² − a²) / (2bc)        Định lí sin: a/sin A = b/sin B = c/sin C = 2R"
-    },
-    {
-      "type": "formula",
-      "content": "S = ½ab·sin C = ½bc·sin A = ½ca·sin B        S = abc/(4R)        S = pr        S = √[p(p − a)(p − b)(p − c)] (Heron)"
-    },
-    {
-      "type": "text",
-      "content": "Giải tam giác là tìm các cạnh và góc chưa biết khi biết một số yếu tố. Biết hai cạnh và góc xen giữa: dùng định lí côsin tìm cạnh thứ ba, rồi định lí sin hoặc côsin tìm góc. Biết một cạnh và hai góc: tính góc còn lại (tổng 180°) rồi dùng định lí sin. Biết ba cạnh: dùng hệ quả định lí côsin tìm góc."
+      "type": "card",
+      "title": "Giải tam giác là tìm các cạnh…",
+      "points": [
+        "Giải tam giác là tìm các cạnh và góc chưa biết khi biết một số yếu tố.",
+        "Biết hai cạnh và góc xen giữa: dùng định lí côsin tìm cạnh thứ ba, rồi định lí sin hoặc côsin tìm góc.",
+        "Biết một cạnh và hai góc: tính góc còn lại (tổng 180°) rồi dùng định lí sin.",
+        "Biết ba cạnh: dùng hệ quả định lí côsin tìm góc."
+      ],
+      "n": 2
     },
     {
       "type": "method",

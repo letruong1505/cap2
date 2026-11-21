@@ -14,24 +14,46 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Trong đo đạc, tính toán ta thường chỉ nhận được số gần đúng a của số đúng ā. Sai số tuyệt đối của số gần đúng a là Δ_a = |a − ā|. Thường không biết ā nên ta chỉ ước lượng được một số d sao cho Δ_a ≤ d; d gọi là độ chính xác của số gần đúng và viết ā = a ± d."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Trong đo đạc, tính toán ta thường chỉ nhận được số gần đúng a của số đúng ā. Sai số tuyệt đối của số gần đúng a là Δ_a = |a − ā|."
     },
     {
-      "type": "formula",
-      "content": "Δ_a = |a − ā| ≤ d   ⇔   a − d ≤ ā ≤ a + d"
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Trong đo đạc, tính toán ta thường chỉ nhận được số gần đúng a của số đúng ā.",
+        "Sai số tuyệt đối của số gần đúng a là Δ_a = |a − ā|.",
+        "Thường không biết ā nên ta chỉ ước lượng được một số d sao cho Δ_a ≤ d; d gọi là độ chính xác của số gần đúng và viết ā = a ± d."
+      ],
+      "n": 1,
+      "formulas": [
+        "Δ_a = |a − ā| ≤ d   ⇔   a − d ≤ ā ≤ a + d"
+      ]
     },
     {
-      "type": "text",
-      "content": "Sai số tương đối của số gần đúng a là δ_a = Δ_a/|a| ≤ d/|a|. Sai số tương đối càng nhỏ thì phép đo càng chính xác; thường viết dưới dạng phần trăm."
+      "type": "card",
+      "title": "Sai số tương đối của số gần đúng a là δ_a = Δ_a/|a| ≤ d/|a|",
+      "text": "Sai số tương đối càng nhỏ thì phép đo càng chính xác; thường viết dưới dạng phần trăm.",
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Quy tròn số: khi quy tròn số đến một hàng nào đó thì sai số tuyệt đối không vượt quá nửa đơn vị của hàng đó. Ví dụ quy tròn 3,14159 đến hàng phần trăm được 3,14 với sai số không quá 0,005."
+      "type": "card",
+      "title": "Quy tròn số",
+      "points": [
+        "Khi quy tròn số đến một hàng nào đó thì sai số tuyệt đối không vượt quá nửa đơn vị của hàng đó.",
+        "Ví dụ quy tròn 3,14159 đến hàng phần trăm được 3,14 với sai số không quá 0,005."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Xác định số quy tròn của số gần đúng với độ chính xác cho trước: quy tròn a đến hàng cao hơn hàng của d một đơn vị (hàng thấp nhất mà d nhỏ hơn nửa đơn vị của hàng đó). Ví dụ a = 2,8465 với d = 0,004 thì quy tròn đến hàng phần trăm: 2,85."
+      "type": "card",
+      "title": "Xác định số quy tròn của số gần đúng với độ chính xác cho trước",
+      "points": [
+        "Quy tròn a đến hàng cao hơn hàng của d một đơn vị (hàng thấp nhất mà d nhỏ hơn nửa đơn vị của hàng đó).",
+        "Ví dụ a = 2,8465 với d = 0,004 thì quy tròn đến hàng phần trăm: 2,85."
+      ],
+      "n": 4
     },
     {
       "type": "method",

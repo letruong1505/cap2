@@ -10,12 +10,29 @@
   "bookPage": 96,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Có thể biểu diễn dữ liệu bằng bảng thống kê hoặc bằng biểu đồ. Tuỳ mục đích mà chọn loại biểu đồ phù hợp."
     },
     {
-      "type": "text",
-      "content": "Biểu đồ cột: so sánh các số liệu của một đại lượng. Biểu đồ cột kép: so sánh hai tập dữ liệu cùng loại. Biểu đồ đoạn thẳng: biểu diễn sự thay đổi của số liệu theo thời gian. Biểu đồ hình quạt tròn: biểu diễn tỉ lệ phần trăm của các phần so với toàn thể."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Có thể biểu diễn dữ liệu bằng bảng thống kê hoặc bằng biểu đồ.",
+        "Tuỳ mục đích mà chọn loại biểu đồ phù hợp."
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Biểu đồ cột",
+      "points": [
+        "So sánh các số liệu của một đại lượng.",
+        "Biểu đồ cột kép: so sánh hai tập dữ liệu cùng loại.",
+        "Biểu đồ đoạn thẳng: biểu diễn sự thay đổi của số liệu theo thời gian.",
+        "Biểu đồ hình quạt tròn: biểu diễn tỉ lệ phần trăm của các phần so với toàn thể."
+      ],
+      "n": 2
     },
     {
       "type": "figure",
@@ -33,8 +50,13 @@
       "caption": "Biểu đồ hình quạt tròn biểu diễn tỉ lệ các phương tiện học sinh dùng để đến trường (tổng bằng 100%)."
     },
     {
-      "type": "text",
-      "content": "Trong biểu đồ hình quạt tròn, cả hình tròn ứng với 100% hay 360°. Số đo cung của một phần bằng tỉ lệ phần trăm của phần đó nhân với 360° rồi chia cho 100."
+      "type": "card",
+      "title": "Trong biểu đồ hình quạt tròn, cả…",
+      "points": [
+        "Trong biểu đồ hình quạt tròn, cả hình tròn ứng với 100% hay 360°.",
+        "Số đo cung của một phần bằng tỉ lệ phần trăm của phần đó nhân với 360° rồi chia cho 100."
+      ],
+      "n": 3
     }
   ],
   "examples": [

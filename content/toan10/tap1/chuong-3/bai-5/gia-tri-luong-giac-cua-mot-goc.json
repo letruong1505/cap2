@@ -14,8 +14,18 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Trên nửa đường tròn đơn vị (tâm O, bán kính 1, nằm phía trên trục hoành), với mỗi góc α (0° ≤ α ≤ 180°) có đúng một điểm M(x₀; y₀) sao cho góc xOM = α. Khi đó sin α = y₀, cos α = x₀, tan α = y₀/x₀ (x₀ ≠ 0), cot α = x₀/y₀ (y₀ ≠ 0)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Trên nửa đường tròn đơn vị (tâm O, bán kính 1, nằm phía trên trục hoành), với mỗi góc α (0° ≤ α ≤ 180°) có đúng một điểm M(x₀; y₀) sao cho góc xOM = α."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Trên nửa đường tròn đơn vị (tâm O, bán kính 1, nằm phía trên trục hoành), với mỗi góc α (0° ≤ α ≤ 180°) có đúng một điểm M(x₀; y₀) sao cho góc xOM = α.",
+        "Khi đó sin α = y₀, cos α = x₀, tan α = y₀/x₀ (x₀ ≠ 0), cot α = x₀/y₀ (y₀ ≠ 0)."
+      ],
+      "n": 1
     },
     {
       "type": "figure",
@@ -23,20 +33,23 @@
       "caption": "Điểm M trên nửa đường tròn đơn vị: hoành độ là cos α, tung độ là sin α"
     },
     {
-      "type": "text",
-      "content": "Dấu: với 0° < α < 90°, mọi giá trị lượng giác đều dương; với 90° < α < 180°, sin α > 0 còn cos α, tan α, cot α đều âm. tan 90° và cot 0°, cot 180° không xác định."
+      "type": "card",
+      "title": "Dấu",
+      "text": "Với 0° < α < 90°, mọi giá trị lượng giác đều dương; với 90° < α < 180°, sin α > 0 còn cos α, tan α, cot α đều âm. tan 90° và cot 0°, cot 180° không xác định.",
+      "n": 2,
+      "formulas": [
+        "sin(180° − α) = sin α        cos(180° − α) = −cos α        tan(180° − α) = −tan α        cot(180° − α) = −cot α",
+        "sin²α + cos²α = 1        tan α = sin α / cos α        cot α = cos α / sin α        tan α · cot α = 1"
+      ]
     },
     {
-      "type": "formula",
-      "content": "sin(180° − α) = sin α        cos(180° − α) = −cos α        tan(180° − α) = −tan α        cot(180° − α) = −cot α"
-    },
-    {
-      "type": "formula",
-      "content": "sin²α + cos²α = 1        tan α = sin α / cos α        cot α = cos α / sin α        tan α · cot α = 1"
-    },
-    {
-      "type": "text",
-      "content": "Bảng giá trị thường dùng: sin 0° = 0, sin 30° = 1/2, sin 45° = √2/2, sin 60° = √3/2, sin 90° = 1; cos 0° = 1, cos 30° = √3/2, cos 45° = √2/2, cos 60° = 1/2, cos 90° = 0; tan 45° = 1, tan 30° = √3/3, tan 60° = √3. Hai góc phụ nhau: sin(90° − α) = cos α, cos(90° − α) = sin α."
+      "type": "card",
+      "title": "Bảng giá trị thường dùng",
+      "points": [
+        "Sin 0° = 0, sin 30° = 1/2, sin 45° = √2/2, sin 60° = √3/2, sin 90° = 1; cos 0° = 1, cos 30° = √3/2, cos 45° = √2/2, cos 60° = 1/2, cos 90° = 0; tan 45° = 1, tan 30° = √3/3, tan 60° = √3.",
+        "Hai góc phụ nhau: sin(90° − α) = cos α, cos(90° − α) = sin α."
+      ],
+      "n": 3
     },
     {
       "type": "method",

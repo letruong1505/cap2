@@ -14,32 +14,53 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Hoán vị: mỗi cách sắp xếp n phần tử (n ≥ 1) theo một thứ tự là một hoán vị của n phần tử. Số hoán vị là P_n = n! = n(n − 1)···2·1. Quy ước 0! = 1."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Hoán vị: mỗi cách sắp xếp n phần tử (n ≥ 1) theo một thứ tự là một hoán vị của n phần tử. Số hoán vị là P_n = n! = n(n − 1)···2·1."
     },
     {
-      "type": "formula",
-      "content": "P_n = n!"
+      "type": "card",
+      "title": "Hoán vị",
+      "points": [
+        "Mỗi cách sắp xếp n phần tử (n ≥ 1) theo một thứ tự là một hoán vị của n phần tử.",
+        "Số hoán vị là P_n = n! = n(n − 1)···2·1.",
+        "Quy ước 0! = 1."
+      ],
+      "n": 1,
+      "formulas": [
+        "P_n = n!"
+      ]
     },
     {
-      "type": "text",
-      "content": "Chỉnh hợp: mỗi cách lấy k phần tử từ n phần tử (1 ≤ k ≤ n) và sắp xếp chúng theo một thứ tự là một chỉnh hợp chập k của n. Số chỉnh hợp A_n^k = n(n − 1)···(n − k + 1) = n!/(n − k)!. Đặc biệt A_n^n = P_n."
+      "type": "card",
+      "title": "Chỉnh hợp",
+      "points": [
+        "Mỗi cách lấy k phần tử từ n phần tử (1 ≤ k ≤ n) và sắp xếp chúng theo một thứ tự là một chỉnh hợp chập k của n.",
+        "Số chỉnh hợp A_n^k = n(n − 1)···(n − k + 1) = n!/(n − k)!.",
+        "Đặc biệt A_n^n = P_n."
+      ],
+      "n": 2,
+      "formulas": [
+        "A_n^k = n! / (n − k)!"
+      ]
     },
     {
-      "type": "formula",
-      "content": "A_n^k = n! / (n − k)!"
+      "type": "card",
+      "title": "Tổ hợp",
+      "points": [
+        "Mỗi cách lấy k phần tử từ n phần tử (0 ≤ k ≤ n) không kể thứ tự là một tổ hợp chập k của n.",
+        "Số tổ hợp C_n^k = n!/(k!(n − k)!) = A_n^k / k!."
+      ],
+      "n": 3,
+      "formulas": [
+        "C_n^k = n! / (k!(n − k)!)        C_n^k = C_n^(n−k)        C_n^0 = C_n^n = 1"
+      ]
     },
     {
-      "type": "text",
-      "content": "Tổ hợp: mỗi cách lấy k phần tử từ n phần tử (0 ≤ k ≤ n) không kể thứ tự là một tổ hợp chập k của n. Số tổ hợp C_n^k = n!/(k!(n − k)!) = A_n^k / k!."
-    },
-    {
-      "type": "formula",
-      "content": "C_n^k = n! / (k!(n − k)!)        C_n^k = C_n^(n−k)        C_n^0 = C_n^n = 1"
-    },
-    {
-      "type": "text",
-      "content": "Phân biệt: có sắp thứ tự (chức vụ khác nhau, xếp hàng, lập số) thì dùng chỉnh hợp hoặc hoán vị; chỉ chọn ra một nhóm không phân biệt vai trò thì dùng tổ hợp."
+      "type": "card",
+      "title": "Phân biệt",
+      "text": "Có sắp thứ tự (chức vụ khác nhau, xếp hàng, lập số) thì dùng chỉnh hợp hoặc hoán vị; chỉ chọn ra một nhóm không phân biệt vai trò thì dùng tổ hợp.",
+      "n": 4
     },
     {
       "type": "method",

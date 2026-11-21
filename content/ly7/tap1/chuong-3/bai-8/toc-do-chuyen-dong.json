@@ -15,36 +15,43 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Tốc độ là đại lượng cho biết chuyển động nhanh hay chậm. Để so sánh, ta xét quãng đường vật đi được trong cùng một đơn vị thời gian."
     },
     {
-      "type": "formula",
-      "content": "v = s / t"
+      "type": "card",
+      "title": "Tốc độ là đại lượng cho biết chuyển động nhanh hay chậm",
+      "text": "Để so sánh, ta xét quãng đường vật đi được trong cùng một đơn vị thời gian.",
+      "n": 1,
+      "formulas": [
+        "v = s / t"
+      ]
     },
     {
-      "type": "text",
-      "content": "Trong đó v là tốc độ, s là quãng đường đi được, t là thời gian đi hết quãng đường đó."
+      "type": "card",
+      "title": "Trong đó v là tốc độ, s…",
+      "text": "Trong đó v là tốc độ, s là quãng đường đi được, t là thời gian đi hết quãng đường đó.",
+      "n": 2,
+      "formulas": [
+        "s = v · t",
+        "t = s / v"
+      ]
     },
     {
-      "type": "formula",
-      "content": "s = v · t"
+      "type": "card",
+      "title": "Các đơn vị tốc độ thường dùng…",
+      "text": "Các đơn vị tốc độ thường dùng là mét trên giây (m/s) và kilômét trên giờ (km/h).",
+      "n": 3,
+      "formulas": [
+        "1 m/s = 3,6 km/h"
+      ]
     },
     {
-      "type": "formula",
-      "content": "t = s / v"
-    },
-    {
-      "type": "text",
-      "content": "Các đơn vị tốc độ thường dùng là mét trên giây (m/s) và kilômét trên giờ (km/h)."
-    },
-    {
-      "type": "formula",
-      "content": "1 m/s = 3,6 km/h"
-    },
-    {
-      "type": "text",
-      "content": "Trong thực tế, tốc độ của một vật thường thay đổi. Khi đó v = s / t là tốc độ trung bình trên quãng đường s."
+      "type": "card",
+      "title": "Trong thực tế, tốc độ của một vật thường thay đổi",
+      "text": "Khi đó v = s / t là tốc độ trung bình trên quãng đường s.",
+      "n": 4
     },
     {
       "type": "method",

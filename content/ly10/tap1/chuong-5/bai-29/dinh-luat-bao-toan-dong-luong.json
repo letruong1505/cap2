@@ -14,16 +14,24 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Hệ kín (hệ cô lập) là hệ vật không chịu tác dụng của ngoại lực, hoặc tổng các ngoại lực bằng 0, hoặc ngoại lực rất nhỏ so với nội lực trong thời gian tương tác ngắn (va chạm, nổ)."
     },
     {
-      "type": "text",
-      "content": "Định luật bảo toàn động lượng: Tổng động lượng của một hệ kín được bảo toàn."
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Hệ kín (hệ cô lập) là hệ vật không chịu tác dụng của ngoại lực, hoặc tổng các ngoại lực bằng 0, hoặc ngoại lực rất nhỏ so với nội lực trong thời gian tương tác ngắn (va chạm, nổ).",
+      "n": 1
     },
     {
-      "type": "formula",
-      "content": "m₁→v₁ + m₂→v₂ = m₁→v₁′ + m₂→v₂′"
+      "type": "card",
+      "title": "Định luật bảo toàn động lượng",
+      "text": "Tổng động lượng của một hệ kín được bảo toàn.",
+      "n": 2,
+      "formulas": [
+        "m₁→v₁ + m₂→v₂ = m₁→v₁′ + m₂→v₂′"
+      ]
     },
     {
       "type": "figure",
@@ -31,12 +39,22 @@
       "caption": "Va chạm mềm: sau va chạm hai vật dính vào nhau, chuyển động cùng vận tốc"
     },
     {
-      "type": "text",
-      "content": "Va chạm mềm: sau va chạm hai vật dính nhau, chuyển động cùng vận tốc v: m₁v₁ + m₂v₂ = (m₁ + m₂)v. Trong va chạm mềm động năng không bảo toàn (một phần chuyển thành nhiệt)."
+      "type": "card",
+      "title": "Va chạm mềm",
+      "points": [
+        "Sau va chạm hai vật dính nhau, chuyển động cùng vận tốc v: m₁v₁ + m₂v₂ = (m₁ + m₂)v.",
+        "Trong va chạm mềm động năng không bảo toàn (một phần chuyển thành nhiệt)."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Va chạm đàn hồi: sau va chạm các vật tách rời, cả động lượng và động năng được bảo toàn. Chuyển động bằng phản lực: hệ ban đầu đứng yên tách thành hai phần thì m₁v₁ + m₂v₂ = 0, hai phần chuyển động ngược chiều (súng giật lùi, tên lửa)."
+      "type": "card",
+      "title": "Va chạm đàn hồi",
+      "points": [
+        "Sau va chạm các vật tách rời, cả động lượng và động năng được bảo toàn.",
+        "Chuyển động bằng phản lực: hệ ban đầu đứng yên tách thành hai phần thì m₁v₁ + m₂v₂ = 0, hai phần chuyển động ngược chiều (súng giật lùi, tên lửa)."
+      ],
+      "n": 4
     },
     {
       "type": "method",

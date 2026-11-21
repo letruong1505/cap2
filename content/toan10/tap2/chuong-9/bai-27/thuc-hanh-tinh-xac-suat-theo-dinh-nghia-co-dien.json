@@ -14,12 +14,24 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Phương pháp tổ hợp: khi phép thử là chọn ngẫu nhiên k phần tử từ n phần tử (không kể thứ tự) thì n(Ω) = C_n^k; số kết quả thuận lợi cũng đếm bằng tổ hợp kết hợp quy tắc nhân."
     },
     {
-      "type": "text",
-      "content": "Sơ đồ hình cây: khi phép thử gồm nhiều giai đoạn với ít kết quả mỗi giai đoạn (gieo đồng xu vài lần, bốc thẻ lần lượt), vẽ sơ đồ hình cây để liệt kê đầy đủ không gian mẫu rồi đếm."
+      "type": "card",
+      "title": "Phương pháp tổ hợp",
+      "text": "Khi phép thử là chọn ngẫu nhiên k phần tử từ n phần tử (không kể thứ tự) thì n(Ω) = C_n^k; số kết quả thuận lợi cũng đếm bằng tổ hợp kết hợp quy tắc nhân.",
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Sơ đồ hình cây",
+      "text": "Khi phép thử gồm nhiều giai đoạn với ít kết quả mỗi giai đoạn (gieo đồng xu vài lần, bốc thẻ lần lượt), vẽ sơ đồ hình cây để liệt kê đầy đủ không gian mẫu rồi đếm.",
+      "n": 2,
+      "formulas": [
+        "P(Ā) = 1 − P(A)   →   P(A) = 1 − P(Ā)"
+      ]
     },
     {
       "type": "figure",
@@ -27,16 +39,19 @@
       "caption": "Sơ đồ hình cây khi gieo một đồng xu hai lần"
     },
     {
-      "type": "formula",
-      "content": "P(Ā) = 1 − P(A)   →   P(A) = 1 − P(Ā)"
+      "type": "card",
+      "title": "Với biến cố dạng \"có ít nhất…",
+      "text": "Với biến cố dạng \"có ít nhất một ...\" hoặc \"không phải tất cả ...\", biến cố đối thường dễ đếm hơn: \"không có ... nào\" hoặc \"tất cả đều ...\".",
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Với biến cố dạng \"có ít nhất một ...\" hoặc \"không phải tất cả ...\", biến cố đối thường dễ đếm hơn: \"không có ... nào\" hoặc \"tất cả đều ...\"."
-    },
-    {
-      "type": "text",
-      "content": "Lưu ý khi đếm: \"lấy đồng thời\" hoặc \"lấy ngẫu nhiên k vật\" dùng tổ hợp; \"lấy lần lượt\" hoặc \"xếp\" thì có thứ tự; kết quả phải đồng khả năng."
+      "type": "card",
+      "title": "Lưu ý khi đếm",
+      "points": [
+        "\"lấy đồng thời\" hoặc \"lấy ngẫu nhiên k vật\" dùng tổ hợp;",
+        "\"lấy lần lượt\" hoặc \"xếp\" thì có thứ tự; kết quả phải đồng khả năng."
+      ],
+      "n": 4
     },
     {
       "type": "method",
