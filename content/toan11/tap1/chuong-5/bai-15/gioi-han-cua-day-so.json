@@ -14,8 +14,22 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Dãy số (uₙ) có giới hạn 0 khi n dần tới dương vô cực nếu |uₙ| nhỏ hơn một số dương bé tuỳ ý kể từ một số hạng nào đó trở đi; kí hiệu lim uₙ = 0. Dãy (uₙ) có giới hạn a (hữu hạn) nếu lim (uₙ − a) = 0, kí hiệu lim uₙ = a."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Dãy số (uₙ) có giới hạn 0 khi n dần tới dương vô cực nếu |uₙ| nhỏ hơn một số dương bé tuỳ ý kể từ một số hạng nào đó trở đi; kí hiệu lim uₙ = 0."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Dãy số (uₙ) có giới hạn 0 khi n dần tới dương vô cực nếu |uₙ| nhỏ hơn một số dương bé tuỳ ý kể từ một số hạng nào đó trở đi; kí hiệu lim uₙ = 0.",
+        "Dãy (uₙ) có giới hạn a (hữu hạn) nếu lim (uₙ − a) = 0, kí hiệu lim uₙ = a."
+      ],
+      "n": 1,
+      "formulas": [
+        "lim 1/nᵏ = 0 (k nguyên dương);  lim c = c;  lim qⁿ = 0 nếu |q| < 1;  lim nᵏ = +∞;  lim qⁿ = +∞ nếu q > 1.",
+        "Nếu lim uₙ = a, lim vₙ = b thì lim(uₙ ± vₙ) = a ± b, lim(uₙvₙ) = ab, lim(uₙ/vₙ) = a/b (b ≠ 0), lim √uₙ = √a (uₙ ≥ 0, a ≥ 0)."
+      ]
     },
     {
       "type": "figure",
@@ -23,16 +37,13 @@
       "caption": "Dãy uₙ = (2n + 1)/(n + 1) có các số hạng tiến lại gần đường thẳng y = 2: lim uₙ = 2"
     },
     {
-      "type": "formula",
-      "content": "lim 1/nᵏ = 0 (k nguyên dương);  lim c = c;  lim qⁿ = 0 nếu |q| < 1;  lim nᵏ = +∞;  lim qⁿ = +∞ nếu q > 1."
-    },
-    {
-      "type": "formula",
-      "content": "Nếu lim uₙ = a, lim vₙ = b thì lim(uₙ ± vₙ) = a ± b, lim(uₙvₙ) = ab, lim(uₙ/vₙ) = a/b (b ≠ 0), lim √uₙ = √a (uₙ ≥ 0, a ≥ 0)."
-    },
-    {
-      "type": "text",
-      "content": "Tổng của cấp số nhân lùi vô hạn (|q| < 1): S = u₁ + u₁q + u₁q² + … = u₁/(1 − q). Ứng dụng: đổi số thập phân vô hạn tuần hoàn thành phân số, ví dụ 0,(3) = 0,3 + 0,03 + … = 1/3."
+      "type": "card",
+      "title": "Tổng của cấp số nhân lùi vô hạn (|q| < 1)",
+      "points": [
+        "S = u₁ + u₁q + u₁q² + … = u₁/(1 − q).",
+        "Ứng dụng: đổi số thập phân vô hạn tuần hoàn thành phân số, ví dụ 0,(3) = 0,3 + 0,03 + … = 1/3."
+      ],
+      "n": 2
     },
     {
       "type": "method",

@@ -14,8 +14,18 @@
   ],
   "theory": [
     {
-      "type": "formula",
-      "content": "Phương trình mũ: aᵘ = aᵛ ⇔ u = v (a > 0, a ≠ 1);   aˣ = b (b > 0) ⇔ x = log_a b.   Phương trình lôgarit: log_a u = log_a v ⇔ u = v > 0;   log_a x = b ⇔ x = aᵇ (x > 0)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Khi giải phương trình lôgarit luôn đặt điều kiện biểu thức trong lôgarit dương, và thử lại nghiệm (đối chiếu điều kiện)."
+    },
+    {
+      "type": "card",
+      "n": 1,
+      "title": "Công thức",
+      "formulas": [
+        "Phương trình mũ: aᵘ = aᵛ ⇔ u = v (a > 0, a ≠ 1);   aˣ = b (b > 0) ⇔ x = log_a b.   Phương trình lôgarit: log_a u = log_a v ⇔ u = v > 0;   log_a x = b ⇔ x = aᵇ (x > 0).",
+        "Bất phương trình mũ (a > 1): aᵘ > aᵛ ⇔ u > v;  (0 < a < 1): aᵘ > aᵛ ⇔ u < v.   Bất phương trình lôgarit (a > 1): log_a u > log_a v ⇔ u > v > 0;  (0 < a < 1): ⇔ 0 < u < v."
+      ]
     },
     {
       "type": "figure",
@@ -23,12 +33,10 @@
       "caption": "Nghiệm của 2ˣ = 8 là hoành độ giao điểm của đồ thị y = 2ˣ và đường thẳng y = 8: x = 3"
     },
     {
-      "type": "formula",
-      "content": "Bất phương trình mũ (a > 1): aᵘ > aᵛ ⇔ u > v;  (0 < a < 1): aᵘ > aᵛ ⇔ u < v.   Bất phương trình lôgarit (a > 1): log_a u > log_a v ⇔ u > v > 0;  (0 < a < 1): ⇔ 0 < u < v."
-    },
-    {
-      "type": "text",
-      "content": "Khi giải phương trình lôgarit luôn đặt điều kiện biểu thức trong lôgarit dương, và thử lại nghiệm (đối chiếu điều kiện)."
+      "type": "card",
+      "title": "Khi giải phương trình lôgarit luôn đặt…",
+      "text": "Khi giải phương trình lôgarit luôn đặt điều kiện biểu thức trong lôgarit dương, và thử lại nghiệm (đối chiếu điều kiện).",
+      "n": 2
     },
     {
       "type": "method",

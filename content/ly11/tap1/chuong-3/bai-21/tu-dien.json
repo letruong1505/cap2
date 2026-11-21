@@ -14,8 +14,24 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Tụ điện là hệ hai vật dẫn đặt gần nhau, ngăn cách bằng lớp điện môi; dùng để tích và phóng điện. Tụ phẳng gồm hai bản kim loại phẳng song song với lớp điện môi ở giữa. Khi nối tụ với nguồn điện U, hai bản tích điện trái dấu +Q và −Q; Q gọi là điện tích của tụ."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Tụ điện là hệ hai vật dẫn đặt gần nhau, ngăn cách bằng lớp điện môi; dùng để tích và phóng điện."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Tụ điện là hệ hai vật dẫn đặt gần nhau, ngăn cách bằng lớp điện môi; dùng để tích và phóng điện.",
+        "Tụ phẳng gồm hai bản kim loại phẳng song song với lớp điện môi ở giữa.",
+        "Khi nối tụ với nguồn điện U, hai bản tích điện trái dấu +Q và −Q;",
+        "Q gọi là điện tích của tụ."
+      ],
+      "n": 1,
+      "formulas": [
+        "Điện dung C = Q/U (F);   1 μF = 10⁻⁶ F; 1 nF = 10⁻⁹ F; 1 pF = 10⁻¹² F.   Tụ phẳng: C = εS/(4πk·d) (S diện tích bản, d khoảng cách bản).",
+        "Năng lượng tụ điện: W = ½QU = ½CU² = Q²/(2C)."
+      ]
     },
     {
       "type": "figure",
@@ -23,16 +39,14 @@
       "caption": "Tụ điện phẳng: hai bản, điện môi, kí hiệu; hai cách ghép: song song (C = C₁ + C₂) và nối tiếp (1/C = 1/C₁ + 1/C₂)"
     },
     {
-      "type": "formula",
-      "content": "Điện dung C = Q/U (F);   1 μF = 10⁻⁶ F; 1 nF = 10⁻⁹ F; 1 pF = 10⁻¹² F.   Tụ phẳng: C = εS/(4πk·d) (S diện tích bản, d khoảng cách bản)."
-    },
-    {
-      "type": "formula",
-      "content": "Năng lượng tụ điện: W = ½QU = ½CU² = Q²/(2C)."
-    },
-    {
-      "type": "text",
-      "content": "Ghép song song: U bằng nhau, Q = Q₁ + Q₂, C = C₁ + C₂. Ghép nối tiếp: Q bằng nhau, U = U₁ + U₂, 1/C = 1/C₁ + 1/C₂. Ứng dụng: đèn flash máy ảnh, máy khử rung tim, mạch lọc, mạch dao động, màn hình cảm ứng."
+      "type": "card",
+      "title": "Ghép song song",
+      "points": [
+        "U bằng nhau, Q = Q₁ + Q₂, C = C₁ + C₂.",
+        "Ghép nối tiếp: Q bằng nhau, U = U₁ + U₂, 1/C = 1/C₁ + 1/C₂.",
+        "Ứng dụng: đèn flash máy ảnh, máy khử rung tim, mạch lọc, mạch dao động, màn hình cảm ứng."
+      ],
+      "n": 2
     },
     {
       "type": "method",

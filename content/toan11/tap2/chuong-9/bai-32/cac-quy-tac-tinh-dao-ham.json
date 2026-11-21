@@ -14,25 +14,25 @@
   ],
   "theory": [
     {
-      "type": "formula",
-      "content": "(c)′ = 0;  (x)′ = 1;  (xⁿ)′ = n·xⁿ⁻¹;  (√x)′ = 1/(2√x);  (1/x)′ = −1/x²;  (sin x)′ = cos x;  (cos x)′ = −sin x;  (tan x)′ = 1/cos²x;  (cot x)′ = −1/sin²x."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Các công thức chính của bài."
     },
     {
-      "type": "formula",
-      "content": "(eˣ)′ = eˣ;  (aˣ)′ = aˣ·ln a;  (ln x)′ = 1/x;  (log_a x)′ = 1/(x·ln a)."
-    },
-    {
-      "type": "formula",
-      "content": "(u ± v)′ = u′ ± v′;  (uv)′ = u′v + uv′;  (ku)′ = k·u′;  (u/v)′ = (u′v − uv′)/v² (v ≠ 0)."
+      "type": "card",
+      "n": 1,
+      "title": "Công thức",
+      "formulas": [
+        "(c)′ = 0;  (x)′ = 1;  (xⁿ)′ = n·xⁿ⁻¹;  (√x)′ = 1/(2√x);  (1/x)′ = −1/x²;  (sin x)′ = cos x;  (cos x)′ = −sin x;  (tan x)′ = 1/cos²x;  (cot x)′ = −1/sin²x.",
+        "(eˣ)′ = eˣ;  (aˣ)′ = aˣ·ln a;  (ln x)′ = 1/x;  (log_a x)′ = 1/(x·ln a).",
+        "(u ± v)′ = u′ ± v′;  (uv)′ = u′v + uv′;  (ku)′ = k·u′;  (u/v)′ = (u′v − uv′)/v² (v ≠ 0).",
+        "Đạo hàm của hàm hợp: nếu y = f(u), u = u(x) thì y′ₓ = y′ᵤ·u′ₓ. Ví dụ: (uⁿ)′ = n·uⁿ⁻¹·u′;  (sin u)′ = u′·cos u;  (e^u)′ = u′·e^u;  (ln u)′ = u′/u."
+      ]
     },
     {
       "type": "figure",
       "figure": "figures/t11-b32-do-thi-dao-ham.svg",
       "caption": "Đồ thị y = x³ (xanh) và đạo hàm y′ = 3x² (đỏ): y′ = 0 tại x = 0, hàm đồng biến vì y′ ≥ 0"
-    },
-    {
-      "type": "formula",
-      "content": "Đạo hàm của hàm hợp: nếu y = f(u), u = u(x) thì y′ₓ = y′ᵤ·u′ₓ. Ví dụ: (uⁿ)′ = n·uⁿ⁻¹·u′;  (sin u)′ = u′·cos u;  (e^u)′ = u′·e^u;  (ln u)′ = u′/u."
     },
     {
       "type": "method",

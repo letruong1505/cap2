@@ -14,25 +14,38 @@
   ],
   "theory": [
     {
-      "type": "formula",
-      "content": "Số trung bình: x̄ = (n₁x₁ + n₂x₂ + … + nₘxₘ)/n, trong đó xᵢ là giá trị đại diện của nhóm i, nᵢ là tần số, n = n₁ + … + nₘ."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Tứ phân vị: Q₂ = Mₑ; Q₁ tính tương tự trung vị nhưng thay n/2 bằng n/4;"
     },
     {
-      "type": "formula",
-      "content": "Trung vị Mₑ = a_p + [(n/2 − cf_{p−1})/n_p]·(a_{p+1} − a_p), với nhóm p là nhóm đầu tiên có tần số tích luỹ ≥ n/2; cf_{p−1} là tần số tích luỹ của nhóm đứng trước."
+      "type": "card",
+      "n": 1,
+      "title": "Công thức",
+      "formulas": [
+        "Số trung bình: x̄ = (n₁x₁ + n₂x₂ + … + nₘxₘ)/n, trong đó xᵢ là giá trị đại diện của nhóm i, nᵢ là tần số, n = n₁ + … + nₘ.",
+        "Trung vị Mₑ = a_p + [(n/2 − cf_{p−1})/n_p]·(a_{p+1} − a_p), với nhóm p là nhóm đầu tiên có tần số tích luỹ ≥ n/2; cf_{p−1} là tần số tích luỹ của nhóm đứng trước."
+      ]
     },
     {
-      "type": "text",
-      "content": "Tứ phân vị: Q₂ = Mₑ; Q₁ tính tương tự trung vị nhưng thay n/2 bằng n/4; Q₃ thay bằng 3n/4. Trên mẫu số liệu: Q₁ là trung vị của nửa dưới, Q₃ là trung vị của nửa trên. Khoảng tứ phân vị Δ_Q = Q₃ − Q₁ đo độ phân tán của nửa giữa mẫu."
+      "type": "card",
+      "title": "Tứ phân vị",
+      "points": [
+        "Q₂ = Mₑ;",
+        "Q₁ tính tương tự trung vị nhưng thay n/2 bằng n/4;",
+        "Q₃ thay bằng 3n/4.",
+        "Trên mẫu số liệu: Q₁ là trung vị của nửa dưới, Q₃ là trung vị của nửa trên.",
+        "Khoảng tứ phân vị Δ_Q = Q₃ − Q₁ đo độ phân tán của nửa giữa mẫu."
+      ],
+      "n": 2,
+      "formulas": [
+        "Mốt M₀ = u_m + [(n_m − n_{m−1})/((n_m − n_{m−1}) + (n_m − n_{m+1}))]·(u_{m+1} − u_m), với nhóm m có tần số lớn nhất."
+      ]
     },
     {
       "type": "figure",
       "figure": "figures/t11-b9-hist-trung-vi.svg",
       "caption": "Tần số 5; 9; 14; 8; 4: nhóm chứa trung vị là nhóm có tần số tích luỹ lần đầu ≥ n/2 (cột đậm hơn)"
-    },
-    {
-      "type": "formula",
-      "content": "Mốt M₀ = u_m + [(n_m − n_{m−1})/((n_m − n_{m−1}) + (n_m − n_{m+1}))]·(u_{m+1} − u_m), với nhóm m có tần số lớn nhất."
     },
     {
       "type": "method",

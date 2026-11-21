@@ -14,16 +14,31 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Dòng điện là dòng các điện tích chuyển động có hướng. Chiều dòng điện quy ước là chiều chuyển động của các điện tích dương (ngược chiều chuyển động của electron trong kim loại). Trong kim loại hạt tải điện là các electron tự do; trong chất điện phân là các ion; trong chất khí là ion và electron."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Dòng điện là dòng các điện tích chuyển động có hướng. Chiều dòng điện quy ước là chiều chuyển động của các điện tích dương (ngược chiều chuyển động của electron trong kim loại)."
     },
     {
-      "type": "text",
-      "content": "Tác dụng của dòng điện: tác dụng nhiệt, từ, hoá học, sinh lí, quang. Cường độ dòng điện cho biết độ mạnh yếu của dòng điện, đo bằng điện lượng chuyển qua tiết diện thẳng của vật dẫn trong một đơn vị thời gian."
+      "type": "card",
+      "title": "Dòng điện là dòng các điện tích chuyển động có hướng",
+      "points": [
+        "Chiều dòng điện quy ước là chiều chuyển động của các điện tích dương (ngược chiều chuyển động của electron trong kim loại).",
+        "Trong kim loại hạt tải điện là các electron tự do; trong chất điện phân là các ion; trong chất khí là ion và electron."
+      ],
+      "n": 1
     },
     {
-      "type": "formula",
-      "content": "I = Δq/Δt   (1 A = 1 C/s);   dòng điện không đổi: I = q/t;   1 mA = 10⁻³ A; 1 μA = 10⁻⁶ A."
+      "type": "card",
+      "title": "Tác dụng của dòng điện",
+      "points": [
+        "Tác dụng nhiệt, từ, hoá học, sinh lí, quang.",
+        "Cường độ dòng điện cho biết độ mạnh yếu của dòng điện, đo bằng điện lượng chuyển qua tiết diện thẳng của vật dẫn trong một đơn vị thời gian."
+      ],
+      "n": 2,
+      "formulas": [
+        "I = Δq/Δt   (1 A = 1 C/s);   dòng điện không đổi: I = q/t;   1 mA = 10⁻³ A; 1 μA = 10⁻⁶ A.",
+        "Số hạt tải điện qua tiết diện: N = q/|e| = It/|e|, |e| = 1,6·10⁻¹⁹ C.   Cường độ theo mật độ hạt: I = nSv|e| (n: mật độ hạt tải điện, S: tiết diện, v: tốc độ trôi)."
+      ]
     },
     {
       "type": "figure",
@@ -31,12 +46,13 @@
       "caption": "Dòng điện trong dây dẫn kim loại: electron chuyển động có hướng ngược chiều dòng điện quy ước; I = nSve"
     },
     {
-      "type": "formula",
-      "content": "Số hạt tải điện qua tiết diện: N = q/|e| = It/|e|, |e| = 1,6·10⁻¹⁹ C.   Cường độ theo mật độ hạt: I = nSv|e| (n: mật độ hạt tải điện, S: tiết diện, v: tốc độ trôi)."
-    },
-    {
-      "type": "text",
-      "content": "Tốc độ trôi (tốc độ chuyển động có hướng) của electron rất nhỏ (cỡ 10⁻⁴ m/s), còn tín hiệu điện lan truyền cả mạch với tốc độ gần bằng tốc độ ánh sáng. Dụng cụ đo cường độ dòng điện là ampe kế, mắc nối tiếp với đoạn mạch cần đo."
+      "type": "card",
+      "title": "Tốc độ trôi (tốc độ chuyển động…",
+      "points": [
+        "Tốc độ trôi (tốc độ chuyển động có hướng) của electron rất nhỏ (cỡ 10⁻⁴ m/s), còn tín hiệu điện lan truyền cả mạch với tốc độ gần bằng tốc độ ánh sáng.",
+        "Dụng cụ đo cường độ dòng điện là ampe kế, mắc nối tiếp với đoạn mạch cần đo."
+      ],
+      "n": 3
     },
     {
       "type": "method",

@@ -14,8 +14,22 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Con lắc lò xo gồm vật khối lượng m gắn vào lò xo có độ cứng k, đặt nằm ngang trên mặt phẳng không ma sát. Vật dao động điều hoà với tần số góc ω = √(k/m)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Con lắc lò xo gồm vật khối lượng m gắn vào lò xo có độ cứng k, đặt nằm ngang trên mặt phẳng không ma sát."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Con lắc lò xo gồm vật khối lượng m gắn vào lò xo có độ cứng k, đặt nằm ngang trên mặt phẳng không ma sát.",
+        "Vật dao động điều hoà với tần số góc ω = √(k/m)."
+      ],
+      "n": 1,
+      "formulas": [
+        "Con lắc lò xo: ω = √(k/m);  T = 2π√(m/k);  f = (1/2π)√(k/m).   Lực kéo về F = −kx.",
+        "Con lắc đơn (góc nhỏ): ω = √(g/ℓ);  T = 2π√(ℓ/g);  f = (1/2π)√(g/ℓ)."
+      ]
     },
     {
       "type": "figure",
@@ -23,21 +37,18 @@
       "caption": "Con lắc lò xo nằm ngang: VTCB tại O; lực kéo về là lực đàn hồi F = −kx"
     },
     {
-      "type": "formula",
-      "content": "Con lắc lò xo: ω = √(k/m);  T = 2π√(m/k);  f = (1/2π)√(k/m).   Lực kéo về F = −kx."
-    },
-    {
       "type": "figure",
       "figure": "figures/l11-b4-con-lac-don.svg",
       "caption": "Con lắc đơn: sợi dây dài ℓ, vật nặng dao động quanh VTCB; góc lệch nhỏ (α < 10°) thì dao động gần đúng là điều hoà"
     },
     {
-      "type": "formula",
-      "content": "Con lắc đơn (góc nhỏ): ω = √(g/ℓ);  T = 2π√(ℓ/g);  f = (1/2π)√(g/ℓ)."
-    },
-    {
-      "type": "text",
-      "content": "Chu kì của con lắc lò xo không phụ thuộc biên độ, tăng khi khối lượng tăng (T ∝ √m) và giảm khi độ cứng tăng (T ∝ 1/√k). Chu kì con lắc đơn tỉ lệ với căn bậc hai của chiều dài, không phụ thuộc khối lượng vật nặng."
+      "type": "card",
+      "title": "Chu kì của con lắc lò xo…",
+      "points": [
+        "Chu kì của con lắc lò xo không phụ thuộc biên độ, tăng khi khối lượng tăng (T ∝ √m) và giảm khi độ cứng tăng (T ∝ 1/√k).",
+        "Chu kì con lắc đơn tỉ lệ với căn bậc hai của chiều dài, không phụ thuộc khối lượng vật nặng."
+      ],
+      "n": 2
     },
     {
       "type": "method",

@@ -14,25 +14,38 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Hai đường thẳng a, b trong không gian có ba vị trí tương đối: song song (cùng nằm trong một mặt phẳng, không có điểm chung); cắt nhau (có một điểm chung); chéo nhau (không cùng nằm trong một mặt phẳng nào)."
     },
     {
-      "type": "text",
-      "content": "Qua một điểm nằm ngoài một đường thẳng, có duy nhất một đường thẳng song song với đường thẳng đó. Hai đường thẳng phân biệt cùng song song với đường thẳng thứ ba thì song song với nhau."
+      "type": "card",
+      "title": "Hai đường thẳng a, b trong không gian có ba vị trí tương đối",
+      "text": "Song song (cùng nằm trong một mặt phẳng, không có điểm chung); cắt nhau (có một điểm chung); chéo nhau (không cùng nằm trong một mặt phẳng nào).",
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Định lí giao tuyến: nếu hai mặt phẳng phân biệt lần lượt chứa hai đường thẳng song song thì giao tuyến (nếu có) của chúng song song với hai đường thẳng đó hoặc trùng với một trong hai đường thẳng đó."
+      "type": "card",
+      "title": "Qua một điểm nằm ngoài một đường…",
+      "points": [
+        "Qua một điểm nằm ngoài một đường thẳng, có duy nhất một đường thẳng song song với đường thẳng đó.",
+        "Hai đường thẳng phân biệt cùng song song với đường thẳng thứ ba thì song song với nhau."
+      ],
+      "n": 2
+    },
+    {
+      "type": "card",
+      "title": "Định lí giao tuyến",
+      "text": "Nếu hai mặt phẳng phân biệt lần lượt chứa hai đường thẳng song song thì giao tuyến (nếu có) của chúng song song với hai đường thẳng đó hoặc trùng với một trong hai đường thẳng đó.",
+      "n": 3,
+      "formulas": [
+        "Định lí Thalès trong tam giác: M ∈ SA, N ∈ SB, MN ∥ AB ⇔ SM/SA = SN/SB = MN/AB."
+      ]
     },
     {
       "type": "figure",
       "figure": "figures/t11-b11-lang-tru.svg",
       "caption": "Lăng trụ ABC.A′B′C′ có AA′ ∥ BB′ ∥ CC′; mặt phẳng (AA′M′M) cắt hai đáy theo AM ∥ A′M′"
-    },
-    {
-      "type": "formula",
-      "content": "Định lí Thalès trong tam giác: M ∈ SA, N ∈ SB, MN ∥ AB ⇔ SM/SA = SN/SB = MN/AB."
     },
     {
       "type": "method",

@@ -14,12 +14,26 @@
   ],
   "theory": [
     {
-      "type": "formula",
-      "content": "W = ½kA² = ½mω²A²;   W_t = ½kx²;   W_đ = W − W_t = ½k(A² − x²);   v² = (k/m)(A² − x²)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Khi W_đ = nW_t: x = ±A/√(n + 1) và v = ±ωA√(n/(n + 1)). Khi W_đ = W_t: x = ±A/√2."
     },
     {
-      "type": "text",
-      "content": "Khi W_đ = nW_t: x = ±A/√(n + 1) và v = ±ωA√(n/(n + 1)). Khi W_đ = W_t: x = ±A/√2. Tại x = ±A/2: W_t = W/4, W_đ = 3W/4."
+      "type": "card",
+      "n": 1,
+      "title": "Công thức",
+      "formulas": [
+        "W = ½kA² = ½mω²A²;   W_t = ½kx²;   W_đ = W − W_t = ½k(A² − x²);   v² = (k/m)(A² − x²)."
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Khi W_đ = nW_t: x = ±A/√(n + 1) và v = ±ωA√(n/(n + 1))",
+      "points": [
+        "Khi W_đ = W_t: x = ±A/√2.",
+        "Tại x = ±A/2: W_t = W/4, W_đ = 3W/4."
+      ],
+      "n": 2
     },
     {
       "type": "figure",
@@ -27,8 +41,13 @@
       "caption": "Con lắc lò xo nằm ngang: thế năng cực đại ở biên, động năng cực đại ở VTCB; tổng không đổi"
     },
     {
-      "type": "text",
-      "content": "Với con lắc lò xo thẳng đứng, chọn VTCB làm gốc thế năng đàn hồi + trọng lực thì biểu thức thế năng của hệ vẫn có dạng ½kx² (x tính từ VTCB). Bảo toàn cơ năng: ½mv₁² + ½kx₁² = ½mv₂² + ½kx₂²."
+      "type": "card",
+      "title": "Với con lắc lò xo thẳng đứng…",
+      "points": [
+        "Với con lắc lò xo thẳng đứng, chọn VTCB làm gốc thế năng đàn hồi + trọng lực thì biểu thức thế năng của hệ vẫn có dạng ½kx² (x tính từ VTCB).",
+        "Bảo toàn cơ năng: ½mv₁² + ½kx₁² = ½mv₂² + ½kx₂²."
+      ],
+      "n": 3
     },
     {
       "type": "method",

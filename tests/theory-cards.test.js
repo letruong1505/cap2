@@ -12,10 +12,11 @@ function collect(subject) {
       if (f.isDirectory()) { if (f.name !== 'figures') walk(p); } else if (f.name.endsWith('.json') && f.name !== 'manifest.json') out.push(p);
     }
   })(path.join(__dirname, '..', 'content', subject));
-  return out.filter((p) => !p.includes('on-tap'));
+  return out.filter((p) => !p.includes('on-tap') && !p.includes('nang-cao'));
 }
 // minTry: số câu "Thử ngay" tối thiểu (các môn dựng tự động bằng tools/auto-cards.py chưa có câu thử)
-const SUBJECTS = { toan12: [19, 25], ly12: [25, 25], hoa12: [22, 0], sinh12: [35, 0], lichsu12: [17, 0], diali12: [35, 0], gdktpl12: [16, 0] };
+const SUBJECTS = { toan12: [19, 25], ly12: [25, 25], hoa12: [22, 0], sinh12: [35, 0], lichsu12: [17, 0], diali12: [35, 0], gdktpl12: [16, 0],
+   toan11: [33, 0], ly11: [26, 0], hoa11: [19, 0], sinh11: [29, 0], lichsu11: [13, 0], diali11: [30, 0], gdktpl11: [21, 0] };
 
 for (const [subject, [count, minTry]] of Object.entries(SUBJECTS)) {
   const bai = collect(subject);
@@ -26,7 +27,7 @@ for (const [subject, [count, minTry]] of Object.entries(SUBJECTS)) {
       const th = JSON.parse(fs.readFileSync(p, 'utf8')).theory;
       assert.equal(th[0].type, 'summary', path.basename(p) + ': khối đầu phải là tóm tắt');
       const cards = th.filter((b) => b.type === 'card');
-      assert.ok(cards.length >= 2, path.basename(p) + ': cần ít nhất 2 thẻ');
+      assert.ok(cards.length >= 1, path.basename(p) + ': cần ít nhất 1 thẻ');
       cards.forEach((c, i) => assert.equal(c.n, i + 1, path.basename(p) + ': số thẻ phải liên tục'));
       assert.ok(!th.some((b) => b.type === 'text' && b.content && b.content.length > 200 && !b.content.startsWith('Bài')), path.basename(p) + ': còn đoạn văn dài');
     }

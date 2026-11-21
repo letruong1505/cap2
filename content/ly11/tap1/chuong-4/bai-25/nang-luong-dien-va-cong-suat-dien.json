@@ -14,20 +14,37 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Khi có dòng điện chạy qua đoạn mạch, điện năng được chuyển hoá thành các dạng năng lượng khác (nhiệt, quang, cơ,...). Công của dòng điện (điện năng tiêu thụ) trên đoạn mạch: A = UIt (J). Công suất điện: P = A/t = UI (W)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Khi có dòng điện chạy qua đoạn mạch, điện năng được chuyển hoá thành các dạng năng lượng khác (nhiệt, quang, cơ,...)."
     },
     {
-      "type": "formula",
-      "content": "A = UIt;   P = UI;   đoạn mạch chỉ có điện trở R: P = I²R = U²/R;   nhiệt lượng toả ra (định luật Joule – Lenz): Q = I²Rt."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Khi có dòng điện chạy qua đoạn mạch, điện năng được chuyển hoá thành các dạng năng lượng khác (nhiệt, quang, cơ,...).",
+        "Công của dòng điện (điện năng tiêu thụ) trên đoạn mạch: A = UIt (J).",
+        "Công suất điện: P = A/t = UI (W)."
+      ],
+      "n": 1,
+      "formulas": [
+        "A = UIt;   P = UI;   đoạn mạch chỉ có điện trở R: P = I²R = U²/R;   nhiệt lượng toả ra (định luật Joule – Lenz): Q = I²Rt."
+      ]
     },
     {
-      "type": "text",
-      "content": "Đơn vị: 1 W = 1 J/s; 1 kWh = 3,6·10⁶ J. Điện năng tiêu thụ ghi trên công tơ điện bằng kWh. Công suất định mức của thiết bị ghi trên thiết bị (ví dụ bóng đèn 220 V – 60 W). Thiết bị hoạt động bình thường khi U bằng hiệu điện thế định mức."
-    },
-    {
-      "type": "formula",
-      "content": "Công suất của nguồn: P_ng = EI;   công suất mạch ngoài: P = UI = I²R;   công suất hao phí trong nguồn: I²r;   hiệu suất H = P/P_ng = U/E."
+      "type": "card",
+      "title": "Đơn vị",
+      "points": [
+        "1 W = 1 J/s;",
+        "1 kWh = 3,6·10⁶ J.",
+        "Điện năng tiêu thụ ghi trên công tơ điện bằng kWh.",
+        "Công suất định mức của thiết bị ghi trên thiết bị (ví dụ bóng đèn 220 V – 60 W).",
+        "Thiết bị hoạt động bình thường khi U bằng hiệu điện thế định mức."
+      ],
+      "n": 2,
+      "formulas": [
+        "Công suất của nguồn: P_ng = EI;   công suất mạch ngoài: P = UI = I²R;   công suất hao phí trong nguồn: I²r;   hiệu suất H = P/P_ng = U/E."
+      ]
     },
     {
       "type": "figure",
@@ -35,8 +52,10 @@
       "caption": "Công suất mạch ngoài P = E²R/(R + r)² theo R: đạt cực đại P_max = E²/(4r) khi R = r"
     },
     {
-      "type": "text",
-      "content": "Tiết kiệm điện: dùng thiết bị hiệu suất cao (đèn LED), tắt thiết bị không dùng, chọn công suất phù hợp, dùng dây dẫn tiết diện đủ lớn để giảm hao phí nhiệt trên đường dây."
+      "type": "card",
+      "title": "Tiết kiệm điện",
+      "text": "Dùng thiết bị hiệu suất cao (đèn LED), tắt thiết bị không dùng, chọn công suất phù hợp, dùng dây dẫn tiết diện đủ lớn để giảm hao phí nhiệt trên đường dây.",
+      "n": 3
     },
     {
       "type": "method",

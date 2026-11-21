@@ -14,21 +14,27 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Cấp số nhân là dãy số (hữu hạn hoặc vô hạn) trong đó kể từ số hạng thứ hai, mỗi số hạng bằng tích của số hạng đứng ngay trước nó với một số q không đổi: uₙ₊₁ = uₙ·q. Số q gọi là công bội."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Cấp số nhân là dãy số (hữu hạn hoặc vô hạn) trong đó kể từ số hạng thứ hai, mỗi số hạng bằng tích của số hạng đứng ngay trước nó với một số q không đổi: uₙ₊₁ = uₙ·q."
     },
     {
-      "type": "formula",
-      "content": "Số hạng tổng quát: uₙ = u₁·qⁿ⁻¹.   Ba số khác 0 là a, b, c (theo thứ tự) lập cấp số nhân ⇔ b² = ac."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Cấp số nhân là dãy số (hữu hạn hoặc vô hạn) trong đó kể từ số hạng thứ hai, mỗi số hạng bằng tích của số hạng đứng ngay trước nó với một số q không đổi: uₙ₊₁ = uₙ·q.",
+        "Số q gọi là công bội."
+      ],
+      "n": 1,
+      "formulas": [
+        "Số hạng tổng quát: uₙ = u₁·qⁿ⁻¹.   Ba số khác 0 là a, b, c (theo thứ tự) lập cấp số nhân ⇔ b² = ac.",
+        "Tổng n số hạng đầu (q ≠ 1): Sₙ = u₁(1 − qⁿ)/(1 − q).   Nếu q = 1 thì Sₙ = n·u₁."
+      ]
     },
     {
       "type": "figure",
       "figure": "figures/t11-b7-cap-so-nhan.svg",
       "caption": "Các số hạng của cấp số nhân u₁ = 1, q = 2 tăng rất nhanh: 1, 2, 4, 8, 16, 32"
-    },
-    {
-      "type": "formula",
-      "content": "Tổng n số hạng đầu (q ≠ 1): Sₙ = u₁(1 − qⁿ)/(1 − q).   Nếu q = 1 thì Sₙ = n·u₁."
     },
     {
       "type": "method",

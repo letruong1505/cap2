@@ -16,8 +16,19 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Sự điện li là quá trình phân li các chất trong nước thành ion. Chất tan trong nước phân li ra ion gọi là chất điện li (dung dịch dẫn điện); chất tan không phân li ra ion gọi là chất không điện li (saccharose, ethanol...). Nước là dung môi phân cực: các phân tử nước hút và tách các ion ra khỏi mạng tinh thể (ví dụ NaCl → Na⁺ + Cl⁻)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Sự điện li là quá trình phân li các chất trong nước thành ion. Chất tan trong nước phân li ra ion gọi là chất điện li (dung dịch dẫn điện); chất tan không phân li ra ion gọi là chất không điện li (saccharose, ethanol...)."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Sự điện li là quá trình phân li các chất trong nước thành ion.",
+        "Chất tan trong nước phân li ra ion gọi là chất điện li (dung dịch dẫn điện); chất tan không phân li ra ion gọi là chất không điện li (saccharose, ethanol...).",
+        "Nước là dung môi phân cực: các phân tử nước hút và tách các ion ra khỏi mạng tinh thể (ví dụ NaCl → Na⁺ + Cl⁻)."
+      ],
+      "n": 1
     },
     {
       "type": "figure",
@@ -25,24 +36,42 @@
       "caption": "Sự điện li của NaCl trong nước"
     },
     {
-      "type": "text",
-      "content": "Chất điện li mạnh phân li gần như hoàn toàn, biểu diễn bằng mũi tên một chiều (acid mạnh HCl, HNO₃, H₂SO₄; base mạnh NaOH, KOH, Ca(OH)₂, Ba(OH)₂; hầu hết muối). Chất điện li yếu chỉ phân li một phần, là phản ứng thuận nghịch (acid yếu CH₃COOH, HClO, HF, H₂CO₃; base yếu Cu(OH)₂, Fe(OH)₃...)."
+      "type": "card",
+      "title": "Chất điện li mạnh phân li gần…",
+      "points": [
+        "Chất điện li mạnh phân li gần như hoàn toàn, biểu diễn bằng mũi tên một chiều (acid mạnh HCl, HNO₃, H₂SO₄; base mạnh NaOH, KOH, Ca(OH)₂, Ba(OH)₂; hầu hết muối).",
+        "Chất điện li yếu chỉ phân li một phần, là phản ứng thuận nghịch (acid yếu CH₃COOH, HClO, HF, H₂CO₃; base yếu Cu(OH)₂, Fe(OH)₃...)."
+      ],
+      "n": 2,
+      "formulas": [
+        "HNO₃ → H⁺ + NO₃⁻        CH₃COOH ⇌ H⁺ + CH₃COO⁻"
+      ]
     },
     {
-      "type": "formula",
-      "content": "HNO₃ → H⁺ + NO₃⁻        CH₃COOH ⇌ H⁺ + CH₃COO⁻"
+      "type": "card",
+      "title": "Thuyết Brønsted – Lowry",
+      "points": [
+        "Acid là chất cho proton (H⁺), base là chất nhận proton.",
+        "Ví dụ HCl + H₂O → H₃O⁺ + Cl⁻ (HCl là acid, H₂O là base);",
+        "NH₃ + H₂O ⇌ NH₄⁺ + OH⁻ (NH₃ là base).",
+        "Chất vừa cho vừa nhận H⁺ gọi là lưỡng tính (H₂O, HCO₃⁻).",
+        "Thuyết này tổng quát hơn thuyết Arrhenius: NH₃ không có nhóm OH và CO₃²⁻ cũng là base."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Thuyết Brønsted – Lowry: acid là chất cho proton (H⁺), base là chất nhận proton. Ví dụ HCl + H₂O → H₃O⁺ + Cl⁻ (HCl là acid, H₂O là base); NH₃ + H₂O ⇌ NH₄⁺ + OH⁻ (NH₃ là base). Chất vừa cho vừa nhận H⁺ gọi là lưỡng tính (H₂O, HCO₃⁻). Thuyết này tổng quát hơn thuyết Arrhenius: NH₃ không có nhóm OH và CO₃²⁻ cũng là base."
-    },
-    {
-      "type": "text",
-      "content": "Khái niệm pH: pH = −lg[H⁺], hay [H⁺] = 10⁻ᵖᴴ. Ở 25 °C tích số ion của nước K_w = [H⁺]·[OH⁻] = 10⁻¹⁴. Môi trường acid: pH < 7; trung tính: pH = 7; base: pH > 7. Thang pH thường dùng từ 1 đến 14."
-    },
-    {
-      "type": "formula",
-      "content": "pH = −lg[H⁺]        [H⁺][OH⁻] = 10⁻¹⁴        pH + pOH = 14"
+      "type": "card",
+      "title": "Khái niệm pH",
+      "points": [
+        "PH = −lg[H⁺], hay [H⁺] = 10⁻ᵖᴴ.",
+        "Ở 25 °C tích số ion của nước K_w = [H⁺]·[OH⁻] = 10⁻¹⁴.",
+        "Môi trường acid: pH < 7; trung tính: pH = 7; base: pH > 7.",
+        "Thang pH thường dùng từ 1 đến 14."
+      ],
+      "n": 4,
+      "formulas": [
+        "pH = −lg[H⁺]        [H⁺][OH⁻] = 10⁻¹⁴        pH + pOH = 14"
+      ]
     },
     {
       "type": "figure",
@@ -50,16 +79,37 @@
       "caption": "Thang pH"
     },
     {
-      "type": "text",
-      "content": "Ý nghĩa của pH: pH máu 7,3 – 7,4; dạ dày 1,5 – 3,5; nước bọt 6,0 – 7,4; nước tiểu 4,8 – 7,0. Cá ưa môi trường nước pH khoảng 7,5 – 8,5; mỗi loại cây trồng cần pH đất thích hợp (đất chua pH thấp được khử chua bằng vôi). Xác định pH gần đúng bằng chất chỉ thị (giấy pH, quỳ tím, phenolphthalein, dịch hoa đậu biếc, bắp cải tím) hoặc chính xác bằng máy đo pH."
+      "type": "card",
+      "title": "Ý nghĩa của pH",
+      "points": [
+        "PH máu 7,3 – 7,4; dạ dày 1,5 – 3,5; nước bọt 6,0 – 7,4; nước tiểu 4,8 – 7,0.",
+        "Cá ưa môi trường nước pH khoảng 7,5 – 8,5; mỗi loại cây trồng cần pH đất thích hợp (đất chua pH thấp được khử chua bằng vôi).",
+        "Xác định pH gần đúng bằng chất chỉ thị (giấy pH, quỳ tím, phenolphthalein, dịch hoa đậu biếc, bắp cải tím) hoặc chính xác bằng máy đo pH."
+      ],
+      "n": 5
     },
     {
-      "type": "text",
-      "content": "Sự thuỷ phân của ion: phản ứng giữa ion với nước. Dung dịch Na₂CO₃ có môi trường base vì CO₃²⁻ + H₂O ⇌ HCO₃⁻ + OH⁻. Dung dịch AlCl₃, FeCl₃ có môi trường acid vì Al³⁺ + H₂O ⇌ Al(OH)²⁺ + H⁺; Fe³⁺ + H₂O ⇌ Fe(OH)²⁺ + H⁺. Muối của acid mạnh và base mạnh (NaCl) không thuỷ phân, môi trường trung tính."
+      "type": "card",
+      "title": "Sự thuỷ phân của ion",
+      "points": [
+        "Phản ứng giữa ion với nước.",
+        "Dung dịch Na₂CO₃ có môi trường base vì CO₃²⁻ + H₂O ⇌ HCO₃⁻ + OH⁻.",
+        "Dung dịch AlCl₃, FeCl₃ có môi trường acid vì Al³⁺ + H₂O ⇌ Al(OH)²⁺ + H⁺;",
+        "Fe³⁺ + H₂O ⇌ Fe(OH)²⁺ + H⁺.",
+        "Muối của acid mạnh và base mạnh (NaCl) không thuỷ phân, môi trường trung tính."
+      ],
+      "n": 6
     },
     {
-      "type": "text",
-      "content": "Chuẩn độ acid – base: xác định nồng độ một chất bằng dung dịch chuẩn đã biết nồng độ. Với NaOH + HCl → NaCl + H₂O, khi vừa đủ: V_HCl·C_HCl = V_NaOH·C_NaOH. Kết thúc chuẩn độ khi chỉ thị phenolphthalein chuyển từ không màu sang hồng nhạt bền khoảng 10 giây. Dụng cụ: burette, pipette, bình tam giác; cần chuẩn độ ít nhất ba lần lấy kết quả trung bình."
+      "type": "card",
+      "title": "Chuẩn độ acid – base",
+      "points": [
+        "Xác định nồng độ một chất bằng dung dịch chuẩn đã biết nồng độ.",
+        "Với NaOH + HCl → NaCl + H₂O, khi vừa đủ: V_HCl·C_HCl = V_NaOH·C_NaOH.",
+        "Kết thúc chuẩn độ khi chỉ thị phenolphthalein chuyển từ không màu sang hồng nhạt bền khoảng 10 giây.",
+        "Dụng cụ: burette, pipette, bình tam giác; cần chuẩn độ ít nhất ba lần lấy kết quả trung bình."
+      ],
+      "n": 7
     },
     {
       "type": "figure",

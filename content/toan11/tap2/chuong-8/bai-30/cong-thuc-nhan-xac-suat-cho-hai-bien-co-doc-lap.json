@@ -14,8 +14,17 @@
   ],
   "theory": [
     {
-      "type": "formula",
-      "content": "Hai biến cố A, B độc lập ⇔ P(A ∩ B) = P(A)·P(B).   Khi đó A và B̄, Ā và B, Ā và B̄ cũng độc lập."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Mở rộng: nếu A₁, A₂, …, Aₙ độc lập từng đôi và lập thành các phép thử độc lập thì P(A₁A₂…Aₙ) = P(A₁)P(A₂)…P(Aₙ)."
+    },
+    {
+      "type": "card",
+      "n": 1,
+      "title": "Công thức",
+      "formulas": [
+        "Hai biến cố A, B độc lập ⇔ P(A ∩ B) = P(A)·P(B).   Khi đó A và B̄, Ā và B, Ā và B̄ cũng độc lập."
+      ]
     },
     {
       "type": "figure",
@@ -23,8 +32,13 @@
       "caption": "Sơ đồ cây cho hai biến cố độc lập: xác suất một nhánh bằng tích các xác suất trên đường đi (ví dụ P(A ∩ B) = 0,8 × 0,9)"
     },
     {
-      "type": "text",
-      "content": "Mở rộng: nếu A₁, A₂, …, Aₙ độc lập từng đôi và lập thành các phép thử độc lập thì P(A₁A₂…Aₙ) = P(A₁)P(A₂)…P(Aₙ). Để tính “ít nhất một biến cố xảy ra” cho các biến cố độc lập: P = 1 − P(Ā₁)·P(Ā₂)·…·P(Āₙ)."
+      "type": "card",
+      "title": "Mở rộng",
+      "points": [
+        "Nếu A₁, A₂, …, Aₙ độc lập từng đôi và lập thành các phép thử độc lập thì P(A₁A₂…Aₙ) = P(A₁)P(A₂)…P(Aₙ).",
+        "Để tính “ít nhất một biến cố xảy ra” cho các biến cố độc lập: P = 1 − P(Ā₁)·P(Ā₂)·…·P(Āₙ)."
+      ],
+      "n": 2
     },
     {
       "type": "method",

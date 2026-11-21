@@ -14,8 +14,18 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Khi hai sóng kết hợp gặp nhau thì có những điểm ở đó hai sóng luôn đồng pha nên dao động mạnh nhất (cực đại), có những điểm hai sóng luôn ngược pha nên đứng yên (cực tiểu). Hiện tượng đó gọi là giao thoa; các gợn sóng ổn định gọi là vân giao thoa."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Khi hai sóng kết hợp gặp nhau thì có những điểm ở đó hai sóng luôn đồng pha nên dao động mạnh nhất (cực đại), có những điểm hai sóng luôn ngược pha nên đứng yên (cực tiểu)."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Khi hai sóng kết hợp gặp nhau thì có những điểm ở đó hai sóng luôn đồng pha nên dao động mạnh nhất (cực đại), có những điểm hai sóng luôn ngược pha nên đứng yên (cực tiểu).",
+        "Hiện tượng đó gọi là giao thoa; các gợn sóng ổn định gọi là vân giao thoa."
+      ],
+      "n": 1
     },
     {
       "type": "figure",
@@ -23,12 +33,19 @@
       "caption": "Hai nguồn S₁, S₂ cùng tần số, cùng pha tạo vân giao thoa: các đường cực đại xen kẽ với các đường cực tiểu"
     },
     {
-      "type": "text",
-      "content": "Điều kiện giao thoa: hai nguồn phải dao động cùng phương, cùng tần số và có độ lệch pha không đổi theo thời gian (hai nguồn kết hợp). Điểm có hiệu đường đi d₂ − d₁ = kλ dao động cực đại; điểm có d₂ − d₁ = (k + ½)λ đứng yên. Khoảng cách giữa hai cực đại cạnh nhau trên đoạn S₁S₂ bằng λ/2."
-    },
-    {
-      "type": "formula",
-      "content": "Cực đại giao thoa: d₂ − d₁ = kλ.   Cực tiểu giao thoa: d₂ − d₁ = (k + ½)λ.   Hai cực đại liền kề trên S₁S₂ cách nhau λ/2."
+      "type": "card",
+      "title": "Điều kiện giao thoa",
+      "points": [
+        "Hai nguồn phải dao động cùng phương, cùng tần số và có độ lệch pha không đổi theo thời gian (hai nguồn kết hợp).",
+        "Điểm có hiệu đường đi d₂ − d₁ = kλ dao động cực đại;",
+        "Điểm có d₂ − d₁ = (k + ½)λ đứng yên.",
+        "Khoảng cách giữa hai cực đại cạnh nhau trên đoạn S₁S₂ bằng λ/2."
+      ],
+      "n": 2,
+      "formulas": [
+        "Cực đại giao thoa: d₂ − d₁ = kλ.   Cực tiểu giao thoa: d₂ − d₁ = (k + ½)λ.   Hai cực đại liền kề trên S₁S₂ cách nhau λ/2.",
+        "Khoảng vân i = λD/a   ⇒   λ = ai/D.   Khoảng cách giữa n vân sáng liên tiếp bằng (n − 1)i.   Vân sáng bậc k: x = ki; vân tối: x = (k + ½)i."
+      ]
     },
     {
       "type": "figure",
@@ -36,12 +53,13 @@
       "caption": "Thí nghiệm Y-âng (Young): nguồn S chiếu hai khe F₁, F₂ (hai nguồn kết hợp) cách nhau a; màn quan sát cách khe D; xuất hiện hệ vân sáng, tối xen kẽ"
     },
     {
-      "type": "formula",
-      "content": "Khoảng vân i = λD/a   ⇒   λ = ai/D.   Khoảng cách giữa n vân sáng liên tiếp bằng (n − 1)i.   Vân sáng bậc k: x = ki; vân tối: x = (k + ½)i."
-    },
-    {
-      "type": "text",
-      "content": "Ánh sáng đơn sắc cho vân sáng và tối xen kẽ đều đặn. Ánh sáng trắng cho vân trung tâm trắng, hai bên có dải màu như cầu vồng (tím gần vân trung tâm hơn đỏ vì i tỉ lệ λ). Giao thoa chứng tỏ ánh sáng có tính chất sóng."
+      "type": "card",
+      "title": "Ánh sáng đơn sắc cho vân sáng và tối xen kẽ đều đặn",
+      "points": [
+        "Ánh sáng trắng cho vân trung tâm trắng, hai bên có dải màu như cầu vồng (tím gần vân trung tâm hơn đỏ vì i tỉ lệ λ).",
+        "Giao thoa chứng tỏ ánh sáng có tính chất sóng."
+      ],
+      "n": 3
     },
     {
       "type": "method",

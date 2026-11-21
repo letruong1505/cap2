@@ -14,20 +14,31 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Điện trường là dạng vật chất tồn tại xung quanh điện tích và truyền tương tác giữa các điện tích. Ta nhận biết điện trường bằng cách đặt vào đó một điện tích thử: có lực điện tác dụng lên điện tích thử."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Điện trường là dạng vật chất tồn tại xung quanh điện tích và truyền tương tác giữa các điện tích."
     },
     {
-      "type": "text",
-      "content": "Cường độ điện trường tại một điểm đặc trưng cho độ mạnh yếu của điện trường tại điểm đó, được đo bằng thương số giữa lực điện tác dụng lên điện tích thử dương đặt tại điểm đó và độ lớn của điện tích thử. Đơn vị: vôn trên mét (V/m)."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Điện trường là dạng vật chất tồn tại xung quanh điện tích và truyền tương tác giữa các điện tích.",
+        "Ta nhận biết điện trường bằng cách đặt vào đó một điện tích thử: có lực điện tác dụng lên điện tích thử."
+      ],
+      "n": 1
     },
     {
-      "type": "formula",
-      "content": "E = F/|q|  ⇒  F = |q|E;   vectơ: E = F/q (cùng chiều F nếu q > 0, ngược chiều F nếu q < 0)."
-    },
-    {
-      "type": "formula",
-      "content": "Điện tích điểm Q: E = k|Q|/r² (chân không), E = k|Q|/(εr²) (môi trường). Hướng ra xa Q nếu Q > 0, hướng vào Q nếu Q < 0."
+      "type": "card",
+      "title": "Cường độ điện trường tại một điểm…",
+      "points": [
+        "Cường độ điện trường tại một điểm đặc trưng cho độ mạnh yếu của điện trường tại điểm đó, được đo bằng thương số giữa lực điện tác dụng lên điện tích thử dương đặt tại điểm đó và độ lớn của điện tích thử.",
+        "Đơn vị: vôn trên mét (V/m)."
+      ],
+      "n": 2,
+      "formulas": [
+        "E = F/|q|  ⇒  F = |q|E;   vectơ: E = F/q (cùng chiều F nếu q > 0, ngược chiều F nếu q < 0).",
+        "Điện tích điểm Q: E = k|Q|/r² (chân không), E = k|Q|/(εr²) (môi trường). Hướng ra xa Q nếu Q > 0, hướng vào Q nếu Q < 0."
+      ]
     },
     {
       "type": "figure",
@@ -40,8 +51,13 @@
       "caption": "Đường sức điện của điện tích điểm: hướng ra xa với Q > 0 (đỏ), hướng vào với Q < 0 (xanh)"
     },
     {
-      "type": "text",
-      "content": "Nguyên lí chồng chất điện trường: điện trường tổng hợp E = E₁ + E₂ + … (tổng vectơ). Đường sức điện là đường mà tiếp tuyến tại mỗi điểm trùng với phương của vectơ cường độ điện trường, chiều của đường sức là chiều của E; các đường sức không cắt nhau; nơi E lớn đường sức dày hơn."
+      "type": "card",
+      "title": "Nguyên lí chồng chất điện trường",
+      "points": [
+        "Điện trường tổng hợp E = E₁ + E₂ + … (tổng vectơ).",
+        "Đường sức điện là đường mà tiếp tuyến tại mỗi điểm trùng với phương của vectơ cường độ điện trường, chiều của đường sức là chiều của E; các đường sức không cắt nhau; nơi E lớn đường sức dày hơn."
+      ],
+      "n": 3
     },
     {
       "type": "method",

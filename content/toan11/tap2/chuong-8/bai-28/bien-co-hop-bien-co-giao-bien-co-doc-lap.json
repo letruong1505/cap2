@@ -14,8 +14,19 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Cho không gian mẫu Ω của một phép thử, A và B là hai biến cố. Biến cố hợp A ∪ B xảy ra khi A xảy ra hoặc B xảy ra (ít nhất một trong hai). Biến cố giao A ∩ B (còn viết AB) xảy ra khi cả A và B cùng xảy ra. Biến cố đối Ā xảy ra khi A không xảy ra."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Cho không gian mẫu Ω của một phép thử, A và B là hai biến cố. Biến cố hợp A ∪ B xảy ra khi A xảy ra hoặc B xảy ra (ít nhất một trong hai)."
+    },
+    {
+      "type": "card",
+      "title": "Cho không gian mẫu Ω của một phép thử, A và B là hai biến cố",
+      "points": [
+        "Biến cố hợp A ∪ B xảy ra khi A xảy ra hoặc B xảy ra (ít nhất một trong hai).",
+        "Biến cố giao A ∩ B (còn viết AB) xảy ra khi cả A và B cùng xảy ra.",
+        "Biến cố đối Ā xảy ra khi A không xảy ra."
+      ],
+      "n": 1
     },
     {
       "type": "figure",
@@ -23,12 +34,17 @@
       "caption": "Biểu đồ Venn: biến cố giao A ∩ B là phần chung của hai tập hợp A và B"
     },
     {
-      "type": "text",
-      "content": "Hai biến cố A và B xung khắc nếu chúng không thể cùng xảy ra, tức A ∩ B = ∅. Hai biến cố A và B độc lập nếu việc xảy ra hay không xảy ra của biến cố này không làm ảnh hưởng đến xác suất xảy ra của biến cố kia. Nếu A, B độc lập thì A và B̄, Ā và B, Ā và B̄ cũng độc lập."
-    },
-    {
-      "type": "formula",
-      "content": "Xác suất theo định nghĩa cổ điển: P(A) = n(A)/n(Ω). Với hợp, giao: n(A ∪ B) = n(A) + n(B) − n(A ∩ B)."
+      "type": "card",
+      "title": "Hai biến cố A và B xung…",
+      "points": [
+        "Hai biến cố A và B xung khắc nếu chúng không thể cùng xảy ra, tức A ∩ B = ∅.",
+        "Hai biến cố A và B độc lập nếu việc xảy ra hay không xảy ra của biến cố này không làm ảnh hưởng đến xác suất xảy ra của biến cố kia.",
+        "Nếu A, B độc lập thì A và B̄, Ā và B, Ā và B̄ cũng độc lập."
+      ],
+      "n": 2,
+      "formulas": [
+        "Xác suất theo định nghĩa cổ điển: P(A) = n(A)/n(Ω). Với hợp, giao: n(A ∪ B) = n(A) + n(B) − n(A ∩ B)."
+      ]
     },
     {
       "type": "method",

@@ -14,8 +14,23 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Nguồn điện là thiết bị duy trì hiệu điện thế giữa hai cực để tạo dòng điện trong mạch. Nguồn điện thực hiện công đưa các điện tích dương từ cực âm sang cực dương (công của lực lạ). Suất điện động của nguồn: E = A/q (J/C = V), đo bằng hiệu điện thế giữa hai cực khi mạch hở. Nguồn điện có điện trở trong r."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Nguồn điện là thiết bị duy trì hiệu điện thế giữa hai cực để tạo dòng điện trong mạch. Nguồn điện thực hiện công đưa các điện tích dương từ cực âm sang cực dương (công của lực lạ)."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Nguồn điện là thiết bị duy trì hiệu điện thế giữa hai cực để tạo dòng điện trong mạch.",
+        "Nguồn điện thực hiện công đưa các điện tích dương từ cực âm sang cực dương (công của lực lạ).",
+        "Suất điện động của nguồn: E = A/q (J/C = V), đo bằng hiệu điện thế giữa hai cực khi mạch hở.",
+        "Nguồn điện có điện trở trong r."
+      ],
+      "n": 1,
+      "formulas": [
+        "Định luật Ohm toàn mạch: I = E/(R + r).   Hiệu điện thế hai cực: U = E − Ir = IR.   Hiệu suất của nguồn: H = U/E = R/(R + r)."
+      ]
     },
     {
       "type": "figure",
@@ -23,17 +38,20 @@
       "caption": "Mạch kín gồm nguồn (E, r), điện trở ngoài R, ampe kế đo I và vôn kế đo hiệu điện thế mạch ngoài U"
     },
     {
-      "type": "formula",
-      "content": "Định luật Ohm toàn mạch: I = E/(R + r).   Hiệu điện thế hai cực: U = E − Ir = IR.   Hiệu suất của nguồn: H = U/E = R/(R + r)."
-    },
-    {
       "type": "figure",
       "figure": "figures/l11-b24-do-thi-u-i.svg",
       "caption": "Đồ thị U theo I của nguồn điện: đường thẳng giảm dần; cắt trục tung tại E, độ dốc bằng −r, cắt trục hoành tại I = E/r (ngắn mạch)"
     },
     {
-      "type": "text",
-      "content": "Ghép nguồn nối tiếp (n nguồn giống nhau): E_b = nE, r_b = nr. Ghép song song (n nguồn giống nhau): E_b = E, r_b = r/n. Pin mới có E lớn; pin cũ có r lớn. Ngắn mạch: R = 0, I = E/r rất lớn, có thể gây hỏng nguồn."
+      "type": "card",
+      "title": "Ghép nguồn nối tiếp (n nguồn giống nhau)",
+      "points": [
+        "E_b = nE, r_b = nr.",
+        "Ghép song song (n nguồn giống nhau): E_b = E, r_b = r/n.",
+        "Pin mới có E lớn; pin cũ có r lớn.",
+        "Ngắn mạch: R = 0, I = E/r rất lớn, có thể gây hỏng nguồn."
+      ],
+      "n": 2
     },
     {
       "type": "method",

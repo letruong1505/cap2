@@ -14,29 +14,51 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Dao động cơ là chuyển động qua lại của vật quanh một vị trí cân bằng (VTCB). Dao động tuần hoàn là dao động mà trạng thái dao động lặp lại như cũ sau những khoảng thời gian bằng nhau. Khoảng thời gian ngắn nhất để trạng thái dao động lặp lại như cũ gọi là chu kì T."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Dao động cơ là chuyển động qua lại của vật quanh một vị trí cân bằng (VTCB). Dao động tuần hoàn là dao động mà trạng thái dao động lặp lại như cũ sau những khoảng thời gian bằng nhau."
     },
     {
-      "type": "text",
-      "content": "Dao động điều hoà là dao động trong đó li độ x của vật là một hàm côsin (hoặc sin) của thời gian. Li độ x là độ lệch của vật so với VTCB (có thể dương hoặc âm)."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Dao động cơ là chuyển động qua lại của vật quanh một vị trí cân bằng (VTCB).",
+        "Dao động tuần hoàn là dao động mà trạng thái dao động lặp lại như cũ sau những khoảng thời gian bằng nhau.",
+        "Khoảng thời gian ngắn nhất để trạng thái dao động lặp lại như cũ gọi là chu kì T."
+      ],
+      "n": 1
     },
     {
-      "type": "formula",
-      "content": "x = A cos(ωt + φ)"
+      "type": "card",
+      "title": "Dao động điều hoà là dao động…",
+      "points": [
+        "Dao động điều hoà là dao động trong đó li độ x của vật là một hàm côsin (hoặc sin) của thời gian.",
+        "Li độ x là độ lệch của vật so với VTCB (có thể dương hoặc âm)."
+      ],
+      "n": 2,
+      "formulas": [
+        "x = A cos(ωt + φ)"
+      ]
     },
     {
-      "type": "text",
-      "content": "Trong đó: A > 0 là biên độ (độ lệch cực đại so với VTCB); (ωt + φ) là pha dao động tại thời điểm t; φ là pha ban đầu (pha tại t = 0); ω là tần số góc (rad/s). Quỹ đạo dao động có chiều dài 2A."
+      "type": "card",
+      "title": "Trong đó",
+      "points": [
+        "A > 0 là biên độ (độ lệch cực đại so với VTCB);",
+        "(ωt + φ) là pha dao động tại thời điểm t;",
+        "Φ là pha ban đầu (pha tại t = 0);",
+        "Ω là tần số góc (rad/s).",
+        "Quỹ đạo dao động có chiều dài 2A."
+      ],
+      "n": 3,
+      "formulas": [
+        "Chu kì T = t/N (s), tần số f = 1/T = N/t (Hz), tần số góc ω = 2π/T = 2πf (rad/s).   Quãng đường đi được trong 1 chu kì: 4A; trong nửa chu kì: 2A."
+      ]
     },
     {
       "type": "figure",
       "figure": "figures/l11-b1-chuyen-dong-tron.svg",
       "caption": "Hình chiếu P của chất điểm M chuyển động tròn đều (tốc độ góc ω) lên đường kính dao động điều hoà với biên độ A = bán kính, pha ban đầu φ"
-    },
-    {
-      "type": "formula",
-      "content": "Chu kì T = t/N (s), tần số f = 1/T = N/t (Hz), tần số góc ω = 2π/T = 2πf (rad/s).   Quãng đường đi được trong 1 chu kì: 4A; trong nửa chu kì: 2A."
     },
     {
       "type": "figure",
