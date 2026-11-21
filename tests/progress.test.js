@@ -185,3 +185,24 @@ test('báo cáo từng ngày có chi tiết theo môn và đạt/không đạt (
   const by = Object.fromEntries(day.subjects.map((s) => [s.subject, s]));
   assert.deepEqual([by.toan.passed, by.anh.passed, by.anh.pct], [true, false, 40]);
 });
+
+test('phần thưởng chuỗi ngày: đếm ngày đạt liên tiếp, hôm nay chưa đạt không làm đứt, trao thưởng thì tính lại', () => {
+  const day = (iso, correct, total) => ({ t: new Date(iso + 'T10:00:00').getTime(), subject: 'toan', grade: 9, correct, total, lessons: 1 });
+  const now = new Date('2026-11-21T20:00:00').getTime();
+  const data = { attempts: [day('2026-11-17', 8, 10), day('2026-11-18', 7, 10), day('2026-11-19', 9, 10), day('2026-11-20', 7, 10)], reward: { on: true, days: 4, pct: 70, text: 'Game 30 phút' } };
+  let s = P.streak(data, now);
+  assert.deepEqual([s.count, s.achieved, s.todayOk], [4, true, false]);
+  data.attempts.push(day('2026-11-21', 3, 10)); // hôm nay làm nhưng dưới ngưỡng: chưa tính hôm nay, chưa đứt chuỗi
+  assert.equal(P.streak(data, now).count, 4);
+  data.attempts.pop();
+  data.attempts[1] = day('2026-11-18', 6, 10); // ngày giữa chuỗi dưới 70% thì đứt
+  assert.equal(P.streak(data, now).count, 2);
+  data.attempts[1] = day('2026-11-18', 7, 10);
+  P.giveReward(data, now);
+  assert.equal(P.streak(data, now).count, 0);
+  assert.equal(data.reward.given.length, 1);
+  data.attempts.push(day('2026-11-21', 9, 10));
+  assert.equal(P.streak(data, now).count, 0); // ngày trao thưởng không tính vào chuỗi mới
+  assert.equal(P.streak({ attempts: data.attempts, reward: { on: false } }, now).achieved, false);
+  assert.equal(P.cleanReward({ days: 999, pct: 5, text: 'x'.repeat(200) }).days, 60);
+});

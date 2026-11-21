@@ -33,7 +33,18 @@
       "type": "card",
       "title": "Tính chất",
       "text": "Mỗi tam giác đồng dạng với chính nó (tỉ số 1); nếu ΔA′B′C′ ∽ ΔABC theo tỉ số k thì ΔABC ∽ ΔA′B′C′ theo tỉ số 1/k; nếu ΔA′B′C′ ∽ ΔABC và ΔABC ∽ ΔA″B″C″ thì ΔA′B′C′ ∽ ΔA″B″C″.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "ΔA′B′C′ ∽ ΔABC theo tỉ số k. Khi đó ΔABC ∽ ΔA′B′C′ theo tỉ số:",
+        "options": [
+          "k",
+          "k·k",
+          "1/k",
+          "−k"
+        ],
+        "answer": 2,
+        "explain": "Đổi vai trò hai tam giác thì tỉ số đảo ngược."
+      }
     },
     {
       "type": "card",
@@ -50,7 +61,18 @@
       "type": "card",
       "title": "Hai tam giác đồng dạng theo tỉ…",
       "text": "Hai tam giác đồng dạng theo tỉ số k thì tỉ số hai chu vi của chúng cũng bằng k.",
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Hai tam giác bằng nhau thì đồng dạng với tỉ số:",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "Không đồng dạng"
+        ],
+        "answer": 1,
+        "explain": "Các cạnh tương ứng bằng nhau nên k = 1."
+      }
     }
   ],
   "examples": [

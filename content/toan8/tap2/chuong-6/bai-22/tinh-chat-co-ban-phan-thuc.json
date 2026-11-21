@@ -27,7 +27,18 @@
       "type": "card",
       "title": "Rút gọn phân thức là biến đổi…",
       "text": "Rút gọn phân thức là biến đổi phân thức đã cho thành một phân thức bằng nó nhưng đơn giản hơn: phân tích tử và mẫu thành nhân tử rồi chia cả tử và mẫu cho nhân tử chung.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Phân thức nào bằng phân thức 2x/(3y)?",
+        "options": [
+          "(2x + 1)/(3y + 1)",
+          "(2x)/(3y + 3)",
+          "(4x)/(6y)",
+          "(3x)/(2y)"
+        ],
+        "answer": 2,
+        "explain": "Nhân cả tử và mẫu với 2: 2x/(3y) = 4x/(6y)."
+      }
     },
     {
       "type": "card",

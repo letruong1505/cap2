@@ -37,7 +37,18 @@
         "24 khu vực giờ, mỗi khu rộng 15° kinh tuyến;",
         "Việt Nam thuộc khu vực giờ số 7"
       ],
-      "n": 3
+      "n": 3,
+      "try": {
+        "q": "Trái Đất tự quay quanh trục theo hướng:",
+        "options": [
+          "Từ đông sang tây",
+          "Từ tây sang đông",
+          "Từ bắc xuống nam",
+          "Từ nam lên bắc"
+        ],
+        "answer": 1,
+        "explain": "Hướng tự quay."
+      }
     },
     {
       "type": "card",
@@ -63,7 +74,18 @@
       "type": "card",
       "title": "Đường đổi ngày quốc tế là kinh…",
       "text": "Đường đổi ngày quốc tế là kinh tuyến 180°.",
-      "n": 6
+      "n": 6,
+      "try": {
+        "q": "Thời gian Trái Đất tự quay một vòng là:",
+        "options": [
+          "24 giờ",
+          "365 ngày",
+          "12 giờ",
+          "30 ngày"
+        ],
+        "answer": 0,
+        "explain": "Một ngày đêm."
+      }
     }
   ],
   "examples": [

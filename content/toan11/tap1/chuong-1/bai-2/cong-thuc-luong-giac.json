@@ -29,7 +29,18 @@
         "Hạ bậc: sin²a = (1 − cos 2a)/2;  cos²a = (1 + cos 2a)/2.",
         "Tích thành tổng: cos a cos b = ½[cos(a − b) + cos(a + b)];  sin a sin b = ½[cos(a − b) − cos(a + b)];  sin a cos b = ½[sin(a + b) + sin(a − b)].",
         "Tổng thành tích: cos u + cos v = 2 cos((u+v)/2) cos((u−v)/2);  cos u − cos v = −2 sin((u+v)/2) sin((u−v)/2);  sin u + sin v = 2 sin((u+v)/2) cos((u−v)/2);  sin u − sin v = 2 cos((u+v)/2) sin((u−v)/2)."
-      ]
+      ],
+      "try": {
+        "q": "Công thức đúng là:",
+        "options": [
+          "sin(a + b) = sin a cos b + cos a sin b",
+          "sin(a + b) = sin a cos b − cos a sin b",
+          "sin(a + b) = cos a cos b + sin a sin b",
+          "sin(a + b) = sin a sin b + cos a cos b"
+        ],
+        "answer": 0,
+        "explain": "Công thức cộng của sin có dấu cộng giữa hai tích hỗn hợp."
+      }
     },
     {
       "type": "figure",

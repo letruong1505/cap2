@@ -24,7 +24,18 @@
       "title": "Công thức",
       "formulas": [
         "Hai biến cố A, B độc lập ⇔ P(A ∩ B) = P(A)·P(B).   Khi đó A và B̄, Ā và B, Ā và B̄ cũng độc lập."
-      ]
+      ],
+      "try": {
+        "q": "A, B độc lập khi và chỉ khi:",
+        "options": [
+          "P(A ∩ B) = P(A)·P(B)",
+          "P(A ∩ B) = 0",
+          "P(A ∪ B) = P(A) + P(B)",
+          "A ∩ B = Ω"
+        ],
+        "answer": 0,
+        "explain": "Đó là định nghĩa độc lập qua xác suất."
+      }
     },
     {
       "type": "figure",

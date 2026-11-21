@@ -37,7 +37,18 @@
         "Hai đường thẳng vuông góc có thể cắt nhau hoặc chéo nhau.",
         "Nếu a ∥ b và c ⟂ a thì c ⟂ b."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Góc giữa hai đường thẳng trong không gian có số đo thuộc:",
+        "options": [
+          "[0°; 90°]",
+          "[0°; 180°]",
+          "(90°; 180°)",
+          "[−90°; 90°]"
+        ],
+        "answer": 0,
+        "explain": "Góc giữa hai đường thẳng luôn không vượt quá 90°."
+      }
     },
     {
       "type": "figure",

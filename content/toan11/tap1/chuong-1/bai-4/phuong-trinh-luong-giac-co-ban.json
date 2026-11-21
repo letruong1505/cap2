@@ -33,7 +33,18 @@
         "Phương trình sin x = m và cos x = m có nghiệm khi và chỉ khi |m| ≤ 1; tan x = m, cot x = m luôn có nghiệm với mọi m.",
         "Các giá trị đặc biệt: sin x = 0 ⇔ x = kπ; sin x = 1 ⇔ x = π/2 + k2π; sin x = −1 ⇔ x = −π/2 + k2π; cos x = 0 ⇔ x = π/2 + kπ; cos x = 1 ⇔ x = k2π; cos x = −1 ⇔ x = π + k2π."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Phương trình sin x = 1/2 có tập nghiệm:",
+        "options": [
+          "x = π/6 + k2π hoặc x = 5π/6 + k2π",
+          "x = π/3 + k2π hoặc x = 2π/3 + k2π",
+          "x = ±π/6 + k2π",
+          "x = π/6 + kπ"
+        ],
+        "answer": 0,
+        "explain": "sin x = sin(π/6) nên x = π/6 + k2π hoặc x = π − π/6 + k2π."
+      }
     },
     {
       "type": "figure",

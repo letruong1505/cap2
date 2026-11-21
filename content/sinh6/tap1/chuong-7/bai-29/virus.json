@@ -30,7 +30,18 @@
       "type": "card",
       "title": "Hình dạng",
       "text": "Dạng xoắn (virus khảm thuốc lá), dạng khối (virus adeno), dạng hỗn hợp (thể thực khuẩn).",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Virus có cấu tạo:",
+        "options": [
+          "Đơn bào nhân sơ",
+          "Đa bào",
+          "Vỏ protein và lõi vật chất di truyền, chưa có cấu tạo tế bào",
+          "Đơn bào nhân thực"
+        ],
+        "answer": 2,
+        "explain": "Chưa có tế bào."
+      }
     },
     {
       "type": "figure",
@@ -51,7 +62,18 @@
         "Phòng: tiêm vaccine, đeo khẩu trang, rửa tay, diệt muỗi, ăn uống đủ chất.",
         "Vai trò có ích: sản xuất vaccine, thuốc trừ sâu sinh học."
       ],
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Virus sống:",
+        "options": [
+          "Tự do trong đất",
+          "Kí sinh bắt buộc trong tế bào sống",
+          "Tự dưỡng",
+          "Hoại sinh"
+        ],
+        "answer": 1,
+        "explain": "Kí sinh bắt buộc."
+      }
     }
   ],
   "examples": [

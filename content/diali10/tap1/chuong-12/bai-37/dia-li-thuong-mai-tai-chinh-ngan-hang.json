@@ -40,7 +40,18 @@
         "Cung cấp dịch vụ tài chính, đảm bảo đầu tư và sản xuất diễn ra liên tục, ổn định nền kinh tế và thúc đẩy toàn cầu hoá.",
         "Lĩnh vực này có rủi ro cao nên các quy trình được thực hiện nghiêm ngặt."
       ],
-      "n": 3
+      "n": 3,
+      "try": {
+        "q": "Xuất siêu xảy ra khi nào?",
+        "options": [
+          "Trị giá xuất khẩu lớn hơn trị giá nhập khẩu",
+          "Trị giá nhập khẩu lớn hơn trị giá xuất khẩu",
+          "Hai trị giá bằng nhau",
+          "Không có hoạt động xuất khẩu"
+        ],
+        "answer": 0,
+        "explain": "Khi trị giá xuất khẩu lớn hơn nhập khẩu, quốc gia được gọi là xuất siêu."
+      }
     },
     {
       "type": "card",
@@ -70,7 +81,18 @@
         "Xuất siêu = xuất khẩu lớn hơn nhập khẩu.",
         "Thương mại là cầu nối; tài chính ngân hàng là huyết mạch."
       ],
-      "n": 6
+      "n": 6,
+      "try": {
+        "q": "WTO là tổ chức gì?",
+        "options": [
+          "Tổ chức quốc tế giám sát các hiệp định thương mại giữa các nước",
+          "Tổ chức tài chính cho vay phát triển",
+          "Tổ chức kinh tế khu vực Đông Nam Á",
+          "Tổ chức tiền tệ quốc tế"
+        ],
+        "answer": 0,
+        "explain": "Tổ chức Thương mại Thế giới (WTO) có chức năng giám sát các hiệp định thương mại giữa các nước."
+      }
     }
   ],
   "examples": [],

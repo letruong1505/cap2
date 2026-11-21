@@ -43,7 +43,18 @@
         "Ampe kế mắc nối tiếp với dụng cụ cần đo; dòng điện đi vào chốt dương (+) và ra từ chốt âm (−).",
         "Không được mắc hai chốt ampe kế trực tiếp vào hai cực nguồn điện."
       ],
-      "n": 3
+      "n": 3,
+      "try": {
+        "q": "Cường độ dòng điện được kí hiệu là:",
+        "options": [
+          "U",
+          "I",
+          "R",
+          "P"
+        ],
+        "answer": 1,
+        "explain": "I là cường độ dòng điện."
+      }
     },
     {
       "type": "card",
@@ -74,7 +85,18 @@
         "Vôn kế mắc song song với dụng cụ cần đo hiệu điện thế, chốt (+) nối về phía cực dương của nguồn.",
         "Cần chọn thang đo phù hợp (lớn hơn giá trị cần đo)."
       ],
-      "n": 6
+      "n": 6,
+      "try": {
+        "q": "Đơn vị đo cường độ dòng điện là:",
+        "options": [
+          "Ampe (A)",
+          "Vôn (V)",
+          "Niutơn (N)",
+          "Pascal (Pa)"
+        ],
+        "answer": 0,
+        "explain": "Ampe là đơn vị cường độ dòng điện."
+      }
     }
   ],
   "examples": [

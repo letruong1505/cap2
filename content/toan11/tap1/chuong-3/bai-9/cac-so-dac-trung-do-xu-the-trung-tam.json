@@ -25,7 +25,18 @@
       "formulas": [
         "Số trung bình: x̄ = (n₁x₁ + n₂x₂ + … + nₘxₘ)/n, trong đó xᵢ là giá trị đại diện của nhóm i, nᵢ là tần số, n = n₁ + … + nₘ.",
         "Trung vị Mₑ = a_p + [(n/2 − cf_{p−1})/n_p]·(a_{p+1} − a_p), với nhóm p là nhóm đầu tiên có tần số tích luỹ ≥ n/2; cf_{p−1} là tần số tích luỹ của nhóm đứng trước."
-      ]
+      ],
+      "try": {
+        "q": "Số trung bình của mẫu ghép nhóm được tính bằng:",
+        "options": [
+          "Σnᵢxᵢ / n với xᵢ là giá trị đại diện",
+          "Σnᵢ / n",
+          "nhóm có tần số lớn nhất",
+          "giá trị đại diện của nhóm đầu"
+        ],
+        "answer": 0,
+        "explain": "Trung bình là tổng có trọng số các giá trị đại diện chia cho n."
+      }
     },
     {
       "type": "card",

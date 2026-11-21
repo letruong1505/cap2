@@ -46,7 +46,18 @@
         "Dòng điện một chiều do pin, acquy cung cấp có chiều không đổi.",
         "Quy ước chiều dòng điện là chiều từ cực dương của nguồn qua dây nối và các dụng cụ điện tới cực âm của nguồn."
       ],
-      "n": 3
+      "n": 3,
+      "try": {
+        "q": "Mạch điện đơn giản gồm các bộ phận:",
+        "options": [
+          "Chỉ pin và dây nối",
+          "Nguồn điện, dây nối, công tắc và thiết bị tiêu thụ điện",
+          "Chỉ bóng đèn",
+          "Chỉ công tắc"
+        ],
+        "answer": 1,
+        "explain": "Bốn bộ phận cơ bản."
+      }
     },
     {
       "type": "card",
@@ -70,7 +81,18 @@
       "type": "card",
       "title": "Khi đèn không sáng, cần kiểm tra",
       "text": "Công tắc có đóng không, các mối nối có chắc không, dây có đứt không, pin còn điện không, bóng đèn có hỏng không.",
-      "n": 6
+      "n": 6,
+      "try": {
+        "q": "Khi công tắc mở, mạch điện là:",
+        "options": [
+          "Mạch hở, không có dòng điện",
+          "Mạch kín, đèn sáng",
+          "Mạch có dòng điện lớn",
+          "Mạch bị đoản mạch"
+        ],
+        "answer": 0,
+        "explain": "Mạch hở thì dòng điện không chạy qua."
+      }
     }
   ],
   "examples": [

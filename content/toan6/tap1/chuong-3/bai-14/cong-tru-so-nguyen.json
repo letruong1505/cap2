@@ -30,7 +30,18 @@
       "type": "card",
       "title": "Cộng hai số nguyên khác dấu",
       "text": "Hai số đối nhau thì tổng bằng 0; không đối nhau thì lấy số lớn trừ số nhỏ (trong hai phần số tự nhiên) và đặt trước kết quả dấu của số có phần số tự nhiên lớn hơn.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Tổng của hai số nguyên đối nhau bằng:",
+        "options": [
+          "0",
+          "Gấp đôi số dương",
+          "Số âm",
+          "1"
+        ],
+        "answer": 0,
+        "explain": "a + (−a) = 0."
+      }
     },
     {
       "type": "figure",

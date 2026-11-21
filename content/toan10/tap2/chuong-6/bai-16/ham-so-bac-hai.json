@@ -42,7 +42,18 @@
         "Đồ thị hàm số bậc hai là một parabol có đỉnh I, trục đối xứng là đường thẳng x = −b/(2a), bề lõm quay lên trên nếu a > 0 và quay xuống dưới nếu a < 0.",
         "Parabol cắt trục tung tại điểm (0; c)."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Hàm số nào sau đây là hàm số bậc hai?",
+        "options": [
+          "y = 3x² − x + 1",
+          "y = 2x + 1",
+          "y = x³ − 1",
+          "y = 1/x²"
+        ],
+        "answer": 0,
+        "explain": "Dạng ax² + bx + c với a = 3 ≠ 0."
+      }
     },
     {
       "type": "card",
@@ -57,7 +68,18 @@
       "type": "card",
       "title": "Vẽ parabol",
       "text": "Xác định đỉnh, trục đối xứng, giao điểm với trục tung, giao điểm với trục hoành (nếu có) và điểm đối xứng với giao điểm trục tung qua trục đối xứng, rồi nối thành đường cong.",
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Parabol y = −x² + 2x + 3 có bề lõm:",
+        "options": [
+          "quay xuống dưới",
+          "quay lên trên",
+          "quay sang trái",
+          "quay sang phải"
+        ],
+        "answer": 0,
+        "explain": "a = −1 < 0."
+      }
     },
     {
       "type": "method",

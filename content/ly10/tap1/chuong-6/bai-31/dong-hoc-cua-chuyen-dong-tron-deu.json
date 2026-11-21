@@ -44,7 +44,18 @@
       "formulas": [
         "Tốc độ góc: ω = Δθ/Δt (rad/s)        Tốc độ: v = ω·r",
         "Chu kì: T = 2π/ω (s)        Tần số: f = 1/T (Hz hoặc vòng/s)        ω = 2πf"
-      ]
+      ],
+      "try": {
+        "q": "Trong chuyển động tròn đều, đại lượng KHÔNG đổi là:",
+        "options": [
+          "tốc độ",
+          "vectơ vận tốc",
+          "hướng chuyển động",
+          "vị trí"
+        ],
+        "answer": 0,
+        "explain": "Độ lớn vận tốc không đổi, hướng thay đổi."
+      }
     },
     {
       "type": "card",
@@ -62,7 +73,18 @@
         "Kim giây quay một vòng trong 60 s nên ω = 2π/60 ≈ 0,105 rad/s;",
         "Trái Đất tự quay một vòng trong khoảng 24 giờ."
       ],
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Đơn vị của tốc độ góc là:",
+        "options": [
+          "rad/s",
+          "m/s",
+          "Hz",
+          "vòng"
+        ],
+        "answer": 0,
+        "explain": "ω = Δθ/Δt."
+      }
     },
     {
       "type": "method",

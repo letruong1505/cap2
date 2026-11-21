@@ -38,7 +38,18 @@
       "formulas": [
         "I = Δq/Δt   (1 A = 1 C/s);   dòng điện không đổi: I = q/t;   1 mA = 10⁻³ A; 1 μA = 10⁻⁶ A.",
         "Số hạt tải điện qua tiết diện: N = q/|e| = It/|e|, |e| = 1,6·10⁻¹⁹ C.   Cường độ theo mật độ hạt: I = nSv|e| (n: mật độ hạt tải điện, S: tiết diện, v: tốc độ trôi)."
-      ]
+      ],
+      "try": {
+        "q": "Chiều dòng điện quy ước là chiều chuyển động của:",
+        "options": [
+          "điện tích dương",
+          "electron",
+          "ion âm",
+          "các hạt trung hoà"
+        ],
+        "answer": 0,
+        "explain": "Quy ước chiều điện tích dương."
+      }
     },
     {
       "type": "figure",

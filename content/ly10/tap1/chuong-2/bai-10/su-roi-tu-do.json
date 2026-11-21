@@ -38,7 +38,18 @@
       "n": 2,
       "formulas": [
         "v = g·t        h = ½·g·t²        v² = 2·g·h        t = √(2h/g)"
-      ]
+      ],
+      "try": {
+        "q": "Sự rơi tự do là sự rơi:",
+        "options": [
+          "chỉ dưới tác dụng của trọng lực",
+          "trong không khí",
+          "của vật nặng",
+          "có vận tốc không đổi"
+        ],
+        "answer": 0,
+        "explain": "Bỏ qua lực cản."
+      }
     },
     {
       "type": "figure",
@@ -58,7 +69,18 @@
       "type": "card",
       "title": "Đo gia tốc rơi tự do",
       "text": "Thả vật qua hai cổng quang điện hoặc đo thời gian rơi trên quãng đường h đã biết, rồi tính g = 2h/t².",
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Chuyển động rơi tự do là:",
+        "options": [
+          "thẳng nhanh dần đều",
+          "thẳng đều",
+          "thẳng chậm dần đều",
+          "tròn đều"
+        ],
+        "answer": 0,
+        "explain": "Gia tốc g không đổi."
+      }
     },
     {
       "type": "method",

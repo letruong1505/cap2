@@ -46,7 +46,18 @@
       "n": 2,
       "formulas": [
         "Hypebol (H): x²/a² − y²/b² = 1 với b² = c² − a². Tiêu điểm F₁(−c; 0), F₂(c; 0); đỉnh A₁(−a; 0), A₂(a; 0); trục thực 2a, trục ảo 2b."
-      ]
+      ],
+      "try": {
+        "q": "Phương trình nào là phương trình chính tắc của elip?",
+        "options": [
+          "x²/9 + y²/4 = 1",
+          "x²/9 − y²/4 = 1",
+          "y² = 4x",
+          "x² + y² = 9"
+        ],
+        "answer": 0,
+        "explain": "Dạng x²/a² + y²/b² = 1 với a > b."
+      }
     },
     {
       "type": "card",

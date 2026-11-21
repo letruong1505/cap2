@@ -44,7 +44,18 @@
         "Núi và cao nguyên trên 500 m;",
         "Đồi và đồng bằng thường dưới 200 m"
       ],
-      "n": 3
+      "n": 3,
+      "try": {
+        "q": "Núi có độ cao tuyệt đối:",
+        "options": [
+          "Dưới 200 m",
+          "Dưới 100 m",
+          "Trên 500 m",
+          "Bằng 0 m"
+        ],
+        "answer": 2,
+        "explain": "Định nghĩa."
+      }
     },
     {
       "type": "card",
@@ -68,7 +79,18 @@
         "Khoáng sản là những khoáng vật và đá có ích được con người khai thác, sử dụng.",
         "Phân loại: năng lượng (than, dầu mỏ, khí đốt), kim loại (sắt, đồng, vàng), phi kim loại (đá vôi, apatit, cát)."
       ],
-      "n": 6
+      "n": 6,
+      "try": {
+        "q": "Than đá thuộc nhóm khoáng sản:",
+        "options": [
+          "Năng lượng",
+          "Kim loại",
+          "Phi kim loại",
+          "Đá quý"
+        ],
+        "answer": 0,
+        "explain": "Nhiên liệu."
+      }
     },
     {
       "type": "figure",

@@ -44,7 +44,18 @@
         "Sự kiện không thể xảy ra: không bao giờ xảy ra.",
         "Sự kiện có thể xảy ra: có thể xảy ra hoặc không."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Gieo xúc xắc, sự kiện \"số chấm nhỏ hơn 7\" là:",
+        "options": [
+          "Không thể xảy ra",
+          "Chắc chắn xảy ra",
+          "Có thể xảy ra",
+          "Hiếm khi xảy ra"
+        ],
+        "answer": 1,
+        "explain": "Mặt lớn nhất là 6."
+      }
     },
     {
       "type": "card",

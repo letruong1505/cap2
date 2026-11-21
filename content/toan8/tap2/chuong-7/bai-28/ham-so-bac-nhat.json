@@ -24,7 +24,18 @@
       "type": "card",
       "title": "Hàm số y = ax + b xác định với mọi số thực x",
       "text": "Khi a > 0 hàm số đồng biến (x tăng thì y tăng); khi a < 0 hàm số nghịch biến (x tăng thì y giảm).",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Hàm số nào sau đây là hàm số bậc nhất?",
+        "options": [
+          "y = 5",
+          "y = x·x + 1",
+          "y = 3x − 2",
+          "y = 1/x"
+        ],
+        "answer": 2,
+        "explain": "Dạng y = ax + b với a = 3 ≠ 0."
+      }
     },
     {
       "type": "card",
@@ -41,7 +52,18 @@
       "type": "card",
       "title": "Cách vẽ đồ thị",
       "text": "Xác định hai điểm phân biệt của đồ thị (thường là giao điểm với hai trục) rồi vẽ đường thẳng đi qua hai điểm đó.",
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Hàm số y = −2x + 5 là hàm số:",
+        "options": [
+          "Đồng biến",
+          "Nghịch biến",
+          "Hằng",
+          "Không xác định"
+        ],
+        "answer": 1,
+        "explain": "a < 0 nên hàm số nghịch biến."
+      }
     }
   ],
   "examples": [

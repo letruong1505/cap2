@@ -42,7 +42,18 @@
       "n": 2,
       "formulas": [
         "v = s / t"
-      ]
+      ],
+      "try": {
+        "q": "Dụng cụ dùng để đo tốc độ của các phương tiện giao thông như ô tô, xe máy là:",
+        "options": [
+          "Tốc kế",
+          "Nhiệt kế",
+          "Áp kế",
+          "Lực kế"
+        ],
+        "answer": 0,
+        "explain": "Tốc kế là dụng cụ đo tốc độ chuyển động của phương tiện giao thông."
+      }
     },
     {
       "type": "card",
@@ -57,7 +68,18 @@
         "Thiết bị bắn tốc độ đơn giản dùng một camera ghi lại thời điểm ô tô đi qua hai vạch mốc cách nhau vài mét.",
         "Máy tính tính tốc độ từ quãng đường giữa hai vạch và thời gian, sau đó so sánh với tốc độ giới hạn để phát hiện xe vượt quá tốc độ."
       ],
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Trong phòng thực hành, cách đo tốc độ thường chọn là:",
+        "options": [
+          "Chọn quãng đường s trước, đo thời gian t sau",
+          "Chọn thời gian t trước, đo quãng đường s sau",
+          "Đo s và t cùng một lúc bằng một dụng cụ",
+          "Không cần đo quãng đường"
+        ],
+        "answer": 0,
+        "explain": "Cách 1 (chọn quãng đường trước, đo thời gian sau) thường được chọn trong phòng thực hành."
+      }
     }
   ],
   "examples": [

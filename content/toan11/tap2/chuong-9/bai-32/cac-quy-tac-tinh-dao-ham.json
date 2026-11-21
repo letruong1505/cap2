@@ -27,7 +27,18 @@
         "(eˣ)′ = eˣ;  (aˣ)′ = aˣ·ln a;  (ln x)′ = 1/x;  (log_a x)′ = 1/(x·ln a).",
         "(u ± v)′ = u′ ± v′;  (uv)′ = u′v + uv′;  (ku)′ = k·u′;  (u/v)′ = (u′v − uv′)/v² (v ≠ 0).",
         "Đạo hàm của hàm hợp: nếu y = f(u), u = u(x) thì y′ₓ = y′ᵤ·u′ₓ. Ví dụ: (uⁿ)′ = n·uⁿ⁻¹·u′;  (sin u)′ = u′·cos u;  (e^u)′ = u′·e^u;  (ln u)′ = u′/u."
-      ]
+      ],
+      "try": {
+        "q": "Đạo hàm của √x (x > 0) là:",
+        "options": [
+          "1/(2√x)",
+          "2√x",
+          "√x/2",
+          "1/√x"
+        ],
+        "answer": 0,
+        "explain": "(√x)′ = 1/(2√x)."
+      }
     },
     {
       "type": "figure",

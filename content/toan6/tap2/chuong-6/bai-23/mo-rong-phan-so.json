@@ -31,7 +31,18 @@
       "type": "card",
       "title": "Hai phân số a/b và c/d bằng…",
       "text": "Hai phân số a/b và c/d bằng nhau nếu a·d = b·c.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Cặp phân số nào bằng nhau?",
+        "options": [
+          "2/3 và 3/2",
+          "2/3 và 8/12",
+          "1/2 và 2/3",
+          "3/4 và 4/5"
+        ],
+        "answer": 1,
+        "explain": "2·12 = 3·8 = 24."
+      }
     },
     {
       "type": "figure",
@@ -54,7 +65,18 @@
         "Chia cả tử và mẫu cho một ước chung khác 1 và −1.",
         "Phân số tối giản là phân số mà tử và mẫu chỉ có ước chung là 1 và −1."
       ],
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Phân số nào là phân số tối giản?",
+        "options": [
+          "7/9",
+          "6/9",
+          "4/10",
+          "12/18"
+        ],
+        "answer": 0,
+        "explain": "ƯCLN(7, 9) = 1."
+      }
     }
   ],
   "examples": [

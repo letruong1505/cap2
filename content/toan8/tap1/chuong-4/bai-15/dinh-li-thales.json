@@ -30,7 +30,18 @@
       "n": 2,
       "formulas": [
         "MN ∥ BC ⇒ AM/AB = AN/AC; AM/MB = AN/NC; MB/AB = NC/AC"
-      ]
+      ],
+      "try": {
+        "q": "Cho tam giác ABC, M thuộc AB, N thuộc AC và MN ∥ BC. Khẳng định nào sau đây đúng?",
+        "options": [
+          "AM/AB = NC/AC",
+          "AM/AB = AN/AC",
+          "AM/MB = AN/AC",
+          "AM/AB = BC/MN"
+        ],
+        "answer": 1,
+        "explain": "Theo định lí Thalès: AM/AB = AN/AC."
+      }
     },
     {
       "type": "figure",
@@ -55,7 +66,18 @@
       "n": 4,
       "formulas": [
         "MN ∥ BC ⇒ AM/AB = AN/AC = MN/BC"
-      ]
+      ],
+      "try": {
+        "q": "Nếu AM/MB = AN/NC (M thuộc AB, N thuộc AC) thì theo định lí Thalès đảo:",
+        "options": [
+          "MN ∥ BC",
+          "MN ⊥ BC",
+          "MN = BC",
+          "M là trung điểm của AB"
+        ],
+        "answer": 0,
+        "explain": "Các cặp đoạn thẳng tương ứng tỉ lệ nên MN ∥ BC."
+      }
     },
     {
       "type": "figure",

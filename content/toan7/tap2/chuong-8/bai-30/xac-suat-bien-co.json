@@ -28,7 +28,18 @@
       "type": "card",
       "title": "Nếu có k biến cố đồng khả…",
       "text": "Nếu có k biến cố đồng khả năng và luôn xảy ra một và chỉ một biến cố trong k biến cố đó thì xác suất của mỗi biến cố đều bằng 1/k.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Số nào sau đây có thể là xác suất của một biến cố?",
+        "options": [
+          "2/5",
+          "3/2",
+          "−1/4",
+          "5/4"
+        ],
+        "answer": 0,
+        "explain": "Xác suất nhận giá trị từ 0 đến 1, và 0 ≤ 2/5 ≤ 1."
+      }
     },
     {
       "type": "figure",

@@ -27,7 +27,18 @@
       "n": 1,
       "formulas": [
         "a·(b + c) = a·b + a·c;   a·(b − c) = a·b − a·c"
-      ]
+      ],
+      "try": {
+        "q": "Trong phép chia có dư a = b·q + r, số dư r thoả mãn:",
+        "options": [
+          "r > b",
+          "r = b",
+          "0 < r < b",
+          "r = 0"
+        ],
+        "answer": 2,
+        "explain": "Số dư luôn nhỏ hơn số chia."
+      }
     },
     {
       "type": "card",

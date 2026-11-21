@@ -24,7 +24,18 @@
         "Chỉ có cộng, trừ hoặc chỉ có nhân, chia thì làm từ trái sang phải.",
         "Có đủ các phép tính thì làm luỹ thừa → nhân, chia → cộng, trừ."
       ],
-      "n": 1
+      "n": 1,
+      "try": {
+        "q": "Với biểu thức không có ngoặc gồm cộng, nhân, luỹ thừa, ta làm phép nào trước?",
+        "options": [
+          "Cộng",
+          "Nhân",
+          "Luỹ thừa",
+          "Từ trái sang phải bất kể phép tính"
+        ],
+        "answer": 2,
+        "explain": "Thứ tự: luỹ thừa, nhân chia, cộng trừ."
+      }
     },
     {
       "type": "card",

@@ -34,7 +34,18 @@
         "Áp suất là độ lớn áp lực trên một đơn vị diện tích bị ép;",
         "1 atm ≈ 1,013·10⁵ Pa."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Đơn vị áp suất trong hệ SI là:",
+        "options": [
+          "pascal (Pa)",
+          "niutơn (N)",
+          "kg/m³",
+          "jun (J)"
+        ],
+        "answer": 0,
+        "explain": "1 Pa = 1 N/m²."
+      }
     },
     {
       "type": "card",
@@ -60,7 +71,18 @@
         "Áp suất chất lỏng chỉ phụ thuộc độ sâu và khối lượng riêng, không phụ thuộc hình dạng bình.",
         "Ứng dụng: bình thông nhau (mực chất lỏng cùng loại ngang nhau), đập thuỷ điện xây dưới chân dày hơn, thợ lặn cần đồ bảo hộ khi lặn sâu."
       ],
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Áp suất chất lỏng tại một điểm phụ thuộc vào:",
+        "options": [
+          "độ sâu và khối lượng riêng chất lỏng",
+          "hình dạng bình",
+          "diện tích đáy bình",
+          "thể tích chất lỏng"
+        ],
+        "answer": 0,
+        "explain": "p = ρgh."
+      }
     },
     {
       "type": "method",

@@ -30,7 +30,18 @@
         "Nhân một số thập phân với 10, 100, 1 000… ta dịch dấu phẩy sang phải 1, 2, 3… chữ số; nhân với 0,1;",
         "0,01… ta dịch dấu phẩy sang trái."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Nhân một số thập phân với 100 ta:",
+        "options": [
+          "Dịch sang trái hai chữ số",
+          "Thêm hai chữ số 0 vào bên trái",
+          "Dịch sang phải một chữ số",
+          "Dịch dấu phẩy sang phải hai chữ số"
+        ],
+        "answer": 3,
+        "explain": "Ví dụ 3,45·100 = 345."
+      }
     },
     {
       "type": "figure",

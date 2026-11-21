@@ -16,7 +16,17 @@
       "type": "card",
       "title": "Khái niệm",
       "text": "Biến cố là một sự việc, hiện tượng có thể xảy ra hoặc không xảy ra.",
-      "n": 1
+      "n": 1,
+      "try": {
+        "q": "Gieo một con xúc xắc. Biến cố \"số chấm xuất hiện nhỏ hơn 7\" là:",
+        "options": [
+          "Biến cố chắc chắn",
+          "Biến cố không thể",
+          "Biến cố ngẫu nhiên"
+        ],
+        "answer": 0,
+        "explain": "Mọi mặt đều có từ 1 đến 6 chấm, đều nhỏ hơn 7, nên biến cố luôn xảy ra."
+      }
     },
     {
       "type": "card",

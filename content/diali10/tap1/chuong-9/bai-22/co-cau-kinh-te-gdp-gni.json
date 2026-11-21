@@ -39,7 +39,18 @@
         "GNI (tổng thu nhập quốc gia) là tổng giá trị theo giá thị trường của các sản phẩm và dịch vụ cuối cùng do công dân mang quốc tịch nước đó tạo ra, kể cả ở trong và ngoài lãnh thổ.",
         "GNI đánh giá tăng trưởng kinh tế một cách đầy đủ hơn."
       ],
-      "n": 3
+      "n": 3,
+      "try": {
+        "q": "Cơ cấu kinh tế theo ngành gồm những khu vực nào?",
+        "options": [
+          "Nông, lâm, thuỷ sản; công nghiệp và xây dựng; dịch vụ",
+          "Nhà nước; ngoài Nhà nước; có vốn đầu tư nước ngoài",
+          "Vùng Bắc, Trung, Nam",
+          "Thành thị và nông thôn"
+        ],
+        "answer": 0,
+        "explain": "Cơ cấu theo ngành là bộ phận cơ bản nhất, gồm nông, lâm, thuỷ sản; công nghiệp và xây dựng; dịch vụ."
+      }
     },
     {
       "type": "card",
@@ -72,7 +83,18 @@
         "GNI = công dân tạo ra, kể cả ở nước ngoài.",
         "Dịch vụ chiếm tỉ trọng lớn nhất trong GDP Việt Nam năm 2019."
       ],
-      "n": 7
+      "n": 7,
+      "try": {
+        "q": "GDP là gì?",
+        "options": [
+          "Tổng giá trị hàng hoá, dịch vụ cuối cùng do công dân một nước tạo ra, kể cả ở nước ngoài",
+          "Tổng giá trị hàng hoá, dịch vụ cuối cùng được sản xuất trong phạm vi lãnh thổ quốc gia trong một khoảng thời gian",
+          "Thu nhập bình quân đầu người",
+          "Tổng giá trị xuất khẩu của một nước"
+        ],
+        "answer": 1,
+        "explain": "GDP là tổng sản phẩm trong nước, tính cho những gì được sản xuất trong phạm vi lãnh thổ quốc gia."
+      }
     }
   ],
   "examples": [

@@ -21,7 +21,18 @@
       "formulas": [
         "A³ + B³ = (A + B)(A² − AB + B²)   (tổng hai lập phương)",
         "A³ − B³ = (A − B)(A² + AB + B²)   (hiệu hai lập phương)"
-      ]
+      ],
+      "try": {
+        "q": "Công thức tổng hai lập phương là:",
+        "options": [
+          "A³ + B³ = (A + B)³",
+          "A³ + B³ = (A + B)(A² − AB + B²)",
+          "A³ + B³ = (A + B)(A² + AB + B²)",
+          "A³ + B³ = (A − B)(A² + AB + B²)"
+        ],
+        "answer": 1,
+        "explain": "Tổng hai lập phương bằng tổng hai số nhân bình phương thiếu của hiệu."
+      }
     },
     {
       "type": "card",

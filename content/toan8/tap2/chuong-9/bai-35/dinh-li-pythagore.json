@@ -32,7 +32,18 @@
       "type": "card",
       "title": "Định lí Pythagore đảo",
       "text": "Nếu một tam giác có bình phương của một cạnh bằng tổng các bình phương của hai cạnh còn lại thì tam giác đó là tam giác vuông (vuông tại đỉnh đối diện với cạnh lớn nhất).",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Tam giác có ba cạnh 5 cm; 12 cm; 13 cm là tam giác:",
+        "options": [
+          "Nhọn",
+          "Vuông",
+          "Tù",
+          "Đều"
+        ],
+        "answer": 1,
+        "explain": "25 + 144 = 169 = 13² nên tam giác vuông (Pythagore đảo)."
+      }
     },
     {
       "type": "card",

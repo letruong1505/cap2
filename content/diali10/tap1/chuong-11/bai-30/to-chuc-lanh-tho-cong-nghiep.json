@@ -30,7 +30,18 @@
       "type": "card",
       "title": "Khu công nghiệp",
       "text": "Tập trung tương đối nhiều xí nghiệp có khả năng hợp tác cao, trên khu vực có ranh giới xác định, không có dân cư sinh sống, cùng sử dụng cơ sở hạ tầng; sản xuất để tiêu thụ trong nước và xuất khẩu; các xí nghiệp được hưởng quy chế ưu đãi.",
-      "n": 3
+      "n": 3,
+      "try": {
+        "q": "Điểm công nghiệp có đặc điểm nào?",
+        "options": [
+          "Hình thức đơn giản nhất, gồm một số xí nghiệp gần nguồn nguyên liệu, ít liên hệ với nhau",
+          "Có ranh giới xác định, không có dân cư sinh sống",
+          "Tập trung nhiều xí nghiệp liên kết chặt chẽ",
+          "Là hạt nhân tạo vùng kinh tế"
+        ],
+        "answer": 0,
+        "explain": "Điểm công nghiệp là hình thức đơn giản nhất, gồm một số xí nghiệp gắn với nguồn nguyên liệu, ít hoặc không có mối liên hệ."
+      }
     },
     {
       "type": "card",
@@ -55,7 +66,18 @@
         "Khu → ranh giới, không dân cư, ưu đãi.",
         "Trung tâm → có dân, hạt nhân vùng."
       ],
-      "n": 6
+      "n": 6,
+      "try": {
+        "q": "Khu công nghiệp khác điểm công nghiệp ở đặc điểm nào?",
+        "options": [
+          "Có ranh giới xác định, không có dân cư sinh sống, cùng sử dụng cơ sở hạ tầng và xí nghiệp được ưu đãi",
+          "Không có xí nghiệp nào",
+          "Chỉ có một xí nghiệp duy nhất",
+          "Không có cơ sở hạ tầng"
+        ],
+        "answer": 0,
+        "explain": "Khu công nghiệp có ranh giới xác định, không có dân cư sinh sống, các xí nghiệp dùng chung hạ tầng và được hưởng quy chế ưu đãi."
+      }
     }
   ],
   "examples": [],

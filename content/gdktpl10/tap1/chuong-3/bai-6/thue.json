@@ -37,7 +37,18 @@
         "Thuế; thuế trực thu; thuế gián thu; thuế thu nhập doanh nghiệp; thuế thu nhập cá nhân; thuế giá trị gia tăng; thuế tiêu thụ đặc biệt; thuế bảo vệ môi trường; trốn thuế;",
         "Luật Quản lí thuế."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Thuế là:",
+        "options": [
+          "khoản đóng góp tự nguyện",
+          "khoản nộp bắt buộc vào ngân sách nhà nước theo quy định của luật thuế",
+          "khoản tiền gửi ngân hàng",
+          "khoản đầu tư của doanh nghiệp"
+        ],
+        "answer": 1,
+        "explain": "Thuế có tính bắt buộc và được quy định bởi luật."
+      }
     },
     {
       "type": "figure",
@@ -75,7 +86,18 @@
         "Được hỗ trợ, hướng dẫn nộp thuế, được hưởng ưu đãi và hoàn thuế theo quy định; có nghĩa vụ khai thuế chính xác, trung thực, đầy đủ, nộp đúng hạn tiền thuế, tiền chậm nộp và tiền phạt.",
         "Trốn thuế, gian lận thuế bị xử phạt hành chính và có thể bị truy cứu trách nhiệm hình sự theo Bộ luật Hình sự."
       ],
-      "n": 5
+      "n": 5,
+      "try": {
+        "q": "Thuế là nguồn thu:",
+        "options": [
+          "chủ yếu nhất của ngân sách nhà nước",
+          "không đáng kể",
+          "chỉ dùng cho quân sự",
+          "chỉ do doanh nghiệp nộp"
+        ],
+        "answer": 0,
+        "explain": "Thuế chiếm tỉ trọng lớn trong thu ngân sách."
+      }
     }
   ],
   "examples": [

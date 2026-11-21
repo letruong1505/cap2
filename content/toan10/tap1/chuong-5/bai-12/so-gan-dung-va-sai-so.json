@@ -35,7 +35,18 @@
       "type": "card",
       "title": "Sai số tương đối của số gần đúng a là δ_a = Δ_a/|a| ≤ d/|a|",
       "text": "Sai số tương đối càng nhỏ thì phép đo càng chính xác; thường viết dưới dạng phần trăm.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Sai số tuyệt đối của số gần đúng a so với số đúng ā là:",
+        "options": [
+          "|a − ā|",
+          "a − ā",
+          "ā/a",
+          "|a|·|ā|"
+        ],
+        "answer": 0,
+        "explain": "Định nghĩa Δ_a = |a − ā|."
+      }
     },
     {
       "type": "card",
@@ -53,7 +64,18 @@
         "Quy tròn a đến hàng cao hơn hàng của d một đơn vị (hàng thấp nhất mà d nhỏ hơn nửa đơn vị của hàng đó).",
         "Ví dụ a = 2,8465 với d = 0,004 thì quy tròn đến hàng phần trăm: 2,85."
       ],
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Số quy tròn của 12,567 đến hàng phần mười là:",
+        "options": [
+          "12,6",
+          "12,5",
+          "12,57",
+          "13"
+        ],
+        "answer": 0,
+        "explain": "Chữ số hàng phần trăm là 6 ≥ 5 nên làm tròn lên."
+      }
     },
     {
       "type": "method",

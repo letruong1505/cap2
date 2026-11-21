@@ -46,7 +46,18 @@
         "Làm ra sản phẩm, dịch vụ đáp ứng đầy đủ, kịp thời nhu cầu xã hội; tạo việc làm và thu nhập cho người lao động, gia đình;",
         "Đóng góp cho phát triển kinh tế – xã hội của địa phương và đất nước."
       ],
-      "n": 3
+      "n": 3,
+      "try": {
+        "q": "Hộ kinh doanh được đăng ký tại:",
+        "options": [
+          "một địa điểm, sử dụng dưới 10 lao động",
+          "nhiều địa điểm tuỳ ý",
+          "không giới hạn lao động",
+          "không cần đăng ký"
+        ],
+        "answer": 0,
+        "explain": "Đây là đặc điểm nổi bật của hộ kinh doanh."
+      }
     },
     {
       "type": "card",
@@ -81,7 +92,18 @@
         "Vốn điều lệ chia thành nhiều phần bằng nhau gọi là cổ phần; tối thiểu ba cổ đông; cơ quan cao nhất là Đại hội đồng cổ đông; có quyền phát hành chứng khoán để huy động vốn.",
         "Doanh nghiệp nhà nước là tổ chức kinh doanh do Nhà nước đầu tư trên 50% vốn điều lệ; một số doanh nghiệp nhà nước do Nhà nước nắm giữ 100% vốn."
       ],
-      "n": 6
+      "n": 6,
+      "try": {
+        "q": "Công ty cổ phần có đặc điểm nổi bật là:",
+        "options": [
+          "chỉ có một chủ sở hữu",
+          "không có tư cách pháp nhân",
+          "không được huy động vốn",
+          "vốn chia thành nhiều cổ phần, có quyền phát hành chứng khoán"
+        ],
+        "answer": 3,
+        "explain": "Công ty cổ phần huy động vốn qua phát hành cổ phần."
+      }
     }
   ],
   "examples": [

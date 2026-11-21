@@ -32,7 +32,18 @@
       "type": "card",
       "title": "Sóng cơ không truyền được trong chân…",
       "text": "Sóng cơ không truyền được trong chân không vì cần môi trường vật chất.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Sóng cơ không truyền được trong:",
+        "options": [
+          "chân không",
+          "chất rắn",
+          "chất lỏng",
+          "chất khí"
+        ],
+        "answer": 0,
+        "explain": "Sóng cơ cần môi trường vật chất."
+      }
     },
     {
       "type": "figure",
@@ -61,7 +72,18 @@
         "Hai điểm cách nhau một số nguyên lần λ dao động cùng pha; cách nhau (k + ½)λ dao động ngược pha; cách nhau (2k + 1)λ/4 dao động vuông pha.",
         "Cường độ sóng là năng lượng sóng truyền qua một đơn vị diện tích vuông góc với phương truyền trong một đơn vị thời gian (đơn vị W/m²)."
       ],
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Bước sóng là:",
+        "options": [
+          "quãng đường sóng truyền được trong một chu kì",
+          "khoảng cách giữa hai điểm bất kì",
+          "quãng đường phần tử đi trong một chu kì",
+          "tốc độ truyền sóng"
+        ],
+        "answer": 0,
+        "explain": "λ = vT."
+      }
     },
     {
       "type": "method",

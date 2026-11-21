@@ -27,7 +27,18 @@
       "n": 2,
       "formulas": [
         "AB + AC = A(B + C)"
-      ]
+      ],
+      "try": {
+        "q": "Phân tích 2x² + 4x thành nhân tử ta được:",
+        "options": [
+          "2(x² + 2x)",
+          "2x(x + 2)",
+          "x(2x + 4)",
+          "2x(x + 4)"
+        ],
+        "answer": 1,
+        "explain": "Nhân tử chung lớn nhất là 2x: 2x² + 4x = 2x(x + 2)."
+      }
     },
     {
       "type": "card",
@@ -42,7 +53,18 @@
       "n": 4,
       "formulas": [
         "ax + ay + bx + by = a(x + y) + b(x + y) = (a + b)(x + y)"
-      ]
+      ],
+      "try": {
+        "q": "Phân tích x² − 25 thành nhân tử ta được:",
+        "options": [
+          "(x − 5)(x + 5)",
+          "(x − 5)²",
+          "(x + 5)²",
+          "x(x − 25)"
+        ],
+        "answer": 0,
+        "explain": "x² − 5² = (x − 5)(x + 5)."
+      }
     },
     {
       "type": "method",

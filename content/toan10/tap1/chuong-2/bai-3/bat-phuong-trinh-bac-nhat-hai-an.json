@@ -25,7 +25,18 @@
         "Bất phương trình bậc nhất hai ẩn x, y có dạng tổng quát ax + by ≤ c (hoặc ax + by < c, ax + by ≥ c, ax + by > c), trong đó a, b, c là các số thực đã cho, a và b không đồng thời bằng 0.",
         "Cặp số (x₀; y₀) là một nghiệm nếu thay vào bất phương trình ta được mệnh đề đúng."
       ],
-      "n": 1
+      "n": 1,
+      "try": {
+        "q": "Bất phương trình nào sau đây là bất phương trình bậc nhất hai ẩn?",
+        "options": [
+          "2x − 3y < 5",
+          "x² + y ≥ 1",
+          "xy ≤ 4",
+          "x + 1/y > 0"
+        ],
+        "answer": 0,
+        "explain": "Dạng ax + by < c với a = 2, b = −3."
+      }
     },
     {
       "type": "card",

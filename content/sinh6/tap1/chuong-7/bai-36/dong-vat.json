@@ -30,7 +30,18 @@
       "type": "card",
       "title": "Động vật không xương sống",
       "text": "Ruột khoang (thuỷ tức, sứa, san hô), giun (giun đất, giun đũa, sán), thân mềm (ốc, trai, mực), chân khớp (tôm, cua, nhện, côn trùng).",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Động vật nào thuộc nhóm không xương sống?",
+        "options": [
+          "Con cá",
+          "Con tôm",
+          "Con ếch",
+          "Con chim"
+        ],
+        "answer": 1,
+        "explain": "Chân khớp."
+      }
     },
     {
       "type": "card",
@@ -50,7 +61,18 @@
         "Cung cấp thực phẩm, nguyên liệu, làm cảnh, thụ phấn, tiêu diệt sâu hại.",
         "Tác hại: truyền bệnh (muỗi, ruồi, chuột), phá hoại mùa màng, kí sinh (giun, sán)."
       ],
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Con ốc sên thuộc ngành:",
+        "options": [
+          "Thân mềm",
+          "Chân khớp",
+          "Ruột khoang",
+          "Giun"
+        ],
+        "answer": 0,
+        "explain": "Thân mềm."
+      }
     }
   ],
   "examples": [

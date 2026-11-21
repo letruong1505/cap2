@@ -40,7 +40,18 @@
       "n": 2,
       "formulas": [
         "Dãy (uₙ) tăng: uₙ₊₁ > uₙ với mọi n ∈ ℕ*.   Dãy giảm: uₙ₊₁ < uₙ với mọi n ∈ ℕ*.   Xét hiệu uₙ₊₁ − uₙ (hoặc tỉ số uₙ₊₁/uₙ khi uₙ > 0)."
-      ]
+      ],
+      "try": {
+        "q": "Dãy số (uₙ) được gọi là dãy tăng nếu:",
+        "options": [
+          "uₙ₊₁ > uₙ với mọi n ∈ ℕ*",
+          "uₙ₊₁ < uₙ với mọi n ∈ ℕ*",
+          "uₙ ≥ 0 với mọi n",
+          "uₙ ≤ M với mọi n"
+        ],
+        "answer": 0,
+        "explain": "Dãy tăng khi mỗi số hạng sau lớn hơn số hạng liền trước."
+      }
     },
     {
       "type": "figure",

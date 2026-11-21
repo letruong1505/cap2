@@ -30,7 +30,18 @@
       "type": "card",
       "title": "Mô tả không gian mẫu",
       "text": "Liệt kê; lập bảng (khi phép thử gồm hai thành phần, ví dụ gieo hai xúc xắc); vẽ sơ đồ cây (khi phép thử gồm nhiều bước).",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Không gian mẫu là:",
+        "options": [
+          "Một kết quả bất kì",
+          "Kết quả thuận lợi",
+          "Tập hợp tất cả các kết quả có thể của phép thử",
+          "Số lần thực hiện"
+        ],
+        "answer": 2,
+        "explain": "Kí hiệu Ω."
+      }
     },
     {
       "type": "card",

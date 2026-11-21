@@ -36,7 +36,18 @@
         "Dựa vào tỉ lệ hệ số tìm số mol chất cần tính",
         "Đổi số mol ra khối lượng (m = n·M) hoặc thể tích khí (V = 24,79·n)."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Tỉ lệ số mol các chất trong phản ứng hoá học bằng:",
+        "options": [
+          "Tỉ lệ khối lượng mol",
+          "Tỉ lệ hệ số các chất trong phương trình",
+          "Tỉ lệ chỉ số trong công thức",
+          "Luôn bằng 1 : 1"
+        ],
+        "answer": 1,
+        "explain": "Hệ số trong phương trình hoá học cho tỉ lệ số mol."
+      }
     },
     {
       "type": "card",
@@ -63,7 +74,18 @@
       "n": 4,
       "formulas": [
         "H = (m thực tế / m lí thuyết) · 100%"
-      ]
+      ],
+      "try": {
+        "q": "Bước đầu tiên khi giải bài tính theo phương trình hoá học là:",
+        "options": [
+          "Viết và cân bằng phương trình hoá học",
+          "Tính khối lượng sản phẩm",
+          "Tính hiệu suất",
+          "Đổi ra mililit"
+        ],
+        "answer": 0,
+        "explain": "Phải có phương trình cân bằng thì mới có tỉ lệ mol đúng."
+      }
     },
     {
       "type": "method",

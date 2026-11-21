@@ -43,7 +43,18 @@
       "formulas": [
         "→u = (x; y), →v = (x′; y′):   →u + →v = (x + x′; y + y′),   →u − →v = (x − x′; y − y′),   k→u = (kx; ky)",
         "|→u| = √(x² + y²)        AB = |→AB| = √((x_B − x_A)² + (y_B − y_A)²)"
-      ]
+      ],
+      "try": {
+        "q": "Trong mặt phẳng Oxy, vectơ →u = 3→i − 2→j có toạ độ là:",
+        "options": [
+          "(3; −2)",
+          "(−2; 3)",
+          "(3; 2)",
+          "(−3; 2)"
+        ],
+        "answer": 0,
+        "explain": "Hệ số của →i là hoành độ, hệ số của →j là tung độ."
+      }
     },
     {
       "type": "card",

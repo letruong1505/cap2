@@ -26,7 +26,18 @@
         "Nếu f không liên tục tại x₀ thì gián đoạn tại x₀.",
         "Hàm liên tục trên khoảng nếu liên tục tại mọi điểm của khoảng; liên tục trên [a; b] nếu liên tục trên (a; b) và lim_{x→a⁺} f = f(a), lim_{x→b⁻} f = f(b)."
       ],
-      "n": 1
+      "n": 1,
+      "try": {
+        "q": "Hàm f liên tục tại x₀ nếu:",
+        "options": [
+          "lim_{x→x₀} f(x) = f(x₀)",
+          "f(x₀) = 0",
+          "f xác định trên ℝ",
+          "lim f(x) = +∞"
+        ],
+        "answer": 0,
+        "explain": "Đây là định nghĩa liên tục tại một điểm."
+      }
     },
     {
       "type": "figure",

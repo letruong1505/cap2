@@ -31,7 +31,18 @@
       "type": "card",
       "title": "Quy luật phân li",
       "text": "Mỗi tính trạng do một cặp nhân tố di truyền quy định; trong quá trình phát sinh giao tử, mỗi nhân tố di truyền trong cặp phân li về một giao tử.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Phép lai phân tích là lai cá thể trội với:",
+        "options": [
+          "Cá thể trội đồng hợp",
+          "Cá thể mang tính trạng lặn",
+          "Cá thể dị hợp",
+          "Chính nó"
+        ],
+        "answer": 1,
+        "explain": "Định nghĩa."
+      }
     },
     {
       "type": "figure",
@@ -60,7 +71,18 @@
         "Lai cá thể mang tính trạng trội cần xác định kiểu gene với cá thể mang tính trạng lặn.",
         "Nếu con đồng tính thì cá thể trội đồng hợp; nếu con phân tính 1 : 1 thì cá thể trội dị hợp."
       ],
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Nếu lai phân tích cho đời con 100% trội thì cá thể đem lai:",
+        "options": [
+          "Dị hợp",
+          "Đồng hợp lặn",
+          "Không xác định",
+          "Đồng hợp trội"
+        ],
+        "answer": 3,
+        "explain": "AA × aa → 100% Aa."
+      }
     },
     {
       "type": "figure",

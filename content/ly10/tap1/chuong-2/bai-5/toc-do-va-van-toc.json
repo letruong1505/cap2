@@ -34,7 +34,18 @@
         "Vận tốc trung bình cho biết cả mức độ nhanh chậm và hướng chuyển động, là đại lượng vectơ.",
         "Trong chuyển động thẳng không đổi chiều, độ lớn vận tốc trung bình bằng tốc độ trung bình."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Đại lượng nào là vectơ?",
+        "options": [
+          "Vận tốc trung bình",
+          "Tốc độ trung bình",
+          "Quãng đường",
+          "Thời gian"
+        ],
+        "answer": 0,
+        "explain": "Vận tốc có hướng."
+      }
     },
     {
       "type": "card",
@@ -59,7 +70,18 @@
       "type": "card",
       "title": "Cùng chiều",
       "text": "V₁₃ = v₁₂ + v₂₃ (thuyền xuôi dòng); ngược chiều: v₁₃ = |v₁₂ − v₂₃| (thuyền ngược dòng); vuông góc: v₁₃ = √(v₁₂² + v₂₃²) (thuyền bơi ngang sông).",
-      "n": 5
+      "n": 5,
+      "try": {
+        "q": "Số chỉ của tốc kế trên ô tô là:",
+        "options": [
+          "tốc độ tức thời",
+          "tốc độ trung bình",
+          "vận tốc trung bình",
+          "độ dịch chuyển"
+        ],
+        "answer": 0,
+        "explain": "Tốc độ tại thời điểm đó."
+      }
     },
     {
       "type": "figure",

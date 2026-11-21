@@ -33,7 +33,18 @@
         "Hỗn hợp đồng nhất có thành phần giống nhau ở mọi vị trí (nước đường).",
         "Hỗn hợp không đồng nhất có thành phần không giống nhau trong toàn bộ hỗn hợp (nước phù sa)."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Chất nào là chất tinh khiết?",
+        "options": [
+          "Nước muối",
+          "Nước cất",
+          "Không khí",
+          "Nước biển"
+        ],
+        "answer": 1,
+        "explain": "Một chất duy nhất."
+      }
     },
     {
       "type": "card",
@@ -50,7 +61,18 @@
       "type": "card",
       "title": "Lượng chất tan tan được trong nước…",
       "text": "Lượng chất tan tan được trong nước phụ thuộc vào loại chất và nhiệt độ; khuấy, đun nóng giúp chất rắn tan nhanh hơn.",
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Hỗn hợp nào là dung dịch?",
+        "options": [
+          "Nước đường",
+          "Nước phù sa",
+          "Dầu ăn trộn nước",
+          "Cát trộn nước"
+        ],
+        "answer": 0,
+        "explain": "Hỗn hợp đồng nhất."
+      }
     }
   ],
   "examples": [

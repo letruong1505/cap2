@@ -28,7 +28,18 @@
       "type": "card",
       "title": "Cách làm",
       "text": "Tính cơ cấu (%) của từng loại trong tổng sản lượng bằng cách lấy sản lượng từng loại chia cho tổng rồi nhân 100; vẽ biểu đồ tròn cho cơ cấu và biểu đồ cột cho quy mô; nhận xét sự thay đổi quy mô và cơ cấu qua hai năm.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Để tính cơ cấu của một loại lương thực, cần làm gì?",
+        "options": [
+          "Lấy sản lượng loại đó chia cho tổng sản lượng rồi nhân 100",
+          "Cộng tất cả các loại",
+          "Nhân hai loại với nhau",
+          "Lấy tổng trừ đi từng loại"
+        ],
+        "answer": 0,
+        "explain": "Cơ cấu (%) bằng sản lượng loại đó chia tổng sản lượng, nhân với 100."
+      }
     },
     {
       "type": "card",
@@ -53,7 +64,18 @@
         "Tròn → cơ cấu; cột → quy mô.",
         "Sản lượng lương thực thế giới tăng từ 2 058,7 lên 3 075,9 triệu tấn."
       ],
-      "n": 5
+      "n": 5,
+      "try": {
+        "q": "Nhận xét nào đúng về sự thay đổi sản lượng lương thực thế giới từ năm 2000 đến năm 2019?",
+        "options": [
+          "Tăng từ 2058,7 lên 3075,9 triệu tấn",
+          "Giảm mạnh qua các năm",
+          "Không thay đổi",
+          "Chỉ tăng ở một khu vực"
+        ],
+        "answer": 0,
+        "explain": "Quy mô sản lượng tăng rõ rệt: năm 2019 lớn hơn năm 2000 khoảng 1017,2 triệu tấn."
+      }
     }
   ],
   "examples": [

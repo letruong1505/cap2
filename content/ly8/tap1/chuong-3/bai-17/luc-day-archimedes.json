@@ -46,7 +46,18 @@
       "n": 3,
       "formulas": [
         "F_A = d · V   (d: trọng lượng riêng của chất lỏng, N/m³; V: thể tích phần chất lỏng bị vật chiếm chỗ, m³)"
-      ]
+      ],
+      "try": {
+        "q": "Lực đẩy Archimedes có phương và chiều:",
+        "options": [
+          "Thẳng đứng, hướng từ trên xuống",
+          "Thẳng đứng, hướng từ dưới lên",
+          "Nằm ngang",
+          "Bất kì"
+        ],
+        "answer": 1,
+        "explain": "Lực đẩy Archimedes đẩy vật lên."
+      }
     },
     {
       "type": "card",
@@ -72,7 +83,18 @@
       "type": "card",
       "title": "Trọng lượng riêng của nước khoảng 10…",
       "text": "Trọng lượng riêng của nước khoảng 10 000 N/m³.",
-      "n": 6
+      "n": 6,
+      "try": {
+        "q": "Vật sẽ nổi lên khi:",
+        "options": [
+          "Trọng lượng nhỏ hơn lực đẩy Archimedes",
+          "Trọng lượng lớn hơn lực đẩy",
+          "Trọng lượng bằng lực đẩy",
+          "Lực đẩy bằng 0"
+        ],
+        "answer": 0,
+        "explain": "P < F_A thì vật nổi."
+      }
     },
     {
       "type": "method",

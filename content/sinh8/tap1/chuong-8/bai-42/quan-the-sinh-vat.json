@@ -27,7 +27,18 @@
       "type": "card",
       "title": "Đặc trưng cơ bản",
       "text": "Kích thước quần thể (số lượng cá thể), mật độ cá thể (số cá thể trên một đơn vị diện tích hay thể tích), tỉ lệ giới tính (tỉ lệ đực : cái), thành phần nhóm tuổi (trước sinh sản, sinh sản, sau sinh sản) và kiểu phân bố.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Quần thể sinh vật là tập hợp cá thể:",
+        "options": [
+          "Khác loài",
+          "Cùng loài, cùng sống trong một khoảng không gian, có khả năng sinh sản",
+          "Chỉ cùng kích thước",
+          "Chỉ cùng màu"
+        ],
+        "answer": 1,
+        "explain": "Cùng loài."
+      }
     },
     {
       "type": "card",
@@ -44,7 +55,18 @@
       "type": "card",
       "title": "Biện pháp bảo vệ quần thể",
       "text": "Bảo vệ môi trường sống, thành lập vườn quốc gia và khu bảo tồn, kiểm soát dịch bệnh, khai thác tài nguyên hợp lí; quần thể có nguy cơ tuyệt chủng thì đưa đến nơi sống mới như vườn thú, trang trại bảo tồn.",
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Mật độ cá thể là:",
+        "options": [
+          "Số cá thể trên một đơn vị diện tích hay thể tích",
+          "Tổng số cá thể",
+          "Tỉ lệ đực cái",
+          "Tuổi trung bình"
+        ],
+        "answer": 0,
+        "explain": "Ví dụ con/m²."
+      }
     },
     {
       "type": "method",

@@ -27,7 +27,18 @@
       "type": "card",
       "title": "Muốn cộng (hay trừ) hai phân thức…",
       "text": "Muốn cộng (hay trừ) hai phân thức có mẫu thức khác nhau, ta quy đồng mẫu thức rồi cộng (hay trừ) các phân thức có cùng mẫu thức vừa tìm được.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Kết quả của phép tính 3/(x + 1) + 2/(x + 1) là:",
+        "options": [
+          "5/(2x + 2)",
+          "6/(x + 1)",
+          "5/(x + 1)",
+          "1/(x + 1)"
+        ],
+        "answer": 2,
+        "explain": "Cộng các tử, giữ nguyên mẫu: (3 + 2)/(x + 1)."
+      }
     },
     {
       "type": "card",

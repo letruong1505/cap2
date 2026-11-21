@@ -164,7 +164,7 @@ function tryBlock(t) {
   const res = el('p', { class: 'g-try-res', 'aria-live': 'polite' });
   const row = el('div', { class: 'g-try-opts' });
   t.options.forEach((o, i) => {
-    const b = el('button', { type: 'button', class: 'g-try-opt' }, o);
+    const b = el('button', { type: 'button', class: 'g-try-opt' }, richText(o));
     b.addEventListener('click', () => {
       row.querySelectorAll('button').forEach((x) => { x.classList.remove('ok', 'no'); });
       b.classList.add(i === t.answer ? 'ok' : 'no');

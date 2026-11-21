@@ -30,7 +30,18 @@
         "Dùng thước đo ba cạnh a, b, c tính V = a·b·c; dùng cân đo khối lượng m.",
         "Đo mỗi đại lượng 3 lần rồi lấy giá trị trung bình."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Để xác định khối lượng riêng của một chất cần đo những đại lượng nào?",
+        "options": [
+          "Chỉ khối lượng",
+          "Khối lượng và thể tích",
+          "Chỉ chiều dài",
+          "Nhiệt độ và áp suất"
+        ],
+        "answer": 1,
+        "explain": "D = m / V."
+      }
     },
     {
       "type": "card",
@@ -59,7 +70,18 @@
       "type": "card",
       "title": "Trong thực tế, người ta đo khối…",
       "text": "Trong thực tế, người ta đo khối lượng riêng của chất lỏng bằng tỉ trọng kế (phù kế), hoạt động dựa trên định luật Archimedes.",
-      "n": 5
+      "n": 5,
+      "try": {
+        "q": "Thể tích của khối hộp chữ nhật có ba cạnh a, b, c là:",
+        "options": [
+          "V = a · b · c",
+          "V = a + b + c",
+          "V = a · b",
+          "V = 2(ab + bc + ca)"
+        ],
+        "answer": 0,
+        "explain": "V = abc."
+      }
     }
   ],
   "examples": [

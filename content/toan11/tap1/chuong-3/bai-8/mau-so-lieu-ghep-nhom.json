@@ -29,7 +29,18 @@
       "n": 1,
       "formulas": [
         "Tần số tương đối của nhóm: fᵢ = (nᵢ/n)·100%.   Tần số tích luỹ của nhóm: cfᵢ = n₁ + … + nᵢ (số giá trị nhỏ hơn đầu mút phải của nhóm i)."
-      ]
+      ],
+      "try": {
+        "q": "Giá trị đại diện của một nhóm [a; b) là:",
+        "options": [
+          "(a + b)/2",
+          "a",
+          "b",
+          "b − a"
+        ],
+        "answer": 0,
+        "explain": "Đại diện là điểm chính giữa của nhóm."
+      }
     },
     {
       "type": "figure",

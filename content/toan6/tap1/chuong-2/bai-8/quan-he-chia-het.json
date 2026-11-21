@@ -33,7 +33,18 @@
         "Chia a lần lượt cho 1, 2, …, a.",
         "Tìm bội của b: nhân b lần lượt với 0, 1, 2, 3, …"
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Nếu a = b·q (b ≠ 0, q ∈ ℕ) thì:",
+        "options": [
+          "a là ước của b",
+          "a là bội của b",
+          "b là bội của a",
+          "a không chia hết cho b"
+        ],
+        "answer": 1,
+        "explain": "a ⋮ b, a là bội của b, b là ước của a."
+      }
     },
     {
       "type": "figure",
@@ -50,7 +61,18 @@
       "type": "card",
       "title": "Tính chất 2",
       "text": "Nếu chỉ có một số hạng của tổng không chia hết cho một số, các số hạng còn lại đều chia hết cho số đó, thì tổng không chia hết cho số đó.",
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Tổng nào chia hết cho 6?",
+        "options": [
+          "24 + 36",
+          "24 + 13",
+          "12 + 25",
+          "30 + 7"
+        ],
+        "answer": 0,
+        "explain": "24 ⋮ 6 và 36 ⋮ 6 nên tổng chia hết cho 6."
+      }
     }
   ],
   "examples": [

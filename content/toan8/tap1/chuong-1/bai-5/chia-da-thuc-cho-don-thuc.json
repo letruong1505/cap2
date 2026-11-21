@@ -24,7 +24,18 @@
       "type": "card",
       "title": "Muốn chia đơn thức A cho đơn…",
       "text": "Muốn chia đơn thức A cho đơn thức B (trường hợp chia hết), ta chia hệ số của A cho hệ số của B, chia luỹ thừa của từng biến trong A cho luỹ thừa của cùng biến đó trong B rồi nhân các kết quả với nhau.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Đơn thức 6x³y² chia hết cho đơn thức nào sau đây?",
+        "options": [
+          "4x⁴",
+          "2xy",
+          "3z",
+          "x²y³"
+        ],
+        "answer": 1,
+        "explain": "Các biến x, y của 2xy đều có trong 6x³y² với số mũ không nhỏ hơn."
+      }
     },
     {
       "type": "card",

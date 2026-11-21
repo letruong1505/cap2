@@ -28,7 +28,18 @@
       "type": "card",
       "title": "Danh pháp",
       "text": "Các polymer đơn giản được gọi theo \"poly\" + tên monomer (đặt trong ngoặc đơn nếu tên monomer gồm hai cụm từ): polyethylene (PE), polypropylene (PP), polystyrene (PS), poly(vinyl chloride) (PVC), polybuta-1,3-diene, polyisoprene, poly(methyl methacrylate), poly(phenol formaldehyde) (PPF); capron; nylon-6,6.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Polymer là những hợp chất:",
+        "options": [
+          "Có phân tử khối nhỏ, do một mắt xích tạo nên",
+          "Chỉ gồm hai phân tử monomer ghép lại",
+          "Không chứa liên kết cộng hóa trị",
+          "Có phân tử khối rất lớn do nhiều mắt xích liên kết với nhau"
+        ],
+        "answer": 3,
+        "explain": "Polymer = nhiều mắt xích liên kết với nhau."
+      }
     },
     {
       "type": "card",
@@ -61,7 +72,18 @@
       "n": 5,
       "formulas": [
         "nHOOC[CH₂]₄COOH + nH₂N[CH₂]₆NH₂ → (–OC[CH₂]₄CO–NH[CH₂]₆NH–)ₙ + 2nH₂O (nylon-6,6)"
-      ]
+      ],
+      "try": {
+        "q": "Monomer dùng để điều chế polystyrene (PS) là:",
+        "options": [
+          "Ethylene",
+          "Styrene",
+          "Vinyl chloride",
+          "Propylene"
+        ],
+        "answer": 1,
+        "explain": "PS được trùng hợp từ styrene C₆H₅CH=CH₂."
+      }
     }
   ],
   "examples": [

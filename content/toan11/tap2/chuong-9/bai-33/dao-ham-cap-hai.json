@@ -25,7 +25,18 @@
       "n": 1,
       "formulas": [
         "(xⁿ)″ = n(n − 1)xⁿ⁻²;  (sin x)″ = −sin x;  (cos x)″ = −cos x;  (eˣ)″ = eˣ;  (ln x)″ = −1/x²;  (1/x)″ = 2/x³."
-      ]
+      ],
+      "try": {
+        "q": "Gia tốc tức thời a(t) của chuyển động s = s(t) bằng:",
+        "options": [
+          "s″(t)",
+          "s′(t)",
+          "s(t)",
+          "s‴(t)"
+        ],
+        "answer": 0,
+        "explain": "a = v′ = s″."
+      }
     },
     {
       "type": "figure",

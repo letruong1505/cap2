@@ -25,7 +25,18 @@
       "formulas": [
         "Phương trình mũ: aᵘ = aᵛ ⇔ u = v (a > 0, a ≠ 1);   aˣ = b (b > 0) ⇔ x = log_a b.   Phương trình lôgarit: log_a u = log_a v ⇔ u = v > 0;   log_a x = b ⇔ x = aᵇ (x > 0).",
         "Bất phương trình mũ (a > 1): aᵘ > aᵛ ⇔ u > v;  (0 < a < 1): aᵘ > aᵛ ⇔ u < v.   Bất phương trình lôgarit (a > 1): log_a u > log_a v ⇔ u > v > 0;  (0 < a < 1): ⇔ 0 < u < v."
-      ]
+      ],
+      "try": {
+        "q": "Điều kiện của phương trình log₂(x − 3) = 1 là:",
+        "options": [
+          "x > 3",
+          "x ≥ 3",
+          "x > 0",
+          "x ≠ 3"
+        ],
+        "answer": 0,
+        "explain": "Biểu thức trong log phải dương: x − 3 > 0."
+      }
     },
     {
       "type": "figure",

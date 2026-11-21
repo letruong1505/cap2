@@ -35,7 +35,7 @@ async function statusOf(db, code) {
   const s = await db.prepare('SELECT enabled, goal_daily, goal_weekly, last_sync FROM progress_sync WHERE code = ?1').bind(code).first();
   const n = await db.prepare('SELECT COUNT(*) AS n FROM progress_daily WHERE code = ?1').bind(code).first();
   const x = await db.prepare('SELECT goal_weekend FROM progress_goal_ext WHERE code = ?1').bind(code).first();
-  return { enabled: !!(s && s.enabled), goals: s && s.goal_daily ? { daily: s.goal_daily, weekend: (x && x.goal_weekend) || 80, weekly: s.goal_weekly, ...(await passOf(db, code)) } : null, lastSync: (s && s.last_sync) || null, rows: n.n };
+  return { enabled: !!(s && s.enabled), goals: s && s.goal_daily ? { daily: s.goal_daily, weekend: (x && x.goal_weekend) || 80, weekly: s.goal_weekly, ...(await passOf(db, code)) } : null, lastSync: (s && s.last_sync) || null, rows: n.n, reward: await rewardOf(db, code) };
 }
 
 // Ngưỡng đạt: pass chung (10–100), passBy riêng từng môn; luôn trả về giá trị đã làm sạch.
@@ -51,6 +51,17 @@ async function passOf(db, code) {
   try { by = r && r.pass_by ? JSON.parse(r.pass_by) : {}; } catch (e) { by = {}; }
   return cleanPass({ pass: r && r.pass, passBy: by });
 }
+// Phần thưởng chuỗi ngày: chỉ giữ các trường hợp lệ, văn bản cắt ngắn.
+function cleanReward(r) {
+  if (!r || typeof r !== 'object') return null;
+  const given = (Array.isArray(r.given) ? r.given : []).slice(-30).filter((x) => x && DAY_RE.test(String(x.day))).map((x) => ({ day: String(x.day), text: String(x.text || '').slice(0, 80), days: clampInt(x.days, 1, 60, 7) }));
+  const need = clampInt(r.days, 1, 60, 7);
+  return { on: r.on === true, need, pct: clampInt(r.pct, 10, 100, 70), text: String(r.text || '').replace(/\s+/g, ' ').trim().slice(0, 80), count: clampInt(r.count, 0, 400, 0), achieved: r.on === true && r.achieved === true, given };
+}
+async function rewardOf(db, code) {
+  const r = await db.prepare('SELECT data FROM progress_reward WHERE code = ?1').bind(code).first();
+  try { return r ? cleanReward({ ...JSON.parse(r.data), days: JSON.parse(r.data).need }) : null; } catch (e) { return null; }
+}
 const clampInt = (v, lo, hi, d) => { v = Math.round(Number(v)); return Number.isFinite(v) ? Math.min(hi, Math.max(lo, v)) : d; };
 
 // Bật/tắt chia sẻ, đặt mục tiêu, xóa dữ liệu trên máy chủ. Không truyền gì thì chỉ trả trạng thái.
@@ -64,6 +75,7 @@ export async function progressSettings(db, input, now = new Date()) {
   if (input.purge === true) {
     await db.prepare('DELETE FROM progress_daily WHERE code = ?1').bind(o.code).run();
     await db.prepare('DELETE FROM progress_usage WHERE code = ?1').bind(o.code).run();
+    await db.prepare('DELETE FROM progress_reward WHERE code = ?1').bind(o.code).run();
     await db.prepare('UPDATE progress_sync SET last_sync = NULL WHERE code = ?1').bind(o.code).run();
   }
   if (input.goals && typeof input.goals === 'object') {
@@ -74,6 +86,10 @@ export async function progressSettings(db, input, now = new Date()) {
     const ps = cleanPass(input.goals);
     await db.prepare('INSERT INTO progress_pass_ext (code, pass, pass_by) VALUES (?1, ?2, ?3) ON CONFLICT(code) DO UPDATE SET pass = ?2, pass_by = ?3')
       .bind(o.code, ps.pass, JSON.stringify(ps.passBy)).run();
+  }
+  const rw = cleanReward(input.reward);
+  if (rw) {
+    await db.prepare('INSERT INTO progress_reward (code, data, updated_at) VALUES (?1, ?2, ?3) ON CONFLICT(code) DO UPDATE SET data = ?2, updated_at = ?3').bind(o.code, JSON.stringify(rw), nowIso(now)).run();
   }
   return statusOf(db, o.code);
 }
@@ -152,7 +168,7 @@ export async function progressView(db, catalog, input, now = new Date()) {
   const gs = sts.find((x) => x.goal_daily);
   const gx = gs ? await db.prepare('SELECT goal_weekend FROM progress_goal_ext WHERE code = ?1').bind(gs.code).first() : null;
   const lastSync = sts.map((x) => x.last_sync).filter(Boolean).sort().pop() || null;
-  const base = { code: o.code, codes, name: o.name, courses, enabled, goals: gs ? { daily: gs.goal_daily, weekend: (gx && gx.goal_weekend) || 80, weekly: gs.goal_weekly, ...(await passOf(db, gs.code)) } : null, lastSync };
+  const base = { code: o.code, codes, name: o.name, courses, enabled, goals: gs ? { daily: gs.goal_daily, weekend: (gx && gx.goal_weekend) || 80, weekly: gs.goal_weekly, ...(await passOf(db, gs.code)) } : null, lastSync, reward: gs ? await rewardOf(db, gs.code) : null };
   if (!enabled) return { ...base, rows: [] };
 
   const today = now.toISOString().slice(0, 10);

@@ -36,7 +36,18 @@
         "Uỷ ban nhân dân; cơ quan quyền lực nhà nước ở địa phương; cơ quan hành chính nhà nước ở địa phương;",
         "Thường trực Hội đồng nhân dân; biểu quyết; quá nửa; giám sát; chính quyền địa phương."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Hội đồng nhân dân là cơ quan:",
+        "options": [
+          "hành chính cao nhất",
+          "quyền lực nhà nước ở địa phương, do Nhân dân địa phương bầu ra",
+          "xét xử cao nhất",
+          "công tố"
+        ],
+        "answer": 1,
+        "explain": "HĐND là cơ quan quyền lực địa phương."
+      }
     },
     {
       "type": "figure",
@@ -67,7 +78,18 @@
       "type": "card",
       "title": "Cơ cấu UBND gồm Chủ tịch, Phó…",
       "text": "Cơ cấu UBND gồm Chủ tịch, Phó Chủ tịch và các Uỷ viên phụ trách cơ quan chuyên môn như Tư pháp, Tài chính – Kế hoạch, Tài nguyên và Môi trường, Lao động – Thương binh và Xã hội, Văn hoá và Thông tin, cùng Uỷ viên phụ trách công an và quân sự.",
-      "n": 5
+      "n": 5,
+      "try": {
+        "q": "Uỷ ban nhân dân là cơ quan:",
+        "options": [
+          "hành chính nhà nước ở địa phương, chấp hành của HĐND cùng cấp",
+          "lập pháp địa phương",
+          "xét xử địa phương",
+          "bầu cử địa phương"
+        ],
+        "answer": 0,
+        "explain": "UBND là cơ quan hành chính và chấp hành."
+      }
     }
   ],
   "examples": [

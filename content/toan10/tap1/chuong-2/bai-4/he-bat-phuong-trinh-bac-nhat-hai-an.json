@@ -32,7 +32,18 @@
       "type": "card",
       "title": "Để biểu diễn miền nghiệm của hệ",
       "text": "Vẽ từng đường thẳng, gạch bỏ phần không là miền nghiệm của mỗi bất phương trình; phần còn lại không bị gạch là miền nghiệm của hệ (thường là một miền đa giác).",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Cặp số nào là nghiệm của hệ x + y ≤ 3 và x − y ≥ 0?",
+        "options": [
+          "(2; 1)",
+          "(1; 2)",
+          "(3; 1)",
+          "(0; 1)"
+        ],
+        "answer": 0,
+        "explain": "2 + 1 = 3 ≤ 3 và 2 − 1 = 1 ≥ 0."
+      }
     },
     {
       "type": "figure",

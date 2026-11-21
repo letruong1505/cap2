@@ -27,7 +27,18 @@
         "Khi chuyển một hạng tử từ vế này sang vế kia của một phương trình, ta phải đổi dấu hạng tử đó.",
         "Quy tắc nhân (chia): có thể nhân (hoặc chia) cả hai vế của phương trình với cùng một số khác 0."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Phương trình nào sau đây là phương trình bậc nhất một ẩn?",
+        "options": [
+          "0·x + 5 = 0",
+          "x·x − 4 = 0",
+          "2x − 3 = 0",
+          "1/x + 2 = 0"
+        ],
+        "answer": 2,
+        "explain": "Dạng ax + b = 0 với a = 2 ≠ 0."
+      }
     },
     {
       "type": "card",

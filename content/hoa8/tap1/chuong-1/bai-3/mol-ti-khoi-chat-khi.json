@@ -40,7 +40,18 @@
       "n": 2,
       "formulas": [
         "n = m / M   (n: số mol; m: khối lượng, g; M: khối lượng mol, g/mol)"
-      ]
+      ],
+      "try": {
+        "q": "Mol là lượng chất chứa bao nhiêu hạt (nguyên tử hoặc phân tử)?",
+        "options": [
+          "6,022·10²²",
+          "6,022·10²³",
+          "12",
+          "24,79"
+        ],
+        "answer": 1,
+        "explain": "Số Avogadro N_A = 6,022·10²³."
+      }
     },
     {
       "type": "card",
@@ -68,7 +79,18 @@
         "Khối lượng mol trung bình của không khí là 29 g/mol (20% O₂ và 80% N₂ theo thể tích), nên d(A/không khí) = M_A / 29.",
         "Khí có tỉ khối lớn hơn 1 thì nặng hơn."
       ],
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Khối lượng mol của nước H₂O (H = 1, O = 16) là:",
+        "options": [
+          "18 g/mol",
+          "16 g/mol",
+          "17 g/mol",
+          "10 g/mol"
+        ],
+        "answer": 0,
+        "explain": "M(H₂O) = 2·1 + 16 = 18 g/mol."
+      }
     },
     {
       "type": "method",

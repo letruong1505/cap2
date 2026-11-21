@@ -46,7 +46,18 @@
         "P đúng thì P̄ sai, P sai thì P̄ đúng.",
         "Ví dụ: P: \"5 là số nguyên tố\" thì P̄: \"5 không phải là số nguyên tố\"."
       ],
-      "n": 3
+      "n": 3,
+      "try": {
+        "q": "Câu nào sau đây là mệnh đề?",
+        "options": [
+          "Số 15 là bội của 5.",
+          "Bạn đã làm bài tập chưa?",
+          "Hãy mở sách ra!",
+          "Trời hôm nay đẹp quá!"
+        ],
+        "answer": 0,
+        "explain": "Khẳng định đúng (15 = 5·3) nên là mệnh đề."
+      }
     },
     {
       "type": "card",
@@ -71,7 +82,18 @@
       "n": 6,
       "formulas": [
         "Phủ định của \"∀x ∈ X, P(x)\" là \"∃x ∈ X, P̄(x)\"        Phủ định của \"∃x ∈ X, P(x)\" là \"∀x ∈ X, P̄(x)\""
-      ]
+      ],
+      "try": {
+        "q": "Mệnh đề phủ định của P: \"9 là số chính phương\" là:",
+        "options": [
+          "9 không phải là số chính phương.",
+          "9 là số nguyên tố.",
+          "9 là số lẻ.",
+          "9 không phải là số lẻ."
+        ],
+        "answer": 0,
+        "explain": "Phủ định là \"không P\"."
+      }
     },
     {
       "type": "method",

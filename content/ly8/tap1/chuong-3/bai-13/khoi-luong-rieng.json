@@ -34,7 +34,18 @@
       "n": 2,
       "formulas": [
         "D = m / V   (D: khối lượng riêng; m: khối lượng; V: thể tích)"
-      ]
+      ],
+      "try": {
+        "q": "Khối lượng riêng của một chất cho biết:",
+        "options": [
+          "Trọng lượng của một đơn vị thể tích",
+          "Khối lượng của một đơn vị thể tích chất đó",
+          "Thể tích của một đơn vị khối lượng",
+          "Khối lượng của cả vật"
+        ],
+        "answer": 1,
+        "explain": "D = m / V."
+      }
     },
     {
       "type": "card",
@@ -67,7 +78,18 @@
         "Trọng lượng riêng d của một chất là trọng lượng của một mét khối chất đó: d = P / V, đơn vị N/m³.",
         "Vì P = 10m nên d = 10D."
       ],
-      "n": 5
+      "n": 5,
+      "try": {
+        "q": "Đơn vị nào KHÔNG phải đơn vị khối lượng riêng?",
+        "options": [
+          "N/m³",
+          "kg/m³",
+          "g/cm³",
+          "g/mL"
+        ],
+        "answer": 0,
+        "explain": "N/m³ là đơn vị trọng lượng riêng."
+      }
     }
   ],
   "examples": [

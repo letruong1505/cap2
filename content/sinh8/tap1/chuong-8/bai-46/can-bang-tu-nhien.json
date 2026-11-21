@@ -30,7 +30,18 @@
       "type": "card",
       "title": "Quần thể tự điều chỉnh số lượng…",
       "text": "Quần thể tự điều chỉnh số lượng khi quá thấp hoặc quá cao để đạt trạng thái cân bằng, phù hợp khả năng cung cấp nguồn sống.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Cân bằng tự nhiên là:",
+        "options": [
+          "Số lượng luôn tăng",
+          "Trạng thái ổn định tự nhiên của các cấp độ tổ chức sống",
+          "Không có sự thay đổi",
+          "Chỉ có thực vật"
+        ],
+        "answer": 1,
+        "explain": "Hướng tới thích nghi cao nhất."
+      }
     },
     {
       "type": "card",
@@ -54,7 +65,18 @@
         "Biện pháp: hạn chế ô nhiễm, điều tiết cấu trúc hệ sinh thái, thích ứng biến đổi khí hậu, khai thác hợp lí tài nguyên.",
         "Loài ngoại lai xâm hại đe doạ hệ sinh thái bản địa."
       ],
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Khống chế sinh học là:",
+        "options": [
+          "Quần thể này bị quần thể kia khống chế số lượng",
+          "Quần thể tự biến mất",
+          "Chỉ một loài tồn tại",
+          "Không có quan hệ"
+        ],
+        "answer": 0,
+        "explain": "Ví dụ thỏ và linh miêu."
+      }
     }
   ],
   "examples": [

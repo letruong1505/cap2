@@ -28,7 +28,18 @@
       "n": 1,
       "formulas": [
         "f′(x₀) = lim_{x→x₀} [f(x) − f(x₀)]/(x − x₀).   Đặt Δx = x − x₀: f′(x₀) = lim_{Δx→0} [f(x₀ + Δx) − f(x₀)]/Δx."
-      ]
+      ],
+      "try": {
+        "q": "Nếu hàm f có đạo hàm tại x₀ thì:",
+        "options": [
+          "f liên tục tại x₀",
+          "f không liên tục tại x₀",
+          "f(x₀) = 0",
+          "f′(x₀) = 0"
+        ],
+        "answer": 0,
+        "explain": "Có đạo hàm suy ra liên tục."
+      }
     },
     {
       "type": "card",

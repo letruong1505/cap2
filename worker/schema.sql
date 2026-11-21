@@ -158,3 +158,10 @@ CREATE TABLE IF NOT EXISTS progress_usage (
   active_s INTEGER NOT NULL,
   PRIMARY KEY (code, src, day)
 );
+
+-- Phần thưởng chuỗi ngày: máy học sinh gửi trạng thái (đã tính sẵn), điện thoại phụ huynh xem; phần mềm khóa máy sau này đọc "achieved" để cộng giờ.
+CREATE TABLE IF NOT EXISTS progress_reward (
+  code TEXT PRIMARY KEY,
+  data TEXT NOT NULL,
+  updated_at TEXT NOT NULL
+);

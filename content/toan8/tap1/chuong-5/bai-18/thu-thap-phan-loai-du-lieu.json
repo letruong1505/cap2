@@ -24,7 +24,18 @@
       "type": "card",
       "title": "Dữ liệu chia thành hai loại",
       "text": "Dữ liệu định tính (không phải là số, ví dụ màu sắc, tên môn học yêu thích) và dữ liệu định lượng (là số, ví dụ chiều cao, số anh chị em).",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Dữ liệu nào sau đây là dữ liệu định tính?",
+        "options": [
+          "Số bạn trong lớp",
+          "Màu sắc yêu thích của các bạn",
+          "Cân nặng của các bạn",
+          "Điểm kiểm tra của các bạn"
+        ],
+        "answer": 1,
+        "explain": "Màu sắc không phải là số nên là dữ liệu định tính."
+      }
     },
     {
       "type": "card",
@@ -39,7 +50,18 @@
         "Dữ liệu cần đúng với đối tượng khảo sát và nằm trong phạm vi hợp lí.",
         "Ví dụ: tuổi của một học sinh lớp 8 là 100 là dữ liệu không hợp lí; số học sinh nam của một lớp là 20,5 cũng không hợp lí vì số người phải là số tự nhiên."
       ],
-      "n": 4
+      "n": 4,
+      "try": {
+        "q": "Số bàn thắng của một đội bóng trong mỗi trận là dữ liệu:",
+        "options": [
+          "Định lượng rời rạc",
+          "Định tính",
+          "Định lượng liên tục",
+          "Không phải dữ liệu"
+        ],
+        "answer": 0,
+        "explain": "Số bàn thắng đếm được nên là số liệu rời rạc."
+      }
     },
     {
       "type": "figure",

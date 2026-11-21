@@ -38,7 +38,18 @@
       "formulas": [
         "E = F/|q|  ⇒  F = |q|E;   vectơ: E = F/q (cùng chiều F nếu q > 0, ngược chiều F nếu q < 0).",
         "Điện tích điểm Q: E = k|Q|/r² (chân không), E = k|Q|/(εr²) (môi trường). Hướng ra xa Q nếu Q > 0, hướng vào Q nếu Q < 0."
-      ]
+      ],
+      "try": {
+        "q": "Đơn vị cường độ điện trường là:",
+        "options": [
+          "V/m",
+          "V",
+          "C",
+          "N"
+        ],
+        "answer": 0,
+        "explain": "Vôn trên mét."
+      }
     },
     {
       "type": "figure",

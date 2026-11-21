@@ -29,7 +29,18 @@
       "formulas": [
         "Số hạng tổng quát: uₙ = u₁·qⁿ⁻¹.   Ba số khác 0 là a, b, c (theo thứ tự) lập cấp số nhân ⇔ b² = ac.",
         "Tổng n số hạng đầu (q ≠ 1): Sₙ = u₁(1 − qⁿ)/(1 − q).   Nếu q = 1 thì Sₙ = n·u₁."
-      ]
+      ],
+      "try": {
+        "q": "Dãy số nào là cấp số nhân?",
+        "options": [
+          "2; 6; 18; 54",
+          "1; 3; 5; 7",
+          "1; 2; 3; 4",
+          "2; 4; 6; 8"
+        ],
+        "answer": 0,
+        "explain": "Tỉ số hai số hạng liên tiếp luôn bằng 3."
+      }
     },
     {
       "type": "figure",

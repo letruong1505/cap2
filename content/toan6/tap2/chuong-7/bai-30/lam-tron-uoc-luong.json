@@ -35,7 +35,18 @@
       "type": "card",
       "title": "Làm tròn số thập phân âm",
       "text": "Làm tròn số đối của nó rồi đặt dấu \"−\" trước kết quả.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Làm tròn 3,1415 đến hàng phần mười được:",
+        "options": [
+          "3,2",
+          "3,14",
+          "3,1",
+          "3"
+        ],
+        "answer": 2,
+        "explain": "Chữ số hàng phần trăm là 4 < 5."
+      }
     },
     {
       "type": "card",

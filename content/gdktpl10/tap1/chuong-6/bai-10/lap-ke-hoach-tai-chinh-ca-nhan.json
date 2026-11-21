@@ -33,7 +33,18 @@
       "type": "card",
       "title": "Từ khoá cần ghi nhớ",
       "text": "Kế hoạch tài chính cá nhân; mục tiêu tài chính; thu nhập; chi tiêu; tiết kiệm; ngắn hạn; trung hạn; dài hạn; quy tắc 80/13/7; thiết yếu.",
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Kế hoạch tài chính cá nhân ngắn hạn là kế hoạch có thời gian thực hiện:",
+        "options": [
+          "trên 1 năm",
+          "dưới 3 tháng",
+          "từ 3 đến 6 tháng",
+          "trên 10 năm"
+        ],
+        "answer": 1,
+        "explain": "Ngắn hạn được xác định là dưới 3 tháng."
+      }
     },
     {
       "type": "figure",
@@ -64,7 +75,18 @@
         "Tuân thủ kế hoạch, cắt giảm khoản chi không cần thiết để bù khoản chi đột xuất, và cập nhật kế hoạch khi nhu cầu hoặc thu nhập thay đổi.",
         "Ví dụ: với thu nhập 3 triệu đồng, phân bổ 2,4 triệu đồng cho chi thiết yếu, 390 nghìn đồng cho chi phát sinh và 210 nghìn đồng cho tiết kiệm."
       ],
-      "n": 5
+      "n": 5,
+      "try": {
+        "q": "Kế hoạch tài chính cá nhân trung hạn có thời gian thực hiện:",
+        "options": [
+          "từ 3 đến 6 tháng",
+          "dưới 1 tháng",
+          "trên 2 năm",
+          "không xác định"
+        ],
+        "answer": 0,
+        "explain": "Trung hạn là từ 3 đến 6 tháng."
+      }
     }
   ],
   "examples": [

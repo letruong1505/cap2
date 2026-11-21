@@ -34,7 +34,18 @@
         "Biến cố xảy ra khi kết quả của phép thử thuộc tập con đó.",
         "Biến cố chắc chắn là Ω, biến cố không thể là ∅."
       ],
-      "n": 2
+      "n": 2,
+      "try": {
+        "q": "Biến cố đối của biến cố \"Xuất hiện mặt chẵn\" khi gieo xúc xắc là:",
+        "options": [
+          "Xuất hiện mặt lẻ",
+          "Xuất hiện mặt 6",
+          "Xuất hiện mặt 1",
+          "Không xuất hiện mặt nào"
+        ],
+        "answer": 0,
+        "explain": "Ā = Ω \\ A."
+      }
     },
     {
       "type": "figure",

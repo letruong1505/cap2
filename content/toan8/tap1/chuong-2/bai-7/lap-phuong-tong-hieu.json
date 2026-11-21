@@ -21,7 +21,18 @@
       "formulas": [
         "(A + B)³ = A³ + 3A²B + 3AB² + B³   (lập phương của một tổng)",
         "(A − B)³ = A³ − 3A²B + 3AB² − B³   (lập phương của một hiệu)"
-      ]
+      ],
+      "try": {
+        "q": "Khai triển (x + 2)³ ta được:",
+        "options": [
+          "x³ + 8",
+          "x³ + 6x² + 12x + 8",
+          "x³ + 2x² + 4x + 8",
+          "x³ − 6x² + 12x − 8"
+        ],
+        "answer": 1,
+        "explain": "(x + 2)³ = x³ + 3x²·2 + 3x·2² + 2³ = x³ + 6x² + 12x + 8."
+      }
     },
     {
       "type": "card",

@@ -47,7 +47,18 @@
         "Cho vay thế chấp đòi hỏi tài sản có giá trị tương đương với khoản vay; thủ tục phức tạp, số tiền lớn, thời gian dài.",
         "Cho vay trả góp: hằng tháng người vay trả lãi và một phần gốc, hạn mức cao nhưng lãi suất khá cao và có mức phạt nếu trả chậm."
       ],
-      "n": 3
+      "n": 3,
+      "try": {
+        "q": "Tín dụng ngân hàng là việc ngân hàng:",
+        "options": [
+          "cho không khách hàng tiền",
+          "chấp nhận để khách hàng sử dụng vốn trong thời gian nhất định trên cơ sở lòng tin",
+          "chỉ nhận tiền gửi không cho vay",
+          "chỉ phục vụ doanh nghiệp nhà nước"
+        ],
+        "answer": 1,
+        "explain": "Tín dụng ngân hàng dựa trên lòng tin và thời hạn."
+      }
     },
     {
       "type": "card",
@@ -75,7 +86,18 @@
         "Khi sử dụng dịch vụ tín dụng, người vay có trách nhiệm cung cấp thông tin trung thực, chính xác; trả đủ gốc và lãi đúng hạn; sử dụng vốn đúng mục đích; cân nhắc chi phí và rủi ro.",
         "Nợ quá hạn làm xấu lịch sử tín dụng và có thể phải chịu lãi cao."
       ],
-      "n": 6
+      "n": 6,
+      "try": {
+        "q": "Đặc điểm nổi bật của cho vay thế chấp là:",
+        "options": [
+          "không cần tài sản",
+          "số tiền luôn nhỏ",
+          "thủ tục đơn giản nhất",
+          "người vay phải có tài sản bảo đảm có giá trị tương đương"
+        ],
+        "answer": 3,
+        "explain": "Thế chấp yêu cầu tài sản đảm bảo."
+      }
     }
   ],
   "examples": [
