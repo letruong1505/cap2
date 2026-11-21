@@ -928,6 +928,10 @@ function setupUpdateBar() {
   if (!bar || !window.vungBai.onUpdate) return;
   let dismissed = '';
   let manual = false;
+  /* Android: gói giao diện mới tải xong thì tự khởi động lại, nhưng chỉ khi con không đang làm bài (đang ở màn hình chính/chọn môn). */
+  const auto = window.vungBai.platform === 'android';
+  const safe = () => ['launch', 'subjects', 'home'].some((id) => { const e = document.getElementById(id); return e && !e.hidden; });
+  let autoOff = ''; let autoTimer = null; let waitTimer = null;
   const btn = (label, fn, cls) => {
     const b = document.createElement('button');
     b.type = 'button'; b.textContent = label; if (cls) b.className = cls; b.addEventListener('click', fn);
@@ -955,8 +959,14 @@ function setupUpdateBar() {
     } else if (st.state === 'downloading') {
       manual = false;
       msg.textContent = `Đang tải bản mới… ${st.percent || 0}%`;
+    } else if (st.state === 'ready' && auto && autoOff !== st.version && safe()) {
+      clearTimeout(autoTimer); clearInterval(waitTimer);
+      msg.textContent = `Đã có giao diện mới ${st.version}. Đang tự khởi động lại…`;
+      acts = [btn('Để sau', () => { autoOff = st.version; clearTimeout(autoTimer); bar.hidden = true; }, 'ghost')];
+      autoTimer = setTimeout(() => { if (autoOff !== st.version && safe()) window.vungBai.installUpdate(); else render(st); }, 3000);
     } else if (st.state === 'ready') {
       msg.textContent = `Đã tải xong phiên bản ${st.version}.`;
+      if (auto && autoOff !== st.version) { clearInterval(waitTimer); waitTimer = setInterval(() => { if (safe()) { clearInterval(waitTimer); render(st); } }, 4000); } // đang làm bài: chờ con về màn hình chính rồi mới tự cài
       acts = [btn('Khởi động lại để cài', () => window.vungBai.installUpdate()), btn('Để sau', () => { bar.hidden = true; }, 'ghost')];
     } else { bar.hidden = true; return; }
     const head = document.createElement('div'); head.className = 'update-head'; head.append(msg, ...acts);

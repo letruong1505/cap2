@@ -90,7 +90,6 @@
     box.append(h('p', { class: 'meta' }, 'Chất lượng hôm nay'), qualityBar(p.todayCorrect, p.todayDone, true));
     box.append(h('p', {}, `Tuần này: ${p.daysDone}/${g.weekly} ngày học${p.daysDone >= g.weekly ? ' – đạt mục tiêu!' : ''}`), bar(p.daysDone, g.weekly));
     box.append(h('p', { class: 'meta' }, `Điểm: hôm nay ${p.todayPts} · 7 ngày ${p.weekPts} · tổng ${p.totalPts}`));
-    rewardBar(box, data);
     const mk = (opts, cur, label) => {
       const sel = h('select', { 'aria-label': label });
       (opts.includes(cur) ? opts : opts.concat(cur).sort((a, b) => a - b)).forEach((o) => { const op = h('option', { value: o }, String(o)); if (o === cur) op.selected = true; sel.append(op); });
@@ -143,55 +142,96 @@
     rewardSettings(box, grade, data);
   }
 
-  /* Phần thưởng chuỗi ngày: con thấy thanh tiến độ; đủ chuỗi thì chờ phụ huynh bấm "Đã trao". */
-  function rewardBar(box, data) {
-    const st = P.streak(data, Date.now());
-    if (!st.on) return;
-    const wrap = h('div', { class: 'reward-box' + (st.achieved ? ' done' : '') });
-    wrap.append(h('p', {}, st.achieved
-      ? `🎁 Đã đủ ${st.need} ngày đạt ${st.pct}%! Nhờ bố mẹ trao thưởng${st.text ? ': ' + st.text : ''}.`
-      : `🎁 Chuỗi ngày đạt ${st.pct}%: ${st.count}/${st.need} ngày${st.text ? ' · Thưởng: ' + st.text : ''}`), bar(Math.min(st.count, st.need), st.need));
-    if (!st.achieved) wrap.append(h('p', { class: 'meta' }, st.todayOk ? 'Hôm nay đã đạt – giữ vững nhé!' : 'Hôm nay làm bài đạt mức trên để tính thêm 1 ngày.'));
-    box.append(wrap);
-  }
+  /* Phần thưởng theo tuần: học sinh không thấy nội dung; phụ huynh mở bằng mã PIN. */
   function rewardSettings(box, grade, data) {
-    const R = P.cleanReward(data.reward);
-    const st = P.streak(data, Date.now());
-    const wrap = h('div', { class: 'reward-set' }, h('h3', {}, 'Phần thưởng chuỗi ngày'));
+    const wrap = h('div', { class: 'reward-set' });
+    const open = h('button', { type: 'button' }, 'Phần thưởng cuối tuần (dành cho phụ huynh)');
+    open.addEventListener('click', async () => {
+      const ui = window.VungPinUI;
+      if (ui && !(await ui.ensureUnlocked())) return;
+      open.remove(); rewardForm(wrap, box, grade);
+    });
+    wrap.append(open); box.append(wrap);
+  }
+  function rewardForm(wrap, box, grade) {
+    const data = P.load(store()); const R = P.cleanReward(data.reward);
+    const st = P.rewardState(data);
+    wrap.append(h('h3', {}, 'Phần thưởng theo tuần'), h('p', { class: 'meta' }, 'Con không nhìn thấy nội dung thưởng. Cuối tuần (hoặc khi đủ ngày) con sẽ thấy lời chúc mừng; nếu hụt sẽ thấy lời động viên.'));
     const on = h('input', { type: 'checkbox' }); on.checked = R.on;
-    const days = h('input', { type: 'number', min: 1, max: 60, value: R.days, 'aria-label': 'Số ngày liên tiếp' });
+    const days = h('input', { type: 'number', min: 1, max: 7, value: R.days, 'aria-label': 'Số ngày đạt trong tuần' });
     const pct = h('input', { type: 'number', min: 10, max: 100, value: R.pct, 'aria-label': 'Ngưỡng mỗi ngày (%)' });
-    const text = h('input', { type: 'text', maxlength: 80, value: R.text, placeholder: 'Ví dụ: +30 phút chơi game cuối tuần', 'aria-label': 'Phần thưởng' });
+    const text = h('input', { type: 'text', maxlength: 80, value: R.text, placeholder: 'Ví dụ: 30 phút chơi game vào cuối tuần', 'aria-label': 'Phần thưởng' });
     const refresh = () => renderGoals(box, grade);
-    const gate = async () => { const ui = window.VungPinUI; if (ui && !(await ui.ensureUnlocked())) { refresh(); return false; } return true; };
+    const gate = async () => { const ui = window.VungPinUI; return !ui || (await ui.ensureUnlocked()); };
+    const sync = () => { if (window.VungProgressSync && window.VungProgressSync.schedule) window.VungProgressSync.schedule(); };
     const save = h('button', { type: 'button' }, 'Lưu phần thưởng');
     save.addEventListener('click', async () => {
       if (!(await gate())) return;
-      const d = P.load(store()); P.save(store(), P.setReward(d, { on: on.checked, days: days.value, pct: pct.value, text: text.value }));
-      if (window.VungProgressSync && window.VungProgressSync.schedule) window.VungProgressSync.schedule();
-      refresh();
+      const d = P.load(store()); P.save(store(), P.setReward(d, { on: on.checked, days: days.value, pct: pct.value, text: text.value })); sync(); refresh();
     });
     wrap.append(
       h('p', { class: 'goal-set' }, h('label', {}, on, ' Bật phần thưởng')),
-      h('p', { class: 'goal-set' }, 'Học ', days, ' ngày liên tiếp, mỗi ngày đúng từ ', pct, '% số câu → thưởng: '),
+      h('p', { class: 'goal-set' }, 'Mỗi tuần (thứ 2 đến chủ nhật) đạt ít nhất ', days, ' ngày, mỗi ngày đúng từ ', pct, '% số câu → thưởng:'),
       h('p', { class: 'goal-set' }, text), h('p', { class: 'goal-set' }, save));
     if (R.on) {
-      wrap.append(h('p', { class: 'meta' }, `Chuỗi hiện tại: ${Math.min(st.count, st.need)}/${st.need} ngày.`));
-      if (st.achieved) {
+      wrap.append(h('p', { class: 'meta' }, `Tuần này: ${st.count}/${st.days} ngày đạt. Bắt đầu tính từ ${R.from.split('-').reverse().join('/')}.`));
+      if (st.pending) {
         const give = h('button', { type: 'button', class: 'give-reward' }, 'Đã trao thưởng');
-        give.addEventListener('click', async () => {
-          if (!(await gate())) return;
-          P.save(store(), P.giveReward(P.load(store()))); if (window.VungProgressSync && window.VungProgressSync.schedule) window.VungProgressSync.schedule(); refresh();
-        });
-        wrap.append(h('p', {}, h('strong', {}, 'Con đã đạt thưởng! '), give));
+        give.addEventListener('click', async () => { if (!(await gate())) return; P.save(store(), P.giveReward(P.load(store()))); sync(); refresh(); });
+        wrap.append(h('p', {}, h('strong', {}, `Con đạt thưởng ${st.pending} tuần, chưa trao${R.text ? ': ' + R.text : ''}. `), give));
       }
     }
-    if (R.given.length) {
+    if (R.hist.length) {
       const ul = h('ul', { class: 'report-list' });
-      R.given.slice().reverse().slice(0, 5).forEach((x) => ul.append(h('li', {}, `${x.day.split('-').reverse().join('/')}: ${x.text || 'Đã trao thưởng'} (${x.days} ngày)`)));
-      wrap.append(h('p', { class: 'meta' }, 'Lịch sử trao thưởng'), ul);
+      R.hist.slice().reverse().slice(0, 6).forEach((x) => ul.append(h('li', {}, `Tuần ${x.week.split('-').reverse().join('/')}: ${x.ok ? (x.done ? 'đạt, đã trao' : 'đạt, chưa trao') : 'không đạt'} (${x.count}/${R.days} ngày)`)));
+      wrap.append(h('p', { class: 'meta' }, 'Kết quả các tuần'), ul);
     }
-    box.append(wrap);
+  }
+
+  /* Hiệu ứng báo kết quả cho học sinh: pháo giấy khi đạt, mặt buồn khi hụt. */
+  let rewardShowing = false;
+  function confetti(canvas) {
+    const ctx = canvas.getContext('2d'); const W = (canvas.width = canvas.offsetWidth); const H = (canvas.height = canvas.offsetHeight);
+    const cols = ['#f94144', '#f8961e', '#f9c74f', '#90be6d', '#43aa8b', '#577590', '#b5179e'];
+    const ps = Array.from({ length: 140 }, () => ({ x: Math.random() * W, y: -Math.random() * H, r: 4 + Math.random() * 6, c: cols[(Math.random() * cols.length) | 0], vy: 2 + Math.random() * 3, vx: -1.5 + Math.random() * 3, a: Math.random() * 6, va: -0.2 + Math.random() * 0.4 }));
+    let t0 = null;
+    (function frame(ts) {
+      if (!canvas.isConnected) return;
+      if (t0 === null) t0 = ts; if (ts - t0 > 6000) { ctx.clearRect(0, 0, W, H); return; }
+      ctx.clearRect(0, 0, W, H);
+      ps.forEach((p) => { p.x += p.vx; p.y += p.vy; p.a += p.va; if (p.y > H) { p.y = -10; p.x = Math.random() * W; } ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.a); ctx.fillStyle = p.c; ctx.fillRect(-p.r, -p.r / 2, p.r * 2, p.r); ctx.restore(); });
+      requestAnimationFrame(frame);
+    })(0);
+  }
+  function showRewardNotice(x, text, next) {
+    const win = x.ok;
+    const ov = h('div', { class: 'reward-ov', role: 'dialog', 'aria-modal': 'true' });
+    const card = h('div', { class: 'reward-card ' + (win ? 'win' : 'lose') },
+      h('div', { class: 'reward-emoji', 'aria-hidden': 'true' }, win ? '🎉' : '😢'),
+      h('p', { class: 'reward-msg' }, win
+        ? (text ? `Chúc mừng! Bạn được ${text}.` : 'Chúc mừng! Bạn đã đạt phần thưởng tuần này.')
+        : 'Rất tiếc, tuần này bạn đã đánh rơi phần thưởng. Cố gắng vào tuần sau nhé!'));
+    const ok = h('button', { type: 'button' }, win ? 'Tuyệt vời!' : 'Mình sẽ cố gắng');
+    ok.addEventListener('click', () => { ov.remove(); const d = P.load(store()); P.save(store(), P.markShown(d, x.week)); if (window.VungProgressSync && window.VungProgressSync.schedule) window.VungProgressSync.schedule(); next(); });
+    card.append(ok); ov.append(card);
+    if (win && !(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) { const cv = h('canvas', { class: 'reward-confetti', 'aria-hidden': 'true' }); ov.prepend(cv); document.body.append(ov); confetti(cv); } else document.body.append(ov);
+    ok.focus();
+  }
+  function checkReward() {
+    if (!P || rewardShowing || window.VungProgressUI.parentOnly) return;
+    const data = P.load(store());
+    const pend = P.evaluate(data, Date.now());
+    P.save(store(), data);
+    if (!pend.length) return;
+    const text = P.cleanReward(data.reward).text;
+    rewardShowing = true;
+    const queue = pend.slice().sort((a, b) => a.week.localeCompare(b.week));
+    const step = () => {
+      const x = queue.shift();
+      if (!x) { rewardShowing = false; return; }
+      showRewardNotice(x, text, step);
+    };
+    step();
   }
 
   function dueCount(grade) { return P ? P.due(P.load(store()), Date.now(), grade).length : 0; }
@@ -593,9 +633,12 @@
         attachUsage(r, d.usage || []);
         if (d.reward && d.reward.on) {
           const rw = d.reward;
-          body.append(h('div', { class: 'goal-box' }, h('h2', {}, 'Phần thưởng'),
-            h('p', {}, rw.achieved ? `🎁 Con đã đủ ${rw.need} ngày đạt ${rw.pct}% – chờ bố mẹ trao${rw.text ? ': ' + rw.text : ''}.` : `Chuỗi ngày đạt ${rw.pct}%: ${rw.count}/${rw.need} ngày${rw.text ? ' · Thưởng: ' + rw.text : ''}`),
-            bar(Math.min(rw.count, rw.need), rw.need), h('p', { class: 'meta' }, 'Trao thưởng bấm "Đã trao" trong báo cáo trên máy của con.')));
+          const box = h('div', { class: 'goal-box' }, h('h2', {}, 'Phần thưởng cuối tuần'),
+            h('p', {}, `Tuần này: ${rw.count}/${rw.need} ngày đạt ${rw.pct}%${rw.text ? ' · Thưởng: ' + rw.text : ''}`), bar(Math.min(rw.count, rw.need), rw.need));
+          if (rw.pending) box.append(h('p', {}, h('strong', {}, `🎁 Con đạt thưởng ${rw.pending} tuần, chờ bố mẹ trao.`), ' Sau khi trao, bấm "Đã trao" trong báo cáo trên máy của con.'));
+          const done = (rw.hist || []).slice().reverse().slice(0, 4);
+          if (done.length) { const ul = h('ul', { class: 'report-list' }); done.forEach((x) => ul.append(h('li', {}, `Tuần ${x.week.split('-').reverse().join('/')}: ${x.ok ? (x.done ? 'đạt, đã trao' : 'đạt, chưa trao') : 'không đạt'} (${x.count}/${rw.need} ngày)`))); box.append(ul); }
+          body.append(box);
         }
         body.append(h('div', { class: 'goal-box' }, h('h2', {}, 'Chất lượng làm bài'), qualityBar(r.correct, r.total, true)));
         const ub = usageBox(r); if (ub) body.append(ub);
@@ -625,7 +668,8 @@
     const g = window.VungProgressUI && window.VungProgressUI.scope;
     renderGoals(document.getElementById('goal-box-grade'), g || 0);
     if (g) set('open-review-grade', `Sổ câu sai lớp ${g}`, dueCount(g));
+    checkReward();
   }
 
-  window.VungProgressUI = { scope: 0, renderGoals, record, renderReview, renderReport, renderParentView, refreshBadge, dueCount };
+  window.VungProgressUI = { scope: 0, renderGoals, record, renderReview, renderReport, renderParentView, refreshBadge, dueCount, checkReward };
 })();

@@ -1,5 +1,6 @@
 ## Bản mới
-- Phần thưởng chuỗi ngày: phụ huynh đặt "học N ngày liên tiếp, mỗi ngày đúng từ X% thì thưởng ...". Con thấy thanh tiến độ, đủ chuỗi thì phụ huynh bấm "Đã trao" trong báo cáo; điện thoại phụ huynh xem được tiến độ. Cần cập nhật Worker (db:init + deploy).
+- Android: khi tải xong giao diện mới, app tự khởi động lại để dùng ngay (chỉ khi con không đang làm bài; đang làm bài thì chờ về màn hình chính). Bản cần cài lại apk vẫn hiện thanh "Có phiên bản mới".
+- Phần thưởng cuối tuần: phụ huynh đặt (bằng PIN) "mỗi tuần đạt N ngày, mỗi ngày đúng từ X% thì thưởng ...". Con không thấy nội dung thưởng; đạt thì hiện pháo giấy chúc mừng, hụt thì hiện mặt buồn động viên. Điện thoại phụ huynh xem được tiến độ. Cần cập nhật Worker (db:init + deploy).
 - Thẻ lý thuyết lớp 6–12 (tất cả các môn): thêm câu "Thử ngay" (trắc nghiệm 1 chạm, có giải thích) ngay trong thẻ, lấy từ câu hỏi khái niệm của bài.
 - Báo cáo cho phụ huynh (máy tính và điện thoại): thêm "Thời gian dùng app" gồm mở app, dùng thực và ngắt quãng (thu nhỏ, chuyển app khác, lâu không thao tác), tổng theo khoảng chọn và chi tiết từng ngày. Không dùng camera.
 - Lớp 6–10 (tất cả các môn): lý thuyết chia thành các thẻ có tiêu đề, gạch đầu dòng ngắn gọn.
