@@ -113,7 +113,7 @@ test('Tư duy & lập trình: 2 lộ trình đủ mở đầu + 8 bài, có th�
   const w = {};
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../renderer/tu-duy-content.js'), 'utf8'), { window: w });
   for (const t of ['k811', 'k1218']) {
-    for (const k of ['tongquan', 'bai1', 'bai2', 'bai3', 'bai4', 'bai5', 'bai6', 'bai7', 'bai8']) {
+    for (const k of ['tongquan', 'caidat', 'bai1', 'bai2', 'bai3', 'bai4', 'bai5', 'bai6', 'bai7', 'bai8']) {
       const L = w.TUDUY[t][k];
       assert.ok(L && L.title && L.html.includes('class="tsum"') && L.html.includes('tprac') && L.html.includes('class="tans"'), t + k);
     }
@@ -131,7 +131,7 @@ test('Tư duy & lập trình: nối vào app, 2 bài đầu miễn phí', () => 
   for (const x of ['tu-duy-content.js', 'tu-duy.js', 'id="tuduy-body"', 'id="open-tuduy"']) assert.ok(idx.includes(x), x);
   const app = fs.readFileSync(path.join(__dirname, '../renderer/app.js'), 'utf8');
   assert.ok(app.includes("'tuduy'") && app.includes('showTuDuy'));
-  assert.ok(fs.readFileSync(path.join(__dirname, '../renderer/tu-duy.js'), 'utf8').includes("FREE = ['tongquan', 'bai1']"));
+  assert.ok(fs.readFileSync(path.join(__dirname, '../renderer/tu-duy.js'), 'utf8').includes("FREE = ['tongquan', 'caidat', 'bai1']"));
 });
 
 test('Tư duy & lập trình: có trong catalog bán hàng, keygen và trang phụ huynh', () => {
@@ -139,4 +139,12 @@ test('Tư duy & lập trình: có trong catalog bán hàng, keygen và trang ph�
   assert.strictEqual(cat.byId['tu-duy-lap-trinh'].price, 1490000);
   assert.ok(fs.readFileSync(path.join(__dirname, '../keygen/index.html'), 'utf8').includes('value="tu-duy-lap-trinh"'));
   assert.ok(fs.readFileSync(path.join(__dirname, '../parent/courses.js'), 'utf8').includes("'tu-duy-lap-trinh'"));
+});
+
+test('Tư duy & lập trình: bài Cài đặt có hình minh họa và hướng dẫn đúng công cụ', () => {
+  const w = {};
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../renderer/tu-duy-content.js'), 'utf8'), { window: w });
+  const sc = w.TUDUY.k811.caidat.html, py = w.TUDUY.k1218.caidat.html;
+  assert.ok((sc.match(/<svg/g) || []).length >= 3 && sc.includes('scratch.mit.edu') && sc.includes('.sb3'));
+  assert.ok((py.match(/<svg/g) || []).length >= 4 && py.includes('python.org') && py.includes('Add python.exe to PATH') && py.includes('IDLE') && py.includes('F5'));
 });
