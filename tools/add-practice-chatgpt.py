@@ -94,5 +94,8 @@ if 'bộ dữ liệu mẫu cho các case' not in h:
     assert mark in h
     data['bai11']['html'] = h.replace(mark, B11 + mark, 1)
 
+import sys; sys.path.insert(0, str(ROOT / 'tools'))
+from summary_common import lesson as _summary
+if 'bai13' not in data: data['bai13'] = _summary('chatgpt')
 F.write_text(head + '\nwindow.AI_WORK_CHATGPT = ' + json.dumps(data, ensure_ascii=False, indent=1) + ';\n', encoding='utf8')
 print([k for k in P], 'bai11')
