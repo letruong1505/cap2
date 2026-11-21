@@ -1,6 +1,7 @@
-from lib import card, build
+from lib import card, build, use
 
 def run():
+    use('toan12')
     build('tap1/chuong-2/bai-6/vecto-trong-khong-gian',
       "Ba quy tắc cộng: {k ba điểm} AB + BC = AC, {k hình bình hành} AB + AD = AC, {k hình hộp} AB + AD + AA′ = AC′. Hiệu: OB − OA = AB. Tích vô hướng a·b = |a|·|b|·cos(a, b) là một {k số}, bằng 0 khi hai vectơ {k vuông góc}.",
       [

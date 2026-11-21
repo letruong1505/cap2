@@ -10,16 +10,43 @@
   "bookPage": 18,
   "theory": [
     {
-      "type": "text",
-      "content": "Thí nghiệm của Monod và Jacob (thập niên 1950) trên E. coli: nuôi vi khuẩn trong môi trường có và không có lactose cùng amino acid đánh dấu phóng xạ. Kết quả: ở lô không có lactose, lượng enzyme β-galactosidase, permease và transacetylase đánh dấu phóng xạ không đáng kể; ở lô có lactose, lượng ba enzyme tăng mạnh. Kết luận: lactose kích hoạt tế bào tổng hợp đồng thời cả ba enzyme; ba gene cấu trúc nằm liền nhau; đề xuất thuyết operon."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Thí nghiệm của Monod và Jacob (thập niên 1950) trên E. coli: nuôi vi khuẩn trong môi trường có và không có lactose cùng amino acid đánh dấu phóng xạ."
     },
     {
-      "type": "text",
-      "content": "Cấu trúc operon lac: vùng điều hoà gồm promoter (P, nơi RNA polymerase khởi động phiên mã) và operator (O, nơi protein ức chế liên kết); ba gene cấu trúc lacZ (β-galactosidase), lacY (permease), lacA (transacetylase). Gene điều hoà lacI quy định protein ức chế và không thuộc operon lac. Khi không có lactose: protein ức chế liên kết operator, RNA polymerase không liên kết promoter nên các gene cấu trúc không phiên mã. Khi có lactose: một lượng nhỏ lactose chuyển thành đồng phân, liên kết với protein ức chế làm đổi cấu hình, protein không liên kết operator, RNA polymerase phiên mã các gene cấu trúc (phiên mã đến đâu dịch mã đến đó vì vi khuẩn không có màng nhân, gene không phân mảnh)."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Thí nghiệm của Monod và Jacob (thập niên 1950) trên E. coli: nuôi vi khuẩn trong môi trường có và không có lactose cùng amino acid đánh dấu phóng xạ.",
+        "Kết quả: ở lô không có lactose, lượng enzyme β-galactosidase, permease và transacetylase đánh dấu phóng xạ không đáng kể;",
+        "Ở lô có lactose, lượng ba enzyme tăng mạnh.",
+        "Kết luận: lactose kích hoạt tế bào tổng hợp đồng thời cả ba enzyme; ba gene cấu trúc nằm liền nhau;",
+        "Đề xuất thuyết operon."
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Ý nghĩa điều hoà biểu hiện gene: tiết kiệm năng lượng (E. coli dùng tới 90% ATP để tổng hợp protein), giúp tế bào thích nghi môi trường (gene chống sốc nhiệt, kháng thể), và là cơ sở biệt hoá tế bào, phát triển cá thể ở sinh vật đa bào (cùng hệ gene nhưng đóng mở nhóm gene khác nhau); điều hoà sai gây dị dạng, ung thư (proto-oncogene thành oncogene). Ứng dụng: sản xuất thuốc ức chế sản phẩm gene gây bệnh (tamoxifen ức chế thụ thể ERα), nuôi cấy tế bào gốc, chữa lùn do thiếu hormone sinh trưởng, điều khiển ra hoa bằng chế độ chiếu sáng, xử lí hormone testosterone trứng cá rô phi để thu 100% cá đực. Di truyền biểu sinh: gắn nhóm CH₃ vào cytosine làm đổi biểu hiện gene mà không đổi trình tự nucleotide."
+      "type": "card",
+      "title": "Cấu trúc operon lac",
+      "points": [
+        "Vùng điều hoà gồm promoter (P, nơi RNA polymerase khởi động phiên mã) và operator (O, nơi protein ức chế liên kết); ba gene cấu trúc lacZ (β-galactosidase), lacY (permease), lacA (transacetylase).",
+        "Gene điều hoà lacI quy định protein ức chế và không thuộc operon lac.",
+        "Khi không có lactose: protein ức chế liên kết operator, RNA polymerase không liên kết promoter nên các gene cấu trúc không phiên mã.",
+        "Khi có lactose: một lượng nhỏ lactose chuyển thành đồng phân, liên kết với protein ức chế làm đổi cấu hình, protein không liên kết operator, RNA polymerase phiên mã các gene cấu trúc (phiên mã đến đâu dịch mã đến đó vì vi khuẩn không có màng nhân, gene không phân mảnh)."
+      ],
+      "n": 2
+    },
+    {
+      "type": "card",
+      "title": "Ý nghĩa điều hoà biểu hiện gene",
+      "points": [
+        "Tiết kiệm năng lượng (E. coli dùng tới 90% ATP để tổng hợp protein), giúp tế bào thích nghi môi trường (gene chống sốc nhiệt, kháng thể), và là cơ sở biệt hoá tế bào, phát triển cá thể ở sinh vật đa bào (cùng hệ gene nhưng đóng mở nhóm gene khác nhau);",
+        "Điều hoà sai gây dị dạng, ung thư (proto-oncogene thành oncogene).",
+        "Ứng dụng: sản xuất thuốc ức chế sản phẩm gene gây bệnh (tamoxifen ức chế thụ thể ERα), nuôi cấy tế bào gốc, chữa lùn do thiếu hormone sinh trưởng, điều khiển ra hoa bằng chế độ chiếu sáng, xử lí hormone testosterone trứng cá rô phi để thu 100% cá đực.",
+        "Di truyền biểu sinh: gắn nhóm CH₃ vào cytosine làm đổi biểu hiện gene mà không đổi trình tự nucleotide."
+      ],
+      "n": 3
     }
   ],
   "examples": [

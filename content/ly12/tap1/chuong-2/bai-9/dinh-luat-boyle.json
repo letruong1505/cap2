@@ -10,24 +10,54 @@
   "bookPage": 37,
   "theory": [
     {
-      "type": "text",
-      "content": "Một lượng khí xác định được đặc trưng bởi các thông số trạng thái: thể tích V, áp suất p và nhiệt độ T. Quá trình biến đổi trạng thái là sự chuyển từ trạng thái này sang trạng thái khác."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Định luật Boyle (đẳng nhiệt): T không đổi thì {k p·V = hằng số}, tức p₁V₁ = p₂V₂. Đồ thị p–V là nhánh hypebol; nhiệt độ cao hơn thì đường nằm xa gốc hơn."
     },
     {
-      "type": "text",
-      "content": "Quá trình đẳng nhiệt là quá trình biến đổi trạng thái của một khối lượng khí xác định khi nhiệt độ giữ không đổi."
+      "type": "card",
+      "title": "Thông số trạng thái",
+      "points": [
+        "Một lượng khí xác định được đặc trưng bởi ba thông số: thể tích {k V}, áp suất {k p}, nhiệt độ {k T}.",
+        "Quá trình biến đổi trạng thái là sự chuyển từ trạng thái này sang trạng thái khác."
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Định luật Boyle: khi nhiệt độ của một khối lượng khí xác định không đổi thì áp suất tỉ lệ nghịch với thể tích: pV = hằng số, hay p₁V₁ = p₂V₂."
+      "type": "card",
+      "title": "Quá trình đẳng nhiệt",
+      "text": "Biến đổi trạng thái của một khối lượng khí xác định khi {k nhiệt độ giữ không đổi}.",
+      "n": 2
     },
     {
-      "type": "formula",
-      "content": "p₁V₁ = p₂V₂"
+      "type": "card",
+      "title": "Định luật Boyle",
+      "text": "Nhiệt độ của một khối lượng khí xác định không đổi thì áp suất tỉ lệ nghịch với thể tích:",
+      "formulas": [
+        "{k p·V = hằng số}",
+        "{k p₁V₁ = p₂V₂}"
+      ],
+      "try": {
+        "q": "Khí 2 L ở áp suất 1 atm, nén đẳng nhiệt xuống 1 L. Áp suất lúc sau là:",
+        "options": [
+          "2 atm",
+          "0,5 atm",
+          "1 atm"
+        ],
+        "answer": 0,
+        "explain": "p₂ = p₁V₁/V₂ = 1·2/1 = 2 atm."
+      },
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Đồ thị biểu diễn định luật Boyle trong hệ tọa độ (p, V) là một nhánh của đường hypebol. Đường đẳng nhiệt ứng với nhiệt độ cao hơn nằm xa gốc tọa độ hơn."
+      "type": "card",
+      "title": "Đồ thị p–V",
+      "points": [
+        "Trong hệ toạ độ (p, V) là một nhánh của đường {k hypebol}."
+      ],
+      "wrong": "Đường đẳng nhiệt ứng với nhiệt độ cao hơn nằm gần gốc toạ độ hơn.",
+      "right": "Nhiệt độ cao hơn thì đường nằm {k xa gốc} toạ độ hơn.",
+      "n": 4
     },
     {
       "type": "figure",

@@ -10,8 +10,20 @@
   "bookPage": 91,
   "theory": [
     {
-      "type": "text",
-      "content": "Thí nghiệm tán xạ hạt alpha của Rutherford (1911): chùm hạt alpha bắn vào lá vàng rất mỏng. Phần lớn hạt đi thẳng, một số ít bị lệch hướng và rất ít hạt bật ngược lại. Kết quả này cho thấy nguyên tử có phần lớn là khoảng trống và có một hạt nhân rất nhỏ, mang điện tích dương, chiếm gần như toàn bộ khối lượng nguyên tử."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Hạt nhân gồm {k nucleon}: proton (+e) và neutron (không mang điện). Kí hiệu ᴬ_Z X: A là số khối, Z là số proton, {k N = A − Z}. Đồng vị: cùng Z, khác N. Bán kính R ≈ 1,2·10⁻¹⁵·A^(1/3) m."
+    },
+    {
+      "type": "card",
+      "title": "Thí nghiệm Rutherford (1911)",
+      "text": "Chùm hạt alpha bắn vào lá vàng rất mỏng:",
+      "points": [
+        "Phần lớn hạt đi thẳng; một số ít bị lệch; rất ít hạt bật ngược lại.",
+        "Nguyên tử có phần lớn là {k khoảng trống}, có một {k hạt nhân} rất nhỏ, mang điện dương, chiếm gần hết khối lượng.",
+        "Mô hình hành tinh nguyên tử: electron quay quanh hạt nhân như hành tinh quanh Mặt Trời."
+      ],
+      "n": 1
     },
     {
       "type": "figure",
@@ -19,28 +31,73 @@
       "caption": "Chùm hạt α bắn vào lá vàng: đa số đi thẳng, ít hạt bị lệch hoặc bật ngược."
     },
     {
-      "type": "text",
-      "content": "Từ đó Rutherford đề xuất mô hình hành tinh nguyên tử: các electron chuyển động quanh hạt nhân như các hành tinh quanh Mặt Trời."
+      "type": "card",
+      "title": "Nucleon",
+      "table": {
+        "head": [
+          "Hạt",
+          "Kí hiệu",
+          "Điện tích",
+          "Khối lượng"
+        ],
+        "rows": [
+          [
+            "Proton",
+            "p",
+            "+e",
+            "≈ 1,00728 amu"
+          ],
+          [
+            "Neutron",
+            "n",
+            "0",
+            "≈ 1,00866 amu"
+          ]
+        ]
+      },
+      "tip": "1 amu ≈ 1,66054·10⁻²⁷ kg. Proton và neutron có khối lượng xấp xỉ bằng nhau.",
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Hạt nhân được cấu tạo từ hai loại hạt gọi chung là nucleon: proton (mang điện tích +e, kí hiệu p) và neutron (không mang điện, kí hiệu n). Khối lượng proton và neutron xấp xỉ bằng nhau: m_p ≈ 1,00728 amu, m_n ≈ 1,00866 amu, với 1 amu ≈ 1,66054·10⁻²⁷ kg."
+      "type": "card",
+      "title": "Kí hiệu hạt nhân",
+      "formulas": [
+        "ᴬ_Z X",
+        "{k N = A − Z}"
+      ],
+      "points": [
+        "X: kí hiệu hoá học.",
+        "A: số khối (tổng số nucleon).",
+        "Z: số proton (số hiệu nguyên tử)."
+      ],
+      "try": {
+        "q": "Hạt nhân ²³⁵_92 U có số neutron là:",
+        "options": [
+          "143",
+          "92",
+          "235"
+        ],
+        "answer": 0,
+        "explain": "N = A − Z = 235 − 92 = 143."
+      },
+      "n": 3
     },
     {
-      "type": "formula",
-      "content": "Kí hiệu hạt nhân: ᴬ_Z X"
+      "type": "card",
+      "title": "Bán kính hạt nhân",
+      "formulas": [
+        "{k R = 1,2·10⁻¹⁵·A^(1/3) m}"
+      ],
+      "tip": "Hạt nhân rất nhỏ so với nguyên tử.",
+      "n": 4
     },
     {
-      "type": "text",
-      "content": "Trong đó X là kí hiệu hoá học, A là số khối (tổng số nucleon), Z là số proton (số hiệu nguyên tử). Số neutron là N = A − Z."
-    },
-    {
-      "type": "text",
-      "content": "Bán kính hạt nhân gần đúng: R = 1,2·10⁻¹⁵·A^(1/3) m. Hạt nhân có kích thước rất nhỏ so với nguyên tử."
-    },
-    {
-      "type": "text",
-      "content": "Đồng vị là các hạt nhân có cùng số proton Z nhưng khác số neutron N (khác số khối A). Đồng vị có thể bền hoặc phóng xạ."
+      "type": "card",
+      "title": "Đồng vị",
+      "text": "Các hạt nhân có {k cùng Z} nhưng {k khác N} (khác số khối A). Có thể bền hoặc phóng xạ.",
+      "wrong": "Đồng vị là các hạt nhân có cùng số khối A.",
+      "right": "Đồng vị cùng số proton Z, khác số neutron nên khác A.",
+      "n": 5
     },
     {
       "type": "method",

@@ -10,16 +10,66 @@
   "bookPage": 27,
   "theory": [
     {
-      "type": "formula",
-      "content": "Q = L·m"
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Nhiệt lượng làm hoá hơi: {k Q = L·m}, L là nhiệt hoá hơi riêng (J/kg). Khi sôi nhiệt độ không đổi. λ và L gọi là {k ẩn nhiệt riêng}. Ứng dụng: máy điều hoà, nồi hấp tiệt trùng."
     },
     {
-      "type": "text",
-      "content": "Nhiệt lượng cần cung cấp cho một lượng chất lỏng hoá hơi ở nhiệt độ không đổi tỉ lệ thuận với khối lượng. Hằng số tỉ lệ L, gọi là nhiệt hoá hơi riêng của chất lỏng, có đơn vị J/kg."
+      "type": "card",
+      "title": "Nhiệt lượng làm hoá hơi",
+      "formulas": [
+        "{k Q = L·m}"
+      ],
+      "points": [
+        "Nhiệt lượng cung cấp cho chất lỏng hoá hơi ở nhiệt độ không đổi tỉ lệ thuận với khối lượng.",
+        "L: nhiệt hoá hơi riêng, đơn vị J/kg."
+      ],
+      "try": {
+        "q": "Cần bao nhiêu nhiệt lượng để hoá hơi hoàn toàn 0,5 kg nước ở 100 °C? (L = 2,26·10⁶ J/kg)",
+        "options": [
+          "1,13·10⁶ J",
+          "2,26·10⁶ J",
+          "4,52·10⁶ J"
+        ],
+        "answer": 0,
+        "explain": "Q = 2,26·10⁶·0,5 = 1,13·10⁶ J."
+      },
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Nhiệt hoá hơi riêng của một chất lỏng ở một nhiệt độ xác định là nhiệt lượng cần để làm cho 1 kg chất lỏng đó hoá hơi hoàn toàn ở nhiệt độ ấy. Bảng giá trị ở nhiệt độ sôi dưới áp suất tiêu chuẩn: nước (100 °C) 2,26·10⁶ J/kg; rượu (78 °C) 8,57·10⁵ J/kg; thuỷ ngân (357 °C) 2,85·10⁵ J/kg; ether (34,5 °C) 0,40·10⁶ J/kg."
+      "type": "card",
+      "title": "Nhiệt hoá hơi riêng của một số chất",
+      "text": "Là nhiệt lượng làm 1 kg chất lỏng hoá hơi hoàn toàn ở một nhiệt độ xác định (bảng dưới: ở nhiệt độ sôi, áp suất tiêu chuẩn).",
+      "table": {
+        "head": [
+          "Chất",
+          "Nhiệt độ sôi",
+          "L (J/kg)"
+        ],
+        "rows": [
+          [
+            "Nước",
+            "100 °C",
+            "2,26·10⁶"
+          ],
+          [
+            "Rượu",
+            "78 °C",
+            "8,57·10⁵"
+          ],
+          [
+            "Thuỷ ngân",
+            "357 °C",
+            "2,85·10⁵"
+          ],
+          [
+            "Ether",
+            "34,5 °C",
+            "0,40·10⁶"
+          ]
+        ]
+      },
+      "n": 2
     },
     {
       "type": "figure",
@@ -27,12 +77,23 @@
       "caption": "Trong khi sôi, nhiệt độ giữ ở 100 °C; nhiệt cung cấp dùng để hoá hơi."
     },
     {
-      "type": "text",
-      "content": "Nhiệt hoá hơi riêng được ứng dụng trong các thiết bị làm lạnh như máy điều hoà, và trong nồi hấp tiệt trùng y học."
+      "type": "card",
+      "title": "Ẩn nhiệt riêng",
+      "points": [
+        "Nhiệt nóng chảy riêng và nhiệt hoá hơi riêng gọi chung là {k ẩn nhiệt riêng}.",
+        "Vì trong các quá trình này nhiệt độ không đổi dù vẫn truyền nhiệt."
+      ],
+      "tip": "Đang sôi: nhiệt độ giữ 100 °C (nước), nhiệt cung cấp dùng để hoá hơi.",
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Nhiệt nóng chảy riêng và nhiệt hoá hơi riêng còn được gọi là ẩn nhiệt riêng, vì trong các quá trình này nhiệt độ không thay đổi dù vẫn truyền nhiệt."
+      "type": "card",
+      "title": "Ứng dụng",
+      "points": [
+        "Thiết bị làm lạnh như máy điều hoà.",
+        "Nồi hấp tiệt trùng trong y học."
+      ],
+      "n": 4
     },
     {
       "type": "method",

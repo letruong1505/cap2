@@ -10,16 +10,71 @@
   "bookPage": 6,
   "theory": [
     {
-      "type": "text",
-      "content": "Mô hình động học phân tử về cấu tạo chất gồm ba nội dung: các chất được cấu tạo từ các hạt riêng biệt là phân tử; các phân tử chuyển động không ngừng, nhiệt độ càng cao thì tốc độ chuyển động càng lớn; giữa các phân tử có lực hút và lực đẩy, gọi chung là lực liên kết phân tử."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Chất cấu tạo từ {k phân tử} chuyển động hỗn loạn không ngừng, giữa chúng có {k lực liên kết}. Rắn có thể tích và hình dạng riêng; lỏng chỉ có thể tích riêng; khí không có cả hai. Sáu quá trình chuyển thể: nóng chảy, đông đặc, hoá hơi, ngưng tụ, thăng hoa, kết tinh."
     },
     {
-      "type": "text",
-      "content": "Chuyển động Brown là chuyển động hỗn loạn, không ngừng của các hạt rất nhỏ (như hạt phấn hoa) do va chạm với các phân tử chất lỏng hoặc chất khí. Đây là bằng chứng cho thấy các phân tử luôn chuyển động hỗn loạn."
+      "type": "card",
+      "title": "Mô hình động học phân tử",
+      "points": [
+        "Chất được cấu tạo từ các hạt riêng biệt là {k phân tử}.",
+        "Phân tử chuyển động {k không ngừng}; nhiệt độ càng cao thì tốc độ chuyển động càng lớn.",
+        "Giữa các phân tử có lực hút và lực đẩy, gọi chung là {k lực liên kết phân tử}."
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Khoảng cách giữa các phân tử càng lớn thì lực liên kết càng yếu. Chất khí có khoảng cách lớn, lực liên kết yếu nên không có hình dạng và thể tích riêng. Chất lỏng có thể tích riêng nhưng không có hình dạng riêng. Chất rắn có cả thể tích và hình dạng riêng, rất khó nén."
+      "type": "card",
+      "title": "Chuyển động Brown",
+      "text": "Chuyển động hỗn loạn, không ngừng của các hạt rất nhỏ (như hạt phấn hoa) do va chạm với các phân tử chất lỏng hoặc chất khí.",
+      "tip": "Brown là bằng chứng cho thấy phân tử luôn chuyển động hỗn loạn.",
+      "try": {
+        "q": "Chuyển động Brown là bằng chứng cho thấy:",
+        "options": [
+          "Phân tử chuyển động hỗn loạn không ngừng",
+          "Phân tử đứng yên",
+          "Hạt phấn hoa tự chuyển động"
+        ],
+        "answer": 0,
+        "explain": "Hạt nhỏ bị các phân tử chất lỏng va chạm không đều từ mọi phía nên chuyển động hỗn loạn."
+      },
+      "n": 2
+    },
+    {
+      "type": "card",
+      "title": "Ba thể của chất",
+      "text": "Khoảng cách giữa các phân tử càng lớn thì lực liên kết càng yếu.",
+      "table": {
+        "head": [
+          "Thể",
+          "Khoảng cách, lực liên kết",
+          "Thể tích riêng",
+          "Hình dạng riêng"
+        ],
+        "rows": [
+          [
+            "Rắn",
+            "Gần nhau, lực mạnh",
+            "{k Có}",
+            "{k Có}"
+          ],
+          [
+            "Lỏng",
+            "Gần nhau, lực yếu hơn rắn",
+            "{k Có}",
+            "Không"
+          ],
+          [
+            "Khí",
+            "Xa nhau, lực yếu",
+            "Không",
+            "Không"
+          ]
+        ]
+      },
+      "tip": "Rắn rất khó nén; khí dễ nén nhất.",
+      "n": 3
     },
     {
       "type": "figure",
@@ -27,8 +82,59 @@
       "caption": "Ba thể của chất: rắn có trật tự, lỏng xếp gần nhau nhưng hỗn loạn, khí thưa và chuyển động tự do."
     },
     {
-      "type": "text",
-      "content": "Các chất có thể chuyển thể: nóng chảy (rắn thành lỏng), đông đặc (lỏng thành rắn), hoá hơi (lỏng thành hơi), ngưng tụ (hơi thành lỏng), thăng hoa (rắn thành khí) và kết tinh (khí thành rắn)."
+      "type": "card",
+      "title": "Sáu quá trình chuyển thể",
+      "table": {
+        "head": [
+          "Quá trình",
+          "Chuyển từ",
+          "Nhiệt"
+        ],
+        "rows": [
+          [
+            "Nóng chảy",
+            "Rắn → lỏng",
+            "Thu nhiệt"
+          ],
+          [
+            "Đông đặc",
+            "Lỏng → rắn",
+            "Toả nhiệt"
+          ],
+          [
+            "Hoá hơi",
+            "Lỏng → hơi",
+            "Thu nhiệt"
+          ],
+          [
+            "Ngưng tụ",
+            "Hơi → lỏng",
+            "Toả nhiệt"
+          ],
+          [
+            "Thăng hoa",
+            "Rắn → khí",
+            "Thu nhiệt"
+          ],
+          [
+            "Kết tinh",
+            "Khí → rắn",
+            "Toả nhiệt"
+          ]
+        ]
+      },
+      "tip": "Đi lên mức năng lượng cao hơn (rắn → lỏng → khí) thì thu nhiệt; ngược lại thì toả nhiệt.",
+      "try": {
+        "q": "Quá trình chuyển từ lỏng sang hơi gọi là:",
+        "options": [
+          "Hoá hơi",
+          "Ngưng tụ",
+          "Thăng hoa"
+        ],
+        "answer": 0,
+        "explain": "Lỏng thành hơi là hoá hơi; hơi thành lỏng mới là ngưng tụ."
+      },
+      "n": 4
     },
     {
       "type": "figure",
@@ -36,12 +142,64 @@
       "caption": "Các quá trình chuyển thể: đỏ là thu nhiệt, xanh là toả nhiệt."
     },
     {
-      "type": "text",
-      "content": "Hoá hơi có hai hình thức: bay hơi xảy ra ở mặt thoáng của chất lỏng ở mọi nhiệt độ; sôi xảy ra đồng thời ở bên trong và trên mặt thoáng, ở nhiệt độ sôi xác định dưới một áp suất cho trước."
+      "type": "card",
+      "title": "Bay hơi và sôi",
+      "table": {
+        "head": [
+          "",
+          "Bay hơi",
+          "Sôi"
+        ],
+        "rows": [
+          [
+            "Xảy ra ở",
+            "Mặt thoáng của chất lỏng",
+            "Bên trong và trên mặt thoáng"
+          ],
+          [
+            "Nhiệt độ",
+            "Mọi nhiệt độ",
+            "Nhiệt độ sôi xác định (dưới một áp suất cho trước)"
+          ]
+        ]
+      },
+      "wrong": "Chất lỏng chỉ hoá hơi khi sôi.",
+      "right": "Bay hơi xảy ra ở {k mọi nhiệt độ}; sôi chỉ xảy ra ở nhiệt độ sôi.",
+      "n": 5
     },
     {
-      "type": "text",
-      "content": "Chất rắn kết tinh có nhiệt độ nóng chảy xác định và các hạt sắp xếp theo trật tự hình học tuần hoàn thành mạng tinh thể. Chất rắn vô định hình không có nhiệt độ nóng chảy xác định."
+      "type": "card",
+      "title": "Chất rắn kết tinh và vô định hình",
+      "table": {
+        "head": [
+          "Loại",
+          "Cấu trúc",
+          "Nhiệt độ nóng chảy"
+        ],
+        "rows": [
+          [
+            "Kết tinh",
+            "Các hạt sắp xếp theo trật tự hình học tuần hoàn (mạng tinh thể)",
+            "{k Xác định}"
+          ],
+          [
+            "Vô định hình",
+            "Không có trật tự tuần hoàn",
+            "Không xác định"
+          ]
+        ]
+      },
+      "try": {
+        "q": "Chất rắn nào không có nhiệt độ nóng chảy xác định?",
+        "options": [
+          "Chất rắn vô định hình",
+          "Chất rắn kết tinh",
+          "Cả hai loại"
+        ],
+        "answer": 0,
+        "explain": "Chất rắn vô định hình mềm dần khi nóng lên nên không có nhiệt độ nóng chảy xác định."
+      },
+      "n": 6
     }
   ],
   "examples": [

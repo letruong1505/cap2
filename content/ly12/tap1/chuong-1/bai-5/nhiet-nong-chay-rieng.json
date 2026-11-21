@@ -10,20 +10,77 @@
   "bookPage": 24,
   "theory": [
     {
-      "type": "formula",
-      "content": "Q = λ·m"
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Nhiệt lượng làm nóng chảy hoàn toàn: {k Q = λ·m}, λ là nhiệt nóng chảy riêng (J/kg). Khi nóng chảy {k nhiệt độ không đổi}: nhiệt nhận vào làm tăng thế năng phân tử, không làm tăng động năng."
     },
     {
-      "type": "text",
-      "content": "Nhiệt lượng cần truyền cho vật khi vật bắt đầu nóng chảy đến khi nóng chảy hoàn toàn tỉ lệ thuận với khối lượng vật. Hằng số tỉ lệ λ phụ thuộc vào chất làm vật, gọi là nhiệt nóng chảy riêng, đơn vị J/kg."
+      "type": "card",
+      "title": "Nhiệt lượng làm nóng chảy",
+      "formulas": [
+        "{k Q = λ·m}"
+      ],
+      "points": [
+        "Q là nhiệt lượng từ lúc vật bắt đầu nóng chảy đến khi nóng chảy hoàn toàn.",
+        "λ phụ thuộc chất, gọi là nhiệt nóng chảy riêng, đơn vị J/kg."
+      ],
+      "try": {
+        "q": "Cần bao nhiêu nhiệt lượng để làm nóng chảy hoàn toàn 2 kg nước đá ở 0 °C? (λ = 3,34·10⁵ J/kg)",
+        "options": [
+          "6,68·10⁵ J",
+          "3,34·10⁵ J",
+          "1,67·10⁵ J"
+        ],
+        "answer": 0,
+        "explain": "Q = 3,34·10⁵·2 = 6,68·10⁵ J."
+      },
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Nhiệt nóng chảy riêng của một chất là nhiệt lượng cần để làm cho 1 kg chất đó nóng chảy hoàn toàn ở nhiệt độ nóng chảy. Một số giá trị: nước đá (0 °C) 3,34·10⁵ J/kg; sắt (1535 °C) 2,77·10⁵ J/kg; đồng (1084 °C) 1,80·10⁵ J/kg; chì (327 °C) 0,25·10⁵ J/kg."
+      "type": "card",
+      "title": "Nhiệt nóng chảy riêng của một số chất",
+      "text": "Là nhiệt lượng làm 1 kg chất nóng chảy hoàn toàn ở nhiệt độ nóng chảy.",
+      "table": {
+        "head": [
+          "Chất",
+          "Nhiệt độ nóng chảy",
+          "λ (J/kg)"
+        ],
+        "rows": [
+          [
+            "Nước đá",
+            "0 °C",
+            "3,34·10⁵"
+          ],
+          [
+            "Sắt",
+            "1535 °C",
+            "2,77·10⁵"
+          ],
+          [
+            "Đồng",
+            "1084 °C",
+            "1,80·10⁵"
+          ],
+          [
+            "Chì",
+            "327 °C",
+            "0,25·10⁵"
+          ]
+        ]
+      },
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Trong quá trình nóng chảy, nhiệt độ không đổi nhưng vật vẫn nhận nhiệt. Phần nhiệt này dùng để phá vỡ liên kết giữa các phân tử, làm tăng thế năng phân tử chứ không làm tăng động năng trung bình."
+      "type": "card",
+      "title": "Trong lúc nóng chảy",
+      "points": [
+        "Nhiệt độ {k không đổi} nhưng vật vẫn nhận nhiệt.",
+        "Phần nhiệt này phá vỡ liên kết giữa các phân tử, làm tăng {k thế năng} phân tử, không làm tăng động năng trung bình."
+      ],
+      "wrong": "Vật nhận nhiệt thì nhiệt độ luôn tăng.",
+      "right": "Khi đang nóng chảy, vật nhận nhiệt nhưng nhiệt độ giữ nguyên (đoạn nằm ngang trên đồ thị).",
+      "n": 3
     },
     {
       "type": "figure",
@@ -31,8 +88,14 @@
       "caption": "Trong khi nóng chảy, nhiệt độ giữ nguyên ở 0 °C dù vật vẫn nhận nhiệt."
     },
     {
-      "type": "text",
-      "content": "Nhiệt nóng chảy riêng được dùng trong đúc kim loại, tách kim loại bằng nấu chảy và hàn bằng thiếc."
+      "type": "card",
+      "title": "Ứng dụng",
+      "points": [
+        "Đúc kim loại.",
+        "Tách kim loại bằng nấu chảy.",
+        "Hàn bằng thiếc."
+      ],
+      "n": 4
     },
     {
       "type": "method",

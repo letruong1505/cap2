@@ -10,24 +10,57 @@
   "bookPage": 41,
   "theory": [
     {
-      "type": "text",
-      "content": "Quá trình đẳng áp là quá trình biến đổi trạng thái của một khối lượng khí xác định khi áp suất giữ không đổi."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Định luật Charles (đẳng áp): p không đổi thì {k V/T = hằng số}, V₁/T₁ = V₂/T₂, với T là nhiệt độ {k Kelvin}. Đồ thị V–T là đường thẳng qua gốc toạ độ; −273 °C là độ không tuyệt đối, không thể đạt tới."
     },
     {
-      "type": "text",
-      "content": "Charles nhận thấy, khi áp suất không đổi, thể tích của khí tăng thêm V₀/273 cho mỗi 1 °C tăng nhiệt độ. Vì vậy V = V₀(1 + t/273) với t là nhiệt độ Celsius."
+      "type": "card",
+      "title": "Quá trình đẳng áp",
+      "text": "Biến đổi trạng thái của một khối lượng khí xác định khi {k áp suất giữ không đổi}.",
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Định luật Charles: khi áp suất của một khối lượng khí xác định không đổi thì thể tích của khí tỉ lệ thuận với nhiệt độ tuyệt đối: V/T = hằng số, hay V₁/T₁ = V₂/T₂."
+      "type": "card",
+      "title": "Thí nghiệm của Charles",
+      "points": [
+        "Áp suất không đổi: thể tích khí tăng thêm V₀/273 cho mỗi 1 °C tăng nhiệt độ.",
+        "Do đó V = V₀(1 + t/273), với t là nhiệt độ Celsius."
+      ],
+      "n": 2
     },
     {
-      "type": "formula",
-      "content": "V₁/T₁ = V₂/T₂"
+      "type": "card",
+      "title": "Định luật Charles",
+      "text": "Áp suất không đổi thì thể tích khí tỉ lệ thuận với nhiệt độ tuyệt đối:",
+      "formulas": [
+        "{k V/T = hằng số}",
+        "{k V₁/T₁ = V₂/T₂}"
+      ],
+      "wrong": "Thay nhiệt độ Celsius trực tiếp vào V₁/T₁ = V₂/T₂.",
+      "right": "T phải là nhiệt độ {k Kelvin}: T = t + 273.",
+      "try": {
+        "q": "Khí 3 L ở 300 K, nung đẳng áp tới 600 K. Thể tích lúc sau:",
+        "options": [
+          "6 L",
+          "1,5 L",
+          "3 L"
+        ],
+        "answer": 0,
+        "explain": "V₂ = V₁·T₂/T₁ = 3·600/300 = 6 L."
+      },
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Đồ thị V–T của quá trình đẳng áp là đường thẳng đi qua gốc tọa độ khi dùng nhiệt độ Kelvin. Kéo dài đường biểu diễn theo thang Celsius sẽ cắt trục nhiệt độ tại −273 °C, là độ không tuyệt đối; thể tích không thể bằng 0 nên không thể đạt tới nhiệt độ đó."
+      "type": "card",
+      "title": "Đồ thị V–T",
+      "points": [
+        "Dùng nhiệt độ Kelvin: đường thẳng {k đi qua gốc} toạ độ.",
+        "Kéo dài theo thang Celsius: cắt trục nhiệt độ tại −273 °C, là độ không tuyệt đối.",
+        "Thể tích không thể bằng 0 nên không thể đạt tới nhiệt độ đó.",
+        "Áp suất càng lớn thì đường đẳng áp càng thoải."
+      ],
+      "n": 4
     },
     {
       "type": "figure",

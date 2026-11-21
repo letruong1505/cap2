@@ -6,6 +6,12 @@ ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..')
 BASE = os.path.join(ROOT, 'content', 'toan12')
 
 
+def use(subject):
+    """Đổi môn/lớp đang dựng (mặc định toan12), ví dụ use('ly12')."""
+    global BASE
+    BASE = os.path.join(ROOT, 'content', subject)
+
+
 def card(title, text=None, formulas=None, points=None, table=None, tip=None, pit=None, try_=None):
     c = {'type': 'card', 'title': title}
     if text: c['text'] = text

@@ -10,16 +10,75 @@
   "bookPage": 20,
   "theory": [
     {
-      "type": "formula",
-      "content": "Q = m·c·ΔT"
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Nhiệt lượng làm nóng: {k Q = m·c·ΔT}, c là nhiệt dung riêng, đơn vị J/(kg·K). c càng lớn thì vật nóng lên càng {k chậm}. Nước có c lớn (4200) nên dùng làm chất tải nhiệt, làm mát."
     },
     {
-      "type": "text",
-      "content": "Nhiệt lượng cần cung cấp cho vật để làm nóng vật tỉ lệ thuận với khối lượng m và độ tăng nhiệt độ ΔT. Hằng số tỉ lệ c phụ thuộc vào chất làm vật, gọi là nhiệt dung riêng, có đơn vị J/(kg·K)."
+      "type": "card",
+      "title": "Nhiệt lượng làm nóng vật",
+      "formulas": [
+        "{k Q = m·c·ΔT}"
+      ],
+      "points": [
+        "Q tỉ lệ thuận với khối lượng m và độ tăng nhiệt độ ΔT.",
+        "c phụ thuộc chất làm vật: nhiệt dung riêng, đơn vị J/(kg·K)."
+      ],
+      "try": {
+        "q": "Cần bao nhiêu nhiệt lượng để làm nóng 2 kg nước thêm 10 °C? (c = 4200 J/(kg·K))",
+        "options": [
+          "84 000 J",
+          "8 400 J",
+          "42 000 J"
+        ],
+        "answer": 0,
+        "explain": "Q = 2·4200·10 = 84 000 J."
+      },
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Nhiệt dung riêng của một chất là nhiệt lượng cần truyền cho 1 kg chất đó để nhiệt độ của nó tăng thêm 1 °C (hoặc 1 K). Một số giá trị gần đúng: nước 4200, nước đá 2100, đất 800, sắt 440, đồng 380, thuỷ ngân 140, chì 130 (đơn vị J/(kg·K))."
+      "type": "card",
+      "title": "Nhiệt dung riêng của một chất",
+      "text": "Là nhiệt lượng cần truyền cho 1 kg chất đó để nhiệt độ tăng thêm 1 °C (hoặc 1 K).",
+      "table": {
+        "head": [
+          "Chất",
+          "c (J/(kg·K))"
+        ],
+        "rows": [
+          [
+            "Nước",
+            "4200"
+          ],
+          [
+            "Nước đá",
+            "2100"
+          ],
+          [
+            "Đất",
+            "800"
+          ],
+          [
+            "Sắt",
+            "440"
+          ],
+          [
+            "Đồng",
+            "380"
+          ],
+          [
+            "Thuỷ ngân",
+            "140"
+          ],
+          [
+            "Chì",
+            "130"
+          ]
+        ]
+      },
+      "wrong": "Chất có c lớn thì nóng lên nhanh.",
+      "right": "Chất có c lớn cần nhiều nhiệt hơn để tăng cùng độ nhiệt nên nóng lên {k chậm hơn}.",
+      "n": 2
     },
     {
       "type": "figure",
@@ -27,12 +86,25 @@
       "caption": "Chất có c càng lớn thì nóng lên càng chậm khi nhận cùng một nhiệt lượng."
     },
     {
-      "type": "text",
-      "content": "Nước có nhiệt dung riêng lớn nên hấp thụ nhiều nhiệt mà nhiệt độ tăng ít, nên thường được dùng làm chất tải nhiệt trong hệ thống làm mát. Ban ngày đất nóng nhanh hơn nước biển, không khí trên đất bốc lên và gió thổi từ biển vào đất liền."
+      "type": "card",
+      "title": "Ứng dụng của nước",
+      "points": [
+        "Nước có c lớn, hấp thụ nhiều nhiệt mà nhiệt độ tăng ít, nên dùng làm chất tải nhiệt trong hệ thống làm mát.",
+        "Ban ngày đất nóng nhanh hơn nước biển: không khí trên đất bốc lên, gió thổi từ biển vào đất liền."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Để đo nhiệt dung riêng của nước, cần đo khối lượng nước m, độ tăng nhiệt độ Δt và nhiệt lượng Q do dòng điện qua điện trở toả ra trong thời gian đun, Q = P·τ; từ đó c = Q/(m·Δt)."
+      "type": "card",
+      "title": "Đo nhiệt dung riêng của nước",
+      "formulas": [
+        "Q = P·τ",
+        "{k c = Q / (m·Δt)}"
+      ],
+      "points": [
+        "Đo khối lượng nước m, độ tăng nhiệt độ Δt và nhiệt lượng Q do dòng điện qua điện trở toả ra trong thời gian đun τ."
+      ],
+      "n": 4
     },
     {
       "type": "method",

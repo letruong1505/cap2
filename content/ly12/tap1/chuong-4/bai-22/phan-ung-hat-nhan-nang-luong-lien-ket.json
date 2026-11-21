@@ -10,28 +10,62 @@
   "bookPage": 96,
   "theory": [
     {
-      "type": "text",
-      "content": "Phản ứng hạt nhân là quá trình biến đổi hạt nhân này thành hạt nhân khác. Trong phản ứng hạt nhân, số khối A và điện tích được bảo toàn: tổng số khối và tổng điện tích trước phản ứng bằng sau phản ứng."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Phản ứng hạt nhân bảo toàn {k số khối A} và {k điện tích Z}. Năng lượng liên kết {k E_lk = Δm·c²}; E_lk/A càng lớn thì hạt nhân càng bền. Phân hạch: hạt nhân nặng vỡ thành hai hạt nhẹ (~200 MeV). Tổng hợp: hạt nhân nhẹ hợp lại, cần nhiệt độ rất cao."
     },
     {
-      "type": "formula",
-      "content": "Bảo toàn số khối: ΣA trước = ΣA sau;  Bảo toàn điện tích: ΣZ trước = ΣZ sau"
+      "type": "card",
+      "title": "Phản ứng hạt nhân",
+      "text": "Quá trình biến đổi hạt nhân này thành hạt nhân khác.",
+      "formulas": [
+        "{k ΣA trước = ΣA sau}",
+        "{k ΣZ trước = ΣZ sau}"
+      ],
+      "try": {
+        "q": "Trong ²³⁸_92 U → ²³⁴_90 Th + X, hạt X là:",
+        "options": [
+          "Hạt alpha ⁴₂He",
+          "Electron",
+          "Neutron"
+        ],
+        "answer": 0,
+        "explain": "Bảo toàn A: 238 − 234 = 4; bảo toàn Z: 92 − 90 = 2 nên X là ⁴₂He."
+      },
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Phản ứng hạt nhân tự phát là sự phân rã của một hạt nhân không bền thành các hạt nhân mới, ví dụ phân rã alpha của ²³⁸₉₂U: ²³⁸₉₂U → ²³⁴₉₀Th + ⁴₂He."
+      "type": "card",
+      "title": "Phản ứng tự phát và kích thích",
+      "points": [
+        "{k Tự phát}: hạt nhân không bền phân rã thành hạt nhân mới (ví dụ phân rã alpha của ²³⁸₉₂U).",
+        "{k Kích thích}: hạt nhân tương tác với hạt khác (alpha, neutron...) tạo hạt nhân mới, như phân hạch và tổng hợp hạt nhân."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Phản ứng hạt nhân kích thích là quá trình các hạt nhân tương tác với hạt khác (hạt alpha, neutron,…) tạo ra hạt nhân mới, ví dụ phản ứng phân hạch và tổng hợp hạt nhân."
+      "type": "card",
+      "title": "Năng lượng liên kết",
+      "text": "Năng lượng tối thiểu để tách toàn bộ nucleon ra khỏi hạt nhân.",
+      "formulas": [
+        "Δm = Z·m_p + (A − Z)·m_n − m_hn",
+        "{k E_lk = Δm·c²}"
+      ],
+      "points": [
+        "Năng lượng liên kết riêng E_lk/A càng {k lớn} thì hạt nhân càng bền vững."
+      ],
+      "wrong": "E_lk càng lớn thì hạt nhân càng bền.",
+      "right": "Độ bền do năng lượng liên kết {k riêng} E_lk/A quyết định, không phải E_lk.",
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Năng lượng liên kết E_lk của hạt nhân là năng lượng tối thiểu để tách toàn bộ nucleon ra khỏi hạt nhân. Độ hụt khối Δm = [Z·m_p + (A − Z)·m_n − m_hn]. E_lk = Δm·c². Năng lượng liên kết riêng E_lk/A càng lớn thì hạt nhân càng bền vững."
-    },
-    {
-      "type": "text",
-      "content": "Phản ứng phân hạch là phản ứng trong đó một hạt nhân nặng (như ²³⁵U) hấp thụ neutron và vỡ thành hai hạt nhân nhẹ hơn, đồng thời giải phóng vài neutron và toả ra năng lượng khoảng 200 MeV cho mỗi phân hạch."
+      "type": "card",
+      "title": "Phản ứng phân hạch",
+      "points": [
+        "Hạt nhân nặng (như ²³⁵U) hấp thụ neutron, vỡ thành hai hạt nhân nhẹ hơn.",
+        "Giải phóng vài neutron và toả khoảng {k 200 MeV} mỗi phân hạch."
+      ],
+      "n": 4
     },
     {
       "type": "figure",
@@ -39,8 +73,13 @@
       "caption": "Neutron làm vỡ hạt nhân U-235 thành hai mảnh và giải phóng vài neutron."
     },
     {
-      "type": "text",
-      "content": "Phản ứng tổng hợp hạt nhân là phản ứng trong đó hai hay nhiều hạt nhân nhẹ hợp lại thành hạt nhân nặng hơn. Phản ứng này cần nhiệt độ rất cao (khoảng 10⁷ K trở lên) để thắng lực đẩy tĩnh điện, nên còn gọi là phản ứng nhiệt hạch."
+      "type": "card",
+      "title": "Phản ứng tổng hợp hạt nhân",
+      "points": [
+        "Hai hay nhiều hạt nhân nhẹ hợp lại thành hạt nhân nặng hơn.",
+        "Cần nhiệt độ rất cao (khoảng 10⁷ K trở lên) để thắng lực đẩy tĩnh điện, nên gọi là phản ứng {k nhiệt hạch}."
+      ],
+      "n": 5
     },
     {
       "type": "method",

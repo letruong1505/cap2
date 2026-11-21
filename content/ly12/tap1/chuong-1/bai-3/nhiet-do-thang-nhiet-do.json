@@ -10,33 +10,82 @@
   "bookPage": 15,
   "theory": [
     {
-      "type": "text",
-      "content": "Nhiệt độ cho biết trạng thái cân bằng nhiệt của các vật tiếp xúc nhau và chiều truyền nhiệt năng. Khi hai vật có nhiệt độ khác nhau tiếp xúc, nhiệt năng truyền từ vật có nhiệt độ cao sang vật có nhiệt độ thấp. Khi nhiệt độ bằng nhau, hai vật ở trạng thái cân bằng nhiệt."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Nhiệt truyền từ vật nóng sang vật lạnh; bằng nhau là cân bằng nhiệt. Đổi: {k T(K) = t(°C) + 273} (chính xác 273,15); {k t(°F) = 32 + 1,8·t(°C)}. Nhiệt độ đặc trưng cho động năng trung bình của phân tử."
     },
     {
-      "type": "text",
-      "content": "Thang Celsius có hai mốc: 0 °C là nhiệt độ đóng băng của nước tinh khiết và 100 °C là nhiệt độ sôi của nước tinh khiết, ở áp suất tiêu chuẩn."
+      "type": "card",
+      "title": "Nhiệt độ và cân bằng nhiệt",
+      "points": [
+        "Hai vật khác nhiệt độ tiếp xúc: nhiệt năng truyền từ vật có nhiệt độ {k cao} sang vật có nhiệt độ {k thấp}.",
+        "Khi nhiệt độ bằng nhau, hai vật ở trạng thái {k cân bằng nhiệt}."
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Thang Kelvin có mốc 0 K là độ không tuyệt đối, tương ứng −273,15 °C; mốc còn lại là nhiệt độ điểm ba của nước, 273,16 K. Mỗi độ chia trong thang Kelvin có độ lớn bằng một độ chia trong thang Celsius."
+      "type": "card",
+      "title": "Thang Celsius",
+      "points": [
+        "0 °C: nhiệt độ đóng băng của nước tinh khiết.",
+        "100 °C: nhiệt độ sôi của nước tinh khiết.",
+        "Cả hai mốc ở áp suất tiêu chuẩn."
+      ],
+      "n": 2
     },
     {
-      "type": "formula",
-      "content": "T(K) = t(°C) + 273,15  (làm tròn: T = t + 273)"
-    },
-    {
-      "type": "text",
-      "content": "Nhiệt độ đặc trưng cho động năng trung bình của chuyển động nhiệt của các phân tử: vật có nhiệt độ càng cao thì động năng trung bình của các phân tử càng lớn."
-    },
-    {
-      "type": "text",
-      "content": "Nhiệt kế được chế tạo dựa trên tính chất vật lí phụ thuộc nhiệt độ, như sự nở vì nhiệt của chất lỏng hoặc kim loại. Thang Fahrenheit dùng công thức t(°F) = 32 + 1,8·t(°C)."
+      "type": "card",
+      "title": "Thang Kelvin",
+      "points": [
+        "0 K là {k độ không tuyệt đối}, tương ứng −273,15 °C.",
+        "Mốc còn lại: nhiệt độ điểm ba của nước, 273,16 K.",
+        "Một độ chia trong thang Kelvin bằng một độ chia trong thang Celsius."
+      ],
+      "n": 3
     },
     {
       "type": "figure",
       "figure": "figures/c-ly12-b3-thang-nhiet-do.svg",
       "caption": "So sánh các mốc nhiệt độ ở ba thang đo; 0 K tương ứng −273,15 °C."
+    },
+    {
+      "type": "card",
+      "title": "Đổi giữa các thang",
+      "formulas": [
+        "{k T(K) = t(°C) + 273,15}    (làm tròn: T = t + 273)",
+        "{k t(°F) = 32 + 1,8·t(°C)}"
+      ],
+      "tip": "Hiệu nhiệt độ: ΔT (K) = Δt (°C), vì độ chia hai thang bằng nhau.",
+      "try": {
+        "q": "27 °C bằng bao nhiêu kelvin (làm tròn T = t + 273)?",
+        "options": [
+          "300 K",
+          "246 K",
+          "27 K"
+        ],
+        "answer": 0,
+        "explain": "T = 27 + 273 = 300 K."
+      },
+      "n": 4
+    },
+    {
+      "type": "card",
+      "title": "Nhiệt độ và nhiệt kế",
+      "points": [
+        "Nhiệt độ đặc trưng cho {k động năng trung bình} của chuyển động nhiệt của phân tử: nhiệt độ càng cao thì động năng trung bình càng lớn.",
+        "Nhiệt kế dựa trên tính chất vật lí phụ thuộc nhiệt độ, như sự nở vì nhiệt của chất lỏng hoặc kim loại."
+      ],
+      "try": {
+        "q": "100 °C bằng bao nhiêu độ Fahrenheit?",
+        "options": [
+          "212 °F",
+          "132 °F",
+          "180 °F"
+        ],
+        "answer": 0,
+        "explain": "t(°F) = 32 + 1,8·100 = 212 °F."
+      },
+      "n": 5
     }
   ],
   "examples": [

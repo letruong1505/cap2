@@ -10,8 +10,57 @@
   "bookPage": 119,
   "theory": [
     {
-      "type": "text",
-      "content": "Phần vật lí hạt nhân gồm bốn nội dung: cấu trúc hạt nhân, phản ứng hạt nhân, phóng xạ và ứng dụng công nghiệp hạt nhân. Khi giải bài tập định lượng, cần chọn đúng công thức theo từng nội dung: số khối và điện tích khi bảo toàn trong phản ứng, N = N₀·2^(−t/T) và H = λN khi xét phóng xạ."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Bốn nội dung: cấu trúc hạt nhân, phản ứng hạt nhân, phóng xạ, công nghiệp hạt nhân. Chọn công thức: bảo toàn {k A, Z} khi viết phản ứng; {k N = N₀·2^(−t/T)} và {k H = λN} khi xét phóng xạ."
+    },
+    {
+      "type": "card",
+      "title": "Chọn công thức theo nội dung",
+      "table": {
+        "head": [
+          "Nội dung",
+          "Công thức"
+        ],
+        "rows": [
+          [
+            "Cấu trúc hạt nhân",
+            "N = A − Z"
+          ],
+          [
+            "Phản ứng hạt nhân",
+            "ΣA trước = ΣA sau; ΣZ trước = ΣZ sau"
+          ],
+          [
+            "Năng lượng liên kết",
+            "E_lk = Δm·c²"
+          ],
+          [
+            "Phóng xạ",
+            "N = N₀·2^(−t/T); H = λN"
+          ]
+        ]
+      },
+      "try": {
+        "q": "Công thức nào dùng để tính số hạt nhân còn lại sau thời gian t?",
+        "options": [
+          "N = N₀·2^(−t/T)",
+          "N = A − Z",
+          "E_lk = Δm·c²"
+        ],
+        "answer": 0,
+        "explain": "Đó là định luật phóng xạ."
+      },
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Mẹo giải",
+      "points": [
+        "Viết phương trình phản ứng: cân bằng {k số khối} và {k điện tích} hai vế.",
+        "Bài phóng xạ: tính t/T trước, rồi mới lũy thừa."
+      ],
+      "n": 2
     }
   ],
   "examples": [

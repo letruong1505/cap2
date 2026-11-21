@@ -10,20 +10,49 @@
   "bookPage": 82,
   "theory": [
     {
-      "type": "text",
-      "content": "Từ trường biến thiên theo thời gian sinh ra trong không gian xung quanh một điện trường xoáy. Đường sức của điện trường xoáy là các đường cong kín."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Từ trường biến thiên sinh điện trường xoáy; điện trường biến thiên sinh từ trường. Sóng điện từ là sóng {k ngang}, truyền được trong {k chân không}, E và B đồng pha, vuông góc nhau và với phương truyền. Bước sóng {k λ = c·T = c/f}."
     },
     {
-      "type": "text",
-      "content": "Điện trường biến thiên theo thời gian sinh ra một từ trường biến thiên. Dòng điện dịch giữa hai bản tụ điện gây ra từ trường. Đường sức của từ trường luôn khép kín."
+      "type": "card",
+      "title": "Điện trường xoáy",
+      "points": [
+        "Từ trường biến thiên theo thời gian sinh ra điện trường {k xoáy}.",
+        "Đường sức của điện trường xoáy là các đường cong kín."
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Điện trường biến thiên và từ trường biến thiên cùng tồn tại trong không gian, có thể chuyển hoá lẫn nhau, tạo thành điện từ trường thống nhất. Tại mỗi điểm, vectơ B luôn vuông góc với vectơ E."
+      "type": "card",
+      "title": "Từ trường do điện trường biến thiên",
+      "points": [
+        "Điện trường biến thiên theo thời gian sinh ra từ trường biến thiên.",
+        "Dòng điện dịch giữa hai bản tụ điện gây ra từ trường.",
+        "Đường sức của từ trường luôn khép kín."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Sóng điện từ là quá trình lan truyền điện từ trường trong không gian. Sóng điện từ là sóng ngang, truyền được trong chân không; tại mỗi điểm E và B luôn đồng pha và vuông góc với nhau và với phương truyền sóng."
+      "type": "card",
+      "title": "Điện từ trường",
+      "points": [
+        "Điện trường biến thiên và từ trường biến thiên cùng tồn tại, chuyển hoá lẫn nhau, tạo thành {k điện từ trường} thống nhất.",
+        "Tại mỗi điểm, vectơ B luôn vuông góc với vectơ E."
+      ],
+      "n": 3
+    },
+    {
+      "type": "card",
+      "title": "Sóng điện từ",
+      "text": "Là quá trình lan truyền điện từ trường trong không gian.",
+      "points": [
+        "Là sóng {k ngang}; truyền được trong {k chân không}.",
+        "Tại mỗi điểm E và B luôn {k đồng pha}, vuông góc nhau và vuông góc với phương truyền sóng."
+      ],
+      "wrong": "Sóng điện từ là sóng dọc và cần môi trường truyền.",
+      "right": "Sóng điện từ là sóng ngang và truyền được cả trong chân không.",
+      "n": 4
     },
     {
       "type": "figure",
@@ -31,12 +60,25 @@
       "caption": "Sóng điện từ: E (xanh) và B (đỏ) đồng pha, vuông góc nhau và với phương truyền c."
     },
     {
-      "type": "formula",
-      "content": "λ = c·T = c/f"
-    },
-    {
-      "type": "text",
-      "content": "Trong đó c là tốc độ ánh sáng trong chân không, T là chu kì và f là tần số của sóng điện từ. Sóng điện từ có tốc độ truyền bằng tốc độ ánh sáng trong chân không."
+      "type": "card",
+      "title": "Bước sóng",
+      "formulas": [
+        "{k λ = c·T = c/f}"
+      ],
+      "points": [
+        "c là tốc độ ánh sáng trong chân không (≈ 3·10⁸ m/s); sóng điện từ truyền với tốc độ đó."
+      ],
+      "try": {
+        "q": "Sóng điện từ có tần số 3·10⁸ Hz. Bước sóng bằng (c = 3·10⁸ m/s):",
+        "options": [
+          "1 m",
+          "10 m",
+          "0,1 m"
+        ],
+        "answer": 0,
+        "explain": "λ = c/f = 3·10⁸/3·10⁸ = 1 m."
+      },
+      "n": 5
     }
   ],
   "examples": [

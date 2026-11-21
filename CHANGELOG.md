@@ -1,4 +1,6 @@
 ## Bản mới
+- Hoá 12, Sinh 12, Lịch sử 12, Địa lí 12, GDKT&PL 12: lý thuyết (125 bài) chia thành các thẻ có tiêu đề, gạch đầu dòng ngắn gọn thay cho đoạn văn dài.
+- Vật lí 12: lý thuyết 25 bài trình bày dạng thẻ giống Toán 12 (tóm tắt "Cần nhớ", công thức, bảng, lỗi hay gặp, câu hỏi "Thử ngay"), giữ nguyên hình minh hoạ và phần cách giải.
 - Toán 12: lý thuyết 19 bài trình bày lại dạng thẻ dễ học (tóm tắt "Cần nhớ", công thức tô màu, bảng, lỗi hay gặp, mẹo nhớ và câu hỏi "Thử ngay" kiểm tra nhanh); tích phân hiển thị đúng cận trên, cận dưới.
 - Báo cáo cho phụ huynh (máy tính và điện thoại): khi chọn từ 2 ngày trở lên, hiển thị đồng thời biểu đồ cột đúng/sai theo từng ngày (ghi % đúng trên mỗi cột) và lịch học; chạm vào một cột để xem chi tiết ngày đó theo từng môn, kèm đạt/không đạt.
 - Ngưỡng đạt do phụ huynh đặt (mặc định 80% câu đúng, có thể đặt riêng từng môn): báo cáo ghi rõ từng môn "Đạt" hay "Không đạt", danh sách chương cần ôn cũng theo ngưỡng này; phụ huynh xem trên điện thoại thấy cùng kết quả.

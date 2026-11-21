@@ -1,6 +1,7 @@
-from lib import card, build
+from lib import card, build, use
 
 def run():
+    use('toan12')
     build('tap1/chuong-1/bai-1/don-dieu-cuc-tri',
       "Đơn điệu: f′ > 0 thì {k đồng biến}, f′ < 0 thì {k nghịch biến}. Cực trị: f′ {k đổi dấu} qua x₀ (+ sang −: cực đại; − sang +: cực tiểu). Chỉ f′(x₀) = 0 thì {k chưa đủ} để có cực trị.",
       [

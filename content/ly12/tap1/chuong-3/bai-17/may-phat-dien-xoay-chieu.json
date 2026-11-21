@@ -10,12 +10,38 @@
   "bookPage": 72,
   "theory": [
     {
-      "type": "formula",
-      "content": "e = E₀·cos(ωt + φ₀);  E₀ = N·B·S·ω"
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Khung quay đều trong từ trường: {k e = E₀·cos(ωt + φ₀)} với {k E₀ = N·B·S·ω}. T = 2π/ω, f = ω/(2π). Giá trị hiệu dụng: {k I = I₀/√2}, {k U = U₀/√2}. Máy phát gồm phần cảm (tạo từ trường) và phần ứng (sinh suất điện động)."
     },
     {
-      "type": "text",
-      "content": "Khi khung dây dẫn quay đều với tốc độ góc ω trong từ trường đều B, từ thông qua khung biến thiên điều hoà và trong khung xuất hiện suất điện động xoay chiều theo quy luật cosin (hoặc sin)."
+      "type": "card",
+      "title": "Suất điện động xoay chiều",
+      "text": "Khung dây quay đều với tốc độ góc ω trong từ trường đều B: từ thông biến thiên điều hoà, trong khung có suất điện động xoay chiều.",
+      "formulas": [
+        "{k e = E₀·cos(ωt + φ₀)}",
+        "{k E₀ = N·B·S·ω}"
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Chu kì và tần số",
+      "formulas": [
+        "{k T = 2π/ω}",
+        "{k f = ω/(2π)}"
+      ],
+      "try": {
+        "q": "Dòng điện có ω = 100π rad/s. Tần số bằng:",
+        "options": [
+          "50 Hz",
+          "100 Hz",
+          "25 Hz"
+        ],
+        "answer": 0,
+        "explain": "f = ω/(2π) = 100π/(2π) = 50 Hz."
+      },
+      "n": 2
     },
     {
       "type": "figure",
@@ -23,16 +49,36 @@
       "caption": "Suất điện động e = E₀cos(ωt) biến thiên điều hoà; T là khoảng thời gian giữa hai đỉnh liên tiếp."
     },
     {
-      "type": "formula",
-      "content": "T = 2π/ω,  f = ω/(2π)"
+      "type": "card",
+      "title": "Giá trị hiệu dụng",
+      "text": "Dòng điện xoay chiều có cường độ biến thiên điều hoà: i = I₀cos(ωt + φ).",
+      "formulas": [
+        "{k I = I₀/√2}",
+        "{k U = U₀/√2}"
+      ],
+      "wrong": "Giá trị hiệu dụng bằng giá trị cực đại.",
+      "right": "Hiệu dụng nhỏ hơn cực đại √2 lần: I = I₀/√2.",
+      "try": {
+        "q": "Điện áp cực đại 220√2 V thì điện áp hiệu dụng bằng:",
+        "options": [
+          "220 V",
+          "440 V",
+          "311 V"
+        ],
+        "answer": 0,
+        "explain": "U = U₀/√2 = 220√2/√2 = 220 V."
+      },
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Dòng điện xoay chiều có cường độ biến thiên điều hoà theo thời gian: i = I₀cos(ωt + φ). Giá trị hiệu dụng liên hệ với giá trị cực đại qua I = I₀/√2 và U = U₀/√2."
-    },
-    {
-      "type": "text",
-      "content": "Máy phát điện xoay chiều gồm phần cảm (tạo từ trường) và phần ứng (các cuộn dây xuất hiện suất điện động cảm ứng). Phần ứng thường đặt ở stato để tránh mòn vành khuyên và chổi quét khi quay nhanh."
+      "type": "card",
+      "title": "Cấu tạo máy phát điện xoay chiều",
+      "points": [
+        "{k Phần cảm}: tạo ra từ trường.",
+        "{k Phần ứng}: các cuộn dây xuất hiện suất điện động cảm ứng.",
+        "Phần ứng thường đặt ở stato để tránh mòn vành khuyên và chổi quét khi quay nhanh."
+      ],
+      "n": 4
     },
     {
       "type": "figure",

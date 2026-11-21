@@ -10,12 +10,34 @@
   "bookPage": 66,
   "theory": [
     {
-      "type": "formula",
-      "content": "Φ = B·S·cosα"
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Từ thông {k Φ = B·S·cosα} (α giữa pháp tuyến và B), đơn vị Wb. Từ thông biến thiên thì có dòng điện cảm ứng; chiều theo định luật {k Lenz} (chống lại sự biến thiên); độ lớn suất điện động theo {k Faraday}: |e| = N·|ΔΦ/Δt|."
     },
     {
-      "type": "text",
-      "content": "Từ thông Φ qua diện tích S đặt trong từ trường đều B, với α là góc giữa vectơ pháp tuyến của S và B. Đơn vị từ thông là vêbe (Wb); 1 Wb = 1 T·m². Từ thông biểu diễn số đường sức từ xuyên qua diện tích S."
+      "type": "card",
+      "title": "Từ thông",
+      "formulas": [
+        "{k Φ = B·S·cosα}"
+      ],
+      "points": [
+        "α: góc giữa vectơ pháp tuyến của S và B.",
+        "Đơn vị vêbe (Wb): 1 Wb = 1 T·m².",
+        "Biểu diễn số đường sức từ xuyên qua diện tích S."
+      ],
+      "wrong": "α là góc giữa mặt phẳng khung và B.",
+      "right": "α là góc giữa {k pháp tuyến} của khung và B. Khung vuông góc đường sức thì pháp tuyến song song B, α = 0, Φ lớn nhất.",
+      "try": {
+        "q": "B = 0,2 T, S = 0,5 m², pháp tuyến song song B. Từ thông bằng:",
+        "options": [
+          "0,1 Wb",
+          "0,2 Wb",
+          "0 Wb"
+        ],
+        "answer": 0,
+        "explain": "Φ = 0,2·0,5·cos 0° = 0,1 Wb."
+      },
+      "n": 1
     },
     {
       "type": "figure",
@@ -23,12 +45,29 @@
       "caption": "Từ thông phụ thuộc góc α giữa pháp tuyến n và B."
     },
     {
-      "type": "text",
-      "content": "Khi từ thông qua cuộn dây dẫn kín biến thiên thì trong cuộn dây xuất hiện dòng điện cảm ứng. Hiện tượng này gọi là hiện tượng cảm ứng điện từ, chỉ tồn tại trong khoảng thời gian từ thông biến thiên."
+      "type": "card",
+      "title": "Hiện tượng cảm ứng điện từ",
+      "points": [
+        "Từ thông qua cuộn dây kín {k biến thiên} thì trong cuộn dây xuất hiện {k dòng điện cảm ứng}.",
+        "Chỉ tồn tại trong khoảng thời gian từ thông biến thiên."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Định luật Lenz: dòng điện cảm ứng có chiều sao cho từ trường do nó sinh ra chống lại sự biến thiên của từ thông ban đầu qua mạch kín."
+      "type": "card",
+      "title": "Định luật Lenz",
+      "text": "Dòng điện cảm ứng có chiều sao cho từ trường do nó sinh ra {k chống lại} sự biến thiên của từ thông ban đầu qua mạch kín.",
+      "try": {
+        "q": "Đưa nam châm lại gần cuộn dây kín (từ thông tăng). Từ trường do dòng cảm ứng sinh ra:",
+        "options": [
+          "Chống lại sự tăng của từ thông",
+          "Cùng chiều từ trường nam châm",
+          "Không phụ thuộc"
+        ],
+        "answer": 0,
+        "explain": "Theo định luật Lenz, dòng cảm ứng chống lại sự biến thiên (ở đây là sự tăng) của từ thông."
+      },
+      "n": 3
     },
     {
       "type": "figure",
@@ -36,12 +75,24 @@
       "caption": "Nam châm đưa lại gần cuộn dây kín, điện kế G chỉ dòng cảm ứng."
     },
     {
-      "type": "formula",
-      "content": "|e| = N·|ΔΦ/Δt|"
-    },
-    {
-      "type": "text",
-      "content": "Định luật Faraday: độ lớn suất điện động cảm ứng trong mạch kín tỉ lệ với tốc độ biến thiên của từ thông qua mạch. Với cuộn dây có N vòng, e = −N·ΔΦ/Δt."
+      "type": "card",
+      "title": "Định luật Faraday",
+      "formulas": [
+        "{k |e| = N·|ΔΦ/Δt|}",
+        "Cuộn N vòng:  e = −N·ΔΦ/Δt"
+      ],
+      "tip": "Suất điện động cảm ứng tỉ lệ với tốc độ biến thiên của từ thông.",
+      "try": {
+        "q": "Cuộn 100 vòng, từ thông biến thiên 0,02 Wb trong 0,1 s. Độ lớn suất điện động cảm ứng:",
+        "options": [
+          "20 V",
+          "2 V",
+          "200 V"
+        ],
+        "answer": 0,
+        "explain": "|e| = 100·0,02/0,1 = 20 V."
+      },
+      "n": 4
     },
     {
       "type": "method",
