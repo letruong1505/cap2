@@ -152,3 +152,19 @@ test('ngưỡng đạt của phụ huynh: lưu, làm sạch, phụ huynh xem đ�
   const bad = await progressSettings(db, { ...dev(code), goals: { daily: 30, weekend: 100, weekly: 4, pass: 999 } }, NOW);
   assert.equal(bad.goals.pass, 100);
 });
+
+test('thời gian dùng app: máy học sinh gửi theo ngày, chỉ tăng; phụ huynh xem tổng; xóa dữ liệu thì mất', async () => {
+  const { db, code } = await setup();
+  await progressSettings(db, { ...dev(code), enabled: true }, NOW);
+  const r = await progressPush(db, { ...dev(code), days: [], usage: [{ day: '2026-11-17', open: 3600, active: 2400 }, { day: '2026-11-18', open: 600, active: 300 }, { day: '2026-11-18', open: 100, active: 900 }, { day: 'xấu', open: 1, active: 1 }, { day: '2026-11-17', open: 90000, active: 1 }] }, NOW);
+  assert.equal(r.usage, 2); // dòng có active > open, sai ngày, hoặc open > 24 giờ bị bỏ qua
+  await progressPush(db, { ...dev(code), days: [], usage: [{ day: '2026-11-17', open: 3000, active: 2000 }] }, NOW); // số nhỏ hơn không ghi đè
+  let v = await view(db, code);
+  assert.deepEqual(JSON.parse(JSON.stringify(v.usage)), [{ day: '2026-11-17', open: 3600, active: 2400 }, { day: '2026-11-18', open: 600, active: 300 }]);
+  await progressPush(db, { ...dev(code), days: [], usage: [{ day: '2026-11-17', open: 4000, active: 2500 }] }, NOW); // số lớn hơn thì cập nhật
+  v = await view(db, code);
+  assert.equal(v.usage[0].open, 4000);
+  await progressSettings(db, { ...dev(code), enabled: false, purge: true }, NOW);
+  await progressSettings(db, { ...dev(code), enabled: true }, NOW);
+  assert.deepEqual((await view(db, code)).usage, []);
+});

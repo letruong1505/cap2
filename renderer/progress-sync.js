@@ -120,7 +120,7 @@
         const g = await bridge().progressSettings({ code, goals: data.goals });
         if (g.ok) { st.goals = data.goals; writeState(st); }
       }
-      const r = await bridge().progressPush({ code, days: aggregate(data.attempts) });
+      const r = await bridge().progressPush({ code, days: aggregate(data.attempts), usage: window.VungUsage ? window.VungUsage.list() : [] });
       if (r.ok) { st.lastOk = Date.now(); writeState(st); }
       else if (r.error && /chưa bật/i.test(r.error)) { st.enabled = false; writeState(st); } // phụ huynh đã tắt ở nơi khác
       return r;
@@ -210,5 +210,7 @@
   }
 
   setTimeout(() => { if (readState().enabled) push(); }, 8000);
+  setInterval(() => { if (readState().enabled && document.visibilityState !== 'hidden') push(); }, 10 * 60000); // gửi định kỳ để thời gian dùng app luôn mới
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden' && readState().enabled) push(); });
   return Object.assign(api, { push, schedule, enable, disable, info, renderBox, supported });
 });

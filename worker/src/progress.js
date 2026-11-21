@@ -6,6 +6,7 @@ const PHONE_RE = /^(0|\+84)\d{9}$/;
 const DAY_RE = /^\d{4}-\d{2}-\d{2}$/;
 const MAX_PUSH_ROWS = 1500;
 const MAX_VIEW_ROWS = 8000;
+const MAX_USAGE_ROWS = 400;
 const MAX_RANGE_DAYS = 366;
 const DAY_MS = 86400000;
 const nowIso = (now) => now.toISOString();
@@ -62,6 +63,7 @@ export async function progressSettings(db, input, now = new Date()) {
   }
   if (input.purge === true) {
     await db.prepare('DELETE FROM progress_daily WHERE code = ?1').bind(o.code).run();
+    await db.prepare('DELETE FROM progress_usage WHERE code = ?1').bind(o.code).run();
     await db.prepare('UPDATE progress_sync SET last_sync = NULL WHERE code = ?1').bind(o.code).run();
   }
   if (input.goals && typeof input.goals === 'object') {
@@ -104,9 +106,20 @@ export async function progressPush(db, input, now = new Date()) {
       ON CONFLICT(code, src, day, subject, grade, chapter) DO UPDATE SET correct = MAX(correct, ?7), total = MAX(total, ?8), lessons = MAX(lessons, ?9), seconds = MAX(seconds, ?10)`)
       .bind(o.code, src, day, subject, grade, chapter, correct, total, lessons, seconds));
   }
+  // Thời gian dùng app: mỗi ngày một dòng cho mỗi thiết bị, ghi kiểu "chỉ tăng" như phần trên.
+  const usage = Array.isArray(input.usage) ? input.usage.slice(0, MAX_USAGE_ROWS) : [];
+  let usageSaved = 0;
+  for (const r of usage) {
+    const day = String(r && r.day || '');
+    const open = Math.round(Number(r && r.open)); const active = Math.round(Number(r && r.active));
+    if (!dayOk(day, now) || !Number.isFinite(open) || !Number.isFinite(active) || open < 0 || active < 0 || open > 86400 || active > open) continue;
+    stmts.push(db.prepare(`INSERT INTO progress_usage (code, src, day, open_s, active_s) VALUES (?1,?2,?3,?4,?5)
+      ON CONFLICT(code, src, day) DO UPDATE SET open_s = MAX(open_s, ?4), active_s = MAX(active_s, ?5)`).bind(o.code, src, day, open, active));
+    usageSaved++;
+  }
   for (let i = 0; i < stmts.length; i += 100) await db.batch(stmts.slice(i, i + 100));
   await db.prepare('UPDATE progress_sync SET last_sync = ?1 WHERE code = ?2').bind(nowIso(now), o.code).run();
-  return { ok: true, saved: stmts.length, skipped };
+  return { ok: true, saved: stmts.length - usageSaved, skipped, usage: usageSaved };
 }
 
 // Điện thoại phụ huynh xem: mã đơn + số điện thoại đã mua. Giới hạn 5 lần nhập sai mỗi giờ cho mỗi mã máy (dùng chung bảng với nhận khóa).
@@ -153,5 +166,7 @@ export async function progressView(db, catalog, input, now = new Date()) {
   const n = codes.length;
   const sql = `SELECT day, subject, grade, chapter, SUM(correct) AS correct, SUM(total) AS total, SUM(lessons) AS lessons, SUM(seconds) AS seconds FROM progress_daily WHERE code IN (${ph}) AND day >= ?${n + 1} AND day <= ?${n + 2}${grade ? ` AND grade = ?${n + 4}` : ''} GROUP BY day, subject, grade, chapter ORDER BY day LIMIT ?${n + 3}`;
   const rows = (await db.prepare(sql).bind(...codes, from, to, MAX_VIEW_ROWS, ...(grade ? [grade] : [])).all()).results;
-  return { ...base, from, to, rows };
+  // Thời gian dùng app cộng của mọi thiết bị trong khoảng ngày; không lọc theo lớp hay môn vì app không biết con học môn nào lúc đó.
+  const usage = (await db.prepare(`SELECT day, SUM(open_s) AS open, SUM(active_s) AS active FROM progress_usage WHERE code IN (${ph}) AND day >= ?${n + 1} AND day <= ?${n + 2} GROUP BY day ORDER BY day LIMIT ?${n + 3}`).bind(...codes, from, to, MAX_RANGE_DAYS + 2).all()).results;
+  return { ...base, from, to, rows, usage };
 }

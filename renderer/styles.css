@@ -942,3 +942,11 @@ button.dc-col.sel { background: #dcebf3; }
 .dc-detail { margin-top: 10px; padding: 10px 12px; border: 1px solid #cfe0ea; border-radius: 10px; background: #fff; }
 .dc-detail h3 { margin: 0 0 4px; font-size: 15px; }
 .dc-detail p { margin: 4px 0; }
+
+/* Thời gian dùng app trong báo cáo */
+.ut-row { display: flex; gap: 8px; flex-wrap: wrap; margin: 6px 0; }
+.ut { flex: 1 1 90px; border-radius: 10px; padding: 8px 10px; background: #eef4f8; border: 1px solid #d5e2ea; }
+.ut small { display: block; color: #55697a; }
+.ut b { font-size: 1.05rem; }
+.ut-act { background: #e7f4ec; border-color: #c4e2cf; }
+.ut-brk { background: #fdf1e3; border-color: #f0d6b3; }
