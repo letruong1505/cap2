@@ -148,3 +148,13 @@ CREATE TABLE IF NOT EXISTS progress_pass_ext (
   pass INTEGER,
   pass_by TEXT
 );
+
+-- Thời gian dùng app theo ngày từ mỗi thiết bị (giây): open = thời gian mở app, active = thời gian dùng thực. Ngắt quãng = open - active.
+CREATE TABLE IF NOT EXISTS progress_usage (
+  code TEXT NOT NULL,
+  src TEXT NOT NULL,
+  day TEXT NOT NULL,
+  open_s INTEGER NOT NULL,
+  active_s INTEGER NOT NULL,
+  PRIMARY KEY (code, src, day)
+);
