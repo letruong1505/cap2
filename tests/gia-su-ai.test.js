@@ -108,3 +108,28 @@ test('AI cho người đi làm – Claude: Bài 4–11 dạng thẻ, giữ hình
     assert.ok(G[k].html.includes('<svg'), k);
   }
 });
+
+test('Tư duy & lập trình: 2 lộ trình đủ mở đầu + 8 bài, có thực hành và đáp án', () => {
+  const w = {};
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../renderer/tu-duy-content.js'), 'utf8'), { window: w });
+  for (const t of ['k811', 'k1218']) {
+    for (const k of ['tongquan', 'bai1', 'bai2', 'bai3', 'bai4', 'bai5', 'bai6', 'bai7', 'bai8']) {
+      const L = w.TUDUY[t][k];
+      assert.ok(L && L.title && L.html.includes('class="tsum"') && L.html.includes('tprac') && L.html.includes('class="tans"'), t + k);
+    }
+  }
+  const all = JSON.stringify(w.TUDUY);
+  assert.ok(!/<script/i.test(all));
+  // số liệu đã kiểm: biến Scratch bài 4 = 12; tổng 1..99 = 4950; làm ngược 23 -> 9
+  assert.ok(w.TUDUY.k811.bai4.html.includes('điểm = 12'));
+  assert.ok(w.TUDUY.k1218.bai4.html.includes('4950'));
+  assert.ok(w.TUDUY.k811.bai6.html.includes('<b>9</b>'));
+  assert.ok(w.TUDUY.k1218.bai5.html.includes('5.83'));
+});
+test('Tư duy & lập trình: nối vào app, 2 bài đầu miễn phí', () => {
+  const idx = fs.readFileSync(path.join(__dirname, '../renderer/index.html'), 'utf8');
+  for (const x of ['tu-duy-content.js', 'tu-duy.js', 'id="tuduy-body"', 'id="open-tuduy"']) assert.ok(idx.includes(x), x);
+  const app = fs.readFileSync(path.join(__dirname, '../renderer/app.js'), 'utf8');
+  assert.ok(app.includes("'tuduy'") && app.includes('showTuDuy'));
+  assert.ok(fs.readFileSync(path.join(__dirname, '../renderer/tu-duy.js'), 'utf8').includes("FREE = ['tongquan', 'bai1']"));
+});

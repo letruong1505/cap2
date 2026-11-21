@@ -1081,3 +1081,10 @@ button.tt-chip { cursor: pointer; }
 .aiw-lesson .tnote { color: #5b6773; font-size: 13px; margin: 6px 0 0; }
 .aiw-lesson .copy-btn { float: right; margin: -2px 0 6px 8px; font: inherit; font-size: 12px; padding: 3px 10px; border: 1px solid #1f6fb2; background: #fff; color: #1f6fb2; border-radius: 8px; cursor: pointer; }
 .aiw-lesson .copy-btn.done { background: #1f6fb2; color: #fff; }
+
+/* Tư duy & lập trình: khối code và khối lệnh Scratch */
+.aiw-lesson pre.code { white-space: pre; overflow-x: auto; background: #1e2a38; color: #e8eef5; border-radius: 8px; padding: 12px 16px; margin: 10px 0; font: 14px/1.55 Consolas, "Courier New", monospace; user-select: text; tab-size: 4; }
+.aiw-lesson pre.code.out { background: #f3f6fa; color: #1c2733; border-left: 4px solid #2a8a4a; margin-top: 2px; }
+.aiw-lesson .code-out-l { font-size: 12px; font-weight: 700; color: #2a8a4a; margin-top: 4px; }
+.aiw-lesson pre.scratch { white-space: pre; background: #fff4d6; border: 2px solid #f2b705; border-left: 8px solid #f2b705; border-radius: 10px; padding: 10px 16px; margin: 10px 0; font: 15px/1.7 inherit; font-family: inherit; user-select: text; }
+.aiw-lesson code { background: #eef3f8; border-radius: 4px; padding: 1px 5px; font-family: Consolas, "Courier New", monospace; font-size: .92em; }

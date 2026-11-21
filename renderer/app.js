@@ -442,7 +442,7 @@ function updateScore(lesson, attempt) {
 }
 
 function showOnly(id) {
-  for (const sec of ['launch', 'subjects', 'home', 'lesson', 'exam', 'games', 'game', 'national', 'aiwork', 'giasu', 'examprep', 'thpt', 'purchase', 'review', 'report', 'parent-view', 'empty']) {
+  for (const sec of ['launch', 'subjects', 'home', 'lesson', 'exam', 'games', 'game', 'national', 'aiwork', 'giasu', 'tuduy', 'examprep', 'thpt', 'purchase', 'review', 'report', 'parent-view', 'empty']) {
     document.getElementById(sec).hidden = sec !== id;
   }
 }
@@ -896,6 +896,16 @@ function showGiaSu() {
   showOnly('giasu');
 }
 
+function showTuDuy() {
+  document.getElementById('breadcrumb').textContent = '';
+  window.TuDuy.open({
+    license: () => lastLicense,
+    onBuy: (id) => { showPurchase(id); },
+    onExit: () => showLaunch(),
+  });
+  showOnly('tuduy');
+}
+
 function showNational() {
   document.getElementById('breadcrumb').textContent = '';
   window.National.open();
@@ -1049,6 +1059,7 @@ async function init() {
     document.getElementById('open-national').addEventListener('click', () => showNational());
     document.getElementById('open-aiwork').addEventListener('click', () => showAiWork());
     document.getElementById('open-giasu').addEventListener('click', () => showGiaSu());
+    document.getElementById('open-tuduy').addEventListener('click', () => showTuDuy());
     const openProg = async (kind, grade) => {
       const ui = window.VungProgressUI;
       if (kind === 'report' && window.VungPinUI && !(await window.VungPinUI.ensureUnlocked())) return;
