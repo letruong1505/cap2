@@ -133,3 +133,10 @@ test('Tư duy & lập trình: nối vào app, 2 bài đầu miễn phí', () => 
   assert.ok(app.includes("'tuduy'") && app.includes('showTuDuy'));
   assert.ok(fs.readFileSync(path.join(__dirname, '../renderer/tu-duy.js'), 'utf8').includes("FREE = ['tongquan', 'bai1']"));
 });
+
+test('Tư duy & lập trình: có trong catalog bán hàng, keygen và trang phụ huynh', () => {
+  const cat = require('../renderer/catalog.js');
+  assert.strictEqual(cat.byId['tu-duy-lap-trinh'].price, 1490000);
+  assert.ok(fs.readFileSync(path.join(__dirname, '../keygen/index.html'), 'utf8').includes('value="tu-duy-lap-trinh"'));
+  assert.ok(fs.readFileSync(path.join(__dirname, '../parent/courses.js'), 'utf8').includes("'tu-duy-lap-trinh'"));
+});

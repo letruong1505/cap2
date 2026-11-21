@@ -10,6 +10,7 @@
       { id: 'he-mien-dich-so', name: 'Hệ miễn dịch số', note: 'Học sinh 8 - 11 tuổi', price: 990000 },
       { id: 'lam-chu-the-gioi-so', name: 'Làm chủ thế giới số', note: 'Học sinh 12 - 15 tuổi', price: 1490000 },
       { id: 'cong-dan-so', name: 'Công dân số', note: 'Học sinh 16 - 18 tuổi', price: 1990000 },
+      { id: 'tu-duy-lap-trinh', name: 'Tư duy & lập trình', note: 'Học sinh 8 - 18 tuổi · 2 lộ trình: Scratch (8–11), Python (12–18)', price: 1490000 },
       { id: 'ranh-gioi-so', name: 'Ranh giới số', note: 'Học sinh THPT & tân sinh viên', price: 1490000 },
     ] },
     { group: 'AI cho người đi làm', ai: true, fee: 'Giá khóa học chưa bao gồm phí bản quyền AI (tài khoản ChatGPT, Gemini hoặc Claude do người học tự đăng ký và chi trả).', items: [

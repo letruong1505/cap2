@@ -1,8 +1,10 @@
 ## Bản mới
-- Tư duy & lập trình (xem thử): hai lộ trình 8–11 tuổi (Scratch) và 12–18 tuổi (Python), mỗi lộ trình có phần mở đầu và 8 bài dạng thẻ rèn tư duy phản biện và tư duy ngược, có thực hành kèm đáp án. Phần mở đầu và Bài 1 xem miễn phí
+- Tư duy & lập trình: chính thức mở bán 1.490.000 đ (một khóa mở cả 2 lộ trình 8–11 và 12–18); mua trong phần mềm, key kích hoạt tự động như các khóa khác
 - Android: bản này yêu cầu cài apk mới
 
 ## Các bản trước
+- Tư duy & lập trình (xem thử): hai lộ trình 8–11 tuổi (Scratch) và 12–18 tuổi (Python), mỗi lộ trình có phần mở đầu và 8 bài dạng thẻ rèn tư duy phản biện và tư duy ngược, có thực hành kèm đáp án. Phần mở đầu và Bài 1 xem miễn phí
+- Android: bản này yêu cầu cài apk mới
 - AI cho người đi làm – lớp Claude: Bài 4–11 trình bày lại theo dạng thẻ (tóm tắt đầu bài, mỗi ý một thẻ đánh số, ý dài tách thành gạch đầu dòng), giữ nguyên hình minh họa và ví dụ
 - Android: bản này yêu cầu cài apk mới
 - Gia sư AI: giáo trình trình bày lại theo dạng thẻ (tóm tắt đầu bài, mỗi ý một thẻ đánh số, ý dài tách thành gạch đầu dòng) để dễ đọc trên điện thoại
