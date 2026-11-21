@@ -79,11 +79,11 @@
               <span class="price-name">AI cho người đi làm <span class="price-detail">(Chọn ChatGPT, Gemini hoặc Claude)</span></span>
               <span class="price-value">1.990.000 đ <span class="view-arrow" aria-hidden="true">→</span></span>
             </button>
-            <div class="price-option">
-              <span class="price-name">Tư duy &amp; lập trình <span class="edu-soon">sắp ra mắt</span></span>
+            <button type="button" class="price-option free" id="open-tuduy">
+              <span class="price-name">Tư duy &amp; lập trình <span class="edu-soon">sắp ra mắt</span> <span class="price-detail">(Xem thử miễn phí 2 bài)</span></span>
               <span class="price-detail">Xây dựng tư duy cho kỷ nguyên mới.</span>
-              <span class="price-value">Đang cập nhật</span>
-            </div>
+              <span class="price-value">Đang cập nhật <span class="view-arrow" aria-hidden="true">→</span></span>
+            </button>
             <button type="button" class="price-option free" id="open-national">
               <span class="price-name">Định hướng công nghệ quốc gia <span class="free-badge"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#fff"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#d32f2f" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Miễn phí</span></span>
               <span class="price-value view-hint">Bấm để xem <span class="view-arrow" aria-hidden="true">→</span></span>
@@ -185,6 +185,10 @@
       <div id="giasu-body"></div>
     </section>
 
+    <section id="tuduy" class="panel" hidden>
+      <div id="tuduy-body"></div>
+    </section>
+
     <section id="thpt" class="panel" hidden>
       <button id="btn-thpt-back" class="back-link" type="button">← Chọn lớp</button>
       <div id="thpt-body"></div>
@@ -270,6 +274,8 @@
   <script src="ai-work.js"></script>
   <script src="gia-su-ai-content.js"></script>
   <script src="gia-su-ai.js"></script>
+  <script src="tu-duy-content.js"></script>
+  <script src="tu-duy.js"></script>
   <script src="national-data.js"></script>
   <script src="national.js"></script>
   <script src="thpt-exam-data.js"></script>
