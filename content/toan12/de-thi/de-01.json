@@ -1,0 +1,576 @@
+{
+  "id": "de-01",
+  "kind": "exam",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Nam Linh Educenter",
+  "book": "Đề thi thử tốt nghiệp",
+  "chapter": "Đề thi thử theo cấu trúc tốt nghiệp THPT",
+  "lesson": "Đề thi thử số 1",
+  "title": "Đề thi thử tốt nghiệp THPT số 1",
+  "durationMin": 90,
+  "structure": {
+    "p1": {
+      "n": 12,
+      "each": 0.25
+    },
+    "p2": {
+      "n": 4,
+      "byCorrect": [
+        0,
+        0.1,
+        0.25,
+        0.5,
+        1
+      ]
+    },
+    "p3": {
+      "n": 6,
+      "each": 0.5
+    }
+  },
+  "theory": [],
+  "items": [
+    {
+      "id": "p1q01",
+      "part": 1,
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nguyên hàm của cos x là?",
+      "choices": [
+        "−sin x + C",
+        "cos x + C",
+        "tan x + C",
+        "sin x + C"
+      ],
+      "answer": 3,
+      "explain": "(sin x)' = cos x nên sin x là một nguyên hàm của cos x.",
+      "wrong_explain": {
+        "0": "Nhầm với nguyên hàm của sin x.",
+        "1": "Lấy chính hàm số, không phải nguyên hàm.",
+        "2": "Nhầm với nguyên hàm của 1/cos²x."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap2/chuong-4/bai-11/nguyen-ham.json",
+        "id": "q34"
+      },
+      "topic": "Chương IV. Nguyên hàm và tích phân"
+    },
+    {
+      "id": "p1q02",
+      "part": 1,
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Cỡ mẫu n của mẫu số liệu ghép nhóm được tính bằng?",
+      "choices": [
+        "k (số nhóm)",
+        "m₁·m_k",
+        "m₁ + m₂ + … + m_k",
+        "a_{k+1} − a_1"
+      ],
+      "answer": 2,
+      "explain": "Cỡ mẫu là tổng tần số của tất cả các nhóm.",
+      "wrong_explain": {
+        "0": "k là số nhóm, không phải cỡ mẫu.",
+        "1": "Đây là tích của hai tần số, không phải tổng.",
+        "3": "Đây là khoảng biến thiên R."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap1/chuong-3/on-tap/bai-tap-cuoi-chuong-3.json",
+        "id": "q25"
+      },
+      "topic": "Chương III. Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm"
+    },
+    {
+      "id": "p1q03",
+      "part": 1,
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "∫(2x − 1)²dx bằng?",
+      "choices": [
+        "(2x − 1)³/6 + C",
+        "(2x − 1)³/3 + C",
+        "(2x − 1)²/2 + C",
+        "2x³ + C"
+      ],
+      "answer": 0,
+      "explain": "Đạo hàm của (2x − 1)³/6 là 3(2x − 1)²·2/6 = (2x − 1)².",
+      "wrong_explain": {
+        "1": "Đạo hàm của (2x − 1)³/3 là 2(2x − 1)², gấp đôi.",
+        "2": "Đạo hàm của (2x − 1)²/2 là 2(2x − 1), không phải (2x − 1)².",
+        "3": "Đạo hàm của 2x³ là 6x², không đúng."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap2/chuong-4/bai-11/nguyen-ham.json",
+        "id": "q09"
+      },
+      "topic": "Chương IV. Nguyên hàm và tích phân"
+    },
+    {
+      "id": "p1q04",
+      "part": 1,
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Đường thẳng x = 1 có phải là tiệm cận đứng của đồ thị hàm số y = (x² + 2x − 3)/(x − 1) không?",
+      "figure": "figures/t12-c1-q18.svg",
+      "choices": [
+        "Không, vì y = x + 3 với mọi x ≠ 1 nên không có giới hạn vô cực tại x = 1",
+        "Có, vì mẫu số bằng 0 tại x = 1",
+        "Có, vì tử số bằng 0 tại x = 1",
+        "Có, vì đồ thị không xác định tại x = 1"
+      ],
+      "answer": 0,
+      "explain": "Tử số x² + 2x − 3 = (x − 1)(x + 3) nên y = x + 3 khi x ≠ 1; x = 1 là điểm bị khử, giới hạn hữu hạn, không phải tiệm cận đứng.",
+      "wrong_explain": {
+        "1": "Mẫu bằng 0 là điều kiện cần nhưng chưa đủ; cần giới hạn vô cực thực sự.",
+        "2": "Tử số bằng 0 tại x = 1 chính là lý do x = 1 bị khử, không tạo tiệm cận.",
+        "3": "Đồ thị không xác định tại một điểm không đủ để có tiệm cận đứng."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap1/chuong-1/on-tap/bai-tap-cuoi-chuong-1.json",
+        "id": "q18"
+      },
+      "topic": "Chương I. Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số"
+    },
+    {
+      "id": "p1q05",
+      "part": 1,
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Vị trí tương đối của Δ₁: (x − 3)/1 = y/(−2) = (z − 1)/3 và Δ₂: (x − 1)/1 = (y − 2)/(−2) = z/3 là?",
+      "choices": [
+        "Song song",
+        "Trùng nhau",
+        "Cắt nhau",
+        "Chéo nhau"
+      ],
+      "answer": 0,
+      "explain": "Hai đường có cùng vectơ chỉ phương (1; −2; 3); điểm (3; 0; 1) không thuộc Δ₂ nên Δ₁ ∥ Δ₂.",
+      "wrong_explain": {
+        "1": "Điểm (3; 0; 1) không thuộc Δ₂ vì (3 − 1)/1 = 2 ≠ 1 = (0 − 2)/(−2), nên không trùng.",
+        "2": "Hai đường cùng phương nên không cắt nhau.",
+        "3": "Hai đường cùng phương nên không chéo nhau."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap2/chuong-5/bai-15/phuong-trinh-duong-thang.json",
+        "id": "q09"
+      },
+      "topic": "Chương V. Phương pháp toạ độ trong không gian"
+    },
+    {
+      "id": "p1q06",
+      "part": 1,
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hàm số y = (1/3)x³ + 3x² + 5x + 2 đồng biến trên khoảng nào?",
+      "choices": [
+        "(−∞; −5) và (−1; +∞)",
+        "(−5; −1)",
+        "(−∞; +∞)",
+        "(−∞; −1)"
+      ],
+      "answer": 0,
+      "explain": "y' = x² + 6x + 5 = (x + 1)(x + 5) > 0 khi x < −5 hoặc x > −1.",
+      "wrong_explain": {
+        "1": "Trên (−5; −1) đạo hàm âm nên hàm số nghịch biến.",
+        "2": "Đạo hàm đổi dấu tại x = −5 và x = −1, nên hàm số không đồng biến trên toàn ℝ.",
+        "3": "Trên (−5; −1) đạo hàm âm nên hàm số không đồng biến trên (−∞; −1)."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap1/chuong-1/bai-1/don-dieu-cuc-tri.json",
+        "id": "q14"
+      },
+      "topic": "Chương I. Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số"
+    },
+    {
+      "id": "p1q07",
+      "part": 1,
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Ví dụ 2 (Bayes): tỉ lệ học sinh chọn A00 khi biết đã đỗ đại học, với P(A) = 0,8, P(B | A) = 0,6, P(B | Ā) = 0,7, là?",
+      "choices": [
+        "24/31 ≈ 0,7742",
+        "0,6",
+        "0,8",
+        "0,95"
+      ],
+      "answer": 0,
+      "explain": "P(A | B) = 0,8 · 0,6 / (0,8 · 0,6 + 0,2 · 0,7) = 0,48/0,62 = 24/31 ≈ 0,7742.",
+      "wrong_explain": {
+        "1": "0,6 là P(B | A), xác suất đỗ khi đã chọn A00, không phải xác suất chọn A00 khi biết đã đỗ.",
+        "2": "0,8 là P(A), xác suất chọn A00 trước khi biết kết quả.",
+        "3": "0,95 không liên quan đến bài toán này."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap2/chuong-6/bai-19/cong-thuc-xac-suat-toan-phan-bayes.json",
+        "id": "q25"
+      },
+      "topic": "Chương VI. Xác suất có điều kiện"
+    },
+    {
+      "id": "p1q08",
+      "part": 1,
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Đường thẳng d: x = 1 + 2t, y = −2 + t, z = 3 − t có vectơ chỉ phương là?",
+      "choices": [
+        "(2; 1; −1)",
+        "(1; −2; 3)",
+        "(2; 0; 0)",
+        "(2; 1; 1)"
+      ],
+      "answer": 0,
+      "explain": "Hệ số của t: (2; 1; −1).",
+      "wrong_explain": {
+        "1": "Điểm đi qua là (1; −2; 3), không phải vectơ chỉ phương.",
+        "2": "Chỉ có thành phần x khác 0 là không đúng với hệ số của t.",
+        "3": "Thành phần z của vectơ chỉ phương là −1, không phải 1."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap2/chuong-5/on-tap/bai-tap-cuoi-chuong-5.json",
+        "id": "q04"
+      },
+      "topic": "Chương V. Phương pháp toạ độ trong không gian"
+    },
+    {
+      "id": "p1q09",
+      "part": 1,
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "15: lớp 12A có 40 học sinh, 22 em đăng ký Kinh tế, 25 em đăng ký Luật, 3 em không đăng ký cả hai. Biết em được chọn đăng ký Luật, xác suất em đó đăng ký Kinh tế là?",
+      "choices": [
+        "3/5",
+        "2/5",
+        "3/7",
+        "4/7"
+      ],
+      "answer": 1,
+      "explain": "Số em đăng ký cả hai ngành là 22 + 25 − (40 − 3) = 10. Xác suất cần tìm là 10/25 = 2/5.",
+      "wrong_explain": {
+        "0": "3/5 không đúng: mẫu số là 25 (số em đăng ký Luật), tử số là 10.",
+        "2": "3/7 không khớp: số em đăng ký cả hai là 10.",
+        "3": "4/7 không khớp với dữ kiện bài toán."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap2/on-tap-cuoi-nam/bai-tap-on-tap-cuoi-nam.json",
+        "id": "q16"
+      },
+      "topic": "Bài tập ôn tập cuối năm"
+    },
+    {
+      "id": "p1q10",
+      "part": 1,
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Giá trị lớn nhất của y = xe^(−x) trên ℝ là?",
+      "choices": [
+        "1/e",
+        "e",
+        "0",
+        "Không có"
+      ],
+      "answer": 0,
+      "explain": "y' = (1 − x)e^(−x) = 0 khi x = 1, y(1) = 1/e. Khi x → +∞ thì y → 0⁺ và khi x → −∞ thì y → −∞, nên giá trị lớn nhất là 1/e.",
+      "wrong_explain": {
+        "1": "e là số lớn hơn 1/e; giá trị y(1) = e^(−1) = 1/e.",
+        "2": "0 là giới hạn khi x → +∞, nhưng hàm số đạt giá trị lớn hơn 0 tại x = 1.",
+        "3": "Hàm số có giá trị lớn nhất 1/e tại x = 1."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap1/chuong-1/on-tap/bai-tap-cuoi-chuong-1.json",
+        "id": "q36"
+      },
+      "topic": "Chương I. Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số"
+    },
+    {
+      "id": "p1q11",
+      "part": 1,
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Tứ diện ABCD, MB + 2MA = 0 và NC = 2DN. Biểu diễn MN theo AD và BC?",
+      "figure": "figures/t12-v-tu-dien-mn2.svg",
+      "choices": [
+        "MN = (BC + 2AD)/3",
+        "MN = (2BC + AD)/3",
+        "MN = (BC − 2AD)/3",
+        "MN = (AD + BC)/2"
+      ],
+      "answer": 0,
+      "explain": "MB + 2MA = 0 cho M = (B + 2A)/3; NC = 2DN cho N = (C + 2D)/3. Suy ra MN = (BC + 2AD)/3.",
+      "wrong_explain": {
+        "1": "Hệ số 2 đặt sai vị trí.",
+        "2": "Dấu của 2AD sai.",
+        "3": "Hệ số không đúng."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap1/chuong-2/on-tap/bai-tap-cuoi-chuong-2.json",
+        "id": "q12"
+      },
+      "topic": "Chương II. Vectơ và hệ trục toạ độ trong không gian"
+    },
+    {
+      "id": "p1q12",
+      "part": 1,
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Hệ số góc tiếp tuyến tại M(x; f(x)) là k = (x − 1)². Tại x = 0 điểm M trùng gốc toạ độ O, tức f(0) = 0. Biểu thức f(x) là?",
+      "choices": [
+        "f(x) = (x − 1)³/3 + 1/3",
+        "f(x) = (x − 1)³/3 − 1/3",
+        "f(x) = (x − 1)²/2 + 1/2",
+        "f(x) = (x − 1)³"
+      ],
+      "answer": 0,
+      "explain": "f(x) = ∫(x − 1)²dx = (x − 1)³/3 + C; f(0) = 0 nên C = 1/3.",
+      "wrong_explain": {
+        "1": "Hằng số phải là +1/3 vì f(0) = 0.",
+        "2": "Nguyên hàm của (x − 1)² có bậc 3, không phải bậc 2.",
+        "3": "Đạo hàm của (x − 1)³ là 3(x − 1)², không phải (x − 1)²."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap2/chuong-4/bai-11/nguyen-ham.json",
+        "id": "q26"
+      },
+      "topic": "Chương IV. Nguyên hàm và tích phân"
+    },
+    {
+      "id": "p2q01",
+      "part": 2,
+      "type": "tf",
+      "level": "Hiểu",
+      "stem": "Hàm số y = −2x³ + 3x² − 5x có cực trị không?",
+      "statements": [
+        {
+          "text": "Có cả cực đại và cực tiểu",
+          "truth": false,
+          "explain": "Hàm số không có cực trị vì y' không đổi dấu."
+        },
+        {
+          "text": "Có một cực đại",
+          "truth": false,
+          "explain": "Hàm số không có điểm nào mà y' đổi dấu, nên không có cực đại."
+        },
+        {
+          "text": "Không có cực trị, vì y' = −6x² + 6x − 5 < 0 với mọi x",
+          "truth": true,
+          "explain": "Biệt thức của y' là 36 − 120 < 0 nên y' < 0 với mọi x; hàm số nghịch biến trên ℝ và không có cực trị."
+        },
+        {
+          "text": "Có một cực tiểu",
+          "truth": false,
+          "explain": "Không có điểm nào mà y' đổi dấu từ âm sang dương, nên không có cực tiểu."
+        }
+      ],
+      "src": {
+        "lesson": "tap1/chuong-1/bai-4/khao-sat-ve-do-thi.json",
+        "id": "q08"
+      },
+      "topic": "Chương I. Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số"
+    },
+    {
+      "id": "p2q02",
+      "part": 2,
+      "type": "tf",
+      "level": "Hiểu",
+      "stem": "Thể tích khối tròn xoay khi quay hình phẳng giới hạn bởi y = √(1 − x²), trục hoành, x = −1, x = 1 quanh Ox là?",
+      "statements": [
+        {
+          "text": "3π/2",
+          "truth": false,
+          "explain": "Quên nhân 2 phần hai bên."
+        },
+        {
+          "text": "4π/3",
+          "truth": true,
+          "explain": "V = π∫_{−1}^{1}(1 − x²)dx = π(2 − 2/3) = 4π/3."
+        },
+        {
+          "text": "3π/4",
+          "truth": false,
+          "explain": "Tính sai tích phân."
+        },
+        {
+          "text": "2π/3",
+          "truth": false,
+          "explain": "Đã lấy sai cận hoặc hàm."
+        }
+      ],
+      "src": {
+        "lesson": "tap2/chuong-4/on-tap/bai-tap-cuoi-chuong-4.json",
+        "id": "q07"
+      },
+      "topic": "Chương IV. Nguyên hàm và tích phân",
+      "figure": "figures/bt12-c4-q07.svg"
+    },
+    {
+      "id": "p2q03",
+      "part": 2,
+      "type": "tf",
+      "level": "Hiểu",
+      "stem": "Ví dụ 10: mặt phẳng đi qua A(1; 2; −2), B(2; 4; 1) và vuông góc với (R): x + 3y + z − 1 = 0 có phương trình là?",
+      "statements": [
+        {
+          "text": "7x − 2y − z − 5 = 0",
+          "truth": true,
+          "explain": "AB = (1; 2; 3), n_R = (1; 3; 1), vectơ pháp tuyến [AB, n_R] = (−7; 2; 1); phương trình 7x − 2y − z − 5 = 0 (thay A: 7 − 4 + 2 − 5 = 0)."
+        },
+        {
+          "text": "7x − 2y + z − 5 = 0",
+          "truth": false,
+          "explain": "Dấu của hệ số z sai, thay A không thỏa mãn."
+        },
+        {
+          "text": "7x + 2y − z − 5 = 0",
+          "truth": false,
+          "explain": "Dấu của hệ số y sai; vectơ pháp tuyến có thành phần thứ hai là 2."
+        },
+        {
+          "text": "7x − 2y − z + 5 = 0",
+          "truth": false,
+          "explain": "Hằng số sai dấu: thay A(1; 2; −2) được 7 − 4 + 2 + 5 ≠ 0."
+        }
+      ],
+      "src": {
+        "lesson": "tap2/chuong-5/bai-14/phuong-trinh-mat-phang.json",
+        "id": "q09"
+      },
+      "topic": "Chương V. Phương pháp toạ độ trong không gian"
+    },
+    {
+      "id": "p2q04",
+      "part": 2,
+      "type": "tf",
+      "level": "Hiểu",
+      "stem": "Cho hình chữ nhật ABCD và điểm S bất kì. Đẳng thức SA + SC = SB + SD đúng hay sai?",
+      "statements": [
+        {
+          "text": "Sai, vì không có đỉnh S",
+          "truth": false,
+          "explain": "S là điểm bất kì, không nhất thiết là đỉnh hình chóp; đẳng thức không phụ thuộc vị trí S."
+        },
+        {
+          "text": "Đúng: ABCD là hình bình hành nên SA + SC = SB + SD",
+          "truth": true,
+          "explain": "Với hình bình hành ABCD, SA + SC = SB + SD (đặc trưng vectơ của hình bình hành, xem bài 2.6)."
+        },
+        {
+          "text": "Sai, vì SA + SC = 2SO",
+          "truth": false,
+          "explain": "Đẳng thức đúng; SA + SC = 2SO là đúng nhưng không cần thiết."
+        },
+        {
+          "text": "Chỉ đúng khi S là trung điểm",
+          "truth": false,
+          "explain": "Đẳng thức đúng với mọi S."
+        }
+      ],
+      "src": {
+        "lesson": "tap1/chuong-2/on-tap/bai-tap-cuoi-chuong-2.json",
+        "id": "q11"
+      },
+      "topic": "Chương II. Vectơ và hệ trục toạ độ trong không gian"
+    },
+    {
+      "id": "p3q01",
+      "part": 3,
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Giá trị nhỏ nhất của y = x + 4/x trên [1; 4] là?",
+      "expr": "4",
+      "answer": "4",
+      "explain": "y′ = 1 − 4/x² = 0 ⇒ x = 2. y(1) = 5, y(2) = 4, y(4) = 5. Nhỏ nhất là 4.",
+      "src": {
+        "lesson": "tap1/chuong-1/bai-2/gia-tri-lon-nho-nhat.json",
+        "id": "q21"
+      },
+      "topic": "Chương I. Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số"
+    },
+    {
+      "id": "p3q02",
+      "part": 3,
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Phương sai của mẫu số liệu tuổi thọ linh kiện của phân xưởng 1 (giá trị đại diện 1,75; 2,25; 2,75; 3,25; 3,75 với tần số 4, 9, 13, 8, 6) là?",
+      "expr": "(4*1.75*1.75+9*2.25*2.25+13*2.75*2.75+8*3.25*3.25+6*3.75*3.75)/40-(223/80)*(223/80)",
+      "answer": "2271/6400",
+      "explain": "x̄ = 223/80 ≈ 2,79; s² = 2271/6400 ≈ 0,355; s ≈ 0,60.",
+      "src": {
+        "lesson": "tap1/chuong-3/bai-10/phuong-sai-do-lech-chuan.json",
+        "id": "q11"
+      },
+      "topic": "Chương III. Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm"
+    },
+    {
+      "id": "p3q03",
+      "part": 3,
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Khoảng cách xa nhất cá bơi được (km) với v(t) = −2t/5 + 4 là?",
+      "expr": "40-(1/5)*100",
+      "answer": "20",
+      "explain": "v(t) = 0 tại t = 10; khoảng cách = ∫_0^{10}(4 − 2t/5)dt = 40 − 20 = 20 (km).",
+      "src": {
+        "lesson": "tap2/chuong-4/on-tap/bai-tap-cuoi-chuong-4.json",
+        "id": "q13"
+      },
+      "topic": "Chương IV. Nguyên hàm và tích phân"
+    },
+    {
+      "id": "p3q04",
+      "part": 3,
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Đường thẳng d: x = t, y = 1 + t, z = 2 − t cắt mặt phẳng z = 0 tại điểm có hoành độ là?",
+      "expr": "2",
+      "answer": "2",
+      "explain": "z = 2 − t = 0 ⇒ t = 2 ⇒ x = 2.",
+      "src": {
+        "lesson": "tap2/chuong-5/bai-15/phuong-trinh-duong-thang.json",
+        "id": "q31"
+      },
+      "topic": "Chương V. Phương pháp toạ độ trong không gian"
+    },
+    {
+      "id": "p3q05",
+      "part": 3,
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Nhóm 25 học sinh, 14 học khá Toán, 16 học khá Vật lí, 1 em không khá cả hai môn. Xác suất chọn học sinh học khá Toán và khá Vật lí là?",
+      "expr": "6/25",
+      "answer": "6/25",
+      "explain": "Số học sinh học khá cả hai môn là 6, nên P = 6/25.",
+      "src": {
+        "lesson": "tap2/chuong-6/on-tap/bai-tap-cuoi-chuong-6.json",
+        "id": "q09"
+      },
+      "topic": "Chương VI. Xác suất có điều kiện"
+    },
+    {
+      "id": "p3q06",
+      "part": 3,
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Cho A(2; 4; 6), B(4; 0; 2). Trung điểm M có tổng ba tọa độ bằng?",
+      "expr": "3+2+4",
+      "answer": "9",
+      "explain": "M(3; 2; 4), tổng 9.",
+      "src": {
+        "lesson": "tap1/chuong-2/bai-8/bieu-thuc-toa-do.json",
+        "id": "q27"
+      },
+      "topic": "Chương II. Vectơ và hệ trục toạ độ trong không gian"
+    }
+  ]
+}

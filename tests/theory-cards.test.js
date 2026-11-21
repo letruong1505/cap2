@@ -12,7 +12,7 @@ function collect(subject) {
       if (f.isDirectory()) { if (f.name !== 'figures') walk(p); } else if (f.name.endsWith('.json') && f.name !== 'manifest.json') out.push(p);
     }
   })(path.join(__dirname, '..', 'content', subject));
-  return out.filter((p) => !p.includes('on-tap') && !p.includes('nang-cao'));
+  return out.filter((p) => !p.includes('on-tap') && !p.includes('nang-cao') && !p.includes('de-thi'));
 }
 // minTry: số câu "Thử ngay" tối thiểu (các môn dựng tự động bằng tools/auto-cards.py chưa có câu thử)
 const SUBJECTS = { toan12: [19, 25], ly12: [25, 25], hoa12: [22, 11], sinh12: [35, 17], lichsu12: [17, 8], diali12: [35, 17], gdktpl12: [16, 8],

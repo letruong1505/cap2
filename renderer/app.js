@@ -442,7 +442,7 @@ function updateScore(lesson, attempt) {
 }
 
 function showOnly(id) {
-  for (const sec of ['launch', 'subjects', 'home', 'lesson', 'games', 'game', 'national', 'aiwork', 'examprep', 'thpt', 'purchase', 'review', 'report', 'parent-view', 'empty']) {
+  for (const sec of ['launch', 'subjects', 'home', 'lesson', 'exam', 'games', 'game', 'national', 'aiwork', 'examprep', 'thpt', 'purchase', 'review', 'report', 'parent-view', 'empty']) {
     document.getElementById(sec).hidden = sec !== id;
   }
 }
@@ -590,6 +590,11 @@ async function openLesson(relPath, mode = 'practice') {
     const lesson = await window.vungBai.loadLesson(relPath);
     document.getElementById('breadcrumb').textContent =
       `Lớp ${lesson.grade} › ${{ anh: 'Tiếng Anh', toan: 'Toán', ly: 'Vật lí', hoa: 'Hoá học', sinh: 'Sinh học', gdktpl: 'Giáo dục KT&PL', 'lich-su': 'Lịch sử', 'dia-li': 'Địa lí' }[lesson.subject] || lesson.subject} › ${lesson.chapter}`;
+
+    if (lesson.kind === 'exam' && window.VungExam) {
+      window.VungExam.open(lesson, relPath, () => { document.getElementById('breadcrumb').textContent = ''; showOnly('home'); });
+      return;
+    }
 
     if (lesson.kind === 'review') {
       const view = mode === 'solutions' ? 'solutions' : 'review';

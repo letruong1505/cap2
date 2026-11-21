@@ -1,0 +1,576 @@
+{
+  "id": "de-02",
+  "kind": "exam",
+  "grade": 12,
+  "subject": "toan",
+  "bookSeries": "Nam Linh Educenter",
+  "book": "Đề thi thử tốt nghiệp",
+  "chapter": "Đề thi thử theo cấu trúc tốt nghiệp THPT",
+  "lesson": "Đề thi thử số 2",
+  "title": "Đề thi thử tốt nghiệp THPT số 2",
+  "durationMin": 90,
+  "structure": {
+    "p1": {
+      "n": 12,
+      "each": 0.25
+    },
+    "p2": {
+      "n": 4,
+      "byCorrect": [
+        0,
+        0.1,
+        0.25,
+        0.5,
+        1
+      ]
+    },
+    "p3": {
+      "n": 6,
+      "each": 0.5
+    }
+  },
+  "theory": [],
+  "items": [
+    {
+      "id": "p1q01",
+      "part": 1,
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Góc giữa hai đường thẳng có vectơ chỉ phương u, u′ được tính bằng công thức?",
+      "choices": [
+        "cos = |u·u′| / (|u|·|u′|)",
+        "cos = u·u′ / (|u| + |u′|)",
+        "cos = |u − u′| / (|u|·|u′|)",
+        "cos = u·u′"
+      ],
+      "answer": 0,
+      "explain": "Lấy giá trị tuyệt đối của tích vô hướng rồi chia cho tích độ dài.",
+      "wrong_explain": {
+        "1": "Chia cho tổng độ dài thay vì tích độ dài.",
+        "2": "Dùng hiệu vectơ thay vì tích vô hướng.",
+        "3": "Quên chia cho tích độ dài."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap2/chuong-5/bai-16/cong-thuc-tinh-goc.json",
+        "id": "q18"
+      },
+      "topic": "Chương V. Phương pháp toạ độ trong không gian"
+    },
+    {
+      "id": "p1q02",
+      "part": 1,
+      "level": "Biết",
+      "type": "mcq",
+      "stem": "Nguyên hàm của x^α (α ≠ −1) là?",
+      "choices": [
+        "α·x^(α−1) + C",
+        "x^(α+1)/(α+1) + C",
+        "x^α·ln x + C",
+        "x^(α+1) + C"
+      ],
+      "answer": 1,
+      "explain": "Tăng số mũ lên 1 rồi chia cho số mũ mới.",
+      "wrong_explain": {
+        "0": "Đó là đạo hàm của x^α, không phải nguyên hàm.",
+        "2": "Nhầm với công thức có logarit.",
+        "3": "Quên chia cho α + 1."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap2/chuong-4/bai-11/nguyen-ham.json",
+        "id": "q33"
+      },
+      "topic": "Chương IV. Nguyên hàm và tích phân"
+    },
+    {
+      "id": "p1q03",
+      "part": 1,
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "4: đồ thị trong hình là của hàm số nào?",
+      "figure": "figures/ocn-q04-do-thi-bac-ba.svg",
+      "choices": [
+        "y = −x³ + 3x² + 1",
+        "y = x³ − 3x² + 3",
+        "y = −x² + 2x + 1",
+        "y = (x + 1)/(x − 1)"
+      ],
+      "answer": 1,
+      "explain": "Đồ thị có dạng bậc ba với hệ số dương, cực đại gần trục tung và điểm cực tiểu bên phải; y = x³ − 3x² + 3 có y' = 3x(x − 2), cực đại tại x = 0 và cực tiểu tại x = 2.",
+      "wrong_explain": {
+        "0": "Hệ số của x³ âm nên đồ thị đi xuống bên phải, trái với hình.",
+        "2": "Đây là hàm bậc hai, đồ thị là parabol.",
+        "3": "Đây là hàm phân thức, đồ thị không có dạng đường cong bậc ba."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap2/on-tap-cuoi-nam/bai-tap-on-tap-cuoi-nam.json",
+        "id": "q04"
+      },
+      "topic": "Bài tập ôn tập cuối năm"
+    },
+    {
+      "id": "p1q04",
+      "part": 1,
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "∫(2cos x − 1/cos²x)dx bằng?",
+      "choices": [
+        "2sin x − tan x + C",
+        "2sin x + tan x + C",
+        "−2sin x − tan x + C",
+        "2cos x − tan x + C"
+      ],
+      "answer": 0,
+      "explain": "∫2cos x dx = 2sin x và ∫(1/cos²x)dx = tan x.",
+      "wrong_explain": {
+        "1": "Dấu của tan x bị sai.",
+        "2": "Dấu của sin x bị sai.",
+        "3": "∫cos x dx = sin x, không phải cos x."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap2/chuong-4/bai-11/nguyen-ham.json",
+        "id": "q15"
+      },
+      "topic": "Chương IV. Nguyên hàm và tích phân"
+    },
+    {
+      "id": "p1q05",
+      "part": 1,
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hàm số y = x − 2 + 1/x trên khoảng (0; +∞) có giá trị lớn nhất hay không?",
+      "choices": [
+        "Có, bằng 0",
+        "Không, vì y → +∞ khi x → 0⁺ và khi x → +∞",
+        "Có, bằng 1",
+        "Không, vì y' luôn dương"
+      ],
+      "answer": 1,
+      "explain": "Hàm số không bị chặn trên khi x tiến về 0⁺ hoặc +∞ nên không có giá trị lớn nhất.",
+      "wrong_explain": {
+        "0": "0 là giá trị nhỏ nhất, không phải giá trị lớn nhất, vì hàm số có thể lấy giá trị lớn tùy ý.",
+        "2": "Không có số nào là giá trị lớn nhất; hàm số lấy giá trị lớn tùy ý khi x gần 0 hoặc x rất lớn.",
+        "3": "y' = 1 − 1/x² đổi dấu tại x = 1 nên không luôn dương."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap1/chuong-1/bai-2/gia-tri-lon-nho-nhat.json",
+        "id": "q05"
+      },
+      "topic": "Chương I. Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số"
+    },
+    {
+      "id": "p1q06",
+      "part": 1,
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Cho P(A) = 2/5, P(B | A) = 1/3, P(B | Ā) = 1/4. Giá trị của P(BĀ) là?",
+      "choices": [
+        "1/7",
+        "4/19",
+        "4/21",
+        "3/20"
+      ],
+      "answer": 3,
+      "explain": "P(BĀ) = P(Ā) · P(B | Ā) = 3/5 · 1/4 = 3/20.",
+      "wrong_explain": {
+        "0": "1/7 không khớp: P(Ā) = 3/5 và P(B | Ā) = 1/4, tích là 3/20.",
+        "1": "4/19 không đúng: P(BĀ) = 3/5 · 1/4 = 3/20.",
+        "2": "4/21 không đúng: P(BĀ) = P(Ā) · P(B | Ā) = 3/20."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap2/chuong-6/on-tap/bai-tap-cuoi-chuong-6.json",
+        "id": "q02"
+      },
+      "topic": "Chương VI. Xác suất có điều kiện"
+    },
+    {
+      "id": "p1q07",
+      "part": 1,
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hai vectơ a, b có |a| = |b| = 1 và góc (a, b) = 45°. Giá trị a·b là?",
+      "choices": [
+        "√2/2",
+        "1",
+        "√2",
+        "1/2"
+      ],
+      "answer": 0,
+      "explain": "a·b = |a|·|b|·cos45° = √2/2.",
+      "wrong_explain": {
+        "1": "Đó là tích khi góc 0°.",
+        "2": "√2 vượt quá giới hạn vì |a|·|b| = 1.",
+        "3": "cos 60° = 1/2, không phải cos 45°."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap1/chuong-2/bai-6/vecto-trong-khong-gian.json",
+        "id": "q21"
+      },
+      "topic": "Chương II. Vectơ và hệ trục toạ độ trong không gian"
+    },
+    {
+      "id": "p1q08",
+      "part": 1,
+      "level": "Hiểu",
+      "type": "mcq",
+      "stem": "Hàm số y = x³ − 2x² + 2x − 1 có bao nhiêu điểm cực trị?",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 0,
+      "explain": "y' = 3x² − 4x + 2 có biệt thức Δ' = 4 − 6 < 0, nên y' > 0 với mọi x và hàm số không có cực trị.",
+      "wrong_explain": {
+        "1": "Hàm số bậc ba có tối đa hai điểm cực trị, và ở đây y' không đổi dấu nên không có điểm nào.",
+        "2": "Muốn có hai cực trị, y' phải có hai nghiệm đổi dấu; ở đây y' không có nghiệm.",
+        "3": "Hàm số bậc ba không thể có ba điểm cực trị."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap1/chuong-1/bai-4/khao-sat-ve-do-thi.json",
+        "id": "q04"
+      },
+      "topic": "Chương I. Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số"
+    },
+    {
+      "id": "p1q09",
+      "part": 1,
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Ví dụ 6 (GPS): vị trí P(0; 3/4; √7/4) trên mặt đất có vĩ độ α và kinh độ β là?",
+      "choices": [
+        "≈ 41,4°N, 90°E",
+        "≈ 48,6°N, 90°E",
+        "≈ 41,4°N, 0°E",
+        "≈ 90°N, 41,4°E"
+      ],
+      "answer": 0,
+      "explain": "x = cos α cos β = 0 nên cos β = 0, β = 90° (E); z = sin α = √7/4 nên α ≈ 41,4°N.",
+      "wrong_explain": {
+        "1": "48,6° = 90° − 41,4° là sai: sin α = √7/4 cho α ≈ 41,4°.",
+        "2": "Nếu β = 0 thì x = cos α ≠ 0, không khớp tọa độ P.",
+        "3": "Hai thành phần vĩ độ và kinh độ bị đổi chỗ."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap2/chuong-5/bai-17/phuong-trinh-mat-cau.json",
+        "id": "q15"
+      },
+      "topic": "Chương V. Phương pháp toạ độ trong không gian"
+    },
+    {
+      "id": "p1q10",
+      "part": 1,
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "So sánh C'(100) với chi phí sản xuất đơn vị hàng hoá thứ 101.",
+      "choices": [
+        "C'(100) = 2,5 gần bằng C(101) − C(100) ≈ 2,527 (trăm nghìn đồng)",
+        "C'(100) lớn hơn đáng kể so với chi phí đơn vị thứ 101",
+        "C'(100) bằng 0 nên không có chi phí",
+        "C'(100) gấp đôi chi phí đơn vị thứ 101"
+      ],
+      "answer": 0,
+      "explain": "C(101) − C(100) = 10 107/4000 ≈ 2,527, còn C'(100) = 2,5. Hai giá trị rất gần nhau.",
+      "wrong_explain": {
+        "1": "Chênh lệch chỉ khoảng 0,027 (trăm nghìn đồng), không đáng kể.",
+        "2": "C'(100) = 2,5 khác 0.",
+        "3": "2,5 không gấp đôi 2,527."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap1/chuong-1/on-tap/bai-tap-cuoi-chuong-1.json",
+        "id": "q52"
+      },
+      "topic": "Chương I. Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số"
+    },
+    {
+      "id": "p1q11",
+      "part": 1,
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Vận dụng 3b: khối nón có bán kính đáy R và chiều cao h có thể tích là?",
+      "choices": [
+        "πR²h/3",
+        "πR²h",
+        "πRh²/3",
+        "2πR²h/3"
+      ],
+      "answer": 0,
+      "explain": "Đặt r = 0 trong kết quả câu a: V = πhR²/3.",
+      "wrong_explain": {
+        "1": "Không có hệ số 1/3 thì không phải thể tích khối nón.",
+        "2": "R và h bị đổi chỗ.",
+        "3": "Hệ số 2/3 sai; phải là 1/3."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap2/chuong-4/bai-13/ung-dung-hinh-hoc.json",
+        "id": "q14"
+      },
+      "topic": "Chương IV. Nguyên hàm và tích phân"
+    },
+    {
+      "id": "p1q12",
+      "part": 1,
+      "level": "Vận dụng",
+      "type": "mcq",
+      "stem": "Tình huống mở đầu: có cần đưa máy đo độ ẩm đi sửa chữa không (biết máy cần sửa nếu s > 0,15)?",
+      "choices": [
+        "Không cần, vì s ≈ 0,10 < 0,15",
+        "Cần, vì s ≈ 0,10 > 0,15",
+        "Cần, vì s = 0,15",
+        "Không kết luận được"
+      ],
+      "answer": 0,
+      "explain": "Độ lệch chuẩn của mẫu số liệu ghép nhóm là s ≈ 0,10, nhỏ hơn 0,15 nên máy vẫn ổn định.",
+      "wrong_explain": {
+        "1": "0,10 nhỏ hơn 0,15, không lớn hơn.",
+        "2": "s ≈ 0,10 chứ không bằng 0,15.",
+        "3": "Có đủ dữ kiện để kết luận: s ≈ 0,10 < 0,15."
+      },
+      "concept": true,
+      "src": {
+        "lesson": "tap1/chuong-3/bai-10/phuong-sai-do-lech-chuan.json",
+        "id": "q05"
+      },
+      "topic": "Chương III. Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm"
+    },
+    {
+      "id": "p2q01",
+      "part": 2,
+      "type": "tf",
+      "level": "Hiểu",
+      "stem": "Cho hàm số f(x) = (2x² − 2x − 4)/(x² + x − 6). Khẳng định nào đúng?",
+      "statements": [
+        {
+          "text": "Đường thẳng x = 2 là tiệm cận đứng",
+          "truth": false,
+          "explain": "Thừa số x − 2 rút gọn được, giới hạn tại 2 hữu hạn (bằng 6/5), nên x = 2 không phải tiệm cận đứng."
+        },
+        {
+          "text": "Đường thẳng x = 2 là tiệm cận ngang",
+          "truth": false,
+          "explain": "x = 2 là đường thẳng đứng, không thể là tiệm cận ngang."
+        },
+        {
+          "text": "Đường thẳng y = 1 là tiệm cận ngang",
+          "truth": false,
+          "explain": "Giới hạn ở vô cực bằng 2, không phải 1."
+        },
+        {
+          "text": "Đường thẳng y = 2 là tiệm cận ngang",
+          "truth": true,
+          "explain": "Phân tích tử và mẫu: f(x) = 2(x − 2)(x + 1)/((x − 2)(x + 3)) = 2(x + 1)/(x + 3) với x ≠ 2. Giới hạn tại x = 2 hữu hạn (bằng 6/5) nên x = 2 không phải tiệm cận đứng; lim_{x→±∞} f(x) = 2 nên y = 2 là tiệm cận ngang."
+        }
+      ],
+      "src": {
+        "lesson": "tap1/chuong-1/on-tap/bai-tap-cuoi-chuong-1.json",
+        "id": "q63"
+      },
+      "topic": "Chương I. Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số"
+    },
+    {
+      "id": "p2q02",
+      "part": 2,
+      "type": "tf",
+      "level": "Hiểu",
+      "stem": "∫_0^1 e^x dx bằng?",
+      "statements": [
+        {
+          "text": "1 − e",
+          "truth": false,
+          "explain": "1 − e là kết quả khi đổi cận dấu."
+        },
+        {
+          "text": "e − 1",
+          "truth": true,
+          "explain": "Nguyên hàm của e^x là e^x, nên kết quả là e − 1."
+        },
+        {
+          "text": "e + 1",
+          "truth": false,
+          "explain": "Phải trừ, không cộng."
+        },
+        {
+          "text": "e",
+          "truth": false,
+          "explain": "Đã quên trừ e⁰ = 1 ở cận dưới."
+        }
+      ],
+      "src": {
+        "lesson": "tap2/chuong-4/bai-12/tich-phan.json",
+        "id": "q08"
+      },
+      "topic": "Chương IV. Nguyên hàm và tích phân"
+    },
+    {
+      "id": "p2q03",
+      "part": 2,
+      "type": "tf",
+      "level": "Hiểu",
+      "stem": "Tọa độ đỉnh C của hình hộp ABCD.A'B'C'D' với A(1; −1; 3), B(0; 2; 4), D(2; −1; 1) là?",
+      "statements": [
+        {
+          "text": "(0; 1; 2)",
+          "truth": false,
+          "explain": "Điểm (0; 1; 2) là A', không phải C."
+        },
+        {
+          "text": "(−1; 4; 3)",
+          "truth": false,
+          "explain": "Điểm (−1; 4; 3) là B', không phải C."
+        },
+        {
+          "text": "(1; 2; 2)",
+          "truth": true,
+          "explain": "C = B + D − A = (0 + 2 − 1; 2 − 1 + 1; 4 + 1 − 3) = (1; 2; 2)."
+        },
+        {
+          "text": "(1; 1; 0)",
+          "truth": false,
+          "explain": "Điểm (1; 1; 0) là D', không phải C."
+        }
+      ],
+      "src": {
+        "lesson": "tap2/chuong-5/bai-14/phuong-trinh-mat-phang.json",
+        "id": "q21"
+      },
+      "topic": "Chương V. Phương pháp toạ độ trong không gian",
+      "figure": "figures/t12-v-hop-c.svg"
+    },
+    {
+      "id": "p2q04",
+      "part": 2,
+      "type": "tf",
+      "level": "Hiểu",
+      "stem": "Cho hình lập phương ABCD.A'B'C'D'. Trong các vectơ AC, AD, AD', hai vectơ nào có giá cùng nằm trong mặt phẳng (ABCD)?",
+      "statements": [
+        {
+          "text": "AC và AD",
+          "truth": true,
+          "explain": "AC và AD đều nằm trong mặt phẳng đáy ABCD; AD' không nằm trong mặt phẳng này."
+        },
+        {
+          "text": "AC và AD'",
+          "truth": false,
+          "explain": "AD' không nằm trong mặt đáy ABCD."
+        },
+        {
+          "text": "Không cặp nào",
+          "truth": false,
+          "explain": "AC và AD đều nằm trong (ABCD)."
+        },
+        {
+          "text": "AD và AD'",
+          "truth": false,
+          "explain": "AD' không nằm trong mặt đáy ABCD."
+        }
+      ],
+      "src": {
+        "lesson": "tap1/chuong-2/bai-6/vecto-trong-khong-gian.json",
+        "id": "q02"
+      },
+      "topic": "Chương II. Vectơ và hệ trục toạ độ trong không gian",
+      "figure": "figures/c2-6-hinh-lap-phuong.svg"
+    },
+    {
+      "id": "p3q01",
+      "part": 3,
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một vật được phóng thẳng đứng lên cao có độ cao h(t) = 2 + 24,5t − 4,9t² (mét), t tính bằng giây. Vật đạt độ cao lớn nhất tại thời điểm t = ? giây (nhập dạng phân số tối giản, ví dụ 5/2).",
+      "expr": "(49/2)/(2*49/10)",
+      "answer": "5/2",
+      "explain": "h'(t) = 24,5 − 9,8t = 0 khi t = 2,5 giây. Vì h''(t) = −9,8 < 0 nên đây là điểm cực đại, cũng là độ cao lớn nhất.",
+      "src": {
+        "lesson": "tap1/chuong-1/bai-1/don-dieu-cuc-tri.json",
+        "id": "q07"
+      },
+      "topic": "Chương I. Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số"
+    },
+    {
+      "id": "p3q02",
+      "part": 3,
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Tứ phân vị thứ ba Q₃ (nhóm [6,5; 7) có tần số 10, tần số tích luỹ trước là 25) là?",
+      "expr": "6.5+((30-25)/10)*0.5",
+      "answer": "27/4",
+      "explain": "Q₃ = 6,5 + ((30 − 25)/10)·0,5 = 6,75 (giờ).",
+      "src": {
+        "lesson": "tap1/chuong-3/on-tap/bai-tap-cuoi-chuong-3.json",
+        "id": "q08"
+      },
+      "topic": "Chương III. Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm"
+    },
+    {
+      "id": "p3q03",
+      "part": 3,
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Biết ∫₀¹ f(x)dx = 2. Giá trị ∫₀¹ (3f(x) + 2) dx là?",
+      "expr": "3*2+2",
+      "answer": "8",
+      "explain": "3·2 + 2·(1 − 0) = 8.",
+      "src": {
+        "lesson": "tap2/chuong-4/bai-12/tich-phan.json",
+        "id": "q36"
+      },
+      "topic": "Chương IV. Nguyên hàm và tích phân"
+    },
+    {
+      "id": "p3q04",
+      "part": 3,
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Mặt cầu tâm I(1; 2; 3) tiếp xúc mặt phẳng 2x − y + 2z − 3 = 0 có bán kính là?",
+      "expr": "1",
+      "answer": "1",
+      "explain": "R = d(I, (P)) = |2 − 2 + 6 − 3|/3 = 1.",
+      "src": {
+        "lesson": "tap2/chuong-5/bai-17/phuong-trinh-mat-cau.json",
+        "id": "q24"
+      },
+      "topic": "Chương V. Phương pháp toạ độ trong không gian"
+    },
+    {
+      "id": "p3q05",
+      "part": 3,
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Hộp 1 có 3 bi đỏ 2 xanh; hộp 2 có 1 bi đỏ 4 xanh. Chọn ngẫu nhiên một hộp rồi lấy một bi. Xác suất bi đỏ là? (nhập phân số)",
+      "expr": "(3/5+1/5)/2",
+      "answer": "2/5",
+      "explain": "P = (1/2)(3/5) + (1/2)(1/5) = 4/10 = 2/5.",
+      "src": {
+        "lesson": "tap2/chuong-6/bai-19/cong-thuc-xac-suat-toan-phan-bayes.json",
+        "id": "q34"
+      },
+      "topic": "Chương VI. Xác suất có điều kiện"
+    },
+    {
+      "id": "p3q06",
+      "part": 3,
+      "level": "Vận dụng",
+      "type": "fill",
+      "stem": "Một máy bay có lực cản tỉ lệ với bình phương vận tốc. Khi vận tốc là 900 km/h và 920 km/h, F₁ = k·F₂ với k = (900/920)². Giá trị k là? (viết dưới dạng phân số tối giản)",
+      "expr": "(900/920)*(900/920)",
+      "answer": "2025/2116",
+      "explain": "Lực cản tỉ lệ với bình phương vận tốc nên k = (900/920)² = 2025/2116 ≈ 0,96.",
+      "src": {
+        "lesson": "tap1/chuong-2/bai-6/vecto-trong-khong-gian.json",
+        "id": "q14"
+      },
+      "topic": "Chương II. Vectơ và hệ trục toạ độ trong không gian"
+    }
+  ]
+}
