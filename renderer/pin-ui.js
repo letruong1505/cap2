@@ -90,8 +90,8 @@
         finish(await PIN.resetVerified(store(), newPin.value));
       });
       box.append(h('h2', {}, 'Quên mã PIN'), newPin,
-        h('h3', {}, 'Cách 1: có mã khôi phục'), code, viaCode,
-        h('h3', {}, 'Cách 2: xác minh bằng đơn hàng (cần mạng)'), phone, order, viaOrder, m,
+        h('h3', {}, 'Cách 1: Có mã khôi phục'), code, viaCode,
+        h('h3', {}, 'Cách 2: Xác minh bằng đơn hàng (cần mạng)'), phone, order, viaOrder, m,
         actions(btn('Đóng', '', () => close(false))));
     });
   }
@@ -141,7 +141,7 @@
     box.replaceChildren();
     const on = PIN.isSet(store());
     box.append(h('h2', {}, 'Mã PIN phụ huynh'),
-      h('p', { class: 'meta' }, on ? 'Đang bật: cần nhập PIN để xem báo cáo tuần và đổi mục tiêu.' : 'Chưa bật. Đặt PIN để học sinh không tự xem báo cáo hoặc đổi mục tiêu.'));
+      h('p', { class: 'meta' }, on ? 'Đang bật: Cần nhập PIN để xem báo cáo tuần và đổi mục tiêu.' : 'Chưa bật. Đặt PIN để học sinh không tự xem báo cáo hoặc đổi mục tiêu.'));
     if (!on) box.append(btn('Đặt mã PIN', 'primary', async () => { if (await setupPin()) rerender(); }));
     else {
       box.append(btn('Đổi mã PIN', '', async () => {

@@ -435,7 +435,7 @@ function updateScore(lesson, attempt) {
   if (wrong.length > 0) {
     const list = el('ul', { class: 'wrong-list' });
     for (const w of wrong) {
-      list.append(el('li', {}, `Câu ${w.no}: đáp án đúng là ${w.answer}`));
+      list.append(el('li', {}, `Câu ${w.no}: Đáp án đúng là ${w.answer}`));
     }
     box.append(list);
   }
@@ -740,7 +740,7 @@ function renderLicense(license) {
       termSmall = `Hết hạn ngày ${license.expiresOn.split('-').reverse().join('/')}`;
     }
   } else {
-    children.push(el('div', { class: 'muted' }, LICENSE_MESSAGES[license.status] || 'Chưa kích hoạt bản quyền. Đang dùng thử: mở 2 bài đầu của mỗi môn.'));
+    children.push(el('div', { class: 'muted' }, LICENSE_MESSAGES[license.status] || 'Chưa kích hoạt bản quyền. Đang dùng thử: Mở 2 bài đầu của mỗi môn.'));
     termBig = '—';
     termSmall = 'Chưa có bản quyền trả phí';
   }

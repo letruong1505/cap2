@@ -28,7 +28,7 @@
     const tile = (label, v, cls) => h('div', { class: 'ut ' + cls }, h('small', {}, label), h('b', {}, fmtDur(v)));
     return h('div', { class: 'goal-box usage-box' }, h('h2', {}, 'Thời gian dùng app'),
       h('div', { class: 'ut-row' }, tile('Mở app', u.open, 'ut-open'), tile('Dùng thực', u.active, 'ut-act'), tile('Ngắt quãng', u.brk, 'ut-brk')),
-      h('p', { class: 'meta' }, u.open ? 'Mở app: từ lúc mở đến lúc đóng. Dùng thực: app đang hiện trên màn hình và có thao tác. Ngắt quãng: lúc thu nhỏ, chuyển sang app khác hoặc lâu không thao tác. Chỉ là ước lượng, tính cả các môn.' : 'Chưa có dữ liệu thời gian trong khoảng này (cần cập nhật bản mới trên máy của con).'));
+      h('p', { class: 'meta' }, u.open ? 'Mở app: Từ lúc mở đến lúc đóng. Dùng thực: App đang hiện trên màn hình và có thao tác. Ngắt quãng: Lúc thu nhỏ, chuyển sang app khác hoặc lâu không thao tác. Chỉ là ước lượng, tính cả các môn.' : 'Chưa có dữ liệu thời gian trong khoảng này (cần cập nhật bản mới trên máy của con).'));
   }
   const fmtDate = (t) => new Date(t).toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit' });
 
@@ -89,7 +89,7 @@
     box.append(h('p', {}, `Hôm nay: ${p.todayDone}/${p.todayGoal} câu${p.todayDone >= p.todayGoal ? ' – đạt mục tiêu!' : ''}`), bar(p.todayDone, p.todayGoal));
     box.append(h('p', { class: 'meta' }, 'Chất lượng hôm nay'), qualityBar(p.todayCorrect, p.todayDone, true));
     box.append(h('p', {}, `Tuần này: ${p.daysDone}/${g.weekly} ngày học${p.daysDone >= g.weekly ? ' – đạt mục tiêu!' : ''}`), bar(p.daysDone, g.weekly));
-    box.append(h('p', { class: 'meta' }, `Điểm: hôm nay ${p.todayPts} · 7 ngày ${p.weekPts} · tổng ${p.totalPts}`));
+    box.append(h('p', { class: 'meta' }, `Điểm: Hôm nay ${p.todayPts} · 7 ngày ${p.weekPts} · tổng ${p.totalPts}`));
     const mk = (opts, cur, label) => {
       const sel = h('select', { 'aria-label': label });
       (opts.includes(cur) ? opts : opts.concat(cur).sort((a, b) => a - b)).forEach((o) => { const op = h('option', { value: o }, String(o)); if (o === cur) op.selected = true; sel.append(op); });
@@ -104,7 +104,7 @@
       P.save(store(), P.setGoals(P.load(store()), { daily: d.value, weekend: we.value, weekly: w.value })); renderGoals(box, grade);
     };
     d.addEventListener('change', apply); we.addEventListener('change', apply); w.addEventListener('change', apply);
-    box.append(h('p', { class: 'goal-set' }, 'Đặt mục tiêu: thứ 2–6 ', d, ' câu/ngày; thứ 7, CN ', we, ' câu/ngày; ', w, ' ngày học/tuần'));
+    box.append(h('p', { class: 'goal-set' }, 'Đặt mục tiêu: Thứ 2–6 ', d, ' câu/ngày; thứ 7, CN ', we, ' câu/ngày; ', w, ' ngày học/tuần'));
 
     /* Ngưỡng đạt: dưới ngưỡng thì báo "không đạt". Chung cho mọi môn, có thể đặt riêng từng môn đã học. */
     const PASS = [50, 60, 70, 75, 80, 85, 90, 95, 100];
@@ -381,7 +381,7 @@
     out.push(`Số bài đã nộp: ${r.attempts}, thời gian làm: ${r.minutes} phút`);
     if (r.usage && r.usage.open) out.push('Thời gian dùng app: ' + usageText(r.usage.open, r.usage.active));
     out.push(r.total ? `Đúng ${r.correct} · Sai ${r.wrong} (${r.pct}% đúng / ${100 - r.pct}% sai, tổng ${r.total} câu)` : 'Chưa có bài nào trong khoảng này');
-    r.subjects.forEach((s) => out.push(`${subjName(s.subject)} lớp ${s.grade}: đúng ${s.correct}, sai ${s.wrong} (${s.pct}% đúng) – ${s.passed ? 'ĐẠT' : 'KHÔNG ĐẠT'} (ngưỡng ${s.need}%)`));
+    r.subjects.forEach((s) => out.push(`${subjName(s.subject)} lớp ${s.grade}: Đúng ${s.correct}, sai ${s.wrong} (${s.pct}% đúng) – ${s.passed ? 'ĐẠT' : 'KHÔNG ĐẠT'} (ngưỡng ${s.need}%)`));
     if (r.weak.length) {
       out.push('Cần ôn thêm:');
       r.weak.forEach((c) => out.push(`  • ${c.name} (${subjName(c.subject)} ${c.grade}) – ${c.pct}%`));
@@ -434,7 +434,7 @@
       });
     }
     g.fillStyle = '#888'; g.font = '18px sans-serif';
-    g.fillText('Xanh: đúng · Đỏ: sai · Dữ liệu lưu trên máy của học sinh', 36, c.height - 24);
+    g.fillText('Xanh: Đúng · Đỏ: Sai · Dữ liệu lưu trên máy của học sinh', 36, c.height - 24);
     return c;
   }
 
@@ -460,7 +460,7 @@
     };
     r.days.forEach((d, i) => {
       const dt = new Date(d.t);
-      const col = h('button', { type: 'button', class: 'dc-col', 'aria-label': d.total ? `${fmtFull(d.t)}: ${d.pct}% đúng, ${d.total} câu` : `${fmtFull(d.t)}: chưa học` });
+      const col = h('button', { type: 'button', class: 'dc-col', 'aria-label': d.total ? `${fmtFull(d.t)}: ${d.pct}% đúng, ${d.total} câu` : `${fmtFull(d.t)}: Chưa học` });
       col.append(h('span', { class: 'dc-n' }, d.total && !many ? `${d.pct}%` : '\u00a0'));
       const bar = h('div', { class: 'dc-bar' });
       if (d.total) {
@@ -530,7 +530,7 @@
     body.append(h('div', { class: 'goal-box' }, h('h2', {}, 'Chất lượng làm bài'), qualityBar(r.correct, r.total, true)));
     const ub = usageBox(r); if (ub) body.append(ub);
     if (r.days.length > 1 || r.total) {
-      body.append(h('h2', { class: 'rep-h' }, 'Biểu đồ theo ngày'), h('div', { class: 'goal-box' }, dayChart(r), h('p', { class: 'meta' }, 'Xanh: câu đúng · Đỏ: câu sai')), h('h2', { class: 'rep-h' }, r.days.length <= 7 ? 'Lịch tuần' : 'Lịch học'), calendar(r, today));
+      body.append(h('h2', { class: 'rep-h' }, 'Biểu đồ theo ngày'), h('div', { class: 'goal-box' }, dayChart(r), h('p', { class: 'meta' }, 'Xanh: Câu đúng · Đỏ: Câu sai')), h('h2', { class: 'rep-h' }, r.days.length <= 7 ? 'Lịch tuần' : 'Lịch học'), calendar(r, today));
     }
     if (r.subjects.length) {
       const box = h('div', { class: 'goal-box' }, h('h2', {}, 'Theo môn học'));
@@ -643,7 +643,7 @@
         });
         body.append(h('div', { class: 'goal-box' }, h('h2', {}, 'Chất lượng làm bài'), qualityBar(r.correct, r.total, true)));
         const ub = usageBox(r); if (ub) body.append(ub);
-        if (r.days.length > 1 || r.total) body.append(h('h2', { class: 'rep-h' }, 'Biểu đồ theo ngày'), h('div', { class: 'goal-box' }, dayChart(r), h('p', { class: 'meta' }, 'Xanh: câu đúng · Đỏ: câu sai')), h('h2', { class: 'rep-h' }, r.days.length <= 7 ? 'Lịch tuần' : 'Lịch học'), calendar(r, today));
+        if (r.days.length > 1 || r.total) body.append(h('h2', { class: 'rep-h' }, 'Biểu đồ theo ngày'), h('div', { class: 'goal-box' }, dayChart(r), h('p', { class: 'meta' }, 'Xanh: Câu đúng · Đỏ: Câu sai')), h('h2', { class: 'rep-h' }, r.days.length <= 7 ? 'Lịch tuần' : 'Lịch học'), calendar(r, today));
         if (r.subjects.length) {
           const box = h('div', { class: 'goal-box' }, h('h2', {}, 'Theo môn học'));
           r.subjects.forEach((s) => box.append(h('p', {}, `${subjName(s.subject)} lớp ${s.grade}: ${s.lessons} bài · `, h('strong', { class: s.passed ? 'pass-ok' : 'pass-bad' }, s.passed ? `Đạt (${s.pct}% ≥ ${s.need}%)` : `Không đạt (${s.pct}% < ${s.need}%)`)), qualityBar(s.correct, s.total, true)));

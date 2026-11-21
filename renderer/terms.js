@@ -3,7 +3,7 @@ window.NL_TERMS = {
   version: '1.2 (bản nháp 11/2026)',
   sections: [
     ['1. Đơn vị cung cấp', [
-      'Công ty TNHH Giải pháp & Ứng dụng Công nghệ Nam Linh (gọi tắt là Nam Linh Technology), mã số thuế 2902274556, địa chỉ: xã Hùng Châu, tỉnh Nghệ An. Điện thoại/Zalo: 0968 646 853. Email: namlinh.educenter@gmail.com.']],
+      'Công ty TNHH Giải pháp & Ứng dụng Công nghệ Nam Linh (gọi tắt là Nam Linh Technology), mã số thuế 2902274556, địa chỉ: Xã Hùng Châu, tỉnh Nghệ An. Điện thoại/Zalo: 0968 646 853. Email: namlinh.educenter@gmail.com.']],
     ['2. Người mua', [
       'Người mua là phụ huynh, người giám hộ hoặc người từ đủ 18 tuổi. Học sinh dưới 18 tuổi sử dụng khóa học dưới sự giám sát của phụ huynh hoặc người giám hộ.',
       'Người mua cam kết thông tin họ tên, số điện thoại cung cấp là của mình và đúng sự thật.']],

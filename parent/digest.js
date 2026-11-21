@@ -59,7 +59,7 @@
     });
     root.replaceChildren(
       h('h1', {}, 'Nội dung lớp ' + grade),
-      h('p', { class: 'screen-sub' }, 'Tóm tắt từng bài: kiến thức cần nhớ, dạng bài, các bước giải và lỗi dễ mắc, để phụ huynh biết con đang học gì và kèm con đúng chỗ. Bài tập và đáp án chi tiết nằm trong app học của con.'),
+      h('p', { class: 'screen-sub' }, 'Tóm tắt từng bài: Kiến thức cần nhớ, dạng bài, các bước giải và lỗi dễ mắc, để phụ huynh biết con đang học gì và kèm con đúng chỗ. Bài tập và đáp án chi tiết nằm trong app học của con.'),
       tabs, body);
   }
 

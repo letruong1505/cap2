@@ -51,7 +51,14 @@ def box(x, y, w, h, fill, stroke, lines, sz=15, col='#1c2733', bold=False):
         s += '<text x="%s" y="%s" text-anchor="middle" font-size="%d" fill="%s"%s>%s</text>' % (x + w / 2, y + h / 2 + 5 + (i - (n - 1) / 2) * (sz + 5), sz, col, ' font-weight="700"' if bold and i == 0 else '', E(t))
     return s
 def mono(x, y, t, col='#17406b', sz=20, anchor='start', bold=False):
-    return '<text x="%s" y="%s" text-anchor="%s" fill="%s" font-size="%d" font-family="Consolas,Menlo,monospace" textLength="%d" lengthAdjust="spacingAndGlyphs"%s>%s</text>' % (x, y, anchor, col, sz, round(len(t) * 0.6 * sz), ' font-weight="700"' if bold else '', E(t))
+    """Chữ đơn cách: mỗi ký tự đặt vào một ô cố định nên khung vẽ quanh luôn khớp trên mọi máy và mọi phông."""
+    cw = 0.6 * sz; n = len(t)
+    x0 = x if anchor == 'start' else (x - n * cw / 2 if anchor == 'middle' else x - n * cw)
+    out = ''
+    for i, ch in enumerate(t):
+        if ch == ' ': continue
+        out += '<text x="%.1f" y="%s" text-anchor="middle" fill="%s" font-size="%d" font-family="Consolas,Menlo,monospace"%s>%s</text>' % (x0 + (i + 0.5) * cw, y, col, sz, ' font-weight="700"' if bold else '', E(ch))
+    return '<g>%s</g>' % out
 def txt(x, y, t, col='#1c2733', sz=15, anchor='middle', bold=False):
     return '<text x="%s" y="%s" text-anchor="%s" fill="%s" font-size="%d"%s>%s</text>' % (x, y, anchor, col, sz, ' font-weight="700"' if bold else '', E(t))
 ARR = '<defs><marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#6b7785"/></marker></defs>'
@@ -113,11 +120,11 @@ def build():
     h1 = 'print("Xin chào")\nprint("Mình học Python")\nprint("Bắt đầu thôi!")'
     h2 = 'print("Mình là Lan")\nprint("Mình 13 tuổi")\nprint(2 + 3)\nprint("2 + 3")\nprint("Ha", "ha", "ha")\nprint("Dòng 1\\nDòng 2")\nprint()\nprint("Hết")'
     anat = ARR + mono(60, 80, 'print("Xin chào")', '#17406b', 34)
-    anat += '<rect x="58" y="50" width="126" height="40" rx="6" fill="none" stroke="#d9822b" stroke-width="2.5"/><rect x="184" y="50" width="22" height="40" rx="6" fill="none" stroke="#1f6fb2" stroke-width="2.5"/><rect x="206" y="50" width="204" height="40" rx="6" fill="none" stroke="#2a8a4a" stroke-width="2.5"/><rect x="410" y="50" width="22" height="40" rx="6" fill="none" stroke="#1f6fb2" stroke-width="2.5"/>'
-    anat += arr(121, 150, 121, 96, '#d9822b') + txt(121, 172, '① tên lệnh', '#d9822b', 15, bold=True) + txt(121, 192, 'print = “in ra”', '#5b6773', 13)
-    anat += arr(195, 128, 195, 96, '#1f6fb2') + txt(150, 146, '② ngoặc mở', '#1f6fb2', 14, bold=True)
-    anat += arr(308, 150, 308, 96, '#2a8a4a') + txt(308, 172, '③ chữ cần in', '#2a8a4a', 15, bold=True) + txt(308, 192, 'nằm trong dấu nháy', '#5b6773', 13)
-    anat += arr(421, 128, 421, 96, '#1f6fb2') + txt(500, 146, '④ ngoặc đóng', '#1f6fb2', 14, bold=True)
+    anat += '<rect x="58" y="50" width="106" height="40" rx="6" fill="none" stroke="#d9822b" stroke-width="2.5"/><rect x="162" y="50" width="23" height="40" rx="6" fill="none" stroke="#1f6fb2" stroke-width="2.5"/><rect x="185" y="50" width="204" height="40" rx="6" fill="none" stroke="#2a8a4a" stroke-width="2.5"/><rect x="389" y="50" width="23" height="40" rx="6" fill="none" stroke="#1f6fb2" stroke-width="2.5"/>'
+    anat += arr(111, 150, 111, 96, '#d9822b') + txt(111, 172, '① tên lệnh', '#d9822b', 15, bold=True) + txt(111, 192, 'print = “in ra”', '#5b6773', 13)
+    anat += arr(173, 128, 173, 96, '#1f6fb2') + txt(182, 146, '② ngoặc mở', '#1f6fb2', 13, 'start', True)
+    anat += arr(287, 150, 287, 96, '#2a8a4a') + txt(287, 172, '③ chữ cần in', '#2a8a4a', 15, bold=True) + txt(287, 192, 'nằm trong dấu nháy', '#5b6773', 13)
+    anat += arr(400, 128, 400, 96, '#1f6fb2') + txt(470, 146, '④ ngoặc đóng', '#1f6fb2', 14, bold=True)
     G1 = fig(svg(700, 215, anat, 'Giải phẫu lệnh print'), '4 phần của một câu lệnh print: thiếu hoặc sai một phần là Python báo lỗi.')
     qv = ARR + txt(350, 26, 'Có dấu nháy hay không – khác nhau hoàn toàn', '#17406b', 17, bold=True)
     qv += box(14, 46, 330, 130, '#e5f5ea', '#2a8a4a', [], 14) + mono(30, 86, 'print("2 + 3")', '#17406b', 22) + txt(179, 114, 'Có dấu nháy → là CHỮ', '#2a8a4a', 15, bold=True) + arr(179, 122, 179, 146, '#2a8a4a') + mono(179, 170, '2 + 3', '#2a8a4a', 22, 'middle', True)

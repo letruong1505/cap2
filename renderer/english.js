@@ -26,14 +26,14 @@
     cw.words.forEach((w, i) => {
       const t = `ô chữ, từ ${i + 1}`;
       const a = norm(w.answer);
-      if (!a) errs.push(`${t}: thiếu đáp án`);
-      if (ids.has(a)) errs.push(`${t}: trùng từ "${a}"`);
+      if (!a) errs.push(`${t}: Thiếu đáp án`);
+      if (ids.has(a)) errs.push(`${t}: Trùng từ "${a}"`);
       ids.add(a);
       if (!Number.isInteger(w.keyIndex) || w.keyIndex < 0 || w.keyIndex >= a.length) errs.push(`${t}: keyIndex nằm ngoài từ`);
-      if (!w.clueVi) errs.push(`${t}: thiếu gợi ý tiếng Việt`);
-      if (!w.clueEn) errs.push(`${t}: thiếu gợi ý tiếng Anh`);
+      if (!w.clueVi) errs.push(`${t}: Thiếu gợi ý tiếng Việt`);
+      if (!w.clueEn) errs.push(`${t}: Thiếu gợi ý tiếng Anh`);
     });
-    if (!errs.length && keyword(cw.words) !== norm(cw.keyword)) errs.push(`ô chữ: các ô tô màu ghép thành "${keyword(cw.words)}", không khớp từ khóa "${cw.keyword}"`);
+    if (!errs.length && keyword(cw.words) !== norm(cw.keyword)) errs.push(`ô chữ: Các ô tô màu ghép thành "${keyword(cw.words)}", không khớp từ khóa "${cw.keyword}"`);
     return errs;
   }
 

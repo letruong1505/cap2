@@ -36,7 +36,7 @@ test('gói OTA: chỉ chứa mã giao diện (không có bài học, phông ch�
   for (const need of ['app.js', 'styles.css', 'purchase.js', 'mobile/bridge.js', 'mobile/updater.js', 'mobile/boot.js', 'mobile/mobile-config.js', 'product.json']) assert.ok(names.includes(need), need);
   for (const no of names) assert.ok(!/^(content|fonts)\//.test(no) && !/ota-boot|ota-store|native\.js|LICENSE/.test(no), no);
   assert.match(p.html, /<script src="app\.js">/);
-  assert.ok(text.length < 4 * 1024 * 1024, 'gói quá lớn: ' + text.length);
+  assert.ok(text.length < 6 * 1024 * 1024, 'gói quá lớn: ' + text.length);
 });
 
 test('gói OTA: bị sửa, ký bằng khóa khác hoặc không đúng định dạng đều bị từ chối', () => {

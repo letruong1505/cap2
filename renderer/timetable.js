@@ -122,7 +122,7 @@
         chips.append(b);
       });
       slot.append(h('div', { class: 'tt-banner', role: 'status' },
-        h('b', {}, `Lớp ${r.grade}: ngày mai (${r.dayName}) học ${r.items.length} môn`),
+        h('b', {}, `Lớp ${r.grade}: Ngày mai (${r.dayName}) học ${r.items.length} môn`),
         h('p', {}, 'Tối nay ôn bài và làm bài trước các môn này:'), chips,
         r.stale ? h('p', { class: 'meta' }, 'Thời khóa biểu chưa được cập nhật cho tuần mới. Vào mục Thời khóa biểu để sửa.') : null));
     });
