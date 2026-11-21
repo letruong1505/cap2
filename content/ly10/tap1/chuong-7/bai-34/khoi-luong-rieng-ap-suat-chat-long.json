@@ -14,16 +14,39 @@
   ],
   "theory": [
     {
-      "type": "formula",
-      "content": "Khối lượng riêng: ρ = m/V   (kg/m³)        Áp suất: p = F/S   (Pa = N/m²)"
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Khối lượng riêng của một chất là khối lượng của một đơn vị thể tích chất đó; ví dụ nước 1000 kg/m³, sắt khoảng 7800 kg/m³, nhôm 2700 kg/m³, không khí khoảng 1,29 kg/m³."
     },
     {
-      "type": "text",
-      "content": "Khối lượng riêng của một chất là khối lượng của một đơn vị thể tích chất đó; ví dụ nước 1000 kg/m³, sắt khoảng 7800 kg/m³, nhôm 2700 kg/m³, không khí khoảng 1,29 kg/m³. Áp suất là độ lớn áp lực trên một đơn vị diện tích bị ép; 1 atm ≈ 1,013·10⁵ Pa."
+      "type": "card",
+      "n": 1,
+      "title": "Công thức",
+      "formulas": [
+        "Khối lượng riêng: ρ = m/V   (kg/m³)        Áp suất: p = F/S   (Pa = N/m²)"
+      ]
     },
     {
-      "type": "text",
-      "content": "Chất lỏng gây áp suất theo mọi phương lên đáy bình, thành bình và các vật trong lòng nó. Tại cùng một độ sâu, áp suất chất lỏng như nhau theo mọi hướng."
+      "type": "card",
+      "title": "Khối lượng riêng của một chất là…",
+      "points": [
+        "Khối lượng riêng của một chất là khối lượng của một đơn vị thể tích chất đó; ví dụ nước 1000 kg/m³, sắt khoảng 7800 kg/m³, nhôm 2700 kg/m³, không khí khoảng 1,29 kg/m³.",
+        "Áp suất là độ lớn áp lực trên một đơn vị diện tích bị ép;",
+        "1 atm ≈ 1,013·10⁵ Pa."
+      ],
+      "n": 2
+    },
+    {
+      "type": "card",
+      "title": "Chất lỏng gây áp suất theo mọi…",
+      "points": [
+        "Chất lỏng gây áp suất theo mọi phương lên đáy bình, thành bình và các vật trong lòng nó.",
+        "Tại cùng một độ sâu, áp suất chất lỏng như nhau theo mọi hướng."
+      ],
+      "n": 3,
+      "formulas": [
+        "Áp suất tại độ sâu h: p = p₀ + ρ·g·h        Chênh lệch áp suất: Δp = ρ·g·Δh"
+      ]
     },
     {
       "type": "figure",
@@ -31,12 +54,13 @@
       "caption": "Áp suất tại điểm M ở độ sâu h trong chất lỏng"
     },
     {
-      "type": "formula",
-      "content": "Áp suất tại độ sâu h: p = p₀ + ρ·g·h        Chênh lệch áp suất: Δp = ρ·g·Δh"
-    },
-    {
-      "type": "text",
-      "content": "p₀ là áp suất khí quyển trên mặt thoáng. Áp suất chất lỏng chỉ phụ thuộc độ sâu và khối lượng riêng, không phụ thuộc hình dạng bình. Ứng dụng: bình thông nhau (mực chất lỏng cùng loại ngang nhau), đập thuỷ điện xây dưới chân dày hơn, thợ lặn cần đồ bảo hộ khi lặn sâu."
+      "type": "card",
+      "title": "P₀ là áp suất khí quyển trên mặt thoáng",
+      "points": [
+        "Áp suất chất lỏng chỉ phụ thuộc độ sâu và khối lượng riêng, không phụ thuộc hình dạng bình.",
+        "Ứng dụng: bình thông nhau (mực chất lỏng cùng loại ngang nhau), đập thuỷ điện xây dưới chân dày hơn, thợ lặn cần đồ bảo hộ khi lặn sâu."
+      ],
+      "n": 4
     },
     {
       "type": "method",

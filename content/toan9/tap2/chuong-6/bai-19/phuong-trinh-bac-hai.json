@@ -13,12 +13,18 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Phương trình bậc hai một ẩn có dạng ax² + bx + c = 0 (a ≠ 0)."
     },
     {
-      "type": "formula",
-      "content": "Δ = b² − 4ac;  Δ > 0: x₁,₂ = (−b ± √Δ)/(2a);  Δ = 0: x₁ = x₂ = −b/(2a);  Δ < 0: vô nghiệm"
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Phương trình bậc hai một ẩn có dạng ax² + bx + c = 0 (a ≠ 0).",
+      "n": 1,
+      "formulas": [
+        "Δ = b² − 4ac;  Δ > 0: x₁,₂ = (−b ± √Δ)/(2a);  Δ = 0: x₁ = x₂ = −b/(2a);  Δ < 0: vô nghiệm"
+      ]
     },
     {
       "type": "figure",
@@ -26,12 +32,16 @@
       "caption": "Dấu của Δ và số giao điểm của parabol với trục hoành."
     },
     {
-      "type": "text",
-      "content": "Công thức nghiệm thu gọn khi b = 2b′: Δ′ = b′² − ac; Δ′ > 0: x₁,₂ = (−b′ ± √Δ′)/a."
+      "type": "card",
+      "title": "Công thức nghiệm thu gọn khi b = 2b′: Δ′ = b′² − ac",
+      "text": "Δ′ > 0: x₁,₂ = (−b′ ± √Δ′)/a.",
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Trường hợp đặc biệt: c = 0 thì đưa về x(ax + b) = 0; b = 0 thì x² = −c/a."
+      "type": "card",
+      "title": "Trường hợp đặc biệt",
+      "text": "C = 0 thì đưa về x(ax + b) = 0; b = 0 thì x² = −c/a.",
+      "n": 3
     },
     {
       "type": "method",

@@ -14,8 +14,18 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Khi một điện tích q di chuyển trong điện trường đều từ điểm M đến điểm N thì lực điện (không đổi) thực hiện công không phụ thuộc hình dạng đường đi mà chỉ phụ thuộc vị trí điểm đầu, điểm cuối: lực điện là lực thế."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Khi một điện tích q di chuyển trong điện trường đều từ điểm M đến điểm N thì lực điện (không đổi) thực hiện công không phụ thuộc hình dạng đường đi mà chỉ phụ thuộc vị trí điểm đầu, điểm cuối: lực điện là lực thế.",
+      "n": 1,
+      "formulas": [
+        "A_MN = qE·d   (d = hình chiếu MN lên đường sức, d > 0 nếu cùng chiều đường sức, d < 0 nếu ngược chiều)."
+      ]
     },
     {
       "type": "figure",
@@ -23,20 +33,26 @@
       "caption": "Công của lực điện trong điện trường đều: A = qEd, d là hình chiếu của đoạn MN lên phương đường sức (có chiều nếu cùng chiều đường sức)"
     },
     {
-      "type": "formula",
-      "content": "A_MN = qE·d   (d = hình chiếu MN lên đường sức, d > 0 nếu cùng chiều đường sức, d < 0 nếu ngược chiều)."
+      "type": "card",
+      "title": "Điện tích q đặt trong điện trường…",
+      "points": [
+        "Điện tích q đặt trong điện trường có thế năng điện bằng năng lượng mà điện tích có được nhờ nằm trong điện trường.",
+        "Thế năng điện tại M: W_M = A_M∞ (công của lực điện khi di chuyển q từ M ra vô cực hoặc về mốc quy ước, ví dụ bản âm).",
+        "Trong điện trường đều giữa hai bản, chọn mốc ở bản âm thì W_M = qEd_M (d_M: khoảng cách từ M đến bản âm theo phương đường sức)."
+      ],
+      "n": 2,
+      "formulas": [
+        "A_MN = W_M − W_N.   Công của lực điện bằng độ giảm thế năng điện."
+      ]
     },
     {
-      "type": "text",
-      "content": "Điện tích q đặt trong điện trường có thế năng điện bằng năng lượng mà điện tích có được nhờ nằm trong điện trường. Thế năng điện tại M: W_M = A_M∞ (công của lực điện khi di chuyển q từ M ra vô cực hoặc về mốc quy ước, ví dụ bản âm). Trong điện trường đều giữa hai bản, chọn mốc ở bản âm thì W_M = qEd_M (d_M: khoảng cách từ M đến bản âm theo phương đường sức)."
-    },
-    {
-      "type": "formula",
-      "content": "A_MN = W_M − W_N.   Công của lực điện bằng độ giảm thế năng điện."
-    },
-    {
-      "type": "text",
-      "content": "Khi q > 0 di chuyển cùng chiều đường sức, lực điện sinh công dương, thế năng điện giảm. Khi lực điện sinh công dương thì động năng tăng (định lí động năng); bảo toàn năng lượng: W_đ + W_t = hằng số (khi chỉ có lực điện tác dụng)."
+      "type": "card",
+      "title": "Khi q > 0 di chuyển cùng…",
+      "points": [
+        "Khi q > 0 di chuyển cùng chiều đường sức, lực điện sinh công dương, thế năng điện giảm.",
+        "Khi lực điện sinh công dương thì động năng tăng (định lí động năng); bảo toàn năng lượng: W_đ + W_t = hằng số (khi chỉ có lực điện tác dụng)."
+      ],
+      "n": 3
     },
     {
       "type": "method",

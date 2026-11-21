@@ -13,16 +13,24 @@
   ],
   "theory": [
     {
-      "type": "formula",
-      "content": "√(a·b) = √a·√b   (a ≥ 0, b ≥ 0)"
-    },
-    {
-      "type": "formula",
-      "content": "√(a/b) = √a/√b   (a ≥ 0, b > 0)"
-    },
-    {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Quy tắc trên mở rộng cho tích nhiều số không âm. Có thể dùng để tính nhanh, ví dụ √(16·25) = 4·5 = 20; √2·√8 = √16 = 4."
+    },
+    {
+      "type": "card",
+      "n": 1,
+      "title": "Công thức",
+      "formulas": [
+        "√(a·b) = √a·√b   (a ≥ 0, b ≥ 0)",
+        "√(a/b) = √a/√b   (a ≥ 0, b > 0)"
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Quy tắc trên mở rộng cho tích nhiều số không âm",
+      "text": "Có thể dùng để tính nhanh, ví dụ √(16·25) = 4·5 = 20; √2·√8 = √16 = 4.",
+      "n": 2
     }
   ],
   "examples": [

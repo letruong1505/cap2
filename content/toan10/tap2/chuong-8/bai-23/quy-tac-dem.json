@@ -14,20 +14,39 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Quy tắc cộng: một công việc có thể thực hiện theo một trong hai phương án; phương án thứ nhất có m cách, phương án thứ hai có n cách (không trùng nhau) thì công việc có m + n cách thực hiện. Mở rộng cho nhiều phương án."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Quy tắc cộng: một công việc có thể thực hiện theo một trong hai phương án; phương án thứ nhất có m cách, phương án thứ hai có n cách (không trùng nhau) thì công việc có m + n cách thực hiện."
     },
     {
-      "type": "text",
-      "content": "Quy tắc nhân: một công việc gồm hai công đoạn liên tiếp; công đoạn thứ nhất có m cách, với mỗi cách đó công đoạn thứ hai có n cách thì công việc có m·n cách thực hiện. Mở rộng cho nhiều công đoạn."
+      "type": "card",
+      "title": "Quy tắc cộng",
+      "points": [
+        "Một công việc có thể thực hiện theo một trong hai phương án; phương án thứ nhất có m cách, phương án thứ hai có n cách (không trùng nhau) thì công việc có m + n cách thực hiện.",
+        "Mở rộng cho nhiều phương án."
+      ],
+      "n": 1
     },
     {
-      "type": "formula",
-      "content": "Quy tắc cộng: \"hoặc\" → m + n        Quy tắc nhân: \"và, rồi\" → m · n"
+      "type": "card",
+      "title": "Quy tắc nhân",
+      "points": [
+        "Một công việc gồm hai công đoạn liên tiếp; công đoạn thứ nhất có m cách, với mỗi cách đó công đoạn thứ hai có n cách thì công việc có m·n cách thực hiện.",
+        "Mở rộng cho nhiều công đoạn."
+      ],
+      "n": 2,
+      "formulas": [
+        "Quy tắc cộng: \"hoặc\" → m + n        Quy tắc nhân: \"và, rồi\" → m · n"
+      ]
     },
     {
-      "type": "text",
-      "content": "Sơ đồ hình cây: vẽ các nhánh ứng với từng lựa chọn ở mỗi công đoạn; số đường đi từ gốc đến ngọn là số kết quả. Thường dùng khi số lựa chọn nhỏ để liệt kê và kiểm tra."
+      "type": "card",
+      "title": "Sơ đồ hình cây",
+      "points": [
+        "Vẽ các nhánh ứng với từng lựa chọn ở mỗi công đoạn; số đường đi từ gốc đến ngọn là số kết quả.",
+        "Thường dùng khi số lựa chọn nhỏ để liệt kê và kiểm tra."
+      ],
+      "n": 3
     },
     {
       "type": "figure",
@@ -35,8 +54,10 @@
       "caption": "Sơ đồ hình cây đếm số cách chọn một bộ áo và quần"
     },
     {
-      "type": "text",
-      "content": "Phần bù: đếm số kết quả không thoả mãn rồi lấy tổng trừ đi, thường gọn hơn khi điều kiện có từ \"ít nhất\"."
+      "type": "card",
+      "title": "Phần bù",
+      "text": "Đếm số kết quả không thoả mãn rồi lấy tổng trừ đi, thường gọn hơn khi điều kiện có từ \"ít nhất\".",
+      "n": 4
     },
     {
       "type": "method",

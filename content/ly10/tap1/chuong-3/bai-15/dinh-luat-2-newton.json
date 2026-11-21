@@ -14,8 +14,21 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Định luật 2 Newton: Gia tốc của một vật cùng hướng với lực tác dụng lên vật. Độ lớn của gia tốc tỉ lệ thuận với độ lớn của lực và tỉ lệ nghịch với khối lượng của vật."
+    },
+    {
+      "type": "card",
+      "title": "Định luật 2 Newton",
+      "points": [
+        "Gia tốc của một vật cùng hướng với lực tác dụng lên vật.",
+        "Độ lớn của gia tốc tỉ lệ thuận với độ lớn của lực và tỉ lệ nghịch với khối lượng của vật."
+      ],
+      "n": 1,
+      "formulas": [
+        "→a = →F/m   hay   →F = m·→a        1 N = 1 kg·m/s²"
+      ]
     },
     {
       "type": "figure",
@@ -23,20 +36,25 @@
       "caption": "Đồ thị gia tốc theo lực với hai vật khối lượng khác nhau"
     },
     {
-      "type": "formula",
-      "content": "→a = →F/m   hay   →F = m·→a        1 N = 1 kg·m/s²"
+      "type": "card",
+      "title": "Trường hợp vật chịu nhiều lực, →F…",
+      "points": [
+        "Trường hợp vật chịu nhiều lực, →F là hợp lực của tất cả các lực tác dụng lên vật.",
+        "Định luật 1 là trường hợp riêng của định luật 2 khi →F = →0 thì →a = →0."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Trường hợp vật chịu nhiều lực, →F là hợp lực của tất cả các lực tác dụng lên vật. Định luật 1 là trường hợp riêng của định luật 2 khi →F = →0 thì →a = →0."
+      "type": "card",
+      "title": "Từ định luật 2 thấy",
+      "text": "Cùng một lực, vật khối lượng lớn thì gia tốc nhỏ (khó thay đổi vận tốc) – đúng với ý nghĩa khối lượng là mức quán tính.",
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Từ định luật 2 thấy: cùng một lực, vật khối lượng lớn thì gia tốc nhỏ (khó thay đổi vận tốc) – đúng với ý nghĩa khối lượng là mức quán tính."
-    },
-    {
-      "type": "text",
-      "content": "Kết hợp với động học: tính a = F/m rồi dùng v = v₀ + at, d = v₀t + ½at², v² − v₀² = 2ad; hoặc ngược lại tìm a từ động học rồi tính lực F = ma."
+      "type": "card",
+      "title": "Kết hợp với động học",
+      "text": "Tính a = F/m rồi dùng v = v₀ + at, d = v₀t + ½at², v² − v₀² = 2ad; hoặc ngược lại tìm a từ động học rồi tính lực F = ma.",
+      "n": 4
     },
     {
       "type": "method",

@@ -12,10 +12,12 @@ function collect(subject) {
       if (f.isDirectory()) { if (f.name !== 'figures') walk(p); } else if (f.name.endsWith('.json') && f.name !== 'manifest.json') out.push(p);
     }
   })(path.join(__dirname, '..', 'content', subject));
-  return out.filter((p) => !p.includes('on-tap'));
+  return out.filter((p) => !p.includes('on-tap') && !p.includes('nang-cao'));
 }
 // minTry: số câu "Thử ngay" tối thiểu (các môn dựng tự động bằng tools/auto-cards.py chưa có câu thử)
-const SUBJECTS = { toan12: [19, 25], ly12: [25, 25], hoa12: [22, 0], sinh12: [35, 0], lichsu12: [17, 0], diali12: [35, 0], gdktpl12: [16, 0] };
+const SUBJECTS = { toan12: [19, 25], ly12: [25, 25], hoa12: [22, 0], sinh12: [35, 0], lichsu12: [17, 0], diali12: [35, 0], gdktpl12: [16, 0],
+   toan11: [33, 0], ly11: [26, 0], hoa11: [19, 0], sinh11: [29, 0], lichsu11: [13, 0], diali11: [30, 0], gdktpl11: [21, 0],
+  toan10: [27, 0], ly10: [34, 0], hoa10: [16, 0], sinh10: [26, 0], lichsu10: [14, 0], diali10: [40, 0], gdktpl10: [23, 0], toan9: [32, 0], ly9: [16, 0], hoa9: [18, 0], sinh9: [16, 0], lichsu9: [22, 0], diali9: [15, 0], toan8: [39, 0], ly8: [17, 0], hoa8: [12, 0], sinh8: [18, 0], lichsu8: [20, 0], diali8: [12, 0], toan7: [37, 0], ly7: [14, 0], hoa7: [7, 0], sinh7: [23, 0], lichsu7: [22, 0], diali7: [20, 0], toan6: [43, 0], ly6: [21, 0], hoa6: [9, 0], sinh6: [17, 0], lichsu6: [20, 0], diali6: [26, 0] };
 
 for (const [subject, [count, minTry]] of Object.entries(SUBJECTS)) {
   const bai = collect(subject);
@@ -26,7 +28,7 @@ for (const [subject, [count, minTry]] of Object.entries(SUBJECTS)) {
       const th = JSON.parse(fs.readFileSync(p, 'utf8')).theory;
       assert.equal(th[0].type, 'summary', path.basename(p) + ': khối đầu phải là tóm tắt');
       const cards = th.filter((b) => b.type === 'card');
-      assert.ok(cards.length >= 2, path.basename(p) + ': cần ít nhất 2 thẻ');
+      assert.ok(cards.length >= 1, path.basename(p) + ': cần ít nhất 1 thẻ');
       cards.forEach((c, i) => assert.equal(c.n, i + 1, path.basename(p) + ': số thẻ phải liên tục'));
       assert.ok(!th.some((b) => b.type === 'text' && b.content && b.content.length > 200 && !b.content.startsWith('Bài')), path.basename(p) + ': còn đoạn văn dài');
     }

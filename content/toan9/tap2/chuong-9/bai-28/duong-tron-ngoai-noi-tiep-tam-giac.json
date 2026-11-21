@@ -13,12 +13,27 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Đường tròn ngoại tiếp tam giác đi qua ba đỉnh; tâm là giao điểm ba đường trung trực. Tam giác vuông có tâm đường tròn ngoại tiếp là trung điểm cạnh huyền, R bằng nửa cạnh huyền."
     },
     {
-      "type": "text",
-      "content": "Đường tròn nội tiếp tam giác tiếp xúc với ba cạnh; tâm là giao điểm ba đường phân giác trong."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Đường tròn ngoại tiếp tam giác đi qua ba đỉnh; tâm là giao điểm ba đường trung trực.",
+        "Tam giác vuông có tâm đường tròn ngoại tiếp là trung điểm cạnh huyền, R bằng nửa cạnh huyền."
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Đường tròn nội tiếp tam giác tiếp…",
+      "text": "Đường tròn nội tiếp tam giác tiếp xúc với ba cạnh; tâm là giao điểm ba đường phân giác trong.",
+      "n": 2,
+      "formulas": [
+        "Tam giác đều cạnh a: R = a√3/3;  r = a√3/6"
+      ]
     },
     {
       "type": "figure",
@@ -26,12 +41,10 @@
       "caption": "Đường tròn ngoại tiếp và đường tròn nội tiếp tam giác."
     },
     {
-      "type": "formula",
-      "content": "Tam giác đều cạnh a: R = a√3/3;  r = a√3/6"
-    },
-    {
-      "type": "text",
-      "content": "Với tam giác đều, tâm đường tròn ngoại tiếp và nội tiếp trùng nhau (trọng tâm), R = 2r."
+      "type": "card",
+      "title": "Với tam giác đều, tâm đường tròn…",
+      "text": "Với tam giác đều, tâm đường tròn ngoại tiếp và nội tiếp trùng nhau (trọng tâm), R = 2r.",
+      "n": 3
     },
     {
       "type": "figure",

@@ -14,8 +14,18 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Dụng cụ: ống trụ bằng thuỷ tinh hữu cơ trong suốt (đường kính trong 40 mm, dài 670 mm, chia độ 0–660 mm); pít-tông có thể di chuyển trong ống; máy phát tần số (tín hiệu hình sin); loa nhỏ hoặc âm thoa; giá đỡ. Sóng âm từ loa truyền trong cột khí, phản xạ trên pít-tông tạo sóng dừng trong ống (một đầu là pít-tông – nút, một đầu loa – gần như bụng)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Dụng cụ: ống trụ bằng thuỷ tinh hữu cơ trong suốt (đường kính trong 40 mm, dài 670 mm, chia độ 0–660 mm); pít-tông có thể di chuyển trong ống; máy phát tần số (tín hiệu hình sin); loa nhỏ hoặc âm thoa; giá đỡ."
+    },
+    {
+      "type": "card",
+      "title": "Dụng cụ",
+      "points": [
+        "Ống trụ bằng thuỷ tinh hữu cơ trong suốt (đường kính trong 40 mm, dài 670 mm, chia độ 0–660 mm); pít-tông có thể di chuyển trong ống; máy phát tần số (tín hiệu hình sin); loa nhỏ hoặc âm thoa; giá đỡ.",
+        "Sóng âm từ loa truyền trong cột khí, phản xạ trên pít-tông tạo sóng dừng trong ống (một đầu là pít-tông – nút, một đầu loa – gần như bụng)."
+      ],
+      "n": 1
     },
     {
       "type": "figure",
@@ -23,16 +33,22 @@
       "caption": "Ống trụ với pít-tông: âm to nhất khi có sóng dừng trong cột khí; hai vị trí âm to nhất liên tiếp l₁, l₂ cách nhau λ/2"
     },
     {
-      "type": "text",
-      "content": "Tiến hành: đặt tần số máy phát f = 500 Hz; kéo pít-tông chậm trong ống cho đến khi nghe âm to nhất lần 1, đo chiều dài cột khí l₁; kéo tiếp đến lần âm to nhất thứ 2, đo l₂; lặp lại ba lần, ghi bảng 15.1."
+      "type": "card",
+      "title": "Tiến hành",
+      "text": "Đặt tần số máy phát f = 500 Hz; kéo pít-tông chậm trong ống cho đến khi nghe âm to nhất lần 1, đo chiều dài cột khí l₁; kéo tiếp đến lần âm to nhất thứ 2, đo l₂; lặp lại ba lần, ghi bảng 15.1.",
+      "n": 2,
+      "formulas": [
+        "Hai vị trí âm to nhất liên tiếp: l₂ − l₁ = λ/2 ⇒ λ = 2(l₂ − l₁);   v = λf = 2(l₂ − l₁)f.   Sai số: Δv/v = Δd/d + Δf/f (d = l₂ − l₁)."
+      ]
     },
     {
-      "type": "formula",
-      "content": "Hai vị trí âm to nhất liên tiếp: l₂ − l₁ = λ/2 ⇒ λ = 2(l₂ − l₁);   v = λf = 2(l₂ − l₁)f.   Sai số: Δv/v = Δd/d + Δf/f (d = l₂ − l₁)."
-    },
-    {
-      "type": "text",
-      "content": "Không xác định tốc độ qua l₁ hay l₂ riêng lẻ vì sóng không phản xạ đúng tại miệng ống (hiệu chỉnh đầu ống); hiệu l₂ − l₁ loại bỏ sai số này. Tốc độ âm: không khí khoảng 340 m/s; nước khoảng 1500 m/s; gỗ khoảng 3400 m/s."
+      "type": "card",
+      "title": "Không xác định tốc độ qua l₁…",
+      "points": [
+        "Không xác định tốc độ qua l₁ hay l₂ riêng lẻ vì sóng không phản xạ đúng tại miệng ống (hiệu chỉnh đầu ống); hiệu l₂ − l₁ loại bỏ sai số này.",
+        "Tốc độ âm: không khí khoảng 340 m/s; nước khoảng 1500 m/s; gỗ khoảng 3400 m/s."
+      ],
+      "n": 3
     },
     {
       "type": "method",

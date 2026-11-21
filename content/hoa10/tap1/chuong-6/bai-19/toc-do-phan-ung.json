@@ -14,8 +14,21 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Tốc độ phản ứng là đại lượng đặc trưng cho sự nhanh chậm của phản ứng, được xác định bằng độ biến thiên nồng độ của một chất phản ứng hoặc sản phẩm trong một đơn vị thời gian. Đơn vị thường dùng: mol/(L·s), mol/(L·min)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Tốc độ phản ứng là đại lượng đặc trưng cho sự nhanh chậm của phản ứng, được xác định bằng độ biến thiên nồng độ của một chất phản ứng hoặc sản phẩm trong một đơn vị thời gian."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Tốc độ phản ứng là đại lượng đặc trưng cho sự nhanh chậm của phản ứng, được xác định bằng độ biến thiên nồng độ của một chất phản ứng hoặc sản phẩm trong một đơn vị thời gian.",
+        "Đơn vị thường dùng: mol/(L·s), mol/(L·min)."
+      ],
+      "n": 1,
+      "formulas": [
+        "Phản ứng aA + bB → mM + nN:   v̄ = −(1/a)·ΔC_A/Δt = −(1/b)·ΔC_B/Δt = (1/m)·ΔC_M/Δt = (1/n)·ΔC_N/Δt"
+      ]
     },
     {
       "type": "figure",
@@ -23,16 +36,16 @@
       "caption": "Nồng độ chất đầu giảm, nồng độ sản phẩm tăng theo thời gian"
     },
     {
-      "type": "formula",
-      "content": "Phản ứng aA + bB → mM + nN:   v̄ = −(1/a)·ΔC_A/Δt = −(1/b)·ΔC_B/Δt = (1/m)·ΔC_M/Δt = (1/n)·ΔC_N/Δt"
-    },
-    {
-      "type": "text",
-      "content": "Đa số phản ứng có tốc độ giảm dần theo thời gian (do nồng độ chất phản ứng giảm). Tốc độ trong khoảng thời gian rất ngắn gọi là tốc độ tức thời."
-    },
-    {
-      "type": "formula",
-      "content": "Định luật tác dụng khối lượng (phản ứng đơn giản): v = k·C_A^a·C_B^b   (k: hằng số tốc độ, phụ thuộc bản chất phản ứng và nhiệt độ)"
+      "type": "card",
+      "title": "Đa số phản ứng có tốc độ…",
+      "points": [
+        "Đa số phản ứng có tốc độ giảm dần theo thời gian (do nồng độ chất phản ứng giảm).",
+        "Tốc độ trong khoảng thời gian rất ngắn gọi là tốc độ tức thời."
+      ],
+      "n": 2,
+      "formulas": [
+        "Định luật tác dụng khối lượng (phản ứng đơn giản): v = k·C_A^a·C_B^b   (k: hằng số tốc độ, phụ thuộc bản chất phản ứng và nhiệt độ)"
+      ]
     },
     {
       "type": "figure",
@@ -40,16 +53,25 @@
       "caption": "Các yếu tố ảnh hưởng đến tốc độ phản ứng"
     },
     {
-      "type": "text",
-      "content": "Ảnh hưởng: nồng độ tăng thì tốc độ tăng (số va chạm tăng); áp suất tăng thì tốc độ phản ứng có chất khí tăng; nhiệt độ tăng thì tốc độ tăng (số va chạm hiệu quả tăng); diện tích bề mặt tiếp xúc tăng (nghiền nhỏ) thì tốc độ tăng; chất xúc tác làm tăng tốc độ phản ứng nhưng không bị biến đổi về lượng và chất sau phản ứng (giảm năng lượng hoạt hoá)."
+      "type": "card",
+      "title": "Ảnh hưởng",
+      "points": [
+        "Nồng độ tăng thì tốc độ tăng (số va chạm tăng);",
+        "Áp suất tăng thì tốc độ phản ứng có chất khí tăng; nhiệt độ tăng thì tốc độ tăng (số va chạm hiệu quả tăng); diện tích bề mặt tiếp xúc tăng (nghiền nhỏ) thì tốc độ tăng; chất xúc tác làm tăng tốc độ phản ứng nhưng không bị biến đổi về lượng và chất sau phản ứng (giảm năng lượng hoạt hoá)."
+      ],
+      "n": 3,
+      "formulas": [
+        "Quy tắc Van’t Hoff: v₂/v₁ = γ^((T₂ − T₁)/10)   (γ: hệ số nhiệt độ, thường từ 2 đến 4)"
+      ]
     },
     {
-      "type": "formula",
-      "content": "Quy tắc Van’t Hoff: v₂/v₁ = γ^((T₂ − T₁)/10)   (γ: hệ số nhiệt độ, thường từ 2 đến 4)"
-    },
-    {
-      "type": "text",
-      "content": "Năng lượng hoạt hoá là năng lượng tối thiểu mà các hạt cần có để va chạm dẫn đến phản ứng. Ứng dụng: bảo quản thực phẩm trong tủ lạnh (giảm nhiệt độ), dùng nồi áp suất (tăng nhiệt độ), nhóm bếp bằng củi nhỏ (tăng diện tích bề mặt), dùng enzyme, xúc tác trong công nghiệp."
+      "type": "card",
+      "title": "Năng lượng hoạt hoá là năng lượng…",
+      "points": [
+        "Năng lượng hoạt hoá là năng lượng tối thiểu mà các hạt cần có để va chạm dẫn đến phản ứng.",
+        "Ứng dụng: bảo quản thực phẩm trong tủ lạnh (giảm nhiệt độ), dùng nồi áp suất (tăng nhiệt độ), nhóm bếp bằng củi nhỏ (tăng diện tích bề mặt), dùng enzyme, xúc tác trong công nghiệp."
+      ],
+      "n": 4
     },
     {
       "type": "method",

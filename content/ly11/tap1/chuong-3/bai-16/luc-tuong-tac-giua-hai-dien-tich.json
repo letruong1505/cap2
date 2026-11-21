@@ -14,8 +14,20 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Có hai loại điện tích: điện tích dương và điện tích âm. Các điện tích cùng dấu đẩy nhau, khác dấu hút nhau. Đơn vị điện tích trong hệ SI là coulomb (C). Điện tích điểm là vật tích điện có kích thước rất nhỏ so với khoảng cách tới điểm xét."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Có hai loại điện tích: điện tích dương và điện tích âm. Các điện tích cùng dấu đẩy nhau, khác dấu hút nhau."
+    },
+    {
+      "type": "card",
+      "title": "Có hai loại điện tích",
+      "points": [
+        "Điện tích dương và điện tích âm.",
+        "Các điện tích cùng dấu đẩy nhau, khác dấu hút nhau.",
+        "Đơn vị điện tích trong hệ SI là coulomb (C).",
+        "Điện tích điểm là vật tích điện có kích thước rất nhỏ so với khoảng cách tới điểm xét."
+      ],
+      "n": 1
     },
     {
       "type": "figure",
@@ -23,20 +35,23 @@
       "caption": "Lực tương tác giữa hai điện tích điểm: cùng dấu thì đẩy nhau, khác dấu thì hút nhau; hai lực cùng phương (đường thẳng nối hai điện tích), ngược chiều, cùng độ lớn"
     },
     {
-      "type": "text",
-      "content": "Định luật Coulomb: lực tương tác giữa hai điện tích điểm đứng yên có phương trùng với đường thẳng nối hai điện tích, có độ lớn tỉ lệ thuận với tích độ lớn hai điện tích và tỉ lệ nghịch với bình phương khoảng cách giữa chúng."
+      "type": "card",
+      "title": "Định luật Coulomb",
+      "text": "Lực tương tác giữa hai điện tích điểm đứng yên có phương trùng với đường thẳng nối hai điện tích, có độ lớn tỉ lệ thuận với tích độ lớn hai điện tích và tỉ lệ nghịch với bình phương khoảng cách giữa chúng.",
+      "n": 2,
+      "formulas": [
+        "F = k|q₁q₂|/r²  (chân không, không khí),  k = 1/(4πε₀) = 9·10⁹ N·m²/C²,  ε₀ = 8,85·10⁻¹² C²/(N·m²).",
+        "Trong môi trường có hằng số điện môi ε: F = k|q₁q₂|/(εr²).   Đổi đơn vị: 1 μC = 10⁻⁶ C; 1 nC = 10⁻⁹ C; 1 cm = 10⁻² m."
+      ]
     },
     {
-      "type": "formula",
-      "content": "F = k|q₁q₂|/r²  (chân không, không khí),  k = 1/(4πε₀) = 9·10⁹ N·m²/C²,  ε₀ = 8,85·10⁻¹² C²/(N·m²)."
-    },
-    {
-      "type": "formula",
-      "content": "Trong môi trường có hằng số điện môi ε: F = k|q₁q₂|/(εr²).   Đổi đơn vị: 1 μC = 10⁻⁶ C; 1 nC = 10⁻⁹ C; 1 cm = 10⁻² m."
-    },
-    {
-      "type": "text",
-      "content": "Ứng dụng: sơn tĩnh điện, lọc bụi tĩnh điện, máy photocopy. Nếu có nhiều điện tích thì lực điện tổng hợp tác dụng lên một điện tích bằng tổng vectơ các lực do từng điện tích khác gây ra."
+      "type": "card",
+      "title": "Ứng dụng",
+      "points": [
+        "Sơn tĩnh điện, lọc bụi tĩnh điện, máy photocopy.",
+        "Nếu có nhiều điện tích thì lực điện tổng hợp tác dụng lên một điện tích bằng tổng vectơ các lực do từng điện tích khác gây ra."
+      ],
+      "n": 3
     },
     {
       "type": "method",

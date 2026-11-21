@@ -10,16 +10,33 @@
   "bookPage": 55,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Định lí là một khẳng định được suy ra từ những khẳng định đã biết. Định lí thường được phát biểu dưới dạng: Nếu … thì …."
     },
     {
-      "type": "text",
-      "content": "Phần sau từ “nếu” là giả thiết (GT), phần sau từ “thì” là kết luận (KL). Khi chứng minh, ta xuất phát từ giả thiết và dùng các tính chất đã biết để suy ra kết luận."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Định lí là một khẳng định được suy ra từ những khẳng định đã biết.",
+        "Định lí thường được phát biểu dưới dạng: Nếu … thì …."
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Ví dụ: nếu một đường thẳng vuông góc với một trong hai đường thẳng song song thì nó cũng vuông góc với đường thẳng còn lại."
+      "type": "card",
+      "title": "Phần sau từ “nếu” là giả thiết…",
+      "points": [
+        "Phần sau từ “nếu” là giả thiết (GT), phần sau từ “thì” là kết luận (KL).",
+        "Khi chứng minh, ta xuất phát từ giả thiết và dùng các tính chất đã biết để suy ra kết luận."
+      ],
+      "n": 2
+    },
+    {
+      "type": "card",
+      "title": "Ví dụ",
+      "text": "Nếu một đường thẳng vuông góc với một trong hai đường thẳng song song thì nó cũng vuông góc với đường thẳng còn lại.",
+      "n": 3
     },
     {
       "type": "figure",
@@ -27,8 +44,10 @@
       "caption": "Nếu a ∥ b và c ⊥ a thì c ⊥ b: cả hai góc tạo bởi c với a và b đều là góc vuông."
     },
     {
-      "type": "text",
-      "content": "Các tính chất thường dùng trong chứng minh: góc so le trong, góc đồng vị, góc trong cùng phía và tiên đề Euclid."
+      "type": "card",
+      "title": "Các tính chất thường dùng trong chứng minh",
+      "text": "Góc so le trong, góc đồng vị, góc trong cùng phía và tiên đề Euclid.",
+      "n": 4
     }
   ],
   "examples": [

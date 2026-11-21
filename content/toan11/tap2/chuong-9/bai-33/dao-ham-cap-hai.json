@@ -14,8 +14,18 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Cho hàm số y = f(x) có đạo hàm f′(x) tại mọi x ∈ (a; b). Nếu f′ lại có đạo hàm tại x thì đạo hàm của f′ gọi là đạo hàm cấp hai của f, kí hiệu f″(x) hay y″: f″(x) = (f′(x))′."
+    },
+    {
+      "type": "card",
+      "title": "Cho hàm số y = f(x) có đạo hàm f′(x) tại mọi x ∈ (a; b)",
+      "text": "Nếu f′ lại có đạo hàm tại x thì đạo hàm của f′ gọi là đạo hàm cấp hai của f, kí hiệu f″(x) hay y″: f″(x) = (f′(x))′.",
+      "n": 1,
+      "formulas": [
+        "(xⁿ)″ = n(n − 1)xⁿ⁻²;  (sin x)″ = −sin x;  (cos x)″ = −cos x;  (eˣ)″ = eˣ;  (ln x)″ = −1/x²;  (1/x)″ = 2/x³."
+      ]
     },
     {
       "type": "figure",
@@ -23,12 +33,13 @@
       "caption": "Đồ thị y = x³ − 3x: y″ = 6x. Với x < 0, y″ < 0 (đồ thị lõm xuống); với x > 0, y″ > 0 (đồ thị lõm lên); x = 0 là điểm đổi chiều cong"
     },
     {
-      "type": "formula",
-      "content": "(xⁿ)″ = n(n − 1)xⁿ⁻²;  (sin x)″ = −sin x;  (cos x)″ = −cos x;  (eˣ)″ = eˣ;  (ln x)″ = −1/x²;  (1/x)″ = 2/x³."
-    },
-    {
-      "type": "text",
-      "content": "Ý nghĩa cơ học: nếu chất điểm chuyển động theo s = s(t) thì vận tốc tức thời v(t) = s′(t) và gia tốc tức thời a(t) = v′(t) = s″(t). Đạo hàm cấp hai còn mô tả tốc độ thay đổi của tốc độ biến thiên."
+      "type": "card",
+      "title": "Ý nghĩa cơ học",
+      "points": [
+        "Nếu chất điểm chuyển động theo s = s(t) thì vận tốc tức thời v(t) = s′(t) và gia tốc tức thời a(t) = v′(t) = s″(t).",
+        "Đạo hàm cấp hai còn mô tả tốc độ thay đổi của tốc độ biến thiên."
+      ],
+      "n": 2
     },
     {
       "type": "method",

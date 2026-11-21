@@ -14,8 +14,23 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Sóng dừng là sóng tổng hợp của sóng tới và sóng phản xạ cùng truyền theo hai chiều ngược nhau trên một sợi dây. Trên dây có những điểm luôn đứng yên (nút sóng) và những điểm dao động với biên độ cực đại (bụng sóng). Hai nút liên tiếp (hoặc hai bụng liên tiếp) cách nhau λ/2; nút và bụng liền kề cách nhau λ/4."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Sóng dừng là sóng tổng hợp của sóng tới và sóng phản xạ cùng truyền theo hai chiều ngược nhau trên một sợi dây."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Sóng dừng là sóng tổng hợp của sóng tới và sóng phản xạ cùng truyền theo hai chiều ngược nhau trên một sợi dây.",
+        "Trên dây có những điểm luôn đứng yên (nút sóng) và những điểm dao động với biên độ cực đại (bụng sóng).",
+        "Hai nút liên tiếp (hoặc hai bụng liên tiếp) cách nhau λ/2; nút và bụng liền kề cách nhau λ/4."
+      ],
+      "n": 1,
+      "formulas": [
+        "Dây hai đầu cố định: L = nλ/2 (n = 1, 2, 3, …) ⇒ λ = 2L/n;  f = nv/(2L);  số bụng = n, số nút = n + 1.",
+        "Một đầu cố định, một đầu tự do (ống một đầu kín, một đầu hở): L = (2k + 1)λ/4 = (k + ½)λ/2;  f = (2k + 1)v/(4L)."
+      ]
     },
     {
       "type": "figure",
@@ -23,21 +38,19 @@
       "caption": "Sóng dừng trên dây hai đầu cố định với 3 bụng: L = 3λ/2; hai đầu là nút"
     },
     {
-      "type": "formula",
-      "content": "Dây hai đầu cố định: L = nλ/2 (n = 1, 2, 3, …) ⇒ λ = 2L/n;  f = nv/(2L);  số bụng = n, số nút = n + 1."
-    },
-    {
       "type": "figure",
       "figure": "figures/l11-b13-song-dung-mot-dau-tu-do.svg",
       "caption": "Sóng dừng trên dây (hoặc cột khí) một đầu cố định, một đầu tự do: đầu cố định là nút, đầu tự do là bụng; L = (2k + 1)λ/4"
     },
     {
-      "type": "formula",
-      "content": "Một đầu cố định, một đầu tự do (ống một đầu kín, một đầu hở): L = (2k + 1)λ/4 = (k + ½)λ/2;  f = (2k + 1)v/(4L)."
-    },
-    {
-      "type": "text",
-      "content": "Nhạc cụ dây (ghi-ta, vi-ô-lông, đàn tính): hai đầu dây cố định, âm cơ bản có λ = 2L và f = v/2L; ấn phím làm thay đổi chiều dài dây nên thay đổi độ cao âm; thùng đàn là hộp cộng hưởng. Nhạc cụ hơi (sáo, kèn): cột không khí dao động tạo sóng dừng; bịt hoặc mở lỗ làm thay đổi chiều dài cột khí."
+      "type": "card",
+      "title": "Nhạc cụ dây (ghi-ta, vi-ô-lông, đàn tính)",
+      "points": [
+        "Hai đầu dây cố định, âm cơ bản có λ = 2L và f = v/2L;",
+        "Ấn phím làm thay đổi chiều dài dây nên thay đổi độ cao âm; thùng đàn là hộp cộng hưởng.",
+        "Nhạc cụ hơi (sáo, kèn): cột không khí dao động tạo sóng dừng; bịt hoặc mở lỗ làm thay đổi chiều dài cột khí."
+      ],
+      "n": 2
     },
     {
       "type": "method",

@@ -10,12 +10,18 @@
   "bookPage": 85,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Trường hợp đồng dạng thứ nhất (cạnh – cạnh – cạnh): nếu ba cạnh của tam giác này tỉ lệ với ba cạnh của tam giác kia thì hai tam giác đó đồng dạng."
     },
     {
-      "type": "formula",
-      "content": "A′B′/AB = B′C′/BC = C′A′/CA ⇒ ΔA′B′C′ ∽ ΔABC"
+      "type": "card",
+      "title": "Trường hợp đồng dạng thứ nhất (cạnh – cạnh – cạnh)",
+      "text": "Nếu ba cạnh của tam giác này tỉ lệ với ba cạnh của tam giác kia thì hai tam giác đó đồng dạng.",
+      "n": 1,
+      "formulas": [
+        "A′B′/AB = B′C′/BC = C′A′/CA ⇒ ΔA′B′C′ ∽ ΔABC"
+      ]
     },
     {
       "type": "figure",
@@ -23,12 +29,13 @@
       "caption": "Hai tam giác có các cặp cạnh tỉ lệ 6/4 = 9/6 = 12/8 = 1,5."
     },
     {
-      "type": "text",
-      "content": "Trường hợp đồng dạng thứ hai (cạnh – góc – cạnh): nếu hai cạnh của tam giác này tỉ lệ với hai cạnh của tam giác kia và hai góc tạo bởi các cặp cạnh đó bằng nhau thì hai tam giác đồng dạng."
-    },
-    {
-      "type": "formula",
-      "content": "A′B′/AB = A′C′/AC và Â′ = Â ⇒ ΔA′B′C′ ∽ ΔABC"
+      "type": "card",
+      "title": "Trường hợp đồng dạng thứ hai (cạnh – góc – cạnh)",
+      "text": "Nếu hai cạnh của tam giác này tỉ lệ với hai cạnh của tam giác kia và hai góc tạo bởi các cặp cạnh đó bằng nhau thì hai tam giác đồng dạng.",
+      "n": 2,
+      "formulas": [
+        "A′B′/AB = A′C′/AC và Â′ = Â ⇒ ΔA′B′C′ ∽ ΔABC"
+      ]
     },
     {
       "type": "figure",
@@ -36,12 +43,13 @@
       "caption": "Trường hợp c.g.c: hai cạnh tỉ lệ và góc xen giữa bằng nhau"
     },
     {
-      "type": "text",
-      "content": "Trường hợp đồng dạng thứ ba (góc – góc): nếu hai góc của tam giác này lần lượt bằng hai góc của tam giác kia thì hai tam giác đó đồng dạng."
-    },
-    {
-      "type": "formula",
-      "content": "Â′ = Â và B̂′ = B̂ ⇒ ΔA′B′C′ ∽ ΔABC"
+      "type": "card",
+      "title": "Trường hợp đồng dạng thứ ba (góc – góc)",
+      "text": "Nếu hai góc của tam giác này lần lượt bằng hai góc của tam giác kia thì hai tam giác đó đồng dạng.",
+      "n": 3,
+      "formulas": [
+        "Â′ = Â và B̂′ = B̂ ⇒ ΔA′B′C′ ∽ ΔABC"
+      ]
     },
     {
       "type": "figure",

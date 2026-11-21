@@ -14,8 +14,19 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Cơ sở lí thuyết: hiệu điện thế hai cực pin khi có dòng I chạy qua là U = E − Ir. Vẽ đồ thị U theo I là đường thẳng; giao điểm với trục tung cho E, độ lớn hệ số góc cho r. Dụng cụ: pin điện hoá cần đo, biến trở, điện trở bảo vệ R₀, ampe kế, vôn kế, công tắc, dây nối."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Cơ sở lí thuyết: hiệu điện thế hai cực pin khi có dòng I chạy qua là U = E − Ir. Vẽ đồ thị U theo I là đường thẳng; giao điểm với trục tung cho E, độ lớn hệ số góc cho r."
+    },
+    {
+      "type": "card",
+      "title": "Cơ sở lí thuyết",
+      "points": [
+        "Hiệu điện thế hai cực pin khi có dòng I chạy qua là U = E − Ir.",
+        "Vẽ đồ thị U theo I là đường thẳng; giao điểm với trục tung cho E, độ lớn hệ số góc cho r.",
+        "Dụng cụ: pin điện hoá cần đo, biến trở, điện trở bảo vệ R₀, ampe kế, vôn kế, công tắc, dây nối."
+      ],
+      "n": 1
     },
     {
       "type": "figure",
@@ -23,16 +34,28 @@
       "caption": "Sơ đồ mạch đo (pin – ampe kế – biến trở – R₀, vôn kế đo U hai cực pin) và đồ thị U–I: đường thẳng qua các điểm đo cắt trục tung tại E, hệ số góc −r"
     },
     {
-      "type": "text",
-      "content": "Tiến hành: (1) Mắc mạch theo sơ đồ, đóng khoá K. (2) Đặt biến trở ở giá trị lớn nhất, đọc U và I; (3) giảm dần biến trở, ghi các cặp (I, U) vào bảng (khoảng 5–6 lần); ngắt khoá giữa các lần đo để pin không nóng, nhanh cạn. (4) Vẽ đồ thị U–I."
+      "type": "card",
+      "title": "Tiến hành",
+      "points": [
+        "Mắc mạch theo sơ đồ, đóng khoá K.",
+        "Đặt biến trở ở giá trị lớn nhất, đọc U và I",
+        "Giảm dần biến trở, ghi các cặp (I, U) vào bảng (khoảng 5–6 lần); ngắt khoá giữa các lần đo để pin không nóng, nhanh cạn.",
+        "Vẽ đồ thị U–I."
+      ],
+      "n": 2,
+      "formulas": [
+        "Từ hai điểm (I₁, U₁), (I₂, U₂): r = (U₁ − U₂)/(I₂ − I₁);   E = U₁ + I₁r.   Sai số: ΔE = E_max − E_min ..., Δr tương tự; giá trị trung bình E = Σ/n."
+      ]
     },
     {
-      "type": "formula",
-      "content": "Từ hai điểm (I₁, U₁), (I₂, U₂): r = (U₁ − U₂)/(I₂ − I₁);   E = U₁ + I₁r.   Sai số: ΔE = E_max − E_min ..., Δr tương tự; giá trị trung bình E = Σ/n."
-    },
-    {
-      "type": "text",
-      "content": "Lưu ý: vôn kế có điện trở rất lớn; ampe kế có điện trở rất nhỏ; chọn thang đo phù hợp; giữ dòng điện nhỏ để pin ít bị hao; điện trở bảo vệ R₀ để tránh ngắn mạch. Nguyên nhân sai số: điện trở dụng cụ đo, đọc số, pin thay đổi trong quá trình đo."
+      "type": "card",
+      "title": "Lưu ý",
+      "points": [
+        "Vôn kế có điện trở rất lớn; ampe kế có điện trở rất nhỏ; chọn thang đo phù hợp; giữ dòng điện nhỏ để pin ít bị hao;",
+        "Điện trở bảo vệ R₀ để tránh ngắn mạch.",
+        "Nguyên nhân sai số: điện trở dụng cụ đo, đọc số, pin thay đổi trong quá trình đo."
+      ],
+      "n": 3
     },
     {
       "type": "method",

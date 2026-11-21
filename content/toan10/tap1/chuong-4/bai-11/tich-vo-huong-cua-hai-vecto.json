@@ -14,8 +14,21 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Góc giữa hai vectơ →a, →b khác →0: lấy điểm O bất kì, vẽ →OA = →a, →OB = →b, khi đó góc AOB (từ 0° đến 180°) là góc giữa hai vectơ, kí hiệu (→a, →b). Nếu (→a, →b) = 90° ta nói →a ⊥ →b."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Góc giữa hai vectơ →a, →b khác →0: lấy điểm O bất kì, vẽ →OA = →a, →OB = →b, khi đó góc AOB (từ 0° đến 180°) là góc giữa hai vectơ, kí hiệu (→a, →b)."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Góc giữa hai vectơ →a, →b khác →0: lấy điểm O bất kì, vẽ →OA = →a, →OB = →b, khi đó góc AOB (từ 0° đến 180°) là góc giữa hai vectơ, kí hiệu (→a, →b).",
+        "Nếu (→a, →b) = 90° ta nói →a ⊥ →b."
+      ],
+      "n": 1,
+      "formulas": [
+        "→a·→b = |→a|·|→b|·cos(→a, →b)        →a·→a = →a² = |→a|²        →a ⊥ →b ⇔ →a·→b = 0"
+      ]
     },
     {
       "type": "figure",
@@ -23,24 +36,23 @@
       "caption": "Góc giữa hai vectơ và tích vô hướng"
     },
     {
-      "type": "formula",
-      "content": "→a·→b = |→a|·|→b|·cos(→a, →b)        →a·→a = →a² = |→a|²        →a ⊥ →b ⇔ →a·→b = 0"
+      "type": "card",
+      "title": "Biểu thức toạ độ",
+      "points": [
+        "Nếu →a = (x; y), →b = (x′; y′) thì →a·→b = xx′ + yy′.",
+        "Từ đó |→a| = √(x² + y²) và cos(→a, →b) = (xx′ + yy′)/(√(x² + y²)·√(x′² + y′²))."
+      ],
+      "n": 2,
+      "formulas": [
+        "Tính chất: →a·→b = →b·→a;   →a·(→b + →c) = →a·→b + →a·→c;   (k→a)·→b = k(→a·→b)",
+        "(→a + →b)² = →a² + 2→a·→b + →b²        (→a − →b)² = →a² − 2→a·→b + →b²        (→a + →b)(→a − →b) = →a² − →b²"
+      ]
     },
     {
-      "type": "text",
-      "content": "Biểu thức toạ độ: nếu →a = (x; y), →b = (x′; y′) thì →a·→b = xx′ + yy′. Từ đó |→a| = √(x² + y²) và cos(→a, →b) = (xx′ + yy′)/(√(x² + y²)·√(x′² + y′²))."
-    },
-    {
-      "type": "formula",
-      "content": "Tính chất: →a·→b = →b·→a;   →a·(→b + →c) = →a·→b + →a·→c;   (k→a)·→b = k(→a·→b)"
-    },
-    {
-      "type": "formula",
-      "content": "(→a + →b)² = →a² + 2→a·→b + →b²        (→a − →b)² = →a² − 2→a·→b + →b²        (→a + →b)(→a − →b) = →a² − →b²"
-    },
-    {
-      "type": "text",
-      "content": "Ứng dụng: tích vô hướng cho phép tính độ dài đoạn thẳng, số đo góc, kiểm tra hai đường thẳng vuông góc; trong vật lí công của lực →F làm vật dịch chuyển →d là A = →F·→d."
+      "type": "card",
+      "title": "Ứng dụng",
+      "text": "Tích vô hướng cho phép tính độ dài đoạn thẳng, số đo góc, kiểm tra hai đường thẳng vuông góc; trong vật lí công của lực →F làm vật dịch chuyển →d là A = →F·→d.",
+      "n": 3
     },
     {
       "type": "method",

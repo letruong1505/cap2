@@ -14,8 +14,18 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Tổng của hai vectơ: với ba điểm A, B, C bất kì, →AB + →BC = →AC (quy tắc ba điểm). Nếu ABCD là hình bình hành thì →AB + →AD = →AC (quy tắc hình bình hành)."
+    },
+    {
+      "type": "card",
+      "title": "Tổng của hai vectơ",
+      "points": [
+        "Với ba điểm A, B, C bất kì, →AB + →BC = →AC (quy tắc ba điểm).",
+        "Nếu ABCD là hình bình hành thì →AB + →AD = →AC (quy tắc hình bình hành)."
+      ],
+      "n": 1
     },
     {
       "type": "figure",
@@ -23,20 +33,29 @@
       "caption": "Cộng hai vectơ bằng quy tắc ba điểm"
     },
     {
-      "type": "text",
-      "content": "Phép cộng vectơ có tính chất giao hoán →a + →b = →b + →a, kết hợp (→a + →b) + →c = →a + (→b + →c), và →a + →0 = →a."
+      "type": "card",
+      "title": "Phép cộng vectơ có tính chất giao…",
+      "text": "Phép cộng vectơ có tính chất giao hoán →a + →b = →b + →a, kết hợp (→a + →b) + →c = →a + (→b + →c), và →a + →0 = →a.",
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Hiệu của hai vectơ: →a − →b = →a + (−→b). Quy tắc hiệu: với ba điểm O, A, B bất kì, →OB − →OA = →AB. Đặc biệt →a − →a = →0."
+      "type": "card",
+      "title": "Hiệu của hai vectơ",
+      "points": [
+        "→a − →b = →a + (−→b).",
+        "Quy tắc hiệu: với ba điểm O, A, B bất kì, →OB − →OA = →AB.",
+        "Đặc biệt →a − →a = →0."
+      ],
+      "n": 3,
+      "formulas": [
+        "M là trung điểm AB ⇔ →MA + →MB = →0        G là trọng tâm tam giác ABC ⇔ →GA + →GB + →GC = →0"
+      ]
     },
     {
-      "type": "formula",
-      "content": "M là trung điểm AB ⇔ →MA + →MB = →0        G là trọng tâm tam giác ABC ⇔ →GA + →GB + →GC = →0"
-    },
-    {
-      "type": "text",
-      "content": "Trong vật lí, hợp lực của hai lực →F₁, →F₂ cùng tác dụng vào một vật là →F = →F₁ + →F₂; nếu hai lực vuông góc thì |→F|² = |→F₁|² + |→F₂|²."
+      "type": "card",
+      "title": "Trong vật lí, hợp lực của hai…",
+      "text": "Trong vật lí, hợp lực của hai lực →F₁, →F₂ cùng tác dụng vào một vật là →F = →F₁ + →F₂; nếu hai lực vuông góc thì |→F|² = |→F₁|² + |→F₂|².",
+      "n": 4
     },
     {
       "type": "method",

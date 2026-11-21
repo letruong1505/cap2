@@ -8,16 +8,27 @@
   "lesson": "Bài 25. Đa thức một biến",
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Đa thức một biến là tổng của các đơn thức của cùng một biến x, có dạng a_n x^n + ... + a_1 x + a_0."
     },
     {
-      "type": "text",
-      "content": "Bậc của đa thức một biến khác 0 là số mũ lớn nhất của biến có hệ số khác 0. Hệ số a_0 không chứa x gọi là hệ số tự do."
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Đa thức một biến là tổng của các đơn thức của cùng một biến x, có dạng a_n x^n + ... + a_1 x + a_0.",
+      "n": 1
     },
     {
-      "type": "formula",
-      "content": "Ví dụ: P(x) = 3x³ − 2x + 5 có bậc 3, hệ số tự do là 5."
+      "type": "card",
+      "title": "Bậc của đa thức một biến khác…",
+      "points": [
+        "Bậc của đa thức một biến khác 0 là số mũ lớn nhất của biến có hệ số khác 0.",
+        "Hệ số a_0 không chứa x gọi là hệ số tự do."
+      ],
+      "n": 2,
+      "formulas": [
+        "Ví dụ: P(x) = 3x³ − 2x + 5 có bậc 3, hệ số tự do là 5."
+      ]
     },
     {
       "type": "method",

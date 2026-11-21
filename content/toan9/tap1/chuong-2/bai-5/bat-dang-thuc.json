@@ -13,20 +13,33 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Hệ thức dạng a > b (a < b, a ≥ b, a ≤ b) gọi là bất đẳng thức; a là vế trái, b là vế phải."
     },
     {
-      "type": "text",
-      "content": "Tính chất bắc cầu: a > b và b > c ⇒ a > c."
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Hệ thức dạng a > b (a < b, a ≥ b, a ≤ b) gọi là bất đẳng thức; a là vế trái, b là vế phải.",
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Liên hệ với phép cộng: a > b ⇒ a + c > b + c (cộng cùng một số vào hai vế, chiều không đổi)."
+      "type": "card",
+      "title": "Tính chất bắc cầu",
+      "text": "A > b và b > c ⇒ a > c.",
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Liên hệ với phép nhân: a > b, c > 0 ⇒ ac > bc; a > b, c < 0 ⇒ ac < bc (nhân với số âm phải đổi chiều)."
+      "type": "card",
+      "title": "Liên hệ với phép cộng",
+      "text": "A > b ⇒ a + c > b + c (cộng cùng một số vào hai vế, chiều không đổi).",
+      "n": 3
+    },
+    {
+      "type": "card",
+      "title": "Liên hệ với phép nhân",
+      "text": "A > b, c > 0 ⇒ ac > bc; a > b, c < 0 ⇒ ac < bc (nhân với số âm phải đổi chiều).",
+      "n": 4
     }
   ],
   "examples": [

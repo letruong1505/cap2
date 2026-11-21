@@ -15,8 +15,18 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Dung dịch là hỗn hợp đồng nhất của chất tan và dung môi (thường là nước). Ở nhiệt độ, áp suất nhất định, dung dịch còn hoà tan thêm được chất tan là dung dịch chưa bão hoà; không hoà tan thêm được là dung dịch bão hoà."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Dung dịch là hỗn hợp đồng nhất của chất tan và dung môi (thường là nước).",
+        "Ở nhiệt độ, áp suất nhất định, dung dịch còn hoà tan thêm được chất tan là dung dịch chưa bão hoà; không hoà tan thêm được là dung dịch bão hoà."
+      ],
+      "n": 1
     },
     {
       "type": "figure",
@@ -24,12 +34,13 @@
       "caption": "Dung dịch chưa bão hoà và dung dịch bão hoà."
     },
     {
-      "type": "text",
-      "content": "Độ tan của một chất trong nước là số gam chất đó hoà tan trong 100 g nước để tạo dung dịch bão hoà ở nhiệt độ, áp suất xác định."
-    },
-    {
-      "type": "formula",
-      "content": "S = (m chất tan / m nước) · 100   (g/100 g nước)"
+      "type": "card",
+      "title": "Độ tan của một chất trong nước…",
+      "text": "Độ tan của một chất trong nước là số gam chất đó hoà tan trong 100 g nước để tạo dung dịch bão hoà ở nhiệt độ, áp suất xác định.",
+      "n": 2,
+      "formulas": [
+        "S = (m chất tan / m nước) · 100   (g/100 g nước)"
+      ]
     },
     {
       "type": "figure",
@@ -37,24 +48,31 @@
       "caption": "Xu hướng thay đổi độ tan theo nhiệt độ."
     },
     {
-      "type": "text",
-      "content": "Độ tan của đa số chất rắn tăng khi nhiệt độ tăng; độ tan của chất khí thường giảm khi nhiệt độ tăng hoặc áp suất giảm."
+      "type": "card",
+      "title": "Độ tan của đa số chất rắn tăng khi nhiệt độ tăng",
+      "text": "Độ tan của chất khí thường giảm khi nhiệt độ tăng hoặc áp suất giảm.",
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Nồng độ phần trăm C% cho biết số gam chất tan có trong 100 g dung dịch. Khối lượng dung dịch = khối lượng chất tan + khối lượng dung môi."
+      "type": "card",
+      "title": "Nồng độ phần trăm C% cho biết…",
+      "points": [
+        "Nồng độ phần trăm C% cho biết số gam chất tan có trong 100 g dung dịch.",
+        "Khối lượng dung dịch = khối lượng chất tan + khối lượng dung môi."
+      ],
+      "n": 4,
+      "formulas": [
+        "C% = (m chất tan / m dung dịch) · 100%"
+      ]
     },
     {
-      "type": "formula",
-      "content": "C% = (m chất tan / m dung dịch) · 100%"
-    },
-    {
-      "type": "text",
-      "content": "Nồng độ mol C_M cho biết số mol chất tan có trong 1 lít dung dịch."
-    },
-    {
-      "type": "formula",
-      "content": "C_M = n / V   (mol/L)"
+      "type": "card",
+      "title": "Nồng độ mol C_M cho biết số…",
+      "text": "Nồng độ mol C_M cho biết số mol chất tan có trong 1 lít dung dịch.",
+      "n": 5,
+      "formulas": [
+        "C_M = n / V   (mol/L)"
+      ]
     }
   ],
   "examples": [

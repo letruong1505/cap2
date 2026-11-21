@@ -14,32 +14,64 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Mệnh đề là một khẳng định đúng hoặc sai (không thể vừa đúng vừa sai). Câu hỏi, câu cảm thán, câu mệnh lệnh không phải là mệnh đề. Ví dụ: \"Hà Nội là thủ đô của Việt Nam\" là mệnh đề đúng; \"7 là số chẵn\" là mệnh đề sai; \"Hôm nay trời đẹp quá!\" không phải mệnh đề."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Mệnh đề là một khẳng định đúng hoặc sai (không thể vừa đúng vừa sai). Câu hỏi, câu cảm thán, câu mệnh lệnh không phải là mệnh đề."
     },
     {
-      "type": "text",
-      "content": "Mệnh đề chứa biến là câu khẳng định chứa biến, tính đúng sai phụ thuộc vào giá trị của biến. Ví dụ P(x): \"x² − 1 = 0\" đúng khi x = 1 hoặc x = −1, sai với các giá trị khác."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Mệnh đề là một khẳng định đúng hoặc sai (không thể vừa đúng vừa sai).",
+        "Câu hỏi, câu cảm thán, câu mệnh lệnh không phải là mệnh đề.",
+        "Ví dụ: \"Hà Nội là thủ đô của Việt Nam\" là mệnh đề đúng;",
+        "\"7 là số chẵn\" là mệnh đề sai;",
+        "\"Hôm nay trời đẹp quá!\" không phải mệnh đề."
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Mệnh đề phủ định của P kí hiệu là P̄ (đọc là \"không P\"). P đúng thì P̄ sai, P sai thì P̄ đúng. Ví dụ: P: \"5 là số nguyên tố\" thì P̄: \"5 không phải là số nguyên tố\"."
+      "type": "card",
+      "title": "Mệnh đề chứa biến là câu khẳng…",
+      "points": [
+        "Mệnh đề chứa biến là câu khẳng định chứa biến, tính đúng sai phụ thuộc vào giá trị của biến.",
+        "Ví dụ P(x): \"x² − 1 = 0\" đúng khi x = 1 hoặc x = −1, sai với các giá trị khác."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Mệnh đề kéo theo \"Nếu P thì Q\" kí hiệu P ⇒ Q, chỉ sai khi P đúng và Q sai. Khi P ⇒ Q đúng, ta nói P là điều kiện đủ để có Q, Q là điều kiện cần để có P. Mệnh đề Q ⇒ P gọi là mệnh đề đảo của P ⇒ Q."
+      "type": "card",
+      "title": "Mệnh đề phủ định của P kí hiệu là P̄ (đọc là \"không P\")",
+      "points": [
+        "P đúng thì P̄ sai, P sai thì P̄ đúng.",
+        "Ví dụ: P: \"5 là số nguyên tố\" thì P̄: \"5 không phải là số nguyên tố\"."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Nếu cả P ⇒ Q và Q ⇒ P đều đúng thì P và Q là hai mệnh đề tương đương, kí hiệu P ⇔ Q, đọc là \"P khi và chỉ khi Q\" hoặc \"P là điều kiện cần và đủ để có Q\"."
+      "type": "card",
+      "title": "Mệnh đề kéo theo \"Nếu P thì…",
+      "points": [
+        "Mệnh đề kéo theo \"Nếu P thì Q\" kí hiệu P ⇒ Q, chỉ sai khi P đúng và Q sai.",
+        "Khi P ⇒ Q đúng, ta nói P là điều kiện đủ để có Q, Q là điều kiện cần để có P.",
+        "Mệnh đề Q ⇒ P gọi là mệnh đề đảo của P ⇒ Q."
+      ],
+      "n": 4
     },
     {
-      "type": "text",
-      "content": "Kí hiệu ∀ đọc là \"với mọi\", kí hiệu ∃ đọc là \"tồn tại\". Mệnh đề \"∀x ∈ X, P(x)\" đúng khi P(x) đúng với mọi x thuộc X; mệnh đề \"∃x ∈ X, P(x)\" đúng khi có ít nhất một x thuộc X làm P(x) đúng."
+      "type": "card",
+      "title": "Nếu cả P ⇒ Q và Q…",
+      "text": "Nếu cả P ⇒ Q và Q ⇒ P đều đúng thì P và Q là hai mệnh đề tương đương, kí hiệu P ⇔ Q, đọc là \"P khi và chỉ khi Q\" hoặc \"P là điều kiện cần và đủ để có Q\".",
+      "n": 5
     },
     {
-      "type": "formula",
-      "content": "Phủ định của \"∀x ∈ X, P(x)\" là \"∃x ∈ X, P̄(x)\"        Phủ định của \"∃x ∈ X, P(x)\" là \"∀x ∈ X, P̄(x)\""
+      "type": "card",
+      "title": "Kí hiệu ∀ đọc là \"với mọi\", kí hiệu ∃ đọc là \"tồn tại\"",
+      "text": "Mệnh đề \"∀x ∈ X, P(x)\" đúng khi P(x) đúng với mọi x thuộc X; mệnh đề \"∃x ∈ X, P(x)\" đúng khi có ít nhất một x thuộc X làm P(x) đúng.",
+      "n": 6,
+      "formulas": [
+        "Phủ định của \"∀x ∈ X, P(x)\" là \"∃x ∈ X, P̄(x)\"        Phủ định của \"∃x ∈ X, P(x)\" là \"∀x ∈ X, P̄(x)\""
+      ]
     },
     {
       "type": "method",

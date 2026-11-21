@@ -8,21 +8,24 @@
   "lesson": "Bài 37. Hình lăng trụ đứng tam giác và hình lăng trụ đứng tứ giác",
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Hình lăng trụ đứng có hai đáy là hai đa giác bằng nhau và song song; các mặt bên là hình chữ nhật và vuông góc với hai đáy."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Hình lăng trụ đứng có hai đáy là hai đa giác bằng nhau và song song; các mặt bên là hình chữ nhật và vuông góc với hai đáy.",
+      "n": 1,
+      "formulas": [
+        "Thể tích lăng trụ đứng: V = S_đáy · h (h là chiều cao).",
+        "Diện tích xung quanh: S_xq = chu vi đáy · h."
+      ]
     },
     {
       "type": "figure",
       "figure": "figures/t2-lt-lang-tru.svg",
       "caption": "Lăng trụ đứng tam giác ABC.A′B′C′: hai đáy ABC và A′B′C′ là hai tam giác bằng nhau; các cạnh bên AA′, BB′, CC′ bằng nhau và vuông góc với hai đáy; h là chiều cao."
-    },
-    {
-      "type": "formula",
-      "content": "Thể tích lăng trụ đứng: V = S_đáy · h (h là chiều cao)."
-    },
-    {
-      "type": "formula",
-      "content": "Diện tích xung quanh: S_xq = chu vi đáy · h."
     }
   ],
   "examples": [

@@ -14,8 +14,22 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Khi số liệu nhiều và phân tán, ta chia thành các nhóm [a₁; a₂), [a₂; a₃), …, [aₘ; aₘ₊₁) và đếm số giá trị rơi vào mỗi nhóm. Bảng ghi các nhóm và tần số tương ứng gọi là bảng tần số ghép nhóm; mẫu số liệu này gọi là mẫu số liệu ghép nhóm. Độ rộng nhóm thường lấy bằng nhau."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Khi số liệu nhiều và phân tán, ta chia thành các nhóm [a₁; a₂), [a₂; a₃), …, [aₘ; aₘ₊₁) và đếm số giá trị rơi vào mỗi nhóm."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Khi số liệu nhiều và phân tán, ta chia thành các nhóm [a₁; a₂), [a₂; a₃), …, [aₘ; aₘ₊₁) và đếm số giá trị rơi vào mỗi nhóm.",
+        "Bảng ghi các nhóm và tần số tương ứng gọi là bảng tần số ghép nhóm; mẫu số liệu này gọi là mẫu số liệu ghép nhóm.",
+        "Độ rộng nhóm thường lấy bằng nhau."
+      ],
+      "n": 1,
+      "formulas": [
+        "Tần số tương đối của nhóm: fᵢ = (nᵢ/n)·100%.   Tần số tích luỹ của nhóm: cfᵢ = n₁ + … + nᵢ (số giá trị nhỏ hơn đầu mút phải của nhóm i)."
+      ]
     },
     {
       "type": "figure",
@@ -23,12 +37,13 @@
       "caption": "Biểu đồ cột (histogram) của mẫu số liệu ghép nhóm: chiều cao cột bằng tần số của nhóm"
     },
     {
-      "type": "formula",
-      "content": "Tần số tương đối của nhóm: fᵢ = (nᵢ/n)·100%.   Tần số tích luỹ của nhóm: cfᵢ = n₁ + … + nᵢ (số giá trị nhỏ hơn đầu mút phải của nhóm i)."
-    },
-    {
-      "type": "text",
-      "content": "Đại diện của nhóm [aᵢ; aᵢ₊₁) là giá trị chính giữa xᵢ = (aᵢ + aᵢ₊₁)/2. Khi tính toán trên mẫu ghép nhóm, xem mọi giá trị trong nhóm đều bằng giá trị đại diện."
+      "type": "card",
+      "title": "Đại diện của nhóm [aᵢ; aᵢ₊₁) là…",
+      "points": [
+        "Đại diện của nhóm [aᵢ; aᵢ₊₁) là giá trị chính giữa xᵢ = (aᵢ + aᵢ₊₁)/2.",
+        "Khi tính toán trên mẫu ghép nhóm, xem mọi giá trị trong nhóm đều bằng giá trị đại diện."
+      ],
+      "n": 2
     },
     {
       "type": "method",

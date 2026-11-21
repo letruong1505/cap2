@@ -14,8 +14,18 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Trên mặt phẳng toạ độ Oxy, →i và →j là hai vectơ đơn vị trên hai trục Ox, Oy. Với mỗi vectơ →u có duy nhất cặp số (x; y) sao cho →u = x→i + y→j; cặp số đó gọi là toạ độ của →u, viết →u = (x; y) hoặc →u(x; y)."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Trên mặt phẳng toạ độ Oxy, →i và →j là hai vectơ đơn vị trên hai trục Ox, Oy.",
+        "Với mỗi vectơ →u có duy nhất cặp số (x; y) sao cho →u = x→i + y→j; cặp số đó gọi là toạ độ của →u, viết →u = (x; y) hoặc →u(x; y)."
+      ],
+      "n": 1
     },
     {
       "type": "figure",
@@ -23,24 +33,29 @@
       "caption": "Toạ độ của điểm M chính là toạ độ của vectơ →OM"
     },
     {
-      "type": "text",
-      "content": "Toạ độ của điểm M là toạ độ của vectơ →OM. Nếu A(x_A; y_A) và B(x_B; y_B) thì →AB = (x_B − x_A; y_B − y_A). Hai vectơ bằng nhau khi và chỉ khi các toạ độ tương ứng bằng nhau."
+      "type": "card",
+      "title": "Toạ độ của điểm M là toạ độ của vectơ →OM",
+      "points": [
+        "Nếu A(x_A; y_A) và B(x_B; y_B) thì →AB = (x_B − x_A; y_B − y_A).",
+        "Hai vectơ bằng nhau khi và chỉ khi các toạ độ tương ứng bằng nhau."
+      ],
+      "n": 2,
+      "formulas": [
+        "→u = (x; y), →v = (x′; y′):   →u + →v = (x + x′; y + y′),   →u − →v = (x − x′; y − y′),   k→u = (kx; ky)",
+        "|→u| = √(x² + y²)        AB = |→AB| = √((x_B − x_A)² + (y_B − y_A)²)"
+      ]
     },
     {
-      "type": "formula",
-      "content": "→u = (x; y), →v = (x′; y′):   →u + →v = (x + x′; y + y′),   →u − →v = (x − x′; y − y′),   k→u = (kx; ky)"
-    },
-    {
-      "type": "formula",
-      "content": "|→u| = √(x² + y²)        AB = |→AB| = √((x_B − x_A)² + (y_B − y_A)²)"
-    },
-    {
-      "type": "text",
-      "content": "→v cùng phương với →u ≠ →0 khi và chỉ khi có số k để x′ = kx, y′ = ky (khi x, y khác 0 có thể viết x′/x = y′/y). Ba điểm A, B, C thẳng hàng khi →AB và →AC cùng phương."
-    },
-    {
-      "type": "formula",
-      "content": "Trung điểm I của AB: x_I = (x_A + x_B)/2, y_I = (y_A + y_B)/2.        Trọng tâm G của ABC: x_G = (x_A + x_B + x_C)/3, y_G = (y_A + y_B + y_C)/3."
+      "type": "card",
+      "title": "→v cùng phương với →u ≠ →0…",
+      "points": [
+        "→v cùng phương với →u ≠ →0 khi và chỉ khi có số k để x′ = kx, y′ = ky (khi x, y khác 0 có thể viết x′/x = y′/y).",
+        "Ba điểm A, B, C thẳng hàng khi →AB và →AC cùng phương."
+      ],
+      "n": 3,
+      "formulas": [
+        "Trung điểm I của AB: x_I = (x_A + x_B)/2, y_I = (y_A + y_B)/2.        Trọng tâm G của ABC: x_G = (x_A + x_B + x_C)/3, y_G = (y_A + y_B + y_C)/3."
+      ]
     },
     {
       "type": "method",

@@ -13,8 +13,15 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Gọi d là khoảng cách từ tâm O đến đường thẳng a. Nếu d < R thì a cắt đường tròn tại hai điểm; d = R thì a tiếp xúc đường tròn (a là tiếp tuyến); d > R thì a và đường tròn không giao nhau."
+    },
+    {
+      "type": "card",
+      "title": "Gọi d là khoảng cách từ tâm O đến đường thẳng a",
+      "text": "Nếu d < R thì a cắt đường tròn tại hai điểm; d = R thì a tiếp xúc đường tròn (a là tiếp tuyến); d > R thì a và đường tròn không giao nhau.",
+      "n": 1
     },
     {
       "type": "figure",
@@ -22,12 +29,20 @@
       "caption": "Ba vị trí của đường thẳng và đường tròn."
     },
     {
-      "type": "text",
-      "content": "Tiếp tuyến vuông góc với bán kính tại tiếp điểm. Ngược lại, đường thẳng đi qua một điểm của đường tròn và vuông góc với bán kính tại điểm đó là tiếp tuyến."
+      "type": "card",
+      "title": "Tiếp tuyến vuông góc với bán kính tại tiếp điểm",
+      "text": "Ngược lại, đường thẳng đi qua một điểm của đường tròn và vuông góc với bán kính tại điểm đó là tiếp tuyến.",
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Hai tiếp tuyến cắt nhau tại M (MA, MB là tiếp tuyến): MA = MB; MO là tia phân giác góc AMB; OM là tia phân giác góc AOB."
+      "type": "card",
+      "title": "Hai tiếp tuyến cắt nhau tại M (MA, MB là tiếp tuyến)",
+      "points": [
+        "MA = MB;",
+        "MO là tia phân giác góc AMB;",
+        "OM là tia phân giác góc AOB."
+      ],
+      "n": 3
     },
     {
       "type": "figure",

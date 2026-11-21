@@ -14,12 +14,27 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Phép thử ngẫu nhiên là một thí nghiệm hay hành động mà kết quả không đoán trước được nhưng biết được tập hợp tất cả các kết quả có thể. Tập hợp đó gọi là không gian mẫu, kí hiệu Ω."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Phép thử ngẫu nhiên là một thí nghiệm hay hành động mà kết quả không đoán trước được nhưng biết được tập hợp tất cả các kết quả có thể."
     },
     {
-      "type": "text",
-      "content": "Biến cố là một tập con của không gian mẫu. Biến cố xảy ra khi kết quả của phép thử thuộc tập con đó. Biến cố chắc chắn là Ω, biến cố không thể là ∅."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Phép thử ngẫu nhiên là một thí nghiệm hay hành động mà kết quả không đoán trước được nhưng biết được tập hợp tất cả các kết quả có thể.",
+        "Tập hợp đó gọi là không gian mẫu, kí hiệu Ω."
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Biến cố là một tập con của không gian mẫu",
+      "points": [
+        "Biến cố xảy ra khi kết quả của phép thử thuộc tập con đó.",
+        "Biến cố chắc chắn là Ω, biến cố không thể là ∅."
+      ],
+      "n": 2
     },
     {
       "type": "figure",
@@ -27,16 +42,22 @@
       "caption": "Biến cố A và biến cố đối Ā trong không gian mẫu Ω"
     },
     {
-      "type": "text",
-      "content": "Biến cố đối của A, kí hiệu Ā, là biến cố \"A không xảy ra\"; Ā = Ω \\ A. A và Ā không cùng xảy ra và luôn có đúng một trong hai xảy ra."
+      "type": "card",
+      "title": "Biến cố đối của A, kí hiệu Ā, là biến cố \"A không xảy ra\"",
+      "points": [
+        "Ā = Ω \\ A.",
+        "A và Ā không cùng xảy ra và luôn có đúng một trong hai xảy ra."
+      ],
+      "n": 3,
+      "formulas": [
+        "P(A) = n(A) / n(Ω)  (các kết quả đồng khả năng)        0 ≤ P(A) ≤ 1,  P(Ω) = 1,  P(∅) = 0        P(Ā) = 1 − P(A)"
+      ]
     },
     {
-      "type": "formula",
-      "content": "P(A) = n(A) / n(Ω)  (các kết quả đồng khả năng)        0 ≤ P(A) ≤ 1,  P(Ω) = 1,  P(∅) = 0        P(Ā) = 1 − P(A)"
-    },
-    {
-      "type": "text",
-      "content": "Khi các kết quả của phép thử đồng khả năng, xác suất của biến cố A bằng số kết quả thuận lợi cho A chia cho tổng số kết quả có thể."
+      "type": "card",
+      "title": "Khi các kết quả của phép thử…",
+      "text": "Khi các kết quả của phép thử đồng khả năng, xác suất của biến cố A bằng số kết quả thuận lợi cho A chia cho tổng số kết quả có thể.",
+      "n": 4
     },
     {
       "type": "method",

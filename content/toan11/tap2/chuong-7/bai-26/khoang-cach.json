@@ -14,8 +14,19 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Khoảng cách từ điểm M đến đường thẳng a là độ dài đoạn MH, với H là hình chiếu vuông góc của M trên a. Khoảng cách từ điểm M đến mặt phẳng (P) là độ dài MH, H là hình chiếu vuông góc của M lên (P). Kí hiệu d(M, a), d(M, (P))."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Khoảng cách từ điểm M đến đường thẳng a là độ dài đoạn MH, với H là hình chiếu vuông góc của M trên a."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Khoảng cách từ điểm M đến đường thẳng a là độ dài đoạn MH, với H là hình chiếu vuông góc của M trên a.",
+        "Khoảng cách từ điểm M đến mặt phẳng (P) là độ dài MH, H là hình chiếu vuông góc của M lên (P).",
+        "Kí hiệu d(M, a), d(M, (P))."
+      ],
+      "n": 1
     },
     {
       "type": "figure",
@@ -23,12 +34,17 @@
       "caption": "Khoảng cách từ điểm M đến mặt phẳng (P) bằng độ dài đoạn vuông góc MH"
     },
     {
-      "type": "text",
-      "content": "Khoảng cách giữa đường thẳng a và mặt phẳng (P) song song với nó là khoảng cách từ một điểm bất kì của a đến (P). Khoảng cách giữa hai mặt phẳng song song là khoảng cách từ một điểm bất kì của mặt phẳng này đến mặt phẳng kia. Khoảng cách giữa hai đường thẳng chéo nhau là độ dài đoạn vuông góc chung của chúng."
-    },
-    {
-      "type": "formula",
-      "content": "Tam giác vuông tại A, đường cao AH: AH = AB·AC/BC.   Hình chữ nhật AB = a, AD = b: d(A, BD) = ab/√(a² + b²)."
+      "type": "card",
+      "title": "Khoảng cách giữa đường thẳng a và…",
+      "points": [
+        "Khoảng cách giữa đường thẳng a và mặt phẳng (P) song song với nó là khoảng cách từ một điểm bất kì của a đến (P).",
+        "Khoảng cách giữa hai mặt phẳng song song là khoảng cách từ một điểm bất kì của mặt phẳng này đến mặt phẳng kia.",
+        "Khoảng cách giữa hai đường thẳng chéo nhau là độ dài đoạn vuông góc chung của chúng."
+      ],
+      "n": 2,
+      "formulas": [
+        "Tam giác vuông tại A, đường cao AH: AH = AB·AC/BC.   Hình chữ nhật AB = a, AD = b: d(A, BD) = ab/√(a² + b²)."
+      ]
     },
     {
       "type": "method",

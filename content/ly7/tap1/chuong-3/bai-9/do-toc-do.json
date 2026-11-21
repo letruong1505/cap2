@@ -14,8 +14,18 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Để đo tốc độ chuyển động cần đo độ dài quãng đường s và thời gian t. Dụng cụ đo tốc độ của các phương tiện giao thông như ô tô, xe máy được gọi là tốc kế."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Để đo tốc độ chuyển động cần đo độ dài quãng đường s và thời gian t.",
+        "Dụng cụ đo tốc độ của các phương tiện giao thông như ô tô, xe máy được gọi là tốc kế."
+      ],
+      "n": 1
     },
     {
       "type": "figure",
@@ -23,20 +33,31 @@
       "caption": "Đo quãng đường và thời gian để tính tốc độ."
     },
     {
-      "type": "text",
-      "content": "Đo tốc độ bằng đồng hồ bấm giây: đánh dấu vạch xuất phát và vạch đích, đo quãng đường s, bấm giây đo thời gian t từ lúc vật bắt đầu chuyển động đến khi tới vạch đích. Thường thực hiện 3 lần đo, tính giá trị trung bình của s và t rồi tính tốc độ."
+      "type": "card",
+      "title": "Đo tốc độ bằng đồng hồ bấm giây",
+      "points": [
+        "Đánh dấu vạch xuất phát và vạch đích, đo quãng đường s, bấm giây đo thời gian t từ lúc vật bắt đầu chuyển động đến khi tới vạch đích.",
+        "Thường thực hiện 3 lần đo, tính giá trị trung bình của s và t rồi tính tốc độ."
+      ],
+      "n": 2,
+      "formulas": [
+        "v = s / t"
+      ]
     },
     {
-      "type": "formula",
-      "content": "v = s / t"
+      "type": "card",
+      "title": "Đo tốc độ bằng đồng hồ đo thời gian hiện số và cổng quang điện",
+      "text": "Cách làm tương tự, nhưng thời gian được đo tự động khi vật đi qua cổng quang điện thứ nhất và thứ hai.",
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Đo tốc độ bằng đồng hồ đo thời gian hiện số và cổng quang điện: cách làm tương tự, nhưng thời gian được đo tự động khi vật đi qua cổng quang điện thứ nhất và thứ hai."
-    },
-    {
-      "type": "text",
-      "content": "Thiết bị bắn tốc độ đơn giản dùng một camera ghi lại thời điểm ô tô đi qua hai vạch mốc cách nhau vài mét. Máy tính tính tốc độ từ quãng đường giữa hai vạch và thời gian, sau đó so sánh với tốc độ giới hạn để phát hiện xe vượt quá tốc độ."
+      "type": "card",
+      "title": "Thiết bị bắn tốc độ đơn giản…",
+      "points": [
+        "Thiết bị bắn tốc độ đơn giản dùng một camera ghi lại thời điểm ô tô đi qua hai vạch mốc cách nhau vài mét.",
+        "Máy tính tính tốc độ từ quãng đường giữa hai vạch và thời gian, sau đó so sánh với tốc độ giới hạn để phát hiện xe vượt quá tốc độ."
+      ],
+      "n": 4
     }
   ],
   "examples": [

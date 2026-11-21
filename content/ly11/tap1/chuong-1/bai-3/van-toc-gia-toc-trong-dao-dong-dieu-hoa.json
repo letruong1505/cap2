@@ -14,12 +14,18 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Vận tốc là đạo hàm của li độ theo thời gian, gia tốc là đạo hàm của vận tốc: v = x′, a = v′."
     },
     {
-      "type": "formula",
-      "content": "x = A cos(ωt + φ);   v = −ωA sin(ωt + φ) = ωA cos(ωt + φ + π/2);   a = −ω²A cos(ωt + φ) = −ω²x."
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Vận tốc là đạo hàm của li độ theo thời gian, gia tốc là đạo hàm của vận tốc: v = x′, a = v′.",
+      "n": 1,
+      "formulas": [
+        "x = A cos(ωt + φ);   v = −ωA sin(ωt + φ) = ωA cos(ωt + φ + π/2);   a = −ω²A cos(ωt + φ) = −ω²x."
+      ]
     },
     {
       "type": "figure",
@@ -27,16 +33,23 @@
       "caption": "Đồ thị x, v, a theo thời gian: v sớm pha π/2 so với x; a ngược pha với x"
     },
     {
-      "type": "text",
-      "content": "Tốc độ cực đại v_max = ωA khi vật qua VTCB (x = 0). Gia tốc có độ lớn cực đại a_max = ω²A khi vật ở biên (x = ±A). Vật đổi chiều chuyển động ở biên (v = 0). Vectơ gia tốc luôn hướng về VTCB."
+      "type": "card",
+      "title": "Tốc độ cực đại v_max = ωA khi vật qua VTCB (x = 0)",
+      "points": [
+        "Gia tốc có độ lớn cực đại a_max = ω²A khi vật ở biên (x = ±A).",
+        "Vật đổi chiều chuyển động ở biên (v = 0).",
+        "Vectơ gia tốc luôn hướng về VTCB."
+      ],
+      "n": 2,
+      "formulas": [
+        "Hệ thức độc lập với thời gian: x²/A² + v²/(ωA)² = 1, tức A² = x² + v²/ω²;   v² = ω²(A² − x²);   a = −ω²x."
+      ]
     },
     {
-      "type": "formula",
-      "content": "Hệ thức độc lập với thời gian: x²/A² + v²/(ωA)² = 1, tức A² = x² + v²/ω²;   v² = ω²(A² − x²);   a = −ω²x."
-    },
-    {
-      "type": "text",
-      "content": "Hợp lực tác dụng lên vật dao động điều hoà (lực kéo về) có độ lớn tỉ lệ với li độ và hướng về VTCB: F = ma = −mω²x."
+      "type": "card",
+      "title": "Hợp lực tác dụng lên vật dao…",
+      "text": "Hợp lực tác dụng lên vật dao động điều hoà (lực kéo về) có độ lớn tỉ lệ với li độ và hướng về VTCB: F = ma = −mω²x.",
+      "n": 3
     },
     {
       "type": "method",

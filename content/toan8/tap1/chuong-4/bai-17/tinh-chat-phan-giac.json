@@ -10,17 +10,23 @@
   "bookPage": 89,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Định lí: trong tam giác, đường phân giác của một góc chia cạnh đối diện thành hai đoạn thẳng tỉ lệ với hai cạnh kề hai đoạn ấy."
+    },
+    {
+      "type": "card",
+      "title": "Định lí",
+      "text": "Trong tam giác, đường phân giác của một góc chia cạnh đối diện thành hai đoạn thẳng tỉ lệ với hai cạnh kề hai đoạn ấy.",
+      "n": 1,
+      "formulas": [
+        "AD là phân giác của góc A ⇒ DB/DC = AB/AC"
+      ]
     },
     {
       "type": "figure",
       "figure": "figures/lt-phan-giac.svg",
       "caption": "AD là đường phân giác của tam giác ABC (D thuộc BC)."
-    },
-    {
-      "type": "formula",
-      "content": "AD là phân giác của góc A ⇒ DB/DC = AB/AC"
     }
   ],
   "examples": [

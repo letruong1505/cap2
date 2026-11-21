@@ -10,8 +10,18 @@
   "bookPage": 84,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Đường trung bình của tam giác là đoạn thẳng nối trung điểm hai cạnh của tam giác. Mỗi tam giác có ba đường trung bình."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Đường trung bình của tam giác là đoạn thẳng nối trung điểm hai cạnh của tam giác.",
+        "Mỗi tam giác có ba đường trung bình."
+      ],
+      "n": 1
     },
     {
       "type": "figure",
@@ -24,12 +34,13 @@
       "caption": "MN là đường trung bình của tam giác ABC (M, N là trung điểm của AB, AC)."
     },
     {
-      "type": "text",
-      "content": "Định lí: đường trung bình của tam giác thì song song với cạnh thứ ba và bằng nửa cạnh ấy."
-    },
-    {
-      "type": "formula",
-      "content": "M, N lần lượt là trung điểm của AB, AC ⇒ MN ∥ BC và MN = BC/2"
+      "type": "card",
+      "title": "Định lí",
+      "text": "Đường trung bình của tam giác thì song song với cạnh thứ ba và bằng nửa cạnh ấy.",
+      "n": 2,
+      "formulas": [
+        "M, N lần lượt là trung điểm của AB, AC ⇒ MN ∥ BC và MN = BC/2"
+      ]
     }
   ],
   "examples": [

@@ -13,20 +13,30 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Năng lượng vật có được do chuyển động gọi là động năng. Động năng phụ thuộc vào khối lượng và tốc độ của vật."
     },
     {
-      "type": "formula",
-      "content": "Wđ = ½·m·v²   (m: kg; v: m/s; Wđ: J)"
+      "type": "card",
+      "title": "Năng lượng vật có được do chuyển động gọi là động năng",
+      "text": "Động năng phụ thuộc vào khối lượng và tốc độ của vật.",
+      "n": 1,
+      "formulas": [
+        "Wđ = ½·m·v²   (m: kg; v: m/s; Wđ: J)"
+      ]
     },
     {
-      "type": "text",
-      "content": "Năng lượng vật có được khi ở một độ cao so với vị trí khác được chọn làm gốc gọi là thế năng trọng trường. Thế năng phụ thuộc trọng lượng và độ cao."
-    },
-    {
-      "type": "formula",
-      "content": "Wt = P·h = 10·m·h   (P: N; h: m; Wt: J)"
+      "type": "card",
+      "title": "Năng lượng vật có được khi ở…",
+      "points": [
+        "Năng lượng vật có được khi ở một độ cao so với vị trí khác được chọn làm gốc gọi là thế năng trọng trường.",
+        "Thế năng phụ thuộc trọng lượng và độ cao."
+      ],
+      "n": 2,
+      "formulas": [
+        "Wt = P·h = 10·m·h   (P: N; h: m; Wt: J)"
+      ]
     },
     {
       "type": "method",

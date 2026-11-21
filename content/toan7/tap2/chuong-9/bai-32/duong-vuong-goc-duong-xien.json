@@ -8,8 +8,18 @@
   "lesson": "Bài 32. Quan hệ giữa đường vuông góc và đường xiên",
   "theory": [
     {
-      "type": "text",
-      "content": "Cho điểm A không nằm trên đường thẳng d. Kẻ AH vuông góc với d (H thuộc d): đoạn AH gọi là đường vuông góc kẻ từ A đến d, H là chân đường vuông góc. Lấy điểm B thuộc d, khác H: đoạn AB gọi là một đường xiên kẻ từ A đến d."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Cho điểm A không nằm trên đường thẳng d. Kẻ AH vuông góc với d (H thuộc d): đoạn AH gọi là đường vuông góc kẻ từ A đến d, H là chân đường vuông góc."
+    },
+    {
+      "type": "card",
+      "title": "Cho điểm A không nằm trên đường thẳng d",
+      "points": [
+        "Kẻ AH vuông góc với d (H thuộc d): đoạn AH gọi là đường vuông góc kẻ từ A đến d, H là chân đường vuông góc.",
+        "Lấy điểm B thuộc d, khác H: đoạn AB gọi là một đường xiên kẻ từ A đến d."
+      ],
+      "n": 1
     },
     {
       "type": "figure",
@@ -17,16 +27,19 @@
       "caption": "AH là đường vuông góc kẻ từ A đến d; AB và AC là các đường xiên. AH ngắn hơn AB và AC."
     },
     {
-      "type": "text",
-      "content": "Định lí: Trong các đường xiên và đường vuông góc kẻ từ một điểm nằm ngoài một đường thẳng đến đường thẳng đó, đường vuông góc là đường ngắn nhất."
+      "type": "card",
+      "title": "Định lí",
+      "text": "Trong các đường xiên và đường vuông góc kẻ từ một điểm nằm ngoài một đường thẳng đến đường thẳng đó, đường vuông góc là đường ngắn nhất.",
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Giải thích: tam giác AHB vuông tại H nên góc AHB = 90° là góc lớn nhất; cạnh đối diện AB vì thế lớn hơn AH."
-    },
-    {
-      "type": "formula",
-      "content": "Độ dài đường vuông góc AH gọi là khoảng cách từ điểm A đến đường thẳng d."
+      "type": "card",
+      "title": "Giải thích",
+      "text": "Tam giác AHB vuông tại H nên góc AHB = 90° là góc lớn nhất; cạnh đối diện AB vì thế lớn hơn AH.",
+      "n": 3,
+      "formulas": [
+        "Độ dài đường vuông góc AH gọi là khoảng cách từ điểm A đến đường thẳng d."
+      ]
     }
   ],
   "examples": [

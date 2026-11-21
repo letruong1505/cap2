@@ -10,28 +10,51 @@
   "bookPage": 6,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Đơn thức là biểu thức đại số chỉ gồm một số, hoặc một biến, hoặc có dạng tích của những số và biến."
     },
     {
-      "type": "text",
-      "content": "Đơn thức thu gọn là đơn thức chỉ gồm tích của một số với các biến, mà mỗi biến đã được nâng lên luỹ thừa với số mũ nguyên dương (mỗi biến chỉ xuất hiện một lần). Số nói trên gọi là hệ số, phần còn lại gọi là phần biến của đơn thức thu gọn."
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Đơn thức là biểu thức đại số chỉ gồm một số, hoặc một biến, hoặc có dạng tích của những số và biến.",
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Bậc của đơn thức có hệ số khác 0 là tổng số mũ của tất cả các biến có trong đơn thức đó. Số khác 0 là đơn thức bậc không; số 0 được coi là đơn thức không có bậc."
+      "type": "card",
+      "title": "Đơn thức thu gọn là đơn thức…",
+      "points": [
+        "Đơn thức thu gọn là đơn thức chỉ gồm tích của một số với các biến, mà mỗi biến đã được nâng lên luỹ thừa với số mũ nguyên dương (mỗi biến chỉ xuất hiện một lần).",
+        "Số nói trên gọi là hệ số, phần còn lại gọi là phần biến của đơn thức thu gọn."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Hai đơn thức đồng dạng là hai đơn thức có hệ số khác 0 và có cùng phần biến. Các số khác 0 đều là những đơn thức đồng dạng với nhau."
+      "type": "card",
+      "title": "Bậc của đơn thức có hệ số…",
+      "points": [
+        "Bậc của đơn thức có hệ số khác 0 là tổng số mũ của tất cả các biến có trong đơn thức đó.",
+        "Số khác 0 là đơn thức bậc không; số 0 được coi là đơn thức không có bậc."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Để cộng (trừ) các đơn thức đồng dạng, ta cộng (trừ) các hệ số với nhau và giữ nguyên phần biến."
+      "type": "card",
+      "title": "Hai đơn thức đồng dạng là hai…",
+      "points": [
+        "Hai đơn thức đồng dạng là hai đơn thức có hệ số khác 0 và có cùng phần biến.",
+        "Các số khác 0 đều là những đơn thức đồng dạng với nhau."
+      ],
+      "n": 4
     },
     {
-      "type": "formula",
-      "content": "3x²y + 5x²y − x²y = (3 + 5 − 1)x²y = 7x²y"
+      "type": "card",
+      "title": "Để cộng (trừ) các đơn thức đồng…",
+      "text": "Để cộng (trừ) các đơn thức đồng dạng, ta cộng (trừ) các hệ số với nhau và giữ nguyên phần biến.",
+      "n": 5,
+      "formulas": [
+        "3x²y + 5x²y − x²y = (3 + 5 − 1)x²y = 7x²y"
+      ]
     },
     {
       "type": "figure",

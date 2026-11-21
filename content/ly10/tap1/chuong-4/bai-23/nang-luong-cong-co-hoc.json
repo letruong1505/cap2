@@ -14,12 +14,30 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Năng lượng là đại lượng đặc trưng cho khả năng sinh công hoặc toả nhiệt của vật. Các dạng năng lượng: động năng, thế năng, nhiệt năng, hoá năng, điện năng, quang năng, năng lượng hạt nhân… Đơn vị là jun (J)."
     },
     {
-      "type": "text",
-      "content": "Năng lượng có thể truyền từ vật này sang vật khác (bằng cách thực hiện công hoặc truyền nhiệt) và chuyển hoá từ dạng này sang dạng khác. Định luật bảo toàn năng lượng: năng lượng không tự sinh ra và không tự mất đi mà chỉ chuyển từ dạng này sang dạng khác hoặc truyền từ vật này sang vật khác."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Năng lượng là đại lượng đặc trưng cho khả năng sinh công hoặc toả nhiệt của vật.",
+        "Các dạng năng lượng: động năng, thế năng, nhiệt năng, hoá năng, điện năng, quang năng, năng lượng hạt nhân… Đơn vị là jun (J)."
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Năng lượng có thể truyền từ vật…",
+      "points": [
+        "Năng lượng có thể truyền từ vật này sang vật khác (bằng cách thực hiện công hoặc truyền nhiệt) và chuyển hoá từ dạng này sang dạng khác.",
+        "Định luật bảo toàn năng lượng: năng lượng không tự sinh ra và không tự mất đi mà chỉ chuyển từ dạng này sang dạng khác hoặc truyền từ vật này sang vật khác."
+      ],
+      "n": 2,
+      "formulas": [
+        "A = F·d·cos α        Đơn vị: 1 J = 1 N·m"
+      ]
     },
     {
       "type": "figure",
@@ -27,16 +45,23 @@
       "caption": "Lực →F hợp với hướng dịch chuyển góc α"
     },
     {
-      "type": "formula",
-      "content": "A = F·d·cos α        Đơn vị: 1 J = 1 N·m"
+      "type": "card",
+      "title": "Dấu của công",
+      "points": [
+        "0 ≤ α < 90° thì A > 0, công phát động (lực kéo);",
+        "Α = 90° thì A = 0 (lực vuông góc với hướng dịch chuyển, ví dụ trọng lực khi vật chuyển động ngang);",
+        "90° < α ≤ 180° thì A < 0, công cản (lực ma sát, lực cản)."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Dấu của công: 0 ≤ α < 90° thì A > 0, công phát động (lực kéo); α = 90° thì A = 0 (lực vuông góc với hướng dịch chuyển, ví dụ trọng lực khi vật chuyển động ngang); 90° < α ≤ 180° thì A < 0, công cản (lực ma sát, lực cản)."
-    },
-    {
-      "type": "text",
-      "content": "Công của trọng lực khi vật dịch chuyển từ độ cao h₁ xuống h₂: A = mg(h₁ − h₂), không phụ thuộc hình dạng đường đi. Công của lực ma sát trượt trên mặt ngang: A = −μmg·d."
+      "type": "card",
+      "title": "Công của trọng lực khi vật dịch chuyển từ độ cao h₁ xuống h₂",
+      "points": [
+        "A = mg(h₁ − h₂), không phụ thuộc hình dạng đường đi.",
+        "Công của lực ma sát trượt trên mặt ngang: A = −μmg·d."
+      ],
+      "n": 4
     },
     {
       "type": "method",

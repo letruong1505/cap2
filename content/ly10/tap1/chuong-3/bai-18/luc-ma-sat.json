@@ -14,12 +14,27 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Lực ma sát nghỉ xuất hiện ở mặt tiếp xúc khi vật chịu tác dụng của ngoại lực nhưng chưa trượt; cân bằng với thành phần ngoại lực song song mặt tiếp xúc; có độ lớn thay đổi, cực đại khi vật bắt đầu trượt."
     },
     {
-      "type": "text",
-      "content": "Lực ma sát trượt xuất hiện khi vật trượt trên bề mặt vật khác; ngược chiều với vận tốc tương đối; độ lớn không phụ thuộc diện tích tiếp xúc và tốc độ, tỉ lệ với áp lực N, phụ thuộc vật liệu và tình trạng bề mặt."
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Lực ma sát nghỉ xuất hiện ở mặt tiếp xúc khi vật chịu tác dụng của ngoại lực nhưng chưa trượt; cân bằng với thành phần ngoại lực song song mặt tiếp xúc; có độ lớn thay đổi, cực đại khi vật bắt đầu trượt.",
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Lực ma sát trượt xuất hiện khi…",
+      "points": [
+        "Lực ma sát trượt xuất hiện khi vật trượt trên bề mặt vật khác; ngược chiều với vận tốc tương đối;",
+        "Độ lớn không phụ thuộc diện tích tiếp xúc và tốc độ, tỉ lệ với áp lực N, phụ thuộc vật liệu và tình trạng bề mặt."
+      ],
+      "n": 2,
+      "formulas": [
+        "F_mst = μ·N        Trên mặt ngang, không có lực xiên: N = mg  ⇒  F_mst = μmg"
+      ]
     },
     {
       "type": "figure",
@@ -27,16 +42,20 @@
       "caption": "Các lực tác dụng lên vật được kéo trượt trên mặt phẳng ngang"
     },
     {
-      "type": "formula",
-      "content": "F_mst = μ·N        Trên mặt ngang, không có lực xiên: N = mg  ⇒  F_mst = μmg"
+      "type": "card",
+      "title": "Μ là hệ số ma sát trượt, không có đơn vị, thường nhỏ hơn 1",
+      "text": "Ma sát lăn nhỏ hơn ma sát trượt rất nhiều nên người ta dùng ổ bi, bánh xe.",
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "μ là hệ số ma sát trượt, không có đơn vị, thường nhỏ hơn 1. Ma sát lăn nhỏ hơn ma sát trượt rất nhiều nên người ta dùng ổ bi, bánh xe."
-    },
-    {
-      "type": "text",
-      "content": "Ma sát có lợi: giúp đi lại, cầm nắm, phanh xe, đánh diêm, dây curoa truyền chuyển động. Ma sát có hại: làm mòn chi tiết máy, tốn năng lượng, sinh nhiệt. Tăng ma sát: làm nhám bề mặt, tăng áp lực; giảm ma sát: bôi trơn, dùng ổ bi, đệm khí."
+      "type": "card",
+      "title": "Ma sát có lợi",
+      "points": [
+        "Giúp đi lại, cầm nắm, phanh xe, đánh diêm, dây curoa truyền chuyển động.",
+        "Ma sát có hại: làm mòn chi tiết máy, tốn năng lượng, sinh nhiệt.",
+        "Tăng ma sát: làm nhám bề mặt, tăng áp lực; giảm ma sát: bôi trơn, dùng ổ bi, đệm khí."
+      ],
+      "n": 4
     },
     {
       "type": "method",

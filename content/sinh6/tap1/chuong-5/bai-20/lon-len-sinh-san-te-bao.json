@@ -13,12 +13,30 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Tế bào lớn lên nhờ quá trình trao đổi chất, tăng dần kích thước. Khi đạt kích thước nhất định, tế bào thực hiện sinh sản (phân chia)."
     },
     {
-      "type": "text",
-      "content": "Quá trình phân chia: đầu tiên nhân phân chia, sau đó chất tế bào phân chia, hình thành hai tế bào con. Từ 1 tế bào sau một lần phân chia tạo 2 tế bào con."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Tế bào lớn lên nhờ quá trình trao đổi chất, tăng dần kích thước.",
+        "Khi đạt kích thước nhất định, tế bào thực hiện sinh sản (phân chia)."
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Quá trình phân chia",
+      "points": [
+        "Đầu tiên nhân phân chia, sau đó chất tế bào phân chia, hình thành hai tế bào con.",
+        "Từ 1 tế bào sau một lần phân chia tạo 2 tế bào con."
+      ],
+      "n": 2,
+      "formulas": [
+        "Số tế bào sau n lần phân chia = 2ⁿ (từ 1 tế bào)"
+      ]
     },
     {
       "type": "figure",
@@ -26,12 +44,10 @@
       "caption": "Quá trình phân chia tế bào và số tế bào sau n lần phân chia"
     },
     {
-      "type": "formula",
-      "content": "Số tế bào sau n lần phân chia = 2ⁿ (từ 1 tế bào)"
-    },
-    {
-      "type": "text",
-      "content": "Ý nghĩa: sự lớn lên và sinh sản của tế bào giúp cơ thể lớn lên (tăng kích thước, khối lượng) và thay thế các tế bào già, chết, bị tổn thương."
+      "type": "card",
+      "title": "Ý nghĩa",
+      "text": "Sự lớn lên và sinh sản của tế bào giúp cơ thể lớn lên (tăng kích thước, khối lượng) và thay thế các tế bào già, chết, bị tổn thương.",
+      "n": 3
     }
   ],
   "examples": [

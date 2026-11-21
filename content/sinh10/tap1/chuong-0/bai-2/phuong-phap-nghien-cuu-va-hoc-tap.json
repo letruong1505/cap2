@@ -16,24 +16,45 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Mọi nghiên cứu sinh học đều cần phương pháp và thiết bị phù hợp. Các phương pháp chính gồm quan sát, làm việc trong phòng thí nghiệm và thực nghiệm khoa học."
     },
     {
-      "type": "text",
-      "content": "1. Phương pháp quan sát: lựa chọn đối tượng và phạm vi quan sát; chọn công cụ (giác quan, kính lúp, thiết bị); ghi chép số liệu đủ lớn, lặp lại nhiều lần và khách quan để xử lí bằng thống kê."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Mọi nghiên cứu sinh học đều cần phương pháp và thiết bị phù hợp.",
+        "Các phương pháp chính gồm quan sát, làm việc trong phòng thí nghiệm và thực nghiệm khoa học."
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "2. Làm việc trong phòng thí nghiệm: luôn đảm bảo an toàn (mặc áo choàng, đeo găng tay, kính bảo hộ; không ăn uống, không nếm hoá chất; làm đúng hướng dẫn, dọn dẹp sau thí nghiệm). Các kĩ thuật thường dùng: giải phẫu, làm tiêu bản tế bào/NST, nhuộm màu."
+      "type": "card",
+      "title": "1",
+      "text": "Phương pháp quan sát: lựa chọn đối tượng và phạm vi quan sát; chọn công cụ (giác quan, kính lúp, thiết bị); ghi chép số liệu đủ lớn, lặp lại nhiều lần và khách quan để xử lí bằng thống kê.",
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "3. Phương pháp thực nghiệm: phân loại sinh vật (hình thái, phân tích gene), tách chiết (enzyme, gene, chất có hoạt tính sinh học), nuôi cấy (vi khuẩn, mô tế bào, động thực vật)."
+      "type": "card",
+      "title": "2",
+      "points": [
+        "Làm việc trong phòng thí nghiệm: luôn đảm bảo an toàn (mặc áo choàng, đeo găng tay, kính bảo hộ; không ăn uống, không nếm hoá chất; làm đúng hướng dẫn, dọn dẹp sau thí nghiệm).",
+        "Các kĩ thuật thường dùng: giải phẫu, làm tiêu bản tế bào/NST, nhuộm màu."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "4. Thiết bị nghiên cứu: kính hiển vi quang học (độ phóng đại tối đa khoảng 1 500 lần, độ phân giải khoảng 200 nm) và kính hiển vi điện tử (phóng đại tới hàng triệu lần, nghiên cứu cấu trúc siêu hiển vi); máy li tâm (phân đoạn tế bào theo khối lượng bào quan); kính lúp, pipet."
+      "type": "card",
+      "title": "3",
+      "text": "Phương pháp thực nghiệm: phân loại sinh vật (hình thái, phân tích gene), tách chiết (enzyme, gene, chất có hoạt tính sinh học), nuôi cấy (vi khuẩn, mô tế bào, động thực vật).",
+      "n": 4
+    },
+    {
+      "type": "card",
+      "title": "4",
+      "text": "Thiết bị nghiên cứu: kính hiển vi quang học (độ phóng đại tối đa khoảng 1 500 lần, độ phân giải khoảng 200 nm) và kính hiển vi điện tử (phóng đại tới hàng triệu lần, nghiên cứu cấu trúc siêu hiển vi); máy li tâm (phân đoạn tế bào theo khối lượng bào quan); kính lúp, pipet.",
+      "n": 5
     },
     {
       "type": "figure",
@@ -41,8 +62,12 @@
       "caption": "Phân biệt kính hiển vi quang học và kính hiển vi điện tử"
     },
     {
-      "type": "text",
-      "content": "5. Quy trình nghiên cứu khoa học: quan sát và thu thập dữ liệu → đặt câu hỏi → hình thành giả thuyết (có thể kiểm chứng, dự đoán dạng \"nếu... thì...\") → thiết kế thí nghiệm có lô đối chứng và lô thí nghiệm chỉ khác nhau ở yếu tố nghiên cứu → phân tích kết quả (biến độc lập ở trục hoành, biến phụ thuộc ở trục tung; kiểm định thống kê) → rút ra kết luận chấp nhận hay bác bỏ giả thuyết."
+      "type": "card",
+      "title": "5",
+      "points": [
+        "Quy trình nghiên cứu khoa học: quan sát và thu thập dữ liệu → đặt câu hỏi → hình thành giả thuyết (có thể kiểm chứng, dự đoán dạng \"nếu... thì...\") → thiết kế thí nghiệm có lô đối chứng và lô thí nghiệm chỉ khác nhau ở yếu tố nghiên cứu → phân tích kết quả (biến độc lập ở trục hoành, biến phụ thuộc ở trục tung; kiểm định thống kê) → rút ra kết luận chấp nhận hay bác bỏ giả thuyết."
+      ],
+      "n": 6
     },
     {
       "type": "figure",
@@ -55,8 +80,10 @@
       "caption": "Lô đối chứng và lô thí nghiệm"
     },
     {
-      "type": "text",
-      "content": "6. Tin sinh học (bioinformatics) dùng phần mềm, thuật toán và mô hình để lưu trữ, phân loại và phân tích dữ liệu sinh học quy mô lớn, ví dụ tìm gene trong hệ gene và so sánh hệ gene giữa các loài."
+      "type": "card",
+      "title": "6",
+      "text": "Tin sinh học (bioinformatics) dùng phần mềm, thuật toán và mô hình để lưu trữ, phân loại và phân tích dữ liệu sinh học quy mô lớn, ví dụ tìm gene trong hệ gene và so sánh hệ gene giữa các loài.",
+      "n": 7
     }
   ],
   "examples": [

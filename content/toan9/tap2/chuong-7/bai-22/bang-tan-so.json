@@ -13,16 +13,33 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Tần số của một giá trị là số lần giá trị đó xuất hiện trong mẫu dữ liệu. Bảng tần số gồm hai dòng (hoặc hai cột): giá trị và tần số tương ứng; tổng các tần số bằng cỡ mẫu n."
     },
     {
-      "type": "text",
-      "content": "Biểu đồ tần số dạng cột: mỗi giá trị ứng với một cột có chiều cao bằng tần số. Biểu đồ dạng đoạn thẳng: nối các điểm (giá trị; tần số)."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Tần số của một giá trị là số lần giá trị đó xuất hiện trong mẫu dữ liệu.",
+        "Bảng tần số gồm hai dòng (hoặc hai cột): giá trị và tần số tương ứng; tổng các tần số bằng cỡ mẫu n."
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Từ bảng tần số có thể tính số trung bình: x̄ = (x₁n₁ + x₂n₂ + … + xₖnₖ)/n."
+      "type": "card",
+      "title": "Biểu đồ tần số dạng cột",
+      "points": [
+        "Mỗi giá trị ứng với một cột có chiều cao bằng tần số.",
+        "Biểu đồ dạng đoạn thẳng: nối các điểm (giá trị; tần số)."
+      ],
+      "n": 2
+    },
+    {
+      "type": "card",
+      "title": "Từ bảng tần số có thể tính số trung bình",
+      "text": "X̄ = (x₁n₁ + x₂n₂ + … + xₖnₖ)/n.",
+      "n": 3
     },
     {
       "type": "figure",

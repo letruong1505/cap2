@@ -13,12 +13,18 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Trong tam giác vuông, mỗi cạnh góc vuông bằng: cạnh huyền nhân sin góc đối hoặc nhân cos góc kề; cạnh góc vuông kia nhân tan góc đối hoặc nhân cot góc kề."
     },
     {
-      "type": "formula",
-      "content": "b = a·sin B = a·cos C;  b = c·tan B = c·cot C"
+      "type": "card",
+      "title": "Trong tam giác vuông, mỗi cạnh góc vuông bằng",
+      "text": "Cạnh huyền nhân sin góc đối hoặc nhân cos góc kề; cạnh góc vuông kia nhân tan góc đối hoặc nhân cot góc kề.",
+      "n": 1,
+      "formulas": [
+        "b = a·sin B = a·cos C;  b = c·tan B = c·cot C"
+      ]
     },
     {
       "type": "figure",
@@ -26,12 +32,19 @@
       "caption": "Tam giác ABC vuông tại A."
     },
     {
-      "type": "text",
-      "content": "Giải tam giác vuông là tìm tất cả các cạnh và góc khi biết hai yếu tố (trong đó ít nhất một cạnh)."
+      "type": "card",
+      "title": "Giải tam giác vuông là tìm tất…",
+      "text": "Giải tam giác vuông là tìm tất cả các cạnh và góc khi biết hai yếu tố (trong đó ít nhất một cạnh).",
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Ứng dụng: đo chiều cao cây, toà nhà; khoảng cách không đến được; độ dốc…"
+      "type": "card",
+      "title": "Ứng dụng",
+      "points": [
+        "Đo chiều cao cây, toà nhà; khoảng cách không đến được;",
+        "Độ dốc…"
+      ],
+      "n": 3
     },
     {
       "type": "method",

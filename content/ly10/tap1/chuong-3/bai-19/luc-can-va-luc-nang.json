@@ -14,20 +14,45 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Chất lưu là chất có thể chảy được (chất lỏng và chất khí). Vật chuyển động trong chất lưu chịu lực cản ngược chiều chuyển động. Lực cản phụ thuộc hình dạng, kích thước của vật (diện tích mặt cắt ngang), tốc độ của vật và tính chất của chất lưu; tốc độ càng lớn thì lực cản càng lớn."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Chất lưu là chất có thể chảy được (chất lỏng và chất khí). Vật chuyển động trong chất lưu chịu lực cản ngược chiều chuyển động."
     },
     {
-      "type": "text",
-      "content": "Vật có hình dạng khí động học (thuôn, nhọn phía trước như thân cá, máy bay, tàu cao tốc) chịu lực cản nhỏ. Ngược lại, dù lượn, đuôi máy bay cần lực cản lớn."
+      "type": "card",
+      "title": "Chất lưu là chất có thể chảy được (chất lỏng và chất khí)",
+      "points": [
+        "Vật chuyển động trong chất lưu chịu lực cản ngược chiều chuyển động.",
+        "Lực cản phụ thuộc hình dạng, kích thước của vật (diện tích mặt cắt ngang), tốc độ của vật và tính chất của chất lưu; tốc độ càng lớn thì lực cản càng lớn."
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Vật rơi trong không khí: ban đầu tốc độ tăng, lực cản tăng dần; khi lực cản bằng trọng lực thì hợp lực bằng 0, vật chuyển động đều với tốc độ giới hạn (tốc độ cuối). Người nhảy dù mở dù để tăng lực cản, giảm tốc độ giới hạn xuống mức an toàn."
+      "type": "card",
+      "title": "Vật có hình dạng khí động học…",
+      "points": [
+        "Vật có hình dạng khí động học (thuôn, nhọn phía trước như thân cá, máy bay, tàu cao tốc) chịu lực cản nhỏ.",
+        "Ngược lại, dù lượn, đuôi máy bay cần lực cản lớn."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Lực nâng (lực đẩy Archimedes): vật nhúng trong chất lỏng (hay chất khí) chịu lực đẩy hướng thẳng đứng lên trên, có độ lớn bằng trọng lượng của phần chất lỏng bị vật chiếm chỗ."
+      "type": "card",
+      "title": "Vật rơi trong không khí",
+      "points": [
+        "Ban đầu tốc độ tăng, lực cản tăng dần; khi lực cản bằng trọng lực thì hợp lực bằng 0, vật chuyển động đều với tốc độ giới hạn (tốc độ cuối).",
+        "Người nhảy dù mở dù để tăng lực cản, giảm tốc độ giới hạn xuống mức an toàn."
+      ],
+      "n": 3
+    },
+    {
+      "type": "card",
+      "title": "Lực nâng (lực đẩy Archimedes)",
+      "text": "Vật nhúng trong chất lỏng (hay chất khí) chịu lực đẩy hướng thẳng đứng lên trên, có độ lớn bằng trọng lượng của phần chất lỏng bị vật chiếm chỗ.",
+      "n": 4,
+      "formulas": [
+        "F_A = ρ·g·V        (ρ: khối lượng riêng chất lỏng, V: thể tích phần chất lỏng bị vật chiếm chỗ)"
+      ]
     },
     {
       "type": "figure",
@@ -35,12 +60,15 @@
       "caption": "Lực đẩy Archimedes và trọng lực tác dụng lên vật nhúng trong chất lỏng"
     },
     {
-      "type": "formula",
-      "content": "F_A = ρ·g·V        (ρ: khối lượng riêng chất lỏng, V: thể tích phần chất lỏng bị vật chiếm chỗ)"
-    },
-    {
-      "type": "text",
-      "content": "Điều kiện nổi, chìm: F_A > P thì vật nổi lên; F_A = P thì vật lơ lửng (hoặc nổi cân bằng trên mặt); F_A < P thì vật chìm. Với vật đặc đồng chất: vật nổi khi khối lượng riêng của vật nhỏ hơn khối lượng riêng của chất lỏng."
+      "type": "card",
+      "title": "Điều kiện nổi, chìm",
+      "points": [
+        "F_A > P thì vật nổi lên;",
+        "F_A = P thì vật lơ lửng (hoặc nổi cân bằng trên mặt);",
+        "F_A < P thì vật chìm.",
+        "Với vật đặc đồng chất: vật nổi khi khối lượng riêng của vật nhỏ hơn khối lượng riêng của chất lỏng."
+      ],
+      "n": 5
     },
     {
       "type": "method",

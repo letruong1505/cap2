@@ -14,8 +14,17 @@
   ],
   "theory": [
     {
-      "type": "formula",
-      "content": "Nếu A, B xung khắc: P(A ∪ B) = P(A) + P(B).   Với hai biến cố bất kì: P(A ∪ B) = P(A) + P(B) − P(A ∩ B).   Biến cố đối: P(Ā) = 1 − P(A)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Công thức cộng mở rộng cho nhiều biến cố đôi một xung khắc: P(A₁ ∪ … ∪ Aₙ) = P(A₁) + … + P(Aₙ)."
+    },
+    {
+      "type": "card",
+      "n": 1,
+      "title": "Công thức",
+      "formulas": [
+        "Nếu A, B xung khắc: P(A ∪ B) = P(A) + P(B).   Với hai biến cố bất kì: P(A ∪ B) = P(A) + P(B) − P(A ∩ B).   Biến cố đối: P(Ā) = 1 − P(A)."
+      ]
     },
     {
       "type": "figure",
@@ -23,8 +32,13 @@
       "caption": "Biểu đồ Venn của A ∪ B (phần tô): phần chung A ∩ B được cộng hai lần nên phải trừ đi một lần"
     },
     {
-      "type": "text",
-      "content": "Công thức cộng mở rộng cho nhiều biến cố đôi một xung khắc: P(A₁ ∪ … ∪ Aₙ) = P(A₁) + … + P(Aₙ). Biến cố đối thường dùng cho bài toán “ít nhất một”: P(ít nhất một A) = 1 − P(không có A nào)."
+      "type": "card",
+      "title": "Công thức cộng mở rộng cho nhiều biến cố đôi một xung khắc",
+      "points": [
+        "P(A₁ ∪ … ∪ Aₙ) = P(A₁) + … + P(Aₙ).",
+        "Biến cố đối thường dùng cho bài toán “ít nhất một”: P(ít nhất một A) = 1 − P(không có A nào)."
+      ],
+      "n": 2
     },
     {
       "type": "method",

@@ -13,12 +13,21 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Khi bỏ dấu ngoặc có dấu \"+\" đứng trước, giữ nguyên dấu các số hạng trong ngoặc: a + (b − c) = a + b − c."
     },
     {
-      "type": "text",
-      "content": "Khi bỏ dấu ngoặc có dấu \"−\" đứng trước, phải đổi dấu tất cả các số hạng trong ngoặc: dấu \"+\" thành \"−\", dấu \"−\" thành \"+\": a − (b − c) = a − b + c."
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Khi bỏ dấu ngoặc có dấu \"+\" đứng trước, giữ nguyên dấu các số hạng trong ngoặc: a + (b − c) = a + b − c.",
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Khi bỏ dấu ngoặc có dấu \"−\"…",
+      "text": "Khi bỏ dấu ngoặc có dấu \"−\" đứng trước, phải đổi dấu tất cả các số hạng trong ngoặc: dấu \"+\" thành \"−\", dấu \"−\" thành \"+\": a − (b − c) = a − b + c.",
+      "n": 2
     },
     {
       "type": "figure",
@@ -26,8 +35,10 @@
       "caption": "Quy tắc dấu ngoặc (ví dụ số)"
     },
     {
-      "type": "text",
-      "content": "Trong một tổng đại số, có thể đổi chỗ các số hạng kèm theo dấu của chúng và nhóm các số hạng tuỳ ý."
+      "type": "card",
+      "title": "Trong một tổng đại số, có thể…",
+      "text": "Trong một tổng đại số, có thể đổi chỗ các số hạng kèm theo dấu của chúng và nhóm các số hạng tuỳ ý.",
+      "n": 3
     }
   ],
   "examples": [

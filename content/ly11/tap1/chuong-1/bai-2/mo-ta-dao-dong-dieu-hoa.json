@@ -14,8 +14,21 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Đồ thị li độ – thời gian của dao động điều hoà là đường hình sin. Từ đồ thị có thể đọc: biên độ A (giá trị cực đại của x), chu kì T (khoảng thời gian giữa hai đỉnh liên tiếp), tần số f = 1/T và pha ban đầu φ (từ li độ x₀ ở t = 0 và chiều chuyển động)."
+    },
+    {
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Đồ thị li độ – thời gian của dao động điều hoà là đường hình sin.",
+        "Từ đồ thị có thể đọc: biên độ A (giá trị cực đại của x), chu kì T (khoảng thời gian giữa hai đỉnh liên tiếp), tần số f = 1/T và pha ban đầu φ (từ li độ x₀ ở t = 0 và chiều chuyển động)."
+      ],
+      "n": 1,
+      "formulas": [
+        "Độ lệch pha: Δφ = (ωt + φ₂) − (ωt + φ₁) = φ₂ − φ₁ (không phụ thuộc thời gian khi hai dao động cùng tần số)."
+      ]
     },
     {
       "type": "figure",
@@ -23,16 +36,21 @@
       "caption": "Hai dao động cùng tần số: x₂ chậm pha hơn x₁ góc π/2 (vuông pha), đỉnh của x₂ đến sau đỉnh của x₁ một phần tư chu kì"
     },
     {
-      "type": "formula",
-      "content": "Độ lệch pha: Δφ = (ωt + φ₂) − (ωt + φ₁) = φ₂ − φ₁ (không phụ thuộc thời gian khi hai dao động cùng tần số)."
+      "type": "card",
+      "title": "Δφ = 2kπ: hai dao động cùng…",
+      "points": [
+        "Δφ = 2kπ: hai dao động cùng pha (cùng lên, cùng xuống, cùng qua VTCB).",
+        "Δφ = (2k + 1)π: ngược pha (luôn trái dấu nhau).",
+        "Δφ = (2k + 1)π/2: vuông pha.",
+        "Nếu φ₂ > φ₁ thì dao động 2 sớm pha hơn dao động 1 (đạt giá trị cực đại sớm hơn)."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Δφ = 2kπ: hai dao động cùng pha (cùng lên, cùng xuống, cùng qua VTCB). Δφ = (2k + 1)π: ngược pha (luôn trái dấu nhau). Δφ = (2k + 1)π/2: vuông pha. Nếu φ₂ > φ₁ thì dao động 2 sớm pha hơn dao động 1 (đạt giá trị cực đại sớm hơn)."
-    },
-    {
-      "type": "text",
-      "content": "Ví dụ thực tế: hai vật cùng dao động tuần hoàn trên hai con lắc giống nhau nhưng được thả ở hai thời điểm khác nhau có độ lệch pha Δφ = 2π·Δt/T, với Δt là khoảng thời gian chênh lệch."
+      "type": "card",
+      "title": "Ví dụ thực tế",
+      "text": "Hai vật cùng dao động tuần hoàn trên hai con lắc giống nhau nhưng được thả ở hai thời điểm khác nhau có độ lệch pha Δφ = 2π·Δt/T, với Δt là khoảng thời gian chênh lệch.",
+      "n": 3
     },
     {
       "type": "method",

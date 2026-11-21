@@ -10,12 +10,18 @@
   "bookPage": 93,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Định lí Pythagore: trong một tam giác vuông, bình phương độ dài cạnh huyền bằng tổng các bình phương độ dài hai cạnh góc vuông."
     },
     {
-      "type": "formula",
-      "content": "ΔABC vuông tại A ⇒ BC² = AB² + AC²"
+      "type": "card",
+      "title": "Định lí Pythagore",
+      "text": "Trong một tam giác vuông, bình phương độ dài cạnh huyền bằng tổng các bình phương độ dài hai cạnh góc vuông.",
+      "n": 1,
+      "formulas": [
+        "ΔABC vuông tại A ⇒ BC² = AB² + AC²"
+      ]
     },
     {
       "type": "figure",
@@ -23,12 +29,16 @@
       "caption": "Tam giác vuông có hai cạnh góc vuông 3 và 4, cạnh huyền 5: 3² + 4² = 5², tức 9 + 16 = 25 (diện tích ba hình vuông dựng trên ba cạnh)."
     },
     {
-      "type": "text",
-      "content": "Định lí Pythagore đảo: nếu một tam giác có bình phương của một cạnh bằng tổng các bình phương của hai cạnh còn lại thì tam giác đó là tam giác vuông (vuông tại đỉnh đối diện với cạnh lớn nhất)."
+      "type": "card",
+      "title": "Định lí Pythagore đảo",
+      "text": "Nếu một tam giác có bình phương của một cạnh bằng tổng các bình phương của hai cạnh còn lại thì tam giác đó là tam giác vuông (vuông tại đỉnh đối diện với cạnh lớn nhất).",
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Ứng dụng: tính độ dài một cạnh của tam giác vuông khi biết hai cạnh còn lại; kiểm tra một tam giác có phải tam giác vuông hay không; tính đường chéo hình chữ nhật, cạnh hình thoi, đường cao tam giác cân…"
+      "type": "card",
+      "title": "Ứng dụng",
+      "text": "Tính độ dài một cạnh của tam giác vuông khi biết hai cạnh còn lại; kiểm tra một tam giác có phải tam giác vuông hay không; tính đường chéo hình chữ nhật, cạnh hình thoi, đường cao tam giác cân…",
+      "n": 3
     }
   ],
   "examples": [

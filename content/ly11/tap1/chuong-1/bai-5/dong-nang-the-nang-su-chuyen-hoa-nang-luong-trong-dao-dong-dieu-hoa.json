@@ -14,16 +14,19 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Khi vật dao động điều hoà, động năng và thế năng của vật biến thiên tuần hoàn theo thời gian nhưng cơ năng được bảo toàn (khi không có ma sát)."
     },
     {
-      "type": "formula",
-      "content": "Động năng: W_đ = ½mv² = ½mω²A²sin²(ωt + φ).   Thế năng (con lắc lò xo): W_t = ½kx² = ½mω²A²cos²(ωt + φ)."
-    },
-    {
-      "type": "formula",
-      "content": "Cơ năng: W = W_đ + W_t = ½kA² = ½mω²A² = ½mv_max² = hằng số."
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Khi vật dao động điều hoà, động năng và thế năng của vật biến thiên tuần hoàn theo thời gian nhưng cơ năng được bảo toàn (khi không có ma sát).",
+      "n": 1,
+      "formulas": [
+        "Động năng: W_đ = ½mv² = ½mω²A²sin²(ωt + φ).   Thế năng (con lắc lò xo): W_t = ½kx² = ½mω²A²cos²(ωt + φ).",
+        "Cơ năng: W = W_đ + W_t = ½kA² = ½mω²A² = ½mv_max² = hằng số."
+      ]
     },
     {
       "type": "figure",
@@ -31,12 +34,23 @@
       "caption": "Đồ thị thế năng (parabol đỏ), động năng (parabol xanh lá) và cơ năng (đường ngang xanh dương) theo li độ x; tại x = ±A/√2 thì W_đ = W_t = W/2"
     },
     {
-      "type": "text",
-      "content": "Chuyển hoá năng lượng: từ biên về VTCB thế năng giảm, động năng tăng; từ VTCB ra biên động năng giảm, thế năng tăng. Tại VTCB: W_đ = W (cực đại), W_t = 0. Tại biên: W_t = W, W_đ = 0."
+      "type": "card",
+      "title": "Chuyển hoá năng lượng",
+      "points": [
+        "Từ biên về VTCB thế năng giảm, động năng tăng; từ VTCB ra biên động năng giảm, thế năng tăng.",
+        "Tại VTCB: W_đ = W (cực đại), W_t = 0.",
+        "Tại biên: W_t = W, W_đ = 0."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Động năng và thế năng biến thiên tuần hoàn với tần số góc 2ω (tần số 2f, chu kì T/2). Khoảng thời gian giữa hai lần liên tiếp W_đ = W_t là T/4."
+      "type": "card",
+      "title": "Động năng và thế năng biến thiên…",
+      "points": [
+        "Động năng và thế năng biến thiên tuần hoàn với tần số góc 2ω (tần số 2f, chu kì T/2).",
+        "Khoảng thời gian giữa hai lần liên tiếp W_đ = W_t là T/4."
+      ],
+      "n": 3
     },
     {
       "type": "method",

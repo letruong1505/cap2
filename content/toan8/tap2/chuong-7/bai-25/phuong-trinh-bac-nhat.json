@@ -10,20 +10,33 @@
   "bookPage": 29,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Phương trình bậc nhất một ẩn x là phương trình có dạng ax + b = 0, trong đó a và b là hai số đã cho và a ≠ 0."
     },
     {
-      "type": "text",
-      "content": "Quy tắc chuyển vế: khi chuyển một hạng tử từ vế này sang vế kia của một phương trình, ta phải đổi dấu hạng tử đó. Quy tắc nhân (chia): có thể nhân (hoặc chia) cả hai vế của phương trình với cùng một số khác 0."
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Phương trình bậc nhất một ẩn x là phương trình có dạng ax + b = 0, trong đó a và b là hai số đã cho và a ≠ 0.",
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Phương trình ax + b = 0 (a ≠ 0) luôn có một nghiệm duy nhất x = −b/a."
+      "type": "card",
+      "title": "Quy tắc chuyển vế",
+      "points": [
+        "Khi chuyển một hạng tử từ vế này sang vế kia của một phương trình, ta phải đổi dấu hạng tử đó.",
+        "Quy tắc nhân (chia): có thể nhân (hoặc chia) cả hai vế của phương trình với cùng một số khác 0."
+      ],
+      "n": 2
     },
     {
-      "type": "formula",
-      "content": "ax + b = 0 (a ≠ 0) ⇔ x = −b/a"
+      "type": "card",
+      "title": "Phương trình ax + b = 0…",
+      "text": "Phương trình ax + b = 0 (a ≠ 0) luôn có một nghiệm duy nhất x = −b/a.",
+      "n": 3,
+      "formulas": [
+        "ax + b = 0 (a ≠ 0) ⇔ x = −b/a"
+      ]
     },
     {
       "type": "figure",

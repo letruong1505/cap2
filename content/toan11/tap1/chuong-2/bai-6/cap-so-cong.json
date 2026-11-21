@@ -14,21 +14,27 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Cấp số cộng là dãy số (hữu hạn hoặc vô hạn) trong đó kể từ số hạng thứ hai, mỗi số hạng bằng số hạng đứng ngay trước nó cộng với một số d không đổi: uₙ₊₁ = uₙ + d. Số d gọi là công sai."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Cấp số cộng là dãy số (hữu hạn hoặc vô hạn) trong đó kể từ số hạng thứ hai, mỗi số hạng bằng số hạng đứng ngay trước nó cộng với một số d không đổi: uₙ₊₁ = uₙ + d."
     },
     {
-      "type": "formula",
-      "content": "Số hạng tổng quát: uₙ = u₁ + (n − 1)d.   Ba số a, b, c (theo thứ tự) lập cấp số cộng ⇔ a + c = 2b."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Cấp số cộng là dãy số (hữu hạn hoặc vô hạn) trong đó kể từ số hạng thứ hai, mỗi số hạng bằng số hạng đứng ngay trước nó cộng với một số d không đổi: uₙ₊₁ = uₙ + d.",
+        "Số d gọi là công sai."
+      ],
+      "n": 1,
+      "formulas": [
+        "Số hạng tổng quát: uₙ = u₁ + (n − 1)d.   Ba số a, b, c (theo thứ tự) lập cấp số cộng ⇔ a + c = 2b.",
+        "Tổng n số hạng đầu: Sₙ = n(u₁ + uₙ)/2 = n[2u₁ + (n − 1)d]/2."
+      ]
     },
     {
       "type": "figure",
       "figure": "figures/t11-b6-cap-so-cong.svg",
       "caption": "Các số hạng của cấp số cộng uₙ = 1 + 2(n − 1) nằm trên một đường thẳng, công sai d = 2"
-    },
-    {
-      "type": "formula",
-      "content": "Tổng n số hạng đầu: Sₙ = n(u₁ + uₙ)/2 = n[2u₁ + (n − 1)d]/2."
     },
     {
       "type": "method",

@@ -13,12 +13,24 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Cộng hai số nguyên dương: như cộng hai số tự nhiên. Cộng hai số nguyên âm: cộng hai số đối của chúng rồi thêm dấu \"−\" trước kết quả: (−a) + (−b) = −(a + b)."
     },
     {
-      "type": "text",
-      "content": "Cộng hai số nguyên khác dấu: hai số đối nhau thì tổng bằng 0; không đối nhau thì lấy số lớn trừ số nhỏ (trong hai phần số tự nhiên) và đặt trước kết quả dấu của số có phần số tự nhiên lớn hơn."
+      "type": "card",
+      "title": "Cộng hai số nguyên dương",
+      "points": [
+        "Như cộng hai số tự nhiên.",
+        "Cộng hai số nguyên âm: cộng hai số đối của chúng rồi thêm dấu \"−\" trước kết quả: (−a) + (−b) = −(a + b)."
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Cộng hai số nguyên khác dấu",
+      "text": "Hai số đối nhau thì tổng bằng 0; không đối nhau thì lấy số lớn trừ số nhỏ (trong hai phần số tự nhiên) và đặt trước kết quả dấu của số có phần số tự nhiên lớn hơn.",
+      "n": 2
     },
     {
       "type": "figure",
@@ -26,12 +38,13 @@
       "caption": "Cộng số nguyên trên trục số."
     },
     {
-      "type": "text",
-      "content": "Phép cộng số nguyên có tính chất giao hoán, kết hợp, cộng với 0, cộng với số đối: a + (−a) = 0."
-    },
-    {
-      "type": "formula",
-      "content": "a − b = a + (−b)"
+      "type": "card",
+      "title": "Phép cộng số nguyên có tính chất…",
+      "text": "Phép cộng số nguyên có tính chất giao hoán, kết hợp, cộng với 0, cộng với số đối: a + (−a) = 0.",
+      "n": 3,
+      "formulas": [
+        "a − b = a + (−b)"
+      ]
     },
     {
       "type": "method",

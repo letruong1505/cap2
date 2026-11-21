@@ -14,8 +14,19 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Dụng cụ: dao động kí điện tử và dây đo; micro; bộ khuếch đại tín hiệu; âm thoa và búa cao su; giá đỡ và kẹp giữ âm thoa. Nguyên tắc: sóng âm do âm thoa phát ra làm màng micro dao động, micro biến dao động đó thành tín hiệu điện cùng tần số; dao động kí hiển thị đồ thị điện áp theo thời gian, từ đó đo chu kì T rồi tính f = 1/T."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Dụng cụ: dao động kí điện tử và dây đo; micro; bộ khuếch đại tín hiệu; âm thoa và búa cao su; giá đỡ và kẹp giữ âm thoa."
+    },
+    {
+      "type": "card",
+      "title": "Dụng cụ",
+      "points": [
+        "Dao động kí điện tử và dây đo; micro; bộ khuếch đại tín hiệu;",
+        "Âm thoa và búa cao su; giá đỡ và kẹp giữ âm thoa.",
+        "Nguyên tắc: sóng âm do âm thoa phát ra làm màng micro dao động, micro biến dao động đó thành tín hiệu điện cùng tần số; dao động kí hiển thị đồ thị điện áp theo thời gian, từ đó đo chu kì T rồi tính f = 1/T."
+      ],
+      "n": 1
     },
     {
       "type": "figure",
@@ -23,16 +34,28 @@
       "caption": "Bố trí thí nghiệm đo tần số sóng âm: âm thoa – micro (cách 20 cm) – dao động kí"
     },
     {
-      "type": "text",
-      "content": "Tiến hành: (1) Bố trí thí nghiệm, đặt micro cách âm thoa khoảng 20 cm, nối micro và bộ khuếch đại vào dao động kí. (2) Dùng búa cao su gõ nhẹ vào âm thoa. (3) Điều chỉnh VOLTS/DIV và TIME/DIV để thấy rõ đồ thị sóng, xác định chu kì T = (số ô theo phương ngang) × (thời gian mỗi ô). (4) Ghi vào Bảng 10.1 và lặp lại ba lần."
+      "type": "card",
+      "title": "Tiến hành",
+      "points": [
+        "Bố trí thí nghiệm, đặt micro cách âm thoa khoảng 20 cm, nối micro và bộ khuếch đại vào dao động kí.",
+        "Dùng búa cao su gõ nhẹ vào âm thoa.",
+        "Điều chỉnh VOLTS/DIV và TIME/DIV để thấy rõ đồ thị sóng, xác định chu kì T = (số ô theo phương ngang) × (thời gian mỗi ô).",
+        "Ghi vào Bảng 10.1 và lặp lại ba lần."
+      ],
+      "n": 2,
+      "formulas": [
+        "f = 1/T;   T̄ = (T₁ + T₂ + T₃)/3;   ΔT = (|T₁ − T̄| + |T₂ − T̄| + |T₃ − T̄|)/3;   f̄ = 1/T̄;   Δf/f̄ = ΔT/T̄."
+      ]
     },
     {
-      "type": "formula",
-      "content": "f = 1/T;   T̄ = (T₁ + T₂ + T₃)/3;   ΔT = (|T₁ − T̄| + |T₂ − T̄| + |T₃ − T̄|)/3;   f̄ = 1/T̄;   Δf/f̄ = ΔT/T̄."
-    },
-    {
-      "type": "text",
-      "content": "Giảm ảnh hưởng của tiếng ồn bên ngoài: làm thí nghiệm ở nơi yên tĩnh, để micro gần âm thoa, hiệu chỉnh độ khuếch đại. Tần số các nốt nhạc cơ bản (Hz): Đô 262, Rê 294, Mi 330, Fa 349, Sol 392, La 440, Si 494 (nốt La chuẩn 440 Hz). Ứng dụng: dùng phần mềm trên điện thoại để chỉnh dây đàn ghita."
+      "type": "card",
+      "title": "Giảm ảnh hưởng của tiếng ồn bên ngoài",
+      "points": [
+        "Làm thí nghiệm ở nơi yên tĩnh, để micro gần âm thoa, hiệu chỉnh độ khuếch đại.",
+        "Tần số các nốt nhạc cơ bản (Hz): Đô 262, Rê 294, Mi 330, Fa 349, Sol 392, La 440, Si 494 (nốt La chuẩn 440 Hz).",
+        "Ứng dụng: dùng phần mềm trên điện thoại để chỉnh dây đàn ghita."
+      ],
+      "n": 3
     },
     {
       "type": "method",

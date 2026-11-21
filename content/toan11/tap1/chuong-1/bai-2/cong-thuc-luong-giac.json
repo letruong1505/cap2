@@ -14,33 +14,27 @@
   ],
   "theory": [
     {
-      "type": "formula",
-      "content": "Công thức cộng: cos(a − b) = cos a cos b + sin a sin b;  cos(a + b) = cos a cos b − sin a sin b;  sin(a + b) = sin a cos b + cos a sin b;  sin(a − b) = sin a cos b − cos a sin b."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Các công thức chính của bài."
     },
     {
-      "type": "formula",
-      "content": "tan(a + b) = (tan a + tan b)/(1 − tan a tan b);   tan(a − b) = (tan a − tan b)/(1 + tan a tan b)."
+      "type": "card",
+      "n": 1,
+      "title": "Công thức",
+      "formulas": [
+        "Công thức cộng: cos(a − b) = cos a cos b + sin a sin b;  cos(a + b) = cos a cos b − sin a sin b;  sin(a + b) = sin a cos b + cos a sin b;  sin(a − b) = sin a cos b − cos a sin b.",
+        "tan(a + b) = (tan a + tan b)/(1 − tan a tan b);   tan(a − b) = (tan a − tan b)/(1 + tan a tan b).",
+        "Nhân đôi: sin 2a = 2 sin a cos a;  cos 2a = cos²a − sin²a = 2cos²a − 1 = 1 − 2 sin²a;  tan 2a = 2 tan a / (1 − tan²a).",
+        "Hạ bậc: sin²a = (1 − cos 2a)/2;  cos²a = (1 + cos 2a)/2.",
+        "Tích thành tổng: cos a cos b = ½[cos(a − b) + cos(a + b)];  sin a sin b = ½[cos(a − b) − cos(a + b)];  sin a cos b = ½[sin(a + b) + sin(a − b)].",
+        "Tổng thành tích: cos u + cos v = 2 cos((u+v)/2) cos((u−v)/2);  cos u − cos v = −2 sin((u+v)/2) sin((u−v)/2);  sin u + sin v = 2 sin((u+v)/2) cos((u−v)/2);  sin u − sin v = 2 cos((u+v)/2) sin((u−v)/2)."
+      ]
     },
     {
       "type": "figure",
       "figure": "figures/t11-b2-cong-thuc-cong.svg",
       "caption": "Hai điểm trên đường tròn lượng giác biểu diễn a và b: chứng minh cos(a − b)"
-    },
-    {
-      "type": "formula",
-      "content": "Nhân đôi: sin 2a = 2 sin a cos a;  cos 2a = cos²a − sin²a = 2cos²a − 1 = 1 − 2 sin²a;  tan 2a = 2 tan a / (1 − tan²a)."
-    },
-    {
-      "type": "formula",
-      "content": "Hạ bậc: sin²a = (1 − cos 2a)/2;  cos²a = (1 + cos 2a)/2."
-    },
-    {
-      "type": "formula",
-      "content": "Tích thành tổng: cos a cos b = ½[cos(a − b) + cos(a + b)];  sin a sin b = ½[cos(a − b) − cos(a + b)];  sin a cos b = ½[sin(a + b) + sin(a − b)]."
-    },
-    {
-      "type": "formula",
-      "content": "Tổng thành tích: cos u + cos v = 2 cos((u+v)/2) cos((u−v)/2);  cos u − cos v = −2 sin((u+v)/2) sin((u−v)/2);  sin u + sin v = 2 sin((u+v)/2) cos((u−v)/2);  sin u − sin v = 2 cos((u+v)/2) sin((u−v)/2)."
     },
     {
       "type": "method",

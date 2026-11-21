@@ -14,12 +14,31 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Lực là đại lượng vectơ đặc trưng cho tác dụng của vật này lên vật khác, làm vật biến dạng hoặc thay đổi vận tốc. Đơn vị là niutơn (N). Lực được biểu diễn bằng mũi tên có gốc tại điểm đặt, hướng của lực và độ dài tỉ lệ với độ lớn."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Lực là đại lượng vectơ đặc trưng cho tác dụng của vật này lên vật khác, làm vật biến dạng hoặc thay đổi vận tốc."
     },
     {
-      "type": "text",
-      "content": "Tổng hợp lực là thay thế nhiều lực đồng thời tác dụng lên vật bằng một lực có tác dụng giống hệt (hợp lực). Hai lực đồng quy được tổng hợp theo quy tắc hình bình hành: hợp lực là đường chéo của hình bình hành có hai cạnh là hai lực."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Lực là đại lượng vectơ đặc trưng cho tác dụng của vật này lên vật khác, làm vật biến dạng hoặc thay đổi vận tốc.",
+        "Đơn vị là niutơn (N).",
+        "Lực được biểu diễn bằng mũi tên có gốc tại điểm đặt, hướng của lực và độ dài tỉ lệ với độ lớn."
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Tổng hợp lực là thay thế nhiều…",
+      "points": [
+        "Tổng hợp lực là thay thế nhiều lực đồng thời tác dụng lên vật bằng một lực có tác dụng giống hệt (hợp lực).",
+        "Hai lực đồng quy được tổng hợp theo quy tắc hình bình hành: hợp lực là đường chéo của hình bình hành có hai cạnh là hai lực."
+      ],
+      "n": 2,
+      "formulas": [
+        "F² = F₁² + F₂² + 2F₁F₂cos α  (α là góc giữa →F₁ và →F₂)        |F₁ − F₂| ≤ F ≤ F₁ + F₂"
+      ]
     },
     {
       "type": "figure",
@@ -27,20 +46,22 @@
       "caption": "Tổng hợp hai lực đồng quy theo quy tắc hình bình hành"
     },
     {
-      "type": "formula",
-      "content": "F² = F₁² + F₂² + 2F₁F₂cos α  (α là góc giữa →F₁ và →F₂)        |F₁ − F₂| ≤ F ≤ F₁ + F₂"
+      "type": "card",
+      "title": "Trường hợp đặc biệt",
+      "text": "Cùng chiều F = F₁ + F₂; ngược chiều F = |F₁ − F₂|; vuông góc F = √(F₁² + F₂²).",
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Trường hợp đặc biệt: cùng chiều F = F₁ + F₂; ngược chiều F = |F₁ − F₂|; vuông góc F = √(F₁² + F₂²)."
-    },
-    {
-      "type": "text",
-      "content": "Phân tích lực là thay một lực bằng hai hay nhiều lực có tác dụng giống hệt lực đó; thường phân tích theo hai phương vuông góc: F_x = F·cos α, F_y = F·sin α. Ví dụ trọng lực của vật trên mặt phẳng nghiêng góc α được phân tích thành P·sin α (song song mặt nghiêng) và P·cos α (vuông góc mặt nghiêng)."
-    },
-    {
-      "type": "formula",
-      "content": "Điều kiện cân bằng của chất điểm: →F₁ + →F₂ + ... + →F_n = →0  (F_x = 0 và F_y = 0)"
+      "type": "card",
+      "title": "Phân tích lực là thay một lực…",
+      "points": [
+        "Phân tích lực là thay một lực bằng hai hay nhiều lực có tác dụng giống hệt lực đó; thường phân tích theo hai phương vuông góc: F_x = F·cos α, F_y = F·sin α.",
+        "Ví dụ trọng lực của vật trên mặt phẳng nghiêng góc α được phân tích thành P·sin α (song song mặt nghiêng) và P·cos α (vuông góc mặt nghiêng)."
+      ],
+      "n": 4,
+      "formulas": [
+        "Điều kiện cân bằng của chất điểm: →F₁ + →F₂ + ... + →F_n = →0  (F_x = 0 và F_y = 0)"
+      ]
     },
     {
       "type": "method",

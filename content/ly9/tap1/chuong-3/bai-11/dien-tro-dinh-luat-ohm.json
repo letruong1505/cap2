@@ -13,16 +13,30 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Điện trở đặc trưng cho mức độ cản trở dòng điện của dây dẫn. Đơn vị điện trở là ôm (Ω); 1 kΩ = 1 000 Ω."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Điện trở đặc trưng cho mức độ cản trở dòng điện của dây dẫn. Đơn vị điện trở là ôm (Ω);"
     },
     {
-      "type": "formula",
-      "content": "Định luật Ohm: I = U/R   (I: A; U: V; R: Ω)"
+      "type": "card",
+      "title": "Điện trở đặc trưng cho mức độ cản trở dòng điện của dây dẫn",
+      "points": [
+        "Đơn vị điện trở là ôm (Ω);",
+        "1 kΩ = 1 000 Ω."
+      ],
+      "n": 1,
+      "formulas": [
+        "Định luật Ohm: I = U/R   (I: A; U: V; R: Ω)"
+      ]
     },
     {
-      "type": "text",
-      "content": "Cường độ dòng điện chạy qua dây dẫn tỉ lệ thuận với hiệu điện thế đặt vào hai đầu dây và tỉ lệ nghịch với điện trở của dây."
+      "type": "card",
+      "title": "Cường độ dòng điện chạy qua dây…",
+      "text": "Cường độ dòng điện chạy qua dây dẫn tỉ lệ thuận với hiệu điện thế đặt vào hai đầu dây và tỉ lệ nghịch với điện trở của dây.",
+      "n": 2,
+      "formulas": [
+        "R = ρ·l/S   (ρ: điện trở suất, Ω·m; l: chiều dài, m; S: tiết diện, m²)"
+      ]
     },
     {
       "type": "figure",
@@ -30,12 +44,10 @@
       "caption": "Đồ thị I theo U của dây dẫn có điện trở không đổi."
     },
     {
-      "type": "formula",
-      "content": "R = ρ·l/S   (ρ: điện trở suất, Ω·m; l: chiều dài, m; S: tiết diện, m²)"
-    },
-    {
-      "type": "text",
-      "content": "Điện trở dây dẫn tỉ lệ thuận với chiều dài, tỉ lệ nghịch với tiết diện và phụ thuộc vật liệu làm dây."
+      "type": "card",
+      "title": "Điện trở dây dẫn tỉ lệ thuận…",
+      "text": "Điện trở dây dẫn tỉ lệ thuận với chiều dài, tỉ lệ nghịch với tiết diện và phụ thuộc vật liệu làm dây.",
+      "n": 3
     }
   ],
   "examples": [

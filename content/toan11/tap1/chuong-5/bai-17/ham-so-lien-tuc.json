@@ -14,8 +14,19 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Hàm số y = f(x) xác định trên khoảng K, x₀ ∈ K. Hàm f liên tục tại x₀ nếu lim_{x→x₀} f(x) = f(x₀). Nếu f không liên tục tại x₀ thì gián đoạn tại x₀. Hàm liên tục trên khoảng nếu liên tục tại mọi điểm của khoảng; liên tục trên [a; b] nếu liên tục trên (a; b) và lim_{x→a⁺} f = f(a), lim_{x→b⁻} f = f(b)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Hàm số y = f(x) xác định trên khoảng K, x₀ ∈ K. Hàm f liên tục tại x₀ nếu lim_{x→x₀} f(x) = f(x₀)."
+    },
+    {
+      "type": "card",
+      "title": "Hàm số y = f(x) xác định trên khoảng K, x₀ ∈ K",
+      "points": [
+        "Hàm f liên tục tại x₀ nếu lim_{x→x₀} f(x) = f(x₀).",
+        "Nếu f không liên tục tại x₀ thì gián đoạn tại x₀.",
+        "Hàm liên tục trên khoảng nếu liên tục tại mọi điểm của khoảng; liên tục trên [a; b] nếu liên tục trên (a; b) và lim_{x→a⁺} f = f(a), lim_{x→b⁻} f = f(b)."
+      ],
+      "n": 1
     },
     {
       "type": "figure",
@@ -23,12 +34,17 @@
       "caption": "Đồ thị hàm số gián đoạn tại x = 1: giới hạn bên trái bằng 1, bên phải bằng 2 (đồ thị bị đứt)"
     },
     {
-      "type": "text",
-      "content": "Các hàm đa thức, phân thức hữu tỉ, lượng giác liên tục trên tập xác định của chúng. Tổng, hiệu, tích của hai hàm liên tục tại x₀ liên tục tại x₀; thương liên tục tại x₀ nếu mẫu khác 0 tại x₀. Hàm căn thức √x liên tục trên [0; +∞)."
-    },
-    {
-      "type": "formula",
-      "content": "Định lí giá trị trung gian (hệ quả): nếu f liên tục trên [a; b] và f(a)·f(b) < 0 thì phương trình f(x) = 0 có ít nhất một nghiệm trong khoảng (a; b)."
+      "type": "card",
+      "title": "Các hàm đa thức, phân thức hữu…",
+      "points": [
+        "Các hàm đa thức, phân thức hữu tỉ, lượng giác liên tục trên tập xác định của chúng.",
+        "Tổng, hiệu, tích của hai hàm liên tục tại x₀ liên tục tại x₀; thương liên tục tại x₀ nếu mẫu khác 0 tại x₀.",
+        "Hàm căn thức √x liên tục trên [0; +∞)."
+      ],
+      "n": 2,
+      "formulas": [
+        "Định lí giá trị trung gian (hệ quả): nếu f liên tục trên [a; b] và f(a)·f(b) < 0 thì phương trình f(x) = 0 có ít nhất một nghiệm trong khoảng (a; b)."
+      ]
     },
     {
       "type": "method",

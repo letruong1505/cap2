@@ -14,12 +14,25 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Hệ bất phương trình bậc nhất hai ẩn là hệ gồm hai hay nhiều bất phương trình bậc nhất hai ẩn x, y. Cặp (x₀; y₀) là nghiệm của hệ khi nó là nghiệm của mọi bất phương trình trong hệ. Miền nghiệm của hệ là giao các miền nghiệm của từng bất phương trình."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Hệ bất phương trình bậc nhất hai ẩn là hệ gồm hai hay nhiều bất phương trình bậc nhất hai ẩn x, y."
     },
     {
-      "type": "text",
-      "content": "Để biểu diễn miền nghiệm của hệ: vẽ từng đường thẳng, gạch bỏ phần không là miền nghiệm của mỗi bất phương trình; phần còn lại không bị gạch là miền nghiệm của hệ (thường là một miền đa giác)."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Hệ bất phương trình bậc nhất hai ẩn là hệ gồm hai hay nhiều bất phương trình bậc nhất hai ẩn x, y.",
+        "Cặp (x₀; y₀) là nghiệm của hệ khi nó là nghiệm của mọi bất phương trình trong hệ.",
+        "Miền nghiệm của hệ là giao các miền nghiệm của từng bất phương trình."
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Để biểu diễn miền nghiệm của hệ",
+      "text": "Vẽ từng đường thẳng, gạch bỏ phần không là miền nghiệm của mỗi bất phương trình; phần còn lại không bị gạch là miền nghiệm của hệ (thường là một miền đa giác).",
+      "n": 2
     },
     {
       "type": "figure",
@@ -27,8 +40,13 @@
       "caption": "Miền nghiệm của hệ x ≥ 0, y ≥ 0, x + y ≤ 4, x + 2y ≤ 6 là tứ giác có các đỉnh O(0; 0), (4; 0), (2; 2), (0; 3)"
     },
     {
-      "type": "text",
-      "content": "Giá trị lớn nhất (nhỏ nhất) của biểu thức F(x; y) = ax + by trên một miền đa giác đạt được tại một trong các đỉnh của miền đa giác đó. Nhiều bài toán thực tế (lập kế hoạch sản xuất, pha chế, vận chuyển) đưa về tìm GTLN, GTNN của F trên miền nghiệm của một hệ bất phương trình."
+      "type": "card",
+      "title": "Giá trị lớn nhất (nhỏ nhất) của…",
+      "points": [
+        "Giá trị lớn nhất (nhỏ nhất) của biểu thức F(x; y) = ax + by trên một miền đa giác đạt được tại một trong các đỉnh của miền đa giác đó.",
+        "Nhiều bài toán thực tế (lập kế hoạch sản xuất, pha chế, vận chuyển) đưa về tìm GTLN, GTNN của F trên miền nghiệm của một hệ bất phương trình."
+      ],
+      "n": 3
     },
     {
       "type": "method",

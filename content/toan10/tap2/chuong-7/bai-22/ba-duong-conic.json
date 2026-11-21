@@ -14,8 +14,22 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Elip: cho hai điểm F₁, F₂ cố định với F₁F₂ = 2c > 0 và số a > c. Tập hợp các điểm M sao cho MF₁ + MF₂ = 2a là elip; F₁, F₂ là tiêu điểm, 2c là tiêu cự."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Elip: cho hai điểm F₁, F₂ cố định với F₁F₂ = 2c > 0 và số a > c. Tập hợp các điểm M sao cho MF₁ + MF₂ = 2a là elip;"
+    },
+    {
+      "type": "card",
+      "title": "Elip",
+      "points": [
+        "Cho hai điểm F₁, F₂ cố định với F₁F₂ = 2c > 0 và số a > c.",
+        "Tập hợp các điểm M sao cho MF₁ + MF₂ = 2a là elip;",
+        "F₁, F₂ là tiêu điểm, 2c là tiêu cự."
+      ],
+      "n": 1,
+      "formulas": [
+        "Elip (E): x²/a² + y²/b² = 1 với b² = a² − c², a > b > 0. Tiêu điểm F₁(−c; 0), F₂(c; 0); đỉnh A₁(−a; 0), A₂(a; 0), B₁(0; −b), B₂(0; b); trục lớn 2a, trục nhỏ 2b."
+      ]
     },
     {
       "type": "figure",
@@ -23,24 +37,29 @@
       "caption": "Elip với hai tiêu điểm F₁, F₂; MF₁ + MF₂ = 2a"
     },
     {
-      "type": "formula",
-      "content": "Elip (E): x²/a² + y²/b² = 1 với b² = a² − c², a > b > 0. Tiêu điểm F₁(−c; 0), F₂(c; 0); đỉnh A₁(−a; 0), A₂(a; 0), B₁(0; −b), B₂(0; b); trục lớn 2a, trục nhỏ 2b."
+      "type": "card",
+      "title": "Hypebol",
+      "points": [
+        "Cho F₁F₂ = 2c và số a với 0 < a < c.",
+        "Tập hợp các điểm M sao cho |MF₁ − MF₂| = 2a là hypebol."
+      ],
+      "n": 2,
+      "formulas": [
+        "Hypebol (H): x²/a² − y²/b² = 1 với b² = c² − a². Tiêu điểm F₁(−c; 0), F₂(c; 0); đỉnh A₁(−a; 0), A₂(a; 0); trục thực 2a, trục ảo 2b."
+      ]
     },
     {
-      "type": "text",
-      "content": "Hypebol: cho F₁F₂ = 2c và số a với 0 < a < c. Tập hợp các điểm M sao cho |MF₁ − MF₂| = 2a là hypebol."
-    },
-    {
-      "type": "formula",
-      "content": "Hypebol (H): x²/a² − y²/b² = 1 với b² = c² − a². Tiêu điểm F₁(−c; 0), F₂(c; 0); đỉnh A₁(−a; 0), A₂(a; 0); trục thực 2a, trục ảo 2b."
-    },
-    {
-      "type": "text",
-      "content": "Parabol: cho điểm F và đường thẳng Δ không đi qua F. Tập hợp các điểm M cách đều F và Δ là parabol; F là tiêu điểm, Δ là đường chuẩn, khoảng cách từ F đến Δ là tham số tiêu p."
-    },
-    {
-      "type": "formula",
-      "content": "Parabol (P): y² = 2px (p > 0). Tiêu điểm F(p/2; 0), đường chuẩn x = −p/2."
+      "type": "card",
+      "title": "Parabol",
+      "points": [
+        "Cho điểm F và đường thẳng Δ không đi qua F.",
+        "Tập hợp các điểm M cách đều F và Δ là parabol;",
+        "F là tiêu điểm, Δ là đường chuẩn, khoảng cách từ F đến Δ là tham số tiêu p."
+      ],
+      "n": 3,
+      "formulas": [
+        "Parabol (P): y² = 2px (p > 0). Tiêu điểm F(p/2; 0), đường chuẩn x = −p/2."
+      ]
     },
     {
       "type": "method",

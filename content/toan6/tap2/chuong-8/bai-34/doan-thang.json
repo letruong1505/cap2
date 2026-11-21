@@ -13,16 +13,27 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Đoạn thẳng AB là hình gồm điểm A, điểm B và tất cả các điểm nằm giữa A và B. A, B là hai đầu mút."
     },
     {
-      "type": "text",
-      "content": "Mỗi đoạn thẳng có một độ dài, là một số dương. So sánh hai đoạn thẳng bằng cách so sánh độ dài."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Đoạn thẳng AB là hình gồm điểm A, điểm B và tất cả các điểm nằm giữa A và B.",
+        "A, B là hai đầu mút."
+      ],
+      "n": 1
     },
     {
-      "type": "formula",
-      "content": "M nằm giữa A và B ⇒ AM + MB = AB"
+      "type": "card",
+      "title": "Mỗi đoạn thẳng có một độ dài, là một số dương",
+      "text": "So sánh hai đoạn thẳng bằng cách so sánh độ dài.",
+      "n": 2,
+      "formulas": [
+        "M nằm giữa A và B ⇒ AM + MB = AB"
+      ]
     },
     {
       "type": "figure",

@@ -13,16 +13,24 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Phản xạ toàn phần là hiện tượng toàn bộ tia sáng bị phản xạ trở lại môi trường cũ khi chiếu tới mặt phân cách giữa hai môi trường trong suốt."
     },
     {
-      "type": "text",
-      "content": "Điều kiện: ánh sáng truyền từ môi trường có chiết suất lớn sang môi trường có chiết suất nhỏ hơn (n₁ > n₂) và góc tới lớn hơn hoặc bằng góc tới hạn."
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Phản xạ toàn phần là hiện tượng toàn bộ tia sáng bị phản xạ trở lại môi trường cũ khi chiếu tới mặt phân cách giữa hai môi trường trong suốt.",
+      "n": 1
     },
     {
-      "type": "formula",
-      "content": "sin i_th = n₂/n₁"
+      "type": "card",
+      "title": "Điều kiện",
+      "text": "Ánh sáng truyền từ môi trường có chiết suất lớn sang môi trường có chiết suất nhỏ hơn (n₁ > n₂) và góc tới lớn hơn hoặc bằng góc tới hạn.",
+      "n": 2,
+      "formulas": [
+        "sin i_th = n₂/n₁"
+      ]
     },
     {
       "type": "figure",
@@ -30,8 +38,10 @@
       "caption": "Góc giới hạn và phản xạ toàn phần."
     },
     {
-      "type": "text",
-      "content": "Ứng dụng: cáp quang (sợi quang) truyền tín hiệu thông tin, nội soi trong y học; lăng kính phản xạ toàn phần trong ống nhòm."
+      "type": "card",
+      "title": "Ứng dụng",
+      "text": "Cáp quang (sợi quang) truyền tín hiệu thông tin, nội soi trong y học; lăng kính phản xạ toàn phần trong ống nhòm.",
+      "n": 3
     }
   ],
   "examples": [

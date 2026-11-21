@@ -13,16 +13,24 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Số hữu tỉ là số viết được dưới dạng a/b với a, b là số nguyên và b khác 0."
     },
     {
-      "type": "text",
-      "content": "Muốn cộng hoặc trừ hai số hữu tỉ, ta đưa về cùng mẫu dương, rồi cộng hoặc trừ các tử số."
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Số hữu tỉ là số viết được dưới dạng a/b với a, b là số nguyên và b khác 0.",
+      "n": 1
     },
     {
-      "type": "formula",
-      "content": "a/b + c/d = (a·d + b·c) / (b·d)"
+      "type": "card",
+      "title": "Muốn cộng hoặc trừ hai số hữu…",
+      "text": "Muốn cộng hoặc trừ hai số hữu tỉ, ta đưa về cùng mẫu dương, rồi cộng hoặc trừ các tử số.",
+      "n": 2,
+      "formulas": [
+        "a/b + c/d = (a·d + b·c) / (b·d)"
+      ]
     }
   ],
   "examples": [

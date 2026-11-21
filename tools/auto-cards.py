@@ -60,9 +60,9 @@ def convert(path):
     if not th or th[0].get('type') in ('summary',) or any(b['type'] == 'card' for b in th):
         return False
     texts = [b for b in th if b['type'] == 'text']
-    if not texts:
+    if not texts and not any(b['type'] == 'formula' for b in th):
         return False
-    out = [{'type': 'summary', 'label': 'Cần nhớ', 'content': summary_of(texts[0]['content'])}]
+    out = [{'type': 'summary', 'label': 'Cần nhớ', 'content': summary_of(texts[0]['content']) if texts else 'Các công thức chính của bài.'}]
     n = 0
     last = None
     for b in th:
@@ -87,7 +87,7 @@ def main(subjects):
     for s in subjects:
         k = 0
         for p in sorted(glob.glob(os.path.join(ROOT, 'content', s, '**', '*.json'), recursive=True)):
-            if p.endswith('manifest.json') or 'on-tap' in p:
+            if p.endswith('manifest.json') or 'on-tap' in p or 'nang-cao' in p:
                 continue
             if convert(p): k += 1
         print(s, k); total += k

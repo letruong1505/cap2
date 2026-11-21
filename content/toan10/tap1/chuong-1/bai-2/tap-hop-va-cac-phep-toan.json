@@ -14,29 +14,61 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Tập hợp có thể được mô tả bằng cách liệt kê các phần tử (A = {1; 2; 3}) hoặc chỉ ra tính chất đặc trưng (A = {x ∈ ℕ | 0 < x < 4}). Tập hợp không chứa phần tử nào là tập rỗng ∅. Số phần tử của tập hữu hạn A kí hiệu n(A)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Tập hợp có thể được mô tả bằng cách liệt kê các phần tử (A = {1; 2;"
     },
     {
-      "type": "text",
-      "content": "Tập con: A ⊂ B nếu mọi phần tử của A đều thuộc B. Hai tập hợp bằng nhau: A = B khi A ⊂ B và B ⊂ A. Quy ước ∅ ⊂ A với mọi tập A. Một tập có n phần tử có 2ⁿ tập con."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Tập hợp có thể được mô tả bằng cách liệt kê các phần tử (A = {1;",
+        "2;",
+        "3}) hoặc chỉ ra tính chất đặc trưng (A = {x ∈ ℕ | 0 < x < 4}).",
+        "Tập hợp không chứa phần tử nào là tập rỗng ∅.",
+        "Số phần tử của tập hữu hạn A kí hiệu n(A)."
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Các tập hợp số: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ. Các tập con thường dùng của ℝ: khoảng (a; b) = {x | a < x < b}; đoạn [a; b] = {x | a ≤ x ≤ b}; nửa khoảng [a; b), (a; b]; các khoảng vô hạn (a; +∞), (−∞; b], ... Kí hiệu +∞, −∞ không phải là số."
+      "type": "card",
+      "title": "Tập con",
+      "points": [
+        "A ⊂ B nếu mọi phần tử của A đều thuộc B.",
+        "Hai tập hợp bằng nhau: A = B khi A ⊂ B và B ⊂ A.",
+        "Quy ước ∅ ⊂ A với mọi tập A.",
+        "Một tập có n phần tử có 2ⁿ tập con."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Giao A ∩ B gồm các phần tử vừa thuộc A vừa thuộc B. Hợp A ∪ B gồm các phần tử thuộc A hoặc thuộc B. Hiệu A \\ B gồm các phần tử thuộc A nhưng không thuộc B. Nếu A ⊂ U thì phần bù của A trong U là C_U A = U \\ A."
+      "type": "card",
+      "title": "Các tập hợp số",
+      "points": [
+        "ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ.",
+        "Các tập con thường dùng của ℝ: khoảng (a; b) = {x | a < x < b};",
+        "Đoạn [a; b] = {x | a ≤ x ≤ b}; nửa khoảng [a; b), (a; b]; các khoảng vô hạn (a; +∞), (−∞; b], ...",
+        "Kí hiệu +∞, −∞ không phải là số."
+      ],
+      "n": 3
+    },
+    {
+      "type": "card",
+      "title": "Giao A ∩ B gồm các phần tử vừa thuộc A vừa thuộc B",
+      "points": [
+        "Hợp A ∪ B gồm các phần tử thuộc A hoặc thuộc B.",
+        "Hiệu A \\ B gồm các phần tử thuộc A nhưng không thuộc B.",
+        "Nếu A ⊂ U thì phần bù của A trong U là C_U A = U \\ A."
+      ],
+      "n": 4,
+      "formulas": [
+        "n(A ∪ B) = n(A) + n(B) − n(A ∩ B)"
+      ]
     },
     {
       "type": "figure",
       "figure": "figures/t10-b2-ven.svg",
       "caption": "Biểu đồ Ven minh hoạ giao, hợp, hiệu của hai tập hợp"
-    },
-    {
-      "type": "formula",
-      "content": "n(A ∪ B) = n(A) + n(B) − n(A ∩ B)"
     },
     {
       "type": "method",

@@ -13,12 +13,27 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Phép cộng: a + b = c (a, b là số hạng, c là tổng). Phép cộng có tính chất giao hoán a + b = b + a và kết hợp (a + b) + c = a + (b + c); a + 0 = a."
     },
     {
-      "type": "text",
-      "content": "Phép trừ: a − b = c (a là số bị trừ, b là số trừ, c là hiệu), chỉ thực hiện được trong ℕ khi a ≥ b. Nếu a − b = c thì a = b + c và b = a − c."
+      "type": "card",
+      "title": "Phép cộng",
+      "points": [
+        "A + b = c (a, b là số hạng, c là tổng).",
+        "Phép cộng có tính chất giao hoán a + b = b + a và kết hợp (a + b) + c = a + (b + c); a + 0 = a."
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Phép trừ",
+      "points": [
+        "A − b = c (a là số bị trừ, b là số trừ, c là hiệu), chỉ thực hiện được trong ℕ khi a ≥ b.",
+        "Nếu a − b = c thì a = b + c và b = a − c."
+      ],
+      "n": 2
     },
     {
       "type": "figure",
@@ -26,8 +41,10 @@
       "caption": "Cộng và trừ trên tia số"
     },
     {
-      "type": "text",
-      "content": "Mẹo tính nhanh: nhóm các số hạng có tổng tròn chục, tròn trăm; thêm vào số hạng này và bớt đi ở số hạng kia cùng một số."
+      "type": "card",
+      "title": "Mẹo tính nhanh",
+      "text": "Nhóm các số hạng có tổng tròn chục, tròn trăm; thêm vào số hạng này và bớt đi ở số hạng kia cùng một số.",
+      "n": 3
     }
   ],
   "examples": [

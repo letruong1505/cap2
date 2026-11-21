@@ -10,28 +10,39 @@
   "bookPage": 41,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Phân tích đa thức thành nhân tử (hay thừa số) là biến đổi đa thức đó thành một tích của những đa thức."
     },
     {
-      "type": "text",
-      "content": "Phương pháp đặt nhân tử chung: tìm nhân tử chung của các hạng tử, đặt ra ngoài dấu ngoặc."
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Phân tích đa thức thành nhân tử (hay thừa số) là biến đổi đa thức đó thành một tích của những đa thức.",
+      "n": 1
     },
     {
-      "type": "formula",
-      "content": "AB + AC = A(B + C)"
+      "type": "card",
+      "title": "Phương pháp đặt nhân tử chung",
+      "text": "Tìm nhân tử chung của các hạng tử, đặt ra ngoài dấu ngoặc.",
+      "n": 2,
+      "formulas": [
+        "AB + AC = A(B + C)"
+      ]
     },
     {
-      "type": "text",
-      "content": "Phương pháp dùng hằng đẳng thức: nhận ra dạng A² − B², (A ± B)², A³ ± B³, (A ± B)³ rồi viết thành tích."
+      "type": "card",
+      "title": "Phương pháp dùng hằng đẳng thức",
+      "text": "Nhận ra dạng A² − B², (A ± B)², A³ ± B³, (A ± B)³ rồi viết thành tích.",
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Phương pháp nhóm hạng tử: nhóm các hạng tử thích hợp để xuất hiện nhân tử chung của cả đa thức."
-    },
-    {
-      "type": "formula",
-      "content": "ax + ay + bx + by = a(x + y) + b(x + y) = (a + b)(x + y)"
+      "type": "card",
+      "title": "Phương pháp nhóm hạng tử",
+      "text": "Nhóm các hạng tử thích hợp để xuất hiện nhân tử chung của cả đa thức.",
+      "n": 4,
+      "formulas": [
+        "ax + ay + bx + by = a(x + y) + b(x + y) = (a + b)(x + y)"
+      ]
     },
     {
       "type": "method",

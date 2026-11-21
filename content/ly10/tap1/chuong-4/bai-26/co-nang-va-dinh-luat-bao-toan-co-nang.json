@@ -14,16 +14,26 @@
   ],
   "theory": [
     {
-      "type": "formula",
-      "content": "Cơ năng: W = W_đ + W_t = ½mv² + mgh"
-    },
-    {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Định luật bảo toàn cơ năng: Khi vật chuyển động trong trọng trường và chỉ chịu tác dụng của trọng lực (hoặc lực đàn hồi), cơ năng của vật được bảo toàn."
     },
     {
-      "type": "formula",
-      "content": "W₁ = W₂  ⇔  ½mv₁² + mgh₁ = ½mv₂² + mgh₂"
+      "type": "card",
+      "n": 1,
+      "title": "Công thức",
+      "formulas": [
+        "Cơ năng: W = W_đ + W_t = ½mv² + mgh"
+      ]
+    },
+    {
+      "type": "card",
+      "title": "Định luật bảo toàn cơ năng",
+      "text": "Khi vật chuyển động trong trọng trường và chỉ chịu tác dụng của trọng lực (hoặc lực đàn hồi), cơ năng của vật được bảo toàn.",
+      "n": 2,
+      "formulas": [
+        "W₁ = W₂  ⇔  ½mv₁² + mgh₁ = ½mv₂² + mgh₂"
+      ]
     },
     {
       "type": "figure",
@@ -31,12 +41,23 @@
       "caption": "Chuyển hoá giữa động năng và thế năng của vật chuyển động trên quỹ đạo không ma sát"
     },
     {
-      "type": "text",
-      "content": "Trong quá trình chuyển động, động năng và thế năng chuyển hoá lẫn nhau: thế năng giảm bao nhiêu thì động năng tăng bấy nhiêu. Tại độ cao lớn nhất động năng nhỏ nhất, tại vị trí thấp nhất động năng lớn nhất."
+      "type": "card",
+      "title": "Trong quá trình chuyển động, động năng và thế năng chuyển hoá lẫn nhau",
+      "points": [
+        "Thế năng giảm bao nhiêu thì động năng tăng bấy nhiêu.",
+        "Tại độ cao lớn nhất động năng nhỏ nhất, tại vị trí thấp nhất động năng lớn nhất."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Khi có lực cản, ma sát: cơ năng không bảo toàn; độ biến thiên cơ năng bằng công của lực cản, ma sát: W₂ − W₁ = A_c (A_c < 0). Phần cơ năng giảm chuyển thành nhiệt năng."
+      "type": "card",
+      "title": "Khi có lực cản, ma sát",
+      "points": [
+        "Cơ năng không bảo toàn;",
+        "Độ biến thiên cơ năng bằng công của lực cản, ma sát: W₂ − W₁ = A_c (A_c < 0).",
+        "Phần cơ năng giảm chuyển thành nhiệt năng."
+      ],
+      "n": 4
     },
     {
       "type": "method",

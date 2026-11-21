@@ -14,16 +14,38 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Góc lượng giác (Ou, Ov) có số đo α + k·360° (hay α + k·2π, k ∈ ℤ). Đơn vị rađian: π rad = 180°, 1 rad = (180/π)° ≈ 57°17′45″. Muốn đổi a° sang rađian: α = a·π/180; đổi ngược: a = α·180/π."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Góc lượng giác (Ou, Ov) có số đo α + k·360° (hay α + k·2π, k ∈ ℤ). Đơn vị rađian: π rad = 180°, 1 rad = (180/π)° ≈ 57°17′45″."
     },
     {
-      "type": "formula",
-      "content": "Độ dài cung: l = R·α (α tính bằng rađian, R là bán kính)."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Góc lượng giác (Ou, Ov) có số đo α + k·360° (hay α + k·2π, k ∈ ℤ).",
+        "Đơn vị rađian: π rad = 180°, 1 rad = (180/π)° ≈ 57°17′45″.",
+        "Muốn đổi a° sang rađian: α = a·π/180;",
+        "Đổi ngược: a = α·180/π."
+      ],
+      "n": 1,
+      "formulas": [
+        "Độ dài cung: l = R·α (α tính bằng rađian, R là bán kính)."
+      ]
     },
     {
-      "type": "text",
-      "content": "Đường tròn lượng giác là đường tròn tâm O bán kính 1, chiều dương ngược chiều kim đồng hồ, điểm gốc A(1; 0). Góc lượng giác α có điểm biểu diễn M(cos α; sin α). Khi đó cos α là hoành độ, sin α là tung độ của M; tan α = sin α / cos α (cos α ≠ 0), cot α = cos α / sin α (sin α ≠ 0)."
+      "type": "card",
+      "title": "Đường tròn lượng giác là đường tròn…",
+      "points": [
+        "Đường tròn lượng giác là đường tròn tâm O bán kính 1, chiều dương ngược chiều kim đồng hồ, điểm gốc A(1;",
+        "0).",
+        "Góc lượng giác α có điểm biểu diễn M(cos α; sin α).",
+        "Khi đó cos α là hoành độ, sin α là tung độ của M; tan α = sin α / cos α (cos α ≠ 0), cot α = cos α / sin α (sin α ≠ 0)."
+      ],
+      "n": 2,
+      "formulas": [
+        "sin²α + cos²α = 1;   1 + tan²α = 1/cos²α;   1 + cot²α = 1/sin²α;   tan α · cot α = 1.",
+        "Góc đối: cos(−α) = cos α, sin(−α) = −sin α.   Góc bù: sin(π − α) = sin α, cos(π − α) = −cos α.   Hơn kém π: sin(α + π) = −sin α, cos(α + π) = −cos α, tan(α + π) = tan α.   Phụ nhau: sin(π/2 − α) = cos α, cos(π/2 − α) = sin α."
+      ]
     },
     {
       "type": "figure",
@@ -31,16 +53,10 @@
       "caption": "Đường tròn lượng giác và điểm M(cos α; sin α)"
     },
     {
-      "type": "formula",
-      "content": "sin²α + cos²α = 1;   1 + tan²α = 1/cos²α;   1 + cot²α = 1/sin²α;   tan α · cot α = 1."
-    },
-    {
-      "type": "formula",
-      "content": "Góc đối: cos(−α) = cos α, sin(−α) = −sin α.   Góc bù: sin(π − α) = sin α, cos(π − α) = −cos α.   Hơn kém π: sin(α + π) = −sin α, cos(α + π) = −cos α, tan(α + π) = tan α.   Phụ nhau: sin(π/2 − α) = cos α, cos(π/2 − α) = sin α."
-    },
-    {
-      "type": "text",
-      "content": "Giá trị đặc biệt: sin 30° = 1/2, cos 60° = 1/2; sin 45° = cos 45° = √2/2; sin 60° = cos 30° = √3/2; tan 45° = 1; tan 30° = √3/3; tan 60° = √3."
+      "type": "card",
+      "title": "Giá trị đặc biệt",
+      "text": "Sin 30° = 1/2, cos 60° = 1/2; sin 45° = cos 45° = √2/2; sin 60° = cos 30° = √3/2; tan 45° = 1; tan 30° = √3/3; tan 60° = √3.",
+      "n": 3
     },
     {
       "type": "method",

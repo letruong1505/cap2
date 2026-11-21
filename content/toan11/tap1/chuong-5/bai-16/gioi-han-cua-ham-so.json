@@ -14,8 +14,18 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Cho hàm số f xác định trên khoảng chứa x₀ (có thể trừ x₀). Ta nói f(x) có giới hạn L khi x dần tới x₀, kí hiệu lim_{x→x₀} f(x) = L, nếu với mọi dãy (xₙ) trong tập xác định, xₙ ≠ x₀, xₙ → x₀ thì f(xₙ) → L."
+    },
+    {
+      "type": "card",
+      "title": "Cho hàm số f xác định trên khoảng chứa x₀ (có thể trừ x₀)",
+      "text": "Ta nói f(x) có giới hạn L khi x dần tới x₀, kí hiệu lim_{x→x₀} f(x) = L, nếu với mọi dãy (xₙ) trong tập xác định, xₙ ≠ x₀, xₙ → x₀ thì f(xₙ) → L.",
+      "n": 1,
+      "formulas": [
+        "lim_{x→x₀} x = x₀;  lim c = c;  nếu lim f = L, lim g = M thì lim(f ± g) = L ± M, lim(fg) = LM, lim(f/g) = L/M (M ≠ 0)."
+      ]
     },
     {
       "type": "figure",
@@ -23,12 +33,15 @@
       "caption": "Đồ thị y = (x² − 1)/(x − 1) = x + 1 (x ≠ 1): hàm không xác định tại x = 1 nhưng lim = 2"
     },
     {
-      "type": "formula",
-      "content": "lim_{x→x₀} x = x₀;  lim c = c;  nếu lim f = L, lim g = M thì lim(f ± g) = L ± M, lim(fg) = LM, lim(f/g) = L/M (M ≠ 0)."
-    },
-    {
-      "type": "text",
-      "content": "Giới hạn một bên: lim_{x→x₀⁺} f(x) (x > x₀) và lim_{x→x₀⁻} f(x) (x < x₀). Tồn tại lim_{x→x₀} f(x) = L khi và chỉ khi hai giới hạn một bên cùng bằng L. Giới hạn tại vô cực: lim_{x→±∞} 1/xᵏ = 0; lim_{x→+∞} xᵏ = +∞. Giới hạn vô cực: lim_{x→0⁺} 1/x = +∞, lim_{x→0⁻} 1/x = −∞."
+      "type": "card",
+      "title": "Giới hạn một bên",
+      "points": [
+        "Lim_{x→x₀⁺} f(x) (x > x₀) và lim_{x→x₀⁻} f(x) (x < x₀).",
+        "Tồn tại lim_{x→x₀} f(x) = L khi và chỉ khi hai giới hạn một bên cùng bằng L.",
+        "Giới hạn tại vô cực: lim_{x→±∞} 1/xᵏ = 0; lim_{x→+∞} xᵏ = +∞.",
+        "Giới hạn vô cực: lim_{x→0⁺} 1/x = +∞, lim_{x→0⁻} 1/x = −∞."
+      ],
+      "n": 2
     },
     {
       "type": "method",

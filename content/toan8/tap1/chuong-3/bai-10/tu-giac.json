@@ -10,12 +10,27 @@
   "bookPage": 49,
   "theory": [
     {
-      "type": "text",
-      "content": "Tứ giác ABCD là hình gồm bốn đoạn thẳng AB, BC, CD, DA, trong đó không có hai đoạn thẳng nào nằm trên cùng một đường thẳng. Các điểm A, B, C, D là các đỉnh; các đoạn thẳng AB, BC, CD, DA là các cạnh."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Tứ giác ABCD là hình gồm bốn đoạn thẳng AB, BC, CD, DA, trong đó không có hai đoạn thẳng nào nằm trên cùng một đường thẳng."
     },
     {
-      "type": "text",
-      "content": "Tứ giác lồi là tứ giác luôn nằm về một phía của đường thẳng chứa bất kì cạnh nào của nó. Đoạn thẳng nối hai đỉnh đối nhau gọi là đường chéo (AC và BD)."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Tứ giác ABCD là hình gồm bốn đoạn thẳng AB, BC, CD, DA, trong đó không có hai đoạn thẳng nào nằm trên cùng một đường thẳng.",
+        "Các điểm A, B, C, D là các đỉnh; các đoạn thẳng AB, BC, CD, DA là các cạnh."
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Tứ giác lồi là tứ giác luôn…",
+      "points": [
+        "Tứ giác lồi là tứ giác luôn nằm về một phía của đường thẳng chứa bất kì cạnh nào của nó.",
+        "Đoạn thẳng nối hai đỉnh đối nhau gọi là đường chéo (AC và BD)."
+      ],
+      "n": 2
     },
     {
       "type": "figure",
@@ -28,17 +43,18 @@
       "caption": "Tứ giác không lồi: có một cạnh mà tứ giác nằm ở cả hai phía của đường thẳng chứa cạnh đó"
     },
     {
-      "type": "text",
-      "content": "Định lí: tổng các góc của một tứ giác bằng 360°."
+      "type": "card",
+      "title": "Định lí",
+      "text": "Tổng các góc của một tứ giác bằng 360°.",
+      "n": 3,
+      "formulas": [
+        "Â + B̂ + Ĉ + D̂ = 360°"
+      ]
     },
     {
       "type": "figure",
       "figure": "figures/lt-tu-giac-tong-goc.svg",
       "caption": "Kẻ đường chéo AC chia tứ giác thành hai tam giác nên Â + B̂ + Ĉ + D̂ = 360°"
-    },
-    {
-      "type": "formula",
-      "content": "Â + B̂ + Ĉ + D̂ = 360°"
     }
   ],
   "examples": [

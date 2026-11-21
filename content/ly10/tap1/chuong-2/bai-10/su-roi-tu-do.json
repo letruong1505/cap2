@@ -14,12 +14,31 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Trong không khí, các vật rơi nhanh chậm khác nhau chủ yếu do lực cản của không khí. Trong chân không (ống Newton), mọi vật rơi như nhau. Sự rơi tự do là sự rơi chỉ dưới tác dụng của trọng lực."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Trong không khí, các vật rơi nhanh chậm khác nhau chủ yếu do lực cản của không khí. Trong chân không (ống Newton), mọi vật rơi như nhau."
     },
     {
-      "type": "text",
-      "content": "Đặc điểm: rơi tự do là chuyển động thẳng nhanh dần đều theo phương thẳng đứng, chiều từ trên xuống, với gia tốc rơi tự do g. Tại một nơi trên Trái Đất và ở gần mặt đất, mọi vật rơi tự do với cùng gia tốc g; g phụ thuộc vĩ độ và độ cao, thường lấy g ≈ 9,8 m/s² (hoặc 10 m/s² khi tính gần đúng)."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Trong không khí, các vật rơi nhanh chậm khác nhau chủ yếu do lực cản của không khí.",
+        "Trong chân không (ống Newton), mọi vật rơi như nhau.",
+        "Sự rơi tự do là sự rơi chỉ dưới tác dụng của trọng lực."
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Đặc điểm",
+      "points": [
+        "Rơi tự do là chuyển động thẳng nhanh dần đều theo phương thẳng đứng, chiều từ trên xuống, với gia tốc rơi tự do g.",
+        "Tại một nơi trên Trái Đất và ở gần mặt đất, mọi vật rơi tự do với cùng gia tốc g; g phụ thuộc vĩ độ và độ cao, thường lấy g ≈ 9,8 m/s² (hoặc 10 m/s² khi tính gần đúng)."
+      ],
+      "n": 2,
+      "formulas": [
+        "v = g·t        h = ½·g·t²        v² = 2·g·h        t = √(2h/g)"
+      ]
     },
     {
       "type": "figure",
@@ -27,16 +46,19 @@
       "caption": "Vị trí vật rơi tự do sau những khoảng thời gian bằng nhau: quãng đường tăng theo t²"
     },
     {
-      "type": "formula",
-      "content": "v = g·t        h = ½·g·t²        v² = 2·g·h        t = √(2h/g)"
+      "type": "card",
+      "title": "Vật rơi tự do từ độ cao…",
+      "points": [
+        "Vật rơi tự do từ độ cao h chạm đất sau thời gian t = √(2h/g) với vận tốc v = √(2gh).",
+        "Quãng đường rơi trong giây thứ n: Δh = ½g(2n − 1)."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Vật rơi tự do từ độ cao h chạm đất sau thời gian t = √(2h/g) với vận tốc v = √(2gh). Quãng đường rơi trong giây thứ n: Δh = ½g(2n − 1)."
-    },
-    {
-      "type": "text",
-      "content": "Đo gia tốc rơi tự do: thả vật qua hai cổng quang điện hoặc đo thời gian rơi trên quãng đường h đã biết, rồi tính g = 2h/t²."
+      "type": "card",
+      "title": "Đo gia tốc rơi tự do",
+      "text": "Thả vật qua hai cổng quang điện hoặc đo thời gian rơi trên quãng đường h đã biết, rồi tính g = 2h/t².",
+      "n": 4
     },
     {
       "type": "method",

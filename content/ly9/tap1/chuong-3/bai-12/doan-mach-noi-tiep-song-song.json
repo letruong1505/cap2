@@ -13,12 +13,18 @@
   ],
   "theory": [
     {
-      "type": "formula",
-      "content": "Nối tiếp: I = I₁ = I₂;  U = U₁ + U₂;  R_tđ = R₁ + R₂"
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Trong mạch nối tiếp, hiệu điện thế trên mỗi điện trở tỉ lệ thuận với điện trở. Trong mạch song song, cường độ dòng điện qua mỗi nhánh tỉ lệ nghịch với điện trở."
     },
     {
-      "type": "formula",
-      "content": "Song song: U = U₁ = U₂;  I = I₁ + I₂;  1/R_tđ = 1/R₁ + 1/R₂"
+      "type": "card",
+      "n": 1,
+      "title": "Công thức",
+      "formulas": [
+        "Nối tiếp: I = I₁ = I₂;  U = U₁ + U₂;  R_tđ = R₁ + R₂",
+        "Song song: U = U₁ = U₂;  I = I₁ + I₂;  1/R_tđ = 1/R₁ + 1/R₂"
+      ]
     },
     {
       "type": "figure",
@@ -26,8 +32,14 @@
       "caption": "Sơ đồ đoạn mạch nối tiếp và song song."
     },
     {
-      "type": "text",
-      "content": "Trong mạch nối tiếp, hiệu điện thế trên mỗi điện trở tỉ lệ thuận với điện trở. Trong mạch song song, cường độ dòng điện qua mỗi nhánh tỉ lệ nghịch với điện trở. Hai điện trở R giống nhau mắc song song có R_tđ = R/2."
+      "type": "card",
+      "title": "Trong mạch nối tiếp, hiệu điện thế…",
+      "points": [
+        "Trong mạch nối tiếp, hiệu điện thế trên mỗi điện trở tỉ lệ thuận với điện trở.",
+        "Trong mạch song song, cường độ dòng điện qua mỗi nhánh tỉ lệ nghịch với điện trở.",
+        "Hai điện trở R giống nhau mắc song song có R_tđ = R/2."
+      ],
+      "n": 2
     },
     {
       "type": "method",

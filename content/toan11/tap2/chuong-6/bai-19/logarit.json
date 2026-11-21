@@ -14,25 +14,29 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Cho a > 0, a ≠ 1 và b > 0. Số thực α thoả aᵅ = b gọi là lôgarit cơ số a của b, kí hiệu log_a b = α. Như vậy log_a b = α ⇔ aᵅ = b. Lôgarit cơ số 10 viết lg b hoặc log b; lôgarit cơ số e (e ≈ 2,718) viết ln b."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Cho a > 0, a ≠ 1 và b > 0. Số thực α thoả aᵅ = b gọi là lôgarit cơ số a của b, kí hiệu log_a b = α."
+    },
+    {
+      "type": "card",
+      "title": "Cho a > 0, a ≠ 1 và b > 0",
+      "points": [
+        "Số thực α thoả aᵅ = b gọi là lôgarit cơ số a của b, kí hiệu log_a b = α.",
+        "Như vậy log_a b = α ⇔ aᵅ = b.",
+        "Lôgarit cơ số 10 viết lg b hoặc log b; lôgarit cơ số e (e ≈ 2,718) viết ln b."
+      ],
+      "n": 1,
+      "formulas": [
+        "log_a 1 = 0;  log_a a = 1;  a^{log_a b} = b;  log_a aᵅ = α.",
+        "Quy tắc (a > 0, a ≠ 1; M, N > 0): log_a(MN) = log_a M + log_a N;  log_a(M/N) = log_a M − log_a N;  log_a Mᵅ = α·log_a M.",
+        "Đổi cơ số (a, b, c > 0; a, b ≠ 1): log_a c = log_b c / log_b a;  hệ quả: log_a b = 1/log_b a;  log_{aᵅ} b = (1/α)·log_a b."
+      ]
     },
     {
       "type": "figure",
       "figure": "figures/t11-b19-do-thi-log.svg",
       "caption": "Đồ thị y = log₂ x đi qua (1; 0), (2; 1), (4; 2), (1/2; −1)"
-    },
-    {
-      "type": "formula",
-      "content": "log_a 1 = 0;  log_a a = 1;  a^{log_a b} = b;  log_a aᵅ = α."
-    },
-    {
-      "type": "formula",
-      "content": "Quy tắc (a > 0, a ≠ 1; M, N > 0): log_a(MN) = log_a M + log_a N;  log_a(M/N) = log_a M − log_a N;  log_a Mᵅ = α·log_a M."
-    },
-    {
-      "type": "formula",
-      "content": "Đổi cơ số (a, b, c > 0; a, b ≠ 1): log_a c = log_b c / log_b a;  hệ quả: log_a b = 1/log_b a;  log_{aᵅ} b = (1/α)·log_a b."
     },
     {
       "type": "method",

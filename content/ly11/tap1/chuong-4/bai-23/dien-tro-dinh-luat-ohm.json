@@ -14,12 +14,22 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Điện trở của vật dẫn đặc trưng cho mức độ cản trở dòng điện của vật dẫn đó: R = U/I; đơn vị ôm (Ω), 1 Ω = 1 V/A. Định luật Ohm: cường độ dòng điện qua vật dẫn kim loại ở nhiệt độ không đổi tỉ lệ thuận với hiệu điện thế giữa hai đầu vật dẫn."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Điện trở của vật dẫn đặc trưng cho mức độ cản trở dòng điện của vật dẫn đó: R = U/I; đơn vị ôm (Ω), 1 Ω = 1 V/A."
     },
     {
-      "type": "formula",
-      "content": "I = U/R;   U = IR.   Điện trở dây dẫn: R = ρ·l/S  (ρ: điện trở suất (Ω·m), l: chiều dài, S: tiết diện)."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Điện trở của vật dẫn đặc trưng cho mức độ cản trở dòng điện của vật dẫn đó: R = U/I;",
+        "Đơn vị ôm (Ω), 1 Ω = 1 V/A.",
+        "Định luật Ohm: cường độ dòng điện qua vật dẫn kim loại ở nhiệt độ không đổi tỉ lệ thuận với hiệu điện thế giữa hai đầu vật dẫn."
+      ],
+      "n": 1,
+      "formulas": [
+        "I = U/R;   U = IR.   Điện trở dây dẫn: R = ρ·l/S  (ρ: điện trở suất (Ω·m), l: chiều dài, S: tiết diện)."
+      ]
     },
     {
       "type": "figure",
@@ -27,17 +37,22 @@
       "caption": "Đặc tuyến vôn–ampe: điện trở thuần là đường thẳng đi qua gốc (hệ số góc 1/R); dây tóc bóng đèn là đường cong vì R tăng theo nhiệt độ"
     },
     {
-      "type": "text",
-      "content": "Điện trở của kim loại tăng theo nhiệt độ: R = R₀[1 + α(t − t₀)] (α: hệ số nhiệt điện trở). Điện trở suất phụ thuộc vật liệu (bạc, đồng, nhôm nhỏ; nicrom lớn). Điện trở của nhiệt điện trở (thermistor) thay đổi mạnh theo nhiệt độ; quang điện trở thay đổi theo ánh sáng."
+      "type": "card",
+      "title": "Điện trở của kim loại tăng theo nhiệt độ",
+      "points": [
+        "R = R₀[1 + α(t − t₀)] (α: hệ số nhiệt điện trở).",
+        "Điện trở suất phụ thuộc vật liệu (bạc, đồng, nhôm nhỏ; nicrom lớn).",
+        "Điện trở của nhiệt điện trở (thermistor) thay đổi mạnh theo nhiệt độ; quang điện trở thay đổi theo ánh sáng."
+      ],
+      "n": 2,
+      "formulas": [
+        "Nối tiếp: R = R₁ + R₂ + …;  I = I₁ = I₂;  U = U₁ + U₂.   Song song: 1/R = 1/R₁ + 1/R₂ + …;  U = U₁ = U₂;  I = I₁ + I₂."
+      ]
     },
     {
       "type": "figure",
       "figure": "figures/l11-b23-ghep-dien-tro.svg",
       "caption": "Ghép điện trở: nối tiếp (cùng cường độ I, điện trở tăng) và song song (cùng hiệu điện thế U, điện trở giảm)"
-    },
-    {
-      "type": "formula",
-      "content": "Nối tiếp: R = R₁ + R₂ + …;  I = I₁ = I₂;  U = U₁ + U₂.   Song song: 1/R = 1/R₁ + 1/R₂ + …;  U = U₁ = U₂;  I = I₁ + I₂."
     },
     {
       "type": "method",

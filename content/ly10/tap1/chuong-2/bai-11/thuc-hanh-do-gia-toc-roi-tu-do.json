@@ -14,12 +14,24 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Cơ sở lí thuyết: vật rơi tự do từ trạng thái nghỉ đi được quãng đường h trong thời gian t thì h = ½gt², suy ra g = 2h/t². Đo h bằng thước, đo t bằng đồng hồ đo thời gian hiện số kết nối với cổng quang điện."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Cơ sở lí thuyết: vật rơi tự do từ trạng thái nghỉ đi được quãng đường h trong thời gian t thì h = ½gt², suy ra g = 2h/t²."
     },
     {
-      "type": "text",
-      "content": "Dụng cụ: giá đỡ thẳng đứng có thước, nam châm điện giữ viên bi thép, cổng quang điện, đồng hồ đo thời gian hiện số (chế độ A ↔ B hoặc nam châm → cổng quang), công tắc, dây nối."
+      "type": "card",
+      "title": "Cơ sở lí thuyết",
+      "points": [
+        "Vật rơi tự do từ trạng thái nghỉ đi được quãng đường h trong thời gian t thì h = ½gt², suy ra g = 2h/t².",
+        "Đo h bằng thước, đo t bằng đồng hồ đo thời gian hiện số kết nối với cổng quang điện."
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Dụng cụ",
+      "text": "Giá đỡ thẳng đứng có thước, nam châm điện giữ viên bi thép, cổng quang điện, đồng hồ đo thời gian hiện số (chế độ A ↔ B hoặc nam châm → cổng quang), công tắc, dây nối.",
+      "n": 2
     },
     {
       "type": "figure",
@@ -27,16 +39,30 @@
       "caption": "Bố trí thí nghiệm đo gia tốc rơi tự do"
     },
     {
-      "type": "text",
-      "content": "Tiến hành: điều chỉnh giá thẳng đứng bằng dây dọi; đặt cổng quang cách vị trí bi một khoảng h; ngắt điện nam châm để bi rơi, đồng hồ bắt đầu đếm, bi qua cổng thì dừng; ghi t. Lặp lại ít nhất 3 lần với mỗi h; đo với vài giá trị h khác nhau."
+      "type": "card",
+      "title": "Tiến hành",
+      "points": [
+        "Điều chỉnh giá thẳng đứng bằng dây dọi;",
+        "Đặt cổng quang cách vị trí bi một khoảng h; ngắt điện nam châm để bi rơi, đồng hồ bắt đầu đếm, bi qua cổng thì dừng; ghi t.",
+        "Lặp lại ít nhất 3 lần với mỗi h;",
+        "Đo với vài giá trị h khác nhau."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Xử lí: với mỗi h tính t̄, ḡ = 2h/t̄², sai số δg = δh + 2δt. Có thể vẽ đồ thị h theo t²: đồ thị là đường thẳng qua gốc, độ dốc bằng g/2."
+      "type": "card",
+      "title": "Xử lí",
+      "points": [
+        "Với mỗi h tính t̄, ḡ = 2h/t̄², sai số δg = δh + 2δt.",
+        "Có thể vẽ đồ thị h theo t²: đồ thị là đường thẳng qua gốc, độ dốc bằng g/2."
+      ],
+      "n": 4
     },
     {
-      "type": "text",
-      "content": "Nguyên nhân sai số: giá không thẳng đứng, bi không rơi từ nghỉ (còn vận tốc đầu do nam châm nhả chậm), đo h không chính xác (từ tâm bi đến tia cổng quang), lực cản không khí."
+      "type": "card",
+      "title": "Nguyên nhân sai số",
+      "text": "Giá không thẳng đứng, bi không rơi từ nghỉ (còn vận tốc đầu do nam châm nhả chậm), đo h không chính xác (từ tâm bi đến tia cổng quang), lực cản không khí.",
+      "n": 5
     },
     {
       "type": "method",

@@ -14,16 +14,38 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Tỉ lệ số mol các chất trong phản ứng bằng tỉ lệ hệ số trong phương trình hoá học. Ví dụ Fe + 2HCl → FeCl₂ + H₂: 1 mol Fe phản ứng tạo 1 mol H₂."
     },
     {
-      "type": "text",
-      "content": "Các bước tính theo phương trình hoá học: (1) viết và cân bằng phương trình; (2) đổi dữ kiện (khối lượng, thể tích khí) ra số mol; (3) dựa vào tỉ lệ hệ số tìm số mol chất cần tính; (4) đổi số mol ra khối lượng (m = n·M) hoặc thể tích khí (V = 24,79·n)."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Tỉ lệ số mol các chất trong phản ứng bằng tỉ lệ hệ số trong phương trình hoá học.",
+        "Ví dụ Fe + 2HCl → FeCl₂ + H₂: 1 mol Fe phản ứng tạo 1 mol H₂."
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Ví dụ: Zn + 2HCl → ZnCl₂ + H₂. Từ 0,65 g Zn: n(Zn) = 0,65 / 65 = 0,01 mol, tạo 0,01 mol ZnCl₂, khối lượng ZnCl₂ = 0,01 × 136 = 1,36 g."
+      "type": "card",
+      "title": "Các bước tính theo phương trình hoá học",
+      "points": [
+        "Viết và cân bằng phương trình",
+        "Đổi dữ kiện (khối lượng, thể tích khí) ra số mol",
+        "Dựa vào tỉ lệ hệ số tìm số mol chất cần tính",
+        "Đổi số mol ra khối lượng (m = n·M) hoặc thể tích khí (V = 24,79·n)."
+      ],
+      "n": 2
+    },
+    {
+      "type": "card",
+      "title": "Ví dụ",
+      "points": [
+        "Zn + 2HCl → ZnCl₂ + H₂.",
+        "Từ 0,65 g Zn: n(Zn) = 0,65 / 65 = 0,01 mol, tạo 0,01 mol ZnCl₂, khối lượng ZnCl₂ = 0,01 × 136 = 1,36 g."
+      ],
+      "n": 3
     },
     {
       "type": "figure",
@@ -31,12 +53,17 @@
       "caption": "Các bước tính theo phương trình hoá học."
     },
     {
-      "type": "text",
-      "content": "Hiệu suất phản ứng cho biết mức độ phản ứng xảy ra: H = (lượng sản phẩm thực tế / lượng sản phẩm theo lí thuyết) · 100%. Có thể tính theo khối lượng hoặc số mol sản phẩm. Khi H < 100%, lượng sản phẩm thực tế nhỏ hơn lượng tính theo phương trình."
-    },
-    {
-      "type": "formula",
-      "content": "H = (m thực tế / m lí thuyết) · 100%"
+      "type": "card",
+      "title": "Hiệu suất phản ứng cho biết mức độ phản ứng xảy ra",
+      "points": [
+        "H = (lượng sản phẩm thực tế / lượng sản phẩm theo lí thuyết) · 100%.",
+        "Có thể tính theo khối lượng hoặc số mol sản phẩm.",
+        "Khi H < 100%, lượng sản phẩm thực tế nhỏ hơn lượng tính theo phương trình."
+      ],
+      "n": 4,
+      "formulas": [
+        "H = (m thực tế / m lí thuyết) · 100%"
+      ]
     },
     {
       "type": "method",

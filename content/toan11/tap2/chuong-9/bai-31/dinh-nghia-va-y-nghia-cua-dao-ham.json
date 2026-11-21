@@ -14,29 +14,39 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Cho hàm số y = f(x) xác định trên khoảng (a; b) và x₀ ∈ (a; b). Giới hạn hữu hạn (nếu có) của f(x) − f(x₀) trên x − x₀ khi x → x₀ gọi là đạo hàm của f tại x₀, kí hiệu f′(x₀) hay y′(x₀)."
     },
     {
-      "type": "formula",
-      "content": "f′(x₀) = lim_{x→x₀} [f(x) − f(x₀)]/(x − x₀).   Đặt Δx = x − x₀: f′(x₀) = lim_{Δx→0} [f(x₀ + Δx) − f(x₀)]/Δx."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Cho hàm số y = f(x) xác định trên khoảng (a; b) và x₀ ∈ (a; b).",
+        "Giới hạn hữu hạn (nếu có) của f(x) − f(x₀) trên x − x₀ khi x → x₀ gọi là đạo hàm của f tại x₀, kí hiệu f′(x₀) hay y′(x₀)."
+      ],
+      "n": 1,
+      "formulas": [
+        "f′(x₀) = lim_{x→x₀} [f(x) − f(x₀)]/(x − x₀).   Đặt Δx = x − x₀: f′(x₀) = lim_{Δx→0} [f(x₀ + Δx) − f(x₀)]/Δx."
+      ]
     },
     {
-      "type": "text",
-      "content": "Hàm số có đạo hàm tại x₀ thì liên tục tại x₀ (ngược lại không đúng, ví dụ y = |x| tại 0). Hàm có đạo hàm tại mọi điểm của khoảng (a; b) gọi là có đạo hàm trên (a; b); khi đó hàm f′(x) gọi là đạo hàm của f."
+      "type": "card",
+      "title": "Hàm số có đạo hàm tại x₀…",
+      "points": [
+        "Hàm số có đạo hàm tại x₀ thì liên tục tại x₀ (ngược lại không đúng, ví dụ y = |x| tại 0).",
+        "Hàm có đạo hàm tại mọi điểm của khoảng (a; b) gọi là có đạo hàm trên (a; b); khi đó hàm f′(x) gọi là đạo hàm của f."
+      ],
+      "n": 2,
+      "formulas": [
+        "Ý nghĩa hình học: f′(x₀) là hệ số góc của tiếp tuyến tại M(x₀; f(x₀)). Phương trình tiếp tuyến: y = f′(x₀)(x − x₀) + f(x₀).",
+        "Ý nghĩa vật lí: vận tốc tức thời của chuyển động s = s(t) tại t₀ là v(t₀) = s′(t₀). Cường độ dòng điện tức thời I(t₀) = Q′(t₀). Đạo hàm đo tốc độ biến thiên tức thời của đại lượng."
+      ]
     },
     {
       "type": "figure",
       "figure": "figures/t11-b31-tiep-tuyen.svg",
       "caption": "Đạo hàm f′(x₀) là hệ số góc của tiếp tuyến của đồ thị tại M(x₀; f(x₀)). Với y = x² tại x₀ = 1: tiếp tuyến y = 2x − 1"
-    },
-    {
-      "type": "formula",
-      "content": "Ý nghĩa hình học: f′(x₀) là hệ số góc của tiếp tuyến tại M(x₀; f(x₀)). Phương trình tiếp tuyến: y = f′(x₀)(x − x₀) + f(x₀)."
-    },
-    {
-      "type": "formula",
-      "content": "Ý nghĩa vật lí: vận tốc tức thời của chuyển động s = s(t) tại t₀ là v(t₀) = s′(t₀). Cường độ dòng điện tức thời I(t₀) = Q′(t₀). Đạo hàm đo tốc độ biến thiên tức thời của đại lượng."
     },
     {
       "type": "method",

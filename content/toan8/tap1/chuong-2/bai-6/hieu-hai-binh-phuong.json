@@ -10,24 +10,32 @@
   "bookPage": 30,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Hằng đẳng thức là đẳng thức đúng với mọi giá trị của các biến. Ta có ba hằng đẳng thức đầu tiên:"
     },
     {
-      "type": "formula",
-      "content": "A² − B² = (A − B)(A + B)   (hiệu hai bình phương)"
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Hằng đẳng thức là đẳng thức đúng với mọi giá trị của các biến.",
+        "Ta có ba hằng đẳng thức đầu tiên:"
+      ],
+      "n": 1,
+      "formulas": [
+        "A² − B² = (A − B)(A + B)   (hiệu hai bình phương)",
+        "(A + B)² = A² + 2AB + B²   (bình phương của một tổng)",
+        "(A − B)² = A² − 2AB + B²   (bình phương của một hiệu)"
+      ]
     },
     {
-      "type": "formula",
-      "content": "(A + B)² = A² + 2AB + B²   (bình phương của một tổng)"
-    },
-    {
-      "type": "formula",
-      "content": "(A − B)² = A² − 2AB + B²   (bình phương của một hiệu)"
-    },
-    {
-      "type": "text",
-      "content": "Bình phương của một tổng bằng bình phương số thứ nhất, cộng hai lần tích số thứ nhất với số thứ hai, cộng bình phương số thứ hai. Dùng các hằng đẳng thức này có thể tính nhẩm, ví dụ 51² = (50 + 1)² và 49² = (50 − 1)²."
+      "type": "card",
+      "title": "Bình phương của một tổng bằng bình…",
+      "points": [
+        "Bình phương của một tổng bằng bình phương số thứ nhất, cộng hai lần tích số thứ nhất với số thứ hai, cộng bình phương số thứ hai.",
+        "Dùng các hằng đẳng thức này có thể tính nhẩm, ví dụ 51² = (50 + 1)² và 49² = (50 − 1)²."
+      ],
+      "n": 2
     },
     {
       "type": "figure",

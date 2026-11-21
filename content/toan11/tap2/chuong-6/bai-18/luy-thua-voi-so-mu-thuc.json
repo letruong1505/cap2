@@ -14,16 +14,24 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Luỹ thừa với số mũ nguyên: aⁿ = a·a·…·a (n thừa số) với n nguyên dương; a⁰ = 1 (a ≠ 0); a⁻ⁿ = 1/aⁿ (a ≠ 0). Căn bậc n của a (n ≥ 2): số b sao cho bⁿ = a. Khi n lẻ, mọi số thực a có đúng một căn bậc n, kí hiệu ⁿ√a. Khi n chẵn, số a > 0 có hai căn đối nhau, căn dương kí hiệu ⁿ√a; a < 0 không có căn bậc chẵn."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Luỹ thừa với số mũ nguyên: aⁿ = a·a·…·a (n thừa số) với n nguyên dương; a⁰ = 1 (a ≠ 0); a⁻ⁿ = 1/aⁿ (a ≠ 0)."
     },
     {
-      "type": "formula",
-      "content": "Luỹ thừa với số mũ hữu tỉ (a > 0): a^{m/n} = ⁿ√(aᵐ), trong đó m nguyên, n nguyên dương. Luỹ thừa với số mũ thực: a^α = lim a^{rₙ} với rₙ → α, rₙ hữu tỉ."
-    },
-    {
-      "type": "formula",
-      "content": "Tính chất (a, b > 0; α, β ∈ ℝ): a^α·a^β = a^{α+β};  a^α/a^β = a^{α−β};  (a^α)^β = a^{αβ};  (ab)^α = a^α·b^α;  (a/b)^α = a^α/b^α."
+      "type": "card",
+      "title": "Luỹ thừa với số mũ nguyên",
+      "points": [
+        "Aⁿ = a·a·…·a (n thừa số) với n nguyên dương; a⁰ = 1 (a ≠ 0); a⁻ⁿ = 1/aⁿ (a ≠ 0).",
+        "Căn bậc n của a (n ≥ 2): số b sao cho bⁿ = a.",
+        "Khi n lẻ, mọi số thực a có đúng một căn bậc n, kí hiệu ⁿ√a.",
+        "Khi n chẵn, số a > 0 có hai căn đối nhau, căn dương kí hiệu ⁿ√a; a < 0 không có căn bậc chẵn."
+      ],
+      "n": 1,
+      "formulas": [
+        "Luỹ thừa với số mũ hữu tỉ (a > 0): a^{m/n} = ⁿ√(aᵐ), trong đó m nguyên, n nguyên dương. Luỹ thừa với số mũ thực: a^α = lim a^{rₙ} với rₙ → α, rₙ hữu tỉ.",
+        "Tính chất (a, b > 0; α, β ∈ ℝ): a^α·a^β = a^{α+β};  a^α/a^β = a^{α−β};  (a^α)^β = a^{αβ};  (ab)^α = a^α·b^α;  (a/b)^α = a^α/b^α."
+      ]
     },
     {
       "type": "figure",
@@ -31,8 +39,13 @@
       "caption": "Đồ thị y = xᵅ trên x > 0 với α = 2 (xanh), α = 1/2 (đỏ), α = −1 (xanh lá): đều đi qua điểm (1; 1)"
     },
     {
-      "type": "text",
-      "content": "Nếu a > 1 thì a^α > a^β ⇔ α > β; nếu 0 < a < 1 thì a^α > a^β ⇔ α < β. Nếu α > 0: 0 < a < b ⇒ a^α < b^α."
+      "type": "card",
+      "title": "Nếu a > 1 thì a^α >…",
+      "points": [
+        "Nếu a > 1 thì a^α > a^β ⇔ α > β; nếu 0 < a < 1 thì a^α > a^β ⇔ α < β.",
+        "Nếu α > 0: 0 < a < b ⇒ a^α < b^α."
+      ],
+      "n": 2
     },
     {
       "type": "method",

@@ -14,12 +14,19 @@
   ],
   "theory": [
     {
-      "type": "formula",
-      "content": "Thể tích khối lăng trụ (và khối hộp): V = S_đáy·h.   Khối hộp chữ nhật a × b × c: V = abc.   Khối lập phương cạnh a: V = a³."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Tỉ số thể tích: cho hình chóp S.ABC, các điểm A′ ∈ SA, B′ ∈ SB, C′ ∈ SC. Khi đó V_{S.A′B′C′}/V_{S.ABC} = (SA′/SA)·(SB′/SB)·(SC′/SC)."
     },
     {
-      "type": "formula",
-      "content": "Thể tích khối chóp: V = (1/3)·S_đáy·h, với h là chiều cao (khoảng cách từ đỉnh đến mặt phẳng đáy)."
+      "type": "card",
+      "n": 1,
+      "title": "Công thức",
+      "formulas": [
+        "Thể tích khối lăng trụ (và khối hộp): V = S_đáy·h.   Khối hộp chữ nhật a × b × c: V = abc.   Khối lập phương cạnh a: V = a³.",
+        "Thể tích khối chóp: V = (1/3)·S_đáy·h, với h là chiều cao (khoảng cách từ đỉnh đến mặt phẳng đáy).",
+        "Khối chóp cụt đều: V = (h/3)·(S₁ + S₂ + √(S₁S₂)), với S₁, S₂ là diện tích hai đáy, h là chiều cao."
+      ]
     },
     {
       "type": "figure",
@@ -27,12 +34,14 @@
       "caption": "Hình chóp tứ giác đều S.ABCD: SO ⟂ (ABCD), SO = h là chiều cao; V = (1/3)·S_ABCD·h"
     },
     {
-      "type": "formula",
-      "content": "Khối chóp cụt đều: V = (h/3)·(S₁ + S₂ + √(S₁S₂)), với S₁, S₂ là diện tích hai đáy, h là chiều cao."
-    },
-    {
-      "type": "text",
-      "content": "Tỉ số thể tích: cho hình chóp S.ABC, các điểm A′ ∈ SA, B′ ∈ SB, C′ ∈ SC. Khi đó V_{S.A′B′C′}/V_{S.ABC} = (SA′/SA)·(SB′/SB)·(SC′/SC). Tứ diện vuông O.ABC (OA, OB, OC đôi một vuông góc): V = (1/6)·OA·OB·OC."
+      "type": "card",
+      "title": "Tỉ số thể tích",
+      "points": [
+        "Cho hình chóp S.ABC, các điểm A′ ∈ SA, B′ ∈ SB, C′ ∈ SC.",
+        "Khi đó V_{S.A′B′C′}/V_{S.ABC} = (SA′/SA)·(SB′/SB)·(SC′/SC).",
+        "Tứ diện vuông O.ABC (OA, OB, OC đôi một vuông góc): V = (1/6)·OA·OB·OC."
+      ],
+      "n": 2
     },
     {
       "type": "method",

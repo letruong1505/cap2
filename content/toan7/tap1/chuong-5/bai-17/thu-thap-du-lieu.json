@@ -10,20 +10,39 @@
   "bookPage": 88,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Thu thập dữ liệu là lập kế hoạch và tiến hành khảo sát để có số liệu về đối tượng quan tâm, bằng phỏng vấn hoặc bảng hỏi."
     },
     {
-      "type": "text",
-      "content": "Tính đại diện: dữ liệu thu được phải phản ánh đúng đối tượng khảo sát. Nếu kết luận áp dụng cho cả tập thể thì không thể chỉ hỏi một nhóm nhỏ hoặc một nhóm có đặc điểm riêng; cần chọn mẫu ngẫu nhiên đủ rộng."
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Thu thập dữ liệu là lập kế hoạch và tiến hành khảo sát để có số liệu về đối tượng quan tâm, bằng phỏng vấn hoặc bảng hỏi.",
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Dữ liệu là số (định lượng) như cân nặng, số giờ. Dữ liệu không là số (định tính) gồm loại không sắp thứ tự được (tên tỉnh) và loại sắp thứ tự được (mức đánh giá: Rất tốt, Tốt, Trung bình, Kém)."
+      "type": "card",
+      "title": "Tính đại diện",
+      "points": [
+        "Dữ liệu thu được phải phản ánh đúng đối tượng khảo sát.",
+        "Nếu kết luận áp dụng cho cả tập thể thì không thể chỉ hỏi một nhóm nhỏ hoặc một nhóm có đặc điểm riêng; cần chọn mẫu ngẫu nhiên đủ rộng."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Lỗi thường gặp: cho rằng dữ liệu được mã số (ví dụ số hiệu tuyến xe buýt) luôn là dữ liệu số; mã số chỉ là nhãn. Kết luận cho cả trường khi chỉ khảo sát một nhóm nhỏ cũng là lỗi."
+      "type": "card",
+      "title": "Dữ liệu là số (định lượng) như cân nặng, số giờ",
+      "text": "Dữ liệu không là số (định tính) gồm loại không sắp thứ tự được (tên tỉnh) và loại sắp thứ tự được (mức đánh giá: Rất tốt, Tốt, Trung bình, Kém).",
+      "n": 3
+    },
+    {
+      "type": "card",
+      "title": "Lỗi thường gặp",
+      "points": [
+        "Cho rằng dữ liệu được mã số (ví dụ số hiệu tuyến xe buýt) luôn là dữ liệu số; mã số chỉ là nhãn.",
+        "Kết luận cho cả trường khi chỉ khảo sát một nhóm nhỏ cũng là lỗi."
+      ],
+      "n": 4
     },
     {
       "type": "figure",

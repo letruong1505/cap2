@@ -14,12 +14,33 @@
   ],
   "theory": [
     {
-      "type": "text",
-      "content": "Mỗi hàm số u xác định trên tập ℕ* các số nguyên dương gọi là một dãy số vô hạn (dãy số). Viết u = u(n), n ∈ ℕ*; u(n) kí hiệu là uₙ và gọi là số hạng thứ n (số hạng tổng quát). Dãy số hữu hạn có số hạng cuối. Dãy số được viết dưới dạng khai triển u₁, u₂, …, uₙ, …"
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Mỗi hàm số u xác định trên tập ℕ* các số nguyên dương gọi là một dãy số vô hạn (dãy số). Viết u = u(n), n ∈ ℕ*; u(n) kí hiệu là uₙ và gọi là số hạng thứ n (số hạng tổng quát)."
     },
     {
-      "type": "text",
-      "content": "Có ba cách cho dãy số: (1) bằng công thức của số hạng tổng quát; (2) bằng hệ thức truy hồi: cho số hạng đầu và công thức tính uₙ₊₁ theo uₙ (hoặc nhiều số hạng liền trước); (3) bằng cách mô tả."
+      "type": "card",
+      "title": "Khái niệm",
+      "points": [
+        "Mỗi hàm số u xác định trên tập ℕ* các số nguyên dương gọi là một dãy số vô hạn (dãy số).",
+        "Viết u = u(n), n ∈ ℕ*; u(n) kí hiệu là uₙ và gọi là số hạng thứ n (số hạng tổng quát).",
+        "Dãy số hữu hạn có số hạng cuối.",
+        "Dãy số được viết dưới dạng khai triển u₁, u₂, …, uₙ, …"
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Có ba cách cho dãy số",
+      "points": [
+        "Bằng công thức của số hạng tổng quát",
+        "Bằng hệ thức truy hồi: cho số hạng đầu và công thức tính uₙ₊₁ theo uₙ (hoặc nhiều số hạng liền trước)",
+        "Bằng cách mô tả."
+      ],
+      "n": 2,
+      "formulas": [
+        "Dãy (uₙ) tăng: uₙ₊₁ > uₙ với mọi n ∈ ℕ*.   Dãy giảm: uₙ₊₁ < uₙ với mọi n ∈ ℕ*.   Xét hiệu uₙ₊₁ − uₙ (hoặc tỉ số uₙ₊₁/uₙ khi uₙ > 0)."
+      ]
     },
     {
       "type": "figure",
@@ -27,12 +48,10 @@
       "caption": "Biểu diễn dãy số uₙ = 1/n bằng các điểm (n; uₙ): các số hạng giảm dần và bị chặn trong khoảng (0; 1]"
     },
     {
-      "type": "formula",
-      "content": "Dãy (uₙ) tăng: uₙ₊₁ > uₙ với mọi n ∈ ℕ*.   Dãy giảm: uₙ₊₁ < uₙ với mọi n ∈ ℕ*.   Xét hiệu uₙ₊₁ − uₙ (hoặc tỉ số uₙ₊₁/uₙ khi uₙ > 0)."
-    },
-    {
-      "type": "text",
-      "content": "Dãy số (uₙ) bị chặn trên nếu tồn tại số M sao cho uₙ ≤ M với mọi n; bị chặn dưới nếu tồn tại m sao cho uₙ ≥ m với mọi n; bị chặn nếu vừa bị chặn trên vừa bị chặn dưới, tức m ≤ uₙ ≤ M."
+      "type": "card",
+      "title": "Dãy số (uₙ) bị chặn trên nếu…",
+      "text": "Dãy số (uₙ) bị chặn trên nếu tồn tại số M sao cho uₙ ≤ M với mọi n; bị chặn dưới nếu tồn tại m sao cho uₙ ≥ m với mọi n; bị chặn nếu vừa bị chặn trên vừa bị chặn dưới, tức m ≤ uₙ ≤ M.",
+      "n": 3
     },
     {
       "type": "method",

@@ -13,12 +13,18 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Trong tam giác vuông, với góc nhọn α:"
     },
     {
-      "type": "formula",
-      "content": "sin α = đối/huyền;  cos α = kề/huyền;  tan α = đối/kề;  cot α = kề/đối"
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Trong tam giác vuông, với góc nhọn α:",
+      "n": 1,
+      "formulas": [
+        "sin α = đối/huyền;  cos α = kề/huyền;  tan α = đối/kề;  cot α = kề/đối"
+      ]
     },
     {
       "type": "figure",
@@ -26,8 +32,10 @@
       "caption": "Cạnh đối, cạnh kề, cạnh huyền của góc nhọn α."
     },
     {
-      "type": "text",
-      "content": "Giá trị đặc biệt: sin 30° = 1/2, cos 30° = √3/2, tan 45° = 1, sin 45° = cos 45° = √2/2, cos 60° = 1/2, tan 60° = √3."
+      "type": "card",
+      "title": "Giá trị đặc biệt",
+      "text": "Sin 30° = 1/2, cos 30° = √3/2, tan 45° = 1, sin 45° = cos 45° = √2/2, cos 60° = 1/2, tan 60° = √3.",
+      "n": 2
     },
     {
       "type": "figure",
@@ -35,8 +43,10 @@
       "caption": "Tam giác vuông với các góc đặc biệt 30°, 60° và 45°."
     },
     {
-      "type": "text",
-      "content": "Nếu α + β = 90° thì sin α = cos β, tan α = cot β. Với góc nhọn α: 0 < sin α < 1, 0 < cos α < 1."
+      "type": "card",
+      "title": "Nếu α + β = 90° thì sin α = cos β, tan α = cot β",
+      "text": "Với góc nhọn α: 0 < sin α < 1, 0 < cos α < 1.",
+      "n": 3
     }
   ],
   "examples": [

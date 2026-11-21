@@ -13,16 +13,30 @@
   ],
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Phép nhân: a × b = c (a, b là thừa số, c là tích). Tính chất: giao hoán a·b = b·a; kết hợp (a·b)·c = a·(b·c); nhân với 1: a·1 = a; phân phối đối với phép cộng và phép trừ."
     },
     {
-      "type": "formula",
-      "content": "a·(b + c) = a·b + a·c;   a·(b − c) = a·b − a·c"
+      "type": "card",
+      "title": "Phép nhân",
+      "points": [
+        "A × b = c (a, b là thừa số, c là tích).",
+        "Tính chất: giao hoán a·b = b·a; kết hợp (a·b)·c = a·(b·c); nhân với 1: a·1 = a; phân phối đối với phép cộng và phép trừ."
+      ],
+      "n": 1,
+      "formulas": [
+        "a·(b + c) = a·b + a·c;   a·(b − c) = a·b − a·c"
+      ]
     },
     {
-      "type": "text",
-      "content": "Phép chia hết: a = b·q (b ≠ 0), q là thương. Phép chia có dư: a = b·q + r với 0 < r < b; r là số dư, luôn nhỏ hơn số chia."
+      "type": "card",
+      "title": "Phép chia hết",
+      "points": [
+        "A = b·q (b ≠ 0), q là thương.",
+        "Phép chia có dư: a = b·q + r với 0 < r < b; r là số dư, luôn nhỏ hơn số chia."
+      ],
+      "n": 2
     },
     {
       "type": "figure",

@@ -10,20 +10,27 @@
   "bookPage": 19,
   "theory": [
     {
-      "type": "text",
+      "type": "summary",
+      "label": "Cần nhớ",
       "content": "Muốn nhân một đơn thức với một đa thức, ta nhân đơn thức với từng hạng tử của đa thức rồi cộng các tích với nhau."
     },
     {
-      "type": "formula",
-      "content": "A(B + C) = AB + AC"
+      "type": "card",
+      "title": "Khái niệm",
+      "text": "Muốn nhân một đơn thức với một đa thức, ta nhân đơn thức với từng hạng tử của đa thức rồi cộng các tích với nhau.",
+      "n": 1,
+      "formulas": [
+        "A(B + C) = AB + AC"
+      ]
     },
     {
-      "type": "text",
-      "content": "Muốn nhân một đa thức với một đa thức, ta nhân mỗi hạng tử của đa thức này với từng hạng tử của đa thức kia rồi cộng các tích với nhau."
-    },
-    {
-      "type": "formula",
-      "content": "(A + B)(C + D) = AC + AD + BC + BD"
+      "type": "card",
+      "title": "Muốn nhân một đa thức với một…",
+      "text": "Muốn nhân một đa thức với một đa thức, ta nhân mỗi hạng tử của đa thức này với từng hạng tử của đa thức kia rồi cộng các tích với nhau.",
+      "n": 2,
+      "formulas": [
+        "(A + B)(C + D) = AC + AD + BC + BD"
+      ]
     }
   ],
   "examples": [
