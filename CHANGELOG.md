@@ -1,9 +1,10 @@
 ## Bản mới
+- Mục "Tư vấn – Định hướng" (trước là "Chọn ngành – Hướng nghiệp"): thêm thông tin liên hệ của Nam Linh (tên công ty, mã số thuế, địa chỉ, điện thoại)
+
+## Các bản trước
 - Android: khi phải tải apk qua trình duyệt, app ghi rõ lý do để dễ khắc phục
 - Thời khóa biểu: nhập các môn học mỗi ngày, cập nhật mỗi tuần; tối hôm trước app nhắc ôn bài và làm bài các môn của ngày mai (Android có thêm thông báo điện thoại)
 - Android: bản này cần cài apk mới để có thông báo nhắc học bài
-
-## Các bản trước
 - Giao diện: ô "Thời hạn bản quyền & khóa học" thu gọn, bấm để xem danh sách khóa học
 - Android: bản này yêu cầu cài apk mới để có đề thi thử
 - Thi thử: đề thi thử tốt nghiệp THPT theo cấu trúc mới (90 phút, 22 câu, thang 10), thử nghiệm với Toán 12

@@ -1041,3 +1041,6 @@ button.tt-chip { cursor: pointer; }
 .tt-other { flex: 1 1 150px; min-width: 120px; padding: 5px 10px; border: 1px dashed var(--rule); border-radius: 999px; font: inherit; font-size: 13px; }
 .tt-remind-row { margin: 12px 0 8px; font-size: 14px; }
 @media (max-width: 600px) { .tt-day { flex-direction: column; gap: 2px; } .tt-day-name { flex: none; padding-top: 0; } }
+
+.contact-list { margin: 8px 0 0; padding: 0; list-style: none; font-size: 13.5px; line-height: 1.5; font-weight: 500; color: #334155; }
+.contact-list li { margin: 2px 0; }
