@@ -112,7 +112,7 @@
     if (state.tab === 'chon') return panelChon();
     if (state.tab === 'mon') return panelMon();
     if (state.tab === 'bai') return placeholder('Bài học theo môn đang được biên soạn. Mỗi bài sẽ có tóm tắt kiến thức, ví dụ mẫu và bài tập ngắn.');
-    if (state.tab === 'de') return placeholder('Đề luyện đang được biên soạn: đề theo môn và đề tổng hợp theo tổ hợp, có chế độ làm bài tính giờ.');
+    if (state.tab === 'de') return placeholder('Đề luyện đang được biên soạn: Đề theo môn và đề tổng hợp theo tổ hợp, có chế độ làm bài tính giờ.');
     return placeholder('Báo cáo điểm luyện đề theo thời gian và theo môn đang được hoàn thiện.');
   }
 

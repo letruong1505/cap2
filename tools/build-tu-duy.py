@@ -185,12 +185,19 @@ c8 = 'du_lieu = [("Ăn uống", 450000), ("Ăn uống", 380000), ("Học tập",
 
 import os, sys, re
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import tuduy_k811, tuduy_py, tuduy_py2
+import tuduy_k811, tuduy_py, tuduy_py2, tuduy_py3, tuduy_py4, tuduy_py5, tuduy_py6, tuduy_py7, tuduy_py8, tuduy_py9
 K1.update(tuduy_k811.build())
 P.update(tuduy_py.build())
 P2 = tuduy_py2.build()
 pre = P2.pop('_pre_caidat')
 P.update(P2)
+P.update(tuduy_py3.build())
+P.update(tuduy_py4.build())
+P.update(tuduy_py5.build())
+P.update(tuduy_py6.build())
+P.update(tuduy_py7.build())
+P.update(tuduy_py8.build())
+P.update(tuduy_py9.build())
 P['caidat']['html'] = pre + P['caidat']['html']
 
 # ---- Mục lục. Mỗi mục: (khóa bài, tên ngắn). Bài chưa viết hiển thị "Sắp ra mắt" cho tới khi có nội dung.
@@ -198,7 +205,7 @@ PY_TOC = [
   ('Mở đầu', [('tongquan', 'Giới thiệu khóa học và vì sao chọn Python')]),
   ('Chương 1 · Bắt đầu với Python', [('caidat', 'Python là gì và cài đặt công cụ'), ('c1b2', 'Chương trình đầu tiên: Hello World và cấu trúc chương trình'), ('c1b3', 'Ghi chú và đọc thông báo lỗi'), ('c1t', None)]),
   ('Chương 2 · Biến, số và chuỗi', [('bai2', 'Biến và kiểu dữ liệu'), ('c2b2', 'Số và phép toán'), ('c2b3', 'Chuỗi: cắt, ghép, tìm'), ('bai1', 'Nhập, xuất và từ bài toán đến thuật toán'), ('c2t', None)]),
-  ('Chương 3 · Cấu trúc rẽ nhánh', [('c3b1', 'Biểu thức lô-gíc (Boolean)'), ('bai3', 'Điều kiện if – elif – else và kiểm thử biên'), ('c3b3', 'Kiểm thử giá trị biên'), ('c3t', None)]),
+  ('Chương 3 · Cấu trúc rẽ nhánh', [('c3b1', 'Biểu thức lô-gíc (Boolean)'), ('bai3', 'Điều kiện if – elif – else'), ('c3b3', 'Kiểm thử giá trị biên'), ('c3t', None)]),
   ('Chương 4 · Cấu trúc lặp', [('c4b1', 'Vòng lặp while'), ('bai4', 'Vòng lặp for và lỗi lệch một'), ('c4b3', 'break, continue và vòng lặp lồng nhau'), ('bai7', 'Gỡ lỗi và viết test'), ('c4t', None)]),
   ('Chương 5 · Cấu trúc dữ liệu', [('bai5', 'Danh sách (list) và hàm'), ('c5b2', 'Tuple và set'), ('c5b3', 'Từ điển (dict)'), ('c5b4', 'Duyệt, tìm kiếm và sắp xếp'), ('c5t', None)]),
   ('Chương 6 · Hàm', [('c6b1', 'Hàm là gì, cách xây dựng một hàm'), ('c6b2', 'Tham số, giá trị trả về, phạm vi biến'), ('c6b3', 'Chia bài toán lớn thành các hàm'), ('c6t', None)]),
@@ -237,6 +244,10 @@ TOC = {'k811': toc_for(OUT['k811'], SC_TOC, False), 'k1218': toc_for(OUT['k1218'
 for row in TOC['k811'][0]['items']:
     k = row['key']; row['label'] = 'Mở đầu' if k == 'tongquan' else 'Cài đặt' if k == 'caidat' else 'Bài ' + k[3:]
     row['title'] = PREFIX.sub('', OUT['k811'][k]['title'])
+
+from viethoa_lib import cap_html, cap_walk, CAP_COUNT
+OUT = cap_walk(OUT); TOC = cap_walk(TOC)
+print('đã viết hoa', CAP_COUNT[0], 'chỗ')
 js = '// Sinh bởi tools/build-tu-duy.py – đừng sửa tay.\nwindow.TUDUY = ' + json.dumps(OUT, ensure_ascii=False, indent=1) + ';\nwindow.TUDUY_TOC = ' + json.dumps(TOC, ensure_ascii=False, indent=1) + ';\n'
 open(os.path.join(os.path.dirname(__file__), '..', 'renderer', 'tu-duy-content.js'), 'w', encoding='utf-8').write(js)
 print('ok', {k: len(v) for k, v in OUT.items()})

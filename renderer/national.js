@@ -31,17 +31,17 @@
   ];
 
   const SOURCES = [
-    ['1', 'Nghị quyết 57-NQ/TW', 'Văn bản gốc', '22/12/2024', 'Bộ Chính trị: đột phá phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia. Toàn văn đăng trên Cổng thông tin điện tử tỉnh Hà Tĩnh (hatinh.gov.vn).'],
+    ['1', 'Nghị quyết 57-NQ/TW', 'Văn bản gốc', '22/12/2024', 'Bộ Chính trị: Đột phá phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia. Toàn văn đăng trên Cổng thông tin điện tử tỉnh Hà Tĩnh (hatinh.gov.vn).'],
     ['2', 'Nghị quyết 03/NQ-CP', 'Văn bản gốc', '09/01/2025', 'Chính phủ: Chương trình hành động thực hiện Nghị quyết 57. Theo Mekong ASEAN, VGP.'],
     ['3', 'Quyết định 21/2026/QĐ-TTg', 'Văn bản gốc (hiện hành)', '30/04/2026', 'Danh mục công nghệ chiến lược và sản phẩm công nghệ chiến lược, hiệu lực từ 01/07/2026. Theo Tạp chí Công Thương, Thị trường Tài chính Tiền tệ, Báo Đấu thầu, Mekong ASEAN.'],
-    ['4', 'Nghị quyết 71-NQ/TW', 'Văn bản gốc', '22/08/2025', 'Bộ Chính trị: đột phá phát triển giáo dục và đào tạo.'],
+    ['4', 'Nghị quyết 71-NQ/TW', 'Văn bản gốc', '22/08/2025', 'Bộ Chính trị: Đột phá phát triển giáo dục và đào tạo.'],
     ['5', 'Số liệu kinh tế số 2025 (khoảng 14,02% GDP)', 'Số liệu thống kê', '2025', 'Cục Thống kê, Bộ Tài chính, theo báo Đại biểu Nhân dân. Chỉ có một nguồn báo.'],
-    ['6', 'Bài “Đường đua kỷ nguyên số”', 'Báo chính thống', '2025', 'VnExpress: mục tiêu xếp hạng và kinh tế số đến năm 2030.'],
-    ['7', 'SIFT: bốn bước kiểm chứng thông tin', 'Phương pháp', 'CC BY 4.0', 'Mike Caulfield. Em dùng để tự kiểm tra thông tin trên mạng.'],
+    ['6', 'Bài “Đường đua kỷ nguyên số”', 'Báo chính thống', '2025', 'VnExpress: Mục tiêu xếp hạng và kinh tế số đến năm 2030.'],
+    ['7', 'SIFT: Bốn bước kiểm chứng thông tin', 'Phương pháp', 'CC BY 4.0', 'Mike Caulfield. Em dùng để tự kiểm tra thông tin trên mạng.'],
   ];
 
   const DOCS = [
-    ['22/12/2024', 'Nghị quyết 57-NQ/TW', 'Bộ Chính trị: đột phá khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia.', 'Đang thực hiện', 'ok'],
+    ['22/12/2024', 'Nghị quyết 57-NQ/TW', 'Bộ Chính trị: Đột phá khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia.', 'Đang thực hiện', 'ok'],
     ['09/01/2025', 'Nghị quyết 03/NQ-CP', 'Chương trình hành động của Chính phủ thực hiện Nghị quyết 57.', 'Đang thực hiện', 'ok'],
     ['22/08/2025', 'Nghị quyết 71-NQ/TW', 'Đột phá phát triển giáo dục và đào tạo, ứng dụng AI trong giáo dục.', 'Đang thực hiện', 'ok'],
     ['30/04/2026', 'Quyết định 21/2026/QĐ-TTg', 'Danh mục hiện hành: 10 nhóm công nghệ, 30 sản phẩm. Hiệu lực từ 01/07/2026.', 'Có hiệu lực', 'now'],
@@ -108,7 +108,7 @@
       h('section', { class: 'nat-card' },
         h('h2', {}, 'Mục tiêu đến năm 2030'),
         h('table', { class: 'nat-table' }, h('tbody', {}, GOALS.map(([a, b]) => h('tr', {}, h('th', {}, a), h('td', {}, b))))),
-        h('p', { class: 'nat-after' }, 'Tầm nhìn 2045: kinh tế số tối thiểu 50% GDP; thuộc nhóm 30 nước dẫn đầu thế giới về đổi mới sáng tạo và chuyển đổi số; ít nhất 10 doanh nghiệp công nghệ số ngang tầm tiên tiến.')),
+        h('p', { class: 'nat-after' }, 'Tầm nhìn 2045: Kinh tế số tối thiểu 50% GDP; thuộc nhóm 30 nước dẫn đầu thế giới về đổi mới sáng tạo và chuyển đổi số; ít nhất 10 doanh nghiệp công nghệ số ngang tầm tiên tiến.')),
       h('div', { class: 'nat-actions' }, h('button', { type: 'button', class: 'primary', onclick: () => goto('nhom') }, 'Xem 10 nhóm công nghệ chiến lược →')),
       srcLine('[1] Nghị quyết 57-NQ/TW · [5] Cục Thống kê, Bộ Tài chính · [6] VnExpress'));
   }
@@ -184,7 +184,7 @@
         h('thead', {}, h('tr', {}, h('th', {}, 'Giai đoạn'), h('th', {}, 'Việc làm cụ thể'), h('th', {}, 'Xong'))),
         h('tbody', {},
           line('THCS (lớp 6–9)', g.a), line('THPT (lớp 10–12)', g.b),
-          h('tr', {}, h('th', {}, 'Mục tiêu đo được cho 3 tháng tới'), h('td', {}, 'Em tự viết. Ví dụ: hoàn thành 1 dự án nhỏ, đạt 8 điểm trở lên ở môn nền tảng, đọc 3 nguồn chính thức về nhóm này.'), h('td', { class: 'nat-check' }, '☐')))));
+          h('tr', {}, h('th', {}, 'Mục tiêu đo được cho 3 tháng tới'), h('td', {}, 'Em tự viết. Ví dụ: Hoàn thành 1 dự án nhỏ, đạt 8 điểm trở lên ở môn nền tảng, đọc 3 nguồn chính thức về nhóm này.'), h('td', { class: 'nat-check' }, '☐')))));
   }
   function viewPlan() {
     const gs = state.picks.map((id) => D.groups.find((g) => g.id === id)).filter(Boolean);

@@ -32,7 +32,7 @@ window.NATIONAL_DATA = {
    ],
    "a": [
     "Làm quen Scratch hoặc Python; học Toán chắc; học khóa Gia sư AI",
-    "Tự làm một dự án nhỏ: chatbot học tập, trang web, phân tích dữ liệu điểm lớp"
+    "Tự làm một dự án nhỏ: Chatbot học tập, trang web, phân tích dữ liệu điểm lớp"
    ],
    "b": [
     "Chọn khối có Toán, Tin; thi học sinh giỏi Tin hoặc cuộc thi lập trình nếu có",
@@ -100,7 +100,7 @@ window.NATIONAL_DATA = {
    ],
    "b": [
     "Chọn khối có Toán, Lí; thực hành Arduino, mô phỏng",
-    "Dự án: xe tự hành nhỏ, hệ thống tưới thông minh"
+    "Dự án: Xe tự hành nhỏ, hệ thống tưới thông minh"
    ]
   },
   {
@@ -234,8 +234,8 @@ window.NATIONAL_DATA = {
     "Thói quen an toàn số"
    ],
    "a": [
-    "Học khóa Gia sư AI: bảo vệ dữ liệu, nhận lừa đảo; học Toán (số học, xác suất)",
-    "Tập thói quen: mật khẩu mạnh, xác thực hai lớp, báo người lớn"
+    "Học khóa Gia sư AI: Bảo vệ dữ liệu, nhận lừa đảo; học Toán (số học, xác suất)",
+    "Tập thói quen: Mật khẩu mạnh, xác thực hai lớp, báo người lớn"
    ],
    "b": [
     "Chọn khối có Toán, Tin; học nền tảng mạng và hệ điều hành",

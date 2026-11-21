@@ -43,7 +43,7 @@ test('ChatGPT Bài 11: có bộ dữ liệu mẫu cho Case 1–4 với số li�
   const w = {};
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../renderer/ai-work-chatgpt.js'), 'utf8'), { window: w });
   const h = w.AI_WORK_CHATGPT.bai11.html;
-  assert.ok(h.includes('bộ dữ liệu mẫu cho các case'));
+  assert.ok(h.toLowerCase().includes('bộ dữ liệu mẫu cho các case'));
   assert.strictEqual((h.match(/class="pdata"/g) || []).length, 4);
   // 84/90, 99/108, 10 chiếc: A, B, C
   assert.strictEqual((84 / 90 * 100).toFixed(2), '93.33'); assert.strictEqual((99 / 108 * 100).toFixed(2), '91.67');

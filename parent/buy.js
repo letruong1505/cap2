@@ -157,7 +157,7 @@
       h('ul', {},
         h('li', {}, 'Hoàn tiền trong 07 ngày kể từ khi thanh toán thành công, chỉ khi phần mềm có lỗi kỹ thuật mà Nam Linh không khắc phục được.'),
         h('li', {}, 'Không hoàn tiền khi đổi ý sau khi đã kích hoạt. Được hỗ trợ đổi thiết bị miễn phí.'),
-        h('li', {}, 'Đơn có mã đối tác: số tiền hoàn là số tiền đã trả sau khi giảm, không phải giá niêm yết.'),
+        h('li', {}, 'Đơn có mã đối tác: Số tiền hoàn là số tiền đã trả sau khi giảm, không phải giá niêm yết.'),
         h('li', {}, 'Có thể học thử các bài miễn phí trong app của con trước khi mua.')),
       h('label', { class: 'buy-agree', for: 'pbuy-refund' }, refund, h('span', {}, 'Tôi đã đọc và đồng ý chính sách hoàn tiền trên.')));
 

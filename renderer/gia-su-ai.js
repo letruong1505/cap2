@@ -51,7 +51,7 @@
       h('button', { class: 'back-link', type: 'button', onclick: () => ctx.onExit() }, '← Chọn khóa'),
       h('header', { class: 'screen-head' }, h('p', { class: 'screen-kicker' }, 'Khóa Kỹ năng'), h('h1', {}, 'Gia sư AI'),
         h('p', { class: 'screen-sub' }, own ? 'Anh/Chị đã mua khóa này. Mở từng bài bên dưới để học.'
-          : 'Học cách dùng AI như một gia sư: an toàn, biết kiểm chứng, tự tìm lỗ hổng kiến thức và xây lộ trình học riêng. Phần mở đầu, Bài 1 và Bài 2 xem miễn phí; các bài còn lại mở khi mua khóa.'),
+          : 'Học cách dùng AI như một gia sư: An toàn, biết kiểm chứng, tự tìm lỗ hổng kiến thức và xây lộ trình học riêng. Phần mở đầu, Bài 1 và Bài 2 xem miễn phí; các bài còn lại mở khi mua khóa.'),
         own ? null : h('button', { class: 'primary', type: 'button', onclick: () => ctx.onBuy(COURSE_ID) }, 'Mua khóa Gia sư AI')),
       ...sections);
     window.scrollTo(0, 0);
