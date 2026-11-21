@@ -1,7 +1,8 @@
 ## Bản mới
-- Mục "Tư vấn – Định hướng": dòng "Bên cạnh Quỹ tín dụng xã Diễn Yên cũ" xuống hàng riêng
+- Android: sửa lỗi nút "Tải về" cập nhật apk vẫn mở trình duyệt và thông báo nhắc học bài không hiện (app nhận nhầm là máy chưa có plugin)
 
 ## Các bản trước
+- Mục "Tư vấn – Định hướng": dòng "Bên cạnh Quỹ tín dụng xã Diễn Yên cũ" xuống hàng riêng
 - Mục "Tư vấn – Định hướng" (trước là "Chọn ngành – Hướng nghiệp"): thêm thông tin liên hệ của Nam Linh (tên công ty, mã số thuế, địa chỉ, điện thoại)
 - Android: khi phải tải apk qua trình duyệt, app ghi rõ lý do để dễ khắc phục
 - Thời khóa biểu: nhập các môn học mỗi ngày, cập nhật mỗi tuần; tối hôm trước app nhắc ôn bài và làm bài các môn của ngày mai (Android có thêm thông báo điện thoại)
