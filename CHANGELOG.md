@@ -1,4 +1,5 @@
 ## Bản mới
+- Android: bấm "Tải về" khi có apk mới thì app tự tải ngay trong app (có thanh tiến độ) rồi mở hộp "Cài đặt" của Android, không cần mở trình duyệt. Lần đầu máy hỏi cho phép app cài ứng dụng.
 - Điện thoại: giao diện gọn hơn (bớt lề, chữ nhỏ lại, các ô chọn xếp ngay ngắn); báo cáo phụ huynh hiện phần thưởng riêng từng bé. Máy dùng apk cũ (chưa có thẻ lý thuyết lớp 6–11) sẽ được báo tải apk mới.
 - Android: khi tải xong giao diện mới, app tự khởi động lại để dùng ngay (chỉ khi con không đang làm bài; đang làm bài thì chờ về màn hình chính). Bản cần cài lại apk vẫn hiện thanh "Có phiên bản mới".
 - Phần thưởng cuối tuần: phụ huynh đặt (bằng PIN) "mỗi tuần đạt N ngày, mỗi ngày đúng từ X% thì thưởng ...". Con không thấy nội dung thưởng; đạt thì hiện pháo giấy chúc mừng, hụt thì hiện mặt buồn động viên. Điện thoại phụ huynh xem được tiến độ. Cần cập nhật Worker (db:init + deploy).

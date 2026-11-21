@@ -52,7 +52,7 @@ test('gói OTA: bị sửa, ký bằng khóa khác hoặc không đúng định 
 });
 
 // --- bộ cập nhật trong ứng dụng ---
-function setup({ code = 7, latest, bundles = {}, stored = null, bad = [], running = null, now = 1_000_000_000 } = {}) {
+function setup({ code = 7, latest, bundles = {}, stored = null, bad = [], running = null, now = 1_000_000_000, installApk = null } = {}) {
   const kv = new Map([['current', stored], ['bad', bad]]);
   const ls = new Map();
   const calls = []; const opened = []; let reloaded = 0;
@@ -70,7 +70,7 @@ function setup({ code = 7, latest, bundles = {}, stored = null, bad = [], runnin
     native: { code, version: '1.0.' + code }, runningBuild: () => running || code,
     store: { get: async (k) => (kv.has(k) ? kv.get(k) : null), set: async (k, v) => { kv.set(k, v); } },
     storage: { get: (k) => ls.get(k) || null, set: (k, v) => { ls.set(k, v); } },
-    openUrl: (u) => opened.push(u), reload: () => { reloaded++; }, now: () => t,
+    openUrl: (u) => opened.push(u), installApk, reload: () => { reloaded++; }, now: () => t,
   });
   return { up, kv, calls, opened, reloaded: () => reloaded, advance: (ms) => { t += ms; } };
 }
@@ -172,4 +172,25 @@ test('gói www Android dùng đúng danh sách môn của sản phẩm Nam Linh 
   const got = JSON.parse(fs.readFileSync(path.join(wwwDir(), 'product.json'), 'utf8'));
   assert.deepStrictEqual(got.subjects, src.subjects);
   assert.ok(got.subjects.includes('toan10') && got.subjects.includes('anh11'));
+});
+
+test('có plugin cài apk: tải ngay trong app, báo tiến độ, không mở trình duyệt; lỗi thì quay về mở trình duyệt; chưa cấp quyền thì báo hướng dẫn', async () => {
+  const seen = [];
+  let s = setup({ latest: L({ minNative: 9 }), installApk: async (url, onP) => { seen.push(url); onP(40); onP(100); } });
+  await s.up.check();
+  const states = []; s.up.onUpdate((x) => states.push(x.state + ':' + x.percent));
+  const st = await s.up.download();
+  assert.deepStrictEqual(seen, ['https://r2.test/a.apk']);
+  assert.deepStrictEqual(s.opened, []);
+  assert.ok(states.includes('downloading:40'));
+  assert.strictEqual(st.state, 'available');
+  s = setup({ latest: L({ minNative: 9 }), installApk: async () => { const e = new Error('x'); e.code = 'download_failed'; throw e; } });
+  await s.up.check(); await s.up.download();
+  assert.deepStrictEqual(s.opened, ['https://r2.test/a.apk']);
+  s = setup({ latest: L({ minNative: 9 }), installApk: async () => { const e = new Error('x'); e.code = 'needs_permission'; throw e; } });
+  await s.up.check();
+  const r = await s.up.download();
+  assert.deepStrictEqual(s.opened, []);
+  assert.strictEqual(r.state, 'available');
+  assert.match(r.error, /Cho phép/);
 });

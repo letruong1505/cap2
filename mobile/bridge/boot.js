@@ -37,7 +37,19 @@
       b64uToBytes: window.NLMobileLicense.b64uToBytes, otaPublicKey: window.NLMobileLicense.b64uToBytes(window.NL_NATIVE.otaPublicKey.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '')),
       native: window.NL_NATIVE, runningBuild: function () { return window.NL_OTA_RUNNING || window.NL_NATIVE.code; },
       store: window.NLOtaStore, storage: { get: function (k) { return rawGet.call(ls, k); }, set: function (k, v) { rawSet.call(ls, k, v); } },
-      openUrl: function (u) { window.open(u, '_blank'); }, reload: function () { location.href = 'index.html'; },
+      openUrl: function (u) { window.open(u, '_blank'); },
+      // Tải apk ngay trong app rồi mở hộp cài đặt của Android (apk cũ chưa có plugin này thì null: dùng openUrl như trước).
+      installApk: (function () {
+        var cap = window.Capacitor;
+        var ok = false; try { ok = !!(cap && cap.registerPlugin && cap.isPluginAvailable && cap.isPluginAvailable('ApkInstaller')); } catch (e) { ok = false; }
+        if (!ok) return null;
+        var plug = cap.registerPlugin('ApkInstaller');
+        return function (url, onProgress) {
+          var sub = plug.addListener('progress', function (e) { try { onProgress(e && e.percent | 0); } catch (x) { /* bỏ qua */ } });
+          var off = function () { Promise.resolve(sub).then(function (h) { if (h && h.remove) h.remove(); }, function () {}); };
+          return plug.install({ url: url }).then(function (r) { off(); return r; }, function (e) { off(); throw e; });
+        };
+      })(), reload: function () { location.href = 'index.html'; },
     });
   }
 

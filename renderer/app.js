@@ -943,7 +943,7 @@ function setupUpdateBar() {
     let acts = [];
     let notes = null;
     if (st.state === 'available' && dismissed !== st.version) {
-      msg.textContent = `Có phiên bản mới ${st.version}.`;
+      msg.textContent = `Có phiên bản mới ${st.version}.${st.error ? ' ' + st.error : ''}`;
       acts = [btn('Tải về', () => window.vungBai.downloadUpdate()), btn('Để sau', () => { dismissed = st.version; render({ state: 'none' }); }, 'ghost')];
       if (st.notes) {
         const ul = document.createElement('ul'); ul.className = 'update-notes';
