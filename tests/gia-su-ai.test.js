@@ -25,3 +25,29 @@ test('Gia sư AI: index.html nạp script và có màn hình giasu', () => {
   const app = fs.readFileSync(path.join(__dirname, '../renderer/app.js'), 'utf8');
   assert.ok(app.includes("'giasu'") && app.includes('showGiaSu'));
 });
+
+test('AI cho người đi làm – ChatGPT: Bài 4–9 có thẻ thực hành với dữ liệu mẫu và đáp án', () => {
+  const w = {};
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../renderer/ai-work-chatgpt.js'), 'utf8'), { window: w });
+  for (const k of ['bai4', 'bai5', 'bai6', 'bai7', 'bai8', 'bai9']) {
+    const h = w.AI_WORK_CHATGPT[k].html;
+    assert.ok(h.includes('class="pdata"') && h.includes('class="tans"') && h.includes('class="prompt"'), k);
+  }
+  // số liệu Bài 7: 1.200.000 + 900.000 + 1.100.000 = 3.200.000
+  assert.ok(w.AI_WORK_CHATGPT.bai7.html.includes('3.200.000'));
+  const js = fs.readFileSync(path.join(__dirname, '../renderer/ai-work.js'), 'utf8');
+  assert.ok(js.includes('addCopyButtons(box)'));
+});
+
+test('ChatGPT Bài 11: có bộ dữ liệu mẫu cho Case 1–4 với số liệu đúng', () => {
+  const w = {};
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../renderer/ai-work-chatgpt.js'), 'utf8'), { window: w });
+  const h = w.AI_WORK_CHATGPT.bai11.html;
+  assert.ok(h.includes('bộ dữ liệu mẫu cho các case'));
+  assert.strictEqual((h.match(/class="pdata"/g) || []).length, 4);
+  // 84/90, 99/108, 10 chiếc: A, B, C
+  assert.strictEqual((84 / 90 * 100).toFixed(2), '93.33'); assert.strictEqual((99 / 108 * 100).toFixed(2), '91.67');
+  assert.strictEqual(2000000 * 10 + 300000, 20300000); assert.strictEqual(1950000 * 10 + 800000, 20300000); assert.strictEqual(2050000 * 10, 20500000);
+  const names = h.match(/<pre class="pdata">Mau_don[^<]*<\/pre>/)[0].replace(/<[^>]+>/g, '').split('\n');
+  assert.strictEqual(names.length, 24);
+});

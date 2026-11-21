@@ -89,11 +89,26 @@
     window.scrollTo(0, 0);
   }
 
+  // Nút "Sao chép" cho prompt mẫu và dữ liệu mẫu
+  function addCopyButtons(root) {
+    root.querySelectorAll('pre.prompt, pre.pdata').forEach((pre) => {
+      const b = h('button', { class: 'copy-btn', type: 'button' }, 'Sao chép');
+      b.addEventListener('click', () => {
+        const text = pre.textContent;
+        const ok = () => { b.textContent = 'Đã chép'; b.classList.add('done'); setTimeout(() => { b.textContent = 'Sao chép'; b.classList.remove('done'); }, 1500); };
+        const fallback = () => { const t = document.createElement('textarea'); t.value = text; t.style.position = 'fixed'; t.style.opacity = '0'; document.body.append(t); t.select(); try { document.execCommand('copy'); ok(); } catch (e) { /* bỏ qua */ } t.remove(); };
+        if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(ok, fallback); else fallback();
+      });
+      pre.parentNode.insertBefore(b, pre);
+    });
+  }
+
   function lessonScreen(c, key) {
     const L = (window.AI_WORK_LESSONS || {})[key] || (owned(ctx.license(), c.id) ? (ownSet(c) || {})[key] : null);
     const box = h('article', { class: 'aiw-lesson' });
     if (L) { box.innerHTML = '<h2>' + L.title + '</h2><p class="sub">' + L.sub + '</p>' + L.html; }
     else box.append(h('p', {}, 'Bài này đang được biên soạn.'));
+    addCopyButtons(box);
     body.replaceChildren(h('button', { class: 'back-link', type: 'button', onclick: () => courseScreen(c) }, '← Các bài của lớp ' + c.label), box);
     window.scrollTo(0, 0);
   }
