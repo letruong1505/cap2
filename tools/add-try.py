@@ -54,7 +54,7 @@ def main(subjects):
     lessons = tries = 0
     for s in subjects:
         for p in sorted(glob.glob(os.path.join(ROOT, 'content', s, '**', '*.json'), recursive=True)):
-            if p.endswith('manifest.json') or 'on-tap' in p or 'nang-cao' in p:
+            if p.endswith('manifest.json') or 'on-tap' in p or 'nang-cao' in p or 'de-thi' in p:
                 continue
             n = convert(p)
             if n: lessons += 1; tries += n

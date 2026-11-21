@@ -58,8 +58,35 @@ function validateReview(lesson, relPath) {
   return errs.map((e) => `${where}: ${e}`);
 }
 
+// Đề thi thử: 12 câu trắc nghiệm, 4 câu đúng–sai (mỗi câu 4 ý), 6 câu trả lời ngắn. Câu trắc nghiệm và trả lời ngắn kiểm như câu luyện tập.
+function validateExam(exam, relPath) {
+  const errs = [];
+  if (!exam.id) errs.push('thiếu id');
+  if (!(exam.durationMin > 0)) errs.push('thiếu thời gian làm bài');
+  const items = exam.items || [];
+  const count = (p) => items.filter((i) => i.part === p).length;
+  if (count(1) !== 12 || count(2) !== 4 || count(3) !== 6 || items.length !== 22) errs.push(`cần đúng 12 + 4 + 6 câu (hiện có ${count(1)} + ${count(2)} + ${count(3)})`);
+  if (items.some((i) => (i.part === 1 && i.type !== 'mcq') || (i.part === 2 && i.type !== 'tf') || (i.part === 3 && i.type !== 'fill'))) errs.push('loại câu không khớp với phần của đề');
+  for (const t of items.filter((i) => i.type === 'tf')) {
+    const tag = `câu ${t.id}`;
+    if (!t.stem) errs.push(`${tag}: thiếu đề bài`);
+    if (t.figure) errs.push(...checkFigurePath(t.figure, tag));
+    const st = t.statements || [];
+    if (st.length !== 4) errs.push(`${tag}: cần đúng 4 ý`);
+    st.forEach((x, k) => {
+      if (!x.text || typeof x.truth !== 'boolean' || !x.explain) errs.push(`${tag}: ý ${k + 1} thiếu nội dung, đúng/sai hoặc lời giải`);
+    });
+    if (new Set(st.map((x) => x.text)).size !== st.length) errs.push(`${tag}: có ý trùng nhau`);
+  }
+  const practice = items.filter((i) => i.type !== 'tf');
+  errs.push(...validateLesson({ id: exam.id, theory: [{ type: 'text' }], examples: [], items: practice }, relPath).map((e) => e.slice(relPath.length + 2)));
+  if (new Set(items.map((i) => i.id)).size !== items.length) errs.push('trùng mã câu');
+  return errs.map((e) => `${relPath}: ${e}`);
+}
+
 function validateLesson(lesson, relPath) {
   if (lesson.kind === 'review') return validateReview(lesson, relPath);
+  if (lesson.kind === 'exam') return validateExam(lesson, relPath);
   const errs = [];
   const where = relPath;
   if (!lesson.id) errs.push('thiếu id');

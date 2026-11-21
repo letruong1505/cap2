@@ -988,3 +988,21 @@ button.dc-col.sel { background: #dcebf3; }
   .reward-set > button { width: 100%; white-space: normal; }
   .app-version { font-size: 10.5px; opacity: .75; }
 }
+
+/* Đề thi thử tốt nghiệp */
+.exam-struct { border-collapse: collapse; margin: 12px 0; width: 100%; max-width: 640px; }
+.exam-struct th, .exam-struct td { border: 1px solid var(--rule); padding: 6px 10px; text-align: left; font-size: 14px; }
+.exam-struct th { background: var(--paper); }
+.exam-go { margin-top: 12px; padding: 12px 22px; font-size: 16px; font-weight: 700; }
+.exam-bar { position: sticky; top: 0; z-index: 20; display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 8px 12px; margin: 8px 0; background: var(--ink); color: #fff; border-radius: 10px; }
+.exam-clock { font-weight: 800; font-size: 18px; font-variant-numeric: tabular-nums; }
+.exam-clock.warn { color: #ffcf3f; }
+.exam-part { margin: 26px 0 6px; font-size: 18px; color: var(--sky); }
+.tf-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; padding: 8px 10px; border: 1px solid var(--rule); border-radius: 10px; margin: 6px 0; }
+.tf-text { flex: 1 1 260px; }
+.tf-opt { display: inline-flex; align-items: center; gap: 4px; cursor: pointer; font-weight: 600; }
+.tf-row.is-right { border-color: #3c9a64; background: #e6f5ec; }
+.tf-row.is-wrong { border-color: #d96a6a; background: #fdecec; }
+.tf-note { flex-basis: 100%; font-size: 13.5px; color: #34465a; }
+.exam-result { margin: 12px 0; padding: 12px 16px; border: 2px solid var(--sky); border-radius: 12px; background: #eaf3ff; }
+.exam-result h2 { margin: 0 0 4px; }
