@@ -10,12 +10,38 @@
   "bookPage": 72,
   "theory": [
     {
-      "type": "text",
-      "content": "Công thức xác suất toàn phần: với các biến cố A và Ā, P(B) = P(A) · P(B | A) + P(Ā) · P(B | Ā)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Toàn phần: {k P(B) = P(A)·P(B | A) + P(Ā)·P(B | Ā)}. Bayes: P(A | B) = P(A)·P(B | A) / P(B). Trên sơ đồ cây: nhân dọc đường đi, cộng các đường đi đến cùng kết quả."
     },
     {
-      "type": "text",
-      "content": "Sơ đồ hình cây mô tả trực quan các nhánh xác suất: nhân xác suất dọc theo mỗi đường đi, và cộng các đường đi đến cùng một kết quả."
+      "type": "card",
+      "title": "Công thức xác suất toàn phần",
+      "text": "Với hai biến cố A và Ā (đối của A):",
+      "formulas": [
+        "P(B) = {k P(A) · P(B | A) + P(Ā) · P(B | Ā)}"
+      ],
+      "try": {
+        "q": "P(A) = 0,4; P(B | A) = 0,5; P(B | Ā) = 0,2. Khi đó P(B) bằng:",
+        "options": [
+          "0,32",
+          "0,7",
+          "0,5"
+        ],
+        "answer": 0,
+        "explain": "0,4·0,5 + 0,6·0,2 = 0,2 + 0,12 = 0,32."
+      },
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Sơ đồ hình cây",
+      "points": [
+        "{k Nhân} các xác suất dọc theo mỗi đường đi.",
+        "{k Cộng} các đường đi đến cùng một kết quả."
+      ],
+      "tip": "Xác suất toàn phần chính là tổng các đường đi dẫn đến B.",
+      "n": 2
     },
     {
       "type": "figure",
@@ -23,8 +49,24 @@
       "caption": "Sơ đồ cây Ví dụ 2: cộng các đường đi đến “Đỗ” rồi chia cho tổng đó để có xác suất Bayes."
     },
     {
-      "type": "text",
-      "content": "Công thức Bayes: P(A | B) = P(A) · P(B | A) / P(B) = P(A) · P(B | A) / [P(A) · P(B | A) + P(Ā) · P(B | Ā)]."
+      "type": "card",
+      "title": "Công thức Bayes",
+      "formulas": [
+        "P(A | B) = P(A) · P(B | A) / P(B)",
+        "= {k P(A) · P(B | A) / [P(A) · P(B | A) + P(Ā) · P(B | Ā)]}"
+      ],
+      "tip": "Bayes “lật điều kiện”: biết B xảy ra, tìm xác suất do nguyên nhân A. Tử là một đường đi, mẫu là tổng các đường đi đến B.",
+      "try": {
+        "q": "Với P(A) = 0,4; P(B | A) = 0,5; P(B | Ā) = 0,2, giá trị P(A | B) bằng:",
+        "options": [
+          "0,625",
+          "0,5",
+          "0,4"
+        ],
+        "answer": 0,
+        "explain": "0,4·0,5 / 0,32 = 0,2 / 0,32 = 0,625."
+      },
+      "n": 3
     },
     {
       "type": "method",

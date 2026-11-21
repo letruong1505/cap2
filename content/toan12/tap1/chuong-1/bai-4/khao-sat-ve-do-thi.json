@@ -10,29 +10,78 @@
   "bookPage": 27,
   "theory": [
     {
-      "type": "text",
-      "content": "Sơ đồ khảo sát hàm số y = f(x): (1) tìm tập xác định; (2) khảo sát sự biến thiên: tính y', xét dấu y', tìm khoảng đơn điệu và cực trị, tìm giới hạn tại vô cực và các tiệm cận, lập bảng biến thiên; (3) vẽ đồ thị dựa vào bảng biến thiên."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Khảo sát hàm số: {k tập xác định}, {k sự biến thiên} (y′, cực trị, giới hạn, tiệm cận, bảng biến thiên), rồi {k vẽ đồ thị}. Bậc ba có tâm đối xứng (điểm uốn) và không có tiệm cận; phân thức bậc nhất có tâm đối xứng là giao hai tiệm cận."
     },
     {
-      "type": "text",
-      "content": "Khi vẽ đồ thị nên xác định thêm một số điểm đặc biệt, chẳng hạn giao điểm với các trục toạ độ (khi việc tìm không quá phức tạp), và lưu ý tính đối xứng của đồ thị."
+      "type": "card",
+      "title": "Sơ đồ khảo sát hàm số y = f(x)",
+      "points": [
+        "{k Bước 1:} Tìm tập xác định.",
+        "{k Bước 2:} Khảo sát sự biến thiên: tính y′, xét dấu y′, tìm khoảng đơn điệu và cực trị, tìm giới hạn tại vô cực và các tiệm cận, lập bảng biến thiên.",
+        "{k Bước 3:} Vẽ đồ thị dựa vào bảng biến thiên."
+      ],
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Đồ thị hàm số bậc ba y = ax³ + bx² + cx + d (a ≠ 0) có tâm đối xứng là điểm có hoành độ x = −b/(3a) (điểm uốn của đồ thị). Hàm số bậc ba không có tiệm cận."
+      "type": "card",
+      "title": "Mẹo vẽ đồ thị cho chính xác",
+      "points": [
+        "Xác định thêm một số điểm đặc biệt, như giao điểm với các trục toạ độ (khi không quá phức tạp).",
+        "Chú ý tính đối xứng của đồ thị."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Đồ thị hàm phân thức y = (ax + b)/(cx + d) (c ≠ 0, ad − bc ≠ 0) có tiệm cận đứng x = −d/c và tiệm cận ngang y = a/c. Đồ thị nhận giao điểm của hai tiệm cận làm tâm đối xứng."
+      "type": "card",
+      "title": "Hàm số bậc ba y = ax³ + bx² + cx + d",
+      "formulas": [
+        "Tâm đối xứng (điểm uốn) có hoành độ  {k x = −b/(3a)}"
+      ],
+      "points": [
+        "Hàm số bậc ba {k không có tiệm cận}.",
+        "Ví dụ y = x³ − 2x² + 2x − 1: y′ = 3x² − 4x + 2 có biệt thức âm nên y′ > 0 với mọi x; hàm số đồng biến trên ℝ, không có cực trị và tâm đối xứng là (2/3; −7/27)."
+      ],
+      "try": {
+        "q": "Đồ thị y = x³ − 3x² + 1 có tâm đối xứng có hoành độ bằng:",
+        "options": [
+          "1",
+          "3",
+          "−1"
+        ],
+        "answer": 0,
+        "explain": "x = −b/(3a) = −(−3)/(3·1) = 1."
+      },
+      "n": 3
+    },
+    {
+      "type": "card",
+      "title": "Hàm phân thức y = (ax + b)/(cx + d)",
+      "text": "Với c ≠ 0 và ad − bc ≠ 0:",
+      "formulas": [
+        "Tiệm cận đứng  {k x = −d/c}",
+        "Tiệm cận ngang  {k y = a/c}"
+      ],
+      "points": [
+        "Giao điểm của hai tiệm cận là {k tâm đối xứng} của đồ thị."
+      ],
+      "try": {
+        "q": "Đồ thị y = (x + 1)/(x − 2) có tâm đối xứng là:",
+        "options": [
+          "(2; 1)",
+          "(1; 2)",
+          "(−1; 2)"
+        ],
+        "answer": 0,
+        "explain": "Tiệm cận đứng x = 2, tiệm cận ngang y = 1/1 = 1; tâm đối xứng là giao điểm (2; 1)."
+      },
+      "n": 4
     },
     {
       "type": "figure",
       "figure": "figures/b4-phan-thuc.svg",
       "caption": "Đồ thị y = (x + 1)/(x − 2) nhận giao điểm (2; 1) của hai tiệm cận làm tâm đối xứng."
-    },
-    {
-      "type": "text",
-      "content": "Với hàm bậc ba y = x³ − 2x² + 2x − 1: y' = 3x² − 4x + 2 có biệt thức âm nên y' > 0 với mọi x; hàm số đồng biến trên ℝ, không có cực trị, và đồ thị có tâm đối xứng là điểm (2/3; −7/27)."
     },
     {
       "type": "method",

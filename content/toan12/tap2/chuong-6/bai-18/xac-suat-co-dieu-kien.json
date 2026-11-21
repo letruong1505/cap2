@@ -10,12 +10,48 @@
   "bookPage": 64,
   "theory": [
     {
-      "type": "text",
-      "content": "Xác suất của biến cố A với điều kiện biến cố B (P(B) > 0) là P(A | B) = P(AB)/P(B)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "{k P(A | B) = P(AB)/P(B)} (P(B) > 0): mẫu số là xác suất của biến cố {k đã xảy ra}. Nhân xác suất: P(AB) = P(B)·P(A | B) = P(A)·P(B | A). Độc lập khi P(AB) = P(A)·P(B)."
     },
     {
-      "type": "text",
-      "content": "Công thức nhân xác suất: với hai biến cố A và B bất kì, P(AB) = P(B) · P(A | B) = P(A) · P(B | A)."
+      "type": "card",
+      "title": "Xác suất có điều kiện",
+      "text": "Xác suất của biến cố A với điều kiện biến cố B đã xảy ra (P(B) > 0):",
+      "formulas": [
+        "P(A | B) = {k P(AB) / P(B)}"
+      ],
+      "wrong": "Nhầm P(A | B) với P(B | A).",
+      "right": "P(A | B) chia cho {k P(B)} (biến cố đã xảy ra); P(B | A) chia cho P(A).",
+      "try": {
+        "q": "P(AB) = 0,3 và P(B) = 0,6. Khi đó P(A | B) bằng:",
+        "options": [
+          "0,5",
+          "0,18",
+          "2"
+        ],
+        "answer": 0,
+        "explain": "0,3 / 0,6 = 0,5."
+      },
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Công thức nhân xác suất",
+      "text": "Với hai biến cố A, B bất kì:",
+      "formulas": [
+        "P(AB) = {k P(B) · P(A | B)} = {k P(A) · P(B | A)}"
+      ],
+      "n": 2
+    },
+    {
+      "type": "card",
+      "title": "Sơ đồ cây",
+      "points": [
+        "Các nhánh ghi xác suất có điều kiện.",
+        "Xác suất mỗi đường đi là {k tích} các xác suất trên các nhánh của đường đó."
+      ],
+      "n": 3
     },
     {
       "type": "figure",
@@ -23,12 +59,35 @@
       "caption": "Sơ đồ cây cho Ví dụ 4: các nhánh là xác suất có điều kiện, xác suất mỗi đường đi là tích các nhánh trên đường đó."
     },
     {
-      "type": "text",
-      "content": "Hai biến cố A và B độc lập khi P(AB) = P(A) · P(B); khi đó P(A | B) = P(A) và P(B | A) = P(B)."
+      "type": "card",
+      "title": "Hai biến cố độc lập",
+      "formulas": [
+        "A, B độc lập  ⇔  {k P(AB) = P(A) · P(B)}"
+      ],
+      "points": [
+        "Khi đó P(A | B) = P(A) và P(B | A) = P(B)."
+      ],
+      "try": {
+        "q": "A, B độc lập, P(A) = 0,5 và P(B) = 0,4. Khi đó P(AB) bằng:",
+        "options": [
+          "0,2",
+          "0,9",
+          "0,1"
+        ],
+        "answer": 0,
+        "explain": "0,5 · 0,4 = 0,2."
+      },
+      "n": 4
     },
     {
-      "type": "text",
-      "content": "Bảng dữ liệu thống kê 2 × 2 gồm hai dòng và hai cột; có thể dùng số liệu trong bảng để tính xác suất có điều kiện bằng cách lấy số liệu tương ứng trên tổng."
+      "type": "card",
+      "title": "Dùng bảng thống kê 2 × 2",
+      "points": [
+        "Bảng có hai dòng và hai cột.",
+        "Xác suất có điều kiện = số liệu tương ứng ÷ {k tổng của dòng (hoặc cột) điều kiện}."
+      ],
+      "tip": "Điều kiện nói “biết rằng B” thì chỉ xét riêng dòng (hoặc cột) B làm tổng.",
+      "n": 5
     },
     {
       "type": "method",

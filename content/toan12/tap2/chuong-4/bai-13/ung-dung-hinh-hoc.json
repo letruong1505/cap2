@@ -10,20 +10,72 @@
   "bookPage": 19,
   "theory": [
     {
-      "type": "text",
-      "content": "Diện tích hình phẳng giới hạn bởi đồ thị hàm số y = f(x) liên tục, trục hoành và hai đường thẳng x = a, x = b (a < b) là S = ∫_a^b |f(x)|dx."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Diện tích: S = ∫|f(x)|dx (với trục hoành) hoặc ∫|f(x) − g(x)|dx (hai đồ thị). Thể tích vật thể: V = ∫S(x)dx. Khối tròn xoay quanh Ox: V = π∫f²(x)dx. {k Chú ý:} có giá trị tuyệt đối với diện tích, có π và bình phương với thể tích tròn xoay."
     },
     {
-      "type": "text",
-      "content": "Diện tích hình phẳng giới hạn bởi đồ thị hai hàm số y = f(x), y = g(x) liên tục trên [a; b] và hai đường thẳng x = a, x = b là S = ∫_a^b |f(x) − g(x)|dx. Nếu f(x) − g(x) không đổi dấu trên [a; b] thì S = |∫_a^b [f(x) − g(x)]dx|."
+      "type": "card",
+      "title": "Diện tích hình phẳng giới hạn bởi một đồ thị",
+      "text": "Đồ thị y = f(x) liên tục, trục hoành và hai đường x = a, x = b (a < b):",
+      "formulas": [
+        "S = {k ∫_a^b |f(x)| dx}"
+      ],
+      "wrong": "Tính S = ∫_a^b f(x)dx mà không xét dấu f(x).",
+      "right": "Phải lấy giá trị tuyệt đối: chia đoạn tại nghiệm để bỏ dấu |·|.",
+      "why": "Ví dụ ∫_0^2 (x − 1)dx = 0, nhưng diện tích thật là ∫_0^2 |x − 1|dx = 1.",
+      "try": {
+        "q": "Diện tích hình phẳng giới hạn bởi y = |x − 1|, trục hoành, x = 0, x = 2 bằng:",
+        "options": [
+          "1",
+          "0",
+          "2"
+        ],
+        "answer": 0,
+        "explain": "Hai tam giác vuông cân, mỗi tam giác diện tích 1/2: tổng bằng 1."
+      },
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Thể tích vật thể B giới hạn bởi hai mặt phẳng vuông góc với Ox tại x = a và x = b, có diện tích thiết diện S(x) liên tục trên [a; b], là V = ∫_a^b S(x)dx."
+      "type": "card",
+      "title": "Diện tích giới hạn bởi hai đồ thị",
+      "text": "y = f(x), y = g(x) liên tục trên [a; b] và hai đường x = a, x = b:",
+      "formulas": [
+        "S = {k ∫_a^b |f(x) − g(x)| dx}"
+      ],
+      "points": [
+        "Nếu f(x) − g(x) không đổi dấu trên [a; b] thì S = |∫_a^b [f(x) − g(x)]dx|."
+      ],
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Thể tích khối tròn xoay sinh ra khi quay hình phẳng giới hạn bởi y = f(x) ≥ 0, trục hoành, x = a, x = b quanh trục Ox là V = π∫_a^b f²(x)dx."
+      "type": "card",
+      "title": "Thể tích vật thể theo diện tích thiết diện",
+      "text": "Vật thể B nằm giữa hai mặt phẳng vuông góc với Ox tại x = a và x = b; thiết diện vuông góc Ox tại x có diện tích S(x) liên tục trên [a; b]:",
+      "formulas": [
+        "V = {k ∫_a^b S(x) dx}"
+      ],
+      "n": 3
+    },
+    {
+      "type": "card",
+      "title": "Thể tích khối tròn xoay quanh trục Ox",
+      "text": "Quay hình phẳng giới hạn bởi y = f(x) ≥ 0, trục hoành, x = a, x = b quanh Ox:",
+      "formulas": [
+        "V = {k π ∫_a^b f²(x) dx}"
+      ],
+      "tip": "Thể tích tròn xoay có {k π} và hàm {k bình phương}; diện tích thì không có.",
+      "try": {
+        "q": "Quay hình phẳng giới hạn bởi y = x, trục hoành, x = 0, x = 1 quanh Ox. Thể tích bằng:",
+        "options": [
+          "π/3",
+          "1/3",
+          "π/2"
+        ],
+        "answer": 0,
+        "explain": "V = π∫_0^1 x² dx = π·(1/3) = π/3 (khối nón có bán kính đáy 1, chiều cao 1)."
+      },
+      "n": 4
     },
     {
       "type": "figure",

@@ -10,8 +10,30 @@
   "bookPage": 54,
   "theory": [
     {
-      "type": "text",
-      "content": "Mặt cầu (S) tâm I(a; b; c) bán kính R > 0 có phương trình (x − a)² + (y − b)² + (z − c)² = R²."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Mặt cầu tâm I(a; b; c), bán kính R: {k (x − a)² + (y − b)² + (z − c)² = R²}. Dạng khai triển x² + y² + z² − 2ax − 2by − 2cz + d = 0 là mặt cầu khi a² + b² + c² − d > 0, khi đó R = √(a² + b² + c² − d)."
+    },
+    {
+      "type": "card",
+      "title": "Phương trình mặt cầu",
+      "text": "Mặt cầu (S) tâm I(a; b; c) bán kính R > 0:",
+      "formulas": [
+        "{k (x − a)² + (y − b)² + (z − c)² = R²}"
+      ],
+      "wrong": "Từ (x + 2)² suy ra tâm có hoành độ 2.",
+      "right": "(x + 2)² = (x − (−2))² nên hoành độ tâm là {k −2}.",
+      "try": {
+        "q": "Mặt cầu tâm I(1; −2; 3), bán kính 2 có phương trình:",
+        "options": [
+          "(x − 1)² + (y + 2)² + (z − 3)² = 4",
+          "(x + 1)² + (y − 2)² + (z + 3)² = 4",
+          "(x − 1)² + (y + 2)² + (z − 3)² = 2"
+        ],
+        "answer": 0,
+        "explain": "(y − (−2))² = (y + 2)² và R² = 4."
+      },
+      "n": 1
     },
     {
       "type": "figure",
@@ -19,12 +41,50 @@
       "caption": "Mặt cầu tâm I bán kính R là tập hợp các điểm N thỏa IN = R."
     },
     {
-      "type": "text",
-      "content": "Phương trình x² + y² + z² − 2ax − 2by − 2cz + d = 0 là phương trình mặt cầu khi và chỉ khi a² + b² + c² − d > 0. Khi đó mặt cầu có tâm I(a; b; c) và bán kính R = √(a² + b² + c² − d)."
+      "type": "card",
+      "title": "Dạng khai triển",
+      "formulas": [
+        "x² + y² + z² − 2ax − 2by − 2cz + d = 0",
+        "Là mặt cầu  ⇔  {k a² + b² + c² − d > 0}",
+        "Tâm I(a; b; c), bán kính  {k R = √(a² + b² + c² − d)}"
+      ],
+      "tip": "Hệ số của x, y, z chia −2 để ra toạ độ tâm.",
+      "try": {
+        "q": "Mặt cầu x² + y² + z² − 2x + 4y − 6z + 5 = 0 có bán kính bằng:",
+        "options": [
+          "3",
+          "9",
+          "√14"
+        ],
+        "answer": 0,
+        "explain": "a = 1, b = −2, c = 3, d = 5: R = √(1 + 4 + 9 − 5) = √9 = 3."
+      },
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Điểm M nằm trong mặt cầu khi IM < R, nằm ngoài mặt cầu khi IM > R, thuộc mặt cầu khi IM = R."
+      "type": "card",
+      "title": "Vị trí của điểm M so với mặt cầu",
+      "table": {
+        "head": [
+          "Điều kiện",
+          "Vị trí"
+        ],
+        "rows": [
+          [
+            "IM < R",
+            "M nằm trong mặt cầu"
+          ],
+          [
+            "IM = R",
+            "M thuộc mặt cầu"
+          ],
+          [
+            "IM > R",
+            "M nằm ngoài mặt cầu"
+          ]
+        ]
+      },
+      "n": 3
     },
     {
       "type": "method",

@@ -10,24 +10,83 @@
   "bookPage": 80,
   "theory": [
     {
-      "type": "text",
-      "content": "Phương sai của mẫu số liệu ghép nhóm, kí hiệu s², là s² = (m₁(x₁ − x̄)² + … + m_k(x_k − x̄)²)/n, với n = m₁ + … + m_k, x_i = (a_i + a_{i+1})/2 là giá trị đại diện của nhóm [a_i; a_{i+1}) và x̄ là số trung bình của mẫu."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Phương sai s² = (m₁(x₁ − x̄)² + … + m_k(x_k − x̄)²)/n; độ lệch chuẩn s = √s². Công thức rút gọn: s² = (Σ m_i·x_i²)/n − x̄². Càng lớn thì mẫu càng {k phân tán}; chỉ so sánh khi các số trung bình gần nhau."
     },
     {
-      "type": "text",
-      "content": "Độ lệch chuẩn của mẫu số liệu ghép nhóm là s = √s²."
+      "type": "card",
+      "title": "Phương sai s²",
+      "formulas": [
+        "s² = {k (m₁(x₁ − x̄)² + … + m_k(x_k − x̄)²) / n}"
+      ],
+      "points": [
+        "n = m₁ + … + m_k là cỡ mẫu; m_i là tần số của nhóm i.",
+        "x_i = (a_i + a_{i+1})/2 là {k giá trị đại diện} của nhóm [a_i; a_{i+1}).",
+        "x̄ là số trung bình của mẫu."
+      ],
+      "wrong": "x_i là tần số của nhóm.",
+      "right": "x_i là {k giá trị đại diện} (trung điểm nhóm); tần số là m_i.",
+      "try": {
+        "q": "Nhóm [10; 20) có giá trị đại diện là:",
+        "options": [
+          "15",
+          "10",
+          "20"
+        ],
+        "answer": 0,
+        "explain": "(10 + 20)/2 = 15."
+      },
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Ta có thể tính phương sai theo công thức rút gọn s² = (m₁·x₁² + … + m_k·x_k²)/n − (x̄)². Độ lệch chuẩn có cùng đơn vị với đơn vị của mẫu số liệu."
+      "type": "card",
+      "title": "Độ lệch chuẩn s",
+      "formulas": [
+        "s = {k √(s²)}"
+      ],
+      "points": [
+        "Có cùng đơn vị với đơn vị của mẫu số liệu (phương sai thì có đơn vị bình phương)."
+      ],
+      "try": {
+        "q": "Mẫu có phương sai s² = 16 thì độ lệch chuẩn bằng:",
+        "options": [
+          "4",
+          "16",
+          "8"
+        ],
+        "answer": 0,
+        "explain": "s = √16 = 4."
+      },
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Phương sai và độ lệch chuẩn đo mức độ phân tán của mẫu số liệu quanh số trung bình: giá trị càng lớn thì mẫu càng phân tán. Với mẫu ghép nhóm dùng để ước lượng mẫu gốc, người ta còn dùng ŝ² = (m₁(x₁ − x̄)² + … + m_k(x_k − x̄)²)/(n − 1) và ŝ = √ŝ²."
+      "type": "card",
+      "title": "Công thức rút gọn",
+      "formulas": [
+        "s² = {k (m₁·x₁² + … + m_k·x_k²) / n − (x̄)²}"
+      ],
+      "tip": "“Trung bình của bình phương trừ bình phương của trung bình”.",
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Trong tài chính, độ lệch chuẩn của lợi nhuận đo độ rủi ro của phương án đầu tư. Chỉ nên so sánh phương sai, độ lệch chuẩn khi các số trung bình gần nhau; nếu số trung bình khác nhau rất nhiều, dùng hệ số biến thiên CV = s/x̄."
+      "type": "card",
+      "title": "Ý nghĩa",
+      "points": [
+        "Đo mức độ phân tán của mẫu quanh số trung bình: giá trị {k càng lớn} thì mẫu càng phân tán.",
+        "Mẫu ghép nhóm dùng để ước lượng mẫu gốc còn dùng ŝ² = (m₁(x₁ − x̄)² + … + m_k(x_k − x̄)²)/(n − 1) và ŝ = √ŝ²."
+      ],
+      "n": 4
+    },
+    {
+      "type": "card",
+      "title": "So sánh và ứng dụng",
+      "points": [
+        "Trong tài chính, độ lệch chuẩn của lợi nhuận đo {k độ rủi ro} của phương án đầu tư.",
+        "Chỉ nên so sánh phương sai, độ lệch chuẩn khi các số trung bình {k gần nhau}.",
+        "Nếu số trung bình khác nhau rất nhiều, dùng hệ số biến thiên CV = s/x̄."
+      ],
+      "n": 5
     },
     {
       "type": "method",

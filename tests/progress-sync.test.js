@@ -72,3 +72,14 @@ test('buildReport (điện thoại): đạt/không đạt theo ngưỡng chung v
   assert.deepEqual([by.toan.passed, by.toan.need, by.anh.passed, by.anh.need], [false, 80, true, 70]);
   assert.ok(r.weak.some((c) => c.subject === 'toan') && !r.weak.some((c) => c.subject === 'anh'));
 });
+
+test('buildReport (điện thoại): mỗi ngày có chi tiết theo môn', () => {
+  const rows = [
+    { day: '2026-11-17', subject: 'toan', grade: 7, chapter: 'C1', correct: 9, total: 10, lessons: 1, seconds: 60 },
+    { day: '2026-11-17', subject: 'anh', grade: 7, chapter: 'U1', correct: 5, total: 10, lessons: 2, seconds: 60 },
+  ];
+  const t = new Date(2026, 10, 17).getTime();
+  const day = S.buildReport(rows, { from: t, to: t }, { pass: 80, passBy: {} }).days[0];
+  assert.deepEqual(day.subjects.map((s) => [s.subject, s.passed]), [['toan', true], ['anh', false]]);
+  assert.equal(day.lessons, 3);
+});

@@ -932,3 +932,13 @@ button.ghost:hover { background: var(--paper); }
 .dc-stack { width: 70%; max-width: 34px; display: flex; flex-direction: column; border-radius: 4px 4px 0 0; overflow: hidden; }
 .dc-col small { font-size: 10px; white-space: nowrap; }
 .dc-n { font-size: 10px; }
+
+.lim { display: inline-flex; flex-direction: column; vertical-align: middle; font-size: 0.68em; line-height: 1.05; margin: 0 2px; text-align: left; }
+
+button.dc-col { background: none; border: 0; padding: 0; font: inherit; cursor: pointer; border-radius: 6px; }
+button.dc-col:hover, button.dc-col:focus-visible { background: #eef5f9; outline: none; }
+button.dc-col.sel { background: #dcebf3; }
+.dc-n { font-weight: 700; color: #1d2b3a; }
+.dc-detail { margin-top: 10px; padding: 10px 12px; border: 1px solid #cfe0ea; border-radius: 10px; background: #fff; }
+.dc-detail h3 { margin: 0 0 4px; font-size: 15px; }
+.dc-detail p { margin: 4px 0; }

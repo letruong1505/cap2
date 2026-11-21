@@ -10,20 +10,71 @@
   "bookPage": 29,
   "theory": [
     {
-      "type": "text",
-      "content": "Trong không gian Oxyz, vectơ n ≠ 0 được gọi là vectơ pháp tuyến của mặt phẳng (α) nếu giá của n vuông góc với (α)."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Mặt phẳng đi qua M₀ có vectơ pháp tuyến n = (A; B; C): {k A(x − x₀) + B(y − y₀) + C(z − z₀) = 0}. Khoảng cách từ M₀ đến (P): d = |Ax₀ + By₀ + Cz₀ + D| / √(A² + B² + C²). Vuông góc: AA′ + BB′ + CC′ = 0."
     },
     {
-      "type": "text",
-      "content": "Tích có hướng của hai vectơ u = (a; b; c) và v = (a'; b'; c') là vectơ [u, v] = (bc' − b'c; ca' − c'a; ab' − a'b). Vectơ [u, v] vuông góc với cả u và v."
+      "type": "card",
+      "title": "Vectơ pháp tuyến",
+      "text": "Vectơ n ≠ 0 là vectơ pháp tuyến của mặt phẳng (α) nếu giá của n {k vuông góc} với (α).",
+      "tip": "Một mặt phẳng có vô số vectơ pháp tuyến, cùng phương với nhau.",
+      "n": 1
     },
     {
-      "type": "text",
-      "content": "Mặt phẳng đi qua M₀(x₀; y₀; z₀) và có vectơ pháp tuyến n = (A; B; C) có phương trình A(x − x₀) + B(y − y₀) + C(z − z₀) = 0, hay Ax + By + Cz + D = 0 với D = −(Ax₀ + By₀ + Cz₀). Mọi phương trình dạng Ax + By + Cz + D = 0 (A, B, C không đồng thời bằng 0) đều là phương trình tổng quát của một mặt phẳng."
+      "type": "card",
+      "title": "Tích có hướng",
+      "text": "Cho u = (a; b; c), v = (a′; b′; c′):",
+      "formulas": [
+        "[u, v] = ({k bc′ − b′c}; {k ca′ − c′a}; {k ab′ − a′b})"
+      ],
+      "points": [
+        "[u, v] vuông góc với cả u và v.",
+        "Dùng để tìm vectơ pháp tuyến khi biết hai vectơ không cùng phương nằm trong (hoặc song song với) mặt phẳng."
+      ],
+      "try": {
+        "q": "Cho u = (1; 0; 0), v = (0; 1; 0). Tích có hướng [u, v] bằng:",
+        "options": [
+          "(0; 0; 1)",
+          "(0; 0; −1)",
+          "(1; 1; 0)"
+        ],
+        "answer": 0,
+        "explain": "(0·0 − 1·0; 0·0 − 0·0; 1·1 − 0·0) = (0; 0; 1)."
+      },
+      "n": 2
     },
     {
-      "type": "text",
-      "content": "Mặt phẳng cắt Ox, Oy, Oz lần lượt tại A(a; 0; 0), B(0; b; 0), C(0; 0; c) (abc ≠ 0) có phương trình theo đoạn chắn x/a + y/b + z/c = 1."
+      "type": "card",
+      "title": "Phương trình tổng quát",
+      "text": "Mặt phẳng đi qua M₀(x₀; y₀; z₀), vectơ pháp tuyến n = (A; B; C):",
+      "formulas": [
+        "A(x − x₀) + B(y − y₀) + C(z − z₀) = 0",
+        "Ax + By + Cz + D = 0    với  {k D = −(Ax₀ + By₀ + Cz₀)}"
+      ],
+      "points": [
+        "Mọi phương trình dạng Ax + By + Cz + D = 0 (A, B, C không đồng thời bằng 0) là phương trình của một mặt phẳng."
+      ],
+      "try": {
+        "q": "Mặt phẳng đi qua M(1; 2; 3) và có n = (1; 1; 1) có phương trình:",
+        "options": [
+          "x + y + z − 6 = 0",
+          "x + y + z + 6 = 0",
+          "x + y + z − 3 = 0"
+        ],
+        "answer": 0,
+        "explain": "D = −(1 + 2 + 3) = −6."
+      },
+      "n": 3
+    },
+    {
+      "type": "card",
+      "title": "Phương trình đoạn chắn",
+      "text": "Mặt phẳng cắt Ox, Oy, Oz tại A(a; 0; 0), B(0; b; 0), C(0; 0; c) với abc ≠ 0:",
+      "formulas": [
+        "{k x/a + y/b + z/c = 1}"
+      ],
+      "n": 4
     },
     {
       "type": "figure",
@@ -31,12 +82,57 @@
       "caption": "Mặt phẳng cắt Ox, Oy, Oz tại A, B, C: phương trình đoạn chắn x/a + y/b + z/c = 1."
     },
     {
-      "type": "text",
-      "content": "Hai mặt phẳng (P): Ax + By + Cz + D = 0 và (Q): A'x + B'y + C'z + D' = 0: (P) ⊥ (Q) khi và chỉ khi AA' + BB' + CC' = 0; (P) ∥ (Q) khi và chỉ khi n' = kn (k ≠ 0) và D' ≠ kD."
+      "type": "card",
+      "title": "Hai mặt phẳng (P), (Q)",
+      "text": "(P): Ax + By + Cz + D = 0 và (Q): A′x + B′y + C′z + D′ = 0",
+      "table": {
+        "head": [
+          "Quan hệ",
+          "Điều kiện"
+        ],
+        "rows": [
+          [
+            "Vuông góc",
+            "AA′ + BB′ + CC′ = 0"
+          ],
+          [
+            "Song song",
+            "n′ = kn (k ≠ 0) và D′ ≠ kD"
+          ]
+        ]
+      },
+      "wrong": "Có n′ = kn là hai mặt phẳng song song.",
+      "right": "Phải có thêm D′ ≠ kD; nếu D′ = kD thì hai mặt phẳng {k trùng nhau}.",
+      "try": {
+        "q": "(P): x + y + z − 1 = 0 và (Q): x − y + 3 = 0. Hai mặt phẳng:",
+        "options": [
+          "Vuông góc",
+          "Song song",
+          "Trùng nhau"
+        ],
+        "answer": 0,
+        "explain": "AA′ + BB′ + CC′ = 1·1 + 1·(−1) + 1·0 = 0."
+      },
+      "n": 5
     },
     {
-      "type": "text",
-      "content": "Khoảng cách từ điểm M₀(x₀; y₀; z₀) đến mặt phẳng (P): Ax + By + Cz + D = 0 là d(M₀, (P)) = |Ax₀ + By₀ + Cz₀ + D| / √(A² + B² + C²)."
+      "type": "card",
+      "title": "Khoảng cách từ điểm đến mặt phẳng",
+      "formulas": [
+        "d(M₀, (P)) = {k |Ax₀ + By₀ + Cz₀ + D| / √(A² + B² + C²)}"
+      ],
+      "tip": "Thế toạ độ điểm vào vế trái, lấy giá trị tuyệt đối, chia cho độ dài vectơ pháp tuyến.",
+      "try": {
+        "q": "Khoảng cách từ O(0; 0; 0) đến (P): 2x − 2y + z − 3 = 0 bằng:",
+        "options": [
+          "1",
+          "3",
+          "1/3"
+        ],
+        "answer": 0,
+        "explain": "|−3|/√(4 + 4 + 1) = 3/3 = 1."
+      },
+      "n": 6
     },
     {
       "type": "method",

@@ -10,12 +10,31 @@
   "bookPage": 60,
   "theory": [
     {
-      "type": "text",
-      "content": "Trong không gian, ba trục Ox, Oy, Oz đôi một vuông góc tại gốc O; i, j, k là các vectơ đơn vị trên các trục. Hệ ba trục đó là hệ toạ độ Descartes vuông góc Oxyz; O là gốc toạ độ, các mặt phẳng (Oxy), (Oyz), (Ozx) là các mặt phẳng toạ độ."
+      "type": "summary",
+      "label": "Cần nhớ",
+      "content": "Hệ Oxyz có ba trục {k đôi một vuông góc} tại O. M(x; y; z) khi OM = xi + yj + zk. Vectơ MN = (x_N − x_M; y_N − y_M; z_N − z_M): {k điểm cuối trừ điểm đầu}. Hình chiếu lên mặt phẳng toạ độ thì thành phần còn lại bằng 0."
     },
     {
-      "type": "text",
-      "content": "Với điểm M bất kì, bộ ba số (x; y; z) duy nhất sao cho OM = xi + yj + zk được gọi là toạ độ của M; viết M = (x; y; z). Nếu M là đỉnh đối diện O của hình hộp chữ nhật OABC.O'A'B'C' với A, B, C thuộc các tia Ox, Oy, Oz thì OM = OA + OB + OC, nên toạ độ của M là độ dài các cạnh tương ứng."
+      "type": "card",
+      "title": "Hệ toạ độ Oxyz",
+      "points": [
+        "Ba trục Ox, Oy, Oz đôi một vuông góc tại gốc O; i, j, k là các vectơ đơn vị trên ba trục.",
+        "Hệ ba trục đó là hệ toạ độ Descartes vuông góc {k Oxyz}; O là gốc toạ độ.",
+        "Các mặt phẳng (Oxy), (Oyz), (Ozx) là các {k mặt phẳng toạ độ}."
+      ],
+      "n": 1
+    },
+    {
+      "type": "card",
+      "title": "Toạ độ của một điểm",
+      "formulas": [
+        "M = (x; y; z)  ⇔  {k OM = xi + yj + zk}"
+      ],
+      "points": [
+        "Bộ ba số (x; y; z) là duy nhất với mỗi điểm M.",
+        "Nếu M là đỉnh đối diện O của hình hộp chữ nhật OABC.O′A′B′C′ (A, B, C thuộc các tia Ox, Oy, Oz) thì OM = OA + OB + OC, nên toạ độ của M là độ dài các cạnh tương ứng."
+      ],
+      "n": 2
     },
     {
       "type": "figure",
@@ -23,16 +42,85 @@
       "caption": "Hệ toạ độ Oxyz: điểm M có toạ độ (x; y; z) khi OM = xi + yj + zk."
     },
     {
-      "type": "text",
-      "content": "Với vectơ a bất kì, bộ ba số (x; y; z) duy nhất sao cho a = xi + yj + zk được gọi là toạ độ của a, viết a = (x; y; z). Toạ độ của vectơ a cũng là toạ độ của điểm M sao cho OM = a. Hai vectơ bằng nhau khi và chỉ khi có toạ độ bằng nhau."
+      "type": "card",
+      "title": "Toạ độ của một vectơ",
+      "formulas": [
+        "a = (x; y; z)  ⇔  {k a = xi + yj + zk}",
+        "i = (1; 0; 0),  j = (0; 1; 0),  k = (0; 0; 1)"
+      ],
+      "points": [
+        "Toạ độ của vectơ a cũng là toạ độ của điểm M sao cho OM = a.",
+        "Hai vectơ bằng nhau khi và chỉ khi các toạ độ tương ứng bằng nhau."
+      ],
+      "n": 3
     },
     {
-      "type": "text",
-      "content": "Nếu M(x_M; y_M; z_M) và N(x_N; y_N; z_N) thì MN = (x_N − x_M; y_N − y_M; z_N − z_M). Toạ độ các vectơ đơn vị: i = (1; 0; 0), j = (0; 1; 0), k = (0; 0; 1)."
+      "type": "card",
+      "title": "Toạ độ vectơ MN",
+      "formulas": [
+        "MN = ({k x_N − x_M}; {k y_N − y_M}; {k z_N − z_M})"
+      ],
+      "wrong": "MN = M − N (lấy điểm đầu trừ điểm cuối).",
+      "right": "MN = {k điểm cuối − điểm đầu}, tức N − M.",
+      "try": {
+        "q": "Cho A(1; 2; 3), B(4; 6; 8). Toạ độ vectơ AB là:",
+        "options": [
+          "(3; 4; 5)",
+          "(−3; −4; −5)",
+          "(5; 8; 11)"
+        ],
+        "answer": 0,
+        "explain": "AB = (4 − 1; 6 − 2; 8 − 3) = (3; 4; 5)."
+      },
+      "n": 4
     },
     {
-      "type": "text",
-      "content": "Hình chiếu vuông góc của M(x; y; z) lên các trục Ox, Oy, Oz có toạ độ lần lượt là (x; 0; 0), (0; y; 0), (0; 0; z); lên các mặt phẳng (Oxy), (Oyz), (Ozx) có toạ độ lần lượt là (x; y; 0), (0; y; z), (x; 0; z)."
+      "type": "card",
+      "title": "Hình chiếu vuông góc của M(x; y; z)",
+      "table": {
+        "head": [
+          "Lên",
+          "Toạ độ hình chiếu"
+        ],
+        "rows": [
+          [
+            "Trục Ox",
+            "(x; 0; 0)"
+          ],
+          [
+            "Trục Oy",
+            "(0; y; 0)"
+          ],
+          [
+            "Trục Oz",
+            "(0; 0; z)"
+          ],
+          [
+            "Mặt phẳng (Oxy)",
+            "(x; y; 0)"
+          ],
+          [
+            "Mặt phẳng (Oyz)",
+            "(0; y; z)"
+          ],
+          [
+            "Mặt phẳng (Ozx)",
+            "(x; 0; z)"
+          ]
+        ]
+      },
+      "tip": "Chiếu lên trục nào thì giữ lại toạ độ của trục đó; chiếu lên mặt phẳng thì thành phần của trục còn lại bằng 0.",
+      "try": {
+        "q": "Hình chiếu vuông góc của M(1; 2; 3) lên mặt phẳng (Oxy) là:",
+        "options": [
+          "(1; 2; 0)",
+          "(0; 2; 3)",
+          "(1; 0; 3)"
+        ],
+        "answer": 0,
+        "explain": "Mặt phẳng (Oxy) có z = 0 nên giữ x, y và đặt z = 0: (1; 2; 0)."
+      },
+      "n": 5
     }
   ],
   "examples": [

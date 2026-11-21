@@ -202,8 +202,17 @@
     for (let t = from; t <= to && days.length < 366; t += DAY) {
       const d = new Date(t); d.setHours(0, 0, 0, 0);
       const day = { t: d.getTime(), correct: 0, total: 0, lessons: 0 };
-      list.forEach((a) => { if (a.t >= day.t && a.t < day.t + DAY) { day.correct += a.correct; day.total += a.total; day.lessons += 1; } });
+      const ds = {};
+      list.forEach((a) => {
+        if (a.t >= day.t && a.t < day.t + DAY) {
+          day.correct += a.correct; day.total += a.total; day.lessons += 1;
+          const k = a.subject + '|' + a.grade;
+          const x = ds[k] || (ds[k] = { subject: a.subject, grade: a.grade, correct: 0, total: 0, lessons: 0 });
+          x.correct += a.correct; x.total += a.total; x.lessons += 1;
+        }
+      });
       day.wrong = day.total - day.correct; day.pct = pct(day);
+      day.subjects = markPass(Object.values(ds).map((x) => Object.assign(x, { wrong: x.total - x.correct, pct: pct(x) })).sort((a, b) => b.total - a.total), goals);
       day.reached = !subject && day.total >= goalFor(goals, day.t);
       days.push(day);
     }

@@ -112,12 +112,39 @@ function richText(str) {
   let last = 0; let m;
   const text = String(str);
   while ((m = re.exec(text))) {
-    if (m.index > last) frag.append(text.slice(last, m.index));
-    frag.append(el('span', { class: 'rt rt-' + m[1] }, m[2]));
+    if (m.index > last) appendLimits(frag, text.slice(last, m.index));
+    const sp = el('span', { class: 'rt rt-' + m[1] });
+    appendLimits(sp, m[2]);
+    frag.append(sp);
     last = m.index + m[0].length;
   }
-  if (last < text.length) frag.append(text.slice(last));
+  if (last < text.length) appendLimits(frag, text.slice(last));
   return frag;
+}
+
+// Tích phân có cận: viết ∫_a^b hoặc |_a^b (cận một kí tự) thì hiện cận dưới, cận trên xếp chồng cạnh dấu.
+// Chỉ số dưới: x_A, y_CĐ, Q_r, a_{p+1} hiện thành chỉ số nhỏ ở dưới.
+function appendLimits(parent, text) {
+  const re = /(∫|\|)_([A-Za-z0-9])\^([A-Za-z0-9])/g;
+  let last = 0; let m;
+  while ((m = re.exec(text))) {
+    if (m.index > last) appendSubs(parent, text.slice(last, m.index));
+    parent.append(m[1], el('span', { class: 'lim' }, el('span', {}, m[3]), el('span', {}, m[2])));
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) appendSubs(parent, text.slice(last));
+}
+
+function appendSubs(parent, text) {
+  const re = /_(\{[^}]+\}|[A-Za-z0-9ĐĐ]+)/g;
+  let last = 0; let m;
+  while ((m = re.exec(text))) {
+    if (m.index > last) parent.append(text.slice(last, m.index));
+    const sub = m[1].startsWith('{') ? m[1].slice(1, -1) : m[1];
+    parent.append(el('sub', {}, sub));
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) parent.append(text.slice(last));
 }
 
 function plainText(str) { return String(str).replace(/\{[svck] ([^}]+)\}/g, '$1'); }
