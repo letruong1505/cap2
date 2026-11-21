@@ -924,3 +924,11 @@ button.ghost:hover { background: var(--paper); }
 .solid3d-reset:hover { background: var(--paper); }
 .pass-ok { color: #1a7f37; }
 .pass-bad { color: #c62828; }
+
+.dchart { display: flex; align-items: stretch; gap: 4px; height: 150px; }
+.dchart.many { gap: 1px; }
+.dc-col { flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; font-size: 11px; color: #5b6773; }
+.dc-bar { flex: 1; width: 100%; display: flex; align-items: flex-end; justify-content: center; border-bottom: 1px solid #cfe0ea; }
+.dc-stack { width: 70%; max-width: 34px; display: flex; flex-direction: column; border-radius: 4px 4px 0 0; overflow: hidden; }
+.dc-col small { font-size: 10px; white-space: nowrap; }
+.dc-n { font-size: 10px; }
