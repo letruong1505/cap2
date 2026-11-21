@@ -321,6 +321,30 @@
     return c;
   }
 
+  /* Biểu đồ cột: mỗi ngày một cột xếp chồng (xanh = đúng, đỏ = sai), cao theo số câu; dùng cùng lúc với lịch khi có từ 2 ngày. */
+  function dayChart(r) {
+    const max = Math.max(1, ...r.days.map((d) => d.total));
+    const many = r.days.length > 14;
+    const step = r.days.length <= 14 ? 1 : Math.ceil(r.days.length / 10);
+    const wrap = h('div', { class: 'dchart' + (many ? ' many' : ''), role: 'img', 'aria-label': 'Biểu đồ số câu đúng và sai theo từng ngày' });
+    r.days.forEach((d, i) => {
+      const dt = new Date(d.t);
+      const col = h('div', { class: 'dc-col', title: d.total ? `${fmtFull(d.t)}: đúng ${d.correct}, sai ${d.wrong} (${d.pct}%)` : `${fmtFull(d.t)}: chưa học` });
+      col.append(h('span', { class: 'dc-n' }, d.total && !many ? String(d.total) : '\u00a0'));
+      const bar = h('div', { class: 'dc-bar' });
+      if (d.total) {
+        const hh = Math.max(4, Math.round((100 * d.total) / max));
+        const stack = h('div', { class: 'dc-stack', style: `height:${hh}%` });
+        if (d.wrong) stack.append(h('div', { class: 'q-bad', style: `flex:${d.wrong}` }));
+        if (d.correct) stack.append(h('div', { class: 'q-ok', style: `flex:${d.correct}` }));
+        bar.append(stack);
+      }
+      col.append(bar, h('small', {}, i % step === 0 ? dt.toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit' }) : '\u00a0'));
+      wrap.append(col);
+    });
+    return wrap;
+  }
+
   function calendar(r, today) {
     const wrap = h('div', { class: 'cal' });
     ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN'].forEach((n) => wrap.append(h('div', { class: 'cal-h' }, n)));
@@ -370,7 +394,7 @@
 
     body.append(h('div', { class: 'goal-box' }, h('h2', {}, 'Chất lượng làm bài'), qualityBar(r.correct, r.total, true)));
     if (r.days.length > 1 || r.total) {
-      body.append(h('h2', { class: 'rep-h' }, r.days.length <= 7 ? 'Lịch tuần' : 'Lịch học'), calendar(r, today));
+      body.append(h('h2', { class: 'rep-h' }, 'Biểu đồ theo ngày'), h('div', { class: 'goal-box' }, dayChart(r), h('p', { class: 'meta' }, 'Xanh: câu đúng · Đỏ: câu sai')), h('h2', { class: 'rep-h' }, r.days.length <= 7 ? 'Lịch tuần' : 'Lịch học'), calendar(r, today));
     }
     if (r.subjects.length) {
       const box = h('div', { class: 'goal-box' }, h('h2', {}, 'Theo môn học'));
@@ -471,7 +495,7 @@
         const r = S.buildReport(d.rows, { from: rg.from, to: rg.to, subject: pvView.subject, grade: pvView.grade }, d.goals);
         body.append(h('p', { class: 'meta' }, `${fmtFull(r.from)} → ${fmtFull(r.to)}`));
         body.append(h('div', { class: 'goal-box' }, h('h2', {}, 'Chất lượng làm bài'), qualityBar(r.correct, r.total, true)));
-        if (r.days.length > 1 || r.total) body.append(h('h2', { class: 'rep-h' }, r.days.length <= 7 ? 'Lịch tuần' : 'Lịch học'), calendar(r, today));
+        if (r.days.length > 1 || r.total) body.append(h('h2', { class: 'rep-h' }, 'Biểu đồ theo ngày'), h('div', { class: 'goal-box' }, dayChart(r), h('p', { class: 'meta' }, 'Xanh: câu đúng · Đỏ: câu sai')), h('h2', { class: 'rep-h' }, r.days.length <= 7 ? 'Lịch tuần' : 'Lịch học'), calendar(r, today));
         if (r.subjects.length) {
           const box = h('div', { class: 'goal-box' }, h('h2', {}, 'Theo môn học'));
           r.subjects.forEach((s) => box.append(h('p', {}, `${subjName(s.subject)} lớp ${s.grade}: ${s.lessons} bài · `, h('strong', { class: s.passed ? 'pass-ok' : 'pass-bad' }, s.passed ? `Đạt (${s.pct}% ≥ ${s.need}%)` : `Không đạt (${s.pct}% < ${s.need}%)`)), qualityBar(s.correct, s.total, true)));
