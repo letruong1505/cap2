@@ -53,3 +53,9 @@ test('khóa Tư duy & lập trình có trong danh sách khóa của app Phụ hu
   const c = w.window.PARENT_COURSES['tu-duy-lap-trinh'];
   assert.ok(c.content.length >= 3 && /Scratch/.test(c.content.join()) && /Python/.test(c.content.join()));
 });
+
+test('app Phụ huynh: nút bấm gắn bằng addEventListener (CSP chặn onclick dạng chuỗi); khóa người đi làm ghi "Mua khóa học"', () => {
+  const src = fs.readFileSync(path.join(__dirname, '..', 'parent', 'parent.js'), 'utf8');
+  assert.match(src, /k\.startsWith\('on'\) && typeof v === 'function'\) e\.addEventListener/);
+  assert.match(src, /ai-nguoi-di-lam\/\.test\(x\.id\) \? 'Mua khóa học'/);
+});
