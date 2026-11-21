@@ -746,13 +746,16 @@ function renderLicense(license) {
   }
   courses.push('Định hướng công nghệ quốc gia · Miễn phí');
   if (license.machineId) children.push(el('div', { class: 'muted' }, `Mã máy: ${license.machineId} (gửi mã này khi mua khoá)`));
-  status.replaceChildren(
-    el('h2', {}, 'Thời hạn bản quyền & khóa học đã đăng ký'),
-    el('div', { class: 'days' }, termBig),
-    el('div', { class: 'muted' }, termSmall),
-    el('div', { class: 'license-courses-label' }, 'Khóa học đã đăng ký'),
-    el('ul', { class: 'license-courses' }, ...courses.map((c) => el('li', {}, c))),
-  );
+  // Thu gọn như "Lời nhắn từ Nam Linh": dòng tiêu đề luôn thấy thời hạn, bấm mới xổ danh sách khóa học.
+  const wasOpen = !!status.querySelector('details[open]');
+  const det = el('details', { class: 'license-fold' },
+    el('summary', {}, el('span', { class: 'license-fold-title' }, 'Thời hạn bản quyền & khóa học'), el('b', { class: 'license-fold-term' }, termBig)),
+    el('div', { class: 'license-fold-body' },
+      el('div', { class: 'muted' }, termSmall),
+      el('div', { class: 'license-courses-label' }, 'Khóa học đã đăng ký'),
+      el('ul', { class: 'license-courses' }, ...courses.map((c) => el('li', {}, c)))));
+  if (wasOpen) det.open = true;
+  status.replaceChildren(det);
 
   const input = el('input', { type: 'text', id: 'license-key', placeholder: 'Dán khoá kích hoạt (NL1-...)', autocomplete: 'off', spellcheck: 'false' });
   const btn = el('button', { type: 'button', class: 'primary' }, license.status === 'ok' ? 'Đổi khoá' : 'Kích hoạt');

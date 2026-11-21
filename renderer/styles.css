@@ -1006,3 +1006,14 @@ button.dc-col.sel { background: #dcebf3; }
 .tf-note { flex-basis: 100%; font-size: 13.5px; color: #34465a; }
 .exam-result { margin: 12px 0; padding: 12px 16px; border: 2px solid var(--sky); border-radius: 12px; background: #eaf3ff; }
 .exam-result h2 { margin: 0 0 4px; }
+
+/* Hộp thời hạn bản quyền thu gọn */
+.license-status { padding: 0; }
+.license-fold summary { display: flex; align-items: baseline; gap: 10px; padding: 10px 16px; cursor: pointer; list-style: none; font-size: 14px; font-weight: 700; color: var(--mute); }
+.license-fold summary::-webkit-details-marker { display: none; }
+.license-fold summary::before { content: '▸'; }
+.license-fold[open] summary::before { content: '▾'; }
+.license-fold-title { flex: 1 1 auto; }
+.license-fold-term { color: var(--ink, #1e293b); font-size: 15px; white-space: nowrap; }
+.license-fold-body { padding: 0 16px 12px; }
+.license-fold-body .license-courses-label { margin-top: 8px; }
