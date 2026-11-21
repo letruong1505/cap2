@@ -1088,3 +1088,8 @@ button.tt-chip { cursor: pointer; }
 .aiw-lesson .code-out-l { font-size: 12px; font-weight: 700; color: #2a8a4a; margin-top: 4px; }
 .aiw-lesson pre.scratch { white-space: pre; background: #fff4d6; border: 2px solid #f2b705; border-left: 8px solid #f2b705; border-radius: 10px; padding: 10px 16px; margin: 10px 0; font: 15px/1.7 inherit; font-family: inherit; user-select: text; }
 .aiw-lesson code { background: #eef3f8; border-radius: 4px; padding: 1px 5px; font-family: Consolas, "Courier New", monospace; font-size: .92em; }
+.aiw-lesson figure.aiw-fig:has(svg.tdfig) { overflow-x: auto; }
+.aiw-lesson figure.aiw-fig svg.tdfig { min-width: 470px; }
+.aiw-lesson .tdhint { display: none; }
+@media (max-width: 640px) { .aiw-lesson .tdhint { display: inline; } }
+.aiw-lesson figure.aiw-fig svg.tdfig.tdnarrow { min-width: 0; }
