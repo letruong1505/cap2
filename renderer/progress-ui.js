@@ -80,6 +80,7 @@
   /* Khối mục tiêu ngày/tuần và điểm; grade = 0 là tất cả các lớp. */
   function renderGoals(box, grade) {
     if (!box || !P) return;
+    const wasOpen = !!box.querySelector('details.goal-fold[open]');
     box.replaceChildren();
     const data = P.load(store());
     const p = P.progress(data, Date.now(), grade);
@@ -140,6 +141,14 @@
     });
     box.append(h('p', { class: 'goal-set' }, 'Riêng từng môn (chọn xong bấm Lưu):'), grid, h('p', { class: 'goal-set' }, save));
     rewardSettings(box, grade, data);
+    /* Thu gọn như hộp thời hạn bản quyền: tiêu đề kèm tiến độ hôm nay, bấm mới xổ phần đặt mục tiêu. */
+    const kids = Array.from(box.childNodes);
+    const title = kids.shift();
+    const det = h('details', { class: 'license-fold goal-fold' },
+      h('summary', {}, h('span', { class: 'license-fold-title' }, title.textContent), h('b', { class: 'license-fold-term' }, `Hôm nay ${p.todayDone}/${p.todayGoal} câu`)),
+      h('div', { class: 'license-fold-body' }, ...kids));
+    if (wasOpen) det.open = true;
+    box.replaceChildren(det);
   }
 
   /* Phần thưởng theo tuần: học sinh không thấy nội dung; phụ huynh mở bằng mã PIN. */
