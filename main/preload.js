@@ -27,6 +27,7 @@ contextBridge.exposeInMainWorld('vungBai', {
   storeAll: () => ipcRenderer.sendSync('store:all'),
   storeSet: (key, value) => ipcRenderer.send('store:set', key, value),
   onLicenseChanged: (cb) => ipcRenderer.on('license:changed', () => cb()),
+  courseContent: (id) => ipcRenderer.invoke('course:content', id),
   packsStatus: () => ipcRenderer.invoke('packs:status'),
   packsSync: () => ipcRenderer.invoke('packs:sync'),
   onPacks: (cb) => ipcRenderer.on('packs:status', (_e, st) => cb(st)),

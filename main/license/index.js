@@ -117,4 +117,10 @@ function annotateManifest(license, subject, manifest) {
 // Các khoá đã lưu trên máy (chuỗi NL1-...) để gửi máy chủ xin khoá giải mã gói nội dung; máy chủ tự kiểm tra chữ ký và mã máy.
 function rawKeys(dir) { return readStore(dir).keys.slice(); }
 
-module.exports = { rawKeys, currentLicense, activate, deactivate, pingCodes, registrableKeys, setRevoked, canOpen, annotateManifest, hasGrade, MAX_FREE_LESSONS };
+// Khóa Kỹ năng đã mua: khóa bản cũ 'tu-duy-lap-trinh' (bán chung) mở cả hai lộ trình Tư duy & lập trình.
+function hasCourse(license, id) {
+  if (!license || license.status !== 'ok' || !Array.isArray(license.courses)) return false;
+  return license.courses.includes(id) || (/^tu-duy-lap-trinh-/.test(id) && license.courses.includes('tu-duy-lap-trinh'));
+}
+
+module.exports = { hasCourse, rawKeys, currentLicense, activate, deactivate, pingCodes, registrableKeys, setRevoked, canOpen, annotateManifest, hasGrade, MAX_FREE_LESSONS };

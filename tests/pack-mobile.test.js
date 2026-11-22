@@ -9,7 +9,7 @@ const zlib = require('zlib');
 const nacl = require('../mobile/vendor/nacl-fast.min.js');
 const Packs = require('../mobile/bridge/packs.js');
 const Bridge = require('../mobile/bridge/bridge.js');
-const { deriveGradeKey } = require('../core/pack-format');
+const { deriveGradeKey, deriveCourseKey } = require('../core/pack-format');
 const { build } = require('../tools/build-packs');
 const { PREFIX, b64u } = require('../main/license/verify');
 const product = require('../main/product.json');
@@ -116,4 +116,37 @@ test('cầu nối: bài trả phí không có trong apk thì đọc từ gói; c
   const l = await b.api.loadLesson('toan7/tap1/b3.json');
   assert.equal(l.id, 'b3'); assert.equal(l.theory[0].figureSvg, '<svg>trả phí</svg>');
   assert.deepEqual((await b.api.packsStatus()).grades, [7]);
+});
+
+test('điện thoại: gói khóa Kỹ năng tải về, chỉ trả cho khóa đã mua; bản không tách gói thì trả rỗng', async () => {
+  const rd = tmp();
+  for (const f of ['tu-duy-content.js', 'tu-duy.js', 'gia-su-ai-content.js', 'gia-su-ai.js', 'ai-work-claude.js', 'ai-work-chatgpt.js', 'ai-work-gemini.js']) fs.copyFileSync(path.join(__dirname, '..', 'renderer', f), path.join(rd, f));
+  const out = tmp(); const built = build({ contentDir: content(), outDir: out, master: MASTER, rendererDir: rd });
+  const { publicKey, privateKey } = crypto.generateKeyPairSync('ed25519');
+  const raw = new Uint8Array(publicKey.export({ type: 'spki', format: 'der' }).subarray(-32));
+  const issue = (machine, courses) => { const body = Buffer.from(JSON.stringify({ v: 1, id: 'NL-ABC234', owner: 'T', grades: [], courses, machine, issued: '2026-01-01', expires: 'never' })); return PREFIX + b64u(body) + '.' + b64u(crypto.sign(null, body, privateKey)); };
+  const cKey = (id) => deriveCourseKey(MASTER, id).toString('base64');
+  const fetchFn = async (url) => {
+    const p = new URL(url).pathname;
+    if (p === '/api/pack/keys') return { ok: true, status: 200, json: async () => ({ base: 'b', keys: {}, courses: { 'gia-su-ai': cKey('gia-su-ai') } }) };
+    if (p === '/api/pack/index') return { ok: true, status: 200, json: async () => built.index };
+    if (p.startsWith('/api/pack/file/')) { const b = fs.readFileSync(path.join(out, p.split('/').pop())); return { ok: true, status: 200, arrayBuffer: async () => b.buffer.slice(b.byteOffset, b.byteOffset + b.length) }; }
+    return { ok: true, status: 200, json: async () => ({ revoked: [] }) };
+  };
+  const mk = (enabled) => { const mem = new Map(); return Bridge.create({ nacl, publicKey: raw, storage: { get: (k) => (mem.has(k) ? mem.get(k) : null), set: (k, v) => mem.set(k, v) }, rawDeviceId: 'android-xyz', fetchFn, fetchText: async () => { throw new Error('x'); }, product,
+    config: { ordersBaseUrl: 'https://x.test', version: '1.0.0', commit: 'abc' }, setTimeoutFn: () => {}, setIntervalFn: () => 1, packs: { enabled, store: memKV(), subtle: crypto.webcrypto.subtle, gunzip } }); };
+  const b = mk(true);
+  assert.deepEqual(await b.api.courseContent('gia-su-ai'), { ok: false, error: 'LOCKED' }); // chưa mua
+  b.license.activate(issue(b.api.machineId, ['gia-su-ai']));
+  assert.deepEqual(await b.api.courseContent('gia-su-ai'), { ok: false, error: 'NOT_DOWNLOADED' });
+  const sres = await b.packs.sync();
+  assert.equal(sres.ok, true, JSON.stringify(sres) + JSON.stringify(await b.api.packsStatus()));
+  const r = await b.api.courseContent('gia-su-ai');
+  assert.equal(r.ok, true, JSON.stringify(r).slice(0, 200) + JSON.stringify(sres));
+  assert.ok(JSON.parse(r.files.GIA_SU_AI).bai3.html);
+  assert.deepEqual(await b.api.courseContent('ai-nguoi-di-lam-claude'), { ok: false, error: 'LOCKED' });
+  assert.deepEqual((await b.api.packsStatus()).courses, ['gia-su-ai']);
+  // bản cũ (apk giữ đủ nội dung): đã mua thì trả rỗng, giao diện dùng nội dung có sẵn
+  const old = mk(false); old.license.activate(issue(old.api.machineId, ['gia-su-ai']));
+  assert.deepEqual(await old.api.courseContent('gia-su-ai'), { ok: true, files: {} });
 });

@@ -10,32 +10,38 @@ const MAX_PACK_BYTES = 40 * 1024 * 1024;
 function createPackStore({ dir, client, lic, licenseDir, enabled = true, fetchFn = (...a) => fetch(...a), send = () => {}, readFile = fs.readFileSync }) {
   const packDir = path.join(dir, 'packs');
   const stateFile = path.join(packDir, 'state.json');
-  const cache = new Map(); // grade -> { sha, files }
+  const cache = new Map(); // 'g7' | 'c:gia-su-ai' -> { sha, files }
   let status = { state: 'idle', grades: [] };
   let busy = null;
 
-  const readState = () => { try { return JSON.parse(fs.readFileSync(stateFile, 'utf8')); } catch { return { grades: {} }; } };
+  const readState = () => { try { const j = JSON.parse(fs.readFileSync(stateFile, 'utf8')); return { grades: j.grades || {}, courses: j.courses || {} }; } catch { return { grades: {}, courses: {} }; } };
   const writeState = (st) => { fs.mkdirSync(packDir, { recursive: true }); const tmp = stateFile + '.tmp'; fs.writeFileSync(tmp, JSON.stringify(st)); fs.renameSync(tmp, stateFile); };
   const setStatus = (s) => { status = { ...status, ...s }; try { send(status); } catch { /* bỏ qua */ } };
 
-  function loadGrade(grade) {
-    const ent = readState().grades[grade];
+  // kind: 'grades' (gói theo lớp) hoặc 'courses' (gói khóa Kỹ năng); id là số lớp hoặc mã khóa.
+  function loadUnit(kind, id) {
+    const ent = readState()[kind][id];
     if (!ent) return null;
-    if (cache.has(grade) && cache.get(grade).sha === ent.sha256) return cache.get(grade).files;
+    const ck = (kind === 'grades' ? 'g' : 'c:') + id;
+    if (cache.has(ck) && cache.get(ck).sha === ent.sha256) return cache.get(ck).files;
     try {
       const files = decryptPack(readFile(path.join(packDir, ent.file)), Buffer.from(ent.key, 'base64'));
-      cache.set(grade, { sha: ent.sha256, files });
+      cache.set(ck, { sha: ent.sha256, files });
       return files;
     } catch { return null; }
   }
 
   // Đọc một file nội dung dạng "<môn>/<đường dẫn>"; null nếu chưa tải.
   function read(rel) {
-    const files = loadGrade(gradeOfSubject(String(rel).split('/')[0]));
+    const files = loadUnit('grades', gradeOfSubject(String(rel).split('/')[0]));
     return files && typeof files[rel] === 'string' ? files[rel] : null;
   }
 
+  // Nội dung khóa Kỹ năng: { "TUDUY.k1218": "<json các bài>", ... }; null nếu chưa tải.
+  function readCourse(id) { return loadUnit('courses', String(id)); }
+
   const have = () => Object.keys(readState().grades).map(Number).sort((a, b) => a - b);
+  const haveCourses = () => Object.keys(readState().courses).sort();
 
   async function download(url, expectSha) {
     const r = await fetchFn(url, { signal: AbortSignal.timeout(120000) });
@@ -53,7 +59,7 @@ function createPackStore({ dir, client, lic, licenseDir, enabled = true, fetchFn
     if (!kr.ok) { setStatus({ state: kr.offline ? 'offline' : 'error', error: kr.error || '' }); return { ok: false, offline: !!kr.offline, error: kr.error }; }
     const base = String(kr.data.base || '').replace(/\/+$/, '');
     const granted = kr.data.keys || {};
-    const grades = Object.keys(granted).map(Number).sort((a, b) => a - b);
+    const grantedCourses = kr.data.courses || {};
     if (!/^https:\/\//i.test(base)) { setStatus({ state: 'error', error: 'Chưa cấu hình nơi lưu nội dung.' }); return { ok: false, error: 'base' }; }
     let idx;
     try {
@@ -62,31 +68,35 @@ function createPackStore({ dir, client, lic, licenseDir, enabled = true, fetchFn
       idx = await ir.json();
     } catch { setStatus({ state: 'offline', error: '' }); return { ok: false, offline: true }; }
     const st = readState();
-    const todo = grades.filter((g) => idx.packs && idx.packs[g] && (!st.grades[g] || st.grades[g].sha256 !== idx.packs[g].sha256 || st.grades[g].key !== granted[g]));
+    const units = [
+      ...Object.keys(granted).map(Number).sort((a, b) => a - b).map((g) => ({ kind: 'grades', id: g, p: idx.packs && idx.packs[g], key: granted[g], label: 'lớp ' + g })),
+      ...Object.keys(grantedCourses).sort().map((c) => ({ kind: 'courses', id: c, p: idx.courses && idx.courses[c], key: grantedCourses[c], label: 'khóa ' + c })),
+    ];
+    const todo = units.filter((u) => u.p && (!st[u.kind][u.id] || st[u.kind][u.id].sha256 !== u.p.sha256 || st[u.kind][u.id].key !== u.key));
     let downloaded = 0;
     for (let i = 0; i < todo.length; i++) {
-      const g = todo[i]; const p = idx.packs[g];
+      const u = todo[i]; const p = u.p;
       if (!/^[A-Za-z0-9._-]{1,80}$/.test(String(p.file))) continue;
-      setStatus({ state: 'downloading', grade: g, done: i, total: todo.length, error: '' });
+      setStatus({ state: 'downloading', grade: u.kind === 'grades' ? u.id : 0, course: u.kind === 'courses' ? u.id : '', done: i, total: todo.length, error: '' });
       try {
         const buf = await download(base + '/' + p.file, p.sha256);
-        decryptPack(buf, Buffer.from(granted[g], 'base64')); // kiểm tra giải mã được trước khi lưu
+        decryptPack(buf, Buffer.from(u.key, 'base64')); // kiểm tra giải mã được trước khi lưu
         fs.mkdirSync(packDir, { recursive: true });
         const tmp = path.join(packDir, p.file + '.tmp');
         fs.writeFileSync(tmp, buf); fs.renameSync(tmp, path.join(packDir, p.file));
-        const cur = readState(); const old = cur.grades[g];
-        cur.grades[g] = { file: p.file, sha256: p.sha256, key: granted[g] };
-        writeState(cur); cache.delete(g);
+        const cur = readState(); const old = cur[u.kind][u.id];
+        cur[u.kind][u.id] = { file: p.file, sha256: p.sha256, key: u.key };
+        writeState(cur); cache.delete((u.kind === 'grades' ? 'g' : 'c:') + u.id);
         if (old && old.file !== p.file) { try { fs.unlinkSync(path.join(packDir, old.file)); } catch { /* bỏ qua */ } }
         downloaded++;
       } catch (e) {
-        setStatus({ state: 'error', grade: g, error: 'Không tải được nội dung lớp ' + g + '. Kiểm tra mạng rồi thử lại.' });
+        setStatus({ state: 'error', grade: u.kind === 'grades' ? u.id : 0, course: u.kind === 'courses' ? u.id : '', error: 'Không tải được nội dung ' + u.label + '. Kiểm tra mạng rồi thử lại.' });
         return { ok: false, downloaded, error: String(e && e.message) };
       }
     }
-    // Lớp không còn bản quyền (thu hồi, hết hạn) thì giữ file nhưng quyền mở bài do license chặn; không xóa để khách mua lại không phải tải lại.
-    setStatus({ state: 'ready', grades: have(), done: todo.length, total: todo.length, grade: 0, error: '' });
-    return { ok: true, downloaded, grades };
+    // Khóa không còn bản quyền (thu hồi, hết hạn) thì giữ file nhưng quyền mở do license chặn; không xóa để khách mua lại không phải tải lại.
+    setStatus({ state: 'ready', grades: have(), courses: haveCourses(), done: todo.length, total: todo.length, grade: 0, course: '', error: '' });
+    return { ok: true, downloaded, grades: Object.keys(granted).map(Number) };
   }
 
   function sync() {
@@ -96,7 +106,7 @@ function createPackStore({ dir, client, lic, licenseDir, enabled = true, fetchFn
     return busy;
   }
 
-  return { read, sync, have, status: () => ({ ...status, enabled, grades: have() }), enabled };
+  return { read, readCourse, sync, have, status: () => ({ ...status, enabled, grades: have(), courses: haveCourses() }), enabled };
 }
 
 module.exports = { createPackStore };

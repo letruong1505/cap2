@@ -165,7 +165,7 @@ async function route(req, env, now) {
 // Ứng dụng Android chạy trong WebView ở địa chỉ https://localhost nên trình duyệt đòi CORS khi gọi sang máy chủ này.
 // Chỉ mở cho các địa chỉ của chính ứng dụng và chỉ cho các đường dẫn của phần mềm khách; trang quản trị và SePay không mở.
 export const APP_ORIGINS = ['https://localhost', 'http://localhost', 'capacitor://localhost'];
-const CLIENT_PATH = /^\/api\/(orders(\/[A-Za-z0-9]{6}\/status)?|pin-reset|claim-device|family\/(create|sync)|register-legacy|ping|pack\/(keys|index|file\/lop\d{1,2}-[0-9a-f]{10}\.nlp)|progress\/(settings|push|view)|app\/(android\/(latest|ota\/\d{1,9})|parent\/latest))$/;
+const CLIENT_PATH = /^\/api\/(orders(\/[A-Za-z0-9]{6}\/status)?|pin-reset|claim-device|family\/(create|sync)|register-legacy|ping|pack\/(keys|index|file\/(lop\d{1,2}|course-[a-z0-9-]{1,60})-[0-9a-f]{10}\.nlp)|progress\/(settings|push|view)|app\/(android\/(latest|ota\/\d{1,9})|parent\/latest))$/;
 
 export async function handle(req, env, now = new Date()) {
   const origin = req.headers.get('origin');

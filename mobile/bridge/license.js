@@ -125,6 +125,12 @@
 
     function deactivate() { update({ keys: [] }); }
 
+    // Khóa Kỹ năng đã mua: khóa bản cũ 'tu-duy-lap-trinh' (bán chung) mở cả hai lộ trình Tư duy & lập trình.
+    function hasCourse(license, id) {
+      if (!license || license.status !== 'ok' || !Array.isArray(license.courses)) return false;
+      return license.courses.indexOf(id) >= 0 || (/^tu-duy-lap-trinh-/.test(id) && license.courses.indexOf('tu-duy-lap-trinh') >= 0);
+    }
+
     // Các khoá đã lưu (chuỗi NL1-...) để xin khoá giải mã gói nội dung; máy chủ tự kiểm tra chữ ký, mã máy, hạn, thu hồi.
     function rawKeys() { return read().keys.slice(); }
 
@@ -170,7 +176,7 @@
       return out;
     }
 
-    return { currentLicense: currentLicense, activate: activate, deactivate: deactivate, rawKeys: rawKeys, pingCodes: pingCodes, setRevoked: setRevoked, canOpen: canOpen, annotateManifest: annotateManifest, hasGrade: hasGrade };
+    return { currentLicense: currentLicense, activate: activate, deactivate: deactivate, rawKeys: rawKeys, hasCourse: hasCourse, pingCodes: pingCodes, setRevoked: setRevoked, canOpen: canOpen, annotateManifest: annotateManifest, hasGrade: hasGrade };
   }
 
   return { PREFIX: PREFIX, MAX_FREE_LESSONS: MAX_FREE_LESSONS, parseKey: parseKey, evaluateKey: evaluateKey, today: today, create: create, b64uToBytes: b64uToBytes };

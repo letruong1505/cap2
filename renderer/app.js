@@ -712,11 +712,13 @@ function renderPackStatus(st) {
   if (!box || !st || !st.enabled) return;
   const lic = lastLicense && lastLicense.status === 'ok' ? lastLicense : null;
   const owned = lic ? (lic.grades === 'all' ? GRADES.map((g) => g.grade || g) : (lic.grades || [])) : [];
-  const missing = owned.filter((g) => !(st.grades || []).includes(g));
+  const lc = lic && Array.isArray(lic.courses) ? lic.courses : [];
+  const ownedCourses = (window.NLCourse ? window.NLCourse.PACKED : []).filter((id) => lc.includes(id) || (/^tu-duy-lap-trinh-/.test(id) && lc.includes('tu-duy-lap-trinh')));
+  const missing = owned.filter((g) => !(st.grades || []).includes(g)).concat(ownedCourses.filter((id) => !(st.courses || []).includes(id)));
   const retry = el('button', { type: 'button' }, 'Tải lại');
   retry.addEventListener('click', () => { if (window.vungBai.packsSync) window.vungBai.packsSync().catch(() => {}); });
   let msg = null;
-  if (st.state === 'downloading') { packWasBusy = true; msg = [el('b', {}, 'Đang tải nội dung khóa học'), ` (lớp ${st.grade}, ${(st.done || 0) + 1}/${st.total || 1}). Vui lòng giữ kết nối mạng.`]; }
+  if (st.state === 'downloading') { packWasBusy = true; msg = [el('b', {}, 'Đang tải nội dung khóa học'), ` (${(st.done || 0) + 1}/${st.total || 1}). Vui lòng giữ kết nối mạng.`]; }
   else if (st.state === 'ready' && packWasBusy) { packWasBusy = false; msg = [el('b', {}, 'Đã tải xong nội dung khóa học.'), ' Từ giờ học được cả khi không có mạng.']; setTimeout(() => { box.hidden = true; }, 8000); }
   else if ((st.state === 'offline' || st.state === 'error') && missing.length) msg = [el('b', {}, st.state === 'offline' ? 'Chưa tải được nội dung khóa học vì không có mạng.' : (st.error || 'Chưa tải được nội dung khóa học.')), ' Có mạng, phần mềm sẽ tự tải. ', retry];
   if (!msg) { if (st.state !== 'ready' || !packWasBusy) box.hidden = true; return; }

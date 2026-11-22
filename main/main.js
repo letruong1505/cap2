@@ -45,6 +45,15 @@ ipcMain.handle('lesson:load', (_event, relPath) => {
 });
 ipcMain.handle('packs:status', () => getPackStore().status());
 ipcMain.handle('packs:sync', () => getPackStore().sync());
+// Nội dung khóa Kỹ năng (Tư duy & lập trình, Gia sư AI, AI cho người đi làm): chỉ trả khi bản quyền có đúng khóa đó. Bản build đầy đủ
+// (không tách gói) đã có sẵn nội dung trong giao diện nên trả rỗng.
+ipcMain.handle('course:content', (_event, id) => {
+  const courseId = String(id || '');
+  if (!lic.hasCourse(licenseNow(), courseId)) return { ok: false, error: 'LOCKED' };
+  if (!packsMode) return { ok: true, files: {} };
+  const files = getPackStore().readCourse(courseId);
+  return files ? { ok: true, files } : { ok: false, error: 'NOT_DOWNLOADED' };
+});
 ipcMain.handle('app:info', () => readBuildInfo());
 ipcMain.handle('product:info', () => productInfo());
 

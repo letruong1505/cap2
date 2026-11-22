@@ -27,10 +27,16 @@ async function publicKey(pem) {
   return key;
 }
 
-export async function gradeKey(master, grade) {
+async function derive(master, label) {
   const k = await crypto.subtle.importKey('raw', enc.encode(String(master)), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
-  return b64(new Uint8Array(await crypto.subtle.sign('HMAC', k, enc.encode(`nl-pack-v1:lop${grade}`))));
+  return b64(new Uint8Array(await crypto.subtle.sign('HMAC', k, enc.encode(label))));
 }
+export const gradeKey = (master, grade) => derive(master, `nl-pack-v1:lop${grade}`);
+export const courseKey = (master, id) => derive(master, `nl-pack-v1:course:${id}`);
+
+// Các khóa Kỹ năng có gói nội dung. Khóa bản cũ 'tu-duy-lap-trinh' (đã bán chung) mở cả hai lộ trình.
+export const PACKED_COURSES = ['tu-duy-lap-trinh-scratch', 'tu-duy-lap-trinh-python', 'gia-su-ai', 'ai-nguoi-di-lam-claude', 'ai-nguoi-di-lam-chatgpt', 'ai-nguoi-di-lam-gemini'];
+const LEGACY_COURSE = { 'tu-duy-lap-trinh': ['tu-duy-lap-trinh-scratch', 'tu-duy-lap-trinh-python'] };
 
 async function parseKey(pem, text) {
   const t = String(text || '').replace(/\s+/g, '');
@@ -51,26 +57,35 @@ export async function packKeys(db, env, catalog, input, now = new Date()) {
   const keys = (Array.isArray(input.keys) ? input.keys : []).slice(0, 10);
   const today = now.toISOString().slice(0, 10);
   const granted = new Set();
+  const grantedCourses = new Set();
   for (const k of keys) {
     const p = await parseKey(env.SIGNING_KEY_PEM, k);
     if (!p) continue;
     if (p.machine !== '*' && String(p.machine).toUpperCase() !== machine) continue;
     if (p.expires !== 'never' && !(typeof p.expires === 'string' && today <= p.expires)) continue;
+    let courses = (Array.isArray(p.courses) ? p.courses : []).flatMap((c) => LEGACY_COURSE[c] || [c]).filter((c) => PACKED_COURSES.includes(c));
     let grades = p.grades === 'all' ? GRADES.slice() : (Array.isArray(p.grades) ? p.grades.filter((g) => GRADES.includes(g)) : []);
     const code = String(p.id || '').replace(/^NL-/, '');
     if (/^[A-Z0-9]{6}$/.test(code)) {
       if (await db.prepare('SELECT 1 AS x FROM revocations WHERE code = ?1 AND restored_at IS NULL').bind(code).first()) continue;
       const gone = (await db.prepare('SELECT item FROM item_revocations WHERE code = ?1 AND restored_at IS NULL').bind(code).all()).results.map((r) => r.item);
       const dropped = new Set(gone.map((id) => catalog.byId[id]?.grade).filter((g) => Number.isInteger(g)));
-      if (p.grades !== 'all') grades = grades.filter((g) => !dropped.has(g));
+      if (p.grades !== 'all') {
+        grades = grades.filter((g) => !dropped.has(g));
+        const droppedC = new Set(gone.flatMap((id) => LEGACY_COURSE[id] || [id]));
+        courses = courses.filter((c) => !droppedC.has(c));
+      }
     }
     grades.forEach((g) => granted.add(g));
+    courses.forEach((c) => grantedCourses.add(c));
   }
   const out = {};
   for (const g of [...granted].sort((a, b) => a - b)) out[g] = await gradeKey(env.PACK_MASTER, g);
+  const outCourses = {};
+  for (const c of [...grantedCourses].sort()) outCourses[c] = await courseKey(env.PACK_MASTER, c);
   const base = String(env.UPDATES_BASE || '').trim().replace(/\/+$/, '');
   if (!/^https:\/\//i.test(base)) throw new HttpError(503, 'Chưa cấu hình nơi lưu nội dung.');
-  return { base: base + '/educenter-content', keys: out };
+  return { base: base + '/educenter-content', keys: out, courses: outCourses };
 }
 
 // Chuyển tiếp tệp công khai trên R2 cho ứng dụng Android (WebView không gọi thẳng R2 được vì CORS). Gói đã mã hóa nên không cần kiểm tra bản quyền ở đây.
@@ -88,7 +103,7 @@ export async function packIndex(env) {
   return new Response(text, { status: 200, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
 }
 
-export const PACK_FILE_RE = /^lop\d{1,2}-[0-9a-f]{10}\.nlp$/;
+export const PACK_FILE_RE = /^(lop\d{1,2}|course-[a-z0-9-]{1,60})-[0-9a-f]{10}\.nlp$/;
 export async function packFile(env, name) {
   if (!PACK_FILE_RE.test(String(name))) throw new HttpError(404, 'Không tìm thấy.');
   const r = await fetch(packBase(env) + '/' + name, { cf: { cacheTtl: 86400 } }).catch(() => null);

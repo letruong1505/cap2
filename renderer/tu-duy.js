@@ -86,8 +86,9 @@
     });
   }
 
-  function lessonScreen(t, key) {
+  function lessonScreen(t, key, retried) {
     const L = content(t)[key];
+    if (window.NLCourse && canOpen(t, key) && window.NLCourse.ensureLesson(COURSE[t], L, true, () => lessonScreen(t, key, true), (m) => body.replaceChildren(h('button', { class: 'back-link', type: 'button', onclick: () => listScreen(t) }, '← Các bài ' + TRACKS[t].name.toLowerCase()), h('p', {}, m)), retried)) return;
     const box = h('article', { class: 'aiw-lesson' });
     if (L && canOpen(t, key)) box.innerHTML = '<h2>' + L.title + '</h2>' + (L.sub ? '<p class="sub">' + L.sub + '</p>' : '') + L.html;
     else box.append(h('p', {}, L ? 'Bài này mở khi mua khóa.' : 'Bài này đang được biên soạn.'));

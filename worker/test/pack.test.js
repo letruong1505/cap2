@@ -82,3 +82,26 @@ test('chuyển tiếp danh sách và gói cho Android: chỉ đúng tên gói, c
     for (const bad of ['/api/pack/file/../../x', '/api/pack/file/evil.nlp', '/api/pack/file/lop7-0123456789.nlp.x']) assert.equal((await call(bad)).status, 404, bad);
   } finally { globalThis.fetch = real; }
 });
+
+test('khóa Kỹ năng: máy có khoá khóa nào nhận khoá giải mã khóa đó; khóa bản cũ mở cả hai lộ trình Tư duy', async () => {
+  const { courseKey } = await import('../src/pack.js');
+  const a = await setup(['gia-su-ai', 'tu-duy-lap-trinh-python']);
+  const r = await packKeys(a.db, a.env, catalog, { machineId: PC, keys: [a.key] }, NOW);
+  assert.deepEqual(Object.keys(r.courses), ['gia-su-ai', 'tu-duy-lap-trinh-python']);
+  assert.equal(r.courses['gia-su-ai'], await courseKey(MASTER, 'gia-su-ai'));
+  assert.equal(r.courses['gia-su-ai'], require('../../core/pack-format.js').deriveCourseKey(MASTER, 'gia-su-ai').toString('base64'));
+  assert.deepEqual(r.keys, {});
+  // khoá cũ (cấp tay) có khóa tu-duy-lap-trinh
+  const { signKey } = await import('../src/keys.js');
+  const legacy = await signKey(a.env.SIGNING_KEY_PEM, { v: 1, id: 'NL-ZZZ999', owner: 'x', grades: [], courses: ['tu-duy-lap-trinh'], machine: PC, issued: '2026-01-01', expires: 'never' });
+  assert.deepEqual(Object.keys((await packKeys(a.db, a.env, catalog, { machineId: PC, keys: [legacy] }, NOW)).courses), ['tu-duy-lap-trinh-python', 'tu-duy-lap-trinh-scratch']);
+});
+
+test('khóa Kỹ năng bị thu hồi riêng thì mất khoá giải mã khóa đó', async () => {
+  const a = await setup(['gia-su-ai', 'tu-duy-lap-trinh-python']);
+  await revokeItem(a.db, a.code, 'gia-su-ai', 'hoàn tiền', NOW);
+  assert.deepEqual(Object.keys((await packKeys(a.db, a.env, catalog, { machineId: PC, keys: [a.key] }, NOW)).courses), ['tu-duy-lap-trinh-python']);
+  const b = await setup(['gia-su-ai']);
+  await revokeOrder(b.db, b.code, 'hoàn tiền', NOW);
+  assert.deepEqual((await packKeys(b.db, b.env, catalog, { machineId: PC, keys: [b.key] }, NOW)).courses, {});
+});

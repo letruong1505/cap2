@@ -90,7 +90,7 @@
   // Bản quyền dùng cho cả màn hình ngay khi mở: các hàm async của giao diện chờ cầu nối sẵn sàng, riêng storeAll/storeSet phải đồng bộ
   // nên dùng bản sao lưu trực tiếp trên localStorage ngay từ đầu.
   var mirror = window.NLMobileBridge.mirrorUserStore(ls, rawGet, rawSet, rawRemove);
-  var names = ['loadManifest', 'loadLesson', 'appInfo', 'productInfo', 'loadLicense', 'activateLicense', 'removeLicense', 'createOrder', 'pinReset', 'orderStatus', 'claimDevice', 'familySync', 'progressSettings', 'progressPush', 'progressView', 'updateStatus', 'checkUpdate', 'downloadUpdate', 'installUpdate', 'packsStatus', 'packsSync'];
+  var names = ['loadManifest', 'loadLesson', 'appInfo', 'productInfo', 'loadLicense', 'activateLicense', 'removeLicense', 'createOrder', 'pinReset', 'orderStatus', 'claimDevice', 'familySync', 'progressSettings', 'progressPush', 'progressView', 'updateStatus', 'checkUpdate', 'downloadUpdate', 'installUpdate', 'packsStatus', 'packsSync', 'courseContent'];
   var proxy = { version: cfg.version || 'android', platform: 'android',
     storeAll: function () { return mirror.all(); }, storeSet: function (k, v) { mirror.set(String(k), v); },
     onUpdate: function (cb) { ready.then(function (b) { b.api.onUpdate(cb); }); },
