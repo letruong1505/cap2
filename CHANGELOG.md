@@ -1,7 +1,9 @@
 ## Bản mới
-- Python 12–18: hoàn thiện giáo trình 8 chương (thêm Chương 2 đến Chương 8: kiểu dữ liệu, điều kiện, vòng lặp, cấu trúc dữ liệu, hàm, tệp và CSV, lập trình hướng đối tượng) mỗi bài có giải nghĩa từng phần câu lệnh, hơn 10 hình, 5 bài tập có lời giải, kèm dự án cuối chương; sửa hình minh họa bị lệch chữ; rà soát chính tả và viết hoa chữ đầu sau dấu chấm, dấu hai chấm trên toàn phần mềm
+- Thu gọn "Mục tiêu học tập" và "Bản quyền" (khóa kích hoạt, mã máy, mã gia đình) giống hộp thời hạn bản quyền; bấm vào tiêu đề để mở
+- Android: bản này yêu cầu cài apk mới
 
 ## Các bản trước
+- Python 12–18: hoàn thiện giáo trình 8 chương (thêm Chương 2 đến Chương 8: kiểu dữ liệu, điều kiện, vòng lặp, cấu trúc dữ liệu, hàm, tệp và CSV, lập trình hướng đối tượng) mỗi bài có giải nghĩa từng phần câu lệnh, hơn 10 hình, 5 bài tập có lời giải, kèm dự án cuối chương; sửa hình minh họa bị lệch chữ; rà soát chính tả và viết hoa chữ đầu sau dấu chấm, dấu hai chấm trên toàn phần mềm
 - Tư duy & lập trình tách thành 2 khóa bán riêng, mỗi khóa 1.490.000 đ: Scratch (8–11 tuổi) và Python (12–18 tuổi); khách đã mua khóa chung trước đây vẫn mở được cả hai
 - Python 12–18: mục lục mới 8 chương; thêm bài giới thiệu khóa học và vì sao chọn Python, Chương 1 (Python là gì và cài đặt, chương trình đầu tiên, ghi chú và đọc lỗi, tóm tắt chương) với phần giải nghĩa từng phần của câu lệnh (nếu thiếu hoặc sai thì sao); các bài còn lại hiện "Sắp ra mắt" và được thêm dần
 - Android: bản này yêu cầu cài apk mới
