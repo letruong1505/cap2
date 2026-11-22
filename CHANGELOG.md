@@ -1,5 +1,5 @@
 ## Bản mới
-- Tư duy & lập trình: mô tả hai lộ trình ghi rõ "Dành cho 8 - 12 tuổi" / "Dành cho 12 - 18 tuổi" ở dòng riêng
+- Tư duy & lập trình: mô tả hai lộ trình ghi rõ "Dành cho 8 - 11 tuổi" / "Dành cho 12 - 18 tuổi" ở dòng riêng
 - Android: bản này yêu cầu cài apk mới
 
 ## Các bản trước
