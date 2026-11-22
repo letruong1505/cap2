@@ -20,6 +20,8 @@ button.d{color:var(--red);border-color:#f3c5c0;background:#fff}button.d:hover{ba
 button.sm{padding:1px 10px;font-size:12.5px;margin-left:8px;border-radius:99px}
 .bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:6px}
 .bar input[type=text],.bar input:not([type]){min-width:280px}
+.bar .inl{display:flex;align-items:center;gap:6px;font-weight:400;margin:0}
+#recon .card{margin:8px 0}
 table{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:14px 0;box-shadow:0 1px 3px rgba(15,23,42,.06)}
 th,td{padding:11px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:14px}
 th{background:#f8fafc;color:var(--mut);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
@@ -40,8 +42,8 @@ h2::before{content:"";width:4px;height:18px;border-radius:2px;background:var(--b
 </style></head><body>
 <header><h1>Quản trị đơn - Nam Linh Educenter</h1><div class="row"><input id="tok" type="password" placeholder="Mật khẩu quản trị" autocomplete="off"><button class="p" id="go">Vào</button></div></header>
 <main><div class="bar"><select id="st"><option value="">Tất cả trạng thái</option><option value="pending">Chờ thanh toán</option><option value="underpaid">Chuyển thiếu</option><option value="paid">Đã thanh toán</option><option value="cancelled">Đã hủy</option></select>
-<input id="q" placeholder="Tìm tên, SĐT, mã đơn, mã máy"><button id="rf">Tải lại</button></div><div id="msg" role="status"></div>
-<div id="orders"></div><h2>Mã đối tác</h2><div class="card"><div class="row"><label>Mã<input id="pc" class="w180" placeholder="Ví dụ DT-HOAI" maxlength="20"></label><label>Tên đối tác<input id="pp" class="w180" placeholder="Tên đối tác" maxlength="60"></label><label>Giảm (%)<input id="pn" class="w90" type="number" value="20" min="1" max="100"></label><label>Số máy tối đa<input id="pm" class="w90" type="number" value="10" min="1" max="1000"></label><button class="p" id="pcAdd">Tạo mã</button></div><div style="margin-top:10px"><b>Áp dụng cho khóa học</b> <span class="muted">(không tick = áp dụng mọi khóa; mã giảm 100% bắt buộc tick ít nhất một khóa)</span><div id="pi" style="margin-top:6px"></div></div></div><div id="partners"></div><h2>Giao dịch chưa khớp đơn hoặc cần xử lý</h2><div id="tx"></div></main>
+<input id="q" placeholder="Tìm tên, SĐT, mã đơn, mã máy"><select id="fp"><option value="">Tất cả đối tác</option></select><label class="inl">Từ ngày <input id="fd" type="date"></label><label class="inl">Đến ngày <input id="td" type="date"></label><button id="rf">Tải lại</button></div><div id="recon"></div><div id="msg" role="status"></div>
+<div id="orders"></div><h2>Mã đối tác</h2><div class="card"><div class="row"><label>Mã<input id="pc" class="w180" placeholder="Ví dụ DT-HOAI" maxlength="20"></label><label>Đối tác<select id="pps" class="w180"><option value="">Chọn đối tác</option><option value="__new">+ Thêm đối tác mới…</option></select></label><label id="ppl" style="display:none">Tên đối tác mới<input id="pp" class="w180" placeholder="Tên đối tác" maxlength="60"></label><label>Giảm (%)<input id="pn" class="w90" type="number" value="20" min="1" max="100"></label><label>Số máy tối đa<input id="pm" class="w90" type="number" value="10" min="1" max="1000"></label><button class="p" id="pcAdd">Tạo mã</button></div><div style="margin-top:10px"><b>Áp dụng cho khóa học</b> <span class="muted">(không tick = áp dụng mọi khóa; mã giảm 100% bắt buộc tick ít nhất một khóa)</span><div id="pi" style="margin-top:6px"></div></div></div><div id="partners"></div><h2>Giao dịch chưa khớp đơn hoặc cần xử lý</h2><div id="tx"></div></main>
 <script nonce="__N__">
 (function(){
 var T=document.getElementById('tok'),msg=document.getElementById('msg'),CAT={};
@@ -72,6 +74,8 @@ function itemsCell(o,names){
   return c}
 function showKey(k){window.prompt('Khóa kích hoạt (sao chép):',k)}
 function refundOpen(o){return !!o.paid_at&&Date.now()-new Date(o.paid_at).getTime()<=7*864e5}
+function fillSel(sel,names,first,extra){var cur=sel.value;sel.replaceChildren(el('option',{value:''},first));names.forEach(function(n){sel.append(el('option',{value:n},n))});extra.forEach(function(x){sel.append(el('option',{value:x[0]},x[1]))});if(Array.prototype.some.call(sel.options,function(o){return o.value===cur}))sel.value=cur}
+function syncNew(){document.getElementById('ppl').style.display=document.getElementById('pps').value==='__new'?'':'none'}
 function loadPartners(){
   api('GET','/api/admin/partner-codes').then(function(d){
     var box=document.getElementById('partners');box.replaceChildren();
@@ -80,20 +84,24 @@ function loadPartners(){
       tb.append(el('tr',{},el('td',{},el('code',{},p.code)),el('td',{},p.partner),el('td',{},p.percent+'%'),el('td',{},p.items?p.items.split(',').map(function(i){return d.catalog&&d.catalog[i]?d.catalog[i].name:i}).join(', '):'Tất cả khóa'),el('td',{},(p.machines||0)+'/'+(p.max_machines||'∞')+' máy'),el('td',{},el('span',{class:'st '+(p.active?'on':'off')},p.active?'Đang bật':'Đã tắt')),el('td',{},String(p.used||0)),el('td',{},el('button',{onclick:function(){if(!confirm((p.active?'Tắt':'Bật')+' mã '+p.code+'?'))return;api('POST','/api/admin/partner-codes/'+encodeURIComponent(p.code)+'/active',{active:!p.active}).then(loadPartners).catch(function(e){msg.textContent=e.message})}},p.active?'Tắt':'Bật'))));
     });
     box.append(d.partners.length?tb:el('p',{},'Chưa có mã đối tác.'));
+    var names=[];d.partners.forEach(function(p){if(names.indexOf(p.partner)<0)names.push(p.partner)});names.sort(function(a,b){return a.localeCompare(b,'vi')});
+    fillSel(document.getElementById('pps'),names,'Chọn đối tác',[['__new','+ Thêm đối tác mới…']]);
+    fillSel(document.getElementById('fp'),names,'Tất cả đối tác',[]);
+    syncNew();
     var pi=document.getElementById('pi');
     if(!pi.children.length&&d.catalog){Object.keys(d.catalog).forEach(function(id){var c=el('input',{type:'checkbox',value:id,class:'pick'});pi.append(el('label',{style:'display:inline-block;margin:0 14px 6px 0;font-weight:400'},c,' '+d.catalog[id].name+' ('+money(d.catalog[id].price)+')'))})}
   }).catch(function(e){msg.textContent=e.message});
 }
 document.getElementById('pcAdd').onclick=function(){
-  api('POST','/api/admin/partner-codes',{code:document.getElementById('pc').value,partner:document.getElementById('pp').value,percent:Number(document.getElementById('pn').value),maxMachines:Number(document.getElementById('pm').value),items:Array.prototype.map.call(document.querySelectorAll('#pi input:checked'),function(c){return c.value})})
-    .then(function(){document.getElementById('pc').value='';document.getElementById('pp').value='';Array.prototype.forEach.call(document.querySelectorAll('#pi input'),function(c){c.checked=false});loadPartners()})
+  api('POST','/api/admin/partner-codes',{code:document.getElementById('pc').value,partner:(document.getElementById('pps').value==='__new'?document.getElementById('pp').value:document.getElementById('pps').value),percent:Number(document.getElementById('pn').value),maxMachines:Number(document.getElementById('pm').value),items:Array.prototype.map.call(document.querySelectorAll('#pi input:checked'),function(c){return c.value})})
+    .then(function(){document.getElementById('pc').value='';document.getElementById('pp').value='';document.getElementById('pps').value='';syncNew();Array.prototype.forEach.call(document.querySelectorAll('#pi input'),function(c){c.checked=false});loadPartners()})
     .catch(function(e){msg.textContent=e.message});
 };
 function load(){
   msg.textContent='';
   loadPartners();
   try{sessionStorage.setItem('nl-admin',T.value)}catch(e){}
-  var u='/api/admin/orders?status='+encodeURIComponent(document.getElementById('st').value)+'&q='+encodeURIComponent(document.getElementById('q').value);
+  var u='/api/admin/orders?status='+encodeURIComponent(document.getElementById('st').value)+'&q='+encodeURIComponent(document.getElementById('q').value)+'&partner='+encodeURIComponent(document.getElementById('fp').value)+'&from='+encodeURIComponent(document.getElementById('fd').value)+'&to='+encodeURIComponent(document.getElementById('td').value);
   api('GET',u).then(function(d){
     CAT=d.catalog;var box=document.getElementById('orders');box.replaceChildren();
     var tb=el('table',{},el('tr',{},el('th',{},'Mã đơn'),el('th',{},'Phụ huynh'),el('th',{},'Khóa học'),el('th',{},'Tiền'),el('th',{},'Trạng thái'),el('th',{},'Máy đã dùng'),el('th',{},'Thao tác')));
@@ -107,6 +115,7 @@ function load(){
       tb.append(el('tr',{},el('td',{},el('code',{},'NL-'+o.code),el('div',{},new Date(o.created_at).toLocaleString('vi-VN'))),el('td',{},o.name,el('div',{},o.phone)),el('td',{},itemsCell(o,names)),el('td',{},money(o.amount),o.partner?el('div',{},'Mã '+o.partner.code+' · giảm '+o.partner.percent+'%'):null,o.paid_amount&&o.paid_amount!==o.amount?el('div',{},'đã nhận '+money(o.paid_amount)):null),el('td',{},el('span',{class:'st '+o.status},LBL[o.status]||o.status),o.revoked?el('div',{},el('span',{class:'st rv'},'Đã thu hồi'),el('div',{},(o.revoked.reason||'')+' ('+new Date(o.revoked.at).toLocaleString('vi-VN')+')')):null,o.note?el('div',{},o.note):null,o.reissues?el('div',{},'đã đổi máy '+o.reissues+' lần'):null),el('td',{},devCell(o)),el('td',{},ops)));
     });
     box.append(d.orders.length?tb:el('p',{},'Chưa có đơn.'));
+    renderRecon(d.orders);
     return api('GET','/api/admin/transactions');
   }).then(function(d){
     var box=document.getElementById('tx');box.replaceChildren();if(!d)return;
@@ -115,6 +124,28 @@ function load(){
     box.append(d.transactions.length?tb:el('p',{},'Không có.'));
   }).catch(function(e){msg.textContent=e.message});
 }
+var RATE={};
+function renderRecon(orders){
+  var box=document.getElementById('recon');box.replaceChildren();
+  var who=document.getElementById('fp').value;if(!who)return;
+  var n=0,list=0,paid=0,items=0;
+  orders.forEach(function(o){
+    if(o.status!=='paid'||o.revoked)return;
+    var gone={};(o.item_revoked||[]).forEach(function(r){gone[r.item]=1});var any=false;
+    Object.keys(o.prices||{}).forEach(function(id){var p=o.prices[id];if(!p.partner_code||gone[id])return;any=true;items++;list+=p.list;paid+=p.paid});
+    if(any)n++;
+  });
+  var pct=el('input',{type:'number',min:'0',max:'100',value:RATE[who]===undefined?'':RATE[who],placeholder:'%',style:'width:80px'});
+  var out=el('b',{});
+  function calc(){var r=Number(pct.value);RATE[who]=pct.value;out.textContent=pct.value===''||!(r>=0)?'—':money(Math.round(paid*r/100))}
+  pct.oninput=calc;calc();
+  box.append(el('div',{class:'card'},el('div',{},el('b',{},'Đối soát đối tác: '+who)),
+    el('div',{},n+' đơn đã thanh toán (không tính đơn đã thu hồi hoặc khóa bị thu hồi), '+items+' khóa. Giá niêm yết '+money(list)+', khách thực trả '+money(paid)+'.'),
+    el('div',{class:'row',style:'margin-top:8px'},el('span',{},'Hoa hồng (%) trên số thực trả: '),pct,el('span',{},' = '),out),
+    el('div',{class:'muted'},'Chọn khoảng ngày để đối soát theo kỳ. Tỉ lệ hoa hồng chỉ để tính tại đây, không lưu trên máy chủ.')));
+}
+['fp','fd','td'].forEach(function(id){document.getElementById(id).onchange=load});
+document.getElementById('pps').onchange=syncNew;
 document.getElementById('go').onclick=load;document.getElementById('rf').onclick=load;document.getElementById('st').onchange=load;
 document.getElementById('q').onkeydown=function(e){if(e.key==='Enter')load()};
 if(T.value){load();setInterval(function(){if(!document.hidden&&!msg.textContent)load()},30000)}

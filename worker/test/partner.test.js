@@ -188,3 +188,24 @@ test('mã chỉ áp dụng cho khóa được chọn: khóa khác tính giá ni�
   assert.deepEqual(rows.map((r) => [r.item, r.paid_price, r.partner_code]), [['gia-su-ai', catalog.byId['gia-su-ai'].price, null], ['van-hoa-8', 0, 'FREE-2']]);
   await assert.rejects(createOrder(db, catalog, input({ machineId: 'AAAA-BBBB-CCCC', phone: '0911111111', ids: ['gia-su-ai'], partnerCode: 'FREE-2' }), NOW), /không áp dụng/);
 });
+
+test('đối soát: lọc đơn theo đối tác (mọi mã của đối tác) và theo ngày', async () => {
+  const db = fakeD1();
+  await createPartnerCode(db, { code: 'DT-A1', partner: 'Đối tác A', percent: 20 }, NOW);
+  await createPartnerCode(db, { code: 'DT-A2', partner: 'Đối tác A', percent: 10 }, NOW);
+  await createPartnerCode(db, { code: 'DT-B1', partner: 'Đối tác B', percent: 20 }, NOW);
+  let n = 0; const rnd = () => Uint8Array.from([n, 1, 2, 3, 4, ++n]);
+  await createOrder(db, catalog, input({ partnerCode: 'DT-A1', ids: ['gia-su-ai'] }), NOW, rnd);
+  await createOrder(db, catalog, input({ partnerCode: 'DT-A2', ids: ['gia-su-ai'] }), new Date('2026-12-02T10:00:00Z'), rnd);
+  await createOrder(db, catalog, input({ partnerCode: 'DT-B1', ids: ['gia-su-ai'] }), NOW, rnd);
+  await createOrder(db, catalog, input({ ids: ['gia-su-ai'] }), NOW, rnd);
+  assert.equal((await listOrders(db, {}, NOW)).length, 4);
+  const a = await listOrders(db, { partner: 'Đối tác A' }, NOW);
+  assert.equal(a.length, 2);
+  assert.ok(a.every((o) => o.partner && o.partner.name === 'Đối tác A' && Object.values(o.prices).every((p) => p.partner_code)));
+  assert.equal((await listOrders(db, { partner: 'Đối tác B' }, NOW)).length, 1);
+  assert.equal((await listOrders(db, { partner: 'Không có' }, NOW)).length, 0);
+  assert.equal((await listOrders(db, { partner: 'Đối tác A', from: '2026-12-01' }, NOW)).length, 1);
+  assert.equal((await listOrders(db, { partner: 'Đối tác A', to: '2026-11-30' }, NOW)).length, 1);
+  assert.equal((await listOrders(db, { from: 'bậy', to: "x'; DROP" }, NOW)).length, 4); // ngày sai định dạng thì bỏ qua
+});

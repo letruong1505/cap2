@@ -132,7 +132,7 @@ async function route(req, env, now) {
     if (req.method === 'GET' && path === '/admin') return adminPage();
     if (path.startsWith('/api/admin/')) {
       if (!env.ADMIN_TOKEN || !safeEqual(bearer(req), env.ADMIN_TOKEN)) return json({ error: 'Sai mật khẩu quản trị.' }, 401);
-      if (req.method === 'GET' && path === '/api/admin/orders') return json({ orders: await listOrders(db, { status: url.searchParams.get('status') || '', q: url.searchParams.get('q') || '' }, now), catalog: catalog.byId });
+      if (req.method === 'GET' && path === '/api/admin/orders') return json({ orders: await listOrders(db, { status: url.searchParams.get('status') || '', q: url.searchParams.get('q') || '', partner: url.searchParams.get('partner') || '', from: url.searchParams.get('from') || '', to: url.searchParams.get('to') || '' }, now), catalog: catalog.byId });
       if (req.method === 'POST' && path === '/api/admin/import-legacy') return json(await importLegacy(db, catalog, await body(req), now), 201);
       if (req.method === 'GET' && path === '/api/admin/transactions') return json({ transactions: await listUnmatched(db) });
       if (req.method === 'GET' && path === '/api/admin/partner-codes') return json({ partners: await listPartnerCodes(db), catalog: catalog.byId });
