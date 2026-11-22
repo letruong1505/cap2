@@ -20,8 +20,6 @@ FIXES = [
     (r'Làm bốn kịch bản phím mũi tên như chương tọa độ hoặc dùng một phím để tiến\.',
      'Làm kịch bản phím mũi tên như “Di chuyển mẫu” ở bên dưới (chỉ cần phím phải và phím trái), hoặc chỉ dùng một phím để tiến.', 1),
     (r'<p>Thêm khối giới hạn x của Giỏ', '<p class="tnote">Scratch 3 chỉ có ba phép so sánh: nhỏ hơn, bằng và lớn hơn. “Điểm &gt; 9” nghĩa là từ 10 điểm trở lên; “Bỏ lỡ &gt; 4” nghĩa là từ 5 lần bỏ lỡ.</p><p>Thêm khối giới hạn x của Giỏ', 1),
-    (r'<b>ĐƯỜNG KHÁM PHÁ', '<b>Đường khám phá', 16),
-    (r'<b>ĐƯỜNG SÁNG TẠO', '<b>Đường sáng tạo', 16),
     # (7) Chương 13: ghi kết quả khớp luật chơi (thắng ở 10 điểm, thua ở 5 lần bỏ lỡ)
     (r'ghi số điểm khi chơi một phút\.',
      'mỗi tốc độ chơi 3 ván, ghi lại số táo hứng được trước khi thua (hoặc thời gian để đủ 10 điểm).', 1),
@@ -325,25 +323,64 @@ def check_fixes():
     for pat, rep, need in FIXES:
         assert HITS.get(pat, 0) >= need, 'sửa lỗi không khớp: %s (%d lần)' % (pat, HITS.get(pat, 0))
 
-def chapter(head, bs):
-    """head: (số chương, tên, tagline). bs: block từ sau Header1 tới hết chương."""
+def tsum(goal, prep, prod):
+    return '<div class="tsum"><div class="tsum-l">Tóm tắt bài</div><ul><li><b>Mục tiêu:</b> %s</li><li><b>Chuẩn bị:</b> %s</li><li><b>Sản phẩm:</b> %s</li></ul></div>' % (goal, prep, prod)
+
+PART_OF = {}
+for _gt, _items in [('Phần I · Học cách nghĩ', range(1, 5)), ('Phần II · Dùng Scratch để kiểm chứng', range(5, 11)),
+                    ('Phần III · Tạo sản phẩm có ích', range(11, 15)), ('Phần IV · Tư duy độc lập và trách nhiệm số', range(15, 17))]:
+    for _n in _items: PART_OF[_n] = _gt
+
+def tprac(n, title, lvl, task, ans):
+    return ('<section class="tcard tprac"><h4><span class="tn">%s</span>%s <span class="lvl">%s</span></h4><p>%s</p>'
+            '<details class="tans"><summary>Xem gợi ý</summary>%s</details></section>') % (n, title, lvl, task, ans)
+
+def chapter(head, bs, product, hint):
+    """head: (số chương, tên, tagline). Chia thành 3 bài nhỏ kiểu thẻ như Python: x.1 ý tưởng, x.2 dựng trong Scratch, x.3 kiểm chứng và thử thách."""
     num, name, tag = head
-    parts = []
     secs = sections(bs)
+    box = ''.join(render_section(body) for title, body in secs if title is None)
+    goals = re.findall(r'<li>(.*?)</li>', box)
+    goals = '; '.join(g.rstrip('.') for g in goals) or 'Hoàn thành các hoạt động của chương'
+    groups = {1: [], 2: [], 3: []}
     for title, body in secs:
-        if title is None:
-            parts.append(render_section(body)); continue
+        if title is None: continue
         m = re.match(r'^(\d+)\.\s*(.*)$', title)
-        n, tt = (m.group(1), m.group(2)) if m else ('•', title)
-        parts.append(card(n, E(tt), render_section(body)))
-    return {'title': 'Chương %d · %s' % (num, name), 'sub': sentence(tag), 'html': apply_fixes('\n'.join(parts))}
+        sn = int(m.group(1)); tt = m.group(2)
+        groups[1 if sn <= 4 else 2 if sn == 5 else 3].append((sn, tt, body))
+    def cards(g, third=False):
+        out = []; k = 0
+        for sn, tt, body in g:
+            k += 1
+            if third and sn == 8:       # hai tầng thử thách -> thẻ thực hành có gợi ý
+                paras = [x for x in body if x['t'] == 'Para']
+                for j, pb in enumerate(paras):
+                    t = para(pb)
+                    mm = re.match(r'^<b>(.*?)\s*\((.*?)\):</b>\s*(.*)$', t, re.S)
+                    if mm: out.append(tprac('T%d' % (j + 1), sentence(mm.group(1)), '★☆☆' if j == 0 else '★★☆', '<i>(%s)</i> %s' % (mm.group(2), mm.group(3)), hint))
+                    else: out.append('<p>%s</p>' % t)
+                k -= 1
+                continue
+            out.append(card(str(k), E(tt), render_section(body)))
+        return '\n'.join(out)
+    sub = PART_OF[num]
+    base = 'Chương %d · %s' % (num, name)
+    L = {}
+    L['c%db1' % num] = {'title': base + ' – Câu chuyện, dự đoán và ý tưởng', 'sub': sub,
+        'html': tsum(goals, 'giấy và bút; chưa cần mở máy tính', 'ý tưởng và dự đoán của em viết ra giấy') + '\n' + cards(groups[1])}
+    L['c%db2' % num] = {'title': base + ' – Xây dựng trong Scratch', 'sub': sub,
+        'html': tsum('dựng và chạy kịch bản của chương theo từng bước nhỏ, mỗi bước tự kiểm tra một dấu hiệu', 'Scratch (trình duyệt hoặc Scratch Desktop)', product) + '\n' + cards(groups[2])}
+    L['c%db3' % num] = {'title': base + ' – Kiểm chứng, sửa lỗi và thử thách', 'sub': sub,
+        'html': tsum('dự đoán – chạy thử – giải thích, tìm và sửa lỗi, rồi mở rộng bằng thử thách', 'chương trình đã dựng ở bài trước', 'bảng dự đoán kết quả và nhật ký nhà phát minh') + '\n' + cards(groups[3], True)}
+    for v in L.values(): v['html'] = apply_fixes(v['html'])
+    return L
 
 def build():
     bl = load()
     # mốc: Header cấp 1 của từng chương/phụ lục; phần mở đầu là các block trước chương 1
     H1 = [i for i, b in enumerate(bl) if b['t'] == 'Header' and b['c'][0] == 1]
     chap_idx = [i for i in H1 if i > 43 or True]
-    lessons = {}
+    lessons = {}; chs = {}
     # ---- Mở đầu
     first_ch = next(i for i in H1 if bl[i - 1]['t'] == 'Para' and txt(bl[i - 1]['c']).startswith('CHƯƠNG 01'))
     front = bl[:first_ch - 1]
@@ -380,12 +417,21 @@ def build():
         if i >= first_ch and bl[i - 1]['t'] == 'Para' and txt(bl[i - 1]['c']).startswith('CHƯƠNG'):
             m = re.match(r'CHƯƠNG (\d+)\s*/\s*(.*)', txt(bl[i - 1]['c']))
             n = int(m.group(1)); tag = m.group(2).strip()
-            lessons['c%d' % n] = chapter((n, title, tag), body)
+            chs[n] = ((n, title, tag), body)
         elif title.startswith('PHỤ LỤC'):
             letter = title.split()[2].lower()
             if letter in ('b', 'c'): continue        # phiếu photocopy và thẻ thử thách: không đưa vào phần mềm
             name = title.split('·', 1)[1].strip()
             lessons['p' + letter] = appendix(letter.upper(), name, body)
+    prod = {}; hints = {}
+    for r in re.findall(r'<tr><td>\d+</td><td>.*?</td><td>Ch\.(\d+)(?:–(\d+))?</td><td>(.*?)</td></tr>', lessons['pa']['html']):
+        for n in range(int(r[0]), int(r[1] or r[0]) + 1): prod.setdefault(n, []).append(r[2])
+    for n, t in re.findall(r'<p><b>Chương (\d+):</b> (.*?)</p>', lessons['pg']['html']): hints[int(n)] = '<p>%s</p><p class="tnote">Gợi ý này không phải cách làm duy nhất.</p>' % t
+    for n in sorted(chs):
+        head, body = chs[n]
+        lessons.update(chapter(head, body, '; '.join(dict.fromkeys(prod[n])).lower().capitalize() if n in prod else 'chương trình của em', hints[n]))
+    order = ['tongquan', 'giaodien'] + ['c%db%d' % (n, k) for n in range(1, 17) for k in (1, 2, 3)] + ['pa', 'pd', 'pe', 'pf', 'pg']
+    lessons = {k: lessons[k] for k in order}
     check_fixes()
     return lessons
 
@@ -397,23 +443,17 @@ def appendix(letter, name, body):
         parts.append(card(m.group(1) if m else '•', E(m.group(2) if m else title), render_section(bb)))
     return {'title': 'Phụ lục %s · %s' % (letter, name), 'sub': name, 'html': apply_fixes('\n'.join(parts))}
 
-PARTS = [
-    ('Mở đầu', [('tongquan', 'Lời gửi tới người đọc'), ('giaodien', 'Làm quen giao diện và cách đọc khối lệnh')]),
-    ('Phần I · Học cách nghĩ', [('c1', None), ('c2', None), ('c3', None), ('c4', None)]),
-    ('Phần II · Dùng Scratch để kiểm chứng', [('c5', None), ('c6', None), ('c7', None), ('c8', None), ('c9', None), ('c10', None)]),
-    ('Phần III · Tạo sản phẩm có ích', [('c11', None), ('c12', None), ('c13', None), ('c14', None)]),
-    ('Phần IV · Tư duy độc lập và trách nhiệm số', [('c15', None), ('c16', None)]),
-    ('Phụ lục', [('pa', None), ('pd', None), ('pe', None), ('pf', None), ('pg', None)]),
-]
-
+CH_NAME = {}
 def toc(L):
-    out = []
-    for gt, items in PARTS:
-        rows = []
-        for key, name in items:
-            t = L[key]['title']
-            m = re.match(r'^(Chương \d+|Phụ lục [A-G])\s*·\s*(.*)$', t)
-            label, title = (m.group(1), m.group(2)) if m else ('Mở đầu', name or t)
-            rows.append({'key': key, 'label': label, 'title': title, 'ready': True})
-        out.append({'t': gt, 'items': rows})
+    out = [{'t': 'Mở đầu', 'items': [{'key': 'tongquan', 'label': 'Mở đầu', 'title': 'Lời gửi tới người đọc', 'ready': True},
+                                      {'key': 'giaodien', 'label': 'Mở đầu', 'title': 'Làm quen giao diện và cách đọc khối lệnh', 'ready': True}]}]
+    short = {1: 'Câu chuyện, dự đoán và ý tưởng', 2: 'Xây dựng trong Scratch', 3: 'Kiểm chứng, sửa lỗi và thử thách'}
+    for n in range(1, 17):
+        t = L['c%db1' % n]['title'].split(' – ')[0]
+        out.append({'t': t, 'items': [{'key': 'c%db%d' % (n, k), 'label': 'Bài %d.%d' % (n, k), 'title': short[k], 'ready': True} for k in (1, 2, 3)]})
+    rows = []
+    for k in ('pa', 'pd', 'pe', 'pf', 'pg'):
+        m = re.match(r'^(Phụ lục [A-G])\s*·\s*(.*)$', L[k]['title'])
+        rows.append({'key': k, 'label': m.group(1), 'title': m.group(2), 'ready': True})
+    out.append({'t': 'Phụ lục', 'items': rows})
     return out

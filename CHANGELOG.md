@@ -1,5 +1,5 @@
 ## Bản mới
-- Scratch 8–11 tuổi: thay giáo trình bằng cuốn "Tư duy trước, Scratch sau" (16 chương chia 4 phần, có phụ lục), kịch bản khối lệnh vẽ bằng khối màu; xem thử Mở đầu và Chương 1
+- Scratch 8–11 tuổi: giáo trình mới "Tư duy trước, Scratch sau" dạng thẻ giống Python (16 chương, mỗi chương 3 bài nhỏ có khung Tóm tắt, thẻ thực hành có gợi ý), kịch bản khối lệnh vẽ bằng khối màu; xem thử Mở đầu và Chương 1
 - Android: bản này yêu cầu cài apk mới
 
 ## Các bản trước
