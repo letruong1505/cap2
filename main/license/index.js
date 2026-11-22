@@ -114,4 +114,7 @@ function annotateManifest(license, subject, manifest) {
   return out;
 }
 
-module.exports = { currentLicense, activate, deactivate, pingCodes, registrableKeys, setRevoked, canOpen, annotateManifest, hasGrade, MAX_FREE_LESSONS };
+// Các khoá đã lưu trên máy (chuỗi NL1-...) để gửi máy chủ xin khoá giải mã gói nội dung; máy chủ tự kiểm tra chữ ký và mã máy.
+function rawKeys(dir) { return readStore(dir).keys.slice(); }
+
+module.exports = { rawKeys, currentLicense, activate, deactivate, pingCodes, registrableKeys, setRevoked, canOpen, annotateManifest, hasGrade, MAX_FREE_LESSONS };

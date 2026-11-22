@@ -30,6 +30,18 @@ npx wrangler secret put ADMIN_TOKEN                        # mật khẩu trang 
 
 Trên Windows PowerShell, lệnh đầu thay bằng: `Get-Content private.pem -Raw | npx wrangler secret put SIGNING_KEY_PEM`.
 
+### Tải nội dung khóa học về máy (PACK_MASTER)
+Bản exe chỉ giữ mục lục và 2 bài học thử; nội dung từng lớp được mã hóa, nằm trên R2 (`educenter-content/`) và máy khách tải về sau khi kích hoạt. Khoá giải mã của từng lớp sinh từ một bí mật chung `PACK_MASTER`, Worker chỉ cấp cho máy có khoá bản quyền hợp lệ (`POST /api/pack/keys`).
+
+Tạo bí mật (chạy một lần, chép kết quả vào cả hai nơi dưới đây, giữ kín):
+
+```
+node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+npx wrangler secret put PACK_MASTER        # dán chuỗi vừa tạo, rồi: npm run deploy
+```
+
+Trên GitHub: Settings → Secrets and variables → Actions → New repository secret, tên `PACK_MASTER`, dán đúng chuỗi đó. Phải deploy Worker xong rồi mới chạy workflow "Build Windows exe". Chưa đặt secret trên GitHub thì exe vẫn chứa đủ nội dung như trước.
+
 Triển khai:
 
 ```

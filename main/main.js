@@ -1,7 +1,8 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const fs = require('fs');
 const path = require('path');
-const { loadManifest, loadLesson, productInfo } = require('./content-loader');
+const { loadManifest, loadLesson, productInfo, setPackReader } = require('./content-loader');
+const { createPackStore } = require('./pack-store');
 const lic = require('./license');
 const orders = require('./orders');
 const { createUpdater } = require('./updater');
@@ -24,6 +25,15 @@ function readBuildInfo() {
 const licenseStoreDir = () => app.getPath('userData');
 const licenseNow = () => lic.currentLicense(licenseStoreDir());
 
+// Bản build mới chỉ giữ mục lục và 2 bài học thử; nội dung còn lại tải về theo lớp đã mua (main/content-mode.json do tools/build-packs.js tạo).
+const packsMode = (() => { try { return JSON.parse(fs.readFileSync(path.join(__dirname, 'content-mode.json'), 'utf8')).mode === 'packs'; } catch { return false; } })();
+let packStore = null;
+const getPackStore = () => packStore || (packStore = createPackStore({
+  dir: path.join(app.getPath('appData'), 'Nam Linh Educenter'), licenseDir: licenseStoreDir(), client: orders, lic, enabled: packsMode,
+  send: (st) => BrowserWindow.getAllWindows().forEach((w) => { if (!w.isDestroyed()) w.webContents.send('packs:status', st); }),
+}));
+const syncPacks = () => { if (packsMode) getPackStore().sync().catch(() => {}); };
+
 ipcMain.handle('manifest:load', (_event, subject) => lic.annotateManifest(licenseNow(), subject, loadManifest(subject)));
 ipcMain.handle('lesson:load', (_event, relPath) => {
   // Chặn ở tiến trình chính: bài bị khoá thì không trả nội dung dù giao diện bị chỉnh sửa.
@@ -33,6 +43,8 @@ ipcMain.handle('lesson:load', (_event, relPath) => {
   }
   return loadLesson(relPath);
 });
+ipcMain.handle('packs:status', () => getPackStore().status());
+ipcMain.handle('packs:sync', () => getPackStore().sync());
 ipcMain.handle('app:info', () => readBuildInfo());
 ipcMain.handle('product:info', () => productInfo());
 
@@ -48,6 +60,7 @@ let heartbeat = null;
 ipcMain.handle('license:activate', (_event, key) => {
   const r = lic.activate(licenseStoreDir(), key);
   if (heartbeat) heartbeat.beat().catch(() => {}); // báo ngay cho máy chủ biết máy đã kích hoạt
+  if (r && r.status === 'ok') syncPacks(); // tự tải nội dung các lớp vừa kích hoạt
   return r;
 });
 ipcMain.handle('order:create', (_event, order) => orders.createOrder(order));
@@ -57,6 +70,7 @@ ipcMain.handle('device:claim', async (_event, o) => {
   if (r.ok && r.data && r.data.key) {
     r.license = lic.activate(licenseStoreDir(), r.data.key);
     if (heartbeat) heartbeat.beat().catch(() => {});
+    syncPacks();
   }
   return r;
 });
@@ -68,6 +82,7 @@ ipcMain.handle('family:sync', async (_event, o) => {
   let activated = 0;
   for (const k of keys) { if (k && lic.activate(licenseStoreDir(), k.key).status === 'ok') activated++; }
   if (activated && heartbeat) heartbeat.beat().catch(() => {});
+  if (activated) syncPacks();
   return { ok: true, activated, total: keys.length, full: (r.data && r.data.full) || 0 };
 });
 // Khách tự đăng ký các khóa cũ (cấp bằng USB) của máy này vào hệ thống bằng số điện thoại phụ huynh; giao diện không gửi khóa.
@@ -137,6 +152,12 @@ app.whenReady().then(() => {
   heartbeat = createHeartbeat({ dir: licenseStoreDir(), client: orders, lic, version: readBuildInfo().version,
     onChange: () => BrowserWindow.getAllWindows().forEach((w) => w.webContents.send('license:changed')) });
   heartbeat.start();
+  // Nạp đọc gói nội dung đã tải; mở app thì tải bù các lớp đã có bản quyền mà chưa có nội dung, rồi kiểm tra lại mỗi 6 giờ.
+  if (packsMode) {
+    setPackReader((rel) => getPackStore().read(rel));
+    setTimeout(syncPacks, 4000);
+    setInterval(syncPacks, 6 * 60 * 60 * 1000).unref();
+  }
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow();
   });

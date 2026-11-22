@@ -1,0 +1,74 @@
+// Cấp khoá giải mã gói nội dung khóa học theo lớp cho máy có bản quyền hợp lệ.
+// Khoá lớp = HMAC-SHA256(PACK_MASTER, "nl-pack-v1:lop<N>") (khớp core/pack-format.js). Gói mã hóa nằm công khai trên R2;
+// không có khoá lớp thì không đọc được. Máy gửi các khoá NL1-... đang dùng; máy chủ kiểm tra chữ ký, mã máy, hạn, thu hồi.
+import { HttpError, MACHINE_RE } from './orders.js';
+
+const enc = new TextEncoder();
+const GRADES = [6, 7, 8, 9, 10, 11, 12];
+
+function b64uToBytes(s) {
+  const b = atob(String(s).replace(/-/g, '+').replace(/_/g, '/'));
+  return Uint8Array.from(b, (c) => c.charCodeAt(0));
+}
+const b64 = (bytes) => { let s = ''; for (const x of bytes) s += String.fromCharCode(x); return btoa(s); };
+
+function pemToDer(pem) {
+  return Uint8Array.from(atob(String(pem).replace(/-----[A-Z ]+-----/g, '').replace(/\s+/g, '')), (c) => c.charCodeAt(0));
+}
+
+// Khoá công khai Ed25519 lấy từ khoá ký (JWK của khoá riêng có trường x là khoá công khai).
+let pubCache = { pem: null, key: null };
+async function publicKey(pem) {
+  if (pubCache.pem === pem && pubCache.key) return pubCache.key;
+  const priv = await crypto.subtle.importKey('pkcs8', pemToDer(pem), { name: 'Ed25519' }, true, ['sign']);
+  const jwk = await crypto.subtle.exportKey('jwk', priv);
+  const key = await crypto.subtle.importKey('jwk', { kty: jwk.kty, crv: jwk.crv, x: jwk.x }, { name: 'Ed25519' }, false, ['verify']);
+  pubCache = { pem, key };
+  return key;
+}
+
+export async function gradeKey(master, grade) {
+  const k = await crypto.subtle.importKey('raw', enc.encode(String(master)), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
+  return b64(new Uint8Array(await crypto.subtle.sign('HMAC', k, enc.encode(`nl-pack-v1:lop${grade}`))));
+}
+
+async function parseKey(pem, text) {
+  const t = String(text || '').replace(/\s+/g, '');
+  if (!t.startsWith('NL1-') || t.indexOf('.') < 0) return null;
+  const [body, sig] = t.slice(4).split('.');
+  try {
+    const bodyBytes = b64uToBytes(body);
+    if (!(await crypto.subtle.verify('Ed25519', await publicKey(pem), b64uToBytes(sig), bodyBytes))) return null;
+    const p = JSON.parse(new TextDecoder().decode(bodyBytes));
+    return p && p.v === 1 ? p : null;
+  } catch { return null; }
+}
+
+export async function packKeys(db, env, catalog, input, now = new Date()) {
+  if (!env.PACK_MASTER || !env.SIGNING_KEY_PEM) throw new HttpError(503, 'Chưa cấu hình tải nội dung khóa học.');
+  const machine = String(input && input.machineId || '').trim().toUpperCase();
+  if (!MACHINE_RE.test(machine)) throw new HttpError(400, 'Mã máy không hợp lệ.');
+  const keys = (Array.isArray(input.keys) ? input.keys : []).slice(0, 10);
+  const today = now.toISOString().slice(0, 10);
+  const granted = new Set();
+  for (const k of keys) {
+    const p = await parseKey(env.SIGNING_KEY_PEM, k);
+    if (!p) continue;
+    if (p.machine !== '*' && String(p.machine).toUpperCase() !== machine) continue;
+    if (p.expires !== 'never' && !(typeof p.expires === 'string' && today <= p.expires)) continue;
+    let grades = p.grades === 'all' ? GRADES.slice() : (Array.isArray(p.grades) ? p.grades.filter((g) => GRADES.includes(g)) : []);
+    const code = String(p.id || '').replace(/^NL-/, '');
+    if (/^[A-Z0-9]{6}$/.test(code)) {
+      if (await db.prepare('SELECT 1 AS x FROM revocations WHERE code = ?1 AND restored_at IS NULL').bind(code).first()) continue;
+      const gone = (await db.prepare('SELECT item FROM item_revocations WHERE code = ?1 AND restored_at IS NULL').bind(code).all()).results.map((r) => r.item);
+      const dropped = new Set(gone.map((id) => catalog.byId[id]?.grade).filter((g) => Number.isInteger(g)));
+      if (p.grades !== 'all') grades = grades.filter((g) => !dropped.has(g));
+    }
+    grades.forEach((g) => granted.add(g));
+  }
+  const out = {};
+  for (const g of [...granted].sort((a, b) => a - b)) out[g] = await gradeKey(env.PACK_MASTER, g);
+  const base = String(env.UPDATES_BASE || '').trim().replace(/\/+$/, '');
+  if (!/^https:\/\//i.test(base)) throw new HttpError(503, 'Chưa cấu hình nơi lưu nội dung.');
+  return { base: base + '/educenter-content', keys: out };
+}

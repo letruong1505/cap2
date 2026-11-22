@@ -48,6 +48,18 @@ jobs:
           node tools/select-product.js thcs
           for i in 1 2 3; do npm run dist:win && exit 0; echo "build lỗi, thử lại lần $i"; sleep 20; done; exit 1
 
+      # Nội dung khóa học đóng gói mã hóa theo lớp và đẩy lên R2; bản exe chỉ giữ mục lục và 2 bài học thử, phần còn lại
+      # tải về sau khi kích hoạt. Chưa đặt secret PACK_MASTER thì bỏ qua, exe vẫn chứa đủ nội dung như trước.
+      - name: Đóng gói nội dung khóa học (mã hóa theo lớp)
+        id: packs
+        shell: bash
+        env:
+          PACK_MASTER: ${{ secrets.PACK_MASTER }}
+        run: |
+          if [ -z "$PACK_MASTER" ]; then echo "Chưa đặt PACK_MASTER: exe giữ đủ nội dung, không tách gói."; echo "packs=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          node tools/build-packs.js --out packs-out --prune
+          echo "packs=true" >> "$GITHUB_OUTPUT"
+
       - name: Build installer exe (Nam Linh Educenter)
         shell: bash
         env:
@@ -56,6 +68,23 @@ jobs:
         run: |
           node tools/select-product.js nam-linh-educenter
           for i in 1 2 3; do npm run dist:win:nam-linh && exit 0; echo "build lỗi, thử lại lần $i"; sleep 20; done; exit 1
+
+      - name: Publish course packs to Cloudflare R2
+        if: steps.packs.outputs.packs == 'true'
+        shell: bash
+        env:
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+        run: |
+          if [ -z "$R2_BUCKET" ] || [ -z "$R2_ACCOUNT_ID" ]; then echo "Chưa cấu hình R2: không đẩy gói nội dung được, dừng để không phát hành exe thiếu nội dung."; exit 1; fi
+          EP="https://$R2_ACCOUNT_ID.r2.cloudflarestorage.com"
+          cd packs-out
+          # Gói trước, index.json sau cùng để máy khách không thấy gói mới khi file chưa lên đủ.
+          for f in *.nlp; do aws s3 cp "$f" "s3://$R2_BUCKET/educenter-content/$f" --endpoint-url "$EP" --cache-control "public, max-age=31536000, immutable"; done
+          aws s3 cp index.json "s3://$R2_BUCKET/educenter-content/index.json" --endpoint-url "$EP" --cache-control "no-cache"
 
       - name: Publish update to Cloudflare R2
         shell: bash
