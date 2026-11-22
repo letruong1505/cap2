@@ -17,8 +17,26 @@ function safeResolve(relPath) {
   return full;
 }
 
+// Bài chưa nằm trong thư mục content/ (bản chỉ giữ mục lục) thì đọc từ gói đã tải về máy; chưa tải thì báo NOT_DOWNLOADED.
+let packReader = null;
+function setPackReader(fn) { packReader = fn; }
+
+function readText(relPath) {
+  const full = safeResolve(relPath);
+  try {
+    return fs.readFileSync(full, 'utf8');
+  } catch (e) {
+    if (e && e.code === 'ENOENT') {
+      const text = packReader ? packReader(String(relPath).split(path.sep).join('/')) : null;
+      if (typeof text === 'string') return text;
+      throw new Error('NOT_DOWNLOADED');
+    }
+    throw e;
+  }
+}
+
 function readJson(relPath) {
-  return JSON.parse(fs.readFileSync(safeResolve(relPath), 'utf8'));
+  return JSON.parse(readText(relPath));
 }
 
 // Kiểm tra tối thiểu khi nạp một bài. Bộ kiểm tra đầy đủ nằm ở tools/validate-content.js.
@@ -56,7 +74,7 @@ function assertSubject(subject) {
 
 // Đọc nội dung SVG của hình minh họa và gắn vào câu hỏi (figureSvg), để giao diện không cần quyền đọc file.
 function readFigure(base, rel) {
-  return fs.readFileSync(safeResolve(path.join(base, rel)), 'utf8');
+  return readText(path.join(base, rel));
 }
 
 function attachFigures(lesson, base) {
@@ -81,4 +99,4 @@ function loadLesson(relPath) {
   return attachFigures(checkLesson(readJson(relPath), relPath), base);
 }
 
-module.exports = { loadManifest, loadLesson, safeResolve, SUBJECTS, productInfo };
+module.exports = { loadManifest, loadLesson, safeResolve, setPackReader, SUBJECTS, productInfo };

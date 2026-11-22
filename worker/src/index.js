@@ -6,6 +6,7 @@ import { importLegacy } from './legacy.js';
 import { registerLegacy } from './register.js';
 import { progressSettings, progressPush, progressView } from './progress.js';
 import { receiptPage } from './receipt.js';
+import { packKeys } from './pack.js';
 
 const json = (data, status = 200) => new Response(JSON.stringify(data), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
 
@@ -109,6 +110,8 @@ async function route(req, env, now) {
     if (req.method === 'POST' && path === '/api/progress/push') return json(await progressPush(db, await body(req), now));
     if (req.method === 'POST' && path === '/api/progress/view') return json(await progressView(db, catalog, await body(req), now));
 
+    if (req.method === 'POST' && path === '/api/pack/keys') return json(await packKeys(db, env, catalog, await body(req), now));
+
     if (req.method === 'POST' && path === '/api/ping') {
       return json(await ping(db, await body(req), now, catalog));
     }
@@ -160,7 +163,7 @@ async function route(req, env, now) {
 // Ứng dụng Android chạy trong WebView ở địa chỉ https://localhost nên trình duyệt đòi CORS khi gọi sang máy chủ này.
 // Chỉ mở cho các địa chỉ của chính ứng dụng và chỉ cho các đường dẫn của phần mềm khách; trang quản trị và SePay không mở.
 export const APP_ORIGINS = ['https://localhost', 'http://localhost', 'capacitor://localhost'];
-const CLIENT_PATH = /^\/api\/(orders(\/[A-Za-z0-9]{6}\/status)?|pin-reset|claim-device|family\/(create|sync)|register-legacy|ping|progress\/(settings|push|view)|app\/(android\/(latest|ota\/\d{1,9})|parent\/latest))$/;
+const CLIENT_PATH = /^\/api\/(orders(\/[A-Za-z0-9]{6}\/status)?|pin-reset|claim-device|family\/(create|sync)|register-legacy|ping|pack\/keys|progress\/(settings|push|view)|app\/(android\/(latest|ota\/\d{1,9})|parent\/latest))$/;
 
 export async function handle(req, env, now = new Date()) {
   const origin = req.headers.get('origin');

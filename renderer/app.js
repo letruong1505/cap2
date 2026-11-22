@@ -636,6 +636,13 @@ async function openLesson(relPath, mode = 'practice') {
     window.scrollTo(0, 0);
   } catch (err) {
     console.error(err);
+    if (err && String(err.message || err).includes('NOT_DOWNLOADED')) {
+      // Khóa đã có bản quyền nhưng nội dung chưa về máy: thử tải ngay và báo khách chờ.
+      if (window.vungBai.packsSync) window.vungBai.packsSync().catch(() => {});
+      document.getElementById('empty').replaceChildren(el('p', {}, 'Nội dung khóa học này chưa được tải về máy. Phần mềm đang tải; hãy giữ kết nối mạng, đợi tải xong rồi mở lại bài.'));
+      showOnly('empty');
+      return;
+    }
     document.getElementById('empty').replaceChildren(el('p', {}, 'Không mở được bài học này. Hãy quay lại và thử lại; nếu vẫn lỗi, hãy cài lại phần mềm.'));
     showOnly('empty');
   }
@@ -698,6 +705,28 @@ function showLockedNotice() {
   window.alert('Bài này cần bản quyền. Bản dùng thử chỉ mở 2 bài đầu của mỗi môn.\nVề màn hình chọn lớp để nhập khoá kích hoạt.');
 }
 
+// Tải nội dung khóa học về máy sau khi kích hoạt: báo tiến độ ở màn hình chọn lớp. Khóa đã tải xong thì học offline được.
+let packWasBusy = false;
+function renderPackStatus(st) {
+  const box = document.getElementById('pack-status');
+  if (!box || !st || !st.enabled) return;
+  const lic = lastLicense && lastLicense.status === 'ok' ? lastLicense : null;
+  const owned = lic ? (lic.grades === 'all' ? GRADES.map((g) => g.grade || g) : (lic.grades || [])) : [];
+  const missing = owned.filter((g) => !(st.grades || []).includes(g));
+  const retry = el('button', { type: 'button' }, 'Tải lại');
+  retry.addEventListener('click', () => { if (window.vungBai.packsSync) window.vungBai.packsSync().catch(() => {}); });
+  let msg = null;
+  if (st.state === 'downloading') { packWasBusy = true; msg = [el('b', {}, 'Đang tải nội dung khóa học'), ` (lớp ${st.grade}, ${(st.done || 0) + 1}/${st.total || 1}). Vui lòng giữ kết nối mạng.`]; }
+  else if (st.state === 'ready' && packWasBusy) { packWasBusy = false; msg = [el('b', {}, 'Đã tải xong nội dung khóa học.'), ' Từ giờ học được cả khi không có mạng.']; setTimeout(() => { box.hidden = true; }, 8000); }
+  else if ((st.state === 'offline' || st.state === 'error') && missing.length) msg = [el('b', {}, st.state === 'offline' ? 'Chưa tải được nội dung khóa học vì không có mạng.' : (st.error || 'Chưa tải được nội dung khóa học.')), ' Có mạng, phần mềm sẽ tự tải. ', retry];
+  if (!msg) { if (st.state !== 'ready' || !packWasBusy) box.hidden = true; return; }
+  box.replaceChildren(...msg); box.hidden = false;
+}
+if (window.vungBai && window.vungBai.onPacks) {
+  window.vungBai.onPacks(renderPackStatus);
+  window.vungBai.packsStatus().then(renderPackStatus).catch(() => {});
+}
+
 // Máy chủ báo khóa bị thu hồi hoặc khôi phục: tải lại để mục lục và các khóa Kỹ năng đổi theo ngay.
 if (window.vungBai && window.vungBai.onLicenseChanged) {
   window.vungBai.onLicenseChanged(() => {
@@ -713,6 +742,7 @@ async function refreshLicense() {
     lastLicense = { status: 'missing' };
   }
   renderLicense(lastLicense);
+  if (window.vungBai.packsStatus) window.vungBai.packsStatus().then(renderPackStatus).catch(() => {});
   // Mục lục có thể đã đổi trạng thái khoá.
   for (const subject of Object.keys(manifestCache)) manifestCache[subject] = await window.vungBai.loadManifest(subject);
 }

@@ -41,6 +41,8 @@ function makeClient({ baseUrl = readBaseUrl, fetchFn = (...a) => fetch(...a), ma
     progressView: (o) => call('POST', '/api/progress/view', { code: String(o && o.code || ''), phone: String(o && o.phone || ''), machineId: machineId(), from: String(o && o.from || ''), to: String(o && o.to || ''), grade: Number(o && o.grade) || 0 }),
     // Tín hiệu "máy này đang mở phần mềm" + nhận danh sách mã đơn bị thu hồi. Chỉ gửi mã máy, mã đơn và số bản, không gửi dữ liệu học tập.
     ping: (o) => call('POST', '/api/ping', { machineId: machineId(), ids: Array.isArray(o && o.ids) ? o.ids.map(String) : [], version: String(o && o.version || '') }),
+    // Xin khoá giải mã gói nội dung các lớp đang có bản quyền: gửi các khoá NL1-... đã kích hoạt, máy chủ tự kiểm tra chữ ký, mã máy, hạn và thu hồi.
+    packKeys: (o) => call('POST', '/api/pack/keys', { machineId: machineId(), keys: Array.isArray(o && o.keys) ? o.keys.slice(0, 10).map(String) : [] }),
     orderStatus: (code) => call('GET', `/api/orders/${encodeURIComponent(String(code).slice(0, 6))}/status?machine=${encodeURIComponent(machineId())}`),
   };
 }
