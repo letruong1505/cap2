@@ -1107,6 +1107,16 @@ button.tt-chip { cursor: pointer; }
 .aiw-lesson .sb-ev { background: #ffbf00; color: #3a2c00; border-radius: 16px 16px 8px 8px; }
 .aiw-lesson .sb-mo { background: #4c97ff; } .aiw-lesson .sb-lo { background: #9966ff; } .aiw-lesson .sb-co { background: #ffab19; }
 .aiw-lesson .sb-se { background: #5cb1d6; } .aiw-lesson .sb-pe { background: #0fbd8c; } .aiw-lesson .sb-va { background: #ff8c1a; }
+.aiw-lesson .sb-evs { border-radius: 8px; }
+.aiw-lesson .sb-end { padding-top: 2px; padding-bottom: 2px; font-size: 12px; opacity: .85; }
+.aiw-lesson .sbk i.op { background: #59c059; color: #fff; }
+.aiw-lesson .sbk i.se { background: #5cb1d6; color: #fff; }
+.aiw-lesson .sbk i.bool { border-radius: 6px; }
+.aiw-lesson .sb + .sb { margin-top: 12px; }
+.aiw-lesson .sbt { margin: 14px 0 2px; font-weight: 700; font-size: 14px; color: #17406b; }
+.aiw-lesson ul.tchk { list-style: none; padding-left: 4px; }
+.aiw-lesson ul.tchk li::before { content: "□ "; color: #5b6773; }
+.aiw-lesson .aiw-fig img { width: 100%; height: auto; display: block; border-radius: 8px; }
 .aiw-lesson .sb-cm { background: transparent; color: #5b6773; box-shadow: none; font-style: italic; padding-left: 0; }
 .aiw-lesson .tsteps { display: grid; gap: 10px; }
 .aiw-lesson .tstep { display: flex; gap: 10px; align-items: flex-start; background: #f7fafd; border: 1px solid #dfe5ec; border-radius: 12px; padding: 10px 12px; }

@@ -1,8 +1,9 @@
 ## Bản mới
-- Tư duy & lập trình: mô tả hai lộ trình ghi rõ "Dành cho 8 - 11 tuổi" / "Dành cho 12 - 18 tuổi" ở dòng riêng
+- Scratch 8–11 tuổi: thay giáo trình bằng cuốn "Tư duy trước, Scratch sau" (16 chương chia 4 phần, có phụ lục), kịch bản khối lệnh vẽ bằng khối màu; xem thử Mở đầu và Chương 1
 - Android: bản này yêu cầu cài apk mới
 
 ## Các bản trước
+- Tư duy & lập trình: mô tả hai lộ trình ghi rõ "Dành cho 8 - 11 tuổi" / "Dành cho 12 - 18 tuổi" ở dòng riêng
 - Nếu file nội dung đã tải bị mất (xóa nhầm, dọn dữ liệu), phần mềm tự tải lại
 - Hiện % tiến độ khi tải nội dung khóa học và báo "Đã tải xong" khi hoàn tất (exe và Android)
 - Các khóa Kỹ năng (Tư duy & lập trình, Gia sư AI, AI cho người đi làm) tải nội dung về máy theo khóa đã mua sau khi kích hoạt; khách đã mua được tải bù tự động
