@@ -1,0 +1,31 @@
+{
+  "appId": "vn.namlinh.phuhuynh.win",
+  "productName": "Nam Linh Educenter cho phụ huynh",
+  "extraMetadata": { "main": "main-parent/main.js" },
+  "directories": { "app": ".", "output": "dist-parent" },
+  "files": [
+    "main-parent/**/*",
+    "main/updater.js",
+    "parent-www/**/*",
+    "build/icon.png",
+    "package.json"
+  ],
+  "win": {
+    "target": "nsis",
+    "artifactName": "Nam-Linh-Phu-Huynh-Setup-${version}.exe",
+    "icon": "build/icon.ico"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "perMachine": false,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "Nam Linh cho phụ huynh",
+    "uninstallDisplayName": "Nam Linh Educenter cho phụ huynh",
+    "deleteAppDataOnUninstall": false,
+    "installerIcon": "build/icon.ico",
+    "uninstallerIcon": "build/icon.ico"
+  },
+  "publish": [{ "provider": "generic", "url": "https://updates.invalid/phuhuynh-windows" }]
+}

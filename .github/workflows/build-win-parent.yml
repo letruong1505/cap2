@@ -1,0 +1,60 @@
+name: Build Windows exe Phu huynh
+
+# App Phụ huynh cho máy tính Windows (vn.namlinh.phuhuynh.win): nhẹ, không chứa bài học, tự cập nhật qua R2 (thư mục phuhuynh-windows).
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        shell: bash
+        env:
+          ELECTRON_SKIP_BINARY_DOWNLOAD: '1'
+        run: |
+          for i in 1 2 3; do npm install && exit 0; echo "npm install lỗi, thử lại lần $i"; rm -rf node_modules/electron; sleep 20; done; exit 1
+
+      - name: Set package version from run number
+        shell: bash
+        env:
+          RUN_NUMBER: ${{ github.run_number }}
+        run: npm pkg set version="1.0.$RUN_NUMBER"
+
+      - name: Build installer exe (Phu huynh)
+        shell: bash
+        env:
+          ELECTRON_MIRROR: https://npmmirror.com/mirrors/electron/
+          ELECTRON_BUILDER_BINARIES_MIRROR: https://npmmirror.com/mirrors/electron-builder-binaries/
+          RUN_NUMBER: ${{ github.run_number }}
+        run: |
+          for i in 1 2 3; do npm run dist:win:parent && exit 0; echo "build lỗi, thử lại lần $i"; sleep 20; done; exit 1
+
+      - name: Publish update to Cloudflare R2
+        shell: bash
+        env:
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+        run: |
+          if [ -z "$R2_BUCKET" ] || [ -z "$R2_ACCOUNT_ID" ]; then echo "Chưa cấu hình R2, bỏ qua bước đẩy bản cập nhật."; exit 0; fi
+          EP="https://$R2_ACCOUNT_ID.r2.cloudflarestorage.com"
+          cd dist-parent
+          ls
+          # Đẩy file cài đặt và blockmap trước, latest.yml sau cùng để máy khách không thấy bản mới khi file chưa lên đủ.
+          for f in *.exe *.exe.blockmap; do aws s3 cp "$f" "s3://$R2_BUCKET/phuhuynh-windows/$f" --endpoint-url "$EP"; done
+          aws s3 cp latest.yml "s3://$R2_BUCKET/phuhuynh-windows/latest.yml" --endpoint-url "$EP" --cache-control "no-cache"
+
+      - name: Upload exe
+        uses: actions/upload-artifact@v4
+        with:
+          name: nam-linh-phu-huynh-exe
+          path: dist-parent/*.exe
