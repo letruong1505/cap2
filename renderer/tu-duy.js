@@ -6,8 +6,8 @@
   const COURSE = { k811: 'tu-duy-lap-trinh-scratch', k1218: 'tu-duy-lap-trinh-python' };
   const FREE = { k811: ['tongquan', 'caidat', 'bai1'], k1218: ['tongquan', 'caidat', 'c1b2'] };
   const TRACKS = {
-    k811: { name: 'Lộ trình 8–11 tuổi', tool: 'Scratch', sub: 'Kéo thả khối lệnh để làm nhân vật di chuyển, vẽ hình và chơi trò chơi – đồng thời tập hỏi “vì sao đúng?” và nghĩ ngược.' },
-    k1218: { name: 'Lộ trình 12–18 tuổi', tool: 'Python', sub: 'Dùng Python để phân rã bài toán, kiểm thử như một nhà phản biện và giải bài bằng tư duy ngược.' },
+    k811: { name: 'Lộ trình 8–11 tuổi', who: 'Dành cho 8 - 12 tuổi', tool: 'Scratch', sub: 'Kéo thả khối lệnh để làm nhân vật di chuyển, vẽ hình và chơi trò chơi – đồng thời tập hỏi “vì sao đúng?” và nghĩ ngược.' },
+    k1218: { name: 'Lộ trình 12–18 tuổi', who: 'Dành cho 12 - 18 tuổi', tool: 'Python', sub: 'Dùng Python để phân rã bài toán, kiểm thử như một nhà phản biện và giải bài bằng tư duy ngược.' },
   };
   const LOCK = '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="7" width="10" height="7" rx="1.5" fill="currentColor"/><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>';
 
@@ -41,7 +41,7 @@
       h('header', { class: 'screen-head' }, h('p', { class: 'screen-kicker' }, 'Khóa Kỹ năng'), h('h1', {}, 'Tư duy & lập trình'),
         h('p', { class: 'screen-sub' }, 'Lập trình chỉ là công cụ. Điều khóa học rèn là tư duy phản biện (hỏi “vì sao đúng?”) và tư duy ngược (đi từ kết quả về điều kiện ban đầu). Hai khóa bán riêng, mỗi khóa 1.490.000 đ, chọn khóa đúng độ tuổi của con.')),
       h('ul', { class: 'lesson-list' }, Object.keys(TRACKS).map((t) => h('li', {}, h('button', { class: 'lesson-row', type: 'button', onclick: () => listScreen(t) },
-        h('span', { class: 'lesson-no' }, TRACKS[t].tool), h('span', { class: 'lesson-name' }, TRACKS[t].name + ' – ' + TRACKS[t].sub),
+        h('span', { class: 'lesson-no' }, TRACKS[t].tool), h('span', { class: 'lesson-name' }, TRACKS[t].who, h('br'), TRACKS[t].sub),
         owned(lic, t) ? h('span', { class: 'lesson-tag' }, 'Đã mua') : h('span', { class: 'lesson-tag' }, '1.490.000 đ'))))));
     window.scrollTo(0, 0);
   }
