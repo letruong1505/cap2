@@ -40,8 +40,10 @@ function createPackStore({ dir, client, lic, licenseDir, enabled = true, fetchFn
   // Nội dung khóa Kỹ năng: { "TUDUY.k1218": "<json các bài>", ... }; null nếu chưa tải.
   function readCourse(id) { return loadUnit('courses', String(id)); }
 
-  const have = () => Object.keys(readState().grades).map(Number).sort((a, b) => a - b);
-  const haveCourses = () => Object.keys(readState().courses).sort();
+  const onDisk = (e) => { try { return fs.statSync(path.join(packDir, e.file)).isFile(); } catch { return false; } };
+  const haveOf = (kind) => { const m = readState()[kind]; return Object.keys(m).filter((k) => onDisk(m[k])); };
+  const have = () => haveOf('grades').map(Number).sort((a, b) => a - b);
+  const haveCourses = () => haveOf('courses').sort();
 
   async function download(url, expectSha, onBytes) {
     const r = await fetchFn(url, { signal: AbortSignal.timeout(120000) });
@@ -77,7 +79,9 @@ function createPackStore({ dir, client, lic, licenseDir, enabled = true, fetchFn
       ...Object.keys(granted).map(Number).sort((a, b) => a - b).map((g) => ({ kind: 'grades', id: g, p: idx.packs && idx.packs[g], key: granted[g], label: 'lớp ' + g })),
       ...Object.keys(grantedCourses).sort().map((c) => ({ kind: 'courses', id: c, p: idx.courses && idx.courses[c], key: grantedCourses[c], label: 'khóa ' + c })),
     ];
-    const todo = units.filter((u) => u.p && (!st[u.kind][u.id] || st[u.kind][u.id].sha256 !== u.p.sha256 || st[u.kind][u.id].key !== u.key));
+    // file đã bị xóa thì tải lại dù state.json còn ghi
+    const fileOk = onDisk;
+    const todo = units.filter((u) => u.p && (!st[u.kind][u.id] || st[u.kind][u.id].sha256 !== u.p.sha256 || st[u.kind][u.id].key !== u.key || !fileOk(st[u.kind][u.id])));
     let downloaded = 0;
     const bytesTotal = todo.reduce((a, u) => a + (Number(u.p.size) || 0), 0) || 1;
     let bytesBefore = 0; let lastEmit = 0;

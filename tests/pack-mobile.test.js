@@ -70,6 +70,17 @@ test('điện thoại: tải gói đúng lớp, lưu vào kho, đọc lại cả
   assert.equal(JSON.parse(await again.read('toan7/tap1/b3.json')).id, 'b3');
 });
 
+test('điện thoại: dữ liệu gói bị mất mà state còn thì tải lại', async () => {
+  const { packs, mk, store } = world();
+  await packs.sync();
+  await store.remove('data:g7');
+  const again = mk();
+  assert.equal(await again.read('toan7/tap1/b3.json'), null);
+  const r = await again.sync();
+  assert.equal(r.downloaded, 1);
+  assert.equal(JSON.parse(await again.read('toan7/tap1/b3.json')).id, 'b3');
+});
+
 test('điện thoại: gói bị sửa thì không lưu; mất mạng thì báo offline', async () => {
   const bad = world({ corrupt: true });
   assert.equal((await bad.packs.sync()).ok, false);
