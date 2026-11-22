@@ -259,13 +259,19 @@ export async function applyPayment(db, env, catalog, tx, now = new Date()) {
   return finish(paid > order.amount ? 'paid-overpaid' : 'paid', order.code);
 }
 
-export async function listOrders(db, { status, q } = {}, now = new Date()) {
+export async function listOrders(db, { status, q, partner, from, to } = {}, now = new Date()) {
   let sql = 'SELECT code, name, phone, machine, items, amount, status, paid_amount, paid_at, created_at, reissues, note, CASE WHEN key IS NULL THEN 0 ELSE 1 END AS has_key FROM orders';
   const where = []; const args = [];
   if (status) { args.push(status); where.push('status = ?' + args.length); }
   if (q) { args.push('%' + String(q).slice(0, 40) + '%'); where.push(`(name LIKE ?${args.length} OR phone LIKE ?${args.length} OR code LIKE ?${args.length} OR machine LIKE ?${args.length})`); }
-  if (where.length) sql += ' WHERE ' + where.join(' AND ');
-  sql += ' ORDER BY created_at DESC LIMIT 200';
+  // Lọc theo đối tác (mọi mã của đối tác đó) và khoảng ngày tạo đơn, dùng để đối soát hoa hồng.
+  const partnerName = String(partner || '').trim().slice(0, 60);
+  if (partnerName) { args.push(partnerName); where.push(`code IN (SELECT code FROM order_prices WHERE partner_code IN (SELECT code FROM partner_codes WHERE partner = ?${args.length}))`); }
+  if (/^\d{4}-\d{2}-\d{2}$/.test(String(from || ''))) { args.push(from); where.push(`substr(created_at, 1, 10) >= ?${args.length}`); }
+  if (/^\d{4}-\d{2}-\d{2}$/.test(String(to || ''))) { args.push(to); where.push(`substr(created_at, 1, 10) <= ?${args.length}`); }
+  const whereSql = where.length ? ' WHERE ' + where.join(' AND ') : '';
+  const limit = partnerName || from || to ? 1000 : 200;
+  sql += whereSql + ' ORDER BY created_at DESC LIMIT ' + limit;
   const orders = (await db.prepare(sql).bind(...args).all()).results;
   // Gắn máy đã mở phần mềm và trạng thái thu hồi (hai truy vấn riêng, tránh giới hạn số tham số của D1).
   const devs = (await db.prepare('SELECT code, machine, version, first_seen, last_seen FROM devices ORDER BY last_seen DESC LIMIT 3000').all()).results;
@@ -277,13 +283,14 @@ export async function listOrders(db, { status, q } = {}, now = new Date()) {
   const itemRevs = (await db.prepare('SELECT code, item, reason, revoked_at FROM item_revocations WHERE restored_at IS NULL').all()).results;
   const byItem = new Map(); for (const r of itemRevs) { if (!byItem.has(r.code)) byItem.set(r.code, []); byItem.get(r.code).push({ item: r.item, reason: r.reason, at: r.revoked_at }); }
   // Giá từng khóa và mã đối tác của các đơn đang hiển thị (để biết số tiền hoàn cho từng khóa).
-  const priceRows = (await db.prepare('SELECT code, item, list_price, paid_price, partner_code, percent FROM order_prices WHERE code IN (SELECT code FROM orders ORDER BY created_at DESC LIMIT 200)').all()).results;
+  const priceRows = (await db.prepare('SELECT code, item, list_price, paid_price, partner_code, percent FROM order_prices WHERE code IN (SELECT code FROM orders' + whereSql + ' ORDER BY created_at DESC LIMIT ' + limit + ')').bind(...args).all()).results;
+  const pnames = new Map((await db.prepare('SELECT code, partner FROM partner_codes').all()).results.map((r) => [r.code, r.partner]));
   const byPrice = new Map();
   for (const r of priceRows) {
     if (!byPrice.has(r.code)) byPrice.set(r.code, { prices: {}, partner: null });
     const e = byPrice.get(r.code);
-    e.prices[r.item] = { list: r.list_price, paid: r.paid_price };
-    if (r.partner_code) e.partner = { code: r.partner_code, percent: r.percent };
+    e.prices[r.item] = { list: r.list_price, paid: r.paid_price, partner_code: r.partner_code || null };
+    if (r.partner_code) e.partner = { code: r.partner_code, percent: r.percent, name: pnames.get(r.partner_code) || '' };
   }
   return orders.map((o) => {
     const pr = byPrice.get(o.code) || { prices: {}, partner: null };
