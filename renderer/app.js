@@ -771,7 +771,13 @@ function renderLicense(license) {
   });
   children.push(el('div', { class: 'license-form' }, input, btn), msg);
   if (window.vungBai.claimDevice) children.push(claimDeviceBox());
-  info.replaceChildren(...children);
+  // Thu gọn phần kích hoạt như hộp thời hạn: dòng tiêu đề cho biết trạng thái, bấm mới xổ ra khoá, mã máy, mã gia đình.
+  const infoWasOpen = !!info.querySelector('details[open]');
+  const infoDet = el('details', { class: 'license-fold' },
+    el('summary', {}, el('span', { class: 'license-fold-title' }, 'Kích hoạt & mã máy'), el('b', { class: 'license-fold-term' }, license.status === 'ok' ? 'Đã kích hoạt' : 'Chưa kích hoạt')),
+    el('div', { class: 'license-fold-body' }, ...children));
+  if (infoWasOpen) infoDet.open = true;
+  info.replaceChildren(infoDet);
 }
 
 // Một đơn dùng được cho 1 máy tính và 1 điện thoại: nhập mã đơn + số điện thoại đã mua để nhận khóa cho thiết bị này.

@@ -1016,6 +1016,11 @@ button.dc-col.sel { background: #dcebf3; }
 .license-fold-title { flex: 1 1 auto; }
 .license-fold-term { color: var(--ink, #1e293b); font-size: 15px; white-space: nowrap; }
 .license-fold-body { padding: 0 16px 12px; }
+.goal-fold summary { padding: 4px 0; font-size: 18px; color: var(--ink, #1e293b); }
+.goal-fold .license-fold-body { padding: 6px 0 0; }
+#license-info .license-fold { margin-bottom: 8px; }
+#license-info .license-fold summary { padding: 6px 0; }
+#license-info .license-fold-body { padding: 4px 0 8px; }
 .license-fold-body .license-courses-label { margin-top: 8px; }
 
 /* Thời khóa biểu và nhắc học bài */
