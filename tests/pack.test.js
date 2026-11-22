@@ -118,3 +118,14 @@ test('bộ nạp nội dung: bài không có trong content/ thì đọc từ gó
   assert.equal(loader.loadLesson(rel).id, 'x');
   loader.setPackReader(null);
 });
+
+test('gói mã hóa tất định: cùng nội dung thì cùng file, đổi nội dung thì khác', () => {
+  const key = deriveGradeKey(MASTER, 9);
+  const a = encryptPack({ 'a.json': '1', 'b.json': '2' }, key);
+  assert.ok(a.equals(encryptPack({ 'a.json': '1', 'b.json': '2' }, key)));
+  assert.ok(!a.equals(encryptPack({ 'a.json': '1', 'b.json': '3' }, key)));
+  const dir = fakeContent();
+  const r1 = build({ contentDir: dir, outDir: tmp(), master: MASTER });
+  const r2 = build({ contentDir: dir, outDir: tmp(), master: MASTER });
+  assert.equal(r1.index.packs[7].sha256, r2.index.packs[7].sha256);
+});

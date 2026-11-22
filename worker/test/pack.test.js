@@ -64,3 +64,21 @@ test('chưa cấu hình PACK_MASTER thì báo 503, mã máy sai thì báo 400', 
   await assert.rejects(packKeys(db, { ...env, PACK_MASTER: '' }, catalog, { machineId: PC, keys: [key] }, NOW), (e) => e.status === 503);
   await assert.rejects(packKeys(db, env, catalog, { machineId: 'x', keys: [key] }, NOW), (e) => e.status === 400);
 });
+
+test('chuyển tiếp danh sách và gói cho Android: chỉ đúng tên gói, có CORS cho ứng dụng', async () => {
+  const { handle } = await import('../src/index.js');
+  const env = { ...testEnv().env, DB: fakeD1(), UPDATES_BASE: 'https://r2.example.com' };
+  const real = globalThis.fetch; const urls = [];
+  globalThis.fetch = async (u) => { urls.push(String(u)); return String(u).endsWith('index.json') ? new Response('{"v":1,"packs":{}}') : new Response(new Uint8Array([1, 2, 3])); };
+  try {
+    const call = (path) => handle(new Request('https://w.test' + path, { headers: { origin: 'https://localhost' } }), env);
+    const idx = await call('/api/pack/index');
+    assert.equal(idx.status, 200); assert.equal((await idx.json()).v, 1);
+    assert.equal(idx.headers.get('access-control-allow-origin'), 'https://localhost');
+    const f = await call('/api/pack/file/lop7-0123456789.nlp');
+    assert.equal(f.status, 200); assert.deepEqual([...new Uint8Array(await f.arrayBuffer())], [1, 2, 3]);
+    assert.equal(f.headers.get('access-control-allow-origin'), 'https://localhost');
+    assert.equal(urls.at(-1), 'https://r2.example.com/educenter-content/lop7-0123456789.nlp');
+    for (const bad of ['/api/pack/file/../../x', '/api/pack/file/evil.nlp', '/api/pack/file/lop7-0123456789.nlp.x']) assert.equal((await call(bad)).status, 404, bad);
+  } finally { globalThis.fetch = real; }
+});

@@ -48,10 +48,11 @@ function build({ contentDir = path.join(ROOT, 'content'), outDir, master, prune 
   const index = { v: 1, builtAt: new Date().toISOString(), packs: {} };
   const removable = [];
   for (const [grade, subs] of Object.entries(byGrade)) {
+    subs.sort();
     const files = {};
     for (const s of subs) {
       const keep = freeFiles(contentDir, s);
-      for (const rel of walk(path.join(contentDir, s))) {
+      for (const rel of walk(path.join(contentDir, s)).sort()) {
         if (rel === 'manifest.json') continue;
         files[`${s}/${rel}`] = fs.readFileSync(path.join(contentDir, s, rel), 'utf8');
         if (!keep.has(rel)) removable.push(path.join(contentDir, s, rel));

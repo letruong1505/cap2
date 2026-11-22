@@ -125,6 +125,9 @@
 
     function deactivate() { update({ keys: [] }); }
 
+    // Các khoá đã lưu (chuỗi NL1-...) để xin khoá giải mã gói nội dung; máy chủ tự kiểm tra chữ ký, mã máy, hạn, thu hồi.
+    function rawKeys() { return read().keys.slice(); }
+
     function pingCodes(now) {
       return read().keys.map(function (k) { return evalKey(k, now || new Date()); })
         .filter(function (r) { return r.status === 'ok' && /^NL-[A-Z0-9]{6}$/.test(r.id); })
@@ -167,7 +170,7 @@
       return out;
     }
 
-    return { currentLicense: currentLicense, activate: activate, deactivate: deactivate, pingCodes: pingCodes, setRevoked: setRevoked, canOpen: canOpen, annotateManifest: annotateManifest, hasGrade: hasGrade };
+    return { currentLicense: currentLicense, activate: activate, deactivate: deactivate, rawKeys: rawKeys, pingCodes: pingCodes, setRevoked: setRevoked, canOpen: canOpen, annotateManifest: annotateManifest, hasGrade: hasGrade };
   }
 
   return { PREFIX: PREFIX, MAX_FREE_LESSONS: MAX_FREE_LESSONS, parseKey: parseKey, evaluateKey: evaluateKey, today: today, create: create, b64uToBytes: b64uToBytes };

@@ -81,17 +81,21 @@
       storage: { get: function (k) { return rawGet.call(ls, k); }, set: function (k, v) { rawSet.call(ls, k, v); } },
       rawDeviceId: r[0] || fallbackId(), fetchFn: function (u, i) { return fetch(u, i); }, fetchText: fetchText, product: r[1], config: cfg,
       userStore: window.NLMobileBridge.mirrorUserStore(ls, rawGet, rawSet, rawRemove), updater: updater,
+      // Gói nội dung chỉ bật khi apk này là bản chỉ giữ mục lục (native.js do apk mang theo, không đổi qua OTA).
+      packs: { enabled: !!(window.NL_NATIVE && window.NL_NATIVE.packs) && !!window.NLMobilePacks && !!window.crypto && !!window.crypto.subtle && typeof DecompressionStream === 'function',
+        store: window.NLMobilePacks ? window.NLMobilePacks.idbStore(window.indexedDB) : null, subtle: window.crypto && window.crypto.subtle },
     });
   });
 
   // Bản quyền dùng cho cả màn hình ngay khi mở: các hàm async của giao diện chờ cầu nối sẵn sàng, riêng storeAll/storeSet phải đồng bộ
   // nên dùng bản sao lưu trực tiếp trên localStorage ngay từ đầu.
   var mirror = window.NLMobileBridge.mirrorUserStore(ls, rawGet, rawSet, rawRemove);
-  var names = ['loadManifest', 'loadLesson', 'appInfo', 'productInfo', 'loadLicense', 'activateLicense', 'removeLicense', 'createOrder', 'pinReset', 'orderStatus', 'claimDevice', 'familySync', 'progressSettings', 'progressPush', 'progressView', 'updateStatus', 'checkUpdate', 'downloadUpdate', 'installUpdate'];
+  var names = ['loadManifest', 'loadLesson', 'appInfo', 'productInfo', 'loadLicense', 'activateLicense', 'removeLicense', 'createOrder', 'pinReset', 'orderStatus', 'claimDevice', 'familySync', 'progressSettings', 'progressPush', 'progressView', 'updateStatus', 'checkUpdate', 'downloadUpdate', 'installUpdate', 'packsStatus', 'packsSync'];
   var proxy = { version: cfg.version || 'android', platform: 'android',
     storeAll: function () { return mirror.all(); }, storeSet: function (k, v) { mirror.set(String(k), v); },
     onUpdate: function (cb) { ready.then(function (b) { b.api.onUpdate(cb); }); },
-    onLicenseChanged: function (cb) { ready.then(function (b) { b.api.onLicenseChanged(cb); }); } };
+    onLicenseChanged: function (cb) { ready.then(function (b) { b.api.onLicenseChanged(cb); }); },
+    onPacks: function (cb) { ready.then(function (b) { b.api.onPacks(cb); }); } };
   names.forEach(function (n) { proxy[n] = function () { var a = arguments; return ready.then(function (b) { return b.api[n].apply(null, a); }); }; });
   // Đọc phát âm tiếng Anh bằng giọng đọc của Android (plugin TextToSpeech). WebView không có speechSynthesis.
   // Chỉ bật khi apk có plugin; apk cũ không có thì giao diện giữ thông báo cũ.
@@ -104,7 +108,7 @@
     };
   }
   window.vungBai = proxy;
-  ready.then(function (b) { b.heartbeat.start(); }).catch(function () {});
+  ready.then(function (b) { b.heartbeat.start(); b.packs.start(); }).catch(function () {});
   // Kiểm tra bản mới ngầm sau khi mở app vài giây (tối đa mỗi 6 giờ một lần).
   if (updater) setTimeout(function () { updater.check({ auto: true }); }, 4000);
 })();

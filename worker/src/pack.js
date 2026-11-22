@@ -72,3 +72,28 @@ export async function packKeys(db, env, catalog, input, now = new Date()) {
   if (!/^https:\/\//i.test(base)) throw new HttpError(503, 'Chưa cấu hình nơi lưu nội dung.');
   return { base: base + '/educenter-content', keys: out };
 }
+
+// Chuyển tiếp tệp công khai trên R2 cho ứng dụng Android (WebView không gọi thẳng R2 được vì CORS). Gói đã mã hóa nên không cần kiểm tra bản quyền ở đây.
+function packBase(env) {
+  const b = String(env.UPDATES_BASE || '').trim().replace(/\/+$/, '');
+  if (!/^https:\/\//i.test(b)) throw new HttpError(503, 'Chưa cấu hình nơi lưu nội dung.');
+  return b + '/educenter-content';
+}
+
+export async function packIndex(env) {
+  const r = await fetch(packBase(env) + '/index.json', { cf: { cacheTtl: 60 } }).catch(() => null);
+  if (!r || !r.ok) throw new HttpError(502, 'Chưa đọc được danh sách gói nội dung.');
+  const text = await r.text();
+  if (text.length > 20000) throw new HttpError(502, 'Danh sách gói nội dung không hợp lệ.');
+  return new Response(text, { status: 200, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
+}
+
+export const PACK_FILE_RE = /^lop\d{1,2}-[0-9a-f]{10}\.nlp$/;
+export async function packFile(env, name) {
+  if (!PACK_FILE_RE.test(String(name))) throw new HttpError(404, 'Không tìm thấy.');
+  const r = await fetch(packBase(env) + '/' + name, { cf: { cacheTtl: 86400 } }).catch(() => null);
+  if (!r || !r.ok) throw new HttpError(404, 'Không có gói nội dung này.');
+  const buf = await r.arrayBuffer();
+  if (buf.byteLength > 40 * 1024 * 1024) throw new HttpError(502, 'Gói nội dung quá lớn.');
+  return new Response(buf, { status: 200, headers: { 'content-type': 'application/octet-stream', 'cache-control': 'public, max-age=31536000, immutable' } });
+}

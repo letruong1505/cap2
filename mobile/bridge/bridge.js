@@ -1,9 +1,9 @@
 // Dựng đối tượng window.vungBai cho điện thoại, cùng các hàm với main/preload.js (Windows).
 // Mọi phụ thuộc (lưu trữ, mạng, thư viện chữ ký, mã thiết bị) được truyền vào để kiểm thử bằng Node.
 (function (root, factory) {
-  if (typeof module === 'object' && module.exports) module.exports = factory(require('./license.js'), require('./api.js'), require('./content.js'), require('./heartbeat.js'), require('./machine.js'));
-  else root.NLMobileBridge = factory(root.NLMobileLicense, root.NLMobileApi, root.NLMobileContent, root.NLMobileHeartbeat, root.NLMobileMachine);
-})(typeof self !== 'undefined' ? self : this, function (License, Api, Content, Heartbeat, Machine) {
+  if (typeof module === 'object' && module.exports) module.exports = factory(require('./license.js'), require('./api.js'), require('./content.js'), require('./heartbeat.js'), require('./machine.js'), require('./packs.js'));
+  else root.NLMobileBridge = factory(root.NLMobileLicense, root.NLMobileApi, root.NLMobileContent, root.NLMobileHeartbeat, root.NLMobileMachine, root.NLMobilePacks);
+})(typeof self !== 'undefined' ? self : this, function (License, Api, Content, Heartbeat, Machine, Packs) {
   'use strict';
   var USER_PREFIX = 'nl-userstore:';
 
@@ -13,15 +13,31 @@
     var verify = function (msg, sig) { return sig.length === 64 && o.nacl.sign.detached.verify(msg, sig, o.publicKey); };
     var lic = License.create({ storage: o.storage, machineId: machineId, verify: verify });
     var client = Api.makeClient({ baseUrl: function () { return o.config.ordersBaseUrl; }, fetchFn: o.fetchFn, machineId: function () { return machineId; } });
-    var content = Content.create({ fetchText: o.fetchText, subjects: o.product.subjects, base: o.contentBase || 'content/' });
     var listeners = [];
+    var packListeners = [];
+    // Bản build mới chỉ giữ mục lục và 2 bài học thử trong apk; bài còn lại đọc từ gói đã tải (o.packs: { enabled, store, subtle, gunzip }).
+    var packsCfg = o.packs || {};
+    var packs = Packs.create({ client: client, lic: lic, baseUrl: function () { return o.config.ordersBaseUrl; }, fetchFn: o.fetchFn, store: packsCfg.store, subtle: packsCfg.subtle, gunzip: packsCfg.gunzip, enabled: !!packsCfg.enabled,
+      send: function (st) { packListeners.slice().forEach(function (cb) { try { cb(st); } catch (e) { /* bỏ qua */ } }); } });
+    var contentBase = o.contentBase || 'content/';
+    var fetchContent = function (url) {
+      return o.fetchText(url).catch(function (err) {
+        if (!packs.enabled || url.indexOf(contentBase) !== 0) throw err;
+        return packs.read(url.slice(contentBase.length)).then(function (t) { if (typeof t === 'string') return t; throw new Error('NOT_DOWNLOADED'); });
+      });
+    };
+    var content = Content.create({ fetchText: fetchContent, subjects: o.product.subjects, base: contentBase });
     var heartbeat = Heartbeat.create({ lic: lic, client: client, version: o.config.version, intervalMs: o.intervalMs, setTimeoutFn: o.setTimeoutFn, setIntervalFn: o.setIntervalFn,
       onChange: function () { listeners.slice().forEach(function (cb) { try { cb(); } catch (e) { /* bỏ qua */ } }); } });
     var off = { state: 'off' };
     var up = o.updater || null;
     var userStore = o.userStore || { all: function () { return {}; }, set: function () {} };
 
-    function afterActivate(license) { heartbeat.beat().catch(function () {}); return license; }
+    function afterActivate(license) {
+      heartbeat.beat().catch(function () {});
+      if (license && license.status === 'ok') packs.sync(); // tự tải nội dung các lớp vừa kích hoạt
+      return license;
+    }
 
     var api = {
       version: o.config.version || 'android',
@@ -74,10 +90,13 @@
       installUpdate: function () { return up ? up.install() : Promise.resolve(false); },
       onUpdate: function (cb) { if (up) up.onUpdate(cb); },
       onLicenseChanged: function (cb) { listeners.push(cb); },
+      packsStatus: function () { return packs.status(); },
+      packsSync: function () { return packs.sync(); },
+      onPacks: function (cb) { packListeners.push(cb); },
       storeAll: function () { try { return userStore.all() || {}; } catch (e) { return {}; } },
       storeSet: function (k, v) { try { userStore.set(String(k), v); } catch (e) { /* bỏ qua */ } },
     };
-    return { api: api, heartbeat: heartbeat, license: lic, client: client, updater: up };
+    return { api: api, heartbeat: heartbeat, license: lic, client: client, updater: up, packs: packs };
   }
 
   // Bản sao dữ liệu người dùng (PIN, tiến độ...) lưu song song với localStorage, để khôi phục khi localStorage bị xóa.
