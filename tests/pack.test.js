@@ -86,6 +86,18 @@ test('kho gói: tải đúng lớp có bản quyền, lưu máy và đọc lại
   assert.equal(calls.fetch.length, before + 1);
 });
 
+test('kho gói: file gói bị xóa mà state.json còn thì tải lại và have() không tính gói thiếu', async () => {
+  const { store, dir } = world({ grades: [7] });
+  await store.sync();
+  for (const f of fs.readdirSync(path.join(dir, 'packs'))) if (f.endsWith('.nlp')) fs.unlinkSync(path.join(dir, 'packs', f));
+  assert.deepEqual(store.have(), []);
+  assert.equal(store.read('toan7/tap1/b3.json'), null);
+  const r = await store.sync();
+  assert.equal(r.downloaded, 1);
+  assert.deepEqual(store.have(), [7]);
+  assert.ok(store.read('toan7/tap1/b3.json'));
+});
+
 test('kho gói: mất mạng thì báo offline và không làm hỏng gói đã có; có mạng lại thì tải tiếp', async () => {
   const w1 = world({ grades: [7], online: false });
   const r = await w1.store.sync();

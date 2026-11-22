@@ -143,7 +143,9 @@
           return store.get('state').then(function (st) {
             st = st || {}; st.grades = st.grades || {}; st.courses = st.courses || {};
             var pOf = function (u) { return u.kind === 'grades' ? (idx.packs && idx.packs[u.id]) : (idx.courses && idx.courses[u.id]); };
-            var todo = units.filter(function (u) { var p = pOf(u); return p && (!st[u.kind][u.id] || st[u.kind][u.id].sha256 !== p.sha256 || st[u.kind][u.id].key !== u.key); });
+            // Gói đã bị xóa khỏi kho (xóa dữ liệu một phần) thì tải lại dù state còn ghi.
+            return Promise.all(units.map(function (u) { var e = st[u.kind][u.id]; return e ? store.get('data:' + (u.kind === 'grades' ? 'g' : 'c:') + u.id).then(function (d) { return !!d; }, function () { return false; }) : false; })).then(function (present) {
+            var todo = units.filter(function (u, ix) { var p = pOf(u); return p && (!st[u.kind][u.id] || st[u.kind][u.id].sha256 !== p.sha256 || st[u.kind][u.id].key !== u.key || !present[ix]); });
             var downloaded = 0;
             var bytesTotal = todo.reduce(function (a, u) { return a + (Number(pOf(u).size) || 0); }, 0) || 1;
             var bytesBefore = 0; var lastEmit = 0;
@@ -185,6 +187,7 @@
               if (!res.ok) return res;
               setStatus({ state: 'ready', done: todo.length, total: todo.length, percent: 100, fresh: downloaded, grade: 0, course: '', error: '' });
               return { ok: true, downloaded: downloaded, grades: Object.keys(granted).map(Number) };
+            });
             });
           });
         }, function () { setStatus({ state: 'offline', error: '' }); return { ok: false, offline: true }; });

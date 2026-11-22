@@ -1,8 +1,9 @@
 ## Bản mới
-- Hiện % tiến độ khi tải nội dung khóa học và báo "Đã tải xong" khi hoàn tất (exe và Android)
+- Nếu file nội dung đã tải bị mất (xóa nhầm, dọn dữ liệu), phần mềm tự tải lại
 - Android: bản này yêu cầu cài apk mới
 
 ## Các bản trước
+- Hiện % tiến độ khi tải nội dung khóa học và báo "Đã tải xong" khi hoàn tất (exe và Android)
 - Các khóa Kỹ năng (Tư duy & lập trình, Gia sư AI, AI cho người đi làm) tải nội dung về máy theo khóa đã mua sau khi kích hoạt; khách đã mua được tải bù tự động
 - Android: nội dung khóa học (Văn hóa và Kỹ năng) tải về máy theo lớp và khóa đã mua, apk nhỏ hơn, tải xong học được cả khi không có mạng
 - Nội dung khóa học tải về máy theo lớp đã mua sau khi kích hoạt (bản cài nhỏ hơn, tải xong học được cả khi không có mạng); khách đã mua trước đây được tải bù tự động khi mở bản mới
