@@ -1,5 +1,6 @@
 ## Bản mới
-- Android: nội dung khóa học tải về máy theo lớp đã mua sau khi kích hoạt (apk nhỏ hơn, tải xong học được cả khi không có mạng); khách đã mua được tải bù tự động
+- Các khóa Kỹ năng (Tư duy & lập trình, Gia sư AI, AI cho người đi làm) tải nội dung về máy theo khóa đã mua sau khi kích hoạt; khách đã mua được tải bù tự động
+- Android: nội dung khóa học (Văn hóa và Kỹ năng) tải về máy theo lớp và khóa đã mua, apk nhỏ hơn, tải xong học được cả khi không có mạng
 - Android: bản này yêu cầu cài apk mới
 
 ## Các bản trước

@@ -71,8 +71,9 @@
     });
   }
 
-  function lessonScreen(key) {
+  function lessonScreen(key, retried) {
     const L = content()[key];
+    if (window.NLCourse && owned(ctx.license()) && window.NLCourse.ensureLesson(COURSE_ID, L, true, () => lessonScreen(key, true), (m) => body.replaceChildren(h('button', { class: 'back-link', type: 'button', onclick: listScreen }, '← Các bài của khóa Gia sư AI'), h('p', {}, m)), retried)) return;
     const box = h('article', { class: 'aiw-lesson' });
     if (L && canOpen(key)) box.innerHTML = '<h2>' + L.title + '</h2>' + (L.sub ? '<p class="sub">' + L.sub + '</p>' : '') + L.html;
     else box.append(h('p', {}, L ? 'Bài này mở khi mua khóa Gia sư AI.' : 'Bài này đang được biên soạn.'));

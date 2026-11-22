@@ -90,6 +90,13 @@
       installUpdate: function () { return up ? up.install() : Promise.resolve(false); },
       onUpdate: function (cb) { if (up) up.onUpdate(cb); },
       onLicenseChanged: function (cb) { listeners.push(cb); },
+      // Nội dung khóa Kỹ năng: chỉ trả khi bản quyền có đúng khóa đó; bản đầy đủ (không tách gói) thì trả rỗng vì giao diện đã có sẵn.
+      courseContent: function (id) {
+        id = String(id || '');
+        if (!lic.hasCourse(lic.currentLicense(), id)) return Promise.resolve({ ok: false, error: 'LOCKED' });
+        if (!packs.enabled) return Promise.resolve({ ok: true, files: {} });
+        return packs.readCourse(id).then(function (files) { return files ? { ok: true, files: files } : { ok: false, error: 'NOT_DOWNLOADED' }; });
+      },
       packsStatus: function () { return packs.status(); },
       packsSync: function () { return packs.sync(); },
       onPacks: function (cb) { packListeners.push(cb); },

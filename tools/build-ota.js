@@ -15,6 +15,12 @@ const MAX_BYTES = 8 * 1024 * 1024;
 const SKIP = (rel) => rel.startsWith('content/') || rel.startsWith('fonts/') || rel === 'index.html' || rel === 'app.html'
   || rel === 'mobile/native.js' || rel === 'mobile/ota-boot.js' || rel === 'mobile/ota-store.js' || rel.endsWith('LICENSE.txt');
 
+// Bản build tách gói (main/content-mode.json): file nội dung khóa Kỹ năng đã bị cắt bớt nên không đưa vào gói OTA. Máy cài apk cũ (nội dung
+// đầy đủ trong apk) khi nhận OTA vẫn nạp file đầy đủ của apk; máy cài apk mới nhận nội dung qua gói tải về. Xem tools/build-packs.js.
+const PRUNED = fs.existsSync(path.join(__dirname, '..', 'main', 'content-mode.json'));
+const PRUNED_FILES = new Set(['tu-duy-content.js', 'gia-su-ai-content.js', 'ai-work-claude.js', 'ai-work-chatgpt.js', 'ai-work-gemini.js']);
+const skipPruned = (rel) => PRUNED && PRUNED_FILES.has(rel);
+
 const b64u = (buf) => Buffer.from(buf).toString('base64url');
 
 function collect(dir, base = dir, out = {}) {
@@ -22,7 +28,7 @@ function collect(dir, base = dir, out = {}) {
     const full = path.join(dir, e.name);
     if (e.isDirectory()) { collect(full, base, out); continue; }
     const rel = path.relative(base, full).split(path.sep).join('/');
-    if (SKIP(rel) || !TEXT_EXT.has(path.extname(rel).toLowerCase())) continue;
+    if (SKIP(rel) || skipPruned(rel) || !TEXT_EXT.has(path.extname(rel).toLowerCase())) continue;
     out[rel] = fs.readFileSync(full, 'utf8');
   }
   return out;

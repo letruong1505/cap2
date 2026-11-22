@@ -7,10 +7,14 @@ const zlib = require('zlib');
 const MAGIC = Buffer.from('NLP1');
 const KEY_LABEL = (grade) => `nl-pack-v1:lop${Number(grade)}`;
 
-function deriveGradeKey(master, grade) {
+function deriveKey(master, label) {
   if (!master || String(master).length < 16) throw new Error('PACK_MASTER quá ngắn');
-  return crypto.createHmac('sha256', String(master)).update(KEY_LABEL(grade)).digest();
+  return crypto.createHmac('sha256', String(master)).update(label).digest();
 }
+const deriveGradeKey = (master, grade) => deriveKey(master, KEY_LABEL(grade));
+// Gói của một khóa Kỹ năng (Tư duy & lập trình, Gia sư AI, AI cho người đi làm): khoá riêng theo mã khóa.
+const COURSE_LABEL = (id) => `nl-pack-v1:course:${String(id)}`;
+const deriveCourseKey = (master, id) => deriveKey(master, COURSE_LABEL(id));
 
 // files: { "toan7/tap1/...json": "nội dung văn bản", ... }
 function encryptPack(files, key) {
@@ -37,4 +41,4 @@ function decryptPack(buf, key) {
 const sha256 = (buf) => crypto.createHash('sha256').update(buf).digest('hex');
 const gradeOfSubject = (s) => Number(String(s).match(/(\d+)$/)?.[1]);
 
-module.exports = { deriveGradeKey, encryptPack, decryptPack, sha256, gradeOfSubject, KEY_LABEL };
+module.exports = { deriveCourseKey, COURSE_LABEL, deriveGradeKey, encryptPack, decryptPack, sha256, gradeOfSubject, KEY_LABEL };

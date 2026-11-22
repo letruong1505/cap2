@@ -57,15 +57,16 @@
     var enabled = !!o.enabled;
     var subtle = o.subtle; var gunzip = o.gunzip || gunzipBrowser; var fetchFn = o.fetchFn; var store = o.store;
     var send = o.send || function () {};
-    var cache = {}; // lớp -> { sha, files }
+    var cache = {}; // 'g7' | 'c:gia-su-ai' -> { sha, files }
     var have = []; // các lớp đã có gói trên máy
-    var status = { state: 'idle', grades: [], enabled: enabled };
+    var haveCourses = []; // các khóa Kỹ năng đã có gói
+    var status = { state: 'idle', grades: [], courses: [], enabled: enabled };
     var busy = null;
-    var loaded = enabled ? store.get('state').then(function (st) { have = Object.keys((st && st.grades) || {}).map(Number).sort(function (a, b) { return a - b; }); status.grades = have.slice(); }).catch(function () {}) : Promise.resolve();
+    var loaded = enabled ? store.get('state').then(function (st) { have = Object.keys((st && st.grades) || {}).map(Number).sort(function (a, b) { return a - b; }); haveCourses = Object.keys((st && st.courses) || {}).sort(); status.grades = have.slice(); status.courses = haveCourses.slice(); }).catch(function () {}) : Promise.resolve();
 
     function setStatus(patch) {
       Object.keys(patch).forEach(function (k) { status[k] = patch[k]; });
-      status.enabled = enabled; status.grades = have.slice();
+      status.enabled = enabled; status.grades = have.slice(); status.courses = haveCourses.slice();
       try { send(JSON.parse(JSON.stringify(status))); } catch (e) { /* bỏ qua */ }
     }
 
@@ -83,14 +84,16 @@
         });
     }
 
-    function loadGrade(grade) {
+    // kind: 'grades' (gói theo lớp) hoặc 'courses' (gói khóa Kỹ năng); id là số lớp hoặc mã khóa.
+    function loadUnit(kind, id) {
       return store.get('state').then(function (st) {
-        var ent = st && st.grades && st.grades[grade];
+        var ent = st && st[kind] && st[kind][id];
         if (!ent) return null;
-        if (cache[grade] && cache[grade].sha === ent.sha256) return cache[grade].files;
-        return store.get('data:' + grade).then(function (data) {
+        var ck = (kind === 'grades' ? 'g' : 'c:') + id;
+        if (cache[ck] && cache[ck].sha === ent.sha256) return cache[ck].files;
+        return store.get('data:' + ck).then(function (data) {
           if (!data) return null;
-          return decrypt(new Uint8Array(data), ent.key).then(function (files) { cache[grade] = { sha: ent.sha256, files: files }; return files; });
+          return decrypt(new Uint8Array(data), ent.key).then(function (files) { cache[ck] = { sha: ent.sha256, files: files }; return files; });
         });
       }).catch(function () { return null; });
     }
@@ -98,7 +101,13 @@
     // Đọc một file nội dung dạng "<môn>/<đường dẫn>"; null nếu chưa tải.
     function read(rel) {
       if (!enabled) return Promise.resolve(null);
-      return loaded.then(function () { return loadGrade(gradeOf(rel)); }).then(function (files) { return files && typeof files[rel] === 'string' ? files[rel] : null; });
+      return loaded.then(function () { return loadUnit('grades', gradeOf(rel)); }).then(function (files) { return files && typeof files[rel] === 'string' ? files[rel] : null; });
+    }
+
+    // Nội dung khóa Kỹ năng: { "TUDUY.k1218": "<json các bài>", ... }; null nếu chưa tải.
+    function readCourse(id) {
+      if (!enabled) return Promise.resolve(null);
+      return loaded.then(function () { return loadUnit('courses', String(id)); });
     }
 
     function getBytes(url) {
@@ -115,48 +124,51 @@
       return o.client.packKeys({ keys: keys }).then(function (kr) {
         if (!kr.ok) { setStatus({ state: kr.offline ? 'offline' : 'error', error: kr.error || '' }); return { ok: false, offline: !!kr.offline, error: kr.error }; }
         var granted = kr.data.keys || {};
-        var grades = Object.keys(granted).map(Number).sort(function (a, b) { return a - b; });
+        var grantedCourses = kr.data.courses || {};
+        var units = Object.keys(granted).map(Number).sort(function (a, b) { return a - b; }).map(function (g) { return { kind: 'grades', id: g, key: granted[g], label: 'lớp ' + g }; })
+          .concat(Object.keys(grantedCourses).sort().map(function (c) { return { kind: 'courses', id: c, key: grantedCourses[c], label: 'khóa ' + c }; }));
         return fetchFn(base + '/api/pack/index').then(function (r) { if (!r.ok) throw new Error('http ' + r.status); return r.json(); }).then(function (idx) {
           return store.get('state').then(function (st) {
-            st = st && st.grades ? st : { grades: {} };
-            var todo = grades.filter(function (g) { var p = idx.packs && idx.packs[g]; return p && (!st.grades[g] || st.grades[g].sha256 !== p.sha256 || st.grades[g].key !== granted[g]); });
+            st = st || {}; st.grades = st.grades || {}; st.courses = st.courses || {};
+            var pOf = function (u) { return u.kind === 'grades' ? (idx.packs && idx.packs[u.id]) : (idx.courses && idx.courses[u.id]); };
+            var todo = units.filter(function (u) { var p = pOf(u); return p && (!st[u.kind][u.id] || st[u.kind][u.id].sha256 !== p.sha256 || st[u.kind][u.id].key !== u.key); });
             var downloaded = 0;
             var chain = Promise.resolve({ ok: true });
-            todo.forEach(function (g, i) {
+            todo.forEach(function (u, i) {
               chain = chain.then(function (prev) {
                 if (!prev.ok) return prev;
-                var p = idx.packs[g];
-                if (!/^lop\d{1,2}-[0-9a-f]{10}\.nlp$/.test(String(p.file))) return prev;
-                setStatus({ state: 'downloading', grade: g, done: i, total: todo.length, error: '' });
+                var p = pOf(u); var ck = (u.kind === 'grades' ? 'g' : 'c:') + u.id;
+                if (!/^(lop\d{1,2}|course-[a-z0-9-]{1,60})-[0-9a-f]{10}\.nlp$/.test(String(p.file))) return prev;
+                setStatus({ state: 'downloading', grade: u.kind === 'grades' ? u.id : 0, course: u.kind === 'courses' ? u.id : '', done: i, total: todo.length, error: '' });
                 return getBytes(base + '/api/pack/file/' + p.file).then(function (bytes) {
                   return subtle.digest('SHA-256', bytes).then(function (d) {
                     if (hex(d) !== p.sha256) throw new Error('sai mã kiểm tra');
-                    return decrypt(bytes, granted[g]); // kiểm tra giải mã được trước khi lưu
+                    return decrypt(bytes, u.key); // kiểm tra giải mã được trước khi lưu
                   }).then(function (files) {
-                    return store.set('data:' + g, bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength)).then(function () {
+                    return store.set('data:' + ck, bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength)).then(function () {
                       return store.get('state');
                     }).then(function (cur) {
-                      cur = cur && cur.grades ? cur : { grades: {} };
-                      cur.grades[g] = { file: p.file, sha256: p.sha256, key: granted[g] };
+                      cur = cur || {}; cur.grades = cur.grades || {}; cur.courses = cur.courses || {};
+                      cur[u.kind][u.id] = { file: p.file, sha256: p.sha256, key: u.key };
                       return store.set('state', cur);
                     }).then(function () {
-                      cache[g] = { sha: p.sha256, files: files };
-                      if (have.indexOf(g) < 0) have.push(g);
-                      have.sort(function (a, b) { return a - b; });
+                      cache[ck] = { sha: p.sha256, files: files };
+                      if (u.kind === 'grades') { if (have.indexOf(u.id) < 0) have.push(u.id); have.sort(function (a, b) { return a - b; }); }
+                      else { if (haveCourses.indexOf(u.id) < 0) haveCourses.push(u.id); haveCourses.sort(); }
                       downloaded++;
                       return { ok: true };
                     });
                   });
                 }).catch(function (e) {
-                  setStatus({ state: 'error', grade: g, error: 'Không tải được nội dung lớp ' + g + '. Kiểm tra mạng rồi thử lại.' });
+                  setStatus({ state: 'error', grade: u.kind === 'grades' ? u.id : 0, course: u.kind === 'courses' ? u.id : '', error: 'Không tải được nội dung ' + u.label + '. Kiểm tra mạng rồi thử lại.' });
                   return { ok: false, downloaded: downloaded, error: String(e && e.message) };
                 });
               });
             });
             return chain.then(function (res) {
               if (!res.ok) return res;
-              setStatus({ state: 'ready', done: todo.length, total: todo.length, grade: 0, error: '' });
-              return { ok: true, downloaded: downloaded, grades: grades };
+              setStatus({ state: 'ready', done: todo.length, total: todo.length, grade: 0, course: '', error: '' });
+              return { ok: true, downloaded: downloaded, grades: Object.keys(granted).map(Number) };
             });
           });
         }, function () { setStatus({ state: 'offline', error: '' }); return { ok: false, offline: true }; });
@@ -178,7 +190,7 @@
       (setIntervalFn || setInterval)(function () { sync(); }, 6 * 60 * 60 * 1000);
     }
 
-    return { read: read, sync: sync, start: start, enabled: enabled, status: function () { return loaded.then(function () { return JSON.parse(JSON.stringify(Object.assign({}, status, { enabled: enabled, grades: have.slice() }))); }); } };
+    return { read: read, readCourse: readCourse, sync: sync, start: start, enabled: enabled, status: function () { return loaded.then(function () { return JSON.parse(JSON.stringify(Object.assign({}, status, { enabled: enabled, grades: have.slice(), courses: haveCourses.slice() }))); }); } };
   }
 
   return { create: create, idbStore: idbStore, gunzipBrowser: gunzipBrowser };

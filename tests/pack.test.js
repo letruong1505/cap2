@@ -129,3 +129,85 @@ test('gói mã hóa tất định: cùng nội dung thì cùng file, đổi nộ
   const r2 = build({ contentDir: dir, outDir: tmp(), master: MASTER });
   assert.equal(r1.index.packs[7].sha256, r2.index.packs[7].sha256);
 });
+
+// --- Khóa Kỹ năng (nội dung nằm trong file JS của giao diện) ---
+const vm = require('vm');
+const { COURSES, freeKeys } = require('../tools/build-packs');
+const { deriveCourseKey } = require('../core/pack-format');
+const REAL = path.join(__dirname, '..', 'renderer');
+const evalFile = (f) => { const w = {}; vm.runInNewContext(fs.readFileSync(f, 'utf8'), { window: w }); return JSON.parse(JSON.stringify(w)); };
+function rendererCopy() {
+  const d = tmp();
+  for (const f of new Set([...COURSES.map((c) => c.file), 'tu-duy.js', 'gia-su-ai.js'])) fs.copyFileSync(path.join(REAL, f), path.join(d, f));
+  return d;
+}
+
+test('khóa Kỹ năng: danh sách bài xem thử khớp module giao diện (không lệch khi sửa FREE)', () => {
+  const free = Object.fromEntries(COURSES.map((c) => [c.id, freeKeys(REAL, c)]));
+  assert.deepEqual(free['tu-duy-lap-trinh-scratch'], ['tongquan', 'caidat', 'bai1']);
+  assert.deepEqual(free['tu-duy-lap-trinh-python'], ['tongquan', 'caidat', 'c1b2']);
+  assert.deepEqual(free['gia-su-ai'], ['tongquan', 'bai1', 'bai2']);
+  assert.deepEqual(free['ai-nguoi-di-lam-claude'], []);
+});
+
+test('khóa Kỹ năng: cắt nội dung trả phí khỏi giao diện, gói giải mã và nạp lại đúng như bản đầy đủ', () => {
+  const rd = rendererCopy(); const out = tmp(); const content = fakeContent(); const mode = path.join(tmp(), 'm.json');
+  const before = evalFile(path.join(rd, 'tu-duy-content.js'));
+  const gsBefore = evalFile(path.join(rd, 'gia-su-ai-content.js'));
+  const sizeBefore = fs.statSync(path.join(rd, 'tu-duy-content.js')).size;
+  const r = build({ contentDir: content, outDir: out, master: MASTER, prune: true, modeFile: mode, rendererDir: rd });
+  assert.deepEqual(Object.keys(r.index.courses).sort(), COURSES.map((c) => c.id).sort());
+  const after = evalFile(path.join(rd, 'tu-duy-content.js'));
+  assert.ok(fs.statSync(path.join(rd, 'tu-duy-content.js')).size < sizeBefore / 5);
+  // bài xem thử còn đủ; bài trả phí chỉ còn tiêu đề; mục lục giữ nguyên
+  assert.ok(after.TUDUY.k1218.c1b2.html && after.TUDUY.k1218.tongquan.html);
+  const paid = Object.keys(before.TUDUY.k1218).find((k) => !['tongquan', 'caidat', 'c1b2'].includes(k));
+  assert.equal(after.TUDUY.k1218[paid].html, undefined);
+  assert.equal(after.TUDUY.k1218[paid].title, before.TUDUY.k1218[paid].title);
+  assert.deepEqual(after.TUDUY_TOC, before.TUDUY_TOC);
+  assert.equal(evalFile(path.join(rd, 'ai-work-claude.js')).AI_WORK_CLAUDE.bai4.html, undefined);
+  // giải mã gói rồi nạp bằng NLCourse.merge: ra đúng như bản đầy đủ
+  const win = { ...after, JSON };
+  const code = fs.readFileSync(path.join(REAL, 'course-loader.js'), 'utf8');
+  vm.runInNewContext(code, { window: win });
+  for (const id of ['tu-duy-lap-trinh-python', 'tu-duy-lap-trinh-scratch']) win.NLCourse.merge(decryptPack(fs.readFileSync(path.join(out, r.index.courses[id].file)), deriveCourseKey(MASTER, id)));
+  assert.deepEqual(JSON.parse(JSON.stringify(win.TUDUY)), before.TUDUY);
+  const gs = { ...evalFile(path.join(rd, 'gia-su-ai-content.js')), JSON };
+  vm.runInNewContext(code, { window: gs });
+  gs.NLCourse.merge(decryptPack(fs.readFileSync(path.join(out, r.index.courses['gia-su-ai'].file)), deriveCourseKey(MASTER, 'gia-su-ai')));
+  assert.deepEqual(JSON.parse(JSON.stringify(gs.GIA_SU_AI)), gsBefore.GIA_SU_AI);
+  // sai khoá thì không đọc được
+  assert.throws(() => decryptPack(fs.readFileSync(path.join(out, r.index.courses['gia-su-ai'].file)), deriveCourseKey(MASTER, 'cong-dan-so')));
+});
+
+test('kho gói: tải cả gói khóa Kỹ năng, chỉ trả cho đúng khóa đã có', async () => {
+  const rd = rendererCopy(); const out = tmp();
+  const r = build({ contentDir: fakeContent(), outDir: out, master: MASTER, prune: false, rendererDir: rd });
+  const keys = { 7: deriveGradeKey(MASTER, 7).toString('base64') };
+  const courses = { 'gia-su-ai': deriveCourseKey(MASTER, 'gia-su-ai').toString('base64') };
+  const fetchFn = async (url) => {
+    const name = url.split('/').pop(); const f = path.join(out, name);
+    if (!fs.existsSync(f)) return { ok: false, status: 404 };
+    const b = fs.readFileSync(f);
+    return { ok: true, status: 200, json: async () => JSON.parse(b.toString()), arrayBuffer: async () => b.buffer.slice(b.byteOffset, b.byteOffset + b.length) };
+  };
+  const dir = tmp();
+  const store = createPackStore({ dir, licenseDir: dir, client: { packKeys: async () => ({ ok: true, data: { base: 'https://r2.test/c', keys, courses } }) }, lic: { rawKeys: () => ['k'] }, fetchFn });
+  assert.equal(store.readCourse('gia-su-ai'), null);
+  const res = await store.sync();
+  assert.equal(res.ok, true); assert.equal(res.downloaded, 2);
+  assert.ok(store.readCourse('gia-su-ai')['GIA_SU_AI']);
+  assert.equal(store.readCourse('tu-duy-lap-trinh-python'), null); // chưa mua
+  assert.deepEqual(store.status().courses, ['gia-su-ai']);
+  assert.ok(r.index.courses['gia-su-ai'].file.startsWith('course-gia-su-ai-'));
+});
+
+test('hasCourse: khóa bản cũ tu-duy-lap-trinh mở cả hai lộ trình; khóa khác không', () => {
+  const lic = require('../main/license');
+  const ok = (courses) => ({ status: 'ok', courses });
+  assert.ok(lic.hasCourse(ok(['gia-su-ai']), 'gia-su-ai'));
+  assert.ok(!lic.hasCourse(ok(['gia-su-ai']), 'ai-nguoi-di-lam-claude'));
+  assert.ok(lic.hasCourse(ok(['tu-duy-lap-trinh']), 'tu-duy-lap-trinh-python') && lic.hasCourse(ok(['tu-duy-lap-trinh']), 'tu-duy-lap-trinh-scratch'));
+  assert.ok(!lic.hasCourse(ok(['tu-duy-lap-trinh']), 'gia-su-ai'));
+  assert.ok(!lic.hasCourse({ status: 'expired', courses: ['gia-su-ai'] }, 'gia-su-ai'));
+});
