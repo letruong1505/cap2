@@ -112,18 +112,31 @@ test('AI cho người đi làm – Claude: Bài 4–11 dạng thẻ, giữ hình
 test('Tư duy & lập trình: 2 lộ trình đủ mở đầu + 8 bài, có thực hành và đáp án', () => {
   const w = {};
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../renderer/tu-duy-content.js'), 'utf8'), { window: w });
-  for (const t of ['k811', 'k1218']) {
-    for (const k of ['tongquan', 'caidat', 'bai1', 'bai2', 'bai3', 'bai4', 'bai5', 'bai6', 'bai7', 'bai8']) {
-      const L = w.TUDUY[t][k];
-      assert.ok(L && L.title && L.html.includes('class="tsum"') && L.html.includes('tprac') && L.html.includes('class="tans"'), t + k);
-    }
+  for (const k of ['tongquan', 'caidat', 'bai1', 'bai2', 'bai3', 'bai4', 'bai5', 'bai6', 'bai7', 'bai8']) {
+    const L = w.TUDUY.k1218[k];
+    assert.ok(L && L.title && L.html.includes('class="tsum"') && L.html.includes('tprac') && L.html.includes('class="tans"'), 'k1218' + k);
   }
+  // Scratch 8–11: sách "Tư duy trước, Scratch sau" = mở đầu (2) + 16 chương + phụ lục A, D, E, F, G (không có B và C)
+  const SC = w.TUDUY.k811;
+  const scKeys = ['tongquan', 'giaodien', ...Array.from({ length: 16 }, (_, i) => 'c' + (i + 1)), 'pa', 'pd', 'pe', 'pf', 'pg'];
+  assert.deepStrictEqual(Object.keys(SC), scKeys);
+  for (let i = 1; i <= 16; i++) {
+    const L = SC['c' + i];
+    assert.ok(L.title.startsWith('Chương ' + i + ' · ') && L.html.includes('class="tsum"') && L.html.includes('class="tsteps"') && (i > 14 || L.html.includes('class="sb"')), 'c' + i);   // c15–16 là dự án tự thiết kế: phiếu thiết kế, không có kịch bản mẫu
+    assert.strictEqual((L.html.match(/class="tstep"/g) || []).length, 7, 'c' + i + ' đủ 7 bước');
+  }
+  const scAll = JSON.stringify(SC);
+  assert.ok(!/12 tuổi|≥|&gt;= |Phụ lục [BC]\b|______/.test(scAll));   // tuổi 8–11, Scratch 3 không có ≥, bỏ phụ lục B/C
+  assert.ok(scAll.includes('8–11 tuổi') && scAll.includes('10–11 tuổi'));
+  assert.ok(SC.c13.html.includes('<i>Điểm</i> &gt; <i>9</i>') && SC.c13.html.includes('<i>Bỏ lỡ</i> &gt; <i>4</i>'));
+  assert.ok(SC.c3.html.includes('thử 3 lần với góc 120°') && !SC.c4.html.includes('chương tọa độ'));
+  assert.ok(SC.c14.html.includes('trả lời</i> = <i>2</i>') && !SC.c14.html.includes('<i>nhựa</i>'));
+  assert.ok(SC.c8.html.includes('lượt sống') && !SC.c8.html.includes('còn mạng'));
+  assert.ok(SC.c1.html.includes('Mở lọ mứt') && SC.c1.html.includes('data:image/webp;base64,'));
   const all = JSON.stringify(w.TUDUY);
   assert.ok(!/<script/i.test(all));
   // số liệu đã kiểm: biến Scratch bài 4 = 12; tổng 1..99 = 4950; làm ngược 23 -> 9
-  assert.ok(w.TUDUY.k811.bai4.html.includes('<b>12</b>'));
   assert.ok(w.TUDUY.k1218.bai4.html.includes('5050'));
-  assert.ok(w.TUDUY.k811.bai6.html.includes('<b>9</b>'));
   assert.ok(w.TUDUY.k1218.bai5.html.includes('5.83'));
 });
 test('Tư duy & lập trình: nối vào app, 2 bài đầu miễn phí', () => {
@@ -131,7 +144,7 @@ test('Tư duy & lập trình: nối vào app, 2 bài đầu miễn phí', () => 
   for (const x of ['tu-duy-content.js', 'tu-duy.js', 'id="tuduy-body"', 'id="open-tuduy"']) assert.ok(idx.includes(x), x);
   const app = fs.readFileSync(path.join(__dirname, '../renderer/app.js'), 'utf8');
   assert.ok(app.includes("'tuduy'") && app.includes('showTuDuy'));
-  assert.ok(fs.readFileSync(path.join(__dirname, '../renderer/tu-duy.js'), 'utf8').includes("k811: ['tongquan', 'caidat', 'bai1'], k1218: ['tongquan', 'caidat', 'c1b2']"));
+  assert.ok(fs.readFileSync(path.join(__dirname, '../renderer/tu-duy.js'), 'utf8').includes("k811: ['tongquan', 'giaodien', 'c1'], k1218: ['tongquan', 'caidat', 'c1b2']"));
 });
 
 test('Tư duy & lập trình: có trong catalog bán hàng, keygen và trang phụ huynh', () => {
@@ -149,8 +162,8 @@ test('Tư duy & lập trình: có trong catalog bán hàng, keygen và trang ph�
 test('Tư duy & lập trình: bài Cài đặt có hình minh họa và hướng dẫn đúng công cụ', () => {
   const w = {};
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../renderer/tu-duy-content.js'), 'utf8'), { window: w });
-  const sc = w.TUDUY.k811.caidat.html, py = w.TUDUY.k1218.caidat.html;
-  assert.ok((sc.match(/<svg/g) || []).length >= 3 && sc.includes('scratch.mit.edu') && sc.includes('.sb3'));
+  const sc = w.TUDUY.k811.c1.html, py = w.TUDUY.k1218.caidat.html;
+  assert.ok(sc.includes('scratch.mit.edu') && sc.includes('01_LoiChao'));
   assert.ok((py.match(/<svg/g) || []).length >= 4 && py.includes('python.org') && py.includes('Add python.exe to PATH') && py.includes('IDLE') && py.includes('F5'));
 });
 
@@ -158,7 +171,7 @@ test('Tư duy & lập trình: mỗi bài học có đủ 7 mục kiến thức v
   const w = {};
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../renderer/tu-duy-content.js'), 'utf8'), { window: w });
   const heads = ['Ý nghĩa của bài học', 'Dùng bài học này như thế nào', 'Tư duy bài học mang đến', 'Hình minh họa từng bước', 'Lỗi sai hay gặp', 'Ví dụ minh họa'];
-  for (const t of ['k811', 'k1218']) {
+  for (const t of ['k1218']) {
     for (const k of ['bai1', 'bai2', 'bai3', 'bai4', 'bai5', 'bai6', 'bai7', 'bai8']) {
       const h = w.TUDUY[t][k].html;
       for (const x of heads) assert.ok(h.includes(x), t + k + ' thiếu ' + x);

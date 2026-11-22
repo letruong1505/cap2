@@ -156,7 +156,7 @@ function rendererCopy() {
 
 test('khóa Kỹ năng: danh sách bài xem thử khớp module giao diện (không lệch khi sửa FREE)', () => {
   const free = Object.fromEntries(COURSES.map((c) => [c.id, freeKeys(REAL, c)]));
-  assert.deepEqual(free['tu-duy-lap-trinh-scratch'], ['tongquan', 'caidat', 'bai1']);
+  assert.deepEqual(free['tu-duy-lap-trinh-scratch'], ['tongquan', 'giaodien', 'c1']);
   assert.deepEqual(free['tu-duy-lap-trinh-python'], ['tongquan', 'caidat', 'c1b2']);
   assert.deepEqual(free['gia-su-ai'], ['tongquan', 'bai1', 'bai2']);
   assert.deepEqual(free['ai-nguoi-di-lam-claude'], []);

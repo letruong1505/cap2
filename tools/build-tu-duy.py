@@ -237,13 +237,10 @@ def toc_for(track, toc, groups):
         out.append({'t': gt, 'items': rows})
     return out
 
-ORDER_K = ['tongquan', 'caidat', 'bai1', 'bai2', 'bai3', 'bai4', 'bai5', 'bai6', 'bai7', 'bai8']
-OUT = {'k811': {k: K1[k] for k in ORDER_K}, 'k1218': {k: P[k] for k in P}}
-TOC = {'k811': toc_for(OUT['k811'], SC_TOC, False), 'k1218': toc_for(OUT['k1218'], PY_TOC, True)}
-# nhãn "Bài N" của lộ trình Scratch
-for row in TOC['k811'][0]['items']:
-    k = row['key']; row['label'] = 'Mở đầu' if k == 'tongquan' else 'Cài đặt' if k == 'caidat' else 'Bài ' + k[3:]
-    row['title'] = PREFIX.sub('', OUT['k811'][k]['title'])
+import tuduy_scratch_book
+SCRATCH = tuduy_scratch_book.build()   # lộ trình 8–11 tuổi: sách "Tư duy trước, Scratch sau" (16 chương, 4 phần)
+OUT = {'k811': SCRATCH, 'k1218': {k: P[k] for k in P}}
+TOC = {'k811': tuduy_scratch_book.toc(SCRATCH), 'k1218': toc_for(OUT['k1218'], PY_TOC, True)}
 
 from viethoa_lib import cap_html, cap_walk, CAP_COUNT
 OUT = cap_walk(OUT); TOC = cap_walk(TOC)
