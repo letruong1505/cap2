@@ -1,7 +1,9 @@
 ## Bản mới
-- Nội dung khóa học tải về máy theo lớp đã mua sau khi kích hoạt (bản cài nhỏ hơn, tải xong học được cả khi không có mạng); khách đã mua trước đây được tải bù tự động khi mở bản mới
+- Android: nội dung khóa học tải về máy theo lớp đã mua sau khi kích hoạt (apk nhỏ hơn, tải xong học được cả khi không có mạng); khách đã mua được tải bù tự động
+- Android: bản này yêu cầu cài apk mới
 
 ## Các bản trước
+- Nội dung khóa học tải về máy theo lớp đã mua sau khi kích hoạt (bản cài nhỏ hơn, tải xong học được cả khi không có mạng); khách đã mua trước đây được tải bù tự động khi mở bản mới
 - Thu gọn "Mục tiêu học tập" và "Bản quyền" (khóa kích hoạt, mã máy, mã gia đình) giống hộp thời hạn bản quyền; bấm vào tiêu đề để mở
 - Android: bản này yêu cầu cài apk mới
 - Python 12–18: hoàn thiện giáo trình 8 chương (thêm Chương 2 đến Chương 8: kiểu dữ liệu, điều kiện, vòng lặp, cấu trúc dữ liệu, hàm, tệp và CSV, lập trình hướng đối tượng) mỗi bài có giải nghĩa từng phần câu lệnh, hơn 10 hình, 5 bài tập có lời giải, kèm dự án cuối chương; sửa hình minh họa bị lệch chữ; rà soát chính tả và viết hoa chữ đầu sau dấu chấm, dấu hai chấm trên toàn phần mềm

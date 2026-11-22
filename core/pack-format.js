@@ -15,7 +15,9 @@ function deriveGradeKey(master, grade) {
 // files: { "toan7/tap1/...json": "nội dung văn bản", ... }
 function encryptPack(files, key) {
   const raw = zlib.gzipSync(Buffer.from(JSON.stringify({ v: 1, files }), 'utf8'), { level: 9 });
-  const iv = crypto.randomBytes(12);
+  // IV suy ra từ nội dung (HMAC của dữ liệu nén): cùng nội dung và cùng khoá thì cho đúng cùng một file, nên phát hành lại
+  // mà nội dung không đổi thì máy khách không phải tải lại. Khoá chỉ dùng cho một lớp nên không có rủi ro dùng lại IV với nội dung khác.
+  const iv = crypto.createHmac('sha256', key).update('iv').update(raw).digest().subarray(0, 12);
   const c = crypto.createCipheriv('aes-256-gcm', key, iv);
   const enc = Buffer.concat([c.update(raw), c.final()]);
   return Buffer.concat([MAGIC, iv, c.getAuthTag(), enc]);

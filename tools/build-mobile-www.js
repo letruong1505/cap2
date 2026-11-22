@@ -19,7 +19,7 @@ function rawPublicKey(pemPath) {
   return Buffer.from(der.subarray(-32)).toString('base64');
 }
 
-const SCRIPTS = ['mobile/native.js', 'mobile/ota-store.js', 'mobile/vendor/nacl-fast.min.js', 'mobile/mobile-config.js', 'mobile/license.js', 'mobile/api.js', 'mobile/content.js', 'mobile/heartbeat.js', 'mobile/machine.js', 'mobile/updater.js', 'mobile/bridge.js', 'mobile/boot.js'];
+const SCRIPTS = ['mobile/native.js', 'mobile/ota-store.js', 'mobile/vendor/nacl-fast.min.js', 'mobile/mobile-config.js', 'mobile/license.js', 'mobile/api.js', 'mobile/content.js', 'mobile/packs.js', 'mobile/heartbeat.js', 'mobile/machine.js', 'mobile/updater.js', 'mobile/bridge.js', 'mobile/boot.js'];
 
 // Chỉnh index.html cho điện thoại: nạp cầu nối trước persist-shim.js, cho phép gọi máy chủ đơn hàng, thêm viewport, sửa đường dẫn core/.
 function rewriteIndex(html, apiOrigin) {
@@ -73,7 +73,8 @@ function build({ out, pubkey, version, commit, api, versionCode = 1, otaPublicKe
   fs.copyFileSync(path.join(ROOT, 'mobile', 'vendor', 'TWEETNACL-LICENSE.txt'), path.join(out, 'mobile', 'vendor', 'TWEETNACL-LICENSE.txt'));
   const config = { publicKey: rawPublicKey(pubkey), ordersBaseUrl: api, version, commit };
   fs.writeFileSync(path.join(out, 'mobile', 'mobile-config.js'), 'window.NL_MOBILE_CONFIG = ' + JSON.stringify(config) + ';\n');
-  const native = { code: versionCode, version, otaPublicKey };
+  // main/content-mode.json do tools/build-packs.js --prune tạo: content/ chỉ còn mục lục và bài học thử, phần còn lại tải về theo lớp đã mua.
+  const native = { code: versionCode, version, otaPublicKey, packs: fs.existsSync(path.join(ROOT, 'main', 'content-mode.json')) };
   fs.writeFileSync(path.join(out, 'mobile', 'native.js'), 'window.NL_NATIVE = ' + JSON.stringify(native) + ';\n');
   fs.writeFileSync(path.join(out, 'app.html'), rewriteIndex(fs.readFileSync(path.join(ROOT, 'renderer', 'index.html'), 'utf8'), new URL(api).origin));
   fs.writeFileSync(path.join(out, 'index.html'), launcherHtml(new URL(api).origin));

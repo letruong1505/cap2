@@ -30,12 +30,24 @@ jobs:
           java-version: 21
 
       - name: Kiểm tra cầu nối Android và bản quyền
-        run: node --test tests/mobile-bridge.test.js tests/mobile-ota.test.js tests/license.test.js
+        run: node --test tests/mobile-bridge.test.js tests/mobile-ota.test.js tests/license.test.js tests/pack-mobile.test.js
 
       - name: Đặt số bản
         run: |
           echo "NL_VERSION_CODE=${{ github.run_number }}" >> "$GITHUB_ENV"
           echo "NL_VERSION_NAME=1.0.${{ github.run_number }}" >> "$GITHUB_ENV"
+
+      # Nội dung khóa học đóng gói mã hóa theo lớp (tải về máy sau khi kích hoạt); apk chỉ giữ mục lục và 2 bài học thử mỗi môn.
+      # Chỉ khi chạy tay và đã có secret PACK_MASTER; không thì apk giữ đủ nội dung như trước.
+      - name: Đóng gói nội dung khóa học (mã hóa theo lớp)
+        id: packs
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          PACK_MASTER: ${{ secrets.PACK_MASTER }}
+        run: |
+          if [ -z "$PACK_MASTER" ]; then echo "Chưa đặt PACK_MASTER: apk giữ đủ nội dung, không tách gói."; echo "packs=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          node tools/build-packs.js --out packs-out --prune
+          echo "packs=true" >> "$GITHUB_OUTPUT"
 
       - name: Gói giao diện và nội dung (www)
         run: node tools/build-mobile-www.js --version "$NL_VERSION_NAME" --version-code "$NL_VERSION_CODE" --commit "${GITHUB_SHA::7}"
@@ -105,6 +117,22 @@ jobs:
         with:
           name: ${{ steps.sign.outputs.signed == 'true' && 'nam-linh-educenter-apk' || 'nam-linh-educenter-apk-thu-nghiem' }}
           path: ${{ runner.temp }}/nam-linh-educenter.apk
+
+      - name: Publish course packs to Cloudflare R2
+        if: steps.packs.outputs.packs == 'true' && steps.sign.outputs.signed == 'true' && github.event_name == 'workflow_dispatch'
+        env:
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+        run: |
+          if [ -z "$R2_BUCKET" ] || [ -z "$R2_ACCOUNT_ID" ]; then echo "Chưa cấu hình R2: không đẩy gói nội dung được, dừng để không phát hành apk thiếu nội dung."; exit 1; fi
+          EP="https://$R2_ACCOUNT_ID.r2.cloudflarestorage.com"
+          cd packs-out
+          # Gói trước, index.json sau cùng. Gói tất định: nội dung không đổi thì trùng tên và trùng nội dung với bản exe.
+          for f in *.nlp; do aws s3 cp "$f" "s3://$R2_BUCKET/educenter-content/$f" --endpoint-url "$EP" --cache-control "public, max-age=31536000, immutable"; done
+          aws s3 cp index.json "s3://$R2_BUCKET/educenter-content/index.json" --endpoint-url "$EP" --cache-control "no-cache"
 
       - name: Publish apk to Cloudflare R2
         if: steps.sign.outputs.signed == 'true' && github.event_name == 'workflow_dispatch'
