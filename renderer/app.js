@@ -707,6 +707,7 @@ function showLockedNotice() {
 
 // Tải nội dung khóa học về máy sau khi kích hoạt: báo tiến độ ở màn hình chọn lớp. Khóa đã tải xong thì học offline được.
 let packWasBusy = false;
+let packDoneShown = false;
 function renderPackStatus(st) {
   const box = document.getElementById('pack-status');
   if (!box || !st || !st.enabled) return;
@@ -718,8 +719,14 @@ function renderPackStatus(st) {
   const retry = el('button', { type: 'button' }, 'Tải lại');
   retry.addEventListener('click', () => { if (window.vungBai.packsSync) window.vungBai.packsSync().catch(() => {}); });
   let msg = null;
-  if (st.state === 'downloading') { packWasBusy = true; msg = [el('b', {}, 'Đang tải nội dung khóa học'), ` (${(st.done || 0) + 1}/${st.total || 1}). Vui lòng giữ kết nối mạng.`]; }
-  else if (st.state === 'ready' && packWasBusy) { packWasBusy = false; msg = [el('b', {}, 'Đã tải xong nội dung khóa học.'), ' Từ giờ học được cả khi không có mạng.']; setTimeout(() => { box.hidden = true; }, 8000); }
+  if (st.state === 'downloading') {
+    packWasBusy = true; packDoneShown = false; const pc = Math.max(0, Math.min(99, Number(st.percent) || 0));
+    const bar = el('div', { class: 'pack-bar' }, el('div', { class: 'pack-bar-fill', style: `width:${pc}%` }));
+    msg = [el('b', {}, `Đang tải nội dung khóa học: ${pc}%`), ` (phần ${(st.done || 0) + 1}/${st.total || 1}). Vui lòng giữ kết nối mạng.`, bar];
+  } else if (st.state === 'ready' && !packDoneShown && (packWasBusy || st.fresh)) {
+    packWasBusy = false; packDoneShown = true; const close = el('button', { type: 'button' }, 'Đóng'); close.addEventListener('click', () => { box.hidden = true; });
+    msg = [el('b', {}, 'Đã tải xong nội dung khóa học (100%).'), ' Từ giờ học được cả khi không có mạng. ', close];
+  }
   else if ((st.state === 'offline' || st.state === 'error') && missing.length) msg = [el('b', {}, st.state === 'offline' ? 'Chưa tải được nội dung khóa học vì không có mạng.' : (st.error || 'Chưa tải được nội dung khóa học.')), ' Có mạng, phần mềm sẽ tự tải. ', retry];
   if (!msg) { if (st.state !== 'ready' || !packWasBusy) box.hidden = true; return; }
   box.replaceChildren(...msg); box.hidden = false;

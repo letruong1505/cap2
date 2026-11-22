@@ -110,9 +110,21 @@
       return loaded.then(function () { return loadUnit('courses', String(id)); });
     }
 
-    function getBytes(url) {
+    function getBytes(url, onBytes) {
       return fetchFn(url).then(function (r) {
         if (!r.ok) throw new Error('http ' + r.status);
+        if (onBytes && r.body && typeof r.body.getReader === 'function') {
+          var rd = r.body.getReader(); var parts = []; var n = 0;
+          var pump = function () {
+            return rd.read().then(function (x) {
+              if (x.done) return;
+              parts.push(x.value); n += x.value.length;
+              if (n > MAX_PACK_BYTES) throw new Error('gói quá lớn');
+              onBytes(n); return pump();
+            });
+          };
+          return pump().then(function () { var out = new Uint8Array(n); var at = 0; parts.forEach(function (c) { out.set(c, at); at += c.length; }); return out.buffer; });
+        }
         return r.arrayBuffer();
       }).then(function (b) { if (b.byteLength > MAX_PACK_BYTES) throw new Error('gói quá lớn'); return new Uint8Array(b); });
     }
@@ -133,14 +145,18 @@
             var pOf = function (u) { return u.kind === 'grades' ? (idx.packs && idx.packs[u.id]) : (idx.courses && idx.courses[u.id]); };
             var todo = units.filter(function (u) { var p = pOf(u); return p && (!st[u.kind][u.id] || st[u.kind][u.id].sha256 !== p.sha256 || st[u.kind][u.id].key !== u.key); });
             var downloaded = 0;
+            var bytesTotal = todo.reduce(function (a, u) { return a + (Number(pOf(u).size) || 0); }, 0) || 1;
+            var bytesBefore = 0; var lastEmit = 0;
+            var pct = function (extra) { return Math.min(99, Math.floor(((bytesBefore + extra) / bytesTotal) * 100)); };
             var chain = Promise.resolve({ ok: true });
             todo.forEach(function (u, i) {
               chain = chain.then(function (prev) {
                 if (!prev.ok) return prev;
                 var p = pOf(u); var ck = (u.kind === 'grades' ? 'g' : 'c:') + u.id;
                 if (!/^(lop\d{1,2}|course-[a-z0-9-]{1,60})-[0-9a-f]{10}\.nlp$/.test(String(p.file))) return prev;
-                setStatus({ state: 'downloading', grade: u.kind === 'grades' ? u.id : 0, course: u.kind === 'courses' ? u.id : '', done: i, total: todo.length, error: '' });
-                return getBytes(base + '/api/pack/file/' + p.file).then(function (bytes) {
+                setStatus({ state: 'downloading', grade: u.kind === 'grades' ? u.id : 0, course: u.kind === 'courses' ? u.id : '', done: i, total: todo.length, percent: pct(0), error: '' });
+                return getBytes(base + '/api/pack/file/' + p.file, function (n) { var t = Date.now(); if (t - lastEmit > 150) { lastEmit = t; setStatus({ percent: pct(n) }); } }).then(function (bytes) {
+                  bytesBefore += Number(p.size) || bytes.length;
                   return subtle.digest('SHA-256', bytes).then(function (d) {
                     if (hex(d) !== p.sha256) throw new Error('sai mã kiểm tra');
                     return decrypt(bytes, u.key); // kiểm tra giải mã được trước khi lưu
@@ -167,7 +183,7 @@
             });
             return chain.then(function (res) {
               if (!res.ok) return res;
-              setStatus({ state: 'ready', done: todo.length, total: todo.length, grade: 0, course: '', error: '' });
+              setStatus({ state: 'ready', done: todo.length, total: todo.length, percent: 100, fresh: downloaded, grade: 0, course: '', error: '' });
               return { ok: true, downloaded: downloaded, grades: Object.keys(granted).map(Number) };
             });
           });

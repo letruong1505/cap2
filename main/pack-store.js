@@ -43,10 +43,15 @@ function createPackStore({ dir, client, lic, licenseDir, enabled = true, fetchFn
   const have = () => Object.keys(readState().grades).map(Number).sort((a, b) => a - b);
   const haveCourses = () => Object.keys(readState().courses).sort();
 
-  async function download(url, expectSha) {
+  async function download(url, expectSha, onBytes) {
     const r = await fetchFn(url, { signal: AbortSignal.timeout(120000) });
     if (!r.ok) throw new Error('http ' + r.status);
-    const buf = Buffer.from(await r.arrayBuffer());
+    let buf;
+    if (onBytes && r.body && typeof r.body.getReader === 'function') {
+      const rd = r.body.getReader(); const parts = []; let n = 0;
+      for (;;) { const { done, value } = await rd.read(); if (done) break; parts.push(Buffer.from(value)); n += value.length; if (n > MAX_PACK_BYTES) throw new Error('gói quá lớn'); onBytes(n); }
+      buf = Buffer.concat(parts);
+    } else buf = Buffer.from(await r.arrayBuffer());
     if (buf.length > MAX_PACK_BYTES) throw new Error('gói quá lớn');
     if (sha256(buf) !== expectSha) throw new Error('sai mã kiểm tra');
     return buf;
@@ -74,12 +79,16 @@ function createPackStore({ dir, client, lic, licenseDir, enabled = true, fetchFn
     ];
     const todo = units.filter((u) => u.p && (!st[u.kind][u.id] || st[u.kind][u.id].sha256 !== u.p.sha256 || st[u.kind][u.id].key !== u.key));
     let downloaded = 0;
+    const bytesTotal = todo.reduce((a, u) => a + (Number(u.p.size) || 0), 0) || 1;
+    let bytesBefore = 0; let lastEmit = 0;
+    const pct = (extra) => Math.min(99, Math.floor(((bytesBefore + extra) / bytesTotal) * 100));
     for (let i = 0; i < todo.length; i++) {
       const u = todo[i]; const p = u.p;
       if (!/^[A-Za-z0-9._-]{1,80}$/.test(String(p.file))) continue;
-      setStatus({ state: 'downloading', grade: u.kind === 'grades' ? u.id : 0, course: u.kind === 'courses' ? u.id : '', done: i, total: todo.length, error: '' });
+      setStatus({ state: 'downloading', grade: u.kind === 'grades' ? u.id : 0, course: u.kind === 'courses' ? u.id : '', done: i, total: todo.length, percent: pct(0), error: '' });
       try {
-        const buf = await download(base + '/' + p.file, p.sha256);
+        const buf = await download(base + '/' + p.file, p.sha256, (n) => { const t = Date.now(); if (t - lastEmit > 150) { lastEmit = t; setStatus({ percent: pct(n) }); } });
+        bytesBefore += Number(p.size) || buf.length;
         decryptPack(buf, Buffer.from(u.key, 'base64')); // kiểm tra giải mã được trước khi lưu
         fs.mkdirSync(packDir, { recursive: true });
         const tmp = path.join(packDir, p.file + '.tmp');
@@ -95,7 +104,7 @@ function createPackStore({ dir, client, lic, licenseDir, enabled = true, fetchFn
       }
     }
     // Khóa không còn bản quyền (thu hồi, hết hạn) thì giữ file nhưng quyền mở do license chặn; không xóa để khách mua lại không phải tải lại.
-    setStatus({ state: 'ready', grades: have(), courses: haveCourses(), done: todo.length, total: todo.length, grade: 0, course: '', error: '' });
+    setStatus({ state: 'ready', grades: have(), courses: haveCourses(), done: todo.length, total: todo.length, percent: 100, fresh: downloaded, grade: 0, course: '', error: '' });
     return { ok: true, downloaded, grades: Object.keys(granted).map(Number) };
   }
 
