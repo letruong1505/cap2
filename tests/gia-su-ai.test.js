@@ -118,21 +118,26 @@ test('Tư duy & lập trình: 2 lộ trình đủ mở đầu + 8 bài, có th�
   }
   // Scratch 8–11: sách "Tư duy trước, Scratch sau" = mở đầu (2) + 16 chương + phụ lục A, D, E, F, G (không có B và C)
   const SC = w.TUDUY.k811;
-  const scKeys = ['tongquan', 'giaodien', ...Array.from({ length: 16 }, (_, i) => 'c' + (i + 1)), 'pa', 'pd', 'pe', 'pf', 'pg'];
+  const scKeys = ['tongquan', 'giaodien', ...Array.from({ length: 48 }, (_, i) => 'c' + (Math.floor(i / 3) + 1) + 'b' + ((i % 3) + 1)), 'pa', 'pd', 'pe', 'pf', 'pg'];
   assert.deepStrictEqual(Object.keys(SC), scKeys);
   for (let i = 1; i <= 16; i++) {
-    const L = SC['c' + i];
-    assert.ok(L.title.startsWith('Chương ' + i + ' · ') && L.html.includes('class="tsum"') && L.html.includes('class="tsteps"') && (i > 14 || L.html.includes('class="sb"')), 'c' + i);   // c15–16 là dự án tự thiết kế: phiếu thiết kế, không có kịch bản mẫu
-    assert.strictEqual((L.html.match(/class="tstep"/g) || []).length, 7, 'c' + i + ' đủ 7 bước');
+    const [b1, b2, b3] = [1, 2, 3].map((k) => SC['c' + i + 'b' + k]);
+    assert.ok(b1.title.startsWith('Chương ' + i + ' · ') && [b1, b2, b3].every((L) => L.html.includes('class="tsum"')), 'c' + i);
+    assert.strictEqual((b2.html.match(/class="tstep"/g) || []).length, 7, 'c' + i + ' đủ 7 bước');
+    assert.ok(i > 14 || b2.html.includes('class="sb"'), 'c' + i);   // c15–16 là dự án tự thiết kế: phiếu thiết kế, không có kịch bản mẫu
+    assert.ok(b3.html.includes('class="tcard tprac"') && b3.html.includes('class="tans"'), 'c' + i + ' thử thách có gợi ý');
   }
+  const T = w.TUDUY_TOC.k811;
+  assert.strictEqual(T.length, 18);
+  assert.strictEqual(T[1].items.map((r) => r.label).join(), 'Bài 1.1,Bài 1.2,Bài 1.3');
   const scAll = JSON.stringify(SC);
   assert.ok(!/12 tuổi|≥|&gt;= |Phụ lục [BC]\b|______/.test(scAll));   // tuổi 8–11, Scratch 3 không có ≥, bỏ phụ lục B/C
   assert.ok(scAll.includes('8–11 tuổi') && scAll.includes('10–11 tuổi'));
-  assert.ok(SC.c13.html.includes('<i>Điểm</i> &gt; <i>9</i>') && SC.c13.html.includes('<i>Bỏ lỡ</i> &gt; <i>4</i>'));
-  assert.ok(SC.c3.html.includes('thử 3 lần với góc 120°') && !SC.c4.html.includes('chương tọa độ'));
-  assert.ok(SC.c14.html.includes('trả lời</i> = <i>2</i>') && !SC.c14.html.includes('<i>nhựa</i>'));
-  assert.ok(SC.c8.html.includes('lượt sống') && !SC.c8.html.includes('còn mạng'));
-  assert.ok(SC.c1.html.includes('Mở lọ mứt') && SC.c1.html.includes('data:image/webp;base64,'));
+  assert.ok(SC.c13b2.html.includes('<i>Điểm</i> &gt; <i>9</i>') && SC.c13b2.html.includes('<i>Bỏ lỡ</i> &gt; <i>4</i>'));
+  assert.ok(SC.c3b2.html.includes('thử 3 lần với góc 120°') && !SC.c4b2.html.includes('chương tọa độ'));
+  assert.ok(SC.c14b2.html.includes('trả lời</i> = <i>2</i>') && !SC.c14b2.html.includes('<i>nhựa</i>'));
+  assert.ok((SC.c8b1.html + SC.c8b2.html + SC.c8b3.html).includes('lượt sống') && !(SC.c8b1.html + SC.c8b2.html + SC.c8b3.html).includes('còn mạng'));
+  assert.ok(SC.c1b1.html.includes('Mở lọ mứt') && SC.c1b1.html.includes('data:image/webp;base64,'));
   const all = JSON.stringify(w.TUDUY);
   assert.ok(!/<script/i.test(all));
   // số liệu đã kiểm: biến Scratch bài 4 = 12; tổng 1..99 = 4950; làm ngược 23 -> 9
@@ -144,7 +149,7 @@ test('Tư duy & lập trình: nối vào app, 2 bài đầu miễn phí', () => 
   for (const x of ['tu-duy-content.js', 'tu-duy.js', 'id="tuduy-body"', 'id="open-tuduy"']) assert.ok(idx.includes(x), x);
   const app = fs.readFileSync(path.join(__dirname, '../renderer/app.js'), 'utf8');
   assert.ok(app.includes("'tuduy'") && app.includes('showTuDuy'));
-  assert.ok(fs.readFileSync(path.join(__dirname, '../renderer/tu-duy.js'), 'utf8').includes("k811: ['tongquan', 'giaodien', 'c1'], k1218: ['tongquan', 'caidat', 'c1b2']"));
+  assert.ok(fs.readFileSync(path.join(__dirname, '../renderer/tu-duy.js'), 'utf8').includes("k811: ['tongquan', 'giaodien', 'c1b1', 'c1b2', 'c1b3'], k1218: ['tongquan', 'caidat', 'c1b2']"));
 });
 
 test('Tư duy & lập trình: có trong catalog bán hàng, keygen và trang phụ huynh', () => {
@@ -162,7 +167,7 @@ test('Tư duy & lập trình: có trong catalog bán hàng, keygen và trang ph�
 test('Tư duy & lập trình: bài Cài đặt có hình minh họa và hướng dẫn đúng công cụ', () => {
   const w = {};
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../renderer/tu-duy-content.js'), 'utf8'), { window: w });
-  const sc = w.TUDUY.k811.c1.html, py = w.TUDUY.k1218.caidat.html;
+  const sc = w.TUDUY.k811.c1b2.html, py = w.TUDUY.k1218.caidat.html;
   assert.ok(sc.includes('scratch.mit.edu') && sc.includes('01_LoiChao'));
   assert.ok((py.match(/<svg/g) || []).length >= 4 && py.includes('python.org') && py.includes('Add python.exe to PATH') && py.includes('IDLE') && py.includes('F5'));
 });

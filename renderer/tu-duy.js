@@ -4,7 +4,7 @@
   'use strict';
   const LEGACY_ID = 'tu-duy-lap-trinh';
   const COURSE = { k811: 'tu-duy-lap-trinh-scratch', k1218: 'tu-duy-lap-trinh-python' };
-  const FREE = { k811: ['tongquan', 'giaodien', 'c1'], k1218: ['tongquan', 'caidat', 'c1b2'] };
+  const FREE = { k811: ['tongquan', 'giaodien', 'c1b1', 'c1b2', 'c1b3'], k1218: ['tongquan', 'caidat', 'c1b2'] };
   const TRACKS = {
     k811: { name: 'Lộ trình 8–11 tuổi', who: 'Dành cho 8 - 11 tuổi', tool: 'Scratch', sub: 'Kéo thả khối lệnh để làm nhân vật di chuyển, vẽ hình và chơi trò chơi – đồng thời tập hỏi “vì sao đúng?” và nghĩ ngược.' },
     k1218: { name: 'Lộ trình 12–18 tuổi', who: 'Dành cho 12 - 18 tuổi', tool: 'Python', sub: 'Dùng Python để phân rã bài toán, kiểm thử như một nhà phản biện và giải bài bằng tư duy ngược.' },
