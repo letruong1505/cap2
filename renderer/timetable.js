@@ -125,8 +125,8 @@
       const r = reminderFor(data, g, now); if (!r) return;
       const chips = h('div', { class: 'tt-chips' });
       const addChips = (label, list) => {
-        chips.append(h('span', { class: 'tt-ses' }, label));
-        if (!list.length) { chips.append(h('span', { class: 'tt-chip off' }, 'Nghỉ')); return; }
+        chips.append(h('span', { class: 'tt-ses' + (list.length ? '' : ' off') }, label));
+        if (!list.length) return;
         list.forEach((e) => {
           const name = labelOf(e, opts.names);
           if (custom(e) || !opts.open) { chips.append(h('span', { class: 'tt-chip' }, name)); return; }
@@ -156,37 +156,45 @@
     const det = h('details', { class: 'tt-card' + (stale ? ' stale' : '') });
     det.append(h('summary', {}, h('span', { class: 'tt-title' }, 'Thời khóa biểu'), h('b', { class: 'tt-status' }, status)));
     const body = h('div', { class: 'tt-body' });
-    body.append(h('p', { class: 'meta' }, 'Chọn các môn học buổi sáng và buổi chiều mỗi ngày. Buổi nào không chọn môn sẽ được báo nghỉ. Mỗi tuần nhập lại một lần, app không lưu tuần cũ. Tối hôm trước app sẽ nhắc ôn bài các môn của ngày mai.'));
+    body.append(h('p', { class: 'meta' }, 'Chọn các môn học buổi sáng và buổi chiều mỗi ngày; buổi nào không học thì tick Nghỉ (ô mờ đi, app báo nghỉ). Mỗi tuần nhập lại một lần, app không lưu tuần cũ. Tối hôm trước app sẽ nhắc ôn bài các môn của ngày mai.'));
 
+    // Bảng: mỗi hàng một ngày, hai cột Sáng/Chiều. Tick "Nghỉ" thì ô mờ đi và bỏ hết môn; không ghi chữ nào khác.
+    const rest = { s: {}, c: {} };
+    DAYS.forEach(([n]) => { rest.s[n] = !!cur && !draft.s[n].length; rest.c[n] = !!cur && !draft.c[n].length; });
+    const grid = h('div', { class: 'tt-grid' }, h('span', {}), h('b', { class: 'tt-colh' }, 'Sáng'), h('b', { class: 'tt-colh' }, 'Chiều'));
     DAYS.forEach(([n, label]) => {
-      const row = h('div', { class: 'tt-day' }, h('div', { class: 'tt-day-name' }, label));
+      grid.append(h('div', { class: 'tt-rowh' }, label));
       [['s', 'Sáng'], ['c', 'Chiều']].forEach(([k, sesName]) => {
-        const chips = h('div', { class: 'tt-chips' }, h('span', { class: 'tt-ses' }, sesName));
-        const cur = () => draft[k][n];
+        const cell = h('div', { class: 'tt-cell' });
+        const list = () => draft[k][n];
         const draw = () => {
-          chips.replaceChildren(h('span', { class: 'tt-ses' }, sesName));
+          cell.replaceChildren(); cell.classList.toggle('off', rest[k][n]);
+          const tick = h('input', { type: 'checkbox', 'aria-label': `${sesName} ${label}: nghỉ` }); tick.checked = rest[k][n];
+          tick.addEventListener('change', () => { rest[k][n] = tick.checked; if (tick.checked) draft[k][n] = []; draw(); });
+          cell.append(h('label', { class: 'tt-rest' }, tick, ' Nghỉ'));
+          if (rest[k][n]) return;
+          const chips = h('div', { class: 'tt-chips' });
           opts.subjects.forEach((sb) => {
-            const on = cur().includes(sb.id);
+            const on = list().includes(sb.id);
             const b = h('button', { type: 'button', class: 'tt-chip toggle' + (on ? ' on' : ''), 'aria-pressed': String(on), 'aria-label': `${sesName} ${label}: ${sb.name}` }, sb.name);
-            b.addEventListener('click', () => { draft[k][n] = on ? cur().filter((x) => x !== sb.id) : cur().concat(sb.id); draw(); });
+            b.addEventListener('click', () => { draft[k][n] = on ? list().filter((x) => x !== sb.id) : list().concat(sb.id); draw(); });
             chips.append(b);
           });
-          cur().filter(custom).forEach((e) => {
+          list().filter(custom).forEach((e) => {
             const b = h('button', { type: 'button', class: 'tt-chip toggle on', title: 'Bấm để bỏ' }, labelOf(e) + ' ✕');
-            b.addEventListener('click', () => { draft[k][n] = cur().filter((x) => x !== e); draw(); });
+            b.addEventListener('click', () => { draft[k][n] = list().filter((x) => x !== e); draw(); });
             chips.append(b);
           });
-          const input = h('input', { type: 'text', class: 'tt-other', placeholder: 'Môn khác (Ngữ văn, Tin học...)', maxlength: '30', 'aria-label': `Môn khác ${sesName} ${label}` });
-          const add = () => { const v = input.value.trim(); if (v && !cur().includes('x:' + v)) { draft[k][n] = cur().concat('x:' + v); draw(); } };
+          const input = h('input', { type: 'text', class: 'tt-other', placeholder: '+ Môn khác', maxlength: '30', 'aria-label': `Môn khác ${sesName} ${label}` });
+          const add = () => { const v = input.value.trim(); if (v && !list().includes('x:' + v)) { draft[k][n] = list().concat('x:' + v); draw(); } };
           input.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') { ev.preventDefault(); add(); } });
           input.addEventListener('blur', add);
-          chips.append(input);
-          if (!cur().length) chips.append(h('span', { class: 'tt-off' }, 'Nghỉ'));
+          chips.append(input); cell.append(chips);
         };
-        draw(); row.append(chips);
+        draw(); grid.append(cell);
       });
-      body.append(row);
     });
+    body.append(grid);
 
     const remind = h('input', { type: 'checkbox', id: 'tt-remind' }); remind.checked = data.remindOn;
     const hour = h('select', { id: 'tt-hour', 'aria-label': 'Giờ nhắc' });

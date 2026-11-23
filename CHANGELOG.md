@@ -1,9 +1,11 @@
 ## Bản mới
-- Thời khóa biểu chia buổi sáng và buổi chiều: buổi nào không có môn được báo nghỉ trong khung nhắc học và thông báo tối hôm trước.
-- Scratch 8–11 tuổi: giáo trình mới "Tư duy trước, Scratch sau" dạng thẻ giống Python (16 chương, mỗi chương 3 bài nhỏ có khung Tóm tắt, thẻ thực hành có gợi ý), kịch bản khối lệnh vẽ bằng khối màu; xem thử Mở đầu và Chương 1
+- Thời khóa biểu nhập và xem dạng bảng: mỗi ngày một hàng, hai cột Sáng và Chiều; buổi nào không học thì tick Nghỉ, ô mờ đi (app học và app Phụ huynh).
 - Android: bản này yêu cầu cài apk mới
 
 ## Các bản trước
+- Thời khóa biểu chia buổi sáng và buổi chiều: buổi nào không có môn được báo nghỉ trong khung nhắc học và thông báo tối hôm trước.
+- Scratch 8–11 tuổi: giáo trình mới "Tư duy trước, Scratch sau" dạng thẻ giống Python (16 chương, mỗi chương 3 bài nhỏ có khung Tóm tắt, thẻ thực hành có gợi ý), kịch bản khối lệnh vẽ bằng khối màu; xem thử Mở đầu và Chương 1
+- Android: bản này yêu cầu cài apk mới
 - Tư duy & lập trình: mô tả hai lộ trình ghi rõ "Dành cho 8 - 11 tuổi" / "Dành cho 12 - 18 tuổi" ở dòng riêng
 - Nếu file nội dung đã tải bị mất (xóa nhầm, dọn dữ liệu), phần mềm tự tải lại
 - Hiện % tiến độ khi tải nội dung khóa học và báo "Đã tải xong" khi hoàn tất (exe và Android)
