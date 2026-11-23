@@ -25,7 +25,7 @@ test('app Phụ huynh bản Windows: gói www dùng khởi động riêng, gọi
 
 test('app Phụ huynh bản Windows: tiến trình chính đúng cú pháp, cấu hình đóng gói và nguồn cập nhật riêng', () => {
   const root = path.join(__dirname, '..');
-  for (const f of ['main-parent/main.js', 'main-parent/preload.js', 'parent/parent-boot-desktop.js', 'parent/parent-update-desktop.js']) {
+  for (const f of ['main-parent/main.js', 'main-parent/preload.js', 'main-parent/store.js', 'parent/parent-boot-desktop.js', 'parent/parent-update-desktop.js']) {
     cp.execFileSync(process.execPath, ['--check', path.join(root, f)]);
   }
   const b = JSON.parse(fs.readFileSync(path.join(root, 'build-parent-win.json'), 'utf8'));
@@ -37,4 +37,16 @@ test('app Phụ huynh bản Windows: tiến trình chính đúng cú pháp, cấ
   assert.match(JSON.parse(fs.readFileSync(path.join(root, 'main-parent/orders-api.json'), 'utf8')).baseUrl, /^https:\/\//);
   // Tiến trình chính chỉ cho gọi tới máy chủ đơn hàng.
   assert.match(fs.readFileSync(path.join(root, 'main-parent/main.js'), 'utf8'), /url\.startsWith\(base \+ '\/'\)/);
+});
+
+test('app Phụ huynh bản Windows: bản sao dữ liệu ra tệp giữ lại sau khi mở lại và chỉ nhận khóa nl-', () => {
+  const { createStore } = require('../main-parent/store.js');
+  const f = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'phs-')), 'sub', 'store.json');
+  const a = createStore(f);
+  assert.ok(a.set('nl-parent-family', '{"fcode":"F1","phone":"09"}'));
+  assert.ok(!a.set('khac', 'x') && !a.set('nl-x', 5));
+  a.set('nl-parent-pending', '{"code":"C"}'); a.remove('nl-parent-pending');
+  const b = createStore(f); // mở lại như sau khi cập nhật
+  assert.deepStrictEqual(b.all(), { 'nl-parent-family': '{"fcode":"F1","phone":"09"}' });
+  fs.writeFileSync(f, 'hỏng'); assert.deepStrictEqual(createStore(f).all(), {});
 });

@@ -4,6 +4,7 @@ const { app, BrowserWindow, ipcMain, Tray, Menu, nativeImage, shell } = require(
 const fs = require('fs');
 const path = require('path');
 const { createUpdater } = require('../main/updater');
+const { createStore } = require('./store');
 
 const APP_TITLE = 'Nam Linh Educenter cho phụ huynh';
 app.setAppUserModelId('vn.namlinh.phuhuynh.win');
@@ -22,6 +23,13 @@ ipcMain.handle('net:fetch', async (_e, url, init) => {
     return { ok: r.ok, status: r.status, body: await r.text() };
   } catch { return { ok: false, status: 0, body: '' }; }
 });
+
+// Dữ liệu phụ huynh đã nhập (mã đơn, số điện thoại, mã gia đình, giờ nhắc…) lưu thêm ra tệp ở thư mục cố định, không phụ thuộc tên app hay localStorage.
+let store = null;
+const getStore = () => store || (store = createStore(path.join(app.getPath('appData'), 'NamLinhPhuHuynh', 'store.json')));
+ipcMain.on('store:all', (e) => { e.returnValue = getStore().all(); });
+ipcMain.on('store:set', (e, k, v) => { e.returnValue = getStore().set(k, v); });
+ipcMain.on('store:remove', (e, k) => { getStore().remove(k); e.returnValue = true; });
 
 let win = null; let updater = null; let tray = null; let quitting = false;
 
