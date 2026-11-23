@@ -84,6 +84,12 @@ function loadPartners(){
       tb.append(el('tr',{},el('td',{},el('code',{},p.code)),el('td',{},p.partner),el('td',{},p.percent+'%'),el('td',{},p.items?p.items.split(',').map(function(i){return d.catalog&&d.catalog[i]?d.catalog[i].name:i}).join(', '):'Tất cả khóa'),el('td',{},(p.machines||0)+'/'+(p.max_machines||'∞')+' máy'),el('td',{},el('span',{class:'st '+(p.active?'on':'off')},p.active?'Đang bật':'Đã tắt')),el('td',{},String(p.used||0)),el('td',{},el('button',{onclick:function(){if(!confirm((p.active?'Tắt':'Bật')+' mã '+p.code+'?'))return;api('POST','/api/admin/partner-codes/'+encodeURIComponent(p.code)+'/active',{active:!p.active}).then(loadPartners).catch(function(e){msg.textContent=e.message})}},p.active?'Tắt':'Bật'))));
     });
     box.append(d.partners.length?tb:el('p',{},'Chưa có mã đối tác.'));
+    api('GET','/api/admin/partner-links').then(function(r){
+      if(!r.links.length)return;
+      var lt=el('table',{},el('tr',{},el('th',{},'Đối tác'),el('th',{},'Liên kết xem số lượng active (gửi riêng cho đối tác)')));
+      r.links.forEach(function(x){var u=location.origin+'/doi-tac#'+x.token;lt.append(el('tr',{},el('td',{},x.partner),el('td',{},el('code',{},u),el('button',{class:'sm',onclick:function(){(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){msg.textContent='Đã sao chép liên kết của '+x.partner}).catch(function(){window.prompt('Sao chép liên kết:',u)})}},'Sao chép'))))});
+      box.append(el('h2',{},'Liên kết cho đối tác'),lt)
+    }).catch(function(){});
     var names=[];d.partners.forEach(function(p){if(names.indexOf(p.partner)<0)names.push(p.partner)});names.sort(function(a,b){return a.localeCompare(b,'vi')});
     fillSel(document.getElementById('pps'),names,'Chọn đối tác',[['__new','+ Thêm đối tác mới…']]);
     fillSel(document.getElementById('fp'),names,'Tất cả đối tác',[]);
@@ -128,21 +134,25 @@ var RATE={};
 function renderRecon(orders){
   var box=document.getElementById('recon');box.replaceChildren();
   var who=document.getElementById('fp').value;if(!who)return;
-  var n=0,list=0,paid=0,items=0;
+  var n=0,list=0,paid=0,items=0,amts=[];
   orders.forEach(function(o){
     if(o.status!=='paid'||o.revoked)return;
     var gone={};(o.item_revoked||[]).forEach(function(r){gone[r.item]=1});var any=false;
-    Object.keys(o.prices||{}).forEach(function(id){var p=o.prices[id];if(!p.partner_code||gone[id])return;any=true;items++;list+=p.list;paid+=p.paid});
+    Object.keys(o.prices||{}).forEach(function(id){var p=o.prices[id];if(!p.partner_code||gone[id])return;any=true;items++;list+=p.list;paid+=p.paid;amts.push(p.paid)});
     if(any)n++;
   });
-  var pct=el('input',{type:'number',min:'0',max:'100',value:RATE[who]===undefined?'':RATE[who],placeholder:'%',style:'width:80px'});
-  var out=el('b',{});
-  function calc(){var r=Number(pct.value);RATE[who]=pct.value;out.textContent=pct.value===''||!(r>=0)?'—':money(Math.round(paid*r/100))}
+  var pct=el('input',{type:'number',min:'0',max:'100',value:RATE[who]===undefined?'25':RATE[who],placeholder:'%',style:'width:80px'});
+  var out=el('b',{}),tax=el('div',{});
+  function calc(){var r=Number(pct.value);RATE[who]=pct.value;
+    if(pct.value===''||!(r>=0)){out.textContent='—';tax.textContent='';return}
+    var g=0;amts.forEach(function(x){g+=Math.round(x*r/100)});out.textContent=money(g);
+    var t=g>5000000?Math.round(g/10):0;
+    tax.textContent=t>0?'Vượt 5.000.000 đ nên khấu trừ 10% thuế trên toàn bộ: -'+money(t)+' → thực chi '+money(g-t):'Chưa vượt 5.000.000 đ, chưa khấu trừ thuế. Thực chi '+money(g)}
   pct.oninput=calc;calc();
   box.append(el('div',{class:'card'},el('div',{},el('b',{},'Đối soát đối tác: '+who)),
     el('div',{},n+' đơn đã thanh toán (không tính đơn đã thu hồi hoặc khóa bị thu hồi), '+items+' khóa. Giá niêm yết '+money(list)+', khách thực trả '+money(paid)+'.'),
-    el('div',{class:'row',style:'margin-top:8px'},el('span',{},'Hoa hồng (%) trên số thực trả: '),pct,el('span',{},' = '),out),
-    el('div',{class:'muted'},'Chọn khoảng ngày để đối soát theo kỳ. Tỉ lệ hoa hồng chỉ để tính tại đây, không lưu trên máy chủ.')));
+    el('div',{class:'row',style:'margin-top:8px'},el('span',{},'Hoa hồng (%) trên số thực trả từng khóa: '),pct,el('span',{},' = '),out),tax,
+    el('div',{class:'muted'},'Mặc định 25%. Chọn khoảng ngày để đối soát theo kỳ; mức khấu trừ thuế tính theo kỳ đang chọn. Khớp với số đối tác tự xem ở trang /doi-tac khi tỉ lệ là 25%.')));
 }
 ['fp','fd','td'].forEach(function(id){document.getElementById(id).onchange=load});
 document.getElementById('pps').onchange=syncNew;

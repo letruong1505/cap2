@@ -6,6 +6,7 @@ import { importLegacy } from './legacy.js';
 import { registerLegacy } from './register.js';
 import { progressSettings, progressPush, progressView } from './progress.js';
 import { receiptPage } from './receipt.js';
+import { partnerLinks, partnerByToken, partnerSummary, partnerPage } from './partner-portal.js';
 import { packKeys, packIndex, packFile } from './pack.js';
 
 const json = (data, status = 200) => new Response(JSON.stringify(data), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
@@ -128,6 +129,16 @@ async function route(req, env, now) {
       return json({ success: true, result });
     }
 
+    // --- Cổng đối tác (chỉ xem) ---
+    if (req.method === 'GET' && path === '/doi-tac') return partnerPage();
+    if (req.method === 'POST' && path === '/api/partner/summary') {
+      const b = await body(req);
+      const who = await partnerByToken(db, env, b.token);
+      if (!who) return json({ error: 'Liên kết đối tác không đúng hoặc đã hết hiệu lực.' }, 401);
+      const day = (v) => (/^\d{4}-\d{2}-\d{2}$/.test(String(v || '')) ? String(v) : '');
+      return json(await partnerSummary(db, catalog, who, { from: day(b.from), to: day(b.to) }, now));
+    }
+
     // --- Quản trị ---
     if (req.method === 'GET' && path === '/admin') return adminPage();
     if (path.startsWith('/api/admin/')) {
@@ -135,6 +146,7 @@ async function route(req, env, now) {
       if (req.method === 'GET' && path === '/api/admin/orders') return json({ orders: await listOrders(db, { status: url.searchParams.get('status') || '', q: url.searchParams.get('q') || '', partner: url.searchParams.get('partner') || '', from: url.searchParams.get('from') || '', to: url.searchParams.get('to') || '' }, now), catalog: catalog.byId });
       if (req.method === 'POST' && path === '/api/admin/import-legacy') return json(await importLegacy(db, catalog, await body(req), now), 201);
       if (req.method === 'GET' && path === '/api/admin/transactions') return json({ transactions: await listUnmatched(db) });
+      if (req.method === 'GET' && path === '/api/admin/partner-links') return json({ links: await partnerLinks(db, env) });
       if (req.method === 'GET' && path === '/api/admin/partner-codes') return json({ partners: await listPartnerCodes(db), catalog: catalog.byId });
       if (req.method === 'POST' && path === '/api/admin/partner-codes') return json(await createPartnerCode(db, await body(req), now, catalog), 201);
       m = /^\/api\/admin\/partner-codes\/([A-Za-z0-9-]{3,20})\/active$/.exec(path);
