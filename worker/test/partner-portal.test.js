@@ -4,7 +4,7 @@ import catalog from '../../renderer/catalog.js';
 import { fakeD1, testEnv } from './helpers.js';
 import { createOrder, applyPayment, createPartnerCode, revokeItem, revokeOrder } from '../src/orders.js';
 import { handle } from '../src/index.js';
-import { partnerToken, partnerByToken, partnerSummary } from '../src/partner-portal.js';
+import { partnerToken, partnerByToken, partnerSummary, commissionOf, commissionTotal } from '../src/partner-portal.js';
 
 const NOW = new Date('2026-11-18T10:00:00Z');
 const rnd = (n) => () => Uint8Array.from([n, 1, 2, 3, 4, 5]);
@@ -66,4 +66,19 @@ test('đường dẫn: sai mã bị từ chối, đúng mã xem được, liên 
   assert.equal(links.links.find((x) => x.partner === 'Đối tác Hoài').token, t);
   const page = await handle(new Request('https://x.test/doi-tac'), e, NOW);
   assert.equal(page.status, 200); assert.match(await page.text(), /Đối tác Nam Linh Educenter/);
+});
+
+test('hoa hồng 25% mỗi khóa; tổng trên 5 triệu thì khấu trừ 10% toàn bộ', async () => {
+  assert.equal(commissionOf(799200), 199800);
+  assert.deepEqual(commissionTotal(5000000), { percent: 25, gross: 5000000, taxPercent: 10, taxThreshold: 5000000, tax: 0, net: 5000000 });
+  assert.deepEqual(commissionTotal(6000000), { percent: 25, gross: 6000000, taxPercent: 10, taxThreshold: 5000000, tax: 600000, net: 5400000 });
+  const { db, a } = await setup();
+  const r = await partnerSummary(db, catalog, 'Đối tác Hoài', {}, NOW);
+  const sumC = r.byCourse.reduce((x, c) => x + c.commission, 0);
+  assert.equal(r.commission.gross, sumC);
+  assert.equal(r.orders.reduce((x, o) => x + (o.active ? o.commission : 0), 0), sumC);
+  assert.equal(r.commission.tax, 0); assert.equal(r.commission.net, sumC);
+  await revokeItem(db, a.code, 'gia-su-ai', 'hoàn tiền', NOW);
+  const r2 = await partnerSummary(db, catalog, 'Đối tác Hoài', {}, NOW);
+  assert.ok(r2.commission.gross < r.commission.gross);
 });

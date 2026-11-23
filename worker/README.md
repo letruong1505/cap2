@@ -93,5 +93,6 @@ cd worker && npm test     # cần Node 22 (dùng sqlite có sẵn của Node đ�
 - Trang `/doi-tac` chỉ để xem, không cần mật khẩu quản trị. Mỗi đối tác có một liên kết riêng dạng `/doi-tac#<mã>`; mã tính từ `ADMIN_TOKEN` và tên đối tác nên không cần bảng dữ liệu mới.
 - Lấy liên kết ở trang `/admin`, mục "Liên kết cho đối tác" (nút Sao chép), rồi gửi riêng cho từng đối tác.
 - Đối tác thấy: số khóa/đơn đang hoạt động (đã thanh toán, chưa hoàn hoặc thu hồi), số máy đã kích hoạt, tiền khách thực trả, theo khóa học và danh sách đơn (số điện thoại chỉ hiện 3 số cuối), lọc theo khoảng ngày đặt đơn. Không thấy tên khách và không thao tác được gì.
+- Hoa hồng 25% trên số tiền khách thực trả của từng khóa (làm tròn từng khóa). Tổng hoa hồng trong khoảng ngày đang chọn vượt 5.000.000 đ thì khấu trừ 10% thuế trên toàn bộ số đó; hiện sẵn "thực nhận". Các mức này là hằng số ở đầu `worker/src/partner-portal.js`, trang `/admin` (Đối soát đối tác) dùng cùng cách tính và mặc định 25%.
 - Muốn đổi mã của mọi đối tác (lộ liên kết): đặt secret `PARTNER_SALT` bằng một chuỗi mới (`npx wrangler secret put PARTNER_SALT`) rồi deploy; đổi `ADMIN_TOKEN` cũng làm đổi mã.
 
