@@ -110,6 +110,6 @@
   $('go-buy').addEventListener('click', openCourses);
   $('go-buy-now').addEventListener('click', () => openBuy());
   document.querySelectorAll('[data-back-courses]').forEach((b) => b.addEventListener('click', openCourses));
-  const v = $('build'); if (v && window.NL_MOBILE_CONFIG) v.textContent = 'Phụ huynh ' + (window.NL_MOBILE_CONFIG.version || '');
+  const v = $('build'); if (v && window.NL_MOBILE_CONFIG && !window.NLDesktop) v.textContent = 'Phụ huynh ' + (window.NL_MOBILE_CONFIG.version || '');
   home();
 })();
