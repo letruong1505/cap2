@@ -3,6 +3,18 @@
   'use strict';
   var cfg = window.NL_MOBILE_CONFIG || {};
   var ls = window.localStorage;
+  // Khôi phục dữ liệu từ bản sao ở tệp (nếu localStorage trống) rồi tiếp tục sao lưu mọi thay đổi, để cập nhật hay đổi bản không bắt nhập lại.
+  var D = window.NLDesktop;
+  if (D && D.storeAll && ls) {
+    try {
+      var saved = D.storeAll() || {};
+      Object.keys(saved).forEach(function (k) { if (ls.getItem(k) === null) ls.setItem(k, saved[k]); });
+      var sp = Storage.prototype; var rawSet = sp.setItem; var rawRemove = sp.removeItem;
+      sp.setItem = function (k, v) { rawSet.call(this, k, v); if (this === ls && /^nl-/.test(k)) D.storeSet(k, String(v)); };
+      sp.removeItem = function (k) { rawRemove.call(this, k); if (this === ls && /^nl-/.test(k)) D.storeRemove(k); };
+      for (var i = 0; i < ls.length; i++) { var key = ls.key(i); if (/^nl-/.test(key)) D.storeSet(key, ls.getItem(key)); }
+    } catch (e) { /* không sao lưu được thì dùng localStorage như cũ */ }
+  }
   function deviceId() {
     var k = 'nl-parent-machine'; var v = null;
     try { v = ls.getItem(k); } catch (e) { /* bỏ qua */ }
