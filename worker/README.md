@@ -87,3 +87,11 @@ Trong SePay: Webhooks, Thêm webhook:
 ```
 cd worker && npm test     # cần Node 22 (dùng sqlite có sẵn của Node để giả lập D1)
 ```
+
+## Cổng đối tác (xem số lượng active để đối soát hoa hồng)
+
+- Trang `/doi-tac` chỉ để xem, không cần mật khẩu quản trị. Mỗi đối tác có một liên kết riêng dạng `/doi-tac#<mã>`; mã tính từ `ADMIN_TOKEN` và tên đối tác nên không cần bảng dữ liệu mới.
+- Lấy liên kết ở trang `/admin`, mục "Liên kết cho đối tác" (nút Sao chép), rồi gửi riêng cho từng đối tác.
+- Đối tác thấy: số khóa/đơn đang hoạt động (đã thanh toán, chưa hoàn hoặc thu hồi), số máy đã kích hoạt, tiền khách thực trả, theo khóa học và danh sách đơn (số điện thoại chỉ hiện 3 số cuối), lọc theo khoảng ngày đặt đơn. Không thấy tên khách và không thao tác được gì.
+- Muốn đổi mã của mọi đối tác (lộ liên kết): đặt secret `PARTNER_SALT` bằng một chuỗi mới (`npx wrangler secret put PARTNER_SALT`) rồi deploy; đổi `ADMIN_TOKEN` cũng làm đổi mã.
+

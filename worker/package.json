@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test test/orders.test.js test/pin-reset.test.js test/partner.test.js test/refund.test.js test/devices.test.js test/cors.test.js test/appupdate.test.js test/progress.test.js test/legacy.test.js test/register.test.js test/family.test.js test/pack.test.js",
+    "test": "node --test test/orders.test.js test/pin-reset.test.js test/partner.test.js test/refund.test.js test/devices.test.js test/cors.test.js test/appupdate.test.js test/progress.test.js test/legacy.test.js test/register.test.js test/family.test.js test/pack.test.js test/partner-portal.test.js",
     "deploy": "wrangler deploy",
     "db:init": "wrangler d1 execute nam-linh-orders --remote --file=schema.sql"
   },

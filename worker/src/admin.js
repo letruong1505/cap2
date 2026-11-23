@@ -84,6 +84,12 @@ function loadPartners(){
       tb.append(el('tr',{},el('td',{},el('code',{},p.code)),el('td',{},p.partner),el('td',{},p.percent+'%'),el('td',{},p.items?p.items.split(',').map(function(i){return d.catalog&&d.catalog[i]?d.catalog[i].name:i}).join(', '):'Tất cả khóa'),el('td',{},(p.machines||0)+'/'+(p.max_machines||'∞')+' máy'),el('td',{},el('span',{class:'st '+(p.active?'on':'off')},p.active?'Đang bật':'Đã tắt')),el('td',{},String(p.used||0)),el('td',{},el('button',{onclick:function(){if(!confirm((p.active?'Tắt':'Bật')+' mã '+p.code+'?'))return;api('POST','/api/admin/partner-codes/'+encodeURIComponent(p.code)+'/active',{active:!p.active}).then(loadPartners).catch(function(e){msg.textContent=e.message})}},p.active?'Tắt':'Bật'))));
     });
     box.append(d.partners.length?tb:el('p',{},'Chưa có mã đối tác.'));
+    api('GET','/api/admin/partner-links').then(function(r){
+      if(!r.links.length)return;
+      var lt=el('table',{},el('tr',{},el('th',{},'Đối tác'),el('th',{},'Liên kết xem số lượng active (gửi riêng cho đối tác)')));
+      r.links.forEach(function(x){var u=location.origin+'/doi-tac#'+x.token;lt.append(el('tr',{},el('td',{},x.partner),el('td',{},el('code',{},u),el('button',{class:'sm',onclick:function(){(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){msg.textContent='Đã sao chép liên kết của '+x.partner}).catch(function(){window.prompt('Sao chép liên kết:',u)})}},'Sao chép'))))});
+      box.append(el('h2',{},'Liên kết cho đối tác'),lt)
+    }).catch(function(){});
     var names=[];d.partners.forEach(function(p){if(names.indexOf(p.partner)<0)names.push(p.partner)});names.sort(function(a,b){return a.localeCompare(b,'vi')});
     fillSel(document.getElementById('pps'),names,'Chọn đối tác',[['__new','+ Thêm đối tác mới…']]);
     fillSel(document.getElementById('fp'),names,'Tất cả đối tác',[]);
