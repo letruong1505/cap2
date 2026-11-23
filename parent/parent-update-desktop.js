@@ -23,12 +23,14 @@
   }
   d.onUpdate(show);
   d.updateStatus().then(show);
-  // Hiện đúng số bản đang cài (lấy từ hệ thống) và nút kiểm tra bản mới thủ công.
+  // Nhãn số bản + nút kiểm tra thủ công: dựng ngay bằng số bản đóng gói sẵn, rồi thay bằng số bản thật do Windows báo.
   var label = document.getElementById('build');
-  if (label && d.version) d.version().then(function (v) {
-    var s = document.createElement('span'); s.textContent = 'Phụ huynh ' + v;
-    var b = document.createElement('button'); b.type = 'button'; b.className = 'ghost'; b.textContent = 'Kiểm tra bản mới';
-    b.addEventListener('click', function () { manual = true; say('Đang kiểm tra bản mới…'); d.checkUpdate().then(show); });
-    label.replaceChildren(s, ' ', b);
-  });
+  if (label) {
+    var cfg = window.NL_MOBILE_CONFIG || {};
+    var vs = document.createElement('span'); vs.textContent = 'Phụ huynh ' + (cfg.version || '');
+    var vb = document.createElement('button'); vb.type = 'button'; vb.className = 'ghost'; vb.textContent = 'Kiểm tra bản mới';
+    vb.addEventListener('click', function () { manual = true; say('Đang kiểm tra bản mới…'); d.checkUpdate().then(show, function (e) { show({ state: 'error', error: String((e && e.message) || e) }); }); });
+    label.replaceChildren(vs, ' ', vb);
+    if (d.version) d.version().then(function (v) { if (v) vs.textContent = 'Phụ huynh ' + v; }, function () { /* giữ số bản đóng gói */ });
+  }
 })();
