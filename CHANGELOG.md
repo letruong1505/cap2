@@ -1,4 +1,5 @@
 ## Bản mới
+- Thời khóa biểu nhập và xem dạng bảng như bản giấy: mỗi ngày 5 tiết, hai cột Sáng và Chiều, mỗi ô chọn một môn (một môn được học nhiều tiết); tick Nghỉ thì cả buổi mờ đi.
 - Thời khóa biểu buổi chiều: máy tự gửi lại lên máy chủ một lần để phụ huynh thấy đủ buổi chiều.
 - Android: bản này yêu cầu cài apk mới
 

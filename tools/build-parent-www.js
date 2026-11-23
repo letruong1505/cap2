@@ -1,10 +1,13 @@
 #!/usr/bin/env node
 // Gói app Phụ huynh (nhẹ, không có bài học) thành thư mục www/ để đưa vào apk riêng (Capacitor).
-// Dùng: node tools/build-parent-www.js [--out mobile/www] [--version 1.0.0] [--api https://...]
+// Dùng: node tools/build-parent-www.js [--out mobile/www] [--version 1.0.x] [--api https://...]
 const fs = require('fs');
 const path = require('path');
 const ROOT = path.join(__dirname, '..');
 const arg = (n, d) => { const i = process.argv.indexOf('--' + n); return i > 0 && process.argv[i + 1] ? process.argv[i + 1] : d; };
+
+// Không truyền --version thì lấy số bản của package.json (workflow Windows đặt 1.0.<số lần chạy> trước khi đóng gói).
+const pkgVersion = () => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8')).version || '1.0.0'; } catch (e) { return '1.0.0'; } };
 
 const FROM_RENDERER = ['styles.css', 'fonts.css', 'progress.js', 'usage.js', 'progress-sync.js', 'progress-ui.js', 'catalog.js', 'timetable.js', 'vietqr.js', 'payment-config.js', 'terms.js'];
 
@@ -39,6 +42,6 @@ module.exports = { build, FROM_RENDERER };
 if (require.main === module) {
   const api = arg('api', JSON.parse(fs.readFileSync(path.join(ROOT, 'main', 'orders-api.json'), 'utf8')).baseUrl);
   const out = path.resolve(arg('out', path.join(ROOT, 'mobile', 'www')));
-  build({ out, version: arg('version', '1.0.0'), api, versionCode: Number(arg('version-code', '1')), desktop: process.argv.includes('--desktop') });
+  build({ out, version: arg('version', pkgVersion()), api, versionCode: Number(arg('version-code', '1')), desktop: process.argv.includes('--desktop') });
   console.log('Đã tạo app Phụ huynh tại', out);
 }

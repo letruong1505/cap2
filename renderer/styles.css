@@ -1169,15 +1169,16 @@ button.tt-chip { cursor: pointer; }
 .tt-ses { font-size: 13px; font-weight: 800; color: #1f6f8b; min-width: 48px; align-self: center; }
 .tt-chip.off, .tt-off { font-size: 13px; font-weight: 700; color: #8a97a3; background: #eef1f4; border-radius: 999px; padding: 3px 10px; align-self: center; }
 
-/* Bảng thời khóa biểu: hàng = ngày, cột = Sáng/Chiều; ô nghỉ chỉ mờ đi, không ghi chữ. */
-.tt-grid { display: grid; grid-template-columns: 64px 1fr 1fr; gap: 6px; align-items: stretch; margin: 8px 0; }
-.tt-colh { text-align: center; font-size: 13px; font-weight: 800; color: #1f6f8b; }
-.tt-rowh { font-weight: 700; font-size: 14px; align-self: center; }
-.tt-cell { border: 1px solid var(--rule); border-radius: 12px; padding: 6px 8px; background: #fff; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
-.tt-cell .tt-chips { margin: 0; gap: 4px; }
-.tt-cell .tt-chip { padding: 3px 9px; font-size: 13px; }
-.tt-cell .tt-other { width: 100%; min-width: 0; font-size: 13px; padding: 4px 8px; box-sizing: border-box; }
-.tt-rest { font-size: 12.5px; font-weight: 700; color: #6b7a88; display: flex; align-items: center; gap: 4px; cursor: pointer; }
-.tt-cell.off { background: #eef1f4; border-color: transparent; opacity: .55; }
-.tt-view .tt-cell { padding: 6px 8px; min-height: 36px; }
+/* Bảng thời khóa biểu như bản giấy: cột Sáng/Chiều, mỗi ngày nhiều tiết; buổi nghỉ chỉ mờ đi, không ghi chữ. */
+.tt-tab { width: 100%; border-collapse: collapse; table-layout: fixed; margin: 8px 0; background: #fff; }
+.tt-tab th, .tt-tab td { border: 1px solid #1f2d3a; padding: 0; height: 30px; font-size: 13.5px; }
+.tt-tab th { background: #f4f7fa; color: #1f2d3a; font-size: 14px; }
+.tt-tab .tt-corner, .tt-tab .tt-dayc { width: 58px; }
+.tt-tab .tt-dayc { text-align: center; font-weight: 700; background: #fff; }
+.tt-tab .tt-tickc { height: 24px; padding: 0 6px; background: #f8fafc; }
+.tt-rest { display: flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 700; color: #6b7a88; cursor: pointer; }
+.tt-tab .tt-slot { padding: 0 4px; vertical-align: middle; }
+.tt-tab .tt-sel { width: 100%; height: 100%; min-height: 28px; border: 0; background: transparent; font: inherit; font-size: 13.5px; padding: 0 2px; box-sizing: border-box; color: var(--ink); }
+.tt-tab td.off { background: #e9edf1; opacity: .6; }
+.tt-tab.tt-view .tt-slot { padding: 2px 6px; }
 .tt-ses.off { opacity: .35; }
