@@ -58,3 +58,28 @@ test('nhắc chủ nhật dặn cập nhật thời khóa biểu tuần mới', 
   const p = T.plan(data, d('2026-11-28', 8), { toan: 'Toán' }); // thông báo tối chủ nhật 29/11 cho thứ hai 30/11
   assert.match(p[0].body, /cập nhật thời khóa biểu/);
 });
+
+test('thời khóa biểu sáng/chiều: buổi không có môn được báo nghỉ trong nhắc và thông báo', () => {
+  const data = mk('2026-11-23', { 2: ['toan', 'ly'] });
+  data.grades[12].pm = { 1: [], 2: [], 3: [], 4: [], 5: [], 6: [] };
+  const r = T.reminderFor(data, 12, d('2026-11-23', 20)); // tối thứ hai, nhắc ngày thứ ba
+  assert.deepStrictEqual(r.sang, ['toan', 'ly']);
+  assert.deepStrictEqual(r.chieu, []);
+  const p = T.plan(data, d('2026-11-23', 8), { toan: 'Toán', ly: 'Vật lí' });
+  const tue = p.find((x) => x.body.includes('Thứ ba'));
+  assert.ok(tue.body.includes('Sáng: Toán, Vật lí.'));
+  assert.ok(tue.body.includes('Chiều nghỉ.'));
+});
+
+test('thời khóa biểu sáng/chiều: lưu cả hai buổi, chỉ có chiều thì sáng báo nghỉ, dữ liệu cũ vẫn đọc được', () => {
+  const data = T.normalize(null);
+  T.setTimetable(data, 12, { 3: ['toan'] }, d('2026-11-24'), { 3: ['anh'], 4: ['hoa'] });
+  const t = data.grades[12];
+  assert.deepStrictEqual(T.sessionsOf(t, 3), { s: ['toan'], c: ['anh'] });
+  assert.strictEqual(T.sessionText(T.sessionsOf(t, 4), {}), 'Sáng nghỉ. Chiều: hoa.');
+  assert.strictEqual(T.sessionText(T.sessionsOf(t, 5), {}), 'Sáng nghỉ. Chiều nghỉ.');
+  assert.strictEqual(T.isEmptyTT(t), false);
+  const old = T.normalize({ grades: { 12: { week: '2026-11-23', days: { 1: ['toan'] } } } });
+  assert.deepStrictEqual(old.grades[12].pm[1], []);
+  assert.strictEqual(T.isEmptyTT({ days: { 1: [], 2: [], 3: [], 4: [], 5: [], 6: [] }, pm: { 1: [], 2: [], 3: [], 4: [], 5: [], 6: [] } }), true);
+});

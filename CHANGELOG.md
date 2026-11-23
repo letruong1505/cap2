@@ -1,4 +1,5 @@
 ## Bản mới
+- Thời khóa biểu chia buổi sáng và buổi chiều: buổi nào không có môn được báo nghỉ trong khung nhắc học và thông báo tối hôm trước.
 - AI cho người đi làm – lớp ChatGPT: thêm 9 bài (Bài 4–12) chuyển từ tài liệu ChatGPT cho nhân viên văn phòng: thiết lập an toàn, công thức giao việc, email/Word/SOP, Excel/KPI, PowerPoint/họp, hành chính–nhân sự–mua hàng, dự án, 5 case study, lộ trình 30 ngày và thư viện 96 prompt
 - Android: bản này yêu cầu cài apk mới
 
