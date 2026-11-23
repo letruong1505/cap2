@@ -82,3 +82,9 @@ test('hoa hồng 25% mỗi khóa; tổng trên 5 triệu thì khấu trừ 10% t
   const r2 = await partnerSummary(db, catalog, 'Đối tác Hoài', {}, NOW);
   assert.ok(r2.commission.gross < r.commission.gross);
 });
+
+test('/api/version cho biết máy chủ đã có buổi chiều và cổng đối tác', async () => {
+  const { e } = await setup();
+  const r = await handle(new Request('https://x.test/api/version'), e, NOW);
+  assert.equal(r.status, 200); assert.deepEqual((await r.json()).features, ['timetable-pm', 'partner-portal']);
+});

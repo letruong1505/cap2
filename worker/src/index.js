@@ -165,6 +165,8 @@ async function route(req, env, now) {
         return json({ key: await reissueOrder(db, env, catalog, m[1], b.machine, now, b.platform) });
       }
     }
+    // Cho biết máy chủ đang chạy bản nào (mở trên trình duyệt để kiểm tra đã deploy chưa).
+    if (req.method === 'GET' && path === '/api/version') return json({ ok: true, features: ['timetable-pm', 'partner-portal'] });
     if (path === '/') return new Response('Nam Linh Educenter orders API', { status: 200 });
     return json({ error: 'Không tìm thấy.' }, 404);
   } catch (e) {

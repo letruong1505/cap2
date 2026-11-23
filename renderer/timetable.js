@@ -8,6 +8,7 @@
   const KEY = 'nl-timetable';
   const DAYS = [[1, 'Thứ hai'], [2, 'Thứ ba'], [3, 'Thứ tư'], [4, 'Thứ năm'], [5, 'Thứ sáu'], [6, 'Thứ bảy']];
   const DOW_NAME = ['Chủ nhật', 'Thứ hai', 'Thứ ba', 'Thứ tư', 'Thứ năm', 'Thứ sáu', 'Thứ bảy'];
+  const SLOTS = 5; // số tiết mỗi buổi trong bảng nhập
   const HORIZON = 14; // lên lịch thông báo trước 14 ngày
 
   const day0 = (d) => new Date(d.getFullYear(), d.getMonth(), d.getDate());
@@ -41,7 +42,7 @@
   /* Lưu thời khóa biểu của một lớp cho tuần chứa ngày now; thay hẳn bản cũ.
      days: các môn buổi sáng theo thứ; pm: các môn buổi chiều theo thứ. Buổi không có môn nào là buổi nghỉ. */
   function setTimetable(data, grade, days, now, pm) {
-    const uniq = (a) => Array.from(new Set((a || []).filter(Boolean)));
+    const uniq = (a) => (a || []).filter(Boolean).slice(0, 12); // giữ đúng thứ tự tiết, một môn có thể học nhiều tiết
     const clean = {}; const cleanPm = {};
     DAYS.forEach(([n]) => { clean[n] = uniq(days[n]); cleanPm[n] = uniq(pm && pm[n]); });
     data.grades[grade] = { week: weekKey(now), days: clean, pm: cleanPm };
@@ -49,7 +50,8 @@
   }
   const isEmptyTT = (t) => !t || DAYS.every(([n]) => !t.days[n].length && !(t.pm && t.pm[n] && t.pm[n].length));
   /* Các môn buổi sáng và buổi chiều của một thứ (Chủ nhật không có lịch). */
-  const sessionsOf = (t, dow) => ({ s: (t && t.days[dow]) || [], c: (t && t.pm && t.pm[dow]) || [] });
+  const once = (a) => Array.from(new Set(a));
+  const sessionsOf = (t, dow) => ({ s: once((t && t.days[dow]) || []), c: once((t && t.pm && t.pm[dow]) || []) });
   /* "Sáng: Toán, Lý. Chiều nghỉ." — buổi không có môn nào được báo nghỉ. */
   function sessionText(ses, names) {
     const list = (a) => a.map((e) => labelOf(e, names)).join(', ');
@@ -117,6 +119,23 @@
     } catch (e) { return Promise.resolve(false); }
   }
 
+  /* Bảng chỉ xem (app Phụ huynh): cùng khuôn với bảng nhập, buổi không có môn nào thì mờ đi. */
+  function viewTable(t, names) {
+    const table = h('table', { class: 'tt-tab tt-view' });
+    table.append(h('tr', {}, h('th', { class: 'tt-corner' }), h('th', {}, 'Sáng'), h('th', {}, 'Chiều')));
+    DAYS.forEach(([n, label]) => {
+      const sg = (t.days && t.days[n]) || []; const ch = (t.pm && t.pm[n]) || [];
+      const R = Math.max(SLOTS, sg.length, ch.length);
+      for (let i = 0; i < R; i++) {
+        const tr = h('tr', {});
+        if (i === 0) tr.append(h('td', { class: 'tt-dayc', rowspan: String(R) }, label));
+        [sg, ch].forEach((list) => tr.append(h('td', { class: 'tt-slot' + (list.length ? '' : ' off') }, list[i] ? labelOf(list[i], names) : '')));
+        table.append(tr);
+      }
+    });
+    return table;
+  }
+
   /* Khung nhắc nhở ở đầu màn hình: opts = { grades: [số lớp], names, open(grade, môn) }. */
   function banner(slot, opts) {
     slot.replaceChildren();
@@ -158,43 +177,46 @@
     const body = h('div', { class: 'tt-body' });
     body.append(h('p', { class: 'meta' }, 'Chọn các môn học buổi sáng và buổi chiều mỗi ngày; buổi nào không học thì tick Nghỉ (ô mờ đi, app báo nghỉ). Mỗi tuần nhập lại một lần, app không lưu tuần cũ. Tối hôm trước app sẽ nhắc ôn bài các môn của ngày mai.'));
 
-    // Bảng: mỗi hàng một ngày, hai cột Sáng/Chiều. Tick "Nghỉ" thì ô mờ đi và bỏ hết môn; không ghi chữ nào khác.
+    // Bảng như thời khóa biểu giấy: mỗi ngày 5 tiết (hàng), hai cột Sáng/Chiều, mỗi ô chọn một môn. Tick "Nghỉ" thì cả buổi mờ đi.
     const rest = { s: {}, c: {} };
     DAYS.forEach(([n]) => { rest.s[n] = !!cur && !draft.s[n].length; rest.c[n] = !!cur && !draft.c[n].length; });
-    const grid = h('div', { class: 'tt-grid' }, h('span', {}), h('b', { class: 'tt-colh' }, 'Sáng'), h('b', { class: 'tt-colh' }, 'Chiều'));
+    const table = h('table', { class: 'tt-tab' });
+    table.append(h('tr', {}, h('th', { class: 'tt-corner' }), h('th', {}, 'Sáng'), h('th', {}, 'Chiều')));
     DAYS.forEach(([n, label]) => {
-      grid.append(h('div', { class: 'tt-rowh' }, label));
+      const R = Math.max(SLOTS, draft.s[n].length, draft.c[n].length);
+      ['s', 'c'].forEach((k) => { while (draft[k][n].length < R) draft[k][n].push(''); });
+      const tickRow = h('tr', { class: 'tt-r0' }, h('td', { class: 'tt-dayc', rowspan: String(R + 1) }, label));
+      const rows = []; for (let i = 0; i < R; i++) rows.push(h('tr', {}));
       [['s', 'Sáng'], ['c', 'Chiều']].forEach(([k, sesName]) => {
-        const cell = h('div', { class: 'tt-cell' });
-        const list = () => draft[k][n];
-        const draw = () => {
-          cell.replaceChildren(); cell.classList.toggle('off', rest[k][n]);
-          const tick = h('input', { type: 'checkbox', 'aria-label': `${sesName} ${label}: nghỉ` }); tick.checked = rest[k][n];
-          tick.addEventListener('change', () => { rest[k][n] = tick.checked; if (tick.checked) draft[k][n] = []; draw(); });
-          cell.append(h('label', { class: 'tt-rest' }, tick, ' Nghỉ'));
+        const tds = [];
+        const mount = (td, i) => {
+          td.replaceChildren(); td.classList.toggle('off', rest[k][n]);
           if (rest[k][n]) return;
-          const chips = h('div', { class: 'tt-chips' });
-          opts.subjects.forEach((sb) => {
-            const on = list().includes(sb.id);
-            const b = h('button', { type: 'button', class: 'tt-chip toggle' + (on ? ' on' : ''), 'aria-pressed': String(on), 'aria-label': `${sesName} ${label}: ${sb.name}` }, sb.name);
-            b.addEventListener('click', () => { draft[k][n] = on ? list().filter((x) => x !== sb.id) : list().concat(sb.id); draw(); });
-            chips.append(b);
+          const val = draft[k][n][i];
+          const sel = h('select', { class: 'tt-sel', 'aria-label': `${sesName} ${label} tiết ${i + 1}` });
+          sel.append(h('option', { value: '' }, ''));
+          opts.subjects.forEach((sb) => sel.append(h('option', { value: sb.id }, sb.name)));
+          if (val && custom(val)) sel.append(h('option', { value: val }, labelOf(val)));
+          sel.append(h('option', { value: '__other' }, 'Môn khác…'));
+          sel.value = val || '';
+          sel.addEventListener('change', () => {
+            if (sel.value !== '__other') { draft[k][n][i] = sel.value; return; }
+            const input = h('input', { type: 'text', class: 'tt-sel', maxlength: '30', placeholder: 'Tên môn', 'aria-label': `Môn khác ${sesName} ${label} tiết ${i + 1}` });
+            const done = () => { const v = input.value.trim(); draft[k][n][i] = v ? 'x:' + v : (val || ''); mount(td, i); };
+            input.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') { ev.preventDefault(); input.blur(); } });
+            input.addEventListener('blur', done);
+            td.replaceChildren(input); input.focus();
           });
-          list().filter(custom).forEach((e) => {
-            const b = h('button', { type: 'button', class: 'tt-chip toggle on', title: 'Bấm để bỏ' }, labelOf(e) + ' ✕');
-            b.addEventListener('click', () => { draft[k][n] = list().filter((x) => x !== e); draw(); });
-            chips.append(b);
-          });
-          const input = h('input', { type: 'text', class: 'tt-other', placeholder: '+ Môn khác', maxlength: '30', 'aria-label': `Môn khác ${sesName} ${label}` });
-          const add = () => { const v = input.value.trim(); if (v && !list().includes('x:' + v)) { draft[k][n] = list().concat('x:' + v); draw(); } };
-          input.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') { ev.preventDefault(); add(); } });
-          input.addEventListener('blur', add);
-          chips.append(input); cell.append(chips);
+          td.append(sel);
         };
-        draw(); grid.append(cell);
+        const tick = h('input', { type: 'checkbox', 'aria-label': `${sesName} ${label}: nghỉ` }); tick.checked = rest[k][n];
+        tick.addEventListener('change', () => { rest[k][n] = tick.checked; if (tick.checked) draft[k][n] = draft[k][n].map(() => ''); tds.forEach((td, i) => mount(td, i)); });
+        tickRow.append(h('td', { class: 'tt-tickc' }, h('label', { class: 'tt-rest' }, tick, ' Nghỉ')));
+        for (let i = 0; i < R; i++) { const td = h('td', { class: 'tt-slot' }); tds.push(td); mount(td, i); rows[i].append(td); }
       });
+      table.append(tickRow, ...rows);
     });
-    body.append(grid);
+    body.append(table);
 
     const remind = h('input', { type: 'checkbox', id: 'tt-remind' }); remind.checked = data.remindOn;
     const hour = h('select', { id: 'tt-hour', 'aria-label': 'Giờ nhắc' });
@@ -225,5 +247,5 @@
     slot.replaceChildren(det);
   }
 
-  return { KEY, DAYS, weekKey, load, save, setTimetable, isStale, isEmptyTT, sessionsOf, sessionText, reminderFor, plan, labelOf, normalize, banner, editor, sync };
+  return { KEY, DAYS, weekKey, load, save, setTimetable, isStale, isEmptyTT, sessionsOf, sessionText, reminderFor, plan, labelOf, normalize, banner, editor, viewTable, sync };
 });
