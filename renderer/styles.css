@@ -1168,3 +1168,16 @@ button.tt-chip { cursor: pointer; }
 .pack-bar-fill { height: 100%; background: #2f9e5b; transition: width .2s; }
 .tt-ses { font-size: 13px; font-weight: 800; color: #1f6f8b; min-width: 48px; align-self: center; }
 .tt-chip.off, .tt-off { font-size: 13px; font-weight: 700; color: #8a97a3; background: #eef1f4; border-radius: 999px; padding: 3px 10px; align-self: center; }
+
+/* Bảng thời khóa biểu: hàng = ngày, cột = Sáng/Chiều; ô nghỉ chỉ mờ đi, không ghi chữ. */
+.tt-grid { display: grid; grid-template-columns: 64px 1fr 1fr; gap: 6px; align-items: stretch; margin: 8px 0; }
+.tt-colh { text-align: center; font-size: 13px; font-weight: 800; color: #1f6f8b; }
+.tt-rowh { font-weight: 700; font-size: 14px; align-self: center; }
+.tt-cell { border: 1px solid var(--rule); border-radius: 12px; padding: 6px 8px; background: #fff; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.tt-cell .tt-chips { margin: 0; gap: 4px; }
+.tt-cell .tt-chip { padding: 3px 9px; font-size: 13px; }
+.tt-cell .tt-other { width: 100%; min-width: 0; font-size: 13px; padding: 4px 8px; box-sizing: border-box; }
+.tt-rest { font-size: 12.5px; font-weight: 700; color: #6b7a88; display: flex; align-items: center; gap: 4px; cursor: pointer; }
+.tt-cell.off { background: #eef1f4; border-color: transparent; opacity: .55; }
+.tt-view .tt-cell { padding: 6px 8px; min-height: 36px; }
+.tt-ses.off { opacity: .35; }

@@ -54,11 +54,16 @@
       const t = x.data.grades[g];
       const card = h('div', { class: 'goal-box' }, h('h2', {}, 'Lớp ' + g + (res.list.length > 1 && x.label ? ' · ' + x.label : '')));
       if (T.isStale(cur, g, now)) card.append(h('p', { class: 'meta' }, 'Thời khóa biểu chưa được con cập nhật cho tuần mới.'));
+      const grid = h('div', { class: 'tt-grid tt-view' }, h('span', {}), h('b', { class: 'tt-colh' }, 'Sáng'), h('b', { class: 'tt-colh' }, 'Chiều'));
       T.DAYS.forEach(([n, label]) => {
-        const sang = (t.days[n] || []).map((e) => T.labelOf(e, NAMES));
-        const chieu = ((t.pm && t.pm[n]) || []).map((e) => T.labelOf(e, NAMES));
-        card.append(h('p', {}, h('b', {}, label + ': '), 'Sáng ' + (sang.length ? sang.join(', ') : 'nghỉ') + '. Chiều ' + (chieu.length ? chieu.join(', ') : 'nghỉ') + '.'));
+        grid.append(h('div', { class: 'tt-rowh' }, label));
+        [t.days[n] || [], (t.pm && t.pm[n]) || []].forEach((list) => {
+          const cell = h('div', { class: 'tt-cell' + (list.length ? '' : ' off') });
+          if (list.length) { const chips = h('div', { class: 'tt-chips' }); list.forEach((e) => chips.append(h('span', { class: 'tt-chip' }, T.labelOf(e, NAMES)))); cell.append(chips); }
+          grid.append(cell);
+        });
       });
+      card.append(grid);
       box.append(card);
     }));
   }
