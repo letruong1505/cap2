@@ -207,3 +207,16 @@ test('thời khóa biểu: máy học sinh gửi, phụ huynh xem; dữ liệu l
   await progressSettings(db, { ...dev(code), purge: true }, NOW);
   assert.equal((await view(db, code)).timetables.length, 0);
 });
+
+test('thời khóa biểu giữ cả buổi chiều (pm) khi gửi lên máy chủ; bản cũ không có pm thì chiều nghỉ', async () => {
+  const { db, code } = await setup();
+  await progressSettings(db, { ...dev(code), enabled: true }, NOW);
+  const tt = { v: 1, remindOn: true, remindHour: 19, grades: { 9: { week: '2026-11-16', days: { 1: ['toan'] }, pm: { 1: ['anh', 'x:Tin học'], 2: ['ly', 7] } }, 8: { week: '2026-11-16', days: { 1: ['hoa'] } } } };
+  await progressSettings(db, { ...dev(code), timetable: tt }, NOW);
+  const d = (await view(db, code)).timetables[0].data;
+  assert.deepEqual(d.grades[9].days[1], ['toan']);
+  assert.deepEqual(d.grades[9].pm[1], ['anh', 'x:Tin học']);
+  assert.deepEqual(d.grades[9].pm[2], ['ly']);
+  assert.deepEqual(d.grades[9].pm[3], []);
+  assert.deepEqual(d.grades[8].pm[1], []);
+});

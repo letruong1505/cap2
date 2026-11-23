@@ -28,23 +28,33 @@
     const h = Number(raw.remindHour); d.remindHour = h >= 0 && h <= 23 ? Math.floor(h) : 19;
     Object.keys(raw.grades || {}).forEach((g) => {
       const t = raw.grades[g]; if (!t || typeof t.week !== 'string' || !t.days) return;
-      const days = {};
-      DAYS.forEach(([n]) => { days[n] = (Array.isArray(t.days[n]) ? t.days[n] : []).filter((s) => typeof s === 'string' && s).slice(0, 12); });
-      d.grades[g] = { week: t.week, days };
+      const days = {}; const pm = {};
+      const clean = (a) => (Array.isArray(a) ? a : []).filter((s) => typeof s === 'string' && s).slice(0, 12);
+      DAYS.forEach(([n]) => { days[n] = clean(t.days[n]); pm[n] = clean(t.pm && t.pm[n]); });
+      d.grades[g] = { week: t.week, days, pm };
     });
     return d;
   }
   function load(storage) { try { return normalize(JSON.parse(storage.getItem(KEY) || 'null')); } catch (e) { return empty(); } }
   function save(storage, data) { try { storage.setItem(KEY, JSON.stringify(data)); } catch (e) { /* bỏ qua */ } }
 
-  /* Lưu thời khóa biểu của một lớp cho tuần chứa ngày now; thay hẳn bản cũ. */
-  function setTimetable(data, grade, days, now) {
-    const clean = {};
-    DAYS.forEach(([n]) => { clean[n] = Array.from(new Set((days[n] || []).filter(Boolean))); });
-    data.grades[grade] = { week: weekKey(now), days: clean };
+  /* Lưu thời khóa biểu của một lớp cho tuần chứa ngày now; thay hẳn bản cũ.
+     days: các môn buổi sáng theo thứ; pm: các môn buổi chiều theo thứ. Buổi không có môn nào là buổi nghỉ. */
+  function setTimetable(data, grade, days, now, pm) {
+    const uniq = (a) => Array.from(new Set((a || []).filter(Boolean)));
+    const clean = {}; const cleanPm = {};
+    DAYS.forEach(([n]) => { clean[n] = uniq(days[n]); cleanPm[n] = uniq(pm && pm[n]); });
+    data.grades[grade] = { week: weekKey(now), days: clean, pm: cleanPm };
     return data;
   }
-  const isEmptyTT = (t) => !t || DAYS.every(([n]) => !t.days[n].length);
+  const isEmptyTT = (t) => !t || DAYS.every(([n]) => !t.days[n].length && !(t.pm && t.pm[n] && t.pm[n].length));
+  /* Các môn buổi sáng và buổi chiều của một thứ (Chủ nhật không có lịch). */
+  const sessionsOf = (t, dow) => ({ s: (t && t.days[dow]) || [], c: (t && t.pm && t.pm[dow]) || [] });
+  /* "Sáng: Toán, Lý. Chiều nghỉ." — buổi không có môn nào được báo nghỉ. */
+  function sessionText(ses, names) {
+    const list = (a) => a.map((e) => labelOf(e, names)).join(', ');
+    return `Sáng: ${ses.s.length ? list(ses.s) : 'nghỉ'}. Chiều: ${ses.c.length ? list(ses.c) : 'nghỉ'}.`.replace('Sáng: nghỉ.', 'Sáng nghỉ.').replace('Chiều: nghỉ.', 'Chiều nghỉ.');
+  }
   /* Thời khóa biểu của lớp đã cũ (chưa nhập cho tuần này) hoặc chưa có. */
   const isStale = (data, grade, now) => { const t = data.grades[grade]; return !t || t.week !== weekKey(now); };
 
@@ -59,9 +69,10 @@
     if (now.getHours() < data.remindHour) return null;
     const tomorrow = addDays(now, 1);
     const dow = tomorrow.getDay();
-    const items = dow === 0 ? [] : t.days[dow];
+    const ses = dow === 0 ? { s: [], c: [] } : sessionsOf(t, dow);
+    const items = ses.s.concat(ses.c);
     if (!items.length) return null;
-    return { grade: Number(grade), date: tomorrow, dow, dayName: DOW_NAME[dow], items, stale: t.week !== weekKey(tomorrow) };
+    return { grade: Number(grade), date: tomorrow, dow, dayName: DOW_NAME[dow], items, sang: ses.s, chieu: ses.c, stale: t.week !== weekKey(tomorrow) };
   }
 
   /* Kế hoạch thông báo điện thoại cho HORIZON ngày tới: mỗi ngày học một thông báo vào giờ nhắc của tối hôm trước. */
@@ -74,16 +85,15 @@
       for (let k = 0; k <= HORIZON; k++) {
         const D = addDays(now, k); const dow = D.getDay();
         if (dow === 0) continue;
-        const items = t.days[dow]; if (!items.length) continue;
+        const ses = sessionsOf(t, dow); if (!ses.s.length && !ses.c.length) continue;
         const at = addDays(D, -1); at.setHours(data.remindHour, 0, 0, 0);
         if (at <= now) continue;
-        const list = items.map((e) => labelOf(e, names)).join(', ');
         const monday = at.getDay() === 0 && t.week !== weekKey(D);
         out.push({
           id: Number(iso(D).replace(/-/g, '')) * 100 + Number(g),
           at: at.getTime(),
           title: grades.length > 1 ? `Nam Linh · Lớp ${g}` : 'Nam Linh Educenter',
-          body: (typeof window !== 'undefined' && window.vungBai && window.vungBai.role === 'parent' ? `Ngày mai (${DOW_NAME[dow]}) con học ${list}. Nhắc con ôn bài và làm bài trước nhé!` : `Ngày mai (${DOW_NAME[dow]}) học ${list}. Ôn bài và làm bài trước nhé!`) + (monday ? ' Nhớ cập nhật thời khóa biểu tuần mới.' : ''),
+          body: (typeof window !== 'undefined' && window.vungBai && window.vungBai.role === 'parent' ? `Ngày mai (${DOW_NAME[dow]}) con học. ${sessionText(ses, names)} Nhắc con ôn bài và làm bài trước nhé!` : `Ngày mai (${DOW_NAME[dow]}) học. ${sessionText(ses, names)} Ôn bài và làm bài trước nhé!`) + (monday ? ' Nhớ cập nhật thời khóa biểu tuần mới.' : ''),
         });
       }
     });
@@ -114,13 +124,18 @@
     (opts.grades || []).forEach((g) => {
       const r = reminderFor(data, g, now); if (!r) return;
       const chips = h('div', { class: 'tt-chips' });
-      r.items.forEach((e) => {
-        const name = labelOf(e, opts.names);
-        if (custom(e) || !opts.open) { chips.append(h('span', { class: 'tt-chip' }, name)); return; }
-        const b = h('button', { type: 'button', class: 'tt-chip go' }, name);
-        b.addEventListener('click', () => opts.open(r.grade, e));
-        chips.append(b);
-      });
+      const addChips = (label, list) => {
+        chips.append(h('span', { class: 'tt-ses' }, label));
+        if (!list.length) { chips.append(h('span', { class: 'tt-chip off' }, 'Nghỉ')); return; }
+        list.forEach((e) => {
+          const name = labelOf(e, opts.names);
+          if (custom(e) || !opts.open) { chips.append(h('span', { class: 'tt-chip' }, name)); return; }
+          const b = h('button', { type: 'button', class: 'tt-chip go' }, name);
+          b.addEventListener('click', () => opts.open(r.grade, e));
+          chips.append(b);
+        });
+      };
+      addChips('Sáng', r.sang); addChips('Chiều', r.chieu);
       slot.append(h('div', { class: 'tt-banner', role: 'status' },
         h('b', {}, `Lớp ${r.grade}: Ngày mai (${r.dayName}) học ${r.items.length} môn`),
         h('p', {}, 'Tối nay ôn bài và làm bài trước các môn này:'), chips,
@@ -134,37 +149,43 @@
     const data = load(store());
     const names = {}; opts.subjects.forEach((s) => { names[s.id] = s.name; });
     const cur = data.grades[g];
-    const draft = {}; DAYS.forEach(([n]) => { draft[n] = cur ? cur.days[n].slice() : []; });
+    const draft = { s: {}, c: {} };
+    DAYS.forEach(([n]) => { draft.s[n] = cur ? cur.days[n].slice() : []; draft.c[n] = cur && cur.pm ? cur.pm[n].slice() : []; });
     const stale = isStale(data, g, now);
     const status = !cur ? 'Chưa nhập' : (stale ? 'Cần cập nhật cho tuần mới' : 'Đã cập nhật tuần này');
     const det = h('details', { class: 'tt-card' + (stale ? ' stale' : '') });
     det.append(h('summary', {}, h('span', { class: 'tt-title' }, 'Thời khóa biểu'), h('b', { class: 'tt-status' }, status)));
     const body = h('div', { class: 'tt-body' });
-    body.append(h('p', { class: 'meta' }, 'Chọn các môn học mỗi ngày. Mỗi tuần nhập lại một lần, app không lưu tuần cũ. Tối hôm trước app sẽ nhắc ôn bài các môn của ngày mai.'));
+    body.append(h('p', { class: 'meta' }, 'Chọn các môn học buổi sáng và buổi chiều mỗi ngày. Buổi nào không chọn môn sẽ được báo nghỉ. Mỗi tuần nhập lại một lần, app không lưu tuần cũ. Tối hôm trước app sẽ nhắc ôn bài các môn của ngày mai.'));
 
     DAYS.forEach(([n, label]) => {
       const row = h('div', { class: 'tt-day' }, h('div', { class: 'tt-day-name' }, label));
-      const chips = h('div', { class: 'tt-chips' });
-      const draw = () => {
-        chips.replaceChildren();
-        opts.subjects.forEach((s) => {
-          const on = draft[n].includes(s.id);
-          const b = h('button', { type: 'button', class: 'tt-chip toggle' + (on ? ' on' : ''), 'aria-pressed': String(on) }, s.name);
-          b.addEventListener('click', () => { draft[n] = on ? draft[n].filter((x) => x !== s.id) : draft[n].concat(s.id); draw(); });
-          chips.append(b);
-        });
-        draft[n].filter(custom).forEach((e) => {
-          const b = h('button', { type: 'button', class: 'tt-chip toggle on', title: 'Bấm để bỏ' }, labelOf(e) + ' ✕');
-          b.addEventListener('click', () => { draft[n] = draft[n].filter((x) => x !== e); draw(); });
-          chips.append(b);
-        });
-        const input = h('input', { type: 'text', class: 'tt-other', placeholder: 'Môn khác (Ngữ văn, Tin học...)', maxlength: '30', 'aria-label': `Môn khác ${label}` });
-        const add = () => { const v = input.value.trim(); if (v && !draft[n].includes('x:' + v)) { draft[n] = draft[n].concat('x:' + v); draw(); } };
-        input.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') { ev.preventDefault(); add(); } });
-        input.addEventListener('blur', add);
-        chips.append(input);
-      };
-      draw(); row.append(chips); body.append(row);
+      [['s', 'Sáng'], ['c', 'Chiều']].forEach(([k, sesName]) => {
+        const chips = h('div', { class: 'tt-chips' }, h('span', { class: 'tt-ses' }, sesName));
+        const cur = () => draft[k][n];
+        const draw = () => {
+          chips.replaceChildren(h('span', { class: 'tt-ses' }, sesName));
+          opts.subjects.forEach((sb) => {
+            const on = cur().includes(sb.id);
+            const b = h('button', { type: 'button', class: 'tt-chip toggle' + (on ? ' on' : ''), 'aria-pressed': String(on), 'aria-label': `${sesName} ${label}: ${sb.name}` }, sb.name);
+            b.addEventListener('click', () => { draft[k][n] = on ? cur().filter((x) => x !== sb.id) : cur().concat(sb.id); draw(); });
+            chips.append(b);
+          });
+          cur().filter(custom).forEach((e) => {
+            const b = h('button', { type: 'button', class: 'tt-chip toggle on', title: 'Bấm để bỏ' }, labelOf(e) + ' ✕');
+            b.addEventListener('click', () => { draft[k][n] = cur().filter((x) => x !== e); draw(); });
+            chips.append(b);
+          });
+          const input = h('input', { type: 'text', class: 'tt-other', placeholder: 'Môn khác (Ngữ văn, Tin học...)', maxlength: '30', 'aria-label': `Môn khác ${sesName} ${label}` });
+          const add = () => { const v = input.value.trim(); if (v && !cur().includes('x:' + v)) { draft[k][n] = cur().concat('x:' + v); draw(); } };
+          input.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') { ev.preventDefault(); add(); } });
+          input.addEventListener('blur', add);
+          chips.append(input);
+          if (!cur().length) chips.append(h('span', { class: 'tt-off' }, 'Nghỉ'));
+        };
+        draw(); row.append(chips);
+      });
+      body.append(row);
     });
 
     const remind = h('input', { type: 'checkbox', id: 'tt-remind' }); remind.checked = data.remindOn;
@@ -177,7 +198,7 @@
     saveBtn.addEventListener('click', async () => {
       const d = load(store());
       d.remindOn = remind.checked; d.remindHour = Number(hour.value);
-      setTimetable(d, g, draft, new Date());
+      setTimetable(d, g, draft.s, new Date(), draft.c);
       save(store(), d);
       let note = 'Đã lưu.';
       if (window.NLNotify && d.remindOn) {
@@ -196,5 +217,5 @@
     slot.replaceChildren(det);
   }
 
-  return { KEY, DAYS, weekKey, load, save, setTimetable, isStale, isEmptyTT, reminderFor, plan, labelOf, normalize, banner, editor, sync };
+  return { KEY, DAYS, weekKey, load, save, setTimetable, isStale, isEmptyTT, sessionsOf, sessionText, reminderFor, plan, labelOf, normalize, banner, editor, sync };
 });

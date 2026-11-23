@@ -71,9 +71,10 @@ function cleanTimetable(t) {
   Object.keys(t.grades || {}).slice(0, 12).forEach((g) => {
     const x = t.grades[g];
     if (!/^\d{1,2}$/.test(g) || !x || !DAY_RE.test(String(x.week)) || !x.days || typeof x.days !== 'object') return;
-    const days = {};
-    for (let n = 1; n <= 6; n++) days[n] = (Array.isArray(x.days[n]) ? x.days[n] : []).filter((s) => typeof s === 'string' && s).slice(0, 12).map((s) => s.slice(0, 40));
-    grades[g] = { week: String(x.week), days };
+    const days = {}; const pm = {};
+    const clean = (a) => (Array.isArray(a) ? a : []).filter((s) => typeof s === 'string' && s).slice(0, 12).map((s) => s.slice(0, 40));
+    for (let n = 1; n <= 6; n++) { days[n] = clean(x.days[n]); pm[n] = clean(x.pm && x.pm[n]); }
+    grades[g] = { week: String(x.week), days, pm };
   });
   return { v: 1, remindOn: t.remindOn !== false, remindHour: clampInt(t.remindHour, 0, 23, 19), grades };
 }
