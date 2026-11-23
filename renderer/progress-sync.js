@@ -128,9 +128,11 @@
       // Thời khóa biểu của con: gửi lên để phụ huynh xem và nhắc học trên điện thoại của mình.
       if (window.VungTimetable) {
         const tt = window.VungTimetable.load(store());
-        if (Object.keys(tt.grades).length && JSON.stringify(st.timetable || null) !== JSON.stringify(tt)) {
+        // v: 2 = có buổi chiều (pm). Đổi số này buộc gửi lại một lần cho các máy đã gửi bản chỉ có buổi sáng lên máy chủ cũ.
+        const key = JSON.stringify({ v: 2, tt });
+        if (Object.keys(tt.grades).length && st.timetableKey !== key) {
           const g = await bridge().progressSettings({ code, timetable: tt });
-          if (g.ok) { st.timetable = tt; writeState(st); }
+          if (g.ok) { st.timetableKey = key; delete st.timetable; writeState(st); }
         }
       }
       const r = await bridge().progressPush({ code, days: aggregate(data.attempts), usage: window.VungUsage ? window.VungUsage.list() : [] });

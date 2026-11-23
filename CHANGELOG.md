@@ -1,8 +1,9 @@
 ## Bản mới
-- Thời khóa biểu nhập và xem dạng bảng: mỗi ngày một hàng, hai cột Sáng và Chiều; buổi nào không học thì tick Nghỉ, ô mờ đi (app học và app Phụ huynh).
+- Thời khóa biểu buổi chiều: máy tự gửi lại lên máy chủ một lần để phụ huynh thấy đủ buổi chiều.
 - Android: bản này yêu cầu cài apk mới
 
 ## Các bản trước
+- Thời khóa biểu nhập và xem dạng bảng: mỗi ngày một hàng, hai cột Sáng và Chiều; buổi nào không học thì tick Nghỉ, ô mờ đi (app học và app Phụ huynh).
 - Thời khóa biểu chia buổi sáng và buổi chiều: buổi nào không có môn được báo nghỉ trong khung nhắc học và thông báo tối hôm trước.
 - Scratch 8–11 tuổi: giáo trình mới "Tư duy trước, Scratch sau" dạng thẻ giống Python (16 chương, mỗi chương 3 bài nhỏ có khung Tóm tắt, thẻ thực hành có gợi ý), kịch bản khối lệnh vẽ bằng khối màu; xem thử Mở đầu và Chương 1
 - Android: bản này yêu cầu cài apk mới
