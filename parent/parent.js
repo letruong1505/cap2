@@ -55,8 +55,9 @@
       const card = h('div', { class: 'goal-box' }, h('h2', {}, 'Lớp ' + g + (res.list.length > 1 && x.label ? ' · ' + x.label : '')));
       if (T.isStale(cur, g, now)) card.append(h('p', { class: 'meta' }, 'Thời khóa biểu chưa được con cập nhật cho tuần mới.'));
       T.DAYS.forEach(([n, label]) => {
-        const items = (t.days[n] || []).map((e) => T.labelOf(e, NAMES));
-        card.append(h('p', {}, h('b', {}, label + ': '), items.length ? items.join(', ') : 'Nghỉ'));
+        const sang = (t.days[n] || []).map((e) => T.labelOf(e, NAMES));
+        const chieu = ((t.pm && t.pm[n]) || []).map((e) => T.labelOf(e, NAMES));
+        card.append(h('p', {}, h('b', {}, label + ': '), 'Sáng ' + (sang.length ? sang.join(', ') : 'nghỉ') + '. Chiều ' + (chieu.length ? chieu.join(', ') : 'nghỉ') + '.'));
       });
       box.append(card);
     }));
