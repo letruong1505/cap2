@@ -51,6 +51,7 @@ kbd{background:#eef3f8;border:1px solid var(--line);border-radius:4px;padding:0 
 @media print{nav.toc{display:none}section{page-break-before:always}header.hero{color:#000;background:#fff}.hero p,.tag{color:#000}}
 
 .pick{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px;margin:12px 0}
+.qz-q{border:1px solid var(--line);border-radius:10px;margin:10px 0;padding:8px 12px}.qz-o{display:block;padding:5px 0;cursor:pointer}.qz-bar{background:#e6edf5;border-radius:6px;height:10px;margin:-4px 0 12px}.qz-bar i{display:block;height:100%;background:var(--blue);border-radius:6px}
 .opt{display:block;background:#fff;border:2px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer}
 .opt:hover{border-color:var(--blue)}
 .opt.on{border-color:var(--blue);background:var(--lblue)}
@@ -165,6 +166,7 @@ button.btn.alt{background:#fff;color:var(--blue);border:1px solid var(--blue)}
 <section id="chon">
   <h2>Em chọn hướng nào?</h2>
   <p class="sub">Chọn từ 1 đến 3 nhóm em thấy hứng thú. Không cần chắc chắn ngay; mỗi năm em có thể chọn lại.</p>
+  <div class="card think" id="qz-card"><div class="lbl">Chưa biết chọn gì?</div><p>Làm trắc nghiệm 11 câu (khoảng 3 phút) để xem 3 nhóm gần với sở thích của em nhất. Đây là gợi ý theo sở thích, không phải đánh giá năng lực và không có đáp án đúng hay sai.</p><p><button class="btn" id="qz-start">Làm trắc nghiệm</button></p><div id="qz-box"></div></div>
   <div class="pick" id="pick"><label class="opt" data-id="so"><input type="checkbox" value="so"><b>Công nghệ số</b><small>AI · dữ liệu lớn · bản sao số · đám mây · điện toán biên · IoT · blockchain</small></label><label class="opt" data-id="mang"><input type="checkbox" value="mang"><b>Công nghệ mạng di động thế hệ sau</b><small>5G, 5G-Advanced</small></label><label class="opt" data-id="robot"><input type="checkbox" value="robot"><b>Robot và tự động hóa</b><small>Robot, sản xuất thông minh, điều khiển</small></label><label class="opt" data-id="sinh"><input type="checkbox" value="sinh"><b>Công nghệ sinh học và y sinh tiên tiến</b><small>Vắc xin, liệu pháp tế bào, gen, giống mới, cảm biến sinh học</small></label><label class="opt" data-id="nl"><input type="checkbox" value="nl"><b>Công nghệ năng lượng và vật liệu tiên tiến</b><small>Pin, lưu trữ, hydro xanh, điện áp cao, thu giữ carbon, vật liệu</small></label><label class="opt" data-id="chip"><input type="checkbox" value="chip"><b>Công nghệ chip bán dẫn</b><small>Chip chuyên dụng</small></label><label class="opt" data-id="an"><input type="checkbox" value="an"><b>Công nghệ an ninh mạng và lượng tử</b><small>Bảo mật, an toàn dữ liệu, truyền thông và tính toán lượng tử</small></label><label class="opt" data-id="bien"><input type="checkbox" value="bien"><b>Công nghệ biển, đại dương và lòng đất</b><small>Khoáng sản, đất hiếm, dầu khí, biển sâu, ngoài khơi</small></label><label class="opt" data-id="hk"><input type="checkbox" value="hk"><b>Công nghệ hàng không và vũ trụ</b><small>UAV, vệ tinh, quan sát Trái Đất</small></label><label class="opt" data-id="rail"><input type="checkbox" value="rail"><b>Công nghệ đường sắt tốc độ cao và đường sắt đô thị</b><small>Xây dựng, phương tiện, thiết bị, hệ thống</small></label></div>
   <p><button class="btn" id="mk">Tạo kế hoạch của em</button> <button class="btn alt" id="rs">Chọn lại</button> <span id="msg" style="color:var(--grey);font-size:14px"></span></p>
   <div class="card think"><div class="lbl">Cách chọn</div><ul><li>Bắt đầu từ môn em thích và học tốt, rồi xem nó nằm ở nhóm nào.</li><li>Đừng chọn chỉ vì “hot”. Nhóm nào em sẵn sàng học nhiều năm?</li><li>Hỏi thầy cô, người làm trong ngành, đọc nguồn chính thức; kiểm chứng như đã học ở khóa Gia sư AI.</li></ul></div>
@@ -225,5 +227,41 @@ function build(){
 document.getElementById('mk').addEventListener('click',build);
 document.getElementById('rs').addEventListener('click',function(){document.querySelectorAll('#pick input').forEach(function(i){i.checked=false});paint();document.getElementById('plan').innerHTML='<div class="card"><p>Chọn ít nhất một nhóm ở phần trên rồi bấm “Tạo kế hoạch của em”.</p></div>';try{localStorage.removeItem(KEY)}catch(e){}});
 try{var s=JSON.parse(localStorage.getItem(KEY)||'[]');s.forEach(function(id){var c=document.querySelector('#pick input[value="'+id+'"]');if(c)c.checked=true});paint();if(s.length)build();}catch(e){}
+
+var QZ=[{"q":"Cuối tuần rảnh, em thích nhất việc nào?","o":[{"t":"Tự mày mò làm game, ứng dụng hoặc trang web","w":{"so":2,"an":1}},{"t":"Lắp ráp, tháo máy, làm mô hình chạy được","w":{"robot":2,"rail":1,"chip":1}},{"t":"Làm thí nghiệm, trồng cây, chăm con vật","w":{"sinh":2,"nl":1}},{"t":"Xem phim khoa học về vũ trụ, máy bay, đại dương","w":{"hk":2,"bien":1}}]},{"q":"Điều nào làm em tò mò nhất?","o":[{"t":"AI trả lời được như người là nhờ đâu","w":{"so":2,"an":1}},{"t":"Tin nhắn, video bay trong không khí tới điện thoại thế nào","w":{"mang":2,"chip":1}},{"t":"Con chip bé xíu mà tính toán được nhiều đến vậy","w":{"chip":2,"so":1}},{"t":"Tàu chạy rất nhanh mà vẫn êm và an toàn","w":{"rail":2,"robot":1}}]},{"q":"Thử thách nào em muốn thử?","o":[{"t":"Giải mật mã, tìm lỗi bảo mật trong một chương trình","w":{"an":2,"so":1}},{"t":"Thiết kế cây cầu hoặc con đường chịu được xe nặng","w":{"rail":2,"bien":1}},{"t":"Điều khiển máy bay mô hình hoặc xe điều khiển từ xa","w":{"hk":2,"robot":1}},{"t":"Khám phá hang động, đá khoáng, đáy biển","w":{"bien":2,"nl":1}}]},{"q":"Em muốn công nghệ giúp ích cho cuộc sống ở điểm nào?","o":[{"t":"Chữa bệnh, làm thuốc, bảo vệ sức khỏe","w":{"sinh":2}},{"t":"Có điện sạch, pin bền, bớt ô nhiễm","w":{"nl":2}},{"t":"Bảo vệ mọi người khỏi lừa đảo, tin giả, tin tặc","w":{"an":2,"so":1}},{"t":"Đi lại nhanh, an toàn, kết nối mọi nơi","w":{"rail":2,"hk":1,"mang":1}}]},{"q":"Em hợp với kiểu làm việc nào?","o":[{"t":"Ngồi máy tính nhiều, viết chương trình","w":{"so":2,"an":1,"mang":1}},{"t":"Phòng thí nghiệm: đo đạc, thử nghiệm","w":{"sinh":1,"nl":1,"chip":2}},{"t":"Xưởng: lắp đặt, vận hành máy móc","w":{"robot":2,"rail":1,"nl":1}},{"t":"Ngoài hiện trường, được đi nhiều nơi","w":{"bien":2,"rail":1,"hk":1}}]},{"q":"Em tự hào nhất khi nào?","o":[{"t":"Chương trình hoặc máy em làm chạy đúng","w":{"so":1,"robot":2}},{"t":"Em tìm ra lỗi mà người khác bỏ sót","w":{"an":2,"chip":1}},{"t":"Em hiểu cơ thể hoặc sinh vật hoạt động ra sao","w":{"sinh":2}},{"t":"Em tính ra được con số chính xác","w":{"chip":1,"hk":1,"nl":1,"mang":1}}]},{"q":"Nếu làm một dự án, em chọn dự án nào?","o":[{"t":"Ứng dụng AI hỗ trợ học tập","w":{"so":2}},{"t":"Robot tự dọn bàn học","w":{"robot":2}},{"t":"Hệ thống đèn chạy bằng pin mặt trời","w":{"nl":2,"chip":1}},{"t":"Tên lửa nước hoặc máy bay mô hình","w":{"hk":2}}]},{"q":"Thế giới nào làm em hứng thú nhất?","o":[{"t":"Internet, sóng điện thoại, vệ tinh liên lạc","w":{"mang":2,"hk":1}},{"t":"Tế bào, gen, vi khuẩn","w":{"sinh":2}},{"t":"Biển sâu, dầu khí, lòng đất","w":{"bien":2}},{"t":"Vật liệu mới: nhẹ hơn, bền hơn, dẫn điện tốt hơn","w":{"nl":2,"chip":1}}]},{"q":"Gặp bài khó, em thường làm gì?","o":[{"t":"Thử đi thử lại trên máy tính","w":{"so":1,"an":1}},{"t":"Vẽ sơ đồ, tính toán bằng công thức","w":{"chip":1,"mang":1,"hk":1,"rail":1}},{"t":"Làm thí nghiệm thật để kiểm tra","w":{"sinh":1,"nl":1,"bien":1}},{"t":"Tháo ra lắp lại cho hiểu","w":{"robot":2,"rail":1}}]},{"q":"Em thích làm việc theo cách nào?","o":[{"t":"Một mình, tập trung thật sâu","w":{"an":1,"so":1,"chip":1}},{"t":"Nhóm nhỏ cùng làm một sản phẩm","w":{"robot":1,"nl":1,"mang":1}},{"t":"Đội lớn ở hiện trường","w":{"bien":1,"rail":1,"hk":1}},{"t":"Cùng bác sĩ, nhà khoa học nghiên cứu","w":{"sinh":2}}]}];
+var SUBJ=['Toán','Vật lí','Hóa học','Sinh học','Tin học','Tiếng Anh','Địa lí'],QKEY='nl-dhqg-qz';
+function qzRender(){
+  var h='';
+  QZ.forEach(function(q,i){h+='<fieldset class="qz-q"><legend><b>'+(i+1)+'. '+esc(q.q)+'</b></legend>'+q.o.map(function(o,j){return '<label class="qz-o"><input type="radio" name="q'+i+'" value="'+j+'"> '+esc(o.t)+'</label>'}).join('')+'</fieldset>'});
+  h+='<fieldset class="qz-q"><legend><b>'+(QZ.length+1)+'. Em học tốt nhất những môn nào? (chọn tối đa 3)</b></legend>'+SUBJ.map(function(m){return '<label class="qz-o"><input type="checkbox" name="sj" value="'+esc(m)+'"> '+esc(m)+'</label>'}).join('')+'</fieldset>';
+  h+='<p><button class="btn" id="qz-go">Xem kết quả</button> <span id="qz-msg" style="color:var(--grey);font-size:14px"></span></p><div id="qz-res"></div>';
+  document.getElementById('qz-box').innerHTML=h;
+  document.querySelectorAll('input[name=sj]').forEach(function(c){c.addEventListener('change',function(){if(document.querySelectorAll('input[name=sj]:checked').length>3){c.checked=false;document.getElementById('qz-msg').textContent='Chọn tối đa 3 môn.'}else document.getElementById('qz-msg').textContent=''})});
+  document.getElementById('qz-go').addEventListener('click',qzDone);
+}
+function qzScore(ans,subs){
+  var sc={};Object.keys(D).forEach(function(k){sc[k]=0});
+  ans.forEach(function(a,i){var w=QZ[i].o[a].w;Object.keys(w).forEach(function(k){if(k in sc)sc[k]+=w[k]})});
+  subs.forEach(function(m){Object.keys(D).forEach(function(k){if(D[k].s.indexOf(m)>=0)sc[k]+=1})});
+  var ids=Object.keys(D).sort(function(a,b){return sc[b]-sc[a]||Object.keys(D).indexOf(a)-Object.keys(D).indexOf(b)});
+  var top=sc[ids[0]]||1;
+  return ids.slice(0,5).map(function(k){return {id:k,p:Math.round(sc[k]/top*100)}});
+}
+function qzDone(){
+  var ans=[];
+  for(var i=0;i<QZ.length;i++){var c=document.querySelector('input[name=q'+i+']:checked');if(!c){document.getElementById('qz-msg').textContent='Em còn câu '+(i+1)+' chưa chọn.';return}ans.push(Number(c.value))}
+  var subs=Array.prototype.map.call(document.querySelectorAll('input[name=sj]:checked'),function(c){return c.value});
+  var r=qzScore(ans,subs);
+  try{localStorage.setItem(QKEY,JSON.stringify({t:Date.now(),r:r}))}catch(e){}
+  var h='<div class="card"><h3 style="margin-top:0">3 nhóm gần với sở thích của em</h3>'+r.slice(0,3).map(function(x,i){var g=D[x.id];return '<p><b>'+(i+1)+'. '+esc(g.n)+'</b><br><small>'+esc(g.m.slice(0,3).join(' · '))+'</small></p><div class="qz-bar"><i style="width:'+Math.max(8,x.p)+'%"></i></div>'}).join('')
+   +'<p style="color:var(--grey);font-size:14px">Thanh dài hơn là gần sở thích của em hơn. Kết quả chỉ để gợi ý, em vẫn nên xem cả các nhóm khác, hỏi thầy cô và người làm trong ngành. Em có thể làm lại bất cứ lúc nào.</p>'
+   +'<p><button class="btn" id="qz-use">Chọn 3 hướng này và tạo kế hoạch</button> <button class="btn alt" id="qz-again">Làm lại</button></p></div>';
+  var box=document.getElementById('qz-res');box.innerHTML=h;box.scrollIntoView({behavior:'smooth'});
+  document.getElementById('qz-use').addEventListener('click',function(){
+    document.querySelectorAll('#pick input').forEach(function(i){i.checked=false});
+    r.slice(0,3).forEach(function(x){var c=document.querySelector('#pick input[value="'+x.id+'"]');if(c)c.checked=true});paint();build();});
+  document.getElementById('qz-again').addEventListener('click',function(){qzRender();document.getElementById('qz-box').scrollIntoView({behavior:'smooth'})});
+}
+document.getElementById('qz-start').addEventListener('click',function(){this.hidden=true;qzRender()});
 </script>
 </body></html>

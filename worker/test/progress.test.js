@@ -234,3 +234,15 @@ test('định hướng con chọn: máy học sinh gửi, phụ huynh xem; mã l
   await progressSettings(db, { ...dev(code), purge: true }, NOW);
   assert.equal((await view(db, code)).orientations.length, 0);
 });
+
+test('kết quả trắc nghiệm: gửi, phụ huynh xem; mã lạ bỏ, tối đa 5, giữ nguyên hướng đã chọn khi chỉ gửi trắc nghiệm', async () => {
+  const { db, code } = await setup();
+  await progressSettings(db, { ...dev(code), enabled: true }, NOW);
+  await progressSettings(db, { ...dev(code), orientation: ['so', 'robot'] }, NOW);
+  await progressSettings(db, { ...dev(code), quiz: [{ id: 'chip', p: 100 }, { id: 'so', p: 150 }, { id: '<x>', p: 5 }, { id: 'chip', p: 3 }, { id: 'an', p: 'abc' }, { id: 'hk', p: 40.6 }] }, NOW);
+  const v = await view(db, code);
+  assert.deepEqual(v.orientations[0].ids, ['so', 'robot']);
+  assert.deepEqual(v.orientations[0].quiz, [{ id: 'chip', p: 100 }, { id: 'so', p: 100 }, { id: 'hk', p: 41 }]);
+  await progressSettings(db, { ...dev(code), purge: true }, NOW);
+  assert.equal((await view(db, code)).orientations.length, 0);
+});

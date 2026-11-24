@@ -64,7 +64,7 @@
     const box = $('or-view'); box.replaceChildren();
     const D = window.PARENT_DHQG || {};
     if (!res.ok) { $('or-msg').textContent = res.error; return; }
-    const list = ((res.data && res.data.orientations) || []).filter((x) => x.ids.some((id) => D[id]));
+    const list = ((res.data && res.data.orientations) || []).filter((x) => x.ids.some((id) => D[id]) || (x.quiz || []).some((q) => D[q.id]));
     if (!list.length) {
       $('or-msg').textContent = res.data && res.data.enabled ? 'Con chưa chọn hướng trong khóa "Định hướng công nghệ quốc gia".' : 'Chưa có dữ liệu. Trên app học của con, bật "Cho phụ huynh xem kết quả" rồi chọn hướng trong khóa Định hướng công nghệ quốc gia.';
       return;
@@ -72,7 +72,17 @@
     $('or-msg').textContent = 'Đã cập nhật lúc ' + new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' }) + '.';
     const ul = (a) => h('ul', {}, ...a.map((t) => h('li', {}, t)));
     list.forEach((x) => {
+      const qz = (x.quiz || []).filter((q) => D[q.id]).slice(0, 3);
+      if (!qz.length) return;
       if (list.length > 1 && x.label) box.append(h('p', { class: 'meta' }, 'Bé học: ' + x.label));
+      box.append(h('div', { class: 'goal-box' },
+        h('h2', {}, 'Kết quả trắc nghiệm của con'),
+        h('p', { class: 'meta' }, 'Gợi ý theo sở thích con chọn khi làm trắc nghiệm, không phải đánh giá năng lực. Thanh dài hơn là gần sở thích hơn.'),
+        ...qz.map((q, i) => h('div', {}, h('p', {}, (i + 1) + '. ' + D[q.id].n), h('div', { style: 'background:#e6edf5;border-radius:6px;height:10px;margin:-6px 0 10px' }, h('div', { style: 'background:#2f6fb3;border-radius:6px;height:100%;width:' + Math.max(8, Math.min(100, q.p | 0)) + '%' }))))));
+    });
+    list.forEach((x) => {
+      if (list.length > 1 && x.label && !(x.quiz || []).some((q) => D[q.id])) box.append(h('p', { class: 'meta' }, 'Bé học: ' + x.label));
+      if (!x.ids.some((id) => D[id])) return;
       x.ids.filter((id) => D[id]).forEach((id) => {
         const g = D[id];
         box.append(h('div', { class: 'goal-box' },

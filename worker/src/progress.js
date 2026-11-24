@@ -85,11 +85,40 @@ function cleanOrientation(input) {
   if (!Array.isArray(input)) return null;
   return Array.from(new Set(input.filter((x) => typeof x === 'string' && /^[a-z0-9]{1,12}$/.test(x)))).slice(0, 3);
 }
+// Kết quả trắc nghiệm: tối đa 5 nhóm xếp theo độ gần (p: 0–100, so với nhóm cao nhất).
+function cleanQuiz(input) {
+  if (!Array.isArray(input)) return null;
+  const seen = new Set(); const out = [];
+  for (const x of input) {
+    if (!x || typeof x.id !== 'string' || !/^[a-z0-9]{1,12}$/.test(x.id) || seen.has(x.id)) continue;
+    const p = Math.round(Number(x.p));
+    if (!Number.isFinite(p)) continue;
+    seen.add(x.id); out.push({ id: x.id, p: Math.max(0, Math.min(100, p)) });
+    if (out.length >= 5) break;
+  }
+  return out;
+}
+// Dòng cũ lưu mảng mã nhóm; dòng mới lưu { ids, quiz }.
+function parseOri(raw) {
+  let v = null;
+  try { v = JSON.parse(raw); } catch (e) { v = null; }
+  if (Array.isArray(v)) v = { ids: v };
+  return { ids: cleanOrientation(v && v.ids) || [], quiz: cleanQuiz(v && v.quiz) || [] };
+}
 async function orientationOf(db, code) {
   await ensureOri(db);
   const r = await db.prepare('SELECT data, updated_at FROM progress_orientation WHERE code = ?1').bind(code).first();
   if (!r) return null;
-  try { const ids = cleanOrientation(JSON.parse(r.data)); return ids && ids.length ? { ids, at: r.updated_at } : null; } catch (e) { return null; }
+  const d = parseOri(r.data);
+  return d.ids.length || d.quiz.length ? { ...d, at: r.updated_at } : null;
+}
+async function saveOrientation(db, code, ids, quiz, now) {
+  await ensureOri(db);
+  const r = await db.prepare('SELECT data FROM progress_orientation WHERE code = ?1').bind(code).first();
+  const cur = r ? parseOri(r.data) : { ids: [], quiz: [] };
+  const next = { ids: ids || cur.ids, quiz: quiz || cur.quiz };
+  if (!next.ids.length && !next.quiz.length) { await db.prepare('DELETE FROM progress_orientation WHERE code = ?1').bind(code).run(); return; }
+  await db.prepare('INSERT INTO progress_orientation (code, data, updated_at) VALUES (?1, ?2, ?3) ON CONFLICT(code) DO UPDATE SET data = ?2, updated_at = ?3').bind(code, JSON.stringify(next), nowIso(now)).run();
 }
 async function timetableOf(db, code) {
   const r = await db.prepare('SELECT data FROM progress_timetable WHERE code = ?1').bind(code).first();
@@ -126,12 +155,8 @@ export async function progressSettings(db, input, now = new Date()) {
   if (rw) {
     await db.prepare('INSERT INTO progress_reward (code, data, updated_at) VALUES (?1, ?2, ?3) ON CONFLICT(code) DO UPDATE SET data = ?2, updated_at = ?3').bind(o.code, JSON.stringify(rw), nowIso(now)).run();
   }
-  const ori = cleanOrientation(input.orientation);
-  if (ori) {
-    await ensureOri(db);
-    if (ori.length) await db.prepare('INSERT INTO progress_orientation (code, data, updated_at) VALUES (?1, ?2, ?3) ON CONFLICT(code) DO UPDATE SET data = ?2, updated_at = ?3').bind(o.code, JSON.stringify(ori), nowIso(now)).run();
-    else await db.prepare('DELETE FROM progress_orientation WHERE code = ?1').bind(o.code).run();
-  }
+  const ori = cleanOrientation(input.orientation); const qz = cleanQuiz(input.quiz);
+  if (ori || qz) await saveOrientation(db, o.code, ori, qz, now);
   const tt = cleanTimetable(input.timetable);
   if (tt) {
     await db.prepare('INSERT INTO progress_timetable (code, data, updated_at) VALUES (?1, ?2, ?3) ON CONFLICT(code) DO UPDATE SET data = ?2, updated_at = ?3').bind(o.code, JSON.stringify(tt), nowIso(now)).run();
@@ -233,7 +258,7 @@ export async function progressView(db, catalog, input, now = new Date()) {
     const oc = await orientationOf(db, r.code);
     if (!oc) continue;
     const gs4 = JSON.parse(r.items).map((id) => /^van-hoa-(\d+)$/.exec(id)).filter(Boolean).map((m) => Number(m[1]));
-    orientations.push({ code: r.code, grades: gs4, label: gs4.map((g) => (byGrade.get(g) || 'Lớp ' + g)).join(', '), ids: oc.ids, at: oc.at });
+    orientations.push({ code: r.code, grades: gs4, label: gs4.map((g) => (byGrade.get(g) || 'Lớp ' + g)).join(', '), ids: oc.ids, quiz: oc.quiz, at: oc.at });
   }
   const base = { timetables, orientations, code: o.code, codes, name: o.name, courses, enabled, goals: gs ? { daily: gs.goal_daily, weekend: (gx && gx.goal_weekend) || 80, weekly: gs.goal_weekly, ...(await passOf(db, gs.code)) } : null, lastSync, reward: gs ? await rewardOf(db, gs.code) : null, rewards };
   if (!enabled) return { ...base, rows: [] };
