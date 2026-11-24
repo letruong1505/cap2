@@ -1,8 +1,10 @@
 ## Bản mới
-- Định hướng công nghệ quốc gia: thêm tab "Trắc nghiệm chọn hướng" (11 câu) gợi ý 3 nhóm hợp sở thích; phụ huynh xem được hướng con chọn và kết quả trắc nghiệm
+- Trắc nghiệm chọn hướng: ngân hàng 20 câu, mỗi lần làm bốc ngẫu nhiên 10 câu và xáo thứ tự đáp án
 - Android: bản này yêu cầu cài apk mới
 
 ## Các bản trước
+- Định hướng công nghệ quốc gia: thêm tab "Trắc nghiệm chọn hướng" (11 câu) gợi ý 3 nhóm hợp sở thích; phụ huynh xem được hướng con chọn và kết quả trắc nghiệm
+- Android: bản này yêu cầu cài apk mới
 - Khóa Định hướng công nghệ quốc gia: thêm trắc nghiệm 11 câu gợi ý 3 nhóm hợp sở thích; phụ huynh xem được kết quả trong mục "Định hướng con đã chọn"
 - Android: bản này yêu cầu cài apk mới
 - App Phụ huynh Windows: bấm "Tải về" hiện ngay tiến trình tải và báo lỗi rõ nếu không tải được

@@ -40,14 +40,27 @@ function loadNational() {
   load('renderer/national-data.js', ctx); load('renderer/national-quiz.js', ctx); load('renderer/national.js', ctx);
   return ctx;
 }
-test('trắc nghiệm chọn hướng: dữ liệu hợp lệ, chấm điểm ra nhóm hợp lý', () => {
+test('trắc nghiệm chọn hướng: ngân hàng 20 câu (10 cặp), dữ liệu hợp lệ, chấm điểm ra nhóm hợp lý', () => {
   const ctx = loadNational();
   const Q = ctx.NATIONAL_QUIZ; const ids = ctx.NATIONAL_DATA.groups.map((g) => g.id);
-  assert.equal(Q.questions.length, 10);
-  for (const q of Q.questions) { assert.equal(q.options.length, 4); for (const o of q.options) for (const k of Object.keys(o.w)) assert.ok(ids.includes(k), 'nhóm lạ ' + k); }
+  assert.equal(Q.pairs.length, 10);
+  const texts = new Set();
+  for (const p of Q.pairs) {
+    assert.equal(p.length, 2);
+    for (const q of p) {
+      assert.equal(q.options.length, 4); assert.ok(!texts.has(q.q), 'trùng câu'); texts.add(q.q);
+      for (const o of q.options) for (const k of Object.keys(o.w)) assert.ok(ids.includes(k), 'nhóm lạ ' + k);
+    }
+    // Hai câu trong một cặp cùng chạm tới cùng tập nhóm để lần nào cũng công bằng giữa các nhóm.
+    const set = (q) => [...new Set(q.options.flatMap((o) => Object.keys(o.w)))].sort().join();
+    assert.equal(set(p[0]), set(p[1]));
+  }
   const score = ctx.National.scoreQuiz;
-  const r = score(Q.questions.map(() => 0), ['Toán', 'Tin học', 'Tiếng Anh']);
-  assert.equal(r[0].id, 'so'); assert.equal(r[0].p, 100); assert.equal(r.length, 5);
-  const bio = score(Q.questions.map((q) => Math.max(0, q.options.findIndex((o) => o.w.sinh))), ['Sinh học', 'Hóa học']);
-  assert.equal(bio[0].id, 'sinh');
+  for (const pick of [0, 1]) {
+    const deck = Q.pairs.map((p) => p[pick]);
+    const r = score(deck, deck.map(() => 0), ['Toán', 'Tin học', 'Tiếng Anh']);
+    assert.equal(r[0].id, 'so'); assert.equal(r[0].p, 100); assert.equal(r.length, 5);
+    const bio = score(deck, deck.map((q) => Math.max(0, q.options.findIndex((o) => o.w.sinh))), ['Sinh học', 'Hóa học']);
+    assert.equal(bio[0].id, 'sinh');
+  }
 });
