@@ -220,3 +220,17 @@ test('thời khóa biểu giữ cả buổi chiều (pm) khi gửi lên máy ch�
   assert.deepEqual(d.grades[9].pm[3], []);
   assert.deepEqual(d.grades[8].pm[1], []);
 });
+
+test('định hướng con chọn: máy học sinh gửi, phụ huynh xem; mã lạ bị bỏ, tối đa 3, xóa dữ liệu thì mất', async () => {
+  const { db, code } = await setup();
+  await progressSettings(db, { ...dev(code), enabled: true }, NOW);
+  await progressSettings(db, { ...dev(code), orientation: ['so', 'ai', 'so', '<x>', 'rail', 'hk', 'sinh', 5] }, NOW);
+  let v = await view(db, code);
+  assert.equal(v.orientations.length, 1);
+  assert.deepEqual(v.orientations[0].ids, ['so', 'ai', 'rail']);
+  await progressSettings(db, { ...dev(code), orientation: [] }, NOW);
+  assert.equal((await view(db, code)).orientations.length, 0);
+  await progressSettings(db, { ...dev(code), orientation: ['robot'] }, NOW);
+  await progressSettings(db, { ...dev(code), purge: true }, NOW);
+  assert.equal((await view(db, code)).orientations.length, 0);
+});

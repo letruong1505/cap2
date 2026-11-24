@@ -195,3 +195,10 @@ CREATE TABLE IF NOT EXISTS family_links (
   linked_at TEXT NOT NULL,
   PRIMARY KEY (fcode, machine)
 );
+
+-- Hướng con đã chọn trong khóa Định hướng công nghệ quốc gia (tối đa 3 nhóm), phụ huynh xem trên app Phụ huynh.
+CREATE TABLE IF NOT EXISTS progress_orientation (
+  code TEXT PRIMARY KEY,
+  data TEXT NOT NULL,
+  updated_at TEXT NOT NULL
+);

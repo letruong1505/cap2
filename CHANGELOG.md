@@ -1,9 +1,11 @@
 ## Bản mới
-- Thời khóa biểu nhập và xem dạng bảng như bản giấy: mỗi ngày 5 tiết, hai cột Sáng và Chiều, mỗi ô chọn một môn (một môn được học nhiều tiết); tick Nghỉ thì cả buổi mờ đi.
-- Thời khóa biểu buổi chiều: máy tự gửi lại lên máy chủ một lần để phụ huynh thấy đủ buổi chiều.
+- Phụ huynh xem "Định hướng con đã chọn": ngành nghề phù hợp và các môn con cần học ở THCS và THPT (app Phụ huynh Android và Windows)
 - Android: bản này yêu cầu cài apk mới
 
 ## Các bản trước
+- Thời khóa biểu nhập và xem dạng bảng như bản giấy: mỗi ngày 5 tiết, hai cột Sáng và Chiều, mỗi ô chọn một môn (một môn được học nhiều tiết); tick Nghỉ thì cả buổi mờ đi.
+- Thời khóa biểu buổi chiều: máy tự gửi lại lên máy chủ một lần để phụ huynh thấy đủ buổi chiều.
+
 - Thời khóa biểu nhập và xem dạng bảng: mỗi ngày một hàng, hai cột Sáng và Chiều; buổi nào không học thì tick Nghỉ, ô mờ đi (app học và app Phụ huynh).
 - Thời khóa biểu chia buổi sáng và buổi chiều: buổi nào không có môn được báo nghỉ trong khung nhắc học và thông báo tối hôm trước.
 - Scratch 8–11 tuổi: giáo trình mới "Tư duy trước, Scratch sau" dạng thẻ giống Python (16 chương, mỗi chương 3 bài nhỏ có khung Tóm tắt, thẻ thực hành có gợi ý), kịch bản khối lệnh vẽ bằng khối màu; xem thử Mở đầu và Chương 1
