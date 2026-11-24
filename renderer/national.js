@@ -59,7 +59,7 @@
     ['Xếp hạng', 'Nhóm 3 dẫn đầu Đông Nam Á, nhóm 50 đầu thế giới về năng lực cạnh tranh số và Chính phủ điện tử; ít nhất 5 doanh nghiệp công nghệ số ngang tầm các nước tiên tiến.'],
   ];
 
-  const state = { tab: 'tong-quan', group: null, picks: [], answers: [], subs: [], result: null, qmsg: '' };
+  const state = { tab: 'tong-quan', group: null, picks: [], answers: [], deck: null, subs: [], result: null, qmsg: '' };
   try {
     const saved = JSON.parse(localStorage.getItem(KEY) || '[]');
     if (Array.isArray(saved)) state.picks = saved.filter((id) => D.groups.some((g) => g.id === id)).slice(0, 3);
@@ -72,9 +72,12 @@
   } catch { /* bỏ qua */ }
 
   // Chấm điểm: mỗi đáp án cộng điểm cho 1–3 nhóm, mỗi môn con học tốt cộng 1 cho nhóm có môn đó. p = độ gần so với nhóm cao nhất (0–100).
-  function scoreQuiz(answers, subs) {
+  const shuffle = (a) => { const r = a.slice(); for (let i = r.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [r[i], r[j]] = [r[j], r[i]]; } return r; };
+  // Bộ câu hỏi mỗi lần làm: 1 câu ngẫu nhiên trong mỗi cặp, đáp án xáo thứ tự.
+  const newDeck = () => Q.pairs.map((p) => { const q = p[Math.floor(Math.random() * p.length)]; return { q: q.q, options: shuffle(q.options) }; });
+  function scoreQuiz(deck, answers, subs) {
     const sc = {}; D.groups.forEach((g) => { sc[g.id] = 0; });
-    answers.forEach((a, i) => { const w = Q.questions[i].options[a].w; Object.keys(w).forEach((k) => { if (k in sc) sc[k] += w[k]; }); });
+    answers.forEach((a, i) => { const w = deck[i].options[a].w; Object.keys(w).forEach((k) => { if (k in sc) sc[k] += w[k]; }); });
     subs.forEach((m) => D.groups.forEach((g) => { if (g.s.includes(m)) sc[g.id] += 1; }));
     const ids = D.groups.map((g) => g.id).sort((a, b) => sc[b] - sc[a] || D.groups.findIndex((g) => g.id === a) - D.groups.findIndex((g) => g.id === b));
     const top = sc[ids[0]] || 1;
@@ -239,19 +242,21 @@
 
   // ----- Trắc nghiệm chọn hướng
   function viewQuiz() {
+    if (!state.deck) state.deck = newDeck();
+    const deck = state.deck;
     const form = h('div', { class: 'nat-quiz' },
-      Q.questions.map((q, i) => h('fieldset', { class: 'nat-qfs' }, h('legend', {}, (i + 1) + '. ' + q.q),
+      deck.map((q, i) => h('fieldset', { class: 'nat-qfs' }, h('legend', {}, (i + 1) + '. ' + q.q),
         q.options.map((o, j) => h('label', { class: 'nat-qopt' },
           h('input', { type: 'radio', name: 'nq' + i, checked: state.answers[i] === j, onchange: () => { state.answers[i] = j; } }), ' ' + o.t)))),
-      h('fieldset', { class: 'nat-qfs' }, h('legend', {}, (Q.questions.length + 1) + '. Em học tốt nhất những môn nào? (chọn tối đa 3)'),
+      h('fieldset', { class: 'nat-qfs' }, h('legend', {}, (deck.length + 1) + '. Em học tốt nhất những môn nào? (chọn tối đa 3)'),
         Q.subjects.map((m) => h('label', { class: 'nat-qopt' },
           h('input', { type: 'checkbox', checked: state.subs.includes(m), onchange: (e) => {
             if (e.target.checked) { if (state.subs.length >= 3) { e.target.checked = false; return; } state.subs.push(m); } else state.subs = state.subs.filter((x) => x !== m);
           } }), ' ' + m))));
     const submit = () => {
-      for (let i = 0; i < Q.questions.length; i++) if (typeof state.answers[i] !== 'number') { state.qmsg = 'Em còn câu ' + (i + 1) + ' chưa chọn.'; render(); return; }
+      for (let i = 0; i < deck.length; i++) if (typeof state.answers[i] !== 'number') { state.qmsg = 'Em còn câu ' + (i + 1) + ' chưa chọn.'; render(); return; }
       state.qmsg = '';
-      state.result = scoreQuiz(state.answers, state.subs);
+      state.result = scoreQuiz(deck, state.answers, state.subs);
       try { localStorage.setItem(QKEY, JSON.stringify({ t: Date.now(), r: state.result })); } catch { /* bỏ qua */ }
       render();
     };
@@ -263,9 +268,9 @@
       h('p', { class: 'muted' }, 'Thanh dài hơn là gần sở thích của em hơn. Đây chỉ là gợi ý, em vẫn nên xem các nhóm khác, hỏi thầy cô và người làm trong ngành.'),
       h('div', { class: 'nat-actions' },
         h('button', { type: 'button', class: 'primary', onclick: () => { state.picks = state.result.slice(0, 3).map((x) => x.id); savePicks(); goto('ke-hoach'); } }, 'Chọn 3 hướng này và xem kế hoạch'),
-        h('button', { type: 'button', class: 'nat-secondary', onclick: () => { state.answers = []; state.subs = []; state.result = null; try { localStorage.removeItem(QKEY); } catch { /* bỏ qua */ } render(); } }, 'Làm lại'))) : null;
+        h('button', { type: 'button', class: 'nat-secondary', onclick: () => { state.answers = []; state.subs = []; state.result = null; state.deck = null; try { localStorage.removeItem(QKEY); } catch { /* bỏ qua */ } render(); } }, 'Làm lại'))) : null;
     return h('div', { class: 'nat-view' },
-      head('Trắc nghiệm chọn hướng', 'Chưa biết chọn nhóm nào? Trả lời 11 câu (khoảng 3 phút). Kết quả là gợi ý theo sở thích, không phải đánh giá năng lực và không có đáp án đúng hay sai.'),
+      head('Trắc nghiệm chọn hướng', 'Chưa biết chọn nhóm nào? Trả lời 11 câu (khoảng 3 phút), mỗi lần làm câu hỏi và thứ tự đáp án có thể khác. Kết quả là gợi ý theo sở thích, không phải đánh giá năng lực và không có đáp án đúng hay sai.'),
       res, form,
       h('div', { class: 'nat-actions' }, h('button', { type: 'button', class: 'primary', onclick: submit }, 'Xem kết quả'), state.qmsg && h('span', { class: 'muted' }, ' ' + state.qmsg)));
   }
