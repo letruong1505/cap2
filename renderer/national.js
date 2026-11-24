@@ -4,6 +4,8 @@
 (function () {
   const D = window.NATIONAL_DATA;
   const KEY = 'nl-dhcnqg';
+  const QKEY = 'nl-dhcnqg-qz';
+  const Q = window.NATIONAL_QUIZ;
 
   const h = (tag, attrs, ...children) => {
     const n = document.createElement(tag);
@@ -26,6 +28,7 @@
     ['tong-quan', 'Tổng quan chiến lược'],
     ['van-ban', 'Văn bản và hiệu lực'],
     ['nhom', '10 nhóm công nghệ'],
+    ['trac-nghiem', 'Trắc nghiệm chọn hướng'],
     ['ke-hoach', 'Kế hoạch của em'],
     ['nguon', 'Nguồn tham khảo'],
   ];
@@ -56,12 +59,27 @@
     ['Xếp hạng', 'Nhóm 3 dẫn đầu Đông Nam Á, nhóm 50 đầu thế giới về năng lực cạnh tranh số và Chính phủ điện tử; ít nhất 5 doanh nghiệp công nghệ số ngang tầm các nước tiên tiến.'],
   ];
 
-  const state = { tab: 'tong-quan', group: null, picks: [] };
+  const state = { tab: 'tong-quan', group: null, picks: [], answers: [], subs: [], result: null, qmsg: '' };
   try {
     const saved = JSON.parse(localStorage.getItem(KEY) || '[]');
     if (Array.isArray(saved)) state.picks = saved.filter((id) => D.groups.some((g) => g.id === id)).slice(0, 3);
   } catch { /* không lưu được thì bỏ qua */ }
   const savePicks = () => { try { localStorage.setItem(KEY, JSON.stringify(state.picks)); } catch { /* bỏ qua */ } };
+
+  try {
+    const q = JSON.parse(localStorage.getItem(QKEY) || 'null');
+    if (q && Array.isArray(q.r)) state.result = q.r.filter((x) => x && D.groups.some((g) => g.id === x.id)).slice(0, 5);
+  } catch { /* bỏ qua */ }
+
+  // Chấm điểm: mỗi đáp án cộng điểm cho 1–3 nhóm, mỗi môn con học tốt cộng 1 cho nhóm có môn đó. p = độ gần so với nhóm cao nhất (0–100).
+  function scoreQuiz(answers, subs) {
+    const sc = {}; D.groups.forEach((g) => { sc[g.id] = 0; });
+    answers.forEach((a, i) => { const w = Q.questions[i].options[a].w; Object.keys(w).forEach((k) => { if (k in sc) sc[k] += w[k]; }); });
+    subs.forEach((m) => D.groups.forEach((g) => { if (g.s.includes(m)) sc[g.id] += 1; }));
+    const ids = D.groups.map((g) => g.id).sort((a, b) => sc[b] - sc[a] || D.groups.findIndex((g) => g.id === a) - D.groups.findIndex((g) => g.id === b));
+    const top = sc[ids[0]] || 1;
+    return ids.slice(0, 5).map((id) => ({ id, p: Math.round(sc[id] / top * 100) }));
+  }
 
   let root;
   const goto = (tab, group = null) => { state.tab = tab; state.group = group; render(); root.scrollIntoView({ block: 'start' }); window.scrollTo(0, 0); };
@@ -219,6 +237,39 @@
         note('warn', 'Cần xác minh trước khi dùng chính thức', 'Nội dung tổng hợp từ các nguồn trên, chưa đối chiếu toàn văn trên Công báo. Môn nền tảng và ngành học là gợi ý của Nam Linh.')));
   }
 
+  // ----- Trắc nghiệm chọn hướng
+  function viewQuiz() {
+    const form = h('div', { class: 'nat-quiz' },
+      Q.questions.map((q, i) => h('fieldset', { class: 'nat-qfs' }, h('legend', {}, (i + 1) + '. ' + q.q),
+        q.options.map((o, j) => h('label', { class: 'nat-qopt' },
+          h('input', { type: 'radio', name: 'nq' + i, checked: state.answers[i] === j, onchange: () => { state.answers[i] = j; } }), ' ' + o.t)))),
+      h('fieldset', { class: 'nat-qfs' }, h('legend', {}, (Q.questions.length + 1) + '. Em học tốt nhất những môn nào? (chọn tối đa 3)'),
+        Q.subjects.map((m) => h('label', { class: 'nat-qopt' },
+          h('input', { type: 'checkbox', checked: state.subs.includes(m), onchange: (e) => {
+            if (e.target.checked) { if (state.subs.length >= 3) { e.target.checked = false; return; } state.subs.push(m); } else state.subs = state.subs.filter((x) => x !== m);
+          } }), ' ' + m))));
+    const submit = () => {
+      for (let i = 0; i < Q.questions.length; i++) if (typeof state.answers[i] !== 'number') { state.qmsg = 'Em còn câu ' + (i + 1) + ' chưa chọn.'; render(); return; }
+      state.qmsg = '';
+      state.result = scoreQuiz(state.answers, state.subs);
+      try { localStorage.setItem(QKEY, JSON.stringify({ t: Date.now(), r: state.result })); } catch { /* bỏ qua */ }
+      render();
+    };
+    const res = state.result && state.result.length ? h('section', { class: 'nat-card' },
+      h('h2', {}, '3 nhóm gần với sở thích của em'),
+      state.result.slice(0, 3).map((x, i) => { const g = D.groups.find((y) => y.id === x.id); return h('div', { class: 'nat-qres' },
+        h('b', {}, (i + 1) + '. ' + g.n), h('div', { class: 'muted' }, g.m.slice(0, 3).join(' · ')),
+        h('div', { class: 'nat-qbar' }, h('i', { style: 'width:' + Math.max(8, x.p) + '%' }))); }),
+      h('p', { class: 'muted' }, 'Thanh dài hơn là gần sở thích của em hơn. Đây chỉ là gợi ý, em vẫn nên xem các nhóm khác, hỏi thầy cô và người làm trong ngành.'),
+      h('div', { class: 'nat-actions' },
+        h('button', { type: 'button', class: 'primary', onclick: () => { state.picks = state.result.slice(0, 3).map((x) => x.id); savePicks(); goto('ke-hoach'); } }, 'Chọn 3 hướng này và xem kế hoạch'),
+        h('button', { type: 'button', class: 'nat-secondary', onclick: () => { state.answers = []; state.subs = []; state.result = null; try { localStorage.removeItem(QKEY); } catch { /* bỏ qua */ } render(); } }, 'Làm lại'))) : null;
+    return h('div', { class: 'nat-view' },
+      head('Trắc nghiệm chọn hướng', 'Chưa biết chọn nhóm nào? Trả lời 11 câu (khoảng 3 phút). Kết quả là gợi ý theo sở thích, không phải đánh giá năng lực và không có đáp án đúng hay sai.'),
+      res, form,
+      h('div', { class: 'nat-actions' }, h('button', { type: 'button', class: 'primary', onclick: submit }, 'Xem kết quả'), state.qmsg && h('span', { class: 'muted' }, ' ' + state.qmsg)));
+  }
+
   function render() {
     if (!root) return;
     const nav = h('nav', { class: 'nat-nav nat-noprint', 'aria-label': 'Các mục' }, TABS.map(([id, label], i) =>
@@ -227,6 +278,7 @@
     let view;
     if (state.tab === 'van-ban') view = viewDocs();
     else if (state.tab === 'nhom') view = state.group ? viewGroup(state.group) : viewGroups();
+    else if (state.tab === 'trac-nghiem') view = viewQuiz();
     else if (state.tab === 'ke-hoach') view = viewPlan();
     else if (state.tab === 'nguon') view = viewSources();
     else view = viewOverview();
@@ -241,6 +293,7 @@
   }
 
   window.National = {
+    scoreQuiz,
     open() { root = document.getElementById('national-body'); state.tab = 'tong-quan'; state.group = null; render(); },
   };
 })();

@@ -1182,3 +1182,12 @@ button.tt-chip { cursor: pointer; }
 .tt-tab td.off { background: #e9edf1; opacity: .6; }
 .tt-tab.tt-view .tt-slot { padding: 2px 6px; }
 .tt-ses.off { opacity: .35; }
+
+/* Trắc nghiệm chọn hướng */
+.nat-quiz { display: flex; flex-direction: column; gap: 12px; margin: 14px 0; }
+.nat-qfs { border: 1px solid var(--rule); border-radius: 12px; padding: 10px 16px; background: #fff; }
+.nat-qfs legend { font-weight: 700; padding: 0 6px; }
+.nat-qopt { display: block; padding: 6px 0; cursor: pointer; }
+.nat-qres { margin: 10px 0 14px; }
+.nat-qbar { background: #e6edf5; border-radius: 6px; height: 10px; margin-top: 6px; }
+.nat-qbar i { display: block; height: 100%; background: #2a6db5; border-radius: 6px; }

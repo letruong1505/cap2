@@ -5,15 +5,15 @@ const path = require('node:path');
 const vm = require('node:vm');
 
 const root = path.join(__dirname, '..');
-// Dữ liệu cho phụ huynh phải trùng biến D của khóa Định hướng quốc gia.
-test('dữ liệu định hướng của app Phụ huynh trùng với khóa học', () => {
-  const html = fs.readFileSync(path.join(root, 'courses/dinh-huong-quoc-gia/index.html'), 'utf8');
-  const m = /var D=(\{.*?\});\nvar KEY/s.exec(html);
-  assert.ok(m);
+const load = (rel, ctx) => vm.runInNewContext(fs.readFileSync(path.join(root, rel), 'utf8'), ctx);
+
+test('dữ liệu định hướng của app Phụ huynh trùng với national-data.js của app học', () => {
   const ctx = { window: {} };
-  vm.runInNewContext(fs.readFileSync(path.join(root, 'parent/dhqg-data.js'), 'utf8'), ctx);
-  assert.deepEqual(JSON.parse(JSON.stringify(ctx.window.PARENT_DHQG)), JSON.parse(m[1]));
-  for (const g of Object.values(ctx.window.PARENT_DHQG)) { assert.ok(g.n && g.m.length && g.s.length && g.a.length && g.b.length); }
+  load('renderer/national-data.js', ctx); load('parent/dhqg-data.js', ctx);
+  const want = {};
+  ctx.window.NATIONAL_DATA.groups.forEach((x) => { want[x.id] = { n: x.n, s: x.s, m: x.m, k: x.k, a: x.a, b: x.b }; });
+  assert.deepEqual(JSON.parse(JSON.stringify(ctx.window.PARENT_DHQG)), JSON.parse(JSON.stringify(want)));
+  for (const g of Object.values(ctx.window.PARENT_DHQG)) assert.ok(g.n && g.m.length && g.s.length && g.a.length && g.b.length);
 });
 
 test('build app Phụ huynh có dữ liệu định hướng và nút xem', () => {
@@ -25,28 +25,29 @@ test('build app Phụ huynh có dữ liệu định hướng và nút xem', () =
   assert.match(html, /id="go-orient"/); assert.match(html, /dhqg-data\.js/);
 });
 
-test('app học gửi mã hướng đã chọn lên máy chủ khi bật chia sẻ', () => {
-  const s = fs.readFileSync(path.join(root, 'renderer/progress-sync.js'), 'utf8');
-  assert.match(s, /nl-dhqg/); assert.match(s, /orientation: ids/);
+test('app học gửi đúng khóa lưu của mục Định hướng (nl-dhcnqg và nl-dhcnqg-qz) lên máy chủ', () => {
+  const sync = fs.readFileSync(path.join(root, 'renderer/progress-sync.js'), 'utf8');
+  const nat = fs.readFileSync(path.join(root, 'renderer/national.js'), 'utf8');
+  for (const k of ['nl-dhcnqg', 'nl-dhcnqg-qz']) { assert.ok(sync.includes("'" + k + "'")); assert.ok(nat.includes("'" + k + "'")); }
+  assert.match(sync, /orientation: ids/);
   for (const f of ['main/orders.js', 'mobile/bridge/api.js']) assert.match(fs.readFileSync(path.join(root, f), 'utf8'), /orientation:/);
+  assert.match(fs.readFileSync(path.join(root, 'renderer/index.html'), 'utf8'), /national-quiz\.js[\s\S]*national\.js/);
 });
 
-test('trắc nghiệm chọn hướng: chấm điểm ra nhóm hợp lý, có lưu và gửi kết quả', () => {
-  const html = fs.readFileSync(path.join(root, 'courses/dinh-huong-quoc-gia/index.html'), 'utf8');
-  const D = JSON.parse(/var D=(\{.*?\});\nvar KEY/s.exec(html)[1]);
-  const QZ = JSON.parse(/var QZ=(\[.*?\]);\nvar SUBJ/s.exec(html)[1]);
-  assert.equal(QZ.length, 11 - 1);
-  for (const q of QZ) { assert.equal(q.o.length, 4); for (const o of q.o) for (const k of Object.keys(o.w)) assert.ok(D[k], 'nhóm lạ ' + k); }
-  const fn = /function qzScore\(ans,subs\)\{.*?\n\}\n/s.exec(html)[0];
-  const ctx = { D, QZ, Object, result: null };
-  vm.runInNewContext(fn + '; result = qzScore', ctx);
-  const score = ctx.result;
-  // Chọn toàn đáp án đầu (làm game, AI...) + Toán, Tin học, Tiếng Anh => Công nghệ số đứng đầu
-  const r = score(QZ.map(() => 0), ['Toán', 'Tin học', 'Tiếng Anh']);
+function loadNational() {
+  const ctx = { window: {}, localStorage: { getItem: () => null, setItem() {}, removeItem() {} }, document: {}, console };
+  ctx.window = ctx; // national.js gắn vào window
+  load('renderer/national-data.js', ctx); load('renderer/national-quiz.js', ctx); load('renderer/national.js', ctx);
+  return ctx;
+}
+test('trắc nghiệm chọn hướng: dữ liệu hợp lệ, chấm điểm ra nhóm hợp lý', () => {
+  const ctx = loadNational();
+  const Q = ctx.NATIONAL_QUIZ; const ids = ctx.NATIONAL_DATA.groups.map((g) => g.id);
+  assert.equal(Q.questions.length, 10);
+  for (const q of Q.questions) { assert.equal(q.options.length, 4); for (const o of q.options) for (const k of Object.keys(o.w)) assert.ok(ids.includes(k), 'nhóm lạ ' + k); }
+  const score = ctx.National.scoreQuiz;
+  const r = score(Q.questions.map(() => 0), ['Toán', 'Tin học', 'Tiếng Anh']);
   assert.equal(r[0].id, 'so'); assert.equal(r[0].p, 100); assert.equal(r.length, 5);
-  // Toàn đáp án sinh học + Sinh, Hóa => nhóm sinh học đứng đầu
-  const bio = score(QZ.map((q) => Math.max(0, q.o.findIndex((o) => o.w.sinh))), ['Sinh học', 'Hóa học']);
+  const bio = score(Q.questions.map((q) => Math.max(0, q.options.findIndex((o) => o.w.sinh))), ['Sinh học', 'Hóa học']);
   assert.equal(bio[0].id, 'sinh');
-  assert.match(html, /nl-dhqg-qz/);
-  assert.match(fs.readFileSync(path.join(root, 'renderer/progress-sync.js'), 'utf8'), /nl-dhqg-qz/);
 });
