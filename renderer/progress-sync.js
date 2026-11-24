@@ -137,7 +137,7 @@
       }
       // Hướng con đã chọn trong khóa Định hướng công nghệ quốc gia: gửi mã nhóm để phụ huynh xem ngành nghề và các môn cần học.
       try {
-        const raw = store().getItem('nl-dhqg');
+        const raw = store().getItem('nl-dhcnqg');
         const ids = (JSON.parse(raw || '[]') || []).filter((x) => typeof x === 'string').slice(0, 3);
         const okey = JSON.stringify({ v: 1, ids });
         if (raw !== null && st.orientKey !== okey) {
@@ -147,7 +147,7 @@
       } catch (e) { /* bỏ qua */ }
       // Kết quả trắc nghiệm chọn hướng của con (xếp theo độ gần sở thích).
       try {
-        const rawq = store().getItem('nl-dhqg-qz');
+        const rawq = store().getItem('nl-dhcnqg-qz');
         const q = rawq ? JSON.parse(rawq) : null;
         if (q && Array.isArray(q.r) && st.quizKey !== String(q.t)) {
           const g = await bridge().progressSettings({ code, quiz: q.r.slice(0, 5) });
