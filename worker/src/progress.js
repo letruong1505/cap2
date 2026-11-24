@@ -78,6 +78,19 @@ function cleanTimetable(t) {
   });
   return { v: 1, remindOn: t.remindOn !== false, remindHour: clampInt(t.remindHour, 0, 23, 19), grades };
 }
+// Hướng đã chọn: chỉ nhận mã nhóm ngắn (chữ thường/số), tối đa 3, bỏ trùng. Bảng tạo khi dùng lần đầu nên không cần chạy db:init.
+let oriReady = null;
+const ensureOri = (db) => (oriReady = oriReady || db.prepare('CREATE TABLE IF NOT EXISTS progress_orientation (code TEXT PRIMARY KEY, data TEXT NOT NULL, updated_at TEXT NOT NULL)').run().catch((e) => { oriReady = null; throw e; }));
+function cleanOrientation(input) {
+  if (!Array.isArray(input)) return null;
+  return Array.from(new Set(input.filter((x) => typeof x === 'string' && /^[a-z0-9]{1,12}$/.test(x)))).slice(0, 3);
+}
+async function orientationOf(db, code) {
+  await ensureOri(db);
+  const r = await db.prepare('SELECT data, updated_at FROM progress_orientation WHERE code = ?1').bind(code).first();
+  if (!r) return null;
+  try { const ids = cleanOrientation(JSON.parse(r.data)); return ids && ids.length ? { ids, at: r.updated_at } : null; } catch (e) { return null; }
+}
 async function timetableOf(db, code) {
   const r = await db.prepare('SELECT data FROM progress_timetable WHERE code = ?1').bind(code).first();
   try { return r ? cleanTimetable(JSON.parse(r.data)) : null; } catch (e) { return null; }
@@ -97,6 +110,7 @@ export async function progressSettings(db, input, now = new Date()) {
     await db.prepare('DELETE FROM progress_usage WHERE code = ?1').bind(o.code).run();
     await db.prepare('DELETE FROM progress_reward WHERE code = ?1').bind(o.code).run();
     await db.prepare('DELETE FROM progress_timetable WHERE code = ?1').bind(o.code).run();
+    await ensureOri(db); await db.prepare('DELETE FROM progress_orientation WHERE code = ?1').bind(o.code).run();
     await db.prepare('UPDATE progress_sync SET last_sync = NULL WHERE code = ?1').bind(o.code).run();
   }
   if (input.goals && typeof input.goals === 'object') {
@@ -111,6 +125,12 @@ export async function progressSettings(db, input, now = new Date()) {
   const rw = cleanReward(input.reward);
   if (rw) {
     await db.prepare('INSERT INTO progress_reward (code, data, updated_at) VALUES (?1, ?2, ?3) ON CONFLICT(code) DO UPDATE SET data = ?2, updated_at = ?3').bind(o.code, JSON.stringify(rw), nowIso(now)).run();
+  }
+  const ori = cleanOrientation(input.orientation);
+  if (ori) {
+    await ensureOri(db);
+    if (ori.length) await db.prepare('INSERT INTO progress_orientation (code, data, updated_at) VALUES (?1, ?2, ?3) ON CONFLICT(code) DO UPDATE SET data = ?2, updated_at = ?3').bind(o.code, JSON.stringify(ori), nowIso(now)).run();
+    else await db.prepare('DELETE FROM progress_orientation WHERE code = ?1').bind(o.code).run();
   }
   const tt = cleanTimetable(input.timetable);
   if (tt) {
@@ -208,7 +228,14 @@ export async function progressView(db, catalog, input, now = new Date()) {
     const gs3 = JSON.parse(r.items).map((id) => /^van-hoa-(\d+)$/.exec(id)).filter(Boolean).map((m) => Number(m[1]));
     timetables.push({ code: r.code, grades: gs3, label: gs3.map((g) => (byGrade.get(g) || 'Lớp ' + g)).join(', '), data: tt });
   }
-  const base = { timetables, code: o.code, codes, name: o.name, courses, enabled, goals: gs ? { daily: gs.goal_daily, weekend: (gx && gx.goal_weekend) || 80, weekly: gs.goal_weekly, ...(await passOf(db, gs.code)) } : null, lastSync, reward: gs ? await rewardOf(db, gs.code) : null, rewards };
+  const orientations = [];
+  for (const r of orders) {
+    const oc = await orientationOf(db, r.code);
+    if (!oc) continue;
+    const gs4 = JSON.parse(r.items).map((id) => /^van-hoa-(\d+)$/.exec(id)).filter(Boolean).map((m) => Number(m[1]));
+    orientations.push({ code: r.code, grades: gs4, label: gs4.map((g) => (byGrade.get(g) || 'Lớp ' + g)).join(', '), ids: oc.ids, at: oc.at });
+  }
+  const base = { timetables, orientations, code: o.code, codes, name: o.name, courses, enabled, goals: gs ? { daily: gs.goal_daily, weekend: (gx && gx.goal_weekend) || 80, weekly: gs.goal_weekly, ...(await passOf(db, gs.code)) } : null, lastSync, reward: gs ? await rewardOf(db, gs.code) : null, rewards };
   if (!enabled) return { ...base, rows: [] };
 
   const today = now.toISOString().slice(0, 10);

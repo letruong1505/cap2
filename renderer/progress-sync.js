@@ -135,6 +135,16 @@
           if (g.ok) { st.timetableKey = key; delete st.timetable; writeState(st); }
         }
       }
+      // Hướng con đã chọn trong khóa Định hướng công nghệ quốc gia: gửi mã nhóm để phụ huynh xem ngành nghề và các môn cần học.
+      try {
+        const raw = store().getItem('nl-dhqg');
+        const ids = (JSON.parse(raw || '[]') || []).filter((x) => typeof x === 'string').slice(0, 3);
+        const okey = JSON.stringify({ v: 1, ids });
+        if (raw !== null && st.orientKey !== okey) {
+          const g = await bridge().progressSettings({ code, orientation: ids });
+          if (g.ok) { st.orientKey = okey; writeState(st); }
+        }
+      } catch (e) { /* bỏ qua */ }
       const r = await bridge().progressPush({ code, days: aggregate(data.attempts), usage: window.VungUsage ? window.VungUsage.list() : [] });
       if (r.ok) { st.lastOk = Date.now(); writeState(st); }
       else if (r.error && /chưa bật/i.test(r.error)) { st.enabled = false; writeState(st); } // phụ huynh đã tắt ở nơi khác

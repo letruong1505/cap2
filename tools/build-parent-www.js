@@ -19,7 +19,7 @@ function build({ out, version, api, versionCode = 1, desktop = false }) {
   fs.cpSync(path.join(ROOT, 'parent', 'digest'), path.join(out, 'digest'), { recursive: true });
   fs.cpSync(path.join(ROOT, 'renderer', 'fonts'), path.join(out, 'fonts'), { recursive: true });
   fs.copyFileSync(path.join(ROOT, 'mobile', 'bridge', 'api.js'), path.join(out, 'api.js'));
-  for (const f of ['parent.js', 'courses.js', 'buy.js', 'digest.js']) fs.copyFileSync(path.join(ROOT, 'parent', f), path.join(out, f));
+  for (const f of ['parent.js', 'courses.js', 'buy.js', 'digest.js', 'dhqg-data.js']) fs.copyFileSync(path.join(ROOT, 'parent', f), path.join(out, f));
   // Bản Windows dùng khởi động và cập nhật riêng (gọi mạng qua tiến trình chính, cập nhật bằng electron-updater), giữ nguyên tên tệp để index.html dùng chung.
   fs.copyFileSync(path.join(ROOT, 'parent', desktop ? 'parent-boot-desktop.js' : 'parent-boot.js'), path.join(out, 'parent-boot.js'));
   fs.copyFileSync(path.join(ROOT, 'parent', desktop ? 'parent-update-desktop.js' : 'parent-update.js'), path.join(out, 'parent-update.js'));

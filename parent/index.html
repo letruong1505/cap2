@@ -25,6 +25,7 @@
       <div class="launch-tools">
         <button type="button" id="go-progress">Xem con học (tiến độ, báo cáo, phần thưởng)</button>
         <button type="button" id="go-timetable">Thời khóa biểu và nhắc học</button>
+        <button type="button" id="go-orient">Định hướng con đã chọn</button>
         <button type="button" id="go-advice">Liên hệ Nam Linh</button>
         <button type="button" id="go-buy">Khóa học và giá</button>
       </div>
@@ -45,6 +46,14 @@
       <div class="tt-remind-row"><label><input type="checkbox" id="tt-remind-local" /> Nhắc trên điện thoại này</label></div>
       <button type="button" id="tt-refresh">Cập nhật từ máy của con</button>
       <p class="meta" id="tt-msg" role="status"></p>
+    </section>
+
+    <section id="orient" class="panel" hidden>
+      <button class="back-link" type="button" data-back>← Quay lại</button>
+      <h1>Định hướng con đã chọn</h1>
+      <p class="meta">Các hướng nghề con chọn trong khóa "Định hướng công nghệ quốc gia" trên app học: ngành nghề phù hợp và các môn con nên học ở THCS và THPT.</p>
+      <div id="or-view"></div>
+      <p class="meta" id="or-msg" role="status"></p>
     </section>
 
     <section id="advice" class="panel" hidden>
@@ -100,6 +109,7 @@
   <script src="payment-config.js"></script>
   <script src="terms.js"></script>
   <script src="catalog.js"></script>
+  <script src="dhqg-data.js"></script>
   <script src="timetable.js"></script>
   <script src="courses.js"></script>
   <script src="buy.js"></script>

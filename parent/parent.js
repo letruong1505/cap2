@@ -1,7 +1,7 @@
 // Điều hướng app Phụ huynh: màn hình chính, xem con học, thời khóa biểu (đồng bộ từ máy của con), liên hệ, khóa học và giá.
 (function () {
   'use strict';
-  const SECTIONS = ['home', 'parent-view', 'timetable', 'advice', 'purchase', 'buy', 'digest'];
+  const SECTIONS = ['home', 'parent-view', 'timetable', 'orient', 'advice', 'purchase', 'buy', 'digest'];
   const NAMES = { toan: 'Toán', van: 'Ngữ văn', anh: 'Tiếng Anh', ly: 'Vật lí', hoa: 'Hoá học', sinh: 'Sinh học', lichsu: 'Lịch sử', diali: 'Địa lí', gdktpl: 'Giáo dục KT&PL', tin: 'Tin học' };
   const T = window.VungTimetable;
   const $ = (id) => document.getElementById(id);
@@ -58,6 +58,41 @@
       box.append(card);
     }));
   }
+
+  /* Định hướng con đã chọn: máy của con gửi mã các nhóm; ở đây tra dữ liệu có sẵn để hiện ngành nghề và các môn cần học theo cấp. */
+  function renderOrient(res) {
+    const box = $('or-view'); box.replaceChildren();
+    const D = window.PARENT_DHQG || {};
+    if (!res.ok) { $('or-msg').textContent = res.error; return; }
+    const list = ((res.data && res.data.orientations) || []).filter((x) => x.ids.some((id) => D[id]));
+    if (!list.length) {
+      $('or-msg').textContent = res.data && res.data.enabled ? 'Con chưa chọn hướng trong khóa "Định hướng công nghệ quốc gia".' : 'Chưa có dữ liệu. Trên app học của con, bật "Cho phụ huynh xem kết quả" rồi chọn hướng trong khóa Định hướng công nghệ quốc gia.';
+      return;
+    }
+    $('or-msg').textContent = 'Đã cập nhật lúc ' + new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' }) + '.';
+    const ul = (a) => h('ul', {}, ...a.map((t) => h('li', {}, t)));
+    list.forEach((x) => {
+      if (list.length > 1 && x.label) box.append(h('p', { class: 'meta' }, 'Bé học: ' + x.label));
+      x.ids.filter((id) => D[id]).forEach((id) => {
+        const g = D[id];
+        box.append(h('div', { class: 'goal-box' },
+          h('h2', {}, g.n),
+          h('p', { class: 'meta' }, 'Ngành nghề phù hợp'), ul(g.m || []),
+          h('p', { class: 'meta' }, 'Các môn con cần học chắc'), ul(g.s || []),
+          h('p', { class: 'meta' }, 'THCS (lớp 6–9) con nên làm'), ul(g.a || []),
+          h('p', { class: 'meta' }, 'THPT (lớp 10–12) con nên làm'), ul(g.b || [])));
+      });
+    });
+  }
+  async function openOrient() {
+    show('orient');
+    $('or-msg').textContent = 'Đang cập nhật...';
+    $('or-view').replaceChildren();
+    const c = creds();
+    if (!c) { $('or-msg').textContent = 'Hãy vào "Xem con học" và nhập mã đơn, số điện thoại trước.'; return; }
+    const r = await window.vungBai.progressView({ code: c.code, phone: c.phone, from: '', to: '', grade: 0 });
+    renderOrient(r.ok ? r : { ok: false, error: r.offline ? 'Không có mạng. Thử lại sau.' : (r.error || 'Không đọc được dữ liệu.') });
+  }
   async function openTimetable() {
     const cb = $('tt-remind-local'); cb.checked = remindOn();
     cb.onchange = async () => {
@@ -105,6 +140,7 @@
   document.querySelectorAll('[data-back]').forEach((b) => b.addEventListener('click', () => { if (b.closest('#buy')) openCourses(); else home(); }));
   $('go-progress').addEventListener('click', () => { window.VungProgressUI.renderParentView($('parent-body')); show('parent-view'); });
   $('go-timetable').addEventListener('click', openTimetable);
+  $('go-orient').addEventListener('click', openOrient);
   $('tt-refresh').addEventListener('click', openTimetable);
   $('go-advice').addEventListener('click', () => show('advice'));
   $('go-buy').addEventListener('click', openCourses);
