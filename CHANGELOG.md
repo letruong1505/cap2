@@ -1,8 +1,10 @@
 ## Bản mới
+- App Phụ huynh Windows: bấm "Tải về" hiện ngay tiến trình tải và báo lỗi rõ nếu không tải được
+
+## Các bản trước
 - Phụ huynh xem "Định hướng con đã chọn": ngành nghề phù hợp và các môn con cần học ở THCS và THPT (app Phụ huynh Android và Windows)
 - Android: bản này yêu cầu cài apk mới
 
-## Các bản trước
 - Thời khóa biểu nhập và xem dạng bảng như bản giấy: mỗi ngày 5 tiết, hai cột Sáng và Chiều, mỗi ô chọn một môn (một môn được học nhiều tiết); tick Nghỉ thì cả buổi mờ đi.
 - Thời khóa biểu buổi chiều: máy tự gửi lại lên máy chủ một lần để phụ huynh thấy đủ buổi chiều.
 

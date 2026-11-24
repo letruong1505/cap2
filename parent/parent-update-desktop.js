@@ -13,8 +13,12 @@
   var manual = false;
   function show(st) {
     if (!st) return;
-    if (st.state === 'available') say('Có bản mới ' + st.version + (st.notes ? ': ' + st.notes : '') + '.', 'Tải về', function () { d.downloadUpdate(); });
-    else if (st.state === 'downloading') say('Đang tải bản mới: ' + (st.percent | 0) + '%');
+    if (st.state === 'available') say('Có bản mới ' + st.version + (st.notes ? ': ' + st.notes : '') + '.', 'Tải về', function () {
+      // Bấm tải: báo ngay đang bắt đầu, và từ đây mọi lỗi đều hiện ra (không giấu thanh thông báo).
+      manual = true; say('Đang bắt đầu tải bản mới…');
+      d.downloadUpdate().then(show, function (e) { show({ state: 'error', error: String((e && e.message) || e) }); });
+    });
+    else if (st.state === 'downloading') say('Đang tải bản mới: ' + (st.percent | 0) + '%. Vui lòng chờ, đừng tắt app.');
     else if (st.state === 'ready') say('Đã tải xong bản ' + st.version + '.', 'Khởi động lại để cài', function () { d.installUpdate(); });
     else if (manual && st.state === 'none') say('Bạn đang dùng bản mới nhất.');
     else if (manual && st.state === 'error') say('Không kiểm tra được bản mới: ' + (st.error || 'lỗi không rõ') + '. Thử lại sau hoặc báo Nam Linh.');
