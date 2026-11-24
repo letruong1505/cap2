@@ -145,6 +145,15 @@
           if (g.ok) { st.orientKey = okey; writeState(st); }
         }
       } catch (e) { /* bỏ qua */ }
+      // Kết quả trắc nghiệm chọn hướng của con (xếp theo độ gần sở thích).
+      try {
+        const rawq = store().getItem('nl-dhqg-qz');
+        const q = rawq ? JSON.parse(rawq) : null;
+        if (q && Array.isArray(q.r) && st.quizKey !== String(q.t)) {
+          const g = await bridge().progressSettings({ code, quiz: q.r.slice(0, 5) });
+          if (g.ok) { st.quizKey = String(q.t); writeState(st); }
+        }
+      } catch (e) { /* bỏ qua */ }
       const r = await bridge().progressPush({ code, days: aggregate(data.attempts), usage: window.VungUsage ? window.VungUsage.list() : [] });
       if (r.ok) { st.lastOk = Date.now(); writeState(st); }
       else if (r.error && /chưa bật/i.test(r.error)) { st.enabled = false; writeState(st); } // phụ huynh đã tắt ở nơi khác
