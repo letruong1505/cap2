@@ -26,6 +26,7 @@
     ['bai', 'Bài học'],
     ['de', 'Luyện đề'],
     ['bao-cao', 'Báo cáo'],
+    ['truong', 'Chọn trường'],
   ];
 
   const state = { tab: 'chon', picked: loadPicked() };
@@ -108,8 +109,16 @@
     return h('section', { class: 'thpt-card thpt-placeholder' }, h('p', {}, text));
   }
 
+  function panelTruong() {
+    if (state.picked.length < 2 || !window.ThptSchool) {
+      return h('section', { class: 'thpt-card' }, h('p', { class: 'muted' }, 'Hãy chọn 2 môn tự chọn ở bước "Chọn tổ hợp" để xem gợi ý trường và ngành.'));
+    }
+    return window.ThptSchool.panel([...state.picked], nameOf);
+  }
+
   function body() {
     if (state.tab === 'chon') return panelChon();
+    if (state.tab === 'truong') return panelTruong();
     if (state.tab === 'mon') return panelMon();
     if (state.tab === 'bai') return placeholder('Bài học theo môn đang được biên soạn. Mỗi bài sẽ có tóm tắt kiến thức, ví dụ mẫu và bài tập ngắn.');
     if (state.tab === 'de') return placeholder('Đề luyện đang được biên soạn: Đề theo môn và đề tổng hợp theo tổ hợp, có chế độ làm bài tính giờ.');

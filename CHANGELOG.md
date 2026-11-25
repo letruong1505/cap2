@@ -1,7 +1,9 @@
 ## Bản mới
-- Phụ huynh (Windows): thông báo "Bạn đang dùng bản mới nhất" tự ẩn sau 5 giây; bỏ nút "Kiểm tra bản mới" (app vẫn tự kiểm tra ngầm)
+- Ôn thi THPT: thêm tab "Chọn trường" (nhập điểm 4 môn, tính điểm xét tuyển theo khối có cộng điểm ưu tiên, gợi ý ngành An toàn / Cân nhắc / Thử sức theo điểm chuẩn 2026, lọc theo miền Bắc - Trung - Nam)
+- Android: bản này yêu cầu cài apk mới
 
 ## Các bản trước
+- Phụ huynh (Windows): thông báo "Bạn đang dùng bản mới nhất" tự ẩn sau 5 giây; bỏ nút "Kiểm tra bản mới" (app vẫn tự kiểm tra ngầm)
 - Phụ huynh (Windows): cập nhật bản mới không còn mất thông tin con (mã đơn, SĐT), không phải nhập lại
 - Sửa lỗi: làm lại bài từ mục "Bài cần làm lại" rồi bấm "Quay lại" bị kẹt, không về được trang chủ; nay về đúng màn hình đã bấm và làm mới danh sách
 - Android: bản này yêu cầu cài apk mới
