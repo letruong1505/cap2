@@ -98,26 +98,41 @@ function cleanQuiz(input) {
   }
   return out;
 }
-// Dòng cũ lưu mảng mã nhóm; dòng mới lưu { ids, quiz }.
+// Bài cần ôn lại và các lần con làm lại: chỉ nhận chữ ngắn và số đã giới hạn, tối đa 12 dòng mỗi loại.
+const cleanText = (v, n) => String(v == null ? '' : v).replace(/[\u0000-\u001f<>]/g, '').slice(0, n);
+function cleanRedo(input) {
+  if (!input || typeof input !== 'object') return null;
+  const row = (x) => {
+    if (!x || typeof x.subject !== 'string' || !/^[a-z0-9_]{1,24}$/.test(x.subject)) return null;
+    const grade = Math.round(Number(x.grade)); const t = Math.round(Number(x.t));
+    if (!(grade >= 1 && grade <= 12) || !Number.isFinite(t) || t <= 0) return null;
+    return { subject: x.subject, grade, lesson: cleanText(x.lesson, 120), chapter: cleanText(x.chapter, 120), t };
+  };
+  const pc = (v) => clampInt(v, 0, 100, 0);
+  const pending = (Array.isArray(input.pending) ? input.pending : []).map((x) => { const r = row(x); return r && { ...r, pct: pc(x.pct), need: pc(x.need) }; }).filter(Boolean).slice(0, 12);
+  const done = (Array.isArray(input.done) ? input.done : []).map((x) => { const r = row(x); return r && { ...r, from: pc(x.from), to: pc(x.to), passed: x.passed === true }; }).filter(Boolean).slice(0, 12);
+  return { pending, done };
+}
+// Dòng cũ lưu mảng mã nhóm; dòng mới lưu { ids, quiz, redo }.
 function parseOri(raw) {
   let v = null;
   try { v = JSON.parse(raw); } catch (e) { v = null; }
   if (Array.isArray(v)) v = { ids: v };
-  return { ids: cleanOrientation(v && v.ids) || [], quiz: cleanQuiz(v && v.quiz) || [] };
+  return { ids: cleanOrientation(v && v.ids) || [], quiz: cleanQuiz(v && v.quiz) || [], redo: cleanRedo(v && v.redo) };
 }
 async function orientationOf(db, code) {
   await ensureOri(db);
   const r = await db.prepare('SELECT data, updated_at FROM progress_orientation WHERE code = ?1').bind(code).first();
   if (!r) return null;
   const d = parseOri(r.data);
-  return d.ids.length || d.quiz.length ? { ...d, at: r.updated_at } : null;
+  return d.ids.length || d.quiz.length || d.redo ? { ...d, at: r.updated_at } : null;
 }
-async function saveOrientation(db, code, ids, quiz, now) {
+async function saveOrientation(db, code, ids, quiz, redo, now) {
   await ensureOri(db);
   const r = await db.prepare('SELECT data FROM progress_orientation WHERE code = ?1').bind(code).first();
-  const cur = r ? parseOri(r.data) : { ids: [], quiz: [] };
-  const next = { ids: ids || cur.ids, quiz: quiz || cur.quiz };
-  if (!next.ids.length && !next.quiz.length) { await db.prepare('DELETE FROM progress_orientation WHERE code = ?1').bind(code).run(); return; }
+  const cur = r ? parseOri(r.data) : { ids: [], quiz: [], redo: null };
+  const next = { ids: ids || cur.ids, quiz: quiz || cur.quiz, redo: redo || cur.redo };
+  if (!next.ids.length && !next.quiz.length && !next.redo) { await db.prepare('DELETE FROM progress_orientation WHERE code = ?1').bind(code).run(); return; }
   await db.prepare('INSERT INTO progress_orientation (code, data, updated_at) VALUES (?1, ?2, ?3) ON CONFLICT(code) DO UPDATE SET data = ?2, updated_at = ?3').bind(code, JSON.stringify(next), nowIso(now)).run();
 }
 async function timetableOf(db, code) {
@@ -155,8 +170,8 @@ export async function progressSettings(db, input, now = new Date()) {
   if (rw) {
     await db.prepare('INSERT INTO progress_reward (code, data, updated_at) VALUES (?1, ?2, ?3) ON CONFLICT(code) DO UPDATE SET data = ?2, updated_at = ?3').bind(o.code, JSON.stringify(rw), nowIso(now)).run();
   }
-  const ori = cleanOrientation(input.orientation); const qz = cleanQuiz(input.quiz);
-  if (ori || qz) await saveOrientation(db, o.code, ori, qz, now);
+  const ori = cleanOrientation(input.orientation); const qz = cleanQuiz(input.quiz); const rd = cleanRedo(input.redo);
+  if (ori || qz || rd) await saveOrientation(db, o.code, ori, qz, rd, now);
   const tt = cleanTimetable(input.timetable);
   if (tt) {
     await db.prepare('INSERT INTO progress_timetable (code, data, updated_at) VALUES (?1, ?2, ?3) ON CONFLICT(code) DO UPDATE SET data = ?2, updated_at = ?3').bind(o.code, JSON.stringify(tt), nowIso(now)).run();
@@ -253,14 +268,15 @@ export async function progressView(db, catalog, input, now = new Date()) {
     const gs3 = JSON.parse(r.items).map((id) => /^van-hoa-(\d+)$/.exec(id)).filter(Boolean).map((m) => Number(m[1]));
     timetables.push({ code: r.code, grades: gs3, label: gs3.map((g) => (byGrade.get(g) || 'Lớp ' + g)).join(', '), data: tt });
   }
-  const orientations = [];
+  const orientations = []; const redos = [];
   for (const r of orders) {
     const oc = await orientationOf(db, r.code);
     if (!oc) continue;
     const gs4 = JSON.parse(r.items).map((id) => /^van-hoa-(\d+)$/.exec(id)).filter(Boolean).map((m) => Number(m[1]));
     orientations.push({ code: r.code, grades: gs4, label: gs4.map((g) => (byGrade.get(g) || 'Lớp ' + g)).join(', '), ids: oc.ids, quiz: oc.quiz, at: oc.at });
+    if (oc.redo) redos.push({ code: r.code, grades: gs4, label: gs4.map((g) => (byGrade.get(g) || 'Lớp ' + g)).join(', '), pending: oc.redo.pending, done: oc.redo.done, at: oc.at });
   }
-  const base = { timetables, orientations, code: o.code, codes, name: o.name, courses, enabled, goals: gs ? { daily: gs.goal_daily, weekend: (gx && gx.goal_weekend) || 80, weekly: gs.goal_weekly, ...(await passOf(db, gs.code)) } : null, lastSync, reward: gs ? await rewardOf(db, gs.code) : null, rewards };
+  const base = { timetables, orientations, redos, code: o.code, codes, name: o.name, courses, enabled, goals: gs ? { daily: gs.goal_daily, weekend: (gx && gx.goal_weekend) || 80, weekly: gs.goal_weekly, ...(await passOf(db, gs.code)) } : null, lastSync, reward: gs ? await rewardOf(db, gs.code) : null, rewards };
   if (!enabled) return { ...base, rows: [] };
 
   const today = now.toISOString().slice(0, 10);

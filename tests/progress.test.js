@@ -249,3 +249,30 @@ test('làm lại bài: thứ tự câu hỏi và vị trí đáp án khác lư�
   }
   assert.ok(seen.size > 20);
 });
+
+test('tóm tắt ôn lại cho phụ huynh: bài đang cần ôn, và lần làm lại bài trước đó không đạt (kèm % trước và sau)', () => {
+  const P2 = require('../renderer/progress.js');
+  const now = new Date(2026, 10, 25, 10, 0, 0).getTime();
+  const data = P2.load(null);
+  const at = (lessonId, subject, correct, total, t) => data.attempts.push({ t, subject, grade: 8, lessonId, lesson: lessonId, chapter: 'C', correct, total });
+  at('toan/a', 'toan', 5, 10, now - 3 * DAY);   // 50% chưa đạt
+  at('toan/a', 'toan', 9, 10, now - 1 * DAY + 3600000); // làm lại 90% đạt, muộn hơn sinh/b
+  at('sinh/b', 'sinh', 6, 10, now - 2 * DAY);   // 60% chưa đạt
+  at('sinh/b', 'sinh', 7, 10, now - 1 * DAY);   // làm lại 70% vẫn chưa đạt
+  at('ly/c', 'ly', 9, 10, now - 1 * DAY);       // đạt ngay, không phải ôn
+  at('hoa/d', 'hoa', 3, 10, now - 40 * DAY);    // quá 30 ngày
+  at('hoa/d', 'hoa', 8, 10, now - 39 * DAY);
+  const r = P2.redoSummary(data, now);
+  assert.deepEqual(r.pending.map((x) => x.lesson), ['sinh/b', 'hoa/d'].filter((x) => x === 'sinh/b'));
+  assert.equal(r.pending[0].pct, 70);
+  assert.deepEqual(r.done.map((x) => [x.lesson, x.from, x.to, x.passed]), [['toan/a', 50, 90, true], ['sinh/b', 60, 70, false]]);
+});
+
+test('máy con gửi tóm tắt ôn lại, bridge exe và apk cho phép, app Phụ huynh có màn hình xem', () => {
+  const fs = require('node:fs'); const path = require('node:path');
+  const rd = (f) => fs.readFileSync(path.join(__dirname, '..', f), 'utf8');
+  assert.match(rd('renderer/progress-sync.js'), /redoSummary/);
+  for (const f of ['main/orders.js', 'mobile/bridge/api.js']) assert.match(rd(f), /redo:/);
+  assert.match(rd('parent/index.html'), /id="go-redo"/); assert.match(rd('parent/index.html'), /id="redo"/);
+  assert.match(rd('parent/parent.js'), /'redo'/);
+});

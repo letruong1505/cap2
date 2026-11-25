@@ -154,6 +154,16 @@
           if (g.ok) { st.quizKey = String(q.t); writeState(st); }
         }
       } catch (e) { /* bỏ qua */ }
+      // Bài cần ôn lại và các lần con chủ động làm lại: để phụ huynh biết con đã học lại kiến thức.
+      try {
+        const rd = P.redoSummary(data, Date.now());
+        const rkey = JSON.stringify({ v: 1, rd });
+        const empty = !rd.pending.length && !rd.done.length;
+        if (st.redoKey !== rkey && !(st.redoKey === undefined && empty)) {
+          const g = await bridge().progressSettings({ code, redo: rd });
+          if (g.ok) { st.redoKey = rkey; writeState(st); }
+        }
+      } catch (e) { /* bỏ qua */ }
       const r = await bridge().progressPush({ code, days: aggregate(data.attempts), usage: window.VungUsage ? window.VungUsage.list() : [] });
       if (r.ok) { st.lastOk = Date.now(); writeState(st); }
       else if (r.error && /chưa bật/i.test(r.error)) { st.enabled = false; writeState(st); } // phụ huynh đã tắt ở nơi khác

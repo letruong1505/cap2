@@ -130,6 +130,26 @@
     })).filter((x) => x.pct < x.need).sort((a, b) => b.t - a.t).slice(0, 12);
   }
 
+  /* Tóm tắt để phụ huynh biết: bài đang cần ôn lại (lần làm gần nhất chưa đạt) và các lần con làm lại bài đã không đạt trước đó
+     (trong 30 ngày, mới nhất trước, tối đa 12), kèm % trước và sau để thấy con có tiến bộ không. */
+  function redoSummary(data, now) {
+    now = now == null ? Date.now() : now;
+    const pct = (a) => Math.round((100 * a.correct) / a.total);
+    const byLesson = {};
+    (data.attempts || []).filter((a) => a.total > 0 && a.lessonId).sort((a, b) => a.t - b.t).forEach((a) => { (byLesson[a.lessonId] = byLesson[a.lessonId] || []).push(a); });
+    const done = [];
+    Object.values(byLesson).forEach((list) => {
+      for (let i = 1; i < list.length; i++) {
+        const prev = list[i - 1]; const a = list[i];
+        if (pct(prev) >= passFor(data.goals, prev.subject) || a.t < now - 30 * DAY) continue;
+        done.push({ subject: a.subject, grade: a.grade, lesson: a.lesson, chapter: a.chapter || '', from: pct(prev), to: pct(a), passed: pct(a) >= passFor(data.goals, a.subject), t: a.t });
+      }
+    });
+    done.sort((x, y) => y.t - x.t);
+    const pending = redoList(data, 0).map((x) => ({ subject: x.subject, grade: x.grade, lesson: x.lesson, chapter: x.chapter, pct: x.pct, need: x.need, t: x.t }));
+    return { pending, done: done.slice(0, 12) };
+  }
+
   function load(storage) {
     try {
       const raw = storage && storage.getItem(KEY);
@@ -314,5 +334,5 @@
     };
   }
 
-  return { redoList, KEY, INTERVALS, DEFAULT_GOALS, DEFAULT_PASS, goalFor, passFor, markPass, cleanPassBy, score10, points, setGoals, cleanReward, setReward, weekStart, weekCount, evaluate, markShown, giveReward, rewardState, progress, report, load, save, recordAttempt, grade, due, weekly, slimItem };
+  return { redoSummary, redoList, KEY, INTERVALS, DEFAULT_GOALS, DEFAULT_PASS, goalFor, passFor, markPass, cleanPassBy, score10, points, setGoals, cleanReward, setReward, weekStart, weekCount, evaluate, markShown, giveReward, rewardState, progress, report, load, save, recordAttempt, grade, due, weekly, slimItem };
 });

@@ -1,7 +1,7 @@
 // Điều hướng app Phụ huynh: màn hình chính, xem con học, thời khóa biểu (đồng bộ từ máy của con), liên hệ, khóa học và giá.
 (function () {
   'use strict';
-  const SECTIONS = ['home', 'parent-view', 'timetable', 'orient', 'advice', 'purchase', 'buy', 'digest'];
+  const SECTIONS = ['home', 'parent-view', 'timetable', 'orient', 'redo', 'advice', 'purchase', 'buy', 'digest'];
   const NAMES = { toan: 'Toán', van: 'Ngữ văn', anh: 'Tiếng Anh', ly: 'Vật lí', hoa: 'Hoá học', sinh: 'Sinh học', lichsu: 'Lịch sử', diali: 'Địa lí', gdktpl: 'Giáo dục KT&PL', tin: 'Tin học' };
   const T = window.VungTimetable;
   const $ = (id) => document.getElementById(id);
@@ -94,6 +94,48 @@
       });
     });
   }
+
+  /* Môn con cần ôn lại: bài chưa đạt ngưỡng, và các lần con làm lại (có % trước và sau). */
+  const dmy = (t) => { const d = new Date(t); return d.getDate() + '/' + (d.getMonth() + 1); };
+  const subj = (s) => NAMES[s] || s;
+  function renderRedo(res) {
+    const box = $('rd-view'); box.replaceChildren();
+    if (!res.ok) { $('rd-msg').textContent = res.error; return; }
+    const list = (res.data && res.data.redos) || [];
+    if (!list.length) {
+      $('rd-msg').textContent = res.data && res.data.enabled ? 'Chưa có dữ liệu. Con làm bài trên app học bản mới, dữ liệu sẽ về đây sau ít phút.' : 'Chưa có dữ liệu. Trên app học của con, bật "Cho phụ huynh xem kết quả".';
+      return;
+    }
+    const at = list.reduce((m, x) => (x.at > m ? x.at : m), '');
+    $('rd-msg').textContent = 'Cập nhật lúc ' + new Date(at).toLocaleString('vi-VN', { hour: '2-digit', minute: '2-digit', day: '2-digit', month: '2-digit' }) + '.';
+    const ul = (a) => h('ul', {}, ...a.map((t) => h('li', {}, t)));
+    list.forEach((x) => {
+      if (list.length > 1 && x.label) box.append(h('p', { class: 'meta' }, 'Bé học: ' + x.label));
+      const week = x.done.filter((d) => d.t >= Date.now() - 7 * 86400000);
+      box.append(h('div', { class: 'goal-box' }, h('h2', {}, 'Con đã chủ động ôn lại'),
+        x.done.length
+          ? h('div', {}, h('p', { class: 'meta' }, week.length ? 'Trong 7 ngày qua con đã làm lại ' + week.length + ' bài chưa đạt.' : 'Các lần con làm lại trong 30 ngày qua:'),
+            ul(x.done.map((d) => dmy(d.t) + ' · ' + subj(d.subject) + ' lớp ' + d.grade + ' · ' + d.lesson + ': ' + d.from + '% → ' + d.to + '% (' + (d.passed ? 'đạt' : 'chưa đạt') + ')')))
+          : h('p', { class: 'meta' }, 'Chưa có lần làm lại nào trong 30 ngày qua.')));
+      const by = {};
+      x.pending.forEach((p) => { (by[p.subject + '|' + p.grade] = by[p.subject + '|' + p.grade] || []).push(p); });
+      const keys = Object.keys(by);
+      box.append(h('div', { class: 'goal-box' }, h('h2', {}, 'Còn cần ôn lại'),
+        keys.length
+          ? h('div', {}, ...keys.map((k) => { const [s, g] = k.split('|'); return h('div', {}, h('p', {}, subj(s) + ' lớp ' + g + ': ' + by[k].length + ' bài'),
+              ul(by[k].map((p) => p.lesson + ' (làm gần nhất ' + p.pct + '%, ngưỡng ' + p.need + '%)'))); }))
+          : h('p', { class: 'meta' }, 'Con không còn bài nào dưới ngưỡng đạt. 👍')));
+    });
+  }
+  async function openRedo() {
+    show('redo');
+    $('rd-msg').textContent = 'Đang cập nhật...';
+    $('rd-view').replaceChildren();
+    const c = creds();
+    if (!c) { $('rd-msg').textContent = 'Hãy vào "Xem con học" và nhập mã đơn, số điện thoại trước.'; return; }
+    const r = await window.vungBai.progressView({ code: c.code, phone: c.phone, from: '', to: '', grade: 0 });
+    renderRedo(r.ok ? r : { ok: false, error: r.offline ? 'Không có mạng. Thử lại sau.' : (r.error || 'Không đọc được dữ liệu.') });
+  }
   async function openOrient() {
     show('orient');
     $('or-msg').textContent = 'Đang cập nhật...';
@@ -151,6 +193,7 @@
   $('go-progress').addEventListener('click', () => { window.VungProgressUI.renderParentView($('parent-body')); show('parent-view'); });
   $('go-timetable').addEventListener('click', openTimetable);
   $('go-orient').addEventListener('click', openOrient);
+  $('go-redo').addEventListener('click', openRedo);
   $('tt-refresh').addEventListener('click', openTimetable);
   $('go-advice').addEventListener('click', () => show('advice'));
   $('go-buy').addEventListener('click', openCourses);

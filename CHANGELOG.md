@@ -1,9 +1,11 @@
 ## Bản mới
-- Bài chưa đạt ngưỡng: màn hình chính và màn hình lớp hiện mục "Bài cần làm lại" (bấm để làm lại ngay); mỗi lần làm lại, thứ tự câu hỏi và vị trí đáp án đều xáo mới và khác lượt trước
-- Báo cáo (máy con và app Phụ huynh): thêm khung "Môn chưa đạt" kèm gợi ý cho con làm lại
+- App Phụ huynh: thêm "Môn con cần ôn lại" (bài chưa đạt ngưỡng theo từng môn) và "Con đã chủ động ôn lại" (các lần con làm lại, kèm % trước và sau); máy con tự gửi lên sau mỗi lần làm bài
 - Android: bản này yêu cầu cài apk mới
 
 ## Các bản trước
+- Bài chưa đạt ngưỡng: màn hình chính và màn hình lớp hiện mục "Bài cần làm lại" (bấm để làm lại ngay); mỗi lần làm lại, thứ tự câu hỏi và vị trí đáp án đều xáo mới và khác lượt trước
+- Báo cáo (máy con và app Phụ huynh): thêm khung "Môn chưa đạt" kèm gợi ý cho con làm lại
+- Android: bản này yêu cầu cài apk mới
 - Trắc nghiệm chọn hướng: ngân hàng 20 câu, mỗi lần làm bốc ngẫu nhiên 10 câu và xáo thứ tự đáp án
 - Android: bản này yêu cầu cài apk mới
 - Định hướng công nghệ quốc gia: thêm tab "Trắc nghiệm chọn hướng" (11 câu) gợi ý 3 nhóm hợp sở thích; phụ huynh xem được hướng con chọn và kết quả trắc nghiệm
