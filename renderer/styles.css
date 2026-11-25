@@ -1196,3 +1196,20 @@ button.tt-chip { cursor: pointer; }
 .redo-box { border-color: #f0c9c9; background: #fff8f7; }
 .redo-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 6px 0; border-top: 1px solid #f2dede; }
 .redo-row:first-of-type { border-top: 0; }
+
+/* Chọn trường (Ôn thi THPT) */
+.sch-inputs { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; margin: 12px 0; }
+.sch-field { display: flex; flex-direction: column; gap: 4px; font-size: 14px; }
+.sch-field input, .sch-field select { font: inherit; font-size: 16px; padding: 8px 10px; border: 1px solid var(--rule); border-radius: 10px; background: #fff; }
+.sch-field input:focus-visible, .sch-field select:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; }
+.sch-regions { margin: 8px 0; }
+.sch-meta { font-size: 14px; margin: 8px 0 12px; }
+.sch-band { margin: 18px 0 8px; padding-left: 12px; border-left: 4px solid var(--rule); }
+.sch-band h3 { margin: 0 0 4px; font-size: 17px; }
+.sch-an-toan { border-left-color: #2e8b57; }
+.sch-can-nhac { border-left-color: #d4a017; }
+.sch-thu-suc { border-left-color: #c0504d; }
+.sch-row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; padding: 8px 0; border-bottom: 1px solid var(--rule); }
+.sch-main { display: flex; flex-direction: column; min-width: 220px; flex: 1 1 260px; }
+.sch-nums { font-size: 14px; white-space: nowrap; align-self: center; }
+@media (max-width: 560px) { .sch-nums { white-space: normal; } }
