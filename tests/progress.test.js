@@ -211,3 +211,41 @@ test('phần thưởng theo tuần: đếm ngày đạt thứ 2–CN, chốt th�
   assert.equal(P.setReward(d2, { on: false }).reward.from, '');
   assert.equal(P.cleanReward({ days: 99, pct: 5, text: 'x'.repeat(200) }).days, 7);
 });
+
+test('bài cần làm lại: chỉ lần làm gần nhất chưa đạt ngưỡng, theo ngưỡng riêng từng môn', () => {
+  const P = require('../renderer/progress.js');
+  const data = P.load(null);
+  const at = (lessonId, subject, grade, correct, total, t) => data.attempts.push({ t, subject, grade, lessonId, lesson: lessonId, chapter: '', correct, total });
+  at('toan/a', 'toan', 8, 6, 10, 1);   // 60% chưa đạt
+  at('toan/b', 'toan', 8, 6, 10, 2);   // 60%, rồi làm lại đạt
+  at('toan/b', 'toan', 8, 9, 10, 3);   // 90% đạt => không còn trong danh sách
+  at('sinh/c', 'sinh', 8, 7, 10, 4);   // 70% chưa đạt với ngưỡng 80
+  at('van/d', 'van', 9, 5, 10, 5);     // lớp khác
+  at('ly/e', 'ly', 8, 0, 0, 6);        // chưa có câu
+  let l = P.redoList(data, 8);
+  assert.deepEqual(l.map((x) => x.lessonId), ['sinh/c', 'toan/a']);
+  assert.equal(l[0].pct, 70); assert.equal(l[0].need, 80);
+  assert.equal(P.redoList(data, 0).length, 3);
+  data.goals.passBy = { sinh: 70 };      // ngưỡng riêng 70% => sinh/c đạt
+  l = P.redoList(data, 8);
+  assert.deepEqual(l.map((x) => x.lessonId), ['toan/a']);
+});
+
+test('làm lại bài: thứ tự câu hỏi và vị trí đáp án khác lượt trước', () => {
+  const fs = require('node:fs'); const vm = require('node:vm');
+  const src = fs.readFileSync(require('node:path').join(__dirname, '../renderer/app.js'), 'utf8');
+  const grab = (re) => re.exec(src)[0];
+  const code = [grab(/function shuffle\(arr\) \{[\s\S]*?\n\}\n/), grab(/const LEVEL_ORDER[^\n]*\n/), grab(/function orderedQuestionIndexes\(lesson\) \{[\s\S]*?\n\}\n/), grab(/const lastOrders = \{\};\nfunction newAttempt\(lesson\) \{[\s\S]*?\n\}\n/)].join('\n');
+  const ctx = {}; vm.runInNewContext(code + '; this.newAttempt = newAttempt;', ctx);
+  const items = Array.from({ length: 6 }, (_, i) => ({ id: 'q' + i, level: 'Hiểu', type: 'mcq', choices: ['A', 'B', 'C', 'D'] }));
+  const lesson = { items };
+  let prev = JSON.stringify(ctx.newAttempt(lesson).questions) + 'x';
+  const seen = new Set();
+  for (let i = 0; i < 30; i++) {
+    const a = ctx.newAttempt(lesson);
+    const sig = JSON.stringify({ q: a.questions, o: a.order });
+    assert.notEqual(sig, prev); prev = sig; seen.add(sig);
+    items.forEach((it) => assert.deepEqual([...a.order[it.id]].sort(), [0, 1, 2, 3]));
+  }
+  assert.ok(seen.size > 20);
+});

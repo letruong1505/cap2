@@ -116,6 +116,20 @@
     return wd === 0 || wd === 6 ? (g.weekend || DEFAULT_GOALS.weekend) : (g.daily || DEFAULT_GOALS.daily);
   }
 
+  /* Bài cần làm lại: lần làm gần nhất của bài đó chưa đạt ngưỡng của môn (mới nhất trước, tối đa 12). grade: 0 là mọi lớp. */
+  function redoList(data, grade) {
+    const last = {};
+    (data.attempts || []).forEach((a) => {
+      if (grade && a.grade !== grade) return;
+      if (!a.total) return;
+      if (!last[a.lessonId] || a.t >= last[a.lessonId].t) last[a.lessonId] = a;
+    });
+    return Object.values(last).map((a) => ({
+      lessonId: a.lessonId, subject: a.subject, grade: a.grade, lesson: a.lesson, chapter: a.chapter || '', t: a.t,
+      pct: Math.round((100 * a.correct) / a.total), need: passFor(data.goals, a.subject),
+    })).filter((x) => x.pct < x.need).sort((a, b) => b.t - a.t).slice(0, 12);
+  }
+
   function load(storage) {
     try {
       const raw = storage && storage.getItem(KEY);
@@ -300,5 +314,5 @@
     };
   }
 
-  return { KEY, INTERVALS, DEFAULT_GOALS, DEFAULT_PASS, goalFor, passFor, markPass, cleanPassBy, score10, points, setGoals, cleanReward, setReward, weekStart, weekCount, evaluate, markShown, giveReward, rewardState, progress, report, load, save, recordAttempt, grade, due, weekly, slimItem };
+  return { redoList, KEY, INTERVALS, DEFAULT_GOALS, DEFAULT_PASS, goalFor, passFor, markPass, cleanPassBy, score10, points, setGoals, cleanReward, setReward, weekStart, weekCount, evaluate, markShown, giveReward, rewardState, progress, report, load, save, recordAttempt, grade, due, weekly, slimItem };
 });

@@ -541,6 +541,7 @@
     if (r.days.length > 1 || r.total) {
       body.append(h('h2', { class: 'rep-h' }, 'Biểu đồ theo ngày'), h('div', { class: 'goal-box' }, dayChart(r), h('p', { class: 'meta' }, 'Xanh: Câu đúng · Đỏ: Câu sai')), h('h2', { class: 'rep-h' }, r.days.length <= 7 ? 'Lịch tuần' : 'Lịch học'), calendar(r, today));
     }
+    { const fb = failBox(r); if (fb) body.append(fb); }
     if (r.subjects.length) {
       const box = h('div', { class: 'goal-box' }, h('h2', {}, 'Theo môn học'));
       r.subjects.forEach((s) => box.append(h('p', {}, `${subjName(s.subject)} lớp ${s.grade}: ${s.lessons} bài · `, h('strong', { class: s.passed ? 'pass-ok' : 'pass-bad' }, s.passed ? `Đạt (${s.pct}% ≥ ${s.need}%)` : `Không đạt (${s.pct}% < ${s.need}%)`)), qualityBar(s.correct, s.total, true)));
@@ -653,6 +654,7 @@
         body.append(h('div', { class: 'goal-box' }, h('h2', {}, 'Chất lượng làm bài'), qualityBar(r.correct, r.total, true)));
         const ub = usageBox(r); if (ub) body.append(ub);
         if (r.days.length > 1 || r.total) body.append(h('h2', { class: 'rep-h' }, 'Biểu đồ theo ngày'), h('div', { class: 'goal-box' }, dayChart(r), h('p', { class: 'meta' }, 'Xanh: Câu đúng · Đỏ: Câu sai')), h('h2', { class: 'rep-h' }, r.days.length <= 7 ? 'Lịch tuần' : 'Lịch học'), calendar(r, today));
+        { const fb = failBox(r); if (fb) body.append(fb); }
         if (r.subjects.length) {
           const box = h('div', { class: 'goal-box' }, h('h2', {}, 'Theo môn học'));
           r.subjects.forEach((s) => box.append(h('p', {}, `${subjName(s.subject)} lớp ${s.grade}: ${s.lessons} bài · `, h('strong', { class: s.passed ? 'pass-ok' : 'pass-bad' }, s.passed ? `Đạt (${s.pct}% ≥ ${s.need}%)` : `Không đạt (${s.pct}% < ${s.need}%)`)), qualityBar(s.correct, s.total, true)));
@@ -668,6 +670,32 @@
     });
   }
 
+  /* Bài cần làm lại: bấm mở lại bài; mỗi lần mở bài, thứ tự câu hỏi và vị trí đáp án được xáo lại. */
+  function renderRedo(box, grade) {
+    if (!box) return;
+    box.replaceChildren();
+    const list = P.redoList(P.load(store()), grade || 0);
+    if (!list.length) return;
+    const card = h('div', { class: 'goal-box redo-box' }, h('h2', {}, `Bài cần làm lại (${list.length})`),
+      h('p', { class: 'meta' }, 'Lần làm gần nhất của các bài này chưa đạt ngưỡng. Làm lại thì thứ tự câu hỏi và vị trí đáp án được xáo mới.'));
+    list.forEach((x) => {
+      const go = h('button', { type: 'button' }, 'Làm lại bài');
+      go.addEventListener('click', () => { if (typeof openLesson === 'function') openLesson(x.lessonId); });
+      card.append(h('div', { class: 'redo-row' },
+        h('span', {}, `${subjName(x.subject)} lớp ${x.grade} · ${x.lesson}: `, h('strong', { class: 'pass-bad' }, `${x.pct}% (ngưỡng ${x.need}%)`)), ' ', go));
+    });
+    box.append(card);
+  }
+
+  /* Ghi chú đầu phần "Theo môn học": những môn chưa đạt trong khoảng đang xem. */
+  function failBox(r) {
+    const bad = (r.subjects || []).filter((s) => s.total > 0 && !s.passed);
+    if (!bad.length) return null;
+    return h('div', { class: 'goal-box redo-box' }, h('h2', {}, 'Môn chưa đạt'),
+      h('ul', { class: 'report-list' }, bad.map((s) => h('li', {}, `${subjName(s.subject)} lớp ${s.grade}: ${s.pct}% đúng, ngưỡng ${s.need}%`))),
+      h('p', { class: 'meta' }, 'Gợi ý: cho con làm lại các bài chưa đạt. Mỗi lần làm lại, thứ tự câu hỏi và vị trí đáp án được xáo mới.'));
+  }
+
   function refreshBadge() {
     const set = (id, label, n) => {
       const b = document.getElementById(id);
@@ -675,8 +703,10 @@
     };
     set('open-review', 'Sổ câu sai', dueCount());
     renderGoals(document.getElementById('goal-box'), 0);
+    renderRedo(document.getElementById('redo-box'), 0);
     const g = window.VungProgressUI && window.VungProgressUI.scope;
     renderGoals(document.getElementById('goal-box-grade'), g || 0);
+    renderRedo(document.getElementById('redo-box-grade'), g || 0);
     if (g) set('open-review-grade', `Sổ câu sai lớp ${g}`, dueCount(g));
     checkReward();
   }
