@@ -1,7 +1,8 @@
 ## Bản mới
-- Phụ huynh (Windows): cập nhật bản mới không còn mất thông tin con (mã đơn, SĐT), không phải nhập lại
+- Phụ huynh (Windows): thông báo "Bạn đang dùng bản mới nhất" tự ẩn sau 5 giây; bỏ nút "Kiểm tra bản mới" (app vẫn tự kiểm tra ngầm)
 
 ## Các bản trước
+- Phụ huynh (Windows): cập nhật bản mới không còn mất thông tin con (mã đơn, SĐT), không phải nhập lại
 - Sửa lỗi: làm lại bài từ mục "Bài cần làm lại" rồi bấm "Quay lại" bị kẹt, không về được trang chủ; nay về đúng màn hình đã bấm và làm mới danh sách
 - Android: bản này yêu cầu cài apk mới
 - App Phụ huynh: thêm "Môn con cần ôn lại" (bài chưa đạt ngưỡng theo từng môn) và "Con đã chủ động ôn lại" (các lần con làm lại, kèm % trước và sau); máy con tự gửi lên sau mỗi lần làm bài
