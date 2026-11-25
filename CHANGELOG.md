@@ -1,5 +1,5 @@
 ## Bản mới
-- Phụ huynh (Windows): thông báo "Bạn đang dùng bản mới nhất" tự ẩn sau 5 giây
+- Phụ huynh (Windows): thông báo "Bạn đang dùng bản mới nhất" tự ẩn sau 5 giây; bỏ nút "Kiểm tra bản mới" (app vẫn tự kiểm tra ngầm)
 
 ## Các bản trước
 - Phụ huynh (Windows): cập nhật bản mới không còn mất thông tin con (mã đơn, SĐT), không phải nhập lại

@@ -54,7 +54,7 @@ test('app Phụ huynh bản Windows: bản sao dữ liệu ra tệp giữ lại 
 test('app Phụ huynh bản Windows: parent.js không ghi đè nhãn số bản, thanh cập nhật tự dựng nhãn và nút kiểm tra', () => {
   assert.match(fs.readFileSync(path.join(__dirname, '..', 'parent/parent.js'), 'utf8'), /window\.NL_MOBILE_CONFIG && !window\.NLDesktop\) v\.textContent/);
   const u = fs.readFileSync(path.join(__dirname, '..', 'parent/parent-update-desktop.js'), 'utf8');
-  assert.match(u, /Kiểm tra bản mới/); assert.match(u, /d\.version\(\)/);
+  assert.doesNotMatch(u, /Kiểm tra bản mới/); assert.match(u, /d\.version\(\)/);
 });
 
 test('bản sao dữ liệu phụ huynh có giữ mã đơn + SĐT của "Xem con học" (khóa vungbai.parentview.v1) qua cập nhật', () => {
