@@ -25,6 +25,7 @@
       <div class="launch-tools">
         <button type="button" id="go-progress">Xem con học (tiến độ, báo cáo, phần thưởng)</button>
         <button type="button" id="go-timetable">Thời khóa biểu và nhắc học</button>
+        <button type="button" id="go-redo">Môn con cần ôn lại</button>
         <button type="button" id="go-orient">Định hướng con đã chọn</button>
         <button type="button" id="go-advice">Liên hệ Nam Linh</button>
         <button type="button" id="go-buy">Khóa học và giá</button>
@@ -46,6 +47,14 @@
       <div class="tt-remind-row"><label><input type="checkbox" id="tt-remind-local" /> Nhắc trên điện thoại này</label></div>
       <button type="button" id="tt-refresh">Cập nhật từ máy của con</button>
       <p class="meta" id="tt-msg" role="status"></p>
+    </section>
+
+    <section id="redo" class="panel" hidden>
+      <button class="back-link" type="button" data-back>← Quay lại</button>
+      <h1>Môn con cần ôn lại</h1>
+      <p class="meta">Các bài con làm chưa đạt ngưỡng, và những lần con chủ động làm lại để học lại kiến thức.</p>
+      <div id="rd-view"></div>
+      <p class="meta" id="rd-msg" role="status"></p>
     </section>
 
     <section id="orient" class="panel" hidden>

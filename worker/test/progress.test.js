@@ -246,3 +246,26 @@ test('kết quả trắc nghiệm: gửi, phụ huynh xem; mã lạ bỏ, tối 
   await progressSettings(db, { ...dev(code), purge: true }, NOW);
   assert.equal((await view(db, code)).orientations.length, 0);
 });
+
+test('bài cần ôn lại và các lần con làm lại: máy con gửi, phụ huynh xem; dữ liệu lạ bị lọc, giữ nguyên hướng đã chọn', async () => {
+  const { db, code } = await setup();
+  await progressSettings(db, { ...dev(code), enabled: true }, NOW);
+  await progressSettings(db, { ...dev(code), orientation: ['so'] }, NOW);
+  const t = NOW.getTime();
+  await progressSettings(db, { ...dev(code), redo: {
+    pending: [{ subject: 'toan', grade: 8, lesson: 'Bài <b>A</b>', chapter: 'Chương 1', pct: 60, need: 80, t },
+      { subject: 'X Y', grade: 8, lesson: 'lạ', pct: 1, need: 80, t }, { subject: 'sinh', grade: 99, lesson: 'lạ', t }],
+    done: [{ subject: 'sinh', grade: 8, lesson: 'Bài B', from: 50, to: 90, passed: true, t }, { subject: 'sinh', grade: 8, lesson: 'Bài C', from: 40, to: 300, passed: 'yes', t }],
+  } }, NOW);
+  let v = await view(db, code);
+  assert.equal(v.redos.length, 1);
+  assert.deepEqual(v.redos[0].pending.map((x) => x.lesson), ['Bài bA/b']);
+  assert.deepEqual(v.redos[0].done.map((x) => [x.lesson, x.from, x.to, x.passed]), [['Bài B', 50, 90, true], ['Bài C', 40, 100, false]]);
+  assert.deepEqual(v.orientations[0].ids, ['so']);
+  // Gửi lại bản rỗng (con đã ôn hết): phụ huynh thấy không còn bài cần ôn
+  await progressSettings(db, { ...dev(code), redo: { pending: [], done: [] } }, NOW);
+  v = await view(db, code);
+  assert.equal(v.redos.length, 1); assert.equal(v.redos[0].pending.length, 0);
+  await progressSettings(db, { ...dev(code), purge: true }, NOW);
+  assert.equal((await view(db, code)).redos.length, 0);
+});
