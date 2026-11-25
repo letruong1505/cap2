@@ -4,11 +4,14 @@
   var bar = document.getElementById('update-bar');
   var d = window.NLDesktop;
   if (!bar || !d) return;
-  function say(text, btnText, onClick) {
+  var hideTimer = null;
+  function say(text, btnText, onClick, autoHideMs) {
+    if (hideTimer) { clearTimeout(hideTimer); hideTimer = null; }
     bar.replaceChildren();
     var s = document.createElement('span'); s.textContent = text; bar.append(s);
     if (btnText) { var b = document.createElement('button'); b.type = 'button'; b.textContent = btnText; b.addEventListener('click', onClick); bar.append(' ', b); }
     bar.hidden = false;
+    if (autoHideMs) hideTimer = setTimeout(function () { bar.hidden = true; hideTimer = null; }, autoHideMs);
   }
   var manual = false;
   function show(st) {
@@ -20,10 +23,10 @@
     });
     else if (st.state === 'downloading') say('Đang tải bản mới: ' + (st.percent | 0) + '%. Vui lòng chờ, đừng tắt app.');
     else if (st.state === 'ready') say('Đã tải xong bản ' + st.version + '.', 'Khởi động lại để cài', function () { d.installUpdate(); });
-    else if (manual && st.state === 'none') say('Bạn đang dùng bản mới nhất.');
+    else if (manual && st.state === 'none') say('Bạn đang dùng bản mới nhất.', null, null, 5000); // tự ẩn sau 5 giây
     else if (manual && st.state === 'error') say('Không kiểm tra được bản mới: ' + (st.error || 'lỗi không rõ') + '. Thử lại sau hoặc báo Nam Linh.');
     else if (manual && st.state === 'off') say('Bản này chưa bật tự cập nhật. Hãy cài lại từ file cài đặt mới nhất.');
-    else if (!manual || st.state === 'idle' || st.state === 'checking') bar.hidden = true;
+    else if (!manual || st.state === 'idle' || st.state === 'checking') { if (hideTimer) { clearTimeout(hideTimer); hideTimer = null; } bar.hidden = true; }
   }
   d.onUpdate(show);
   d.updateStatus().then(show);

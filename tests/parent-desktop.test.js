@@ -69,3 +69,9 @@ test('bản sao dữ liệu phụ huynh có giữ mã đơn + SĐT của "Xem co
   assert.match(boot, /k === 'vungbai\.parentview\.v1'/);
   assert.doesNotMatch(boot, /this === ls && \/\^nl-\//);
 });
+
+test('thông báo "Bạn đang dùng bản mới nhất" tự ẩn sau 5 giây', () => {
+  const src = fs.readFileSync(path.join(__dirname, '..', 'parent', 'parent-update-desktop.js'), 'utf8');
+  assert.match(src, /mới nhất\.', null, null, 5000\)/);
+  assert.match(src, /setTimeout\(function \(\) \{ bar\.hidden = true/);
+});
