@@ -276,3 +276,24 @@ test('máy con gửi tóm tắt ôn lại, bridge exe và apk cho phép, app Ph�
   assert.match(rd('parent/index.html'), /id="go-redo"/); assert.match(rd('parent/index.html'), /id="redo"/);
   assert.match(rd('parent/parent.js'), /'redo'/);
 });
+
+test('mở bài từ "Bài cần làm lại": Quay lại về đúng màn hình đã bấm, không về danh sách bài của môn chưa mở', () => {
+  const fs = require('node:fs'); const path = require('node:path'); const vm = require('node:vm');
+  const rd = (f) => fs.readFileSync(path.join(__dirname, '..', f), 'utf8');
+  const app = rd('renderer/app.js');
+  assert.match(app, /btn-back'\)\.addEventListener\('click', leaveLesson\)/);
+  assert.match(app, /async function openLesson\(relPath, mode = 'practice', back = null\)/);
+  assert.match(rd('renderer/progress-ui.js'), /openLesson\(x\.lessonId, 'practice', \(\) =>/);
+  // Chạy thật leaveLesson với các màn hình giả
+  const grab = (re) => re.exec(app)[0];
+  const code = grab(/let lessonBack = null;\nfunction leaveLesson\(\) \{[\s\S]*?\n\}\n/);
+  const calls = []; const crumb = { textContent: 'x' };
+  const ctx = { document: { getElementById: () => crumb }, showOnly: (id) => calls.push('only:' + id), showLaunch: () => calls.push('launch') };
+  vm.runInNewContext(code + '; this.set = (f) => { lessonBack = f; }; this.leave = leaveLesson;', ctx);
+  ctx.leave(); assert.deepEqual(calls, ['only:home']);                       // mở từ danh sách môn: như cũ
+  calls.length = 0; ctx.set(() => calls.push('custom')); ctx.leave(); ctx.leave();
+  assert.deepEqual(calls, ['custom', 'only:home']);                           // dùng một lần rồi trả về mặc định
+  calls.length = 0; ctx.set(() => { throw new Error('x'); }); ctx.leave();
+  assert.deepEqual(calls, ['launch']);                                        // lỗi thì vẫn về màn hình chính
+  assert.equal(crumb.textContent, '');
+});

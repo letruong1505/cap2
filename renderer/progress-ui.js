@@ -674,13 +674,19 @@
   function renderRedo(box, grade) {
     if (!box) return;
     box.replaceChildren();
-    const list = P.redoList(P.load(store()), grade || 0);
+    let list = [];
+    try { list = P.redoList(P.load(store()), grade || 0); } catch (e) { return; } // phần phụ, lỗi cũng không làm hỏng màn hình chính
     if (!list.length) return;
     const card = h('div', { class: 'goal-box redo-box' }, h('h2', {}, `Bài cần làm lại (${list.length})`),
       h('p', { class: 'meta' }, 'Lần làm gần nhất của các bài này chưa đạt ngưỡng. Làm lại thì thứ tự câu hỏi và vị trí đáp án được xáo mới.'));
     list.forEach((x) => {
       const go = h('button', { type: 'button' }, 'Làm lại bài');
-      go.addEventListener('click', () => { if (typeof openLesson === 'function') openLesson(x.lessonId); });
+      const sc = grade || 0; // màn hình đang đứng: lớp (danh sách môn) hoặc màn hình chính
+      go.addEventListener('click', () => {
+        if (typeof openLesson !== 'function') return;
+        // Làm xong bấm "Quay lại" thì về đúng màn hình này (không về danh sách bài của môn chưa mở) và làm mới danh sách.
+        openLesson(x.lessonId, 'practice', () => { if (sc && typeof showSubjects === 'function') showSubjects(sc); else showLaunch(); refreshBadge(); });
+      });
       card.append(h('div', { class: 'redo-row' },
         h('span', {}, `${subjName(x.subject)} lớp ${x.grade} · ${x.lesson}: `, h('strong', { class: 'pass-bad' }, `${x.pct}% (ngưỡng ${x.need}%)`)), ' ', go));
     });
