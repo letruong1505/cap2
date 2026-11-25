@@ -1,8 +1,10 @@
 ## Bản mới
-- Ôn thi THPT: thêm tab "Chọn trường" — điểm các môn tự tính từ kết quả luyện tập lớp 12 của em (không nhập tay), tính điểm xét tuyển theo khối có cộng điểm ưu tiên, gợi ý ngành An toàn / Cân nhắc / Thử sức theo điểm chuẩn 2026 của 22 trường, lọc theo miền Bắc - Trung - Nam
+- Phần thưởng tuần: tính từ Chủ nhật đến thứ Bảy; đủ số ngày thì thông báo thưởng ngay trong ngày thứ Bảy
 - Android: bản này yêu cầu cài apk mới
 
 ## Các bản trước
+- Ôn thi THPT: thêm tab "Chọn trường" — điểm các môn tự tính từ kết quả luyện tập lớp 12 của em (không nhập tay), tính điểm xét tuyển theo khối có cộng điểm ưu tiên, gợi ý ngành An toàn / Cân nhắc / Thử sức theo điểm chuẩn 2026 của 22 trường, lọc theo miền Bắc - Trung - Nam
+- Android: bản này yêu cầu cài apk mới
 - Phụ huynh (Windows): thông báo "Bạn đang dùng bản mới nhất" tự ẩn sau 5 giây; bỏ nút "Kiểm tra bản mới" (app vẫn tự kiểm tra ngầm)
 - Phụ huynh (Windows): cập nhật bản mới không còn mất thông tin con (mã đơn, SĐT), không phải nhập lại
 - Sửa lỗi: làm lại bài từ mục "Bài cần làm lại" rồi bấm "Quay lại" bị kẹt, không về được trang chủ; nay về đúng màn hình đã bấm và làm mới danh sách

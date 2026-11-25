@@ -180,7 +180,7 @@
     });
     wrap.append(
       h('p', { class: 'goal-set' }, h('label', {}, on, ' Bật phần thưởng')),
-      h('p', { class: 'goal-set' }, 'Mỗi tuần (thứ 2 đến chủ nhật) đạt ít nhất ', days, ' ngày, mỗi ngày đúng từ ', pct, '% số câu → thưởng:'),
+      h('p', { class: 'goal-set' }, 'Mỗi tuần (chủ nhật đến thứ bảy) đạt ít nhất ', days, ' ngày, mỗi ngày đúng từ ', pct, '% số câu → thưởng:'),
       h('p', { class: 'goal-set' }, text), h('p', { class: 'goal-set' }, save));
     if (R.on) {
       wrap.append(h('p', { class: 'meta' }, `Tuần này: ${st.count}/${st.days} ngày đạt. Bắt đầu tính từ ${R.from.split('-').reverse().join('/')}.`));

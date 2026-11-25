@@ -186,30 +186,33 @@ test('báo cáo từng ngày có chi tiết theo môn và đạt/không đạt (
   assert.deepEqual([by.toan.passed, by.anh.passed, by.anh.pct], [true, false, 40]);
 });
 
-test('phần thưởng theo tuần: đếm ngày đạt thứ 2–CN, chốt thắng/hụt, chỉ báo một lần, trao thưởng', () => {
+test('phần thưởng theo tuần: tuần CN–T7, chốt thắng/hụt, thắng thì hiện ngay (kể cả thứ Bảy), chỉ báo một lần, trao thưởng', () => {
   const day = (iso, correct, total) => ({ t: new Date(iso + 'T10:00:00').getTime(), subject: 'toan', grade: 9, correct, total, lessons: 1 });
-  const sat = new Date('2026-11-21T20:00:00').getTime(); // thứ Bảy; tuần này bắt đầu 2026-11-16
-  const data = { attempts: [], reward: { on: true, days: 3, pct: 70, text: 'Game 30 phút', from: '2026-11-09' } };
-  // tuần 09–15/11: 3 ngày đạt (ngày 11/11 dưới ngưỡng) → chỉ 2 ngày đạt: hụt
-  data.attempts.push(day('2026-11-09', 8, 10), day('2026-11-10', 7, 10), day('2026-11-11', 5, 10));
-  // tuần 16–22/11: 3 ngày đạt → thắng ngay khi đủ, không cần chờ hết tuần
-  data.attempts.push(day('2026-11-16', 9, 10), day('2026-11-18', 7, 10));
+  const sat = new Date('2026-11-21T20:00:00').getTime(); // thứ Bảy; tuần này CN 15/11 – T7 21/11
+  const data = { attempts: [], reward: { on: true, days: 3, pct: 70, text: 'Game 30 phút', from: '2026-11-08' } };
+  // tuần 08–14/11: chỉ 2 ngày đạt (ngày 11/11 dưới ngưỡng) → hụt
+  data.attempts.push(day('2026-11-08', 8, 10), day('2026-11-10', 7, 10), day('2026-11-11', 5, 10));
+  // tuần 15–21/11: Chủ nhật 15 tính vào tuần này
+  data.attempts.push(day('2026-11-15', 9, 10), day('2026-11-18', 7, 10));
   let pend = P.evaluate(data, sat);
-  assert.deepEqual(pend.map((x) => [x.week, x.ok, x.count]), [['2026-11-09', false, 2]]); // tuần hiện tại mới 2 ngày: chưa chốt
-  data.attempts.push(day('2026-11-20', 7, 10));
+  assert.deepEqual(pend.map((x) => [x.week, x.ok, x.count]), [['2026-11-08', false, 2]]); // tuần hiện tại mới 2 ngày: chưa chốt
+  data.attempts.push(day('2026-11-21', 7, 10)); // thứ Bảy đủ 3 ngày → thắng ngay trong ngày
   pend = P.evaluate(data, sat);
-  assert.deepEqual(pend.map((x) => [x.week, x.ok, x.count]), [['2026-11-09', false, 2], ['2026-11-16', true, 3]]);
-  P.markShown(data, '2026-11-09'); P.markShown(data, '2026-11-16');
+  assert.deepEqual(pend.map((x) => [x.week, x.ok, x.count]), [['2026-11-08', false, 2], ['2026-11-15', true, 3]]);
+  P.markShown(data, '2026-11-08'); P.markShown(data, '2026-11-15');
   assert.equal(P.evaluate(data, sat).length, 0); // đã báo thì không báo lại
   assert.equal(P.rewardState(data, sat).pending, 1);
   P.giveReward(data);
   assert.equal(P.rewardState(data, sat).pending, 0);
-  // bật thưởng: bắt đầu tính từ thứ Hai tuần sau, tắt thì xóa mốc
+  // mốc cũ rơi vào thứ Hai thì dời sang Chủ nhật kế tiếp (không tính tuần lệch)
+  const old = { attempts: [day('2026-11-16', 9, 10)], reward: { on: true, days: 1, pct: 70, text: 'x', from: '2026-11-09' } };
+  assert.deepEqual(P.evaluate(old, sat).map((x) => [x.week, x.ok]), [['2026-11-15', true]]);
+  // bật thưởng: bắt đầu tính từ Chủ nhật tuần sau, tắt thì xóa mốc
   const d2 = { attempts: [] }; P.setReward(d2, { on: true, days: 4 });
   assert.ok(d2.reward.from > '2026-01-01');
-  assert.equal(new Date(d2.reward.from + 'T00:00:00').getDay(), 1);
+  assert.equal(new Date(d2.reward.from + 'T00:00:00').getDay(), 0);
   assert.equal(P.setReward(d2, { on: false }).reward.from, '');
-  assert.equal(P.cleanReward({ days: 99, pct: 5, text: 'x'.repeat(200) }).days, 7);
+assert.equal(P.cleanReward({ days: 99, pct: 5, text: 'x'.repeat(200) }).days, 7);
 });
 
 test('bài cần làm lại: chỉ lần làm gần nhất chưa đạt ngưỡng, theo ngưỡng riêng từng môn', () => {
