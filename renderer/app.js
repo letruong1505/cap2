@@ -42,14 +42,20 @@ function orderedQuestionIndexes(lesson) {
 }
 
 // Một lượt làm bài: thứ tự câu hỏi và thứ tự phương án mới, đáp án đang chọn, và trạng thái đã nộp.
+const lastOrders = {};
 function newAttempt(lesson) {
-  const questions = orderedQuestionIndexes(lesson);
-  const order = {};
-  for (const item of lesson.items) {
-    if (item.type === 'mcq') {
-      order[item.id] = shuffle(item.choices.map((_, i) => i));
+  // Làm lại bài thì thứ tự câu và vị trí đáp án khác lượt trước (thử tối đa 8 lần nếu bài đủ dài để khác được).
+  const key = lesson.items.map((i) => i.id).join('|');
+  let questions; let order;
+  for (let t = 0; t < 8; t++) {
+    questions = orderedQuestionIndexes(lesson);
+    order = {};
+    for (const item of lesson.items) {
+      if (item.type === 'mcq') order[item.id] = shuffle(item.choices.map((_, i) => i));
     }
+    if (lesson.items.length < 3 || JSON.stringify({ questions, order }) !== lastOrders[key]) break;
   }
+  lastOrders[key] = JSON.stringify({ questions, order });
   return { questions, order, answers: {}, submitted: false, started: Date.now(), meta: null };
 }
 

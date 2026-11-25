@@ -1191,3 +1191,8 @@ button.tt-chip { cursor: pointer; }
 .nat-qres { margin: 10px 0 14px; }
 .nat-qbar { background: #e6edf5; border-radius: 6px; height: 10px; margin-top: 6px; }
 .nat-qbar i { display: block; height: 100%; background: #2a6db5; border-radius: 6px; }
+
+/* Bài cần làm lại / môn chưa đạt */
+.redo-box { border-color: #f0c9c9; background: #fff8f7; }
+.redo-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 6px 0; border-top: 1px solid #f2dede; }
+.redo-row:first-of-type { border-top: 0; }
