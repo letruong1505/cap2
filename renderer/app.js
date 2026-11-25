@@ -591,14 +591,23 @@ function renderEssays(lesson, mode) {
 }
 
 // Mỗi lần mở bài là một lượt làm mới (không khôi phục kết quả cũ).
-async function openLesson(relPath, mode = 'practice') {
+// Nơi quay về khi bấm "Quay lại" trong bài: mặc định là danh sách bài của môn; mở từ "Bài cần làm lại" thì quay về màn hình đã bấm.
+let lessonBack = null;
+function leaveLesson() {
+  document.getElementById('breadcrumb').textContent = '';
+  const back = lessonBack; lessonBack = null;
+  if (back) { try { back(); } catch (e) { showLaunch(); } return; }
+  showOnly('home');
+}
+async function openLesson(relPath, mode = 'practice', back = null) {
+  lessonBack = typeof back === 'function' ? back : null;
   try {
     const lesson = await window.vungBai.loadLesson(relPath);
     document.getElementById('breadcrumb').textContent =
       `Lớp ${lesson.grade} › ${{ anh: 'Tiếng Anh', toan: 'Toán', ly: 'Vật lí', hoa: 'Hoá học', sinh: 'Sinh học', gdktpl: 'Giáo dục KT&PL', 'lich-su': 'Lịch sử', 'dia-li': 'Địa lí' }[lesson.subject] || lesson.subject} › ${lesson.chapter}`;
 
     if (lesson.kind === 'exam' && window.VungExam) {
-      window.VungExam.open(lesson, relPath, () => { document.getElementById('breadcrumb').textContent = ''; showOnly('home'); });
+      window.VungExam.open(lesson, relPath, leaveLesson);
       return;
     }
 
@@ -1147,10 +1156,7 @@ async function init() {
     for (const subject of Object.keys(SUBJECT_LABELS)) {
       manifestCache[subject] = await window.vungBai.loadManifest(subject);
     }
-    document.getElementById('btn-back').addEventListener('click', () => {
-      document.getElementById('breadcrumb').textContent = '';
-      showOnly('home');
-    });
+    document.getElementById('btn-back').addEventListener('click', leaveLesson);
     document.getElementById('btn-grades').addEventListener('click', () => showLaunch());
     document.getElementById('btn-national-back').addEventListener('click', () => showLaunch());
     document.getElementById('btn-thpt-back').addEventListener('click', () => showLaunch());
