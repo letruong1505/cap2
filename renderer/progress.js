@@ -32,9 +32,9 @@
     };
     return data;
   }
-  /* Phần thưởng theo tuần (thứ Hai đến Chủ nhật): đạt ít nhất `days` ngày trong tuần, mỗi ngày đúng từ `pct`% số câu thì được `text`.
+  /* Phần thưởng theo tuần (Chủ nhật đến thứ Bảy): đạt ít nhất `days` ngày trong tuần, mỗi ngày đúng từ `pct`% số câu thì được `text`.
      Học sinh KHÔNG thấy nội dung thưởng; chỉ thấy lời chúc mừng khi đạt hoặc lời tiếc khi hụt.
-     from = thứ Hai đầu tiên được tính (tuần sau khi bật). hist = kết quả từng tuần: { week, ok, count, shown, done }. */
+     from = Chủ nhật đầu tiên được tính (tuần sau khi bật). hist = kết quả từng tuần: { week, ok, count, shown, done }. */
   const DAY_RE = /^\d{4}-\d{2}-\d{2}$/;
   function cleanReward(r) {
     r = r && typeof r === 'object' ? r : {};
@@ -49,9 +49,9 @@
     };
   }
   function isoLocal(t) { const d = new Date(t); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
-  function weekStart(t) { const d = new Date(t); d.setHours(0, 0, 0, 0); d.setDate(d.getDate() - ((d.getDay() + 6) % 7)); return d.getTime(); }
+  function weekStart(t) { const d = new Date(t); d.setHours(0, 0, 0, 0); d.setDate(d.getDate() - d.getDay()); return d.getTime(); }  /* tuần từ Chủ nhật đến thứ Bảy */
   function addDays(t, n) { const d = new Date(t); d.setDate(d.getDate() + n); return d.getTime(); }
-  /* Bật lần đầu thì bắt đầu tính từ thứ Hai tuần sau; tắt thì xóa mốc. */
+  /* Bật lần đầu thì bắt đầu tính từ Chủ nhật tuần sau; tắt thì xóa mốc. */
   function setReward(data, r) {
     const old = cleanReward(data.reward); const n = cleanReward(Object.assign({}, old, r));
     if (!n.on) n.from = '';
@@ -74,7 +74,9 @@
     if (!r.on || !r.from) { data.reward = r; return []; }
     const cur = weekStart(now);
     const have = new Set(r.hist.map((x) => x.week));
-    for (let w = new Date(r.from + 'T00:00:00').getTime(), i = 0; w <= cur && i < 60; w = addDays(w, 7), i++) {
+    /* mốc cũ (thứ Hai) thì dời sang Chủ nhật kế tiếp để khớp tuần CN–T7 */
+    const f0 = new Date(r.from + 'T00:00:00').getTime(); const f1 = weekStart(f0) === f0 ? f0 : addDays(weekStart(f0), 7);
+    for (let w = f1, i = 0; w <= cur && i < 60; w = addDays(w, 7), i++) {
       const k = isoLocal(w); if (have.has(k)) continue;
       const count = weekCount(data, w); const ok = count >= r.days;
       if (ok || w < cur) r.hist.push({ week: k, ok, count, shown: false, done: false });
