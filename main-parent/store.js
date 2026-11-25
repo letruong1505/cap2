@@ -1,4 +1,4 @@
-// Bản sao bền của dữ liệu app Phụ huynh (khóa "nl-…" trong localStorage) lưu thành tệp JSON ở thư mục cố định.
+// Bản sao bền của dữ liệu app Phụ huynh (khóa "nl-…" và "vungbai.parentview.v1" = mã đơn + SĐT xem con, trong localStorage) lưu thành tệp JSON ở thư mục cố định.
 // Dùng khi localStorage của trình duyệt nhúng bị mất (đổi bản, đổi thư mục dữ liệu, dọn dẹp) để phụ huynh khỏi nhập lại.
 const fs = require('fs');
 const path = require('path');
@@ -17,7 +17,7 @@ function createStore(file) {
   return {
     all: () => ({ ...data }),
     set(k, v) {
-      if (typeof k !== 'string' || !/^nl-[\w.-]{1,80}$/.test(k) || typeof v !== 'string' || v.length > 500000) return false;
+      if (typeof k !== 'string' || !/^(nl-[\w.-]{1,80}|vungbai\.parentview\.v1)$/.test(k) || typeof v !== 'string' || v.length > 500000) return false;
       if (data[k] !== v) { data[k] = v; save(); }
       return true;
     },
