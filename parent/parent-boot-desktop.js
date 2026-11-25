@@ -5,14 +5,16 @@
   var ls = window.localStorage;
   // Khôi phục dữ liệu từ bản sao ở tệp (nếu localStorage trống) rồi tiếp tục sao lưu mọi thay đổi, để cập nhật hay đổi bản không bắt nhập lại.
   var D = window.NLDesktop;
+  // Khóa cần sao lưu: các khóa nl-… và khóa mã đơn + SĐT của màn hình "Xem con học" (trước đây thiếu nên cập nhật là mất thông tin con).
+  var keep = function (k) { return /^nl-/.test(k) || k === 'vungbai.parentview.v1'; };
   if (D && D.storeAll && ls) {
     try {
       var saved = D.storeAll() || {};
       Object.keys(saved).forEach(function (k) { if (ls.getItem(k) === null) ls.setItem(k, saved[k]); });
       var sp = Storage.prototype; var rawSet = sp.setItem; var rawRemove = sp.removeItem;
-      sp.setItem = function (k, v) { rawSet.call(this, k, v); if (this === ls && /^nl-/.test(k)) D.storeSet(k, String(v)); };
-      sp.removeItem = function (k) { rawRemove.call(this, k); if (this === ls && /^nl-/.test(k)) D.storeRemove(k); };
-      for (var i = 0; i < ls.length; i++) { var key = ls.key(i); if (/^nl-/.test(key)) D.storeSet(key, ls.getItem(key)); }
+      sp.setItem = function (k, v) { rawSet.call(this, k, v); if (this === ls && keep(k)) D.storeSet(k, String(v)); };
+      sp.removeItem = function (k) { rawRemove.call(this, k); if (this === ls && keep(k)) D.storeRemove(k); };
+      for (var i = 0; i < ls.length; i++) { var key = ls.key(i); if (keep(key)) D.storeSet(key, ls.getItem(key)); }
     } catch (e) { /* không sao lưu được thì dùng localStorage như cũ */ }
   }
   function deviceId() {

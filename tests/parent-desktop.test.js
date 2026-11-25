@@ -56,3 +56,16 @@ test('app Phụ huynh bản Windows: parent.js không ghi đè nhãn số bản,
   const u = fs.readFileSync(path.join(__dirname, '..', 'parent/parent-update-desktop.js'), 'utf8');
   assert.match(u, /Kiểm tra bản mới/); assert.match(u, /d\.version\(\)/);
 });
+
+test('bản sao dữ liệu phụ huynh có giữ mã đơn + SĐT của "Xem con học" (khóa vungbai.parentview.v1) qua cập nhật', () => {
+  const { createStore } = require('../main-parent/store.js');
+  const f = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'phk-')), 'store.json');
+  const a = createStore(f);
+  const v = JSON.stringify({ code: 'ABC', phone: '0900000000' });
+  assert.equal(a.set('vungbai.parentview.v1', v), true);
+  assert.equal(a.set('khac.khoa', 'x'), false);
+  assert.equal(createStore(f).all()['vungbai.parentview.v1'], v);
+  const boot = fs.readFileSync(path.join(__dirname, '..', 'parent', 'parent-boot-desktop.js'), 'utf8');
+  assert.match(boot, /k === 'vungbai\.parentview\.v1'/);
+  assert.doesNotMatch(boot, /this === ls && \/\^nl-\//);
+});
