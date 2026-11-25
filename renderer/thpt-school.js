@@ -27,15 +27,22 @@
     try {
       const v = JSON.parse(localStorage.getItem(KEY) || '{}');
       return {
-        s: v && typeof v.s === 'object' && v.s ? v.s : {},
         kv: L.KV[v.kv] !== undefined ? v.kv : 'KV3',
         dt: L.DT[v.dt] !== undefined ? v.dt : 'none',
         regions: Array.isArray(v.regions) ? v.regions.filter((r) => REGIONS.some((x) => x[0] === r)) : [],
       };
-    } catch (_) { return { s: {}, kv: 'KV3', dt: 'none', regions: [] }; }
+    } catch (_) { return { kv: 'KV3', dt: 'none', regions: [] }; }
   }
   function save(st) {
-    try { localStorage.setItem(KEY, JSON.stringify({ s: st.s, kv: st.kv, dt: st.dt, regions: st.regions })); } catch (_) { /* bỏ qua nếu không lưu được */ }
+    try { localStorage.setItem(KEY, JSON.stringify({ kv: st.kv, dt: st.dt, regions: st.regions })); } catch (_) { /* bỏ qua nếu không lưu được */ }
+  }
+
+  function attemptsOf() {
+    try {
+      const P = window.VungProgress;
+      const d = P && P.load(window.localStorage);
+      return (d && d.attempts) || [];
+    } catch (_) { return []; }
   }
 
   // Dựng tab. picked: 2 mã môn tự chọn; nameOf: mã môn -> tên hiển thị.
@@ -49,20 +56,23 @@
       save(st);
       const subjects = ['TO', 'VA', ...picked];
       const label = (m) => (m === 'TO' ? 'Toán' : m === 'VA' ? 'Ngữ văn' : nameOf(m));
-      const ks = L.khoiScores(st.s, picked, st.kv, st.dt);
+      const est = L.estimateScores(attemptsOf(), 12);
+      const scores = {};
+      for (const [m, e] of Object.entries(est)) if (e.enough) scores[m] = e.score;
+      const ks = L.khoiScores(scores, picked, st.kv, st.dt);
       const groups = L.suggest(data, ks, { regions: st.regions, query: st.query });
       const filled = Object.keys(ks).length > 0;
 
       wrap.replaceChildren(
         h('section', { class: 'thpt-card' },
-          h('h2', {}, 'Điểm thi của em'),
-          h('p', { class: 'muted' }, 'Nhập điểm 4 môn (thang 10). Dùng điểm thi thử hoặc điểm dự kiến. Kết quả chỉ để tham khảo.'),
-          h('div', { class: 'sch-inputs' }, subjects.map((m) => h('label', { class: 'sch-field' },
-            h('span', {}, label(m)),
-            h('input', {
-              type: 'text', inputmode: 'decimal', autocomplete: 'off', 'aria-label': `Điểm ${label(m)}`, value: st.s[m] === undefined ? '' : String(st.s[m]),
-              onchange: (e) => { const v = e.target.value.trim(); if (v === '') delete st.s[m]; else st.s[m] = v; render(); },
-            })))),
+          h('h2', {}, 'Điểm dự kiến của em'),
+          h('p', { class: 'muted' }, 'Tự tính từ các bài ôn luyện lớp 12 em đã làm trong app (khoảng 60 câu gần nhất của mỗi môn). Làm thêm bài thì điểm tự cập nhật.'),
+          h('div', { class: 'sch-inputs' }, subjects.map((m) => {
+            const e = est[m];
+            const txt = !e ? 'Chưa có bài ôn' : !e.enough ? `Mới ${e.questions} câu, cần ít nhất 20 câu` : `${fmt(e.score)} (${e.questions} câu, ${e.lessons} bài)`;
+            return h('div', { class: 'sch-field' }, h('span', {}, label(m)), h('b', { class: e && e.enough ? '' : 'muted' }, txt));
+          })),
+          h('p', { class: 'muted' }, 'Môn chưa có bài ôn trong app (như Ngữ văn) thì chưa tính được các khối cần môn đó.'),
           h('div', { class: 'sch-inputs' },
             h('label', { class: 'sch-field' }, h('span', {}, 'Khu vực ưu tiên'),
               h('select', { 'aria-label': 'Khu vực ưu tiên', onchange: (e) => { st.kv = e.target.value; render(); } },
@@ -76,7 +86,7 @@
           filled
             ? h('div', { class: 'nat-chips' }, Object.entries(ks).sort((a, b) => b[1].score - a[1].score).map(([k, v]) =>
                 h('span', {}, `Khối ${k}: ${fmt(v.score)}${v.bonus ? ` (gồm ưu tiên ${fmt(v.bonus)})` : ''}`)))
-            : h('p', { class: 'muted' }, 'Nhập đủ điểm các môn của một khối để xem điểm xét tuyển.'),
+            : h('p', { class: 'muted' }, 'Em cần làm thêm bài ôn luyện lớp 12 của các môn trong khối để app ước được điểm.'),
           h('p', { class: 'muted' }, 'Điểm ưu tiên: dưới 22,5 điểm được cộng đủ; từ 22,5 điểm trở lên giảm dần theo công thức của Bộ GD&ĐT (Thông tư 06/2026/TT-BGDĐT).')),
 
         h('section', { class: 'thpt-card' },
@@ -102,7 +112,7 @@
           h('label', { class: 'sch-field' }, h('span', {}, 'Tìm ngành hoặc trường'),
             h('input', { type: 'search', 'aria-label': 'Tìm ngành hoặc trường', value: st.query, autocomplete: 'off',
               onchange: (e) => { st.query = e.target.value; render(); } })),
-          !filled ? h('p', { class: 'muted' }, 'Nhập điểm ở trên để xem gợi ý.') : L.BANDS.map((b) => band(b, groups[b.id]))),
+          !filled ? h('p', { class: 'muted' }, 'Làm bài ôn luyện để có điểm dự kiến, app sẽ gợi ý ngành.') : L.BANDS.map((b) => band(b, groups[b.id]))),
 
         h('section', { class: 'thpt-card' },
           h('h2', {}, 'Lưu ý khi dùng'),

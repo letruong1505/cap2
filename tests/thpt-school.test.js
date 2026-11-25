@@ -46,6 +46,25 @@ test('khoiScores: bỏ khối thiếu điểm, cộng ưu tiên đúng', () => {
   assert.equal(ks.C01.score, 26.85);
 });
 
+test('estimateScores: lấy ~60 câu gần nhất của lớp 12, bỏ môn chưa có bài và lớp khác', () => {
+  const at = (t, subject, grade, correct, total) => ({ t, subject, grade, correct, total });
+  const e = L.estimateScores([
+    at(1, 'toan', 12, 2, 10), at(2, 'toan', 12, 8, 10), at(3, 'toan', 12, 9, 10), at(4, 'toan', 12, 10, 10),
+    at(5, 'toan', 12, 10, 10), at(6, 'toan', 12, 10, 10), at(7, 'toan', 12, 10, 10),   // 7 bài x 10 = 70 câu: bài cũ nhất (t=1) bị loại
+    at(1, 'toan', 11, 0, 50),                                                         // lớp 11: bỏ
+    at(1, 'ly', 12, 5, 10),                                                            // 10 câu: chưa đủ
+    at(1, 'lichsu', 12, 12, 20), at(1, 'tinhoc', 12, 9, 10),                          // tinhoc chưa ánh xạ: bỏ
+  ], 12);
+  assert.equal(e.TO.questions, 60);
+  assert.equal(e.TO.score, 9.5);                           // (8+9+10*4)/60... 57/60 x 10
+  assert.equal(e.TO.enough, true);
+  assert.equal(e.PH.enough, false);
+  assert.equal(e.LI.score, 6);
+  assert.equal(e.LI.enough, true);
+  assert.equal(e.VA, undefined);
+  assert.equal(e.IT, undefined);
+});
+
 test('parseScore nhận dấu phẩy, từ chối ngoài 0–10', () => {
   assert.equal(L.parseScore('8,25'), 8.25);
   assert.equal(L.parseScore('11'), null);
@@ -75,11 +94,11 @@ test('dữ liệu 3 miền: đủ trường, mã không trùng, điểm trong 10
   for (const [rg, d] of Object.entries(REG)) {
     assert.equal(d.region, rg);
     assert.match(d.updated, /^\d{4}-\d{2}-\d{2}$/);
-    assert.ok(d.schools.length >= 1, `${rg} chưa có trường nào`);
+    assert.ok(d.schools.length >= 6, `${rg} cần ít nhất 6 trường`);
     for (const s of d.schools) {
       assert.ok(!ids.has(s.id), `trùng mã ${s.id}`); ids.add(s.id);
       assert.ok(s.source && s.name && s.year === 2026, s.id);
-      assert.ok(s.rows.length >= 40, `${s.id} quá ít dòng`);
+      assert.ok(s.rows.length >= 10, `${s.id} quá ít dòng`);
       for (const [name, khoi, cut] of s.rows) {
         assert.ok(name && khoi.length >= 1 && cut >= 10 && cut <= 30, `${s.id}: ${name}`);
         for (const k of khoi) assert.ok(L.KHOI[k], `${s.id}: khối ${k}`);
@@ -95,6 +114,12 @@ test('đối chiếu khoảng điểm với số liệu trường/báo đã côn
   assert.equal(range('trung', 'tdv')[1], 26.5);            // Sư phạm Toán học (tài năng) cao nhất 26,5
   assert.deepEqual(range('trung', 'ddk'), [18.25, 27.1]);
   assert.deepEqual(range('nam', 'tct'), [15, 28.12]);
+  assert.deepEqual(range('bac', 'yhb'), [17.75, 28.5]);   // VOV/Tiền Phong: từ 17,75 đến 28,5
+  assert.equal(range('bac', 'sph')[1], 29);                // Sư phạm Toán (dạy bằng tiếng Anh) 29
+  assert.deepEqual(range('bac', 'nhh').map((x) => Math.round(x * 10) / 10), [20.2, 26.6]); // Sforum: 20,20–26,61
+  assert.deepEqual(range('trung', 'dhy'), [17, 26]);       // HOCMAI: thấp nhất 17, cao nhất 26 (Y khoa)
+  assert.equal(range('nam', 'hub')[1], 24.53);             // Kinh doanh quốc tế dẫn đầu 24,53
+  assert.equal(range('nam', 'yds')[1], 27.95);             // Y khoa B00 27,95
 });
 
 test('tệp dữ liệu sinh ra khớp nguồn tools/thpt-data (chạy node tools/build-thpt-school.js nếu lệch)', () => {

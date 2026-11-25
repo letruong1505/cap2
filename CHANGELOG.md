@@ -1,5 +1,5 @@
 ## Bản mới
-- Ôn thi THPT: thêm tab "Chọn trường" (nhập điểm 4 môn, tính điểm xét tuyển theo khối có cộng điểm ưu tiên, gợi ý ngành An toàn / Cân nhắc / Thử sức theo điểm chuẩn 2026, lọc theo miền Bắc - Trung - Nam)
+- Ôn thi THPT: thêm tab "Chọn trường" — điểm các môn tự tính từ kết quả luyện tập lớp 12 của em (không nhập tay), tính điểm xét tuyển theo khối có cộng điểm ưu tiên, gợi ý ngành An toàn / Cân nhắc / Thử sức theo điểm chuẩn 2026 của 22 trường, lọc theo miền Bắc - Trung - Nam
 - Android: bản này yêu cầu cài apk mới
 
 ## Các bản trước

@@ -66,6 +66,31 @@
     return out;
   }
 
+
+  // Môn ôn lớp 12 trong app -> mã môn của khung THPT. Ngữ văn, Tin học, Công nghệ chưa có bài ôn nên không có điểm.
+  const SUBJECT_MAP = { toan: 'TO', anh: 'EN', ly: 'PH', hoa: 'CH', sinh: 'BI', gdktpl: 'GDKT', lichsu: 'LI', 'lich-su': 'LI', diali: 'DI', 'dia-li': 'DI' };
+  const EST_WINDOW = 60; // lấy các lần làm gần nhất cho tới khi đủ ngần này câu
+  const EST_MIN = 20;    // dưới ngần này câu thì chưa đủ dữ liệu để ước điểm
+
+  // Ước điểm từng môn từ các lần làm bài ôn luyện lớp 12: tỉ lệ đúng của ~60 câu gần nhất x 10.
+  // attempts: mảng {t, subject, grade, correct, total}. Trả {mã môn: {score, questions, lessons, enough}}.
+  function estimateScores(attempts, grade) {
+    const g = grade || 12;
+    const by = {};
+    const list = (attempts || []).filter((a) => a && a.grade === g && a.total > 0 && SUBJECT_MAP[a.subject]).sort((a, b) => b.t - a.t);
+    for (const a of list) {
+      const m = SUBJECT_MAP[a.subject];
+      const x = by[m] || (by[m] = { correct: 0, questions: 0, lessons: 0 });
+      if (x.questions >= EST_WINDOW) continue;
+      x.correct += a.correct; x.questions += a.total; x.lessons += 1;
+    }
+    const out = {};
+    for (const [m, x] of Object.entries(by)) {
+      out[m] = { score: Math.round((x.correct / x.questions) * 100) / 10, questions: x.questions, lessons: x.lessons, enough: x.questions >= EST_MIN };
+    }
+    return out;
+  }
+
   function bandOf(diff) {
     for (const b of BANDS) if (diff >= b.min) return b.id;
     return null; // thấp hơn điểm chuẩn quá 2 điểm: không gợi ý
@@ -110,5 +135,5 @@
     return String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase().trim();
   }
 
-  return { KHOI, KV, DT, KV_LABEL, DT_LABEL, BANDS, parseScore, availableKhoi, priorityBonus, khoiScores, bandOf, suggest, norm };
+  return { KHOI, KV, DT, KV_LABEL, DT_LABEL, BANDS, parseScore, availableKhoi, priorityBonus, khoiScores, bandOf, suggest, norm, estimateScores, SUBJECT_MAP };
 });
