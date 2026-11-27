@@ -12,8 +12,13 @@ function merge(results) {
   const all = ok.some((r) => r.grades === 'all');
   const grades = all ? 'all' : [...new Set(ok.flatMap((r) => r.grades))].sort((a, b) => a - b);
   const courses = [...new Set(ok.flatMap((r) => r.courses || []))];
-  const dated = ok.map((r) => r.expiresOn).filter((e) => e !== 'never').sort();
-  return { ...ok[0], status: 'ok', grades, courses, expiresOn: dated.length ? dated[0] : 'never', id: ok.map((r) => r.id).filter(Boolean).join(', '), owner: ok[0].owner };
+  // Khóa dùng thử chỉ để mở nội dung: có khóa mua thì hạn, chủ khóa và mã hiển thị lấy theo khóa mua, không hiện "còn 3 ngày".
+  const paid = ok.filter((r) => !r.trial);
+  const shown = paid.length ? paid : ok;
+  const dated = shown.map((r) => r.expiresOn).filter((e) => e !== 'never').sort();
+  const out = { ...shown[0], status: 'ok', grades, courses, expiresOn: dated.length ? dated[0] : 'never', id: shown.map((r) => r.id).filter(Boolean).join(', '), owner: shown[0].owner };
+  if (paid.length) delete out.trial; else out.trial = true;
+  return out;
 }
 
 // Áp dụng thu hồi lên một khóa hợp lệ: cả đơn bị thu hồi, hoặc chỉ một số lớp/khóa học trong đơn (hoàn tiền một phần).

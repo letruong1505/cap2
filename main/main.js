@@ -83,6 +83,16 @@ ipcMain.handle('device:claim', async (_event, o) => {
   }
   return r;
 });
+// Dùng thử toàn bộ nội dung: nhận khóa có hạn từ máy chủ, kích hoạt luôn, báo máy chủ và tải nội dung.
+ipcMain.handle('license:trial', async (_event, o) => {
+  const r = await orders.startTrial(o);
+  if (r.ok && r.data && r.data.key) {
+    r.license = lic.activate(licenseStoreDir(), r.data.key);
+    if (heartbeat) heartbeat.beat().catch(() => {});
+    syncPacks();
+  }
+  return r;
+});
 // Nhận khóa các đơn phụ huynh mua cho gia đình (mã gia đình); kích hoạt từng khóa. Không có mạng thì trả offline, lần sau thử lại.
 ipcMain.handle('family:sync', async (_event, o) => {
   const r = await orders.familySync(o);
@@ -159,12 +169,14 @@ function createWindow() {
 app.whenReady().then(() => {
   createWindow();
   heartbeat = createHeartbeat({ dir: licenseStoreDir(), client: orders, lic, version: readBuildInfo().version,
-    onChange: () => BrowserWindow.getAllWindows().forEach((w) => w.webContents.send('license:changed')) });
+    onChange: () => { if (packsMode) { try { getPackStore().prune(); } catch { /* bỏ qua */ } } BrowserWindow.getAllWindows().forEach((w) => w.webContents.send('license:changed')); } });
   heartbeat.start();
   // Nạp đọc gói nội dung đã tải; mở app thì tải bù các lớp đã có bản quyền mà chưa có nội dung, rồi kiểm tra lại mỗi 6 giờ.
   if (packsMode) {
     setPackReader((rel) => getPackStore().read(rel));
     setTimeout(syncPacks, 4000);
+    // Hết hạn dùng thử / thu hồi: xóa nội dung đã tải ngay cả khi đang offline hoặc đang mở app qua đêm (kiểm tra mỗi 30 phút).
+    setInterval(() => { try { getPackStore().prune(); } catch { /* bỏ qua */ } }, 30 * 60 * 1000).unref();
     setInterval(syncPacks, 6 * 60 * 60 * 1000).unref();
   }
   app.on('activate', () => {

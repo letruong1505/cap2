@@ -1,5 +1,5 @@
 import catalog from '../../renderer/catalog.js';
-import { HttpError, createOrder, createOrderAuto, orderStatus, applyPayment, listOrders, listUnmatched, approveOrder, cancelOrder, reissueOrder, attachTransaction, pinReset, claimDevice, revokeOrder, restoreOrder, revokeItem, restoreItem, ping, listPartnerCodes, createPartnerCode, setPartnerActive } from './orders.js';
+import { HttpError, createOrder, createOrderAuto, createTrial, orderStatus, applyPayment, listOrders, listUnmatched, approveOrder, cancelOrder, reissueOrder, attachTransaction, pinReset, claimDevice, revokeOrder, restoreOrder, revokeItem, restoreItem, ping, listPartnerCodes, createPartnerCode, setPartnerActive } from './orders.js';
 import { createFamily, syncFamily } from './family.js';
 import { adminPage } from './admin.js';
 import { importLegacy } from './legacy.js';
@@ -106,6 +106,7 @@ async function route(req, env, now) {
     if (req.method === 'POST' && path === '/api/family/create') return json(await createFamily(db, await body(req), now), 201);
     if (req.method === 'POST' && path === '/api/family/sync') return json(await syncFamily(db, env, catalog, await body(req), now));
 
+    if (req.method === 'POST' && path === '/api/trial') return json(await createTrial(db, env, catalog, await body(req), now), 201);
     if (req.method === 'POST' && path === '/api/register-legacy') return json(await registerLegacy(db, env, catalog, await body(req), now), 201);
     if (req.method === 'POST' && path === '/api/progress/settings') return json(await progressSettings(db, await body(req), now));
     if (req.method === 'POST' && path === '/api/progress/push') return json(await progressPush(db, await body(req), now));

@@ -59,7 +59,37 @@ function createPackStore({ dir, client, lic, licenseDir, enabled = true, fetchFn
     return buf;
   }
 
+  // Xóa nội dung đã tải mà bản quyền không còn mở (hết hạn, thu hồi, hoặc lớp/khóa bị thu hồi riêng): xóa file gói và khóa giải mã đã nhớ.
+  // Chỉ xóa khi trạng thái chắc chắn: ok (bỏ phần không còn quyền), expired, revoked. Chưa có khóa, đồng hồ lùi, khóa lỗi... thì giữ nguyên,
+  // để lỗi tạm thời không buộc khách tải lại. Không cần mạng. Trả về danh sách đã xóa.
+  function prune() {
+    if (!lic || typeof lic.currentLicense !== 'function') return [];
+    let l; try { l = lic.currentLicense(licenseDir); } catch { return []; }
+    if (!l || !['ok', 'expired', 'revoked'].includes(l.status)) return [];
+    const okGrade = (g) => l.status === 'ok' && (l.grades === 'all' || (Array.isArray(l.grades) && l.grades.includes(Number(g))));
+    const okCourse = (c) => l.status === 'ok' && (typeof lic.hasCourse === 'function' ? lic.hasCourse(l, c) : Array.isArray(l.courses) && l.courses.includes(c));
+    const st = readState(); const removed = [];
+    for (const kind of ['grades', 'courses']) {
+      for (const id of Object.keys(st[kind])) {
+        if (kind === 'grades' ? okGrade(id) : okCourse(id)) continue;
+        try { fs.unlinkSync(path.join(packDir, st[kind][id].file)); } catch { /* file đã mất */ }
+        delete st[kind][id]; cache.delete((kind === 'grades' ? 'g' : 'c:') + id); removed.push((kind === 'grades' ? 'lop' : 'khoa') + ':' + id);
+      }
+    }
+    if (removed.length) {
+      writeState(st);
+      setStatus({ grades: have(), courses: haveCourses() });
+    }
+    // Dọn file gói mồ côi (tải dở hoặc không còn trong state.json).
+    try {
+      const keep = new Set([...Object.values(st.grades), ...Object.values(st.courses)].map((e) => e.file));
+      for (const f of fs.readdirSync(packDir)) if (/\.(nlp|tmp)$/.test(f) && !keep.has(f)) { try { fs.unlinkSync(path.join(packDir, f)); } catch { /* bỏ qua */ } }
+    } catch { /* chưa có thư mục */ }
+    return removed;
+  }
+
   async function run() {
+    prune(); // dọn trước, không cần mạng
     const keys = lic.rawKeys(licenseDir);
     if (!keys.length) { setStatus({ state: 'idle', grades: [], error: '' }); return { ok: true, downloaded: 0, grades: [] }; }
     const kr = await client.packKeys({ keys });
@@ -107,7 +137,6 @@ function createPackStore({ dir, client, lic, licenseDir, enabled = true, fetchFn
         return { ok: false, downloaded, error: String(e && e.message) };
       }
     }
-    // Khóa không còn bản quyền (thu hồi, hết hạn) thì giữ file nhưng quyền mở do license chặn; không xóa để khách mua lại không phải tải lại.
     setStatus({ state: 'ready', grades: have(), courses: haveCourses(), done: todo.length, total: todo.length, percent: 100, fresh: downloaded, grade: 0, course: '', error: '' });
     return { ok: true, downloaded, grades: Object.keys(granted).map(Number) };
   }
@@ -119,7 +148,7 @@ function createPackStore({ dir, client, lic, licenseDir, enabled = true, fetchFn
     return busy;
   }
 
-  return { read, readCourse, sync, have, status: () => ({ ...status, enabled, grades: have(), courses: haveCourses() }), enabled };
+  return { read, readCourse, sync, prune, have, status: () => ({ ...status, enabled, grades: have(), courses: haveCourses() }), enabled };
 }
 
 module.exports = { createPackStore };

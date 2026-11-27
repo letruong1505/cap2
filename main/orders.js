@@ -32,6 +32,8 @@ function makeClient({ baseUrl = readBaseUrl, fetchFn = (...a) => fetch(...a), ma
     claimDevice: (o) => call('POST', '/api/claim-device', { phone: String(o && o.phone || ''), code: String(o && o.code || ''), machineId: machineId(), platform: 'win' }),
     // Máy tính của con nhận khóa các đơn phụ huynh mua cho gia đình (mã gia đình nhập một lần).
     familySync: (o) => call('POST', '/api/family/sync', { fcode: String(o && o.fcode || ''), machineId: machineId(), platform: 'win' }),
+    // Dùng thử toàn bộ nội dung vài ngày: gửi tên, số điện thoại; máy chủ cấp khóa gắn mã máy, hết hạn tự khóa.
+    startTrial: (o) => call('POST', '/api/trial', { name: String(o && o.name || ''), phone: String(o && o.phone || ''), machineId: machineId() }),
     pinReset: (o) => call('POST', '/api/pin-reset', { phone: String(o && o.phone || ''), code: String(o && o.code || ''), machineId: machineId() }),
     // Khách tự đăng ký khóa cũ (cấp bằng USB) vào hệ thống: gửi khóa NL1-... (do tiến trình chính đọc từ kho khóa) và số điện thoại phụ huynh.
     registerLegacy: (o) => call('POST', '/api/register-legacy', { key: String(o && o.key || ''), phone: String(o && o.phone || ''), machineId: machineId() }),

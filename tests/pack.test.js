@@ -223,3 +223,52 @@ test('hasCourse: khóa bản cũ tu-duy-lap-trinh mở cả hai lộ trình; kh�
   assert.ok(!lic.hasCourse(ok(['tu-duy-lap-trinh']), 'gia-su-ai'));
   assert.ok(!lic.hasCourse({ status: 'expired', courses: ['gia-su-ai'] }, 'gia-su-ai'));
 });
+
+// --- Xóa nội dung khi hết hạn / thu hồi (dùng thử, hoàn tiền) ---
+test('xóa nội dung: hết hạn thì xóa file gói và khóa giải mã, không cần mạng', async () => {
+  const w0 = world({ grades: [7, 8] });
+  let cur = { status: 'ok', grades: 'all', courses: [] };
+  const lic = { rawKeys: () => ['NL1-x'], currentLicense: () => cur, hasCourse: () => false };
+  const store = createPackStore({ dir: w0.dir, licenseDir: w0.dir, client: { packKeys: async () => ({ ok: false, offline: true }) }, lic });
+  // nạp sẵn nội dung bằng kho có bản quyền đầy đủ, rồi dùng kho thứ hai (cùng thư mục) như app mở lại sau khi hết hạn
+  await w0.store.sync();
+  assert.deepEqual(w0.store.have(), [7, 8]);
+  const packDir = path.join(w0.dir, 'packs');
+  assert.ok(fs.readdirSync(packDir).filter((f) => f.endsWith('.nlp')).length === 2);
+  assert.deepEqual(store.prune(), []);                       // còn hạn: giữ nguyên
+  cur = { status: 'expired' };
+  assert.deepEqual(store.prune().sort(), ['lop:7', 'lop:8']);
+  assert.equal(fs.readdirSync(packDir).filter((f) => f.endsWith('.nlp')).length, 0);
+  assert.deepEqual(JSON.parse(fs.readFileSync(path.join(packDir, 'state.json'), 'utf8')), { grades: {}, courses: {} }); // khóa giải mã cũng mất
+  assert.equal(store.read('toan7/tap1/b3.json'), null);
+  assert.deepEqual(store.prune(), []);                       // lần sau không còn gì để xóa
+});
+
+test('xóa nội dung: thu hồi riêng một lớp thì chỉ xóa lớp đó; trạng thái chưa chắc chắn thì không xóa', async () => {
+  const w0 = world({ grades: [7, 8] });
+  await w0.store.sync();
+  let cur = { status: 'ok', grades: [8], courses: [] };
+  const mk = () => createPackStore({ dir: w0.dir, licenseDir: w0.dir, client: {}, lic: { rawKeys: () => [], currentLicense: () => cur, hasCourse: () => false } });
+  for (const status of ['missing', 'clock', 'invalid', 'wrong-machine']) { cur = { status }; assert.deepEqual(mk().prune(), [], status); }
+  assert.deepEqual(w0.store.have(), [7, 8]);
+  cur = { status: 'ok', grades: [8], courses: [] };
+  assert.deepEqual(mk().prune(), ['lop:7']);
+  assert.deepEqual(mk().have(), [8]);
+  cur = { status: 'revoked' };
+  assert.deepEqual(mk().prune(), ['lop:8']);
+});
+
+test('xóa nội dung: khóa Kỹ năng không còn quyền cũng bị xóa; kho không có currentLicense thì bỏ qua', async () => {
+  const w0 = world({ grades: [7] });
+  await w0.store.sync();
+  assert.deepEqual(w0.store.prune(), []);                    // lic mẫu của world() không có currentLicense
+  const dir = w0.dir;
+  const st = JSON.parse(fs.readFileSync(path.join(dir, 'packs', 'state.json'), 'utf8'));
+  fs.writeFileSync(path.join(dir, 'packs', 'course-gia-su-ai-0123456789.nlp'), 'x');
+  st.courses['gia-su-ai'] = { file: 'course-gia-su-ai-0123456789.nlp', sha256: 'x', key: 'eA==' };
+  fs.writeFileSync(path.join(dir, 'packs', 'state.json'), JSON.stringify(st));
+  const mk = (courses) => createPackStore({ dir, licenseDir: dir, client: {}, lic: { rawKeys: () => [], currentLicense: () => ({ status: 'ok', grades: [7], courses }), hasCourse: (l, c) => l.courses.includes(c) } });
+  assert.deepEqual(mk(['gia-su-ai']).prune(), []);
+  assert.deepEqual(mk([]).prune(), ['khoa:gia-su-ai']);
+  assert.ok(!fs.existsSync(path.join(dir, 'packs', 'course-gia-su-ai-0123456789.nlp')));
+});
