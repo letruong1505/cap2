@@ -21,6 +21,7 @@ async function privateKey(pem) {
   return key;
 }
 
+export const TRIAL_RE = /^TRIAL (\d{4}-\d{2}-\d{2})/;
 const dateOf = (now) => now.toISOString().slice(0, 10);
 
 // Dựng nội dung khóa từ đơn hàng. grades: các lớp Văn hóa đã mua; courses: các khóa Kỹ năng đã mua.
@@ -28,7 +29,11 @@ export function payloadFor(order, catalog, now = new Date()) {
   const items = JSON.parse(order.items);
   const grades = items.map((id) => catalog.byId[id]?.grade).filter((g) => Number.isInteger(g)).sort((a, b) => a - b);
   const courses = items.filter((id) => !catalog.byId[id]?.grade);
-  return { v: 1, id: 'NL-' + order.code, owner: order.name, grades, courses, machine: order.machine, issued: dateOf(now), expires: 'never' };
+  const payload = { v: 1, id: 'NL-' + order.code, owner: order.name, grades, courses, machine: order.machine, issued: dateOf(now), expires: 'never' };
+  // Đơn dùng thử ghi hạn trong ghi chú (TRIAL yyyy-mm-dd): cấp lại khóa (đổi máy) vẫn giữ nguyên hạn, không thành khóa vĩnh viễn.
+  const t = TRIAL_RE.exec(String(order.note || ''));
+  if (t) { payload.expires = t[1]; payload.trial = true; }
+  return payload;
 }
 
 export async function signKey(pem, payload) {

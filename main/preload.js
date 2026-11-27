@@ -12,6 +12,7 @@ contextBridge.exposeInMainWorld('vungBai', {
   activateLicense: (key) => ipcRenderer.invoke('license:activate', key),
   createOrder: (order) => ipcRenderer.invoke('order:create', order),
   familySync: (o) => ipcRenderer.invoke('family:sync', o),
+  startTrial: (o) => ipcRenderer.invoke('license:trial', o),
   claimDevice: (o) => ipcRenderer.invoke('device:claim', o),
   pinReset: (o) => ipcRenderer.invoke('pin:reset', o),
   registerLegacy: (o) => ipcRenderer.invoke('license:register-legacy', o),

@@ -1,5 +1,5 @@
 // Nghiệp vụ đơn hàng: tạo đơn, tra trạng thái, nhận thanh toán, cấp key. Không phụ thuộc Cloudflare ngoài giao diện D1.
-import { payloadFor, signKey } from './keys.js';
+import { payloadFor, signKey, TRIAL_RE } from './keys.js';
 
 const CODE_ALPHABET = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';
 export const MACHINE_RE = /^[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}$/;
@@ -131,6 +131,41 @@ export async function createOrderAuto(db, env, catalog, input, now = new Date(),
     return { ...r, status: 'paid' };
   }
   return r;
+}
+
+
+// Dùng thử toàn bộ nội dung trong TRIAL_DAYS ngày trọn vẹn sau ngày đăng ký (đăng ký buổi tối vẫn đủ 3 ngày). Là một đơn 0 đồng đã duyệt, ghi chú "TRIAL <ngày hết hạn>":
+// nhờ vậy khóa tự hết hạn, thu hồi sớm / theo dõi máy trên trang admin dùng chung với đơn thường. Mỗi máy và mỗi số điện thoại chỉ một lần.
+export const TRIAL_DAYS = 3;
+export async function createTrial(db, env, catalog, input, now = new Date(), rand) {
+  const machine = String(input && input.machineId || '').trim().toUpperCase();
+  const name = String(input && input.name || '').trim().replace(/\s+/g, ' ');
+  const phone = String(input && input.phone || '').replace(/[\s.\-]/g, '');
+  if (!MACHINE_RE.test(machine)) throw new HttpError(400, 'Không đọc được mã máy.');
+  if (name.length < 2 || name.length > 80) throw new HttpError(400, 'Vui lòng nhập họ tên.');
+  if (!PHONE_RE.test(phone)) throw new HttpError(400, 'Số điện thoại không hợp lệ.');
+  const dup = await db.prepare('SELECT 1 AS x FROM orders WHERE note LIKE \'TRIAL %\' AND (machine = ?1 OR phone = ?2) LIMIT 1').bind(machine, phone).first();
+  if (dup) throw new HttpError(409, 'Máy hoặc số điện thoại này đã dùng thử rồi. Liên hệ Nam Linh Educenter để được tư vấn mua khóa học.');
+  // Hạn tính theo ngày Việt Nam (UTC+7): hết ngày cuối cùng mới khóa.
+  const until = new Date(now.getTime() + 7 * 3600e3 + TRIAL_DAYS * 86400e3).toISOString().slice(0, 10);
+  const ids = Object.keys(catalog.byId);
+  for (let i = 0; i < 5; i++) {
+    const code = newCode(rand);
+    try {
+      await db.batch([
+        db.prepare('INSERT INTO orders (code, name, phone, machine, items, amount, status, paid_amount, terms_version, terms_at, created_at, paid_at, note) VALUES (?1,?2,?3,?4,?5,0,\'paid\',0,\'trial\',?6,?6,?6,?7)')
+          .bind(code, name, phone, machine, JSON.stringify(ids), nowIso(now), 'TRIAL ' + until + ' (dùng thử ' + TRIAL_DAYS + ' ngày)'),
+        db.prepare('INSERT INTO order_devices (code, platform, machine, key, issued_at) VALUES (?1,\'win\',?2,NULL,NULL)').bind(code, machine),
+        ...ids.map((id) => db.prepare('INSERT INTO order_prices (code, item, list_price, paid_price, partner_code, percent) VALUES (?1,?2,?3,0,NULL,NULL)').bind(code, id, catalog.byId[id].price)),
+      ]);
+      const o = await getOrder(db, code);
+      const key = await issueKey(db, env, catalog, o, now);
+      return { code, key, expires: until, days: TRIAL_DAYS };
+    } catch (e) {
+      if (!/UNIQUE|constraint/i.test(String(e.message))) throw e;
+    }
+  }
+  throw new HttpError(500, 'Không tạo được khóa dùng thử, vui lòng thử lại.');
 }
 
 // Cấp key cho đơn đã thanh toán (hoặc đổi sang máy khác nếu truyền machine).
@@ -346,6 +381,7 @@ export async function approveOrder(db, env, catalog, code, note, now = new Date(
   const o = await getOrder(db, code);
   if (!o) throw new HttpError(404, 'Không tìm thấy đơn.');
   if (o.status === 'cancelled') throw new HttpError(409, 'Đơn đã hủy.');
+  if (TRIAL_RE.test(String(o.note || ''))) throw new HttpError(409, 'Đây là đơn dùng thử, không duyệt tay được (sẽ thành khóa vĩnh viễn). Hãy tạo đơn mua riêng.');
   await db.prepare('UPDATE orders SET status = \'paid\', paid_at = COALESCE(paid_at, ?1), note = ?2 WHERE code = ?3').bind(nowIso(now), String(note || 'Duyệt tay').slice(0, 200), o.code).run();
   return issueKey(db, env, catalog, o, now);
 }

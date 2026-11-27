@@ -790,8 +790,8 @@ function renderLicense(license) {
       termSmall = 'Không giới hạn thời gian trên thiết bị này';
     } else {
       const left = licenseDaysLeft(license.expiresOn);
-      termBig = `${left} ngày`;
-      termSmall = `Hết hạn ngày ${license.expiresOn.split('-').reverse().join('/')}`;
+      termBig = license.trial ? `Dùng thử · ${left} ngày` : `${left} ngày`;
+      termSmall = (license.trial ? 'Dùng thử toàn bộ nội dung, hết ngày ' : 'Hết hạn ngày ') + license.expiresOn.split('-').reverse().join('/') + (license.trial ? '. Hết hạn thì nội dung đã tải sẽ tự xóa khỏi máy.' : '');
     }
   } else {
     children.push(el('div', { class: 'muted' }, LICENSE_MESSAGES[license.status] || 'Chưa kích hoạt bản quyền. Đang dùng thử: Mở 2 bài đầu của mỗi môn.'));
@@ -824,6 +824,7 @@ function renderLicense(license) {
     }
   });
   children.push(el('div', { class: 'license-form' }, input, btn), msg);
+  if (license.status !== 'ok' && window.vungBai.startTrial) children.push(trialBox());
   if (window.vungBai.familySync) children.push(familyBox());
   if (window.vungBai.claimDevice) children.push(claimDeviceBox());
   // Thu gọn phần kích hoạt như hộp thời hạn: dòng tiêu đề cho biết trạng thái, bấm mới xổ ra khoá, mã máy, mã gia đình.
@@ -877,6 +878,41 @@ function familyBox() {
     el('h3', {}, 'Phụ huynh mua cho con?'),
     el('div', { class: 'muted' }, 'Nhập mã gia đình trong app Nam Linh Educenter cho phụ huynh một lần. Sau đó khóa học phụ huynh mua sẽ tự về máy này mỗi khi có mạng.'),
     el('div', { class: 'license-form' }, code, btn),
+    msg,
+  );
+}
+
+// Dùng thử toàn bộ nội dung 3 ngày: nhập tên và số điện thoại phụ huynh (mỗi máy, mỗi số điện thoại một lần), cần có mạng.
+function trialBox() {
+  const name = el('input', { type: 'text', id: 'trial-name', placeholder: 'Họ tên phụ huynh', maxlength: '80', autocomplete: 'off' });
+  const phone = el('input', { type: 'tel', id: 'trial-phone', placeholder: 'Số điện thoại', maxlength: '15', autocomplete: 'off' });
+  const btn = el('button', { type: 'button', class: 'primary' }, 'Dùng thử 3 ngày');
+  const msg = el('div', { class: 'muted', id: 'trial-msg', role: 'status' });
+  btn.addEventListener('click', async () => {
+    msg.textContent = '';
+    if (name.value.trim().length < 2 || !phone.value.trim()) { msg.textContent = 'Nhập họ tên và số điện thoại.'; return; }
+    btn.disabled = true;
+    try {
+      const r = await window.vungBai.startTrial({ name: name.value.trim(), phone: phone.value.replace(/[\s.\-]/g, '') });
+      if (r.ok && r.license && r.license.status === 'ok') {
+        name.value = ''; phone.value = '';
+        await refreshLicense();
+        document.getElementById('license-msg').textContent = 'Đã bật dùng thử. Nội dung đang được tải về máy.';
+      } else if (r.ok) {
+        msg.textContent = LICENSE_MESSAGES[r.license && r.license.status] || 'Không bật được dùng thử. Liên hệ Zalo 0968 646 853.';
+      } else {
+        msg.textContent = r.offline ? 'Cần kết nối mạng để bật dùng thử. Hãy kiểm tra mạng rồi thử lại.' : (r.error || 'Không bật được dùng thử.');
+      }
+    } catch {
+      msg.textContent = 'Không bật được dùng thử. Hãy thử lại.';
+    } finally {
+      btn.disabled = false;
+    }
+  });
+  return el('div', { class: 'license-claim' },
+    el('h3', {}, 'Dùng thử 3 ngày, đầy đủ bài học'),
+    el('div', { class: 'muted' }, 'Mở toàn bộ giáo trình và khóa kỹ năng trong 3 ngày (cần có mạng). Hết hạn, khóa tự đóng và nội dung đã tải được xóa khỏi máy. Mỗi máy và mỗi số điện thoại dùng thử một lần.'),
+    el('div', { class: 'license-form' }, name, phone, btn),
     msg,
   );
 }

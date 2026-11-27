@@ -157,3 +157,20 @@ test('hoàn tiền một phần: chỉ tắt đúng lớp/khóa bị thu hồi, 
   lic.setRevoked(dir, [], { AAAAAA: { grades: [8, 9], courses: ['gia-su-ai', 'cong-dan-so'] } });
   assert.strictEqual(lic.currentLicense(dir, NOW, publicKey).status, 'revoked');
 });
+
+test('khóa dùng thử: có cờ trial; có khóa mua thì hạn và mã hiển thị lấy theo khóa mua', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'nllic-'));
+  const m = getMachineId();
+  const trial = issue({ id: 'NL-TRIAL1', machine: m, grades: [6, 7, 8, 9, 10, 11, 12], courses: ['gia-su-ai'], expires: '2026-11-12', trial: true });
+  assert.equal(evaluateKey(trial, m, NOW, publicKey).trial, true);
+  assert.equal('trial' in evaluateKey(issue({ id: 'NL-PAID01', machine: m, expires: 'never' }), m, NOW, publicKey), false);
+  lic.activate(dir, trial, NOW, publicKey);
+  let l = lic.currentLicense(dir, NOW, publicKey);
+  assert.deepEqual([l.status, l.trial, l.expiresOn], ['ok', true, '2026-11-12']);
+  lic.activate(dir, issue({ id: 'NL-PAID01', machine: m, grades: [7], expires: 'never' }), NOW, publicKey);
+  l = lic.currentLicense(dir, NOW, publicKey);
+  assert.deepEqual([l.status, l.trial, l.expiresOn, l.id], ['ok', undefined, 'never', 'NL-PAID01']);
+  assert.deepEqual(l.grades, [6, 7, 8, 9, 10, 11, 12]);     // vẫn mở đủ nội dung trong lúc dùng thử
+  l = lic.currentLicense(dir, new Date(2026, 10, 13), publicKey); // dùng thử hết hạn, khóa mua còn
+  assert.deepEqual([l.status, l.grades], ['ok', [7]]);
+});
